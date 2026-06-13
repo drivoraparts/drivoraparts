@@ -1,30 +1,26 @@
 export const products = [
   {
     id: 1,
-    name: "LS3 6.2L Engine",
+    name: "BMW N54 Twin Turbo Engine",
     category: "Engines",
-    price: 2800,
-    condition: "Used - Tested",
+    price: 3200,
+    image: "/engine.jpg",
+    description: "High performance rebuilt engine",
   },
   {
     id: 2,
-    name: "Twin Turbo Kit Universal",
+    name: "Garrett Turbo GTX3076R",
     category: "Turbochargers",
-    price: 950,
-    condition: "New",
+    price: 850,
+    image: "/turbo.jpg",
+    description: "Performance turbo upgrade",
   },
   {
     id: 3,
-    name: "Bosch ECU Module",
-    category: "ECU Modules",
-    price: 450,
-    condition: "Refurbished",
-  },
-  {
-    id: 4,
-    name: "6-Speed Manual Transmission",
-    category: "Transmissions",
-    price: 1200,
-    condition: "Used - Good",
+    name: "Audi 2.0 TFSI Engine",
+    category: "Engines",
+    price: 2800,
+    image: "/audi-engine.jpg",
+    description: "Reliable turbocharged engine",
   }
 ];
