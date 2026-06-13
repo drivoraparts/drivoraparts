@@ -1,18 +1,38 @@
 export default function Home() {
+  const categories = [
+    "engines",
+    "turbochargers",
+    "ecu-modules",
+    "transmissions",
+    "headlights",
+    "bumpers",
+  ];
+
   return (
-    <div style={{ fontFamily: "Arial", background: "#0f0f0f", color: "white", minHeight: "100vh" }}>
-      
+    <div
+      style={{
+        fontFamily: "Arial",
+        background: "#0f0f0f",
+        color: "white",
+        minHeight: "100vh",
+      }}
+    >
       {/* NAVBAR */}
-      <header style={{ display: "flex", justifyContent: "space-between", padding: "20px 40px", borderBottom: "1px solid #222" }}>
+      <header
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          padding: "20px 40px",
+          borderBottom: "1px solid #222",
+        }}
+      >
         <h1 style={{ fontSize: "22px", fontWeight: "bold" }}>
           DrivoraParts
         </h1>
 
         <nav style={{ display: "flex", gap: "20px", fontSize: "14px" }}>
           <span>Home</span>
-          <span>Engines</span>
-          <span>Turbo</span>
-          <span>ECU</span>
+          <span>Catalog</span>
           <span>Contact</span>
         </nav>
       </header>
@@ -24,21 +44,8 @@ export default function Home() {
         </h2>
 
         <p style={{ marginTop: "10px", color: "#aaa" }}>
-          USA • UK • Canada — Performance engines, turbochargers, ECU modules & more
+          USA • UK • Canada — Engines, Turbochargers, ECU Modules & More
         </p>
-
-        <div style={{ marginTop: "25px" }}>
-          <input
-            placeholder="Search engines, turbos, ECUs..."
-            style={{
-              padding: "12px",
-              width: "300px",
-              borderRadius: "8px",
-              border: "none",
-              outline: "none"
-            }}
-          />
-        </div>
       </section>
 
       {/* CATEGORIES */}
@@ -47,29 +54,45 @@ export default function Home() {
           Categories
         </h3>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "15px" }}>
-          {["Engines", "Turbochargers", "ECU Modules", "Transmissions", "Headlights", "Bumpers"].map((item) => (
-            <div
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "15px",
+          }}
+        >
+          {categories.map((item) => (
+            <a
               key={item}
+              href={`/catalog/${item}`}
               style={{
                 background: "#1a1a1a",
                 padding: "20px",
                 borderRadius: "10px",
                 textAlign: "center",
-                cursor: "pointer"
+                display: "block",
+                color: "white",
+                textDecoration: "none",
+                textTransform: "capitalize",
               }}
             >
-              {item}
-            </div>
+              {item.replace("-", " ")}
+            </a>
           ))}
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer style={{ padding: "30px 40px", borderTop: "1px solid #222", marginTop: "60px", color: "#777" }}>
+      <footer
+        style={{
+          padding: "30px 40px",
+          borderTop: "1px solid #222",
+          marginTop: "60px",
+          color: "#777",
+        }}
+      >
         Built with Next.js + Cloudflare Pages
       </footer>
-
     </div>
   );
 }
