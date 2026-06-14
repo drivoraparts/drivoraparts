@@ -1,5 +1,6 @@
-import next from "eslint-config-next";
-
-export default [
-  ...next,
-];
+export default {
+  plugins: {
+    "@tailwindcss/postcss": {},
+    autoprefixer: {},
+  },
+};
