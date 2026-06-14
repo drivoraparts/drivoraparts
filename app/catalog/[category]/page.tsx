@@ -1,58 +1,103 @@
+import Link from "next/link";
 import { products } from "@/data/products";
 
-export function generateStaticParams() {
-  return [
-    { category: "engines" },
-    { category: "turbochargers" },
-    { category: "ecu-modules" },
-    { category: "transmissions" },
-    { category: "headlights" },
-    { category: "bumpers" },
-  ];
-}
+type Props = {
+  params: Promise<{
+    category: string;
+  }>;
+};
 
-export default async function CategoryPage({
-  params,
-}: {
-  params: Promise<{ category: string }>;
-}) {
+export default async function CategoryPage({ params }: Props) {
   const { category } = await params;
 
-  const filteredProducts = products.filter(
-    (p) => p.category.toLowerCase() === category.toLowerCase()
+  const filtered = products.filter(
+    (p) => p.category === category
   );
 
   return (
     <div
       style={{
-        padding: "40px",
-        background: "#0f0f0f",
-        color: "white",
+        background: "#07070a",
         minHeight: "100vh",
+        padding: "50px 20px",
+        color: "white",
+        fontFamily: "Arial",
       }}
     >
-      <h1>{category.toUpperCase()}</h1>
+      <h1
+        style={{
+          fontSize: "34px",
+          fontWeight: "bold",
+          letterSpacing: "1px",
+          textTransform: "uppercase",
+        }}
+      >
+        {category}
+      </h1>
 
-      <div style={{ marginTop: "20px" }}>
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map((p) => (
+      <p style={{ color: "#aaa", marginTop: 5 }}>
+        Premium performance parts marketplace
+      </p>
+
+      <div
+        style={{
+          marginTop: 30,
+          display: "grid",
+          gridTemplateColumns:
+            "repeat(auto-fit, minmax(260px, 1fr))",
+          gap: "20px",
+        }}
+      >
+        {filtered.map((p) => (
+          <Link
+            key={p.id}
+            href={`/product/${p.id}`}
+            style={{
+              background: "#111118",
+              borderRadius: 16,
+              overflow: "hidden",
+              textDecoration: "none",
+              color: "white",
+              border: "1px solid #222",
+            }}
+          >
             <div
-              key={p.id}
               style={{
-                background: "#1a1a1a",
-                padding: "20px",
-                marginBottom: "15px",
-                borderRadius: "10px",
+                height: 200,
+                overflow: "hidden",
+                background: "#000",
               }}
             >
-              <h3>{p.name}</h3>
-              <p>{p.description}</p>
-              <p>${p.price}</p>
+              <img
+                src={p.thumbnail}
+                alt={p.name}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </div>
-          ))
-        ) : (
-          <p>No products found.</p>
-        )}
+
+            <div style={{ padding: 15 }}>
+              <h3 style={{ fontSize: 16 }}>{p.name}</h3>
+
+              <p style={{ fontSize: 12, color: "#888" }}>
+                {p.condition} • {p.location}
+              </p>
+
+              <div
+                style={{
+                  marginTop: 10,
+                  color: "#00ff88",
+                  fontWeight: "bold",
+                }}
+              >
+                ${p.price}
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
