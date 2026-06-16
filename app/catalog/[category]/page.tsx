@@ -1,9 +1,9 @@
 import { products } from "../../../data/products";
 
 type Props = {
-  params: {
+  params: Promise<{
     category: string;
-  };
+  }>;
 };
 
 export async function generateStaticParams() {
@@ -16,20 +16,38 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function CategoryPage({ params }: Props) {
+export default async function CategoryPage({ params }: Props) {
+  const { category } = await params;
+
   const filtered = products.filter(
-    (p) => p.category === params.category
+    (p) => p.category === category
   );
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>{params.category}</h1>
+      <h1 style={{ fontSize: "24px", fontWeight: "bold" }}>
+        Category: {category}
+      </h1>
 
-      {filtered.map((p) => (
-        <div key={p.id}>
-          {p.name} - {p.price}
-        </div>
-      ))}
+      <div style={{ marginTop: "20px" }}>
+        {filtered.length === 0 ? (
+          <p>No products found.</p>
+        ) : (
+          filtered.map((product) => (
+            <div
+              key={product.id}
+              style={{
+                padding: "10px",
+                border: "1px solid #ddd",
+                marginBottom: "10px",
+              }}
+            >
+              <h2>{product.name}</h2>
+              <p>{product.price}</p>
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 }
