@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { products } from "@/data/products";
 
+export async function generateStaticParams() {
+  const categories = Array.from(new Set(products.map((p) => p.category)));
+  return categories.map((category) => ({ category }));
+}
+
 type Props = {
   params: Promise<{
     category: string;

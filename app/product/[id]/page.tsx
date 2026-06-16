@@ -1,6 +1,10 @@
 import { products } from "@/data/products";
 import ProductGallery from "./ProductGallery";
 
+export async function generateStaticParams() {
+  return products.map((p) => ({ id: String(p.id) }));
+}
+
 type Props = {
   params: Promise<{
     id: string;

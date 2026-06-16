@@ -1,0 +1,44 @@
+name: Pages Build and Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Build for Cloudflare Pages
+        run: npm run pages:build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-build
+          path: |
+            out
+
+      - name: Publish to Cloudflare Pages (optional)
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN && secrets.CLOUDFLARE_PROJECT_NAME && secrets.CLOUDFLARE_ACCOUNT_ID }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_PROJECT_NAME: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler
+          if [ -d "out" ]; then
+            wrangler pages publish out --project-name "$CLOUDFLARE_PROJECT_NAME" --branch main --account-id "$CLOUDFLARE_ACCOUNT_ID"
+          else
+            echo "No out directory found; build artifact uploaded instead."
