@@ -25,29 +25,14 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1 style={{ fontSize: "24px", fontWeight: "bold" }}>
-        Category: {category}
-      </h1>
+      <h1>{category}</h1>
 
-      <div style={{ marginTop: "20px" }}>
-        {filtered.length === 0 ? (
-          <p>No products found.</p>
-        ) : (
-          filtered.map((product) => (
-            <div
-              key={product.id}
-              style={{
-                padding: "10px",
-                border: "1px solid #ddd",
-                marginBottom: "10px",
-              }}
-            >
-              <h2>{product.name}</h2>
-              <p>{product.price}</p>
-            </div>
-          ))
-        )}
-      </div>
+      {filtered.map((p) => (
+        <div key={p.id}>
+          <h2>{p.name}</h2>
+          <p>{p.price}</p>
+        </div>
+      ))}
     </div>
   );
 }
