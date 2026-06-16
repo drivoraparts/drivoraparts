@@ -1,5 +1,7 @@
 import { products } from "../../../data/products";
 
+export const runtime = "edge";
+
 export default async function ProductPage({
   params,
 }: {
@@ -18,7 +20,7 @@ export default async function ProductPage({
   return (
     <div style={{ padding: "20px" }}>
       <h1>{product.name}</h1>
-      <p>{product.price}</p>
+      <p>${product.price}</p>
       <p>{product.description}</p>
     </div>
   );
