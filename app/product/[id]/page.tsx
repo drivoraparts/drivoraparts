@@ -1,88 +1,44 @@
-import { products } from "@/data/products";
-import ProductGallery from "./ProductGallery";
-
-export async function generateStaticParams() {
-  return products.map((p) => ({ id: String(p.id) }));
-}
+import { products } from "../../../data/products";
 
 type Props = {
-  params: Promise<{
+  params: {
     id: string;
-  }>;
+  };
 };
 
-export default async function ProductPage({ params }: Props) {
-  const { id } = await params;
+// REQUIRED for static export
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    id: product.id.toString(),
+  }));
+}
 
+export default function ProductPage({ params }: Props) {
   const product = products.find(
-    (p) => p.id === Number(id)
+    (p) => p.id.toString() === params.id
   );
 
   if (!product) {
     return (
-      <div style={{ color: "white", padding: 40 }}>
+      <h1 style={{ padding: "20px" }}>
         Product not found
-      </div>
+      </h1>
     );
   }
 
   return (
-    <div
-      style={{
-        background: "#07070a",
-        minHeight: "100vh",
-        padding: "50px 20px",
-        color: "white",
-        fontFamily: "Arial",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: 40,
-        }}
-      >
-        <div>
-          <h1 style={{ fontSize: 32 }}>{product.name}</h1>
+    <div style={{ padding: "20px" }}>
+      <h1 style={{ fontSize: "26px", fontWeight: "bold" }}>
+        {product.name}
+      </h1>
 
-          <p style={{ color: "#888", marginTop: 10 }}>
-            {product.condition} • {product.location}
-          </p>
+      <p style={{ marginTop: "10px" }}>
+        Price: {product.price}
+      </p>
 
-          <p style={{ marginTop: 20, color: "#ccc" }}>
-            {product.description}
-          </p>
-
-          <h2
-            style={{
-              marginTop: 20,
-              color: "#00ff88",
-              fontSize: 28,
-            }}
-          >
-            ${product.price}
-          </h2>
-
-          <button
-            style={{
-              marginTop: 25,
-              padding: "14px 20px",
-              background: "#00ff88",
-              border: "none",
-              borderRadius: 10,
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-          >
-            Buy Now
-          </button>
-        </div>
-
-        <ProductGallery product={product} />
-      </div>
+      <p style={{ marginTop: "10px" }}>
+        Category: {product.category}
+      </p>
     </div>
   );
 }
