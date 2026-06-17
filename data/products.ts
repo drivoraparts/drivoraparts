@@ -1,4 +1,16 @@
-export const products = [
+export type Product = {
+  id: number;
+  name: string;
+  category: string;
+  price: number;
+  condition: string;
+  location: string;
+  thumbnail: string;
+  images: string[];
+  description: string;
+};
+
+export const products: Product[] = [
   {
     id: 1,
     name: "BMW N54 Twin Turbo Engine",
@@ -10,10 +22,10 @@ export const products = [
     images: [
       "/engines/engine-1.jpg",
       "/engines/engine-2.jpg",
-      "/engines/engine-3.jpg",
+      "/engines/engine-3.jpg"
     ],
     description:
-      "High-performance BMW N54 twin turbo engine fully tested and rebuilt for maximum power output.",
+      "High-performance BMW N54 twin turbo engine fully tested and rebuilt for maximum power output."
   },
   {
     id: 2,
@@ -22,12 +34,12 @@ export const products = [
     price: 850,
     condition: "New",
     location: "UK Warehouse",
-    thumbnail: "/turbo/turbo-1.jpg",
+    thumbnail: "/turbochargers/turbo-1.jpg",
     images: [
-      "/turbo/turbo-1.jpg",
-      "/turbo/turbo-2.jpg",
+      "/turbochargers/turbo-1.jpg",
+      "/turbochargers/turbo-2.jpg"
     ],
     description:
-      "Premium Garrett turbocharger designed for extreme boost performance and reliability.",
-  },
+      "Premium Garrett turbocharger designed for extreme boost performance and reliability."
+  }
 ];
