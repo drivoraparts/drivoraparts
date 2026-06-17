@@ -19,10 +19,17 @@
       "@/*": ["./*"]
     },
 
-    "ignoreDeprecations": "6.0",
-
     "plugins": [
-      { "name": "next" }
+      {
+        "name": "next"
+      }
     ]
-  }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
 }
