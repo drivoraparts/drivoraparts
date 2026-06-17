@@ -1,4 +1,4 @@
-async function checkout(items: any[], total: number) {
+export async function checkout(items: any[], total: number) {
   const orderId = "DRV-" + Date.now();
 
   const res = await fetch("/api/checkout", {
