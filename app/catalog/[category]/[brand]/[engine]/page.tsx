@@ -1,53 +1,44 @@
+import { products } from "@/data/products";
+
 export const runtime = "edge";
 
-import Link from "next/link";
+type Props = {
+  params: Promise<{
+    category: string;
+  }>;
+};
 
-const engineCategories = [
-  {
-    slug: "japanese-legends",
-    title: "Japanese Legends",
-    engines: ["2JZ", "1JZ", "RB26DETT", "SR20DET"],
-  },
-  {
-    slug: "bmw-engines",
-    title: "BMW Engines",
-    engines: ["N54", "N55", "S55", "S58"],
-  },
-  {
-    slug: "american-v8",
-    title: "American V8",
-    engines: ["LS3", "LS7", "Coyote 5.0"],
-  },
-];
+export default async function Page({ params }: Props) {
+  const { category } = await params;
 
-export default function EnginePage() {
+  const filtered = products.filter(
+    (p) => p.category === category
+  );
+
   return (
     <main className="p-6 text-white">
-      <h1 className="text-3xl font-bold mb-8">Engine Categories</h1>
+      <h1 className="text-2xl font-bold capitalize mb-6">
+        {category}
+      </h1>
 
-      <div className="grid gap-6">
-        {engineCategories.map((group) => (
+      <div className="grid md:grid-cols-3 gap-4">
+        {filtered.map((p) => (
           <div
-            key={group.slug}
-            className="bg-white/5 border border-white/10 rounded-xl p-5"
+            key={p.id}
+            className="bg-white/5 border border-white/10 p-4 rounded-xl"
           >
-            <h2 className="text-xl font-semibold mb-4 text-red-500">
-              {group.title}
-            </h2>
+            <img
+              src={p.thumbnail}
+              className="h-40 w-full object-cover rounded-lg"
+              alt={p.name}
+            />
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {group.engines.map((engine) => (
-                <Link
-                  key={engine}
-                  href={`/catalog/engine/${group.slug}/${engine
-                    .toLowerCase()
-                    .replace(/ /g, "-")}`}
-                  className="p-3 bg-black/40 rounded-lg hover:bg-white/10"
-                >
-                  {engine}
-                </Link>
-              ))}
-            </div>
+            <h3 className="mt-3 font-semibold">{p.name}</h3>
+            <p className="text-sm text-gray-400">${p.price}</p>
+
+            <button className="mt-3 w-full bg-red-600 py-2 rounded-lg">
+              View Product
+            </button>
           </div>
         ))}
       </div>
