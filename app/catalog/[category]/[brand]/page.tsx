@@ -3,14 +3,14 @@ import { products } from "@/data/products";
 export const runtime = "edge";
 
 type Props = {
-  params: {
+  params: Promise<{
     category: string;
     brand: string;
-  };
+  }>;
 };
 
-export default function BrandPage({ params }: Props) {
-  const { category, brand } = params;
+export default async function BrandPage({ params }: Props) {
+  const { category, brand } = await params;
 
   const filtered = products.filter(
     (p) =>
