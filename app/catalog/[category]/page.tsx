@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { products } from "@/data/products";
 
 export default function Page({ params }: any) {
