@@ -5,21 +5,20 @@ export const runtime = "edge";
 type Props = {
   params: Promise<{
     category: string;
-    brand: string;
   }>;
 };
 
 export default async function Page({ params }: Props) {
-  const { category, brand } = await params;
+  const { category } = await params;
 
   const filtered = products.filter(
-    (p) => p.category === category && p.brand === brand
+    (p) => p.category === category
   );
 
   return (
     <main className="p-6 text-white">
-      <h1 className="text-2xl font-bold mb-6 capitalize">
-        {brand} - {category}
+      <h1 className="text-2xl font-bold capitalize mb-6">
+        {category}
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">

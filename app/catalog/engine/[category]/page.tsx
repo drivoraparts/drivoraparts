@@ -1,24 +1,25 @@
 import { products } from "@/data/products";
 
-export const runtime = "edge"; // ✅ MUST BE HERE TOO
+export const runtime = "edge";
 
-type PageProps = {
-  params: {
+type Props = {
+  params: Promise<{
     category: string;
-  };
+    brand: string;
+  }>;
 };
 
-export default function EngineSubCategory({ params }: PageProps) {
-  const { category } = params;
+export default async function Page({ params }: Props) {
+  const { category, brand } = await params;
 
   const filtered = products.filter(
-    (p) => p.category === category
+    (p) => p.category === category && p.brand === brand
   );
 
   return (
     <main className="p-6 text-white">
       <h1 className="text-2xl font-bold capitalize mb-6">
-        Engine: {category}
+        {brand} - {category}
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">
@@ -30,6 +31,7 @@ export default function EngineSubCategory({ params }: PageProps) {
             <img
               src={p.thumbnail}
               className="h-40 w-full object-cover rounded-lg"
+              alt={p.name}
             />
 
             <h3 className="mt-3 font-semibold">{p.name}</h3>
