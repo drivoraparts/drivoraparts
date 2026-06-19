@@ -2,11 +2,14 @@ import { products } from "@/data/products";
 
 export const runtime = "edge";
 
-export default async function BrandPage({
-  params,
-}: {
-  params: { category: string; brand: string };
-}) {
+type Props = {
+  params: {
+    category: string;
+    brand: string;
+  };
+};
+
+export default function BrandPage({ params }: Props) {
   const { category, brand } = params;
 
   const filtered = products.filter(
