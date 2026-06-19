@@ -1,25 +1,20 @@
 import { products } from "@/data/products";
 
-type PageProps = {
-  params: {
-    category: string;
-    brand: string;
-  };
-};
+export default function Page({ params }: any) {
+  const { category, brand, engine } = params;
 
-export default function Page({ params }: PageProps) {
-  const { category, brand } = params;
-
-  const filtered = products.filter(
-    (p) =>
-      p.category === category &&
-      p.brand === brand
-  );
+  const filtered = (products as any).filter((p: any) => {
+    return (
+      (!category || p.category === category) &&
+      (!brand || p.brand === brand) &&
+      (!engine || p.engine === engine)
+    );
+  });
 
   return (
     <main className="p-6 text-white">
-      <h1 className="text-2xl font-bold capitalize mb-6">
-        {brand} Parts
+      <h1 className="text-2xl font-bold mb-6">
+        {category} {brand} {engine}
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">
@@ -31,15 +26,9 @@ export default function Page({ params }: PageProps) {
             <img
               src={p.thumbnail}
               className="h-40 w-full object-cover rounded-lg"
-              alt={p.name}
             />
-
             <h3 className="mt-3 font-semibold">{p.name}</h3>
             <p className="text-sm text-gray-400">${p.price}</p>
-
-            <button className="mt-3 w-full bg-red-600 py-2 rounded-lg">
-              View Product
-            </button>
           </div>
         ))}
       </div>

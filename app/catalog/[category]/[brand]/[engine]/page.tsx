@@ -2,11 +2,7 @@ import { products } from "@/data/products";
 
 export const runtime = "edge";
 
-export default function Page({
-  params,
-}: {
-  params: { category: string };
-}) {
+export default function Page({ params }: any) {
   const filtered = products.filter(
     (p) => p.category === params.category
   );

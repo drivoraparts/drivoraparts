@@ -3,11 +3,7 @@ import AddToCartButton from "@/app/components/AddToCartButton";
 
 export const runtime = "edge";
 
-export default async function ProductPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+export default function ProductPage({ params }: any) {
   const { id } = params;
 
   const product = products.find((p) => p.id === Number(id));
