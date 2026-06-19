@@ -1,20 +1,24 @@
 export const runtime = "edge";
 
 export async function POST(req: Request) {
-  try {
-    const body = await req.json();
+  const body = await req.json();
 
-    const { amount, orderId } = body;
+  const { amount, orderId } = body;
 
-    return Response.json({
-      result: {
-        url: `https://example-checkout.com/${orderId}`,
-      },
-    });
-  } catch (err) {
-    return Response.json(
-      { error: "Checkout failed" },
-      { status: 500 }
-    );
-  }
+  // replace with your BTC provider (NOWPayments / Coinbase Commerce / BTCPay)
+  const response = await fetch("YOUR_BTC_API_ENDPOINT", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer YOUR_API_KEY`,
+    },
+    body: JSON.stringify({
+      price_amount: amount,
+      order_id: orderId,
+    }),
+  });
+
+  const data = await response.json();
+
+  return Response.json({ result: data });
 }

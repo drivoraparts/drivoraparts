@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
+/* =========================
+   BASE THEME VARIABLES
+========================= */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Tailwind theme mapping */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,6 +16,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +24,51 @@
   }
 }
 
+/* Base body */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   GLOBAL UX POLISH (SAFE)
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   HERO CINEMATIC ZOOM
+========================= */
+@keyframes slowZoom {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+
+.animate-slowZoom {
+  animation: slowZoom 12s ease-in-out infinite alternate;
+}
+
+/* =========================
+   SECTION FADE IN
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.9s ease forwards;
 }

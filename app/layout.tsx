@@ -1,19 +1,17 @@
 import "./globals.css";
-import type { ReactNode } from "react";
+import LayoutShell from "@/components/layout/LayoutShell";
+import { MarketProvider } from "@/components/context/MarketContext";
 
-export const metadata = {
-  title: "DrivoraParts",
-  description: "Premium Auto Parts Marketplace",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-black text-white">
+
+        <MarketProvider>
+          <LayoutShell>{children}</LayoutShell>
+        </MarketProvider>
+
+      </body>
     </html>
   );
 }

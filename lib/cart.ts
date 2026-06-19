@@ -1,57 +1,44 @@
-export type CartItem = {
+import { create } from "zustand";
+
+type CartItem = {
   id: number;
   name: string;
   price: number;
   thumbnail: string;
-  quantity: number;
+  qty: number;
 };
 
-const CART_KEY = "drivora_cart";
+type CartState = {
+  items: CartItem[];
+  addItem: (item: Omit<CartItem, "qty">) => void;
+  removeItem: (id: number) => void;
+  clearCart: () => void;
+};
 
-/**
- * Get cart
- */
-export function getCart(): CartItem[] {
-  if (typeof window === "undefined") return [];
-  return JSON.parse(localStorage.getItem(CART_KEY) || "[]");
-}
+export const useCart = create<CartState>((set) => ({
+  items: [],
 
-/**
- * Save cart
- */
-export function saveCart(cart: CartItem[]) {
-  localStorage.setItem(CART_KEY, JSON.stringify(cart));
-}
+  addItem: (item) =>
+    set((state) => {
+      const exists = state.items.find((i) => i.id === item.id);
 
-/**
- * Add item
- */
-export function addToCart(item: Omit<CartItem, "quantity">) {
-  const cart = getCart();
-  const existing = cart.find((i) => i.id === item.id);
+      if (exists) {
+        return {
+          items: state.items.map((i) =>
+            i.id === item.id ? { ...i, qty: i.qty + 1 } : i
+          ),
+        };
+      }
 
-  if (existing) {
-    existing.quantity += 1;
-  } else {
-    cart.push({ ...item, quantity: 1 });
-  }
+      return {
+        items: [...state.items, { ...item, qty: 1 }],
+      };
+    }),
 
-  saveCart(cart);
-  return cart;
-}
+  removeItem: (id) =>
+    set((state) => ({
+      items: state.items.filter((i) => i.id !== id),
+    })),
 
-/**
- * Remove item
- */
-export function removeFromCart(id: number) {
-  const cart = getCart().filter((i) => i.id !== id);
-  saveCart(cart);
-  return cart;
-}
-
-/**
- * Clear cart
- */
-export function clearCart() {
-  localStorage.removeItem(CART_KEY);
-}
+  clearCart: () => set({ items: [] }),
+}));

@@ -1,302 +1,135 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import Link from "next/link";
-import { products } from "@/data/products";
+import { useEffect } from "react";
 
-type Product = (typeof products)[number];
+const sections = [
+  {
+    title: "Precision Engine Craft",
+    text: "Every component engineered for performance, endurance, and speed.",
+    image: "/home/pexels-artempodrez-8986047.jpg",
+  },
+  {
+    title: "Suspension Control",
+    text: "Built for stability, grip, and unmatched driving confidence.",
+    image: "/home/pexels-matreding-9381019.jpg",
+  },
+  {
+    title: "Braking Power",
+    text: "Stop with control. Respond with precision under any condition.",
+    image: "/home/pexels-garvin-st-villier-719266-14277598.jpg",
+  },
+  {
+    title: "Performance Electronics",
+    text: "Smart systems powering modern automotive performance.",
+    image: "/home/pexels-stephanlouis-7012890.jpg",
+  },
+];
 
-export default function HomePage() {
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("all");
-  const [page, setPage] = useState(1);
-  const [wishlist, setWishlist] = useState<number[]>([]);
-  const [compare, setCompare] = useState<number[]>([]);
-  const [preview, setPreview] = useState<Product | null>(null);
+export default function Home() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const hero = document.getElementById("parallaxHero");
+      if (!hero) return;
 
-  const perPage = 6;
+      const offset = window.scrollY;
+      hero.style.transform = `translate3d(0, ${offset * 0.2}px, 0) scale(1.1)`;
+    };
 
-  const categories = [
-    "all",
-    "engines",
-    "turbochargers",
-    "brakes",
-    "suspension",
-    "electronics",
-    "transmissions",
-    "headlights",
-    "interiors",
-    "body-parts",
-  ];
-
-  const filtered = useMemo(() => {
-    return products.filter((p) => {
-      const matchCategory = category === "all" || p.category === category;
-      const matchSearch =
-        p.name.toLowerCase().includes(query.toLowerCase()) ||
-        p.description.toLowerCase().includes(query.toLowerCase());
-
-      return matchCategory && matchSearch;
-    });
-  }, [query, category]);
-
-  const totalPages = Math.ceil(filtered.length / perPage);
-
-  const paginated = filtered.slice(
-    (page - 1) * perPage,
-    page * perPage
-  );
-
-  const toggleWishlist = (id: number) => {
-    setWishlist((prev) =>
-      prev.includes(id)
-        ? prev.filter((x) => x !== id)
-        : [...prev, id]
-    );
-  };
-
-  const toggleCompare = (id: number) => {
-    setCompare((prev) =>
-      prev.includes(id)
-        ? prev.filter((x) => x !== id)
-        : prev.length < 3
-        ? [...prev, id]
-        : prev
-    );
-  };
-
-  const compareItems = products.filter((p) =>
-    compare.includes(p.id)
-  );
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <main style={{ background: "#0b0f14", color: "white", minHeight: "100vh" }}>
-      {/* HEADER */}
-      <header
-        style={{
-          display: "flex",
-          alignItems: "center",
-          padding: "14px",
-          borderBottom: "1px solid #1f2937",
-        }}
-      >
-        <h2 style={{ fontWeight: "bold" }}>
-          Drivora<span style={{ color: "#ff3b3b" }}>Parts</span>
-        </h2>
+    <div className="bg-black text-white relative z-0">
 
-        <input
-          value={query}
-          onChange={(e) => {
-            setQuery(e.target.value);
-            setPage(1);
-          }}
-          placeholder="Search parts..."
+      {/* HERO */}
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+
+        {/* BACKGROUND */}
+        <div
+          id="parallaxHero"
+          className="absolute inset-0 bg-cover bg-center scale-110 z-0"
           style={{
-            flex: 1,
-            margin: "0 12px",
-            padding: "10px",
-            borderRadius: "8px",
-            border: "none",
+            backgroundImage:
+              "url('/home/pexels-juan-montes-92812630-11456554.jpg')",
           }}
         />
 
-        <Link href="/">Home</Link>
-      </header>
+        {/* OVERLAY (IMPORTANT: DOES NOT BLOCK CLICKS) */}
+        <div className="absolute inset-0 bg-black/60 pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black pointer-events-none z-10" />
 
-      {/* CATEGORY BAR */}
-      <div style={{ display: "flex", gap: "8px", padding: "10px", overflowX: "auto" }}>
-        {categories.map((c) => (
-          <button
-            key={c}
-            onClick={() => {
-              setCategory(c);
-              setPage(1);
-            }}
-            style={{
-              padding: "6px 10px",
-              borderRadius: "20px",
-              border: "1px solid #333",
-              background: category === c ? "#ff3b3b" : "#111827",
-              color: "white",
-              fontSize: "12px",
-              textTransform: "capitalize",
-            }}
+        {/* HERO TEXT */}
+        <div className="relative z-20 text-center px-6 max-w-4xl">
+
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            CINEMATIC <span className="text-red-500">PERFORMANCE</span>
+          </h1>
+
+          <p className="mt-6 text-gray-300 text-base md:text-lg">
+            Precision-engineered automotive parts for builders who demand control, power, and presence.
+          </p>
+
+          <Link
+            href="/catalog"
+            className="inline-block mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 rounded-full font-semibold transition transform hover:scale-105"
           >
-            {c}
-          </button>
-        ))}
-      </div>
+            ENTER MARKET
+          </Link>
 
-      {/* COMPARE BAR */}
-      {compare.length > 0 && (
-        <div
-          style={{
-            padding: "10px",
-            borderBottom: "1px solid #1f2937",
-            background: "#111827",
-          }}
-        >
-          <strong>Compare ({compare.length}/3):</strong>{" "}
-          {compareItems.map((p) => p.name).join(" vs ")}
-        </div>
-      )}
-
-      {/* PRODUCTS */}
-      <section style={{ padding: "16px" }}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: "14px",
-          }}
-        >
-          {paginated.map((product) => {
-            const isWish = wishlist.includes(product.id);
-            const isCompare = compare.includes(product.id);
-
-            return (
-              <div
-                key={product.id}
-                style={{
-                  background: "#111827",
-                  border: "1px solid #1f2937",
-                  borderRadius: "12px",
-                  overflow: "hidden",
-                  position: "relative",
-                }}
-              >
-                {/* IMAGE CLICK PREVIEW */}
-                <img
-                  src={product.thumbnail}
-                  alt={product.name}
-                  onClick={() => setPreview(product)}
-                  style={{
-                    width: "100%",
-                    height: "160px",
-                    objectFit: "cover",
-                    cursor: "pointer",
-                  }}
-                />
-
-                <div style={{ padding: "10px" }}>
-                  <h3 style={{ fontSize: "13px" }}>{product.name}</h3>
-                  <p style={{ fontSize: "11px", opacity: 0.7 }}>
-                    ${product.price}
-                  </p>
-
-                  <div style={{ display: "flex", gap: "6px", marginTop: "8px" }}>
-                    {/* WISHLIST */}
-                    <button
-                      onClick={() => toggleWishlist(product.id)}
-                      style={{
-                        fontSize: "10px",
-                        padding: "5px",
-                        background: isWish ? "red" : "#1f2937",
-                        border: "none",
-                        borderRadius: "6px",
-                        color: "white",
-                      }}
-                    >
-                      ♥
-                    </button>
-
-                    {/* COMPARE */}
-                    <button
-                      onClick={() => toggleCompare(product.id)}
-                      style={{
-                        fontSize: "10px",
-                        padding: "5px",
-                        background: isCompare ? "green" : "#1f2937",
-                        border: "none",
-                        borderRadius: "6px",
-                        color: "white",
-                      }}
-                    >
-                      ⚖
-                    </button>
-
-                    <Link
-                      href={`/product/${product.id}`}
-                      style={{
-                        fontSize: "10px",
-                        padding: "5px",
-                        background: "#ff3b3b",
-                        borderRadius: "6px",
-                      }}
-                    >
-                      View
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* PAGINATION */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "20px",
-            gap: "10px",
-          }}
-        >
-          <button
-            disabled={page === 1}
-            onClick={() => setPage((p) => p - 1)}
-            style={{ padding: "6px 10px" }}
-          >
-            Prev
-          </button>
-
-          <span>
-            Page {page} / {totalPages}
-          </span>
-
-          <button
-            disabled={page === totalPages}
-            onClick={() => setPage((p) => p + 1)}
-            style={{ padding: "6px 10px" }}
-          >
-            Next
-          </button>
         </div>
       </section>
 
-      {/* QUICK VIEW MODAL */}
-      {preview && (
-        <div
-          onClick={() => setPreview(null)}
-          style={{
-            position: "fixed",
-            inset: 0,
-            background: "rgba(0,0,0,0.8)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+      {/* SECTIONS */}
+      {sections.map((item, i) => (
+        <section
+          key={i}
+          className={`flex flex-col md:flex-row items-center gap-10 px-6 md:px-20 py-32 ${
+            i % 2 === 1 ? "md:flex-row-reverse" : ""
+          }`}
         >
-          <div
-            style={{
-              background: "#111827",
-              padding: "20px",
-              borderRadius: "12px",
-              width: "300px",
-            }}
-          >
+
+          <div className="w-full md:w-1/2">
             <img
-              src={preview.thumbnail}
-              style={{ width: "100%", borderRadius: "10px" }}
+              src={item.image}
+              alt={item.title}
+              className="rounded-xl w-full object-cover shadow-2xl"
             />
-            <h3>{preview.name}</h3>
-            <p>${preview.price}</p>
-            <p style={{ fontSize: "12px", opacity: 0.7 }}>
-              {preview.description}
+          </div>
+
+          <div className="w-full md:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {item.title}
+            </h2>
+            <p className="text-gray-400 leading-relaxed">
+              {item.text}
             </p>
           </div>
-        </div>
-      )}
-    </main>
+
+        </section>
+      ))}
+
+      {/* CTA */}
+      <section className="text-center py-32 border-t border-white/10">
+
+        <h2 className="text-4xl font-bold mb-4">
+          Build Your Performance Setup
+        </h2>
+
+        <p className="text-gray-400 mb-8">
+          DrivoraParts — engineered for builders who move with precision.
+        </p>
+
+        <Link
+          href="/catalog"
+          className="inline-block px-10 py-4 bg-red-600 hover:bg-red-700 rounded-full font-semibold transition transform hover:scale-105"
+        >
+          ENTER MARKET
+        </Link>
+
+      </section>
+
+    </div>
   );
 }
