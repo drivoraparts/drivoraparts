@@ -17,7 +17,7 @@ export default function ContactPage() {
           </h2>
 
           <p>
-            Email: support@drivoraparts.com
+            Email: customerservice@drivoraparts.com
           </p>
 
           <p className="mt-2">
