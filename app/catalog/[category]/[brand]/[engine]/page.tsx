@@ -2,21 +2,19 @@ import { products } from "@/data/products";
 
 export const runtime = "edge";
 
-type Props = {
-  params: Promise<{ category: string }>;
-};
-
-export default async function Page({ params }: Props) {
-  const { category } = await params;
-
+export default function Page({
+  params,
+}: {
+  params: { category: string };
+}) {
   const filtered = products.filter(
-    (p) => p.category === category
+    (p) => p.category === params.category
   );
 
   return (
     <main className="p-6 text-white">
       <h1 className="text-2xl font-bold capitalize mb-6">
-        Engine - {category}
+        Engine - {params.category}
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">

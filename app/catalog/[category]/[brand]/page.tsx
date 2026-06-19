@@ -1,24 +1,25 @@
 import { products } from "@/data/products";
 
-export const runtime = "edge";
-
-type Props = {
-  params: Promise<{
+type PageProps = {
+  params: {
     category: string;
-  }>;
+    brand: string;
+  };
 };
 
-export default async function Page({ params }: Props) {
-  const { category } = await params;
+export default function Page({ params }: PageProps) {
+  const { category, brand } = params;
 
   const filtered = products.filter(
-    (p) => p.category === category
+    (p) =>
+      p.category === category &&
+      p.brand === brand
   );
 
   return (
     <main className="p-6 text-white">
       <h1 className="text-2xl font-bold capitalize mb-6">
-        {category}
+        {brand} Parts
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">
