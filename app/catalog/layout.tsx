@@ -3,5 +3,5 @@ export default function CatalogLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <div className="bg-black text-white min-h-screen">{children}</div>;
 }
