@@ -1,14 +1,13 @@
 import { products } from "@/data/products";
 
-type PageProps = {
-  params: Promise<{
-    category: string;
-    brand: string;
-  }>;
-};
 export const runtime = "edge";
-export default async function BrandPage({ params }: PageProps) {
-  const { category, brand } = await params;
+
+export default async function BrandPage({
+  params,
+}: {
+  params: { category: string; brand: string };
+}) {
+  const { category, brand } = params;
 
   const filtered = products.filter(
     (p) =>

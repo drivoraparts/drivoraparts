@@ -1,14 +1,14 @@
 import { products } from "@/data/products";
-import AddToCartButton from "@/app/components/AddtToCartButton";
+import AddToCartButton from "@/app/components/AddToCartButton";
 
 export const runtime = "edge";
 
 export default async function ProductPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: { id: string };
 }) {
-  const { id } = await params;
+  const { id } = params;
 
   const product = products.find((p) => p.id === Number(id));
 
@@ -31,7 +31,7 @@ export default async function ProductPage({
         gap: "30px",
       }}
     >
-      {/* LEFT SIDE - IMAGES */}
+      {/* LEFT SIDE */}
       <div>
         <div
           style={{
@@ -52,13 +52,7 @@ export default async function ProductPage({
           />
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            gap: "10px",
-            marginTop: "10px",
-          }}
-        >
+        <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
           {product.images?.map((img, i) => (
             <img
               key={i}
@@ -76,7 +70,7 @@ export default async function ProductPage({
         </div>
       </div>
 
-      {/* RIGHT SIDE - INFO */}
+      {/* RIGHT SIDE */}
       <div>
         <h1 style={{ fontSize: "28px", marginBottom: "10px" }}>
           {product.name}
@@ -90,11 +84,10 @@ export default async function ProductPage({
           Condition: {product.condition}
         </p>
 
-        <h2 style={{ marginTop: "15px", fontSize: "26px", color: "#111" }}>
+        <h2 style={{ marginTop: "15px", fontSize: "26px" }}>
           ${product.price}
         </h2>
 
-        {/* ACTION BOX */}
         <div
           style={{
             marginTop: "20px",
@@ -103,7 +96,6 @@ export default async function ProductPage({
             borderRadius: "10px",
           }}
         >
-          {/* REAL CART BUTTON */}
           <AddToCartButton
             product={{
               id: product.id,
@@ -121,8 +113,6 @@ export default async function ProductPage({
               color: "white",
               border: "none",
               borderRadius: "6px",
-              fontWeight: "bold",
-              cursor: "pointer",
               marginTop: "10px",
             }}
           >
@@ -130,27 +120,11 @@ export default async function ProductPage({
           </button>
         </div>
 
-        {/* DESCRIPTION */}
         <div style={{ marginTop: "20px" }}>
           <h3>Description</h3>
           <p style={{ color: "#444", lineHeight: "1.6" }}>
             {product.description}
           </p>
-        </div>
-
-        {/* TRUST / SHIPPING */}
-        <div
-          style={{
-            marginTop: "20px",
-            padding: "15px",
-            background: "#f7f7f7",
-            borderRadius: "10px",
-            fontSize: "14px",
-          }}
-        >
-          <p>🚚 Fast worldwide shipping (USA • UK • Canada)</p>
-          <p>🔒 Secure checkout</p>
-          <p>✔ Verified premium auto parts</p>
         </div>
       </div>
     </div>
