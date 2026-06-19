@@ -6,7 +6,7 @@ type PageProps = {
     brand: string;
   }>;
 };
-
+export const runtime = "edge";
 export default async function BrandPage({ params }: PageProps) {
   const { category, brand } = await params;
 

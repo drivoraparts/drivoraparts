@@ -68,7 +68,7 @@ const engineCategories = [
     ],
   },
 ];
-
+export const runtime = "edge";
 export default function EnginePage() {
   const [active, setActive] = useState<string | null>(null);
 
