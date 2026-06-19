@@ -1,14 +1,14 @@
 import { products } from "@/data/products";
 
-export const runtime = "edge"; // ✅ MUST BE HERE
+export const runtime = "edge";
 
-type PageProps = {
+type Props = {
   params: {
     category: string;
   };
 };
 
-export default function CategoryPage({ params }: PageProps) {
+export default function Page({ params }: Props) {
   const { category } = params;
 
   const filtered = products.filter(

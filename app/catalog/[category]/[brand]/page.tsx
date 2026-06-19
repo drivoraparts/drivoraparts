@@ -3,25 +3,23 @@ import { products } from "@/data/products";
 export const runtime = "edge";
 
 type Props = {
-  params: Promise<{
+  params: {
     category: string;
     brand: string;
-  }>;
+  };
 };
 
-export default async function BrandPage({ params }: Props) {
-  const { category, brand } = await params;
+export default function Page({ params }: Props) {
+  const { category, brand } = params;
 
   const filtered = products.filter(
-    (p) =>
-      p.category === category &&
-      p.name.toLowerCase().includes(brand.toLowerCase())
+    (p) => p.category === category && p.brand === brand
   );
 
   return (
     <main className="p-6 text-white">
       <h1 className="text-2xl font-bold capitalize mb-6">
-        {brand} Parts
+        {brand} {category} Parts
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">
