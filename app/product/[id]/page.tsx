@@ -1,5 +1,5 @@
 import { products } from "@/data/products";
-import AddToCartButton from "@/app/components/AddToCartButton";
+import AddToCartButton from "@/app/components/AddtToCartButton";
 
 export const runtime = "edge";
 

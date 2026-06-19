@@ -1,16 +1,18 @@
 import "./globals.css";
+import Providers from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
-import { MarketProvider } from "@/components/context/MarketContext";
 
-export default function RootLayout({ children }: any) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
-
-        <MarketProvider>
+      <body>
+        <Providers>
           <LayoutShell>{children}</LayoutShell>
-        </MarketProvider>
-
+        </Providers>
       </body>
     </html>
   );

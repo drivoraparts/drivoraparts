@@ -1,48 +1,44 @@
 "use client";
 
+import { useState } from "react";
+
 export default function ProductGallery({
   product,
 }: {
   product: any;
 }) {
+  const [activeImage, setActiveImage] = useState(0);
+
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+    <div className="flex flex-col gap-3">
+
       {/* MAIN IMAGE */}
-      <div
-        style={{
-          height: 350,
-          background: "#000",
-          borderRadius: 14,
-          overflow: "hidden",
-        }}
-      >
+      <div className="h-[350px] bg-black rounded-xl overflow-hidden border border-white/10">
         <img
-          src={product.images?.[0]}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
+          src={product.images?.[activeImage]}
+          className="w-full h-full object-cover transition-all duration-300"
         />
       </div>
 
       {/* THUMBNAILS */}
-      <div style={{ display: "flex", gap: 10 }}>
+      <div className="flex gap-2 overflow-x-auto">
         {product.images?.map((img: string, i: number) => (
           <img
             key={i}
             src={img}
-            style={{
-              width: 90,
-              height: 90,
-              objectFit: "cover",
-              borderRadius: 10,
-              border: "1px solid #222",
-              cursor: "pointer",
-            }}
+            onClick={() => setActiveImage(i)}
+            className={`
+              w-[80px] h-[80px] object-cover rounded-lg cursor-pointer border
+              transition
+              ${activeImage === i
+                ? "border-red-500 scale-105"
+                : "border-white/10 opacity-70 hover:opacity-100"
+              }
+            `}
           />
         ))}
       </div>
+
     </div>
   );
 }

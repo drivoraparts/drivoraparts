@@ -1,7 +1,7 @@
 "use client";
 
 import { useMarket } from "@/components/context/MarketContext";
-import { useMemo, useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 /* =======================
    DATA (ENGINE STRUCTURE)
@@ -52,24 +52,44 @@ const CATEGORIES = [
   "body-parts",
 ];
 
-export default function MarketOverlay() {
-  const { marketOpen, setMarketOpen } = useMarket();
+/* =======================
+   TYPES
+======================= */
+type Props = {
+  onClose: () => void;
+};
+
+export default function MarketOverlay({ onClose }: Props) {
+  const { marketOpen } = useMarket();
 
   const [step, setStep] = useState<"main" | "engine">("main");
   const [activeEngineGroup, setActiveEngineGroup] = useState<string | null>(null);
-
   const [clickAnim, setClickAnim] = useState<string | null>(null);
+
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const engineGroups = Object.keys(ENGINE_DATA);
 
   const engines =
-    activeEngineGroup ? ENGINE_DATA[activeEngineGroup as keyof typeof ENGINE_DATA] : [];
+    activeEngineGroup && ENGINE_DATA[activeEngineGroup as keyof typeof ENGINE_DATA]
+      ? ENGINE_DATA[activeEngineGroup as keyof typeof ENGINE_DATA]
+      : [];
+
+  /* =======================
+     CLEANUP (PREVENT MEMORY LEAK)
+  ======================= */
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
   if (!marketOpen) return null;
 
   const handleClick = (id: string, fn: () => void) => {
     setClickAnim(id);
-    setTimeout(() => {
+
+    timeoutRef.current = setTimeout(() => {
       fn();
       setClickAnim(null);
     }, 120);
@@ -82,7 +102,7 @@ export default function MarketOverlay() {
       <div className="pt-24 px-6">
 
         {/* BACK BUTTON */}
-        {(step !== "main") && (
+        {step !== "main" && (
           <button
             onClick={() => {
               setStep("main");
@@ -94,36 +114,31 @@ export default function MarketOverlay() {
           </button>
         )}
 
-        {/* ================= MAIN CATEGORIES ================= */}
+        {/* MAIN CATEGORIES */}
         {step === "main" && (
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-
             {CATEGORIES.map((cat) => (
               <button
                 key={cat}
                 onClick={() => {
-                  if (cat === "engine") {
-                    setStep("engine");
-                  }
+                  if (cat === "engine") setStep("engine");
                 }}
-                className={`
+                className="
                   p-5 rounded-xl border text-left capitalize
                   bg-white/5 border-white/10 text-white
                   hover:bg-white/10 hover:scale-[1.02]
                   active:scale-95 transition
-                `}
+                "
               >
                 {cat}
               </button>
             ))}
-
           </div>
         )}
 
-        {/* ================= ENGINE SUBCATEGORIES ================= */}
+        {/* ENGINE GROUPS */}
         {step === "engine" && !activeEngineGroup && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
             {engineGroups.map((group) => (
               <button
                 key={group}
@@ -143,14 +158,12 @@ export default function MarketOverlay() {
                 </span>
               </button>
             ))}
-
           </div>
         )}
 
-        {/* ================= ENGINE LIST ================= */}
+        {/* ENGINE LIST */}
         {step === "engine" && activeEngineGroup && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-
             {engines.map((item, i) => (
               <div
                 key={i}
@@ -169,7 +182,6 @@ export default function MarketOverlay() {
                 {item}
               </div>
             ))}
-
           </div>
         )}
 
@@ -177,7 +189,7 @@ export default function MarketOverlay() {
 
       {/* CLOSE BUTTON */}
       <button
-        onClick={() => setMarketOpen(false)}
+        onClick={onClose}
         className="absolute top-6 right-6 text-white text-2xl hover:scale-110 transition"
       >
         ✕

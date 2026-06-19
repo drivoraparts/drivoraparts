@@ -6,7 +6,11 @@ import GlobalDrawer from "./GlobalDrawer";
 import MarketOverlay from "../market/MarketOverlay";
 import GlobalFooter from "./GlobalFooter";
 
-export default function LayoutShell({ children }: any) {
+type Props = {
+  children: React.ReactNode;
+};
+
+export default function LayoutShell({ children }: Props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [marketOpen, setMarketOpen] = useState(false);
@@ -20,12 +24,12 @@ export default function LayoutShell({ children }: any) {
         setMarketOpen={setMarketOpen}
       />
 
-      {/* MARKET OVERLAY (ONLY ONE SOURCE OF TRUTH) */}
+      {/* MARKET OVERLAY */}
       {marketOpen && (
         <MarketOverlay onClose={() => setMarketOpen(false)} />
       )}
 
-      {/* DRAWER (MENU + CART ONLY) */}
+      {/* DRAWER */}
       <GlobalDrawer
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
@@ -34,11 +38,11 @@ export default function LayoutShell({ children }: any) {
       />
 
       {/* PAGE CONTENT */}
-      <main className="pt-[80px]">
+      <main className="pt-[80px] min-h-screen">
         {children}
       </main>
 
-      {/* FOOTER (CONNECTED SYSTEM) */}
+      {/* FOOTER */}
       <GlobalFooter />
     </>
   );

@@ -1,24 +1,30 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getCart, removeFromCart } from "@/lib/cart";
+import { useCart } from "@/context/CartContext";
 
 export default function CartPage() {
-  const [cart, setCart] = useState<any[]>([]);
+  const { cart, removeFromCart } = useCart();
 
-  useEffect(() => {
-    setCart(getCart());
-  }, []);
-
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const total = cart.reduce(
+    (sum: number, item: any) => sum + item.price * item.quantity,
+    0
+  );
 
   return (
-    <div style={{ padding: 40, background: "#0b0f19", color: "white", minHeight: "100vh" }}>
+    <div
+      style={{
+        padding: 40,
+        background: "#0b0f19",
+        color: "white",
+        minHeight: "100vh",
+      }}
+    >
       <h1>Your Cart</h1>
 
       {cart.length === 0 && <p>Cart is empty</p>}
 
-      {cart.map((item) => (
+      {cart.map((item: any) => (
         <div
           key={item.id}
           style={{
@@ -27,20 +33,19 @@ export default function CartPage() {
             marginTop: 20,
             background: "#111827",
             padding: 15,
-            borderRadius: 10
+            borderRadius: 10,
           }}
         >
           <img src={item.thumbnail} width={80} />
 
           <div style={{ flex: 1 }}>
             <h3>{item.name}</h3>
-            <p>${item.price} x {item.quantity}</p>
+            <p>
+              ${item.price} x {item.quantity}
+            </p>
 
             <button
-              onClick={() => {
-                const updated = removeFromCart(item.id);
-                setCart([...updated]);
-              }}
+              onClick={() => removeFromCart(item.id)}
               style={{ marginTop: 10 }}
             >
               Remove
@@ -60,7 +65,7 @@ export default function CartPage() {
           background: "#22c55e",
           border: "none",
           borderRadius: 10,
-          fontWeight: "bold"
+          fontWeight: "bold",
         }}
       >
         Proceed to Checkout

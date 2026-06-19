@@ -1,20 +1,25 @@
 import { products } from "@/data/products";
 
-export default function BrandPage({
-  params,
-}: {
-  params: { category: string; brand: string };
-}) {
+type PageProps = {
+  params: Promise<{
+    category: string;
+    brand: string;
+  }>;
+};
+
+export default async function BrandPage({ params }: PageProps) {
+  const { category, brand } = await params;
+
   const filtered = products.filter(
     (p) =>
-      p.category === params.category &&
-      p.name.toLowerCase().includes(params.brand)
+      p.category === category &&
+      p.name.toLowerCase().includes(brand.toLowerCase())
   );
 
   return (
     <main className="p-6 text-white">
       <h1 className="text-2xl font-bold capitalize mb-6">
-        {params.brand} Parts
+        {brand} Parts
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">

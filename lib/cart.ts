@@ -1,44 +1,52 @@
-import { create } from "zustand";
-
-type CartItem = {
-  id: number;
+export type CartItem = {
+  id: string;
   name: string;
   price: number;
-  thumbnail: string;
-  qty: number;
+  quantity: number;
+  thumbnail?: string;
 };
 
-type CartState = {
-  items: CartItem[];
-  addItem: (item: Omit<CartItem, "qty">) => void;
-  removeItem: (id: number) => void;
-  clearCart: () => void;
-};
+const CART_KEY = "drivora_cart";
 
-export const useCart = create<CartState>((set) => ({
-  items: [],
+/* ---------------- GET CART ---------------- */
+export function getCart(): CartItem[] {
+  if (typeof window === "undefined") return [];
 
-  addItem: (item) =>
-    set((state) => {
-      const exists = state.items.find((i) => i.id === item.id);
+  const data = localStorage.getItem(CART_KEY);
+  return data ? JSON.parse(data) : [];
+}
 
-      if (exists) {
-        return {
-          items: state.items.map((i) =>
-            i.id === item.id ? { ...i, qty: i.qty + 1 } : i
-          ),
-        };
-      }
+/* ---------------- SAVE CART ---------------- */
+function saveCart(cart: CartItem[]) {
+  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+}
 
-      return {
-        items: [...state.items, { ...item, qty: 1 }],
-      };
-    }),
+/* ---------------- ADD TO CART ---------------- */
+export function addToCart(item: Omit<CartItem, "quantity">) {
+  const cart = getCart();
 
-  removeItem: (id) =>
-    set((state) => ({
-      items: state.items.filter((i) => i.id !== id),
-    })),
+  const existing = cart.find((p) => p.id === item.id);
 
-  clearCart: () => set({ items: [] }),
-}));
+  if (existing) {
+    existing.quantity += 1;
+  } else {
+    cart.push({ ...item, quantity: 1 });
+  }
+
+  saveCart(cart);
+  return cart;
+}
+
+/* ---------------- REMOVE ITEM ---------------- */
+export function removeFromCart(id: string) {
+  const cart = getCart().filter((item) => item.id !== id);
+
+  saveCart(cart);
+  return cart;
+}
+
+/* ---------------- CLEAR CART ---------------- */
+export function clearCart() {
+  localStorage.removeItem(CART_KEY);
+  return [];
+}

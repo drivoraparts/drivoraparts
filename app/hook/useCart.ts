@@ -21,7 +21,7 @@ export function useCart() {
     setCart([...updated]);
   };
 
-  const remove = (id: number) => {
+  const remove = (id: string) => {
     const updated = removeFromCart(id);
     setCart([...updated]);
   };
