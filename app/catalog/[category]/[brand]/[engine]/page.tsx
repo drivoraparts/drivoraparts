@@ -3,9 +3,7 @@ import { products } from "@/data/products";
 export const runtime = "edge";
 
 type Props = {
-  params: Promise<{
-    category: string;
-  }>;
+  params: Promise<{ category: string }>;
 };
 
 export default async function Page({ params }: Props) {
@@ -18,7 +16,7 @@ export default async function Page({ params }: Props) {
   return (
     <main className="p-6 text-white">
       <h1 className="text-2xl font-bold capitalize mb-6">
-        {category}
+        Engine - {category}
       </h1>
 
       <div className="grid md:grid-cols-3 gap-4">
