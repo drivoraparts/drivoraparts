@@ -20,26 +20,78 @@ export type ProductDetailsData = {
   platform?: string;
 };
 
+const glassCard: React.CSSProperties = {
+  background: "rgba(255,255,255,0.06)",
+  border: "1px solid rgba(255,255,255,0.1)",
+  backdropFilter: "blur(12px)",
+  WebkitBackdropFilter: "blur(12px)",
+  borderRadius: "10px",
+  boxShadow: "0 4px 24px rgba(0,0,0,0.25)",
+};
+
 const TRUST_BADGES = [
-  { icon: "🔒", label: "Secure Checkout" },
-  { icon: "🛡️", label: "Buyer Protection" },
-  { icon: "✓", label: "Verified Marketplace Seller" },
-  { icon: "🌍", label: "Fast Worldwide Shipping" },
-  { icon: "💳", label: "Secure Payment Processing" },
+  "Secure Checkout",
+  "Buyer Protection",
+  "Verified Seller",
+  "Fast Shipping",
+  "Encrypted Payment",
 ];
+
+function TrustBadge({ label }: { label: string }) {
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+        padding: "8px 0",
+        fontSize: "13px",
+        color: "#fff",
+      }}
+    >
+      <span
+        aria-hidden
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "18px",
+          height: "18px",
+          borderRadius: "50%",
+          background: "rgba(34,197,94,0.15)",
+          color: "#22c55e",
+          fontSize: "12px",
+          fontWeight: 700,
+          flexShrink: 0,
+        }}
+      >
+        ✓
+      </span>
+      <span>{label}</span>
+    </div>
+  );
+}
 
 function CollapsibleDescription({ text }: { text: string }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div style={{ marginTop: "24px" }}>
-      <h3 style={{ fontSize: "18px", marginBottom: "10px" }}>Description</h3>
+    <div style={{ marginTop: "24px", ...glassCard, padding: "14px" }}>
+      <h3
+        style={{
+          fontSize: "18px",
+          marginBottom: "10px",
+          color: "#fff",
+        }}
+      >
+        Description
+      </h3>
       <div
         style={{
           overflow: "hidden",
           maxHeight: expanded ? "4000px" : "6.4em",
           transition: "max-height 0.35s ease",
-          color: "#444",
+          color: "rgba(255,255,255,0.75)",
           lineHeight: 1.6,
           whiteSpace: "pre-line",
         }}
@@ -74,12 +126,20 @@ function InfoRow({ label, value }: { label: string; value: string }) {
         justifyContent: "space-between",
         gap: "12px",
         padding: "8px 0",
-        borderBottom: "1px solid #eee",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
         fontSize: "14px",
       }}
     >
-      <span style={{ color: "#666" }}>{label}</span>
-      <span style={{ fontWeight: 600, textAlign: "right" }}>{value}</span>
+      <span style={{ color: "rgba(255,255,255,0.55)" }}>{label}</span>
+      <span
+        style={{
+          fontWeight: 600,
+          textAlign: "right",
+          color: "#fff",
+        }}
+      >
+        {value}
+      </span>
     </div>
   );
 }
@@ -108,7 +168,7 @@ export default function ProductDetailsPanel({
   const sku = isB58 ? "DP-B58-033" : `DP-${String(product.id).padStart(4, "0")}`;
 
   return (
-    <div style={{ minWidth: 0, maxWidth: "100%" }}>
+    <div style={{ minWidth: 0, maxWidth: "100%", color: "#fff" }}>
       <h1
         style={{
           fontSize: "clamp(22px, 4vw, 28px)",
@@ -123,15 +183,7 @@ export default function ProductDetailsPanel({
         ${product.price.toLocaleString()}
       </h2>
 
-      <div
-        style={{
-          marginTop: "16px",
-          padding: "14px",
-          border: "1px solid #eee",
-          borderRadius: "10px",
-          background: "#fafafa",
-        }}
-      >
+      <div style={{ marginTop: "16px", padding: "14px", ...glassCard }}>
         <InfoRow label="Condition" value={product.condition} />
         <InfoRow
           label="Stock Status"
@@ -139,21 +191,18 @@ export default function ProductDetailsPanel({
         />
         <InfoRow label="SKU" value={sku} />
         <InfoRow label="Brand" value={product.brand} />
-        <InfoRow
-          label="Shipping"
-          value={`Ships from ${product.location}`}
-        />
+        <InfoRow label="Shipping" value={`Ships from ${product.location}`} />
       </div>
 
-      <div
-        style={{
-          marginTop: "16px",
-          padding: "14px",
-          border: "1px solid #eee",
-          borderRadius: "10px",
-        }}
-      >
-        <h3 style={{ fontSize: "15px", fontWeight: 700, marginBottom: "8px" }}>
+      <div style={{ marginTop: "16px", padding: "14px", ...glassCard }}>
+        <h3
+          style={{
+            fontSize: "15px",
+            fontWeight: 700,
+            marginBottom: "8px",
+            color: "#fff",
+          }}
+        >
           Product Information
         </h3>
         {isB58 ? (
@@ -180,14 +229,7 @@ export default function ProductDetailsPanel({
         )}
       </div>
 
-      <div
-        style={{
-          marginTop: "20px",
-          padding: "15px",
-          border: "1px solid #eee",
-          borderRadius: "10px",
-        }}
-      >
+      <div style={{ marginTop: "20px", padding: "15px", ...glassCard }}>
         <label
           htmlFor="product-qty"
           style={{
@@ -214,9 +256,10 @@ export default function ProductDetailsPanel({
             style={{
               width: "36px",
               height: "36px",
-              border: "1px solid #ddd",
+              border: "1px solid rgba(255,255,255,0.2)",
               borderRadius: "6px",
-              background: "#fff",
+              background: "rgba(255,255,255,0.06)",
+              color: "#fff",
               cursor: "pointer",
               fontSize: "18px",
             }}
@@ -239,9 +282,11 @@ export default function ProductDetailsPanel({
               width: "56px",
               height: "36px",
               textAlign: "center",
-              border: "1px solid #ddd",
+              border: "1px solid rgba(255,255,255,0.2)",
               borderRadius: "6px",
               fontSize: "15px",
+              background: "rgba(255,255,255,0.06)",
+              color: "#fff",
             }}
           />
           <button
@@ -251,9 +296,10 @@ export default function ProductDetailsPanel({
             style={{
               width: "36px",
               height: "36px",
-              border: "1px solid #ddd",
+              border: "1px solid rgba(255,255,255,0.2)",
               borderRadius: "6px",
-              background: "#fff",
+              background: "rgba(255,255,255,0.06)",
+              color: "#fff",
               cursor: "pointer",
               fontSize: "18px",
             }}
@@ -269,28 +315,14 @@ export default function ProductDetailsPanel({
       <div
         style={{
           marginTop: "16px",
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
-          gap: "8px",
+          padding: "12px 14px",
+          ...glassCard,
+          position: "relative",
+          zIndex: 1,
         }}
       >
-        {TRUST_BADGES.map((badge) => (
-          <div
-            key={badge.label}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "8px 10px",
-              border: "1px solid #eee",
-              borderRadius: "8px",
-              fontSize: "12px",
-              background: "#fafafa",
-            }}
-          >
-            <span aria-hidden>{badge.icon}</span>
-            <span>{badge.label}</span>
-          </div>
+        {TRUST_BADGES.map((label) => (
+          <TrustBadge key={label} label={label} />
         ))}
       </div>
 

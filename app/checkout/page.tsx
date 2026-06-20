@@ -1,16 +1,47 @@
 "use client";
 
 import Link from "next/link";
-import { useCart } from "@/context/CartContext";
+import { useEffect, useState } from "react";
+import { useCartStore } from "@/lib/store/cartStore";
 import { showToast } from "@/lib/store/toastStore";
 
+const glassCard =
+  "rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md";
+
 export default function CheckoutPage() {
-  const { cart, clearCart, getTotal } = useCart();
-  const subtotal = getTotal();
-  const total = subtotal;
+  const [hydrated, setHydrated] = useState(false);
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+
+  const cart = useCartStore((s) => s.items);
+  const clearCart = useCartStore((s) => s.clearCart);
+
+  useEffect(() => {
+    if (useCartStore.persist.hasHydrated()) {
+      setHydrated(true);
+      return;
+    }
+
+    return useCartStore.persist.onFinishHydration(() => {
+      setHydrated(true);
+    });
+  }, []);
+
+  const subtotal = cart.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
+  const shipping = 0;
+  const total = subtotal + shipping;
 
   const handleCheckout = async () => {
     if (!cart.length) return;
+
+    if (!fullName.trim() || !email.trim()) {
+      showToast("Please enter your name and email");
+      return;
+    }
 
     try {
       const res = await fetch("/api/checkout", {
@@ -21,6 +52,11 @@ export default function CheckoutPage() {
             productId: item.id,
             quantity: item.quantity,
           })),
+          customer: {
+            fullName: fullName.trim(),
+            email: email.trim(),
+            address: address.trim() || undefined,
+          },
         }),
       });
 
@@ -36,8 +72,17 @@ export default function CheckoutPage() {
     }
   };
 
+  if (!hydrated) {
+    return (
+      <main className="mx-auto max-w-4xl overflow-x-hidden p-8 text-white">
+        <h1 className="mb-6 text-3xl font-bold">Checkout</h1>
+        <p className="text-gray-400">Loading your cart...</p>
+      </main>
+    );
+  }
+
   return (
-    <main className="mx-auto max-w-4xl p-8 text-white">
+    <main className="mx-auto max-w-4xl overflow-x-hidden p-8 text-white">
       <h1 className="mb-6 text-3xl font-bold">Checkout</h1>
 
       {cart.length === 0 ? (
@@ -48,56 +93,131 @@ export default function CheckoutPage() {
           </Link>
         </div>
       ) : (
-        <>
-          <div className="space-y-4">
-            {cart.map((item) => (
-              <div
-                key={item.id}
-                className="flex gap-4 rounded-lg border border-white/10 bg-[#111827] p-4"
-              >
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="h-20 w-20 rounded object-cover"
-                />
-
-                <div className="flex-1">
-                  <h3 className="font-semibold">{item.name}</h3>
-                  <p className="text-sm text-gray-400">{item.category}</p>
-                  {item.brand && (
-                    <p className="text-sm text-gray-400">{item.brand}</p>
-                  )}
-                  <p className="mt-1">
-                    ${item.price.toFixed(2)} × {item.quantity}
-                  </p>
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+          <div className="space-y-6">
+            <section className={glassCard}>
+              <h2 className="mb-4 text-xl font-bold">Customer Information</h2>
+              <div className="space-y-4">
+                <div>
+                  <label
+                    htmlFor="checkout-name"
+                    className="mb-1 block text-sm text-gray-400"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    id="checkout-name"
+                    type="text"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    placeholder="John Doe"
+                    className="w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                  />
                 </div>
-
-                <p className="font-semibold">
-                  ${(item.price * item.quantity).toFixed(2)}
-                </p>
+                <div>
+                  <label
+                    htmlFor="checkout-email"
+                    className="mb-1 block text-sm text-gray-400"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="checkout-email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="you@example.com"
+                    className="w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="checkout-address"
+                    className="mb-1 block text-sm text-gray-400"
+                  >
+                    Shipping Address (optional)
+                  </label>
+                  <input
+                    id="checkout-address"
+                    type="text"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    placeholder="Street, City, Country"
+                    className="w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                  />
+                </div>
               </div>
-            ))}
+            </section>
+
+            <section className={glassCard}>
+              <h2 className="mb-4 text-xl font-bold">Payment</h2>
+              <p className="mb-2 font-medium">Cryptomus Payment (Pending Integration)</p>
+              <p className="rounded-lg border border-yellow-500/30 bg-yellow-500/10 px-4 py-3 text-sm text-yellow-200">
+                Payment gateway not yet connected. Order details will be saved,
+                but BTC payment is not active yet.
+              </p>
+            </section>
           </div>
 
-          <div className="mt-8 rounded-lg border border-white/10 bg-[#111827] p-6">
-            <div className="mb-2 flex justify-between">
-              <span>Subtotal</span>
-              <span>${subtotal.toFixed(2)}</span>
-            </div>
-            <div className="flex justify-between text-lg font-bold">
-              <span>Total</span>
-              <span>${total.toFixed(2)}</span>
-            </div>
-          </div>
+          <div className="space-y-6">
+            <section className={glassCard}>
+              <h2 className="mb-4 text-xl font-bold">Order Summary</h2>
 
-          <button
-            type="button"
-            onClick={handleCheckout}
-            className="mt-6 rounded-lg bg-red-600 px-6 py-3 font-semibold"
-          >
-            Pay With Bitcoin
-          </button>
-        </>
+              <div className="space-y-4">
+                {cart.map((item) => (
+                  <div
+                    key={item.id}
+                    className="flex gap-4 border-b border-white/10 pb-4 last:border-0 last:pb-0"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="h-20 w-20 shrink-0 rounded object-cover"
+                    />
+
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-semibold">{item.name}</h3>
+                      {item.brand && (
+                        <p className="text-sm text-gray-400">{item.brand}</p>
+                      )}
+                      <p className="mt-1 text-sm text-gray-400">
+                        Unit: ${item.price.toFixed(2)}
+                      </p>
+                      <p className="text-sm">Qty: {item.quantity}</p>
+                    </div>
+
+                    <p className="shrink-0 font-semibold">
+                      ${(item.price * item.quantity).toFixed(2)}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 space-y-2 border-t border-white/10 pt-4 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Subtotal</span>
+                  <span>${subtotal.toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Shipping</span>
+                  <span>${shipping.toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between text-lg font-bold">
+                  <span>Total</span>
+                  <span>${total.toFixed(2)}</span>
+                </div>
+              </div>
+            </section>
+
+            <button
+              type="button"
+              onClick={handleCheckout}
+              className="w-full rounded-lg bg-red-600 px-6 py-3 font-semibold"
+            >
+              Pay With Bitcoin
+            </button>
+          </div>
+        </div>
       )}
     </main>
   );

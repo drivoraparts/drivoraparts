@@ -39,7 +39,11 @@ export default async function ProductPage({ params }: any) {
       className="product-page-grid"
     >
       <div style={{ minWidth: 0, maxWidth: "100%", position: "relative" }}>
-        <ProductGallery images={galleryImages} alt={product.name} />
+        <ProductGallery
+          images={galleryImages}
+          alt={product.name}
+          thumbnail={product.thumbnail}
+        />
       </div>
 
       <ProductDetailsPanel
