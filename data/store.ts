@@ -1,19 +1,33 @@
 /* =========================================================
-   DRIVORAPARTS — DATA LAYER (SINGLE SOURCE OF TRUTH)
+   DRIVORAPARTS — DATA LAYER (LEGACY COMPATIBILITY SHIM)
    ---------------------------------------------------------
-   - Every category owns its data (name, brands, products).
-   - No shared product arrays.
-   - No engine fallback.
-   - product.category MUST equal its parent store key.
-   - product.brand MUST belong to the category's brands.
+   The single source of truth is now /lib/inventory.
+   This file no longer holds any data. It DERIVES the legacy
+   `store` shape and helpers from the normalized inventory so
+   existing consumers keep working unchanged:
+
+     store[slug] = { name, brands: string[], products: Product[] }
+
+   Legacy semantics preserved on purpose:
+     - product.brand and category.brands use DISPLAY NAMES
+       (e.g. "BMW"), not slugs.
+     - getProductById takes a numeric id.
 ========================================================= */
+
+import {
+  categories as invCategories,
+  brands as invBrands,
+  products as invProducts,
+  slugify as invSlugify,
+} from "@/lib/inventory";
+
+export const slugify = invSlugify;
 
 export type Product = {
   id: number;
   name: string;
   category: string;
   brand: string;
-  /** Engine system only: the engine platform slug this product belongs to. */
   platform?: string;
   price: number;
   condition: string;
@@ -29,111 +43,44 @@ export type Category = {
   products: Product[];
 };
 
-export const store: Record<string, Category> = {
-  engine: {
-    name: "Engine",
-    brands: ["BMW", "Toyota", "Nissan", "Honda", "Mazda"],
-    products: [
-      {
-        id: 1,
-        name: "BMW N54 Twin Turbo Engine",
-        category: "engine",
-        brand: "BMW",
-        platform: "bmw-n54-twin-turbo",
-        price: 3200,
-        condition: "Used - Refurbished",
-        location: "USA Warehouse",
-        thumbnail: "/engines/engine-1.jpg",
-        images: [
-          "/engines/engine-1.jpg",
-          "/engines/engine-2.jpg",
-          "/engines/engine-3.jpg",
-        ],
-        description:
-          "High-performance BMW N54 twin turbo engine fully tested and rebuilt for maximum power output.",
-      },
-    ],
-  },
+/** Map a brand slug back to its display name (legacy stored value). */
+function brandNameForSlug(slug: string): string {
+  return invBrands.find((b) => b.slug === slug)?.name ?? slug;
+}
 
-  turbocharger: {
-    name: "Turbocharger",
-    brands: ["Garrett", "BorgWarner", "Precision"],
-    products: [
-      {
-        id: 2,
-        name: "Garrett GTX3076R Turbocharger",
-        category: "turbocharger",
-        brand: "Garrett",
-        price: 850,
-        condition: "New",
-        location: "UK Warehouse",
-        thumbnail: "/turbochargers/turbo-1.jpg",
-        images: ["/turbochargers/turbo-1.jpg", "/turbochargers/turbo-2.jpg"],
-        description:
-          "Premium Garrett turbocharger designed for extreme boost performance and reliability.",
-      },
-    ],
-  },
+/** Reconstruct the legacy store record from the normalized inventory. */
+export const store: Record<string, Category> = Object.fromEntries(
+  invCategories.map((category) => {
+    const brands = invBrands
+      .filter((b) => b.category === category.slug)
+      .map((b) => b.name);
 
-  transmission: {
-    name: "Transmission",
-    brands: [],
-    products: [],
-  },
+    const products: Product[] = invProducts
+      .filter((p) => p.category === category.slug)
+      .map((p) => ({
+        id: p.id,
+        name: p.name,
+        category: p.category,
+        brand: brandNameForSlug(p.brand),
+        platform: p.platform,
+        price: p.price,
+        condition: p.condition ?? "",
+        location: p.location ?? "",
+        thumbnail: p.thumbnail ?? p.image ?? "",
+        images: p.images ?? [],
+        description: p.description ?? "",
+      }));
 
-  suspension: {
-    name: "Suspension",
-    brands: [],
-    products: [],
-  },
-
-  brakes: {
-    name: "Brakes",
-    brands: [
-      "Brembo GT Kits",
-      "Wilwood Big Brake Kits",
-      "EBC Rotors & Pads",
-      "ATE OEM Kits",
-    ],
-    products: [],
-  },
-
-  electronics: {
-    name: "Electronics",
-    brands: [],
-    products: [],
-  },
-
-  lighting: {
-    name: "Lighting",
-    brands: [],
-    products: [],
-  },
-
-  "body-parts": {
-    name: "Body Parts",
-    brands: [],
-    products: [],
-  },
-
-  interior: {
-    name: "Interior",
-    brands: [],
-    products: [],
-  },
-};
+    return [category.slug, { name: category.name, brands, products }] as [
+      string,
+      Category
+    ];
+  })
+);
 
 /* =========================
    HELPERS (DERIVED — NOT A SECOND SOURCE)
 ========================= */
-
-export function slugify(value: string): string {
-  return value
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
 export function getCategory(slug: string): Category | undefined {
   return Object.prototype.hasOwnProperty.call(store, slug)

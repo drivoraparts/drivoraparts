@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { products } from "@/data/products";
+import { products } from "@/lib/inventory";
 
 export default function HomePage() {
   const [loaded, setLoaded] = useState(false);
