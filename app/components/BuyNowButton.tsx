@@ -8,19 +8,21 @@ import type { AddToCartProduct } from "@/app/components/AddToCartButton";
 
 export default function BuyNowButton({
   product,
+  quantity = 1,
 }: {
   product: AddToCartProduct;
+  quantity?: number;
 }) {
   const router = useRouter();
   const replaceCart = useCartStore((s) => s.replaceCart);
 
   const handleBuyNow = () => {
-    if (!productHasStock(product.id, 1)) {
+    if (!productHasStock(product.id, quantity)) {
       showToast("Out of stock");
       return;
     }
 
-    replaceCart(product);
+    replaceCart(product, quantity);
     showToast("Proceeding to checkout");
     router.push("/checkout");
   };

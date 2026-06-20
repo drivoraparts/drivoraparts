@@ -68,8 +68,21 @@ export const products: Product[] = [
       "/catalog/engine/bmw/b58/9.jpg",
       "/catalog/engine/bmw/b58/10.jpg",
     ],
-    description:
-      "BMW B58 is a 3.0-liter turbocharged inline-six engine from BMW's modular engine family. It delivers a balance of performance, efficiency, and tuning potential and is widely used in modern BMW performance models.",
+    description: `BMW B58 TwinPower Turbo 3.0-Liter Inline-Six Engine
+
+The BMW B58 is a 3.0-liter turbocharged inline-six engine developed as part of BMW's advanced modular engine platform. Designed for exceptional reliability, efficiency, and performance, the B58 incorporates a closed-deck aluminum block, integrated intercooling system, direct fuel injection, and BMW TwinPower Turbo technology.
+
+Recognized throughout the automotive industry for its durability and tuning potential, the B58 powers a wide range of modern BMW performance vehicles and remains one of the most respected turbocharged inline-six engines available. Its proven architecture makes it suitable for OEM replacement, restoration projects, professional workshops, and high-performance applications.
+
+Key Features
+• 3.0L Inline-Six Configuration
+• BMW TwinPower Turbo System
+• Direct Fuel Injection
+• Closed-Deck Engine Block
+• OEM Reliability Standards
+• Strong Aftermarket Support
+• High Performance Capability
+• Suitable For Replacement And Performance Builds`,
   },
   ...aftermarketProducts,
 ];

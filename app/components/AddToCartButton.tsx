@@ -16,8 +16,10 @@ export type AddToCartProduct = {
 
 export default function AddToCartButton({
   product,
+  quantity = 1,
 }: {
   product: AddToCartProduct;
+  quantity?: number;
 }) {
   const [loading, setLoading] = useState(false);
   const { addToCart, cart } = useCart();
@@ -25,13 +27,13 @@ export default function AddToCartButton({
   const handleAdd = () => {
     const currentQty = cart.find((i) => i.id === product.id)?.quantity ?? 0;
 
-    if (!productHasStock(product.id, currentQty + 1)) {
+    if (!productHasStock(product.id, currentQty + quantity)) {
       showToast("Out of stock");
       return;
     }
 
     setLoading(true);
-    addToCart(product);
+    addToCart(product, quantity);
     showToast("Added to cart");
     setTimeout(() => setLoading(false), 300);
   };

@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { getProductById } from "@/data/store";
-import AddToCartButton from "@/app/components/AddToCartButton";
-import BuyNowButton from "@/app/components/BuyNowButton";
+import { getProductById as getInventoryProduct } from "@/lib/inventory";
+import ProductGallery from "@/app/components/ProductGallery";
+import ProductDetailsPanel from "@/app/components/ProductDetailsPanel";
 
 export const runtime = "edge";
 
@@ -12,112 +13,58 @@ export default async function ProductPage({ params }: any) {
 
   if (!product) return notFound();
 
+  const inventoryProduct = getInventoryProduct(Number(id));
+  const inStock = inventoryProduct?.stock !== false;
+
+  const primaryImage = product.images?.[0] || product.thumbnail;
+  const galleryImages =
+    product.images && product.images.length > 0
+      ? product.images
+      : [product.thumbnail];
+
   return (
     <div
       style={{
         maxWidth: "1200px",
         margin: "0 auto",
         padding: "20px",
+        width: "100%",
+        boxSizing: "border-box",
+        overflowX: "hidden",
         display: "grid",
-        gridTemplateColumns: "1.2fr 1fr",
+        gridTemplateColumns: "minmax(0, 1.2fr) minmax(0, 1fr)",
         gap: "30px",
+        alignItems: "start",
       }}
+      className="product-page-grid"
     >
-      {/* LEFT SIDE */}
-      <div>
-        <div
-          style={{
-            border: "1px solid #eee",
-            borderRadius: "12px",
-            overflow: "hidden",
-            background: "#fff",
-          }}
-        >
-          <img
-            src={product.images?.[0] || product.thumbnail}
-            alt={product.name}
-            style={{
-              width: "100%",
-              height: "400px",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-
-        <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
-          {product.images?.map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt="thumb"
-              style={{
-                width: "70px",
-                height: "70px",
-                objectFit: "cover",
-                borderRadius: "8px",
-                border: "1px solid #ddd",
-              }}
-            />
-          ))}
-        </div>
+      <div style={{ minWidth: 0, maxWidth: "100%", position: "relative" }}>
+        <ProductGallery images={galleryImages} alt={product.name} />
       </div>
 
-      {/* RIGHT SIDE */}
-      <div>
-        <h1 style={{ fontSize: "28px", marginBottom: "10px" }}>
-          {product.name}
-        </h1>
+      <ProductDetailsPanel
+        product={{
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          condition: product.condition,
+          brand: product.brand,
+          category: product.category,
+          location: product.location,
+          description: product.description,
+          primaryImage,
+          inStock,
+          platform: product.platform,
+        }}
+      />
 
-        <p style={{ fontSize: "14px", color: "#666" }}>
-          Category: <b>{product.category}</b>
-        </p>
-
-        <p style={{ fontSize: "18px", marginTop: "10px" }}>
-          Condition: {product.condition}
-        </p>
-
-        <h2 style={{ marginTop: "15px", fontSize: "26px" }}>
-          ${product.price}
-        </h2>
-
-        <div
-          style={{
-            marginTop: "20px",
-            padding: "15px",
-            border: "1px solid #eee",
-            borderRadius: "10px",
-          }}
-        >
-          <AddToCartButton
-            product={{
-              id: product.id,
-              name: product.name,
-              price: product.price,
-              image: product.images?.[0] || product.thumbnail,
-              category: product.category,
-              brand: product.brand,
-            }}
-          />
-
-          <BuyNowButton
-            product={{
-              id: product.id,
-              name: product.name,
-              price: product.price,
-              image: product.images?.[0] || product.thumbnail,
-              category: product.category,
-              brand: product.brand,
-            }}
-          />
-        </div>
-
-        <div style={{ marginTop: "20px" }}>
-          <h3>Description</h3>
-          <p style={{ color: "#444", lineHeight: "1.6" }}>
-            {product.description}
-          </p>
-        </div>
-      </div>
+      <style>{`
+        @media (max-width: 768px) {
+          .product-page-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
