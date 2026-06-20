@@ -8,7 +8,7 @@ export default function AftermarketPage() {
     <main className="min-h-screen p-6 text-white">
       <PageHeading
         title="Aftermarket"
-        subtitle="Browse aftermarket parts and performance upgrades"
+        subtitle="Used / Performance Marketplace — browse pre-owned and refurbished parts"
       />
       <AftermarketFeed />
     </main>

@@ -20,7 +20,7 @@ export const products: Product[] = [
     platform: "bmw-n54-twin-turbo",
     price: 3200,
     stock: true,
-    condition: "Used - Refurbished",
+    condition: "brand-new",
     location: "USA Warehouse",
     thumbnail: "/engines/engine-1.jpg",
     images: [
@@ -38,7 +38,7 @@ export const products: Product[] = [
     brand: "garrett",
     price: 850,
     stock: true,
-    condition: "New",
+    condition: "brand-new",
     location: "UK Warehouse",
     thumbnail: "/turbochargers/turbo-1.jpg",
     images: ["/turbochargers/turbo-1.jpg", "/turbochargers/turbo-2.jpg"],
@@ -53,7 +53,7 @@ export const products: Product[] = [
     platform: "bmw-b58-twinpower",
     price: 5999,
     stock: true,
-    condition: "Used - Tested (OEM Refurbished)",
+    condition: "brand-new",
     location: "USA Warehouse",
     thumbnail: "/catalog/engine/bmw/b58/1.jpg",
     images: [

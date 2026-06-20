@@ -14,10 +14,18 @@ import { brands } from "./brands";
 import { products } from "./products";
 import type { Brand, Category, Product } from "./types";
 
-export type { Brand, Category, Product } from "./types";
+export type { Brand, Category, Product, ProductCondition } from "./types";
 export { categories, brands, products };
 export { routes } from "./routes";
-
+export {
+  resolveProductCondition,
+  getConditionDisplay,
+  getConditionLabel,
+  isCatalogCategory,
+  isAftermarketCategory,
+  CATALOG_CATEGORIES,
+} from "./condition";
+export type { ConditionDisplay } from "./condition";
 /** Normalize any string into a canonical kebab-case slug. */
 export function slugify(value: string): string {
   return value

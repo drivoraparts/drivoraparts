@@ -10,6 +10,7 @@ import BuyNowButton from "@/app/components/BuyNowButton";
 import ImageCarousel from "./ImageCarousel";
 import ProductDescription from "./ProductDescription";
 import TrustBadges from "./TrustBadges";
+import ConditionBadge from "./ConditionBadge";
 import {
   formatCategoryLabel,
   formatPlatformLabel,
@@ -42,6 +43,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
 
   const inventoryProduct = getInventoryProduct(product.id);
   const inStock = inventoryProduct?.stock !== false;
+  const rawCondition = inventoryProduct?.condition ?? product.condition;
 
   const primaryImage = product.images?.[0] || product.thumbnail;
   const galleryImages =
@@ -86,8 +88,14 @@ export default function ProductTemplate({ product }: { product: Product }) {
           ${product.price.toLocaleString()}
         </h2>
 
+        <div style={{ marginTop: "10px" }}>
+          <ConditionBadge
+            category={product.category}
+            condition={rawCondition}
+          />
+        </div>
+
         <div style={{ marginTop: "16px", padding: "14px", ...glassCard }}>
-          <MetaRow label="Condition" value={product.condition} />
           <MetaRow
             label="Stock Status"
             value={inStock ? "In Stock" : "Out of Stock"}

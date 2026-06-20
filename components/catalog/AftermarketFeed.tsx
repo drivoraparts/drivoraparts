@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import {
   getProductsByCategory,
   getBrandsByCategory,
+  getConditionLabel,
   routes,
 } from "@/lib/inventory";
 import CatalogCard from "./CatalogCard";
@@ -109,9 +110,7 @@ export default function AftermarketFeed() {
                   ${product.price}
                 </p>
                 <div className="mt-2 space-y-1 text-xs text-gray-400">
-                  {product.condition && (
-                    <p>Condition: {product.condition}</p>
-                  )}
+                  <p>Condition: {getConditionLabel(product)}</p>
                   <p className={inStock ? "text-gray-300" : "text-red-400"}>
                     {product.stockQty != null
                       ? product.stockQty > 0

@@ -22,6 +22,14 @@ export type Brand = {
   category: string;
 };
 
+/** Canonical marketplace condition slugs (resolved at query/display time). */
+export type ProductCondition =
+  | "brand-new"
+  | "used"
+  | "refurbished"
+  | "aftermarket-used"
+  | "aftermarket-mixed";
+
 /**
  * Product is the normalized inventory record.
  *
