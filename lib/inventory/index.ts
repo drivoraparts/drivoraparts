@@ -16,6 +16,7 @@ import type { Brand, Category, Product } from "./types";
 
 export type { Brand, Category, Product } from "./types";
 export { categories, brands, products };
+export { routes } from "./routes";
 
 /** Normalize any string into a canonical kebab-case slug. */
 export function slugify(value: string): string {
@@ -38,7 +39,7 @@ export const getCategory = (slug: string): Category | undefined =>
 export const getBrands = (): Brand[] => brands;
 
 export const getBrandsByCategory = (category: string): Brand[] =>
-  brands.filter((b) => b.category === category);
+  category ? brands.filter((b) => b.category === category) : [];
 
 export const getBrandBySlug = (slug: string): Brand | undefined =>
   brands.find((b) => b.slug === slug);
@@ -48,10 +49,10 @@ export const getBrandBySlug = (slug: string): Brand | undefined =>
 export const getAllProducts = (): Product[] => products;
 
 export const getProductsByCategory = (category: string): Product[] =>
-  products.filter((p) => p.category === category);
+  category ? products.filter((p) => p.category === category) : [];
 
 export const getProductsByBrand = (brand: string): Product[] =>
-  products.filter((p) => p.brand === brand);
+  brand ? products.filter((p) => p.brand === brand) : [];
 
 export const getProductById = (id: number): Product | undefined =>
   products.find((p) => p.id === id);

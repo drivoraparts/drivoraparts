@@ -2,18 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { getCategories, routes } from "@/lib/inventory";
 
-const categories = [
-  { slug: "engine", label: "Engine" },
-  { slug: "transmission", label: "Transmission" },
-  { slug: "turbocharger", label: "Turbocharger" },
-  { slug: "suspension", label: "Suspension" },
-  { slug: "brakes", label: "Brakes" },
-  { slug: "electronics", label: "Electronics" },
-  { slug: "lighting", label: "Lighting" },
-  { slug: "body-parts", label: "Body Parts" },
-  { slug: "interior", label: "Interior" },
-];
+const categories = getCategories();
 
 export default function CategoryGrid() {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -24,7 +15,7 @@ export default function CategoryGrid() {
       {categories.map((cat) => (
         <Link
           key={cat.slug}
-          href={`/catalog/${cat.slug}`}
+          href={routes.category(cat.slug)}
           onMouseEnter={() => setHovered(cat.slug)}
           onMouseLeave={() => setHovered(null)}
           className={`
@@ -48,7 +39,7 @@ export default function CategoryGrid() {
 
           {/* text */}
           <span className="relative text-white font-medium capitalize">
-            {cat.label}
+            {cat.name}
           </span>
 
           {/* bottom pulse line */}
@@ -60,6 +51,40 @@ export default function CategoryGrid() {
           />
         </Link>
       ))}
+
+      {/* All Products — unified marketplace feed */}
+      <Link
+        href={routes.all}
+        onMouseEnter={() => setHovered("all")}
+        onMouseLeave={() => setHovered(null)}
+        className={`
+          relative p-5 rounded-xl border overflow-hidden
+          transition-all duration-300
+          active:scale-95
+          col-span-2 md:col-span-4
+          ${
+            hovered === "all"
+              ? "border-red-500 bg-white/10 shadow-lg shadow-red-500/10"
+              : "border-white/10 bg-white/5"
+          }
+        `}
+      >
+        <div
+          className={`
+            absolute inset-0 bg-red-500/10 blur-2xl transition-opacity duration-300
+            ${hovered === "all" ? "opacity-100" : "opacity-0"}
+          `}
+        />
+
+        <span className="relative text-white font-medium">All Products</span>
+
+        <div
+          className={`
+            absolute bottom-0 left-0 h-[2px] bg-red-500 transition-all duration-300
+            ${hovered === "all" ? "w-full" : "w-0"}
+          `}
+        />
+      </Link>
 
     </div>
   );

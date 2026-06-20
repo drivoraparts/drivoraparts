@@ -1,15 +1,36 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useCart } from "@/context/CartContext";
+import { useState } from "react";
+import { getCart, removeFromCart } from "@/lib/marketplace";
+import { getProductById } from "@/lib/inventory";
 
 export default function CartPage() {
-  const { cart, removeFromCart } = useCart();
+  const [, refresh] = useState(0);
+
+  const cart = getCart()
+    .map((item) => {
+      const product = getProductById(item.productId);
+      if (!product) return null;
+
+      return {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        quantity: item.quantity,
+        thumbnail: product.thumbnail ?? product.image ?? "",
+      };
+    })
+    .filter((item): item is NonNullable<typeof item> => item !== null);
 
   const total = cart.reduce(
-    (sum: number, item: any) => sum + item.price * item.quantity,
+    (sum: number, item) => sum + item.price * item.quantity,
     0
   );
+
+  const handleRemove = (productId: number) => {
+    removeFromCart(productId);
+    refresh((n) => n + 1);
+  };
 
   return (
     <div
@@ -24,7 +45,7 @@ export default function CartPage() {
 
       {cart.length === 0 && <p>Cart is empty</p>}
 
-      {cart.map((item: any) => (
+      {cart.map((item) => (
         <div
           key={item.id}
           style={{
@@ -45,7 +66,7 @@ export default function CartPage() {
             </p>
 
             <button
-              onClick={() => removeFromCart(item.id)}
+              onClick={() => handleRemove(item.id)}
               style={{ marginTop: 10 }}
             >
               Remove

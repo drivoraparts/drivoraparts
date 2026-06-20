@@ -1,6 +1,15 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { getProductById } from "@/lib/inventory";
+import {
+  getCart,
+  addToCart as marketplaceAdd,
+  removeFromCart as marketplaceRemove,
+  updateCartQuantity,
+  clearCart as marketplaceClear,
+  hasStock,
+} from "@/lib/marketplace";
 
 type CartItem = {
   id: number;
@@ -21,6 +30,23 @@ type CartContextType = {
 
 const CartContext = createContext<CartContextType | null>(null);
 
+function hydrateCart(): CartItem[] {
+  return getCart()
+    .map((item) => {
+      const product = getProductById(item.productId);
+      if (!product) return null;
+
+      return {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        quantity: item.quantity,
+        thumbnail: product.thumbnail ?? product.image ?? "",
+      };
+    })
+    .filter((item): item is CartItem => item !== null);
+}
+
 export const CartProvider = ({
   children,
 }: {
@@ -28,60 +54,49 @@ export const CartProvider = ({
 }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
 
-  // Load cart from localStorage
   useEffect(() => {
-    const stored = localStorage.getItem("cart");
-    if (stored) setCart(JSON.parse(stored));
+    setCart(hydrateCart());
   }, []);
 
-  // Save cart to localStorage
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+  const syncCart = () => setCart(hydrateCart());
 
   const addToCart = (item: Omit<CartItem, "quantity">) => {
-    setCart((prev) => {
-      const existing = prev.find((p) => p.id === item.id);
+    const currentQty =
+      getCart().find((i) => i.productId === item.id)?.quantity ?? 0;
 
-      if (existing) {
-        return prev.map((p) =>
-          p.id === item.id
-            ? { ...p, quantity: p.quantity + 1 }
-            : p
-        );
-      }
+    if (!hasStock(item.id, currentQty + 1)) return;
 
-      return [...prev, { ...item, quantity: 1 }];
-    });
+    marketplaceAdd(item.id, 1);
+    syncCart();
   };
 
   const removeFromCart = (id: number) => {
-    setCart((prev) => prev.filter((item) => item.id !== id));
+    marketplaceRemove(id);
+    syncCart();
   };
 
   const increaseQty = (id: number) => {
-    setCart((prev) =>
-      prev.map((item) =>
-        item.id === id
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
-      )
-    );
+    const currentQty =
+      getCart().find((i) => i.productId === id)?.quantity ?? 0;
+
+    if (!hasStock(id, currentQty + 1)) return;
+
+    updateCartQuantity(id, currentQty + 1);
+    syncCart();
   };
 
   const decreaseQty = (id: number) => {
-    setCart((prev) =>
-      prev
-        .map((item) =>
-          item.id === id
-            ? { ...item, quantity: item.quantity - 1 }
-            : item
-        )
-        .filter((item) => item.quantity > 0)
-    );
+    const currentQty =
+      getCart().find((i) => i.productId === id)?.quantity ?? 0;
+
+    updateCartQuantity(id, currentQty - 1);
+    syncCart();
   };
 
-  const clearCart = () => setCart([]);
+  const clearCart = () => {
+    marketplaceClear();
+    setCart([]);
+  };
 
   return (
     <CartContext.Provider

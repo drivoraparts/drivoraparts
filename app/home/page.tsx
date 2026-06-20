@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { products } from "@/lib/inventory";
+import { products, getCategories, routes } from "@/lib/inventory";
 
 export default function HomePage() {
   const [loaded, setLoaded] = useState(false);
@@ -47,14 +47,14 @@ export default function HomePage() {
 
           <div className="mt-8 flex gap-4 justify-center">
             <Link
-              href="/catalog/engines"
+              href={routes.category("engine")}
               className="bg-red-600 px-6 py-3 rounded-lg hover:scale-105 transition"
             >
               Shop Engines
             </Link>
 
             <Link
-              href="/catalog/turbochargers"
+              href={routes.category("turbocharger")}
               className="border border-white/20 px-6 py-3 rounded-lg hover:bg-white/10 transition"
             >
               Explore Turbo
@@ -68,24 +68,15 @@ export default function HomePage() {
         <h2 className="text-xl font-semibold mb-6">Browse Categories</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            "engines",
-            "turbochargers",
-            "brakes",
-            "suspension",
-            "electronics",
-            "transmissions",
-            "headlights",
-            "body-parts",
-          ].map((cat, i) => (
+          {getCategories().map((cat, i) => (
             <Link
-              key={cat}
-              href={`/catalog/${cat}`}
+              key={cat.slug}
+              href={routes.category(cat.slug)}
               className={`p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-red-500/10 hover:border-red-500/40 transition-all duration-300
               ${loaded ? "opacity-100" : "opacity-0 translate-y-6"}`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
-              <p className="capitalize font-medium">{cat}</p>
+              <p className="capitalize font-medium">{cat.name}</p>
               <p className="text-xs text-gray-400 mt-1">
                 High performance parts
               </p>

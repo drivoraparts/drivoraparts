@@ -1,24 +1,14 @@
+import { NextResponse } from "next/server";
+import { createOrder } from "@/lib/marketplace";
+
 export const runtime = "edge";
 
-export async function POST(req: Request) {
-  const body = await req.json();
+export async function POST() {
+  const order = createOrder();
 
-  const { amount, orderId } = body;
+  if (!order) {
+    return NextResponse.json({ error: "Cart is empty" }, { status: 400 });
+  }
 
-  // replace with your BTC provider (NOWPayments / Coinbase Commerce / BTCPay)
-  const response = await fetch("YOUR_BTC_API_ENDPOINT", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer YOUR_API_KEY`,
-    },
-    body: JSON.stringify({
-      price_amount: amount,
-      order_id: orderId,
-    }),
-  });
-
-  const data = await response.json();
-
-  return Response.json({ result: data });
+  return NextResponse.json(order);
 }

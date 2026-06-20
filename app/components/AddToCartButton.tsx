@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useCart } from "@/context/CartContext";
+import { hasStock } from "@/lib/marketplace";
 
 export default function AddToCartButton({
   product,
@@ -13,29 +15,23 @@ export default function AddToCartButton({
   };
 }) {
   const [loading, setLoading] = useState(false);
+  const { addToCart } = useCart();
 
-  const addToCart = () => {
-    setLoading(true);
-
-    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-
-    const existing = cart.find((item: any) => item.id === product.id);
-
-    if (existing) {
-      existing.qty += 1;
-    } else {
-      cart.push({ ...product, qty: 1 });
+  const handleAdd = () => {
+    if (!hasStock(product.id)) {
+      alert("Out of stock");
+      return;
     }
 
-    localStorage.setItem("cart", JSON.stringify(cart));
-
+    setLoading(true);
+    addToCart(product);
     setTimeout(() => setLoading(false), 300);
     alert("Added to cart!");
   };
 
   return (
     <button
-      onClick={addToCart}
+      onClick={handleAdd}
       disabled={loading}
       style={{
         width: "100%",

@@ -1,15 +1,23 @@
 "use client";
 
 import { useCart } from "@/context/CartContext";
+import { createOrder } from "@/lib/marketplace";
 
 export default function CheckoutPage() {
-  const { cart } = useCart();
+  const { cart, clearCart } = useCart();
 
   const total = cart.reduce(
     (sum, item) =>
       sum + item.price * item.quantity,
     0
   );
+
+  const handleCheckout = () => {
+    const order = createOrder();
+    if (order) {
+      clearCart();
+    }
+  };
 
   return (
     <main className="p-8">
@@ -19,7 +27,10 @@ export default function CheckoutPage() {
 
       <p>Total: ${total.toFixed(2)}</p>
 
-      <button className="mt-6 rounded-lg bg-red-600 px-6 py-3">
+      <button
+        onClick={handleCheckout}
+        className="mt-6 rounded-lg bg-red-600 px-6 py-3"
+      >
         Pay With Bitcoin
       </button>
     </main>
