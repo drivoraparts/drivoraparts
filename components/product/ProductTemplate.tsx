@@ -9,7 +9,7 @@ import AddToCartButton, {
 import BuyNowButton from "@/app/components/BuyNowButton";
 import ImageCarousel from "./ImageCarousel";
 import ProductDescription from "./ProductDescription";
-import TrustBadges from "./TrustBadges";
+import TrustBadgeStrip from "./TrustBadgeStrip";
 import ConditionBadge from "./ConditionBadge";
 import {
   formatCategoryLabel,
@@ -190,7 +190,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
           <BuyNowButton product={cartProduct} quantity={quantity} />
         </div>
 
-        <TrustBadges />
+        <TrustBadgeStrip />
 
         <p
           style={{
