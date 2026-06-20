@@ -37,7 +37,9 @@ function getStore(): MarketplaceStore {
 
 function seedStock(store: MarketplaceStore): void {
   products.forEach((product) => {
-    const amount = product.stock === false ? 0 : 10;
+    const amount =
+      product.stockQty ??
+      (product.stock === false ? 0 : 10);
     const existing = store.stock.find((s) => s.productId === product.id);
 
     if (existing) {

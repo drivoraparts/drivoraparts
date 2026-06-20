@@ -27,9 +27,15 @@ export const brands: Brand[] = [
   { slug: "ebc-rotors-pads", name: "EBC Rotors & Pads", category: "brakes" },
   { slug: "ate-oem-kits", name: "ATE OEM Kits", category: "brakes" },
 
-  // Aftermarket
+  // Aftermarket (vehicle brands)
   { slug: "toyota", name: "Toyota", category: "aftermarket" },
-  { slug: "denso", name: "Denso", category: "aftermarket" },
-  { slug: "bosch", name: "Bosch", category: "aftermarket" },
-  { slug: "acdelco", name: "ACDelco", category: "aftermarket" },
+  { slug: "honda", name: "Honda", category: "aftermarket" },
+  { slug: "bmw", name: "BMW", category: "aftermarket" },
+  { slug: "mercedes-benz", name: "Mercedes-Benz", category: "aftermarket" },
+  { slug: "audi", name: "Audi", category: "aftermarket" },
+  { slug: "ford", name: "Ford", category: "aftermarket" },
+  { slug: "chevrolet", name: "Chevrolet", category: "aftermarket" },
+  { slug: "nissan", name: "Nissan", category: "aftermarket" },
+  { slug: "lexus", name: "Lexus", category: "aftermarket" },
+  { slug: "jeep", name: "Jeep", category: "aftermarket" },
 ];

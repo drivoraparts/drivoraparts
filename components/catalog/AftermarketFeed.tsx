@@ -113,7 +113,13 @@ export default function AftermarketFeed() {
                     <p>Condition: {product.condition}</p>
                   )}
                   <p className={inStock ? "text-gray-300" : "text-red-400"}>
-                    {inStock ? "In Stock" : "Out of Stock"}
+                    {product.stockQty != null
+                      ? product.stockQty > 0
+                        ? `${product.stockQty} in stock`
+                        : "Out of Stock"
+                      : inStock
+                        ? "In Stock"
+                        : "Out of Stock"}
                   </p>
                   <span className="inline-block rounded border border-white/10 px-2 py-0.5">
                     {brandName(product.brand)}

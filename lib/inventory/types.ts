@@ -46,6 +46,9 @@ export type Product = {
   /** Whether the product is in stock. */
   stock?: boolean;
 
+  /** Optional unit quantity for marketplace stock testing. */
+  stockQty?: number;
+
   /** Engine system only: the engine platform slug this product belongs to. */
   platform?: string;
 
