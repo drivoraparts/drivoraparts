@@ -17,11 +17,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Base body */
+/* Base body — enforced dark theme (no white fallback, no iOS Safari flash) */
 html,
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #0a0a0a !important;
+  color: #ffffff;
+  min-height: 100vh;
+  color-scheme: dark;
 }
 
 body {

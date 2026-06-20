@@ -1,4 +1,5 @@
-import { products } from "@/data/products";
+import { notFound } from "next/navigation";
+import { getProductById } from "@/data/store";
 import AddToCartButton from "@/app/components/AddToCartButton";
 
 export const runtime = "edge";
@@ -6,15 +7,9 @@ export const runtime = "edge";
 export default async function ProductPage({ params }: any) {
   const { id } = await params;
 
-  const product = products.find((p) => p.id === Number(id));
+  const product = getProductById(Number(id));
 
-  if (!product) {
-    return (
-      <div style={{ padding: "40px", textAlign: "center" }}>
-        <h2>Product not found</h2>
-      </div>
-    );
-  }
+  if (!product) return notFound();
 
   return (
     <div
