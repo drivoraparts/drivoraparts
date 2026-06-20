@@ -8,7 +8,7 @@ export default function AllProductsPage() {
     <main className="min-h-screen p-6 text-white">
       <PageHeading
         title="All Products"
-        subtitle="Search and browse the full DrivoraParts marketplace"
+        subtitle="Browse everything in the marketplace"
       />
       <AllProductsFeed />
     </main>

@@ -10,10 +10,22 @@ import {
   routes,
 } from "@/lib/inventory";
 import CatalogCard from "./CatalogCard";
+import { engineTree } from "@/data/engine";
+import { slugify } from "@/lib/inventory";
 
 const allProducts = getAllProducts();
 const categories = getCategories();
 const brands = getBrands();
+
+function getPlatformName(platformSlug: string): string {
+  for (const group of engineTree) {
+    const platform = group.platforms.find(
+      (p) => slugify(p.name) === platformSlug
+    );
+    if (platform) return platform.name;
+  }
+  return platformSlug;
+}
 
 export default function AllProductsFeed() {
   const [query, setQuery] = useState("");
@@ -38,6 +50,7 @@ export default function AllProductsFeed() {
       const categoryName =
         getCategory(product.category)?.name ?? product.category;
       const platform = product.platform ?? "";
+      const platformName = platform ? getPlatformName(platform) : "";
 
       if (categoryFilter && product.category !== categoryFilter) {
         return false;
@@ -61,7 +74,8 @@ export default function AllProductsFeed() {
         product.name.toLowerCase().includes(q) ||
         brandName.toLowerCase().includes(q) ||
         categoryName.toLowerCase().includes(q) ||
-        platform.toLowerCase().includes(q)
+        platform.toLowerCase().includes(q) ||
+        platformName.toLowerCase().includes(q)
       );
     });
   }, [query, categoryFilter, brandFilter, priceFilter]);
@@ -138,12 +152,16 @@ export default function AllProductsFeed() {
                 key={product.id}
                 href={routes.product(product.id)}
               >
-                {image && (
+                {image ? (
                   <img
                     src={image}
                     alt={product.name}
                     className="h-40 w-full object-cover rounded-lg"
                   />
+                ) : (
+                  <div className="h-40 w-full rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-xs text-gray-500">
+                    No image
+                  </div>
                 )}
                 <h3 className="mt-3 font-semibold">{product.name}</h3>
                 <p className="text-sm text-red-500 font-bold">

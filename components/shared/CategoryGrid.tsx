@@ -61,7 +61,6 @@ export default function CategoryGrid() {
           relative p-5 rounded-xl border overflow-hidden
           transition-all duration-300
           active:scale-95
-          col-span-2 md:col-span-4
           ${
             hovered === "all"
               ? "border-red-500 bg-white/10 shadow-lg shadow-red-500/10"
