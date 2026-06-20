@@ -26,4 +26,10 @@ export const brands: Brand[] = [
   { slug: "wilwood-big-brake-kits", name: "Wilwood Big Brake Kits", category: "brakes" },
   { slug: "ebc-rotors-pads", name: "EBC Rotors & Pads", category: "brakes" },
   { slug: "ate-oem-kits", name: "ATE OEM Kits", category: "brakes" },
+
+  // Aftermarket
+  { slug: "toyota", name: "Toyota", category: "aftermarket" },
+  { slug: "denso", name: "Denso", category: "aftermarket" },
+  { slug: "bosch", name: "Bosch", category: "aftermarket" },
+  { slug: "acdelco", name: "ACDelco", category: "aftermarket" },
 ];

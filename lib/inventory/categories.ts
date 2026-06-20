@@ -17,4 +17,5 @@ export const categories: Category[] = [
   { slug: "lighting", name: "Lighting" },
   { slug: "body-parts", name: "Body Parts" },
   { slug: "interior", name: "Interior" },
+  { slug: "aftermarket", name: "Aftermarket" },
 ];

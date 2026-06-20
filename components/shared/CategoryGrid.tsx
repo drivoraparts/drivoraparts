@@ -15,7 +15,11 @@ export default function CategoryGrid() {
       {categories.map((cat) => (
         <Link
           key={cat.slug}
-          href={routes.category(cat.slug)}
+          href={
+            cat.slug === "aftermarket"
+              ? routes.aftermarket
+              : routes.category(cat.slug)
+          }
           onMouseEnter={() => setHovered(cat.slug)}
           onMouseLeave={() => setHovered(null)}
           className={`

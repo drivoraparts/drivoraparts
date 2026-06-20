@@ -59,4 +59,7 @@ export type Product = {
   condition?: string;
   location?: string;
   description?: string;
+
+  /** Optional listing timestamp for sort (e.g. aftermarket feed). */
+  createdAt?: number;
 };

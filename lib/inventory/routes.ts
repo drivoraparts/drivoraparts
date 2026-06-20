@@ -10,6 +10,7 @@
 export const routes = {
   catalog: "/catalog",
   all: "/catalog/all",
+  aftermarket: "/aftermarket",
   category: (slug: string) => `/catalog/${slug}`,
   brand: (category: string, brand: string) => `/catalog/${category}/${brand}`,
   product: (id: number) => `/product/${id}`,
