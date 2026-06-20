@@ -5,6 +5,7 @@ import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
 import BuyNowButton from "@/app/components/BuyNowButton";
+import TrustBadgeModule from "@/app/components/TrustBadgeModule";
 
 export type ProductDetailsData = {
   id: number;
@@ -28,49 +29,6 @@ const glassCard: React.CSSProperties = {
   borderRadius: "10px",
   boxShadow: "0 4px 24px rgba(0,0,0,0.25)",
 };
-
-const TRUST_BADGES = [
-  "Secure Checkout",
-  "Buyer Protection",
-  "Verified Seller",
-  "Fast Shipping",
-  "Encrypted Payment",
-];
-
-function TrustBadge({ label }: { label: string }) {
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "8px",
-        padding: "8px 0",
-        fontSize: "13px",
-        color: "#fff",
-      }}
-    >
-      <span
-        aria-hidden
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "18px",
-          height: "18px",
-          borderRadius: "50%",
-          background: "rgba(34,197,94,0.15)",
-          color: "#22c55e",
-          fontSize: "12px",
-          fontWeight: 700,
-          flexShrink: 0,
-        }}
-      >
-        ✓
-      </span>
-      <span>{label}</span>
-    </div>
-  );
-}
 
 function CollapsibleDescription({ text }: { text: string }) {
   const [expanded, setExpanded] = useState(false);
@@ -312,19 +270,7 @@ export default function ProductDetailsPanel({
         <BuyNowButton product={cartProduct} quantity={quantity} />
       </div>
 
-      <div
-        style={{
-          marginTop: "16px",
-          padding: "12px 14px",
-          ...glassCard,
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
-        {TRUST_BADGES.map((label) => (
-          <TrustBadge key={label} label={label} />
-        ))}
-      </div>
+      <TrustBadgeModule />
 
       <CollapsibleDescription text={product.description} />
     </div>
