@@ -1,9 +1,19 @@
 import { NextResponse } from "next/server";
-import { createOrder } from "@/lib/marketplace";
+import { createOrder, clearCart, addToCart } from "@/lib/marketplace";
 
 export const runtime = "edge";
 
-export async function POST() {
+export async function POST(req: Request) {
+  const body = await req.json().catch(() => null);
+
+  if (body?.items?.length) {
+    clearCart();
+
+    for (const item of body.items) {
+      addToCart(item.productId, item.quantity ?? 1);
+    }
+  }
+
   const order = createOrder();
 
   if (!order) {

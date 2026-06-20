@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getProductById } from "@/data/store";
 import AddToCartButton from "@/app/components/AddToCartButton";
+import BuyNowButton from "@/app/components/BuyNowButton";
 
 export const runtime = "edge";
 
@@ -92,23 +93,22 @@ export default async function ProductPage({ params }: any) {
               id: product.id,
               name: product.name,
               price: product.price,
-              thumbnail: product.thumbnail,
+              image: product.images?.[0] || product.thumbnail,
+              category: product.category,
+              brand: product.brand,
             }}
           />
 
-          <button
-            style={{
-              width: "100%",
-              padding: "12px",
-              background: "#232f3e",
-              color: "white",
-              border: "none",
-              borderRadius: "6px",
-              marginTop: "10px",
+          <BuyNowButton
+            product={{
+              id: product.id,
+              name: product.name,
+              price: product.price,
+              image: product.images?.[0] || product.thumbnail,
+              category: product.category,
+              brand: product.brand,
             }}
-          >
-            Buy Now
-          </button>
+          />
         </div>
 
         <div style={{ marginTop: "20px" }}>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import CartDrawer from "./CartDrawer";
 
 type GlobalDrawerProps = {
   menuOpen: boolean;
@@ -95,14 +96,10 @@ export default function GlobalDrawer({
           onClick={() => setCartOpen(false)}
         >
           <div
-            className="w-[320px] h-full bg-[#111827] p-5"
+            className="w-[320px] h-full bg-[#111827]"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-lg font-bold mb-4">Cart</h2>
-
-            <p className="text-gray-400">
-              Cart is empty (checkout system coming next)
-            </p>
+            <CartDrawer onClose={() => setCartOpen(false)} />
           </div>
         </div>
       )}

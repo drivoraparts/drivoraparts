@@ -1,121 +1,35 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState } from "react";
-import { getProductById } from "@/lib/inventory";
-import {
-  getCart,
-  addToCart as marketplaceAdd,
-  removeFromCart as marketplaceRemove,
-  updateCartQuantity,
-  clearCart as marketplaceClear,
-  hasStock,
-} from "@/lib/marketplace";
+import { useCartStore } from "@/lib/store/cartStore";
 
-type CartItem = {
-  id: number;
-  name: string;
-  price: number;
-  quantity: number;
-  thumbnail: string;
+export type { CartItem } from "@/lib/store/cartStore";
+
+/** Backward-compatible cart hook backed by the Zustand store. */
+export const useCart = () => {
+  const items = useCartStore((s) => s.items);
+  const addToCart = useCartStore((s) => s.addToCart);
+  const removeFromCart = useCartStore((s) => s.removeFromCart);
+  const increaseQty = useCartStore((s) => s.increaseQuantity);
+  const decreaseQty = useCartStore((s) => s.decreaseQuantity);
+  const clearCart = useCartStore((s) => s.clearCart);
+  const getTotal = useCartStore((s) => s.getTotal);
+  const getItemCount = useCartStore((s) => s.getItemCount);
+
+  return {
+    cart: items,
+    addToCart,
+    removeFromCart,
+    increaseQty,
+    decreaseQty,
+    clearCart,
+    getTotal,
+    getItemCount,
+  };
 };
 
-type CartContextType = {
-  cart: CartItem[];
-  addToCart: (item: Omit<CartItem, "quantity">) => void;
-  removeFromCart: (id: number) => void;
-  increaseQty: (id: number) => void;
-  decreaseQty: (id: number) => void;
-  clearCart: () => void;
-};
-
-const CartContext = createContext<CartContextType | null>(null);
-
-function hydrateCart(): CartItem[] {
-  return getCart()
-    .map((item) => {
-      const product = getProductById(item.productId);
-      if (!product) return null;
-
-      return {
-        id: product.id,
-        name: product.name,
-        price: product.price,
-        quantity: item.quantity,
-        thumbnail: product.thumbnail ?? product.image ?? "",
-      };
-    })
-    .filter((item): item is CartItem => item !== null);
-}
-
+/** Zustand persists client-side; provider kept for existing app tree. */
 export const CartProvider = ({
   children,
 }: {
   children: React.ReactNode;
-}) => {
-  const [cart, setCart] = useState<CartItem[]>([]);
-
-  useEffect(() => {
-    setCart(hydrateCart());
-  }, []);
-
-  const syncCart = () => setCart(hydrateCart());
-
-  const addToCart = (item: Omit<CartItem, "quantity">) => {
-    const currentQty =
-      getCart().find((i) => i.productId === item.id)?.quantity ?? 0;
-
-    if (!hasStock(item.id, currentQty + 1)) return;
-
-    marketplaceAdd(item.id, 1);
-    syncCart();
-  };
-
-  const removeFromCart = (id: number) => {
-    marketplaceRemove(id);
-    syncCart();
-  };
-
-  const increaseQty = (id: number) => {
-    const currentQty =
-      getCart().find((i) => i.productId === id)?.quantity ?? 0;
-
-    if (!hasStock(id, currentQty + 1)) return;
-
-    updateCartQuantity(id, currentQty + 1);
-    syncCart();
-  };
-
-  const decreaseQty = (id: number) => {
-    const currentQty =
-      getCart().find((i) => i.productId === id)?.quantity ?? 0;
-
-    updateCartQuantity(id, currentQty - 1);
-    syncCart();
-  };
-
-  const clearCart = () => {
-    marketplaceClear();
-    setCart([]);
-  };
-
-  return (
-    <CartContext.Provider
-      value={{
-        cart,
-        addToCart,
-        removeFromCart,
-        increaseQty,
-        decreaseQty,
-        clearCart,
-      }}
-    >
-      {children}
-    </CartContext.Provider>
-  );
-};
-
-export const useCart = () => {
-  const ctx = useContext(CartContext);
-  if (!ctx) throw new Error("useCart must be used inside CartProvider");
-  return ctx;
-};
+}) => <>{children}</>;

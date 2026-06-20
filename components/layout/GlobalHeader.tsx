@@ -2,12 +2,21 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useCartStore } from "@/lib/store/cartStore";
 
 export default function GlobalHeader({
   setMenuOpen,
   setCartOpen,
 }: any) {
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const itemCount = useCartStore((s) =>
+    s.items.reduce((sum, i) => sum + i.quantity, 0)
+  );
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -40,9 +49,15 @@ export default function GlobalHeader({
 
           <button
             onClick={() => setCartOpen(true)}
-            className="hover:scale-110 transition"
+            className="relative hover:scale-110 transition"
+            aria-label="Open cart"
           >
             🛒
+            {mounted && itemCount > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-xs font-bold">
+                {itemCount}
+              </span>
+            )}
           </button>
 
           <button

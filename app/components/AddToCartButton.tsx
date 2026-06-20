@@ -2,31 +2,38 @@
 
 import { useState } from "react";
 import { useCart } from "@/context/CartContext";
-import { hasStock } from "@/lib/marketplace";
+import { productHasStock } from "@/lib/stock";
+import { showToast } from "@/lib/store/toastStore";
+
+export type AddToCartProduct = {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  category: string;
+  brand?: string;
+};
 
 export default function AddToCartButton({
   product,
 }: {
-  product: {
-    id: number;
-    name: string;
-    price: number;
-    thumbnail: string;
-  };
+  product: AddToCartProduct;
 }) {
   const [loading, setLoading] = useState(false);
-  const { addToCart } = useCart();
+  const { addToCart, cart } = useCart();
 
   const handleAdd = () => {
-    if (!hasStock(product.id)) {
-      alert("Out of stock");
+    const currentQty = cart.find((i) => i.id === product.id)?.quantity ?? 0;
+
+    if (!productHasStock(product.id, currentQty + 1)) {
+      showToast("Out of stock");
       return;
     }
 
     setLoading(true);
     addToCart(product);
+    showToast("Added to cart");
     setTimeout(() => setLoading(false), 300);
-    alert("Added to cart!");
   };
 
   return (
