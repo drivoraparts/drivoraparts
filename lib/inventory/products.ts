@@ -45,5 +45,31 @@ export const products: Product[] = [
     description:
       "Premium Garrett turbocharger designed for extreme boost performance and reliability.",
   },
+  {
+    id: 33,
+    name: "BMW B58 TwinPower Turbo 3.0-Liter Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-b58-twinpower",
+    price: 5999,
+    stock: true,
+    condition: "Used - Tested (OEM Refurbished)",
+    location: "USA Warehouse",
+    thumbnail: "/engine/bmw/b58/1.jpg",
+    images: [
+      "/engine/bmw/b58/1.jpg",
+      "/engine/bmw/b58/2.jpg",
+      "/engine/bmw/b58/3.jpg",
+      "/engine/bmw/b58/4.jpg",
+      "/engine/bmw/b58/5.jpg",
+      "/engine/bmw/b58/6.jpg",
+      "/engine/bmw/b58/7.jpg",
+      "/engine/bmw/b58/8.jpg",
+      "/engine/bmw/b58/9.jpg",
+      "/engine/bmw/b58/10.jpg",
+    ],
+    description:
+      "BMW B58 is a 3.0-liter turbocharged inline-six engine from BMW's modular engine family. It delivers a balance of performance, efficiency, and tuning potential and is widely used in modern BMW performance models.",
+  },
   ...aftermarketProducts,
 ];
