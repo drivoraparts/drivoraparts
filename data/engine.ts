@@ -12,6 +12,8 @@ import { slugify } from "./store";
 
 export type EnginePlatform = {
   name: string;
+  /** Optional URL slug when slugify(name) does not match product.platform */
+  slug?: string;
 };
 
 export type EngineGroup = {
@@ -41,6 +43,7 @@ export const engineTree: EngineGroup[] = [
     platforms: [
       { name: "BMW N54 Twin Turbo" },
       { name: "BMW N55 Turbo Engine" },
+      { name: "BMW B58 TwinPower Turbo", slug: "bmw-b58-twinpower" },
       { name: "BMW S55" },
       { name: "BMW S58" },
       { name: "BMW M57 Diesel" },
@@ -86,13 +89,17 @@ export const engineTree: EngineGroup[] = [
   },
 ];
 
+export function getPlatformSlug(platform: EnginePlatform): string {
+  return platform.slug ?? slugify(platform.name);
+}
+
 /** Resolve a platform (and its parent group) by URL slug. */
 export function getEnginePlatform(
   platformSlug: string
 ): { platform: EnginePlatform; group: EngineGroup } | undefined {
   for (const group of engineTree) {
     const platform = group.platforms.find(
-      (p) => slugify(p.name) === platformSlug
+      (p) => getPlatformSlug(p) === platformSlug
     );
     if (platform) return { platform, group };
   }

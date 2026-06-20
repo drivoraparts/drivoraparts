@@ -1,7 +1,5 @@
-import { engineTree } from "@/data/engine";
-import { slugify } from "@/data/store";
+import { engineTree, getPlatformSlug } from "@/data/engine";
 import CatalogCard from "./CatalogCard";
-
 /* =========================================================
    ENGINE SYSTEM UI (SYSTEM B)
    ---------------------------------------------------------
@@ -23,7 +21,7 @@ export default function EngineGroups() {
             {group.platforms.map((platform) => (
               <CatalogCard
                 key={platform.name}
-                href={`/catalog/engine/${slugify(platform.name)}`}
+                href={`/catalog/engine/${getPlatformSlug(platform)}`}
               >
                 <span className="font-medium">{platform.name}</span>
               </CatalogCard>
