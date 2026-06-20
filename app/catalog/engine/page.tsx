@@ -1,4 +1,4 @@
-import CategoryGrid from "@/components/shared/CategoryGrid";
+import EngineGroups from "@/components/catalog/EngineGroups";
 import PageHeading from "@/components/catalog/PageHeading";
 
 export const runtime = "edge";
@@ -6,9 +6,9 @@ export const runtime = "edge";
 export default function Page() {
   return (
     <main className="min-h-screen p-6 text-white">
-      <PageHeading title="Catalog" />
+      <PageHeading title="Engine" subtitle="Select an engine platform" />
 
-      <CategoryGrid />
+      <EngineGroups />
     </main>
   );
 }

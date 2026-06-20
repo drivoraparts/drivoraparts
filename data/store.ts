@@ -13,6 +13,8 @@ export type Product = {
   name: string;
   category: string;
   brand: string;
+  /** Engine system only: the engine platform slug this product belongs to. */
+  platform?: string;
   price: number;
   condition: string;
   location: string;
@@ -37,6 +39,7 @@ export const store: Record<string, Category> = {
         name: "BMW N54 Twin Turbo Engine",
         category: "engine",
         brand: "BMW",
+        platform: "bmw-n54-twin-turbo",
         price: 3200,
         condition: "Used - Refurbished",
         location: "USA Warehouse",
@@ -125,7 +128,11 @@ export const store: Record<string, Category> = {
 ========================= */
 
 export function slugify(value: string): string {
-  return value.toLowerCase().trim().replace(/\s+/g, "-");
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 export function getCategory(slug: string): Category | undefined {

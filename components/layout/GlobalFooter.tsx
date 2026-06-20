@@ -43,7 +43,7 @@ export default function GlobalFooter() {
           <h3 className="text-red-500 mb-3">Legal & Operations</h3>
           <div className="flex flex-col gap-2 text-gray-300 text-sm">
             <Link href="/policies/shipping-policy">Shipping Policy</Link>
-            <Link href="/policies/return-refund-policy">Returns & Refunds</Link>
+            <Link href="/policies/refund-policy">Returns & Refunds</Link>
             <Link href="/policies/terms-of-sale">Terms of Sale</Link>
             <Link href="/policies/disclaimer">Disclaimer</Link>
             <Link href="/policies/affiliate-disclosure">Affiliate Disclosure</Link>
@@ -54,7 +54,7 @@ export default function GlobalFooter() {
       </div>
 
       <div className="text-center text-gray-500 text-xs py-6 border-t border-white/10">
-        © {new Date().getFullYear()} DrivoraParts. All rights reserved.
+        © {new Date().getFullYear()} DrivoraParts LLC. All rights reserved.
       </div>
     </footer>
   );

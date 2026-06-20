@@ -2,9 +2,18 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { getCategoryList } from "@/data/store";
 
-const categories = getCategoryList();
+const categories = [
+  { slug: "engine", label: "Engine" },
+  { slug: "transmission", label: "Transmission" },
+  { slug: "turbocharger", label: "Turbocharger" },
+  { slug: "suspension", label: "Suspension" },
+  { slug: "brakes", label: "Brakes" },
+  { slug: "electronics", label: "Electronics" },
+  { slug: "lighting", label: "Lighting" },
+  { slug: "body-parts", label: "Body Parts" },
+  { slug: "interior", label: "Interior" },
+];
 
 export default function CategoryGrid() {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -39,7 +48,7 @@ export default function CategoryGrid() {
 
           {/* text */}
           <span className="relative text-white font-medium capitalize">
-            {cat.name}
+            {cat.label}
           </span>
 
           {/* bottom pulse line */}

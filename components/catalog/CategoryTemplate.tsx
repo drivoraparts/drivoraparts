@@ -1,13 +1,12 @@
-import Link from "next/link";
+import PageHeading from "./PageHeading";
+import CatalogCard from "./CatalogCard";
 
 /* =========================================================
-   UI LAYER — PURE PRESENTATIONAL TEMPLATE
+   UI LAYER — PURE PRESENTATIONAL TEMPLATE (SYSTEM A)
    ---------------------------------------------------------
-   Handles ONLY layout, grid, spacing, cards, responsiveness.
-   - No filtering logic.
-   - No category awareness / decisions.
-   - No fallback logic.
-   Everything it renders comes from props.
+   Same architecture, headers, cards, and animations as the
+   engine system — unified red/white brand language.
+   No filtering, no category awareness, no fallback.
 ========================================================= */
 
 type TemplateProduct = {
@@ -33,24 +32,20 @@ export default function CategoryTemplate({
 }) {
   return (
     <main className="min-h-screen p-6 text-white">
-      <h1 className="text-3xl font-bold mb-8">{title}</h1>
+      <PageHeading title={title} />
 
       {/* BRANDS */}
       {brands.length > 0 && (
-        <section className="mb-10">
+        <section className="mb-12">
           <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">
             Brands
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {brands.map((brand) => (
-              <Link
-                key={brand.href}
-                href={brand.href}
-                className="p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-red-500/40 transition"
-              >
-                {brand.name}
-              </Link>
+              <CatalogCard key={brand.href} href={brand.href}>
+                <span className="font-medium">{brand.name}</span>
+              </CatalogCard>
             ))}
           </div>
         </section>
@@ -67,11 +62,7 @@ export default function CategoryTemplate({
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {products.map((product) => (
-              <Link
-                key={product.id}
-                href={`/product/${product.id}`}
-                className="group bg-white/5 border border-white/10 p-4 rounded-xl hover:border-red-500/40 transition"
-              >
+              <CatalogCard key={product.id} href={`/product/${product.id}`}>
                 <img
                   src={product.thumbnail}
                   alt={product.name}
@@ -81,7 +72,7 @@ export default function CategoryTemplate({
                 <p className="text-sm text-red-500 font-bold">
                   ${product.price}
                 </p>
-              </Link>
+              </CatalogCard>
             ))}
           </div>
         )}

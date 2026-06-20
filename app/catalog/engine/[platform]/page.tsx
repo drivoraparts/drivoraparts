@@ -1,27 +1,30 @@
 import { notFound } from "next/navigation";
-import { getCategory, getBrand } from "@/data/store";
+import { getEnginePlatform } from "@/data/engine";
+import { store } from "@/data/store";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogCard from "@/components/catalog/CatalogCard";
 
 export const runtime = "edge";
 
 export default async function Page({ params }: any) {
-  const { category: categorySlug, brand: brandSlug } = await params;
+  const { platform: platformSlug } = await params;
 
-  const category = getCategory(categorySlug);
-  if (!category) return notFound();
+  const found = getEnginePlatform(platformSlug);
+  if (!found) return notFound();
 
-  const brand = getBrand(categorySlug, brandSlug);
-  if (!brand) return notFound();
-
-  const products = category.products.filter((p) => p.brand === brand);
+  const products = store.engine.products.filter(
+    (p) => p.platform === platformSlug
+  );
 
   return (
     <main className="min-h-screen p-6 text-white">
-      <PageHeading title={brand} subtitle={category.name} />
+      <PageHeading
+        title={found.platform.name}
+        subtitle={`Engine · ${found.group.title}`}
+      />
 
       {products.length === 0 ? (
-        <p className="text-gray-500">No products for this brand yet.</p>
+        <p className="text-gray-500">No products for this platform yet.</p>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {products.map((product) => (

@@ -23,7 +23,7 @@ const sections = [
     items: [
       { name: "Terms of Sale", href: "/policies/terms-of-sale" },
       { name: "Shipping Policy", href: "/policies/shipping-policy" },
-      { name: "Return & Refund Policy", href: "/policies/return-refund-policy" },
+      { name: "Return & Refund Policy", href: "/policies/refund-policy" },
     ],
   },
   {
@@ -38,8 +38,13 @@ const sections = [
 
 export default function PoliciesPage() {
   return (
-    <main className="px-6 py-24 text-white">
-      <h1 className="text-3xl font-bold mb-10">Policies</h1>
+    <div className="text-white">
+      <h1 className="inline-block text-3xl md:text-4xl font-bold border-b-2 border-red-600 pb-2 mb-4">
+        Policies
+      </h1>
+      <p className="text-sm text-gray-400 mb-10">
+        Legal information and operating policies for DrivoraParts LLC.
+      </p>
 
       {sections.map((section) => (
         <div key={section.title} className="mb-10">
@@ -58,6 +63,6 @@ export default function PoliciesPage() {
           </div>
         </div>
       ))}
-    </main>
+    </div>
   );
 }
