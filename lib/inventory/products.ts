@@ -632,14 +632,14 @@ Worldwide Shipping Available`,
 
 The BMW M57 is a legendary diesel inline-six engine known for extreme torque, durability, and long-distance reliability.
 
-The BMW M57 engine is one of the most respected diesel powerplants ever built by BMW. Featuring a robust inline-six configuration, turbocharged efficiency, and exceptional torque output, the M57 is widely used in performance diesel builds, commercial applications, and long-distance touring setups. It is known for its bulletproof reliability and strong tuning capability.
+The BMW M57 engine is one of the most reliable diesel inline-six engines ever produced. It is known for its massive torque output, long lifespan, and strong tuning capability. Used across multiple BMW platforms, it is respected for both performance diesel builds and long-distance efficiency applications.
 
 Specifications
 • Engine Code: M57
 • Configuration: Inline-6
 • Aspiration: Turbocharged Diesel
 • Displacement: 3.0L
-• Fuel System: Common Rail Direct Injection
+• Fuel System: Common Rail Diesel Injection
 • Factory Power: 181–286 HP (variant dependent)
 • Torque: 390–580 Nm
 • Cooling: Liquid Cooled
@@ -647,11 +647,11 @@ Specifications
 • Manufacturer: BMW
 
 Highlights
+• Extreme Torque Output
 • Legendary Diesel Reliability
-• High Torque Output
-• Long-Range Efficiency
+• High Mileage Durability
 • Strong Tuning Potential
-• Commercial Grade Durability
+• Commercial Grade Engine Design
 
 Warranty
 24-Month Limited Warranty
@@ -717,6 +717,63 @@ Highlights
 • Lightweight Racing Platform
 • Strong Aftermarket Support
 • Motorsport Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 46,
+    name: "Mazda 13B Rotary Engine (Twin Rotor)",
+    category: "engine",
+    brand: "mazda",
+    platform: "mazda-13b-rotary",
+    price: 5599,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/mazda-13b-rotary/1.webp",
+    images: [
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/1.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/2.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/3.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/4.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/5.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/6.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/7.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/8.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/9.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/10.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/11.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/12.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/13.webp",
+      "/catalog/engine/japanese-legends/mazda-13b-rotary/14.webp",
+    ],
+    description: `Mazda 13B Rotary Engine (Twin Rotor)
+
+The Mazda 13B Rotary is a legendary twin-rotor engine known for its unique rotary design, high-revving capability, and motorsport dominance.
+
+The Mazda 13B Rotary engine is one of the most iconic rotary engines ever built. Unlike traditional piston engines, it uses a twin-rotor Wankel design that delivers smooth, high-revving performance and exceptional power-to-weight ratio. Popular in the RX-7 and RX-8 platforms, the 13B is widely respected in drift and motorsport communities for its responsiveness and tuning potential.
+
+Specifications
+• Engine Code: 13B
+• Configuration: Twin-Rotor Rotary Engine
+• Aspiration: Naturally Aspirated / Turbo variants (platform dependent)
+• Displacement Equivalent: ~1.3L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 180–280 HP (variant dependent)
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Mazda
+
+Highlights
+• Legendary Rotary Technology
+• Extremely High RPM Capability
+• Lightweight Performance Engine
+• Motorsports Icon (RX-7 Heritage)
+• Unique Engineering Design
 
 Warranty
 24-Month Limited Warranty
