@@ -18,18 +18,44 @@ export const products: Product[] = [
     category: "engine",
     brand: "bmw",
     platform: "bmw-n54-twin-turbo",
-    price: 3200,
+    price: 5999,
     stock: true,
     condition: "brand-new",
     location: "USA Warehouse",
-    thumbnail: "/engines/engine-1.jpg",
+    thumbnail: "/catalog/engine/bmw/n54/1.jpeg",
     images: [
-      "/engines/engine-1.jpg",
-      "/engines/engine-2.jpg",
-      "/engines/engine-3.jpg",
+      "/catalog/engine/bmw/n54/1.jpeg",
+      "/catalog/engine/bmw/n54/2.webp",
+      "/catalog/engine/bmw/n54/3.webp",
     ],
-    description:
-      "High-performance BMW N54 twin turbo engine fully tested and rebuilt for maximum power output.",
+    description: `BMW N54 Twin Turbo Engine
+
+The BMW N54 Twin Turbo is one of BMW's most legendary turbocharged inline-six engines, renowned for its exceptional tuning potential, twin-turbo performance, and strong aftermarket support.
+
+The BMW N54 Twin Turbo engine delivers an ideal balance of power, reliability, and tuning capability. Featuring a factory twin-turbocharged configuration, direct fuel injection, and a robust inline-six design, the N54 has become a favorite among enthusiasts seeking substantial horsepower gains. Whether for a replacement engine, restoration project, or high-performance build, the N54 remains one of BMW's most sought-after powerplants.
+
+Specifications
+• Engine Code: N54
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Fuel System: Direct Injection
+• Factory Power: 300-335 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Genuine BMW Performance Engine
+• Twin Turbocharged Power Delivery
+• Massive Aftermarket Support
+• Proven High Horsepower Capability
+• Enthusiast Favorite Platform
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
   },
   {
     id: 2,
@@ -83,6 +109,95 @@ Key Features
 • Strong Aftermarket Support
 • High Performance Capability
 • Suitable For Replacement And Performance Builds`,
+  },
+  {
+    id: 34,
+    name: "Toyota 2JZ-GTE (Supra)",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-2jz-gte-supra",
+    price: 8499,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/2jz-gte/1.jpg",
+    images: [
+      "/catalog/engine/japanese-legends/2jz-gte/1.jpg",
+      "/catalog/engine/japanese-legends/2jz-gte/2.jpg",
+      "/catalog/engine/japanese-legends/2jz-gte/3.jpg",
+    ],
+    description: `Toyota 2JZ-GTE (Supra)
+
+The legendary Toyota 2JZ-GTE is widely regarded as one of the strongest and most tunable performance engines ever produced.
+
+Built to legendary standards, the Toyota 2JZ-GTE features an iron block construction, factory twin turbochargers, and exceptional durability. Known globally through the Toyota Supra platform, this engine has become the benchmark for high-horsepower builds. From street performance to motorsports applications, the 2JZ-GTE continues to dominate the performance world.
+
+Specifications
+• Engine Code: 2JZ-GTE
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 276-320 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Toyota
+
+Highlights
+• Legendary Supra Engine
+• Twin Turbocharged Performance
+• Iron Block Construction
+• Massive Horsepower Potential
+• Worldwide Tuning Support
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 35,
+    name: "Toyota 1JZ-GTE",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-1jz-gte",
+    price: 6499,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/1jz-gte/1.jpg",
+    images: [
+      "/catalog/engine/japanese-legends/1jz-gte/1.jpg",
+      "/catalog/engine/japanese-legends/1jz-gte/2.jpg",
+    ],
+    description: `Toyota 1JZ-GTE
+
+The Toyota 1JZ-GTE is a legendary Japanese performance engine known for its smooth power delivery, reliability, and tuning capabilities.
+
+The 1JZ-GTE combines Toyota engineering excellence with proven turbocharged performance. Built with a durable inline-six architecture and a strong aftermarket ecosystem, it remains one of the most respected JDM engines ever produced. Perfect for performance enthusiasts, restorations, and custom builds.
+
+Specifications
+• Engine Code: 1JZ-GTE
+• Configuration: Inline-6
+• Aspiration: Turbocharged
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 276-280 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Toyota
+
+Highlights
+• Legendary JDM Powerplant
+• Smooth Inline-Six Performance
+• Proven Reliability
+• Excellent Tuning Potential
+• Motorsport Heritage
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
   },
   ...aftermarketProducts,
 ];

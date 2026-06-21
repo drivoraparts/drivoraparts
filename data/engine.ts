@@ -27,8 +27,8 @@ export const engineTree: EngineGroup[] = [
     slug: "japanese-legends",
     title: "Japanese Legends",
     platforms: [
-      { name: "Toyota 2JZ-GTE" },
-      { name: "Toyota 1JZ-GTE" },
+      { name: "Toyota 2JZ-GTE", slug: "toyota-2jz-gte-supra" },
+      { name: "Toyota 1JZ-GTE", slug: "toyota-1jz-gte" },
       { name: "Toyota 1UZ-FE V8" },
       { name: "Nissan RB26DETT (Skyline GTR)" },
       { name: "Nissan SR20DET" },
@@ -41,7 +41,7 @@ export const engineTree: EngineGroup[] = [
     slug: "bmw-engines",
     title: "BMW Engines",
     platforms: [
-      { name: "BMW N54 Twin Turbo" },
+      { name: "BMW N54 Twin Turbo", slug: "bmw-n54-twin-turbo" },
       { name: "BMW N55 Turbo Engine" },
       { name: "BMW B58 TwinPower Turbo", slug: "bmw-b58-twinpower" },
       { name: "BMW S55" },
