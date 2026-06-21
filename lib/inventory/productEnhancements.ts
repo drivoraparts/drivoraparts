@@ -1,0 +1,162 @@
+import type { Product } from "./types";
+import {
+  getConditionDisplay,
+  resolveProductCondition,
+} from "./condition";
+
+export type ProductCatalogMeta = {
+  horsepower?: string;
+  mileage: string;
+  conditionLabel: string;
+  warranty: string;
+  rating: number;
+  reviewCount: number;
+  descriptionBody: string;
+  specifications: string;
+  shippingAndWarranty: string;
+};
+
+const SEED_RATINGS: Record<
+  number,
+  { rating: number; reviewCount: number }
+> = {
+  1: { rating: 4.8, reviewCount: 97 },
+  34: { rating: 4.9, reviewCount: 143 },
+  39: { rating: 4.9, reviewCount: 121 },
+  40: { rating: 4.9, reviewCount: 86 },
+  42: { rating: 4.8, reviewCount: 74 },
+  43: { rating: 4.8, reviewCount: 68 },
+};
+
+const SECTION_HEADERS = [
+  "Specifications",
+  "Highlights",
+  "Warranty",
+  "Shipping",
+  "Key Features",
+] as const;
+
+function extractHorsepower(description: string): string | undefined {
+  const match = description.match(/Factory Power:\s*(.+)/i);
+  return match?.[1]?.trim();
+}
+
+function extractWarranty(description: string): string | undefined {
+  const match = description.match(/Warranty\s*\n([^\n]+)/i);
+  return match?.[1]?.trim();
+}
+
+function splitDescriptionSections(description: string) {
+  const lines = description.split("\n");
+  const sectionIndexes: { name: string; index: number }[] = [];
+
+  lines.forEach((line, index) => {
+    const trimmed = line.trim();
+    if (SECTION_HEADERS.includes(trimmed as (typeof SECTION_HEADERS)[number])) {
+      sectionIndexes.push({ name: trimmed, index });
+    }
+  });
+
+  const introEnd =
+    sectionIndexes.length > 0 ? sectionIndexes[0].index : lines.length;
+  const descriptionBody = lines.slice(0, introEnd).join("\n").trim();
+
+  const getSection = (name: string) => {
+    const start = sectionIndexes.find((section) => section.name === name);
+    if (!start) return "";
+
+    const startIndex = sectionIndexes.findIndex(
+      (section) => section.name === name
+    );
+    const endIndex =
+      startIndex + 1 < sectionIndexes.length
+        ? sectionIndexes[startIndex + 1].index
+        : lines.length;
+
+    return lines
+      .slice(start.index + 1, endIndex)
+      .join("\n")
+      .trim();
+  };
+
+  const specifications = getSection("Specifications");
+  const highlights = getSection("Highlights");
+  const keyFeatures = getSection("Key Features");
+  const warranty = getSection("Warranty");
+  const shipping = getSection("Shipping");
+
+  const specBlocks = [specifications, highlights, keyFeatures]
+    .filter(Boolean)
+    .join("\n\n");
+
+  const shippingAndWarranty = [warranty, shipping].filter(Boolean).join("\n\n");
+
+  return {
+    descriptionBody: descriptionBody || description.trim(),
+    specifications: specBlocks,
+    shippingAndWarranty,
+  };
+}
+
+export function resolveProductMileage(product: Product): string {
+  if (product.mileage?.trim()) return product.mileage.trim();
+
+  const condition = resolveProductCondition(product);
+  if (condition === "brand-new") return "0 Miles";
+
+  return "Contact for Details";
+}
+
+export function resolveProductWarranty(
+  product: Product,
+  description?: string
+): string {
+  if (product.warranty?.trim()) return product.warranty.trim();
+
+  const fromDescription = description
+    ? extractWarranty(description)
+    : undefined;
+  if (fromDescription) {
+    return fromDescription.replace(/limited warranty/i, "Warranty").trim();
+  }
+
+  return "24 Month Warranty";
+}
+
+export function resolveProductHorsepower(product: Product): string | undefined {
+  if (product.horsepower?.trim()) return product.horsepower.trim();
+  if (product.category !== "engine" || !product.description) return undefined;
+  return extractHorsepower(product.description);
+}
+
+export function resolveProductRating(product: Product): number {
+  if (typeof product.rating === "number") return product.rating;
+  return SEED_RATINGS[product.id]?.rating ?? 4.8;
+}
+
+export function resolveProductReviewCount(product: Product): number {
+  if (typeof product.reviewCount === "number") return product.reviewCount;
+  return SEED_RATINGS[product.id]?.reviewCount ?? 0;
+}
+
+export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
+  const description = product.description ?? "";
+  const sections = splitDescriptionSections(description);
+  const condition = resolveProductCondition(product);
+
+  return {
+    horsepower: resolveProductHorsepower(product),
+    mileage: resolveProductMileage(product),
+    conditionLabel: getConditionDisplay(condition).label,
+    warranty: resolveProductWarranty(product, description),
+    rating: resolveProductRating(product),
+    reviewCount: resolveProductReviewCount(product),
+    descriptionBody: sections.descriptionBody,
+    specifications: sections.specifications,
+    shippingAndWarranty: sections.shippingAndWarranty,
+  };
+}
+
+export function getConditionLabelForProduct(product: Product): string {
+  return getConditionDisplay(resolveProductCondition(product)).label;
+}

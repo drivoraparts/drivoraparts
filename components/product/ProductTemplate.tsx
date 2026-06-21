@@ -2,15 +2,20 @@
 
 import { useState } from "react";
 import type { Product } from "@/data/store";
-import { getProductById as getInventoryProduct } from "@/lib/inventory";
+import {
+  getProductById as getInventoryProduct,
+  getProductCatalogMeta,
+} from "@/lib/inventory";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
 import BuyNowButton from "@/app/components/BuyNowButton";
 import ImageCarousel from "./ImageCarousel";
-import ProductDescription from "./ProductDescription";
 import TrustBadgeStrip from "./TrustBadgeStrip";
 import ConditionBadge from "./ConditionBadge";
+import ProductRatingSummary from "./ProductRatingSummary";
+import QuickSpecsBar from "./QuickSpecsBar";
+import ProductDetailsSections from "./ProductDetailsSections";
 import {
   formatCategoryLabel,
   formatPlatformLabel,
@@ -44,6 +49,18 @@ export default function ProductTemplate({ product }: { product: Product }) {
   const inventoryProduct = getInventoryProduct(product.id);
   const inStock = inventoryProduct?.stock !== false;
   const rawCondition = inventoryProduct?.condition ?? product.condition;
+  const catalogMeta = getProductCatalogMeta(
+    inventoryProduct ?? {
+      id: product.id,
+      name: product.name,
+      category: product.category,
+      brand: product.brand,
+      price: product.price,
+      condition: rawCondition,
+      description: product.description,
+      platform: product.platform,
+    }
+  );
 
   const primaryImage = product.images?.[0] || product.thumbnail;
   const galleryImages =
@@ -84,6 +101,11 @@ export default function ProductTemplate({ product }: { product: Product }) {
           {product.name}
         </h1>
 
+        <ProductRatingSummary
+          rating={catalogMeta.rating}
+          reviewCount={catalogMeta.reviewCount}
+        />
+
         <h2 style={{ marginTop: "8px", fontSize: "26px", color: "#e60000" }}>
           ${product.price.toLocaleString()}
         </h2>
@@ -94,6 +116,13 @@ export default function ProductTemplate({ product }: { product: Product }) {
             condition={rawCondition}
           />
         </div>
+
+        <QuickSpecsBar
+          horsepower={catalogMeta.horsepower}
+          mileage={catalogMeta.mileage}
+          condition={catalogMeta.conditionLabel}
+          warranty={catalogMeta.warranty}
+        />
 
         <div style={{ marginTop: "16px", padding: "14px", ...glassCard }}>
           <MetaRow
@@ -136,7 +165,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
                 height: "36px",
                 border: "1px solid rgba(255,255,255,0.2)",
                 borderRadius: "6px",
-                background: "rgba(255,255,255,0.06)",
+                background: "rgba(255, 255, 255, 0.06)",
                 color: "#fff",
                 cursor: "pointer",
                 fontSize: "18px",
@@ -163,7 +192,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
                 border: "1px solid rgba(255,255,255,0.2)",
                 borderRadius: "6px",
                 fontSize: "15px",
-                background: "rgba(255,255,255,0.06)",
+                background: "rgba(255, 255, 255, 0.06)",
                 color: "#fff",
               }}
             />
@@ -174,9 +203,9 @@ export default function ProductTemplate({ product }: { product: Product }) {
               style={{
                 width: "36px",
                 height: "36px",
-                border: "1px solid rgba(255,255,255,0.2)",
+                border: "1px solid rgba(255, 255, 255,0.2)",
                 borderRadius: "6px",
-                background: "rgba(255,255,255,0.06)",
+                background: "rgba(255, 255, 255, 0.06)",
                 color: "#fff",
                 cursor: "pointer",
                 fontSize: "18px",
@@ -204,7 +233,13 @@ export default function ProductTemplate({ product }: { product: Product }) {
           on eligible orders.
         </p>
 
-        <ProductDescription text={product.description} />
+        <ProductDetailsSections
+          productId={product.id}
+          descriptionBody={catalogMeta.descriptionBody}
+          specifications={catalogMeta.specifications}
+          shippingAndWarranty={catalogMeta.shippingAndWarranty}
+          reviewCount={catalogMeta.reviewCount}
+        />
       </div>
 
       <style>{`

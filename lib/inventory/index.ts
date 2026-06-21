@@ -26,6 +26,15 @@ export {
   CATALOG_CATEGORIES,
 } from "./condition";
 export type { ConditionDisplay } from "./condition";
+export {
+  getProductCatalogMeta,
+  resolveProductHorsepower,
+  resolveProductMileage,
+  resolveProductRating,
+  resolveProductReviewCount,
+  resolveProductWarranty,
+} from "./productEnhancements";
+export type { ProductCatalogMeta } from "./productEnhancements";
 /** Normalize any string into a canonical kebab-case slug. */
 export function slugify(value: string): string {
   return value

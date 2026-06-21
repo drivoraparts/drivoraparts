@@ -71,6 +71,17 @@ export type Product = {
   location?: string;
   description?: string;
 
+  /** Display horsepower for engine and performance listings. */
+  horsepower?: string;
+  /** Display mileage (brand-new catalog engines default to 0 Miles). */
+  mileage?: string;
+  /** Display warranty label shown in quick specs. */
+  warranty?: string;
+  /** Aggregate product rating (seedable without live reviews). */
+  rating?: number;
+  /** Aggregate review count (seedable without live reviews). */
+  reviewCount?: number;
+
   /** Optional listing timestamp for sort (e.g. aftermarket feed). */
   createdAt?: number;
 };
