@@ -1159,5 +1159,252 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 54,
+    name: "Audi 2.0 TFSI EA888 Turbo Engine",
+    category: "engine",
+    brand: "audi",
+    platform: "audi-2-0-tfsi-ea888",
+    price: 3999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "220 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+    images: [
+      "/catalog/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+      "/catalog/engine/euro-performance/audi-2-0-tfsi-ea888/2.jpg",
+      "/catalog/engine/euro-performance/audi-2-0-tfsi-ea888/3.jpg",
+      "/catalog/engine/euro-performance/audi-2-0-tfsi-ea888/4.jpg",
+      "/catalog/engine/euro-performance/audi-2-0-tfsi-ea888/5.jpg",
+      "/catalog/engine/euro-performance/audi-2-0-tfsi-ea888/6.jpg",
+    ],
+    description: `Audi 2.0 TFSI EA888 Turbo Engine
+
+Modern turbocharged 2.0L Audi EA888 engine known for efficiency, tuning potential, and reliability.
+
+The Audi EA888 2.0 TFSI engine is one of the most widely used modern turbocharged engines in the Volkswagen Group. Known for strong tuning capability, efficiency, and balance between performance and reliability, it is a popular choice for swaps and upgrades.
+
+Specifications
+• Engine Code: EA888
+• Configuration: Inline-4
+• Displacement: 2.0L
+• Aspiration: Turbocharged
+• Factory Power: 220 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Audi
+
+Highlights
+• Modern VW Group Turbo Platform
+• Strong Tuning Potential
+• Efficient Performance Design
+• Wide Aftermarket Support
+• Ideal for Swap and Upgrade Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 55,
+    name: "Audi 4.0 TFSI V8 Biturbo Engine",
+    category: "engine",
+    brand: "audi",
+    platform: "audi-4-0-tfsi-v8",
+    price: 11999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "600 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    description: `Audi 4.0 TFSI V8 Biturbo Engine
+
+High-performance twin-turbo V8 used in Audi RS models delivering extreme luxury performance.
+
+The Audi 4.0 TFSI V8 Biturbo engine powers Audi RS performance models and delivers massive horsepower with refined German engineering. It is known for strong torque delivery and advanced turbo technology.
+
+Specifications
+• Engine Code: 4.0 TFSI
+• Configuration: V8
+• Displacement: 4.0L
+• Aspiration: Twin Turbocharged
+• Factory Power: 600 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Audi
+
+Highlights
+• Audi RS Performance Platform
+• Twin-Turbo V8 Engineering
+• Extreme Horsepower Output
+• Refined German Performance
+• Premium Luxury Build Candidate
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 56,
+    name: "Mercedes-Benz M113 V8 Engine",
+    category: "engine",
+    brand: "mercedes-benz",
+    platform: "mercedes-m113",
+    price: 6499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "302 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/euro-performance/mercedes-m113/1.jpg",
+    images: [
+      "/catalog/engine/euro-performance/mercedes-m113/1.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/2.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/3.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/4.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/5.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/6.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/7.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/8.jpg",
+      "/catalog/engine/euro-performance/mercedes-m113/9.jpg",
+    ],
+    description: `Mercedes-Benz M113 V8 Engine
+
+Legendary naturally aspirated Mercedes V8 known for reliability and long-term durability.
+
+The Mercedes M113 V8 is a highly respected naturally aspirated engine known for durability, smooth power delivery, and strong aftermarket support in performance and luxury applications.
+
+Specifications
+• Engine Code: M113
+• Configuration: V8
+• Aspiration: Naturally Aspirated
+• Displacement: 5.0L
+• Factory Power: 302 HP
+• Fuel System: Electronic Fuel Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Mercedes-Benz
+
+Highlights
+• Legendary Mercedes V8 Reliability
+• Smooth Naturally Aspirated Power
+• Long-Term Durability
+• Strong Aftermarket Support
+• Luxury and Performance Applications
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 57,
+    name: "Mercedes-AMG M157 Biturbo V8 Engine",
+    category: "engine",
+    brand: "mercedes-amg",
+    platform: "mercedes-m157-amg",
+    price: 12999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "577 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/euro-performance/mercedes-m157-amg/1.jpg",
+    images: [
+      "/catalog/engine/euro-performance/mercedes-m157-amg/1.jpg",
+      "/catalog/engine/euro-performance/mercedes-m157-amg/2.jpg",
+      "/catalog/engine/euro-performance/mercedes-m157-amg/3.jpg",
+      "/catalog/engine/euro-performance/mercedes-m157-amg/4.jpg",
+      "/catalog/engine/euro-performance/mercedes-m157-amg/5.jpg",
+      "/catalog/engine/euro-performance/mercedes-m157-amg/6.jpg",
+    ],
+    description: `Mercedes-AMG M157 Biturbo V8 Engine
+
+High-performance AMG twin-turbo V8 engine delivering extreme horsepower and torque.
+
+The Mercedes M157 AMG Biturbo V8 is engineered for high-performance AMG models. It delivers massive power output, advanced turbocharging, and aggressive acceleration performance.
+
+Specifications
+• Engine Code: M157
+• Configuration: V8
+• Displacement: 5.5L
+• Aspiration: Twin Turbocharged
+• Factory Power: 577 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Mercedes-AMG
+
+Highlights
+• AMG Twin-Turbo V8 Platform
+• Extreme Horsepower and Torque
+• Advanced Turbo Technology
+• Track-Capable Performance
+• Premium German Engineering
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 58,
+    name: "Volkswagen VR6 Engine",
+    category: "engine",
+    brand: "volkswagen",
+    platform: "vw-vr6",
+    price: 4999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "280 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/euro-performance/vw-vr6/1.jpg",
+    images: ["/catalog/engine/euro-performance/vw-vr6/1.jpg"],
+    description: `Volkswagen VR6 Engine
+
+Unique narrow-angle VR6 engine known for smooth power delivery and compact design.
+
+The Volkswagen VR6 engine is a unique engineering design combining V6 smoothness with inline packaging efficiency. It is widely used in VW performance platforms and known for its distinctive sound and strong tuning potential.
+
+Specifications
+• Engine Code: VR6
+• Configuration: VR6 Narrow-Angle
+• Displacement: 3.6L
+• Aspiration: Naturally Aspirated
+• Factory Power: 280 HP
+• Fuel System: Electronic Fuel Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Volkswagen
+
+Highlights
+• Unique VR6 Engineering Design
+• Compact V6 Packaging
+• Smooth Power Delivery
+• Distinctive Engine Character
+• Strong Tuning Potential
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
