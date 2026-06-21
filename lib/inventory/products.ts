@@ -406,5 +406,102 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 40,
+    name: "BMW S58 (M Performance Engine)",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-s58",
+    price: 7999,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/bmw/s58/1.avif",
+    images: [
+      "/catalog/engine/bmw/s58/1.avif",
+      "/catalog/engine/bmw/s58/2.jpeg",
+    ],
+    description: `BMW S58 (M Performance Engine)
+
+The BMW S58 is a high-performance twin-turbo inline-six engine powering the latest BMW M3 and M4 models, known for extreme performance and track capability.
+
+The BMW S58 engine is the latest evolution of BMW's M Performance inline-six platform. Built for the G80 M3 and G82 M4, it delivers exceptional horsepower, torque, and track-ready durability. Featuring advanced twin-turbo technology, upgraded cooling systems, and reinforced internal components, the S58 is designed for high-performance driving and motorsport applications.
+
+Specifications
+• Engine Code: S58
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Displacement: 3.0L
+• Fuel System: Direct Injection
+• Factory Power: 473–503 HP
+• Cooling: High-Performance Liquid Cooling
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Latest BMW M Performance Engine
+• Extreme Track Capability
+• Twin Turbo High Output System
+• Strong Motorsport Engineering
+• High Reliability Under Load
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 41,
+    name: "Nissan SR20DET Turbo Engine",
+    category: "engine",
+    brand: "nissan",
+    platform: "sr20det",
+    price: 4499,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/sr20det/1.jpg",
+    images: [
+      "/catalog/engine/japanese-legends/sr20det/1.jpg",
+      "/catalog/engine/japanese-legends/sr20det/2.jpg",
+      "/catalog/engine/japanese-legends/sr20det/3.jpg",
+      "/catalog/engine/japanese-legends/sr20det/4.jpg",
+      "/catalog/engine/japanese-legends/sr20det/5.jpg",
+      "/catalog/engine/japanese-legends/sr20det/6.jpg",
+      "/catalog/engine/japanese-legends/sr20det/7.jpg",
+      "/catalog/engine/japanese-legends/sr20det/8.jpg",
+      "/catalog/engine/japanese-legends/sr20det/9.jpg",
+    ],
+    description: `Nissan SR20DET Turbo Engine
+
+The Nissan SR20DET is a legendary 2.0L turbocharged inline-four engine widely used in drift, racing, and performance builds due to its tuning potential.
+
+The Nissan SR20DET is one of the most iconic Japanese turbo engines ever produced. Known for its lightweight design, strong aftermarket support, and high tuning capability, it has become a favorite in drifting, motorsports, and performance builds worldwide. Its turbocharged inline-four configuration delivers responsive power and excellent modification potential.
+
+Specifications
+• Engine Code: SR20DET
+• Configuration: Inline-4
+• Aspiration: Turbocharged
+• Displacement: 2.0L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 200–250 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Nissan
+
+Highlights
+• Legendary Drift Engine
+• Lightweight Performance Platform
+• Massive Aftermarket Support
+• Strong Turbo Response
+• Motorsport Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
