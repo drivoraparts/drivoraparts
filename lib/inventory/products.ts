@@ -199,5 +199,95 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 36,
+    name: "Toyota 1UZ-FE V8 Engine",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-1uz-fe-v8",
+    price: 4999,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/1uz-fe/1.jpeg",
+    images: [
+      "/catalog/engine/japanese-legends/1uz-fe/1.jpeg",
+      "/catalog/engine/japanese-legends/1uz-fe/2.jpeg",
+      "/catalog/engine/japanese-legends/1uz-fe/3.jpeg",
+    ],
+    description: `Toyota 1UZ-FE V8 Engine
+
+The Toyota 1UZ-FE V8 is a legendary luxury performance engine known for extreme reliability, smooth V8 power delivery, and long-lasting durability.
+
+The Toyota 1UZ-FE V8 engine is one of Toyota's most durable and refined V8 powerplants ever produced. Originally designed for Lexus flagship models, it combines smooth operation with strong performance capability. Built with an aluminum block, forged internals, and precision engineering, the 1UZ-FE is widely respected for its ability to handle high mileage and performance tuning applications. Ideal for swaps, restorations, and performance builds.
+
+Specifications
+• Engine Code: 1UZ-FE
+• Configuration: V8
+• Aspiration: Naturally Aspirated
+• Fuel System: Electronic Fuel Injection
+• Factory Power: ~260 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Toyota
+
+Highlights
+• Ultra Reliable V8 Platform
+• Smooth Luxury Performance Engine
+• Strong Swap Candidate
+• Long-Term Durability
+• Toyota Engineering Excellence
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 37,
+    name: "BMW N55 Turbo Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-n55",
+    price: 5299,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/bmw/n55/1.jpeg",
+    images: [
+      "/catalog/engine/bmw/n55/1.jpeg",
+      "/catalog/engine/bmw/n55/2.webp",
+      "/catalog/engine/bmw/n55/3.jpeg",
+    ],
+    description: `BMW N55 Turbo Engine
+
+The BMW N55 Turbo Engine is a refined single-turbo inline-six engine offering smooth power delivery, efficiency, and modern BMW performance engineering.
+
+The BMW N55 Turbo Engine is the successor to the N54, featuring a single twin-scroll turbocharger design for improved efficiency and responsiveness. It delivers smooth power delivery, reduced lag, and strong tuning potential. Widely used across BMW's performance lineup, the N55 is known for reliability improvements over its predecessor while maintaining excellent aftermarket support.
+
+Specifications
+• Engine Code: N55
+• Configuration: Inline-6
+• Aspiration: Single Twin-Scroll Turbo
+• Fuel System: Direct Injection
+• Factory Power: 300-335 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Improved N54 Successor
+• Twin-Scroll Turbo Technology
+• Smooth Power Delivery
+• Strong Reliability Upgrade
+• Modern BMW Engineering
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
