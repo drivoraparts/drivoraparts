@@ -16,7 +16,11 @@ export type ProductReview = {
 export type ReviewModerationAction = "approve" | "hide" | "delete";
 
 export type ReviewSubmissionContext = {
+  userId: string;
   hasAccount: boolean;
   emailVerified: boolean;
   completedProductIds: number[];
+  paymentCompleted: boolean;
+  reviewerName: string;
+  profileImage?: string;
 };

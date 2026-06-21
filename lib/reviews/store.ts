@@ -170,10 +170,87 @@ export function canSubmitReview(
   productId: number
 ): boolean {
   return (
+    Boolean(context.userId) &&
     context.hasAccount &&
     context.emailVerified &&
+    context.paymentCompleted &&
     context.completedProductIds.includes(productId)
   );
+}
+
+export function isVerifiedPurchaseReview(
+  context: ReviewSubmissionContext,
+  productId: number
+): boolean {
+  return canSubmitReview(context, productId);
+}
+
+export function getVerifiedBuyerAvatars(
+  productId: number,
+  limit = 4
+): string[] {
+  const reviews = reviewStore.filter(
+    (review) =>
+      review.productId === productId &&
+      review.status === "approved" &&
+      review.verifiedPurchase
+  );
+
+  const avatars: string[] = [];
+  for (const review of reviews) {
+    const avatar = review.profileImage || DEFAULT_AVATAR;
+    if (!avatars.includes(avatar)) avatars.push(avatar);
+    if (avatars.length >= limit) break;
+  }
+
+  return avatars;
+}
+
+export type SubmitReviewInput = {
+  productId: number;
+  rating: number;
+  review: string;
+  context: ReviewSubmissionContext;
+};
+
+export type SubmitReviewResult =
+  | { ok: true; review: ProductReview }
+  | { ok: false; error: string };
+
+export function submitReview(input: SubmitReviewInput): SubmitReviewResult {
+  const { productId, rating, review, context } = input;
+
+  if (!canSubmitReview(context, productId)) {
+    return {
+      ok: false,
+      error:
+        "Only logged-in verified buyers with a completed purchase can submit a review.",
+    };
+  }
+
+  if (rating < 1 || rating > 5) {
+    return { ok: false, error: "Rating must be between 1 and 5 stars." };
+  }
+
+  if (!review.trim()) {
+    return { ok: false, error: "Review text is required." };
+  }
+
+  const newReview: ProductReview = {
+    id: `rev-${productId}-${Date.now()}`,
+    userId: context.userId,
+    productId,
+    rating,
+    review: review.trim(),
+    verifiedPurchase: isVerifiedPurchaseReview(context, productId),
+    createdAt: new Date().toISOString(),
+    reviewerName: context.reviewerName,
+    profileImage: context.profileImage || DEFAULT_AVATAR,
+    status: "approved",
+  };
+
+  reviewStore.unshift(newReview);
+  return { ok: true, review: newReview };
 }
 
 export function moderateReview(

@@ -1,12 +1,12 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
-import { getApprovedReviewsByProductId } from "@/lib/reviews";
-import ReviewCard from "./ReviewCard";
+import { useState, type ReactNode } from "react";
+import CustomerReviewsSection from "./CustomerReviewsSection";
 import { glassCard } from "./styles";
 
 type ProductDetailsSectionsProps = {
   productId: number;
+  rating: number;
   descriptionBody: string;
   specifications: string;
   shippingAndWarranty: string;
@@ -15,14 +15,12 @@ type ProductDetailsSectionsProps = {
 
 type SectionProps = {
   title: string;
-  countLabel?: string;
   defaultOpen?: boolean;
   children: ReactNode;
 };
 
 function CollapsibleSection({
   title,
-  countLabel,
   defaultOpen = false,
   children,
 }: SectionProps) {
@@ -38,7 +36,6 @@ function CollapsibleSection({
       >
         <span>
           {open ? "▼" : "▶"} {title}
-          {countLabel ? ` (${countLabel})` : ""}
         </span>
       </button>
       {open && <div className="details-section-body">{children}</div>}
@@ -69,19 +66,12 @@ function CollapsibleSection({
 
 export default function ProductDetailsSections({
   productId,
+  rating,
   descriptionBody,
   specifications,
   shippingAndWarranty,
   reviewCount,
 }: ProductDetailsSectionsProps) {
-  const [visibleCount, setVisibleCount] = useState(5);
-  const allReviews = useMemo(
-    () => getApprovedReviewsByProductId(productId, { offset: 0, limit: 100 }),
-    [productId]
-  );
-  const visibleReviews = allReviews.slice(0, visibleCount);
-  const hasMore = visibleCount < allReviews.length;
-
   return (
     <div className="product-details-sections">
       <CollapsibleSection title="Description" defaultOpen>
@@ -100,31 +90,11 @@ export default function ProductDetailsSections({
         </CollapsibleSection>
       )}
 
-      <CollapsibleSection
-        title="Customer Reviews"
-        countLabel={reviewCount.toLocaleString()}
-        defaultOpen={false}
-      >
-        {visibleReviews.length > 0 ? (
-          <div className="review-list">
-            {visibleReviews.map((review) => (
-              <ReviewCard key={review.id} review={review} />
-            ))}
-          </div>
-        ) : (
-          <p className="review-empty">No published reviews yet.</p>
-        )}
-
-        {hasMore && (
-          <button
-            type="button"
-            className="review-load-more"
-            onClick={() => setVisibleCount((count) => count + 5)}
-          >
-            Load More Reviews
-          </button>
-        )}
-      </CollapsibleSection>
+      <CustomerReviewsSection
+        productId={productId}
+        rating={rating}
+        reviewCount={reviewCount}
+      />
 
       <style jsx>{`
         .product-details-sections {
@@ -132,36 +102,6 @@ export default function ProductDetailsSections({
           flex-direction: column;
           gap: 12px;
           margin-top: 24px;
-        }
-
-        .review-list {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
-
-        .review-empty {
-          margin: 0;
-          font-size: 14px;
-          color: rgba(255, 255, 255, 0.55);
-        }
-
-        .review-load-more {
-          margin-top: 12px;
-          width: 100%;
-          padding: 10px 14px;
-          border-radius: 8px;
-          border: 1px solid rgba(255, 255, 255, 0.14);
-          background: rgba(255, 255, 255, 0.05);
-          color: #fff;
-          font-size: 14px;
-          font-weight: 600;
-          cursor: pointer;
-        }
-
-        .review-load-more:hover {
-          border-color: rgba(230, 0, 0, 0.35);
-          background: rgba(230, 0, 0, 0.08);
         }
       `}</style>
     </div>

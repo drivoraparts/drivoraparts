@@ -2,20 +2,12 @@
 
 import type { ProductReview } from "@/lib/reviews";
 import { DEFAULT_AVATAR } from "@/lib/reviews";
+import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
+import StarRating from "./StarRating";
 
 type ReviewCardProps = {
   review: ProductReview;
 };
-
-function StarRating({ rating }: { rating: number }) {
-  return (
-    <span className="review-card-stars" aria-label={`${rating} out of 5 stars`}>
-      {Array.from({ length: 5 }).map((_, index) => (
-        <span key={index}>{index < rating ? "★" : "☆"}</span>
-      ))}
-    </span>
-  );
-}
 
 function formatReviewDate(value: string) {
   return new Intl.DateTimeFormat("en-US", {
@@ -33,12 +25,13 @@ export default function ReviewCard({ review }: ReviewCardProps) {
       <div className="review-card-header">
         <img
           src={avatar}
-          alt={`${review.reviewerName} profile`}
+          alt=""
+          aria-hidden
           className="review-card-avatar"
         />
         <div className="review-card-meta">
           <p className="review-card-name">{review.reviewerName}</p>
-          <StarRating rating={review.rating} />
+          <StarRating rating={review.rating} size="sm" />
           {review.verifiedPurchase && (
             <span className="review-card-verified">✓ Verified Purchase</span>
           )}
@@ -71,6 +64,8 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           border: 1px solid rgba(255, 255, 255, 0.12);
           background: rgba(255, 255, 255, 0.06);
           flex-shrink: 0;
+          pointer-events: none;
+          user-select: none;
         }
 
         .review-card-meta {
@@ -84,25 +79,26 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           color: #fff;
         }
 
-        .review-card-stars {
-          display: inline-flex;
-          gap: 1px;
+        .review-card-meta :global(.star-rating) {
           margin-top: 4px;
-          color: #facc15;
-          font-size: 13px;
         }
 
         .review-card-verified {
-          display: block;
-          margin-top: 4px;
-          font-size: 11px;
-          font-weight: 600;
-          color: rgba(74, 222, 128, 0.9);
+          display: inline-block;
+          margin-top: 6px;
+          padding: 2px 8px;
+          border-radius: 999px;
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          color: ${VERIFIED_BADGE_GREEN};
+          background: rgba(34, 197, 94, 0.1);
+          border: 1px solid rgba(34, 197, 94, 0.25);
         }
 
         .review-card-date {
           display: block;
-          margin-top: 4px;
+          margin-top: 6px;
           font-size: 11px;
           color: rgba(255, 255, 255, 0.45);
         }

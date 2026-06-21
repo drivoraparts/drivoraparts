@@ -102,6 +102,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
         </h1>
 
         <ProductRatingSummary
+          productId={product.id}
           rating={catalogMeta.rating}
           reviewCount={catalogMeta.reviewCount}
         />
@@ -235,6 +236,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
 
         <ProductDetailsSections
           productId={product.id}
+          rating={catalogMeta.rating}
           descriptionBody={catalogMeta.descriptionBody}
           specifications={catalogMeta.specifications}
           shippingAndWarranty={catalogMeta.shippingAndWarranty}
