@@ -611,5 +611,118 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 44,
+    name: "BMW M57 Diesel Inline-6 Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-m57",
+    price: 4799,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/bmw/m57/1.jpg",
+    images: [
+      "/catalog/engine/bmw/m57/1.jpg",
+      "/catalog/engine/bmw/m57/2.jpg",
+      "/catalog/engine/bmw/m57/3.jpg",
+      "/catalog/engine/bmw/m57/4.jpg",
+    ],
+    description: `BMW M57 Diesel Inline-6 Engine
+
+The BMW M57 is a legendary diesel inline-six engine known for extreme torque, durability, and long-distance reliability.
+
+The BMW M57 engine is one of the most respected diesel powerplants ever built by BMW. Featuring a robust inline-six configuration, turbocharged efficiency, and exceptional torque output, the M57 is widely used in performance diesel builds, commercial applications, and long-distance touring setups. It is known for its bulletproof reliability and strong tuning capability.
+
+Specifications
+• Engine Code: M57
+• Configuration: Inline-6
+• Aspiration: Turbocharged Diesel
+• Displacement: 3.0L
+• Fuel System: Common Rail Direct Injection
+• Factory Power: 181–286 HP (variant dependent)
+• Torque: 390–580 Nm
+• Cooling: Liquid Cooled
+• Fuel Type: Diesel
+• Manufacturer: BMW
+
+Highlights
+• Legendary Diesel Reliability
+• High Torque Output
+• Long-Range Efficiency
+• Strong Tuning Potential
+• Commercial Grade Durability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 45,
+    name: "Honda B18C Type R Engine",
+    category: "engine",
+    brand: "honda",
+    platform: "honda-b18c-type-r",
+    price: 5199,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/b18c-type-r/1.jpg",
+    images: [
+      "/catalog/engine/japanese-legends/b18c-type-r/1.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/2.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/3.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/4.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/5.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/6.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/7.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/8.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/9.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/10.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/11.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/12.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/13.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/14.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/15.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/16.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/17.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/18.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/19.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/20.jpg",
+      "/catalog/engine/japanese-legends/b18c-type-r/21.jpg",
+    ],
+    description: `Honda B18C Type R Engine
+
+The Honda B18C Type R is a high-revving VTEC performance engine known for its lightweight design and legendary Type R racing heritage.
+
+The Honda B18C Type R engine is one of the most iconic performance engines in Honda's history. Found in the Integra Type R, it delivers exceptional high-RPM power, razor-sharp throttle response, and lightweight construction. It is widely respected in motorsport and tuning communities for its balance of reliability and extreme performance capability.
+
+Specifications
+• Engine Code: B18C
+• Configuration: Inline-4
+• Aspiration: Naturally Aspirated VTEC
+• Displacement: 1.8L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 197–200 HP
+• RPM Range: High-revving performance setup
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Honda
+
+Highlights
+• Legendary Type R Engine
+• High-RPM VTEC Performance
+• Lightweight Racing Platform
+• Strong Aftermarket Support
+• Motorsport Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
