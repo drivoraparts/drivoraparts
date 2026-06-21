@@ -503,5 +503,101 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 42,
+    name: "Honda K20 Performance Engine",
+    category: "engine",
+    brand: "honda",
+    platform: "honda-k20",
+    price: 4299,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/k20/1.jpg",
+    images: [
+      "/catalog/engine/japanese-legends/k20/1.jpg",
+      "/catalog/engine/japanese-legends/k20/2.webp",
+    ],
+    description: `Honda K20 Performance Engine
+
+The Honda K20 is one of the most respected naturally aspirated performance engines ever produced, known for its high-revving VTEC powerband and exceptional reliability.
+
+The Honda K20 engine has become a legend in the performance world due to its lightweight design, impressive power output, and enormous aftermarket support. Found in many Honda performance vehicles, the K20 is renowned for delivering responsive power, high RPM capability, and long-term reliability. Whether for a swap project, restoration, or track build, the K20 remains one of the most desirable Honda engines available.
+
+Specifications
+• Engine Code: K20
+• Configuration: Inline-4
+• Aspiration: Naturally Aspirated
+• Displacement: 2.0L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 197–220 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Honda
+
+Highlights
+• Legendary VTEC Performance
+• High-Revving Powerband
+• Lightweight Design
+• Massive Aftermarket Support
+• Excellent Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 43,
+    name: "Honda K24 Performance Engine",
+    category: "engine",
+    brand: "honda",
+    platform: "honda-k24",
+    price: 4799,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/k24/1.jpg",
+    images: [
+      "/catalog/engine/japanese-legends/k24/1.jpg",
+      "/catalog/engine/japanese-legends/k24/2.jpg",
+      "/catalog/engine/japanese-legends/k24/3.jpg",
+      "/catalog/engine/japanese-legends/k24/4.jpg",
+      "/catalog/engine/japanese-legends/k24/5.jpg",
+      "/catalog/engine/japanese-legends/k24/6.jpg",
+      "/catalog/engine/japanese-legends/k24/7.jpg",
+      "/catalog/engine/japanese-legends/k24/8.jpg",
+    ],
+    description: `Honda K24 Performance Engine
+
+The Honda K24 combines strong low-end torque with Honda's proven reliability, making it one of the most popular performance swap engines available.
+
+The Honda K24 is widely recognized as one of Honda's best performance engine platforms. Offering increased displacement over the K20, the K24 delivers excellent torque, strong reliability, and tremendous tuning potential. Popular in street, track, and engine swap communities worldwide, it remains a top choice for performance enthusiasts.
+
+Specifications
+• Engine Code: K24
+• Configuration: Inline-4
+• Aspiration: Naturally Aspirated
+• Displacement: 2.4L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 190–205 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Honda
+
+Highlights
+• Strong Low-End Torque
+• Excellent Swap Platform
+• Proven Honda Reliability
+• Large Aftermarket Ecosystem
+• High Performance Potential
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
