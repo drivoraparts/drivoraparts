@@ -733,6 +733,11 @@ Worldwide Shipping Available`,
     price: 5599,
     stock: true,
     condition: "brand-new",
+    horsepower: "280 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    rating: 4.8,
+    reviewCount: 76,
     location: "USA Warehouse",
     thumbnail: "/catalog/engine/japanese-legends/mazda-13b-rotary/1.webp",
     images: [
@@ -753,17 +758,17 @@ Worldwide Shipping Available`,
     ],
     description: `Mazda 13B Rotary Engine (Twin Rotor)
 
-The Mazda 13B Rotary is a legendary twin-rotor engine known for its unique rotary design, high-revving capability, and motorsport dominance.
+Legendary twin-rotor rotary engine known for high RPM performance, lightweight design, and RX-7 motorsport heritage.
 
-The Mazda 13B Rotary engine is one of the most iconic rotary engines ever built. Unlike traditional piston engines, it uses a twin-rotor Wankel design that delivers smooth, high-revving performance and exceptional power-to-weight ratio. Popular in the RX-7 and RX-8 platforms, the 13B is widely respected in drift and motorsport communities for its responsiveness and tuning potential.
+The Mazda 13B Rotary engine is one of the most iconic rotary powerplants ever built. Its unique Wankel twin-rotor design delivers smooth high-revving performance and an exceptional power-to-weight ratio. Widely used in RX-7 platforms, it remains a top choice for drift builds and motorsport enthusiasts.
 
 Specifications
 • Engine Code: 13B
-• Configuration: Twin-Rotor Rotary Engine
-• Aspiration: Naturally Aspirated / Turbo variants (platform dependent)
-• Displacement Equivalent: ~1.3L
+• Configuration: Twin-Rotor Rotary
+• Displacement Equivalent: 1.3L
+• Aspiration: Naturally Aspirated / Turbo variants
+• Factory Power: 280 HP
 • Fuel System: Electronic Fuel Injection
-• Factory Power: 180–280 HP (variant dependent)
 • Cooling: Liquid Cooled
 • Fuel Type: Premium Gasoline
 • Manufacturer: Mazda
@@ -1097,6 +1102,56 @@ Highlights
 • Advanced Cooling Systems
 • Direct Injection Technology
 • Premium Performance Build Candidate
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 53,
+    name: "BMW N63 V8 Twin Turbo Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-n63-v8",
+    price: 6999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "523 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    rating: 4.8,
+    reviewCount: 64,
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/bmw/n63/1.webp",
+    images: [
+      "/catalog/engine/bmw/n63/1.webp",
+      "/catalog/engine/bmw/n63/2.jpg",
+    ],
+    description: `BMW N63 V8 Twin Turbo Engine
+
+High-performance twin-turbo V8 engine used in BMW luxury and performance models, delivering strong torque and premium driving dynamics.
+
+The BMW N63 is a twin-turbocharged V8 engine designed for high-end BMW performance and luxury models. It combines strong torque delivery, advanced engineering, and smooth power output. It is widely used in BMW 5, 7, and X series performance variants.
+
+Specifications
+• Engine Code: N63
+• Configuration: V8
+• Aspiration: Twin Turbocharged
+• Displacement: 4.4L
+• Factory Power: 523 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Twin-Turbo V8 Performance
+• Premium BMW Engineering
+• Strong Torque Delivery
+• Luxury and Performance Platform
+• Ideal for Replacement and Builds
 
 Warranty
 24-Month Limited Warranty
