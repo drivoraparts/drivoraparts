@@ -289,5 +289,122 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 38,
+    name: "BMW S55 (M3/M4) Twin Turbo Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-s55",
+    price: 6999,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/bmw/s55/1.webp",
+    images: [
+      "/catalog/engine/bmw/s55/1.webp",
+      "/catalog/engine/bmw/s55/2.webp",
+      "/catalog/engine/bmw/s55/3.webp",
+      "/catalog/engine/bmw/s55/4.webp",
+      "/catalog/engine/bmw/s55/5.webp",
+      "/catalog/engine/bmw/s55/6.webp",
+      "/catalog/engine/bmw/s55/7.webp",
+      "/catalog/engine/bmw/s55/8.webp",
+      "/catalog/engine/bmw/s55/9.webp",
+      "/catalog/engine/bmw/s55/10.webp",
+      "/catalog/engine/bmw/s55/11.webp",
+      "/catalog/engine/bmw/s55/12.webp",
+      "/catalog/engine/bmw/s55/13.webp",
+    ],
+    description: `BMW S55 (M3/M4) Twin Turbo Engine
+
+The BMW S55 is a high-performance 3.0L twin-turbo inline-six engine used in the M3 and M4 platforms, known for aggressive power delivery and motorsport engineering.
+
+The BMW S55 engine is a motorsport-derived 3.0L twin-turbo inline-six designed for the BMW M3 and M4 (F80/F82/F83). It delivers aggressive throttle response, high-performance cooling systems, and strong tuning potential. Built as an evolution of the N54/N55 platform, the S55 is widely respected in the performance tuning world for its ability to handle high horsepower builds while maintaining factory-level refinement.
+
+Specifications
+• Engine Code: S55
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Displacement: 3.0L
+• Fuel System: Direct Injection
+• Factory Power: 425–503 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• BMW M Performance Engine
+• Motorsport Derived Platform
+• Twin Turbo High Output Design
+• Strong Aftermarket Support
+• Track Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 39,
+    name: "Nissan RB26DETT Skyline GTR Engine",
+    category: "engine",
+    brand: "nissan",
+    platform: "rb26dett",
+    price: 8999,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/japanese-legends/rb26dett/1.webp",
+    images: [
+      "/catalog/engine/japanese-legends/rb26dett/1.webp",
+      "/catalog/engine/japanese-legends/rb26dett/2.webp",
+      "/catalog/engine/japanese-legends/rb26dett/3.webp",
+      "/catalog/engine/japanese-legends/rb26dett/4.webp",
+      "/catalog/engine/japanese-legends/rb26dett/5.webp",
+      "/catalog/engine/japanese-legends/rb26dett/6.webp",
+      "/catalog/engine/japanese-legends/rb26dett/7.webp",
+      "/catalog/engine/japanese-legends/rb26dett/8.webp",
+      "/catalog/engine/japanese-legends/rb26dett/9.webp",
+      "/catalog/engine/japanese-legends/rb26dett/10.webp",
+      "/catalog/engine/japanese-legends/rb26dett/11.webp",
+      "/catalog/engine/japanese-legends/rb26dett/12.webp",
+      "/catalog/engine/japanese-legends/rb26dett/13.webp",
+      "/catalog/engine/japanese-legends/rb26dett/14.webp",
+      "/catalog/engine/japanese-legends/rb26dett/15.webp",
+      "/catalog/engine/japanese-legends/rb26dett/16.webp",
+      "/catalog/engine/japanese-legends/rb26dett/17.webp",
+      "/catalog/engine/japanese-legends/rb26dett/18.webp",
+      "/catalog/engine/japanese-legends/rb26dett/19.webp",
+    ],
+    description: `Nissan RB26DETT Skyline GTR Engine
+
+The legendary Nissan RB26DETT is the iconic Skyline GT-R engine, famous for its twin turbo performance, durability, and tuning dominance.
+
+The Nissan RB26DETT engine is one of the most iconic Japanese performance engines ever created. Originally powering the Skyline GT-R (R32, R33, R34), it features a twin-turbo inline-six layout built for high-performance and racing durability. Known globally for its tuning potential and strength under boost, the RB26DETT remains a top choice for performance builds and engine swaps.
+
+Specifications
+• Engine Code: RB26DETT
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 276–320 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Nissan
+
+Highlights
+• Skyline GT-R Legendary Engine
+• Twin Turbo Performance Platform
+• Extreme Tuning Potential
+• Motorsport Heritage
+• Iron Block Durability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
