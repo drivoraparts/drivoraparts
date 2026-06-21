@@ -11,6 +11,8 @@ export {
   canSubmitReview,
   getApprovedReviewCount,
   getApprovedReviewsByProductId,
+  getAverageProductRating,
+  getProductReviewAggregate,
   getReviewStoreSnapshot,
   getVerifiedBuyerAvatars,
   isVerifiedPurchaseReview,

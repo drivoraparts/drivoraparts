@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import {
+  getApprovedReviewCount,
   getApprovedReviewsByProductId,
+  getAverageProductRating,
   type ProductReview,
 } from "@/lib/reviews";
 import ReviewCard from "./ReviewCard";
@@ -18,21 +20,31 @@ type CustomerReviewsSectionProps = {
 
 export default function CustomerReviewsSection({
   productId,
-  rating,
-  reviewCount,
+  rating: initialRating,
+  reviewCount: initialReviewCount,
 }: CustomerReviewsSectionProps) {
   const [expanded, setExpanded] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [visibleCount, setVisibleCount] = useState(5);
   const [reviews, setReviews] = useState<ProductReview[]>([]);
+  const [reviewCount, setReviewCount] = useState(initialReviewCount);
+  const [rating, setRating] = useState(initialRating);
+  const hasReviews = reviewCount > 0;
+
+  useEffect(() => {
+    setReviewCount(initialReviewCount);
+    setRating(initialRating);
+  }, [initialReviewCount, initialRating]);
 
   useEffect(() => {
     if (!expanded || loaded) return;
 
     const timer = window.setTimeout(() => {
       setReviews(
-        getApprovedReviewsByProductId(productId, { offset: 0, limit: 100 })
+        getApprovedReviewsByProductId(productId, { offset: 0, limit: 500 })
       );
+      setReviewCount(getApprovedReviewCount(productId));
+      setRating(getAverageProductRating(productId));
       setLoaded(true);
     }, 0);
 
@@ -44,8 +56,18 @@ export default function CustomerReviewsSection({
 
   const handleReviewSubmitted = (review: ProductReview) => {
     setReviews((current) => [review, ...current]);
+    setReviewCount((count) => count + 1);
+    setRating((currentRating) => {
+      const nextCount = reviewCount + 1;
+      const total = currentRating * reviewCount + review.rating;
+      return Math.round((total / nextCount) * 10) / 10;
+    });
     setLoaded(true);
   };
+
+  const sectionTitle = hasReviews
+    ? `Customer Reviews (${reviewCount.toLocaleString()})`
+    : "Customer Reviews";
 
   return (
     <section style={{ ...glassCard, padding: "14px" }}>
@@ -56,23 +78,32 @@ export default function CustomerReviewsSection({
         onClick={() => setExpanded((value) => !value)}
       >
         <span className="reviews-toggle-title">
-          {expanded ? "▼" : "▶"} Customer Reviews ({reviewCount.toLocaleString()})
+          {expanded ? "▼" : "▶"} {sectionTitle}
         </span>
-        {!expanded && (
+        {!expanded && hasReviews && (
           <span className="reviews-toggle-summary">
             <StarRating rating={rating} size="sm" showNumeric />
           </span>
+        )}
+        {!expanded && !hasReviews && (
+          <span className="reviews-toggle-empty">No reviews yet</span>
         )}
       </button>
 
       {expanded && (
         <div className="reviews-panel">
-          <div className="reviews-summary">
-            <StarRating rating={rating} showNumeric />
-            <span className="reviews-summary-count">
-              {reviewCount.toLocaleString()} Reviews
-            </span>
-          </div>
+          {hasReviews ? (
+            <div className="reviews-summary">
+              <StarRating rating={rating} showNumeric />
+              <span className="reviews-summary-count">
+                {reviewCount.toLocaleString()} Reviews
+              </span>
+            </div>
+          ) : (
+            <p className="review-empty">
+              Be the first to review this product.
+            </p>
+          )}
 
           <ReviewWriteForm
             productId={productId}
@@ -125,6 +156,13 @@ export default function CustomerReviewsSection({
         .reviews-toggle-summary {
           display: block;
           margin-top: 8px;
+        }
+
+        .reviews-toggle-empty {
+          display: block;
+          margin-top: 8px;
+          font-size: 13px;
+          color: rgba(255, 255, 255, 0.55);
         }
 
         .reviews-panel {

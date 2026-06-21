@@ -1,3 +1,4 @@
+import { generateEngineCatalogReviews, generateReviewsForProduct } from "./generator";
 import type {
   ProductReview,
   ReviewModerationAction,
@@ -6,147 +7,17 @@ import type {
 
 const DEFAULT_AVATAR = "/catalog/avatars/default.svg";
 
-const seedReviews: ProductReview[] = [
-  {
-    id: "rev-s58-1",
-    userId: "user-1042",
-    productId: 40,
-    rating: 5,
-    review:
-      "Engine arrived exactly as described. Packaging was professional and the unit was clean, complete, and ready for install.",
-    verifiedPurchase: true,
-    createdAt: "2026-02-14T10:20:00.000Z",
-    reviewerName: "John M.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-s58-2",
-    userId: "user-2218",
-    productId: 40,
-    rating: 5,
-    review:
-      "Outstanding communication and fast logistics. The S58 matched the listing photos and fired up without issue.",
-    verifiedPurchase: true,
-    createdAt: "2026-01-28T16:05:00.000Z",
-    reviewerName: "Daniel R.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-2jz-1",
-    userId: "user-3301",
-    productId: 34,
-    rating: 5,
-    review:
-      "Legendary platform delivered in premium condition. Exactly what you expect from a top-tier marketplace listing.",
-    verifiedPurchase: true,
-    createdAt: "2026-02-02T09:15:00.000Z",
-    reviewerName: "Marcus T.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-2jz-2",
-    userId: "user-4410",
-    productId: 34,
-    rating: 5,
-    review:
-      "Verified purchase experience from checkout to delivery. Engine presentation and documentation were excellent.",
-    verifiedPurchase: true,
-    createdAt: "2026-01-19T13:40:00.000Z",
-    reviewerName: "Alex P.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-n54-1",
-    userId: "user-5521",
-    productId: 1,
-    rating: 5,
-    review:
-      "Clean N54 unit with strong build quality. Shipping was tracked end-to-end and arrived on schedule.",
-    verifiedPurchase: true,
-    createdAt: "2026-02-08T11:00:00.000Z",
-    reviewerName: "Chris L.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-rb26-1",
-    userId: "user-6632",
-    productId: 39,
-    rating: 5,
-    review:
-      "RB26 arrived securely crated and matched the premium listing details. Very confident purchase.",
-    verifiedPurchase: true,
-    createdAt: "2026-01-30T08:50:00.000Z",
-    reviewerName: "Kenji S.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-k20-1",
-    userId: "user-7743",
-    productId: 42,
-    rating: 5,
-    review:
-      "Perfect swap candidate. Condition was brand new as advertised and the VTEC platform is flawless.",
-    verifiedPurchase: true,
-    createdAt: "2026-02-10T15:25:00.000Z",
-    reviewerName: "Tyler W.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-k24-1",
-    userId: "user-8854",
-    productId: 43,
-    rating: 5,
-    review:
-      "Strong low-end torque and excellent presentation. Verified buyer process gave me full confidence.",
-    verifiedPurchase: true,
-    createdAt: "2026-02-05T12:10:00.000Z",
-    reviewerName: "Jordan H.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-s58-3",
-    userId: "user-9965",
-    productId: 40,
-    rating: 4,
-    review:
-      "Great engine and professional handling. Install scheduling took an extra day but overall very satisfied.",
-    verifiedPurchase: true,
-    createdAt: "2026-01-12T18:30:00.000Z",
-    reviewerName: "Ethan B.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-  {
-    id: "rev-2jz-3",
-    userId: "user-1076",
-    productId: 34,
-    rating: 5,
-    review:
-      "One of the cleanest 2JZ listings I have seen. DrivoraParts checkout and delivery were seamless.",
-    verifiedPurchase: true,
-    createdAt: "2026-01-08T07:45:00.000Z",
-    reviewerName: "Ryan C.",
-    profileImage: DEFAULT_AVATAR,
-    status: "approved",
-  },
-];
+let reviewStore: ProductReview[] = generateEngineCatalogReviews();
 
-let reviewStore: ProductReview[] = [...seedReviews];
+function ensureSeededReviews(productId: number): void {
+  const hasReviews = reviewStore.some((review) => review.productId === productId);
+  if (!hasReviews) {
+    reviewStore.push(...generateReviewsForProduct(productId));
+  }
+}
 
-export function getApprovedReviewsByProductId(
-  productId: number,
-  options?: { offset?: number; limit?: number }
-): ProductReview[] {
-  const offset = options?.offset ?? 0;
-  const limit = options?.limit ?? 5;
+function getApprovedReviews(productId: number): ProductReview[] {
+  ensureSeededReviews(productId);
 
   return reviewStore
     .filter(
@@ -155,14 +26,40 @@ export function getApprovedReviewsByProductId(
     .sort(
       (a, b) =>
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-    )
-    .slice(offset, offset + limit);
+    );
+}
+
+export function getApprovedReviewsByProductId(
+  productId: number,
+  options?: { offset?: number; limit?: number }
+): ProductReview[] {
+  const offset = options?.offset ?? 0;
+  const limit = options?.limit ?? 5;
+
+  return getApprovedReviews(productId).slice(offset, offset + limit);
 }
 
 export function getApprovedReviewCount(productId: number): number {
-  return reviewStore.filter(
-    (review) => review.productId === productId && review.status === "approved"
-  ).length;
+  return getApprovedReviews(productId).length;
+}
+
+export function getAverageProductRating(productId: number): number {
+  const reviews = getApprovedReviews(productId);
+  if (reviews.length === 0) return 0;
+
+  const total = reviews.reduce((sum, review) => sum + review.rating, 0);
+  return Math.round((total / reviews.length) * 10) / 10;
+}
+
+export function getProductReviewAggregate(productId: number): {
+  rating: number;
+  reviewCount: number;
+} {
+  const reviewCount = getApprovedReviewCount(productId);
+  return {
+    reviewCount,
+    rating: reviewCount > 0 ? getAverageProductRating(productId) : 0,
+  };
 }
 
 export function canSubmitReview(
@@ -189,11 +86,8 @@ export function getVerifiedBuyerAvatars(
   productId: number,
   limit = 4
 ): string[] {
-  const reviews = reviewStore.filter(
-    (review) =>
-      review.productId === productId &&
-      review.status === "approved" &&
-      review.verifiedPurchase
+  const reviews = getApprovedReviews(productId).filter(
+    (review) => review.verifiedPurchase
   );
 
   const avatars: string[] = [];
@@ -237,7 +131,7 @@ export function submitReview(input: SubmitReviewInput): SubmitReviewResult {
   }
 
   const newReview: ProductReview = {
-    id: `rev-${productId}-${Date.now()}`,
+    id: `rev-live-${productId}-${Date.now()}`,
     userId: context.userId,
     productId,
     rating,

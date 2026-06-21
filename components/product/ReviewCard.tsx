@@ -1,7 +1,6 @@
 "use client";
 
 import type { ProductReview } from "@/lib/reviews";
-import { DEFAULT_AVATAR } from "@/lib/reviews";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
 import StarRating from "./StarRating";
 
@@ -17,18 +16,34 @@ function formatReviewDate(value: string) {
   }).format(new Date(value));
 }
 
+function getInitials(name: string): string {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? "")
+    .join("");
+}
+
 export default function ReviewCard({ review }: ReviewCardProps) {
-  const avatar = review.profileImage || DEFAULT_AVATAR;
+  const avatar = review.profileImage;
+  const initials = getInitials(review.reviewerName);
 
   return (
     <article className="review-card">
       <div className="review-card-header">
-        <img
-          src={avatar}
-          alt=""
-          aria-hidden
-          className="review-card-avatar"
-        />
+        {avatar ? (
+          <img
+            src={avatar}
+            alt=""
+            aria-hidden
+            className="review-card-avatar"
+          />
+        ) : (
+          <div className="review-card-avatar review-card-avatar-fallback" aria-hidden>
+            {initials}
+          </div>
+        )}
         <div className="review-card-meta">
           <p className="review-card-name">{review.reviewerName}</p>
           <StarRating rating={review.rating} size="sm" />
@@ -66,6 +81,15 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           flex-shrink: 0;
           pointer-events: none;
           user-select: none;
+        }
+
+        .review-card-avatar-fallback {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          font-weight: 700;
+          color: rgba(255, 255, 255, 0.82);
         }
 
         .review-card-meta {

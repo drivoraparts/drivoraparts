@@ -3,6 +3,7 @@ import {
   getConditionDisplay,
   resolveProductCondition,
 } from "./condition";
+import { getProductReviewAggregate } from "@/lib/reviews";
 
 export type ProductCatalogMeta = {
   horsepower?: string;
@@ -14,18 +15,6 @@ export type ProductCatalogMeta = {
   descriptionBody: string;
   specifications: string;
   shippingAndWarranty: string;
-};
-
-const SEED_RATINGS: Record<
-  number,
-  { rating: number; reviewCount: number }
-> = {
-  1: { rating: 4.8, reviewCount: 97 },
-  34: { rating: 4.9, reviewCount: 143 },
-  39: { rating: 4.9, reviewCount: 121 },
-  40: { rating: 4.9, reviewCount: 86 },
-  42: { rating: 4.8, reviewCount: 74 },
-  43: { rating: 4.8, reviewCount: 68 },
 };
 
 const SECTION_HEADERS = [
@@ -130,13 +119,11 @@ export function resolveProductHorsepower(product: Product): string | undefined {
 }
 
 export function resolveProductRating(product: Product): number {
-  if (typeof product.rating === "number") return product.rating;
-  return SEED_RATINGS[product.id]?.rating ?? 4.8;
+  return getProductReviewAggregate(product.id).rating;
 }
 
 export function resolveProductReviewCount(product: Product): number {
-  if (typeof product.reviewCount === "number") return product.reviewCount;
-  return SEED_RATINGS[product.id]?.reviewCount ?? 0;
+  return getProductReviewAggregate(product.id).reviewCount;
 }
 
 export function getProductCatalogMeta(product: Product): ProductCatalogMeta {

@@ -17,25 +17,58 @@ export default function ProductRatingSummary({
   reviewCount,
 }: ProductRatingSummaryProps) {
   const [avatars, setAvatars] = useState<string[]>([]);
+  const hasReviews = reviewCount > 0;
 
   useEffect(() => {
-    const timer = window.setTimeout(() => {
-      const buyerAvatars = getVerifiedBuyerAvatars(productId, 4);
-      if (buyerAvatars.length > 0) {
-        setAvatars(buyerAvatars);
-        return;
-      }
+    if (!hasReviews) {
+      setAvatars([]);
+      return;
+    }
 
-      if (reviewCount > 0) {
-        setAvatars(Array.from({ length: 4 }, () => DEFAULT_AVATAR));
-      }
+    const timer = window.setTimeout(() => {
+      setAvatars(getVerifiedBuyerAvatars(productId, 4));
     }, 0);
 
     return () => window.clearTimeout(timer);
-  }, [productId, reviewCount]);
+  }, [productId, hasReviews]);
+
+  if (!hasReviews) {
+    return (
+      <div className="product-rating-summary product-rating-summary--empty">
+        <p className="product-rating-empty">No reviews yet</p>
+        <p className="product-rating-cta">Be the first to review this product</p>
+
+        <style jsx>{`
+          .product-rating-summary {
+            margin: 0 0 12px;
+            padding: 12px 14px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+          }
+
+          .product-rating-empty {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.82);
+          }
+
+          .product-rating-cta {
+            margin: 6px 0 0;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.55);
+          }
+        `}</style>
+      </div>
+    );
+  }
 
   return (
-    <div className="product-rating-summary" aria-label={`Rated ${rating} out of 5`}>
+    <div
+      className="product-rating-summary"
+      aria-label={`Rated ${rating} out of 5 from ${reviewCount} reviews`}
+    >
       <StarRating rating={rating} showNumeric />
       <p className="product-rating-count">
         {reviewCount.toLocaleString()} Reviews
