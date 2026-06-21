@@ -781,5 +781,328 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 47,
+    name: "Dodge Hellcat 6.2L Supercharged HEMI V8",
+    category: "engine",
+    brand: "dodge",
+    platform: "dodge-hellcat-6-2",
+    price: 14999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "717 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/american-v8/dodge-hellcat-6-2/1.jpg",
+    images: ["/catalog/engine/american-v8/dodge-hellcat-6-2/1.jpg"],
+    description: `Dodge Hellcat 6.2L Supercharged HEMI V8
+
+Factory-supercharged 6.2L HEMI V8 delivering extreme horsepower and legendary American muscle performance.
+
+The Dodge Hellcat 6.2L Supercharged HEMI V8 is one of the most powerful production V8 engines ever built. Featuring forged internals, a factory supercharger, and massive power potential, it has become a favorite for muscle car restorations, custom builds, drag racing, and high-performance swaps.
+
+Specifications
+• Engine Code: Hellcat HEMI
+• Configuration: V8
+• Displacement: 6.2L
+• Aspiration: Supercharged
+• Factory Power: 717 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Dodge
+
+Highlights
+• Factory Supercharged HEMI Platform
+• Extreme Horsepower Output
+• Forged Internal Components
+• Legendary American Muscle Performance
+• Ideal for Restorations and Swaps
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 48,
+    name: "Ford Coyote 5.0L V8 Engine",
+    category: "engine",
+    brand: "ford",
+    platform: "ford-coyote-5-0",
+    price: 8499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "460 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/american-v8/ford-coyote-5-0/1.jpg",
+    images: [
+      "/catalog/engine/american-v8/ford-coyote-5-0/1.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/2.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/3.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/4.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/5.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/6.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/7.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/8.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/9.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/10.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/11.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/12.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/13.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/14.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/15.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/16.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/17.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/18.jpg",
+      "/catalog/engine/american-v8/ford-coyote-5-0/19.jpg",
+    ],
+    description: `Ford Coyote 5.0L V8 Engine
+
+Modern DOHC V8 delivering excellent reliability, power, and swap versatility.
+
+The Ford Coyote 5.0L V8 is one of the most popular modern V8 platforms available. Known for its high-revving capability, reliability, and strong aftermarket support, the Coyote has become a leading choice for performance swaps and custom builds.
+
+Specifications
+• Engine Code: Coyote
+• Configuration: V8
+• Displacement: 5.0L
+• Aspiration: Naturally Aspirated
+• Factory Power: 460 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Ford
+
+Highlights
+• Modern DOHC V8 Architecture
+• High-Revving Performance
+• Strong Swap Compatibility
+• Extensive Aftermarket Support
+• Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 49,
+    name: "Chevrolet LS3 V8 Engine",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "ls3",
+    price: 7999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "430 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/american-v8/ls3/1.jpg",
+    images: [
+      "/catalog/engine/american-v8/ls3/1.jpg",
+      "/catalog/engine/american-v8/ls3/2.jpg",
+      "/catalog/engine/american-v8/ls3/3.jpg",
+      "/catalog/engine/american-v8/ls3/4.jpg",
+      "/catalog/engine/american-v8/ls3/5.jpg",
+      "/catalog/engine/american-v8/ls3/6.jpg",
+    ],
+    description: `Chevrolet LS3 V8 Engine
+
+Legendary LS-series V8 with unmatched swap compatibility and aftermarket support.
+
+The Chevrolet LS3 has earned its reputation as one of the greatest swap engines ever produced. Its compact design, strong power output, reliability, and extensive aftermarket ecosystem make it ideal for street, track, and custom projects.
+
+Specifications
+• Engine Code: LS3
+• Configuration: V8
+• Displacement: 6.2L
+• Aspiration: Naturally Aspirated
+• Factory Power: 430 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Legendary LS Swap Platform
+• Compact Lightweight Design
+• Massive Aftermarket Ecosystem
+• Proven Street and Track Reliability
+• Ideal for Custom Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 50,
+    name: "Chevrolet LS7 V8 Engine",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "ls7",
+    price: 12499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "505 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/american-v8/ls7/1.jpg",
+    images: [
+      "/catalog/engine/american-v8/ls7/1.jpg",
+      "/catalog/engine/american-v8/ls7/2.jpg",
+      "/catalog/engine/american-v8/ls7/3.jpg",
+      "/catalog/engine/american-v8/ls7/4.jpg",
+      "/catalog/engine/american-v8/ls7/5.jpg",
+      "/catalog/engine/american-v8/ls7/6.jpg",
+      "/catalog/engine/american-v8/ls7/7.jpg",
+      "/catalog/engine/american-v8/ls7/8.jpg",
+      "/catalog/engine/american-v8/ls7/9.jpg",
+      "/catalog/engine/american-v8/ls7/10.jpg",
+    ],
+    description: `Chevrolet LS7 V8 Engine
+
+High-performance 7.0L Corvette Z06 V8 with race-inspired engineering.
+
+The LS7 is Chevrolet's iconic naturally aspirated performance V8. Originally developed for the Corvette Z06, it features lightweight internals, exceptional airflow, and massive displacement for outstanding performance.
+
+Specifications
+• Engine Code: LS7
+• Configuration: V8
+• Displacement: 7.0L
+• Aspiration: Naturally Aspirated
+• Factory Power: 505 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Corvette Z06 Performance Heritage
+• Race-Inspired Engineering
+• Large Displacement NA Power
+• Lightweight Internal Components
+• Exceptional Airflow Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 51,
+    name: "Chevrolet LT1 Corvette V8 Engine",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "lt1-lt4",
+    price: 9499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "455 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/american-v8/lt1/1.jpg",
+    images: [
+      "/catalog/engine/american-v8/lt1/1.jpg",
+      "/catalog/engine/american-v8/lt1/2.jpg",
+      "/catalog/engine/american-v8/lt1/3.jpg",
+      "/catalog/engine/american-v8/lt1/4.jpg",
+      "/catalog/engine/american-v8/lt1/5.jpg",
+    ],
+    description: `Chevrolet LT1 Corvette V8 Engine
+
+Modern direct-injected Corvette V8 offering strong power and efficiency.
+
+The LT1 is Chevrolet's next-generation small-block V8 platform. Featuring direct injection and modern engine management technology, it combines strong performance with everyday reliability.
+
+Specifications
+• Engine Code: LT1
+• Configuration: V8
+• Displacement: 6.2L
+• Aspiration: Naturally Aspirated
+• Factory Power: 455 HP
+• Fuel System: Direct Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Modern Direct Injection Platform
+• Corvette Performance Engineering
+• Strong Power and Efficiency
+• Advanced Engine Management
+• Reliable Daily and Track Use
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 52,
+    name: "Chevrolet LT4 Supercharged Corvette V8",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "lt1-lt4",
+    price: 15999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "650 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/catalog/engine/american-v8/lt4/1.jpg",
+    images: [
+      "/catalog/engine/american-v8/lt4/1.jpg",
+      "/catalog/engine/american-v8/lt4/2.jpg",
+      "/catalog/engine/american-v8/lt4/3.jpg",
+      "/catalog/engine/american-v8/lt4/4.jpg",
+      "/catalog/engine/american-v8/lt4/5.jpg",
+      "/catalog/engine/american-v8/lt4/6.jpg",
+      "/catalog/engine/american-v8/lt4/7.jpg",
+      "/catalog/engine/american-v8/lt4/8.jpg",
+      "/catalog/engine/american-v8/lt4/9.jpg",
+      "/catalog/engine/american-v8/lt4/10.jpg",
+      "/catalog/engine/american-v8/lt4/11.jpg",
+      "/catalog/engine/american-v8/lt4/12.jpg",
+      "/catalog/engine/american-v8/lt4/13.jpg",
+      "/catalog/engine/american-v8/lt4/14.jpg",
+    ],
+    description: `Chevrolet LT4 Supercharged Corvette V8
+
+Factory-supercharged Corvette V8 engineered for track-level performance.
+
+The LT4 combines direct injection, advanced cooling systems, and factory supercharging to produce incredible horsepower and torque. It is one of the most sought-after modern V8 engines for premium performance builds.
+
+Specifications
+• Engine Code: LT4
+• Configuration: Supercharged V8
+• Displacement: 6.2L
+• Aspiration: Supercharged
+• Factory Power: 650 HP
+• Fuel System: Direct Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Factory Supercharged Corvette Platform
+• Track-Level Performance Engineering
+• Advanced Cooling Systems
+• Direct Injection Technology
+• Premium Performance Build Candidate
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
