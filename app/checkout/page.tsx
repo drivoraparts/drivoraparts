@@ -50,6 +50,11 @@ export default function CheckoutPage() {
         body: JSON.stringify({
           items: cart.map((item) => ({
             productId: item.id,
+            name: item.name,
+            price: item.price,
+            image: item.image,
+            category: item.category,
+            brand: item.brand,
             quantity: item.quantity,
           })),
           customer: {

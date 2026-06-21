@@ -7,6 +7,16 @@ export type CartItem = {
   quantity: number;
 };
 
+export type OrderItem = {
+  productId: number;
+  name: string;
+  price: number;
+  image: string;
+  category: string;
+  brand?: string;
+  quantity: number;
+};
+
 export type OrderStatus =
   | "pending"
   | "paid"
@@ -17,7 +27,7 @@ export type OrderStatus =
 
 export type Order = {
   id: string;
-  items: CartItem[];
+  items: OrderItem[];
   total: number;
   status: OrderStatus;
   createdAt: number;
