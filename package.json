@@ -8,12 +8,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "pages:build": "npx opennextjs-cloudflare build",
+    "verify:cloudflare": "node scripts/verify-cloudflare-config.mjs",
+    "verify:opennext": "node scripts/verify-opennext-output.mjs",
+    "pages:build": "node scripts/verify-cloudflare-config.mjs && npx opennextjs-cloudflare build && node scripts/verify-opennext-output.mjs",
     "pages:deploy": "npx opennextjs-cloudflare deploy",
-    "open-next:build": "npx opennextjs-cloudflare build",
-    "preview:cloudflare": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare preview",
-    "deploy:cloudflare": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare deploy",
-    "upload:cloudflare": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare upload",
+    "open-next:build": "npm run pages:build",
+    "preview:cloudflare": "npm run pages:build && npx opennextjs-cloudflare preview",
+    "deploy:cloudflare": "npm run pages:build && npx opennextjs-cloudflare deploy",
+    "upload:cloudflare": "npm run pages:build && npx opennextjs-cloudflare upload",
     "start": "next start"
   },
   "dependencies": {

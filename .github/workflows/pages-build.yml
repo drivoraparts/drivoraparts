@@ -5,9 +5,13 @@ on:
     branches: [main]
   workflow_dispatch:
 
+concurrency:
+  group: cloudflare-pages
+  cancel-in-progress: true
+
 jobs:
   build-and-deploy:
-    name: OpenNext Cloudflare build
+    name: OpenNext Cloudflare (production)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,25 +21,23 @@ jobs:
           node-version: "20"
           cache: npm
 
-      - name: Install dependencies
+      - name: Install dependencies (deterministic)
         run: npm ci
+
+      - name: Pre-build verification
+        run: npm run verify:cloudflare
 
       - name: Build for Cloudflare (OpenNext)
         run: npm run pages:build
 
-      - name: Verify OpenNext output
-        run: |
-          test -f .open-next/worker.js
-          test -d .open-next/assets
-          echo "OpenNext build output ready"
-
       - uses: actions/upload-artifact@v4
         with:
-          name: pages-build-opennext
+          name: open-next-build
           path: .open-next
+          retention-days: 7
 
-      - name: Deploy to Cloudflare (OpenNext Worker)
+      - name: Deploy to Cloudflare
         if: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: npx opennextjs-cloudflare deploy
+        run: npm run pages:deploy

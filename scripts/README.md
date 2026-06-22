@@ -1,11 +1,11 @@
 # Scripts
 
-## Safe
+## Production (Cloudflare / OpenNext)
 
-- `remove-edge-runtime-ui.mjs` — one-time helper to strip obsolete `runtime = 'edge'` exports (OpenNext uses Node runtime on Workers)
+- `verify-cloudflare-config.mjs` — pre-build guard (no next-on-pages, no edge runtime in `app/`)
+- `verify-opennext-output.mjs` — post-build guard (`.open-next/worker.js` + assets exist)
+- `remove-edge-runtime-ui.mjs` — one-time helper to strip obsolete edge exports
 
-## Removed (do not restore)
+Run via `npm run verify:cloudflare` or automatically in `npm run pages:build`.
 
-Legacy `@cloudflare/next-on-pages` helpers were deleted — they injected edge runtime and break OpenNext builds.
-
-Production deploy: see `docs/CLOUDFLARE-DEPLOY.md`.
+Deploy guide: `docs/CLOUDFLARE-DEPLOY.md`.

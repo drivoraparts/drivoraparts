@@ -30,13 +30,14 @@ npm run pages:deploy
 
 Set `CLOUDFLARE_API_TOKEN` in CI or dashboard.
 
-## Repository rules (already enforced)
+## Repository rules (enforced in CI)
 
 - ✅ `@opennextjs/cloudflare` only — no `@cloudflare/next-on-pages`
-- ✅ No `export const runtime = "edge"` in `app/` routes
+- ✅ **No** `export const runtime = "edge"` in `app/` (OpenNext uses Node on Workers)
 - ✅ Build output: `.open-next/worker.js` + `.open-next/assets/`
-- ✅ `wrangler.jsonc` with `nodejs_compat`
-- ✅ `next.config.ts`: `images.unoptimized: true` (no `output: "standalone"` — OpenNext transforms the default Next build)
+- ✅ `npm run verify:cloudflare` runs before every `pages:build`
+- ✅ `npm run verify:opennext` runs after every `pages:build`
+- ❌ **Never** use `.vercel/output/static` (next-on-pages legacy)
 
 ## Local verification (match Cloudflare)
 
