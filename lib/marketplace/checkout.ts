@@ -1,55 +1,7 @@
-import { trackEvent } from "@/lib/analytics/tracker";
-import { clearCart } from "./cart";
-import { reduceStock } from "./stock";
-import { addOrder } from "./orders";
-import type { Order, OrderItem } from "./types";
+export { processCheckout, markOrderPaid, handlePaidWebhook } from "@/lib/checkout/service";
 
-function calculateTotal(items: OrderItem[]): number {
-  return items.reduce((sum, item) => sum + item.price * item.quantity, 0);
-}
-
-export const createOrder = (items: OrderItem[]): Order | null => {
-  if (!items.length) return null;
-
-  const snapshotItems: OrderItem[] = items.map((item) => ({
-    productId: item.productId,
-    name: item.name,
-    price: item.price,
-    image: item.image,
-    category: item.category,
-    brand: item.brand,
-    quantity: item.quantity,
-  }));
-
-  const total = calculateTotal(snapshotItems);
-
-  const order: Order = {
-    id: crypto.randomUUID(),
-    items: snapshotItems,
-    total,
-    status: "pending",
-    createdAt: Date.now(),
-  };
-
-  addOrder(order);
-
-  trackEvent("order_completed", {
-    orderId: order.id,
-    total: order.total,
-    itemCount: snapshotItems.reduce((sum, item) => sum + item.quantity, 0),
-    products: snapshotItems.map((item) => ({
-      productId: item.productId,
-      productName: item.name,
-      quantity: item.quantity,
-      price: item.price,
-    })),
-  });
-
-  snapshotItems.forEach((item) => reduceStock(item.productId, item.quantity));
-
-  clearCart();
-
-  return order;
+export const createOrder = (): never => {
+  throw new Error("Use processCheckout() from @/lib/checkout/service");
 };
 
-export { getOrders, getOrderById } from "./orders";
+export { getOrders, getOrderById, updateOrderStatus } from "./orders";

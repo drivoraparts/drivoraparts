@@ -1,0 +1,175 @@
+import { getCryptomusMerchantId, getCryptomusPaymentKey, getSiteUrl } from "@/lib/env";
+import { md5 } from "@/lib/cryptomus/md5";
+import { logActivity } from "@/lib/monitoring/activity";
+
+const CRYPTOMUS_API = "https://api.cryptomus.com/v1/payment";
+
+export type CryptomusInvoiceInput = {
+  orderId: string;
+  amount: number;
+  currency?: string;
+  callbackUrl: string;
+  successUrl: string;
+  failUrl: string;
+};
+
+export type CryptomusInvoiceResult =
+  | {
+      ok: true;
+      paymentUrl: string;
+      transactionId: string;
+      raw: Record<string, unknown>;
+    }
+  | {
+      ok: false;
+      error: string;
+      raw?: Record<string, unknown>;
+    };
+
+export type CryptomusWebhookPayload = {
+  uuid?: string;
+  order_id?: string;
+  status?: string;
+  payment_status?: string;
+  amount?: string;
+  currency?: string;
+};
+
+function signPayload(payload: string, apiKey: string): string {
+  return md5(`${btoa(payload)}${apiKey}`);
+}
+
+export function isCryptomusConfigured(): boolean {
+  return Boolean(getCryptomusMerchantId() && getCryptomusPaymentKey());
+}
+
+export function buildCryptomusUrls(orderId: string) {
+  const siteUrl = getSiteUrl().replace(/\/$/, "");
+  return {
+    callbackUrl: `${siteUrl}/api/payments/webhook/cryptomus`,
+    successUrl: `${siteUrl}/success?orderId=${orderId}`,
+    failUrl: `${siteUrl}/checkout?payment=failed&orderId=${orderId}`,
+  };
+}
+
+export async function createCryptomusInvoice(
+  input: CryptomusInvoiceInput
+): Promise<CryptomusInvoiceResult> {
+  const merchantId = getCryptomusMerchantId();
+  const apiKey = getCryptomusPaymentKey();
+
+  if (!merchantId || !apiKey) {
+    return { ok: false, error: "Cryptomus is not configured" };
+  }
+
+  const body = {
+    amount: input.amount.toFixed(2),
+    currency: input.currency ?? "USD",
+    order_id: input.orderId,
+    url_callback: input.callbackUrl,
+    url_return: input.successUrl,
+    url_fail: input.failUrl,
+    is_payment_multiple: false,
+    lifetime: 3600,
+  };
+
+  const payload = JSON.stringify(body);
+  const sign = signPayload(payload, apiKey);
+
+  try {
+    const response = await fetch(CRYPTOMUS_API, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        merchant: merchantId,
+        sign,
+      },
+      body: payload,
+    });
+
+    const data = (await response.json().catch(() => null)) as {
+      result?: { url?: string; uuid?: string };
+      message?: string;
+      state?: number;
+    } | null;
+
+    if (!response.ok || !data?.result?.url || !data.result.uuid) {
+      const error = data?.message ?? `Cryptomus API error (${response.status})`;
+
+      await logActivity("error", "cryptomus.invoice_failed", {
+        orderId: input.orderId,
+        error,
+        status: response.status,
+      });
+
+      return {
+        ok: false,
+        error,
+        raw: (data ?? {}) as Record<string, unknown>,
+      };
+    }
+
+    await logActivity("info", "cryptomus.invoice_created", {
+      orderId: input.orderId,
+      transactionId: data.result.uuid,
+    });
+
+    return {
+      ok: true,
+      paymentUrl: data.result.url,
+      transactionId: data.result.uuid,
+      raw: data as Record<string, unknown>,
+    };
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Cryptomus invoice request failed";
+
+    await logActivity("error", "cryptomus.invoice_failed", {
+      orderId: input.orderId,
+      error: message,
+    });
+
+    return { ok: false, error: message };
+  }
+}
+
+export function verifyCryptomusWebhookSignature(
+  rawBody: string,
+  signHeader: string | null
+): boolean {
+  const apiKey = getCryptomusPaymentKey();
+  if (!apiKey || !signHeader) return false;
+  return signPayload(rawBody, apiKey) === signHeader;
+}
+
+export function parseCryptomusWebhookPayload(
+  rawBody: string
+): CryptomusWebhookPayload | null {
+  try {
+    return JSON.parse(rawBody) as CryptomusWebhookPayload;
+  } catch {
+    return null;
+  }
+}
+
+export function mapCryptomusPaymentStatus(
+  payload: CryptomusWebhookPayload
+): "pending" | "paid" | "failed" {
+  const status = payload.status ?? payload.payment_status ?? "";
+
+  if (status === "paid" || status === "paid_over") {
+    return "paid";
+  }
+
+  if (
+    status === "cancel" ||
+    status === "fail" ||
+    status === "failed" ||
+    status === "wrong_amount" ||
+    status === "system_fail"
+  ) {
+    return "failed";
+  }
+
+  return "pending";
+}

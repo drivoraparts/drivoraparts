@@ -1,58 +1,91 @@
-import AdminShell from "@/components/admin/AdminShell";
-import { getOrders } from "@/lib/marketplace";
-
-export const runtime = "edge";
-
-function formatTime(timestamp: number) {
-  return new Date(timestamp).toLocaleString();
-}
-
-export default function AdminOrdersPage() {
-  const orders = [...getOrders()].sort((a, b) => b.createdAt - a.createdAt);
-
-  return (
-    <AdminShell title="Orders">
-      {orders.length === 0 ? (
-        <p className="text-gray-400">No orders recorded yet.</p>
-      ) : (
-        <div className="space-y-4">
-          {orders.map((order) => (
-            <article
-              key={order.id}
-              className="rounded-lg border border-white/10 bg-white/[0.06] p-6"
-            >
-              <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <p className="text-sm text-gray-400">Order ID</p>
-                  <p className="font-mono text-sm">{order.id}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-2xl font-bold">${order.total.toFixed(2)}</p>
-                  <p className="text-sm capitalize text-gray-400">{order.status}</p>
-                </div>
-              </div>
-
-              <ul className="space-y-2 border-t border-white/10 pt-4 text-sm">
-                {order.items.map((item) => (
-                  <li
-                    key={`${order.id}-${item.productId}`}
-                    className="flex justify-between gap-4"
-                  >
-                    <span>
-                      {item.name} × {item.quantity}
-                    </span>
-                    <span>${(item.price * item.quantity).toFixed(2)}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <p className="mt-4 text-xs text-gray-500">
-                {formatTime(order.createdAt)}
-              </p>
-            </article>
-          ))}
-        </div>
-      )}
-    </AdminShell>
-  );
-}
+import AdminShell from "@/components/admin/AdminShell";
+import OrderStatusControl from "@/components/admin/OrderStatusControl";
+import { listOrders } from "@/lib/db/orders";
+import { findPaymentsByOrderIds } from "@/lib/db/payments";
+
+export const dynamic = "force-dynamic";
+export const runtime = "edge";
+
+function formatTime(iso: string) {
+  return new Date(iso).toLocaleString();
+}
+
+function formatPaymentMethod(provider: string, metadata: Record<string, unknown> | null) {
+  if (provider === "cryptomus") return "Cryptomus";
+  if (metadata?.mode === "manual_pending") return "Manual (pending)";
+  return "Manual fallback";
+}
+
+export default async function AdminOrdersPage() {
+  const orders = await listOrders();
+  const payments = await findPaymentsByOrderIds(orders.map((order) => order.id));
+
+  return (
+    <AdminShell title="Order Management">
+      {orders.length === 0 ? (
+        <p className="text-gray-400">No orders recorded yet.</p>
+      ) : (
+        <div className="space-y-4">
+          {orders.map((order) => {
+            const payment = payments.get(order.id);
+            return (
+              <article
+                key={order.id}
+                className="rounded-lg border border-white/10 bg-white/[0.06] p-6"
+              >
+                <div className="mb-4 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                  <div className="space-y-2">
+                    <div>
+                      <p className="text-sm text-gray-400">Order ID</p>
+                      <p className="font-mono text-sm">{order.id}</p>
+                    </div>
+                    {payment ? (
+                      <p className="text-xs text-gray-400">
+                        Payment: {formatPaymentMethod(payment.provider, payment.metadata)}{" "}
+                        · {payment.status}
+                      </p>
+                    ) : null}
+                    {order.customer ? (
+                      <div className="text-sm text-gray-300">
+                        <p>{order.customer.full_name}</p>
+                        <p>{order.customer.email}</p>
+                        {order.customer.phone ? <p>{order.customer.phone}</p> : null}
+                        {order.customer.shipping_address ? (
+                          <p>{order.customer.shipping_address}</p>
+                        ) : null}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div className="text-right">
+                    <p className="text-2xl font-bold">${Number(order.total).toFixed(2)}</p>
+                    <div className="mt-2">
+                      <OrderStatusControl orderId={order.id} currentStatus={order.status} />
+                    </div>
+                  </div>
+                </div>
+
+                <ul className="space-y-2 border-t border-white/10 pt-4 text-sm">
+                  {order.items.map((item) => (
+                    <li
+                      key={item.id}
+                      className="flex justify-between gap-4"
+                    >
+                      <span>
+                        {item.name} × {item.quantity}
+                      </span>
+                      <span>${(Number(item.price) * item.quantity).toFixed(2)}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-4 text-xs text-gray-500">{formatTime(order.created_at)}</p>
+              </article>
+            );
+          })}
+        </div>
+      )}
+    </AdminShell>
+  );
+}
+

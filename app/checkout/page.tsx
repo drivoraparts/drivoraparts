@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { trackEvent } from "@/lib/analytics/client";
@@ -10,10 +11,13 @@ const glassCard =
   "rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md";
 
 export default function CheckoutPage() {
+  const router = useRouter();
   const [hydrated, setHydrated] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
   const cart = useCartStore((s) => s.items);
   const clearCart = useCartStore((s) => s.clearCart);
@@ -53,12 +57,14 @@ export default function CheckoutPage() {
   const total = subtotal + shipping;
 
   const handleCheckout = async () => {
-    if (!cart.length) return;
+    if (!cart.length || submitting) return;
 
     if (!fullName.trim() || !email.trim()) {
       showToast("Please enter your name and email");
       return;
     }
+
+    setSubmitting(true);
 
     try {
       const res = await fetch("/api/checkout", {
@@ -77,27 +83,38 @@ export default function CheckoutPage() {
           customer: {
             fullName: fullName.trim(),
             email: email.trim(),
+            phone: phone.trim() || undefined,
             address: address.trim() || undefined,
           },
+          provider: "cryptomus",
         }),
       });
 
+      const data = await res.json().catch(() => ({}));
+
       if (!res.ok) {
-        showToast("Checkout failed");
+        showToast(data.error ?? "Checkout failed");
+        setSubmitting(false);
         return;
       }
 
-      const order = await res.json();
       trackEvent("order_completed", {
-        orderId: order.id,
-        total: order.total,
+        orderId: data.orderId,
+        total: data.total,
         itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
       });
 
       clearCart();
-      showToast("Order placed");
+
+      if (data.payment?.paymentUrl) {
+        window.location.href = data.payment.paymentUrl;
+        return;
+      }
+
+      router.push(`/success?orderId=${data.orderId}`);
     } catch {
       showToast("Checkout failed");
+      setSubmitting(false);
     }
   };
 
@@ -128,10 +145,7 @@ export default function CheckoutPage() {
               <h2 className="mb-4 text-xl font-bold">Customer Information</h2>
               <div className="space-y-4">
                 <div>
-                  <label
-                    htmlFor="checkout-name"
-                    className="mb-1 block text-sm text-gray-400"
-                  >
+                  <label htmlFor="checkout-name" className="mb-1 block text-sm text-gray-400">
                     Full Name
                   </label>
                   <input
@@ -144,10 +158,7 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="checkout-email"
-                    className="mb-1 block text-sm text-gray-400"
-                  >
+                  <label htmlFor="checkout-email" className="mb-1 block text-sm text-gray-400">
                     Email
                   </label>
                   <input
@@ -160,11 +171,21 @@ export default function CheckoutPage() {
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="checkout-address"
-                    className="mb-1 block text-sm text-gray-400"
-                  >
-                    Shipping Address (optional)
+                  <label htmlFor="checkout-phone" className="mb-1 block text-sm text-gray-400">
+                    Phone
+                  </label>
+                  <input
+                    id="checkout-phone"
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="+1 555 000 0000"
+                    className="w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="checkout-address" className="mb-1 block text-sm text-gray-400">
+                    Shipping Address
                   </label>
                   <input
                     id="checkout-address"
@@ -180,10 +201,11 @@ export default function CheckoutPage() {
 
             <section className={glassCard}>
               <h2 className="mb-4 text-xl font-bold">Payment</h2>
-              <p className="mb-2 font-medium">Cryptomus Payment (Pending Integration)</p>
-              <p className="rounded-lg border border-yellow-500/30 bg-yellow-500/10 px-4 py-3 text-sm text-yellow-200">
-                Payment gateway not yet connected. Order details will be saved,
-                but BTC payment is not active yet.
+              <p className="mb-2 font-medium">Cryptomus (Bitcoin / Crypto)</p>
+              <p className="rounded-lg border border-white/10 bg-black/20 px-4 py-3 text-sm text-gray-300">
+                After placing your order you will be redirected to a secure Cryptomus
+                payment page when configured. Otherwise your order is saved as pending
+                and confirmation is emailed.
               </p>
             </section>
           </div>
@@ -206,9 +228,9 @@ export default function CheckoutPage() {
 
                     <div className="min-w-0 flex-1">
                       <h3 className="font-semibold">{item.name}</h3>
-                      {item.brand && (
+                      {item.brand ? (
                         <p className="text-sm text-gray-400">{item.brand}</p>
-                      )}
+                      ) : null}
                       <p className="mt-1 text-sm text-gray-400">
                         Unit: ${item.price.toFixed(2)}
                       </p>
@@ -241,9 +263,10 @@ export default function CheckoutPage() {
             <button
               type="button"
               onClick={handleCheckout}
-              className="w-full rounded-lg bg-red-600 px-6 py-3 font-semibold"
+              disabled={submitting}
+              className="w-full rounded-lg bg-red-600 px-6 py-3 font-semibold disabled:opacity-60"
             >
-              Pay With Bitcoin
+              {submitting ? "Processing..." : "Place Order & Pay"}
             </button>
           </div>
         </div>

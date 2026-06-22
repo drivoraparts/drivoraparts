@@ -1,10 +1,21 @@
 import Link from "next/link";
+import AdminLogoutButton from "./AdminLogoutButton";
 
 const links = [
   { href: "/admin/dashboard", label: "Dashboard" },
-  { href: "/admin/analytics", label: "Analytics" },
-  { href: "/admin/forecast", label: "AI Forecast" },
+  { href: "/admin/insights", label: "AI Insights" },
+  { href: "/admin/analytics", label: "Sales Analytics" },
+  { href: "/admin/revenue", label: "Revenue" },
+  { href: "/admin/customers", label: "Customers" },
+  { href: "/admin/inventory", label: "Inventory" },
   { href: "/admin/orders", label: "Orders" },
+  { href: "/admin/support", label: "Support" },
+  { href: "/admin/logs", label: "Logs" },
+  { href: "/admin/live-users", label: "Live Users" },
+  { href: "/admin/forecast", label: "AI Forecast" },
+  { href: "/admin/ads", label: "Ad Generator" },
+  { href: "/admin/suppliers", label: "Suppliers" },
+  { href: "/admin/payments", label: "Payments" },
   { href: "/admin/products", label: "Products" },
 ];
 
@@ -24,9 +35,12 @@ export default function AdminShell({
           </p>
           <h1 className="text-3xl font-bold">{title}</h1>
         </div>
-        <Link href="/" className="text-sm text-gray-400 hover:text-white">
-          ← Back to store
-        </Link>
+        <div className="flex items-center gap-3">
+          <AdminLogoutButton />
+          <Link href="/" className="text-sm text-gray-400 hover:text-white">
+            ← Back to store
+          </Link>
+        </div>
       </div>
 
       <nav className="mb-8 flex flex-wrap gap-2">

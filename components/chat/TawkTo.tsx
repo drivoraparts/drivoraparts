@@ -1,9 +1,7 @@
 "use client";
 
 import Script from "next/script";
-
-const TAWK_EMBED_SRC =
-  "https://embed.tawk.to/6a384bd1d0dd3e1d406c8132/default";
+import { TAWK_EMBED_SRC } from "@/lib/config/tawk";
 
 declare global {
   interface Window {

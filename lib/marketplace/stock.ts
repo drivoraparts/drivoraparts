@@ -1,21 +1,20 @@
-import {
-  getStockRecord,
-  upsertStockRecord,
-} from "./persistence";
+import { getInventory, hasInventory, reduceInventory, setInventory } from "@/lib/db/inventory";
 
-export const setStock = (productId: number, amount: number): void => {
-  upsertStockRecord(productId, amount);
+export const setStock = async (productId: number, amount: number): Promise<void> => {
+  await setInventory(productId, amount);
 };
 
-export const getStock = (productId: number): number => {
-  return getStockRecord(productId)?.stock ?? 0;
+export const getStock = async (productId: number): Promise<number> => {
+  return getInventory(productId);
 };
 
-export const reduceStock = (productId: number, amount: number): void => {
-  const current = getStock(productId);
-  upsertStockRecord(productId, Math.max(0, current - amount));
+export const reduceStock = async (
+  productId: number,
+  amount: number
+): Promise<boolean> => {
+  return reduceInventory(productId, amount);
 };
 
-export const hasStock = (productId: number, quantity = 1): boolean => {
-  return getStock(productId) >= quantity;
+export const hasStock = async (productId: number, quantity = 1): Promise<boolean> => {
+  return hasInventory(productId, quantity);
 };

@@ -2,10 +2,11 @@ import AdminShell from "@/components/admin/AdminShell";
 import { getAnalyticsSummary } from "@/lib/analytics";
 import { products } from "@/lib/inventory/products";
 
+export const dynamic = "force-dynamic";
 export const runtime = "edge";
 
-export default function AdminProductsPage() {
-  const summary = getAnalyticsSummary();
+export default async function AdminProductsPage() {
+  const summary = await getAnalyticsSummary();
 
   const viewMap = new Map(
     summary.topViewedProducts.map((item) => [item.productId, item.count])

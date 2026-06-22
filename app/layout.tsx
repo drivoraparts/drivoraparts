@@ -2,10 +2,30 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
+import { getSiteUrl } from "@/lib/env";
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: "DrivoraParts",
-  description: "Automotive Performance Marketplace",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "DrivoraParts | Automotive Performance Marketplace",
+    template: "%s | DrivoraParts",
+  },
+  description:
+    "Buy performance engines, turbo systems, and aftermarket parts from a trusted automotive marketplace.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "DrivoraParts",
+    title: "DrivoraParts",
+    description: "Automotive Performance Marketplace",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

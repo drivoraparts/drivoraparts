@@ -1,7 +1,7 @@
-import { loadEvents } from "@/lib/analytics/store";
+import { listAnalyticsEvents } from "@/lib/db/analytics";
+import { getInventory } from "@/lib/db/inventory";
+import { listOrders } from "@/lib/db/orders";
 import { getAllProducts, getProductById } from "@/lib/inventory";
-import { getOrders } from "@/lib/marketplace/orders";
-import { getStock } from "@/lib/marketplace/stock";
 import type { ProductSignal } from "./types";
 
 const MS_DAY = 86_400_000;
@@ -9,11 +9,15 @@ const WINDOW_7D = 7 * MS_DAY;
 const WINDOW_14D = 14 * MS_DAY;
 const WINDOW_30D = 30 * MS_DAY;
 
-function resolveStock(productId: number): number {
+async function resolveStock(productId: number): Promise<number> {
   const product = getProductById(productId);
-  const liveStock = getStock(productId);
+  try {
+    const liveStock = await getInventory(productId);
+    if (liveStock > 0) return liveStock;
+  } catch {
+    /* fallback to catalog */
+  }
 
-  if (liveStock > 0) return liveStock;
   if (typeof product?.stockQty === "number") return product.stockQty;
   if (product?.stock === false) return 0;
   return 10;
@@ -23,13 +27,17 @@ function inWindow(timestamp: number, start: number, end: number): boolean {
   return timestamp >= start && timestamp <= end;
 }
 
-export function buildProductSignals(): ProductSignal[] {
+export async function buildProductSignals(): Promise<ProductSignal[]> {
   const now = Date.now();
   const start7 = now - WINDOW_7D;
-  const start14 = now - WINDOW_14D;
   const start30 = now - WINDOW_30D;
   const prev7Start = now - WINDOW_14D;
   const prev7End = start7;
+
+  const [events, orders] = await Promise.all([
+    listAnalyticsEvents(5000),
+    listOrders(500),
+  ]);
 
   const signals = new Map<number, ProductSignal>();
 
@@ -40,7 +48,7 @@ export function buildProductSignals(): ProductSignal[] {
       category: product.category,
       platform: product.platform,
       price: product.price,
-      currentStock: resolveStock(product.id),
+      currentStock: await resolveStock(product.id),
       views7d: 0,
       viewsPrev7d: 0,
       cartAdds7d: 0,
@@ -51,24 +59,26 @@ export function buildProductSignals(): ProductSignal[] {
     });
   }
 
-  for (const event of loadEvents()) {
-    const productId = Number(event.payload.productId);
+  for (const event of events) {
+    const productId = Number(event.payload?.productId);
     if (!Number.isFinite(productId)) continue;
 
     const product = getProductById(productId);
     if (!product) continue;
 
+    const createdAt = new Date(event.created_at).getTime();
+
     if (!signals.has(productId)) {
       signals.set(productId, {
         productId,
         productName:
-          typeof event.payload.productName === "string"
+          typeof event.payload?.productName === "string"
             ? event.payload.productName
             : product.name,
         category: product.category,
         platform: product.platform,
         price: product.price,
-        currentStock: resolveStock(productId),
+        currentStock: await resolveStock(productId),
         views7d: 0,
         viewsPrev7d: 0,
         cartAdds7d: 0,
@@ -82,31 +92,32 @@ export function buildProductSignals(): ProductSignal[] {
     const signal = signals.get(productId)!;
 
     if (event.name === "product_view") {
-      if (inWindow(event.createdAt, start7, now)) signal.views7d += 1;
-      if (inWindow(event.createdAt, prev7Start, prev7End)) signal.viewsPrev7d += 1;
+      if (inWindow(createdAt, start7, now)) signal.views7d += 1;
+      if (inWindow(createdAt, prev7Start, prev7End)) signal.viewsPrev7d += 1;
     }
 
     if (event.name === "add_to_cart") {
-      const qty = Number(event.payload.quantity);
+      const qty = Number(event.payload?.quantity);
       const amount = Number.isFinite(qty) && qty > 0 ? qty : 1;
-      if (inWindow(event.createdAt, start7, now)) signal.cartAdds7d += amount;
-      if (inWindow(event.createdAt, prev7Start, prev7End)) {
+      if (inWindow(createdAt, start7, now)) signal.cartAdds7d += amount;
+      if (inWindow(createdAt, prev7Start, prev7End)) {
         signal.cartAddsPrev7d += amount;
       }
     }
   }
 
-  for (const order of getOrders()) {
-    if (!inWindow(order.createdAt, start30, now)) continue;
+  for (const order of orders) {
+    const createdAt = new Date(order.created_at).getTime();
+    if (!inWindow(createdAt, start30, now)) continue;
 
     for (const item of order.items) {
-      const signal = signals.get(item.productId);
+      const signal = signals.get(item.product_id);
       if (!signal) continue;
 
       signal.unitsSold30d += item.quantity;
-      signal.revenue30d += item.price * item.quantity;
+      signal.revenue30d += Number(item.price) * item.quantity;
 
-      if (inWindow(order.createdAt, start7, now)) {
+      if (inWindow(createdAt, start7, now)) {
         signal.unitsSold7d += item.quantity;
       }
     }

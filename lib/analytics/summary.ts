@@ -1,64 +1,71 @@
-import { getOrders } from "@/lib/marketplace/orders";
-import { loadEvents } from "./store";
+import { listAnalyticsEvents } from "@/lib/db/analytics";
+import { getOrderStats } from "@/lib/db/orders";
 import type { AnalyticsSummary, ProductMetric } from "./types";
 
-function countByProduct(
-  events: ReturnType<typeof loadEvents>,
-  eventName: "product_view" | "add_to_cart"
+function buildProductMetrics(
+  events: Awaited<ReturnType<typeof listAnalyticsEvents>>,
+  eventName: string,
+  idKey: string,
+  nameKey: string
 ): ProductMetric[] {
-  const counts = new Map<number, ProductMetric>();
+  const map = new Map<number, ProductMetric>();
 
   for (const event of events) {
     if (event.name !== eventName) continue;
+    const payload = event.payload ?? {};
+    const productId = Number(payload[idKey]);
+    if (!productId) continue;
 
-    const productId = Number(event.payload.productId);
-    if (!Number.isFinite(productId)) continue;
-
-    const productName =
-      typeof event.payload.productName === "string"
-        ? event.payload.productName
-        : `Product #${productId}`;
-
-    const existing = counts.get(productId);
-    if (existing) {
-      existing.count += 1;
-    } else {
-      counts.set(productId, { productId, productName, count: 1 });
-    }
+    const existing = map.get(productId) ?? {
+      productId,
+      productName: String(payload[nameKey] ?? `Product ${productId}`),
+      count: 0,
+    };
+    existing.count += 1;
+    map.set(productId, existing);
   }
 
-  return [...counts.values()].sort((a, b) => b.count - a.count);
+  return [...map.values()].sort((a, b) => b.count - a.count).slice(0, 10);
 }
 
-export function getAnalyticsSummary(): AnalyticsSummary {
-  const events = loadEvents();
-  const orders = getOrders();
+export async function getAnalyticsSummary(): Promise<AnalyticsSummary> {
+  const [events, orderStats] = await Promise.all([
+    listAnalyticsEvents(2000),
+    getOrderStats(),
+  ]);
 
   const productViews = events.filter((e) => e.name === "product_view").length;
   const cartAdds = events.filter((e) => e.name === "add_to_cart").length;
   const checkoutCount = events.filter((e) => e.name === "checkout_start").length;
-  const orderEvents = events.filter((e) => e.name === "order_completed");
-
-  const totalOrders = Math.max(orders.length, orderEvents.length);
-  const revenueFromOrders = orders.reduce((sum, order) => sum + order.total, 0);
-  const revenueFromEvents = orderEvents.reduce((sum, event) => {
-    const total = Number(event.payload.total);
-    return sum + (Number.isFinite(total) ? total : 0);
-  }, 0);
-  const totalRevenue = Math.max(revenueFromOrders, revenueFromEvents);
-
   const conversionRate =
-    productViews > 0 ? Number(((totalOrders / productViews) * 100).toFixed(2)) : 0;
+    productViews > 0
+      ? Math.round((orderStats.paidOrderCount / productViews) * 1000) / 10
+      : 0;
 
   return {
-    totalRevenue,
-    totalOrders,
+    totalRevenue: orderStats.totalRevenue,
+    totalOrders: orderStats.totalOrders,
     productViews,
     cartAdds,
     checkoutCount,
     conversionRate,
-    topViewedProducts: countByProduct(events, "product_view").slice(0, 10),
-    topCartProducts: countByProduct(events, "add_to_cart").slice(0, 10),
-    recentEvents: [...events].sort((a, b) => b.createdAt - a.createdAt).slice(0, 25),
+    topViewedProducts: buildProductMetrics(
+      events,
+      "product_view",
+      "productId",
+      "productName"
+    ),
+    topCartProducts: buildProductMetrics(
+      events,
+      "add_to_cart",
+      "productId",
+      "productName"
+    ),
+    recentEvents: events.slice(0, 20).map((event) => ({
+      id: event.id,
+      name: event.name as AnalyticsSummary["recentEvents"][number]["name"],
+      payload: event.payload ?? {},
+      createdAt: new Date(event.created_at).getTime(),
+    })),
   };
 }

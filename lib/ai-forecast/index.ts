@@ -4,16 +4,16 @@ import { assessStockRisk, getRestockRecommendations } from "./stockRisk";
 import { getTrendingEngines } from "./trendingProducts";
 import type { ForecastReport } from "./types";
 
-export function getForecastReport(): ForecastReport {
-  const stockRisks = assessStockRisk();
+export async function getForecastReport(): Promise<ForecastReport> {
+  const stockRisks = await assessStockRisk();
 
   return {
     generatedAt: Date.now(),
-    salesForecasts: forecastSales(),
-    demandPredictions: predictDemand(),
+    salesForecasts: await forecastSales(),
+    demandPredictions: await predictDemand(),
     stockRisks,
-    restockRecommendations: getRestockRecommendations(stockRisks),
-    trendingEngines: getTrendingEngines(),
+    restockRecommendations: await getRestockRecommendations(stockRisks),
+    trendingEngines: await getTrendingEngines(),
   };
 }
 

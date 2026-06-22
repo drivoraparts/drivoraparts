@@ -22,9 +22,10 @@ function resolveRisk(
   return { risk: "low", daysUntilStockout, priority: Math.max(0, 20 - daysUntilStockout) };
 }
 
-export function assessStockRisk(
-  signals = buildProductSignals()
-): StockRiskAssessment[] {
+export async function assessStockRisk(
+  signalsInput?: Awaited<ReturnType<typeof buildProductSignals>>
+): Promise<StockRiskAssessment[]> {
+  const signals = signalsInput ?? (await buildProductSignals());
   return signals
     .map((signal) => {
       const dailyDemand = estimateDailyDemand(signal);
@@ -46,16 +47,16 @@ export function assessStockRisk(
     .sort((a, b) => b.restockPriority - a.restockPriority);
 }
 
-export function getRestockRecommendations(
-  risks = assessStockRisk()
+export async function getRestockRecommendations(
+  risksInput?: Awaited<ReturnType<typeof assessStockRisk>>
 ) {
+  const risks = risksInput ?? (await assessStockRisk());
   return risks
     .filter((item) => item.risk !== "low")
     .slice(0, 12)
     .map((item) => {
       const projectedDemand30d = Number((item.dailyDemand * 30).toFixed(0));
-      const buffer =
-        item.risk === "high" ? 1.35 : 1.2;
+      const buffer = item.risk === "high" ? 1.35 : 1.2;
       const suggestedRestockQty = Math.max(
         1,
         Math.ceil(projectedDemand30d * buffer - item.currentStock)

@@ -5,7 +5,10 @@ import {
 } from "./signals";
 import type { SalesForecast } from "./types";
 
-export function forecastSales(signals = buildProductSignals()): SalesForecast[] {
+export async function forecastSales(
+  signalsInput?: Awaited<ReturnType<typeof buildProductSignals>>
+): Promise<SalesForecast[]> {
+  const signals = signalsInput ?? (await buildProductSignals());
   return signals
     .map((signal) => {
       const dailyDemand = estimateDailyDemand(signal);

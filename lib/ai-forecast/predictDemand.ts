@@ -11,9 +11,10 @@ function resolveTrend(momentum: number): DemandTrend {
   return "stable";
 }
 
-export function predictDemand(
-  signals = buildProductSignals()
-): DemandPrediction[] {
+export async function predictDemand(
+  signalsInput?: Awaited<ReturnType<typeof buildProductSignals>>
+): Promise<DemandPrediction[]> {
+  const signals = signalsInput ?? (await buildProductSignals());
   return signals
     .map((signal) => {
       const viewMomentum = computeMomentum(signal.views7d, signal.viewsPrev7d);
@@ -21,7 +22,9 @@ export function predictDemand(
         signal.cartAdds7d,
         signal.cartAddsPrev7d
       );
-      const momentum = Number(((viewMomentum * 0.45 + cartMomentum * 0.55).toFixed(1)));
+      const momentum = Number(
+        ((viewMomentum * 0.45 + cartMomentum * 0.55).toFixed(1))
+      );
 
       return {
         productId: signal.productId,

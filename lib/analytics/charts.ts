@@ -1,5 +1,5 @@
-import { getOrders } from "@/lib/marketplace/orders";
-import { loadEvents } from "./store";
+import { listAnalyticsEventsSince } from "@/lib/db/analytics";
+import { listOrders } from "@/lib/db/orders";
 import type { DashboardChartData } from "./chartTypes";
 
 const RANGE_DAYS = 14;
@@ -22,15 +22,21 @@ function getDateKeys(days: number): string[] {
   return keys;
 }
 
-function toDateKey(timestamp: number): string {
-  return new Date(timestamp).toISOString().slice(0, 10);
+function toDateKey(iso: string | number): string {
+  return new Date(iso).toISOString().slice(0, 10);
 }
 
-export function getDashboardChartData(): DashboardChartData {
-  const events = loadEvents();
-  const orders = getOrders();
-  const dateKeys = getDateKeys(RANGE_DAYS);
+export async function getDashboardChartData(): Promise<DashboardChartData> {
+  const since = new Date();
+  since.setDate(since.getDate() - (RANGE_DAYS - 1));
+  since.setHours(0, 0, 0, 0);
 
+  const [events, orders] = await Promise.all([
+    listAnalyticsEventsSince(since.toISOString()),
+    listOrders(500),
+  ]);
+
+  const dateKeys = getDateKeys(RANGE_DAYS);
   const revenueByDay = new Map<string, number>();
   const ordersByDay = new Map<string, number>();
   const viewsByDay = new Map<string, number>();
@@ -42,15 +48,17 @@ export function getDashboardChartData(): DashboardChartData {
   }
 
   for (const order of orders) {
-    const key = toDateKey(order.createdAt);
+    const key = toDateKey(order.created_at);
     if (!revenueByDay.has(key)) continue;
-    revenueByDay.set(key, (revenueByDay.get(key) ?? 0) + order.total);
+    if (order.status === "paid") {
+      revenueByDay.set(key, (revenueByDay.get(key) ?? 0) + Number(order.total));
+    }
     ordersByDay.set(key, (ordersByDay.get(key) ?? 0) + 1);
   }
 
   for (const event of events) {
     if (event.name !== "product_view") continue;
-    const key = toDateKey(event.createdAt);
+    const key = toDateKey(event.created_at);
     if (!viewsByDay.has(key)) continue;
     viewsByDay.set(key, (viewsByDay.get(key) ?? 0) + 1);
   }
@@ -63,11 +71,11 @@ export function getDashboardChartData(): DashboardChartData {
   for (const event of events) {
     if (event.name !== "product_view" && event.name !== "add_to_cart") continue;
 
-    const productId = Number(event.payload.productId);
+    const productId = Number(event.payload?.productId);
     if (!Number.isFinite(productId)) continue;
 
     const productName =
-      typeof event.payload.productName === "string"
+      typeof event.payload?.productName === "string"
         ? event.payload.productName
         : `Product #${productId}`;
 

@@ -19,11 +19,13 @@ export type OrderItem = {
 
 export type OrderStatus =
   | "pending"
-  | "paid"
   | "processing"
+  | "paid"
+  | "failed"
   | "shipped"
   | "delivered"
-  | "cancelled";
+  | "cancelled"
+  | "refunded";
 
 export type Order = {
   id: string;

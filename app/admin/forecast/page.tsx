@@ -1,6 +1,7 @@
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getForecastReport } from "@/lib/ai-forecast";
 
+export const dynamic = "force-dynamic";
 export const runtime = "edge";
 
 function riskClass(risk: string) {
@@ -15,8 +16,8 @@ function trendClass(trend: string) {
   return "text-gray-300";
 }
 
-export default function AdminForecastPage() {
-  const report = getForecastReport();
+export default async function AdminForecastPage() {
+  const report = await getForecastReport();
   const highRiskCount = report.stockRisks.filter((item) => item.risk === "high").length;
   const risingCount = report.demandPredictions.filter(
     (item) => item.trend === "rising"
@@ -167,42 +168,6 @@ export default function AdminForecastPage() {
           )}
         </section>
       </div>
-
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
-        <h2 className="mb-4 text-xl font-bold">Stock Risk Matrix</h2>
-        {report.stockRisks.length === 0 ? (
-          <p className="text-sm text-gray-400">No stock risk assessments yet.</p>
-        ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[720px] text-left text-sm">
-              <thead className="border-b border-white/10 text-gray-400">
-                <tr>
-                  <th className="pb-3 pr-4">Product</th>
-                  <th className="pb-3 pr-4">Stock</th>
-                  <th className="pb-3 pr-4">Daily Demand</th>
-                  <th className="pb-3 pr-4">Days Left</th>
-                  <th className="pb-3">Risk</th>
-                </tr>
-              </thead>
-              <tbody>
-                {report.stockRisks.slice(0, 12).map((item) => (
-                  <tr key={item.productId} className="border-b border-white/5">
-                    <td className="py-3 pr-4">{item.productName}</td>
-                    <td className="py-3 pr-4">{item.currentStock}</td>
-                    <td className="py-3 pr-4">{item.dailyDemand}</td>
-                    <td className="py-3 pr-4">
-                      {item.daysUntilStockout ?? "—"}
-                    </td>
-                    <td className={`py-3 font-semibold ${riskClass(item.risk)}`}>
-                      {item.risk}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </section>
     </AdminShell>
   );
 }

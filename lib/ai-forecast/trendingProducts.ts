@@ -8,9 +8,10 @@ function formatPlatformLabel(platform: string): string {
     .join(" ");
 }
 
-export function getTrendingEngines(
-  signals = buildProductSignals()
-): TrendingEngine[] {
+export async function getTrendingEngines(
+  signalsInput?: Awaited<ReturnType<typeof buildProductSignals>>
+): Promise<TrendingEngine[]> {
+  const signals = signalsInput ?? (await buildProductSignals());
   const engineSignals = signals.filter(
     (signal) => signal.category === "engine" && signal.platform
   );
@@ -31,7 +32,8 @@ export function getTrendingEngines(
 
   for (const signal of engineSignals) {
     const platform = signal.platform!;
-    const score = signal.views7d * 1.5 + signal.cartAdds7d * 4 + signal.unitsSold7d * 6;
+    const score =
+      signal.views7d * 1.5 + signal.cartAdds7d * 4 + signal.unitsSold7d * 6;
     const existing = platforms.get(platform);
 
     if (!existing) {
@@ -65,7 +67,9 @@ export function getTrendingEngines(
     .map(([platform, data]) => {
       const viewMomentum = computeMomentum(data.views7d, data.viewsPrev7d);
       const cartMomentum = computeMomentum(data.cartAdds7d, data.cartAddsPrev7d);
-      const momentum = Number(((viewMomentum * 0.4 + cartMomentum * 0.6).toFixed(1)));
+      const momentum = Number(
+        ((viewMomentum * 0.4 + cartMomentum * 0.6).toFixed(1))
+      );
 
       return {
         platform,

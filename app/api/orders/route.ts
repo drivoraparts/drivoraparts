@@ -1,8 +1,13 @@
 import { NextResponse } from "next/server";
-import { getOrders } from "@/lib/marketplace";
+import { listOrders } from "@/lib/db/orders";
+import { requireAdminApi } from "@/lib/auth/require-admin";
 
 export const runtime = "edge";
 
 export async function GET() {
-  return NextResponse.json(getOrders());
+  const auth = await requireAdminApi();
+  if (auth.response) return auth.response;
+
+  const orders = await listOrders();
+  return NextResponse.json(orders);
 }

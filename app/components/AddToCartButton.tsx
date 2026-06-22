@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 import { trackEvent } from "@/lib/analytics/client";
-import { productHasStock } from "@/lib/stock";
 import { showToast } from "@/lib/store/toastStore";
 
 export type AddToCartProduct = {
@@ -25,24 +24,34 @@ export default function AddToCartButton({
   const [loading, setLoading] = useState(false);
   const { addToCart, cart } = useCart();
 
-  const handleAdd = () => {
+  const handleAdd = async () => {
     const currentQty = cart.find((i) => i.id === product.id)?.quantity ?? 0;
 
-    if (!productHasStock(product.id, currentQty + quantity)) {
-      showToast("Out of stock");
-      return;
-    }
-
     setLoading(true);
-    addToCart(product, quantity);
-    trackEvent("add_to_cart", {
-      productId: product.id,
-      productName: product.name,
-      price: product.price,
-      quantity,
-    });
-    showToast("Added to cart");
-    setTimeout(() => setLoading(false), 300);
+
+    try {
+      const res = await fetch(`/api/product?productId=${product.id}`);
+      const data = await res.json().catch(() => null);
+
+      if (!res.ok || !data?.inStock || data.stock < currentQty + quantity) {
+        showToast("Out of stock");
+        setLoading(false);
+        return;
+      }
+
+      addToCart(product, quantity);
+      trackEvent("add_to_cart", {
+        productId: product.id,
+        productName: product.name,
+        price: product.price,
+        quantity,
+      });
+      showToast("Added to cart");
+    } catch {
+      showToast("Unable to verify stock");
+    } finally {
+      setTimeout(() => setLoading(false), 300);
+    }
   };
 
   return (
