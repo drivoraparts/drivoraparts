@@ -53,10 +53,18 @@ function walk(dir, files = []) {
   return files;
 }
 
-const edgeRe = /export\s+const\s+runtime\s*=\s*['"]edge['"]/;
+const edgeLineRe = /^\s*export\s+const\s+runtime\s*=\s*['"]edge['"]/;
+
+function hasEdgeExport(src) {
+  return src
+    .replace(/\/\*[\s\S]*?\*\//g, "")
+    .replace(/\/\/.*$/gm, "")
+    .split("\n")
+    .some((line) => edgeLineRe.test(line));
+}
 for (const file of walk(path.join(ROOT, "app"))) {
   const src = fs.readFileSync(file, "utf8");
-  if (edgeRe.test(src)) {
+  if (hasEdgeExport(src)) {
     fail(`Edge runtime export found (remove for OpenNext): ${path.relative(ROOT, file)}`);
   }
 }

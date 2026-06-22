@@ -1,5 +1,21 @@
 # Cloudflare Pages — Production Deploy (OpenNext)
 
+## ⚠️ If you see: "routes were not configured to run with Edge Runtime"
+
+**Do NOT add `export const runtime = "edge"` to your routes.**
+
+That error means Cloudflare is running **`@cloudflare/next-on-pages`**, not OpenNext.
+
+| What the log shows | What to do |
+|--------------------|------------|
+| Edge Runtime required on `/`, `/admin/*`, `/api/*` | Change dashboard **Framework preset → None** |
+| `@cloudflare/next-on-pages` in install/build log | Remove it; use `npm run pages:build` only |
+| OpenNext build succeeds locally | Fix Cloudflare dashboard build command |
+
+OpenNext uses **Node.js on Workers** (`nodejs_compat`). All **99 route files** inherit default runtime from the App Router — no per-file edge export needed.
+
+Run locally: `npm run audit:routes`
+
 ## Why builds fail with "Edge Runtime" errors
 
 That error comes from **`@cloudflare/next-on-pages`**, not OpenNext.

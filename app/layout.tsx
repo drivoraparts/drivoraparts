@@ -5,6 +5,11 @@ import StoreProviders from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
 import { getSiteUrl } from "@/lib/env";
 
+/**
+ * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
+ * Per-route edge runtime exports break OpenNext — see docs/CLOUDFLARE-DEPLOY.md.
+ */
+
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
