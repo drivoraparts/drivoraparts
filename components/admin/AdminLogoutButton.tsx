@@ -1,7 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { adminUi } from "./admin-ui";
 
 export default function AdminLogoutButton() {
   const router = useRouter();
@@ -19,7 +20,7 @@ export default function AdminLogoutButton() {
       type="button"
       onClick={handleLogout}
       disabled={loading}
-      className="rounded-lg border border-white/10 px-4 py-2 text-sm text-gray-300 hover:border-red-500/40 hover:text-white disabled:opacity-60"
+      className={adminUi.buttonSecondary}
     >
       {loading ? "..." : "Logout"}
     </button>

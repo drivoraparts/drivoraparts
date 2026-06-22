@@ -58,15 +58,15 @@ export default function AdminAdsPage() {
         <StatCard label="Format" value="JSON" hint="Future-ready ad pack structure" />
       </div>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Generate Ad Pack</h2>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end">
           <label className="flex-1 text-sm">
-            <span className="mb-2 block text-gray-400">Product</span>
+            <span className="mb-2 block text-zinc-600">Product</span>
             <select
               value={productId}
               onChange={(event) => setProductId(event.target.value)}
-              className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2"
+              className="w-full rounded-lg bg-zinc-50 border border-zinc-200 px-3 py-2"
             >
               {products.slice(0, 40).map((product) => (
                 <option key={product.id} value={product.id}>
@@ -87,7 +87,7 @@ export default function AdminAdsPage() {
             <button
               type="button"
               onClick={downloadPack}
-              className="rounded-lg border border-white/10 px-5 py-2 text-sm font-semibold hover:border-red-500/40"
+              className="rounded-lg border border-zinc-200 px-5 py-2 text-sm font-semibold hover:border-red-500/40"
             >
               Download Ad Pack
             </button>
@@ -98,26 +98,26 @@ export default function AdminAdsPage() {
 
       {pack ? (
         <section className="mt-8 space-y-6">
-          <div className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+          <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
             <h3 className="mb-3 text-lg font-bold">Facebook Ads</h3>
             <div className="space-y-3 text-sm">
               {pack.facebookAds.map((ad, index) => (
-                <div key={index} className="rounded-lg border border-white/5 p-4">
+                <div key={index} className="rounded-lg border border-zinc-100 p-4">
                   <p className="font-semibold">{ad.headline}</p>
-                  <p className="mt-2 text-gray-300">{ad.primaryText}</p>
+                  <p className="mt-2 text-zinc-600">{ad.primaryText}</p>
                   <p className="mt-2 text-xs text-gray-500">CTA: {ad.callToAction}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+          <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
             <h3 className="mb-3 text-lg font-bold">Google Ads</h3>
             <div className="space-y-3 text-sm">
               {pack.googleAds.map((ad, index) => (
-                <div key={index} className="rounded-lg border border-white/5 p-4">
+                <div key={index} className="rounded-lg border border-zinc-100 p-4">
                   <p className="font-semibold">{ad.headline}</p>
-                  <p className="mt-2 text-gray-300">{ad.description}</p>
+                  <p className="mt-2 text-zinc-600">{ad.description}</p>
                   <p className="mt-2 text-xs text-gray-500">
                     Keywords: {ad.keywords.join(", ")}
                   </p>
@@ -126,9 +126,9 @@ export default function AdminAdsPage() {
             </div>
           </div>
 
-          <div className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+          <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
             <h3 className="mb-3 text-lg font-bold">TikTok Script</h3>
-            <pre className="whitespace-pre-wrap text-sm text-gray-300">{pack.tiktokScript}</pre>
+            <pre className="whitespace-pre-wrap text-sm text-zinc-600">{pack.tiktokScript}</pre>
           </div>
         </section>
       ) : null}

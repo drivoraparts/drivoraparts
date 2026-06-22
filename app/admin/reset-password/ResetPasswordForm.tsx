@@ -111,7 +111,7 @@ function ResetPasswordFormInner() {
 
 function ResetFallback() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#050505] text-zinc-400">
+    <main className="flex min-h-screen items-center justify-center bg-zinc-50 text-zinc-600">
       Loading reset form...
     </main>
   );

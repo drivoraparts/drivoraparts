@@ -21,7 +21,7 @@ export default async function AdminLayout({
 
   if (isPublic) {
     return (
-      <div className="min-h-screen bg-[#050505] text-white">
+      <div className="min-h-screen bg-zinc-50 text-zinc-900">
         <AdminErrorBoundary>{children}</AdminErrorBoundary>
       </div>
     );

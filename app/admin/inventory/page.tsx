@@ -21,10 +21,10 @@ export default async function AdminInventoryPage() {
         <StatCard label="Out of Stock" value={String(stats.outOfStock)} />
       </div>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Alerts</h2>
         {alerts.length === 0 ? (
-          <p className="text-sm text-gray-400">No inventory alerts.</p>
+          <p className="text-sm text-zinc-600">No inventory alerts.</p>
         ) : (
           <ul className="space-y-2 text-sm">
             {alerts.slice(0, 20).map((alert) => (
@@ -39,11 +39,11 @@ export default async function AdminInventoryPage() {
         )}
       </section>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Lowest Stock Levels</h2>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[640px] text-left text-sm">
-            <thead className="border-b border-white/10 text-gray-400">
+            <thead className="border-b border-zinc-200 text-zinc-600">
               <tr>
                 <th className="pb-3 pr-4">Product</th>
                 <th className="pb-3 pr-4">Qty</th>
@@ -52,7 +52,7 @@ export default async function AdminInventoryPage() {
             </thead>
             <tbody>
               {inventory.slice(0, 30).map((row) => (
-                <tr key={row.product_id} className="border-b border-white/5">
+                <tr key={row.product_id} className="border-b border-zinc-100">
                   <td className="py-3 pr-4">
                     {getProductById(row.product_id)?.name ?? `Product #${row.product_id}`}
                   </td>

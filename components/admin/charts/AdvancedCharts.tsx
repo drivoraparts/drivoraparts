@@ -52,10 +52,10 @@ function ChartPanel({
   children: React.ReactNode;
 }) {
   return (
-    <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md">
+    <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6 shadow-sm ">
       <div className="mb-6">
         <h2 className="text-xl font-bold">{title}</h2>
-        {subtitle ? <p className="mt-1 text-sm text-gray-400">{subtitle}</p> : null}
+        {subtitle ? <p className="mt-1 text-sm text-zinc-600">{subtitle}</p> : null}
       </div>
       <div className="h-72 w-full">{children}</div>
     </section>
@@ -134,24 +134,24 @@ export default function AdvancedCharts() {
   return (
     <div className="mt-8 space-y-6">
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <div className="rounded-lg border border-white/10 bg-white/[0.06] p-4">
-          <p className="text-xs uppercase tracking-wide text-gray-400">Live users</p>
+        <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-4">
+          <p className="text-xs uppercase tracking-wide text-zinc-600">Live users</p>
           <p className="text-2xl font-bold">{realtime?.activeUsers ?? "—"}</p>
         </div>
-        <div className="rounded-lg border border-white/10 bg-white/[0.06] p-4">
-          <p className="text-xs uppercase tracking-wide text-gray-400">Revenue (60m)</p>
+        <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-4">
+          <p className="text-xs uppercase tracking-wide text-zinc-600">Revenue (60m)</p>
           <p className="text-2xl font-bold">
             {realtime ? `$${realtime.revenueLast60Min.toFixed(2)}` : "—"}
           </p>
         </div>
-        <div className="rounded-lg border border-white/10 bg-white/[0.06] p-4">
-          <p className="text-xs uppercase tracking-wide text-gray-400">Live conversion</p>
+        <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-4">
+          <p className="text-xs uppercase tracking-wide text-zinc-600">Live conversion</p>
           <p className="text-2xl font-bold">
             {realtime ? `${realtime.conversionRate}%` : "—"}
           </p>
         </div>
-        <div className="rounded-lg border border-white/10 bg-white/[0.06] p-4">
-          <p className="text-xs uppercase tracking-wide text-gray-400">7-day forecast</p>
+        <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-4">
+          <p className="text-xs uppercase tracking-wide text-zinc-600">7-day forecast</p>
           <p className="text-2xl font-bold">
             {ai ? `$${ai.predictedRevenueNext7Days.toLocaleString()}` : "—"}
           </p>
@@ -187,7 +187,7 @@ export default function AdvancedCharts() {
       <div className="grid gap-6 xl:grid-cols-2">
         <ChartPanel title="Hot Products (Live)" subtitle="Trending in the last 60 minutes">
           {trendingData.length === 0 ? (
-            <p className="text-sm text-gray-400">Waiting for live product activity…</p>
+            <p className="text-sm text-zinc-600">Waiting for live product activity…</p>
           ) : (
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={trendingData} layout="vertical" margin={{ left: 8, right: 8 }}>
@@ -209,7 +209,7 @@ export default function AdvancedCharts() {
 
         <ChartPanel title="Demand Velocity Rankings" subtitle="AI product ranking scores">
           {rankingData.length === 0 ? (
-            <p className="text-sm text-gray-400">Collecting demand signals…</p>
+            <p className="text-sm text-zinc-600">Collecting demand signals…</p>
           ) : (
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={rankingData} layout="vertical" margin={{ left: 8, right: 8 }}>

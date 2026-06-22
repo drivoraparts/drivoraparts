@@ -62,16 +62,16 @@ export default function AdminChatAssistant() {
   return (
     <div className="fixed bottom-6 left-6 z-[10000]">
       {open ? (
-        <div className="mb-3 w-[min(92vw,380px)] overflow-hidden rounded-xl border border-white/10 bg-[#0a0a0a]/95 shadow-2xl backdrop-blur-md">
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
+        <div className="mb-3 w-[min(92vw,380px)] overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-2xl ">
+          <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3">
             <div>
               <p className="text-sm font-semibold">Business Operator AI</p>
-              <p className="text-xs text-gray-400">Live ops · revenue · inventory</p>
+              <p className="text-xs text-zinc-600">Live ops · revenue · inventory</p>
             </div>
             <button
               type="button"
               onClick={() => setOpen(false)}
-              className="text-gray-400 hover:text-white"
+              className="text-zinc-600 hover:text-zinc-900"
             >
               ✕
             </button>
@@ -83,8 +83,8 @@ export default function AdminChatAssistant() {
                 key={`${message.role}-${index}`}
                 className={`rounded-lg px-3 py-2 ${
                   message.role === "assistant"
-                    ? "bg-white/[0.06] text-gray-200"
-                    : "bg-red-600/20 text-white"
+                    ? "bg-white shadow-sm border border-zinc-200 text-zinc-700"
+                    : "bg-red-50 text-red-800"
                 }`}
               >
                 {message.content}
@@ -93,13 +93,13 @@ export default function AdminChatAssistant() {
           </div>
 
           {suggestions.length ? (
-            <div className="flex flex-wrap gap-2 border-t border-white/10 px-3 py-2">
+            <div className="flex flex-wrap gap-2 border-t border-zinc-200 px-3 py-2">
               {suggestions.slice(0, 4).map((suggestion) => (
                 <button
                   key={suggestion}
                   type="button"
                   onClick={() => sendMessage(suggestion)}
-                  className="rounded-full border border-white/10 px-3 py-1 text-xs text-gray-300 hover:border-red-500/40"
+                  className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 hover:border-red-500/40"
                 >
                   {suggestion}
                 </button>
@@ -108,7 +108,7 @@ export default function AdminChatAssistant() {
           ) : null}
 
           <form
-            className="flex gap-2 border-t border-white/10 p-3"
+            className="flex gap-2 border-t border-zinc-200 p-3"
             onSubmit={(event) => {
               event.preventDefault();
               sendMessage(input);
@@ -118,7 +118,7 @@ export default function AdminChatAssistant() {
               value={input}
               onChange={(event) => setInput(event.target.value)}
               placeholder="Ask about sales, stock, suppliers..."
-              className="flex-1 rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm outline-none focus:border-red-500"
+              className="flex-1 rounded-lg bg-zinc-50 border border-zinc-200 px-3 py-2 text-sm outline-none focus:border-red-500"
             />
             <button
               type="submit"

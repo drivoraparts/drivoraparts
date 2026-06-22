@@ -13,7 +13,7 @@ function riskClass(risk: string) {
 function trendClass(trend: string) {
   if (trend === "rising") return "text-green-400";
   if (trend === "falling") return "text-red-400";
-  return "text-gray-300";
+  return "text-zinc-600";
 }
 
 export default async function AdminForecastPage() {
@@ -49,16 +49,16 @@ export default async function AdminForecastPage() {
       </div>
 
       <div className="mt-8 grid gap-6 xl:grid-cols-2">
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Sales Forecast (30 days)</h2>
           {report.salesForecasts.length === 0 ? (
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-zinc-600">
               No forecast data yet. Analytics events will populate predictions.
             </p>
           ) : (
             <div className="overflow-x-auto">
               <table className="w-full min-w-[640px] text-left text-sm">
-                <thead className="border-b border-white/10 text-gray-400">
+                <thead className="border-b border-zinc-200 text-zinc-600">
                   <tr>
                     <th className="pb-3 pr-4">Product</th>
                     <th className="pb-3 pr-4">7d</th>
@@ -69,7 +69,7 @@ export default async function AdminForecastPage() {
                 </thead>
                 <tbody>
                   {report.salesForecasts.slice(0, 10).map((item) => (
-                    <tr key={item.productId} className="border-b border-white/5">
+                    <tr key={item.productId} className="border-b border-zinc-100">
                       <td className="py-3 pr-4">{item.productName}</td>
                       <td className="py-3 pr-4">{item.forecast7d}</td>
                       <td className="py-3 pr-4">{item.forecast30d}</td>
@@ -85,16 +85,16 @@ export default async function AdminForecastPage() {
           )}
         </section>
 
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Demand Trends</h2>
           {report.demandPredictions.length === 0 ? (
-            <p className="text-sm text-gray-400">No demand trends available yet.</p>
+            <p className="text-sm text-zinc-600">No demand trends available yet.</p>
           ) : (
             <ul className="space-y-3">
               {report.demandPredictions.slice(0, 10).map((item) => (
                 <li
                   key={item.productId}
-                  className="flex items-center justify-between border-b border-white/10 pb-3 last:border-0"
+                  className="flex items-center justify-between border-b border-zinc-200 pb-3 last:border-0"
                 >
                   <span>{item.productName}</span>
                   <span className={`font-semibold ${trendClass(item.trend)}`}>
@@ -109,16 +109,16 @@ export default async function AdminForecastPage() {
       </div>
 
       <div className="mt-8 grid gap-6 xl:grid-cols-2">
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Best Products to Restock</h2>
           {report.restockRecommendations.length === 0 ? (
-            <p className="text-sm text-gray-400">No restock alerts right now.</p>
+            <p className="text-sm text-zinc-600">No restock alerts right now.</p>
           ) : (
             <ul className="space-y-3">
               {report.restockRecommendations.map((item) => (
                 <li
                   key={item.productId}
-                  className="rounded-lg border border-white/10 bg-black/20 p-4"
+                  className="rounded-lg bg-zinc-50 border border-zinc-200 p-4"
                 >
                   <div className="flex items-center justify-between gap-4">
                     <span className="font-medium">{item.productName}</span>
@@ -126,7 +126,7 @@ export default async function AdminForecastPage() {
                       {item.risk.toUpperCase()}
                     </span>
                   </div>
-                  <p className="mt-2 text-sm text-gray-400">{item.reason}</p>
+                  <p className="mt-2 text-sm text-zinc-600">{item.reason}</p>
                   <p className="mt-2 text-sm">
                     Restock ~{item.suggestedRestockQty} units · projected demand{" "}
                     {item.projectedDemand30d}/30d
@@ -137,10 +137,10 @@ export default async function AdminForecastPage() {
           )}
         </section>
 
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Trending Engines</h2>
           {report.trendingEngines.length === 0 ? (
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-zinc-600">
               No engine platform momentum detected yet.
             </p>
           ) : (
@@ -148,7 +148,7 @@ export default async function AdminForecastPage() {
               {report.trendingEngines.map((engine) => (
                 <li
                   key={engine.platform}
-                  className="rounded-lg border border-white/10 bg-black/20 p-4"
+                  className="rounded-lg bg-zinc-50 border border-zinc-200 p-4"
                 >
                   <div className="flex items-center justify-between gap-4">
                     <span className="font-medium">{engine.platformLabel}</span>
@@ -157,7 +157,7 @@ export default async function AdminForecastPage() {
                       {engine.momentum}% momentum
                     </span>
                   </div>
-                  <p className="mt-2 text-sm text-gray-400">
+                  <p className="mt-2 text-sm text-zinc-600">
                     {engine.views7d} views · {engine.cartAdds7d} cart adds ·{" "}
                     {engine.unitsSold7d} sold
                   </p>

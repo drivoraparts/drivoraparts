@@ -51,7 +51,7 @@ export default function OrderStatusControl({
         value={status}
         disabled={loading}
         onChange={(e) => updateStatus(e.target.value)}
-        className="rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm capitalize"
+        className="rounded-lg bg-zinc-50 border border-zinc-200 px-3 py-2 text-sm capitalize"
       >
         {STATUSES.map((value) => (
           <option key={value} value={value}>
@@ -59,7 +59,7 @@ export default function OrderStatusControl({
           </option>
         ))}
       </select>
-      {message ? <span className="text-xs text-gray-400">{message}</span> : null}
+      {message ? <span className="text-xs text-zinc-600">{message}</span> : null}
     </div>
   );
 }

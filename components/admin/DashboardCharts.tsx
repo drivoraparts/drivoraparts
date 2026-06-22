@@ -33,10 +33,10 @@ function ChartPanel({
   children: React.ReactNode;
 }) {
   return (
-    <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md">
+    <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6 shadow-sm ">
       <div className="mb-6">
         <h2 className="text-xl font-bold">{title}</h2>
-        {subtitle ? <p className="mt-1 text-sm text-gray-400">{subtitle}</p> : null}
+        {subtitle ? <p className="mt-1 text-sm text-zinc-600">{subtitle}</p> : null}
       </div>
       <div className="h-72 w-full">{children}</div>
     </section>
@@ -148,7 +148,7 @@ export default function DashboardCharts({ data }: { data: DashboardChartData }) 
         subtitle="Views and cart adds for highest-performing products"
       >
         {data.topProducts.length === 0 ? (
-          <p className="text-sm text-gray-400">No product performance data yet.</p>
+          <p className="text-sm text-zinc-600">No product performance data yet.</p>
         ) : (
           <ResponsiveContainer width="100%" height="100%">
             <BarChart

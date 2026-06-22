@@ -17,9 +17,9 @@ export default async function AdminProductsPage() {
 
   return (
     <AdminShell title="Products">
-      <div className="overflow-x-auto rounded-lg border border-white/10 bg-white/[0.06]">
+      <div className="overflow-x-auto rounded-lg bg-white shadow-sm border border-zinc-200">
         <table className="w-full min-w-[720px] text-left text-sm">
-          <thead className="border-b border-white/10 text-gray-400">
+          <thead className="border-b border-zinc-200 text-zinc-600">
             <tr>
               <th className="p-4">Product</th>
               <th className="p-4">Category</th>
@@ -30,9 +30,9 @@ export default async function AdminProductsPage() {
           </thead>
           <tbody>
             {products.map((product) => (
-              <tr key={product.id} className="border-b border-white/5 last:border-0">
+              <tr key={product.id} className="border-b border-zinc-100 last:border-0">
                 <td className="p-4 font-medium">{product.name}</td>
-                <td className="p-4 text-gray-300">{product.category}</td>
+                <td className="p-4 text-zinc-600">{product.category}</td>
                 <td className="p-4">${product.price.toFixed(2)}</td>
                 <td className="p-4">{viewMap.get(product.id) ?? 0}</td>
                 <td className="p-4">{cartMap.get(product.id) ?? 0}</td>

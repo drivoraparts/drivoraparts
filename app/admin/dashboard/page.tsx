@@ -88,10 +88,10 @@ export default async function AdminDashboardPage() {
       <AdvancedCharts />
 
       <section className="mt-8 grid gap-6 lg:grid-cols-2">
-        <div className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Low Inventory Alerts</h2>
           {lowInventoryAlerts.length === 0 ? (
-            <p className="text-sm text-gray-400">No inventory alerts.</p>
+            <p className="text-sm text-zinc-600">No inventory alerts.</p>
           ) : (
             <ul className="space-y-2 text-sm">
               {lowInventoryAlerts.slice(0, 6).map((alert) => (
@@ -106,16 +106,16 @@ export default async function AdminDashboardPage() {
           )}
         </div>
 
-        <div className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Top Products</h2>
           {topProducts.length === 0 ? (
-            <p className="text-sm text-gray-400">No product ranking data yet.</p>
+            <p className="text-sm text-zinc-600">No product ranking data yet.</p>
           ) : (
             <ul className="space-y-2 text-sm">
               {topProducts.slice(0, 6).map((product) => (
                 <li key={product.productId} className="flex justify-between gap-4">
                   <span>{product.name}</span>
-                  <span className="text-gray-400">score {product.score}</span>
+                  <span className="text-zinc-600">score {product.score}</span>
                 </li>
               ))}
             </ul>

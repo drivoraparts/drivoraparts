@@ -17,7 +17,7 @@ export default async function AdminAnalyticsPage() {
       </div>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Top Viewed Products</h2>
           <ul className="space-y-2 text-sm">
             {summary.topViewedProducts.map((product) => (
@@ -29,7 +29,7 @@ export default async function AdminAnalyticsPage() {
           </ul>
         </section>
 
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Top Cart Products</h2>
           <ul className="space-y-2 text-sm">
             {summary.topCartProducts.map((product) => (
@@ -42,11 +42,11 @@ export default async function AdminAnalyticsPage() {
         </section>
       </div>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Recent Events</h2>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[640px] text-left text-sm">
-            <thead className="border-b border-white/10 text-gray-400">
+            <thead className="border-b border-zinc-200 text-zinc-600">
               <tr>
                 <th className="pb-3 pr-4">Event</th>
                 <th className="pb-3 pr-4">Payload</th>
@@ -55,12 +55,12 @@ export default async function AdminAnalyticsPage() {
             </thead>
             <tbody>
               {summary.recentEvents.map((event) => (
-                <tr key={event.id} className="border-b border-white/5">
+                <tr key={event.id} className="border-b border-zinc-100">
                   <td className="py-3 pr-4">{event.name}</td>
-                  <td className="py-3 pr-4 font-mono text-xs text-gray-400">
+                  <td className="py-3 pr-4 font-mono text-xs text-zinc-600">
                     {JSON.stringify(event.payload).slice(0, 120)}
                   </td>
-                  <td className="py-3 text-gray-400">
+                  <td className="py-3 text-zinc-600">
                     {new Date(event.createdAt).toLocaleString()}
                   </td>
                 </tr>

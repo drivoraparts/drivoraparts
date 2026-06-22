@@ -23,7 +23,7 @@ export default async function AdminOrdersPage() {
   return (
     <AdminShell title="Order Management">
       {orders.length === 0 ? (
-        <p className="text-gray-400">No orders recorded yet.</p>
+        <p className="text-zinc-600">No orders recorded yet.</p>
       ) : (
         <div className="space-y-4">
           {orders.map((order) => {
@@ -31,22 +31,22 @@ export default async function AdminOrdersPage() {
             return (
               <article
                 key={order.id}
-                className="rounded-lg border border-white/10 bg-white/[0.06] p-6"
+                className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6"
               >
                 <div className="mb-4 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                   <div className="space-y-2">
                     <div>
-                      <p className="text-sm text-gray-400">Order ID</p>
+                      <p className="text-sm text-zinc-600">Order ID</p>
                       <p className="font-mono text-sm">{order.id}</p>
                     </div>
                     {payment ? (
-                      <p className="text-xs text-gray-400">
+                      <p className="text-xs text-zinc-600">
                         Payment: {formatPaymentMethod(payment.provider, payment.metadata)}{" "}
                         · {payment.status}
                       </p>
                     ) : null}
                     {order.customer ? (
-                      <div className="text-sm text-gray-300">
+                      <div className="text-sm text-zinc-600">
                         <p>{order.customer.full_name}</p>
                         <p>{order.customer.email}</p>
                         {order.customer.phone ? <p>{order.customer.phone}</p> : null}
@@ -65,7 +65,7 @@ export default async function AdminOrdersPage() {
                   </div>
                 </div>
 
-                <ul className="space-y-2 border-t border-white/10 pt-4 text-sm">
+                <ul className="space-y-2 border-t border-zinc-200 pt-4 text-sm">
                   {order.items.map((item) => (
                     <li
                       key={item.id}

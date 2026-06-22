@@ -54,7 +54,7 @@ export default function SupportCenterPanel({
 
   return (
     <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.2fr]">
-      <section className="rounded-lg border border-white/10 bg-white/[0.06] p-4">
+      <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-4">
         <h2 className="mb-4 text-lg font-bold">Inbox</h2>
         <div className="max-h-[560px] space-y-2 overflow-y-auto">
           {messages.map((message) => (
@@ -68,26 +68,26 @@ export default function SupportCenterPanel({
               }}
               className={`w-full rounded-lg border px-4 py-3 text-left ${
                 selectedId === message.id
-                  ? "border-red-500/40 bg-white/[0.08]"
-                  : "border-white/10 bg-black/20"
+                  ? "border-red-500/40 bg-red-50 border border-red-100"
+                  : "border-zinc-200 bg-zinc-50 border border-zinc-200"
               }`}
             >
               <p className="font-medium">{message.subject}</p>
-              <p className="text-xs text-gray-400">{message.customer_email}</p>
+              <p className="text-xs text-zinc-600">{message.customer_email}</p>
               <p className="mt-1 text-xs capitalize text-gray-500">{message.status}</p>
             </button>
           ))}
         </div>
       </section>
 
-      <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         {selected ? (
           <>
             <h2 className="text-xl font-bold">{selected.subject}</h2>
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-sm text-zinc-600">
               {selected.customer_name ?? "Customer"} — {selected.customer_email}
             </p>
-            <p className="mt-4 whitespace-pre-wrap text-sm text-gray-200">
+            <p className="mt-4 whitespace-pre-wrap text-sm text-zinc-700">
               {selected.message}
             </p>
 
@@ -97,7 +97,7 @@ export default function SupportCenterPanel({
                 onChange={(e) =>
                   setStatus(e.target.value as SupportMessage["status"])
                 }
-                className="w-full rounded-lg border border-white/10 bg-black/40 px-4 py-3 text-sm capitalize"
+                className="w-full rounded-lg bg-zinc-50 border border-zinc-200 px-4 py-3 text-sm capitalize"
               >
                 <option value="open">open</option>
                 <option value="in_progress">in_progress</option>
@@ -110,7 +110,7 @@ export default function SupportCenterPanel({
                 onChange={(e) => setReply(e.target.value)}
                 rows={5}
                 placeholder="Admin reply..."
-                className="w-full rounded-lg border border-white/10 bg-black/40 px-4 py-3 text-sm outline-none focus:border-red-500"
+                className="w-full rounded-lg bg-zinc-50 border border-zinc-200 px-4 py-3 text-sm outline-none focus:border-red-500"
               />
 
               <button
@@ -124,7 +124,7 @@ export default function SupportCenterPanel({
             </div>
           </>
         ) : (
-          <p className="text-sm text-gray-400">Select a support message.</p>
+          <p className="text-sm text-zinc-600">Select a support message.</p>
         )}
       </section>
     </div>

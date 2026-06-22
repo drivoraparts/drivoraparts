@@ -38,33 +38,33 @@ export default async function AdminPaymentsPage() {
         />
       </div>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Integration Endpoints</h2>
-        <ul className="space-y-2 text-sm text-gray-300">
+        <ul className="space-y-2 text-sm text-zinc-600">
           <li>
-            <span className="text-gray-400">Checkout:</span> POST /api/checkout
+            <span className="text-zinc-600">Checkout:</span> POST /api/checkout
           </li>
           <li>
-            <span className="text-gray-400">Create invoice:</span> POST
+            <span className="text-zinc-600">Create invoice:</span> POST
             /api/payments/cryptomus/create
           </li>
           <li>
-            <span className="text-gray-400">Webhook:</span> {config.callbackUrl}
+            <span className="text-zinc-600">Webhook:</span> {config.callbackUrl}
           </li>
           <li>
-            <span className="text-gray-400">Return URL:</span> {config.returnUrl}
+            <span className="text-zinc-600">Return URL:</span> {config.returnUrl}
           </li>
         </ul>
       </section>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Payment Records</h2>
         {payments.length === 0 ? (
-          <p className="text-sm text-gray-400">No payment records yet.</p>
+          <p className="text-sm text-zinc-600">No payment records yet.</p>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full min-w-[760px] text-left text-sm">
-              <thead className="border-b border-white/10 text-gray-400">
+              <thead className="border-b border-zinc-200 text-zinc-600">
                 <tr>
                   <th className="pb-3 pr-4">Order</th>
                   <th className="pb-3 pr-4">Provider</th>
@@ -75,14 +75,14 @@ export default async function AdminPaymentsPage() {
               </thead>
               <tbody>
                 {payments.map((payment) => (
-                  <tr key={payment.id} className="border-b border-white/5">
+                  <tr key={payment.id} className="border-b border-zinc-100">
                     <td className="py-3 pr-4 font-mono text-xs">{payment.order_id}</td>
                     <td className="py-3 pr-4">{payment.provider}</td>
                     <td className="py-3 pr-4">
                       {Number(payment.amount).toFixed(2)} {payment.currency}
                     </td>
                     <td className="py-3 pr-4 capitalize">{payment.status}</td>
-                    <td className="py-3 text-gray-400">
+                    <td className="py-3 text-zinc-600">
                       {new Date(payment.created_at).toLocaleString()}
                     </td>
                   </tr>

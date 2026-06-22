@@ -77,11 +77,11 @@ export default function SecuritySettingsForm() {
   return (
     <AdminShell title="Security Settings">
       <div className="grid gap-8 xl:grid-cols-2">
-        <form onSubmit={handlePasswordSubmit} className="space-y-5 rounded-xl border border-white/10 bg-white/[0.04] p-6">
+        <form onSubmit={handlePasswordSubmit} className="space-y-5 rounded-xl bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="text-lg font-semibold">Change password</h2>
 
           <div>
-            <label htmlFor="current-password" className="mb-2 block text-sm text-zinc-400">
+            <label htmlFor="current-password" className="mb-2 block text-sm text-zinc-600">
               Current password
             </label>
             <input
@@ -89,13 +89,13 @@ export default function SecuritySettingsForm() {
               type="password"
               value={currentPassword}
               onChange={(event) => setCurrentPassword(event.target.value)}
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 outline-none focus:border-red-400/60"
+              className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="new-password" className="mb-2 block text-sm text-zinc-400">
+            <label htmlFor="new-password" className="mb-2 block text-sm text-zinc-600">
               New password
             </label>
             <input
@@ -104,13 +104,13 @@ export default function SecuritySettingsForm() {
               minLength={8}
               value={newPassword}
               onChange={(event) => setNewPassword(event.target.value)}
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 outline-none focus:border-red-400/60"
+              className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="confirm-password" className="mb-2 block text-sm text-zinc-400">
+            <label htmlFor="confirm-password" className="mb-2 block text-sm text-zinc-600">
               Confirm new password
             </label>
             <input
@@ -119,7 +119,7 @@ export default function SecuritySettingsForm() {
               minLength={8}
               value={confirmPassword}
               onChange={(event) => setConfirmPassword(event.target.value)}
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 outline-none focus:border-red-400/60"
+              className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
               required
             />
           </div>
@@ -133,9 +133,9 @@ export default function SecuritySettingsForm() {
           </button>
         </form>
 
-        <div className="space-y-5 rounded-xl border border-white/10 bg-white/[0.04] p-6">
+        <div className="space-y-5 rounded-xl bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="text-lg font-semibold">Session control</h2>
-          <p className="text-sm text-zinc-400">
+          <p className="text-sm text-zinc-600">
             Invalidate all active admin sessions and force a fresh login on every device.
             This also regenerates the admin session token version so existing JWTs stop working.
           </p>
@@ -143,7 +143,7 @@ export default function SecuritySettingsForm() {
             type="button"
             onClick={invalidateSessions}
             disabled={sessionLoading}
-            className="rounded-xl border border-white/10 px-5 py-3 text-sm font-semibold hover:border-red-500/40 disabled:opacity-60"
+            className="rounded-xl border border-zinc-200 px-5 py-3 text-sm font-semibold hover:border-red-500/40 disabled:opacity-60"
           >
             {sessionLoading ? "Clearing..." : "Logout all sessions"}
           </button>
@@ -151,12 +151,12 @@ export default function SecuritySettingsForm() {
       </div>
 
       {error ? (
-        <p className="mt-6 rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-100">
+        <p className="mt-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
           {error}
         </p>
       ) : null}
       {message ? (
-        <p className="mt-6 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-100">
+        <p className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
           {message}
         </p>
       ) : null}

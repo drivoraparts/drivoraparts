@@ -52,7 +52,7 @@ export default function SystemSettingsForm({
     <AdminShell title="System Settings">
       <form onSubmit={handleSubmit} className="max-w-xl space-y-5">
         <div>
-          <label htmlFor="site-url" className="mb-2 block text-sm text-zinc-400">
+          <label htmlFor="site-url" className="mb-2 block text-sm text-zinc-600">
             Site URL
           </label>
           <input
@@ -60,33 +60,33 @@ export default function SystemSettingsForm({
             type="url"
             value={initialSiteUrl}
             disabled
-            className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-zinc-400"
+            className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 text-zinc-600"
           />
-          <p className="mt-2 text-xs text-zinc-500">
+          <p className="mt-2 text-xs text-zinc-600">
             Managed via NEXT_PUBLIC_SITE_URL in your deployment environment.
           </p>
         </div>
 
         <div>
-          <label htmlFor="payment-mode" className="mb-2 block text-sm text-zinc-400">
+          <label htmlFor="payment-mode" className="mb-2 block text-sm text-zinc-600">
             Payment mode
           </label>
           <select
             id="payment-mode"
             value={paymentMode}
             onChange={(event) => setPaymentMode(event.target.value as PaymentMode)}
-            className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 outline-none focus:border-red-400/60"
+            className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
           >
             <option value="auto">Auto (Cryptomus if configured)</option>
             <option value="cryptomus">Cryptomus only</option>
             <option value="manual">Manual fallback only</option>
           </select>
-          <p className="mt-2 text-xs text-zinc-500">
+          <p className="mt-2 text-xs text-zinc-600">
             Cryptomus keys {cryptomusConfigured ? "are configured" : "are not configured"}.
           </p>
         </div>
 
-        <label className="flex items-center gap-3 rounded-xl border border-white/10 bg-black/20 px-4 py-3">
+        <label className="flex items-center gap-3 rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3">
           <input
             type="checkbox"
             checked={tawkEnabled}
@@ -97,12 +97,12 @@ export default function SystemSettingsForm({
         </label>
 
         {error ? (
-          <p className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-100">
+          <p className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
             {error}
           </p>
         ) : null}
         {message ? (
-          <p className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-100">
+          <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
             {message}
           </p>
         ) : null}

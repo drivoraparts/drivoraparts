@@ -13,11 +13,11 @@ export default async function AdminLogsPage() {
 
   return (
     <AdminShell title="System Logs">
-      <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Activity Logs</h2>
         <div className="max-h-[420px] overflow-y-auto">
           <table className="w-full min-w-[760px] text-left text-sm">
-            <thead className="sticky top-0 border-b border-white/10 bg-black/80 text-gray-400">
+            <thead className="sticky top-0 border-b border-zinc-200 bg-zinc-100 text-zinc-600">
               <tr>
                 <th className="pb-3 pr-4">Time</th>
                 <th className="pb-3 pr-4">Level</th>
@@ -27,13 +27,13 @@ export default async function AdminLogsPage() {
             </thead>
             <tbody>
               {activityLogs.map((log) => (
-                <tr key={log.id} className="border-b border-white/5 align-top">
-                  <td className="py-3 pr-4 whitespace-nowrap text-gray-400">
+                <tr key={log.id} className="border-b border-zinc-100 align-top">
+                  <td className="py-3 pr-4 whitespace-nowrap text-zinc-600">
                     {new Date(log.created_at).toLocaleString()}
                   </td>
                   <td className="py-3 pr-4 capitalize">{log.level}</td>
                   <td className="py-3 pr-4 font-mono text-xs">{log.message}</td>
-                  <td className="py-3 font-mono text-xs text-gray-400">
+                  <td className="py-3 font-mono text-xs text-zinc-600">
                     {JSON.stringify(log.context ?? {}).slice(0, 180)}
                   </td>
                 </tr>
@@ -43,11 +43,11 @@ export default async function AdminLogsPage() {
         </div>
       </section>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Admin Audit Logs</h2>
         <div className="max-h-[420px] overflow-y-auto">
           <table className="w-full min-w-[760px] text-left text-sm">
-            <thead className="sticky top-0 border-b border-white/10 bg-black/80 text-gray-400">
+            <thead className="sticky top-0 border-b border-zinc-200 bg-zinc-100 text-zinc-600">
               <tr>
                 <th className="pb-3 pr-4">Time</th>
                 <th className="pb-3 pr-4">Admin</th>
@@ -58,14 +58,14 @@ export default async function AdminLogsPage() {
             </thead>
             <tbody>
               {auditLogs.map((log) => (
-                <tr key={log.id} className="border-b border-white/5 align-top">
-                  <td className="py-3 pr-4 whitespace-nowrap text-gray-400">
+                <tr key={log.id} className="border-b border-zinc-100 align-top">
+                  <td className="py-3 pr-4 whitespace-nowrap text-zinc-600">
                     {new Date(log.created_at).toLocaleString()}
                   </td>
                   <td className="py-3 pr-4">{log.user_email ?? "—"}</td>
                   <td className="py-3 pr-4 font-mono text-xs">{log.action}</td>
                   <td className="py-3 pr-4 font-mono text-xs">{log.resource ?? "—"}</td>
-                  <td className="py-3 font-mono text-xs text-gray-400">
+                  <td className="py-3 font-mono text-xs text-zinc-600">
                     {JSON.stringify(log.metadata ?? {}).slice(0, 180)}
                   </td>
                 </tr>

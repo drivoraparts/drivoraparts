@@ -28,14 +28,14 @@ function ActionList({
   empty: string;
 }) {
   return (
-    <div className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+    <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
       <h2 className="mb-4 text-xl font-bold">{title}</h2>
       {items.length === 0 ? (
-        <p className="text-sm text-gray-400">{empty}</p>
+        <p className="text-sm text-zinc-600">{empty}</p>
       ) : (
         <ul className="space-y-3 text-sm">
           {items.map((item) => (
-            <li key={`${item.type}-${item.productId}-${item.productName}`} className="rounded-lg border border-white/5 p-3">
+            <li key={`${item.type}-${item.productId}-${item.productName}`} className="rounded-lg border border-zinc-100 p-3">
               <div className="flex items-start justify-between gap-3">
                 <span className="font-medium">{item.productName}</span>
                 <span
@@ -44,13 +44,13 @@ function ActionList({
                       ? "text-red-400"
                       : item.priority === "high"
                         ? "text-yellow-300"
-                        : "text-gray-400"
+                        : "text-zinc-600"
                   }
                 >
                   {item.priority}
                 </span>
               </div>
-              <p className="mt-2 text-gray-300">{item.reason}</p>
+              <p className="mt-2 text-zinc-600">{item.reason}</p>
               <p className="mt-1 text-xs text-gray-500">{item.expectedImpact}</p>
             </li>
           ))}
@@ -72,9 +72,9 @@ export default function AutopilotIntelligence() {
 
   if (!data) {
     return (
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="text-xl font-bold">Autopilot Intelligence</h2>
-        <p className="mt-2 text-sm text-gray-400">Loading AI decisions…</p>
+        <p className="mt-2 text-sm text-zinc-600">Loading AI decisions…</p>
       </section>
     );
   }
@@ -83,7 +83,7 @@ export default function AutopilotIntelligence() {
     <section className="mt-8 space-y-6">
       <div className="rounded-lg border border-red-500/20 bg-red-500/5 p-6">
         <h2 className="text-xl font-bold">Autopilot Intelligence</h2>
-        <p className="mt-2 text-sm text-gray-300">{data.summary}</p>
+        <p className="mt-2 text-sm text-zinc-600">{data.summary}</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">

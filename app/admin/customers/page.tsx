@@ -20,11 +20,11 @@ export default async function AdminCustomersPage() {
         />
       </div>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Recent Customers</h2>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[720px] text-left text-sm">
-            <thead className="border-b border-white/10 text-gray-400">
+            <thead className="border-b border-zinc-200 text-zinc-600">
               <tr>
                 <th className="pb-3 pr-4">Name</th>
                 <th className="pb-3 pr-4">Email</th>
@@ -34,11 +34,11 @@ export default async function AdminCustomersPage() {
             </thead>
             <tbody>
               {customers.map((customer) => (
-                <tr key={customer.id} className="border-b border-white/5">
+                <tr key={customer.id} className="border-b border-zinc-100">
                   <td className="py-3 pr-4">{customer.full_name}</td>
                   <td className="py-3 pr-4">{customer.email}</td>
                   <td className="py-3 pr-4">{customer.phone ?? "—"}</td>
-                  <td className="py-3 text-gray-400">
+                  <td className="py-3 text-zinc-600">
                     {new Date(customer.created_at).toLocaleDateString()}
                   </td>
                 </tr>

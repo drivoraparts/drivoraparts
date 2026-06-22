@@ -92,26 +92,26 @@ export default async function AdminInsightsPage() {
 
       <section className="mt-8 rounded-lg border border-red-500/20 bg-red-500/5 p-6">
         <h2 className="mb-4 text-xl font-bold">Today&apos;s AI Decisions</h2>
-        <p className="mb-4 text-sm text-gray-300">
+        <p className="mb-4 text-sm text-zinc-600">
           Priority actions: {(brain.topActions ?? []).join(" · ") || "Collecting signals…"}
         </p>
         <ul className="space-y-2 text-sm">
           {(brain.productDecisions ?? []).slice(0, 6).map((decision) => (
             <li
               key={`${decision.productId}-${decision.action}`}
-              className="flex justify-between gap-4 rounded-lg border border-white/5 p-3"
+              className="flex justify-between gap-4 rounded-lg border border-zinc-100 p-3"
             >
               <span>
                 {decision.productName} → {decision.action}
               </span>
-              <span className="text-gray-400">{decision.confidence}%</span>
+              <span className="text-zinc-600">{decision.confidence}%</span>
             </li>
           ))}
         </ul>
       </section>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Revenue Predictions</h2>
           <div className="space-y-3 text-sm">
             <p>
@@ -126,17 +126,17 @@ export default async function AdminInsightsPage() {
                 ${(daily.revenuePrediction?.next7Days ?? 0).toLocaleString()}
               </span>
             </p>
-            <p className="text-gray-400">
+            <p className="text-zinc-600">
               Monthly projection: ${(insights?.estimatedMonthlyRevenue ?? 0).toLocaleString()}
             </p>
           </div>
         </section>
 
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Risk Alerts</h2>
           <ul className="space-y-2 text-sm">
             {(daily.riskAlerts ?? []).length === 0 ? (
-              <li className="text-gray-400">No critical risks flagged.</li>
+              <li className="text-zinc-600">No critical risks flagged.</li>
             ) : (
               daily.riskAlerts.map((alert) => (
                 <li key={alert} className="text-yellow-200">
@@ -148,11 +148,11 @@ export default async function AdminInsightsPage() {
         </section>
       </div>
 
-      <section className="mt-8 rounded-lg border border-white/10 bg-white/[0.06] p-6">
+      <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="mb-4 text-xl font-bold">Growth Opportunities</h2>
         <ul className="space-y-2 text-sm">
           {(daily.growthOpportunities ?? []).length === 0 ? (
-            <li className="text-gray-400">Collecting trend signals…</li>
+            <li className="text-zinc-600">Collecting trend signals…</li>
           ) : (
             daily.growthOpportunities.map((item) => (
               <li key={item} className="text-green-300">
@@ -164,16 +164,16 @@ export default async function AdminInsightsPage() {
       </section>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Top Products</h2>
           {topProducts.length === 0 ? (
-            <p className="text-sm text-gray-400">No ranking data yet.</p>
+            <p className="text-sm text-zinc-600">No ranking data yet.</p>
           ) : (
             <ul className="space-y-2 text-sm">
               {topProducts.map((product) => (
                 <li key={product.productId} className="flex justify-between gap-4">
                   <span>{product.name}</span>
-                  <span className="text-gray-400">
+                  <span className="text-zinc-600">
                     {product.views} views · {product.cartAdds} carts
                   </span>
                 </li>
@@ -182,16 +182,16 @@ export default async function AdminInsightsPage() {
           )}
         </section>
 
-        <section className="rounded-lg border border-white/10 bg-white/[0.06] p-6">
+        <section className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="mb-4 text-xl font-bold">Slow Products</h2>
           <ul className="space-y-2 text-sm">
             {slowProducts.length === 0 ? (
-              <li className="text-gray-400">No slow movers detected.</li>
+              <li className="text-zinc-600">No slow movers detected.</li>
             ) : (
               slowProducts.map((product) => (
                 <li key={product.productId} className="flex justify-between gap-4">
                   <span>{product.name}</span>
-                  <span className="text-gray-400">{product.views} views</span>
+                  <span className="text-zinc-600">{product.views} views</span>
                 </li>
               ))
             )}

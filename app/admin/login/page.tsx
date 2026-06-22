@@ -3,7 +3,7 @@ import AdminLoginForm from "./AdminLoginForm";
 
 function LoginFallback() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#050505] text-zinc-400">
+    <main className="flex min-h-screen items-center justify-center bg-zinc-50 text-zinc-600">
       Loading sign in...
     </main>
   );
