@@ -1,3 +1,4 @@
+import { trackEvent } from "@/lib/analytics/tracker";
 import { clearCart } from "./cart";
 import { reduceStock } from "./stock";
 import { addOrder } from "./orders";
@@ -31,6 +32,18 @@ export const createOrder = (items: OrderItem[]): Order | null => {
   };
 
   addOrder(order);
+
+  trackEvent("order_completed", {
+    orderId: order.id,
+    total: order.total,
+    itemCount: snapshotItems.reduce((sum, item) => sum + item.quantity, 0),
+    products: snapshotItems.map((item) => ({
+      productId: item.productId,
+      productName: item.name,
+      quantity: item.quantity,
+      price: item.price,
+    })),
+  });
 
   snapshotItems.forEach((item) => reduceStock(item.productId, item.quantity));
 

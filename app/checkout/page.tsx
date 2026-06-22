@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
+import { trackEvent } from "@/lib/analytics/client";
 import { showToast } from "@/lib/store/toastStore";
 
 const glassCard =
@@ -16,6 +17,7 @@ export default function CheckoutPage() {
 
   const cart = useCartStore((s) => s.items);
   const clearCart = useCartStore((s) => s.clearCart);
+  const checkoutTracked = useRef(false);
 
   useEffect(() => {
     if (useCartStore.persist.hasHydrated()) {
@@ -27,6 +29,21 @@ export default function CheckoutPage() {
       setHydrated(true);
     });
   }, []);
+
+  useEffect(() => {
+    if (!hydrated || !cart.length || checkoutTracked.current) return;
+
+    checkoutTracked.current = true;
+    const checkoutTotal = cart.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0
+    );
+
+    trackEvent("checkout_start", {
+      itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
+      total: checkoutTotal,
+    });
+  }, [hydrated, cart]);
 
   const subtotal = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -69,6 +86,13 @@ export default function CheckoutPage() {
         showToast("Checkout failed");
         return;
       }
+
+      const order = await res.json();
+      trackEvent("order_completed", {
+        orderId: order.id,
+        total: order.total,
+        itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
+      });
 
       clearCart();
       showToast("Order placed");

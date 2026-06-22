@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useCart } from "@/context/CartContext";
+import { trackEvent } from "@/lib/analytics/client";
 import { productHasStock } from "@/lib/stock";
 import { showToast } from "@/lib/store/toastStore";
 
@@ -34,6 +35,12 @@ export default function AddToCartButton({
 
     setLoading(true);
     addToCart(product, quantity);
+    trackEvent("add_to_cart", {
+      productId: product.id,
+      productName: product.name,
+      price: product.price,
+      quantity,
+    });
     showToast("Added to cart");
     setTimeout(() => setLoading(false), 300);
   };

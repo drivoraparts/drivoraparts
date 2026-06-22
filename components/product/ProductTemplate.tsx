@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Product } from "@/data/store";
+import { trackEvent } from "@/lib/analytics/client";
 import {
   getProductById as getInventoryProduct,
   getProductCatalogMeta,
@@ -45,6 +46,14 @@ function MetaRow({ label, value }: { label: string; value: string }) {
 
 export default function ProductTemplate({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
+
+  useEffect(() => {
+    trackEvent("product_view", {
+      productId: product.id,
+      productName: product.name,
+      category: product.category,
+    });
+  }, [product.id, product.name, product.category]);
 
   const inventoryProduct = getInventoryProduct(product.id);
   const inStock = inventoryProduct?.stock !== false;
