@@ -1,10 +1,11 @@
 # Scripts
 
-Do **not** run these in CI or before deploy:
+## Safe
 
-- `add-edge-runtime.mjs` — bulk-injects `export const runtime = 'edge'` (obsolete; breaks OpenNext)
-- `remove-edge-runtime-ui.mjs` — one-time cleanup helper
-- `wrap-client-pages.mjs` — obsolete legacy adapter workaround
-- `move-edge-runtime-top.mjs` — obsolete edge export ordering fix
+- `remove-edge-runtime-ui.mjs` — one-time helper to strip obsolete `runtime = 'edge'` exports (OpenNext uses Node runtime on Workers)
 
-Production uses `@opennextjs/cloudflare` with Node.js runtime on Workers (`nodejs_compat`).
+## Removed (do not restore)
+
+Legacy `@cloudflare/next-on-pages` helpers were deleted — they injected edge runtime and break OpenNext builds.
+
+Production deploy: see `docs/CLOUDFLARE-DEPLOY.md`.

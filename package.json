@@ -9,6 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "pages:build": "npx opennextjs-cloudflare build",
+    "pages:deploy": "npx opennextjs-cloudflare deploy",
     "open-next:build": "npx opennextjs-cloudflare build",
     "preview:cloudflare": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare preview",
     "deploy:cloudflare": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare deploy",
