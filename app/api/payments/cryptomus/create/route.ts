@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from "next/server";
 import { getOrderById } from "@/lib/db/orders";
 import { createCheckoutPayment } from "@/lib/payments";

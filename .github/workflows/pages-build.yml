@@ -3,32 +3,35 @@ name: Pages Build and Deploy
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  legacy-build:
+    name: Legacy (next-on-pages) — production default
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '24'
-          cache: 'npm'
+          node-version: "20"
+          cache: npm
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci --legacy-peer-deps
 
-      - name: Build for Cloudflare Pages
+      - name: Build with next-on-pages
         run: npm run pages:build
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+      - name: Verify legacy output
+        run: |
+          test -d .vercel/output/static
+          echo "Legacy build output ready for Cloudflare Pages"
+
+      - uses: actions/upload-artifact@v4
         with:
-          name: pages-build
-          path: |
-            out
+          name: pages-build-legacy
+          path: .vercel/output/static
 
       - name: Publish to Cloudflare Pages (optional)
         if: ${{ secrets.CLOUDFLARE_API_TOKEN && secrets.CLOUDFLARE_PROJECT_NAME && secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -38,7 +41,37 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           npm install -g wrangler
-          if [ -d "out" ]; then
-            wrangler pages publish out --project-name "$CLOUDFLARE_PROJECT_NAME" --branch main --account-id "$CLOUDFLARE_ACCOUNT_ID"
-          else
-            echo "No out directory found; build artifact uploaded instead."
+          wrangler pages deploy .vercel/output/static \
+            --project-name "$CLOUDFLARE_PROJECT_NAME" \
+            --branch main \
+            --commit-dirty=true
+
+  opennext-validate:
+    name: OpenNext build validation (non-deploy)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Build with OpenNext Cloudflare
+        run: npm run open-next:build
+
+      - name: Verify OpenNext output
+        run: |
+          test -f .open-next/worker.js
+          test -d .open-next/assets
+          echo "OpenNext build succeeded — ready for Phase 6 cutover"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pages-build-opennext
+          path: |
+            .open-next/worker.js
+            .open-next/assets

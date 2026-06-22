@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from "next/server";
 import { resetPasswordWithToken } from "@/lib/auth/password-reset";
 import { logActivity } from "@/lib/monitoring/activity";

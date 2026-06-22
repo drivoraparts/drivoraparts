@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { handleAdminLogin } from "@/lib/auth/handle-login";
 
 /** @deprecated Use POST /api/auth/login */
