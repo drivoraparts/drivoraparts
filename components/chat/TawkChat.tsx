@@ -1,48 +1,49 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Script from "next/script";
-
-const TAWK_PROPERTY_ID = "6a392868452f781d473b4ceb";
-const TAWK_WIDGET_ID = "default";
-const TAWK_EMBED_SRC = `https://embed.tawk.to/${TAWK_PROPERTY_ID}/${TAWK_WIDGET_ID}`;
+import {
+  TAWK_EMBED_SRC,
+  TAWK_PROPERTY_ID,
+} from "@/lib/config/tawk";
 
 declare global {
   interface Window {
     Tawk_API?: {
       onLoaded?: () => void;
       showWidget?: () => void;
+      hideWidget?: () => void;
       [key: string]: unknown;
     };
     Tawk_LoadStart?: Date;
+    __TAWK_CHAT_INSTALLED__?: boolean;
   }
 }
 
 export default function TawkChat() {
-  const [enabled, setEnabled] = useState(true);
-
   useEffect(() => {
+    console.log("[Tawk] Component Mounted");
+    console.log("[Tawk] Site ID: 6a392868452f781d473b4ceb");
+    window.Tawk_API = window.Tawk_API || {};
+
     let cancelled = false;
 
     fetch("/api/public/store-config")
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (!cancelled && data?.tawkEnabled === false) {
-          setEnabled(false);
+        if (!cancelled && data?.tawkEnabled === false && window.Tawk_API?.hideWidget) {
+          window.Tawk_API.hideWidget();
+          console.log("[Tawk] Widget hidden via admin system settings");
         }
       })
       .catch(() => {
-        // Keep widget enabled when config is unavailable.
+        // Ignore config failures; widget stays visible.
       });
 
     return () => {
       cancelled = true;
     };
   }, []);
-
-  if (!enabled) {
-    return null;
-  }
 
   return (
     <>
@@ -51,8 +52,8 @@ export default function TawkChat() {
           window.Tawk_API = window.Tawk_API || {};
           window.Tawk_LoadStart = new Date();
           window.Tawk_API.onLoaded = function () {
-            console.log('[Tawk] Widget Loaded');
-            console.log('[Tawk] Property: ${TAWK_PROPERTY_ID}');
+            console.log("[Tawk] Widget Loaded");
+            console.log("[Tawk] Site ID: ${TAWK_PROPERTY_ID}");
             if (window.Tawk_API && window.Tawk_API.showWidget) {
               window.Tawk_API.showWidget();
             }
@@ -64,10 +65,15 @@ export default function TawkChat() {
         src={TAWK_EMBED_SRC}
         strategy="afterInteractive"
         charSet="UTF-8"
-        crossOrigin="anonymous"
+        onLoad={() => {
+          window.__TAWK_CHAT_INSTALLED__ = true;
+          console.log("[Tawk] Script loaded successfully");
+          console.log("[Tawk] Embed URL:", "${TAWK_EMBED_SRC}");
+        }}
+        onError={() => {
+          console.error("[Tawk] Script failed to load:", "${TAWK_EMBED_SRC}");
+        }}
       />
     </>
   );
 }
-
-export { TAWK_EMBED_SRC, TAWK_PROPERTY_ID, TAWK_WIDGET_ID };
