@@ -1,6 +1,13 @@
 import { getCategory, slugify } from "@/data/store";
 import { routes } from "@/lib/inventory";
+import { categories } from "@/lib/inventory/categories";
 import CategoryTemplate from "@/components/catalog/CategoryTemplate";
+
+export const dynamic = "force-static";
+
+export function generateStaticParams() {
+  return categories.map((category) => ({ category: category.slug }));
+}
 
 export default async function Page({ params }: any) {
   const { category: slug } = await params;

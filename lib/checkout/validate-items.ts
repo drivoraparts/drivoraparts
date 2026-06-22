@@ -71,7 +71,7 @@ export function lockOrderItemsFromCatalog(
       productId: product.id,
       name: product.name,
       price: product.price,
-      image: product.thumbnail ?? product.images?.[0] ?? "/catalog/avatars/default.svg",
+      image: product.thumbnail ?? product.images?.[0] ?? "/product-media/avatars/default.svg",
       category: product.category,
       brand: product.brand,
       quantity: raw.quantity,

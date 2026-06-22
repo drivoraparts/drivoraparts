@@ -1,7 +1,17 @@
 import { notFound } from "next/navigation";
 import { getCategory, getBrand } from "@/data/store";
+import { brands } from "@/lib/inventory/brands";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogCard from "@/components/catalog/CatalogCard";
+
+export const dynamic = "force-static";
+
+export function generateStaticParams() {
+  return brands.map((brand) => ({
+    category: brand.category,
+    brand: brand.slug,
+  }));
+}
 
 export default async function Page({ params }: any) {
   const { category: categorySlug, brand: brandSlug } = await params;

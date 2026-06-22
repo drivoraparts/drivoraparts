@@ -1,8 +1,6 @@
 import PageHeading from "@/components/catalog/PageHeading";
 import AllProductsFeed from "@/components/catalog/AllProductsFeed";
 
-export const dynamic = "force-static";
-
 export default function AllProductsPage() {
   return (
     <main className="min-h-screen p-6 text-white">

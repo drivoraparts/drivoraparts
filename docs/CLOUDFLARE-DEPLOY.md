@@ -16,6 +16,15 @@ OpenNext uses **Node.js on Workers** (`nodejs_compat`). All **99 route files** i
 
 Run locally: `npm run audit:routes`
 
+## ⚠️ If /catalog is blank or 404 in production (homepage works)
+
+Two common causes:
+
+1. **`public/catalog/` shadowed App Router routes** — product images must live under `public/product-media/`, not `public/catalog/`. A static `catalog/` folder makes Cloudflare return 404 for `/catalog` before the Worker runs.
+2. **Worker not deployed** — Pages uploaded only static assets. Set **Deploy command** to `npm run pages:deploy` so `.open-next/worker.js` is attached. `wrangler.jsonc` uses `"run_worker_first": true` so app routes win over static asset directories.
+
+After deploy, verify: `https://your-domain.com/catalog` returns **200** (not 404).
+
 ## Why builds fail with "Edge Runtime" errors
 
 That error comes from **`@cloudflare/next-on-pages`**, not OpenNext.

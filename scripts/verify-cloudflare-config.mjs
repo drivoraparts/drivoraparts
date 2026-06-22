@@ -70,6 +70,20 @@ for (const file of walk(path.join(ROOT, "app"))) {
 }
 pass("No edge runtime exports in app/");
 
+if (fs.existsSync(path.join(ROOT, "public", "catalog"))) {
+  fail(
+    "public/catalog/ exists — move product images to public/product-media/ (breaks /catalog routes on Cloudflare)"
+  );
+} else {
+  pass("public/catalog does not shadow /catalog routes");
+}
+
+if (!fs.existsSync(path.join(ROOT, "public", "product-media"))) {
+  fail("public/product-media/ is missing (product images root)");
+} else {
+  pass("public/product-media/ exists");
+}
+
 if (failed) {
   process.exit(1);
 }

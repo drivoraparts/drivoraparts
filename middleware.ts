@@ -76,6 +76,15 @@ export async function middleware(request: NextRequest) {
   const method = request.method;
   const ip = getClientIp(request);
 
+  // Legacy product media lived under /catalog/* and shadowed App Router /catalog on Cloudflare.
+  if (
+    pathname.startsWith("/catalog/") &&
+    (/\.[a-z0-9]+$/i.test(pathname) || pathname.startsWith("/catalog/avatars/"))
+  ) {
+    const rest = pathname.slice("/catalog/".length);
+    return NextResponse.redirect(new URL(`/product-media/${rest}`, request.url), 308);
+  }
+
   if (pathname.startsWith("/admin")) {
     if (isPublicAdminPath(pathname)) {
       authDebug("middleware", "public admin route — auth skipped", { pathname });
