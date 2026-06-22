@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import { notFound } from "next/navigation";
 import { getCategory, getBrand } from "@/data/store";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogCard from "@/components/catalog/CatalogCard";
-
-export const runtime = "edge";
 
 export default async function Page({ params }: any) {
   const { category: categorySlug, brand: brandSlug } = await params;

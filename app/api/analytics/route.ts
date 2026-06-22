@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { trackEvent, getAnalyticsSummary } from "@/lib/analytics";
 import type { AnalyticsEventName } from "@/lib/analytics/types";
@@ -5,7 +7,6 @@ import { requireAdminApi } from "@/lib/auth/require-admin";
 import { logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
 
-export const runtime = "edge";
 const VALID_EVENTS: AnalyticsEventName[] = [
   "product_view",
   "add_to_cart",

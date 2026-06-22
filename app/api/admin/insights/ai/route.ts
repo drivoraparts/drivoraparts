@@ -1,8 +1,8 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { getAiInsightsReport } from "@/lib/insights/ai";
 import { requireAdminApi } from "@/lib/auth/require-admin";
-
-export const runtime = "edge";
 
 export async function GET() {
   const auth = await requireAdminApi();

@@ -1,11 +1,11 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getCryptomusConfig } from "@/lib/cryptomus/config";
 import { listOrders } from "@/lib/db/orders";
 import { listPayments } from "@/lib/db/payments";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminPaymentsPage() {
   const config = getCryptomusConfig();
   const [payments, orders] = await Promise.all([listPayments(), listOrders(200)]);

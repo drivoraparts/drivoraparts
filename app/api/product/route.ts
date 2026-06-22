@@ -1,8 +1,8 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { getProductById } from "@/lib/inventory";
 import { getInventory } from "@/lib/db/inventory";
-
-export const runtime = "edge";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);

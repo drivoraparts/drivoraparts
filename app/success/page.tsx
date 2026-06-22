@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 export default function Success() {
   return (
     <main className="min-h-screen p-10 text-white">

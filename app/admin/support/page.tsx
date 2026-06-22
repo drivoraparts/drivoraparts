@@ -1,10 +1,10 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import SupportCenterPanel from "@/components/admin/SupportCenterPanel";
 import { getSupportStats, listSupportMessages } from "@/lib/db/support";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminSupportPage() {
   const [stats, messages] = await Promise.all([
     getSupportStats(),

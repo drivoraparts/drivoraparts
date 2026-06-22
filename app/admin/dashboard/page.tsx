@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import DashboardCharts from "@/components/admin/DashboardCharts";
 import AdvancedCharts from "@/components/admin/charts/AdvancedCharts";
@@ -6,8 +8,6 @@ import DataDegradedBanner from "@/components/admin/DataDegradedBanner";
 import { loadDashboardData } from "@/lib/admin/safe-data";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminDashboardPage() {
   const { summary, charts, insights, paymentStats, viral, dataUnavailable } =
     await loadDashboardData();

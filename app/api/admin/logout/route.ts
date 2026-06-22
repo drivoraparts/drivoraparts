@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { ADMIN_SESSION_COOKIE, getSessionCookieOptions } from "@/lib/auth/session";
@@ -5,8 +7,6 @@ import { logAdminAudit } from "@/lib/monitoring/audit";
 import { logActivity } from "@/lib/monitoring/activity";
 import { getClientIp } from "@/lib/security/ip";
 import { getAdminSession } from "@/lib/auth/require-admin";
-
-export const runtime = "edge";
 
 export async function POST(req: Request) {
   const session = await getAdminSession();

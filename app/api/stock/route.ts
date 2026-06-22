@@ -1,8 +1,8 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { getInventory, setInventory } from "@/lib/db/inventory";
 import { requireAdminApi } from "@/lib/auth/require-admin";
-
-export const runtime = "edge";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);

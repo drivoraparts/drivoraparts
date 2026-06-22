@@ -1,10 +1,10 @@
+export const runtime = 'edge';
+
 import AdminShell from "@/components/admin/AdminShell";
 import { getAnalyticsSummary } from "@/lib/analytics";
 import { products } from "@/lib/inventory/products";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminProductsPage() {
   const summary = await getAnalyticsSummary();
 

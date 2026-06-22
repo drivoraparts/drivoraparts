@@ -1,7 +1,7 @@
+export const runtime = 'edge';
+
 import CategoryGrid from "@/components/shared/CategoryGrid";
 import PageHeading from "@/components/catalog/PageHeading";
-
-export const runtime = "edge";
 
 export default function Page() {
   return (

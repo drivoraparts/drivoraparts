@@ -1,11 +1,11 @@
+export const runtime = 'edge';
+
 import AdminShell from "@/components/admin/AdminShell";
 import OrderStatusControl from "@/components/admin/OrderStatusControl";
 import { listOrders } from "@/lib/db/orders";
 import { findPaymentsByOrderIds } from "@/lib/db/payments";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 function formatTime(iso: string) {
   return new Date(iso).toLocaleString();
 }

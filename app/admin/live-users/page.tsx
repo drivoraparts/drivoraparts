@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import AdminShell from "@/components/admin/AdminShell";
 import LiveUsersPanel from "@/components/admin/LiveUsersPanel";
 

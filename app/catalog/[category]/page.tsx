@@ -1,8 +1,8 @@
+export const runtime = 'edge';
+
 import { getCategory, slugify } from "@/data/store";
 import { routes } from "@/lib/inventory";
 import CategoryTemplate from "@/components/catalog/CategoryTemplate";
-
-export const runtime = "edge";
 
 export default async function Page({ params }: any) {
   const { category: slug } = await params;

@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { getOrderById, updateOrderStatus } from "@/lib/db/orders";
 import { requireAdminApi } from "@/lib/auth/require-admin";
@@ -8,8 +10,6 @@ import {
   sendOrderDeliveredEmail,
   sendOrderShippedEmail,
 } from "@/lib/email/send";
-
-export const runtime = "edge";
 
 const VALID_STATUSES = [
   "pending",

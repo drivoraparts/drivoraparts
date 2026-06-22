@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { handlePaymentWebhook } from "@/lib/payments";
 import {
@@ -9,8 +11,6 @@ import { getOrderById } from "@/lib/db/orders";
 import { logError, logInfo, logWarn } from "@/lib/monitoring/logger";
 import { logActivity } from "@/lib/monitoring/activity";
 import { getClientIp } from "@/lib/security/ip";
-
-export const runtime = "edge";
 
 export async function POST(req: Request) {
   const rawBody = await req.text();

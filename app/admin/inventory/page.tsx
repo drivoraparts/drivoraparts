@@ -1,10 +1,10 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getInventoryAlerts, getInventoryStats, listInventory } from "@/lib/db/inventory";
 import { getProductById } from "@/lib/inventory";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminInventoryPage() {
   const [stats, alerts, inventory] = await Promise.all([
     getInventoryStats(),

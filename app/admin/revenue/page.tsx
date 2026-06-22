@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import DashboardCharts from "@/components/admin/DashboardCharts";
 import { getDashboardChartData } from "@/lib/analytics";
@@ -5,8 +7,6 @@ import { getOrderStats } from "@/lib/db/orders";
 import { getPaymentStats } from "@/lib/db/payments";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminRevenuePage() {
   const [charts, orderStats, paymentStats] = await Promise.all([
     getDashboardChartData(),

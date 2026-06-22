@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import SecuritySettingsForm from "./SecuritySettingsForm";
 
 export const dynamic = "force-dynamic";

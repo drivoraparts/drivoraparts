@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductById } from "@/data/store";
@@ -6,8 +8,6 @@ import { getSiteUrl } from "@/lib/env";
 import ProductTemplate from "@/components/product/ProductTemplate";
 
 export const revalidate = 3600;
-export const runtime = "edge";
-
 type PageProps = {
   params: Promise<{ id: string }>;
 };

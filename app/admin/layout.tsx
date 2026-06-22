@@ -1,11 +1,11 @@
+export const runtime = 'edge';
+
 import { headers } from "next/headers";
 import AdminChatAssistant from "@/components/admin/AdminChatAssistant";
 import AdminDashboardLayout from "@/components/admin/AdminDashboardLayout";
 import AdminErrorBoundary from "@/components/admin/AdminErrorBoundary";
 import { getAdminSession } from "@/lib/auth/require-admin";
 import { isPublicAdminPath } from "@/lib/auth/public-routes";
-
-export const runtime = "edge";
 
 function resolveAdminPathname(headerStore: Headers): string {
   return headerStore.get("x-pathname") ?? "";

@@ -1,8 +1,8 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { requireAdminApi } from "@/lib/auth/require-admin";
 import { generateAdminAssistantReply } from "@/lib/admin-assistant";
-
-export const runtime = "edge";
 
 export async function POST(req: Request) {
   const auth = await requireAdminApi();

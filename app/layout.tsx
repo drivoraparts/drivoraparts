@@ -1,11 +1,11 @@
+export const runtime = 'edge';
+
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 import StoreProviders from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
 import { getSiteUrl } from "@/lib/env";
-
-export const runtime = "edge";
 
 const siteUrl = getSiteUrl();
 

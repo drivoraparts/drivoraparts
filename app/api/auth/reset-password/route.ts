@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { resetPasswordWithToken } from "@/lib/auth/password-reset";
 import { logActivity } from "@/lib/monitoring/activity";
 import { getClientIp } from "@/lib/security/ip";
-
-export const runtime = "edge";
 
 export async function POST(req: Request) {
   try {

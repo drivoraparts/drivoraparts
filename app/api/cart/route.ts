@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import {
   getCart,
@@ -7,8 +9,6 @@ import {
 } from "@/lib/marketplace";
 import { logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
-
-export const runtime = "edge";
 
 export async function GET() {
   return NextResponse.json(getCart(), {

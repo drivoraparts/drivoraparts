@@ -1,10 +1,10 @@
+export const runtime = 'edge';
+
 import { notFound } from "next/navigation";
 import { getEnginePlatform } from "@/data/engine";
 import { store } from "@/data/store";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogCard from "@/components/catalog/CatalogCard";
-
-export const runtime = "edge";
 
 export default async function Page({ params }: any) {
   const { platform: platformSlug } = await params;

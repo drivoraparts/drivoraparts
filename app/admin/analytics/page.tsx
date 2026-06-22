@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getAnalyticsSummary } from "@/lib/analytics";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminAnalyticsPage() {
   const summary = await getAnalyticsSummary();
 

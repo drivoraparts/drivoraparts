@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { getAdminEmail } from "@/lib/auth/admin";
 import {
@@ -8,8 +10,6 @@ import { getSiteUrl } from "@/lib/env";
 import { sendEmail } from "@/lib/email/send";
 import { logActivity } from "@/lib/monitoring/activity";
 import { getClientIp } from "@/lib/security/ip";
-
-export const runtime = "edge";
 
 export async function POST(req: Request) {
   try {

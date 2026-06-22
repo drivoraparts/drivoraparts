@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import Link from "next/link";
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getDailyBusinessReport } from "@/lib/ai/daily-report";
@@ -5,8 +7,6 @@ import { getDailyBusinessDecisions } from "@/lib/ai/decision-brain";
 import { getActionRecommendations } from "@/lib/ai/action-recommender";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminDailyInsightsPage() {
   const [daily, brain, actions] = await Promise.all([
     getDailyBusinessReport(),

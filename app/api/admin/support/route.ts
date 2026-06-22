@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import {
   createSupportMessage,
@@ -6,8 +8,6 @@ import {
 } from "@/lib/db/support";
 import { requireAdminApi } from "@/lib/auth/require-admin";
 import { logAdminAudit } from "@/lib/monitoring/audit";
-
-export const runtime = "edge";
 
 export async function GET(req: Request) {
   const auth = await requireAdminApi();

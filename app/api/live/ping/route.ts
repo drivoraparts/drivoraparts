@@ -1,7 +1,7 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { recordHeartbeat } from "@/lib/live/users";
-
-export const runtime = "edge";
 
 export async function POST(req: Request) {
   const body = await req.json().catch(() => null);

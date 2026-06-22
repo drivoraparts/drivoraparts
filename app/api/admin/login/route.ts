@@ -1,6 +1,6 @@
-import { handleAdminLogin } from "@/lib/auth/handle-login";
+export const runtime = 'edge';
 
-export const runtime = "edge";
+import { handleAdminLogin } from "@/lib/auth/handle-login";
 
 /** @deprecated Use POST /api/auth/login */
 export async function POST(req: Request) {

@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { processCheckout } from "@/lib/checkout/service";
 import {
@@ -6,8 +8,6 @@ import {
 } from "@/lib/checkout/validate-items";
 import { logError, logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
-
-export const runtime = "edge";
 
 function parseCustomer(raw: unknown) {
   if (typeof raw !== "object" || raw === null) return null;

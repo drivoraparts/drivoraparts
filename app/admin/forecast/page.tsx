@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getForecastReport } from "@/lib/ai-forecast";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 function riskClass(risk: string) {
   if (risk === "high") return "text-red-400";
   if (risk === "medium") return "text-yellow-300";

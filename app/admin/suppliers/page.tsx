@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getSupplierRecommendations } from "@/lib/suppliers";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminSuppliersPage() {
   const report = await getSupplierRecommendations();
 

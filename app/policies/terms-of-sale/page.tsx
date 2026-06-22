@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import Policy from "@/components/policy/Policy";
 
 export default function TermsOfSalePage() {

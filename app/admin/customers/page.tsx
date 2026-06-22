@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getCustomerStats, listCustomers } from "@/lib/db/customers";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminCustomersPage() {
   const [stats, customers] = await Promise.all([
     getCustomerStats(),

@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import { getAdminProfile, setAdminDisplayName } from "@/lib/admin/profile";
 import { getAdminEmail } from "@/lib/auth/admin";
 import { requireAdminApi } from "@/lib/auth/require-admin";
-
-export const runtime = "edge";
 
 export async function PATCH(req: Request) {
   const { session, response } = await requireAdminApi();

@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import Link from "next/link";
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import DataDegradedBanner from "@/components/admin/DataDegradedBanner";
@@ -10,8 +12,6 @@ import { getDailyBusinessDecisions, type DailyBusinessDecisions } from "@/lib/ai
 import { isSupabaseConfigured } from "@/lib/env";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 const EMPTY_BRAIN: DailyBusinessDecisions = {
   date: new Date().toISOString().slice(0, 10),
   generatedAt: Date.now(),

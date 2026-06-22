@@ -1,9 +1,9 @@
+export const runtime = 'edge';
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getMarketingAutopilotBundle } from "@/lib/ai/decision-engine";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminMarketingPage() {
   const bundle = await getMarketingAutopilotBundle();
 

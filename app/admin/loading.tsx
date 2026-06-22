@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { adminUi } from "@/components/admin/admin-ui";
 
 export default function AdminLoading() {

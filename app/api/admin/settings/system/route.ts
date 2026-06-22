@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
 import {
   getAdminSystemSettings,
@@ -5,8 +7,6 @@ import {
   type PaymentMode,
 } from "@/lib/admin/system-settings";
 import { requireAdminApi } from "@/lib/auth/require-admin";
-
-export const runtime = "edge";
 
 function isPaymentMode(value: string): value is PaymentMode {
   return value === "auto" || value === "cryptomus" || value === "manual";

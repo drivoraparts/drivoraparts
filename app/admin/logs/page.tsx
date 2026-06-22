@@ -1,10 +1,10 @@
+export const runtime = 'edge';
+
 import AdminShell from "@/components/admin/AdminShell";
 import { listActivityLogs } from "@/lib/monitoring/activity";
 import { getRecentAuditLogs } from "@/lib/monitoring/audit";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
-
 export default async function AdminLogsPage() {
   const [activityLogs, auditLogs] = await Promise.all([
     listActivityLogs(150),
