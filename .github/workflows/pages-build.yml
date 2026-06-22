@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  legacy-build:
-    name: Legacy (next-on-pages) — production default
+  build-and-deploy:
+    name: OpenNext Cloudflare build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,20 +18,23 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm ci
 
-      - name: Build with next-on-pages
+      - name: Build for Cloudflare (OpenNext)
         run: npm run pages:build
 
-      - name: Verify legacy output
+      - name: Verify OpenNext output
         run: |
-          test -d .vercel/output/static
-          echo "Legacy build output ready for Cloudflare Pages"
+          test -f .open-next/worker.js
+          test -d .open-next/assets
+          echo "OpenNext build output ready for Cloudflare"
 
       - uses: actions/upload-artifact@v4
         with:
-          name: pages-build-legacy
-          path: .vercel/output/static
+          name: pages-build-opennext
+          path: |
+            .open-next/worker.js
+            .open-next/assets
 
       - name: Publish to Cloudflare Pages (optional)
         if: ${{ secrets.CLOUDFLARE_API_TOKEN && secrets.CLOUDFLARE_PROJECT_NAME && secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -41,37 +44,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           npm install -g wrangler
-          wrangler pages deploy .vercel/output/static \
+          wrangler pages deploy .open-next/assets \
             --project-name "$CLOUDFLARE_PROJECT_NAME" \
             --branch main \
             --commit-dirty=true
-
-  opennext-validate:
-    name: OpenNext build validation (non-deploy)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci --legacy-peer-deps
-
-      - name: Build with OpenNext Cloudflare
-        run: npm run open-next:build
-
-      - name: Verify OpenNext output
-        run: |
-          test -f .open-next/worker.js
-          test -d .open-next/assets
-          echo "OpenNext build succeeded — ready for Phase 6 cutover"
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: pages-build-opennext
-          path: |
-            .open-next/worker.js
-            .open-next/assets
