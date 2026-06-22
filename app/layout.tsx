@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
-import Providers from "./providers";
+import StoreProviders from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
 import { getSiteUrl } from "@/lib/env";
 
@@ -37,17 +38,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const headerStore = await headers();
+  const isAdmin = headerStore.get("x-is-admin") === "1";
+
   return (
     <html lang="en">
       <body>
-        <Providers>
-          <LayoutShell>{children}</LayoutShell>
-        </Providers>
+        {isAdmin ? (
+          children
+        ) : (
+          <StoreProviders>
+            <LayoutShell>{children}</LayoutShell>
+          </StoreProviders>
+        )}
       </body>
     </html>
   );

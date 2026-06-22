@@ -53,7 +53,7 @@ export function getCryptomusPaymentKey(): string | null {
 }
 
 export function getTawkPropertyId(): string {
-  return optional("NEXT_PUBLIC_TAWK_PROPERTY_ID", "6a384bd1d0dd3e1d406c8132");
+  return optional("NEXT_PUBLIC_TAWK_PROPERTY_ID", "6a392868452f781d473b4ceb");
 }
 
 export function getTawkWidgetId(): string {

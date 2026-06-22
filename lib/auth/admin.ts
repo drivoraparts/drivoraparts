@@ -61,6 +61,24 @@ export async function updateAdminPassword(newPassword: string): Promise<void> {
   }
 }
 
+export async function changeAdminPassword(
+  currentPassword: string,
+  newPassword: string
+): Promise<{ ok: boolean; error?: string }> {
+  if (!newPassword || newPassword.length < 8) {
+    return { ok: false, error: "New password must be at least 8 characters" };
+  }
+
+  const valid = await validateAdminCredentials(getAdminEmail(), currentPassword);
+  if (!valid) {
+    return { ok: false, error: "Current password is incorrect" };
+  }
+
+  await updateAdminPassword(newPassword);
+  invalidateAllAdminSessions();
+  return { ok: true };
+}
+
 export function invalidateAllAdminSessions(): void {
   bumpAdminTokenVersion();
 }

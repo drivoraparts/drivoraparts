@@ -27,6 +27,7 @@ function withAdminHeaders(
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-pathname", request.nextUrl.pathname);
   requestHeaders.set("x-admin-public", options.isPublic ? "1" : "0");
+  requestHeaders.set("x-is-admin", "1");
   return NextResponse.next({
     request: { headers: requestHeaders },
   });
