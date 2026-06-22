@@ -27,24 +27,15 @@ jobs:
         run: |
           test -f .open-next/worker.js
           test -d .open-next/assets
-          echo "OpenNext build output ready for Cloudflare"
+          echo "OpenNext build output ready"
 
       - uses: actions/upload-artifact@v4
         with:
           name: pages-build-opennext
-          path: |
-            .open-next/worker.js
-            .open-next/assets
+          path: .open-next
 
-      - name: Publish to Cloudflare Pages (optional)
-        if: ${{ secrets.CLOUDFLARE_API_TOKEN && secrets.CLOUDFLARE_PROJECT_NAME && secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Deploy to Cloudflare (OpenNext Worker)
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_PROJECT_NAME: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          npm install -g wrangler
-          wrangler pages deploy .open-next/assets \
-            --project-name "$CLOUDFLARE_PROJECT_NAME" \
-            --branch main \
-            --commit-dirty=true
+        run: npx opennextjs-cloudflare deploy
