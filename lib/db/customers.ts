@@ -1,3 +1,5 @@
+import { EMPTY_CUSTOMER_STATS } from "@/lib/admin/fallbacks";
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 
 export type CustomerRecord = {
@@ -61,23 +63,25 @@ export async function listCustomers(limit = 100): Promise<CustomerRecord[]> {
 }
 
 export async function getCustomerStats() {
-  const supabase = getSupabaseAdmin();
-  const { count, error } = await supabase
-    .from("customers")
-    .select("*", { count: "exact", head: true });
+  return guardedSupabaseRead("getCustomerStats", EMPTY_CUSTOMER_STATS, async () => {
+    const supabase = getSupabaseAdmin();
+    const { count, error } = await supabase
+      .from("customers")
+      .select("*", { count: "exact", head: true });
 
-  if (error) throw error;
+    if (error) throw error;
 
-  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
-  const { count: recentCount, error: recentError } = await supabase
-    .from("customers")
-    .select("*", { count: "exact", head: true })
-    .gte("created_at", thirtyDaysAgo);
+    const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+    const { count: recentCount, error: recentError } = await supabase
+      .from("customers")
+      .select("*", { count: "exact", head: true })
+      .gte("created_at", thirtyDaysAgo);
 
-  if (recentError) throw recentError;
+    if (recentError) throw recentError;
 
-  return {
-    totalCustomers: count ?? 0,
-    newCustomers30d: recentCount ?? 0,
-  };
+    return {
+      totalCustomers: count ?? 0,
+      newCustomers30d: recentCount ?? 0,
+    };
+  });
 }

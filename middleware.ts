@@ -4,6 +4,8 @@ import {
   ADMIN_SESSION_COOKIE,
   verifyAdminSessionToken,
 } from "@/lib/auth/session";
+import { authDebug } from "@/lib/auth/debug";
+import { isPublicAdminPath } from "@/lib/auth/public-routes";
 import { isAdminProtectedApi, isRateLimitedApi } from "@/lib/security/api-access";
 import { getClientIp } from "@/lib/security/ip";
 import {
@@ -18,15 +20,13 @@ import {
 } from "@/lib/security/abuse";
 import { logApiRequest } from "@/lib/security/request-log";
 
-const PUBLIC_ADMIN_PATHS = [
-  "/admin/login",
-  "/admin/forgot-password",
-  "/admin/reset-password",
-];
-
-function withPathnameHeader(request: NextRequest): NextResponse {
+function withAdminHeaders(
+  request: NextRequest,
+  options: { isPublic: boolean }
+): NextResponse {
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-pathname", request.nextUrl.pathname);
+  requestHeaders.set("x-admin-public", options.isPublic ? "1" : "0");
   return NextResponse.next({
     request: { headers: requestHeaders },
   });
@@ -57,9 +57,13 @@ function rateLimitResponse(result: ReturnType<typeof checkRateLimit>): NextRespo
 
 async function enforceAdminSession(request: NextRequest): Promise<NextResponse | null> {
   const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
-  const session = await verifyAdminSessionToken(token);
+  const session = await verifyAdminSessionToken(token, "middleware");
 
   if (!session) {
+    authDebug("middleware", "API blocked — missing or invalid session", {
+      path: request.nextUrl.pathname,
+      hasCookie: Boolean(token),
+    });
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
@@ -71,12 +75,51 @@ export async function middleware(request: NextRequest) {
   const method = request.method;
   const ip = getClientIp(request);
 
+  if (pathname.startsWith("/admin")) {
+    if (isPublicAdminPath(pathname)) {
+      authDebug("middleware", "public admin route — auth skipped", { pathname });
+
+      const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
+      const session = await verifyAdminSessionToken(token, "middleware-public");
+
+      if (session) {
+        authDebug("middleware", "already signed in — redirect to dashboard", {
+          pathname,
+          email: session.email,
+        });
+        return NextResponse.redirect(new URL("/admin/dashboard", request.url));
+      }
+
+      return withAdminHeaders(request, { isPublic: true });
+    }
+
+    const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
+    const session = await verifyAdminSessionToken(token, "middleware");
+
+    if (!session) {
+      authDebug("middleware", "protected admin route blocked — redirect to login", {
+        pathname,
+        hasCookie: Boolean(token),
+      });
+      const loginUrl = new URL("/admin/login", request.url);
+      loginUrl.searchParams.set("next", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+
+    authDebug("middleware", "protected admin route allowed", {
+      pathname,
+      email: session.email,
+    });
+    return withAdminHeaders(request, { isPublic: false });
+  }
+
   if (isRateLimitedApi(pathname)) {
     const { limit, windowMs } = getRateLimitConfig(pathname);
     const rateKey = buildRateLimitKey(ip, pathname);
     const rateResult = checkRateLimit(rateKey, limit, windowMs);
 
     if (!rateResult.allowed) {
+      authDebug("middleware", "rate limited", { pathname, ip });
       logApiRequest({
         ip,
         method,
@@ -93,6 +136,7 @@ export async function middleware(request: NextRequest) {
       const abuse = checkAbuse(fingerprint, abuseRules);
 
       if (abuse.blocked) {
+        authDebug("middleware", "abuse blocked", { pathname, reason: abuse.reason });
         logApiRequest({
           ip,
           method,
@@ -126,29 +170,7 @@ export async function middleware(request: NextRequest) {
     return applyRateLimitHeaders(response, rateResult);
   }
 
-  if (!pathname.startsWith("/admin")) {
-    return NextResponse.next();
-  }
-
-  if (PUBLIC_ADMIN_PATHS.some((path) => pathname.startsWith(path))) {
-    const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
-    const session = await verifyAdminSessionToken(token);
-    if (session) {
-      return NextResponse.redirect(new URL("/admin/dashboard", request.url));
-    }
-    return withPathnameHeader(request);
-  }
-
-  const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
-  const session = await verifyAdminSessionToken(token);
-
-  if (!session) {
-    const loginUrl = new URL("/admin/login", request.url);
-    loginUrl.searchParams.set("next", pathname);
-    return NextResponse.redirect(loginUrl);
-  }
-
-  return withPathnameHeader(request);
+  return NextResponse.next();
 }
 
 export const config = {

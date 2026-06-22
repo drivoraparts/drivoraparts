@@ -1,13 +1,12 @@
 import { headers } from "next/headers";
-import { redirect } from "next/navigation";
 import AdminChatAssistant from "@/components/admin/AdminChatAssistant";
+import AdminErrorBoundary from "@/components/admin/AdminErrorBoundary";
 import { getAdminSession } from "@/lib/auth/require-admin";
+import { isPublicAdminPath } from "@/lib/auth/public-routes";
 
-const PUBLIC_ADMIN_PATHS = [
-  "/admin/login",
-  "/admin/forgot-password",
-  "/admin/reset-password",
-];
+function resolveAdminPathname(headerStore: Headers): string {
+  return headerStore.get("x-pathname") ?? "";
+}
 
 export default async function AdminLayout({
   children,
@@ -15,20 +14,16 @@ export default async function AdminLayout({
   children: React.ReactNode;
 }) {
   const headerStore = await headers();
-  const pathname = headerStore.get("x-pathname") ?? "";
-  const isPublic = PUBLIC_ADMIN_PATHS.some((path) => pathname.startsWith(path));
+  const pathname = resolveAdminPathname(headerStore);
+  const isPublic =
+    headerStore.get("x-admin-public") === "1" || isPublicAdminPath(pathname);
 
-  if (!isPublic) {
-    const session = await getAdminSession();
-    if (!session) {
-      redirect("/admin/login");
-    }
-  }
+  const session = isPublic ? null : await getAdminSession();
 
   return (
     <>
-      {children}
-      {!isPublic ? <AdminChatAssistant /> : null}
+      <AdminErrorBoundary>{children}</AdminErrorBoundary>
+      {session ? <AdminChatAssistant /> : null}
     </>
   );
 }

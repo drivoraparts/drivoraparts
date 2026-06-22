@@ -1,9 +1,11 @@
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { hashPasswordForStorage, timingSafeEqual } from "./crypto";
 import { ensureAdminInitialized } from "./init-admin";
+import { bumpAdminTokenVersion, getAdminTokenVersion } from "./token-version";
 
 let runtimePasswordOverride: string | null = null;
-let tokenVersion = 1;
+
+export { getAdminTokenVersion };
 
 export function getAdminEmail(): string {
   return ensureAdminInitialized().email;
@@ -16,10 +18,6 @@ export function getAdminPassword(): string {
 
 export function getAuthSecret(): string {
   return ensureAdminInitialized().authSecret;
-}
-
-export function getAdminTokenVersion(): number {
-  return tokenVersion;
 }
 
 export async function validateAdminCredentials(
@@ -42,7 +40,7 @@ export async function updateAdminPassword(newPassword: string): Promise<void> {
   }
 
   runtimePasswordOverride = newPassword;
-  tokenVersion += 1;
+  bumpAdminTokenVersion();
 
   try {
     const supabase = getSupabaseAdmin();
@@ -64,5 +62,5 @@ export async function updateAdminPassword(newPassword: string): Promise<void> {
 }
 
 export function invalidateAllAdminSessions(): void {
-  tokenVersion += 1;
+  bumpAdminTokenVersion();
 }

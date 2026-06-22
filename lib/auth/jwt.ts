@@ -64,6 +64,8 @@ export async function signAdminJwt(
   return `${signingInput}.${signature}`;
 }
 
+import { authDebug } from "./debug";
+
 export async function verifyAdminJwt(token: string): Promise<AdminJwtPayload | null> {
   const parts = token.split(".");
   if (parts.length !== 3) return null;
@@ -88,7 +90,16 @@ export async function verifyAdminJwt(token: string): Promise<AdminJwtPayload | n
 
     const payload = JSON.parse(fromBase64Url(encodedPayload)) as AdminJwtPayload;
     if (!payload.email || !payload.exp || payload.ver === undefined) return null;
-    if (payload.exp < Math.floor(Date.now() / 1000)) return null;
+    if (payload.exp < Math.floor(Date.now() / 1000)) {
+      authDebug("jwt", "token expired", { email: payload.email });
+      return null;
+    }
+
+    authDebug("jwt", "payload decoded", {
+      email: payload.email,
+      exp: payload.exp,
+      ver: payload.ver,
+    });
 
     return payload;
   } catch {

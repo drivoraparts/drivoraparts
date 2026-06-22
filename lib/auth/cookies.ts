@@ -1,18 +1,11 @@
 import { cookies } from "next/headers";
 import type { NextResponse } from "next/server";
+import {
+  ADMIN_SESSION_COOKIE,
+  getSessionCookieOptions,
+} from "./cookie-options";
 
-export const ADMIN_SESSION_COOKIE = "drivora_admin_session";
-export const SESSION_MAX_AGE_SECONDS = 60 * 60 * 24;
-
-export function getSessionCookieOptions(maxAge = SESSION_MAX_AGE_SECONDS) {
-  return {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict" as const,
-    path: "/",
-    maxAge,
-  };
-}
+export { ADMIN_SESSION_COOKIE, SESSION_MAX_AGE_SECONDS, getSessionCookieOptions } from "./cookie-options";
 
 export async function setAdminSessionCookie(token: string) {
   const cookieStore = await cookies();

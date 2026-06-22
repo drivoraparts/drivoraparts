@@ -53,6 +53,15 @@ function pushDecision(
 }
 
 export async function getDailyBusinessDecisions(): Promise<DailyBusinessDecisions> {
+  try {
+    return await buildDailyBusinessDecisions();
+  } catch (error) {
+    console.error("[getDailyBusinessDecisions]", error);
+    return { ...FALLBACK, date: todayKey(), generatedAt: Date.now() };
+  }
+}
+
+async function buildDailyBusinessDecisions(): Promise<DailyBusinessDecisions> {
   const [analytics, viral, pricing, suppliers, revenueOpt, aiInsights, alerts, signals] =
     await Promise.all([
       safeQuery(
@@ -66,7 +75,7 @@ export async function getDailyBusinessDecisions(): Promise<DailyBusinessDecision
       safeQuery(() => getRevenueOptimizationReport(), null, "decision-brain-revenue"),
       safeQuery(() => getAiInsightsReport(), null, "decision-brain-ai"),
       safeQuery(() => getInventoryAlerts(), [], "decision-brain-alerts"),
-      collectProductSignals(),
+      safeQuery(() => collectProductSignals(), [], "decision-brain-signals"),
     ]);
 
   if (!analytics && !signals.length) {

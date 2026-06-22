@@ -1,3 +1,4 @@
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import type { AnalyticsEventName } from "@/lib/analytics/types";
 
@@ -24,27 +25,31 @@ export async function insertAnalyticsEvent(
 }
 
 export async function listAnalyticsEvents(limit = 500): Promise<AnalyticsEventRow[]> {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("analytics_events")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("listAnalyticsEvents", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("analytics_events")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (error) throw error;
-  return (data ?? []) as AnalyticsEventRow[];
+    if (error) throw error;
+    return (data ?? []) as AnalyticsEventRow[];
+  });
 }
 
 export async function listAnalyticsEventsSince(
   sinceIso: string
 ): Promise<AnalyticsEventRow[]> {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("analytics_events")
-    .select("*")
-    .gte("created_at", sinceIso)
-    .order("created_at", { ascending: true });
+  return guardedSupabaseRead("listAnalyticsEventsSince", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("analytics_events")
+      .select("*")
+      .gte("created_at", sinceIso)
+      .order("created_at", { ascending: true });
 
-  if (error) throw error;
-  return (data ?? []) as AnalyticsEventRow[];
+    if (error) throw error;
+    return (data ?? []) as AnalyticsEventRow[];
+  });
 }

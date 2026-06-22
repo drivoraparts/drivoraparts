@@ -34,6 +34,28 @@ function sinceToday(): string {
 }
 
 export async function getDailyBusinessReport(): Promise<DailyBusinessReport> {
+  try {
+    return await buildDailyBusinessReport();
+  } catch (error) {
+    console.error("[getDailyBusinessReport]", error);
+    return {
+      date: new Date().toISOString().slice(0, 10),
+      generatedAt: Date.now(),
+      madeMoneyToday: [],
+      lostMoneyToday: [],
+      trending: [],
+      shouldStop: [],
+      shouldScale: [],
+      revenuePrediction: { next7Days: 0, todayEstimate: 0, confidence: "low" },
+      riskAlerts: ["Live data temporarily unavailable."],
+      growthOpportunities: [],
+      topActions: ["Review dashboard once data sources recover."],
+      source: "fallback",
+    };
+  }
+}
+
+async function buildDailyBusinessReport(): Promise<DailyBusinessReport> {
   const since = sinceToday();
 
   const [brain, actions, viral, analytics, ordersToday, signals, aiInsights] =
@@ -43,7 +65,7 @@ export async function getDailyBusinessReport(): Promise<DailyBusinessReport> {
       detectViralProducts(8),
       safeQuery(() => getAnalyticsSummary(), null, "daily-report-analytics"),
       safeQuery(() => listOrdersSince(since), [], "daily-report-orders"),
-      collectProductSignals(),
+      safeQuery(() => collectProductSignals(), [], "daily-report-signals"),
       safeQuery(() => getAiInsightsReport(), null, "daily-report-ai"),
     ]);
 

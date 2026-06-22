@@ -1,4 +1,6 @@
 import { products } from "@/lib/inventory/products";
+import { EMPTY_INVENTORY_STATS } from "@/lib/admin/fallbacks";
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 
 export type InventoryRecord = {
@@ -111,56 +113,67 @@ export async function setInventory(
 }
 
 export async function listInventory(limit = 500): Promise<InventoryRecord[]> {
-  await seedInventoryIfEmpty();
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("inventory")
-    .select("*")
-    .order("quantity", { ascending: true })
-    .limit(limit);
+  return guardedSupabaseRead("listInventory", [], async () => {
+    try {
+      await seedInventoryIfEmpty();
+    } catch (error) {
+      console.error("[db:seedInventoryIfEmpty]", error);
+    }
 
-  if (error) throw error;
-  return (data ?? []) as InventoryRecord[];
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("inventory")
+      .select("*")
+      .order("quantity", { ascending: true })
+      .limit(limit);
+
+    if (error) throw error;
+    return (data ?? []) as InventoryRecord[];
+  });
 }
 
 export async function getInventoryAlerts(): Promise<InventoryAlert[]> {
-  const inventory = await listInventory();
-  const productMap = new Map(products.map((p) => [p.id, p.name]));
-  const alerts: InventoryAlert[] = [];
+  return guardedSupabaseRead("getInventoryAlerts", [], async () => {
+    const inventory = await listInventory();
+    const productMap = new Map(products.map((p) => [p.id, p.name]));
+    const alerts: InventoryAlert[] = [];
 
-  for (const row of inventory) {
-    const name = productMap.get(row.product_id) ?? `Product #${row.product_id}`;
+    for (const row of inventory) {
+      const name = productMap.get(row.product_id) ?? `Product #${row.product_id}`;
 
-    if (row.quantity <= 0) {
-      alerts.push({
-        productId: row.product_id,
-        productName: name,
-        quantity: row.quantity,
-        threshold: row.low_stock_threshold,
-        severity: "out",
-      });
-    } else if (row.quantity <= row.low_stock_threshold) {
-      alerts.push({
-        productId: row.product_id,
-        productName: name,
-        quantity: row.quantity,
-        threshold: row.low_stock_threshold,
-        severity: "low",
-      });
+      if (row.quantity <= 0) {
+        alerts.push({
+          productId: row.product_id,
+          productName: name,
+          quantity: row.quantity,
+          threshold: row.low_stock_threshold,
+          severity: "out",
+        });
+      } else if (row.quantity <= row.low_stock_threshold) {
+        alerts.push({
+          productId: row.product_id,
+          productName: name,
+          quantity: row.quantity,
+          threshold: row.low_stock_threshold,
+          severity: "low",
+        });
+      }
     }
-  }
 
-  return alerts.sort((a, b) => a.quantity - b.quantity);
+    return alerts.sort((a, b) => a.quantity - b.quantity);
+  });
 }
 
 export async function getInventoryStats() {
-  const inventory = await listInventory();
-  const totalSkus = inventory.length;
-  const outOfStock = inventory.filter((row) => row.quantity <= 0).length;
-  const lowStock = inventory.filter(
-    (row) => row.quantity > 0 && row.quantity <= row.low_stock_threshold
-  ).length;
-  const totalUnits = inventory.reduce((sum, row) => sum + row.quantity, 0);
+  return guardedSupabaseRead("getInventoryStats", EMPTY_INVENTORY_STATS, async () => {
+    const inventory = await listInventory();
+    const totalSkus = inventory.length;
+    const outOfStock = inventory.filter((row) => row.quantity <= 0).length;
+    const lowStock = inventory.filter(
+      (row) => row.quantity > 0 && row.quantity <= row.low_stock_threshold
+    ).length;
+    const totalUnits = inventory.reduce((sum, row) => sum + row.quantity, 0);
 
-  return { totalSkus, outOfStock, lowStock, totalUnits };
+    return { totalSkus, outOfStock, lowStock, totalUnits };
+  });
 }

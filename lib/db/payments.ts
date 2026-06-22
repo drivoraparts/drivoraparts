@@ -1,3 +1,5 @@
+import { EMPTY_PAYMENT_STATS } from "@/lib/admin/fallbacks";
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 
 export type PaymentStatus = "pending" | "paid" | "failed" | "refunded";
@@ -116,41 +118,43 @@ export async function listPayments(limit = 100): Promise<PaymentRecord[]> {
 }
 
 export async function getPaymentStats() {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("payments")
-    .select("status, amount, provider");
+  return guardedSupabaseRead("getPaymentStats", EMPTY_PAYMENT_STATS, async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("payments")
+      .select("status, amount, provider");
 
-  if (error) throw error;
+    if (error) throw error;
 
-  const stats = {
-    total: data?.length ?? 0,
-    pending: 0,
-    paid: 0,
-    failed: 0,
-    refunded: 0,
-    paidAmount: 0,
-    cryptomusPaid: 0,
-    cryptomusPaidAmount: 0,
-    manualPaid: 0,
-    manualPaidAmount: 0,
-  };
+    const stats = {
+      total: data?.length ?? 0,
+      pending: 0,
+      paid: 0,
+      failed: 0,
+      refunded: 0,
+      paidAmount: 0,
+      cryptomusPaid: 0,
+      cryptomusPaidAmount: 0,
+      manualPaid: 0,
+      manualPaidAmount: 0,
+    };
 
-  for (const payment of data ?? []) {
-    stats[payment.status as PaymentStatus] += 1;
-    if (payment.status === "paid") {
-      stats.paidAmount += Number(payment.amount);
-      if (payment.provider === "cryptomus") {
-        stats.cryptomusPaid += 1;
-        stats.cryptomusPaidAmount += Number(payment.amount);
-      } else if (payment.provider === "manual") {
-        stats.manualPaid += 1;
-        stats.manualPaidAmount += Number(payment.amount);
+    for (const payment of data ?? []) {
+      stats[payment.status as PaymentStatus] += 1;
+      if (payment.status === "paid") {
+        stats.paidAmount += Number(payment.amount);
+        if (payment.provider === "cryptomus") {
+          stats.cryptomusPaid += 1;
+          stats.cryptomusPaidAmount += Number(payment.amount);
+        } else if (payment.provider === "manual") {
+          stats.manualPaid += 1;
+          stats.manualPaidAmount += Number(payment.amount);
+        }
       }
     }
-  }
 
-  return stats;
+    return stats;
+  });
 }
 
 export async function findPaymentsByOrderIds(
@@ -158,21 +162,23 @@ export async function findPaymentsByOrderIds(
 ): Promise<Map<string, PaymentRecord>> {
   if (!orderIds.length) return new Map();
 
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("payments")
-    .select("*")
-    .in("order_id", orderIds)
-    .order("created_at", { ascending: false });
+  return guardedSupabaseRead("findPaymentsByOrderIds", new Map(), async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("payments")
+      .select("*")
+      .in("order_id", orderIds)
+      .order("created_at", { ascending: false });
 
-  if (error) throw error;
+    if (error) throw error;
 
-  const map = new Map<string, PaymentRecord>();
-  for (const payment of (data ?? []) as PaymentRecord[]) {
-    if (!map.has(payment.order_id)) {
-      map.set(payment.order_id, payment);
+    const map = new Map<string, PaymentRecord>();
+    for (const payment of (data ?? []) as PaymentRecord[]) {
+      if (!map.has(payment.order_id)) {
+        map.set(payment.order_id, payment);
+      }
     }
-  }
 
-  return map;
+    return map;
+  });
 }

@@ -6,9 +6,7 @@ export async function safeQuery<T>(
   try {
     return await fn();
   } catch (error) {
-    if (process.env.NODE_ENV !== "production" && label) {
-      console.warn(`[safeQuery:${label}]`, error);
-    }
+    console.error(`[safeQuery${label ? `:${label}` : ""}]`, error);
     return fallback;
   }
 }

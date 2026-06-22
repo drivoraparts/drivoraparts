@@ -50,6 +50,23 @@ function decisionToRanked(decision: ProductDecision, reason: string): RankedActi
 export async function getActionRecommendations(
   brain?: DailyBusinessDecisions
 ): Promise<ActionRecommendationReport> {
+  try {
+    return await buildActionRecommendations(brain);
+  } catch (error) {
+    console.error("[getActionRecommendations]", error);
+    return {
+      generatedAt: Date.now(),
+      highImpact: [],
+      mediumImpact: [],
+      lowPriority: [],
+      source: "fallback",
+    };
+  }
+}
+
+async function buildActionRecommendations(
+  brain?: DailyBusinessDecisions
+): Promise<ActionRecommendationReport> {
   const decisions = brain ?? (await getDailyBusinessDecisions());
 
   const highImpact: RankedAction[] = [];

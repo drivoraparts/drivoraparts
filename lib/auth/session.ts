@@ -1,10 +1,10 @@
 import { signAdminJwt, verifyAdminJwt } from "./jwt";
-import { getAdminTokenVersion } from "./admin";
+import { authDebug } from "./debug";
 import {
   ADMIN_SESSION_COOKIE,
   SESSION_MAX_AGE_SECONDS,
   getSessionCookieOptions,
-} from "./cookies";
+} from "./cookie-options";
 
 export {
   ADMIN_SESSION_COOKIE,
@@ -20,22 +20,31 @@ export type AdminSession = {
 export async function createAdminSessionToken(email: string): Promise<string> {
   return signAdminJwt({
     email: email.trim().toLowerCase(),
-    ver: getAdminTokenVersion(),
+    ver: 1,
     expiresInSeconds: SESSION_MAX_AGE_SECONDS,
   });
 }
 
 export async function verifyAdminSessionToken(
-  token: string | undefined | null
+  token: string | undefined | null,
+  scope = "session"
 ): Promise<AdminSession | null> {
-  if (!token) return null;
-
-  const payload = await verifyAdminJwt(token);
-  if (!payload) return null;
-
-  if (payload.ver !== getAdminTokenVersion()) {
+  if (!token) {
+    authDebug(scope, "no session cookie present");
     return null;
   }
+
+  const payload = await verifyAdminJwt(token);
+  if (!payload) {
+    authDebug(scope, "JWT verification failed");
+    return null;
+  }
+
+  authDebug(scope, "JWT verified", {
+    email: payload.email,
+    exp: payload.exp,
+    ver: payload.ver,
+  });
 
   return {
     email: payload.email,

@@ -61,9 +61,13 @@ export function getTawkWidgetId(): string {
 }
 
 export function isSupabaseConfigured(): boolean {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "";
+
   return Boolean(
-    process.env.NEXT_PUBLIC_SUPABASE_URL &&
-      process.env.SUPABASE_SERVICE_ROLE_KEY &&
-      !process.env.NEXT_PUBLIC_SUPABASE_URL.includes("placeholder")
+    url &&
+      serviceKey &&
+      !url.includes("placeholder") &&
+      !serviceKey.includes("placeholder")
   );
 }

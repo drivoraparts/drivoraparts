@@ -1,3 +1,5 @@
+import { EMPTY_ORDER_STATS } from "@/lib/admin/fallbacks";
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { assertOrderTransition } from "@/lib/orders/state-machine";
 import type { CustomerRecord } from "./customers";
@@ -138,81 +140,85 @@ export async function getOrderById(id: string): Promise<OrderWithDetails | null>
 }
 
 export async function listOrders(limit = 100): Promise<OrderWithDetails[]> {
-  const supabase = getSupabaseAdmin();
-  const { data: orders, error } = await supabase
-    .from("orders")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("listOrders", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data: orders, error } = await supabase
+      .from("orders")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (error) throw error;
-  if (!orders?.length) return [];
+    if (error) throw error;
+    if (!orders?.length) return [];
 
-  const orderIds = orders.map((o) => o.id);
-  const customerIds = [...new Set(orders.map((o) => o.customer_id))];
+    const orderIds = orders.map((o) => o.id);
+    const customerIds = [...new Set(orders.map((o) => o.customer_id))];
 
-  const [{ data: items }, { data: customers }] = await Promise.all([
-    supabase.from("order_items").select("*").in("order_id", orderIds),
-    supabase.from("customers").select("*").in("id", customerIds),
-  ]);
+    const [{ data: items }, { data: customers }] = await Promise.all([
+      supabase.from("order_items").select("*").in("order_id", orderIds),
+      supabase.from("customers").select("*").in("id", customerIds),
+    ]);
 
-  const customerMap = new Map(
-    (customers ?? []).map((c) => [c.id, c as CustomerRecord])
-  );
-  const itemsByOrder = new Map<string, OrderItemRecord[]>();
+    const customerMap = new Map(
+      (customers ?? []).map((c) => [c.id, c as CustomerRecord])
+    );
+    const itemsByOrder = new Map<string, OrderItemRecord[]>();
 
-  for (const item of items ?? []) {
-    const list = itemsByOrder.get(item.order_id) ?? [];
-    list.push(item as OrderItemRecord);
-    itemsByOrder.set(item.order_id, list);
-  }
+    for (const item of items ?? []) {
+      const list = itemsByOrder.get(item.order_id) ?? [];
+      list.push(item as OrderItemRecord);
+      itemsByOrder.set(item.order_id, list);
+    }
 
-  return orders.map((order) => ({
-    ...(order as OrderRecord),
-    customer: customerMap.get(order.customer_id) ?? null,
-    items: itemsByOrder.get(order.id) ?? [],
-  }));
+    return orders.map((order) => ({
+      ...(order as OrderRecord),
+      customer: customerMap.get(order.customer_id) ?? null,
+      items: itemsByOrder.get(order.id) ?? [],
+    }));
+  });
 }
 
 export async function listOrdersSince(
   sinceIso: string,
   limit = 500
 ): Promise<OrderWithDetails[]> {
-  const supabase = getSupabaseAdmin();
-  const { data: orders, error } = await supabase
-    .from("orders")
-    .select("*")
-    .gte("created_at", sinceIso)
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("listOrdersSince", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data: orders, error } = await supabase
+      .from("orders")
+      .select("*")
+      .gte("created_at", sinceIso)
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (error) throw error;
-  if (!orders?.length) return [];
+    if (error) throw error;
+    if (!orders?.length) return [];
 
-  const orderIds = orders.map((o) => o.id);
-  const customerIds = [...new Set(orders.map((o) => o.customer_id))];
+    const orderIds = orders.map((o) => o.id);
+    const customerIds = [...new Set(orders.map((o) => o.customer_id))];
 
-  const [{ data: items }, { data: customers }] = await Promise.all([
-    supabase.from("order_items").select("*").in("order_id", orderIds),
-    supabase.from("customers").select("*").in("id", customerIds),
-  ]);
+    const [{ data: items }, { data: customers }] = await Promise.all([
+      supabase.from("order_items").select("*").in("order_id", orderIds),
+      supabase.from("customers").select("*").in("id", customerIds),
+    ]);
 
-  const customerMap = new Map(
-    (customers ?? []).map((c) => [c.id, c as CustomerRecord])
-  );
-  const itemsByOrder = new Map<string, OrderItemRecord[]>();
+    const customerMap = new Map(
+      (customers ?? []).map((c) => [c.id, c as CustomerRecord])
+    );
+    const itemsByOrder = new Map<string, OrderItemRecord[]>();
 
-  for (const item of items ?? []) {
-    const list = itemsByOrder.get(item.order_id) ?? [];
-    list.push(item as OrderItemRecord);
-    itemsByOrder.set(item.order_id, list);
-  }
+    for (const item of items ?? []) {
+      const list = itemsByOrder.get(item.order_id) ?? [];
+      list.push(item as OrderItemRecord);
+      itemsByOrder.set(item.order_id, list);
+    }
 
-  return orders.map((order) => ({
-    ...(order as OrderRecord),
-    customer: customerMap.get(order.customer_id) ?? null,
-    items: itemsByOrder.get(order.id) ?? [],
-  }));
+    return orders.map((order) => ({
+      ...(order as OrderRecord),
+      customer: customerMap.get(order.customer_id) ?? null,
+      items: itemsByOrder.get(order.id) ?? [],
+    }));
+  });
 }
 
 export async function updateOrderStatus(
@@ -244,33 +250,35 @@ export async function transitionOrderStatus(
 }
 
 export async function getOrderStats() {
-  const supabase = getSupabaseAdmin();
+  return guardedSupabaseRead("getOrderStats", EMPTY_ORDER_STATS, async () => {
+    const supabase = getSupabaseAdmin();
 
-  const { data: paidOrders, error } = await supabase
-    .from("orders")
-    .select("total, status, created_at")
-    .eq("status", "paid");
+    const { data: paidOrders, error } = await supabase
+      .from("orders")
+      .select("total, status, created_at")
+      .eq("status", "paid");
 
-  if (error) throw error;
+    if (error) throw error;
 
-  const totalRevenue = (paidOrders ?? []).reduce(
-    (sum, order) => sum + Number(order.total),
-    0
-  );
+    const totalRevenue = (paidOrders ?? []).reduce(
+      (sum, order) => sum + Number(order.total),
+      0
+    );
 
-  const { count: totalOrders } = await supabase
-    .from("orders")
-    .select("*", { count: "exact", head: true });
+    const { count: totalOrders } = await supabase
+      .from("orders")
+      .select("*", { count: "exact", head: true });
 
-  const { count: pendingOrders } = await supabase
-    .from("orders")
-    .select("*", { count: "exact", head: true })
-    .eq("status", "pending");
+    const { count: pendingOrders } = await supabase
+      .from("orders")
+      .select("*", { count: "exact", head: true })
+      .eq("status", "pending");
 
-  return {
-    totalRevenue,
-    paidOrderCount: paidOrders?.length ?? 0,
-    totalOrders: totalOrders ?? 0,
-    pendingOrders: pendingOrders ?? 0,
-  };
+    return {
+      totalRevenue,
+      paidOrderCount: paidOrders?.length ?? 0,
+      totalOrders: totalOrders ?? 0,
+      pendingOrders: pendingOrders ?? 0,
+    };
+  });
 }

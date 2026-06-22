@@ -49,34 +49,39 @@ function computeViralScore(metrics: {
 }
 
 export async function detectViralProducts(limit = 12): Promise<ViralProductsReport> {
-  const signals = await collectProductSignals();
+  try {
+    const signals = await collectProductSignals();
 
-  if (!signals.length) {
+    if (!signals.length) {
+      return { generatedAt: Date.now(), products: [], source: "fallback" };
+    }
+
+    const products: ViralProduct[] = signals
+      .map((row) => {
+        const { score, conversionLag, signal } = computeViralScore(row);
+        return {
+          productId: row.productId,
+          name: row.name,
+          viralScore: score,
+          views: row.views,
+          cartAdds: row.cartAdds,
+          cartRate: row.cartRate,
+          conversionRate: row.conversionRate,
+          conversionLag: Math.round(conversionLag * 10) / 10,
+          signal,
+        };
+      })
+      .filter((p) => p.viralScore >= 20 && getProductById(p.productId))
+      .sort((a, b) => b.viralScore - a.viralScore)
+      .slice(0, limit);
+
+    return {
+      generatedAt: Date.now(),
+      products,
+      source: products.length ? "live" : "fallback",
+    };
+  } catch (error) {
+    console.error("[detectViralProducts]", error);
     return { generatedAt: Date.now(), products: [], source: "fallback" };
   }
-
-  const products: ViralProduct[] = signals
-    .map((row) => {
-      const { score, conversionLag, signal } = computeViralScore(row);
-      return {
-        productId: row.productId,
-        name: row.name,
-        viralScore: score,
-        views: row.views,
-        cartAdds: row.cartAdds,
-        cartRate: row.cartRate,
-        conversionRate: row.conversionRate,
-        conversionLag: Math.round(conversionLag * 10) / 10,
-        signal,
-      };
-    })
-    .filter((p) => p.viralScore >= 20 && getProductById(p.productId))
-    .sort((a, b) => b.viralScore - a.viralScore)
-    .slice(0, limit);
-
-  return {
-    generatedAt: Date.now(),
-    products,
-    source: products.length ? "live" : "fallback",
-  };
 }
