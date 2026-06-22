@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getAdminEmail } from "@/lib/auth/admin";
 import { getAdminProfile } from "@/lib/admin/profile";
 import ProfileSettingsForm from "./ProfileSettingsForm";

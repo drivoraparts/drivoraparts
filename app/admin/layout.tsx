@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { headers } from "next/headers";
 import AdminChatAssistant from "@/components/admin/AdminChatAssistant";
 import AdminDashboardLayout from "@/components/admin/AdminDashboardLayout";

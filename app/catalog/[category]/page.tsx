@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getCategory, slugify } from "@/data/store";
 import { routes } from "@/lib/inventory";
 import CategoryTemplate from "@/components/catalog/CategoryTemplate";

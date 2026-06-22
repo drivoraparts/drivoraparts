@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from "next/server";
 import { getDailyBusinessDecisions } from "@/lib/ai/decision-brain";
 import { requireAdminApi } from "@/lib/auth/require-admin";

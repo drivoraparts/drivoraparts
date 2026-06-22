@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getCustomerStats, listCustomers } from "@/lib/db/customers";
 

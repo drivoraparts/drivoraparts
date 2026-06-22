@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { notFound } from "next/navigation";
 import { getCategory, getBrand } from "@/data/store";
 import PageHeading from "@/components/catalog/PageHeading";

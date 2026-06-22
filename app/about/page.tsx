@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 export default function AboutPage() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-12 text-white">

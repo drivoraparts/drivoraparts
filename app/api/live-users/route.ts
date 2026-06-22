@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from "next/server";
 import { getLiveUsersSummary, recordHeartbeat } from "@/lib/live-users";
 import { requireAdminApi } from "@/lib/auth/require-admin";

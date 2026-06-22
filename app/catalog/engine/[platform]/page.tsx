@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { notFound } from "next/navigation";
 import { getEnginePlatform } from "@/data/engine";
 import { store } from "@/data/store";

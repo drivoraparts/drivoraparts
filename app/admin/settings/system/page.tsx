@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getAdminSystemSettings } from "@/lib/admin/system-settings";
 import SystemSettingsForm from "./SystemSettingsForm";
 

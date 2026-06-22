@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from "next/server";
 import { getAdminProfile, setAdminDisplayName } from "@/lib/admin/profile";
 import { getAdminEmail } from "@/lib/auth/admin";

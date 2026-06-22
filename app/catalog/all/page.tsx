@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import PageHeading from "@/components/catalog/PageHeading";
 import AllProductsFeed from "@/components/catalog/AllProductsFeed";
 

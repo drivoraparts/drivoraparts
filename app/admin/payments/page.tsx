@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getCryptomusConfig } from "@/lib/cryptomus/config";
 import { listOrders } from "@/lib/db/orders";

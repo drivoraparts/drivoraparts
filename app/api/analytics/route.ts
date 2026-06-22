@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from "next/server";
 import { trackEvent, getAnalyticsSummary } from "@/lib/analytics";
 import type { AnalyticsEventName } from "@/lib/analytics/types";

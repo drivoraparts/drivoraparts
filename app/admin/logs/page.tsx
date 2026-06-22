@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import AdminShell from "@/components/admin/AdminShell";
 import { listActivityLogs } from "@/lib/monitoring/activity";
 import { getRecentAuditLogs } from "@/lib/monitoring/audit";

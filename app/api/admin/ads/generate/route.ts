@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from "next/server";
 import { generateAdPack } from "@/lib/ads/generator";
 import { requireAdminApi } from "@/lib/auth/require-admin";

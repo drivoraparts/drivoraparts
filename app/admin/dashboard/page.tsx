@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import DashboardCharts from "@/components/admin/DashboardCharts";
 import AdvancedCharts from "@/components/admin/charts/AdvancedCharts";

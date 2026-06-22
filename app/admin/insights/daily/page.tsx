@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import Link from "next/link";
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getDailyBusinessReport } from "@/lib/ai/daily-report";

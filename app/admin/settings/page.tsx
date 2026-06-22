@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import Link from "next/link";
 import AdminShell from "@/components/admin/AdminShell";
 import { adminUi } from "@/components/admin/admin-ui";
