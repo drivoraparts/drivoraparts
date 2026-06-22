@@ -1,0 +1,17 @@
+export { collectProductSignals, estimateUnitCost, minAllowedPrice } from "./product-metrics";
+export { detectViralProducts } from "./viral-detector";
+export type { ViralProduct, ViralProductsReport } from "./viral-detector";
+export { getPricingRecommendations } from "./pricing";
+export type { PricingRecommendation, PricingReport } from "./pricing";
+export { analyzeCustomerBehavior } from "./customers";
+export type { CustomerBehaviorReport, CustomerBehaviorSegment } from "./customers";
+export { getAutonomousDecisions, getMarketingAutopilotBundle } from "./decision-engine";
+export type { AutonomousDecisionReport, DecisionAction } from "./decision-engine";
+export { getDailyBusinessDecisions } from "./decision-brain";
+export type { DailyBusinessDecisions, ProductDecision } from "./decision-brain";
+export { getDailyBusinessReport } from "./daily-report";
+export type { DailyBusinessReport } from "./daily-report";
+export { getActionRecommendations } from "./action-recommender";
+export type { ActionRecommendationReport, RankedAction } from "./action-recommender";
+export { simulateBusinessScenario, runSimulationBatch } from "./simulator";
+export type { SimulationResult, SimulationScenario } from "./simulator";

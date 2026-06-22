@@ -1,16 +1,4 @@
-export type AssistantIntent =
-  | "revenue"
-  | "orders"
-  | "products"
-  | "inventory"
-  | "analytics"
-  | "users"
-  | "stock"
-  | "suppliers"
-  | "optimization"
-  | "payments"
-  | "forecast"
-  | "general";
+import type { AssistantIntent } from "./types";
 
 const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = [
   {
@@ -46,6 +34,14 @@ const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = 
     patterns: [/pricing/, /bundle/, /optimize revenue/, /underperform/],
   },
   {
+    intent: "strategy",
+    patterns: [/strategy/, /coo/, /what should i do/, /priorit/, /decision brain/, /why should/],
+  },
+  {
+    intent: "decisions",
+    patterns: [/daily decision/, /today's plan/, /top action/, /what to scale/, /what to stop/],
+  },
+  {
     intent: "forecast",
     patterns: [/forecast/, /predict/, /next 7 day/, /projection/],
   },
@@ -74,11 +70,11 @@ export function classifyAssistantIntent(message: string): AssistantIntent {
 
 export function getIntentSuggestions(intent: AssistantIntent): string[] {
   const base = [
+    "What are today's top business decisions?",
+    "Why should we increase prices?",
+    "What products are trending?",
     "Show revenue and conversion",
-    "How many live users are online?",
-    "What products need restock?",
-    "Top products by demand velocity",
-    "Revenue optimization suggestions",
+    "What should we scale today?",
   ];
 
   switch (intent) {

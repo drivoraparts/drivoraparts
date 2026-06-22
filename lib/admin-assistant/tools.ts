@@ -6,6 +6,10 @@ import { getAiInsightsReport } from "@/lib/insights/ai";
 import { getLiveUsersSnapshot } from "@/lib/live/users";
 import { getRevenueOptimizationReport } from "@/lib/optimization/revenue";
 import { getSupplierEngineRecommendations } from "@/lib/suppliers/engine";
+import { getDailyBusinessDecisions } from "@/lib/ai/decision-brain";
+import { getDailyBusinessReport } from "@/lib/ai/daily-report";
+import { getActionRecommendations } from "@/lib/ai/action-recommender";
+import { simulateBusinessScenario } from "@/lib/ai/simulator";
 import { getRealtimeDashboard } from "@/lib/realtime/engine";
 import { safeQuery } from "@/lib/db/safe-query";
 
@@ -128,4 +132,31 @@ export async function getStockAlerts() {
 
 export async function getPaymentRecords(limit = 20) {
   return safeQuery(() => listPayments(limit), [], "assistant-payment-records");
+}
+
+export async function getDecisionBrainSnapshot() {
+  const [brain, report, actions] = await Promise.all([
+    safeQuery(() => getDailyBusinessDecisions(), null, "assistant-brain"),
+    safeQuery(() => getDailyBusinessReport(), null, "assistant-daily"),
+    safeQuery(() => getActionRecommendations(), null, "assistant-actions"),
+  ]);
+
+  return { brain, report, actions };
+}
+
+export async function simulateProductScenario(
+  productId: number,
+  type: "price_increase" | "tiktok_campaign" | "restock"
+) {
+  return safeQuery(
+    () =>
+      simulateBusinessScenario({
+        type,
+        productId,
+        percent: 10,
+        budgetTier: "medium",
+      }),
+    null,
+    "assistant-simulate"
+  );
 }

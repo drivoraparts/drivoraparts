@@ -1,19 +1,22 @@
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import DashboardCharts from "@/components/admin/DashboardCharts";
 import AdvancedCharts from "@/components/admin/charts/AdvancedCharts";
+import AutopilotIntelligence from "@/components/admin/AutopilotIntelligence";
 import { getAnalyticsSummary, getDashboardChartData } from "@/lib/analytics";
 import { getInsightsReport } from "@/lib/insights/engine";
 import { getPaymentStats } from "@/lib/db/payments";
+import { detectViralProducts } from "@/lib/ai/viral-detector";
 
 export const dynamic = "force-dynamic";
 export const runtime = "edge";
 
 export default async function AdminDashboardPage() {
-  const [summary, charts, insights, paymentStats] = await Promise.all([
+  const [summary, charts, insights, paymentStats, viral] = await Promise.all([
     getAnalyticsSummary(),
     getDashboardChartData(),
     getInsightsReport(),
     getPaymentStats(),
+    detectViralProducts(5),
   ]);
 
   return (
@@ -62,7 +65,14 @@ export default async function AdminDashboardPage() {
           value={String(insights.ai.inventoryRiskScores.filter((r) => r.severity === "high" || r.severity === "critical").length)}
           hint="High/critical SKUs"
         />
+        <StatCard
+          label="Viral Signals"
+          value={String(viral.products.filter((p) => p.viralScore >= 45).length)}
+          hint="Products with rising demand"
+        />
       </div>
+
+      <AutopilotIntelligence />
 
       <DashboardCharts data={charts} />
       <AdvancedCharts />

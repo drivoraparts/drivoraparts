@@ -15,6 +15,8 @@ export type AssistantIntent =
   | "optimization"
   | "payments"
   | "forecast"
+  | "strategy"
+  | "decisions"
   | "general";
 
 export type AssistantResponse = {

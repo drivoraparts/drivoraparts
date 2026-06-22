@@ -1,3 +1,9 @@
+import {
+  getAdminEmail,
+  getAdminPassword,
+  getAuthSecret,
+} from "@/lib/auth/admin";
+
 function required(name: string, devFallback?: string): string {
   const value = process.env[name];
   if (value) return value;
@@ -24,17 +30,7 @@ export function getSupabaseServiceRoleKey(): string {
   return required("SUPABASE_SERVICE_ROLE_KEY", "placeholder-service-key");
 }
 
-export function getAuthSecret(): string {
-  return required("AUTH_SECRET", "dev-only-auth-secret-change-me");
-}
-
-export function getAdminEmail(): string {
-  return required("ADMIN_EMAIL", "admin@localhost");
-}
-
-export function getAdminPassword(): string {
-  return required("ADMIN_PASSWORD", "dev-password");
-}
+export { getAuthSecret, getAdminEmail, getAdminPassword };
 
 export function getSiteUrl(): string {
   return optional("NEXT_PUBLIC_SITE_URL", "https://drivoraparts.com");

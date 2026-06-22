@@ -18,7 +18,19 @@ import {
 } from "@/lib/security/abuse";
 import { logApiRequest } from "@/lib/security/request-log";
 
-const PUBLIC_ADMIN_PATHS = ["/admin/login"];
+const PUBLIC_ADMIN_PATHS = [
+  "/admin/login",
+  "/admin/forgot-password",
+  "/admin/reset-password",
+];
+
+function withPathnameHeader(request: NextRequest): NextResponse {
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-pathname", request.nextUrl.pathname);
+  return NextResponse.next({
+    request: { headers: requestHeaders },
+  });
+}
 
 function applyRateLimitHeaders(
   response: NextResponse,
@@ -124,7 +136,7 @@ export async function middleware(request: NextRequest) {
     if (session) {
       return NextResponse.redirect(new URL("/admin/dashboard", request.url));
     }
-    return NextResponse.next();
+    return withPathnameHeader(request);
   }
 
   const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
@@ -136,7 +148,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(loginUrl);
   }
 
-  return NextResponse.next();
+  return withPathnameHeader(request);
 }
 
 export const config = {

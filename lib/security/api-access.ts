@@ -5,23 +5,21 @@ const ADMIN_ONLY_PREFIXES = [
   "/api/admin/support",
 ];
 
-const ADMIN_ONLY_EXACT = new Set([
-  "/api/admin/logout",
+const PUBLIC_ADMIN_APIS = new Set([
+  "/api/admin/login",
+  "/api/auth/login",
   "/api/auth/logout",
+  "/api/admin/logout",
+  "/api/auth/forgot-password",
+  "/api/auth/reset-password",
 ]);
 
-const PUBLIC_ADMIN_PATHS = new Set(["/api/admin/login"]);
-
 export function isAdminProtectedApi(pathname: string, method: string): boolean {
-  if (PUBLIC_ADMIN_PATHS.has(pathname)) {
+  if (PUBLIC_ADMIN_APIS.has(pathname)) {
     return false;
   }
 
   if (pathname.startsWith("/api/admin/")) {
-    return true;
-  }
-
-  if (ADMIN_ONLY_EXACT.has(pathname)) {
     return true;
   }
 

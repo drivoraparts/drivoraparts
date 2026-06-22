@@ -3,6 +3,7 @@ import { classifyAssistantIntent, getIntentSuggestions } from "./intents";
 import {
   getAnalyticsOverview,
   getBusinessSnapshot,
+  getDecisionBrainSnapshot,
   getInventoryStatus,
   getLiveOperations,
   getPaymentRecords,
@@ -10,6 +11,7 @@ import {
   getRevenue,
   getTopProducts,
   getUsersOnline,
+  simulateProductScenario,
 } from "./tools";
 import type { AssistantResponse } from "./types";
 
@@ -17,18 +19,83 @@ function formatMoney(value: number) {
   return `$${value.toFixed(2)}`;
 }
 
+function explainDecision(
+  action: string,
+  productName: string,
+  confidence: number,
+  impact: string
+): string {
+  return `I'm recommending "${action}" on ${productName} (${confidence}% confidence) because ${impact.toLowerCase()}`;
+}
+
 export async function generateAdminAssistantReply(
   message: string
 ): Promise<AssistantResponse> {
+  const text = message.toLowerCase().trim();
   const intent = classifyAssistantIntent(message);
   const suggestions = getIntentSuggestions(intent);
 
   if (!message.trim()) {
     return {
       reply:
-        "I'm your business operator AI. Ask about revenue, live users, orders, inventory, suppliers, pricing optimization, or payments.",
+        "I'm your COO AI. I analyze the decision brain daily — ask what to advertise, restock, price, scale, or stop, and I'll explain why.",
       suggestions,
       intent,
+    };
+  }
+
+  if (intent === "strategy" || intent === "decisions" || text.includes("why")) {
+    const { brain, report, actions } = await getDecisionBrainSnapshot();
+
+    if (!brain) {
+      return {
+        reply: "Decision brain is warming up — need more analytics before strategic recommendations.",
+        suggestions,
+        intent,
+      };
+    }
+
+    const top = brain.productDecisions.slice(0, 3);
+    const high = actions?.highImpact.slice(0, 2) ?? [];
+
+    if (text.includes("why") && top[0]) {
+      return {
+        reply: explainDecision(
+          top[0].action,
+          top[0].productName,
+          top[0].confidence,
+          top[0].expectedImpact
+        ),
+        suggestions,
+        intent,
+        data: { brain, report, actions },
+      };
+    }
+
+    return {
+      reply: `Today's plan (${brain.date}): ${brain.topActions.join(", ")}. ${top.length ? `Top product moves: ${top.map((d) => `${d.productName} → ${d.action}`).join("; ")}.` : ""}${high[0] ? ` Urgent: ${high[0].action}${high[0].productName ? ` for ${high[0].productName}` : ""}.` : ""}${report ? ` Revenue today ~${formatMoney(report.revenuePrediction.todayEstimate)}.` : ""}`,
+      suggestions,
+      intent,
+      data: { brain, report, actions },
+    };
+  }
+
+  if (text.includes("simulate") || text.includes("what if")) {
+    const top = await getTopProducts();
+    const productId = top[0]?.productId ?? 1;
+    const sim = await simulateProductScenario(productId, "price_increase");
+    if (!sim) {
+      return {
+        reply: "Simulation unavailable — pick a valid product to model scenarios.",
+        suggestions,
+        intent: "strategy",
+      };
+    }
+    return {
+      reply: `Simulation: ${sim.summary} Revenue change ${sim.projectedRevenueChangePercent >= 0 ? "+" : ""}${sim.projectedRevenueChangePercent}%, conversion ${sim.projectedConversionChange >= 0 ? "+" : ""}${sim.projectedConversionChange}%, risk ${sim.riskLevel}.`,
+      suggestions,
+      intent: "strategy",
+      data: sim,
     };
   }
 
@@ -174,12 +241,17 @@ export async function generateAdminAssistantReply(
     }
 
     default: {
+      const { brain, report } = await getDecisionBrainSnapshot();
       const live = await getUsersOnline();
       const revenue = await getRevenue();
+
       return {
-        reply: `Business snapshot — Revenue ${formatMoney(revenue.analytics.totalRevenue)}, ${live?.activeUsers ?? 0} live users, ${revenue.orders.pendingOrders} pending orders. Ask about stock, suppliers, ads, or optimization.`,
+        reply: brain
+          ? `COO snapshot — Revenue ${formatMoney(revenue.analytics.totalRevenue)}, ${live?.activeUsers ?? 0} live users. Today: ${brain.topActions.slice(0, 3).join(", ")}.${report?.growthOpportunities[0] ? ` Growth op: ${report.growthOpportunities[0]}` : ""}`
+          : `Business snapshot — Revenue ${formatMoney(revenue.analytics.totalRevenue)}, ${live?.activeUsers ?? 0} live users. Ask for today's strategic decisions.`,
         suggestions,
         intent,
+        data: { brain, report },
       };
     }
   }

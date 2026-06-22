@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, useState } from "react";
 
@@ -19,7 +20,7 @@ export default function AdminLoginForm() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/admin/login", {
+      const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -94,6 +95,12 @@ export default function AdminLoginForm() {
             {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
+
+        <p className="mt-6 text-center text-sm text-gray-400">
+          <Link href="/admin/forgot-password" className="text-red-400 hover:underline">
+            Forgot password?
+          </Link>
+        </p>
       </div>
     </main>
   );

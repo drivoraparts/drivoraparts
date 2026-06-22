@@ -66,7 +66,17 @@ export function getRateLimitConfig(pathname: string): {
     return { limit: 10, windowMs };
   }
 
-  if (pathname.startsWith("/api/admin/login")) {
+  if (
+    pathname.startsWith("/api/admin/login") ||
+    pathname.startsWith("/api/auth/login")
+  ) {
+    return { limit: 5, windowMs: 15 * 60_000 };
+  }
+
+  if (
+    pathname.startsWith("/api/auth/forgot-password") ||
+    pathname.startsWith("/api/auth/reset-password")
+  ) {
     return { limit: 5, windowMs: 15 * 60_000 };
   }
 

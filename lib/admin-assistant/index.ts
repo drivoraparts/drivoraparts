@@ -10,5 +10,7 @@ export {
   getStockAlerts,
   getPaymentRecords,
   getBusinessSnapshot,
+  getDecisionBrainSnapshot,
+  simulateProductScenario,
 } from "./tools";
 export type { AssistantMessage, AssistantResponse, AssistantIntent } from "./types";

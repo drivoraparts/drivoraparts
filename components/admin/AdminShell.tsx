@@ -13,6 +13,7 @@ const links = [
   { href: "/admin/logs", label: "Logs" },
   { href: "/admin/live-users", label: "Live Users" },
   { href: "/admin/forecast", label: "AI Forecast" },
+  { href: "/admin/marketing", label: "Marketing Autopilot" },
   { href: "/admin/ads", label: "Ad Generator" },
   { href: "/admin/suppliers", label: "Suppliers" },
   { href: "/admin/payments", label: "Payments" },

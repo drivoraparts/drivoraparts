@@ -64,3 +64,8 @@ export function timingSafeEqual(a: string, b: string): boolean {
   }
   return result === 0;
 }
+
+export async function hashPasswordForStorage(value: string): Promise<string> {
+  const { getAuthSecret } = await import("./admin");
+  return sha256Hex(`${value}:${getAuthSecret()}`);
+}

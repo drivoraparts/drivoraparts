@@ -5,12 +5,14 @@ import {
 import { getClientIp } from "@/lib/security/ip";
 import { logActivity } from "@/lib/monitoring/activity";
 
+export const LOGIN_RATE_PATH = "/api/auth/login";
+
 const LOGIN_WINDOW_MS = 15 * 60_000;
 const LOGIN_MAX_ATTEMPTS = 5;
 
 export async function enforceLoginRateLimit(request: Request): Promise<Response | null> {
   const ip = getClientIp(request);
-  const key = buildRateLimitKey(ip, "/api/admin/login");
+  const key = buildRateLimitKey(ip, LOGIN_RATE_PATH);
   const result = checkRateLimit(key, LOGIN_MAX_ATTEMPTS, LOGIN_WINDOW_MS);
 
   if (!result.allowed) {
@@ -33,7 +35,7 @@ export async function enforceLoginRateLimit(request: Request): Promise<Response 
 
 export async function recordFailedLoginAttempt(request: Request, email: string) {
   const ip = getClientIp(request);
-  const key = buildRateLimitKey(ip, "/api/admin/login");
+  const key = buildRateLimitKey(ip, LOGIN_RATE_PATH);
   checkRateLimit(key, LOGIN_MAX_ATTEMPTS, LOGIN_WINDOW_MS);
 
   await logActivity("warn", "Failed admin login attempt", {
