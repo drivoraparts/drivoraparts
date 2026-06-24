@@ -1,0 +1,145 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+type View = "pending" | "paid" | "failed" | "unknown";
+
+const POLL_INTERVAL_MS = 3000;
+const MAX_ATTEMPTS = 40; // ~2 minutes
+
+const COPY: Record<View, { heading: string; subtext: string; message: string }> = {
+  paid: {
+    heading: "Payment Successful",
+    subtext: "Your order is confirmed",
+    message: "We've received your payment and confirmed your order.",
+  },
+  pending: {
+    heading: "Confirming Your Payment",
+    subtext: "This page updates automatically",
+    message:
+      "Please wait while we confirm your payment with the provider. You don't need to refresh — this page updates on its own.",
+  },
+  failed: {
+    heading: "Payment Not Confirmed",
+    subtext: "We're still verifying",
+    message:
+      "We couldn't confirm your payment yet. If you were charged, it will be reconciled automatically — please contact support if this persists.",
+  },
+  unknown: {
+    heading: "Order Received",
+    subtext: "Your order is being processed",
+    message: "Your order is being processed.",
+  },
+};
+
+export default function SuccessStatus({ orderId }: { orderId: string | null }) {
+  const [view, setView] = useState<View>(orderId ? "pending" : "unknown");
+  const [total, setTotal] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!orderId) return;
+
+    let active = true;
+    let attempts = 0;
+
+    const check = async (): Promise<boolean> => {
+      try {
+        const res = await fetch(
+          `/api/public/order-status?orderId=${encodeURIComponent(orderId)}`,
+          { cache: "no-store" }
+        );
+        if (!res.ok || !active) return false;
+
+        const data = (await res.json()) as { status?: string; total?: number };
+        if (!active) return false;
+
+        if (typeof data.total === "number") setTotal(data.total);
+
+        if (data.status === "paid") {
+          setView("paid");
+          return true;
+        }
+        if (data.status === "failed") {
+          setView("failed");
+          return true;
+        }
+      } catch {
+        // transient — keep polling
+      }
+      return false;
+    };
+
+    const interval = setInterval(async () => {
+      attempts += 1;
+      const done = await check();
+      if (done || attempts >= MAX_ATTEMPTS) clearInterval(interval);
+    }, POLL_INTERVAL_MS);
+
+    void check();
+
+    return () => {
+      active = false;
+      clearInterval(interval);
+    };
+  }, [orderId]);
+
+  const { heading, subtext, message } = COPY[view];
+  const totalLabel = view === "paid" ? "Total Paid" : "Order Total";
+
+  return (
+    <main className="mx-auto flex min-h-screen max-w-md flex-col px-6 py-12 text-white">
+      <div className="flex flex-col items-center gap-3 py-6 text-center">
+        <Image
+          src="/favicon.svg"
+          alt="DrivoraParts"
+          width={40}
+          height={40}
+          priority
+          className="rounded-lg"
+        />
+        <div>
+          <h1 className="text-lg font-semibold text-white">{heading}</h1>
+          <p className="text-xs text-white/50">{subtext}</p>
+        </div>
+      </div>
+
+      <div className="rounded-xl border border-white/10 bg-black/40 p-4 text-center">
+        <p className="text-sm text-white/80">{message}</p>
+      </div>
+
+      {orderId ? (
+        <div className="mt-4 space-y-3 rounded-xl border border-white/10 bg-black/40 p-4">
+          <div>
+            <p className="text-xs text-white/50">Order ID</p>
+            <p className="break-all text-sm text-white">{orderId}</p>
+          </div>
+          {total != null ? (
+            <div>
+              <p className="text-xs text-white/50">{totalLabel}</p>
+              <p className="text-lg font-medium text-white">
+                ${total.toFixed(2)}
+              </p>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+
+      <div className="mt-5 space-y-2">
+        <Link
+          href="/catalog"
+          className="block w-full rounded-lg bg-red-600 py-3 text-center text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99]"
+        >
+          Continue Shopping
+        </Link>
+        <Link
+          href="/"
+          className="block w-full rounded-lg border border-white/10 py-3 text-center text-sm text-white/80 transition hover:bg-white/5"
+        >
+          Back to Home
+        </Link>
+      </div>
+    </main>
+  );
+}

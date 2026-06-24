@@ -139,6 +139,39 @@ export async function getOrderById(id: string): Promise<OrderWithDetails | null>
   };
 }
 
+/** Minimal status-only lookup for the public success-page poll (no PII). */
+export async function getOrderStatusById(id: string): Promise<OrderStatus | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .select("status")
+    .eq("id", id)
+    .maybeSingle();
+
+  if (error) throw error;
+  return (data?.status as OrderStatus) ?? null;
+}
+
+/**
+ * Status + total for the public success-page poll. The order id is an
+ * unguessable UUID and the total is an amount the buyer already knows, so
+ * this exposes no PII beyond what the purchaser supplied.
+ */
+export async function getOrderStatusSummaryById(
+  id: string
+): Promise<{ status: OrderStatus; total: number } | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .select("status, total")
+    .eq("id", id)
+    .maybeSingle();
+
+  if (error) throw error;
+  if (!data) return null;
+  return { status: data.status as OrderStatus, total: Number(data.total) };
+}
+
 export async function listOrders(limit = 100): Promise<OrderWithDetails[]> {
   return guardedSupabaseRead("listOrders", [], async () => {
     const supabase = getSupabaseAdmin();
@@ -247,6 +280,66 @@ export async function transitionOrderStatus(
   status: OrderStatus
 ): Promise<OrderRecord | null> {
   return updateOrderStatus(id, status);
+}
+
+/**
+ * Atomically finalize an order as paid via a single conditional UPDATE
+ * (compare-and-set on the current status). Only transitions from an unpaid,
+ * non-terminal state, so concurrent/duplicate webhook deliveries are
+ * idempotent: exactly ONE caller receives the updated row; all others receive
+ * null. Callers must gate paid-side-effects (emails, etc.) on a non-null return.
+ */
+export async function finalizeOrderPaid(id: string): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ status: "paid", updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .in("status", ["pending", "processing"])
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  return (data as OrderRecord | null) ?? null;
+}
+
+/**
+ * Atomically mark an order failed without ever clobbering a paid order.
+ * Idempotent: returns null when the order is already paid/failed or missing.
+ */
+export async function failOrderIfUnpaid(id: string): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ status: "failed", updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .in("status", ["pending", "processing"])
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  return (data as OrderRecord | null) ?? null;
+}
+
+/**
+ * Orders still `pending` and older than the given cutoff — the reconciliation
+ * sweep's input set (missed/delayed webhooks).
+ */
+export async function listStalePendingOrders(
+  cutoffIso: string,
+  limit = 100
+): Promise<OrderRecord[]> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .select("*")
+    .eq("status", "pending")
+    .lt("created_at", cutoffIso)
+    .order("created_at", { ascending: true })
+    .limit(limit);
+
+  if (error) throw error;
+  return (data ?? []) as OrderRecord[];
 }
 
 export async function getOrderStats() {

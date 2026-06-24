@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -212,50 +213,86 @@ export default function CheckoutPage() {
 
           <div className="space-y-6">
             <section className={glassCard}>
-              <h2 className="mb-4 text-xl font-bold">Order Summary</h2>
+              <div className="mb-4 flex items-center justify-between gap-2">
+                <h2 className="text-sm font-medium text-white/70">Order Summary</h2>
+                <span className="flex items-center gap-1.5 text-xs text-gray-400">
+                  <Image
+                    src="/favicon.svg"
+                    alt="DrivoraParts"
+                    width={18}
+                    height={18}
+                    className="rounded"
+                  />
+                  Secure Checkout
+                </span>
+              </div>
 
-              <div className="space-y-4">
+              <div className="divide-y divide-white/5">
                 {cart.map((item) => (
-                  <div
-                    key={item.id}
-                    className="flex gap-4 border-b border-white/10 pb-4 last:border-0 last:pb-0"
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="h-20 w-20 shrink-0 rounded object-cover"
-                    />
-
-                    <div className="min-w-0 flex-1">
-                      <h3 className="font-semibold">{item.name}</h3>
-                      {item.brand ? (
-                        <p className="text-sm text-gray-400">{item.brand}</p>
-                      ) : null}
-                      <p className="mt-1 text-sm text-gray-400">
-                        Unit: ${item.price.toFixed(2)}
-                      </p>
-                      <p className="text-sm">Qty: {item.quantity}</p>
+                  <div key={item.id} className="flex items-center gap-3 py-3">
+                    <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-white/5">
+                      <img
+                        src={item.image || "/product-media/avatars/default.svg"}
+                        alt={item.name}
+                        loading="lazy"
+                        decoding="async"
+                        className="h-full w-full object-cover"
+                      />
                     </div>
 
-                    <p className="shrink-0 font-semibold">
+                    <div className="min-w-0 flex-1">
+                      <h3 className="truncate text-sm font-medium text-white">
+                        {item.name}
+                      </h3>
+                      <p className="text-xs text-white/50">
+                        Qty {item.quantity}
+                        {item.quantity > 1
+                          ? ` · $${item.price.toFixed(2)} each`
+                          : ""}
+                      </p>
+                    </div>
+
+                    <p className="shrink-0 text-sm font-medium text-white">
                       ${(item.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-6 space-y-2 border-t border-white/10 pt-4 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Subtotal</span>
-                  <span>${subtotal.toFixed(2)}</span>
+              <div className="mt-4 space-y-2 border-t border-white/10 pt-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-white/50">Subtotal</span>
+                  <span className="text-white/80">${subtotal.toFixed(2)}</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Shipping</span>
-                  <span>${shipping.toFixed(2)}</span>
+                <div className="flex justify-between text-sm">
+                  <span className="text-white/50">Shipping</span>
+                  <span className="text-white/80">
+                    {shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}
+                  </span>
                 </div>
-                <div className="flex justify-between text-lg font-bold">
-                  <span>Total</span>
-                  <span>${total.toFixed(2)}</span>
+
+                <div className="pt-2">
+                  <p className="text-xs text-white/50">Total</p>
+                  <p className="text-2xl font-semibold tracking-tight text-white">
+                    ${total.toFixed(2)}
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-2 pt-1 text-xs text-white/50">
+                  <svg
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect x="5" y="11" width="14" height="9" rx="2" />
+                    <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                  </svg>
+                  <span>Secure encrypted checkout</span>
                 </div>
               </div>
             </section>
@@ -264,9 +301,9 @@ export default function CheckoutPage() {
               type="button"
               onClick={handleCheckout}
               disabled={submitting}
-              className="w-full rounded-lg bg-red-600 px-6 py-3 font-semibold disabled:opacity-60"
+              className="w-full rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
             >
-              {submitting ? "Processing..." : "Place Order & Pay"}
+              {submitting ? "Processing..." : "Pay Now"}
             </button>
           </div>
         </div>
