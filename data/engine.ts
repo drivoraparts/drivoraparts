@@ -81,6 +81,8 @@ export const engineTree: EngineGroup[] = [
       { name: "GTX3582R Kit" },
       { name: "BorgWarner EFR" },
       { name: "Precision 6266" },
+      { name: "Complete Turbo Kit" },
+      { name: "Hybrid Turbo Kits" },
       { name: "Intercoolers" },
       { name: "Blow-off Valves" },
       { name: "Wastegates" },

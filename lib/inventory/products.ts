@@ -1406,5 +1406,671 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 59,
+    name: "HKS Blow-off Valves",
+    category: "engine",
+    brand: "hks",
+    platform: "blow-off-valves",
+    price: 320,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/hks-blow-off-valves/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/hks-blow-off-valves/1.jpg",
+      "/product-media/engine/turbo-performance/hks-blow-off-valves/2.jpg",
+    ],
+    description: `HKS Blow-off Valves
+
+Performance blow-off valve engineered for turbocharged applications, delivering precise pressure relief and the signature HKS release sound.
+
+The HKS Blow-off Valve is a precision-engineered pressure relief valve designed to protect turbocharged engines from compressor surge during throttle lift-off. Built from billet aluminum with a hardened internal piston, it delivers consistent valve response, improved turbo longevity, and the unmistakable HKS sound. Suitable for a wide range of turbocharged platforms as a direct upgrade or universal installation.
+
+Specifications
+• Part Type: Blow-off Valve (Vent-to-Atmosphere)
+• Construction: Billet Aluminum Body
+• Piston: Hardened Anodized Internal Piston
+• Spring: Adjustable Pressure Spring
+• Mounting: Flange / Universal Weld-on
+• Compatibility: Universal Turbocharged Applications
+• Manufacturer: HKS
+
+Highlights
+• Precise Compressor Surge Protection
+• Billet Aluminum Construction
+• Adjustable Spring Pressure
+• Signature HKS Release Sound
+• Improves Turbo Longevity
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 60,
+    name: "Turbosmart Blow-off Valves",
+    category: "engine",
+    brand: "turbosmart",
+    platform: "blow-off-valves",
+    price: 280,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/turbosmart-blow-off-valves/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/turbosmart-blow-off-valves/1.jpg",
+      "/product-media/engine/turbo-performance/turbosmart-blow-off-valves/2.jpg",
+    ],
+    description: `Turbosmart Blow-off Valves
+
+Race-proven Turbosmart blow-off valve offering reliable boost venting and fast valve response.
+
+Turbosmart Blow-off Valves are globally trusted in motorsport and street performance for their fast actuation, reliable sealing, and durable construction. Featuring a precision diaphragm and adjustable spring preload, the valve vents excess boost pressure smoothly while protecting the turbocharger and intake system. Ideal for high-boost builds and a popular direct upgrade across turbocharged platforms.
+
+Specifications
+• Part Type: Blow-off Valve (Adjustable)
+• Construction: Anodized Aluminum Body
+• Actuation: Precision Diaphragm Design
+• Spring: Adjustable Preload
+• Mounting: Flange / Universal
+• Compatibility: Universal Turbocharged Applications
+• Manufacturer: Turbosmart
+
+Highlights
+• Fast Valve Response
+• Motorsport-Proven Reliability
+• Adjustable Spring Preload
+• Durable Anodized Construction
+• Protects Turbo and Intake System
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 61,
+    name: "BorgWarner EFR Series",
+    category: "engine",
+    brand: "borgwarner",
+    platform: "borgwarner-efr",
+    price: 2199,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 550 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/borgwarner-efr-series/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/borgwarner-efr-series/1.jpg",
+      "/product-media/engine/turbo-performance/borgwarner-efr-series/2.jpg",
+    ],
+    description: `BorgWarner EFR Series
+
+Advanced BorgWarner EFR turbocharger combining Gamma-Ti turbine technology with rapid spool and high-flow performance.
+
+The BorgWarner EFR (Engineered For Racing) Series represents one of the most advanced turbocharger platforms available, featuring a lightweight Gamma-Ti turbine wheel, dual-row ceramic ball bearing cartridge, and integrated boost control provisions. Engineered for fast spool and consistent high-rpm flow, the EFR series delivers exceptional response and reliability for serious performance and motorsport builds.
+
+Specifications
+• Part Type: Ball Bearing Turbocharger
+• Turbine Wheel: Gamma-Ti Lightweight Alloy
+• Bearing: Dual-Row Ceramic Ball Bearing
+• Boost Control: Integrated Provisions
+• Power Capability: Up to 550 HP
+• Compatibility: Universal Performance Applications
+• Manufacturer: BorgWarner
+
+Highlights
+• Gamma-Ti Turbine Technology
+• Rapid Spool Response
+• Ceramic Ball Bearing Cartridge
+• Motorsport Engineered Reliability
+• High-Flow Performance Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 62,
+    name: "Complete Turbo Kit (New)",
+    category: "engine",
+    brand: "garrett",
+    platform: "complete-turbo-kit",
+    price: 3499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "+250 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/complete-turbo-kit/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/complete-turbo-kit/1.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/2.jpg",
+    ],
+    description: `Complete Turbo Kit (New)
+
+Complete bolt-on turbocharger kit with all components required for a reliable forced-induction upgrade.
+
+This Complete Turbo Kit includes everything needed for a clean forced-induction installation, including the turbocharger, manifold, intercooler, piping, wastegate, blow-off valve, and supporting hardware. Engineered as a matched system for consistent boost delivery and reliable power gains, it is ideal for enthusiasts seeking a comprehensive performance upgrade in a single package.
+
+Specifications
+• Kit Type: Complete Bolt-on Turbo System
+• Includes: Turbocharger, Manifold, Intercooler, Piping
+• Boost Control: Wastegate + Blow-off Valve Included
+• Power Gain: +250 HP (application dependent)
+• Hardware: Full Gaskets and Mounting Hardware
+• Compatibility: Application-Specific Fitment
+• Manufacturer: Garrett
+
+Highlights
+• Complete All-in-One Turbo Solution
+• Matched Components for Reliable Boost
+• Significant Power Gains
+• Includes Wastegate and Blow-off Valve
+• Comprehensive Installation Hardware
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 63,
+    name: "Exhaust Systems Catback",
+    category: "engine",
+    brand: "hks",
+    platform: "exhaust-systems",
+    price: 899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/exhaust-catback/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/exhaust-catback/1.jpg",
+      "/product-media/engine/turbo-performance/exhaust-catback/2.jpg",
+    ],
+    description: `Exhaust Systems Catback
+
+High-flow catback exhaust system engineered for improved flow, weight savings, and an aggressive performance tone.
+
+This Catback Exhaust System replaces the factory exhaust from the catalytic converter back, using mandrel-bent stainless steel tubing for improved exhaust flow and reduced weight. Designed to enhance throttle response, free up power, and deliver an aggressive yet refined tone, it bolts on as a direct-fit performance upgrade with all necessary hardware.
+
+Specifications
+• Part Type: Catback Exhaust System
+• Material: T304 Stainless Steel
+• Tubing: Mandrel-Bent High-Flow Design
+• Tip: Polished Stainless Tip
+• Fitment: Direct Bolt-on
+• Compatibility: Application-Specific Fitment
+• Manufacturer: HKS
+
+Highlights
+• Mandrel-Bent High-Flow Tubing
+• T304 Stainless Construction
+• Improved Throttle Response
+• Aggressive Performance Tone
+• Direct Bolt-on Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 64,
+    name: "Exhaust Systems Downpipe",
+    category: "engine",
+    brand: "hks",
+    platform: "exhaust-systems",
+    price: 549,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/exhaust-downpipe/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/exhaust-downpipe/1.jpg",
+      "/product-media/engine/turbo-performance/exhaust-downpipe/2.jpg",
+    ],
+    description: `Exhaust Systems Downpipe
+
+High-flow downpipe designed to reduce backpressure and unlock turbocharged performance.
+
+This performance Downpipe replaces the restrictive factory unit with a high-flow design that reduces exhaust backpressure and improves turbo spool and power delivery. Constructed from stainless steel with precision flanges for a leak-free fit, it is a popular foundational upgrade for turbocharged performance builds.
+
+Specifications
+• Part Type: Performance Downpipe
+• Material: T304 Stainless Steel
+• Design: High-Flow / Reduced Backpressure
+• Flanges: Precision CNC Flanges
+• Fitment: Direct Bolt-on
+• Compatibility: Turbocharged Application-Specific Fitment
+• Manufacturer: HKS
+
+Highlights
+• Reduced Exhaust Backpressure
+• Improved Turbo Spool
+• Stainless Steel Construction
+• Precision Leak-Free Flanges
+• Foundational Turbo Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 65,
+    name: "Garrett GTX3076R Turbo Kit",
+    category: "engine",
+    brand: "garrett",
+    platform: "gtx3076r-turbo-kit",
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 650 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/1.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/2.jpg",
+    ],
+    description: `Garrett GTX3076R Turbo Kit
+
+Garrett GTX3076R turbocharger kit delivering proven high-flow performance and strong mid-range response.
+
+The Garrett GTX3076R is one of the most popular performance turbochargers available, featuring a forged fully-machined billet compressor wheel and dual ball bearing cartridge for fast spool and high-rpm flow. Supplied as a performance kit, it balances rapid response with strong top-end power, making it ideal for street and track builds targeting up to 650 horsepower.
+
+Specifications
+• Part Type: Ball Bearing Turbocharger Kit
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 650 HP
+• Housing: Multiple Turbine A/R Options
+• Compatibility: Universal Performance Applications
+• Manufacturer: Garrett
+
+Highlights
+• Forged Billet Compressor Wheel
+• Dual Ball Bearing Cartridge
+• Fast Spool and High-Flow
+• Proven Garrett GTX Performance
+• Ideal for Street and Track
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 66,
+    name: "Garrett GTX3582R Kit",
+    category: "engine",
+    brand: "garrett",
+    platform: "gtx3582r-kit",
+    price: 2899,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 770 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/garrett-gtx3582r-kit/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/garrett-gtx3582r-kit/1.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3582r-kit/2.jpg",
+    ],
+    description: `Garrett GTX3582R Kit
+
+Garrett GTX3582R turbocharger kit built for high-horsepower performance with strong top-end flow.
+
+The Garrett GTX3582R is a larger-frame performance turbocharger designed for builds targeting higher horsepower while maintaining usable response. Featuring a forged billet compressor wheel and dual ball bearing cartridge, it delivers excellent high-rpm airflow and proven reliability. Supplied as a complete kit, it supports power targets up to 770 horsepower for serious street and track applications.
+
+Specifications
+• Part Type: Ball Bearing Turbocharger Kit
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 770 HP
+• Housing: Multiple Turbine A/R Options
+• Compatibility: Universal Performance Applications
+• Manufacturer: Garrett
+
+Highlights
+• Forged Billet Compressor Wheel
+• High-Horsepower Capability
+• Strong Top-End Airflow
+• Proven Garrett GTX Reliability
+• Ideal for Big-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 67,
+    name: "Hybrid Turbo Audi Kits",
+    category: "engine",
+    brand: "garrett",
+    platform: "hybrid-turbo-kits",
+    price: 1899,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "+150 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/hybrid-turbo-audi-kits/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/hybrid-turbo-audi-kits/1.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-audi-kits/2.jpg",
+    ],
+    description: `Hybrid Turbo Audi Kits
+
+Hybrid turbocharger upgrade kit for Audi platforms, increasing flow capacity while retaining factory fitment.
+
+Hybrid Turbo Audi Kits upgrade the factory turbocharger with uprated billet compressor and turbine components to increase flow and power while retaining OEM-style fitment and reliability. Engineered as a direct replacement for popular Audi turbocharged platforms, these hybrid units deliver strong mid-range gains and improved response without major fabrication.
+
+Specifications
+• Part Type: Hybrid Turbocharger Upgrade
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: +150 HP (application dependent)
+• Platform: Audi Turbocharged Engines
+• Compatibility: Audi 2.0 TFSI / Performance Platforms
+• Manufacturer: Garrett
+
+Highlights
+• Uprated Billet Compressor
+• Retains Factory Fitment
+• Strong Mid-Range Gains
+• Improved Throttle Response
+• Direct Replacement Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 68,
+    name: "Hybrid Turbo BMW",
+    category: "engine",
+    brand: "garrett",
+    platform: "hybrid-turbo-kits",
+    price: 1999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "+180 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/hybrid-turbo-bmw/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/1.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/2.jpg",
+    ],
+    description: `Hybrid Turbo BMW
+
+Hybrid turbocharger upgrade for BMW turbocharged platforms, increasing power while retaining factory-style fitment.
+
+The Hybrid Turbo BMW upgrade replaces the factory turbocharger internals with uprated billet components to increase airflow and power output while maintaining OEM-style fitment and reliability. Engineered for popular BMW turbocharged inline-six platforms, it delivers strong mid-range and top-end gains with a clean direct-replacement installation.
+
+Specifications
+• Part Type: Hybrid Turbocharger Upgrade
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: +180 HP (application dependent)
+• Platform: BMW Turbocharged Engines
+• Compatibility: BMW N54 / N55 Turbocharged Platforms
+• Manufacturer: Garrett
+
+Highlights
+• Uprated Billet Compressor
+• Retains Factory Fitment
+• Strong Mid-Range and Top-End Gains
+• Improved Throttle Response
+• Direct Replacement Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 69,
+    name: "Intake Systems",
+    category: "engine",
+    brand: "hks",
+    platform: "intakes",
+    price: 349,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/intake-systems/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/intake-systems/1.jpg",
+      "/product-media/engine/turbo-performance/intake-systems/2.jpg",
+    ],
+    description: `Intake Systems
+
+High-flow cold air intake system designed to improve airflow, throttle response, and induction sound.
+
+This Intake System replaces the restrictive factory airbox with a high-flow filter and mandrel-formed intake tube to increase airflow and improve throttle response. Designed for a direct-fit installation, it enhances induction sound and complements both turbocharged and naturally aspirated performance builds.
+
+Specifications
+• Part Type: High-Flow Cold Air Intake
+• Filter: Reusable High-Flow Element
+• Tube: Mandrel-Formed Intake Pipe
+• Fitment: Direct Bolt-on
+• Compatibility: Application-Specific Fitment
+• Manufacturer: HKS
+
+Highlights
+• Increased Airflow
+• Improved Throttle Response
+• Reusable High-Flow Filter
+• Enhanced Induction Sound
+• Direct Bolt-on Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 70,
+    name: "Intercoolers (Front Mount Kits)",
+    category: "engine",
+    brand: "garrett",
+    platform: "intercoolers",
+    price: 749,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/1.jpg",
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/2.jpg",
+    ],
+    description: `Intercoolers (Front Mount Kits)
+
+Front-mount intercooler kit engineered to reduce intake temperatures and sustain consistent boost performance.
+
+This Front Mount Intercooler (FMIC) Kit upgrades the factory cooling system with a high-capacity bar-and-plate core and mandrel-bent piping to reduce intake air temperatures and prevent heat soak under sustained boost. Engineered for efficient cooling and minimal pressure drop, it is a core upgrade for reliable turbocharged power.
+
+Specifications
+• Part Type: Front Mount Intercooler Kit
+• Core: Bar-and-Plate High-Capacity
+• Piping: Mandrel-Bent Aluminum
+• Couplers: Silicone Couplers + Clamps Included
+• Benefit: Reduced Intake Temperatures
+• Compatibility: Application-Specific Fitment
+• Manufacturer: Garrett
+
+Highlights
+• High-Capacity Bar-and-Plate Core
+• Reduced Intake Air Temperatures
+• Prevents Heat Soak Under Boost
+• Complete Piping and Coupler Kit
+• Sustains Consistent Boost
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 71,
+    name: "Precision 6266 Turbo",
+    category: "engine",
+    brand: "precision",
+    platform: "precision-6266",
+    price: 1649,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 735 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/precision-6266-turbo/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/precision-6266-turbo/1.jpg",
+      "/product-media/engine/turbo-performance/precision-6266-turbo/2.jpg",
+    ],
+    description: `Precision 6266 Turbo
+
+Precision 6266 dual ball bearing turbocharger offering a proven balance of spool and high-horsepower capability.
+
+The Precision 6266 (PT6266) is a highly popular performance turbocharger known for its versatile balance of quick spool and strong top-end power. Featuring a CEA billet compressor wheel and available in journal or dual ball bearing configurations, the 6266 supports up to 735 horsepower and is a favorite for street and competition builds.
+
+Specifications
+• Part Type: Performance Turbocharger
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing Option
+• Power Capability: Up to 735 HP
+• Sizing: 62mm Inducer / 66mm Exducer
+• Compatibility: Universal Performance Applications
+• Manufacturer: Precision
+
+Highlights
+• CEA Billet Compressor Wheel
+• Balanced Spool and Top-End
+• Up to 735 HP Capability
+• Proven Street and Race Turbo
+• Versatile Fitment Options
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 72,
+    name: "External Wastegates",
+    category: "engine",
+    brand: "turbosmart",
+    platform: "wastegates",
+    price: 389,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/external-wastegates/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/external-wastegates/1.jpg",
+      "/product-media/engine/turbo-performance/external-wastegates/2.jpg",
+    ],
+    description: `External Wastegates
+
+Precision external wastegate providing accurate boost control for high-performance turbocharged systems.
+
+This External Wastegate delivers precise boost control by diverting exhaust gas away from the turbine for stable, repeatable boost pressure. Constructed from billet and stainless components with interchangeable springs, it is engineered for high-boost applications where accurate control and consistency are critical.
+
+Specifications
+• Part Type: External Wastegate
+• Construction: Billet Aluminum + Stainless Valve
+• Springs: Interchangeable Pressure Springs
+• Sizing: 38mm / 44mm Options
+• Cooling: Water-Cooled Provisions
+• Compatibility: Universal Turbocharged Applications
+• Manufacturer: Turbosmart
+
+Highlights
+• Precise External Boost Control
+• Billet and Stainless Construction
+• Interchangeable Pressure Springs
+• Stable Repeatable Boost
+• Ideal for High-Boost Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 73,
+    name: "Internal Wastegates",
+    category: "engine",
+    brand: "turbosmart",
+    platform: "wastegates",
+    price: 299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/internal-wastegates/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/internal-wastegates/1.jpg",
+      "/product-media/engine/turbo-performance/internal-wastegates/2.jpg",
+    ],
+    description: `Internal Wastegates
+
+Internal wastegate actuator engineered for reliable factory-style boost control and consistent response.
+
+This Internal Wastegate actuator provides reliable boost control for turbochargers using an integrated wastegate port. Featuring a durable diaphragm and adjustable actuator rod, it delivers consistent actuation and stable boost pressure while retaining a compact factory-style installation.
+
+Specifications
+• Part Type: Internal Wastegate Actuator
+• Construction: Billet Housing + Durable Diaphragm
+• Rod: Adjustable Actuator Rod
+• Pressure: Multiple Spring Ratings
+• Mounting: Compact Factory-Style
+• Compatibility: Internal-Gate Turbochargers
+• Manufacturer: Turbosmart
+
+Highlights
+• Reliable Boost Control
+• Adjustable Actuator Rod
+• Consistent Actuation
+• Compact Factory-Style Fit
+• Durable Diaphragm Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];

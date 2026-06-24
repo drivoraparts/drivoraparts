@@ -16,6 +16,13 @@ export const brands: Brand[] = [
   { slug: "honda", name: "Honda", category: "engine" },
   { slug: "mazda", name: "Mazda", category: "engine" },
 
+  // Engine — Turbo / Performance Systems
+  { slug: "garrett", name: "Garrett", category: "engine" },
+  { slug: "borgwarner", name: "BorgWarner", category: "engine" },
+  { slug: "precision", name: "Precision", category: "engine" },
+  { slug: "hks", name: "HKS", category: "engine" },
+  { slug: "turbosmart", name: "Turbosmart", category: "engine" },
+
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
   { slug: "borgwarner", name: "BorgWarner", category: "turbocharger" },
