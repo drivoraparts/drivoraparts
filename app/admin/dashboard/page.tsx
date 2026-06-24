@@ -1,9 +1,16 @@
+import nextDynamic from "next/dynamic";
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
-import DashboardCharts from "@/components/admin/DashboardCharts";
-import AdvancedCharts from "@/components/admin/charts/AdvancedCharts";
 import AutopilotIntelligence from "@/components/admin/AutopilotIntelligence";
 import DataDegradedBanner from "@/components/admin/DataDegradedBanner";
 import { loadDashboardData } from "@/lib/admin/safe-data";
+
+const chartFallback = <div className="mt-6 h-72 animate-pulse rounded-lg bg-white/5" />;
+const DashboardCharts = nextDynamic(() => import("@/components/admin/DashboardCharts"), {
+  loading: () => chartFallback,
+});
+const AdvancedCharts = nextDynamic(() => import("@/components/admin/charts/AdvancedCharts"), {
+  loading: () => chartFallback,
+});
 
 export const dynamic = "force-dynamic";
 export default async function AdminDashboardPage() {

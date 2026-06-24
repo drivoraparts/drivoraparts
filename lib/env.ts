@@ -52,6 +52,10 @@ export function getCryptomusPaymentKey(): string | null {
   return process.env.CRYPTOMUS_PAYMENT_KEY ?? null;
 }
 
+export function getCronSecret(): string | null {
+  return process.env.CRON_SECRET ?? null;
+}
+
 export function getTawkPropertyId(): string {
   return optional("NEXT_PUBLIC_TAWK_PROPERTY_ID", "6a392868452f781d473b4ceb");
 }

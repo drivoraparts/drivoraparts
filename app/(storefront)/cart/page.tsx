@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { showToast } from "@/lib/store/toastStore";
 
@@ -40,7 +41,13 @@ export default function CartPage() {
             borderRadius: 10,
           }}
         >
-          <img src={item.image} width={80} alt={item.name} />
+          <Image
+            src={item.image}
+            width={80}
+            height={80}
+            alt={item.name}
+            style={{ objectFit: "cover", borderRadius: 8 }}
+          />
 
           <div style={{ flex: 1 }}>
             <h3>{item.name}</h3>

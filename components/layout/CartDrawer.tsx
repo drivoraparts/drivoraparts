@@ -42,6 +42,8 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                 <img
                   src={item.image}
                   alt={item.name}
+                  loading="lazy"
+                  decoding="async"
                   className="h-16 w-16 rounded object-cover"
                 />
 

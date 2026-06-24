@@ -3,6 +3,7 @@ import { md5 } from "@/lib/cryptomus/md5";
 import { logActivity } from "@/lib/monitoring/activity";
 
 const CRYPTOMUS_API = "https://api.cryptomus.com/v1/payment";
+const CRYPTOMUS_INFO_API = "https://api.cryptomus.com/v1/payment/info";
 
 export type CryptomusInvoiceInput = {
   orderId: string;
@@ -130,6 +131,77 @@ export async function createCryptomusInvoice(
     });
 
     return { ok: false, error: message };
+  }
+}
+
+// Flat shape (not a discriminated union): the project runs with `strict: false`,
+// so literal-discriminant narrowing is unreliable. Optional fields keep access safe.
+export type CryptomusPaymentInfoResult = {
+  ok: boolean;
+  status?: "pending" | "paid" | "failed";
+  providerPaymentId?: string;
+  error?: string;
+  notFound?: boolean;
+  raw?: Record<string, unknown>;
+};
+
+/**
+ * Server-authoritative status lookup used by the reconciliation safety net.
+ * Queries Cryptomus directly for an order so missed/delayed webhooks can be
+ * recovered. Never trusts client input.
+ */
+export async function getCryptomusPaymentInfo(
+  orderId: string
+): Promise<CryptomusPaymentInfoResult> {
+  const merchantId = getCryptomusMerchantId();
+  const apiKey = getCryptomusPaymentKey();
+
+  if (!merchantId || !apiKey) {
+    return { ok: false, error: "Cryptomus is not configured" };
+  }
+
+  const payload = JSON.stringify({ order_id: orderId });
+  const sign = signPayload(payload, apiKey);
+
+  try {
+    const response = await fetch(CRYPTOMUS_INFO_API, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        merchant: merchantId,
+        sign,
+      },
+      body: payload,
+    });
+
+    const data = (await response.json().catch(() => null)) as {
+      result?: CryptomusWebhookPayload & { uuid?: string };
+      message?: string;
+      state?: number;
+    } | null;
+
+    if (!response.ok || !data?.result) {
+      return {
+        ok: false,
+        error: data?.message ?? `Cryptomus info error (${response.status})`,
+        notFound: response.status === 404,
+      };
+    }
+
+    return {
+      ok: true,
+      status: mapCryptomusPaymentStatus(data.result),
+      providerPaymentId: data.result.uuid,
+      raw: data as Record<string, unknown>,
+    };
+  } catch (error) {
+    return {
+      ok: false,
+      error:
+        error instanceof Error
+          ? error.message
+          : "Cryptomus info request failed",
+    };
   }
 }
 

@@ -19,5 +19,11 @@
       "binding": "WORKER_SELF_REFERENCE",
       "service": "drivoraparts"
     }
-  ]
+  ],
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  }
 }

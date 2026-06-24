@@ -173,11 +173,7 @@ export default function MarketOverlay({ onClose }: Props) {
                   active:scale-95 cursor-pointer
                   ${clickAnim === item ? "scale-95 bg-red-600" : ""}
                 `}
-                onClick={() =>
-                  handleClick(item, () => {
-                    console.log("Selected:", item);
-                  })
-                }
+                onClick={() => handleClick(item, () => {})}
               >
                 {item}
               </div>

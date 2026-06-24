@@ -26,6 +26,8 @@ export default function ProductGallery({
           <img
             key={i}
             src={img}
+            loading="lazy"
+            decoding="async"
             onClick={() => setActiveImage(i)}
             className={`
               w-[80px] h-[80px] object-cover rounded-lg cursor-pointer border

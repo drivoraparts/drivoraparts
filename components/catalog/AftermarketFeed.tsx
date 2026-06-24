@@ -98,6 +98,8 @@ export default function AftermarketFeed() {
                   <img
                     src={image}
                     alt={product.name}
+                    loading="lazy"
+                    decoding="async"
                     className="h-40 w-full object-cover rounded-lg"
                   />
                 ) : (

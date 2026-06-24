@@ -24,8 +24,6 @@ function installTawkScript(): void {
   window.Tawk_API = window.Tawk_API || {};
   window.Tawk_LoadStart = new Date();
   window.Tawk_API.onLoaded = function () {
-    console.log("[Tawk] Widget Loaded");
-    console.log("[Tawk] Site ID:", TAWK_SITE_ID);
     window.Tawk_API?.showWidget?.();
   };
 
@@ -35,22 +33,24 @@ function installTawkScript(): void {
   script.src = TAWK_EMBED_SRC;
   script.charset = "UTF-8";
   script.setAttribute("crossorigin", "*");
-  script.onload = () => {
-    console.log("[Tawk] Script loaded successfully");
-    console.log("[Tawk] Embed URL:", TAWK_EMBED_SRC);
-  };
-  script.onerror = () => {
-    console.error("[Tawk] Script failed to load:", TAWK_EMBED_SRC);
-  };
 
   document.body.appendChild(script);
 }
 
 export default function TawkChat() {
   useEffect(() => {
-    console.log("[Tawk] Component Mounted");
-    console.log("[Tawk] Site ID:", TAWK_SITE_ID);
-    installTawkScript();
+    const w = window as typeof window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+
+    if (typeof w.requestIdleCallback === "function") {
+      const id = w.requestIdleCallback(installTawkScript, { timeout: 4000 });
+      return () => w.cancelIdleCallback?.(id);
+    }
+
+    const timer = window.setTimeout(installTawkScript, 3000);
+    return () => window.clearTimeout(timer);
   }, []);
 
   return null;

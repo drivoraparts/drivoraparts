@@ -1,6 +1,10 @@
+import nextDynamic from "next/dynamic";
+
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 
-import DashboardCharts from "@/components/admin/DashboardCharts";
+const DashboardCharts = nextDynamic(() => import("@/components/admin/DashboardCharts"), {
+  loading: () => <div className="mt-8 h-72 animate-pulse rounded-lg bg-white/5" />,
+});
 
 import { getDashboardChartData } from "@/lib/analytics";
 

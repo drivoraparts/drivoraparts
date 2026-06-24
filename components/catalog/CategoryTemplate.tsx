@@ -66,6 +66,8 @@ export default function CategoryTemplate({
                 <img
                   src={product.thumbnail}
                   alt={product.name}
+                  loading="lazy"
+                  decoding="async"
                   className="h-40 w-full object-cover rounded-lg"
                 />
                 <h3 className="mt-3 font-semibold">{product.name}</h3>

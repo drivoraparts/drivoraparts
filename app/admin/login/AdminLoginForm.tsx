@@ -23,9 +23,6 @@ export default function AdminLoginForm() {
     setError("");
     setLoading(true);
 
-    const payload = { email: email.trim(), password: "***" };
-    console.log("[auth:login-ui] submitting", payload);
-
     try {
       const res = await fetch("/api/auth/login", {
         method: "POST",
@@ -35,11 +32,6 @@ export default function AdminLoginForm() {
       });
 
       const data = await res.json().catch(() => ({}));
-      console.log("[auth:login-ui] response", {
-        status: res.status,
-        ok: res.ok,
-        body: data,
-      });
 
       if (!res.ok || !data.success) {
         setError(data.error ?? "Login failed. Check your email and password.");
@@ -51,7 +43,6 @@ export default function AdminLoginForm() {
           ? data.redirect
           : next;
 
-      console.log("[auth:login-ui] redirecting", { destination });
       window.location.href = destination;
     } catch (caught) {
       console.error("[auth:login-ui] network error", caught);

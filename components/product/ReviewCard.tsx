@@ -37,6 +37,8 @@ export default function ReviewCard({ review }: ReviewCardProps) {
             src={avatar}
             alt=""
             aria-hidden
+            loading="lazy"
+            decoding="async"
             className="review-card-avatar"
           />
         ) : (

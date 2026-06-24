@@ -84,7 +84,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
     id: product.id,
     name: product.name,
     price: product.price,
-    image: primaryImage,
+    image: primaryImage || "/product-media/avatars/default.svg",
     category: product.category,
     brand: product.brand,
   };

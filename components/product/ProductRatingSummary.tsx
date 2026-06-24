@@ -82,6 +82,8 @@ export default function ProductRatingSummary({
                 key={`${avatar}-${index}`}
                 src={avatar}
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="verified-buyer-avatar"
                 style={{ marginLeft: index === 0 ? 0 : -8 }}
               />

@@ -8,6 +8,10 @@ import {
 
   createOrderRecord,
 
+  failOrderIfUnpaid,
+
+  finalizeOrderPaid,
+
   getOrderById,
 
   transitionOrderStatus,
@@ -31,8 +35,6 @@ import { logActivity } from "@/lib/monitoring/activity";
 import { createCheckoutPayment } from "@/lib/payments";
 
 import type { PaymentProviderId } from "@/lib/payments/types";
-
-import { applyPaidOrderTransition } from "@/lib/orders/state-machine";
 
 import { lockOrderItemsFromCatalog } from "@/lib/checkout/validate-items";
 
@@ -374,29 +376,19 @@ export async function processCheckout(input: {
 
 export async function markOrderPaid(orderId: string): Promise<void> {
 
-  const details = await getOrderById(orderId);
+  // Atomic compare-and-set: only ONE concurrent/duplicate webhook wins this
+  // transition. A null result means the order was already paid (or not in a
+  // payable state) — an idempotent no-op, so we skip all paid side-effects.
 
-  if (!details) return;
+  const transitioned = await finalizeOrderPaid(orderId);
 
+  if (!transitioned) {
 
-
-  if (details.status === "paid") {
+    await logActivity("warn", "payment.mark_paid_noop", { orderId });
 
     return;
 
   }
-
-
-
-  await applyPaidOrderTransition(
-
-    async (id, status) => transitionOrderStatus(id, status),
-
-    orderId,
-
-    details.status
-
-  );
 
 
 
@@ -454,13 +446,24 @@ export async function markOrderPaid(orderId: string): Promise<void> {
 
 export async function markOrderFailed(orderId: string): Promise<void> {
 
-  await transitionOrderStatus(orderId, "failed");
+  // Atomic + non-clobbering: never overwrite a paid order, and stay idempotent
+  // for duplicate failure webhooks.
+
+  const failed = await failOrderIfUnpaid(orderId);
+
+  if (!failed) {
+
+    await logActivity("warn", "payment.mark_failed_noop", { orderId });
+
+    return;
+
+  }
 
 
 
   const payment = await findPaymentByOrderId(orderId);
 
-  if (payment && payment.status !== "failed") {
+  if (payment && payment.status !== "failed" && payment.status !== "paid") {
 
     await updatePaymentRecord(payment.id, { status: "failed" });
 

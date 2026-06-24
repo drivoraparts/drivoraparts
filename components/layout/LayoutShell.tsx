@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import GlobalHeader from "./GlobalHeader";
 import GlobalDrawer from "./GlobalDrawer";
-import MarketOverlay from "../market/MarketOverlay";
 import GlobalFooter from "./GlobalFooter";
+
+const MarketOverlay = dynamic(() => import("../market/MarketOverlay"), {
+  ssr: false,
+});
 
 type Props = {
   children: React.ReactNode;

@@ -94,6 +94,8 @@ export default function Home() {
             <img
               src={item.image}
               alt={item.title}
+              loading="lazy"
+              decoding="async"
               className="rounded-xl w-full object-cover shadow-2xl"
             />
           </div>
