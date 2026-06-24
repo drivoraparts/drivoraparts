@@ -20,12 +20,6 @@
       "service": "drivoraparts"
     }
   ],
-  "d1_databases": [
-    {
-      "binding": "my-binding",
-      "database_id": "92d8415e-5cbd-440f-ba37-f67fd8d7dff5"
-    }
-  ],
   "observability": {
     "logs": {
       "enabled": true,
