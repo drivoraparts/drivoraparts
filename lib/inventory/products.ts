@@ -2105,5 +2105,269 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 74,
+    name: "ATE OEM Euro Brake Kit",
+    category: "brakes",
+    brand: "ate-oem-kits",
+    price: 640,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/ate-oem-euro-kit/1.jpg",
+    images: [
+      "/product-media/brakes/ate-oem-euro-kit/1.jpg",
+      "/product-media/brakes/ate-oem-euro-kit/2.jpg",
+      "/product-media/brakes/ate-oem-euro-kit/3.jpg",
+    ],
+    description: `ATE OEM Euro Brake Kit
+
+OEM-grade European brake kit engineered for precise pedal feel, consistent stopping power, and direct factory fitment.
+
+The ATE OEM Euro Brake Kit delivers original-equipment braking performance for European platforms, pairing precision-machined rotors with premium friction pads for smooth, fade-resistant stops. Built to factory tolerances for a direct bolt-on fit, it restores confident pedal feel and reliable everyday performance without modification.
+
+Specifications
+• Part Type: Complete Brake Kit (Rotors + Pads)
+• Rotor Construction: Precision-Machined Vented Discs
+• Pad Compound: Low-Dust OEM-Grade Friction
+• Fitment: Direct OEM Replacement (European Platforms)
+• Hardware: Mounting Hardware Included
+• Manufacturer: ATE
+
+Highlights
+• Genuine OEM-Grade Braking Feel
+• Direct Bolt-On Factory Fitment
+• Low-Dust, Fade-Resistant Pads
+• Precision-Machined Vented Rotors
+• Reliable Everyday Performance
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 75,
+    name: "Brembo GT Big Brake Kit",
+    category: "brakes",
+    brand: "brembo-gt-kits",
+    price: 2950,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/brembo-gt/1.jpg",
+    images: [
+      "/product-media/brakes/brembo-gt/1.jpg",
+      "/product-media/brakes/brembo-gt/2.jpg",
+      "/product-media/brakes/brembo-gt/3.jpg",
+      "/product-media/brakes/brembo-gt/4.jpg",
+      "/product-media/brakes/brembo-gt/5.jpg",
+    ],
+    description: `Brembo GT Big Brake Kit
+
+High-performance Brembo GT big brake kit delivering motorsport-grade stopping power, fade resistance, and aggressive styling.
+
+The Brembo GT Big Brake Kit is engineered for serious street and track performance, featuring multi-piston monobloc calipers, two-piece floating rotors, and high-performance pads for exceptional heat management and repeatable stopping power. Supplied as a complete bolt-on upgrade with braided lines and mounting brackets, it dramatically improves braking feel while adding the unmistakable Brembo look.
+
+Specifications
+• Part Type: Big Brake Kit (BBK)
+• Calipers: Multi-Piston Monobloc Aluminum
+• Rotors: Two-Piece Floating Drilled/Slotted Discs
+• Pad Compound: High-Performance Street/Track
+• Lines: Stainless Braided Brake Lines Included
+• Manufacturer: Brembo
+
+Highlights
+• Motorsport-Grade Stopping Power
+• Multi-Piston Monobloc Calipers
+• Two-Piece Floating Rotors
+• Superior Heat & Fade Management
+• Complete Bolt-On Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 76,
+    name: "Brembo OEM Brake Kit",
+    category: "brakes",
+    brand: "brembo-oem",
+    price: 720,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/brembo-oem/1.jpg",
+    images: [
+      "/product-media/brakes/brembo-oem/1.jpg",
+      "/product-media/brakes/brembo-oem/2.jpg",
+      "/product-media/brakes/brembo-oem/3.jpg",
+    ],
+    description: `Brembo OEM Brake Kit
+
+Genuine Brembo OEM-grade brake kit offering factory-matched performance, quiet operation, and direct replacement fitment.
+
+The Brembo OEM Brake Kit provides original-equipment braking quality trusted by leading manufacturers, combining precision-cast rotors with premium low-dust pads for smooth, consistent stopping power. Engineered as a direct replacement, it restores factory braking feel and reliability with the confidence of the Brembo name.
+
+Specifications
+• Part Type: Complete Brake Kit (Rotors + Pads)
+• Rotor Construction: Precision-Cast Vented Discs
+• Pad Compound: Premium Low-Dust Friction
+• Fitment: Direct OEM Replacement
+• Hardware: Mounting Hardware Included
+• Manufacturer: Brembo
+
+Highlights
+• Genuine Brembo OEM Quality
+• Quiet, Low-Dust Operation
+• Direct Replacement Fitment
+• Consistent Factory Braking Feel
+• Trusted Manufacturer Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 77,
+    name: "EBC Performance Brake Kit",
+    category: "brakes",
+    brand: "ebc-rotors-pads",
+    price: 480,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/ebc-performance/1.jpg",
+    images: [
+      "/product-media/brakes/ebc-performance/1.jpg",
+      "/product-media/brakes/ebc-performance/2.jpg",
+    ],
+    description: `EBC Performance Brake Kit
+
+EBC performance brake kit built for stronger bite, reduced fade, and dependable stopping power on street and spirited driving.
+
+The EBC Performance Brake Kit upgrades factory braking with performance-coated rotors and EBC's renowned friction pads for improved bite, lower brake dust, and excellent resistance to fade under repeated hard stops. Designed for a direct fit, it delivers a confident, sporty pedal feel while remaining street-friendly for daily use.
+
+Specifications
+• Part Type: Performance Brake Kit (Rotors + Pads)
+• Rotor Construction: Performance-Coated Vented Discs
+• Pad Compound: EBC High-Friction Performance
+• Fitment: Direct Bolt-On Replacement
+• Hardware: Mounting Hardware Included
+• Manufacturer: EBC
+
+Highlights
+• Stronger Initial Bite
+• Reduced Brake Fade
+• Lower Brake Dust
+• Performance-Coated Rotors
+• Street-Friendly Daily Use
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 78,
+    name: "EBC Brake Rotors & Pads Kit",
+    category: "brakes",
+    brand: "ebc-rotors-pads",
+    price: 520,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/ebc-rotors-pads/1.webp",
+    images: [
+      "/product-media/brakes/ebc-rotors-pads/1.webp",
+      "/product-media/brakes/ebc-rotors-pads/2.webp",
+      "/product-media/brakes/ebc-rotors-pads/3.webp",
+    ],
+    description: `EBC Brake Rotors & Pads Kit
+
+Matched EBC rotors and pads kit delivering balanced performance, smooth modulation, and long-lasting braking confidence.
+
+The EBC Brake Rotors & Pads Kit pairs precision EBC discs with matched performance pads for optimal bedding, smooth modulation, and consistent stopping power. Engineered as a complete matched set, it improves braking response and durability while keeping dust and noise low for comfortable everyday driving.
+
+Specifications
+• Part Type: Matched Rotors & Pads Kit
+• Rotor Construction: Precision Vented Discs
+• Pad Compound: EBC Performance Friction
+• Fitment: Direct Bolt-On Replacement
+• Hardware: Mounting Hardware Included
+• Manufacturer: EBC
+
+Highlights
+• Matched Rotor & Pad Set
+• Smooth, Consistent Modulation
+• Long-Lasting Braking Confidence
+• Low Dust and Noise
+• Easy Direct Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 79,
+    name: "Wilwood Big Brake Kit",
+    category: "brakes",
+    brand: "wilwood-big-brake-kits",
+    price: 1890,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/wilwood-big-brake/1.jpg",
+    images: [
+      "/product-media/brakes/wilwood-big-brake/1.jpg",
+      "/product-media/brakes/wilwood-big-brake/2.jpg",
+      "/product-media/brakes/wilwood-big-brake/3.jpg",
+      "/product-media/brakes/wilwood-big-brake/4.jpg",
+      "/product-media/brakes/wilwood-big-brake/5.jpg",
+      "/product-media/brakes/wilwood-big-brake/6.jpg",
+      "/product-media/brakes/wilwood-big-brake/7.jpg",
+      "/product-media/brakes/wilwood-big-brake/8.jpg",
+    ],
+    description: `Wilwood Big Brake Kit
+
+Wilwood big brake kit engineered for aggressive stopping power, lightweight performance, and serious track capability.
+
+The Wilwood Big Brake Kit delivers race-proven braking performance with forged multi-piston calipers, vented and slotted rotors, and high-temperature pads for exceptional fade resistance under extreme conditions. Lightweight and built as a complete bolt-on system, it provides powerful, repeatable stops for high-performance street and track builds.
+
+Specifications
+• Part Type: Big Brake Kit (BBK)
+• Calipers: Forged Multi-Piston Aluminum
+• Rotors: Vented & Slotted Performance Discs
+• Pad Compound: High-Temperature Performance
+• Hardware: Brackets & Lines Included
+• Manufacturer: Wilwood
+
+Highlights
+• Aggressive Race-Proven Stopping Power
+• Forged Lightweight Calipers
+• Vented & Slotted Rotors
+• Superior High-Temp Fade Resistance
+• Complete Bolt-On Track Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];

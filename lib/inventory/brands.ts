@@ -30,6 +30,7 @@ export const brands: Brand[] = [
 
   // Brakes
   { slug: "brembo-gt-kits", name: "Brembo GT Kits", category: "brakes" },
+  { slug: "brembo-oem", name: "Brembo OEM", category: "brakes" },
   { slug: "wilwood-big-brake-kits", name: "Wilwood Big Brake Kits", category: "brakes" },
   { slug: "ebc-rotors-pads", name: "EBC Rotors & Pads", category: "brakes" },
   { slug: "ate-oem-kits", name: "ATE OEM Kits", category: "brakes" },
