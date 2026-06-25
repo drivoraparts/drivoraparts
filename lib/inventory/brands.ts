@@ -28,6 +28,17 @@ export const brands: Brand[] = [
   { slug: "borgwarner", name: "BorgWarner", category: "turbocharger" },
   { slug: "precision", name: "Precision", category: "turbocharger" },
 
+  // Transmission
+  { slug: "zf", name: "ZF", category: "transmission" },
+  { slug: "gm", name: "GM", category: "transmission" },
+  { slug: "ford", name: "Ford", category: "transmission" },
+  { slug: "tremec", name: "Tremec", category: "transmission" },
+  { slug: "nissan", name: "Nissan", category: "transmission" },
+  { slug: "toyota", name: "Toyota", category: "transmission" },
+  { slug: "mercedes-benz", name: "Mercedes-Benz", category: "transmission" },
+  { slug: "audi", name: "Audi", category: "transmission" },
+  { slug: "universal", name: "Universal", category: "transmission" },
+
   // Brakes
   { slug: "brembo-gt-kits", name: "Brembo GT Kits", category: "brakes" },
   { slug: "brembo-oem", name: "Brembo OEM", category: "brakes" },

@@ -2369,5 +2369,655 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 80,
+    name: "Audi DQ500 DSG Transmission",
+    category: "transmission",
+    brand: "audi",
+    price: 4200,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/audi-dq500-dsg/1.jpg",
+    images: [
+      "/product-media/transmission/audi-dq500-dsg/1.jpg",
+      "/product-media/transmission/audi-dq500-dsg/2.jpg",
+      "/product-media/transmission/audi-dq500-dsg/3.jpg",
+      "/product-media/transmission/audi-dq500-dsg/4.jpg",
+      "/product-media/transmission/audi-dq500-dsg/5.jpg",
+      "/product-media/transmission/audi-dq500-dsg/6.jpg",
+    ],
+    description: `Audi DQ500 DSG Transmission
+
+High-torque 7-speed dual-clutch (DSG) transmission engineered for performance Audi and Volkswagen platforms.
+
+The Audi DQ500 is a 7-speed dual-clutch gearbox built to handle high torque loads, making it the go-to choice for 2.5 TFSI and 2.0 TSI performance builds. Offering lightning-fast shifts, robust internals, and proven reliability under boost, the DQ500 delivers race-bred shifting for both quattro all-wheel-drive and front-wheel-drive applications.
+
+Specifications
+• Type: 7-Speed Dual-Clutch (DSG)
+• Transmission Code: DQ500 (0BH)
+• Layout: Transverse
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Audi / VAG
+
+Highlights
+• Race-Proven Dual-Clutch Shifting
+• High Torque Capacity
+• Ideal for 2.5 TFSI / 2.0 TSI Builds
+• quattro AWD & FWD Compatible
+• Robust Performance Internals
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 81,
+    name: "BMW ZF 8HP70 Transmission",
+    category: "transmission",
+    brand: "zf",
+    price: 3800,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/bmw-zf-8hp70/1.jpg",
+    images: [
+      "/product-media/transmission/bmw-zf-8hp70/1.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/2.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/3.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/4.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/5.jpg",
+    ],
+    description: `BMW ZF 8HP70 Transmission
+
+Smooth, fast-shifting ZF 8-speed automatic transmission trusted across BMW and performance swap builds.
+
+The ZF 8HP70 is one of the most refined and capable automatic transmissions ever produced, delivering seamless shifts, excellent efficiency, and strong torque capacity. Found behind countless BMW inline-6 and V8 applications, it is also a favorite for modern swaps thanks to its durability and aftermarket controller support.
+
+Specifications
+• Type: 8-Speed Automatic
+• Transmission Code: ZF 8HP70
+• Layout: Longitudinal
+• Torque Capacity: Up to ~700 Nm
+• Manufacturer: ZF
+
+Highlights
+• Lightning-Fast Automatic Shifts
+• Proven BMW Reliability
+• Strong Torque Capacity
+• Popular Swap Transmission
+• Excellent Aftermarket Support
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 82,
+    name: "BMW ZF 8HP90 Transmission",
+    category: "transmission",
+    brand: "zf",
+    price: 4500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/bmw-zf-8hp90/1.jpg",
+    images: ["/product-media/transmission/bmw-zf-8hp90/1.jpg"],
+    description: `BMW ZF 8HP90 Transmission
+
+High-capacity ZF 8-speed automatic built for high-horsepower BMW M and performance applications.
+
+The ZF 8HP90 is the high-torque evolution of the 8HP family, engineered to handle the power of BMW M and high-output V8 builds. With reinforced internals and rapid, precise shifts, the 8HP90 is the preferred automatic for serious power applications and high-torque swaps demanding strength without sacrificing refinement.
+
+Specifications
+• Type: 8-Speed Automatic
+• Transmission Code: ZF 8HP90
+• Layout: Longitudinal
+• Torque Capacity: Up to ~1000 Nm
+• Manufacturer: ZF
+
+Highlights
+• High Torque Capacity
+• Reinforced Performance Internals
+• Ideal for BMW M / High-HP Builds
+• Fast, Precise Shifting
+• Premium Swap-Ready Automatic
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 83,
+    name: "Ford 10R80 Transmission",
+    category: "transmission",
+    brand: "ford",
+    price: 3600,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/ford-10r80/1.jpg",
+    images: [
+      "/product-media/transmission/ford-10r80/1.jpg",
+      "/product-media/transmission/ford-10r80/2.jpg",
+      "/product-media/transmission/ford-10r80/3.jpg",
+      "/product-media/transmission/ford-10r80/4.jpg",
+      "/product-media/transmission/ford-10r80/5.jpg",
+    ],
+    description: `Ford 10R80 Transmission
+
+Modern 10-speed automatic transmission delivering quick shifts and strong torque capacity for Mustang and F-150 builds.
+
+The Ford 10R80 is a 10-speed automatic engineered for performance and towing alike, found behind the 5.0L Coyote Mustang GT and F-150. Offering closely spaced ratios, rapid shifts, and proven strength, the 10R80 is increasingly popular for modern RWD swaps that demand both efficiency and high torque handling.
+
+Specifications
+• Type: 10-Speed Automatic
+• Transmission Code: 10R80
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Ford
+
+Highlights
+• 10 Closely-Spaced Ratios
+• Quick, Smooth Shifting
+• Coyote Mustang & F-150 Proven
+• Strong Towing & Performance Capacity
+• Modern RWD Swap Favorite
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 84,
+    name: "GM 4L80E Transmission",
+    category: "transmission",
+    brand: "gm",
+    price: 2400,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/gm-4l80e/1.jpg",
+    images: [
+      "/product-media/transmission/gm-4l80e/1.jpg",
+      "/product-media/transmission/gm-4l80e/2.jpg",
+    ],
+    description: `GM 4L80E Transmission
+
+Heavy-duty GM 4-speed automatic transmission built for high-torque LS swaps, trucks, and performance builds.
+
+The GM 4L80E is a legendary heavy-duty 4-speed automatic derived from the TH400, known for its bulletproof strength and high torque capacity. Widely used behind LS engines, big-block builds, and trucks, the 4L80E is a proven choice when maximum durability is the priority for RWD applications.
+
+Specifications
+• Type: 4-Speed Automatic (Heavy-Duty)
+• Transmission Code: 4L80E
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: GM
+
+Highlights
+• Bulletproof Heavy-Duty Design
+• Ideal for LS & Big-Block Swaps
+• Proven Truck & Performance Use
+• High Torque Capacity
+• Simple, Reliable Electronics
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 85,
+    name: "GM 6L80 Transmission",
+    category: "transmission",
+    brand: "gm",
+    price: 2600,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/gm-6l80/1.jpg",
+    images: [
+      "/product-media/transmission/gm-6l80/1.jpg",
+      "/product-media/transmission/gm-6l80/2.jpg",
+      "/product-media/transmission/gm-6l80/3.jpg",
+      "/product-media/transmission/gm-6l80/4.jpg",
+    ],
+    description: `GM 6L80 Transmission
+
+Versatile GM 6-speed automatic transmission offering smooth shifts and strong capacity for LS and LT swaps.
+
+The GM 6L80 is a 6-speed automatic that pairs modern shift quality with strong torque capacity, found behind LS and LT engines in Camaro, Silverado, and Corvette platforms. A popular upgrade over older 4-speed units, the 6L80 delivers better efficiency and drivability while remaining swap-friendly for RWD builds.
+
+Specifications
+• Type: 6-Speed Automatic
+• Transmission Code: 6L80
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: GM
+
+Highlights
+• Smooth 6-Speed Shifting
+• Ideal for LS / LT Swaps
+• Better Efficiency vs. 4-Speed Units
+• Strong Torque Capacity
+• Widely Supported Aftermarket
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 86,
+    name: "Mercedes 722.9 Transmission",
+    category: "transmission",
+    brand: "mercedes-benz",
+    price: 3200,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/mercedes-722-9/1.jpg",
+    images: [
+      "/product-media/transmission/mercedes-722-9/1.jpg",
+      "/product-media/transmission/mercedes-722-9/2.jpg",
+      "/product-media/transmission/mercedes-722-9/3.jpg",
+      "/product-media/transmission/mercedes-722-9/4.jpg",
+    ],
+    description: `Mercedes 722.9 Transmission
+
+Refined Mercedes-Benz 7G-Tronic 7-speed automatic transmission delivering smooth, luxurious shifting.
+
+The Mercedes-Benz 722.9 (7G-Tronic) is a 7-speed automatic renowned for its smooth, refined shifts and broad application across the Mercedes lineup. Engineered for comfort and durability, it suits both rear-wheel-drive and 4MATIC all-wheel-drive platforms, making it a dependable replacement or swap option for Mercedes builds.
+
+Specifications
+• Type: 7-Speed Automatic (7G-Tronic)
+• Transmission Code: 722.9
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Mercedes-Benz
+
+Highlights
+• Smooth 7-Speed Shifting
+• Refined Luxury Drivability
+• RWD & 4MATIC Compatible
+• Proven Mercedes Reliability
+• Broad Platform Application
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 87,
+    name: "Nissan CD009 6-Speed Transmission",
+    category: "transmission",
+    brand: "nissan",
+    price: 2900,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/nissan-cd009-6-speed/1.jpg",
+    images: [
+      "/product-media/transmission/nissan-cd009-6-speed/1.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/2.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/3.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/4.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/5.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/6.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/7.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/8.jpg",
+      "/product-media/transmission/nissan-cd009-6-speed/9.jpg",
+    ],
+    description: `Nissan CD009 6-Speed Transmission
+
+Strong, swap-friendly Nissan 6-speed manual transmission popular for high-horsepower builds.
+
+The Nissan CD009 is a 6-speed manual transmission from the 350Z/370Z (VQ) platform, prized for its strength and affordability as a swap gearbox. Commonly adapted behind LS, 2JZ, and other high-torque engines, the CD009 offers durable synchros and a robust case, making it a staple of the performance swap community for RWD builds.
+
+Specifications
+• Type: 6-Speed Manual
+• Transmission Code: CD009
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Nissan
+
+Highlights
+• Strong, Affordable Swap Gearbox
+• Popular Behind LS / 2JZ Builds
+• Durable Synchros & Case
+• Huge Adapter Support
+• Performance Community Favorite
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 88,
+    name: "Toyota R154 Transmission",
+    category: "transmission",
+    brand: "toyota",
+    price: 3500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/toyota-r154/1.jpg",
+    images: [
+      "/product-media/transmission/toyota-r154/1.jpg",
+      "/product-media/transmission/toyota-r154/2.jpg",
+      "/product-media/transmission/toyota-r154/3.jpg",
+      "/product-media/transmission/toyota-r154/4.jpg",
+      "/product-media/transmission/toyota-r154/5.jpg",
+      "/product-media/transmission/toyota-r154/6.jpg",
+      "/product-media/transmission/toyota-r154/7.jpg",
+    ],
+    description: `Toyota R154 Transmission
+
+Legendary Toyota 5-speed manual transmission renowned for its strength behind turbocharged inline-6 engines.
+
+The Toyota R154 is a 5-speed manual transmission famous for its durability behind the 1JZ and 2JZ engines in the Supra MK3 and Soarer. Capable of handling substantial torque, the R154 is a favorite for RWD performance and swap builds where a strong, proven manual gearbox is essential.
+
+Specifications
+• Type: 5-Speed Manual
+• Transmission Code: R154
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Toyota
+
+Highlights
+• Legendary Strength Behind 1JZ / 2JZ
+• Proven Supra MK3 Heritage
+• Durable Performance Manual
+• Popular RWD Swap Gearbox
+• Strong Aftermarket Support
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 89,
+    name: "Toyota V160 Transmission",
+    category: "transmission",
+    brand: "toyota",
+    price: 5200,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/toyota-v160/1.jpg",
+    images: [
+      "/product-media/transmission/toyota-v160/1.jpg",
+      "/product-media/transmission/toyota-v160/2.jpg",
+      "/product-media/transmission/toyota-v160/3.jpg",
+      "/product-media/transmission/toyota-v160/4.jpg",
+      "/product-media/transmission/toyota-v160/5.jpg",
+    ],
+    description: `Toyota V160 Transmission
+
+Highly sought-after Getrag-built 6-speed manual transmission from the legendary Toyota Supra MK4.
+
+The Toyota V160 is a Getrag-built 6-speed manual transmission originally fitted to the MK4 Supra, prized for its exceptional strength and precise shift feel. One of the most desirable performance gearboxes ever produced, the V160 reliably handles big power and remains a premium choice for serious 2JZ RWD builds.
+
+Specifications
+• Type: 6-Speed Manual (Getrag)
+• Transmission Code: V160
+• Layout: Longitudinal
+• Torque Capacity: Very High
+• Manufacturer: Toyota / Getrag
+
+Highlights
+• Legendary Supra MK4 Gearbox
+• Exceptional Strength & Shift Feel
+• Handles Big-Power 2JZ Builds
+• Highly Collectible & Sought-After
+• Premium Performance Manual
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 90,
+    name: "Transmission Cooler Kit",
+    category: "transmission",
+    brand: "universal",
+    price: 320,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/transmission-cooler-kit/1.jpg",
+    images: [
+      "/product-media/transmission/transmission-cooler-kit/1.jpg",
+      "/product-media/transmission/transmission-cooler-kit/2.jpg",
+    ],
+    description: `Transmission Cooler Kit
+
+Universal external transmission cooler kit that lowers ATF temperatures and extends transmission life.
+
+This Transmission Cooler Kit helps protect automatic transmissions from heat-related wear by lowering fluid temperatures under towing, track, and high-load conditions. Featuring an efficient cooler core and complete mounting hardware, it is a simple, effective upgrade for any build that demands consistent transmission performance and longevity.
+
+Specifications
+• Type: External ATF Cooler Kit
+• Fitment: Universal
+• Core: High-Efficiency Cooler
+• Hardware: Mounting & Line Hardware Included
+• Manufacturer: Universal
+
+Highlights
+• Lowers ATF Temperatures
+• Extends Transmission Life
+• Ideal for Towing & Track Use
+• Universal Bolt-On Fitment
+• Complete Mounting Hardware
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 91,
+    name: "Transmission Rebuild Kit",
+    category: "transmission",
+    brand: "universal",
+    price: 680,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/transmission-rebuild-kit/1.jpg",
+    images: [
+      "/product-media/transmission/transmission-rebuild-kit/1.jpg",
+      "/product-media/transmission/transmission-rebuild-kit/2.jpg",
+    ],
+    description: `Transmission Rebuild Kit
+
+Comprehensive transmission rebuild kit with the clutches, seals, gaskets, and filter needed to restore performance.
+
+This Transmission Rebuild Kit provides the essential components to refresh and restore an automatic transmission to like-new operation. Including friction clutches, steels, seals, gaskets, and a filter, it is the foundation of a reliable rebuild for restoring smooth, dependable shifting. Confirm your transmission model at checkout for correct fitment.
+
+Specifications
+• Type: Automatic Transmission Rebuild Kit
+• Includes: Clutches, Seals, Gaskets, Filter
+• Fitment: Application-Specific
+• Quality: OE-Grade Components
+• Manufacturer: Universal
+
+Highlights
+• Complete Overhaul Components
+• OE-Grade Friction & Seals
+• Restores Smooth Shifting
+• Foundation for a Reliable Rebuild
+• Cost-Effective Transmission Refresh
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 92,
+    name: "Tremec T56 Magnum Transmission",
+    category: "transmission",
+    brand: "tremec",
+    price: 3300,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/tremec-t56-magnum/1.jpg",
+    images: ["/product-media/transmission/tremec-t56-magnum/1.jpg"],
+    description: `Tremec T56 Magnum Transmission
+
+High-strength Tremec 6-speed manual transmission engineered for high-horsepower performance and swap builds.
+
+The Tremec T56 Magnum is a 6-speed manual transmission built to handle serious power, with a torque capacity rated up to 700 lb-ft. Featuring robust gears and triple-cone synchros, it is the gold standard for RWD performance and swap applications across GM, Ford, and custom builds demanding strength and precise shifting.
+
+Specifications
+• Type: 6-Speed Manual
+• Transmission Code: T56 Magnum
+• Layout: Longitudinal
+• Torque Capacity: Up to 700 lb-ft
+• Manufacturer: Tremec
+
+Highlights
+• Up to 700 lb-ft Capacity
+• Triple-Cone Synchros
+• Gold Standard Performance Manual
+• Ideal for GM / Ford / Custom Swaps
+• Precise, Durable Shifting
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 93,
+    name: "Tremec TR6060 Transmission",
+    category: "transmission",
+    brand: "tremec",
+    price: 3100,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/tremec-tr6060/1.jpg",
+    images: [
+      "/product-media/transmission/tremec-tr6060/1.jpg",
+      "/product-media/transmission/tremec-tr6060/2.jpg",
+      "/product-media/transmission/tremec-tr6060/3.jpg",
+      "/product-media/transmission/tremec-tr6060/4.jpg",
+      "/product-media/transmission/tremec-tr6060/5.jpg",
+      "/product-media/transmission/tremec-tr6060/6.jpg",
+      "/product-media/transmission/tremec-tr6060/7.jpg",
+      "/product-media/transmission/tremec-tr6060/8.jpg",
+      "/product-media/transmission/tremec-tr6060/9.jpg",
+      "/product-media/transmission/tremec-tr6060/10.jpg",
+      "/product-media/transmission/tremec-tr6060/11.jpg",
+      "/product-media/transmission/tremec-tr6060/12.jpg",
+    ],
+    description: `Tremec TR6060 Transmission
+
+Factory-grade Tremec 6-speed manual transmission found behind modern American performance V8s.
+
+The Tremec TR6060 is a 6-speed manual transmission fitted from the factory to high-performance platforms including the Camaro SS, Mustang GT, Challenger, and Viper. Offering strong torque capacity, refined shift quality, and proven durability, the TR6060 is an excellent choice for RWD performance and swap builds requiring an OEM-grade manual.
+
+Specifications
+• Type: 6-Speed Manual
+• Transmission Code: TR6060
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Tremec
+
+Highlights
+• Factory-Fitted Performance Manual
+• Camaro / Mustang / Challenger Proven
+• Strong Torque Capacity
+• Refined Shift Quality
+• Durable OEM-Grade Build
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 94,
+    name: "ZF 8HP Swap Package",
+    category: "transmission",
+    brand: "zf",
+    price: 5400,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/zf-8hp-swap-package/1.jpg",
+    images: [
+      "/product-media/transmission/zf-8hp-swap-package/1.jpg",
+      "/product-media/transmission/zf-8hp-swap-package/2.jpg",
+      "/product-media/transmission/zf-8hp-swap-package/3.jpg",
+      "/product-media/transmission/zf-8hp-swap-package/4.jpg",
+    ],
+    description: `ZF 8HP Swap Package
+
+Complete ZF 8-speed automatic swap package with the transmission and control hardware needed for a modern conversion.
+
+The ZF 8HP Swap Package bundles the renowned ZF 8HP automatic with the standalone control hardware required to run it in a swap build. Combining lightning-fast shifts, broad torque capacity, and plug-and-play control support, this package is the complete solution for upgrading to a modern 8-speed automatic in performance and custom RWD applications.
+
+Specifications
+• Type: 8-Speed Automatic Swap Package
+• Transmission Code: ZF 8HP
+• Layout: Longitudinal
+• Includes: Standalone Controller Support
+• Manufacturer: ZF
+
+Highlights
+• Complete Swap-Ready Package
+• Standalone Control Hardware
+• Lightning-Fast Automatic Shifts
+• Broad Torque Capacity
+• Modern 8-Speed Conversion Solution
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];

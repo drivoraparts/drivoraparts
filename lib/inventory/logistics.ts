@@ -767,4 +767,194 @@ export const productLogistics: Record<number, ProductLogistics> = {
     freightNotes: PARCEL_FREIGHT,
     warrantyTerms: PARTS_ONLY,
   },
+
+  /* =====================================================
+     TRANSMISSIONS
+  ===================================================== */
+  80: {
+    partNumber: "DQ500 (0BH)",
+    fitment:
+      "Fits Audi RS3/TT RS (2.5 TFSI) and high-torque 2.0 TSI VAG platforms. Confirm engine and axle configuration at checkout.",
+    drivetrain: "quattro AWD / FWD (transverse)",
+    included: [
+      "Complete DSG transmission assembly",
+      "Mechatronic unit",
+      "Dual-clutch pack",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  81: {
+    partNumber: "ZF 8HP70",
+    fitment:
+      "Fits BMW inline-6 and V8 applications (F/G chassis) and modern RWD swaps with a compatible controller. Bellhousing/adapter required per engine.",
+    drivetrain: "RWD — xDrive AWD variants exist",
+    included: [
+      "Complete 8-speed automatic transmission",
+      "Torque converter",
+      "Valve body / mechatronics",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  82: {
+    partNumber: "ZF 8HP90",
+    fitment:
+      "Fits high-torque BMW M and V8 applications, and high-horsepower swaps with a compatible controller. Bellhousing/adapter required per engine.",
+    drivetrain: "RWD — compatible with AWD applications",
+    included: [
+      "Complete 8-speed automatic transmission",
+      "Torque converter",
+      "Valve body / mechatronics",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  83: {
+    partNumber: "10R80",
+    fitment:
+      "Fits Ford Mustang GT (S550) & F-150 (5.0L Coyote / EcoBoost). Suits modern RWD swaps with a standalone controller.",
+    drivetrain: "RWD (4WD variants on trucks)",
+    included: [
+      "Complete 10-speed automatic transmission",
+      "Torque converter",
+      "Valve body",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  84: {
+    partNumber: "4L80E",
+    fitment:
+      "Fits GM trucks and LS / big-block swaps (RWD). Requires a compatible controller setup.",
+    drivetrain: "RWD",
+    included: [
+      "Complete 4-speed automatic transmission",
+      "Torque converter",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  85: {
+    partNumber: "6L80",
+    fitment:
+      "Fits GM LS / LT applications — Camaro, Silverado & Corvette (RWD). Controller required for swap use.",
+    drivetrain: "RWD",
+    included: [
+      "Complete 6-speed automatic transmission",
+      "Torque converter",
+      "Valve body",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  86: {
+    partNumber: "722.9 (7G-Tronic)",
+    fitment:
+      "Fits Mercedes-Benz RWD and 4MATIC platforms (2004+). Confirm chassis and engine at checkout.",
+    drivetrain: "RWD — 4MATIC AWD variants",
+    included: [
+      "Complete 7-speed automatic transmission",
+      "Torque converter",
+      "Conductor plate / valve body",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  87: {
+    partNumber: "CD009",
+    fitment:
+      "From Nissan 350Z/370Z (VQ). Popular swap behind LS, 2JZ and others — adapter/bellhousing and clutch sold separately.",
+    drivetrain: "RWD",
+    included: ["Complete 6-speed manual transmission assembly"],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  88: {
+    partNumber: "R154",
+    fitment:
+      "Fits Toyota Supra MK3 / Soarer; common swap behind 1JZ/2JZ with the correct bellhousing and clutch.",
+    drivetrain: "RWD",
+    included: ["Complete 5-speed manual transmission assembly"],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  89: {
+    partNumber: "V160 (Getrag)",
+    fitment:
+      "From Toyota Supra MK4 (2JZ-GTE). Premium 6-speed for high-power 2JZ RWD builds.",
+    drivetrain: "RWD",
+    included: ["Complete 6-speed manual transmission assembly"],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  90: {
+    fitment:
+      "Universal external ATF cooler — fits most automatic transmissions. Verify line size for your application.",
+    included: [
+      "Cooler core",
+      "Mounting brackets",
+      "Line fittings & hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  91: {
+    fitment:
+      "Application-specific rebuild kit — confirm your transmission model at checkout.",
+    included: [
+      "Friction clutches & steels",
+      "Seals & gaskets",
+      "Filter",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  92: {
+    partNumber: "T56 Magnum",
+    fitment:
+      "Universal performance 6-speed (up to 700 lb-ft) for GM, Ford & custom RWD swaps. Select input shaft / bellhousing for your engine.",
+    drivetrain: "RWD",
+    included: ["Complete 6-speed manual transmission assembly"],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  93: {
+    partNumber: "TR6060",
+    fitment:
+      "Factory 6-speed from Camaro SS / Mustang GT / Challenger / Viper. Suits RWD swaps with the correct bellhousing and clutch.",
+    drivetrain: "RWD",
+    included: ["Complete 6-speed manual transmission assembly"],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  94: {
+    partNumber: "ZF 8HP (Swap Package)",
+    fitment:
+      "Complete 8HP swap package for RWD conversions. Includes standalone controller; confirm engine/adapter needs at checkout.",
+    drivetrain: "RWD",
+    included: [
+      "ZF 8HP automatic transmission",
+      "Standalone transmission controller",
+      "Wiring harness",
+      "Torque converter",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: ENGINE_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
 };
