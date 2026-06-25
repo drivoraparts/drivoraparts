@@ -29,7 +29,7 @@ export default async function Page({ params }: any) {
         href: routes.brand(slug, slugify(brand)),
       }))}
       products={categoryData.products}
-      showProducts={slug !== "brakes"}
+      showProducts={slug !== "brakes" && slug !== "transmission"}
     />
   );
 }
