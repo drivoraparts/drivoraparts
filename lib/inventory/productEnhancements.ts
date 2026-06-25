@@ -5,6 +5,16 @@ import {
 } from "./condition";
 import { getProductReviewAggregate } from "@/lib/reviews";
 
+export type ProductLogistics = {
+  partNumber?: string;
+  fitment?: string;
+  drivetrain?: string;
+  included?: string[];
+  coreCharge?: string;
+  freightNotes?: string;
+  warrantyTerms?: string;
+};
+
 export type ProductCatalogMeta = {
   horsepower?: string;
   mileage: string;
@@ -15,7 +25,36 @@ export type ProductCatalogMeta = {
   descriptionBody: string;
   specifications: string;
   shippingAndWarranty: string;
+  logistics: ProductLogistics;
 };
+
+/** True when at least one structured logistics field is populated. */
+export function hasLogistics(logistics: ProductLogistics): boolean {
+  return Boolean(
+    logistics.partNumber ||
+      logistics.fitment ||
+      logistics.drivetrain ||
+      (logistics.included && logistics.included.length > 0) ||
+      logistics.coreCharge ||
+      logistics.freightNotes ||
+      logistics.warrantyTerms
+  );
+}
+
+function resolveProductLogistics(product: Product): ProductLogistics {
+  return {
+    partNumber: product.partNumber?.trim() || undefined,
+    fitment: product.fitment?.trim() || undefined,
+    drivetrain: product.drivetrain?.trim() || undefined,
+    included:
+      product.included && product.included.length > 0
+        ? product.included
+        : undefined,
+    coreCharge: product.coreCharge?.trim() || undefined,
+    freightNotes: product.freightNotes?.trim() || undefined,
+    warrantyTerms: product.warrantyTerms?.trim() || undefined,
+  };
+}
 
 const SECTION_HEADERS = [
   "Specifications",
@@ -141,6 +180,7 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
     descriptionBody: sections.descriptionBody,
     specifications: sections.specifications,
     shippingAndWarranty: sections.shippingAndWarranty,
+    logistics: resolveProductLogistics(product),
   };
 }
 

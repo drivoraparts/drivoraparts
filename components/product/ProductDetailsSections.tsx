@@ -2,6 +2,8 @@
 
 import { useState, type ReactNode } from "react";
 import CustomerReviewsSection from "./CustomerReviewsSection";
+import type { ProductLogistics } from "@/lib/inventory/productEnhancements";
+import { hasLogistics } from "@/lib/inventory/productEnhancements";
 import { glassCard } from "./styles";
 
 type ProductDetailsSectionsProps = {
@@ -11,7 +13,70 @@ type ProductDetailsSectionsProps = {
   specifications: string;
   shippingAndWarranty: string;
   reviewCount: number;
+  logistics: ProductLogistics;
 };
+
+function LogisticsRow({ label, value }: { label: string; value: ReactNode }) {
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        gap: "16px",
+        padding: "10px 0",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
+        fontSize: "14px",
+        lineHeight: 1.5,
+      }}
+    >
+      <span style={{ color: "rgba(255,255,255,0.55)", flexShrink: 0 }}>
+        {label}
+      </span>
+      <span style={{ fontWeight: 600, textAlign: "right", color: "#fff" }}>
+        {value}
+      </span>
+    </div>
+  );
+}
+
+function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
+  return (
+    <div>
+      {logistics.fitment && (
+        <LogisticsRow label="Fits / Compatibility" value={logistics.fitment} />
+      )}
+      {logistics.drivetrain && (
+        <LogisticsRow label="Drivetrain" value={logistics.drivetrain} />
+      )}
+      {logistics.partNumber && (
+        <LogisticsRow label="Part / Code" value={logistics.partNumber} />
+      )}
+      {logistics.included && logistics.included.length > 0 && (
+        <LogisticsRow
+          label="What's Included"
+          value={
+            <span style={{ display: "block" }}>
+              {logistics.included.map((item) => (
+                <span key={item} style={{ display: "block" }}>
+                  {item}
+                </span>
+              ))}
+            </span>
+          }
+        />
+      )}
+      {logistics.coreCharge && (
+        <LogisticsRow label="Core Charge" value={logistics.coreCharge} />
+      )}
+      {logistics.freightNotes && (
+        <LogisticsRow label="Freight & Shipping" value={logistics.freightNotes} />
+      )}
+      {logistics.warrantyTerms && (
+        <LogisticsRow label="Warranty Terms" value={logistics.warrantyTerms} />
+      )}
+    </div>
+  );
+}
 
 type SectionProps = {
   title: string;
@@ -71,6 +136,7 @@ export default function ProductDetailsSections({
   specifications,
   shippingAndWarranty,
   reviewCount,
+  logistics,
 }: ProductDetailsSectionsProps) {
   return (
     <div className="product-details-sections">
@@ -81,6 +147,12 @@ export default function ProductDetailsSections({
       {specifications && (
         <CollapsibleSection title="Specifications">
           {specifications}
+        </CollapsibleSection>
+      )}
+
+      {hasLogistics(logistics) && (
+        <CollapsibleSection title="Fitment & Logistics" defaultOpen>
+          <FitmentLogistics logistics={logistics} />
         </CollapsibleSection>
       )}
 

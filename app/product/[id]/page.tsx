@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductById } from "@/data/store";
-import { routes } from "@/lib/inventory";
+import { routes, getProductById as getInventoryProductById } from "@/lib/inventory";
 import { getSiteUrl } from "@/lib/env";
 import ProductTemplate from "@/components/product/ProductTemplate";
 
@@ -50,6 +50,8 @@ export default async function ProductPage({ params }: PageProps) {
 
   if (!product) return notFound();
 
+  const inventoryProduct = getInventoryProductById(product.id);
+
   const siteUrl = getSiteUrl();
   const jsonLd = {
     "@context": "https://schema.org",
@@ -60,6 +62,9 @@ export default async function ProductPage({ params }: PageProps) {
       : `${siteUrl}${product.thumbnail}`,
     description: product.description.slice(0, 500),
     sku: String(product.id),
+    ...(inventoryProduct?.partNumber
+      ? { mpn: inventoryProduct.partNumber }
+      : {}),
     offers: {
       "@type": "Offer",
       priceCurrency: "USD",

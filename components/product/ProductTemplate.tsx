@@ -250,6 +250,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
           specifications={catalogMeta.specifications}
           shippingAndWarranty={catalogMeta.shippingAndWarranty}
           reviewCount={catalogMeta.reviewCount}
+          logistics={catalogMeta.logistics}
         />
       </div>
 

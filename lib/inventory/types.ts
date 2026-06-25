@@ -84,4 +84,27 @@ export type Product = {
 
   /** Optional listing timestamp for sort (e.g. aftermarket feed). */
   createdAt?: number;
+
+  /* =======================================================
+     STRUCTURED FITMENT & LOGISTICS (OPTIONAL)
+     -------------------------------------------------------
+     Drive the "Fitment & Logistics" block on the product
+     page. Every field is optional — rows only render when a
+     value is present, so existing products are unaffected.
+  ======================================================= */
+
+  /** Manufacturer / OEM identifier, e.g. "ZF 8HP70", "4L60E", "CD009". */
+  partNumber?: string;
+  /** What vehicles/chassis/years this part fits, incl. bellhousing notes. */
+  fitment?: string;
+  /** Drivetrain layout this unit is configured for, e.g. "RWD", "AWD". */
+  drivetrain?: string;
+  /** Physical contents included with the unit. */
+  included?: string[];
+  /** Core charge / core return policy, e.g. "Outright — No Core Required". */
+  coreCharge?: string;
+  /** Heavy-freight handling notes (liftgate, residential vs. commercial). */
+  freightNotes?: string;
+  /** Warranty liability terms, e.g. "Parts only — no labor covered". */
+  warrantyTerms?: string;
 };
