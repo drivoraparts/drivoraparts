@@ -9,6 +9,7 @@ import { trackEvent } from "@/lib/analytics/client";
 import { showToast } from "@/lib/store/toastStore";
 import Price from "@/components/currency/Price";
 import CurrencyNotice from "@/components/currency/CurrencyNotice";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const glassCard =
   "rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md";
@@ -58,6 +59,7 @@ export default function CheckoutPage() {
   );
   const shipping: number = 0;
   const total = subtotal + shipping;
+  const { t } = useTranslation();
 
   const handleCheckout = async () => {
     if (!cart.length || submitting) return;
@@ -124,7 +126,7 @@ export default function CheckoutPage() {
   if (!hydrated) {
     return (
       <main className="mx-auto max-w-4xl overflow-x-hidden p-8 text-white">
-        <h1 className="mb-6 text-3xl font-bold">Checkout</h1>
+        <h1 className="mb-6 text-3xl font-bold">{t("checkout")}</h1>
         <p className="text-gray-400">Loading your cart...</p>
       </main>
     );
@@ -216,7 +218,7 @@ export default function CheckoutPage() {
           <div className="space-y-6">
             <section className={glassCard}>
               <div className="mb-4 flex items-center justify-between gap-2">
-                <h2 className="text-sm font-medium text-white/70">Order Summary</h2>
+                <h2 className="text-sm font-medium text-white/70">{t("orderSummary")}</h2>
                 <span className="flex items-center gap-1.5 text-xs text-gray-400">
                   <Image
                     src="/favicon.svg"
@@ -268,20 +270,20 @@ export default function CheckoutPage() {
 
               <div className="mt-4 space-y-2 border-t border-white/10 pt-4">
                 <div className="flex justify-between text-sm">
-                  <span className="text-white/50">Subtotal</span>
+                  <span className="text-white/50">{t("subtotal")}</span>
                   <span className="text-white/80">
                     <Price usd={subtotal} />
                   </span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-white/50">Shipping</span>
+                  <span className="text-white/50">{t("shipping")}</span>
                   <span className="text-white/80">
-                    {shipping === 0 ? "Free" : <Price usd={shipping} />}
+                    {shipping === 0 ? t("free") : <Price usd={shipping} />}
                   </span>
                 </div>
 
                 <div className="pt-2">
-                  <p className="text-xs text-white/50">Total</p>
+                  <p className="text-xs text-white/50">{t("total")}</p>
                   <p className="text-2xl font-semibold tracking-tight text-white">
                     <Price usd={total} />
                   </p>
@@ -303,7 +305,7 @@ export default function CheckoutPage() {
                     <rect x="5" y="11" width="14" height="9" rx="2" />
                     <path d="M8 11V7a4 4 0 0 1 8 0v4" />
                   </svg>
-                  <span>Secure encrypted checkout</span>
+                  <span>{t("secureCheckout")}</span>
                 </div>
               </div>
             </section>
@@ -314,7 +316,7 @@ export default function CheckoutPage() {
               disabled={submitting}
               className="w-full rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
             >
-              {submitting ? "Processing..." : "Pay Now"}
+              {submitting ? t("processing") : t("payNow")}
             </button>
           </div>
         </div>

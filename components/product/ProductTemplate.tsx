@@ -18,6 +18,7 @@ import ProductRatingSummary from "./ProductRatingSummary";
 import QuickSpecsBar from "./QuickSpecsBar";
 import ProductDetailsSections from "./ProductDetailsSections";
 import Price from "@/components/currency/Price";
+import TranslatedText from "@/components/i18n/TranslatedText";
 import {
   formatCategoryLabel,
   formatPlatformLabel,
@@ -108,7 +109,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
             lineHeight: 1.25,
           }}
         >
-          {product.name}
+          <TranslatedText as="span">{product.name}</TranslatedText>
         </h1>
 
         <ProductRatingSummary

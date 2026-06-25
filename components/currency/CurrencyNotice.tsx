@@ -1,6 +1,7 @@
 "use client";
 
 import { useCurrencyDisplay } from "@/hooks/useFormatPrice";
+import { useTranslation } from "@/hooks/useTranslation";
 
 type CurrencyNoticeProps = {
   className?: string;
@@ -8,13 +9,13 @@ type CurrencyNoticeProps = {
 
 export default function CurrencyNotice({ className }: CurrencyNoticeProps) {
   const { currency, isBaseCurrency } = useCurrencyDisplay();
+  const { t } = useTranslation();
 
   if (isBaseCurrency) return null;
 
   return (
     <p className={className}>
-      Prices shown in {currency}. Your order is charged in USD at the current
-      exchange rate.
+      {t("currencyNotice", { currency })}
     </p>
   );
 }

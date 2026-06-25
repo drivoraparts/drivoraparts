@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import CartDrawer from "./CartDrawer";
+import { useTranslation } from "@/hooks/useTranslation";
 
 type GlobalDrawerProps = {
   menuOpen: boolean;
@@ -16,6 +17,8 @@ export default function GlobalDrawer({
   cartOpen,
   setCartOpen,
 }: GlobalDrawerProps) {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* MENU DRAWER */}
@@ -29,59 +32,55 @@ export default function GlobalDrawer({
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-lg font-bold mb-6 text-white">
-              Navigation
+              {t("navTitle")}
             </h2>
 
             <div className="flex flex-col gap-6 text-gray-300">
-              {/* MARKETPLACE */}
               <div>
                 <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  MARKETPLACE
+                  {t("marketplace")}
                 </p>
                 <Link
                   href="/catalog"
                   className="hover:text-white transition"
                 >
-                  Browse Catalog
+                  {t("browseCatalog")}
                 </Link>
               </div>
 
-              {/* COMPANY */}
               <div>
                 <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  COMPANY
+                  {t("company")}
                 </p>
                 <Link
                   href="/about"
                   className="hover:text-white transition"
                 >
-                  About DrivoraParts
+                  {t("about")}
                 </Link>
               </div>
 
-              {/* SUPPORT */}
               <div>
                 <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  SUPPORT
+                  {t("support")}
                 </p>
                 <Link
                   href="/contact"
                   className="hover:text-white transition"
                 >
-                  Contact Support
+                  {t("contactSupport")}
                 </Link>
               </div>
 
-              {/* LEGAL */}
               <div>
                 <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  LEGAL CENTER
+                  {t("legalCenter")}
                 </p>
                 <Link
                   href="/policies"
                   className="hover:text-white transition"
                 >
-                  Policies & Legal
+                  {t("policiesLegal")}
                 </Link>
               </div>
             </div>

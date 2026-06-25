@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Price from "@/components/currency/Price";
+import TranslatedText from "@/components/i18n/TranslatedText";
 
 export type Product = {
   id: number;
@@ -43,7 +44,7 @@ export default function ProductCard({ product }: { product: Product }) {
       {/* CONTENT */}
       <div className="p-4">
         <h3 className="text-sm font-semibold text-white">
-          {product.name}
+          <TranslatedText as="span">{product.name}</TranslatedText>
         </h3>
 
         <p className="text-xs text-gray-400 mt-1">

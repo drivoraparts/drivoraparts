@@ -5,6 +5,7 @@ import { useCart } from "@/context/CartContext";
 import { showToast } from "@/lib/store/toastStore";
 import Price from "@/components/currency/Price";
 import { useFormatPrice } from "@/hooks/useFormatPrice";
+import { useTranslation } from "@/hooks/useTranslation";
 
 type CartDrawerProps = {
   onClose?: () => void;
@@ -22,6 +23,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
 
   const total = getTotal();
   const formatPrice = useFormatPrice();
+  const { t } = useTranslation();
 
   const handleClear = () => {
     clearCart();
@@ -30,10 +32,10 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
 
   return (
     <div className="flex h-full flex-col p-6 text-white">
-      <h2 className="mb-4 text-xl font-bold">Cart</h2>
+      <h2 className="mb-4 text-xl font-bold">{t("cart")}</h2>
 
       {cart.length === 0 ? (
-        <p className="text-gray-400">Your cart is empty</p>
+        <p className="text-gray-400">{t("cartEmpty")}</p>
       ) : (
         <div className="flex-1 overflow-y-auto">
           {cart.map((item) => (
@@ -53,7 +55,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                 <div className="flex-1">
                   <p className="font-medium">{item.name}</p>
                   <p className="text-sm text-gray-400">
-                    <Price usd={item.price} /> each
+                    <Price usd={item.price} /> {t("each")}
                   </p>
 
                   <div className="mt-2 flex items-center gap-2">
@@ -87,7 +89,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                 }}
                 className="mt-2 text-sm text-red-400"
               >
-                Remove
+                {t("remove")}
               </button>
             </div>
           ))}
@@ -96,7 +98,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
 
       <div className="mt-6 border-t border-white/10 pt-4">
         <p className="mb-4 text-lg font-semibold">
-          Total: {formatPrice(total)}
+          {t("total")}: {formatPrice(total)}
         </p>
 
         <Link
@@ -104,7 +106,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
           onClick={onClose}
           className="mb-3 block w-full rounded-lg bg-red-600 py-3 text-center font-semibold"
         >
-          Proceed to Checkout
+          {t("proceedCheckout")}
         </Link>
 
         {cart.length > 0 && (
@@ -113,7 +115,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
             onClick={handleClear}
             className="w-full rounded-lg border border-white/20 py-2 text-sm"
           >
-            Clear Cart
+            {t("clearCart")}
           </button>
         )}
       </div>

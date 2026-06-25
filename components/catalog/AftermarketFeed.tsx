@@ -9,6 +9,7 @@ import {
 } from "@/lib/inventory";
 import CatalogCard from "./CatalogCard";
 import Price from "@/components/currency/Price";
+import TranslatedText from "@/components/i18n/TranslatedText";
 
 const aftermarketProducts = getProductsByCategory("aftermarket");
 const aftermarketBrands = getBrandsByCategory("aftermarket");
@@ -108,7 +109,9 @@ export default function AftermarketFeed() {
                     No image
                   </div>
                 )}
-                <h3 className="mt-3 font-semibold">{product.name}</h3>
+                <h3 className="mt-3 font-semibold">
+                  <TranslatedText as="span">{product.name}</TranslatedText>
+                </h3>
                 <p className="text-sm text-red-500 font-bold">
                   <Price usd={product.price} />
                 </p>

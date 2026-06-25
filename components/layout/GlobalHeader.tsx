@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function GlobalHeader({
   setMenuOpen,
@@ -13,6 +14,7 @@ export default function GlobalHeader({
   const itemCount = useCartStore((s) =>
     s.items.reduce((sum, i) => sum + i.quantity, 0)
   );
+  const { t } = useTranslation();
 
   useEffect(() => {
     setMounted(true);
@@ -41,7 +43,7 @@ export default function GlobalHeader({
 
         {/* CENTER TEXT */}
         <div className="hidden md:block text-xs text-gray-400 tracking-[0.3em]">
-          ENGINEERING • PERFORMANCE • CONTROL
+          {t("headerTagline")}
         </div>
 
         {/* ONLY CART + MENU */}

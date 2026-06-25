@@ -2,8 +2,10 @@
 
 import { useState, type ReactNode } from "react";
 import CustomerReviewsSection from "./CustomerReviewsSection";
+import TranslatedText from "@/components/i18n/TranslatedText";
 import type { ProductLogistics } from "@/lib/inventory/productEnhancements";
 import { hasLogistics } from "@/lib/inventory/productEnhancements";
+import { useTranslation } from "@/hooks/useTranslation";
 import { glassCard } from "./styles";
 
 type ProductDetailsSectionsProps = {
@@ -40,25 +42,37 @@ function LogisticsRow({ label, value }: { label: string; value: ReactNode }) {
 }
 
 function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
+  const { t } = useTranslation();
+
   return (
     <div>
       {logistics.fitment && (
-        <LogisticsRow label="Fits / Compatibility" value={logistics.fitment} />
+        <LogisticsRow
+          label={t("fitsCompatibility")}
+          value={
+            <TranslatedText as="span">{logistics.fitment}</TranslatedText>
+          }
+        />
       )}
       {logistics.drivetrain && (
-        <LogisticsRow label="Drivetrain" value={logistics.drivetrain} />
+        <LogisticsRow
+          label={t("drivetrainLabel")}
+          value={
+            <TranslatedText as="span">{logistics.drivetrain}</TranslatedText>
+          }
+        />
       )}
       {logistics.partNumber && (
-        <LogisticsRow label="Part / Code" value={logistics.partNumber} />
+        <LogisticsRow label={t("partCode")} value={logistics.partNumber} />
       )}
       {logistics.included && logistics.included.length > 0 && (
         <LogisticsRow
-          label="What's Included"
+          label={t("whatsIncluded")}
           value={
             <span style={{ display: "block" }}>
               {logistics.included.map((item) => (
                 <span key={item} style={{ display: "block" }}>
-                  {item}
+                  <TranslatedText as="span">{item}</TranslatedText>
                 </span>
               ))}
             </span>
@@ -66,13 +80,28 @@ function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
         />
       )}
       {logistics.coreCharge && (
-        <LogisticsRow label="Core Charge" value={logistics.coreCharge} />
+        <LogisticsRow
+          label={t("coreChargeLabel")}
+          value={
+            <TranslatedText as="span">{logistics.coreCharge}</TranslatedText>
+          }
+        />
       )}
       {logistics.freightNotes && (
-        <LogisticsRow label="Freight & Shipping" value={logistics.freightNotes} />
+        <LogisticsRow
+          label={t("freightNotesLabel")}
+          value={
+            <TranslatedText as="span">{logistics.freightNotes}</TranslatedText>
+          }
+        />
       )}
       {logistics.warrantyTerms && (
-        <LogisticsRow label="Warranty Terms" value={logistics.warrantyTerms} />
+        <LogisticsRow
+          label={t("warrantyTermsLabel")}
+          value={
+            <TranslatedText as="span">{logistics.warrantyTerms}</TranslatedText>
+          }
+        />
       )}
     </div>
   );
@@ -138,27 +167,29 @@ export default function ProductDetailsSections({
   reviewCount,
   logistics,
 }: ProductDetailsSectionsProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="product-details-sections">
-      <CollapsibleSection title="Description" defaultOpen>
-        {descriptionBody}
+      <CollapsibleSection title={t("descriptionTitle")} defaultOpen>
+        <TranslatedText as="span">{descriptionBody}</TranslatedText>
       </CollapsibleSection>
 
       {specifications && (
-        <CollapsibleSection title="Specifications">
-          {specifications}
+        <CollapsibleSection title={t("specificationsTitle")}>
+          <TranslatedText as="span">{specifications}</TranslatedText>
         </CollapsibleSection>
       )}
 
       {hasLogistics(logistics) && (
-        <CollapsibleSection title="Fitment & Logistics" defaultOpen>
+        <CollapsibleSection title={t("fitmentLogisticsTitle")} defaultOpen>
           <FitmentLogistics logistics={logistics} />
         </CollapsibleSection>
       )}
 
       {shippingAndWarranty && (
-        <CollapsibleSection title="Shipping & Warranty">
-          {shippingAndWarranty}
+        <CollapsibleSection title={t("shippingWarrantyTitle")}>
+          <TranslatedText as="span">{shippingAndWarranty}</TranslatedText>
         </CollapsibleSection>
       )}
 

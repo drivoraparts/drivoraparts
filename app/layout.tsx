@@ -7,6 +7,7 @@ import { getSiteUrl } from "@/lib/env";
 import {
   detectCurrencyFromAcceptLanguage,
 } from "@/lib/currency";
+import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
@@ -55,9 +56,10 @@ export default async function RootLayout({
   const initialLocale =
     acceptLanguage?.split(",")[0]?.split(";")[0]?.trim() || "en-US";
   const initialCurrency = detectCurrencyFromAcceptLanguage(acceptLanguage);
+  const initialLanguage = detectLanguageFromAcceptLanguage(acceptLanguage);
 
   return (
-    <html lang={initialLocale.split("-")[0] || "en"}>
+    <html lang={initialLanguage} suppressHydrationWarning>
       <body>
         {isAdmin ? (
           children
@@ -65,6 +67,7 @@ export default async function RootLayout({
           <StoreProviders
             initialCurrency={initialCurrency}
             initialLocale={initialLocale}
+            initialLanguage={initialLanguage}
           >
             <LayoutShell>{children}</LayoutShell>
           </StoreProviders>

@@ -4,6 +4,7 @@ import { brands } from "@/lib/inventory/brands";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogCard from "@/components/catalog/CatalogCard";
 import Price from "@/components/currency/Price";
+import TranslatedText from "@/components/i18n/TranslatedText";
 
 export const dynamic = "force-static";
 
@@ -42,7 +43,9 @@ export default async function Page({ params }: any) {
                 decoding="async"
                 className="h-40 w-full object-cover rounded-lg"
               />
-              <h3 className="mt-3 font-semibold">{product.name}</h3>
+              <h3 className="mt-3 font-semibold">
+                <TranslatedText as="span">{product.name}</TranslatedText>
+              </h3>
               <p className="text-sm text-red-500 font-bold">
                 <Price usd={product.price} />
               </p>
