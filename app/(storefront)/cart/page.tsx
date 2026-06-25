@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { showToast } from "@/lib/store/toastStore";
+import Price from "@/components/currency/Price";
+import { useFormatPrice } from "@/hooks/useFormatPrice";
 
 export default function CartPage() {
   const {
@@ -15,6 +17,7 @@ export default function CartPage() {
   } = useCart();
 
   const total = getTotal();
+  const formatPrice = useFormatPrice();
 
   return (
     <div
@@ -52,7 +55,7 @@ export default function CartPage() {
           <div style={{ flex: 1 }}>
             <h3>{item.name}</h3>
             <p>
-              ${item.price.toFixed(2)} x {item.quantity}
+              <Price usd={item.price} /> x {item.quantity}
             </p>
 
             <div style={{ display: "flex", gap: 10, marginTop: 10 }}>
@@ -84,7 +87,7 @@ export default function CartPage() {
 
       <hr style={{ margin: "30px 0" }} />
 
-      <h2>Total: ${total.toFixed(2)}</h2>
+      <h2>Total: {formatPrice(total)}</h2>
 
       {cart.length > 0 && (
         <Link

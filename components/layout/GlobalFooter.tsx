@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 
 export default function GlobalFooter() {
   return (
@@ -54,6 +55,7 @@ export default function GlobalFooter() {
       </div>
 
       <div className="text-center text-gray-500 text-xs py-6 border-t border-white/10">
+        <CurrencyFooterNote />
         © {new Date().getFullYear()} DrivoraParts LLC. All rights reserved.
       </div>
     </footer>

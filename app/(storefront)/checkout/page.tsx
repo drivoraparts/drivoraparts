@@ -7,6 +7,8 @@ import { useEffect, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { trackEvent } from "@/lib/analytics/client";
 import { showToast } from "@/lib/store/toastStore";
+import Price from "@/components/currency/Price";
+import CurrencyNotice from "@/components/currency/CurrencyNotice";
 
 const glassCard =
   "rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md";
@@ -246,14 +248,19 @@ export default function CheckoutPage() {
                       </h3>
                       <p className="text-xs text-white/50">
                         Qty {item.quantity}
-                        {item.quantity > 1
-                          ? ` · $${item.price.toFixed(2)} each`
-                          : ""}
+                        {item.quantity > 1 ? (
+                          <>
+                            {" · "}
+                            <Price usd={item.price} /> each
+                          </>
+                        ) : (
+                          ""
+                        )}
                       </p>
                     </div>
 
                     <p className="shrink-0 text-sm font-medium text-white">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      <Price usd={item.price * item.quantity} />
                     </p>
                   </div>
                 ))}
@@ -262,21 +269,25 @@ export default function CheckoutPage() {
               <div className="mt-4 space-y-2 border-t border-white/10 pt-4">
                 <div className="flex justify-between text-sm">
                   <span className="text-white/50">Subtotal</span>
-                  <span className="text-white/80">${subtotal.toFixed(2)}</span>
+                  <span className="text-white/80">
+                    <Price usd={subtotal} />
+                  </span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-white/50">Shipping</span>
                   <span className="text-white/80">
-                    {shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}
+                    {shipping === 0 ? "Free" : <Price usd={shipping} />}
                   </span>
                 </div>
 
                 <div className="pt-2">
                   <p className="text-xs text-white/50">Total</p>
                   <p className="text-2xl font-semibold tracking-tight text-white">
-                    ${total.toFixed(2)}
+                    <Price usd={total} />
                   </p>
                 </div>
+
+                <CurrencyNotice className="text-xs text-white/45" />
 
                 <div className="flex items-center gap-2 pt-1 text-xs text-white/50">
                   <svg

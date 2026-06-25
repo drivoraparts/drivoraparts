@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Price from "@/components/currency/Price";
 
 export type Product = {
   id: number;
@@ -56,7 +57,7 @@ export default function ProductCard({ product }: { product: Product }) {
         {/* PRICE + CATEGORY */}
         <div className="mt-3 flex items-center justify-between">
           <span className="text-red-500 font-bold">
-            ${product.price}
+            <Price usd={product.price} />
           </span>
 
           <span className="text-[10px] text-gray-400 uppercase">

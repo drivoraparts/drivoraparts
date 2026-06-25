@@ -8,6 +8,7 @@ import {
   routes,
 } from "@/lib/inventory";
 import CatalogCard from "./CatalogCard";
+import Price from "@/components/currency/Price";
 
 const aftermarketProducts = getProductsByCategory("aftermarket");
 const aftermarketBrands = getBrandsByCategory("aftermarket");
@@ -109,7 +110,7 @@ export default function AftermarketFeed() {
                 )}
                 <h3 className="mt-3 font-semibold">{product.name}</h3>
                 <p className="text-sm text-red-500 font-bold">
-                  ${product.price}
+                  <Price usd={product.price} />
                 </p>
                 <div className="mt-2 space-y-1 text-xs text-gray-400">
                   <p>Condition: {getConditionLabel(product)}</p>

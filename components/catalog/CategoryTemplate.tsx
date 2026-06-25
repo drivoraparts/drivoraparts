@@ -1,5 +1,6 @@
 import PageHeading from "./PageHeading";
 import CatalogCard from "./CatalogCard";
+import Price from "@/components/currency/Price";
 
 /* =========================================================
    UI LAYER — PURE PRESENTATIONAL TEMPLATE (SYSTEM A)
@@ -75,7 +76,7 @@ export default function CategoryTemplate({
                   />
                   <h3 className="mt-3 font-semibold">{product.name}</h3>
                   <p className="text-sm text-red-500 font-bold">
-                    ${product.price}
+                    <Price usd={product.price} />
                   </p>
                 </CatalogCard>
               ))}

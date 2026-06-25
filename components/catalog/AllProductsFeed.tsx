@@ -10,6 +10,7 @@ import {
   routes,
 } from "@/lib/inventory";
 import CatalogCard from "./CatalogCard";
+import Price from "@/components/currency/Price";
 import { engineTree } from "@/data/engine";
 import { slugify } from "@/lib/inventory";
 
@@ -167,7 +168,7 @@ export default function AllProductsFeed() {
                 )}
                 <h3 className="mt-3 font-semibold">{product.name}</h3>
                 <p className="text-sm text-red-500 font-bold">
-                  ${product.price}
+                  <Price usd={product.price} />
                 </p>
                 <div className="mt-2 flex flex-wrap gap-2 text-xs text-gray-400">
                   <span className="rounded border border-white/10 px-2 py-0.5">

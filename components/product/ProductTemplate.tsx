@@ -17,6 +17,7 @@ import ConditionBadge from "./ConditionBadge";
 import ProductRatingSummary from "./ProductRatingSummary";
 import QuickSpecsBar from "./QuickSpecsBar";
 import ProductDetailsSections from "./ProductDetailsSections";
+import Price from "@/components/currency/Price";
 import {
   formatCategoryLabel,
   formatPlatformLabel,
@@ -117,7 +118,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
         />
 
         <h2 style={{ marginTop: "8px", fontSize: "26px", color: "#e60000" }}>
-          ${product.price.toLocaleString()}
+          <Price usd={product.price} />
         </h2>
 
         <div style={{ marginTop: "10px" }}>

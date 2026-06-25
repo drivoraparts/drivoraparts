@@ -4,6 +4,9 @@ import "./globals.css";
 import StoreProviders from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
 import { getSiteUrl } from "@/lib/env";
+import {
+  detectCurrencyFromAcceptLanguage,
+} from "@/lib/currency";
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
@@ -48,14 +51,21 @@ export default async function RootLayout({
 }) {
   const headerStore = await headers();
   const isAdmin = headerStore.get("x-is-admin") === "1";
+  const acceptLanguage = headerStore.get("accept-language");
+  const initialLocale =
+    acceptLanguage?.split(",")[0]?.split(";")[0]?.trim() || "en-US";
+  const initialCurrency = detectCurrencyFromAcceptLanguage(acceptLanguage);
 
   return (
-    <html lang="en">
+    <html lang={initialLocale.split("-")[0] || "en"}>
       <body>
         {isAdmin ? (
           children
         ) : (
-          <StoreProviders>
+          <StoreProviders
+            initialCurrency={initialCurrency}
+            initialLocale={initialLocale}
+          >
             <LayoutShell>{children}</LayoutShell>
           </StoreProviders>
         )}

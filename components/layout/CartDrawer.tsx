@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { showToast } from "@/lib/store/toastStore";
+import Price from "@/components/currency/Price";
+import { useFormatPrice } from "@/hooks/useFormatPrice";
 
 type CartDrawerProps = {
   onClose?: () => void;
@@ -19,6 +21,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
   } = useCart();
 
   const total = getTotal();
+  const formatPrice = useFormatPrice();
 
   const handleClear = () => {
     clearCart();
@@ -50,7 +53,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                 <div className="flex-1">
                   <p className="font-medium">{item.name}</p>
                   <p className="text-sm text-gray-400">
-                    ${item.price.toFixed(2)} each
+                    <Price usd={item.price} /> each
                   </p>
 
                   <div className="mt-2 flex items-center gap-2">
@@ -93,7 +96,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
 
       <div className="mt-6 border-t border-white/10 pt-4">
         <p className="mb-4 text-lg font-semibold">
-          Total: ${total.toFixed(2)}
+          Total: {formatPrice(total)}
         </p>
 
         <Link

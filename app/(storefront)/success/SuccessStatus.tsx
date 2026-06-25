@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Price from "@/components/currency/Price";
 
 type View = "pending" | "paid" | "failed" | "unknown";
 
@@ -119,7 +120,7 @@ export default function SuccessStatus({ orderId }: { orderId: string | null }) {
             <div>
               <p className="text-xs text-white/50">{totalLabel}</p>
               <p className="text-lg font-medium text-white">
-                ${total.toFixed(2)}
+                <Price usd={total} />
               </p>
             </div>
           ) : null}

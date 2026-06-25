@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { products, getCategories, routes } from "@/lib/inventory";
+import Price from "@/components/currency/Price";
 
 export default function HomePage() {
   const [loaded, setLoaded] = useState(false);
@@ -129,7 +130,9 @@ export default function HomePage() {
 
               <div className="p-3">
                 <p className="text-sm font-medium">{p.name}</p>
-                <p className="text-xs text-gray-400">${p.price}</p>
+                <p className="text-xs text-gray-400">
+                  <Price usd={p.price} />
+                </p>
               </div>
             </div>
           ))}
