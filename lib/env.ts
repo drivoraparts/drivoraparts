@@ -61,7 +61,7 @@ export function getTawkPropertyId(): string {
 }
 
 export function getTawkWidgetId(): string {
-  return optional("NEXT_PUBLIC_TAWK_WIDGET_ID", "default");
+  return optional("NEXT_PUBLIC_TAWK_WIDGET_ID", "1jrs9hdba");
 }
 
 export function isSupabaseConfigured(): boolean {

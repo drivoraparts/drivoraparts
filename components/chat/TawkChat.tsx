@@ -3,7 +3,8 @@
 import { useEffect } from "react";
 
 const TAWK_SITE_ID = "6a392868452f781d473b4ceb";
-const TAWK_EMBED_SRC = `https://embed.tawk.to/${TAWK_SITE_ID}/default`;
+const TAWK_WIDGET_ID = "1jrs9hdba";
+const TAWK_EMBED_SRC = `https://embed.tawk.to/${TAWK_SITE_ID}/${TAWK_WIDGET_ID}`;
 
 declare global {
   interface Window {
