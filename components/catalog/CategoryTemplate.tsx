@@ -25,10 +25,12 @@ export default function CategoryTemplate({
   title,
   brands,
   products,
+  showProducts = true,
 }: {
   title: string;
   brands: TemplateBrand[];
   products: TemplateProduct[];
+  showProducts?: boolean;
 }) {
   return (
     <main className="min-h-screen p-6 text-white">
@@ -52,33 +54,35 @@ export default function CategoryTemplate({
       )}
 
       {/* PRODUCTS */}
-      <section>
-        <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">
-          Products
-        </h2>
+      {showProducts && (
+        <section>
+          <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">
+            Products
+          </h2>
 
-        {products.length === 0 ? (
-          <p className="text-gray-500">No products in this category yet.</p>
-        ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {products.map((product) => (
-              <CatalogCard key={product.id} href={`/product/${product.id}`}>
-                <img
-                  src={product.thumbnail}
-                  alt={product.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-40 w-full object-cover rounded-lg"
-                />
-                <h3 className="mt-3 font-semibold">{product.name}</h3>
-                <p className="text-sm text-red-500 font-bold">
-                  ${product.price}
-                </p>
-              </CatalogCard>
-            ))}
-          </div>
-        )}
-      </section>
+          {products.length === 0 ? (
+            <p className="text-gray-500">No products in this category yet.</p>
+          ) : (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {products.map((product) => (
+                <CatalogCard key={product.id} href={`/product/${product.id}`}>
+                  <img
+                    src={product.thumbnail}
+                    alt={product.name}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-40 w-full object-cover rounded-lg"
+                  />
+                  <h3 className="mt-3 font-semibold">{product.name}</h3>
+                  <p className="text-sm text-red-500 font-bold">
+                    ${product.price}
+                  </p>
+                </CatalogCard>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
     </main>
   );
 }
