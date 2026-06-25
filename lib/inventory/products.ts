@@ -30,21 +30,6 @@ export const products: Product[] = [
       "/product-media/engine/bmw/n54/2.webp",
       "/product-media/engine/bmw/n54/3.webp",
     ],
-    partNumber: "N54B30 (BMW Engine Code)",
-    fitment:
-      "Fits BMW 135i (E82/E88), 335i (E90/E92/E93), 535i (E60), 740i (F01) & X6 xDrive35i (E71), model years 2007–2016. Mates to BMW GS6 6-speed manual and GA6HP 6-speed automatic bellhousing patterns.",
-    drivetrain: "RWD — compatible with xDrive AWD applications",
-    included: [
-      "Complete long block assembly",
-      "Factory twin turbochargers",
-      "Fuel injectors & high-pressure fuel pump (HPFP)",
-      "Intake & exhaust manifolds",
-      "Factory sensors installed",
-    ],
-    coreCharge: "Outright sale — No core charge or return required",
-    freightNotes:
-      "Ships as palletized heavy freight. Liftgate service and residential delivery available at checkout (commercial address recommended for fastest handling).",
-    warrantyTerms: "Parts only — labor and installation costs not covered.",
     description: `BMW N54 Twin Turbo Engine
 
 The BMW N54 Twin Turbo is one of BMW's most legendary turbocharged inline-six engines, renowned for its exceptional tuning potential, twin-turbo performance, and strong aftermarket support.

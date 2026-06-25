@@ -108,3 +108,14 @@ export type Product = {
   /** Warranty liability terms, e.g. "Parts only — no labor covered". */
   warrantyTerms?: string;
 };
+
+/** Structured fitment & logistics shown on the product page. */
+export type ProductLogistics = {
+  partNumber?: string;
+  fitment?: string;
+  drivetrain?: string;
+  included?: string[];
+  coreCharge?: string;
+  freightNotes?: string;
+  warrantyTerms?: string;
+};

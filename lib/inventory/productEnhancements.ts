@@ -1,19 +1,12 @@
-import type { Product } from "./types";
+import type { Product, ProductLogistics } from "./types";
 import {
   getConditionDisplay,
   resolveProductCondition,
 } from "./condition";
+import { productLogistics } from "./logistics";
 import { getProductReviewAggregate } from "@/lib/reviews";
 
-export type ProductLogistics = {
-  partNumber?: string;
-  fitment?: string;
-  drivetrain?: string;
-  included?: string[];
-  coreCharge?: string;
-  freightNotes?: string;
-  warrantyTerms?: string;
-};
+export type { ProductLogistics };
 
 export type ProductCatalogMeta = {
   horsepower?: string;
@@ -42,17 +35,24 @@ export function hasLogistics(logistics: ProductLogistics): boolean {
 }
 
 function resolveProductLogistics(product: Product): ProductLogistics {
+  // Inline product fields take priority; fall back to the central map by id.
+  const fallback = productLogistics[product.id] ?? {};
+  const text = (inline?: string, mapped?: string) =>
+    inline?.trim() || mapped?.trim() || undefined;
+
   return {
-    partNumber: product.partNumber?.trim() || undefined,
-    fitment: product.fitment?.trim() || undefined,
-    drivetrain: product.drivetrain?.trim() || undefined,
+    partNumber: text(product.partNumber, fallback.partNumber),
+    fitment: text(product.fitment, fallback.fitment),
+    drivetrain: text(product.drivetrain, fallback.drivetrain),
     included:
       product.included && product.included.length > 0
         ? product.included
-        : undefined,
-    coreCharge: product.coreCharge?.trim() || undefined,
-    freightNotes: product.freightNotes?.trim() || undefined,
-    warrantyTerms: product.warrantyTerms?.trim() || undefined,
+        : fallback.included && fallback.included.length > 0
+          ? fallback.included
+          : undefined,
+    coreCharge: text(product.coreCharge, fallback.coreCharge),
+    freightNotes: text(product.freightNotes, fallback.freightNotes),
+    warrantyTerms: text(product.warrantyTerms, fallback.warrantyTerms),
   };
 }
 
