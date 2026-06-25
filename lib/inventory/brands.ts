@@ -27,6 +27,9 @@ export const brands: Brand[] = [
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
   { slug: "borgwarner", name: "BorgWarner", category: "turbocharger" },
   { slug: "precision", name: "Precision", category: "turbocharger" },
+  { slug: "audi", name: "Audi", category: "turbocharger" },
+  { slug: "bmw", name: "BMW", category: "turbocharger" },
+  { slug: "universal", name: "Universal", category: "turbocharger" },
 
   // Transmission
   { slug: "zf", name: "ZF", category: "transmission" },

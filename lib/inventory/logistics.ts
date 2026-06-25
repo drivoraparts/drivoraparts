@@ -957,4 +957,168 @@ export const productLogistics: Record<number, ProductLogistics> = {
     freightNotes: ENGINE_FREIGHT,
     warrantyTerms: PARTS_ONLY,
   },
+
+  /* =====================================================
+     TURBOCHARGERS
+  ===================================================== */
+  95: {
+    partNumber: "Audi RS3 Hybrid Turbo (2.5 TFSI)",
+    fitment:
+      "Direct-fit hybrid turbo upgrade for Audi RS3 / TT RS 2.5 TFSI — confirm your engine code at checkout.",
+    included: [
+      "Hybrid turbocharger assembly",
+      "Mounting gaskets",
+      "Hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  96: {
+    partNumber: "BMW B58 Hybrid Turbo",
+    fitment:
+      "Direct-fit hybrid turbo upgrade for BMW B58 TwinPower platforms — confirm your vehicle and year at checkout.",
+    included: [
+      "Hybrid turbocharger assembly",
+      "Mounting gaskets",
+      "Hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  97: {
+    partNumber: "BMW N54 Hybrid Turbo Kit",
+    fitment:
+      "Complete hybrid turbo kit for BMW N54 twin-turbo platforms — confirm your vehicle at checkout.",
+    included: [
+      "Hybrid turbocharger pair",
+      "Mounting gaskets",
+      "Oil feed/drain lines",
+      "Hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: KIT_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  98: {
+    partNumber: "BorgWarner EFR 7163",
+    fitment:
+      "Universal EFR 7163 performance turbo — verify turbine housing A/R and flange for your application.",
+    included: [
+      "EFR 7163 turbocharger assembly",
+      "Compressor & turbine housings",
+      "Mounting gaskets",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  99: {
+    partNumber: "BorgWarner EFR 7670",
+    fitment:
+      "Universal EFR 7670 high-flow turbo — verify housing A/R and flange for your target power level.",
+    included: [
+      "EFR 7670 turbocharger assembly",
+      "Compressor & turbine housings",
+      "Mounting gaskets",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  100: {
+    partNumber: "Front-Mount Intercooler Kit",
+    fitment:
+      "Application-specific FMIC kit — confirm your vehicle and engine at checkout.",
+    included: [
+      "Intercooler core",
+      "Charge piping",
+      "Couplers & clamps",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: KIT_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  101: {
+    partNumber: "Garrett GTX3076R Gen II",
+    fitment:
+      "Universal GTX3076R Gen II turbo — verify housing A/R and flange for your application (~650 HP).",
+    included: [
+      "GTX3076R Gen II turbocharger",
+      "Compressor & turbine housings",
+      "Mounting gaskets",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  102: {
+    partNumber: "Garrett GTX3582R Gen II",
+    fitment:
+      "Universal GTX3582R Gen II turbo — verify housing A/R and flange for high-horsepower builds (~770 HP).",
+    included: [
+      "GTX3582R Gen II turbocharger",
+      "Compressor & turbine housings",
+      "Mounting gaskets",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  103: {
+    partNumber: "Precision PT6266",
+    fitment:
+      "Universal performance turbocharger (~735 HP) — verify housing A/R and flange for your application.",
+    included: [
+      "Turbocharger assembly",
+      "Compressor & turbine housings",
+      "Mounting gaskets",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  104: {
+    partNumber: "Precision PT6466",
+    fitment:
+      "Universal performance turbocharger (~800 HP) — verify housing A/R and flange for your application.",
+    included: [
+      "Turbocharger assembly",
+      "Compressor & turbine housings",
+      "Mounting gaskets",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  105: {
+    partNumber: "Precision PT6870",
+    fitment:
+      "Universal high-flow turbocharger (~900 HP) — verify housing A/R and flange for your application.",
+    included: [
+      "Turbocharger assembly",
+      "Compressor & turbine housings",
+      "Mounting gaskets",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  106: {
+    partNumber: "Universal T4 Turbo Kit",
+    fitment:
+      "Universal T4 turbo kit — confirm your engine, manifold flange, and target power at checkout.",
+    included: [
+      "T4 turbocharger",
+      "Turbo manifold",
+      "Downpipe",
+      "Wastegate",
+      "Oil lines & hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: KIT_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
 };

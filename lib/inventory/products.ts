@@ -3019,5 +3019,538 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 95,
+    name: "Audi RS3 Hybrid Turbo",
+    category: "turbocharger",
+    brand: "audi",
+    price: 2199,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/audi-rs3-hybrid-turbo/1.jpg",
+    images: [
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/1.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/2.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/3.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/4.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/5.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/6.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/7.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/8.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/9.jpg",
+    ],
+    description: `Audi RS3 Hybrid Turbo
+
+High-flow hybrid turbo upgrade for Audi RS3 and TT RS 2.5 TFSI platforms, delivering more power while retaining factory fitment.
+
+The Audi RS3 Hybrid Turbo replaces the factory unit with uprated billet compressor and turbine components to increase airflow and boost capacity on the legendary 2.5 TFSI five-cylinder. Engineered as a direct-fit upgrade, it delivers stronger mid-range and top-end power with OEM-style reliability and a clean bolt-on installation.
+
+Specifications
+• Type: Hybrid Turbocharger Upgrade
+• Platform: Audi 2.5 TFSI (RS3 / TT RS)
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: Application Dependent
+• Manufacturer: Audi Performance
+
+Highlights
+• Uprated Billet Compressor
+• Retains Factory Fitment
+• Strong Mid-Range Gains
+• Ideal for RS3 / TT RS Builds
+• Direct Bolt-On Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 96,
+    name: "BMW B58 Hybrid Turbo",
+    category: "turbocharger",
+    brand: "bmw",
+    price: 2299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/bmw-b58-hybrid-turbo/1.jpg",
+    images: [
+      "/product-media/turbocharger/bmw-b58-hybrid-turbo/1.jpg",
+      "/product-media/turbocharger/bmw-b58-hybrid-turbo/2.jpg",
+      "/product-media/turbocharger/bmw-b58-hybrid-turbo/3.jpg",
+    ],
+    description: `BMW B58 Hybrid Turbo
+
+Hybrid turbo upgrade for BMW B58 TwinPower platforms, increasing flow and power while maintaining factory-style fitment.
+
+The BMW B58 Hybrid Turbo upgrades the factory twin-scroll unit with uprated billet internals to support higher boost and horsepower on modern BMW inline-six builds. Designed as a direct replacement, it improves response and top-end flow without major fabrication, making it a popular upgrade for street and track B58 applications.
+
+Specifications
+• Type: Hybrid Turbocharger Upgrade
+• Platform: BMW B58 TwinPower
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: Application Dependent
+• Manufacturer: BMW Performance
+
+Highlights
+• Uprated Billet Internals
+• Retains Factory Fitment
+• Improved Boost Response
+• Strong Top-End Flow
+• Direct Replacement Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 97,
+    name: "BMW N54 Hybrid Turbo Kit",
+    category: "turbocharger",
+    brand: "bmw",
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/1.jpg",
+    images: [
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/1.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/2.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/3.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/4.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/5.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/6.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/7.jpg",
+    ],
+    description: `BMW N54 Hybrid Turbo Kit
+
+Complete hybrid turbo kit for BMW N54 twin-turbo platforms, delivering increased flow and power with factory-style fitment.
+
+The BMW N54 Hybrid Turbo Kit upgrades both factory turbos with uprated billet compressor and turbine components to support higher boost and horsepower on the legendary N54 inline-six. Supplied as a matched pair with supporting hardware, it is engineered for a clean direct-replacement installation on popular BMW performance platforms.
+
+Specifications
+• Type: Hybrid Twin-Turbo Kit
+• Platform: BMW N54 Twin-Turbo
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: Application Dependent
+• Manufacturer: BMW Performance
+
+Highlights
+• Matched Hybrid Turbo Pair
+• Uprated Billet Internals
+• Retains Factory Fitment
+• Strong Mid-Range and Top-End Gains
+• Complete Kit Hardware
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 98,
+    name: "BorgWarner EFR 7163",
+    category: "turbocharger",
+    brand: "borgwarner",
+    price: 1899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/borgwarner-efr-7163/1.jpg",
+    images: [
+      "/product-media/turbocharger/borgwarner-efr-7163/1.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/2.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/3.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/4.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/5.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/6.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/7.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/8.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/9.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/10.jpg",
+    ],
+    description: `BorgWarner EFR 7163
+
+Advanced BorgWarner EFR 7163 turbocharger combining Gamma-Ti turbine technology with rapid spool and high-flow performance.
+
+The BorgWarner EFR 7163 is part of the Engineered For Racing series, featuring a lightweight Gamma-Ti turbine wheel, dual-row ceramic ball bearing cartridge, and integrated boost control provisions. Delivering exceptional response and consistent high-rpm flow, the EFR 7163 is ideal for serious street and motorsport builds targeting strong power with fast spool.
+
+Specifications
+• Type: EFR Ball Bearing Turbocharger
+• Model: EFR 7163
+• Turbine: Gamma-Ti Lightweight Wheel
+• Bearing: Dual-Row Ceramic Ball Bearing
+• Compatibility: Universal Performance Applications
+• Manufacturer: BorgWarner
+
+Highlights
+• Gamma-Ti Turbine Technology
+• Fast Spool and High Flow
+• Ceramic Ball Bearing Cartridge
+• Integrated Boost Control Provisions
+• Proven EFR Performance
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 99,
+    name: "BorgWarner EFR 7670",
+    category: "turbocharger",
+    brand: "borgwarner",
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/borgwarner-efr-7670/1.jpg",
+    images: [
+      "/product-media/turbocharger/borgwarner-efr-7670/1.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7670/2.jpg",
+    ],
+    description: `BorgWarner EFR 7670
+
+High-flow BorgWarner EFR 7670 turbocharger built for big-power performance with advanced Gamma-Ti turbine technology.
+
+The BorgWarner EFR 7670 is a larger-frame EFR unit engineered for builds targeting higher horsepower while maintaining the fast spool characteristics the EFR series is known for. Featuring a Gamma-Ti turbine wheel and ceramic ball bearing cartridge, it delivers strong top-end airflow and proven reliability for serious performance applications.
+
+Specifications
+• Type: EFR Ball Bearing Turbocharger
+• Model: EFR 7670
+• Turbine: Gamma-Ti Lightweight Wheel
+• Bearing: Dual-Row Ceramic Ball Bearing
+• Compatibility: Universal Performance Applications
+• Manufacturer: BorgWarner
+
+Highlights
+• High-Flow EFR Frame
+• Gamma-Ti Turbine Technology
+• Strong Top-End Airflow
+• Ceramic Ball Bearing Cartridge
+• Ideal for Big-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 100,
+    name: "Front Mount Intercooler Kit",
+    category: "turbocharger",
+    brand: "universal",
+    price: 749,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/front-mount-intercooler-kit/1.jpg",
+    images: [
+      "/product-media/turbocharger/front-mount-intercooler-kit/1.jpg",
+      "/product-media/turbocharger/front-mount-intercooler-kit/2.jpg",
+      "/product-media/turbocharger/front-mount-intercooler-kit/3.jpg",
+    ],
+    description: `Front Mount Intercooler Kit
+
+Front-mount intercooler kit engineered to reduce intake temperatures and sustain consistent boost performance.
+
+This Front Mount Intercooler (FMIC) Kit upgrades the factory cooling system with a high-capacity bar-and-plate core and mandrel-bent piping to reduce intake air temperatures and prevent heat soak under sustained boost. Engineered for efficient cooling and minimal pressure drop, it is a core upgrade for reliable turbocharged power.
+
+Specifications
+• Type: Front Mount Intercooler Kit
+• Core: Bar-and-Plate High-Capacity
+• Piping: Mandrel-Bent Aluminum
+• Couplers: Silicone Couplers + Clamps Included
+• Compatibility: Application-Specific Fitment
+• Manufacturer: Universal
+
+Highlights
+• High-Capacity Bar-and-Plate Core
+• Reduced Intake Air Temperatures
+• Prevents Heat Soak Under Boost
+• Complete Piping and Coupler Kit
+• Sustains Consistent Boost
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 101,
+    name: "Garrett GTX3076R Gen II",
+    category: "turbocharger",
+    brand: "garrett",
+    price: 1599,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+    images: [
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/2.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/3.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/4.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/5.jpg",
+    ],
+    description: `Garrett GTX3076R Gen II
+
+Garrett GTX3076R Gen II turbocharger delivering proven high-flow performance and strong mid-range response.
+
+The Garrett GTX3076R Gen II features a forged fully-machined billet compressor wheel and dual ball bearing cartridge for fast spool and high-rpm flow. One of the most popular performance turbochargers available, it balances rapid response with strong top-end power, making it ideal for street and track builds targeting up to 650 horsepower.
+
+Specifications
+• Type: Ball Bearing Turbocharger (Gen II)
+• Model: GTX3076R Gen II
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 650 HP
+• Manufacturer: Garrett
+
+Highlights
+• Gen II Forged Billet Compressor
+• Dual Ball Bearing Cartridge
+• Fast Spool and High-Flow
+• Proven Garrett GTX Performance
+• Ideal for Street and Track
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 102,
+    name: "Garrett GTX3582R Gen II",
+    category: "turbocharger",
+    brand: "garrett",
+    price: 1899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/garrett-gtx3582r-gen-ii/1.jpg",
+    images: [
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/1.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/2.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/3.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/4.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/5.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/6.jpg",
+    ],
+    description: `Garrett GTX3582R Gen II
+
+Garrett GTX3582R Gen II turbocharger built for high-horsepower performance with strong top-end flow.
+
+The Garrett GTX3582R Gen II is a larger-frame performance turbocharger designed for builds targeting higher horsepower while maintaining usable response. Featuring a forged billet Gen II compressor wheel and dual ball bearing cartridge, it delivers excellent high-rpm airflow and proven reliability for serious street and track applications up to 770 horsepower.
+
+Specifications
+• Type: Ball Bearing Turbocharger (Gen II)
+• Model: GTX3582R Gen II
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 770 HP
+• Manufacturer: Garrett
+
+Highlights
+• Gen II Forged Billet Compressor
+• High-Horsepower Capability
+• Strong Top-End Airflow
+• Proven Garrett GTX Reliability
+• Ideal for Big-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 103,
+    name: "Precision 6266",
+    category: "turbocharger",
+    brand: "precision",
+    price: 1649,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/precision-6266/1.jpg",
+    images: ["/product-media/turbocharger/precision-6266/1.jpg"],
+    description: `Precision 6266
+
+Precision 6266 dual ball bearing turbocharger offering a proven balance of spool and high-horsepower capability.
+
+The Precision 6266 (PT6266) is a highly popular performance turbocharger known for its versatile balance of quick spool and strong top-end power. Featuring a CEA billet compressor wheel and dual ball bearing configuration, the 6266 supports up to 735 horsepower and is a favorite for street and competition builds.
+
+Specifications
+• Type: Performance Turbocharger
+• Model: PT6266
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing
+• Power Capability: Up to 735 HP
+• Manufacturer: Precision
+
+Highlights
+• CEA Billet Compressor Wheel
+• Balanced Spool and Top-End
+• Up to 735 HP Capability
+• Proven Street and Race Turbo
+• Versatile Fitment Options
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 104,
+    name: "Precision 6466",
+    category: "turbocharger",
+    brand: "precision",
+    price: 1749,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/precision-6466/1.jpg",
+    images: ["/product-media/turbocharger/precision-6466/1.jpg"],
+    description: `Precision 6466
+
+Precision 6466 performance turbocharger delivering increased flow for high-horsepower street and track builds.
+
+The Precision 6466 (PT6466) steps up from the 6266 with a larger CEA billet compressor wheel for increased airflow and power capability. Featuring dual ball bearing technology, it supports builds targeting up to 800 horsepower while maintaining usable spool characteristics for serious performance applications.
+
+Specifications
+• Type: Performance Turbocharger
+• Model: PT6466
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing
+• Power Capability: Up to 800 HP
+• Manufacturer: Precision
+
+Highlights
+• Larger CEA Billet Compressor
+• Increased Airflow vs. 6266
+• Up to 800 HP Capability
+• Dual Ball Bearing Technology
+• Ideal for High-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 105,
+    name: "Precision 6870",
+    category: "turbocharger",
+    brand: "precision",
+    price: 2299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/precision-6870/1.jpg",
+    images: [
+      "/product-media/turbocharger/precision-6870/1.jpg",
+      "/product-media/turbocharger/precision-6870/2.jpg",
+      "/product-media/turbocharger/precision-6870/3.jpg",
+      "/product-media/turbocharger/precision-6870/4.jpg",
+      "/product-media/turbocharger/precision-6870/5.jpg",
+      "/product-media/turbocharger/precision-6870/6.jpg",
+    ],
+    description: `Precision 6870
+
+Precision 6870 high-flow turbocharger built for maximum horsepower with proven CEA billet technology.
+
+The Precision 6870 (PT6870) is a larger-frame performance turbocharger designed for builds targeting the highest power levels while maintaining the response Precision turbos are known for. Featuring a CEA billet compressor wheel and dual ball bearing cartridge, it supports up to 900 horsepower for serious street, drag, and competition applications.
+
+Specifications
+• Type: High-Flow Performance Turbocharger
+• Model: PT6870
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing
+• Power Capability: Up to 900 HP
+• Manufacturer: Precision
+
+Highlights
+• High-Flow CEA Billet Compressor
+• Up to 900 HP Capability
+• Dual Ball Bearing Cartridge
+• Proven Precision Reliability
+• Ideal for Maximum Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 106,
+    name: "Universal T4 Turbo Kit",
+    category: "turbocharger",
+    brand: "universal",
+    price: 1299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/universal-t4-turbo-kit/1.jpg",
+    images: [
+      "/product-media/turbocharger/universal-t4-turbo-kit/1.jpg",
+      "/product-media/turbocharger/universal-t4-turbo-kit/2.jpg",
+      "/product-media/turbocharger/universal-t4-turbo-kit/3.jpg",
+      "/product-media/turbocharger/universal-t4-turbo-kit/4.jpg",
+    ],
+    description: `Universal T4 Turbo Kit
+
+Complete universal T4 turbo kit with the core components needed for a reliable forced-induction upgrade.
+
+The Universal T4 Turbo Kit includes a T4-flange turbocharger, manifold, downpipe, wastegate, and supporting oil lines and hardware for a comprehensive bolt-on forced-induction upgrade. Engineered as a matched system for consistent boost delivery, it is ideal for enthusiasts building custom or swap applications targeting reliable turbocharged power.
+
+Specifications
+• Type: Universal T4 Turbo Kit
+• Flange: T4 Turbo Inlet
+• Includes: Turbo, Manifold, Downpipe, Wastegate
+• Oil Lines: Feed/Drain Lines Included
+• Compatibility: Universal Performance Applications
+• Manufacturer: Universal
+
+Highlights
+• Complete Matched Turbo System
+• T4 Flange Compatibility
+• Includes Manifold and Downpipe
+• Wastegate and Oil Lines Included
+• Ideal for Custom Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
