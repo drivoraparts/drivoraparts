@@ -10,8 +10,9 @@
 
 import type { Product } from "./types";
 import { aftermarketProducts } from "./aftermarket-products";
+import { applyPublicPrices } from "./pricing";
 
-export const products: Product[] = [
+const productCatalog: Product[] = [
   {
     id: 1,
     name: "BMW N54 Twin Turbo Engine",
@@ -3554,3 +3555,6 @@ Worldwide Shipping Available`,
   },
   ...aftermarketProducts,
 ];
+
+/** Storefront + checkout prices (affordable public list). */
+export const products = applyPublicPrices(productCatalog);
