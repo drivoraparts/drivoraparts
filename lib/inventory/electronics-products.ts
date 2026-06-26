@@ -1,9 +1,7 @@
 import type { Product } from "./types";
 
-function media(slug: string, count = 4) {
-  const base = `/product-media/electronics/${slug}`;
-  const images = Array.from({ length: count }, (_, i) => `${base}/${i + 1}.jpg`);
-  return { thumbnail: images[0], images };
+function media(files: string[]) {
+  return { thumbnail: files[0], images: files };
 }
 
 export const electronicsProducts: Product[] = [
@@ -17,7 +15,10 @@ export const electronicsProducts: Product[] = [
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("aem-wideband-afr-gauge"),
+    ...media([
+      "/product-media/electronics/aem-wideband-afr-gauge/1.jpg",
+      "/product-media/electronics/aem-wideband-afr-gauge/2.jpg",
+    ]),
     description: `AEM Wideband AFR Gauge
 
 AEM wideband UEGO gauge kit for accurate air/fuel ratio monitoring during tuning and track use.
@@ -55,7 +56,13 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("cobb-accessport", 5),
+    ...media([
+      "/product-media/electronics/cobb-accessport/1.png",
+      "/product-media/electronics/cobb-accessport/2.png",
+      "/product-media/electronics/cobb-accessport/3.jpg",
+      "/product-media/electronics/cobb-accessport/4.jpg",
+      "/product-media/electronics/cobb-accessport/5.jpg",
+    ]),
     description: `COBB Accessport
 
 COBB Accessport handheld tuner with pre-loaded maps, data logging, and performance calibration for supported platforms.
@@ -93,7 +100,17 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("dash-camera"),
+    ...media([
+      "/product-media/electronics/dash-camera/1.jpg",
+      "/product-media/electronics/dash-camera/2.jpg",
+      "/product-media/electronics/dash-camera/3.jpg",
+      "/product-media/electronics/dash-camera/4.jpg",
+      "/product-media/electronics/dash-camera/5.jpg",
+      "/product-media/electronics/dash-camera/6.jpg",
+      "/product-media/electronics/dash-camera/7.jpg",
+      "/product-media/electronics/dash-camera/8.jpg",
+      "/product-media/electronics/dash-camera/9.jpg",
+    ]),
     description: `Dash Camera
 
 High-definition dash camera with loop recording, G-sensor event capture, and wide-angle front coverage.
@@ -131,7 +148,13 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("digital-dash-display", 5),
+    ...media([
+      "/product-media/electronics/digital-dash-display/1.jpg",
+      "/product-media/electronics/digital-dash-display/2.jpg",
+      "/product-media/electronics/digital-dash-display/3.jpg",
+      "/product-media/electronics/digital-dash-display/4.jpg",
+      "/product-media/electronics/digital-dash-display/5.jpg",
+    ]),
     description: `Digital Dash Display
 
 Configurable digital dash display with customizable gauges, shift lights, and sensor inputs for modern cockpit upgrades.
@@ -169,7 +192,13 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("electronic-boost-controller"),
+    ...media([
+      "/product-media/electronics/electronic-boost-controller/1.jpg",
+      "/product-media/electronics/electronic-boost-controller/2.jpg",
+      "/product-media/electronics/electronic-boost-controller/3.jpg",
+      "/product-media/electronics/electronic-boost-controller/4.jpg",
+      "/product-media/electronics/electronic-boost-controller/5.jpg",
+    ]),
     description: `Electronic Boost Controller
 
 Electronic boost controller for precise wastegate duty-cycle management and repeatable boost targets.
@@ -207,7 +236,10 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("flex-fuel-sensor-kit"),
+    ...media([
+      "/product-media/electronics/flex-fuel-sensor-kit/1.jpg",
+      "/product-media/electronics/flex-fuel-sensor-kit/2.jpg",
+    ]),
     description: `Flex Fuel Sensor Kit
 
 Flex fuel sensor kit with ethanol content sensor, harness, and fittings for E85 and flex-fuel tuning.
@@ -245,7 +277,10 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("haltech-elite-ecu", 6),
+    ...media([
+      "/product-media/electronics/haltech-elite-ecu/1.jpg",
+      "/product-media/electronics/haltech-elite-ecu/2.jpg",
+    ]),
     description: `Haltech Elite ECU
 
 Haltech Elite standalone ECU with advanced tuning, data logging, and motorsport-grade I/O for high-performance engine management.
@@ -283,7 +318,9 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("haltech-nexus-ecu", 5),
+    ...media([
+      "/product-media/electronics/haltech-nexus-ecu/1.jpg",
+    ]),
     description: `Haltech Nexus ECU
 
 Haltech Nexus ECU combining powerful engine control with integrated display capability and modern connectivity.
@@ -321,7 +358,11 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("hp-tuners-mpvi3", 5),
+    ...media([
+      "/product-media/electronics/hp-tuners-mpvi3/1.jpg",
+      "/product-media/electronics/hp-tuners-mpvi3/2.jpg",
+      "/product-media/electronics/hp-tuners-mpvi3/3.jpg",
+    ]),
     description: `HP Tuners MPVI3
 
 HP Tuners MPVI3 interface for GM, Ford, and supported platform tuning, logging, and diagnostics via VCM Suite.
@@ -359,7 +400,11 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("msd-ignition-system", 5),
+    ...media([
+      "/product-media/electronics/msd-ignition-system/1.jpg",
+      "/product-media/electronics/msd-ignition-system/2.jpg",
+      "/product-media/electronics/msd-ignition-system/3.jpg",
+    ]),
     description: `MSD Ignition System
 
 MSD ignition upgrade with capacitive discharge ignition for stronger spark, cleaner idle, and improved high-RPM performance.
@@ -397,7 +442,12 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("performance-data-logger", 5),
+    ...media([
+      "/product-media/electronics/performance-data-logger/1.jpg",
+      "/product-media/electronics/performance-data-logger/2.jpg",
+      "/product-media/electronics/performance-data-logger/3.jpg",
+      "/product-media/electronics/performance-data-logger/4.jpg",
+    ]),
     description: `Performance Data Logger
 
 Professional-grade data logger capturing GPS, sensor, and vehicle telemetry for track analysis and tuning validation.
@@ -435,7 +485,17 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("professional-obd2-scan-tool"),
+    ...media([
+      "/product-media/electronics/professional-obd2-scan-tool/1.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/2.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/3.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/4.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/5.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/6.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/7.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/8.jpg",
+      "/product-media/electronics/professional-obd2-scan-tool/9.jpg",
+    ]),
     description: `Professional OBD2 Scan Tool
 
 Professional OBD2 scan tool for live data, DTC reading/clearing, and advanced diagnostics on modern vehicles.
@@ -473,7 +533,10 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("shift-light-kit", 3),
+    ...media([
+      "/product-media/electronics/shift-light-kit/1.webp",
+      "/product-media/electronics/shift-light-kit/2.jpg",
+    ]),
     description: `Shift Light Kit
 
 Programmable LED shift light kit with adjustable RPM threshold for consistent upshifts during performance driving.
@@ -511,7 +574,10 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media("tpms-kit", 3),
+    ...media([
+      "/product-media/electronics/tpms-kit/1.jpg",
+      "/product-media/electronics/tpms-kit/2.jpg",
+    ]),
     description: `TPMS Kit
 
 Tire pressure monitoring system kit with sensors and display for real-time pressure and temperature alerts.
