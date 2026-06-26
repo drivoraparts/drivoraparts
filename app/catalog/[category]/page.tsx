@@ -32,7 +32,8 @@ export default async function Page({ params }: any) {
       showProducts={
         slug !== "brakes" &&
         slug !== "transmission" &&
-        slug !== "turbocharger"
+        slug !== "turbocharger" &&
+        slug !== "suspension"
       }
     />
   );

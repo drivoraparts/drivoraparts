@@ -3553,6 +3553,644 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  {
+    id: 107,
+    name: "Adjustable Front Control Arm",
+    category: "suspension",
+    brand: "whiteline",
+    price: 420,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/adjustable-front-control-arms/1.jpg",
+    images: [
+      "/product-media/suspension/adjustable-front-control-arms/1.jpg",
+      "/product-media/suspension/adjustable-front-control-arms/2.jpg",
+      "/product-media/suspension/adjustable-front-control-arms/3.jpg",
+      "/product-media/suspension/adjustable-front-control-arms/4.jpg",
+    ],
+    description: `Adjustable Front Control Arm
+
+Heavy-duty adjustable front control arms engineered for precise alignment, improved handling, and lowered or performance suspension setups.
+
+These adjustable front control arms restore proper suspension geometry on lowered or modified vehicles, allowing camber and caster correction for sharper turn-in and even tire wear. Built with reinforced bushings and durable hardware, they deliver a direct bolt-on upgrade for street, track, and show builds that demand accurate alignment.
+
+Specifications
+• Part Type: Adjustable Front Control Arms
+• Adjustment: Camber / Caster Correction
+• Construction: Reinforced Steel Arms
+• Bushings: Performance Polyurethane / Spherical Options
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Whiteline
+
+Highlights
+• Restores Lowered-Vehicle Geometry
+• Precise Camber & Caster Adjustment
+• Improved Turn-In and Grip
+• Durable Reinforced Construction
+• Direct Bolt-On Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 108,
+    name: "Air Lift Performance 3H Kit",
+    category: "suspension",
+    brand: "air-lift-performance",
+    price: 3499,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/air-lift-performance-3h-kit/1.jpg",
+    images: [
+      "/product-media/suspension/air-lift-performance-3h-kit/1.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/2.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/3.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/4.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/5.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/6.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/7.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/8.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/9.jpg",
+      "/product-media/suspension/air-lift-performance-3h-kit/10.jpg",
+    ],
+    description: `Air Lift Performance 3H Kit
+
+Premium Air Lift 3H air management system with height and pressure control for show-quality stance and daily drivability.
+
+The Air Lift Performance 3H Kit combines dual-path air management with Bluetooth control, allowing independent front and rear height and pressure adjustment from your phone. Engineered for reliability and fast response, it delivers the smooth ride and dramatic stance adjustment air suspension enthusiasts expect on modern performance builds.
+
+Specifications
+• Part Type: Air Management System (3H)
+• Control: Bluetooth App + Manual Controller
+• Valves: Dual-Path Fast-Fill System
+• Tank: Application-Matched Air Tank
+• Fitment: Universal Air Suspension Setup
+• Manufacturer: Air Lift Performance
+
+Highlights
+• Bluetooth Height & Pressure Control
+• Dual-Path Fast Air Management
+• Show-Quality Stance Adjustment
+• Smooth Daily Driving Ride
+• Complete 3H Management System
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 109,
+    name: "Air Lift Performance 3P Kit",
+    category: "suspension",
+    brand: "air-lift-performance",
+    price: 2799,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/air-lift-performance-3p-kit/1.jpg",
+    images: [
+      "/product-media/suspension/air-lift-performance-3p-kit/1.jpg",
+      "/product-media/suspension/air-lift-performance-3p-kit/2.jpg",
+      "/product-media/suspension/air-lift-performance-3p-kit/3.jpg",
+      "/product-media/suspension/air-lift-performance-3p-kit/4.jpg",
+      "/product-media/suspension/air-lift-performance-3p-kit/5.jpg",
+      "/product-media/suspension/air-lift-performance-3p-kit/6.jpg",
+      "/product-media/suspension/air-lift-performance-3p-kit/7.jpg",
+      "/product-media/suspension/air-lift-performance-3p-kit/8.jpg",
+    ],
+    description: `Air Lift Performance 3P Kit
+
+Air Lift 3P pressure-based management system delivering precise ride height control with a clean, reliable setup.
+
+The Air Lift Performance 3P Kit provides advanced pressure-based air management with digital control for consistent ride height at any load. Ideal for enthusiasts who want dependable stance adjustment without the full 3H feature set, it offers fast fill, smooth ride quality, and straightforward integration with Air Lift struts and bags.
+
+Specifications
+• Part Type: Air Management System (3P)
+• Control: Digital Pressure-Based Controller
+• Valves: Fast-Fill Solenoid System
+• Tank: Application-Matched Air Tank
+• Fitment: Universal Air Suspension Setup
+• Manufacturer: Air Lift Performance
+
+Highlights
+• Pressure-Based Height Control
+• Fast, Reliable Air Management
+• Smooth Ride at Any Height
+• Digital Controller Included
+• Ideal for Stance & Show Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 110,
+    name: "BC Racing BR Series Coilovers",
+    category: "suspension",
+    brand: "bc-racing",
+    price: 1199,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/bc-racing-br-series-coilovers/1.jpg",
+    images: [
+      "/product-media/suspension/bc-racing-br-series-coilovers/1.jpg",
+      "/product-media/suspension/bc-racing-br-series-coilovers/2.jpg",
+      "/product-media/suspension/bc-racing-br-series-coilovers/3.jpg",
+      "/product-media/suspension/bc-racing-br-series-coilovers/4.jpg",
+      "/product-media/suspension/bc-racing-br-series-coilovers/5.jpg",
+    ],
+    description: `BC Racing BR Series Coilovers
+
+BC Racing BR Series coilover kit offering adjustable damping, ride height control, and strong value for street and track use.
+
+The BC Racing BR Series Coilovers feature monotube shock bodies with 30-click damping adjustment and threaded ride height collars for precise lowering. Built for enthusiasts who want coilover performance without a premium price tag, they deliver improved handling, reduced body roll, and a clean, aggressive stance.
+
+Specifications
+• Part Type: Coilover Suspension Kit
+• Series: BR (Street / Track)
+• Damping: 30-Click Rebound Adjustment
+• Ride Height: Threaded Collar Adjustment
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: BC Racing
+
+Highlights
+• 30-Click Damping Adjustment
+• Threaded Ride Height Control
+• Monotube Shock Design
+• Improved Handling & Stance
+• Strong Street/Track Value
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 111,
+    name: "Bilstein B8 Shocks",
+    category: "suspension",
+    brand: "bilstein",
+    price: 799,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/bilstein-b8-shocks/1.jpg",
+    images: [
+      "/product-media/suspension/bilstein-b8-shocks/1.jpg",
+      "/product-media/suspension/bilstein-b8-shocks/2.jpg",
+      "/product-media/suspension/bilstein-b8-shocks/3.jpg",
+      "/product-media/suspension/bilstein-b8-shocks/4.jpg",
+      "/product-media/suspension/bilstein-b8-shocks/5.jpg",
+      "/product-media/suspension/bilstein-b8-shocks/6.jpg",
+    ],
+    description: `Bilstein B8 Shocks
+
+Bilstein B8 performance shocks engineered for sport-tuned damping, improved control, and OEM+ ride quality with lowered springs.
+
+The Bilstein B8 Shocks pair perfectly with performance lowering springs, delivering sport-tuned monotube damping that reduces body roll and improves road holding without a harsh ride. Gas-pressurized and built to Bilstein's exacting standards, they are a trusted upgrade for spirited street driving and weekend track days.
+
+Specifications
+• Part Type: Performance Shock Absorbers (B8)
+• Design: Monotube Gas-Pressurized
+• Tuning: Sport / Performance Damping
+• Pairing: Ideal with Lowering Springs
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Bilstein
+
+Highlights
+• Sport-Tuned Monotube Damping
+• Reduced Body Roll
+• OEM+ Ride Quality
+• Gas-Pressurized Performance
+• Trusted Bilstein Engineering
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 112,
+    name: "Bilstein B16 Coilovers",
+    category: "suspension",
+    brand: "bilstein",
+    price: 2199,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/bilstein-b16-coilovers/1.jpg",
+    images: [
+      "/product-media/suspension/bilstein-b16-coilovers/1.jpg",
+      "/product-media/suspension/bilstein-b16-coilovers/2.jpg",
+      "/product-media/suspension/bilstein-b16-coilovers/3.jpg",
+    ],
+    description: `Bilstein B16 Coilovers
+
+Bilstein B16 ride-height adjustable coilovers with independent compression and rebound damping for precision tuning.
+
+The Bilstein B16 Coilovers combine threaded ride height adjustment with independent compression and rebound damping controls for a truly dialed-in setup. Built on Bilstein's monotube technology, they deliver track-capable handling with the refinement expected from a premium German suspension manufacturer.
+
+Specifications
+• Part Type: Coilover Suspension Kit (B16)
+• Damping: Independent Compression & Rebound
+• Ride Height: Threaded Collar Adjustment
+• Design: Monotube Gas-Pressurized
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Bilstein
+
+Highlights
+• Independent Compression/Rebound Tuning
+• Threaded Ride Height Adjustment
+• Premium Monotube Technology
+• Track-Capable Handling
+• German Engineering Quality
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 113,
+    name: "Camber Arm Kit",
+    category: "suspension",
+    brand: "whiteline",
+    price: 389,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/camber-arm-kit/1.jpg",
+    images: [
+      "/product-media/suspension/camber-arm-kit/1.jpg",
+      "/product-media/suspension/camber-arm-kit/2.jpg",
+      "/product-media/suspension/camber-arm-kit/3.jpg",
+      "/product-media/suspension/camber-arm-kit/4.jpg",
+      "/product-media/suspension/camber-arm-kit/5.jpg",
+      "/product-media/suspension/camber-arm-kit/6.jpg",
+    ],
+    description: `Camber Arm Kit
+
+Adjustable camber arm kit for precise wheel alignment, improved cornering grip, and even tire wear on lowered vehicles.
+
+The Camber Arm Kit allows fine adjustment of rear (or front, application-dependent) camber to restore alignment on lowered or performance suspension setups. Built with durable hardware and precision bushings, it helps maximize contact patch and handling while protecting tires from excessive inner wear.
+
+Specifications
+• Part Type: Adjustable Camber Arms
+• Adjustment: Camber Correction
+• Construction: Reinforced Steel Arms
+• Bushings: Performance-Grade
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Whiteline
+
+Highlights
+• Precise Camber Adjustment
+• Restores Lowered-Vehicle Alignment
+• Improved Cornering Grip
+• Even Tire Wear
+• Direct Bolt-On Fitment
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 114,
+    name: "Complete Air Ride Kit",
+    category: "suspension",
+    brand: "air-lift-performance",
+    price: 3999,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/complete-air-ride-kit/1.jpg",
+    images: [
+      "/product-media/suspension/complete-air-ride-kit/1.jpg",
+      "/product-media/suspension/complete-air-ride-kit/2.jpg",
+      "/product-media/suspension/complete-air-ride-kit/3.jpg",
+    ],
+    description: `Complete Air Ride Kit
+
+Full air ride suspension kit with struts, bags, and management hardware for a complete stance and ride-height solution.
+
+The Complete Air Ride Kit bundles air struts or bags with lines, fittings, and management components for a comprehensive air suspension conversion. Designed for enthusiasts who want a turnkey stance setup, it delivers smooth ride quality, dramatic height adjustment, and show-ready presentation in one package.
+
+Specifications
+• Part Type: Complete Air Ride Kit
+• Includes: Air Struts/Bags + Lines + Hardware
+• Management: Compatible with Air Lift Controllers
+• Ride Height: Full Adjustable Range
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Air Lift Performance
+
+Highlights
+• Complete Air Suspension Package
+• Full Ride Height Adjustment
+• Show-Ready Stance Capability
+• Smooth Daily Driving Ride
+• Turnkey Conversion Solution
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 115,
+    name: "Eibach Pro Kit Springs",
+    category: "suspension",
+    brand: "eibach",
+    price: 349,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/eibach-pro-kit-springs/1.jpg",
+    images: [
+      "/product-media/suspension/eibach-pro-kit-springs/1.jpg",
+      "/product-media/suspension/eibach-pro-kit-springs/2.jpg",
+      "/product-media/suspension/eibach-pro-kit-springs/3.jpg",
+      "/product-media/suspension/eibach-pro-kit-springs/4.jpg",
+    ],
+    description: `Eibach Pro Kit Springs
+
+Eibach Pro-Kit lowering springs for a lower center of gravity, sharper handling, and clean OEM-style ride quality.
+
+The Eibach Pro Kit Springs deliver a moderate drop with progressive spring rates that improve handling and reduce body roll while maintaining everyday comfort. Engineered from high-tensile steel and tested on road and track, they are one of the most popular lowering upgrades for street performance builds.
+
+Specifications
+• Part Type: Lowering Spring Kit (Pro-Kit)
+• Drop: Application-Specific Moderate Lowering
+• Spring Rate: Progressive Performance
+• Material: High-Tensile Steel
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Eibach
+
+Highlights
+• Moderate Performance Lowering
+• Progressive Spring Rates
+• Improved Handling & Stance
+• OEM-Style Ride Comfort
+• Trusted Eibach Engineering
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 116,
+    name: "Fortune Auto 500 Coilovers",
+    category: "suspension",
+    brand: "fortune-auto",
+    price: 1799,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/fortune-auto-500-coilovers/1.jpg",
+    images: [
+      "/product-media/suspension/fortune-auto-500-coilovers/1.jpg",
+      "/product-media/suspension/fortune-auto-500-coilovers/2.jpg",
+      "/product-media/suspension/fortune-auto-500-coilovers/3.jpg",
+      "/product-media/suspension/fortune-auto-500-coilovers/4.jpg",
+      "/product-media/suspension/fortune-auto-500-coilovers/5.jpg",
+      "/product-media/suspension/fortune-auto-500-coilovers/6.jpg",
+    ],
+    description: `Fortune Auto 500 Coilovers
+
+Fortune Auto 500 Series coilovers with customizable spring rates and robust damping for street and track performance.
+
+The Fortune Auto 500 Coilovers feature hand-built shock bodies with adjustable damping and custom spring rate options tailored to your driving style. Known for durability and rebuildability, they deliver precise handling, confident body control, and a setup that can grow with your build from street to track.
+
+Specifications
+• Part Type: Coilover Suspension Kit (500 Series)
+• Damping: Adjustable Rebound
+• Springs: Custom Rate Options Available
+• Ride Height: Threaded Collar Adjustment
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Fortune Auto
+
+Highlights
+• Custom Spring Rate Options
+• Hand-Built Shock Bodies
+• Rebuildable & Durable Design
+• Street & Track Performance
+• Adjustable Damping Control
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 117,
+    name: "KW Variant 3 Coilovers",
+    category: "suspension",
+    brand: "kw-suspension",
+    price: 2799,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/kw-variant-3-coilovers/1.jpg",
+    images: [
+      "/product-media/suspension/kw-variant-3-coilovers/1.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/2.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/3.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/4.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/5.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/6.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/7.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/8.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/9.jpg",
+      "/product-media/suspension/kw-variant-3-coilovers/10.jpg",
+    ],
+    description: `KW Variant 3 Coilovers
+
+KW Variant 3 coilovers with independent compression and rebound adjustment for professional-grade suspension tuning.
+
+The KW Variant 3 Coilovers represent KW's flagship street and track solution, combining stainless steel bodies with independent compression and rebound damping adjustment. TÜV-tested and race-proven, they deliver unmatched tuning flexibility, precise handling, and the build quality expected from a world-leading suspension manufacturer.
+
+Specifications
+• Part Type: Coilover Suspension Kit (Variant 3)
+• Damping: Independent Compression & Rebound (16-Click)
+• Ride Height: Threaded Collar Adjustment
+• Body: Stainless Steel Struts
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: KW Suspension
+
+Highlights
+• Independent Compression/Rebound Tuning
+• TÜV-Tested Quality
+• Stainless Steel Strut Bodies
+• Race-Proven KW Engineering
+• Professional-Grade Suspension Tuning
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 118,
+    name: "Suspension Rebuild Kit",
+    category: "suspension",
+    brand: "universal",
+    price: 449,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/suspension-rebuild-kit/1.jpg",
+    images: [
+      "/product-media/suspension/suspension-rebuild-kit/1.jpg",
+      "/product-media/suspension/suspension-rebuild-kit/2.jpg",
+      "/product-media/suspension/suspension-rebuild-kit/3.jpg",
+      "/product-media/suspension/suspension-rebuild-kit/4.jpg",
+    ],
+    description: `Suspension Rebuild Kit
+
+Complete suspension rebuild kit with bushings, hardware, and wear components to restore factory-tight handling.
+
+The Suspension Rebuild Kit includes the bushings, mounts, and hardware needed to refresh tired suspension components and eliminate slop. Ideal for high-mileage vehicles or project cars, it restores precise steering response, stable cornering, and the solid feel of a properly maintained chassis.
+
+Specifications
+• Part Type: Suspension Rebuild Kit
+• Includes: Bushings, Mounts & Hardware
+• Application: Chassis Refresh / Restoration
+• Compatibility: Application-Specific (Confirm at Checkout)
+• Condition: Brand-New Components
+• Manufacturer: Universal
+
+Highlights
+• Eliminates Suspension Slop
+• Restores Precise Handling
+• Complete Bushing & Hardware Set
+• Ideal for High-Mileage Refresh
+• Cost-Effective Chassis Restoration
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 119,
+    name: "Tein Flex Z Coilovers",
+    category: "suspension",
+    brand: "tein",
+    price: 1099,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/tein-flex-z-coilovers/1.jpg",
+    images: [
+      "/product-media/suspension/tein-flex-z-coilovers/1.jpg",
+      "/product-media/suspension/tein-flex-z-coilovers/2.jpg",
+      "/product-media/suspension/tein-flex-z-coilovers/3.jpg",
+      "/product-media/suspension/tein-flex-z-coilovers/4.jpg",
+    ],
+    description: `Tein Flex Z Coilovers
+
+Tein Flex Z coilovers offering 16-way damping adjustment and ride height control for balanced street performance.
+
+The Tein Flex Z Coilovers feature full-length ride height adjustment with 16-way damping control in a package designed for daily driving and weekend spirited use. Built with zinc-coated bodies and EDFC-compatible options on select applications, they deliver Tein's renowned balance of comfort, handling, and value.
+
+Specifications
+• Part Type: Coilover Suspension Kit (Flex Z)
+• Damping: 16-Way Rebound Adjustment
+• Ride Height: Full-Length Threaded Adjustment
+• Body: Zinc-Coated Shock Bodies
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Tein
+
+Highlights
+• 16-Way Damping Adjustment
+• Full-Length Ride Height Control
+• Balanced Street Performance
+• Zinc-Coated Durable Bodies
+• Tein Quality & Value
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 120,
+    name: "Whiteline Sway Bar Kit",
+    category: "suspension",
+    brand: "whiteline",
+    price: 549,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/suspension/whiteline-sway-bar-kit/1.jpg",
+    images: [
+      "/product-media/suspension/whiteline-sway-bar-kit/1.jpg",
+      "/product-media/suspension/whiteline-sway-bar-kit/2.jpg",
+      "/product-media/suspension/whiteline-sway-bar-kit/3.jpg",
+      "/product-media/suspension/whiteline-sway-bar-kit/4.jpg",
+      "/product-media/suspension/whiteline-sway-bar-kit/5.jpg",
+    ],
+    description: `Whiteline Sway Bar Kit
+
+Whiteline sway bar kit reducing body roll, sharpening turn-in, and improving overall chassis balance.
+
+The Whiteline Sway Bar Kit upgrades factory anti-roll bars with thicker, performance-tuned bars and heavy-duty end links for flatter cornering and faster turn-in response. Engineered as a direct bolt-on handling upgrade, it is one of the most effective modifications for reducing understeer and improving overall chassis balance.
+
+Specifications
+• Part Type: Anti-Roll Bar Kit
+• Construction: Upgraded Thickness Sway Bars
+• End Links: Heavy-Duty Performance Links
+• Bushings: Performance Polyurethane
+• Fitment: Application-Specific (Confirm at Checkout)
+• Manufacturer: Whiteline
+
+Highlights
+• Reduced Body Roll
+• Sharper Turn-In Response
+• Improved Chassis Balance
+• Heavy-Duty End Links Included
+• Effective Bolt-On Handling Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
   ...aftermarketProducts,
 ];
 

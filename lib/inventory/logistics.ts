@@ -1121,4 +1121,196 @@ export const productLogistics: Record<number, ProductLogistics> = {
     freightNotes: KIT_FREIGHT,
     warrantyTerms: PARTS_ONLY,
   },
+
+  /* =====================================================
+     SUSPENSION
+  ===================================================== */
+  107: {
+    partNumber: "Adjustable Front Control Arm",
+    fitment:
+      "Application-specific adjustable front control arms — confirm your vehicle and lowering setup at checkout.",
+    included: [
+      "Adjustable front control arms",
+      "Performance bushings",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  108: {
+    partNumber: "Air Lift 3H Management Kit",
+    fitment:
+      "Universal air management for Air Lift air suspension — confirm tank size and line routing at checkout.",
+    included: [
+      "3H electronic controller",
+      "Dual-path valve manifold",
+      "Wiring harness",
+      "Pressure sensors",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  109: {
+    partNumber: "Air Lift 3P Management Kit",
+    fitment:
+      "Universal pressure-based air management — confirm tank size and line routing at checkout.",
+    included: [
+      "3P digital controller",
+      "Solenoid valve block",
+      "Wiring harness",
+      "Pressure sensors",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  110: {
+    partNumber: "BC Racing BR Series Coilovers",
+    fitment:
+      "Application-specific coilover kit — confirm your vehicle and year at checkout.",
+    included: [
+      "Front & rear coilover assemblies",
+      "Spring perches & collars",
+      "Damping adjustment knobs",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  111: {
+    partNumber: "Bilstein B8 Performance Shocks",
+    fitment:
+      "Application-specific B8 shocks — confirm your vehicle and spring setup at checkout.",
+    included: [
+      "B8 monotube shock absorbers",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  112: {
+    partNumber: "Bilstein B16 Coilover Kit",
+    fitment:
+      "Application-specific B16 coilover kit — confirm your vehicle and year at checkout.",
+    included: [
+      "B16 coilover assemblies",
+      "Compression & rebound adjusters",
+      "Spring perches & collars",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  113: {
+    partNumber: "Camber Arm Kit",
+    fitment:
+      "Application-specific camber arms — confirm your vehicle and alignment goals at checkout.",
+    included: [
+      "Adjustable camber arms",
+      "Performance bushings",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  114: {
+    partNumber: "Complete Air Ride Kit",
+    fitment:
+      "Application-specific air ride kit — confirm your vehicle and management system at checkout.",
+    included: [
+      "Air struts or air bags",
+      "Air lines & fittings",
+      "Mounting hardware",
+      "Basic plumbing components",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: KIT_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  115: {
+    partNumber: "Eibach Pro-Kit Springs",
+    fitment:
+      "Application-specific lowering springs — confirm your vehicle and year at checkout.",
+    included: [
+      "Front & rear lowering springs",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  116: {
+    partNumber: "Fortune Auto 500 Coilovers",
+    fitment:
+      "Application-specific 500 Series coilovers — confirm vehicle and spring rate at checkout.",
+    included: [
+      "Coilover assemblies",
+      "Custom-rate springs",
+      "Damping adjusters",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  117: {
+    partNumber: "KW Variant 3 Coilovers",
+    fitment:
+      "Application-specific KW V3 coilovers — confirm your vehicle and year at checkout.",
+    included: [
+      "V3 coilover assemblies",
+      "Compression & rebound adjusters",
+      "Spring perches & collars",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  118: {
+    partNumber: "Suspension Rebuild Kit",
+    fitment:
+      "Application-specific rebuild kit — confirm your vehicle and worn components at checkout.",
+    included: [
+      "Control arm bushings",
+      "Suspension mounts",
+      "Hardware & fasteners",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  119: {
+    partNumber: "Tein Flex Z Coilovers",
+    fitment:
+      "Application-specific Flex Z coilovers — confirm your vehicle and year at checkout.",
+    included: [
+      "Flex Z coilover assemblies",
+      "16-way damping adjusters",
+      "Spring perches & collars",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  120: {
+    partNumber: "Whiteline Sway Bar Kit",
+    fitment:
+      "Application-specific sway bar kit — confirm your vehicle and year at checkout.",
+    included: [
+      "Upgraded sway bar(s)",
+      "Heavy-duty end links",
+      "Performance bushings",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
 };

@@ -49,6 +49,17 @@ export const brands: Brand[] = [
   { slug: "ebc-rotors-pads", name: "EBC Rotors & Pads", category: "brakes" },
   { slug: "ate-oem-kits", name: "ATE OEM Kits", category: "brakes" },
 
+  // Suspension
+  { slug: "whiteline", name: "Whiteline", category: "suspension" },
+  { slug: "air-lift-performance", name: "Air Lift Performance", category: "suspension" },
+  { slug: "bc-racing", name: "BC Racing", category: "suspension" },
+  { slug: "bilstein", name: "Bilstein", category: "suspension" },
+  { slug: "eibach", name: "Eibach", category: "suspension" },
+  { slug: "fortune-auto", name: "Fortune Auto", category: "suspension" },
+  { slug: "kw-suspension", name: "KW Suspension", category: "suspension" },
+  { slug: "tein", name: "Tein", category: "suspension" },
+  { slug: "universal", name: "Universal", category: "suspension" },
+
   // Aftermarket (vehicle brands)
   { slug: "toyota", name: "Toyota", category: "aftermarket" },
   { slug: "honda", name: "Honda", category: "aftermarket" },
