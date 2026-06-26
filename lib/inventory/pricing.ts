@@ -2,9 +2,9 @@ import type { Product } from "./types";
 
 /**
  * Public list prices sit between full MSRP and the previous discount tier.
- * ~72% of catalog MSRP, rounded to natural price points.
+ * ~79% of catalog MSRP, rounded to natural price points.
  */
-export const PUBLIC_PRICE_RATIO = 0.72;
+export const PUBLIC_PRICE_RATIO = 0.79;
 
 export function roundListPrice(amount: number): number {
   if (amount <= 0) return 0;
