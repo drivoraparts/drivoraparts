@@ -11,6 +11,7 @@
 import type { Product } from "./types";
 import { aftermarketProducts } from "./aftermarket-products";
 import { electronicsProducts } from "./electronics-products";
+import { lightingProducts } from "./lighting-products";
 import { applyPublicPrices } from "./pricing";
 
 const productCatalog: Product[] = [
@@ -4209,6 +4210,7 @@ Shipping
 Worldwide Shipping Available`,
   },
   ...electronicsProducts,
+  ...lightingProducts,
   ...aftermarketProducts,
 ];
 

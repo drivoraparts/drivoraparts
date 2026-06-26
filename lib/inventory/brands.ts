@@ -68,6 +68,20 @@ export const brands: Brand[] = [
   { slug: "msd", name: "MSD", category: "electronics" },
   { slug: "universal", name: "Universal", category: "electronics" },
 
+  // Lighting
+  { slug: "alpharex", name: "AlphaRex", category: "lighting" },
+  { slug: "baja-designs", name: "Baja Designs", category: "lighting" },
+  { slug: "diode-dynamics", name: "Diode Dynamics", category: "lighting" },
+  { slug: "govee", name: "Govee", category: "lighting" },
+  { slug: "morimoto", name: "Morimoto", category: "lighting" },
+  { slug: "opt7", name: "OPT7", category: "lighting" },
+  { slug: "oracle", name: "Oracle Lighting", category: "lighting" },
+  { slug: "osram", name: "Osram", category: "lighting" },
+  { slug: "philips", name: "Philips", category: "lighting" },
+  { slug: "rigid-industries", name: "Rigid Industries", category: "lighting" },
+  { slug: "xk-glow", name: "XK Glow", category: "lighting" },
+  { slug: "universal", name: "Universal", category: "lighting" },
+
   // Aftermarket (vehicle brands)
   { slug: "toyota", name: "Toyota", category: "aftermarket" },
   { slug: "honda", name: "Honda", category: "aftermarket" },

@@ -1513,4 +1513,201 @@ export const productLogistics: Record<number, ProductLogistics> = {
     freightNotes: PARCEL_FREIGHT,
     warrantyTerms: PARTS_ONLY,
   },
+
+  /* =====================================================
+     LIGHTING
+  ===================================================== */
+  135: {
+    partNumber: "AlphaRex NOVA LED Headlights",
+    fitment:
+      "Application-specific headlight assemblies — confirm your vehicle and year at checkout.",
+    included: [
+      "Left & right LED headlight assemblies",
+      "Wiring adapters (where applicable)",
+      "Installation hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  136: {
+    partNumber: "Baja Designs OnX6 LED Light Bar",
+    fitment:
+      "Universal light bar — confirm length, beam pattern, and mounting bracket at checkout.",
+    included: [
+      "OnX6 LED light bar",
+      "Wiring harness",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  137: {
+    partNumber: "Baja Designs Squadron Pro",
+    fitment:
+      "Universal auxiliary pod — confirm beam pattern and mount at checkout.",
+    included: [
+      "Squadron Pro LED pod(s)",
+      "Wiring harness",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  138: {
+    partNumber: "Diode Dynamics SS3 Fog Lights",
+    fitment:
+      "Application-specific fog light kit — confirm your vehicle at checkout.",
+    included: [
+      "SS3 LED fog light units",
+      "Application-specific brackets",
+      "Wiring harness",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  139: {
+    partNumber: "Govee RGB Interior Lights",
+    fitment:
+      "Universal interior ambient kit — confirm cabin layout at checkout.",
+    included: [
+      "RGB LED strips",
+      "Controller & power adapter",
+      "Mounting clips & adhesive",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  140: {
+    partNumber: "LED Side Marker Lights",
+    fitment:
+      "Application-specific side markers — confirm your vehicle at checkout.",
+    included: [
+      "LED side marker light set",
+      "Wiring adapters (where applicable)",
+      "Installation hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  141: {
+    partNumber: "Morimoto XB LED Headlights",
+    fitment:
+      "Application-specific XB headlight assemblies — confirm your vehicle at checkout.",
+    included: [
+      "Left & right XB LED headlight assemblies",
+      "Wiring adapters (where applicable)",
+      "Installation hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  142: {
+    partNumber: "Morimoto XB LED Tail Lights",
+    fitment:
+      "Application-specific XB tail light assemblies — confirm your vehicle at checkout.",
+    included: [
+      "Left & right XB LED tail light assemblies",
+      "Wiring adapters (where applicable)",
+      "Installation hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  143: {
+    partNumber: "OPT7 Aura Underglow Kit",
+    fitment:
+      "Universal underbody kit — confirm vehicle size and mounting points at checkout.",
+    included: [
+      "RGB underglow LED strips",
+      "Control module & wiring",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  144: {
+    partNumber: "Oracle Halo Headlights",
+    fitment:
+      "Application-specific halo headlight upgrade — confirm your vehicle at checkout.",
+    included: [
+      "Halo headlight assembly or upgrade kit",
+      "Wiring & controllers (where applicable)",
+      "Installation hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  145: {
+    partNumber: "Osram Night Breaker Laser",
+    fitment:
+      "Standard halogen bulb sizes — confirm socket type and application at checkout.",
+    included: [
+      "Night Breaker Laser bulb set",
+      "Installation guide",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  146: {
+    partNumber: "Philips Ultinon Pro9000",
+    fitment:
+      "Compatible LED bulb replacement — confirm housing type and socket at checkout.",
+    included: [
+      "Ultinon Pro9000 LED bulb set",
+      "Installation guide",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  147: {
+    partNumber: "Rigid Industries E-Series Light Bar",
+    fitment:
+      "Universal E-Series light bar — confirm length, pattern, and bracket at checkout.",
+    included: [
+      "E-Series LED light bar",
+      "Wiring harness",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  148: {
+    partNumber: "Sequential LED Turn Signal Kit",
+    fitment:
+      "Application-specific sequential kit — confirm your vehicle and lamp type at checkout.",
+    included: [
+      "Sequential turn signal module",
+      "Wiring harness & adapters",
+      "Installation instructions",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  149: {
+    partNumber: "XK Glow Rock Lights",
+    fitment:
+      "Universal rock light kit — confirm pod count and mounting layout at checkout.",
+    included: [
+      "RGB rock light pods",
+      "Control module & wiring",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
 };

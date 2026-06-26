@@ -2,18 +2,32 @@ import fs from "node:fs";
 import path from "node:path";
 import { execSync } from "node:child_process";
 
+/**
+ * Removes tracked media files that are no longer referenced in code.
+ *
+ * IMPORTANT: Never run `git clean -fd -- public/product-media` as part of
+ * cleanup. That permanently deletes ALL untracked folders (including new
+ * category media like electronics/) and bypasses the Recycle Bin.
+ */
 const root = process.cwd();
 
 function readReferencedFromProducts() {
-  const src = fs.readFileSync(
-    path.join(root, "lib/inventory/products.ts"),
-    "utf8"
-  );
   const referenced = new Set(["/product-media/avatars/default.svg"]);
-  for (const match of src.matchAll(
-    new RegExp('"(/product-media/[^"]+)"', "g")
-  )) {
-    referenced.add(match[1]);
+  const productFiles = fs
+    .readdirSync(path.join(root, "lib/inventory"))
+    .filter(
+      (name) =>
+        name === "products.ts" ||
+        name.endsWith("-products.ts")
+    );
+
+  for (const file of productFiles) {
+    const src = fs.readFileSync(path.join(root, "lib/inventory", file), "utf8");
+    for (const match of src.matchAll(
+      new RegExp('"(/product-media/[^"]+)"', "g")
+    )) {
+      referenced.add(match[1]);
+    }
   }
   return referenced;
 }
@@ -74,8 +88,12 @@ for (const file of unreferencedTracked) {
 
 removeEmptyDirs(path.join(root, "public/product-media"));
 
+execSync('git add -u "public/product-media" "app/product" scripts', {
+  stdio: "inherit",
+  shell: true,
+});
 execSync(
-  'git add -A "public/product-media" "app/product" "app/(storefront)/catalog" scripts',
+  'git add -u "app/(storefront)/catalog/all/page.tsx.disabled" "app/(storefront)/catalog/layout.tsx.disabled" "app/(storefront)/catalog/page.tsx.disabled"',
   { stdio: "inherit", shell: true }
 );
 

@@ -34,7 +34,8 @@ export default async function Page({ params }: any) {
         slug !== "transmission" &&
         slug !== "turbocharger" &&
         slug !== "suspension" &&
-        slug !== "electronics"
+        slug !== "electronics" &&
+        slug !== "lighting"
       }
     />
   );
