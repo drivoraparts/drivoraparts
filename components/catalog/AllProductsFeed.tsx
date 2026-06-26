@@ -11,6 +11,12 @@ import {
   slugify,
 } from "@/lib/inventory";
 import AllProductsGridCard from "./AllProductsGridCard";
+import CatalogFilterSelect from "./CatalogFilterSelect";
+import {
+  PRICE_FILTER_OPTIONS,
+  matchesPriceFilter,
+  type PriceFilterValue,
+} from "@/lib/catalog/price-filters";
 import { engineTree } from "@/data/engine";
 
 const allProducts = getAllProducts();
@@ -31,7 +37,7 @@ export default function AllProductsFeed() {
   const [query, setQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
   const [brandFilter, setBrandFilter] = useState("");
-  const [priceFilter, setPriceFilter] = useState("all");
+  const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
 
   const filteredBrands = useMemo(
     () =>
@@ -39,6 +45,31 @@ export default function AllProductsFeed() {
         ? brands.filter((b) => b.category === categoryFilter)
         : brands,
     [categoryFilter]
+  );
+
+  const categoryOptions = useMemo(
+    () => [
+      { value: "", label: "All Categories" },
+      ...categories.map((cat) => ({ value: cat.slug, label: cat.name })),
+    ],
+    []
+  );
+
+  const brandOptions = useMemo(
+    () => [
+      { value: "", label: "All Brands" },
+      ...filteredBrands.map((brand) => ({
+        value: brand.slug,
+        label: brand.name,
+      })),
+    ],
+    [filteredBrands]
+  );
+
+  const priceOptions = useMemo(
+    () =>
+      PRICE_FILTER_OPTIONS.map(({ value, label }) => ({ value, label })),
+    []
   );
 
   const filtered = useMemo(() => {
@@ -60,11 +91,7 @@ export default function AllProductsFeed() {
         return false;
       }
 
-      if (priceFilter === "under-1000" && product.price >= 1000) {
-        return false;
-      }
-
-      if (priceFilter === "over-1000" && product.price < 1000) {
+      if (!matchesPriceFilter(product.price, priceFilter)) {
         return false;
       }
 
@@ -92,45 +119,30 @@ export default function AllProductsFeed() {
           className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:border-red-500 focus:outline-none"
         />
 
-        <div className="grid grid-cols-3 gap-1.5 sm:flex sm:flex-wrap sm:gap-3">
-          <select
+        <div className="grid grid-cols-1 gap-1.5 min-[420px]:grid-cols-3 sm:flex sm:flex-wrap sm:gap-3">
+          <CatalogFilterSelect
+            ariaLabel="Filter by category"
             value={categoryFilter}
-            onChange={(e) => {
-              setCategoryFilter(e.target.value);
+            onChange={(value) => {
+              setCategoryFilter(value);
               setBrandFilter("");
             }}
-            className="min-w-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-[11px] text-white focus:border-red-500 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
-          >
-            <option value="">All Categories</option>
-            {categories.map((cat) => (
-              <option key={cat.slug} value={cat.slug}>
-                {cat.name}
-              </option>
-            ))}
-          </select>
+            options={categoryOptions}
+          />
 
-          <select
+          <CatalogFilterSelect
+            ariaLabel="Filter by brand"
             value={brandFilter}
-            onChange={(e) => setBrandFilter(e.target.value)}
-            className="min-w-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-[11px] text-white focus:border-red-500 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
-          >
-            <option value="">All Brands</option>
-            {filteredBrands.map((brand) => (
-              <option key={brand.slug} value={brand.slug}>
-                {brand.name}
-              </option>
-            ))}
-          </select>
+            onChange={setBrandFilter}
+            options={brandOptions}
+          />
 
-          <select
+          <CatalogFilterSelect
+            ariaLabel="Filter by budget"
             value={priceFilter}
-            onChange={(e) => setPriceFilter(e.target.value)}
-            className="min-w-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-[11px] text-white focus:border-red-500 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
-          >
-            <option value="all">All Prices</option>
-            <option value="under-1000">Under $1k</option>
-            <option value="over-1000">$1k+</option>
-          </select>
+            onChange={(value) => setPriceFilter(value as PriceFilterValue)}
+            options={priceOptions}
+          />
         </div>
       </div>
 
