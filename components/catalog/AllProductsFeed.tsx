@@ -7,11 +7,8 @@ import {
   getBrands,
   getBrandBySlug,
   getCategory,
-  routes,
 } from "@/lib/inventory";
-import CatalogCard from "./CatalogCard";
-import Price from "@/components/currency/Price";
-import TranslatedText from "@/components/i18n/TranslatedText";
+import CatalogProductCard from "./CatalogProductCard";
 import { engineTree } from "@/data/engine";
 import { slugify } from "@/lib/inventory";
 
@@ -141,49 +138,20 @@ export default function AllProductsFeed() {
       {filtered.length === 0 ? (
         <p className="text-gray-500">No products match your search.</p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {filtered.map((product) => {
-            const brandName =
-              getBrandBySlug(product.brand)?.name ?? product.brand;
-            const categoryName =
-              getCategory(product.category)?.name ?? product.category;
-            const image = product.thumbnail ?? product.image;
-
-            return (
-              <CatalogCard
-                key={product.id}
-                href={routes.product(product.id)}
-              >
-                {image ? (
-                  <img
-                    src={image}
-                    alt={product.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-40 w-full object-cover rounded-lg"
-                  />
-                ) : (
-                  <div className="h-40 w-full rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-xs text-gray-500">
-                    No image
-                  </div>
-                )}
-                <h3 className="mt-3 font-semibold">
-                  <TranslatedText as="span">{product.name}</TranslatedText>
-                </h3>
-                <p className="text-sm text-red-500 font-bold">
-                  <Price usd={product.price} />
-                </p>
-                <div className="mt-2 flex flex-wrap gap-2 text-xs text-gray-400">
-                  <span className="rounded border border-white/10 px-2 py-0.5">
-                    {categoryName}
-                  </span>
-                  <span className="rounded border border-white/10 px-2 py-0.5">
-                    {brandName}
-                  </span>
-                </div>
-              </CatalogCard>
-            );
-          })}
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-4">
+          {filtered.map((product) => (
+            <CatalogProductCard
+              key={product.id}
+              product={{
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                thumbnail: product.thumbnail ?? product.image ?? "",
+                category: product.category,
+                brand: product.brand,
+              }}
+            />
+          ))}
         </div>
       )}
     </div>

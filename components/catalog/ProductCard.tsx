@@ -3,11 +3,15 @@
 import Link from "next/link";
 import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
+import AddToCartButton, {
+  type AddToCartProduct,
+} from "@/app/components/AddToCartButton";
 
 export type Product = {
   id: number;
   name: string;
   category: string;
+  brand?: string;
   price: number;
   condition: string;
   location: string;
@@ -16,83 +20,61 @@ export type Product = {
 };
 
 export default function ProductCard({ product }: { product: Product }) {
-  return (
-    <div
-      className="
-        group relative overflow-hidden rounded-xl
-        border border-white/10 bg-white/5
-        hover:border-red-500/40 transition-all duration-300
-      "
-    >
-      {/* IMAGE */}
-      <div className="relative h-[180px] overflow-hidden">
-        <img
-          src={product.thumbnail}
-          alt={product.name}
-          loading="lazy"
-          decoding="async"
-          className="
-            w-full h-full object-cover
-            group-hover:scale-105 transition-transform duration-500
-          "
-        />
+  const cartProduct: AddToCartProduct = {
+    id: product.id,
+    name: product.name,
+    price: product.price,
+    image: product.thumbnail || "/product-media/avatars/default.svg",
+    category: product.category,
+    brand: product.brand,
+  };
 
-        {/* overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+  return (
+    <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-red-500/40">
+      <div className="relative h-[180px] overflow-hidden">
+        <Link href={`/product/${product.id}`}>
+          <img
+            src={product.thumbnail}
+            alt={product.name}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </Link>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
       </div>
 
-      {/* CONTENT */}
       <div className="p-4">
         <h3 className="text-sm font-semibold text-white">
           <TranslatedText as="span">{product.name}</TranslatedText>
         </h3>
 
-        <p className="text-xs text-gray-400 mt-1">
-          {product.condition}
-        </p>
+        <p className="mt-1 text-xs text-gray-400">{product.condition}</p>
+        <p className="mt-1 text-xs text-gray-500">{product.location}</p>
 
-        <p className="text-xs text-gray-500 mt-1">
-          {product.location}
-        </p>
-
-        {/* PRICE + CATEGORY */}
         <div className="mt-3 flex items-center justify-between">
-          <span className="text-red-500 font-bold">
+          <span className="font-bold text-red-500">
             <Price usd={product.price} />
           </span>
-
-          <span className="text-[10px] text-gray-400 uppercase">
+          <span className="text-[10px] uppercase text-gray-400">
             {product.category}
           </span>
         </div>
 
-        {/* ACTIONS */}
         <div className="mt-4 flex gap-2">
           <Link
             href={`/product/${product.id}`}
-            className="
-              flex-1 text-center py-2 text-xs font-semibold
-              bg-red-600 hover:bg-red-700
-              rounded-lg transition
-            "
+            className="flex-1 rounded-lg border border-white/15 py-2 text-center text-xs font-semibold transition hover:bg-white/10"
           >
             View Item
           </Link>
-
-          <button
-            className="
-              px-3 py-2 text-xs
-              bg-white/10 hover:bg-white/20
-              rounded-lg transition
-            "
-          >
-            ♥
-          </button>
+          <div className="flex-1 min-w-0">
+            <AddToCartButton product={cartProduct} compact />
+          </div>
         </div>
       </div>
 
-      {/* GLOW */}
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-[radial-gradient(circle_at_top_left,_rgba(255,0,0,0.12),transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,0,0,0.12),transparent_60%)] opacity-0 transition duration-500 group-hover:opacity-100" />
     </div>
   );
 }

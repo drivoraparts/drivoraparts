@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Price from "@/components/currency/Price";
@@ -90,15 +89,14 @@ export default function SuccessStatus({ orderId }: { orderId: string | null }) {
   const totalLabel = view === "paid" ? "Total Paid" : "Order Total";
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-md flex-col px-6 py-12 text-white">
+    <main className="mx-auto flex min-h-screen w-full max-w-md flex-col overflow-x-hidden px-4 py-10 text-white sm:px-6 sm:py-12">
       <div className="flex flex-col items-center gap-3 py-6 text-center">
-        <Image
+        <img
           src="/brand/drivora-logo.png"
           alt="DrivoraParts"
           width={40}
           height={40}
-          priority
-          className="rounded-lg"
+          className="h-10 w-10 object-contain"
         />
         <div>
           <h1 className="text-lg font-semibold text-white">{heading}</h1>

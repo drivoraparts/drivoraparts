@@ -20,12 +20,13 @@ export async function GET(req: Request) {
   }
 
   const stock = await getInventory(productId);
+  const catalogInStock = product.stock !== false;
 
   return NextResponse.json(
     {
       ...product,
       stock,
-      inStock: stock > 0,
+      inStock: stock > 0 || catalogInStock,
     },
     {
       headers: {

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 import { trackEvent } from "@/lib/analytics/client";
+import { productHasStock } from "@/lib/stock";
 import { showToast } from "@/lib/store/toastStore";
 
 export type AddToCartProduct = {
@@ -17,25 +18,37 @@ export type AddToCartProduct = {
 export default function AddToCartButton({
   product,
   quantity = 1,
+  compact = false,
 }: {
   product: AddToCartProduct;
   quantity?: number;
+  compact?: boolean;
 }) {
   const [loading, setLoading] = useState(false);
   const { addToCart, cart } = useCart();
 
   const handleAdd = async () => {
-    const currentQty = cart.find((i) => i.id === product.id)?.quantity ?? 0;
+    const neededQty = cart.find((i) => i.id === product.id)?.quantity ?? 0;
+    const totalQty = neededQty + quantity;
 
     setLoading(true);
 
     try {
-      const res = await fetch(`/api/product?productId=${product.id}`);
-      const data = await res.json().catch(() => null);
+      let canAdd = productHasStock(product.id, totalQty);
 
-      if (!res.ok || !data?.inStock || data.stock < currentQty + quantity) {
+      try {
+        const res = await fetch(`/api/product?productId=${product.id}`);
+        const data = await res.json().catch(() => null);
+
+        if (res.ok && data) {
+          canAdd = Boolean(data.inStock) && Number(data.stock) >= totalQty;
+        }
+      } catch {
+        // Use catalog stock when the API is unavailable.
+      }
+
+      if (!canAdd) {
         showToast("Out of stock");
-        setLoading(false);
         return;
       }
 
@@ -48,7 +61,7 @@ export default function AddToCartButton({
       });
       showToast("Added to cart");
     } catch {
-      showToast("Unable to verify stock");
+      showToast("Unable to add to cart");
     } finally {
       setTimeout(() => setLoading(false), 300);
     }
@@ -56,20 +69,16 @@ export default function AddToCartButton({
 
   return (
     <button
+      type="button"
       onClick={handleAdd}
       disabled={loading}
-      style={{
-        width: "100%",
-        padding: "12px",
-        background: "#e60000",
-        color: "white",
-        border: "none",
-        borderRadius: "6px",
-        fontWeight: "bold",
-        cursor: "pointer",
-      }}
+      className={
+        compact
+          ? "w-full rounded-lg bg-red-600 px-2 py-2 text-xs font-semibold text-white transition hover:bg-red-500 disabled:opacity-60"
+          : "w-full rounded-md bg-red-600 px-3 py-3 text-sm font-bold text-white transition hover:bg-red-500 disabled:opacity-60"
+      }
     >
-      {loading ? "Adding..." : "Add to Cart"}
+      {loading ? "Adding..." : compact ? "Add" : "Add to Cart"}
     </button>
   );
 }

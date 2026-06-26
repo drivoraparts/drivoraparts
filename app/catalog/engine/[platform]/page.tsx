@@ -2,9 +2,7 @@ import { notFound } from "next/navigation";
 import { getEnginePlatform, engineTree, getPlatformSlug } from "@/data/engine";
 import { store } from "@/data/store";
 import PageHeading from "@/components/catalog/PageHeading";
-import CatalogCard from "@/components/catalog/CatalogCard";
-import Price from "@/components/currency/Price";
-import TranslatedText from "@/components/i18n/TranslatedText";
+import CatalogProductCard from "@/components/catalog/CatalogProductCard";
 
 export const dynamic = "force-static";
 
@@ -36,23 +34,19 @@ export default async function Page({ params }: any) {
       {products.length === 0 ? (
         <p className="text-gray-500">No products for this platform yet.</p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-4">
           {products.map((product) => (
-            <CatalogCard key={product.id} href={`/product/${product.id}`}>
-              <img
-                src={product.thumbnail}
-                alt={product.name}
-                loading="lazy"
-                decoding="async"
-                className="h-40 w-full object-cover rounded-lg"
-              />
-              <h3 className="mt-3 font-semibold">
-                <TranslatedText as="span">{product.name}</TranslatedText>
-              </h3>
-              <p className="text-sm text-red-500 font-bold">
-                <Price usd={product.price} />
-              </p>
-            </CatalogCard>
+            <CatalogProductCard
+              key={product.id}
+              product={{
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                thumbnail: product.thumbnail,
+                category: "engine",
+                brand: product.brand,
+              }}
+            />
           ))}
         </div>
       )}

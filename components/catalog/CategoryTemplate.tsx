@@ -1,7 +1,6 @@
 import PageHeading from "./PageHeading";
 import CatalogCard from "./CatalogCard";
-import Price from "@/components/currency/Price";
-import TranslatedText from "@/components/i18n/TranslatedText";
+import CatalogProductCard from "./CatalogProductCard";
 
 /* =========================================================
    UI LAYER — PURE PRESENTATIONAL TEMPLATE (SYSTEM A)
@@ -16,6 +15,8 @@ type TemplateProduct = {
   name: string;
   price: number;
   thumbnail: string;
+  category: string;
+  brand?: string;
 };
 
 type TemplateBrand = {
@@ -65,23 +66,9 @@ export default function CategoryTemplate({
           {products.length === 0 ? (
             <p className="text-gray-500">No products in this category yet.</p>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-4">
               {products.map((product) => (
-                <CatalogCard key={product.id} href={`/product/${product.id}`}>
-                  <img
-                    src={product.thumbnail}
-                    alt={product.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-40 w-full object-cover rounded-lg"
-                  />
-                  <h3 className="mt-3 font-semibold">
-                    <TranslatedText as="span">{product.name}</TranslatedText>
-                  </h3>
-                  <p className="text-sm text-red-500 font-bold">
-                    <Price usd={product.price} />
-                  </p>
-                </CatalogCard>
+                <CatalogProductCard key={product.id} product={product} />
               ))}
             </div>
           )}

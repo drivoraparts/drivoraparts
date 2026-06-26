@@ -20,6 +20,12 @@ export type InventoryAlert = {
 
 const DEFAULT_THRESHOLD = 3;
 
+function getCatalogStock(productId: number): number {
+  const product = products.find((p) => p.id === productId);
+  if (!product || product.stock === false) return 0;
+  return product.stockQty ?? 10;
+}
+
 export async function seedInventoryIfEmpty(): Promise<void> {
   const supabase = getSupabaseAdmin();
   const { count, error } = await supabase
@@ -41,16 +47,22 @@ export async function seedInventoryIfEmpty(): Promise<void> {
 }
 
 export async function getInventory(productId: number): Promise<number> {
-  await seedInventoryIfEmpty();
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("inventory")
-    .select("quantity")
-    .eq("product_id", productId)
-    .maybeSingle();
+  try {
+    await seedInventoryIfEmpty();
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("inventory")
+      .select("quantity")
+      .eq("product_id", productId)
+      .maybeSingle();
 
-  if (error) throw error;
-  return data?.quantity ?? 0;
+    if (error) throw error;
+    if (data == null) return getCatalogStock(productId);
+    return data.quantity;
+  } catch (error) {
+    console.error("[getInventory]", error);
+    return getCatalogStock(productId);
+  }
 }
 
 export async function hasInventory(

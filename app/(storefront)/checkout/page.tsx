@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -125,16 +124,16 @@ export default function CheckoutPage() {
 
   if (!hydrated) {
     return (
-      <main className="mx-auto max-w-4xl overflow-x-hidden p-8 text-white">
-        <h1 className="mb-6 text-3xl font-bold">{t("checkout")}</h1>
+      <main className="mx-auto w-full max-w-4xl overflow-x-hidden px-4 py-6 sm:px-8 sm:py-8 text-white">
+        <h1 className="mb-6 text-2xl font-bold sm:text-3xl">{t("checkout")}</h1>
         <p className="text-gray-400">Loading your cart...</p>
       </main>
     );
   }
 
   return (
-    <main className="mx-auto max-w-4xl overflow-x-hidden p-8 text-white">
-      <h1 className="mb-6 text-3xl font-bold">Checkout</h1>
+    <main className="mx-auto w-full max-w-4xl overflow-x-hidden px-4 py-6 sm:px-8 sm:py-8 text-white">
+      <h1 className="mb-6 text-2xl font-bold sm:text-3xl">Checkout</h1>
 
       {cart.length === 0 ? (
         <div>
@@ -144,7 +143,7 @@ export default function CheckoutPage() {
           </Link>
         </div>
       ) : (
-        <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+        <div className="grid min-w-0 gap-8 lg:grid-cols-[1.2fr_1fr]">
           <div className="space-y-6">
             <section className={glassCard}>
               <h2 className="mb-4 text-xl font-bold">Customer Information</h2>
@@ -216,18 +215,20 @@ export default function CheckoutPage() {
           </div>
 
           <div className="space-y-6">
-            <section className={glassCard}>
-              <div className="mb-4 flex items-center justify-between gap-2">
-                <h2 className="text-sm font-medium text-white/70">{t("orderSummary")}</h2>
-                <span className="flex items-center gap-1.5 text-xs text-gray-400">
-                  <Image
+            <section className={`${glassCard} min-w-0`}>
+              <div className="mb-4 flex min-w-0 items-start justify-between gap-3 sm:items-center">
+                <h2 className="shrink-0 text-sm font-medium text-white/70">
+                  {t("orderSummary")}
+                </h2>
+                <span className="flex min-w-0 shrink items-center gap-1.5 text-xs text-gray-400">
+                  <img
                     src="/brand/drivora-logo.png"
-                    alt="DrivoraParts"
-                    width={22}
-                    height={22}
-                    className="rounded"
+                    alt=""
+                    width={18}
+                    height={18}
+                    className="h-[18px] w-[18px] shrink-0 object-contain"
                   />
-                  Secure Checkout
+                  <span className="truncate">{t("secureCheckout")}</span>
                 </span>
               </div>
 

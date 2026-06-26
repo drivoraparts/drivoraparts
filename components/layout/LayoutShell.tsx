@@ -42,7 +42,7 @@ export default function LayoutShell({ children }: Props) {
       />
 
       {/* PAGE CONTENT */}
-      <main className="pt-[80px] min-h-screen">
+      <main className="min-h-screen w-full max-w-[100vw] overflow-x-hidden pt-[80px]">
         {children}
       </main>
 
