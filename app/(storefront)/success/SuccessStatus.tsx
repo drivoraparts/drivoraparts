@@ -92,11 +92,11 @@ export default function SuccessStatus({ orderId }: { orderId: string | null }) {
     <main className="mx-auto flex min-h-screen w-full max-w-md flex-col overflow-x-hidden px-4 py-10 text-white sm:px-6 sm:py-12">
       <div className="flex flex-col items-center gap-3 py-6 text-center">
         <img
-          src="/brand/drivora-logo.png"
+          src="/brand/drivora-checkout.png"
           alt="DrivoraParts"
           width={40}
           height={40}
-          className="h-10 w-10 object-contain"
+          className="h-10 w-10 rounded-sm bg-white/95 object-contain p-1"
         />
         <div>
           <h1 className="text-lg font-semibold text-white">{heading}</h1>

@@ -8,6 +8,7 @@ import { trackEvent } from "@/lib/analytics/client";
 import { showToast } from "@/lib/store/toastStore";
 import Price from "@/components/currency/Price";
 import OrderTotalsSummary from "@/components/checkout/OrderTotalsSummary";
+import { CheckoutBrandMark } from "@/components/brand/CheckoutBrandMark";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { calculateCartDiscounts } from "@/lib/inventory/discounts";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -241,9 +242,17 @@ export default function CheckoutPage() {
 
             <div className="min-w-0 space-y-6">
               <section className={glassCard}>
-                <h2 className="mb-4 text-sm font-medium text-white/70">
-                  {t("orderSummary")}
-                </h2>
+                <div className="mb-4 flex min-w-0 items-center justify-between gap-2">
+                  <h2 className="shrink-0 text-sm font-medium text-white/70">
+                    {t("orderSummary")}
+                  </h2>
+                  <span className="flex min-w-0 max-w-[58%] items-center justify-end gap-1.5 sm:max-w-[65%]">
+                    <CheckoutBrandMark />
+                    <span className="truncate text-[11px] leading-tight text-gray-400 sm:text-xs">
+                      {t("secureCheckout")}
+                    </span>
+                  </span>
+                </div>
 
                 <div className="divide-y divide-white/5">
                   {cart.map((item) => (

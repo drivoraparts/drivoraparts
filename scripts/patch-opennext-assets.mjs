@@ -39,6 +39,8 @@ const routes = {
     "/favicon-32.png",
     "/apple-touch-icon.png",
     "/brand/*",
+    "/brand/drivora-checkout.png",
+    "/brand/drivora-icon.png",
     "/robots.txt",
     "/sitemap.xml",
   ],
