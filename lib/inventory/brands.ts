@@ -82,6 +82,15 @@ export const brands: Brand[] = [
   { slug: "xk-glow", name: "XK Glow", category: "lighting" },
   { slug: "universal", name: "Universal", category: "lighting" },
 
+  // Body Parts
+  { slug: "bmw", name: "BMW", category: "body-parts" },
+  { slug: "ford", name: "Ford", category: "body-parts" },
+  { slug: "honda", name: "Honda", category: "body-parts" },
+  { slug: "nissan", name: "Nissan", category: "body-parts" },
+  { slug: "subaru", name: "Subaru", category: "body-parts" },
+  { slug: "toyota", name: "Toyota", category: "body-parts" },
+  { slug: "universal", name: "Universal", category: "body-parts" },
+
   // Aftermarket (vehicle brands)
   { slug: "toyota", name: "Toyota", category: "aftermarket" },
   { slug: "honda", name: "Honda", category: "aftermarket" },
