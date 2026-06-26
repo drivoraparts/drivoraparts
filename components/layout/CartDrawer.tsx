@@ -4,7 +4,9 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { showToast } from "@/lib/store/toastStore";
 import Price from "@/components/currency/Price";
-import { useFormatPrice } from "@/hooks/useFormatPrice";
+import OrderTotalsSummary from "@/components/checkout/OrderTotalsSummary";
+import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
+import { calculateCartDiscounts } from "@/lib/inventory/discounts";
 import { useTranslation } from "@/hooks/useTranslation";
 
 type CartDrawerProps = {
@@ -18,11 +20,16 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
     increaseQty,
     decreaseQty,
     clearCart,
-    getTotal,
   } = useCart();
 
-  const total = getTotal();
-  const formatPrice = useFormatPrice();
+  const breakdown = calculateCartDiscounts(
+    cart.map((item) => ({
+      id: item.id,
+      price: item.price,
+      quantity: item.quantity,
+      category: item.category,
+    }))
+  );
   const { t } = useTranslation();
 
   const handleClear = () => {
@@ -52,8 +59,11 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                   className="h-16 w-16 rounded object-cover"
                 />
 
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <p className="font-medium">{item.name}</p>
+                  <div className="mt-1">
+                    <ProductDiscountBadge category={item.category} />
+                  </div>
                   <p className="text-sm text-gray-400">
                     <Price usd={item.price} /> {t("each")}
                   </p>
@@ -97,9 +107,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
       )}
 
       <div className="mt-6 border-t border-white/10 pt-4">
-        <p className="mb-4 text-lg font-semibold">
-          {t("total")}: {formatPrice(total)}
-        </p>
+        <OrderTotalsSummary breakdown={breakdown} className="mb-4" />
 
         <Link
           href="/checkout"

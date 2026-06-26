@@ -20,6 +20,10 @@ import ProductDetailsSections from "./ProductDetailsSections";
 import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import {
+  OrderDiscountBadge,
+  ProductDiscountBadge,
+} from "@/components/product/DiscountBadge";
+import {
   formatCategoryLabel,
   formatPlatformLabel,
   glassCard,
@@ -121,6 +125,19 @@ export default function ProductTemplate({ product }: { product: Product }) {
         <h2 style={{ marginTop: "8px", fontSize: "26px", color: "#e60000" }}>
           <Price usd={product.price} />
         </h2>
+
+        <div
+          style={{
+            marginTop: "10px",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "8px",
+            alignItems: "center",
+          }}
+        >
+          <ProductDiscountBadge category={product.category} />
+          <OrderDiscountBadge />
+        </div>
 
         <div style={{ marginTop: "10px" }}>
           <ConditionBadge

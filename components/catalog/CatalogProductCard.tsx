@@ -6,6 +6,7 @@ import AddToCartButton, {
 } from "@/app/components/AddToCartButton";
 import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
+import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { routes } from "@/lib/inventory";
 
 export type CatalogProductCardData = {
@@ -50,6 +51,9 @@ export default function CatalogProductCard({
           <p className="text-sm font-bold text-red-500">
             <Price usd={product.price} />
           </p>
+          <div className="mt-2">
+            <ProductDiscountBadge category={product.category} />
+          </div>
         </Link>
 
         <div className="mt-3 flex gap-2">

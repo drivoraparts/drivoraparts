@@ -1,4 +1,5 @@
 import { EMPTY_ORDER_STATS } from "@/lib/admin/fallbacks";
+import { calculateCartDiscounts } from "@/lib/inventory/discounts";
 import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { assertOrderTransition } from "@/lib/orders/state-machine";
@@ -61,12 +62,18 @@ export type CreateOrderInput = {
 export async function createOrderRecord(
   input: CreateOrderInput
 ): Promise<OrderWithDetails> {
-  const subtotal = input.items.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
   const shipping = input.shipping ?? 0;
-  const total = subtotal + shipping;
+  const breakdown = calculateCartDiscounts(
+    input.items.map((item) => ({
+      id: item.productId,
+      price: item.price,
+      quantity: item.quantity,
+      category: item.category,
+    })),
+    shipping
+  );
+  const subtotal = breakdown.merchandiseTotal;
+  const total = breakdown.total;
 
   const supabase = getSupabaseAdmin();
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
+import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
@@ -59,6 +60,10 @@ export default function ProductCard({ product }: { product: Product }) {
           <span className="text-[10px] uppercase text-gray-400">
             {product.category}
           </span>
+        </div>
+
+        <div className="mt-2">
+          <ProductDiscountBadge category={product.category} />
         </div>
 
         <div className="mt-4 flex gap-2">

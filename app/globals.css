@@ -24,7 +24,7 @@ body {
   color: #ffffff;
   min-height: 100vh;
   color-scheme: dark;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 

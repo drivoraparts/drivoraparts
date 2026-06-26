@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
+import { calculateCartDiscounts } from "@/lib/inventory/discounts";
 
 export type CartItem = {
   id: number;
@@ -79,7 +80,14 @@ export const useCartStore = create<CartState>()(
       },
 
       getTotal: () =>
-        get().items.reduce((sum, i) => sum + i.price * i.quantity, 0),
+        calculateCartDiscounts(
+          get().items.map((item) => ({
+            id: item.id,
+            price: item.price,
+            quantity: item.quantity,
+            category: item.category,
+          }))
+        ).total,
 
       getItemCount: () =>
         get().items.reduce((sum, i) => sum + i.quantity, 0),
