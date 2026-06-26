@@ -1,4 +1,8 @@
 import Policy from "@/components/policy/Policy";
+import {
+  COMPANY_SUPPORT_EMAIL,
+  US_HEADQUARTERS,
+} from "@/lib/content/company";
 
 export default function PrivacyPolicyPage() {
   return (
@@ -136,7 +140,8 @@ export default function PrivacyPolicyPage() {
         {
           heading: "Contact Us",
           paragraphs: [
-            "If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, you may contact DrivoraParts LLC at support@drivoraparts.com. We will respond to legitimate requests within a reasonable timeframe and in accordance with applicable law.",
+            `If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, you may contact us at ${COMPANY_SUPPORT_EMAIL}. We will respond to legitimate requests within a reasonable timeframe and in accordance with applicable law.`,
+            `Mailing address: ${US_HEADQUARTERS.companyName}, ${US_HEADQUARTERS.street}, ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} ${US_HEADQUARTERS.postalCode}, ${US_HEADQUARTERS.country}.`,
           ],
         },
       ]}

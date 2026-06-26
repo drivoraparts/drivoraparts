@@ -1,3 +1,5 @@
+import CompanyAddress from "@/components/content/CompanyAddress";
+
 export default function AboutPage() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-12 text-white">
@@ -31,6 +33,10 @@ export default function AboutPage() {
           expanded product coverage, and marketplace features
           designed around the automotive community.
         </p>
+
+        <div className="pt-4 border-t border-white/10">
+          <CompanyAddress variant="summary" />
+        </div>
       </div>
     </main>
   );

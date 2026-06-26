@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
+import CompanyAddress from "@/components/content/CompanyAddress";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function FooterContent() {
@@ -14,7 +15,8 @@ export default function FooterContent() {
           <h2 className="font-bold text-lg mb-3">
             Drivora<span className="text-red-500">Parts</span>
           </h2>
-          <p className="text-gray-400 text-sm">{t("footerBrand")}</p>
+          <CompanyAddress variant="summary" className="mb-3" />
+          <p className="text-gray-500 text-xs">{t("footerBrand")}</p>
         </div>
 
         <div>
@@ -22,6 +24,7 @@ export default function FooterContent() {
           <div className="flex flex-col gap-2 text-gray-300 text-sm">
             <Link href="/catalog">{t("catalog")}</Link>
             <Link href="/">{t("home")}</Link>
+            <Link href="/contact">{t("contactSupport")}</Link>
           </div>
         </div>
 

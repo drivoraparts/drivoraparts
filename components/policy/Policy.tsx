@@ -6,6 +6,8 @@
    identity, structured H2 sections, and a footer note.
 ========================================================= */
 
+import { COMPANY_LEGAL_NAME, COMPANY_SUPPORT_EMAIL, US_HEADQUARTERS } from "@/lib/content/company";
+
 export type PolicySection = {
   heading: string;
   paragraphs?: string[];
@@ -34,7 +36,11 @@ export default function Policy({
       <div className="mt-5 space-y-1 text-sm text-gray-400">
         <p>
           Company:{" "}
-          <span className="text-gray-200 font-medium">DrivoraParts LLC</span>
+          <span className="text-gray-200 font-medium">{COMPANY_LEGAL_NAME}</span>
+        </p>
+        <p>
+          Headquarters: {US_HEADQUARTERS.city}, {US_HEADQUARTERS.stateName},{" "}
+          {US_HEADQUARTERS.country}
         </p>
         <p>Effective Date: {effectiveDate}</p>
         <p>Last Updated: {lastUpdated}</p>
@@ -69,10 +75,10 @@ export default function Policy({
       </div>
 
       <p className="mt-14 pt-6 border-t border-white/10 text-xs leading-relaxed text-gray-500">
-        © {new Date().getFullYear()} DrivoraParts LLC. All rights reserved. This
+        © {new Date().getFullYear()} {COMPANY_LEGAL_NAME}. All rights reserved. This
         document is provided for general informational purposes only and does
         not constitute legal advice. For questions about this policy, contact
-        DrivoraParts LLC at support@drivoraparts.com.
+        {COMPANY_LEGAL_NAME} at {COMPANY_SUPPORT_EMAIL}.
       </p>
     </article>
   );

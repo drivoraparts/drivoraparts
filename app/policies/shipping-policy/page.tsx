@@ -1,4 +1,8 @@
 import Policy from "@/components/policy/Policy";
+import {
+  COMPANY_SUPPORT_EMAIL,
+  JAPAN_LOGISTICS_HUB,
+} from "@/lib/content/company";
 
 export default function ShippingPolicyPage() {
   return (
@@ -36,6 +40,13 @@ export default function ShippingPolicyPage() {
           heading: "Delivery Regions",
           paragraphs: [
             "We ship to most domestic and many international destinations. Certain large, heavy, hazardous, or regulated performance components may only be available to specific regions due to carrier restrictions and applicable regulations. If we are unable to ship an item to your location, we will notify you and, where applicable, cancel and refund the affected portion of your order.",
+          ],
+        },
+        {
+          heading: "Premium Parts Inspection & Dispatch (Japan)",
+          paragraphs: [
+            "Select premium and specialty performance components may be inspected, prepared, and dispatched from our Japan inventory and logistics hub before onward delivery to your destination. This facility supports quality control and fulfillment for parts sourced through our Japanese supply network.",
+            `${JAPAN_LOGISTICS_HUB.companyName}, ${JAPAN_LOGISTICS_HUB.street}, ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.ward}, ${JAPAN_LOGISTICS_HUB.prefecture} ${JAPAN_LOGISTICS_HUB.postalCode}, ${JAPAN_LOGISTICS_HUB.country}.`,
           ],
         },
         {
@@ -78,7 +89,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Questions and Contact",
           paragraphs: [
-            "For any questions regarding shipping, delivery, or tracking, please contact DrivoraParts LLC at support@drivoraparts.com.",
+            `For any questions regarding shipping, delivery, or tracking, please contact us at ${COMPANY_SUPPORT_EMAIL}.`,
           ],
         },
       ]}

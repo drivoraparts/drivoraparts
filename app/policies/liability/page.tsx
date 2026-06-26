@@ -1,4 +1,5 @@
 import Policy from "@/components/policy/Policy";
+import { COMPANY_NAME, COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 
 export default function LiabilityPage() {
   return (
@@ -75,7 +76,7 @@ export default function LiabilityPage() {
         {
           heading: "Contact",
           paragraphs: [
-            "For questions about this Limitation of Liability policy, contact DrivoraParts LLC at support@drivoraparts.com.",
+            `For questions about this Limitation of Liability policy, contact ${COMPANY_NAME} at ${COMPANY_SUPPORT_EMAIL}.`,
           ],
         },
       ]}
