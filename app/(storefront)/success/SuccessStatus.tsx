@@ -93,7 +93,7 @@ export default function SuccessStatus({ orderId }: { orderId: string | null }) {
     <main className="mx-auto flex min-h-screen max-w-md flex-col px-6 py-12 text-white">
       <div className="flex flex-col items-center gap-3 py-6 text-center">
         <Image
-          src="/favicon.svg"
+          src="/brand/drivora-logo.png"
           alt="DrivoraParts"
           width={40}
           height={40}

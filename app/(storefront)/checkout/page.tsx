@@ -221,10 +221,10 @@ export default function CheckoutPage() {
                 <h2 className="text-sm font-medium text-white/70">{t("orderSummary")}</h2>
                 <span className="flex items-center gap-1.5 text-xs text-gray-400">
                   <Image
-                    src="/favicon.svg"
+                    src="/brand/drivora-logo.png"
                     alt="DrivoraParts"
-                    width={18}
-                    height={18}
+                    width={22}
+                    height={22}
                     className="rounded"
                   />
                   Secure Checkout
