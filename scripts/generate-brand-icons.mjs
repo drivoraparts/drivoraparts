@@ -14,45 +14,18 @@ const PADDING_RATIO = 0.12;
 
 mkdirSync(brandDir, { recursive: true });
 
-/** Matches site background so icons read clearly on light and dark browser chrome. */
-const BRAND_BG = { r: 10, g: 10, b: 10, alpha: 1 };
-
-async function removeWhiteBackground(inputBuffer) {
-  const { data, info } = await sharp(inputBuffer)
-    .ensureAlpha()
-    .raw()
-    .toBuffer({ resolveWithObject: true });
-
-  for (let i = 0; i < data.length; i += 4) {
-    const r = data[i];
-    const g = data[i + 1];
-    const b = data[i + 2];
-    if (r > 228 && g > 228 && b > 228) {
-      data[i + 3] = 0;
-    }
-  }
-
-  return sharp(data, {
-    raw: {
-      width: info.width,
-      height: info.height,
-      channels: 4,
-    },
-  })
-    .png()
-    .toBuffer();
-}
+/** Original brand look: red mark on white. */
+const ICON_BG = { r: 255, g: 255, b: 255, alpha: 1 };
 
 const trimmed = await sharp(source).trim({ threshold: 14 }).png().toBuffer();
-const logoSource = await removeWhiteBackground(trimmed);
 
 async function iconBuffer(size, paddingRatio = PADDING_RATIO) {
   const pad = Math.max(1, Math.round(size * paddingRatio));
   const inner = size - pad * 2;
 
-  let pipeline = sharp(logoSource).resize(inner, inner, {
+  let pipeline = sharp(trimmed).resize(inner, inner, {
     fit: "contain",
-    background: { r: 0, g: 0, b: 0, alpha: 0 },
+    background: ICON_BG,
   });
 
   if (size <= 48) {
@@ -66,7 +39,7 @@ async function iconBuffer(size, paddingRatio = PADDING_RATIO) {
       width: size,
       height: size,
       channels: 4,
-      background: BRAND_BG,
+      background: ICON_BG,
     },
   })
     .composite([{ input: scaled, gravity: "center" }])
@@ -84,10 +57,10 @@ const icon16 = await iconBuffer(16);
 
 const faviconIco = await toIco([icon16, icon32, icon48]);
 
-const brandCheckout = await sharp(logoSource)
+const brandCheckout = await sharp(trimmed)
   .resize(120, 120, {
     fit: "contain",
-    background: BRAND_BG,
+    background: ICON_BG,
   })
   .png()
   .toBuffer();
@@ -135,8 +108,8 @@ writeFileSync(
           purpose: "any",
         },
       ],
-      theme_color: "#0a0a0a",
-      background_color: "#0a0a0a",
+      theme_color: "#ffffff",
+      background_color: "#ffffff",
       display: "standalone",
     },
     null,
@@ -144,4 +117,4 @@ writeFileSync(
   )}\n`
 );
 
-console.log("Generated balanced brand icons, favicon.ico, and site.webmanifest");
+console.log("Generated red-on-white brand icons, favicon.ico, and site.webmanifest");

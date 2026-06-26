@@ -16,7 +16,7 @@ import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 
 const siteUrl = getSiteUrl();
 
-const ICON_VERSION = "6";
+const ICON_VERSION = "7";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
