@@ -147,6 +147,7 @@ export default function AllProductsFeed() {
                 name: product.name,
                 price: product.price,
                 thumbnail: product.thumbnail ?? product.image ?? "",
+                images: product.images,
                 category: product.category,
                 brand: product.brand,
               }}

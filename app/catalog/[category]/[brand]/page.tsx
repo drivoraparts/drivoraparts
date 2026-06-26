@@ -40,6 +40,7 @@ export default async function Page({ params }: any) {
                 name: product.name,
                 price: product.price,
                 thumbnail: product.thumbnail,
+                images: product.images,
                 category: categorySlug,
                 brand: product.brand,
               }}

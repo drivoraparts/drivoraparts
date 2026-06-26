@@ -7,6 +7,7 @@ import AddToCartButton, {
 import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
+import { CatalogImageGallery } from "@/components/product/ImageCarousel";
 import { routes } from "@/lib/inventory";
 
 export type CatalogProductCardData = {
@@ -14,6 +15,7 @@ export type CatalogProductCardData = {
   name: string;
   price: number;
   thumbnail: string;
+  images?: string[];
   category: string;
   brand?: string;
 };
@@ -39,18 +41,17 @@ export default function CatalogProductCard({
       <div className="pointer-events-none absolute inset-0 bg-red-500/10 blur-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative p-4">
+        <CatalogImageGallery
+          images={product.images ?? [product.thumbnail]}
+          alt={product.name}
+          thumbnail={product.thumbnail}
+        />
+
         <Link
           href={productHref}
-          className="block rounded-lg transition hover:opacity-95"
+          className="mt-3 block rounded-lg transition hover:opacity-95"
         >
-          <img
-            src={product.thumbnail}
-            alt={product.name}
-            loading="lazy"
-            decoding="async"
-            className="h-40 w-full rounded-lg object-cover"
-          />
-          <h3 className="mt-3 font-semibold text-white group-hover:text-red-400">
+          <h3 className="font-semibold text-white group-hover:text-red-400">
             <TranslatedText as="span">{product.name}</TranslatedText>
           </h3>
           <p className="text-sm font-bold text-red-500">

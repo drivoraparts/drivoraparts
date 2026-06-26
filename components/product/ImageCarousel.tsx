@@ -1,140 +1,159 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type PointerEvent as ReactPointerEvent,
+} from "react";
 
-type ImageCarouselProps = {
+type ManualImageGalleryProps = {
   images: string[];
   alt: string;
   thumbnail?: string;
+  variant?: "detail" | "card";
 };
+
+function buildGallery(images: string[], thumbnail?: string) {
+  const base = images.length > 0 ? images : ["/product-media/avatars/default.svg"];
+  return thumbnail
+    ? [thumbnail, ...base.filter((img) => img !== thumbnail)]
+    : base;
+}
 
 export default function ImageCarousel({
   images,
   alt,
   thumbnail,
-}: ImageCarouselProps) {
-  const baseImages = images.length > 0 ? images : ["/engines/engine-1.jpg"];
-  const galleryImages = thumbnail
-    ? [thumbnail, ...baseImages.filter((img) => img !== thumbnail)]
-    : baseImages;
-
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const touchStartX = useRef(0);
+  variant = "detail",
+}: ManualImageGalleryProps) {
+  const galleryImages = useMemo(
+    () => buildGallery(images, thumbnail),
+    [images, thumbnail]
+  );
   const total = galleryImages.length;
   const hasMultiple = total > 1;
 
-  const goTo = useCallback(
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const dragState = useRef({ active: false, startX: 0, scrollLeft: 0, pointerId: -1 });
+
+  const syncActiveIndex = useCallback(() => {
+    const el = scrollerRef.current;
+    if (!el || el.clientWidth <= 0) return;
+    const index = Math.round(el.scrollLeft / el.clientWidth);
+    setActiveIndex(Math.min(Math.max(index, 0), total - 1));
+  }, [total]);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    el.addEventListener("scroll", syncActiveIndex, { passive: true });
+    return () => el.removeEventListener("scroll", syncActiveIndex);
+  }, [syncActiveIndex]);
+
+  const scrollToIndex = useCallback(
     (index: number) => {
-      if (isAnimating || total <= 1) return;
-      setIsAnimating(true);
-      setActiveIndex((index + total) % total);
-      window.setTimeout(() => setIsAnimating(false), 300);
+      const el = scrollerRef.current;
+      if (!el) return;
+      const next = ((index % total) + total) % total;
+      el.scrollTo({ left: next * el.clientWidth, behavior: "smooth" });
+      setActiveIndex(next);
     },
-    [isAnimating, total]
+    [total]
   );
 
-  const goPrev = () => goTo(activeIndex - 1);
-  const goNext = () => goTo(activeIndex + 1);
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = (e: React.TouchEvent) => {
+  const onPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (!hasMultiple) return;
-    const diff = e.changedTouches[0].clientX - touchStartX.current;
-    if (Math.abs(diff) < 40) return;
-    if (diff < 0) goNext();
-    else goPrev();
+    const el = scrollerRef.current;
+    if (!el) return;
+
+    dragState.current = {
+      active: true,
+      startX: event.clientX,
+      scrollLeft: el.scrollLeft,
+      pointerId: event.pointerId,
+    };
+    el.setPointerCapture(event.pointerId);
   };
+
+  const onPointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
+    if (!dragState.current.active) return;
+    const el = scrollerRef.current;
+    if (!el) return;
+
+    const delta = event.clientX - dragState.current.startX;
+    el.scrollLeft = dragState.current.scrollLeft - delta;
+  };
+
+  const endDrag = (event: ReactPointerEvent<HTMLDivElement>) => {
+    if (!dragState.current.active) return;
+    const el = scrollerRef.current;
+    dragState.current.active = false;
+
+    if (el?.hasPointerCapture(event.pointerId)) {
+      el.releasePointerCapture(event.pointerId);
+    }
+
+    syncActiveIndex();
+
+    if (!el || el.clientWidth <= 0) return;
+    const index = Math.round(el.scrollLeft / el.clientWidth);
+    el.scrollTo({ left: index * el.clientWidth, behavior: "smooth" });
+  };
+
+  const isCard = variant === "card";
+  const frameClass = isCard
+    ? "relative h-40 w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]"
+    : "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] shadow-[0_4px_24px_rgba(0,0,0,0.25)]";
 
   return (
-    <div
-      style={{
-        width: "100%",
-        minWidth: 0,
-        maxWidth: "100%",
-        overflow: "hidden",
-      }}
-    >
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          aspectRatio: "1 / 1",
-          maxHeight: "520px",
-          borderRadius: "12px",
-          overflow: "hidden",
-          background: "rgba(255,255,255,0.04)",
-          border: "1px solid rgba(255,255,255,0.1)",
-          boxShadow: "0 4px 24px rgba(0,0,0,0.25)",
-          touchAction: "pan-y",
-        }}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-      >
-        <img
-          key={galleryImages[activeIndex]}
-          src={galleryImages[activeIndex]}
-          alt={alt}
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            opacity: isAnimating ? 0.85 : 1,
-            transition: "opacity 0.3s ease",
-          }}
-        />
+    <div className="w-full min-w-0 max-w-full">
+      <div className={frameClass}>
+        <div
+          ref={scrollerRef}
+          className="flex h-full w-full cursor-grab overflow-x-auto scroll-smooth snap-x snap-mandatory active:cursor-grabbing [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+          style={{ touchAction: "pan-x" }}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={endDrag}
+          onPointerCancel={endDrag}
+          onPointerLeave={endDrag}
+        >
+          {galleryImages.map((src, index) => (
+            <div
+              key={`${src}-${index}`}
+              className="h-full w-full shrink-0 snap-center snap-always"
+            >
+              <img
+                src={src}
+                alt={`${alt} — image ${index + 1}`}
+                draggable={false}
+                loading={index === 0 ? "eager" : "lazy"}
+                decoding="async"
+                className="h-full w-full select-none object-cover"
+              />
+            </div>
+          ))}
+        </div>
 
-        {hasMultiple && (
+        {hasMultiple && !isCard && (
           <>
             <button
               type="button"
-              onClick={goPrev}
               aria-label="Previous image"
-              style={{
-                position: "absolute",
-                left: "12px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                width: "40px",
-                height: "40px",
-                borderRadius: "50%",
-                border: "1px solid rgba(255,255,255,0.2)",
-                background: "rgba(0,0,0,0.55)",
-                color: "#fff",
-                cursor: "pointer",
-                fontSize: "22px",
-                lineHeight: 1,
-                zIndex: 2,
-              }}
+              onClick={() => scrollToIndex(activeIndex - 1)}
+              className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/55 text-xl text-white transition hover:bg-black/75"
             >
               ‹
             </button>
-
             <button
               type="button"
-              onClick={goNext}
               aria-label="Next image"
-              style={{
-                position: "absolute",
-                right: "12px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                width: "40px",
-                height: "40px",
-                borderRadius: "50%",
-                border: "1px solid rgba(255,255,255,0.2)",
-                background: "rgba(0,0,0,0.55)",
-                color: "#fff",
-                cursor: "pointer",
-                fontSize: "22px",
-                lineHeight: 1,
-                zIndex: 2,
-              }}
+              onClick={() => scrollToIndex(activeIndex + 1)}
+              className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/55 text-xl text-white transition hover:bg-black/75"
             >
               ›
             </button>
@@ -143,37 +162,39 @@ export default function ImageCarousel({
       </div>
 
       {hasMultiple && (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "8px",
-            marginTop: "12px",
-            flexWrap: "wrap",
-          }}
-        >
-          {galleryImages.map((_, i) => (
+        <div className="mt-2 flex justify-center gap-1.5">
+          {galleryImages.map((_, index) => (
             <button
-              key={i}
+              key={index}
               type="button"
-              aria-label={`Go to image ${i + 1}`}
-              aria-current={i === activeIndex ? "true" : undefined}
-              onClick={() => goTo(i)}
-              style={{
-                width: i === activeIndex ? "10px" : "8px",
-                height: i === activeIndex ? "10px" : "8px",
-                borderRadius: "50%",
-                border: "none",
-                padding: 0,
-                cursor: "pointer",
-                background:
-                  i === activeIndex ? "#e60000" : "rgba(255,255,255,0.35)",
-                transition: "background 0.2s ease, transform 0.2s ease",
-              }}
+              aria-label={`Go to image ${index + 1}`}
+              aria-current={index === activeIndex ? "true" : undefined}
+              onClick={() => scrollToIndex(index)}
+              className={`rounded-full transition ${
+                index === activeIndex
+                  ? "h-2.5 w-2.5 bg-red-600"
+                  : "h-2 w-2 bg-white/35 hover:bg-white/55"
+              }`}
             />
           ))}
         </div>
       )}
     </div>
+  );
+}
+
+/** Compact manual gallery for catalog cards. */
+export function CatalogImageGallery({
+  images,
+  alt,
+  thumbnail,
+}: Omit<ManualImageGalleryProps, "variant">) {
+  return (
+    <ImageCarousel
+      images={images}
+      alt={alt}
+      thumbnail={thumbnail}
+      variant="card"
+    />
   );
 }

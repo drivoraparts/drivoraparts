@@ -15,6 +15,7 @@ type TemplateProduct = {
   name: string;
   price: number;
   thumbnail: string;
+  images?: string[];
   category: string;
   brand?: string;
 };
