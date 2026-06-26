@@ -1313,4 +1313,204 @@ export const productLogistics: Record<number, ProductLogistics> = {
     freightNotes: PARCEL_FREIGHT,
     warrantyTerms: PARTS_ONLY,
   },
+
+  /* =====================================================
+     ELECTRONICS
+  ===================================================== */
+  121: {
+    partNumber: "AEM Wideband AFR Gauge",
+    fitment:
+      "Universal wideband gauge kit — confirm sensor bung size and mounting location at checkout.",
+    included: [
+      "Wideband gauge display",
+      "Bosch LSU 4.9 sensor",
+      "Wiring harness",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  122: {
+    partNumber: "COBB Accessport",
+    fitment:
+      "Vehicle-specific tuning device — confirm your year/make/model at checkout.",
+    included: [
+      "Accessport handheld unit",
+      "OBD connection cable",
+      "Mounting bracket",
+      "Quick-start guide",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  123: {
+    partNumber: "Dash Camera",
+    fitment:
+      "Universal windshield-mount dash camera — confirm power routing at checkout.",
+    included: [
+      "HD dash camera unit",
+      "Windshield mount",
+      "Power cable & adapter",
+      "Memory card (where applicable)",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  124: {
+    partNumber: "Digital Dash Display",
+    fitment:
+      "Universal digital display — confirm sensor inputs and mounting at checkout.",
+    included: [
+      "Digital dash display unit",
+      "Wiring harness",
+      "Mounting hardware",
+      "Configuration software access",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  125: {
+    partNumber: "Electronic Boost Controller",
+    fitment:
+      "Universal turbo boost control — confirm solenoid and vacuum routing at checkout.",
+    included: [
+      "EBC control unit",
+      "Boost control solenoid",
+      "Wiring harness",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  126: {
+    partNumber: "Flex Fuel Sensor Kit",
+    fitment:
+      "Universal flex-fuel sensor — confirm fuel line size and ECU compatibility at checkout.",
+    included: [
+      "Ethanol content sensor",
+      "Wiring harness",
+      "Fuel line fittings",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  127: {
+    partNumber: "Haltech Elite ECU",
+    fitment:
+      "Application-specific standalone ECU — confirm engine, harness, and trigger setup at checkout.",
+    included: [
+      "Haltech Elite ECU",
+      "Main engine harness (where applicable)",
+      "USB tuning cable",
+      "Documentation & software access",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  128: {
+    partNumber: "Haltech Nexus ECU",
+    fitment:
+      "Application-specific Nexus ECU — confirm engine, harness, and display setup at checkout.",
+    included: [
+      "Haltech Nexus ECU",
+      "Main engine harness (where applicable)",
+      "USB tuning cable",
+      "Documentation & software access",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  129: {
+    partNumber: "HP Tuners MPVI3",
+    fitment:
+      "Platform-specific OBD tuning interface — confirm your vehicle at checkout.",
+    included: [
+      "MPVI3 interface",
+      "USB cable",
+      "Software license information",
+      "Quick-start guide",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  130: {
+    partNumber: "MSD Ignition System",
+    fitment:
+      "Application-specific MSD ignition — confirm distributor/coil setup at checkout.",
+    included: [
+      "MSD ignition control module",
+      "Wiring harness",
+      "Mounting hardware",
+      "Installation instructions",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  131: {
+    partNumber: "Performance Data Logger",
+    fitment:
+      "Universal data logger — confirm sensor inputs and mounting at checkout.",
+    included: [
+      "Data logger unit",
+      "GPS antenna",
+      "Wiring harness",
+      "Mounting hardware",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  132: {
+    partNumber: "Professional OBD2 Scan Tool",
+    fitment:
+      "Universal OBD2-equipped vehicles (1996+) — confirm protocol support at checkout.",
+    included: [
+      "OBD2 scan tool",
+      "OBD connection cable",
+      "Protective case",
+      "Quick-start guide",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  133: {
+    partNumber: "Shift Light Kit",
+    fitment:
+      "Universal shift light — confirm tach/ECU signal source at checkout.",
+    included: [
+      "LED shift light unit",
+      "Wiring harness",
+      "Mounting bracket",
+      "Installation instructions",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
+  134: {
+    partNumber: "TPMS Kit",
+    fitment:
+      "Universal TPMS — confirm wheel valve-stem compatibility at checkout.",
+    included: [
+      "TPMS display monitor",
+      "Valve-stem sensors",
+      "Mounting hardware",
+      "Installation instructions",
+    ],
+    coreCharge: OUTRIGHT,
+    freightNotes: PARCEL_FREIGHT,
+    warrantyTerms: PARTS_ONLY,
+  },
 };

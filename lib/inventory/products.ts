@@ -10,6 +10,7 @@
 
 import type { Product } from "./types";
 import { aftermarketProducts } from "./aftermarket-products";
+import { electronicsProducts } from "./electronics-products";
 import { applyPublicPrices } from "./pricing";
 
 const productCatalog: Product[] = [
@@ -4207,6 +4208,7 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
+  ...electronicsProducts,
   ...aftermarketProducts,
 ];
 

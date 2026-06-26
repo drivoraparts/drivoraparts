@@ -60,6 +60,14 @@ export const brands: Brand[] = [
   { slug: "tein", name: "Tein", category: "suspension" },
   { slug: "universal", name: "Universal", category: "suspension" },
 
+  // Electronics
+  { slug: "aem", name: "AEM", category: "electronics" },
+  { slug: "cobb", name: "COBB Tuning", category: "electronics" },
+  { slug: "haltech", name: "Haltech", category: "electronics" },
+  { slug: "hp-tuners", name: "HP Tuners", category: "electronics" },
+  { slug: "msd", name: "MSD", category: "electronics" },
+  { slug: "universal", name: "Universal", category: "electronics" },
+
   // Aftermarket (vehicle brands)
   { slug: "toyota", name: "Toyota", category: "aftermarket" },
   { slug: "honda", name: "Honda", category: "aftermarket" },
