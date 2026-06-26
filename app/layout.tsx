@@ -16,7 +16,7 @@ import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 
 const siteUrl = getSiteUrl();
 
-const ICON_VERSION = "4";
+const ICON_VERSION = "5";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,13 +38,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  manifest: `/site.webmanifest?v=${ICON_VERSION}`,
   icons: {
     icon: [
-      { url: `/favicon.ico?v=${ICON_VERSION}`, sizes: "any" },
       {
-        url: `/favicon.png?v=${ICON_VERSION}`,
-        type: "image/png",
-        sizes: "512x512",
+        url: `/favicon.ico?v=${ICON_VERSION}`,
+        sizes: "any",
       },
       {
         url: `/favicon-32.png?v=${ICON_VERSION}`,
@@ -56,6 +55,11 @@ export const metadata: Metadata = {
         type: "image/png",
         sizes: "16x16",
       },
+      {
+        url: `/favicon.png?v=${ICON_VERSION}`,
+        type: "image/png",
+        sizes: "512x512",
+      },
     ],
     apple: [
       {
@@ -65,6 +69,12 @@ export const metadata: Metadata = {
       },
     ],
     shortcut: `/favicon.ico?v=${ICON_VERSION}`,
+  },
+  appleWebApp: {
+    title: "DrivoraParts",
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
   },
 };
 
