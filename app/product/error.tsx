@@ -2,8 +2,9 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import { routes } from "@/lib/inventory/routes";
 
-export default function CatalogError({
+export default function ProductError({
   error,
   reset,
 }: {
@@ -11,32 +12,31 @@ export default function CatalogError({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("[catalog] render error:", error);
+    console.error("[product] render error:", error);
   }, [error]);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-4 p-6 text-center text-white">
-      <h1 className="text-2xl font-semibold">We hit a snag loading the catalog</h1>
+      <h1 className="text-2xl font-semibold">
+        We couldn&apos;t load this product
+      </h1>
       <p className="max-w-md text-sm text-gray-400">
-        Something went wrong while rendering this page. You can retry or head
-        back to the homepage.
+        Something went wrong while opening this product page. Retry to reload
+        this product, or return to the catalog.
       </p>
-      <div className="flex gap-3">
+      <div className="flex flex-wrap justify-center gap-3">
         <button
           type="button"
-          onClick={() => {
-            reset();
-            window.location.reload();
-          }}
+          onClick={() => reset()}
           className="rounded-lg border border-red-500 px-4 py-2 text-sm font-medium text-red-400 transition hover:bg-red-500/10"
         >
           Try again
         </button>
         <Link
-          href="/"
+          href={routes.all}
           className="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
         >
-          Back to home
+          Browse all products
         </Link>
       </div>
     </main>

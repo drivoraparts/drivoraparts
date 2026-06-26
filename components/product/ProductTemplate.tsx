@@ -3,10 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Product } from "@/data/store";
 import { trackEvent } from "@/lib/analytics/client";
-import {
-  getProductById as getInventoryProduct,
-  getProductCatalogMeta,
-} from "@/lib/inventory";
+import type { ProductCatalogMeta } from "@/lib/inventory/productEnhancements";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
@@ -23,6 +20,7 @@ import {
   OrderDiscountBadge,
   ProductDiscountBadge,
 } from "@/components/product/DiscountBadge";
+import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
 import {
   formatCategoryLabel,
   formatPlatformLabel,
@@ -50,7 +48,17 @@ function MetaRow({ label, value }: { label: string; value: string }) {
   );
 }
 
-export default function ProductTemplate({ product }: { product: Product }) {
+export default function ProductTemplate({
+  product,
+  catalogMeta,
+  inStock,
+  rawCondition,
+}: {
+  product: Product;
+  catalogMeta: ProductCatalogMeta;
+  inStock: boolean;
+  rawCondition?: string;
+}) {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
@@ -61,27 +69,12 @@ export default function ProductTemplate({ product }: { product: Product }) {
     });
   }, [product.id, product.name, product.category]);
 
-  const inventoryProduct = getInventoryProduct(product.id);
-  const inStock = inventoryProduct?.stock !== false;
-  const rawCondition = inventoryProduct?.condition ?? product.condition;
-  const catalogMeta = getProductCatalogMeta(
-    inventoryProduct ?? {
-      id: product.id,
-      name: product.name,
-      category: product.category,
-      brand: product.brand,
-      price: product.price,
-      condition: rawCondition,
-      description: product.description,
-      platform: product.platform,
-    }
-  );
-
-  const primaryImage = product.images?.[0] || product.thumbnail;
+  const primaryImage =
+    product.images?.[0] || product.thumbnail || DEFAULT_PRODUCT_IMAGE;
   const galleryImages =
     product.images && product.images.length > 0
       ? product.images
-      : [product.thumbnail];
+      : [product.thumbnail || DEFAULT_PRODUCT_IMAGE];
 
   const platformLabel = formatPlatformLabel(product.platform);
   const categoryLabel = formatCategoryLabel(product.category);
@@ -90,7 +83,7 @@ export default function ProductTemplate({ product }: { product: Product }) {
     id: product.id,
     name: product.name,
     price: product.price,
-    image: primaryImage || "/product-media/avatars/default.svg",
+    image: primaryImage,
     category: product.category,
     brand: product.brand,
   };

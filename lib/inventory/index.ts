@@ -18,6 +18,11 @@ export type { Brand, Category, Product, ProductCondition } from "./types";
 export { categories, brands, products };
 export { routes } from "./routes";
 export {
+  DEFAULT_PRODUCT_IMAGE,
+  resolveProductImage,
+  resolveProductGallery,
+} from "./media";
+export {
   resolveProductCondition,
   getConditionDisplay,
   getConditionLabel,

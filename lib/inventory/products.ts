@@ -69,8 +69,14 @@ Worldwide Shipping Available`,
     stock: true,
     condition: "brand-new",
     location: "UK Warehouse",
-    thumbnail: "/turbochargers/turbo-1.jpg",
-    images: ["/turbochargers/turbo-1.jpg", "/turbochargers/turbo-2.jpg"],
+    thumbnail: "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+    images: [
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/2.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/3.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/4.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/5.jpg",
+    ],
     description:
       "Premium Garrett turbocharger designed for extreme boost performance and reliability.",
   },
@@ -1225,6 +1231,15 @@ Worldwide Shipping Available`,
     mileage: "0 Miles",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
+    thumbnail: "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+    images: [
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/2.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/3.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/4.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/5.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/6.jpg",
+    ],
     description: `Audi 4.0 TFSI V8 Biturbo Engine
 
 High-performance twin-turbo V8 used in Audi RS models delivering extreme luxury performance.

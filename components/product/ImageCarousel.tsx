@@ -8,6 +8,10 @@ import {
   useState,
   type PointerEvent as ReactPointerEvent,
 } from "react";
+import {
+  DEFAULT_PRODUCT_IMAGE,
+  resolveProductGallery,
+} from "@/lib/inventory/media";
 
 type ManualImageGalleryProps = {
   images: string[];
@@ -16,11 +20,38 @@ type ManualImageGalleryProps = {
   variant?: "detail" | "card";
 };
 
-function buildGallery(images: string[], thumbnail?: string) {
-  const base = images.length > 0 ? images : ["/product-media/avatars/default.svg"];
-  return thumbnail
-    ? [thumbnail, ...base.filter((img) => img !== thumbnail)]
-    : base;
+function GalleryImage({
+  src,
+  alt,
+  loading,
+}: {
+  src: string;
+  alt: string;
+  loading?: "eager" | "lazy";
+}) {
+  const [currentSrc, setCurrentSrc] = useState(
+    src?.trim() || DEFAULT_PRODUCT_IMAGE
+  );
+
+  useEffect(() => {
+    setCurrentSrc(src?.trim() || DEFAULT_PRODUCT_IMAGE);
+  }, [src]);
+
+  return (
+    <img
+      src={currentSrc}
+      alt={alt}
+      draggable={false}
+      loading={loading}
+      decoding="async"
+      onError={() => {
+        setCurrentSrc((prev) =>
+          prev === DEFAULT_PRODUCT_IMAGE ? prev : DEFAULT_PRODUCT_IMAGE
+        );
+      }}
+      className="h-full w-full select-none object-cover"
+    />
+  );
 }
 
 export default function ImageCarousel({
@@ -29,10 +60,12 @@ export default function ImageCarousel({
   thumbnail,
   variant = "detail",
 }: ManualImageGalleryProps) {
-  const galleryImages = useMemo(
-    () => buildGallery(images, thumbnail),
-    [images, thumbnail]
-  );
+  const galleryImages = useMemo(() => {
+    const base = resolveProductGallery(thumbnail, images);
+    return thumbnail?.trim()
+      ? [thumbnail, ...base.filter((img) => img !== thumbnail)]
+      : base;
+  }, [images, thumbnail]);
   const total = galleryImages.length;
   const hasMultiple = total > 1;
 
@@ -127,13 +160,10 @@ export default function ImageCarousel({
               key={`${src}-${index}`}
               className="h-full w-full shrink-0 snap-center snap-always"
             >
-              <img
+              <GalleryImage
                 src={src}
                 alt={`${alt} — image ${index + 1}`}
-                draggable={false}
                 loading={index === 0 ? "eager" : "lazy"}
-                decoding="async"
-                className="h-full w-full select-none object-cover"
               />
             </div>
           ))}

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductById } from "@/data/store";
-import { routes, getProductById as getInventoryProductById } from "@/lib/inventory";
+import {
+  routes,
+  getProductById as getInventoryProductById,
+  getProductCatalogMeta,
+} from "@/lib/inventory";
 import { getSiteUrl } from "@/lib/env";
 import ProductTemplate from "@/components/product/ProductTemplate";
 
@@ -51,6 +55,20 @@ export default async function ProductPage({ params }: PageProps) {
   if (!product) return notFound();
 
   const inventoryProduct = getInventoryProductById(product.id);
+  const catalogMeta = getProductCatalogMeta(
+    inventoryProduct ?? {
+      id: product.id,
+      name: product.name,
+      category: product.category,
+      brand: product.brand,
+      price: product.price,
+      condition: inventoryProduct?.condition ?? product.condition,
+      description: product.description,
+      platform: product.platform,
+    }
+  );
+  const inStock = inventoryProduct?.stock !== false;
+  const rawCondition = inventoryProduct?.condition ?? product.condition;
 
   const siteUrl = getSiteUrl();
   const jsonLd = {
@@ -80,7 +98,12 @@ export default async function ProductPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ProductTemplate product={product} />
+      <ProductTemplate
+        product={product}
+        catalogMeta={catalogMeta}
+        inStock={inStock}
+        rawCondition={rawCondition}
+      />
     </>
   );
 }

@@ -8,6 +8,7 @@ import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { CatalogImageGallery } from "@/components/product/ImageCarousel";
+import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory";
 
 export type CatalogProductCardData = {
@@ -29,11 +30,15 @@ export default function CatalogProductCard({
     id: product.id,
     name: product.name,
     price: product.price,
-    image: product.thumbnail || "/product-media/avatars/default.svg",
+    image: product.thumbnail || DEFAULT_PRODUCT_IMAGE,
     category: product.category,
     brand: product.brand,
   };
 
+  const galleryImages =
+    product.images && product.images.length > 0
+      ? product.images
+      : [product.thumbnail || DEFAULT_PRODUCT_IMAGE];
   const productHref = routes.product(product.id);
 
   return (
@@ -41,24 +46,23 @@ export default function CatalogProductCard({
       <div className="pointer-events-none absolute inset-0 bg-red-500/10 blur-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative p-4">
-        <CatalogImageGallery
-          images={product.images ?? [product.thumbnail]}
-          alt={product.name}
-          thumbnail={product.thumbnail}
-        />
+        <Link href={productHref} className="block rounded-lg">
+          <CatalogImageGallery
+            images={galleryImages}
+            alt={product.name}
+            thumbnail={product.thumbnail || DEFAULT_PRODUCT_IMAGE}
+          />
 
-        <Link
-          href={productHref}
-          className="mt-3 block rounded-lg transition hover:opacity-95"
-        >
-          <h3 className="font-semibold text-white group-hover:text-red-400">
-            <TranslatedText as="span">{product.name}</TranslatedText>
-          </h3>
-          <p className="text-sm font-bold text-red-500">
-            <Price usd={product.price} />
-          </p>
-          <div className="mt-2">
-            <ProductDiscountBadge category={product.category} />
+          <div className="mt-3 rounded-lg transition hover:opacity-95">
+            <h3 className="font-semibold text-white group-hover:text-red-400">
+              <TranslatedText as="span">{product.name}</TranslatedText>
+            </h3>
+            <p className="text-sm font-bold text-red-500">
+              <Price usd={product.price} />
+            </p>
+            <div className="mt-2">
+              <ProductDiscountBadge category={product.category} />
+            </div>
           </div>
         </Link>
 
