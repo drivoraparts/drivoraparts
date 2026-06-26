@@ -1,15 +1,18 @@
-import PageHeading from "@/components/catalog/PageHeading";
 import AllProductsFeed from "@/components/catalog/AllProductsFeed";
 
 export const dynamic = "force-static";
 
 export default function AllProductsPage() {
   return (
-    <main className="min-h-screen p-6 text-white">
-      <PageHeading
-        title="All Products"
-        subtitle="Browse everything in the marketplace"
-      />
+    <main className="min-h-screen px-3 pb-6 pt-20 text-white sm:px-6 sm:pt-24">
+      <header className="mb-3 sm:mb-6">
+        <h1 className="inline-block border-b-2 border-red-600 pb-1 text-xl font-bold text-white sm:text-3xl sm:pb-2">
+          All Products
+        </h1>
+        <p className="mt-1 hidden text-sm text-gray-400 sm:block">
+          Browse everything in the marketplace
+        </p>
+      </header>
       <AllProductsFeed />
     </main>
   );

@@ -10,7 +10,7 @@ import {
   getProductThumbnail,
   slugify,
 } from "@/lib/inventory";
-import CatalogProductCard from "./CatalogProductCard";
+import AllProductsGridCard from "./AllProductsGridCard";
 import { engineTree } from "@/data/engine";
 
 const allProducts = getAllProducts();
@@ -81,67 +81,65 @@ export default function AllProductsFeed() {
   }, [query, categoryFilter, brandFilter, priceFilter]);
 
   return (
-    <div className="space-y-8">
-      {/* Search */}
-      <div>
+    <div className="space-y-3 sm:space-y-4">
+      {/* Search + filters — compact so products sit above the fold on mobile */}
+      <div className="space-y-2">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by product name, brand, category, or engine type..."
-          className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-gray-500 focus:border-red-500 focus:outline-none transition-colors duration-300"
+          placeholder="Search products..."
+          className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:border-red-500 focus:outline-none"
         />
+
+        <div className="grid grid-cols-3 gap-1.5 sm:flex sm:flex-wrap sm:gap-3">
+          <select
+            value={categoryFilter}
+            onChange={(e) => {
+              setCategoryFilter(e.target.value);
+              setBrandFilter("");
+            }}
+            className="min-w-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-[11px] text-white focus:border-red-500 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
+          >
+            <option value="">All Categories</option>
+            {categories.map((cat) => (
+              <option key={cat.slug} value={cat.slug}>
+                {cat.name}
+              </option>
+            ))}
+          </select>
+
+          <select
+            value={brandFilter}
+            onChange={(e) => setBrandFilter(e.target.value)}
+            className="min-w-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-[11px] text-white focus:border-red-500 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
+          >
+            <option value="">All Brands</option>
+            {filteredBrands.map((brand) => (
+              <option key={brand.slug} value={brand.slug}>
+                {brand.name}
+              </option>
+            ))}
+          </select>
+
+          <select
+            value={priceFilter}
+            onChange={(e) => setPriceFilter(e.target.value)}
+            className="min-w-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-[11px] text-white focus:border-red-500 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
+          >
+            <option value="all">All Prices</option>
+            <option value="under-1000">Under $1k</option>
+            <option value="over-1000">$1k+</option>
+          </select>
+        </div>
       </div>
 
-      {/* Filters */}
-      <div className="flex flex-col gap-4 md:flex-row md:flex-wrap">
-        <select
-          value={categoryFilter}
-          onChange={(e) => {
-            setCategoryFilter(e.target.value);
-            setBrandFilter("");
-          }}
-          className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-white focus:border-red-500 focus:outline-none"
-        >
-          <option value="">All Categories</option>
-          {categories.map((cat) => (
-            <option key={cat.slug} value={cat.slug}>
-              {cat.name}
-            </option>
-          ))}
-        </select>
-
-        <select
-          value={brandFilter}
-          onChange={(e) => setBrandFilter(e.target.value)}
-          className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-white focus:border-red-500 focus:outline-none"
-        >
-          <option value="">All Brands</option>
-          {filteredBrands.map((brand) => (
-            <option key={brand.slug} value={brand.slug}>
-              {brand.name}
-            </option>
-          ))}
-        </select>
-
-        <select
-          value={priceFilter}
-          onChange={(e) => setPriceFilter(e.target.value)}
-          className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-white focus:border-red-500 focus:outline-none"
-        >
-          <option value="all">All Prices</option>
-          <option value="under-1000">Under $1,000</option>
-          <option value="over-1000">$1,000 and above</option>
-        </select>
-      </div>
-
-      {/* Product grid */}
       {filtered.length === 0 ? (
-        <p className="text-gray-500">No products match your search.</p>
+        <p className="text-sm text-gray-500">No products match your search.</p>
       ) : (
-        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-1.5 sm:gap-3 md:gap-4">
           {filtered.map((product) => (
-            <CatalogProductCard
+            <AllProductsGridCard
               key={product.id}
               product={{
                 id: product.id,
