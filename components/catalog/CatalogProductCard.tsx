@@ -8,7 +8,7 @@ import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { CatalogImageGallery } from "@/components/product/ImageCarousel";
-import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
+import { getProductThumbnail } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory";
 
 export type CatalogProductCardData = {
@@ -26,19 +26,21 @@ export default function CatalogProductCard({
 }: {
   product: CatalogProductCardData;
 }) {
+  const thumbnail = getProductThumbnail(product);
+  const galleryImages =
+    product.images && product.images.length > 0
+      ? product.images
+      : [thumbnail];
+
   const cartProduct: AddToCartProduct = {
     id: product.id,
     name: product.name,
     price: product.price,
-    image: product.thumbnail || DEFAULT_PRODUCT_IMAGE,
+    image: thumbnail,
     category: product.category,
     brand: product.brand,
   };
 
-  const galleryImages =
-    product.images && product.images.length > 0
-      ? product.images
-      : [product.thumbnail || DEFAULT_PRODUCT_IMAGE];
   const productHref = routes.product(product.id);
 
   return (
@@ -50,7 +52,6 @@ export default function CatalogProductCard({
           <CatalogImageGallery
             images={galleryImages}
             alt={product.name}
-            thumbnail={product.thumbnail || DEFAULT_PRODUCT_IMAGE}
           />
 
           <div className="mt-3 rounded-lg transition hover:opacity-95">

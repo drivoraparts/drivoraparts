@@ -11,6 +11,7 @@ import {
 import {
   DEFAULT_PRODUCT_IMAGE,
   resolveProductGallery,
+  resolveProductImage,
 } from "@/lib/inventory/media";
 
 type ManualImageGalleryProps = {
@@ -24,18 +25,31 @@ function GalleryImage({
   src,
   alt,
   loading,
+  fallbacks = [],
 }: {
   src: string;
   alt: string;
   loading?: "eager" | "lazy";
+  fallbacks?: string[];
 }) {
-  const [currentSrc, setCurrentSrc] = useState(
-    src?.trim() || DEFAULT_PRODUCT_IMAGE
+  const candidates = useMemo(
+    () =>
+      [src, ...fallbacks]
+        .map((value) => value?.trim())
+        .filter(Boolean) as string[],
+    [src, fallbacks]
   );
+  const [index, setIndex] = useState(0);
+  const [useDefault, setUseDefault] = useState(false);
 
   useEffect(() => {
-    setCurrentSrc(src?.trim() || DEFAULT_PRODUCT_IMAGE);
-  }, [src]);
+    setIndex(0);
+    setUseDefault(false);
+  }, [src, fallbacks]);
+
+  const currentSrc = useDefault
+    ? DEFAULT_PRODUCT_IMAGE
+    : resolveProductImage(candidates[index] ?? src);
 
   return (
     <img
@@ -45,9 +59,11 @@ function GalleryImage({
       loading={loading}
       decoding="async"
       onError={() => {
-        setCurrentSrc((prev) =>
-          prev === DEFAULT_PRODUCT_IMAGE ? prev : DEFAULT_PRODUCT_IMAGE
-        );
+        if (index < candidates.length - 1) {
+          setIndex((current) => current + 1);
+          return;
+        }
+        setUseDefault(true);
       }}
       className="h-full w-full select-none object-cover"
     />
@@ -60,12 +76,10 @@ export default function ImageCarousel({
   thumbnail,
   variant = "detail",
 }: ManualImageGalleryProps) {
-  const galleryImages = useMemo(() => {
-    const base = resolveProductGallery(thumbnail, images);
-    return thumbnail?.trim()
-      ? [thumbnail, ...base.filter((img) => img !== thumbnail)]
-      : base;
-  }, [images, thumbnail]);
+  const galleryImages = useMemo(
+    () => resolveProductGallery(thumbnail, images),
+    [images, thumbnail]
+  );
   const total = galleryImages.length;
   const hasMultiple = total > 1;
 
@@ -155,15 +169,16 @@ export default function ImageCarousel({
           onPointerCancel={endDrag}
           onPointerLeave={endDrag}
         >
-          {galleryImages.map((src, index) => (
+          {galleryImages.map((slideSrc, index) => (
             <div
-              key={`${src}-${index}`}
-              className="h-full w-full shrink-0 snap-center snap-always"
+              key={`${slideSrc}-${index}`}
+              className="h-full min-w-full flex-[0_0_100%] snap-center snap-always"
             >
               <GalleryImage
-                src={src}
+                src={slideSrc}
                 alt={`${alt} — image ${index + 1}`}
                 loading={index === 0 ? "eager" : "lazy"}
+                fallbacks={galleryImages.filter((_, i) => i !== index)}
               />
             </div>
           ))}
@@ -191,7 +206,7 @@ export default function ImageCarousel({
         )}
       </div>
 
-      {hasMultiple && (
+      {hasMultiple && !isCard && (
         <div className="mt-2 flex justify-center gap-1.5">
           {galleryImages.map((_, index) => (
             <button

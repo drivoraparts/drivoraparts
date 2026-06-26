@@ -7,10 +7,11 @@ import {
   getBrands,
   getBrandBySlug,
   getCategory,
+  getProductThumbnail,
+  slugify,
 } from "@/lib/inventory";
 import CatalogProductCard from "./CatalogProductCard";
 import { engineTree } from "@/data/engine";
-import { slugify } from "@/lib/inventory";
 
 const allProducts = getAllProducts();
 const categories = getCategories();
@@ -146,7 +147,7 @@ export default function AllProductsFeed() {
                 id: product.id,
                 name: product.name,
                 price: product.price,
-                thumbnail: product.thumbnail ?? product.image ?? "",
+                thumbnail: getProductThumbnail(product),
                 images: product.images,
                 category: product.category,
                 brand: product.brand,

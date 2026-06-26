@@ -21,7 +21,7 @@ import {
   slugify as invSlugify,
   getConditionLabel,
   resolveProductGallery,
-  resolveProductImage,
+  getProductThumbnail,
 } from "@/lib/inventory";
 
 export const slugify = invSlugify;
@@ -69,7 +69,7 @@ export const store: Record<string, Category> = Object.fromEntries(
         price: p.price,
         condition: getConditionLabel(p),
         location: p.location ?? "",
-        thumbnail: resolveProductImage(p.thumbnail ?? p.image),
+        thumbnail: getProductThumbnail(p),
         images: resolveProductGallery(p.thumbnail ?? p.image, p.images),
         description: p.description ?? "",
       }));

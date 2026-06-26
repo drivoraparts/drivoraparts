@@ -21,6 +21,7 @@ export {
   DEFAULT_PRODUCT_IMAGE,
   resolveProductImage,
   resolveProductGallery,
+  getProductThumbnail,
 } from "./media";
 export {
   resolveProductCondition,

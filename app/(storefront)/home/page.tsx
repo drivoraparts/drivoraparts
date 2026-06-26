@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { products, getCategories, routes } from "@/lib/inventory";
+import { getCategories, routes, products, getProductThumbnail } from "@/lib/inventory";
 import Price from "@/components/currency/Price";
 import TranslatedText from "@/components/i18n/TranslatedText";
 
@@ -125,8 +125,11 @@ export default function HomePage() {
               }}
             >
               <img
-                src={p.thumbnail}
-                className="h-40 w-full object-cover"
+                src={getProductThumbnail(p)}
+                alt={p.name}
+                loading="lazy"
+                decoding="async"
+                className="h-40 w-full object-cover bg-black/40"
               />
 
               <div className="p-3">

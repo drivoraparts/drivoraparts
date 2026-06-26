@@ -69,6 +69,7 @@ Worldwide Shipping Available`,
     stock: true,
     condition: "brand-new",
     location: "UK Warehouse",
+    image: "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
     thumbnail: "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
     images: [
       "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
