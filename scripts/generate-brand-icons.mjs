@@ -9,6 +9,9 @@ const source = join(root, "spare pic", "IMG_4091.JPEG");
 const publicDir = join(root, "public");
 const brandDir = join(publicDir, "brand");
 
+/** ~12% safe zone — similar to major app icons (logo uses most of width, not cropped). */
+const PADDING_RATIO = 0.12;
+
 mkdirSync(brandDir, { recursive: true });
 
 /** Matches site background so icons read clearly on light and dark browser chrome. */
@@ -43,17 +46,20 @@ async function removeWhiteBackground(inputBuffer) {
 const trimmed = await sharp(source).trim({ threshold: 14 }).png().toBuffer();
 const logoSource = await removeWhiteBackground(trimmed);
 
-async function iconBuffer(size, paddingRatio = 0.04) {
+async function iconBuffer(size, paddingRatio = PADDING_RATIO) {
   const pad = Math.max(1, Math.round(size * paddingRatio));
   const inner = size - pad * 2;
 
-  const scaled = await sharp(logoSource)
-    .resize(inner, inner, {
-      fit: "cover",
-      position: "centre",
-    })
-    .png()
-    .toBuffer();
+  let pipeline = sharp(logoSource).resize(inner, inner, {
+    fit: "contain",
+    background: { r: 0, g: 0, b: 0, alpha: 0 },
+  });
+
+  if (size <= 48) {
+    pipeline = pipeline.sharpen({ sigma: 0.5, m1: 0.5, m2: 0.25 });
+  }
+
+  const scaled = await pipeline.png().toBuffer();
 
   return sharp({
     create: {
@@ -68,13 +74,13 @@ async function iconBuffer(size, paddingRatio = 0.04) {
     .toBuffer();
 }
 
-const icon512 = await iconBuffer(512, 0.02);
-const icon192 = await iconBuffer(192, 0.02);
-const icon180 = await iconBuffer(180, 0.02);
-const icon64 = await iconBuffer(64, 0.02);
-const icon48 = await iconBuffer(48, 0.02);
-const icon32 = await iconBuffer(32, 0.02);
-const icon16 = await iconBuffer(16, 0.02);
+const icon512 = await iconBuffer(512);
+const icon192 = await iconBuffer(192);
+const icon180 = await iconBuffer(180);
+const icon64 = await iconBuffer(64);
+const icon48 = await iconBuffer(48);
+const icon32 = await iconBuffer(32);
+const icon16 = await iconBuffer(16);
 
 const faviconIco = await toIco([icon16, icon32, icon48]);
 
@@ -138,4 +144,4 @@ writeFileSync(
   )}\n`
 );
 
-console.log("Generated full-bleed brand icons, favicon.ico, and site.webmanifest");
+console.log("Generated balanced brand icons, favicon.ico, and site.webmanifest");
