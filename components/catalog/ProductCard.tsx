@@ -30,10 +30,12 @@ export default function ProductCard({ product }: { product: Product }) {
     brand: product.brand,
   };
 
+  const productHref = `/product/${product.id}`;
+
   return (
     <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-red-500/40">
-      <div className="relative h-[180px] overflow-hidden">
-        <Link href={`/product/${product.id}`}>
+      <Link href={productHref} className="block">
+        <div className="relative h-[180px] overflow-hidden">
           <img
             src={product.thumbnail}
             alt={product.name}
@@ -41,41 +43,35 @@ export default function ProductCard({ product }: { product: Product }) {
             decoding="async"
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
-        </Link>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-      </div>
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        </div>
+      </Link>
 
       <div className="p-4">
-        <h3 className="text-sm font-semibold text-white">
-          <TranslatedText as="span">{product.name}</TranslatedText>
-        </h3>
+        <Link href={productHref} className="block">
+          <h3 className="text-sm font-semibold text-white group-hover:text-red-400">
+            <TranslatedText as="span">{product.name}</TranslatedText>
+          </h3>
 
-        <p className="mt-1 text-xs text-gray-400">{product.condition}</p>
-        <p className="mt-1 text-xs text-gray-500">{product.location}</p>
+          <p className="mt-1 text-xs text-gray-400">{product.condition}</p>
+          <p className="mt-1 text-xs text-gray-500">{product.location}</p>
 
-        <div className="mt-3 flex items-center justify-between">
-          <span className="font-bold text-red-500">
-            <Price usd={product.price} />
-          </span>
-          <span className="text-[10px] uppercase text-gray-400">
-            {product.category}
-          </span>
-        </div>
-
-        <div className="mt-2">
-          <ProductDiscountBadge category={product.category} />
-        </div>
-
-        <div className="mt-4 flex gap-2">
-          <Link
-            href={`/product/${product.id}`}
-            className="flex-1 rounded-lg border border-white/15 py-2 text-center text-xs font-semibold transition hover:bg-white/10"
-          >
-            View Item
-          </Link>
-          <div className="flex-1 min-w-0">
-            <AddToCartButton product={cartProduct} compact />
+          <div className="mt-3 flex items-center justify-between">
+            <span className="font-bold text-red-500">
+              <Price usd={product.price} />
+            </span>
+            <span className="text-[10px] uppercase text-gray-400">
+              {product.category}
+            </span>
           </div>
+
+          <div className="mt-2">
+            <ProductDiscountBadge category={product.category} />
+          </div>
+        </Link>
+
+        <div className="mt-4">
+          <AddToCartButton product={cartProduct} compact />
         </div>
       </div>
 

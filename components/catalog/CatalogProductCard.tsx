@@ -32,12 +32,17 @@ export default function CatalogProductCard({
     brand: product.brand,
   };
 
+  const productHref = routes.product(product.id);
+
   return (
     <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-red-500 hover:bg-white/10">
-      <div className="absolute inset-0 bg-red-500/10 blur-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+      <div className="pointer-events-none absolute inset-0 bg-red-500/10 blur-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative p-4">
-        <Link href={routes.product(product.id)} className="block">
+        <Link
+          href={productHref}
+          className="block rounded-lg transition hover:opacity-95"
+        >
           <img
             src={product.thumbnail}
             alt={product.name}
@@ -45,7 +50,7 @@ export default function CatalogProductCard({
             decoding="async"
             className="h-40 w-full rounded-lg object-cover"
           />
-          <h3 className="mt-3 font-semibold">
+          <h3 className="mt-3 font-semibold text-white group-hover:text-red-400">
             <TranslatedText as="span">{product.name}</TranslatedText>
           </h3>
           <p className="text-sm font-bold text-red-500">
@@ -56,16 +61,8 @@ export default function CatalogProductCard({
           </div>
         </Link>
 
-        <div className="mt-3 flex gap-2">
-          <Link
-            href={routes.product(product.id)}
-            className="flex-1 rounded-lg border border-white/15 py-2 text-center text-xs font-semibold text-white transition hover:bg-white/10"
-          >
-            View
-          </Link>
-          <div className="flex-1 min-w-0">
-            <AddToCartButton product={cartProduct} compact />
-          </div>
+        <div className="mt-3">
+          <AddToCartButton product={cartProduct} compact />
         </div>
       </div>
 

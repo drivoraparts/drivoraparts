@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import { useCart } from "@/context/CartContext";
 import { trackEvent } from "@/lib/analytics/client";
 import { productHasStock } from "@/lib/stock";
@@ -27,7 +27,10 @@ export default function AddToCartButton({
   const [loading, setLoading] = useState(false);
   const { addToCart, cart } = useCart();
 
-  const handleAdd = async () => {
+  const handleAdd = async (event: MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    event.stopPropagation();
+
     const neededQty = cart.find((i) => i.id === product.id)?.quantity ?? 0;
     const totalQty = neededQty + quantity;
 
@@ -74,11 +77,20 @@ export default function AddToCartButton({
       disabled={loading}
       className={
         compact
-          ? "w-full rounded-lg bg-red-600 px-2 py-2 text-xs font-semibold text-white transition hover:bg-red-500 disabled:opacity-60"
-          : "w-full rounded-md bg-red-600 px-3 py-3 text-sm font-bold text-white transition hover:bg-red-500 disabled:opacity-60"
+          ? "inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-red-600 px-3 py-2.5 text-xs font-bold tracking-wide text-white transition hover:bg-red-500 disabled:opacity-60"
+          : "inline-flex w-full items-center justify-center gap-2 rounded-md bg-red-600 px-3 py-3 text-sm font-bold text-white transition hover:bg-red-500 disabled:opacity-60"
       }
     >
-      {loading ? "Adding..." : compact ? "Add" : "Add to Cart"}
+      {loading ? (
+        "Adding..."
+      ) : compact ? (
+        <>
+          <span aria-hidden="true">🛒</span>
+          ADD CART
+        </>
+      ) : (
+        "Add to Cart"
+      )}
     </button>
   );
 }
