@@ -5,6 +5,7 @@ import {
   getProductsByCategory,
   routes,
   slugify,
+  categoryShowsProductsOnHub,
 } from "@/lib/inventory";
 import { categories } from "@/lib/inventory/categories";
 import CategoryTemplate from "@/components/catalog/CategoryTemplate";
@@ -81,14 +82,7 @@ export default async function Page({ params }: PageProps) {
           href: routes.brand(slug, slugify(brand)),
         }))}
         products={categoryData.products}
-        showProducts={
-          slug !== "brakes" &&
-          slug !== "transmission" &&
-          slug !== "turbocharger" &&
-          slug !== "suspension" &&
-          slug !== "electronics" &&
-          slug !== "lighting"
-        }
+        showProducts={categoryShowsProductsOnHub(slug)}
       />
     </>
   );

@@ -9,13 +9,13 @@
    can render a clean fallback when a category has no data.
 ========================================================= */
 
-import { categories } from "./categories";
+import { categories, categoryShowsProductsOnHub } from "./categories";
 import { brands } from "./brands";
 import { products } from "./products";
 import type { Brand, Category, Product } from "./types";
 
 export type { Brand, Category, Product, ProductCondition } from "./types";
-export { categories, brands, products };
+export { categories, brands, products, categoryShowsProductsOnHub };
 export { routes } from "./routes";
 export {
   DEFAULT_PRODUCT_IMAGE,

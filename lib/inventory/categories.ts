@@ -19,3 +19,18 @@ export const categories: Category[] = [
   { slug: "interior", name: "Interior" },
   { slug: "aftermarket", name: "Aftermarket" },
 ];
+
+/** Category pages show brands only — products live under /catalog/[category]/[brand]. */
+export const BRAND_FIRST_CATEGORY_SLUGS = new Set([
+  "brakes",
+  "transmission",
+  "turbocharger",
+  "suspension",
+  "electronics",
+  "lighting",
+  "body-parts",
+]);
+
+export function categoryShowsProductsOnHub(slug: string): boolean {
+  return !BRAND_FIRST_CATEGORY_SLUGS.has(slug);
+}
