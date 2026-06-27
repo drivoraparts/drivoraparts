@@ -26,6 +26,14 @@ export type CartDiscountBreakdown = {
   total: number;
 };
 
+export function getTotalCartQuantity(items: DiscountLineInput[]): number {
+  return items.reduce((sum, item) => sum + item.quantity, 0);
+}
+
+export function cartQualifiesForDiscounts(items: DiscountLineInput[]): boolean {
+  return getTotalCartQuantity(items) >= BULK_MIN_QUANTITY;
+}
+
 export function getBulkDiscountPercent(category?: string): number {
   if (category && PREMIUM_BULK_CATEGORIES.has(category)) {
     return PREMIUM_BULK_PERCENT;
@@ -39,7 +47,7 @@ export function getProductDiscountLabel(category?: string): string {
 }
 
 export function getOrderDiscountLabel(): string {
-  return `Order · Save ${ORDER_DISCOUNT_PERCENT}%`;
+  return `Buy 2+ · Extra ${ORDER_DISCOUNT_PERCENT}% off order`;
 }
 
 export function calculateCartDiscounts(
@@ -60,7 +68,9 @@ export function calculateCartDiscounts(
   }
 
   const afterBulk = grossSubtotal - bulkDiscount;
-  const orderDiscount = afterBulk * (ORDER_DISCOUNT_PERCENT / 100);
+  const orderDiscount = cartQualifiesForDiscounts(items)
+    ? afterBulk * (ORDER_DISCOUNT_PERCENT / 100)
+    : 0;
   const merchandiseTotal = afterBulk - orderDiscount;
   const total = merchandiseTotal + shipping;
 
