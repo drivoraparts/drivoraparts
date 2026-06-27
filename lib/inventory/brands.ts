@@ -91,13 +91,24 @@ export const brands: Brand[] = [
   { slug: "toyota", name: "Toyota", category: "body-parts" },
   { slug: "universal", name: "Universal", category: "body-parts" },
 
-  // Aftermarket (vehicle brands)
+  // Interior
+  { slug: "ford", name: "Ford", category: "interior" },
+  { slug: "honda", name: "Honda", category: "interior" },
+  { slug: "nissan", name: "Nissan", category: "interior" },
+  { slug: "subaru", name: "Subaru", category: "interior" },
+  { slug: "toyota", name: "Toyota", category: "interior" },
+  { slug: "volkswagen", name: "Volkswagen", category: "interior" },
+
+  // Aftermarket
+  { slug: "ford", name: "Ford", category: "aftermarket" },
+  { slug: "leer", name: "Leer", category: "aftermarket" },
+  { slug: "snugtop", name: "Snugtop", category: "aftermarket" },
+  { slug: "universal", name: "Universal", category: "aftermarket" },
   { slug: "toyota", name: "Toyota", category: "aftermarket" },
   { slug: "honda", name: "Honda", category: "aftermarket" },
   { slug: "bmw", name: "BMW", category: "aftermarket" },
   { slug: "mercedes-benz", name: "Mercedes-Benz", category: "aftermarket" },
   { slug: "audi", name: "Audi", category: "aftermarket" },
-  { slug: "ford", name: "Ford", category: "aftermarket" },
   { slug: "chevrolet", name: "Chevrolet", category: "aftermarket" },
   { slug: "nissan", name: "Nissan", category: "aftermarket" },
   { slug: "lexus", name: "Lexus", category: "aftermarket" },

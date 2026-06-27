@@ -29,6 +29,7 @@ export const BRAND_FIRST_CATEGORY_SLUGS = new Set([
   "electronics",
   "lighting",
   "body-parts",
+  "interior",
 ]);
 
 export function categoryShowsProductsOnHub(slug: string): boolean {

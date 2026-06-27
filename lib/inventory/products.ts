@@ -11,6 +11,7 @@
 import type { Product } from "./types";
 import { aftermarketProducts } from "./aftermarket-products";
 import { bodyPartsProducts } from "./body-parts-products";
+import { interiorProducts } from "./interior-products";
 import { electronicsProducts } from "./electronics-products";
 import { lightingProducts } from "./lighting-products";
 import { applyPublicPrices } from "./pricing";
@@ -4213,6 +4214,7 @@ Worldwide Shipping Available`,
   ...electronicsProducts,
   ...lightingProducts,
   ...bodyPartsProducts,
+  ...interiorProducts,
   ...aftermarketProducts,
 ];
 
