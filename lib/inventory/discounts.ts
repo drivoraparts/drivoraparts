@@ -1,14 +1,6 @@
 export const BULK_MIN_QUANTITY = 2;
-export const STANDARD_BULK_PERCENT = 20;
-export const PREMIUM_BULK_PERCENT = 30;
-export const ORDER_DISCOUNT_PERCENT = 10;
-
-/** Categories that qualify for the higher buy-2 bulk discount. */
-export const PREMIUM_BULK_CATEGORIES = new Set([
-  "engine",
-  "transmission",
-  "turbocharger",
-]);
+export const BASE_ORDER_DISCOUNT_PERCENT = 5;
+export const BULK_ORDER_DISCOUNT_PERCENT = 20;
 
 export type DiscountLineInput = {
   id: number;
@@ -30,24 +22,16 @@ export function getTotalCartQuantity(items: DiscountLineInput[]): number {
   return items.reduce((sum, item) => sum + item.quantity, 0);
 }
 
-export function cartQualifiesForDiscounts(items: DiscountLineInput[]): boolean {
+export function cartQualifiesForBulkDiscount(items: DiscountLineInput[]): boolean {
   return getTotalCartQuantity(items) >= BULK_MIN_QUANTITY;
 }
 
-export function getBulkDiscountPercent(category?: string): number {
-  if (category && PREMIUM_BULK_CATEGORIES.has(category)) {
-    return PREMIUM_BULK_PERCENT;
-  }
-  return STANDARD_BULK_PERCENT;
-}
-
-export function getProductDiscountLabel(category?: string): string {
-  const percent = getBulkDiscountPercent(category);
-  return `Buy 2+ · Save ${percent}%`;
+export function getProductDiscountLabel(_category?: string): string {
+  return `Buy 2+ · Save ${BULK_ORDER_DISCOUNT_PERCENT}%`;
 }
 
 export function getOrderDiscountLabel(): string {
-  return `Buy 2+ · Extra ${ORDER_DISCOUNT_PERCENT}% off order`;
+  return `Every order · Save ${BASE_ORDER_DISCOUNT_PERCENT}%`;
 }
 
 export function calculateCartDiscounts(
@@ -55,23 +39,21 @@ export function calculateCartDiscounts(
   shipping = 0
 ): CartDiscountBreakdown {
   let grossSubtotal = 0;
-  let bulkDiscount = 0;
 
   for (const item of items) {
-    const lineGross = item.price * item.quantity;
-    grossSubtotal += lineGross;
-
-    if (item.quantity >= BULK_MIN_QUANTITY) {
-      const percent = getBulkDiscountPercent(item.category);
-      bulkDiscount += lineGross * (percent / 100);
-    }
+    grossSubtotal += item.price * item.quantity;
   }
 
-  const afterBulk = grossSubtotal - bulkDiscount;
-  const orderDiscount = cartQualifiesForDiscounts(items)
-    ? afterBulk * (ORDER_DISCOUNT_PERCENT / 100)
-    : 0;
-  const merchandiseTotal = afterBulk - orderDiscount;
+  let bulkDiscount = 0;
+  let orderDiscount = 0;
+
+  if (cartQualifiesForBulkDiscount(items)) {
+    bulkDiscount = grossSubtotal * (BULK_ORDER_DISCOUNT_PERCENT / 100);
+  } else if (items.length > 0) {
+    orderDiscount = grossSubtotal * (BASE_ORDER_DISCOUNT_PERCENT / 100);
+  }
+
+  const merchandiseTotal = grossSubtotal - bulkDiscount - orderDiscount;
   const total = merchandiseTotal + shipping;
 
   return {

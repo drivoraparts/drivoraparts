@@ -24,7 +24,7 @@ export default function OrderTotalsSummary({
 
       {breakdown.bulkDiscount > 0 && (
         <div className="flex items-center justify-between gap-3 text-sm">
-          <span className="text-emerald-300/90">Bulk discount</span>
+          <span className="text-emerald-300/90">Bulk discount (20%)</span>
           <span className="text-emerald-300">
             −<Price usd={breakdown.bulkDiscount} />
           </span>
@@ -34,7 +34,7 @@ export default function OrderTotalsSummary({
       {breakdown.orderDiscount > 0 && (
         <div className="flex items-center justify-between gap-3 text-sm">
           <span className="flex items-center gap-2 text-amber-200/90">
-            Order discount
+            Order discount (5%)
             <OrderDiscountBadge />
           </span>
           <span className="text-amber-200">
