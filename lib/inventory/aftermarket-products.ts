@@ -138,7 +138,7 @@ export const aftermarketProducts: Product[] = [
     condition: "Used",
     location: "USA Warehouse",
     createdAt: 1740787200000,
-    ...media("canopy", ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
+    ...media("truck-bed-canopy", ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
     description: canopyDescription(
       "Canopy",
       "General-purpose truck bed canopy with solid rear closure and side profile compatible with many utility beds. Practical used cap for work or recreation."

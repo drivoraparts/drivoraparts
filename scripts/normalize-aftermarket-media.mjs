@@ -8,7 +8,7 @@ const MAP = [
   ["Alloy Ute canopy", "alloy-ute-canopy"],
   ["Aluminium Canopy", "aluminum-canopy"],
   ["Camper shell Snugtop", "camper-shell-snugtop"],
-  ["Canopy", "canopy"],
+  ["Canopy", "truck-bed-canopy"],
   ["EOI 1200 black canopy", "eoi-1200-black-canopy"],
   ["Leer 100XR", "leer-100xr"],
   ["Leer Camper Shell", "leer-camper-shell"],
