@@ -5,9 +5,17 @@ import {
   routes,
   getProductById as getInventoryProductById,
   getProductCatalogMeta,
+  getCategory,
 } from "@/lib/inventory";
-import { getSiteUrl } from "@/lib/env";
 import ProductTemplate from "@/components/product/ProductTemplate";
+import JsonLdScript from "@/components/seo/JsonLdScript";
+import {
+  absoluteImageUrl,
+  breadcrumbJsonLd,
+  buildPageMetadata,
+  productJsonLd,
+  productSeoDescription,
+} from "@/lib/seo";
 
 export const revalidate = 3600;
 type PageProps = {
@@ -19,33 +27,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductById(Number(id));
 
   if (!product) {
-    return { title: "Product Not Found | DrivoraParts" };
+    return { title: "Product Not Found" };
   }
 
-  const siteUrl = getSiteUrl();
-  const url = `${siteUrl}${routes.product(product.id)}`;
-  const image = product.thumbnail.startsWith("http")
-    ? product.thumbnail
-    : `${siteUrl}${product.thumbnail}`;
+  const description = productSeoDescription(
+    product.description,
+    `Buy ${product.name} at DrivoraParts with secure checkout and worldwide shipping.`
+  );
 
-  return {
-    title: `${product.name} | DrivoraParts`,
-    description: product.description.slice(0, 160),
-    openGraph: {
-      title: product.name,
-      description: product.description.slice(0, 160),
-      url,
-      type: "website",
-      images: [{ url: image, alt: product.name }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: product.name,
-      description: product.description.slice(0, 160),
-      images: [image],
-    },
-    alternates: { canonical: url },
-  };
+  return buildPageMetadata({
+    title: product.name,
+    description,
+    path: routes.product(product.id),
+    image: product.thumbnail,
+  });
 }
 
 export default async function ProductPage({ params }: PageProps) {
@@ -69,35 +64,26 @@ export default async function ProductPage({ params }: PageProps) {
   );
   const inStock = inventoryProduct?.stock !== false;
   const rawCondition = inventoryProduct?.condition ?? product.condition;
+  const category = getCategory(product.category);
 
-  const siteUrl = getSiteUrl();
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    image: product.thumbnail.startsWith("http")
-      ? product.thumbnail
-      : `${siteUrl}${product.thumbnail}`,
-    description: product.description.slice(0, 500),
-    sku: String(product.id),
-    ...(inventoryProduct?.partNumber
-      ? { mpn: inventoryProduct.partNumber }
-      : {}),
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "USD",
-      price: product.price,
-      availability: "https://schema.org/InStock",
-      url: `${siteUrl}${routes.product(product.id)}`,
-    },
-  };
+  const breadcrumbs = breadcrumbJsonLd([
+    { name: "Catalog", path: routes.catalog },
+    ...(category
+      ? [{ name: category.name, path: routes.category(category.slug) }]
+      : []),
+    { name: product.name, path: routes.product(product.id) },
+  ]);
+
+  const structuredData = inventoryProduct
+    ? [
+        breadcrumbs,
+        productJsonLd(inventoryProduct, product.price),
+      ]
+    : [breadcrumbs];
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLdScript data={structuredData} />
       <ProductTemplate
         product={product}
         catalogMeta={catalogMeta}

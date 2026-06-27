@@ -36,6 +36,11 @@ export function getSiteUrl(): string {
   return optional("NEXT_PUBLIC_SITE_URL", "https://drivoraparts.com");
 }
 
+/** Optional Google Search Console HTML tag verification code. */
+export function getGoogleSiteVerification(): string | null {
+  return process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? null;
+}
+
 export function getResendApiKey(): string | null {
   return process.env.RESEND_API_KEY ?? null;
 }

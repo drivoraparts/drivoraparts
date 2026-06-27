@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import CompanyAddress from "@/components/content/CompanyAddress";
 import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Contact Support",
+  description:
+    "Contact DrivoraParts support for product questions, orders, fitment help, and marketplace assistance.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

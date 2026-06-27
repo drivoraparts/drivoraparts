@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import CompanyAddress from "@/components/content/CompanyAddress";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "About DrivoraParts",
+  description:
+    "Learn about DrivoraParts — a performance automotive marketplace for engines, drivetrain upgrades, suspension, brakes, electronics, and body parts.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

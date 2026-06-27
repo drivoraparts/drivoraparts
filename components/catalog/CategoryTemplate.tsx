@@ -27,11 +27,13 @@ type TemplateBrand = {
 
 export default function CategoryTemplate({
   title,
+  intro,
   brands,
   products,
   showProducts = true,
 }: {
   title: string;
+  intro?: string;
   brands: TemplateBrand[];
   products: TemplateProduct[];
   showProducts?: boolean;
@@ -39,6 +41,11 @@ export default function CategoryTemplate({
   return (
     <main className="min-h-screen p-6 text-white">
       <PageHeading title={title} />
+      {intro ? (
+        <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
+          {intro}
+        </p>
+      ) : null}
 
       {/* BRANDS */}
       {brands.length > 0 && (

@@ -3,11 +3,18 @@ import { headers } from "next/headers";
 import "./globals.css";
 import StoreProviders from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
-import { getSiteUrl } from "@/lib/env";
+import { getSiteUrl, getGoogleSiteVerification } from "@/lib/env";
+import {
+  DEFAULT_DESCRIPTION,
+  SITE_NAME,
+  SITE_TAGLINE,
+} from "@/lib/seo";
 import {
   detectCurrencyFromAcceptLanguage,
 } from "@/lib/currency";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
+import JsonLdScript from "@/components/seo/JsonLdScript";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
@@ -24,15 +31,14 @@ export const metadata: Metadata = {
     default: "DrivoraParts | Automotive Performance Marketplace",
     template: "%s | DrivoraParts",
   },
-  description:
-    "Buy performance engines, turbo systems, and aftermarket parts from a trusted automotive marketplace.",
+  description: DEFAULT_DESCRIPTION,
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "DrivoraParts",
-    title: "DrivoraParts",
-    description: "Automotive Performance Marketplace",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_TAGLINE,
   },
   robots: {
     index: true,
@@ -76,6 +82,9 @@ export const metadata: Metadata = {
   other: {
     "mobile-web-app-capable": "yes",
   },
+  ...(getGoogleSiteVerification()
+    ? { verification: { google: getGoogleSiteVerification()! } }
+    : {}),
 };
 
 export default async function RootLayout({
@@ -94,6 +103,7 @@ export default async function RootLayout({
   return (
     <html lang={initialLanguage} suppressHydrationWarning>
       <body>
+        <JsonLdScript data={[organizationJsonLd(), websiteJsonLd()]} />
         {isAdmin ? (
           children
         ) : (
