@@ -60,7 +60,7 @@ export default function AdminChatAssistant() {
   };
 
   return (
-    <div className="fixed bottom-6 left-6 z-[10000]">
+    <div className="fixed bottom-6 right-6 z-50 max-w-[calc(100vw-3rem)]">
       {open ? (
         <div className="mb-3 w-[min(92vw,380px)] overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-2xl ">
           <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3">

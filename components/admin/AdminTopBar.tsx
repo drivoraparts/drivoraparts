@@ -18,14 +18,30 @@ function resolveTitle(pathname: string): string {
   return "Admin";
 }
 
-export default function AdminTopBar() {
+export default function AdminTopBar({
+  onOpenMobileNav,
+}: {
+  onOpenMobileNav?: () => void;
+}) {
   const pathname = usePathname() ?? "";
 
   return (
     <header className={adminUi.topBar}>
-      <div>
-        <p className={adminUi.kicker}>DrivoraParts Admin</p>
-        <p className="text-lg font-semibold text-zinc-900">{resolveTitle(pathname)}</p>
+      <div className="flex items-center gap-3">
+        {onOpenMobileNav ? (
+          <button
+            type="button"
+            aria-label="Open navigation menu"
+            className="rounded-lg border border-zinc-300 px-3 py-2 text-sm font-semibold text-zinc-700 md:hidden"
+            onClick={onOpenMobileNav}
+          >
+            Menu
+          </button>
+        ) : null}
+        <div>
+          <p className={adminUi.kicker}>DrivoraParts Admin</p>
+          <p className="text-lg font-semibold text-zinc-900">{resolveTitle(pathname)}</p>
+        </div>
       </div>
       <AdminLogoutButton />
     </header>
