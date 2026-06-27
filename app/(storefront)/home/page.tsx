@@ -115,7 +115,7 @@ export default function HomePage() {
       <section className="px-6 py-12">
         <h2 className="text-xl font-semibold mb-6">Hot Parts</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           {products.slice(0, 6).map((p, i) => (
             <div
               key={p.id}

@@ -86,7 +86,7 @@ export default function AftermarketFeed() {
       {filtered.length === 0 ? (
         <p className="text-gray-500">No aftermarket parts found.</p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           {filtered.map((product) => {
             const image = product.thumbnail ?? product.image;
             const inStock = product.stock !== false;
