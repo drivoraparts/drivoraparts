@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 import StoreProviders from "./providers";
@@ -24,6 +24,11 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 const siteUrl = getSiteUrl();
 
 const ICON_VERSION = "7";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

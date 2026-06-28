@@ -42,8 +42,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative z-0 bg-black text-white">
-      <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+    <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-black text-white">
+      <section className="relative flex h-screen w-full min-w-0 items-center justify-center overflow-hidden">
         <div
           id="parallaxHero"
           className="absolute inset-0 z-0 scale-110 bg-cover bg-center"

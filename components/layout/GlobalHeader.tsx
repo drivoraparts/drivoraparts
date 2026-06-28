@@ -38,14 +38,17 @@ export default function GlobalHeader({
 
   return (
     <header
-      className={`fixed left-0 top-0 z-[9999] w-full transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[9999] box-border w-full max-w-full overflow-x-clip transition-all duration-300 ${
         scrolled
           ? "border-b border-white/10 bg-black/70 py-3 backdrop-blur-xl"
           : "bg-transparent py-6"
       }`}
     >
-      <div className="flex items-center justify-between px-6">
-        <Link href="/" className="shrink-0 text-lg font-bold tracking-widest">
+      <div className="mx-auto flex w-full min-w-0 max-w-full items-center justify-between gap-2 px-4 sm:px-6">
+        <Link
+          href="/"
+          className="min-w-0 shrink text-base font-bold tracking-wide sm:text-lg sm:tracking-widest"
+        >
           Drivora<span className="text-red-500">Parts</span>
         </Link>
 
@@ -53,7 +56,7 @@ export default function GlobalHeader({
           {t("headerTagline")}
         </div>
 
-        <div className="flex shrink-0 items-center gap-4 text-sm sm:gap-6">
+        <div className="flex shrink-0 items-center gap-3 pr-0.5 text-sm sm:gap-6">
           <nav
             aria-label="Primary"
             className="hidden items-center gap-5 text-sm text-gray-300 xl:flex"
@@ -94,7 +97,7 @@ export default function GlobalHeader({
         </div>
       </div>
 
-      <div className="mt-2 hidden items-center justify-center gap-3 px-6 text-[11px] text-gray-400 md:flex xl:hidden">
+      <div className="mt-2 hidden items-center justify-center gap-3 px-4 text-[11px] text-gray-400 sm:px-6 md:flex xl:hidden">
         {NAV_LINKS.map((link) => (
           <Link key={link.href} href={link.href} className="transition hover:text-white">
             {link.label}

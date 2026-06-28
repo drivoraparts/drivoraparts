@@ -132,7 +132,7 @@ export default function CheckoutPage() {
   };
 
   const shellClass =
-    "mx-auto box-border w-full max-w-3xl px-4 py-6 text-white sm:px-6 sm:py-8";
+    "mx-auto box-border w-full min-w-0 max-w-3xl px-4 py-6 text-white sm:px-6 sm:py-8";
 
   if (!hydrated) {
     return (

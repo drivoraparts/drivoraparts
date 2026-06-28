@@ -267,6 +267,11 @@ export default function ProductTemplate({
       </div>
 
       <style>{`
+        @media (min-width: 640px) {
+          .product-page-grid {
+            padding: 20px !important;
+          }
+        }
         @media (max-width: 768px) {
           .product-page-grid {
             grid-template-columns: 1fr !important;

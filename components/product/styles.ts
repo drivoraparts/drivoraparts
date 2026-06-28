@@ -12,10 +12,10 @@ export const glassCard: React.CSSProperties = {
 export const productPageGrid: React.CSSProperties = {
   maxWidth: "1200px",
   margin: "0 auto",
-  padding: "20px",
+  padding: "16px",
   width: "100%",
   boxSizing: "border-box",
-  overflowX: "hidden",
+  overflowX: "clip",
   display: "grid",
   gridTemplateColumns: "minmax(0, 1.2fr) minmax(0, 1fr)",
   gap: "30px",

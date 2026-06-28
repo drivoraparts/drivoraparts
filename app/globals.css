@@ -18,26 +18,44 @@
 }
 
 /* Base body — enforced dark theme (no white fallback, no iOS Safari flash) */
-html,
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0a0a0a !important;
   color: #ffffff;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   color-scheme: dark;
   overflow-x: clip;
-  max-width: 100%;
-}
-
-body {
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
-/* =========================
-   GLOBAL UX POLISH (SAFE)
-========================= */
+/* Storefront shell — avoid 100vw (includes scrollbar / mobile chrome and causes horizontal drift) */
+.site-shell,
+.site-shell > main {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
 
-html {
-  scroll-behavior: smooth;
+/* Third-party chat widgets must not widen the document on phones */
+@media (max-width: 768px) {
+  iframe[src*="tawk.to"],
+  #tawk-bubble-container,
+  .tawk-min-container,
+  .tawk-max-container {
+    max-width: 100% !important;
+  }
 }
 
 /* =========================

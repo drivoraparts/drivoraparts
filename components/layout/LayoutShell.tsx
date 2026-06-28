@@ -20,7 +20,7 @@ export default function LayoutShell({ children }: Props) {
   const [marketOpen, setMarketOpen] = useState(false);
 
   return (
-    <>
+    <div className="site-shell">
       {/* HEADER */}
       <GlobalHeader
         setMenuOpen={setMenuOpen}
@@ -41,12 +41,12 @@ export default function LayoutShell({ children }: Props) {
       />
 
       {/* PAGE CONTENT */}
-      <main className="box-border min-h-screen w-full max-w-[100vw] overflow-x-clip pt-[80px]">
+      <main className="box-border min-h-screen w-full min-w-0 max-w-full overflow-x-clip pt-[80px]">
         {children}
       </main>
 
       {/* FOOTER */}
       <GlobalFooter />
-    </>
+    </div>
   );
 }
