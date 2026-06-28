@@ -1,4 +1,5 @@
 import { getAdminSystemSettings } from "@/lib/admin/system-settings";
+import { isSupabaseConfigured } from "@/lib/env";
 import SystemSettingsForm from "./SystemSettingsForm";
 
 export const dynamic = "force-dynamic";
@@ -12,6 +13,7 @@ export default function AdminSystemSettingsPage() {
       initialPaymentMode={settings.paymentMode}
       initialTawkEnabled={settings.tawkEnabled}
       cryptomusConfigured={settings.cryptomusConfigured}
+      analyticsReady={isSupabaseConfigured()}
     />
   );
 }

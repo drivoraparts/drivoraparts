@@ -9,11 +9,13 @@ export default function SystemSettingsForm({
   initialPaymentMode,
   initialTawkEnabled,
   cryptomusConfigured,
+  analyticsReady,
 }: {
   initialSiteUrl: string;
   initialPaymentMode: PaymentMode;
   initialTawkEnabled: boolean;
   cryptomusConfigured: boolean;
+  analyticsReady: boolean;
 }) {
   const [paymentMode, setPaymentMode] = useState<PaymentMode>(initialPaymentMode);
   const [tawkEnabled, setTawkEnabled] = useState(initialTawkEnabled);
@@ -50,6 +52,36 @@ export default function SystemSettingsForm({
 
   return (
     <AdminShell title="System Settings">
+      <section className="mb-8 max-w-2xl rounded-xl border border-amber-200 bg-amber-50 p-5">
+        <h2 className="text-lg font-semibold text-amber-950">Supabase analytics setup</h2>
+        <p className="mt-2 text-sm text-amber-900">
+          Status:{" "}
+          <span className="font-semibold">
+            {analyticsReady ? "Connected" : "Not connected — dashboard shows placeholder metrics"}
+          </span>
+        </p>
+        {!analyticsReady ? (
+          <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm text-amber-900">
+            <li>Create a Supabase project at supabase.com.</li>
+            <li>
+              In Cloudflare Pages → your project → Settings → Environment variables, add{" "}
+              <code className="rounded bg-amber-100 px-1">NEXT_PUBLIC_SUPABASE_URL</code>,{" "}
+              <code className="rounded bg-amber-100 px-1">NEXT_PUBLIC_SUPABASE_ANON_KEY</code>, and{" "}
+              <code className="rounded bg-amber-100 px-1">SUPABASE_SERVICE_ROLE_KEY</code>.
+            </li>
+            <li>
+              Run <code className="rounded bg-amber-100 px-1">supabase/migrations/001_initial_schema.sql</code>{" "}
+              in the Supabase SQL Editor.
+            </li>
+            <li>Redeploy the site, then refresh this dashboard.</li>
+          </ol>
+        ) : (
+          <p className="mt-2 text-sm text-amber-900">
+            Orders, analytics events, and AI insights will read from your Supabase database.
+          </p>
+        )}
+      </section>
+
       <form onSubmit={handleSubmit} className="max-w-xl space-y-5">
         <div>
           <label htmlFor="site-url" className="mb-2 block text-sm text-zinc-600">

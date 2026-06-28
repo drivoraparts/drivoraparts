@@ -2,7 +2,7 @@
 export const adminUi = {
   page: "min-h-screen bg-zinc-50 text-zinc-900",
   sidebar:
-    "relative z-30 flex w-64 shrink-0 flex-col border-r border-zinc-200 bg-white shadow-sm",
+    "relative z-40 flex w-64 shrink-0 flex-col border-r border-zinc-200 bg-white shadow-sm",
   sidebarBrand: "border-b border-zinc-200 px-5 py-6",
   sidebarNav: "flex-1 space-y-1 overflow-y-auto p-3",
   sidebarFooter: "border-t border-zinc-200 p-4",

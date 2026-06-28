@@ -28,11 +28,11 @@ export default class AdminErrorBoundary extends Component<Props, State> {
         <main className="flex min-h-[50vh] items-center justify-center px-6 py-16">
           <div className={`max-w-lg text-center ${adminUi.card}`}>
             <h2 className="text-xl font-semibold text-zinc-900">
-              Dashboard temporarily unavailable
+              Admin page error
             </h2>
             <p className={`mt-3 ${adminUi.muted}`}>
-              We hit an unexpected error while loading admin data. The storefront and
-              checkout are unaffected.
+              Something went wrong while loading this admin page. Sidebar navigation
+              should still work — try another section or reload.
             </p>
             <button
               type="button"

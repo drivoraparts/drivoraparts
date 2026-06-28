@@ -1,4 +1,4 @@
-import { getCryptomusMerchantId, getCryptomusPaymentKey } from "@/lib/env";
+import { getCryptomusMerchantId, getCryptomusPaymentKey, isSupabaseConfigured } from "@/lib/env";
 import { classifyAssistantIntent, getIntentSuggestions } from "./intents";
 import {
   getAnalyticsOverview,
@@ -13,10 +13,51 @@ import {
   getUsersOnline,
   simulateProductScenario,
 } from "./tools";
-import type { AssistantResponse } from "./types";
+import type { AssistantIntent, AssistantResponse } from "./types";
 
 function formatMoney(value: number) {
   return `$${value.toFixed(2)}`;
+}
+
+const DATA_DEPENDENT_INTENTS = new Set<AssistantIntent>([
+  "revenue",
+  "orders",
+  "products",
+  "inventory",
+  "analytics",
+  "users",
+  "stock",
+  "suppliers",
+  "optimization",
+  "forecast",
+  "strategy",
+  "decisions",
+]);
+
+function supabaseSetupReply(intent: AssistantIntent): AssistantResponse {
+  return {
+    reply:
+      "Live analytics are offline because Supabase is not configured. Add NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, and SUPABASE_SERVICE_ROLE_KEY in Cloudflare Pages → Settings → Environment variables, then run supabase/migrations/001_initial_schema.sql in the Supabase SQL Editor. Until then, dashboard metrics stay at safe zeros and I cannot answer revenue or order questions accurately.",
+    suggestions: [
+      "Is Cryptomus configured?",
+      "What works without Supabase?",
+      "Show payment provider status",
+    ],
+    intent,
+  };
+}
+
+function worksWithoutSupabaseReply(): AssistantResponse {
+  return {
+    reply:
+      "Without Supabase you still have: storefront catalog, cart, manual checkout fallback, admin login, Cryptomus payments (if env keys are set), and system toggles. Missing: persisted orders in dashboard, analytics charts, inventory sync, and AI insights tied to live sales.",
+    suggestions: [
+      "Is Cryptomus configured?",
+      "How do I connect Supabase?",
+      "Show payment provider status",
+    ],
+    intent: "general",
+  };
 }
 
 function explainDecision(
@@ -34,6 +75,7 @@ export async function generateAdminAssistantReply(
   const text = message.toLowerCase().trim();
   const intent = classifyAssistantIntent(message);
   const suggestions = getIntentSuggestions(intent);
+  const supabaseReady = isSupabaseConfigured();
 
   if (!message.trim()) {
     return {
@@ -42,6 +84,37 @@ export async function generateAdminAssistantReply(
       suggestions,
       intent,
     };
+  }
+
+  if (
+    !supabaseReady &&
+    (text.includes("supabase") ||
+      text.includes("connect") ||
+      text.includes("database") ||
+      text.includes("analytics database"))
+  ) {
+    return supabaseSetupReply(intent);
+  }
+
+  if (!supabaseReady && (text.includes("without supabase") || text.includes("what works"))) {
+    return worksWithoutSupabaseReply();
+  }
+
+  if (!supabaseReady && intent === "payments") {
+    const cryptomusEnabled = Boolean(
+      getCryptomusMerchantId() && getCryptomusPaymentKey()
+    );
+    return {
+      reply: cryptomusEnabled
+        ? "Cryptomus keys are set in the environment. Checkout can create crypto invoices, but order history in admin stays empty until Supabase is connected."
+        : "Cryptomus is not configured. Manual fallback checkout is active. Connect Supabase to persist orders in the admin dashboard.",
+      suggestions,
+      intent,
+    };
+  }
+
+  if (!supabaseReady && DATA_DEPENDENT_INTENTS.has(intent)) {
+    return supabaseSetupReply(intent);
   }
 
   if (intent === "strategy" || intent === "decisions" || text.includes("why")) {

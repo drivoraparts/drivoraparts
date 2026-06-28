@@ -9,8 +9,10 @@ import { usePathname } from "next/navigation";
 
 export default function AdminDashboardShell({
   children,
+  floatingUi,
 }: {
   children: React.ReactNode;
+  floatingUi?: React.ReactNode;
 }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const pathname = usePathname() ?? "";
@@ -66,6 +68,7 @@ export default function AdminDashboardShell({
           <main className={adminUi.content}>{children}</main>
         </div>
       </div>
+      {floatingUi}
     </div>
   );
 }

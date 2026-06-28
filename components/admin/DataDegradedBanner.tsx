@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { adminUi } from "./admin-ui";
 
 type Props = {
@@ -9,8 +10,18 @@ export default function DataDegradedBanner({ show }: Props) {
 
   return (
     <div className={`mb-6 ${adminUi.warningBox}`}>
-      Dashboard temporarily unavailable — retrying data sources. Showing safe fallback
-      metrics until Supabase analytics and orders data are reachable.
+      <p className="font-semibold">Analytics database not connected</p>
+      <p className="mt-2 text-sm">
+        Supabase is not configured in your Cloudflare environment, so revenue, orders,
+        and AI insights show safe placeholder values (zeros). The storefront still works;
+        this is not a temporary outage or retry loop.
+      </p>
+      <Link
+        href="/admin/settings/system"
+        className="mt-3 inline-block text-sm font-semibold text-amber-900 underline underline-offset-2 hover:text-amber-950"
+      >
+        Open Supabase setup checklist in System Settings
+      </Link>
     </div>
   );
 }

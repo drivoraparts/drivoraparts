@@ -1,5 +1,6 @@
 import nextDynamic from "next/dynamic";
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
+import AdminSectionErrorBoundary from "@/components/admin/AdminSectionErrorBoundary";
 import AutopilotIntelligence from "@/components/admin/AutopilotIntelligence";
 import DataDegradedBanner from "@/components/admin/DataDegradedBanner";
 import { loadDashboardData } from "@/lib/admin/safe-data";
@@ -89,8 +90,13 @@ export default async function AdminDashboardPage() {
 
       <AutopilotIntelligence />
 
-      <DashboardCharts data={charts} />
-      <AdvancedCharts />
+      <AdminSectionErrorBoundary title="Dashboard charts">
+        <DashboardCharts data={charts} />
+      </AdminSectionErrorBoundary>
+
+      <AdminSectionErrorBoundary title="Advanced analytics charts">
+        <AdvancedCharts />
+      </AdminSectionErrorBoundary>
 
       <section className="mt-8 grid gap-6 lg:grid-cols-2">
         <div className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6">

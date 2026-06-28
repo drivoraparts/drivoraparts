@@ -30,9 +30,8 @@ export default async function AdminLayout({
   const session = await getAdminSession();
 
   return (
-    <AdminDashboardLayout>
+    <AdminDashboardLayout floatingUi={session ? <AdminChatAssistant /> : null}>
       <AdminErrorBoundary>{children}</AdminErrorBoundary>
-      {session ? <AdminChatAssistant /> : null}
     </AdminDashboardLayout>
   );
 }

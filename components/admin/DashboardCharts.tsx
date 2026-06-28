@@ -38,7 +38,7 @@ function ChartPanel({
         <h2 className="text-xl font-bold">{title}</h2>
         {subtitle ? <p className="mt-1 text-sm text-zinc-600">{subtitle}</p> : null}
       </div>
-      <div className="h-72 w-full min-h-0 overflow-hidden">{children}</div>
+      <div className="h-72 w-full min-h-0 overflow-hidden isolate">{children}</div>
     </section>
   );
 }

@@ -16,7 +16,10 @@ type DecisionsPayload = {
   makingMoneyToday: DecisionAction[];
   willTrendTomorrow: DecisionAction[];
   fixNow: DecisionAction[];
+  source?: "live" | "fallback";
 };
+
+type LoadState = "loading" | "ready" | "error";
 
 function ActionList({
   title,
@@ -61,16 +64,33 @@ function ActionList({
 }
 
 export default function AutopilotIntelligence() {
+  const [loadState, setLoadState] = useState<LoadState>("loading");
   const [data, setData] = useState<DecisionsPayload | null>(null);
 
   useEffect(() => {
+    let cancelled = false;
+
     fetch("/api/admin/ai/decisions")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((payload) => setData(payload))
-      .catch(() => setData(null));
+      .then(async (res) => {
+        if (cancelled) return;
+        if (!res.ok) {
+          setLoadState("error");
+          return;
+        }
+        const payload = (await res.json()) as DecisionsPayload;
+        setData(payload);
+        setLoadState("ready");
+      })
+      .catch(() => {
+        if (!cancelled) setLoadState("error");
+      });
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
-  if (!data) {
+  if (loadState === "loading") {
     return (
       <section className="mt-8 rounded-lg bg-white shadow-sm border border-zinc-200 p-6">
         <h2 className="text-xl font-bold">Autopilot Intelligence</h2>
@@ -79,11 +99,37 @@ export default function AutopilotIntelligence() {
     );
   }
 
+  if (loadState === "error" || !data) {
+    return (
+      <section className="mt-8 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-bold">Autopilot Intelligence</h2>
+        <p className="mt-2 text-sm text-zinc-600">
+          Could not load AI decisions right now. Sidebar navigation and the storefront
+          are unaffected.
+        </p>
+        <button
+          type="button"
+          onClick={() => window.location.reload()}
+          className="mt-4 rounded-xl border border-zinc-300 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 hover:border-red-300"
+        >
+          Retry
+        </button>
+      </section>
+    );
+  }
+
+  const usingFallback = data.source === "fallback";
+
   return (
     <section className="mt-8 space-y-6">
       <div className="rounded-lg border border-red-500/20 bg-red-500/5 p-6">
         <h2 className="text-xl font-bold">Autopilot Intelligence</h2>
         <p className="mt-2 text-sm text-zinc-600">{data.summary}</p>
+        {usingFallback ? (
+          <p className="mt-2 text-xs text-amber-700">
+            Limited data — connect Supabase for live order and analytics signals.
+          </p>
+        ) : null}
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">

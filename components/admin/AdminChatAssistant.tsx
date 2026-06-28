@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type ChatMessage = {
   role: "user" | "assistant";
@@ -11,6 +11,7 @@ export default function AdminChatAssistant() {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [supabaseConfigured, setSupabaseConfigured] = useState<boolean | null>(null);
   const [suggestions, setSuggestions] = useState<string[]>([
     "Show revenue and conversion",
     "How many live users are online?",
@@ -24,6 +25,33 @@ export default function AdminChatAssistant() {
         "Drivora business operator AI online. Ask about live users, revenue, orders, inventory, suppliers, pricing, or payments.",
     },
   ]);
+
+  useEffect(() => {
+    fetch("/api/admin/status")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (typeof data?.supabaseConfigured === "boolean") {
+          setSupabaseConfigured(data.supabaseConfigured);
+          if (!data.supabaseConfigured) {
+            setMessages([
+              {
+                role: "assistant",
+                content:
+                  "Supabase is not connected yet, so I cannot report live revenue or orders. Ask how to connect the database, whether Cryptomus is configured, or what still works without Supabase.",
+              },
+            ]);
+            setSuggestions([
+              "How do I connect Supabase?",
+              "Is Cryptomus configured?",
+              "What works without Supabase?",
+            ]);
+          }
+        }
+      })
+      .catch(() => {
+        setSupabaseConfigured(null);
+      });
+  }, []);
 
   const sendMessage = async (text: string) => {
     const trimmed = text.trim();
@@ -40,7 +68,22 @@ export default function AdminChatAssistant() {
         body: JSON.stringify({ message: trimmed }),
       });
 
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            content:
+              typeof data.error === "string"
+                ? data.error
+                : "Assistant request failed. Try again or reload the page.",
+          },
+        ]);
+        return;
+      }
+
       setMessages((prev) => [
         ...prev,
         { role: "assistant", content: data.reply ?? "No response available." },
@@ -60,13 +103,17 @@ export default function AdminChatAssistant() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 max-w-[calc(100vw-3rem)]">
+    <div className="pointer-events-none fixed bottom-6 right-6 z-50 max-w-[calc(100vw-3rem)]">
       {open ? (
-        <div className="mb-3 w-[min(92vw,380px)] overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-2xl ">
+        <div className="pointer-events-auto mb-3 w-[min(92vw,380px)] overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-2xl">
           <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3">
             <div>
               <p className="text-sm font-semibold">Business Operator AI</p>
-              <p className="text-xs text-zinc-600">Live ops · revenue · inventory</p>
+              <p className="text-xs text-zinc-600">
+                {supabaseConfigured === false
+                  ? "Setup mode — database not connected"
+                  : "Live ops · revenue · inventory"}
+              </p>
             </div>
             <button
               type="button"
@@ -134,7 +181,7 @@ export default function AdminChatAssistant() {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="rounded-full bg-red-600 px-5 py-3 text-sm font-bold shadow-lg"
+        className="pointer-events-auto rounded-full bg-red-600 px-5 py-3 text-sm font-bold shadow-lg"
       >
         {open ? "Close Assistant" : "AI Assistant"}
       </button>
