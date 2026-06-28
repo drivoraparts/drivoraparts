@@ -32,7 +32,7 @@ export async function getRevenue() {
     ),
     safeQuery(
       () => getOrderStats(),
-      { totalRevenue: 0, paidOrderCount: 0, totalOrders: 0, pendingOrders: 0 },
+      { totalRevenue: 0, pendingRevenue: 0, paidOrderCount: 0, totalOrders: 0, pendingOrders: 0 },
       "assistant-order-stats"
     ),
     safeQuery(
@@ -44,8 +44,11 @@ export async function getRevenue() {
         failed: 0,
         refunded: 0,
         paidAmount: 0,
+        pendingAmount: 0,
         cryptomusPaid: 0,
         cryptomusPaidAmount: 0,
+        nowpaymentsPending: 0,
+        nowpaymentsPendingAmount: 0,
         manualPaid: 0,
         manualPaidAmount: 0,
       },

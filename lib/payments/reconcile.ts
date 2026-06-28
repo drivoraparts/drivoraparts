@@ -1,5 +1,10 @@
+import { handlePaidWebhook, markOrderFailed } from "@/lib/checkout/service";
 import { listStalePendingOrders } from "@/lib/db/orders";
-import { findPaymentByOrderId } from "@/lib/db/payments";
+import { findPaymentByOrderId, updatePaymentRecord } from "@/lib/db/payments";
+import {
+  fetchNowPaymentsRemoteStatus,
+  mapNowPaymentsStatusString,
+} from "@/lib/payments/nowpayments/client";
 import { logActivity } from "@/lib/monitoring/activity";
 import { logError, logInfo } from "@/lib/monitoring/logger";
 
@@ -16,9 +21,21 @@ export type ReconcileOptions = {
   limit?: number;
 };
 
+function paymentReference(
+  payment: Awaited<ReturnType<typeof findPaymentByOrderId>>
+): string | null {
+  if (!payment) return null;
+
+  const metadata = payment.metadata ?? {};
+  const invoiceId =
+    typeof metadata.invoice_id === "string" ? metadata.invoice_id : null;
+
+  return payment.provider_payment_id ?? invoiceId;
+}
+
 /**
- * Safety net for stale pending orders. NOWPayments status is confirmed via IPN
- * webhooks; this sweep only logs non-NOWPayments pending orders for review.
+ * Poll NOWPayments for stale pending orders and sync payment + order status.
+ * Safety net when IPN webhooks are delayed or missed.
  */
 export async function reconcilePendingPayments(
   options?: ReconcileOptions
@@ -32,7 +49,7 @@ export async function reconcilePendingPayments(
     scanned: stale.length,
     paid: 0,
     failed: 0,
-    stillPending: stale.length,
+    stillPending: 0,
     errors: 0,
   };
 
@@ -40,12 +57,83 @@ export async function reconcilePendingPayments(
     try {
       const payment = await findPaymentByOrderId(order.id);
       if (payment?.provider !== "nowpayments") {
+        summary.stillPending += 1;
         continue;
       }
 
+      const ref = paymentReference(payment);
+      if (!ref) {
+        summary.stillPending += 1;
+        await logActivity("warn", "payment.reconcile_missing_ref", {
+          orderId: order.id,
+          paymentId: payment.id,
+        });
+        continue;
+      }
+
+      const remote = await fetchNowPaymentsRemoteStatus(ref);
+      if (!remote) {
+        summary.stillPending += 1;
+        await logActivity("info", "payment.reconcile_still_pending", {
+          orderId: order.id,
+          provider: payment.provider,
+          ref,
+        });
+        continue;
+      }
+
+      const mapped = mapNowPaymentsStatusString(remote.paymentStatus);
+
+      if (mapped === "paid") {
+        await updatePaymentRecord(payment.id, {
+          status: "paid",
+          provider_payment_id: ref,
+          metadata: {
+            ...(payment.metadata ?? {}),
+            paid_at: new Date().toISOString(),
+            payment_method: "nowpayments",
+            invoice_id: ref,
+            reconciled_at: new Date().toISOString(),
+            lastRemoteStatus: remote.paymentStatus,
+          },
+        });
+        await handlePaidWebhook(order.id);
+        summary.paid += 1;
+        await logActivity("info", "payment.reconcile_paid", {
+          orderId: order.id,
+          ref,
+          remoteStatus: remote.paymentStatus,
+        });
+        continue;
+      }
+
+      if (mapped === "failed") {
+        if (payment.status !== "paid") {
+          await updatePaymentRecord(payment.id, {
+            status: "failed",
+            metadata: {
+              ...(payment.metadata ?? {}),
+              lastRemoteStatus: remote.paymentStatus,
+              reconciled_at: new Date().toISOString(),
+            },
+          });
+        }
+        await markOrderFailed(order.id);
+        summary.failed += 1;
+        await logActivity("warn", "payment.reconcile_failed", {
+          orderId: order.id,
+          ref,
+          remoteStatus: remote.paymentStatus,
+        });
+        continue;
+      }
+
+      summary.stillPending += 1;
       await logActivity("info", "payment.reconcile_still_pending", {
         orderId: order.id,
         provider: payment.provider,
+        ref,
+        remoteStatus: remote.paymentStatus,
       });
     } catch (error) {
       summary.errors += 1;

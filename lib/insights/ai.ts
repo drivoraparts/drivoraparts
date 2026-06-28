@@ -96,7 +96,7 @@ export async function getAiInsightsReport(): Promise<AiInsightsReport> {
       safeQuery(() => listAnalyticsEvents(4000), [], "ai-insights-events"),
       safeQuery(
         () => getOrderStats(),
-        { totalRevenue: 0, paidOrderCount: 0, totalOrders: 0, pendingOrders: 0 },
+        { totalRevenue: 0, pendingRevenue: 0, paidOrderCount: 0, totalOrders: 0, pendingOrders: 0 },
         "ai-insights-orders"
       ),
       safeQuery(
@@ -160,19 +160,19 @@ export async function getAiInsightsReport(): Promise<AiInsightsReport> {
   );
 
   const paidOrders = orders.filter((o) => o.status === "paid");
-  const avgOrderValue =
-    paidOrders.length > 0
-      ? paidOrders.reduce((sum, o) => sum + Number(o.total), 0) / paidOrders.length
-      : 120;
+  const hasPaidHistory = paidOrders.length > 0;
 
-  const dailyVelocity =
-    paidOrders.length > 0
-      ? paidOrders.length / Math.max(1, Math.min(30, paidOrders.length))
-      : 0.5;
+  const avgOrderValue = hasPaidHistory
+    ? paidOrders.reduce((sum, o) => sum + Number(o.total), 0) / paidOrders.length
+    : 0;
 
-  const predictedRevenueNext7Days = Math.round(
-    avgOrderValue * dailyVelocity * 7 * 1.08
-  );
+  const dailyVelocity = hasPaidHistory
+    ? paidOrders.length / Math.max(1, Math.min(30, paidOrders.length))
+    : 0;
+
+  const predictedRevenueNext7Days = hasPaidHistory
+    ? Math.round(avgOrderValue * dailyVelocity * 7 * 1.08)
+    : 0;
 
   const predictedBestSellingProducts = productRankingScores.slice(0, 5).map((p) => {
     const catalog = products.find((item) => item.id === p.productId);

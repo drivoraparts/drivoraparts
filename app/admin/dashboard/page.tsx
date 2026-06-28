@@ -20,75 +20,107 @@ export default async function AdminDashboardPage() {
 
   const orderStats = insights?.orderStats ?? {
     pendingOrders: 0,
+    pendingRevenue: 0,
+    paidOrderCount: 0,
   };
   const ai = insights?.ai ?? {
     predictedRevenueNext7Days: 0,
     inventoryRiskScores: [],
+    source: "fallback" as const,
   };
   const lowInventoryAlerts = insights?.lowInventoryAlerts ?? [];
   const topProducts = insights?.topProducts ?? [];
   const viralProducts = viral?.products ?? [];
+  const hasPaidHistory = (orderStats.paidOrderCount ?? 0) > 0;
+  const hasTrafficData = (summary?.productViews ?? 0) >= 10;
+  const conversionDisplay = hasTrafficData
+    ? `${summary?.conversionRate ?? 0}%`
+    : "—";
+  const conversionHint = hasTrafficData
+    ? "Paid orders / product views"
+    : "Needs more storefront traffic data";
 
   return (
     <AdminShell title="Dashboard">
       <DataDegradedBanner show={dataUnavailable} />
 
+      <p className="mb-4 text-sm text-zinc-600">
+        Operational metrics below come from Supabase orders and payments. Forecast and
+        autopilot sections are estimates only.
+      </p>
+
       <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
         <StatCard
-          label="Total Revenue"
+          label="Paid Revenue"
           value={`$${(summary?.totalRevenue ?? 0).toFixed(2)}`}
-          hint="From paid orders"
+          hint={`${orderStats.paidOrderCount ?? 0} paid orders`}
+        />
+        <StatCard
+          label="Pending Checkout"
+          value={`$${(orderStats.pendingRevenue ?? 0).toFixed(2)}`}
+          hint={`${orderStats.pendingOrders ?? 0} orders awaiting payment`}
         />
         <StatCard
           label="Total Orders"
           value={String(summary?.totalOrders ?? 0)}
-          hint={`${orderStats.pendingOrders ?? 0} pending`}
+          hint={`${orderStats.pendingOrders ?? 0} pending · ${orderStats.paidOrderCount ?? 0} paid`}
         />
         <StatCard
           label="Conversion Rate"
-          value={`${summary?.conversionRate ?? 0}%`}
-          hint="Paid orders / product views"
-        />
-        <StatCard
-          label="Est. Monthly Revenue"
-          value={`$${(insights?.estimatedMonthlyRevenue ?? 0).toLocaleString()}`}
-          hint="AI projection from recent order velocity"
+          value={conversionDisplay}
+          hint={conversionHint}
         />
       </div>
 
       <div className="mt-6 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
         <StatCard
-          label="7-Day Forecast"
-          value={`$${(ai.predictedRevenueNext7Days ?? 0).toLocaleString()}`}
-          hint="AI revenue prediction"
-        />
-        <StatCard
           label="NOWPayments Paid"
           value={`$${(paymentStats?.cryptomusPaidAmount ?? 0).toFixed(2)}`}
-          hint={`${paymentStats?.cryptomusPaid ?? 0} crypto payments`}
+          hint={`${paymentStats?.cryptomusPaid ?? 0} confirmed crypto payments`}
         />
         <StatCard
-          label="Manual Fallback"
+          label="NOWPayments Pending"
+          value={`$${(paymentStats?.nowpaymentsPendingAmount ?? 0).toFixed(2)}`}
+          hint={`${paymentStats?.nowpaymentsPending ?? 0} invoices awaiting payment`}
+        />
+        <StatCard
+          label="Manual Payments"
           value={`$${(paymentStats?.manualPaidAmount ?? 0).toFixed(2)}`}
           hint={`${paymentStats?.manualPaid ?? 0} manual payments`}
         />
         <StatCard
-          label="Inventory Risk"
-          value={String(
-            (ai.inventoryRiskScores ?? []).filter(
-              (r) => r.severity === "high" || r.severity === "critical"
-            ).length
-          )}
-          hint="High/critical SKUs"
-        />
-        <StatCard
-          label="Viral Signals"
-          value={String(viralProducts.filter((p) => p.viralScore >= 45).length)}
-          hint="Products with rising demand"
+          label="Inventory Alerts"
+          value={String(lowInventoryAlerts.length)}
+          hint="Low or out-of-stock SKUs"
         />
       </div>
 
-      <AutopilotIntelligence />
+      {hasPaidHistory ? (
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          <StatCard
+            label="7-Day Forecast (estimate)"
+            value={`$${(ai.predictedRevenueNext7Days ?? 0).toLocaleString()}`}
+            hint="Based on recent paid order history"
+          />
+          <StatCard
+            label="Est. Monthly Revenue (estimate)"
+            value={`$${(insights?.estimatedMonthlyRevenue ?? 0).toLocaleString()}`}
+            hint="Heuristic from paid order velocity"
+          />
+          <StatCard
+            label="Viral Signals (estimate)"
+            value={String(viralProducts.filter((p) => p.viralScore >= 45).length)}
+            hint="Products with rising demand signals"
+          />
+        </div>
+      ) : (
+        <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+          Revenue forecasts and viral signals unlock after your first paid order is
+          confirmed (via NOWPayments webhook or reconciliation).
+        </div>
+      )}
+
+      <AutopilotIntelligence hasPaidHistory={hasPaidHistory} />
 
       <AdminSectionErrorBoundary title="Dashboard charts">
         <DashboardCharts data={charts} />

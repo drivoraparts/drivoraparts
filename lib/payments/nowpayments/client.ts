@@ -275,24 +275,82 @@ export function parseNowPaymentsWebhookPayload(
   }
 }
 
-export function mapNowPaymentsPaymentStatus(
-  payload: NowPaymentsWebhookPayload
+export function mapNowPaymentsStatusString(
+  status: string | null | undefined
 ): "pending" | "paid" | "failed" {
-  const status = (payload.payment_status ?? "").toLowerCase();
+  const normalized = (status ?? "").toLowerCase();
 
-  if (status === "finished" || status === "confirmed") {
+  if (normalized === "finished" || normalized === "confirmed") {
     return "paid";
   }
 
   if (
-    status === "failed" ||
-    status === "refunded" ||
-    status === "expired"
+    normalized === "failed" ||
+    normalized === "refunded" ||
+    normalized === "expired"
   ) {
     return "failed";
   }
 
   return "pending";
+}
+
+export function mapNowPaymentsPaymentStatus(
+  payload: NowPaymentsWebhookPayload
+): "pending" | "paid" | "failed" {
+  return mapNowPaymentsStatusString(payload.payment_status);
+}
+
+export type NowPaymentsRemoteStatus = {
+  paymentStatus: string;
+  orderId: string | null;
+  source: "payment" | "invoice";
+};
+
+/** Poll NOWPayments for invoice/payment status (reconciliation + success page). */
+export async function fetchNowPaymentsRemoteStatus(
+  ref: string
+): Promise<NowPaymentsRemoteStatus | null> {
+  const apiKey = getNowPaymentsApiKey();
+  if (!apiKey || !ref) return null;
+
+  const endpoints: Array<{ url: string; source: "payment" | "invoice" }> = [
+    {
+      url: `https://api.nowpayments.io/v1/payment/${encodeURIComponent(ref)}`,
+      source: "payment",
+    },
+    {
+      url: `https://api.nowpayments.io/v1/invoice/${encodeURIComponent(ref)}`,
+      source: "invoice",
+    },
+  ];
+
+  for (const { url, source } of endpoints) {
+    try {
+      const response = await fetch(url, {
+        headers: { "x-api-key": apiKey },
+        cache: "no-store",
+      });
+      if (!response.ok) continue;
+
+      const data = (await response.json().catch(() => null)) as {
+        payment_status?: string | null;
+        order_id?: string | null;
+      } | null;
+
+      if (!data?.payment_status) continue;
+
+      return {
+        paymentStatus: data.payment_status,
+        orderId: data.order_id ?? null,
+        source,
+      };
+    } catch {
+      // try next endpoint
+    }
+  }
+
+  return null;
 }
 
 /** Resolve merchant order_id from a NOWPayments payment or invoice reference (e.g. NP_id). */

@@ -6,6 +6,7 @@ import type { ViralProductsReport } from "@/lib/ai/viral-detector";
 
 export const EMPTY_ORDER_STATS = {
   totalRevenue: 0,
+  pendingRevenue: 0,
   paidOrderCount: 0,
   totalOrders: 0,
   pendingOrders: 0,
@@ -18,8 +19,11 @@ export const EMPTY_PAYMENT_STATS = {
   failed: 0,
   refunded: 0,
   paidAmount: 0,
+  pendingAmount: 0,
   cryptomusPaid: 0,
   cryptomusPaidAmount: 0,
+  nowpaymentsPending: 0,
+  nowpaymentsPendingAmount: 0,
   manualPaid: 0,
   manualPaidAmount: 0,
 };

@@ -133,22 +133,35 @@ export async function getPaymentStats() {
       failed: 0,
       refunded: 0,
       paidAmount: 0,
+      pendingAmount: 0,
       cryptomusPaid: 0,
       cryptomusPaidAmount: 0,
+      nowpaymentsPending: 0,
+      nowpaymentsPendingAmount: 0,
       manualPaid: 0,
       manualPaidAmount: 0,
     };
 
     for (const payment of data ?? []) {
       stats[payment.status as PaymentStatus] += 1;
+      const amount = Number(payment.amount);
+
+      if (payment.status === "pending") {
+        stats.pendingAmount += amount;
+        if (payment.provider === "nowpayments") {
+          stats.nowpaymentsPending += 1;
+          stats.nowpaymentsPendingAmount += amount;
+        }
+      }
+
       if (payment.status === "paid") {
-        stats.paidAmount += Number(payment.amount);
+        stats.paidAmount += amount;
         if (payment.provider === "nowpayments") {
           stats.cryptomusPaid += 1;
-          stats.cryptomusPaidAmount += Number(payment.amount);
+          stats.cryptomusPaidAmount += amount;
         } else if (payment.provider === "manual") {
           stats.manualPaid += 1;
-          stats.manualPaidAmount += Number(payment.amount);
+          stats.manualPaidAmount += amount;
         }
       }
     }

@@ -30,7 +30,7 @@ jobs:
             echo "::notice::CRON_SECRET is not configured — skipping reconciliation (not a deploy failure)."
             exit 0
           fi
-          URL="${RECONCILE_URL:-https://drivoraparts.com/api/payments/cryptomus/reconcile}"
+          URL="${RECONCILE_URL:-https://drivoraparts.com/api/payments/reconcile}"
           code=$(curl -sS -o /tmp/reconcile.json -w "%{http_code}" -X POST \
             -H "Authorization: Bearer ${CRON_SECRET}" \
             "${URL}")

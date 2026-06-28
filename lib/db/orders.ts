@@ -374,8 +374,19 @@ export async function getOrderStats() {
       .select("*", { count: "exact", head: true })
       .eq("status", "pending");
 
+    const { data: pendingRows } = await supabase
+      .from("orders")
+      .select("total")
+      .eq("status", "pending");
+
+    const pendingRevenue = (pendingRows ?? []).reduce(
+      (sum, order) => sum + Number(order.total),
+      0
+    );
+
     return {
       totalRevenue,
+      pendingRevenue,
       paidOrderCount: paidOrders?.length ?? 0,
       totalOrders: totalOrders ?? 0,
       pendingOrders: pendingOrders ?? 0,

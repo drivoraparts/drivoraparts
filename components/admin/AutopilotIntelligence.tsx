@@ -63,7 +63,11 @@ function ActionList({
   );
 }
 
-export default function AutopilotIntelligence() {
+export default function AutopilotIntelligence({
+  hasPaidHistory = false,
+}: {
+  hasPaidHistory?: boolean;
+}) {
   const [loadState, setLoadState] = useState<LoadState>("loading");
   const [data, setData] = useState<DecisionsPayload | null>(null);
 
@@ -89,6 +93,19 @@ export default function AutopilotIntelligence() {
       cancelled = true;
     };
   }, []);
+
+  if (!hasPaidHistory) {
+    return (
+      <section className="mt-8 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-bold">Autopilot Intelligence</h2>
+        <p className="mt-2 text-sm text-zinc-600">
+          Action recommendations need at least one confirmed paid order. Pending
+          checkouts are tracked above — run payment reconciliation if a customer
+          already paid on NOWPayments.
+        </p>
+      </section>
+    );
+  }
 
   if (loadState === "loading") {
     return (
@@ -127,9 +144,13 @@ export default function AutopilotIntelligence() {
         <p className="mt-2 text-sm text-zinc-600">{data.summary}</p>
         {usingFallback ? (
           <p className="mt-2 text-xs text-amber-700">
-            Limited data — connect Supabase for live order and analytics signals.
+            Limited data — estimates only, not confirmed sales.
           </p>
-        ) : null}
+        ) : (
+          <p className="mt-2 text-xs text-zinc-500">
+            Suggested actions — verify against Orders and Payments before acting.
+          </p>
+        )}
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
