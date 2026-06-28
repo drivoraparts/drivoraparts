@@ -7,7 +7,7 @@ import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const NAV_LINKS = [
-  { href: "/catalog", label: "Shop" },
+  { href: "/catalog/all", label: "Shop" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ] as const;

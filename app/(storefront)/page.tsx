@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import { routes } from "@/lib/inventory";
 
 const sections = [
   {
@@ -103,10 +104,10 @@ export default function Home() {
           DrivoraParts — engineered for builders who move with precision.
         </p>
         <Link
-          href="/catalog"
+          href={routes.all}
           className="inline-block transform rounded-full bg-red-600 px-10 py-4 font-semibold transition hover:scale-105 hover:bg-red-700"
         >
-          ENTER MARKET
+          All Products
         </Link>
       </section>
     </div>
