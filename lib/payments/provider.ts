@@ -1,13 +1,15 @@
 import {
   createPaymentRecord,
   findPaymentByOrderId,
+  findPaymentByProviderId,
   updatePaymentRecord,
 } from "@/lib/db/payments";
+import { getOrderById } from "@/lib/db/orders";
 import { logActivity } from "@/lib/monitoring/activity";
 import {
   mapNowPaymentsPaymentStatus,
   parseNowPaymentsWebhookPayload,
-  resolveNowPaymentsCheckoutUrl,
+  createAutoOrderInvoice,
   verifyNowPaymentsWebhookSignature,
 } from "@/lib/payments/nowpayments/client";
 import { isSupabaseConfigured } from "@/lib/env";
@@ -47,10 +49,10 @@ export interface PaymentProvider {
   ): Promise<WebhookHandleResult | null>;
 }
 
-async function createStaticNowPaymentsInvoice(
+async function createNowPaymentsOrderInvoice(
   order: InvoiceOrder
 ): Promise<InvoiceResult> {
-  const checkout = await resolveNowPaymentsCheckoutUrl({
+  const checkout = await createAutoOrderInvoice({
     orderId: order.orderId,
     amount: order.amount,
     currency: order.currency,
@@ -78,7 +80,7 @@ async function createStaticNowPaymentsInvoice(
     paymentId = payment.id;
   }
 
-  await logActivity("info", "nowpayments.static_invoice_created", {
+  await logActivity("info", "nowpayments.order_invoice_created", {
     orderId: order.orderId,
     invoiceId: checkout.transactionId,
     mode: checkout.mode,
@@ -114,7 +116,7 @@ export const nowpaymentsPaymentProvider: PaymentProvider = {
       }
     }
 
-    return createStaticNowPaymentsInvoice(order);
+    return createNowPaymentsOrderInvoice(order);
   },
 
   async handleWebhook(
@@ -141,7 +143,39 @@ export const nowpaymentsPaymentProvider: PaymentProvider = {
     });
 
     const mappedStatus = mapNowPaymentsPaymentStatus(payload);
-    const existing = await findPaymentByOrderId(payload.order_id);
+    let existing = await findPaymentByOrderId(payload.order_id);
+
+    if (!existing) {
+      const providerRef =
+        payload.invoice_id != null
+          ? String(payload.invoice_id)
+          : payload.payment_id != null
+            ? String(payload.payment_id)
+            : null;
+
+      if (providerRef) {
+        existing = await findPaymentByProviderId("nowpayments", providerRef);
+      }
+
+      if (!existing) {
+        const order = await getOrderById(payload.order_id);
+        if (order) {
+          existing = await createPaymentRecord({
+            orderId: payload.order_id,
+            provider: "nowpayments",
+            amount: Number(order.total),
+            currency: "USD",
+            status: mappedStatus,
+            providerPaymentId: providerRef ?? undefined,
+            metadata: {
+              payment_method: "nowpayments",
+              created_from_webhook: true,
+              lastWebhookStatus: payload.payment_status,
+            },
+          });
+        }
+      }
+    }
 
     if (existing?.status === "paid" && mappedStatus === "paid") {
       await logActivity("warn", "nowpayments.webhook_duplicate", {

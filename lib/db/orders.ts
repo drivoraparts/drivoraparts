@@ -318,7 +318,7 @@ export async function failOrderIfUnpaid(id: string): Promise<OrderRecord | null>
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase
     .from("orders")
-    .update({ status: "failed", updated_at: new Date().toISOString() })
+    .update({ status: "cancelled", updated_at: new Date().toISOString() })
     .eq("id", id)
     .in("status", ["pending", "processing"])
     .select("*")

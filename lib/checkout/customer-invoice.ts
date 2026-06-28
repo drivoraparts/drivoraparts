@@ -1,0 +1,62 @@
+import {
+  sendOrderInvoiceEmail,
+  sendOrderReceivedEmail,
+  type OrderInvoiceLine,
+} from "@/lib/email/send";
+import { logActivity } from "@/lib/monitoring/activity";
+
+export type CustomerInvoiceItem = {
+  name: string;
+  quantity: number;
+  price: number;
+};
+
+export async function emailCustomerOrderInvoice(input: {
+  to: string;
+  customerName: string;
+  orderId: string;
+  total: number;
+  paymentUrl?: string;
+  items: CustomerInvoiceItem[];
+}): Promise<boolean> {
+  const lines: OrderInvoiceLine[] = input.items.map((item) => ({
+    name: item.name,
+    quantity: item.quantity,
+    unitPrice: item.price,
+  }));
+
+  let sent = false;
+
+  if (input.paymentUrl) {
+    sent = await sendOrderInvoiceEmail({
+      to: input.to,
+      customerName: input.customerName,
+      orderId: input.orderId,
+      total: input.total,
+      paymentUrl: input.paymentUrl,
+      items: lines,
+    });
+  } else {
+    sent = await sendOrderReceivedEmail({
+      to: input.to,
+      customerName: input.customerName,
+      orderId: input.orderId,
+      total: input.total,
+    });
+  }
+
+  if (!sent) {
+    await logActivity("warn", "checkout.invoice_email_skipped", {
+      orderId: input.orderId,
+      reason: "RESEND_API_KEY not configured",
+      hadPaymentUrl: Boolean(input.paymentUrl),
+    });
+  } else {
+    await logActivity("info", "checkout.invoice_email_sent", {
+      orderId: input.orderId,
+      itemCount: input.items.length,
+    });
+  }
+
+  return sent;
+}

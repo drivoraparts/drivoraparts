@@ -43,6 +43,14 @@ export async function sendEmail(payload: EmailPayload): Promise<boolean> {
   }
 }
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function layout(content: string): string {
   return `
     <div style="font-family:Arial,sans-serif;background:#0a0a0a;color:#fff;padding:32px;">
@@ -53,6 +61,58 @@ function layout(content: string): string {
       </div>
     </div>
   `;
+}
+
+export type OrderInvoiceLine = {
+  name: string;
+  quantity: number;
+  unitPrice: number;
+};
+
+export async function sendOrderInvoiceEmail(input: {
+  to: string;
+  customerName: string;
+  orderId: string;
+  total: number;
+  paymentUrl: string;
+  items: OrderInvoiceLine[];
+}): Promise<boolean> {
+  const rows = input.items
+    .map(
+      (item) => `
+    <tr>
+      <td style="padding:8px 0;border-bottom:1px solid #333;color:#e5e5e5;">${escapeHtml(item.name)}</td>
+      <td style="padding:8px 0;border-bottom:1px solid #333;color:#e5e5e5;text-align:center;">${item.quantity}</td>
+      <td style="padding:8px 0;border-bottom:1px solid #333;color:#e5e5e5;text-align:right;">$${(item.unitPrice * item.quantity).toFixed(2)}</td>
+    </tr>`
+    )
+    .join("");
+
+  return sendEmail({
+    to: input.to,
+    subject: `Your invoice — Order ${input.orderId.slice(0, 8).toUpperCase()}`,
+    html: layout(`
+      <h1 style="font-size:22px;">Your order invoice</h1>
+      <p>Hi ${escapeHtml(input.customerName)},</p>
+      <p>We created your order and payment invoice. Complete checkout with crypto using the button below.</p>
+      <p><strong>Order ID:</strong> ${escapeHtml(input.orderId)}</p>
+      <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
+        <thead>
+          <tr>
+            <th align="left" style="color:#888;padding-bottom:8px;">Item</th>
+            <th style="color:#888;padding-bottom:8px;">Qty</th>
+            <th align="right" style="color:#888;padding-bottom:8px;">Line total</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <p style="font-size:18px;margin-top:16px;"><strong>Total due: $${input.total.toFixed(2)} USD</strong></p>
+      <p style="margin:28px 0;text-align:center;">
+        <a href="${input.paymentUrl}" style="display:inline-block;background:#dc2626;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold;">Pay now with crypto</a>
+      </p>
+      <p style="font-size:12px;color:#888;">If you already paid on the payment page, you can ignore this email. We will email you again when payment is confirmed.</p>
+    `),
+  });
 }
 
 export async function sendOrderReceivedEmail(input: {

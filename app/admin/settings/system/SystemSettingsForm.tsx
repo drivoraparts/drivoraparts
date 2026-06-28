@@ -10,12 +10,14 @@ export default function SystemSettingsForm({
   initialTawkEnabled,
   nowpaymentsConfigured,
   analyticsReady,
+  emailConfigured,
 }: {
   initialSiteUrl: string;
   initialPaymentMode: PaymentMode;
   initialTawkEnabled: boolean;
   nowpaymentsConfigured: boolean;
   analyticsReady: boolean;
+  emailConfigured: boolean;
 }) {
   const [paymentMode, setPaymentMode] = useState<PaymentMode>(initialPaymentMode);
   const [tawkEnabled, setTawkEnabled] = useState(initialTawkEnabled);
@@ -81,6 +83,26 @@ export default function SystemSettingsForm({
             Orders, analytics events, and AI insights will read from your Supabase database.
           </p>
         )}
+      </section>
+
+      <section className="mb-8 max-w-2xl rounded-xl border border-sky-200 bg-sky-50 p-5">
+        <h2 className="text-lg font-semibold text-sky-950">Order confirmation emails</h2>
+        <p className="mt-2 text-sm text-sky-900">
+          Status:{" "}
+          <span className="font-semibold">
+            {emailConfigured
+              ? "Resend configured — customers receive order emails"
+              : "Not configured — no order emails are sent"}
+          </span>
+        </p>
+        {!emailConfigured ? (
+          <p className="mt-2 text-sm text-sky-900">
+            Add <code className="rounded bg-sky-100 px-1">RESEND_API_KEY</code> and{" "}
+            <code className="rounded bg-sky-100 px-1">EMAIL_FROM</code> (e.g.{" "}
+            <code className="rounded bg-sky-100 px-1">orders@drivoraparts.com</code>
+            ) in Cloudflare Production, verify the domain in Resend, then redeploy.
+          </p>
+        ) : null}
       </section>
 
       <form onSubmit={handleSubmit} className="max-w-xl space-y-5">

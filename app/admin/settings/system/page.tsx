@@ -13,6 +13,7 @@ export default function AdminSystemSettingsPage() {
       initialPaymentMode={settings.paymentMode}
       initialTawkEnabled={settings.tawkEnabled}
       nowpaymentsConfigured={settings.nowpaymentsConfigured}
+      emailConfigured={settings.emailConfigured}
       analyticsReady={isSupabaseConfigured()}
     />
   );

@@ -22,8 +22,6 @@ import {
 
 import {
 
-  sendOrderReceivedEmail,
-
   sendPaymentReceivedEmail,
 
 } from "@/lib/email/send";
@@ -36,6 +34,7 @@ import { createCheckoutPayment } from "@/lib/payments";
 
 import type { PaymentProviderId } from "@/lib/payments/types";
 
+import { emailCustomerOrderInvoice } from "@/lib/checkout/customer-invoice";
 import { lockOrderItemsFromCatalog } from "@/lib/checkout/validate-items";
 import { processCheckoutWithoutSupabase } from "@/lib/checkout/offline";
 import type { CheckoutCustomerInput, CheckoutResult } from "@/lib/checkout/types";
@@ -127,6 +126,11 @@ export async function processCheckout(input: {
 
 
   if (!isSupabaseConfigured()) {
+    if (process.env.NODE_ENV === "production") {
+      throw new Error(
+        "Orders cannot be saved — Supabase is not configured on production. Add Supabase env vars in Cloudflare and redeploy."
+      );
+    }
 
     return processCheckoutWithoutSupabase({
 
@@ -278,16 +282,17 @@ export async function processCheckout(input: {
 
 
 
-  await sendOrderReceivedEmail({
-
+  await emailCustomerOrderInvoice({
     to: customer.email,
-
     customerName: customer.full_name,
-
     orderId: order.id,
-
     total: Number(order.total),
-
+    paymentUrl: payment.paymentUrl,
+    items: order.items.map((item) => ({
+      name: item.name,
+      quantity: item.quantity,
+      price: Number(item.price),
+    })),
   });
 
 

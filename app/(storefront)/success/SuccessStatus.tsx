@@ -34,34 +34,60 @@ const COPY: Record<View, { heading: string; subtext: string; message: string }> 
   },
 };
 
-export default function SuccessStatus({ orderId }: { orderId: string | null }) {
-  const [view, setView] = useState<View>(orderId ? "pending" : "unknown");
+export default function SuccessStatus({
+  orderId,
+  npPaymentId,
+}: {
+  orderId: string | null;
+  npPaymentId: string | null;
+}) {
+  const [view, setView] = useState<View>(
+    orderId || npPaymentId ? "pending" : "unknown"
+  );
   const [total, setTotal] = useState<number | null>(null);
+  const [resolvedOrderId, setResolvedOrderId] = useState<string | null>(orderId);
 
   useEffect(() => {
-    if (!orderId) return;
+    if (!orderId && !npPaymentId) return;
 
     let active = true;
     let attempts = 0;
 
+    const query = new URLSearchParams();
+    if (orderId) query.set("orderId", orderId);
+    if (npPaymentId) query.set("NP_id", npPaymentId);
+
     const check = async (): Promise<boolean> => {
       try {
-        const res = await fetch(
-          `/api/public/order-status?orderId=${encodeURIComponent(orderId)}`,
-          { cache: "no-store" }
-        );
-        if (!res.ok || !active) return false;
-
-        const data = (await res.json()) as { status?: string; total?: number };
+        const res = await fetch(`/api/public/order-status?${query.toString()}`, {
+          cache: "no-store",
+        });
         if (!active) return false;
 
+        if (res.status === 503) {
+          setView("unknown");
+          return true;
+        }
+
+        if (!res.ok) return false;
+
+        const data = (await res.json()) as {
+          status?: string;
+          total?: number;
+          orderId?: string;
+        };
+        if (!active) return false;
+
+        if (typeof data.orderId === "string") {
+          setResolvedOrderId(data.orderId);
+        }
         if (typeof data.total === "number") setTotal(data.total);
 
         if (data.status === "paid") {
           setView("paid");
           return true;
         }
-        if (data.status === "failed") {
+        if (data.status === "failed" || data.status === "cancelled") {
           setView("failed");
           return true;
         }
@@ -83,7 +109,7 @@ export default function SuccessStatus({ orderId }: { orderId: string | null }) {
       active = false;
       clearInterval(interval);
     };
-  }, [orderId]);
+  }, [orderId, npPaymentId]);
 
   const { heading, subtext, message } = COPY[view];
   const totalLabel = view === "paid" ? "Total Paid" : "Order Total";
@@ -108,11 +134,11 @@ export default function SuccessStatus({ orderId }: { orderId: string | null }) {
         <p className="text-sm text-white/80">{message}</p>
       </div>
 
-      {orderId ? (
+      {resolvedOrderId ? (
         <div className="mt-4 space-y-3 rounded-xl border border-white/10 bg-black/40 p-4">
           <div>
             <p className="text-xs text-white/50">Order ID</p>
-            <p className="break-all text-sm text-white">{orderId}</p>
+            <p className="break-all text-sm text-white">{resolvedOrderId}</p>
           </div>
           {total != null ? (
             <div>

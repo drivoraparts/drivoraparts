@@ -1,9 +1,9 @@
+import { emailCustomerOrderInvoice } from "@/lib/checkout/customer-invoice";
 import { calculateCartDiscounts } from "@/lib/inventory/discounts";
 import { products } from "@/lib/inventory/products";
-import { sendOrderReceivedEmail } from "@/lib/email/send";
 import { logInfo } from "@/lib/monitoring/logger";
 import { logActivity } from "@/lib/monitoring/activity";
-import { resolveNowPaymentsCheckoutUrl } from "@/lib/payments/nowpayments/client";
+import { createAutoOrderInvoice } from "@/lib/payments/nowpayments/client";
 import type { CreateOrderItemInput } from "@/lib/db/orders";
 import type { CheckoutCustomerInput, CheckoutResult } from "@/lib/checkout/types";
 
@@ -54,7 +54,7 @@ export async function processCheckoutWithoutSupabase(input: {
     ...input.requestMeta,
   });
 
-  const checkout = await resolveNowPaymentsCheckoutUrl({
+  const checkout = await createAutoOrderInvoice({
     orderId,
     amount: breakdown.total,
     customerEmail: input.customer.email,
@@ -67,11 +67,17 @@ export async function processCheckoutWithoutSupabase(input: {
     ...input.requestMeta,
   });
 
-  await sendOrderReceivedEmail({
+  await emailCustomerOrderInvoice({
     to: input.customer.email,
     customerName: input.customer.fullName,
     orderId,
     total: breakdown.total,
+    paymentUrl: checkout.paymentUrl,
+    items: lockedItems.map((item) => ({
+      name: item.name,
+      quantity: item.quantity,
+      price: item.price,
+    })),
   });
 
   return {

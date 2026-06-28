@@ -17,6 +17,7 @@ export type NowPaymentsInvoiceInput = {
   successUrl: string;
   cancelUrl: string;
   description?: string;
+  customerEmail?: string;
 };
 
 export type NowPaymentsInvoiceResult =
@@ -66,6 +67,20 @@ export function buildNowPaymentsUrls(orderId: string) {
   };
 }
 
+/** Creates a NOWPayments invoice for the order amount (API when configured). */
+export async function createAutoOrderInvoice(input: {
+  orderId: string;
+  amount: number;
+  currency?: string;
+  customerEmail?: string;
+}): Promise<{
+  paymentUrl: string;
+  transactionId: string;
+  mode: "api_invoice" | "static_invoice_link";
+}> {
+  return resolveNowPaymentsCheckoutUrl(input);
+}
+
 export async function resolveNowPaymentsCheckoutUrl(input: {
   orderId: string;
   amount: number;
@@ -82,23 +97,40 @@ export async function resolveNowPaymentsCheckoutUrl(input: {
       orderId: input.orderId,
       amount: input.amount,
       currency: input.currency,
+      customerEmail: input.customerEmail,
       callbackUrl: urls.callbackUrl,
       successUrl: urls.successUrl,
       cancelUrl: urls.cancelUrl,
     });
 
-    if (invoice.ok) {
+    if (!invoice.ok) {
+      const error = "error" in invoice ? invoice.error : "API invoice failed";
+      await logActivity("error", "nowpayments.auto_invoice_failed", {
+        orderId: input.orderId,
+        error,
+      });
+
+      if (process.env.NODE_ENV === "production") {
+        throw new Error(
+          `Could not create payment invoice: ${error}. Check NOWPAYMENTS_API_KEY and order amount meets the minimum.`
+        );
+      }
+
+      await logActivity("warn", "nowpayments.api_fallback_static", {
+        orderId: input.orderId,
+        error,
+      });
+    } else {
       return {
         paymentUrl: invoice.paymentUrl,
         transactionId: invoice.invoiceId,
         mode: "api_invoice",
       };
     }
-
-    await logActivity("warn", "nowpayments.api_fallback_static", {
-      orderId: input.orderId,
-      error: "error" in invoice ? invoice.error : "API invoice failed",
-    });
+  } else if (process.env.NODE_ENV === "production") {
+    throw new Error(
+      "NOWPAYMENTS_API_KEY is required in production to create customer invoices."
+    );
   }
 
   const invoiceId = process.env.NOWPAYMENTS_BUTTON_IID ?? "4682099423";
@@ -118,7 +150,7 @@ export async function createNowPaymentsInvoice(
     return { ok: false, error: "NOWPayments is not configured" };
   }
 
-  const body = {
+  const body: Record<string, string | number> = {
     price_amount: input.amount,
     price_currency: (input.currency ?? "USD").toLowerCase(),
     order_id: input.orderId,
@@ -128,6 +160,10 @@ export async function createNowPaymentsInvoice(
     success_url: input.successUrl,
     cancel_url: input.cancelUrl,
   };
+
+  if (input.customerEmail) {
+    body.customer_email = input.customerEmail;
+  }
 
   try {
     const response = await fetch(NOWPAYMENTS_API, {
@@ -145,7 +181,7 @@ export async function createNowPaymentsInvoice(
       message?: string;
     } | null;
 
-    if (!response.ok || !data?.invoice_url || data.id == null) {
+    if (!response.ok || data.id == null) {
       const error = data?.message ?? `NOWPayments API error (${response.status})`;
 
       await logActivity("error", "nowpayments.invoice_failed", {
@@ -162,6 +198,9 @@ export async function createNowPaymentsInvoice(
     }
 
     const invoiceId = String(data.id);
+    const paymentUrl =
+      data.invoice_url ??
+      `https://nowpayments.io/payment/?iid=${encodeURIComponent(invoiceId)}`;
 
     await logActivity("info", "nowpayments.invoice_created", {
       orderId: input.orderId,
@@ -170,7 +209,7 @@ export async function createNowPaymentsInvoice(
 
     return {
       ok: true,
-      paymentUrl: data.invoice_url,
+      paymentUrl,
       invoiceId,
       raw: data as Record<string, unknown>,
     };
@@ -254,4 +293,37 @@ export function mapNowPaymentsPaymentStatus(
   }
 
   return "pending";
+}
+
+/** Resolve merchant order_id from a NOWPayments payment or invoice reference (e.g. NP_id). */
+export async function fetchNowPaymentsOrderId(
+  ref: string
+): Promise<string | null> {
+  const apiKey = getNowPaymentsApiKey();
+  if (!apiKey || !ref) return null;
+
+  const endpoints = [
+    `https://api.nowpayments.io/v1/payment/${encodeURIComponent(ref)}`,
+    `https://api.nowpayments.io/v1/invoice/${encodeURIComponent(ref)}`,
+  ];
+
+  for (const url of endpoints) {
+    try {
+      const response = await fetch(url, {
+        headers: { "x-api-key": apiKey },
+        cache: "no-store",
+      });
+      if (!response.ok) continue;
+
+      const data = (await response.json().catch(() => null)) as {
+        order_id?: string | null;
+      } | null;
+
+      if (data?.order_id) return data.order_id;
+    } catch {
+      // try next endpoint
+    }
+  }
+
+  return null;
 }

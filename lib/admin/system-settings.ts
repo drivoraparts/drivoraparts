@@ -5,6 +5,7 @@ export type AdminSystemSettings = {
   paymentMode: PaymentMode;
   tawkEnabled: boolean;
   nowpaymentsConfigured: boolean;
+  emailConfigured: boolean;
 };
 
 let runtimeSettings: {
@@ -20,12 +21,14 @@ export function getAdminSystemSettings(): AdminSystemSettings {
   const nowpaymentsConfigured = Boolean(
     process.env.NOWPAYMENTS_API_KEY && process.env.NOWPAYMENTS_IPN_SECRET
   );
+  const emailConfigured = Boolean(process.env.RESEND_API_KEY);
 
   return {
     siteUrl,
     paymentMode: runtimeSettings.paymentMode,
     tawkEnabled: runtimeSettings.tawkEnabled,
     nowpaymentsConfigured,
+    emailConfigured,
   };
 }
 
