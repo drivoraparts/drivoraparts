@@ -66,6 +66,49 @@ export function buildNowPaymentsUrls(orderId: string) {
   };
 }
 
+export async function resolveNowPaymentsCheckoutUrl(input: {
+  orderId: string;
+  amount: number;
+  currency?: string;
+  customerEmail?: string;
+}): Promise<{
+  paymentUrl: string;
+  transactionId: string;
+  mode: "api_invoice" | "static_invoice_link";
+}> {
+  if (isNowPaymentsApiConfigured()) {
+    const urls = buildNowPaymentsUrls(input.orderId);
+    const invoice = await createNowPaymentsInvoice({
+      orderId: input.orderId,
+      amount: input.amount,
+      currency: input.currency,
+      callbackUrl: urls.callbackUrl,
+      successUrl: urls.successUrl,
+      cancelUrl: urls.cancelUrl,
+    });
+
+    if (invoice.ok) {
+      return {
+        paymentUrl: invoice.paymentUrl,
+        transactionId: invoice.invoiceId,
+        mode: "api_invoice",
+      };
+    }
+
+    await logActivity("warn", "nowpayments.api_fallback_static", {
+      orderId: input.orderId,
+      error: "error" in invoice ? invoice.error : "API invoice failed",
+    });
+  }
+
+  const invoiceId = process.env.NOWPAYMENTS_BUTTON_IID ?? "4682099423";
+  return {
+    paymentUrl: getNowPaymentsStaticPaymentUrl(),
+    transactionId: invoiceId,
+    mode: "static_invoice_link",
+  };
+}
+
 export async function createNowPaymentsInvoice(
   input: NowPaymentsInvoiceInput
 ): Promise<NowPaymentsInvoiceResult> {

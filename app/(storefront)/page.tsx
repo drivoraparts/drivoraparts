@@ -65,12 +65,20 @@ export default function Home() {
             presence.
           </p>
 
-          <Link
-            href="/catalog"
-            className="mt-10 inline-block transform rounded-full bg-red-600 px-8 py-3 font-semibold transition hover:scale-105 hover:bg-red-700"
-          >
-            ENTER MARKET
-          </Link>
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <Link
+              href="/catalog"
+              className="inline-block transform rounded-full bg-red-600 px-8 py-3 font-semibold transition hover:scale-105 hover:bg-red-700"
+            >
+              ENTER MARKET
+            </Link>
+            <Link
+              href={routes.all}
+              className="inline-block transform rounded-full border border-white/20 bg-white/5 px-8 py-3 font-semibold text-white transition hover:scale-105 hover:border-white/40 hover:bg-white/10"
+            >
+              All Products
+            </Link>
+          </div>
         </div>
       </section>
 

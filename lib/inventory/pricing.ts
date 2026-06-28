@@ -28,7 +28,11 @@ export function roundListPrice(amount: number): number {
   return Math.round(amount / 100) * 100 - 1;
 }
 
+/** Fixed list price for checkout/payment testing (bypasses MSRP rounding). */
+export const CHECKOUT_TEST_PRODUCT_ID = 9999;
+
 export function resolvePublicPrice(product: Pick<Product, "id" | "price">): number {
+  if (product.id === CHECKOUT_TEST_PRODUCT_ID) return product.price;
   return roundListPrice(product.price * PUBLIC_PRICE_RATIO);
 }
 

@@ -26,6 +26,14 @@ function getCatalogStock(productId: number): number {
   return product.stockQty ?? 10;
 }
 
+function catalogStockRow(product: (typeof products)[number]) {
+  return {
+    product_id: product.id,
+    quantity: product.stockQty ?? (product.stock === false ? 0 : 10),
+    low_stock_threshold: DEFAULT_THRESHOLD,
+  };
+}
+
 export async function seedInventoryIfEmpty(): Promise<void> {
   const supabase = getSupabaseAdmin();
   const { count, error } = await supabase
@@ -35,20 +43,36 @@ export async function seedInventoryIfEmpty(): Promise<void> {
   if (error) throw error;
   if ((count ?? 0) > 0) return;
 
-  const rows = products.map((product) => ({
-    product_id: product.id,
-    quantity:
-      product.stockQty ?? (product.stock === false ? 0 : 10),
-    low_stock_threshold: DEFAULT_THRESHOLD,
-  }));
-
+  const rows = products.map(catalogStockRow);
   const { error: insertError } = await supabase.from("inventory").insert(rows);
+  if (insertError) throw insertError;
+}
+
+/** Backfill SKUs added to the catalog after the initial inventory seed. */
+export async function syncMissingInventoryFromCatalog(): Promise<void> {
+  await seedInventoryIfEmpty();
+
+  const supabase = getSupabaseAdmin();
+  const { data: existing, error } = await supabase
+    .from("inventory")
+    .select("product_id");
+
+  if (error) throw error;
+
+  const existingIds = new Set((existing ?? []).map((row) => row.product_id));
+  const missing = products.filter((product) => !existingIds.has(product.id));
+  if (!missing.length) return;
+
+  const { error: insertError } = await supabase
+    .from("inventory")
+    .insert(missing.map(catalogStockRow));
+
   if (insertError) throw insertError;
 }
 
 export async function getInventory(productId: number): Promise<number> {
   try {
-    await seedInventoryIfEmpty();
+    await syncMissingInventoryFromCatalog();
     const supabase = getSupabaseAdmin();
     const { data, error } = await supabase
       .from("inventory")
@@ -77,7 +101,7 @@ export async function reduceInventory(
   productId: number,
   quantity: number
 ): Promise<boolean> {
-  await seedInventoryIfEmpty();
+  await syncMissingInventoryFromCatalog();
   const supabase = getSupabaseAdmin();
 
   const { data: current, error: readError } = await supabase
@@ -88,7 +112,7 @@ export async function reduceInventory(
 
   if (readError) throw readError;
 
-  const available = current?.quantity ?? 0;
+  const available = current?.quantity ?? getCatalogStock(productId);
   if (available < quantity) return false;
 
   const { error: updateError } = await supabase

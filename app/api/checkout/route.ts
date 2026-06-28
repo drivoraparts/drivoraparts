@@ -7,6 +7,18 @@ import {
 import { logError, logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
 
+function getCheckoutErrorMessage(error: unknown): string {
+  if (error instanceof Error && error.message) return error.message;
+
+  if (typeof error === "object" && error !== null) {
+    const record = error as { message?: string; details?: string };
+    if (record.message) return record.message;
+    if (record.details) return record.details;
+  }
+
+  return "Checkout failed";
+}
+
 function parseCustomer(raw: unknown) {
   if (typeof raw !== "object" || raw === null) return null;
 
@@ -88,8 +100,9 @@ export async function POST(req: Request) {
     return NextResponse.json(result);
   } catch (error) {
     logError("checkout_failed", error, { ip });
-    const message =
-      error instanceof Error ? error.message : "Checkout failed";
-    return NextResponse.json({ error: message }, { status: 400 });
+    return NextResponse.json(
+      { error: getCheckoutErrorMessage(error) },
+      { status: 400 }
+    );
   }
 }

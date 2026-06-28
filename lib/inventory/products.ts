@@ -4216,6 +4216,21 @@ Worldwide Shipping Available`,
   ...bodyPartsProducts,
   ...interiorProducts,
   ...aftermarketProducts,
+  {
+    id: 9999,
+    name: "Checkout Test Part",
+    category: "electronics",
+    brand: "universal",
+    price: 20,
+    stock: true,
+    stockQty: 99,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description:
+      "$20 test SKU for NOWPayments checkout (above the ~$19 USD minimum). Search “Checkout Test Part” or open /product/9999.",
+  },
 ];
 
 /** Storefront + checkout prices (affordable public list). */

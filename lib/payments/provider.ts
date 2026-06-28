@@ -5,14 +5,12 @@ import {
 } from "@/lib/db/payments";
 import { logActivity } from "@/lib/monitoring/activity";
 import {
-  buildNowPaymentsUrls,
-  createNowPaymentsInvoice,
-  getNowPaymentsStaticPaymentUrl,
-  isNowPaymentsApiConfigured,
   mapNowPaymentsPaymentStatus,
   parseNowPaymentsWebhookPayload,
+  resolveNowPaymentsCheckoutUrl,
   verifyNowPaymentsWebhookSignature,
 } from "@/lib/payments/nowpayments/client";
+import { isSupabaseConfigured } from "@/lib/env";
 import type { PaymentProviderId, PaymentStatus } from "./types";
 
 export type InvoiceOrder = {
@@ -52,35 +50,45 @@ export interface PaymentProvider {
 async function createStaticNowPaymentsInvoice(
   order: InvoiceOrder
 ): Promise<InvoiceResult> {
-  const paymentUrl = getNowPaymentsStaticPaymentUrl();
-  const invoiceId = process.env.NOWPAYMENTS_BUTTON_IID ?? "4682099423";
-
-  const payment = await createPaymentRecord({
+  const checkout = await resolveNowPaymentsCheckoutUrl({
     orderId: order.orderId,
-    provider: "nowpayments",
     amount: order.amount,
-    currency: order.currency ?? "USD",
-    status: "pending",
-    paymentUrl,
-    providerPaymentId: invoiceId,
-    metadata: {
-      customerEmail: order.customerEmail,
-      payment_method: "nowpayments",
-      mode: "static_invoice_link",
-      invoice_id: invoiceId,
-    },
+    currency: order.currency,
+    customerEmail: order.customerEmail,
   });
+
+  let paymentId = `offline-${order.orderId}`;
+
+  if (isSupabaseConfigured()) {
+    const payment = await createPaymentRecord({
+      orderId: order.orderId,
+      provider: "nowpayments",
+      amount: order.amount,
+      currency: order.currency ?? "USD",
+      status: "pending",
+      paymentUrl: checkout.paymentUrl,
+      providerPaymentId: checkout.transactionId,
+      metadata: {
+        customerEmail: order.customerEmail,
+        payment_method: "nowpayments",
+        mode: checkout.mode,
+        invoice_id: checkout.transactionId,
+      },
+    });
+    paymentId = payment.id;
+  }
 
   await logActivity("info", "nowpayments.static_invoice_created", {
     orderId: order.orderId,
-    invoiceId,
+    invoiceId: checkout.transactionId,
+    mode: checkout.mode,
   });
 
   return {
     provider: "nowpayments",
-    paymentId: payment.id,
-    paymentUrl,
-    transactionId: invoiceId,
+    paymentId,
+    paymentUrl: checkout.paymentUrl,
+    transactionId: checkout.transactionId,
     status: "pending",
   };
 }
@@ -93,58 +101,17 @@ export const nowpaymentsPaymentProvider: PaymentProvider = {
   },
 
   async createInvoice(order: InvoiceOrder): Promise<InvoiceResult> {
-    const existing = await findPaymentByOrderId(order.orderId);
-    if (existing?.payment_url) {
-      return {
-        provider: "nowpayments",
-        paymentId: existing.id,
-        paymentUrl: existing.payment_url,
-        transactionId: existing.provider_payment_id ?? undefined,
-        status: "pending",
-      };
-    }
-
-    if (isNowPaymentsApiConfigured()) {
-      const urls = buildNowPaymentsUrls(order.orderId);
-      const invoice = await createNowPaymentsInvoice({
-        orderId: order.orderId,
-        amount: order.amount,
-        currency: order.currency,
-        callbackUrl: urls.callbackUrl,
-        successUrl: urls.successUrl,
-        cancelUrl: urls.cancelUrl,
-      });
-
-      if (invoice.ok) {
-        const payment = await createPaymentRecord({
-          orderId: order.orderId,
-          provider: "nowpayments",
-          amount: order.amount,
-          currency: order.currency ?? "USD",
-          status: "pending",
-          paymentUrl: invoice.paymentUrl,
-          providerPaymentId: invoice.invoiceId,
-          metadata: {
-            customerEmail: order.customerEmail,
-            payment_method: "nowpayments",
-            mode: "api_invoice",
-            invoice_id: invoice.invoiceId,
-          },
-        });
-
+    if (isSupabaseConfigured()) {
+      const existing = await findPaymentByOrderId(order.orderId);
+      if (existing?.payment_url) {
         return {
           provider: "nowpayments",
-          paymentId: payment.id,
-          paymentUrl: invoice.paymentUrl,
-          transactionId: invoice.invoiceId,
+          paymentId: existing.id,
+          paymentUrl: existing.payment_url,
+          transactionId: existing.provider_payment_id ?? undefined,
           status: "pending",
         };
       }
-
-      await logActivity("warn", "nowpayments.api_fallback_static", {
-        orderId: order.orderId,
-        error: "error" in invoice ? invoice.error : "API invoice failed",
-      });
     }
 
     return createStaticNowPaymentsInvoice(order);

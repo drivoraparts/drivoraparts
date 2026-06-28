@@ -37,56 +37,12 @@ import { createCheckoutPayment } from "@/lib/payments";
 import type { PaymentProviderId } from "@/lib/payments/types";
 
 import { lockOrderItemsFromCatalog } from "@/lib/checkout/validate-items";
-
+import { processCheckoutWithoutSupabase } from "@/lib/checkout/offline";
+import type { CheckoutCustomerInput, CheckoutResult } from "@/lib/checkout/types";
+import { isSupabaseConfigured } from "@/lib/env";
 import { findPaymentByOrderId, updatePaymentRecord } from "@/lib/db/payments";
 
-
-
-export type CheckoutCustomerInput = {
-
-  fullName: string;
-
-  email: string;
-
-  phone?: string;
-
-  shippingAddress?: string;
-
-};
-
-
-
-export type CheckoutResult = {
-
-  orderId: string;
-
-  total: number;
-
-  subtotal: number;
-
-  shipping: number;
-
-  status: string;
-
-  redirectUrl?: string;
-
-  payment: {
-
-    provider: string;
-
-    status: string;
-
-    paymentUrl?: string;
-
-    transactionId?: string;
-
-    message?: string;
-
-    manualPending?: boolean;
-
-  };
-
-};
+export type { CheckoutCustomerInput, CheckoutResult } from "@/lib/checkout/types";
 
 
 
@@ -170,6 +126,24 @@ export async function processCheckout(input: {
 
 
 
+  if (!isSupabaseConfigured()) {
+
+    return processCheckoutWithoutSupabase({
+
+      items: lockedItems,
+
+      customer: input.customer,
+
+      shipping: input.shipping,
+
+      requestMeta: input.requestMeta,
+
+    });
+
+  }
+
+
+
   logInfo("checkout_attempt", {
 
     itemCount: lockedItems.length,
@@ -238,7 +212,7 @@ export async function processCheckout(input: {
 
     if (!reduced) {
 
-      await transitionOrderStatus(order.id, "failed");
+      await transitionOrderStatus(order.id, "cancelled");
 
       throw new Error(`Stock changed during checkout for ${item.name}`);
 
@@ -248,27 +222,25 @@ export async function processCheckout(input: {
 
 
 
-  await insertAnalyticsEvent("order_completed", {
-
-    orderId: order.id,
-
-    total: order.total,
-
-    itemCount: lockedItems.reduce((sum, item) => sum + item.quantity, 0),
-
-    products: lockedItems.map((item) => ({
-
-      productId: item.productId,
-
-      productName: item.name,
-
-      quantity: item.quantity,
-
-      price: item.price,
-
-    })),
-
-  });
+  try {
+    await insertAnalyticsEvent("order_completed", {
+      orderId: order.id,
+      total: order.total,
+      itemCount: lockedItems.reduce((sum, item) => sum + item.quantity, 0),
+      products: lockedItems.map((item) => ({
+        productId: item.productId,
+        productName: item.name,
+        quantity: item.quantity,
+        price: item.price,
+      })),
+    });
+  } catch (error) {
+    logWarn("checkout_analytics_failed", {
+      orderId: order.id,
+      message: error instanceof Error ? error.message : String(error),
+      ...input.requestMeta,
+    });
+  }
 
 
 

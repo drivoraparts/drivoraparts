@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { trackEvent } from "@/lib/analytics/client";
@@ -17,7 +16,6 @@ const glassCard =
   "box-border w-full max-w-full rounded-lg border border-white/10 bg-white/[0.06] p-4 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md sm:p-6";
 
 export default function CheckoutPage() {
-  const router = useRouter();
   const [hydrated, setHydrated] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -106,6 +104,19 @@ export default function CheckoutPage() {
         return;
       }
 
+      const paymentUrl =
+        (typeof data.redirectUrl === "string" && data.redirectUrl) ||
+        data.payment?.paymentUrl;
+
+      if (!paymentUrl) {
+        showToast(
+          data.payment?.message ??
+            "Payment page unavailable. Please try again or contact support."
+        );
+        setSubmitting(false);
+        return;
+      }
+
       trackEvent("order_completed", {
         orderId: data.orderId,
         total: data.total,
@@ -113,16 +124,9 @@ export default function CheckoutPage() {
       });
 
       clearCart();
-
-      if (data.payment?.paymentUrl) {
-        window.location.href = data.payment.paymentUrl;
-        return;
-      }
-
-      router.push(`/success?orderId=${data.orderId}`);
+      window.location.assign(paymentUrl);
     } catch {
       showToast("Checkout failed");
-    } finally {
       setSubmitting(false);
     }
   };
