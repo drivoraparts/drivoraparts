@@ -41,7 +41,7 @@ export default function GlobalDrawer({
                   {t("marketplace")}
                 </p>
                 <Link
-                  href="/catalog/all"
+                  href="/catalog"
                   className="hover:text-white transition"
                 >
                   {t("browseCatalog")}

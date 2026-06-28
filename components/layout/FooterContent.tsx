@@ -3,7 +3,6 @@
 import Link from "next/link";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import CompanyAddress from "@/components/content/CompanyAddress";
-import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function FooterContent() {
@@ -11,37 +10,27 @@ export default function FooterContent() {
 
   return (
     <>
-      <div className="px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-4">
         <div>
-          <h2 className="font-bold text-lg mb-3">
+          <h2 className="mb-3 text-lg font-bold">
             Drivora<span className="text-red-500">Parts</span>
           </h2>
           <CompanyAddress variant="summary" className="mb-3" />
-          <p className="mb-2 text-sm text-gray-300">
-            Support:{" "}
-            <a
-              href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
-              className="text-red-400 hover:text-red-300"
-            >
-              {COMPANY_SUPPORT_EMAIL}
-            </a>
-          </p>
-          <p className="text-gray-500 text-xs">{t("footerBrand")}</p>
+          <p className="text-xs text-gray-500">{t("footerBrand")}</p>
         </div>
 
         <div>
-          <h3 className="text-red-500 mb-3">{t("quickLinks")}</h3>
-          <div className="flex flex-col gap-2 text-gray-300 text-sm">
-            <Link href="/catalog/all">{t("catalog")}</Link>
-            <Link href="/about">{t("about")}</Link>
+          <h3 className="mb-3 text-red-500">{t("quickLinks")}</h3>
+          <div className="flex flex-col gap-2 text-sm text-gray-300">
+            <Link href="/catalog">{t("catalog")}</Link>
             <Link href="/">{t("home")}</Link>
             <Link href="/contact">{t("contactSupport")}</Link>
           </div>
         </div>
 
         <div>
-          <h3 className="text-red-500 mb-3">{t("policies")}</h3>
-          <div className="flex flex-col gap-2 text-gray-300 text-sm">
+          <h3 className="mb-3 text-red-500">{t("policies")}</h3>
+          <div className="flex flex-col gap-2 text-sm text-gray-300">
             <Link href="/policies/privacy-policy">{t("privacyPolicy")}</Link>
             <Link href="/policies/cookie-policy">{t("cookiePolicy")}</Link>
             <Link href="/policies/accessibility-statement">{t("accessibility")}</Link>
@@ -53,8 +42,8 @@ export default function FooterContent() {
         </div>
 
         <div>
-          <h3 className="text-red-500 mb-3">{t("legalOperations")}</h3>
-          <div className="flex flex-col gap-2 text-gray-300 text-sm">
+          <h3 className="mb-3 text-red-500">{t("legalOperations")}</h3>
+          <div className="flex flex-col gap-2 text-sm text-gray-300">
             <Link href="/policies/shipping-policy">{t("shippingPolicy")}</Link>
             <Link href="/policies/refund-policy">{t("returnsRefunds")}</Link>
             <Link href="/policies/terms-of-sale">{t("termsOfSale")}</Link>
@@ -65,7 +54,7 @@ export default function FooterContent() {
         </div>
       </div>
 
-      <div className="text-center text-gray-500 text-xs py-6 border-t border-white/10">
+      <div className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
         <CurrencyFooterNote />
         © {new Date().getFullYear()} DrivoraParts LLC. {t("rightsReserved")}
       </div>
