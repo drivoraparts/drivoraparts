@@ -122,6 +122,7 @@ export default function CheckoutPage() {
       router.push(`/success?orderId=${data.orderId}`);
     } catch {
       showToast("Checkout failed");
+    } finally {
       setSubmitting(false);
     }
   };

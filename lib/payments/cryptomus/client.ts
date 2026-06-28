@@ -40,6 +40,14 @@ function signPayload(payload: string, apiKey: string): string {
   return md5(`${btoa(payload)}${apiKey}`);
 }
 
+function buildWebhookPayloadCandidates(
+  dataWithoutSign: Record<string, unknown>
+): string[] {
+  const plain = JSON.stringify(dataWithoutSign);
+  const escapedSlashes = plain.replace(/\//g, "\\/");
+  return plain === escapedSlashes ? [plain] : [plain, escapedSlashes];
+}
+
 export function isCryptomusConfigured(): boolean {
   return Boolean(getCryptomusMerchantId() && getCryptomusPaymentKey());
 }
@@ -210,8 +218,32 @@ export function verifyCryptomusWebhookSignature(
   signHeader: string | null
 ): boolean {
   const apiKey = getCryptomusPaymentKey();
-  if (!apiKey || !signHeader) return false;
-  return signPayload(rawBody, apiKey) === signHeader;
+  if (!apiKey) return false;
+
+  let payload: Record<string, unknown>;
+  try {
+    payload = JSON.parse(rawBody) as Record<string, unknown>;
+  } catch {
+    return signHeader ? signPayload(rawBody, apiKey) === signHeader : false;
+  }
+
+  const bodySign =
+    typeof payload.sign === "string" ? payload.sign : signHeader ?? null;
+  if (!bodySign) return false;
+
+  const { sign: _ignored, ...dataWithoutSign } = payload;
+
+  for (const candidate of buildWebhookPayloadCandidates(dataWithoutSign)) {
+    if (signPayload(candidate, apiKey) === bodySign) {
+      return true;
+    }
+  }
+
+  if (signHeader && signPayload(rawBody, apiKey) === signHeader) {
+    return true;
+  }
+
+  return false;
 }
 
 export function parseCryptomusWebhookPayload(
