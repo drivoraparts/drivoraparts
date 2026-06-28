@@ -103,12 +103,20 @@ export default function Home() {
         <p className="mb-8 text-gray-400">
           DrivoraParts — engineered for builders who move with precision.
         </p>
-        <Link
-          href={routes.all}
-          className="inline-block transform rounded-full bg-red-600 px-10 py-4 font-semibold transition hover:scale-105 hover:bg-red-700"
-        >
-          All Products
-        </Link>
+        <div className="flex flex-col items-center gap-4">
+          <Link
+            href={routes.all}
+            className="inline-block transform rounded-full bg-red-600 px-10 py-4 font-semibold transition hover:scale-105 hover:bg-red-700"
+          >
+            All Products
+          </Link>
+          <Link
+            href="/catalog"
+            className="inline-block transform rounded-full border border-white/20 bg-white/5 px-10 py-4 font-semibold text-white transition hover:scale-105 hover:border-white/40 hover:bg-white/10"
+          >
+            ENTER MARKET
+          </Link>
+        </div>
       </section>
     </div>
   );
