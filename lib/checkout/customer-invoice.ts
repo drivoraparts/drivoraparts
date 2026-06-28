@@ -1,5 +1,5 @@
 import {
-  sendOrderInvoiceEmail,
+  sendOrderCreatedEmail,
   sendOrderReceivedEmail,
   type OrderInvoiceLine,
 } from "@/lib/email/send";
@@ -28,7 +28,7 @@ export async function emailCustomerOrderInvoice(input: {
   let sent = false;
 
   if (input.paymentUrl) {
-    sent = await sendOrderInvoiceEmail({
+    sent = await sendOrderCreatedEmail({
       to: input.to,
       customerName: input.customerName,
       orderId: input.orderId,
@@ -52,7 +52,7 @@ export async function emailCustomerOrderInvoice(input: {
       hadPaymentUrl: Boolean(input.paymentUrl),
     });
   } else {
-    await logActivity("info", "checkout.invoice_email_sent", {
+    await logActivity("info", "checkout.order_created_email_sent", {
       orderId: input.orderId,
       itemCount: input.items.length,
     });

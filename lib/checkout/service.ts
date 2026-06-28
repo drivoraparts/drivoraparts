@@ -408,6 +408,12 @@ export async function markOrderPaid(orderId: string): Promise<void> {
 
       total: Number(updated.total),
 
+      items: updated.items.map((item) => ({
+        name: item.name,
+        quantity: item.quantity,
+        unitPrice: Number(item.price),
+      })),
+
     });
 
   }
