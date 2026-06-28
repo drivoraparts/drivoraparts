@@ -44,9 +44,9 @@ function ActionList({
                 <span
                   className={
                     item.priority === "critical"
-                      ? "text-red-400"
+                      ? "text-red-600"
                       : item.priority === "high"
-                        ? "text-yellow-300"
+                        ? "text-amber-700"
                         : "text-zinc-600"
                   }
                 >
