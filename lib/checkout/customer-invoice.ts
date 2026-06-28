@@ -1,6 +1,5 @@
 import {
   sendOrderCreatedEmail,
-  sendOrderReceivedEmail,
   type OrderInvoiceLine,
 } from "@/lib/email/send";
 import { logActivity } from "@/lib/monitoring/activity";
@@ -27,23 +26,13 @@ export async function emailCustomerOrderInvoice(input: {
 
   let sent = false;
 
-  if (input.paymentUrl) {
-    sent = await sendOrderCreatedEmail({
-      to: input.to,
-      customerName: input.customerName,
-      orderId: input.orderId,
-      total: input.total,
-      paymentUrl: input.paymentUrl,
-      items: lines,
-    });
-  } else {
-    sent = await sendOrderReceivedEmail({
-      to: input.to,
-      customerName: input.customerName,
-      orderId: input.orderId,
-      total: input.total,
-    });
-  }
+  sent = await sendOrderCreatedEmail({
+    to: input.to,
+    customerName: input.customerName,
+    orderId: input.orderId,
+    total: input.total,
+    items: lines,
+  });
 
   if (!sent) {
     await logActivity("warn", "checkout.invoice_email_skipped", {

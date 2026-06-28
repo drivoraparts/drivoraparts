@@ -221,13 +221,12 @@ function renderReceiptTotalRow(total: number, label: string): string {
       </table>`;
 }
 
-/** Sent immediately after checkout while payment is still pending. Includes pay link. */
+/** Sent immediately after checkout while payment is still pending. No payment link in email. */
 export async function sendOrderCreatedEmail(input: {
   to: string;
   customerName: string;
   orderId: string;
   total: number;
-  paymentUrl: string;
   items: OrderInvoiceLine[];
 }): Promise<boolean> {
   const orderRef = formatOrderRef(input.orderId);
@@ -240,25 +239,17 @@ export async function sendOrderCreatedEmail(input: {
       <p style="margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#fbbf24;">Awaiting payment</p>
       <h1 style="margin:0 0 12px;font-size:28px;line-height:1.2;color:#ffffff;">Thanks, ${escapeHtml(input.customerName)}</h1>
       <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#d4d4d4;">
-        Your order is saved as <strong>#${orderRef}</strong>. Complete crypto payment on our secure checkout page if you closed the payment window.
+        Your order is saved as <strong>#${orderRef}</strong>. Complete payment on the checkout page — your receipt will be emailed once payment is confirmed.
       </p>
 
       ${renderOrderLinesTable(input.items)}
       ${renderOrderTotalRow(input.total, "Total due")}
 
-      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 20px;background:#171717;border:1px solid #2a2a2a;border-radius:12px;">
-        <tr>
-          <td style="padding:20px;text-align:center;">
-            <a href="${input.paymentUrl}" style="display:inline-block;background:#dc2626;color:#ffffff;padding:14px 28px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:700;">Complete payment</a>
-          </td>
-        </tr>
-      </table>
-
       <p style="margin:0;font-size:13px;line-height:1.6;color:#737373;">
-        Already paid? Ignore this email. Your invoice receipt will arrive separately once payment is confirmed.
+        This email is your order confirmation only, not a payment request.
       </p>
     `,
-      `Order #${orderRef} confirmed — complete your $${input.total.toFixed(2)} payment.`
+      `Order #${orderRef} confirmed — $${input.total.toFixed(2)} total.`
     ),
   });
 }
@@ -300,7 +291,7 @@ export async function sendOrderInvoiceEmail(input: {
   customerName: string;
   orderId: string;
   total: number;
-  paymentUrl: string;
+  paymentUrl?: string;
   items: OrderInvoiceLine[];
 }): Promise<boolean> {
   return sendOrderCreatedEmail(input);
