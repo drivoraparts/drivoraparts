@@ -4,6 +4,7 @@ import {
   getPaymentProvider,
   handleProviderWebhook,
   manualPaymentProvider,
+  nowpaymentsPaymentProvider,
   type PaymentProvider,
 } from "./provider";
 import type {
@@ -14,6 +15,7 @@ import type {
 } from "./types";
 
 const providers: PaymentProvider[] = [
+  nowpaymentsPaymentProvider,
   cryptomusPaymentProvider,
   manualPaymentProvider,
 ];
@@ -24,6 +26,7 @@ export {
   getPaymentProvider,
   handleProviderWebhook,
   manualPaymentProvider,
+  nowpaymentsPaymentProvider,
 } from "./provider";
 export type { InvoiceOrder, InvoiceResult } from "./provider";
 

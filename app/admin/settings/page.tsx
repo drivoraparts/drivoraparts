@@ -52,7 +52,11 @@ export default function AdminSettingsPage() {
           <p className={adminUi.muted}>Payment mode</p>
           <p className="mt-1 font-medium text-zinc-900">{system.paymentMode}</p>
           <p className="text-sm text-zinc-600">
-            {system.cryptomusConfigured ? "Cryptomus configured" : "Manual fallback"}
+            {system.nowpaymentsConfigured
+              ? "NOWPayments configured"
+              : system.cryptomusConfigured
+                ? "Cryptomus configured"
+                : "Manual fallback"}
           </p>
         </div>
       </div>
@@ -67,7 +71,13 @@ export default function AdminSettingsPage() {
             </p>
           </div>
           <div className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3">
-            <p className="text-sm font-medium text-zinc-900">Cryptomus payments</p>
+            <p className="text-sm font-medium text-zinc-900">NOWPayments</p>
+            <p className={`mt-1 ${adminUi.muted}`}>
+              {system.nowpaymentsConfigured ? "Configured" : "Not configured"}
+            </p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3">
+            <p className="text-sm font-medium text-zinc-900">Cryptomus (legacy)</p>
             <p className={`mt-1 ${adminUi.muted}`}>
               {system.cryptomusConfigured ? "Configured" : "Not configured"}
             </p>

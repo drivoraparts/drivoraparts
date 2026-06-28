@@ -12,6 +12,7 @@ export default function AdminSystemSettingsPage() {
       initialSiteUrl={settings.siteUrl}
       initialPaymentMode={settings.paymentMode}
       initialTawkEnabled={settings.tawkEnabled}
+      nowpaymentsConfigured={settings.nowpaymentsConfigured}
       cryptomusConfigured={settings.cryptomusConfigured}
       analyticsReady={isSupabaseConfigured()}
     />

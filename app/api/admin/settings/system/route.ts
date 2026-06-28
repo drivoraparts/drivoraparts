@@ -7,7 +7,7 @@ import {
 import { requireAdminApi } from "@/lib/auth/require-admin";
 
 function isPaymentMode(value: string): value is PaymentMode {
-  return value === "auto" || value === "cryptomus" || value === "manual";
+  return value === "auto" || value === "nowpayments" || value === "cryptomus" || value === "manual";
 }
 
 export async function PATCH(req: Request) {

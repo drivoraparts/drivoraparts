@@ -143,7 +143,7 @@ export async function getPaymentStats() {
       stats[payment.status as PaymentStatus] += 1;
       if (payment.status === "paid") {
         stats.paidAmount += Number(payment.amount);
-        if (payment.provider === "cryptomus") {
+        if (payment.provider === "cryptomus" || payment.provider === "nowpayments") {
           stats.cryptomusPaid += 1;
           stats.cryptomusPaidAmount += Number(payment.amount);
         } else if (payment.provider === "manual") {

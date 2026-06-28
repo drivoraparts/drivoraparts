@@ -74,7 +74,9 @@ export async function POST(req: Request) {
     }
 
     const providerId =
-      body?.provider === "cryptomus" || body?.provider === "manual"
+      body?.provider === "nowpayments" ||
+      body?.provider === "cryptomus" ||
+      body?.provider === "manual"
         ? body.provider
         : undefined;
 

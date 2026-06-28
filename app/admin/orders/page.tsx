@@ -20,6 +20,7 @@ function formatTime(iso: string) {
 
 function formatPaymentMethod(provider: string, metadata: Record<string, unknown> | null) {
 
+  if (provider === "nowpayments") return "NOWPayments";
   if (provider === "cryptomus") return "Cryptomus";
 
   if (metadata?.mode === "manual_pending") return "Manual (pending)";

@@ -1,11 +1,11 @@
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
-import { getCryptomusConfig } from "@/lib/cryptomus/config";
+import { getNowPaymentsConfig } from "@/lib/nowpayments/config";
 import { listOrders } from "@/lib/db/orders";
 import { listPayments } from "@/lib/db/payments";
 
 export const dynamic = "force-dynamic";
 export default async function AdminPaymentsPage() {
-  const config = getCryptomusConfig();
+  const config = getNowPaymentsConfig();
   const [payments, orders] = await Promise.all([listPayments(), listOrders(200)]);
 
   const pendingOrders = orders.filter((order) => order.status === "pending");
@@ -20,8 +20,8 @@ export default async function AdminPaymentsPage() {
           value={config.enabled ? "Configured" : "Not Configured"}
           hint={
             config.enabled
-              ? "Cryptomus adapter enabled"
-              : "Set CRYPTOMUS_MERCHANT_ID and CRYPTOMUS_PAYMENT_KEY"
+              ? "NOWPayments adapter enabled"
+              : "Set NOWPAYMENTS_API_KEY and NOWPAYMENTS_IPN_SECRET"
           }
         />
         <StatCard
@@ -44,7 +44,7 @@ export default async function AdminPaymentsPage() {
           </li>
           <li>
             <span className="text-zinc-600">Create invoice:</span> POST
-            /api/payments/cryptomus/create
+            /api/checkout (auto-creates NOWPayments invoice)
           </li>
           <li>
             <span className="text-zinc-600">Webhook:</span> {config.callbackUrl}

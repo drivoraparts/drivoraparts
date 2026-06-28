@@ -94,7 +94,7 @@ export default function CheckoutPage() {
             phone: phone.trim() || undefined,
             address: address.trim() || undefined,
           },
-          provider: "cryptomus",
+          provider: "nowpayments",
         }),
       });
 
@@ -232,12 +232,25 @@ export default function CheckoutPage() {
 
               <section className={glassCard}>
                 <h2 className="mb-4 text-xl font-bold">Payment</h2>
-                <p className="mb-2 font-medium">Cryptomus (Bitcoin / Crypto)</p>
-                <p className="rounded-lg border border-white/10 bg-black/20 px-4 py-3 text-sm text-gray-300">
+                <p className="mb-3 font-medium">Crypto (Bitcoin &amp; altcoins)</p>
+                <p className="mb-4 rounded-lg border border-white/10 bg-black/20 px-4 py-3 text-sm text-gray-300">
                   After placing your order you will be redirected to a secure
-                  Cryptomus payment page when configured. Otherwise your order is
-                  saved as pending and confirmation is emailed.
+                  NOWPayments checkout page. Your order is saved as pending until
+                  payment is confirmed.
                 </p>
+                <a
+                  href="https://nowpayments.io/payment/?iid=4682099423&source=button"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-block opacity-90 transition hover:opacity-100"
+                  aria-label="Pay with crypto via NOWPayments"
+                >
+                  <img
+                    src="https://nowpayments.io/images/embeds/payments-button-black.svg"
+                    alt="Crypto payment button by NOWPayments"
+                    className="h-10 w-auto"
+                  />
+                </a>
               </section>
             </div>
 

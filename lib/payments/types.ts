@@ -1,6 +1,6 @@
 export type PaymentStatus = "pending" | "paid" | "failed" | "refunded";
 
-export type PaymentProviderId = "manual" | "cryptomus";
+export type PaymentProviderId = "manual" | "cryptomus" | "nowpayments";
 
 export type CreatePaymentSessionInput = {
   orderId: string;

@@ -64,6 +64,14 @@ export function getCryptomusPaymentKey(): string | null {
   return process.env.CRYPTOMUS_PAYMENT_KEY ?? null;
 }
 
+export function getNowPaymentsApiKey(): string | null {
+  return process.env.NOWPAYMENTS_API_KEY ?? null;
+}
+
+export function getNowPaymentsIpnSecret(): string | null {
+  return process.env.NOWPAYMENTS_IPN_SECRET ?? null;
+}
+
 export function getCronSecret(): string | null {
   return process.env.CRON_SECRET ?? null;
 }
