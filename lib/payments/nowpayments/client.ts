@@ -304,8 +304,69 @@ export function mapNowPaymentsPaymentStatus(
 export type NowPaymentsRemoteStatus = {
   paymentStatus: string;
   orderId: string | null;
+  paymentId: string | null;
   source: "payment" | "invoice";
 };
+
+type NowPaymentsPaymentRow = {
+  payment_id?: number | string;
+  payment_status?: string | null;
+  order_id?: string | null;
+};
+
+function parseNowPaymentsPaymentList(
+  payload: unknown
+): NowPaymentsPaymentRow[] {
+  if (Array.isArray(payload)) return payload as NowPaymentsPaymentRow[];
+  if (payload && typeof payload === "object") {
+    const record = payload as { data?: NowPaymentsPaymentRow[] };
+    if (Array.isArray(record.data)) return record.data;
+  }
+  return [];
+}
+
+function pickBestPaymentStatus(
+  payments: NowPaymentsPaymentRow[]
+): NowPaymentsRemoteStatus | null {
+  if (!payments.length) return null;
+
+  const ranked = [...payments].sort((a, b) => {
+    const score = (status: string | null | undefined) => {
+      const mapped = mapNowPaymentsStatusString(status);
+      if (mapped === "paid") return 3;
+      if (mapped === "pending") return 2;
+      return 1;
+    };
+    return score(b.payment_status) - score(a.payment_status);
+  });
+
+  const best = ranked[0];
+  if (!best?.payment_status) return null;
+
+  return {
+    paymentStatus: best.payment_status,
+    orderId: best.order_id ?? null,
+    paymentId:
+      best.payment_id != null ? String(best.payment_id) : null,
+    source: "payment",
+  };
+}
+
+async function fetchNowPaymentsJson(
+  apiKey: string,
+  url: string
+): Promise<unknown | null> {
+  try {
+    const response = await fetch(url, {
+      headers: { "x-api-key": apiKey },
+      cache: "no-store",
+    });
+    if (!response.ok) return null;
+    return response.json().catch(() => null);
+  } catch {
+    return null;
+  }
+}
 
 /** Poll NOWPayments for invoice/payment status (reconciliation + success page). */
 export async function fetchNowPaymentsRemoteStatus(
@@ -314,39 +375,45 @@ export async function fetchNowPaymentsRemoteStatus(
   const apiKey = getNowPaymentsApiKey();
   if (!apiKey || !ref) return null;
 
-  const endpoints: Array<{ url: string; source: "payment" | "invoice" }> = [
-    {
-      url: `https://api.nowpayments.io/v1/payment/${encodeURIComponent(ref)}`,
-      source: "payment",
-    },
-    {
-      url: `https://api.nowpayments.io/v1/invoice/${encodeURIComponent(ref)}`,
-      source: "invoice",
-    },
-  ];
+  const direct = await fetchNowPaymentsJson(
+    apiKey,
+    `https://api.nowpayments.io/v1/payment/${encodeURIComponent(ref)}`
+  );
 
-  for (const { url, source } of endpoints) {
-    try {
-      const response = await fetch(url, {
-        headers: { "x-api-key": apiKey },
-        cache: "no-store",
-      });
-      if (!response.ok) continue;
-
-      const data = (await response.json().catch(() => null)) as {
-        payment_status?: string | null;
-        order_id?: string | null;
-      } | null;
-
-      if (!data?.payment_status) continue;
-
+  if (direct && typeof direct === "object" && direct !== null) {
+    const row = direct as NowPaymentsPaymentRow;
+    if (row.payment_status) {
       return {
-        paymentStatus: data.payment_status,
-        orderId: data.order_id ?? null,
-        source,
+        paymentStatus: row.payment_status,
+        orderId: row.order_id ?? null,
+        paymentId:
+          row.payment_id != null ? String(row.payment_id) : ref,
+        source: "payment",
       };
-    } catch {
-      // try next endpoint
+    }
+  }
+
+  const byInvoice = await fetchNowPaymentsJson(
+    apiKey,
+    `https://api.nowpayments.io/v1/payment/?invoiceid=${encodeURIComponent(ref)}&limit=10&sortBy=updated_at&orderBy=desc`
+  );
+  const fromInvoice = pickBestPaymentStatus(parseNowPaymentsPaymentList(byInvoice));
+  if (fromInvoice) return fromInvoice;
+
+  const invoice = await fetchNowPaymentsJson(
+    apiKey,
+    `https://api.nowpayments.io/v1/invoice/${encodeURIComponent(ref)}`
+  );
+
+  if (invoice && typeof invoice === "object" && invoice !== null) {
+    const row = invoice as NowPaymentsPaymentRow;
+    if (row.payment_status) {
+      return {
+        paymentStatus: row.payment_status,
+        orderId: row.order_id ?? null,
+        paymentId: null,
+        source: "invoice",
+      };
     }
   }
 

@@ -85,14 +85,16 @@ export async function reconcilePendingPayments(
       const mapped = mapNowPaymentsStatusString(remote.paymentStatus);
 
       if (mapped === "paid") {
+        const providerPaymentId = remote.paymentId ?? ref;
         await updatePaymentRecord(payment.id, {
           status: "paid",
-          provider_payment_id: ref,
+          provider_payment_id: providerPaymentId,
           metadata: {
             ...(payment.metadata ?? {}),
             paid_at: new Date().toISOString(),
             payment_method: "nowpayments",
             invoice_id: ref,
+            payment_id: providerPaymentId,
             reconciled_at: new Date().toISOString(),
             lastRemoteStatus: remote.paymentStatus,
           },
