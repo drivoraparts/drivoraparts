@@ -23,7 +23,14 @@ export function getSupabaseUrl(): string {
 }
 
 export function getSupabaseAnonKey(): string {
-  return required("NEXT_PUBLIC_SUPABASE_ANON_KEY", "placeholder-anon-key");
+  const anon =
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ??
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+  if (anon) return anon;
+  if (process.env.NODE_ENV !== "production") return "placeholder-anon-key";
+  throw new Error(
+    "Missing required environment variable: NEXT_PUBLIC_SUPABASE_ANON_KEY (or NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY)"
+  );
 }
 
 export function getSupabaseServiceRoleKey(): string {

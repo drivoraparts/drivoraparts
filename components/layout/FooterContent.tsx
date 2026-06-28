@@ -3,6 +3,7 @@
 import Link from "next/link";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import CompanyAddress from "@/components/content/CompanyAddress";
+import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function FooterContent() {
@@ -16,13 +17,23 @@ export default function FooterContent() {
             Drivora<span className="text-red-500">Parts</span>
           </h2>
           <CompanyAddress variant="summary" className="mb-3" />
+          <p className="mb-2 text-sm text-gray-300">
+            Support:{" "}
+            <a
+              href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
+              className="text-red-400 hover:text-red-300"
+            >
+              {COMPANY_SUPPORT_EMAIL}
+            </a>
+          </p>
           <p className="text-gray-500 text-xs">{t("footerBrand")}</p>
         </div>
 
         <div>
           <h3 className="text-red-500 mb-3">{t("quickLinks")}</h3>
           <div className="flex flex-col gap-2 text-gray-300 text-sm">
-            <Link href="/catalog">{t("catalog")}</Link>
+            <Link href="/catalog/all">{t("catalog")}</Link>
+            <Link href="/about">{t("about")}</Link>
             <Link href="/">{t("home")}</Link>
             <Link href="/contact">{t("contactSupport")}</Link>
           </div>

@@ -66,8 +66,9 @@ export default function SystemSettingsForm({
             <li>
               In Cloudflare Pages → your project → Settings → Environment variables, add{" "}
               <code className="rounded bg-amber-100 px-1">NEXT_PUBLIC_SUPABASE_URL</code>,{" "}
-              <code className="rounded bg-amber-100 px-1">NEXT_PUBLIC_SUPABASE_ANON_KEY</code>, and{" "}
-              <code className="rounded bg-amber-100 px-1">SUPABASE_SERVICE_ROLE_KEY</code>.
+              <code className="rounded bg-amber-100 px-1">NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</code>{" "}
+              (or <code className="rounded bg-amber-100 px-1">NEXT_PUBLIC_SUPABASE_ANON_KEY</code>
+              ), and <code className="rounded bg-amber-100 px-1">SUPABASE_SERVICE_ROLE_KEY</code>.
             </li>
             <li>
               Run <code className="rounded bg-amber-100 px-1">supabase/migrations/001_initial_schema.sql</code>{" "}
