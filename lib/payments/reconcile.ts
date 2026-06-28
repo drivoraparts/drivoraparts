@@ -2,6 +2,7 @@ import { handlePaidWebhook, markOrderFailed } from "@/lib/checkout/service";
 import { listStalePendingOrders } from "@/lib/db/orders";
 import { findPaymentByOrderId, updatePaymentRecord } from "@/lib/db/payments";
 import {
+  fetchNowPaymentsPaymentIndex,
   fetchNowPaymentsRemoteStatus,
   mapNowPaymentsStatusString,
 } from "@/lib/payments/nowpayments/client";
@@ -14,6 +15,8 @@ export type ReconcileSummary = {
   failed: number;
   stillPending: number;
   errors: number;
+  noPaymentRecord: number;
+  noNowPaymentsRef: number;
 };
 
 export type ReconcileOptions = {
@@ -45,25 +48,39 @@ export async function reconcilePendingPayments(
   const cutoffIso = new Date(Date.now() - olderThanMinutes * 60_000).toISOString();
 
   const stale = await listStalePendingOrders(cutoffIso, limit);
+  const paymentIndex = await fetchNowPaymentsPaymentIndex(100);
   const summary: ReconcileSummary = {
     scanned: stale.length,
     paid: 0,
     failed: 0,
     stillPending: 0,
     errors: 0,
+    noPaymentRecord: 0,
+    noNowPaymentsRef: 0,
   };
 
   for (const order of stale) {
     try {
       const payment = await findPaymentByOrderId(order.id);
-      if (payment?.provider !== "nowpayments") {
+      if (!payment || payment.provider !== "nowpayments") {
         summary.stillPending += 1;
+        summary.noPaymentRecord += 1;
         continue;
       }
 
       const ref = paymentReference(payment);
-      if (!ref) {
+      let remote =
+        paymentIndex.byOrderId.get(order.id) ??
+        (ref ? paymentIndex.byInvoiceId.get(ref) : null) ??
+        null;
+
+      if (!remote && ref) {
+        remote = await fetchNowPaymentsRemoteStatus(ref, order.id, paymentIndex);
+      }
+
+      if (!ref && !remote) {
         summary.stillPending += 1;
+        summary.noNowPaymentsRef += 1;
         await logActivity("warn", "payment.reconcile_missing_ref", {
           orderId: order.id,
           paymentId: payment.id,
@@ -71,13 +88,13 @@ export async function reconcilePendingPayments(
         continue;
       }
 
-      const remote = await fetchNowPaymentsRemoteStatus(ref);
       if (!remote) {
         summary.stillPending += 1;
         await logActivity("info", "payment.reconcile_still_pending", {
           orderId: order.id,
           provider: payment.provider,
           ref,
+          note: "No NOWPayments payment row found for this order yet",
         });
         continue;
       }
@@ -85,7 +102,8 @@ export async function reconcilePendingPayments(
       const mapped = mapNowPaymentsStatusString(remote.paymentStatus);
 
       if (mapped === "paid") {
-        const providerPaymentId = remote.paymentId ?? ref;
+        const invoiceRef = ref ?? remote.paymentId ?? "";
+        const providerPaymentId = remote.paymentId ?? ref ?? invoiceRef;
         await updatePaymentRecord(payment.id, {
           status: "paid",
           provider_payment_id: providerPaymentId,
@@ -93,7 +111,7 @@ export async function reconcilePendingPayments(
             ...(payment.metadata ?? {}),
             paid_at: new Date().toISOString(),
             payment_method: "nowpayments",
-            invoice_id: ref,
+            invoice_id: invoiceRef,
             payment_id: providerPaymentId,
             reconciled_at: new Date().toISOString(),
             lastRemoteStatus: remote.paymentStatus,
@@ -103,7 +121,7 @@ export async function reconcilePendingPayments(
         summary.paid += 1;
         await logActivity("info", "payment.reconcile_paid", {
           orderId: order.id,
-          ref,
+          ref: invoiceRef,
           remoteStatus: remote.paymentStatus,
         });
         continue;

@@ -280,7 +280,7 @@ export function mapNowPaymentsStatusString(
 ): "pending" | "paid" | "failed" {
   const normalized = (status ?? "").toLowerCase();
 
-  if (normalized === "finished" || normalized === "confirmed") {
+  if (normalized === "finished" || normalized === "confirmed" || normalized === "sending") {
     return "paid";
   }
 
@@ -312,7 +312,32 @@ type NowPaymentsPaymentRow = {
   payment_id?: number | string;
   payment_status?: string | null;
   order_id?: string | null;
+  invoice_id?: number | string | null;
 };
+
+function rowToRemoteStatus(row: NowPaymentsPaymentRow): NowPaymentsRemoteStatus | null {
+  if (!row.payment_status) return null;
+  return {
+    paymentStatus: row.payment_status,
+    orderId: row.order_id ?? null,
+    paymentId: row.payment_id != null ? String(row.payment_id) : null,
+    source: "payment",
+  };
+}
+
+function preferRemoteStatus(
+  current: NowPaymentsRemoteStatus | undefined,
+  next: NowPaymentsRemoteStatus
+): NowPaymentsRemoteStatus {
+  if (!current) return next;
+  const score = (status: string) => {
+    const mapped = mapNowPaymentsStatusString(status);
+    if (mapped === "paid") return 3;
+    if (mapped === "pending") return 2;
+    return 1;
+  };
+  return score(next.paymentStatus) >= score(current.paymentStatus) ? next : current;
+}
 
 function parseNowPaymentsPaymentList(
   payload: unknown
@@ -341,15 +366,44 @@ function pickBestPaymentStatus(
   });
 
   const best = ranked[0];
-  if (!best?.payment_status) return null;
+  return rowToRemoteStatus(best);
+}
 
-  return {
-    paymentStatus: best.payment_status,
-    orderId: best.order_id ?? null,
-    paymentId:
-      best.payment_id != null ? String(best.payment_id) : null,
-    source: "payment",
-  };
+export type NowPaymentsPaymentIndex = {
+  byOrderId: Map<string, NowPaymentsRemoteStatus>;
+  byInvoiceId: Map<string, NowPaymentsRemoteStatus>;
+};
+
+/** One API call — index recent NOWPayments rows by order_id and invoice_id. */
+export async function fetchNowPaymentsPaymentIndex(
+  limit = 100
+): Promise<NowPaymentsPaymentIndex> {
+  const apiKey = getNowPaymentsApiKey();
+  const byOrderId = new Map<string, NowPaymentsRemoteStatus>();
+  const byInvoiceId = new Map<string, NowPaymentsRemoteStatus>();
+
+  if (!apiKey) return { byOrderId, byInvoiceId };
+
+  const payload = await fetchNowPaymentsJson(
+    apiKey,
+    `https://api.nowpayments.io/v1/payment/?limit=${limit}&sortBy=updated_at&orderBy=desc`
+  );
+
+  for (const row of parseNowPaymentsPaymentList(payload)) {
+    const remote = rowToRemoteStatus(row);
+    if (!remote) continue;
+
+    if (row.order_id) {
+      byOrderId.set(row.order_id, preferRemoteStatus(byOrderId.get(row.order_id), remote));
+    }
+
+    if (row.invoice_id != null) {
+      const key = String(row.invoice_id);
+      byInvoiceId.set(key, preferRemoteStatus(byInvoiceId.get(key), remote));
+    }
+  }
+
+  return { byOrderId, byInvoiceId };
 }
 
 async function fetchNowPaymentsJson(
@@ -370,10 +424,22 @@ async function fetchNowPaymentsJson(
 
 /** Poll NOWPayments for invoice/payment status (reconciliation + success page). */
 export async function fetchNowPaymentsRemoteStatus(
-  ref: string
+  ref: string,
+  orderId?: string | null,
+  index?: NowPaymentsPaymentIndex
 ): Promise<NowPaymentsRemoteStatus | null> {
   const apiKey = getNowPaymentsApiKey();
-  if (!apiKey || !ref) return null;
+  if (!apiKey) return null;
+
+  if (orderId && index?.byOrderId.has(orderId)) {
+    return index.byOrderId.get(orderId) ?? null;
+  }
+
+  if (ref && index?.byInvoiceId.has(ref)) {
+    return index.byInvoiceId.get(ref) ?? null;
+  }
+
+  if (!ref) return null;
 
   const direct = await fetchNowPaymentsJson(
     apiKey,
