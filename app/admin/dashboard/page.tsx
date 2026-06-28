@@ -1,4 +1,5 @@
 import nextDynamic from "next/dynamic";
+import Link from "next/link";
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import AdminSectionErrorBoundary from "@/components/admin/AdminSectionErrorBoundary";
 import AutopilotIntelligence from "@/components/admin/AutopilotIntelligence";
@@ -15,7 +16,7 @@ const AdvancedCharts = nextDynamic(() => import("@/components/admin/charts/Advan
 
 export const dynamic = "force-dynamic";
 export default async function AdminDashboardPage() {
-  const { summary, charts, insights, paymentStats, viral, dataUnavailable } =
+  const { summary, charts, insights, paymentStats, viral, recentOrders, dataUnavailable } =
     await loadDashboardData();
 
   const orderStats = insights?.orderStats ?? {
@@ -121,6 +122,59 @@ export default async function AdminDashboardPage() {
       )}
 
       <AutopilotIntelligence hasPaidHistory={hasPaidHistory} />
+
+      <section className="mt-8 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-xl font-bold">Recent Orders</h2>
+            <p className="text-sm text-zinc-600">
+              Live from Supabase — includes pending checkouts awaiting payment.
+            </p>
+          </div>
+          <Link
+            href="/admin/orders"
+            className="text-sm font-semibold text-red-600 hover:text-red-700"
+          >
+            View all orders →
+          </Link>
+        </div>
+
+        {recentOrders.length === 0 ? (
+          <p className="text-sm text-zinc-600">No orders recorded yet.</p>
+        ) : (
+          <ul className="divide-y divide-zinc-200">
+            {recentOrders.map((order) => (
+              <li key={order.id} className="flex flex-col gap-2 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="font-mono text-sm">#{order.id.slice(0, 8).toUpperCase()}</p>
+                  <p className="text-sm text-zinc-600">
+                    {order.customer?.full_name ?? "Unknown customer"}
+                    {order.customer?.email ? ` · ${order.customer.email}` : ""}
+                  </p>
+                  <p className="text-xs text-zinc-500">
+                    {new Date(order.created_at).toLocaleString()} · {order.items.length} line
+                    {order.items.length === 1 ? "" : "s"}
+                  </p>
+                </div>
+                <div className="text-left sm:text-right">
+                  <p className="text-lg font-bold">${Number(order.total).toFixed(2)}</p>
+                  <p
+                    className={`text-xs font-semibold uppercase tracking-wide ${
+                      order.status === "paid"
+                        ? "text-green-600"
+                        : order.status === "pending"
+                          ? "text-amber-600"
+                          : "text-zinc-600"
+                    }`}
+                  >
+                    {order.status}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
 
       <AdminSectionErrorBoundary title="Dashboard charts">
         <DashboardCharts data={charts} />

@@ -285,8 +285,13 @@ export async function processCheckout(input: {
   await emailCustomerOrderInvoice({
     to: customer.email,
     customerName: customer.full_name,
+    customerEmail: customer.email,
+    customerPhone: customer.phone ?? undefined,
+    shippingAddress: customer.shipping_address ?? undefined,
     orderId: order.id,
     total: Number(order.total),
+    subtotal: Number(order.subtotal),
+    shipping: Number(order.shipping),
     paymentUrl: payment.paymentUrl,
     items: order.items.map((item) => ({
       name: item.name,
@@ -413,6 +418,8 @@ export async function markOrderPaid(orderId: string): Promise<void> {
         quantity: item.quantity,
         unitPrice: Number(item.price),
       })),
+      subtotal: Number(updated.subtotal),
+      shipping: Number(updated.shipping),
 
     });
 

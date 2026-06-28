@@ -70,8 +70,13 @@ export async function processCheckoutWithoutSupabase(input: {
   await emailCustomerOrderInvoice({
     to: input.customer.email,
     customerName: input.customer.fullName,
+    customerEmail: input.customer.email,
+    customerPhone: input.customer.phone,
+    shippingAddress: input.customer.shippingAddress,
     orderId,
     total: breakdown.total,
+    subtotal: breakdown.merchandiseTotal,
+    shipping,
     paymentUrl: checkout.paymentUrl,
     items: lockedItems.map((item) => ({
       name: item.name,
