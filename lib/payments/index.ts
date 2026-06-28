@@ -1,6 +1,5 @@
 import {
   createOrderInvoice,
-  cryptomusPaymentProvider,
   getPaymentProvider,
   handleProviderWebhook,
   manualPaymentProvider,
@@ -16,13 +15,11 @@ import type {
 
 const providers: PaymentProvider[] = [
   nowpaymentsPaymentProvider,
-  cryptomusPaymentProvider,
   manualPaymentProvider,
 ];
 
 export {
   createOrderInvoice,
-  cryptomusPaymentProvider,
   getPaymentProvider,
   handleProviderWebhook,
   manualPaymentProvider,
@@ -31,8 +28,7 @@ export {
 export type { InvoiceOrder, InvoiceResult } from "./provider";
 
 export function getDefaultPaymentProvider(): PaymentProvider {
-  const enabled = providers.find((provider) => provider.isEnabled());
-  return enabled ?? manualPaymentProvider;
+  return nowpaymentsPaymentProvider;
 }
 
 export async function createCheckoutPayment(

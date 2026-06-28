@@ -53,17 +53,15 @@ export default function AdminSettingsPage() {
           <p className="mt-1 font-medium text-zinc-900">{system.paymentMode}</p>
           <p className="text-sm text-zinc-600">
             {system.nowpaymentsConfigured
-              ? "NOWPayments configured"
-              : system.cryptomusConfigured
-                ? "Cryptomus configured"
-                : "Manual fallback"}
+              ? "NOWPayments API + IPN configured"
+              : "NOWPayments payment link active"}
           </p>
         </div>
       </div>
 
       <section className={`mb-8 ${adminUi.card}`}>
         <h2 className="text-lg font-semibold text-zinc-900">Integration toggles</h2>
-        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
           <div className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3">
             <p className="text-sm font-medium text-zinc-900">Tawk live chat</p>
             <p className={`mt-1 ${adminUi.muted}`}>
@@ -73,13 +71,9 @@ export default function AdminSettingsPage() {
           <div className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3">
             <p className="text-sm font-medium text-zinc-900">NOWPayments</p>
             <p className={`mt-1 ${adminUi.muted}`}>
-              {system.nowpaymentsConfigured ? "Configured" : "Not configured"}
-            </p>
-          </div>
-          <div className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3">
-            <p className="text-sm font-medium text-zinc-900">Cryptomus (legacy)</p>
-            <p className={`mt-1 ${adminUi.muted}`}>
-              {system.cryptomusConfigured ? "Configured" : "Not configured"}
+              {system.nowpaymentsConfigured
+                ? "API keys configured"
+                : "Using hosted payment link"}
             </p>
           </div>
           <div className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3">

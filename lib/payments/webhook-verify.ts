@@ -1,39 +1,10 @@
-/**
-
- * Cryptomus webhook verification wrapper.
-
- */
-
-import { verifyCryptomusWebhookSignature } from "@/lib/payments/cryptomus/client";
-
-import { getCryptomusPaymentKey } from "@/lib/env";
-
-
+import { verifyNowPaymentsWebhookSignature } from "@/lib/payments/nowpayments/client";
 
 export function verifyPaymentWebhookSignature(
-
-  provider: "cryptomus",
-
+  provider: "nowpayments",
   rawBody: string,
-
   sign: string | null
-
 ): boolean {
-
-  if (provider !== "cryptomus") return false;
-
-
-
-  if (!getCryptomusPaymentKey()) {
-
-    return false;
-
-  }
-
-
-
-  return verifyCryptomusWebhookSignature(rawBody, sign);
-
+  if (provider !== "nowpayments") return false;
+  return verifyNowPaymentsWebhookSignature(rawBody, sign);
 }
-
-

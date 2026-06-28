@@ -37,12 +37,12 @@ export default function AdminChatAssistant() {
               {
                 role: "assistant",
                 content:
-                  "Supabase is not connected yet, so I cannot report live revenue or orders. Ask how to connect the database, whether Cryptomus is configured, or what still works without Supabase.",
+                  "Supabase is not connected yet, so I cannot report live revenue or orders. Ask how to connect the database, whether NOWPayments is configured, or what still works without Supabase.",
               },
             ]);
             setSuggestions([
               "How do I connect Supabase?",
-              "Is Cryptomus configured?",
+              "Is NOWPayments configured?",
               "What works without Supabase?",
             ]);
           }

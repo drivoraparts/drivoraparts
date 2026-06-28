@@ -1,7 +1,5 @@
 import { listStalePendingOrders } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
-import { getCryptomusPaymentInfo } from "@/lib/payments/cryptomus/client";
-import { handlePaidWebhook, markOrderFailed } from "@/lib/checkout/service";
 import { logActivity } from "@/lib/monitoring/activity";
 import { logError, logInfo } from "@/lib/monitoring/logger";
 
@@ -14,17 +12,13 @@ export type ReconcileSummary = {
 };
 
 export type ReconcileOptions = {
-  /** Only reconcile orders older than this many minutes (avoids racing live webhooks). */
   olderThanMinutes?: number;
-  /** Max orders to process per sweep. */
   limit?: number;
 };
 
 /**
- * Anti-loss safety net: finds stale `pending` orders, asks Cryptomus for the
- * authoritative status, and finalizes via the SAME idempotent path the webhook
- * uses. Safe to run repeatedly — every finalizer is an atomic compare-and-set,
- * so already-paid/failed orders are no-ops.
+ * Safety net for stale pending orders. NOWPayments status is confirmed via IPN
+ * webhooks; this sweep only logs non-NOWPayments pending orders for review.
  */
 export async function reconcilePendingPayments(
   options?: ReconcileOptions
@@ -38,43 +32,21 @@ export async function reconcilePendingPayments(
     scanned: stale.length,
     paid: 0,
     failed: 0,
-    stillPending: 0,
+    stillPending: stale.length,
     errors: 0,
   };
 
   for (const order of stale) {
     try {
       const payment = await findPaymentByOrderId(order.id);
-
-      // Only Cryptomus-backed orders are reconcilable against the Cryptomus API.
-      if (!payment || payment.provider !== "cryptomus") {
-        summary.stillPending += 1;
+      if (payment?.provider !== "nowpayments") {
         continue;
       }
 
-      const info = await getCryptomusPaymentInfo(order.id);
-
-      if (info.ok) {
-        if (info.status === "paid") {
-          await handlePaidWebhook(order.id);
-          summary.paid += 1;
-          await logActivity("info", "payment.reconcile_recovered_paid", {
-            orderId: order.id,
-            transactionId: info.providerPaymentId,
-          });
-        } else if (info.status === "failed") {
-          await markOrderFailed(order.id);
-          summary.failed += 1;
-        } else {
-          summary.stillPending += 1;
-        }
-      } else {
-        summary.errors += 1;
-        await logActivity("warn", "payment.reconcile_lookup_failed", {
-          orderId: order.id,
-          error: info.error ?? "lookup failed",
-        });
-      }
+      await logActivity("info", "payment.reconcile_still_pending", {
+        orderId: order.id,
+        provider: payment.provider,
+      });
     } catch (error) {
       summary.errors += 1;
       logError("payment_reconcile_order_failed", error, { orderId: order.id });

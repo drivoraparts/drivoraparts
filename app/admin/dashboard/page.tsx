@@ -63,7 +63,7 @@ export default async function AdminDashboardPage() {
           hint="AI revenue prediction"
         />
         <StatCard
-          label="Cryptomus Paid"
+          label="NOWPayments Paid"
           value={`$${(paymentStats?.cryptomusPaidAmount ?? 0).toFixed(2)}`}
           hint={`${paymentStats?.cryptomusPaid ?? 0} crypto payments`}
         />

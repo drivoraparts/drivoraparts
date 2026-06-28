@@ -1,4 +1,4 @@
-import { getCryptomusMerchantId, getCryptomusPaymentKey, isSupabaseConfigured } from "@/lib/env";
+import { getNowPaymentsApiKey, getNowPaymentsIpnSecret, isSupabaseConfigured } from "@/lib/env";
 import { classifyAssistantIntent, getIntentSuggestions } from "./intents";
 import {
   getAnalyticsOverview,
@@ -39,7 +39,7 @@ function supabaseSetupReply(intent: AssistantIntent): AssistantResponse {
     reply:
       "Live analytics are offline because Supabase is not configured. Add NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, and SUPABASE_SERVICE_ROLE_KEY in Cloudflare Pages → Settings → Environment variables, then run supabase/migrations/001_initial_schema.sql in the Supabase SQL Editor. Until then, dashboard metrics stay at safe zeros and I cannot answer revenue or order questions accurately.",
     suggestions: [
-      "Is Cryptomus configured?",
+      "Is NOWPayments configured?",
       "What works without Supabase?",
       "Show payment provider status",
     ],
@@ -50,9 +50,9 @@ function supabaseSetupReply(intent: AssistantIntent): AssistantResponse {
 function worksWithoutSupabaseReply(): AssistantResponse {
   return {
     reply:
-      "Without Supabase you still have: storefront catalog, cart, manual checkout fallback, admin login, Cryptomus payments (if env keys are set), and system toggles. Missing: persisted orders in dashboard, analytics charts, inventory sync, and AI insights tied to live sales.",
+      "Without Supabase you still have: storefront catalog, cart, NOWPayments checkout redirect, admin login, and system toggles. Missing: persisted orders in dashboard, analytics charts, inventory sync, and AI insights tied to live sales.",
     suggestions: [
-      "Is Cryptomus configured?",
+      "Is NOWPayments configured?",
       "How do I connect Supabase?",
       "Show payment provider status",
     ],
@@ -101,13 +101,13 @@ export async function generateAdminAssistantReply(
   }
 
   if (!supabaseReady && intent === "payments") {
-    const cryptomusEnabled = Boolean(
-      getCryptomusMerchantId() && getCryptomusPaymentKey()
+    const nowpaymentsApiConfigured = Boolean(
+      getNowPaymentsApiKey() && getNowPaymentsIpnSecret()
     );
     return {
-      reply: cryptomusEnabled
-        ? "Cryptomus keys are set in the environment. Checkout can create crypto invoices, but order history in admin stays empty until Supabase is connected."
-        : "Cryptomus is not configured. Manual fallback checkout is active. Connect Supabase to persist orders in the admin dashboard.",
+      reply: nowpaymentsApiConfigured
+        ? "NOWPayments API keys are set. Checkout creates crypto invoices and IPN webhooks can confirm payment. Order history in admin stays empty until Supabase is connected."
+        : "NOWPayments checkout uses your hosted payment link. Add NOWPAYMENTS_API_KEY and NOWPAYMENTS_IPN_SECRET for dynamic invoices and automatic payment confirmation. Connect Supabase to persist orders in the admin dashboard.",
       suggestions,
       intent,
     };
@@ -233,16 +233,16 @@ export async function generateAdminAssistantReply(
         getPaymentRecords(30),
         getRevenue(),
       ]);
-      const cryptomusEnabled = Boolean(
-        getCryptomusMerchantId() && getCryptomusPaymentKey()
+      const nowpaymentsApiConfigured = Boolean(
+        getNowPaymentsApiKey() && getNowPaymentsIpnSecret()
       );
       return {
-        reply: cryptomusEnabled
-          ? `Cryptomus active. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending. Crypto revenue: ${formatMoney(revenue.payments.cryptomusPaidAmount)}.`
-          : "Cryptomus not configured. Manual fallback checkout is active.",
+        reply: nowpaymentsApiConfigured
+          ? `NOWPayments active. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending. Crypto revenue: ${formatMoney(revenue.payments.cryptomusPaidAmount)}.`
+          : `NOWPayments checkout uses your hosted payment link. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending.`,
         suggestions,
         intent,
-        data: { payments, cryptomusEnabled },
+        data: { payments, nowpaymentsApiConfigured },
       };
     }
 

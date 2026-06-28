@@ -17,11 +17,11 @@ export default async function AdminPaymentsPage() {
       <div className="grid gap-6 sm:grid-cols-3">
         <StatCard
           label="Gateway Status"
-          value={config.enabled ? "Configured" : "Not Configured"}
+          value={config.apiConfigured ? "API configured" : "Payment link active"}
           hint={
-            config.enabled
-              ? "NOWPayments adapter enabled"
-              : "Set NOWPAYMENTS_API_KEY and NOWPAYMENTS_IPN_SECRET"
+            config.apiConfigured
+              ? "Dynamic NOWPayments invoices + IPN webhooks"
+              : "Checkout redirects to your NOWPayments payment page"
           }
         />
         <StatCard
@@ -43,8 +43,7 @@ export default async function AdminPaymentsPage() {
             <span className="text-zinc-600">Checkout:</span> POST /api/checkout
           </li>
           <li>
-            <span className="text-zinc-600">Create invoice:</span> POST
-            /api/checkout (auto-creates NOWPayments invoice)
+            <span className="text-zinc-600">Payment page:</span> {config.staticPaymentUrl}
           </li>
           <li>
             <span className="text-zinc-600">Webhook:</span> {config.callbackUrl}

@@ -232,25 +232,16 @@ export default function CheckoutPage() {
 
               <section className={glassCard}>
                 <h2 className="mb-4 text-xl font-bold">Payment</h2>
-                <p className="mb-3 font-medium">Crypto (Bitcoin &amp; altcoins)</p>
+                <p className="mb-4 font-medium">NOWPayments — crypto checkout</p>
                 <p className="mb-4 rounded-lg border border-white/10 bg-black/20 px-4 py-3 text-sm text-gray-300">
-                  After placing your order you will be redirected to a secure
-                  NOWPayments checkout page. Your order is saved as pending until
-                  payment is confirmed.
+                  Click Pay Now to place your order and open the secure NOWPayments
+                  payment page. Bitcoin and 300+ cryptocurrencies accepted.
                 </p>
-                <a
-                  href="https://nowpayments.io/payment/?iid=4682099423&source=button"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="inline-block opacity-90 transition hover:opacity-100"
-                  aria-label="Pay with crypto via NOWPayments"
-                >
-                  <img
-                    src="https://nowpayments.io/images/embeds/payments-button-black.svg"
-                    alt="Crypto payment button by NOWPayments"
-                    className="h-10 w-auto"
-                  />
-                </a>
+                <img
+                  src="https://nowpayments.io/images/embeds/payments-button-black.svg"
+                  alt="Crypto payments by NOWPayments"
+                  className="h-10 w-auto opacity-90"
+                />
               </section>
             </div>
 

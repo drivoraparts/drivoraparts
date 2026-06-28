@@ -1,3 +1,1 @@
-export { cryptomusPaymentProvider as cryptomusProvider } from "./provider";
-
-
+export { nowpaymentsPaymentProvider as nowpaymentsProvider } from "./provider";

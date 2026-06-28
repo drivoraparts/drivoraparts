@@ -43,8 +43,18 @@ export type NowPaymentsWebhookPayload = {
   pay_currency?: string;
 };
 
+export function isNowPaymentsApiConfigured(): boolean {
+  return Boolean(getNowPaymentsApiKey());
+}
+
+export function getNowPaymentsStaticPaymentUrl(): string {
+  const iid = process.env.NOWPAYMENTS_BUTTON_IID ?? "4682099423";
+  return `https://nowpayments.io/payment/?iid=${iid}&source=button`;
+}
+
+/** @deprecated Use isNowPaymentsApiConfigured for API invoice creation. */
 export function isNowPaymentsConfigured(): boolean {
-  return Boolean(getNowPaymentsApiKey() && getNowPaymentsIpnSecret());
+  return isNowPaymentsApiConfigured();
 }
 
 export function buildNowPaymentsUrls(orderId: string) {

@@ -68,7 +68,7 @@ export default async function AdminRevenuePage() {
 
         <StatCard
 
-          label="Cryptomus Revenue"
+          label="NOWPayments Revenue"
 
           value={`$${paymentStats.cryptomusPaidAmount.toFixed(2)}`}
 

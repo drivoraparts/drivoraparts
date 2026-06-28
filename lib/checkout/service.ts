@@ -407,11 +407,7 @@ export async function markOrderPaid(orderId: string): Promise<void> {
         paid_at: new Date().toISOString(),
 
         payment_method:
-          payment.provider === "nowpayments"
-            ? "nowpayments"
-            : payment.provider === "cryptomus"
-              ? "cryptomus"
-              : "manual",
+          payment.provider === "nowpayments" ? "nowpayments" : "manual",
 
       },
 

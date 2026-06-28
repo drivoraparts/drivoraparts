@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getCryptomusMerchantId, getCryptomusPaymentKey, getNowPaymentsApiKey, getNowPaymentsIpnSecret, isSupabaseConfigured } from "@/lib/env";
+import { getNowPaymentsApiKey, getNowPaymentsIpnSecret, isSupabaseConfigured } from "@/lib/env";
 import { requireAdminApi } from "@/lib/auth/require-admin";
 
 export async function GET() {
@@ -9,6 +9,5 @@ export async function GET() {
   return NextResponse.json({
     supabaseConfigured: isSupabaseConfigured(),
     nowpaymentsConfigured: Boolean(getNowPaymentsApiKey() && getNowPaymentsIpnSecret()),
-    cryptomusConfigured: Boolean(getCryptomusMerchantId() && getCryptomusPaymentKey()),
   });
 }

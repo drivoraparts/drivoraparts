@@ -72,6 +72,10 @@ export function getNowPaymentsIpnSecret(): string | null {
   return process.env.NOWPAYMENTS_IPN_SECRET ?? null;
 }
 
+export function getNowPaymentsButtonIid(): string {
+  return process.env.NOWPAYMENTS_BUTTON_IID ?? "4682099423";
+}
+
 export function getCronSecret(): string | null {
   return process.env.CRON_SECRET ?? null;
 }

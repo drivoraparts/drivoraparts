@@ -1,11 +1,10 @@
-export type PaymentMode = "auto" | "nowpayments" | "cryptomus" | "manual";
+export type PaymentMode = "auto" | "nowpayments" | "manual";
 
 export type AdminSystemSettings = {
   siteUrl: string;
   paymentMode: PaymentMode;
   tawkEnabled: boolean;
   nowpaymentsConfigured: boolean;
-  cryptomusConfigured: boolean;
 };
 
 let runtimeSettings: {
@@ -21,16 +20,12 @@ export function getAdminSystemSettings(): AdminSystemSettings {
   const nowpaymentsConfigured = Boolean(
     process.env.NOWPAYMENTS_API_KEY && process.env.NOWPAYMENTS_IPN_SECRET
   );
-  const cryptomusConfigured = Boolean(
-    process.env.CRYPTOMUS_MERCHANT_ID && process.env.CRYPTOMUS_PAYMENT_KEY
-  );
 
   return {
     siteUrl,
     paymentMode: runtimeSettings.paymentMode,
     tawkEnabled: runtimeSettings.tawkEnabled,
     nowpaymentsConfigured,
-    cryptomusConfigured,
   };
 }
 
@@ -52,9 +47,7 @@ export function isTawkEnabledForStore(): boolean {
 export function getEffectivePaymentMode(): PaymentMode {
   const settings = getAdminSystemSettings();
   if (settings.paymentMode === "auto") {
-    if (settings.nowpaymentsConfigured) return "nowpayments";
-    if (settings.cryptomusConfigured) return "cryptomus";
-    return "manual";
+    return "nowpayments";
   }
   return settings.paymentMode;
 }

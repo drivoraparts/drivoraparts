@@ -9,14 +9,12 @@ export default function SystemSettingsForm({
   initialPaymentMode,
   initialTawkEnabled,
   nowpaymentsConfigured,
-  cryptomusConfigured,
   analyticsReady,
 }: {
   initialSiteUrl: string;
   initialPaymentMode: PaymentMode;
   initialTawkEnabled: boolean;
   nowpaymentsConfigured: boolean;
-  cryptomusConfigured: boolean;
   analyticsReady: boolean;
 }) {
   const [paymentMode, setPaymentMode] = useState<PaymentMode>(initialPaymentMode);
@@ -112,14 +110,15 @@ export default function SystemSettingsForm({
             onChange={(event) => setPaymentMode(event.target.value as PaymentMode)}
             className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
           >
-            <option value="auto">Auto (NOWPayments → Cryptomus → manual)</option>
+            <option value="auto">Auto (NOWPayments)</option>
             <option value="nowpayments">NOWPayments only</option>
-            <option value="cryptomus">Cryptomus only</option>
             <option value="manual">Manual fallback only</option>
           </select>
           <p className="mt-2 text-xs text-zinc-600">
-            NOWPayments keys {nowpaymentsConfigured ? "are configured" : "are not configured"}.
-            Cryptomus keys {cryptomusConfigured ? "are configured" : "are not configured"}.
+            NOWPayments API keys{" "}
+            {nowpaymentsConfigured
+              ? "are configured for dynamic invoices and IPN webhooks."
+              : "are not set — checkout still redirects to your NOWPayments payment link."}
           </p>
         </div>
 
