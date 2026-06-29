@@ -33,6 +33,12 @@ export function encodeAssetPath(path: string): string {
     .join("/");
 }
 
+/** Plain static asset URL (no Cloudflare /cdn-cgi/image wrapper). */
+export function directAssetUrl(src: string): string {
+  const rawPath = src.startsWith("/") ? src : `/${src}`;
+  return encodeAssetPath(rawPath);
+}
+
 /** Cloudflare Image Resizing in production; encoded original asset locally and as fallback. */
 export function optimizeImageUrl(
   src: string,

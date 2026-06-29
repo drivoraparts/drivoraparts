@@ -88,6 +88,12 @@ export function getTawkWidgetId(): string {
   return optional("NEXT_PUBLIC_TAWK_WIDGET_ID", "1jrs9hdba");
 }
 
+/** Meta (Facebook) Pixel ID from Events Manager — optional until ads go live. */
+export function getMetaPixelId(): string | null {
+  const id = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
+  return id || null;
+}
+
 export function isSupabaseConfigured(): boolean {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "";

@@ -11,6 +11,7 @@ export const UI = {
   about: "About DrivoraParts",
   support: "SUPPORT",
   contactSupport: "Contact Support",
+  facebookPage: "Facebook",
   legalCenter: "LEGAL CENTER",
   policiesLegal: "Policies & Legal",
   cart: "Cart",

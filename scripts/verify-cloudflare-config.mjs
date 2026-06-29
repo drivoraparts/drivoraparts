@@ -84,6 +84,20 @@ if (!fs.existsSync(path.join(ROOT, "public", "product-media"))) {
   pass("public/product-media/ exists");
 }
 
+const homeDir = path.join(ROOT, "public", "home");
+if (!fs.existsSync(homeDir)) {
+  fail("public/home/ is missing (homepage hero + section images)");
+} else {
+  const homeImages = fs
+    .readdirSync(homeDir)
+    .filter((name) => /\.(jpg|jpeg|png|webp)$/i.test(name));
+  if (homeImages.length === 0) {
+    fail("public/home/ has no image files");
+  } else {
+    pass(`public/home/ has ${homeImages.length} homepage images`);
+  }
+}
+
 if (failed) {
   process.exit(1);
 }

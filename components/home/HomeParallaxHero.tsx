@@ -4,10 +4,15 @@ import { useEffect } from "react";
 
 type HomeParallaxHeroProps = {
   heroSrc: string;
+  heroFallback: string;
   heroAlt: string;
 };
 
-export default function HomeParallaxHero({ heroSrc, heroAlt }: HomeParallaxHeroProps) {
+export default function HomeParallaxHero({
+  heroSrc,
+  heroFallback,
+  heroAlt,
+}: HomeParallaxHeroProps) {
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const isMobile = window.matchMedia("(max-width: 767px)").matches;
@@ -37,6 +42,13 @@ export default function HomeParallaxHero({ heroSrc, heroAlt }: HomeParallaxHeroP
         decoding="async"
         fetchPriority="high"
         sizes="100vw"
+        onError={(event) => {
+          const img = event.currentTarget;
+          if (img.src !== heroFallback && !img.dataset.fallback) {
+            img.dataset.fallback = "1";
+            img.src = heroFallback;
+          }
+        }}
         className="h-full w-full object-cover"
       />
     </div>

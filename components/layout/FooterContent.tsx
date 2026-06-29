@@ -3,6 +3,7 @@
 import Link from "next/link";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import CompanyAddress from "@/components/content/CompanyAddress";
+import { FACEBOOK_PAGE_URL } from "@/lib/content/social-links";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function FooterContent() {

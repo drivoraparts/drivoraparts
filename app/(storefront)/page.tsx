@@ -3,7 +3,7 @@ import { preload } from "react-dom";
 import HomeParallaxHero from "@/components/home/HomeParallaxHero";
 import OptimizedImage from "@/components/media/OptimizedImage";
 import { routes } from "@/lib/inventory";
-import { encodeAssetPath, optimizeImageUrl } from "@/lib/media/optimize-image";
+import { directAssetUrl, optimizeImageUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata } from "@/lib/seo";
 
 const HERO_IMAGE = "/home/pexels-juan-montes-92812630-11456554.jpg";
@@ -39,13 +39,14 @@ export const metadata = buildPageMetadata({
 });
 
 export default function Home() {
-  const heroSrc = optimizeImageUrl(encodeAssetPath(HERO_IMAGE), "hero");
+  const heroFallback = directAssetUrl(HERO_IMAGE);
+  const heroSrc = optimizeImageUrl(heroFallback, "hero");
   preload(heroSrc, { as: "image", fetchPriority: "high" });
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-[var(--background)] text-neutral-900">
       <section className="relative flex h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden">
-        <HomeParallaxHero heroSrc={heroSrc} heroAlt="Performance automotive hero" />
+        <HomeParallaxHero heroSrc={heroSrc} heroFallback={heroFallback} heroAlt="Performance automotive hero" />
 
         <div className="pointer-events-none absolute inset-0 z-10 bg-neutral-900/50" />
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/30 via-neutral-900/45 to-neutral-900/70" />

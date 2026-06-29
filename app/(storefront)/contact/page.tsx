@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CompanyAddress from "@/components/content/CompanyAddress";
 import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
+import { FACEBOOK_PAGE_LABEL, FACEBOOK_PAGE_URL } from "@/lib/content/social-links";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({

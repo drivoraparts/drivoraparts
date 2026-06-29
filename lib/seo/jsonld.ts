@@ -1,5 +1,6 @@
 import type { Product } from "@/lib/inventory/types";
 import { COMPANY_SUPPORT_EMAIL, US_HEADQUARTERS } from "@/lib/content/company";
+import { FACEBOOK_PAGE_URL } from "@/lib/content/social-links";
 import { routes } from "@/lib/inventory/routes";
 import { getBrandBySlug } from "@/lib/inventory";
 import { resolveProductGallery } from "@/lib/inventory/media";

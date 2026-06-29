@@ -1,5 +1,9 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { resolveProductImage } from "@/lib/inventory/media";
 import {
+  directAssetUrl,
   encodeAssetPath,
   IMAGE_SIZES,
   optimizeImageUrl,
@@ -16,7 +20,6 @@ type OptimizedImageProps = {
   sizes?: string;
 };
 
-/** Server-safe image tag with Cloudflare resize URLs (no client hydration delay). */
 export default function OptimizedImage({
   src,
   alt,
@@ -26,17 +29,27 @@ export default function OptimizedImage({
   fetchPriority,
   sizes,
 }: OptimizedImageProps) {
-  const original = encodeAssetPath(resolveProductImage(src));
+  const original = directAssetUrl(resolveProductImage(src));
   const optimized = optimizeImageUrl(original, profile);
+  const [currentSrc, setCurrentSrc] = useState(optimized);
+
+  useEffect(() => {
+    setCurrentSrc(optimizeImageUrl(original, profile));
+  }, [original, profile]);
 
   return (
     <img
-      src={optimized}
+      src={currentSrc}
       alt={alt}
       loading={loading}
       decoding="async"
       fetchPriority={fetchPriority}
       sizes={sizes ?? IMAGE_SIZES[profile]}
+      onError={() => {
+        if (currentSrc !== original) {
+          setCurrentSrc(original);
+        }
+      }}
       className={className}
     />
   );

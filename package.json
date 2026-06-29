@@ -11,7 +11,7 @@
     "verify:cloudflare": "node scripts/verify-cloudflare-config.mjs",
     "audit:routes": "node scripts/audit-routes-opennext.mjs",
     "verify:opennext": "node scripts/verify-opennext-output.mjs",
-    "pages:build": "node scripts/verify-cloudflare-config.mjs && npx opennextjs-cloudflare build && node scripts/verify-opennext-output.mjs",
+    "pages:build": "node scripts/verify-cloudflare-config.mjs && npx opennextjs-cloudflare build && node scripts/patch-opennext-assets.mjs && node scripts/verify-opennext-output.mjs",
     "pages:deploy": "npx opennextjs-cloudflare deploy",
     "open-next:build": "npm run pages:build",
     "preview:cloudflare": "npm run pages:build && npx opennextjs-cloudflare preview",

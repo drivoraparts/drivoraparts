@@ -5,6 +5,7 @@ import { CartProvider } from "@/context/CartContext";
 import CurrencyProvider from "@/components/currency/CurrencyProvider";
 import LanguageProvider from "@/components/i18n/LanguageProvider";
 import Toast from "@/components/Toast";
+import MetaPixel from "@/components/analytics/MetaPixel";
 import TawkChat from "@/components/chat/TawkChat";
 import LiveUserTracker from "@/components/live-users/LiveUserTracker";
 
