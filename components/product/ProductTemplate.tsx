@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Product } from "@/data/store";
 import { trackEvent } from "@/lib/analytics/client";
 import type { ProductCatalogMeta } from "@/lib/inventory/productEnhancements";
+import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
@@ -16,6 +17,9 @@ import PowerLevelSection, {
   type ProSpecSection,
 } from "./PowerLevelSection";
 import ProductDetailsSections from "./ProductDetailsSections";
+import ProductBreadcrumbs from "./ProductBreadcrumbs";
+import MobileStickyAddToCart from "./MobileStickyAddToCart";
+import ProductDiscoverySections from "./ProductDiscoverySections";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import {
@@ -42,13 +46,20 @@ export default function ProductTemplate({
   catalogMeta,
   inStock,
   rawCondition,
+  categoryName,
+  categorySlug,
+  relatedProducts,
 }: {
   product: Product;
   catalogMeta: ProductCatalogMeta;
   inStock: boolean;
   rawCondition?: string;
+  categoryName: string;
+  categorySlug: string;
+  relatedProducts: CatalogProductCardData[];
 }) {
   const [quantity, setQuantity] = useState(1);
+  const ctaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     trackEvent("product_view", {
@@ -77,6 +88,27 @@ export default function ProductTemplate({
     brand: product.brand,
   };
 
+  const recentlyViewedEntry = useMemo(
+    () => ({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      compareAtPrice: product.compareAtPrice,
+      thumbnail: primaryImage,
+      category: product.category,
+      brand: product.brand,
+    }),
+    [
+      product.id,
+      product.name,
+      product.price,
+      product.compareAtPrice,
+      product.category,
+      product.brand,
+      primaryImage,
+    ]
+  );
+
   const specSections = useMemo(() => {
     const sections: ProSpecSection[] = [];
 
@@ -104,7 +136,13 @@ export default function ProductTemplate({
   }, [catalogMeta]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pb-24 md:pb-0">
+      <ProductBreadcrumbs
+        categoryName={categoryName}
+        categorySlug={categorySlug}
+        productName={product.name}
+      />
+
       <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 items-start gap-0 md:grid-cols-[1.15fr_1fr]">
         <div className="min-w-0 border-b border-neutral-200 bg-white p-4 sm:p-6 md:border-b-0 md:border-r">
           <ImageCarousel
@@ -149,7 +187,7 @@ export default function ProductTemplate({
 
           <PowerLevelSection sections={specSections} />
 
-          <div className="mt-6 border-t border-neutral-200 pt-5">
+          <div ref={ctaRef} className="mt-6 border-t border-neutral-200 pt-5">
             <p className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500">
               Quantity
             </p>
@@ -233,6 +271,21 @@ export default function ProductTemplate({
           />
         </div>
       </div>
+
+      <ProductDiscoverySections
+        currentProductId={product.id}
+        currentProduct={recentlyViewedEntry}
+        relatedProducts={relatedProducts}
+      />
+
+      <MobileStickyAddToCart
+        ctaRef={ctaRef}
+        product={cartProduct}
+        price={product.price}
+        compareAtPrice={product.compareAtPrice}
+        quantity={quantity}
+        inStock={inStock}
+      />
     </div>
   );
 }

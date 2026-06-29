@@ -42,6 +42,8 @@ export {
   resolveProductWarranty,
 } from "./productEnhancements";
 export type { ProductCatalogMeta } from "./productEnhancements";
+export { getRelatedProducts } from "./related-products";
+export { toCatalogCardData } from "./catalog-card";
 /** Normalize any string into a canonical kebab-case slug. */
 export function slugify(value: string): string {
   return value

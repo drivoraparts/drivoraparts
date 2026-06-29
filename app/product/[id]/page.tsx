@@ -6,6 +6,9 @@ import {
   getProductById as getInventoryProductById,
   getProductCatalogMeta,
   getCategory,
+  getRelatedProducts,
+  toCatalogCardData,
+  brands,
 } from "@/lib/inventory";
 import { getProductThumbnail } from "@/lib/inventory/media";
 import ProductTemplate from "@/components/product/ProductTemplate";
@@ -69,6 +72,17 @@ export default async function ProductPage({ params }: PageProps) {
   const inStock = inventoryProduct?.stock !== false;
   const rawCondition = inventoryProduct?.condition ?? product.condition;
   const category = getCategory(product.category);
+  const brandSlug =
+    inventoryProduct?.brand ??
+    brands.find((b) => b.name === product.brand)?.slug ??
+    product.brand;
+  const inventorySource = {
+    id: product.id,
+    category: product.category,
+    brand: brandSlug,
+    platform: inventoryProduct?.platform ?? product.platform,
+  };
+  const relatedProducts = getRelatedProducts(inventorySource).map(toCatalogCardData);
 
   const breadcrumbs = breadcrumbJsonLd([
     { name: "Catalog", path: routes.catalog },
@@ -93,6 +107,9 @@ export default async function ProductPage({ params }: PageProps) {
         catalogMeta={catalogMeta}
         inStock={inStock}
         rawCondition={rawCondition}
+        categoryName={category?.name ?? product.category}
+        categorySlug={category?.slug ?? product.category}
+        relatedProducts={relatedProducts}
       />
     </>
   );
