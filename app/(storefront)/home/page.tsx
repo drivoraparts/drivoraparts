@@ -21,10 +21,10 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="bg-[#0a0f16] text-white min-h-screen overflow-hidden">
+    <main className="box-border min-h-screen min-h-[100dvh] w-full min-w-0 max-w-full overflow-x-hidden bg-[#0a0f16] text-white">
 
       {/* HERO */}
-      <section className="relative h-[90vh] flex items-center justify-center text-center px-6">
+      <section className="relative flex h-[100dvh] min-h-[480px] items-center justify-center px-4 text-center sm:px-6">
 
         {/* background glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-red-500/10 via-transparent to-black" />

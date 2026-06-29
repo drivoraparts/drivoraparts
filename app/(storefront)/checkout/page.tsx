@@ -136,7 +136,7 @@ export default function CheckoutPage() {
 
   if (!hydrated) {
     return (
-      <div className="w-full overflow-x-clip">
+      <div className="w-full overflow-x-hidden">
         <main className={shellClass}>
           <h1 className="mb-6 text-center text-2xl font-bold sm:text-3xl">
             {t("checkout")}
@@ -148,7 +148,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="w-full overflow-x-clip">
+    <div className="w-full overflow-x-hidden">
       <main className={shellClass}>
         <h1 className="mb-6 text-center text-2xl font-bold sm:text-3xl">
           {t("checkout")}
@@ -180,7 +180,7 @@ export default function CheckoutPage() {
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       placeholder="John Doe"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
                     />
                   </div>
                   <div>
@@ -196,7 +196,7 @@ export default function CheckoutPage() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="you@example.com"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
                     />
                   </div>
                   <div>
@@ -212,7 +212,7 @@ export default function CheckoutPage() {
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       placeholder="+1 555 000 0000"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
                     />
                   </div>
                   <div>
@@ -228,7 +228,7 @@ export default function CheckoutPage() {
                       value={address}
                       onChange={(e) => setAddress(e.target.value)}
                       placeholder="Street, City, Country"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
                     />
                   </div>
                 </div>

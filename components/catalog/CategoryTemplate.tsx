@@ -39,7 +39,7 @@ export default function CategoryTemplate({
   showProducts?: boolean;
 }) {
   return (
-    <main className="min-h-screen p-6 text-white">
+    <main className="box-border min-h-screen w-full min-w-0 max-w-full overflow-x-hidden p-4 text-white sm:p-6">
       <PageHeading title={title} />
       {intro ? (
         <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">

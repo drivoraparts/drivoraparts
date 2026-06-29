@@ -38,7 +38,7 @@ export default function GlobalHeader({
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-[9999] box-border w-full max-w-full overflow-x-clip transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[9999] box-border w-full max-w-full overflow-x-hidden transition-all duration-300 ${
         scrolled
           ? "border-b border-white/10 bg-black/70 py-3 backdrop-blur-xl"
           : "bg-transparent py-6"

@@ -29,24 +29,28 @@ const sections = [
 
 export default function Home() {
   useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+    if (reduceMotion || isMobile) return;
+
     const handleScroll = () => {
       const hero = document.getElementById("parallaxHero");
       if (!hero) return;
 
       const offset = window.scrollY;
-      hero.style.transform = `translate3d(0, ${offset * 0.2}px, 0) scale(1.1)`;
+      hero.style.transform = `translate3d(0, ${offset * 0.15}px, 0)`;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-black text-white">
-      <section className="relative flex h-screen w-full min-w-0 items-center justify-center overflow-hidden">
+    <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-black text-white">
+      <section className="relative flex h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden">
         <div
           id="parallaxHero"
-          className="absolute inset-0 z-0 scale-110 bg-cover bg-center"
+          className="absolute inset-0 z-0 bg-cover bg-center will-change-transform"
           style={{
             backgroundImage: "url('/home/pexels-juan-montes-92812630-11456554.jpg')",
           }}
@@ -55,8 +59,8 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 z-10 bg-black/60" />
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/50 to-black" />
 
-        <div className="relative z-20 max-w-4xl px-6 text-center">
-          <h1 className="text-5xl font-bold tracking-tight md:text-7xl">
+        <div className="relative z-20 max-w-4xl px-4 text-center sm:px-6">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
             CINEMATIC <span className="text-red-500">PERFORMANCE</span>
           </h1>
 

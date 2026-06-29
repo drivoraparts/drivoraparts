@@ -41,7 +41,7 @@ export default function LayoutShell({ children }: Props) {
       />
 
       {/* PAGE CONTENT */}
-      <main className="box-border min-h-screen w-full min-w-0 max-w-full overflow-x-clip pt-[80px]">
+      <main className="box-border min-h-screen min-h-[100dvh] w-full min-w-0 max-w-full overflow-x-hidden pt-[80px]">
         {children}
       </main>
 
