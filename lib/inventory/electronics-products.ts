@@ -154,6 +154,7 @@ Worldwide Shipping Available`,
       "/product-media/electronics/digital-dash-display/3.jpg",
       "/product-media/electronics/digital-dash-display/4.jpg",
       "/product-media/electronics/digital-dash-display/5.jpg",
+      "/product-media/electronics/digital-dash-display/6.jpg",
     ]),
     description: `Digital Dash Display
 
@@ -280,6 +281,7 @@ Worldwide Shipping Available`,
     ...media([
       "/product-media/electronics/haltech-elite-ecu/1.jpg",
       "/product-media/electronics/haltech-elite-ecu/2.jpg",
+      "/product-media/electronics/haltech-elite-ecu/3.jpg",
     ]),
     description: `Haltech Elite ECU
 

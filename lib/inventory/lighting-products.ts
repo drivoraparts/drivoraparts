@@ -245,6 +245,7 @@ Worldwide Shipping Available`,
       "/product-media/lights/led-side-marker-lights/1.jpg",
       "/product-media/lights/led-side-marker-lights/2.jpg",
       "/product-media/lights/led-side-marker-lights/3.jpg",
+      "/product-media/lights/led-side-marker-lights/4.jpg",
     ]),
     description: `LED Side Marker Lights
 

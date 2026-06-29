@@ -256,6 +256,9 @@ export const interiorProducts: Product[] = [
       "5.jpg",
       "6.jpg",
       "7.jpg",
+      "8.jpg",
+      "9.jpg",
+      "10.jpg",
     ]),
     description: interiorDescription(
       "Subaru WRX STI Interior Performance Kit",
