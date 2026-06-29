@@ -18,9 +18,8 @@ export const brands: Brand[] = [
   { slug: "chevrolet", name: "Chevrolet", category: "engine" },
   { slug: "ford", name: "Ford", category: "engine" },
   { slug: "dodge", name: "Dodge", category: "engine" },
-  { slug: "gmc", name: "GMC", category: "engine" },
-
-  // Engine — Turbo / Performance Systems
+  { slug: "aeromotive", name: "Aeromotive", category: "engine" },
+  { slug: "holley", name: "Holley", category: "engine" },
   { slug: "garrett", name: "Garrett", category: "engine" },
   { slug: "borgwarner", name: "BorgWarner", category: "engine" },
   { slug: "precision", name: "Precision", category: "engine" },
@@ -66,6 +65,8 @@ export const brands: Brand[] = [
 
   // Electronics
   { slug: "aem", name: "AEM", category: "electronics" },
+  { slug: "aeromotive", name: "Aeromotive", category: "electronics" },
+  { slug: "holley", name: "Holley", category: "electronics" },
   { slug: "cobb", name: "COBB Tuning", category: "electronics" },
   { slug: "haltech", name: "Haltech", category: "electronics" },
   { slug: "hp-tuners", name: "HP Tuners", category: "electronics" },

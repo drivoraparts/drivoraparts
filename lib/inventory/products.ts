@@ -11,6 +11,7 @@
 import type { Product } from "./types";
 import { aftermarketProducts } from "./aftermarket-products";
 import { engineDrivetrainProducts } from "./engine-drivetrain-products";
+import { essCatalogProducts } from "./ess-catalog-products";
 import { bodyPartsProducts } from "./body-parts-products";
 import { interiorProducts } from "./interior-products";
 import { electronicsProducts } from "./electronics-products";
@@ -25,6 +26,7 @@ const extensionProducts: Product[] = [
   ...interiorProducts,
   ...aftermarketProducts,
   ...engineDrivetrainProducts,
+  ...essCatalogProducts,
 ];
 
 const productCatalog: Product[] = [
