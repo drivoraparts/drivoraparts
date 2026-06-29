@@ -4,7 +4,7 @@ import { findPaymentByOrderId, updatePaymentRecord } from "@/lib/db/payments";
 import {
   fetchNowPaymentsPaymentIndex,
   fetchNowPaymentsRemoteStatus,
-  mapNowPaymentsStatusString,
+  evaluateNowPaymentsOrderPaid,
 } from "@/lib/payments/nowpayments/client";
 import { logActivity } from "@/lib/monitoring/activity";
 import { logError, logInfo } from "@/lib/monitoring/logger";
@@ -99,7 +99,14 @@ export async function reconcilePendingPayments(
         continue;
       }
 
-      const mapped = mapNowPaymentsStatusString(remote.paymentStatus);
+      const mapped = evaluateNowPaymentsOrderPaid(
+        remote.paymentStatus,
+        Number(order.total),
+        {
+          priceAmount: remote.priceAmount,
+          actuallyPaidAtFiat: remote.actuallyPaidAtFiat,
+        }
+      );
 
       if (mapped === "paid") {
         const invoiceRef = ref ?? remote.paymentId ?? "";

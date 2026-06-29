@@ -42,7 +42,18 @@ export type NowPaymentsWebhookPayload = {
   price_currency?: string;
   pay_amount?: number | string;
   pay_currency?: string;
+  actually_paid_at_fiat?: number | string | null;
+  outcome_amount?: number | string | null;
+  outcome_currency?: string | null;
 };
+
+function parseNumericAmount(
+  value: number | string | null | undefined
+): number | null {
+  if (value == null || value === "") return null;
+  const parsed = typeof value === "number" ? value : Number.parseFloat(String(value));
+  return Number.isFinite(parsed) ? parsed : null;
+}
 
 export function isNowPaymentsApiConfigured(): boolean {
   return Boolean(getNowPaymentsApiKey());
@@ -280,7 +291,7 @@ export function mapNowPaymentsStatusString(
 ): "pending" | "paid" | "failed" {
   const normalized = (status ?? "").toLowerCase();
 
-  if (normalized === "finished" || normalized === "confirmed" || normalized === "sending") {
+  if (normalized === "finished") {
     return "paid";
   }
 
@@ -295,10 +306,54 @@ export function mapNowPaymentsStatusString(
   return "pending";
 }
 
-export function mapNowPaymentsPaymentStatus(
-  payload: NowPaymentsWebhookPayload
+/**
+ * Fixed-price e-commerce settlement (NOWPayments guide):
+ * only `finished` may mark an order paid; verify fiat amount when present.
+ */
+export function evaluateNowPaymentsOrderPaid(
+  paymentStatus: string | null | undefined,
+  expectedAmountUsd: number | null | undefined,
+  amounts?: {
+    priceAmount?: number | string | null;
+    actuallyPaidAtFiat?: number | string | null;
+  }
 ): "pending" | "paid" | "failed" {
-  return mapNowPaymentsStatusString(payload.payment_status);
+  const normalized = (paymentStatus ?? "").toLowerCase();
+
+  if (normalized === "failed" || normalized === "refunded" || normalized === "expired") {
+    return "failed";
+  }
+
+  if (normalized !== "finished") {
+    return "pending";
+  }
+
+  if (expectedAmountUsd == null || expectedAmountUsd <= 0) {
+    return "paid";
+  }
+
+  const tolerance = 0.01;
+  const paidFiat = parseNumericAmount(amounts?.actuallyPaidAtFiat);
+  if (paidFiat != null && paidFiat > 0) {
+    return paidFiat + tolerance >= expectedAmountUsd ? "paid" : "pending";
+  }
+
+  const price = parseNumericAmount(amounts?.priceAmount);
+  if (price != null && price > 0) {
+    return price + tolerance >= expectedAmountUsd ? "paid" : "pending";
+  }
+
+  return "paid";
+}
+
+export function mapNowPaymentsPaymentStatus(
+  payload: NowPaymentsWebhookPayload,
+  expectedAmountUsd?: number | null
+): "pending" | "paid" | "failed" {
+  return evaluateNowPaymentsOrderPaid(payload.payment_status, expectedAmountUsd, {
+    priceAmount: payload.price_amount,
+    actuallyPaidAtFiat: payload.actually_paid_at_fiat,
+  });
 }
 
 export type NowPaymentsRemoteStatus = {
@@ -306,6 +361,8 @@ export type NowPaymentsRemoteStatus = {
   orderId: string | null;
   paymentId: string | null;
   source: "payment" | "invoice";
+  priceAmount?: number | string | null;
+  actuallyPaidAtFiat?: number | string | null;
 };
 
 type NowPaymentsPaymentRow = {
@@ -313,6 +370,8 @@ type NowPaymentsPaymentRow = {
   payment_status?: string | null;
   order_id?: string | null;
   invoice_id?: number | string | null;
+  price_amount?: number | string | null;
+  actually_paid_at_fiat?: number | string | null;
 };
 
 function rowToRemoteStatus(row: NowPaymentsPaymentRow): NowPaymentsRemoteStatus | null {
@@ -322,6 +381,8 @@ function rowToRemoteStatus(row: NowPaymentsPaymentRow): NowPaymentsRemoteStatus 
     orderId: row.order_id ?? null,
     paymentId: row.payment_id != null ? String(row.payment_id) : null,
     source: "payment",
+    priceAmount: row.price_amount ?? null,
+    actuallyPaidAtFiat: row.actually_paid_at_fiat ?? null,
   };
 }
 
@@ -455,6 +516,8 @@ export async function fetchNowPaymentsRemoteStatus(
         paymentId:
           row.payment_id != null ? String(row.payment_id) : ref,
         source: "payment",
+        priceAmount: row.price_amount ?? null,
+        actuallyPaidAtFiat: row.actually_paid_at_fiat ?? null,
       };
     }
   }
@@ -479,6 +542,8 @@ export async function fetchNowPaymentsRemoteStatus(
         orderId: row.order_id ?? null,
         paymentId: null,
         source: "invoice",
+        priceAmount: row.price_amount ?? null,
+        actuallyPaidAtFiat: row.actually_paid_at_fiat ?? null,
       };
     }
   }

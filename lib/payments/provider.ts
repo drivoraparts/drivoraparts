@@ -135,6 +135,24 @@ export const nowpaymentsPaymentProvider: PaymentProvider = {
       return null;
     }
 
+    const order = await getOrderById(payload.order_id);
+    const mappedStatus = mapNowPaymentsPaymentStatus(
+      payload,
+      order ? Number(order.total) : null
+    );
+
+    if (
+      (payload.payment_status ?? "").toLowerCase() === "finished" &&
+      mappedStatus === "pending"
+    ) {
+      await logActivity("warn", "nowpayments.webhook_amount_unverified", {
+        orderId: payload.order_id,
+        expectedAmount: order ? Number(order.total) : null,
+        priceAmount: payload.price_amount,
+        actuallyPaidAtFiat: payload.actually_paid_at_fiat,
+      });
+    }
+
     await logActivity("info", "nowpayments.webhook_received", {
       orderId: payload.order_id,
       providerStatus: payload.payment_status,
@@ -142,7 +160,6 @@ export const nowpaymentsPaymentProvider: PaymentProvider = {
       paymentId: payload.payment_id,
     });
 
-    const mappedStatus = mapNowPaymentsPaymentStatus(payload);
     let existing = await findPaymentByOrderId(payload.order_id);
 
     if (!existing) {
@@ -158,7 +175,6 @@ export const nowpaymentsPaymentProvider: PaymentProvider = {
       }
 
       if (!existing) {
-        const order = await getOrderById(payload.order_id);
         if (order) {
           existing = await createPaymentRecord({
             orderId: payload.order_id,
