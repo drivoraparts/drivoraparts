@@ -1,6 +1,6 @@
 import type { Product, ProductLogistics } from "./types";
 import {
-  getConditionDisplay,
+  getConditionLabel,
   resolveProductCondition,
 } from "./condition";
 import { productLogistics } from "./logistics";
@@ -168,12 +168,11 @@ export function resolveProductReviewCount(product: Product): number {
 export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
   const description = product.description ?? "";
   const sections = splitDescriptionSections(description);
-  const condition = resolveProductCondition(product);
 
   return {
     horsepower: resolveProductHorsepower(product),
     mileage: resolveProductMileage(product),
-    conditionLabel: getConditionDisplay(condition).label,
+    conditionLabel: getConditionLabel(product),
     warranty: resolveProductWarranty(product, description),
     rating: resolveProductRating(product),
     reviewCount: resolveProductReviewCount(product),
@@ -185,5 +184,5 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
 }
 
 export function getConditionLabelForProduct(product: Product): string {
-  return getConditionDisplay(resolveProductCondition(product)).label;
+  return getConditionLabel(product);
 }

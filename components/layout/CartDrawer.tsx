@@ -1,5 +1,6 @@
 "use client";
 
+import ProductImage from "@/components/media/ProductImage";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { showToast } from "@/lib/store/toastStore";
@@ -51,11 +52,10 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
               className="mb-3 border-b border-white/10 pb-3"
             >
               <div className="flex gap-3">
-                <img
+                <ProductImage
                   src={item.image}
                   alt={item.name}
-                  loading="lazy"
-                  decoding="async"
+                  profile="grid"
                   className="h-16 w-16 rounded object-cover"
                 />
 

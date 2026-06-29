@@ -7,6 +7,7 @@ import {
   getProductCatalogMeta,
   getCategory,
 } from "@/lib/inventory";
+import { getProductThumbnail } from "@/lib/inventory/media";
 import ProductTemplate from "@/components/product/ProductTemplate";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import {
@@ -35,11 +36,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     `Buy ${product.name} at DrivoraParts with secure checkout and worldwide shipping.`
   );
 
+  const inventoryProduct = getInventoryProductById(product.id);
+  const previewImage = getProductThumbnail(inventoryProduct ?? product);
+
   return buildPageMetadata({
     title: product.name,
     description,
     path: routes.product(product.id),
-    image: product.thumbnail,
+    image: previewImage,
   });
 }
 

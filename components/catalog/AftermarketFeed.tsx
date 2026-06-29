@@ -7,8 +7,9 @@ import {
   getConditionLabel,
   routes,
 } from "@/lib/inventory";
+import ProductImage from "@/components/media/ProductImage";
 import CatalogCard from "./CatalogCard";
-import Price from "@/components/currency/Price";
+import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 
 const aftermarketProducts = getProductsByCategory("aftermarket");
@@ -87,7 +88,7 @@ export default function AftermarketFeed() {
         <p className="text-gray-500">No aftermarket parts found.</p>
       ) : (
         <div className="grid grid-cols-2 gap-4">
-          {filtered.map((product) => {
+          {filtered.map((product, index) => {
             const image = product.thumbnail ?? product.image;
             const inStock = product.stock !== false;
 
@@ -97,12 +98,13 @@ export default function AftermarketFeed() {
                 href={routes.product(product.id)}
               >
                 {image ? (
-                  <img
+                  <ProductImage
                     src={image}
                     alt={product.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-40 w-full object-cover rounded-lg"
+                    profile="card"
+                    loading={index < 4 ? "eager" : "lazy"}
+                    fetchPriority={index < 2 ? "high" : undefined}
+                    className="h-40 w-full rounded-lg object-cover"
                   />
                 ) : (
                   <div className="h-40 w-full rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-xs text-gray-500">
@@ -112,9 +114,12 @@ export default function AftermarketFeed() {
                 <h3 className="mt-3 font-semibold">
                   <TranslatedText as="span">{product.name}</TranslatedText>
                 </h3>
-                <p className="text-sm text-red-500 font-bold">
-                  <Price usd={product.price} />
-                </p>
+                <ProductPrice
+                  price={product.price}
+                  compareAtPrice={product.compareAtPrice}
+                  size="md"
+                  className="text-sm"
+                />
                 <div className="mt-2 space-y-1 text-xs text-gray-400">
                   <p>Condition: {getConditionLabel(product)}</p>
                   <p className={inStock ? "text-gray-300" : "text-red-400"}>

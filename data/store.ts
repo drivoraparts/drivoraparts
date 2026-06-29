@@ -33,6 +33,7 @@ export type Product = {
   brand: string;
   platform?: string;
   price: number;
+  compareAtPrice?: number;
   condition: string;
   location: string;
   thumbnail: string;
@@ -67,6 +68,7 @@ export const store: Record<string, Category> = Object.fromEntries(
         brand: brandNameForSlug(p.brand),
         platform: p.platform,
         price: p.price,
+        compareAtPrice: p.compareAtPrice,
         condition: getConditionLabel(p),
         location: p.location ?? "",
         thumbnail: getProductThumbnail(p),

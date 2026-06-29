@@ -10,6 +10,7 @@ import OrderTotalsSummary from "@/components/checkout/OrderTotalsSummary";
 import { CheckoutBrandMark } from "@/components/brand/CheckoutBrandMark";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { calculateCartDiscounts } from "@/lib/inventory/discounts";
+import ProductImage from "@/components/media/ProductImage";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const glassCard =
@@ -270,11 +271,10 @@ export default function CheckoutPage() {
                       className="flex min-w-0 items-start gap-3 py-3"
                     >
                       <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-white/5">
-                        <img
+                        <ProductImage
                           src={item.image || "/product-media/avatars/default.svg"}
                           alt={item.name}
-                          loading="lazy"
-                          decoding="async"
+                          profile="grid"
                           className="h-full w-full object-cover"
                         />
                       </div>

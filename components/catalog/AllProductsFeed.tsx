@@ -150,13 +150,15 @@ export default function AllProductsFeed() {
         <p className="text-sm text-gray-500">No products match your search.</p>
       ) : (
         <div className="grid grid-cols-3 gap-1.5 sm:gap-3 md:gap-4">
-          {filtered.map((product) => (
+          {filtered.map((product, index) => (
             <AllProductsGridCard
               key={product.id}
+              priority={index < 6}
               product={{
                 id: product.id,
                 name: product.name,
                 price: product.price,
+                compareAtPrice: product.compareAtPrice,
                 thumbnail: getProductThumbnail(product),
                 images: product.images,
                 category: product.category,

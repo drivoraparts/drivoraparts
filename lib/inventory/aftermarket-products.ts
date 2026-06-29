@@ -1,9 +1,9 @@
 /* =========================================================
    AFTERMARKET INVENTORY
    ---------------------------------------------------------
-   Used / refurbished marketplace listings. Prices are MSRP
-   inputs; applyPublicPrices() in products.ts sets storefront
-   list prices.
+   Used / refurbished marketplace listings. Set `price` to the competitor /
+   market reference price; applyPublicPrices() stores it on compareAtPrice
+   (struck through) and sets price to our discounted list price.
 ========================================================= */
 
 import type { Product } from "./types";
@@ -290,6 +290,32 @@ export const aftermarketProducts: Product[] = [
       "White Leer Cab High 100XR Shell",
       "White Leer cab-high 100XR shell with maximum interior headroom and clean OEM-style lines. Ideal for crews needing full bed coverage with cab-height clearance.",
       "Full-size truck Leer cab-high 100XR applications"
+    ),
+  },
+  {
+    id: 184,
+    name: "ARB Classic Plus Canopy for 2016 Toyota Hilux Dual Cab",
+    category: "aftermarket",
+    brand: "arb",
+    price: 1266,
+    stock: true,
+    stockQty: 1,
+    condition: "Used like new",
+    location: "USA Warehouse",
+    fitment: "2016 Toyota Hilux Dual Cab",
+    createdAt: 1741392000000,
+    ...media("ARB classic plus Canopy for 2016 Toyota Hilux Dual Cab", [
+      "731219723_879206501350550_5360347662989400137_n.jpg",
+      "731323109_2107315573329176_887557035069605609_n.jpg",
+      "731356599_1709730683684159_6971363893216190288_n.jpg",
+      "731396496_3204304313092632_4406847845565885735_n.jpg",
+      "731397579_1731405738306549_3594661867142818180_n.jpg",
+      "733746713_1745188889808921_1297048353704708332_n.jpg",
+    ]),
+    description: canopyDescription(
+      "ARB Classic Plus Canopy for 2016 Toyota Hilux Dual Cab",
+      "ARB Classic Plus canopy engineered for the 2016 Toyota Hilux Dual Cab. Features integrated roof rails, rear gate with secure latching, side glass, and ARB's reinforced composite construction for daily work use and overland storage.",
+      "2016 Toyota Hilux Dual Cab"
     ),
   },
 ];

@@ -98,6 +98,7 @@ export default async function Page({ params }: PageProps) {
                   id: product.id,
                   name: product.name,
                   price: product.price,
+                  compareAtPrice: product.compareAtPrice,
                   thumbnail: product.thumbnail,
                   images: product.images,
                   category: categorySlug,

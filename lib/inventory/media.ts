@@ -30,3 +30,5 @@ export function getProductThumbnail(
   const fromGallery = product.images?.map((src) => src?.trim()).find(Boolean);
   return resolveProductImage(fromGallery ?? product.thumbnail ?? product.image);
 }
+
+export { optimizeImageUrl, IMAGE_SIZES, type ImageProfile } from "@/lib/media/optimize-image";

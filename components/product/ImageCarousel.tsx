@@ -13,6 +13,10 @@ import {
   resolveProductGallery,
   resolveProductImage,
 } from "@/lib/inventory/media";
+import {
+  optimizeImageUrl,
+  type ImageProfile,
+} from "@/lib/media/optimize-image";
 
 type ManualImageGalleryProps = {
   images: string[];
@@ -25,12 +29,16 @@ function GalleryImage({
   src,
   alt,
   loading,
+  fetchPriority,
   fallbacks = [],
+  profile = "card",
 }: {
   src: string;
   alt: string;
   loading?: "eager" | "lazy";
+  fetchPriority?: "high" | "low" | "auto";
   fallbacks?: string[];
+  profile?: ImageProfile;
 }) {
   const candidates = useMemo(
     () =>
@@ -47,9 +55,15 @@ function GalleryImage({
     setUseDefault(false);
   }, [src, fallbacks]);
 
-  const currentSrc = useDefault
+  const originalSrc = useDefault
     ? DEFAULT_PRODUCT_IMAGE
     : resolveProductImage(candidates[index] ?? src);
+  const optimizedSrc = optimizeImageUrl(originalSrc, profile);
+  const [currentSrc, setCurrentSrc] = useState(optimizedSrc);
+
+  useEffect(() => {
+    setCurrentSrc(optimizeImageUrl(originalSrc, profile));
+  }, [originalSrc, profile]);
 
   return (
     <img
@@ -58,7 +72,13 @@ function GalleryImage({
       draggable={false}
       loading={loading}
       decoding="async"
+      fetchPriority={fetchPriority}
+      sizes={profile === "detail" ? "(max-width: 768px) 100vw, 520px" : "(max-width: 640px) 50vw, 320px"}
       onError={() => {
+        if (currentSrc !== originalSrc) {
+          setCurrentSrc(originalSrc);
+          return;
+        }
         if (index < candidates.length - 1) {
           setIndex((current) => current + 1);
           return;
@@ -152,6 +172,7 @@ export default function ImageCarousel({
   };
 
   const isCard = variant === "card";
+  const imageProfile: ImageProfile = isCard ? "grid" : "detail";
   const frameClass = isCard
     ? "relative h-40 w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]"
     : "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] shadow-[0_4px_24px_rgba(0,0,0,0.25)]";
@@ -178,6 +199,8 @@ export default function ImageCarousel({
                 src={slideSrc}
                 alt={`${alt} — image ${index + 1}`}
                 loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 && !isCard ? "high" : undefined}
+                profile={imageProfile}
                 fallbacks={galleryImages.filter((_, i) => i !== index)}
               />
             </div>

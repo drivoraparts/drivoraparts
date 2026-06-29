@@ -2,7 +2,7 @@ import type { Product } from "./types";
 
 /**
  * Public list prices sit between full MSRP and the previous discount tier.
- * ~79% of catalog MSRP, rounded to natural price points.
+ * ~79% of catalog MSRP, rounded to the nearest $10.
  */
 export const PUBLIC_PRICE_RATIO = 0.79;
 
@@ -33,12 +33,26 @@ export const CHECKOUT_TEST_PRODUCT_ID = 9999;
 
 export function resolvePublicPrice(product: Pick<Product, "id" | "price">): number {
   if (product.id === CHECKOUT_TEST_PRODUCT_ID) return product.price;
-  return roundListPrice(product.price * PUBLIC_PRICE_RATIO);
+  const discounted = product.price * PUBLIC_PRICE_RATIO;
+  return Math.round(discounted / 10) * 10;
 }
 
 export function applyPublicPrices(items: Product[]): Product[] {
   return items.map((product) => {
-    const price = resolvePublicPrice(product);
-    return price === product.price ? product : { ...product, price };
+    const salePrice = resolvePublicPrice(product);
+
+    if (product.id === CHECKOUT_TEST_PRODUCT_ID) {
+      return salePrice === product.price ? product : { ...product, price: salePrice };
+    }
+
+    if (salePrice >= product.price) {
+      return product;
+    }
+
+    return {
+      ...product,
+      compareAtPrice: product.price,
+      price: salePrice,
+    };
   });
 }

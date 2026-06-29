@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   async headers() {
+    const staticAssetCache = [
+      {
+        key: "Cache-Control",
+        value: "public, max-age=31536000, immutable",
+      },
+    ];
+
     return [
       {
         source: "/catalog/:path*",
@@ -26,6 +33,14 @@ const nextConfig: NextConfig = {
             value: "public, s-maxage=3600, stale-while-revalidate=86400",
           },
         ],
+      },
+      {
+        source: "/product-media/:path*",
+        headers: staticAssetCache,
+      },
+      {
+        source: "/home/:path*",
+        headers: staticAssetCache,
       },
     ];
   },

@@ -4,7 +4,7 @@ import Link from "next/link";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
-import Price from "@/components/currency/Price";
+import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { CatalogImageGallery } from "@/components/product/ImageCarousel";
@@ -15,6 +15,7 @@ export type CatalogProductCardData = {
   id: number;
   name: string;
   price: number;
+  compareAtPrice?: number;
   thumbnail: string;
   images?: string[];
   category: string;
@@ -58,9 +59,11 @@ export default function CatalogProductCard({
             <h3 className="font-semibold text-white group-hover:text-red-400">
               <TranslatedText as="span">{product.name}</TranslatedText>
             </h3>
-            <p className="text-sm font-bold text-red-500">
-              <Price usd={product.price} />
-            </p>
+            <ProductPrice
+              price={product.price}
+              compareAtPrice={product.compareAtPrice}
+              size="md"
+            />
             <div className="mt-2">
               <ProductDiscountBadge category={product.category} />
             </div>

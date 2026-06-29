@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import ProductImage from "@/components/media/ProductImage";
 import { routes } from "@/lib/inventory";
+
+const HERO_IMAGE = "/home/pexels-juan-montes-92812630-11456554.jpg";
 
 const sections = [
   {
@@ -50,11 +53,17 @@ export default function Home() {
       <section className="relative flex h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden">
         <div
           id="parallaxHero"
-          className="absolute inset-0 z-0 bg-cover bg-center will-change-transform"
-          style={{
-            backgroundImage: "url('/home/pexels-juan-montes-92812630-11456554.jpg')",
-          }}
-        />
+          className="absolute inset-0 z-0 overflow-hidden will-change-transform"
+        >
+          <ProductImage
+            src={HERO_IMAGE}
+            alt=""
+            profile="hero"
+            loading="eager"
+            fetchPriority="high"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <div className="pointer-events-none absolute inset-0 z-10 bg-black/60" />
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/50 to-black" />
@@ -94,11 +103,10 @@ export default function Home() {
           }`}
         >
           <div className="w-full md:w-1/2">
-            <img
+            <ProductImage
               src={item.image}
               alt={item.title}
-              loading="lazy"
-              decoding="async"
+              profile="detail"
               className="w-full rounded-xl object-cover shadow-2xl"
             />
           </div>

@@ -115,5 +115,9 @@ export function getConditionDisplay(
 export function getConditionLabel(
   product: Pick<Product, "category" | "condition">
 ): string {
+  const raw = (product.condition ?? "").toLowerCase();
+  if (isAftermarketCategory(product.category) && raw.includes("like new")) {
+    return "Used Like New";
+  }
   return getConditionDisplay(resolveProductCondition(product)).label;
 }

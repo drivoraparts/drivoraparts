@@ -6,15 +6,19 @@ import LayoutShell from "@/components/layout/LayoutShell";
 import { getSiteUrl, getGoogleSiteVerification } from "@/lib/env";
 import {
   DEFAULT_DESCRIPTION,
+  ICON_VERSION,
   SITE_NAME,
   SITE_TAGLINE,
+  absoluteImageUrl,
+  defaultSiteSocialImages,
+  organizationJsonLd,
+  websiteJsonLd,
 } from "@/lib/seo";
 import {
   detectCurrencyFromAcceptLanguage,
 } from "@/lib/currency";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
-import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
@@ -22,8 +26,6 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
  */
 
 const siteUrl = getSiteUrl();
-
-const ICON_VERSION = "7";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -48,6 +50,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_TAGLINE,
+    images: defaultSiteSocialImages(),
+  },
+  twitter: {
+    card: "summary",
+    title: SITE_NAME,
+    description: SITE_TAGLINE,
+    images: [absoluteImageUrl()],
   },
   robots: {
     index: true,

@@ -14,6 +14,7 @@ type TemplateProduct = {
   id: number;
   name: string;
   price: number;
+  compareAtPrice?: number;
   thumbnail: string;
   images?: string[];
   category: string;

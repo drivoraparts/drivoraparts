@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getCategories, routes, products, getProductThumbnail } from "@/lib/inventory";
-import Price from "@/components/currency/Price";
+import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 
 export default function HomePage() {
@@ -136,9 +136,13 @@ export default function HomePage() {
                 <p className="text-sm font-medium">
                   <TranslatedText as="span">{p.name}</TranslatedText>
                 </p>
-                <p className="text-xs text-gray-400">
-                  <Price usd={p.price} />
-                </p>
+                <div className="text-xs text-gray-400">
+                  <ProductPrice
+                    price={p.price}
+                    compareAtPrice={p.compareAtPrice}
+                    size="sm"
+                  />
+                </div>
               </div>
             </div>
           ))}

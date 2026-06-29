@@ -51,6 +51,9 @@ export type Product = {
   brand: string;
   price: number;
 
+  /** Competitor / MSRP anchor shown struck through when a sale price applies. */
+  compareAtPrice?: number;
+
   /** Whether the product is in stock. */
   stock?: boolean;
 

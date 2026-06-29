@@ -14,7 +14,7 @@ import ConditionBadge from "./ConditionBadge";
 import ProductRatingSummary from "./ProductRatingSummary";
 import QuickSpecsBar from "./QuickSpecsBar";
 import ProductDetailsSections from "./ProductDetailsSections";
-import Price from "@/components/currency/Price";
+import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import {
   OrderDiscountBadge,
@@ -115,8 +115,12 @@ export default function ProductTemplate({
           reviewCount={catalogMeta.reviewCount}
         />
 
-        <h2 style={{ marginTop: "8px", fontSize: "26px", color: "#e60000" }}>
-          <Price usd={product.price} />
+        <h2 style={{ marginTop: "8px" }}>
+          <ProductPrice
+            price={product.price}
+            compareAtPrice={product.compareAtPrice}
+            size="lg"
+          />
         </h2>
 
         <div

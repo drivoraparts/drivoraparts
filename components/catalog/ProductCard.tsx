@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import Price from "@/components/currency/Price";
+import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
+import ProductImage from "@/components/media/ProductImage";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
@@ -14,6 +15,7 @@ export type Product = {
   category: string;
   brand?: string;
   price: number;
+  compareAtPrice?: number;
   condition: string;
   location: string;
   thumbnail: string;
@@ -36,11 +38,10 @@ export default function ProductCard({ product }: { product: Product }) {
     <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-red-500/40">
       <Link href={productHref} className="block">
         <div className="relative h-[180px] overflow-hidden">
-          <img
+          <ProductImage
             src={product.thumbnail}
             alt={product.name}
-            loading="lazy"
-            decoding="async"
+            profile="card"
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -56,10 +57,12 @@ export default function ProductCard({ product }: { product: Product }) {
           <p className="mt-1 text-xs text-gray-400">{product.condition}</p>
           <p className="mt-1 text-xs text-gray-500">{product.location}</p>
 
-          <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-red-500">
-              <Price usd={product.price} />
-            </span>
+          <div className="mt-3 flex items-center justify-between gap-2">
+            <ProductPrice
+              price={product.price}
+              compareAtPrice={product.compareAtPrice}
+              size="sm"
+            />
             <span className="text-[10px] uppercase text-gray-400">
               {product.category}
             </span>
