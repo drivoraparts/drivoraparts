@@ -14,7 +14,7 @@ export const dynamic = "force-static";
 export const metadata: Metadata = buildPageMetadata({
   title: "Performance Engines by Platform",
   description:
-    "Shop BMW, Toyota, Nissan, Honda, and other performance engine platforms — N54, 2JZ, RB, K-Series, LS, and more.",
+    "Shop BMW, Toyota, Nissan, Honda, GM Gen V, Ford Coyote, LS/LT swap packages, and more — crate motors, drivetrains, and swap-ready powerplants.",
   path: "/catalog/engine",
 });
 
@@ -38,7 +38,8 @@ export default function Page() {
         <PageHeading title="Engine" subtitle="Select an engine platform" />
         <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
           Browse legendary engine platforms including BMW N54, Toyota 2JZ, Nissan
-          RB, Honda K-Series, GM LS, and more.
+          RB, Honda K-Series, GM LS/LT, Gen V L86/L83 packages, Ford Coyote, and
+          more.
         </p>
         <EngineGroups />
       </main>

@@ -60,6 +60,31 @@ export const engineTree: EngineGroup[] = [
       { name: "LT1 / LT4" },
       { name: "Ford Coyote 5.0" },
       { name: "Dodge Hellcat 6.2" },
+      { name: "GM LS / LSA Drivetrains", slug: "gm-ls-drivetrains" },
+    ],
+  },
+  {
+    slug: "gm-gen-v-swap",
+    title: "GM Gen V Swap Engines",
+    platforms: [
+      { name: "GM L83 5.3", slug: "gm-l83" },
+      { name: "GM L84 5.3", slug: "gm-l84" },
+      { name: "GM L86 6.2", slug: "gm-l86" },
+      { name: "GM LV3 4.3", slug: "gm-lv3" },
+      { name: "GM Duramax 6.6", slug: "gm-duramax-6-6" },
+      { name: "GM Gen V Packages", slug: "gm-gen-v-packages" },
+      { name: "GM LT Performance Packages", slug: "gm-lt-packages" },
+    ],
+  },
+  {
+    slug: "ford-swap-packages",
+    title: "Ford Swap Packages",
+    platforms: [
+      { name: "Ford Gen 2 Coyote", slug: "ford-coyote-gen2" },
+      { name: "Ford Gen 3 Coyote Drivetrain", slug: "ford-coyote-gen3-drivetrain" },
+      { name: "Ford 3.5L EcoBoost", slug: "ford-ecoboost-3-5" },
+      { name: "Ford Powerstroke 6.7", slug: "ford-powerstroke-6-7" },
+      { name: "Ford Coyote Performance Packages", slug: "ford-coyote-packages" },
     ],
   },
   {

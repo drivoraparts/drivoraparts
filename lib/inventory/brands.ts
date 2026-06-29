@@ -15,6 +15,10 @@ export const brands: Brand[] = [
   { slug: "nissan", name: "Nissan", category: "engine" },
   { slug: "honda", name: "Honda", category: "engine" },
   { slug: "mazda", name: "Mazda", category: "engine" },
+  { slug: "chevrolet", name: "Chevrolet", category: "engine" },
+  { slug: "ford", name: "Ford", category: "engine" },
+  { slug: "dodge", name: "Dodge", category: "engine" },
+  { slug: "gmc", name: "GMC", category: "engine" },
 
   // Engine — Turbo / Performance Systems
   { slug: "garrett", name: "Garrett", category: "engine" },
