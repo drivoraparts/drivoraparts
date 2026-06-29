@@ -10,7 +10,7 @@ import {
 import ReviewCard from "./ReviewCard";
 import ReviewWriteForm from "./ReviewWriteForm";
 import StarRating from "./StarRating";
-import { glassCard } from "./styles";
+import { proSurfaceCard } from "./styles";
 
 type CustomerReviewsSectionProps = {
   productId: number;
@@ -70,7 +70,7 @@ export default function CustomerReviewsSection({
     : "Customer Reviews";
 
   return (
-    <section style={{ ...glassCard, padding: "14px" }}>
+    <section style={{ ...proSurfaceCard, padding: "14px" }}>
       <button
         type="button"
         className="reviews-toggle"
@@ -142,7 +142,7 @@ export default function CustomerReviewsSection({
           padding: 0;
           border: none;
           background: none;
-          color: #fff;
+          color: #111827;
           text-align: left;
           cursor: pointer;
         }
@@ -162,7 +162,7 @@ export default function CustomerReviewsSection({
           display: block;
           margin-top: 8px;
           font-size: 13px;
-          color: rgba(255, 255, 255, 0.55);
+          color: #6b7280;
         }
 
         .reviews-panel {
@@ -175,12 +175,12 @@ export default function CustomerReviewsSection({
           gap: 10px;
           margin-bottom: 14px;
           padding-bottom: 12px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          border-bottom: 1px solid #d1d5db;
         }
 
         .reviews-summary-count {
           font-size: 13px;
-          color: rgba(255, 255, 255, 0.72);
+          color: #374151;
           font-weight: 600;
         }
 
@@ -194,25 +194,25 @@ export default function CustomerReviewsSection({
         .review-loading {
           margin: 0;
           font-size: 14px;
-          color: rgba(255, 255, 255, 0.55);
+          color: #6b7280;
         }
 
         .review-load-more {
           margin-top: 12px;
           width: 100%;
           padding: 10px 14px;
-          border-radius: 8px;
-          border: 1px solid rgba(255, 255, 255, 0.14);
-          background: rgba(255, 255, 255, 0.05);
-          color: #fff;
+          border-radius: 6px;
+          border: 1px solid #d1d5db;
+          background: #ffffff;
+          color: #111827;
           font-size: 14px;
           font-weight: 600;
           cursor: pointer;
         }
 
         .review-load-more:hover {
-          border-color: rgba(230, 0, 0, 0.35);
-          background: rgba(230, 0, 0, 0.08);
+          border-color: #dc2626;
+          background: #fef2f2;
         }
       `}</style>
     </section>

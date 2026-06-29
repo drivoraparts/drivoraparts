@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { resolveProductImage } from "@/lib/inventory/media";
 import {
+  encodeAssetPath,
   IMAGE_SIZES,
   optimizeImageUrl,
   type ImageProfile,
@@ -27,7 +28,7 @@ export default function ProductImage({
   fetchPriority,
   sizes,
 }: ProductImageProps) {
-  const original = resolveProductImage(src);
+  const original = encodeAssetPath(resolveProductImage(src));
   const optimized = optimizeImageUrl(original, profile);
   const [currentSrc, setCurrentSrc] = useState(optimized);
 

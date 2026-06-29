@@ -14,6 +14,7 @@ import {
   resolveProductImage,
 } from "@/lib/inventory/media";
 import {
+  encodeAssetPath,
   optimizeImageUrl,
   type ImageProfile,
 } from "@/lib/media/optimize-image";
@@ -58,7 +59,7 @@ function GalleryImage({
 
   const originalSrc = useDefault
     ? DEFAULT_PRODUCT_IMAGE
-    : resolveProductImage(candidates[index] ?? src);
+    : encodeAssetPath(resolveProductImage(candidates[index] ?? src));
   const optimizedSrc = optimizeImageUrl(originalSrc, profile);
   const [currentSrc, setCurrentSrc] = useState(optimizedSrc);
 
@@ -245,7 +246,9 @@ export default function ImageCarousel({
               className={`rounded-full transition ${
                 index === activeIndex
                   ? "h-2.5 w-2.5 bg-red-600"
-                  : "h-2 w-2 bg-white/35 hover:bg-white/55"
+                  : surface === "light"
+                    ? "h-2 w-2 bg-neutral-300 hover:bg-neutral-400"
+                    : "h-2 w-2 bg-white/35 hover:bg-white/55"
               }`}
             />
           ))}

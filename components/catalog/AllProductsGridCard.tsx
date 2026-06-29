@@ -29,7 +29,7 @@ export default function AllProductsGridCard({
   };
 
   return (
-    <div className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white">
+    <div className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm">
       <Link href={routes.product(product.id)} className="block p-1.5 pb-1">
         <div className="aspect-square w-full overflow-hidden rounded-md border border-neutral-200 bg-neutral-50">
           <ProductImage

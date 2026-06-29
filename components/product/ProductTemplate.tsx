@@ -136,15 +136,15 @@ export default function ProductTemplate({
   }, [catalogMeta]);
 
   return (
-    <div className="min-h-screen bg-white pb-24 md:pb-0">
+    <div className="storefront-page min-h-screen overflow-x-clip bg-[var(--background)] pb-24 md:pb-0">
       <ProductBreadcrumbs
         categoryName={categoryName}
         categorySlug={categorySlug}
         productName={product.name}
       />
 
-      <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 items-start gap-0 md:grid-cols-[1.15fr_1fr]">
-        <div className="min-w-0 border-b border-neutral-200 bg-white p-4 sm:p-6 md:border-b-0 md:border-r">
+      <div className="mx-auto grid w-full min-w-0 max-w-[1200px] grid-cols-1 items-start gap-0 overflow-x-clip md:grid-cols-[1.15fr_1fr]">
+        <div className="min-w-0 border-b border-neutral-300 bg-white p-4 shadow-sm sm:p-6 md:border-b-0 md:border-r">
           <ImageCarousel
             images={galleryImages}
             alt={product.name}
@@ -153,7 +153,7 @@ export default function ProductTemplate({
           />
         </div>
 
-        <div className="min-w-0 bg-white p-5 text-neutral-900 sm:p-7 lg:p-8">
+        <div className="min-w-0 bg-white p-4 text-neutral-900 shadow-sm sm:p-7 lg:p-8">
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-neutral-400">
             {categoryLabel}
             {platformLabel ? ` · ${platformLabel}` : ""}
@@ -247,7 +247,7 @@ export default function ProductTemplate({
             eligible orders.
           </p>
 
-          <div className="mt-5 rounded-sm border border-neutral-200 bg-neutral-50 px-4 py-3">
+          <div className="mt-5 rounded-sm border border-neutral-300 bg-neutral-50 px-4 py-3 shadow-sm">
             <MetaRow
               label="Stock Status"
               value={inStock ? "In Stock" : "Out of Stock"}

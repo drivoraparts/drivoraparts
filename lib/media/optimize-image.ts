@@ -20,13 +20,25 @@ function shouldOptimize(path: string): boolean {
   return true;
 }
 
-/** Cloudflare Image Resizing in production; original asset locally and as fallback. */
+/** Encode spaces and special chars so mobile Safari + Cloudflare image URLs resolve reliably. */
+export function encodeAssetPath(path: string): string {
+  if (!path.startsWith("/")) return path;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+
+  return path
+    .split("/")
+    .map((segment) => (segment ? encodeURIComponent(segment) : ""))
+    .join("/");
+}
+
+/** Cloudflare Image Resizing in production; encoded original asset locally and as fallback. */
 export function optimizeImageUrl(
   src: string,
   profile: ImageProfile = "card"
 ): string {
-  const path = src.startsWith("/") ? src : `/${src}`;
-  if (!shouldOptimize(path)) return src;
+  const rawPath = src.startsWith("/") ? src : `/${src}`;
+  const path = encodeAssetPath(rawPath);
+  if (!shouldOptimize(rawPath)) return src;
 
   const enabled = process.env.NEXT_PUBLIC_CF_IMAGE_OPTIMIZATION !== "false";
   if (process.env.NODE_ENV !== "production" || !enabled) {
@@ -34,5 +46,5 @@ export function optimizeImageUrl(
   }
 
   const { width, quality } = PROFILES[profile];
-  return `/cdn-cgi/image/width=${width},quality=${quality},format=auto,fit=cover${path}`;
+  return `/cdn-cgi/image/width=${width},quality=${quality},format=auto,fit=scale-down${path}`;
 }

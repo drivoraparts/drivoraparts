@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 /* =========================
-   BASE THEME VARIABLES
+   STOREFRONT THEME
 ========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f3f4f6;
+  --surface: #ffffff;
+  --surface-muted: #f9fafb;
+  --chrome: #e5e7eb;
+  --foreground: #111827;
+  --muted: #6b7280;
+  --border: #d1d5db;
   color-scheme: light;
 }
 
-/* Tailwind theme mapping */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -17,7 +21,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Base body — enforced dark theme (no white fallback, no iOS Safari flash) */
 html {
   width: 100%;
   max-width: 100%;
@@ -29,8 +32,8 @@ html {
 }
 
 body {
-  background: #ffffff !important;
-  color: #171717;
+  background: var(--background) !important;
+  color: var(--foreground);
   min-height: 100vh;
   min-height: 100dvh;
   width: 100%;
@@ -45,7 +48,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Prevent layout blowout from media and embeds on phones */
 img,
 video,
 svg,
@@ -54,17 +56,23 @@ iframe {
   max-width: 100%;
 }
 
-/* Storefront shell — avoid 100vw (includes scrollbar / mobile chrome and causes horizontal drift) */
 .site-shell,
 .site-shell > main {
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
-/* iOS Safari auto-zooms inputs below 16px — keep forms stable at 100% scale */
+.storefront-page {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
 @media (max-width: 768px) {
   input[type="text"],
   input[type="email"],
@@ -79,7 +87,6 @@ iframe {
   }
 }
 
-/* Hover scale effects are for pointer devices only — avoids sticky "zoom" feel on touch */
 @media (hover: none) and (pointer: coarse) {
   .animate-slowZoom {
     animation: none;
@@ -101,7 +108,6 @@ iframe {
   }
 }
 
-/* Third-party chat widgets must not widen the document on phones */
 @media (max-width: 768px) {
   iframe[src*="tawk.to"],
   #tawk-bubble-container,
@@ -111,9 +117,6 @@ iframe {
   }
 }
 
-/* =========================
-   HERO CINEMATIC ZOOM
-========================= */
 @keyframes slowZoom {
   0% {
     transform: scale(1.05);
@@ -127,9 +130,6 @@ iframe {
   animation: slowZoom 12s ease-in-out infinite alternate;
 }
 
-/* =========================
-   SECTION FADE IN
-========================= */
 @keyframes fadeIn {
   from {
     opacity: 0;

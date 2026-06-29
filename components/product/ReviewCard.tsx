@@ -62,9 +62,9 @@ export default function ReviewCard({ review }: ReviewCardProps) {
       <style jsx>{`
         .review-card {
           padding: 14px;
-          border-radius: 10px;
-          background: rgba(255, 255, 255, 0.04);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 6px;
+          background: #ffffff;
+          border: 1px solid #d1d5db;
         }
 
         .review-card-header {
@@ -78,8 +78,8 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           height: 44px;
           border-radius: 999px;
           object-fit: cover;
-          border: 1px solid rgba(255, 255, 255, 0.12);
-          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid #d1d5db;
+          background: #f3f4f6;
           flex-shrink: 0;
           pointer-events: none;
           user-select: none;
@@ -91,7 +91,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           justify-content: center;
           font-size: 14px;
           font-weight: 700;
-          color: rgba(255, 255, 255, 0.82);
+          color: #374151;
         }
 
         .review-card-meta {
@@ -102,7 +102,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           margin: 0;
           font-size: 14px;
           font-weight: 700;
-          color: #fff;
+          color: #111827;
         }
 
         .review-card-meta :global(.star-rating) {
@@ -118,22 +118,22 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           font-weight: 700;
           letter-spacing: 0.04em;
           color: ${VERIFIED_BADGE_GREEN};
-          background: rgba(34, 197, 94, 0.1);
-          border: 1px solid rgba(34, 197, 94, 0.25);
+          background: rgba(34, 197, 94, 0.12);
+          border: 1px solid rgba(34, 197, 94, 0.28);
         }
 
         .review-card-date {
           display: block;
           margin-top: 6px;
           font-size: 11px;
-          color: rgba(255, 255, 255, 0.45);
+          color: #6b7280;
         }
 
         .review-card-content {
           margin: 12px 0 0;
           font-size: 14px;
           line-height: 1.6;
-          color: rgba(255, 255, 255, 0.78);
+          color: #374151;
         }
       `}</style>
     </article>

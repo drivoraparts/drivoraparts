@@ -143,24 +143,24 @@ export default function ReviewWriteForm({
         .review-write {
           margin-bottom: 14px;
           padding-bottom: 14px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          border-bottom: 1px solid #d1d5db;
         }
 
         .review-write-toggle,
         .review-write-submit {
           padding: 10px 14px;
-          border-radius: 8px;
-          border: 1px solid rgba(230, 0, 0, 0.45);
-          background: rgba(230, 0, 0, 0.12);
-          color: #fff;
+          border-radius: 6px;
+          border: 2px solid #dc2626;
+          background: #ffffff;
+          color: #111827;
           font-size: 14px;
-          font-weight: 600;
+          font-weight: 700;
           cursor: pointer;
         }
 
         .review-write-toggle:hover,
         .review-write-submit:hover {
-          background: rgba(230, 0, 0, 0.2);
+          background: #fef2f2;
         }
 
         .review-write-panel {
@@ -173,7 +173,7 @@ export default function ReviewWriteForm({
           margin: 0;
           font-size: 13px;
           font-weight: 600;
-          color: rgba(255, 255, 255, 0.82);
+          color: #374151;
         }
 
         .review-write-stars {
@@ -184,27 +184,27 @@ export default function ReviewWriteForm({
         .review-star-btn {
           width: 34px;
           height: 34px;
-          border-radius: 8px;
-          border: 1px solid rgba(255, 255, 255, 0.14);
-          background: rgba(255, 255, 255, 0.04);
-          color: rgba(255, 255, 255, 0.25);
+          border-radius: 6px;
+          border: 1px solid #d1d5db;
+          background: #ffffff;
+          color: #d1d5db;
           font-size: 18px;
           cursor: pointer;
         }
 
         .review-star-btn.active {
-          color: #f5c542;
-          border-color: rgba(245, 197, 66, 0.45);
-          background: rgba(245, 197, 66, 0.08);
+          color: #f59e0b;
+          border-color: #fbbf24;
+          background: #fffbeb;
         }
 
         .review-write-input {
           width: 100%;
           padding: 10px 12px;
-          border-radius: 8px;
-          border: 1px solid rgba(255, 255, 255, 0.14);
-          background: rgba(255, 255, 255, 0.04);
-          color: #fff;
+          border-radius: 6px;
+          border: 1px solid #d1d5db;
+          background: #ffffff;
+          color: #111827;
           font-size: 14px;
           line-height: 1.5;
           resize: vertical;
@@ -218,10 +218,10 @@ export default function ReviewWriteForm({
 
         .review-write-cancel {
           padding: 10px 14px;
-          border-radius: 8px;
-          border: 1px solid rgba(255, 255, 255, 0.14);
-          background: transparent;
-          color: rgba(255, 255, 255, 0.75);
+          border-radius: 6px;
+          border: 1px solid #d1d5db;
+          background: #f9fafb;
+          color: #374151;
           font-size: 14px;
           cursor: pointer;
         }
@@ -229,13 +229,13 @@ export default function ReviewWriteForm({
         .review-write-message {
           margin: 10px 0 0;
           font-size: 13px;
-          color: rgba(255, 255, 255, 0.72);
+          color: #374151;
         }
 
         .review-write-hint {
           margin: 8px 0 0;
           font-size: 12px;
-          color: rgba(255, 255, 255, 0.48);
+          color: #6b7280;
         }
       `}</style>
     </div>

@@ -38,10 +38,10 @@ export default function GlobalHeader({
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-[9999] box-border w-full max-w-full overflow-x-hidden transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[9999] box-border w-full max-w-full overflow-x-clip border-b transition-all duration-300 ${
         scrolled
-          ? "border-b border-neutral-200 bg-white/95 py-3 shadow-sm backdrop-blur-xl"
-          : "border-b border-transparent bg-white py-6"
+          ? "border-neutral-300 bg-[#e5e7eb]/95 py-2.5 shadow-md backdrop-blur-xl"
+          : "border-neutral-300 bg-[#e5e7eb] py-4 shadow-sm"
       }`}
     >
       <div className="mx-auto flex w-full min-w-0 max-w-full items-center justify-between gap-2 px-4 text-neutral-900 sm:px-6">

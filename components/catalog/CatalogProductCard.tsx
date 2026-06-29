@@ -45,7 +45,7 @@ export default function CatalogProductCard({
   const productHref = routes.product(product.id);
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:border-red-500 hover:shadow-md">
+    <div className="group relative overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-sm transition-all duration-300 hover:border-red-500 hover:shadow-md">
       <div className="pointer-events-none absolute inset-0 bg-red-500/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative p-4">

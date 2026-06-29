@@ -164,7 +164,7 @@ function CollapsibleSection({
     <section
       className={
         isPro
-          ? "rounded-sm border border-neutral-200 bg-white px-4 py-3"
+          ? "rounded-sm border border-neutral-300 bg-neutral-50 px-4 py-3 shadow-sm"
           : undefined
       }
       style={isPro ? undefined : { ...glassCard, padding: "14px" }}

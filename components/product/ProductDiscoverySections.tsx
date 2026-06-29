@@ -24,12 +24,12 @@ function ProductScrollRow({
   if (products.length === 0) return null;
 
   return (
-    <section className="border-t border-neutral-200 bg-white px-4 py-8 sm:px-6">
-      <div className="mx-auto max-w-[1200px]">
-        <h2 className="mb-4 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500">
+    <section className="border-t border-neutral-300 bg-[var(--background)] px-4 py-8 sm:px-6">
+      <div className="mx-auto max-w-[1200px] min-w-0">
+        <h2 className="mb-4 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-600">
           {title}
         </h2>
-        <div className="-mx-1 flex gap-3 overflow-x-auto pb-1 [scrollbar-width:thin]">
+        <div className="flex max-w-full gap-3 overflow-x-auto overscroll-x-contain pb-1 [scrollbar-width:thin]">
           {products.map((product) => (
             <div key={product.id} className="w-[148px] shrink-0 sm:w-[168px]">
               <AllProductsGridCard product={product} />

@@ -349,7 +349,7 @@ export const aftermarketProducts: Product[] = [
     location: "USA Warehouse",
     fitment: "Ford Everest Tremor",
     createdAt: 1741478400000,
-    ...media("Bilstein Suspension", [
+    ...media("bilstein-suspension", [
       "IMG_4137.jpeg",
       "IMG_4138.jpeg",
       "IMG_4139.jpeg",

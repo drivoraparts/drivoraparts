@@ -9,6 +9,14 @@ export const glassCard: React.CSSProperties = {
   boxShadow: "0 4px 24px rgba(0,0,0,0.25)",
 };
 
+/** Light storefront panel — reviews, collapsible sections, etc. */
+export const proSurfaceCard: React.CSSProperties = {
+  background: "#f9fafb",
+  border: "1px solid #d1d5db",
+  borderRadius: "6px",
+  boxShadow: "0 1px 2px rgba(15, 23, 42, 0.06)",
+};
+
 export const productPageGrid: React.CSSProperties = {
   maxWidth: "1200px",
   margin: "0 auto",

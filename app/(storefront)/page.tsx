@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-white text-neutral-900">
+    <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-[var(--background)] text-neutral-900">
       <section className="relative flex h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden">
         <div
           id="parallaxHero"

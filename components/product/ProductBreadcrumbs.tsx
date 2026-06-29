@@ -15,7 +15,7 @@ export default function ProductBreadcrumbs({
   return (
     <nav
       aria-label="Breadcrumb"
-      className="border-b border-neutral-200 bg-white px-4 py-3 sm:px-6"
+      className="border-b border-neutral-300 bg-[#e5e7eb] px-4 py-3 sm:px-6"
     >
       <ol className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-1.5 text-[11px] font-medium uppercase tracking-[0.08em] text-neutral-500">
         <li>

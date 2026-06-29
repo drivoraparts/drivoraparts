@@ -61,7 +61,7 @@ export default function MobileStickyAddToCart({
   if (!visible || !inStock) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[9998] border-t border-neutral-200 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.08)] backdrop-blur-md md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-[9998] border-t border-neutral-300 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] backdrop-blur-md md:hidden">
       <div className="mx-auto flex max-w-[1200px] items-center gap-3">
         <div className="min-w-0 flex-1">
           <ProductPrice
