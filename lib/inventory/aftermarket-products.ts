@@ -15,6 +15,25 @@ function media(slug: string, files: string[]) {
   return { thumbnail: paths[0], images: paths };
 }
 
+function aftermarketDescription(
+  name: string,
+  details: string,
+  fitment?: string
+): string {
+  const fitmentLine = fitment
+    ? `\nFitment: ${fitment}`
+    : "\nFitment: Confirm vehicle application at checkout.";
+
+  return `${name}
+
+${details}${fitmentLine}
+
+Condition notes: Inspected and photographed as the actual unit available.
+
+Shipping
+Worldwide shipping available — contact for a freight quote when needed.`;
+}
+
 function canopyDescription(
   name: string,
   details: string,
@@ -316,6 +335,30 @@ export const aftermarketProducts: Product[] = [
       "ARB Classic Plus Canopy for 2016 Toyota Hilux Dual Cab",
       "ARB Classic Plus canopy engineered for the 2016 Toyota Hilux Dual Cab. Features integrated roof rails, rear gate with secure latching, side glass, and ARB's reinforced composite construction for daily work use and overland storage.",
       "2016 Toyota Hilux Dual Cab"
+    ),
+  },
+  {
+    id: 185,
+    name: "Bilstein Suspension",
+    category: "aftermarket",
+    brand: "bilstein",
+    price: 1266,
+    stock: true,
+    stockQty: 1,
+    condition: "Used like new",
+    location: "USA Warehouse",
+    fitment: "Ford Everest Tremor",
+    createdAt: 1741478400000,
+    ...media("Bilstein Suspension", [
+      "IMG_4137.jpeg",
+      "IMG_4138.jpeg",
+      "IMG_4139.jpeg",
+      "IMG_4140.jpeg",
+    ]),
+    description: aftermarketDescription(
+      "Bilstein Suspension",
+      "Near-new Bilstein suspension take-off from a Ford Everest Tremor — only 6 km traveled. 26.5 specification as listed. Complete used set in excellent condition for Tremor/Everest applications.",
+      "Ford Everest Tremor"
     ),
   },
 ];
