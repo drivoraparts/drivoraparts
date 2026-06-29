@@ -270,6 +270,25 @@ export async function updateOrderStatus(
 
   assertOrderTransition(existing.status, status);
 
+  return persistOrderStatus(id, status);
+}
+
+/** Admin override — skips automated transition rules. */
+export async function forceUpdateOrderStatus(
+  id: string,
+  status: OrderStatus
+): Promise<OrderRecord | null> {
+  const existing = await getOrderById(id);
+  if (!existing) return null;
+  if (existing.status === status) return existing;
+
+  return persistOrderStatus(id, status);
+}
+
+async function persistOrderStatus(
+  id: string,
+  status: OrderStatus
+): Promise<OrderRecord | null> {
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase
     .from("orders")

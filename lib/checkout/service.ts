@@ -12,6 +12,8 @@ import {
 
   finalizeOrderPaid,
 
+  forceUpdateOrderStatus,
+
   getOrderById,
 
   transitionOrderStatus,
@@ -374,6 +376,28 @@ export async function markOrderPaid(orderId: string): Promise<void> {
 
 
 
+  await applyOrderPaidSideEffects(orderId);
+
+}
+
+
+
+export async function adminMarkOrderPaid(orderId: string): Promise<void> {
+  const order = await getOrderById(orderId);
+  if (!order) {
+    throw new Error("Order not found");
+  }
+
+  if (order.status !== "paid") {
+    await forceUpdateOrderStatus(orderId, "paid");
+  }
+
+  await applyOrderPaidSideEffects(orderId);
+}
+
+
+
+async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
   const payment = await findPaymentByOrderId(orderId);
 
   if (payment && payment.status !== "paid") {
@@ -430,7 +454,6 @@ export async function markOrderPaid(orderId: string): Promise<void> {
   await logActivity("info", "payment.verified_success", { orderId });
 
   logInfo("payment_paid", { orderId });
-
 }
 
 

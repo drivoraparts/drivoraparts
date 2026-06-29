@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { getOrderById, updateOrderStatus } from "@/lib/db/orders";
+import { forceUpdateOrderStatus, getOrderById } from "@/lib/db/orders";
+import { adminMarkOrderPaid } from "@/lib/checkout/service";
 import { requireAdminApi } from "@/lib/auth/require-admin";
 import { logAdminAudit } from "@/lib/monitoring/audit";
 import { logActivity } from "@/lib/monitoring/activity";
@@ -38,8 +39,18 @@ export async function PATCH(req: Request) {
     return NextResponse.json({ error: "Order not found" }, { status: 404 });
   }
 
+  if (order.status === status) {
+    return NextResponse.json(order);
+  }
+
   try {
-    const updated = await updateOrderStatus(orderId, status);
+    if (status === "paid") {
+      await adminMarkOrderPaid(orderId);
+    } else {
+      await forceUpdateOrderStatus(orderId, status);
+    }
+
+    const updated = (await getOrderById(orderId)) ?? order;
 
     if (order.customer) {
       if (status === "shipped") {
@@ -63,6 +74,7 @@ export async function PATCH(req: Request) {
       status,
       ip,
       from: order.status,
+      adminOverride: true,
     });
     await logActivity("info", "order.status_updated", {
       orderId,
@@ -80,12 +92,11 @@ export async function PATCH(req: Request) {
       to: status,
       admin: auth.session?.email,
       ip,
-      message: error instanceof Error ? error.message : "invalid transition",
+      message: error instanceof Error ? error.message : "update failed",
     });
     return NextResponse.json(
       {
-        error:
-          error instanceof Error ? error.message : "Invalid status transition",
+        error: error instanceof Error ? error.message : "Could not update order status",
       },
       { status: 400 }
     );
