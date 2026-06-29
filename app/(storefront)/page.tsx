@@ -1,9 +1,10 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect } from "react";
-import ProductImage from "@/components/media/ProductImage";
+import { preload } from "react-dom";
+import HomeParallaxHero from "@/components/home/HomeParallaxHero";
+import OptimizedImage from "@/components/media/OptimizedImage";
 import { routes } from "@/lib/inventory";
+import { encodeAssetPath, optimizeImageUrl } from "@/lib/media/optimize-image";
+import { buildPageMetadata } from "@/lib/seo";
 
 const HERO_IMAGE = "/home/pexels-juan-montes-92812630-11456554.jpg";
 
@@ -11,7 +12,7 @@ const sections = [
   {
     title: "Precision Engine Craft",
     text: "Every component engineered for performance, endurance, and speed.",
-    image: "/home/pexels-artempodrez-8986047.jpg",
+    image: "/home/pexels-sejio402-29181492.jpg",
   },
   {
     title: "Suspension Control",
@@ -28,42 +29,23 @@ const sections = [
     text: "Smart systems powering modern automotive performance.",
     image: "/home/pexels-stephanlouis-7012890.jpg",
   },
-];
+] as const;
+
+export const metadata = buildPageMetadata({
+  title: "Automotive Performance Marketplace",
+  description:
+    "Precision-engineered automotive parts for engines, turbo systems, suspension, brakes, and electronics. Shop 1,400+ performance listings at DrivoraParts.",
+  path: "/",
+});
 
 export default function Home() {
-  useEffect(() => {
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const isMobile = window.matchMedia("(max-width: 767px)").matches;
-    if (reduceMotion || isMobile) return;
-
-    const handleScroll = () => {
-      const hero = document.getElementById("parallaxHero");
-      if (!hero) return;
-
-      const offset = window.scrollY;
-      hero.style.transform = `translate3d(0, ${offset * 0.15}px, 0)`;
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const heroSrc = optimizeImageUrl(encodeAssetPath(HERO_IMAGE), "hero");
+  preload(heroSrc, { as: "image", fetchPriority: "high" });
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-[var(--background)] text-neutral-900">
       <section className="relative flex h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden">
-        <div
-          id="parallaxHero"
-          className="absolute inset-0 z-0 overflow-hidden will-change-transform"
-        >
-          <ProductImage
-            src={HERO_IMAGE}
-            alt=""
-            profile="hero"
-            loading="eager"
-            fetchPriority="high"
-            className="h-full w-full object-cover"
-          />
-        </div>
+        <HomeParallaxHero heroSrc={heroSrc} heroAlt="Performance automotive hero" />
 
         <div className="pointer-events-none absolute inset-0 z-10 bg-neutral-900/50" />
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/30 via-neutral-900/45 to-neutral-900/70" />
@@ -102,12 +84,12 @@ export default function Home() {
             i % 2 === 1 ? "md:flex-row-reverse" : ""
           }`}
         >
-          <div className="w-full md:w-1/2">
-            <ProductImage
+          <div className="aspect-[4/3] w-full md:w-1/2">
+            <OptimizedImage
               src={item.image}
               alt={item.title}
-              profile="detail"
-              className="w-full rounded-xl border border-neutral-200 object-cover shadow-lg"
+              profile="section"
+              className="h-full w-full rounded-xl border border-neutral-200 object-cover shadow-lg"
             />
           </div>
 

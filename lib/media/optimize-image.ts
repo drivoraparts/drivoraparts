@@ -1,15 +1,17 @@
-export type ImageProfile = "grid" | "card" | "detail" | "hero";
+export type ImageProfile = "grid" | "card" | "section" | "detail" | "hero";
 
 const PROFILES: Record<ImageProfile, { width: number; quality: number }> = {
   grid: { width: 360, quality: 78 },
   card: { width: 520, quality: 80 },
+  section: { width: 720, quality: 78 },
   detail: { width: 960, quality: 82 },
-  hero: { width: 1600, quality: 85 },
+  hero: { width: 1280, quality: 82 },
 };
 
 export const IMAGE_SIZES: Record<ImageProfile, string> = {
   grid: "(max-width: 640px) 33vw, (max-width: 1024px) 25vw, 220px",
   card: "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 320px",
+  section: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px",
   detail: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 520px",
   hero: "100vw",
 };
