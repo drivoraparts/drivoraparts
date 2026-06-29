@@ -11,7 +11,7 @@ export default async function AdminAnalyticsPage() {
         <StatCard label="Product Views" value={String(summary.productViews)} />
         <StatCard label="Cart Adds" value={String(summary.cartAdds)} />
         <StatCard label="Checkouts Started" value={String(summary.checkoutCount)} />
-        <StatCard label="Orders Completed" value={String(summary.totalOrders)} />
+        <StatCard label="Placed Orders" value={String(summary.totalOrders)} hint="Completed checkouts only" />
       </div>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">

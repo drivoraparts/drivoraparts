@@ -3,7 +3,7 @@ import { getAnalyticsSummary, getDashboardChartData } from "@/lib/analytics";
 import { detectViralProducts } from "@/lib/ai/viral-detector";
 import { getInsightsReport } from "@/lib/insights/engine";
 import { getPaymentStats } from "@/lib/db/payments";
-import { listOrders, type OrderWithDetails } from "@/lib/db/orders";
+import { listPlacedOrders, type OrderWithDetails } from "@/lib/db/orders";
 import { safeQuery } from "@/lib/db/safe-query";
 import {
   EMPTY_ANALYTICS_SUMMARY,
@@ -32,7 +32,7 @@ export async function loadDashboardData(): Promise<DashboardData> {
     safeQuery(() => getInsightsReport(), EMPTY_INSIGHTS_REPORT, "dashboard-insights"),
     safeQuery(() => getPaymentStats(), EMPTY_PAYMENT_STATS, "dashboard-payments"),
     safeQuery(() => detectViralProducts(5), EMPTY_VIRAL_REPORT, "dashboard-viral"),
-    safeQuery(() => listOrders(8), [], "dashboard-recent-orders"),
+    safeQuery(() => listPlacedOrders(8), [], "dashboard-recent-orders"),
   ]);
 
   return {

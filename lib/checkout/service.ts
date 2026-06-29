@@ -2,7 +2,7 @@ import { insertAnalyticsEvent } from "@/lib/db/analytics";
 
 import { createCustomer } from "@/lib/db/customers";
 
-import { hasInventory, reduceInventory } from "@/lib/db/inventory";
+import { hasInventory } from "@/lib/db/inventory";
 
 import {
 
@@ -37,6 +37,7 @@ import { createCheckoutPayment } from "@/lib/payments";
 import type { PaymentProviderId } from "@/lib/payments/types";
 
 import { emailCustomerOrderInvoice } from "@/lib/checkout/customer-invoice";
+import { commitOrderInventory, restoreOrderInventory } from "@/lib/checkout/inventory-order";
 import { lockOrderItemsFromCatalog } from "@/lib/checkout/validate-items";
 import { processCheckoutWithoutSupabase } from "@/lib/checkout/offline";
 import type { CheckoutCustomerInput, CheckoutResult } from "@/lib/checkout/types";
@@ -214,9 +215,9 @@ export async function processCheckout(input: {
 
   for (const item of lockedItems) {
 
-    const reduced = await reduceInventory(item.productId, item.quantity);
+    const available = await hasInventory(item.productId, item.quantity);
 
-    if (!reduced) {
+    if (!available) {
 
       await transitionOrderStatus(order.id, "cancelled");
 
@@ -398,6 +399,8 @@ export async function adminMarkOrderPaid(orderId: string): Promise<void> {
 
 
 async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
+  await commitOrderInventory(orderId);
+
   const payment = await findPaymentByOrderId(orderId);
 
   if (payment && payment.status !== "paid") {
@@ -472,6 +475,8 @@ export async function markOrderFailed(orderId: string): Promise<void> {
     return;
 
   }
+
+  await restoreOrderInventory(orderId);
 
 
 

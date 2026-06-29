@@ -2,7 +2,7 @@ import AdminShell from "@/components/admin/AdminShell";
 
 import OrderStatusControl from "@/components/admin/OrderStatusControl";
 
-import { listOrders } from "@/lib/db/orders";
+import { listPlacedOrders } from "@/lib/db/orders";
 
 import { findPaymentsByOrderIds } from "@/lib/db/payments";
 
@@ -32,7 +32,7 @@ function formatPaymentMethod(provider: string, metadata: Record<string, unknown>
 
 export default async function AdminOrdersPage() {
 
-  const orders = await listOrders();
+  const orders = await listPlacedOrders();
 
   const payments = await findPaymentsByOrderIds(orders.map((order) => order.id));
 
@@ -44,7 +44,7 @@ export default async function AdminOrdersPage() {
 
       {orders.length === 0 ? (
 
-        <p className="text-zinc-600">No orders recorded yet.</p>
+        <p className="text-zinc-600">No placed orders yet. Abandoned or expired checkouts are hidden.</p>
 
       ) : (
 

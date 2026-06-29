@@ -1,3 +1,4 @@
+import { EMPTY_ORDER_STATS } from "@/lib/admin/fallbacks";
 import { listAnalyticsEvents } from "@/lib/db/analytics";
 import { getCustomerStats } from "@/lib/db/customers";
 import { getInventoryAlerts, getInventoryStats } from "@/lib/db/inventory";
@@ -96,7 +97,7 @@ export async function getAiInsightsReport(): Promise<AiInsightsReport> {
       safeQuery(() => listAnalyticsEvents(4000), [], "ai-insights-events"),
       safeQuery(
         () => getOrderStats(),
-        { totalRevenue: 0, pendingRevenue: 0, paidOrderCount: 0, totalOrders: 0, pendingOrders: 0 },
+        EMPTY_ORDER_STATS,
         "ai-insights-orders"
       ),
       safeQuery(

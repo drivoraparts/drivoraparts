@@ -28,6 +28,8 @@ export default async function AdminDashboardPage() {
     pendingOrders: 0,
     pendingRevenue: 0,
     paidOrderCount: 0,
+    placedOrders: 0,
+    abandonedCheckouts: 0,
   };
   const ai = insights?.ai ?? {
     predictedRevenueNext7Days: 0,
@@ -40,6 +42,8 @@ export default async function AdminDashboardPage() {
 
   const paidOrders = orderStats.paidOrderCount ?? 0;
   const pendingOrders = orderStats.pendingOrders ?? 0;
+  const placedOrders = orderStats.placedOrders ?? summary?.totalOrders ?? 0;
+  const abandonedCheckouts = orderStats.abandonedCheckouts ?? 0;
   const paidRevenue = summary?.totalRevenue ?? 0;
   const pendingRevenue = orderStats.pendingRevenue ?? 0;
   const openCryptoInvoices = paymentStats?.nowpaymentsPending ?? 0;
@@ -74,10 +78,11 @@ export default async function AdminDashboardPage() {
                 <>
                   {pendingOrders > 0 ? (
                     <>
-                      {pendingOrders} checkout{pendingOrders === 1 ? "" : "s"} were created but{" "}
-                      <strong>none have completed payment</strong>. The ${pendingRevenue.toFixed(2)}{" "}
-                      pending total is <strong>not revenue</strong> — it is unpaid carts, including
-                      tests and abandoned sessions.
+                      {placedOrders} placed order{placedOrders === 1 ? "" : "s"} with{" "}
+                      {pendingOrders} still awaiting payment within the last 6 hours.
+                      {abandonedCheckouts > 0
+                        ? ` ${abandonedCheckouts} expired checkout${abandonedCheckouts === 1 ? "" : "s"} are hidden from Orders.`
+                        : ""}
                     </>
                   ) : (
                     "No orders in the database yet. Sales metrics stay at zero until a customer pays."
@@ -112,9 +117,9 @@ export default async function AdminDashboardPage() {
       <section className="mb-8 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
         <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-xl font-bold">Recent orders</h2>
+            <h2 className="text-xl font-bold">Recent placed orders</h2>
             <p className="text-sm text-zinc-600">
-              Newest checkouts first — fulfill only orders marked paid.
+              Completed checkouts only — expired or abandoned attempts are excluded.
             </p>
           </div>
           <Link
@@ -126,7 +131,7 @@ export default async function AdminDashboardPage() {
         </div>
 
         {recentOrders.length === 0 ? (
-          <p className="text-sm text-zinc-600">No orders recorded yet.</p>
+          <p className="text-sm text-zinc-600">No placed orders in the last 6 hours.</p>
         ) : (
           <ul className="divide-y divide-zinc-200">
             {recentOrders.map((order) => (
@@ -174,12 +179,17 @@ export default async function AdminDashboardPage() {
           hint={`${paidOrders} paid order${paidOrders === 1 ? "" : "s"} only`}
         />
         <StatCard
-          label="Unpaid checkouts"
+          label="Placed orders"
+          value={String(placedOrders)}
+          hint={`${paidOrders} paid · ${pendingOrders} open checkout${pendingOrders === 1 ? "" : "s"}`}
+        />
+        <StatCard
+          label="Open checkouts"
           value={String(pendingOrders)}
           hint={
             pendingOrders > 0
-              ? `$${pendingRevenue.toFixed(2)} if all paid — not booked revenue`
-              : "No open unpaid orders"
+              ? `$${pendingRevenue.toFixed(2)} awaiting payment (6h window)`
+              : "No active unpaid checkouts"
           }
         />
         <StatCard

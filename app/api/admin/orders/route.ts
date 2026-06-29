@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { forceUpdateOrderStatus, getOrderById } from "@/lib/db/orders";
 import { adminMarkOrderPaid } from "@/lib/checkout/service";
+import { restoreOrderInventory } from "@/lib/checkout/inventory-order";
 import { requireAdminApi } from "@/lib/auth/require-admin";
 import { logAdminAudit } from "@/lib/monitoring/audit";
 import { logActivity } from "@/lib/monitoring/activity";
@@ -48,6 +49,9 @@ export async function PATCH(req: Request) {
       await adminMarkOrderPaid(orderId);
     } else {
       await forceUpdateOrderStatus(orderId, status);
+      if (status === "cancelled" || status === "failed") {
+        await restoreOrderInventory(orderId);
+      }
     }
 
     const updated = (await getOrderById(orderId)) ?? order;

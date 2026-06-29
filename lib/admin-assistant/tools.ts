@@ -1,3 +1,4 @@
+import { EMPTY_ORDER_STATS } from "@/lib/admin/fallbacks";
 import { getAnalyticsSummary } from "@/lib/analytics";
 import { getInventoryAlerts, getInventoryStats } from "@/lib/db/inventory";
 import { getOrderStats, listOrders } from "@/lib/db/orders";
@@ -32,7 +33,7 @@ export async function getRevenue() {
     ),
     safeQuery(
       () => getOrderStats(),
-      { totalRevenue: 0, pendingRevenue: 0, paidOrderCount: 0, totalOrders: 0, pendingOrders: 0 },
+      EMPTY_ORDER_STATS,
       "assistant-order-stats"
     ),
     safeQuery(

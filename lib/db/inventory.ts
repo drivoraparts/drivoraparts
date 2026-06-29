@@ -127,6 +127,34 @@ export async function reduceInventory(
   return true;
 }
 
+export async function restoreInventory(
+  productId: number,
+  quantity: number
+): Promise<void> {
+  await syncMissingInventoryFromCatalog();
+  const supabase = getSupabaseAdmin();
+
+  const { data: current, error: readError } = await supabase
+    .from("inventory")
+    .select("*")
+    .eq("product_id", productId)
+    .maybeSingle();
+
+  if (readError) throw readError;
+
+  const available = current?.quantity ?? getCatalogStock(productId);
+
+  const { error: updateError } = await supabase
+    .from("inventory")
+    .update({
+      quantity: available + quantity,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("product_id", productId);
+
+  if (updateError) throw updateError;
+}
+
 export async function setInventory(
   productId: number,
   quantity: number,

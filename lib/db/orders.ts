@@ -3,6 +3,8 @@ import { calculateCartDiscounts } from "@/lib/inventory/discounts";
 import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { assertOrderTransition } from "@/lib/orders/state-machine";
+import { isPlacedOrder } from "@/lib/orders/placed";
+import { findPaymentsByOrderIds } from "@/lib/db/payments";
 import type { CustomerRecord } from "./customers";
 
 export type OrderStatus =
@@ -191,31 +193,50 @@ export async function listOrders(limit = 100): Promise<OrderWithDetails[]> {
     if (error) throw error;
     if (!orders?.length) return [];
 
-    const orderIds = orders.map((o) => o.id);
-    const customerIds = [...new Set(orders.map((o) => o.customer_id))];
-
-    const [{ data: items }, { data: customers }] = await Promise.all([
-      supabase.from("order_items").select("*").in("order_id", orderIds),
-      supabase.from("customers").select("*").in("id", customerIds),
-    ]);
-
-    const customerMap = new Map(
-      (customers ?? []).map((c) => [c.id, c as CustomerRecord])
-    );
-    const itemsByOrder = new Map<string, OrderItemRecord[]>();
-
-    for (const item of items ?? []) {
-      const list = itemsByOrder.get(item.order_id) ?? [];
-      list.push(item as OrderItemRecord);
-      itemsByOrder.set(item.order_id, list);
-    }
-
-    return orders.map((order) => ({
-      ...(order as OrderRecord),
-      customer: customerMap.get(order.customer_id) ?? null,
-      items: itemsByOrder.get(order.id) ?? [],
-    }));
+    return hydrateOrdersWithDetails(orders as OrderRecord[]);
   });
+}
+
+/** Admin-facing list: completed checkouts only (excludes abandoned/failed attempts). */
+export async function listPlacedOrders(limit = 100): Promise<OrderWithDetails[]> {
+  return guardedSupabaseRead("listPlacedOrders", [], async () => {
+    const batchSize = Math.max(limit * 4, 100);
+    const orders = await listOrders(batchSize);
+    if (!orders.length) return [];
+
+    const payments = await findPaymentsByOrderIds(orders.map((order) => order.id));
+    return orders
+      .filter((order) => isPlacedOrder(order, payments.get(order.id)))
+      .slice(0, limit);
+  });
+}
+
+async function hydrateOrdersWithDetails(orders: OrderRecord[]): Promise<OrderWithDetails[]> {
+  const supabase = getSupabaseAdmin();
+  const orderIds = orders.map((o) => o.id);
+  const customerIds = [...new Set(orders.map((o) => o.customer_id))];
+
+  const [{ data: items }, { data: customers }] = await Promise.all([
+    supabase.from("order_items").select("*").in("order_id", orderIds),
+    supabase.from("customers").select("*").in("id", customerIds),
+  ]);
+
+  const customerMap = new Map(
+    (customers ?? []).map((c) => [c.id, c as CustomerRecord])
+  );
+  const itemsByOrder = new Map<string, OrderItemRecord[]>();
+
+  for (const item of items ?? []) {
+    const list = itemsByOrder.get(item.order_id) ?? [];
+    list.push(item as OrderItemRecord);
+    itemsByOrder.set(item.order_id, list);
+  }
+
+  return orders.map((order) => ({
+    ...(order as OrderRecord),
+    customer: customerMap.get(order.customer_id) ?? null,
+    items: itemsByOrder.get(order.id) ?? [],
+  }));
 }
 
 export async function listOrdersSince(
@@ -234,30 +255,7 @@ export async function listOrdersSince(
     if (error) throw error;
     if (!orders?.length) return [];
 
-    const orderIds = orders.map((o) => o.id);
-    const customerIds = [...new Set(orders.map((o) => o.customer_id))];
-
-    const [{ data: items }, { data: customers }] = await Promise.all([
-      supabase.from("order_items").select("*").in("order_id", orderIds),
-      supabase.from("customers").select("*").in("id", customerIds),
-    ]);
-
-    const customerMap = new Map(
-      (customers ?? []).map((c) => [c.id, c as CustomerRecord])
-    );
-    const itemsByOrder = new Map<string, OrderItemRecord[]>();
-
-    for (const item of items ?? []) {
-      const list = itemsByOrder.get(item.order_id) ?? [];
-      list.push(item as OrderItemRecord);
-      itemsByOrder.set(item.order_id, list);
-    }
-
-    return orders.map((order) => ({
-      ...(order as OrderRecord),
-      customer: customerMap.get(order.customer_id) ?? null,
-      items: itemsByOrder.get(order.id) ?? [],
-    }));
+    return hydrateOrdersWithDetails(orders as OrderRecord[]);
   });
 }
 
@@ -384,21 +382,20 @@ export async function getOrderStats() {
       0
     );
 
-    const { count: totalOrders } = await supabase
-      .from("orders")
-      .select("*", { count: "exact", head: true });
+    const recentOrders = await listOrders(1000);
+    const payments = await findPaymentsByOrderIds(recentOrders.map((order) => order.id));
+    const placedOrders = recentOrders.filter((order) =>
+      isPlacedOrder(order, payments.get(order.id))
+    );
+    const openPending = placedOrders.filter((order) => order.status === "pending");
+    const abandonedCheckouts = recentOrders.filter((order) => {
+      if (order.status === "cancelled" || order.status === "failed") {
+        return false;
+      }
+      return !isPlacedOrder(order, payments.get(order.id));
+    });
 
-    const { count: pendingOrders } = await supabase
-      .from("orders")
-      .select("*", { count: "exact", head: true })
-      .eq("status", "pending");
-
-    const { data: pendingRows } = await supabase
-      .from("orders")
-      .select("total")
-      .eq("status", "pending");
-
-    const pendingRevenue = (pendingRows ?? []).reduce(
+    const pendingRevenue = openPending.reduce(
       (sum, order) => sum + Number(order.total),
       0
     );
@@ -407,8 +404,10 @@ export async function getOrderStats() {
       totalRevenue,
       pendingRevenue,
       paidOrderCount: paidOrders?.length ?? 0,
-      totalOrders: totalOrders ?? 0,
-      pendingOrders: pendingOrders ?? 0,
+      totalOrders: placedOrders.length,
+      placedOrders: placedOrders.length,
+      pendingOrders: openPending.length,
+      abandonedCheckouts: abandonedCheckouts.length,
     };
   });
 }

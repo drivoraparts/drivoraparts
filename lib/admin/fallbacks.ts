@@ -10,6 +10,8 @@ export const EMPTY_ORDER_STATS = {
   paidOrderCount: 0,
   totalOrders: 0,
   pendingOrders: 0,
+  placedOrders: 0,
+  abandonedCheckouts: 0,
 };
 
 export const EMPTY_PAYMENT_STATS = {

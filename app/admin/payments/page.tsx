@@ -1,12 +1,12 @@
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import { getNowPaymentsConfig } from "@/lib/nowpayments/config";
-import { listOrders } from "@/lib/db/orders";
+import { listPlacedOrders } from "@/lib/db/orders";
 import { listPayments } from "@/lib/db/payments";
 
 export const dynamic = "force-dynamic";
 export default async function AdminPaymentsPage() {
   const config = getNowPaymentsConfig();
-  const [payments, orders] = await Promise.all([listPayments(), listOrders(200)]);
+  const [payments, orders] = await Promise.all([listPayments(), listPlacedOrders(200)]);
 
   const pendingOrders = orders.filter((order) => order.status === "pending");
   const paidCount = payments.filter((item) => item.status === "paid").length;
