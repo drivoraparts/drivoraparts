@@ -405,12 +405,32 @@ function buildInvoiceAgreementPage(input: OrderDocumentInput): string {
     </table>`;
 }
 
+function renderShippingPolicyFooter(): string {
+  const siteUrl = getSiteUrl();
+  const policyUrl = `${siteUrl}/policies/shipping-policy`;
+
+  return `
+    <div style="margin-top:40px;padding:20px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:4px;">
+      <p style="margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#374151;font-family:Arial,Helvetica,sans-serif;">Shipping policy</p>
+      <p style="margin:0 0 12px;font-size:12px;line-height:1.7;color:#4b5563;font-family:Arial,Helvetica,sans-serif;">
+        Orders are processed within 1–5 business days after payment is confirmed. Estimated delivery is typically
+        5–15 business days depending on your region and carrier. Tracking information is sent when available.
+        International orders may be subject to customs duties and taxes, which are the responsibility of the recipient.
+      </p>
+      <p style="margin:0;font-size:12px;line-height:1.6;color:#4b5563;font-family:Arial,Helvetica,sans-serif;">
+        Questions about shipping? Reply to this email or review our
+        <a href="${policyUrl}" style="color:#dc2626;font-weight:600;text-decoration:none;">full shipping policy</a>.
+      </p>
+    </div>`;
+}
+
 function buildTwoPageOrderDocument(input: OrderDocumentInput): string {
   return `
     ${buildReceiptPage(input)}
     <div style="margin:48px 0 0;padding-top:48px;border-top:3px double #d1d5db;">
       ${buildInvoiceAgreementPage(input)}
-    </div>`;
+    </div>
+    ${renderShippingPolicyFooter()}`;
 }
 
 /** Sent immediately after checkout. Two-page receipt + invoice agreement. */
