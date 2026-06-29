@@ -162,9 +162,14 @@ Worldwide shipping available — freight quotes provided for oversized items.`;
 }
 
 function msrpFromProduct(product) {
-  const prices = product.variants.map((v) => parseFloat(v.price)).filter(Boolean);
-  const min = Math.min(...prices);
-  return Math.ceil(min / 10) * 10;
+  const prices = product.variants
+    .map((v) => parseFloat(v.price))
+    .filter((n) => Number.isFinite(n) && n > 0);
+  if (!prices.length) return 0;
+  const minCents = Math.min(...prices);
+  const dollars = minCents / 100;
+  if (dollars < 150) return Math.max(Math.round(dollars), 1);
+  return Math.ceil(dollars / 10) * 10;
 }
 
 async function fetchAllProducts() {

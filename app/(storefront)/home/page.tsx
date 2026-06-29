@@ -2,9 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { getCategories, routes, products, getProductThumbnail } from "@/lib/inventory";
-import ProductPrice from "@/components/currency/ProductPrice";
-import TranslatedText from "@/components/i18n/TranslatedText";
+import { getCategories, routes } from "@/lib/inventory";
 
 export default function HomePage() {
   const [loaded, setLoaded] = useState(false);
@@ -113,38 +111,26 @@ export default function HomePage() {
 
       {/* PRODUCTS PREVIEW */}
       <section className="px-6 py-12">
-        <h2 className="text-xl font-semibold mb-6">Hot Parts</h2>
+        <h2 className="text-xl font-semibold mb-6">Shop the Marketplace</h2>
 
-        <div className="grid grid-cols-2 gap-4">
-          {products.slice(0, 6).map((p, i) => (
-            <div
-              key={p.id}
-              className="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300"
-              style={{
-                animationDelay: `${i * 80}ms`,
-              }}
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+          {[
+            { href: routes.all, label: "All Products", detail: "1,400+ listings" },
+            { href: routes.category("engine"), label: "Engines", detail: "Swap-ready power" },
+            { href: routes.category("turbocharger"), label: "Turbo", detail: "Boost hardware" },
+            { href: routes.category("suspension"), label: "Suspension", detail: "Handling upgrades" },
+            { href: routes.category("brakes"), label: "Brakes", detail: "Stop with confidence" },
+            { href: routes.category("aftermarket"), label: "Aftermarket", detail: "Truck & utility" },
+          ].map((item, i) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="rounded-xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:scale-[1.02] hover:border-red-500/40 hover:bg-red-500/10"
+              style={{ animationDelay: `${i * 80}ms` }}
             >
-              <img
-                src={getProductThumbnail(p)}
-                alt={p.name}
-                loading="lazy"
-                decoding="async"
-                className="h-40 w-full object-cover bg-black/40"
-              />
-
-              <div className="p-3">
-                <p className="text-sm font-medium">
-                  <TranslatedText as="span">{p.name}</TranslatedText>
-                </p>
-                <div className="text-xs text-gray-400">
-                  <ProductPrice
-                    price={p.price}
-                    compareAtPrice={p.compareAtPrice}
-                    size="sm"
-                  />
-                </div>
-              </div>
-            </div>
+              <p className="text-sm font-semibold">{item.label}</p>
+              <p className="mt-1 text-xs text-gray-400">{item.detail}</p>
+            </Link>
           ))}
         </div>
       </section>

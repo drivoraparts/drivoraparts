@@ -1,42 +1,41 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
-  getAllProducts,
   getCategories,
   getBrands,
-  getBrandBySlug,
-  getCategory,
-  getProductThumbnail,
-  slugify,
 } from "@/lib/inventory";
 import AllProductsGridCard from "./AllProductsGridCard";
 import CatalogFilterSelect from "./CatalogFilterSelect";
 import {
   PRICE_FILTER_OPTIONS,
-  matchesPriceFilter,
   type PriceFilterValue,
 } from "@/lib/catalog/price-filters";
-import { engineTree } from "@/data/engine";
+import type { CatalogProductCardData } from "./CatalogProductCard";
+
+const PAGE_SIZE = 48;
 
 const categories = getCategories();
 const brands = getBrands();
 
-function getPlatformName(platformSlug: string): string {
-  for (const group of engineTree) {
-    const platform = group.platforms.find(
-      (p) => slugify(p.name) === platformSlug
-    );
-    if (platform) return platform.name;
-  }
-  return platformSlug;
-}
+type ApiResponse = {
+  products: CatalogProductCardData[];
+  total: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
+};
 
 export default function AllProductsFeed() {
   const [query, setQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
   const [brandFilter, setBrandFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
+  const [page, setPage] = useState(1);
+  const [products, setProducts] = useState<CatalogProductCardData[]>([]);
+  const [total, setTotal] = useState(0);
+  const [hasMore, setHasMore] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const filteredBrands = useMemo(
     () =>
@@ -71,55 +70,49 @@ export default function AllProductsFeed() {
     []
   );
 
-  const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    const allProducts = getAllProducts();
+  const fetchProducts = useCallback(
+    async (pageNum: number, append: boolean) => {
+      setLoading(true);
+      const params = new URLSearchParams({
+        page: String(pageNum),
+        limit: String(PAGE_SIZE),
+      });
+      if (query.trim()) params.set("q", query.trim());
+      if (categoryFilter) params.set("category", categoryFilter);
+      if (brandFilter) params.set("brand", brandFilter);
+      if (priceFilter !== "all") params.set("price", priceFilter);
 
-    return allProducts.filter((product) => {
-      const brandName =
-        getBrandBySlug(product.brand)?.name ?? product.brand;
-      const categoryName =
-        getCategory(product.category)?.name ?? product.category;
-      const platform = product.platform ?? "";
-      const platformName = platform ? getPlatformName(platform) : "";
+      const res = await fetch(`/api/catalog/products?${params.toString()}`);
+      const data = (await res.json()) as ApiResponse;
 
-      if (categoryFilter && product.category !== categoryFilter) {
-        return false;
-      }
-
-      if (brandFilter && product.brand !== brandFilter) {
-        return false;
-      }
-
-      if (!matchesPriceFilter(product.price, priceFilter)) {
-        return false;
-      }
-
-      if (!q) return true;
-
-      return (
-        product.name.toLowerCase().includes(q) ||
-        brandName.toLowerCase().includes(q) ||
-        categoryName.toLowerCase().includes(q) ||
-        platform.toLowerCase().includes(q) ||
-        platformName.toLowerCase().includes(q)
+      setProducts((prev) =>
+        append ? [...prev, ...data.products] : data.products
       );
-    });
-  }, [query, categoryFilter, brandFilter, priceFilter]);
+      setTotal(data.total);
+      setHasMore(data.hasMore);
+      setLoading(false);
+    },
+    [query, categoryFilter, brandFilter, priceFilter]
+  );
+
+  useEffect(() => {
+    setPage(1);
+    void fetchProducts(1, false);
+  }, [fetchProducts]);
 
   return (
-    <div className="space-y-3 sm:space-y-4">
-      {/* Search + filters — compact so products sit above the fold on mobile */}
-      <div className="space-y-2">
+    <div>
+      <div className="mb-4 space-y-3">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search products..."
-          className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none"
+          placeholder="Search parts..."
+          className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+          aria-label="Search products"
         />
 
-        <div className="grid grid-cols-1 gap-1.5 min-[420px]:grid-cols-3 sm:flex sm:flex-wrap sm:gap-3">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
           <CatalogFilterSelect
             ariaLabel="Filter by category"
             value={categoryFilter}
@@ -144,29 +137,45 @@ export default function AllProductsFeed() {
             options={priceOptions}
           />
         </div>
+
+        <p className="text-xs text-neutral-500">
+          Showing {products.length} of {total.toLocaleString()} products
+        </p>
       </div>
 
-      {filtered.length === 0 ? (
+      {loading && products.length === 0 ? (
+        <p className="text-sm text-gray-500">Loading products…</p>
+      ) : products.length === 0 ? (
         <p className="text-sm text-gray-500">No products match your search.</p>
       ) : (
-        <div className="grid grid-cols-3 gap-1.5 sm:gap-3 md:gap-4">
-          {filtered.map((product, index) => (
-            <AllProductsGridCard
-              key={product.id}
-              priority={index < 6}
-              product={{
-                id: product.id,
-                name: product.name,
-                price: product.price,
-                compareAtPrice: product.compareAtPrice,
-                thumbnail: getProductThumbnail(product),
-                images: product.images,
-                category: product.category,
-                brand: product.brand,
-              }}
-            />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-3 gap-1.5 sm:gap-3 md:gap-4">
+            {products.map((product, index) => (
+              <AllProductsGridCard
+                key={product.id}
+                priority={index < 6}
+                product={product}
+              />
+            ))}
+          </div>
+
+          {hasMore ? (
+            <div className="mt-8 flex justify-center">
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => {
+                  const next = page + 1;
+                  setPage(next);
+                  void fetchProducts(next, true);
+                }}
+                className="rounded-lg bg-red-600 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-red-700 disabled:opacity-60"
+              >
+                {loading ? "Loading…" : "Load more products"}
+              </button>
+            </div>
+          ) : null}
+        </>
       )}
     </div>
   );
