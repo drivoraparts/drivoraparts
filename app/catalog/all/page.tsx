@@ -13,7 +13,7 @@ export const dynamic = "force-static";
 export const metadata: Metadata = buildPageMetadata({
   title: "All Performance Parts",
   description:
-    "Browse every performance part listing on DrivoraParts — engines, turbos, brakes, suspension, electronics, lighting, body kits, and more.",
+    "Browse every listing on DrivoraParts — engines, turbos, brakes, suspension, electronics, lighting, body kits, interior, aftermarket, and more.",
   path: routes.all,
 });
 

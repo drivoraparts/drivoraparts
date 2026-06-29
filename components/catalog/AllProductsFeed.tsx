@@ -19,7 +19,6 @@ import {
 } from "@/lib/catalog/price-filters";
 import { engineTree } from "@/data/engine";
 
-const allProducts = getAllProducts();
 const categories = getCategories();
 const brands = getBrands();
 
@@ -74,6 +73,7 @@ export default function AllProductsFeed() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
+    const allProducts = getAllProducts();
 
     return allProducts.filter((product) => {
       const brandName =

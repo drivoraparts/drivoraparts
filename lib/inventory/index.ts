@@ -12,6 +12,7 @@
 import { categories, categoryShowsProductsOnHub } from "./categories";
 import { brands } from "./brands";
 import { products } from "./products";
+import { CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import type { Brand, Category, Product } from "./types";
 
 export type { Brand, Category, Product, ProductCondition } from "./types";
@@ -69,10 +70,22 @@ export const getBrandBySlug = (slug: string): Brand | undefined =>
 
 /* ---------- Products ---------- */
 
-export const getAllProducts = (): Product[] => products;
+function sortProductsNewestFirst(items: Product[]): Product[] {
+  return [...items].sort(
+    (a, b) => (b.createdAt ?? b.id) - (a.createdAt ?? a.id)
+  );
+}
+
+/** Every marketplace listing (all categories) for the All Products feed. Newest first. */
+export const getAllProducts = (): Product[] =>
+  sortProductsNewestFirst(
+    products.filter((product) => product.id !== CHECKOUT_TEST_PRODUCT_ID)
+  );
 
 export const getProductsByCategory = (category: string): Product[] =>
-  category ? products.filter((p) => p.category === category) : [];
+  category
+    ? sortProductsNewestFirst(products.filter((p) => p.category === category))
+    : [];
 
 export const getProductsByBrand = (brand: string): Product[] =>
   brand ? products.filter((p) => p.brand === brand) : [];

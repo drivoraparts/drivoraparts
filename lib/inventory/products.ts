@@ -4,8 +4,8 @@
    All products normalized to canonical slugs:
    - `category` references a categories.ts slug
    - `brand` references a brands.ts slug
-   Empty categories simply have no products here; query
-   helpers return [] for them (never throw / never break UI).
+   Category-specific arrays (aftermarket, interior, etc.) are merged
+   into the master catalog so every listing appears on All Products.
 ========================================================= */
 
 import type { Product } from "./types";
@@ -14,7 +14,16 @@ import { bodyPartsProducts } from "./body-parts-products";
 import { interiorProducts } from "./interior-products";
 import { electronicsProducts } from "./electronics-products";
 import { lightingProducts } from "./lighting-products";
-import { applyPublicPrices } from "./pricing";
+import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
+
+/** Category-specific listings — every array here is merged into the master catalog for All Products. */
+const extensionProducts: Product[] = [
+  ...electronicsProducts,
+  ...lightingProducts,
+  ...bodyPartsProducts,
+  ...interiorProducts,
+  ...aftermarketProducts,
+];
 
 const productCatalog: Product[] = [
   {
@@ -4211,13 +4220,9 @@ Warranty
 Shipping
 Worldwide Shipping Available`,
   },
-  ...electronicsProducts,
-  ...lightingProducts,
-  ...bodyPartsProducts,
-  ...interiorProducts,
-  ...aftermarketProducts,
+  ...extensionProducts,
   {
-    id: 9999,
+    id: CHECKOUT_TEST_PRODUCT_ID,
     name: "Checkout Test Part",
     category: "electronics",
     brand: "universal",
