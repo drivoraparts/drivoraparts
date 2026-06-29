@@ -4,9 +4,9 @@
    BASE THEME VARIABLES
 ========================= */
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  color-scheme: dark;
+  --background: #ffffff;
+  --foreground: #171717;
+  color-scheme: light;
 }
 
 /* Tailwind theme mapping */
@@ -29,14 +29,14 @@ html {
 }
 
 body {
-  background: #0a0a0a !important;
-  color: #ffffff;
+  background: #ffffff !important;
+  color: #171717;
   min-height: 100vh;
   min-height: 100dvh;
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  color-scheme: dark;
+  color-scheme: light;
   overflow-x: hidden;
   overscroll-behavior-x: none;
   font-family: Arial, Helvetica, sans-serif;

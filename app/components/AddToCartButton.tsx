@@ -19,10 +19,12 @@ export default function AddToCartButton({
   product,
   quantity = 1,
   compact = false,
+  className,
 }: {
   product: AddToCartProduct;
   quantity?: number;
   compact?: boolean;
+  className?: string;
 }) {
   const [loading, setLoading] = useState(false);
   const { addToCart, cart } = useCart();
@@ -76,9 +78,10 @@ export default function AddToCartButton({
       onClick={handleAdd}
       disabled={loading}
       className={
-        compact
+        className ??
+        (compact
           ? "inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-red-600 px-3 py-2.5 text-xs font-bold tracking-wide text-white transition hover:bg-red-500 disabled:opacity-60"
-          : "inline-flex w-full items-center justify-center gap-2 rounded-md bg-red-600 px-3 py-3 text-sm font-bold text-white transition hover:bg-red-500 disabled:opacity-60"
+          : "inline-flex w-full items-center justify-center gap-2 rounded-md bg-red-600 px-3 py-3 text-sm font-bold text-white transition hover:bg-red-500 disabled:opacity-60")
       }
     >
       {loading ? (

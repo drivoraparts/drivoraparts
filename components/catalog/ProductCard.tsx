@@ -35,7 +35,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const productHref = `/product/${product.id}`;
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-red-500/40">
+    <div className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:border-red-500 hover:shadow-md">
       <Link href={productHref} className="block">
         <div className="relative h-[180px] overflow-hidden">
           <ProductImage
@@ -44,18 +44,18 @@ export default function ProductCard({ product }: { product: Product }) {
             profile="card"
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-900/40 to-transparent" />
         </div>
       </Link>
 
       <div className="p-4">
         <Link href={productHref} className="block">
-          <h3 className="text-sm font-semibold text-white group-hover:text-red-400">
+          <h3 className="text-sm font-semibold text-neutral-900 group-hover:text-red-600">
             <TranslatedText as="span">{product.name}</TranslatedText>
           </h3>
 
-          <p className="mt-1 text-xs text-gray-400">{product.condition}</p>
-          <p className="mt-1 text-xs text-gray-500">{product.location}</p>
+          <p className="mt-1 text-xs text-neutral-500">{product.condition}</p>
+          <p className="mt-1 text-xs text-neutral-400">{product.location}</p>
 
           <div className="mt-3 flex items-center justify-between gap-2">
             <ProductPrice
@@ -63,7 +63,7 @@ export default function ProductCard({ product }: { product: Product }) {
               compareAtPrice={product.compareAtPrice}
               size="sm"
             />
-            <span className="text-[10px] uppercase text-gray-400">
+            <span className="text-[10px] uppercase text-neutral-400">
               {product.category}
             </span>
           </div>

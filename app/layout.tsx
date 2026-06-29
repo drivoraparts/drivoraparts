@@ -14,9 +14,7 @@ import {
   organizationJsonLd,
   websiteJsonLd,
 } from "@/lib/seo";
-import {
-  detectCurrencyFromAcceptLanguage,
-} from "@/lib/currency";
+import { BASE_CURRENCY } from "@/lib/currency/constants";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 
@@ -115,7 +113,7 @@ export default async function RootLayout({
   const acceptLanguage = headerStore.get("accept-language");
   const initialLocale =
     acceptLanguage?.split(",")[0]?.split(";")[0]?.trim() || "en-US";
-  const initialCurrency = detectCurrencyFromAcceptLanguage(acceptLanguage);
+  const initialCurrency = BASE_CURRENCY;
   const initialLanguage = detectLanguageFromAcceptLanguage(acceptLanguage);
 
   return (

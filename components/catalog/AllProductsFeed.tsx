@@ -116,7 +116,7 @@ export default function AllProductsFeed() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search products..."
-          className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:border-red-500 focus:outline-none"
+          className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none"
         />
 
         <div className="grid grid-cols-1 gap-1.5 min-[420px]:grid-cols-3 sm:flex sm:flex-wrap sm:gap-3">

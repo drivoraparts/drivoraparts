@@ -39,18 +39,15 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
   };
 
   return (
-    <div className="flex h-full flex-col p-6 text-white">
+    <div className="flex h-full flex-col p-6 text-neutral-900">
       <h2 className="mb-4 text-xl font-bold">{t("cart")}</h2>
 
       {cart.length === 0 ? (
-        <p className="text-gray-400">{t("cartEmpty")}</p>
+        <p className="text-neutral-500">{t("cartEmpty")}</p>
       ) : (
         <div className="flex-1 overflow-y-auto">
           {cart.map((item) => (
-            <div
-              key={item.id}
-              className="mb-3 border-b border-white/10 pb-3"
-            >
+            <div key={item.id} className="mb-3 border-b border-neutral-200 pb-3">
               <div className="flex gap-3">
                 <ProductImage
                   src={item.image}
@@ -59,12 +56,12 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                   className="h-16 w-16 rounded object-cover"
                 />
 
-                <div className="flex-1 min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="font-medium">{item.name}</p>
                   <div className="mt-1">
                     <ProductDiscountBadge category={item.category} />
                   </div>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-sm text-neutral-500">
                     <Price usd={item.price} /> {t("each")}
                   </p>
 
@@ -72,7 +69,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                     <button
                       type="button"
                       onClick={() => decreaseQty(item.id)}
-                      className="rounded border border-white/20 px-2"
+                      className="rounded border border-neutral-300 px-2 text-neutral-700"
                     >
                       −
                     </button>
@@ -83,7 +80,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                         increaseQty(item.id);
                         showToast("Cart updated");
                       }}
-                      className="rounded border border-white/20 px-2"
+                      className="rounded border border-neutral-300 px-2 text-neutral-700"
                     >
                       +
                     </button>
@@ -97,7 +94,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
                   removeFromCart(item.id);
                   showToast("Removed from cart");
                 }}
-                className="mt-2 text-sm text-red-400"
+                className="mt-2 text-sm text-red-600"
               >
                 {t("remove")}
               </button>
@@ -106,13 +103,13 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
         </div>
       )}
 
-      <div className="mt-6 border-t border-white/10 pt-4">
+      <div className="mt-6 border-t border-neutral-200 pt-4">
         <OrderTotalsSummary breakdown={breakdown} className="mb-4" />
 
         <Link
           href="/checkout"
           onClick={onClose}
-          className="mb-3 block w-full rounded-lg bg-red-600 py-3 text-center font-semibold"
+          className="mb-3 block w-full rounded-lg bg-red-600 py-3 text-center font-semibold text-white hover:bg-red-700"
         >
           {t("proceedCheckout")}
         </Link>
@@ -121,7 +118,7 @@ export default function CartDrawer({ onClose }: CartDrawerProps) {
           <button
             type="button"
             onClick={handleClear}
-            className="w-full rounded-lg border border-white/20 py-2 text-sm"
+            className="w-full rounded-lg border border-neutral-300 py-2 text-sm text-neutral-700"
           >
             {t("clearCart")}
           </button>

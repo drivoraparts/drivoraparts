@@ -38,24 +38,24 @@ const sections = [
 
 export default function PoliciesPage() {
   return (
-    <div className="text-white">
-      <h1 className="inline-block text-3xl md:text-4xl font-bold border-b-2 border-red-600 pb-2 mb-4">
+    <div className="text-neutral-900">
+      <h1 className="mb-4 inline-block border-b-2 border-red-600 pb-2 text-3xl font-bold md:text-4xl">
         Policies
       </h1>
-      <p className="text-sm text-gray-400 mb-10">
+      <p className="mb-10 text-sm text-neutral-500">
         Legal information and operating policies for DrivoraParts LLC.
       </p>
 
       {sections.map((section) => (
         <div key={section.title} className="mb-10">
-          <h2 className="text-xl text-red-500 mb-4">{section.title}</h2>
+          <h2 className="mb-4 text-xl text-red-600">{section.title}</h2>
 
           <div className="grid gap-3">
             {section.items.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition"
+                className="rounded-xl border border-neutral-200 bg-white p-4 transition hover:border-red-300 hover:bg-red-50"
               >
                 {item.name}
               </Link>

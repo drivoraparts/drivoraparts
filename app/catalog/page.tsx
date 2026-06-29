@@ -31,9 +31,9 @@ export default function Page() {
           ),
         ]}
       />
-      <main className="min-h-screen p-6 text-white">
+      <main className="min-h-screen bg-white p-6 text-neutral-900">
         <PageHeading title="Catalog" />
-        <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
+        <p className="mb-8 max-w-3xl text-sm leading-relaxed text-neutral-500">
           Browse engines, transmissions, turbo systems, brakes, suspension,
           electronics, lighting, and body parts from trusted performance brands.
         </p>

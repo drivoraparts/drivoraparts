@@ -9,9 +9,11 @@ import type { AddToCartProduct } from "@/app/components/AddToCartButton";
 export default function BuyNowButton({
   product,
   quantity = 1,
+  className,
 }: {
   product: AddToCartProduct;
   quantity?: number;
+  className?: string;
 }) {
   const router = useRouter();
   const replaceCart = useCartStore((s) => s.replaceCart);
@@ -31,16 +33,10 @@ export default function BuyNowButton({
     <button
       type="button"
       onClick={handleBuyNow}
-      style={{
-        width: "100%",
-        padding: "12px",
-        background: "#232f3e",
-        color: "white",
-        border: "none",
-        borderRadius: "6px",
-        marginTop: "10px",
-        cursor: "pointer",
-      }}
+      className={
+        className ??
+        "mt-2.5 w-full cursor-pointer rounded-md bg-neutral-900 px-3 py-3 text-sm font-bold text-white"
+      }
     >
       Buy Now
     </button>

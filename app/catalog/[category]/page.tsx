@@ -54,7 +54,7 @@ export default async function Page({ params }: PageProps) {
 
   if (!categoryData) {
     return (
-      <div className="text-white p-6">No products found in this category</div>
+      <div className="bg-white p-6 text-neutral-900">No products found in this category</div>
     );
   }
 

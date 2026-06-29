@@ -157,16 +157,19 @@ function TrustBadgeCard({
   badge,
   index,
   visible,
+  variant = "dark",
 }: {
   badge: TrustBadge;
   index: number;
   visible: boolean;
+  variant?: "dark" | "pro";
 }) {
   const { Icon, label, subtext, accent, accentSoft } = badge;
+  const isPro = variant === "pro";
 
   return (
     <div
-      className={`trust-pill ${visible ? "trust-pill-visible" : ""}`}
+      className={`trust-pill ${visible ? "trust-pill-visible" : ""} ${isPro ? "trust-pill-pro" : ""}`}
       style={{
         transitionDelay: `${index * 100}ms`,
         ["--trust-accent" as string]: accent,
@@ -184,8 +187,13 @@ function TrustBadgeCard({
   );
 }
 
-export default function TrustBadgeStrip() {
+export default function TrustBadgeStrip({
+  variant = "dark",
+}: {
+  variant?: "dark" | "pro";
+}) {
   const [visible, setVisible] = useState(false);
+  const isPro = variant === "pro";
 
   useEffect(() => {
     const timer = window.setTimeout(() => setVisible(true), 50);
@@ -193,19 +201,27 @@ export default function TrustBadgeStrip() {
   }, []);
 
   return (
-    <section className="trust-strip" aria-label="Purchase trust assurances">
-      <div className="trust-strip-header">
-        <span className="trust-strip-eyebrow">Transaction Security</span>
-        <h3 className="trust-strip-title">Verified marketplace protections</h3>
+    <section
+      className={isPro ? "trust-strip trust-strip-pro" : "trust-strip"}
+      aria-label="Purchase trust assurances"
+    >
+      <div className={isPro ? "trust-strip-header trust-strip-header-pro" : "trust-strip-header"}>
+        <span className={isPro ? "trust-strip-eyebrow trust-strip-eyebrow-pro" : "trust-strip-eyebrow"}>
+          {isPro ? "Shop With Confidence" : "Transaction Security"}
+        </span>
+        <h3 className={isPro ? "trust-strip-title trust-strip-title-pro" : "trust-strip-title"}>
+          Verified marketplace protections
+        </h3>
       </div>
 
-      <div className="trust-strip-grid">
+      <div className={isPro ? "trust-strip-grid trust-strip-grid-pro" : "trust-strip-grid"}>
         {BADGES.map((badge, index) => (
           <TrustBadgeCard
             key={badge.id}
             badge={badge}
             index={index}
             visible={visible}
+            variant={variant}
           />
         ))}
       </div>
@@ -223,10 +239,27 @@ export default function TrustBadgeStrip() {
             inset 0 1px 0 rgba(255, 255, 255, 0.05);
         }
 
+        .trust-strip-pro {
+          margin-top: 0;
+          padding: 0;
+          border-radius: 0;
+          background: transparent;
+          border: none;
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+          box-shadow: none;
+        }
+
         .trust-strip-header {
           margin-bottom: 10px;
           padding-bottom: 10px;
           border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .trust-strip-header-pro {
+          margin-bottom: 12px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e5e7eb;
         }
 
         .trust-strip-eyebrow {
@@ -238,11 +271,21 @@ export default function TrustBadgeStrip() {
           color: rgba(74, 222, 128, 0.85);
         }
 
+        .trust-strip-eyebrow-pro {
+          color: #dc2626;
+        }
+
         .trust-strip-title {
           margin: 4px 0 0;
           font-size: 13px;
           font-weight: 600;
           color: rgba(255, 255, 255, 0.88);
+        }
+
+        .trust-strip-title-pro {
+          color: #111827;
+          font-size: 15px;
+          font-weight: 700;
         }
 
         .trust-strip-grid {
@@ -251,10 +294,26 @@ export default function TrustBadgeStrip() {
           gap: 8px;
         }
 
+        .trust-strip-grid-pro {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+
+        @media (min-width: 640px) {
+          .trust-strip-grid-pro {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+
         @media (min-width: 1024px) {
           .trust-strip-grid {
             grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: 6px;
+          }
+
+          .trust-strip-grid-pro {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 8px;
           }
         }
 
@@ -295,6 +354,35 @@ export default function TrustBadgeStrip() {
           background: rgba(255, 255, 255, 0.04);
           box-shadow: 0 0 0 1px var(--trust-accent-soft),
             0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .trust-pill-pro {
+          background: #ffffff;
+          border: 1px solid #e5e7eb;
+          border-radius: 8px;
+          box-shadow: none;
+          opacity: 1;
+          transform: none;
+        }
+
+        .trust-pill-pro:hover {
+          border-color: var(--trust-accent);
+          background: #fafafa;
+          box-shadow: 0 0 0 1px var(--trust-accent-soft);
+          transform: translateY(-1px);
+        }
+
+        .trust-pill-pro .trust-pill-label {
+          color: #111827;
+        }
+
+        .trust-pill-pro .trust-pill-subtext {
+          color: #6b7280;
+        }
+
+        .trust-pill-pro .trust-pill-icon {
+          background: #f9fafb;
+          border-color: #e5e7eb;
         }
 
         .trust-pill-icon {

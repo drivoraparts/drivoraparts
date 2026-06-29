@@ -23,6 +23,7 @@ type ManualImageGalleryProps = {
   alt: string;
   thumbnail?: string;
   variant?: "detail" | "card";
+  surface?: "dark" | "light";
 };
 
 function GalleryImage({
@@ -95,6 +96,7 @@ export default function ImageCarousel({
   alt,
   thumbnail,
   variant = "detail",
+  surface = "dark",
 }: ManualImageGalleryProps) {
   const galleryImages = useMemo(
     () => resolveProductGallery(thumbnail, images),
@@ -175,7 +177,9 @@ export default function ImageCarousel({
   const imageProfile: ImageProfile = isCard ? "grid" : "detail";
   const frameClass = isCard
     ? "relative h-40 w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]"
-    : "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] shadow-[0_4px_24px_rgba(0,0,0,0.25)]";
+    : surface === "light"
+      ? "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-sm border border-neutral-200 bg-neutral-50"
+      : "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] shadow-[0_4px_24px_rgba(0,0,0,0.25)]";
 
   return (
     <div className="w-full min-w-0 max-w-full">

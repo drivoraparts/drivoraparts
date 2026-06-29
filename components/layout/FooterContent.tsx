@@ -21,7 +21,7 @@ export default function FooterContent() {
 
         <div>
           <h3 className="mb-3 text-red-500">{t("quickLinks")}</h3>
-          <div className="flex flex-col gap-2 text-sm text-gray-300">
+          <div className="flex flex-col gap-2 text-sm text-neutral-600">
             <Link href="/catalog/all">All Products</Link>
             <Link href="/catalog">Enter Market</Link>
             <Link href="/">{t("home")}</Link>
@@ -31,7 +31,7 @@ export default function FooterContent() {
 
         <div>
           <h3 className="mb-3 text-red-500">{t("policies")}</h3>
-          <div className="flex flex-col gap-2 text-sm text-gray-300">
+          <div className="flex flex-col gap-2 text-sm text-neutral-600">
             <Link href="/policies/privacy-policy">{t("privacyPolicy")}</Link>
             <Link href="/policies/cookie-policy">{t("cookiePolicy")}</Link>
             <Link href="/policies/accessibility-statement">{t("accessibility")}</Link>
@@ -44,7 +44,7 @@ export default function FooterContent() {
 
         <div>
           <h3 className="mb-3 text-red-500">{t("legalOperations")}</h3>
-          <div className="flex flex-col gap-2 text-sm text-gray-300">
+          <div className="flex flex-col gap-2 text-sm text-neutral-600">
             <Link href="/policies/shipping-policy">{t("shippingPolicy")}</Link>
             <Link href="/policies/refund-policy">{t("returnsRefunds")}</Link>
             <Link href="/policies/terms-of-sale">{t("termsOfSale")}</Link>
@@ -55,7 +55,7 @@ export default function FooterContent() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
+      <div className="border-t border-neutral-200 py-6 text-center text-xs text-neutral-500">
         <CurrencyFooterNote />
         © {new Date().getFullYear()} DrivoraParts LLC. {t("rightsReserved")}
       </div>

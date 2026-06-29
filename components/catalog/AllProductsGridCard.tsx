@@ -29,9 +29,9 @@ export default function AllProductsGridCard({
   };
 
   return (
-    <div className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-white/10 bg-white/5">
+    <div className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white">
       <Link href={routes.product(product.id)} className="block p-1.5 pb-1">
-        <div className="aspect-square w-full overflow-hidden rounded-md border border-white/10 bg-white/[0.04]">
+        <div className="aspect-square w-full overflow-hidden rounded-md border border-neutral-200 bg-neutral-50">
           <ProductImage
             src={thumbnail}
             alt={product.name}
@@ -41,7 +41,7 @@ export default function AllProductsGridCard({
             className="h-full w-full object-cover"
           />
         </div>
-        <h3 className="mt-1 line-clamp-2 text-[10px] font-semibold leading-snug text-white sm:text-[11px]">
+        <h3 className="mt-1 line-clamp-2 text-[10px] font-semibold leading-snug text-neutral-900 sm:text-[11px]">
           <TranslatedText as="span">{product.name}</TranslatedText>
         </h3>
         <ProductPrice

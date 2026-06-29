@@ -21,65 +21,42 @@ export default function GlobalDrawer({
 
   return (
     <>
-      {/* MENU DRAWER */}
       {menuOpen && (
         <div
-          className="fixed inset-0 bg-black/70 z-[10001]"
+          className="fixed inset-0 z-[10001] bg-neutral-900/40"
           onClick={() => setMenuOpen(false)}
         >
           <div
-            className="w-[320px] h-full bg-[#111827] p-5 relative z-[10002]"
+            className="relative z-[10002] h-full w-[320px] border-r border-neutral-200 bg-white p-5 shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-lg font-bold mb-6 text-white">
-              {t("navTitle")}
-            </h2>
+            <h2 className="mb-6 text-lg font-bold text-neutral-900">{t("navTitle")}</h2>
 
-            <div className="flex flex-col gap-6 text-gray-300">
+            <div className="flex flex-col gap-6 text-neutral-700">
               <div>
-                <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  {t("marketplace")}
-                </p>
-                <Link
-                  href="/catalog/all"
-                  className="hover:text-white transition"
-                >
+                <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("marketplace")}</p>
+                <Link href="/catalog/all" className="transition hover:text-neutral-900">
                   {t("browseCatalog")}
                 </Link>
               </div>
 
               <div>
-                <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  {t("company")}
-                </p>
-                <Link
-                  href="/about"
-                  className="hover:text-white transition"
-                >
+                <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("company")}</p>
+                <Link href="/about" className="transition hover:text-neutral-900">
                   {t("about")}
                 </Link>
               </div>
 
               <div>
-                <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  {t("support")}
-                </p>
-                <Link
-                  href="/contact"
-                  className="hover:text-white transition"
-                >
+                <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("support")}</p>
+                <Link href="/contact" className="transition hover:text-neutral-900">
                   {t("contactSupport")}
                 </Link>
               </div>
 
               <div>
-                <p className="text-xs text-gray-500 mb-2 tracking-widest">
-                  {t("legalCenter")}
-                </p>
-                <Link
-                  href="/policies"
-                  className="hover:text-white transition"
-                >
+                <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("legalCenter")}</p>
+                <Link href="/policies" className="transition hover:text-neutral-900">
                   {t("policiesLegal")}
                 </Link>
               </div>
@@ -88,14 +65,13 @@ export default function GlobalDrawer({
         </div>
       )}
 
-      {/* CART DRAWER */}
       {cartOpen && (
         <div
-          className="fixed inset-0 bg-black/70 z-[9999] flex justify-end"
+          className="fixed inset-0 z-[9999] flex justify-end bg-neutral-900/40"
           onClick={() => setCartOpen(false)}
         >
           <div
-            className="w-[320px] h-full bg-[#111827]"
+            className="h-full w-[320px] border-l border-neutral-200 bg-white shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <CartDrawer onClose={() => setCartOpen(false)} />

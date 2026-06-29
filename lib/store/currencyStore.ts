@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { BASE_CURRENCY } from "@/lib/currency/constants";
-import { detectCurrencyFromBrowser } from "@/lib/currency/detect";
 
 type CurrencyState = {
   currency: string;
@@ -18,26 +17,11 @@ export const useCurrencyStore = create<CurrencyState>((set, get) => ({
   rates: { [BASE_CURRENCY]: 1 },
   ready: false,
 
-  initialize: ({ currency, locale }) => {
-    const resolvedCurrency = currency || BASE_CURRENCY;
-    const resolvedLocale = locale || "en-US";
-
+  initialize: ({ locale }) => {
     set({
-      currency: resolvedCurrency,
-      locale: resolvedLocale,
+      currency: BASE_CURRENCY,
+      locale: locale || "en-US",
     });
-
-    if (typeof window !== "undefined") {
-      const browserCurrency = detectCurrencyFromBrowser();
-      const browserLocale = navigator.language || resolvedLocale;
-
-      if (browserCurrency !== resolvedCurrency || browserLocale !== resolvedLocale) {
-        set({
-          currency: browserCurrency,
-          locale: browserLocale,
-        });
-      }
-    }
   },
 
   setRates: (rates) => {

@@ -70,13 +70,13 @@ export default function AftermarketFeed() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search aftermarket parts by name, brand, or type..."
-        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-gray-500 focus:border-red-500 focus:outline-none transition-colors duration-300"
+        className="w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none transition-colors duration-300"
       />
 
       <select
         value={sort}
         onChange={(e) => setSort(e.target.value as SortOption)}
-        className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-white focus:border-red-500 focus:outline-none"
+        className="rounded-xl border border-neutral-300 bg-white px-4 py-2 text-neutral-900 focus:border-red-500 focus:outline-none"
       >
         <option value="newest">Newest</option>
         <option value="oldest">Oldest</option>
@@ -107,7 +107,7 @@ export default function AftermarketFeed() {
                     className="h-40 w-full rounded-lg object-cover"
                   />
                 ) : (
-                  <div className="h-40 w-full rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-xs text-gray-500">
+                  <div className="flex h-40 w-full items-center justify-center rounded-lg border border-neutral-200 bg-neutral-50 text-xs text-neutral-500">
                     No image
                   </div>
                 )}
@@ -131,7 +131,7 @@ export default function AftermarketFeed() {
                         ? "In Stock"
                         : "Out of Stock"}
                   </p>
-                  <span className="inline-block rounded border border-white/10 px-2 py-0.5">
+                  <span className="inline-block rounded border border-neutral-200 px-2 py-0.5">
                     {brandName(product.brand)}
                   </span>
                 </div>

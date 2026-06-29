@@ -115,35 +115,35 @@ export default function SuccessStatus({
   const totalLabel = view === "paid" ? "Total Paid" : "Order Total";
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-md flex-col overflow-x-hidden px-4 py-10 text-white sm:px-6 sm:py-12">
+    <main className="mx-auto flex min-h-screen w-full max-w-md flex-col overflow-x-hidden bg-white px-4 py-10 text-neutral-900 sm:px-6 sm:py-12">
       <div className="flex flex-col items-center gap-3 py-6 text-center">
         <img
           src="/brand/drivora-checkout.png"
           alt="DrivoraParts"
           width={40}
           height={40}
-          className="h-10 w-10 rounded-sm bg-white/95 object-contain p-1"
+          className="h-10 w-10 rounded-sm border border-neutral-200 bg-white object-contain p-1"
         />
         <div>
-          <h1 className="text-lg font-semibold text-white">{heading}</h1>
-          <p className="text-xs text-white/50">{subtext}</p>
+          <h1 className="text-lg font-semibold text-neutral-900">{heading}</h1>
+          <p className="text-xs text-neutral-500">{subtext}</p>
         </div>
       </div>
 
-      <div className="rounded-xl border border-white/10 bg-black/40 p-4 text-center">
-        <p className="text-sm text-white/80">{message}</p>
+      <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-center">
+        <p className="text-sm text-neutral-700">{message}</p>
       </div>
 
       {resolvedOrderId ? (
-        <div className="mt-4 space-y-3 rounded-xl border border-white/10 bg-black/40 p-4">
+        <div className="mt-4 space-y-3 rounded-xl border border-neutral-200 bg-white p-4">
           <div>
-            <p className="text-xs text-white/50">Order ID</p>
-            <p className="break-all text-sm text-white">{resolvedOrderId}</p>
+            <p className="text-xs text-neutral-500">Order ID</p>
+            <p className="break-all text-sm text-neutral-900">{resolvedOrderId}</p>
           </div>
           {total != null ? (
             <div>
-              <p className="text-xs text-white/50">{totalLabel}</p>
-              <p className="text-lg font-medium text-white">
+              <p className="text-xs text-neutral-500">{totalLabel}</p>
+              <p className="text-lg font-medium text-neutral-900">
                 <Price usd={total} />
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function SuccessStatus({
         </Link>
         <Link
           href="/"
-          className="block w-full rounded-lg border border-white/10 py-3 text-center text-sm text-white/80 transition hover:bg-white/5"
+          className="block w-full rounded-lg border border-neutral-300 py-3 text-center text-sm text-neutral-700 transition hover:bg-neutral-50"
         >
           Back to Home
         </Link>

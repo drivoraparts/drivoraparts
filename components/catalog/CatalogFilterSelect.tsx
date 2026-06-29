@@ -51,7 +51,7 @@ export default function CatalogFilterSelect({
         aria-expanded={open}
         aria-haspopup="listbox"
         onClick={() => setOpen((current) => !current)}
-        className="flex w-full items-center justify-between gap-2 rounded-lg border border-white/10 bg-zinc-900 px-2 py-1.5 text-left text-[11px] text-white transition hover:border-white/20 sm:px-4 sm:py-2 sm:text-sm"
+        className="flex w-full items-center justify-between gap-2 rounded-lg border border-neutral-300 bg-white px-2 py-1.5 text-left text-[11px] text-neutral-900 transition hover:border-neutral-400 sm:px-4 sm:py-2 sm:text-sm"
       >
         <span className="truncate">{selected.label}</span>
         <span aria-hidden="true" className="shrink-0 text-gray-400">
@@ -63,7 +63,7 @@ export default function CatalogFilterSelect({
         <ul
           role="listbox"
           aria-label={ariaLabel}
-          className="absolute left-0 right-0 z-50 mt-1 max-h-60 overflow-y-auto rounded-lg border border-white/10 bg-zinc-900 py-1 shadow-2xl"
+          className="absolute left-0 right-0 z-50 mt-1 max-h-60 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-xl"
         >
           {options.map((option) => {
             const isSelected = option.value === value;
@@ -76,8 +76,8 @@ export default function CatalogFilterSelect({
                     onChange(option.value);
                     setOpen(false);
                   }}
-                  className={`block w-full px-3 py-2 text-left text-xs text-white transition hover:bg-red-600/25 sm:text-sm ${
-                    isSelected ? "bg-red-600/15 font-semibold text-red-300" : ""
+                  className={`block w-full px-3 py-2 text-left text-xs text-neutral-800 transition hover:bg-red-50 sm:text-sm ${
+                    isSelected ? "bg-red-50 font-semibold text-red-700" : ""
                   }`}
                 >
                   {option.label}

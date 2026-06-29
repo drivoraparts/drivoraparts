@@ -13,7 +13,7 @@ export default function EngineGroups() {
     <div className="space-y-12">
       {engineTree.map((group) => (
         <section key={group.slug}>
-          <h2 className="inline-block text-lg font-bold uppercase tracking-wide text-white border-b-2 border-red-600 pb-2 mb-5">
+          <h2 className="mb-5 inline-block border-b-2 border-red-600 pb-2 text-lg font-bold uppercase tracking-wide text-neutral-900">
             {group.title}
           </h2>
 

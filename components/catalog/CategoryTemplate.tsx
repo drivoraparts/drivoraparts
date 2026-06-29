@@ -40,10 +40,10 @@ export default function CategoryTemplate({
   showProducts?: boolean;
 }) {
   return (
-    <main className="box-border min-h-screen w-full min-w-0 max-w-full overflow-x-hidden p-4 text-white sm:p-6">
+    <main className="box-border min-h-screen w-full min-w-0 max-w-full overflow-x-hidden bg-white p-4 text-neutral-900 sm:p-6">
       <PageHeading title={title} />
       {intro ? (
-        <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
+        <p className="mb-8 max-w-3xl text-sm leading-relaxed text-neutral-500">
           {intro}
         </p>
       ) : null}
@@ -51,7 +51,7 @@ export default function CategoryTemplate({
       {/* BRANDS */}
       {brands.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">
+          <h2 className="mb-4 text-xs uppercase tracking-widest text-neutral-500">
             Brands
           </h2>
 
@@ -68,7 +68,7 @@ export default function CategoryTemplate({
       {/* PRODUCTS */}
       {showProducts && (
         <section>
-          <h2 className="text-xs uppercase tracking-widest text-gray-400 mb-4">
+          <h2 className="mb-4 text-xs uppercase tracking-widest text-neutral-500">
             Products
           </h2>
 

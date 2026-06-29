@@ -77,7 +77,7 @@ export default async function Page({ params }: PageProps) {
           itemListJsonLd(`${found.platform.name} engines`, productPaths),
         ]}
       />
-      <main className="min-h-screen p-6 text-white">
+      <main className="min-h-screen bg-white p-6 text-neutral-900">
         <PageHeading
           title={found.platform.name}
           subtitle={`Engine · ${found.group.title}`}

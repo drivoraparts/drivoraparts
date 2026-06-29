@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Product } from "@/data/store";
 import { trackEvent } from "@/lib/analytics/client";
 import type { ProductCatalogMeta } from "@/lib/inventory/productEnhancements";
@@ -9,10 +9,12 @@ import AddToCartButton, {
 } from "@/app/components/AddToCartButton";
 import BuyNowButton from "@/app/components/BuyNowButton";
 import ImageCarousel from "./ImageCarousel";
-import TrustBadgeStrip from "./TrustBadgeStrip";
+import ProTrustBadges from "./ProTrustBadges";
 import ConditionBadge from "./ConditionBadge";
 import ProductRatingSummary from "./ProductRatingSummary";
-import QuickSpecsBar from "./QuickSpecsBar";
+import PowerLevelSection, {
+  type ProSpecSection,
+} from "./PowerLevelSection";
 import ProductDetailsSections from "./ProductDetailsSections";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
@@ -24,26 +26,13 @@ import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
 import {
   formatCategoryLabel,
   formatPlatformLabel,
-  glassCard,
-  productPageGrid,
 } from "./styles";
 
 function MetaRow({ label, value }: { label: string; value: string }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        gap: "12px",
-        padding: "8px 0",
-        borderBottom: "1px solid rgba(255,255,255,0.08)",
-        fontSize: "14px",
-      }}
-    >
-      <span style={{ color: "rgba(255,255,255,0.55)" }}>{label}</span>
-      <span style={{ fontWeight: 600, textAlign: "right", color: "#fff" }}>
-        {value}
-      </span>
+    <div className="flex items-start justify-between gap-4 border-b border-neutral-200 py-2.5 text-sm last:border-b-0">
+      <span className="text-neutral-500">{label}</span>
+      <span className="text-right font-semibold text-neutral-900">{value}</span>
     </div>
   );
 }
@@ -88,200 +77,162 @@ export default function ProductTemplate({
     brand: product.brand,
   };
 
+  const specSections = useMemo(() => {
+    const sections: ProSpecSection[] = [];
+
+    if (catalogMeta.horsepower) {
+      sections.push({
+        label: "Choose Power Level",
+        values: [catalogMeta.horsepower],
+      });
+    }
+
+    sections.push(
+      { label: "Condition", values: [catalogMeta.conditionLabel] },
+      { label: "Mileage", values: [catalogMeta.mileage] },
+      { label: "Warranty", values: [catalogMeta.warranty] }
+    );
+
+    if (catalogMeta.logistics?.fitment) {
+      sections.push({
+        label: "Fitment",
+        values: [catalogMeta.logistics.fitment],
+      });
+    }
+
+    return sections;
+  }, [catalogMeta]);
+
   return (
-    <div style={productPageGrid} className="product-page-grid">
-      <div style={{ minWidth: 0, maxWidth: "100%", position: "relative" }}>
-        <ImageCarousel
-          images={galleryImages}
-          alt={product.name}
-          thumbnail={product.thumbnail}
-        />
-      </div>
-
-      <div style={{ minWidth: 0, maxWidth: "100%", color: "#fff" }}>
-        <h1
-          style={{
-            fontSize: "clamp(22px, 4vw, 28px)",
-            marginBottom: "10px",
-            lineHeight: 1.25,
-          }}
-        >
-          <TranslatedText as="span">{product.name}</TranslatedText>
-        </h1>
-
-        <ProductRatingSummary
-          productId={product.id}
-          rating={catalogMeta.rating}
-          reviewCount={catalogMeta.reviewCount}
-        />
-
-        <h2 style={{ marginTop: "8px" }}>
-          <ProductPrice
-            price={product.price}
-            compareAtPrice={product.compareAtPrice}
-            size="lg"
-          />
-        </h2>
-
-        <div
-          style={{
-            marginTop: "10px",
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "8px",
-            alignItems: "center",
-          }}
-        >
-          <ProductDiscountBadge category={product.category} />
-          <OrderDiscountBadge />
-        </div>
-
-        <div style={{ marginTop: "10px" }}>
-          <ConditionBadge
-            category={product.category}
-            condition={rawCondition}
+    <div className="min-h-screen bg-white">
+      <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 items-start gap-0 md:grid-cols-[1.15fr_1fr]">
+        <div className="min-w-0 border-b border-neutral-200 bg-white p-4 sm:p-6 md:border-b-0 md:border-r">
+          <ImageCarousel
+            images={galleryImages}
+            alt={product.name}
+            thumbnail={product.thumbnail}
+            surface="light"
           />
         </div>
 
-        <QuickSpecsBar
-          horsepower={catalogMeta.horsepower}
-          mileage={catalogMeta.mileage}
-          condition={catalogMeta.conditionLabel}
-          warranty={catalogMeta.warranty}
-        />
+        <div className="min-w-0 bg-white p-5 text-neutral-900 sm:p-7 lg:p-8">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-neutral-400">
+            {categoryLabel}
+            {platformLabel ? ` · ${platformLabel}` : ""}
+          </p>
 
-        <div style={{ marginTop: "16px", padding: "14px", ...glassCard }}>
-          <MetaRow
-            label="Stock Status"
-            value={inStock ? "In Stock" : "Out of Stock"}
+          <h1 className="mt-2 text-[clamp(22px,4vw,30px)] font-bold leading-tight text-neutral-900">
+            <TranslatedText as="span">{product.name}</TranslatedText>
+          </h1>
+
+          <ProductRatingSummary
+            productId={product.id}
+            rating={catalogMeta.rating}
+            reviewCount={catalogMeta.reviewCount}
+            theme="pro"
           />
-          <MetaRow label="Brand" value={product.brand} />
-          <MetaRow label="Category" value={categoryLabel} />
-          {platformLabel && (
-            <MetaRow label="Platform" value={platformLabel} />
-          )}
-        </div>
 
-        <div style={{ marginTop: "20px", padding: "15px", ...glassCard }}>
-          <label
-            htmlFor="product-qty"
-            style={{
-              display: "block",
-              fontSize: "14px",
-              fontWeight: 600,
-              marginBottom: "8px",
-            }}
-          >
-            Quantity
-          </label>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-              marginBottom: "14px",
-            }}
-          >
-            <button
-              type="button"
-              aria-label="Decrease quantity"
-              onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-              style={{
-                width: "36px",
-                height: "36px",
-                border: "1px solid rgba(255,255,255,0.2)",
-                borderRadius: "6px",
-                background: "rgba(255, 255, 255, 0.06)",
-                color: "#fff",
-                cursor: "pointer",
-                fontSize: "18px",
-              }}
-            >
-              −
-            </button>
-            <input
-              id="product-qty"
-              type="number"
-              min={1}
-              max={99}
-              value={quantity}
-              onChange={(e) => {
-                const val = parseInt(e.target.value, 10);
-                if (!Number.isNaN(val)) {
-                  setQuantity(Math.min(99, Math.max(1, val)));
-                }
-              }}
-              style={{
-                width: "56px",
-                height: "36px",
-                textAlign: "center",
-                border: "1px solid rgba(255,255,255,0.2)",
-                borderRadius: "6px",
-                fontSize: "15px",
-                background: "rgba(255, 255, 255, 0.06)",
-                color: "#fff",
-              }}
+          <div className="mt-3 border-b border-neutral-200 pb-4">
+            <ProductPrice
+              price={product.price}
+              compareAtPrice={product.compareAtPrice}
+              size="lg"
+              className="[&_span:last-child]:text-neutral-900 [&_span:last-child]:text-3xl [&_span:last-child]:font-black"
             />
-            <button
-              type="button"
-              aria-label="Increase quantity"
-              onClick={() => setQuantity((q) => Math.min(99, q + 1))}
-              style={{
-                width: "36px",
-                height: "36px",
-                border: "1px solid rgba(255, 255, 255,0.2)",
-                borderRadius: "6px",
-                background: "rgba(255, 255, 255, 0.06)",
-                color: "#fff",
-                cursor: "pointer",
-                fontSize: "18px",
-              }}
-            >
-              +
-            </button>
           </div>
 
-          <AddToCartButton product={cartProduct} quantity={quantity} />
-          <BuyNowButton product={cartProduct} quantity={quantity} />
+          <div className="mt-3 flex flex-wrap items-center gap-2">
+            <ProductDiscountBadge category={product.category} />
+            <OrderDiscountBadge />
+            <ConditionBadge category={product.category} condition={rawCondition} />
+          </div>
+
+          <PowerLevelSection sections={specSections} />
+
+          <div className="mt-6 border-t border-neutral-200 pt-5">
+            <p className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500">
+              Quantity
+            </p>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                aria-label="Decrease quantity"
+                onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                className="flex h-10 w-10 items-center justify-center border border-neutral-300 bg-white text-lg text-neutral-800"
+              >
+                −
+              </button>
+              <input
+                id="product-qty"
+                type="number"
+                min={1}
+                max={99}
+                value={quantity}
+                onChange={(e) => {
+                  const val = parseInt(e.target.value, 10);
+                  if (!Number.isNaN(val)) {
+                    setQuantity(Math.min(99, Math.max(1, val)));
+                  }
+                }}
+                className="h-10 w-16 border border-neutral-300 bg-white text-center text-base text-neutral-900 outline-none focus:border-neutral-800"
+              />
+              <button
+                type="button"
+                aria-label="Increase quantity"
+                onClick={() => setQuantity((q) => Math.min(99, q + 1))}
+                className="flex h-10 w-10 items-center justify-center border border-neutral-300 bg-white text-lg text-neutral-800"
+              >
+                +
+              </button>
+            </div>
+
+            <div className="mt-4 space-y-3">
+              <AddToCartButton
+                product={cartProduct}
+                quantity={quantity}
+                className="!rounded-none !border-2 !border-red-600 !bg-white !py-3.5 !text-sm !font-black !uppercase !tracking-[0.12em] !text-neutral-900 hover:!bg-red-50"
+              />
+              <BuyNowButton
+                product={cartProduct}
+                quantity={quantity}
+                className="!mt-0 !rounded-none !border !border-neutral-900 !bg-neutral-900 !py-3.5 !text-sm !font-bold !uppercase !tracking-[0.1em] !text-white hover:!bg-neutral-800"
+              />
+            </div>
+          </div>
+
+          <div className="mt-6 border-t border-neutral-200 pt-5">
+            <ProTrustBadges />
+          </div>
+
+          <p className="mt-4 text-xs leading-relaxed text-neutral-500">
+            Ships from {product.location}. Fast worldwide fulfillment available on
+            eligible orders.
+          </p>
+
+          <div className="mt-5 rounded-sm border border-neutral-200 bg-neutral-50 px-4 py-3">
+            <MetaRow
+              label="Stock Status"
+              value={inStock ? "In Stock" : "Out of Stock"}
+            />
+            <MetaRow label="Brand" value={product.brand} />
+            <MetaRow label="Category" value={categoryLabel} />
+            {platformLabel ? (
+              <MetaRow label="Platform" value={platformLabel} />
+            ) : null}
+          </div>
+
+          <ProductDetailsSections
+            productId={product.id}
+            rating={catalogMeta.rating}
+            descriptionBody={catalogMeta.descriptionBody}
+            specifications={catalogMeta.specifications}
+            shippingAndWarranty={catalogMeta.shippingAndWarranty}
+            reviewCount={catalogMeta.reviewCount}
+            logistics={catalogMeta.logistics}
+            theme="pro"
+          />
         </div>
-
-        <TrustBadgeStrip />
-
-        <p
-          style={{
-            marginTop: "12px",
-            fontSize: "12px",
-            color: "rgba(255,255,255,0.5)",
-            lineHeight: 1.5,
-          }}
-        >
-          Ships from {product.location}. Fast worldwide fulfillment available
-          on eligible orders.
-        </p>
-
-        <ProductDetailsSections
-          productId={product.id}
-          rating={catalogMeta.rating}
-          descriptionBody={catalogMeta.descriptionBody}
-          specifications={catalogMeta.specifications}
-          shippingAndWarranty={catalogMeta.shippingAndWarranty}
-          reviewCount={catalogMeta.reviewCount}
-          logistics={catalogMeta.logistics}
-        />
       </div>
-
-      <style>{`
-        @media (min-width: 640px) {
-          .product-page-grid {
-            padding: 20px !important;
-          }
-        }
-        @media (max-width: 768px) {
-          .product-page-grid {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

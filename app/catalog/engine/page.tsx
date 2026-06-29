@@ -34,7 +34,7 @@ export default function Page() {
           ),
         ]}
       />
-      <main className="min-h-screen p-6 text-white">
+      <main className="min-h-screen bg-white p-6 text-neutral-900">
         <PageHeading title="Engine" subtitle="Select an engine platform" />
         <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
           Browse legendary engine platforms including BMW N54, Toyota 2JZ, Nissan

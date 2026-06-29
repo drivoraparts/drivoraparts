@@ -12,7 +12,7 @@ export default function PoliciesLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
+    <div className="min-h-screen bg-white text-neutral-900">
       <div className="mx-auto w-full max-w-4xl px-6 py-16 md:py-24 leading-relaxed">
         {children}
       </div>

@@ -16,32 +16,64 @@ type ProductDetailsSectionsProps = {
   shippingAndWarranty: string;
   reviewCount: number;
   logistics: ProductLogistics;
+  theme?: "dark" | "pro";
 };
 
-function LogisticsRow({ label, value }: { label: string; value: ReactNode }) {
+function LogisticsRow({
+  label,
+  value,
+  theme = "dark",
+}: {
+  label: string;
+  value: ReactNode;
+  theme?: "dark" | "pro";
+}) {
+  const isPro = theme === "pro";
+
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        gap: "16px",
-        padding: "10px 0",
-        borderBottom: "1px solid rgba(255,255,255,0.08)",
-        fontSize: "14px",
-        lineHeight: 1.5,
-      }}
+      className={
+        isPro
+          ? "flex justify-between gap-4 border-b border-neutral-200 py-2.5 text-sm leading-relaxed last:border-b-0"
+          : undefined
+      }
+      style={
+        isPro
+          ? undefined
+          : {
+              display: "flex",
+              justifyContent: "space-between",
+              gap: "16px",
+              padding: "10px 0",
+              borderBottom: "1px solid rgba(255,255,255,0.08)",
+              fontSize: "14px",
+              lineHeight: 1.5,
+            }
+      }
     >
-      <span style={{ color: "rgba(255,255,255,0.55)", flexShrink: 0 }}>
+      <span
+        className={isPro ? "shrink-0 text-neutral-500" : undefined}
+        style={isPro ? undefined : { color: "rgba(255,255,255,0.55)", flexShrink: 0 }}
+      >
         {label}
       </span>
-      <span style={{ fontWeight: 600, textAlign: "right", color: "#fff" }}>
+      <span
+        className={isPro ? "text-right font-semibold text-neutral-900" : undefined}
+        style={isPro ? undefined : { fontWeight: 600, textAlign: "right", color: "#fff" }}
+      >
         {value}
       </span>
     </div>
   );
 }
 
-function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
+function FitmentLogistics({
+  logistics,
+  theme = "dark",
+}: {
+  logistics: ProductLogistics;
+  theme?: "dark" | "pro";
+}) {
   const { t } = useTranslation();
 
   return (
@@ -52,6 +84,7 @@ function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
           value={
             <TranslatedText as="span">{logistics.fitment}</TranslatedText>
           }
+          theme={theme}
         />
       )}
       {logistics.drivetrain && (
@@ -60,10 +93,11 @@ function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
           value={
             <TranslatedText as="span">{logistics.drivetrain}</TranslatedText>
           }
+          theme={theme}
         />
       )}
       {logistics.partNumber && (
-        <LogisticsRow label={t("partCode")} value={logistics.partNumber} />
+        <LogisticsRow label={t("partCode")} value={logistics.partNumber} theme={theme} />
       )}
       {logistics.included && logistics.included.length > 0 && (
         <LogisticsRow
@@ -77,6 +111,7 @@ function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
               ))}
             </span>
           }
+          theme={theme}
         />
       )}
       {logistics.coreCharge && (
@@ -85,6 +120,7 @@ function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
           value={
             <TranslatedText as="span">{logistics.coreCharge}</TranslatedText>
           }
+          theme={theme}
         />
       )}
       {logistics.freightNotes && (
@@ -93,6 +129,7 @@ function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
           value={
             <TranslatedText as="span">{logistics.freightNotes}</TranslatedText>
           }
+          theme={theme}
         />
       )}
       {logistics.warrantyTerms && (
@@ -101,6 +138,7 @@ function FitmentLogistics({ logistics }: { logistics: ProductLogistics }) {
           value={
             <TranslatedText as="span">{logistics.warrantyTerms}</TranslatedText>
           }
+          theme={theme}
         />
       )}
     </div>
@@ -117,22 +155,35 @@ function CollapsibleSection({
   title,
   defaultOpen = false,
   children,
-}: SectionProps) {
+  theme = "dark",
+}: SectionProps & { theme?: "dark" | "pro" }) {
   const [open, setOpen] = useState(defaultOpen);
+  const isPro = theme === "pro";
 
   return (
-    <section style={{ ...glassCard, padding: "14px" }}>
+    <section
+      className={
+        isPro
+          ? "rounded-sm border border-neutral-200 bg-white px-4 py-3"
+          : undefined
+      }
+      style={isPro ? undefined : { ...glassCard, padding: "14px" }}
+    >
       <button
         type="button"
-        className="details-section-toggle"
+        className={`details-section-toggle ${isPro ? "details-section-toggle-pro" : ""}`}
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >
-        <span>
+        <span className={isPro ? "text-neutral-900" : undefined}>
           {open ? "▼" : "▶"} {title}
         </span>
       </button>
-      {open && <div className="details-section-body">{children}</div>}
+      {open && (
+        <div className={`details-section-body ${isPro ? "details-section-body-pro" : ""}`}>
+          {children}
+        </div>
+      )}
 
       <style jsx>{`
         .details-section-toggle {
@@ -147,11 +198,19 @@ function CollapsibleSection({
           cursor: pointer;
         }
 
+        .details-section-toggle-pro {
+          color: #111827;
+        }
+
         .details-section-body {
           margin-top: 12px;
           color: rgba(255, 255, 255, 0.75);
           line-height: 1.6;
           white-space: pre-line;
+        }
+
+        .details-section-body-pro {
+          color: #374151;
         }
       `}</style>
     </section>
@@ -166,29 +225,30 @@ export default function ProductDetailsSections({
   shippingAndWarranty,
   reviewCount,
   logistics,
+  theme = "dark",
 }: ProductDetailsSectionsProps) {
   const { t } = useTranslation();
 
   return (
     <div className="product-details-sections">
-      <CollapsibleSection title={t("descriptionTitle")} defaultOpen>
+      <CollapsibleSection title={t("descriptionTitle")} defaultOpen theme={theme}>
         <TranslatedText as="span">{descriptionBody}</TranslatedText>
       </CollapsibleSection>
 
       {specifications && (
-        <CollapsibleSection title={t("specificationsTitle")}>
+        <CollapsibleSection title={t("specificationsTitle")} theme={theme}>
           <TranslatedText as="span">{specifications}</TranslatedText>
         </CollapsibleSection>
       )}
 
       {hasLogistics(logistics) && (
-        <CollapsibleSection title={t("fitmentLogisticsTitle")} defaultOpen>
-          <FitmentLogistics logistics={logistics} />
+        <CollapsibleSection title={t("fitmentLogisticsTitle")} defaultOpen theme={theme}>
+          <FitmentLogistics logistics={logistics} theme={theme} />
         </CollapsibleSection>
       )}
 
       {shippingAndWarranty && (
-        <CollapsibleSection title={t("shippingWarrantyTitle")}>
+        <CollapsibleSection title={t("shippingWarrantyTitle")} theme={theme}>
           <TranslatedText as="span">{shippingAndWarranty}</TranslatedText>
         </CollapsibleSection>
       )}

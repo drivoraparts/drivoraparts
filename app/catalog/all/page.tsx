@@ -33,12 +33,12 @@ export default function AllProductsPage() {
           ),
         ]}
       />
-      <main className="min-h-screen px-3 pb-6 pt-20 text-white sm:px-6 sm:pt-24">
+      <main className="min-h-screen bg-white px-3 pb-6 pt-20 text-neutral-900 sm:px-6 sm:pt-24">
         <header className="mb-3 sm:mb-6">
-          <h1 className="inline-block border-b-2 border-red-600 pb-1 text-xl font-bold text-white sm:text-3xl sm:pb-2">
+          <h1 className="inline-block border-b-2 border-red-600 pb-1 text-xl font-bold text-neutral-900 sm:text-3xl sm:pb-2">
             All Products
           </h1>
-          <p className="mt-1 hidden text-sm text-gray-400 sm:block">
+          <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
             Browse everything in the marketplace
           </p>
         </header>

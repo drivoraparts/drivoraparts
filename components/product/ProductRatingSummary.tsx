@@ -9,15 +9,18 @@ type ProductRatingSummaryProps = {
   productId: number;
   rating: number;
   reviewCount: number;
+  theme?: "dark" | "pro";
 };
 
 export default function ProductRatingSummary({
   productId,
   rating,
   reviewCount,
+  theme = "dark",
 }: ProductRatingSummaryProps) {
   const [avatars, setAvatars] = useState<string[]>([]);
   const hasReviews = reviewCount > 0;
+  const isPro = theme === "pro";
 
   useEffect(() => {
     if (!hasReviews) {
@@ -34,7 +37,7 @@ export default function ProductRatingSummary({
 
   if (!hasReviews) {
     return (
-      <div className="product-rating-summary product-rating-summary--empty">
+      <div className={`product-rating-summary product-rating-summary--empty ${isPro ? "product-rating-summary-pro" : ""}`}>
         <p className="product-rating-empty">No reviews yet</p>
         <p className="product-rating-cta">Be the first to review this product</p>
 
@@ -47,6 +50,14 @@ export default function ProductRatingSummary({
             border: 1px solid rgba(255, 255, 255, 0.08);
           }
 
+          .product-rating-summary-pro {
+            margin: 8px 0 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+            border-radius: 0;
+          }
+
           .product-rating-empty {
             margin: 0;
             font-size: 14px;
@@ -54,10 +65,21 @@ export default function ProductRatingSummary({
             color: rgba(255, 255, 255, 0.82);
           }
 
+          .product-rating-summary-pro .product-rating-empty {
+            color: #374151;
+            font-size: 13px;
+            font-weight: 600;
+          }
+
           .product-rating-cta {
             margin: 6px 0 0;
             font-size: 13px;
             color: rgba(255, 255, 255, 0.55);
+          }
+
+          .product-rating-summary-pro .product-rating-cta {
+            color: #9ca3af;
+            font-size: 12px;
           }
         `}</style>
       </div>
@@ -66,7 +88,7 @@ export default function ProductRatingSummary({
 
   return (
     <div
-      className="product-rating-summary"
+      className={`product-rating-summary ${isPro ? "product-rating-summary-pro" : ""}`}
       aria-label={`Rated ${rating} out of 5 from ${reviewCount} reviews`}
     >
       <StarRating rating={rating} showNumeric />
@@ -102,11 +124,23 @@ export default function ProductRatingSummary({
           border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
+        .product-rating-summary-pro {
+          margin: 8px 0 0;
+          padding: 0;
+          border: none;
+          background: transparent;
+          border-radius: 0;
+        }
+
         .product-rating-count {
           margin: 8px 0 0;
           font-size: 13px;
           color: rgba(255, 255, 255, 0.82);
           font-weight: 600;
+        }
+
+        .product-rating-summary-pro .product-rating-count {
+          color: #374151;
         }
 
         .verified-buyers-strip {
@@ -116,6 +150,10 @@ export default function ProductRatingSummary({
           margin-top: 10px;
           padding-top: 10px;
           border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .product-rating-summary-pro .verified-buyers-strip {
+          border-top-color: #e5e7eb;
         }
 
         .verified-buyers-avatars {

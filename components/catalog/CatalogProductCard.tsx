@@ -45,8 +45,8 @@ export default function CatalogProductCard({
   const productHref = routes.product(product.id);
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-red-500 hover:bg-white/10">
-      <div className="pointer-events-none absolute inset-0 bg-red-500/10 blur-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+    <div className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:border-red-500 hover:shadow-md">
+      <div className="pointer-events-none absolute inset-0 bg-red-500/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative p-4">
         <Link href={productHref} className="block rounded-lg">
@@ -56,7 +56,7 @@ export default function CatalogProductCard({
           />
 
           <div className="mt-3 rounded-lg transition hover:opacity-95">
-            <h3 className="font-semibold text-white group-hover:text-red-400">
+            <h3 className="font-semibold text-neutral-900 group-hover:text-red-600">
               <TranslatedText as="span">{product.name}</TranslatedText>
             </h3>
             <ProductPrice

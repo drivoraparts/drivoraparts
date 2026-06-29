@@ -16,16 +16,16 @@ export default function OrderTotalsSummary({
   return (
     <div className={`space-y-2 ${className}`}>
       <div className="flex items-center justify-between gap-3 text-sm">
-        <span className="text-white/50">{t("subtotal")}</span>
-        <span className="text-white/80">
+        <span className="text-neutral-500">{t("subtotal")}</span>
+        <span className="text-neutral-800">
           <Price usd={breakdown.grossSubtotal} />
         </span>
       </div>
 
       {breakdown.bulkDiscount > 0 && (
         <div className="flex items-center justify-between gap-3 text-sm">
-          <span className="text-emerald-300/90">Bulk discount (20%)</span>
-          <span className="text-emerald-300">
+          <span className="text-emerald-700">Bulk discount (20%)</span>
+          <span className="text-emerald-700">
             −<Price usd={breakdown.bulkDiscount} />
           </span>
         </div>
@@ -33,31 +33,31 @@ export default function OrderTotalsSummary({
 
       {breakdown.orderDiscount > 0 && (
         <div className="flex items-center justify-between gap-3 text-sm">
-          <span className="flex items-center gap-2 text-amber-200/90">
+          <span className="flex items-center gap-2 text-amber-700">
             Order discount (5%)
             <OrderDiscountBadge />
           </span>
-          <span className="text-amber-200">
+          <span className="text-amber-700">
             −<Price usd={breakdown.orderDiscount} />
           </span>
         </div>
       )}
 
       <div className="flex items-center justify-between gap-3 text-sm">
-        <span className="text-white/50">{t("shipping")}</span>
-        <span className="text-white/80">
+        <span className="text-neutral-500">{t("shipping")}</span>
+        <span className="text-neutral-800">
           {breakdown.shipping === 0 ? t("free") : <Price usd={breakdown.shipping} />}
         </span>
       </div>
 
-      <div className="border-t border-white/10 pt-3">
-        <p className="text-xs text-white/50">{t("total")}</p>
-        <p className="text-2xl font-semibold tracking-tight text-white">
+      <div className="border-t border-neutral-200 pt-3">
+        <p className="text-xs text-neutral-500">{t("total")}</p>
+        <p className="text-2xl font-semibold tracking-tight text-neutral-900">
           <Price usd={breakdown.total} />
         </p>
       </div>
 
-      <CurrencyNotice className="text-xs text-white/45" />
+      <CurrencyNotice className="text-xs text-neutral-500" />
     </div>
   );
 }

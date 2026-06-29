@@ -14,7 +14,7 @@ import ProductImage from "@/components/media/ProductImage";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const glassCard =
-  "box-border w-full max-w-full rounded-lg border border-white/10 bg-white/[0.06] p-4 shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md sm:p-6";
+  "box-border w-full max-w-full rounded-lg border border-neutral-200 bg-white p-4 shadow-sm sm:p-6";
 
 export default function CheckoutPage() {
   const [hydrated, setHydrated] = useState(false);
@@ -133,7 +133,7 @@ export default function CheckoutPage() {
   };
 
   const shellClass =
-    "mx-auto box-border w-full min-w-0 max-w-3xl px-4 py-6 text-white sm:px-6 sm:py-8";
+    "mx-auto box-border w-full min-w-0 max-w-3xl bg-white px-4 py-6 text-neutral-900 sm:px-6 sm:py-8";
 
   if (!hydrated) {
     return (
@@ -142,7 +142,7 @@ export default function CheckoutPage() {
           <h1 className="mb-6 text-center text-2xl font-bold sm:text-3xl">
             {t("checkout")}
           </h1>
-          <p className="text-center text-gray-400">Loading your cart...</p>
+          <p className="text-center text-neutral-500">Loading your cart...</p>
         </main>
       </div>
     );
@@ -157,7 +157,7 @@ export default function CheckoutPage() {
 
         {cart.length === 0 ? (
           <div className="text-center">
-            <p className="mb-4 text-gray-400">Your cart is empty.</p>
+            <p className="mb-4 text-neutral-500">Your cart is empty.</p>
             <Link href="/catalog" className="text-red-500 hover:underline">
               Browse catalog
             </Link>
@@ -171,7 +171,7 @@ export default function CheckoutPage() {
                   <div>
                     <label
                       htmlFor="checkout-name"
-                      className="mb-1 block text-sm text-gray-400"
+                      className="mb-1 block text-sm text-neutral-500"
                     >
                       Full Name
                     </label>
@@ -181,13 +181,13 @@ export default function CheckoutPage() {
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       placeholder="John Doe"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="checkout-email"
-                      className="mb-1 block text-sm text-gray-400"
+                      className="mb-1 block text-sm text-neutral-500"
                     >
                       Email
                     </label>
@@ -197,13 +197,13 @@ export default function CheckoutPage() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="you@example.com"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="checkout-phone"
-                      className="mb-1 block text-sm text-gray-400"
+                      className="mb-1 block text-sm text-neutral-500"
                     >
                       Phone
                     </label>
@@ -213,13 +213,13 @@ export default function CheckoutPage() {
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       placeholder="+1 555 000 0000"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="checkout-address"
-                      className="mb-1 block text-sm text-gray-400"
+                      className="mb-1 block text-sm text-neutral-500"
                     >
                       Shipping Address
                     </label>
@@ -229,7 +229,7 @@ export default function CheckoutPage() {
                       value={address}
                       onChange={(e) => setAddress(e.target.value)}
                       placeholder="Street, City, Country"
-                      className="box-border w-full max-w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-base text-white outline-none focus:border-red-500"
+                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
                     />
                   </div>
                 </div>
@@ -238,7 +238,7 @@ export default function CheckoutPage() {
               <section className={glassCard}>
                 <h2 className="mb-4 text-xl font-bold">Payment</h2>
                 <p className="mb-4 font-medium">NOWPayments — crypto checkout</p>
-                <p className="mb-4 rounded-lg border border-white/10 bg-black/20 px-4 py-3 text-sm text-gray-300">
+                <p className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
                   Click Pay Now to place your order and open the secure NOWPayments
                   payment page. Bitcoin and 300+ cryptocurrencies accepted.
                 </p>
@@ -253,24 +253,24 @@ export default function CheckoutPage() {
             <div className="min-w-0 space-y-6">
               <section className={glassCard}>
                 <div className="mb-4 flex min-w-0 items-center justify-between gap-2">
-                  <h2 className="shrink-0 text-sm font-medium text-white/70">
+                  <h2 className="shrink-0 text-sm font-medium text-neutral-700">
                     {t("orderSummary")}
                   </h2>
                   <span className="flex min-w-0 max-w-[58%] items-center justify-end gap-1.5 sm:max-w-[65%]">
                     <CheckoutBrandMark />
-                    <span className="truncate text-[11px] leading-tight text-gray-400 sm:text-xs">
+                    <span className="truncate text-[11px] leading-tight text-neutral-500 sm:text-xs">
                       {t("secureCheckout")}
                     </span>
                   </span>
                 </div>
 
-                <div className="divide-y divide-white/5">
+                <div className="divide-y divide-neutral-200">
                   {cart.map((item) => (
                     <div
                       key={item.id}
                       className="flex min-w-0 items-start gap-3 py-3"
                     >
-                      <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-white/5">
+                      <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50">
                         <ProductImage
                           src={item.image || "/product-media/avatars/default.svg"}
                           alt={item.name}
@@ -280,13 +280,13 @@ export default function CheckoutPage() {
                       </div>
 
                       <div className="min-w-0 flex-1">
-                        <h3 className="text-sm font-medium leading-snug text-white">
+                        <h3 className="text-sm font-medium leading-snug text-neutral-900">
                           {item.name}
                         </h3>
                         <div className="mt-1">
                           <ProductDiscountBadge category={item.category} />
                         </div>
-                        <p className="mt-1 text-xs text-white/50">
+                        <p className="mt-1 text-xs text-neutral-500">
                           Qty {item.quantity}
                           {item.quantity > 1 ? (
                             <>
@@ -297,17 +297,17 @@ export default function CheckoutPage() {
                         </p>
                       </div>
 
-                      <p className="shrink-0 text-sm font-medium text-white">
+                      <p className="shrink-0 text-sm font-medium text-neutral-900">
                         <Price usd={item.price * item.quantity} />
                       </p>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-4 border-t border-white/10 pt-4">
+                <div className="mt-4 border-t border-neutral-200 pt-4">
                   <OrderTotalsSummary breakdown={breakdown} />
 
-                  <div className="mt-3 flex items-center justify-center gap-2 text-xs text-white/50">
+                  <div className="mt-3 flex items-center justify-center gap-2 text-xs text-neutral-500">
                     <svg
                       className="h-3.5 w-3.5 shrink-0"
                       viewBox="0 0 24 24"

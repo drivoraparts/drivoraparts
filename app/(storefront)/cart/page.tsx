@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import ProductImage from "@/components/media/ProductImage";
 import { useCart } from "@/context/CartContext";
 import { showToast } from "@/lib/store/toastStore";
 import Price from "@/components/currency/Price";
@@ -20,46 +20,35 @@ export default function CartPage() {
   const formatPrice = useFormatPrice();
 
   return (
-    <div
-      style={{
-        padding: 40,
-        background: "#0b0f19",
-        color: "white",
-        minHeight: "100vh",
-      }}
-    >
-      <h1>Your Cart</h1>
+    <main className="mx-auto min-h-screen max-w-3xl bg-white px-6 py-10 text-neutral-900 sm:px-8">
+      <h1 className="mb-6 text-3xl font-bold">Your Cart</h1>
 
-      {cart.length === 0 && <p>Cart is empty</p>}
+      {cart.length === 0 && <p className="text-neutral-500">Cart is empty</p>}
 
       {cart.map((item) => (
         <div
           key={item.id}
-          style={{
-            display: "flex",
-            gap: 20,
-            marginTop: 20,
-            background: "#111827",
-            padding: 15,
-            borderRadius: 10,
-          }}
+          className="mb-4 flex gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4"
         >
-          <Image
+          <ProductImage
             src={item.image}
-            width={80}
-            height={80}
             alt={item.name}
-            style={{ objectFit: "cover", borderRadius: 8 }}
+            profile="grid"
+            className="h-20 w-20 rounded-lg object-cover"
           />
 
-          <div style={{ flex: 1 }}>
-            <h3>{item.name}</h3>
-            <p>
+          <div className="min-w-0 flex-1">
+            <h3 className="font-semibold">{item.name}</h3>
+            <p className="mt-1 text-sm text-neutral-600">
               <Price usd={item.price} /> x {item.quantity}
             </p>
 
-            <div style={{ display: "flex", gap: 10, marginTop: 10 }}>
-              <button type="button" onClick={() => decreaseQty(item.id)}>
+            <div className="mt-3 flex gap-2">
+              <button
+                type="button"
+                onClick={() => decreaseQty(item.id)}
+                className="rounded border border-neutral-300 px-2 py-1"
+              >
                 −
               </button>
               <button
@@ -68,6 +57,7 @@ export default function CartPage() {
                   increaseQty(item.id);
                   showToast("Cart updated");
                 }}
+                className="rounded border border-neutral-300 px-2 py-1"
               >
                 +
               </button>
@@ -77,6 +67,7 @@ export default function CartPage() {
                   removeFromCart(item.id);
                   showToast("Removed from cart");
                 }}
+                className="text-sm text-red-600"
               >
                 Remove
               </button>
@@ -85,28 +76,20 @@ export default function CartPage() {
         </div>
       ))}
 
-      <hr style={{ margin: "30px 0" }} />
-
-      <h2>Total: {formatPrice(total)}</h2>
-
       {cart.length > 0 && (
-        <Link
-          href="/checkout"
-          style={{
-            display: "inline-block",
-            marginTop: 20,
-            padding: "14px 20px",
-            background: "#22c55e",
-            border: "none",
-            borderRadius: 10,
-            fontWeight: "bold",
-            color: "white",
-            textDecoration: "none",
-          }}
-        >
-          Proceed to Checkout
-        </Link>
+        <>
+          <div className="my-8 border-t border-neutral-200 pt-6">
+            <h2 className="text-xl font-bold">Total: {formatPrice(total)}</h2>
+          </div>
+
+          <Link
+            href="/checkout"
+            className="inline-block rounded-lg bg-red-600 px-6 py-3 font-semibold text-white hover:bg-red-700"
+          >
+            Proceed to Checkout
+          </Link>
+        </>
       )}
-    </div>
+    </main>
   );
 }

@@ -81,7 +81,7 @@ export default async function Page({ params }: PageProps) {
           itemListJsonLd(`${brand} ${category.name} products`, productPaths),
         ]}
       />
-      <main className="min-h-screen p-6 text-white">
+      <main className="min-h-screen bg-white p-6 text-neutral-900">
         <PageHeading title={brand} subtitle={category.name} />
         <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
           {description}
