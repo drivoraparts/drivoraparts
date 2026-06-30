@@ -1,20 +1,17 @@
-"use client";
-
 import Script from "next/script";
 
 type Props = {
-  /** Passed from the server layout so Cloudflare Worker vars work without a rebuild. */
-  pixelId?: string | null;
+  pixelId: string;
 };
 
-export default function MetaPixel({ pixelId: pixelIdProp }: Props) {
-  const pixelId =
-    pixelIdProp?.trim() || process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
-  if (!pixelId) return null;
+/** Meta base pixel — beforeInteractive so Pixel Helper and PageView fire on first load. */
+export default function MetaPixel({ pixelId }: Props) {
+  const id = pixelId.trim();
+  if (!id) return null;
 
   return (
     <>
-      <Script id="meta-pixel-base" strategy="afterInteractive">
+      <Script id="meta-pixel-base" strategy="beforeInteractive">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,7 +21,7 @@ export default function MetaPixel({ pixelId: pixelIdProp }: Props) {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '${pixelId}');
+          fbq('init', '${id}');
           fbq('track', 'PageView');
         `}
       </Script>
@@ -33,7 +30,7 @@ export default function MetaPixel({ pixelId: pixelIdProp }: Props) {
           height="1"
           width="1"
           style={{ display: "none" }}
-          src={`https://www.facebook.com/tr?id=${encodeURIComponent(pixelId)}&ev=PageView&noscript=1`}
+          src={`https://www.facebook.com/tr?id=${encodeURIComponent(id)}&ev=PageView&noscript=1`}
           alt=""
         />
       </noscript>

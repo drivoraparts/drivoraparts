@@ -124,7 +124,7 @@ export default async function RootLayout({
           children
         ) : (
           <>
-            <MetaPixel pixelId={metaPixelId} />
+            {metaPixelId ? <MetaPixel pixelId={metaPixelId} /> : null}
             <StoreProviders
               initialCurrency={initialCurrency}
               initialLocale={initialLocale}
