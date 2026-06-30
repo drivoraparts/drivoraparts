@@ -17,6 +17,8 @@ import {
 import { BASE_CURRENCY } from "@/lib/currency/constants";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
+import MetaPixel from "@/components/analytics/MetaPixel";
+import { getMetaPixelId } from "@/lib/env";
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
@@ -112,6 +114,7 @@ export default async function RootLayout({
     acceptLanguage?.split(",")[0]?.split(";")[0]?.trim() || "en-US";
   const initialCurrency = BASE_CURRENCY;
   const initialLanguage = detectLanguageFromAcceptLanguage(acceptLanguage);
+  const metaPixelId = getMetaPixelId();
 
   return (
     <html lang={initialLanguage} suppressHydrationWarning>
@@ -120,13 +123,16 @@ export default async function RootLayout({
         {isAdmin ? (
           children
         ) : (
-          <StoreProviders
-            initialCurrency={initialCurrency}
-            initialLocale={initialLocale}
-            initialLanguage={initialLanguage}
-          >
-            <LayoutShell>{children}</LayoutShell>
-          </StoreProviders>
+          <>
+            <MetaPixel pixelId={metaPixelId} />
+            <StoreProviders
+              initialCurrency={initialCurrency}
+              initialLocale={initialLocale}
+              initialLanguage={initialLanguage}
+            >
+              <LayoutShell>{children}</LayoutShell>
+            </StoreProviders>
+          </>
         )}
       </body>
     </html>

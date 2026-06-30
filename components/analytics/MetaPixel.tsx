@@ -2,8 +2,14 @@
 
 import Script from "next/script";
 
-export default function MetaPixel() {
-  const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
+type Props = {
+  /** Passed from the server layout so Cloudflare Worker vars work without a rebuild. */
+  pixelId?: string | null;
+};
+
+export default function MetaPixel({ pixelId: pixelIdProp }: Props) {
+  const pixelId =
+    pixelIdProp?.trim() || process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
   if (!pixelId) return null;
 
   return (

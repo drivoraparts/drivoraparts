@@ -25,5 +25,8 @@
       "enabled": true,
       "invocation_logs": true
     }
+  },
+  "vars": {
+    "NEXT_PUBLIC_META_PIXEL_ID": "1740039600509989"
   }
 }

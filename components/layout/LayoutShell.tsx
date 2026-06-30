@@ -5,8 +5,6 @@ import dynamic from "next/dynamic";
 import GlobalHeader from "./GlobalHeader";
 import GlobalDrawer from "./GlobalDrawer";
 import GlobalFooter from "./GlobalFooter";
-import MetaPixel from "@/components/analytics/MetaPixel";
-
 const MarketOverlay = dynamic(() => import("../market/MarketOverlay"), {
   ssr: false,
 });
@@ -22,7 +20,6 @@ export default function LayoutShell({ children }: Props) {
 
   return (
     <div className="site-shell">
-      <MetaPixel />
       {/* HEADER */}
       <GlobalHeader
         setMenuOpen={setMenuOpen}
