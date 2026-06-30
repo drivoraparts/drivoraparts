@@ -66,7 +66,10 @@ function metaBrand(product: Product): string {
   return getBrandBySlug(product.brand)?.name ?? product.brand;
 }
 
-function metaPrice(product: Product): string {
+function metaPrice(product: Product): string | null {
+  if (typeof product.price !== "number" || !Number.isFinite(product.price)) {
+    return null;
+  }
   return `${product.price.toFixed(2)} ${BASE_CURRENCY}`;
 }
 
@@ -78,13 +81,16 @@ export function toMetaCatalogFeedRow(product: Product): MetaCatalogFeedRow | nul
   const image = getProductThumbnail(product);
   if (!isFeedReadyImage(image)) return null;
 
+  const price = metaPrice(product);
+  if (!price) return null;
+
   return {
     id: String(product.id),
     title: product.name.slice(0, 200),
     description: metaDescription(product),
     availability: metaAvailability(product),
     condition: metaCondition(product),
-    price: metaPrice(product),
+    price,
     link: absoluteUrl(`/product/${product.id}`),
     image_link: absoluteImageUrl(image),
     brand: metaBrand(product).slice(0, 100),
