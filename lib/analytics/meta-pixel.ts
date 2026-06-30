@@ -3,35 +3,31 @@ import type { AnalyticsEventName } from "./types";
 declare global {
   interface Window {
     fbq?: (...args: unknown[]) => void;
-    _fbq?: unknown;
   }
 }
 
-export function getMetaPixelId(): string | null {
-  const id = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
-  return id || null;
+function fbq(...args: unknown[]): void {
+  if (typeof window === "undefined" || typeof window.fbq !== "function") return;
+  window.fbq(...args);
 }
 
 export function trackMetaEvent(
   eventName: AnalyticsEventName,
   payload: Record<string, unknown> = {}
 ): void {
-  if (typeof window === "undefined" || !window.fbq) return;
-
   switch (eventName) {
     case "product_view":
-      window.fbq("track", "ViewContent", {
-        content_ids: payload.productId ? [String(payload.productId)] : undefined,
+      fbq("track", "ViewContent", {
+        content_ids: [String(payload.productId ?? "")],
         content_name: payload.productName,
-        content_category: payload.category,
         content_type: "product",
-        value: payload.price,
+        content_category: payload.category,
         currency: "USD",
       });
       break;
     case "add_to_cart":
-      window.fbq("track", "AddToCart", {
-        content_ids: payload.productId ? [String(payload.productId)] : undefined,
+      fbq("track", "AddToCart", {
+        content_ids: [String(payload.productId ?? "")],
         content_name: payload.productName,
         content_type: "product",
         value: payload.price,
@@ -39,20 +35,28 @@ export function trackMetaEvent(
       });
       break;
     case "checkout_start":
-      window.fbq("track", "InitiateCheckout", {
+      fbq("track", "InitiateCheckout", {
         value: payload.total,
         currency: "USD",
         num_items: payload.itemCount,
       });
       break;
     case "order_completed":
-      window.fbq("track", "Purchase", {
-        value: payload.total,
-        currency: "USD",
-        num_items: payload.itemCount,
-      });
       break;
     default:
       break;
   }
+}
+
+export function trackMetaPurchase(input: {
+  orderId: string;
+  value: number;
+  currency?: string;
+}): void {
+  fbq("track", "Purchase", {
+    value: input.value,
+    currency: input.currency ?? "USD",
+    content_type: "product",
+    order_id: input.orderId,
+  });
 }

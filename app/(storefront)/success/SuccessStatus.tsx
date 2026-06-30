@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Price from "@/components/currency/Price";
+import { trackMetaPurchase } from "@/lib/analytics/meta-pixel";
 
 type View = "pending" | "paid" | "failed" | "unknown";
 
@@ -46,6 +47,7 @@ export default function SuccessStatus({
   );
   const [total, setTotal] = useState<number | null>(null);
   const [resolvedOrderId, setResolvedOrderId] = useState<string | null>(orderId);
+  const purchaseTracked = useRef(false);
 
   useEffect(() => {
     if (!orderId && !npPaymentId) return;
@@ -85,6 +87,17 @@ export default function SuccessStatus({
 
         if (data.status === "paid") {
           setView("paid");
+          if (
+            !purchaseTracked.current &&
+            typeof data.total === "number" &&
+            typeof data.orderId === "string"
+          ) {
+            purchaseTracked.current = true;
+            trackMetaPurchase({
+              orderId: data.orderId,
+              value: data.total,
+            });
+          }
           return true;
         }
         if (data.status === "failed" || data.status === "cancelled") {
