@@ -88,10 +88,12 @@ export function getTawkWidgetId(): string {
   return optional("NEXT_PUBLIC_TAWK_WIDGET_ID", "1jrs9hdba");
 }
 
-/** Meta (Facebook) Pixel ID from Events Manager — optional until ads go live. */
-export function getMetaPixelId(): string | null {
-  const id = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
-  return id || null;
+/** Meta Pixel — drivoraparts event dataset (Events Manager). */
+export const META_PIXEL_ID = "1275857431290062";
+
+/** Meta (Facebook) Pixel ID — fixed so stale Cloudflare env cannot serve an old pixel. */
+export function getMetaPixelId(): string {
+  return META_PIXEL_ID;
 }
 
 export function isSupabaseConfigured(): boolean {
