@@ -23,6 +23,7 @@ export default function FooterContent() {
           <h3 className="mb-3 text-red-500">{t("quickLinks")}</h3>
           <div className="flex flex-col gap-2 text-sm text-neutral-600">
             <Link href="/catalog/all">All Products</Link>
+            <Link href="/cart">{t("cart")}</Link>
             <Link href="/catalog">Enter Market</Link>
             <Link href="/">{t("home")}</Link>
             <Link href="/contact">{t("contactSupport")}</Link>

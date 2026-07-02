@@ -8,6 +8,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 
 const NAV_LINKS = [
   { href: "/catalog/all", label: "Shop" },
+  { href: "/cart", label: "Cart" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ] as const;

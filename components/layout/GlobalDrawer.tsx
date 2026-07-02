@@ -35,9 +35,14 @@ export default function GlobalDrawer({
             <div className="flex flex-col gap-6 text-neutral-700">
               <div>
                 <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("marketplace")}</p>
-                <Link href="/catalog/all" className="transition hover:text-neutral-900">
-                  {t("browseCatalog")}
-                </Link>
+                <div className="flex flex-col gap-2">
+                  <Link href="/catalog/all" className="transition hover:text-neutral-900">
+                    {t("browseCatalog")}
+                  </Link>
+                  <Link href="/cart" className="transition hover:text-neutral-900" onClick={() => setMenuOpen(false)}>
+                    {t("cart")}
+                  </Link>
+                </div>
               </div>
 
               <div>
