@@ -6,6 +6,7 @@ export type EmailPayload = {
   to: string;
   subject: string;
   html: string;
+  replyTo?: string;
 };
 
 export async function sendEmail(payload: EmailPayload): Promise<boolean> {
@@ -28,6 +29,7 @@ export async function sendEmail(payload: EmailPayload): Promise<boolean> {
         to: payload.to,
         subject: payload.subject,
         html: payload.html,
+        ...(payload.replyTo ? { reply_to: payload.replyTo } : {}),
       }),
     });
 
