@@ -1,33 +1,32 @@
 import Link from "next/link";
 import { preload } from "react-dom";
 import HomeParallaxHero from "@/components/home/HomeParallaxHero";
-import OptimizedImage from "@/components/media/OptimizedImage";
 import { routes } from "@/lib/inventory";
-import { directAssetUrl, optimizeImageUrl } from "@/lib/media/optimize-image";
+import { directAssetUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata } from "@/lib/seo";
 
-const HERO_IMAGE = "/home/pexels-juan-montes-92812630-11456554.jpg";
+const HERO_IMAGE = "/home/hero-1280.webp";
 
 const sections = [
   {
     title: "Precision Engine Craft",
     text: "Every component engineered for performance, endurance, and speed.",
-    image: "/home/pexels-sejio402-29181492.jpg",
+    image: "/home/section-engine-720.webp",
   },
   {
     title: "Suspension Control",
     text: "Built for stability, grip, and unmatched driving confidence.",
-    image: "/home/pexels-matreding-9381019.jpg",
+    image: "/home/section-suspension-720.webp",
   },
   {
     title: "Braking Power",
     text: "Stop with control. Respond with precision under any condition.",
-    image: "/home/pexels-garvin-st-villier-719266-14277598.jpg",
+    image: "/home/section-brakes-720.webp",
   },
   {
     title: "Performance Electronics",
     text: "Smart systems powering modern automotive performance.",
-    image: "/home/pexels-stephanlouis-7012890.jpg",
+    image: "/home/section-electronics-720.webp",
   },
 ] as const;
 
@@ -39,14 +38,13 @@ export const metadata = buildPageMetadata({
 });
 
 export default function Home() {
-  const heroFallback = directAssetUrl(HERO_IMAGE);
-  const heroSrc = optimizeImageUrl(heroFallback, "hero");
+  const heroSrc = directAssetUrl(HERO_IMAGE);
   preload(heroSrc, { as: "image", fetchPriority: "high" });
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-[var(--background)] text-neutral-900">
-      <section className="relative flex h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden">
-        <HomeParallaxHero heroSrc={heroSrc} heroFallback={heroFallback} heroAlt="Performance automotive hero" />
+      <section className="relative -mt-[72px] flex min-h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden pt-[72px] sm:-mt-[80px] sm:pt-[80px]">
+        <HomeParallaxHero heroSrc={heroSrc} heroAlt="Performance automotive hero" />
 
         <div className="pointer-events-none absolute inset-0 z-10 bg-neutral-900/50" />
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/30 via-neutral-900/45 to-neutral-900/70" />
@@ -86,10 +84,14 @@ export default function Home() {
           }`}
         >
           <div className="aspect-[4/3] w-full md:w-1/2">
-            <OptimizedImage
-              src={item.image}
+            <img
+              src={directAssetUrl(item.image)}
               alt={item.title}
-              profile="section"
+              width={720}
+              height={540}
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="h-full w-full rounded-xl border border-neutral-200 object-cover shadow-lg"
             />
           </div>

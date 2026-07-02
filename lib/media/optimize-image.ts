@@ -48,7 +48,7 @@ export function optimizeImageUrl(
   const path = encodeAssetPath(rawPath);
   if (!shouldOptimize(rawPath)) return src;
 
-  const enabled = process.env.NEXT_PUBLIC_CF_IMAGE_OPTIMIZATION !== "false";
+  const enabled = process.env.NEXT_PUBLIC_CF_IMAGE_OPTIMIZATION === "true";
   if (process.env.NODE_ENV !== "production" || !enabled) {
     return path;
   }
