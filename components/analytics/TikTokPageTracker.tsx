@@ -13,7 +13,16 @@ export default function TikTokPageTracker() {
       isFirst.current = false;
       return;
     }
-    window.ttq?.page?.();
+
+    const fire = () => {
+      window.ttq?.page?.();
+    };
+
+    if (typeof window.ttq?.ready === "function") {
+      window.ttq.ready(fire);
+    } else {
+      fire();
+    }
   }, [pathname]);
 
   return null;
