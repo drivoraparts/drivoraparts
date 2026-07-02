@@ -1,3 +1,4 @@
+import { TIKTOK_PIXEL_ID } from "@/lib/env";
 import type { AnalyticsEventName } from "./types";
 import {
   readMetaCheckoutItems,
@@ -7,17 +8,33 @@ import {
 declare global {
   interface Window {
     ttq?: {
-      track: (event: string, payload?: Record<string, unknown>) => void;
-      page: () => void;
+      track?: (event: string, payload?: Record<string, unknown>) => void;
+      page?: () => void;
+      ready?: (callback: () => void) => void;
+      instance?: (pixelId: string) => {
+        track: (event: string, payload?: Record<string, unknown>) => void;
+      };
     };
   }
 }
 
 function ttqTrack(event: string, payload: Record<string, unknown> = {}): void {
-  if (typeof window === "undefined" || typeof window.ttq?.track !== "function") {
-    return;
+  if (typeof window === "undefined" || !window.ttq) return;
+
+  const run = () => {
+    const bound = window.ttq?.instance?.(TIKTOK_PIXEL_ID);
+    if (bound?.track) {
+      bound.track(event, payload);
+      return;
+    }
+    window.ttq?.track?.(event, payload);
+  };
+
+  if (typeof window.ttq.ready === "function") {
+    window.ttq.ready(run);
+  } else {
+    run();
   }
-  window.ttq.track(event, payload);
 }
 
 function catalogId(value: unknown): string | null {
@@ -58,7 +75,7 @@ export function trackTikTokEvent(
       const id = catalogId(payload.productId);
       if (!id) break;
       ttqTrack("ViewContent", {
-        ...tiktokContents([{ id: id, quantity: 1 }], payload.productName),
+        ...tiktokContents([{ id, quantity: 1 }], payload.productName),
         value: typeof payload.price === "number" ? payload.price : undefined,
         currency: "USD",
       });

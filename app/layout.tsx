@@ -18,7 +18,8 @@ import { BASE_CURRENCY } from "@/lib/currency/constants";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import MetaPixel from "@/components/analytics/MetaPixel";
-import TikTokPixel from "@/components/analytics/TikTokPixel";
+import TikTokPageTracker from "@/components/analytics/TikTokPageTracker";
+import { buildTikTokBaseScript } from "@/lib/analytics/tiktok-base-script";
 import { getMetaPixelId, getTikTokPixelId } from "@/lib/env";
 
 /**
@@ -120,6 +121,15 @@ export default async function RootLayout({
 
   return (
     <html lang={initialLanguage} suppressHydrationWarning>
+      <head>
+        {!isAdmin ? (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: buildTikTokBaseScript(tikTokPixelId),
+            }}
+          />
+        ) : null}
+      </head>
       <body>
         <JsonLdScript data={[organizationJsonLd(), websiteJsonLd()]} />
         {isAdmin ? (
@@ -127,7 +137,7 @@ export default async function RootLayout({
         ) : (
           <>
             <MetaPixel pixelId={metaPixelId} />
-            <TikTokPixel pixelId={tikTokPixelId} />
+            <TikTokPageTracker />
             <StoreProviders
               initialCurrency={initialCurrency}
               initialLocale={initialLocale}
