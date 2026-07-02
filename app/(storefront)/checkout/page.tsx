@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { trackEvent } from "@/lib/analytics/client";
+import { storeMetaCheckoutItems } from "@/lib/analytics/meta-pixel";
 import { showToast } from "@/lib/store/toastStore";
 import Price from "@/components/currency/Price";
 import OrderTotalsSummary from "@/components/checkout/OrderTotalsSummary";
@@ -60,6 +61,7 @@ export default function CheckoutPage() {
     trackEvent("checkout_start", {
       itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
       total: breakdown.total,
+      items: cart.map((item) => ({ id: item.id, quantity: item.quantity })),
     });
   }, [hydrated, cart, breakdown.total]);
 
@@ -123,6 +125,10 @@ export default function CheckoutPage() {
         total: data.total,
         itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
       });
+
+      storeMetaCheckoutItems(
+        cart.map((item) => ({ id: item.id, quantity: item.quantity }))
+      );
 
       clearCart();
       window.location.assign(paymentUrl);

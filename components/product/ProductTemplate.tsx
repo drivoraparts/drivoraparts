@@ -66,6 +66,7 @@ export default function ProductTemplate({
       productId: product.id,
       productName: product.name,
       category: product.category,
+      price: product.price,
     });
   }, [product.id, product.name, product.category]);
 
