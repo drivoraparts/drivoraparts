@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact/ContactForm";
 import CompanyAddress from "@/components/content/CompanyAddress";
-import { FACEBOOK_PAGE_LABEL, FACEBOOK_PAGE_URL } from "@/lib/content/social-links";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -22,20 +21,6 @@ export default function ContactPage() {
       <ContactForm />
 
       <div className="mt-8 space-y-6 text-neutral-600">
-        <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
-          <h2 className="mb-3 text-xl font-semibold text-neutral-900">Follow us</h2>
-          <p>
-            <a
-              href={FACEBOOK_PAGE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-600 hover:text-red-700"
-            >
-              {FACEBOOK_PAGE_LABEL}
-            </a>
-          </p>
-        </div>
-
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
           <h2 className="mb-3 text-xl font-semibold text-neutral-900">
             U.S. Corporate Headquarters
