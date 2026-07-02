@@ -58,6 +58,8 @@ export const UI = {
   currencyFooter:
     "Prices auto-converted to {currency}. Checkout is charged in USD.",
   descriptionTitle: "Description",
+  productImageNotice:
+    "What you see is what you get — exact item, as pictured. Want it upgraded? We’ll refurbish it to your spec.",
   specificationsTitle: "Specifications",
   fitmentLogisticsTitle: "Fitment & Logistics",
   shippingWarrantyTitle: "Shipping & Warranty",

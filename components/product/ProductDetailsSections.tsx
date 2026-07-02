@@ -232,7 +232,32 @@ export default function ProductDetailsSections({
   return (
     <div className="product-details-sections">
       <CollapsibleSection title={t("descriptionTitle")} defaultOpen theme={theme}>
-        <TranslatedText as="span">{descriptionBody}</TranslatedText>
+        <p
+          className={
+            theme === "pro"
+              ? "mb-4 rounded-sm border border-neutral-300 bg-white px-3 py-2.5 text-sm leading-relaxed text-neutral-700"
+              : undefined
+          }
+          style={
+            theme === "pro"
+              ? undefined
+              : {
+                  marginBottom: "14px",
+                  padding: "10px 12px",
+                  borderRadius: "6px",
+                  border: "1px solid rgba(255,255,255,0.12)",
+                  background: "rgba(255,255,255,0.04)",
+                  fontSize: "14px",
+                  lineHeight: 1.55,
+                  color: "rgba(255,255,255,0.82)",
+                }
+          }
+        >
+          <TranslatedText as="span">{t("productImageNotice")}</TranslatedText>
+        </p>
+        {descriptionBody ? (
+          <TranslatedText as="span">{descriptionBody}</TranslatedText>
+        ) : null}
       </CollapsibleSection>
 
       {specifications && (
