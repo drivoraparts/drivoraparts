@@ -1,5 +1,6 @@
 import type { AnalyticsEventName } from "./types";
 import { trackMetaEvent } from "./meta-pixel";
+import { trackTikTokEvent } from "./tiktok-pixel";
 
 export function trackEvent(
   eventName: AnalyticsEventName,
@@ -8,6 +9,7 @@ export function trackEvent(
   if (typeof window === "undefined") return;
 
   trackMetaEvent(eventName, payload);
+  trackTikTokEvent(eventName, payload);
 
   fetch("/api/analytics", {
     method: "POST",

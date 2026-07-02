@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Price from "@/components/currency/Price";
-import { trackMetaPurchase } from "@/lib/analytics/meta-pixel";
+import {
+  readMetaCheckoutItems,
+  trackMetaPurchase,
+} from "@/lib/analytics/meta-pixel";
+import { trackTikTokPurchase } from "@/lib/analytics/tiktok-pixel";
 
 type View = "pending" | "paid" | "failed" | "unknown";
 
@@ -93,9 +97,16 @@ export default function SuccessStatus({
             typeof data.orderId === "string"
           ) {
             purchaseTracked.current = true;
+            const items = readMetaCheckoutItems();
+            trackTikTokPurchase({
+              orderId: data.orderId,
+              value: data.total,
+              items,
+            });
             trackMetaPurchase({
               orderId: data.orderId,
               value: data.total,
+              items,
             });
           }
           return true;

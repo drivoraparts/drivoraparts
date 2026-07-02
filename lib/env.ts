@@ -96,6 +96,13 @@ export function getMetaPixelId(): string {
   return META_PIXEL_ID;
 }
 
+/** TikTok Pixel ID — Drivora Parts TikTok Ads Manager. */
+export const TIKTOK_PIXEL_ID = "D934B6JC77UB3EFMUH9G";
+
+export function getTikTokPixelId(): string {
+  return TIKTOK_PIXEL_ID;
+}
+
 export function isSupabaseConfigured(): boolean {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "";

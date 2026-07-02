@@ -18,7 +18,8 @@ import { BASE_CURRENCY } from "@/lib/currency/constants";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import MetaPixel from "@/components/analytics/MetaPixel";
-import { getMetaPixelId } from "@/lib/env";
+import TikTokPixel from "@/components/analytics/TikTokPixel";
+import { getMetaPixelId, getTikTokPixelId } from "@/lib/env";
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
@@ -115,6 +116,7 @@ export default async function RootLayout({
   const initialCurrency = BASE_CURRENCY;
   const initialLanguage = detectLanguageFromAcceptLanguage(acceptLanguage);
   const metaPixelId = getMetaPixelId();
+  const tikTokPixelId = getTikTokPixelId();
 
   return (
     <html lang={initialLanguage} suppressHydrationWarning>
@@ -125,6 +127,7 @@ export default async function RootLayout({
         ) : (
           <>
             <MetaPixel pixelId={metaPixelId} />
+            <TikTokPixel pixelId={tikTokPixelId} />
             <StoreProviders
               initialCurrency={initialCurrency}
               initialLocale={initialLocale}
