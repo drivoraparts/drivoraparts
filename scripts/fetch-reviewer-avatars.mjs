@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(__dirname, "../public/reviews/avatars");
-const COUNT = 24;
+const COUNT = 96;
 
 async function downloadOne(url, dest) {
   const res = await fetch(url, {

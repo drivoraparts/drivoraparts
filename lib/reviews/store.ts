@@ -5,7 +5,7 @@ import type {
   ReviewSubmissionContext,
 } from "./types";
 
-const DEFAULT_AVATAR = "/product-media/avatars/default.svg";
+const DEFAULT_AVATAR = "/reviews/avatars/01.jpg";
 
 let reviewStore: ProductReview[] = generateEngineCatalogReviews();
 

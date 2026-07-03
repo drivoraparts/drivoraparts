@@ -71,21 +71,6 @@ export default function ReviewCard({ review }: ReviewCardProps) {
 
       <p className="review-card-content">{review.review}</p>
 
-      {review.photos && review.photos.length > 0 && (
-        <div className="review-card-photos">
-          {review.photos.map((src) => (
-            <img
-              key={src}
-              src={directAssetUrl(src)}
-              alt="Customer delivery photo"
-              loading="lazy"
-              decoding="async"
-              className="review-card-photo"
-            />
-          ))}
-        </div>
-      )}
-
       <style jsx>{`
         .review-card {
           padding: 14px;
@@ -161,29 +146,6 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           font-size: 14px;
           line-height: 1.6;
           color: #374151;
-        }
-
-        .review-card-photos {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-          margin-top: 12px;
-        }
-
-        .review-card-photo {
-          width: 88px;
-          height: 88px;
-          border-radius: 6px;
-          object-fit: cover;
-          border: 1px solid #e5e7eb;
-          background: #f9fafb;
-        }
-
-        @media (min-width: 640px) {
-          .review-card-photo {
-            width: 104px;
-            height: 104px;
-          }
         }
       `}</style>
     </article>

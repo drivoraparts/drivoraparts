@@ -19,7 +19,8 @@
     "upload:cloudflare": "npm run pages:build && npx opennextjs-cloudflare upload",
     "start": "next start",
     "icons:generate": "node scripts/generate-brand-icons.mjs",
-    "normalize:bodyparts": "node scripts/normalize-bodyparts-media.mjs"
+    "normalize:bodyparts": "node scripts/normalize-bodyparts-media.mjs",
+    "seed-reviews:avatars": "node scripts/fetch-reviewer-avatars.mjs"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.19.11",

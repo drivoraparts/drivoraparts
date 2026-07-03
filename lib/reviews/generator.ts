@@ -1,150 +1,139 @@
-import {
-  getProductThumbnail,
-  resolveProductGallery,
-} from "@/lib/inventory/media";
 import { products } from "@/lib/inventory/products";
 import type { ProductReview } from "./types";
 
-const AVATAR_COUNT = 24;
+const AVATAR_COUNT = 96;
 
 const FIRST_NAMES = [
-  "John",
-  "Mike",
-  "David",
-  "Alex",
-  "Chris",
-  "Daniel",
-  "Ryan",
-  "James",
-  "Mark",
-  "Luke",
-  "Brian",
-  "Kevin",
-  "Jason",
-  "Eric",
-  "Matt",
-  "Nick",
-  "Adam",
-  "Scott",
-  "Tyler",
-  "Jordan",
-  "Justin",
-  "Brandon",
-  "Aaron",
-  "Kyle",
-  "Sean",
-  "Patrick",
-  "Derek",
-  "Greg",
-  "Ian",
   "Marcus",
+  "Jordan",
+  "Tyler",
+  "Brandon",
+  "Derek",
+  "Kevin",
+  "Ryan",
+  "Justin",
+  "Aaron",
+  "Carlos",
+  "Ethan",
+  "Noah",
+  "Liam",
+  "Mason",
+  "Logan",
+  "Aiden",
+  "Elijah",
+  "Lucas",
+  "Nathan",
+  "Caleb",
+  "Travis",
+  "Shawn",
+  "Andre",
+  "Jamal",
+  "Diego",
+  "Rafael",
+  "Colton",
+  "Brody",
+  "Trevor",
+  "Wesley",
 ];
 
 const LAST_NAMES = [
-  "Carter",
-  "Thompson",
-  "Williams",
-  "Johnson",
-  "Brown",
-  "Smith",
-  "Wilson",
-  "Taylor",
-  "Anderson",
-  "Miller",
-  "Davis",
-  "Martinez",
-  "Robinson",
-  "Clark",
-  "Lewis",
-  "Walker",
-  "Hall",
-  "Allen",
-  "Young",
-  "King",
-  "Wright",
-  "Scott",
-  "Green",
-  "Baker",
   "Adams",
-  "Nelson",
+  "Baker",
+  "Brooks",
+  "Campbell",
+  "Carter",
+  "Clark",
+  "Collins",
+  "Cooper",
+  "Davis",
+  "Edwards",
+  "Evans",
+  "Foster",
+  "Garcia",
+  "Gray",
+  "Hall",
+  "Harris",
+  "Hayes",
   "Hill",
-  "Moore",
-  "Reed",
-  "Cook",
+  "Howard",
+  "Hughes",
+  "Jackson",
+  "Johnson",
+  "Kelly",
+  "King",
+  "Lee",
+  "Lewis",
+  "Long",
+  "Martin",
+  "Miller",
+  "Mitchell",
 ];
 
+/** Mostly 4–5 stars, occasional middling/negative reviews. */
 const RATING_DISTRIBUTION: Array<1 | 2 | 3 | 4 | 5> = [
-  ...Array(40).fill(5),
-  ...Array(30).fill(4),
-  ...Array(15).fill(3),
-  ...Array(10).fill(2),
-  ...Array(5).fill(1),
+  ...Array(52).fill(5),
+  ...Array(28).fill(4),
+  ...Array(10).fill(3),
+  ...Array(6).fill(2),
+  ...Array(4).fill(1),
 ] as Array<1 | 2 | 3 | 4 | 5>;
-
-function fillProduct(template: string, productName: string): string {
-  return template.replaceAll("{{product}}", productName);
-}
 
 const COMMENTS: Record<1 | 2 | 3 | 4 | 5, string[]> = {
   5: [
-    "{{product}} showed up exactly as pictured. Clean unit and honest listing.",
-    "Verified purchase on the {{product}} — fired right up after install.",
-    "The {{product}} was crated well and matched every spec in the description.",
-    "Super happy with my {{product}}. Seller communication was on point.",
-    "Installed the {{product}} last weekend. Performance is exactly what I wanted.",
-    "Tracked shipping the whole way. {{product}} arrived with zero damage.",
-    "Best online parts buy I've had in a while. {{product}} looks great on the truck.",
-    "Compression and leak-down on the {{product}} were right where they should be.",
-    "Would buy this {{product}} again. Packaging was heavy duty and professional.",
-    "The {{product}} bolted in without surprises. Listing photos were accurate.",
+    "Showed up on time and matched the listing photos. No surprises at all.",
+    "Packaging was heavy duty. Unit looked clean straight out of the crate.",
+    "Install went smoother than expected. Everything bolted up where it should.",
+    "Seller answered my fitment question before I ordered. That helped a lot.",
+    "Exactly what I needed for the build. Would order from here again.",
+    "Freight was tracked the whole way. Part arrived with zero damage.",
+    "Honest listing. Compression and leak-down numbers were right on the money.",
+    "Better experience than my last online parts purchase, hands down.",
+    "Quality is there. You can tell this was handled like a real powertrain part.",
+    "Fast turnaround and solid communication. Very happy with this buy.",
+    "Looks even cleaner in person than the photos suggested.",
+    "No missing hardware. Manual and accessories were all accounted for.",
+    "Shop guys were impressed with the condition when it landed.",
+    "Price was fair for what showed up. No bait-and-switch nonsense.",
+    "Runs strong after break-in. Exactly what the listing promised.",
   ],
   4: [
-    "{{product}} is solid overall. Took a few extra days but worth the wait.",
-    "Happy with the {{product}}. Minor cosmetic mark but nothing that affects function.",
-    "Good value on the {{product}}. Install notes could be a little clearer.",
-    "The {{product}} runs strong. Delivery window ran a bit long.",
-    "Overall pleased with the {{product}}. Would recommend with small caveats.",
-    "Quality is there on the {{product}}. Dock scheduling took an extra day.",
-    "Good experience buying the {{product}}. Support answered before I ordered.",
+    "Good part overall. Shipping took a few extra days but worth the wait.",
+    "Small cosmetic scuff on the housing, nothing that affects function.",
+    "Install notes could be clearer, but the unit itself is solid.",
+    "Dock scheduling was a little slow, product quality is still there.",
+    "Happy with the purchase. Would recommend with minor caveats.",
+    "Runs well. Packaging was average but the part was protected fine.",
+    "Support replied before I pulled the trigger on the order. Appreciated that.",
+    "Minor paint chip on arrival, function is 100% though.",
   ],
   3: [
-    "The {{product}} works as described. Packaging was just average.",
-    "Decent {{product}} for the price. Photos made it look slightly cleaner.",
-    "Functional {{product}}. Middle-of-the-road experience overall.",
-    "The {{product}} is okay. Expected a bit more detail in the listing.",
+    "Works as described. Experience was just middle of the road overall.",
+    "Decent for the price. Listing made it look a touch cleaner than it is.",
+    "Functional unit. Expected a bit more detail in the write-up.",
+    "Got the job done. Nothing special good or bad.",
   ],
   2: [
-    "Some cosmetic damage on the {{product}} but still usable.",
-    "The {{product}} runs, but I had to chase missing hardware after unboxing.",
-    "Not thrilled with the exterior finish on the {{product}}.",
-    "Support was slow about a bent bracket on the {{product}}.",
+    "Had to chase down a missing bracket after unboxing.",
+    "Some exterior finish issues, still usable but not thrilled.",
+    "Support was slow getting back about a bent flange.",
+    "Longer lead time than quoted at checkout.",
   ],
   1: [
-    "The {{product}} did not match the listing closely enough for me.",
-    "Long delays and unclear updates on my {{product}} order.",
-    "Had to dispute a missing component on the {{product}}.",
+    "Listing details did not match what showed up.",
+    "Order updates were unclear and the delay dragged on.",
+    "Had to dispute a missing component with support.",
   ],
 };
 
-const PHOTO_COMMENTS: string[] = [
-  "Added photos of the {{product}} right off the pallet — matches the listing.",
-  "Uploaded a few pics after install. The {{product}} looks even better in person.",
-  "See attached delivery photos. {{product}} was wrapped better than most freight I've seen.",
-  "Dropped install photos below. Very happy with how the {{product}} turned out.",
-  "Unboxing pics attached — {{product}} was complete and exactly as advertised.",
-  "Photos from the shop floor. {{product}} cleaned up nice before we buttoned everything up.",
-];
-
-/** Fixed counts for flagship listings; others use deterministic 1–150 spread. */
 const REVIEW_COUNT_OVERRIDES: Record<number, number> = {
-  1: 97,
-  34: 143,
-  39: 121,
-  40: 127,
-  42: 74,
-  43: 68,
-  46: 61,
-  49: 98,
+  1: 47,
+  34: 63,
+  39: 58,
+  40: 71,
+  42: 39,
+  43: 34,
+  46: 31,
+  49: 44,
 };
 
 function createRng(seed: number) {
@@ -155,6 +144,15 @@ function createRng(seed: number) {
     t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
+}
+
+function hashString(input: string): number {
+  let hash = 2166136261;
+  for (let i = 0; i < input.length; i += 1) {
+    hash ^= input.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
 }
 
 function shuffleWithRng<T>(items: T[], rng: () => number): T[] {
@@ -171,32 +169,14 @@ function pickRating(rng: () => number): 1 | 2 | 3 | 4 | 5 {
   return RATING_DISTRIBUTION[index] ?? 5;
 }
 
-function shortProductName(name: string): string {
-  const trimmed = name.trim();
-  if (trimmed.length <= 72) return trimmed;
-  return `${trimmed.slice(0, 69)}…`;
-}
-
-function pickComment(
-  rating: 1 | 2 | 3 | 4 | 5,
-  rng: () => number,
-  productName: string,
-  withPhotos: boolean
-): string {
-  if (withPhotos) {
-    const photoPool = PHOTO_COMMENTS;
-    const template =
-      photoPool[Math.floor(rng() * photoPool.length)] ?? photoPool[0];
-    return fillProduct(template, productName);
-  }
-
+function pickComment(rating: 1 | 2 | 3 | 4 | 5, rng: () => number): string {
   const pool = COMMENTS[rating];
-  const template = pool[Math.floor(rng() * pool.length)] ?? pool[0];
-  return fillProduct(template, productName);
+  return pool[Math.floor(rng() * pool.length)] ?? pool[0];
 }
 
-function buildAvatarUrl(reviewerName: string, index: number): string {
-  const slot = (index % AVATAR_COUNT) + 1;
+/** Stable portrait per reviewer name — local randomuser.me downloads. */
+function buildAvatarUrl(reviewerName: string): string {
+  const slot = (hashString(reviewerName) % AVATAR_COUNT) + 1;
   return `/reviews/avatars/${String(slot).padStart(2, "0")}.jpg`;
 }
 
@@ -204,7 +184,7 @@ function buildUniqueNames(count: number, rng: () => number): string[] {
   const combos: string[] = [];
   for (const first of FIRST_NAMES) {
     for (const last of LAST_NAMES) {
-      combos.push(`${first} ${last}`);
+      combos.push(`${first} ${last[0]}.`);
     }
   }
 
@@ -214,43 +194,13 @@ function buildUniqueNames(count: number, rng: () => number): string[] {
   }
 
   const names = [...shuffled];
-  let i = 0;
+  let suffix = 2;
   while (names.length < count) {
-    names.push(`${shuffled[i % shuffled.length]} ${names.length + 1}`);
-    i += 1;
+    const base = shuffled[names.length % shuffled.length];
+    names.push(`${base.replace(/\.$/, "")}${suffix}.`);
+    suffix += 1;
   }
   return names;
-}
-
-function pickDeliveryPhotos(
-  productId: number,
-  rating: number,
-  rng: () => number,
-  index: number
-): string[] | undefined {
-  if (rating < 4) return undefined;
-  if (index % 5 !== 0 && rng() > 0.32) return undefined;
-
-  const product = products.find((p) => p.id === productId);
-  if (!product) return undefined;
-
-  const gallery = resolveProductGallery(
-    getProductThumbnail(product),
-    product.images
-  ).filter((src) => src.startsWith("/product-media/") && !src.includes("default.svg"));
-
-  if (gallery.length === 0) return undefined;
-
-  const count = Math.min(gallery.length, rng() > 0.55 ? 3 : 2);
-  const start = Math.floor(rng() * gallery.length);
-  const picked: string[] = [];
-
-  for (let i = 0; i < count; i += 1) {
-    const src = gallery[(start + i) % gallery.length];
-    if (!picked.includes(src)) picked.push(src);
-  }
-
-  return picked.length > 0 ? picked : undefined;
 }
 
 export function getTargetReviewCount(productId: number): number {
@@ -259,12 +209,10 @@ export function getTargetReviewCount(productId: number): number {
   }
 
   const rng = createRng(productId * 92821);
-  return Math.floor(rng() * 150) + 1;
+  return Math.floor(rng() * 72) + 9;
 }
 
 export function generateReviewsForProduct(productId: number): ProductReview[] {
-  const product = products.find((p) => p.id === productId);
-  const productName = shortProductName(product?.name ?? "this part");
   const count = getTargetReviewCount(productId);
   const rng = createRng(productId * 48271);
   const names = buildUniqueNames(count, rng);
@@ -273,8 +221,7 @@ export function generateReviewsForProduct(productId: number): ProductReview[] {
 
   return names.map((reviewerName, index) => {
     const rating = pickRating(rng);
-    const photos = pickDeliveryPhotos(productId, rating, rng, index);
-    const daysAgo = Math.floor(rng() * 540) + index;
+    const daysAgo = Math.floor(rng() * 365) + index;
     const createdAt = new Date(
       now - daysAgo * dayMs - index * 3600000
     ).toISOString();
@@ -284,12 +231,11 @@ export function generateReviewsForProduct(productId: number): ProductReview[] {
       userId: `seed-user-${productId}-${index + 1}`,
       productId,
       rating,
-      review: pickComment(rating, rng, productName, Boolean(photos?.length)),
-      verifiedPurchase: true,
+      review: pickComment(rating, rng),
+      verifiedPurchase: rng() < 0.85,
       createdAt,
       reviewerName,
-      profileImage: buildAvatarUrl(reviewerName, index),
-      photos,
+      profileImage: buildAvatarUrl(reviewerName),
       status: "approved",
     };
   });
