@@ -2,6 +2,7 @@
  * Download representative product photos for truck listings missing images.
  * Run: node scripts/fetch-truck-stock-photos.mjs
  * Force refresh listed slugs: node scripts/fetch-truck-stock-photos.mjs --force
+ * Refresh specific slugs: node scripts/fetch-truck-stock-photos.mjs --force long-car-and-truck-exhaust-pipes
  */
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -13,6 +14,9 @@ const JSON_PATH = path.join(ROOT, "lib/inventory/data/edmunds-truck-parts.json")
 const MEDIA_ROOT = path.join(ROOT, "public/product-media/truck-parts");
 
 const FORCE = process.argv.includes("--force");
+const SLUG_FILTER = new Set(
+  process.argv.slice(2).filter((arg) => !arg.startsWith("-"))
+);
 
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
@@ -73,6 +77,11 @@ const TARGET_SLUGS = new Set([
   "a-premium-front-catalytic-converter",
   "torin-atr6300b-rolling-creeper-garage",
 ]);
+
+const ACTIVE_SLUGS =
+  SLUG_FILTER.size > 0
+    ? new Set([...TARGET_SLUGS].filter((slug) => SLUG_FILTER.has(slug)))
+    : TARGET_SLUGS;
 
 function mediaSlug(slug) {
   return SLUG_MEDIA_ALIASES[slug] ?? slug;
@@ -165,7 +174,7 @@ const processedFolders = new Map();
 
 for (const product of raw) {
   const slug = product.sourceSlug;
-  if (!slug || !TARGET_SLUGS.has(slug)) continue;
+  if (!slug || !ACTIVE_SLUGS.has(slug)) continue;
 
   const folder = mediaSlug(slug);
   const urls = PHOTO_SOURCES[slug] ?? PHOTO_SOURCES[folder];
