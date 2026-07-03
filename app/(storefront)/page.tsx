@@ -1,39 +1,71 @@
 import Link from "next/link";
 import { preload } from "react-dom";
 import HomeParallaxHero from "@/components/home/HomeParallaxHero";
-import { routes } from "@/lib/inventory";
+import HomeFeaturedGrid from "@/components/home/HomeFeaturedGrid";
+import TrustBadgeStrip from "@/components/product/TrustBadgeStrip";
+import {
+  getCategories,
+  routes,
+} from "@/lib/inventory";
+import {
+  getHomeFeaturedProducts,
+  getHomeProductCount,
+} from "@/lib/home/featured-products";
 import { directAssetUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata } from "@/lib/seo";
 
 const HERO_IMAGE = "/home/hero-1280.webp";
 
-const sections = [
+const CATEGORY_BLURBS: Record<string, string> = {
+  engine: "Swap-ready crate & takeout engines",
+  transmission: "TR6060, ZF, 6L80 & swap packages",
+  turbocharger: "Garrett, Precision & boost hardware",
+  suspension: "Coilovers, arms & handling",
+  brakes: "Big brake kits & OEM+ stops",
+  electronics: "Tuning, ECU & fuel systems",
+  lighting: "LED, Morimoto & trail lights",
+  "body-parts": "Truck beds, shells & aero",
+  interior: "Seats, wheels & cabin upgrades",
+  aftermarket: "Canopies, utility & truck gear",
+};
+
+const SHOP_BY_NEED = [
   {
-    title: "Precision Engine Craft",
-    text: "Every component engineered for performance, endurance, and speed.",
-    image: "/home/section-engine-720.webp",
+    label: "Truck Beds & Shells",
+    href: routes.category("body-parts"),
+    detail: "Rust-free beds, cabs & camper toppers",
   },
   {
-    title: "Suspension Control",
-    text: "Built for stability, grip, and unmatched driving confidence.",
-    image: "/home/section-suspension-720.webp",
+    label: "Engine Swaps",
+    href: routes.category("engine"),
+    detail: "LT, Coyote, 2JZ & complete packages",
   },
   {
-    title: "Braking Power",
-    text: "Stop with control. Respond with precision under any condition.",
-    image: "/home/section-brakes-720.webp",
+    label: "Transmissions",
+    href: routes.category("transmission"),
+    detail: "Manual, auto & swap-ready driveline",
   },
   {
-    title: "Performance Electronics",
-    text: "Smart systems powering modern automotive performance.",
-    image: "/home/section-electronics-720.webp",
+    label: "Canopies & Caps",
+    href: routes.category("aftermarket"),
+    detail: "Leer, Snugtop & utility toppers",
+  },
+  {
+    label: "Brakes & Suspension",
+    href: routes.category("brakes"),
+    detail: "Stop hard, handle sharper",
+  },
+  {
+    label: "All Products",
+    href: routes.all,
+    detail: "Browse the full marketplace",
   },
 ] as const;
 
 export const metadata = buildPageMetadata({
   title: "Automotive Performance Marketplace",
   description:
-    "Precision-engineered automotive parts for engines, turbo systems, suspension, brakes, and electronics. Shop 1,400+ performance listings at DrivoraParts.",
+    "Performance parts, truck beds, engine swaps, and drivetrain packages. Shop 1,400+ listings with secure crypto checkout at DrivoraParts.",
   path: "/",
 });
 
@@ -41,86 +73,180 @@ export default function Home() {
   const heroSrc = directAssetUrl(HERO_IMAGE);
   preload(heroSrc, { as: "image", fetchPriority: "high" });
 
+  const featured = getHomeFeaturedProducts(8);
+  const listingCount = getHomeProductCount();
+  const categories = getCategories();
+
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-[var(--background)] text-neutral-900">
-      <section className="relative -mt-[72px] flex min-h-[100dvh] min-h-[480px] w-full min-w-0 items-center justify-center overflow-hidden pt-[72px] sm:-mt-[80px] sm:pt-[80px]">
-        <HomeParallaxHero heroSrc={heroSrc} heroAlt="Performance automotive hero" />
+      {/* Compact hero — shoppable above the fold on laptop */}
+      <section className="relative -mt-[72px] flex min-h-[58vh] min-h-[420px] w-full min-w-0 items-center justify-center overflow-hidden pt-[72px] sm:-mt-[80px] sm:min-h-[62vh] sm:pt-[80px]">
+        <HomeParallaxHero heroSrc={heroSrc} heroAlt="Performance automotive parts" />
 
-        <div className="pointer-events-none absolute inset-0 z-10 bg-neutral-900/50" />
-        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/30 via-neutral-900/45 to-neutral-900/70" />
+        <div className="pointer-events-none absolute inset-0 z-10 bg-neutral-900/55" />
+        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/35 via-neutral-900/50 to-neutral-900/75" />
 
-        <div className="relative z-20 max-w-4xl px-4 text-center text-white sm:px-6">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
-            CINEMATIC <span className="text-red-500">PERFORMANCE</span>
+        <div className="relative z-20 mx-auto max-w-4xl px-4 text-center text-white sm:px-6">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-red-400">
+            DrivoraParts Marketplace
+          </p>
+          <h1 className="mt-3 text-[clamp(1.75rem,5vw,3.25rem)] font-bold leading-tight tracking-tight">
+            Performance Parts &{" "}
+            <span className="text-red-500">Truck Beds</span>
+            <span className="block text-[0.92em] font-bold text-white">
+              Built for Real Builds
+            </span>
           </h1>
 
-          <p className="mt-6 text-base text-neutral-200 md:text-lg">
-            Precision-engineered automotive parts for builders who demand control, power, and
-            presence.
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-neutral-200 sm:text-base">
+            Engines, transmissions, rust-free truck beds, and swap-ready drivetrains.
+            {listingCount.toLocaleString()}+ listings — what you see is what you get.
           </p>
 
-          <div className="mt-10 flex flex-col items-center gap-4">
-            <Link
-              href="/catalog"
-              className="inline-block transform rounded-full bg-red-600 px-8 py-3 font-semibold transition hover:scale-105 hover:bg-red-700"
-            >
-              ENTER MARKET
-            </Link>
+          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link
               href={routes.all}
-              className="inline-block transform rounded-full border border-white/40 bg-white/10 px-8 py-3 font-semibold text-white transition hover:scale-105 hover:bg-white/20"
+              className="inline-block rounded-full bg-red-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition hover:bg-red-700"
             >
-              All Products
+              Shop All Parts
+            </Link>
+            <Link
+              href={routes.category("body-parts")}
+              className="inline-block rounded-full border border-white/50 bg-white/10 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition hover:bg-white/20"
+            >
+              Truck Beds & Shells
             </Link>
           </div>
         </div>
       </section>
 
-      {sections.map((item, i) => (
-        <section
-          key={item.title}
-          className={`flex flex-col items-center gap-10 bg-white px-6 py-32 md:flex-row md:px-20 ${
-            i % 2 === 1 ? "md:flex-row-reverse" : ""
-          }`}
-        >
-          <div className="aspect-[4/3] w-full md:w-1/2">
-            <img
-              src={directAssetUrl(item.image)}
-              alt={item.title}
-              width={720}
-              height={540}
-              loading="lazy"
-              decoding="async"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="h-full w-full rounded-xl border border-neutral-200 object-cover shadow-lg"
-            />
+      {/* Category grid */}
+      <section className="border-b border-neutral-200 bg-white px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+                Shop by category
+              </p>
+              <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
+                Find your next upgrade
+              </h2>
+            </div>
+            <Link
+              href="/catalog"
+              className="text-sm font-semibold text-red-600 hover:text-red-700"
+            >
+              Full catalog →
+            </Link>
           </div>
 
-          <div className="w-full md:w-1/2">
-            <h2 className="mb-4 text-3xl font-bold text-neutral-900 md:text-4xl">{item.title}</h2>
-            <p className="leading-relaxed text-neutral-600">{item.text}</p>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+            {categories.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={routes.category(cat.slug)}
+                className="group rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition hover:border-red-500 hover:bg-white hover:shadow-md"
+              >
+                <p className="font-semibold text-neutral-900 group-hover:text-red-600">
+                  {cat.name}
+                </p>
+                <p className="mt-1 text-xs leading-snug text-neutral-500">
+                  {CATEGORY_BLURBS[cat.slug] ?? "Shop listings"}
+                </p>
+              </Link>
+            ))}
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
 
-      <section className="border-t border-neutral-200 bg-neutral-50 py-32 text-center">
-        <h2 className="mb-4 text-4xl font-bold text-neutral-900">Build Your Performance Setup</h2>
-        <p className="mb-8 text-neutral-600">
-          DrivoraParts — engineered for builders who move with precision.
-        </p>
-        <div className="flex flex-col items-center gap-4">
-          <Link
-            href={routes.all}
-            className="inline-block transform rounded-full bg-red-600 px-10 py-4 font-semibold text-white transition hover:scale-105 hover:bg-red-700"
-          >
-            All Products
-          </Link>
-          <Link
-            href="/catalog"
-            className="inline-block transform rounded-full border border-neutral-300 bg-white px-10 py-4 font-semibold text-neutral-900 transition hover:scale-105 hover:border-neutral-400 hover:shadow-md"
-          >
-            ENTER MARKET
-          </Link>
+      {/* Featured products */}
+      <section className="bg-neutral-50 px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+                Popular right now
+              </p>
+              <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
+                Featured listings
+              </h2>
+              <p className="mt-2 text-sm text-neutral-600">
+                Real photos, clear pricing, add to cart in one click.
+              </p>
+            </div>
+            <Link
+              href={routes.all}
+              className="text-sm font-semibold text-red-600 hover:text-red-700"
+            >
+              View all {listingCount.toLocaleString()}+ parts →
+            </Link>
+          </div>
+
+          <HomeFeaturedGrid products={featured} />
+        </div>
+      </section>
+
+      {/* Trust */}
+      <section className="border-y border-neutral-200 bg-white px-4 py-10 sm:px-6">
+        <div className="mx-auto max-w-6xl">
+          <TrustBadgeStrip variant="pro" />
+        </div>
+      </section>
+
+      {/* Shop by need */}
+      <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+            Shop by need
+          </p>
+          <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
+            Know what you&apos;re looking for?
+          </h2>
+
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {SHOP_BY_NEED.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex flex-col rounded-xl border border-neutral-200 bg-neutral-50 p-5 transition hover:border-red-500 hover:bg-white hover:shadow-md"
+              >
+                <span className="text-lg font-bold text-neutral-900 group-hover:text-red-600">
+                  {item.label}
+                </span>
+                <span className="mt-1 text-sm text-neutral-600">{item.detail}</span>
+                <span className="mt-3 text-sm font-semibold text-red-600">
+                  Shop now →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Value prop + freight note */}
+      <section className="border-t border-neutral-200 bg-neutral-900 px-4 py-14 text-center text-white sm:px-6">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold sm:text-3xl">
+            Exact item, as pictured — or upgraded to your spec
+          </h2>
+          <p className="mt-4 text-sm leading-relaxed text-neutral-300 sm:text-base">
+            Oversized truck beds and shells ship freight — contact us for an LTL quote.
+            Secure checkout with crypto accepted worldwide.
+          </p>
+          <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <Link
+              href={routes.all}
+              className="inline-block rounded-full bg-red-600 px-10 py-3.5 text-sm font-bold uppercase tracking-wide transition hover:bg-red-500"
+            >
+              Browse marketplace
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-block rounded-full border border-white/30 px-10 py-3.5 text-sm font-semibold transition hover:bg-white/10"
+            >
+              Freight quote
+            </Link>
+          </div>
         </div>
       </section>
     </div>

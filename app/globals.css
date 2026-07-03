@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Junctions under this repo point outside the project (e.g. spare pic → E:\LaptopArchive). */
+@source not "../spare pic";
+@source not "../drivoraparts-ci-test";
+
 /* =========================
    STOREFRONT THEME
 ========================= */
