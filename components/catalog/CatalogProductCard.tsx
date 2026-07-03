@@ -9,7 +9,7 @@ import TranslatedText from "@/components/i18n/TranslatedText";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { CatalogImageGallery } from "@/components/product/ImageCarousel";
 import { getProductThumbnail } from "@/lib/inventory/media";
-import { routes } from "@/lib/inventory";
+import { routes } from "@/lib/inventory/routes";
 
 export type CatalogProductCardData = {
   id: number;

@@ -16,11 +16,16 @@ import {
 } from "@/lib/seo";
 import { BASE_CURRENCY } from "@/lib/currency/constants";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
+import dynamic from "next/dynamic";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import MetaPixel from "@/components/analytics/MetaPixel";
 import TikTokPixel from "@/components/analytics/TikTokPixel";
-import TikTokPageTracker from "@/components/analytics/TikTokPageTracker";
 import { getMetaPixelId, getTikTokPixelId } from "@/lib/env";
+
+const TikTokPageTracker = dynamic(
+  () => import("@/components/analytics/TikTokPageTracker"),
+  { ssr: false, loading: () => null }
+);
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).

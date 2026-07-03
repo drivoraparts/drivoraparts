@@ -1,10 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import {
-  getCategories,
-  getBrands,
-} from "@/lib/inventory";
+import { categories } from "@/lib/inventory/categories";
+import { brands } from "@/lib/inventory/brands";
 import AllProductsGridCard from "./AllProductsGridCard";
 import CatalogFilterSelect from "./CatalogFilterSelect";
 import {
@@ -15,8 +13,8 @@ import type { CatalogProductCardData } from "./CatalogProductCard";
 
 const PAGE_SIZE = 48;
 
-const categories = getCategories();
-const brands = getBrands();
+const categoriesList = categories;
+const brandsList = brands;
 
 type ApiResponse = {
   products: CatalogProductCardData[];
@@ -40,15 +38,15 @@ export default function AllProductsFeed() {
   const filteredBrands = useMemo(
     () =>
       categoryFilter
-        ? brands.filter((b) => b.category === categoryFilter)
-        : brands,
+        ? brandsList.filter((b) => b.category === categoryFilter)
+        : brandsList,
     [categoryFilter]
   );
 
   const categoryOptions = useMemo(
     () => [
       { value: "", label: "All Categories" },
-      ...categories.map((cat) => ({ value: cat.slug, label: cat.name })),
+      ...categoriesList.map((cat) => ({ value: cat.slug, label: cat.name })),
     ],
     []
   );

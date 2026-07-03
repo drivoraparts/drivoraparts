@@ -25,7 +25,7 @@ export default function CurrencyProvider({
 
     const loadRates = async () => {
       try {
-        const res = await fetch("/api/currency/rates", { cache: "no-store" });
+        const res = await fetch("/api/currency/rates");
         if (!res.ok || !active) return;
 
         const data = (await res.json()) as { rates?: Record<string, number> };

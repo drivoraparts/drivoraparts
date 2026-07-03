@@ -8,7 +8,7 @@ import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import ProductImage from "@/components/media/ProductImage";
 import { getProductThumbnail } from "@/lib/inventory/media";
-import { routes } from "@/lib/inventory";
+import { routes } from "@/lib/inventory/routes";
 import type { CatalogProductCardData } from "./CatalogProductCard";
 
 export default function AllProductsGridCard({

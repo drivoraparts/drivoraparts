@@ -1,45 +1,49 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import {
-  getProductsByCategory,
-  getBrandsByCategory,
-  getConditionLabel,
-  routes,
-} from "@/lib/inventory";
+import { getConditionLabel } from "@/lib/inventory/condition";
+import { routes } from "@/lib/inventory/routes";
 import ProductImage from "@/components/media/ProductImage";
 import CatalogCard from "./CatalogCard";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 
-const aftermarketProducts = getProductsByCategory("aftermarket");
-const aftermarketBrands = getBrandsByCategory("aftermarket");
+export type AftermarketFeedItem = {
+  id: number;
+  name: string;
+  price: number;
+  compareAtPrice?: number;
+  thumbnail?: string;
+  image?: string;
+  brand: string;
+  brandName: string;
+  category: string;
+  description?: string;
+  condition?: string;
+  stock?: boolean;
+  stockQty?: number;
+  createdAt?: number;
+};
 
-type SortOption =
-  | "price-asc"
-  | "price-desc"
-  | "newest"
-  | "oldest";
+type SortOption = "price-asc" | "price-desc" | "newest" | "oldest";
 
-function brandName(slug: string): string {
-  return aftermarketBrands.find((b) => b.slug === slug)?.name ?? slug;
-}
-
-export default function AftermarketFeed() {
+export default function AftermarketFeed({
+  products,
+}: {
+  products: AftermarketFeedItem[];
+}) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<SortOption>("newest");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
 
-    let results = aftermarketProducts.filter((product) => {
+    let results = products.filter((product) => {
       if (!q) return true;
-
-      const brand = brandName(product.brand).toLowerCase();
 
       return (
         product.name.toLowerCase().includes(q) ||
-        brand.includes(q) ||
+        product.brandName.toLowerCase().includes(q) ||
         (product.description ?? "").toLowerCase().includes(q) ||
         (product.condition ?? "").toLowerCase().includes(q)
       );
@@ -61,7 +65,7 @@ export default function AftermarketFeed() {
     });
 
     return results;
-  }, [query, sort]);
+  }, [products, query, sort]);
 
   return (
     <div className="space-y-8">
@@ -70,7 +74,7 @@ export default function AftermarketFeed() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search aftermarket parts by name, brand, or type..."
-        className="w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none transition-colors duration-300"
+        className="w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors duration-300 focus:border-red-500 focus:outline-none"
       />
 
       <select
@@ -93,10 +97,7 @@ export default function AftermarketFeed() {
             const inStock = product.stock !== false;
 
             return (
-              <CatalogCard
-                key={product.id}
-                href={routes.product(product.id)}
-              >
+              <CatalogCard key={product.id} href={routes.product(product.id)}>
                 {image ? (
                   <ProductImage
                     src={image}
@@ -132,7 +133,7 @@ export default function AftermarketFeed() {
                         : "Out of Stock"}
                   </p>
                   <span className="inline-block rounded border border-neutral-200 px-2 py-0.5">
-                    {brandName(product.brand)}
+                    {product.brandName}
                   </span>
                 </div>
               </CatalogCard>

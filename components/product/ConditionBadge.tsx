@@ -3,7 +3,7 @@
 import {
   getConditionDisplay,
   resolveProductCondition,
-} from "@/lib/inventory";
+} from "@/lib/inventory/condition";
 
 type ConditionBadgeProps = {
   category: string;

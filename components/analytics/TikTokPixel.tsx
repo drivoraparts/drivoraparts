@@ -12,7 +12,7 @@ export default function TikTokPixel({ pixelId }: Props) {
   if (!id) return null;
 
   return (
-    <Script id="tiktok-pixel-base" strategy="afterInteractive">
+    <Script id="tiktok-pixel-base" strategy="lazyOnload">
       {buildTikTokBaseScript(id)}
     </Script>
   );

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { preload } from "react-dom";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
@@ -9,38 +8,7 @@ import { buildPageMetadata } from "@/lib/seo";
 
 const HERO_IMAGE = "/home/hero-1280.webp";
 
-const SHOP_BY_NEED = [
-  {
-    label: "Truck Beds & Shells",
-    href: routes.category("body-parts"),
-    detail: "Rust-free beds, cabs & camper toppers",
-  },
-  {
-    label: "Engine Swaps",
-    href: routes.category("engine"),
-    detail: "LT, Coyote, 2JZ & complete packages",
-  },
-  {
-    label: "Transmissions",
-    href: routes.category("transmission"),
-    detail: "Manual, auto & swap-ready driveline",
-  },
-  {
-    label: "Canopies & Caps",
-    href: routes.category("aftermarket"),
-    detail: "Leer, Snugtop & utility toppers",
-  },
-  {
-    label: "Brakes & Suspension",
-    href: routes.category("brakes"),
-    detail: "Stop hard, handle sharper",
-  },
-  {
-    label: "All Products",
-    href: routes.all,
-    detail: "Browse the full marketplace",
-  },
-] as const;
+export const dynamic = "force-static";
 
 export const metadata = buildPageMetadata({
   title: "Automotive Performance Marketplace",
@@ -51,8 +19,6 @@ export const metadata = buildPageMetadata({
 
 export default function Home() {
   const heroSrc = directAssetUrl(HERO_IMAGE);
-  preload(heroSrc, { as: "image", fetchPriority: "high" });
-
   const listingCount = HOME_LISTING_COUNT;
 
   return (
@@ -138,35 +104,6 @@ export default function Home() {
       </section>
 
       <HomeTrustBadges />
-
-      {/* Shop by need */}
-      <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
-            Shop by need
-          </p>
-          <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
-            Know what you&apos;re looking for?
-          </h2>
-
-          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {SHOP_BY_NEED.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                prefetch={false}
-                className="touch-manipulation flex flex-col rounded-xl border border-neutral-200 bg-neutral-50 p-5 transition-colors hover:border-red-500 hover:bg-white active:bg-red-50"
-              >
-                <span className="text-lg font-bold text-neutral-900">{item.label}</span>
-                <span className="mt-1 text-sm text-neutral-600">{item.detail}</span>
-                <span className="mt-3 text-sm font-semibold text-red-600">
-                  Shop now →
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Value prop + freight note */}
       <section className="border-t border-neutral-200 bg-neutral-900 px-4 py-14 text-center text-white sm:px-6">
