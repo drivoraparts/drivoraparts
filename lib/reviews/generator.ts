@@ -1,4 +1,3 @@
-import { getProductById } from "@/lib/inventory";
 import {
   getProductThumbnail,
   resolveProductGallery,
@@ -232,7 +231,7 @@ function pickDeliveryPhotos(
   if (rating < 4) return undefined;
   if (index % 5 !== 0 && rng() > 0.32) return undefined;
 
-  const product = getProductById(productId);
+  const product = products.find((p) => p.id === productId);
   if (!product) return undefined;
 
   const gallery = resolveProductGallery(
@@ -264,7 +263,7 @@ export function getTargetReviewCount(productId: number): number {
 }
 
 export function generateReviewsForProduct(productId: number): ProductReview[] {
-  const product = getProductById(productId);
+  const product = products.find((p) => p.id === productId);
   const productName = shortProductName(product?.name ?? "this part");
   const count = getTargetReviewCount(productId);
   const rng = createRng(productId * 48271);
