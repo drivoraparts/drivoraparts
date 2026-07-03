@@ -1,17 +1,15 @@
 import Link from "next/link";
 import { preload } from "react-dom";
-import HomeParallaxHero from "@/components/home/HomeParallaxHero";
+import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import HomeFeaturedGrid from "@/components/home/HomeFeaturedGrid";
-import TrustBadgeStrip from "@/components/product/TrustBadgeStrip";
+import HomeTrustBadges from "@/components/home/HomeTrustBadges";
 import {
-  getCategories,
   routes,
 } from "@/lib/inventory";
 import {
   getHomeFeaturedProducts,
   getHomeProductCount,
 } from "@/lib/home/featured-products";
-import { HOME_CATEGORY_BLURBS } from "@/lib/home/category-blurbs";
 import { directAssetUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -63,13 +61,24 @@ export default function Home() {
 
   const featured = getHomeFeaturedProducts(8);
   const listingCount = getHomeProductCount();
-  const categories = getCategories();
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-[var(--background)] text-neutral-900">
-      {/* Compact hero — shoppable above the fold on laptop */}
+      {/* Compact hero — static image (no scroll JS) */}
       <section className="relative -mt-[72px] flex min-h-[58vh] min-h-[420px] w-full min-w-0 items-center justify-center overflow-hidden pt-[72px] sm:-mt-[80px] sm:min-h-[62vh] sm:pt-[80px]">
-        <HomeParallaxHero heroSrc={heroSrc} heroAlt="Performance automotive parts" />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <img
+            src={heroSrc}
+            alt="Performance automotive parts"
+            width={1280}
+            height={720}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            sizes="100vw"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <div className="pointer-events-none absolute inset-0 z-10 bg-neutral-900/55" />
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/35 via-neutral-900/50 to-neutral-900/75" />
@@ -94,13 +103,15 @@ export default function Home() {
           <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link
               href={routes.all}
-              className="inline-block rounded-full bg-red-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition hover:bg-red-700"
+              prefetch={false}
+              className="touch-manipulation inline-block rounded-full bg-red-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-700 active:bg-red-800"
             >
               Shop All Parts
             </Link>
             <Link
               href={routes.category("body-parts")}
-              className="inline-block rounded-full border border-white/50 bg-white/10 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition hover:bg-white/20"
+              prefetch={false}
+              className="touch-manipulation inline-block rounded-full border border-white/50 bg-white/10 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-white/20 active:bg-white/30"
             >
               Truck Beds & Shells
             </Link>
@@ -108,8 +119,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Category grid */}
-      <section className="border-b border-neutral-200 bg-white px-4 py-12 sm:px-6 lg:px-8">
+      {/* Category grid — priority interaction zone */}
+      <section className="relative z-10 border-b border-neutral-200 bg-white px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -122,33 +133,19 @@ export default function Home() {
             </div>
             <Link
               href="/catalog"
-              className="text-sm font-semibold text-red-600 hover:text-red-700"
+              prefetch={false}
+              className="touch-manipulation text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
             >
               Full catalog →
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-            {categories.map((cat) => (
-              <Link
-                key={cat.slug}
-                href={routes.category(cat.slug)}
-                className="group rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition hover:border-red-500 hover:bg-white hover:shadow-md"
-              >
-                <p className="font-semibold text-neutral-900 group-hover:text-red-600">
-                  {cat.name}
-                </p>
-                <p className="mt-1 text-xs leading-snug text-neutral-500">
-                  {HOME_CATEGORY_BLURBS[cat.slug] ?? "Shop listings"}
-                </p>
-              </Link>
-            ))}
-          </div>
+          <HomeCategoryGrid />
         </div>
       </section>
 
-      {/* Featured products */}
-      <section className="bg-neutral-50 px-4 py-12 sm:px-6 lg:px-8">
+      {/* Featured products — below fold, deferred paint */}
+      <section className="home-below-fold bg-neutral-50 px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -164,7 +161,8 @@ export default function Home() {
             </div>
             <Link
               href={routes.all}
-              className="text-sm font-semibold text-red-600 hover:text-red-700"
+              prefetch={false}
+              className="touch-manipulation text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
             >
               View all {listingCount.toLocaleString()}+ parts →
             </Link>
@@ -174,15 +172,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust */}
-      <section className="border-y border-neutral-200 bg-white px-4 py-10 sm:px-6">
-        <div className="mx-auto max-w-6xl">
-          <TrustBadgeStrip variant="pro" />
-        </div>
-      </section>
+      <HomeTrustBadges />
 
       {/* Shop by need */}
-      <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
+      <section className="home-below-fold bg-white px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
             Shop by need
@@ -196,11 +189,10 @@ export default function Home() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="group flex flex-col rounded-xl border border-neutral-200 bg-neutral-50 p-5 transition hover:border-red-500 hover:bg-white hover:shadow-md"
+                prefetch={false}
+                className="touch-manipulation flex flex-col rounded-xl border border-neutral-200 bg-neutral-50 p-5 transition-colors hover:border-red-500 hover:bg-white active:bg-red-50"
               >
-                <span className="text-lg font-bold text-neutral-900 group-hover:text-red-600">
-                  {item.label}
-                </span>
+                <span className="text-lg font-bold text-neutral-900">{item.label}</span>
                 <span className="mt-1 text-sm text-neutral-600">{item.detail}</span>
                 <span className="mt-3 text-sm font-semibold text-red-600">
                   Shop now →
@@ -224,13 +216,15 @@ export default function Home() {
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
               href={routes.all}
-              className="inline-block rounded-full bg-red-600 px-10 py-3.5 text-sm font-bold uppercase tracking-wide transition hover:bg-red-500"
+              prefetch={false}
+              className="touch-manipulation inline-block rounded-full bg-red-600 px-10 py-3.5 text-sm font-bold uppercase tracking-wide transition-colors hover:bg-red-500 active:bg-red-700"
             >
               Browse marketplace
             </Link>
             <Link
               href="/contact"
-              className="inline-block rounded-full border border-white/30 px-10 py-3.5 text-sm font-semibold transition hover:bg-white/10"
+              prefetch={false}
+              className="touch-manipulation inline-block rounded-full border border-white/30 px-10 py-3.5 text-sm font-semibold transition-colors hover:bg-white/10 active:bg-white/20"
             >
               Freight quote
             </Link>

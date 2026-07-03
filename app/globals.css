@@ -77,6 +77,12 @@ iframe {
   overflow-x: clip;
 }
 
+/* Skip layout/paint for below-fold homepage sections until scrolled near. */
+.home-below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 480px;
+}
+
 @media (max-width: 768px) {
   input[type="text"],
   input[type="email"],

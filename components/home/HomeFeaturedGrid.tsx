@@ -1,9 +1,7 @@
-"use client";
+import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
+import HomeFeaturedCard from "./HomeFeaturedCard";
 
-import CatalogProductCard, {
-  type CatalogProductCardData,
-} from "@/components/catalog/CatalogProductCard";
-
+/** Server-rendered featured row — avoids heavy client product cards on the homepage. */
 export default function HomeFeaturedGrid({
   products,
 }: {
@@ -12,13 +10,7 @@ export default function HomeFeaturedGrid({
   return (
     <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
       {products.map((product) => (
-        <CatalogProductCard
-          key={product.id}
-          product={{
-            ...product,
-            images: [product.thumbnail],
-          }}
-        />
+        <HomeFeaturedCard key={product.id} product={product} />
       ))}
     </div>
   );
