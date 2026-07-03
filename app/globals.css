@@ -77,14 +77,6 @@ iframe {
   overflow-x: hidden;
 }
 
-/* Below-fold paint skipping — desktop only; iOS Safari can leave sections blank. */
-@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
-  .home-below-fold {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 480px;
-  }
-}
-
 @media (max-width: 768px) {
   input[type="text"],
   input[type="email"],

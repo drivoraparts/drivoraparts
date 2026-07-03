@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { getCategories, routes } from "@/lib/inventory";
+import { categories } from "@/lib/inventory/categories";
+import { routes } from "@/lib/inventory/routes";
 import { HOME_CATEGORY_BLURBS } from "@/lib/home/category-blurbs";
 
 /** Server-rendered category tiles — no client JS, no prefetch storm. */
 export default function HomeCategoryGrid() {
-  const categories = getCategories();
-
   return (
     <div className="relative z-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
       {categories.map((cat) => (

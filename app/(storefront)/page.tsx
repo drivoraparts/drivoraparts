@@ -1,15 +1,9 @@
 import Link from "next/link";
 import { preload } from "react-dom";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
-import HomeFeaturedGrid from "@/components/home/HomeFeaturedGrid";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
-import {
-  routes,
-} from "@/lib/inventory";
-import {
-  getHomeFeaturedProducts,
-  getHomeProductCount,
-} from "@/lib/home/featured-products";
+import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
+import { routes } from "@/lib/inventory/routes";
 import { directAssetUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -59,8 +53,7 @@ export default function Home() {
   const heroSrc = directAssetUrl(HERO_IMAGE);
   preload(heroSrc, { as: "image", fetchPriority: "high" });
 
-  const featured = getHomeFeaturedProducts(8);
-  const listingCount = getHomeProductCount();
+  const listingCount = HOME_LISTING_COUNT;
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] text-neutral-900">
@@ -144,38 +137,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured products — below fold, deferred paint */}
-      <section className="home-below-fold bg-neutral-50 px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
-                Popular right now
-              </p>
-              <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Featured listings
-              </h2>
-              <p className="mt-2 text-sm text-neutral-600">
-                Real photos, clear pricing, add to cart in one click.
-              </p>
-            </div>
-            <Link
-              href={routes.all}
-              prefetch={false}
-              className="touch-manipulation text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
-            >
-              View all {listingCount.toLocaleString()}+ parts →
-            </Link>
-          </div>
-
-          <HomeFeaturedGrid products={featured} />
-        </div>
-      </section>
-
       <HomeTrustBadges />
 
       {/* Shop by need */}
-      <section className="home-below-fold bg-white px-4 py-12 sm:px-6 lg:px-8">
+      <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
             Shop by need
