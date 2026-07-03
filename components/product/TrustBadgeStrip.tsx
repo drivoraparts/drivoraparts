@@ -1,187 +1,33 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-type TrustBadge = {
-  id: string;
-  label: string;
-  subtext: string;
-  accent: string;
-  accentSoft: string;
-  Icon: ({ color }: { color: string }) => JSX.Element;
-};
-
-const STROKE = 1.75;
-
-function ShieldCheckIcon({ color }: { color: string }) {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M12 3l8 3v5.5c0 4.6-3.2 8.1-8 9-4.8-.9-8-4.4-8-9V6l8-3z"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinejoin="round"
-      />
-      <path
-        d="M9 12l2 2 4-4.5"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function ShieldIcon({ color }: { color: string }) {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M12 3l8 3v5.5c0 4.6-3.2 8.1-8 9-4.8-.9-8-4.4-8-9V6l8-3z"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12 11v4M10 13h4"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
-
-function BadgeCheckIcon({ color }: { color: string }) {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M12 2l2.2 4.4 4.9.7-3.5 3.4.8 4.9L12 13.6 7.6 15.4l.8-4.9-3.5-3.4 4.9-.7L12 2z"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinejoin="round"
-      />
-      <path
-        d="M9.5 12l1.6 1.6 3.2-3.3"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function TruckIcon({ color }: { color: string }) {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M3 8h11v7H3V8zM14 10h3.5L20 13v2h-6v-5z"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinejoin="round"
-      />
-      <circle cx="7" cy="17" r="1.75" stroke={color} strokeWidth={STROKE} />
-      <circle cx="17" cy="17" r="1.75" stroke={color} strokeWidth={STROKE} />
-    </svg>
-  );
-}
-
-function LockIcon({ color }: { color: string }) {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <rect
-        x="5"
-        y="11"
-        width="14"
-        height="9"
-        rx="2"
-        stroke={color}
-        strokeWidth={STROKE}
-      />
-      <path
-        d="M8 11V9a4 4 0 018 0v2"
-        stroke={color}
-        strokeWidth={STROKE}
-        strokeLinecap="round"
-      />
-      <circle cx="12" cy="15.5" r="1" fill={color} />
-    </svg>
-  );
-}
-
-const BADGES: TrustBadge[] = [
-  {
-    id: "secure",
-    label: "Secure Checkout",
-    subtext: "SSL protected transaction",
-    accent: "#22c55e",
-    accentSoft: "rgba(34, 197, 94, 0.12)",
-    Icon: ShieldCheckIcon,
-  },
-  {
-    id: "protection",
-    label: "Buyer Protection",
-    subtext: "Refund eligible orders",
-    accent: "#16a34a",
-    accentSoft: "rgba(22, 163, 74, 0.12)",
-    Icon: ShieldIcon,
-  },
-  {
-    id: "verified",
-    label: "Verified Seller",
-    subtext: "Authenticated marketplace partner",
-    accent: "#4ade80",
-    accentSoft: "rgba(74, 222, 128, 0.12)",
-    Icon: BadgeCheckIcon,
-  },
-  {
-    id: "shipping",
-    label: "Fast Shipping",
-    subtext: "Global logistics network",
-    accent: "#3b82f6",
-    accentSoft: "rgba(59, 130, 246, 0.12)",
-    Icon: TruckIcon,
-  },
-  {
-    id: "payment",
-    label: "Encrypted Payment",
-    subtext: "Secure payment channel",
-    accent: "#14b8a6",
-    accentSoft: "rgba(20, 184, 166, 0.12)",
-    Icon: LockIcon,
-  },
-];
+import TrustSealGraphic from "@/components/trust/TrustSealGraphic";
+import { TRUST_SECTION, TRUST_SIGNALS } from "@/lib/content/trust-signals";
 
 function TrustBadgeCard({
-  badge,
+  signal,
   index,
   visible,
   variant = "dark",
 }: {
-  badge: TrustBadge;
+  signal: (typeof TRUST_SIGNALS)[number];
   index: number;
   visible: boolean;
   variant?: "dark" | "pro";
 }) {
-  const { Icon, label, subtext, accent, accentSoft } = badge;
   const isPro = variant === "pro";
 
   return (
     <div
       className={`trust-pill ${visible ? "trust-pill-visible" : ""} ${isPro ? "trust-pill-pro" : ""}`}
-      style={{
-        transitionDelay: `${index * 100}ms`,
-        ["--trust-accent" as string]: accent,
-        ["--trust-accent-soft" as string]: accentSoft,
-      }}
+      style={{ transitionDelay: `${index * 80}ms` }}
     >
       <div className="trust-pill-icon">
-        <Icon color={accent} />
+        <TrustSealGraphic kind={signal.seal} className="h-8 w-8" />
       </div>
       <div className="trust-pill-copy">
-        <p className="trust-pill-label">{label}</p>
-        <p className="trust-pill-subtext">{subtext}</p>
+        <p className="trust-pill-label">{signal.title}</p>
+        <p className="trust-pill-subtext">{signal.detail}</p>
       </div>
     </div>
   );
@@ -207,18 +53,18 @@ export default function TrustBadgeStrip({
     >
       <div className={isPro ? "trust-strip-header trust-strip-header-pro" : "trust-strip-header"}>
         <span className={isPro ? "trust-strip-eyebrow trust-strip-eyebrow-pro" : "trust-strip-eyebrow"}>
-          {isPro ? "Shop With Confidence" : "Transaction Security"}
+          {TRUST_SECTION.eyebrow}
         </span>
         <h3 className={isPro ? "trust-strip-title trust-strip-title-pro" : "trust-strip-title"}>
-          Verified marketplace protections
+          {TRUST_SECTION.headline}
         </h3>
       </div>
 
       <div className={isPro ? "trust-strip-grid trust-strip-grid-pro" : "trust-strip-grid"}>
-        {BADGES.map((badge, index) => (
+        {TRUST_SIGNALS.map((signal, index) => (
           <TrustBadgeCard
-            key={badge.id}
-            badge={badge}
+            key={signal.id}
+            signal={signal}
             index={index}
             visible={visible}
             variant={variant}
@@ -268,7 +114,7 @@ export default function TrustBadgeStrip({
           font-weight: 600;
           letter-spacing: 0.12em;
           text-transform: uppercase;
-          color: rgba(74, 222, 128, 0.85);
+          color: rgba(248, 113, 113, 0.9);
         }
 
         .trust-strip-eyebrow-pro {
@@ -280,6 +126,7 @@ export default function TrustBadgeStrip({
           font-size: 13px;
           font-weight: 600;
           color: rgba(255, 255, 255, 0.88);
+          line-height: 1.35;
         }
 
         .trust-strip-title-pro {
@@ -322,7 +169,7 @@ export default function TrustBadgeStrip({
           align-items: flex-start;
           gap: 8px;
           padding: 10px;
-          border-radius: 999px;
+          border-radius: 12px;
           background: rgba(0, 0, 0, 0.28);
           border: 1px solid rgba(255, 255, 255, 0.07);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
@@ -338,7 +185,6 @@ export default function TrustBadgeStrip({
             flex-direction: column;
             align-items: center;
             text-align: center;
-            border-radius: 14px;
             padding: 10px 8px;
           }
         }
@@ -349,11 +195,10 @@ export default function TrustBadgeStrip({
         }
 
         .trust-pill:hover {
-          transform: translateY(0) scale(1.02);
-          border-color: var(--trust-accent);
+          transform: translateY(0) scale(1.01);
+          border-color: rgba(248, 113, 113, 0.45);
           background: rgba(255, 255, 255, 0.04);
-          box-shadow: 0 0 0 1px var(--trust-accent-soft),
-            0 4px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
 
         .trust-pill-pro {
@@ -366,9 +211,9 @@ export default function TrustBadgeStrip({
         }
 
         .trust-pill-pro:hover {
-          border-color: var(--trust-accent);
+          border-color: #fca5a5;
           background: #fafafa;
-          box-shadow: 0 0 0 1px var(--trust-accent-soft);
+          box-shadow: 0 0 0 1px rgba(252, 165, 165, 0.35);
           transform: translateY(-1px);
         }
 
@@ -390,8 +235,8 @@ export default function TrustBadgeStrip({
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 32px;
-          height: 32px;
+          width: 36px;
+          height: 36px;
           border-radius: 999px;
           background: rgba(255, 255, 255, 0.04);
           border: 1px solid rgba(255, 255, 255, 0.08);
