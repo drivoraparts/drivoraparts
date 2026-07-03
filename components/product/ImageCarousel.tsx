@@ -137,7 +137,7 @@ export default function ImageCarousel({
   );
 
   const onPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if (!hasMultiple) return;
+    if (isCard || !hasMultiple) return;
     const el = scrollerRef.current;
     if (!el) return;
 
@@ -188,13 +188,17 @@ export default function ImageCarousel({
       <div className={frameClass}>
         <div
           ref={scrollerRef}
-          className="flex h-full w-full cursor-grab overflow-x-auto scroll-smooth snap-x snap-mandatory active:cursor-grabbing [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-          style={{ touchAction: "pan-x" }}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={endDrag}
-          onPointerCancel={endDrag}
-          onPointerLeave={endDrag}
+          className={`flex h-full w-full overflow-x-auto scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${
+            isCard
+              ? "pointer-events-none touch-pan-y"
+              : "cursor-grab overflow-x-auto active:cursor-grabbing"
+          }`}
+          style={isCard ? undefined : { touchAction: "pan-x" }}
+          onPointerDown={isCard ? undefined : onPointerDown}
+          onPointerMove={isCard ? undefined : onPointerMove}
+          onPointerUp={isCard ? undefined : endDrag}
+          onPointerCancel={isCard ? undefined : endDrag}
+          onPointerLeave={isCard ? undefined : endDrag}
         >
           {galleryImages.map((slideSrc, index) => (
             <div

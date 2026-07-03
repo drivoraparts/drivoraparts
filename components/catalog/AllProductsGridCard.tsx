@@ -28,9 +28,17 @@ export default function AllProductsGridCard({
     brand: product.brand,
   };
 
+  const productHref = routes.product(product.id);
+
   return (
-    <div className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm">
-      <Link href={routes.product(product.id)} className="block p-1.5 pb-1">
+    <article className="relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm">
+      <Link
+        href={productHref}
+        className="absolute inset-0 z-10 rounded-lg"
+        aria-label={`View ${product.name}`}
+      />
+
+      <div className="p-1.5 pb-1">
         <div className="aspect-square w-full overflow-hidden rounded-md border border-neutral-200 bg-neutral-50">
           <ProductImage
             src={thumbnail}
@@ -50,10 +58,11 @@ export default function AllProductsGridCard({
           size="sm"
           className="mt-0.5"
         />
-      </Link>
-      <div className="mt-auto px-1.5 pb-1.5 pt-0.5 [&_button]:py-1.5 [&_button]:text-[10px] sm:[&_button]:py-2 sm:[&_button]:text-xs">
+      </div>
+
+      <div className="relative z-20 mt-auto px-1.5 pb-1.5 pt-0.5 [&_button]:py-1.5 [&_button]:text-[10px] sm:[&_button]:py-2 sm:[&_button]:text-xs">
         <AddToCartButton product={cartProduct} compact />
       </div>
-    </div>
+    </article>
   );
 }

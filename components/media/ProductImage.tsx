@@ -44,6 +44,7 @@ export default function ProductImage({
     <img
       src={currentSrc}
       alt={alt}
+      draggable={false}
       loading={loading}
       decoding="async"
       fetchPriority={fetchPriority}

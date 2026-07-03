@@ -35,50 +35,52 @@ export default function ProductCard({ product }: { product: Product }) {
   const productHref = `/product/${product.id}`;
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:border-red-500 hover:shadow-md">
-      <Link href={productHref} className="block">
-        <div className="relative h-[180px] overflow-hidden">
-          <ProductImage
-            src={product.thumbnail}
-            alt={product.name}
-            profile="card"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-900/40 to-transparent" />
-        </div>
-      </Link>
+    <article className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:border-red-500 hover:shadow-md">
+      <Link
+        href={productHref}
+        className="absolute inset-0 z-10 rounded-xl"
+        aria-label={`View ${product.name}`}
+      />
+
+      <div className="relative h-[180px] overflow-hidden">
+        <ProductImage
+          src={product.thumbnail}
+          alt={product.name}
+          profile="card"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-900/40 to-transparent" />
+      </div>
 
       <div className="p-4">
-        <Link href={productHref} className="block">
-          <h3 className="text-sm font-semibold text-neutral-900 group-hover:text-red-600">
-            <TranslatedText as="span">{product.name}</TranslatedText>
-          </h3>
+        <h3 className="text-sm font-semibold text-neutral-900 group-hover:text-red-600">
+          <TranslatedText as="span">{product.name}</TranslatedText>
+        </h3>
 
-          <p className="mt-1 text-xs text-neutral-500">{product.condition}</p>
-          <p className="mt-1 text-xs text-neutral-400">{product.location}</p>
+        <p className="mt-1 text-xs text-neutral-500">{product.condition}</p>
+        <p className="mt-1 text-xs text-neutral-400">{product.location}</p>
 
-          <div className="mt-3 flex items-center justify-between gap-2">
-            <ProductPrice
-              price={product.price}
-              compareAtPrice={product.compareAtPrice}
-              size="sm"
-            />
-            <span className="text-[10px] uppercase text-neutral-400">
-              {product.category}
-            </span>
-          </div>
+        <div className="mt-3 flex items-center justify-between gap-2">
+          <ProductPrice
+            price={product.price}
+            compareAtPrice={product.compareAtPrice}
+            size="sm"
+          />
+          <span className="text-[10px] uppercase text-neutral-400">
+            {product.category}
+          </span>
+        </div>
 
-          <div className="mt-2">
-            <ProductDiscountBadge category={product.category} />
-          </div>
-        </Link>
-
-        <div className="mt-4">
-          <AddToCartButton product={cartProduct} compact />
+        <div className="mt-2">
+          <ProductDiscountBadge category={product.category} />
         </div>
       </div>
 
+      <div className="relative z-20 px-4 pb-4">
+        <AddToCartButton product={cartProduct} compact />
+      </div>
+
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,0,0,0.12),transparent_60%)] opacity-0 transition duration-500 group-hover:opacity-100" />
-    </div>
+    </article>
   );
 }
