@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type PointerEvent as ReactPointerEvent,
-} from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   DEFAULT_PRODUCT_IMAGE,
   resolveProductGallery,
@@ -75,7 +68,11 @@ function GalleryImage({
       loading={loading}
       decoding="async"
       fetchPriority={fetchPriority}
-      sizes={profile === "detail" ? "(max-width: 768px) 100vw, 520px" : "(max-width: 640px) 50vw, 320px"}
+      sizes={
+        profile === "detail"
+          ? "(max-width: 768px) 100vw, 520px"
+          : "(max-width: 640px) 50vw, 320px"
+      }
       onError={() => {
         const next = nextImageFallback(resolvedSrc, currentSrc, profile);
         if (next) {
@@ -106,73 +103,15 @@ export default function ImageCarousel({
   );
   const total = galleryImages.length;
   const hasMultiple = total > 1;
-
-  const scrollerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const dragState = useRef({ active: false, startX: 0, scrollLeft: 0, pointerId: -1 });
-
-  const syncActiveIndex = useCallback(() => {
-    const el = scrollerRef.current;
-    if (!el || el.clientWidth <= 0) return;
-    const index = Math.round(el.scrollLeft / el.clientWidth);
-    setActiveIndex(Math.min(Math.max(index, 0), total - 1));
-  }, [total]);
 
   useEffect(() => {
-    const el = scrollerRef.current;
-    if (!el) return;
-    el.addEventListener("scroll", syncActiveIndex, { passive: true });
-    return () => el.removeEventListener("scroll", syncActiveIndex);
-  }, [syncActiveIndex]);
+    setActiveIndex(0);
+  }, [galleryImages]);
 
-  const scrollToIndex = useCallback(
-    (index: number) => {
-      const el = scrollerRef.current;
-      if (!el) return;
-      const next = ((index % total) + total) % total;
-      el.scrollTo({ left: next * el.clientWidth, behavior: "smooth" });
-      setActiveIndex(next);
-    },
-    [total]
-  );
-
-  const onPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if (isCard || !hasMultiple) return;
-    const el = scrollerRef.current;
-    if (!el) return;
-
-    dragState.current = {
-      active: true,
-      startX: event.clientX,
-      scrollLeft: el.scrollLeft,
-      pointerId: event.pointerId,
-    };
-    el.setPointerCapture(event.pointerId);
-  };
-
-  const onPointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if (!dragState.current.active) return;
-    const el = scrollerRef.current;
-    if (!el) return;
-
-    const delta = event.clientX - dragState.current.startX;
-    el.scrollLeft = dragState.current.scrollLeft - delta;
-  };
-
-  const endDrag = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if (!dragState.current.active) return;
-    const el = scrollerRef.current;
-    dragState.current.active = false;
-
-    if (el?.hasPointerCapture(event.pointerId)) {
-      el.releasePointerCapture(event.pointerId);
-    }
-
-    syncActiveIndex();
-
-    if (!el || el.clientWidth <= 0) return;
-    const index = Math.round(el.scrollLeft / el.clientWidth);
-    el.scrollTo({ left: index * el.clientWidth, behavior: "smooth" });
+  const scrollToIndex = (index: number) => {
+    const next = ((index % total) + total) % total;
+    setActiveIndex(next);
   };
 
   const isCard = variant === "card";
@@ -183,39 +122,19 @@ export default function ImageCarousel({
       ? "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-sm border border-neutral-200 bg-neutral-50"
       : "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] shadow-[0_4px_24px_rgba(0,0,0,0.25)]";
 
+  const activeSrc = galleryImages[activeIndex] ?? galleryImages[0];
+
   return (
-    <div className="w-full min-w-0 max-w-full">
+    <div className="w-full min-w-0 max-w-full touch-pan-y">
       <div className={frameClass}>
-        <div
-          ref={scrollerRef}
-          className={`flex h-full w-full overflow-x-auto scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${
-            isCard
-              ? "pointer-events-none touch-pan-y"
-              : "cursor-grab overflow-x-auto active:cursor-grabbing"
-          }`}
-          style={isCard ? undefined : { touchAction: "pan-x" }}
-          onPointerDown={isCard ? undefined : onPointerDown}
-          onPointerMove={isCard ? undefined : onPointerMove}
-          onPointerUp={isCard ? undefined : endDrag}
-          onPointerCancel={isCard ? undefined : endDrag}
-          onPointerLeave={isCard ? undefined : endDrag}
-        >
-          {galleryImages.map((slideSrc, index) => (
-            <div
-              key={`${slideSrc}-${index}`}
-              className="h-full min-w-full flex-[0_0_100%] snap-center snap-always"
-            >
-              <GalleryImage
-                src={slideSrc}
-                alt={`${alt} — image ${index + 1}`}
-                loading={index === 0 ? "eager" : "lazy"}
-                fetchPriority={index === 0 && !isCard ? "high" : undefined}
-                profile={imageProfile}
-                fallbacks={galleryImages.filter((_, i) => i !== index)}
-              />
-            </div>
-          ))}
-        </div>
+        <GalleryImage
+          src={activeSrc}
+          alt={`${alt} — image ${activeIndex + 1}`}
+          loading="eager"
+          fetchPriority={!isCard ? "high" : undefined}
+          profile={imageProfile}
+          fallbacks={galleryImages.filter((_, index) => index !== activeIndex)}
+        />
 
         {hasMultiple && !isCard && (
           <>
@@ -223,7 +142,7 @@ export default function ImageCarousel({
               type="button"
               aria-label="Previous image"
               onClick={() => scrollToIndex(activeIndex - 1)}
-              className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/55 text-xl text-white transition hover:bg-black/75"
+              className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-300 bg-white/90 text-xl text-neutral-900 shadow-sm transition hover:bg-white"
             >
               ‹
             </button>
@@ -231,7 +150,7 @@ export default function ImageCarousel({
               type="button"
               aria-label="Next image"
               onClick={() => scrollToIndex(activeIndex + 1)}
-              className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/55 text-xl text-white transition hover:bg-black/75"
+              className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-300 bg-white/90 text-xl text-neutral-900 shadow-sm transition hover:bg-white"
             >
               ›
             </button>
@@ -263,7 +182,7 @@ export default function ImageCarousel({
   );
 }
 
-/** Compact manual gallery for catalog cards. */
+/** Compact gallery for catalog cards — first image only. */
 export function CatalogImageGallery({
   images,
   alt,

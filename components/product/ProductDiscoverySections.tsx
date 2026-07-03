@@ -29,9 +29,12 @@ function ProductScrollRow({
         <h2 className="mb-4 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-600">
           {title}
         </h2>
-        <div className="flex max-w-full gap-3 overflow-x-auto overscroll-x-contain pb-1 [scrollbar-width:thin]">
+        <div className="grid grid-cols-2 gap-3 sm:flex sm:max-w-full sm:gap-3 sm:overflow-x-auto sm:overscroll-x-contain sm:pb-1 sm:[scrollbar-width:thin]">
           {products.map((product) => (
-            <div key={product.id} className="w-[148px] shrink-0 sm:w-[168px]">
+            <div
+              key={product.id}
+              className="w-full sm:w-[148px] sm:shrink-0 md:w-[168px]"
+            >
               <AllProductsGridCard product={product} />
             </div>
           ))}
