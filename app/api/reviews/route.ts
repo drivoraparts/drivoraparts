@@ -70,7 +70,7 @@ export async function POST(req: Request) {
     };
 
     const result = submitReview(input);
-    if (!result.ok) {
+    if (result.ok === false) {
       return NextResponse.json({ error: result.error }, { status: 400 });
     }
 

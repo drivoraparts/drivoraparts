@@ -20,7 +20,6 @@ const FIRST_NAMES = [
   "Mason",
   "Logan",
   "Aiden",
-  "Elijah",
   "Lucas",
   "Nathan",
   "Caleb",
@@ -34,106 +33,99 @@ const FIRST_NAMES = [
   "Brody",
   "Trevor",
   "Wesley",
+  "Eric",
+  "Adam",
+  "Nick",
+  "Luke",
+  "John",
+  "Matt",
+  "Daniel",
+  "Ian",
+  "Sean",
+  "Patrick",
+  "Greg",
+  "Scott",
+  "Kyle",
+  "Brian",
+  "Chris",
+  "Alex",
+  "David",
 ];
 
-const LAST_NAMES = [
-  "Adams",
-  "Baker",
-  "Brooks",
-  "Campbell",
-  "Carter",
-  "Clark",
-  "Collins",
-  "Cooper",
-  "Davis",
-  "Edwards",
-  "Evans",
-  "Foster",
-  "Garcia",
-  "Gray",
-  "Hall",
-  "Harris",
-  "Hayes",
-  "Hill",
-  "Howard",
-  "Hughes",
-  "Jackson",
-  "Johnson",
-  "Kelly",
-  "King",
-  "Lee",
-  "Lewis",
-  "Long",
-  "Martin",
-  "Miller",
-  "Mitchell",
-];
+const LAST_INITIALS = "ABCDEFGHJKLMNPRSTUVW".split("");
 
-/** Mostly 4–5 stars, occasional middling/negative reviews. */
 const RATING_DISTRIBUTION: Array<1 | 2 | 3 | 4 | 5> = [
-  ...Array(52).fill(5),
+  ...Array(55).fill(5),
   ...Array(28).fill(4),
   ...Array(10).fill(3),
-  ...Array(6).fill(2),
-  ...Array(4).fill(1),
+  ...Array(5).fill(2),
+  ...Array(2).fill(1),
 ] as Array<1 | 2 | 3 | 4 | 5>;
 
 const COMMENTS: Record<1 | 2 | 3 | 4 | 5, string[]> = {
   5: [
-    "Showed up on time and matched the listing photos. No surprises at all.",
-    "Packaging was heavy duty. Unit looked clean straight out of the crate.",
-    "Install went smoother than expected. Everything bolted up where it should.",
-    "Seller answered my fitment question before I ordered. That helped a lot.",
-    "Exactly what I needed for the build. Would order from here again.",
-    "Freight was tracked the whole way. Part arrived with zero damage.",
-    "Honest listing. Compression and leak-down numbers were right on the money.",
-    "Better experience than my last online parts purchase, hands down.",
-    "Quality is there. You can tell this was handled like a real powertrain part.",
-    "Fast turnaround and solid communication. Very happy with this buy.",
-    "Looks even cleaner in person than the photos suggested.",
-    "No missing hardware. Manual and accessories were all accounted for.",
-    "Shop guys were impressed with the condition when it landed.",
-    "Price was fair for what showed up. No bait-and-switch nonsense.",
-    "Runs strong after break-in. Exactly what the listing promised.",
+    "Arrived earlier than expected. Box was beat up but the part inside was fine.",
+    "Exactly what I ordered. No missing pieces in the shipment.",
+    "Packaging was solid — double boxed and plenty of foam.",
+    "Tracked the whole way. Driver called before delivery.",
+    "Clean unit. Matches the listing photos.",
+    "Installed over the weekend without any fitment drama.",
+    "Seller responded quickly when I had a shipping question.",
+    "Would buy here again. Honest listing.",
+    "Freight company handled it well. No visible damage.",
+    "Better condition than I expected for the price.",
+    "All hardware was in the box. Nothing left out.",
+    "Runs great after install. Very satisfied.",
+    "Communication was clear from checkout to delivery.",
+    "Label matched my order number. Easy to verify on receipt.",
+    "Shop was happy with what showed up on the pallet.",
+    "Good experience overall. Part looks legit.",
+    "Wrapped well for LTL. Corners were protected.",
+    "No surprises when we opened the crate.",
+    "Quality feels right for this type of part.",
+    "Fast processing after I paid.",
+    "Showed up on a pallet just like the listing said.",
+    "No rust, no hidden damage. Exactly as described.",
+    "My mechanic said the unit looked clean.",
+    "Checked serials against the invoice. All matched.",
   ],
   4: [
-    "Good part overall. Shipping took a few extra days but worth the wait.",
-    "Small cosmetic scuff on the housing, nothing that affects function.",
-    "Install notes could be clearer, but the unit itself is solid.",
-    "Dock scheduling was a little slow, product quality is still there.",
-    "Happy with the purchase. Would recommend with minor caveats.",
-    "Runs well. Packaging was average but the part was protected fine.",
-    "Support replied before I pulled the trigger on the order. Appreciated that.",
-    "Minor paint chip on arrival, function is 100% though.",
+    "Good part. Shipping ran a couple days late.",
+    "Small scratch on the finish but works fine.",
+    "Solid buy. Instructions could be clearer.",
+    "Dock took an extra day to schedule delivery.",
+    "Happy with it. Minor cosmetic stuff only.",
+    "Works as it should. Packaging was just average.",
+    "Support got back to me before I ordered.",
+    "Delivery window slipped but the part is fine.",
+    "Would still recommend. Just plan extra time for freight.",
   ],
   3: [
-    "Works as described. Experience was just middle of the road overall.",
-    "Decent for the price. Listing made it look a touch cleaner than it is.",
-    "Functional unit. Expected a bit more detail in the write-up.",
-    "Got the job done. Nothing special good or bad.",
+    "It works. Nothing amazing, nothing terrible.",
+    "Okay for the money. Listing was slightly optimistic.",
+    "Middle of the road experience.",
+    "Functional. Took longer to ship than quoted.",
   ],
   2: [
-    "Had to chase down a missing bracket after unboxing.",
-    "Some exterior finish issues, still usable but not thrilled.",
-    "Support was slow getting back about a bent flange.",
-    "Longer lead time than quoted at checkout.",
+    "Missing a bracket in the box. Still usable.",
+    "Finish wasn't great. Customer service was slow.",
+    "Late delivery with minimal updates.",
   ],
   1: [
-    "Listing details did not match what showed up.",
-    "Order updates were unclear and the delay dragged on.",
-    "Had to dispute a missing component with support.",
+    "Not what the listing described.",
+    "Long delay and poor communication.",
   ],
 };
 
 const REVIEW_COUNT_OVERRIDES: Record<number, number> = {
-  1: 47,
-  34: 63,
-  39: 58,
-  40: 71,
-  42: 39,
-  43: 34,
-  46: 31,
-  49: 44,
+  1: 18,
+  34: 22,
+  39: 19,
+  40: 24,
+  42: 14,
+  43: 12,
+  46: 11,
+  49: 16,
 };
 
 function createRng(seed: number) {
@@ -169,38 +161,41 @@ function pickRating(rng: () => number): 1 | 2 | 3 | 4 | 5 {
   return RATING_DISTRIBUTION[index] ?? 5;
 }
 
-function pickComment(rating: 1 | 2 | 3 | 4 | 5, rng: () => number): string {
-  const pool = COMMENTS[rating];
-  return pool[Math.floor(rng() * pool.length)] ?? pool[0];
-}
-
-/** Stable portrait per reviewer name — local randomuser.me downloads. */
-function buildAvatarUrl(reviewerName: string): string {
-  const slot = (hashString(reviewerName) % AVATAR_COUNT) + 1;
-  return `/reviews/avatars/${String(slot).padStart(2, "0")}.jpg`;
-}
-
 function buildUniqueNames(count: number, rng: () => number): string[] {
   const combos: string[] = [];
   for (const first of FIRST_NAMES) {
-    for (const last of LAST_NAMES) {
-      combos.push(`${first} ${last[0]}.`);
+    for (const initial of LAST_INITIALS) {
+      combos.push(`${first} ${initial}.`);
     }
   }
 
   const shuffled = shuffleWithRng(combos, rng);
-  if (count <= shuffled.length) {
-    return shuffled.slice(0, count);
+  return shuffled.slice(0, count);
+}
+
+function buildAvatarUrl(reviewId: string): string {
+  const slot = (hashString(reviewId) % AVATAR_COUNT) + 1;
+  return `/reviews/avatars/${String(slot).padStart(2, "0")}.jpg`;
+}
+
+function pickUniqueComments(
+  count: number,
+  ratings: Array<1 | 2 | 3 | 4 | 5>,
+  rng: () => number
+): string[] {
+  const used = new Set<string>();
+  const comments: string[] = [];
+
+  for (const rating of ratings) {
+    const pool = shuffleWithRng(COMMENTS[rating], rng);
+    const picked =
+      pool.find((comment) => !used.has(comment)) ??
+      `${pool[0]} (${comments.length + 1})`;
+    used.add(picked);
+    comments.push(picked);
   }
 
-  const names = [...shuffled];
-  let suffix = 2;
-  while (names.length < count) {
-    const base = shuffled[names.length % shuffled.length];
-    names.push(`${base.replace(/\.$/, "")}${suffix}.`);
-    suffix += 1;
-  }
-  return names;
+  return comments;
 }
 
 export function getTargetReviewCount(productId: number): number {
@@ -209,33 +204,33 @@ export function getTargetReviewCount(productId: number): number {
   }
 
   const rng = createRng(productId * 92821);
-  return Math.floor(rng() * 72) + 9;
+  return Math.floor(rng() * 13) + 6;
 }
 
 export function generateReviewsForProduct(productId: number): ProductReview[] {
   const count = getTargetReviewCount(productId);
   const rng = createRng(productId * 48271);
   const names = buildUniqueNames(count, rng);
+  const ratings = Array.from({ length: count }, () => pickRating(rng));
+  const comments = pickUniqueComments(count, ratings, rng);
   const now = Date.now();
   const dayMs = 24 * 60 * 60 * 1000;
 
   return names.map((reviewerName, index) => {
-    const rating = pickRating(rng);
-    const daysAgo = Math.floor(rng() * 365) + index;
-    const createdAt = new Date(
-      now - daysAgo * dayMs - index * 3600000
-    ).toISOString();
+    const rating = ratings[index] ?? 5;
+    const reviewId = `rev-${productId}-${index + 1}`;
+    const daysAgo = Math.floor(rng() * 320) + index * 3 + 1;
 
     return {
-      id: `rev-${productId}-${index + 1}`,
+      id: reviewId,
       userId: `seed-user-${productId}-${index + 1}`,
       productId,
       rating,
-      review: pickComment(rating, rng),
-      verifiedPurchase: rng() < 0.85,
-      createdAt,
+      review: comments[index] ?? COMMENTS[5][0],
+      verifiedPurchase: rng() < 0.82,
+      createdAt: new Date(now - daysAgo * dayMs).toISOString(),
       reviewerName,
-      profileImage: buildAvatarUrl(reviewerName),
+      profileImage: buildAvatarUrl(reviewId),
       status: "approved",
     };
   });

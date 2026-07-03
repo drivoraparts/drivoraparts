@@ -163,12 +163,12 @@ export default function ProductRatingSummary({
         }
 
         .verified-buyer-avatar {
-          width: 28px;
-          height: 28px;
+          width: 22px;
+          height: 22px;
           border-radius: 999px;
           object-fit: cover;
-          border: 2px solid rgba(17, 17, 17, 0.95);
-          background: rgba(255, 255, 255, 0.06);
+          border: 2px solid #fff;
+          background: #f3f4f6;
           pointer-events: none;
           user-select: none;
         }

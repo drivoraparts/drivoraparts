@@ -81,16 +81,16 @@ export default function ReviewCard({ review }: ReviewCardProps) {
 
         .review-card-header {
           display: flex;
-          gap: 12px;
-          align-items: flex-start;
+          gap: 10px;
+          align-items: center;
         }
 
         .review-card-avatar {
-          width: 44px;
-          height: 44px;
+          width: 32px;
+          height: 32px;
           border-radius: 999px;
           object-fit: cover;
-          border: 1px solid #d1d5db;
+          border: 1px solid #e5e7eb;
           background: #f3f4f6;
           flex-shrink: 0;
           pointer-events: none;
@@ -101,7 +101,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 14px;
+          font-size: 11px;
           font-weight: 700;
           color: #374151;
         }
@@ -112,8 +112,8 @@ export default function ReviewCard({ review }: ReviewCardProps) {
 
         .review-card-name {
           margin: 0;
-          font-size: 14px;
-          font-weight: 700;
+          font-size: 13px;
+          font-weight: 600;
           color: #111827;
         }
 

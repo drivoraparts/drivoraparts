@@ -7,6 +7,7 @@ import { CartProvider } from "@/context/CartContext";
 import CurrencyProvider from "@/components/currency/CurrencyProvider";
 import LanguageProvider from "@/components/i18n/LanguageProvider";
 import Toast from "@/components/Toast";
+import ScrollToTopOnNavigate from "@/components/navigation/ScrollToTopOnNavigate";
 
 const TawkChat = dynamic(() => import("@/components/chat/TawkChat"), {
   ssr: false,
@@ -61,6 +62,7 @@ export default function StoreProviders({
       >
         <MarketProvider>
           <CartProvider>
+            <ScrollToTopOnNavigate />
             {children}
             <Toast />
             <DeferredNonCritical>

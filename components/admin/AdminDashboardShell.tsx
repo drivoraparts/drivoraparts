@@ -6,6 +6,7 @@ import AdminTopBar from "./AdminTopBar";
 import { adminUi } from "./admin-ui";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ScrollToTopOnNavigate from "@/components/navigation/ScrollToTopOnNavigate";
 
 export default function AdminDashboardShell({
   children,
@@ -19,6 +20,7 @@ export default function AdminDashboardShell({
 
   return (
     <div className={`admin-theme ${adminUi.page}`}>
+      <ScrollToTopOnNavigate />
       <div className="flex min-h-screen">
         <div className="hidden md:flex">
           <AdminSidebar />

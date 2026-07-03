@@ -1,6 +1,8 @@
 import Link from "next/link";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
+import HomeFeaturedGrid from "@/components/home/HomeFeaturedGrid";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
+import { getHomeFeaturedProducts } from "@/lib/home/featured-products";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 import { routes } from "@/lib/inventory/routes";
 import { directAssetUrl } from "@/lib/media/optimize-image";
@@ -20,6 +22,7 @@ export const metadata = buildPageMetadata({
 export default function Home() {
   const heroSrc = directAssetUrl(HERO_IMAGE);
   const listingCount = HOME_LISTING_COUNT;
+  const featuredProducts = getHomeFeaturedProducts(8);
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] text-neutral-900">
@@ -102,6 +105,32 @@ export default function Home() {
           <HomeCategoryGrid />
         </div>
       </section>
+
+      {featuredProducts.length > 0 ? (
+        <section className="relative z-10 border-b border-neutral-200 bg-[var(--background)] px-4 py-12 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+                  Live listings
+                </p>
+                <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
+                  Featured products
+                </h2>
+              </div>
+              <Link
+                href={routes.all}
+                prefetch={false}
+                className="touch-manipulation text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
+              >
+                View all →
+              </Link>
+            </div>
+
+            <HomeFeaturedGrid products={featuredProducts} />
+          </div>
+        </section>
+      ) : null}
 
       <HomeTrustBadges />
 

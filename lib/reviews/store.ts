@@ -91,9 +91,13 @@ export function getVerifiedBuyerAvatars(
   );
 
   const avatars: string[] = [];
+  const seen = new Set<string>();
+
   for (const review of reviews) {
     const avatar = review.profileImage || DEFAULT_AVATAR;
-    if (!avatars.includes(avatar)) avatars.push(avatar);
+    if (seen.has(avatar)) continue;
+    seen.add(avatar);
+    avatars.push(avatar);
     if (avatars.length >= limit) break;
   }
 
