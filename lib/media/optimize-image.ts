@@ -78,9 +78,6 @@ export function optimizeImageUrl(
   profile: ImageProfile = "card"
 ): string {
   if (isProxiedRemoteUrl(src)) {
-    if (process.env.NODE_ENV === "production" && cfOptimizationEnabled()) {
-      return cfResizePath(src, profile);
-    }
     return remoteImageProxyUrl(src);
   }
 
@@ -106,11 +103,11 @@ export function nextImageFallback(
 
   if (isProxiedRemoteUrl(resolved)) {
     const proxied = remoteImageProxyUrl(resolved);
-    if (currentSrc !== optimized) {
-      return optimized;
-    }
     if (currentSrc !== proxied) {
       return proxied;
+    }
+    if (currentSrc !== resolved) {
+      return resolved;
     }
     return null;
   }
