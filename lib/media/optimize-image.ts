@@ -18,10 +18,6 @@ export const IMAGE_SIZES: Record<ImageProfile, string> = {
 
 const REMOTE_PROXY_HOSTS = ["edmundstruckparts.com"];
 
-function cfOptimizationEnabled(): boolean {
-  return process.env.NEXT_PUBLIC_CF_IMAGE_OPTIMIZATION === "true";
-}
-
 function shouldOptimize(path: string): boolean {
   if (!path || path.startsWith("data:") || path.startsWith("http")) return false;
   if (path.endsWith(".svg")) return false;
@@ -45,15 +41,6 @@ export function remoteImageProxyUrl(src: string): string {
   return `/api/media/remote?u=${encodeURIComponent(src)}`;
 }
 
-function cfResizePath(pathOrUrl: string, profile: ImageProfile): string {
-  const { width, quality } = PROFILES[profile];
-  const options = `width=${width},quality=${quality},format=auto,fit=scale-down`;
-  if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) {
-    return `/cdn-cgi/image/${options}/${pathOrUrl}`;
-  }
-  return `/cdn-cgi/image/${options}${pathOrUrl}`;
-}
-
 /** Encode spaces and special chars so mobile Safari + Cloudflare image URLs resolve reliably. */
 export function encodeAssetPath(path: string): string {
   if (!path.startsWith("/")) return path;
@@ -72,35 +59,27 @@ export function directAssetUrl(src: string): string {
   return encodeAssetPath(rawPath);
 }
 
-/** Cloudflare Image Resizing in production; encoded original asset locally and as fallback. */
+/** Same-origin static assets; Edmunds hotlinks go through /api/media/remote. */
 export function optimizeImageUrl(
   src: string,
-  profile: ImageProfile = "card"
+  _profile: ImageProfile = "card"
 ): string {
   if (isProxiedRemoteUrl(src)) {
     return remoteImageProxyUrl(src);
   }
 
   const rawPath = src.startsWith("/") ? src : `/${src}`;
-  const path = encodeAssetPath(rawPath);
   if (!shouldOptimize(rawPath)) return src;
 
-  if (process.env.NODE_ENV !== "production" || !cfOptimizationEnabled()) {
-    return path;
-  }
-
-  return cfResizePath(path, profile);
+  return encodeAssetPath(rawPath);
 }
 
 /** Next URL to try when the current product image fails to load. */
 export function nextImageFallback(
   resolved: string,
   currentSrc: string,
-  profile: ImageProfile = "card"
+  _profile: ImageProfile = "card"
 ): string | null {
-  const encoded = encodeAssetPath(resolved);
-  const optimized = optimizeImageUrl(resolved, profile);
-
   if (isProxiedRemoteUrl(resolved)) {
     const proxied = remoteImageProxyUrl(resolved);
     if (currentSrc !== proxied) {
@@ -112,12 +91,9 @@ export function nextImageFallback(
     return null;
   }
 
-  if (currentSrc !== encoded) {
-    return encoded;
-  }
-
-  if (currentSrc !== optimized) {
-    return optimized;
+  const direct = encodeAssetPath(resolved.startsWith("/") ? resolved : `/${resolved}`);
+  if (currentSrc !== direct) {
+    return direct;
   }
 
   return null;

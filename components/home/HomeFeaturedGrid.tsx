@@ -12,7 +12,13 @@ export default function HomeFeaturedGrid({
   return (
     <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
       {products.map((product) => (
-        <CatalogProductCard key={product.id} product={product} />
+        <CatalogProductCard
+          key={product.id}
+          product={{
+            ...product,
+            images: [product.thumbnail],
+          }}
+        />
       ))}
     </div>
   );
