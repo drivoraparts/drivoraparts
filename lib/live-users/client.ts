@@ -1,17 +1,25 @@
 "use client";
 
+import { getSafeSessionStorage } from "@/lib/storage/safe-storage";
+
 const SESSION_KEY = "drivora-live-session";
+let memorySessionId = "";
 
 function getSessionId(): string {
   if (typeof window === "undefined") return "";
 
-  let sessionId = sessionStorage.getItem(SESSION_KEY);
+  const storage = getSafeSessionStorage();
+  let sessionId = storage.getItem(SESSION_KEY);
   if (!sessionId) {
     sessionId = crypto.randomUUID();
-    sessionStorage.setItem(SESSION_KEY, sessionId);
+    try {
+      storage.setItem(SESSION_KEY, sessionId);
+    } catch {
+      memorySessionId = sessionId;
+    }
   }
 
-  return sessionId;
+  return sessionId || memorySessionId;
 }
 
 export function sendLiveHeartbeat(page: string, previousPage?: string): void {

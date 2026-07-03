@@ -63,7 +63,7 @@ export default function Home() {
   const listingCount = getHomeProductCount();
 
   return (
-    <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-clip bg-[var(--background)] text-neutral-900">
+    <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] text-neutral-900">
       {/* Compact hero — static image (no scroll JS) */}
       <section className="relative -mt-[72px] flex min-h-[58vh] min-h-[420px] w-full min-w-0 items-center justify-center overflow-hidden pt-[72px] sm:-mt-[80px] sm:min-h-[62vh] sm:pt-[80px]">
         <div className="absolute inset-0 z-0 overflow-hidden">

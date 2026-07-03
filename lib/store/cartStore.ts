@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { calculateCartDiscounts } from "@/lib/inventory/discounts";
+import { getSafeLocalStorage } from "@/lib/storage/safe-storage";
 
 export type CartItem = {
   id: number;
@@ -94,7 +95,7 @@ export const useCartStore = create<CartState>()(
     }),
     {
       name: "drivora-cart",
-      storage: createJSONStorage(() => localStorage),
+      storage: createJSONStorage(() => getSafeLocalStorage()),
     }
   )
 );

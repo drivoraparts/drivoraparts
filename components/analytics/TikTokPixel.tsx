@@ -6,13 +6,13 @@ type Props = {
   pixelId: string;
 };
 
-/** TikTok base pixel — beforeInteractive, same lifecycle as Meta pixel. */
+/** TikTok base pixel — afterInteractive so mobile Safari is not blocked on first paint. */
 export default function TikTokPixel({ pixelId }: Props) {
   const id = pixelId.trim();
   if (!id) return null;
 
   return (
-    <Script id="tiktok-pixel-base" strategy="beforeInteractive">
+    <Script id="tiktok-pixel-base" strategy="afterInteractive">
       {buildTikTokBaseScript(id)}
     </Script>
   );
