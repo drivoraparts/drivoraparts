@@ -39,6 +39,15 @@ const nextConfig: NextConfig = {
         headers: staticAssetCache,
       },
       {
+        source: "/api/media/remote",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=604800, stale-while-revalidate=86400",
+          },
+        ],
+      },
+      {
         source: "/home/:path*",
         headers: staticAssetCache,
       },

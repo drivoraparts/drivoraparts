@@ -14,7 +14,7 @@ import {
   resolveProductImage,
 } from "@/lib/inventory/media";
 import {
-  encodeAssetPath,
+  nextImageFallback,
   optimizeImageUrl,
   type ImageProfile,
 } from "@/lib/media/optimize-image";
@@ -57,15 +57,15 @@ function GalleryImage({
     setUseDefault(false);
   }, [src, fallbacks]);
 
-  const originalSrc = useDefault
+  const resolvedSrc = useDefault
     ? DEFAULT_PRODUCT_IMAGE
-    : encodeAssetPath(resolveProductImage(candidates[index] ?? src));
-  const optimizedSrc = optimizeImageUrl(originalSrc, profile);
+    : resolveProductImage(candidates[index] ?? src);
+  const optimizedSrc = optimizeImageUrl(resolvedSrc, profile);
   const [currentSrc, setCurrentSrc] = useState(optimizedSrc);
 
   useEffect(() => {
-    setCurrentSrc(optimizeImageUrl(originalSrc, profile));
-  }, [originalSrc, profile]);
+    setCurrentSrc(optimizeImageUrl(resolvedSrc, profile));
+  }, [resolvedSrc, profile]);
 
   return (
     <img
@@ -77,8 +77,9 @@ function GalleryImage({
       fetchPriority={fetchPriority}
       sizes={profile === "detail" ? "(max-width: 768px) 100vw, 520px" : "(max-width: 640px) 50vw, 320px"}
       onError={() => {
-        if (currentSrc !== originalSrc) {
-          setCurrentSrc(originalSrc);
+        const next = nextImageFallback(resolvedSrc, currentSrc, profile);
+        if (next) {
+          setCurrentSrc(next);
           return;
         }
         if (index < candidates.length - 1) {
@@ -177,7 +178,7 @@ export default function ImageCarousel({
   const isCard = variant === "card";
   const imageProfile: ImageProfile = isCard ? "grid" : "detail";
   const frameClass = isCard
-    ? "relative h-40 w-full overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]"
+    ? "relative h-40 w-full overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50"
     : surface === "light"
       ? "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-sm border border-neutral-200 bg-neutral-50"
       : "relative aspect-square max-h-[520px] w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] shadow-[0_4px_24px_rgba(0,0,0,0.25)]";

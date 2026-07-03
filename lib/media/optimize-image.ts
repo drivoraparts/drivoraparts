@@ -16,10 +16,42 @@ export const IMAGE_SIZES: Record<ImageProfile, string> = {
   hero: "100vw",
 };
 
+const REMOTE_PROXY_HOSTS = ["edmundstruckparts.com"];
+
+function cfOptimizationEnabled(): boolean {
+  return process.env.NEXT_PUBLIC_CF_IMAGE_OPTIMIZATION === "true";
+}
+
 function shouldOptimize(path: string): boolean {
   if (!path || path.startsWith("data:") || path.startsWith("http")) return false;
   if (path.endsWith(".svg")) return false;
   return true;
+}
+
+export function isProxiedRemoteUrl(src: string): boolean {
+  if (!src.startsWith("http://") && !src.startsWith("https://")) return false;
+  try {
+    const { hostname } = new URL(src);
+    return REMOTE_PROXY_HOSTS.some(
+      (host) => hostname === host || hostname.endsWith(`.${host}`)
+    );
+  } catch {
+    return false;
+  }
+}
+
+/** Same-origin proxy for hotlinked vendor images blocked on some networks. */
+export function remoteImageProxyUrl(src: string): string {
+  return `/api/media/remote?u=${encodeURIComponent(src)}`;
+}
+
+function cfResizePath(pathOrUrl: string, profile: ImageProfile): string {
+  const { width, quality } = PROFILES[profile];
+  const options = `width=${width},quality=${quality},format=auto,fit=scale-down`;
+  if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) {
+    return `/cdn-cgi/image/${options}/${pathOrUrl}`;
+  }
+  return `/cdn-cgi/image/${options}${pathOrUrl}`;
 }
 
 /** Encode spaces and special chars so mobile Safari + Cloudflare image URLs resolve reliably. */
@@ -35,6 +67,7 @@ export function encodeAssetPath(path: string): string {
 
 /** Plain static asset URL (no Cloudflare /cdn-cgi/image wrapper). */
 export function directAssetUrl(src: string): string {
+  if (src.startsWith("http://") || src.startsWith("https://")) return src;
   const rawPath = src.startsWith("/") ? src : `/${src}`;
   return encodeAssetPath(rawPath);
 }
@@ -44,15 +77,51 @@ export function optimizeImageUrl(
   src: string,
   profile: ImageProfile = "card"
 ): string {
+  if (isProxiedRemoteUrl(src)) {
+    if (process.env.NODE_ENV === "production" && cfOptimizationEnabled()) {
+      return cfResizePath(src, profile);
+    }
+    return remoteImageProxyUrl(src);
+  }
+
   const rawPath = src.startsWith("/") ? src : `/${src}`;
   const path = encodeAssetPath(rawPath);
   if (!shouldOptimize(rawPath)) return src;
 
-  const enabled = process.env.NEXT_PUBLIC_CF_IMAGE_OPTIMIZATION === "true";
-  if (process.env.NODE_ENV !== "production" || !enabled) {
+  if (process.env.NODE_ENV !== "production" || !cfOptimizationEnabled()) {
     return path;
   }
 
-  const { width, quality } = PROFILES[profile];
-  return `/cdn-cgi/image/width=${width},quality=${quality},format=auto,fit=scale-down${path}`;
+  return cfResizePath(path, profile);
+}
+
+/** Next URL to try when the current product image fails to load. */
+export function nextImageFallback(
+  resolved: string,
+  currentSrc: string,
+  profile: ImageProfile = "card"
+): string | null {
+  const encoded = encodeAssetPath(resolved);
+  const optimized = optimizeImageUrl(resolved, profile);
+
+  if (isProxiedRemoteUrl(resolved)) {
+    const proxied = remoteImageProxyUrl(resolved);
+    if (currentSrc !== optimized) {
+      return optimized;
+    }
+    if (currentSrc !== proxied) {
+      return proxied;
+    }
+    return null;
+  }
+
+  if (currentSrc !== encoded) {
+    return encoded;
+  }
+
+  if (currentSrc !== optimized) {
+    return optimized;
+  }
+
+  return null;
 }

@@ -89,6 +89,10 @@ export function getRateLimitConfig(pathname: string): {
     return { limit: 30, windowMs };
   }
 
+  if (pathname.startsWith("/api/media/remote")) {
+    return { limit: 500, windowMs };
+  }
+
   return { limit: 60, windowMs };
 }
 

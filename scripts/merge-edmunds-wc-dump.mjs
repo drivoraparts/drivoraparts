@@ -30,6 +30,9 @@ const AGENT_DUMP_FILES = [
   "C:/Users/solution info/.cursor/projects/c-Users-solution-info-Desktop-drivoraparts/agent-tools/71919b87-c431-4f14-880d-6ca81fe53ebf.txt",
 ];
 
+const UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
+
 function wcPriceToUsd(prices) {
   if (!prices?.price) return 0;
   const minor = Number(prices.price);
@@ -94,6 +97,20 @@ function extFromUrl(url) {
   if (ext === ".jpeg") return ".jpg";
   if ([".jpg", ".webp", ".png"].includes(ext)) return ext;
   return ".jpg";
+}
+
+function isPlaceholderUrl(url = "") {
+  return /placeholder\.(jpe?g|png|webp)/i.test(url);
+}
+
+function normalizeImageUrls(images = []) {
+  const unique = [];
+  for (const img of images) {
+    const url = typeof img === "string" ? img : img?.src;
+    if (!url || isPlaceholderUrl(url)) continue;
+    if (!unique.includes(url)) unique.push(url);
+  }
+  return unique;
 }
 
 async function downloadImages(imageUrls, slug) {
@@ -166,7 +183,7 @@ for (let index = 0; index < wcProducts.length; index += 1) {
   if (price <= 0) continue;
 
   const slug = row.slug;
-  const imageUrls = (row.images ?? []).map((img) => img.src).filter(Boolean);
+  const imageUrls = normalizeImageUrls(row.images ?? []);
   const files = skipDownload ? [] : await downloadImages(imageUrls, slug);
   const images =
     files.length > 0

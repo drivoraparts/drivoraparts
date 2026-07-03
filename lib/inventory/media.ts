@@ -31,4 +31,13 @@ export function getProductThumbnail(
   return resolveProductImage(fromGallery ?? product.thumbnail ?? product.image);
 }
 
-export { optimizeImageUrl, encodeAssetPath, IMAGE_SIZES, type ImageProfile } from "@/lib/media/optimize-image";
+export {
+  optimizeImageUrl,
+  encodeAssetPath,
+  directAssetUrl,
+  isProxiedRemoteUrl,
+  nextImageFallback,
+  remoteImageProxyUrl,
+  IMAGE_SIZES,
+  type ImageProfile,
+} from "@/lib/media/optimize-image";

@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { resolveProductImage } from "@/lib/inventory/media";
 import {
-  directAssetUrl,
-  encodeAssetPath,
+  DEFAULT_PRODUCT_IMAGE,
+  resolveProductImage,
+} from "@/lib/inventory/media";
+import {
   IMAGE_SIZES,
+  nextImageFallback,
   optimizeImageUrl,
   type ImageProfile,
 } from "@/lib/media/optimize-image";
@@ -29,13 +31,13 @@ export default function OptimizedImage({
   fetchPriority,
   sizes,
 }: OptimizedImageProps) {
-  const original = directAssetUrl(resolveProductImage(src));
-  const optimized = optimizeImageUrl(original, profile);
+  const resolved = resolveProductImage(src);
+  const optimized = optimizeImageUrl(resolved, profile);
   const [currentSrc, setCurrentSrc] = useState(optimized);
 
   useEffect(() => {
-    setCurrentSrc(optimizeImageUrl(original, profile));
-  }, [original, profile]);
+    setCurrentSrc(optimizeImageUrl(resolved, profile));
+  }, [resolved, profile]);
 
   return (
     <img
@@ -46,8 +48,13 @@ export default function OptimizedImage({
       fetchPriority={fetchPriority}
       sizes={sizes ?? IMAGE_SIZES[profile]}
       onError={() => {
-        if (currentSrc !== original) {
-          setCurrentSrc(original);
+        const next = nextImageFallback(resolved, currentSrc, profile);
+        if (next) {
+          setCurrentSrc(next);
+          return;
+        }
+        if (currentSrc !== DEFAULT_PRODUCT_IMAGE) {
+          setCurrentSrc(DEFAULT_PRODUCT_IMAGE);
         }
       }}
       className={className}
