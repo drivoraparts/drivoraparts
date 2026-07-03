@@ -71,17 +71,23 @@ function validateCustomer(input: CheckoutCustomerInput): void {
 
 
   if (input.phone && input.phone.length > 40) {
-
     throw new Error("Invalid phone number");
-
   }
 
+  if (!input.address?.trim() || input.address.length > 200) {
+    throw new Error("Invalid address");
+  }
 
+  if (!input.city?.trim() || input.city.length > 120) {
+    throw new Error("Invalid city");
+  }
+
+  if (!input.zip?.trim() || input.zip.length > 20) {
+    throw new Error("Invalid ZIP code");
+  }
 
   if (input.shippingAddress && input.shippingAddress.length > 500) {
-
     throw new Error("Invalid shipping address");
-
   }
 
 }

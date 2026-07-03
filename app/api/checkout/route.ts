@@ -33,6 +33,23 @@ function parseCustomer(raw: unknown) {
 
   if (!fullName || !email) return null;
 
+  const address =
+    typeof (raw as { address?: string }).address === "string"
+      ? (raw as { address: string }).address.trim()
+      : "";
+  const city =
+    typeof (raw as { city?: string }).city === "string"
+      ? (raw as { city: string }).city.trim()
+      : "";
+  const zip =
+    typeof (raw as { zip?: string }).zip === "string"
+      ? (raw as { zip: string }).zip.trim()
+      : "";
+
+  const shippingAddress = [address, [city, zip].filter(Boolean).join(", ")]
+    .filter(Boolean)
+    .join("\n");
+
   return {
     fullName,
     email,
@@ -40,10 +57,10 @@ function parseCustomer(raw: unknown) {
       typeof (raw as { phone?: string }).phone === "string"
         ? (raw as { phone: string }).phone.trim()
         : undefined,
-    shippingAddress:
-      typeof (raw as { address?: string }).address === "string"
-        ? (raw as { address: string }).address.trim()
-        : undefined,
+    address: address || undefined,
+    city: city || undefined,
+    zip: zip || undefined,
+    shippingAddress: shippingAddress || undefined,
   };
 }
 

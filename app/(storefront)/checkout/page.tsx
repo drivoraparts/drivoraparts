@@ -17,12 +17,17 @@ import { useTranslation } from "@/hooks/useTranslation";
 const glassCard =
   "box-border w-full max-w-full rounded-lg border border-neutral-200 bg-white p-4 shadow-sm sm:p-6";
 
+const inputClass =
+  "box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500";
+
 export default function CheckoutPage() {
   const [hydrated, setHydrated] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [zip, setZip] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   const cart = useCartStore((s) => s.items);
@@ -68,8 +73,14 @@ export default function CheckoutPage() {
   const handleCheckout = async () => {
     if (!cart.length || submitting) return;
 
-    if (!fullName.trim() || !email.trim()) {
-      showToast("Please enter your name and email");
+    if (
+      !fullName.trim() ||
+      !email.trim() ||
+      !address.trim() ||
+      !city.trim() ||
+      !zip.trim()
+    ) {
+      showToast("Please enter your name, email, and shipping address");
       return;
     }
 
@@ -93,7 +104,9 @@ export default function CheckoutPage() {
             fullName: fullName.trim(),
             email: email.trim(),
             phone: phone.trim() || undefined,
-            address: address.trim() || undefined,
+            address: address.trim(),
+            city: city.trim(),
+            zip: zip.trim(),
           },
           provider: "nowpayments",
         }),
@@ -184,10 +197,11 @@ export default function CheckoutPage() {
                     <input
                       id="checkout-name"
                       type="text"
+                      autoComplete="name"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       placeholder="John Doe"
-                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
+                      className={inputClass}
                     />
                   </div>
                   <div>
@@ -200,10 +214,11 @@ export default function CheckoutPage() {
                     <input
                       id="checkout-email"
                       type="email"
+                      autoComplete="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="you@example.com"
-                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
+                      className={inputClass}
                     />
                   </div>
                   <div>
@@ -216,10 +231,11 @@ export default function CheckoutPage() {
                     <input
                       id="checkout-phone"
                       type="tel"
+                      autoComplete="tel"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       placeholder="+1 555 000 0000"
-                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
+                      className={inputClass}
                     />
                   </div>
                   <div>
@@ -227,16 +243,53 @@ export default function CheckoutPage() {
                       htmlFor="checkout-address"
                       className="mb-1 block text-sm text-neutral-500"
                     >
-                      Shipping Address
+                      Address
                     </label>
                     <input
                       id="checkout-address"
                       type="text"
+                      autoComplete="street-address"
                       value={address}
                       onChange={(e) => setAddress(e.target.value)}
-                      placeholder="Street, City, Country"
-                      className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500"
+                      placeholder="123 Main Street"
+                      className={inputClass}
                     />
+                  </div>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <label
+                        htmlFor="checkout-city"
+                        className="mb-1 block text-sm text-neutral-500"
+                      >
+                        City
+                      </label>
+                      <input
+                        id="checkout-city"
+                        type="text"
+                        autoComplete="address-level2"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                        placeholder="Los Angeles"
+                        className={inputClass}
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="checkout-zip"
+                        className="mb-1 block text-sm text-neutral-500"
+                      >
+                        ZIP Code
+                      </label>
+                      <input
+                        id="checkout-zip"
+                        type="text"
+                        autoComplete="postal-code"
+                        value={zip}
+                        onChange={(e) => setZip(e.target.value)}
+                        placeholder="90210"
+                        className={inputClass}
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
