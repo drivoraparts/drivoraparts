@@ -1,6 +1,7 @@
 /**
  * Download representative product photos for truck listings missing images.
  * Run: node scripts/fetch-truck-stock-photos.mjs
+ * Force refresh listed slugs: node scripts/fetch-truck-stock-photos.mjs --force
  */
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -11,11 +12,21 @@ const ROOT = path.join(__dirname, "..");
 const JSON_PATH = path.join(ROOT, "lib/inventory/data/edmunds-truck-parts.json");
 const MEDIA_ROOT = path.join(ROOT, "public/product-media/truck-parts");
 
+const FORCE = process.argv.includes("--force");
+
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
 
 /** slug → array of source image URLs */
 const PHOTO_SOURCES = {
+  "99-06-chevy-silverado-truck-bed-for-sale": [
+    "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_2120.jpeg",
+    "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_2119.jpeg",
+    "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_2121.jpeg",
+    "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_2122.jpeg",
+    "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1280",
+  ],
   "a-premium-front-catalytic-converter": [
     "https://media.a-premium.com/eXQtcHJvZC1tZWRpYS1hc3NldHM=/MjAyMi9pdGVtL2ltYWdlL0NDVC9VU0NDVDQxNTEzLUMvVVNDQ1Q0MTUxMy1DLTIwMjQwMzIzLTBfd2lkdGhfMTYwMF9oZWlnaHRfMTYwMC5qcGc=",
     "https://media.a-premium.com/eXQtcHJvZC1tZWRpYS1hc3NldHM=/MjAyMi9pdGVtL2ltYWdlL0NDVC9VU0NDVDQxNTEzLUMvVVNDQ1Q0MTUxMy1DLTIwMjQwMzIzLTFfd2lkdGhfMTYwMF9oZWlnaHRfMTYwMC5qcGc=",
@@ -38,6 +49,12 @@ const PHOTO_SOURCES = {
   ],
 };
 
+/** Duplicate listings share the same media folder. */
+const SLUG_MEDIA_ALIASES = {
+  "99-06-chevy-silverado-truck-bed-for-sale-2":
+    "99-06-chevy-silverado-truck-bed-for-sale",
+};
+
 /** slug → relative paths under public/ to copy when remote fetch is sparse */
 const LOCAL_COPY_SOURCES = {
   "led-tail-light-with-blind-spot-compatible": [
@@ -46,6 +63,20 @@ const LOCAL_COPY_SOURCES = {
     "product-media/lights/morimoto-xb-led-tail-lights/4.jpg",
   ],
 };
+
+const TARGET_SLUGS = new Set([
+  "99-06-chevy-silverado-truck-bed-for-sale",
+  "99-06-chevy-silverado-truck-bed-for-sale-2",
+  "long-car-and-truck-exhaust-pipes",
+  "led-tail-light-with-blind-spot-compatible",
+  "seating-at-tractor-supply-co",
+  "a-premium-front-catalytic-converter",
+  "torin-atr6300b-rolling-creeper-garage",
+]);
+
+function mediaSlug(slug) {
+  return SLUG_MEDIA_ALIASES[slug] ?? slug;
+}
 
 function extFromContentType(type = "", url = "") {
   if (type.includes("png")) return ".png";
@@ -60,6 +91,7 @@ async function downloadOne(url, dest) {
   const res = await fetch(url, {
     headers: { "User-Agent": UA, Accept: "image/*,*/*;q=0.8" },
     redirect: "follow",
+    signal: AbortSignal.timeout(45_000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const buf = Buffer.from(await res.arrayBuffer());
@@ -69,19 +101,19 @@ async function downloadOne(url, dest) {
 }
 
 async function downloadForSlug(slug, urls) {
-  const dir = path.join(MEDIA_ROOT, slug);
+  const dir = path.join(MEDIA_ROOT, mediaSlug(slug));
   await fs.mkdir(dir, { recursive: true });
   const files = [];
 
-  for (let i = 0; i < Math.min(urls.length, 4); i += 1) {
+  for (let i = 0; i < urls.length && files.length < 4; i += 1) {
     const url = urls[i];
     try {
       const ext = extFromContentType("", url);
-      const name = `${i + 1}${ext}`;
+      const name = `${files.length + 1}${ext}`;
       await downloadOne(url, path.join(dir, name));
       files.push(name);
     } catch (err) {
-      console.warn(`  skip ${slug}/${i + 1}: ${err.message}`);
+      console.warn(`  skip ${slug}/${url.slice(0, 60)}…: ${err.message}`);
     }
   }
 
@@ -89,7 +121,7 @@ async function downloadForSlug(slug, urls) {
 }
 
 async function copyLocalForSlug(slug, relPaths, startIndex = 0) {
-  const dir = path.join(MEDIA_ROOT, slug);
+  const dir = path.join(MEDIA_ROOT, mediaSlug(slug));
   await fs.mkdir(dir, { recursive: true });
   const files = [];
 
@@ -109,23 +141,52 @@ async function copyLocalForSlug(slug, relPaths, startIndex = 0) {
   return files;
 }
 
+function needsLocalImages(product) {
+  const thumb = product.thumbnail ?? "";
+  const images = product.images ?? [];
+
+  if (thumb.includes("default.svg")) return true;
+  if (thumb.includes("edmundstruckparts.com")) return true;
+  if (images.some((src) => src?.includes("edmundstruckparts.com"))) return true;
+  if (images.some((src) => src?.includes("default.svg"))) return true;
+
+  return false;
+}
+
+function applyLocalPaths(product, slug, files) {
+  const folder = mediaSlug(slug);
+  product.images = files.map((f) => `/product-media/truck-parts/${folder}/${f}`);
+  product.thumbnail = product.images[0];
+}
+
 const raw = JSON.parse(await fs.readFile(JSON_PATH, "utf8"));
 let updated = 0;
+const processedFolders = new Map();
 
 for (const product of raw) {
   const slug = product.sourceSlug;
-  const urls = PHOTO_SOURCES[slug];
-  if (!urls) continue;
+  if (!slug || !TARGET_SLUGS.has(slug)) continue;
 
-  const usesDefault =
-    product.thumbnail?.includes("default.svg") ||
-    product.images?.every((src) => src?.includes("default.svg"));
-  if (!usesDefault) continue;
+  const folder = mediaSlug(slug);
+  const urls = PHOTO_SOURCES[slug] ?? PHOTO_SOURCES[folder];
+  if (!urls && !SLUG_MEDIA_ALIASES[slug]) continue;
 
-  console.log(`Fetching ${slug}...`);
-  let files = await downloadForSlug(slug, urls);
+  const shouldProcess =
+    FORCE || needsLocalImages(product) || SLUG_MEDIA_ALIASES[slug];
 
-  const localPaths = LOCAL_COPY_SOURCES[slug];
+  if (!shouldProcess) continue;
+
+  if (processedFolders.has(folder)) {
+    applyLocalPaths(product, slug, processedFolders.get(folder));
+    updated += 1;
+    console.log(`Linked ${slug} → ${product.thumbnail}`);
+    continue;
+  }
+
+  console.log(`Fetching ${slug}…`);
+  let files = urls ? await downloadForSlug(slug, urls) : [];
+
+  const localPaths = LOCAL_COPY_SOURCES[slug] ?? LOCAL_COPY_SOURCES[folder];
   if (localPaths?.length) {
     const copied = await copyLocalForSlug(slug, localPaths, files.length);
     files = files.concat(copied);
@@ -136,8 +197,8 @@ for (const product of raw) {
     continue;
   }
 
-  product.images = files.map((f) => `/product-media/truck-parts/${slug}/${f}`);
-  product.thumbnail = product.images[0];
+  processedFolders.set(folder, files);
+  applyLocalPaths(product, slug, files);
   updated += 1;
   console.log(`  saved ${files.length} → ${product.thumbnail}`);
 }
