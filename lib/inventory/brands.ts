@@ -89,7 +89,10 @@ export const brands: Brand[] = [
 
   // Body Parts
   { slug: "bmw", name: "BMW", category: "body-parts" },
+  { slug: "chevrolet", name: "Chevrolet", category: "body-parts" },
+  { slug: "dodge", name: "Dodge", category: "body-parts" },
   { slug: "ford", name: "Ford", category: "body-parts" },
+  { slug: "gmc", name: "GMC", category: "body-parts" },
   { slug: "honda", name: "Honda", category: "body-parts" },
   { slug: "nissan", name: "Nissan", category: "body-parts" },
   { slug: "subaru", name: "Subaru", category: "body-parts" },

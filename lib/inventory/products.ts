@@ -16,6 +16,7 @@ import { bodyPartsProducts } from "./body-parts-products";
 import { interiorProducts } from "./interior-products";
 import { electronicsProducts } from "./electronics-products";
 import { lightingProducts } from "./lighting-products";
+import { truckPartsProducts } from "./truck-parts-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 
 /** Category-specific listings — every array here is merged into the master catalog for All Products. */
@@ -27,6 +28,7 @@ const extensionProducts: Product[] = [
   ...aftermarketProducts,
   ...engineDrivetrainProducts,
   ...essCatalogProducts,
+  ...truckPartsProducts,
 ];
 
 const productCatalog: Product[] = [
