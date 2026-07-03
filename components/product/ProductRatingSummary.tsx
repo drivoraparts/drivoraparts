@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { DEFAULT_AVATAR, getVerifiedBuyerAvatars } from "@/lib/reviews";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
+import { directAssetUrl } from "@/lib/media/optimize-image";
 import StarRating from "./StarRating";
 
 type ProductRatingSummaryProps = {
@@ -102,7 +103,7 @@ export default function ProductRatingSummary({
             {avatars.map((avatar, index) => (
               <img
                 key={`${avatar}-${index}`}
-                src={avatar}
+                src={directAssetUrl(avatar)}
                 alt=""
                 loading="lazy"
                 decoding="async"

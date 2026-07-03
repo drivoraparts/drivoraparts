@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import type { ProductReview } from "@/lib/reviews";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
+import { directAssetUrl } from "@/lib/media/optimize-image";
 import StarRating from "./StarRating";
 
 type ReviewCardProps = {
@@ -25,27 +27,36 @@ function getInitials(name: string): string {
     .join("");
 }
 
-export default function ReviewCard({ review }: ReviewCardProps) {
-  const avatar = review.profileImage;
-  const initials = getInitials(review.reviewerName);
+function ReviewAvatar({ name, src }: { name: string; src?: string }) {
+  const initials = getInitials(name);
+  const [failed, setFailed] = useState(false);
 
+  if (src && !failed) {
+    return (
+      <img
+        src={directAssetUrl(src)}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        decoding="async"
+        className="review-card-avatar"
+        onError={() => setFailed(true)}
+      />
+    );
+  }
+
+  return (
+    <div className="review-card-avatar review-card-avatar-fallback" aria-hidden>
+      {initials}
+    </div>
+  );
+}
+
+export default function ReviewCard({ review }: ReviewCardProps) {
   return (
     <article className="review-card">
       <div className="review-card-header">
-        {avatar ? (
-          <img
-            src={avatar}
-            alt=""
-            aria-hidden
-            loading="lazy"
-            decoding="async"
-            className="review-card-avatar"
-          />
-        ) : (
-          <div className="review-card-avatar review-card-avatar-fallback" aria-hidden>
-            {initials}
-          </div>
-        )}
+        <ReviewAvatar name={review.reviewerName} src={review.profileImage} />
         <div className="review-card-meta">
           <p className="review-card-name">{review.reviewerName}</p>
           <StarRating rating={review.rating} size="sm" />
@@ -57,7 +68,23 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           </time>
         </div>
       </div>
+
       <p className="review-card-content">{review.review}</p>
+
+      {review.photos && review.photos.length > 0 && (
+        <div className="review-card-photos">
+          {review.photos.map((src) => (
+            <img
+              key={src}
+              src={directAssetUrl(src)}
+              alt="Customer delivery photo"
+              loading="lazy"
+              decoding="async"
+              className="review-card-photo"
+            />
+          ))}
+        </div>
+      )}
 
       <style jsx>{`
         .review-card {
@@ -134,6 +161,29 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           font-size: 14px;
           line-height: 1.6;
           color: #374151;
+        }
+
+        .review-card-photos {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 12px;
+        }
+
+        .review-card-photo {
+          width: 88px;
+          height: 88px;
+          border-radius: 6px;
+          object-fit: cover;
+          border: 1px solid #e5e7eb;
+          background: #f9fafb;
+        }
+
+        @media (min-width: 640px) {
+          .review-card-photo {
+            width: 104px;
+            height: 104px;
+          }
         }
       `}</style>
     </article>

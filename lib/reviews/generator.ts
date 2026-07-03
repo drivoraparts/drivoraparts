@@ -1,5 +1,12 @@
+import { getProductById } from "@/lib/inventory";
+import {
+  getProductThumbnail,
+  resolveProductGallery,
+} from "@/lib/inventory/media";
 import { products } from "@/lib/inventory/products";
 import type { ProductReview } from "./types";
+
+const AVATAR_COUNT = 24;
 
 const FIRST_NAMES = [
   "John",
@@ -75,64 +82,59 @@ const RATING_DISTRIBUTION: Array<1 | 2 | 3 | 4 | 5> = [
   ...Array(5).fill(1),
 ] as Array<1 | 2 | 3 | 4 | 5>;
 
+function fillProduct(template: string, productName: string): string {
+  return template.replaceAll("{{product}}", productName);
+}
+
 const COMMENTS: Record<1 | 2 | 3 | 4 | 5, string[]> = {
   5: [
-    "Engine arrived clean and exactly as described. Compression test was perfect.",
-    "Packaging was solid and the unit matched the listing photos perfectly.",
-    "Smooth transaction from checkout to delivery. Would buy again.",
-    "Exactly what I needed for my build. Fired right up after install.",
-    "Professional seller communication and fast shipping.",
-    "Unit was complete, clean, and ready for the swap bay.",
-    "Very happy with the condition. Better than I expected honestly.",
-    "Tracked shipping the whole way and zero surprises on arrival.",
-    "Great experience overall. Engine looks brand new.",
-    "Install went smooth and performance is exactly as advertised.",
-    "Top notch listing quality. Verified purchase was worth it.",
-    "Crating was heavy duty and nothing was damaged in transit.",
-    "Matched every spec in the description. No complaints at all.",
-    "Seller answered my questions quickly before I pulled the trigger.",
-    "One of the cleanest units I have bought online.",
+    "{{product}} showed up exactly as pictured. Clean unit and honest listing.",
+    "Verified purchase on the {{product}} — fired right up after install.",
+    "The {{product}} was crated well and matched every spec in the description.",
+    "Super happy with my {{product}}. Seller communication was on point.",
+    "Installed the {{product}} last weekend. Performance is exactly what I wanted.",
+    "Tracked shipping the whole way. {{product}} arrived with zero damage.",
+    "Best online parts buy I've had in a while. {{product}} looks great on the truck.",
+    "Compression and leak-down on the {{product}} were right where they should be.",
+    "Would buy this {{product}} again. Packaging was heavy duty and professional.",
+    "The {{product}} bolted in without surprises. Listing photos were accurate.",
   ],
   4: [
-    "Great engine overall, minor shipping delay but worth it.",
-    "Solid purchase. Took a few extra days but condition was excellent.",
-    "Very good engine, just wish the paperwork arrived a bit sooner.",
-    "Happy with the build quality. Small cosmetic mark on the cover.",
-    "Good value for the price. Install support could be clearer.",
-    "Engine runs strong. Delivery window was slightly longer than quoted.",
-    "Overall pleased. Packaging could use a little more padding.",
-    "Quality is there. Communication was good not great.",
-    "Would recommend. Minor accessory was missing but they shipped it fast.",
-    "Strong unit and fair price. Dock scheduling took an extra day.",
-    "Good experience. A little more detail on harness routing would help.",
-    "Performs well so far. Shipping carrier held it over a weekend.",
+    "{{product}} is solid overall. Took a few extra days but worth the wait.",
+    "Happy with the {{product}}. Minor cosmetic mark but nothing that affects function.",
+    "Good value on the {{product}}. Install notes could be a little clearer.",
+    "The {{product}} runs strong. Delivery window ran a bit long.",
+    "Overall pleased with the {{product}}. Would recommend with small caveats.",
+    "Quality is there on the {{product}}. Dock scheduling took an extra day.",
+    "Good experience buying the {{product}}. Support answered before I ordered.",
   ],
   3: [
-    "Good condition but expected slightly better packaging.",
-    "Engine is fine, just not as spotless as the photos suggested.",
-    "Decent purchase. Some surface rust on non-critical hardware.",
-    "Works as described. Average experience nothing special.",
-    "Acceptable for the price. Install notes were a bit vague.",
-    "Functional unit. Took longer to coordinate pickup than expected.",
-    "Middle of the road experience. Engine itself seems okay.",
-    "Okay overall. Expected more photos of accessory components.",
+    "The {{product}} works as described. Packaging was just average.",
+    "Decent {{product}} for the price. Photos made it look slightly cleaner.",
+    "Functional {{product}}. Middle-of-the-road experience overall.",
+    "The {{product}} is okay. Expected a bit more detail in the listing.",
   ],
   2: [
-    "Some cosmetic damage but still functional.",
-    "Had to replace a few bolts after unboxing. Engine itself seems fine.",
-    "Not terrible but shipping left a few scratches on the valve cover.",
-    "Runs but I had issues with missing hardware in the crate.",
-    "Disappointed with exterior finish. Internals looked okay.",
-    "Support was slow to respond about a bent bracket.",
+    "Some cosmetic damage on the {{product}} but still usable.",
+    "The {{product}} runs, but I had to chase missing hardware after unboxing.",
+    "Not thrilled with the exterior finish on the {{product}}.",
+    "Support was slow about a bent bracket on the {{product}}.",
   ],
   1: [
-    "Not satisfied, had issues with communication.",
-    "Order status updates were inconsistent and frustrating.",
-    "Unit did not match the description closely enough for me.",
-    "Had to dispute a missing component. Would not repeat.",
-    "Long delays and unclear answers from support.",
+    "The {{product}} did not match the listing closely enough for me.",
+    "Long delays and unclear updates on my {{product}} order.",
+    "Had to dispute a missing component on the {{product}}.",
   ],
 };
+
+const PHOTO_COMMENTS: string[] = [
+  "Added photos of the {{product}} right off the pallet — matches the listing.",
+  "Uploaded a few pics after install. The {{product}} looks even better in person.",
+  "See attached delivery photos. {{product}} was wrapped better than most freight I've seen.",
+  "Dropped install photos below. Very happy with how the {{product}} turned out.",
+  "Unboxing pics attached — {{product}} was complete and exactly as advertised.",
+  "Photos from the shop floor. {{product}} cleaned up nice before we buttoned everything up.",
+];
 
 /** Fixed counts for flagship listings; others use deterministic 1–150 spread. */
 const REVIEW_COUNT_OVERRIDES: Record<number, number> = {
@@ -170,16 +172,33 @@ function pickRating(rng: () => number): 1 | 2 | 3 | 4 | 5 {
   return RATING_DISTRIBUTION[index] ?? 5;
 }
 
-function pickComment(rating: 1 | 2 | 3 | 4 | 5, rng: () => number, productId: number, index: number): string {
-  const pool = COMMENTS[rating];
-  const base = pool[Math.floor(rng() * pool.length)] ?? pool[0];
-  const suffix =
-    index % 7 === 0 ? ` Order #${10000 + productId * 10 + index}.` : "";
-  return `${base}${suffix}`;
+function shortProductName(name: string): string {
+  const trimmed = name.trim();
+  if (trimmed.length <= 72) return trimmed;
+  return `${trimmed.slice(0, 69)}…`;
 }
 
-function buildAvatarUrl(fullName: string): string {
-  return `https://ui-avatars.com/api/?name=${encodeURIComponent(fullName)}&background=1f1f1f&color=e5e5e5&size=128&bold=true`;
+function pickComment(
+  rating: 1 | 2 | 3 | 4 | 5,
+  rng: () => number,
+  productName: string,
+  withPhotos: boolean
+): string {
+  if (withPhotos) {
+    const photoPool = PHOTO_COMMENTS;
+    const template =
+      photoPool[Math.floor(rng() * photoPool.length)] ?? photoPool[0];
+    return fillProduct(template, productName);
+  }
+
+  const pool = COMMENTS[rating];
+  const template = pool[Math.floor(rng() * pool.length)] ?? pool[0];
+  return fillProduct(template, productName);
+}
+
+function buildAvatarUrl(reviewerName: string, index: number): string {
+  const slot = (index % AVATAR_COUNT) + 1;
+  return `/reviews/avatars/${String(slot).padStart(2, "0")}.jpg`;
 }
 
 function buildUniqueNames(count: number, rng: () => number): string[] {
@@ -204,6 +223,37 @@ function buildUniqueNames(count: number, rng: () => number): string[] {
   return names;
 }
 
+function pickDeliveryPhotos(
+  productId: number,
+  rating: number,
+  rng: () => number,
+  index: number
+): string[] | undefined {
+  if (rating < 4) return undefined;
+  if (index % 5 !== 0 && rng() > 0.32) return undefined;
+
+  const product = getProductById(productId);
+  if (!product) return undefined;
+
+  const gallery = resolveProductGallery(
+    getProductThumbnail(product),
+    product.images
+  ).filter((src) => src.startsWith("/product-media/") && !src.includes("default.svg"));
+
+  if (gallery.length === 0) return undefined;
+
+  const count = Math.min(gallery.length, rng() > 0.55 ? 3 : 2);
+  const start = Math.floor(rng() * gallery.length);
+  const picked: string[] = [];
+
+  for (let i = 0; i < count; i += 1) {
+    const src = gallery[(start + i) % gallery.length];
+    if (!picked.includes(src)) picked.push(src);
+  }
+
+  return picked.length > 0 ? picked : undefined;
+}
+
 export function getTargetReviewCount(productId: number): number {
   if (REVIEW_COUNT_OVERRIDES[productId]) {
     return REVIEW_COUNT_OVERRIDES[productId];
@@ -214,6 +264,8 @@ export function getTargetReviewCount(productId: number): number {
 }
 
 export function generateReviewsForProduct(productId: number): ProductReview[] {
+  const product = getProductById(productId);
+  const productName = shortProductName(product?.name ?? "this part");
   const count = getTargetReviewCount(productId);
   const rng = createRng(productId * 48271);
   const names = buildUniqueNames(count, rng);
@@ -222,19 +274,23 @@ export function generateReviewsForProduct(productId: number): ProductReview[] {
 
   return names.map((reviewerName, index) => {
     const rating = pickRating(rng);
+    const photos = pickDeliveryPhotos(productId, rating, rng, index);
     const daysAgo = Math.floor(rng() * 540) + index;
-    const createdAt = new Date(now - daysAgo * dayMs - index * 3600000).toISOString();
+    const createdAt = new Date(
+      now - daysAgo * dayMs - index * 3600000
+    ).toISOString();
 
     return {
       id: `rev-${productId}-${index + 1}`,
       userId: `seed-user-${productId}-${index + 1}`,
       productId,
       rating,
-      review: pickComment(rating, rng, productId, index),
+      review: pickComment(rating, rng, productName, Boolean(photos?.length)),
       verifiedPurchase: true,
       createdAt,
       reviewerName,
-      profileImage: buildAvatarUrl(reviewerName),
+      profileImage: buildAvatarUrl(reviewerName, index),
+      photos,
       status: "approved",
     };
   });

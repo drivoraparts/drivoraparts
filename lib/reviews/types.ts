@@ -10,6 +10,8 @@ export type ProductReview = {
   createdAt: string;
   profileImage?: string;
   reviewerName: string;
+  /** Customer-uploaded delivery / install photos */
+  photos?: string[];
   status: ReviewStatus;
 };
 
