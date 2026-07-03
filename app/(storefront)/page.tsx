@@ -11,23 +11,11 @@ import {
   getHomeFeaturedProducts,
   getHomeProductCount,
 } from "@/lib/home/featured-products";
+import { HOME_CATEGORY_BLURBS } from "@/lib/home/category-blurbs";
 import { directAssetUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata } from "@/lib/seo";
 
 const HERO_IMAGE = "/home/hero-1280.webp";
-
-const CATEGORY_BLURBS: Record<string, string> = {
-  engine: "Swap-ready crate & takeout engines",
-  transmission: "TR6060, ZF, 6L80 & swap packages",
-  turbocharger: "Garrett, Precision & boost hardware",
-  suspension: "Coilovers, arms & handling",
-  brakes: "Big brake kits & OEM+ stops",
-  electronics: "Tuning, ECU & fuel systems",
-  lighting: "LED, Morimoto & trail lights",
-  "body-parts": "Truck beds, shells & aero",
-  interior: "Seats, wheels & cabin upgrades",
-  aftermarket: "Canopies, utility & truck gear",
-};
 
 const SHOP_BY_NEED = [
   {
@@ -151,7 +139,7 @@ export default function Home() {
                   {cat.name}
                 </p>
                 <p className="mt-1 text-xs leading-snug text-neutral-500">
-                  {CATEGORY_BLURBS[cat.slug] ?? "Shop listings"}
+                  {HOME_CATEGORY_BLURBS[cat.slug] ?? "Shop listings"}
                 </p>
               </Link>
             ))}

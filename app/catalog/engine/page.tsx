@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import EngineGroups from "@/components/catalog/EngineGroups";
+import CategoryProductGrid from "@/components/catalog/CategoryProductGrid";
 import PageHeading from "@/components/catalog/PageHeading";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { routes } from "@/lib/inventory";
@@ -42,6 +43,7 @@ export default function Page() {
           more.
         </p>
         <EngineGroups />
+        <CategoryProductGrid categorySlug="engine" />
       </main>
     </>
   );

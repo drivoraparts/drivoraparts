@@ -2,14 +2,6 @@ import PageHeading from "./PageHeading";
 import CatalogCard from "./CatalogCard";
 import CatalogProductCard from "./CatalogProductCard";
 
-/* =========================================================
-   UI LAYER — PURE PRESENTATIONAL TEMPLATE (SYSTEM A)
-   ---------------------------------------------------------
-   Same architecture, headers, cards, and animations as the
-   engine system — unified red/white brand language.
-   No filtering, no category awareness, no fallback.
-========================================================= */
-
 type TemplateProduct = {
   id: number;
   name: string;
@@ -48,14 +40,13 @@ export default function CategoryTemplate({
         </p>
       ) : null}
 
-      {/* BRANDS */}
       {brands.length > 0 && (
         <section className="mb-12">
           <h2 className="mb-4 text-xs uppercase tracking-widest text-neutral-500">
             Brands
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {brands.map((brand) => (
               <CatalogCard key={brand.href} href={brand.href}>
                 <span className="font-medium">{brand.name}</span>
@@ -65,22 +56,17 @@ export default function CategoryTemplate({
         </section>
       )}
 
-      {/* PRODUCTS */}
-      {showProducts && (
-        <section>
+      {showProducts && products.length > 0 && (
+        <section className="border-t border-neutral-200 pt-12">
           <h2 className="mb-4 text-xs uppercase tracking-widest text-neutral-500">
-            Products
+            All products
           </h2>
 
-          {products.length === 0 ? (
-            <p className="text-gray-500">No products in this category yet.</p>
-          ) : (
-            <div className="grid grid-cols-2 gap-4">
-              {products.map((product) => (
-                <CatalogProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          )}
+          <div className="grid grid-cols-2 gap-4">
+            {products.map((product) => (
+              <CatalogProductCard key={product.id} product={product} />
+            ))}
+          </div>
         </section>
       )}
     </main>
