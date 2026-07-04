@@ -27,16 +27,6 @@ jobs:
       - name: Install dependencies (deterministic)
         run: npm ci
 
-      - name: Sync truck part images (Edmunds → public/product-media)
-        run: |
-          mkdir -p scripts/.edmunds-dumps
-          for page in 1 2 3 4 5; do
-            curl -fsSL \
-              "https://edmundstruckparts.com/wp-json/wc/store/v1/products?per_page=10&page=${page}" \
-              -o "scripts/.edmunds-dumps/page-${page}.json" || true
-          done
-          node scripts/merge-edmunds-wc-dump.mjs
-
       - name: Pre-build verification
         run: npm run verify:cloudflare
 
