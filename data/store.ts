@@ -39,6 +39,7 @@ export type Product = {
   thumbnail: string;
   images: string[];
   description: string;
+  sourceUrl?: string;
 };
 
 export type Category = {
@@ -74,6 +75,7 @@ export const store: Record<string, Category> = Object.fromEntries(
         thumbnail: getProductThumbnail(p),
         images: resolveProductGallery(p.thumbnail ?? p.image, p.images),
         description: p.description ?? "",
+        sourceUrl: p.sourceUrl,
       }));
 
     return [category.slug, { name: category.name, brands, products }] as [

@@ -20,6 +20,7 @@ export const CATALOG_CATEGORIES = [
   "lighting",
   "body-parts",
   "interior",
+  "wheels-tires",
 ] as const;
 
 export type CatalogCategory = (typeof CATALOG_CATEGORIES)[number];

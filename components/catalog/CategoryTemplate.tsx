@@ -24,12 +24,14 @@ export default function CategoryTemplate({
   brands,
   products,
   showProducts = true,
+  scrollListKey,
 }: {
   title: string;
   intro?: string;
   brands: TemplateBrand[];
   products: TemplateProduct[];
   showProducts?: boolean;
+  scrollListKey?: string;
 }) {
   return (
     <main className="box-border min-h-screen w-full min-w-0 max-w-full overflow-x-hidden bg-white p-4 text-neutral-900 sm:p-6">
@@ -64,7 +66,11 @@ export default function CategoryTemplate({
 
           <div className="grid grid-cols-2 gap-4">
             {products.map((product) => (
-              <CatalogProductCard key={product.id} product={product} />
+              <CatalogProductCard
+                key={product.id}
+                product={product}
+                scrollListKey={scrollListKey}
+              />
             ))}
           </div>
         </section>

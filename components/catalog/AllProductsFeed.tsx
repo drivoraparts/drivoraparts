@@ -4,11 +4,18 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { categories } from "@/lib/inventory/categories";
 import { brands } from "@/lib/inventory/brands";
 import AllProductsGridCard, {
-  CATALOG_ALL_STATE_KEY,
   saveCatalogAllState,
-  type CatalogAllSavedState,
 } from "./AllProductsGridCard";
 import CatalogFilterSelect from "./CatalogFilterSelect";
+import {
+  LIST_SCROLL_KEYS,
+  clearListScrollState,
+  clearPendingListScrollState,
+  currentReturnPath,
+  readListScrollState,
+  restoreListScrollWithRetry,
+  type ListScrollState,
+} from "@/lib/catalog/list-scroll-restore";
 import {
   PRICE_FILTER_OPTIONS,
   type PriceFilterValue,
@@ -28,15 +35,11 @@ type ApiResponse = {
   hasMore: boolean;
 };
 
-function readSavedState(): CatalogAllSavedState | null {
-  if (typeof window === "undefined") return null;
-  try {
-    const raw = sessionStorage.getItem(CATALOG_ALL_STATE_KEY);
-    if (!raw) return null;
-    return JSON.parse(raw) as CatalogAllSavedState;
-  } catch {
-    return null;
-  }
+function readSavedState(): ListScrollState | null {
+  const saved = readListScrollState(LIST_SCROLL_KEYS.catalogAll);
+  if (!saved || saved.page == null) return null;
+  if (saved.returnPath !== currentReturnPath()) return null;
+  return saved;
 }
 
 export default function AllProductsFeed() {
@@ -122,20 +125,14 @@ export default function AllProductsFeed() {
     [fetchPage]
   );
 
-  const restoreScroll = useCallback((saved: CatalogAllSavedState) => {
+  const restoreScroll = useCallback((saved: ListScrollState) => {
     if (restoredScrollRef.current) return;
     restoredScrollRef.current = true;
 
     requestAnimationFrame(() => {
-      const target = document.getElementById(
-        `catalog-product-${saved.productId}`
-      );
-      if (target) {
-        target.scrollIntoView({ block: "center" });
-      } else {
-        window.scrollTo({ top: saved.scrollY, behavior: "auto" });
-      }
-      sessionStorage.removeItem(CATALOG_ALL_STATE_KEY);
+      restoreListScrollWithRetry(saved);
+      clearPendingListScrollState();
+      clearListScrollState(LIST_SCROLL_KEYS.catalogAll);
     });
   }, []);
 

@@ -9,4 +9,5 @@ export const HOME_CATEGORY_BLURBS: Record<string, string> = {
   "body-parts": "Truck beds, shells & aero",
   interior: "Seats, wheels & cabin upgrades",
   aftermarket: "Canopies, utility & truck gear",
+  "wheels-tires": "Flow-formed, forged & track wheels",
 };

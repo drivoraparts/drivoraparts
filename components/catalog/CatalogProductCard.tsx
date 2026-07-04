@@ -8,6 +8,10 @@ import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import ProductImage from "@/components/media/ProductImage";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
+import {
+  catalogProductAnchorId,
+  saveListScrollOnProductClick,
+} from "@/lib/catalog/list-scroll-restore";
 import { getProductThumbnail } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory/routes";
 
@@ -24,8 +28,10 @@ export type CatalogProductCardData = {
 
 export default function CatalogProductCard({
   product,
+  scrollListKey,
 }: {
   product: CatalogProductCardData;
+  scrollListKey?: string;
 }) {
   const thumbnail = getProductThumbnail(product);
 
@@ -41,11 +47,19 @@ export default function CatalogProductCard({
   const productHref = routes.product(product.id);
 
   return (
-    <article className="group relative overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-sm transition-all duration-300 hover:border-red-500 hover:shadow-md">
+    <article
+      id={catalogProductAnchorId(product.id)}
+      className="group relative overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-sm transition-all duration-300 hover:border-red-500 hover:shadow-md"
+    >
       <Link
         href={productHref}
         className="absolute inset-0 z-10 rounded-xl"
         aria-label={`View ${product.name}`}
+        onClick={() => {
+          if (scrollListKey) {
+            saveListScrollOnProductClick(scrollListKey, product.id);
+          }
+        }}
       />
 
       <div className="pointer-events-none absolute inset-0 bg-red-500/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />

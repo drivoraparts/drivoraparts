@@ -2,6 +2,13 @@
 
 import { Suspense, useEffect, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import {
+  clearListScrollState,
+  clearPendingListScrollState,
+  isCatalogAllPaginatedRestore,
+  restoreListScrollWithRetry,
+  shouldRestoreListScrollOnPath,
+} from "@/lib/catalog/list-scroll-restore";
 
 function scrollDocumentToTop() {
   window.scrollTo(0, 0);
@@ -23,8 +30,27 @@ function ScrollToTopOnNavigateInner() {
   }, []);
 
   useEffect(() => {
+    const attemptRestore = () => {
+      const pending = shouldRestoreListScrollOnPath(pathname, search);
+      if (pending) {
+        if (isCatalogAllPaginatedRestore(pending)) {
+          return true;
+        }
+        restoreListScrollWithRetry(pending);
+        clearPendingListScrollState();
+        clearListScrollState(pending.listKey);
+        return true;
+      }
+      return false;
+    };
+
     if (skipFirst.current) {
       skipFirst.current = false;
+      attemptRestore();
+      return;
+    }
+
+    if (attemptRestore()) {
       return;
     }
 
@@ -41,6 +67,20 @@ function ScrollToTopOnNavigateInner() {
       window.cancelAnimationFrame(raf);
       window.clearTimeout(timer);
     };
+  }, [pathname, search]);
+
+  useEffect(() => {
+    const onPageShow = (event: PageTransitionEvent) => {
+      if (!event.persisted) return;
+      const pending = shouldRestoreListScrollOnPath(pathname, search);
+      if (!pending || isCatalogAllPaginatedRestore(pending)) return;
+      restoreListScrollWithRetry(pending);
+      clearPendingListScrollState();
+      clearListScrollState(pending.listKey);
+    };
+
+    window.addEventListener("pageshow", onPageShow);
+    return () => window.removeEventListener("pageshow", onPageShow);
   }, [pathname, search]);
 
   return null;

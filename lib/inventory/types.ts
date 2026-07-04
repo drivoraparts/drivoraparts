@@ -88,6 +88,9 @@ export type Product = {
   /** Optional listing timestamp for sort (e.g. aftermarket feed). */
   createdAt?: number;
 
+  /** Original supplier / reference listing URL (imported catalog provenance). */
+  sourceUrl?: string;
+
   /* =======================================================
      STRUCTURED FITMENT & LOGISTICS (OPTIONAL)
      -------------------------------------------------------

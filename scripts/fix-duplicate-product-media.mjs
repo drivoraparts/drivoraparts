@@ -5,7 +5,6 @@ import crypto from "node:crypto";
 const root = process.cwd();
 const DEFAULT_IMAGE = "/product-media/avatars/default.svg";
 const IMAGE_EXT = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif"]);
-const IMAGE_REF_RE = /"(\/product-media\/[^"]+)"/g;
 
 const hashCache = new Map();
 
@@ -39,6 +38,19 @@ function listFolderImages(folderRef) {
     .map((name) => `${folderRef}/${name}`.replace(/\\/g, "/"));
 }
 
+function dedupeRefsByHash(refs) {
+  const kept = [];
+  const seen = new Set();
+  for (const ref of refs) {
+    const hash = fileHash(ref);
+    if (!hash) continue;
+    if (seen.has(hash)) continue;
+    seen.add(hash);
+    kept.push(ref);
+  }
+  return kept;
+}
+
 function collectFromSourceText(text, fileName) {
   if (fileName.endsWith(".json")) {
     const items = JSON.parse(text);
@@ -56,20 +68,20 @@ function collectFromSourceText(text, fileName) {
 
   const products = [];
   for (const block of text.split(/\n  \{\n    id: /).slice(1)) {
-      const id = Number(block.match(/^(\d+),/)?.[1]);
-      if (!id) continue;
-      const thumbnail =
-        block.match(/^\s*thumbnail:\s*"([^"]+)"/m)?.[1] ??
-        block.match(/^\s*image:\s*"([^"]+)"/m)?.[1];
-      const images = [...block.matchAll(/^\s*"(\/product-media\/[^"]+)"/gm)].map(
-        (m) => m[1]
-      );
-      products.push({
-        id,
-        thumbnail,
-        images: images.length ? images : thumbnail ? [thumbnail] : [],
-      });
-    }
+    const id = Number(block.match(/^(\d+),/)?.[1]);
+    if (!id) continue;
+    const thumbnail =
+      block.match(/^\s*thumbnail:\s*"([^"]+)"/m)?.[1] ??
+      block.match(/^\s*image:\s*"([^"]+)"/m)?.[1];
+    const images = [...block.matchAll(/^\s*"(\/product-media\/[^"]+)"/gm)].map(
+      (m) => m[1]
+    );
+    products.push({
+      id,
+      thumbnail,
+      images: images.length ? images : thumbnail ? [thumbnail] : [],
+    });
+  }
   return products;
 }
 
@@ -85,7 +97,13 @@ function loadAllProductMedia() {
   }
 
   for (const name of fs.readdirSync(path.join(inventoryDir, "data"))) {
-    if (!name.endsWith(".json") || name === "product-media-overrides.json") continue;
+    if (
+      !name.endsWith(".json") ||
+      name === "product-media-overrides.json" ||
+      name.endsWith(".bak")
+    ) {
+      continue;
+    }
     const text = fs.readFileSync(path.join(inventoryDir, "data", name), "utf8");
     products.push(...collectFromSourceText(text, name));
   }
@@ -98,101 +116,48 @@ function loadAllProductMedia() {
   return [...byId.values()].sort((a, b) => a.id - b.id);
 }
 
-function ensurePlaceholder(productId) {
-  const dir = path.join(root, "public/product-media/placeholders");
-  fs.mkdirSync(dir, { recursive: true });
-  const ref = `/product-media/placeholders/${productId}.svg`;
-  const fp = path.join(root, "public", ref.slice(1));
-  if (!fs.existsSync(fp)) {
-    const hue = (productId * 47) % 360;
-    fs.writeFileSync(
-      fp,
-      `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect fill="hsl(${hue}, 42%, 90%)" width="512" height="512"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="hsl(${hue}, 55%, 32%)" font-family="Arial,sans-serif" font-size="44" font-weight="700">#${productId}</text></svg>`
-    );
-  }
-  return ref;
-}
-
-function normalizeProductMedia(product, claimedHashes, claimedThumbnails) {
+function assignProductMedia(product, usedThumbnailHashes) {
   const folders = new Set();
-  const refs = [product.thumbnail, ...(product.images ?? [])].filter(Boolean);
-
-  for (const ref of refs) {
+  for (const ref of [product.thumbnail, ...(product.images ?? [])].filter(Boolean)) {
     const folder = folderFromRef(ref);
     if (folder) folders.add(folder);
   }
 
-  const uniqueImages = [];
-  const seenLocal = new Set();
-  for (const ref of refs) {
-    const hash = fileHash(ref);
-    if (!hash || seenLocal.has(hash)) continue;
-    seenLocal.add(hash);
-    uniqueImages.push(ref);
+  let pool = [];
+  for (const folderRef of folders) {
+    pool.push(...listFolderImages(folderRef));
   }
 
-  let kept = [];
-  for (const ref of uniqueImages) {
-    const hash = fileHash(ref);
-    if (!hash || claimedHashes.has(hash)) continue;
-    kept.push(ref);
-    claimedHashes.add(hash);
+  if (pool.length === 0) {
+    pool = dedupeRefsByHash(
+      [product.thumbnail, ...(product.images ?? [])].filter(Boolean)
+    );
+  } else {
+    pool = dedupeRefsByHash(pool);
   }
 
-  if (kept.length === 0) {
-    for (const folderRef of folders) {
-      for (const candidate of listFolderImages(folderRef)) {
-        const hash = fileHash(candidate);
-        if (!hash || claimedHashes.has(hash)) continue;
-        kept.push(candidate);
-        claimedHashes.add(hash);
-        break;
-      }
-      if (kept.length > 0) break;
-    }
+  if (pool.length === 0) {
+    return {
+      thumbnail: product.thumbnail || DEFAULT_IMAGE,
+      images: product.images?.length ? product.images : [DEFAULT_IMAGE],
+    };
   }
 
-  if (kept.length === 0) {
-    kept.push(ensurePlaceholder(product.id));
-  }
-
-  kept = kept.map((ref) =>
-    ref === DEFAULT_IMAGE ? ensurePlaceholder(product.id) : ref
-  );
-
-  let thumbnail = kept[0];
-  if (thumbnail === DEFAULT_IMAGE) {
-    thumbnail = ensurePlaceholder(product.id);
-  }
+  let thumbnail =
+    pool.find((ref) => {
+      const hash = fileHash(ref);
+      return hash && !usedThumbnailHashes.has(hash);
+    }) ?? pool[product.id % pool.length];
 
   const thumbHash = fileHash(thumbnail);
-  if (thumbHash && claimedThumbnails.has(thumbHash)) {
-    const alternate = kept.find((ref) => {
-      const hash = fileHash(ref);
-      return hash && !claimedThumbnails.has(hash);
-    });
-    if (alternate) {
-      thumbnail = alternate;
-    } else {
-      thumbnail = ensurePlaceholder(product.id);
-    }
-  }
+  if (thumbHash) usedThumbnailHashes.add(thumbHash);
 
-  const thumbHashFinal = fileHash(thumbnail);
-  if (thumbHashFinal) claimedThumbnails.add(thumbHashFinal);
+  const images = dedupeRefsByHash([thumbnail, ...pool]);
 
-  if (!kept.includes(thumbnail)) {
-    kept = [thumbnail, ...kept.filter((ref) => ref !== thumbnail)];
-  }
-
-  return {
-    thumbnail,
-    images: kept,
-  };
+  return { thumbnail, images };
 }
 
-const claimedHashes = new Set();
-const claimedThumbnails = new Set();
+const usedThumbnailHashes = new Set();
 const overrides = {};
 let changed = 0;
 
@@ -201,7 +166,7 @@ for (const product of loadAllProductMedia()) {
     thumbnail: product.thumbnail,
     images: product.images,
   };
-  const next = normalizeProductMedia(product, claimedHashes, claimedThumbnails);
+  const next = assignProductMedia(product, usedThumbnailHashes);
   if (
     next.thumbnail !== before.thumbnail ||
     JSON.stringify(next.images) !== JSON.stringify(before.images)
@@ -239,4 +204,10 @@ const overridesPath = path.join(
 );
 fs.writeFileSync(overridesPath, `${JSON.stringify(overrides, null, 2)}\n`);
 
-console.log(`Wrote ${Object.keys(overrides).length} overrides (${changed} changed listings).`);
+const placeholderCount = Object.values(overrides).filter((entry) =>
+  entry.thumbnail?.includes("/placeholders/")
+).length;
+
+console.log(
+  `Wrote ${Object.keys(overrides).length} overrides (${changed} changed). Placeholders: ${placeholderCount}.`
+);

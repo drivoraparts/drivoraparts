@@ -6,6 +6,7 @@ import { routes } from "@/lib/inventory";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogProductCard from "@/components/catalog/CatalogProductCard";
 import JsonLdScript from "@/components/seo/JsonLdScript";
+import { LIST_SCROLL_KEYS } from "@/lib/catalog/list-scroll-restore";
 import {
   breadcrumbJsonLd,
   buildPageMetadata,
@@ -68,6 +69,8 @@ export default async function Page({ params }: PageProps) {
   const description = getBrandSeoDescription(brand, category.name, products.length);
   const productPaths = products.map((product) => routes.product(product.id));
 
+  const scrollListKey = LIST_SCROLL_KEYS.brand(categorySlug, brandSlug);
+
   return (
     <>
       <JsonLdScript
@@ -94,6 +97,7 @@ export default async function Page({ params }: PageProps) {
             {products.map((product) => (
               <CatalogProductCard
                 key={product.id}
+                scrollListKey={scrollListKey}
                 product={{
                   id: product.id,
                   name: product.name,

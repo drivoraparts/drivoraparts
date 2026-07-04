@@ -6,6 +6,7 @@ import {
   routes,
   slugify,
 } from "@/lib/inventory";
+import { LIST_SCROLL_KEYS } from "@/lib/catalog/list-scroll-restore";
 import { categories } from "@/lib/inventory/categories";
 import CategoryTemplate from "@/components/catalog/CategoryTemplate";
 import JsonLdScript from "@/components/seo/JsonLdScript";
@@ -82,6 +83,7 @@ export default async function Page({ params }: PageProps) {
         }))}
         products={categoryData.products}
         showProducts
+        scrollListKey={LIST_SCROLL_KEYS.category(slug)}
       />
     </>
   );

@@ -1,4 +1,5 @@
 import CatalogProductCard from "@/components/catalog/CatalogProductCard";
+import { LIST_SCROLL_KEYS } from "@/lib/catalog/list-scroll-restore";
 import { getProductsByCategory, toCatalogCardData } from "@/lib/inventory";
 
 /** Flat grid of every listing in a category — shown below brand/platform navigation. */
@@ -8,6 +9,7 @@ export default function CategoryProductGrid({
   categorySlug: string;
 }) {
   const products = getProductsByCategory(categorySlug).map(toCatalogCardData);
+  const scrollListKey = LIST_SCROLL_KEYS.category(categorySlug);
 
   if (products.length === 0) {
     return null;
@@ -21,7 +23,11 @@ export default function CategoryProductGrid({
 
       <div className="grid grid-cols-2 gap-4">
         {products.map((product) => (
-          <CatalogProductCard key={product.id} product={product} />
+          <CatalogProductCard
+            key={product.id}
+            product={product}
+            scrollListKey={scrollListKey}
+          />
         ))}
       </div>
     </section>

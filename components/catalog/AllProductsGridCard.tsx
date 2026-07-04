@@ -7,28 +7,34 @@ import AddToCartButton, {
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import ProductImage from "@/components/media/ProductImage";
+import {
+  LIST_SCROLL_KEYS,
+  catalogProductAnchorId,
+  currentReturnPath,
+  saveListScrollState,
+  type ListScrollState,
+} from "@/lib/catalog/list-scroll-restore";
 import { getProductThumbnail } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory/routes";
 import type { CatalogProductCardData } from "./CatalogProductCard";
 
-export const CATALOG_ALL_STATE_KEY = "drivora:catalog-all";
-
-export type CatalogAllSavedState = {
-  scrollY: number;
+export type CatalogAllSavedState = Omit<
+  ListScrollState,
+  "returnPath" | "listKey"
+> & {
   page: number;
   query: string;
   categoryFilter: string;
   brandFilter: string;
   priceFilter: string;
-  productId: number;
 };
 
 export function saveCatalogAllState(state: CatalogAllSavedState) {
-  try {
-    sessionStorage.setItem(CATALOG_ALL_STATE_KEY, JSON.stringify(state));
-  } catch {
-    /* ignore quota / private mode */
-  }
+  saveListScrollState(LIST_SCROLL_KEYS.catalogAll, {
+    ...state,
+    listKey: LIST_SCROLL_KEYS.catalogAll,
+    returnPath: currentReturnPath(),
+  });
 }
 
 export default function AllProductsGridCard({
@@ -54,7 +60,7 @@ export default function AllProductsGridCard({
 
   return (
     <article
-      id={`catalog-product-${product.id}`}
+      id={catalogProductAnchorId(product.id)}
       className="relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm"
     >
       <Link

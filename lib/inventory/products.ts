@@ -17,6 +17,7 @@ import { interiorProducts } from "./interior-products";
 import { electronicsProducts } from "./electronics-products";
 import { lightingProducts } from "./lighting-products";
 import { truckPartsProducts } from "./truck-parts-products";
+import { bimmerworldWheelsProducts } from "./bimmerworld-wheels-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 
@@ -30,6 +31,7 @@ const extensionProducts: Product[] = [
   ...engineDrivetrainProducts,
   ...essCatalogProducts,
   ...truckPartsProducts,
+  ...bimmerworldWheelsProducts,
 ];
 
 const productCatalog: Product[] = [

@@ -1,11 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
 import { BASE_CURRENCY } from "@/lib/currency/constants";
 import { formatMoney } from "@/lib/currency/format";
+import {
+  LIST_SCROLL_KEYS,
+  catalogProductAnchorId,
+  saveListScrollOnProductClick,
+} from "@/lib/catalog/list-scroll-restore";
 import { routes } from "@/lib/inventory";
 import { directAssetUrl } from "@/lib/media/optimize-image";
 
-/** Lightweight server card — no carousel, cart, or translation hooks. */
 export default function HomeFeaturedCard({
   product,
 }: {
@@ -15,11 +21,20 @@ export default function HomeFeaturedCard({
   const imageSrc = directAssetUrl(product.thumbnail);
 
   return (
-    <article className="overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-sm">
+    <article
+      id={catalogProductAnchorId(product.id)}
+      className="overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-sm"
+    >
       <Link
         href={href}
         prefetch={false}
         className="touch-manipulation block p-4 transition-colors hover:bg-neutral-50 active:bg-red-50"
+        onClick={() =>
+          saveListScrollOnProductClick(
+            LIST_SCROLL_KEYS.homeFeatured,
+            product.id
+          )
+        }
       >
         <img
           src={imageSrc}

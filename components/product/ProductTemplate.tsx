@@ -258,6 +258,19 @@ export default function ProductTemplate({
             {platformLabel ? (
               <MetaRow label="Platform" value={platformLabel} />
             ) : null}
+            {product.sourceUrl ? (
+              <div className="flex items-start justify-between gap-4 border-b border-neutral-200 py-2.5 text-sm last:border-b-0">
+                <span className="text-neutral-500">Reference</span>
+                <a
+                  href={product.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-right font-semibold text-red-700 underline decoration-red-200 underline-offset-2 hover:text-red-800"
+                >
+                  View supplier listing
+                </a>
+              </div>
+            ) : null}
           </div>
 
           <ProductDetailsSections

@@ -6,6 +6,7 @@ import { routes } from "@/lib/inventory";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogProductCard from "@/components/catalog/CatalogProductCard";
 import JsonLdScript from "@/components/seo/JsonLdScript";
+import { LIST_SCROLL_KEYS } from "@/lib/catalog/list-scroll-restore";
 import {
   breadcrumbJsonLd,
   buildPageMetadata,
@@ -60,6 +61,8 @@ export default async function Page({ params }: PageProps) {
   const description = `Shop ${found.platform.name} engines and performance crate motors for ${found.group.title} builds.`;
   const productPaths = products.map((product) => routes.product(product.id));
 
+  const scrollListKey = LIST_SCROLL_KEYS.enginePlatform(platformSlug);
+
   return (
     <>
       <JsonLdScript
@@ -93,6 +96,7 @@ export default async function Page({ params }: PageProps) {
             {products.map((product) => (
               <CatalogProductCard
                 key={product.id}
+                scrollListKey={scrollListKey}
                 product={{
                   id: product.id,
                   name: product.name,
