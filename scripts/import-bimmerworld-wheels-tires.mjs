@@ -9,6 +9,7 @@
  */
 import fs from "node:fs/promises";
 import path from "node:path";
+import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -177,39 +178,31 @@ function absolutizeImageUrl(raw) {
 }
 
 function parseImages(html) {
-  const urls = new Set();
+  const urls = [];
 
   for (const match of html.matchAll(
     /data-(?:thumb|zoom)=["']([^"']+)["']/gi
   )) {
     const url = absolutizeImageUrl(match[1]);
-    if (url) urls.add(url);
+    if (url) urls.push(url);
   }
 
   for (const match of html.matchAll(
-    /(?:src|href)=["'](\/core\/media\/media\.nl[^"']+)["']/gi
+    /class="zoom"[^>]*src=["']([^"']+)["']/gi
   )) {
     const url = absolutizeImageUrl(match[1]);
-    if (url) urls.add(url);
+    if (url) urls.push(url);
   }
 
-  for (const match of html.matchAll(
-    /(?:src|href)=["'](\/[^"'?]+\.(?:jpg|jpeg|png|webp))["']/gi
-  )) {
-    const pathPart = match[1].toLowerCase();
-    if (
-      pathPart.includes("/images/") ||
-      pathPart.includes("nav/") ||
-      pathPart.includes("-sm.") ||
-      pathPart.includes("_tn.")
-    ) {
-      continue;
-    }
-    const url = absolutizeImageUrl(match[1]);
-    if (url) urls.add(url);
+  const seen = new Set();
+  const unique = [];
+  for (const url of urls) {
+    if (!url || seen.has(url)) continue;
+    seen.add(url);
+    unique.push(url);
   }
 
-  return [...urls].slice(0, MAX_IMAGES);
+  return unique.slice(0, MAX_IMAGES * 2);
 }
 
 async function downloadImages(imageUrls, slug) {
@@ -217,19 +210,29 @@ async function downloadImages(imageUrls, slug) {
 
   const dir = path.join(MEDIA_ROOT, slug);
   await fs.mkdir(dir, { recursive: true });
+
+  const seenHashes = new Set();
   const saved = [];
 
-  for (let i = 0; i < imageUrls.length; i++) {
-    const url = imageUrls[i];
+  for (const url of imageUrls) {
+    if (saved.length >= MAX_IMAGES) break;
+
     const extMatch = url.match(/\.(jpe?g|png|webp)(?:\?|$)/i);
-    const ext = extMatch ? extMatch[1].toLowerCase().replace("jpeg", "jpg") : "jpg";
-    const filename = `${i + 1}.${ext}`;
+    const ext = extMatch
+      ? extMatch[1].toLowerCase().replace("jpeg", "jpg")
+      : "jpg";
 
     try {
       const res = await fetch(url, { headers: { "User-Agent": UA } });
       if (!res.ok) continue;
       const buf = Buffer.from(await res.arrayBuffer());
       if (buf.length < 800) continue;
+
+      const hash = crypto.createHash("sha256").update(buf).digest("hex");
+      if (seenHashes.has(hash)) continue;
+      seenHashes.add(hash);
+
+      const filename = `${saved.length + 1}.${ext}`;
       await fs.writeFile(path.join(dir, filename), buf);
       saved.push(filename);
     } catch {

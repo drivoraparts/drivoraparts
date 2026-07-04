@@ -43,9 +43,9 @@ function dedupeRefsByHash(refs) {
   const seen = new Set();
   for (const ref of refs) {
     const hash = fileHash(ref);
-    if (!hash) continue;
-    if (seen.has(hash)) continue;
-    seen.add(hash);
+    const key = hash ?? ref;
+    if (seen.has(key)) continue;
+    seen.add(key);
     kept.push(ref);
   }
   return kept;
@@ -152,9 +152,9 @@ function assignProductMedia(product, usedThumbnailHashes) {
   const thumbHash = fileHash(thumbnail);
   if (thumbHash) usedThumbnailHashes.add(thumbHash);
 
-  const images = dedupeRefsByHash([thumbnail, ...pool]);
+  const images = dedupeRefsByHash([thumbnail, ...pool]).slice(0, 6);
 
-  return { thumbnail, images };
+  return { thumbnail: images[0] ?? thumbnail, images };
 }
 
 const usedThumbnailHashes = new Set();
@@ -176,7 +176,11 @@ for (const product of loadAllProductMedia()) {
   }
 }
 
-const jsonSources = ["ess-catalog.json", "edmunds-truck-parts.json"];
+const jsonSources = [
+  "ess-catalog.json",
+  "edmunds-truck-parts.json",
+  "bimmerworld-wheels-tires.json",
+];
 for (const fileName of jsonSources) {
   const filePath = path.join(root, "lib/inventory/data", fileName);
   const products = JSON.parse(fs.readFileSync(filePath, "utf8"));
