@@ -60,6 +60,10 @@ iframe {
   max-width: 100%;
 }
 
+img.rounded-full {
+  max-width: none;
+}
+
 .site-shell,
 .site-shell > main {
   box-sizing: border-box;

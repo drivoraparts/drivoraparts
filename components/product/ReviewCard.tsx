@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import type { ProductReview } from "@/lib/reviews";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
-import { directAssetUrl } from "@/lib/media/optimize-image";
+import ReviewAvatar from "./ReviewAvatar";
 import StarRating from "./StarRating";
 
 type ReviewCardProps = {
@@ -18,45 +17,15 @@ function formatReviewDate(value: string) {
   }).format(new Date(value));
 }
 
-function getInitials(name: string): string {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0]?.toUpperCase() ?? "")
-    .join("");
-}
-
-function ReviewAvatar({ name, src }: { name: string; src?: string }) {
-  const initials = getInitials(name);
-  const [failed, setFailed] = useState(false);
-
-  if (src && !failed) {
-    return (
-      <img
-        src={directAssetUrl(src)}
-        alt=""
-        aria-hidden
-        loading="lazy"
-        decoding="async"
-        className="review-card-avatar"
-        onError={() => setFailed(true)}
-      />
-    );
-  }
-
-  return (
-    <div className="review-card-avatar review-card-avatar-fallback" aria-hidden>
-      {initials}
-    </div>
-  );
-}
-
 export default function ReviewCard({ review }: ReviewCardProps) {
   return (
     <article className="review-card">
       <div className="review-card-header">
-        <ReviewAvatar name={review.reviewerName} src={review.profileImage} />
+        <ReviewAvatar
+          name={review.reviewerName}
+          src={review.profileImage}
+          size="md"
+        />
         <div className="review-card-meta">
           <p className="review-card-name">{review.reviewerName}</p>
           <StarRating rating={review.rating} size="sm" />
@@ -83,27 +52,6 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           display: flex;
           gap: 10px;
           align-items: center;
-        }
-
-        .review-card-avatar {
-          width: 32px;
-          height: 32px;
-          border-radius: 999px;
-          object-fit: cover;
-          border: 1px solid #e5e7eb;
-          background: #f3f4f6;
-          flex-shrink: 0;
-          pointer-events: none;
-          user-select: none;
-        }
-
-        .review-card-avatar-fallback {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 11px;
-          font-weight: 700;
-          color: #374151;
         }
 
         .review-card-meta {

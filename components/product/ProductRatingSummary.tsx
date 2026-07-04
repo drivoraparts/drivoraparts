@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { DEFAULT_AVATAR, getVerifiedBuyerAvatars } from "@/lib/reviews";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
-import { directAssetUrl } from "@/lib/media/optimize-image";
+import ReviewAvatar from "./ReviewAvatar";
 import StarRating from "./StarRating";
 
 type ProductRatingSummaryProps = {
@@ -101,14 +101,12 @@ export default function ProductRatingSummary({
         <div className="verified-buyers-strip">
           <div className="verified-buyers-avatars" aria-hidden>
             {avatars.map((avatar, index) => (
-              <img
+              <ReviewAvatar
                 key={`${avatar}-${index}`}
-                src={directAssetUrl(avatar)}
-                alt=""
-                loading="lazy"
-                decoding="async"
-                className="verified-buyer-avatar"
-                style={{ marginLeft: index === 0 ? 0 : -8 }}
+                name={`Buyer ${index + 1}`}
+                src={avatar}
+                size="xs"
+                className={index === 0 ? "" : "-ml-2 ring-2 ring-white"}
               />
             ))}
           </div>
@@ -160,17 +158,6 @@ export default function ProductRatingSummary({
         .verified-buyers-avatars {
           display: flex;
           align-items: center;
-        }
-
-        .verified-buyer-avatar {
-          width: 22px;
-          height: 22px;
-          border-radius: 999px;
-          object-fit: cover;
-          border: 2px solid #fff;
-          background: #f3f4f6;
-          pointer-events: none;
-          user-select: none;
         }
 
         .product-rating-verified {
