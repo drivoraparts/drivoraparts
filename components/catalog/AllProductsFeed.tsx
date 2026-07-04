@@ -1,9 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { categories } from "@/lib/inventory/categories";
 import { brands } from "@/lib/inventory/brands";
-import AllProductsGridCard from "./AllProductsGridCard";
+import AllProductsGridCard, {
+  CATALOG_ALL_STATE_KEY,
+  saveCatalogAllState,
+  type CatalogAllSavedState,
+} from "./AllProductsGridCard";
 import CatalogFilterSelect from "./CatalogFilterSelect";
 import {
   PRICE_FILTER_OPTIONS,
@@ -24,12 +28,33 @@ type ApiResponse = {
   hasMore: boolean;
 };
 
+function readSavedState(): CatalogAllSavedState | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = sessionStorage.getItem(CATALOG_ALL_STATE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw) as CatalogAllSavedState;
+  } catch {
+    return null;
+  }
+}
+
 export default function AllProductsFeed() {
-  const [query, setQuery] = useState("");
-  const [categoryFilter, setCategoryFilter] = useState("");
-  const [brandFilter, setBrandFilter] = useState("");
-  const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
-  const [page, setPage] = useState(1);
+  const savedRef = useRef(readSavedState());
+  const restorePendingRef = useRef(Boolean(savedRef.current));
+  const restoredScrollRef = useRef(false);
+
+  const [query, setQuery] = useState(savedRef.current?.query ?? "");
+  const [categoryFilter, setCategoryFilter] = useState(
+    savedRef.current?.categoryFilter ?? ""
+  );
+  const [brandFilter, setBrandFilter] = useState(
+    savedRef.current?.brandFilter ?? ""
+  );
+  const [priceFilter, setPriceFilter] = useState<PriceFilterValue>(
+    (savedRef.current?.priceFilter as PriceFilterValue) ?? "all"
+  );
+  const [page, setPage] = useState(savedRef.current?.page ?? 1);
   const [products, setProducts] = useState<CatalogProductCardData[]>([]);
   const [total, setTotal] = useState(0);
   const [hasMore, setHasMore] = useState(false);
@@ -68,20 +93,24 @@ export default function AllProductsFeed() {
     []
   );
 
+  const fetchPage = useCallback(async (pageNum: number) => {
+    const params = new URLSearchParams({
+      page: String(pageNum),
+      limit: String(PAGE_SIZE),
+    });
+    if (query.trim()) params.set("q", query.trim());
+    if (categoryFilter) params.set("category", categoryFilter);
+    if (brandFilter) params.set("brand", brandFilter);
+    if (priceFilter !== "all") params.set("price", priceFilter);
+
+    const res = await fetch(`/api/catalog/products?${params.toString()}`);
+    return (await res.json()) as ApiResponse;
+  }, [query, categoryFilter, brandFilter, priceFilter]);
+
   const fetchProducts = useCallback(
     async (pageNum: number, append: boolean) => {
       setLoading(true);
-      const params = new URLSearchParams({
-        page: String(pageNum),
-        limit: String(PAGE_SIZE),
-      });
-      if (query.trim()) params.set("q", query.trim());
-      if (categoryFilter) params.set("category", categoryFilter);
-      if (brandFilter) params.set("brand", brandFilter);
-      if (priceFilter !== "all") params.set("price", priceFilter);
-
-      const res = await fetch(`/api/catalog/products?${params.toString()}`);
-      const data = (await res.json()) as ApiResponse;
+      const data = await fetchPage(pageNum);
 
       setProducts((prev) =>
         append ? [...prev, ...data.products] : data.products
@@ -90,13 +119,86 @@ export default function AllProductsFeed() {
       setHasMore(data.hasMore);
       setLoading(false);
     },
-    [query, categoryFilter, brandFilter, priceFilter]
+    [fetchPage]
   );
 
+  const restoreScroll = useCallback((saved: CatalogAllSavedState) => {
+    if (restoredScrollRef.current) return;
+    restoredScrollRef.current = true;
+
+    requestAnimationFrame(() => {
+      const target = document.getElementById(
+        `catalog-product-${saved.productId}`
+      );
+      if (target) {
+        target.scrollIntoView({ block: "center" });
+      } else {
+        window.scrollTo({ top: saved.scrollY, behavior: "auto" });
+      }
+      sessionStorage.removeItem(CATALOG_ALL_STATE_KEY);
+    });
+  }, []);
+
   useEffect(() => {
-    setPage(1);
-    void fetchProducts(1, false);
-  }, [fetchProducts]);
+    let cancelled = false;
+
+    async function load() {
+      setLoading(true);
+
+      if (restorePendingRef.current && savedRef.current) {
+        const targetPage = savedRef.current.page;
+        const first = await fetchPage(1);
+        if (cancelled) return;
+
+        let merged = [...first.products];
+        for (let p = 2; p <= targetPage; p += 1) {
+          const next = await fetchPage(p);
+          if (cancelled) return;
+          merged = [...merged, ...next.products];
+        }
+
+        setProducts(merged);
+        setTotal(first.total);
+        setHasMore(targetPage * PAGE_SIZE < first.total);
+        setPage(targetPage);
+        setLoading(false);
+        restorePendingRef.current = false;
+        restoreScroll(savedRef.current);
+        return;
+      }
+
+      setPage(1);
+      setProducts([]);
+      const data = await fetchPage(1);
+      if (cancelled) return;
+      setProducts(data.products);
+      setTotal(data.total);
+      setHasMore(data.hasMore);
+      setPage(1);
+      setLoading(false);
+    }
+
+    void load();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [fetchPage, restoreScroll]);
+
+  const handleProductNavigate = useCallback(
+    (productId: number) => {
+      saveCatalogAllState({
+        scrollY: window.scrollY,
+        page,
+        query,
+        categoryFilter,
+        brandFilter,
+        priceFilter,
+        productId,
+      });
+    },
+    [page, query, categoryFilter, brandFilter, priceFilter]
+  );
 
   return (
     <div>
@@ -153,6 +255,7 @@ export default function AllProductsFeed() {
                 key={product.id}
                 priority={index < 6}
                 product={product}
+                onNavigate={handleProductNavigate}
               />
             ))}
           </div>

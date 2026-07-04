@@ -18,6 +18,7 @@ import { electronicsProducts } from "./electronics-products";
 import { lightingProducts } from "./lighting-products";
 import { truckPartsProducts } from "./truck-parts-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
+import { applyProductMediaOverrides } from "./apply-media-overrides";
 
 /** Category-specific listings — every array here is merged into the master catalog for All Products. */
 const extensionProducts: Product[] = [
@@ -4255,4 +4256,6 @@ Worldwide Shipping Available`,
 ];
 
 /** Storefront + checkout prices (affordable public list). */
-export const products = applyPublicPrices(productCatalog);
+export const products = applyPublicPrices(
+  applyProductMediaOverrides(productCatalog)
+);

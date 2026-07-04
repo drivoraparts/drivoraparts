@@ -11,12 +11,34 @@ import { getProductThumbnail } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory/routes";
 import type { CatalogProductCardData } from "./CatalogProductCard";
 
+export const CATALOG_ALL_STATE_KEY = "drivora:catalog-all";
+
+export type CatalogAllSavedState = {
+  scrollY: number;
+  page: number;
+  query: string;
+  categoryFilter: string;
+  brandFilter: string;
+  priceFilter: string;
+  productId: number;
+};
+
+export function saveCatalogAllState(state: CatalogAllSavedState) {
+  try {
+    sessionStorage.setItem(CATALOG_ALL_STATE_KEY, JSON.stringify(state));
+  } catch {
+    /* ignore quota / private mode */
+  }
+}
+
 export default function AllProductsGridCard({
   product,
   priority = false,
+  onNavigate,
 }: {
   product: CatalogProductCardData;
   priority?: boolean;
+  onNavigate?: (productId: number) => void;
 }) {
   const thumbnail = getProductThumbnail(product);
   const cartProduct: AddToCartProduct = {
@@ -31,11 +53,15 @@ export default function AllProductsGridCard({
   const productHref = routes.product(product.id);
 
   return (
-    <article className="relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm">
+    <article
+      id={`catalog-product-${product.id}`}
+      className="relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm"
+    >
       <Link
         href={productHref}
         className="absolute inset-0 z-10 rounded-lg"
         aria-label={`View ${product.name}`}
+        onClick={() => onNavigate?.(product.id)}
       />
 
       <div className="p-1.5 pb-1">
