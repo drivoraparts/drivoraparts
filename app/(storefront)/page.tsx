@@ -1,8 +1,12 @@
 import Link from "next/link";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
-import HomeFeaturedGrid from "@/components/home/HomeFeaturedGrid";
+import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
-import { getHomeFeaturedProducts } from "@/lib/home/featured-products";
+import {
+  getFeaturedBatch,
+  getFeaturedTimeSlot,
+  getHomeFeaturedProductPool,
+} from "@/lib/home/featured-products";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 import { routes } from "@/lib/inventory/routes";
 import { directAssetUrl } from "@/lib/media/optimize-image";
@@ -10,7 +14,7 @@ import { buildPageMetadata } from "@/lib/seo";
 
 const HERO_IMAGE = "/home/hero-1280.webp";
 
-export const dynamic = "force-static";
+export const revalidate = 600;
 
 export const metadata = buildPageMetadata({
   title: "Automotive Performance Marketplace",
@@ -22,7 +26,8 @@ export const metadata = buildPageMetadata({
 export default function Home() {
   const heroSrc = directAssetUrl(HERO_IMAGE);
   const listingCount = HOME_LISTING_COUNT;
-  const featuredProducts = getHomeFeaturedProducts(8);
+  const featuredPool = getHomeFeaturedProductPool();
+  const featuredProducts = getFeaturedBatch(featuredPool, getFeaturedTimeSlot());
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] text-neutral-900">
@@ -127,7 +132,10 @@ export default function Home() {
               </Link>
             </div>
 
-            <HomeFeaturedGrid products={featuredProducts} />
+            <HomeFeaturedRotator
+              pool={featuredPool}
+              initialBatch={featuredProducts}
+            />
           </div>
         </section>
       ) : null}
