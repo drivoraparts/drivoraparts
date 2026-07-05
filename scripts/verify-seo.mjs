@@ -32,6 +32,34 @@ function extractTitle(html) {
   return html.match(/<title>([^<]+)<\/title>/i)?.[1] ?? null;
 }
 
+function extractProductOfferJsonLd(html) {
+  const scripts = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(
+    (m) => m[1]
+  );
+  for (const raw of scripts) {
+    try {
+      const data = JSON.parse(raw);
+      if (data["@type"] === "Product" && data.offers) return data.offers;
+    } catch {
+      // ignore malformed blocks
+    }
+  }
+  return null;
+}
+
+function hasMerchantOfferFields(offers) {
+  if (!offers || typeof offers !== "object") return false;
+  const shipping = offers.shippingDetails;
+  const returns = offers.hasMerchantReturnPolicy;
+  const hasShipping = Array.isArray(shipping)
+    ? shipping.length > 0 && shipping.every((entry) => entry?.["@type"] === "OfferShippingDetails")
+    : shipping?.["@type"] === "OfferShippingDetails";
+  const hasReturns = Array.isArray(returns)
+    ? returns.length > 0 && returns.every((entry) => entry?.["@type"] === "MerchantReturnPolicy")
+    : returns?.["@type"] === "MerchantReturnPolicy";
+  return Boolean(hasShipping && hasReturns);
+}
+
 try {
   const { res: sitemapRes, text: sitemapXml } = await fetchText(`${SITE}/sitemap.xml`);
   if (!sitemapRes.ok) fail("sitemap.xml reachable", `HTTP ${sitemapRes.status}`);
@@ -90,6 +118,21 @@ try {
     const { text } = await fetchText(`${SITE}${blocked}`);
     if (/noindex/i.test(text)) pass(`${blocked} noindex`);
     else fail(`${blocked} noindex`, "should not be indexed");
+  }
+
+  const { res: productRes, text: productHtml } = await fetchText(`${SITE}/product/1845`);
+  if (!productRes.ok) {
+    fail("/product/1845 HTTP", String(productRes.status));
+  } else {
+    const offers = extractProductOfferJsonLd(productHtml);
+    if (hasMerchantOfferFields(offers)) {
+      pass("product merchant JSON-LD", "shippingDetails + hasMerchantReturnPolicy");
+    } else {
+      fail(
+        "product merchant JSON-LD",
+        "Product offers must include OfferShippingDetails and MerchantReturnPolicy"
+      );
+    }
   }
 } catch (error) {
   fail("network", error instanceof Error ? error.message : String(error));

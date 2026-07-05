@@ -6,6 +6,7 @@ import { resolveProductGallery } from "@/lib/inventory/media";
 import { SITE_NAME, SITE_TAGLINE } from "./constants";
 import {
   productOfferItemCondition,
+  productOfferPriceValidUntil,
   productOfferReturnPolicy,
   productOfferShippingDetails,
 } from "./merchant-policies";
@@ -74,7 +75,7 @@ export function productJsonLd(product: Product, price: number): JsonLd {
   const inStock = product.stock !== false;
 
   return {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/",
     "@type": "Product",
     name: product.name,
     image: gallery,
@@ -89,6 +90,7 @@ export function productJsonLd(product: Product, price: number): JsonLd {
       "@type": "Offer",
       priceCurrency: "USD",
       price,
+      priceValidUntil: productOfferPriceValidUntil(),
       itemCondition: productOfferItemCondition(product.condition),
       availability: inStock
         ? "https://schema.org/InStock"

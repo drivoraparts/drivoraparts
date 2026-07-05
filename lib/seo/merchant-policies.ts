@@ -29,7 +29,7 @@ function shippingDetailsForCountry(
     "@type": "OfferShippingDetails",
     shippingRate: {
       "@type": "MonetaryAmount",
-      value: 0,
+      value: "0",
       currency: "USD",
     },
     shippingDestination: {
@@ -40,27 +40,45 @@ function shippingDetailsForCountry(
   };
 }
 
+const SHIPPING_COUNTRIES: Array<{
+  country: string;
+  transitTime: typeof TRANSIT_TIME_US;
+}> = [
+  { country: "US", transitTime: TRANSIT_TIME_US },
+  { country: "AU", transitTime: TRANSIT_TIME_INTERNATIONAL },
+  { country: "CA", transitTime: TRANSIT_TIME_INTERNATIONAL },
+  { country: "GB", transitTime: TRANSIT_TIME_INTERNATIONAL },
+];
+
 /** Nested inside Product → offers for Google Merchant listings. */
-export function productOfferShippingDetails(): JsonLd[] {
-  return [
-    shippingDetailsForCountry("US", TRANSIT_TIME_US),
-    shippingDetailsForCountry("AU", TRANSIT_TIME_INTERNATIONAL),
-    shippingDetailsForCountry("CA", TRANSIT_TIME_INTERNATIONAL),
-    shippingDetailsForCountry("GB", TRANSIT_TIME_INTERNATIONAL),
-  ];
+export function productOfferShippingDetails(): JsonLd | JsonLd[] {
+  const regions = SHIPPING_COUNTRIES.map(({ country, transitTime }) =>
+    shippingDetailsForCountry(country, transitTime)
+  );
+  return regions.length === 1 ? regions[0] : regions;
 }
 
+const RETURN_POLICY_COUNTRIES = ["US", "AU", "CA", "GB"] as const;
+
 /** Matches app/policies/refund-policy — 30-day window, return by mail, customer pays return shipping. */
-export function productOfferReturnPolicy(): JsonLd {
-  return {
+export function productOfferReturnPolicy(): JsonLd | JsonLd[] {
+  const policies = RETURN_POLICY_COUNTRIES.map((country) => ({
     "@type": "MerchantReturnPolicy",
-    applicableCountry: ["US", "AU", "CA", "GB"],
+    applicableCountry: country,
     returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
     merchantReturnDays: 30,
     returnMethod: "https://schema.org/ReturnByMail",
     returnFees: "https://schema.org/ReturnFeesCustomerResponsibility",
     merchantReturnLink: absoluteUrl("/policies/refund-policy"),
-  };
+  }));
+  return policies.length === 1 ? policies[0] : policies;
+}
+
+/** Google merchant listing examples include priceValidUntil on Offer. */
+export function productOfferPriceValidUntil(): string {
+  const date = new Date();
+  date.setUTCFullYear(date.getUTCFullYear() + 1);
+  return date.toISOString().slice(0, 10);
 }
 
 const ITEM_CONDITION: Record<string, string> = {
