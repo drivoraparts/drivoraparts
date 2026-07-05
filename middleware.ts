@@ -97,7 +97,7 @@ export async function middleware(request: NextRequest) {
           pathname,
           email: session.email,
         });
-        return NextResponse.redirect(new URL("/admin/dashboard", request.url));
+        return NextResponse.redirect(new URL("/admin/dashboard", request.url), 308);
       }
 
       return withAdminHeaders(request, { isPublic: true });
@@ -113,7 +113,7 @@ export async function middleware(request: NextRequest) {
       });
       const loginUrl = new URL("/admin/login", request.url);
       loginUrl.searchParams.set("next", pathname);
-      return NextResponse.redirect(loginUrl);
+      return NextResponse.redirect(loginUrl, 308);
     }
 
     authDebug("middleware", "protected admin route allowed", {
@@ -184,5 +184,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/api/:path*", "/admin/:path*"],
+  matcher: ["/api/:path*", "/admin/:path*", "/catalog/:path*"],
 };

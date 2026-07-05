@@ -31,11 +31,9 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
 
   const staticPaths = [
     { path: "", priority: 1 },
-    { path: "/home", priority: 0.9 },
     { path: routes.catalog, priority: 0.95 },
     { path: routes.all, priority: 0.9 },
     { path: "/catalog/engine", priority: 0.9 },
-    { path: routes.aftermarket, priority: 0.85 },
     { path: "/about", priority: 0.6 },
     { path: "/contact", priority: 0.6 },
     { path: "/policies", priority: 0.4 },

@@ -12,11 +12,7 @@ export default function CategoryGrid() {
       {categories.map((cat) => (
         <Link
           key={cat.slug}
-          href={
-            cat.slug === "aftermarket"
-              ? routes.aftermarket
-              : routes.category(cat.slug)
-          }
+          href={routes.category(cat.slug)}
           className={tileClass}
         >
           <div className="pointer-events-none absolute inset-0 bg-red-500/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />

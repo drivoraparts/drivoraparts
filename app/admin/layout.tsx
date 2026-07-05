@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { headers } from "next/headers";
 import AdminChatAssistant from "@/components/admin/AdminChatAssistant";
 import AdminDashboardLayout from "@/components/admin/AdminDashboardLayout";
@@ -8,6 +9,10 @@ import { isPublicAdminPath } from "@/lib/auth/public-routes";
 function resolveAdminPathname(headerStore: Headers): string {
   return headerStore.get("x-pathname") ?? "";
 }
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default async function AdminLayout({
   children,

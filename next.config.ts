@@ -7,6 +7,20 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/aftermarket",
+        destination: "/catalog/aftermarket",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     const staticAssetCache = [
       {
