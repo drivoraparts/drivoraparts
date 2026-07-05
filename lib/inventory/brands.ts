@@ -107,13 +107,17 @@ export const brands: Brand[] = [
   { slug: "toyota", name: "Toyota", category: "interior" },
   { slug: "volkswagen", name: "Volkswagen", category: "interior" },
 
+  // 4x4 Accessories
+  { slug: "arb", name: "ARB", category: "4x4-accessories" },
+  { slug: "safari", name: "Safari", category: "4x4-accessories" },
+  { slug: "tjm", name: "TJM", category: "4x4-accessories" },
+  { slug: "ironman-4x4", name: "Ironman 4x4", category: "4x4-accessories" },
+  { slug: "ecb", name: "ECB", category: "4x4-accessories" },
+  { slug: "afn", name: "AFN", category: "4x4-accessories" },
+
   // Aftermarket
   { slug: "ford", name: "Ford", category: "aftermarket" },
   { slug: "arb", name: "ARB", category: "aftermarket" },
-  { slug: "tjm", name: "TJM", category: "aftermarket" },
-  { slug: "ironman-4x4", name: "Ironman 4x4", category: "aftermarket" },
-  { slug: "ecb", name: "ECB", category: "aftermarket" },
-  { slug: "afn", name: "AFN", category: "aftermarket" },
   { slug: "bilstein", name: "Bilstein", category: "aftermarket" },
   { slug: "leer", name: "Leer", category: "aftermarket" },
   { slug: "snugtop", name: "Snugtop", category: "aftermarket" },

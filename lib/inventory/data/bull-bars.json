@@ -2,7 +2,7 @@
   {
     "id": 1800,
     "name": "ARB Summit Bull Bar for Toyota Hilux (2021+)",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "arb",
     "price": 2900,
     "stock": true,
@@ -29,7 +29,7 @@
   {
     "id": 1801,
     "name": "ARB Summit Bull Bar for Ford Ranger (2023+)",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "arb",
     "price": 4208.23,
     "stock": true,
@@ -52,7 +52,7 @@
   {
     "id": 1802,
     "name": "ARB Deluxe Bull Bar for Toyota LandCruiser 79 Series",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "arb",
     "price": 3199,
     "stock": true,
@@ -74,7 +74,7 @@
   {
     "id": 1803,
     "name": "ARB Summit Bull Bar for Isuzu D-Max (2021+)",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "arb",
     "price": 2900,
     "stock": true,
@@ -101,7 +101,7 @@
   {
     "id": 1804,
     "name": "ARB Summit Bull Bar for Toyota Prado 150",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "arb",
     "price": 2900,
     "stock": true,
@@ -128,7 +128,7 @@
   {
     "id": 1805,
     "name": "TJM Outback Bull Bar for Ford Ranger",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "tjm",
     "price": 1899,
     "stock": true,
@@ -151,7 +151,7 @@
   {
     "id": 1806,
     "name": "TJM Outback Bull Bar for Toyota Hilux",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "tjm",
     "price": 1899,
     "stock": true,
@@ -174,7 +174,7 @@
   {
     "id": 1807,
     "name": "TJM Outback Bull Bar for Nissan Navara",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "tjm",
     "price": 1899,
     "stock": true,
@@ -197,7 +197,7 @@
   {
     "id": 1808,
     "name": "Ironman Raid Bull Bar for Toyota Hilux",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "ironman-4x4",
     "price": 2599,
     "stock": true,
@@ -224,7 +224,7 @@
   {
     "id": 1809,
     "name": "Ironman Raid Bull Bar for Ford Ranger",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "ironman-4x4",
     "price": 2599,
     "stock": true,
@@ -249,7 +249,7 @@
   {
     "id": 1810,
     "name": "ECB Big Tube Bull Bar for Toyota Hilux",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "ecb",
     "price": 3861,
     "stock": true,
@@ -273,7 +273,7 @@
   {
     "id": 1811,
     "name": "ECB Big Tube Bull Bar for Isuzu D-Max",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "ecb",
     "price": 3861,
     "stock": true,
@@ -296,7 +296,7 @@
   {
     "id": 1812,
     "name": "AFN Premium Bull Bar for Toyota LandCruiser 300 Series",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "afn",
     "price": 2999,
     "stock": true,
@@ -322,7 +322,7 @@
   {
     "id": 1813,
     "name": "AFN Premium Bull Bar for Nissan Patrol Y62",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "afn",
     "price": 2999,
     "stock": true,
@@ -349,7 +349,7 @@
   {
     "id": 1814,
     "name": "ARB Summit Bull Bar for Mitsubishi Triton (MV)",
-    "category": "aftermarket",
+    "category": "4x4-accessories",
     "brand": "arb",
     "price": 2799,
     "stock": true,

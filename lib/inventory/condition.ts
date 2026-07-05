@@ -20,6 +20,7 @@ export const CATALOG_CATEGORIES = [
   "lighting",
   "body-parts",
   "interior",
+  "4x4-accessories",
   "wheels-tires",
 ] as const;
 

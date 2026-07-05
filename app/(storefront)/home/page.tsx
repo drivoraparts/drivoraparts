@@ -120,7 +120,7 @@ export default function HomePage() {
             { href: routes.category("turbocharger"), label: "Turbo", detail: "Boost hardware" },
             { href: routes.category("suspension"), label: "Suspension", detail: "Handling upgrades" },
             { href: routes.category("brakes"), label: "Brakes", detail: "Stop with confidence" },
-            { href: routes.category("aftermarket"), label: "Aftermarket", detail: "Truck & utility" },
+            { href: routes.category("4x4-accessories"), label: "4x4 Accessories", detail: "Bull bars & snorkels" },
           ].map((item, i) => (
             <Link
               key={item.href}

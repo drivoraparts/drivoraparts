@@ -17,6 +17,7 @@ export const categories: Category[] = [
   { slug: "lighting", name: "Lighting" },
   { slug: "body-parts", name: "Body Parts" },
   { slug: "interior", name: "Interior" },
+  { slug: "4x4-accessories", name: "4x4 Accessories" },
   { slug: "aftermarket", name: "Aftermarket" },
   { slug: "wheels-tires", name: "Wheels & Tires" },
 ];
@@ -31,6 +32,7 @@ export const BRAND_FIRST_CATEGORY_SLUGS = new Set([
   "lighting",
   "body-parts",
   "interior",
+  "4x4-accessories",
   "wheels-tires",
 ]);
 

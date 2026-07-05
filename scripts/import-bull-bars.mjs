@@ -451,7 +451,7 @@ for (let i = 0; i < BULL_BAR_SOURCES.length; i++) {
     products.push({
       id: START_ID + i,
       name: item.name,
-      category: "aftermarket",
+      category: "4x4-accessories",
       brand: item.brand,
       price: meta.price,
       stock: true,
@@ -475,7 +475,7 @@ for (let i = 0; i < BULL_BAR_SOURCES.length; i++) {
     products.push({
       id: START_ID + i,
       name: item.name,
-      category: "aftermarket",
+      category: "4x4-accessories",
       brand: item.brand,
       price: item.priceHint,
       stock: true,
