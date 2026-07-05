@@ -4,8 +4,8 @@
  * Retries after deploy because Cloudflare can serve cached HTML for ~30–60s.
  */
 const SITE = process.env.SEO_SITE_URL ?? "https://drivoraparts.com";
-const MAX_ATTEMPTS = Number(process.env.SEO_VERIFY_RETRIES ?? 5);
-const RETRY_DELAY_MS = Number(process.env.SEO_VERIFY_DELAY_MS ?? 15000);
+const MAX_ATTEMPTS = Number(process.env.SEO_VERIFY_RETRIES ?? 8);
+const RETRY_DELAY_MS = Number(process.env.SEO_VERIFY_DELAY_MS ?? 20000);
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -26,15 +26,36 @@ function cacheBustUrl(path) {
 }
 
 async function fetchText(path) {
-  const res = await fetch(cacheBustUrl(path), {
-    redirect: "follow",
-    headers: {
-      "cache-control": "no-cache",
-      pragma: "no-cache",
-    },
-  });
-  const text = await res.text();
-  return { res, text };
+  const transient = new Set([502, 503, 504]);
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
+    try {
+      const res = await fetch(cacheBustUrl(path), {
+        redirect: "follow",
+        headers: {
+          "cache-control": "no-cache",
+          pragma: "no-cache",
+        },
+      });
+
+      if (transient.has(res.status) && attempt < 4) {
+        await sleep(2000 * attempt);
+        continue;
+      }
+
+      const text = await res.text();
+      return { res, text };
+    } catch (error) {
+      lastError = error;
+      if (attempt < 4) {
+        await sleep(2000 * attempt);
+        continue;
+      }
+    }
+  }
+
+  throw lastError ?? new Error(`Failed to fetch ${path}`);
 }
 
 function extractCanonical(html) {
