@@ -8,6 +8,11 @@ import {
   resolveProductReviewCount,
 } from "@/lib/inventory/productEnhancements";
 import { SITE_NAME, SITE_TAGLINE } from "./constants";
+import {
+  productOfferItemCondition,
+  productOfferReturnPolicy,
+  productOfferShippingDetails,
+} from "./merchant-policies";
 import { absoluteImageUrl, absoluteUrl } from "./urls";
 
 type JsonLd = Record<string, unknown>;
@@ -98,6 +103,7 @@ export function productJsonLd(product: Product, price: number): JsonLd {
       "@type": "Offer",
       priceCurrency: "USD",
       price,
+      itemCondition: productOfferItemCondition(product.condition),
       availability: inStock
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
@@ -106,6 +112,8 @@ export function productJsonLd(product: Product, price: number): JsonLd {
         "@type": "Organization",
         name: SITE_NAME,
       },
+      shippingDetails: productOfferShippingDetails(),
+      hasMerchantReturnPolicy: productOfferReturnPolicy(),
     },
   };
 }
