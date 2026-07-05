@@ -17,8 +17,10 @@ import {
   absoluteImageUrl,
   breadcrumbJsonLd,
   buildPageMetadata,
+  buildProductMetaKeywords,
+  buildProductSeoDescription,
+  buildProductSeoTitle,
   productJsonLd,
-  productSeoDescription,
 } from "@/lib/seo";
 
 export const revalidate = 3600;
@@ -34,17 +36,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Product Not Found" };
   }
 
-  const description = productSeoDescription(
-    product.description,
-    `Buy ${product.name} at DrivoraParts with secure checkout and worldwide shipping.`
-  );
-
   const inventoryProduct = getInventoryProductById(product.id);
   const previewImage = getProductThumbnail(inventoryProduct ?? product);
+  const seoInput = {
+    name: product.name,
+    category: product.category,
+    brand: inventoryProduct?.brand ?? product.brand,
+    fitment: inventoryProduct?.fitment,
+    description: product.description,
+  };
 
   return buildPageMetadata({
-    title: product.name,
-    description,
+    title: buildProductSeoTitle(seoInput),
+    description: buildProductSeoDescription(seoInput),
+    keywords: buildProductMetaKeywords(seoInput),
     path: routes.product(product.id),
     image: previewImage,
   });

@@ -3,10 +3,6 @@ import { COMPANY_SUPPORT_EMAIL, US_HEADQUARTERS } from "@/lib/content/company";
 import { routes } from "@/lib/inventory/routes";
 import { getBrandBySlug } from "@/lib/inventory";
 import { resolveProductGallery } from "@/lib/inventory/media";
-import {
-  resolveProductRating,
-  resolveProductReviewCount,
-} from "@/lib/inventory/productEnhancements";
 import { SITE_NAME, SITE_TAGLINE } from "./constants";
 import {
   productOfferItemCondition,
@@ -42,7 +38,8 @@ export function websiteJsonLd(): JsonLd {
     "@type": "WebSite",
     name: SITE_NAME,
     url: absoluteUrl("/"),
-    description: SITE_TAGLINE,
+    description:
+      "Shop performance engines, rust-free truck beds, 4x4 lift kits, bull bars, snorkels, turbos, brakes, suspension and swap parts with worldwide shipping.",
     potentialAction: {
       "@type": "SearchAction",
       target: {
@@ -75,8 +72,6 @@ export function productJsonLd(product: Product, price: number): JsonLd {
   );
   const brand = getBrandBySlug(product.brand);
   const inStock = product.stock !== false;
-  const rating = resolveProductRating(product);
-  const reviewCount = resolveProductReviewCount(product);
 
   return {
     "@context": "https://schema.org",
@@ -90,15 +85,6 @@ export function productJsonLd(product: Product, price: number): JsonLd {
       "@type": "Brand",
       name: brand?.name ?? product.brand,
     },
-    ...(reviewCount > 0
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: rating,
-            reviewCount,
-          },
-        }
-      : {}),
     offers: {
       "@type": "Offer",
       priceCurrency: "USD",

@@ -12,6 +12,7 @@ import {
   buildPageMetadata,
   collectionPageJsonLd,
   getBrandSeoDescription,
+  getCategoryKeywords,
   itemListJsonLd,
 } from "@/lib/seo";
 
@@ -49,8 +50,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: getBrandSeoDescription(
       brandRecord.name,
       category.name,
-      products.length
+      products.length,
+      brandRecord.slug,
+      categorySlug
     ),
+    keywords: getCategoryKeywords(categorySlug),
     path: routes.brand(categorySlug, brandSlug),
   });
 }

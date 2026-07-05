@@ -9,6 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "verify:cloudflare": "node scripts/verify-cloudflare-config.mjs",
+    "verify:seo": "node scripts/verify-seo.mjs",
     "audit:routes": "node scripts/audit-routes-opennext.mjs",
     "verify:opennext": "node scripts/verify-opennext-output.mjs",
     "pages:build": "node scripts/verify-cloudflare-config.mjs && npx opennextjs-cloudflare build && node scripts/patch-opennext-assets.mjs && node scripts/verify-opennext-output.mjs",

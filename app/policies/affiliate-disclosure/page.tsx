@@ -1,3 +1,7 @@
+import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
+
+export const metadata = buildPolicyMetadata("/policies/affiliate-disclosure");
+
 import Policy from "@/components/policy/Policy";
 
 export default function AffiliateDisclosurePage() {

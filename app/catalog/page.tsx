@@ -7,6 +7,7 @@ import {
   buildPageMetadata,
   breadcrumbJsonLd,
   collectionPageJsonLd,
+  SITE_KEYWORDS,
 } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -14,8 +15,9 @@ export const dynamic = "force-static";
 export const metadata: Metadata = buildPageMetadata({
   title: "Performance Parts Catalog",
   description:
-    "Browse engines, transmissions, turbochargers, brakes, suspension, electronics, lighting, and body parts by category.",
+    "Browse engines, JDM swaps, truck beds, 4x4 lift kits, bull bars, snorkels, turbos, brakes, suspension, electronics, lighting & body parts by category. 1,400+ listings with worldwide shipping.",
   path: routes.catalog,
+  keywords: SITE_KEYWORDS,
 });
 
 export default function Page() {

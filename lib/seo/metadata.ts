@@ -9,6 +9,7 @@ type PageMetadataInput = {
   path: string;
   /** Product or page-specific preview image. Omit to use the site favicon. */
   image?: string | null;
+  keywords?: string[];
   noIndex?: boolean;
 };
 
@@ -30,6 +31,7 @@ export function buildPageMetadata({
   description = DEFAULT_DESCRIPTION,
   path,
   image,
+  keywords,
   noIndex = false,
 }: PageMetadataInput): Metadata {
   const url = absoluteUrl(path);
@@ -43,6 +45,7 @@ export function buildPageMetadata({
   return {
     title,
     description: metaDescription,
+    ...(keywords?.length ? { keywords: keywords.slice(0, 24) } : {}),
     alternates: { canonical: url },
     openGraph: {
       title,

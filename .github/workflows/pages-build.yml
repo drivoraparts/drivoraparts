@@ -42,3 +42,17 @@ jobs:
       - name: Deploy Worker to Cloudflare
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
         run: npm run pages:deploy
+
+      - name: Ping search engines (sitemap)
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
+        run: |
+          SITEMAP="https://drivoraparts.com/sitemap.xml"
+          curl -fsS "https://www.bing.com/ping?sitemap=${SITEMAP}" || true
+          curl -fsS "https://www.google.com/ping?sitemap=${SITEMAP}" || true
+          echo "Sitemap ping sent for ${SITEMAP}"
+
+      - name: SEO verification (production)
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
+        run: npm run verify:seo
+        env:
+          SEO_SITE_URL: https://drivoraparts.com

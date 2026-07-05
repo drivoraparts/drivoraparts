@@ -1,3 +1,7 @@
+import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
+
+export const metadata = buildPolicyMetadata("/policies/cookie-policy");
+
 import Policy from "@/components/policy/Policy";
 
 export default function CookiePolicyPage() {

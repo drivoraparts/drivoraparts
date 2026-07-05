@@ -1,11 +1,12 @@
 export const SITE_NAME = "DrivoraParts";
-export const SITE_TAGLINE = "Automotive Performance Marketplace";
+export const SITE_TAGLINE =
+  "Performance auto parts marketplace — engines, truck beds, 4x4 lift kits, bull bars & worldwide shipping";
+
+export const DEFAULT_DESCRIPTION =
+  "Shop 1,400+ performance auto parts: rust-free truck beds, LS & JDM engine swaps, 4x4 lift kits, bull bars, snorkels, turbos, brakes & suspension. Secure checkout with worldwide shipping at DrivoraParts.";
 
 /** Bump when favicon / default link-preview art changes (cache bust for crawlers). */
 export const ICON_VERSION = "7";
-
-export const DEFAULT_DESCRIPTION =
-  "Shop performance engines, turbo systems, transmissions, brakes, suspension, electronics, lighting, and body parts from a trusted automotive marketplace.";
 
 /** Default link preview for site pages (homepage, catalog, etc.). */
 export const DEFAULT_OG_IMAGE = `/favicon.png?v=${ICON_VERSION}`;

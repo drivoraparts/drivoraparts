@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  title: "Policies & Legal",
+  description:
+    "Privacy, shipping, returns, terms of sale, and legal policies for shopping performance auto parts at DrivoraParts.",
+  path: "/policies",
+});
 
 const sections = [
   {

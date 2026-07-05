@@ -5,6 +5,7 @@ export { buildPageMetadata, defaultSiteSocialImages } from "./metadata";
 export {
   getCategorySeoDescription,
   getBrandSeoDescription,
+  getCategoryKeywords,
 } from "./category-descriptions";
 export {
   organizationJsonLd,
@@ -15,3 +16,10 @@ export {
   collectionPageJsonLd,
 } from "./jsonld";
 export { buildSitemapEntries } from "./sitemap";
+export {
+  buildProductSeoTitle,
+  buildProductSeoDescription,
+  buildProductMetaKeywords,
+} from "./product-seo";
+export { buildPolicyMetadata } from "./policy-metadata";
+export { SITE_KEYWORDS, categoryKeywordPhrase } from "./keywords";

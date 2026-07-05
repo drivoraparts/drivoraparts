@@ -1,3 +1,7 @@
+import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
+
+export const metadata = buildPolicyMetadata("/policies/terms-of-service");
+
 import Policy from "@/components/policy/Policy";
 
 export default function TermsOfServicePage() {

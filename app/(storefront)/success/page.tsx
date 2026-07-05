@@ -1,4 +1,12 @@
 import SuccessStatus from "./SuccessStatus";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  title: "Order Confirmed",
+  description: "Your DrivoraParts order confirmation.",
+  path: "/success",
+  noIndex: true,
+});
 
 export default async function Success({
   searchParams,

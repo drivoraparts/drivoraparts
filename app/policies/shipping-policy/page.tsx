@@ -1,3 +1,7 @@
+import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
+
+export const metadata = buildPolicyMetadata("/policies/shipping-policy");
+
 import Policy from "@/components/policy/Policy";
 import {
   COMPANY_SUPPORT_EMAIL,

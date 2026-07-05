@@ -1,3 +1,7 @@
+import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
+
+export const metadata = buildPolicyMetadata("/policies/accessibility-statement");
+
 import Policy from "@/components/policy/Policy";
 
 export default function AccessibilityStatementPage() {

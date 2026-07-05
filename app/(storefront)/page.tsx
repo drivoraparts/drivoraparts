@@ -10,17 +10,18 @@ import {
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 import { routes } from "@/lib/inventory/routes";
 import { directAssetUrl } from "@/lib/media/optimize-image";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, SITE_KEYWORDS } from "@/lib/seo";
 
 const HERO_IMAGE = "/home/hero-1280.webp";
 
 export const revalidate = 600;
 
 export const metadata = buildPageMetadata({
-  title: "Automotive Performance Marketplace",
+  title: "Performance Auto Parts & Truck Beds Marketplace",
   description:
-    "Performance parts, truck beds, engine swaps, and drivetrain packages. Shop 1,400+ listings with secure crypto checkout at DrivoraParts.",
+    "Shop 1,400+ listings: rust-free truck beds, LS & JDM engine swaps, OME & Fox 4x4 lift kits, ARB bull bars, Safari snorkels, turbos, brakes & suspension. Secure crypto checkout with worldwide shipping.",
   path: "/",
+  keywords: SITE_KEYWORDS,
 });
 
 export default function Home() {

@@ -13,6 +13,7 @@ import JsonLdScript from "@/components/seo/JsonLdScript";
 import {
   buildPageMetadata,
   collectionPageJsonLd,
+  getCategoryKeywords,
   getCategorySeoDescription,
   itemListJsonLd,
 } from "@/lib/seo";
@@ -43,6 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return buildPageMetadata({
     title: `${category.name} Performance Parts`,
     description: getCategorySeoDescription(slug, productCount),
+    keywords: getCategoryKeywords(slug),
     path: routes.category(slug),
   });
 }

@@ -13,6 +13,7 @@ import {
   defaultSiteSocialImages,
   organizationJsonLd,
   websiteJsonLd,
+  SITE_KEYWORDS,
 } from "@/lib/seo";
 import { BASE_CURRENCY } from "@/lib/currency/constants";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
@@ -42,6 +43,7 @@ export const metadata: Metadata = {
     template: "%s | DrivoraParts",
   },
   description: DEFAULT_DESCRIPTION,
+  keywords: SITE_KEYWORDS,
   openGraph: {
     type: "website",
     locale: "en_US",

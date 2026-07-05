@@ -13,11 +13,12 @@ type SitemapEntry = MetadataRoute.Sitemap[number];
 function entry(
   path: string,
   priority: number,
-  changeFrequency: SitemapEntry["changeFrequency"] = "weekly"
+  changeFrequency: SitemapEntry["changeFrequency"] = "weekly",
+  lastModified?: Date
 ): SitemapEntry {
   return {
     url: path,
-    lastModified: new Date(),
+    lastModified: lastModified ?? new Date(),
     changeFrequency,
     priority,
   };
@@ -54,7 +55,12 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
   );
 
   const productEntries = products.map((product) =>
-    entry(toUrl(routes.product(product.id)), 0.8)
+    entry(
+      toUrl(routes.product(product.id)),
+      0.8,
+      "weekly",
+      product.createdAt ? new Date(product.createdAt) : undefined
+    )
   );
 
   const policyEntries = POLICY_PATHS.map((path) =>
