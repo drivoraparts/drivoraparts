@@ -573,7 +573,7 @@
   {
     "id": 243,
     "name": "67-69 Camaro / Firebird L86 / 8L90 Swap Package",
-    "category": "transmission",
+    "category": "engine",
     "brand": "chevrolet",
     "price": 97010,
     "stock": true,
@@ -647,7 +647,7 @@
   {
     "id": 247,
     "name": "68-72 Chevelle Gen V L83 / 6l80 / 8L90 Swap Package",
-    "category": "transmission",
+    "category": "engine",
     "brand": "chevrolet",
     "price": 61530,
     "stock": true,
@@ -6680,7 +6680,7 @@
   {
     "id": 583,
     "name": "Reman L86 Engine & Transmission Package",
-    "category": "transmission",
+    "category": "engine",
     "brand": "chevrolet",
     "price": 55350,
     "stock": true,
@@ -9381,7 +9381,7 @@
   {
     "id": 733,
     "name": "L87 8L90 stage 3 cam ***READY TO SHIP***",
-    "category": "transmission",
+    "category": "engine",
     "brand": "chevrolet",
     "price": 128180,
     "stock": true,
@@ -16275,7 +16275,7 @@
   },
   {
     "id": 1115,
-    "name": "TR6060 Tansmission",
+    "name": "TR6060 Transmission",
     "category": "transmission",
     "brand": "gm",
     "price": 18010,

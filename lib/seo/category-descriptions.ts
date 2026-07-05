@@ -5,7 +5,7 @@ const CATEGORY_COPY: Record<string, string> = {
   engine:
     "Buy crate engines, JDM swaps, LS motors, 2JZ, RB26, Coyote & platform-specific powerplants for BMW, Toyota, Nissan, Honda & Ford builds.",
   transmission:
-    "Shop manual swaps, ZF 8HP, Tremec T56, DSG, rebuild kits & driveline packages for street, track & off-road conversions.",
+    "Shop ZF 8HP, Tremec Magnum, Nissan CD009, Allison 1000, Aisin Hilux autos, clutch kits from ACT, Exedy, Xtreme & ATSG rebuild kits for street, track & 4WD builds.",
   turbocharger:
     "Garrett, BorgWarner & precision turbo kits — twin-scroll, ball-bearing & upgrade hardware for boosted street and race builds.",
   suspension:
