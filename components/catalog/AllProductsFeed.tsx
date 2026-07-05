@@ -225,6 +225,8 @@ export default function AllProductsFeed() {
             value={brandFilter}
             onChange={setBrandFilter}
             options={brandOptions}
+            searchable
+            searchPlaceholder="Search brands…"
           />
 
           <CatalogFilterSelect
