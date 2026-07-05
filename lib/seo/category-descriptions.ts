@@ -6,7 +6,7 @@ const CATEGORY_COPY: Record<string, string> = {
   turbocharger:
     "Find turbochargers, twin-scroll kits, and forced-induction upgrades from Garrett, BorgWarner, and top performance brands.",
   suspension:
-    "Explore coilovers, sway bars, air suspension, and handling upgrades from Whiteline, BC Racing, KW, and more.",
+    "Vehicle-specific 4x4 lift kits from Old Man Emu, Dobinsons, Bilstein, Fox, King Shocks, Ironman 4x4, and Tough Dog — matched to Hilux, Ranger, LandCruiser, Patrol, and more.",
   brakes:
     "Shop big brake kits, OEM+ brake upgrades, rotors, and pad packages from Brembo, Wilwood, EBC, and ATE.",
   electronics:

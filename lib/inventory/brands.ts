@@ -53,15 +53,13 @@ export const brands: Brand[] = [
   { slug: "ate-oem-kits", name: "ATE OEM Kits", category: "brakes" },
 
   // Suspension
-  { slug: "whiteline", name: "Whiteline", category: "suspension" },
-  { slug: "air-lift-performance", name: "Air Lift Performance", category: "suspension" },
-  { slug: "bc-racing", name: "BC Racing", category: "suspension" },
+  { slug: "old-man-emu", name: "Old Man Emu (OME / ARB)", category: "suspension" },
+  { slug: "dobinsons", name: "Dobinsons", category: "suspension" },
   { slug: "bilstein", name: "Bilstein", category: "suspension" },
-  { slug: "eibach", name: "Eibach", category: "suspension" },
-  { slug: "fortune-auto", name: "Fortune Auto", category: "suspension" },
-  { slug: "kw-suspension", name: "KW Suspension", category: "suspension" },
-  { slug: "tein", name: "Tein", category: "suspension" },
-  { slug: "universal", name: "Universal", category: "suspension" },
+  { slug: "fox-racing-shox", name: "Fox Racing Shox", category: "suspension" },
+  { slug: "king-shocks", name: "King Shocks", category: "suspension" },
+  { slug: "ironman-4x4", name: "Ironman 4x4", category: "suspension" },
+  { slug: "tough-dog", name: "Tough Dog", category: "suspension" },
 
   // Electronics
   { slug: "aem", name: "AEM", category: "electronics" },
