@@ -247,6 +247,11 @@ export const SNORKEL_SOURCES = [
       url: "https://www.tjmusa.com/airtec-snorkel-wedgetail-polyethylene-black-kit-011satw0187d.html",
       sku: "011satw0187d",
     },
+    photoSource: {
+      type: "magento",
+      url: "https://www.tjmusa.com/airtec-snorkel-polyethylene-black-kit-011sat0188l.html",
+      sku: "011sat0188l",
+    },
   },
   {
     name: "TJM Airtec Snorkel for Ford Ranger",
@@ -351,6 +356,22 @@ async function fetchArbAemMeta(source) {
   };
 }
 
+const TJM_FULL_CACHE = "a81546991b8814ae920d56873a8ce88b";
+
+function tjmGalleryUrls(html, sku, folder = "0/1") {
+  const refs = [
+    ...new Set(
+      [...html.matchAll(new RegExp(`${sku}-[0-9]{2}-[0-9]{3}\\.(?:jpg|jpeg|webp|png)`, "gi"))].map(
+        (m) => m[0]
+      )
+    ),
+  ];
+  return refs.map(
+    (ref) =>
+      `https://www.tjmusa.com/media/catalog/product/cache/${TJM_FULL_CACHE}/${folder}/${ref}`
+  );
+}
+
 async function fetchMagentoMeta(source) {
   const res = await fetch(source.url, {
     headers: { "User-Agent": "Mozilla/5.0", Accept: "text/html" },
@@ -358,23 +379,16 @@ async function fetchMagentoMeta(source) {
   if (!res.ok) throw new Error(`Magento ${res.status} ${source.url}`);
   const html = await res.text();
   const sku = source.sku.toLowerCase();
-  const cache =
-    "https://www.tjmusa.com/media/catalog/product/cache/625cd0e0b480e44a884822eb6c6df62f";
-  const imageUrls = [];
-
-  for (let n = 1; n <= 8; n += 1) {
-    const idx = String(n).padStart(2, "0");
-    imageUrls.push(`${cache}/0/1/${sku}-${idx}-590.jpg`);
-  }
-
-  const htmlImages = [
-    ...html.matchAll(
-      /https:\/\/www\.tjmusa\.com\/media\/catalog\/product\/[^"'\s]+\.(?:jpg|jpeg|png|webp)/gi
-    ),
-  ]
-    .map((m) => m[0])
-    .filter((u) => u.toLowerCase().includes(sku.slice(0, 8)));
-  imageUrls.push(...htmlImages);
+  const imageUrls = [
+    ...tjmGalleryUrls(html, sku),
+    ...[
+      ...html.matchAll(
+        /https:\/\/www\.tjmusa\.com\/media\/catalog\/product\/[^"'\s]+\.(?:jpg|jpeg|png|webp)/gi
+      ),
+    ]
+      .map((m) => m[0])
+      .filter((u) => u.toLowerCase().includes(sku.slice(0, 8))),
+  ];
 
   const og = html.match(/property="og:image"\s+content="([^"]+)"/i)?.[1];
   if (og) imageUrls.push(og);
@@ -433,6 +447,7 @@ async function downloadImages(imageUrls, slug) {
       if (!res.ok) continue;
       const buf = Buffer.from(await res.arrayBuffer());
       if (buf.length < 800) continue;
+      if (buf.length >= 24437 && buf.length <= 24637) continue;
 
       const hash = crypto.createHash("sha256").update(buf).digest("hex");
       if (seenHashes.has(hash)) continue;
