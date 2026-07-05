@@ -110,6 +110,10 @@ export const brands: Brand[] = [
   // Aftermarket
   { slug: "ford", name: "Ford", category: "aftermarket" },
   { slug: "arb", name: "ARB", category: "aftermarket" },
+  { slug: "tjm", name: "TJM", category: "aftermarket" },
+  { slug: "ironman-4x4", name: "Ironman 4x4", category: "aftermarket" },
+  { slug: "ecb", name: "ECB", category: "aftermarket" },
+  { slug: "afn", name: "AFN", category: "aftermarket" },
   { slug: "bilstein", name: "Bilstein", category: "aftermarket" },
   { slug: "leer", name: "Leer", category: "aftermarket" },
   { slug: "snugtop", name: "Snugtop", category: "aftermarket" },

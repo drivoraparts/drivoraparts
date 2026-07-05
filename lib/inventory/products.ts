@@ -18,6 +18,7 @@ import { electronicsProducts } from "./electronics-products";
 import { lightingProducts } from "./lighting-products";
 import { truckPartsProducts } from "./truck-parts-products";
 import { bimmerworldWheelsProducts } from "./bimmerworld-wheels-products";
+import { bullBarProducts } from "./bull-bar-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 
@@ -32,6 +33,7 @@ const extensionProducts: Product[] = [
   ...essCatalogProducts,
   ...truckPartsProducts,
   ...bimmerworldWheelsProducts,
+  ...bullBarProducts,
 ];
 
 const productCatalog: Product[] = [
