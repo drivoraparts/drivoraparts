@@ -20,6 +20,7 @@ import { truckPartsProducts } from "./truck-parts-products";
 import { bimmerworldWheelsProducts } from "./bimmerworld-wheels-products";
 import { bullBarProducts } from "./bull-bar-products";
 import { snorkelProducts } from "./snorkel-products";
+import { roofRackProducts } from "./roof-rack-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 
@@ -36,6 +37,7 @@ const extensionProducts: Product[] = [
   ...bimmerworldWheelsProducts,
   ...bullBarProducts,
   ...snorkelProducts,
+  ...roofRackProducts,
 ];
 
 const productCatalog: Product[] = [

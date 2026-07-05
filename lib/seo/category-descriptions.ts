@@ -17,7 +17,7 @@ const CATEGORY_COPY: Record<string, string> = {
     "Shop widebody kits, carbon fiber hoods, and vehicle-specific aero for BMW, Ford, Honda, Nissan, Subaru, and Toyota platforms.",
   interior: "Interior performance upgrades and cockpit accessories for street, show, and track builds.",
   "4x4-accessories":
-    "Shop bull bars, snorkels, and off-road protection from ARB, Safari, TJM, Ironman 4x4, ECB, and AFN.",
+    "Shop bull bars, snorkels, roof racks, and off-road protection from ARB, Safari, Rhino-Rack, Yakima, Front Runner, Rola, TJM, Ironman 4x4, ECB, and AFN.",
   aftermarket:
     "Browse aftermarket vehicle listings and performance parts from enthusiast sellers across popular platforms.",
 };

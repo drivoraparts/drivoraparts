@@ -114,6 +114,10 @@ export const brands: Brand[] = [
   { slug: "ironman-4x4", name: "Ironman 4x4", category: "4x4-accessories" },
   { slug: "ecb", name: "ECB", category: "4x4-accessories" },
   { slug: "afn", name: "AFN", category: "4x4-accessories" },
+  { slug: "rhino-rack", name: "Rhino-Rack", category: "4x4-accessories" },
+  { slug: "yakima", name: "Yakima", category: "4x4-accessories" },
+  { slug: "front-runner", name: "Front Runner", category: "4x4-accessories" },
+  { slug: "rola", name: "Rola", category: "4x4-accessories" },
 
   // Aftermarket
   { slug: "ford", name: "Ford", category: "aftermarket" },
