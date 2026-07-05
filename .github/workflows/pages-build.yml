@@ -51,8 +51,14 @@ jobs:
           curl -fsS "https://www.google.com/ping?sitemap=${SITEMAP}" || true
           echo "Sitemap ping sent for ${SITEMAP}"
 
+      - name: Wait for Cloudflare propagation
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
+        run: sleep 30
+
       - name: SEO verification (production)
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
         run: npm run verify:seo
         env:
           SEO_SITE_URL: https://drivoraparts.com
+          SEO_VERIFY_RETRIES: 5
+          SEO_VERIFY_DELAY_MS: 15000

@@ -1,21 +1,38 @@
 /**
  * SEO smoke test — runs in CI after build and on deploy.
  * Validates sitemap, robots, canonical tags, and meta descriptions on live site.
+ * Retries after deploy because Cloudflare can serve cached HTML for ~30–60s.
  */
 const SITE = process.env.SEO_SITE_URL ?? "https://drivoraparts.com";
+const MAX_ATTEMPTS = Number(process.env.SEO_VERIFY_RETRIES ?? 5);
+const RETRY_DELAY_MS = Number(process.env.SEO_VERIFY_DELAY_MS ?? 15000);
 
-const checks = [];
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-function pass(name, detail = "") {
+function pass(checks, name, detail = "") {
   checks.push({ ok: true, name, detail });
 }
 
-function fail(name, detail = "") {
+function fail(checks, name, detail = "") {
   checks.push({ ok: false, name, detail });
 }
 
-async function fetchText(url) {
-  const res = await fetch(url, { redirect: "follow" });
+function cacheBustUrl(path) {
+  const base = path.startsWith("http") ? path : `${SITE}${path}`;
+  const separator = base.includes("?") ? "&" : "?";
+  return `${base}${separator}_seo_verify=${Date.now()}`;
+}
+
+async function fetchText(path) {
+  const res = await fetch(cacheBustUrl(path), {
+    redirect: "follow",
+    headers: {
+      "cache-control": "no-cache",
+      pragma: "no-cache",
+    },
+  });
   const text = await res.text();
   return { res, text };
 }
@@ -60,93 +77,124 @@ function hasMerchantOfferFields(offers) {
   return Boolean(hasShipping && hasReturns);
 }
 
-try {
-  const { res: sitemapRes, text: sitemapXml } = await fetchText(`${SITE}/sitemap.xml`);
-  if (!sitemapRes.ok) fail("sitemap.xml reachable", `HTTP ${sitemapRes.status}`);
-  else {
-    const urlCount = (sitemapXml.match(/<loc>/g) ?? []).length;
-    if (urlCount < 100) fail("sitemap url count", `${urlCount} URLs (expected 100+)`);
-    else pass("sitemap.xml", `${urlCount} URLs`);
-  }
+async function runChecks() {
+  const checks = [];
 
-  const { res: robotsRes, text: robotsTxt } = await fetchText(`${SITE}/robots.txt`);
-  if (!robotsRes.ok) fail("robots.txt reachable", `HTTP ${robotsRes.status}`);
-  else if (!robotsTxt.includes("Sitemap:")) fail("robots.txt sitemap directive");
-  else pass("robots.txt", "includes Sitemap directive");
-
-  const pages = [
-    { path: "/", expectCanonical: `${SITE.replace(/\/$/, "")}` },
-    { path: "/catalog/suspension", keyword: "lift" },
-    { path: "/catalog/all", keyword: "Products" },
-  ];
-
-  for (const page of pages) {
-    const url = `${SITE}${page.path}`;
-    const { res, text } = await fetchText(url);
-    if (!res.ok) {
-      fail(`${page.path} HTTP`, String(res.status));
-      continue;
+  try {
+    const { res: sitemapRes, text: sitemapXml } = await fetchText("/sitemap.xml");
+    if (!sitemapRes.ok) fail(checks, "sitemap.xml reachable", `HTTP ${sitemapRes.status}`);
+    else {
+      const urlCount = (sitemapXml.match(/<loc>/g) ?? []).length;
+      if (urlCount < 100) fail(checks, "sitemap url count", `${urlCount} URLs (expected 100+)`);
+      else pass(checks, "sitemap.xml", `${urlCount} URLs`);
     }
 
-    const canonical = extractCanonical(text);
-    const description = extractMetaDescription(text);
-    const title = extractTitle(text);
+    const { res: robotsRes, text: robotsTxt } = await fetchText("/robots.txt");
+    if (!robotsRes.ok) fail(checks, "robots.txt reachable", `HTTP ${robotsRes.status}`);
+    else if (!robotsTxt.includes("Sitemap:")) fail(checks, "robots.txt sitemap directive");
+    else pass(checks, "robots.txt", "includes Sitemap directive");
 
-    if (page.expectCanonical && canonical && !canonical.startsWith(page.expectCanonical)) {
-      fail(`${page.path} canonical`, canonical);
-    } else if (canonical) {
-      pass(`${page.path} canonical`, canonical);
+    const pages = [
+      { path: "/", expectCanonical: `${SITE.replace(/\/$/, "")}` },
+      { path: "/catalog/suspension", keyword: "lift" },
+      { path: "/catalog/all", keyword: "Products" },
+    ];
+
+    for (const page of pages) {
+      const { res, text } = await fetchText(page.path);
+      if (!res.ok) {
+        fail(checks, `${page.path} HTTP`, String(res.status));
+        continue;
+      }
+
+      const canonical = extractCanonical(text);
+      const description = extractMetaDescription(text);
+      const title = extractTitle(text);
+
+      if (page.expectCanonical && canonical && !canonical.startsWith(page.expectCanonical)) {
+        fail(checks, `${page.path} canonical`, canonical);
+      } else if (canonical) {
+        pass(checks, `${page.path} canonical`, canonical);
+      } else {
+        fail(checks, `${page.path} canonical`, "missing");
+      }
+
+      if (!description || description.length < 50) {
+        fail(checks, `${page.path} description`, description ?? "missing");
+      } else {
+        pass(checks, `${page.path} description`, `${description.length} chars`);
+      }
+
+      if (!title) fail(checks, `${page.path} title`, "missing");
+      else pass(checks, `${page.path} title`, title.slice(0, 60));
+
+      if (page.keyword && !text.toLowerCase().includes(page.keyword.toLowerCase())) {
+        fail(checks, `${page.path} content`, `missing keyword "${page.keyword}"`);
+      }
+    }
+
+    for (const blocked of ["/cart", "/checkout"]) {
+      const { text } = await fetchText(blocked);
+      if (/noindex/i.test(text)) pass(checks, `${blocked} noindex`);
+      else fail(checks, `${blocked} noindex`, "should not be indexed");
+    }
+
+    const { res: productRes, text: productHtml } = await fetchText("/product/1845");
+    if (!productRes.ok) {
+      fail(checks, "/product/1845 HTTP", String(productRes.status));
     } else {
-      fail(`${page.path} canonical`, "missing");
+      const offers = extractProductOfferJsonLd(productHtml);
+      if (hasMerchantOfferFields(offers)) {
+        pass(checks, "product merchant JSON-LD", "shippingDetails + hasMerchantReturnPolicy");
+      } else {
+        fail(
+          checks,
+          "product merchant JSON-LD",
+          "Product offers must include OfferShippingDetails and MerchantReturnPolicy"
+        );
+      }
     }
-
-    if (!description || description.length < 50) {
-      fail(`${page.path} description`, description ?? "missing");
-    } else {
-      pass(`${page.path} description`, `${description.length} chars`);
-    }
-
-    if (!title) fail(`${page.path} title`, "missing");
-    else pass(`${page.path} title`, title.slice(0, 60));
-
-    if (page.keyword && !text.toLowerCase().includes(page.keyword.toLowerCase())) {
-      fail(`${page.path} content`, `missing keyword "${page.keyword}"`);
-    }
+  } catch (error) {
+    fail(checks, "network", error instanceof Error ? error.message : String(error));
   }
 
-  for (const blocked of ["/cart", "/checkout"]) {
-    const { text } = await fetchText(`${SITE}${blocked}`);
-    if (/noindex/i.test(text)) pass(`${blocked} noindex`);
-    else fail(`${blocked} noindex`, "should not be indexed");
-  }
+  return checks;
+}
 
-  const { res: productRes, text: productHtml } = await fetchText(`${SITE}/product/1845`);
-  if (!productRes.ok) {
-    fail("/product/1845 HTTP", String(productRes.status));
+function printChecks(checks) {
+  for (const check of checks) {
+    const mark = check.ok ? "✓" : "✗";
+    console.log(`${mark} ${check.name}${check.detail ? ` — ${check.detail}` : ""}`);
+  }
+}
+
+let lastChecks = [];
+
+for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+  if (attempt > 1) {
+    console.log(`\nRetrying SEO checks in ${RETRY_DELAY_MS / 1000}s (attempt ${attempt}/${MAX_ATTEMPTS})…`);
+    await sleep(RETRY_DELAY_MS);
   } else {
-    const offers = extractProductOfferJsonLd(productHtml);
-    if (hasMerchantOfferFields(offers)) {
-      pass("product merchant JSON-LD", "shippingDetails + hasMerchantReturnPolicy");
-    } else {
-      fail(
-        "product merchant JSON-LD",
-        "Product offers must include OfferShippingDetails and MerchantReturnPolicy"
-      );
-    }
+    console.log(`Running SEO checks against ${SITE}…`);
   }
-} catch (error) {
-  fail("network", error instanceof Error ? error.message : String(error));
+
+  lastChecks = await runChecks();
+  const failed = lastChecks.filter((check) => !check.ok);
+
+  if (failed.length === 0) {
+    printChecks(lastChecks);
+    console.log(`\nAll ${lastChecks.length} SEO checks passed on attempt ${attempt}.`);
+    process.exit(0);
+  }
+
+  console.log(`Attempt ${attempt} failed (${failed.length} check(s)):`);
+  for (const check of failed) {
+    console.log(`  ✗ ${check.name}${check.detail ? ` — ${check.detail}` : ""}`);
+  }
 }
 
-const failed = checks.filter((c) => !c.ok);
-for (const check of checks) {
-  const mark = check.ok ? "✓" : "✗";
-  console.log(`${mark} ${check.name}${check.detail ? ` — ${check.detail}` : ""}`);
-}
-
-if (failed.length) {
-  console.error(`\n${failed.length} SEO check(s) failed.`);
-  process.exit(1);
-}
-
-console.log(`\nAll ${checks.length} SEO checks passed.`);
+printChecks(lastChecks);
+console.error(
+  `\n${lastChecks.filter((check) => !check.ok).length} SEO check(s) failed after ${MAX_ATTEMPTS} attempt(s).`
+);
+process.exit(1);
