@@ -93,9 +93,17 @@ function hasMerchantOfferFields(offers) {
     ? shipping.length > 0 && shipping.every((entry) => entry?.["@type"] === "OfferShippingDetails")
     : shipping?.["@type"] === "OfferShippingDetails";
   const hasReturns = Array.isArray(returns)
-    ? returns.length > 0 && returns.every((entry) => entry?.["@type"] === "MerchantReturnPolicy")
-    : returns?.["@type"] === "MerchantReturnPolicy";
-  return Boolean(hasShipping && hasReturns);
+    ? returns.length > 0 &&
+      returns.every(
+        (entry) =>
+          entry?.["@type"] === "MerchantReturnPolicy" &&
+          typeof entry.applicableCountry === "string"
+      )
+    : returns?.["@type"] === "MerchantReturnPolicy" &&
+      typeof returns.applicableCountry === "string";
+  const hasPriceValidUntil =
+    typeof offers.priceValidUntil === "string" && /^\d{4}-\d{2}-\d{2}$/.test(offers.priceValidUntil);
+  return Boolean(hasShipping && hasReturns && hasPriceValidUntil);
 }
 
 async function runChecks() {
@@ -166,12 +174,12 @@ async function runChecks() {
     } else {
       const offers = extractProductOfferJsonLd(productHtml);
       if (hasMerchantOfferFields(offers)) {
-        pass(checks, "product merchant JSON-LD", "shippingDetails + hasMerchantReturnPolicy");
+        pass(checks, "product merchant JSON-LD", "shippingDetails, return policies, priceValidUntil");
       } else {
         fail(
           checks,
           "product merchant JSON-LD",
-          "Product offers must include OfferShippingDetails and MerchantReturnPolicy"
+          "Offer must include shippingDetails, per-country hasMerchantReturnPolicy, and priceValidUntil"
         );
       }
     }
