@@ -23,6 +23,7 @@ import { snorkelProducts } from "./snorkel-products";
 import { roofRackProducts } from "./roof-rack-products";
 import { suspensionLiftProducts } from "./suspension-lift-products";
 import { headlightProducts } from "./headlight-products";
+import { tireProducts } from "./tire-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 
@@ -42,6 +43,7 @@ const extensionProducts: Product[] = [
   ...roofRackProducts,
   ...suspensionLiftProducts,
   ...headlightProducts,
+  ...tireProducts,
 ];
 
 const productCatalog: Product[] = [

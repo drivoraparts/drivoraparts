@@ -25,7 +25,7 @@ const CATEGORY_COPY: Record<string, string> = {
   aftermarket:
     "Pre-owned performance parts marketplace — engines, turbos, suspension & truck gear from enthusiast sellers.",
   "wheels-tires":
-    "Flow-formed wheels, BMW fitment, spacers, performance tires & track rubber from BimmerWorld and top wheel brands.",
+    "BFGoodrich KO2, Toyo Open Country, Falken Wildpeak, Michelin Pilot Sport, Nitto Ridge Grappler, Cooper Discoverer, Yokohama Geolandar and performance SUV tires — plus BMW wheels and spacers.",
 };
 
 export function getCategorySeoDescription(slug: string, productCount = 0): string {

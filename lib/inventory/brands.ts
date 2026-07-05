@@ -141,6 +141,13 @@ export const brands: Brand[] = [
   { slug: "jeep", name: "Jeep", category: "aftermarket" },
 
   // Wheels & Tires
+  { slug: "bfgoodrich", name: "BFGoodrich", category: "wheels-tires" },
+  { slug: "falken", name: "Falken", category: "wheels-tires" },
+  { slug: "michelin", name: "Michelin", category: "wheels-tires" },
+  { slug: "pirelli", name: "Pirelli", category: "wheels-tires" },
+  { slug: "nitto", name: "Nitto", category: "wheels-tires" },
+  { slug: "cooper", name: "Cooper Tires", category: "wheels-tires" },
+  { slug: "yokohama", name: "Yokohama", category: "wheels-tires" },
   { slug: "bimmerworld", name: "BimmerWorld", category: "wheels-tires" },
   { slug: "apex", name: "APEX", category: "wheels-tires" },
   { slug: "sonax", name: "SONAX", category: "wheels-tires" },
