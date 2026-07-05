@@ -15,7 +15,7 @@ const CATEGORY_COPY: Record<string, string> = {
   electronics:
     "ECU tuners, wideband gauges, engine management, dash cams & wiring for modern performance and swap builds.",
   lighting:
-    "LED light bars, Morimoto, AlphaRex, Baja Designs headlights, fog lights & exterior lighting for street and off-road.",
+    "Vehicle-specific LED headlights from Morimoto, AlphaRex, Oracle, Anzo, Spyder & VLAND — plus light bars, Baja Designs fog lights & exterior lighting for street and off-road.",
   "body-parts":
     "Rust-free truck beds, F-150 & Tacoma shells, widebody kits, carbon hoods & aero for BMW, Ford, Honda, Nissan, Subaru & Toyota.",
   interior:

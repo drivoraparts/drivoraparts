@@ -83,6 +83,13 @@ export const brands: Brand[] = [
   { slug: "philips", name: "Philips", category: "lighting" },
   { slug: "rigid-industries", name: "Rigid Industries", category: "lighting" },
   { slug: "xk-glow", name: "XK Glow", category: "lighting" },
+  { slug: "anzo", name: "Anzo USA", category: "lighting" },
+  { slug: "spyder", name: "Spyder Auto", category: "lighting" },
+  { slug: "vland", name: "VLAND", category: "lighting" },
+  { slug: "toyota", name: "Toyota Genuine", category: "lighting" },
+  { slug: "ford", name: "Ford Genuine", category: "lighting" },
+  { slug: "nissan", name: "Nissan Genuine", category: "lighting" },
+  { slug: "isuzu", name: "Isuzu Genuine", category: "lighting" },
   { slug: "universal", name: "Universal", category: "lighting" },
 
   // Body Parts
