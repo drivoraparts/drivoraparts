@@ -72,6 +72,7 @@ export const brands: Brand[] = [
   { slug: "duraflex", name: "Duraflex", category: "bumper" },
   { slug: "liberty-walk", name: "Liberty Walk", category: "bumper" },
   { slug: "rocket-bunny", name: "Rocket Bunny", category: "bumper" },
+  { slug: "ford", name: "Ford", category: "bumper" },
 
   // Brakes
   { slug: "brembo-gt-kits", name: "Brembo GT Kits", category: "brakes" },
