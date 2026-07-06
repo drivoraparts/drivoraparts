@@ -25,6 +25,7 @@ import { suspensionLiftProducts } from "./suspension-lift-products";
 import { headlightProducts } from "./headlight-products";
 import { tireProducts } from "./tire-products";
 import { transmissionProducts } from "./transmission-products";
+import { bumperProducts } from "./bumper-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 
@@ -46,6 +47,7 @@ const extensionProducts: Product[] = [
   ...headlightProducts,
   ...tireProducts,
   ...transmissionProducts,
+  ...bumperProducts,
 ];
 
 const productCatalog: Product[] = [

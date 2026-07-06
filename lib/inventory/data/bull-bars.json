@@ -1,7 +1,7 @@
 [
   {
     "id": 1800,
-    "name": "ARB Summit Bull Bar for Toyota Hilux (2021+)",
+    "name": "ARB Summit Front Bumper for Toyota Hilux (2021+)",
     "category": "4x4-accessories",
     "brand": "arb",
     "price": 2900,
@@ -24,11 +24,12 @@
     "description": "ARB Summit Bull Bar for Toyota Hilux (2021+)\n\nARB Summit Bull Bar for Toyota Hilux (2021+) — heavy-duty frontal protection for touring and off-road use.\n\nFitment: Toyota Hilux 2021+ (N80)\n\nShipping\nFreight shipping available on oversized bull bars — contact for a quote on international delivery.",
     "sourceUrl": "https://www.arb.com.au/product/3414680-arb-summit-mkii-bull-bar-with-matt-black-finish-winch-compatible-toyota-hilux",
     "sourceSlug": "arb-summit-bull-bar-for-toyota-hilux-2021",
-    "createdAt": 1751800000000
+    "createdAt": 1751800000000,
+    "topDemand": true
   },
   {
     "id": 1801,
-    "name": "ARB Summit Bull Bar for Ford Ranger (2023+)",
+    "name": "ARB Summit Front Bumper for Ford Ranger (2023+)",
     "category": "4x4-accessories",
     "brand": "arb",
     "price": 4208.23,
@@ -47,11 +48,12 @@
     "description": "ARB Summit Bull Bar for Ford Ranger (2023+)\n\nEquip your 2023+ Ford Ranger with the ARB Summit Winch Bumper , offering ultimate front-end protection, winch compatibility, and seamless integration with your vehicle’s advanced technology. Designed for off-road enthusiasts and those who demand top-tier performance, the ARB Summit Winch Bumper features provisions for your camera and 6 parking sensors , allowing you to maintain all your vehicle’s essential safety and driver-assistance features while preparing for off-road adventures. Key Features: Custom Fit for 2023+ Ford Ranger: Designed specifically for the 2023+ Ford Ranger , this bumper provides a perfect fit that complements your vehicle’s aggressive and modern styling, enhancing both aesthetics and protection. Winch-Ready Design: Built to accommodate ARB’s range of winches, this bumper is ideal for off-road recovery and ensures you're equipped for challenging terrain and recovery situations. Camera & 6 Sensors Compatibility: This version of the bumper is engineered with provisions to retain your vehicle’s front camera and 6 parking sensors , allowing for continued use of your truck’s safety features without any compromise in functionality. Heavy-Duty Construction: Made from \n\nFitment: Ford Ranger 2023+ (Next Gen)\n\nShipping\nFreight shipping available on oversized bull bars — contact for a quote on international delivery.",
     "sourceUrl": "https://offroad-developments.com/products/arb-summit-winchbumper-for-ford-ford-ranger-23-with-camera-6-sensors",
     "sourceSlug": "arb-summit-bull-bar-for-ford-ranger-2023",
-    "createdAt": 1751799999999
+    "createdAt": 1751799999999,
+    "topDemand": true
   },
   {
     "id": 1802,
-    "name": "ARB Deluxe Bull Bar for Toyota LandCruiser 79 Series",
+    "name": "ARB Deluxe Front Bumper for Toyota LandCruiser 79 Series",
     "category": "4x4-accessories",
     "brand": "arb",
     "price": 3199,
@@ -69,11 +71,12 @@
     "description": "ARB Deluxe Bull Bar for Toyota LandCruiser 79 Series\n\nNon-Winch Deluxe Bull Bar Compatible with: • Toyota Landcruiser 70 2007-2022 Condition: New in original packaging\n\nFitment: Toyota LandCruiser 79 Series\n\nShipping\nFreight shipping available on oversized bull bars — contact for a quote on international delivery.",
     "sourceUrl": "https://ultimate4wd.com.au/products/arb-deluxe-bull-bar-landcruiser-70-2007-2022-models-without-flares",
     "sourceSlug": "arb-deluxe-bull-bar-for-toyota-landcruiser-79-series",
-    "createdAt": 1751799999998
+    "createdAt": 1751799999998,
+    "topDemand": true
   },
   {
     "id": 1803,
-    "name": "ARB Summit Bull Bar for Isuzu D-Max (2021+)",
+    "name": "ARB Summit Front Bumper for Isuzu D-Max (2021+)",
     "category": "4x4-accessories",
     "brand": "arb",
     "price": 2900,
@@ -100,7 +103,7 @@
   },
   {
     "id": 1804,
-    "name": "ARB Summit Bull Bar for Toyota Prado 150",
+    "name": "ARB Summit Front Bumper for Toyota Prado 150",
     "category": "4x4-accessories",
     "brand": "arb",
     "price": 2900,
@@ -127,7 +130,7 @@
   },
   {
     "id": 1805,
-    "name": "TJM Outback Bull Bar for Ford Ranger",
+    "name": "TJM Outback Front Bumper for Ford Ranger",
     "category": "4x4-accessories",
     "brand": "tjm",
     "price": 1899,
@@ -150,11 +153,12 @@
     "description": "TJM Outback Bull Bar for Ford Ranger\n\nTJM Outback Bull Bar for Ford Ranger — heavy-duty frontal protection for touring and off-road use.\n\nFitment: Ford Ranger\n\nShipping\nFreight shipping available on oversized bull bars — contact for a quote on international delivery.",
     "sourceUrl": "https://www.tjm.com.au/tjm-outback-bull-bar-black-steel-070sb13a21w",
     "sourceSlug": "tjm-outback-bull-bar-for-ford-ranger",
-    "createdAt": 1751799999995
+    "createdAt": 1751799999995,
+    "topDemand": true
   },
   {
     "id": 1806,
-    "name": "TJM Outback Bull Bar for Toyota Hilux",
+    "name": "TJM Outback Front Bumper for Toyota Hilux",
     "category": "4x4-accessories",
     "brand": "tjm",
     "price": 1899,
@@ -177,7 +181,7 @@
   },
   {
     "id": 1807,
-    "name": "TJM Outback Bull Bar for Nissan Navara",
+    "name": "TJM Outback Front Bumper for Nissan Navara",
     "category": "4x4-accessories",
     "brand": "tjm",
     "price": 1899,
@@ -200,7 +204,7 @@
   },
   {
     "id": 1808,
-    "name": "Ironman Raid Bull Bar for Toyota Hilux",
+    "name": "Ironman Raid Front Bumper for Toyota Hilux",
     "category": "4x4-accessories",
     "brand": "ironman-4x4",
     "price": 2599,
@@ -223,11 +227,12 @@
     "description": "Ironman Raid Bull Bar for Toyota Hilux\n\nThe Raid Bull Bar has got to be one of the best-looking bars on the market (if we don't say so ourselves). Let's address the elephant in the room, it doesn't have hoops! But that is where the protection difference between the RAID and the traditional triple-hoop bars start and finish. Built from the same pedigree as its more traditional brothers, the Raid Bull Bar maintains the structural integrity you require to protect your critical engine components, maintains all the same accessory mounting features, AND... looks bloody mint! Standout Features 3mm Fully welded steel construction 12,000lb Winch-ready 2x 5t Radius edge recovery points 4mm Skid plate Provisions for cube/fog lights, driving lights, and light bars Top Tech Specs ADR Compliant and compatible with all vehicle safety features 3mm Steel construction Primed for rust prevention Textured powder coat finish 3 Year warranty The Ironman 4x4 Raid Bull Bar is becoming one of the most popular bull bars on the market, and you only need to look at it to understand why! View RAID Bull Bar & Light Kit\n\nFitment: Toyota Hilux N80 2020+\n\nShipping\nFreight shipping available on oversized bull bars — contact for a quote on international delivery.",
     "sourceUrl": "https://www.ironman4x4.com.au/products/toyota-hilux-n80-2020-2025-bull-bar-raid-bbr076",
     "sourceSlug": "ironman-raid-bull-bar-for-toyota-hilux",
-    "createdAt": 1751799999992
+    "createdAt": 1751799999992,
+    "topDemand": true
   },
   {
     "id": 1809,
-    "name": "Ironman Raid Bull Bar for Ford Ranger",
+    "name": "Ironman Raid Front Bumper for Ford Ranger",
     "category": "4x4-accessories",
     "brand": "ironman-4x4",
     "price": 2599,
@@ -252,7 +257,7 @@
   },
   {
     "id": 1810,
-    "name": "ECB Big Tube Bull Bar for Toyota Hilux",
+    "name": "ECB Big Tube Front Bumper for Toyota Hilux",
     "category": "4x4-accessories",
     "brand": "ecb",
     "price": 3861,
@@ -276,7 +281,7 @@
   },
   {
     "id": 1811,
-    "name": "ECB Big Tube Bull Bar for Isuzu D-Max",
+    "name": "ECB Big Tube Front Bumper for Isuzu D-Max",
     "category": "4x4-accessories",
     "brand": "ecb",
     "price": 3861,
@@ -299,7 +304,7 @@
   },
   {
     "id": 1812,
-    "name": "AFN Premium Bull Bar for Toyota LandCruiser 300 Series",
+    "name": "AFN Premium Front Bumper for Toyota LandCruiser 300 Series",
     "category": "4x4-accessories",
     "brand": "afn",
     "price": 2999,
@@ -325,7 +330,7 @@
   },
   {
     "id": 1813,
-    "name": "AFN Premium Bull Bar for Nissan Patrol Y62",
+    "name": "AFN Premium Front Bumper for Nissan Patrol Y62",
     "category": "4x4-accessories",
     "brand": "afn",
     "price": 2999,
@@ -352,7 +357,7 @@
   },
   {
     "id": 1814,
-    "name": "ARB Summit Bull Bar for Mitsubishi Triton (MV)",
+    "name": "ARB Summit Front Bumper for Mitsubishi Triton (MV)",
     "category": "4x4-accessories",
     "brand": "arb",
     "price": 2799,

@@ -17,11 +17,11 @@ const CATEGORY_COPY: Record<string, string> = {
   lighting:
     "Vehicle-specific LED headlights from Morimoto, AlphaRex, Oracle, Anzo, Spyder & VLAND — plus light bars, Baja Designs fog lights & exterior lighting for street and off-road.",
   "body-parts":
-    "Rust-free truck beds, F-150 & Tacoma shells, widebody kits, carbon hoods & aero for BMW, Ford, Honda, Nissan, Subaru & Toyota.",
+    "Duraflex, Liberty Walk, Rocket Bunny, ADD & DV8 bumpers — plus truck beds, widebody kits, carbon hoods & aero for BMW, Ford, Honda, Nissan, Subaru & Toyota.",
   interior:
     "Racing seats, steering wheels, harnesses, roll cages & cockpit upgrades for street, show & track builds.",
   "4x4-accessories":
-    "ARB & TJM bull bars, Safari snorkels, Rhino-Rack, Front Runner & Rola roof racks for Hilux, Ranger, LandCruiser & Patrol.",
+    "ARB Summit, TJM Outback & Ironman Raid front bumpers, Safari snorkels, Rhino-Rack, Front Runner & Rola roof racks for Hilux, Ranger, LandCruiser & Patrol.",
   aftermarket:
     "Pre-owned performance parts marketplace — engines, turbos, suspension & truck gear from enthusiast sellers.",
   "wheels-tires":
