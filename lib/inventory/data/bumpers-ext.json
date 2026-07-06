@@ -2,7 +2,7 @@
   {
     "id": 1987,
     "name": "ARB Summit Front Bumper for Toyota LandCruiser 300",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 3199,
     "stock": true,
@@ -28,7 +28,7 @@
   {
     "id": 1988,
     "name": "ARB Summit Front Bumper for Nissan Patrol Y62",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 3099,
     "stock": true,
@@ -55,7 +55,7 @@
   {
     "id": 1989,
     "name": "Ironman Raid Front Bumper for Isuzu D-Max",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "ironman-4x4",
     "price": 2599,
     "stock": true,
@@ -78,7 +78,7 @@
   {
     "id": 1990,
     "name": "Ironman Raid Front Bumper for Mitsubishi Triton",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "ironman-4x4",
     "price": 2599,
     "stock": true,
@@ -103,7 +103,7 @@
   {
     "id": 1991,
     "name": "Ironman Raid Front Bumper for Nissan Navara",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "ironman-4x4",
     "price": 2499,
     "stock": true,
@@ -126,7 +126,7 @@
   {
     "id": 1992,
     "name": "TJM Outback Front Bumper for Toyota LandCruiser 300",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "tjm",
     "price": 2199,
     "stock": true,
@@ -152,7 +152,7 @@
   {
     "id": 1993,
     "name": "TJM Outback Front Bumper for Toyota Prado 150",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "tjm",
     "price": 1999,
     "stock": true,
@@ -179,7 +179,7 @@
   {
     "id": 1994,
     "name": "TJM Outback Front Bumper for Nissan Patrol Y62",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "tjm",
     "price": 2099,
     "stock": true,
@@ -206,7 +206,7 @@
   {
     "id": 1995,
     "name": "ADD Stealth Fighter Front Bumper for Ford F-150",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "add-offroad",
     "price": 2899,
     "stock": true,
@@ -230,7 +230,7 @@
   {
     "id": 1996,
     "name": "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "add-offroad",
     "price": 2699,
     "stock": true,
@@ -257,7 +257,7 @@
   {
     "id": 1997,
     "name": "ADD HoneyBadger Front Bumper for Ford Raptor",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "add-offroad",
     "price": 3199,
     "stock": true,
@@ -282,7 +282,7 @@
   {
     "id": 1998,
     "name": "ADD Rock Fighter Front Bumper for Jeep Gladiator",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "add-offroad",
     "price": 2799,
     "stock": true,
@@ -307,7 +307,7 @@
   {
     "id": 1999,
     "name": "ADD Pro Bolt-On Front Bumper for Chevrolet Silverado",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "add-offroad",
     "price": 2699,
     "stock": true,
@@ -330,7 +330,7 @@
   {
     "id": 2000,
     "name": "DV8 Front Bumper for Jeep Wrangler JL",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "dv8-offroad",
     "price": 1899,
     "stock": true,
@@ -356,7 +356,7 @@
   {
     "id": 2001,
     "name": "DV8 Front Bumper for Ford Bronco",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "dv8-offroad",
     "price": 1999,
     "stock": true,
@@ -379,7 +379,7 @@
   {
     "id": 2002,
     "name": "DV8 Rear Bumper for Jeep Gladiator",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "dv8-offroad",
     "price": 1699,
     "stock": true,
@@ -404,7 +404,7 @@
   {
     "id": 2003,
     "name": "DV8 Front Bumper for Toyota Tacoma",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "dv8-offroad",
     "price": 1799,
     "stock": true,
@@ -431,7 +431,7 @@
   {
     "id": 2004,
     "name": "DV8 Front Bumper for Ford Ranger",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "dv8-offroad",
     "price": 1799,
     "stock": true,
@@ -456,7 +456,7 @@
   {
     "id": 2005,
     "name": "Fab Fours Matrix Front Bumper for Ford F-150",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "fab-fours",
     "price": 2499,
     "stock": true,
@@ -480,7 +480,7 @@
   {
     "id": 2006,
     "name": "Fab Fours Premium Front Bumper for Toyota Tacoma",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "fab-fours",
     "price": 2299,
     "stock": true,
@@ -507,7 +507,7 @@
   {
     "id": 2007,
     "name": "Fab Fours Black Steel Front Bumper for RAM 1500",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "fab-fours",
     "price": 2399,
     "stock": true,
@@ -530,7 +530,7 @@
   {
     "id": 2008,
     "name": "Fab Fours Front Bumper for Chevrolet Silverado",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "fab-fours",
     "price": 2299,
     "stock": true,
@@ -553,7 +553,7 @@
   {
     "id": 2009,
     "name": "Fab Fours Front Bumper for GMC Sierra",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "fab-fours",
     "price": 2299,
     "stock": true,
@@ -578,7 +578,7 @@
   {
     "id": 2010,
     "name": "Rough Country Front Bumper for Ford F-150",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rough-country",
     "price": 1299,
     "stock": true,
@@ -601,7 +601,7 @@
   {
     "id": 2011,
     "name": "Rough Country Front Bumper for Jeep Wrangler JL",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rough-country",
     "price": 1199,
     "stock": true,
@@ -626,7 +626,7 @@
   {
     "id": 2012,
     "name": "Rough Country Front Bumper for Toyota Tacoma",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rough-country",
     "price": 1199,
     "stock": true,
@@ -653,7 +653,7 @@
   {
     "id": 2013,
     "name": "Rough Country Rear Bumper for Ford Ranger",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rough-country",
     "price": 999,
     "stock": true,
@@ -678,7 +678,7 @@
   {
     "id": 2014,
     "name": "Rough Country Rear Bumper for Chevrolet Silverado",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rough-country",
     "price": 999,
     "stock": true,
@@ -703,7 +703,7 @@
   {
     "id": 2015,
     "name": "Duraflex GT Concept Front Bumper for Toyota GR Supra A90",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "duraflex",
     "price": 899,
     "stock": true,
@@ -731,7 +731,7 @@
   {
     "id": 2016,
     "name": "Duraflex Front Bumper for Honda Civic FK8 Type R",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "duraflex",
     "price": 749,
     "stock": true,
@@ -758,7 +758,7 @@
   {
     "id": 2017,
     "name": "Duraflex Front Bumper for Nissan 370Z",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "duraflex",
     "price": 799,
     "stock": true,
@@ -785,7 +785,7 @@
   {
     "id": 2018,
     "name": "Duraflex Front Bumper for Subaru WRX STI",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "duraflex",
     "price": 799,
     "stock": true,
@@ -810,7 +810,7 @@
   {
     "id": 2019,
     "name": "Duraflex Front Bumper for Ford Mustang S550",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "duraflex",
     "price": 849,
     "stock": true,
@@ -833,7 +833,7 @@
   {
     "id": 2020,
     "name": "Liberty Walk Front Bumper for Nissan GT-R R35",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "liberty-walk",
     "price": 4999,
     "stock": true,
@@ -860,7 +860,7 @@
   {
     "id": 2021,
     "name": "Liberty Walk Front Bumper for Toyota GR Supra A90",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "liberty-walk",
     "price": 4599,
     "stock": true,
@@ -887,7 +887,7 @@
   {
     "id": 2022,
     "name": "Liberty Walk Rear Bumper for Lamborghini Huracán",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "liberty-walk",
     "price": 5299,
     "stock": true,
@@ -914,7 +914,7 @@
   {
     "id": 2023,
     "name": "Rocket Bunny Front Bumper for Toyota GR86",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rocket-bunny",
     "price": 1299,
     "stock": true,
@@ -942,7 +942,7 @@
   {
     "id": 2024,
     "name": "Rocket Bunny Front Bumper for Nissan 350Z",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rocket-bunny",
     "price": 1199,
     "stock": true,
@@ -969,7 +969,7 @@
   {
     "id": 2025,
     "name": "Rocket Bunny Rear Bumper for Mazda MX-5 ND",
-    "category": "body-parts",
+    "category": "bumper",
     "brand": "rocket-bunny",
     "price": 1099,
     "stock": true,

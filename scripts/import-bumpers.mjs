@@ -41,7 +41,7 @@ export const BUMPER_SOURCES = [
   {
     name: "ARB Summit Front Bumper for Toyota LandCruiser 300",
     brand: "arb",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Toyota LandCruiser 300 Series",
     priceHint: 3199,
     source: reference("https://www.arb.com.au/toyota/landcruiser/300-series/2021-present/bull-bars/", 3199),
@@ -50,7 +50,7 @@ export const BUMPER_SOURCES = [
   {
     name: "ARB Summit Front Bumper for Nissan Patrol Y62",
     brand: "arb",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Nissan Patrol Y62",
     priceHint: 3099,
     source: reference("https://www.arb.com.au/nissan/patrol/y62/2013-present/bull-bars/", 3099),
@@ -60,7 +60,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Ironman Raid Front Bumper for Isuzu D-Max",
     brand: "ironman-4x4",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Isuzu D-Max RG 2020+",
     priceHint: 2599,
     source: shopify(
@@ -72,7 +72,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Ironman Raid Front Bumper for Mitsubishi Triton",
     brand: "ironman-4x4",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Mitsubishi Triton MR / MV",
     priceHint: 2599,
     source: shopify(
@@ -84,7 +84,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Ironman Raid Front Bumper for Nissan Navara",
     brand: "ironman-4x4",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Nissan Navara NP300",
     priceHint: 2499,
     source: reference("https://www.ironman4x4.com.au/", 2499),
@@ -94,7 +94,7 @@ export const BUMPER_SOURCES = [
   {
     name: "TJM Outback Front Bumper for Toyota LandCruiser 300",
     brand: "tjm",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Toyota LandCruiser 300 Series",
     priceHint: 2199,
     source: reference("https://www.tjm.com.au/", 2199),
@@ -103,7 +103,7 @@ export const BUMPER_SOURCES = [
   {
     name: "TJM Outback Front Bumper for Toyota Prado 150",
     brand: "tjm",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Toyota LandCruiser Prado 150 Series",
     priceHint: 1999,
     source: reference("https://www.tjm.com.au/", 1999),
@@ -112,7 +112,7 @@ export const BUMPER_SOURCES = [
   {
     name: "TJM Outback Front Bumper for Nissan Patrol Y62",
     brand: "tjm",
-    category: "4x4-accessories",
+    category: "bumper",
     fitment: "Nissan Patrol Y62",
     priceHint: 2099,
     source: reference("https://www.tjm.com.au/", 2099),
@@ -122,7 +122,7 @@ export const BUMPER_SOURCES = [
   {
     name: "ADD Stealth Fighter Front Bumper for Ford F-150",
     brand: "add-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford F-150 2015–2020",
     priceHint: 2899,
     topDemand: true,
@@ -132,7 +132,7 @@ export const BUMPER_SOURCES = [
   {
     name: "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
     brand: "add-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Toyota Tacoma 2016+",
     priceHint: 2699,
     source: reference("https://www.addictivedesertdesigns.com/", 2699),
@@ -141,7 +141,7 @@ export const BUMPER_SOURCES = [
   {
     name: "ADD HoneyBadger Front Bumper for Ford Raptor",
     brand: "add-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford F-150 Raptor",
     priceHint: 3199,
     source: reference("https://www.addictivedesertdesigns.com/", 3199),
@@ -150,7 +150,7 @@ export const BUMPER_SOURCES = [
   {
     name: "ADD Rock Fighter Front Bumper for Jeep Gladiator",
     brand: "add-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Jeep Gladiator JT",
     priceHint: 2799,
     source: reference("https://www.addictivedesertdesigns.com/", 2799),
@@ -159,7 +159,7 @@ export const BUMPER_SOURCES = [
   {
     name: "ADD Pro Bolt-On Front Bumper for Chevrolet Silverado",
     brand: "add-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Chevrolet Silverado 1500",
     priceHint: 2699,
     source: reference("https://www.addictivedesertdesigns.com/", 2699),
@@ -169,7 +169,7 @@ export const BUMPER_SOURCES = [
   {
     name: "DV8 Front Bumper for Jeep Wrangler JL",
     brand: "dv8-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Jeep Wrangler JL / JLU",
     priceHint: 1899,
     topDemand: true,
@@ -179,7 +179,7 @@ export const BUMPER_SOURCES = [
   {
     name: "DV8 Front Bumper for Ford Bronco",
     brand: "dv8-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford Bronco 2021+",
     priceHint: 1999,
     source: reference("https://dv8offroad.com/", 1999),
@@ -188,7 +188,7 @@ export const BUMPER_SOURCES = [
   {
     name: "DV8 Rear Bumper for Jeep Gladiator",
     brand: "dv8-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Jeep Gladiator JT",
     priceHint: 1699,
     source: reference("https://dv8offroad.com/", 1699),
@@ -197,7 +197,7 @@ export const BUMPER_SOURCES = [
   {
     name: "DV8 Front Bumper for Toyota Tacoma",
     brand: "dv8-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Toyota Tacoma 2016+",
     priceHint: 1799,
     source: reference("https://dv8offroad.com/", 1799),
@@ -206,7 +206,7 @@ export const BUMPER_SOURCES = [
   {
     name: "DV8 Front Bumper for Ford Ranger",
     brand: "dv8-offroad",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford Ranger T6 / Next Gen",
     priceHint: 1799,
     source: reference("https://dv8offroad.com/", 1799),
@@ -216,7 +216,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Fab Fours Matrix Front Bumper for Ford F-150",
     brand: "fab-fours",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford F-150 2015–2020",
     priceHint: 2499,
     topDemand: true,
@@ -226,7 +226,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Fab Fours Premium Front Bumper for Toyota Tacoma",
     brand: "fab-fours",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Toyota Tacoma 2016+",
     priceHint: 2299,
     source: reference("https://www.fabfours.com/", 2299),
@@ -235,7 +235,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Fab Fours Black Steel Front Bumper for RAM 1500",
     brand: "fab-fours",
-    category: "body-parts",
+    category: "bumper",
     fitment: "RAM 1500 DS",
     priceHint: 2399,
     source: reference("https://www.fabfours.com/", 2399),
@@ -244,7 +244,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Fab Fours Front Bumper for Chevrolet Silverado",
     brand: "fab-fours",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Chevrolet Silverado 1500",
     priceHint: 2299,
     source: reference("https://www.fabfours.com/", 2299),
@@ -253,7 +253,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Fab Fours Front Bumper for GMC Sierra",
     brand: "fab-fours",
-    category: "body-parts",
+    category: "bumper",
     fitment: "GMC Sierra 1500",
     priceHint: 2299,
     source: reference("https://www.fabfours.com/", 2299),
@@ -263,7 +263,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rough Country Front Bumper for Ford F-150",
     brand: "rough-country",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford F-150 2015–2020",
     priceHint: 1299,
     source: reference("https://www.roughcountry.com/", 1299),
@@ -272,7 +272,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rough Country Front Bumper for Jeep Wrangler JL",
     brand: "rough-country",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Jeep Wrangler JL",
     priceHint: 1199,
     source: reference("https://www.roughcountry.com/", 1199),
@@ -281,7 +281,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rough Country Front Bumper for Toyota Tacoma",
     brand: "rough-country",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Toyota Tacoma 2016+",
     priceHint: 1199,
     source: reference("https://www.roughcountry.com/", 1199),
@@ -290,7 +290,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rough Country Rear Bumper for Ford Ranger",
     brand: "rough-country",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford Ranger",
     priceHint: 999,
     source: reference("https://www.roughcountry.com/", 999),
@@ -299,7 +299,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rough Country Rear Bumper for Chevrolet Silverado",
     brand: "rough-country",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Chevrolet Silverado 1500",
     priceHint: 999,
     source: reference("https://www.roughcountry.com/", 999),
@@ -309,7 +309,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Duraflex GT Concept Front Bumper for Toyota GR Supra A90",
     brand: "duraflex",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Toyota GR Supra A90",
     priceHint: 899,
     topDemand: true,
@@ -319,7 +319,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Duraflex Front Bumper for Honda Civic FK8 Type R",
     brand: "duraflex",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Honda Civic Type R FK8",
     priceHint: 749,
     source: reference("https://www.duraflexbodykits.com/", 749),
@@ -328,7 +328,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Duraflex Front Bumper for Nissan 370Z",
     brand: "duraflex",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Nissan 370Z",
     priceHint: 799,
     source: reference("https://www.duraflexbodykits.com/", 799),
@@ -337,7 +337,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Duraflex Front Bumper for Subaru WRX STI",
     brand: "duraflex",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Subaru WRX STI VA",
     priceHint: 799,
     source: reference("https://www.duraflexbodykits.com/", 799),
@@ -346,7 +346,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Duraflex Front Bumper for Ford Mustang S550",
     brand: "duraflex",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Ford Mustang S550",
     priceHint: 849,
     source: reference("https://www.duraflexbodykits.com/", 849),
@@ -356,7 +356,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Liberty Walk Front Bumper for Nissan GT-R R35",
     brand: "liberty-walk",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Nissan GT-R R35",
     priceHint: 4999,
     source: reference("https://libertywalk.co.jp/", 4999),
@@ -365,7 +365,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Liberty Walk Front Bumper for Toyota GR Supra A90",
     brand: "liberty-walk",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Toyota GR Supra A90",
     priceHint: 4599,
     source: reference("https://libertywalk.co.jp/", 4599),
@@ -374,7 +374,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Liberty Walk Rear Bumper for Lamborghini Huracán",
     brand: "liberty-walk",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Lamborghini Huracán",
     priceHint: 5299,
     source: reference("https://libertywalk.co.jp/", 5299),
@@ -384,7 +384,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rocket Bunny Front Bumper for Toyota GR86",
     brand: "rocket-bunny",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Toyota GR86 / Subaru BRZ",
     priceHint: 1299,
     topDemand: true,
@@ -394,7 +394,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rocket Bunny Front Bumper for Nissan 350Z",
     brand: "rocket-bunny",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Nissan 350Z",
     priceHint: 1199,
     source: reference("https://pandemusa.com/", 1199),
@@ -403,7 +403,7 @@ export const BUMPER_SOURCES = [
   {
     name: "Rocket Bunny Rear Bumper for Mazda MX-5 ND",
     brand: "rocket-bunny",
-    category: "body-parts",
+    category: "bumper",
     fitment: "Mazda MX-5 ND",
     priceHint: 1099,
     source: reference("https://pandemusa.com/", 1099),

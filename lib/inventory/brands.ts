@@ -59,14 +59,19 @@ export const brands: Brand[] = [
   { slug: "south-bend", name: "South Bend Clutch", category: "transmission" },
   { slug: "centerforce", name: "Centerforce", category: "transmission" },
 
-  // Body Parts — performance bumpers
-  { slug: "add-offroad", name: "ADD Offroad", category: "body-parts" },
-  { slug: "dv8-offroad", name: "DV8 Offroad", category: "body-parts" },
-  { slug: "fab-fours", name: "Fab Fours", category: "body-parts" },
-  { slug: "rough-country", name: "Rough Country", category: "body-parts" },
-  { slug: "duraflex", name: "Duraflex", category: "body-parts" },
-  { slug: "liberty-walk", name: "Liberty Walk", category: "body-parts" },
-  { slug: "rocket-bunny", name: "Rocket Bunny", category: "body-parts" },
+  // Bumpers
+  { slug: "arb", name: "ARB", category: "bumper" },
+  { slug: "tjm", name: "TJM", category: "bumper" },
+  { slug: "ironman-4x4", name: "Ironman 4x4", category: "bumper" },
+  { slug: "ecb", name: "ECB", category: "bumper" },
+  { slug: "afn", name: "AFN", category: "bumper" },
+  { slug: "add-offroad", name: "ADD Offroad", category: "bumper" },
+  { slug: "dv8-offroad", name: "DV8 Offroad", category: "bumper" },
+  { slug: "fab-fours", name: "Fab Fours", category: "bumper" },
+  { slug: "rough-country", name: "Rough Country", category: "bumper" },
+  { slug: "duraflex", name: "Duraflex", category: "bumper" },
+  { slug: "liberty-walk", name: "Liberty Walk", category: "bumper" },
+  { slug: "rocket-bunny", name: "Rocket Bunny", category: "bumper" },
 
   // Brakes
   { slug: "brembo-gt-kits", name: "Brembo GT Kits", category: "brakes" },

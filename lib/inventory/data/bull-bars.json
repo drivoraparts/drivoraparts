@@ -2,7 +2,7 @@
   {
     "id": 1800,
     "name": "ARB Summit Front Bumper for Toyota Hilux (2021+)",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 2900,
     "stock": true,
@@ -30,7 +30,7 @@
   {
     "id": 1801,
     "name": "ARB Summit Front Bumper for Ford Ranger (2023+)",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 4208.23,
     "stock": true,
@@ -54,7 +54,7 @@
   {
     "id": 1802,
     "name": "ARB Deluxe Front Bumper for Toyota LandCruiser 79 Series",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 3199,
     "stock": true,
@@ -77,7 +77,7 @@
   {
     "id": 1803,
     "name": "ARB Summit Front Bumper for Isuzu D-Max (2021+)",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 2900,
     "stock": true,
@@ -104,7 +104,7 @@
   {
     "id": 1804,
     "name": "ARB Summit Front Bumper for Toyota Prado 150",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 2900,
     "stock": true,
@@ -131,7 +131,7 @@
   {
     "id": 1805,
     "name": "TJM Outback Front Bumper for Ford Ranger",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "tjm",
     "price": 1899,
     "stock": true,
@@ -159,7 +159,7 @@
   {
     "id": 1806,
     "name": "TJM Outback Front Bumper for Toyota Hilux",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "tjm",
     "price": 1899,
     "stock": true,
@@ -182,7 +182,7 @@
   {
     "id": 1807,
     "name": "TJM Outback Front Bumper for Nissan Navara",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "tjm",
     "price": 1899,
     "stock": true,
@@ -205,7 +205,7 @@
   {
     "id": 1808,
     "name": "Ironman Raid Front Bumper for Toyota Hilux",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "ironman-4x4",
     "price": 2599,
     "stock": true,
@@ -233,7 +233,7 @@
   {
     "id": 1809,
     "name": "Ironman Raid Front Bumper for Ford Ranger",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "ironman-4x4",
     "price": 2599,
     "stock": true,
@@ -258,7 +258,7 @@
   {
     "id": 1810,
     "name": "ECB Big Tube Front Bumper for Toyota Hilux",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "ecb",
     "price": 3861,
     "stock": true,
@@ -282,7 +282,7 @@
   {
     "id": 1811,
     "name": "ECB Big Tube Front Bumper for Isuzu D-Max",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "ecb",
     "price": 3861,
     "stock": true,
@@ -305,7 +305,7 @@
   {
     "id": 1812,
     "name": "AFN Premium Front Bumper for Toyota LandCruiser 300 Series",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "afn",
     "price": 2999,
     "stock": true,
@@ -331,7 +331,7 @@
   {
     "id": 1813,
     "name": "AFN Premium Front Bumper for Nissan Patrol Y62",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "afn",
     "price": 2999,
     "stock": true,
@@ -358,7 +358,7 @@
   {
     "id": 1814,
     "name": "ARB Summit Front Bumper for Mitsubishi Triton (MV)",
-    "category": "4x4-accessories",
+    "category": "bumper",
     "brand": "arb",
     "price": 2799,
     "stock": true,

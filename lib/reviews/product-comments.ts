@@ -69,6 +69,7 @@ function inferKind(product: Product): ProductKind {
   if (product.category === "engine") return "engine";
   if (product.category === "transmission") return "transmission";
   if (product.category === "turbocharger") return "turbo";
+  if (product.category === "bumper") return "body-bed";
   if (product.category === "body-parts") return "body-bed";
   if (product.category === "lighting") return "lighting";
   if (product.category === "interior") return "interior";

@@ -16,6 +16,7 @@ export const CATALOG_CATEGORIES = [
   "turbocharger",
   "suspension",
   "brakes",
+  "bumper",
   "electronics",
   "lighting",
   "body-parts",

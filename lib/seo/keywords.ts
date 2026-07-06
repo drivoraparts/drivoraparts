@@ -39,6 +39,14 @@ export const CATEGORY_KEYWORDS: Record<string, string[]> = {
     "EBC pads",
     "performance rotors",
   ],
+  bumper: [
+    "front bumper",
+    "bull bar",
+    "ARB bumper",
+    "ADD Offroad",
+    "Fab Fours",
+    "winch bumper",
+  ],
   electronics: [
     "ECU tune",
     "engine management",
@@ -69,12 +77,11 @@ export const CATEGORY_KEYWORDS: Record<string, string[]> = {
     "interior upgrade",
   ],
   "4x4-accessories": [
-    "bull bar",
     "snorkel",
     "roof rack",
-    "ARB bull bar",
     "Safari snorkel",
-    "Hilux bull bar",
+    "Rhino-Rack",
+    "Hilux roof rack",
     "Ranger roof rack",
   ],
   aftermarket: [

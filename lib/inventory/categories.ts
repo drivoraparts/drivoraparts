@@ -13,6 +13,7 @@ export const categories: Category[] = [
   { slug: "turbocharger", name: "Turbocharger" },
   { slug: "suspension", name: "Suspension" },
   { slug: "brakes", name: "Brakes" },
+  { slug: "bumper", name: "Bumpers" },
   { slug: "electronics", name: "Electronics" },
   { slug: "lighting", name: "Lighting" },
   { slug: "body-parts", name: "Body Parts" },
@@ -25,6 +26,7 @@ export const categories: Category[] = [
 /** Category pages show brands only — products live under /catalog/[category]/[brand]. */
 export const BRAND_FIRST_CATEGORY_SLUGS = new Set([
   "brakes",
+  "bumper",
   "transmission",
   "turbocharger",
   "suspension",
