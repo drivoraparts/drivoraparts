@@ -26,6 +26,7 @@ import { headlightProducts } from "./headlight-products";
 import { tireProducts } from "./tire-products";
 import { transmissionProducts } from "./transmission-products";
 import { bumperProducts } from "./bumper-products";
+import { canopyProducts } from "./canopy-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 
@@ -48,6 +49,7 @@ const extensionProducts: Product[] = [
   ...tireProducts,
   ...transmissionProducts,
   ...bumperProducts,
+  ...canopyProducts,
 ];
 
 const productCatalog: Product[] = [

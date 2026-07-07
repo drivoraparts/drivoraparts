@@ -17,6 +17,7 @@ export const CATALOG_CATEGORIES = [
   "suspension",
   "brakes",
   "bumper",
+  "canopy",
   "electronics",
   "lighting",
   "body-parts",

@@ -14,6 +14,8 @@ const CATEGORY_COPY: Record<string, string> = {
     "Big brake kits, Wilwood, Brembo, EBC & ATE upgrades — rotors, pads & calipers for street, track & tow-ready stopping power.",
   bumper:
     "ARB Summit, TJM Outback & Ironman Raid off-road bumpers plus ADD, DV8, Fab Fours, Duraflex & Rocket Bunny performance front bumpers for Hilux, Ranger, F-150, Wrangler, Supra & more.",
+  canopy:
+    "ARB Ascent, RSI SmartCap EVO, Alu-Cab Explorer, Aeroklas, EGR, LEER, SnugTop, A.R.E. & TJM aluminium canopies for Hilux, Ranger, LandCruiser, F-150, Tacoma & RAM builds.",
   electronics:
     "ECU tuners, wideband gauges, engine management, dash cams & wiring for modern performance and swap builds.",
   lighting:
