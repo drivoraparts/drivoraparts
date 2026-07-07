@@ -1,0 +1,332 @@
+{
+  "arb-ascent-canopy": {
+    "name": "ARB Ascent Canopy",
+    "urls": [
+      "https://delivery-p144166-e1487989.adobeaemcloud.com/adobe/assets/urn:aaid:aem:37c3b9ca-1df6-4685-825f-66424dbf59e7/as/image.jpg?width=1200&quality=90",
+      "https://delivery-p144166-e1487989.adobeaemcloud.com/adobe/assets/urn:aaid:aem:0d8e3259-3495-400e-af1e-dadc59116db5/as/image.jpg?width=1200&quality=90"
+    ]
+  },
+  "arb-classic-canopy": {
+    "name": "ARB Classic Canopy",
+    "urls": [
+      "https://delivery-p144166-e1487989.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2e8e360a-7271-4b7f-886d-787106ca15ec/as/image.jpg?width=1200&quality=90",
+      "https://www.arb.com.au/content/dam/arb/production/products/ute-canopies---lids/canopies/classic-canopy/CLS76B_v2.jpg"
+    ]
+  },
+  "arb-commercial-canopy": {
+    "name": "ARB Commercial Canopy",
+    "local": [
+      "ARB classic plus Canopy for 2016 Toyota Hilux Dual Cab/733746713_1745188889808921_1297048353704708332_n.jpg",
+      "ARB classic plus Canopy for 2016 Toyota Hilux Dual Cab/731323109_2107315573329176_887557035069605609_n.jpg"
+    ]
+  },
+  "arb-pinnacle-canopy": {
+    "name": "ARB Pinnacle Canopy",
+    "urls": [
+      "https://delivery-p144166-e1487989.adobeaemcloud.com/adobe/assets/urn:aaid:aem:fab04855-4791-4518-99a9-2e7eb2b48cb3/as/image.jpg?width=1200&quality=90",
+      "https://delivery-p144166-e1487989.adobeaemcloud.com/adobe/assets/urn:aaid:aem:e3a5a5a8-7fa5-4c34-adf7-b34afcf8860c/as/image.jpg?width=1200&quality=90"
+    ]
+  },
+  "rsi-smartcap-evo-adventure": {
+    "name": "RSI SmartCap EVO Adventure",
+    "local": [
+      "Aluminium Canopy/653672130_1584137202880917_4917445029062894233_n.jpg",
+      "leer-100xr/6.jpg"
+    ]
+  },
+  "rsi-smartcap-evo-sport": {
+    "name": "RSI SmartCap EVO Sport",
+    "local": [
+      "Aluminium Canopy/654472415_2193263631527412_8365246601565202068_n.jpg",
+      "leer-100xr/4.jpg"
+    ]
+  },
+  "rsi-smartcap-evo-commercial": {
+    "name": "RSI SmartCap EVO Commercial",
+    "local": [
+      "Aluminium Canopy/657089404_1469937694925221_3795984186554192624_n.jpg",
+      "1500 mm aluminium canopy/717680449_984307671191124_4427746274538223007_n.jpg"
+    ]
+  },
+  "alu-cab-explorer-canopy": {
+    "name": "Alu-Cab Explorer Canopy",
+    "urls": [
+      "https://acmedia.s3.amazonaws.com/wp-content/uploads/2024/11/19181429/DC_EXPLORER_CANOPY-7-scaled.jpg",
+      "https://acmedia.s3.amazonaws.com/wp-content/uploads/2024/11/14140738/Alu-Cab-Explorer-Canopy-01.jpg"
+    ]
+  },
+  "alu-cab-canopy-camper": {
+    "name": "Alu-Cab Canopy Camper",
+    "urls": [
+      "https://acmedia.s3.amazonaws.com/wp-content/uploads/2024/11/14140735/Alu-Cab-Canopy-Tent.jpg",
+      "https://acmedia.s3.amazonaws.com/wp-content/uploads/2024/11/14140733/Canopy-Cederberg.jpg"
+    ]
+  },
+  "aeroklas-premium-canopy": {
+    "name": "Aeroklas Premium Canopy",
+    "urls": [
+      "https://www.aeroklas.com.au/media/catalog/product/cache/1ac22f2a1b37e98f7736dbefe464d7fd/c/a/canalumoddmax24-01-667.webp"
+    ]
+  },
+  "aeroklas-stylish-canopy": {
+    "name": "Aeroklas Stylish Canopy",
+    "urls": [
+      "https://www.aeroklas.com.au/media/catalog/product/cache/1ac22f2a1b37e98f7736dbefe464d7fd/3/0/304121300205f-727.webp"
+    ]
+  },
+  "aeroklas-commercial-canopy": {
+    "name": "Aeroklas Commercial Canopy",
+    "urls": [
+      "https://www.aeroklas.com.au/media/catalog/product/cache/1ac22f2a1b37e98f7736dbefe464d7fd/3/0/304138300353p-766.webp"
+    ]
+  },
+  "egr-premium-canopy": {
+    "name": "EGR Premium Canopy",
+    "local": [
+      "Ute Canopy/727844777_1341888448072095_9084391818865021009_n.jpg",
+      "Ute Canopy/728527893_2100498724203328_4057646453068598892_n.jpg"
+    ]
+  },
+  "egr-fleet-canopy": {
+    "name": "EGR Fleet Canopy",
+    "local": [
+      "Ute Canopy/728543773_2263428507747167_1975872836079263934_n.jpg"
+    ]
+  },
+  "egr-commercial-canopy": {
+    "name": "EGR Commercial Canopy",
+    "local": [
+      "Ute Canopy/729729946_1339137641514788_6434219192765413899_n.jpg"
+    ]
+  },
+  "carryboy-s560-canopy": {
+    "name": "Carryboy S560 Canopy",
+    "local": [
+      "Canopy/721360945_1952997105366426_701580070487978996_n.jpg"
+    ]
+  },
+  "carryboy-s6-canopy": {
+    "name": "Carryboy S6 Canopy",
+    "local": [
+      "Canopy/726231067_1029287416454845_4703730067360194764_n.jpg"
+    ]
+  },
+  "carryboy-workman-canopy": {
+    "name": "Carryboy Workman Canopy",
+    "local": [
+      "EOI 1200 black canopy/708048554_978334261713183_4143578664037993870_n.jpg"
+    ]
+  },
+  "carryboy-g3-canopy": {
+    "name": "Carryboy G3 Canopy",
+    "local": [
+      "EOI 1200 black canopy/712603582_1334548451975127_3255804185967150866_n.jpg"
+    ]
+  },
+  "flexiglass-premium-canopy": {
+    "name": "Flexiglass Premium Canopy",
+    "urls": [
+      "https://www.aeroklas.com.au/media/catalog/product/cache/1ac22f2a1b37e98f7736dbefe464d7fd/c/a/canfsphil16fw-01-899.webp"
+    ]
+  },
+  "flexiglass-tradesman-canopy": {
+    "name": "Flexiglass Tradesman Canopy",
+    "urls": [
+      "https://www.aeroklas.com.au/media/catalog/product/cache/1ac22f2a1b37e98f7736dbefe464d7fd/c/a/canfestri24yo-01-796.webp"
+    ]
+  },
+  "flexiglass-sports-canopy": {
+    "name": "Flexiglass Sports Canopy",
+    "urls": [
+      "https://www.aeroklas.com.au/media/catalog/product/cache/1ac22f2a1b37e98f7736dbefe464d7fd/b/c/bctd70w-01-163.webp"
+    ]
+  },
+  "norweld-aluminium-canopy": {
+    "name": "Norweld Aluminium Canopy",
+    "urls": [
+      "https://norweld.com.au/wp-content/uploads/Toyota-LandCruiser-200-Graphite-Elite-Tray-with-Canopy-Rear-Trundle-Drawer.webp"
+    ]
+  },
+  "norweld-deluxe-canopy": {
+    "name": "Norweld Deluxe Canopy",
+    "urls": [
+      "https://norweld.com.au/wp-content/uploads/DeluxeCanopyHero-CanopyOnly-1920x1080-1.webp"
+    ]
+  },
+  "boss-aluminium-canopy": {
+    "name": "Boss Aluminium Canopy",
+    "urls": [
+      "https://www.bossaluminium.com.au/wp-content/uploads/2025/09/S17-Hero-31-scaled.jpg"
+    ]
+  },
+  "boss-premium-canopy": {
+    "name": "Boss Premium Canopy",
+    "urls": [
+      "https://www.bossaluminium.com.au/wp-content/uploads/2024/11/twin-79-featured-image.jpg"
+    ]
+  },
+  "mrt-aluminium-canopy": {
+    "name": "MRT Aluminium Canopy",
+    "urls": [
+      "https://www.mrt.com.au/staging/wp-content/uploads/2022/09/aluminium-ute-canopies-2021-scaled-1-scaled.jpg"
+    ]
+  },
+  "hsp-premium-canopy": {
+    "name": "HSP Premium Canopy",
+    "local": [
+      "1500 mm aluminium canopy/714965828_882597981540312_5867352400978128721_n.jpg"
+    ]
+  },
+  "hsp-roll-r-cover-canopy": {
+    "name": "HSP Roll R Cover Canopy",
+    "local": [
+      "1500 mm aluminium canopy/719149390_1042922168069476_535786635461344146_n.jpg"
+    ]
+  },
+  "razorback-aluminium-canopy": {
+    "name": "Razorback Aluminium Canopy",
+    "local": [
+      "Alloy Ute canopy/732876808_4418499338408023_2468929491965028348_n.jpg"
+    ]
+  },
+  "tjm-premium-canopy": {
+    "name": "TJM Premium Canopy",
+    "local": [
+      "EOI 1200 black canopy/712603806_1679586693264344_2080220004511631393_n.jpg"
+    ]
+  },
+  "tjm-touring-canopy": {
+    "name": "TJM Touring Canopy",
+    "local": [
+      "EOI 1200 black canopy/713224410_989100000396293_1969345639110118549_n.jpg"
+    ]
+  },
+  "mountain-top-adventure-canopy": {
+    "name": "Mountain Top Adventure Canopy",
+    "local": [
+      "1500 mm aluminium canopy/714805143_983837571038851_3039741175942133171_n.jpg"
+    ]
+  },
+  "truck-covers-usa-hard-canopy": {
+    "name": "Truck Covers USA Hard Canopy",
+    "urls": [
+      "https://truckcoversusa.com/wp-content/uploads/2023/10/2023-Ford-Raptor-R-v5.png"
+    ]
+  },
+  "leer-100xr-canopy": {
+    "name": "LEER 100XR Canopy",
+    "urls": [
+      "https://cdn11.bigcommerce.com/s-h73wg4qqbw/images/stencil/1280x1280/products/456/1691/100xr_2017_chevy_silverado-%25283%2529__13380.1646854283.jpg?c=1"
+    ],
+    "local": [
+      "leer-100xr/1.jpg",
+      "Leer 100XR/723126293_1323674806614146_1665731627011385559_n.jpg"
+    ]
+  },
+  "leer-100xl-canopy": {
+    "name": "LEER 100XL Canopy",
+    "local": [
+      "leer-camper-shell/2.jpg",
+      "Leer Camper Shell/721098973_1344156564324378_808076518601092651_n.jpg"
+    ]
+  },
+  "leer-180-canopy": {
+    "name": "LEER 180 Canopy",
+    "local": [
+      "white-leer-100xr-high-cab-shell/2.jpg",
+      "leer-camper-shell/5.jpg"
+    ]
+  },
+  "snugtop-rebel-canopy": {
+    "name": "SnugTop Rebel Canopy",
+    "local": [
+      "Camper shell Snugtop/722383826_1372532941597771_5128317070269439547_n.jpg",
+      "Camper shell Snugtop/722752490_1000736159170041_7630889741418991596_n.jpg"
+    ]
+  },
+  "snugtop-hi-liner-canopy": {
+    "name": "SnugTop Hi-Liner Canopy",
+    "local": [
+      "Camper shell Snugtop/728453543_1030903322612549_1284705411507904957_n.jpg",
+      "Camper shell Snugtop/728555353_1346157437032418_7374083835714454476_n.jpg"
+    ]
+  },
+  "a-r-e-cx-classic-canopy": {
+    "name": "A.R.E. CX Classic Canopy",
+    "urls": [
+      "https://realtruck.com/production/a-r-e-cx-classic-series-truck-cap/r/800x600/fff/80/05cfa30e4abaf308227199347e0b4d33.jpg"
+    ],
+    "local": [
+      "f150-5-5ft-camper-shell-canopy/2.jpg"
+    ]
+  },
+  "a-r-e-mx-series-canopy": {
+    "name": "A.R.E. MX Series Canopy",
+    "urls": [
+      "https://realtruck.com/production/are-mx-series-truck-cap-main/r/800x600/fff/80/a082a2f5f11f79cdc31719201d089210.jpg"
+    ],
+    "local": [
+      "f150-5-5ft-camper-shell-canopy/3.jpg"
+    ]
+  },
+  "a-r-e-z2-series-canopy": {
+    "name": "A.R.E. Z2 Series Canopy",
+    "urls": [
+      "https://realtruck.com/production/are-mx-series-truck-cap-main-2/r/800x600/fff/80/17eeaaa7231391d560595a5d4d6dd80f.jpeg"
+    ],
+    "local": [
+      "Metal Camper Shell Topper Canopy Bed Cap For F150 5.5 Ft 2015 to 2020/723172291_4534802886733050_493663349552660586_n.jpg"
+    ]
+  },
+  "century-ultra-canopy": {
+    "name": "Century Ultra Canopy",
+    "local": [
+      "leer-camper-shell/4.jpg",
+      "Leer Camper Shell/721602004_1331808218278740_2415261082912516670_n.jpg"
+    ]
+  },
+  "century-high-c-sport-canopy": {
+    "name": "Century High-C Sport Canopy",
+    "local": [
+      "leer-camper-shell/6.jpg"
+    ]
+  },
+  "jason-trek-canopy": {
+    "name": "Jason Trek Canopy",
+    "local": [
+      "Camper shell Snugtop/727952820_28414072811515361_5795256701271359463_n.jpg"
+    ]
+  },
+  "jason-commercial-canopy": {
+    "name": "Jason Commercial Canopy",
+    "local": [
+      "Camper shell Snugtop/729691888_1017334471279257_8365307841834717842_n.jpg"
+    ]
+  },
+  "ranch-icon-canopy": {
+    "name": "Ranch Icon Canopy",
+    "local": [
+      "f150-5-5ft-camper-shell-canopy/1.jpg",
+      "f150-5-5ft-camper-shell-canopy/4.jpg"
+    ]
+  },
+  "ranch-sierra-canopy": {
+    "name": "Ranch Sierra Canopy",
+    "local": [
+      "Metal Camper Shell Topper Canopy Bed Cap For F150 5.5 Ft 2015 to 2020/729219631_1656328005444456_7382887064644858178_n.jpg"
+    ]
+  },
+  "smartcap-evo-defender-canopy": {
+    "name": "SmartCap EVO Defender Canopy",
+    "local": [
+      "leer-100xr/8.jpg",
+      "white-leer-100xr-high-cab-shell/3.jpg"
+    ]
+  },
+  "front-runner-canopy-system": {
+    "name": "Front Runner Canopy System",
+    "local": [
+      "Alloy Ute canopy/733821826_859221240165666_4040781548689562364_n.jpg"
+    ]
+  }
+}
