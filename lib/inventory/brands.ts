@@ -73,6 +73,8 @@ export const brands: Brand[] = [
   { slug: "liberty-walk", name: "Liberty Walk", category: "bumper" },
   { slug: "rocket-bunny", name: "Rocket Bunny", category: "bumper" },
   { slug: "ford", name: "Ford", category: "bumper" },
+  { slug: "nissan", name: "Nissan", category: "bumper" },
+  { slug: "roo-riders", name: "Roo Riders", category: "bumper" },
 
   // Canopies
   { slug: "arb", name: "ARB", category: "canopy" },

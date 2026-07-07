@@ -409,6 +409,18 @@ export const BUMPER_SOURCES = [
     source: reference("https://pandemusa.com/", 1099),
     photoSource: localCopy("tjm-outback-bull-bar-for-nissan-navara"),
   },
+  {
+    name: "Nissan Elgrand E51 White Front Bumper",
+    brand: "roo-riders",
+    category: "bumper",
+    fitment: "Nissan Elgrand E51",
+    priceHint: 3499,
+    source: shopify(
+      "rooriders.com.au",
+      "nissan-elgrand-e51-bull-bar",
+      "https://rooriders.com.au/products/nissan-elgrand-e51-bull-bar"
+    ),
+  },
 ];
 
 function slugify(name) {

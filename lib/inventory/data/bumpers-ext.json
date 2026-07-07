@@ -988,5 +988,32 @@
     "sourceUrl": "https://pandemusa.com/",
     "sourceSlug": "rocket-bunny-rear-bumper-for-mazda-mx-5-nd",
     "createdAt": 1751969999962
+  },
+  {
+    "id": 2076,
+    "name": "Nissan Elgrand E51 White Front Bumper",
+    "category": "bumper",
+    "brand": "roo-riders",
+    "price": 3499,
+    "stock": true,
+    "stockQty": 3,
+    "condition": "brand-new",
+    "warranty": "Manufacturer Warranty",
+    "location": "USA Warehouse",
+    "fitment": "Nissan Elgrand E51",
+    "thumbnail": "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/1.png",
+    "images": [
+      "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/1.png",
+      "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/2.jpg",
+      "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/3.png",
+      "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/4.jpg",
+      "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/5.png",
+      "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/6.jpg"
+    ],
+    "image": "/product-media/bumpers/nissan-elgrand-e51-white-front-bumper/1.png",
+    "description": "Nissan Elgrand E51 White Front Bumper\n\nHeavy-duty steel full-replacement front bumper in white finish for the Nissan Elgrand E51. Bolt-on design shields the grille, headlights, and factory bumper from debris and low-speed impacts while supporting LED light bars, spotlights, and antennas.\n\nFitment: Nissan Elgrand E51\n\nWarranty\nManufacturer Warranty\n\nShipping\nFreight shipping available on oversized bumpers — contact for international delivery quotes.",
+    "sourceUrl": "https://rooriders.com.au/products/nissan-elgrand-e51-bull-bar",
+    "sourceSlug": "nissan-elgrand-e51-white-front-bumper",
+    "createdAt": 1752080000000
   }
 ]
