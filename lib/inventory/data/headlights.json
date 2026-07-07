@@ -1028,5 +1028,32 @@
     "sourceUrl": "https://www.anzousa.com/products/chevy-colorado-15-22-full-led-projector-headlights-black-w-initiation-amber-light-w-drl",
     "sourceSlug": "isuzu-genuine-led-headlights-for-isuzu-d-max",
     "createdAt": 1751899999963
+  },
+  {
+    "id": 2077,
+    "name": "Porsche Cayenne 2004 LED Headlights (Left & Right)",
+    "category": "lighting",
+    "brand": "porsche",
+    "price": 1599,
+    "stock": true,
+    "stockQty": 3,
+    "condition": "brand-new",
+    "warranty": "Manufacturer Warranty",
+    "location": "USA Warehouse",
+    "fitment": "Porsche Cayenne 955 2003-2006 (factory Xenon/HID)",
+    "thumbnail": "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/1.jpg",
+    "images": [
+      "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/1.jpg",
+      "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/2.jpg",
+      "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/3.jpg",
+      "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/4.jpg",
+      "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/5.jpg",
+      "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/6.jpg"
+    ],
+    "image": "/product-media/headlights/porsche-cayenne-2004-led-headlights-left-right/1.jpg",
+    "description": "Porsche Cayenne 2004 LED Headlights (Left & Right)\n\nCrystal-clear LED DRL projector headlight pair for Porsche Cayenne 955 (2003-2006), including 2004 models. Complete left and right assemblies with LED daytime running lights and projector low beam. Designed for vehicles with factory Xenon/HID — reuse your original ballasts and leveling motors for installation.\n\nFitment: Porsche Cayenne 955 2003-2006 (factory Xenon/HID)\n\nShipping\nWorldwide shipping available on headlight assemblies — contact for a quote on international delivery.",
+    "sourceUrl": "https://marsperformance.com.au/products/crystal-clear-led-drl-projector-head-lights-porsche-cayenne-955-9pa-2003-2006-hidxenon",
+    "sourceSlug": "porsche-cayenne-2004-led-headlights-left-right",
+    "createdAt": 1752090000000
   }
 ]

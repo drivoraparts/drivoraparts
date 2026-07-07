@@ -460,6 +460,20 @@ export const HEADLIGHT_SOURCES = [
       "chevy-colorado-15-22-full-led-projector-headlights-black-w-initiation-amber-light-w-drl"
     ),
   },
+  {
+    name: "Porsche Cayenne 2004 LED Headlights (Left & Right)",
+    brand: "porsche",
+    fitment: "Porsche Cayenne 955 2003-2006 (factory Xenon/HID)",
+    priceHint: 1599,
+    source: reference(
+      "https://marsperformance.com.au/products/crystal-clear-led-drl-projector-head-lights-porsche-cayenne-955-9pa-2003-2006-hidxenon",
+      1599
+    ),
+    photoSource: shopify(
+      "marsperformance.com.au",
+      "crystal-clear-led-drl-projector-head-lights-porsche-cayenne-955-9pa-2003-2006-hidxenon"
+    ),
+  },
 ];
 
 const delay = (ms) => new Promise((r) => setTimeout(r, ms));

@@ -145,6 +145,8 @@ export const brands: Brand[] = [
   { slug: "ford", name: "Ford Genuine", category: "lighting" },
   { slug: "nissan", name: "Nissan Genuine", category: "lighting" },
   { slug: "isuzu", name: "Isuzu Genuine", category: "lighting" },
+  { slug: "porsche", name: "Porsche", category: "lighting" },
+  { slug: "mars-performance", name: "Mars Performance", category: "lighting" },
   { slug: "universal", name: "Universal", category: "lighting" },
 
   // Body Parts
