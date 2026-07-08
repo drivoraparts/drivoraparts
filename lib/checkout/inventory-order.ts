@@ -6,6 +6,9 @@ import { logActivity } from "@/lib/monitoring/activity";
 type InventoryPaymentMetadata = {
   inventory_deducted?: boolean;
   inventory_restored?: boolean;
+  inventory_deduction_failed?: boolean;
+  inventory_deduction_failed_at?: string;
+  inventory_deduction_failed_items?: Array<{ productId: number; quantity: number }>;
 };
 
 export async function commitOrderInventory(orderId: string): Promise<void> {
@@ -19,9 +22,12 @@ export async function commitOrderInventory(orderId: string): Promise<void> {
     return;
   }
 
+  const failedItems: Array<{ productId: number; quantity: number }> = [];
+
   for (const item of order.items) {
     const committed = await reduceInventory(item.product_id, item.quantity);
     if (!committed) {
+      failedItems.push({ productId: item.product_id, quantity: item.quantity });
       await logActivity("warn", "inventory.commit_failed", {
         orderId,
         productId: item.product_id,
@@ -30,12 +36,27 @@ export async function commitOrderInventory(orderId: string): Promise<void> {
     }
   }
 
+  if (payment && failedItems.length > 0) {
+    await updatePaymentRecord(payment.id, {
+      metadata: {
+        ...metadata,
+        inventory_deducted: false,
+        inventory_deduction_failed: true,
+        inventory_deduction_failed_at: new Date().toISOString(),
+        inventory_deduction_failed_items: failedItems,
+      },
+    });
+    return;
+  }
+
   if (payment) {
     await updatePaymentRecord(payment.id, {
       metadata: {
         ...metadata,
         inventory_deducted: true,
         inventory_deducted_at: new Date().toISOString(),
+        inventory_deduction_failed: false,
+        inventory_deduction_failed_items: [],
       },
     });
   }
