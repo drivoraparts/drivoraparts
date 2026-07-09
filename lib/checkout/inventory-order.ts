@@ -8,6 +8,14 @@ type InventoryPaymentMetadata = {
   inventory_restored?: boolean;
 };
 
+type RestoreOrderInventoryOptions = {
+  /**
+   * Some legacy orders may have deducted inventory before metadata flags existed.
+   * Callers can opt in when they know the order was previously in a paid/fulfilled state.
+   */
+  assumeInventoryDeducted?: boolean;
+};
+
 export async function commitOrderInventory(orderId: string): Promise<void> {
   const order = await getOrderById(orderId);
   if (!order?.items.length) return;
@@ -41,7 +49,10 @@ export async function commitOrderInventory(orderId: string): Promise<void> {
   }
 }
 
-export async function restoreOrderInventory(orderId: string): Promise<void> {
+export async function restoreOrderInventory(
+  orderId: string,
+  options: RestoreOrderInventoryOptions = {}
+): Promise<void> {
   const order = await getOrderById(orderId);
   if (!order?.items.length) return;
 
@@ -52,13 +63,11 @@ export async function restoreOrderInventory(orderId: string): Promise<void> {
     return;
   }
 
-  const shouldRestore =
+  const inventoryWasDeducted =
     metadata.inventory_deducted === true ||
-    (order.status !== "paid" &&
-      order.status !== "shipped" &&
-      order.status !== "delivered");
+    options.assumeInventoryDeducted === true;
 
-  if (!shouldRestore) {
+  if (!inventoryWasDeducted) {
     return;
   }
 

@@ -44,13 +44,20 @@ export async function PATCH(req: Request) {
     return NextResponse.json(order);
   }
 
+  const orderLikelyDeductedInventory =
+    order.status === "paid" ||
+    order.status === "shipped" ||
+    order.status === "delivered";
+
   try {
     if (status === "paid") {
       await adminMarkOrderPaid(orderId);
     } else {
       await forceUpdateOrderStatus(orderId, status);
       if (status === "cancelled" || status === "failed") {
-        await restoreOrderInventory(orderId);
+        await restoreOrderInventory(orderId, {
+          assumeInventoryDeducted: orderLikelyDeductedInventory,
+        });
       }
     }
 
