@@ -28,6 +28,8 @@ import {
 
 } from "@/lib/email/send";
 
+import { sendMetaCapIPurchase } from "@/lib/analytics/meta-capi";
+
 import { logError, logInfo, logWarn } from "@/lib/monitoring/logger";
 
 import { logActivity } from "@/lib/monitoring/activity";
@@ -456,6 +458,26 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
 
     });
 
+  }
+
+  // Server-side Purchase for Meta — fires even when the buyer stays on NOWPayments
+  // and never returns to /success (browser pixel cannot track the payment page).
+  if (updated) {
+    try {
+      await sendMetaCapIPurchase({
+        orderId,
+        value: Number(updated.total),
+        email: updated.customer?.email ?? null,
+        phone: updated.customer?.phone ?? null,
+        items: updated.items.map((item) => ({
+          id: item.product_id,
+          quantity: item.quantity,
+          item_price: Number(item.price),
+        })),
+      });
+    } catch (error) {
+      logError("meta_capi_side_effect_failed", error, { orderId });
+    }
   }
 
 

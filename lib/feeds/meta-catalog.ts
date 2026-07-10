@@ -2,7 +2,6 @@ import { BASE_CURRENCY } from "@/lib/currency/constants";
 import {
   getAllProducts,
   getBrandBySlug,
-  getProductThumbnail,
   resolveProductCondition,
 } from "@/lib/inventory";
 import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
@@ -74,12 +73,38 @@ function metaPrice(product: Product): string | null {
 }
 
 function isFeedReadyImage(src: string): boolean {
-  return Boolean(src && src !== DEFAULT_PRODUCT_IMAGE && !src.includes("default.svg"));
+  if (!src || src === DEFAULT_PRODUCT_IMAGE || src.includes("default.svg")) {
+    return false;
+  }
+  // Hotlinked third-party hosts often fail Meta's image crawler (403/timeout).
+  if (/^https?:\/\//i.test(src) && !/drivoraparts\.com/i.test(src)) {
+    return false;
+  }
+  return true;
+}
+
+/** Prefer JPEG/PNG for Meta (official catalog formats); fall back to any feed-ready image. */
+function pickMetaCatalogImage(product: Product): string | null {
+  const candidates = [
+    product.thumbnail,
+    product.image,
+    ...(product.images ?? []),
+  ].filter((src): src is string => typeof src === "string" && src.length > 0);
+
+  const preferred = candidates.find((src) => {
+    if (!isFeedReadyImage(src)) return false;
+    const lower = src.toLowerCase().split("?")[0];
+    return lower.endsWith(".jpg") || lower.endsWith(".jpeg") || lower.endsWith(".png");
+  });
+  if (preferred) return preferred;
+
+  const any = candidates.find(isFeedReadyImage);
+  return any ?? null;
 }
 
 export function toMetaCatalogFeedRow(product: Product): MetaCatalogFeedRow | null {
-  const image = getProductThumbnail(product);
-  if (!isFeedReadyImage(image)) return null;
+  const image = pickMetaCatalogImage(product);
+  if (!image) return null;
 
   const price = metaPrice(product);
   if (!price) return null;

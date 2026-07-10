@@ -2,3 +2,7 @@ NEXTJS_ENV=development
 NEXT_PUBLIC_META_PIXEL_ID=1275857431290062
 NEXT_PUBLIC_TIKTOK_PIXEL_ID=D934B6JC77UB3EFMUH9G
 NEXT_PUBLIC_CF_IMAGE_OPTIMIZATION=false
+# Meta Conversions API — Events Manager → Settings → Generate access token
+# META_CAPI_ACCESS_TOKEN=
+# Optional: Events Manager → Test Events → test code (e.g. TEST12345)
+# META_CAPI_TEST_EVENT_CODE=

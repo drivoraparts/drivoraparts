@@ -96,6 +96,16 @@ export function getMetaPixelId(): string {
   return META_PIXEL_ID;
 }
 
+/**
+ * Meta Conversions API access token (server-only secret).
+ * Required to send Purchase when payment completes on NOWPayments / Cryptomus.
+ * Create in Events Manager → Settings → Generate access token.
+ */
+export function getMetaCapiAccessToken(): string | null {
+  const token = process.env.META_CAPI_ACCESS_TOKEN?.trim();
+  return token || null;
+}
+
 /** TikTok Pixel ID — Drivora Parts TikTok Ads Manager. */
 export const TIKTOK_PIXEL_ID = "D934B6JC77UB3EFMUH9G";
 

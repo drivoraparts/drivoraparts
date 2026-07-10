@@ -140,11 +140,17 @@ export function trackMetaPurchase(input: {
   items?: MetaCatalogLineItem[];
 }): void {
   const items = input.items?.length ? input.items : readMetaCheckoutItems();
-  fbq("track", "Purchase", {
-    ...catalogMatchParams(items),
-    value: input.value,
-    currency: input.currency ?? "USD",
-    order_id: input.orderId,
-  });
+  // eventID matches server CAPI event_id so Meta dedupes if both fire
+  fbq(
+    "track",
+    "Purchase",
+    {
+      ...catalogMatchParams(items),
+      value: input.value,
+      currency: input.currency ?? "USD",
+      order_id: input.orderId,
+    },
+    { eventID: input.orderId }
+  );
   clearMetaCheckoutItems();
 }
