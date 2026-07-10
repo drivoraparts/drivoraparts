@@ -11,7 +11,7 @@ export default function MetaPixel({ pixelId }: Props) {
 
   return (
     <>
-      <Script id="meta-pixel-base" strategy="lazyOnload">
+      <Script id="meta-pixel-base" strategy="beforeInteractive">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
