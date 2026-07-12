@@ -25,6 +25,7 @@ export const brands: Brand[] = [
   { slug: "precision", name: "Precision", category: "engine" },
   { slug: "hks", name: "HKS", category: "engine" },
   { slug: "turbosmart", name: "Turbosmart", category: "engine" },
+  { slug: "forge-motorsport", name: "Forge Motorsport", category: "engine" },
 
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
@@ -43,6 +44,7 @@ export const brands: Brand[] = [
   { slug: "toyota", name: "Toyota", category: "transmission" },
   { slug: "mercedes-benz", name: "Mercedes-Benz", category: "transmission" },
   { slug: "audi", name: "Audi", category: "transmission" },
+  { slug: "bmw", name: "BMW", category: "transmission" },
   { slug: "universal", name: "Universal", category: "transmission" },
   { slug: "getrag", name: "Getrag", category: "transmission" },
   { slug: "aisin", name: "Aisin", category: "transmission" },
@@ -124,6 +126,7 @@ export const brands: Brand[] = [
   { slug: "haltech", name: "Haltech", category: "electronics" },
   { slug: "hp-tuners", name: "HP Tuners", category: "electronics" },
   { slug: "msd", name: "MSD", category: "electronics" },
+  { slug: "volkswagen", name: "Volkswagen", category: "electronics" },
   { slug: "universal", name: "Universal", category: "electronics" },
 
   // Lighting
@@ -159,6 +162,7 @@ export const brands: Brand[] = [
   { slug: "nissan", name: "Nissan", category: "body-parts" },
   { slug: "subaru", name: "Subaru", category: "body-parts" },
   { slug: "toyota", name: "Toyota", category: "body-parts" },
+  { slug: "volkswagen", name: "Volkswagen", category: "body-parts" },
   { slug: "universal", name: "Universal", category: "body-parts" },
 
   // Interior
@@ -180,6 +184,7 @@ export const brands: Brand[] = [
   { slug: "yakima", name: "Yakima", category: "4x4-accessories" },
   { slug: "front-runner", name: "Front Runner", category: "4x4-accessories" },
   { slug: "rola", name: "Rola", category: "4x4-accessories" },
+  { slug: "volkswagen", name: "Volkswagen", category: "4x4-accessories" },
 
   // Aftermarket
   { slug: "ford", name: "Ford", category: "aftermarket" },
@@ -190,6 +195,7 @@ export const brands: Brand[] = [
   { slug: "toyota", name: "Toyota", category: "aftermarket" },
   { slug: "honda", name: "Honda", category: "aftermarket" },
   { slug: "bmw", name: "BMW", category: "aftermarket" },
+  { slug: "behr", name: "Behr", category: "aftermarket" },
   { slug: "mercedes-benz", name: "Mercedes-Benz", category: "aftermarket" },
   { slug: "audi", name: "Audi", category: "aftermarket" },
   { slug: "chevrolet", name: "Chevrolet", category: "aftermarket" },

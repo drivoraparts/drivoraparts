@@ -27,6 +27,7 @@ import { tireProducts } from "./tire-products";
 import { transmissionProducts } from "./transmission-products";
 import { bumperProducts } from "./bumper-products";
 import { canopyProducts } from "./canopy-products";
+import { classicEuroProducts } from "./classic-euro-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 
@@ -50,6 +51,7 @@ const extensionProducts: Product[] = [
   ...transmissionProducts,
   ...bumperProducts,
   ...canopyProducts,
+  ...classicEuroProducts,
 ];
 
 const productCatalog: Product[] = [
