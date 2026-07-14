@@ -1,5 +1,6 @@
 import { signAdminJwt, verifyAdminJwt } from "./jwt";
 import { authDebug } from "./debug";
+import { getAdminTokenVersion } from "./token-version";
 import {
   ADMIN_SESSION_COOKIE,
   SESSION_MAX_AGE_SECONDS,
@@ -20,7 +21,7 @@ export type AdminSession = {
 export async function createAdminSessionToken(email: string): Promise<string> {
   return signAdminJwt({
     email: email.trim().toLowerCase(),
-    ver: 1,
+    ver: getAdminTokenVersion(),
     expiresInSeconds: SESSION_MAX_AGE_SECONDS,
   });
 }
@@ -37,6 +38,16 @@ export async function verifyAdminSessionToken(
   const payload = await verifyAdminJwt(token);
   if (!payload) {
     authDebug(scope, "JWT verification failed");
+    return null;
+  }
+
+  const currentTokenVersion = getAdminTokenVersion();
+  if (payload.ver !== currentTokenVersion) {
+    authDebug(scope, "JWT token version mismatch", {
+      email: payload.email,
+      tokenVersion: payload.ver,
+      currentTokenVersion,
+    });
     return null;
   }
 
