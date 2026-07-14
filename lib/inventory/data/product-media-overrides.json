@@ -2129,5 +2129,12 @@
       "/product-media/transmission/bmw-1972-automatic-transmission/5.jpg",
       "/product-media/transmission/bmw-1972-automatic-transmission/6.jpg"
     ]
+  },
+  "1342": {
+    "thumbnail": "/product-media/ess-catalog/wilwood-570-brake-fluid-6-pack-12-oz-bottles/1.jpg",
+    "images": [
+      "/product-media/ess-catalog/wilwood-570-brake-fluid-6-pack-12-oz-bottles/1.jpg",
+      "/product-media/brakes/wilwood-570-brake-fluid-6-pack-12oz/1.jpg"
+    ]
   }
 }
