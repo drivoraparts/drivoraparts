@@ -365,7 +365,7 @@
   },
   {
     "id": 1515,
-    "name": "2011-2016 Ford F250 Super Duty 8ft Truck Bed",
+    "name": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 1)",
     "category": "body-parts",
     "brand": "ford",
     "price": 1400,
@@ -390,7 +390,7 @@
   },
   {
     "id": 1516,
-    "name": "2011-2016 Ford F250 Super Duty 8ft Truck Bed",
+    "name": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 2)",
     "category": "body-parts",
     "brand": "ford",
     "price": 1400,
@@ -586,27 +586,6 @@
     "createdAt": 1741999999980,
     "sourceSlug": "99-06-chevy-silverado-truck-bed-for-sale",
     "image": "/product-media/truck-parts/99-06-chevy-silverado-truck-bed-for-sale/1.jpg"
-  },
-  {
-    "id": 1524,
-    "name": "99-06 chevy silverado truck bed for sale",
-    "category": "aftermarket",
-    "brand": "gmc",
-    "price": 1400,
-    "stock": true,
-    "stockQty": 1,
-    "condition": "Used",
-    "warranty": "90-Day Functional Warranty",
-    "location": "USA Warehouse",
-    "thumbnail": "/product-media/truck-parts/99-06-chevy-silverado-truck-bed-for-sale/2.jpg",
-    "images": [
-      "/product-media/truck-parts/99-06-chevy-silverado-truck-bed-for-sale/2.jpg",
-      "/product-media/truck-parts/99-06-chevy-silverado-truck-bed-for-sale/1.jpg"
-    ],
-    "description": "99-06 chevy silverado truck bed for sale\n\n99-06 chevy silverado truck bed for sale\nFitment: Confirm year, bed length, and cab style at checkout.\n\nWhat you see is what you get — exact item, as pictured. Want it upgraded? Contact us — we can refurbish it to your spec.\n\nShipping\nFreight / LTL quotes available on oversized truck beds and shells.",
-    "createdAt": 1741999999961,
-    "sourceSlug": "99-06-chevy-silverado-truck-bed-for-sale-2",
-    "image": "/product-media/truck-parts/99-06-chevy-silverado-truck-bed-for-sale/2.jpg"
   },
   {
     "id": 1525,

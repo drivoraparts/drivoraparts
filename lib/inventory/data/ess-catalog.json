@@ -2133,7 +2133,7 @@
   },
   {
     "id": 326,
-    "name": "Antigravity Group 24R Lithium Car Battery w/Re-Start",
+    "name": "Antigravity Group 24R Lithium Car Battery w/Re-Start (Unit 1)",
     "category": "electronics",
     "brand": "universal",
     "price": 5630,
@@ -2152,7 +2152,7 @@
   },
   {
     "id": 327,
-    "name": "Antigravity Group 24R Lithium Car Battery w/Re-Start",
+    "name": "Antigravity Group 24R Lithium Car Battery w/Re-Start (Unit 2)",
     "category": "electronics",
     "brand": "universal",
     "price": 6220,
@@ -6252,26 +6252,6 @@
     ],
     "description": "DeatschWerks Stainless Steel 10AN 10 Micron Universal Inline Fuel Filter Housing Kit (110mm)\n\nSwap-ready fuel filters for performance automotive applications. Sourced and inspected for DrivoraParts customers who need reliable fitment and fast freight options.\n\nSpecifications\n• Part Type: Fuel Filters\n• Application: Confirm vehicle fitment at checkout\n• Condition: New or low-mile takeout (unit dependent)\n• Supplier Tier: DrivoraParts performance catalog\n\nHighlights\n• Swap and performance oriented\n• Quality-checked before shipment\n• USA warehouse fulfillment\n• Technical fitment support available\n\nWarranty\n24-Month Limited Warranty\n\nShipping\nWorldwide shipping available — freight quotes provided for oversized items.",
     "createdAt": 1741799999441
-  },
-  {
-    "id": 560,
-    "name": "DeatschWerks Stainless Steel 10AN 10 Micron Universal Inline Fuel Filter Housing Kit (110mm)",
-    "category": "engine",
-    "brand": "chevrolet",
-    "price": 92600,
-    "stock": true,
-    "condition": "brand-new",
-    "warranty": "24-Month Limited Warranty",
-    "location": "USA Warehouse",
-    "thumbnail": "/product-media/ess-catalog/deatschwerks-stainless-steel-10an-10-micron-universal-inline-fuel-filter-housing/2.jpg",
-    "images": [
-      "/product-media/ess-catalog/deatschwerks-stainless-steel-10an-10-micron-universal-inline-fuel-filter-housing/2.jpg",
-      "/product-media/ess-catalog/deatschwerks-stainless-steel-10an-10-micron-universal-inline-fuel-filter-housing/1.jpg",
-      "/product-media/ess-catalog/deatschwerks-stainless-steel-10an-10-micron-universal-inline-fuel-filter-housing/3.jpg"
-    ],
-    "description": "DeatschWerks Stainless Steel 10AN 10 Micron Universal Inline Fuel Filter Housing Kit (110mm)\n\nSwap-ready fuel filters for performance automotive applications. Sourced and inspected for DrivoraParts customers who need reliable fitment and fast freight options.\n\nSpecifications\n• Part Type: Fuel Filters\n• Application: Confirm vehicle fitment at checkout\n• Condition: New or low-mile takeout (unit dependent)\n• Supplier Tier: DrivoraParts performance catalog\n\nHighlights\n• Swap and performance oriented\n• Quality-checked before shipment\n• USA warehouse fulfillment\n• Technical fitment support available\n\nWarranty\n24-Month Limited Warranty\n\nShipping\nWorldwide shipping available — freight quotes provided for oversized items.",
-    "createdAt": 1741799999440,
-    "image": "/product-media/ess-catalog/deatschwerks-stainless-steel-10an-10-micron-universal-inline-fuel-filter-housing/2.jpg"
   },
   {
     "id": 561,
@@ -18475,7 +18455,7 @@
   },
   {
     "id": 1235,
-    "name": "UMI Performance 64-72 GM A-Body 1in Solid CrMo Rear Sway Bar",
+    "name": "UMI Performance 64-72 GM A-Body 1in Solid CrMo Rear Sway Bar (Unit 1)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 1080,
@@ -18494,7 +18474,7 @@
   },
   {
     "id": 1236,
-    "name": "UMI Performance 64-72 GM A-Body 1in Solid CrMo Rear Sway Bar",
+    "name": "UMI Performance 64-72 GM A-Body 1in Solid CrMo Rear Sway Bar (Unit 2)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 1080,
@@ -18608,7 +18588,7 @@
   },
   {
     "id": 1242,
-    "name": "UMI Performance 64-72 GM A-Body Solid Front and Rear Sway Bar Kit",
+    "name": "UMI Performance 64-72 GM A-Body Solid Front and Rear Sway Bar Kit (Unit 1)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 2600,
@@ -18628,7 +18608,7 @@
   },
   {
     "id": 1243,
-    "name": "UMI Performance 64-72 GM A-Body Solid Front and Rear Sway Bar Kit",
+    "name": "UMI Performance 64-72 GM A-Body Solid Front and Rear Sway Bar Kit (Unit 2)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 2600,
@@ -18770,7 +18750,7 @@
   },
   {
     "id": 1251,
-    "name": "UMI Performance 65-87 GM Polyurethane Rear End Housing Replacement Bushings",
+    "name": "UMI Performance 65-87 GM Polyurethane Rear End Housing Replacement Bushings (Unit 1)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 390,
@@ -18788,7 +18768,7 @@
   },
   {
     "id": 1252,
-    "name": "UMI Performance 65-87 GM Polyurethane Rear End Housing Replacement Bushings",
+    "name": "UMI Performance 65-87 GM Polyurethane Rear End Housing Replacement Bushings (Unit 2)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 390,
@@ -18843,7 +18823,7 @@
   },
   {
     "id": 1255,
-    "name": "UMI Performance 68-72 GM A-Body LSX Motor Mounts",
+    "name": "UMI Performance 68-72 GM A-Body LSX Motor Mounts (Unit 1)",
     "category": "body-parts",
     "brand": "chevrolet",
     "price": 1200,
@@ -18863,7 +18843,7 @@
   },
   {
     "id": 1256,
-    "name": "UMI Performance 68-72 GM A-Body LSX Motor Mounts",
+    "name": "UMI Performance 68-72 GM A-Body LSX Motor Mounts (Unit 2)",
     "category": "body-parts",
     "brand": "chevrolet",
     "price": 1200,
@@ -19260,7 +19240,7 @@
   },
   {
     "id": 1278,
-    "name": "UMI Performance 82-92 F-Body 78-88 G-Body S10 Tubular Front Lower A-Arms Poly",
+    "name": "UMI Performance 82-92 F-Body 78-88 G-Body S10 Tubular Front Lower A-Arms Poly (Unit 1)",
     "category": "suspension",
     "brand": "universal",
     "price": 4350,
@@ -19279,7 +19259,7 @@
   },
   {
     "id": 1279,
-    "name": "UMI Performance 82-92 F-Body 78-88 G-Body S10 Tubular Front Lower A-Arms Poly",
+    "name": "UMI Performance 82-92 F-Body 78-88 G-Body S10 Tubular Front Lower A-Arms Poly (Unit 2)",
     "category": "suspension",
     "brand": "universal",
     "price": 4350,
@@ -19369,7 +19349,7 @@
   },
   {
     "id": 1284,
-    "name": "UMI Performance 91-96 Impala SS Adjustable Extended Length Lower Control Arms",
+    "name": "UMI Performance 91-96 Impala SS Adjustable Extended Length Lower Control Arms (Unit 1)",
     "category": "suspension",
     "brand": "universal",
     "price": 2130,
@@ -19388,7 +19368,7 @@
   },
   {
     "id": 1285,
-    "name": "UMI Performance 91-96 Impala SS Adjustable Extended Length Lower Control Arms",
+    "name": "UMI Performance 91-96 Impala SS Adjustable Extended Length Lower Control Arms (Unit 2)",
     "category": "suspension",
     "brand": "universal",
     "price": 2130,
@@ -19407,7 +19387,7 @@
   },
   {
     "id": 1286,
-    "name": "UMI Performance 93-02 GM F-Body Front and Rear Sway Bar Kit Tubular",
+    "name": "UMI Performance 93-02 GM F-Body Front and Rear Sway Bar Kit Tubular (Unit 1)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 3520,
@@ -19424,7 +19404,7 @@
   },
   {
     "id": 1287,
-    "name": "UMI Performance 93-02 GM F-Body Front and Rear Sway Bar Kit Tubular",
+    "name": "UMI Performance 93-02 GM F-Body Front and Rear Sway Bar Kit Tubular (Unit 2)",
     "category": "suspension",
     "brand": "chevrolet",
     "price": 3510,
