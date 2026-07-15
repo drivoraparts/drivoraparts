@@ -33,7 +33,6 @@ function installTawkScript(): void {
   script.async = true;
   script.src = TAWK_EMBED_SRC;
   script.charset = "UTF-8";
-  script.setAttribute("crossorigin", "*");
 
   document.body.appendChild(script);
 }
