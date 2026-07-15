@@ -68,28 +68,6 @@
     "createdAt": 1783809920944
   },
   {
-    "id": 2081,
-    "name": "BMW 2000 1967 Chrome Trim Set (3 pcs Front & Rear)",
-    "category": "body-parts",
-    "brand": "bmw",
-    "price": 749,
-    "stock": true,
-    "stockQty": 1,
-    "condition": "used",
-    "warranty": "90-Day Functional Warranty",
-    "location": "EU Warehouse",
-    "fitment": "BMW 2000 (1967) — front and rear chrome trim set (3 pieces)",
-    "thumbnail": "/product-media/bodyparts/bmw-2000-1967-chrome-trims/1.jpg",
-    "images": [
-      "/product-media/bodyparts/bmw-2000-1967-chrome-trims/1.jpg"
-    ],
-    "image": "/product-media/bodyparts/bmw-2000-1967-chrome-trims/1.jpg",
-    "description": "BMW 2000 1967 Chrome Trim Set (3 pcs Front & Rear)\n\nThree-piece chrome trim set for BMW 2000 (1967) — front and rear brightwork. Period parts for Neue Klasse restorations; polish and fitment check recommended.\n\nFitment: BMW 2000 1967\n\nShipping\nWorldwide shipping available — contact for a quote on chrome trim sets.",
-    "sourceUrl": "https://www.2002ad.com/storeworks/category.cfm?id=7",
-    "sourceSlug": "bmw-2000-1967-chrome-trims-front-rear",
-    "createdAt": 1783809920945
-  },
-  {
     "id": 2082,
     "name": "Volkswagen RCD 330 CarPlay & Android Auto Head Unit",
     "category": "electronics",
