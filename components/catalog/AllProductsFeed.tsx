@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { categories } from "@/lib/inventory/categories";
 import { brands } from "@/lib/inventory/brands";
 import AllProductsGridCard, {
@@ -46,8 +47,11 @@ export default function AllProductsFeed() {
   const savedRef = useRef(readSavedState());
   const restorePendingRef = useRef(Boolean(savedRef.current));
   const restoredScrollRef = useRef(false);
+  const searchParams = useSearchParams();
 
-  const [query, setQuery] = useState(savedRef.current?.query ?? "");
+  const [query, setQuery] = useState(
+    savedRef.current?.query ?? searchParams.get("q") ?? ""
+  );
   const [categoryFilter, setCategoryFilter] = useState(
     savedRef.current?.categoryFilter ?? ""
   );

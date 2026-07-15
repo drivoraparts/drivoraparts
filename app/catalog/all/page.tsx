@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AllProductsFeed from "@/components/catalog/AllProductsFeed";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { routes } from "@/lib/inventory";
@@ -42,7 +43,9 @@ export default function AllProductsPage() {
             Browse everything in the marketplace
           </p>
         </header>
-        <AllProductsFeed />
+        <Suspense fallback={<p className="text-sm text-gray-500">Loading products…</p>}>
+          <AllProductsFeed />
+        </Suspense>
       </main>
     </>
   );

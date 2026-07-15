@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -22,14 +23,29 @@ export default function GlobalHeader({
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const itemCount = useCartStore((s) =>
     s.items.reduce((sum, i) => sum + i.quantity, 0)
   );
   const { t } = useTranslation();
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (searchOpen) searchInputRef.current?.focus();
+  }, [searchOpen]);
+
+  const submitSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = searchValue.trim();
+    setSearchOpen(false);
+    router.push(q ? `/catalog/all?q=${encodeURIComponent(q)}` : "/catalog/all");
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -80,6 +96,15 @@ export default function GlobalHeader({
           </nav>
 
           <button
+            onClick={() => setSearchOpen((v) => !v)}
+            className="text-neutral-800 transition hover:scale-110"
+            aria-label="Search products"
+            aria-expanded={searchOpen}
+          >
+            🔍
+          </button>
+
+          <button
             onClick={() => setCartOpen(true)}
             className="relative text-neutral-800 transition hover:scale-110"
             aria-label="Open cart"
@@ -101,6 +126,32 @@ export default function GlobalHeader({
           </button>
         </div>
       </div>
+
+      {searchOpen ? (
+        <div className="border-t border-neutral-300 bg-[#e5e7eb] px-4 py-3 sm:px-6">
+          <form
+            onSubmit={submitSearch}
+            role="search"
+            className="mx-auto flex max-w-2xl items-center gap-2"
+          >
+            <input
+              ref={searchInputRef}
+              type="search"
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              placeholder="Search parts, brands, categories…"
+              aria-label="Search products"
+              className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+            />
+            <button
+              type="submit"
+              className="shrink-0 rounded-lg bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-red-500"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      ) : null}
 
       <div className="mt-2 hidden items-center justify-center gap-3 px-4 text-[11px] text-neutral-500 sm:px-6 md:flex xl:hidden">
         {NAV_LINKS.map((link) => (
