@@ -38,6 +38,7 @@ jobs:
           name: open-next-build
           path: .open-next
           retention-days: 7
+          include-hidden-files: true
 
       - name: Deploy Worker to Cloudflare
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
