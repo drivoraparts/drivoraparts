@@ -29,6 +29,9 @@ export default function CheckoutPage() {
   const [city, setCity] = useState("");
   const [zip, setZip] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  const [pendingPaymentUrl, setPendingPaymentUrl] = useState<string | null>(
+    null
+  );
 
   const cart = useCartStore((s) => s.items);
   const clearCart = useCartStore((s) => s.clearCart);
@@ -144,7 +147,9 @@ export default function CheckoutPage() {
       );
 
       clearCart();
-      window.location.assign(paymentUrl);
+      window.open(paymentUrl, "_blank", "noopener,noreferrer");
+      setPendingPaymentUrl(paymentUrl);
+      setSubmitting(false);
     } catch {
       showToast("Checkout failed");
       setSubmitting(false);
@@ -162,6 +167,54 @@ export default function CheckoutPage() {
             {t("checkout")}
           </h1>
           <p className="text-center text-neutral-500">Loading your cart...</p>
+        </main>
+      </div>
+    );
+  }
+
+  if (pendingPaymentUrl) {
+    return (
+      <div className="w-full overflow-x-hidden">
+        <main className={shellClass}>
+          <h1 className="mb-6 text-center text-2xl font-bold sm:text-3xl">
+            {t("checkout")}
+          </h1>
+          <section className={glassCard}>
+            <h2 className="mb-2 text-xl font-bold">Complete your payment</h2>
+            <p className="mb-4 text-sm text-neutral-600">
+              Your order has been placed. A NOWPayments tab just opened with
+              your payment address — keep it open until your payment is
+              confirmed.
+            </p>
+            <ol className="mb-4 list-decimal space-y-2 pl-5 text-sm text-neutral-600">
+              <li>Copy the payment address from the NOWPayments tab.</li>
+              <li>
+                Don&apos;t have crypto yet? Buy BTC (or any coin) with a
+                debit or credit card via{" "}
+                <a
+                  href="https://changenow.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600 underline hover:text-red-700"
+                >
+                  ChangeNOW
+                </a>{" "}
+                and send it straight to that address.
+              </li>
+              <li>
+                Return to the NOWPayments tab and wait — once your payment is
+                confirmed, you&apos;ll get your order confirmation by email.
+              </li>
+            </ol>
+            <a
+              href={pendingPaymentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500"
+            >
+              Reopen payment page
+            </a>
+          </section>
         </main>
       </div>
     );
@@ -301,6 +354,40 @@ export default function CheckoutPage() {
                   Click Pay Now to place your order and open the secure NOWPayments
                   payment page. Bitcoin and 300+ cryptocurrencies accepted.
                 </p>
+                <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
+                  <p className="mb-2 text-xs font-medium text-neutral-700">
+                    New to crypto? Here&apos;s how to pay with a card in 3 steps:
+                  </p>
+                  <ol className="list-decimal space-y-2 pl-4 text-xs text-neutral-500">
+                    <li>
+                      Click{" "}
+                      <a
+                        href="https://changenow.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-red-600 underline hover:text-red-700"
+                      >
+                        ChangeNOW
+                      </a>{" "}
+                      (opens in a new tab) — a trusted, established exchange
+                      used by crypto buyers worldwide. It&apos;s a separate
+                      platform, so DrivoraParts doesn&apos;t process or verify
+                      that transaction, but it&apos;s a legitimate way to get
+                      crypto fast.
+                    </li>
+                    <li>
+                      Come back to this tab and click Pay Now below to open
+                      your unique NOWPayments address in another new tab. Copy
+                      that address and keep both tabs open.
+                    </li>
+                    <li>
+                      Go back to ChangeNOW, paste the address, and buy BTC (or
+                      any coin) with your debit or credit card. Then check the
+                      NOWPayments tab and wait — once your payment lands,
+                      you&apos;ll get your order confirmation.
+                    </li>
+                  </ol>
+                </div>
                 <img
                   src="https://nowpayments.io/images/embeds/payments-button-black.svg"
                   alt="Crypto payments by NOWPayments"
