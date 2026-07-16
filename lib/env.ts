@@ -88,6 +88,16 @@ export function getTawkWidgetId(): string {
   return optional("NEXT_PUBLIC_TAWK_WIDGET_ID", "1jrs9hdba");
 }
 
+/** Fine-grained PAT scoped to this repo only, "Contents: Read and write". */
+export function getGithubToken(): string | null {
+  return process.env.GITHUB_TOKEN ?? null;
+}
+
+/** "owner/repo", e.g. "drivoraparts/drivoraparts". */
+export function getGithubRepo(): string {
+  return optional("GITHUB_REPO", "drivoraparts/drivoraparts");
+}
+
 /** Meta Pixel — drivoraparts event dataset (Events Manager). */
 export const META_PIXEL_ID = "1275857431290062";
 

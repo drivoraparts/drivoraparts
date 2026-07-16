@@ -30,6 +30,7 @@ import { canopyProducts } from "./canopy-products";
 import { classicEuroProducts } from "./classic-euro-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
+import { applyAdminCatalog } from "./apply-admin-catalog";
 
 /** Category-specific listings — every array here is merged into the master catalog for All Products. */
 const extensionProducts: Product[] = [
@@ -3652,5 +3653,5 @@ Worldwide Shipping Available`,
 
 /** Storefront + checkout prices (affordable public list). */
 export const products = applyPublicPrices(
-  applyProductMediaOverrides(productCatalog)
+  applyAdminCatalog(applyProductMediaOverrides(productCatalog))
 );
