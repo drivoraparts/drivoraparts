@@ -79,7 +79,11 @@ export function productJsonLd(product: Product, price: number): JsonLd {
     "@type": "Product",
     name: product.name,
     image: gallery,
-    description: product.description.split("\n").slice(0, 6).join(" ").trim(),
+    description: (product.description ?? product.name)
+      .split("\n")
+      .slice(0, 6)
+      .join(" ")
+      .trim(),
     sku: String(product.id),
     ...(product.partNumber ? { mpn: product.partNumber } : {}),
     brand: {
