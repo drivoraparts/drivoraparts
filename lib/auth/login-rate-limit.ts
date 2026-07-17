@@ -1,7 +1,4 @@
-import {
-  buildRateLimitKey,
-  checkRateLimit,
-} from "@/lib/security/rate-limit";
+import { buildRateLimitKey, checkRateLimit } from "@/lib/security/rate-limit";
 import { getClientIp } from "@/lib/security/ip";
 import { logActivity } from "@/lib/monitoring/activity";
 
@@ -35,9 +32,11 @@ export async function enforceLoginRateLimit(request: Request): Promise<Response 
 
 export async function recordFailedLoginAttempt(request: Request, email: string) {
   const ip = getClientIp(request);
-  const key = buildRateLimitKey(ip, LOGIN_RATE_PATH);
-  checkRateLimit(key, LOGIN_MAX_ATTEMPTS, LOGIN_WINDOW_MS);
 
+  // Note: does NOT call checkRateLimit again — enforceLoginRateLimit already
+  // consumed one unit of the budget for this request. Calling it a second
+  // time here would double-count every failed attempt against the 5-attempt
+  // limit, locking legitimate users out after ~2-3 typos instead of 5.
   await logActivity("warn", "Failed admin login attempt", {
     ip,
     email,

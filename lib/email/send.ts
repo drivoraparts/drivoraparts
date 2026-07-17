@@ -523,7 +523,7 @@ export async function sendOrderReceivedEmail(input: {
     to: input.to,
     subject: `Order received — ${input.orderId.slice(0, 8).toUpperCase()}`,
     html: layout(`
-      <h1 style="font-size:22px;">Thanks, ${input.customerName}!</h1>
+      <h1 style="font-size:22px;">Thanks, ${escapeHtml(input.customerName)}!</h1>
       <p>We received your order <strong>${input.orderId}</strong>.</p>
       <p>Total: <strong>$${input.total.toFixed(2)}</strong></p>
       <p>We will notify you when payment is confirmed.</p>
@@ -630,7 +630,7 @@ export async function sendOrderShippedEmail(input: {
     subject: `Your order has shipped — ${input.orderId.slice(0, 8).toUpperCase()}`,
     html: layout(`
       <h1 style="font-size:22px;">Order shipped</h1>
-      <p>Hi ${input.customerName}, order <strong>${input.orderId}</strong> is on its way.</p>
+      <p>Hi ${escapeHtml(input.customerName)}, order <strong>${input.orderId}</strong> is on its way.</p>
       <p>Tracking details will follow if applicable.</p>
     `),
   });
@@ -646,7 +646,7 @@ export async function sendOrderDeliveredEmail(input: {
     subject: `Order delivered — ${input.orderId.slice(0, 8).toUpperCase()}`,
     html: layout(`
       <h1 style="font-size:22px;">Delivered</h1>
-      <p>Hi ${input.customerName}, order <strong>${input.orderId}</strong> has been marked delivered.</p>
+      <p>Hi ${escapeHtml(input.customerName)}, order <strong>${input.orderId}</strong> has been marked delivered.</p>
       <p>Thank you for choosing DrivoraParts.</p>
     `),
   });
