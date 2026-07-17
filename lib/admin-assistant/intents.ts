@@ -23,7 +23,16 @@ const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = 
   },
   {
     intent: "orders",
-    patterns: [/recent order/, /pending order/, /order status/, /latest order/],
+    patterns: [
+      /recent order/,
+      /pending order/,
+      /order status/,
+      /latest order/,
+      /how many order/,
+      /order count/,
+      /orders today/,
+      /total orders/,
+    ],
   },
   {
     intent: "products",

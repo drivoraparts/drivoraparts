@@ -79,10 +79,15 @@ function buildGoogleAds(product: Product): GoogleAdVariant[] {
 }
 
 function buildTikTokScript(product: Product, cartAdds: number): string {
+  const rated =
+    product.reviewCount && product.reviewCount > 0 && product.rating
+      ? `${product.rating}★ rated.`
+      : "Buyers approve.";
+
   return [
     `[HOOK] POV: you finally found ${product.name} in stock.`,
     `[PROBLEM] Everyone else is on backorder — you're still searching Facebook groups.`,
-    `[PROOF] ${cartAdds}+ buyers already carted this. ${product.rating}★ rated.`,
+    `[PROOF] ${cartAdds}+ buyers already carted this. ${rated}`,
     `[OFFER] DrivoraParts — ${product.price} · ships from ${product.location}.`,
     `[CTA] Tap link. Build season doesn't wait.`,
   ].join(" ");
