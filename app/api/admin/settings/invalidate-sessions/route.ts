@@ -7,7 +7,7 @@ export async function POST() {
   const { response } = await requireAdminApi();
   if (response) return response;
 
-  invalidateAllAdminSessions();
+  await invalidateAllAdminSessions();
 
   const success = NextResponse.json({
     success: true,
