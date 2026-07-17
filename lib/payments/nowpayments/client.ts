@@ -255,9 +255,10 @@ function sortObjectDeep(value: unknown): unknown {
 
 export function verifyNowPaymentsWebhookSignature(
   rawBody: string,
-  signatureHeader: string | null
+  signatureHeader: string | null,
+  secretOverride?: string | null
 ): boolean {
-  const ipnSecret = getNowPaymentsIpnSecret();
+  const ipnSecret = secretOverride ?? getNowPaymentsIpnSecret();
   if (!ipnSecret || !signatureHeader) return false;
 
   let payload: Record<string, unknown>;

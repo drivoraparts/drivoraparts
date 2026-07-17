@@ -72,6 +72,15 @@ export function getNowPaymentsIpnSecret(): string | null {
   return process.env.NOWPAYMENTS_IPN_SECRET ?? null;
 }
 
+/** Separate NOWPayments account used for the (pending) fiat on-ramp. */
+export function getNowPaymentsFiatApiKey(): string | null {
+  return process.env.NOWPAYMENTS_FIAT_API_KEY ?? null;
+}
+
+export function getNowPaymentsFiatIpnSecret(): string | null {
+  return process.env.NOWPAYMENTS_FIAT_IPN_SECRET ?? null;
+}
+
 export function getNowPaymentsButtonIid(): string {
   return process.env.NOWPAYMENTS_BUTTON_IID ?? "4682099423";
 }
