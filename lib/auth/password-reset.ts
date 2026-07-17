@@ -65,7 +65,7 @@ export async function resetPasswordWithToken(
 
   resetTokens.delete(tokenHash);
   await updateAdminPassword(newPassword);
-  await invalidateAllAdminSessions();
+  invalidateAllAdminSessions();
 
   return true;
 }

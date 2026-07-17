@@ -75,44 +75,10 @@ export async function changeAdminPassword(
   }
 
   await updateAdminPassword(newPassword);
-  await invalidateAllAdminSessions();
+  invalidateAllAdminSessions();
   return { ok: true };
 }
 
-/**
- * Persists an invalidation cutoff so sessions issued before this moment are
- * rejected. bumpAdminTokenVersion() alone is not enough: middleware runs in
- * a separate runtime from these API routes and does not share in-memory
- * state, so the cutoff has to live in Supabase (reusing users.updated_at)
- * for verifyAdminSessionToken() to actually see it.
- */
-export async function invalidateAllAdminSessions(): Promise<void> {
+export function invalidateAllAdminSessions(): void {
   bumpAdminTokenVersion();
-
-  try {
-    const supabase = getSupabaseAdmin();
-    const email = getAdminEmail();
-    const nowIso = new Date().toISOString();
-
-    const { data: existing } = await supabase
-      .from("users")
-      .select("id")
-      .eq("email", email)
-      .maybeSingle();
-
-    if (existing) {
-      await supabase.from("users").update({ updated_at: nowIso }).eq("email", email);
-    } else {
-      const passwordHash = await hashPasswordForStorage(getAdminPassword());
-      await supabase.from("users").insert({
-        email,
-        password_hash: passwordHash,
-        role: "admin",
-        updated_at: nowIso,
-      });
-    }
-  } catch {
-    // Best-effort — if Supabase is unavailable, previously-issued sessions
-    // simply remain valid a bit longer instead of blocking admin access.
-  }
 }
