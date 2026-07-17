@@ -1,5 +1,5 @@
 import { listAnalyticsEvents } from "@/lib/db/analytics";
-import { getInventory } from "@/lib/db/inventory";
+import { getInventoryMap } from "@/lib/db/inventory";
 import { listOrders } from "@/lib/db/orders";
 import { getAllProducts, getProductById } from "@/lib/inventory";
 import type { ProductSignal } from "./types";
@@ -9,14 +9,13 @@ const WINDOW_7D = 7 * MS_DAY;
 const WINDOW_14D = 14 * MS_DAY;
 const WINDOW_30D = 30 * MS_DAY;
 
-async function resolveStock(productId: number): Promise<number> {
+function resolveStock(
+  productId: number,
+  stockMap: Map<number, number>
+): number {
   const product = getProductById(productId);
-  try {
-    const liveStock = await getInventory(productId);
-    if (liveStock > 0) return liveStock;
-  } catch {
-    /* fallback to catalog */
-  }
+  const liveStock = stockMap.get(productId);
+  if (typeof liveStock === "number" && liveStock > 0) return liveStock;
 
   if (typeof product?.stockQty === "number") return product.stockQty;
   if (product?.stock === false) return 0;
@@ -34,9 +33,10 @@ export async function buildProductSignals(): Promise<ProductSignal[]> {
   const prev7Start = now - WINDOW_14D;
   const prev7End = start7;
 
-  const [events, orders] = await Promise.all([
+  const [events, orders, stockMap] = await Promise.all([
     listAnalyticsEvents(5000),
     listOrders(500),
+    getInventoryMap(),
   ]);
 
   const signals = new Map<number, ProductSignal>();
@@ -48,7 +48,7 @@ export async function buildProductSignals(): Promise<ProductSignal[]> {
       category: product.category,
       platform: product.platform,
       price: product.price,
-      currentStock: await resolveStock(product.id),
+      currentStock: resolveStock(product.id, stockMap),
       views7d: 0,
       viewsPrev7d: 0,
       cartAdds7d: 0,
@@ -78,7 +78,7 @@ export async function buildProductSignals(): Promise<ProductSignal[]> {
         category: product.category,
         platform: product.platform,
         price: product.price,
-        currentStock: await resolveStock(productId),
+        currentStock: resolveStock(productId, stockMap),
         views7d: 0,
         viewsPrev7d: 0,
         cartAdds7d: 0,

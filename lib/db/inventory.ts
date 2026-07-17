@@ -44,7 +44,9 @@ export async function seedInventoryIfEmpty(): Promise<void> {
   if ((count ?? 0) > 0) return;
 
   const rows = products.map(catalogStockRow);
-  const { error: insertError } = await supabase.from("inventory").insert(rows);
+  const { error: insertError } = await supabase
+    .from("inventory")
+    .upsert(rows, { onConflict: "product_id", ignoreDuplicates: true });
   if (insertError) throw insertError;
 }
 
@@ -65,7 +67,10 @@ export async function syncMissingInventoryFromCatalog(): Promise<void> {
 
   const { error: insertError } = await supabase
     .from("inventory")
-    .insert(missing.map(catalogStockRow));
+    .upsert(missing.map(catalogStockRow), {
+      onConflict: "product_id",
+      ignoreDuplicates: true,
+    });
 
   if (insertError) throw insertError;
 }
@@ -174,6 +179,29 @@ export async function setInventory(
   );
 
   if (error) throw error;
+}
+
+/** Batch stock lookup — avoids one sync+select round trip per product. */
+export async function getInventoryMap(): Promise<Map<number, number>> {
+  const map = new Map<number, number>();
+
+  try {
+    await syncMissingInventoryFromCatalog();
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("inventory")
+      .select("product_id, quantity")
+      .limit(products.length + 100);
+
+    if (error) throw error;
+    for (const row of data ?? []) {
+      map.set(row.product_id, row.quantity);
+    }
+  } catch (error) {
+    console.error("[getInventoryMap]", error);
+  }
+
+  return map;
 }
 
 export async function listInventory(limit = 500): Promise<InventoryRecord[]> {
