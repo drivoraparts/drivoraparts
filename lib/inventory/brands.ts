@@ -108,6 +108,7 @@ export const brands: Brand[] = [
   { slug: "wilwood-big-brake-kits", name: "Wilwood Big Brake Kits", category: "brakes" },
   { slug: "ebc-rotors-pads", name: "EBC Rotors & Pads", category: "brakes" },
   { slug: "ate-oem-kits", name: "ATE OEM Kits", category: "brakes" },
+  { slug: "ceika", name: "CEIKA", category: "brakes" },
 
   // Suspension
   { slug: "old-man-emu", name: "Old Man Emu (OME / ARB)", category: "suspension" },
@@ -126,6 +127,8 @@ export const brands: Brand[] = [
   { slug: "haltech", name: "Haltech", category: "electronics" },
   { slug: "hp-tuners", name: "HP Tuners", category: "electronics" },
   { slug: "msd", name: "MSD", category: "electronics" },
+  { slug: "carlinkit", name: "CarlinKit", category: "electronics" },
+  { slug: "ottocast", name: "Ottocast", category: "electronics" },
   { slug: "volkswagen", name: "Volkswagen", category: "electronics" },
   { slug: "universal", name: "Universal", category: "electronics" },
 
@@ -219,5 +222,8 @@ export const brands: Brand[] = [
   { slug: "hr", name: "H&R", category: "wheels-tires" },
   { slug: "turner-motorsport", name: "Turner Motorsport", category: "wheels-tires" },
   { slug: "motorsport-hardware", name: "Motorsport Hardware", category: "wheels-tires" },
+  { slug: "volk-racing", name: "Volk Racing", category: "wheels-tires" },
+  { slug: "method-race-wheels", name: "Method Race Wheels", category: "wheels-tires" },
+  { slug: "fuel-off-road", name: "Fuel Off-Road", category: "wheels-tires" },
   { slug: "universal", name: "Universal", category: "wheels-tires" },
 ];

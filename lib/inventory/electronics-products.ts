@@ -1,4 +1,5 @@
 import type { Product } from "./types";
+import { DEFAULT_PRODUCT_IMAGE } from "./media";
 
 function media(files: string[]) {
   return { thumbnail: files[0], images: files };
@@ -600,6 +601,158 @@ Highlights
 • Aftermarket Wheel Compatible
 • Helps Prevent Pressure-Related Failures
 • Easy Enthusiast Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2087,
+    name: "CarlinKit Mini Ultra 3 Wireless CarPlay Adapter",
+    category: "electronics",
+    brand: "carlinkit",
+    price: 79,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    ...media([DEFAULT_PRODUCT_IMAGE]),
+    description: `CarlinKit Mini Ultra 3 Wireless CarPlay Adapter
+
+Compact wireless adapter that converts any factory wired Apple CarPlay system into wireless CarPlay in seconds.
+
+The CarlinKit Mini Ultra 3 plugs into your existing wired CarPlay USB port and pairs automatically on startup — no more cables, no aftermarket head unit required. Includes audio-delay tuning for a smoother wireless experience and works across a broad range of factory infotainment systems already equipped with wired CarPlay.
+
+Specifications
+• Part Type: Wireless CarPlay Adapter (Dongle)
+• Compatibility: Any Factory Wired CarPlay System
+• Connection: Auto-Pairing Wi-Fi + Bluetooth
+• Setup: Plug-and-Play, No Head Unit Replacement
+• Fitment: Universal (Requires Factory Wired CarPlay)
+• Manufacturer: CarlinKit
+
+Highlights
+• Converts Wired CarPlay to Wireless Instantly
+• Compact, Discreet Dongle Design
+• Audio-Delay Tuning Included
+• No Aftermarket Head Unit Needed
+• Broad Factory System Compatibility
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2088,
+    name: "CarlinKit 5.0 Wireless CarPlay & Android Auto Adapter",
+    category: "electronics",
+    brand: "carlinkit",
+    price: 54,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    ...media([DEFAULT_PRODUCT_IMAGE]),
+    description: `CarlinKit 5.0 Wireless CarPlay & Android Auto Adapter
+
+Budget-friendly wireless adapter supporting both CarPlay and Android Auto on factory wired systems from 2015 and newer.
+
+The CarlinKit 5.0 is the accessible entry point into wireless smartphone integration — plug it into your existing wired USB port and it handles the rest. A dependable choice for daily drivers and older performance builds where a full head-unit swap isn't in the plan.
+
+Specifications
+• Part Type: Wireless CarPlay & Android Auto Adapter
+• Compatibility: Factory Wired CarPlay/Android Auto (2015+)
+• Connection: Auto-Pairing Wi-Fi + Bluetooth
+• Setup: Plug-and-Play, No Head Unit Replacement
+• Fitment: Universal (Requires Factory Wired System)
+• Manufacturer: CarlinKit
+
+Highlights
+• Supports Both CarPlay & Android Auto
+• Budget-Friendly Entry Point
+• Simple Plug-In Installation
+• Broad 2015+ Compatibility
+• No Aftermarket Head Unit Needed
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2089,
+    name: "Ottocast Mini Tube T4 Wireless CarPlay Adapter",
+    category: "electronics",
+    brand: "ottocast",
+    price: 129,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    ...media([DEFAULT_PRODUCT_IMAGE]),
+    description: `Ottocast Mini Tube T4 Wireless CarPlay Adapter
+
+Premium machined-aluminum wireless CarPlay adapter built for a cleaner install and stronger, more stable connection.
+
+The Ottocast Mini Tube T4 steps up from budget dongles with an aluminum housing for better heat management and a more consistent wireless link. A strong pairing next to a factory wired CarPlay system for owners who want the premium version of the same convenience.
+
+Specifications
+• Part Type: Wireless CarPlay Adapter (Dongle)
+• Housing: Machined Aluminum
+• Compatibility: Any Factory Wired CarPlay System
+• Setup: Plug-and-Play, No Head Unit Replacement
+• Fitment: Universal (Requires Factory Wired CarPlay)
+• Manufacturer: Ottocast
+
+Highlights
+• Premium Machined-Aluminum Housing
+• Stronger, More Stable Wireless Link
+• Converts Wired CarPlay to Wireless Instantly
+• No Aftermarket Head Unit Needed
+• Upscale Alternative to Budget Dongles
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2090,
+    name: "Ottocast U2 Air Wireless CarPlay Adapter",
+    category: "electronics",
+    brand: "ottocast",
+    price: 89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    ...media([DEFAULT_PRODUCT_IMAGE]),
+    description: `Ottocast U2 Air Wireless CarPlay Adapter
+
+Compact CarPlay-only wireless adapter for a smaller form factor at a lower price point.
+
+The Ottocast U2 Air focuses on doing one thing well — fast, reliable wireless CarPlay from your existing wired port, in one of the smallest housings on the market. A clean, low-profile option for owners who only need CarPlay support without the Android Auto overhead.
+
+Specifications
+• Part Type: Wireless CarPlay Adapter (Dongle)
+• Compatibility: Any Factory Wired CarPlay System
+• Setup: Plug-and-Play, No Head Unit Replacement
+• Form Factor: Compact, Low-Profile Housing
+• Fitment: Universal (Requires Factory Wired CarPlay)
+• Manufacturer: Ottocast
+
+Highlights
+• Smallest-in-Class Housing
+• Fast, Reliable Wireless CarPlay
+• Lower Price Point Than Premium Tier
+• No Aftermarket Head Unit Needed
+• Simple Plug-In Installation
 
 Warranty
 24-Month Limited Warranty

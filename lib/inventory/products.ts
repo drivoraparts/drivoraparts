@@ -28,6 +28,8 @@ import { transmissionProducts } from "./transmission-products";
 import { bumperProducts } from "./bumper-products";
 import { canopyProducts } from "./canopy-products";
 import { classicEuroProducts } from "./classic-euro-products";
+import { jdmEuroBrakeKitsProducts } from "./jdm-euro-brake-kits-products";
+import { performanceWheelsProducts } from "./performance-wheels-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 import { applyAdminCatalog } from "./apply-admin-catalog";
@@ -53,6 +55,8 @@ const extensionProducts: Product[] = [
   ...bumperProducts,
   ...canopyProducts,
   ...classicEuroProducts,
+  ...jdmEuroBrakeKitsProducts,
+  ...performanceWheelsProducts,
 ];
 
 const productCatalog: Product[] = [
