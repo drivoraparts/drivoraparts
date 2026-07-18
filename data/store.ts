@@ -48,9 +48,17 @@ export type Category = {
   products: Product[];
 };
 
-/** Map a brand slug back to its display name (legacy stored value). */
-function brandNameForSlug(slug: string): string {
-  return invBrands.find((b) => b.slug === slug)?.name ?? slug;
+/** Map a brand slug back to its display name (legacy stored value).
+ * Scoped by category — the same slug can be registered under multiple
+ * categories with different display names (e.g. "toyota" is plain "Toyota"
+ * in most categories but "Toyota Genuine" in lighting), and an unscoped
+ * lookup would always resolve to whichever entry happens to appear first
+ * in brands.ts regardless of which category is actually being rendered. */
+function brandNameForSlug(slug: string, categorySlug: string): string {
+  return (
+    invBrands.find((b) => b.slug === slug && b.category === categorySlug)
+      ?.name ?? slug
+  );
 }
 
 /** Reconstruct the legacy store record from the normalized inventory. */
@@ -66,7 +74,7 @@ export const store: Record<string, Category> = Object.fromEntries(
         id: p.id,
         name: p.name,
         category: p.category,
-        brand: brandNameForSlug(p.brand),
+        brand: brandNameForSlug(p.brand, category.slug),
         platform: p.platform,
         price: p.price,
         compareAtPrice: p.compareAtPrice,
@@ -99,9 +107,14 @@ export function getBrand(
   categorySlug: string,
   brandSlug: string
 ): string | undefined {
-  const category = getCategory(categorySlug);
-  if (!category) return undefined;
-  return category.brands.find((brand) => slugify(brand) === brandSlug);
+  // Trust the registered slug field directly rather than re-deriving one
+  // from the display name via slugify() — some entries (e.g. "Toyota
+  // Genuine" in lighting) have a registered slug that intentionally
+  // doesn't match slugify(name), and re-deriving silently breaks the lookup.
+  const brandRecord = invBrands.find(
+    (b) => b.category === categorySlug && b.slug === brandSlug
+  );
+  return brandRecord?.name;
 }
 
 export function getCategoryList(): { slug: string; name: string }[] {

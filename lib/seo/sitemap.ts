@@ -44,9 +44,18 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     entry(toUrl(routes.category(category.slug)), 0.9)
   );
 
-  const brandEntries = brands.map((brand) =>
-    entry(toUrl(routes.brand(brand.category, brand.slug)), 0.85)
-  );
+  // Skip brand-category combos with zero products — those pages 404 (see
+  // app/catalog/[category]/[brand]/page.tsx) and shouldn't be submitted for indexing.
+  // Also skip category "engine" — its brand entries are never reachable via
+  // this route (see the matching note in that page's generateStaticParams);
+  // engine is covered by enginePlatformEntries below instead.
+  const brandEntries = brands
+    .filter(
+      (brand) =>
+        brand.category !== "engine" &&
+        products.some((p) => p.category === brand.category && p.brand === brand.slug)
+    )
+    .map((brand) => entry(toUrl(routes.brand(brand.category, brand.slug)), 0.85));
 
   const enginePlatformEntries = engineTree.flatMap((group) =>
     group.platforms.map((platform) =>

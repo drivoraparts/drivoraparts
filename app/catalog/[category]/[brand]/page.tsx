@@ -19,10 +19,26 @@ import {
 export const dynamic = "force-static";
 
 export function generateStaticParams() {
-  return brands.map((brand) => ({
-    category: brand.category,
-    brand: brand.slug,
-  }));
+  // Skip brand-category combos with zero products — generating them anyway
+  // produces a 200 with only "No products for this brand yet." (a soft 404),
+  // and Search Console flags the resulting pages as soft-404 / near-duplicate.
+  //
+  // Also skip category "engine" entirely — /catalog/engine/[platform] is a
+  // more specific literal-segment route that always wins over this generic
+  // [category]/[brand] route for that path prefix, so engine's brand entries
+  // (bmw, toyota, etc. registered in brands.ts) can never actually be served
+  // here regardless of product data. Engine is browsed by platform instead;
+  // see enginePlatformEntries in lib/seo/sitemap.ts.
+  return brands
+    .filter((brand) => {
+      if (brand.category === "engine") return false;
+      const category = getCategory(brand.category);
+      return category?.products.some((p) => p.brand === brand.name);
+    })
+    .map((brand) => ({
+      category: brand.category,
+      brand: brand.slug,
+    }));
 }
 
 type PageProps = {
@@ -69,6 +85,7 @@ export default async function Page({ params }: PageProps) {
   if (!brand) return notFound();
 
   const products = category.products.filter((p) => p.brand === brand);
+  if (!products.length) return notFound();
   const path = routes.brand(categorySlug, brandSlug);
   const description = getBrandSeoDescription(brand, category.name, products.length);
   const productPaths = products.map((product) => routes.product(product.id));
@@ -94,28 +111,24 @@ export default async function Page({ params }: PageProps) {
           {description}
         </p>
 
-        {products.length === 0 ? (
-          <p className="text-gray-500">No products for this brand yet.</p>
-        ) : (
-          <div className="grid grid-cols-2 gap-4">
-            {products.map((product) => (
-              <CatalogProductCard
-                key={product.id}
-                scrollListKey={scrollListKey}
-                product={{
-                  id: product.id,
-                  name: product.name,
-                  price: product.price,
-                  compareAtPrice: product.compareAtPrice,
-                  thumbnail: product.thumbnail,
-                  images: product.images,
-                  category: categorySlug,
-                  brand: product.brand,
-                }}
-              />
-            ))}
-          </div>
-        )}
+        <div className="grid grid-cols-2 gap-4">
+          {products.map((product) => (
+            <CatalogProductCard
+              key={product.id}
+              scrollListKey={scrollListKey}
+              product={{
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                compareAtPrice: product.compareAtPrice,
+                thumbnail: product.thumbnail,
+                images: product.images,
+                category: categorySlug,
+                brand: product.brand,
+              }}
+            />
+          ))}
+        </div>
       </main>
     </>
   );
