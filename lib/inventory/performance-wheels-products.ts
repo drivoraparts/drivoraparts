@@ -20,7 +20,9 @@ export const performanceWheelsProducts: Product[] = [
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Toyota Supra MK4 / A80 — 18x9.5 +40 Front / 18x10.5 +45 Rear",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
+    ...media([
+      "/product-media/wheels-tires/volk-racing-te37-wheel-set-toyota-supra-mk4-a80/1.jpg",
+    ]),
     description: `Volk Racing TE37 Wheel Set - Toyota Supra MK4 (A80)
 
 The iconic forged Volk Racing TE37, sized specifically for the MK4 Supra — 18x9.5 +40 front and 18x10.5 +45 rear, sold as a matched set of four.
@@ -58,7 +60,10 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Toyota Hilux / Ford Ranger (6x139.7)",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
+    ...media([
+      "/product-media/wheels-tires/method-race-wheels-mr301-the-standard-toyota-hilux-ford-ranger/1.png",
+      "/product-media/wheels-tires/method-race-wheels-mr301-the-standard-toyota-hilux-ford-ranger/2.png",
+    ]),
     description: `Method Race Wheels MR301 The Standard - Toyota Hilux / Ford Ranger
 
 Purpose-built off-road wheel set in the shared 6x139.7 bolt pattern, fitting both the Hilux and Ranger — pairs directly with the suspension lift kits and bull bars already in the catalog.

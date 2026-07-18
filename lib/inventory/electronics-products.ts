@@ -694,7 +694,9 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
+    ...media([
+      "/product-media/electronics/ottocast-mini-tube-t4-wireless-carplay-adapter/1.jpg",
+    ]),
     description: `Ottocast Mini Tube T4 Wireless CarPlay Adapter
 
 Premium machined-aluminum wireless CarPlay adapter built for a cleaner install and stronger, more stable connection.

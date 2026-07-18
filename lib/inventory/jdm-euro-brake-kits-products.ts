@@ -1,5 +1,4 @@
 import type { Product } from "./types";
-import { DEFAULT_PRODUCT_IMAGE } from "./media";
 
 function media(files: string[]) {
   return { thumbnail: files[0], images: files };
@@ -20,7 +19,10 @@ export const jdmEuroBrakeKitsProducts: Product[] = [
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Nissan Skyline R32/R33/R34 (RB26DETT)",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
+    ...media([
+      "/product-media/brakes/wilwood-big-brake-kit-nissan-skyline-r32-r33-r34-rb26dett/1.jpg",
+      "/product-media/brakes/wilwood-big-brake-kit-nissan-skyline-r32-r33-r34-rb26dett/2.jpg",
+    ]),
     description: `Wilwood Big Brake Kit - Nissan Skyline R32/R33/R34 (RB26DETT)
 
 Complete 6-piston front / 4-piston rear Wilwood big-brake kit purpose-built for the R32/R33/R34 Skyline chassis.
@@ -58,7 +60,9 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "BMW E9x 3-Series, incl. E90/E92 M3 (N54/S55)",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
+    ...media([
+      "/product-media/brakes/wilwood-rear-big-brake-kit-bmw-e9x-3-series-n54-s55/1.jpg",
+    ]),
     description: `Wilwood Rear Big Brake Kit - BMW E9x 3-Series (N54/S55)
 
 Rear big-brake upgrade for E9x-chassis BMWs, matched to balance against an upgraded front setup on N54 and S55-powered builds.
@@ -96,7 +100,9 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Toyota Supra MK4 / A80 (2JZ-GTE)",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
+    ...media([
+      "/product-media/brakes/ceika-big-brake-kit-toyota-supra-mk4-2jz-gte/1.jpg",
+    ]),
     description: `CEIKA Big Brake Kit - Toyota Supra MK4 (2JZ-GTE)
 
 6-piston front big-brake kit built specifically for the MK4 Supra chassis, filling a fitment gap Wilwood doesn't cover on this platform.
