@@ -20,6 +20,7 @@ export const performanceWheelsProducts: Product[] = [
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Toyota Supra MK4 / A80 — 18x9.5 +40 Front / 18x10.5 +45 Rear",
+    createdAt: Date.now(),
     ...media([
       "/product-media/wheels-tires/volk-racing-te37-wheel-set-toyota-supra-mk4-a80/1.jpg",
     ]),
@@ -59,6 +60,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     condition: "brand-new",
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
+    createdAt: Date.now(),
     fitment: "Toyota Hilux / Ford Ranger (6x139.7)",
     ...media([
       "/product-media/wheels-tires/method-race-wheels-mr301-the-standard-toyota-hilux-ford-ranger/1.png",
@@ -100,6 +102,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     condition: "brand-new",
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
+    createdAt: Date.now(),
     fitment: "Toyota Hilux / Ford Ranger (6x139.7)",
     ...media([DEFAULT_PRODUCT_IMAGE]),
     description: `Fuel Off-Road D611 Stroke Wheel Set - Toyota Hilux / Ford Ranger

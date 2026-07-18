@@ -24,7 +24,12 @@ export async function GET(request: NextRequest) {
   const brand = params.get("brand") || "";
   const priceFilter = (params.get("price") || "all") as PriceFilterValue;
 
-  let items = getAllProducts();
+  // Newest-first — products without a createdAt (most of the legacy catalog)
+  // sort to the back as if timestamped 0, so any newly added product with a
+  // real createdAt automatically surfaces at the top of All Products.
+  let items = [...getAllProducts()].sort(
+    (a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0)
+  );
 
   if (category) {
     items = items.filter((p) => p.category === category);

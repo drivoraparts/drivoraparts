@@ -618,6 +618,7 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
+    createdAt: Date.now(),
     ...media([DEFAULT_PRODUCT_IMAGE]),
     description: `CarlinKit Mini Ultra 3 Wireless CarPlay Adapter
 
@@ -656,6 +657,7 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
+    createdAt: Date.now(),
     ...media([DEFAULT_PRODUCT_IMAGE]),
     description: `CarlinKit 5.0 Wireless CarPlay & Android Auto Adapter
 
@@ -694,6 +696,7 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
+    createdAt: Date.now(),
     ...media([
       "/product-media/electronics/ottocast-mini-tube-t4-wireless-carplay-adapter/1.jpg",
     ]),
@@ -734,6 +737,7 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
+    createdAt: Date.now(),
     ...media([
       "/product-media/electronics/ottocast-u2air-pro-wireless-carplay-adapter/1.jpg",
     ]),
