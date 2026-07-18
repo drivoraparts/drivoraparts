@@ -724,7 +724,7 @@ Worldwide Shipping Available`,
   },
   {
     id: 2090,
-    name: "Ottocast U2 Air Wireless CarPlay Adapter",
+    name: "Ottocast U2AIR Pro Wireless CarPlay Adapter",
     category: "electronics",
     brand: "ottocast",
     price: 89,
@@ -732,25 +732,27 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
-    description: `Ottocast U2 Air Wireless CarPlay Adapter
+    ...media([
+      "/product-media/electronics/ottocast-u2air-pro-wireless-carplay-adapter/1.jpg",
+    ]),
+    description: `Ottocast U2AIR Pro Wireless CarPlay Adapter
 
-Compact CarPlay-only wireless adapter for a smaller form factor at a lower price point.
+CarPlay-only wireless adapter with automatic reconnect — plug in once, and it remembers your phone and reconnects every time you start the car.
 
-The Ottocast U2 Air focuses on doing one thing well — fast, reliable wireless CarPlay from your existing wired port, in one of the smallest housings on the market. A clean, low-profile option for owners who only need CarPlay support without the Android Auto overhead.
+The Ottocast U2AIR Pro focuses on doing one thing well — fast, reliable wireless CarPlay from your existing wired port, backed by a stable 5GHz Wi-Fi chip for consistent navigation and media playback. A clean, low-profile option for owners who only need CarPlay support without the Android Auto overhead.
 
 Specifications
 • Part Type: Wireless CarPlay Adapter (Dongle)
 • Compatibility: Any Factory Wired CarPlay System
-• Setup: Plug-and-Play, No Head Unit Replacement
-• Form Factor: Compact, Low-Profile Housing
+• Connectivity: Stable 5GHz Wi-Fi
+• Setup: Plug-and-Play, Automatic Reconnect
 • Fitment: Universal (Requires Factory Wired CarPlay)
 • Manufacturer: Ottocast
 
 Highlights
-• Smallest-in-Class Housing
+• Automatic Reconnect on Every Startup
 • Fast, Reliable Wireless CarPlay
-• Lower Price Point Than Premium Tier
+• Stable 5GHz Wi-Fi Connection
 • No Aftermarket Head Unit Needed
 • Simple Plug-In Installation
 

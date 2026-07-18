@@ -87,7 +87,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
   },
   {
     id: 2096,
-    name: "Fuel Off-Road D611 Rampage Wheel Set - Toyota Hilux / Ford Ranger",
+    name: "Fuel Off-Road D611 Stroke Wheel Set - Toyota Hilux / Ford Ranger",
     category: "wheels-tires",
     brand: "fuel-off-road",
     price: 1420,
@@ -97,11 +97,11 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     location: "USA Warehouse",
     fitment: "Toyota Hilux / Ford Ranger (6x139.7)",
     ...media([DEFAULT_PRODUCT_IMAGE]),
-    description: `Fuel Off-Road D611 Rampage Wheel Set - Toyota Hilux / Ford Ranger
+    description: `Fuel Off-Road D611 Stroke Wheel Set - Toyota Hilux / Ford Ranger
 
 Larger-format off-road wheel set for the Hilux/Ranger platform, complementing Method's lineup with wider size options for bigger lifted-truck builds.
 
-The D611 Rampage brings Fuel Off-Road's aggressive styling and wider size range to the same 6x139.7 platform already supported elsewhere in the catalog, giving customers running a heavier lift or larger tire setup a wheel sized to match.
+The D611 Stroke brings Fuel Off-Road's one-piece cast construction and aggressive styling to the same 6x139.7 platform already supported elsewhere in the catalog, giving customers running a heavier lift or larger tire setup a wheel sized to match.
 
 Specifications
 • Part Type: Off-Road Wheel Set (4)
