@@ -1,5 +1,4 @@
 import type { Product } from "./types";
-import { DEFAULT_PRODUCT_IMAGE } from "./media";
 
 function media(files: string[]) {
   return { thumbnail: files[0], images: files };
@@ -104,7 +103,9 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     location: "USA Warehouse",
     createdAt: Date.now(),
     fitment: "Toyota Hilux / Ford Ranger (6x139.7)",
-    ...media([DEFAULT_PRODUCT_IMAGE]),
+    ...media([
+      "/product-media/wheels-tires/fuel-off-road-d611-stroke-wheel-set-toyota-hilux-ford-ranger/1.jpg",
+    ]),
     description: `Fuel Off-Road D611 Stroke Wheel Set - Toyota Hilux / Ford Ranger
 
 Larger-format off-road wheel set for the Hilux/Ranger platform, complementing Method's lineup with wider size options for bigger lifted-truck builds.
