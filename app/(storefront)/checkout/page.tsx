@@ -212,7 +212,7 @@ export default function CheckoutPage() {
               rel="noopener noreferrer"
               className="inline-block rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500"
             >
-              Reopen payment page
+              Open payment page
             </a>
           </section>
         </main>
