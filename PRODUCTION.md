@@ -15,7 +15,7 @@ Build status: **`npm run build` passes**.
 | Supabase PostgreSQL | Durable orders, customers, payments, inventory, analytics, support, audit logs |
 | Service role server client only | All DB writes from Edge API routes; RLS enabled with no anon policies |
 | HMAC signed cookies for admin | Works on Cloudflare Edge without bcrypt/session DB; env bootstrap + optional `users` table |
-| Payment provider interface | Cryptomus adapter pluggable; manual fallback when Cryptomus env missing |
+| Payment provider interface | NOWPayments adapter; manual fallback when NOWPayments env missing |
 | Resend HTTP API for email | No extra npm dependency; graceful skip if `RESEND_API_KEY` unset |
 | Catalog remains TypeScript files | Product source of truth unchanged; inventory quantities in DB |
 | `force-dynamic` admin pages | Admin reads live DB; avoids stale static generation |
@@ -49,7 +49,7 @@ Run `supabase/migrations/001_initial_schema.sql` in Supabase SQL Editor.
 - **Middleware:** protects all `/admin/*` except login
 - **Session:** httpOnly cookie `drivora_admin_session`, HMAC signed with `AUTH_SECRET`
 - **Protected APIs:** `/api/orders`, `/api/analytics` GET, `/api/stock` POST, `/api/live-users` GET, `/api/admin/*`
-- **Secrets:** moved to env vars (Tawk property ID, Cryptomus, Supabase, admin credentials)
+- **Secrets:** moved to env vars (Tawk property ID, NOWPayments, Supabase, admin credentials)
 - **No hardcoded admin passwords**
 
 ---
@@ -59,9 +59,9 @@ Run `supabase/migrations/001_initial_schema.sql` in Supabase SQL Editor.
 1. Client cart (Zustand/localStorage) → POST `/api/checkout`
 2. Stock validated + decremented in Supabase
 3. Customer + order + order_items persisted
-4. Payment session created via provider abstraction (`cryptomus` or `manual`)
+4. Payment session created via provider abstraction (`nowpayments` or `manual`)
 5. Order received email sent (if Resend configured)
-6. Redirect to Cryptomus URL or `/success?orderId=`
+6. Redirect to NOWPayments URL or `/success?orderId=`
 
 ---
 
@@ -69,11 +69,13 @@ Run `supabase/migrations/001_initial_schema.sql` in Supabase SQL Editor.
 
 | Provider | ID | When used |
 |----------|-----|-----------|
-| Cryptomus | `cryptomus` | When `CRYPTOMUS_*` env vars set |
-| Manual pending | `manual` | Fallback when Cryptomus not configured |
+| NOWPayments | `nowpayments` | Default — always enabled |
+| Manual pending | `manual` | Fallback / explicit opt-in |
 
-Webhook: `POST /api/payments/webhook/cryptomus`  
-Legacy alias: `/api/payments/cryptomus/webhook` forwards to new route
+Webhook: `POST /api/payments/webhook/nowpayments`
+Reconciliation safety net: `POST /api/payments/reconcile` (cron, `CRON_SECRET`-authorized)
+
+Cryptomus was removed as a payment provider — no longer integrated anywhere in this codebase.
 
 ---
 
@@ -82,7 +84,7 @@ Legacy alias: `/api/payments/cryptomus/webhook` forwards to new route
 | Event | Trigger |
 |-------|---------|
 | Order received | After checkout |
-| Payment received | Cryptomus webhook / order marked paid |
+| Payment received | NOWPayments webhook / order marked paid |
 | Order shipped | Admin status → `shipped` |
 | Order delivered | Admin status → `delivered` |
 
@@ -244,8 +246,8 @@ ADMIN_PASSWORD
 NEXT_PUBLIC_SITE_URL
 RESEND_API_KEY
 EMAIL_FROM
-CRYPTOMUS_MERCHANT_ID          (optional until live crypto)
-CRYPTOMUS_PAYMENT_KEY
+NOWPAYMENTS_API_KEY
+NOWPAYMENTS_IPN_SECRET
 NEXT_PUBLIC_TAWK_PROPERTY_ID
 ```
 

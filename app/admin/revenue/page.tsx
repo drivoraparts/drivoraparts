@@ -70,9 +70,9 @@ export default async function AdminRevenuePage() {
 
           label="NOWPayments Revenue"
 
-          value={`$${paymentStats.cryptomusPaidAmount.toFixed(2)}`}
+          value={`$${paymentStats.nowpaymentsPaidAmount.toFixed(2)}`}
 
-          hint={`${paymentStats.cryptomusPaid} paid crypto payments`}
+          hint={`${paymentStats.nowpaymentsPaid} paid crypto payments`}
 
         />
 

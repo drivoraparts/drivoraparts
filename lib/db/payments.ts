@@ -134,8 +134,8 @@ export async function getPaymentStats() {
       refunded: 0,
       paidAmount: 0,
       pendingAmount: 0,
-      cryptomusPaid: 0,
-      cryptomusPaidAmount: 0,
+      nowpaymentsPaid: 0,
+      nowpaymentsPaidAmount: 0,
       nowpaymentsPending: 0,
       nowpaymentsPendingAmount: 0,
       manualPaid: 0,
@@ -157,8 +157,8 @@ export async function getPaymentStats() {
       if (payment.status === "paid") {
         stats.paidAmount += amount;
         if (payment.provider === "nowpayments") {
-          stats.cryptomusPaid += 1;
-          stats.cryptomusPaidAmount += amount;
+          stats.nowpaymentsPaid += 1;
+          stats.nowpaymentsPaidAmount += amount;
         } else if (payment.provider === "manual") {
           stats.manualPaid += 1;
           stats.manualPaidAmount += amount;

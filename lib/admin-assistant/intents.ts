@@ -19,7 +19,7 @@ const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = 
   },
   {
     intent: "payments",
-    patterns: [/cryptomus/, /payment/, /crypto/, /bitcoin/, /invoice/],
+    patterns: [/payment/, /crypto/, /bitcoin/, /invoice/],
   },
   {
     intent: "orders",

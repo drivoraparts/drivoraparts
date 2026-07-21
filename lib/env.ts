@@ -56,14 +56,6 @@ export function getEmailFrom(): string {
   return optional("EMAIL_FROM", "orders@drivoraparts.com");
 }
 
-export function getCryptomusMerchantId(): string | null {
-  return process.env.CRYPTOMUS_MERCHANT_ID ?? null;
-}
-
-export function getCryptomusPaymentKey(): string | null {
-  return process.env.CRYPTOMUS_PAYMENT_KEY ?? null;
-}
-
 export function getNowPaymentsApiKey(): string | null {
   return process.env.NOWPAYMENTS_API_KEY ?? null;
 }
@@ -117,7 +109,7 @@ export function getMetaPixelId(): string {
 
 /**
  * Meta Conversions API access token (server-only secret).
- * Required to send Purchase when payment completes on NOWPayments / Cryptomus.
+ * Required to send Purchase when payment completes on NOWPayments.
  * Create in Events Manager → Settings → Generate access token.
  */
 export function getMetaCapiAccessToken(): string | null {

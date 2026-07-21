@@ -47,7 +47,7 @@ Features:
 - **Server-side pricing:** `lib/checkout/validate-items.ts` ignores client prices; locks from catalog
 - **Order state machine:** `lib/orders/state-machine.ts`
   - `pending → processing → paid → failed → refunded` (+ shipped/delivered/cancelled)
-- **Webhook verification:** `lib/payments/webhook-verify.ts` + Cryptomus HMAC
+- **Webhook verification:** `lib/payments/webhook-verify.ts` + NOWPayments HMAC
 - **DB migration:** run `supabase/migrations/002_order_failed_status.sql`
 
 ## Monitoring

@@ -41,7 +41,7 @@ function normalizePhone(phone: string): string {
 
 /**
  * Send Purchase to Meta Conversions API when payment is confirmed server-side.
- * Required for NOWPayments / Cryptomus redirects — the browser pixel never runs
+ * Required for NOWPayments redirects — the browser pixel never runs
  * on the external payment page.
  *
  * Uses event_id = orderId so browser Purchase (if the buyer returns to /success)

@@ -238,7 +238,7 @@ export async function generateAdminAssistantReply(
       );
       return {
         reply: nowpaymentsApiConfigured
-          ? `NOWPayments active. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending. Crypto revenue: ${formatMoney(revenue.payments.cryptomusPaidAmount)}.`
+          ? `NOWPayments active. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending. Crypto revenue: ${formatMoney(revenue.payments.nowpaymentsPaidAmount)}.`
           : `NOWPayments checkout uses your hosted payment link. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending.`,
         suggestions,
         intent,

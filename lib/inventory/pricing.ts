@@ -33,7 +33,17 @@ export const CHECKOUT_TEST_PRODUCT_ID = 9999;
 
 export function resolvePublicPrice(product: Pick<Product, "id" | "price">): number {
   if (product.id === CHECKOUT_TEST_PRODUCT_ID) return product.price;
+  if (product.price <= 0) return 0;
+
   const discounted = product.price * PUBLIC_PRICE_RATIO;
+
+  // Rounding to the nearest $10 collapses anything under ~$6.33 raw to $0 —
+  // round to the nearest cent below that point so cheap parts (hardware,
+  // small accessories) never become free at checkout.
+  if (discounted < 10) {
+    return Math.max(0.01, Math.round(discounted * 100) / 100);
+  }
+
   return Math.round(discounted / 10) * 10;
 }
 
