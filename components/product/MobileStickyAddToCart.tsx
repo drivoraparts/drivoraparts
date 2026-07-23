@@ -4,13 +4,11 @@ import { useEffect, useState, type RefObject } from "react";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
-import ProductPrice from "@/components/currency/ProductPrice";
+import BuyNowButton from "@/app/components/BuyNowButton";
 
 type MobileStickyAddToCartProps = {
   ctaRef: RefObject<HTMLElement | null>;
   product: AddToCartProduct;
-  price: number;
-  compareAtPrice?: number;
   quantity: number;
   inStock: boolean;
 };
@@ -18,8 +16,6 @@ type MobileStickyAddToCartProps = {
 export default function MobileStickyAddToCart({
   ctaRef,
   product,
-  price,
-  compareAtPrice,
   quantity,
   inStock,
 }: MobileStickyAddToCartProps) {
@@ -63,18 +59,15 @@ export default function MobileStickyAddToCart({
   return (
     <div className="fixed inset-x-0 bottom-0 z-[9998] border-t border-neutral-300 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] backdrop-blur-md md:hidden">
       <div className="mx-auto flex max-w-[1200px] items-center gap-3">
-        <div className="min-w-0 flex-1">
-          <ProductPrice
-            price={price}
-            compareAtPrice={compareAtPrice}
-            size="sm"
-            className="[&_span:last-child]:text-lg [&_span:last-child]:font-black"
-          />
-        </div>
         <AddToCartButton
           product={product}
           quantity={quantity}
-          className="!w-auto !min-w-[148px] !rounded-none !border-2 !border-red-600 !bg-white !px-4 !py-3 !text-xs !font-black !uppercase !tracking-[0.1em] !text-neutral-900 hover:!bg-red-50"
+          className="!flex-1 !rounded-none !border-2 !border-red-600 !bg-white !px-4 !py-3 !text-xs !font-black !uppercase !tracking-[0.1em] !text-neutral-900 hover:!bg-red-50"
+        />
+        <BuyNowButton
+          product={product}
+          quantity={quantity}
+          className="!mt-0 !flex-1 !rounded-none !border !border-neutral-900 !bg-neutral-900 !px-4 !py-3 !text-xs !font-bold !uppercase !tracking-[0.1em] !text-white hover:!bg-neutral-800"
         />
       </div>
     </div>

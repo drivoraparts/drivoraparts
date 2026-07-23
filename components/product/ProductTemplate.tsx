@@ -8,7 +8,6 @@ import type { CatalogProductCardData } from "@/components/catalog/CatalogProduct
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
-import BuyNowButton from "@/app/components/BuyNowButton";
 import ImageCarousel from "./ImageCarousel";
 import ProTrustBadges from "./ProTrustBadges";
 import ConditionBadge from "./ConditionBadge";
@@ -231,11 +230,6 @@ export default function ProductTemplate({
                 quantity={quantity}
                 className="!rounded-none !border-2 !border-red-600 !bg-white !py-3.5 !text-sm !font-black !uppercase !tracking-[0.12em] !text-neutral-900 hover:!bg-red-50"
               />
-              <BuyNowButton
-                product={cartProduct}
-                quantity={quantity}
-                className="!mt-0 !rounded-none !border !border-neutral-900 !bg-neutral-900 !py-3.5 !text-sm !font-bold !uppercase !tracking-[0.1em] !text-white hover:!bg-neutral-800"
-              />
             </div>
           </div>
 
@@ -282,8 +276,6 @@ export default function ProductTemplate({
       <MobileStickyAddToCart
         ctaRef={ctaRef}
         product={cartProduct}
-        price={product.price}
-        compareAtPrice={product.compareAtPrice}
         quantity={quantity}
         inStock={inStock}
       />
