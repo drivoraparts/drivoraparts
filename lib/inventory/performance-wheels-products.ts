@@ -145,8 +145,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     partNumber: "36118073977 (Front) / 36118073979 (Rear) — Style 706M",
-    fitment:
-      "BMW M5 (F90) — 20x9.5J Front / 20x10.5J Rear, 5x112, 66.6mm Center Bore. Verify compatibility using your VIN before purchase.",
+    fitment: "BMW M5 (F90) — 20x9.5 Front / 20x10.5 Rear, 5x112",
     createdAt: Date.now(),
     ...media([
       `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/1.jpg`,
