@@ -132,4 +132,61 @@ Warranty
 Shipping
 Worldwide Shipping Available — freight quotes provided for oversized items.`,
   },
+  {
+    id: 2097,
+    name: `OEM 20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)`,
+    category: "wheels-tires",
+    brand: "bmw",
+    price: 2995,
+    compareAtPrice: 3995,
+    stock: true,
+    stockQty: 8,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    partNumber: "36118073977 (Front) / 36118073979 (Rear) — Style 706M",
+    fitment:
+      "BMW M5 (F90) — 20x9.5J Front / 20x10.5J Rear, 5x112, 66.6mm Center Bore. Verify compatibility using your VIN before purchase.",
+    createdAt: Date.now(),
+    ...media([
+      `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/1.jpg`,
+      `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/2.jpg`,
+      `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/3.png`,
+      `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/4.jpg`,
+    ]),
+    sourceUrl:
+      "https://www.getbmwparts.com/p-m-double-spoke-style-706m-20-rim-set-black-36118073979kit",
+    description: `OEM 20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)
+
+100% genuine BMW OEM wheel set for the BMW M5 (F90) — the factory M Double Spoke Style 706M, finished in a deep Gloss Black for a clean, factory-correct, performance-luxury look. Every wheel is brand new, built to BMW's exact factory specifications, and sourced through an authorized genuine-parts channel for true OEM fitment, load rating, and finish quality.
+
+As a direct-fit factory replacement, this set bolts straight onto your M5 (F90) with no spacers, adapters, or modification required — the same wheel BMW speced for this chassis from the factory, not a lookalike reproduction. That means correct offset, correct load rating, and the factory ride and handling character the M5 was tuned around.
+
+Specifications
+• Front Wheels: 20 x 9.5J
+• Rear Wheels: 20 x 10.5J
+• Bolt Pattern: 5 x 112
+• Center Bore: 66.6mm
+• Direct OEM Fitment — Genuine BMW Part
+• High-Strength OEM Alloy Construction
+• Finish: Gloss Black
+
+Vehicle Fitment
+• BMW M5 (F90)
+• Verify compatibility using your VIN before purchase.
+
+Highlights
+• 100% Genuine BMW OEM — Not Aftermarket or Reproduction
+• Factory Style 706M M Double Spoke Design
+• Premium Gloss Black Finish
+• Direct Bolt-On Replacement, No Modification Required
+• Built to BMW Factory Performance & Durability Standards
+• Professional Installation Recommended
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available — freight quotes provided for oversized items.`,
+  },
 ];
