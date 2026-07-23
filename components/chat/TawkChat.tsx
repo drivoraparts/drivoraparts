@@ -12,11 +12,21 @@ declare global {
       onLoaded?: () => void;
       showWidget?: () => void;
       hideWidget?: () => void;
+      customStyle?: {
+        visibility?: {
+          desktop?: { position?: string; xOffset?: number; yOffset?: number };
+          mobile?: { position?: string; xOffset?: number; yOffset?: number };
+        };
+      };
       [key: string]: unknown;
     };
     Tawk_LoadStart?: Date;
   }
 }
+
+// Clears the fixed sticky purchase bar on product pages (69px tall on both
+// breakpoints) so the launcher bubble never sits underneath its buttons.
+const TAWK_Y_OFFSET = 90;
 
 function installTawkScript(): void {
   if (typeof document === "undefined") return;
@@ -24,6 +34,12 @@ function installTawkScript(): void {
 
   window.Tawk_API = window.Tawk_API || {};
   window.Tawk_LoadStart = new Date();
+  window.Tawk_API.customStyle = {
+    visibility: {
+      desktop: { position: "br", xOffset: 20, yOffset: TAWK_Y_OFFSET },
+      mobile: { position: "br", xOffset: 10, yOffset: TAWK_Y_OFFSET },
+    },
+  };
   window.Tawk_API.onLoaded = function () {
     window.Tawk_API?.showWidget?.();
   };
