@@ -17,7 +17,7 @@ import PowerLevelSection, {
 } from "./PowerLevelSection";
 import ProductDetailsSections from "./ProductDetailsSections";
 import ProductBreadcrumbs from "./ProductBreadcrumbs";
-import MobileStickyAddToCart from "./MobileStickyAddToCart";
+import StickyPurchaseBar from "./StickyPurchaseBar";
 import ProductDiscoverySections from "./ProductDiscoverySections";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
@@ -30,6 +30,8 @@ import {
   formatCategoryLabel,
   formatPlatformLabel,
 } from "./styles";
+
+const MAX_QUANTITY = 10;
 
 function MetaRow({ label, value }: { label: string; value: string }) {
   return (
@@ -136,7 +138,7 @@ export default function ProductTemplate({
   }, [catalogMeta]);
 
   return (
-    <div className="storefront-page min-h-screen overflow-x-clip bg-[var(--background)] pb-24 md:pb-0">
+    <div className="storefront-page min-h-screen overflow-x-clip bg-[var(--background)] pb-24">
       <ProductBreadcrumbs
         categoryName={categoryName}
         categorySlug={categorySlug}
@@ -204,12 +206,12 @@ export default function ProductTemplate({
                 id="product-qty"
                 type="number"
                 min={1}
-                max={99}
+                max={MAX_QUANTITY}
                 value={quantity}
                 onChange={(e) => {
                   const val = parseInt(e.target.value, 10);
                   if (!Number.isNaN(val)) {
-                    setQuantity(Math.min(99, Math.max(1, val)));
+                    setQuantity(Math.min(MAX_QUANTITY, Math.max(1, val)));
                   }
                 }}
                 className="h-10 w-16 border border-neutral-300 bg-white text-center text-base text-neutral-900 outline-none focus:border-neutral-800"
@@ -217,11 +219,19 @@ export default function ProductTemplate({
               <button
                 type="button"
                 aria-label="Increase quantity"
-                onClick={() => setQuantity((q) => Math.min(99, q + 1))}
+                onClick={() => setQuantity((q) => Math.min(MAX_QUANTITY, q + 1))}
                 className="flex h-10 w-10 items-center justify-center border border-neutral-300 bg-white text-lg text-neutral-800"
               >
                 +
               </button>
+            </div>
+
+            <div className="mt-4 border-b border-neutral-200 pb-4">
+              <ProductPrice
+                price={product.price}
+                compareAtPrice={product.compareAtPrice}
+                size="md"
+              />
             </div>
 
             <div className="mt-4 space-y-3">
@@ -248,10 +258,6 @@ export default function ProductTemplate({
               value={inStock ? "In Stock" : "Out of Stock"}
             />
             <MetaRow label="Brand" value={product.brand} />
-            <MetaRow label="Category" value={categoryLabel} />
-            {platformLabel ? (
-              <MetaRow label="Platform" value={platformLabel} />
-            ) : null}
           </div>
 
           <ProductDetailsSections
@@ -273,7 +279,7 @@ export default function ProductTemplate({
         relatedProducts={relatedProducts}
       />
 
-      <MobileStickyAddToCart
+      <StickyPurchaseBar
         ctaRef={ctaRef}
         product={cartProduct}
         quantity={quantity}
