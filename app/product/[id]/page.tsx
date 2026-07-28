@@ -20,6 +20,7 @@ import {
   buildProductMetaKeywords,
   buildProductSeoDescription,
   buildProductSeoTitle,
+  hasGenericPlaceholderDescription,
   productJsonLd,
 } from "@/lib/seo";
 
@@ -52,6 +53,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     keywords: buildProductMetaKeywords(seoInput),
     path: routes.product(product.id),
     image: previewImage,
+    noIndex: hasGenericPlaceholderDescription(product.description),
   });
 }
 

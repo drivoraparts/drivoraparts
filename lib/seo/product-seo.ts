@@ -50,6 +50,24 @@ export function buildProductSeoDescription(input: ProductSeoInput): string {
   return truncateSeoDescription(composed);
 }
 
+/**
+ * Bulk-imported catalog rows (ess-catalog, edmunds-truck-parts) fall back to a
+ * generic template when no real spec/fitment copy exists ("Sourced and
+ * inspected for DrivoraParts..." / "Confirm ... at checkout"). Google flags
+ * these as near-duplicate thin content and won't index them even once the
+ * canonical tag is correct, so they're kept out of the index until they get
+ * real descriptions.
+ */
+const GENERIC_DESCRIPTION_MARKERS = [
+  /sourced and inspected for drivoraparts customers who need reliable fitment/i,
+  /confirm[^.\n]*at checkout/i,
+];
+
+export function hasGenericPlaceholderDescription(description?: string): boolean {
+  if (!description) return false;
+  return GENERIC_DESCRIPTION_MARKERS.some((marker) => marker.test(description));
+}
+
 export function buildProductMetaKeywords(input: ProductSeoInput): string[] {
   const brand = getBrandBySlug(input.brand ?? "");
   return buildProductKeywords({

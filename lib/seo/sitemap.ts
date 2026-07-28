@@ -7,6 +7,7 @@ import {
   routes,
 } from "@/lib/inventory";
 import { POLICY_PATHS } from "./constants";
+import { hasGenericPlaceholderDescription } from "./product-seo";
 
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
@@ -63,14 +64,20 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     )
   );
 
-  const productEntries = products.map((product) =>
-    entry(
-      toUrl(routes.product(product.id)),
-      0.8,
-      "weekly",
-      product.createdAt ? new Date(product.createdAt) : undefined
-    )
-  );
+  // Bulk-imported listings still on the generic placeholder description are
+  // noindexed on the page itself (see hasGenericPlaceholderDescription) — keep
+  // them out of the sitemap too so we're not asking Google to crawl and index
+  // pages the site marks noindex.
+  const productEntries = products
+    .filter((product) => !hasGenericPlaceholderDescription(product.description))
+    .map((product) =>
+      entry(
+        toUrl(routes.product(product.id)),
+        0.8,
+        "weekly",
+        product.createdAt ? new Date(product.createdAt) : undefined
+      )
+    );
 
   const policyEntries = POLICY_PATHS.map((path) =>
     entry(toUrl(path), 0.3, "monthly")

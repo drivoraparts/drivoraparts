@@ -20,6 +20,7 @@ export {
   buildProductSeoTitle,
   buildProductSeoDescription,
   buildProductMetaKeywords,
+  hasGenericPlaceholderDescription,
 } from "./product-seo";
 export { buildPolicyMetadata } from "./policy-metadata";
 export { SITE_KEYWORDS, categoryKeywordPhrase } from "./keywords";
