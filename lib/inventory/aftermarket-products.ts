@@ -361,4 +361,26 @@ export const aftermarketProducts: Product[] = [
       "Ford Everest Tremor"
     ),
   },
+  {
+    id: 2098,
+    name: "Jaguar XF X260 Bonnet (Corris Grey)",
+    category: "aftermarket",
+    brand: "jaguar",
+    price: 289,
+    stock: true,
+    stockQty: 1,
+    condition: "Used",
+    location: "UK Import — Ships Worldwide",
+    fitment: "2015–2020 Jaguar XF X260 (incl. 2.0L R-Sport Diesel, 2016 Reg)",
+    // +1 day: guarantees top-of-catalog placement over every other Date.now()
+    // listing regardless of module import order (their calls land within the
+    // same process-startup millisecond window, not calendar days apart).
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    ...media("jaguar-xf-x260-bonnet-grey", ["1.jpg"]),
+    description: aftermarketDescription(
+      "Jaguar XF X260 Bonnet (Corris Grey)",
+      "Genuine OEM take-off bonnet (hood) for the Jaguar XF X260, finished in Corris Grey — factory colour match. Direct fit for XF X260 saloons including the 2.0L R-Sport Diesel, 2016 registration. Straightforward swap for a damaged or mismatched bonnet.",
+      "2015–2020 Jaguar XF X260 (2.0L R-Sport Diesel, 2016 Reg, and other X260 variants — confirm trim at checkout)"
+    ),
+  },
 ];

@@ -203,6 +203,7 @@ export const brands: Brand[] = [
   { slug: "audi", name: "Audi", category: "aftermarket" },
   { slug: "chevrolet", name: "Chevrolet", category: "aftermarket" },
   { slug: "nissan", name: "Nissan", category: "aftermarket" },
+  { slug: "jaguar", name: "Jaguar", category: "aftermarket" },
   { slug: "lexus", name: "Lexus", category: "aftermarket" },
   { slug: "jeep", name: "Jeep", category: "aftermarket" },
 
