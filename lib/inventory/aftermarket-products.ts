@@ -383,4 +383,43 @@ export const aftermarketProducts: Product[] = [
       "2015–2020 Jaguar XF X260 (2.0L R-Sport Diesel, 2016 Reg, and other X260 variants — confirm trim at checkout)"
     ),
   },
+  {
+    id: 2099,
+    name: "1947 Chrysler External Sun Visor (Fulton Style)",
+    category: "aftermarket",
+    brand: "chrysler",
+    price: 490,
+    stock: true,
+    stockQty: 1,
+    condition: "Used",
+    location: "USA Warehouse",
+    fitment: "1946–1948 Chrysler / Plymouth / Dodge / DeSoto (Split Windshield Models)",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    ...media("1947-chrysler-external-sun-visor", ["1.jpg"]),
+    description: aftermarketDescription(
+      "1947 Chrysler External Sun Visor (Fulton Style)",
+      "Vintage Fulton-style exterior sun visor for split-windshield Chrysler Corporation cars — adjustable steel mount fits the outside of the windshield frame for period-correct 1940s styling and glare reduction.",
+      "1946–1948 Chrysler / Plymouth / Dodge / DeSoto (Split Windshield Models) — confirm exact windshield width at checkout"
+    ),
+  },
+  {
+    id: 2100,
+    name: "Hino FD500 Complete Gearbox (Casting 33111-2271)",
+    category: "aftermarket",
+    brand: "hino",
+    price: 2450,
+    stock: true,
+    stockQty: 1,
+    condition: "Refurbished",
+    location: "Import — Ships Worldwide",
+    partNumber: "33111-2271",
+    fitment: "2000 Hino FD500 (Casting No. 33111-2271 — confirm casting number matches your unit before ordering)",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    ...media("hino-fd500-gearbox-33111-2271", ["1.jpg"]),
+    description: aftermarketDescription(
+      "Hino FD500 Complete Gearbox (Casting 33111-2271)",
+      "Rebuilt complete gearbox for the 2000 Hino FD500, matched to casting number 33111-2271 as pictured on the unit's spec tag. Rebuilt over-top with new clutch hydraulics — verify your existing casting number matches exactly before ordering, as Hino gearbox cases are not interchangeable across casting revisions.",
+      "2000 Hino FD500 (Casting No. 33111-2271)"
+    ),
+  },
 ];
