@@ -102,34 +102,61 @@ export async function hasInventory(
   return available >= quantity;
 }
 
+const MAX_CAS_ATTEMPTS = 5;
+
+/**
+ * Read-modify-write with a compare-and-swap guard: the update only takes
+ * effect if `quantity` still matches what we just read, so two concurrent
+ * orders touching the same product can't silently lose one of their
+ * updates. Retries a few times on contention rather than failing outright.
+ */
+async function compareAndSwapQuantity(
+  productId: number,
+  computeNext: (available: number) => number | null
+): Promise<number | null> {
+  const supabase = getSupabaseAdmin();
+
+  for (let attempt = 0; attempt < MAX_CAS_ATTEMPTS; attempt += 1) {
+    const { data: current, error: readError } = await supabase
+      .from("inventory")
+      .select("*")
+      .eq("product_id", productId)
+      .maybeSingle();
+
+    if (readError) throw readError;
+
+    const available = current?.quantity ?? getCatalogStock(productId);
+    const next = computeNext(available);
+    if (next === null) return null;
+
+    const { data: updated, error: updateError } = await supabase
+      .from("inventory")
+      .update({ quantity: next, updated_at: new Date().toISOString() })
+      .eq("product_id", productId)
+      .eq("quantity", available)
+      .select("product_id");
+
+    if (updateError) throw updateError;
+    if (updated && updated.length > 0) return next;
+    // Row changed between our read and write (concurrent order) — retry.
+  }
+
+  throw new Error(
+    `Too much concurrent contention updating inventory for product ${productId}`
+  );
+}
+
 export async function reduceInventory(
   productId: number,
   quantity: number
 ): Promise<boolean> {
   await syncMissingInventoryFromCatalog();
-  const supabase = getSupabaseAdmin();
 
-  const { data: current, error: readError } = await supabase
-    .from("inventory")
-    .select("*")
-    .eq("product_id", productId)
-    .maybeSingle();
+  const result = await compareAndSwapQuantity(productId, (available) =>
+    available < quantity ? null : available - quantity
+  );
 
-  if (readError) throw readError;
-
-  const available = current?.quantity ?? getCatalogStock(productId);
-  if (available < quantity) return false;
-
-  const { error: updateError } = await supabase
-    .from("inventory")
-    .update({
-      quantity: available - quantity,
-      updated_at: new Date().toISOString(),
-    })
-    .eq("product_id", productId);
-
-  if (updateError) throw updateError;
-  return true;
+  return result !== null;
 }
 
 export async function restoreInventory(
@@ -137,27 +164,8 @@ export async function restoreInventory(
   quantity: number
 ): Promise<void> {
   await syncMissingInventoryFromCatalog();
-  const supabase = getSupabaseAdmin();
 
-  const { data: current, error: readError } = await supabase
-    .from("inventory")
-    .select("*")
-    .eq("product_id", productId)
-    .maybeSingle();
-
-  if (readError) throw readError;
-
-  const available = current?.quantity ?? getCatalogStock(productId);
-
-  const { error: updateError } = await supabase
-    .from("inventory")
-    .update({
-      quantity: available + quantity,
-      updated_at: new Date().toISOString(),
-    })
-    .eq("product_id", productId);
-
-  if (updateError) throw updateError;
+  await compareAndSwapQuantity(productId, (available) => available + quantity);
 }
 
 export async function setInventory(

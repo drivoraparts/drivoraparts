@@ -1,4 +1,5 @@
-import { buildRateLimitKey, checkRateLimit } from "@/lib/security/rate-limit";
+import { buildRateLimitKey } from "@/lib/security/rate-limit";
+import { checkDurableRateLimit } from "@/lib/security/durable-rate-limit";
 import { getClientIp } from "@/lib/security/ip";
 import { logActivity } from "@/lib/monitoring/activity";
 
@@ -10,7 +11,7 @@ const LOGIN_MAX_ATTEMPTS = 5;
 export async function enforceLoginRateLimit(request: Request): Promise<Response | null> {
   const ip = getClientIp(request);
   const key = buildRateLimitKey(ip, LOGIN_RATE_PATH);
-  const result = checkRateLimit(key, LOGIN_MAX_ATTEMPTS, LOGIN_WINDOW_MS);
+  const result = await checkDurableRateLimit(key, LOGIN_MAX_ATTEMPTS, LOGIN_WINDOW_MS);
 
   if (!result.allowed) {
     await logActivity("warn", "Admin login rate limited", { ip });

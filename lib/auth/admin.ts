@@ -1,11 +1,8 @@
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { hashPasswordForStorage, timingSafeEqual } from "./crypto";
 import { ensureAdminInitialized } from "./init-admin";
-import { bumpAdminTokenVersion, getAdminTokenVersion } from "./token-version";
 
 let runtimePasswordOverride: string | null = null;
-
-export { getAdminTokenVersion };
 
 export function getAdminEmail(): string {
   return ensureAdminInitialized().email;
@@ -40,7 +37,6 @@ export async function updateAdminPassword(newPassword: string): Promise<void> {
   }
 
   runtimePasswordOverride = newPassword;
-  bumpAdminTokenVersion();
 
   try {
     const supabase = getSupabaseAdmin();
@@ -81,14 +77,12 @@ export async function changeAdminPassword(
 
 /**
  * Persists an invalidation cutoff so sessions issued before this moment are
- * rejected. bumpAdminTokenVersion() alone is not enough: middleware runs in
- * a separate runtime from these API routes and does not share in-memory
- * state, so the cutoff has to live in Supabase (reusing users.updated_at)
- * for verifyAdminSessionToken() to actually see it.
+ * rejected. This has to live in Supabase (reusing users.updated_at) rather
+ * than in-memory: middleware runs in a separate runtime from these API
+ * routes and does not share in-memory state, so only a durable, shared
+ * cutoff is actually visible to verifyAdminSessionToken().
  */
 export async function invalidateAllAdminSessions(): Promise<void> {
-  bumpAdminTokenVersion();
-
   try {
     const supabase = getSupabaseAdmin();
     const email = getAdminEmail();

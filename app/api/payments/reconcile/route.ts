@@ -3,6 +3,7 @@ import { reconcilePendingPayments } from "@/lib/payments/reconcile";
 import { getCronSecret } from "@/lib/env";
 import { getClientIp } from "@/lib/security/ip";
 import { logWarn } from "@/lib/monitoring/logger";
+import { timingSafeEqual } from "@/lib/auth/crypto";
 
 export const dynamic = "force-dynamic";
 
@@ -16,7 +17,10 @@ function authorize(req: Request): boolean {
     : null;
   const direct = req.headers.get("x-cron-secret");
 
-  return bearer === secret || direct === secret;
+  return (
+    (bearer != null && timingSafeEqual(bearer, secret)) ||
+    (direct != null && timingSafeEqual(direct, secret))
+  );
 }
 
 async function handle(req: Request) {

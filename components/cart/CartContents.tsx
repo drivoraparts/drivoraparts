@@ -6,7 +6,10 @@ import Price from "@/components/currency/Price";
 import OrderTotalsSummary from "@/components/checkout/OrderTotalsSummary";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
 import { useCart } from "@/context/CartContext";
-import { calculateCartDiscounts } from "@/lib/inventory/discounts";
+import {
+  calculateCartDiscounts,
+  cartQualifiesForBulkDiscount,
+} from "@/lib/inventory/discounts";
 import { routes } from "@/lib/inventory/routes";
 import { showToast } from "@/lib/store/toastStore";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -22,14 +25,14 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
   const { t } = useTranslation();
   const isPage = variant === "page";
 
-  const breakdown = calculateCartDiscounts(
-    cart.map((item) => ({
-      id: item.id,
-      price: item.price,
-      quantity: item.quantity,
-      category: item.category,
-    }))
-  );
+  const discountLineItems = cart.map((item) => ({
+    id: item.id,
+    price: item.price,
+    quantity: item.quantity,
+    category: item.category,
+  }));
+  const breakdown = calculateCartDiscounts(discountLineItems);
+  const bulkDiscountActive = cartQualifiesForBulkDiscount(discountLineItems);
 
   const handleClear = () => {
     clearCart();
@@ -88,7 +91,7 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
                 {item.name}
               </Link>
               <div className="mt-1">
-                <ProductDiscountBadge category={item.category} />
+                <ProductDiscountBadge category={item.category} active={bulkDiscountActive} />
               </div>
               <p className="mt-1 text-sm text-neutral-500">
                 <Price usd={item.price} /> {t("each")}

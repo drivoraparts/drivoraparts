@@ -23,6 +23,12 @@ export function ensureAdminInitialized(): ResolvedAdminConfig {
 
   const usingDefaults = !envEmail || !envPassword || !envSecret;
 
+  if (usingDefaults && process.env.NODE_ENV === "production") {
+    throw new Error(
+      "Missing required environment variable(s): ADMIN_EMAIL, ADMIN_PASSWORD, and/or AUTH_SECRET. Refusing to start with default admin credentials in production."
+    );
+  }
+
   if (usingDefaults && !warnedDefaults) {
     console.warn(
       "⚠️ Default admin credentials used — change ADMIN_EMAIL, ADMIN_PASSWORD, and AUTH_SECRET in production"

@@ -70,11 +70,14 @@ export async function resetPasswordWithToken(
   return true;
 }
 
+/**
+ * Only exposes the reset link in the API response when explicitly opted
+ * into — NODE_ENV alone isn't trustworthy across deploy targets (some
+ * edge/Workers runtimes don't set it to "production"), so this must never
+ * fall back to "not production means expose".
+ */
 export function shouldExposeResetLink(): boolean {
-  return (
-    process.env.NODE_ENV !== "production" ||
-    process.env.ADMIN_PASSWORD_RESET_EXPOSE_LINK === "true"
-  );
+  return process.env.ADMIN_PASSWORD_RESET_EXPOSE_LINK === "true";
 }
 
 export async function verifyResetToken(token: string): Promise<boolean> {

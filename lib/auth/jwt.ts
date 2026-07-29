@@ -9,7 +9,6 @@ export type AdminJwtPayload = {
   email: string;
   exp: number;
   iat: number;
-  ver: number;
 };
 
 const encoder = new TextEncoder();
@@ -51,7 +50,6 @@ export async function signAdminJwt(
 
   const body: AdminJwtPayload = {
     email: payload.email,
-    ver: payload.ver,
     iat: now,
     exp: now + expiresIn,
   };
@@ -89,7 +87,7 @@ export async function verifyAdminJwt(token: string): Promise<AdminJwtPayload | n
     if (header.alg !== "HS256") return null;
 
     const payload = JSON.parse(fromBase64Url(encodedPayload)) as AdminJwtPayload;
-    if (!payload.email || !payload.exp || payload.ver === undefined) return null;
+    if (!payload.email || !payload.exp) return null;
     if (payload.exp < Math.floor(Date.now() / 1000)) {
       authDebug("jwt", "token expired", { email: payload.email });
       return null;
@@ -98,7 +96,6 @@ export async function verifyAdminJwt(token: string): Promise<AdminJwtPayload | n
     authDebug("jwt", "payload decoded", {
       email: payload.email,
       exp: payload.exp,
-      ver: payload.ver,
     });
 
     return payload;

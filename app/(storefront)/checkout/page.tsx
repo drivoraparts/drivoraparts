@@ -10,7 +10,10 @@ import Price from "@/components/currency/Price";
 import OrderTotalsSummary from "@/components/checkout/OrderTotalsSummary";
 import { CheckoutBrandMark } from "@/components/brand/CheckoutBrandMark";
 import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
-import { calculateCartDiscounts } from "@/lib/inventory/discounts";
+import {
+  calculateCartDiscounts,
+  cartQualifiesForBulkDiscount,
+} from "@/lib/inventory/discounts";
 import ProductImage from "@/components/media/ProductImage";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -38,17 +41,23 @@ export default function CheckoutPage() {
   const checkoutTracked = useRef(false);
   const { t } = useTranslation();
 
-  const breakdown = useMemo(
+  const discountLineItems = useMemo(
     () =>
-      calculateCartDiscounts(
-        cart.map((item) => ({
-          id: item.id,
-          price: item.price,
-          quantity: item.quantity,
-          category: item.category,
-        }))
-      ),
+      cart.map((item) => ({
+        id: item.id,
+        price: item.price,
+        quantity: item.quantity,
+        category: item.category,
+      })),
     [cart]
+  );
+  const breakdown = useMemo(
+    () => calculateCartDiscounts(discountLineItems),
+    [discountLineItems]
+  );
+  const bulkDiscountActive = useMemo(
+    () => cartQualifiesForBulkDiscount(discountLineItems),
+    [discountLineItems]
   );
 
   useEffect(() => {
@@ -430,7 +439,10 @@ export default function CheckoutPage() {
                           {item.name}
                         </h3>
                         <div className="mt-1">
-                          <ProductDiscountBadge category={item.category} />
+                          <ProductDiscountBadge
+                            category={item.category}
+                            active={bulkDiscountActive}
+                          />
                         </div>
                         <p className="mt-1 text-xs text-neutral-500">
                           Qty {item.quantity}

@@ -64,7 +64,6 @@ async function getSessionInvalidationCutoffMs(): Promise<number | null> {
 export async function createAdminSessionToken(email: string): Promise<string> {
   return signAdminJwt({
     email: email.trim().toLowerCase(),
-    ver: 1,
     expiresInSeconds: SESSION_MAX_AGE_SECONDS,
   });
 }
@@ -97,7 +96,6 @@ export async function verifyAdminSessionToken(
   authDebug(scope, "JWT verified", {
     email: payload.email,
     exp: payload.exp,
-    ver: payload.ver,
   });
 
   return {

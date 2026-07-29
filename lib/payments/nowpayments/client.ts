@@ -1,4 +1,4 @@
-import { createHmac } from "node:crypto";
+import { createHmac, timingSafeEqual } from "node:crypto";
 
 import {
   getNowPaymentsApiKey,
@@ -274,7 +274,8 @@ export function verifyNowPaymentsWebhookSignature(
     .update(serialized)
     .digest("hex");
 
-  return expected === signatureHeader;
+  if (expected.length !== signatureHeader.length) return false;
+  return timingSafeEqual(Buffer.from(expected), Buffer.from(signatureHeader));
 }
 
 export function parseNowPaymentsWebhookPayload(
@@ -344,7 +345,11 @@ export function evaluateNowPaymentsOrderPaid(
     return price + tolerance >= expectedAmountUsd ? "paid" : "pending";
   }
 
-  return "paid";
+  // No amount field to verify against at all — don't auto-confirm paid
+  // with zero verification. Stay pending; the reconcile cron polls
+  // NOWPayments' API directly and can confirm once real amount data is
+  // available there.
+  return "pending";
 }
 
 export function mapNowPaymentsPaymentStatus(

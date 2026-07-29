@@ -36,6 +36,10 @@ export function getOrderDiscountLabel(): string {
   return `Every order · Save ${BASE_ORDER_DISCOUNT_PERCENT}%`;
 }
 
+function roundCents(value: number): number {
+  return Math.round(value * 100) / 100;
+}
+
 export function calculateCartDiscounts(
   items: DiscountLineInput[],
   shipping = 0
@@ -49,16 +53,17 @@ export function calculateCartDiscounts(
   for (const item of items) {
     grossSubtotal += item.price * item.quantity;
   }
+  grossSubtotal = roundCents(grossSubtotal);
 
   if (isTestCheckoutOnly) {
-    const total = grossSubtotal + shipping;
+    const total = roundCents(grossSubtotal + shipping);
     return {
       grossSubtotal,
       bulkDiscount: 0,
       orderDiscount: 0,
       shipping,
       merchandiseTotal: grossSubtotal,
-      total: Math.max(0, Math.round(total * 100) / 100),
+      total: Math.max(0, total),
     };
   }
 
@@ -66,13 +71,16 @@ export function calculateCartDiscounts(
   let orderDiscount = 0;
 
   if (cartQualifiesForBulkDiscount(items)) {
-    bulkDiscount = grossSubtotal * (BULK_ORDER_DISCOUNT_PERCENT / 100);
+    bulkDiscount = roundCents(grossSubtotal * (BULK_ORDER_DISCOUNT_PERCENT / 100));
   } else if (items.length > 0) {
-    orderDiscount = grossSubtotal * (BASE_ORDER_DISCOUNT_PERCENT / 100);
+    orderDiscount = roundCents(grossSubtotal * (BASE_ORDER_DISCOUNT_PERCENT / 100));
   }
 
-  const merchandiseTotal = grossSubtotal - bulkDiscount - orderDiscount;
-  const total = merchandiseTotal + shipping;
+  // Every intermediate figure is already rounded to cents, so
+  // merchandiseTotal/total are exact sums of what's actually displayed —
+  // no fractional-cent drift between line items and the shown total.
+  const merchandiseTotal = roundCents(grossSubtotal - bulkDiscount - orderDiscount);
+  const total = roundCents(merchandiseTotal + shipping);
 
   return {
     grossSubtotal,
@@ -80,6 +88,6 @@ export function calculateCartDiscounts(
     orderDiscount,
     shipping,
     merchandiseTotal,
-    total: Math.max(0, Math.round(total * 100) / 100),
+    total: Math.max(0, total),
   };
 }
