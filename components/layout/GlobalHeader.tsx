@@ -134,15 +134,30 @@ export default function GlobalHeader({
             role="search"
             className="mx-auto flex max-w-2xl items-center gap-2"
           >
-            <input
-              ref={searchInputRef}
-              type="search"
-              value={searchValue}
-              onChange={(e) => setSearchValue(e.target.value)}
-              placeholder="Search parts, brands, categories…"
-              aria-label="Search products"
-              className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
-            />
+            <div className="relative w-full">
+              <input
+                ref={searchInputRef}
+                type="search"
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+                placeholder="Search parts, brands, categories…"
+                aria-label="Search products"
+                className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 pr-8 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+              />
+              {searchValue ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSearchValue("");
+                    searchInputRef.current?.focus();
+                  }}
+                  aria-label="Clear search"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-neutral-400 transition hover:text-neutral-700"
+                >
+                  ✕
+                </button>
+              ) : null}
+            </div>
             <button
               type="submit"
               className="shrink-0 rounded-lg bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-red-500"

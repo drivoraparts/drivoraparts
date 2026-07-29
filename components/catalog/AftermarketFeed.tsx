@@ -69,13 +69,25 @@ export default function AftermarketFeed({
 
   return (
     <div className="space-y-8">
-      <input
-        type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search aftermarket parts by name, brand, or type..."
-        className="w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 transition-colors duration-300 focus:border-red-500 focus:outline-none"
-      />
+      <div className="relative">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search aftermarket parts by name, brand, or type..."
+          className="w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 pr-9 text-neutral-900 placeholder:text-neutral-400 transition-colors duration-300 focus:border-red-500 focus:outline-none"
+        />
+        {query ? (
+          <button
+            type="button"
+            onClick={() => setQuery("")}
+            aria-label="Clear search"
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 transition hover:text-neutral-700"
+          >
+            ✕
+          </button>
+        ) : null}
+      </div>
 
       <select
         value={sort}
