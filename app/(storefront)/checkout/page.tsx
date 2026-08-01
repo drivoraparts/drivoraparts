@@ -31,7 +31,6 @@ export default function CheckoutPage() {
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [zip, setZip] = useState("");
-  const [couponCode, setCouponCode] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [pendingPaymentUrl, setPendingPaymentUrl] = useState<string | null>(
     null
@@ -53,25 +52,13 @@ export default function CheckoutPage() {
     [cart]
   );
   const breakdown = useMemo(
-    () =>
-      calculateCartDiscounts(
-        discountLineItems,
-        0,
-        couponCode.trim() && email.trim()
-          ? { code: couponCode.trim(), email: email.trim() }
-          : undefined
-      ),
-    [discountLineItems, couponCode, email]
+    () => calculateCartDiscounts(discountLineItems, 0, email.trim() || undefined),
+    [discountLineItems, email]
   );
   const bulkDiscountActive = useMemo(
     () => cartQualifiesForBulkDiscount(discountLineItems),
     [discountLineItems]
   );
-
-  useEffect(() => {
-    const coupon = new URLSearchParams(window.location.search).get("coupon");
-    if (coupon) setCouponCode(coupon.toUpperCase());
-  }, []);
 
   useEffect(() => {
     if (useCartStore.persist.hasHydrated()) {
@@ -133,7 +120,6 @@ export default function CheckoutPage() {
             city: city.trim(),
             zip: zip.trim(),
           },
-          couponCode: couponCode.trim() || undefined,
           provider: "nowpayments",
         }),
       });
@@ -477,28 +463,6 @@ export default function CheckoutPage() {
                 </div>
 
                 <div className="mt-4 border-t border-neutral-200 pt-4">
-                  <div className="mb-4">
-                    <label
-                      htmlFor="checkout-coupon"
-                      className="mb-1 block text-sm text-neutral-500"
-                    >
-                      Discount code
-                    </label>
-                    <input
-                      id="checkout-coupon"
-                      type="text"
-                      autoCapitalize="characters"
-                      value={couponCode}
-                      onChange={(e) => setCouponCode(e.target.value)}
-                      placeholder="Optional"
-                      className={inputClass}
-                    />
-                    {couponCode.trim() && breakdown.couponDiscount === 0 && (
-                      <p className="mt-1 text-xs text-neutral-500">
-                        Code not valid for this email or cart.
-                      </p>
-                    )}
-                  </div>
                   <OrderTotalsSummary breakdown={breakdown} />
 
                   <div className="mt-3 flex items-center justify-center gap-2 text-xs text-neutral-500">

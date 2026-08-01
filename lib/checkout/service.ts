@@ -43,7 +43,6 @@ import { commitOrderInventory, restoreOrderInventory } from "@/lib/checkout/inve
 import { lockOrderItemsFromCatalog } from "@/lib/checkout/validate-items";
 import { processCheckoutWithoutSupabase } from "@/lib/checkout/offline";
 import type { CheckoutCustomerInput, CheckoutResult } from "@/lib/checkout/types";
-import type { CouponContext } from "@/lib/inventory/discounts";
 import { isSupabaseConfigured } from "@/lib/env";
 import { findPaymentByOrderId, updatePaymentRecord } from "@/lib/db/payments";
 
@@ -107,17 +106,11 @@ export async function processCheckout(input: {
 
   shipping?: number;
 
-  couponCode?: string;
-
   requestMeta?: Record<string, unknown>;
 
 }): Promise<CheckoutResult> {
 
   validateCustomer(input.customer);
-
-  const coupon: CouponContext | undefined = input.couponCode?.trim()
-    ? { code: input.couponCode.trim(), email: input.customer.email }
-    : undefined;
 
 
 
@@ -157,8 +150,6 @@ export async function processCheckout(input: {
       customer: input.customer,
 
       shipping: input.shipping,
-
-      coupon,
 
       requestMeta: input.requestMeta,
 
@@ -226,7 +217,7 @@ export async function processCheckout(input: {
 
     shipping: input.shipping ?? 0,
 
-    coupon,
+    customerEmail: customer.email,
 
   });
 

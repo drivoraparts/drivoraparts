@@ -12,11 +12,6 @@ export type DiscountLineInput = {
   category?: string;
 };
 
-export type CouponContext = {
-  code: string;
-  email: string;
-};
-
 export type CartDiscountBreakdown = {
   grossSubtotal: number;
   bulkDiscount: number;
@@ -51,7 +46,7 @@ function roundCents(value: number): number {
 export function calculateCartDiscounts(
   items: DiscountLineInput[],
   shipping = 0,
-  coupon?: CouponContext
+  customerEmail?: string
 ): CartDiscountBreakdown {
   const isTestCheckoutOnly =
     items.length > 0 &&
@@ -87,24 +82,26 @@ export function calculateCartDiscounts(
     orderDiscount = roundCents(grossSubtotal * (BASE_ORDER_DISCOUNT_PERCENT / 100));
   }
 
-  // A matched coupon is scoped to one product line and tops up whatever
-  // sitewide discount that line already carries (bulk or order-wide) to the
-  // coupon's total percent-off — it never stacks past that, and it never
-  // touches any other line item.
+  // A customer-specific discount is scoped to one product line and tops up
+  // whatever sitewide discount that line already carries (bulk or
+  // order-wide) to its total percent-off — it never stacks past that, and
+  // it never touches any other line item. Matched purely by checkout email;
+  // no code required.
   let couponDiscount = 0;
   let couponLabel: string | null = null;
-  const matchedDiscount = findCustomerDiscount(coupon?.code, coupon?.email);
 
-  if (matchedDiscount) {
-    const line = items.find((item) => item.id === matchedDiscount.productId);
+  if (customerEmail) {
+    const alreadyAppliedPercent =
+      bulkDiscount > 0
+        ? BULK_ORDER_DISCOUNT_PERCENT
+        : orderDiscount > 0
+          ? BASE_ORDER_DISCOUNT_PERCENT
+          : 0;
 
-    if (line) {
-      const alreadyAppliedPercent =
-        bulkDiscount > 0
-          ? BULK_ORDER_DISCOUNT_PERCENT
-          : orderDiscount > 0
-            ? BASE_ORDER_DISCOUNT_PERCENT
-            : 0;
+    for (const line of items) {
+      const matchedDiscount = findCustomerDiscount(customerEmail, line.id);
+      if (!matchedDiscount) continue;
+
       const extraPercent = Math.max(
         0,
         matchedDiscount.totalPercentOff - alreadyAppliedPercent
@@ -112,10 +109,10 @@ export function calculateCartDiscounts(
 
       if (extraPercent > 0) {
         const lineGross = roundCents(line.price * line.quantity);
-        couponDiscount = roundCents(lineGross * (extraPercent / 100));
+        couponDiscount = roundCents(couponDiscount + lineGross * (extraPercent / 100));
       }
 
-      couponLabel = matchedDiscount.label;
+      couponLabel = couponLabel ?? matchedDiscount.label;
     }
   }
 
