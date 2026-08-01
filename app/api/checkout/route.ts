@@ -107,10 +107,14 @@ export async function POST(req: Request) {
         ? body.provider
         : undefined;
 
+    const couponCode =
+      typeof body?.couponCode === "string" ? body.couponCode.slice(0, 40) : undefined;
+
     const result = await processCheckout({
       items: lockedItems,
       customer,
       providerId,
+      couponCode,
       requestMeta: { ip },
     });
 

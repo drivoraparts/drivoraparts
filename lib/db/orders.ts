@@ -1,5 +1,5 @@
 import { EMPTY_ORDER_STATS } from "@/lib/admin/fallbacks";
-import { calculateCartDiscounts } from "@/lib/inventory/discounts";
+import { calculateCartDiscounts, type CouponContext } from "@/lib/inventory/discounts";
 import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { assertOrderTransition } from "@/lib/orders/state-machine";
@@ -59,6 +59,7 @@ export type CreateOrderInput = {
   customerId: string;
   items: CreateOrderItemInput[];
   shipping?: number;
+  coupon?: CouponContext;
 };
 
 export async function createOrderRecord(
@@ -72,7 +73,8 @@ export async function createOrderRecord(
       quantity: item.quantity,
       category: item.category,
     })),
-    shipping
+    shipping,
+    input.coupon
   );
   const subtotal = breakdown.merchandiseTotal;
   const total = breakdown.total;

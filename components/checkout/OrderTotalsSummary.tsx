@@ -43,6 +43,15 @@ export default function OrderTotalsSummary({
         </div>
       )}
 
+      {breakdown.couponDiscount > 0 && (
+        <div className="flex items-center justify-between gap-3 text-sm">
+          <span className="text-emerald-700">{breakdown.couponLabel}</span>
+          <span className="text-emerald-700">
+            −<Price usd={breakdown.couponDiscount} />
+          </span>
+        </div>
+      )}
+
       <div className="flex items-center justify-between gap-3 text-sm">
         <span className="text-neutral-500">{t("shipping")}</span>
         <span className="text-neutral-800">

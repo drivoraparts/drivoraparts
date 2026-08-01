@@ -1,4 +1,5 @@
 import { CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
+import { findCustomerDiscount } from "./customer-discounts";
 
 export const BULK_MIN_QUANTITY = 2;
 export const BASE_ORDER_DISCOUNT_PERCENT = 5;
@@ -11,10 +12,17 @@ export type DiscountLineInput = {
   category?: string;
 };
 
+export type CouponContext = {
+  code: string;
+  email: string;
+};
+
 export type CartDiscountBreakdown = {
   grossSubtotal: number;
   bulkDiscount: number;
   orderDiscount: number;
+  couponDiscount: number;
+  couponLabel: string | null;
   shipping: number;
   merchandiseTotal: number;
   total: number;
@@ -42,7 +50,8 @@ function roundCents(value: number): number {
 
 export function calculateCartDiscounts(
   items: DiscountLineInput[],
-  shipping = 0
+  shipping = 0,
+  coupon?: CouponContext
 ): CartDiscountBreakdown {
   const isTestCheckoutOnly =
     items.length > 0 &&
@@ -61,6 +70,8 @@ export function calculateCartDiscounts(
       grossSubtotal,
       bulkDiscount: 0,
       orderDiscount: 0,
+      couponDiscount: 0,
+      couponLabel: null,
       shipping,
       merchandiseTotal: grossSubtotal,
       total: Math.max(0, total),
@@ -76,16 +87,52 @@ export function calculateCartDiscounts(
     orderDiscount = roundCents(grossSubtotal * (BASE_ORDER_DISCOUNT_PERCENT / 100));
   }
 
+  // A matched coupon is scoped to one product line and tops up whatever
+  // sitewide discount that line already carries (bulk or order-wide) to the
+  // coupon's total percent-off — it never stacks past that, and it never
+  // touches any other line item.
+  let couponDiscount = 0;
+  let couponLabel: string | null = null;
+  const matchedDiscount = findCustomerDiscount(coupon?.code, coupon?.email);
+
+  if (matchedDiscount) {
+    const line = items.find((item) => item.id === matchedDiscount.productId);
+
+    if (line) {
+      const alreadyAppliedPercent =
+        bulkDiscount > 0
+          ? BULK_ORDER_DISCOUNT_PERCENT
+          : orderDiscount > 0
+            ? BASE_ORDER_DISCOUNT_PERCENT
+            : 0;
+      const extraPercent = Math.max(
+        0,
+        matchedDiscount.totalPercentOff - alreadyAppliedPercent
+      );
+
+      if (extraPercent > 0) {
+        const lineGross = roundCents(line.price * line.quantity);
+        couponDiscount = roundCents(lineGross * (extraPercent / 100));
+      }
+
+      couponLabel = matchedDiscount.label;
+    }
+  }
+
   // Every intermediate figure is already rounded to cents, so
   // merchandiseTotal/total are exact sums of what's actually displayed —
   // no fractional-cent drift between line items and the shown total.
-  const merchandiseTotal = roundCents(grossSubtotal - bulkDiscount - orderDiscount);
+  const merchandiseTotal = roundCents(
+    grossSubtotal - bulkDiscount - orderDiscount - couponDiscount
+  );
   const total = roundCents(merchandiseTotal + shipping);
 
   return {
     grossSubtotal,
     bulkDiscount,
     orderDiscount,
+    couponDiscount,
+    couponLabel,
     shipping,
     merchandiseTotal,
     total: Math.max(0, total),

@@ -1,5 +1,5 @@
 import { emailCustomerOrderInvoice } from "@/lib/checkout/customer-invoice";
-import { calculateCartDiscounts } from "@/lib/inventory/discounts";
+import { calculateCartDiscounts, type CouponContext } from "@/lib/inventory/discounts";
 import { products } from "@/lib/inventory/products";
 import { logInfo } from "@/lib/monitoring/logger";
 import { logActivity } from "@/lib/monitoring/activity";
@@ -23,6 +23,7 @@ export async function processCheckoutWithoutSupabase(input: {
   items: CreateOrderItemInput[];
   customer: CheckoutCustomerInput;
   shipping?: number;
+  coupon?: CouponContext;
   requestMeta?: Record<string, unknown>;
 }): Promise<CheckoutResult> {
   const lockedItems = input.items;
@@ -41,7 +42,8 @@ export async function processCheckoutWithoutSupabase(input: {
       quantity: item.quantity,
       category: item.category,
     })),
-    shipping
+    shipping,
+    input.coupon
   );
 
   const orderId = generateOfflineOrderId();
