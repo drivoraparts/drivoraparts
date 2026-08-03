@@ -26,6 +26,7 @@ export const brands: Brand[] = [
   { slug: "hks", name: "HKS", category: "engine" },
   { slug: "turbosmart", name: "Turbosmart", category: "engine" },
   { slug: "forge-motorsport", name: "Forge Motorsport", category: "engine" },
+  { slug: "universal", name: "Universal", category: "engine" },
 
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },

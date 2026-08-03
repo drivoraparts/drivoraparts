@@ -823,4 +823,44 @@ export const engineDrivetrainProducts: Product[] = [
       ]
     ),
   },
+  {
+    id: 2101,
+    name: "Universal Power Steering Pump",
+    category: "engine",
+    brand: "universal",
+    price: 300,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Universal Fit — Confirm Application/Pulley Match at Checkout",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-pump-universal/1.jpg",
+    images: [
+      "/product-media/engine/power-steering-pump-universal/1.jpg",
+      "/product-media/engine/power-steering-pump-universal/2.jpg",
+    ],
+    description: `Universal Power Steering Pump
+
+Brand-new universal-fit power steering pump with serpentine pulley, built to restore full hydraulic assist and eliminate worn-pump noise, leaks, and stiff steering feel.
+
+Specifications
+• Part Type: Power Steering Pump, Universal Fit
+• Condition: Brand New
+• Pulley: Serpentine (multi-groove)
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• Brand-New, Never Installed
+• Restores Full Hydraulic Steering Assist
+• Direct Serpentine Pulley Fitment
+• Eliminates Pump Whine & Steering Stiffness
+• Confirm Port/Pulley Match to Your Application Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
 ];
