@@ -422,4 +422,23 @@ export const aftermarketProducts: Product[] = [
       "2000 Hino FD500 (Casting No. 33111-2271)"
     ),
   },
+  {
+    id: 2113,
+    name: "Cardone Remanufactured Power Steering Pump",
+    category: "aftermarket",
+    brand: "cardone",
+    price: 190,
+    stock: true,
+    stockQty: 1,
+    condition: "Refurbished",
+    location: "USA Warehouse",
+    fitment: "Multiple GM/Ford/Chrysler Applications — Confirm Exact Fitment at Checkout",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    ...media("power-steering-cardone", ["1.jpg"]),
+    description: aftermarketDescription(
+      "Cardone Remanufactured Power Steering Pump",
+      "Cardone remanufactured power steering pump, rebuilt to OE specification with new wear components and pressure-tested before sale — Cardone's core business is professional remanufacturing, not new production, so every unit ships tested and warrantied rather than new-in-box.",
+      "Multiple GM/Ford/Chrysler applications — confirm your exact part number/fitment at checkout"
+    ),
+  },
 ];

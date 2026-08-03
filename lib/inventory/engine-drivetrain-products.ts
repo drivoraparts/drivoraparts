@@ -824,6 +824,427 @@ export const engineDrivetrainProducts: Product[] = [
     ),
   },
   {
+    id: 2102,
+    name: "Saginaw P-Series Power Steering Pump (Canned Ham)",
+    category: "engine",
+    brand: "universal",
+    price: 268,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "1960s–1990s GM Cars & Trucks — Saginaw P-Series Wet-Reservoir Pump",
+    partNumber: "Saginaw P-Series",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-saginaw-p-series/1.jpg",
+    images: ["/product-media/engine/power-steering-saginaw-p-series/1.jpg"],
+    description: `Saginaw P-Series Power Steering Pump (Canned Ham)
+
+Brand-new Saginaw P-Series power steering pump — the classic "canned ham" wet-reservoir style fitted to GM cars and trucks from the 1960s through the 1990s. Steel reservoir with black finish for a clean, factory-style appearance.
+
+Specifications
+• Part Type: Saginaw P-Series Wet-Reservoir Power Steering Pump
+• Condition: Brand New
+• Reservoir: Integrated steel "canned ham" style
+• Finish: Black
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• Classic Saginaw P-Series Architecture
+• Direct Fit for Period-Correct GM Restorations
+• Integrated Wet Reservoir — No Remote Tank Needed
+• Clean Black Finish
+• Confirm Bracket & Pulley Compatibility Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2103,
+    name: "GM Type II (TC/CB Series) Power Steering Pump",
+    category: "engine",
+    brand: "universal",
+    price: 240,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "GM LS Swaps, Corvettes & Trucks — Type II TC/CB Series (Remote Reservoir)",
+    partNumber: "GM Type II (TC/CB Series)",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-gm-type-ii/1.jpg",
+    images: ["/product-media/engine/power-steering-gm-type-ii/1.jpg"],
+    description: `GM Type II (TC/CB Series) Power Steering Pump
+
+Brand-new GM Type II power steering pump for remote-reservoir setups — the compact aluminum-housed pump found on Corvettes (TC series) and SUVs/trucks (CB series), a popular choice for LS swaps running braided accessory drives.
+
+Specifications
+• Part Type: GM Type II Power Steering Pump (TC/CB Series)
+• Condition: Brand New
+• Housing: Aluminum, remote-reservoir configuration
+• Fittings: AN female inlet/outlet for braided hose setups
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• Compact Type II Architecture for LS Swaps
+• Remote Reservoir — Tight Engine Bay Friendly
+• Press-On Shaft, AN-Ready Fittings
+• Common Corvette & Truck Fitment Base
+• Confirm TC vs. CB Shaft Spec Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2104,
+    name: "CBR/CBX Racing Series Power Steering Pump",
+    category: "engine",
+    brand: "universal",
+    price: 403,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Off-Road, Hydro-Boost & High-Flow Racing Applications — CBR/CBX Series",
+    partNumber: "CBR/CBX Racing Series",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-cbr-cbx-racing/1.jpg",
+    images: ["/product-media/engine/power-steering-cbr-cbx-racing/1.jpg"],
+    description: `CBR/CBX Racing Series Power Steering Pump
+
+Brand-new high-flow CBR/CBX-style racing power steering pump, built for off-road, hydro-assist brake, and full-hydraulic steering applications that need more volume and pressure than a stock pump can deliver.
+
+Specifications
+• Part Type: CBR/CBX High-Flow Racing Power Steering Pump
+• Condition: Brand New
+• Application: Off-Road / Hydro-Boost / Full Hydraulic Steering
+• Fittings: High-flow AN ports
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• High-Flow, High-Pressure Racing Pump
+• Suited to Hydro-Boost Brake Conversions
+• Compatible with Most Aftermarket Accessory Drives
+• Built for Off-Road & Full-Hydraulic Setups
+• Confirm Port Size & Flow Spec for Your Application
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2105,
+    name: "Turn One Power Steering Pump",
+    category: "engine",
+    brand: "turn-one",
+    price: 449,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "GM LS & F-Body Applications — Confirm Fitting/Mount Spec at Checkout",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-turn-one/1.jpg",
+    images: ["/product-media/engine/power-steering-turn-one/1.jpg"],
+    description: `Turn One Power Steering Pump
+
+Brand-new Turn One power steering pump, hand-built with proprietary internals engineered to reduce parasitic horsepower loss and fluid temperature versus a factory-style Type II pump — a popular Stage 1 upgrade for LS-swapped and F-body builds.
+
+Specifications
+• Part Type: Turn One Performance Power Steering Pump
+• Condition: Brand New
+• Housing: Lightweight aluminum
+• Application: GM LS & F-Body platforms
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• Hand-Built Performance Internals
+• Reduced Parasitic Horsepower Loss
+• Lower Operating Fluid Temperature
+• Popular LS Swap & F-Body Upgrade
+• Confirm Fitting/Mount Spec Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2106,
+    name: "Borgeson Universal Power Steering Pump",
+    category: "engine",
+    brand: "borgeson",
+    price: 249,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Street Rods, Chevy, Ford, Mopar — Confirm Application at Checkout",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-borgeson-universal/1.jpg",
+    images: ["/product-media/engine/power-steering-borgeson-universal/1.jpg"],
+    description: `Borgeson Universal Power Steering Pump
+
+Brand-new GM-pressure power steering pump from Borgeson Universal — assembled and tested in the USA, built for street rods, muscle cars, and custom builds across Chevy, Ford, and Mopar platforms.
+
+Specifications
+• Part Type: Self-Contained Power Steering Pump
+• Condition: Brand New
+• Pressure Spec: GM pressure
+• Testing: Assembled & tested in the USA
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• Trusted Aftermarket Steering Specialist Brand
+• Assembled & Tested in the USA
+• Fits a Wide Range of Street Rod & Muscle Car Builds
+• Self-Contained — No Separate Reservoir Needed
+• Confirm Bracket & Pulley Match Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2107,
+    name: "UniSteer Performance Power Steering Pump",
+    category: "engine",
+    brand: "unisteer",
+    price: 252,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "GM Type II / TC Applications — Low-Flow, Confirm Spec at Checkout",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-unisteer/1.jpg",
+    images: ["/product-media/engine/power-steering-unisteer/1.jpg"],
+    description: `UniSteer Performance Power Steering Pump
+
+Brand-new UniSteer Type II/TC-style power steering pump, individually set to its designated flow and pressure and function-tested on UniSteer's in-house test stand before shipping.
+
+Specifications
+• Part Type: Gen II/TC Aluminum Power Steering Pump
+• Condition: Brand New
+• Finish: Natural aluminum
+• Testing: Factory flow/pressure tested
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• Factory Flow & Pressure Tested Before Shipping
+• Aluminum Housing, Low-Flow Type II/TC Spec
+• Trusted Street Rod & Muscle Car Steering Brand
+• Backed by Manufacturer Limited Warranty
+• Confirm Fitting Configuration Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2108,
+    name: "PSC Motorsports Power Steering Pump",
+    category: "engine",
+    brand: "psc-motorsports",
+    price: 326,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "High-Displacement Saginaw P-Series Application — Confirm Spec at Checkout",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-psc-motorsports/1.jpg",
+    images: ["/product-media/engine/power-steering-psc-motorsports/1.jpg"],
+    description: `PSC Motorsports Power Steering Pump
+
+Brand-new PSC Motorsports high-displacement Saginaw P-Series power steering pump — built by one of the most trusted names in off-road and racing steering systems for demanding full-hydraulic and hydro-assist applications.
+
+Specifications
+• Part Type: High-Displacement Saginaw P-Series Power Steering Pump
+• Condition: Brand New
+• Application: Off-road / racing / hydro-assist
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• High-Displacement Racing-Spec Internals
+• Trusted PSC Off-Road & Racing Pedigree
+• Suited to Demanding Hydro-Assist Applications
+• Durable Construction for Competition Use
+• Confirm Displacement Spec for Your Setup
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2109,
+    name: "Tuff Stuff Performance Power Steering Pump (Chrome)",
+    category: "engine",
+    brand: "tuff-stuff",
+    price: 352,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "GM Saginaw-Style Applications, Keyed Shaft — Confirm Spec at Checkout",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-tuff-stuff/1.jpg",
+    images: ["/product-media/engine/power-steering-tuff-stuff/1.jpg"],
+    description: `Tuff Stuff Performance Power Steering Pump (Chrome)
+
+Brand-new 100% new-component Tuff Stuff Saginaw-style power steering pump in a show-quality chrome finish, with billet-style cap and new dipstick — built in the USA to fix leaks and restore proper steering feel.
+
+Specifications
+• Part Type: Saginaw-Style Power Steering Pump
+• Condition: Brand New — 100% New Components
+• Finish: Chrome
+• Made In: USA
+• Manufacturer: DrivoraParts Sourced OEM+ Supplier
+
+Highlights
+• 100% New Components, Made in the USA
+• Show-Quality Chrome Finish
+• Billet-Style Cap & New Dipstick Included
+• Keyed Shaft, Bolt-On Saginaw Fitment
+• Confirm Shaft & Mounting Spec Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2110,
+    name: "ACDelco GM Original Equipment Power Steering Pump",
+    category: "engine",
+    brand: "acdelco",
+    price: 261,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "GM Cars & Trucks (incl. Silverado/Suburban/Yukon/Tahoe) — Confirm Fitment at Checkout",
+    partNumber: "19420691",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-acdelco/1.jpg",
+    images: ["/product-media/engine/power-steering-acdelco/1.jpg"],
+    description: `ACDelco GM Original Equipment Power Steering Pump
+
+Brand-new ACDelco GM Original Equipment power steering pump — cast iron construction built to GM factory specification for direct OE-quality replacement on eligible GM cars and trucks.
+
+Specifications
+• Part Type: GM Original Equipment Power Steering Pump
+• Condition: Brand New
+• Construction: Cast iron
+• Manufacturer Part Number: 19420691
+• Manufacturer: ACDelco (GM Original Equipment)
+
+Highlights
+• Genuine GM Original Equipment Spec
+• Cast Iron Durability
+• Direct OE-Quality Replacement
+• Trusted OEM Supplier Brand
+• Confirm Exact Vehicle Fitment Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2111,
+    name: "Motorcraft Power Steering Pump",
+    category: "engine",
+    brand: "motorcraft",
+    price: 241,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Ford, Lincoln & Mercury Applications — Confirm Fitment at Checkout",
+    partNumber: "STP320",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-motorcraft/1.jpg",
+    images: ["/product-media/engine/power-steering-motorcraft/1.jpg"],
+    description: `Motorcraft Power Steering Pump
+
+Brand-new Motorcraft power steering pump, manufactured to exact Ford OE specification — the only power steering pump brand recommended by Ford Motor Company for Ford, Lincoln, and Mercury vehicles.
+
+Specifications
+• Part Type: Ford OE Power Steering Pump
+• Condition: Brand New
+• Manufacturer Part Number: STP320
+• Manufacturer: Motorcraft (Ford OE)
+
+Highlights
+• Genuine Ford OE Specification
+• Ford-Recommended Steering Component Brand
+• Direct-Fit Belt-Driven Design
+• Consistent OE Pressure & Flow
+• Confirm Exact Vehicle Fitment Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2112,
+    name: "Delphi Power Steering Pump",
+    category: "engine",
+    brand: "delphi",
+    price: 108,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "GM C5 Corvette (1998–2006) and Related Applications — Confirm Fitment at Checkout",
+    partNumber: "26120639",
+    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    thumbnail: "/product-media/engine/power-steering-delphi/1.jpg",
+    images: ["/product-media/engine/power-steering-delphi/1.jpg"],
+    description: `Delphi Power Steering Pump
+
+Brand-new Delphi power steering pump built to genuine GM specification — a direct OE-quality fit for C5 Corvette and related GM applications.
+
+Specifications
+• Part Type: OE Power Steering Pump
+• Condition: Brand New
+• Manufacturer Part Number: 26120639
+• Manufacturer: Delphi Technologies (GM OE Supplier)
+
+Highlights
+• Genuine GM OE Specification
+• Direct Fit for C5 Corvette Applications
+• Major OEM Supplier Quality
+• Consistent OE Pressure & Flow
+• Confirm Exact Vehicle Fitment Before Ordering
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
     id: 2101,
     name: "Universal Power Steering Pump",
     category: "engine",

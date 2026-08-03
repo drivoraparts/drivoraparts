@@ -27,6 +27,14 @@ export const brands: Brand[] = [
   { slug: "turbosmart", name: "Turbosmart", category: "engine" },
   { slug: "forge-motorsport", name: "Forge Motorsport", category: "engine" },
   { slug: "universal", name: "Universal", category: "engine" },
+  { slug: "turn-one", name: "Turn One", category: "engine" },
+  { slug: "borgeson", name: "Borgeson Universal", category: "engine" },
+  { slug: "unisteer", name: "UniSteer Performance", category: "engine" },
+  { slug: "psc-motorsports", name: "PSC Motorsports", category: "engine" },
+  { slug: "tuff-stuff", name: "Tuff Stuff Performance", category: "engine" },
+  { slug: "acdelco", name: "ACDelco", category: "engine" },
+  { slug: "motorcraft", name: "Motorcraft", category: "engine" },
+  { slug: "delphi", name: "Delphi Technologies", category: "engine" },
 
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
@@ -209,6 +217,7 @@ export const brands: Brand[] = [
   { slug: "jeep", name: "Jeep", category: "aftermarket" },
   { slug: "chrysler", name: "Chrysler", category: "aftermarket" },
   { slug: "hino", name: "Hino", category: "aftermarket" },
+  { slug: "cardone", name: "Cardone Industries", category: "aftermarket" },
 
   // Wheels & Tires
   { slug: "bfgoodrich", name: "BFGoodrich", category: "wheels-tires" },
