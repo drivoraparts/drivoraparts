@@ -380,7 +380,7 @@ export const aftermarketProducts: Product[] = [
     description: aftermarketDescription(
       "Jaguar XF X260 Bonnet (Corris Grey)",
       "Genuine OEM take-off bonnet (hood) for the Jaguar XF X260, finished in Corris Grey — factory colour match. Direct fit for XF X260 saloons including the 2.0L R-Sport Diesel, 2016 registration. Straightforward swap for a damaged or mismatched bonnet.",
-      "2015–2020 Jaguar XF X260 (2.0L R-Sport Diesel, 2016 Reg, and other X260 variants — confirm trim at checkout)"
+      "2015–2020 Jaguar XF X260 (2.0L R-Sport Diesel, 2016 Reg, and other X260 variants — verify trim before ordering)"
     ),
   },
   {
@@ -399,7 +399,7 @@ export const aftermarketProducts: Product[] = [
     description: aftermarketDescription(
       "1947 Chrysler External Sun Visor (Fulton Style)",
       "Vintage Fulton-style exterior sun visor for split-windshield Chrysler Corporation cars — adjustable steel mount fits the outside of the windshield frame for period-correct 1940s styling and glare reduction.",
-      "1946–1948 Chrysler / Plymouth / Dodge / DeSoto (Split Windshield Models) — confirm exact windshield width at checkout"
+      "1946–1948 Chrysler / Plymouth / Dodge / DeSoto (Split Windshield Models) — verify exact windshield width before ordering"
     ),
   },
   {
@@ -438,7 +438,7 @@ export const aftermarketProducts: Product[] = [
     description: aftermarketDescription(
       "Cardone Remanufactured Power Steering Pump",
       "Cardone remanufactured power steering pump, rebuilt to OE specification with new wear components and pressure-tested before sale — Cardone's core business is professional remanufacturing, not new production, so every unit ships tested and warrantied rather than new-in-box.",
-      "Multiple GM/Ford/Chrysler applications — confirm your exact part number/fitment at checkout"
+      "Multiple GM/Ford/Chrysler applications — verify your exact part number/fitment before ordering"
     ),
   },
 ];
