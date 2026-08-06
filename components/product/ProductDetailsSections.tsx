@@ -123,6 +123,13 @@ function FitmentLogistics({
           theme={theme}
         />
       )}
+      {logistics.weight && (
+        <LogisticsRow
+          label={t("weightLabel")}
+          value={<TranslatedText as="span">{logistics.weight}</TranslatedText>}
+          theme={theme}
+        />
+      )}
       {logistics.freightNotes && (
         <LogisticsRow
           label={t("freightNotesLabel")}

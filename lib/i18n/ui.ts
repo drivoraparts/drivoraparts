@@ -68,6 +68,7 @@ export const UI = {
   partCode: "Part / Code",
   whatsIncluded: "What's Included",
   coreChargeLabel: "Core Charge",
+  weightLabel: "Shipping Weight",
   freightNotesLabel: "Freight / Shipping Notes",
   warrantyTermsLabel: "Warranty Terms",
 } as const;

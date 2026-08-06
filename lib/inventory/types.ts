@@ -112,6 +112,8 @@ export type Product = {
   included?: string[];
   /** Core charge / core return policy, e.g. "Outright — No Core Required". */
   coreCharge?: string;
+  /** Shipping weight, e.g. "185 lbs (crated)". */
+  weight?: string;
   /** Heavy-freight handling notes (liftgate, residential vs. commercial). */
   freightNotes?: string;
   /** Warranty liability terms, e.g. "Parts only — no labor covered". */
@@ -125,6 +127,7 @@ export type ProductLogistics = {
   drivetrain?: string;
   included?: string[];
   coreCharge?: string;
+  weight?: string;
   freightNotes?: string;
   warrantyTerms?: string;
 };

@@ -358,10 +358,13 @@ export default function CheckoutPage() {
 
               <section className={glassCard}>
                 <h2 className="mb-4 text-xl font-bold">Payment</h2>
-                <p className="mb-4 font-medium">NOWPayments — crypto checkout</p>
+                <p className="mb-4 font-medium">
+                  Instant worldwide checkout via NOWPayments
+                </p>
                 <p className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
-                  Click Pay Now to place your order and open the secure NOWPayments
-                  payment page. Bitcoin and 300+ cryptocurrencies accepted.
+                  Click Pay Now to place your order and open your secure NOWPayments
+                  payment page. BTC, ETH, USDT & 300+ coins accepted — no bank or
+                  card required.
                 </p>
                 <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
                   <p className="mb-2 text-xs font-medium text-neutral-700">

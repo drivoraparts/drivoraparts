@@ -29,6 +29,7 @@ export function hasLogistics(logistics: ProductLogistics): boolean {
       logistics.drivetrain ||
       (logistics.included && logistics.included.length > 0) ||
       logistics.coreCharge ||
+      logistics.weight ||
       logistics.freightNotes ||
       logistics.warrantyTerms
   );
@@ -51,6 +52,7 @@ function resolveProductLogistics(product: Product): ProductLogistics {
           ? fallback.included
           : undefined,
     coreCharge: text(product.coreCharge, fallback.coreCharge),
+    weight: text(product.weight, fallback.weight),
     freightNotes: text(product.freightNotes, fallback.freightNotes),
     warrantyTerms: text(product.warrantyTerms, fallback.warrantyTerms),
   };

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VehicleSelectorBar from "@/components/home/VehicleSelectorBar";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
@@ -84,6 +85,8 @@ export default function Home() {
               Truck Beds & Shells
             </Link>
           </div>
+
+          <VehicleSelectorBar />
         </div>
       </section>
 

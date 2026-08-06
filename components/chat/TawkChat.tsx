@@ -12,6 +12,7 @@ declare global {
       onLoaded?: () => void;
       showWidget?: () => void;
       hideWidget?: () => void;
+      maximize?: () => void;
       customStyle?: {
         visibility?: {
           desktop?: { position?: string; xOffset?: number; yOffset?: number };

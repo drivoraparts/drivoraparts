@@ -16,6 +16,7 @@ import PowerLevelSection, {
   type ProSpecSection,
 } from "./PowerLevelSection";
 import ProductDetailsSections from "./ProductDetailsSections";
+import FitmentAssuranceCallout from "./FitmentAssuranceCallout";
 import ProductBreadcrumbs from "./ProductBreadcrumbs";
 import StickyPurchaseBar from "./StickyPurchaseBar";
 import ProductDiscoverySections from "./ProductDiscoverySections";
@@ -241,6 +242,8 @@ export default function ProductTemplate({
                 className="!rounded-none !border-2 !border-red-600 !bg-white !py-3.5 !text-sm !font-black !uppercase !tracking-[0.12em] !text-neutral-900 hover:!bg-red-50"
               />
             </div>
+
+            <FitmentAssuranceCallout />
           </div>
 
           <div className="mt-6 border-t border-neutral-200 pt-5">

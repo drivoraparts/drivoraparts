@@ -41,8 +41,8 @@ export const TRUST_SIGNALS: TrustSignal[] = [
   },
   {
     id: "payments",
-    title: "NOWPayments checkout",
-    detail: "Bitcoin, Ethereum, USDT, and 300+ cryptocurrencies via licensed payment rails.",
+    title: "Instant worldwide checkout",
+    detail: "Pay with BTC, ETH, USDT & 300+ coins via NOWPayments — no bank or card required.",
     seal: "payments",
   },
   {

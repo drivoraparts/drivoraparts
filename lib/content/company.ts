@@ -22,7 +22,7 @@ export const JAPAN_LOGISTICS_HUB = {
   country: "Japan",
 } as const;
 
-export const COMPANY_MOTTO = "Purity • Potency • Protocol";
+export const COMPANY_MOTTO = "Engineered • Fitment • Performance";
 
 /** Short lines for footer and about page. */
 export const COMPANY_LOCATION_SUMMARY = {
