@@ -120,6 +120,11 @@ export function getMetaCapiAccessToken(): string | null {
 /** TikTok Pixel ID — Drivora Parts TikTok Ads Manager. */
 export const TIKTOK_PIXEL_ID = "D934B6JC77UB3EFMUH9G";
 
+/** GA4 Measurement ID (e.g. "G-XXXXXXXXXX") — null until set, component no-ops. */
+export function getGaMeasurementId(): string | null {
+  return process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || null;
+}
+
 export function getTikTokPixelId(): string {
   return TIKTOK_PIXEL_ID;
 }

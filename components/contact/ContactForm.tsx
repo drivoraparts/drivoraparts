@@ -15,10 +15,19 @@ const TOPICS = [
 const inputClass =
   "mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500/20";
 
-export default function ContactForm() {
+type ContactFormProps = {
+  defaultTopic?: (typeof TOPICS)[number]["value"];
+  requireOrderId?: boolean;
+};
+
+export default function ContactForm({
+  defaultTopic = "general",
+  requireOrderId = false,
+}: ContactFormProps = {}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [topic, setTopic] = useState<(typeof TOPICS)[number]["value"]>("general");
+  const [topic, setTopic] =
+    useState<(typeof TOPICS)[number]["value"]>(defaultTopic);
   const [orderId, setOrderId] = useState("");
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
@@ -31,6 +40,11 @@ export default function ContactForm() {
     const trimmedMessage = message.trim();
     if (!name.trim() || !email.trim() || trimmedMessage.length < 10) {
       showToast("Please fill in your name, email, and a message (at least 10 characters).");
+      return;
+    }
+
+    if (requireOrderId && !orderId.trim()) {
+      showToast("Please enter your order ID so we can look up your order.");
       return;
     }
 
@@ -157,12 +171,18 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="contact-order" className="text-sm font-medium text-neutral-700">
-            Order ID <span className="font-normal text-neutral-500">(optional)</span>
+            Order ID{" "}
+            {requireOrderId ? (
+              <span className="text-red-600">*</span>
+            ) : (
+              <span className="font-normal text-neutral-500">(optional)</span>
+            )}
           </label>
           <input
             id="contact-order"
             name="orderId"
             type="text"
+            required={requireOrderId}
             value={orderId}
             onChange={(e) => setOrderId(e.target.value)}
             placeholder="If this is about an order"

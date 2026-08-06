@@ -3,6 +3,7 @@
 import Link from "next/link";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import CompanyAddress from "@/components/content/CompanyAddress";
+import NewsletterSignup from "@/components/layout/NewsletterSignup";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function FooterContent() {
@@ -10,7 +11,7 @@ export default function FooterContent() {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-4">
+      <div className="grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-5">
         <div>
           <h2 className="mb-3 text-lg font-bold">
             Drivora<span className="text-red-500">Parts</span>
@@ -26,6 +27,8 @@ export default function FooterContent() {
             <Link href="/cart">{t("cart")}</Link>
             <Link href="/catalog">Enter Market</Link>
             <Link href="/">{t("home")}</Link>
+            <Link href="/faq">FAQ</Link>
+            <Link href="/returns">Start a Return</Link>
             <Link href="/contact">{t("contactSupport")}</Link>
           </div>
         </div>
@@ -53,6 +56,14 @@ export default function FooterContent() {
             <Link href="/policies/affiliate-disclosure">{t("affiliateDisclosure")}</Link>
             <Link href="/policies/liability">{t("liability")}</Link>
           </div>
+        </div>
+
+        <div>
+          <h3 className="mb-3 text-red-500">Stay Updated</h3>
+          <p className="mb-3 text-sm text-neutral-600">
+            New listings and deals, straight to your inbox.
+          </p>
+          <NewsletterSignup />
         </div>
       </div>
 
