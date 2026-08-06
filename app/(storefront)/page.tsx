@@ -69,24 +69,25 @@ export default function Home() {
             {listingCount.toLocaleString()}+ listings — what you see is what you get.
           </p>
 
-          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+          <VehicleSelectorBar />
+
+          <div className="mt-5 flex flex-col items-center justify-center gap-x-6 gap-y-2 text-xs font-semibold uppercase tracking-wide text-neutral-300 sm:flex-row">
+            <span className="hidden text-neutral-500 sm:inline">Or browse:</span>
             <Link
               href={routes.all}
               prefetch={false}
-              className="touch-manipulation inline-block rounded-full bg-red-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-700 active:bg-red-800"
+              className="touch-manipulation underline decoration-white/30 underline-offset-4 transition-colors hover:text-white hover:decoration-red-400"
             >
               Shop All Parts
             </Link>
             <Link
               href={routes.category("body-parts")}
               prefetch={false}
-              className="touch-manipulation inline-block rounded-full border border-white/50 bg-white/10 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-white/20 active:bg-white/30"
+              className="touch-manipulation underline decoration-white/30 underline-offset-4 transition-colors hover:text-white hover:decoration-red-400"
             >
               Truck Beds & Shells
             </Link>
           </div>
-
-          <VehicleSelectorBar />
         </div>
       </section>
 
