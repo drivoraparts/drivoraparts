@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   DEFAULT_PRODUCT_IMAGE,
   resolveProductImage,
@@ -34,9 +34,12 @@ export default function OptimizedImage({
   const resolved = resolveProductImage(src);
   const optimized = optimizeImageUrl(resolved, profile);
   const [currentSrc, setCurrentSrc] = useState(optimized);
+  const triedRef = useRef<Set<string>>(new Set([optimized]));
 
   useEffect(() => {
-    setCurrentSrc(optimizeImageUrl(resolved, profile));
+    const next = optimizeImageUrl(resolved, profile);
+    triedRef.current = new Set([next]);
+    setCurrentSrc(next);
   }, [resolved, profile]);
 
   return (
@@ -48,12 +51,14 @@ export default function OptimizedImage({
       fetchPriority={fetchPriority}
       sizes={sizes ?? IMAGE_SIZES[profile]}
       onError={() => {
-        const next = nextImageFallback(resolved, currentSrc, profile);
+        const next = nextImageFallback(resolved, triedRef.current, profile);
         if (next) {
+          triedRef.current.add(next);
           setCurrentSrc(next);
           return;
         }
-        if (currentSrc !== DEFAULT_PRODUCT_IMAGE) {
+        if (!triedRef.current.has(DEFAULT_PRODUCT_IMAGE)) {
+          triedRef.current.add(DEFAULT_PRODUCT_IMAGE);
           setCurrentSrc(DEFAULT_PRODUCT_IMAGE);
         }
       }}

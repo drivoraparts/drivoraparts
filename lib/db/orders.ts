@@ -150,6 +150,54 @@ export async function getOrderById(id: string): Promise<OrderWithDetails | null>
   };
 }
 
+const COMPLETED_PURCHASE_STATUSES: OrderStatus[] = ["paid", "shipped", "delivered"];
+
+/**
+ * Real verified-purchase check for reviews: true only if this email has a
+ * paid/shipped/delivered order containing this product. Never trust a
+ * caller-supplied "verified" flag for review badges — always derive it here.
+ */
+export async function hasCompletedPurchase(
+  email: string,
+  productId: number
+): Promise<boolean> {
+  const normalizedEmail = email.trim().toLowerCase();
+  if (!normalizedEmail) return false;
+
+  const supabase = getSupabaseAdmin();
+
+  const { data: customers, error: customerError } = await supabase
+    .from("customers")
+    .select("id")
+    .ilike("email", normalizedEmail);
+
+  if (customerError) throw customerError;
+  if (!customers?.length) return false;
+
+  const customerIds = customers.map((c) => c.id as string);
+
+  const { data: orders, error: ordersError } = await supabase
+    .from("orders")
+    .select("id")
+    .in("customer_id", customerIds)
+    .in("status", COMPLETED_PURCHASE_STATUSES);
+
+  if (ordersError) throw ordersError;
+  if (!orders?.length) return false;
+
+  const orderIds = orders.map((o) => o.id as string);
+
+  const { data: items, error: itemsError } = await supabase
+    .from("order_items")
+    .select("id")
+    .in("order_id", orderIds)
+    .eq("product_id", productId)
+    .limit(1);
+
+  if (itemsError) throw itemsError;
+  return Boolean(items?.length);
+}
+
 /** Minimal status-only lookup for the public success-page poll (no PII). */
 export async function getOrderStatusById(id: string): Promise<OrderStatus | null> {
   const supabase = getSupabaseAdmin();

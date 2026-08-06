@@ -63,10 +63,15 @@ function formToPayload(form: FormState): Partial<Product> {
     stock: form.stock,
     stockQty: form.stockQty.trim() ? Number(form.stockQty) : undefined,
     condition: form.condition,
-    description: form.description.trim() || undefined,
-    thumbnail: form.thumbnail.trim() || undefined,
-    warranty: form.warranty.trim() || undefined,
-    fitment: form.fitment.trim() || undefined,
+    // Intentionally NOT `|| undefined` for these: undefined-valued keys get
+    // dropped by JSON.stringify, so clearing a field in the form would
+    // never actually reach the server — the stale override value would
+    // survive silently. Sending "" and letting the server-side merge treat
+    // blank as "remove this override" is what makes clearing actually work.
+    description: form.description.trim(),
+    thumbnail: form.thumbnail.trim(),
+    warranty: form.warranty.trim(),
+    fitment: form.fitment.trim(),
   };
 }
 

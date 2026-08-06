@@ -4,11 +4,7 @@ import { logAdminAudit } from "@/lib/monitoring/audit";
 import { logActivity } from "@/lib/monitoring/activity";
 import { getClientIp } from "@/lib/security/ip";
 import { validateProductInput } from "@/lib/admin/validate-product";
-import {
-  addProduct,
-  readAdminCatalogState,
-  GithubCatalogError,
-} from "@/lib/admin/github-catalog";
+import { addProduct, GithubCatalogError } from "@/lib/admin/github-catalog";
 import { getAllProducts } from "@/lib/inventory";
 import type { Product } from "@/lib/inventory/types";
 
@@ -28,13 +24,9 @@ export async function POST(req: Request) {
   }
 
   try {
-    const { added } = await readAdminCatalogState();
     const deployedMaxId = Math.max(0, ...getAllProducts().map((p) => p.id));
-    const pendingMaxId = Math.max(0, ...added.map((p) => p.id));
-    const id = Math.max(deployedMaxId, pendingMaxId) + 1;
 
-    const product: Product = {
-      id,
+    const productWithoutId: Omit<Product, "id"> = {
       name: body.name!.trim(),
       category: body.category!,
       brand: body.brand!,
@@ -53,17 +45,18 @@ export async function POST(req: Request) {
       createdAt: Date.now(),
     };
 
-    const { commitUrl } = await addProduct(
-      product,
-      `Add product #${id}: ${product.name} (via admin dashboard)`
+    const { commitUrl, product } = await addProduct(
+      productWithoutId,
+      deployedMaxId,
+      `Add product: ${productWithoutId.name} (via admin dashboard)`
     );
 
-    await logAdminAudit(auth.session?.email, "catalog.product_create", String(id), {
+    await logAdminAudit(auth.session?.email, "catalog.product_create", String(product.id), {
       ip,
       name: product.name,
     });
     await logActivity("info", "catalog.product_created", {
-      id,
+      id: product.id,
       name: product.name,
       admin: auth.session?.email,
       ip,

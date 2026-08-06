@@ -47,6 +47,11 @@ export default function AllProductsFeed() {
   const savedRef = useRef(readSavedState());
   const restorePendingRef = useRef(Boolean(savedRef.current));
   const restoredScrollRef = useRef(false);
+  // Bumped whenever the active filters change (see the load() effect below)
+  // so an in-flight "Load more" request started under the old filters can
+  // detect it's stale and discard its response instead of appending
+  // mismatched products onto the newly-filtered grid.
+  const requestGenerationRef = useRef(0);
   const searchParams = useSearchParams();
 
   const [query, setQuery] = useState(
@@ -116,8 +121,16 @@ export default function AllProductsFeed() {
 
   const fetchProducts = useCallback(
     async (pageNum: number, append: boolean) => {
+      const generation = requestGenerationRef.current;
       setLoading(true);
       const data = await fetchPage(pageNum);
+
+      // The active filters changed (a new load() ran) while this request
+      // was in flight — its results belong to a filter set that's no
+      // longer displayed, so discard them instead of appending/replacing.
+      if (generation !== requestGenerationRef.current) {
+        return;
+      }
 
       setProducts((prev) =>
         append ? [...prev, ...data.products] : data.products
@@ -142,6 +155,9 @@ export default function AllProductsFeed() {
 
   useEffect(() => {
     let cancelled = false;
+    // Invalidates any "Load more" request already in flight under the
+    // previous filters — see the generation check in fetchProducts.
+    requestGenerationRef.current += 1;
 
     async function load() {
       setLoading(true);

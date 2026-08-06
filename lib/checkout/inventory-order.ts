@@ -50,6 +50,10 @@ export async function commitOrderInventory(orderId: string): Promise<void> {
         inventory_deducted: true,
         inventory_deducted_at: new Date().toISOString(),
         inventory_committed_product_ids: committedProductIds,
+        // Clear a prior restore so this commit is the current source of
+        // truth — otherwise a paid->cancelled->paid cycle would leave
+        // inventory_restored stuck true from the cancellation.
+        inventory_restored: false,
         ...(oversoldItems.length > 0 ? { oversold_items: oversoldItems } : {}),
       },
     });
@@ -91,6 +95,10 @@ export async function restoreOrderInventory(orderId: string): Promise<void> {
         ...metadata,
         inventory_restored: true,
         inventory_restored_at: new Date().toISOString(),
+        // Reset so a later re-commit (order goes back to paid) actually
+        // re-deducts stock instead of seeing a stale true and skipping it.
+        inventory_deducted: false,
+        inventory_committed_product_ids: [],
       },
     });
   }

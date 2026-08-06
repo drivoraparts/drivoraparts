@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   DEFAULT_PRODUCT_IMAGE,
   resolveProductGallery,
@@ -55,9 +55,12 @@ function GalleryImage({
     : resolveProductImage(candidates[index] ?? src);
   const optimizedSrc = optimizeImageUrl(resolvedSrc, profile);
   const [currentSrc, setCurrentSrc] = useState(optimizedSrc);
+  const triedRef = useRef<Set<string>>(new Set([optimizedSrc]));
 
   useEffect(() => {
-    setCurrentSrc(optimizeImageUrl(resolvedSrc, profile));
+    const next = optimizeImageUrl(resolvedSrc, profile);
+    triedRef.current = new Set([next]);
+    setCurrentSrc(next);
   }, [resolvedSrc, profile]);
 
   return (
@@ -74,8 +77,9 @@ function GalleryImage({
           : "(max-width: 640px) 50vw, 320px"
       }
       onError={() => {
-        const next = nextImageFallback(resolvedSrc, currentSrc, profile);
+        const next = nextImageFallback(resolvedSrc, triedRef.current, profile);
         if (next) {
+          triedRef.current.add(next);
           setCurrentSrc(next);
           return;
         }

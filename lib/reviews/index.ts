@@ -15,7 +15,6 @@ export {
   getProductReviewAggregate,
   getReviewStoreSnapshot,
   getVerifiedBuyerAvatars,
-  isVerifiedPurchaseReview,
   moderateReview,
   submitReview,
   DEFAULT_AVATAR,

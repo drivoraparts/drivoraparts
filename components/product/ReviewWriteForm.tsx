@@ -25,7 +25,7 @@ export default function ReviewWriteForm({
   const [submitting, setSubmitting] = useState(false);
 
   const session = getReviewSession();
-  const canSubmit = session ? canSubmitReview(session, productId) : false;
+  const canSubmit = session ? canSubmitReview(session) : false;
 
   const handleSubmit = () => {
     if (!session) {

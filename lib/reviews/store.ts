@@ -62,24 +62,10 @@ export function getProductReviewAggregate(productId: number): {
   };
 }
 
-export function canSubmitReview(
-  context: ReviewSubmissionContext,
-  productId: number
-): boolean {
-  return (
-    Boolean(context.userId) &&
-    context.hasAccount &&
-    context.emailVerified &&
-    context.paymentCompleted &&
-    context.completedProductIds.includes(productId)
-  );
-}
-
-export function isVerifiedPurchaseReview(
-  context: ReviewSubmissionContext,
-  productId: number
-): boolean {
-  return canSubmitReview(context, productId);
+/** Basic eligibility to submit at all (guest reviews are allowed) — this is
+ *  intentionally NOT the same check as verified-purchase status. */
+export function canSubmitReview(context: ReviewSubmissionContext): boolean {
+  return Boolean(context.userId) && Boolean(context.reviewerName?.trim());
 }
 
 export function getVerifiedBuyerAvatars(
@@ -118,11 +104,10 @@ export type SubmitReviewResult =
 export function submitReview(input: SubmitReviewInput): SubmitReviewResult {
   const { productId, rating, review, context } = input;
 
-  if (!canSubmitReview(context, productId)) {
+  if (!canSubmitReview(context)) {
     return {
       ok: false,
-      error:
-        "Only logged-in verified buyers with a completed purchase can submit a review.",
+      error: "A name is required to submit a review.",
     };
   }
 
@@ -140,7 +125,9 @@ export function submitReview(input: SubmitReviewInput): SubmitReviewResult {
     productId,
     rating,
     review: review.trim(),
-    verifiedPurchase: isVerifiedPurchaseReview(context, productId),
+    // Comes straight from the caller's real completed-order lookup — never
+    // re-derive this from anything the reviewer submitted themselves.
+    verifiedPurchase: context.verifiedPurchase,
     createdAt: new Date().toISOString(),
     reviewerName: context.reviewerName,
     profileImage: context.profileImage || DEFAULT_AVATAR,

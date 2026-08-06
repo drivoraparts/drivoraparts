@@ -7,6 +7,8 @@ import {
   submitReview,
   type SubmitReviewInput,
 } from "@/lib/reviews/store";
+import { hasCompletedPurchase } from "@/lib/db/orders";
+import { isSupabaseConfigured } from "@/lib/env";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
@@ -46,6 +48,7 @@ export async function POST(req: Request) {
         : typeof body?.authorName === "string"
           ? body.authorName
           : "";
+    const email = typeof body?.email === "string" ? body.email.trim() : "";
 
     if (!Number.isFinite(productId) || productId <= 0) {
       return NextResponse.json({ error: "product_id is required" }, { status: 400 });
@@ -55,17 +58,23 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "author_name is required" }, { status: 400 });
     }
 
+    // Verified-purchase badge is only ever true when a real completed order
+    // for this product/email exists — never trust anything the reviewer
+    // submitted themselves for this. No email supplied just means an
+    // ordinary (non-verified) review, same as before.
+    const verifiedPurchase =
+      email && isSupabaseConfigured()
+        ? await hasCompletedPurchase(email, productId).catch(() => false)
+        : false;
+
     const input: SubmitReviewInput = {
       productId,
       rating,
       review: review ?? "",
       context: {
         userId: `guest-${authorName.trim().toLowerCase().replace(/\s+/g, "-")}`,
-        hasAccount: true,
-        emailVerified: true,
-        completedProductIds: [productId],
-        paymentCompleted: true,
         reviewerName: authorName.trim(),
+        verifiedPurchase,
       },
     };
 

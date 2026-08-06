@@ -49,7 +49,7 @@ export async function PATCH(req: Request) {
       await adminMarkOrderPaid(orderId);
     } else {
       await forceUpdateOrderStatus(orderId, status);
-      if (status === "cancelled" || status === "failed") {
+      if (status === "cancelled" || status === "failed" || status === "refunded") {
         await restoreOrderInventory(orderId);
       }
     }

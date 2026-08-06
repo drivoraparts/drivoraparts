@@ -74,27 +74,22 @@ export function optimizeImageUrl(
   return encodeAssetPath(rawPath);
 }
 
-/** Next URL to try when the current product image fails to load. */
+/**
+ * Next URL to try when the current product image fails to load.
+ *
+ * `tried` must contain every URL already attempted (including the current
+ * one) so this always converges on `null` in a bounded number of steps —
+ * comparing only against a single `currentSrc` let this cycle between two
+ * candidates forever (proxy fails -> raw -> proxy fails -> raw -> ...).
+ */
 export function nextImageFallback(
   resolved: string,
-  currentSrc: string,
+  tried: ReadonlySet<string>,
   _profile: ImageProfile = "card"
 ): string | null {
-  if (isProxiedRemoteUrl(resolved)) {
-    const proxied = remoteImageProxyUrl(resolved);
-    if (currentSrc !== proxied) {
-      return proxied;
-    }
-    if (currentSrc !== resolved) {
-      return resolved;
-    }
-    return null;
-  }
+  const candidates = isProxiedRemoteUrl(resolved)
+    ? [remoteImageProxyUrl(resolved), resolved]
+    : [encodeAssetPath(resolved.startsWith("/") ? resolved : `/${resolved}`)];
 
-  const direct = encodeAssetPath(resolved.startsWith("/") ? resolved : `/${resolved}`);
-  if (currentSrc !== direct) {
-    return direct;
-  }
-
-  return null;
+  return candidates.find((candidate) => !tried.has(candidate)) ?? null;
 }

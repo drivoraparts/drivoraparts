@@ -68,6 +68,15 @@ async function writeJsonFile(
 
 type AdminOverride = Partial<Product> & { _deleted?: boolean };
 
+/** Optional string fields where the admin form sends "" to mean "clear
+ *  this override", not "set it to a blank string". */
+const CLEARABLE_STRING_FIELDS = [
+  "description",
+  "thumbnail",
+  "warranty",
+  "fitment",
+] as const satisfies readonly (keyof Product)[];
+
 export async function upsertOverride(
   id: number,
   patch: Partial<Product>,
@@ -76,7 +85,15 @@ export async function upsertOverride(
   const { data, sha } = await readJsonFile<Record<string, AdminOverride>>(
     OVERRIDES_PATH
   );
-  data[String(id)] = { ...data[String(id)], ...patch };
+
+  const merged: AdminOverride = { ...data[String(id)], ...patch };
+  for (const field of CLEARABLE_STRING_FIELDS) {
+    if (merged[field] === "") {
+      delete merged[field];
+    }
+  }
+
+  data[String(id)] = merged;
   return writeJsonFile(OVERRIDES_PATH, data, sha, commitMessage);
 }
 
@@ -102,13 +119,25 @@ export async function softDeleteProduct(
   return writeJsonFile(OVERRIDES_PATH, data, sha, commitMessage);
 }
 
+/**
+ * Assigns the id from the same read used for the write (not a separate
+ * earlier read, like the caller used to do) so two near-simultaneous
+ * "Add Product" submissions can't both compute the same next id — the
+ * second one now sees the first product already in `data` and picks the
+ * id after it.
+ */
 export async function addProduct(
-  product: Product,
+  productWithoutId: Omit<Product, "id">,
+  deployedMaxId: number,
   commitMessage: string
-): Promise<{ commitUrl: string }> {
+): Promise<{ commitUrl: string; product: Product }> {
   const { data, sha } = await readJsonFile<Product[]>(ADDED_PATH);
+  const pendingMaxId = Math.max(0, ...data.map((p) => p.id));
+  const id = Math.max(deployedMaxId, pendingMaxId) + 1;
+  const product: Product = { ...productWithoutId, id };
   data.push(product);
-  return writeJsonFile(ADDED_PATH, data, sha, commitMessage);
+  const { commitUrl } = await writeJsonFile(ADDED_PATH, data, sha, commitMessage);
+  return { commitUrl, product };
 }
 
 /** Read-only fetch of both overlay files, used to compute a safe next id. */
