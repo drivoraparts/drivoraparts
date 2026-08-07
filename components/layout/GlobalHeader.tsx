@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { useTranslation } from "@/hooks/useTranslation";
+import { WISHLIST_CHANGE_EVENT, readWishlist } from "@/lib/wishlist";
 
 const NAV_LINKS = [
   { href: "/catalog/all", label: "Shop" },
@@ -30,11 +31,17 @@ export default function GlobalHeader({
   const itemCount = useCartStore((s) =>
     s.items.reduce((sum, i) => sum + i.quantity, 0)
   );
+  const [wishlistCount, setWishlistCount] = useState(0);
   const { t } = useTranslation();
   const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
+    setWishlistCount(readWishlist().length);
+
+    const onWishlistChange = () => setWishlistCount(readWishlist().length);
+    window.addEventListener(WISHLIST_CHANGE_EVENT, onWishlistChange);
+    return () => window.removeEventListener(WISHLIST_CHANGE_EVENT, onWishlistChange);
   }, []);
 
   useEffect(() => {
@@ -104,6 +111,19 @@ export default function GlobalHeader({
           >
             🔍
           </button>
+
+          <Link
+            href="/wishlist"
+            className="relative text-neutral-800 transition hover:scale-110"
+            aria-label="View wishlist"
+          >
+            ♡
+            {mounted && wishlistCount > 0 ? (
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-xs font-bold text-white">
+                {wishlistCount}
+              </span>
+            ) : null}
+          </Link>
 
           <button
             onClick={() => setCartOpen(true)}

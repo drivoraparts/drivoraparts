@@ -17,6 +17,9 @@ import {
 import { getProductThumbnail } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory/routes";
 import type { CatalogProductCardData } from "./CatalogProductCard";
+import WishlistButton from "@/components/wishlist/WishlistButton";
+import CompareButton from "@/components/compare/CompareButton";
+import QuickViewModal from "./QuickViewModal";
 
 export type CatalogAllSavedState = Omit<
   ListScrollState,
@@ -78,6 +81,34 @@ export default function AllProductsGridCard({
               New
             </span>
           ) : null}
+          <div className="absolute right-1 top-1 z-20">
+            <WishlistButton
+              product={{
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                compareAtPrice: product.compareAtPrice,
+                thumbnail,
+                category: product.category,
+                brand: product.brand,
+              }}
+              size="sm"
+            />
+          </div>
+          <div className="absolute inset-x-1 bottom-1 z-20 hidden gap-1 opacity-0 transition-opacity group-hover:opacity-100 sm:flex">
+            <CompareButton
+              product={{
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                thumbnail,
+                category: product.category,
+                brand: product.brand,
+              }}
+              className="flex-1 justify-center !bg-white"
+            />
+            <QuickViewModal productId={product.id} triggerClassName="flex-1 justify-center" />
+          </div>
           <ProductImage
             src={thumbnail}
             alt={product.name}

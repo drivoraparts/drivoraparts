@@ -25,6 +25,8 @@ import StickyPurchaseBar from "./StickyPurchaseBar";
 import ProductDiscoverySections from "./ProductDiscoverySections";
 import PopularCategoriesSection from "@/components/catalog/PopularCategoriesSection";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
+import WishlistButton from "@/components/wishlist/WishlistButton";
+import CompareButton from "@/components/compare/CompareButton";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import {
@@ -250,6 +252,33 @@ export default function ProductTemplate({
                 product={cartProduct}
                 quantity={quantity}
                 className="!rounded-none !border-2 !border-red-600 !bg-white !py-3.5 !text-sm !font-black !uppercase !tracking-[0.12em] !text-neutral-900 hover:!bg-red-50"
+              />
+            </div>
+
+            <div className="mt-3 flex items-center gap-2">
+              <WishlistButton
+                product={{
+                  id: product.id,
+                  name: product.name,
+                  price: product.price,
+                  compareAtPrice: product.compareAtPrice,
+                  thumbnail: primaryImage,
+                  category: product.category,
+                  brand: product.brand,
+                }}
+                showLabel
+                className="flex-1 px-4 py-2.5"
+              />
+              <CompareButton
+                product={{
+                  id: product.id,
+                  name: product.name,
+                  price: product.price,
+                  thumbnail: primaryImage,
+                  category: product.category,
+                  brand: product.brand,
+                }}
+                className="flex-1 justify-center px-4 py-2.5"
               />
             </div>
 

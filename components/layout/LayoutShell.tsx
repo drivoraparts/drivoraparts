@@ -6,6 +6,7 @@ import GlobalHeader from "./GlobalHeader";
 import GlobalDrawer from "./GlobalDrawer";
 import GlobalFooter from "./GlobalFooter";
 import AnnouncementBar from "@/components/ui/AnnouncementBar";
+import CompareBar from "@/components/compare/CompareBar";
 const MarketOverlay = dynamic(() => import("../market/MarketOverlay"), {
   ssr: false,
 });
@@ -50,6 +51,9 @@ export default function LayoutShell({ children }: Props) {
 
       {/* FOOTER */}
       <GlobalFooter />
+
+      {/* COMPARE BAR */}
+      <CompareBar />
     </div>
   );
 }
