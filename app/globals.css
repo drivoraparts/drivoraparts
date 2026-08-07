@@ -105,6 +105,47 @@ img.rounded-full {
   }
 }
 
+/* Sitewide — header announcement marquee */
+.announcement-marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+}
+
+.announcement-marquee-track {
+  animation: announcement-marquee 32s linear infinite;
+}
+
+.announcement-bar:hover .announcement-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes announcement-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-marquee-track {
+    animation: none;
+  }
+}
+
 .site-shell,
 .site-shell > main {
   box-sizing: border-box;

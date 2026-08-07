@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] text-neutral-900">
       {/* Compact hero — static image (no scroll JS) */}
-      <section className="relative -mt-[72px] flex min-h-[58vh] min-h-[420px] w-full min-w-0 items-center justify-center overflow-hidden pt-[72px] sm:-mt-[80px] sm:min-h-[62vh] sm:pt-[80px]">
+      <section className="relative -mt-[106px] flex min-h-[58vh] min-h-[420px] w-full min-w-0 items-center justify-center overflow-hidden pt-[106px] sm:-mt-[114px] sm:min-h-[62vh] sm:pt-[114px]">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src={heroSrc}

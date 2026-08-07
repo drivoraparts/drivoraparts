@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import GlobalHeader from "./GlobalHeader";
 import GlobalDrawer from "./GlobalDrawer";
 import GlobalFooter from "./GlobalFooter";
+import AnnouncementBar from "@/components/ui/AnnouncementBar";
 const MarketOverlay = dynamic(() => import("../market/MarketOverlay"), {
   ssr: false,
 });
@@ -26,6 +27,9 @@ export default function LayoutShell({ children }: Props) {
         setCartOpen={setCartOpen}
       />
 
+      {/* ANNOUNCEMENT BAR */}
+      <AnnouncementBar />
+
       {/* MARKET OVERLAY */}
       {marketOpen && (
         <MarketOverlay onClose={() => setMarketOpen(false)} />
@@ -40,7 +44,7 @@ export default function LayoutShell({ children }: Props) {
       />
 
       {/* PAGE CONTENT */}
-      <main className="storefront-page box-border min-h-screen min-h-[100dvh] w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] pt-[72px] sm:pt-[80px]">
+      <main className="storefront-page box-border min-h-screen min-h-[100dvh] w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] pt-[106px] sm:pt-[114px]">
         {children}
       </main>
 
