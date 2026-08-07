@@ -51,7 +51,7 @@ export default function CatalogProductCard({
   return (
     <article
       id={catalogProductAnchorId(product.id)}
-      className="group relative overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-sm transition-all duration-300 hover:border-red-500 hover:shadow-md"
+      className="group relative overflow-hidden rounded-xl border border-neutral-200/80 bg-white shadow-sm transition-all duration-300 hover:border-red-300 hover:shadow-lg"
     >
       <Link
         href={productHref}

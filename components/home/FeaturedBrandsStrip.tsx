@@ -32,7 +32,7 @@ export default function FeaturedBrandsStrip() {
 
   return (
     <section
-      className="border-b border-neutral-200 bg-white py-12 sm:py-16"
+      className="border-b border-neutral-200 bg-neutral-50 py-12 sm:py-16"
       aria-label="Featured brands"
     >
       <ScrollReveal className="mx-auto max-w-2xl px-4 text-center sm:px-6">

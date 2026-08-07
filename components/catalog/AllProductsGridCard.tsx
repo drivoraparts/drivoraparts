@@ -65,7 +65,7 @@ export default function AllProductsGridCard({
   return (
     <article
       id={catalogProductAnchorId(product.id)}
-      className="group relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
+      className="group relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-200/80 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-red-200 hover:shadow-lg"
     >
       <Link
         href={productHref}

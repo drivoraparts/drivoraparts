@@ -24,7 +24,7 @@ function IconWrap({ children }: { children: React.ReactNode }) {
   );
 }
 
-const REASONS: Reason[] = [
+const REASONS: (Reason & { accent?: "red" })[] = [
   {
     title: "OEM & Aftermarket, One Catalog",
     detail: "Genuine takeout parts and performance aftermarket, side by side.",
@@ -47,6 +47,7 @@ const REASONS: Reason[] = [
   {
     title: "Performance Tested",
     detail: "Every listing is checked for accurate condition before it ships.",
+    accent: "red",
     icon: (
       <IconWrap>
         <path d="M12 2l2.4 6.6L21 9l-5 4.6L17.4 21 12 17.3 6.6 21 8 13.6 3 9l6.6-.4z" />
@@ -76,6 +77,7 @@ const REASONS: Reason[] = [
   {
     title: "Fast Order Processing",
     detail: "Orders are reviewed and moved to fulfillment quickly, not queued for days.",
+    accent: "red",
     icon: (
       <IconWrap>
         <circle cx="12" cy="12" r="9" />
@@ -103,7 +105,13 @@ export default function WhyDrivoraSection() {
           <dl className="mt-8 grid gap-x-6 gap-y-6 sm:grid-cols-2">
             {REASONS.map((reason) => (
               <div key={reason.title} className="flex gap-3">
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-50 text-red-600">
+                <div
+                  className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
+                    reason.accent === "red"
+                      ? "bg-red-50 text-red-600"
+                      : "bg-neutral-100 text-neutral-700"
+                  }`}
+                >
                   {reason.icon}
                 </div>
                 <div>
