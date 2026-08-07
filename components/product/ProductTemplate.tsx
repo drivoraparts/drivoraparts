@@ -41,11 +41,35 @@ import {
 
 const MAX_QUANTITY = 10;
 
-function MetaRow({ label, value }: { label: string; value: string }) {
+function MetaRow({
+  label,
+  value,
+  tone,
+}: {
+  label: string;
+  value: string;
+  tone?: "positive" | "neutral";
+}) {
   return (
-    <div className="flex items-start justify-between gap-4 border-b border-neutral-200 py-2.5 text-sm last:border-b-0">
+    <div className="flex items-center justify-between gap-4 border-b border-neutral-200 py-2.5 text-sm last:border-b-0">
       <span className="text-neutral-500">{label}</span>
-      <span className="text-right font-semibold text-neutral-900">{value}</span>
+      {tone ? (
+        <span
+          className={`flex items-center gap-1.5 text-right font-semibold ${
+            tone === "positive" ? "text-emerald-700" : "text-neutral-500"
+          }`}
+        >
+          <span
+            className={`h-1.5 w-1.5 shrink-0 rounded-full ${
+              tone === "positive" ? "bg-emerald-500" : "bg-neutral-400"
+            }`}
+            aria-hidden
+          />
+          {value}
+        </span>
+      ) : (
+        <span className="text-right font-semibold text-neutral-900">{value}</span>
+      )}
     </div>
   );
 }
@@ -298,6 +322,7 @@ export default function ProductTemplate({
             <MetaRow
               label="Stock Status"
               value={inStock ? "In Stock" : "Out of Stock"}
+              tone={inStock ? "positive" : "neutral"}
             />
             <MetaRow label="Brand" value={product.brand} />
           </div>

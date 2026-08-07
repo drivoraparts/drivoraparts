@@ -14,7 +14,7 @@ export default function SeasonalCollectionsSection() {
           description={collection.blurb}
           products={collection.products}
           viewAllHref={collection.href}
-          tone={index % 2 === 0 ? "light" : "muted"}
+          tone={index % 2 === 0 ? "muted" : "light"}
         />
       ))}
     </>
