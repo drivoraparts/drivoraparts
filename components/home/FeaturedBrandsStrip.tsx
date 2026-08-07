@@ -37,11 +37,15 @@ export default function FeaturedBrandsStrip() {
     >
       <ScrollReveal className="mx-auto max-w-2xl px-4 text-center sm:px-6">
         <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-red-600">
-          Featured Brands
+          Compatible Brands
         </p>
         <h2 className="mt-3 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
           Parts for the makes and brands builders trust
         </h2>
+        <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+          Listings span performance, OEM, and aftermarket parts compatible with these
+          manufacturers — Drivora is an independent marketplace, not an authorized dealer.
+        </p>
       </ScrollReveal>
 
       <div
@@ -49,15 +53,20 @@ export default function FeaturedBrandsStrip() {
         role="list"
         aria-label="Brands we carry parts for"
       >
-        <div className="brand-marquee-track flex w-max items-center gap-x-12 pl-12 sm:gap-x-16">
+        <div className="brand-marquee-track flex w-max items-center gap-x-8 pl-8 sm:gap-x-10">
           {loop.map((brand, index) => (
-            <span
-              key={`${brand}-${index}`}
-              role="listitem"
-              className="shrink-0 select-none text-lg font-bold tracking-tight text-neutral-300 transition-colors hover:text-neutral-500 sm:text-xl"
-            >
-              {brand}
-            </span>
+            <div key={`${brand}-${index}`} className="flex shrink-0 items-center gap-x-8 sm:gap-x-10">
+              <span
+                role="listitem"
+                className="select-none whitespace-nowrap text-xl font-bold tracking-tight text-neutral-400 transition-colors duration-200 hover:text-neutral-900 sm:text-2xl"
+              >
+                {brand}
+              </span>
+              <span
+                aria-hidden="true"
+                className="h-1 w-1 shrink-0 rounded-full bg-neutral-300"
+              />
+            </div>
           ))}
         </div>
       </div>
