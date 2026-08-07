@@ -64,6 +64,47 @@ img.rounded-full {
   max-width: none;
 }
 
+/* Homepage — Featured Brands marquee */
+.brand-marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.brand-marquee-track {
+  animation: brand-marquee 38s linear infinite;
+}
+
+.brand-marquee-mask:hover .brand-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes brand-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-marquee-track {
+    animation: none;
+  }
+}
+
 .site-shell,
 .site-shell > main {
   box-sizing: border-box;

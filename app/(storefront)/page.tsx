@@ -2,6 +2,13 @@ import Link from "next/link";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
+import CinematicLifestyleSection from "@/components/home/CinematicLifestyleSection";
+import ShopByVehicleSection from "@/components/home/ShopByVehicleSection";
+import FeaturedBrandsStrip from "@/components/home/FeaturedBrandsStrip";
+import WhyDrivoraSection from "@/components/home/WhyDrivoraSection";
+import HomeStatsBand from "@/components/home/HomeStatsBand";
+import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
+import ScrollReveal from "@/components/home/ScrollReveal";
 import {
   getFeaturedBatch,
   getFeaturedTimeSlot,
@@ -141,17 +148,42 @@ export default function Home() {
         </section>
       ) : null}
 
+      <CinematicLifestyleSection />
+
+      <ShopByVehicleSection />
+
+      <FeaturedBrandsStrip />
+
       <HomeTrustBadges />
 
-      {/* Value prop + freight note */}
-      <section className="border-t border-neutral-200 bg-neutral-900 px-4 py-14 text-center text-white sm:px-6">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">
-            Exact item, as pictured — or upgraded to your spec
+      <WhyDrivoraSection />
+
+      <HomeStatsBand />
+
+      <GuidesPreviewSection />
+
+      {/* Premium closing CTA */}
+      <section className="relative overflow-hidden px-4 py-20 text-center text-white sm:px-6 sm:py-28">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={directAssetUrl("/home/pexels-mikebirdy-30734921.jpg")}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            sizes="100vw"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-neutral-950/80" />
+          <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/70 to-neutral-950/40" />
+        </div>
+
+        <ScrollReveal className="relative z-10 mx-auto max-w-2xl">
+          <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+            Start your build today
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-neutral-300 sm:text-base">
-            Oversized truck beds and shells ship freight — contact us for an LTL quote.
-            Secure checkout with crypto accepted worldwide.
+            Exact item, as pictured — or upgraded to your spec. Secure crypto
+            checkout, worldwide shipping, freight-ready logistics.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
@@ -169,7 +201,7 @@ export default function Home() {
               Freight quote
             </Link>
           </div>
-        </div>
+        </ScrollReveal>
       </section>
     </div>
   );
