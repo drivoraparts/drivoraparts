@@ -67,35 +67,36 @@ export default function CinematicLifestyleSection() {
           </h2>
         </ScrollReveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-12 lg:gap-6">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:gap-7">
           {CARDS.map((card, index) => (
             <ScrollReveal key={card.headline} delayMs={index * 90}>
               <Link
                 href={card.href}
                 prefetch={false}
-                className="group relative flex min-h-[400px] flex-col overflow-hidden rounded-2xl sm:min-h-[440px]"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-[0_16px_40px_rgba(0,0,0,0.35)] transition-shadow duration-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.45)]"
               >
-                <img
-                  src={directAssetUrl(card.image)}
-                  alt={card.headline}
-                  loading="lazy"
-                  decoding="async"
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
+                <div className="relative h-56 shrink-0 overflow-hidden sm:h-64">
+                  <img
+                    src={directAssetUrl(card.image)}
+                    alt={card.headline}
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                </div>
 
-                <div className="relative mt-auto p-6 sm:p-7">
-                  <h3 className="text-xl font-bold text-white sm:text-2xl">
+                <div className="flex flex-1 flex-col p-6 sm:p-7">
+                  <h3 className="text-xl font-bold text-neutral-900 sm:text-2xl">
                     {card.headline}
                   </h3>
-                  <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-200">
+                  <p className="mt-3 text-sm leading-relaxed text-neutral-600">
                     {card.description}
                   </p>
                   <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-neutral-400">
                     {card.audience}
                   </p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-red-400 transition-colors group-hover:text-red-300">
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-red-600 transition-colors group-hover:text-red-700">
                     {card.ctaLabel}
                     <span
                       aria-hidden
