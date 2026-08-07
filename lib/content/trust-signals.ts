@@ -65,6 +65,52 @@ export const TRUST_SIGNALS: TrustSignal[] = [
   },
 ];
 
+export type TrustCategory = {
+  id: string;
+  eyebrow: string;
+  headline: string;
+  detail: string;
+  /** Real, text-only marks -- no third-party logos we aren't licensed to show. */
+  chips: string[];
+  seal: TrustSignal["seal"];
+};
+
+export const TRUST_CATEGORIES: TrustCategory[] = [
+  {
+    id: "payments",
+    eyebrow: "Payments",
+    headline: "Pay your way — crypto, done right",
+    detail:
+      "Every order runs through NOWPayments. No bank holds, no chargebacks, no placeholder badge.",
+    chips: ["Bitcoin", "Ethereum", "USDT", "300+ coins"],
+    seal: "payments",
+  },
+  {
+    id: "logistics",
+    eyebrow: "Logistics",
+    headline: "From single parts to full engine assemblies",
+    detail: `Freight-ready logistics coordinated worldwide from our US and ${JAPAN_LOGISTICS_HUB.country} hubs.`,
+    chips: ["LTL Freight", "Worldwide Shipping"],
+    seal: "freight",
+  },
+  {
+    id: "security",
+    eyebrow: "Security",
+    headline: "Encrypted, every request",
+    detail: "Checkout and account pages run on modern HTTPS/TLS — no exceptions.",
+    chips: ["256-bit TLS", "Encrypted Checkout"],
+    seal: "ssl",
+  },
+  {
+    id: "verified",
+    eyebrow: "Verified Marketplace",
+    headline: `${COMPANY_LEGAL_NAME} — US registered`,
+    detail: `Corporate HQ in ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state}. Every listing reviewed before it goes live.`,
+    chips: ["US Registered", "Verified Listings", "Professional Support"],
+    seal: "company",
+  },
+];
+
 export const TRUST_POLICY_LINKS = [
   { href: "/policies/refund-policy", label: "Refund policy" },
   { href: "/policies/shipping-policy", label: "Shipping policy" },
