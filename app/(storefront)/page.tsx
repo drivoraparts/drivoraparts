@@ -8,6 +8,7 @@ import FeaturedBrandsStrip from "@/components/home/FeaturedBrandsStrip";
 import WhyDrivoraSection from "@/components/home/WhyDrivoraSection";
 import HomeStatsBand from "@/components/home/HomeStatsBand";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
+import HomeStatementBanner from "@/components/home/HomeStatementBanner";
 import ScrollReveal from "@/components/home/ScrollReveal";
 import {
   getFeaturedBatch,
@@ -125,10 +126,10 @@ export default function Home() {
             <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
-                  Live listings
+                  Curated from live inventory
                 </p>
                 <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
-                  Featured products
+                  Performance Picks
                 </h2>
               </div>
               <Link
@@ -147,6 +148,8 @@ export default function Home() {
           </div>
         </section>
       ) : null}
+
+      <HomeStatementBanner />
 
       <CinematicLifestyleSection />
 
