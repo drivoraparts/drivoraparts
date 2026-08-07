@@ -18,6 +18,16 @@ const GUIDE_PREVIEWS = [
     summary: "What to upgrade first, and why.",
   },
   {
+    slug: "engine-buying-guide",
+    title: "Engine Buying Guide",
+    summary: "What to check before you commit to a used or crate engine.",
+  },
+  {
+    slug: "transmission-guide",
+    title: "Transmission Guide",
+    summary: "Matching a transmission to your engine and how you drive.",
+  },
+  {
     slug: "turbocharger-basics",
     title: "Turbocharger Basics",
     summary: "How sizing changes the way a car drives.",
@@ -49,7 +59,7 @@ export default function GuidesPreviewSection() {
           </Link>
         </ScrollReveal>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {GUIDE_PREVIEWS.map((guide, index) => (
             <ScrollReveal key={guide.slug} delayMs={index * 80}>
               <Link

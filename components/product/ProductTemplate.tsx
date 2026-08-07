@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import type { Product } from "@/data/store";
+import { routes } from "@/lib/inventory/routes";
 import { trackEvent } from "@/lib/analytics/client";
 import type { ProductCatalogMeta } from "@/lib/inventory/productEnhancements";
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
@@ -21,6 +23,8 @@ import FitmentAssuranceCallout from "./FitmentAssuranceCallout";
 import ProductBreadcrumbs from "./ProductBreadcrumbs";
 import StickyPurchaseBar from "./StickyPurchaseBar";
 import ProductDiscoverySections from "./ProductDiscoverySections";
+import PopularCategoriesSection from "@/components/catalog/PopularCategoriesSection";
+import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import {
@@ -288,6 +292,28 @@ export default function ProductTemplate({
         currentProduct={recentlyViewedEntry}
         relatedProducts={relatedProducts}
       />
+
+      <PopularCategoriesSection />
+
+      <GuidesPreviewSection />
+
+      <section className="border-t border-neutral-200 bg-neutral-950 px-4 py-14 text-center text-white sm:px-6">
+        <div className="mx-auto max-w-xl">
+          <h2 className="text-2xl font-bold sm:text-3xl">
+            Keep building
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-300">
+            1,400+ listings across engines, transmissions, suspension, brakes, and more.
+          </p>
+          <Link
+            href={routes.all}
+            prefetch={false}
+            className="mt-6 inline-block touch-manipulation rounded-full bg-red-600 px-9 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-500 active:bg-red-700"
+          >
+            Continue Browsing
+          </Link>
+        </div>
+      </section>
 
       <StickyPurchaseBar
         ctaRef={ctaRef}

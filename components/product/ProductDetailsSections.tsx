@@ -224,74 +224,83 @@ function FitmentLogistics({
   );
 }
 
-type SectionProps = {
-  title: string;
-  defaultOpen?: boolean;
-  children: ReactNode;
+type DetailTab = {
+  id: string;
+  label: string;
+  content: ReactNode;
 };
 
-function CollapsibleSection({
-  title,
-  defaultOpen = false,
-  children,
+function DetailTabs({
+  tabs,
   theme = "dark",
-}: SectionProps & { theme?: "dark" | "pro" }) {
-  const [open, setOpen] = useState(defaultOpen);
+}: {
+  tabs: DetailTab[];
+  theme?: "dark" | "pro";
+}) {
+  const [activeId, setActiveId] = useState(tabs[0]?.id);
   const isPro = theme === "pro";
+  const active = tabs.find((tab) => tab.id === activeId) ?? tabs[0];
+
+  if (!active) return null;
 
   return (
     <section
       className={
         isPro
-          ? "rounded-sm border border-neutral-300 bg-neutral-50 px-4 py-3 shadow-sm"
+          ? "rounded-sm border border-neutral-300 bg-neutral-50 shadow-sm"
           : undefined
       }
-      style={isPro ? undefined : { ...glassCard, padding: "14px" }}
+      style={isPro ? undefined : glassCard}
     >
-      <button
-        type="button"
-        className={`details-section-toggle ${isPro ? "details-section-toggle-pro" : ""}`}
-        aria-expanded={open}
-        onClick={() => setOpen((value) => !value)}
+      <div
+        role="tablist"
+        aria-label="Product details"
+        className={
+          isPro
+            ? "flex gap-1 overflow-x-auto border-b border-neutral-300 px-2 pt-2"
+            : "flex gap-1 overflow-x-auto border-b border-white/10 px-2 pt-2"
+        }
       >
-        <span className={isPro ? "text-neutral-900" : undefined}>
-          {open ? "▼" : "▶"} {title}
-        </span>
-      </button>
-      {open && (
-        <div className={`details-section-body ${isPro ? "details-section-body-pro" : ""}`}>
-          {children}
-        </div>
-      )}
+        {tabs.map((tab) => {
+          const isActive = tab.id === active.id;
+          return (
+            <button
+              key={tab.id}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              onClick={() => setActiveId(tab.id)}
+              className={
+                isPro
+                  ? `shrink-0 whitespace-nowrap rounded-t-md px-3 py-2.5 text-sm font-bold transition-colors ${
+                      isActive
+                        ? "border-b-2 border-red-600 text-neutral-900"
+                        : "border-b-2 border-transparent text-neutral-500 hover:text-neutral-800"
+                    }`
+                  : `shrink-0 whitespace-nowrap rounded-t-md px-3 py-2.5 text-sm font-bold transition-colors ${
+                      isActive
+                        ? "border-b-2 border-red-500 text-white"
+                        : "border-b-2 border-transparent text-white/50 hover:text-white/80"
+                    }`
+              }
+            >
+              {tab.label}
+            </button>
+          );
+        })}
+      </div>
 
-      <style jsx>{`
-        .details-section-toggle {
-          width: 100%;
-          padding: 0;
-          border: none;
-          background: none;
-          color: #fff;
-          font-size: 16px;
-          font-weight: 700;
-          text-align: left;
-          cursor: pointer;
+      <div
+        role="tabpanel"
+        className={
+          isPro
+            ? "px-4 py-4 text-sm leading-relaxed text-neutral-700"
+            : "px-4 py-4 text-sm leading-relaxed text-white/75"
         }
-
-        .details-section-toggle-pro {
-          color: #111827;
-        }
-
-        .details-section-body {
-          margin-top: 12px;
-          color: rgba(255, 255, 255, 0.75);
-          line-height: 1.6;
-          white-space: pre-line;
-        }
-
-        .details-section-body-pro {
-          color: #374151;
-        }
-      `}</style>
+        style={{ whiteSpace: "pre-line" }}
+      >
+        {active.content}
+      </div>
     </section>
   );
 }
@@ -309,60 +318,78 @@ export default function ProductDetailsSections({
 }: ProductDetailsSectionsProps) {
   const { t } = useTranslation();
 
+  const tabs: DetailTab[] = [
+    {
+      id: "description",
+      label: t("descriptionTitle"),
+      content: (
+        <>
+          <p
+            className={
+              theme === "pro"
+                ? "mb-4 rounded-sm border border-neutral-300 bg-white px-3 py-2.5 text-sm leading-relaxed text-neutral-700"
+                : undefined
+            }
+            style={
+              theme === "pro"
+                ? undefined
+                : {
+                    marginBottom: "14px",
+                    padding: "10px 12px",
+                    borderRadius: "6px",
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    background: "rgba(255,255,255,0.04)",
+                    fontSize: "14px",
+                    lineHeight: 1.55,
+                    color: "rgba(255,255,255,0.82)",
+                  }
+            }
+          >
+            <TranslatedText as="span">{t("productImageNotice")}</TranslatedText>
+          </p>
+          {descriptionBody ? (
+            <TranslatedText as="span">{descriptionBody}</TranslatedText>
+          ) : null}
+        </>
+      ),
+    },
+  ];
+
+  if (specifications) {
+    tabs.push({
+      id: "specifications",
+      label: t("specificationsTitle"),
+      content: <TranslatedText as="span">{specifications}</TranslatedText>,
+    });
+  }
+
+  if (hasLogistics(logistics)) {
+    tabs.push({
+      id: "fitment",
+      label: t("fitmentLogisticsTitle"),
+      content: <FitmentLogistics logistics={logistics} theme={theme} />,
+    });
+  }
+
+  if (hasInstallationResources(installResources)) {
+    tabs.push({
+      id: "installation",
+      label: t("installationResourcesTitle"),
+      content: <InstallationResourcesBlock resources={installResources} theme={theme} />,
+    });
+  }
+
+  if (shippingAndWarranty) {
+    tabs.push({
+      id: "shipping",
+      label: t("shippingWarrantyTitle"),
+      content: <TranslatedText as="span">{shippingAndWarranty}</TranslatedText>,
+    });
+  }
+
   return (
     <div className="product-details-sections">
-      <CollapsibleSection title={t("descriptionTitle")} defaultOpen theme={theme}>
-        <p
-          className={
-            theme === "pro"
-              ? "mb-4 rounded-sm border border-neutral-300 bg-white px-3 py-2.5 text-sm leading-relaxed text-neutral-700"
-              : undefined
-          }
-          style={
-            theme === "pro"
-              ? undefined
-              : {
-                  marginBottom: "14px",
-                  padding: "10px 12px",
-                  borderRadius: "6px",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  background: "rgba(255,255,255,0.04)",
-                  fontSize: "14px",
-                  lineHeight: 1.55,
-                  color: "rgba(255,255,255,0.82)",
-                }
-          }
-        >
-          <TranslatedText as="span">{t("productImageNotice")}</TranslatedText>
-        </p>
-        {descriptionBody ? (
-          <TranslatedText as="span">{descriptionBody}</TranslatedText>
-        ) : null}
-      </CollapsibleSection>
-
-      {specifications && (
-        <CollapsibleSection title={t("specificationsTitle")} theme={theme}>
-          <TranslatedText as="span">{specifications}</TranslatedText>
-        </CollapsibleSection>
-      )}
-
-      {hasLogistics(logistics) && (
-        <CollapsibleSection title={t("fitmentLogisticsTitle")} defaultOpen theme={theme}>
-          <FitmentLogistics logistics={logistics} theme={theme} />
-        </CollapsibleSection>
-      )}
-
-      {hasInstallationResources(installResources) && (
-        <CollapsibleSection title={t("installationResourcesTitle")} theme={theme}>
-          <InstallationResourcesBlock resources={installResources} theme={theme} />
-        </CollapsibleSection>
-      )}
-
-      {shippingAndWarranty && (
-        <CollapsibleSection title={t("shippingWarrantyTitle")} theme={theme}>
-          <TranslatedText as="span">{shippingAndWarranty}</TranslatedText>
-        </CollapsibleSection>
-      )}
+      <DetailTabs tabs={tabs} theme={theme} />
 
       <CustomerReviewsSection
         productId={productId}

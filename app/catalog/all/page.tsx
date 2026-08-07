@@ -43,6 +43,7 @@ export default function AllProductsPage() {
       />
       <main className="min-h-screen bg-white text-neutral-900">
         <CatalogHero />
+        <CatalogVehicleFinderSection />
         <PopularCategoriesSection />
         <SeasonalCollectionsSection />
         <Suspense fallback={null}>
@@ -50,7 +51,6 @@ export default function AllProductsPage() {
         </Suspense>
         <RecentlyAddedRail />
         <StaffPicksSection />
-        <CatalogVehicleFinderSection />
 
         <div className="px-3 pb-6 pt-10 sm:px-6">
           <header className="mb-3 sm:mb-6">

@@ -84,7 +84,7 @@ export default function ProductDiscoverySections({
 
   return (
     <>
-      <ProductScrollRow title="Related Products" products={relatedCards} />
+      <ProductScrollRow title="Complete Your Build" products={relatedCards} />
       <ProductScrollRow title="Recently Viewed" products={recentCards} />
     </>
   );

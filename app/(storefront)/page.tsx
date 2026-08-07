@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
@@ -10,6 +11,9 @@ import HomeStatsBand from "@/components/home/HomeStatsBand";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
 import HomeStatementBanner from "@/components/home/HomeStatementBanner";
 import ScrollReveal from "@/components/home/ScrollReveal";
+import TrendingRail from "@/components/catalog/TrendingRail";
+import RecentlyAddedRail from "@/components/catalog/RecentlyAddedRail";
+import SeasonalCollectionsSection from "@/components/catalog/SeasonalCollectionsSection";
 import {
   getFeaturedBatch,
   getFeaturedTimeSlot,
@@ -95,16 +99,18 @@ export default function Home() {
         </div>
       </section>
 
+      <ShopByVehicleSection />
+
       {/* Category grid — priority interaction zone */}
       <section className="relative z-10 border-b border-neutral-200 bg-white px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
-                Shop by category
+                Popular Categories
               </p>
               <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Find your next upgrade
+                Find the Right Parts for Every Build
               </h2>
             </div>
             <Link
@@ -119,6 +125,10 @@ export default function Home() {
           <HomeCategoryGrid />
         </div>
       </section>
+
+      <CinematicLifestyleSection />
+
+      <HomeStatementBanner />
 
       {featuredProducts.length > 0 ? (
         <section className="relative z-10 border-b border-neutral-200 bg-[var(--background)] px-4 py-12 sm:px-6 lg:px-8">
@@ -149,21 +159,23 @@ export default function Home() {
         </section>
       ) : null}
 
-      <HomeStatementBanner />
+      <Suspense fallback={null}>
+        <TrendingRail />
+      </Suspense>
 
-      <CinematicLifestyleSection />
+      <RecentlyAddedRail />
 
-      <ShopByVehicleSection />
+      <SeasonalCollectionsSection />
 
       <FeaturedBrandsStrip />
-
-      <HomeTrustBadges />
 
       <WhyDrivoraSection />
 
       <HomeStatsBand />
 
       <GuidesPreviewSection />
+
+      <HomeTrustBadges />
 
       {/* Premium closing CTA */}
       <section className="relative overflow-hidden px-4 py-20 text-center text-white sm:px-6 sm:py-28">
