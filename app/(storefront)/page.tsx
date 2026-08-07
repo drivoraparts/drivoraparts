@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Link from "next/link";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
@@ -159,9 +158,7 @@ export default function Home() {
         </section>
       ) : null}
 
-      <Suspense fallback={null}>
-        <TrendingRail />
-      </Suspense>
+      <TrendingRail />
 
       <RecentlyAddedRail />
 

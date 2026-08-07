@@ -46,9 +46,7 @@ export default function AllProductsPage() {
         <CatalogVehicleFinderSection />
         <PopularCategoriesSection />
         <SeasonalCollectionsSection />
-        <Suspense fallback={null}>
-          <TrendingRail />
-        </Suspense>
+        <TrendingRail />
         <RecentlyAddedRail />
         <StaffPicksSection />
 
