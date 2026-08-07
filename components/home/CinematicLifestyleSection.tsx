@@ -7,6 +7,7 @@ type LifestyleCard = {
   image: string;
   headline: string;
   description: string;
+  audience: string;
   ctaLabel: string;
   href: string;
 };
@@ -15,29 +16,37 @@ const CARDS: LifestyleCard[] = [
   {
     image: "/home/pexels-stephanlouis-7012890.jpg",
     headline: "Built for the Streets",
-    description: "Lighting, body, and styling upgrades that turn heads.",
-    ctaLabel: "Shop Lighting",
+    description:
+      "High-performance lighting, exterior styling, and aerodynamic upgrades designed to give your vehicle a bold presence — and real function on the road, not just looks.",
+    audience: "Perfect for daily drivers, street builds, and custom styling projects.",
+    ctaLabel: "Explore Street Upgrades",
     href: routes.category("lighting"),
   },
   {
     image: "/home/pexels-garvin-st-villier-719266-14277598.jpg",
     headline: "Built for Boost",
-    description: "Turbochargers and forced-induction hardware for real power gains.",
-    ctaLabel: "Shop Turbochargers",
+    description:
+      "Forced-induction hardware sized to match how the car is actually driven — quick-spooling setups for the street, bigger turbos for builds chasing top-end power.",
+    audience: "Designed for tuners, racers, and performance enthusiasts.",
+    ctaLabel: "Discover Performance Parts",
     href: routes.category("turbocharger"),
   },
   {
     image: "/home/pexels-sejio402-29181492.jpg",
     headline: "Built in the Shop",
-    description: "Swap-ready transmissions, trusted by builders who do it right.",
-    ctaLabel: "Shop Transmissions",
+    description:
+      "Swap-ready manual and automatic transmissions, matched to real bellhousing patterns and gear ratios — the kind of parts a shop can trust to get the job done once.",
+    audience: "Trusted by mechanics, workshops, and serious DIY builders.",
+    ctaLabel: "Browse Workshop Essentials",
     href: routes.category("transmission"),
   },
   {
     image: "/home/pexels-juan-montes-92812630-11456554.jpg",
     headline: "Built to Restore",
-    description: "Crate and takeout engines for restorations and swaps alike.",
-    ctaLabel: "Shop Engines",
+    description:
+      "Crate and takeout engines sourced and inspected for restorations, engine swaps, and everything in between — real units with honest condition notes, no surprises.",
+    audience: "Ideal for restoration professionals and classic car collectors.",
+    ctaLabel: "Start Your Restoration",
     href: routes.category("engine"),
   },
 ];
@@ -58,13 +67,13 @@ export default function CinematicLifestyleSection() {
           </h2>
         </ScrollReveal>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-12 lg:gap-5">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-12 lg:gap-6">
           {CARDS.map((card, index) => (
             <ScrollReveal key={card.headline} delayMs={index * 90}>
               <Link
                 href={card.href}
                 prefetch={false}
-                className="group relative block aspect-[4/3] overflow-hidden rounded-2xl sm:aspect-[16/10]"
+                className="group relative flex min-h-[400px] flex-col overflow-hidden rounded-2xl sm:min-h-[440px]"
               >
                 <img
                   src={directAssetUrl(card.image)}
@@ -72,18 +81,21 @@ export default function CinematicLifestyleSection() {
                   loading="lazy"
                   decoding="async"
                   sizes="(max-width: 640px) 100vw, 50vw"
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/10" />
 
-                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-                  <h3 className="text-lg font-bold text-white sm:text-xl">
+                <div className="relative mt-auto p-6 sm:p-7">
+                  <h3 className="text-xl font-bold text-white sm:text-2xl">
                     {card.headline}
                   </h3>
-                  <p className="mt-1.5 max-w-sm text-sm leading-relaxed text-neutral-300">
+                  <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-200">
                     {card.description}
                   </p>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-red-400 transition-colors group-hover:text-red-300">
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-neutral-400">
+                    {card.audience}
+                  </p>
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-red-400 transition-colors group-hover:text-red-300">
                     {card.ctaLabel}
                     <span
                       aria-hidden
