@@ -43,7 +43,7 @@ export default function HomeTrustBadges() {
               key={signal.id}
               className="group flex flex-col items-center rounded-2xl border border-neutral-800/90 bg-neutral-900/70 px-4 py-6 text-center shadow-[0_10px_40px_rgba(0,0,0,0.35)] transition-colors hover:border-neutral-700 hover:bg-neutral-900"
             >
-              <div className="rounded-full ring-1 ring-white/10 transition-transform group-hover:scale-105">
+              <div className="rounded-full text-neutral-300 ring-1 ring-white/10 transition-transform group-hover:scale-105">
                 <TrustSealGraphic
                   kind={signal.seal}
                   className="h-[4.5rem] w-[4.5rem] shrink-0"

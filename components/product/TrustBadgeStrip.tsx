@@ -228,6 +228,7 @@ export default function TrustBadgeStrip({
         .trust-pill-pro .trust-pill-icon {
           background: #f9fafb;
           border-color: #e5e7eb;
+          color: #525252;
         }
 
         .trust-pill-icon {
@@ -240,6 +241,7 @@ export default function TrustBadgeStrip({
           border-radius: 999px;
           background: rgba(255, 255, 255, 0.04);
           border: 1px solid rgba(255, 255, 255, 0.08);
+          color: rgba(255, 255, 255, 0.75);
         }
 
         .trust-pill-copy {
