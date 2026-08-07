@@ -3,8 +3,11 @@
 import { useState, type ReactNode } from "react";
 import CustomerReviewsSection from "./CustomerReviewsSection";
 import TranslatedText from "@/components/i18n/TranslatedText";
-import type { ProductLogistics } from "@/lib/inventory/productEnhancements";
-import { hasLogistics } from "@/lib/inventory/productEnhancements";
+import type {
+  InstallationResources,
+  ProductLogistics,
+} from "@/lib/inventory/productEnhancements";
+import { hasInstallationResources, hasLogistics } from "@/lib/inventory/productEnhancements";
 import { useTranslation } from "@/hooks/useTranslation";
 import { glassCard } from "./styles";
 
@@ -16,8 +19,71 @@ type ProductDetailsSectionsProps = {
   shippingAndWarranty: string;
   reviewCount: number;
   logistics: ProductLogistics;
+  installResources: InstallationResources;
   theme?: "dark" | "pro";
 };
+
+function InstallationResourcesBlock({
+  resources,
+  theme = "dark",
+}: {
+  resources: InstallationResources;
+  theme?: "dark" | "pro";
+}) {
+  return (
+    <div>
+      {resources.difficulty && (
+        <LogisticsRow label="Difficulty" value={resources.difficulty} theme={theme} />
+      )}
+      {resources.estimatedTime && (
+        <LogisticsRow
+          label="Estimated Time"
+          value={resources.estimatedTime}
+          theme={theme}
+        />
+      )}
+      {resources.torqueSpecs && (
+        <LogisticsRow
+          label="Torque Specs"
+          value={<TranslatedText as="span">{resources.torqueSpecs}</TranslatedText>}
+          theme={theme}
+        />
+      )}
+      {resources.guideUrl && (
+        <LogisticsRow
+          label="Install Guide"
+          value={
+            <a
+              href={resources.guideUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 underline hover:text-red-700"
+            >
+              View guide
+            </a>
+          }
+          theme={theme}
+        />
+      )}
+      {resources.videoUrl && (
+        <LogisticsRow
+          label="Install Video"
+          value={
+            <a
+              href={resources.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 underline hover:text-red-700"
+            >
+              Watch video
+            </a>
+          }
+          theme={theme}
+        />
+      )}
+    </div>
+  );
+}
 
 function LogisticsRow({
   label,
@@ -105,7 +171,13 @@ function FitmentLogistics({
           value={
             <span style={{ display: "block" }}>
               {logistics.included.map((item) => (
-                <span key={item} style={{ display: "block" }}>
+                <span
+                  key={item}
+                  style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}
+                >
+                  <span aria-hidden style={{ color: "#059669", flexShrink: 0 }}>
+                    ✓
+                  </span>
                   <TranslatedText as="span">{item}</TranslatedText>
                 </span>
               ))}
@@ -232,6 +304,7 @@ export default function ProductDetailsSections({
   shippingAndWarranty,
   reviewCount,
   logistics,
+  installResources,
   theme = "dark",
 }: ProductDetailsSectionsProps) {
   const { t } = useTranslation();
@@ -276,6 +349,12 @@ export default function ProductDetailsSections({
       {hasLogistics(logistics) && (
         <CollapsibleSection title={t("fitmentLogisticsTitle")} defaultOpen theme={theme}>
           <FitmentLogistics logistics={logistics} theme={theme} />
+        </CollapsibleSection>
+      )}
+
+      {hasInstallationResources(installResources) && (
+        <CollapsibleSection title={t("installationResourcesTitle")} theme={theme}>
+          <InstallationResourcesBlock resources={installResources} theme={theme} />
         </CollapsibleSection>
       )}
 

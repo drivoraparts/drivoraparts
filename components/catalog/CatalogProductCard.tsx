@@ -24,6 +24,7 @@ export type CatalogProductCardData = {
   images?: string[];
   category: string;
   brand?: string;
+  isNew?: boolean;
 };
 
 export default function CatalogProductCard({

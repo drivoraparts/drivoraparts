@@ -25,6 +25,13 @@ import type { CatalogProductCardData } from "./CatalogProductCard";
 
 const PAGE_SIZE = 48;
 
+const SORT_OPTIONS = [
+  { value: "newest", label: "Newest First" },
+  { value: "price-asc", label: "Price: Low to High" },
+  { value: "price-desc", label: "Price: High to Low" },
+  { value: "name-asc", label: "Name: A to Z" },
+];
+
 const categoriesList = categories;
 const brandsList = brands;
 
@@ -66,6 +73,9 @@ export default function AllProductsFeed() {
   const [priceFilter, setPriceFilter] = useState<PriceFilterValue>(
     (savedRef.current?.priceFilter as PriceFilterValue) ?? "all"
   );
+  const [sortFilter, setSortFilter] = useState(
+    savedRef.current?.sortFilter ?? "newest"
+  );
   const [page, setPage] = useState(savedRef.current?.page ?? 1);
   const [products, setProducts] = useState<CatalogProductCardData[]>([]);
   const [total, setTotal] = useState(0);
@@ -105,6 +115,8 @@ export default function AllProductsFeed() {
     []
   );
 
+  const sortOptions = SORT_OPTIONS;
+
   const fetchPage = useCallback(async (pageNum: number) => {
     const params = new URLSearchParams({
       page: String(pageNum),
@@ -114,10 +126,11 @@ export default function AllProductsFeed() {
     if (categoryFilter) params.set("category", categoryFilter);
     if (brandFilter) params.set("brand", brandFilter);
     if (priceFilter !== "all") params.set("price", priceFilter);
+    if (sortFilter !== "newest") params.set("sort", sortFilter);
 
     const res = await fetch(`/api/catalog/products?${params.toString()}`);
     return (await res.json()) as ApiResponse;
-  }, [query, categoryFilter, brandFilter, priceFilter]);
+  }, [query, categoryFilter, brandFilter, priceFilter, sortFilter]);
 
   const fetchProducts = useCallback(
     async (pageNum: number, append: boolean) => {
@@ -211,15 +224,16 @@ export default function AllProductsFeed() {
         categoryFilter,
         brandFilter,
         priceFilter,
+        sortFilter,
         productId,
       });
     },
-    [page, query, categoryFilter, brandFilter, priceFilter]
+    [page, query, categoryFilter, brandFilter, priceFilter, sortFilter]
   );
 
   return (
     <div>
-      <div className="mb-4 space-y-3">
+      <div className="sticky top-[106px] z-30 -mx-3 mb-4 space-y-3 border-b border-neutral-200 bg-white/95 px-3 pb-3 pt-3 backdrop-blur sm:top-[114px] sm:-mx-6 sm:px-6">
         <div className="relative">
           <input
             type="search"
@@ -241,7 +255,7 @@ export default function AllProductsFeed() {
           ) : null}
         </div>
 
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           <CatalogFilterSelect
             ariaLabel="Filter by category"
             value={categoryFilter}
@@ -266,6 +280,13 @@ export default function AllProductsFeed() {
             value={priceFilter}
             onChange={(value) => setPriceFilter(value as PriceFilterValue)}
             options={priceOptions}
+          />
+
+          <CatalogFilterSelect
+            ariaLabel="Sort products"
+            value={sortFilter}
+            onChange={setSortFilter}
+            options={sortOptions}
           />
         </div>
 

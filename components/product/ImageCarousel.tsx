@@ -108,6 +108,7 @@ export default function ImageCarousel({
   const total = galleryImages.length;
   const hasMultiple = total > 1;
   const [activeIndex, setActiveIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   useEffect(() => {
     setActiveIndex(0);
@@ -117,6 +118,24 @@ export default function ImageCarousel({
     const next = ((index % total) + total) % total;
     setActiveIndex(next);
   };
+
+  useEffect(() => {
+    if (!lightboxOpen) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setLightboxOpen(false);
+      if (event.key === "ArrowLeft") scrollToIndex(activeIndex - 1);
+      if (event.key === "ArrowRight") scrollToIndex(activeIndex + 1);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lightboxOpen, activeIndex, total]);
 
   const isCard = variant === "card";
   const imageProfile: ImageProfile = isCard ? "grid" : "detail";
@@ -160,6 +179,28 @@ export default function ImageCarousel({
             </button>
           </>
         )}
+
+        {!isCard && (
+          <button
+            type="button"
+            aria-label="View fullscreen"
+            onClick={() => setLightboxOpen(true)}
+            className="absolute bottom-3 right-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 bg-white/90 text-neutral-900 shadow-sm transition hover:bg-white"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.8}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-4 w-4"
+              aria-hidden
+            >
+              <path d="M8 3H5a2 2 0 00-2 2v3M16 3h3a2 2 0 012 2v3M8 21H5a2 2 0 01-2-2v-3M16 21h3a2 2 0 002-2v-3" />
+            </svg>
+          </button>
+        )}
       </div>
 
       {hasMultiple && !isCard && (
@@ -180,6 +221,67 @@ export default function ImageCarousel({
               }`}
             />
           ))}
+        </div>
+      )}
+
+      {lightboxOpen && !isCard && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${alt} — fullscreen gallery`}
+          className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/95 p-4"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <button
+            type="button"
+            aria-label="Close fullscreen view"
+            onClick={() => setLightboxOpen(false)}
+            className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-2xl text-white transition hover:bg-white/20"
+          >
+            ✕
+          </button>
+
+          <div
+            className="relative flex h-full max-h-[85vh] w-full max-w-4xl items-center justify-center"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <img
+              src={optimizeImageUrl(
+                resolveProductImage(activeSrc),
+                "hero"
+              )}
+              alt={`${alt} — image ${activeIndex + 1}`}
+              className="max-h-full max-w-full select-none object-contain"
+              draggable={false}
+            />
+
+            {hasMultiple && (
+              <>
+                <button
+                  type="button"
+                  aria-label="Previous image"
+                  onClick={() => scrollToIndex(activeIndex - 1)}
+                  className="absolute left-2 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white/10 text-2xl text-white transition hover:bg-white/20 sm:left-4"
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next image"
+                  onClick={() => scrollToIndex(activeIndex + 1)}
+                  className="absolute right-2 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white/10 text-2xl text-white transition hover:bg-white/20 sm:right-4"
+                >
+                  ›
+                </button>
+              </>
+            )}
+          </div>
+
+          {hasMultiple && (
+            <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs font-semibold text-white/70">
+              {activeIndex + 1} / {total}
+            </p>
+          )}
         </div>
       )}
     </div>

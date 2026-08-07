@@ -118,6 +118,25 @@ export type Product = {
   freightNotes?: string;
   /** Warranty liability terms, e.g. "Parts only — no labor covered". */
   warrantyTerms?: string;
+
+  /* =======================================================
+     INSTALLATION RESOURCES (OPTIONAL)
+     -------------------------------------------------------
+     Only render the "Installation Resources" block when at
+     least one of these is actually present — never fabricate
+     placeholder torque specs, guides, or run times.
+  ======================================================= */
+
+  /** Rough difficulty rating for a DIY install, e.g. "Beginner", "Advanced". */
+  installDifficulty?: string;
+  /** Rough hands-on time, e.g. "2-3 hours". */
+  installEstimatedTime?: string;
+  /** Key torque specs, e.g. "Head bolts: 22 ft-lb + 90°". */
+  installTorqueSpecs?: string;
+  /** Link to a written install guide. */
+  installGuideUrl?: string;
+  /** Link to an install video (YouTube, etc.). */
+  installVideoUrl?: string;
 };
 
 /** Structured fitment & logistics shown on the product page. */

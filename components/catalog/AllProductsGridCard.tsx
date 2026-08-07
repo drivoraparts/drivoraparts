@@ -27,6 +27,7 @@ export type CatalogAllSavedState = Omit<
   categoryFilter: string;
   brandFilter: string;
   priceFilter: string;
+  sortFilter: string;
 };
 
 export function saveCatalogAllState(state: CatalogAllSavedState) {
@@ -61,7 +62,7 @@ export default function AllProductsGridCard({
   return (
     <article
       id={catalogProductAnchorId(product.id)}
-      className="relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm"
+      className="group relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
     >
       <Link
         href={productHref}
@@ -71,14 +72,19 @@ export default function AllProductsGridCard({
       />
 
       <div className="p-1.5 pb-1">
-        <div className="aspect-square w-full overflow-hidden rounded-md border border-neutral-200 bg-neutral-50">
+        <div className="relative aspect-square w-full overflow-hidden rounded-md border border-neutral-200 bg-neutral-50">
+          {product.isNew ? (
+            <span className="absolute left-1 top-1 z-20 rounded-full bg-red-600 px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide text-white sm:text-[9px]">
+              New
+            </span>
+          ) : null}
           <ProductImage
             src={thumbnail}
             alt={product.name}
             profile="grid"
             loading={priority ? "eager" : "lazy"}
             fetchPriority={priority ? "high" : undefined}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
         <h3 className="mt-1 line-clamp-2 text-[10px] font-semibold leading-snug text-neutral-900 sm:text-[11px]">

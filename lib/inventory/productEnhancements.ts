@@ -8,6 +8,14 @@ import { getProductReviewAggregate } from "@/lib/reviews";
 
 export type { ProductLogistics };
 
+export type InstallationResources = {
+  difficulty?: string;
+  estimatedTime?: string;
+  torqueSpecs?: string;
+  guideUrl?: string;
+  videoUrl?: string;
+};
+
 export type ProductCatalogMeta = {
   horsepower?: string;
   mileage: string;
@@ -19,7 +27,19 @@ export type ProductCatalogMeta = {
   specifications: string;
   shippingAndWarranty: string;
   logistics: ProductLogistics;
+  installResources: InstallationResources;
 };
+
+/** True when at least one real installation-resource field is populated. */
+export function hasInstallationResources(resources: InstallationResources): boolean {
+  return Boolean(
+    resources.difficulty ||
+      resources.estimatedTime ||
+      resources.torqueSpecs ||
+      resources.guideUrl ||
+      resources.videoUrl
+  );
+}
 
 /** True when at least one structured logistics field is populated. */
 export function hasLogistics(logistics: ProductLogistics): boolean {
@@ -182,6 +202,13 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
     specifications: sections.specifications,
     shippingAndWarranty: sections.shippingAndWarranty,
     logistics: resolveProductLogistics(product),
+    installResources: {
+      difficulty: product.installDifficulty?.trim() || undefined,
+      estimatedTime: product.installEstimatedTime?.trim() || undefined,
+      torqueSpecs: product.installTorqueSpecs?.trim() || undefined,
+      guideUrl: product.installGuideUrl?.trim() || undefined,
+      videoUrl: product.installVideoUrl?.trim() || undefined,
+    },
   };
 }
 

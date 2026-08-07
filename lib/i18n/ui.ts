@@ -71,6 +71,7 @@ export const UI = {
   weightLabel: "Shipping Weight",
   freightNotesLabel: "Freight / Shipping Notes",
   warrantyTermsLabel: "Warranty Terms",
+  installationResourcesTitle: "Installation Resources",
 } as const;
 
 export type UiKey = keyof typeof UI;

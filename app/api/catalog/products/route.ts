@@ -11,6 +11,7 @@ import {
 
 const DEFAULT_LIMIT = 48;
 const MAX_LIMIT = 96;
+const NEW_BADGE_WINDOW_DAYS = 14;
 
 export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
@@ -23,13 +24,22 @@ export async function GET(request: NextRequest) {
   const category = params.get("category") || "";
   const brand = params.get("brand") || "";
   const priceFilter = (params.get("price") || "all") as PriceFilterValue;
+  const sort = params.get("sort") || "newest";
 
   // Newest-first — products without a createdAt (most of the legacy catalog)
   // sort to the back as if timestamped 0, so any newly added product with a
   // real createdAt automatically surfaces at the top of All Products.
-  let items = [...getAllProducts()].sort(
-    (a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0)
-  );
+  let items = [...getAllProducts()];
+
+  if (sort === "price-asc") {
+    items.sort((a, b) => a.price - b.price);
+  } else if (sort === "price-desc") {
+    items.sort((a, b) => b.price - a.price);
+  } else if (sort === "name-asc") {
+    items.sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    items.sort((a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0));
+  }
 
   if (category) {
     items = items.filter((p) => p.category === category);
@@ -57,6 +67,7 @@ export async function GET(request: NextRequest) {
 
   const total = items.length;
   const start = (page - 1) * limit;
+  const newSinceMs = Date.now() - NEW_BADGE_WINDOW_DAYS * 24 * 60 * 60 * 1000;
   const pageItems = items.slice(start, start + limit).map((product) => ({
     id: product.id,
     name: product.name,
@@ -66,6 +77,7 @@ export async function GET(request: NextRequest) {
     images: product.images,
     category: product.category,
     brand: product.brand,
+    isNew: Boolean(product.createdAt && product.createdAt >= newSinceMs),
   }));
 
   return NextResponse.json({

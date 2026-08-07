@@ -16,6 +16,7 @@ import PowerLevelSection, {
   type ProSpecSection,
 } from "./PowerLevelSection";
 import ProductDetailsSections from "./ProductDetailsSections";
+import CompatibilityHighlight from "./CompatibilityHighlight";
 import FitmentAssuranceCallout from "./FitmentAssuranceCallout";
 import ProductBreadcrumbs from "./ProductBreadcrumbs";
 import StickyPurchaseBar from "./StickyPurchaseBar";
@@ -188,6 +189,11 @@ export default function ProductTemplate({
             <ConditionBadge category={product.category} condition={rawCondition} />
           </div>
 
+          <CompatibilityHighlight
+            fitment={catalogMeta.logistics?.fitment}
+            drivetrain={catalogMeta.logistics?.drivetrain}
+          />
+
           <PowerLevelSection sections={specSections} />
 
           <div ref={ctaRef} className="mt-6 border-t border-neutral-200 pt-5">
@@ -271,6 +277,7 @@ export default function ProductTemplate({
             shippingAndWarranty={catalogMeta.shippingAndWarranty}
             reviewCount={catalogMeta.reviewCount}
             logistics={catalogMeta.logistics}
+            installResources={catalogMeta.installResources}
             theme="pro"
           />
         </div>

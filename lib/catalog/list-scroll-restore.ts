@@ -11,6 +11,7 @@ export type ListScrollState = {
   categoryFilter?: string;
   brandFilter?: string;
   priceFilter?: string;
+  sortFilter?: string;
 };
 
 export const LIST_SCROLL_KEYS = {
