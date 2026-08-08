@@ -12,6 +12,15 @@ function resolveAdminPathname(headerStore: Headers): string {
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
+  manifest: "/admin-manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "DP Admin",
+    statusBarStyle: "default",
+  },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default async function AdminLayout({
