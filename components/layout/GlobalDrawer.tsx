@@ -46,6 +46,13 @@ export default function GlobalDrawer({
                   <Link href="/cart" className="transition hover:text-neutral-900" onClick={() => setMenuOpen(false)}>
                     {t("cart")}
                   </Link>
+                  <Link
+                    href="/track-order"
+                    className="transition hover:text-neutral-900"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Track Order
+                  </Link>
                 </div>
               </div>
 
