@@ -639,6 +639,60 @@ export async function sendAdminNewOrderEmail(input: {
   });
 }
 
+/** Admin's counterpart to sendPaymentReceivedEmail -- fires from the same
+ *  payment-confirmed webhook path, never at checkout/order-creation time. */
+export async function sendAdminPaymentConfirmedEmail(input: {
+  orderId: string;
+  customerName: string;
+  customerEmail: string;
+  customerPhone?: string;
+  shippingAddress?: string;
+  total: number;
+  items: OrderInvoiceLine[];
+  transactionId?: string;
+}): Promise<boolean> {
+  const orderRef = formatOrderRef(input.orderId);
+  const siteUrl = getSiteUrl();
+  const adminUrl = `${siteUrl}/admin/orders`;
+  const itemRows = input.items
+    .map(
+      (item) =>
+        `<li style="margin:0 0 6px;">${escapeHtml(item.name)} × ${item.quantity} — $${(item.unitPrice * item.quantity).toFixed(2)}</li>`
+    )
+    .join("");
+
+  return sendEmail({
+    to: getAdminEmail(),
+    subject: `Payment confirmed — order #${orderRef} — $${input.total.toFixed(2)} from ${input.customerName}`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#16a34a;font-family:Arial,Helvetica,sans-serif;">Payment confirmed</p>
+      <h1 style="margin:0 0 16px;font-size:26px;color:#111827;font-family:Georgia,'Times New Roman',Times,serif;">Order #${orderRef} — Validated</h1>
+
+      ${renderReceiptMetaTable(`
+        ${renderReceiptMetaRow("Customer", escapeHtml(input.customerName))}
+        ${renderReceiptMetaRow("Email", escapeHtml(input.customerEmail))}
+        ${input.customerPhone ? renderReceiptMetaRow("Phone", escapeHtml(input.customerPhone)) : ""}
+        ${input.shippingAddress ? renderReceiptMetaRow("Ship to", escapeHtml(input.shippingAddress)) : ""}
+        ${renderReceiptMetaRow("Total", `$${input.total.toFixed(2)} USD`)}
+        ${renderReceiptMetaRow("Payment method", "NOWPayments · Cryptocurrency")}
+        ${renderReceiptMetaRow("Status", `<span style="color:#16a34a;">Paid</span>`)}
+        ${input.transactionId ? renderReceiptMetaRow("Transaction ID", escapeHtml(input.transactionId)) : ""}
+      `)}
+
+      <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#374151;font-family:Arial,Helvetica,sans-serif;">Items ordered</p>
+      <ul style="margin:0 0 24px;padding-left:18px;font-size:13px;line-height:1.6;color:#374151;font-family:Arial,Helvetica,sans-serif;">${itemRows}</ul>
+
+      <p style="margin:0;font-size:14px;font-family:Arial,Helvetica,sans-serif;">
+        <a href="${adminUrl}" style="color:#dc2626;font-weight:700;text-decoration:none;">Open order in admin dashboard →</a>
+      </p>
+    `,
+      `Payment confirmed for order #${orderRef} from ${input.customerName}.`,
+      "Store notification"
+    ),
+  });
+}
+
 export async function sendOrderShippedEmail(input: {
   to: string;
   customerName: string;

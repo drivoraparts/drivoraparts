@@ -25,6 +25,7 @@ import {
 import {
 
   sendPaymentReceivedEmail,
+  sendAdminPaymentConfirmedEmail,
 
 } from "@/lib/email/send";
 
@@ -38,7 +39,6 @@ import { createCheckoutPayment } from "@/lib/payments";
 
 import type { PaymentProviderId } from "@/lib/payments/types";
 
-import { emailCustomerOrderInvoice } from "@/lib/checkout/customer-invoice";
 import { commitOrderInventory, restoreOrderInventory } from "@/lib/checkout/inventory-order";
 import { lockOrderItemsFromCatalog } from "@/lib/checkout/validate-items";
 import { processCheckoutWithoutSupabase } from "@/lib/checkout/offline";
@@ -295,23 +295,17 @@ export async function processCheckout(input: {
 
 
 
-  await emailCustomerOrderInvoice({
-    to: customer.email,
-    customerName: customer.full_name,
-    customerEmail: customer.email,
-    customerPhone: customer.phone ?? undefined,
-    shippingAddress: customer.shipping_address ?? undefined,
+  // Deliberately no customer/admin email here. Reaching this point only
+  // means an order + NOWPayments invoice were created ("pending") -- not
+  // that payment happened. Sending a confirmation-sounding email now would
+  // tell both the customer and admin the order is done before it is. The
+  // real confirmation emails (sendPaymentReceivedEmail to the customer,
+  // sendAdminPaymentConfirmedEmail to admin) fire from
+  // applyOrderPaidSideEffects() below, which only runs once the NOWPayments
+  // webhook confirms payment -- see handlePaidWebhook / finalizeOrderPaid.
+  await logActivity("info", "checkout.order_pending_created", {
     orderId: order.id,
-    total: Number(order.total),
-    subtotal: Number(order.subtotal),
-    shipping: Number(order.shipping),
-    paymentUrl: payment.paymentUrl,
-    items: order.items.map((item) => ({
-      name: item.name,
-      quantity: item.quantity,
-      price: Number(item.price),
-      image: item.image,
-    })),
+    itemCount: order.items.length,
   });
 
 
@@ -460,6 +454,22 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
       subtotal: Number(updated.subtotal),
       shipping: Number(updated.shipping),
 
+    });
+
+    await sendAdminPaymentConfirmedEmail({
+      orderId,
+      customerName: updated.customer.full_name,
+      customerEmail: updated.customer.email,
+      customerPhone: updated.customer.phone ?? undefined,
+      shippingAddress: updated.customer.shipping_address ?? undefined,
+      total: Number(updated.total),
+      items: updated.items.map((item) => ({
+        name: item.name,
+        quantity: item.quantity,
+        unitPrice: Number(item.price),
+        image: item.image,
+      })),
+      transactionId: payment?.provider_payment_id ?? undefined,
     });
 
   }
