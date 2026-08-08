@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Price from "@/components/currency/Price";
+import { useCartStore } from "@/lib/store/cartStore";
+import { clearCheckoutFormDraft } from "@/lib/checkout/form-persist";
 import {
   readMetaCheckoutItems,
   trackMetaPurchase,
@@ -52,6 +54,7 @@ export default function SuccessStatus({
   const [total, setTotal] = useState<number | null>(null);
   const [resolvedOrderId, setResolvedOrderId] = useState<string | null>(orderId);
   const purchaseTracked = useRef(false);
+  const clearCart = useCartStore((s) => s.clearCart);
 
   useEffect(() => {
     if (!orderId && !npPaymentId) return;
@@ -91,6 +94,12 @@ export default function SuccessStatus({
 
         if (data.status === "paid") {
           setView("paid");
+          // Only now -- payment is actually confirmed -- is it safe to
+          // clear the cart. Clearing it earlier (e.g. when Pay Now is
+          // clicked) would wipe the customer's cart before they've even
+          // paid, so backing out of NOWPayments landed on an empty cart.
+          clearCart();
+          clearCheckoutFormDraft();
           if (
             !purchaseTracked.current &&
             typeof data.total === "number" &&
@@ -133,7 +142,7 @@ export default function SuccessStatus({
       active = false;
       clearInterval(interval);
     };
-  }, [orderId, npPaymentId]);
+  }, [orderId, npPaymentId, clearCart]);
 
   const { heading, subtext, message } = COPY[view];
   const totalLabel = view === "paid" ? "Total Paid" : "Order Total";

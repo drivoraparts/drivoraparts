@@ -16,6 +16,7 @@ import {
 } from "@/lib/inventory/discounts";
 import ProductImage from "@/components/media/ProductImage";
 import { useTranslation } from "@/hooks/useTranslation";
+import { readCheckoutFormDraft, writeCheckoutFormDraft } from "@/lib/checkout/form-persist";
 
 const glassCard =
   "box-border w-full max-w-full rounded-lg border border-neutral-200 bg-white p-4 shadow-sm sm:p-6";
@@ -67,6 +68,26 @@ export default function CheckoutPage() {
       setHydrated(true);
     });
   }, []);
+
+  // Restore customer info if the customer left for NOWPayments and came
+  // back without completing payment. Read after mount (not as a lazy
+  // useState initializer) so the server-rendered empty inputs match the
+  // client's first render -- no hydration mismatch.
+  useEffect(() => {
+    const draft = readCheckoutFormDraft();
+    if (!draft) return;
+    setFullName(draft.fullName);
+    setEmail(draft.email);
+    setPhone(draft.phone);
+    setAddress(draft.address);
+    setCity(draft.city);
+    setZip(draft.zip);
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    writeCheckoutFormDraft({ fullName, email, phone, address, city, zip });
+  }, [hydrated, fullName, email, phone, address, city, zip]);
 
   useEffect(() => {
     if (!hydrated || !cart.length || checkoutTracked.current) return;
@@ -152,7 +173,11 @@ export default function CheckoutPage() {
         cart.map((item) => ({ id: item.id, quantity: item.quantity }))
       );
 
-      clearCart();
+      // Do NOT clear the cart here. Reaching NOWPayments only means an order
+      // was created ("pending") -- not that payment succeeded. If the
+      // customer backs out or abandons payment, they need their cart intact
+      // to try again. The cart is only cleared once /success confirms the
+      // order actually reached "paid" (see SuccessStatus.tsx).
       window.location.href = paymentUrl;
     } catch {
       showToast("Checkout failed");
