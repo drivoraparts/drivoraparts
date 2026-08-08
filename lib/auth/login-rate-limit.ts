@@ -6,7 +6,7 @@ import { logActivity } from "@/lib/monitoring/activity";
 export const LOGIN_RATE_PATH = "/api/auth/login";
 
 const LOGIN_WINDOW_MS = 15 * 60_000;
-const LOGIN_MAX_ATTEMPTS = 5;
+const LOGIN_MAX_ATTEMPTS = 10;
 
 export async function enforceLoginRateLimit(request: Request): Promise<Response | null> {
   const ip = getClientIp(request);
@@ -36,8 +36,8 @@ export async function recordFailedLoginAttempt(request: Request, email: string) 
 
   // Note: does NOT call checkRateLimit again — enforceLoginRateLimit already
   // consumed one unit of the budget for this request. Calling it a second
-  // time here would double-count every failed attempt against the 5-attempt
-  // limit, locking legitimate users out after ~2-3 typos instead of 5.
+  // time here would double-count every failed attempt against the
+  // LOGIN_MAX_ATTEMPTS limit, locking legitimate users out twice as fast.
   await logActivity("warn", "Failed admin login attempt", {
     ip,
     email,

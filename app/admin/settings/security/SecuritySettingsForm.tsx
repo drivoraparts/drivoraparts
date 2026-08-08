@@ -3,6 +3,67 @@
 import { FormEvent, useState } from "react";
 import AdminShell from "@/components/admin/AdminShell";
 
+function EyeIcon({ open }: { open: boolean }) {
+  return open ? (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-4.5 w-4.5">
+      <path d="M2 10s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6z" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="10" cy="10" r="2.5" />
+    </svg>
+  ) : (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-4.5 w-4.5">
+      <path
+        d="M2.5 2.5l15 15M8.3 8.4a2.5 2.5 0 003.3 3.3M6.2 6.3C3.8 7.6 2 10 2 10s3 6 8 6c1.5 0 2.8-.4 3.9-1M11.8 4.4A9.5 9.5 0 0118 10s-.7 1.4-2 2.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function PasswordField({
+  id,
+  label,
+  value,
+  onChange,
+  minLength,
+}: {
+  id: string;
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+  minLength?: number;
+}) {
+  const [revealed, setRevealed] = useState(false);
+
+  return (
+    <div>
+      <label htmlFor={id} className="mb-2 block text-sm text-zinc-600">
+        {label}
+      </label>
+      <div className="relative">
+        <input
+          id={id}
+          type={revealed ? "text" : "password"}
+          minLength={minLength}
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
+          className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 pr-11 outline-none focus:border-red-400/60"
+          required
+        />
+        <button
+          type="button"
+          onClick={() => setRevealed((v) => !v)}
+          aria-label={revealed ? "Hide password" : "Show password"}
+          aria-pressed={revealed}
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 transition hover:text-zinc-600"
+        >
+          <EyeIcon open={revealed} />
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function SecuritySettingsForm() {
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -80,49 +141,28 @@ export default function SecuritySettingsForm() {
         <form onSubmit={handlePasswordSubmit} className="space-y-5 rounded-xl bg-white shadow-sm border border-zinc-200 p-6">
           <h2 className="text-lg font-semibold">Change password</h2>
 
-          <div>
-            <label htmlFor="current-password" className="mb-2 block text-sm text-zinc-600">
-              Current password
-            </label>
-            <input
-              id="current-password"
-              type="password"
-              value={currentPassword}
-              onChange={(event) => setCurrentPassword(event.target.value)}
-              className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
-              required
-            />
-          </div>
+          <PasswordField
+            id="current-password"
+            label="Current password"
+            value={currentPassword}
+            onChange={setCurrentPassword}
+          />
 
-          <div>
-            <label htmlFor="new-password" className="mb-2 block text-sm text-zinc-600">
-              New password
-            </label>
-            <input
-              id="new-password"
-              type="password"
-              minLength={8}
-              value={newPassword}
-              onChange={(event) => setNewPassword(event.target.value)}
-              className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
-              required
-            />
-          </div>
+          <PasswordField
+            id="new-password"
+            label="New password"
+            minLength={8}
+            value={newPassword}
+            onChange={setNewPassword}
+          />
 
-          <div>
-            <label htmlFor="confirm-password" className="mb-2 block text-sm text-zinc-600">
-              Confirm new password
-            </label>
-            <input
-              id="confirm-password"
-              type="password"
-              minLength={8}
-              value={confirmPassword}
-              onChange={(event) => setConfirmPassword(event.target.value)}
-              className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
-              required
-            />
-          </div>
+          <PasswordField
+            id="confirm-password"
+            label="Confirm new password"
+            minLength={8}
+            value={confirmPassword}
+            onChange={setConfirmPassword}
+          />
 
           <button
             type="submit"
