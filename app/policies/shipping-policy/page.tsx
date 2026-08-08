@@ -52,7 +52,7 @@ export default function ShippingPolicyPage() {
           paragraphs: [
             "Select premium and specialty performance components may be inspected, prepared, and dispatched from our Japan or Australia inventory and logistics hubs before onward delivery to your destination. These facilities support quality control and fulfillment for parts sourced through our Japanese and Australian supply networks.",
             `${JAPAN_LOGISTICS_HUB.companyName}, ${JAPAN_LOGISTICS_HUB.street}, ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.ward}, ${JAPAN_LOGISTICS_HUB.prefecture} ${JAPAN_LOGISTICS_HUB.postalCode}, ${JAPAN_LOGISTICS_HUB.country}.`,
-            `${AUSTRALIA_LOGISTICS_HUB.companyName}, ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}.`,
+            `${AUSTRALIA_LOGISTICS_HUB.companyName}, ${AUSTRALIA_LOGISTICS_HUB.suburb}, ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.state} ${AUSTRALIA_LOGISTICS_HUB.country}.`,
           ],
         },
         {

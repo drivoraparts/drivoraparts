@@ -22,10 +22,13 @@ export const JAPAN_LOGISTICS_HUB = {
   country: "Japan",
 } as const;
 
-/** City/country only -- no street address on file yet for this hub. */
+/** Suburb/state only -- no street number or postcode on file yet for this hub. */
 export const AUSTRALIA_LOGISTICS_HUB = {
   companyName: "Drivora Logistics Australia",
   city: "Sydney",
+  suburb: "Lidcombe",
+  state: "NSW",
+  stateName: "New South Wales",
   country: "Australia",
 } as const;
 
@@ -35,7 +38,7 @@ export const COMPANY_MOTTO = "Engineered • Fitment • Performance";
 export const COMPANY_LOCATION_SUMMARY = {
   brand: COMPANY_DISPLAY_NAME,
   corporateHq: "Corporate HQ: Torrance, California, USA",
-  distribution: "Distribution & Inventory: Nagoya, Aichi, Japan & Sydney, Australia",
+  distribution: "Distribution & Inventory: Nagoya, Aichi, Japan & Sydney, NSW, Australia",
   motto: COMPANY_MOTTO,
 } as const;
 
