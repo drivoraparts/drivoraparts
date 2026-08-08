@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import AdminShell from "@/components/admin/AdminShell";
 import OrderLifecycleControls from "@/components/admin/OrderLifecycleControls";
+import { statusBadgeClass } from "@/components/admin/order-status-style";
 import { getOrderById, listOrderEvents } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
 
@@ -22,6 +23,23 @@ const EVENT_LABELS: Record<string, string> = {
   note: "Note",
 };
 
+const BADGE = "inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium capitalize";
+
+function SummaryTile({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="min-w-0 rounded-lg border border-zinc-200 bg-white p-3">
+      <p className="text-[10px] font-medium uppercase tracking-wide text-zinc-500">{label}</p>
+      <div className="mt-1">{children}</div>
+    </div>
+  );
+}
+
 export default async function AdminOrderDetailPage({ params }: PageProps) {
   const { id } = await params;
   const order = await getOrderById(id);
@@ -37,48 +55,81 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
 
   return (
     <AdminShell title={`Order ${order.order_number}`}>
-      <div className="mb-4">
+      <div className="mb-3">
         <Link href="/admin/orders" className="text-xs font-medium text-red-600 hover:text-red-700">
           ← Back to all orders
         </Link>
       </div>
 
+      <div className="mb-3 flex flex-wrap items-start justify-between gap-3 rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+        <div>
+          <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Order</p>
+          <p className="text-base font-semibold text-zinc-900">{order.order_number}</p>
+          <p className="text-xs text-zinc-500">Placed {formatTime(order.created_at)}</p>
+        </div>
+        <div className="text-right">
+          <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Total</p>
+          <p className="text-lg font-bold text-zinc-900">${Number(order.total).toFixed(2)}</p>
+        </div>
+      </div>
+
+      <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <SummaryTile label="Customer">
+          <p className="truncate text-sm font-semibold text-zinc-900">{order.customer?.full_name ?? "—"}</p>
+          <p className="truncate text-xs text-zinc-500">{order.customer?.email ?? ""}</p>
+        </SummaryTile>
+        <SummaryTile label="Payment">
+          <span className={`${BADGE} ${statusBadgeClass(payment?.status ?? "pending")}`}>
+            {(payment?.status ?? "pending").replace(/_/g, " ")}
+          </span>
+        </SummaryTile>
+        <SummaryTile label="Order">
+          <span className={`${BADGE} ${statusBadgeClass(order.order_status)}`}>
+            {order.order_status.replace(/_/g, " ")}
+          </span>
+        </SummaryTile>
+        <SummaryTile label="Shipping">
+          <span className={`${BADGE} ${statusBadgeClass(order.shipping_status)}`}>
+            {order.shipping_status.replace(/_/g, " ")}
+          </span>
+        </SummaryTile>
+      </div>
+
       <div className="grid gap-4 lg:grid-cols-3">
         <div className="space-y-4 lg:col-span-2">
           <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
-            <div className="flex flex-wrap items-start justify-between gap-3">
-              <div>
-                <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Order</p>
-                <p className="text-base font-semibold text-zinc-900">{order.order_number}</p>
-                <p className="text-xs text-zinc-500">Placed {formatTime(order.created_at)}</p>
-              </div>
-              <div className="text-right">
-                <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Total</p>
-                <p className="text-lg font-bold text-zinc-900">${Number(order.total).toFixed(2)}</p>
-              </div>
-            </div>
-
-            {order.customer ? (
-              <div className="mt-3 border-t border-zinc-100 pt-3 text-sm text-zinc-700">
-                <p className="font-medium text-zinc-900">{order.customer.full_name}</p>
-                <p className="text-xs text-zinc-600">{order.customer.email}</p>
-                {order.customer.phone ? <p className="text-xs text-zinc-600">{order.customer.phone}</p> : null}
-                {order.customer.shipping_address ? (
-                  <p className="text-xs text-zinc-600">{order.customer.shipping_address}</p>
-                ) : null}
-              </div>
-            ) : null}
-
-            <ul className="mt-3 space-y-1.5 border-t border-zinc-100 pt-3 text-sm">
+            <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Products</p>
+            <ul className="mt-2.5 space-y-2.5">
               {order.items.map((item) => (
-                <li key={item.id} className="flex justify-between gap-4">
-                  <span>
-                    {item.name} × {item.quantity}
-                  </span>
-                  <span>${(Number(item.price) * item.quantity).toFixed(2)}</span>
+                <li key={item.id} className="flex items-center gap-3">
+                  {item.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={item.image}
+                      alt=""
+                      className="h-10 w-10 shrink-0 rounded-md border border-zinc-200 object-cover"
+                    />
+                  ) : (
+                    <div className="h-10 w-10 shrink-0 rounded-md border border-zinc-200 bg-zinc-50" />
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm text-zinc-900">{item.name}</p>
+                    <p className="text-xs text-zinc-500">
+                      Qty {item.quantity} · ${Number(item.price).toFixed(2)} each
+                    </p>
+                  </div>
+                  <p className="shrink-0 text-sm font-medium text-zinc-900">
+                    ${(Number(item.price) * item.quantity).toFixed(2)}
+                  </p>
                 </li>
               ))}
             </ul>
+            {order.customer?.shipping_address ? (
+              <p className="mt-3 border-t border-zinc-100 pt-2.5 text-xs text-zinc-500">
+                Ship to: {order.customer.shipping_address}
+                {order.customer.phone ? ` · ${order.customer.phone}` : ""}
+              </p>
+            ) : null}
           </div>
 
           <div>
