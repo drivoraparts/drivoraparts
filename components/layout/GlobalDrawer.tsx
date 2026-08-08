@@ -36,7 +36,11 @@ export default function GlobalDrawer({
               <div>
                 <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("marketplace")}</p>
                 <div className="flex flex-col gap-2">
-                  <Link href="/catalog/all" className="transition hover:text-neutral-900">
+                  <Link
+                    href="/catalog/all"
+                    className="transition hover:text-neutral-900"
+                    onClick={() => setMenuOpen(false)}
+                  >
                     {t("browseCatalog")}
                   </Link>
                   <Link href="/cart" className="transition hover:text-neutral-900" onClick={() => setMenuOpen(false)}>
@@ -47,21 +51,33 @@ export default function GlobalDrawer({
 
               <div>
                 <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("company")}</p>
-                <Link href="/about" className="transition hover:text-neutral-900">
+                <Link
+                  href="/about"
+                  className="transition hover:text-neutral-900"
+                  onClick={() => setMenuOpen(false)}
+                >
                   {t("about")}
                 </Link>
               </div>
 
               <div>
                 <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("support")}</p>
-                <Link href="/contact" className="transition hover:text-neutral-900">
+                <Link
+                  href="/contact"
+                  className="transition hover:text-neutral-900"
+                  onClick={() => setMenuOpen(false)}
+                >
                   {t("contactSupport")}
                 </Link>
               </div>
 
               <div>
                 <p className="mb-2 text-xs tracking-widest text-neutral-400">{t("legalCenter")}</p>
-                <Link href="/policies" className="transition hover:text-neutral-900">
+                <Link
+                  href="/policies"
+                  className="transition hover:text-neutral-900"
+                  onClick={() => setMenuOpen(false)}
+                >
                   {t("policiesLegal")}
                 </Link>
               </div>
