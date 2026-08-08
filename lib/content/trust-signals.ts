@@ -1,4 +1,5 @@
 import {
+  AUSTRALIA_LOGISTICS_HUB,
   COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
   JAPAN_LOGISTICS_HUB,
@@ -17,7 +18,7 @@ export const TRUST_SECTION = {
   eyebrow: "Shop with confidence",
   headline: "Registered US seller · encrypted checkout · real inventory",
   subhead:
-    "DrivoraParts LLC operates from Torrance, California with distribution in Nagoya, Japan. Every listing is reviewed for accurate photos and specs, backed by freight-ready logistics and NOWPayments crypto checkout.",
+    "DrivoraParts LLC operates from Torrance, California with distribution in Nagoya, Japan and Sydney, Australia. Every listing is reviewed for accurate photos and specs, backed by freight-ready logistics and NOWPayments crypto checkout.",
   legalLine: `${COMPANY_LEGAL_NAME} · ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} · ${COMPANY_SUPPORT_EMAIL}`,
   listingStat: `${HOME_LISTING_COUNT.toLocaleString()}+ active listings`,
 } as const;
@@ -89,7 +90,7 @@ export const TRUST_CATEGORIES: TrustCategory[] = [
     id: "shipping",
     eyebrow: "Shipping & Returns",
     headline: "Free shipping. 30-day money-back guarantee.",
-    detail: `Every order ships free, worldwide — from single parts to full engine assemblies, coordinated from our US and ${JAPAN_LOGISTICS_HUB.country} hubs. Not the right fit? Return it within 30 days for a refund.`,
+    detail: `Every order ships free, worldwide — from single parts to full engine assemblies, coordinated from our US, ${JAPAN_LOGISTICS_HUB.country}, and ${AUSTRALIA_LOGISTICS_HUB.country} hubs. Not the right fit? Return it within 30 days for a refund.`,
     chips: ["Free Shipping", "30-Day Guarantee", "LTL Freight"],
     seal: "shipping",
   },

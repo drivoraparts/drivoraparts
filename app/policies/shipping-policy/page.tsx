@@ -4,6 +4,7 @@ export const metadata = buildPolicyMetadata("/policies/shipping-policy");
 
 import Policy from "@/components/policy/Policy";
 import {
+  AUSTRALIA_LOGISTICS_HUB,
   COMPANY_SUPPORT_EMAIL,
   JAPAN_LOGISTICS_HUB,
 } from "@/lib/content/company";
@@ -47,10 +48,11 @@ export default function ShippingPolicyPage() {
           ],
         },
         {
-          heading: "Premium Parts Inspection & Dispatch (Japan)",
+          heading: "Premium Parts Inspection & Dispatch (Japan & Australia)",
           paragraphs: [
-            "Select premium and specialty performance components may be inspected, prepared, and dispatched from our Japan inventory and logistics hub before onward delivery to your destination. This facility supports quality control and fulfillment for parts sourced through our Japanese supply network.",
+            "Select premium and specialty performance components may be inspected, prepared, and dispatched from our Japan or Australia inventory and logistics hubs before onward delivery to your destination. These facilities support quality control and fulfillment for parts sourced through our Japanese and Australian supply networks.",
             `${JAPAN_LOGISTICS_HUB.companyName}, ${JAPAN_LOGISTICS_HUB.street}, ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.ward}, ${JAPAN_LOGISTICS_HUB.prefecture} ${JAPAN_LOGISTICS_HUB.postalCode}, ${JAPAN_LOGISTICS_HUB.country}.`,
+            `${AUSTRALIA_LOGISTICS_HUB.companyName}, ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}.`,
           ],
         },
         {
