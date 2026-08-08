@@ -80,13 +80,9 @@ export async function processCheckoutWithoutSupabase(input: {
     shipping,
     paymentUrl: checkout.paymentUrl,
     items: lockedItems.map((item) => ({
-      productId: item.productId,
       name: item.name,
-      price: item.price,
-      image: item.image,
-      category: item.category,
-      brand: item.brand ?? null,
       quantity: item.quantity,
+      price: item.price,
     })),
   });
 

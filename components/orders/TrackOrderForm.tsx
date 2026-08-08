@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 type OrderStatusResult = {
   status: string;
@@ -22,14 +21,14 @@ const STATUS_LABELS: Record<string, string> = {
 };
 
 export default function TrackOrderForm() {
-  const searchParams = useSearchParams();
-  const [orderId, setOrderId] = useState(() => searchParams.get("orderId") ?? "");
+  const [orderId, setOrderId] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<OrderStatusResult | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const lookupOrder = async (id: string) => {
-    const trimmed = id.trim();
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const trimmed = orderId.trim();
     if (!trimmed || loading) return;
 
     setLoading(true);
@@ -57,19 +56,6 @@ export default function TrackOrderForm() {
     } finally {
       setLoading(false);
     }
-  };
-
-  // Deep-linked from an order email (e.g. /track-order?orderId=...) --
-  // look it up automatically instead of leaving the customer to retype it.
-  useEffect(() => {
-    const fromUrl = searchParams.get("orderId");
-    if (fromUrl?.trim()) void lookupOrder(fromUrl);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    void lookupOrder(orderId);
   };
 
   return (

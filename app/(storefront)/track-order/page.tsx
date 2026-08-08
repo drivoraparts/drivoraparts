@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { buildPageMetadata } from "@/lib/seo";
 import TrackOrderForm from "@/components/orders/TrackOrderForm";
 
@@ -18,9 +17,7 @@ export default function TrackOrderPage() {
         your order confirmation email.
       </p>
 
-      <Suspense fallback={null}>
-        <TrackOrderForm />
-      </Suspense>
+      <TrackOrderForm />
     </main>
   );
 }
