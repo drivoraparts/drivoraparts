@@ -25,8 +25,10 @@ import {
 import {
 
   sendPaymentReceivedEmail,
+  sendAdminPaymentReceivedEmail,
 
 } from "@/lib/email/send";
+import { enrichOrderItemsForEmail } from "@/lib/email/order-summary";
 
 import { sendMetaCapIPurchase } from "@/lib/analytics/meta-capi";
 
@@ -307,9 +309,13 @@ export async function processCheckout(input: {
     shipping: Number(order.shipping),
     paymentUrl: payment.paymentUrl,
     items: order.items.map((item) => ({
+      productId: item.product_id,
       name: item.name,
-      quantity: item.quantity,
       price: Number(item.price),
+      image: item.image,
+      category: item.category,
+      brand: item.brand,
+      quantity: item.quantity,
     })),
   });
 
@@ -439,27 +445,47 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
   const updated = await getOrderById(orderId);
 
   if (updated?.customer) {
+    const emailItems = enrichOrderItemsForEmail(
+      updated.items.map((item) => ({
+        product_id: item.product_id,
+        name: item.name,
+        price: Number(item.price),
+        image: item.image,
+        category: item.category,
+        brand: item.brand,
+        quantity: item.quantity,
+      }))
+    );
+    const paymentMethodLabel =
+      payment?.provider === "nowpayments" ? "NOWPayments · Cryptocurrency" : "Manual payment";
+    const transactionId = payment?.provider_payment_id ?? null;
 
     await sendPaymentReceivedEmail({
-
       to: updated.customer.email,
-
       customerName: updated.customer.full_name,
-
+      customerEmail: updated.customer.email,
+      customerPhone: updated.customer.phone ?? undefined,
+      shippingAddress: updated.customer.shipping_address ?? undefined,
       orderId,
-
       total: Number(updated.total),
-
-      items: updated.items.map((item) => ({
-        name: item.name,
-        quantity: item.quantity,
-        unitPrice: Number(item.price),
-      })),
-      subtotal: Number(updated.subtotal),
       shipping: Number(updated.shipping),
-
+      items: emailItems,
+      paymentMethodLabel,
+      transactionId,
     });
 
+    await sendAdminPaymentReceivedEmail({
+      orderId,
+      customerName: updated.customer.full_name,
+      customerEmail: updated.customer.email,
+      customerPhone: updated.customer.phone ?? undefined,
+      shippingAddress: updated.customer.shipping_address ?? undefined,
+      total: Number(updated.total),
+      shipping: Number(updated.shipping),
+      items: emailItems,
+      paymentMethodLabel,
+      transactionId,
+    });
   }
 
   // Server-side Purchase for Meta — fires even when the buyer stays on NOWPayments

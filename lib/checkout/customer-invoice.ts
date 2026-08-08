@@ -1,14 +1,18 @@
 import {
   sendAdminNewOrderEmail,
   sendOrderCreatedEmail,
-  type OrderInvoiceLine,
 } from "@/lib/email/send";
+import { enrichOrderItemsForEmail } from "@/lib/email/order-summary";
 import { logActivity } from "@/lib/monitoring/activity";
 
 export type CustomerInvoiceItem = {
+  productId: number;
   name: string;
-  quantity: number;
   price: number;
+  image: string | null;
+  category: string | null;
+  brand: string | null;
+  quantity: number;
 };
 
 export async function emailCustomerOrderInvoice(input: {
@@ -24,20 +28,29 @@ export async function emailCustomerOrderInvoice(input: {
   paymentUrl?: string;
   items: CustomerInvoiceItem[];
 }): Promise<boolean> {
-  const lines: OrderInvoiceLine[] = input.items.map((item) => ({
-    name: item.name,
-    quantity: item.quantity,
-    unitPrice: item.price,
-  }));
+  const items = enrichOrderItemsForEmail(
+    input.items.map((item) => ({
+      product_id: item.productId,
+      name: item.name,
+      price: item.price,
+      image: item.image,
+      category: item.category,
+      brand: item.brand,
+      quantity: item.quantity,
+    }))
+  );
 
   const sent = await sendOrderCreatedEmail({
     to: input.to,
     customerName: input.customerName,
+    customerEmail: input.customerEmail,
+    customerPhone: input.customerPhone,
+    shippingAddress: input.shippingAddress,
     orderId: input.orderId,
     total: input.total,
-    subtotal: input.subtotal,
     shipping: input.shipping,
-    items: lines,
+    items,
+    paymentMethodLabel: "NOWPayments · Cryptocurrency",
   });
 
   const adminSent = await sendAdminNewOrderEmail({
@@ -47,7 +60,9 @@ export async function emailCustomerOrderInvoice(input: {
     customerPhone: input.customerPhone,
     shippingAddress: input.shippingAddress,
     total: input.total,
-    items: lines,
+    shipping: input.shipping,
+    items,
+    paymentMethodLabel: "NOWPayments · Cryptocurrency",
   });
 
   if (!sent) {

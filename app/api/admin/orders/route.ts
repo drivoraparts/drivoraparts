@@ -10,6 +10,7 @@ import {
   sendOrderDeliveredEmail,
   sendOrderShippedEmail,
 } from "@/lib/email/send";
+import { enrichOrderItemsForEmail } from "@/lib/email/order-summary";
 
 const VALID_STATUSES = [
   "pending",
@@ -61,7 +62,23 @@ export async function PATCH(req: Request) {
         await sendOrderShippedEmail({
           to: order.customer.email,
           customerName: order.customer.full_name,
+          customerEmail: order.customer.email,
+          customerPhone: order.customer.phone ?? undefined,
+          shippingAddress: order.customer.shipping_address ?? undefined,
           orderId,
+          total: Number(updated.total),
+          shipping: Number(updated.shipping),
+          items: enrichOrderItemsForEmail(
+            updated.items.map((item) => ({
+              product_id: item.product_id,
+              name: item.name,
+              price: Number(item.price),
+              image: item.image,
+              category: item.category,
+              brand: item.brand,
+              quantity: item.quantity,
+            }))
+          ),
         });
       }
 
