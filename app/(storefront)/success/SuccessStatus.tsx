@@ -164,6 +164,12 @@ export default function SuccessStatus({
             <p className="text-xs text-neutral-500">Order ID</p>
             <p className="break-all text-sm text-neutral-900">{resolvedOrderId}</p>
           </div>
+          {npPaymentId ? (
+            <div>
+              <p className="text-xs text-neutral-500">NOWPayments Transaction ID</p>
+              <p className="break-all text-sm text-neutral-900">{npPaymentId}</p>
+            </div>
+          ) : null}
           {total != null ? (
             <div>
               <p className="text-xs text-neutral-500">{totalLabel}</p>

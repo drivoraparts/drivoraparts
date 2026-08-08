@@ -215,6 +215,14 @@ export default function CheckoutPage() {
                 confirmed, you&apos;ll get your order confirmation by email.
               </li>
             </ol>
+            <p className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+              <strong>Before it redirects you back:</strong> once NOWPayments
+              confirms your payment, that page shows a Transaction ID — copy
+              or screenshot it before it sends you back to DrivoraParts.
+              We&apos;ll show it on your confirmation page too, but having
+              your own copy makes it faster if you ever need to reference
+              this payment with support.
+            </p>
             <a
               href={pendingPaymentUrl}
               target="_blank"
