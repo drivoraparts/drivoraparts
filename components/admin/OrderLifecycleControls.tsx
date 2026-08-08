@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { adminUi } from "./admin-ui";
-import { statusBadgeClass } from "./order-status-style";
+import StatusPill from "./StatusPill";
 import type {
   OrderLifecycleStatus,
   ShippingInfoInput,
@@ -109,11 +109,7 @@ function StatusCard({
     <div className="rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm">
       <div className="flex items-center justify-between gap-2">
         <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">{title}</p>
-        <span
-          className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium capitalize ${statusBadgeClass(currentValue)}`}
-        >
-          {labels[currentValue]?.toLowerCase() ?? currentValue.replace(/_/g, " ")}
-        </span>
+        <StatusPill value={currentValue} label={labels[currentValue]?.toLowerCase()} size="xs" />
       </div>
       <select
         value={value}

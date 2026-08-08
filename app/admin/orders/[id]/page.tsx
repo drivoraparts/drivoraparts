@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import AdminShell from "@/components/admin/AdminShell";
 import DeleteOrderButton from "@/components/admin/DeleteOrderButton";
 import OrderLifecycleControls from "@/components/admin/OrderLifecycleControls";
-import { statusBadgeClass } from "@/components/admin/order-status-style";
+import StatusPill from "@/components/admin/StatusPill";
 import { getOrderById, listOrderEvents } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
 
@@ -23,8 +23,6 @@ const EVENT_LABELS: Record<string, string> = {
   shipping_status: "Shipping status",
   note: "Note",
 };
-
-const BADGE = "inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium capitalize";
 
 function SummaryTile({
   label,
@@ -81,19 +79,13 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
           <p className="truncate text-xs text-zinc-500">{order.customer?.email ?? ""}</p>
         </SummaryTile>
         <SummaryTile label="Payment">
-          <span className={`${BADGE} ${statusBadgeClass(payment?.status ?? "pending")}`}>
-            {(payment?.status ?? "pending").replace(/_/g, " ")}
-          </span>
+          <StatusPill value={payment?.status ?? "pending"} />
         </SummaryTile>
         <SummaryTile label="Order">
-          <span className={`${BADGE} ${statusBadgeClass(order.order_status)}`}>
-            {order.order_status.replace(/_/g, " ")}
-          </span>
+          <StatusPill value={order.order_status} />
         </SummaryTile>
         <SummaryTile label="Shipping">
-          <span className={`${BADGE} ${statusBadgeClass(order.shipping_status)}`}>
-            {order.shipping_status.replace(/_/g, " ")}
-          </span>
+          <StatusPill value={order.shipping_status} />
         </SummaryTile>
       </div>
 

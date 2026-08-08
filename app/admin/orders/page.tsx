@@ -1,7 +1,7 @@
 import Link from "next/link";
 import AdminShell from "@/components/admin/AdminShell";
 import DeleteOrderButton from "@/components/admin/DeleteOrderButton";
-import { statusBadgeClass } from "@/components/admin/order-status-style";
+import StatusPill from "@/components/admin/StatusPill";
 import { listPlacedOrders } from "@/lib/db/orders";
 import { findPaymentsByOrderIds } from "@/lib/db/payments";
 
@@ -10,8 +10,6 @@ export const dynamic = "force-dynamic";
 function formatTime(iso: string) {
   return new Date(iso).toLocaleString();
 }
-
-const STATUS_BADGE = "inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium capitalize";
 
 export default async function AdminOrdersPage() {
   const orders = await listPlacedOrders();
@@ -49,17 +47,9 @@ export default async function AdminOrdersPage() {
 
                   <div className="flex items-center gap-3 sm:shrink-0">
                     <div className="flex flex-wrap justify-end gap-1.5">
-                      {payment ? (
-                        <span className={`${STATUS_BADGE} ${statusBadgeClass(payment.status)}`}>
-                          {payment.status.replace(/_/g, " ")}
-                        </span>
-                      ) : null}
-                      <span className={`${STATUS_BADGE} ${statusBadgeClass(order.order_status)}`}>
-                        {order.order_status.replace(/_/g, " ")}
-                      </span>
-                      <span className={`${STATUS_BADGE} ${statusBadgeClass(order.shipping_status)}`}>
-                        {order.shipping_status.replace(/_/g, " ")}
-                      </span>
+                      {payment ? <StatusPill value={payment.status} /> : null}
+                      <StatusPill value={order.order_status} />
+                      <StatusPill value={order.shipping_status} />
                     </div>
                     <p className="w-20 shrink-0 text-right text-sm font-bold text-zinc-900">
                       ${Number(order.total).toFixed(2)}

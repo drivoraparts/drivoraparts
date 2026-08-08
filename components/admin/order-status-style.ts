@@ -2,7 +2,7 @@
  * row, and status badges -- so "paid/delivered" always reads positive and
  * "cancelled/refunded/failed" always reads negative, regardless of which
  * of the three status dimensions (payment/order/shipping) it came from. */
-type StatusTone = "positive" | "warning" | "info" | "negative" | "neutral";
+export type StatusTone = "positive" | "warning" | "info" | "negative" | "neutral";
 
 const TONE_MAP: Record<string, StatusTone> = {
   pending: "warning",
@@ -28,14 +28,21 @@ const TONE_MAP: Record<string, StatusTone> = {
   delivery_exception: "negative",
 };
 
+// Matches GitHub's own Primer status colors (success/attention/danger/accent)
+// so "in progress" reads as the exact same yellow as a spinning GitHub Actions
+// check, and "resolved" reads as the exact same green as a passing one.
 const TONE_CLASSES: Record<StatusTone, string> = {
-  positive: "bg-emerald-50 text-emerald-700",
-  warning: "bg-amber-50 text-amber-700",
-  info: "bg-blue-50 text-blue-700",
-  negative: "bg-red-50 text-red-700",
+  positive: "bg-[#dafbe1] text-[#1a7f37]",
+  warning: "bg-[#fff8c5] text-[#9a6700]",
+  info: "bg-[#ddf4ff] text-[#0969da]",
+  negative: "bg-[#ffebe9] text-[#cf222e]",
   neutral: "bg-zinc-100 text-zinc-600",
 };
 
 export function statusBadgeClass(value: string): string {
   return TONE_CLASSES[TONE_MAP[value] ?? "neutral"];
+}
+
+export function getStatusTone(value: string): StatusTone {
+  return TONE_MAP[value] ?? "neutral";
 }
