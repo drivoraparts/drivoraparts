@@ -47,6 +47,14 @@ const PAYMENT_STATUS_LABELS: Record<PaymentStatus, string> = {
 
 const NOTIFIABLE_SHIPPING_STATUSES: ShippingStatus[] = ["shipped", "out_for_delivery", "delivered"];
 
+/** Converts a `datetime-local` input value (parsed as the browser's local
+ * time) to an ISO string for the API, or undefined when left blank. */
+function toIso(occurredAt: string): string | undefined {
+  if (!occurredAt) return undefined;
+  const parsed = new Date(occurredAt);
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+}
+
 async function patchLifecycle(orderId: string, body: Record<string, unknown>) {
   const res = await fetch(`/api/admin/orders/${orderId}/lifecycle`, {
     method: "PATCH",
@@ -70,11 +78,12 @@ function StatusCard({
   title: string;
   currentValue: string;
   labels: Record<string, string>;
-  onSave: (value: string, note: string) => Promise<void>;
+  onSave: (value: string, note: string, occurredAt: string) => Promise<void>;
   extra?: React.ReactNode;
 }) {
   const [value, setValue] = useState(currentValue);
   const [note, setNote] = useState("");
+  const [occurredAt, setOccurredAt] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
@@ -84,9 +93,10 @@ function StatusCard({
     setMessage("");
     setError(false);
     try {
-      await onSave(value, note);
+      await onSave(value, note, occurredAt);
       setMessage("Saved");
       setNote("");
+      setOccurredAt("");
     } catch (err) {
       setError(true);
       setMessage(err instanceof Error ? err.message : "Update failed");
@@ -125,6 +135,17 @@ function StatusCard({
         rows={1}
         className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs"
       />
+      <label className="mt-1.5 block text-[10px] text-zinc-500">
+        Backdate (optional — leave blank to use now)
+        <input
+          type="datetime-local"
+          value={occurredAt}
+          disabled={loading}
+          max={new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 16)}
+          onChange={(e) => setOccurredAt(e.target.value)}
+          className="mt-0.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs"
+        />
+      </label>
       {extra}
       <button
         type="button"
@@ -229,8 +250,13 @@ export default function OrderLifecycleControls({
           title="Payment Status"
           currentValue={paymentStatus ?? "pending"}
           labels={PAYMENT_STATUS_LABELS}
-          onSave={async (value, note) => {
-            await patchLifecycle(orderId, { target: "payment_status", value, note });
+          onSave={async (value, note, occurredAt) => {
+            await patchLifecycle(orderId, {
+              target: "payment_status",
+              value,
+              note,
+              occurredAt: toIso(occurredAt),
+            });
             router.refresh();
           }}
         />
@@ -238,8 +264,13 @@ export default function OrderLifecycleControls({
           title="Order Status"
           currentValue={orderStatus}
           labels={ORDER_STATUS_LABELS}
-          onSave={async (value, note) => {
-            await patchLifecycle(orderId, { target: "order_status", value, note });
+          onSave={async (value, note, occurredAt) => {
+            await patchLifecycle(orderId, {
+              target: "order_status",
+              value,
+              note,
+              occurredAt: toIso(occurredAt),
+            });
             router.refresh();
           }}
         />
@@ -247,11 +278,12 @@ export default function OrderLifecycleControls({
           title="Shipping Status"
           currentValue={shippingStatus}
           labels={SHIPPING_STATUS_LABELS}
-          onSave={async (value, note) => {
+          onSave={async (value, note, occurredAt) => {
             await patchLifecycle(orderId, {
               target: "shipping_status",
               value,
               note,
+              occurredAt: toIso(occurredAt),
               notifyCustomer: notify && NOTIFIABLE_SHIPPING_STATUSES.includes(value as ShippingStatus),
             });
             router.refresh();

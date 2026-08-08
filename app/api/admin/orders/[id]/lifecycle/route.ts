@@ -62,7 +62,25 @@ type LifecycleBody = {
   shippingInfo?: ShippingInfoInput;
   note?: string;
   notifyCustomer?: boolean;
+  /** Backdate the resulting timeline event, e.g. "this actually shipped on
+   * Aug 5th". Must be a valid, non-future timestamp -- an event can't be
+   * logged as happening later than now. */
+  occurredAt?: string;
 };
+
+class InvalidOccurredAtError extends Error {}
+
+function parseOccurredAt(raw: string | undefined): string | undefined {
+  if (!raw) return undefined;
+  const parsed = new Date(raw);
+  if (Number.isNaN(parsed.getTime())) {
+    throw new InvalidOccurredAtError("Invalid date");
+  }
+  if (parsed.getTime() > Date.now()) {
+    throw new InvalidOccurredAtError("Date can't be in the future");
+  }
+  return parsed.toISOString();
+}
 
 export async function PATCH(
   req: Request,
@@ -86,6 +104,16 @@ export async function PATCH(
   const ip = getClientIp(req);
   const note = body.note?.trim() || undefined;
 
+  let occurredAt: string | undefined;
+  try {
+    occurredAt = parseOccurredAt(body.occurredAt);
+  } catch (error) {
+    if (error instanceof InvalidOccurredAtError) {
+      return NextResponse.json({ error: error.message }, { status: 400 });
+    }
+    throw error;
+  }
+
   try {
     if (body.target === "order_status") {
       if (!body.value || !ORDER_STATUSES.includes(body.value as OrderLifecycleStatus)) {
@@ -95,7 +123,8 @@ export async function PATCH(
         id,
         body.value as OrderLifecycleStatus,
         actor,
-        note
+        note,
+        occurredAt
       );
       await logAdminAudit(actor, "order.update_order_status", id, { status: body.value, ip });
       return NextResponse.json(updated);
@@ -106,7 +135,7 @@ export async function PATCH(
         return NextResponse.json({ error: "Invalid shipping status" }, { status: 400 });
       }
       const status = body.value as ShippingStatus;
-      const updated = await updateShippingStatusRecord(id, status, actor, note);
+      const updated = await updateShippingStatusRecord(id, status, actor, note, occurredAt);
       await logAdminAudit(actor, "order.update_shipping_status", id, { status, ip });
 
       if (body.notifyCustomer && updated && order.customer) {
@@ -180,6 +209,7 @@ export async function PATCH(
           toValue: status,
           actor,
           note,
+          occurredAt,
         });
       }
 

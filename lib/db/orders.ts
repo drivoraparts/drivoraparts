@@ -646,6 +646,9 @@ export async function logOrderEvent(input: {
   note?: string | null;
   actor: string;
   customerVisible?: boolean;
+  /** Backdate the event (e.g. "this actually shipped on Aug 5th"). Omit to
+   * timestamp it at the moment this is called, same as before. */
+  occurredAt?: string | null;
 }): Promise<void> {
   const supabase = getSupabaseAdmin();
   const { error } = await supabase.from("order_events").insert({
@@ -656,6 +659,7 @@ export async function logOrderEvent(input: {
     note: input.note ?? null,
     actor: input.actor,
     customer_visible: input.customerVisible ?? true,
+    ...(input.occurredAt ? { created_at: input.occurredAt } : {}),
   });
 
   // Timeline logging is best-effort -- never let it break the actual status
@@ -685,7 +689,8 @@ export async function updateOrderLifecycleStatus(
   id: string,
   status: OrderLifecycleStatus,
   actor: string,
-  note?: string
+  note?: string,
+  occurredAt?: string
 ): Promise<OrderRecord | null> {
   const existing = await getOrderById(id);
   if (!existing) return null;
@@ -710,6 +715,7 @@ export async function updateOrderLifecycleStatus(
       toValue: status,
       actor,
       note,
+      occurredAt,
     });
   }
 
@@ -720,7 +726,8 @@ export async function updateShippingStatusRecord(
   id: string,
   status: ShippingStatus,
   actor: string,
-  note?: string
+  note?: string,
+  occurredAt?: string
 ): Promise<OrderRecord | null> {
   const existing = await getOrderById(id);
   if (!existing) return null;
@@ -745,6 +752,7 @@ export async function updateShippingStatusRecord(
       toValue: status,
       actor,
       note,
+      occurredAt,
     });
   }
 
