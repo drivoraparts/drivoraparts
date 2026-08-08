@@ -96,23 +96,67 @@ function formatCalendarDate(dateOnly: string) {
   });
 }
 
-function StepMarker({ state }: { state: StepState }) {
+type Tone = "green" | "orange" | "blue" | "red" | "neutral";
+
+const TONE_STYLES: Record<Tone, { bg: string; text: string; border: string }> = {
+  green: { bg: "bg-emerald-600", text: "text-emerald-600", border: "border-emerald-600" },
+  orange: { bg: "bg-orange-500", text: "text-orange-500", border: "border-orange-500" },
+  blue: { bg: "bg-blue-600", text: "text-blue-600", border: "border-blue-600" },
+  red: { bg: "bg-red-600", text: "text-red-600", border: "border-red-600" },
+  neutral: { bg: "bg-neutral-300", text: "text-neutral-400", border: "border-neutral-300" },
+};
+
+/** Meaning-based color per step, not just "is it done yet": orange while
+ * actively processing, green once something has genuinely succeeded, red
+ * whenever the order needs attention (on hold / delivery exception),
+ * blue for ordinary in-progress movement, gray for anything not reached. */
+function stepTone(step: Step, notice: Notice): Tone {
+  if (step.state === "upcoming") return "neutral";
+  if (notice && step.state === "current") return "red";
+  if (step.key === "delivered") return "green";
+  if (step.state === "completed") return "green";
+  if (step.key === "processing") return "orange";
+  return "blue";
+}
+
+function StepMarker({ state, tone }: { state: StepState; tone: Tone }) {
+  const styles = TONE_STYLES[tone];
   if (state === "completed") {
     return (
-      <span className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-red-600 text-[10px] font-bold text-white">
+      <span
+        className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${styles.bg} text-[10px] font-bold text-white`}
+      >
         ✓
       </span>
     );
   }
   if (state === "current") {
     return (
-      <span className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full border-2 border-red-600 bg-white">
-        <span className="h-1.5 w-1.5 rounded-full bg-red-600" />
+      <span
+        className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 bg-white ${styles.border}`}
+      >
+        <span className={`h-1.5 w-1.5 rounded-full ${styles.bg}`} />
       </span>
     );
   }
+  return <span className="h-5 w-5 shrink-0 rounded-full border-2 border-neutral-300 bg-white" />;
+}
+
+/** Vertical connector between two steps with a small arrow showing the
+ * direction status flows in, colored to match whichever step it leads into. */
+function StepConnector({ tone }: { tone: Tone }) {
+  const styles = TONE_STYLES[tone];
   return (
-    <span className="absolute -left-[11px] top-0 h-5 w-5 rounded-full border-2 border-neutral-300 bg-white" />
+    <div className="relative w-0.5 flex-1 self-stretch">
+      <div className={`absolute inset-y-0 left-1/2 w-0.5 -translate-x-1/2 ${styles.bg} opacity-40`} />
+      <svg
+        viewBox="0 0 12 12"
+        className={`absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 ${styles.text}`}
+        fill="currentColor"
+      >
+        <path d="M6 9 2 4h8z" />
+      </svg>
+    </div>
   );
 }
 
@@ -279,22 +323,32 @@ export default function TrackOrderForm() {
           )}
 
           {result.steps ? (
-            <ol className="mt-4 space-y-3.5 border-l-2 border-neutral-200 pl-5">
-              {result.steps.map((step) => (
-                <li key={step.key} className="relative">
-                  <StepMarker state={step.state} />
-                  <p
-                    className={`text-sm font-medium ${
-                      step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
-                    }`}
-                  >
-                    {step.label}
-                  </p>
-                  {step.timestamp && (
-                    <p className="text-xs text-neutral-500">{formatDate(step.timestamp)}</p>
-                  )}
-                </li>
-              ))}
+            <ol className="mt-4">
+              {result.steps.map((step, index) => {
+                const tone = stepTone(step, result.notice);
+                const isLast = index === result.steps!.length - 1;
+                const connectorTone = !isLast ? stepTone(result.steps![index + 1], result.notice) : null;
+                return (
+                  <li key={step.key} className="flex gap-3">
+                    <div className="flex flex-col items-center">
+                      <StepMarker state={step.state} tone={tone} />
+                      {!isLast && <StepConnector tone={connectorTone!} />}
+                    </div>
+                    <div className={isLast ? "pb-0.5" : "pb-4"}>
+                      <p
+                        className={`text-sm font-medium ${
+                          step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
+                        }`}
+                      >
+                        {step.label}
+                      </p>
+                      {step.timestamp && (
+                        <p className="text-xs text-neutral-500">{formatDate(step.timestamp)}</p>
+                      )}
+                    </div>
+                  </li>
+                );
+              })}
             </ol>
           ) : (
             historyEvents.length > 0 && (

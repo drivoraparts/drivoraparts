@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import AdminShell from "@/components/admin/AdminShell";
+import DeleteOrderButton from "@/components/admin/DeleteOrderButton";
 import OrderLifecycleControls from "@/components/admin/OrderLifecycleControls";
 import { statusBadgeClass } from "@/components/admin/order-status-style";
 import { getOrderById, listOrderEvents } from "@/lib/db/orders";
@@ -55,10 +56,11 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
 
   return (
     <AdminShell title={`Order ${order.order_number}`}>
-      <div className="mb-3">
+      <div className="mb-3 flex items-center justify-between">
         <Link href="/admin/orders" className="text-xs font-medium text-red-600 hover:text-red-700">
           ← Back to all orders
         </Link>
+        <DeleteOrderButton orderId={order.id} orderNumber={order.order_number} redirectTo="/admin/orders" />
       </div>
 
       <div className="mb-3 flex flex-wrap items-start justify-between gap-3 rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">

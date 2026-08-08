@@ -848,6 +848,18 @@ export async function updateCustomerMessage(
   return updated;
 }
 
+/**
+ * Permanently deletes an order. order_items, payments, and order_events all
+ * have ON DELETE CASCADE on order_id, so this is the only row that needs to
+ * be removed -- the customer record is left untouched (it may belong to
+ * other orders, and is worth keeping even if this one order is deleted).
+ */
+export async function deleteOrderRecord(id: string): Promise<void> {
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase.from("orders").delete().eq("id", id);
+  if (error) throw error;
+}
+
 export async function markConfirmationSent(id: string): Promise<void> {
   const supabase = getSupabaseAdmin();
   await supabase
