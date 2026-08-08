@@ -32,9 +32,6 @@ export default function CheckoutPage() {
   const [city, setCity] = useState("");
   const [zip, setZip] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [pendingPaymentUrl, setPendingPaymentUrl] = useState<string | null>(
-    null
-  );
 
   const cart = useCartStore((s) => s.items);
   const clearCart = useCartStore((s) => s.clearCart);
@@ -156,9 +153,7 @@ export default function CheckoutPage() {
       );
 
       clearCart();
-      window.open(paymentUrl, "_blank", "noopener,noreferrer");
-      setPendingPaymentUrl(paymentUrl);
-      setSubmitting(false);
+      window.location.href = paymentUrl;
     } catch {
       showToast("Checkout failed");
       setSubmitting(false);
@@ -176,62 +171,6 @@ export default function CheckoutPage() {
             {t("checkout")}
           </h1>
           <p className="text-center text-neutral-500">Loading your cart...</p>
-        </main>
-      </div>
-    );
-  }
-
-  if (pendingPaymentUrl) {
-    return (
-      <div className="w-full overflow-x-hidden">
-        <main className={shellClass}>
-          <h1 className="mb-6 text-center text-2xl font-bold sm:text-3xl">
-            {t("checkout")}
-          </h1>
-          <section className={glassCard}>
-            <h2 className="mb-2 text-xl font-bold">Complete your payment</h2>
-            <p className="mb-4 text-sm text-neutral-600">
-              Your order has been placed. A NOWPayments tab just opened with
-              your payment address — keep it open until your payment is
-              confirmed.
-            </p>
-            <ol className="mb-4 list-decimal space-y-2 pl-5 text-sm text-neutral-600">
-              <li>Copy the payment address from the NOWPayments tab.</li>
-              <li>
-                Don&apos;t have crypto yet? Buy BTC (or any coin) with a
-                debit or credit card via{" "}
-                <a
-                  href="https://changenow.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-600 underline hover:text-red-700"
-                >
-                  ChangeNOW
-                </a>{" "}
-                and send it straight to that address.
-              </li>
-              <li>
-                Return to the NOWPayments tab and wait — once your payment is
-                confirmed, you&apos;ll get your order confirmation by email.
-              </li>
-            </ol>
-            <p className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-              <strong>Before it redirects you back:</strong> once NOWPayments
-              confirms your payment, that page shows a Transaction ID — copy
-              or screenshot it before it sends you back to DrivoraParts.
-              We&apos;ll show it on your confirmation page too, but having
-              your own copy makes it faster if you ever need to reference
-              this payment with support.
-            </p>
-            <a
-              href={pendingPaymentUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500"
-            >
-              Open payment page
-            </a>
-          </section>
         </main>
       </div>
     );
