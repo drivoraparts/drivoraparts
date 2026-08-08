@@ -9,6 +9,7 @@ export type CustomerInvoiceItem = {
   name: string;
   quantity: number;
   price: number;
+  image?: string | null;
 };
 
 export async function emailCustomerOrderInvoice(input: {
@@ -28,6 +29,7 @@ export async function emailCustomerOrderInvoice(input: {
     name: item.name,
     quantity: item.quantity,
     unitPrice: item.price,
+    image: item.image,
   }));
 
   const sent = await sendOrderCreatedEmail({

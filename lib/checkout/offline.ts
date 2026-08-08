@@ -83,6 +83,7 @@ export async function processCheckoutWithoutSupabase(input: {
       name: item.name,
       quantity: item.quantity,
       price: item.price,
+      image: item.image,
     })),
   });
 

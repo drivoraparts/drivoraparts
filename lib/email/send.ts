@@ -208,7 +208,15 @@ export type OrderInvoiceLine = {
   name: string;
   quantity: number;
   unitPrice: number;
+  image?: string | null;
 };
+
+function resolveEmailImageUrl(src: string | null | undefined): string | null {
+  if (!src) return null;
+  if (src.startsWith("http://") || src.startsWith("https://")) return src;
+  const siteUrl = getSiteUrl();
+  return `${siteUrl}${src.startsWith("/") ? src : `/${src}`}`;
+}
 
 function renderOrderLinesRows(items: OrderInvoiceLine[]): string {
   return items
@@ -249,14 +257,20 @@ function renderOrderTotalRow(total: number, label: string): string {
 
 function renderReceiptLinesRows(items: OrderInvoiceLine[]): string {
   return items
-    .map(
-      (item) => `
+    .map((item) => {
+      const imgUrl = resolveEmailImageUrl(item.image);
+      const imageCell = imgUrl
+        ? `<img src="${imgUrl}" width="48" height="48" alt="${escapeHtml(item.name)}" style="display:block;width:48px;height:48px;border-radius:4px;border:1px solid #e5e7eb;object-fit:cover;" />`
+        : `<div style="width:48px;height:48px;border-radius:4px;border:1px solid #e5e7eb;background:#f9fafb;"></div>`;
+
+      return `
           <tr>
+            <td style="padding:14px 10px 14px 0;border-bottom:1px solid #e5e7eb;width:48px;">${imageCell}</td>
             <td style="padding:14px 0;border-bottom:1px solid #e5e7eb;color:#111827;font-size:14px;">${escapeHtml(item.name)}</td>
             <td style="padding:14px 8px;border-bottom:1px solid #e5e7eb;color:#374151;font-size:14px;text-align:center;">${item.quantity}</td>
             <td style="padding:14px 0;border-bottom:1px solid #e5e7eb;color:#111827;font-size:14px;text-align:right;">$${(item.unitPrice * item.quantity).toFixed(2)}</td>
-          </tr>`
-    )
+          </tr>`;
+    })
     .join("");
 }
 
@@ -265,6 +279,7 @@ function renderReceiptLinesTable(items: OrderInvoiceLine[]): string {
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;margin:0 0 8px;">
         <thead>
           <tr>
+            <th style="padding:0 10px 10px 0;width:48px;"></th>
             <th align="left" style="padding:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280;">Item</th>
             <th style="padding:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280;">Qty</th>
             <th align="right" style="padding:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280;">Amount</th>
@@ -336,8 +351,12 @@ function buildReceiptPage(input: OrderDocumentInput): string {
     ${renderReceiptLinesTable(input.items)}
     ${renderReceiptTotalRow(input.total, totalLabel)}
 
-    <p style="margin:0;font-size:13px;line-height:1.6;color:#6b7280;font-family:Arial,Helvetica,sans-serif;">
+    <p style="margin:0 0 16px;font-size:13px;line-height:1.6;color:#6b7280;font-family:Arial,Helvetica,sans-serif;">
       ${input.paid ? "Your order is now being prepared for fulfillment." : "We will email your paid invoice once payment is confirmed on our payment processor."}
+    </p>
+
+    <p style="margin:0;font-size:13px;font-family:Arial,Helvetica,sans-serif;">
+      <a href="${getSiteUrl()}/track-order?orderId=${encodeURIComponent(input.orderId)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
     </p>`;
 }
 

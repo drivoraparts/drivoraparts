@@ -310,6 +310,7 @@ export async function processCheckout(input: {
       name: item.name,
       quantity: item.quantity,
       price: Number(item.price),
+      image: item.image,
     })),
   });
 
@@ -454,6 +455,7 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
         name: item.name,
         quantity: item.quantity,
         unitPrice: Number(item.price),
+        image: item.image,
       })),
       subtotal: Number(updated.subtotal),
       shipping: Number(updated.shipping),
