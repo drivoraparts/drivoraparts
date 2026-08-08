@@ -31,13 +31,13 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Methods and Carriers",
           paragraphs: [
-            "We ship using reputable third-party carriers selected based on the destination, weight, dimensions, and type of product. The available shipping methods and associated costs are presented to you at checkout before you complete your purchase.",
+            "We ship using reputable third-party carriers selected based on the destination, weight, dimensions, and type of product. The shipping method used for your order is confirmed at checkout at no additional cost to you.",
           ],
         },
         {
           heading: "Shipping Costs",
           paragraphs: [
-            "Shipping costs are calculated and displayed at checkout based on the destination, package weight and dimensions, and the shipping method chosen. Any applicable duties or taxes for international orders are calculated separately and are the responsibility of the recipient.",
+            "Shipping is free on every order placed through the Services, regardless of destination, package weight, or dimensions. Any applicable duties or taxes for international orders are calculated separately and are the responsibility of the recipient.",
           ],
         },
         {

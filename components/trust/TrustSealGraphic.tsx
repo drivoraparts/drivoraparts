@@ -1,4 +1,11 @@
-type SealKind = "ssl" | "payments" | "company" | "freight" | "inventory";
+type SealKind =
+  | "ssl"
+  | "payments"
+  | "company"
+  | "freight"
+  | "inventory"
+  | "shipping"
+  | "guarantee";
 
 /**
  * Refined line-icon seals — a plain ring + single-color glyph.
@@ -60,6 +67,26 @@ export function TrustSealGraphic({
             <rect x="15" y="18" width="34" height="26" rx="2" />
             <circle cx="23" cy="27" r="3.2" />
             <path d="M15 39l9-9 6 6 9-11 10 11" strokeLinecap="round" strokeLinejoin="round" />
+          </>
+        );
+      case "shipping":
+        return (
+          <>
+            <rect x="14" y="24" width="36" height="26" rx="1.5" />
+            <path d="M14 32h36M32 24v26" strokeLinecap="round" />
+            <path d="M22 24l6-8h8l6 8" strokeLinecap="round" strokeLinejoin="round" />
+          </>
+        );
+      case "guarantee":
+        return (
+          <>
+            <circle cx="32" cy="26" r="14" />
+            <path d="M25.5 26l4.5 4.5 9-9" strokeLinecap="round" strokeLinejoin="round" />
+            <path
+              d="M23 38l-5 12 8-3 4 7 5-13M41 38l5 12-8-3-4 7-5-13"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </>
         );
     }

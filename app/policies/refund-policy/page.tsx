@@ -15,6 +15,12 @@ export default function RefundPolicyPage() {
       intro="DrivoraParts LLC (“Company”, “we”, “us”) wants you to be confident in your purchase. This Returns & Refund Policy explains the conditions under which you may return a product, how to request a return, and how refunds are processed. These rules apply consistently to all eligible products sold through our website and services (the “Services”). By placing an order, you agree to the terms of this policy."
       sections={[
         {
+          heading: "Our 30-Day Money-Back Guarantee",
+          paragraphs: [
+            "Every order is backed by our 30-day money-back guarantee: if an eligible item is returned within 30 days of delivery in its original, resalable condition, you will receive a refund to your original payment method once the return is inspected and approved. The full terms, conditions, and exceptions are set out below.",
+          ],
+        },
+        {
           heading: "Return Window",
           paragraphs: [
             "You may request a return within 30 days from the delivery date only. Requests submitted after this 30-day window will not be eligible for a return or refund, except where required by applicable law. The delivery date is determined by carrier tracking records where available.",

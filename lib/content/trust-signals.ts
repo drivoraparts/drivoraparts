@@ -10,7 +10,7 @@ export type TrustSignal = {
   id: string;
   title: string;
   detail: string;
-  seal: "ssl" | "payments" | "company" | "freight" | "inventory";
+  seal: "ssl" | "payments" | "company" | "freight" | "inventory" | "shipping" | "guarantee";
 };
 
 export const TRUST_SECTION = {
@@ -86,12 +86,12 @@ export const TRUST_CATEGORIES: TrustCategory[] = [
     seal: "payments",
   },
   {
-    id: "logistics",
-    eyebrow: "Logistics",
-    headline: "From single parts to full engine assemblies",
-    detail: `Freight-ready logistics coordinated worldwide from our US and ${JAPAN_LOGISTICS_HUB.country} hubs.`,
-    chips: ["LTL Freight", "Worldwide Shipping"],
-    seal: "freight",
+    id: "shipping",
+    eyebrow: "Shipping & Returns",
+    headline: "Free shipping. 30-day money-back guarantee.",
+    detail: `Every order ships free, worldwide — from single parts to full engine assemblies, coordinated from our US and ${JAPAN_LOGISTICS_HUB.country} hubs. Not the right fit? Return it within 30 days for a refund.`,
+    chips: ["Free Shipping", "30-Day Guarantee", "LTL Freight"],
+    seal: "shipping",
   },
   {
     id: "security",

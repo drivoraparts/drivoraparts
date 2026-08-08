@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 function openLiveChat() {
   if (typeof window === "undefined") return;
   window.Tawk_API?.showWidget?.();
@@ -25,6 +27,21 @@ export default function FitmentAssuranceCallout() {
         </svg>
         Guaranteed Fitment Check — verified against your vehicle before it ships.
       </div>
+
+      <p className="flex items-center gap-3 px-1 text-xs font-medium text-neutral-500">
+        <span className="inline-flex items-center gap-1.5">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-3.5 w-3.5 shrink-0">
+            <path d="M3 6.5h8v7H3v-7zM11 9h3.5l2.5 2.5v2h-6V9z" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="6" cy="15" r="1.4" />
+            <circle cx="14" cy="15" r="1.4" />
+          </svg>
+          Free shipping
+        </span>
+        <span aria-hidden className="h-1 w-1 rounded-full bg-neutral-300" />
+        <Link href="/policies/refund-policy" className="hover:text-neutral-700">
+          30-day money-back guarantee
+        </Link>
+      </p>
 
       <button
         type="button"
