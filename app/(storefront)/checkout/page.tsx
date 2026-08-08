@@ -366,48 +366,105 @@ export default function CheckoutPage() {
 
               <section className={glassCard}>
                 <h2 className="mb-4 text-xl font-bold">Payment</h2>
-                <p className="mb-4 font-medium">
-                  Instant worldwide checkout via NOWPayments
+                <p className="mb-4 font-medium">Secure Checkout via NOWPayments</p>
+                <p className="mb-4 text-sm text-neutral-600">
+                  Complete your payment securely through NOWPayments, with
+                  support for BTC, ETH, USDT, and 300+ cryptocurrencies.
                 </p>
                 <p className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
-                  Click Pay Now to place your order and open your secure NOWPayments
-                  payment page. BTC, ETH, USDT & 300+ coins accepted — no bank or
-                  card required.
+                  Select Pay Now to proceed to your secure NOWPayments payment
+                  page and complete your transaction.
                 </p>
+
+                <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-800">
+                  <p className="mb-2 font-semibold">Important Payment Instructions</p>
+                  <ul className="list-disc space-y-1.5 pl-4 leading-relaxed">
+                    <li>
+                      After completing your payment, copy and securely save
+                      your NOWPayments Transaction ID for your records.
+                    </li>
+                    <li>
+                      Once your Transaction ID has been copied, the
+                      NOWPayments payment page will automatically close and
+                      redirect you back to DrivoraParts.
+                    </li>
+                    <li>
+                      Your return to DrivoraParts confirms that your checkout
+                      has been successfully submitted.
+                    </li>
+                    <li>
+                      Please retain your Transaction ID until your payment and
+                      order have been fully confirmed.
+                    </li>
+                  </ul>
+                </div>
+
                 <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
                   <p className="mb-2 text-xs font-medium text-neutral-700">
-                    New to crypto? Here&apos;s how to pay with a card in 3 steps:
+                    Don&apos;t Have Cryptocurrency?
                   </p>
-                  <ol className="list-decimal space-y-2 pl-4 text-xs text-neutral-500">
+                  <p className="mb-3 text-xs leading-relaxed text-neutral-500">
+                    You can purchase cryptocurrency using a debit or credit
+                    card through a third-party exchange such as{" "}
+                    <a
+                      href="https://changenow.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-600 underline hover:text-red-700"
+                    >
+                      ChangeNOW
+                    </a>
+                    , then use your cryptocurrency to complete your
+                    DrivoraParts payment.
+                  </p>
+                  <p className="mb-2 text-xs font-semibold text-neutral-700">How It Works</p>
+                  <ol className="list-decimal space-y-2 pl-4 text-xs leading-relaxed text-neutral-500">
                     <li>
-                      Click{" "}
-                      <a
-                        href="https://changenow.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-red-600 underline hover:text-red-700"
-                      >
-                        ChangeNOW
-                      </a>{" "}
-                      (opens in a new tab) — a trusted, established exchange
-                      used by crypto buyers worldwide. It&apos;s a separate
-                      platform, so DrivoraParts doesn&apos;t process or verify
-                      that transaction, but it&apos;s a legitimate way to get
-                      crypto fast.
+                      <strong className="text-neutral-700">
+                        Purchase Cryptocurrency —
+                      </strong>{" "}
+                      Open ChangeNOW in a new tab and purchase BTC or another
+                      cryptocurrency supported by NOWPayments using your debit
+                      or credit card.
                     </li>
                     <li>
-                      Come back to this tab and click Pay Now below to open
-                      your unique NOWPayments address in another new tab. Copy
-                      that address and keep both tabs open.
+                      <strong className="text-neutral-700">
+                        Return to DrivoraParts —
+                      </strong>{" "}
+                      Return to this checkout and select Pay Now to open your
+                      secure, unique NOWPayments payment page.
                     </li>
                     <li>
-                      Go back to ChangeNOW, paste the address, and buy BTC (or
-                      any coin) with your debit or credit card. Then check the
-                      NOWPayments tab and wait — once your payment lands,
-                      you&apos;ll get your order confirmation.
+                      <strong className="text-neutral-700">
+                        Complete Payment &amp; Save Your Transaction ID —
+                      </strong>{" "}
+                      Complete your payment through NOWPayments and copy your
+                      Transaction ID. The payment page will then automatically
+                      close and redirect you back to DrivoraParts.
                     </li>
                   </ol>
                 </div>
+
+                <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-xs leading-relaxed text-neutral-500">
+                  <p className="mb-1.5 font-semibold text-neutral-700">Important</p>
+                  <p className="mb-1.5">
+                    ChangeNOW is an independent third-party service.
+                    DrivoraParts does not process, control, or verify
+                    transactions conducted through ChangeNOW.
+                  </p>
+                  <p className="mb-1.5">
+                    Your cryptocurrency payment to DrivoraParts is processed
+                    through NOWPayments.
+                  </p>
+                  <p>
+                    Need assistance?{" "}
+                    <Link href="/contact" className="text-red-600 underline hover:text-red-700">
+                      Contact DrivoraParts Support
+                    </Link>{" "}
+                    before submitting your payment.
+                  </p>
+                </div>
+
                 <img
                   src="https://nowpayments.io/images/embeds/payments-button-black.svg"
                   alt="Crypto payments by NOWPayments"
