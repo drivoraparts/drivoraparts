@@ -87,6 +87,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               paymentStatus={payment?.status ?? null}
               orderStatus={order.order_status}
               shippingStatus={order.shipping_status}
+              customerMessage={order.customer_message}
               shippingInfo={{
                 carrier: order.carrier,
                 trackingNumber: order.tracking_number,

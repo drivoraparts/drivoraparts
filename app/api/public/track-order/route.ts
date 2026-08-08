@@ -45,6 +45,7 @@ export async function GET(req: Request) {
         total: Number(order.total),
         orderStatus: order.order_status,
         shippingStatus: order.shipping_status,
+        customerMessage: order.customer_message,
         carrier: order.carrier,
         trackingNumber: order.tracking_number,
         estimatedDeliveryStart: order.estimated_delivery_start,

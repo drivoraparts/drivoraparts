@@ -16,6 +16,7 @@ type TrackOrderResult = {
   total: number;
   orderStatus: string;
   shippingStatus: string;
+  customerMessage: string | null;
   carrier: string | null;
   trackingNumber: string | null;
   estimatedDeliveryStart: string | null;
@@ -213,6 +214,12 @@ export default function TrackOrderForm() {
           {result.shippingStatus !== "not_shipped" && (
             <p className="mt-2 text-sm text-neutral-700">
               Shipping: {SHIPPING_STATUS_LABELS[result.shippingStatus] ?? result.shippingStatus}
+            </p>
+          )}
+
+          {result.customerMessage && (
+            <p className="mt-4 rounded-lg border border-red-100 bg-red-50 px-4 py-3 text-sm text-neutral-800">
+              {result.customerMessage}
             </p>
           )}
 

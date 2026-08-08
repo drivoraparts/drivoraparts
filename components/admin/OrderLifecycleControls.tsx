@@ -138,12 +138,14 @@ export default function OrderLifecycleControls({
   paymentStatus,
   orderStatus,
   shippingStatus,
+  customerMessage,
   shippingInfo,
 }: {
   orderId: string;
   paymentStatus: PaymentStatus | null;
   orderStatus: OrderLifecycleStatus;
   shippingStatus: ShippingStatus;
+  customerMessage: string | null;
   shippingInfo: {
     carrier: string | null;
     trackingNumber: string | null;
@@ -171,6 +173,27 @@ export default function OrderLifecycleControls({
   const [formLoading, setFormLoading] = useState(false);
   const [formMessage, setFormMessage] = useState("");
   const [formError, setFormError] = useState(false);
+
+  const [messageDraft, setMessageDraft] = useState(customerMessage ?? "");
+  const [messageLoading, setMessageLoading] = useState(false);
+  const [messageStatus, setMessageStatus] = useState("");
+  const [messageError, setMessageError] = useState(false);
+
+  const saveCustomerMessage = async () => {
+    setMessageLoading(true);
+    setMessageStatus("");
+    setMessageError(false);
+    try {
+      await patchLifecycle(orderId, { target: "customer_message", value: messageDraft });
+      setMessageStatus("Saved");
+      router.refresh();
+    } catch (err) {
+      setMessageError(true);
+      setMessageStatus(err instanceof Error ? err.message : "Update failed");
+    } finally {
+      setMessageLoading(false);
+    }
+  };
 
   const saveShippingInfo = async () => {
     setFormLoading(true);
@@ -236,6 +259,32 @@ export default function OrderLifecycleControls({
             </label>
           }
         />
+      </div>
+
+      <div className={adminUi.card}>
+        <p className="text-sm font-semibold text-zinc-900">Customer Message</p>
+        <p className="mt-1 text-xs text-zinc-500">
+          Shown to the customer on the Track Order page, separate from the status timeline. Leave blank to hide it.
+        </p>
+        <textarea
+          value={messageDraft}
+          disabled={messageLoading}
+          onChange={(e) => setMessageDraft(e.target.value)}
+          placeholder="e.g. Your order is currently in transit and expected to arrive soon."
+          rows={2}
+          className="mt-3 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+        />
+        <button
+          type="button"
+          onClick={saveCustomerMessage}
+          disabled={messageLoading}
+          className={`${adminUi.buttonPrimary} mt-3 !py-2 text-xs`}
+        >
+          {messageLoading ? "Saving…" : "Save customer message"}
+        </button>
+        {messageStatus ? (
+          <p className={`mt-2 text-xs ${messageError ? "text-red-600" : "text-emerald-700"}`}>{messageStatus}</p>
+        ) : null}
       </div>
 
       <div className={adminUi.card}>

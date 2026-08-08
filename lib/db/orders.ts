@@ -75,6 +75,8 @@ export type OrderRecord = {
   estimated_delivery_start: string | null;
   estimated_delivery_end: string | null;
   confirmation_sent_at: string | null;
+  customer_message: string | null;
+  customer_message_updated_at: string | null;
   created_at: string;
   updated_at: string;
 };
@@ -792,6 +794,45 @@ export async function updateShippingInfo(
       eventType: "note",
       actor,
       note: "Shipping information updated",
+      customerVisible: false,
+    });
+  }
+
+  return updated;
+}
+
+/**
+ * Admin-authored, customer-visible status message -- e.g. "Your order is
+ * currently in transit and expected to arrive soon." Independent of the
+ * structured status fields; the admin is the sole author, matching the
+ * fully-manual tracking model (no carrier feed writes this).
+ */
+export async function updateCustomerMessage(
+  id: string,
+  message: string | null,
+  actor: string
+): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({
+      customer_message: message,
+      customer_message_updated_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "note",
+      actor,
+      note: message ? "Customer message updated" : "Customer message cleared",
       customerVisible: false,
     });
   }

@@ -6,6 +6,7 @@ import { getClientIp } from "@/lib/security/ip";
 import {
   getOrderById,
   logOrderEvent,
+  updateCustomerMessage,
   updateOrderLifecycleStatus,
   updateShippingInfo,
   updateShippingStatusRecord,
@@ -56,7 +57,7 @@ const PAYMENT_STATUSES: PaymentStatus[] = [
 ];
 
 type LifecycleBody = {
-  target: "order_status" | "shipping_status" | "payment_status" | "shipping_info";
+  target: "order_status" | "shipping_status" | "payment_status" | "shipping_info" | "customer_message";
   value?: string;
   shippingInfo?: ShippingInfoInput;
   note?: string;
@@ -132,6 +133,13 @@ export async function PATCH(
         }
       }
 
+      return NextResponse.json(updated);
+    }
+
+    if (body.target === "customer_message") {
+      const message = body.value?.trim() || null;
+      const updated = await updateCustomerMessage(id, message, actor);
+      await logAdminAudit(actor, "order.update_customer_message", id, { ip });
       return NextResponse.json(updated);
     }
 
