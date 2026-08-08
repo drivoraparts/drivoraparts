@@ -112,6 +112,22 @@ export async function findPaymentByProviderId(
   return data as PaymentRecord | null;
 }
 
+/** Same lookup, any provider -- used by customer Track Order's "Order ID or
+ * Payment ID" field, where the caller doesn't know which provider it is. */
+export async function findPaymentByAnyProviderId(
+  providerPaymentId: string
+): Promise<PaymentRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("payments")
+    .select("*")
+    .eq("provider_payment_id", providerPaymentId)
+    .maybeSingle();
+
+  if (error) throw error;
+  return data as PaymentRecord | null;
+}
+
 export async function listPayments(limit = 100): Promise<PaymentRecord[]> {
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase

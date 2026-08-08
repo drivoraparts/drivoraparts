@@ -10,12 +10,26 @@ type TimelineEntry = {
   createdAt: string;
 };
 
+type StepState = "completed" | "current" | "upcoming";
+
+type Step = {
+  key: string;
+  label: string;
+  state: StepState;
+  timestamp: string | null;
+};
+
+type Banner = { key: "cancelled" | "refunded"; label: string } | null;
+type Notice = { key: "on_hold" | "delivery_exception"; label: string } | null;
+
 type TrackOrderResult = {
   orderNumber: string;
   createdAt: string;
   total: number;
-  orderStatus: string;
-  shippingStatus: string;
+  headline: string;
+  steps: Step[] | null;
+  banner: Banner;
+  notice: Notice;
   customerMessage: string | null;
   carrier: string | null;
   trackingNumber: string | null;
@@ -23,6 +37,19 @@ type TrackOrderResult = {
   estimatedDeliveryEnd: string | null;
   items: { name: string; quantity: number; image: string | null }[];
   timeline: TimelineEntry[];
+};
+
+const HEADLINE_ICONS: Record<string, string> = {
+  "Order Placed": "📦",
+  "Payment Confirmed": "💳",
+  Processing: "⚙️",
+  "Preparing Shipment": "📋",
+  Shipped: "📤",
+  "In Transit": "🚚",
+  "Out for Delivery": "🛵",
+  Delivered: "✅",
+  Cancelled: "✕",
+  Refunded: "↩️",
 };
 
 const EVENT_STEP_LABELS: Record<string, string> = {
@@ -48,30 +75,6 @@ const EVENT_STEP_LABELS: Record<string, string> = {
   "payment_status:failed": "Payment failed",
 };
 
-const ORDER_STATUS_LABELS: Record<string, string> = {
-  pending: "Pending",
-  confirmed: "Confirmed",
-  processing: "Processing",
-  on_hold: "On hold",
-  ready_for_shipment: "Ready for shipment",
-  shipped: "Shipped",
-  completed: "Completed",
-  cancelled: "Cancelled",
-  refunded: "Refunded",
-};
-
-const SHIPPING_STATUS_LABELS: Record<string, string> = {
-  not_shipped: "Not shipped yet",
-  preparing_shipment: "Preparing shipment",
-  shipped: "Shipped",
-  in_transit: "In transit",
-  customs_clearance: "Customs clearance",
-  arrived_at_destination: "Arrived at destination",
-  out_for_delivery: "Out for delivery",
-  delivered: "Delivered",
-  delivery_exception: "Delivery exception",
-};
-
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, {
     year: "numeric",
@@ -91,6 +94,26 @@ function formatCalendarDate(dateOnly: string) {
     month: "short",
     day: "numeric",
   });
+}
+
+function StepMarker({ state }: { state: StepState }) {
+  if (state === "completed") {
+    return (
+      <span className="absolute -left-[13px] top-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-xs font-bold text-white">
+        ✓
+      </span>
+    );
+  }
+  if (state === "current") {
+    return (
+      <span className="absolute -left-[13px] top-0.5 flex h-6 w-6 items-center justify-center rounded-full border-2 border-red-600 bg-white">
+        <span className="h-2 w-2 rounded-full bg-red-600" />
+      </span>
+    );
+  }
+  return (
+    <span className="absolute -left-[13px] top-0.5 h-6 w-6 rounded-full border-2 border-neutral-300 bg-white" />
+  );
 }
 
 export default function TrackOrderForm() {
@@ -119,7 +142,7 @@ export default function TrackOrderForm() {
       if (!res.ok) {
         setError(
           res.status === 404
-            ? "We couldn't find an order with that ID. Double-check it and try again."
+            ? "We couldn't find an order matching that ID. Please check the ID and try again."
             : "Order tracking is temporarily unavailable. Please try again shortly."
         );
         return;
@@ -146,7 +169,9 @@ export default function TrackOrderForm() {
     void lookupOrder(orderId, email);
   };
 
-  const steps = result
+  // Used only for cancelled/refunded orders, which get the real history log
+  // instead of a forward-looking stepper (there's no "next step" to show).
+  const historyEvents = result
     ? [
         { label: "Order placed", createdAt: result.createdAt },
         ...result.timeline
@@ -166,8 +191,8 @@ export default function TrackOrderForm() {
           required
           value={orderId}
           onChange={(e) => setOrderId(e.target.value)}
-          placeholder="e.g. DRV-7K2QX9F"
-          aria-label="Order number"
+          placeholder="Enter your Order ID or Payment ID (e.g. DRV-7K2QX9F)"
+          aria-label="Order ID or Payment ID"
           className="w-full min-w-0 rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none focus:border-red-500"
         />
         <input
@@ -200,8 +225,12 @@ export default function TrackOrderForm() {
               <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">
                 Order {result.orderNumber}
               </p>
-              <p className="mt-1 text-lg font-semibold text-neutral-900">
-                {ORDER_STATUS_LABELS[result.orderStatus] ?? result.orderStatus}
+              <p className="mt-1 text-xs font-medium uppercase tracking-wide text-neutral-500">
+                Current Status
+              </p>
+              <p className="mt-0.5 text-lg font-semibold text-neutral-900">
+                {HEADLINE_ICONS[result.headline] ? `${HEADLINE_ICONS[result.headline]} ` : ""}
+                {result.headline}
               </p>
             </div>
             <p className="text-right text-sm text-neutral-600">
@@ -211,9 +240,10 @@ export default function TrackOrderForm() {
             </p>
           </div>
 
-          {result.shippingStatus !== "not_shipped" && (
-            <p className="mt-2 text-sm text-neutral-700">
-              Shipping: {SHIPPING_STATUS_LABELS[result.shippingStatus] ?? result.shippingStatus}
+          {result.notice && (
+            <p className="mt-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm font-medium text-amber-800">
+              {result.notice.key === "on_hold" ? "⏸ " : "⚠️ "}
+              {result.notice.label}
             </p>
           )}
 
@@ -223,33 +253,57 @@ export default function TrackOrderForm() {
             </p>
           )}
 
-          {(result.carrier || result.trackingNumber || result.estimatedDeliveryStart) && (
+          {result.estimatedDeliveryStart && (
             <div className="mt-4 rounded-lg border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-700">
-              {result.carrier && <p>Carrier: {result.carrier}</p>}
-              {result.trackingNumber && <p>Tracking #: {result.trackingNumber}</p>}
-              {result.estimatedDeliveryStart && (
-                <p>
-                  Estimated delivery: {formatCalendarDate(result.estimatedDeliveryStart)}
-                  {result.estimatedDeliveryEnd ? ` – ${formatCalendarDate(result.estimatedDeliveryEnd)}` : ""}
-                </p>
-              )}
+              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Estimated Delivery</p>
+              <p className="mt-0.5 font-medium text-neutral-900">
+                {formatCalendarDate(result.estimatedDeliveryStart)}
+                {result.estimatedDeliveryEnd ? ` – ${formatCalendarDate(result.estimatedDeliveryEnd)}` : ""}
+              </p>
             </div>
           )}
 
-          {steps.length > 0 && (
-            <ol className="mt-5 space-y-4 border-l border-neutral-300 pl-4">
-              {steps.map((step, index) => (
-                <li key={`${step.label}-${index}`} className="relative">
-                  <span className="absolute -left-[21px] top-1 h-2.5 w-2.5 rounded-full bg-red-600" />
-                  <p className="text-sm font-medium text-neutral-900">{step.label}</p>
-                  <p className="text-xs text-neutral-500">{formatDate(step.createdAt)}</p>
+          {(result.carrier || result.trackingNumber) && (
+            <div className="mt-4 rounded-lg border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-700">
+              {result.carrier && <p>Carrier: {result.carrier}</p>}
+              {result.trackingNumber && <p>Tracking Number: {result.trackingNumber}</p>}
+            </div>
+          )}
+
+          {result.steps ? (
+            <ol className="mt-6 space-y-5 border-l-2 border-neutral-200 pl-6">
+              {result.steps.map((step) => (
+                <li key={step.key} className="relative">
+                  <StepMarker state={step.state} />
+                  <p
+                    className={`text-sm font-medium ${
+                      step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
+                    }`}
+                  >
+                    {step.label}
+                  </p>
+                  {step.timestamp && (
+                    <p className="text-xs text-neutral-500">{formatDate(step.timestamp)}</p>
+                  )}
                 </li>
               ))}
             </ol>
+          ) : (
+            historyEvents.length > 0 && (
+              <ol className="mt-6 space-y-4 border-l border-neutral-300 pl-4">
+                {historyEvents.map((event, index) => (
+                  <li key={`${event.label}-${index}`} className="relative">
+                    <span className="absolute -left-[21px] top-1 h-2.5 w-2.5 rounded-full bg-red-600" />
+                    <p className="text-sm font-medium text-neutral-900">{event.label}</p>
+                    <p className="text-xs text-neutral-500">{formatDate(event.createdAt)}</p>
+                  </li>
+                ))}
+              </ol>
+            )
           )}
 
           {result.items.length > 0 && (
-            <ul className="mt-5 space-y-1 border-t border-neutral-200 pt-4 text-sm text-neutral-700">
+            <ul className="mt-6 space-y-1 border-t border-neutral-200 pt-4 text-sm text-neutral-700">
               {result.items.map((item, index) => (
                 <li key={index}>
                   {item.name} × {item.quantity}
@@ -265,7 +319,7 @@ export default function TrackOrderForm() {
         <Link href="/contact" className="text-red-600 hover:text-red-700">
           Contact support
         </Link>{" "}
-        with your order number.
+        with your order ID.
       </p>
     </div>
   );
