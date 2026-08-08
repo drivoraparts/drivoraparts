@@ -2,7 +2,14 @@ import { EMPTY_PAYMENT_STATS } from "@/lib/admin/fallbacks";
 import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 
-export type PaymentStatus = "pending" | "paid" | "failed" | "refunded";
+export type PaymentStatus =
+  | "pending"
+  | "processing"
+  | "paid"
+  | "failed"
+  | "expired"
+  | "refunded"
+  | "partially_refunded";
 
 export type PaymentRecord = {
   id: string;
@@ -129,9 +136,12 @@ export async function getPaymentStats() {
     const stats = {
       total: data?.length ?? 0,
       pending: 0,
+      processing: 0,
       paid: 0,
       failed: 0,
+      expired: 0,
       refunded: 0,
+      partially_refunded: 0,
       paidAmount: 0,
       pendingAmount: 0,
       nowpaymentsPaid: 0,
@@ -143,7 +153,10 @@ export async function getPaymentStats() {
     };
 
     for (const payment of data ?? []) {
-      stats[payment.status as PaymentStatus] += 1;
+      const status = payment.status as PaymentStatus;
+      if (status in stats) {
+        stats[status as keyof typeof stats] += 1;
+      }
       const amount = Number(payment.amount);
 
       if (payment.status === "pending") {

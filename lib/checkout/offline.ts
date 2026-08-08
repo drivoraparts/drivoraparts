@@ -74,7 +74,7 @@ export async function processCheckoutWithoutSupabase(input: {
     customerEmail: input.customer.email,
     customerPhone: input.customer.phone,
     shippingAddress: input.customer.shippingAddress,
-    orderId,
+    orderNumber: orderId,
     total: breakdown.total,
     subtotal: breakdown.merchandiseTotal,
     shipping,

@@ -17,6 +17,33 @@ export type OrderStatus =
   | "cancelled"
   | "refunded";
 
+/**
+ * Admin-facing order lifecycle -- separate from the legacy `status` column
+ * above (which stays untouched; see migration 005 for why). This is what
+ * the admin dashboard's "Order Status" control reads/writes.
+ */
+export type OrderLifecycleStatus =
+  | "pending"
+  | "confirmed"
+  | "processing"
+  | "on_hold"
+  | "ready_for_shipment"
+  | "shipped"
+  | "completed"
+  | "cancelled"
+  | "refunded";
+
+export type ShippingStatus =
+  | "not_shipped"
+  | "preparing_shipment"
+  | "shipped"
+  | "in_transit"
+  | "customs_clearance"
+  | "arrived_at_destination"
+  | "out_for_delivery"
+  | "delivered"
+  | "delivery_exception";
+
 export type OrderItemRecord = {
   id: string;
   order_id: string;
@@ -31,11 +58,23 @@ export type OrderItemRecord = {
 
 export type OrderRecord = {
   id: string;
+  order_number: string;
   customer_id: string;
   subtotal: number;
   shipping: number;
   total: number;
   status: OrderStatus;
+  order_status: OrderLifecycleStatus;
+  shipping_status: ShippingStatus;
+  carrier: string | null;
+  tracking_number: string | null;
+  shipment_origin: string | null;
+  shipment_destination: string | null;
+  shipment_reference: string | null;
+  shipment_notes: string | null;
+  estimated_delivery_start: string | null;
+  estimated_delivery_end: string | null;
+  confirmation_sent_at: string | null;
   created_at: string;
   updated_at: string;
 };
@@ -62,6 +101,23 @@ export type CreateOrderInput = {
   customerEmail?: string;
 };
 
+/**
+ * Short, non-sequential, customer-safe order reference (e.g. "DRV-7K2QX9F").
+ * Never exposes row counts or creation order, unlike the internal UUID,
+ * which is never shown to customers going forward.
+ */
+function generateOrderNumber(): string {
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // no 0/O/1/I
+  let suffix = "";
+  const bytes = crypto.getRandomValues(new Uint8Array(7));
+  for (const byte of bytes) {
+    suffix += alphabet[byte % alphabet.length];
+  }
+  return `DRV-${suffix}`;
+}
+
+const MAX_ORDER_NUMBER_ATTEMPTS = 5;
+
 export async function createOrderRecord(
   input: CreateOrderInput
 ): Promise<OrderWithDetails> {
@@ -81,19 +137,41 @@ export async function createOrderRecord(
 
   const supabase = getSupabaseAdmin();
 
-  const { data: order, error: orderError } = await supabase
-    .from("orders")
-    .insert({
-      customer_id: input.customerId,
-      subtotal,
-      shipping,
-      total,
-      status: "pending",
-    })
-    .select("*")
-    .single();
+  let order: OrderRecord | null = null;
+  let orderError: { code?: string; message: string } | null = null;
 
-  if (orderError) throw orderError;
+  for (let attempt = 0; attempt < MAX_ORDER_NUMBER_ATTEMPTS; attempt += 1) {
+    const result = await supabase
+      .from("orders")
+      .insert({
+        customer_id: input.customerId,
+        subtotal,
+        shipping,
+        total,
+        status: "pending",
+        order_number: generateOrderNumber(),
+        order_status: "pending",
+      })
+      .select("*")
+      .single();
+
+    if (!result.error) {
+      order = result.data as OrderRecord;
+      orderError = null;
+      break;
+    }
+
+    // 23505 = unique_violation -- retry with a freshly generated order_number.
+    if (result.error.code !== "23505") {
+      orderError = result.error;
+      break;
+    }
+    orderError = result.error;
+  }
+
+  if (!order) {
+    throw orderError ?? new Error("Failed to create order");
+  }
 
   const itemRows = input.items.map((item) => ({
     order_id: order.id,
@@ -229,6 +307,51 @@ export async function getOrderStatusSummaryById(
   if (error) throw error;
   if (!data) return null;
   return { status: data.status as OrderStatus, total: Number(data.total) };
+}
+
+/**
+ * Customer-facing lookup by the short public order number (e.g. "DRV-7K2QX9F"),
+ * never the internal UUID. Email is an optional extra check: when provided,
+ * it must match the order's customer email (case-insensitive) or the lookup
+ * returns null, same as "not found" -- doesn't leak whether the order number
+ * itself exists.
+ */
+export async function getOrderByNumber(
+  orderNumber: string,
+  email?: string
+): Promise<OrderWithDetails | null> {
+  const supabase = getSupabaseAdmin();
+  const normalized = orderNumber.trim().toUpperCase();
+
+  const { data: order, error } = await supabase
+    .from("orders")
+    .select("*")
+    .eq("order_number", normalized)
+    .maybeSingle();
+
+  if (error) throw error;
+  if (!order) return null;
+
+  const { data: customer } = await supabase
+    .from("customers")
+    .select("*")
+    .eq("id", order.customer_id)
+    .maybeSingle();
+
+  if (email && customer?.email?.toLowerCase() !== email.trim().toLowerCase()) {
+    return null;
+  }
+
+  const { data: items } = await supabase
+    .from("order_items")
+    .select("*")
+    .eq("order_id", order.id);
+
+  return {
+    ...(order as OrderRecord),
+    customer: (customer as CustomerRecord | null) ?? null,
+    items: (items ?? []) as OrderItemRecord[],
+  };
 }
 
 export async function listOrders(limit = 100): Promise<OrderWithDetails[]> {
@@ -367,14 +490,31 @@ export async function finalizeOrderPaid(id: string): Promise<OrderRecord | null>
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase
     .from("orders")
-    .update({ status: "paid", updated_at: new Date().toISOString() })
+    .update({
+      status: "paid",
+      order_status: "confirmed",
+      updated_at: new Date().toISOString(),
+    })
     .eq("id", id)
     .in("status", ["pending", "processing"])
     .select("*")
     .maybeSingle();
 
   if (error) throw error;
-  return (data as OrderRecord | null) ?? null;
+  const updated = (data as OrderRecord | null) ?? null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "order_status",
+      fromValue: "pending",
+      toValue: "confirmed",
+      actor: "webhook",
+      note: "Payment confirmed by NOWPayments",
+    });
+  }
+
+  return updated;
 }
 
 /**
@@ -385,14 +525,30 @@ export async function failOrderIfUnpaid(id: string): Promise<OrderRecord | null>
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase
     .from("orders")
-    .update({ status: "cancelled", updated_at: new Date().toISOString() })
+    .update({
+      status: "cancelled",
+      order_status: "cancelled",
+      updated_at: new Date().toISOString(),
+    })
     .eq("id", id)
     .in("status", ["pending", "processing"])
     .select("*")
     .maybeSingle();
 
   if (error) throw error;
-  return (data as OrderRecord | null) ?? null;
+  const updated = (data as OrderRecord | null) ?? null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "order_status",
+      toValue: "cancelled",
+      actor: "webhook",
+      note: "Payment failed",
+    });
+  }
+
+  return updated;
 }
 
 /**
@@ -460,4 +616,194 @@ export async function getOrderStats() {
       abandonedCheckouts: abandonedCheckouts.length,
     };
   });
+}
+
+/* =========================================================
+   ORDER TIMELINE (order_events)
+========================================================= */
+
+export type OrderEventType = "payment_status" | "order_status" | "shipping_status" | "note";
+
+export type OrderEventRecord = {
+  id: string;
+  order_id: string;
+  event_type: OrderEventType;
+  from_value: string | null;
+  to_value: string | null;
+  note: string | null;
+  actor: string;
+  customer_visible: boolean;
+  created_at: string;
+};
+
+export async function logOrderEvent(input: {
+  orderId: string;
+  eventType: OrderEventType;
+  fromValue?: string | null;
+  toValue?: string | null;
+  note?: string | null;
+  actor: string;
+  customerVisible?: boolean;
+}): Promise<void> {
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase.from("order_events").insert({
+    order_id: input.orderId,
+    event_type: input.eventType,
+    from_value: input.fromValue ?? null,
+    to_value: input.toValue ?? null,
+    note: input.note ?? null,
+    actor: input.actor,
+    customer_visible: input.customerVisible ?? true,
+  });
+
+  // Timeline logging is best-effort -- never let it break the actual status
+  // change it's recording.
+  if (error) {
+    console.error("[order_events] insert failed", error.message);
+  }
+}
+
+export async function listOrderEvents(orderId: string): Promise<OrderEventRecord[]> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("order_events")
+    .select("*")
+    .eq("order_id", orderId)
+    .order("created_at", { ascending: true });
+
+  if (error) throw error;
+  return (data ?? []) as OrderEventRecord[];
+}
+
+/* =========================================================
+   ADMIN STATUS CONTROLS (order_status / shipping_status / shipping info)
+========================================================= */
+
+export async function updateOrderLifecycleStatus(
+  id: string,
+  status: OrderLifecycleStatus,
+  actor: string,
+  note?: string
+): Promise<OrderRecord | null> {
+  const existing = await getOrderById(id);
+  if (!existing) return null;
+  if (existing.order_status === status) return existing;
+
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ order_status: status, updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "order_status",
+      fromValue: existing.order_status,
+      toValue: status,
+      actor,
+      note,
+    });
+  }
+
+  return updated;
+}
+
+export async function updateShippingStatusRecord(
+  id: string,
+  status: ShippingStatus,
+  actor: string,
+  note?: string
+): Promise<OrderRecord | null> {
+  const existing = await getOrderById(id);
+  if (!existing) return null;
+  if (existing.shipping_status === status) return existing;
+
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ shipping_status: status, updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "shipping_status",
+      fromValue: existing.shipping_status,
+      toValue: status,
+      actor,
+      note,
+    });
+  }
+
+  return updated;
+}
+
+export type ShippingInfoInput = {
+  carrier?: string | null;
+  trackingNumber?: string | null;
+  shipmentOrigin?: string | null;
+  shipmentDestination?: string | null;
+  shipmentReference?: string | null;
+  shipmentNotes?: string | null;
+  estimatedDeliveryStart?: string | null;
+  estimatedDeliveryEnd?: string | null;
+};
+
+export async function updateShippingInfo(
+  id: string,
+  input: ShippingInfoInput,
+  actor: string
+): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({
+      carrier: input.carrier,
+      tracking_number: input.trackingNumber,
+      shipment_origin: input.shipmentOrigin,
+      shipment_destination: input.shipmentDestination,
+      shipment_reference: input.shipmentReference,
+      shipment_notes: input.shipmentNotes,
+      estimated_delivery_start: input.estimatedDeliveryStart,
+      estimated_delivery_end: input.estimatedDeliveryEnd,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "note",
+      actor,
+      note: "Shipping information updated",
+      customerVisible: false,
+    });
+  }
+
+  return updated;
+}
+
+export async function markConfirmationSent(id: string): Promise<void> {
+  const supabase = getSupabaseAdmin();
+  await supabase
+    .from("orders")
+    .update({ confirmation_sent_at: new Date().toISOString() })
+    .eq("id", id)
+    .is("confirmation_sent_at", null);
 }

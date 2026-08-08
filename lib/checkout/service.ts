@@ -441,7 +441,7 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
 
       customerName: updated.customer.full_name,
 
-      orderId,
+      orderNumber: updated.order_number,
 
       total: Number(updated.total),
 
@@ -457,7 +457,7 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
     });
 
     await sendAdminPaymentConfirmedEmail({
-      orderId,
+      orderNumber: updated.order_number,
       customerName: updated.customer.full_name,
       customerEmail: updated.customer.email,
       customerPhone: updated.customer.phone ?? undefined,

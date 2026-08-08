@@ -18,7 +18,7 @@ export async function emailCustomerOrderInvoice(input: {
   customerEmail: string;
   customerPhone?: string;
   shippingAddress?: string;
-  orderId: string;
+  orderNumber: string;
   total: number;
   subtotal?: number;
   shipping?: number;
@@ -35,7 +35,7 @@ export async function emailCustomerOrderInvoice(input: {
   const sent = await sendOrderCreatedEmail({
     to: input.to,
     customerName: input.customerName,
-    orderId: input.orderId,
+    orderNumber: input.orderNumber,
     total: input.total,
     subtotal: input.subtotal,
     shipping: input.shipping,
@@ -43,7 +43,7 @@ export async function emailCustomerOrderInvoice(input: {
   });
 
   const adminSent = await sendAdminNewOrderEmail({
-    orderId: input.orderId,
+    orderNumber: input.orderNumber,
     customerName: input.customerName,
     customerEmail: input.customerEmail,
     customerPhone: input.customerPhone,
@@ -54,25 +54,25 @@ export async function emailCustomerOrderInvoice(input: {
 
   if (!sent) {
     await logActivity("warn", "checkout.invoice_email_skipped", {
-      orderId: input.orderId,
+      orderId: input.orderNumber,
       reason: "RESEND_API_KEY not configured",
       hadPaymentUrl: Boolean(input.paymentUrl),
     });
   } else {
     await logActivity("info", "checkout.order_created_email_sent", {
-      orderId: input.orderId,
+      orderId: input.orderNumber,
       itemCount: input.items.length,
     });
   }
 
   if (!adminSent) {
     await logActivity("warn", "checkout.admin_order_email_skipped", {
-      orderId: input.orderId,
+      orderId: input.orderNumber,
       reason: "RESEND_API_KEY not configured",
     });
   } else {
     await logActivity("info", "checkout.admin_order_email_sent", {
-      orderId: input.orderId,
+      orderId: input.orderNumber,
     });
   }
 

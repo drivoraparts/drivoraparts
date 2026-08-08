@@ -61,7 +61,7 @@ export async function PATCH(req: Request) {
         await sendOrderShippedEmail({
           to: order.customer.email,
           customerName: order.customer.full_name,
-          orderId,
+          orderNumber: order.order_number,
         });
       }
 
@@ -69,7 +69,7 @@ export async function PATCH(req: Request) {
         await sendOrderDeliveredEmail({
           to: order.customer.email,
           customerName: order.customer.full_name,
-          orderId,
+          orderNumber: order.order_number,
         });
       }
     }

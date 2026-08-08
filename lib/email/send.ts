@@ -54,10 +54,6 @@ function escapeHtml(value: string): string {
     .replace(/"/g, "&quot;");
 }
 
-function formatOrderRef(orderId: string): string {
-  return orderId.slice(0, 8).toUpperCase();
-}
-
 function formatDocumentDate(date = new Date()): string {
   return date.toLocaleDateString("en-US", {
     year: "numeric",
@@ -118,91 +114,6 @@ function documentLayout(content: string, preheader = "", headerSubtitle = "Order
 </html>`;
 }
 
-function layout(content: string, preheader = ""): string {
-  const siteUrl = getSiteUrl();
-  return `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DrivoraParts</title>
-</head>
-<body style="margin:0;padding:0;background:#0a0a0a;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;">
-  <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${escapeHtml(preheader)}</div>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#0a0a0a;padding:32px 16px;">
-    <tr>
-      <td align="center">
-        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:600px;background:#111111;border:1px solid #2a2a2a;border-radius:16px;overflow:hidden;">
-          <tr>
-            <td style="padding:28px 28px 16px;border-bottom:1px solid #2a2a2a;">
-              <p style="margin:0;color:#ef4444;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;">DrivoraParts</p>
-              <p style="margin:8px 0 0;font-size:13px;color:#a3a3a3;">Performance parts · Secure checkout</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:28px;">
-              ${content}
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px 28px 28px;border-top:1px solid #2a2a2a;background:#0d0d0d;">
-              <p style="margin:0;font-size:12px;line-height:1.6;color:#737373;">
-                Questions about your order? Reply to this email or visit
-                <a href="${siteUrl}/contact" style="color:#ef4444;text-decoration:none;">${siteUrl.replace(/^https?:\/\//, "")}</a>.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
-</html>`;
-}
-
-function receiptLayout(content: string, preheader = ""): string {
-  const siteUrl = getSiteUrl();
-  return `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DrivoraParts</title>
-</head>
-<body style="margin:0;padding:0;background:#f3f4f6;color:#111827;font-family:Arial,Helvetica,sans-serif;">
-  <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${escapeHtml(preheader)}</div>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f3f4f6;padding:32px 16px;">
-    <tr>
-      <td align="center">
-        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:600px;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
-          <tr>
-            <td style="padding:28px 28px 16px;border-bottom:1px solid #e5e7eb;">
-              <p style="margin:0;color:#dc2626;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;">DrivoraParts</p>
-              <p style="margin:8px 0 0;font-size:13px;color:#6b7280;">Invoice & receipt</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:28px;">
-              ${content}
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px 28px 28px;border-top:1px solid #e5e7eb;background:#f9fafb;">
-              <p style="margin:0;font-size:12px;line-height:1.6;color:#6b7280;">
-                Questions about your order? Reply to this email or visit
-                <a href="${siteUrl}/contact" style="color:#dc2626;text-decoration:none;">${siteUrl.replace(/^https?:\/\//, "")}</a>.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
-</html>`;
-}
 
 export type OrderInvoiceLine = {
   name: string;
@@ -216,43 +127,6 @@ function resolveEmailImageUrl(src: string | null | undefined): string | null {
   if (src.startsWith("http://") || src.startsWith("https://")) return src;
   const siteUrl = getSiteUrl();
   return `${siteUrl}${src.startsWith("/") ? src : `/${src}`}`;
-}
-
-function renderOrderLinesRows(items: OrderInvoiceLine[]): string {
-  return items
-    .map(
-      (item) => `
-          <tr>
-            <td style="padding:14px 0;border-bottom:1px solid #262626;color:#f5f5f5;font-size:14px;">${escapeHtml(item.name)}</td>
-            <td style="padding:14px 8px;border-bottom:1px solid #262626;color:#d4d4d4;font-size:14px;text-align:center;">${item.quantity}</td>
-            <td style="padding:14px 0;border-bottom:1px solid #262626;color:#f5f5f5;font-size:14px;text-align:right;">$${(item.unitPrice * item.quantity).toFixed(2)}</td>
-          </tr>`
-    )
-    .join("");
-}
-
-function renderOrderLinesTable(items: OrderInvoiceLine[]): string {
-  return `
-      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;margin:0 0 8px;">
-        <thead>
-          <tr>
-            <th align="left" style="padding:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#737373;">Item</th>
-            <th style="padding:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#737373;">Qty</th>
-            <th align="right" style="padding:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#737373;">Amount</th>
-          </tr>
-        </thead>
-        <tbody>${renderOrderLinesRows(items)}</tbody>
-      </table>`;
-}
-
-function renderOrderTotalRow(total: number, label: string): string {
-  return `
-      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 24px;">
-        <tr>
-          <td style="padding-top:12px;border-top:2px solid #2a2a2a;font-size:18px;font-weight:700;color:#ffffff;">${label}</td>
-          <td align="right" style="padding-top:12px;border-top:2px solid #2a2a2a;font-size:18px;font-weight:700;color:#ffffff;">$${total.toFixed(2)} USD</td>
-        </tr>
-      </table>`;
 }
 
 function renderReceiptLinesRows(items: OrderInvoiceLine[]): string {
@@ -316,7 +190,7 @@ function renderReceiptMetaTable(rows: string): string {
 
 type OrderDocumentInput = {
   customerName: string;
-  orderId: string;
+  orderNumber: string;
   total: number;
   subtotal?: number;
   shipping?: number;
@@ -326,7 +200,7 @@ type OrderDocumentInput = {
 };
 
 function buildReceiptPage(input: OrderDocumentInput): string {
-  const orderRef = formatOrderRef(input.orderId);
+  const orderRef = input.orderNumber;
   const statusLabel = input.paid ? "Payment confirmed" : "Order placed";
   const statusColor = input.paid ? "#16a34a" : "#2563eb";
   const headline = input.paid ? "Payment receipt" : "Order successfully placed";
@@ -356,12 +230,12 @@ function buildReceiptPage(input: OrderDocumentInput): string {
     </p>
 
     <p style="margin:0;font-size:13px;font-family:Arial,Helvetica,sans-serif;">
-      <a href="${getSiteUrl()}/track-order?orderId=${encodeURIComponent(input.orderId)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
+      <a href="${getSiteUrl()}/track-order?orderId=${encodeURIComponent(input.orderNumber)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
     </p>`;
 }
 
 function buildInvoiceAgreementPage(input: OrderDocumentInput): string {
-  const orderRef = formatOrderRef(input.orderId);
+  const orderRef = input.orderNumber;
   const subtotal =
     input.subtotal ??
     input.items.reduce((sum, item) => sum + item.unitPrice * item.quantity, 0);
@@ -458,13 +332,13 @@ function buildTwoPageOrderDocument(input: OrderDocumentInput): string {
 export async function sendOrderCreatedEmail(input: {
   to: string;
   customerName: string;
-  orderId: string;
+  orderNumber: string;
   total: number;
   subtotal?: number;
   shipping?: number;
   items: OrderInvoiceLine[];
 }): Promise<boolean> {
-  const orderRef = formatOrderRef(input.orderId);
+  const orderRef = input.orderNumber;
   const documentDate = formatDocumentDate();
 
   return sendEmail({
@@ -473,7 +347,7 @@ export async function sendOrderCreatedEmail(input: {
     html: documentLayout(
       buildTwoPageOrderDocument({
         customerName: input.customerName,
-        orderId: input.orderId,
+        orderNumber: input.orderNumber,
         total: input.total,
         subtotal: input.subtotal,
         shipping: input.shipping,
@@ -491,22 +365,22 @@ export async function sendOrderCreatedEmail(input: {
 export async function sendOrderReceiptEmail(input: {
   to: string;
   customerName: string;
-  orderId: string;
+  orderNumber: string;
   total: number;
   subtotal?: number;
   shipping?: number;
   items: OrderInvoiceLine[];
 }): Promise<boolean> {
-  const orderRef = formatOrderRef(input.orderId);
+  const orderRef = input.orderNumber;
   const documentDate = formatDocumentDate();
 
   return sendEmail({
     to: input.to,
-    subject: `Paid invoice & receipt — Order #${orderRef}`,
+    subject: `Order confirmed — #${orderRef}`,
     html: documentLayout(
       buildTwoPageOrderDocument({
         customerName: input.customerName,
-        orderId: input.orderId,
+        orderNumber: input.orderNumber,
         total: input.total,
         subtotal: input.subtotal,
         shipping: input.shipping,
@@ -514,46 +388,16 @@ export async function sendOrderReceiptEmail(input: {
         documentDate,
         paid: true,
       }),
-      `Paid invoice and receipt for order #${orderRef}.`,
-      "Paid invoice & receipt"
+      `Your DrivoraParts order has been confirmed — #${orderRef}.`,
+      "Order confirmed"
     ),
-  });
-}
-
-/** @deprecated Use sendOrderCreatedEmail or sendOrderReceiptEmail. */
-export async function sendOrderInvoiceEmail(input: {
-  to: string;
-  customerName: string;
-  orderId: string;
-  total: number;
-  paymentUrl?: string;
-  items: OrderInvoiceLine[];
-}): Promise<boolean> {
-  return sendOrderCreatedEmail(input);
-}
-
-export async function sendOrderReceivedEmail(input: {
-  to: string;
-  customerName: string;
-  orderId: string;
-  total: number;
-}): Promise<boolean> {
-  return sendEmail({
-    to: input.to,
-    subject: `Order received — ${input.orderId.slice(0, 8).toUpperCase()}`,
-    html: layout(`
-      <h1 style="font-size:22px;">Thanks, ${escapeHtml(input.customerName)}!</h1>
-      <p>We received your order <strong>${input.orderId}</strong>.</p>
-      <p>Total: <strong>$${input.total.toFixed(2)}</strong></p>
-      <p>We will notify you when payment is confirmed.</p>
-    `),
   });
 }
 
 export async function sendPaymentReceivedEmail(input: {
   to: string;
   customerName: string;
-  orderId: string;
+  orderNumber: string;
   total: number;
   subtotal?: number;
   shipping?: number;
@@ -563,7 +407,7 @@ export async function sendPaymentReceivedEmail(input: {
     return sendOrderReceiptEmail({
       to: input.to,
       customerName: input.customerName,
-      orderId: input.orderId,
+      orderNumber: input.orderNumber,
       total: input.total,
       subtotal: input.subtotal,
       shipping: input.shipping,
@@ -571,27 +415,27 @@ export async function sendPaymentReceivedEmail(input: {
     });
   }
 
-  const orderRef = formatOrderRef(input.orderId);
+  const orderRef = input.orderNumber;
   return sendEmail({
     to: input.to,
-    subject: `Paid invoice & receipt — Order #${orderRef}`,
+    subject: `Order confirmed — #${orderRef}`,
     html: documentLayout(
       buildTwoPageOrderDocument({
         customerName: input.customerName,
-        orderId: input.orderId,
+        orderNumber: input.orderNumber,
         total: input.total,
         items: [],
         documentDate: formatDocumentDate(),
         paid: true,
       }),
-      `Payment confirmed for order #${orderRef}.`,
-      "Paid invoice & receipt"
+      `Your DrivoraParts order has been confirmed — #${orderRef}.`,
+      "Order confirmed"
     ),
   });
 }
 
 export async function sendAdminNewOrderEmail(input: {
-  orderId: string;
+  orderNumber: string;
   customerName: string;
   customerEmail: string;
   customerPhone?: string;
@@ -599,7 +443,7 @@ export async function sendAdminNewOrderEmail(input: {
   total: number;
   items: OrderInvoiceLine[];
 }): Promise<boolean> {
-  const orderRef = formatOrderRef(input.orderId);
+  const orderRef = input.orderNumber;
   const siteUrl = getSiteUrl();
   const adminUrl = `${siteUrl}/admin/orders`;
   const itemRows = input.items
@@ -642,7 +486,7 @@ export async function sendAdminNewOrderEmail(input: {
 /** Admin's counterpart to sendPaymentReceivedEmail -- fires from the same
  *  payment-confirmed webhook path, never at checkout/order-creation time. */
 export async function sendAdminPaymentConfirmedEmail(input: {
-  orderId: string;
+  orderNumber: string;
   customerName: string;
   customerEmail: string;
   customerPhone?: string;
@@ -651,7 +495,7 @@ export async function sendAdminPaymentConfirmedEmail(input: {
   items: OrderInvoiceLine[];
   transactionId?: string;
 }): Promise<boolean> {
-  const orderRef = formatOrderRef(input.orderId);
+  const orderRef = input.orderNumber;
   const siteUrl = getSiteUrl();
   const adminUrl = `${siteUrl}/admin/orders`;
   const itemRows = input.items
@@ -693,34 +537,100 @@ export async function sendAdminPaymentConfirmedEmail(input: {
   });
 }
 
-export async function sendOrderShippedEmail(input: {
+type ShippingUpdateInput = {
   to: string;
   customerName: string;
-  orderId: string;
-}): Promise<boolean> {
+  orderNumber: string;
+  carrier?: string | null;
+  trackingNumber?: string | null;
+  estimatedDeliveryStart?: string | null;
+  estimatedDeliveryEnd?: string | null;
+};
+
+function renderShippingUpdateMeta(input: ShippingUpdateInput): string {
+  const rows: string[] = [];
+  if (input.carrier) rows.push(renderReceiptMetaRow("Carrier", escapeHtml(input.carrier)));
+  if (input.trackingNumber) {
+    rows.push(renderReceiptMetaRow("Tracking number", escapeHtml(input.trackingNumber)));
+  }
+  if (input.estimatedDeliveryStart) {
+    const window = input.estimatedDeliveryEnd
+      ? `${escapeHtml(input.estimatedDeliveryStart)} – ${escapeHtml(input.estimatedDeliveryEnd)}`
+      : escapeHtml(input.estimatedDeliveryStart);
+    rows.push(renderReceiptMetaRow("Estimated delivery", window));
+  }
+  return rows.length ? renderReceiptMetaTable(rows.join("")) : "";
+}
+
+function trackOrderLink(orderNumber: string): string {
+  return `${getSiteUrl()}/track-order?orderId=${encodeURIComponent(orderNumber)}`;
+}
+
+export async function sendOrderShippedEmail(input: ShippingUpdateInput): Promise<boolean> {
+  const orderRef = input.orderNumber;
   return sendEmail({
     to: input.to,
-    subject: `Your order has shipped — ${input.orderId.slice(0, 8).toUpperCase()}`,
-    html: layout(`
-      <h1 style="font-size:22px;">Order shipped</h1>
-      <p>Hi ${escapeHtml(input.customerName)}, order <strong>${input.orderId}</strong> is on its way.</p>
-      <p>Tracking details will follow if applicable.</p>
-    `),
+    subject: `Your order has shipped — #${orderRef}`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#2563eb;font-family:Arial,Helvetica,sans-serif;">Shipping update</p>
+      <h1 style="margin:0 0 16px;font-size:28px;color:#111827;font-family:Georgia,'Times New Roman',Times,serif;">Your order has shipped</h1>
+      <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:#374151;font-family:Arial,Helvetica,sans-serif;">
+        Hi ${escapeHtml(input.customerName)}, order #${orderRef} is on its way.
+      </p>
+      ${renderShippingUpdateMeta(input)}
+      <p style="margin:20px 0 0;font-size:14px;font-family:Arial,Helvetica,sans-serif;">
+        <a href="${trackOrderLink(input.orderNumber)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
+      </p>
+    `,
+      `Order #${orderRef} has shipped.`,
+      "Shipping update"
+    ),
+  });
+}
+
+export async function sendOrderOutForDeliveryEmail(input: ShippingUpdateInput): Promise<boolean> {
+  const orderRef = input.orderNumber;
+  return sendEmail({
+    to: input.to,
+    subject: `Your order is out for delivery — #${orderRef}`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#2563eb;font-family:Arial,Helvetica,sans-serif;">Shipping update</p>
+      <h1 style="margin:0 0 16px;font-size:28px;color:#111827;font-family:Georgia,'Times New Roman',Times,serif;">Out for delivery</h1>
+      <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:#374151;font-family:Arial,Helvetica,sans-serif;">
+        Hi ${escapeHtml(input.customerName)}, order #${orderRef} is with the local delivery service and should arrive soon.
+      </p>
+      ${renderShippingUpdateMeta(input)}
+      <p style="margin:20px 0 0;font-size:14px;font-family:Arial,Helvetica,sans-serif;">
+        <a href="${trackOrderLink(input.orderNumber)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
+      </p>
+    `,
+      `Order #${orderRef} is out for delivery.`,
+      "Shipping update"
+    ),
   });
 }
 
 export async function sendOrderDeliveredEmail(input: {
   to: string;
   customerName: string;
-  orderId: string;
+  orderNumber: string;
 }): Promise<boolean> {
+  const orderRef = input.orderNumber;
   return sendEmail({
     to: input.to,
-    subject: `Order delivered — ${input.orderId.slice(0, 8).toUpperCase()}`,
-    html: layout(`
-      <h1 style="font-size:22px;">Delivered</h1>
-      <p>Hi ${escapeHtml(input.customerName)}, order <strong>${input.orderId}</strong> has been marked delivered.</p>
-      <p>Thank you for choosing DrivoraParts.</p>
-    `),
+    subject: `Order delivered — #${orderRef}`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#16a34a;font-family:Arial,Helvetica,sans-serif;">Delivery confirmation</p>
+      <h1 style="margin:0 0 16px;font-size:28px;color:#111827;font-family:Georgia,'Times New Roman',Times,serif;">Delivered</h1>
+      <p style="margin:0;font-size:15px;line-height:1.65;color:#374151;font-family:Arial,Helvetica,sans-serif;">
+        Hi ${escapeHtml(input.customerName)}, order #${orderRef} has been marked delivered. Thank you for choosing DrivoraParts.
+      </p>
+    `,
+      `Order #${orderRef} delivered.`,
+      "Delivery confirmation"
+    ),
   });
 }

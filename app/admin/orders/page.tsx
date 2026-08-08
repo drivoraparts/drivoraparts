@@ -1,6 +1,5 @@
+import Link from "next/link";
 import AdminShell from "@/components/admin/AdminShell";
-
-import OrderStatusControl from "@/components/admin/OrderStatusControl";
 
 import { listPlacedOrders } from "@/lib/db/orders";
 
@@ -27,6 +26,8 @@ function formatPaymentMethod(provider: string, metadata: Record<string, unknown>
   return "Manual fallback";
 
 }
+
+const STATUS_BADGE = "inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium capitalize";
 
 
 
@@ -56,12 +57,10 @@ export default async function AdminOrdersPage() {
 
             return (
 
-              <article
-
+              <Link
                 key={order.id}
-
-                className="rounded-lg bg-white shadow-sm border border-zinc-200 p-6"
-
+                href={`/admin/orders/${order.id}`}
+                className="block rounded-lg bg-white shadow-sm border border-zinc-200 p-6 transition hover:border-red-300"
               >
 
                 <div className="mb-4 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
@@ -70,9 +69,9 @@ export default async function AdminOrdersPage() {
 
                     <div>
 
-                      <p className="text-sm text-zinc-600">Order ID</p>
+                      <p className="text-sm text-zinc-600">Order</p>
 
-                      <p className="font-mono text-sm">{order.id}</p>
+                      <p className="font-mono text-sm">{order.order_number}</p>
 
                     </div>
 
@@ -116,10 +115,13 @@ export default async function AdminOrdersPage() {
 
                     <p className="text-2xl font-bold">${Number(order.total).toFixed(2)}</p>
 
-                    <div className="mt-2">
-
-                      <OrderStatusControl orderId={order.id} currentStatus={order.status} />
-
+                    <div className="mt-2 flex flex-wrap justify-end gap-1.5">
+                      <span className={`${STATUS_BADGE} bg-blue-50 text-blue-700`}>
+                        {order.order_status.replace(/_/g, " ")}
+                      </span>
+                      <span className={`${STATUS_BADGE} bg-amber-50 text-amber-700`}>
+                        {order.shipping_status.replace(/_/g, " ")}
+                      </span>
                     </div>
 
                   </div>
@@ -158,7 +160,7 @@ export default async function AdminOrdersPage() {
 
                 <p className="mt-4 text-xs text-gray-500">{formatTime(order.created_at)}</p>
 
-              </article>
+              </Link>
 
             );
 
@@ -173,5 +175,3 @@ export default async function AdminOrdersPage() {
   );
 
 }
-
-

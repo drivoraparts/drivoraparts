@@ -17,9 +17,12 @@ export const EMPTY_ORDER_STATS = {
 export const EMPTY_PAYMENT_STATS = {
   total: 0,
   pending: 0,
+  processing: 0,
   paid: 0,
   failed: 0,
+  expired: 0,
   refunded: 0,
+  partially_refunded: 0,
   paidAmount: 0,
   pendingAmount: 0,
   nowpaymentsPaid: 0,

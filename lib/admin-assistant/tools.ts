@@ -1,4 +1,4 @@
-import { EMPTY_ORDER_STATS } from "@/lib/admin/fallbacks";
+import { EMPTY_ORDER_STATS, EMPTY_PAYMENT_STATS } from "@/lib/admin/fallbacks";
 import { getAnalyticsSummary } from "@/lib/analytics";
 import { getInventoryAlerts, getInventoryStats } from "@/lib/db/inventory";
 import { getOrderStats, listOrders } from "@/lib/db/orders";
@@ -38,21 +38,7 @@ export async function getRevenue() {
     ),
     safeQuery(
       () => getPaymentStats(),
-      {
-        total: 0,
-        pending: 0,
-        paid: 0,
-        failed: 0,
-        refunded: 0,
-        paidAmount: 0,
-        pendingAmount: 0,
-        nowpaymentsPaid: 0,
-        nowpaymentsPaidAmount: 0,
-        nowpaymentsPending: 0,
-        nowpaymentsPendingAmount: 0,
-        manualPaid: 0,
-        manualPaidAmount: 0,
-      },
+      EMPTY_PAYMENT_STATS,
       "assistant-payments"
     ),
   ]);
