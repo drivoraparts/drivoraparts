@@ -95,13 +95,13 @@ function StatusCard({
   };
 
   return (
-    <div className={adminUi.cardCompact}>
-      <p className="text-sm font-semibold text-zinc-900">{title}</p>
+    <div className="rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm">
+      <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">{title}</p>
       <select
         value={value}
         disabled={loading}
         onChange={(e) => setValue(e.target.value)}
-        className="mt-3 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+        className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm font-medium text-zinc-900"
       >
         {Object.entries(labels).map(([key, label]) => (
           <option key={key} value={key}>
@@ -114,20 +114,20 @@ function StatusCard({
         disabled={loading}
         onChange={(e) => setNote(e.target.value)}
         placeholder="Optional internal note"
-        rows={2}
-        className="mt-2 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-xs"
+        rows={1}
+        className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs"
       />
       {extra}
       <button
         type="button"
         onClick={handleSave}
         disabled={loading || value === currentValue}
-        className={`${adminUi.buttonPrimary} mt-3 w-full !py-2 text-xs`}
+        className={`${adminUi.buttonPrimary} mt-2 w-full !py-1.5 text-xs`}
       >
         {loading ? "Saving…" : "Save"}
       </button>
       {message ? (
-        <p className={`mt-2 text-xs ${error ? "text-red-600" : "text-emerald-700"}`}>{message}</p>
+        <p className={`mt-1.5 text-xs ${error ? "text-red-600" : "text-emerald-700"}`}>{message}</p>
       ) : null}
     </div>
   );
@@ -215,8 +215,8 @@ export default function OrderLifecycleControls({
   };
 
   return (
-    <div className="space-y-6">
-      <div className="grid gap-4 sm:grid-cols-3">
+    <div className="space-y-4">
+      <div className="grid gap-3 sm:grid-cols-3">
         <StatusCard
           title="Payment Status"
           currentValue={paymentStatus ?? "pending"}
@@ -249,7 +249,7 @@ export default function OrderLifecycleControls({
             router.refresh();
           }}
           extra={
-            <label className="mt-2 flex items-center gap-2 text-xs text-zinc-600">
+            <label className="mt-1.5 flex items-center gap-1.5 text-xs text-zinc-600">
               <input
                 type="checkbox"
                 checked={notify}
@@ -261,44 +261,45 @@ export default function OrderLifecycleControls({
         />
       </div>
 
-      <div className={adminUi.card}>
-        <p className="text-sm font-semibold text-zinc-900">Customer Message</p>
-        <p className="mt-1 text-xs text-zinc-500">
-          Shown to the customer on the Track Order page, separate from the status timeline. Leave blank to hide it.
-        </p>
-        <textarea
-          value={messageDraft}
-          disabled={messageLoading}
-          onChange={(e) => setMessageDraft(e.target.value)}
-          placeholder="e.g. Your order is currently in transit and expected to arrive soon."
-          rows={2}
-          className="mt-3 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
-        />
-        <button
-          type="button"
-          onClick={saveCustomerMessage}
-          disabled={messageLoading}
-          className={`${adminUi.buttonPrimary} mt-3 !py-2 text-xs`}
-        >
-          {messageLoading ? "Saving…" : "Save customer message"}
-        </button>
-        {messageStatus ? (
-          <p className={`mt-2 text-xs ${messageError ? "text-red-600" : "text-emerald-700"}`}>{messageStatus}</p>
-        ) : null}
-      </div>
+      <div className="grid gap-4 lg:grid-cols-2">
+        <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+          <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Customer Message</p>
+          <p className="mt-1 text-xs text-zinc-500">
+            Shown on the Track Order page, separate from the status timeline. Leave blank to hide it.
+          </p>
+          <textarea
+            value={messageDraft}
+            disabled={messageLoading}
+            onChange={(e) => setMessageDraft(e.target.value)}
+            placeholder="e.g. Your order is currently in transit and expected to arrive soon."
+            rows={2}
+            className="mt-2 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
+          />
+          <button
+            type="button"
+            onClick={saveCustomerMessage}
+            disabled={messageLoading}
+            className={`${adminUi.buttonPrimary} mt-2 !py-1.5 text-xs`}
+          >
+            {messageLoading ? "Saving…" : "Save customer message"}
+          </button>
+          {messageStatus ? (
+            <p className={`mt-1.5 text-xs ${messageError ? "text-red-600" : "text-emerald-700"}`}>{messageStatus}</p>
+          ) : null}
+        </div>
 
-      <div className={adminUi.card}>
-        <p className="text-sm font-semibold text-zinc-900">Shipping Information</p>
-        <p className="mt-1 text-xs text-zinc-500">
-          Manual entry for now — designed so these fields can later be populated automatically through a carrier API.
-        </p>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+        <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+          <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Shipping Information</p>
+          <p className="mt-1 text-xs text-zinc-500">
+            Manual entry — designed so these fields can later be populated automatically through a carrier API.
+          </p>
+          <div className="mt-2.5 grid gap-2.5 sm:grid-cols-2">
           <label className="text-xs text-zinc-600">
             Carrier
             <input
               value={form.carrier ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, carrier: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
               placeholder="e.g. DHL, FedEx, UPS"
             />
           </label>
@@ -307,7 +308,7 @@ export default function OrderLifecycleControls({
             <input
               value={form.trackingNumber ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, trackingNumber: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
           <label className="text-xs text-zinc-600">
@@ -315,7 +316,7 @@ export default function OrderLifecycleControls({
             <input
               value={form.shipmentOrigin ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentOrigin: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
           <label className="text-xs text-zinc-600">
@@ -323,7 +324,7 @@ export default function OrderLifecycleControls({
             <input
               value={form.shipmentDestination ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentDestination: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
           <label className="text-xs text-zinc-600">
@@ -331,7 +332,7 @@ export default function OrderLifecycleControls({
             <input
               value={form.shipmentReference ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentReference: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
           <label className="text-xs text-zinc-600">
@@ -340,7 +341,7 @@ export default function OrderLifecycleControls({
               type="date"
               value={form.estimatedDeliveryStart ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, estimatedDeliveryStart: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
           <label className="text-xs text-zinc-600">
@@ -349,7 +350,7 @@ export default function OrderLifecycleControls({
               type="date"
               value={form.estimatedDeliveryEnd ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, estimatedDeliveryEnd: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
           <label className="text-xs text-zinc-600 sm:col-span-2">
@@ -358,21 +359,22 @@ export default function OrderLifecycleControls({
               value={form.shipmentNotes ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentNotes: e.target.value }))}
               rows={2}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
+          </div>
+          <button
+            type="button"
+            onClick={saveShippingInfo}
+            disabled={formLoading}
+            className={`${adminUi.buttonPrimary} mt-3 !py-1.5 text-xs`}
+          >
+            {formLoading ? "Saving…" : "Save shipping information"}
+          </button>
+          {formMessage ? (
+            <p className={`mt-1.5 text-xs ${formError ? "text-red-600" : "text-emerald-700"}`}>{formMessage}</p>
+          ) : null}
         </div>
-        <button
-          type="button"
-          onClick={saveShippingInfo}
-          disabled={formLoading}
-          className={`${adminUi.buttonPrimary} mt-4 !py-2 text-xs`}
-        >
-          {formLoading ? "Saving…" : "Save shipping information"}
-        </button>
-        {formMessage ? (
-          <p className={`mt-2 text-xs ${formError ? "text-red-600" : "text-emerald-700"}`}>{formMessage}</p>
-        ) : null}
       </div>
     </div>
   );

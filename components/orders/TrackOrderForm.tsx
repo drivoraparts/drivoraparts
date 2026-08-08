@@ -99,20 +99,20 @@ function formatCalendarDate(dateOnly: string) {
 function StepMarker({ state }: { state: StepState }) {
   if (state === "completed") {
     return (
-      <span className="absolute -left-[13px] top-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-xs font-bold text-white">
+      <span className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-red-600 text-[10px] font-bold text-white">
         ✓
       </span>
     );
   }
   if (state === "current") {
     return (
-      <span className="absolute -left-[13px] top-0.5 flex h-6 w-6 items-center justify-center rounded-full border-2 border-red-600 bg-white">
-        <span className="h-2 w-2 rounded-full bg-red-600" />
+      <span className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full border-2 border-red-600 bg-white">
+        <span className="h-1.5 w-1.5 rounded-full bg-red-600" />
       </span>
     );
   }
   return (
-    <span className="absolute -left-[13px] top-0.5 h-6 w-6 rounded-full border-2 border-neutral-300 bg-white" />
+    <span className="absolute -left-[11px] top-0 h-5 w-5 rounded-full border-2 border-neutral-300 bg-white" />
   );
 }
 
@@ -183,9 +183,11 @@ export default function TrackOrderForm() {
       ]
     : [];
 
+  const hasMeta = Boolean(result?.estimatedDeliveryStart || result?.carrier || result?.trackingNumber);
+
   return (
     <div>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-2.5">
         <input
           type="text"
           required
@@ -213,27 +215,24 @@ export default function TrackOrderForm() {
       </form>
 
       {error && (
-        <p className="mt-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <p className="mt-3 rounded-lg border border-red-200 bg-red-50 px-3.5 py-2.5 text-sm text-red-700">
           {error}
         </p>
       )}
 
       {result && (
-        <div className="mt-6 rounded-xl border border-neutral-200 bg-neutral-50 p-5">
-          <div className="flex items-start justify-between gap-4">
+        <div className="mt-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+          <div className="flex items-start justify-between gap-3">
             <div>
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">
-                Order {result.orderNumber}
+              <p className="text-[11px] font-medium uppercase tracking-wide text-neutral-500">
+                Order {result.orderNumber} · Current Status
               </p>
-              <p className="mt-1 text-xs font-medium uppercase tracking-wide text-neutral-500">
-                Current Status
-              </p>
-              <p className="mt-0.5 text-lg font-semibold text-neutral-900">
+              <p className="mt-0.5 text-base font-semibold text-neutral-900">
                 {HEADLINE_ICONS[result.headline] ? `${HEADLINE_ICONS[result.headline]} ` : ""}
                 {result.headline}
               </p>
             </div>
-            <p className="text-right text-sm text-neutral-600">
+            <p className="whitespace-nowrap text-right text-xs text-neutral-500">
               ${result.total.toFixed(2)}
               <br />
               {formatDate(result.createdAt)}
@@ -241,37 +240,46 @@ export default function TrackOrderForm() {
           </div>
 
           {result.notice && (
-            <p className="mt-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm font-medium text-amber-800">
+            <p className="mt-2.5 rounded-lg border border-amber-200 bg-amber-50 px-3.5 py-2 text-sm font-medium text-amber-800">
               {result.notice.key === "on_hold" ? "⏸ " : "⚠️ "}
               {result.notice.label}
             </p>
           )}
 
           {result.customerMessage && (
-            <p className="mt-4 rounded-lg border border-red-100 bg-red-50 px-4 py-3 text-sm text-neutral-800">
+            <p className="mt-2.5 rounded-lg border border-red-100 bg-red-50 px-3.5 py-2.5 text-sm text-neutral-800">
               {result.customerMessage}
             </p>
           )}
 
-          {result.estimatedDeliveryStart && (
-            <div className="mt-4 rounded-lg border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-700">
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Estimated Delivery</p>
-              <p className="mt-0.5 font-medium text-neutral-900">
-                {formatCalendarDate(result.estimatedDeliveryStart)}
-                {result.estimatedDeliveryEnd ? ` – ${formatCalendarDate(result.estimatedDeliveryEnd)}` : ""}
-              </p>
-            </div>
-          )}
-
-          {(result.carrier || result.trackingNumber) && (
-            <div className="mt-4 rounded-lg border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-700">
-              {result.carrier && <p>Carrier: {result.carrier}</p>}
-              {result.trackingNumber && <p>Tracking Number: {result.trackingNumber}</p>}
+          {hasMeta && (
+            <div className="mt-2.5 grid grid-cols-2 gap-x-4 gap-y-2 rounded-lg border border-neutral-200 bg-white px-3.5 py-2.5 text-xs">
+              {result.estimatedDeliveryStart && (
+                <div className="col-span-2">
+                  <p className="text-neutral-500">Estimated Delivery</p>
+                  <p className="mt-0.5 font-medium text-neutral-900">
+                    {formatCalendarDate(result.estimatedDeliveryStart)}
+                    {result.estimatedDeliveryEnd ? ` – ${formatCalendarDate(result.estimatedDeliveryEnd)}` : ""}
+                  </p>
+                </div>
+              )}
+              {result.carrier && (
+                <div>
+                  <p className="text-neutral-500">Carrier</p>
+                  <p className="mt-0.5 font-medium text-neutral-900">{result.carrier}</p>
+                </div>
+              )}
+              {result.trackingNumber && (
+                <div>
+                  <p className="text-neutral-500">Tracking Number</p>
+                  <p className="mt-0.5 font-medium text-neutral-900">{result.trackingNumber}</p>
+                </div>
+              )}
             </div>
           )}
 
           {result.steps ? (
-            <ol className="mt-6 space-y-5 border-l-2 border-neutral-200 pl-6">
+            <ol className="mt-4 space-y-3.5 border-l-2 border-neutral-200 pl-5">
               {result.steps.map((step) => (
                 <li key={step.key} className="relative">
                   <StepMarker state={step.state} />
@@ -290,10 +298,10 @@ export default function TrackOrderForm() {
             </ol>
           ) : (
             historyEvents.length > 0 && (
-              <ol className="mt-6 space-y-4 border-l border-neutral-300 pl-4">
+              <ol className="mt-4 space-y-3 border-l border-neutral-300 pl-4">
                 {historyEvents.map((event, index) => (
                   <li key={`${event.label}-${index}`} className="relative">
-                    <span className="absolute -left-[21px] top-1 h-2.5 w-2.5 rounded-full bg-red-600" />
+                    <span className="absolute -left-[17px] top-1 h-2 w-2 rounded-full bg-red-600" />
                     <p className="text-sm font-medium text-neutral-900">{event.label}</p>
                     <p className="text-xs text-neutral-500">{formatDate(event.createdAt)}</p>
                   </li>
@@ -303,7 +311,7 @@ export default function TrackOrderForm() {
           )}
 
           {result.items.length > 0 && (
-            <ul className="mt-6 space-y-1 border-t border-neutral-200 pt-4 text-sm text-neutral-700">
+            <ul className="mt-4 space-y-1 border-t border-neutral-200 pt-3 text-sm text-neutral-700">
               {result.items.map((item, index) => (
                 <li key={index}>
                   {item.name} × {item.quantity}
@@ -314,7 +322,7 @@ export default function TrackOrderForm() {
         </div>
       )}
 
-      <p className="mt-6 text-sm text-neutral-500">
+      <p className="mt-5 text-xs text-neutral-500">
         Order not showing up, or need more detail?{" "}
         <Link href="/contact" className="text-red-600 hover:text-red-700">
           Contact support
