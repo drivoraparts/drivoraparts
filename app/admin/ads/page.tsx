@@ -93,7 +93,7 @@ export default function AdminAdsPage() {
             </button>
           ) : null}
         </div>
-        {error ? <p className="mt-4 text-sm text-red-400">{error}</p> : null}
+        {error ? <p className="mt-4 text-sm text-red-600">{error}</p> : null}
       </section>
 
       {pack ? (

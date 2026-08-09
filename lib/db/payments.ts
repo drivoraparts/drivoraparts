@@ -129,15 +129,17 @@ export async function findPaymentByAnyProviderId(
 }
 
 export async function listPayments(limit = 100): Promise<PaymentRecord[]> {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("payments")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("listPayments", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("payments")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (error) throw error;
-  return (data ?? []) as PaymentRecord[];
+    if (error) throw error;
+    return (data ?? []) as PaymentRecord[];
+  });
 }
 
 export async function getPaymentStats() {

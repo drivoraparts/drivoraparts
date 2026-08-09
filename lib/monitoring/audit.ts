@@ -1,4 +1,5 @@
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 
 export async function logAdminAudit(
   userEmail: string | undefined,
@@ -20,13 +21,15 @@ export async function logAdminAudit(
 }
 
 export async function getRecentAuditLogs(limit = 50) {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("admin_audit_logs")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("getRecentAuditLogs", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("admin_audit_logs")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (error) throw error;
-  return data ?? [];
+    if (error) throw error;
+    return data ?? [];
+  });
 }

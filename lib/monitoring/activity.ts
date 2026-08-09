@@ -1,5 +1,6 @@
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { createStructuredLog, emitStructuredLog } from "@/lib/security/request-log";
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 
 export type ActivityLevel = "info" | "warn" | "error";
 
@@ -51,13 +52,15 @@ export async function logActivity(
 }
 
 export async function listActivityLogs(limit = 200): Promise<ActivityLogRecord[]> {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("activity_logs")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("listActivityLogs", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("activity_logs")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (error) throw error;
-  return (data ?? []) as ActivityLogRecord[];
+    if (error) throw error;
+    return (data ?? []) as ActivityLogRecord[];
+  });
 }

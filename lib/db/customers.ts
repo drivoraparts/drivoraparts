@@ -51,15 +51,17 @@ export async function getCustomerById(id: string): Promise<CustomerRecord | null
 }
 
 export async function listCustomers(limit = 100): Promise<CustomerRecord[]> {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase
-    .from("customers")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("listCustomers", [], async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("customers")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (error) throw error;
-  return (data ?? []) as CustomerRecord[];
+    if (error) throw error;
+    return (data ?? []) as CustomerRecord[];
+  });
 }
 
 export async function getCustomerStats() {

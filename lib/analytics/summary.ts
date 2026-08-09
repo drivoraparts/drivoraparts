@@ -5,7 +5,7 @@ import {
 } from "@/lib/admin/fallbacks";
 import { guardedSupabaseRead } from "@/lib/db/read-guard";
 import { listAnalyticsEvents } from "@/lib/db/analytics";
-import { getOrderStats } from "@/lib/db/orders";
+import { countPaidOrdersSince, getOrderStats } from "@/lib/db/orders";
 import type { AnalyticsSummary, ProductMetric } from "./types";
 
 function buildProductMetrics(
@@ -44,10 +44,19 @@ export async function getAnalyticsSummary(): Promise<AnalyticsSummary> {
     const productViews = events.filter((e) => e.name === "product_view").length;
     const cartAdds = events.filter((e) => e.name === "add_to_cart").length;
     const checkoutCount = events.filter((e) => e.name === "checkout_start").length;
+
+    // `events` is a recent-window fetch (newest first, capped), while
+    // orderStats.paidOrderCount is all-time -- dividing one by the other
+    // drifts once the store has more than that many lifetime events, since
+    // the numerator and denominator stop covering the same time period.
+    // Count paid orders over the same window the views were sampled from
+    // instead, so the ratio stays meaningful as event volume grows.
+    const windowStart = events.length > 0 ? events[events.length - 1].created_at : null;
+    const paidOrdersInWindow = windowStart
+      ? await countPaidOrdersSince(windowStart)
+      : orderStats.paidOrderCount;
     const conversionRate =
-      productViews > 0
-        ? Math.round((orderStats.paidOrderCount / productViews) * 1000) / 10
-        : 0;
+      productViews > 0 ? Math.round((paidOrdersInWindow / productViews) * 1000) / 10 : 0;
 
     return {
       totalRevenue: orderStats.totalRevenue,

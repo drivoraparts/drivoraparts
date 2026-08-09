@@ -45,7 +45,7 @@ export default async function AdminMarketingPage() {
               bundle.viral.products.map((product) => (
                 <li key={product.productId} className="flex justify-between gap-4">
                   <span>{product.name}</span>
-                  <span className="text-red-400">{product.viralScore}/100</span>
+                  <span className="text-red-600">{product.viralScore}/100</span>
                 </li>
               ))
             )}
@@ -73,7 +73,7 @@ export default async function AdminMarketingPage() {
           {bundle.autopilot.ads.slice(0, 9).map((ad, index) => (
             <article key={`${ad.platform}-${ad.productId}-${index}`} className="rounded-lg border border-zinc-100 p-4 text-sm">
               <div className="mb-2 flex items-center justify-between gap-3">
-                <span className="font-semibold uppercase text-red-400">{ad.platform}</span>
+                <span className="font-semibold uppercase text-red-600">{ad.platform}</span>
                 <span className="text-gray-500">Product #{ad.productId}</span>
               </div>
               <p className="font-medium">{ad.hook}</p>

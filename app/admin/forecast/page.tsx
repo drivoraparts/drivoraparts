@@ -3,14 +3,14 @@ import { getForecastReport } from "@/lib/ai-forecast";
 
 export const dynamic = "force-dynamic";
 function riskClass(risk: string) {
-  if (risk === "high") return "text-red-400";
-  if (risk === "medium") return "text-yellow-300";
-  return "text-green-400";
+  if (risk === "high") return "text-red-600";
+  if (risk === "medium") return "text-amber-700";
+  return "text-emerald-700";
 }
 
 function trendClass(trend: string) {
-  if (trend === "rising") return "text-green-400";
-  if (trend === "falling") return "text-red-400";
+  if (trend === "rising") return "text-emerald-700";
+  if (trend === "falling") return "text-red-600";
   return "text-zinc-600";
 }
 
@@ -150,7 +150,7 @@ export default async function AdminForecastPage() {
                 >
                   <div className="flex items-center justify-between gap-4">
                     <span className="font-medium">{engine.platformLabel}</span>
-                    <span className="text-sm text-green-400">
+                    <span className="text-sm text-emerald-700">
                       {engine.momentum > 0 ? "+" : ""}
                       {engine.momentum}% momentum
                     </span>

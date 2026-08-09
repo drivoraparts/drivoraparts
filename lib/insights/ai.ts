@@ -4,7 +4,6 @@ import { getCustomerStats } from "@/lib/db/customers";
 import { getInventoryAlerts, getInventoryStats } from "@/lib/db/inventory";
 import { safeQuery } from "@/lib/db/safe-query";
 import { getOrderStats, listOrders } from "@/lib/db/orders";
-import { getPaymentStats } from "@/lib/db/payments";
 import { products } from "@/lib/inventory/products";
 
 export type ProductRankingScore = {
@@ -233,8 +232,6 @@ export async function getAiInsightsReport(): Promise<AiInsightsReport> {
       reason: `${customerStats.newCustomers30d} new customers need onboarding follow-up.`,
     },
   ];
-
-  await getPaymentStats().catch(() => null);
 
   return {
     generatedAt: Date.now(),

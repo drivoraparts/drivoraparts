@@ -28,7 +28,7 @@ export default async function AdminInventoryPage() {
             {alerts.slice(0, 20).map((alert) => (
               <li key={alert.productId} className="flex justify-between gap-4">
                 <span>{alert.productName}</span>
-                <span className={alert.severity === "out" ? "text-red-400" : "text-yellow-300"}>
+                <span className={alert.severity === "out" ? "text-red-600" : "text-amber-700"}>
                   {alert.severity === "out" ? "OUT" : "LOW"} — {alert.quantity} units
                 </span>
               </li>

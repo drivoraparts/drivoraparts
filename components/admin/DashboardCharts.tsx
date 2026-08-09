@@ -14,7 +14,7 @@ import {
 } from "recharts";
 import type { DashboardChartData } from "@/lib/analytics/chartTypes";
 
-const gridStroke = "rgba(255,255,255,0.08)";
+const gridStroke = "rgba(0,0,0,0.08)";
 const axisStroke = "#6b7280";
 const tooltipStyle = {
   backgroundColor: "rgba(10,10,10,0.95)",

@@ -659,6 +659,23 @@ export async function getOrderStats() {
   });
 }
 
+/** Paid order count restricted to a time window -- used for conversion-rate
+ * math that must be compared against a similarly-windowed view count,
+ * rather than getOrderStats().paidOrderCount (all-time). */
+export async function countPaidOrdersSince(sinceIso: string): Promise<number> {
+  return guardedSupabaseRead("countPaidOrdersSince", 0, async () => {
+    const supabase = getSupabaseAdmin();
+    const { count, error } = await supabase
+      .from("orders")
+      .select("id", { count: "exact", head: true })
+      .eq("status", "paid")
+      .gte("created_at", sinceIso);
+
+    if (error) throw error;
+    return count ?? 0;
+  });
+}
+
 /* =========================================================
    ORDER TIMELINE (order_events)
 ========================================================= */

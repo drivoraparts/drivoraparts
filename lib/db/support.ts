@@ -1,4 +1,5 @@
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
+import { guardedSupabaseRead } from "@/lib/db/read-guard";
 
 export type SupportMessageRecord = {
   id: string;
@@ -46,20 +47,22 @@ export async function listSupportMessages(
   status?: SupportMessageRecord["status"],
   limit = 100
 ): Promise<SupportMessageRecord[]> {
-  const supabase = getSupabaseAdmin();
-  let query = supabase
-    .from("support_messages")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  return guardedSupabaseRead("listSupportMessages", [], async () => {
+    const supabase = getSupabaseAdmin();
+    let query = supabase
+      .from("support_messages")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
-  if (status) {
-    query = query.eq("status", status);
-  }
+    if (status) {
+      query = query.eq("status", status);
+    }
 
-  const { data, error } = await query;
-  if (error) throw error;
-  return (data ?? []) as SupportMessageRecord[];
+    const { data, error } = await query;
+    if (error) throw error;
+    return (data ?? []) as SupportMessageRecord[];
+  });
 }
 
 export async function updateSupportMessage(
@@ -78,17 +81,21 @@ export async function updateSupportMessage(
   return data as SupportMessageRecord | null;
 }
 
+const EMPTY_SUPPORT_STATS = { open: 0, in_progress: 0, resolved: 0, closed: 0, total: 0 };
+
 export async function getSupportStats() {
-  const supabase = getSupabaseAdmin();
-  const { data, error } = await supabase.from("support_messages").select("status");
+  return guardedSupabaseRead("getSupportStats", EMPTY_SUPPORT_STATS, async () => {
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase.from("support_messages").select("status");
 
-  if (error) throw error;
+    if (error) throw error;
 
-  const stats = { open: 0, in_progress: 0, resolved: 0, closed: 0, total: data?.length ?? 0 };
+    const stats = { open: 0, in_progress: 0, resolved: 0, closed: 0, total: data?.length ?? 0 };
 
-  for (const row of data ?? []) {
-    stats[row.status as keyof typeof stats] += 1;
-  }
+    for (const row of data ?? []) {
+      stats[row.status as keyof typeof stats] += 1;
+    }
 
-  return stats;
+    return stats;
+  });
 }

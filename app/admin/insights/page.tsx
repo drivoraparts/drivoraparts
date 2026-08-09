@@ -137,7 +137,7 @@ export default async function AdminInsightsPage() {
               <li className="text-zinc-600">No critical risks flagged.</li>
             ) : (
               daily.riskAlerts.map((alert) => (
-                <li key={alert} className="text-yellow-200">
+                <li key={alert} className="text-amber-700">
                   {alert}
                 </li>
               ))
@@ -153,7 +153,7 @@ export default async function AdminInsightsPage() {
             <li className="text-zinc-600">Collecting trend signals…</li>
           ) : (
             daily.growthOpportunities.map((item) => (
-              <li key={item} className="text-green-300">
+              <li key={item} className="text-emerald-700">
                 {item}
               </li>
             ))

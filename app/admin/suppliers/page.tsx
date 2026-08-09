@@ -46,7 +46,7 @@ export default async function AdminSuppliersPage() {
                       Restock ~{item.suggestedQty} units · {item.risk} risk
                     </p>
                   </div>
-                  <p className="text-sm font-semibold text-red-400">
+                  <p className="text-sm font-semibold text-red-600">
                     Match {item.matchScore}
                   </p>
                 </div>
