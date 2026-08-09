@@ -307,6 +307,14 @@ export default function TrackOrderForm() {
       )
     : false;
 
+  // The "Shipped" step being done means the order has actually left the
+  // warehouse -- carrier/tracking are filled in separately from the status
+  // itself, so this can be true even when hasShipmentDetails is false. Used
+  // to avoid telling a customer "will appear once it ships" when it
+  // already has.
+  const shippedStep = result?.steps?.find((s) => s.key === "shipped");
+  const hasShippedYet = shippedStep ? shippedStep.state !== "upcoming" : false;
+
   return (
     <div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-2.5">
@@ -491,7 +499,9 @@ export default function TrackOrderForm() {
               <div className="mt-4 border-t border-neutral-200 pt-3">
                 <SectionLabel>Shipment Details</SectionLabel>
                 <p className="mt-1.5 text-xs text-neutral-500">
-                  Shipment details will appear here once your order ships.
+                  {hasShippedYet
+                    ? "Your order has shipped -- carrier and tracking details will be added here shortly."
+                    : "Shipment details will appear here once your order ships."}
                 </p>
               </div>
             )

@@ -416,6 +416,20 @@ export default function OrderLifecycleControls({
 
   const processingComplete = orderStatus === "processing_complete";
 
+  // Shipping Status and Shipping Information are two separate saves --
+  // marking an order Shipped doesn't fill in carrier/tracking by itself, so
+  // it's easy to move status forward and forget the info form, leaving the
+  // customer's tracking page with nothing to show despite a real shipment.
+  const hasShipped = shippingStatus !== "not_shipped" && shippingStatus !== "preparing_shipment";
+  const hasAnyShippingInfo = Boolean(
+    shippingInfo.carrier ||
+      shippingInfo.trackingNumber ||
+      shippingInfo.shipmentOrigin ||
+      shippingInfo.shipmentDestination ||
+      shippingInfo.shipmentType
+  );
+  const missingShippingInfo = hasShipped && !hasAnyShippingInfo;
+
   return (
     <div className="space-y-4">
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -532,6 +546,13 @@ export default function OrderLifecycleControls({
           <p className="mt-1 text-xs text-zinc-500">
             Manual entry — designed so these fields can later be populated automatically through a carrier API.
           </p>
+          {missingShippingInfo && (
+            <p className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-2.5 py-2 text-xs text-amber-800">
+              ⚠️ Shipping Status is set to “{SHIPPING_STATUS_LABELS[shippingStatus]}” but no carrier or tracking
+              info has been entered — the customer's tracking page won't show any shipment details until you fill
+              this in.
+            </p>
+          )}
           <div className="mt-2.5 grid gap-2.5 sm:grid-cols-2">
           <label className="text-xs text-zinc-600">
             Carrier
