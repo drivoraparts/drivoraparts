@@ -83,6 +83,7 @@ const HEADLINE_ICONS: Record<string, string> = {
   "Arrived at Destination": "📍",
   "Out for Delivery": "🚗",
   Delivered: "🏠",
+  "Delivery Exception": "⚠️",
   Cancelled: "✕",
   Refunded: "↩️",
 };

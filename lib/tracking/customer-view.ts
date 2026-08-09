@@ -296,15 +296,27 @@ export function buildCustomerTrackingView(
     if (s.done) frontierIndex = i;
   });
 
+  // A delivery exception is its own distinct condition, not a fallback to
+  // whatever step was last reached -- the frontier step is real progress
+  // that already happened, but it's not what's "current" anymore. Mark it
+  // completed instead of current so the stepper doesn't imply that step is
+  // still in progress, and let the headline say "Delivery Exception"
+  // directly rather than the stale milestone underneath it.
+  const isDeliveryException = notice?.key === "delivery_exception";
+
   const steps: CustomerStep[] = stepDefs.map((s, i) => ({
     key: s.key,
     label: s.label,
     group: s.group,
     timestamp: s.timestamp,
-    state: !s.done ? "upcoming" : i === frontierIndex ? "current" : "completed",
+    state: !s.done ? "upcoming" : i === frontierIndex && !isDeliveryException ? "current" : "completed",
   }));
 
-  const headline = frontierIndex >= 0 ? steps[frontierIndex].label : "Order Placed";
+  const headline = isDeliveryException
+    ? "Delivery Exception"
+    : frontierIndex >= 0
+      ? steps[frontierIndex].label
+      : "Order Placed";
 
   return { headline, steps, banner: null, notice, hold };
 }
