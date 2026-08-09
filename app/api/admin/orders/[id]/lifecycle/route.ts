@@ -6,11 +6,14 @@ import { getClientIp } from "@/lib/security/ip";
 import {
   getOrderById,
   logOrderEvent,
+  resumeShipping,
+  startShippingHold,
   updateCustomerMessage,
   updateOrderLifecycleStatus,
   updateShippingInfo,
   updateShippingStatusRecord,
   type OrderLifecycleStatus,
+  type ShippingHoldReason,
   type ShippingInfoInput,
   type ShippingStatus,
 } from "@/lib/db/orders";
@@ -56,12 +59,33 @@ const PAYMENT_STATUSES: PaymentStatus[] = [
   "partially_refunded",
 ];
 
+const SHIPPING_HOLD_REASONS: ShippingHoldReason[] = [
+  "customs_clearance",
+  "documentation_required",
+  "customs_inspection",
+  "documentation_review",
+  "address_verification",
+  "carrier_delay",
+  "other",
+];
+
 type LifecycleBody = {
-  target: "order_status" | "shipping_status" | "payment_status" | "shipping_info" | "customer_message";
+  target:
+    | "order_status"
+    | "shipping_status"
+    | "payment_status"
+    | "shipping_info"
+    | "customer_message"
+    | "shipping_hold_start"
+    | "shipping_hold_resume";
   value?: string;
   shippingInfo?: ShippingInfoInput;
   note?: string;
   notifyCustomer?: boolean;
+  /** shipping_hold_start only: the reason shown to the customer. */
+  holdReason?: string;
+  /** shipping_hold_start only: customer-visible clearance explanation. */
+  customerNote?: string;
   /** Backdate the resulting timeline event, e.g. "this actually shipped on
    * Aug 5th". Must be a valid, non-future timestamp -- an event can't be
    * logged as happening later than now. */
@@ -169,6 +193,28 @@ export async function PATCH(
       const message = body.value?.trim() || null;
       const updated = await updateCustomerMessage(id, message, actor);
       await logAdminAudit(actor, "order.update_customer_message", id, { ip });
+      return NextResponse.json(updated);
+    }
+
+    if (body.target === "shipping_hold_start") {
+      if (!body.holdReason || !SHIPPING_HOLD_REASONS.includes(body.holdReason as ShippingHoldReason)) {
+        return NextResponse.json({ error: "Invalid hold reason" }, { status: 400 });
+      }
+      const customerNote = body.customerNote?.trim() || null;
+      const updated = await startShippingHold(
+        id,
+        body.holdReason as ShippingHoldReason,
+        customerNote,
+        note,
+        actor
+      );
+      await logAdminAudit(actor, "order.shipping_hold_start", id, { reason: body.holdReason, ip });
+      return NextResponse.json(updated);
+    }
+
+    if (body.target === "shipping_hold_resume") {
+      const updated = await resumeShipping(id, actor, note);
+      await logAdminAudit(actor, "order.shipping_hold_resume", id, { ip });
       return NextResponse.json(updated);
     }
 

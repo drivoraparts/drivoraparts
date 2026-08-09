@@ -56,6 +56,15 @@ export type OrderItemRecord = {
   quantity: number;
 };
 
+export type ShippingHoldReason =
+  | "customs_clearance"
+  | "documentation_required"
+  | "customs_inspection"
+  | "documentation_review"
+  | "address_verification"
+  | "carrier_delay"
+  | "other";
+
 export type OrderRecord = {
   id: string;
   order_number: string;
@@ -72,6 +81,13 @@ export type OrderRecord = {
   shipment_destination: string | null;
   shipment_reference: string | null;
   shipment_notes: string | null;
+  shipment_type: string | null;
+  shipment_current_location: string | null;
+  shipment_current_location_updated_at: string | null;
+  shipping_hold_active: boolean;
+  shipping_hold_reason: ShippingHoldReason | null;
+  shipping_hold_note: string | null;
+  shipping_hold_updated_at: string | null;
   estimated_delivery_start: string | null;
   estimated_delivery_end: string | null;
   confirmation_sent_at: string | null;
@@ -624,7 +640,12 @@ export async function getOrderStats() {
    ORDER TIMELINE (order_events)
 ========================================================= */
 
-export type OrderEventType = "payment_status" | "order_status" | "shipping_status" | "note";
+export type OrderEventType =
+  | "payment_status"
+  | "order_status"
+  | "shipping_status"
+  | "shipment_hold"
+  | "note";
 
 export type OrderEventRecord = {
   id: string;
@@ -766,6 +787,8 @@ export type ShippingInfoInput = {
   shipmentDestination?: string | null;
   shipmentReference?: string | null;
   shipmentNotes?: string | null;
+  shipmentType?: string | null;
+  currentLocation?: string | null;
   estimatedDeliveryStart?: string | null;
   estimatedDeliveryEnd?: string | null;
 };
@@ -776,6 +799,7 @@ export async function updateShippingInfo(
   actor: string
 ): Promise<OrderRecord | null> {
   const supabase = getSupabaseAdmin();
+  const locationChanged = input.currentLocation !== undefined;
   const { data, error } = await supabase
     .from("orders")
     .update({
@@ -785,6 +809,15 @@ export async function updateShippingInfo(
       shipment_destination: input.shipmentDestination,
       shipment_reference: input.shipmentReference,
       shipment_notes: input.shipmentNotes,
+      shipment_type: input.shipmentType,
+      ...(locationChanged
+        ? {
+            shipment_current_location: input.currentLocation,
+            shipment_current_location_updated_at: input.currentLocation
+              ? new Date().toISOString()
+              : null,
+          }
+        : {}),
       estimated_delivery_start: input.estimatedDeliveryStart,
       estimated_delivery_end: input.estimatedDeliveryEnd,
       updated_at: new Date().toISOString(),
@@ -803,6 +836,99 @@ export async function updateShippingInfo(
       actor,
       note: "Shipping information updated",
       customerVisible: false,
+    });
+  }
+
+  return updated;
+}
+
+export const SHIPPING_HOLD_REASON_LABELS: Record<ShippingHoldReason, string> = {
+  customs_clearance: "Customs Clearance",
+  documentation_required: "Documentation Required",
+  customs_inspection: "Customs Inspection",
+  documentation_review: "Shipping Documentation Review",
+  address_verification: "Address Verification",
+  carrier_delay: "Carrier Delay",
+  other: "Other",
+};
+
+/**
+ * Places a shipment on hold without losing its underlying shipping_status
+ * (e.g. still "in_transit" underneath) -- resuming just clears the hold
+ * flag rather than requiring a guess at what status to snap back to.
+ * `customerNote` is shown on the Track Order page; `internalNote` never is.
+ */
+export async function startShippingHold(
+  id: string,
+  reason: ShippingHoldReason,
+  customerNote: string | null,
+  internalNote: string | undefined,
+  actor: string
+): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const now = new Date().toISOString();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({
+      shipping_hold_active: true,
+      shipping_hold_reason: reason,
+      shipping_hold_note: customerNote,
+      shipping_hold_updated_at: now,
+      updated_at: now,
+    })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "shipment_hold",
+      toValue: SHIPPING_HOLD_REASON_LABELS[reason],
+      note: internalNote || customerNote,
+      actor,
+      customerVisible: true,
+    });
+  }
+
+  return updated;
+}
+
+/** Clears an active hold. The hold placement/resolution stay in the
+ * timeline as history -- only the "currently on hold" state is cleared. */
+export async function resumeShipping(
+  id: string,
+  actor: string,
+  note?: string
+): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({
+      shipping_hold_active: false,
+      shipping_hold_reason: null,
+      shipping_hold_note: null,
+      shipping_hold_updated_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "shipment_hold",
+      toValue: "Resumed",
+      note: note || "Clearance completed — shipment resumed",
+      actor,
+      customerVisible: true,
     });
   }
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import AdminShell from "@/components/admin/AdminShell";
 import DeleteOrderButton from "@/components/admin/DeleteOrderButton";
-import StatusPill from "@/components/admin/StatusPill";
+import StatusPill, { SpinnerIcon } from "@/components/admin/StatusPill";
 import { listPlacedOrders } from "@/lib/db/orders";
 import { findPaymentsByOrderIds } from "@/lib/db/payments";
 
@@ -50,6 +50,12 @@ export default async function AdminOrdersPage() {
                       {payment ? <StatusPill value={payment.status} /> : null}
                       <StatusPill value={order.order_status} />
                       <StatusPill value={order.shipping_status} />
+                      {order.shipping_hold_active ? (
+                        <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-800">
+                          <SpinnerIcon />
+                          On Hold
+                        </span>
+                      ) : null}
                     </div>
                     <p className="w-20 shrink-0 text-right text-sm font-bold text-zinc-900">
                       ${Number(order.total).toFixed(2)}

@@ -3,11 +3,13 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { adminUi } from "./admin-ui";
-import StatusPill from "./StatusPill";
-import type {
-  OrderLifecycleStatus,
-  ShippingInfoInput,
-  ShippingStatus,
+import StatusPill, { SpinnerIcon } from "./StatusPill";
+import {
+  SHIPPING_HOLD_REASON_LABELS,
+  type OrderLifecycleStatus,
+  type ShippingHoldReason,
+  type ShippingInfoInput,
+  type ShippingStatus,
 } from "@/lib/db/orders";
 import type { PaymentStatus } from "@/lib/db/payments";
 
@@ -158,6 +160,155 @@ function StatusCard({
   );
 }
 
+function ShipmentHoldControl({
+  orderId,
+  active,
+  reason,
+  note,
+  updatedAt,
+  onChange,
+}: {
+  orderId: string;
+  active: boolean;
+  reason: ShippingHoldReason | null;
+  note: string | null;
+  updatedAt: string | null;
+  onChange: () => void;
+}) {
+  const [holdReason, setHoldReason] = useState<ShippingHoldReason>(reason ?? "customs_clearance");
+  const [customerNote, setCustomerNote] = useState("");
+  const [internalNote, setInternalNote] = useState("");
+  const [resumeNote, setResumeNote] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState(false);
+
+  const startHold = async () => {
+    setLoading(true);
+    setMessage("");
+    setError(false);
+    try {
+      await patchLifecycle(orderId, {
+        target: "shipping_hold_start",
+        holdReason,
+        customerNote,
+        note: internalNote,
+      });
+      setMessage("Shipment placed on hold");
+      onChange();
+    } catch (err) {
+      setError(true);
+      setMessage(err instanceof Error ? err.message : "Update failed");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const resumeHold = async () => {
+    setLoading(true);
+    setMessage("");
+    setError(false);
+    try {
+      await patchLifecycle(orderId, { target: "shipping_hold_resume", note: resumeNote });
+      setMessage("Shipment resumed");
+      onChange();
+    } catch (err) {
+      setError(true);
+      setMessage(err instanceof Error ? err.message : "Update failed");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="rounded-xl border border-amber-200 bg-amber-50/50 p-4 shadow-sm">
+      <div className="flex items-center justify-between gap-2">
+        <p className="text-[11px] font-semibold uppercase tracking-wide text-amber-800">Shipment Hold</p>
+        {active ? (
+          <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-800">
+            <SpinnerIcon />
+            On Hold
+          </span>
+        ) : (
+          <span className="inline-flex items-center rounded-full bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-600">
+            Not on hold
+          </span>
+        )}
+      </div>
+
+      {active ? (
+        <>
+          <p className="mt-2 text-xs text-zinc-600">
+            Reason: <span className="font-medium text-zinc-900">{reason ? SHIPPING_HOLD_REASON_LABELS[reason] : "—"}</span>
+          </p>
+          {note && <p className="mt-1 text-xs text-zinc-600">Customer sees: “{note}”</p>}
+          {updatedAt && (
+            <p className="mt-1 text-[11px] text-zinc-400">Last updated {new Date(updatedAt).toLocaleString()}</p>
+          )}
+          <textarea
+            value={resumeNote}
+            disabled={loading}
+            onChange={(e) => setResumeNote(e.target.value)}
+            placeholder="Optional resume note (internal)"
+            rows={1}
+            className="mt-2 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs"
+          />
+          <button
+            type="button"
+            onClick={resumeHold}
+            disabled={loading}
+            className={`${adminUi.buttonPrimary} mt-2 w-full !bg-emerald-600 !py-1.5 text-xs hover:!bg-emerald-500`}
+          >
+            {loading ? "Saving…" : "Resume Shipment"}
+          </button>
+        </>
+      ) : (
+        <>
+          <select
+            value={holdReason}
+            disabled={loading}
+            onChange={(e) => setHoldReason(e.target.value as ShippingHoldReason)}
+            className="mt-2 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
+          >
+            {Object.entries(SHIPPING_HOLD_REASON_LABELS).map(([key, label]) => (
+              <option key={key} value={key}>
+                {label}
+              </option>
+            ))}
+          </select>
+          <textarea
+            value={customerNote}
+            disabled={loading}
+            onChange={(e) => setCustomerNote(e.target.value)}
+            placeholder="Clearance information (visible to customer)"
+            rows={2}
+            className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs"
+          />
+          <textarea
+            value={internalNote}
+            disabled={loading}
+            onChange={(e) => setInternalNote(e.target.value)}
+            placeholder="Internal note (admin only)"
+            rows={1}
+            className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs"
+          />
+          <button
+            type="button"
+            onClick={startHold}
+            disabled={loading}
+            className={`${adminUi.buttonPrimary} mt-2 w-full !bg-amber-600 !py-1.5 text-xs hover:!bg-amber-500`}
+          >
+            {loading ? "Saving…" : "Hold Shipment"}
+          </button>
+        </>
+      )}
+      {message ? (
+        <p className={`mt-1.5 text-xs ${error ? "text-red-600" : "text-emerald-700"}`}>{message}</p>
+      ) : null}
+    </div>
+  );
+}
+
 export default function OrderLifecycleControls({
   orderId,
   paymentStatus,
@@ -165,6 +316,7 @@ export default function OrderLifecycleControls({
   shippingStatus,
   customerMessage,
   shippingInfo,
+  shippingHold,
 }: {
   orderId: string;
   paymentStatus: PaymentStatus | null;
@@ -178,8 +330,16 @@ export default function OrderLifecycleControls({
     shipmentDestination: string | null;
     shipmentReference: string | null;
     shipmentNotes: string | null;
+    shipmentType: string | null;
+    currentLocation: string | null;
     estimatedDeliveryStart: string | null;
     estimatedDeliveryEnd: string | null;
+  };
+  shippingHold: {
+    active: boolean;
+    reason: ShippingHoldReason | null;
+    note: string | null;
+    updatedAt: string | null;
   };
 }) {
   const router = useRouter();
@@ -192,6 +352,8 @@ export default function OrderLifecycleControls({
     shipmentDestination: shippingInfo.shipmentDestination ?? "",
     shipmentReference: shippingInfo.shipmentReference ?? "",
     shipmentNotes: shippingInfo.shipmentNotes ?? "",
+    shipmentType: shippingInfo.shipmentType ?? "",
+    currentLocation: shippingInfo.currentLocation ?? "",
     estimatedDeliveryStart: shippingInfo.estimatedDeliveryStart ?? "",
     estimatedDeliveryEnd: shippingInfo.estimatedDeliveryEnd ?? "",
   });
@@ -297,6 +459,15 @@ export default function OrderLifecycleControls({
         />
       </div>
 
+      <ShipmentHoldControl
+        orderId={orderId}
+        active={shippingHold.active}
+        reason={shippingHold.reason}
+        note={shippingHold.note}
+        updatedAt={shippingHold.updatedAt}
+        onChange={() => router.refresh()}
+      />
+
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
           <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Customer Message</p>
@@ -369,6 +540,24 @@ export default function OrderLifecycleControls({
               value={form.shipmentReference ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentReference: e.target.value }))}
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
+            />
+          </label>
+          <label className="text-xs text-zinc-600">
+            Shipment type
+            <input
+              value={form.shipmentType ?? ""}
+              onChange={(e) => setForm((f) => ({ ...f, shipmentType: e.target.value }))}
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
+              placeholder="e.g. Standard Parcel, LTL Freight"
+            />
+          </label>
+          <label className="text-xs text-zinc-600 sm:col-span-2">
+            Current location
+            <input
+              value={form.currentLocation ?? ""}
+              onChange={(e) => setForm((f) => ({ ...f, currentLocation: e.target.value }))}
+              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
+              placeholder="e.g. Los Angeles, CA — manually set, not live GPS"
             />
           </label>
           <label className="text-xs text-zinc-600">

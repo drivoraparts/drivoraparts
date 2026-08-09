@@ -1,8 +1,9 @@
-import type {
-  OrderEventRecord,
-  OrderLifecycleStatus,
-  OrderWithDetails,
-  ShippingStatus,
+import {
+  SHIPPING_HOLD_REASON_LABELS,
+  type OrderEventRecord,
+  type OrderLifecycleStatus,
+  type OrderWithDetails,
+  type ShippingStatus,
 } from "@/lib/db/orders";
 
 export type CustomerStepState = "completed" | "current" | "upcoming";
@@ -26,6 +27,12 @@ export type CustomerBanner = {
   label: string;
 };
 
+export type CustomerHold = {
+  reason: string;
+  note: string | null;
+  updatedAt: string | null;
+};
+
 export type CustomerTrackingView = {
   headline: string;
   /** null when `banner` is set -- a terminated order doesn't get a forward
@@ -33,6 +40,9 @@ export type CustomerTrackingView = {
   steps: CustomerStep[] | null;
   banner: CustomerBanner | null;
   notice: CustomerNotice | null;
+  /** A genuine, active shipment hold (customs, documentation, etc.) -- shown
+   * as its own prominent section, never buried in the timeline. */
+  hold: CustomerHold | null;
 };
 
 const SHIPPED_OR_LATER: ShippingStatus[] = [
@@ -46,6 +56,13 @@ const SHIPPED_OR_LATER: ShippingStatus[] = [
 
 const IN_TRANSIT_OR_LATER: ShippingStatus[] = [
   "in_transit",
+  "customs_clearance",
+  "arrived_at_destination",
+  "out_for_delivery",
+  "delivered",
+];
+
+const CUSTOMS_OR_LATER: ShippingStatus[] = [
   "customs_clearance",
   "arrived_at_destination",
   "out_for_delivery",
@@ -98,11 +115,33 @@ export function buildCustomerTrackingView(
   const orderStatus = order.order_status;
   const shippingStatus = order.shipping_status;
 
+  const hold: CustomerHold | null = order.shipping_hold_active
+    ? {
+        reason: order.shipping_hold_reason
+          ? SHIPPING_HOLD_REASON_LABELS[order.shipping_hold_reason]
+          : "Shipment On Hold",
+        note: order.shipping_hold_note,
+        updatedAt: order.shipping_hold_updated_at,
+      }
+    : null;
+
   if (orderStatus === "cancelled") {
-    return { headline: "Cancelled", steps: null, banner: { key: "cancelled", label: "Cancelled" }, notice: null };
+    return {
+      headline: "Cancelled",
+      steps: null,
+      banner: { key: "cancelled", label: "Cancelled" },
+      notice: null,
+      hold,
+    };
   }
   if (orderStatus === "refunded") {
-    return { headline: "Refunded", steps: null, banner: { key: "refunded", label: "Refunded" }, notice: null };
+    return {
+      headline: "Refunded",
+      steps: null,
+      banner: { key: "refunded", label: "Refunded" },
+      notice: null,
+      hold,
+    };
   }
 
   const notice: CustomerNotice | null =
@@ -111,6 +150,9 @@ export function buildCustomerTrackingView(
       : shippingStatus === "delivery_exception"
         ? { key: "delivery_exception", label: "Delivery Exception" }
         : null;
+
+  const hasCustomsEvent = findEventTime(visibleEvents, "shipping_status", "customs_clearance") !== null;
+  const includeCustoms = CUSTOMS_OR_LATER.includes(shippingStatus) || hasCustomsEvent;
 
   const stepDefs: { key: string; label: string; done: boolean; timestamp: string | null }[] = [
     {
@@ -133,7 +175,7 @@ export function buildCustomerTrackingView(
     },
     {
       key: "preparing_shipment",
-      label: "Preparing Shipment",
+      label: "Preparing for Shipment",
       done:
         PREPARING_SHIPMENT_OR_LATER_ORDER.includes(orderStatus) ||
         PREPARING_SHIPMENT_OR_LATER_SHIPPING.includes(shippingStatus),
@@ -153,6 +195,16 @@ export function buildCustomerTrackingView(
       done: IN_TRANSIT_OR_LATER.includes(shippingStatus),
       timestamp: findEventTime(visibleEvents, "shipping_status", "in_transit"),
     },
+    ...(includeCustoms
+      ? [
+          {
+            key: "customs_clearance",
+            label: "Customs Clearance",
+            done: CUSTOMS_OR_LATER.includes(shippingStatus) || hasCustomsEvent,
+            timestamp: findEventTime(visibleEvents, "shipping_status", "customs_clearance"),
+          },
+        ]
+      : []),
     {
       key: "out_for_delivery",
       label: "Out for Delivery",
@@ -181,5 +233,5 @@ export function buildCustomerTrackingView(
 
   const headline = frontierIndex >= 0 ? steps[frontierIndex].label : "Order Placed";
 
-  return { headline, steps, banner: null, notice };
+  return { headline, steps, banner: null, notice, hold };
 }

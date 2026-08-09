@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
 type TimelineEntry = {
-  type: "payment_status" | "order_status" | "shipping_status" | "note";
+  type: "payment_status" | "order_status" | "shipping_status" | "shipment_hold" | "note";
   value: string | null;
   createdAt: string;
 };
@@ -21,6 +21,32 @@ type Step = {
 
 type Banner = { key: "cancelled" | "refunded"; label: string } | null;
 type Notice = { key: "on_hold" | "delivery_exception"; label: string } | null;
+type Hold = { reason: string; note: string | null; updatedAt: string | null } | null;
+
+type OrderItem = {
+  name: string;
+  image: string | null;
+  quantity: number;
+  unitPrice: number;
+  lineTotal: number;
+  partNumber: string | null;
+  fitment: string | null;
+};
+
+type Receiver = { name: string; address: string | null; phone: string | null } | null;
+
+type Shipment = {
+  weight: string | null;
+  carrier: string | null;
+  trackingNumber: string | null;
+  origin: string | null;
+  destination: string | null;
+  currentLocation: string | null;
+  currentLocationUpdatedAt: string | null;
+  estimatedDeliveryStart: string | null;
+  estimatedDeliveryEnd: string | null;
+  shipmentType: string | null;
+};
 
 type TrackOrderResult = {
   orderNumber: string;
@@ -30,12 +56,11 @@ type TrackOrderResult = {
   steps: Step[] | null;
   banner: Banner;
   notice: Notice;
+  hold: Hold;
   customerMessage: string | null;
-  carrier: string | null;
-  trackingNumber: string | null;
-  estimatedDeliveryStart: string | null;
-  estimatedDeliveryEnd: string | null;
-  items: { name: string; quantity: number; image: string | null }[];
+  items: OrderItem[];
+  receiver: Receiver;
+  shipment: Shipment;
   timeline: TimelineEntry[];
 };
 
@@ -43,13 +68,22 @@ const HEADLINE_ICONS: Record<string, string> = {
   "Order Placed": "📦",
   "Payment Confirmed": "💳",
   Processing: "⚙️",
-  "Preparing Shipment": "📋",
+  "Preparing for Shipment": "📋",
   Shipped: "📤",
   "In Transit": "🚚",
+  "Customs Clearance": "🛃",
   "Out for Delivery": "🛵",
   Delivered: "✅",
   Cancelled: "✕",
   Refunded: "↩️",
+};
+
+const STEP_DESCRIPTIONS: Record<string, string> = {
+  in_transit: "Shipment is currently moving toward its destination.",
+  customs_clearance: "Shipment is being processed by customs.",
+  out_for_delivery: "Shipment is with the local delivery carrier.",
+  preparing_shipment: "Order is being packed and prepared for carrier pickup.",
+  processing: "Order is being processed at our facility.",
 };
 
 const EVENT_STEP_LABELS: Record<string, string> = {
@@ -61,7 +95,7 @@ const EVENT_STEP_LABELS: Record<string, string> = {
   "order_status:completed": "Completed",
   "order_status:cancelled": "Order cancelled",
   "order_status:refunded": "Order refunded",
-  "shipping_status:preparing_shipment": "Preparing shipment",
+  "shipping_status:preparing_shipment": "Preparing for shipment",
   "shipping_status:shipped": "Shipped",
   "shipping_status:in_transit": "In transit",
   "shipping_status:customs_clearance": "Customs clearance",
@@ -96,27 +130,34 @@ function formatCalendarDate(dateOnly: string) {
   });
 }
 
-type Tone = "green" | "orange" | "blue" | "red" | "neutral";
+// Same GitHub Primer colors as the admin status pills: yellow spins while
+// something is actively moving/in-progress, green is a resolved success,
+// red flags something that needs attention (never spinning -- a hold is
+// paused, not in motion).
+type Tone = "green" | "pending" | "red" | "neutral";
 
 const TONE_STYLES: Record<Tone, { bg: string; text: string; border: string }> = {
-  green: { bg: "bg-emerald-600", text: "text-emerald-600", border: "border-emerald-600" },
-  orange: { bg: "bg-orange-500", text: "text-orange-500", border: "border-orange-500" },
-  blue: { bg: "bg-blue-600", text: "text-blue-600", border: "border-blue-600" },
-  red: { bg: "bg-red-600", text: "text-red-600", border: "border-red-600" },
+  green: { bg: "bg-[#1a7f37]", text: "text-[#1a7f37]", border: "border-[#1a7f37]" },
+  pending: { bg: "bg-[#9a6700]", text: "text-[#9a6700]", border: "border-[#9a6700]" },
+  red: { bg: "bg-[#cf222e]", text: "text-[#cf222e]", border: "border-[#cf222e]" },
   neutral: { bg: "bg-neutral-300", text: "text-neutral-400", border: "border-neutral-300" },
 };
 
-/** Meaning-based color per step, not just "is it done yet": orange while
- * actively processing, green once something has genuinely succeeded, red
- * whenever the order needs attention (on hold / delivery exception),
- * blue for ordinary in-progress movement, gray for anything not reached. */
 function stepTone(step: Step, notice: Notice): Tone {
   if (step.state === "upcoming") return "neutral";
   if (notice && step.state === "current") return "red";
   if (step.key === "delivered") return "green";
   if (step.state === "completed") return "green";
-  if (step.key === "processing") return "orange";
-  return "blue";
+  return "pending";
+}
+
+function SpinnerIcon({ className }: { className: string }) {
+  return (
+    <svg className={`animate-spin ${className}`} viewBox="0 0 24 24" fill="none">
+      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+      <path className="opacity-90" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4z" />
+    </svg>
+  );
 }
 
 function StepMarker({ state, tone }: { state: StepState; tone: Tone }) {
@@ -131,6 +172,13 @@ function StepMarker({ state, tone }: { state: StepState; tone: Tone }) {
     );
   }
   if (state === "current") {
+    if (tone === "pending") {
+      return (
+        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 border-[#9a6700] bg-white">
+          <SpinnerIcon className="h-3 w-3 text-[#9a6700]" />
+        </span>
+      );
+    }
     return (
       <span
         className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 bg-white ${styles.border}`}
@@ -142,8 +190,6 @@ function StepMarker({ state, tone }: { state: StepState; tone: Tone }) {
   return <span className="h-5 w-5 shrink-0 rounded-full border-2 border-neutral-300 bg-white" />;
 }
 
-/** Vertical connector between two steps with a small arrow showing the
- * direction status flows in, colored to match whichever step it leads into. */
 function StepConnector({ tone }: { tone: Tone }) {
   const styles = TONE_STYLES[tone];
   return (
@@ -158,6 +204,10 @@ function StepConnector({ tone }: { tone: Tone }) {
       </svg>
     </div>
   );
+}
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{children}</p>;
 }
 
 export default function TrackOrderForm() {
@@ -219,7 +269,7 @@ export default function TrackOrderForm() {
     ? [
         { label: "Order placed", createdAt: result.createdAt },
         ...result.timeline
-          .filter((entry) => entry.type !== "note" && entry.value)
+          .filter((entry) => entry.type !== "note" && entry.type !== "shipment_hold" && entry.value)
           .map((entry) => ({
             label: EVENT_STEP_LABELS[`${entry.type}:${entry.value}`] ?? entry.value ?? "",
             createdAt: entry.createdAt,
@@ -227,7 +277,22 @@ export default function TrackOrderForm() {
       ]
     : [];
 
-  const hasMeta = Boolean(result?.estimatedDeliveryStart || result?.carrier || result?.trackingNumber);
+  const holdHistory = result
+    ? result.timeline.filter((entry) => entry.type === "shipment_hold")
+    : [];
+
+  const hasShipmentDetails = result
+    ? Boolean(
+        result.shipment.carrier ||
+          result.shipment.trackingNumber ||
+          result.shipment.origin ||
+          result.shipment.destination ||
+          result.shipment.currentLocation ||
+          result.shipment.estimatedDeliveryStart ||
+          result.shipment.shipmentType ||
+          result.shipment.weight
+      )
+    : false;
 
   return (
     <div>
@@ -266,6 +331,7 @@ export default function TrackOrderForm() {
 
       {result && (
         <div className="mt-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+          {/* ORDER HEADER */}
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-[11px] font-medium uppercase tracking-wide text-neutral-500">
@@ -284,10 +350,31 @@ export default function TrackOrderForm() {
           </div>
 
           {result.notice && (
-            <p className="mt-2.5 rounded-lg border border-amber-200 bg-amber-50 px-3.5 py-2 text-sm font-medium text-amber-800">
-              {result.notice.key === "on_hold" ? "⏸ " : "⚠️ "}
+            <p className="mt-2.5 flex items-center gap-1.5 rounded-lg border border-amber-200 bg-amber-50 px-3.5 py-2 text-sm font-medium text-amber-800">
+              <SpinnerIcon className="h-3.5 w-3.5 text-[#9a6700]" />
               {result.notice.label}
             </p>
+          )}
+
+          {/* CLEARANCE / HOLD -- only when a genuine hold is active, never
+              buried in the timeline. */}
+          {result.hold && (
+            <div className="mt-3 rounded-lg border border-amber-300 bg-amber-50 px-3.5 py-3">
+              <p className="text-sm font-bold text-amber-900">⚠ Shipment On Hold</p>
+              <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-wide text-amber-700">Reason</p>
+              <p className="text-sm text-amber-900">{result.hold.reason}</p>
+              {result.hold.note && (
+                <>
+                  <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-wide text-amber-700">
+                    Clearance Information
+                  </p>
+                  <p className="text-sm text-amber-900">{result.hold.note}</p>
+                </>
+              )}
+              {result.hold.updatedAt && (
+                <p className="mt-1.5 text-[11px] text-amber-700">Last updated {formatDate(result.hold.updatedAt)}</p>
+              )}
+            </div>
           )}
 
           {result.customerMessage && (
@@ -296,82 +383,195 @@ export default function TrackOrderForm() {
             </p>
           )}
 
-          {hasMeta && (
-            <div className="mt-2.5 grid grid-cols-2 gap-x-4 gap-y-2 rounded-lg border border-neutral-200 bg-white px-3.5 py-2.5 text-xs">
-              {result.estimatedDeliveryStart && (
-                <div className="col-span-2">
-                  <p className="text-neutral-500">Estimated Delivery</p>
-                  <p className="mt-0.5 font-medium text-neutral-900">
-                    {formatCalendarDate(result.estimatedDeliveryStart)}
-                    {result.estimatedDeliveryEnd ? ` – ${formatCalendarDate(result.estimatedDeliveryEnd)}` : ""}
-                  </p>
-                </div>
-              )}
-              {result.carrier && (
-                <div>
-                  <p className="text-neutral-500">Carrier</p>
-                  <p className="mt-0.5 font-medium text-neutral-900">{result.carrier}</p>
-                </div>
-              )}
-              {result.trackingNumber && (
-                <div>
-                  <p className="text-neutral-500">Tracking Number</p>
-                  <p className="mt-0.5 font-medium text-neutral-900">{result.trackingNumber}</p>
-                </div>
-              )}
+          {/* ORDER DETAILS */}
+          {result.items.length > 0 && (
+            <div className="mt-4 border-t border-neutral-200 pt-3">
+              <SectionLabel>Order Details</SectionLabel>
+              <ul className="mt-2 space-y-2.5">
+                {result.items.map((item, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    {item.image ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={item.image}
+                        alt=""
+                        className="h-11 w-11 shrink-0 rounded-md border border-neutral-200 object-cover"
+                      />
+                    ) : (
+                      <div className="h-11 w-11 shrink-0 rounded-md border border-neutral-200 bg-white" />
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate text-sm font-medium text-neutral-900">{item.name}</p>
+                      <p className="text-xs text-neutral-500">
+                        Qty {item.quantity} · ${item.unitPrice.toFixed(2)} each
+                        {item.partNumber ? ` · Part #${item.partNumber}` : ""}
+                      </p>
+                      {item.fitment && <p className="mt-0.5 text-xs text-neutral-500">Fits: {item.fitment}</p>}
+                    </div>
+                    <p className="shrink-0 text-sm font-semibold text-neutral-900">${item.lineTotal.toFixed(2)}</p>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
 
-          {result.steps ? (
-            <ol className="mt-4">
-              {result.steps.map((step, index) => {
-                const tone = stepTone(step, result.notice);
-                const isLast = index === result.steps!.length - 1;
-                const connectorTone = !isLast ? stepTone(result.steps![index + 1], result.notice) : null;
-                return (
-                  <li key={step.key} className="flex gap-3">
-                    <div className="flex flex-col items-center">
-                      <StepMarker state={step.state} tone={tone} />
-                      {!isLast && <StepConnector tone={connectorTone!} />}
-                    </div>
-                    <div className={isLast ? "pb-0.5" : "pb-4"}>
-                      <p
-                        className={`text-sm font-medium ${
-                          step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
-                        }`}
-                      >
-                        {step.label}
-                      </p>
-                      {step.timestamp && (
-                        <p className="text-xs text-neutral-500">{formatDate(step.timestamp)}</p>
+          {/* RECEIVER */}
+          {result.receiver && (
+            <div className="mt-4 border-t border-neutral-200 pt-3">
+              <SectionLabel>Receiver</SectionLabel>
+              <p className="mt-1.5 text-sm font-medium text-neutral-900">{result.receiver.name}</p>
+              {result.receiver.address && (
+                <p className="whitespace-pre-line text-sm text-neutral-700">{result.receiver.address}</p>
+              )}
+              {result.receiver.phone && <p className="text-sm text-neutral-700">{result.receiver.phone}</p>}
+            </div>
+          )}
+
+          {/* SHIPMENT DETAILS */}
+          {hasShipmentDetails ? (
+            <div className="mt-4 border-t border-neutral-200 pt-3">
+              <SectionLabel>Shipment Details</SectionLabel>
+              <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                {result.shipment.weight && (
+                  <div>
+                    <p className="text-neutral-500">Weight</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">{result.shipment.weight}</p>
+                  </div>
+                )}
+                {result.shipment.shipmentType && (
+                  <div>
+                    <p className="text-neutral-500">Shipment Type</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">{result.shipment.shipmentType}</p>
+                  </div>
+                )}
+                {result.shipment.carrier && (
+                  <div>
+                    <p className="text-neutral-500">Carrier</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">{result.shipment.carrier}</p>
+                  </div>
+                )}
+                {result.shipment.trackingNumber && (
+                  <div>
+                    <p className="text-neutral-500">Tracking Number</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">{result.shipment.trackingNumber}</p>
+                  </div>
+                )}
+                {result.shipment.origin && (
+                  <div>
+                    <p className="text-neutral-500">Origin</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">{result.shipment.origin}</p>
+                  </div>
+                )}
+                {result.shipment.destination && (
+                  <div>
+                    <p className="text-neutral-500">Destination</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">{result.shipment.destination}</p>
+                  </div>
+                )}
+                {result.shipment.currentLocation && (
+                  <div className="col-span-2">
+                    <p className="text-neutral-500">Current Location</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">
+                      {result.shipment.currentLocation}
+                      {result.shipment.currentLocationUpdatedAt && (
+                        <span className="ml-1.5 font-normal text-neutral-500">
+                          · updated {formatDate(result.shipment.currentLocationUpdatedAt)}
+                        </span>
                       )}
-                    </div>
-                  </li>
-                );
-              })}
-            </ol>
+                    </p>
+                  </div>
+                )}
+                {result.shipment.estimatedDeliveryStart && (
+                  <div className="col-span-2">
+                    <p className="text-neutral-500">Estimated Delivery</p>
+                    <p className="mt-0.5 font-medium text-neutral-900">
+                      {formatCalendarDate(result.shipment.estimatedDeliveryStart)}
+                      {result.shipment.estimatedDeliveryEnd
+                        ? ` – ${formatCalendarDate(result.shipment.estimatedDeliveryEnd)}`
+                        : ""}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
           ) : (
-            historyEvents.length > 0 && (
-              <ol className="mt-4 space-y-3 border-l border-neutral-300 pl-4">
-                {historyEvents.map((event, index) => (
-                  <li key={`${event.label}-${index}`} className="relative">
-                    <span className="absolute -left-[17px] top-1 h-2 w-2 rounded-full bg-red-600" />
-                    <p className="text-sm font-medium text-neutral-900">{event.label}</p>
-                    <p className="text-xs text-neutral-500">{formatDate(event.createdAt)}</p>
-                  </li>
-                ))}
-              </ol>
+            !result.banner && (
+              <div className="mt-4 border-t border-neutral-200 pt-3">
+                <SectionLabel>Shipment Details</SectionLabel>
+                <p className="mt-1.5 text-xs text-neutral-500">
+                  Shipment details will appear here once your order ships.
+                </p>
+              </div>
             )
           )}
 
-          {result.items.length > 0 && (
-            <ul className="mt-4 space-y-1 border-t border-neutral-200 pt-3 text-sm text-neutral-700">
-              {result.items.map((item, index) => (
-                <li key={index}>
-                  {item.name} × {item.quantity}
-                </li>
-              ))}
-            </ul>
+          {/* TIMELINE */}
+          {result.steps ? (
+            <div className="mt-4 border-t border-neutral-200 pt-3">
+              <SectionLabel>Shipment Timeline</SectionLabel>
+              <ol className="mt-3">
+                {result.steps.map((step, index) => {
+                  const tone = stepTone(step, result.notice);
+                  const isLast = index === result.steps!.length - 1;
+                  const connectorTone = !isLast ? stepTone(result.steps![index + 1], result.notice) : null;
+                  return (
+                    <li key={step.key} className="flex gap-3">
+                      <div className="flex flex-col items-center">
+                        <StepMarker state={step.state} tone={tone} />
+                        {!isLast && <StepConnector tone={connectorTone!} />}
+                      </div>
+                      <div className={isLast ? "pb-0.5" : "pb-4"}>
+                        <p
+                          className={`text-sm font-medium ${
+                            step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
+                          }`}
+                        >
+                          {step.label}
+                        </p>
+                        {step.timestamp && (
+                          <p className="text-xs text-neutral-500">{formatDate(step.timestamp)}</p>
+                        )}
+                        {step.state === "current" && STEP_DESCRIPTIONS[step.key] && (
+                          <p className="mt-0.5 text-xs text-neutral-500">{STEP_DESCRIPTIONS[step.key]}</p>
+                        )}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
+          ) : (
+            historyEvents.length > 0 && (
+              <div className="mt-4 border-t border-neutral-200 pt-3">
+                <SectionLabel>Order History</SectionLabel>
+                <ol className="mt-3 space-y-3 border-l border-neutral-300 pl-4">
+                  {historyEvents.map((event, index) => (
+                    <li key={`${event.label}-${index}`} className="relative">
+                      <span className="absolute -left-[17px] top-1 h-2 w-2 rounded-full bg-red-600" />
+                      <p className="text-sm font-medium text-neutral-900">{event.label}</p>
+                      <p className="text-xs text-neutral-500">{formatDate(event.createdAt)}</p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )
+          )}
+
+          {/* HOLD HISTORY -- preserved even after the shipment resumes. */}
+          {holdHistory.length > 0 && (
+            <div className="mt-4 border-t border-neutral-200 pt-3">
+              <SectionLabel>Clearance History</SectionLabel>
+              <ol className="mt-2 space-y-2">
+                {holdHistory.map((entry, index) => (
+                  <li key={index} className="text-xs">
+                    <span className="text-neutral-500">{formatDate(entry.createdAt)} — </span>
+                    <span className="text-neutral-800">
+                      {entry.value === "Resumed" ? "Shipment resumed" : `Shipment placed on hold — ${entry.value}`}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </div>
           )}
         </div>
       )}

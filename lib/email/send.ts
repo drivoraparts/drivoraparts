@@ -181,6 +181,24 @@ function renderReceiptMetaRow(label: string, value: string): string {
     </tr>`;
 }
 
+/**
+ * The Order ID row gets its own renderer: styled as a selectable monospace
+ * "code" chip so it's easy to tap-and-hold/select and copy manually. Email
+ * clients strip all JavaScript, so a real click-to-copy button can't work
+ * here -- this is the honest equivalent instead of a button that does
+ * nothing when tapped.
+ */
+function renderOrderIdRow(orderRef: string): string {
+  return `
+    <tr>
+      <td style="padding:8px 0;font-size:13px;color:#6b7280;width:140px;vertical-align:top;">Order ID</td>
+      <td style="padding:8px 0;">
+        <span style="display:inline-block;font-family:'Courier New',Courier,monospace;font-size:13px;font-weight:700;color:#111827;background:#ffffff;border:1px solid #d1d5db;border-radius:4px;padding:4px 10px;letter-spacing:0.03em;">${escapeHtml(orderRef)}</span>
+        <span style="font-size:11px;color:#9ca3af;margin-left:6px;">📋 tap &amp; hold to copy</span>
+      </td>
+    </tr>`;
+}
+
 function renderReceiptMetaTable(rows: string): string {
   return `
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 28px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:4px;">
@@ -216,8 +234,8 @@ function buildReceiptPage(input: OrderDocumentInput): string {
 
     ${renderReceiptMetaTable(`
       ${renderReceiptMetaRow("Status", `<span style="color:${statusColor};">${statusLabel}</span>`)}
+      ${renderOrderIdRow(orderRef)}
       ${renderReceiptMetaRow("Receipt #", orderRef)}
-      ${renderReceiptMetaRow("Order #", orderRef)}
       ${renderReceiptMetaRow("Date", escapeHtml(input.documentDate))}
       ${renderReceiptMetaRow("Customer", escapeHtml(input.customerName))}
     `)}
@@ -249,8 +267,8 @@ function buildInvoiceAgreementPage(input: OrderDocumentInput): string {
     </p>
 
     ${renderReceiptMetaTable(`
+      ${renderOrderIdRow(orderRef)}
       ${renderReceiptMetaRow("Invoice #", `INV-${orderRef}`)}
-      ${renderReceiptMetaRow("Order #", orderRef)}
       ${renderReceiptMetaRow("Invoice date", escapeHtml(input.documentDate))}
       ${renderReceiptMetaRow("Bill to", escapeHtml(input.customerName))}
       ${renderReceiptMetaRow("Payment status", input.paid ? "Paid in full" : "Pending confirmation")}

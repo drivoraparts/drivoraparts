@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import AdminShell from "@/components/admin/AdminShell";
 import DeleteOrderButton from "@/components/admin/DeleteOrderButton";
 import OrderLifecycleControls from "@/components/admin/OrderLifecycleControls";
-import StatusPill from "@/components/admin/StatusPill";
+import StatusPill, { SpinnerIcon } from "@/components/admin/StatusPill";
 import { getOrderById, listOrderEvents } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
 
@@ -21,6 +21,7 @@ const EVENT_LABELS: Record<string, string> = {
   payment_status: "Payment status",
   order_status: "Order status",
   shipping_status: "Shipping status",
+  shipment_hold: "Shipment hold",
   note: "Note",
 };
 
@@ -86,6 +87,12 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
         </SummaryTile>
         <SummaryTile label="Shipping">
           <StatusPill value={order.shipping_status} />
+          {order.shipping_hold_active ? (
+            <span className="ml-1.5 inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-medium text-amber-800">
+              <SpinnerIcon className="h-2 w-2" />
+              On Hold
+            </span>
+          ) : null}
         </SummaryTile>
       </div>
 
@@ -143,8 +150,16 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
                 shipmentDestination: order.shipment_destination,
                 shipmentReference: order.shipment_reference,
                 shipmentNotes: order.shipment_notes,
+                shipmentType: order.shipment_type,
+                currentLocation: order.shipment_current_location,
                 estimatedDeliveryStart: order.estimated_delivery_start,
                 estimatedDeliveryEnd: order.estimated_delivery_end,
+              }}
+              shippingHold={{
+                active: order.shipping_hold_active,
+                reason: order.shipping_hold_reason,
+                note: order.shipping_hold_note,
+                updatedAt: order.shipping_hold_updated_at,
               }}
             />
           </div>
