@@ -125,6 +125,11 @@ export function getGaMeasurementId(): string | null {
   return process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || null;
 }
 
+/** Google Tag Manager container ID (e.g. "GTM-XXXXXXX") — null until set, component no-ops. */
+export function getGtmContainerId(): string | null {
+  return process.env.NEXT_PUBLIC_GTM_CONTAINER_ID?.trim() || null;
+}
+
 export function getTikTokPixelId(): string {
   return TIKTOK_PIXEL_ID;
 }

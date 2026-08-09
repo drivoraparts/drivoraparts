@@ -20,9 +20,11 @@ import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import MetaPixel from "@/components/analytics/MetaPixel";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import GoogleTagManager from "@/components/analytics/GoogleTagManager";
+import GoogleTagManagerNoScript from "@/components/analytics/GoogleTagManagerNoScript";
 import TikTokPixel from "@/components/analytics/TikTokPixel";
 import TikTokPageTracker from "@/components/analytics/TikTokPageTracker";
-import { getGaMeasurementId, getMetaPixelId, getTikTokPixelId } from "@/lib/env";
+import { getGaMeasurementId, getGtmContainerId, getMetaPixelId, getTikTokPixelId } from "@/lib/env";
 
 /**
  * Cloudflare OpenNext uses Node.js on Workers (see wrangler.jsonc nodejs_compat).
@@ -122,15 +124,20 @@ export default async function RootLayout({
   const metaPixelId = getMetaPixelId();
   const tikTokPixelId = getTikTokPixelId();
   const gaMeasurementId = getGaMeasurementId();
+  const gtmContainerId = getGtmContainerId();
 
   return (
     <html lang={initialLanguage} suppressHydrationWarning>
       <body>
+        {/* GTM noscript fallback must be the first element after <body>
+            opens per Google's install instructions. */}
+        {!isAdmin && <GoogleTagManagerNoScript containerId={gtmContainerId} />}
         <JsonLdScript data={[organizationJsonLd(), websiteJsonLd()]} />
         {isAdmin ? (
           children
         ) : (
           <>
+            <GoogleTagManager containerId={gtmContainerId} />
             <MetaPixel pixelId={metaPixelId} />
             <TikTokPixel pixelId={tikTokPixelId} />
             <GoogleAnalytics measurementId={gaMeasurementId} />
