@@ -21,7 +21,6 @@ const SHIPPING_STATUS_LABELS: Record<ShippingStatus, string> = {
   preparing_shipment: "Preparing Shipment",
   shipped: "Shipped",
   in_transit: "In Transit",
-  customs_clearance: "Customs Clearance",
   arrived_at_destination: "Arrived at Destination",
   out_for_delivery: "Out for Delivery",
   delivery_exception: "Delivery Exception",

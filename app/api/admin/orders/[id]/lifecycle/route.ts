@@ -43,7 +43,6 @@ const SHIPPING_STATUSES: ShippingStatus[] = [
   "preparing_shipment",
   "shipped",
   "in_transit",
-  "customs_clearance",
   "arrived_at_destination",
   "out_for_delivery",
   "delivery_exception",

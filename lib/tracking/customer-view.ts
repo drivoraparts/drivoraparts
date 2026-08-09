@@ -79,7 +79,6 @@ const PAYMENT_CONFIRMED_STATUSES: PaymentStatus[] = ["paid", "refunded", "partia
 const SHIPPED_OR_LATER: ShippingStatus[] = [
   "shipped",
   "in_transit",
-  "customs_clearance",
   "arrived_at_destination",
   "out_for_delivery",
   "delivered",
@@ -87,14 +86,6 @@ const SHIPPED_OR_LATER: ShippingStatus[] = [
 
 const IN_TRANSIT_OR_LATER: ShippingStatus[] = [
   "in_transit",
-  "customs_clearance",
-  "arrived_at_destination",
-  "out_for_delivery",
-  "delivered",
-];
-
-const CUSTOMS_OR_LATER: ShippingStatus[] = [
-  "customs_clearance",
   "arrived_at_destination",
   "out_for_delivery",
   "delivered",
@@ -173,13 +164,6 @@ export function buildCustomerTrackingView(
         ? { key: "delivery_exception", label: "Delivery Exception" }
         : null;
 
-  const hasCustomsEvent = findEventTime(visibleEvents, "shipping_status", "customs_clearance") !== null;
-  // Only show a Customs Clearance step when customs actually happened (or is
-  // happening) -- reaching a later status like Arrived at Destination
-  // doesn't imply the shipment passed through customs (e.g. domestic orders
-  // skip it entirely).
-  const includeCustoms = shippingStatus === "customs_clearance" || hasCustomsEvent;
-
   const stepDefs: {
     key: string;
     label: string;
@@ -257,17 +241,6 @@ export function buildCustomerTrackingView(
       done: IN_TRANSIT_OR_LATER.includes(shippingStatus),
       timestamp: findEventTime(visibleEvents, "shipping_status", "in_transit"),
     },
-    ...(includeCustoms
-      ? [
-          {
-            key: "customs_clearance",
-            label: "Customs Clearance",
-            group: "shipping" as CustomerStepGroup,
-            done: CUSTOMS_OR_LATER.includes(shippingStatus) || hasCustomsEvent,
-            timestamp: findEventTime(visibleEvents, "shipping_status", "customs_clearance"),
-          },
-        ]
-      : []),
     {
       key: "arrived_at_destination",
       label: "Arrived at Destination",

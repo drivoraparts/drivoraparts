@@ -29,7 +29,6 @@ const TONE_MAP: Record<string, StatusTone> = {
   preparing_shipment: "warning",
   shipped: "info",
   in_transit: "info",
-  customs_clearance: "info",
   arrived_at_destination: "info",
   out_for_delivery: "info",
   delivered: "positive",

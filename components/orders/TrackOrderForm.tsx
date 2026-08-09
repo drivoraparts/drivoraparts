@@ -79,7 +79,6 @@ const HEADLINE_ICONS: Record<string, string> = {
   "Preparing for Shipment": "📦",
   Shipped: "🚚",
   "In Transit": "🚛",
-  "Customs Clearance": "🛃",
   "Arrived at Destination": "📍",
   "Out for Delivery": "🚗",
   Delivered: "🏠",
@@ -95,7 +94,6 @@ const STEP_DESCRIPTIONS: Record<string, string> = {
   ready_for_shipment: "Order is packed and staged, waiting to be handed to the carrier.",
   preparing_shipment: "Order is being packed and prepared for carrier pickup.",
   in_transit: "Shipment is currently moving toward its destination.",
-  customs_clearance: "Shipment is being processed by customs.",
   arrived_at_destination: "Shipment has arrived at the destination facility.",
   out_for_delivery: "Shipment is with the local delivery carrier.",
 };
@@ -371,27 +369,6 @@ export default function TrackOrderForm() {
             </p>
           )}
 
-          {/* CLEARANCE / HOLD -- only when a genuine hold is active, never
-              buried in the timeline. */}
-          {result.hold && (
-            <div className="mt-3 rounded-lg border border-amber-300 bg-amber-50 px-3.5 py-3">
-              <p className="text-sm font-bold text-amber-900">⚠ Shipment On Hold</p>
-              <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-wide text-amber-700">Reason</p>
-              <p className="text-sm text-amber-900">{result.hold.reason}</p>
-              {result.hold.note && (
-                <>
-                  <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-wide text-amber-700">
-                    Clearance Information
-                  </p>
-                  <p className="text-sm text-amber-900">{result.hold.note}</p>
-                </>
-              )}
-              {result.hold.updatedAt && (
-                <p className="mt-1.5 text-[11px] text-amber-700">Last updated {formatDate(result.hold.updatedAt)}</p>
-              )}
-            </div>
-          )}
-
           {result.customerMessage && (
             <p className="mt-2.5 rounded-lg border border-red-100 bg-red-50 px-3.5 py-2.5 text-sm text-neutral-800">
               {result.customerMessage}
@@ -556,6 +533,23 @@ export default function TrackOrderForm() {
                               )}
                               {step.state === "current" && STEP_DESCRIPTIONS[step.key] && (
                                 <p className="mt-0.5 text-xs text-neutral-500">{STEP_DESCRIPTIONS[step.key]}</p>
+                              )}
+                              {/* Shipment Hold is an overlay on top of wherever the
+                                  shipment currently is -- it never becomes its own
+                                  step and never changes the underlying status. */}
+                              {step.state === "current" && result.hold && (
+                                <div className="mt-1.5 rounded-md border border-amber-300 bg-amber-50 px-2.5 py-2">
+                                  <p className="text-xs font-bold text-amber-900">⚠️ Shipment On Hold</p>
+                                  <p className="mt-0.5 text-xs text-amber-800">{result.hold.reason}</p>
+                                  {result.hold.note && (
+                                    <p className="mt-0.5 text-xs text-amber-800">{result.hold.note}</p>
+                                  )}
+                                  {result.hold.updatedAt && (
+                                    <p className="mt-1 text-[10px] text-amber-700">
+                                      Since {formatDate(result.hold.updatedAt)}
+                                    </p>
+                                  )}
+                                </div>
                               )}
                             </div>
                           </li>
