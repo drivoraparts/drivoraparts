@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { sendEmail } from "@/lib/email/send";
 import { logActivity } from "@/lib/monitoring/activity";
+import { createSupportMessage } from "@/lib/db/support";
 
 const TOPIC_LABELS: Record<string, string> = {
   general: "General question",
@@ -91,6 +92,23 @@ export async function POST(req: Request) {
       topic,
       hasOrderId: Boolean(orderId),
     });
+
+    // Best-effort: the email above is the real notification path and has
+    // already succeeded, so a ticket-log failure here shouldn't turn into a
+    // customer-facing error. This is what makes the submission show up in
+    // the admin Support Center instead of only landing in an inbox.
+    try {
+      await createSupportMessage({
+        customerEmail: email,
+        customerName: name,
+        subject,
+        message: orderId ? `Order ID: ${orderId}\n\n${message}` : message,
+      });
+    } catch (error) {
+      await logActivity("error", "Failed to log support ticket for contact submission", {
+        message: error instanceof Error ? error.message : "Unknown error",
+      });
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
