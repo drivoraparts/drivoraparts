@@ -11,6 +11,7 @@ import {
   updateControlStatus,
   updateCustomerMessage,
   updateOrderLifecycleStatus,
+  updateShipmentDetailsVisibility,
   updateShippingInfo,
   updateShippingStatusRecord,
   type ControlStatus,
@@ -76,6 +77,7 @@ type LifecycleBody = {
     | "shipping_status"
     | "payment_status"
     | "shipping_info"
+    | "shipment_details_visibility"
     | "customer_message"
     | "shipping_hold_start"
     | "shipping_hold_resume";
@@ -83,6 +85,9 @@ type LifecycleBody = {
   shippingInfo?: ShippingInfoInput;
   note?: string;
   notifyCustomer?: boolean;
+  /** shipment_details_visibility only: show/hide the whole Shipment Details
+   * section on the customer tracking page. */
+  visible?: boolean;
   /** shipping_status only: explicitly override the "processing must be
    * complete first" gate. Without this, starting shipping before order
    * processing is marked complete is rejected -- the admin has to
@@ -256,6 +261,18 @@ export async function PATCH(
       }
       const updated = await updateShippingInfo(id, body.shippingInfo, actor);
       await logAdminAudit(actor, "order.update_shipping_info", id, { ip });
+      return NextResponse.json(updated);
+    }
+
+    if (body.target === "shipment_details_visibility") {
+      if (typeof body.visible !== "boolean") {
+        return NextResponse.json({ error: "visible (boolean) required" }, { status: 400 });
+      }
+      const updated = await updateShipmentDetailsVisibility(id, body.visible, actor);
+      await logAdminAudit(actor, "order.update_shipment_details_visibility", id, {
+        visible: body.visible,
+        ip,
+      });
       return NextResponse.json(updated);
     }
 

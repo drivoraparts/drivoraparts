@@ -99,6 +99,7 @@ export type OrderRecord = {
   shipping_hold_reason: ShippingHoldReason | null;
   shipping_hold_note: string | null;
   shipping_hold_updated_at: string | null;
+  shipment_details_visible: boolean;
   estimated_delivery_start: string | null;
   estimated_delivery_end: string | null;
   confirmation_sent_at: string | null;
@@ -949,6 +950,39 @@ export async function updateShippingInfo(
       eventType: "note",
       actor,
       note: "Shipping information updated",
+      customerVisible: false,
+    });
+  }
+
+  return updated;
+}
+
+/** Lets an admin hide the whole "Shipment Details" section on the customer
+ * tracking page without touching any of the underlying carrier/tracking
+ * data -- e.g. while info is still being confirmed, or for an order they'd
+ * rather not show shipment specifics on. Purely a display toggle. */
+export async function updateShipmentDetailsVisibility(
+  id: string,
+  visible: boolean,
+  actor: string
+): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ shipment_details_visible: visible, updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "note",
+      actor,
+      note: visible ? "Shipment Details section shown to customer" : "Shipment Details section hidden from customer",
       customerVisible: false,
     });
   }

@@ -66,6 +66,7 @@ type TrackOrderResult = {
   notice: Notice;
   hold: Hold;
   customerMessage: string | null;
+  shipmentDetailsVisible: boolean;
   items: OrderItem[];
   receiver: Receiver;
   shipment: Shipment;
@@ -427,8 +428,8 @@ export default function TrackOrderForm() {
             </div>
           )}
 
-          {/* SHIPMENT DETAILS */}
-          {hasShipmentDetails ? (
+          {/* SHIPMENT DETAILS -- admin can hide this whole section per order */}
+          {result.shipmentDetailsVisible && (hasShipmentDetails ? (
             <div className="mt-4 border-t border-neutral-200 pt-3">
               <SectionLabel>Shipment Details</SectionLabel>
               <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
@@ -505,7 +506,7 @@ export default function TrackOrderForm() {
                 </p>
               </div>
             )
-          )}
+          ))}
 
           {/* TIMELINE -- grouped into Order / Processing / Shipping phases */}
           {result.steps ? (

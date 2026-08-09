@@ -103,6 +103,7 @@ export async function GET(req: Request) {
         notice: view.notice,
         hold: view.hold,
         customerMessage: order.customer_message,
+        shipmentDetailsVisible: order.shipment_details_visible,
         items,
         receiver: order.customer
           ? {
