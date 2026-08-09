@@ -19,7 +19,8 @@ function formatTime(iso: string) {
 
 const EVENT_LABELS: Record<string, string> = {
   payment_status: "Payment status",
-  order_status: "Order status",
+  control_status: "Control status",
+  order_status: "Order processing",
   shipping_status: "Shipping status",
   shipment_hold: "Shipment hold",
   note: "Note",
@@ -74,15 +75,18 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
         <SummaryTile label="Customer">
           <p className="truncate text-sm font-semibold text-zinc-900">{order.customer?.full_name ?? "—"}</p>
           <p className="truncate text-xs text-zinc-500">{order.customer?.email ?? ""}</p>
         </SummaryTile>
+        <SummaryTile label="Control">
+          <StatusPill value={order.control_status} />
+        </SummaryTile>
         <SummaryTile label="Payment">
           <StatusPill value={payment?.status ?? "pending"} />
         </SummaryTile>
-        <SummaryTile label="Order">
+        <SummaryTile label="Order Processing">
           <StatusPill value={order.order_status} />
         </SummaryTile>
         <SummaryTile label="Shipping">
@@ -140,6 +144,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
             <OrderLifecycleControls
               orderId={order.id}
               paymentStatus={payment?.status ?? null}
+              controlStatus={order.control_status}
               orderStatus={order.order_status}
               shippingStatus={order.shipping_status}
               customerMessage={order.customer_message}

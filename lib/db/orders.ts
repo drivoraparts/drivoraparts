@@ -18,20 +18,31 @@ export type OrderStatus =
   | "refunded";
 
 /**
- * Admin-facing order lifecycle -- separate from the legacy `status` column
- * above (which stays untouched; see migration 005 for why). This is what
- * the admin dashboard's "Order Status" control reads/writes.
+ * Order Processing Status -- separate from the legacy `status` column above
+ * (which stays untouched; see migration 005 for why). Purely the
+ * pre-shipping preparation pipeline: what has to happen to an order after
+ * payment before it's ready to hand off to shipping. "Payment Confirmed"
+ * deliberately isn't a value here -- it's derived read-only from the real
+ * payments table (see lib/tracking/customer-view.ts) so it can never be
+ * set by clicking through this list. Coarse states like On Hold/Cancelled
+ * live on `control_status` instead (see ControlStatus below), and shipping
+ * progress lives entirely on `shipping_status`.
  */
 export type OrderLifecycleStatus =
-  | "pending"
-  | "confirmed"
+  | "order_received"
   | "processing"
-  | "on_hold"
+  | "preparing_order"
+  | "verification"
   | "ready_for_shipment"
-  | "shipped"
-  | "completed"
-  | "cancelled"
-  | "refunded";
+  | "processing_complete";
+
+/**
+ * The high-level administrative control layer for an order -- independent
+ * of how far processing/shipping has actually progressed. An order can be
+ * put On Hold or Cancelled at any point regardless of its processing or
+ * shipping stage, without losing that stage (see migration 008).
+ */
+export type ControlStatus = "active" | "on_hold" | "cancelled" | "completed" | "refunded";
 
 export type ShippingStatus =
   | "not_shipped"
@@ -41,8 +52,8 @@ export type ShippingStatus =
   | "customs_clearance"
   | "arrived_at_destination"
   | "out_for_delivery"
-  | "delivered"
-  | "delivery_exception";
+  | "delivery_exception"
+  | "delivered";
 
 export type OrderItemRecord = {
   id: string;
@@ -73,6 +84,7 @@ export type OrderRecord = {
   shipping: number;
   total: number;
   status: OrderStatus;
+  control_status: ControlStatus;
   order_status: OrderLifecycleStatus;
   shipping_status: ShippingStatus;
   carrier: string | null;
@@ -168,7 +180,8 @@ export async function createOrderRecord(
         total,
         status: "pending",
         order_number: generateOrderNumber(),
-        order_status: "pending",
+        order_status: "order_received",
+        control_status: "active",
       })
       .select("*")
       .single();
@@ -510,7 +523,7 @@ export async function finalizeOrderPaid(id: string): Promise<OrderRecord | null>
     .from("orders")
     .update({
       status: "paid",
-      order_status: "confirmed",
+      order_status: "processing",
       updated_at: new Date().toISOString(),
     })
     .eq("id", id)
@@ -522,13 +535,24 @@ export async function finalizeOrderPaid(id: string): Promise<OrderRecord | null>
   const updated = (data as OrderRecord | null) ?? null;
 
   if (updated) {
+    // "Payment Confirmed" is derived from the real payments table, not this
+    // column -- this payment_status event just gives the customer-facing
+    // stepper a genuine timestamp to show against that step.
+    await logOrderEvent({
+      orderId: id,
+      eventType: "payment_status",
+      fromValue: "pending",
+      toValue: "paid",
+      actor: "webhook",
+      note: "Payment confirmed by NOWPayments",
+    });
     await logOrderEvent({
       orderId: id,
       eventType: "order_status",
-      fromValue: "pending",
-      toValue: "confirmed",
+      fromValue: "order_received",
+      toValue: "processing",
       actor: "webhook",
-      note: "Payment confirmed by NOWPayments",
+      note: "Order processing started",
     });
   }
 
@@ -545,7 +569,7 @@ export async function failOrderIfUnpaid(id: string): Promise<OrderRecord | null>
     .from("orders")
     .update({
       status: "cancelled",
-      order_status: "cancelled",
+      control_status: "cancelled",
       updated_at: new Date().toISOString(),
     })
     .eq("id", id)
@@ -559,7 +583,7 @@ export async function failOrderIfUnpaid(id: string): Promise<OrderRecord | null>
   if (updated) {
     await logOrderEvent({
       orderId: id,
-      eventType: "order_status",
+      eventType: "control_status",
       toValue: "cancelled",
       actor: "webhook",
       note: "Payment failed",
@@ -642,6 +666,7 @@ export async function getOrderStats() {
 
 export type OrderEventType =
   | "payment_status"
+  | "control_status"
   | "order_status"
   | "shipping_status"
   | "shipment_hold"
@@ -706,6 +731,29 @@ export async function listOrderEvents(orderId: string): Promise<OrderEventRecord
    ADMIN STATUS CONTROLS (order_status / shipping_status / shipping info)
 ========================================================= */
 
+/**
+ * When a status control is saved without actually changing the status
+ * value (e.g. just editing the note), log the note on its own instead of
+ * silently doing nothing -- an admin should be able to update a note at
+ * any time without being forced to toggle the status away and back.
+ */
+async function logNoteOnlyUpdate(
+  orderId: string,
+  actor: string,
+  note: string | undefined,
+  occurredAt: string | undefined
+): Promise<void> {
+  if (!note?.trim()) return;
+  await logOrderEvent({
+    orderId,
+    eventType: "note",
+    note,
+    actor,
+    occurredAt,
+    customerVisible: false,
+  });
+}
+
 export async function updateOrderLifecycleStatus(
   id: string,
   status: OrderLifecycleStatus,
@@ -715,7 +763,10 @@ export async function updateOrderLifecycleStatus(
 ): Promise<OrderRecord | null> {
   const existing = await getOrderById(id);
   if (!existing) return null;
-  if (existing.order_status === status) return existing;
+  if (existing.order_status === status) {
+    await logNoteOnlyUpdate(id, actor, note, occurredAt);
+    return existing;
+  }
 
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase
@@ -743,6 +794,50 @@ export async function updateOrderLifecycleStatus(
   return updated;
 }
 
+/** The coarse admin control layer (Active/On Hold/Cancelled/Completed/
+ * Refunded) -- independent of order_status/shipping_status, so putting an
+ * order on hold or cancelling it never loses its processing/shipping
+ * progress. */
+export async function updateControlStatus(
+  id: string,
+  status: ControlStatus,
+  actor: string,
+  note?: string,
+  occurredAt?: string
+): Promise<OrderRecord | null> {
+  const existing = await getOrderById(id);
+  if (!existing) return null;
+  if (existing.control_status === status) {
+    await logNoteOnlyUpdate(id, actor, note, occurredAt);
+    return existing;
+  }
+
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ control_status: status, updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "control_status",
+      fromValue: existing.control_status,
+      toValue: status,
+      actor,
+      note,
+      occurredAt,
+    });
+  }
+
+  return updated;
+}
+
 export async function updateShippingStatusRecord(
   id: string,
   status: ShippingStatus,
@@ -752,7 +847,10 @@ export async function updateShippingStatusRecord(
 ): Promise<OrderRecord | null> {
   const existing = await getOrderById(id);
   if (!existing) return null;
-  if (existing.shipping_status === status) return existing;
+  if (existing.shipping_status === status) {
+    await logNoteOnlyUpdate(id, actor, note, occurredAt);
+    return existing;
+  }
 
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase
@@ -841,6 +939,23 @@ export async function updateShippingInfo(
 
   return updated;
 }
+
+export const ORDER_PROCESSING_STATUS_LABELS: Record<OrderLifecycleStatus, string> = {
+  order_received: "Order Received",
+  processing: "Processing",
+  preparing_order: "Preparing Order",
+  verification: "Order Verification",
+  ready_for_shipment: "Ready for Shipment",
+  processing_complete: "Processing Complete",
+};
+
+export const CONTROL_STATUS_LABELS: Record<ControlStatus, string> = {
+  active: "Active",
+  on_hold: "On Hold",
+  cancelled: "Cancelled",
+  completed: "Completed",
+  refunded: "Refunded",
+};
 
 export const SHIPPING_HOLD_REASON_LABELS: Record<ShippingHoldReason, string> = {
   customs_clearance: "Customs Clearance",

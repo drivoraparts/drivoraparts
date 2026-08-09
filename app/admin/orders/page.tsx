@@ -47,6 +47,7 @@ export default async function AdminOrdersPage() {
 
                   <div className="flex items-center gap-3 sm:shrink-0">
                     <div className="flex flex-wrap justify-end gap-1.5">
+                      <StatusPill value={order.control_status} />
                       {payment ? <StatusPill value={payment.status} /> : null}
                       <StatusPill value={order.order_status} />
                       <StatusPill value={order.shipping_status} />

@@ -5,25 +5,16 @@ import { useState } from "react";
 import { adminUi } from "./admin-ui";
 import StatusPill, { SpinnerIcon } from "./StatusPill";
 import {
+  CONTROL_STATUS_LABELS,
+  ORDER_PROCESSING_STATUS_LABELS,
   SHIPPING_HOLD_REASON_LABELS,
+  type ControlStatus,
   type OrderLifecycleStatus,
   type ShippingHoldReason,
   type ShippingInfoInput,
   type ShippingStatus,
 } from "@/lib/db/orders";
 import type { PaymentStatus } from "@/lib/db/payments";
-
-const ORDER_STATUS_LABELS: Record<OrderLifecycleStatus, string> = {
-  pending: "Pending",
-  confirmed: "Confirmed",
-  processing: "Processing",
-  on_hold: "On Hold",
-  ready_for_shipment: "Ready for Shipment",
-  shipped: "Shipped",
-  completed: "Completed",
-  cancelled: "Cancelled",
-  refunded: "Refunded",
-};
 
 const SHIPPING_STATUS_LABELS: Record<ShippingStatus, string> = {
   not_shipped: "Not Shipped",
@@ -33,8 +24,8 @@ const SHIPPING_STATUS_LABELS: Record<ShippingStatus, string> = {
   customs_clearance: "Customs Clearance",
   arrived_at_destination: "Arrived at Destination",
   out_for_delivery: "Out for Delivery",
-  delivered: "Delivered",
   delivery_exception: "Delivery Exception",
+  delivered: "Delivered",
 };
 
 const PAYMENT_STATUS_LABELS: Record<PaymentStatus, string> = {
@@ -76,26 +67,36 @@ function StatusCard({
   labels,
   onSave,
   extra,
+  locked,
+  lockMessage,
 }: {
   title: string;
   currentValue: string;
   labels: Record<string, string>;
-  onSave: (value: string, note: string, occurredAt: string) => Promise<void>;
+  onSave: (value: string, note: string, occurredAt: string, forceOverride: boolean) => Promise<void>;
   extra?: React.ReactNode;
+  /** When true, the select/save are disabled unless the admin explicitly
+   * checks the override box -- used to gate Shipping Status behind Order
+   * Processing being marked complete. */
+  locked?: boolean;
+  lockMessage?: string;
 }) {
   const [value, setValue] = useState(currentValue);
   const [note, setNote] = useState("");
   const [occurredAt, setOccurredAt] = useState("");
+  const [overrideLock, setOverrideLock] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
+
+  const isLocked = Boolean(locked) && !overrideLock;
 
   const handleSave = async () => {
     setLoading(true);
     setMessage("");
     setError(false);
     try {
-      await onSave(value, note, occurredAt);
+      await onSave(value, note, occurredAt, overrideLock);
       setMessage("Saved");
       setNote("");
       setOccurredAt("");
@@ -113,11 +114,16 @@ function StatusCard({
         <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">{title}</p>
         <StatusPill value={currentValue} label={labels[currentValue]?.toLowerCase()} size="xs" />
       </div>
+      {locked && (
+        <p className="mt-1.5 rounded-md bg-zinc-50 px-2 py-1.5 text-[11px] text-zinc-500">
+          🔒 {lockMessage}
+        </p>
+      )}
       <select
         value={value}
-        disabled={loading}
+        disabled={loading || isLocked}
         onChange={(e) => setValue(e.target.value)}
-        className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm font-medium text-zinc-900"
+        className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm font-medium text-zinc-900 disabled:bg-zinc-50 disabled:text-zinc-400"
       >
         {Object.entries(labels).map(([key, label]) => (
           <option key={key} value={key}>
@@ -144,11 +150,17 @@ function StatusCard({
           className="mt-0.5 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs"
         />
       </label>
+      {locked && (
+        <label className="mt-1.5 flex items-center gap-1.5 text-xs text-amber-700">
+          <input type="checkbox" checked={overrideLock} onChange={(e) => setOverrideLock(e.target.checked)} />
+          Override and begin shipping now
+        </label>
+      )}
       {extra}
       <button
         type="button"
         onClick={handleSave}
-        disabled={loading || value === currentValue}
+        disabled={loading || isLocked || (value === currentValue && !note.trim())}
         className={`${adminUi.buttonPrimary} mt-2 w-full !py-1.5 text-xs`}
       >
         {loading ? "Saving…" : "Save"}
@@ -312,6 +324,7 @@ function ShipmentHoldControl({
 export default function OrderLifecycleControls({
   orderId,
   paymentStatus,
+  controlStatus,
   orderStatus,
   shippingStatus,
   customerMessage,
@@ -320,6 +333,7 @@ export default function OrderLifecycleControls({
 }: {
   orderId: string;
   paymentStatus: PaymentStatus | null;
+  controlStatus: ControlStatus;
   orderStatus: OrderLifecycleStatus;
   shippingStatus: ShippingStatus;
   customerMessage: string | null;
@@ -401,9 +415,25 @@ export default function OrderLifecycleControls({
     }
   };
 
+  const processingComplete = orderStatus === "processing_complete";
+
   return (
     <div className="space-y-4">
-      <div className="grid gap-3 sm:grid-cols-3">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <StatusCard
+          title="Control Status"
+          currentValue={controlStatus}
+          labels={CONTROL_STATUS_LABELS}
+          onSave={async (value, note, occurredAt) => {
+            await patchLifecycle(orderId, {
+              target: "control_status",
+              value,
+              note,
+              occurredAt: toIso(occurredAt),
+            });
+            router.refresh();
+          }}
+        />
         <StatusCard
           title="Payment Status"
           currentValue={paymentStatus ?? "pending"}
@@ -419,9 +449,9 @@ export default function OrderLifecycleControls({
           }}
         />
         <StatusCard
-          title="Order Status"
+          title="Order Processing"
           currentValue={orderStatus}
-          labels={ORDER_STATUS_LABELS}
+          labels={ORDER_PROCESSING_STATUS_LABELS}
           onSave={async (value, note, occurredAt) => {
             await patchLifecycle(orderId, {
               target: "order_status",
@@ -436,12 +466,15 @@ export default function OrderLifecycleControls({
           title="Shipping Status"
           currentValue={shippingStatus}
           labels={SHIPPING_STATUS_LABELS}
-          onSave={async (value, note, occurredAt) => {
+          locked={!processingComplete}
+          lockMessage="Locked until Order Processing is Processing Complete."
+          onSave={async (value, note, occurredAt, forceOverride) => {
             await patchLifecycle(orderId, {
               target: "shipping_status",
               value,
               note,
               occurredAt: toIso(occurredAt),
+              forceShipping: forceOverride,
               notifyCustomer: notify && NOTIFIABLE_SHIPPING_STATUSES.includes(value as ShippingStatus),
             });
             router.refresh();

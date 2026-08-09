@@ -8,10 +8,12 @@ import {
   logOrderEvent,
   resumeShipping,
   startShippingHold,
+  updateControlStatus,
   updateCustomerMessage,
   updateOrderLifecycleStatus,
   updateShippingInfo,
   updateShippingStatusRecord,
+  type ControlStatus,
   type OrderLifecycleStatus,
   type ShippingHoldReason,
   type ShippingInfoInput,
@@ -26,16 +28,15 @@ import {
 } from "@/lib/email/send";
 
 const ORDER_STATUSES: OrderLifecycleStatus[] = [
-  "pending",
-  "confirmed",
+  "order_received",
   "processing",
-  "on_hold",
+  "preparing_order",
+  "verification",
   "ready_for_shipment",
-  "shipped",
-  "completed",
-  "cancelled",
-  "refunded",
+  "processing_complete",
 ];
+
+const CONTROL_STATUSES: ControlStatus[] = ["active", "on_hold", "cancelled", "completed", "refunded"];
 
 const SHIPPING_STATUSES: ShippingStatus[] = [
   "not_shipped",
@@ -45,8 +46,8 @@ const SHIPPING_STATUSES: ShippingStatus[] = [
   "customs_clearance",
   "arrived_at_destination",
   "out_for_delivery",
-  "delivered",
   "delivery_exception",
+  "delivered",
 ];
 
 const PAYMENT_STATUSES: PaymentStatus[] = [
@@ -71,6 +72,7 @@ const SHIPPING_HOLD_REASONS: ShippingHoldReason[] = [
 
 type LifecycleBody = {
   target:
+    | "control_status"
     | "order_status"
     | "shipping_status"
     | "payment_status"
@@ -82,6 +84,11 @@ type LifecycleBody = {
   shippingInfo?: ShippingInfoInput;
   note?: string;
   notifyCustomer?: boolean;
+  /** shipping_status only: explicitly override the "processing must be
+   * complete first" gate. Without this, starting shipping before order
+   * processing is marked complete is rejected -- the admin has to
+   * deliberately choose to begin the shipping phase early. */
+  forceShipping?: boolean;
   /** shipping_hold_start only: the reason shown to the customer. */
   holdReason?: string;
   /** shipping_hold_start only: customer-visible clearance explanation. */
@@ -139,6 +146,21 @@ export async function PATCH(
   }
 
   try {
+    if (body.target === "control_status") {
+      if (!body.value || !CONTROL_STATUSES.includes(body.value as ControlStatus)) {
+        return NextResponse.json({ error: "Invalid control status" }, { status: 400 });
+      }
+      const updated = await updateControlStatus(
+        id,
+        body.value as ControlStatus,
+        actor,
+        note,
+        occurredAt
+      );
+      await logAdminAudit(actor, "order.update_control_status", id, { status: body.value, ip });
+      return NextResponse.json(updated);
+    }
+
     if (body.target === "order_status") {
       if (!body.value || !ORDER_STATUSES.includes(body.value as OrderLifecycleStatus)) {
         return NextResponse.json({ error: "Invalid order status" }, { status: 400 });
@@ -159,6 +181,17 @@ export async function PATCH(
         return NextResponse.json({ error: "Invalid shipping status" }, { status: 400 });
       }
       const status = body.value as ShippingStatus;
+
+      // Shipping is its own phase, gated behind order processing being
+      // explicitly marked complete -- an admin can still override with
+      // forceShipping when a real exception calls for it.
+      if (order.order_status !== "processing_complete" && !body.forceShipping) {
+        return NextResponse.json(
+          { error: "Order processing isn't complete yet. Pass forceShipping to begin shipping anyway." },
+          { status: 409 }
+        );
+      }
+
       const updated = await updateShippingStatusRecord(id, status, actor, note, occurredAt);
       await logAdminAudit(actor, "order.update_shipping_status", id, { status, ip });
 
@@ -235,12 +268,13 @@ export async function PATCH(
 
       if (status === "paid") {
         await adminMarkOrderPaid(id);
-        // adminMarkOrderPaid only flips the legacy `status` column -- keep the
-        // richer order_status timeline in sync the same way the real
-        // NOWPayments webhook does, but only advance it if nothing further
-        // along has already happened (never regress a shipped/completed order).
-        if (order.order_status === "pending") {
-          await updateOrderLifecycleStatus(id, "confirmed", actor, note ?? "Payment confirmed (admin)");
+        // adminMarkOrderPaid only flips the legacy `status` column and the
+        // payments table -- "Payment Confirmed" on the customer timeline is
+        // derived straight from that payment status, so nothing else needs
+        // to change here. Order processing itself only needs a nudge if it
+        // hasn't started yet (never regress an order already further along).
+        if (order.order_status === "order_received") {
+          await updateOrderLifecycleStatus(id, "processing", actor, note ?? "Payment confirmed (admin)");
         }
       } else {
         const payment = await findPaymentByOrderId(id);

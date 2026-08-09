@@ -5,18 +5,26 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
 type TimelineEntry = {
-  type: "payment_status" | "order_status" | "shipping_status" | "shipment_hold" | "note";
+  type: "payment_status" | "control_status" | "order_status" | "shipping_status" | "shipment_hold" | "note";
   value: string | null;
   createdAt: string;
 };
 
 type StepState = "completed" | "current" | "upcoming";
+type StepGroup = "order" | "processing" | "shipping";
 
 type Step = {
   key: string;
   label: string;
+  group: StepGroup;
   state: StepState;
   timestamp: string | null;
+};
+
+const GROUP_LABELS: Record<StepGroup, string> = {
+  order: "Order",
+  processing: "Processing",
+  shipping: "Shipping",
 };
 
 type Banner = { key: "cancelled" | "refunded"; label: string } | null;
@@ -68,33 +76,39 @@ const HEADLINE_ICONS: Record<string, string> = {
   "Order Placed": "📦",
   "Payment Confirmed": "💳",
   Processing: "⚙️",
-  "Preparing for Shipment": "📋",
-  Shipped: "📤",
-  "In Transit": "🚚",
+  "Preparing for Shipment": "📦",
+  Shipped: "🚚",
+  "In Transit": "🚛",
   "Customs Clearance": "🛃",
-  "Out for Delivery": "🛵",
-  Delivered: "✅",
+  "Arrived at Destination": "📍",
+  "Out for Delivery": "🚗",
+  Delivered: "🏠",
   Cancelled: "✕",
   Refunded: "↩️",
 };
 
 const STEP_DESCRIPTIONS: Record<string, string> = {
+  processing: "Order is being processed at our facility.",
+  preparing_order: "Order contents are being prepared and packed.",
+  verification: "Order is undergoing a final quality/accuracy check.",
+  ready_for_shipment: "Order is packed and staged, waiting to be handed to the carrier.",
+  preparing_shipment: "Order is being packed and prepared for carrier pickup.",
   in_transit: "Shipment is currently moving toward its destination.",
   customs_clearance: "Shipment is being processed by customs.",
+  arrived_at_destination: "Shipment has arrived at the destination facility.",
   out_for_delivery: "Shipment is with the local delivery carrier.",
-  preparing_shipment: "Order is being packed and prepared for carrier pickup.",
-  processing: "Order is being processed at our facility.",
 };
 
 const EVENT_STEP_LABELS: Record<string, string> = {
-  "order_status:confirmed": "Payment confirmed",
   "order_status:processing": "Processing",
-  "order_status:on_hold": "On hold",
+  "order_status:preparing_order": "Preparing order",
+  "order_status:verification": "Order verification",
   "order_status:ready_for_shipment": "Ready for shipment",
-  "order_status:shipped": "Shipped",
-  "order_status:completed": "Completed",
-  "order_status:cancelled": "Order cancelled",
-  "order_status:refunded": "Order refunded",
+  "order_status:processing_complete": "Processing complete",
+  "control_status:on_hold": "Order on hold",
+  "control_status:cancelled": "Order cancelled",
+  "control_status:completed": "Order completed",
+  "control_status:refunded": "Order refunded",
   "shipping_status:preparing_shipment": "Preparing for shipment",
   "shipping_status:shipped": "Shipped",
   "shipping_status:in_transit": "In transit",
@@ -505,40 +519,51 @@ export default function TrackOrderForm() {
             )
           )}
 
-          {/* TIMELINE */}
+          {/* TIMELINE -- grouped into Order / Processing / Shipping phases */}
           {result.steps ? (
             <div className="mt-4 border-t border-neutral-200 pt-3">
               <SectionLabel>Shipment Timeline</SectionLabel>
-              <ol className="mt-3">
-                {result.steps.map((step, index) => {
-                  const tone = stepTone(step, result.notice);
-                  const isLast = index === result.steps!.length - 1;
-                  const connectorTone = !isLast ? stepTone(result.steps![index + 1], result.notice) : null;
-                  return (
-                    <li key={step.key} className="flex gap-3">
-                      <div className="flex flex-col items-center">
-                        <StepMarker state={step.state} tone={tone} />
-                        {!isLast && <StepConnector tone={connectorTone!} />}
-                      </div>
-                      <div className={isLast ? "pb-0.5" : "pb-4"}>
-                        <p
-                          className={`text-sm font-medium ${
-                            step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
-                          }`}
-                        >
-                          {step.label}
-                        </p>
-                        {step.timestamp && (
-                          <p className="text-xs text-neutral-500">{formatDate(step.timestamp)}</p>
-                        )}
-                        {step.state === "current" && STEP_DESCRIPTIONS[step.key] && (
-                          <p className="mt-0.5 text-xs text-neutral-500">{STEP_DESCRIPTIONS[step.key]}</p>
-                        )}
-                      </div>
-                    </li>
-                  );
-                })}
-              </ol>
+              {(["order", "processing", "shipping"] as StepGroup[]).map((group) => {
+                const groupSteps = result.steps!.filter((s) => s.group === group);
+                if (groupSteps.length === 0) return null;
+                return (
+                  <div key={group} className="mt-3 first:mt-2">
+                    <p className="text-[10px] font-semibold uppercase tracking-wide text-neutral-400">
+                      {GROUP_LABELS[group]}
+                    </p>
+                    <ol className="mt-1.5">
+                      {groupSteps.map((step, index) => {
+                        const tone = stepTone(step, result.notice);
+                        const isLast = index === groupSteps.length - 1;
+                        const connectorTone = !isLast ? stepTone(groupSteps[index + 1], result.notice) : null;
+                        return (
+                          <li key={step.key} className="flex gap-3">
+                            <div className="flex flex-col items-center">
+                              <StepMarker state={step.state} tone={tone} />
+                              {!isLast && <StepConnector tone={connectorTone!} />}
+                            </div>
+                            <div className={isLast ? "pb-0.5" : "pb-4"}>
+                              <p
+                                className={`text-sm font-medium ${
+                                  step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
+                                }`}
+                              >
+                                {step.label}
+                              </p>
+                              {step.timestamp && step.state !== "upcoming" && (
+                                <p className="text-xs text-neutral-500">{formatDate(step.timestamp)}</p>
+                              )}
+                              {step.state === "current" && STEP_DESCRIPTIONS[step.key] && (
+                                <p className="mt-0.5 text-xs text-neutral-500">{STEP_DESCRIPTIONS[step.key]}</p>
+                              )}
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  </div>
+                );
+              })}
             </div>
           ) : (
             historyEvents.length > 0 && (

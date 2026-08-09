@@ -5,6 +5,12 @@
 export type StatusTone = "positive" | "warning" | "info" | "negative" | "neutral";
 
 const TONE_MAP: Record<string, StatusTone> = {
+  // Control Status
+  active: "info",
+  on_hold: "warning",
+  cancelled: "negative",
+  completed: "positive",
+  // Payment Status
   pending: "warning",
   processing: "info",
   paid: "positive",
@@ -12,14 +18,16 @@ const TONE_MAP: Record<string, StatusTone> = {
   expired: "negative",
   refunded: "negative",
   partially_refunded: "negative",
-  confirmed: "positive",
-  on_hold: "warning",
+  // Order Processing Status
+  order_received: "warning",
+  preparing_order: "info",
+  verification: "info",
   ready_for_shipment: "info",
-  shipped: "info",
-  completed: "positive",
-  cancelled: "negative",
+  processing_complete: "positive",
+  // Shipping Status
   not_shipped: "neutral",
   preparing_shipment: "warning",
+  shipped: "info",
   in_transit: "info",
   customs_clearance: "info",
   arrived_at_destination: "info",

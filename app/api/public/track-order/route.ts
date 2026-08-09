@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getOrderById, getOrderByNumber, listOrderEvents, type OrderWithDetails } from "@/lib/db/orders";
-import { findPaymentByAnyProviderId } from "@/lib/db/payments";
+import { findPaymentByAnyProviderId, findPaymentByOrderId } from "@/lib/db/payments";
 import { isSupabaseConfigured } from "@/lib/env";
 import { getProductById } from "@/lib/inventory";
 import { buildCustomerTrackingView } from "@/lib/tracking/customer-view";
@@ -51,8 +51,11 @@ export async function GET(req: Request) {
       return NextResponse.json({ error: "Not found" }, { status: 404 });
     }
 
-    const events = await listOrderEvents(order.id);
-    const view = buildCustomerTrackingView(order, events);
+    const [events, payment] = await Promise.all([
+      listOrderEvents(order.id),
+      findPaymentByOrderId(order.id),
+    ]);
+    const view = buildCustomerTrackingView(order, events, payment?.status ?? null);
     const timeline = events
       .filter((event) => event.customer_visible)
       .map((event) => ({
