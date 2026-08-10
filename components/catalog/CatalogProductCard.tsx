@@ -15,6 +15,7 @@ import {
 import { getProductThumbnail } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory/routes";
 import WishlistButton from "@/components/wishlist/WishlistButton";
+import SaleBadge, { isProductOnSale } from "@/components/product/SaleBadge";
 
 export type CatalogProductCardData = {
   id: number;
@@ -68,6 +69,11 @@ export default function CatalogProductCard({
 
       <div className="relative p-4">
         <div className="relative h-40 w-full overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50">
+          {isProductOnSale(product.price, product.compareAtPrice) ? (
+            <div className="absolute left-1.5 top-1.5 z-20">
+              <SaleBadge />
+            </div>
+          ) : null}
           <div className="absolute right-1.5 top-1.5 z-20">
             <WishlistButton
               product={{

@@ -18,6 +18,7 @@ import { getProductThumbnail } from "@/lib/inventory/media";
 import { routes } from "@/lib/inventory/routes";
 import type { CatalogProductCardData } from "./CatalogProductCard";
 import WishlistButton from "@/components/wishlist/WishlistButton";
+import SaleBadge, { isProductOnSale } from "@/components/product/SaleBadge";
 import CompareButton from "@/components/compare/CompareButton";
 import QuickViewModal from "./QuickViewModal";
 
@@ -76,11 +77,14 @@ export default function AllProductsGridCard({
 
       <div className="p-1.5 pb-1">
         <div className="relative aspect-square w-full overflow-hidden rounded-md border border-neutral-200 bg-neutral-50">
-          {product.isNew ? (
-            <span className="absolute left-1 top-1 z-20 rounded-full bg-red-600 px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide text-white sm:text-[9px]">
-              New
-            </span>
-          ) : null}
+          <div className="absolute left-1 top-1 z-20 flex flex-col items-start gap-1">
+            {product.isNew ? (
+              <span className="rounded-full bg-red-600 px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide text-white sm:text-[9px]">
+                New
+              </span>
+            ) : null}
+            {isProductOnSale(product.price, product.compareAtPrice) ? <SaleBadge /> : null}
+          </div>
           <div className="absolute right-1 top-1 z-20">
             <WishlistButton
               product={{
