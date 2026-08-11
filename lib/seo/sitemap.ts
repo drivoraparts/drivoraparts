@@ -35,12 +35,14 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     { path: "", priority: 1 },
     { path: routes.catalog, priority: 0.95 },
     { path: routes.all, priority: 0.9 },
-    { path: "/catalog/engine", priority: 0.9 },
     { path: "/about", priority: 0.6 },
     { path: "/contact", priority: 0.6 },
     { path: "/policies", priority: 0.4 },
   ];
 
+  // /catalog/engine is already included here via the generic category loop
+  // (same priority, 0.9) -- it used to also be hardcoded in staticPaths
+  // above, which submitted it to Google twice in the same sitemap.
   const categoryEntries = categories.map((category) =>
     entry(toUrl(routes.category(category.slug)), 0.9)
   );

@@ -64,27 +64,38 @@ function brandNameForSlug(slug: string, categorySlug: string): string {
 /** Reconstruct the legacy store record from the normalized inventory. */
 export const store: Record<string, Category> = Object.fromEntries(
   invCategories.map((category) => {
+    const categoryProducts = invProducts.filter(
+      (p) => p.category === category.slug
+    );
+
+    // Only list brands that actually have a live product -- a brand
+    // registered in brands.ts with zero current listings would otherwise
+    // still render as a clickable "Shop by Brand" link straight into a
+    // 404 (the brand page itself already 404s with no matching products;
+    // see app/catalog/[category]/[brand]/page.tsx).
     const brands = invBrands
-      .filter((b) => b.category === category.slug)
+      .filter(
+        (b) =>
+          b.category === category.slug &&
+          categoryProducts.some((p) => p.brand === b.slug)
+      )
       .map((b) => b.name);
 
-    const products: Product[] = invProducts
-      .filter((p) => p.category === category.slug)
-      .map((p) => ({
-        id: p.id,
-        name: p.name,
-        category: p.category,
-        brand: brandNameForSlug(p.brand, category.slug),
-        platform: p.platform,
-        price: p.price,
-        compareAtPrice: p.compareAtPrice,
-        condition: getConditionLabel(p),
-        location: p.location ?? "",
-        thumbnail: getProductThumbnail(p),
-        images: resolveProductGallery(p.thumbnail ?? p.image, p.images),
-        description: p.description ?? "",
-        sourceUrl: p.sourceUrl,
-      }));
+    const products: Product[] = categoryProducts.map((p) => ({
+      id: p.id,
+      name: p.name,
+      category: p.category,
+      brand: brandNameForSlug(p.brand, category.slug),
+      platform: p.platform,
+      price: p.price,
+      compareAtPrice: p.compareAtPrice,
+      condition: getConditionLabel(p),
+      location: p.location ?? "",
+      thumbnail: getProductThumbnail(p),
+      images: resolveProductGallery(p.thumbnail ?? p.image, p.images),
+      description: p.description ?? "",
+      sourceUrl: p.sourceUrl,
+    }));
 
     return [category.slug, { name: category.name, brands, products }] as [
       string,
