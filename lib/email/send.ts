@@ -247,9 +247,7 @@ function buildReceiptPage(input: OrderDocumentInput): string {
       ${input.paid ? "Your order is now being prepared for fulfillment." : "We will email your paid invoice once payment is confirmed on our payment processor."}
     </p>
 
-    <p style="margin:0;font-size:13px;font-family:Arial,Helvetica,sans-serif;">
-      <a href="${getSiteUrl()}/track-order?orderId=${encodeURIComponent(input.orderNumber)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
-    </p>`;
+    ${renderTrackOrderButton(input.orderNumber)}`;
 }
 
 function buildInvoiceAgreementPage(input: OrderDocumentInput): string {
@@ -565,12 +563,13 @@ type ShippingUpdateInput = {
   estimatedDeliveryEnd?: string | null;
 };
 
+/** Deliberately does not render carrier/tracking number -- those live on the
+ * customer's admin-controlled current status, and a value baked into an
+ * email sent at one point in time can go stale. The track-order page is the
+ * one place that always reflects the real, current shipment info; the email
+ * only points there via the Order ID + track button below. */
 function renderShippingUpdateMeta(input: ShippingUpdateInput): string {
   const rows: string[] = [];
-  if (input.carrier) rows.push(renderReceiptMetaRow("Carrier", escapeHtml(input.carrier)));
-  if (input.trackingNumber) {
-    rows.push(renderReceiptMetaRow("Tracking number", escapeHtml(input.trackingNumber)));
-  }
   if (input.estimatedDeliveryStart) {
     const window = input.estimatedDeliveryEnd
       ? `${escapeHtml(input.estimatedDeliveryStart)} – ${escapeHtml(input.estimatedDeliveryEnd)}`
@@ -582,6 +581,22 @@ function renderShippingUpdateMeta(input: ShippingUpdateInput): string {
 
 function trackOrderLink(orderNumber: string): string {
   return `${getSiteUrl()}/track-order?orderId=${encodeURIComponent(orderNumber)}`;
+}
+
+/** A real button, not a text link -- opens the tracking page with the order
+ * ID already in the URL, so it looks the order up automatically instead of
+ * making the customer retype it. The Order ID row next to it (rendered
+ * separately via renderOrderIdRow) is the fallback for manual lookup if the
+ * button doesn't come through in a given email client. */
+function renderTrackOrderButton(orderNumber: string): string {
+  return `
+    <table role="presentation" cellspacing="0" cellpadding="0" style="margin:20px 0 0;">
+      <tr>
+        <td style="border-radius:6px;background:#dc2626;">
+          <a href="${trackOrderLink(orderNumber)}" style="display:inline-block;padding:12px 24px;font-size:14px;font-weight:700;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;border-radius:6px;">Track Your Order →</a>
+        </td>
+      </tr>
+    </table>`;
 }
 
 export async function sendOrderShippedEmail(input: ShippingUpdateInput): Promise<boolean> {
@@ -596,10 +611,9 @@ export async function sendOrderShippedEmail(input: ShippingUpdateInput): Promise
       <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:#374151;font-family:Arial,Helvetica,sans-serif;">
         Hi ${escapeHtml(input.customerName)}, order #${orderRef} is on its way.
       </p>
+      ${renderReceiptMetaTable(renderOrderIdRow(orderRef))}
       ${renderShippingUpdateMeta(input)}
-      <p style="margin:20px 0 0;font-size:14px;font-family:Arial,Helvetica,sans-serif;">
-        <a href="${trackOrderLink(input.orderNumber)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
-      </p>
+      ${renderTrackOrderButton(input.orderNumber)}
     `,
       `Order #${orderRef} has shipped.`,
       "Shipping update"
@@ -619,10 +633,9 @@ export async function sendOrderOutForDeliveryEmail(input: ShippingUpdateInput): 
       <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:#374151;font-family:Arial,Helvetica,sans-serif;">
         Hi ${escapeHtml(input.customerName)}, order #${orderRef} is with the local delivery service and should arrive soon.
       </p>
+      ${renderReceiptMetaTable(renderOrderIdRow(orderRef))}
       ${renderShippingUpdateMeta(input)}
-      <p style="margin:20px 0 0;font-size:14px;font-family:Arial,Helvetica,sans-serif;">
-        <a href="${trackOrderLink(input.orderNumber)}" style="color:#dc2626;font-weight:700;text-decoration:none;">Track your order →</a>
-      </p>
+      ${renderTrackOrderButton(input.orderNumber)}
     `,
       `Order #${orderRef} is out for delivery.`,
       "Shipping update"
@@ -643,9 +656,11 @@ export async function sendOrderDeliveredEmail(input: {
       `
       <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#16a34a;font-family:Arial,Helvetica,sans-serif;">Delivery confirmation</p>
       <h1 style="margin:0 0 16px;font-size:28px;color:#111827;font-family:Georgia,'Times New Roman',Times,serif;">Delivered</h1>
-      <p style="margin:0;font-size:15px;line-height:1.65;color:#374151;font-family:Arial,Helvetica,sans-serif;">
+      <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:#374151;font-family:Arial,Helvetica,sans-serif;">
         Hi ${escapeHtml(input.customerName)}, order #${orderRef} has been marked delivered. Thank you for choosing DrivoraParts.
       </p>
+      ${renderReceiptMetaTable(renderOrderIdRow(orderRef))}
+      ${renderTrackOrderButton(orderRef)}
     `,
       `Order #${orderRef} delivered.`,
       "Delivery confirmation"
