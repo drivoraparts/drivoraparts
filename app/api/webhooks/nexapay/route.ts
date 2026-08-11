@@ -41,30 +41,31 @@ function verifyNexaPaySignature(
 }
 
 /**
- * Best-effort order-reference extraction. NexaPay's real payload field
- * names haven't been confirmed against actual docs/a live sample yet --
- * this checks the common shapes payment providers use. Once a real
- * "completed" webhook has been received (see logs for the raw body), this
- * should be tightened to the exact field NexaPay actually sends.
+ * Confirmed against both NexaPay's official docs and a real "Test Webhook
+ * Delivery" send: {"order_id","payment_id","status","amount","txid",
+ * "timestamp"}. The orderId/paymentId fallback field names are kept as
+ * harmless defensive extras in case a future payload variant differs.
  */
 function extractOrderId(payload: Record<string, unknown>): string | null {
   const direct = payload.order_id ?? payload.orderId ?? payload.reference;
-  if (typeof direct === "string" && direct) return direct;
-
-  const metadata = payload.metadata;
-  if (metadata && typeof metadata === "object") {
-    const fromMeta =
-      (metadata as Record<string, unknown>).order_id ??
-      (metadata as Record<string, unknown>).orderId;
-    if (typeof fromMeta === "string" && fromMeta) return fromMeta;
-  }
-
-  return null;
+  return typeof direct === "string" && direct ? direct : null;
 }
 
+/** completed | failed | expired | pending -- per NexaPay's docs. */
 function extractStatus(payload: Record<string, unknown>): string | null {
   const status = payload.status ?? payload.event ?? payload.type;
   return typeof status === "string" ? status.toLowerCase() : null;
+}
+
+function extractPaymentId(payload: Record<string, unknown>): string | null {
+  const id = payload.payment_id ?? payload.paymentId;
+  return typeof id === "string" ? id : null;
+}
+
+/** Only present for on-chain payments -- omitted for card payments, per docs. */
+function extractTxid(payload: Record<string, unknown>): string | null {
+  const txid = payload.txid;
+  return typeof txid === "string" && txid ? txid : null;
 }
 
 export async function POST(req: Request) {
@@ -101,10 +102,10 @@ export async function POST(req: Request) {
 
   const status = extractStatus(payload);
   const orderId = extractOrderId(payload);
+  const providerPaymentId = extractPaymentId(payload);
+  const txid = extractTxid(payload);
 
-  // Logged in full so the real field shape can be confirmed from a live
-  // "Test Webhook Delivery" send -- never assumed/fabricated.
-  logInfo("nexapay_webhook_received", { ip, status, orderId, payload });
+  logInfo("nexapay_webhook_received", { ip, status, orderId, providerPaymentId, txid });
 
   if (!orderId) {
     await logActivity("warn", "nexapay.webhook_no_order_reference", { ip, status });
@@ -118,7 +119,7 @@ export async function POST(req: Request) {
   }
 
   try {
-    if (status === "completed" || status === "paid" || status === "confirmed") {
+    if (status === "completed") {
       if (order.status === "paid") {
         await logActivity("warn", "nexapay.webhook_duplicate", { ip, orderId });
         return NextResponse.json({ success: true, duplicate: true });
@@ -128,17 +129,24 @@ export async function POST(req: Request) {
       if (payment) {
         await updatePaymentRecord(payment.id, {
           status: "paid",
+          provider_payment_id: providerPaymentId ?? payment.provider_payment_id,
           metadata: {
             ...(payment.metadata ?? {}),
             paid_at: new Date().toISOString(),
             payment_method: "nexapay",
+            payment_id: providerPaymentId,
+            ...(txid ? { txid } : {}),
           },
         });
       }
 
       await handlePaidWebhook(orderId);
       await logActivity("info", "nexapay.webhook_paid", { ip, orderId });
-    } else if (status === "failed" || status === "expired" || status === "cancelled") {
+    } else if (status === "failed" || status === "expired") {
+      // expired = the 24h checkout session timed out with no payment --
+      // markOrderFailed() already releases held inventory (see
+      // restoreOrderInventory in lib/checkout/service.ts), matching NexaPay's
+      // own guidance for this status ("release any held inventory").
       const payment = await findPaymentByOrderId(orderId);
       if (payment && payment.status !== "paid") {
         await updatePaymentRecord(payment.id, { status: "failed" });
@@ -146,7 +154,10 @@ export async function POST(req: Request) {
       if (order.status !== "paid") {
         await markOrderFailed(orderId);
       }
-      await logActivity("warn", "nexapay.webhook_failed", { ip, orderId });
+      await logActivity("warn", "nexapay.webhook_failed", { ip, orderId, status });
+    } else if (status === "pending") {
+      // Checkout session created, no action needed yet -- just acknowledge.
+      await logActivity("info", "nexapay.webhook_pending", { ip, orderId });
     } else {
       await logActivity("info", "nexapay.webhook_unhandled_status", { ip, orderId, status });
     }
