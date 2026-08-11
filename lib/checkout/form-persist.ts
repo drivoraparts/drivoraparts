@@ -14,6 +14,7 @@ export type CheckoutFormDraft = {
   address: string;
   city: string;
   zip: string;
+  country: string;
 };
 
 export function readCheckoutFormDraft(): CheckoutFormDraft | null {
@@ -31,6 +32,7 @@ export function readCheckoutFormDraft(): CheckoutFormDraft | null {
       address: typeof parsed.address === "string" ? parsed.address : "",
       city: typeof parsed.city === "string" ? parsed.city : "",
       zip: typeof parsed.zip === "string" ? parsed.zip : "",
+      country: typeof parsed.country === "string" ? parsed.country : "",
     };
   } catch {
     return null;

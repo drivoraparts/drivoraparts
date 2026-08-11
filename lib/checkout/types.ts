@@ -5,6 +5,7 @@ export type CheckoutCustomerInput = {
   address?: string;
   city?: string;
   zip?: string;
+  country?: string;
   shippingAddress?: string;
 };
 

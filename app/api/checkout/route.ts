@@ -45,8 +45,12 @@ function parseCustomer(raw: unknown) {
     typeof (raw as { zip?: string }).zip === "string"
       ? (raw as { zip: string }).zip.trim()
       : "";
+  const country =
+    typeof (raw as { country?: string }).country === "string"
+      ? (raw as { country: string }).country.trim()
+      : "";
 
-  const shippingAddress = [address, [city, zip].filter(Boolean).join(", ")]
+  const shippingAddress = [address, [city, zip].filter(Boolean).join(", "), country]
     .filter(Boolean)
     .join("\n");
 
@@ -60,6 +64,7 @@ function parseCustomer(raw: unknown) {
     address: address || undefined,
     city: city || undefined,
     zip: zip || undefined,
+    country: country || undefined,
     shippingAddress: shippingAddress || undefined,
   };
 }

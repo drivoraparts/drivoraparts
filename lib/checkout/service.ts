@@ -88,6 +88,10 @@ function validateCustomer(input: CheckoutCustomerInput): void {
     throw new Error("Invalid ZIP code");
   }
 
+  if (input.country && input.country.length > 120) {
+    throw new Error("Invalid country");
+  }
+
   if (input.shippingAddress && input.shippingAddress.length > 500) {
     throw new Error("Invalid shipping address");
   }

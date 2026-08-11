@@ -32,6 +32,7 @@ export default function CheckoutPage() {
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [zip, setZip] = useState("");
+  const [country, setCountry] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   const cart = useCartStore((s) => s.items);
@@ -82,12 +83,13 @@ export default function CheckoutPage() {
     setAddress(draft.address);
     setCity(draft.city);
     setZip(draft.zip);
+    setCountry(draft.country);
   }, []);
 
   useEffect(() => {
     if (!hydrated) return;
-    writeCheckoutFormDraft({ fullName, email, phone, address, city, zip });
-  }, [hydrated, fullName, email, phone, address, city, zip]);
+    writeCheckoutFormDraft({ fullName, email, phone, address, city, zip, country });
+  }, [hydrated, fullName, email, phone, address, city, zip, country]);
 
   useEffect(() => {
     if (!hydrated || !cart.length || checkoutTracked.current) return;
@@ -137,6 +139,7 @@ export default function CheckoutPage() {
             address: address.trim(),
             city: city.trim(),
             zip: zip.trim(),
+            country: country.trim() || undefined,
           },
           provider: "nowpayments",
         }),
@@ -324,6 +327,23 @@ export default function CheckoutPage() {
                         className={inputClass}
                       />
                     </div>
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="checkout-country"
+                      className="mb-1 block text-sm text-neutral-500"
+                    >
+                      Country
+                    </label>
+                    <input
+                      id="checkout-country"
+                      type="text"
+                      autoComplete="country-name"
+                      value={country}
+                      onChange={(e) => setCountry(e.target.value)}
+                      placeholder="United States"
+                      className={inputClass}
+                    />
                   </div>
                 </div>
               </section>
