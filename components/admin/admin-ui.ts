@@ -2,12 +2,12 @@
 export const adminUi = {
   page: "min-h-screen bg-zinc-50 text-zinc-900",
   sidebar:
-    "relative z-40 flex w-64 shrink-0 flex-col border-r border-zinc-200 bg-white shadow-sm",
+    "sticky top-0 z-40 flex h-screen w-64 shrink-0 flex-col border-r border-zinc-200 bg-white shadow-sm",
   sidebarBrand: "border-b border-zinc-200 px-5 py-6",
   sidebarNav: "flex-1 space-y-1 overflow-y-auto p-3",
   sidebarFooter: "border-t border-zinc-200 p-4",
   main: "flex min-w-0 flex-1 flex-col",
-  content: "flex-1 overflow-y-auto bg-zinc-50",
+  content: "flex-1 bg-zinc-50",
   topBar:
     "sticky top-0 z-20 flex h-16 items-center justify-between border-b border-zinc-200 bg-white/95 px-6 ",
   shell: "mx-auto w-full max-w-screen-2xl px-6 py-8 lg:px-8",
