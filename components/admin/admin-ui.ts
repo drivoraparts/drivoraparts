@@ -12,7 +12,11 @@ export const adminUi = {
   sidebarNav: "flex-1 space-y-1 overflow-y-auto p-3",
   sidebarFooter: "border-t border-zinc-200 p-4",
   main: "flex min-w-0 flex-1 flex-col",
-  content: "flex-1 bg-zinc-50",
+  // overflow-x-hidden here (not on html/body) is what replaces the global
+  // rule removed from globals.css -- <main> is a sibling of the sidebar, not
+  // an ancestor, so this can't affect the sidebar's sticky positioning the
+  // way setting it on html/body did.
+  content: "flex-1 overflow-x-hidden bg-zinc-50",
   topBar:
     "sticky top-0 z-20 flex h-16 items-center justify-between border-b border-zinc-200 bg-white/95 px-6 ",
   shell: "mx-auto w-full max-w-screen-2xl px-6 py-8 lg:px-8",
