@@ -188,8 +188,9 @@ function StepMarker({ state, tone }: { state: StepState; tone: Tone }) {
   if (state === "current") {
     if (tone === "pending") {
       return (
-        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 border-[#9a6700] bg-white">
-          <SpinnerIcon className="h-3 w-3 text-[#9a6700]" />
+        <span className="relative flex h-5 w-5 shrink-0 items-center justify-center">
+          <span className="absolute inset-0 animate-spin rounded-full border-[3px] border-[#9a6700] border-t-transparent" />
+          <span className="relative h-2 w-2 rounded-full bg-[#9a6700]" />
         </span>
       );
     }
