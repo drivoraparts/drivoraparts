@@ -157,12 +157,22 @@ const TONE_STYLES: Record<Tone, { bg: string; text: string; border: string }> = 
   neutral: { bg: "bg-neutral-300", text: "text-neutral-400", border: "border-neutral-300" },
 };
 
-function stepTone(step: Step, notice: Notice): Tone {
+/**
+ * Current-step color is state-driven, not tied to which shipping status
+ * happens to be active: green means "progressing normally" regardless of
+ * stage, amber means a real Shipment Hold is active on top of that stage
+ * (see the "⚠️ Shipment On Hold" overlay below), red is reserved for
+ * something that needs attention (a control-status hold or a delivery
+ * exception). Priority: notice (red) > delivered/completed (green) >
+ * active Shipment Hold (amber) > normal current (green).
+ */
+function stepTone(step: Step, notice: Notice, shipmentHoldActive: boolean): Tone {
   if (step.state === "upcoming") return "neutral";
   if (notice && step.state === "current") return "red";
   if (step.key === "delivered") return "green";
   if (step.state === "completed") return "green";
-  return "pending";
+  if (shipmentHoldActive) return "pending";
+  return "green";
 }
 
 function SpinnerIcon({ className }: { className: string }) {
@@ -186,19 +196,10 @@ function StepMarker({ state, tone }: { state: StepState; tone: Tone }) {
     );
   }
   if (state === "current") {
-    if (tone === "pending") {
-      return (
-        <span className="relative flex h-5 w-5 shrink-0 items-center justify-center">
-          <span className="absolute inset-0 animate-spin rounded-full border-[3px] border-[#9a6700] border-t-transparent" />
-          <span className="relative h-2 w-2 rounded-full bg-[#9a6700]" />
-        </span>
-      );
-    }
     return (
-      <span
-        className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 bg-white ${styles.border}`}
-      >
-        <span className={`h-1.5 w-1.5 rounded-full ${styles.bg}`} />
+      <span className="relative flex h-5 w-5 shrink-0 items-center justify-center">
+        <span className={`absolute inset-0 animate-spin rounded-full border-[3px] border-t-transparent ${styles.border}`} />
+        <span className={`relative h-2 w-2 rounded-full ${styles.bg}`} />
       </span>
     );
   }
@@ -360,7 +361,11 @@ export default function TrackOrderForm() {
               <p className="text-[11px] font-medium uppercase tracking-wide text-neutral-500">
                 Order {result.orderNumber} · Current Status
               </p>
-              <p className="mt-0.5 text-base font-semibold text-neutral-900">
+              <p
+                className={`mt-0.5 text-base font-semibold ${
+                  result.banner?.key === "cancelled" ? "text-red-700" : "text-neutral-900"
+                }`}
+              >
                 {HEADLINE_ICONS[result.headline] ? `${HEADLINE_ICONS[result.headline]} ` : ""}
                 {result.headline}
               </p>
@@ -523,9 +528,12 @@ export default function TrackOrderForm() {
                     </p>
                     <ol className="mt-1.5">
                       {groupSteps.map((step, index) => {
-                        const tone = stepTone(step, result.notice);
+                        const shipmentHoldActive = Boolean(result.hold);
+                        const tone = stepTone(step, result.notice, shipmentHoldActive);
                         const isLast = index === groupSteps.length - 1;
-                        const connectorTone = !isLast ? stepTone(groupSteps[index + 1], result.notice) : null;
+                        const connectorTone = !isLast
+                          ? stepTone(groupSteps[index + 1], result.notice, shipmentHoldActive)
+                          : null;
                         return (
                           <li key={step.key} className="flex gap-3">
                             <div className="flex flex-col items-center">
