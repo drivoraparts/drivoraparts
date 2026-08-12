@@ -10,7 +10,7 @@ export const adminUi = {
   content: "flex-1 overflow-y-auto bg-zinc-50",
   topBar:
     "sticky top-0 z-20 flex h-16 items-center justify-between border-b border-zinc-200 bg-white/95 px-6 ",
-  shell: "px-6 py-8 lg:px-8",
+  shell: "mx-auto w-full max-w-screen-2xl px-6 py-8 lg:px-8",
   shellHeader: "mb-8 flex flex-col gap-4 border-b border-zinc-200 pb-6 sm:flex-row sm:items-center sm:justify-between",
   kicker: "text-sm font-medium uppercase tracking-widest text-red-600",
   title: "text-3xl font-semibold tracking-tight text-zinc-900",

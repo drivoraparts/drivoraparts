@@ -90,6 +90,13 @@ export async function GET(req: Request) {
         ? getProductById(order.items[0].product_id)?.weight ?? null
         : null;
 
+    // Per-field visibility toggles (admin dashboard, Shipment Information).
+    // A missing key defaults to visible=true. This only gates what this
+    // response exposes -- it never touches the underlying order columns, so
+    // the admin dashboard (which reads those columns directly) is unaffected.
+    const fieldVisible = (field: keyof typeof order.shipment_field_visibility) =>
+      order.shipment_field_visibility?.[field] !== false;
+
     return NextResponse.json(
       {
         orderNumber: order.order_number,
@@ -113,16 +120,18 @@ export async function GET(req: Request) {
             }
           : null,
         shipment: {
-          weight: singleUnitWeight,
-          carrier: order.carrier,
-          trackingNumber: order.tracking_number,
-          origin: order.shipment_origin,
-          destination: order.shipment_destination,
-          currentLocation: order.shipment_current_location,
-          currentLocationUpdatedAt: order.shipment_current_location_updated_at,
-          estimatedDeliveryStart: order.estimated_delivery_start,
-          estimatedDeliveryEnd: order.estimated_delivery_end,
-          shipmentType: order.shipment_type,
+          weight: fieldVisible("weight") ? singleUnitWeight : null,
+          carrier: fieldVisible("carrier") ? order.carrier : null,
+          trackingNumber: fieldVisible("trackingNumber") ? order.tracking_number : null,
+          origin: fieldVisible("origin") ? order.shipment_origin : null,
+          destination: fieldVisible("destination") ? order.shipment_destination : null,
+          currentLocation: fieldVisible("currentLocation") ? order.shipment_current_location : null,
+          currentLocationUpdatedAt: fieldVisible("currentLocation")
+            ? order.shipment_current_location_updated_at
+            : null,
+          estimatedDeliveryStart: fieldVisible("estimatedDelivery") ? order.estimated_delivery_start : null,
+          estimatedDeliveryEnd: fieldVisible("estimatedDelivery") ? order.estimated_delivery_end : null,
+          shipmentType: fieldVisible("shipmentType") ? order.shipment_type : null,
         },
         timeline,
       },

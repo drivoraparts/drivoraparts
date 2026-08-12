@@ -149,6 +149,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               shippingStatus={order.shipping_status}
               customerMessage={order.customer_message}
               shipmentDetailsVisible={order.shipment_details_visible}
+              shipmentFieldVisibility={order.shipment_field_visibility ?? {}}
               shippingInfo={{
                 carrier: order.carrier,
                 trackingNumber: order.tracking_number,

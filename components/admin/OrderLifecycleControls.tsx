@@ -10,6 +10,7 @@ import {
   SHIPPING_HOLD_REASON_LABELS,
   type ControlStatus,
   type OrderLifecycleStatus,
+  type ShipmentFieldKey,
   type ShippingHoldReason,
   type ShippingInfoInput,
   type ShippingStatus,
@@ -38,6 +39,33 @@ const PAYMENT_STATUS_LABELS: Record<PaymentStatus, string> = {
 };
 
 const NOTIFIABLE_SHIPPING_STATUSES: ShippingStatus[] = ["shipped", "out_for_delivery", "delivered"];
+
+/** Compact ON/OFF pill for a single Shipment Information field -- visually
+ * subordinate to the field name it sits beside, matching the existing
+ * "Show on tracking page" checkbox's role rather than a standalone control. */
+function FieldVisibilityToggle({
+  checked,
+  disabled,
+  onChange,
+}: {
+  checked: boolean;
+  disabled: boolean;
+  onChange: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onChange}
+      disabled={disabled}
+      aria-pressed={checked}
+      className={`shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-semibold tracking-wide transition-colors disabled:opacity-50 ${
+        checked ? "bg-emerald-100 text-emerald-700" : "bg-zinc-100 text-zinc-400"
+      }`}
+    >
+      {checked ? "ON" : "OFF"}
+    </button>
+  );
+}
 
 /** Converts a `datetime-local` input value (parsed as the browser's local
  * time) to an ISO string for the API, or undefined when left blank. */
@@ -328,6 +356,7 @@ export default function OrderLifecycleControls({
   shippingStatus,
   customerMessage,
   shipmentDetailsVisible,
+  shipmentFieldVisibility,
   shippingInfo,
   shippingHold,
 }: {
@@ -338,6 +367,7 @@ export default function OrderLifecycleControls({
   shippingStatus: ShippingStatus;
   customerMessage: string | null;
   shipmentDetailsVisible: boolean;
+  shipmentFieldVisibility: Partial<Record<ShipmentFieldKey, boolean>>;
   shippingInfo: {
     carrier: string | null;
     trackingNumber: string | null;
@@ -374,6 +404,32 @@ export default function OrderLifecycleControls({
       // Leave the toggle where it was -- the save failed, don't claim it changed.
     } finally {
       setDetailsVisibleLoading(false);
+    }
+  };
+
+  const [fieldVisibility, setFieldVisibility] = useState<Record<ShipmentFieldKey, boolean>>({
+    weight: shipmentFieldVisibility.weight !== false,
+    shipmentType: shipmentFieldVisibility.shipmentType !== false,
+    carrier: shipmentFieldVisibility.carrier !== false,
+    trackingNumber: shipmentFieldVisibility.trackingNumber !== false,
+    origin: shipmentFieldVisibility.origin !== false,
+    destination: shipmentFieldVisibility.destination !== false,
+    currentLocation: shipmentFieldVisibility.currentLocation !== false,
+    estimatedDelivery: shipmentFieldVisibility.estimatedDelivery !== false,
+  });
+  const [fieldToggleLoading, setFieldToggleLoading] = useState<ShipmentFieldKey | null>(null);
+
+  const toggleField = async (field: ShipmentFieldKey) => {
+    const next = !fieldVisibility[field];
+    setFieldToggleLoading(field);
+    try {
+      await patchLifecycle(orderId, { target: "shipment_field_visibility", field, visible: next });
+      setFieldVisibility((f) => ({ ...f, [field]: next }));
+      router.refresh();
+    } catch {
+      // Leave the toggle where it was -- the save failed, don't claim it changed.
+    } finally {
+      setFieldToggleLoading(null);
     }
   };
 
@@ -563,39 +619,75 @@ export default function OrderLifecycleControls({
             Manual entry — designed so these fields can later be populated automatically through a carrier API.
           </p>
           <div className="mt-2.5 grid gap-2.5 sm:grid-cols-2">
-          <label className="text-xs text-zinc-600">
-            Carrier
+          <div className="flex items-center justify-between gap-2 rounded-lg border border-zinc-200 bg-zinc-50 px-2.5 py-1.5 text-xs text-zinc-600 sm:col-span-2">
+            <span>Weight <span className="text-[10px] text-zinc-400">(from product catalog, not manually entered)</span></span>
+            <FieldVisibilityToggle
+              checked={fieldVisibility.weight}
+              disabled={fieldToggleLoading === "weight"}
+              onChange={() => toggleField("weight")}
+            />
+          </div>
+          <div className="text-xs text-zinc-600">
+            <div className="flex items-center justify-between gap-2">
+              <span>Carrier</span>
+              <FieldVisibilityToggle
+                checked={fieldVisibility.carrier}
+                disabled={fieldToggleLoading === "carrier"}
+                onChange={() => toggleField("carrier")}
+              />
+            </div>
             <input
               value={form.carrier ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, carrier: e.target.value }))}
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
               placeholder="e.g. DHL, FedEx, UPS"
             />
-          </label>
-          <label className="text-xs text-zinc-600">
-            Tracking number
+          </div>
+          <div className="text-xs text-zinc-600">
+            <div className="flex items-center justify-between gap-2">
+              <span>Tracking number</span>
+              <FieldVisibilityToggle
+                checked={fieldVisibility.trackingNumber}
+                disabled={fieldToggleLoading === "trackingNumber"}
+                onChange={() => toggleField("trackingNumber")}
+              />
+            </div>
             <input
               value={form.trackingNumber ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, trackingNumber: e.target.value }))}
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
-          </label>
-          <label className="text-xs text-zinc-600">
-            Origin
+          </div>
+          <div className="text-xs text-zinc-600">
+            <div className="flex items-center justify-between gap-2">
+              <span>Origin</span>
+              <FieldVisibilityToggle
+                checked={fieldVisibility.origin}
+                disabled={fieldToggleLoading === "origin"}
+                onChange={() => toggleField("origin")}
+              />
+            </div>
             <input
               value={form.shipmentOrigin ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentOrigin: e.target.value }))}
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
-          </label>
-          <label className="text-xs text-zinc-600">
-            Destination
+          </div>
+          <div className="text-xs text-zinc-600">
+            <div className="flex items-center justify-between gap-2">
+              <span>Destination</span>
+              <FieldVisibilityToggle
+                checked={fieldVisibility.destination}
+                disabled={fieldToggleLoading === "destination"}
+                onChange={() => toggleField("destination")}
+              />
+            </div>
             <input
               value={form.shipmentDestination ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentDestination: e.target.value }))}
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
-          </label>
+          </div>
           <label className="text-xs text-zinc-600">
             Reference number
             <input
@@ -604,42 +696,62 @@ export default function OrderLifecycleControls({
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
             />
           </label>
-          <label className="text-xs text-zinc-600">
-            Shipment type
+          <div className="text-xs text-zinc-600">
+            <div className="flex items-center justify-between gap-2">
+              <span>Shipment type</span>
+              <FieldVisibilityToggle
+                checked={fieldVisibility.shipmentType}
+                disabled={fieldToggleLoading === "shipmentType"}
+                onChange={() => toggleField("shipmentType")}
+              />
+            </div>
             <input
               value={form.shipmentType ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, shipmentType: e.target.value }))}
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
               placeholder="e.g. Standard Parcel, LTL Freight"
             />
-          </label>
-          <label className="text-xs text-zinc-600 sm:col-span-2">
-            Current location
+          </div>
+          <div className="text-xs text-zinc-600 sm:col-span-2">
+            <div className="flex items-center justify-between gap-2">
+              <span>Current location</span>
+              <FieldVisibilityToggle
+                checked={fieldVisibility.currentLocation}
+                disabled={fieldToggleLoading === "currentLocation"}
+                onChange={() => toggleField("currentLocation")}
+              />
+            </div>
             <input
               value={form.currentLocation ?? ""}
               onChange={(e) => setForm((f) => ({ ...f, currentLocation: e.target.value }))}
               className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
               placeholder="e.g. Los Angeles, CA — manually set, not live GPS"
             />
-          </label>
-          <label className="text-xs text-zinc-600">
-            Estimated delivery start
-            <input
-              type="date"
-              value={form.estimatedDeliveryStart ?? ""}
-              onChange={(e) => setForm((f) => ({ ...f, estimatedDeliveryStart: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
-            />
-          </label>
-          <label className="text-xs text-zinc-600">
-            Estimated delivery end
-            <input
-              type="date"
-              value={form.estimatedDeliveryEnd ?? ""}
-              onChange={(e) => setForm((f) => ({ ...f, estimatedDeliveryEnd: e.target.value }))}
-              className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
-            />
-          </label>
+          </div>
+          <div className="text-xs text-zinc-600 sm:col-span-2">
+            <div className="flex items-center justify-between gap-2">
+              <span>Estimated delivery</span>
+              <FieldVisibilityToggle
+                checked={fieldVisibility.estimatedDelivery}
+                disabled={fieldToggleLoading === "estimatedDelivery"}
+                onChange={() => toggleField("estimatedDelivery")}
+              />
+            </div>
+            <div className="mt-1 grid grid-cols-2 gap-2.5">
+              <input
+                type="date"
+                value={form.estimatedDeliveryStart ?? ""}
+                onChange={(e) => setForm((f) => ({ ...f, estimatedDeliveryStart: e.target.value }))}
+                className="w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
+              />
+              <input
+                type="date"
+                value={form.estimatedDeliveryEnd ?? ""}
+                onChange={(e) => setForm((f) => ({ ...f, estimatedDeliveryEnd: e.target.value }))}
+                className="w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-sm"
+              />
+            </div>
+          </div>
           <label className="text-xs text-zinc-600 sm:col-span-2">
             Internal shipment notes (never shown to customer)
             <textarea

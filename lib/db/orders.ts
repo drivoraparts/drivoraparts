@@ -66,6 +66,24 @@ export type OrderItemRecord = {
   quantity: number;
 };
 
+/**
+ * Individual Shipment Information fields the customer tracking page can
+ * render. Purely a display gate -- see shipment_field_visibility below.
+ * Only fields the public API actually surfaces (see
+ * app/api/public/track-order/route.ts) get an entry here; internal-only
+ * fields (shipment_reference, shipment_notes) are never customer-visible in
+ * the first place, so they don't need one.
+ */
+export type ShipmentFieldKey =
+  | "weight"
+  | "shipmentType"
+  | "carrier"
+  | "trackingNumber"
+  | "origin"
+  | "destination"
+  | "currentLocation"
+  | "estimatedDelivery";
+
 export type ShippingHoldReason =
   | "customs_clearance"
   | "documentation_required"
@@ -100,6 +118,7 @@ export type OrderRecord = {
   shipping_hold_note: string | null;
   shipping_hold_updated_at: string | null;
   shipment_details_visible: boolean;
+  shipment_field_visibility: Partial<Record<ShipmentFieldKey, boolean>>;
   estimated_delivery_start: string | null;
   estimated_delivery_end: string | null;
   confirmation_sent_at: string | null;
@@ -983,6 +1002,49 @@ export async function updateShipmentDetailsVisibility(
       eventType: "note",
       actor,
       note: visible ? "Shipment Details section shown to customer" : "Shipment Details section hidden from customer",
+      customerVisible: false,
+    });
+  }
+
+  return updated;
+}
+
+/**
+ * Toggles a single Shipment Information field's customer visibility,
+ * independent of the master shipment_details_visible switch and of every
+ * other field's setting. Purely a display gate on the public tracking API
+ * (see app/api/public/track-order/route.ts) -- never touches the
+ * underlying data column, so the admin always still sees/edits the real
+ * value regardless of this setting.
+ */
+export async function updateShipmentFieldVisibility(
+  id: string,
+  field: ShipmentFieldKey,
+  visible: boolean,
+  actor: string
+): Promise<OrderRecord | null> {
+  const existing = await getOrderById(id);
+  if (!existing) return null;
+
+  const nextVisibility = { ...(existing.shipment_field_visibility ?? {}), [field]: visible };
+
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ shipment_field_visibility: nextVisibility, updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "note",
+      actor,
+      note: `Shipment field "${field}" ${visible ? "shown to" : "hidden from"} customer`,
       customerVisible: false,
     });
   }

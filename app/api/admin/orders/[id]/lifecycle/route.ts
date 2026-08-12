@@ -12,10 +12,12 @@ import {
   updateCustomerMessage,
   updateOrderLifecycleStatus,
   updateShipmentDetailsVisibility,
+  updateShipmentFieldVisibility,
   updateShippingInfo,
   updateShippingStatusRecord,
   type ControlStatus,
   type OrderLifecycleStatus,
+  type ShipmentFieldKey,
   type ShippingHoldReason,
   type ShippingInfoInput,
   type ShippingStatus,
@@ -60,6 +62,17 @@ const PAYMENT_STATUSES: PaymentStatus[] = [
   "partially_refunded",
 ];
 
+const SHIPMENT_FIELD_KEYS: ShipmentFieldKey[] = [
+  "weight",
+  "shipmentType",
+  "carrier",
+  "trackingNumber",
+  "origin",
+  "destination",
+  "currentLocation",
+  "estimatedDelivery",
+];
+
 const SHIPPING_HOLD_REASONS: ShippingHoldReason[] = [
   "customs_clearance",
   "documentation_required",
@@ -78,6 +91,7 @@ type LifecycleBody = {
     | "payment_status"
     | "shipping_info"
     | "shipment_details_visibility"
+    | "shipment_field_visibility"
     | "customer_message"
     | "shipping_hold_start"
     | "shipping_hold_resume";
@@ -88,6 +102,9 @@ type LifecycleBody = {
   /** shipment_details_visibility only: show/hide the whole Shipment Details
    * section on the customer tracking page. */
   visible?: boolean;
+  /** shipment_field_visibility only: which field the `visible` flag above
+   * applies to. */
+  field?: string;
   /** shipping_status only: explicitly override the "processing must be
    * complete first" gate. Without this, starting shipping before order
    * processing is marked complete is rejected -- the admin has to
@@ -270,6 +287,27 @@ export async function PATCH(
       }
       const updated = await updateShipmentDetailsVisibility(id, body.visible, actor);
       await logAdminAudit(actor, "order.update_shipment_details_visibility", id, {
+        visible: body.visible,
+        ip,
+      });
+      return NextResponse.json(updated);
+    }
+
+    if (body.target === "shipment_field_visibility") {
+      if (typeof body.visible !== "boolean") {
+        return NextResponse.json({ error: "visible (boolean) required" }, { status: 400 });
+      }
+      if (!body.field || !SHIPMENT_FIELD_KEYS.includes(body.field as ShipmentFieldKey)) {
+        return NextResponse.json({ error: "Invalid field" }, { status: 400 });
+      }
+      const updated = await updateShipmentFieldVisibility(
+        id,
+        body.field as ShipmentFieldKey,
+        body.visible,
+        actor
+      );
+      await logAdminAudit(actor, "order.update_shipment_field_visibility", id, {
+        field: body.field,
         visible: body.visible,
         ip,
       });
