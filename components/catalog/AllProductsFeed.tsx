@@ -64,6 +64,21 @@ export default function AllProductsFeed() {
   const [query, setQuery] = useState(
     savedRef.current?.query ?? searchParams.get("q") ?? ""
   );
+  // Navigating here from the header search box (or any other `?q=` link)
+  // while already on this page doesn't remount the component -- App Router
+  // reuses it since the route pattern is unchanged, so the `useState`
+  // initializer above only ever ran once. Without this, a second search
+  // from the header silently does nothing. Track the last URL value we
+  // synced so this doesn't fight the page's own search input, which updates
+  // `query` directly without touching the URL.
+  const lastSyncedQueryParam = useRef(searchParams.get("q"));
+  useEffect(() => {
+    const urlQuery = searchParams.get("q");
+    if (urlQuery !== lastSyncedQueryParam.current) {
+      lastSyncedQueryParam.current = urlQuery;
+      setQuery(urlQuery ?? "");
+    }
+  }, [searchParams]);
   const [categoryFilter, setCategoryFilter] = useState(
     savedRef.current?.categoryFilter ?? ""
   );
