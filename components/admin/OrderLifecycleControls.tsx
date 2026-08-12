@@ -620,7 +620,7 @@ export default function OrderLifecycleControls({
           </p>
           <div className="mt-2.5 grid gap-2.5 sm:grid-cols-2">
           <div className="flex items-center justify-between gap-2 rounded-lg border border-zinc-200 bg-zinc-50 px-2.5 py-1.5 text-xs text-zinc-600 sm:col-span-2">
-            <span>Weight <span className="text-[10px] text-zinc-400">(from product catalog, not manually entered)</span></span>
+            <span className="min-w-0">Weight <span className="text-[10px] text-zinc-400">(from product catalog, not manually entered)</span></span>
             <FieldVisibilityToggle
               checked={fieldVisibility.weight}
               disabled={fieldToggleLoading === "weight"}
