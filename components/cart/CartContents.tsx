@@ -201,11 +201,25 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
     <div className="flex h-full flex-col p-6 text-neutral-900">
       <div className="mb-4 flex items-center justify-between gap-3">
         <h2 className="text-xl font-bold">{t("cart")}</h2>
-        {itemCount > 0 ? (
-          <span className="text-xs font-medium text-neutral-500">
-            {itemCount} {itemCount === 1 ? "item" : "items"}
-          </span>
-        ) : null}
+        <div className="flex items-center gap-2">
+          {itemCount > 0 ? (
+            <span className="text-xs font-medium text-neutral-500">
+              {itemCount} {itemCount === 1 ? "item" : "items"}
+            </span>
+          ) : null}
+          {onClose ? (
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Close cart"
+              // -mr-2 pulls the 44px tap target back to the panel's optical
+              // edge without shrinking it below a comfortable thumb size.
+              className="-mr-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-2xl leading-none text-neutral-500 transition hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            >
+              ×
+            </button>
+          ) : null}
+        </div>
       </div>
 
       {cart.length === 0 ? (

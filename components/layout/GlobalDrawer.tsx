@@ -1,21 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import CartDrawer from "./CartDrawer";
 import { useTranslation } from "@/hooks/useTranslation";
 
 type GlobalDrawerProps = {
   menuOpen: boolean;
   setMenuOpen: (open: boolean) => void;
-  cartOpen: boolean;
-  setCartOpen: (open: boolean) => void;
 };
 
+/** Nav menu only — the cart drawer lives in CartDrawer.tsx. */
 export default function GlobalDrawer({
   menuOpen,
   setMenuOpen,
-  cartOpen,
-  setCartOpen,
 }: GlobalDrawerProps) {
   const { t } = useTranslation();
 
@@ -93,19 +89,6 @@ export default function GlobalDrawer({
         </div>
       )}
 
-      {cartOpen && (
-        <div
-          className="fixed inset-0 z-[9999] flex justify-end bg-neutral-900/40"
-          onClick={() => setCartOpen(false)}
-        >
-          <div
-            className="h-full w-[320px] border-l border-neutral-200 bg-white shadow-xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <CartDrawer onClose={() => setCartOpen(false)} />
-          </div>
-        </div>
-      )}
     </>
   );
 }

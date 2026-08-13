@@ -4,6 +4,7 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import GlobalHeader from "./GlobalHeader";
 import GlobalDrawer from "./GlobalDrawer";
+import CartDrawer from "./CartDrawer";
 import GlobalFooter from "./GlobalFooter";
 import AnnouncementBar from "@/components/ui/AnnouncementBar";
 import CompareBar from "@/components/compare/CompareBar";
@@ -36,13 +37,11 @@ export default function LayoutShell({ children }: Props) {
         <MarketOverlay onClose={() => setMarketOpen(false)} />
       )}
 
-      {/* DRAWER */}
-      <GlobalDrawer
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-        cartOpen={cartOpen}
-        setCartOpen={setCartOpen}
-      />
+      {/* NAV DRAWER */}
+      <GlobalDrawer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+      {/* CART DRAWER */}
+      <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
 
       {/* PAGE CONTENT */}
       <main className="storefront-page box-border min-h-screen min-h-[100dvh] w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] pt-[106px] sm:pt-[114px]">
