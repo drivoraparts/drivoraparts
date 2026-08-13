@@ -42,30 +42,46 @@ export function tokenize(value: string): string[] {
 }
 
 /**
- * Levenshtein distance, abandoned as soon as it provably exceeds `max`.
- * Bounding it keeps typo correction cheap over a few thousand vocabulary
- * words -- we only care whether something is "close", never how far.
+ * Damerau-Levenshtein (optimal string alignment) distance, abandoned as soon
+ * as it provably exceeds `max`. Counting a swap of two adjacent letters as a
+ * single edit is the whole point: transpositions are the most common typo
+ * ("trubo" for "turbo", "brkae" for "brake"), and plain Levenshtein scores
+ * them as two edits, which puts them outside the budget for short words.
+ * Bounding keeps correction cheap across a few thousand vocabulary words --
+ * we only care whether something is "close", never how far.
  */
-function boundedLevenshtein(a: string, b: string, max: number): number {
+function boundedEditDistance(a: string, b: string, max: number): number {
   if (a === b) return 0;
   if (Math.abs(a.length - b.length) > max) return max + 1;
 
-  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
-  let curr = new Array<number>(b.length + 1);
+  const n = b.length;
+  let prevPrev: number[] = new Array<number>(n + 1).fill(0);
+  let prev: number[] = Array.from({ length: n + 1 }, (_, i) => i);
 
   for (let i = 1; i <= a.length; i += 1) {
+    const curr = new Array<number>(n + 1);
     curr[0] = i;
     let rowBest = curr[0];
-    for (let j = 1; j <= b.length; j += 1) {
+
+    for (let j = 1; j <= n; j += 1) {
       const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-      curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
-      if (curr[j] < rowBest) rowBest = curr[j];
+      let value = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
+
+      // Adjacent transposition, e.g. "ur" <-> "ru".
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        value = Math.min(value, prevPrev[j - 2] + 1);
+      }
+
+      curr[j] = value;
+      if (value < rowBest) rowBest = value;
     }
+
     if (rowBest > max) return max + 1;
-    [prev, curr] = [curr, prev];
+    prevPrev = prev;
+    prev = curr;
   }
 
-  return prev[b.length];
+  return prev[n];
 }
 
 /** Short words tolerate fewer edits, so "bmw" can't collapse into "bms". */
@@ -133,7 +149,7 @@ export function correctTokens(
 
     for (const word of vocabulary.list) {
       if (Math.abs(word.length - token.length) > maxEdits) continue;
-      const distance = boundedLevenshtein(token, word, maxEdits);
+      const distance = boundedEditDistance(token, word, maxEdits);
       if (distance < bestDistance) {
         bestDistance = distance;
         best = word;
