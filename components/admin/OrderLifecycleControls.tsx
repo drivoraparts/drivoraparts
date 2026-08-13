@@ -580,7 +580,7 @@ export default function OrderLifecycleControls({
       />
 
       <div className="grid gap-4 lg:grid-cols-2">
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+        <div className="min-w-0 rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
           <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Customer Message</p>
           <p className="mt-1 text-xs text-zinc-500">
             Shown on the Track Order page, separate from the status timeline. Leave blank to hide it.
@@ -606,7 +606,7 @@ export default function OrderLifecycleControls({
           ) : null}
         </div>
 
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+        <div className="min-w-0 rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
           <div className="flex items-center justify-between gap-2">
             <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Shipping Information</p>
             <label className="flex items-center gap-1.5 text-[11px] text-zinc-600">

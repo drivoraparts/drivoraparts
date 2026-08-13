@@ -101,7 +101,11 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
-        <div className="space-y-4 lg:col-span-2">
+        {/* min-w-0, like SummaryTile above: without it this column is sized to
+            its min-content -- which the selects and long strings inside drag
+            wider than the shell -- and every card below ends up hanging past
+            the right edge that the summary tiles line up against. */}
+        <div className="min-w-0 space-y-4 lg:col-span-2">
           <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
             <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Products</p>
             <ul className="mt-2.5 space-y-2.5">
@@ -172,7 +176,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
           </div>
         </div>
 
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+        <div className="min-w-0 rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
           <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Timeline</p>
           {events.length === 0 ? (
             <p className="mt-2 text-xs text-zinc-500">No events recorded yet.</p>
