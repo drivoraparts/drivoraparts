@@ -16,7 +16,15 @@ import {
   collectionPageJsonLd,
 } from "@/lib/seo";
 
-export const revalidate = 600;
+// Was `revalidate = 600` (ISR). AllProductsFeed's useSearchParams() forces a
+// dynamic hole inside this otherwise-cached page -- the CDN edge/ISR layer
+// serves the cached static shell instantly and is supposed to stream that
+// hole in fresh per request, but that combination can leave the Suspense
+// boundary stuck on its "Loading products..." fallback forever for
+// cache-served requests, independent of device, browser, or what was
+// searched. force-dynamic renders the whole page fresh every time, so that
+// boundary always resolves the same way it does on an uncached first visit.
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "All Performance Parts",
