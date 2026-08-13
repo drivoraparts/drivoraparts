@@ -39,6 +39,22 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Must come after the rule above so it wins for search URLs. Search
+      // results were inheriting that 1h edge cache + 24h stale-while-
+      // revalidate, so a CDN copy rendered by an older build kept being
+      // served long after a fix deployed -- and a browser hard-refresh
+      // doesn't bypass the CDN's own copy. Only ?q= URLs are affected; the
+      // category hubs and the plain feed keep their normal caching.
+      {
+        source: "/catalog/:path*",
+        has: [{ type: "query", key: "q" }],
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "private, no-store, max-age=0, must-revalidate",
+          },
+        ],
+      },
       {
         source: "/product/:path*",
         headers: [

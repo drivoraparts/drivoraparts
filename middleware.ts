@@ -85,19 +85,6 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(`/product-media/${rest}`, request.url), 308);
   }
 
-  // Search-result pages must never be served from the edge cache. The route's
-  // default (s-maxage=3600, stale-while-revalidate=86400) let a CDN PoP hold a
-  // given ?q= URL for an hour and keep serving it stale for a further 24h --
-  // so a copy rendered by an older, broken build kept being handed to users
-  // long after the fix deployed, and a browser hard-refresh doesn't bypass the
-  // CDN's own copy. Only ?q= URLs are affected; the cacheable category hubs
-  // and the plain /catalog/all feed keep their normal caching.
-  if (pathname.startsWith("/catalog/") && request.nextUrl.searchParams.has("q")) {
-    const response = NextResponse.next();
-    response.headers.set("Cache-Control", "private, no-store, max-age=0, must-revalidate");
-    return response;
-  }
-
   if (pathname.startsWith("/admin")) {
     if (isPublicAdminPath(pathname)) {
       authDebug("middleware", "public admin route — auth skipped", { pathname });
