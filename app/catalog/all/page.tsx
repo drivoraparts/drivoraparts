@@ -40,6 +40,7 @@ export default async function AllProductsPage({
 }) {
   const params = await searchParams;
   const initialQuery = typeof params.q === "string" ? params.q : "";
+  const isSearch = initialQuery.trim().length > 0;
 
   return (
     <>
@@ -57,21 +58,32 @@ export default async function AllProductsPage({
         ]}
       />
       <main className="min-h-screen bg-white text-neutral-900">
-        <CatalogHero />
-        <CatalogVehicleFinderSection />
-        <PopularCategoriesSection />
-        <SeasonalCollectionsSection />
-        <TrendingRail />
-        <RecentlyAddedRail />
-        <StaffPicksSection />
+        {/* A search lands here from the header, so the results have to be the
+            first thing on screen. Rendering the browse page's hero, vehicle
+            finder, category grid and editorial rails above them pushed the
+            feed ~5,500px down the page: the searcher saw marketing content,
+            no results, and reasonably concluded the search had hung. */}
+        {!isSearch ? (
+          <>
+            <CatalogHero />
+            <CatalogVehicleFinderSection />
+            <PopularCategoriesSection />
+            <SeasonalCollectionsSection />
+            <TrendingRail />
+            <RecentlyAddedRail />
+            <StaffPicksSection />
+          </>
+        ) : null}
 
         <div className="px-3 pb-6 pt-10 sm:px-6">
           <header className="mb-3 sm:mb-6">
             <h2 className="inline-block border-b-2 border-red-600 pb-1 text-xl font-bold text-neutral-900 sm:text-3xl sm:pb-2">
-              Browse Everything
+              {isSearch ? `Search results for “${initialQuery}”` : "Browse Everything"}
             </h2>
             <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
-              Every listing in the marketplace, filterable by category, brand, and price.
+              {isSearch
+                ? "Refine with the category, brand, and price filters below."
+                : "Every listing in the marketplace, filterable by category, brand, and price."}
             </p>
           </header>
           {/* No <Suspense> and no useSearchParams() inside the feed. That
@@ -84,6 +96,15 @@ export default async function AllProductsPage({
               always starts from clean state. */}
           <AllProductsFeed key={initialQuery} initialQuery={initialQuery} />
         </div>
+
+        {/* Still reachable after a search, just below the results rather than
+            buried above them. */}
+        {isSearch ? (
+          <>
+            <PopularCategoriesSection />
+            <TrendingRail />
+          </>
+        ) : null}
       </main>
     </>
   );
