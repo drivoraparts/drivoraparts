@@ -17,8 +17,10 @@ export const adminUi = {
   // an ancestor, so this can't affect the sidebar's sticky positioning the
   // way setting it on html/body did.
   content: "flex-1 overflow-x-hidden bg-zinc-50",
+  // Horizontal padding must track `shell` below, or the top bar's contents sit
+  // at a different gutter from the page content underneath it.
   topBar:
-    "sticky top-0 z-20 flex h-16 items-center justify-between border-b border-zinc-200 bg-white/95 px-6 ",
+    "sticky top-0 z-20 flex h-16 items-center justify-between border-b border-zinc-200 bg-white/95 px-6 lg:px-8",
   shell: "mx-auto w-full max-w-screen-2xl px-6 py-8 lg:px-8",
   shellHeader: "mb-8 flex flex-col gap-4 border-b border-zinc-200 pb-6 sm:flex-row sm:items-center sm:justify-between",
   kicker: "text-sm font-medium uppercase tracking-widest text-red-600",

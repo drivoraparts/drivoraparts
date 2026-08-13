@@ -238,3 +238,20 @@ img.rounded-full {
 .animate-fadeIn {
   animation: fadeIn 0.9s ease forwards;
 }
+
+/* =========================
+   ADMIN DASHBOARD
+========================= */
+
+/* Form controls carry a UA-default intrinsic minimum width (roughly `size`
+   characters wide; WebKit's date and number pickers are wider still). As grid
+   or flex items that minimum becomes `min-width: auto`, so a two-column row of
+   them refuses to shrink and forces the whole dashboard column wider than a
+   phone screen. Because <main> clips the overflow (see admin-ui.ts), the page
+   doesn't scroll -- it just renders with every card's left gutter intact and
+   its right edge sliced off at the viewport, which reads as the whole page
+   leaning right. Every admin control is already sized by its container
+   (`w-full`), so letting them shrink changes no intended layout. */
+.admin-theme :is(input, select, textarea) {
+  min-width: 0;
+}

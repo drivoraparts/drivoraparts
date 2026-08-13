@@ -136,7 +136,11 @@ function StatusCard({
   };
 
   return (
-    <div className="rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm">
+    // min-w-0: this card is a grid item, so without it the column is sized to
+    // the card's min-content -- which the <select> below drags up to its
+    // longest option ("Awaiting Carrier Pickup Confirmation"). On a phone that
+    // pushes the card wider than the shell and its right edge gets sliced off.
+    <div className="min-w-0 rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm">
       <div className="flex items-center justify-between gap-2">
         <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">{title}</p>
         <StatusPill value={currentValue} label={labels[currentValue]?.toLowerCase()} size="xs" />
