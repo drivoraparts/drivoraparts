@@ -41,6 +41,8 @@ type ApiResponse = {
   page: number;
   limit: number;
   hasMore: boolean;
+  /** Present when typo correction rewrote the query ("trubo" -> "turbo"). */
+  correctedQuery?: string | null;
 };
 
 function readSavedState(): ListScrollState | null {
@@ -89,6 +91,10 @@ export default function AllProductsFeed({
   const [hasMore, setHasMore] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [correctedQuery, setCorrectedQuery] = useState<string | null>(null);
+  /** The query the displayed results actually belong to, so the empty state
+   * quotes what was searched rather than whatever is currently typed. */
+  const [resultsQuery, setResultsQuery] = useState(initialQuery);
 
   const filteredBrands = useMemo(
     () =>
@@ -163,6 +169,7 @@ export default function AllProductsFeed({
         );
         setTotal(data.total);
         setHasMore(data.hasMore);
+        setCorrectedQuery(data.correctedQuery ?? null);
       } catch {
         if (generation === requestGenerationRef.current) setError(true);
       } finally {
@@ -244,6 +251,8 @@ export default function AllProductsFeed({
         setProducts(data.products);
         setTotal(data.total);
         setHasMore(data.hasMore);
+        setCorrectedQuery(data.correctedQuery ?? null);
+        setResultsQuery(query);
         setPage(1);
       } catch {
         // A stuck multi-page restore (see the loop above) or any other
@@ -341,9 +350,20 @@ export default function AllProductsFeed({
           />
         </div>
 
-        <p className="text-xs text-neutral-500">
-          Showing {products.length} of {total.toLocaleString()} products
-        </p>
+        <div className="space-y-0.5">
+          {correctedQuery && products.length > 0 ? (
+            <p className="text-xs text-neutral-700">
+              Showing results for{" "}
+              <span className="font-semibold text-neutral-900">{correctedQuery}</span>
+              {resultsQuery ? (
+                <span className="text-neutral-500"> — searched for “{resultsQuery}”</span>
+              ) : null}
+            </p>
+          ) : null}
+          <p className="text-xs text-neutral-500">
+            Showing {products.length} of {total.toLocaleString()} products
+          </p>
+        </div>
       </div>
 
       {loading && products.length === 0 ? (
@@ -360,7 +380,21 @@ export default function AllProductsFeed({
           </button>
         </div>
       ) : products.length === 0 ? (
-        <p className="text-sm text-gray-500">No products match your search.</p>
+        <div className="text-sm text-gray-600">
+          <p>
+            No products found
+            {resultsQuery ? (
+              <>
+                {" "}for <span className="font-semibold text-neutral-900">“{resultsQuery}”</span>
+              </>
+            ) : null}
+            .
+          </p>
+          <p className="mt-1 text-gray-500">
+            Try a broader term, check the spelling, or clear the category and
+            brand filters.
+          </p>
+        </div>
       ) : (
         <>
           <div className="grid grid-cols-3 gap-1.5 sm:gap-3 md:gap-4">

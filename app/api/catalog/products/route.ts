@@ -2,16 +2,36 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   getAllProducts,
   getBrandBySlug,
+  getCategory,
   getProductThumbnail,
 } from "@/lib/inventory";
 import {
   matchesPriceFilter,
   type PriceFilterValue,
 } from "@/lib/catalog/price-filters";
+import {
+  buildVocabulary,
+  searchProducts,
+  type SearchVocabulary,
+} from "@/lib/catalog/search";
 
 const DEFAULT_LIMIT = 48;
 const MAX_LIMIT = 96;
 const NEW_BADGE_WINDOW_DAYS = 14;
+
+const brandName = (slug: string) => getBrandBySlug(slug)?.name ?? slug;
+const categoryName = (slug: string) => getCategory(slug)?.name ?? slug;
+
+// The catalog is a static bundled array, so the typo-correction vocabulary is
+// identical for every request -- build it once on first search rather than
+// rescanning ~1,800 products each time.
+let cachedVocabulary: SearchVocabulary | null = null;
+function getVocabulary(): SearchVocabulary {
+  if (!cachedVocabulary) {
+    cachedVocabulary = buildVocabulary(getAllProducts(), brandName, categoryName);
+  }
+  return cachedVocabulary;
+}
 
 export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
@@ -26,21 +46,11 @@ export async function GET(request: NextRequest) {
   const priceFilter = (params.get("price") || "all") as PriceFilterValue;
   const sort = params.get("sort") || "newest";
 
-  // Newest-first — products without a createdAt (most of the legacy catalog)
-  // sort to the back as if timestamped 0, so any newly added product with a
-  // real createdAt automatically surfaces at the top of All Products.
   let items = [...getAllProducts()];
 
-  if (sort === "price-asc") {
-    items.sort((a, b) => a.price - b.price);
-  } else if (sort === "price-desc") {
-    items.sort((a, b) => b.price - a.price);
-  } else if (sort === "name-asc") {
-    items.sort((a, b) => a.name.localeCompare(b.name));
-  } else {
-    items.sort((a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0));
-  }
-
+  // Narrow by the explicit filters first so search only ranks candidates the
+  // customer can actually see, and so fitment/category filtering keeps
+  // working exactly as before alongside a query.
   if (category) {
     items = items.filter((p) => p.category === category);
   }
@@ -49,33 +59,36 @@ export async function GET(request: NextRequest) {
     items = items.filter((p) => p.brand === brand);
   }
 
-  if (query) {
-    // Match each word independently (AND across words, OR across fields)
-    // rather than the whole query as one literal substring -- the Shop by
-    // Vehicle finder joins Year/Make/Model/Engine into a single string
-    // (e.g. "2020 Toyota Supra 2JZ"), and requiring that exact phrase to
-    // appear verbatim in a product's name matched almost nothing, since
-    // real product names are never formatted that way. fitment is included
-    // since that's specifically where make/model/engine compatibility text
-    // lives (e.g. "Toyota Supra MK4 (2JZ-GTE)").
-    const terms = query.split(/\s+/).filter(Boolean);
-    items = items.filter((product) => {
-      const brandName =
-        getBrandBySlug(product.brand)?.name ?? product.brand;
-      const haystack = [
-        product.name,
-        brandName,
-        product.category,
-        product.fitment ?? "",
-      ]
-        .join(" ")
-        .toLowerCase();
-      return terms.every((term) => haystack.includes(term));
-    });
-  }
-
   if (priceFilter !== "all") {
     items = items.filter((p) => matchesPriceFilter(p.price, priceFilter));
+  }
+
+  // Ranked, typo-tolerant search (see lib/catalog/search.ts). Returns items
+  // already ordered by relevance, plus the corrected query when a token was
+  // a typo ("trubo" -> "turbo") so the UI can say what it searched for.
+  let correctedQuery: string | null = null;
+  if (query) {
+    const result = searchProducts(items, query, {
+      getBrandName: brandName,
+      getCategoryName: categoryName,
+      vocabulary: getVocabulary(),
+    });
+    items = result.items;
+    correctedQuery = result.correctedQuery;
+  }
+
+  // Explicit sorts always win. Otherwise a query keeps its relevance order
+  // (re-sorting by date would throw the ranking away), and an unfiltered
+  // browse falls back to newest-first -- products without a createdAt sort
+  // to the back as if timestamped 0, so newly added listings surface first.
+  if (sort === "price-asc") {
+    items.sort((a, b) => a.price - b.price);
+  } else if (sort === "price-desc") {
+    items.sort((a, b) => b.price - a.price);
+  } else if (sort === "name-asc") {
+    items.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (!query) {
+    items.sort((a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0));
   }
 
   const total = items.length;
@@ -99,5 +112,9 @@ export async function GET(request: NextRequest) {
     page,
     limit,
     hasMore: start + limit < total,
+    /** Set only when typo correction rewrote the query, so the UI can show
+     * "Showing results for X" instead of silently searching for something
+     * the customer didn't type. */
+    correctedQuery,
   });
 }
