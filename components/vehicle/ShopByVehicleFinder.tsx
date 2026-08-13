@@ -46,9 +46,14 @@ export default function ShopByVehicleFinder({
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    const query = [year, make, model.trim(), engine.trim()]
-      .filter(Boolean)
-      .join(" ");
+    // Year isn't included: the catalog has no structured year-range data,
+    // so a specific model year almost never appears literally in a
+    // product's name/fitment text, and folding it into the search terms
+    // made nearly every real fitment match fail (e.g. "2020 Toyota Supra
+    // 2JZ" matched nothing, even though "Toyota Supra 2JZ" alone matches a
+    // real product). Make/Model/Engine are much more likely to appear in
+    // fitment text, so those still drive the search.
+    const query = [make, model.trim(), engine.trim()].filter(Boolean).join(" ");
     router.push(
       query ? `/catalog/all?q=${encodeURIComponent(query)}` : "/catalog/all"
     );

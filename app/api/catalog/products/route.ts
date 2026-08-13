@@ -50,14 +50,27 @@ export async function GET(request: NextRequest) {
   }
 
   if (query) {
+    // Match each word independently (AND across words, OR across fields)
+    // rather than the whole query as one literal substring -- the Shop by
+    // Vehicle finder joins Year/Make/Model/Engine into a single string
+    // (e.g. "2020 Toyota Supra 2JZ"), and requiring that exact phrase to
+    // appear verbatim in a product's name matched almost nothing, since
+    // real product names are never formatted that way. fitment is included
+    // since that's specifically where make/model/engine compatibility text
+    // lives (e.g. "Toyota Supra MK4 (2JZ-GTE)").
+    const terms = query.split(/\s+/).filter(Boolean);
     items = items.filter((product) => {
       const brandName =
         getBrandBySlug(product.brand)?.name ?? product.brand;
-      return (
-        product.name.toLowerCase().includes(query) ||
-        brandName.toLowerCase().includes(query) ||
-        product.category.toLowerCase().includes(query)
-      );
+      const haystack = [
+        product.name,
+        brandName,
+        product.category,
+        product.fitment ?? "",
+      ]
+        .join(" ")
+        .toLowerCase();
+      return terms.every((term) => haystack.includes(term));
     });
   }
 
