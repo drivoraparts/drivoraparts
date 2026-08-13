@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
+
 import AllProductsFeed from "@/components/catalog/AllProductsFeed";
 import CatalogHero from "@/components/catalog/CatalogHero";
 import PopularCategoriesSection from "@/components/catalog/PopularCategoriesSection";
@@ -33,7 +33,14 @@ export const metadata: Metadata = buildPageMetadata({
   path: routes.all,
 });
 
-export default function AllProductsPage() {
+export default async function AllProductsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string | string[] }>;
+}) {
+  const params = await searchParams;
+  const initialQuery = typeof params.q === "string" ? params.q : "";
+
   return (
     <>
       <JsonLdScript
@@ -67,9 +74,15 @@ export default function AllProductsPage() {
               Every listing in the marketplace, filterable by category, brand, and price.
             </p>
           </header>
-          <Suspense fallback={<p className="text-sm text-gray-500">Loading products…</p>}>
-            <AllProductsFeed />
-          </Suspense>
+          {/* No <Suspense> and no useSearchParams() inside the feed. That
+              combination put the feed in its own streamed Suspense island,
+              and in production that island's HTML was delivered but never
+              hydrated -- so its effects never ran, no products were ever
+              fetched, and it sat on "Loading products..." forever for every
+              visitor. The query now comes from the server as a prop, and
+              `key` remounts the feed whenever it changes so a new search
+              always starts from clean state. */}
+          <AllProductsFeed key={initialQuery} initialQuery={initialQuery} />
         </div>
       </main>
     </>

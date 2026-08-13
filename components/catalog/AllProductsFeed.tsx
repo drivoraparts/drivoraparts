@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
+
 import { categories } from "@/lib/inventory/categories";
 import { brands } from "@/lib/inventory/brands";
 import AllProductsGridCard, {
@@ -50,7 +50,16 @@ function readSavedState(): ListScrollState | null {
   return saved;
 }
 
-export default function AllProductsFeed() {
+export default function AllProductsFeed({
+  initialQuery = "",
+}: {
+  /** Supplied by the server page from ?q=. Deliberately a prop rather than
+   * useSearchParams(): that hook requires this component to sit inside its
+   * own <Suspense> boundary, and in production that streamed island's HTML
+   * arrived but never hydrated, so no effect here ever ran. The page
+   * remounts this component via `key` when the query changes. */
+  initialQuery?: string;
+}) {
   // Deliberately NOT read here (e.g. useRef(readSavedState())): sessionStorage
   // only exists in the browser, so a value read during the render that also
   // has to match server-rendered HTML would come back empty on the server
@@ -68,24 +77,8 @@ export default function AllProductsFeed() {
   // detect it's stale and discard its response instead of appending
   // mismatched products onto the newly-filtered grid.
   const requestGenerationRef = useRef(0);
-  const searchParams = useSearchParams();
 
-  const [query, setQuery] = useState(searchParams.get("q") ?? "");
-  // Navigating here from the header search box (or any other `?q=` link)
-  // while already on this page doesn't remount the component -- App Router
-  // reuses it since the route pattern is unchanged, so the `useState`
-  // initializer above only ever ran once. Without this, a second search
-  // from the header silently does nothing. Track the last URL value we
-  // synced so this doesn't fight the page's own search input, which updates
-  // `query` directly without touching the URL.
-  const lastSyncedQueryParam = useRef(searchParams.get("q"));
-  useEffect(() => {
-    const urlQuery = searchParams.get("q");
-    if (urlQuery !== lastSyncedQueryParam.current) {
-      lastSyncedQueryParam.current = urlQuery;
-      setQuery(urlQuery ?? "");
-    }
-  }, [searchParams]);
+  const [query, setQuery] = useState(initialQuery);
   const [categoryFilter, setCategoryFilter] = useState("");
   const [brandFilter, setBrandFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
@@ -201,10 +194,13 @@ export default function AllProductsFeed() {
       setError(false);
 
       // First run only: now that hydration is done, it's safe to read
-      // sessionStorage. If a matching saved state exists, apply it and
-      // bail -- the filter-state changes below give fetchPage a new
-      // identity, which re-triggers this same effect (via the dependency
-      // array) with fetchPage now reflecting the restored filters.
+      // sessionStorage and re-apply the filters the visitor had when they
+      // left. Deliberately falls through to the fetch below rather than
+      // returning to wait for a re-trigger: if every restored value already
+      // equals current state, React bails out of the re-render, fetchPage
+      // keeps its identity, this effect never runs again and nothing is
+      // ever fetched. Falling through, the fetch either uses those same
+      // (identical) values, or runs once more when the state change lands.
       if (!restoreCheckedRef.current) {
         restoreCheckedRef.current = true;
         const saved = readSavedState();
@@ -216,8 +212,6 @@ export default function AllProductsFeed() {
           setBrandFilter(saved.brandFilter ?? "");
           setPriceFilter((saved.priceFilter as PriceFilterValue) ?? "all");
           setSortFilter(saved.sortFilter ?? "newest");
-          setLoading(false);
-          return;
         }
       }
 
