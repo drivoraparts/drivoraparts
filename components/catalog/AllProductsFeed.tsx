@@ -96,6 +96,7 @@ export default function AllProductsFeed() {
   const [total, setTotal] = useState(0);
   const [hasMore, setHasMore] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   const filteredBrands = useMemo(
     () =>
@@ -144,6 +145,9 @@ export default function AllProductsFeed() {
     if (sortFilter !== "newest") params.set("sort", sortFilter);
 
     const res = await fetch(`/api/catalog/products?${params.toString()}`);
+    if (!res.ok) {
+      throw new Error(`Catalog request failed (${res.status})`);
+    }
     return (await res.json()) as ApiResponse;
   }, [query, categoryFilter, brandFilter, priceFilter, sortFilter]);
 
@@ -151,21 +155,27 @@ export default function AllProductsFeed() {
     async (pageNum: number, append: boolean) => {
       const generation = requestGenerationRef.current;
       setLoading(true);
-      const data = await fetchPage(pageNum);
+      setError(false);
+      try {
+        const data = await fetchPage(pageNum);
 
-      // The active filters changed (a new load() ran) while this request
-      // was in flight — its results belong to a filter set that's no
-      // longer displayed, so discard them instead of appending/replacing.
-      if (generation !== requestGenerationRef.current) {
-        return;
+        // The active filters changed (a new load() ran) while this request
+        // was in flight — its results belong to a filter set that's no
+        // longer displayed, so discard them instead of appending/replacing.
+        if (generation !== requestGenerationRef.current) {
+          return;
+        }
+
+        setProducts((prev) =>
+          append ? [...prev, ...data.products] : data.products
+        );
+        setTotal(data.total);
+        setHasMore(data.hasMore);
+      } catch {
+        if (generation === requestGenerationRef.current) setError(true);
+      } finally {
+        if (generation === requestGenerationRef.current) setLoading(false);
       }
-
-      setProducts((prev) =>
-        append ? [...prev, ...data.products] : data.products
-      );
-      setTotal(data.total);
-      setHasMore(data.hasMore);
-      setLoading(false);
     },
     [fetchPage]
   );
@@ -189,38 +199,50 @@ export default function AllProductsFeed() {
 
     async function load() {
       setLoading(true);
+      setError(false);
 
-      if (restorePendingRef.current && savedRef.current) {
-        const targetPage = savedRef.current.page;
-        const first = await fetchPage(1);
-        if (cancelled) return;
-
-        let merged = [...first.products];
-        for (let p = 2; p <= targetPage; p += 1) {
-          const next = await fetchPage(p);
+      try {
+        if (restorePendingRef.current && savedRef.current) {
+          const targetPage = savedRef.current.page;
+          const first = await fetchPage(1);
           if (cancelled) return;
-          merged = [...merged, ...next.products];
+
+          let merged = [...first.products];
+          for (let p = 2; p <= targetPage; p += 1) {
+            const next = await fetchPage(p);
+            if (cancelled) return;
+            merged = [...merged, ...next.products];
+          }
+
+          setProducts(merged);
+          setTotal(first.total);
+          setHasMore(targetPage * PAGE_SIZE < first.total);
+          setPage(targetPage);
+          restorePendingRef.current = false;
+          restoreScroll(savedRef.current);
+          return;
         }
 
-        setProducts(merged);
-        setTotal(first.total);
-        setHasMore(targetPage * PAGE_SIZE < first.total);
-        setPage(targetPage);
-        setLoading(false);
-        restorePendingRef.current = false;
-        restoreScroll(savedRef.current);
-        return;
+        setPage(1);
+        setProducts([]);
+        const data = await fetchPage(1);
+        if (cancelled) return;
+        setProducts(data.products);
+        setTotal(data.total);
+        setHasMore(data.hasMore);
+        setPage(1);
+      } catch {
+        // A stuck multi-page restore (see the loop above) or any other
+        // fetch failure used to leave this stuck on "Loading products…"
+        // forever, with no error and no way to recover -- surface it and
+        // let the retry button below fall back to a normal page-1 load.
+        if (!cancelled) {
+          restorePendingRef.current = false;
+          setError(true);
+        }
+      } finally {
+        if (!cancelled) setLoading(false);
       }
-
-      setPage(1);
-      setProducts([]);
-      const data = await fetchPage(1);
-      if (cancelled) return;
-      setProducts(data.products);
-      setTotal(data.total);
-      setHasMore(data.hasMore);
-      setPage(1);
-      setLoading(false);
     }
 
     void load();
@@ -312,6 +334,17 @@ export default function AllProductsFeed() {
 
       {loading && products.length === 0 ? (
         <p className="text-sm text-gray-500">Loading products…</p>
+      ) : error && products.length === 0 ? (
+        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          <p>Couldn&apos;t load products. Please try again.</p>
+          <button
+            type="button"
+            onClick={() => void fetchProducts(1, false)}
+            className="mt-2 rounded-lg bg-red-600 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-red-700"
+          >
+            Try again
+          </button>
+        </div>
       ) : products.length === 0 ? (
         <p className="text-sm text-gray-500">No products match your search.</p>
       ) : (
