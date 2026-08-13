@@ -39,15 +39,15 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Must come after the rule above so it wins for search URLs. Search
-      // results were inheriting that 1h edge cache + 24h stale-while-
-      // revalidate, so a CDN copy rendered by an older build kept being
-      // served long after a fix deployed -- and a browser hard-refresh
-      // doesn't bypass the CDN's own copy. Only ?q= URLs are affected; the
-      // category hubs and the plain feed keep their normal caching.
+      // Must come after the rule above so it wins for this one path. Scoped
+      // by path rather than `has: [{ type: "query", key: "q" }]` because the
+      // Cloudflare adapter doesn't honour `has`, so a query-conditional rule
+      // silently applied to every /catalog/* URL and left the category hubs
+      // uncached too. Search only ever runs on /catalog/all, and that page is
+      // force-dynamic anyway, so keeping just it uncached costs nothing while
+      // the hubs keep their full 1h edge cache.
       {
-        source: "/catalog/:path*",
-        has: [{ type: "query", key: "q" }],
+        source: "/catalog/all",
         headers: [
           {
             key: "Cache-Control",
