@@ -51,8 +51,17 @@ function readSavedState(): ListScrollState | null {
 }
 
 export default function AllProductsFeed() {
-  const savedRef = useRef(readSavedState());
-  const restorePendingRef = useRef(Boolean(savedRef.current));
+  // Deliberately NOT read here (e.g. useRef(readSavedState())): sessionStorage
+  // only exists in the browser, so a value read during the render that also
+  // has to match server-rendered HTML would come back empty on the server
+  // and (whenever a matching saved state actually exists) non-empty on the
+  // client's hydration pass -- a hydration mismatch that can silently break
+  // this subtree without necessarily throwing a catchable error. Populated
+  // for real inside the load() effect below instead, which only ever runs
+  // client-side, after hydration.
+  const savedRef = useRef<ListScrollState | null>(null);
+  const restorePendingRef = useRef(false);
+  const restoreCheckedRef = useRef(false);
   const restoredScrollRef = useRef(false);
   // Bumped whenever the active filters change (see the load() effect below)
   // so an in-flight "Load more" request started under the old filters can
@@ -61,9 +70,7 @@ export default function AllProductsFeed() {
   const requestGenerationRef = useRef(0);
   const searchParams = useSearchParams();
 
-  const [query, setQuery] = useState(
-    savedRef.current?.query ?? searchParams.get("q") ?? ""
-  );
+  const [query, setQuery] = useState(searchParams.get("q") ?? "");
   // Navigating here from the header search box (or any other `?q=` link)
   // while already on this page doesn't remount the component -- App Router
   // reuses it since the route pattern is unchanged, so the `useState`
@@ -79,19 +86,11 @@ export default function AllProductsFeed() {
       setQuery(urlQuery ?? "");
     }
   }, [searchParams]);
-  const [categoryFilter, setCategoryFilter] = useState(
-    savedRef.current?.categoryFilter ?? ""
-  );
-  const [brandFilter, setBrandFilter] = useState(
-    savedRef.current?.brandFilter ?? ""
-  );
-  const [priceFilter, setPriceFilter] = useState<PriceFilterValue>(
-    (savedRef.current?.priceFilter as PriceFilterValue) ?? "all"
-  );
-  const [sortFilter, setSortFilter] = useState(
-    savedRef.current?.sortFilter ?? "newest"
-  );
-  const [page, setPage] = useState(savedRef.current?.page ?? 1);
+  const [categoryFilter, setCategoryFilter] = useState("");
+  const [brandFilter, setBrandFilter] = useState("");
+  const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
+  const [sortFilter, setSortFilter] = useState("newest");
+  const [page, setPage] = useState(1);
   const [products, setProducts] = useState<CatalogProductCardData[]>([]);
   const [total, setTotal] = useState(0);
   const [hasMore, setHasMore] = useState(false);
@@ -200,6 +199,27 @@ export default function AllProductsFeed() {
     async function load() {
       setLoading(true);
       setError(false);
+
+      // First run only: now that hydration is done, it's safe to read
+      // sessionStorage. If a matching saved state exists, apply it and
+      // bail -- the filter-state changes below give fetchPage a new
+      // identity, which re-triggers this same effect (via the dependency
+      // array) with fetchPage now reflecting the restored filters.
+      if (!restoreCheckedRef.current) {
+        restoreCheckedRef.current = true;
+        const saved = readSavedState();
+        if (saved) {
+          savedRef.current = saved;
+          restorePendingRef.current = true;
+          setQuery(saved.query ?? "");
+          setCategoryFilter(saved.categoryFilter ?? "");
+          setBrandFilter(saved.brandFilter ?? "");
+          setPriceFilter((saved.priceFilter as PriceFilterValue) ?? "all");
+          setSortFilter(saved.sortFilter ?? "newest");
+          setLoading(false);
+          return;
+        }
+      }
 
       try {
         if (restorePendingRef.current && savedRef.current) {
