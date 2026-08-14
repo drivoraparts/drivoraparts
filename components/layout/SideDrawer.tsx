@@ -16,8 +16,15 @@ type SideDrawerProps = {
   closeLabel: string;
   /** Optional content beside the heading, e.g. a cart item count. */
   headerAside?: ReactNode;
+  /**
+   * Panel width. Defaults to the cart's, which needs room for product rows;
+   * a menu of short links wants to sit closer to its text than that.
+   */
+  widthClassName?: string;
   children: ReactNode;
 };
+
+const DEFAULT_WIDTH = "w-[88%] max-w-[420px] sm:w-[400px]";
 
 /**
  * Shared slide-over shell for the cart and nav drawers. The mechanics below
@@ -32,6 +39,7 @@ export default function SideDrawer({
   title,
   closeLabel,
   headerAside,
+  widthClassName = DEFAULT_WIDTH,
   children,
 }: SideDrawerProps) {
   // `mounted` keeps the panel in the DOM for the length of the closing slide;
@@ -161,7 +169,7 @@ export default function SideDrawer({
         // behind is still there.
         className={`absolute top-0 ${
           isLeft ? "left-0 border-r" : "right-0 border-l"
-        } flex h-full w-[88%] max-w-[420px] flex-col border-neutral-200 bg-white shadow-xl outline-none transition-transform duration-300 ease-out sm:w-[400px] ${
+        } ${widthClassName} flex h-full flex-col border-neutral-200 bg-white shadow-xl outline-none transition-transform duration-300 ease-out ${
           visible ? "translate-x-0" : closedPosition
         }`}
       >

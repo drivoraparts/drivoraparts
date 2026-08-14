@@ -47,6 +47,11 @@ export default function GlobalDrawer({
       side="left"
       title={t("navTitle")}
       closeLabel="Close menu"
+      // Sits just past the longest link ("About DrivoraParts", ~134px) rather
+      // than running to the cart drawer's width -- these labels are short, so
+      // a wider panel is mostly empty white and swallows a phone screen. The
+      // 80% cap keeps a backdrop strip visible on very narrow devices.
+      widthClassName="w-[240px] max-w-[80%]"
     >
       <nav className="flex-1 overflow-y-auto p-5">
         <div className="flex flex-col gap-6 text-neutral-700">
