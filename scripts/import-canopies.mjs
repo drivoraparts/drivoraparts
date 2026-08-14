@@ -34,9 +34,12 @@ function slugify(name) {
 }
 
 function buildDescription(name, fitment, body = "") {
+  // No material claim in the fallback: these canopies are variously aluminium
+  // and composite, and the feed carries no material field, so naming one would
+  // be a guess the customer can't verify. Pass a real `body` to state it.
   const intro =
     body ||
-    `${name} — lock-ready aluminium or composite ute/truck canopy engineered for secure cargo storage, roof load capacity, and clean OEM-style fitment.`;
+    `${name} — lock-ready ute/truck canopy engineered for secure cargo storage, roof load capacity, and clean OEM-style fitment.`;
   return `${name}
 
 ${intro}
