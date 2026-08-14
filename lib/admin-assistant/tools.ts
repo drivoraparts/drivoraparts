@@ -1,5 +1,7 @@
 import { EMPTY_ORDER_STATS, EMPTY_PAYMENT_STATS } from "@/lib/admin/fallbacks";
 import { getAnalyticsSummary } from "@/lib/analytics";
+import { listAnalyticsEvents } from "@/lib/db/analytics";
+import { getOrderByNumber } from "@/lib/db/orders";
 import { getInventoryAlerts, getInventoryStats } from "@/lib/db/inventory";
 import { getOrderStats, listOrders } from "@/lib/db/orders";
 import { getPaymentStats, listPayments } from "@/lib/db/payments";
@@ -60,6 +62,60 @@ export async function getRecentOrders(limit = 10) {
     customer: order.customer?.email ?? "unknown",
     createdAt: order.created_at,
   }));
+}
+
+/**
+ * How many events the per-product counts look back over. Matches the window
+ * getAnalyticsSummary() uses, so a product's figures reconcile with the
+ * dashboard totals rather than disagreeing with them.
+ */
+const PRODUCT_EVENT_WINDOW = 2000;
+
+/**
+ * Engagement for one specific product.
+ *
+ * The ranking report only keeps its top 15, so a product missing from it has
+ * not necessarily seen zero activity — it may simply be 16th. Counting the
+ * event stream directly is what lets the assistant tell those two apart
+ * instead of reporting an absence as a zero.
+ */
+export async function getProductActivity(productId: number) {
+  const events = await safeQuery(
+    () => listAnalyticsEvents(PRODUCT_EVENT_WINDOW),
+    [],
+    "assistant-product-activity"
+  );
+
+  let views = 0;
+  let cartAdds = 0;
+  let checkouts = 0;
+  let orders = 0;
+
+  for (const event of events) {
+    const payload = (event.payload ?? {}) as Record<string, unknown>;
+    if (Number(payload.productId) !== productId) continue;
+
+    if (event.name === "product_view") views += 1;
+    else if (event.name === "add_to_cart") cartAdds += 1;
+    else if (event.name === "checkout_start") checkouts += 1;
+    else if (event.name === "order_completed") orders += 1;
+  }
+
+  const oldest = events.at(-1)?.created_at ?? null;
+
+  return {
+    views,
+    cartAdds,
+    checkouts,
+    orders,
+    /** True when the window is saturated, so older activity exists but is unread. */
+    windowSaturated: events.length >= PRODUCT_EVENT_WINDOW,
+    windowOldest: oldest,
+  };
+}
+
+export async function findOrderByNumber(orderNumber: string) {
+  return safeQuery(() => getOrderByNumber(orderNumber), null, "assistant-order-lookup");
 }
 
 export async function getInventoryStatus() {

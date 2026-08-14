@@ -3,7 +3,17 @@ import type { AssistantIntent } from "./types";
 const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = [
   {
     intent: "users",
-    patterns: [/live user/, /online/, /active user/, /traffic now/, /visitors/],
+    patterns: [
+      /live user/,
+      /online/,
+      /active user/,
+      /traffic now/,
+      /visitors/,
+      /which page/,
+      /most active/,
+      /active page/,
+      /browsing/,
+    ],
   },
   {
     intent: "inventory",
@@ -36,7 +46,14 @@ const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = 
   },
   {
     intent: "products",
-    patterns: [/top product/, /best seller/, /trending product/, /hot product/],
+    patterns: [
+      /top product/,
+      /best seller/,
+      /trending/,
+      /hot product/,
+      /which product/,
+      /what product/,
+    ],
   },
   {
     intent: "optimization",
@@ -44,11 +61,27 @@ const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = 
   },
   {
     intent: "strategy",
-    patterns: [/strategy/, /coo/, /what should i do/, /priorit/, /decision brain/, /why should/],
+    patterns: [
+      /strategy/,
+      /coo/,
+      /what should i do/,
+      /priorit/,
+      /decision brain/,
+      /why should/,
+      /decision/,
+    ],
   },
   {
     intent: "decisions",
-    patterns: [/daily decision/, /today's plan/, /top action/, /what to scale/, /what to stop/],
+    patterns: [
+      /daily decision/,
+      /today's plan/,
+      /todays plan/,
+      /top action/,
+      /scale/,
+      /what to stop/,
+      /should we stop/,
+    ],
   },
   {
     intent: "forecast",
@@ -56,11 +89,33 @@ const INTENT_PATTERNS: Array<{ intent: AssistantIntent; patterns: RegExp[] }> = 
   },
   {
     intent: "revenue",
-    patterns: [/revenue/, /sales/, /conversion/, /money/, /profit/],
+    patterns: [
+      /revenue/,
+      /sales/,
+      /conversion/,
+      /money/,
+      /profit/,
+      /margin/,
+      /how much (have|did|do) (i|we) (make|made|earn)/,
+      /income/,
+      /takings/,
+      /average order/,
+      /\baov\b/,
+    ],
   },
   {
     intent: "analytics",
-    patterns: [/analytics/, /metrics/, /performance/, /dashboard/],
+    patterns: [
+      /analytics/,
+      /metrics/,
+      /performance/,
+      /dashboard/,
+      /funnel/,
+      /drop ?-?off/,
+      /abandon/,
+      /page view/,
+      /bounce/,
+    ],
   },
 ];
 

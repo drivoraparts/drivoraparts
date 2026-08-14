@@ -1,4 +1,10 @@
 import { getNowPaymentsApiKey, getNowPaymentsIpnSecret, isSupabaseConfigured } from "@/lib/env";
+import {
+  CAPABILITY_SUMMARY,
+  answerMetricQuestion,
+  answerOrderQuestion,
+  answerProductQuestion,
+} from "./answers";
 import { classifyAssistantIntent, getIntentSuggestions } from "./intents";
 import {
   getAnalyticsOverview,
@@ -115,6 +121,23 @@ export async function generateAdminAssistantReply(
 
   if (!supabaseReady && DATA_DEPENDENT_INTENTS.has(intent)) {
     return supabaseSetupReply(intent);
+  }
+
+  /**
+   * Specific questions are answered before topic matching gets a say.
+   *
+   * A question that names a product or an order is asking about that thing, not
+   * about its category — and the topic replies below can only ever return the
+   * category's canned summary. This also has to precede the "why" branch, which
+   * is broad enough to swallow "why isn't the N54 selling?" as generic strategy.
+   */
+  if (supabaseReady) {
+    const specific =
+      (await answerOrderQuestion(message, suggestions)) ??
+      (await answerProductQuestion(message, suggestions)) ??
+      (await answerMetricQuestion(message, suggestions));
+
+    if (specific) return specific;
   }
 
   if (intent === "strategy" || intent === "decisions" || text.includes("why")) {
@@ -318,10 +341,19 @@ export async function generateAdminAssistantReply(
       const live = await getUsersOnline();
       const revenue = await getRevenue();
 
+      /**
+       * Nothing matched, so this says so before showing the general picture.
+       *
+       * Previously an unrecognised question got the snapshot with no such
+       * caveat, which read as a considered answer — ask it for a joke and it
+       * replied with revenue figures as though that were the response.
+       */
+      const snapshot = brain
+        ? `Revenue ${formatMoney(revenue.analytics.totalRevenue)}, ${live?.activeUsers ?? 0} live users. Today: ${brain.topActions.slice(0, 3).join(", ")}.${report?.growthOpportunities[0] ? ` Growth op: ${report.growthOpportunities[0]}` : ""}`
+        : `Revenue ${formatMoney(revenue.analytics.totalRevenue)}, ${live?.activeUsers ?? 0} live users.`;
+
       return {
-        reply: brain
-          ? `COO snapshot — Revenue ${formatMoney(revenue.analytics.totalRevenue)}, ${live?.activeUsers ?? 0} live users. Today: ${brain.topActions.slice(0, 3).join(", ")}.${report?.growthOpportunities[0] ? ` Growth op: ${report.growthOpportunities[0]}` : ""}`
-          : `Business snapshot — Revenue ${formatMoney(revenue.analytics.totalRevenue)}, ${live?.activeUsers ?? 0} live users. Ask for today's strategic decisions.`,
+        reply: `I don't have a specific answer for that one — here's the general picture. ${snapshot} ${CAPABILITY_SUMMARY}`,
         suggestions,
         intent,
         data: { brain, report },
