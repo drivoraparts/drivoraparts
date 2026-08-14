@@ -15,7 +15,10 @@ import {
   websiteJsonLd,
   SITE_KEYWORDS,
 } from "@/lib/seo";
-import { BASE_CURRENCY } from "@/lib/currency/constants";
+import {
+  detectCurrencyFromAcceptLanguage,
+  detectCurrencyFromCountry,
+} from "@/lib/currency/detect";
 import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import MetaPixel from "@/components/analytics/MetaPixel";
@@ -119,7 +122,13 @@ export default async function RootLayout({
   const acceptLanguage = headerStore.get("accept-language");
   const initialLocale =
     acceptLanguage?.split(",")[0]?.split(";")[0]?.trim() || "en-US";
-  const initialCurrency = BASE_CURRENCY;
+  // Where the buyer actually is beats what their browser asks for: an expat
+  // running an en-US browser in Sydney should still see AUD. CF-IPCountry is
+  // set by Cloudflare in front of the Worker; Accept-Language covers local dev
+  // and anything that reaches us without it.
+  const initialCurrency =
+    detectCurrencyFromCountry(headerStore.get("cf-ipcountry")) ??
+    detectCurrencyFromAcceptLanguage(acceptLanguage);
   const initialLanguage = detectLanguageFromAcceptLanguage(acceptLanguage);
   const metaPixelId = getMetaPixelId();
   const tikTokPixelId = getTikTokPixelId();

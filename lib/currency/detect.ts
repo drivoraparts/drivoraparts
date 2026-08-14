@@ -10,6 +10,21 @@ export function parseRegionFromLocale(locale: string): string | undefined {
   return region && /^[A-Z]{2}$/.test(region) ? region : undefined;
 }
 
+/**
+ * Currency for an ISO 3166-1 alpha-2 country code — Cloudflare's CF-IPCountry
+ * header, which reflects where the customer actually is rather than what
+ * language their browser asked for. Returns undefined for the sentinel values
+ * Cloudflare uses when it can't place a request ("XX", "T1" for Tor).
+ */
+export function detectCurrencyFromCountry(
+  country: string | null | undefined
+): string | undefined {
+  const code = country?.trim().toUpperCase();
+  if (!code || !/^[A-Z]{2}$/.test(code)) return undefined;
+  if (code === "XX" || code === "T1") return undefined;
+  return REGION_TO_CURRENCY[code];
+}
+
 export function detectCurrencyFromLocale(locale: string): string {
   const region = parseRegionFromLocale(locale);
   if (region && REGION_TO_CURRENCY[region]) {
