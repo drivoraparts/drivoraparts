@@ -113,8 +113,19 @@ export async function answerProductQuestion(
       : "in stock";
 
   const viewToCart = percent(activity.cartAdds, activity.views);
+
+  /*
+   * Checkouts and orders are only stated when there are some. Events recorded
+   * before order_completed carried its cart contents cannot be attributed to a
+   * product at all, so printing "0 completed orders" would assert something
+   * about a listing that may well have sold — an absence of data reported as a
+   * fact about the business.
+   */
+  const checkoutPart = activity.checkouts ? `, ${activity.checkouts} checkouts` : "";
+  const orderPart = activity.orders ? `, ${activity.orders} completed orders` : "";
+
   const engagement = activity.views
-    ? `${activity.views} views, ${activity.cartAdds} cart adds${viewToCart ? ` (${viewToCart} of views)` : ""}, ${activity.orders} completed orders.`
+    ? `${activity.views} views, ${activity.cartAdds} cart adds${viewToCart ? ` (${viewToCart} of views)` : ""}${checkoutPart}${orderPart}.`
     : activity.windowSaturated
       ? "No activity in the recent event window — older activity may exist beyond it."
       : "No recorded views or cart adds yet.";

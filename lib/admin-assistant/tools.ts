@@ -91,13 +91,31 @@ export async function getProductActivity(productId: number) {
   let checkouts = 0;
   let orders = 0;
 
+  /**
+   * product_view and add_to_cart name a single product directly; checkout_start
+   * and order_completed carry a whole cart under `items` instead. Matching only
+   * on payload.productId therefore counted zero checkouts and zero orders for
+   * every product, whatever had actually sold.
+   */
   for (const event of events) {
     const payload = (event.payload ?? {}) as Record<string, unknown>;
-    if (Number(payload.productId) !== productId) continue;
 
-    if (event.name === "product_view") views += 1;
-    else if (event.name === "add_to_cart") cartAdds += 1;
-    else if (event.name === "checkout_start") checkouts += 1;
+    if (event.name === "product_view" || event.name === "add_to_cart") {
+      if (Number(payload.productId) !== productId) continue;
+      if (event.name === "product_view") views += 1;
+      else cartAdds += 1;
+      continue;
+    }
+
+    const items = Array.isArray(payload.items) ? payload.items : null;
+    if (!items) continue;
+
+    const includesProduct = items.some(
+      (item) => Number((item as { id?: unknown })?.id) === productId
+    );
+    if (!includesProduct) continue;
+
+    if (event.name === "checkout_start") checkouts += 1;
     else if (event.name === "order_completed") orders += 1;
   }
 

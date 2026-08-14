@@ -17,6 +17,7 @@ import {
 import ProductImage from "@/components/media/ProductImage";
 import { useTranslation } from "@/hooks/useTranslation";
 import { readCheckoutFormDraft, writeCheckoutFormDraft } from "@/lib/checkout/form-persist";
+import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-tracking";
 
 const glassCard =
   "box-border w-full max-w-full rounded-lg border border-neutral-200 bg-white p-4 shadow-sm sm:p-6";
@@ -94,11 +95,21 @@ export default function CheckoutPage() {
   useEffect(() => {
     if (!hydrated || !cart.length || checkoutTracked.current) return;
 
+    const items = cart.map((item) => ({ id: item.id, quantity: item.quantity }));
+
+    // The ref only guards this mount. Coming back from NOWPayments without
+    // paying remounts the page, so the session-scoped claim is what stops the
+    // same customer counting as a second checkout.
+    if (!claimCheckoutStart(buildCartSignature(items))) {
+      checkoutTracked.current = true;
+      return;
+    }
+
     checkoutTracked.current = true;
     trackEvent("checkout_start", {
       itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
       total: breakdown.total,
-      items: cart.map((item) => ({ id: item.id, quantity: item.quantity })),
+      items,
     });
   }, [hydrated, cart, breakdown.total]);
 
@@ -170,6 +181,9 @@ export default function CheckoutPage() {
         orderId: data.orderId,
         total: data.total,
         itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
+        // Without this the event says an order happened but not what was in
+        // it, so per-product reporting can never attribute a sale to a listing.
+        items: cart.map((item) => ({ id: item.id, quantity: item.quantity })),
       });
 
       storeMetaCheckoutItems(

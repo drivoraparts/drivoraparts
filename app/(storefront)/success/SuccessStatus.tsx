@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Price from "@/components/currency/Price";
 import { useCartStore } from "@/lib/store/cartStore";
 import { clearCheckoutFormDraft } from "@/lib/checkout/form-persist";
+import { clearCheckoutStartClaim } from "@/lib/checkout/checkout-tracking";
 import {
   readMetaCheckoutItems,
   trackMetaPurchase,
@@ -100,6 +101,9 @@ export default function SuccessStatus({
           // paid, so backing out of NOWPayments landed on an empty cart.
           clearCart();
           clearCheckoutFormDraft();
+          // Release the checkout_start claim too, so a second order in the
+          // same session is counted rather than suppressed as a repeat.
+          clearCheckoutStartClaim();
           if (
             !purchaseTracked.current &&
             typeof data.total === "number" &&
