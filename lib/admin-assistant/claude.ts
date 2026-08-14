@@ -21,7 +21,13 @@ import type { AssistantResponse } from "./types";
  * drifting copy of the business logic, and a fix to a stat fixes both.
  */
 
-const MODEL = "claude-opus-5";
+/**
+ * Haiku is the cheapest model, which matters because every question here fans
+ * out into several tool calls. The work is lookup-and-summarise over data the
+ * tools already shaped, not open-ended reasoning, so the cheap model is a good
+ * fit — swap MODEL to "claude-sonnet-5" if answers start missing the point.
+ */
+const MODEL = "claude-haiku-4-5";
 const MAX_TOOL_ITERATIONS = 8;
 
 const SYSTEM_PROMPT = `You are the operations assistant for DrivoraParts, an automotive
