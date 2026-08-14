@@ -1,5 +1,7 @@
 import { listAnalyticsEvents } from "@/lib/db/analytics";
+import { listOrders } from "@/lib/db/orders";
 import { safeQuery } from "@/lib/db/safe-query";
+import { eventProductIds } from "@/lib/analytics/event-products";
 import { getProductById } from "@/lib/inventory";
 import { products } from "@/lib/inventory/products";
 
@@ -18,42 +20,60 @@ export type ProductSignalMetrics = {
 export async function collectProductSignals(
   eventLimit = 4000
 ): Promise<ProductSignalMetrics[]> {
-  const events = await safeQuery(
-    () => listAnalyticsEvents(eventLimit),
-    [],
-    "product-signals"
-  );
+  const [events, orders] = await Promise.all([
+    safeQuery(() => listAnalyticsEvents(eventLimit), [], "product-signals"),
+    safeQuery(() => listOrders(300), [], "product-signals-orders"),
+  ]);
 
   const map = new Map<
     number,
     { views: number; cartAdds: number; checkouts: number; orders: number; name: string }
   >();
 
-  for (const event of events) {
-    const productId = Number(event.payload?.productId);
-    if (!productId) continue;
+  function rowFor(productId: number, fallbackName?: string) {
+    const existing = map.get(productId);
+    if (existing) return existing;
 
-    const name =
-      typeof event.payload?.productName === "string"
-        ? event.payload.productName
-        : getProductById(productId)?.name ??
-          products.find((p) => p.id === productId)?.name ??
-          `Product ${productId}`;
-
-    const row = map.get(productId) ?? {
+    const row = {
       views: 0,
       cartAdds: 0,
       checkouts: 0,
       orders: 0,
-      name,
+      name:
+        fallbackName ??
+        getProductById(productId)?.name ??
+        products.find((p) => p.id === productId)?.name ??
+        `Product ${productId}`,
     };
-
-    if (event.name === "product_view") row.views += 1;
-    if (event.name === "add_to_cart") row.cartAdds += 1;
-    if (event.name === "checkout_start") row.checkouts += 1;
-    if (event.name === "order_completed") row.orders += 1;
-
     map.set(productId, row);
+    return row;
+  }
+
+  for (const event of events) {
+    const name =
+      typeof event.payload?.productName === "string"
+        ? event.payload.productName
+        : undefined;
+
+    // checkout_start names a whole cart under `items` rather than a single
+    // productId, so matching only on productId counted no checkouts at all.
+    for (const productId of eventProductIds(event)) {
+      const row = rowFor(productId, name);
+      if (event.name === "product_view") row.views += 1;
+      if (event.name === "add_to_cart") row.cartAdds += 1;
+      if (event.name === "checkout_start") row.checkouts += 1;
+    }
+  }
+
+  // Sales come from paid order items — the authoritative record. The
+  // order_completed event carries no product id and fires before payment,
+  // so counting it here reported zero sales for everything.
+  for (const order of orders) {
+    if (order.status !== "paid") continue;
+
+    for (const item of order.items ?? []) {
+      rowFor(item.product_id, item.name).orders += item.quantity;
+    }
   }
 
   return [...map.entries()]

@@ -106,12 +106,18 @@ export async function getRealtimeDashboard(): Promise<RealtimeDashboard> {
     0
   );
 
+  /*
+   * With no views in the window there is no conversion rate to report.
+   *
+   * This used to return a flat 100% whenever an order landed in a window with
+   * no recorded views — which happens routinely, since a customer can browse
+   * in one hour and pay in the next. That is a fabricated figure, not a
+   * measurement, and it appeared on the dashboard as though it were real.
+   */
   const conversionRate =
     productViews > 0
       ? Math.round((orderCompletions / productViews) * 1000) / 10
-      : paidRecent.length > 0 && productViews === 0
-        ? 100
-        : 0;
+      : 0;
 
   const checkoutDropoffRate =
     checkoutStarts > 0

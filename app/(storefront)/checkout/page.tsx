@@ -177,14 +177,13 @@ export default function CheckoutPage() {
         return;
       }
 
-      trackEvent("order_completed", {
-        orderId: data.orderId,
-        total: data.total,
-        itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
-        // Without this the event says an order happened but not what was in
-        // it, so per-product reporting can never attribute a sale to a listing.
-        items: cart.map((item) => ({ id: item.id, quantity: item.quantity })),
-      });
+      // No order_completed event here. Reaching this point means an order and
+      // an invoice exist -- the customer has not paid yet, and most never will
+      // (pending has historically outnumbered paid by more than ten to one).
+      // Recording a completion now overstated sales in every report built on
+      // it. The event is emitted server-side instead, from the webhook that
+      // confirms payment. Meta and TikTok are unaffected: both already ignore
+      // order_completed and track purchases from the success page.
 
       storeMetaCheckoutItems(
         cart.map((item) => ({ id: item.id, quantity: item.quantity }))

@@ -243,25 +243,11 @@ export async function processCheckout(input: {
 
 
 
-  try {
-    await insertAnalyticsEvent("order_completed", {
-      orderId: order.id,
-      total: order.total,
-      itemCount: lockedItems.reduce((sum, item) => sum + item.quantity, 0),
-      products: lockedItems.map((item) => ({
-        productId: item.productId,
-        productName: item.name,
-        quantity: item.quantity,
-        price: item.price,
-      })),
-    });
-  } catch (error) {
-    logWarn("checkout_analytics_failed", {
-      orderId: order.id,
-      message: error instanceof Error ? error.message : String(error),
-      ...input.requestMeta,
-    });
-  }
+  // No order_completed event here either. This ran before the invoice was
+  // even created, so it counted a completion for every checkout that reached
+  // this line -- and the storefront fired a second one of its own, meaning a
+  // single unpaid checkout produced two "completed order" events. It is now
+  // emitted once, from applyOrderPaidSideEffects, when payment is confirmed.
 
 
 
@@ -436,6 +422,34 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
 
 
   const updated = await getOrderById(orderId);
+
+  /*
+   * Record the completion here, where payment is actually confirmed.
+   *
+   * The storefront used to emit this the moment an invoice was created, so
+   * every abandoned checkout counted as a completed order. Emitting from the
+   * webhook means the event fires once, for money actually received, and
+   * carries its line items so per-product reporting can attribute the sale.
+   */
+  if (updated) {
+    try {
+      await insertAnalyticsEvent("order_completed", {
+        orderId: updated.id,
+        orderNumber: updated.order_number,
+        total: Number(updated.total),
+        itemCount: updated.items.reduce((sum, item) => sum + item.quantity, 0),
+        items: updated.items.map((item) => ({
+          id: item.product_id,
+          quantity: item.quantity,
+        })),
+      });
+    } catch (error) {
+      logWarn("order_completed_analytics_failed", {
+        orderId,
+        message: error instanceof Error ? error.message : String(error),
+      });
+    }
+  }
 
   if (updated?.customer) {
 

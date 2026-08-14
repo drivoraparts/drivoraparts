@@ -137,8 +137,34 @@ export async function getAiInsightsReport(): Promise<AiInsightsReport> {
     };
     if (event.name === "product_view") row.views += 1;
     if (event.name === "add_to_cart") row.cartAdds += 1;
-    if (event.name === "order_completed") row.orders += 1;
     productMetrics.set(productId, row);
+  }
+
+  /*
+   * Sales come from the orders table, not from order_completed events.
+   *
+   * Those events carry no product id, so the loop above — which skips any
+   * event without one — could never count a sale: every product reported
+   * `orders: 0` however much it had sold, and demandVelocity silently lost
+   * its heaviest term. Order items are the authoritative record anyway, and
+   * only paid orders count, so an abandoned checkout no longer reads as a sale.
+   */
+  for (const order of orders) {
+    if (order.status !== "paid") continue;
+
+    for (const item of order.items ?? []) {
+      const row = productMetrics.get(item.product_id) ?? {
+        views: 0,
+        cartAdds: 0,
+        orders: 0,
+        name:
+          products.find((p) => p.id === item.product_id)?.name ??
+          item.name ??
+          `Product ${item.product_id}`,
+      };
+      row.orders += item.quantity;
+      productMetrics.set(item.product_id, row);
+    }
   }
 
   const productRankingScores: ProductRankingScore[] = [...productMetrics.entries()]
@@ -166,12 +192,34 @@ export async function getAiInsightsReport(): Promise<AiInsightsReport> {
     ? paidOrders.reduce((sum, o) => sum + Number(o.total), 0) / paidOrders.length
     : 0;
 
-  const dailyVelocity = hasPaidHistory
-    ? paidOrders.length / Math.max(1, Math.min(30, paidOrders.length))
+  /*
+   * Run rate over a real 30-day window.
+   *
+   * This previously divided the order count by itself — `paidOrders.length /
+   * min(30, paidOrders.length)` — which returns exactly 1.0 for any store
+   * under 30 lifetime orders, whether those orders arrived in one day or over
+   * six months. It never read a date. Combined with a 1.08 uplift, a store
+   * with $9,557 of lifetime revenue was forecast $24,084 for the coming week.
+   *
+   * Counting paid orders in the last 30 days and dividing by 30 gives a rate
+   * that reflects when sales actually happened. A quiet month now forecasts
+   * near zero, which is the honest answer rather than a flattering one.
+   */
+  const FORECAST_WINDOW_DAYS = 30;
+  const windowStart = Date.now() - FORECAST_WINDOW_DAYS * 24 * 60 * 60 * 1000;
+  const recentPaidOrders = paidOrders.filter(
+    (order) => new Date(order.created_at).getTime() >= windowStart
+  );
+
+  const dailyVelocity = recentPaidOrders.length / FORECAST_WINDOW_DAYS;
+
+  const recentAvgOrderValue = recentPaidOrders.length
+    ? recentPaidOrders.reduce((sum, o) => sum + Number(o.total), 0) /
+      recentPaidOrders.length
     : 0;
 
-  const predictedRevenueNext7Days = hasPaidHistory
-    ? Math.round(avgOrderValue * dailyVelocity * 7 * 1.08)
+  const predictedRevenueNext7Days = recentPaidOrders.length
+    ? Math.round(recentAvgOrderValue * dailyVelocity * 7)
     : 0;
 
   const predictedBestSellingProducts = productRankingScores.slice(0, 5).map((p) => {
