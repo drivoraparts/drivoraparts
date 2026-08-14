@@ -232,9 +232,39 @@ export async function listInventory(limit = 500): Promise<InventoryRecord[]> {
   });
 }
 
+/**
+ * Every inventory row, paged past PostgREST's per-request ceiling.
+ *
+ * Stats and alerts must not be derived from listInventory(): it caps at 500
+ * rows ordered by quantity ascending, so totals computed from it described
+ * only the 500 emptiest SKUs — "Total SKUs 500" against a table of 1,884, a
+ * unit count summing the smallest stock levels in the catalog, and a low-stock
+ * figure drawn from a sample selected for being low.
+ */
+async function fetchAllInventoryRows(): Promise<InventoryRecord[]> {
+  const supabase = getSupabaseAdmin();
+  const pageSize = 1000;
+  const rows: InventoryRecord[] = [];
+
+  for (let from = 0; ; from += pageSize) {
+    const { data, error } = await supabase
+      .from("inventory")
+      .select("*")
+      .order("product_id", { ascending: true })
+      .range(from, from + pageSize - 1);
+
+    if (error) throw error;
+    const batch = (data ?? []) as InventoryRecord[];
+    rows.push(...batch);
+    if (batch.length < pageSize) break;
+  }
+
+  return rows;
+}
+
 export async function getInventoryAlerts(): Promise<InventoryAlert[]> {
   return guardedSupabaseRead("getInventoryAlerts", [], async () => {
-    const inventory = await listInventory();
+    const inventory = await fetchAllInventoryRows();
     const productMap = new Map(products.map((p) => [p.id, p.name]));
     const alerts: InventoryAlert[] = [];
 
@@ -266,7 +296,7 @@ export async function getInventoryAlerts(): Promise<InventoryAlert[]> {
 
 export async function getInventoryStats() {
   return guardedSupabaseRead("getInventoryStats", EMPTY_INVENTORY_STATS, async () => {
-    const inventory = await listInventory();
+    const inventory = await fetchAllInventoryRows();
     const totalSkus = inventory.length;
     const outOfStock = inventory.filter((row) => row.quantity <= 0).length;
     const lowStock = inventory.filter(
