@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getCategory, getBrand } from "@/data/store";
 import { brands } from "@/lib/inventory/brands";
-import { routes } from "@/lib/inventory";
+import { getBrandsByCategory, routes } from "@/lib/inventory";
 import PageHeading from "@/components/catalog/PageHeading";
+import BrandRangeSummary from "@/components/catalog/BrandRangeSummary";
 import CatalogProductCard from "@/components/catalog/CatalogProductCard";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { LIST_SCROLL_KEYS } from "@/lib/catalog/list-scroll-restore";
@@ -87,7 +88,21 @@ export default async function Page({ params }: PageProps) {
   const products = category.products.filter((p) => p.brand === brand);
   if (!products.length) return notFound();
   const path = routes.brand(categorySlug, brandSlug);
-  const description = getBrandSeoDescription(brand, category.name, products.length);
+  // Pass the slugs through: without them getBrandSeoDescription falls back to
+  // its generic branch, so the visible copy was weaker than the meta
+  // description generated above, which does pass them.
+  const description = getBrandSeoDescription(
+    brand,
+    category.name,
+    products.length,
+    brandSlug,
+    categorySlug
+  );
+
+  const siblings = getBrandsByCategory(categorySlug)
+    .filter((entry) => entry.slug !== brandSlug && entry.name !== brand)
+    .filter((entry) => category.products.some((p) => p.brand === entry.name))
+    .slice(0, 12);
   const productPaths = products.map((product) => routes.product(product.id));
 
   const scrollListKey = LIST_SCROLL_KEYS.brand(categorySlug, brandSlug);
@@ -107,9 +122,17 @@ export default async function Page({ params }: PageProps) {
       />
       <main className="min-h-screen bg-white p-6 text-neutral-900">
         <PageHeading title={brand} subtitle={category.name} />
-        <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
+        <p className="mb-6 max-w-3xl text-sm leading-relaxed text-neutral-600">
           {description}
         </p>
+
+        <BrandRangeSummary
+          brandName={brand}
+          categoryName={category.name}
+          categorySlug={categorySlug}
+          products={products}
+          siblings={siblings}
+        />
 
         <div className="grid grid-cols-2 gap-4">
           {products.map((product) => (
