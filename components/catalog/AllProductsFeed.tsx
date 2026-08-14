@@ -54,6 +54,7 @@ function readSavedState(): ListScrollState | null {
 
 export default function AllProductsFeed({
   initialQuery = "",
+  initialCategory = "",
 }: {
   /** Supplied by the server page from ?q=. Deliberately a prop rather than
    * useSearchParams(): that hook requires this component to sit inside its
@@ -61,6 +62,9 @@ export default function AllProductsFeed({
    * arrived but never hydrated, so no effect here ever ran. The page
    * remounts this component via `key` when the query changes. */
   initialQuery?: string;
+  /** Supplied from ?category=, so a category page can hand off to this
+   *  paginated view instead of rendering its entire catalog at once. */
+  initialCategory?: string;
 }) {
   // Deliberately NOT read here (e.g. useRef(readSavedState())): sessionStorage
   // only exists in the browser, so a value read during the render that also
@@ -81,7 +85,7 @@ export default function AllProductsFeed({
   const requestGenerationRef = useRef(0);
 
   const [query, setQuery] = useState(initialQuery);
-  const [categoryFilter, setCategoryFilter] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState(initialCategory);
   const [brandFilter, setBrandFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
   const [sortFilter, setSortFilter] = useState("newest");
@@ -215,7 +219,11 @@ export default function AllProductsFeed({
           savedRef.current = saved;
           restorePendingRef.current = true;
           setQuery(saved.query ?? "");
-          setCategoryFilter(saved.categoryFilter ?? "");
+          // An explicit ?category= wins over whatever was last browsed:
+          // arriving from a category page's "View all" is a deliberate
+          // choice, and restoring over it left the dropdown reading "Any"
+          // while the results were in fact filtered.
+          setCategoryFilter(initialCategory || (saved.categoryFilter ?? ""));
           setBrandFilter(saved.brandFilter ?? "");
           setPriceFilter((saved.priceFilter as PriceFilterValue) ?? "all");
           setSortFilter(saved.sortFilter ?? "newest");

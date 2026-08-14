@@ -36,10 +36,12 @@ export const metadata: Metadata = buildPageMetadata({
 export default async function AllProductsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string | string[] }>;
+  searchParams: Promise<{ q?: string | string[]; category?: string | string[] }>;
 }) {
   const params = await searchParams;
   const initialQuery = typeof params.q === "string" ? params.q : "";
+  const initialCategory =
+    typeof params.category === "string" ? params.category : "";
   const isSearch = initialQuery.trim().length > 0;
 
   return (
@@ -94,7 +96,11 @@ export default async function AllProductsPage({
               visitor. The query now comes from the server as a prop, and
               `key` remounts the feed whenever it changes so a new search
               always starts from clean state. */}
-          <AllProductsFeed key={initialQuery} initialQuery={initialQuery} />
+          <AllProductsFeed
+            key={`${initialQuery}|${initialCategory}`}
+            initialQuery={initialQuery}
+            initialCategory={initialCategory}
+          />
         </div>
 
         {/* Still reachable after a search, just below the results rather than

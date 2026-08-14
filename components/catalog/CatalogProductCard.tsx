@@ -56,7 +56,11 @@ export default function CatalogProductCard({
     >
       <Link
         href={productHref}
-        className="absolute inset-0 z-10 rounded-xl"
+        // touch-manipulation drops the browser's ~300ms double-tap-to-zoom
+        // wait on this target, which is what made a tap feel like it hadn't
+        // registered. HomeFeaturedCard already had it; the catalog card,
+        // which is most of the site's tiles, did not.
+        className="touch-manipulation absolute inset-0 z-10 rounded-xl"
         aria-label={`View ${product.name}`}
         onClick={() => {
           if (scrollListKey) {

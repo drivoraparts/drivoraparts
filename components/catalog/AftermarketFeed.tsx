@@ -1,10 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
+import AddToCartButton from "@/app/components/AddToCartButton";
 import { getConditionLabel } from "@/lib/inventory/condition";
 import { routes } from "@/lib/inventory/routes";
 import ProductImage from "@/components/media/ProductImage";
-import CatalogCard from "./CatalogCard";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 
@@ -109,7 +110,22 @@ export default function AftermarketFeed({
             const inStock = product.stock !== false;
 
             return (
-              <CatalogCard key={product.id} href={routes.product(product.id)}>
+              // Not CatalogCard: that is a plain <Link> wrapper, so these
+              // listings had no add-to-cart at all. Same structure as
+              // CatalogProductCard instead -- a full-tile link underneath, the
+              // cart button stacked above it -- so the whole card stays
+              // clickable without nesting a button inside an anchor.
+              <article
+                key={product.id}
+                className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white p-4 transition-all duration-300 hover:border-red-500 hover:shadow-md"
+              >
+                <Link
+                  href={routes.product(product.id)}
+                  className="absolute inset-0 z-10 rounded-xl"
+                  aria-label={`View ${product.name}`}
+                />
+                <div className="pointer-events-none absolute inset-0 bg-red-500/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="relative text-neutral-900">
                 {image ? (
                   <ProductImage
                     src={image}
@@ -148,7 +164,22 @@ export default function AftermarketFeed({
                     {product.brandName}
                   </span>
                 </div>
-              </CatalogCard>
+                </div>
+
+                <div className="relative z-20 mt-3">
+                  <AddToCartButton
+                    product={{
+                      id: product.id,
+                      name: product.name,
+                      price: product.price,
+                      image: image ?? "",
+                      category: product.category,
+                      brand: product.brand,
+                    }}
+                    compact
+                  />
+                </div>
+              </article>
             );
           })}
         </div>
