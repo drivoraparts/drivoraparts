@@ -475,10 +475,26 @@ function slugify(name) {
     .slice(0, 72);
 }
 
+/**
+ * What the listing actually is, so the fallback blurb can't tell a customer a
+ * clutch kit might be a transmission (or vice versa). This file imports four
+ * distinct kinds of part; hedging across all of them reads as misleading on
+ * the product page.
+ */
+function describePartType(name) {
+  const n = name.toLowerCase();
+  if (/clutch|flywheel|pressure plate/.test(n)) return "performance clutch kit";
+  if (/rebuild kit|master kit/.test(n)) return "transmission rebuild kit";
+  if (/gear set|valve body|shift kit|zip kit|solenoid|torque converter/.test(n)) {
+    return "transmission upgrade component";
+  }
+  return "OEM-grade transmission";
+}
+
 function buildDescription(name, fitment, partNumber, body = "") {
   const intro =
     body ||
-    `${name} — OEM-grade transmission or clutch component with verified fitment, inspected before shipment, and ready for performance street, track, or 4WD builds.`;
+    `${name} — ${describePartType(name)} with verified fitment, inspected before shipment, and ready for performance street, track, or 4WD builds.`;
   return `${name}
 
 ${intro}
@@ -490,7 +506,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide shipping available — freight quotes provided for transmission assemblies and heavy clutch kits.`;
+Worldwide shipping available — freight quotes provided for heavy assemblies where required.`;
 }
 
 async function fetchStaticMeta(source) {
