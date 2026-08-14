@@ -13,6 +13,20 @@ export function truncateSeoDescription(text: string, max = 160): string {
   return `${(lastSpace > 80 ? trimmed.slice(0, lastSpace) : trimmed).trim()}…`;
 }
 
+/**
+ * Trim a title to `max`, breaking on a word boundary rather than mid-word.
+ * Falls back to a hard cut when there's no sensible space to break on.
+ */
+export function truncateSeoTitle(text: string, max: number): string {
+  const flat = normalizeSeoText(text);
+  if (flat.length <= max) return flat;
+
+  const trimmed = flat.slice(0, max - 1);
+  const lastSpace = trimmed.lastIndexOf(" ");
+  const cut = lastSpace > max * 0.6 ? trimmed.slice(0, lastSpace) : trimmed;
+  return `${cut.replace(/[\s—–,-]+$/, "")}…`;
+}
+
 /** First meaningful paragraph from a product description block. */
 export function productSeoDescription(description: string, fallback: string): string {
   const paragraphs = description

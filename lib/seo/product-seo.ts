@@ -1,6 +1,6 @@
 import { getBrandBySlug } from "@/lib/inventory";
 import { buildProductKeywords } from "./keywords";
-import { truncateSeoDescription } from "./text";
+import { normalizeSeoText, truncateSeoDescription, truncateSeoTitle } from "./text";
 
 type ProductSeoInput = {
   name: string;
@@ -10,20 +10,33 @@ type ProductSeoInput = {
   description?: string;
 };
 
+/**
+ * Google renders roughly 60 characters of a title, and the root layout appends
+ * " | DrivoraParts" (15) to whatever this returns — so a qualifier pushed past
+ * ~45 characters is paid for and never seen. Brand and fitment are therefore
+ * only appended while they still fit, and the product name (which carries the
+ * search term) keeps the front of the tag.
+ */
+const TITLE_QUALIFIER_BUDGET = 45;
+const TITLE_HARD_CAP = 65;
+
 export function buildProductSeoTitle(input: ProductSeoInput): string {
   const brand = getBrandBySlug(input.brand ?? "");
-  const brandLabel = brand?.name;
-  const parts = [input.name];
+  let title = normalizeSeoText(input.name);
 
-  if (brandLabel && !input.name.toLowerCase().includes(brandLabel.toLowerCase())) {
-    parts.push(brandLabel);
-  }
-  if (input.fitment && !input.name.includes(input.fitment)) {
-    parts.push(input.fitment);
-  }
+  const appendIfItFits = (part?: string) => {
+    const value = part?.trim();
+    if (!value) return;
+    if (title.toLowerCase().includes(value.toLowerCase())) return;
 
-  const title = parts.join(" — ");
-  return title.length > 110 ? `${title.slice(0, 107).trim()}…` : title;
+    const next = `${title} — ${value}`;
+    if (next.length <= TITLE_QUALIFIER_BUDGET) title = next;
+  };
+
+  appendIfItFits(brand?.name);
+  appendIfItFits(input.fitment);
+
+  return truncateSeoTitle(title, TITLE_HARD_CAP);
 }
 
 export function buildProductSeoDescription(input: ProductSeoInput): string {
