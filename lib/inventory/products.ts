@@ -956,7 +956,9 @@ Worldwide Shipping Available`,
     category: "engine",
     brand: "ford",
     platform: "ford-7-3-godzilla",
-    price: 5900,
+    // Anchor, not the shelf price: applyPublicPrices() sells at 79% rounded to
+    // the nearest $10, so 7470 is what puts this on the page at $5,900.
+    price: 7470,
     stock: true,
     condition: "brand-new",
     horsepower: "Up to 430 HP",
