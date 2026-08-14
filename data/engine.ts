@@ -59,6 +59,7 @@ export const engineTree: EngineGroup[] = [
       { name: "LS7" },
       { name: "LT1 / LT4" },
       { name: "Ford Coyote 5.0" },
+      { name: "Ford 7.3 Godzilla" },
       { name: "Dodge Hellcat 6.2" },
       { name: "GM LS / LSA Drivetrains", slug: "gm-ls-drivetrains" },
     ],

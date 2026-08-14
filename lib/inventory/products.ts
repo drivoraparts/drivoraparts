@@ -951,6 +951,58 @@ Shipping
 Worldwide Shipping Available`,
   },
   {
+    id: 2114,
+    name: "Ford 7.3L Godzilla Engine Package",
+    category: "engine",
+    brand: "ford",
+    platform: "ford-7-3-godzilla",
+    price: 5900,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 430 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/ford-7-3-godzilla/1.jpeg",
+    images: [
+      "/product-media/engine/american-v8/ford-7-3-godzilla/1.jpeg",
+      "/product-media/engine/american-v8/ford-7-3-godzilla/2.jpeg",
+    ],
+    description: `Ford 7.3L Godzilla Engine Package
+
+Large-displacement pushrod V8 built for torque, durability, and demanding applications.
+
+The Ford 7.3L Godzilla is a modern pushrod V8 designed for serious power, durability, and demanding applications. Known for its large-displacement architecture, strong low-end torque, and straightforward design, the 7.3L Godzilla has become a popular choice among truck owners, performance enthusiasts, and builders looking for a dependable V8 platform.
+
+The Ford 7.3L Godzilla delivers substantial displacement and V8 performance while maintaining excellent potential for future upgrades. With its cast-iron block, overhead-valve configuration, and robust internal architecture, the Godzilla is well suited for heavy-duty applications, engine swaps, restoration projects, and high-performance builds.
+
+Specifications
+• Engine Code: 7.3L Godzilla
+• Configuration: V8
+• Valvetrain: OHV / Pushrod
+• Displacement: 7.3 Liters
+• Factory Power: Up to 430 HP
+• Factory Torque: Up to 475 lb-ft
+• Cooling: Liquid Cooled
+• Fuel Type: Gasoline
+• Manufacturer: Ford
+
+Highlights
+• Ford 7.3L Godzilla V8 Platform
+• Large-Displacement V8 Performance
+• Strong Low-End Torque
+• Robust Heavy-Duty Architecture
+• Excellent Engine-Swap Potential
+• Strong Aftermarket Support
+• Popular Performance & Truck Platform
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
     id: 49,
     name: "Chevrolet LS3 V8 Engine",
     category: "engine",
