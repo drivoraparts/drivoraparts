@@ -17,20 +17,11 @@ export type TrustSignal = {
 export const TRUST_SECTION = {
   eyebrow: "Shop with confidence",
   headline: "Registered US seller · encrypted checkout · real inventory",
-  subhead:
-    "DrivoraParts LLC operates from Torrance, California with distribution in Nagoya, Japan and Sydney, Australia. Every listing is reviewed for accurate photos and specs, backed by freight-ready logistics and NOWPayments crypto checkout.",
+  // Derived, not hand-written: a hub that changes in company.ts must not be
+  // able to leave this line claiming somewhere we no longer ship from.
+  subhead: `${COMPANY_LEGAL_NAME} operates from ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName} with distribution in ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.country} and ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}. Every listing is reviewed for accurate photos and specs, backed by freight-ready logistics and NOWPayments crypto checkout.`,
   legalLine: `${COMPANY_LEGAL_NAME} · ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} · ${COMPANY_SUPPORT_EMAIL}`,
   listingStat: `${HOME_LISTING_COUNT.toLocaleString()}+ active listings`,
-} as const;
-
-export const TRUST_PROOF = {
-  legalName: COMPANY_LEGAL_NAME,
-  supportEmail: COMPANY_SUPPORT_EMAIL,
-  usStreet: US_HEADQUARTERS.street,
-  usCityLine: `${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} ${US_HEADQUARTERS.postalCode}`,
-  usCountry: US_HEADQUARTERS.country,
-  japanLine: `${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.prefecture} · ${JAPAN_LOGISTICS_HUB.country}`,
-  listingCount: HOME_LISTING_COUNT,
 } as const;
 
 export const TRUST_SIGNALS: TrustSignal[] = [
