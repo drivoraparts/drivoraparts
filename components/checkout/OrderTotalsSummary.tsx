@@ -7,14 +7,18 @@ import { useTranslation } from "@/hooks/useTranslation";
 export default function OrderTotalsSummary({
   breakdown,
   className = "",
+  compact = false,
 }: {
   breakdown: CartDiscountBreakdown;
   className?: string;
+  /** Tighter rows for the cart drawer, where vertical space belongs to the
+   *  products rather than the totals. Checkout keeps the roomier default. */
+  compact?: boolean;
 }) {
   const { t } = useTranslation();
 
   return (
-    <div className={`space-y-2 ${className}`}>
+    <div className={`${compact ? "space-y-1" : "space-y-2"} ${className}`}>
       <div className="flex items-center justify-between gap-3 text-sm">
         <span className="text-neutral-500">{t("subtotal")}</span>
         <span className="text-neutral-800">
@@ -59,14 +63,25 @@ export default function OrderTotalsSummary({
         </span>
       </div>
 
-      <div className="border-t border-neutral-200 pt-3">
-        <p className="text-xs text-neutral-500">{t("total")}</p>
-        <p className="text-2xl font-semibold tracking-tight text-neutral-900">
-          <Price usd={breakdown.total} />
-        </p>
-      </div>
+      {compact ? (
+        <div className="flex items-baseline justify-between gap-3 border-t border-neutral-200 pt-2">
+          <span className="text-xs text-neutral-500">{t("total")}</span>
+          <span className="text-lg font-semibold tracking-tight text-neutral-900">
+            <Price usd={breakdown.total} />
+          </span>
+        </div>
+      ) : (
+        <div className="border-t border-neutral-200 pt-3">
+          <p className="text-xs text-neutral-500">{t("total")}</p>
+          <p className="text-2xl font-semibold tracking-tight text-neutral-900">
+            <Price usd={breakdown.total} />
+          </p>
+        </div>
+      )}
 
-      <CurrencyNotice className="text-xs text-neutral-500" />
+      <CurrencyNotice
+        className={compact ? "text-[11px] text-neutral-500" : "text-xs text-neutral-500"}
+      />
     </div>
   );
 }

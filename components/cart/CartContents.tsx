@@ -144,7 +144,11 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
 
   const summary = (
     <div className={isPage ? "rounded-xl border border-neutral-200 bg-neutral-50 p-6" : ""}>
-      <OrderTotalsSummary breakdown={breakdown} className="mb-4" />
+      <OrderTotalsSummary
+        breakdown={breakdown}
+        className={isPage ? "mb-4" : "mb-3"}
+        compact={!isPage}
+      />
 
       {cart.length > 0 ? (
         <>
@@ -157,29 +161,43 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
           </Link>
 
           {isPage ? (
-            <Link
-              href={routes.all}
-              className="mb-3 block w-full rounded-lg border border-neutral-300 py-2.5 text-center text-sm font-medium text-neutral-800 hover:bg-white"
-            >
-              {t("continueShopping")}
-            </Link>
+            <>
+              <Link
+                href={routes.all}
+                className="mb-3 block w-full rounded-lg border border-neutral-300 py-2.5 text-center text-sm font-medium text-neutral-800 hover:bg-white"
+              >
+                {t("continueShopping")}
+              </Link>
+              <button
+                type="button"
+                onClick={handleClear}
+                className="w-full rounded-lg border border-neutral-300 py-2 text-sm text-neutral-700 hover:bg-neutral-100"
+              >
+                {t("clearCart")}
+              </button>
+            </>
           ) : (
-            <Link
-              href="/cart"
-              onClick={onClose}
-              className="mb-3 block w-full rounded-lg border border-neutral-300 py-2.5 text-center text-sm font-medium text-neutral-800 hover:bg-neutral-50"
-            >
-              {t("viewAll")}
-            </Link>
+            // One row instead of two stacked full-width buttons: "Clear cart"
+            // is a rare, destructive action and doesn't warrant the same
+            // weight as checkout -- the ~80px it gives back goes to the
+            // product list above.
+            <div className="flex items-center justify-between gap-3">
+              <Link
+                href="/cart"
+                onClick={onClose}
+                className="text-sm font-medium text-neutral-800 underline-offset-2 hover:text-red-600 hover:underline"
+              >
+                {t("viewAll")}
+              </Link>
+              <button
+                type="button"
+                onClick={handleClear}
+                className="text-sm text-neutral-500 underline-offset-2 hover:text-red-600 hover:underline"
+              >
+                {t("clearCart")}
+              </button>
+            </div>
           )}
-
-          <button
-            type="button"
-            onClick={handleClear}
-            className="w-full rounded-lg border border-neutral-300 py-2 text-sm text-neutral-700 hover:bg-neutral-100"
-          >
-            {t("clearCart")}
-          </button>
         </>
       ) : null}
     </div>
@@ -197,14 +215,17 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
   // The drawer's heading, item count and close button live in SideDrawer,
   // which owns the panel chrome for both the cart and nav drawers.
   return (
-    <div className="flex h-full flex-col p-6 text-neutral-900">
+    <div className="flex h-full flex-col px-5 py-4 text-neutral-900">
       {cart.length === 0 ? (
         lineItems
       ) : (
-        <div className="flex-1 overflow-y-auto">{lineItems}</div>
+        // min-h-0 lets this actually shrink-to-fit as a flex child, so the
+        // products get every pixel the totals below don't need; shrink-0 on
+        // the summary stops it growing back into them.
+        <div className="min-h-0 flex-1 overflow-y-auto pr-1">{lineItems}</div>
       )}
 
-      <div className="mt-6 border-t border-neutral-200 pt-4">{summary}</div>
+      <div className="mt-4 shrink-0 border-t border-neutral-200 pt-3">{summary}</div>
     </div>
   );
 }
