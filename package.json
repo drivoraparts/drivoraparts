@@ -24,6 +24,7 @@
     "seed-reviews:avatars": "node scripts/fetch-reviewer-avatars.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.117.1",
     "@opennextjs/cloudflare": "^1.19.11",
     "@supabase/supabase-js": "^2.49.8",
     "@tailwindcss/postcss": "^4.3.1",

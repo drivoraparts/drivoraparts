@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireAdminApi } from "@/lib/auth/require-admin";
-import { generateAdminAssistantReply } from "@/lib/admin-assistant";
+import { answerAdminQuestion } from "@/lib/admin-assistant";
 
 export async function POST(req: Request) {
   const auth = await requireAdminApi();
@@ -9,6 +9,6 @@ export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
   const message = typeof body?.message === "string" ? body.message : "";
 
-  const response = await generateAdminAssistantReply(message);
+  const response = await answerAdminQuestion(message);
   return NextResponse.json(response);
 }
