@@ -259,10 +259,16 @@ export async function generateAdminAssistantReply(
       const nowpaymentsApiConfigured = Boolean(
         getNowPaymentsApiKey() && getNowPaymentsIpnSecret()
       );
+      // Reports the reconciled figure, so this agrees with the revenue reply
+      // instead of quoting a larger number with no explanation for the gap.
+      const unreconciled = revenue.payments.paidAgainstClosed
+        ? ` ${revenue.payments.paidAgainstClosed} further payments (${formatMoney(revenue.payments.paidAgainstClosedAmount)}) are marked paid against cancelled orders and need reconciling.`
+        : "";
+
       return {
         reply: nowpaymentsApiConfigured
-          ? `NOWPayments active. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending. Crypto revenue: ${formatMoney(revenue.payments.nowpaymentsPaidAmount)}.`
-          : `NOWPayments checkout uses your hosted payment link. ${revenue.payments.paid} paid (${formatMoney(revenue.payments.paidAmount)}), ${revenue.payments.pending} pending.`,
+          ? `NOWPayments active. ${revenue.payments.paid - revenue.payments.paidAgainstClosed} paid against live orders (${formatMoney(revenue.payments.netPaidAmount)}), ${revenue.payments.pending} pending.${unreconciled}`
+          : `NOWPayments checkout uses your hosted payment link. ${revenue.payments.paid - revenue.payments.paidAgainstClosed} paid against live orders (${formatMoney(revenue.payments.netPaidAmount)}), ${revenue.payments.pending} pending.${unreconciled}`,
         suggestions,
         intent,
         data: { payments, nowpaymentsApiConfigured },

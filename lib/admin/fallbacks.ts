@@ -31,6 +31,9 @@ export const EMPTY_PAYMENT_STATS = {
   nowpaymentsPendingAmount: 0,
   manualPaid: 0,
   manualPaidAmount: 0,
+  paidAgainstClosed: 0,
+  paidAgainstClosedAmount: 0,
+  netPaidAmount: 0,
 };
 
 export const EMPTY_CUSTOMER_STATS = {

@@ -50,9 +50,9 @@ export default async function AdminRevenuePage() {
 
           label="Paid Payments"
 
-          value={`$${paymentStats.paidAmount.toFixed(2)}`}
+          value={`$${paymentStats.netPaidAmount.toFixed(2)}`}
 
-          hint={`${paymentStats.paid} successful payments`}
+          hint={`${paymentStats.paid - paymentStats.paidAgainstClosed} payments backing live orders`}
 
         />
 
@@ -61,6 +61,30 @@ export default async function AdminRevenuePage() {
         <StatCard label="Failed Payments" value={String(paymentStats.failed)} />
 
       </div>
+
+
+
+      {paymentStats.paidAgainstClosed > 0 && (
+
+        /* Stated rather than netted away silently: money recorded as received
+           against an order that was cancelled either needs refunding or the
+           record is wrong, and both want a human to look. */
+
+        <div className="mt-6 rounded-lg border border-amber-500/40 bg-amber-500/10 p-4 text-sm text-amber-200">
+
+          <span className="font-semibold">Needs reconciliation:</span>{" "}
+
+          {paymentStats.paidAgainstClosed} payment
+          {paymentStats.paidAgainstClosed === 1 ? " is" : "s are"} marked paid against
+          cancelled or failed orders, totalling ${paymentStats.paidAgainstClosedAmount.toFixed(2)}.
+
+          Excluded from Paid Payments above, which is why it ties out to Total Revenue.
+
+          Either the money was taken and needs refunding, or the payment records are stale.
+
+        </div>
+
+      )}
 
 
 

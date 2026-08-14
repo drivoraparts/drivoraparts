@@ -147,9 +147,25 @@ export async function getPaymentStats() {
     const supabase = getSupabaseAdmin();
     const { data, error } = await supabase
       .from("payments")
-      .select("status, amount, provider");
+      .select("status, amount, provider, order_id");
 
     if (error) throw error;
+
+    /*
+     * A payment can sit at "paid" while the order it belongs to was cancelled,
+     * and nothing reconciled the two: payments reported $11,067.50 paid while
+     * orders reported $9,557 revenue, with no way to see where the $1,510.50
+     * went. Loading the closed orders lets the difference be stated instead of
+     * left as two dashboard figures that silently disagree.
+     */
+    const { data: closedOrders, error: closedError } = await supabase
+      .from("orders")
+      .select("id")
+      .in("status", ["cancelled", "failed"]);
+
+    if (closedError) throw closedError;
+
+    const closedOrderIds = new Set((closedOrders ?? []).map((order) => order.id));
 
     const stats = {
       total: data?.length ?? 0,
@@ -168,6 +184,11 @@ export async function getPaymentStats() {
       nowpaymentsPendingAmount: 0,
       manualPaid: 0,
       manualPaidAmount: 0,
+      /** Paid payments whose order was cancelled or failed — needs reconciling. */
+      paidAgainstClosed: 0,
+      paidAgainstClosedAmount: 0,
+      /** Paid payments still backing a live order. Ties out to order revenue. */
+      netPaidAmount: 0,
     };
 
     for (const payment of data ?? []) {
@@ -187,6 +208,14 @@ export async function getPaymentStats() {
 
       if (payment.status === "paid") {
         stats.paidAmount += amount;
+
+        if (closedOrderIds.has(payment.order_id)) {
+          stats.paidAgainstClosed += 1;
+          stats.paidAgainstClosedAmount += amount;
+        } else {
+          stats.netPaidAmount += amount;
+        }
+
         if (payment.provider === "nowpayments") {
           stats.nowpaymentsPaid += 1;
           stats.nowpaymentsPaidAmount += amount;
