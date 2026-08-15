@@ -8,7 +8,7 @@ export default function AcceptableUsePolicyPage() {
   return (
     <Policy
       title="Acceptable Use Policy"
-      intro="This Acceptable Use Policy (“AUP”) sets out the rules that govern your use of the website and services operated by BROOKSTONEUS LLC (“Company”, “we”, “us”). It is designed to protect our users, our business, our partners, and the integrity and security of the Services. This AUP supplements our Terms of Service. By accessing or using the Services, you agree to comply with this AUP. Violations may result in suspension or termination of access and, where appropriate, referral to law enforcement."
+      intro="This Acceptable Use Policy (“AUP”) sets out the rules that govern your use of the website and services operated by DrivoraParts LLC (“Company”, “we”, “us”). It is designed to protect our users, our business, our partners, and the integrity and security of the Services. This AUP supplements our Terms of Service. By accessing or using the Services, you agree to comply with this AUP. Violations may result in suspension or termination of access and, where appropriate, referral to law enforcement."
       sections={[
         {
           heading: "Scope",
@@ -61,7 +61,7 @@ export default function AcceptableUsePolicyPage() {
         {
           heading: "Intellectual Property",
           paragraphs: [
-            "You may not copy, reproduce, republish, distribute, or create derivative works from content on the Services without authorization from BROOKSTONEUS LLC.",
+            "You may not copy, reproduce, republish, distribute, or create derivative works from content on the Services without authorization from DrivoraParts LLC.",
           ],
         },
         {
@@ -73,7 +73,7 @@ export default function AcceptableUsePolicyPage() {
         {
           heading: "Reporting Violations",
           paragraphs: [
-            "If you become aware of any violation of this AUP, please report it to BROOKSTONEUS LLC at support@drivoraparts.com so we can investigate and respond appropriately.",
+            "If you become aware of any violation of this AUP, please report it to DrivoraParts LLC at support@drivoraparts.com so we can investigate and respond appropriately.",
           ],
         },
         {

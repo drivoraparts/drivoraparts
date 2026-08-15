@@ -8,12 +8,12 @@ export default function EULAPage() {
   return (
     <Policy
       title="End User License Agreement"
-      intro="This End User License Agreement (“EULA”) is a legal agreement between you and BROOKSTONEUS LLC (“Company”, “we”, “us”) that governs your access to and use of the website, software, and digital content made available through our services (the “Services”). By accessing or using the Services, you agree to be bound by this EULA. If you do not agree to these terms, you must not access or use the Services."
+      intro="This End User License Agreement (“EULA”) is a legal agreement between you and DrivoraParts LLC (“Company”, “we”, “us”) that governs your access to and use of the website, software, and digital content made available through our services (the “Services”). By accessing or using the Services, you agree to be bound by this EULA. If you do not agree to these terms, you must not access or use the Services."
       sections={[
         {
           heading: "License Grant",
           paragraphs: [
-            "Subject to your compliance with this EULA, BROOKSTONEUS LLC grants you a limited, non-exclusive, non-transferable, non-sublicensable, and revocable license to access and use the website and its digital content for your personal, non-commercial purposes in connection with browsing and purchasing products.",
+            "Subject to your compliance with this EULA, DrivoraParts LLC grants you a limited, non-exclusive, non-transferable, non-sublicensable, and revocable license to access and use the website and its digital content for your personal, non-commercial purposes in connection with browsing and purchasing products.",
           ],
         },
         {
@@ -25,7 +25,7 @@ export default function EULAPage() {
         {
           heading: "Intellectual Property and Ownership",
           paragraphs: [
-            "The Services and all associated materials, including software, source code, design, layout, structure, graphics, logos, images, and text, are owned by BROOKSTONEUS LLC or its licensors and are protected by intellectual property laws. All rights not expressly granted to you under this EULA are reserved by BROOKSTONEUS LLC.",
+            "The Services and all associated materials, including software, source code, design, layout, structure, graphics, logos, images, and text, are owned by DrivoraParts LLC or its licensors and are protected by intellectual property laws. All rights not expressly granted to you under this EULA are reserved by DrivoraParts LLC.",
           ],
         },
         {
@@ -68,13 +68,13 @@ export default function EULAPage() {
         {
           heading: "Limitation of Liability",
           paragraphs: [
-            "To the maximum extent permitted by applicable law, BROOKSTONEUS LLC shall not be liable for any damages arising from your use of, or inability to use, the Services, including direct, indirect, incidental, or consequential damages.",
+            "To the maximum extent permitted by applicable law, DrivoraParts LLC shall not be liable for any damages arising from your use of, or inability to use, the Services, including direct, indirect, incidental, or consequential damages.",
           ],
         },
         {
           heading: "Contact",
           paragraphs: [
-            "For questions regarding this EULA, contact BROOKSTONEUS LLC at support@drivoraparts.com.",
+            "For questions regarding this EULA, contact DrivoraParts LLC at support@drivoraparts.com.",
           ],
         },
       ]}

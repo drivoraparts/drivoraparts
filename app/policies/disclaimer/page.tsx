@@ -8,7 +8,7 @@ export default function DisclaimerPage() {
   return (
     <Policy
       title="Disclaimer"
-      intro="The information, products, and content provided by BROOKSTONEUS LLC (“Company”, “we”, “us”) through our website and services (the “Services”) are offered for general commercial use. This Disclaimer explains the limits of the information we provide, the nature of the products we sell, and the responsibilities of customers and third parties. By using the Services, you acknowledge and accept the disclaimers set out below."
+      intro="The information, products, and content provided by DrivoraParts LLC (“Company”, “we”, “us”) through our website and services (the “Services”) are offered for general commercial use. This Disclaimer explains the limits of the information we provide, the nature of the products we sell, and the responsibilities of customers and third parties. By using the Services, you acknowledge and accept the disclaimers set out below."
       sections={[
         {
           heading: "General Information Disclaimer",
@@ -43,13 +43,13 @@ export default function DisclaimerPage() {
         {
           heading: "Installation and Professional Advice",
           paragraphs: [
-            "Information on the Services is not a substitute for professional installation, inspection, or advice. We strongly recommend that components be installed, configured, and tuned by qualified professionals. Improper installation or use may cause damage or injury for which BROOKSTONEUS LLC is not responsible.",
+            "Information on the Services is not a substitute for professional installation, inspection, or advice. We strongly recommend that components be installed, configured, and tuned by qualified professionals. Improper installation or use may cause damage or injury for which DrivoraParts LLC is not responsible.",
           ],
         },
         {
           heading: "Third-Party Supplier Responsibility",
           paragraphs: [
-            "Some products may be sourced from, manufactured by, or fulfilled by third-party suppliers or manufacturers. BROOKSTONEUS LLC is not responsible for the manufacturing defects, representations, warranties, or conduct of external suppliers beyond what is required by applicable law. Manufacturer warranties, where they exist, are provided by the respective manufacturers.",
+            "Some products may be sourced from, manufactured by, or fulfilled by third-party suppliers or manufacturers. DrivoraParts LLC is not responsible for the manufacturing defects, representations, warranties, or conduct of external suppliers beyond what is required by applicable law. Manufacturer warranties, where they exist, are provided by the respective manufacturers.",
           ],
         },
         {
@@ -61,19 +61,19 @@ export default function DisclaimerPage() {
         {
           heading: "External Links",
           paragraphs: [
-            "The Services may contain links to third-party websites or resources that are not owned or controlled by BROOKSTONEUS LLC. We are not responsible for the content, products, services, or practices of any third-party sites, and the inclusion of any link does not imply endorsement.",
+            "The Services may contain links to third-party websites or resources that are not owned or controlled by DrivoraParts LLC. We are not responsible for the content, products, services, or practices of any third-party sites, and the inclusion of any link does not imply endorsement.",
           ],
         },
         {
           heading: "Limitation of Responsibility",
           paragraphs: [
-            "To the maximum extent permitted by law, BROOKSTONEUS LLC disclaims all liability for any loss or damage, whether direct or indirect, arising from reliance on information, the purchase or use of products, the conduct of external suppliers, or your use of the Services.",
+            "To the maximum extent permitted by law, DrivoraParts LLC disclaims all liability for any loss or damage, whether direct or indirect, arising from reliance on information, the purchase or use of products, the conduct of external suppliers, or your use of the Services.",
           ],
         },
         {
           heading: "Contact",
           paragraphs: [
-            "If you have questions about this Disclaimer, contact BROOKSTONEUS LLC at support@drivoraparts.com.",
+            "If you have questions about this Disclaimer, contact DrivoraParts LLC at support@drivoraparts.com.",
           ],
         },
       ]}

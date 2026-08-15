@@ -8,7 +8,7 @@ export default function AffiliateDisclosurePage() {
   return (
     <Policy
       title="Affiliate Disclosure"
-      intro="This Affiliate Disclosure explains how BROOKSTONEUS LLC (“Company”, “we”, “us”) may earn compensation through affiliate and partner relationships in connection with our website and services (the “Services”). We believe in being transparent with our users about how we may be compensated, and this disclosure is provided in the interest of honesty and trust."
+      intro="This Affiliate Disclosure explains how DrivoraParts LLC (“Company”, “we”, “us”) may earn compensation through affiliate and partner relationships in connection with our website and services (the “Services”). We believe in being transparent with our users about how we may be compensated, and this disclosure is provided in the interest of honesty and trust."
       sections={[
         {
           heading: "Affiliate Links",
@@ -19,7 +19,7 @@ export default function AffiliateDisclosurePage() {
         {
           heading: "Commission-Based Earnings",
           paragraphs: [
-            "BROOKSTONEUS LLC may participate in affiliate or commission-based partnership programs. If you click an affiliate link and complete a qualifying purchase or action with a partner, we may receive a commission or referral fee from that partner. These commissions help support the operation of the Services.",
+            "DrivoraParts LLC may participate in affiliate or commission-based partnership programs. If you click an affiliate link and complete a qualifying purchase or action with a partner, we may receive a commission or referral fee from that partner. These commissions help support the operation of the Services.",
           ],
         },
         {
@@ -55,7 +55,7 @@ export default function AffiliateDisclosurePage() {
         {
           heading: "Contact",
           paragraphs: [
-            "If you have questions about this Affiliate Disclosure, contact BROOKSTONEUS LLC at support@drivoraparts.com.",
+            "If you have questions about this Affiliate Disclosure, contact DrivoraParts LLC at support@drivoraparts.com.",
           ],
         },
       ]}

@@ -8,7 +8,7 @@ export default function TermsOfServicePage() {
   return (
     <Policy
       title="Terms of Service"
-      intro="These Terms of Service (“Terms”) constitute a legally binding agreement between you and BROOKSTONEUS LLC (“Company”, “we”, “us”) and govern your access to and use of the website and services we operate (collectively, the “Services”). These Terms apply to all visitors, users, and customers of the Services. By accessing, browsing, or using the Services, or by placing an order, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you must not access or use the Services."
+      intro="These Terms of Service (“Terms”) constitute a legally binding agreement between you and DrivoraParts LLC (“Company”, “we”, “us”) and govern your access to and use of the website and services we operate (collectively, the “Services”). These Terms apply to all visitors, users, and customers of the Services. By accessing, browsing, or using the Services, or by placing an order, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you must not access or use the Services."
       sections={[
         {
           heading: "Acceptance of Terms",
@@ -71,7 +71,7 @@ export default function TermsOfServicePage() {
         {
           heading: "Intellectual Property",
           paragraphs: [
-            "All content on the Services, including text, graphics, logos, images, page layouts, and software, is the property of BROOKSTONEUS LLC or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written permission.",
+            "All content on the Services, including text, graphics, logos, images, page layouts, and software, is the property of DrivoraParts LLC or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written permission.",
           ],
         },
         {
@@ -89,13 +89,13 @@ export default function TermsOfServicePage() {
         {
           heading: "Limitation of Liability",
           paragraphs: [
-            "To the maximum extent permitted by law, BROOKSTONEUS LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Services. Our total aggregate liability for any claim shall not exceed the amount you paid for the product or order giving rise to the claim.",
+            "To the maximum extent permitted by law, DrivoraParts LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Services. Our total aggregate liability for any claim shall not exceed the amount you paid for the product or order giving rise to the claim.",
           ],
         },
         {
           heading: "Indemnification",
           paragraphs: [
-            "You agree to indemnify, defend, and hold harmless BROOKSTONEUS LLC and its officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising out of your violation of these Terms or your misuse of the Services.",
+            "You agree to indemnify, defend, and hold harmless DrivoraParts LLC and its officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising out of your violation of these Terms or your misuse of the Services.",
           ],
         },
         {
@@ -107,7 +107,7 @@ export default function TermsOfServicePage() {
         {
           heading: "Dispute Resolution and Governing Law",
           paragraphs: [
-            "These Terms are governed by the laws of the United States and the state in which BROOKSTONEUS LLC is organized, without regard to conflict-of-law principles. You agree that any dispute arising out of or relating to these Terms or the Services will first be addressed through good-faith negotiation, and that any formal proceedings will be brought in the courts having jurisdiction in that location, unless otherwise required by applicable law.",
+            "These Terms are governed by the laws of the United States and the state in which DrivoraParts LLC is organized, without regard to conflict-of-law principles. You agree that any dispute arising out of or relating to these Terms or the Services will first be addressed through good-faith negotiation, and that any formal proceedings will be brought in the courts having jurisdiction in that location, unless otherwise required by applicable law.",
           ],
         },
         {
@@ -119,7 +119,7 @@ export default function TermsOfServicePage() {
         {
           heading: "Contact",
           paragraphs: [
-            "Questions about these Terms may be sent to BROOKSTONEUS LLC at support@drivoraparts.com.",
+            "Questions about these Terms may be sent to DrivoraParts LLC at support@drivoraparts.com.",
           ],
         },
       ]}

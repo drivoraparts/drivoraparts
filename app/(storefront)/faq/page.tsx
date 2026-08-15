@@ -95,7 +95,7 @@ const FAQS: FaqItem[] = [
   {
     question: "Is DrivoraParts a real, registered business?",
     answer:
-      "Yes — BROOKSTONEUS LLC is a US-registered company with headquarters in Torrance, California. Full company and policy details are available in our footer, including Terms of Sale, Privacy Policy, and Refund Policy.",
+      "Yes — DrivoraParts LLC is a US-registered company with headquarters in Torrance, California. Full company and policy details are available in our footer, including Terms of Sale, Privacy Policy, and Refund Policy.",
   },
   {
     question: "I have a question that isn't answered here — what do I do?",

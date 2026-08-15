@@ -52,7 +52,7 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
   },
   "/policies/liability": {
     title: "Limitation of Liability",
-    description: "Limitation of liability terms for BROOKSTONEUS LLC and marketplace transactions.",
+    description: "Limitation of liability terms for DrivoraParts LLC and marketplace transactions.",
   },
   "/policies/dpa": {
     title: "Data Processing Agreement",

@@ -1,7 +1,8 @@
 import {
+  AUSTRALIA_LOGISTICS_HUB,
   COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
-  SOURCING_SUMMARY,
+  JAPAN_LOGISTICS_HUB,
   US_HEADQUARTERS,
 } from "./company";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
@@ -18,7 +19,7 @@ export const TRUST_SECTION = {
   headline: "Registered US seller · encrypted checkout · real inventory",
   // Derived, not hand-written: a hub that changes in company.ts must not be
   // able to leave this line claiming somewhere we no longer ship from.
-  subhead: `${COMPANY_LEGAL_NAME} operates from ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName}. ${SOURCING_SUMMARY} Every listing is reviewed for accurate photos and specs, backed by freight-ready logistics and NOWPayments crypto checkout.`,
+  subhead: `${COMPANY_LEGAL_NAME} operates from ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName} with distribution in ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.country} and ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}. Every listing is reviewed for accurate photos and specs, backed by freight-ready logistics and NOWPayments crypto checkout.`,
   legalLine: `${COMPANY_LEGAL_NAME} · ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} · ${COMPANY_SUPPORT_EMAIL}`,
   listingStat: `${HOME_LISTING_COUNT.toLocaleString()}+ active listings`,
 } as const;
@@ -45,7 +46,7 @@ export const TRUST_SIGNALS: TrustSignal[] = [
   {
     id: "freight",
     title: "Freight & LTL ready",
-    detail: "Truck beds, shells, and pallet freight coordinated worldwide through our supplier network.",
+    detail: "Truck beds, shells, and pallet freight coordinated worldwide from our logistics hubs.",
     seal: "freight",
   },
   {
@@ -80,7 +81,7 @@ export const TRUST_CATEGORIES: TrustCategory[] = [
     id: "shipping",
     eyebrow: "Shipping & Returns",
     headline: "Free shipping. 30-day money-back guarantee.",
-    detail: `Every order ships free, worldwide — from single parts to full engine assemblies, sourced through suppliers in the US, Japan and Australia. Not the right fit? Return it within 30 days for a refund.`,
+    detail: `Every order ships free, worldwide — from single parts to full engine assemblies, coordinated from our US, ${JAPAN_LOGISTICS_HUB.country}, and ${AUSTRALIA_LOGISTICS_HUB.country} hubs. Not the right fit? Return it within 30 days for a refund.`,
     chips: ["Free Shipping", "30-Day Guarantee", "LTL Freight"],
     seal: "shipping",
   },
