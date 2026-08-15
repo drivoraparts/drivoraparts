@@ -17,6 +17,22 @@ export function getAuthSecret(): string {
   return ensureAdminInitialized().authSecret;
 }
 
+/**
+ * The password is the only thing sign-in asks for.
+ *
+ * There is one admin account, so the email was never selecting between
+ * identities -- it was a second thing to type that had to match a fixed value.
+ * The account's email still exists and still identifies the session, audit log
+ * and password reset; it simply is not a login field.
+ *
+ * Always a timing-safe comparison, so a wrong password cannot be narrowed down
+ * by how long the response takes.
+ */
+export async function validateAdminPassword(password: string): Promise<boolean> {
+  if (!password) return false;
+  return timingSafeEqual(password, getAdminPassword());
+}
+
 export async function validateAdminCredentials(
   email: string,
   password: string
@@ -65,7 +81,7 @@ export async function changeAdminPassword(
     return { ok: false, error: "New password must be at least 8 characters" };
   }
 
-  const valid = await validateAdminCredentials(getAdminEmail(), currentPassword);
+  const valid = await validateAdminPassword(currentPassword);
   if (!valid) {
     return { ok: false, error: "Current password is incorrect" };
   }

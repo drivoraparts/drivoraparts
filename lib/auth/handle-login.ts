@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { validateAdminCredentials } from "@/lib/auth/admin";
+import { getAdminEmail, validateAdminPassword } from "@/lib/auth/admin";
 import {
   enforceLoginRateLimit,
   recordFailedLoginAttempt,
@@ -22,29 +22,30 @@ export async function handleAdminLogin(req: Request): Promise<Response> {
     }
 
     const body = await req.json().catch(() => null);
-    const email = typeof body?.email === "string" ? body.email.trim() : "";
     const password = typeof body?.password === "string" ? body.password : "";
 
-    authDebug("login", "attempt", {
-      email,
-      hasPassword: Boolean(password),
-      ip,
-    });
+    /*
+     * Password only. There is a single admin account, so the email field was
+     * never choosing between identities — it was a second fixed string to
+     * type. The account email still identifies the session and the audit log;
+     * it is simply not something sign-in asks for. Any email sent by an older
+     * client is ignored rather than checked.
+     */
+    const email = getAdminEmail();
 
-    if (!email || !password) {
-      authDebug("login", "rejected — missing fields");
-      return NextResponse.json(
-        { error: "Email and password required" },
-        { status: 400 }
-      );
+    authDebug("login", "attempt", { hasPassword: Boolean(password), ip });
+
+    if (!password) {
+      authDebug("login", "rejected — missing password");
+      return NextResponse.json({ error: "Password required" }, { status: 400 });
     }
 
-    const valid = await validateAdminCredentials(email, password);
+    const valid = await validateAdminPassword(password);
 
     if (!valid) {
-      authDebug("login", "rejected — invalid credentials", { email, ip });
+      authDebug("login", "rejected — invalid password", { ip });
       await recordFailedLoginAttempt(req, email);
-      return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+      return NextResponse.json({ error: "Incorrect password" }, { status: 401 });
     }
 
     const token = await createAdminSessionToken(email.toLowerCase());

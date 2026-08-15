@@ -13,7 +13,6 @@ export default function AdminLoginForm() {
   const searchParams = useSearchParams();
   const next = searchParams.get("next") ?? "/admin/dashboard";
 
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -28,13 +27,13 @@ export default function AdminLoginForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "same-origin",
-        body: JSON.stringify({ email: email.trim(), password }),
+        body: JSON.stringify({ password }),
       });
 
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok || !data.success) {
-        setError(data.error ?? "Login failed. Check your email and password.");
+        setError(data.error ?? "Login failed. Check your password.");
         return;
       }
 
@@ -63,15 +62,6 @@ export default function AdminLoginForm() {
       }
     >
       <form onSubmit={handleSubmit} className="space-y-5">
-        <AuthField
-          id="admin-email"
-          label="Email address"
-          type="email"
-          autoComplete="username"
-          value={email}
-          onChange={setEmail}
-        />
-
         <AuthField
           id="admin-password"
           label="Password"
