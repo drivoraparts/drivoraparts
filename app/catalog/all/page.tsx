@@ -60,22 +60,14 @@ export default async function AllProductsPage({
         ]}
       />
       <main className="min-h-screen bg-white text-neutral-900">
-        {/* A search lands here from the header, so the results have to be the
-            first thing on screen. Rendering the browse page's hero, vehicle
-            finder, category grid and editorial rails above them pushed the
-            feed ~5,500px down the page: the searcher saw marketing content,
-            no results, and reasonably concluded the search had hung. */}
-        {!isSearch ? (
-          <>
-            <CatalogHero />
-            <CatalogVehicleFinderSection />
-            <PopularCategoriesSection />
-            <SeasonalCollectionsSection />
-            <TrendingRail />
-            <RecentlyAddedRail />
-            <StaffPicksSection />
-          </>
-        ) : null}
+        {/* Only the hero sits above the listings. Everything else that used to
+            — vehicle finder, category grid, editorial rails — pushed the feed
+            5,509px down, better than nine screens of scrolling. A search
+            looked like it had hung, and "View all" looked like it had bounced
+            the visitor back to a second homepage, since these are the same
+            components the homepage is built from. Whoever arrives here asked
+            for the list; the browsing aids belong underneath it. */}
+        {!isSearch ? <CatalogHero /> : null}
 
         <div className="px-3 pb-6 pt-10 sm:px-6">
           <header className="mb-3 sm:mb-6">
@@ -103,12 +95,17 @@ export default async function AllProductsPage({
           />
         </div>
 
-        {/* Still reachable after a search, just below the results rather than
-            buried above them. */}
-        {isSearch ? (
+        {/* Still reachable, just below the listings rather than in front of
+            them. Same set either way — someone who searched and someone who
+            browsed both benefit from a way to keep looking. */}
+        <CatalogVehicleFinderSection />
+        <PopularCategoriesSection />
+        <TrendingRail />
+        {!isSearch ? (
           <>
-            <PopularCategoriesSection />
-            <TrendingRail />
+            <SeasonalCollectionsSection />
+            <RecentlyAddedRail />
+            <StaffPicksSection />
           </>
         ) : null}
       </main>
