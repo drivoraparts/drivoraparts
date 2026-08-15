@@ -5,6 +5,7 @@ import {
   answerOrderQuestion,
   answerProductQuestion,
 } from "./answers";
+import { answerConversational } from "./conversation";
 import { classifyAssistantIntent, getIntentSuggestions } from "./intents";
 import {
   getAnalyticsOverview,
@@ -91,6 +92,15 @@ export async function generateAdminAssistantReply(
       intent,
     };
   }
+
+  /*
+   * Greetings, thanks and "can you edit products?" are answered before
+   * anything reaches the database. None of them need data, and a hello should
+   * never be matched against the product catalog — "wassup" previously fell
+   * through every handler and came back as a revenue snapshot.
+   */
+  const conversational = answerConversational(message);
+  if (conversational) return conversational;
 
   if (
     !supabaseReady &&
