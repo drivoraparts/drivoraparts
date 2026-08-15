@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { makeTawkDraggable, teardownTawkDraggable } from "@/lib/chat/draggable-tawk";
 
 const TAWK_SITE_ID = "6a392868452f781d473b4ceb";
 const TAWK_WIDGET_ID = "1jrs9hdba";
@@ -45,6 +46,10 @@ function installTawkScript(): void {
     window.Tawk_API?.showWidget?.();
   };
 
+  // Polls for the widget on its own, so it does not depend on Tawk's
+  // onLoaded callback surviving the script's own initialisation.
+  makeTawkDraggable();
+
   const script = document.createElement("script");
   script.id = "tawk-script";
   script.async = true;
@@ -63,11 +68,17 @@ export default function TawkChat() {
 
     if (typeof w.requestIdleCallback === "function") {
       const id = w.requestIdleCallback(installTawkScript, { timeout: 4000 });
-      return () => w.cancelIdleCallback?.(id);
+      return () => {
+        w.cancelIdleCallback?.(id);
+        teardownTawkDraggable();
+      };
     }
 
     const timer = window.setTimeout(installTawkScript, 3000);
-    return () => window.clearTimeout(timer);
+    return () => {
+      window.clearTimeout(timer);
+      teardownTawkDraggable();
+    };
   }, []);
 
   return null;
