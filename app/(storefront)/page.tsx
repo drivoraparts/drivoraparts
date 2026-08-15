@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
+import StarterPicksRail from "@/components/home/StarterPicksRail";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
 import CinematicLifestyleSection from "@/components/home/CinematicLifestyleSection";
@@ -97,6 +98,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Affordable stock first: checkout is crypto-only and irreversible, so a
+          new visitor needs something they can risk before a $5,900 engine. */}
+      <StarterPicksRail />
 
       <ShopByVehicleSection />
 
