@@ -51,7 +51,7 @@ export default function PoliciesPage() {
         Policies
       </h1>
       <p className="mb-10 text-sm text-neutral-500">
-        Legal information and operating policies for DrivoraParts LLC.
+        Legal information and operating policies for BROOKSTONEUS LLC.
       </p>
 
       {sections.map((section) => (

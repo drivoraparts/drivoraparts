@@ -8,7 +8,7 @@ export default function DPAPage() {
   return (
     <Policy
       title="Data Processing Agreement"
-      intro="This Data Processing Agreement (“DPA”) describes how DrivoraParts LLC (“Company”, “we”, “us”) processes personal data on behalf of customers and partners in connection with our website and services (the “Services”), and the safeguards that apply to that data. This DPA forms part of our agreements wherever we process personal data on behalf of another party and is intended to reflect the requirements of applicable data protection laws."
+      intro="This Data Processing Agreement (“DPA”) describes how BROOKSTONEUS LLC (“Company”, “we”, “us”) processes personal data on behalf of customers and partners in connection with our website and services (the “Services”), and the safeguards that apply to that data. This DPA forms part of our agreements wherever we process personal data on behalf of another party and is intended to reflect the requirements of applicable data protection laws."
       sections={[
         {
           heading: "Definitions",
@@ -19,7 +19,7 @@ export default function DPAPage() {
         {
           heading: "Roles of the Parties",
           paragraphs: [
-            "Where DrivoraParts LLC processes personal data to provide the Services, it acts as a processor or service provider on behalf of the customer or partner, who acts as the controller of that data. Each party is responsible for complying with its respective obligations under applicable data protection laws.",
+            "Where BROOKSTONEUS LLC processes personal data to provide the Services, it acts as a processor or service provider on behalf of the customer or partner, who acts as the controller of that data. Each party is responsible for complying with its respective obligations under applicable data protection laws.",
           ],
         },
         {
@@ -79,7 +79,7 @@ export default function DPAPage() {
         {
           heading: "Contact",
           paragraphs: [
-            "For questions regarding this DPA or our data processing practices, contact DrivoraParts LLC at support@drivoraparts.com.",
+            "For questions regarding this DPA or our data processing practices, contact BROOKSTONEUS LLC at support@drivoraparts.com.",
           ],
         },
       ]}

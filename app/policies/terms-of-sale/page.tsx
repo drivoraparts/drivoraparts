@@ -8,7 +8,7 @@ export default function TermsOfSalePage() {
   return (
     <Policy
       title="Terms of Sale"
-      intro="These Terms of Sale govern all purchases of products made through the website and services operated by DrivoraParts LLC (“Company”, “we”, “us”). They describe how orders are placed and accepted, how prices and payments are handled, and the rights and responsibilities of both parties in a sale. By placing an order, you agree to these Terms of Sale in addition to our Terms of Service, Shipping Policy, and Returns & Refund Policy."
+      intro="These Terms of Sale govern all purchases of products made through the website and services operated by BROOKSTONEUS LLC (“Company”, “we”, “us”). They describe how orders are placed and accepted, how prices and payments are handled, and the rights and responsibilities of both parties in a sale. By placing an order, you agree to these Terms of Sale in addition to our Terms of Service, Shipping Policy, and Returns & Refund Policy."
       sections={[
         {
           heading: "Application of These Terms",
@@ -61,7 +61,7 @@ export default function TermsOfSalePage() {
         {
           heading: "Warranties",
           paragraphs: [
-            "Unless expressly stated in writing, products are sold without any warranty from DrivoraParts LLC. Any applicable manufacturer or third-party warranties are passed through to you to the extent permitted. To the maximum extent permitted by law, we disclaim all implied warranties, including merchantability and fitness for a particular purpose.",
+            "Unless expressly stated in writing, products are sold without any warranty from BROOKSTONEUS LLC. Any applicable manufacturer or third-party warranties are passed through to you to the extent permitted. To the maximum extent permitted by law, we disclaim all implied warranties, including merchantability and fitness for a particular purpose.",
           ],
         },
         {
@@ -73,7 +73,7 @@ export default function TermsOfSalePage() {
         {
           heading: "Contact",
           paragraphs: [
-            "For questions about a purchase or these Terms of Sale, contact DrivoraParts LLC at support@drivoraparts.com.",
+            "For questions about a purchase or these Terms of Sale, contact BROOKSTONEUS LLC at support@drivoraparts.com.",
           ],
         },
       ]}

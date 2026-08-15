@@ -12,12 +12,12 @@ export default function PrivacyPolicyPage() {
   return (
     <Policy
       title="Privacy Policy"
-      intro="DrivoraParts LLC (“Company”, “we”, “us”, or “our”) operates this website and the related e-commerce services (collectively, the “Services”). This Privacy Policy describes in detail how we collect, use, store, share, and protect your personal information when you visit our website, create an account, place an order, or otherwise interact with us. We are committed to handling your information responsibly and transparently. By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy and agree to the practices described below. If you do not agree with this Privacy Policy, please do not use the Services."
+      intro="BROOKSTONEUS LLC (“Company”, “we”, “us”, or “our”) operates this website and the related e-commerce services (collectively, the “Services”). This Privacy Policy describes in detail how we collect, use, store, share, and protect your personal information when you visit our website, create an account, place an order, or otherwise interact with us. We are committed to handling your information responsibly and transparently. By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy and agree to the practices described below. If you do not agree with this Privacy Policy, please do not use the Services."
       sections={[
         {
           heading: "Scope of This Policy",
           paragraphs: [
-            "This Privacy Policy applies to all visitors, registered users, and customers of the Services, and to all personal information that DrivoraParts LLC collects through the website, checkout process, customer support channels, and related business operations.",
+            "This Privacy Policy applies to all visitors, registered users, and customers of the Services, and to all personal information that BROOKSTONEUS LLC collects through the website, checkout process, customer support channels, and related business operations.",
             "This Privacy Policy does not apply to third-party websites, services, or applications that may be linked from our Services. Those third parties operate under their own privacy policies, and we encourage you to review them before providing any personal information.",
           ],
         },
@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
           heading: "Payment Processing",
           paragraphs: [
             "Payments made through the Services are handled by trusted third-party payment processors such as Stripe and PayPal. When you submit payment information at checkout, your data is transmitted directly to the relevant processor and handled under their own security standards and privacy policies.",
-            "DrivoraParts LLC does not store complete payment card numbers on its servers. We may retain limited transaction records, such as the last four digits of a card, the payment method type, and the transaction status, for order management, fraud prevention, and accounting purposes.",
+            "BROOKSTONEUS LLC does not store complete payment card numbers on its servers. We may retain limited transaction records, such as the last four digits of a card, the payment method type, and the transaction status, for order management, fraud prevention, and accounting purposes.",
           ],
         },
         {
@@ -132,7 +132,7 @@ export default function PrivacyPolicyPage() {
         {
           heading: "Legal Compliance",
           paragraphs: [
-            "We process personal information in accordance with applicable data protection and consumer protection laws. We may disclose information where necessary to comply with a legal obligation, enforce our agreements, or protect the rights, property, or safety of DrivoraParts LLC, our customers, or others.",
+            "We process personal information in accordance with applicable data protection and consumer protection laws. We may disclose information where necessary to comply with a legal obligation, enforce our agreements, or protect the rights, property, or safety of BROOKSTONEUS LLC, our customers, or others.",
           ],
         },
         {

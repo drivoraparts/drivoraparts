@@ -1,9 +1,6 @@
 import ScrollReveal from "./ScrollReveal";
 import { directAssetUrl } from "@/lib/media/optimize-image";
-import {
-  AUSTRALIA_LOGISTICS_HUB,
-  JAPAN_LOGISTICS_HUB,
-} from "@/lib/content/company";
+
 
 type Reason = {
   title: string;
@@ -70,7 +67,7 @@ const REASONS: (Reason & { accent?: "red" })[] = [
   },
   {
     title: "Worldwide Reach",
-    detail: `Shipping coordinated from our US, ${JAPAN_LOGISTICS_HUB.country}, and ${AUSTRALIA_LOGISTICS_HUB.country} logistics hubs, globally.`,
+    detail: "Parts sourced from suppliers in the US, Japan and Australia, shipped worldwide.",
     icon: (
       <IconWrap>
         <circle cx="12" cy="12" r="9" />

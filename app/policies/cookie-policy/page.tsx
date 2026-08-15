@@ -8,7 +8,7 @@ export default function CookiePolicyPage() {
   return (
     <Policy
       title="Cookie Policy"
-      intro="This Cookie Policy explains how DrivoraParts LLC (“Company”, “we”, “us”) uses cookies and similar tracking technologies on our website and services (the “Services”). It describes what cookies are, the types of cookies we use, why we use them, and how you can manage your preferences. This Cookie Policy should be read together with our Privacy Policy. By continuing to use the Services, you consent to our use of cookies as described below, except where you have disabled them through your browser."
+      intro="This Cookie Policy explains how BROOKSTONEUS LLC (“Company”, “we”, “us”) uses cookies and similar tracking technologies on our website and services (the “Services”). It describes what cookies are, the types of cookies we use, why we use them, and how you can manage your preferences. This Cookie Policy should be read together with our Privacy Policy. By continuing to use the Services, you consent to our use of cookies as described below, except where you have disabled them through your browser."
       sections={[
         {
           heading: "What Are Cookies",
@@ -73,7 +73,7 @@ export default function CookiePolicyPage() {
         {
           heading: "Contact",
           paragraphs: [
-            "If you have questions about our use of cookies, please contact DrivoraParts LLC at support@drivoraparts.com.",
+            "If you have questions about our use of cookies, please contact BROOKSTONEUS LLC at support@drivoraparts.com.",
           ],
         },
       ]}

@@ -69,7 +69,7 @@ export default function FooterContent() {
 
       <div className="border-t border-neutral-200 py-6 text-center text-xs text-neutral-500">
         <CurrencyFooterNote />
-        © {new Date().getFullYear()} DrivoraParts LLC. {t("rightsReserved")}
+        © {new Date().getFullYear()} BROOKSTONEUS LLC. {t("rightsReserved")}
       </div>
     </>
   );
