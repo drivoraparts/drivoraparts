@@ -18,11 +18,26 @@ export function isConfirmedOrderStatus(status: OrderStatus): boolean {
 }
 
 /**
+ * What this actually needs from an order.
+ *
+ * Only the presence of a customer and the number of line items are checked,
+ * never their contents — so callers computing stats over every order can
+ * select presence instead of fetching whole joined rows. OrderWithDetails
+ * still satisfies this, so existing callers are unaffected.
+ */
+export type PlacedOrderCandidate = {
+  status: OrderStatus;
+  created_at: string;
+  customer: unknown;
+  items: readonly unknown[];
+};
+
+/**
  * A placed order completed checkout (customer + line items + payment session).
  * Abandoned unpaid checkouts and failed/cancelled attempts are excluded.
  */
 export function isPlacedOrder(
-  order: Pick<OrderWithDetails, "status" | "created_at" | "customer" | "items">,
+  order: PlacedOrderCandidate,
   payment?: PaymentRecord | null
 ): boolean {
   if (order.status === "cancelled" || order.status === "failed") {

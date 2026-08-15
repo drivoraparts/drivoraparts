@@ -5,6 +5,7 @@ import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { assertOrderTransition } from "@/lib/orders/state-machine";
 import { isPlacedOrder } from "@/lib/orders/placed";
 import { findPaymentsByOrderIds } from "@/lib/db/payments";
+import type { PaymentRecord } from "@/lib/db/payments";
 import type { CustomerRecord } from "./customers";
 
 export type OrderStatus =
@@ -633,24 +634,76 @@ export async function listStalePendingOrders(
   return (data ?? []) as OrderRecord[];
 }
 
-export async function getOrderStats() {
-  return guardedSupabaseRead("getOrderStats", EMPTY_ORDER_STATS, async () => {
-    const supabase = getSupabaseAdmin();
+/**
+ * Every order, paged past PostgREST's per-request ceiling, in the lean shape
+ * the stats need.
+ *
+ * Stats must not come from listOrders(1000): that is exactly the ceiling, so
+ * the figures would silently stop counting at the thousandth order — revenue,
+ * order counts and abandoned checkouts all quietly wrong, with nothing to
+ * indicate a cap had been hit. The same mistake was already found in the
+ * inventory stats, where Total SKUs read 500 against a table of 1,884.
+ *
+ * isPlacedOrder only needs to know whether a customer and any line items
+ * exist, so this selects presence rather than whole rows — the full
+ * OrderWithDetails payload for thousands of orders would be far heavier than
+ * the stats require.
+ */
+type OrderStatsRow = Pick<OrderRecord, "id" | "status" | "total" | "created_at"> & {
+  customer: { id: string } | null;
+  items: { id: string }[];
+};
 
-    const { data: paidOrders, error } = await supabase
+async function fetchAllOrdersForStats(): Promise<OrderStatsRow[]> {
+  const supabase = getSupabaseAdmin();
+  const pageSize = 1000;
+  const rows: OrderStatsRow[] = [];
+
+  for (let from = 0; ; from += pageSize) {
+    const { data, error } = await supabase
       .from("orders")
-      .select("total, status, created_at")
-      .eq("status", "paid");
+      .select("id, status, total, created_at, customer:customers(id), items:order_items(id)")
+      .order("created_at", { ascending: false })
+      .range(from, from + pageSize - 1);
 
     if (error) throw error;
+    const batch = (data ?? []) as unknown as OrderStatsRow[];
+    rows.push(...batch);
+    if (batch.length < pageSize) break;
+  }
 
-    const totalRevenue = (paidOrders ?? []).reduce(
+  return rows;
+}
+
+/** Chunked so a large id list cannot overflow the request URL. */
+async function findPaymentsForOrders(
+  orderIds: string[]
+): Promise<Map<string, PaymentRecord>> {
+  const chunkSize = 200;
+  const merged = new Map<string, PaymentRecord>();
+
+  for (let i = 0; i < orderIds.length; i += chunkSize) {
+    const chunk = orderIds.slice(i, i + chunkSize);
+    const found = await findPaymentsByOrderIds(chunk);
+    for (const [orderId, payment] of found) {
+      if (!merged.has(orderId)) merged.set(orderId, payment);
+    }
+  }
+
+  return merged;
+}
+
+export async function getOrderStats() {
+  return guardedSupabaseRead("getOrderStats", EMPTY_ORDER_STATS, async () => {
+    const recentOrders = await fetchAllOrdersForStats();
+
+    const paidOrders = recentOrders.filter((order) => order.status === "paid");
+    const totalRevenue = paidOrders.reduce(
       (sum, order) => sum + Number(order.total),
       0
     );
 
-    const recentOrders = await listOrders(1000);
-    const payments = await findPaymentsByOrderIds(recentOrders.map((order) => order.id));
+    const payments = await findPaymentsForOrders(recentOrders.map((order) => order.id));
     const placedOrders = recentOrders.filter((order) =>
       isPlacedOrder(order, payments.get(order.id))
     );
