@@ -64,12 +64,6 @@ export function getNowPaymentsIpnSecret(): string | null {
   return process.env.NOWPAYMENTS_IPN_SECRET ?? null;
 }
 
-/** NexaPay webhook HMAC secret -- verifies X-NexaPay-Signature on incoming
- * webhooks. Never log or expose this value. */
-export function getNexaPayWebhookSecret(): string | null {
-  return process.env.NEXAPAY_WEBHOOK_SECRET ?? null;
-}
-
 /** Separate NOWPayments account used for the (pending) fiat on-ramp. */
 export function getNowPaymentsFiatApiKey(): string | null {
   return process.env.NOWPAYMENTS_FIAT_API_KEY ?? null;
