@@ -1,8 +1,12 @@
 import { getProductById } from "@/lib/inventory";
 import type { CreateOrderItemInput } from "@/lib/db/orders";
 
-const MAX_LINE_ITEMS = 50;
-const MAX_QUANTITY_PER_ITEM = 20;
+import {
+  MAX_LINE_ITEMS,
+  MAX_QUANTITY_PER_ITEM,
+  lineItemLimitMessage,
+  quantityLimitMessage,
+} from "./limits";
 
 export type RawCheckoutItem = {
   productId: number;
@@ -14,9 +18,32 @@ export type RawCheckoutItem = {
   quantity: number;
 };
 
-export function parseRawCheckoutItems(raw: unknown): RawCheckoutItem[] | null {
-  if (!Array.isArray(raw) || raw.length === 0) return null;
-  if (raw.length > MAX_LINE_ITEMS) return null;
+/**
+ * A rejection the customer can act on.
+ *
+ * This used to return null for every failure, so the route answered every bad
+ * payload with "Invalid checkout payload" — shown to the customer verbatim.
+ * Exceeding the quantity limit is an ordinary thing to do and deserves an
+ * ordinary explanation; a malformed body still gets the generic message,
+ * because there is nothing useful to say about it.
+ */
+export type CheckoutItemsResult = {
+  /** Parsed items, or null when the cart cannot be accepted. */
+  items: RawCheckoutItem[] | null;
+  /** Customer-facing reason, set whenever items is null. */
+  error: string | null;
+};
+
+// A discriminated union would read better, but the project compiles with
+// `strict: false`, and without strictNullChecks TypeScript will not narrow one.
+
+export function parseRawCheckoutItems(raw: unknown): CheckoutItemsResult {
+  if (!Array.isArray(raw) || raw.length === 0) {
+    return { items: null, error: "Your cart is empty." };
+  }
+  if (raw.length > MAX_LINE_ITEMS) {
+    return { items: null, error: lineItemLimitMessage() };
+  }
 
   const items: RawCheckoutItem[] = [];
 
@@ -28,10 +55,21 @@ export function parseRawCheckoutItems(raw: unknown): RawCheckoutItem[] | null {
       typeof item.quantity !== "number" ||
       !Number.isFinite(item.productId) ||
       !Number.isInteger(item.quantity) ||
-      item.quantity < 1 ||
-      item.quantity > MAX_QUANTITY_PER_ITEM
+      item.quantity < 1
     ) {
-      return null;
+      return {
+        items: null,
+        error: "Something in your cart looks wrong. Please clear it and try again.",
+      };
+    }
+
+    if (item.quantity > MAX_QUANTITY_PER_ITEM) {
+      return {
+        items: null,
+        error: quantityLimitMessage(
+          typeof item.name === "string" ? item.name : undefined
+        ),
+      };
     }
 
     items.push({
@@ -45,7 +83,7 @@ export function parseRawCheckoutItems(raw: unknown): RawCheckoutItem[] | null {
     });
   }
 
-  return items;
+  return { items, error: null };
 }
 
 /**

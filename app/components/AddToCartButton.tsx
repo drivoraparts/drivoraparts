@@ -4,6 +4,12 @@ import { useState, type MouseEvent } from "react";
 import { useCart } from "@/context/CartContext";
 import { trackEvent } from "@/lib/analytics/client";
 import { productHasStock } from "@/lib/stock";
+import {
+  MAX_LINE_ITEMS,
+  MAX_QUANTITY_PER_ITEM,
+  lineItemLimitMessage,
+  quantityLimitMessage,
+} from "@/lib/checkout/limits";
 import { showToast } from "@/lib/store/toastStore";
 
 export type AddToCartProduct = {
@@ -35,6 +41,20 @@ export default function AddToCartButton({
 
     const neededQty = cart.find((i) => i.id === product.id)?.quantity ?? 0;
     const totalQty = neededQty + quantity;
+
+    // Checked here rather than at checkout, where the API's rejection reached
+    // the customer as "Invalid checkout payload" after they had already
+    // entered their name and shipping address.
+    if (totalQty > MAX_QUANTITY_PER_ITEM) {
+      showToast(quantityLimitMessage(product.name));
+      return;
+    }
+
+    const alreadyInCart = cart.some((i) => i.id === product.id);
+    if (!alreadyInCart && cart.length >= MAX_LINE_ITEMS) {
+      showToast(lineItemLimitMessage());
+      return;
+    }
 
     setLoading(true);
 

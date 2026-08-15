@@ -74,20 +74,28 @@ export async function POST(req: Request) {
 
   try {
     const body = await req.json().catch(() => null);
-    const rawItems = parseRawCheckoutItems(body?.items);
+    const parsedItems = parseRawCheckoutItems(body?.items);
     const customer = parseCustomer(body?.customer);
 
-    if (!rawItems || !customer) {
-      logWarn("checkout_invalid_payload", { ip });
+    // Item problems are reported separately from customer-detail problems, so
+    // the customer is told what is actually wrong rather than being handed one
+    // catch-all message at the last step of checkout.
+    if (!parsedItems.items) {
+      logWarn("checkout_invalid_items", { ip, reason: parsedItems.error });
+      return NextResponse.json({ error: parsedItems.error }, { status: 400 });
+    }
+
+    if (!customer) {
+      logWarn("checkout_invalid_customer", { ip });
       return NextResponse.json(
-        { error: "Invalid checkout payload" },
+        { error: "Please enter your name, email, and shipping address." },
         { status: 400 }
       );
     }
 
     let lockedItems;
     try {
-      lockedItems = lockOrderItemsFromCatalog(rawItems);
+      lockedItems = lockOrderItemsFromCatalog(parsedItems.items);
     } catch (validationError) {
       logWarn("checkout_validation_failed", {
         ip,
