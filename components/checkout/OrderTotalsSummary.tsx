@@ -1,7 +1,10 @@
 import Price from "@/components/currency/Price";
 import CurrencyNotice from "@/components/currency/CurrencyNotice";
 import { OrderDiscountBadge } from "@/components/product/DiscountBadge";
-import type { CartDiscountBreakdown } from "@/lib/inventory/discounts";
+import {
+  BULK_ORDER_DISCOUNT_PERCENT,
+  type CartDiscountBreakdown,
+} from "@/lib/inventory/discounts";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export default function OrderTotalsSummary({
@@ -28,7 +31,9 @@ export default function OrderTotalsSummary({
 
       {breakdown.bulkDiscount > 0 && (
         <div className="flex items-center justify-between gap-3 text-sm">
-          <span className="text-emerald-700">Bulk discount (20%)</span>
+          <span className="text-emerald-700">
+            Bulk discount ({BULK_ORDER_DISCOUNT_PERCENT}%)
+          </span>
           <span className="text-emerald-700">
             −<Price usd={breakdown.bulkDiscount} />
           </span>

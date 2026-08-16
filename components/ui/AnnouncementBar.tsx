@@ -1,15 +1,22 @@
+import {
+  BASE_ORDER_DISCOUNT_PERCENT,
+  BULK_ORDER_DISCOUNT_PERCENT,
+} from "@/lib/inventory/discounts";
+
 type AnnouncementMessage = {
   icon: string;
   text: string;
 };
 
-// Copy kept truthful to real, always-on mechanics — the 5%/20% discounts
-// are live in lib/inventory/discounts.ts, not a fabricated "today only" sale.
+// Copy kept truthful to real, always-on mechanics, not a fabricated "today
+// only" sale. Both rates are imported from lib/inventory/discounts.ts rather
+// than written out, so the ticker cannot advertise a discount that checkout
+// does not actually apply.
 const DEFAULT_MESSAGES: AnnouncementMessage[] = [
-  { icon: "🔧", text: "Buy 2+ Items — Save 20%" },
+  { icon: "🔧", text: `Buy 2+ Items — Save ${BULK_ORDER_DISCOUNT_PERCENT}%` },
   { icon: "🌎", text: "Worldwide Shipping & Freight Available" },
   { icon: "🛠️", text: "OEM & Aftermarket Parts For Serious Builds" },
-  { icon: "💳", text: "Every Order — Save 5%" },
+  { icon: "💳", text: `Every Order — Save ${BASE_ORDER_DISCOUNT_PERCENT}%` },
   { icon: "🔒", text: "Secure Checkout · Verified Listings · Global Freight" },
   { icon: "⚡", text: "1,446+ Listings — Inventory Growing Regularly" },
 ];

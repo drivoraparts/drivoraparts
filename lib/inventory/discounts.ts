@@ -3,7 +3,13 @@ import { findCustomerDiscount } from "./customer-discounts";
 
 export const BULK_MIN_QUANTITY = 2;
 export const BASE_ORDER_DISCOUNT_PERCENT = 5;
-export const BULK_ORDER_DISCOUNT_PERCENT = 20;
+
+/**
+ * The uplift for a second item, on top of the 5% every order already gets.
+ * Was 20%, which made the step from one item to two worth four times the
+ * standing discount on the whole cart.
+ */
+export const BULK_ORDER_DISCOUNT_PERCENT = 10;
 
 export type DiscountLineInput = {
   id: number;
