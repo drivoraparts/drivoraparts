@@ -1006,51 +1006,6 @@ Shipping
 Worldwide Shipping Available`,
   },
   {
-    id: 2115,
-    name: "Toyota 1KZ-TE 3.0L Turbo Diesel Complete Engine Kit",
-    category: "engine",
-    brand: "toyota",
-    platform: "toyota-1kz-te",
-    // Anchor, not the shelf price: applyPublicPrices() sells at 79% rounded to
-    // the nearest $10, so 3540 is what puts this on the page at $2,800.
-    price: 3540,
-    stock: true,
-    // Condition deliberately not set: the engine category resolves to
-    // brand-new, and a 1KZ-TE has not been manufactured since 2007. Set this
-    // explicitly once the unit's real condition is confirmed.
-    horsepower: "96 kW (129 HP) @ 3,600 rpm — factory rating",
-    partNumber: "1KZ-TE",
-    fitment:
-      "Toyota Hilux Surf / 4Runner (KZN185), Hilux (KZN130/165), Land Cruiser Prado (KZJ78/95), Hiace (KDH200). Produced 1993-2007.",
-    location: "Japan — supplier network",
-    description: `Toyota 1KZ-TE 3.0L Turbo Diesel Complete Engine Kit
-
-The 1KZ-TE is Toyota's 3.0-litre turbocharged indirect-injection diesel, fitted across the Hilux, Hilux Surf, Land Cruiser Prado and Hiace between 1993 and 2007. It is one of the most widely swapped diesel engines in the 4x4 world, valued for low-RPM torque, mechanical simplicity and a parts supply that has not dried up.
-
-Specifications
-• Engine Code: 1KZ-TE
-• Configuration: Inline-4, SOHC, 2 valves per cylinder
-• Displacement: 2,982 cc (3.0 L)
-• Bore x Stroke: 96.0 mm x 103.0 mm
-• Aspiration: Turbocharged, intercooled
-• Injection: Indirect, electronically controlled injection pump
-• Compression Ratio: 21.2:1
-• Factory Power: 96 kW (129 HP) @ 3,600 rpm
-• Factory Torque: 343 Nm (253 lb-ft) @ 2,000 rpm
-• Block: Cast iron
-• Cylinder Head: Aluminium
-• Fuel Type: Diesel
-
-Fitment
-• Toyota Hilux Surf / 4Runner — KZN185
-• Toyota Hilux — KZN130 / KZN165
-• Toyota Land Cruiser Prado — KZJ78 / KZJ95
-• Toyota Hiace — KDH200
-
-Shipping
-Worldwide Shipping Available`,
-  },
-  {
     id: 49,
     name: "Chevrolet LS3 V8 Engine",
     category: "engine",
