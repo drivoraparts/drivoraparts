@@ -40,6 +40,12 @@ export type Product = {
   images: string[];
   description: string;
   sourceUrl?: string;
+  /**
+   * Swap-oriented package. Drives the fitment wording on the product page:
+   * these listings offer fitment assistance rather than claiming the order is
+   * verified against the buyer's vehicle before dispatch.
+   */
+  swapPackage?: boolean;
 };
 
 export type Category = {
@@ -95,6 +101,10 @@ export const store: Record<string, Category> = Object.fromEntries(
       images: resolveProductGallery(p.thumbnail ?? p.image, p.images),
       description: p.description ?? "",
       sourceUrl: p.sourceUrl,
+      // This mapping is a whitelist: a field not named here never reaches the
+      // product page, silently. swapPackage drives the fitment wording, so it
+      // has to be carried across explicitly.
+      swapPackage: p.swapPackage,
     }));
 
     return [category.slug, { name: category.name, brands, products }] as [

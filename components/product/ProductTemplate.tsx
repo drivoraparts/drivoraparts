@@ -222,6 +222,9 @@ export default function ProductTemplate({
           <CompatibilityHighlight
             fitment={catalogMeta.logistics?.fitment}
             drivetrain={catalogMeta.logistics?.drivetrain}
+            label={
+              product.swapPackage ? "Swap Compatibility" : "Confirmed Compatibility"
+            }
           />
 
           <PowerLevelSection sections={specSections} />
@@ -306,7 +309,13 @@ export default function ProductTemplate({
               />
             </div>
 
-            <FitmentAssuranceCallout />
+            <FitmentAssuranceCallout
+              assurance={
+                product.swapPackage
+                  ? "Fitment Assistance Available — contact us before ordering."
+                  : undefined
+              }
+            />
           </div>
 
           <div className="mt-6 border-t border-neutral-200 pt-5">

@@ -8,8 +8,19 @@ function openLiveChat() {
   window.Tawk_API?.maximize?.();
 }
 
-/** Fitment confidence badge + live-chat callout shown next to Add to Cart. */
-export default function FitmentAssuranceCallout() {
+/**
+ * Fitment confidence badge + live-chat callout shown next to Add to Cart.
+ *
+ * The default line promises the order is checked against the buyer's vehicle
+ * before dispatch. That cannot be said of a swap package, where fitment
+ * depends on fabrication the buyer does themselves, so those listings offer
+ * assistance instead of a guarantee.
+ */
+export default function FitmentAssuranceCallout({
+  assurance = "Guaranteed Fitment Check — verified against your vehicle before it ships.",
+}: {
+  assurance?: string;
+} = {}) {
   return (
     <div className="mt-4 space-y-2.5">
       <div className="flex items-center gap-2 rounded-sm border border-emerald-200 bg-emerald-50 px-3 py-2.5 text-xs font-semibold text-emerald-800">
@@ -25,7 +36,7 @@ export default function FitmentAssuranceCallout() {
             clipRule="evenodd"
           />
         </svg>
-        Guaranteed Fitment Check — verified against your vehicle before it ships.
+        {assurance}
       </div>
 
       <p className="flex items-center gap-3 px-1 text-xs font-medium text-neutral-500">

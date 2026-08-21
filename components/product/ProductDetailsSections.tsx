@@ -10,6 +10,7 @@ import type {
 import { hasInstallationResources, hasLogistics } from "@/lib/inventory/productEnhancements";
 import { useTranslation } from "@/hooks/useTranslation";
 import { glassCard } from "./styles";
+import RichDescription from "./RichDescription";
 
 type ProductDetailsSectionsProps = {
   productId: number;
@@ -348,7 +349,7 @@ export default function ProductDetailsSections({
             <TranslatedText as="span">{t("productImageNotice")}</TranslatedText>
           </p>
           {descriptionBody ? (
-            <TranslatedText as="span">{descriptionBody}</TranslatedText>
+            <RichDescription text={descriptionBody} />
           ) : null}
         </>
       ),
@@ -359,7 +360,7 @@ export default function ProductDetailsSections({
     tabs.push({
       id: "specifications",
       label: t("specificationsTitle"),
-      content: <TranslatedText as="span">{specifications}</TranslatedText>,
+      content: <RichDescription text={specifications} />,
     });
   }
 

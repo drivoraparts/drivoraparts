@@ -65,6 +65,11 @@ const RATING_DISTRIBUTION: Array<1 | 2 | 3 | 4 | 5> = [
 ] as Array<1 | 2 | 3 | 4 | 5>;
 
 const REVIEW_COUNT_OVERRIDES: Record<number, number> = {
+  // No generated reviews for this listing: it went live days ago and has never
+  // sold, so a rating and a set of named reviewers would be invented social
+  // proof for a product nobody has bought.
+  2115: 0,
+
   1: 18,
   34: 22,
   39: 19,
@@ -126,8 +131,12 @@ function buildAvatarUrl(reviewId: string): string {
 }
 
 export function getTargetReviewCount(productId: number): number {
-  if (REVIEW_COUNT_OVERRIDES[productId]) {
-    return REVIEW_COUNT_OVERRIDES[productId];
+  // Checked against undefined, not truthiness: an override of 0 means "this
+  // product has no reviews", and a truthy check would silently fall through to
+  // the generator and invent some anyway.
+  const override = REVIEW_COUNT_OVERRIDES[productId];
+  if (override !== undefined) {
+    return override;
   }
 
   const rng = createRng(productId * 92821);

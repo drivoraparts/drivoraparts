@@ -110,6 +110,12 @@ export type Product = {
   drivetrain?: string;
   /** Physical contents included with the unit. */
   included?: string[];
+  /**
+   * Swap-oriented package: fitment depends on the buyer's fabrication, so the
+   * product page offers fitment assistance rather than claiming the order is
+   * verified against their vehicle before dispatch.
+   */
+  swapPackage?: boolean;
   /** Core charge / core return policy, e.g. "Outright — No Core Required". */
   coreCharge?: string;
   /** Shipping weight, e.g. "185 lbs (crated)". */
