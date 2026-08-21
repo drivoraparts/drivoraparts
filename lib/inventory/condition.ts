@@ -60,6 +60,29 @@ export function resolveProductCondition(
     return resolveAftermarketCondition(product.condition);
   }
 
+  /*
+   * An explicitly declared condition wins over the category default.
+   *
+   * Catalog categories used to be forced to brand-new unconditionally, on the
+   * assumption that everything in them is new. That silently overrode listings
+   * that said otherwise: the Audi 4.0 TFSI (id 55) declared "used" and was
+   * badged Brand New on the storefront and in the Meta catalog feed. Selling a
+   * used engine under a Brand New badge is a dispute the seller cannot win, so
+   * a stated condition is now respected.
+   *
+   * Anything that does not declare one still defaults to brand-new, which is
+   * what the overwhelming majority of catalog listings are.
+   */
+  const declared = (product.condition ?? "").toLowerCase().trim();
+
+  if (declared.includes("refurbished") || declared.includes("remanufactured")) {
+    return "refurbished";
+  }
+
+  if (declared.includes("used")) {
+    return "used";
+  }
+
   if (isCatalogCategory(product.category)) {
     return "brand-new";
   }
@@ -120,8 +143,13 @@ export function getConditionLabel(
   product: Pick<Product, "category" | "condition">
 ): string {
   const raw = (product.condition ?? "").toLowerCase();
-  if (isAftermarketCategory(product.category) && raw.includes("like new")) {
+
+  // "Used Like New" was previously restricted to aftermarket listings. A
+  // catalog item can be in that state just as easily — an inspected, tested
+  // engine with little wear — and the seller should be able to say so.
+  if (raw.includes("like new")) {
     return "Used Like New";
   }
+
   return getConditionDisplay(resolveProductCondition(product)).label;
 }

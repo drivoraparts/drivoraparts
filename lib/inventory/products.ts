@@ -260,7 +260,7 @@ Worldwide Shipping Available`,
   },
   {
     id: 2115,
-    name: "Toyota 1UZ-FE Non-VVT-i Complete Swap Engine Package",
+    name: "Toyota 1UZ-FE Non-VVT-i Complete Swap Package — Engine, Transmission, ECU & Harness",
     category: "engine",
     brand: "toyota",
     platform: "toyota-1uz-fe-v8",
@@ -268,18 +268,25 @@ Worldwide Shipping Available`,
     // the nearest $10, so 5045 is what puts this on the page at $3,990.
     price: 5045,
     stock: true,
-    condition: "brand-new",
+    stockQty: 1,
+    // Displays as "Used Like New" on the badge and in the spec table.
+    condition: "used like new",
     horsepower: "Approximately 250-260 HP (factory)",
+    mileage: "N/A",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     partNumber: "1UZ-FE (Non-VVT-i)",
     fitment:
-      "Swap-oriented engine package. Verify chassis, transmission, wiring, ECU, mounting, cooling, exhaust, fuel-system, and drivetrain requirements before purchase.",
+      "Swap-oriented package. Verify vehicle year, make, model, original engine, transmission and drivetrain before ordering. Engine mounts, driveshaft, cooling, exhaust, fuel and intake components are not included.",
     included: [
-      "Toyota 1UZ-FE Non-VVT-i Engine",
+      "Toyota 1UZ-FE Non-VVT-i 4.0L V8 Engine",
+      "Transmission",
       "Factory ECU",
-      "Factory Wiring Harness",
+      "Factory Engine Wiring Harness",
     ],
+    freightNotes: "International freight / LTL. Cost calculated by destination.",
+    warrantyTerms:
+      "Covers eligible components under the DrivoraParts Warranty Policy. Excludes installation labor, fabrication, tuning, modifications, overheating, improper installation, misuse, neglect, and damage from components outside the supplied package.",
     thumbnail: "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/1.jpg",
     images: [
       "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/1.jpg",
@@ -287,54 +294,105 @@ Worldwide Shipping Available`,
       "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/3.jpg",
       "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/4.jpg",
     ],
-    description: `Toyota 1UZ-FE Non-VVT-i Complete Swap Engine Package
+    description: `Toyota 1UZ-FE Non-VVT-i Complete Swap Package
+4.0L Naturally Aspirated V8 — Engine + Transmission + ECU + Wiring Harness
 
-Complete Toyota 1UZ-FE non-VVT-i V8 swap package designed for engine-swap projects, including the engine, factory ECU, and wiring harness. A proven 4.0L V8 platform for Land Cruiser builds, performance projects, restorations, and custom applications.
+Product Overview
+The Toyota 1UZ-FE Non-VVT-i is a 4.0L naturally aspirated V8 engineered for smooth power delivery, durability, and long-term reliability. This complete swap package provides the core components needed for a 1UZ-FE engine-swap project or compatible replacement application.
 
-The Toyota 1UZ-FE is a legendary 4.0-liter naturally aspirated V8 known for its smooth power delivery, robust construction, reliability, and strong engine-swap potential. The non-VVT-i configuration is particularly popular among enthusiasts looking for a straightforward and proven V8 platform for custom builds.
+Package Includes
+• Toyota 1UZ-FE Non-VVT-i 4.0L V8 Engine
+• Transmission
+• Factory ECU
+• Factory Engine Wiring Harness
 
-This complete swap package is designed to provide the core components needed to integrate the 1UZ-FE into a suitable project, including the engine, factory ECU, and wiring harness. It is an excellent platform for Toyota Land Cruiser conversions, custom 4WD builds, performance projects, restorations, and other applications requiring a durable Toyota V8.
-
-The engine is naturally aspirated in its standard configuration and produces approximately 250-260 HP in factory specification. For customers targeting approximately 350 HP, additional performance modifications, supporting components, and appropriate ECU tuning will be required.
-
-Specifications
-• Engine Code: 1UZ-FE
+Engine Specifications
+• Engine: Toyota 1UZ-FE
 • Configuration: V8
-• Displacement: 4.0L
+• Displacement: 4.0L / 3,968 cc
 • Aspiration: Naturally Aspirated
+• Valve System: Non-VVT-i
 • Valvetrain: DOHC
+• Factory Output: Approximately 250-260 HP
 • Fuel System: Electronic Fuel Injection
-• Factory Power: Approximately 250-260 HP
 • Fuel Type: Gasoline
 • Cooling: Liquid Cooled
 • Manufacturer: Toyota
-• Configuration: Non-VVT-i
+• Application: Engine Swap / Replacement
 
-Package Includes
-• Toyota 1UZ-FE Non-VVT-i Engine
-• Factory ECU
-• Factory Wiring Harness
+Condition
+Used — Inspected & Tested. The engine has been inspected and tested prior to fulfillment. Normal signs of previous use may be present.
+Mileage: N/A
 
-Highlights
-• Legendary Toyota 1UZ-FE V8 Platform
-• Non-VVT-i Configuration
-• Complete Core Swap Package
-• Includes Factory ECU
-• Includes Factory Wiring Harness
-• Strong Reliability Reputation
-• Excellent Engine-Swap Potential
-• Ideal for Land Cruiser & 4WD Builds
-• Strong Aftermarket Support
-• Suitable Foundation for Performance Builds
+Not Included
+Engine mounts, driveshaft, exhaust system, cooling system, fuel-system components, intake components, accessories, and other swap hardware are not included unless specifically stated in this listing.
 
-Fitment / Application
-Designed as a swap-oriented engine package. Verify chassis, transmission, wiring, ECU, mounting, cooling, exhaust, fuel-system, and drivetrain requirements before purchase.
+Swap & Fitment Information
+The 1UZ-FE is a versatile engine-swap platform, but installation requirements vary by vehicle. Depending on the application, additional components or modifications may be required, including:
+• Engine mounts
+• Driveshaft modifications
+• Cooling system
+• Exhaust system
+• Fuel system
+• Intake system
+• Wiring integration
+• ECU integration or tuning
+• Accessory configuration
+
+Compatibility
+Please verify compatibility before ordering. Provide your vehicle's year, make, model, original engine, transmission, and drivetrain configuration and our team can help determine whether this package suits your application. Contact DrivoraParts before ordering if you are uncertain.
+
+Performance
+The factory 1UZ-FE configuration produces approximately 250-260 HP, depending on the original application and specification. The engine also provides a strong foundation for custom swap and performance applications. Additional modifications, supporting components, and appropriate ECU tuning are required for higher-power builds.
 
 Warranty
-24-Month Limited Warranty
+24-Month Limited Warranty. Covers eligible components subject to the DrivoraParts Warranty Policy. Coverage does not include installation labor, fabrication, tuning, modifications, overheating, improper installation, misuse, neglect, or damage resulting from components or systems outside the supplied package.
 
 Shipping
-Worldwide Shipping Available`,
+Worldwide Shipping Available. International freight / LTL, with cost calculated by destination. Destinations include the United States, Canada, United Kingdom, Australia and other international locations. Shipping method, cost, and delivery time vary by destination, package dimensions, weight, freight requirements, and service availability. Tracking information is provided when available after shipment.
+
+Inventory & Fulfillment
+Availability: In Stock. International fulfillment available. DrivoraParts operates from the United States with international inventory and fulfillment capability; the actual fulfillment location may vary depending on inventory availability and destination.
+
+Important Information
+This is an engine-swap package, not a complete turnkey vehicle conversion kit. Additional vehicle-specific parts, fabrication, wiring, programming, tuning, and installation may be required. Customers are responsible for confirming that the engine configuration meets their vehicle's mechanical, electrical, emissions, and regulatory requirements. Professional installation is recommended.
+
+Before You Order — Please Confirm
+• Vehicle year, make, and model
+• Original engine
+• Transmission
+• Drivetrain
+• Engine-mount requirements
+• ECU and wiring requirements
+• Cooling requirements
+• Exhaust requirements
+• Fuel-system requirements
+
+Frequently Asked Questions
+
+Does this package include the transmission?
+Yes. The transmission is included.
+
+Does it include the ECU and wiring harness?
+Yes. The package includes the factory ECU and factory engine wiring harness.
+
+Is this a direct bolt-in replacement?
+Not necessarily. Compatibility and installation requirements depend on the vehicle and intended application.
+
+Does it include engine mounts?
+No. Vehicle-specific engine mounts are not included unless specifically stated.
+
+Is shipping available internationally?
+Yes. International freight shipping is available. Shipping costs and delivery times vary by destination.
+
+Can you help verify compatibility?
+Yes. Provide your vehicle year, make, model, original engine, transmission, and drivetrain configuration before ordering.
+
+Is installation included?
+No. Installation, fabrication, wiring integration, programming, and tuning are not included.
+
+Purchase Notice
+By purchasing this product, the customer acknowledges that engine-swap applications may require additional components, fabrication, electrical integration, tuning, and professional installation. Verify compatibility before ordering.`,
   },
   {
     id: 36,

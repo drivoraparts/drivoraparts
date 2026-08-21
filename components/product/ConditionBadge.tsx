@@ -2,6 +2,7 @@
 
 import {
   getConditionDisplay,
+  getConditionLabel,
   resolveProductCondition,
 } from "@/lib/inventory/condition";
 
@@ -16,6 +17,10 @@ export default function ConditionBadge({
 }: ConditionBadgeProps) {
   const resolved = resolveProductCondition({ category, condition });
   const display = getConditionDisplay(resolved);
+  // Colours come from the resolved condition, the wording from the same
+  // helper the spec table uses — otherwise the badge could read "Used" while
+  // the specs beneath it read "Used Like New".
+  const label = getConditionLabel({ category, condition });
 
   return (
     <span
@@ -32,7 +37,7 @@ export default function ConditionBadge({
         border: `1px solid ${display.border}`,
       }}
     >
-      {display.label}
+      {label}
     </span>
   );
 }
