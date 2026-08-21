@@ -275,8 +275,8 @@ Worldwide Shipping Available`,
     // Fitment depends on the buyer's own fabrication, so the page offers
     // assistance rather than claiming the order is checked against their car.
     swapPackage: true,
-    horsepower: "Approximately 250-260 HP (factory)",
-    buildPotential: "300 HP Build — Supporting Modifications Required",
+    horsepower: "Approximately 250-260 HP",
+    buildPotential: "Supporting modifications and ECU tuning required",
     mileage: "N/A / Not Verified",
     warranty: "24-Month Limited Warranty",
     // Ships from the US warehouse or direct from a supplier depending on

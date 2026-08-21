@@ -151,13 +151,33 @@ export default function ProductTemplate({
       // handler and nothing is selectable. On a listing that also shows a
       // build target, that wording would read as an option to buy a modified
       // engine, so it states what it is instead.
-      sections.push({
-        label: "Power Output",
-        values: [
-          catalogMeta.horsepower,
-          ...(product.buildPotential ? [product.buildPotential] : []),
-        ],
-      });
+      //
+      // Where a build target exists the two are rendered as captioned cards,
+      // not matching pills: the factory rating is what ships, the target is
+      // what the engine can reach with work, and that difference has to be
+      // legible at a glance.
+      sections.push(
+        product.buildPotential
+          ? {
+              label: "Power Output",
+              values: [],
+              options: [
+                {
+                  caption: "Factory Configuration",
+                  title: catalogMeta.horsepower,
+                  emphasis: true,
+                },
+                {
+                  caption: "300 HP Build Target",
+                  title: product.buildPotential,
+                },
+              ],
+            }
+          : {
+              label: "Power Output",
+              values: [catalogMeta.horsepower],
+            }
+      );
     }
 
     sections.push(
