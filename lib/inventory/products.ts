@@ -259,6 +259,84 @@ Shipping
 Worldwide Shipping Available`,
   },
   {
+    id: 2115,
+    name: "Toyota 1UZ-FE Non-VVT-i Complete Swap Engine Package",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-1uz-fe-v8",
+    // Anchor, not the shelf price: applyPublicPrices() sells at 79% rounded to
+    // the nearest $10, so 5045 is what puts this on the page at $3,990.
+    price: 5045,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Approximately 250-260 HP (factory)",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    partNumber: "1UZ-FE (Non-VVT-i)",
+    fitment:
+      "Swap-oriented engine package. Verify chassis, transmission, wiring, ECU, mounting, cooling, exhaust, fuel-system, and drivetrain requirements before purchase.",
+    included: [
+      "Toyota 1UZ-FE Non-VVT-i Engine",
+      "Factory ECU",
+      "Factory Wiring Harness",
+    ],
+    thumbnail: "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/1.jpg",
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/2.jpg",
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/3.jpg",
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/4.jpg",
+    ],
+    description: `Toyota 1UZ-FE Non-VVT-i Complete Swap Engine Package
+
+Complete Toyota 1UZ-FE non-VVT-i V8 swap package designed for engine-swap projects, including the engine, factory ECU, and wiring harness. A proven 4.0L V8 platform for Land Cruiser builds, performance projects, restorations, and custom applications.
+
+The Toyota 1UZ-FE is a legendary 4.0-liter naturally aspirated V8 known for its smooth power delivery, robust construction, reliability, and strong engine-swap potential. The non-VVT-i configuration is particularly popular among enthusiasts looking for a straightforward and proven V8 platform for custom builds.
+
+This complete swap package is designed to provide the core components needed to integrate the 1UZ-FE into a suitable project, including the engine, factory ECU, and wiring harness. It is an excellent platform for Toyota Land Cruiser conversions, custom 4WD builds, performance projects, restorations, and other applications requiring a durable Toyota V8.
+
+The engine is naturally aspirated in its standard configuration and produces approximately 250-260 HP in factory specification. For customers targeting approximately 350 HP, additional performance modifications, supporting components, and appropriate ECU tuning will be required.
+
+Specifications
+• Engine Code: 1UZ-FE
+• Configuration: V8
+• Displacement: 4.0L
+• Aspiration: Naturally Aspirated
+• Valvetrain: DOHC
+• Fuel System: Electronic Fuel Injection
+• Factory Power: Approximately 250-260 HP
+• Fuel Type: Gasoline
+• Cooling: Liquid Cooled
+• Manufacturer: Toyota
+• Configuration: Non-VVT-i
+
+Package Includes
+• Toyota 1UZ-FE Non-VVT-i Engine
+• Factory ECU
+• Factory Wiring Harness
+
+Highlights
+• Legendary Toyota 1UZ-FE V8 Platform
+• Non-VVT-i Configuration
+• Complete Core Swap Package
+• Includes Factory ECU
+• Includes Factory Wiring Harness
+• Strong Reliability Reputation
+• Excellent Engine-Swap Potential
+• Ideal for Land Cruiser & 4WD Builds
+• Strong Aftermarket Support
+• Suitable Foundation for Performance Builds
+
+Fitment / Application
+Designed as a swap-oriented engine package. Verify chassis, transmission, wiring, ECU, mounting, cooling, exhaust, fuel-system, and drivetrain requirements before purchase.
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
     id: 36,
     name: "Toyota 1UZ-FE V8 Engine",
     category: "engine",
