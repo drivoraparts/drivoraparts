@@ -342,8 +342,15 @@ The 1UZ-FE is a versatile engine-swap platform, but installation requirements va
 Compatibility
 Please verify compatibility before ordering. Provide your vehicle's year, make, model, original engine, transmission, and drivetrain configuration and our team can help determine whether this package suits your application. Contact DrivoraParts before ordering if you are uncertain.
 
-Performance
-The factory 1UZ-FE configuration produces approximately 250-260 HP, depending on the original application and specification. The engine also provides a strong foundation for custom swap and performance applications. Additional modifications, supporting components, and appropriate ECU tuning are required for higher-power builds.
+Performance & Build Potential
+The Toyota 1UZ-FE provides a strong foundation for naturally aspirated and modified performance builds.
+• Factory Output: Approximately 250-260 HP
+• 300 HP Build: Achievable with appropriate performance upgrades and supporting modifications
+• Potential: 300+ HP depending on configuration, tuning, fuel system, intake/exhaust setup, and internal components
+
+For a 300 HP target, the required supporting setup may include upgraded intake and exhaust components, fuel-system upgrades, ECU calibration/tuning, and other application-specific modifications.
+
+Note: Final horsepower depends on the specific engine, configuration, modifications, fuel, and tuning.
 
 Warranty
 24-Month Limited Warranty. Covers eligible components subject to the DrivoraParts Warranty Policy. Coverage does not include installation labor, fabrication, tuning, modifications, overheating, improper installation, misuse, neglect, or damage resulting from components or systems outside the supplied package.
