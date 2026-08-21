@@ -144,6 +144,13 @@ export function getConditionLabel(
 ): string {
   const raw = (product.condition ?? "").toLowerCase();
 
+  // A used item that has been checked over says so, so the badge matches the
+  // Condition section further down the page rather than describing it twice
+  // in two different ways.
+  if (raw.includes("inspected")) {
+    return "Used — Inspected & Tested";
+  }
+
   // "Used Like New" was previously restricted to aftermarket listings. A
   // catalog item can be in that state just as easily — an inspected, tested
   // engine with little wear — and the seller should be able to say so.

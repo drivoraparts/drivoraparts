@@ -269,8 +269,9 @@ Worldwide Shipping Available`,
     price: 5045,
     stock: true,
     stockQty: 1,
-    // Displays as "Used Like New" on the badge and in the spec table.
-    condition: "used like new",
+    // Displays as "Used — Inspected & Tested" on the badge and in the spec
+    // table, matching the Condition section in the description.
+    condition: "used - inspected and tested",
     // Fitment depends on the buyer's own fabrication, so the page offers
     // assistance rather than claiming the order is checked against their car.
     swapPackage: true,

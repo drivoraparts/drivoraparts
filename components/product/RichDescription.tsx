@@ -28,6 +28,9 @@ function isHeading(line: string, next: string | undefined): boolean {
   if (!text || text.length > 70) return false;
   if (/^[•\-*]/.test(text)) return false;
   if (/[.:,;?]$/.test(text)) return false;
+  // "Label: value" is data, not a heading — "Mileage: N/A / Not Verified" and
+  // "Stock Status: In Stock" were being bolded as section titles.
+  if (text.includes(":")) return false;
   // A heading introduces something — a trailing blank line means it does not.
   if (next === undefined) return false;
 
