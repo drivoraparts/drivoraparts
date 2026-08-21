@@ -1,4 +1,3 @@
-import { generateEngineCatalogReviews, generateReviewsForProduct } from "./generator";
 import type {
   ProductReview,
   ReviewModerationAction,
@@ -7,18 +6,27 @@ import type {
 
 const DEFAULT_AVATAR = "/reviews/avatars/01.jpg";
 
-let reviewStore: ProductReview[] = generateEngineCatalogReviews();
-
-function ensureSeededReviews(productId: number): void {
-  const hasReviews = reviewStore.some((review) => review.productId === productId);
-  if (!hasReviews) {
-    reviewStore.push(...generateReviewsForProduct(productId));
-  }
-}
+/**
+ * Real reviews only.
+ *
+ * This store used to be pre-filled by a generator that invented reviewer
+ * names, star ratings, review text and posting dates for every product, and
+ * lazily invented more for any product read that had none. A listing added
+ * minutes ago arrived with a rating and a dozen opinions from people who did
+ * not exist.
+ *
+ * Fabricated consumer reviews are prohibited outright in the US, where this
+ * company is registered and most of its customers are, and they also breach
+ * the catalog policies of the ad platforms this store feeds. Beyond that they
+ * do not survive contact with a careful shopper: the same names recurred
+ * across unrelated products.
+ *
+ * Products now carry no rating until a customer leaves one. submitReview and
+ * moderation are unchanged, so genuine reviews appear exactly as before.
+ */
+let reviewStore: ProductReview[] = [];
 
 function getApprovedReviews(productId: number): ProductReview[] {
-  ensureSeededReviews(productId);
-
   return reviewStore
     .filter(
       (review) => review.productId === productId && review.status === "approved"
