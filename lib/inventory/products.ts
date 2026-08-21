@@ -320,6 +320,46 @@ Engine Specifications
 • Manufacturer: Toyota
 • Application: Engine Swap / Replacement
 
+Production
+The 1UZ-FE was introduced in 1989 and produced through the 1990s. Confirm the year of the specific unit before ordering if that matters to your build.
+
+Suitable Applications
+
+Original Toyota / Lexus Applications
+Vehicles the 1UZ-FE was factory-fitted to. Fitment here is direct, subject to the usual checks on transmission, wiring and accessories.
+• 1989-1994 Lexus LS 400
+• 1989-1994 Toyota Celsior
+• 1990-1995 Toyota Crown Majesta
+• 1991-1997 Toyota Soarer
+• 1991-1997 Lexus SC 400
+
+Common Toyota Swap Platforms — modification required
+These are popular 1UZ-FE swap targets, not direct-fit applications. Expect to source engine mounts, a transmission or adapter, wiring integration, ECU work, cooling, exhaust and fuel-system changes depending on the chassis.
+• Toyota Supra
+• Toyota Cressida
+• Toyota Crown
+• Toyota Chaser
+• Toyota Mark II
+• Toyota Cresta
+• Toyota Soarer
+• Toyota Hilux
+• Toyota Pickup
+• Toyota 4Runner
+• Toyota Land Cruiser
+• Toyota Celica
+• Toyota Corolla
+• Toyota MR2
+• Toyota Tacoma
+
+Other Custom Swap Applications — modification required
+• Lexus IS
+• Lexus GS
+• Lexus SC
+• Lexus LS
+• Custom RWD vehicles and project cars
+
+No vehicle outside the original applications list should be treated as a bolt-in fit. Contact DrivoraParts with your chassis details before ordering.
+
 Condition
 Used — Inspected & Tested. The engine has been inspected and tested prior to fulfillment. Normal signs of previous use may be present.
 Mileage: N/A
