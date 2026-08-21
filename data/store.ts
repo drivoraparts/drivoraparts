@@ -40,6 +40,8 @@ export type Product = {
   images: string[];
   description: string;
   sourceUrl?: string;
+  /** Build-target power shown beside the factory rating. */
+  buildPotential?: string;
   /**
    * Swap-oriented package. Drives the fitment wording on the product page:
    * these listings offer fitment assistance rather than claiming the order is
@@ -105,6 +107,7 @@ export const store: Record<string, Category> = Object.fromEntries(
       // product page, silently. swapPackage drives the fitment wording, so it
       // has to be carried across explicitly.
       swapPackage: p.swapPackage,
+      buildPotential: p.buildPotential,
     }));
 
     return [category.slug, { name: category.name, brands, products }] as [

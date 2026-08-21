@@ -147,9 +147,16 @@ export default function ProductTemplate({
     const sections: ProSpecSection[] = [];
 
     if (catalogMeta.horsepower) {
+      // Labelled "Choose Power Level" even though these pills have no click
+      // handler and nothing is selectable. On a listing that also shows a
+      // build target, that wording would read as an option to buy a modified
+      // engine, so it states what it is instead.
       sections.push({
-        label: "Choose Power Level",
-        values: [catalogMeta.horsepower],
+        label: "Power Output",
+        values: [
+          catalogMeta.horsepower,
+          ...(product.buildPotential ? [product.buildPotential] : []),
+        ],
       });
     }
 

@@ -276,6 +276,7 @@ Worldwide Shipping Available`,
     // assistance rather than claiming the order is checked against their car.
     swapPackage: true,
     horsepower: "Approximately 250-260 HP (factory)",
+    buildPotential: "300 HP Build — Supporting Modifications Required",
     mileage: "N/A / Not Verified",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
@@ -397,7 +398,7 @@ The 1UZ-FE is commonly used for custom swaps in:
 • Toyota MR2
 • Toyota Tacoma
 
-These are swap applications, not universal direct-fit applications. Vehicle-specific mounting, transmission, wiring, ECU, cooling, exhaust, fuel, driveshaft, and accessory requirements may apply.
+These are swap applications, not universal direct-fit applications. Vehicle-specific transmission mounting, adaptation, or linkage components may be required depending on the chassis — the transmission itself is included in this package. Engine mounting, wiring, ECU, cooling, exhaust, fuel, driveshaft, and accessory requirements may also apply.
 
 LEXUS SWAP PLATFORMS
 
@@ -487,7 +488,7 @@ PROFESSIONAL INSTALLATION RECOMMENDED
 Engine swaps may require vehicle-specific mechanical and electrical integration. Depending on the application, installation may require:
 
 • Engine mounting
-• Transmission adaptation
+• Transmission mounting, adaptation or linkage components
 • Driveshaft modification
 • Cooling-system modifications
 • Exhaust fabrication

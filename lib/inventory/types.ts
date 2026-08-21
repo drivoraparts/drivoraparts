@@ -76,6 +76,12 @@ export type Product = {
 
   /** Display horsepower for engine and performance listings. */
   horsepower?: string;
+  /**
+   * A power figure the engine can reach with work, shown beside the factory
+   * rating. Must read as a build target — the listing sells the engine as
+   * supplied, not a modified one.
+   */
+  buildPotential?: string;
   /** Display mileage (brand-new catalog engines default to 0 Miles). */
   mileage?: string;
   /** Display warranty label shown in quick specs. */
