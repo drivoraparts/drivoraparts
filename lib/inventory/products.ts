@@ -279,7 +279,9 @@ Worldwide Shipping Available`,
     buildPotential: "300 HP Build — Supporting Modifications Required",
     mileage: "N/A / Not Verified",
     warranty: "24-Month Limited Warranty",
-    location: "USA Warehouse",
+    // Ships from the US warehouse or direct from a supplier depending on
+    // where the buyer is — stated rather than implying a single origin.
+    location: "our USA warehouse or supplier network, depending on your location",
     partNumber: "1UZ-FE (Non-VVT-i)",
     fitment:
       "Complete swap package: engine, transmission, factory ECU and factory engine wiring harness. Installation requirements vary by chassis — verify vehicle year, make, model, original engine, transmission and drivetrain before ordering.",
