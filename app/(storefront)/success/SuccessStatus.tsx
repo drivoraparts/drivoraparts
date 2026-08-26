@@ -12,10 +12,19 @@ import {
 } from "@/lib/analytics/meta-pixel";
 import { trackTikTokPurchase } from "@/lib/analytics/tiktok-pixel";
 
-type View = "pending" | "paid" | "failed" | "unknown";
+/*
+ * confirming  - polling; the payment may still be settling
+ * paid        - the provider confirmed it; the only state that says "order placed"
+ * verifying   - the provider has seen funds but not finished confirming
+ * incomplete  - the customer came back without paying, or the invoice lapsed
+ * unknown     - arrived here with no order reference at all
+ */
+type View = "confirming" | "paid" | "verifying" | "incomplete" | "unknown";
 
 const POLL_INTERVAL_MS = 3000;
-const MAX_ATTEMPTS = 40; // ~2 minutes
+// ~90s. Crypto confirmations are usually quicker; past this the honest thing
+// is to stop claiming we are "confirming" and offer a way to finish paying.
+const MAX_ATTEMPTS = 30;
 
 const COPY: Record<View, { heading: string; subtext: string; message: string }> = {
   paid: {
@@ -23,17 +32,23 @@ const COPY: Record<View, { heading: string; subtext: string; message: string }> 
     subtext: "Your order is confirmed",
     message: "We've received your payment and confirmed your order.",
   },
-  pending: {
+  confirming: {
     heading: "Confirming Your Payment",
     subtext: "This page updates automatically",
     message:
       "Please wait while we confirm your payment with the provider. You don't need to refresh — this page updates on its own.",
   },
-  failed: {
-    heading: "Payment Not Confirmed",
-    subtext: "We're still verifying",
+  verifying: {
+    heading: "Payment Pending",
+    subtext: "Your payment is being verified",
     message:
-      "We couldn't confirm your payment yet. If you were charged, it will be reconciled automatically — please contact support if this persists.",
+      "We can see your payment and are waiting for it to confirm. Please don't send another payment — this page updates on its own, and your order is safe.",
+  },
+  incomplete: {
+    heading: "Payment Not Completed",
+    subtext: "Your order is saved",
+    message:
+      "Your payment has not been completed yet. Your checkout information has been saved — you can return to the payment page to finish paying.",
   },
   unknown: {
     heading: "Order Received",
@@ -50,10 +65,13 @@ export default function SuccessStatus({
   npPaymentId: string | null;
 }) {
   const [view, setView] = useState<View>(
-    orderId || npPaymentId ? "pending" : "unknown"
+    orderId || npPaymentId ? "confirming" : "unknown"
   );
   const [total, setTotal] = useState<number | null>(null);
   const [resolvedOrderId, setResolvedOrderId] = useState<string | null>(orderId);
+  // The invoice the customer already has. Resuming it avoids creating a second
+  // order or a second payment session for the same purchase.
+  const [paymentUrl, setPaymentUrl] = useState<string | null>(null);
   const purchaseTracked = useRef(false);
   const clearCart = useCartStore((s) => s.clearCart);
 
@@ -85,6 +103,8 @@ export default function SuccessStatus({
           status?: string;
           total?: number;
           orderId?: string;
+          paymentStatus?: string | null;
+          paymentUrl?: string | null;
         };
         if (!active) return false;
 
@@ -92,6 +112,7 @@ export default function SuccessStatus({
           setResolvedOrderId(data.orderId);
         }
         if (typeof data.total === "number") setTotal(data.total);
+        if (typeof data.paymentUrl === "string") setPaymentUrl(data.paymentUrl);
 
         if (data.status === "paid") {
           setView("paid");
@@ -125,7 +146,26 @@ export default function SuccessStatus({
           return true;
         }
         if (data.status === "failed" || data.status === "cancelled") {
-          setView("failed");
+          setView("incomplete");
+          return true;
+        }
+
+        /*
+         * The order is still pending, so the payment record decides what the
+         * customer is told. "processing" means the provider has seen the funds
+         * and is confirming them — worth saying so, and worth warning against
+         * paying twice. An expired or failed invoice is finished: stop polling
+         * and offer to start payment again. Anything else keeps polling.
+         */
+        if (data.paymentStatus === "processing") {
+          setView("verifying");
+          return false;
+        }
+        if (
+          data.paymentStatus === "expired" ||
+          data.paymentStatus === "failed"
+        ) {
+          setView("incomplete");
           return true;
         }
       } catch {
@@ -137,7 +177,21 @@ export default function SuccessStatus({
     const interval = setInterval(async () => {
       attempts += 1;
       const done = await check();
-      if (done || attempts >= MAX_ATTEMPTS) clearInterval(interval);
+      if (done) {
+        clearInterval(interval);
+        return;
+      }
+      if (attempts >= MAX_ATTEMPTS) {
+        clearInterval(interval);
+        // Nothing confirmed in the polling window. Previously the page simply
+        // stopped, leaving "Confirming Your Payment" on screen indefinitely
+        // with no way forward.
+        if (active) {
+          setView((current) =>
+            current === "paid" || current === "verifying" ? current : "incomplete"
+          );
+        }
+      }
     }, POLL_INTERVAL_MS);
 
     void check();
@@ -194,20 +248,49 @@ export default function SuccessStatus({
         </div>
       ) : null}
 
-      <div className="mt-5 space-y-2">
-        <Link
-          href="/catalog"
-          className="block w-full rounded-lg bg-red-600 py-3 text-center text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99]"
-        >
-          Continue Shopping
-        </Link>
-        <Link
-          href="/"
-          className="block w-full rounded-lg border border-neutral-300 py-3 text-center text-sm text-neutral-700 transition hover:bg-neutral-50"
-        >
-          Back to Home
-        </Link>
-      </div>
+      {view === "incomplete" ? (
+        /*
+         * Resuming the stored invoice rather than sending the customer back
+         * through checkout: a fresh checkout would create a second order and a
+         * second payment session for the same purchase. Falls back to checkout
+         * only when no invoice URL was recorded.
+         */
+        <div className="mt-5 space-y-2">
+          {paymentUrl ? (
+            <a
+              href={paymentUrl}
+              className="block w-full rounded-lg bg-red-600 py-3 text-center text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99]"
+            >
+              Continue Payment
+            </a>
+          ) : null}
+          <Link
+            href="/checkout"
+            className="block w-full rounded-lg border border-neutral-300 py-3 text-center text-sm font-semibold text-neutral-700 transition hover:bg-neutral-50"
+          >
+            Return to Checkout
+          </Link>
+          <p className="px-1 pt-1 text-center text-xs text-neutral-500">
+            Your cart and checkout details are still saved. You will not be
+            charged twice — this reopens the same payment.
+          </p>
+        </div>
+      ) : (
+        <div className="mt-5 space-y-2">
+          <Link
+            href="/catalog"
+            className="block w-full rounded-lg bg-red-600 py-3 text-center text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99]"
+          >
+            Continue Shopping
+          </Link>
+          <Link
+            href="/"
+            className="block w-full rounded-lg border border-neutral-300 py-3 text-center text-sm text-neutral-700 transition hover:bg-neutral-50"
+          >
+            Back to Home
+          </Link>
+        </div>
+      )}
     </main>
   );
 }

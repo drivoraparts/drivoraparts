@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
-import { findPaymentByProviderId } from "@/lib/db/payments";
+import {
+  findPaymentByOrderId,
+  findPaymentByProviderId,
+} from "@/lib/db/payments";
 import { getOrderStatusSummaryById } from "@/lib/db/orders";
 import { isSupabaseConfigured } from "@/lib/env";
 import { fetchNowPaymentsOrderId } from "@/lib/payments/nowpayments/client";
@@ -19,9 +22,22 @@ async function resolveOrderId(
   return fetchNowPaymentsOrderId(npPaymentId);
 }
 
-// Status + total lookup for the success-page poll. Order ids are unguessable
-// UUIDs and only the status and the buyer's own order total are returned, so
-// no PII is exposed.
+/*
+ * Status lookup for the success-page poll.
+ *
+ * Returns the payment's own status alongside the order's, because the two
+ * answer different questions: the order says whether the sale is complete, the
+ * payment says whether the customer got as far as paying. Without the second,
+ * a customer who backed out of NOWPayments and one whose payment is still
+ * confirming look identical, and the page can only sit on "confirming" for
+ * both.
+ *
+ * Also returns the stored invoice URL so the customer can be sent back into
+ * the payment session they already have, rather than starting a second one.
+ *
+ * Order ids are unguessable UUIDs, and this exposes only the buyer's own
+ * status, total and invoice link — no PII.
+ */
 export async function GET(req: Request) {
   if (!isSupabaseConfigured()) {
     return NextResponse.json(
@@ -47,8 +63,18 @@ export async function GET(req: Request) {
       return NextResponse.json({ error: "Not found" }, { status: 404 });
     }
 
+    // Best-effort: a missing payment record must not fail the status lookup,
+    // it just means we cannot offer to resume an invoice.
+    const payment = await findPaymentByOrderId(orderId).catch(() => null);
+
     return NextResponse.json(
-      { status: summary.status, total: summary.total, orderId },
+      {
+        status: summary.status,
+        total: summary.total,
+        orderId,
+        paymentStatus: payment?.status ?? null,
+        paymentUrl: payment?.payment_url ?? null,
+      },
       { headers: { "Cache-Control": "no-store" } }
     );
   } catch {

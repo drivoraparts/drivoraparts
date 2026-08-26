@@ -74,7 +74,14 @@ export function buildNowPaymentsUrls(orderId: string) {
   return {
     callbackUrl: `${siteUrl}/api/payments/webhook/nowpayments`,
     successUrl: `${siteUrl}/success?orderId=${orderId}`,
-    cancelUrl: `${siteUrl}/checkout?payment=failed&orderId=${orderId}`,
+    /*
+     * Cancelling lands on the same status page as completing, not on a bare
+     * checkout with `payment=failed` in the query and nothing to explain it.
+     * The page then asks the server what actually happened: cancelling is a
+     * customer's intention, not a payment outcome, and they may well have paid
+     * before closing the tab.
+     */
+    cancelUrl: `${siteUrl}/success?orderId=${orderId}`,
   };
 }
 
