@@ -46,7 +46,7 @@ const COPY: Record<View, { heading: string; subtext: string; message: string }> 
   },
   incomplete: {
     heading: "Payment Not Completed",
-    subtext: "Your order is saved",
+    subtext: "Your details are saved",
     message:
       "We haven't received your payment yet. Your cart and checkout details are saved — use the button below to finish paying. If you have just paid, leave this page open: it updates on its own as soon as the payment confirms.",
   },
@@ -229,6 +229,12 @@ export default function SuccessStatus({
 
   const { heading, subtext, message } = COPY[view];
   const totalLabel = view === "paid" ? "Total Paid" : "Order Total";
+
+  // Keep the tab honest as the state resolves — it is what the customer sees
+  // in their history and when switching windows.
+  useEffect(() => {
+    document.title = `${heading} | DrivoraParts`;
+  }, [heading]);
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-md flex-col overflow-x-hidden bg-white px-4 py-10 text-neutral-900 sm:px-6 sm:py-12">
