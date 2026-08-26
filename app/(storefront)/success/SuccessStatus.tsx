@@ -48,7 +48,7 @@ const COPY: Record<View, { heading: string; subtext: string; message: string }> 
     heading: "Payment Not Completed",
     subtext: "Your order is saved",
     message:
-      "Your payment has not been completed yet. Your checkout information has been saved — you can return to the payment page to finish paying.",
+      "We haven't received your payment yet. Your cart and checkout details are saved — use the button below to finish paying. If you have just paid, leave this page open: it updates on its own as soon as the payment confirms.",
   },
   unknown: {
     heading: "Order Received",
@@ -65,10 +65,9 @@ export default function SuccessStatus({
   orderId: string | null;
   npPaymentId: string | null;
   /**
-   * Arrived through the payment page's cancel button. Not proof of anything —
-   * the server still decides — but it means waiting out the confirmation
-   * window would leave someone who chose to leave staring at "Confirming Your
-   * Payment" for a minute and a half.
+   * Arrived through the payment page's cancel button. Never used to decide
+   * what the customer is told — the server does that — only to stop polling
+   * for a payment that was never started.
    */
   cancelled?: boolean;
 }) {
@@ -177,12 +176,23 @@ export default function SuccessStatus({
           return true;
         }
 
-        // They pressed cancel and the server has no payment for this order.
-        // Nothing is going to arrive, so say so now rather than in 90 seconds.
-        if (cancelled) {
-          setView("incomplete");
-          return true;
-        }
+        /*
+         * No confirmed payment on the first answer from the server, so show
+         * that straight away — with the button to finish paying — rather than
+         * holding a spinner for ninety seconds. Most people arriving here
+         * without a payment simply left the invoice.
+         *
+         * Polling continues underneath: if the customer did pay and the
+         * webhook is still in flight, this flips to Payment Successful on its
+         * own, which is why the copy tells them to leave the page open.
+         * Returning false keeps the interval alive.
+         */
+        setView((current) => (current === "paid" ? current : "incomplete"));
+
+        // Pressing cancel means no payment was made, so there is nothing to
+        // wait for — stop polling instead of asking thirty more times. Any
+        // other route keeps checking, in case a webhook is still in flight.
+        return cancelled;
       } catch {
         // transient — keep polling
       }
