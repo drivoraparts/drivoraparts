@@ -77,11 +77,13 @@ export function buildNowPaymentsUrls(orderId: string) {
     /*
      * Cancelling lands on the same status page as completing, not on a bare
      * checkout with `payment=failed` in the query and nothing to explain it.
-     * The page then asks the server what actually happened: cancelling is a
-     * customer's intention, not a payment outcome, and they may well have paid
-     * before closing the tab.
+     * The page still asks the server what actually happened — cancelling is an
+     * intention, not an outcome, and a customer may have paid before closing
+     * the tab — but `cancelled=1` says which door they came through, so the
+     * page can answer immediately instead of waiting out the window it needs
+     * when someone genuinely just paid.
      */
-    cancelUrl: `${siteUrl}/success?orderId=${orderId}`,
+    cancelUrl: `${siteUrl}/success?orderId=${orderId}&cancelled=1`,
   };
 }
 

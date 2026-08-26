@@ -60,9 +60,17 @@ const COPY: Record<View, { heading: string; subtext: string; message: string }> 
 export default function SuccessStatus({
   orderId,
   npPaymentId,
+  cancelled = false,
 }: {
   orderId: string | null;
   npPaymentId: string | null;
+  /**
+   * Arrived through the payment page's cancel button. Not proof of anything —
+   * the server still decides — but it means waiting out the confirmation
+   * window would leave someone who chose to leave staring at "Confirming Your
+   * Payment" for a minute and a half.
+   */
+  cancelled?: boolean;
 }) {
   const [view, setView] = useState<View>(
     orderId || npPaymentId ? "confirming" : "unknown"
@@ -168,6 +176,13 @@ export default function SuccessStatus({
           setView("incomplete");
           return true;
         }
+
+        // They pressed cancel and the server has no payment for this order.
+        // Nothing is going to arrive, so say so now rather than in 90 seconds.
+        if (cancelled) {
+          setView("incomplete");
+          return true;
+        }
       } catch {
         // transient — keep polling
       }
@@ -200,7 +215,7 @@ export default function SuccessStatus({
       active = false;
       clearInterval(interval);
     };
-  }, [orderId, npPaymentId, clearCart]);
+  }, [orderId, npPaymentId, clearCart, cancelled]);
 
   const { heading, subtext, message } = COPY[view];
   const totalLabel = view === "paid" ? "Total Paid" : "Order Total";

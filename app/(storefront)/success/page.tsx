@@ -11,13 +11,14 @@ export const metadata = buildPageMetadata({
 export default async function Success({
   searchParams,
 }: {
-  searchParams: Promise<{ orderId?: string; NP_id?: string }>;
+  searchParams: Promise<{ orderId?: string; NP_id?: string; cancelled?: string }>;
 }) {
   const params = await searchParams;
   return (
     <SuccessStatus
       orderId={params.orderId ?? null}
       npPaymentId={params.NP_id ?? null}
+      cancelled={params.cancelled === "1"}
     />
   );
 }
