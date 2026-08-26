@@ -19,6 +19,8 @@ import PowerLevelSection, {
 } from "./PowerLevelSection";
 import ProductDetailsSections from "./ProductDetailsSections";
 import CompatibilityHighlight from "./CompatibilityHighlight";
+import ProductInterest from "./ProductInterest";
+import type { ProductInterest as Interest } from "@/lib/analytics/product-interest";
 import FitmentAssuranceCallout from "./FitmentAssuranceCallout";
 import ProductBreadcrumbs from "./ProductBreadcrumbs";
 import StickyPurchaseBar from "./StickyPurchaseBar";
@@ -82,9 +84,12 @@ export default function ProductTemplate({
   categoryName,
   categorySlug,
   relatedProducts,
+  productInterest = null,
 }: {
   product: Product;
   catalogMeta: ProductCatalogMeta;
+  /** Real view/cart counts, or null when there is too little to be worth showing. */
+  productInterest?: Interest | null;
   inStock: boolean;
   rawCondition?: string;
   categoryName: string;
@@ -253,6 +258,8 @@ export default function ProductTemplate({
               product.swapPackage ? "Swap Compatibility" : "Confirmed Compatibility"
             }
           />
+
+          <ProductInterest interest={productInterest} />
 
           <PowerLevelSection sections={specSections} />
 

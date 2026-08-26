@@ -24,6 +24,7 @@ import {
   productJsonLd,
 } from "@/lib/seo";
 import { getProductReviewAggregate } from "@/lib/reviews";
+import { getProductInterest } from "@/lib/analytics/product-interest";
 
 export const revalidate = 3600;
 type PageProps = {
@@ -82,7 +83,10 @@ export default async function ProductPage({ params }: PageProps) {
    * than baked into the static meta above. Merging them keeps the shape
    * ProductTemplate already expects.
    */
-  const reviewAggregate = await getProductReviewAggregate(product.id);
+  const [reviewAggregate, productInterest] = await Promise.all([
+    getProductReviewAggregate(product.id),
+    getProductInterest(product.id),
+  ]);
   const catalogMeta = { ...baseMeta, ...reviewAggregate };
 
   const inStock = inventoryProduct?.stock !== false;
@@ -121,6 +125,7 @@ export default async function ProductPage({ params }: PageProps) {
       <ProductTemplate
         product={product}
         catalogMeta={catalogMeta}
+        productInterest={productInterest}
         inStock={inStock}
         rawCondition={rawCondition}
         categoryName={category?.name ?? product.category}
