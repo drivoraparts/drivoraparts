@@ -1,12 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {
-  getApprovedReviewCount,
-  getApprovedReviewsByProductId,
-  getAverageProductRating,
-  type ProductReview,
-} from "@/lib/reviews";
+import type { ProductReview } from "@/lib/reviews";
 import ReviewCard from "./ReviewCard";
 import ReviewWriteForm from "./ReviewWriteForm";
 import StarRating from "./StarRating";
@@ -36,19 +31,50 @@ export default function CustomerReviewsSection({
     setRating(initialRating);
   }, [initialReviewCount, initialRating]);
 
+  /*
+   * Fetched from the API, not imported from the review store.
+   *
+   * This component previously called the store directly. Being a client
+   * component, that bundled a browser-side copy of it — so it read an empty
+   * array that had nothing to do with the server's data, and a submitted
+   * review lived only in the tab that submitted it.
+   */
   useEffect(() => {
     if (!expanded || loaded) return;
 
-    const timer = window.setTimeout(() => {
-      setReviews(
-        getApprovedReviewsByProductId(productId, { offset: 0, limit: 500 })
-      );
-      setReviewCount(getApprovedReviewCount(productId));
-      setRating(getAverageProductRating(productId));
-      setLoaded(true);
-    }, 0);
+    let active = true;
 
-    return () => window.clearTimeout(timer);
+    (async () => {
+      try {
+        const res = await fetch(
+          `/api/reviews?product_id=${productId}&limit=100&offset=0`,
+          { cache: "no-store" }
+        );
+        if (!res.ok || !active) return;
+
+        const data = (await res.json()) as {
+          reviews?: ProductReview[];
+          summary?: { average?: number; count?: number };
+        };
+        if (!active) return;
+
+        setReviews(data.reviews ?? []);
+        if (typeof data.summary?.count === "number") {
+          setReviewCount(data.summary.count);
+        }
+        if (typeof data.summary?.average === "number") {
+          setRating(data.summary.average);
+        }
+      } catch {
+        // Leave the section on its initial figures rather than blanking it.
+      } finally {
+        if (active) setLoaded(true);
+      }
+    })();
+
+    return () => {
+      active = false;
+    };
   }, [expanded, loaded, productId]);
 
   const visibleReviews = reviews.slice(0, visibleCount);

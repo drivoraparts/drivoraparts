@@ -4,7 +4,6 @@ import {
   resolveProductCondition,
 } from "./condition";
 import { productLogistics } from "./logistics";
-import { getProductReviewAggregate } from "@/lib/reviews";
 
 export type { ProductLogistics };
 
@@ -179,12 +178,21 @@ export function resolveProductHorsepower(product: Product): string | undefined {
   return extractHorsepower(product.description);
 }
 
-export function resolveProductRating(product: Product): number {
-  return getProductReviewAggregate(product.id).rating;
+/*
+ * Review aggregates are no longer computed here.
+ *
+ * They live in the database now, so reading them is async, while this builds
+ * the static half of a product's presentation synchronously. The product page
+ * fetches the real figures and merges them over these defaults — see
+ * app/product/[id]/page.tsx. A product with no reviews reports none, which is
+ * also the correct starting point for one that has some.
+ */
+export function resolveProductRating(_product: Product): number {
+  return 0;
 }
 
-export function resolveProductReviewCount(product: Product): number {
-  return getProductReviewAggregate(product.id).reviewCount;
+export function resolveProductReviewCount(_product: Product): number {
+  return 0;
 }
 
 export function getProductCatalogMeta(product: Product): ProductCatalogMeta {

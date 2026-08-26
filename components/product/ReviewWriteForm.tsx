@@ -1,12 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import {
-  canSubmitReview,
-  getReviewSession,
-  submitReview,
-  type ProductReview,
-} from "@/lib/reviews";
+import { canSubmitReview, getReviewSession } from "@/lib/reviews";
+import type { ProductReview } from "@/lib/reviews";
 import StarRating from "./StarRating";
 
 type ReviewWriteFormProps = {
@@ -27,7 +23,7 @@ export default function ReviewWriteForm({
   const session = getReviewSession();
   const canSubmit = session ? canSubmitReview(session) : false;
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!session) {
       setMessage("Sign in with a verified email account to write a review.");
       return;
@@ -45,25 +41,42 @@ export default function ReviewWriteForm({
       return;
     }
 
+    // Posted to the API so the review is actually stored. Calling the review
+    // store from here wrote into a browser-side copy of it, which vanished on
+    // navigation and was never seen by anyone else.
     setSubmitting(true);
-    const result = submitReview({
-      productId,
-      rating,
-      review: reviewText.trim(),
-      context: session,
-    });
-    setSubmitting(false);
+    try {
+      const res = await fetch("/api/reviews", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          productId,
+          rating,
+          review: reviewText.trim(),
+          authorName: session.reviewerName,
+        }),
+      });
 
-    if (result.ok === false) {
-      setMessage(result.error);
-      return;
+      const data = (await res.json().catch(() => ({}))) as {
+        review?: ProductReview;
+        error?: string;
+      };
+
+      if (!res.ok || !data.review) {
+        setMessage(data.error ?? "We couldn't save your review. Please try again.");
+        return;
+      }
+
+      setMessage("Review submitted successfully.");
+      setReviewText("");
+      setRating(5);
+      setOpen(false);
+      onSubmitted(data.review);
+    } catch {
+      setMessage("We couldn't save your review. Please try again.");
+    } finally {
+      setSubmitting(false);
     }
-
-    setMessage("Review submitted successfully.");
-    setReviewText("");
-    setRating(5);
-    setOpen(false);
-    onSubmitted(result.review);
   };
 
   return (

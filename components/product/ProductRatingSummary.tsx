@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DEFAULT_AVATAR, getVerifiedBuyerAvatars } from "@/lib/reviews";
+import { DEFAULT_AVATAR } from "@/lib/reviews/constants-avatar";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
 import ReviewAvatar from "./ReviewAvatar";
 import StarRating from "./StarRating";
@@ -29,11 +29,43 @@ export default function ProductRatingSummary({
       return;
     }
 
-    const timer = window.setTimeout(() => {
-      setAvatars(getVerifiedBuyerAvatars(productId, 4));
-    }, 0);
+    // Derived from the API rather than the review store: importing the store
+    // into a client component ships a browser-side copy of it, which knows
+    // nothing about what the server actually holds.
+    let active = true;
 
-    return () => window.clearTimeout(timer);
+    (async () => {
+      try {
+        const res = await fetch(
+          `/api/reviews?product_id=${productId}&limit=20&offset=0`,
+          { cache: "no-store" }
+        );
+        if (!res.ok || !active) return;
+
+        const data = (await res.json()) as {
+          reviews?: { verifiedPurchase?: boolean; profileImage?: string }[];
+        };
+        if (!active) return;
+
+        const seen = new Set<string>();
+        const next: string[] = [];
+        for (const review of data.reviews ?? []) {
+          if (!review.verifiedPurchase) continue;
+          const avatar = review.profileImage || DEFAULT_AVATAR;
+          if (seen.has(avatar)) continue;
+          seen.add(avatar);
+          next.push(avatar);
+          if (next.length >= 4) break;
+        }
+        setAvatars(next);
+      } catch {
+        // No avatars is a fine outcome — the rating itself still renders.
+      }
+    })();
+
+    return () => {
+      active = false;
+    };
   }, [productId, hasReviews]);
 
   if (!hasReviews) {

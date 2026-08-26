@@ -24,8 +24,10 @@ export async function GET(req: Request) {
   );
   const offset = Math.max(0, Number(searchParams.get("offset") ?? 0) || 0);
 
-  const reviews = getApprovedReviewsByProductId(productId, { offset, limit });
-  const summary = getProductReviewAggregate(productId);
+  const [reviews, summary] = await Promise.all([
+    getApprovedReviewsByProductId(productId, { offset, limit }),
+    getProductReviewAggregate(productId),
+  ]);
 
   return NextResponse.json({
     reviews,
@@ -78,7 +80,7 @@ export async function POST(req: Request) {
       },
     };
 
-    const result = submitReview(input);
+    const result = await submitReview(input);
     if (result.ok === false) {
       return NextResponse.json({ error: result.error }, { status: 400 });
     }
@@ -86,8 +88,8 @@ export async function POST(req: Request) {
     return NextResponse.json({
       review: result.review,
       summary: {
-        average: getAverageProductRating(productId),
-        count: getApprovedReviewCount(productId),
+        average: await getAverageProductRating(productId),
+        count: await getApprovedReviewCount(productId),
       },
     });
   } catch {

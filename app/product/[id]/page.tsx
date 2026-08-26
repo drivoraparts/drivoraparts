@@ -23,6 +23,7 @@ import {
   hasGenericPlaceholderDescription,
   productJsonLd,
 } from "@/lib/seo";
+import { getProductReviewAggregate } from "@/lib/reviews";
 
 export const revalidate = 3600;
 type PageProps = {
@@ -64,7 +65,7 @@ export default async function ProductPage({ params }: PageProps) {
   if (!product) return notFound();
 
   const inventoryProduct = getInventoryProductById(product.id);
-  const catalogMeta = getProductCatalogMeta(
+  const baseMeta = getProductCatalogMeta(
     inventoryProduct ?? {
       id: product.id,
       name: product.name,
@@ -76,6 +77,14 @@ export default async function ProductPage({ params }: PageProps) {
       platform: product.platform,
     }
   );
+  /*
+   * Review figures come from the database, so they are fetched here rather
+   * than baked into the static meta above. Merging them keeps the shape
+   * ProductTemplate already expects.
+   */
+  const reviewAggregate = await getProductReviewAggregate(product.id);
+  const catalogMeta = { ...baseMeta, ...reviewAggregate };
+
   const inStock = inventoryProduct?.stock !== false;
   const rawCondition = inventoryProduct?.condition ?? product.condition;
   const category = getCategory(product.category);
