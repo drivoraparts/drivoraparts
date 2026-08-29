@@ -37,7 +37,28 @@ jobs:
           echo "HTTP ${code}"
           cat /tmp/reconcile.json || true
           echo
-          if [ "$code" != "200" ]; then
-            echo "::warning::Reconciliation returned HTTP ${code} (site may still be healthy)."
-            exit 0
-          fi
+
+          # A silent safety net is worse than none. This step used to exit 0 on
+          # every non-200, so a permanently broken reconciliation showed a green
+          # tick forever. Configuration faults now fail the job loudly; only
+          # genuinely transient faults stay quiet.
+          case "$code" in
+            200)
+              ;;
+            401)
+              echo "::error::CRON_SECRET rejected (HTTP 401) — the value in GitHub Actions does not match the one on Cloudflare."
+              exit 1
+              ;;
+            403)
+              echo "::error::Blocked before reaching the app (HTTP 403) — Cloudflare is challenging the GitHub runner. Add a WAF skip rule for /api/payments/reconcile."
+              exit 1
+              ;;
+            5*)
+              echo "::warning::Reconciliation returned HTTP ${code} — treating as transient."
+              exit 0
+              ;;
+            *)
+              echo "::error::Reconciliation returned unexpected HTTP ${code}."
+              exit 1
+              ;;
+          esac
