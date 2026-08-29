@@ -3,9 +3,17 @@ name: Reconcile Payments
 # Optional safety net: reconciles stale pending NOWPayments orders via a secured HTTP endpoint.
 # Requires CRON_SECRET in GitHub Actions secrets and on Cloudflare Production.
 
+# The schedule now lives in wrangler.jsonc (triggers.crons) and runs inside the
+# Worker itself. Two reasons it moved:
+#
+#   1. Cloudflare challenged this runner's IP, so the HTTP call never reached
+#      the app — reconciliation had never actually run.
+#   2. GitHub throttles scheduled workflows hard. A "*/10" cron here fired
+#      between 1 and 12 hours apart in practice, which is not a safety net.
+#
+# Kept as a manual trigger: useful for reconciling on demand after an incident,
+# and for confirming the endpoint still answers from outside.
 on:
-  schedule:
-    - cron: "*/10 * * * *" # every 10 minutes (GitHub may delay under load)
   workflow_dispatch:
     inputs:
       olderThanMinutes:

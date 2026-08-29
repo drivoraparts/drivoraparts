@@ -20,6 +20,13 @@
       "service": "drivoraparts"
     }
   ],
+  // Reconciliation safety net. Runs in-worker and reaches the app over the
+  // service binding above, so it never crosses the public edge and is not
+  // subject to WAF or bot challenges. Handler is attached by
+  // scripts/patch-opennext-cron.mjs.
+  "triggers": {
+    "crons": ["*/10 * * * *"]
+  },
   "observability": {
     "logs": {
       "enabled": true,
