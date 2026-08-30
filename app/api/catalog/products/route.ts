@@ -41,6 +41,10 @@ function getVocabulary(): SearchVocabulary {
 const searchIndex: SearchIndex = createSearchIndex();
 
 export async function GET(request: NextRequest) {
+  // Measured in-process and returned for the client to report as an analytics
+  // event. No storage, no lookups -- reading a clock cannot slow a search, and
+  // nothing about ranking depends on it.
+  const startedAt = Date.now();
   const params = request.nextUrl.searchParams;
   const page = Math.max(1, Number(params.get("page") || 1));
   const limit = Math.min(
@@ -124,5 +128,7 @@ export async function GET(request: NextRequest) {
      * "Showing results for X" instead of silently searching for something
      * the customer didn't type. */
     correctedQuery,
+    /** Server-side search duration in ms, for the search-analytics event. */
+    tookMs: Date.now() - startedAt,
   });
 }

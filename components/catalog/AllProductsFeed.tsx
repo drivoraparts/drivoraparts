@@ -22,6 +22,11 @@ import {
   type PriceFilterValue,
 } from "@/lib/catalog/price-filters";
 import type { CatalogProductCardData } from "./CatalogProductCard";
+import {
+  recordSearch,
+  recordSearchResultClick,
+} from "@/lib/analytics/search-tracking";
+import { normalizeText } from "@/lib/catalog/search";
 
 const PAGE_SIZE = 48;
 
@@ -43,7 +48,20 @@ type ApiResponse = {
   hasMore: boolean;
   /** Present when typo correction rewrote the query ("trubo" -> "turbo"). */
   correctedQuery?: string | null;
+  /** Server-side search duration, recorded by search analytics. */
+  tookMs?: number | null;
 };
+
+/**
+ * How long a query must sit still before it is recorded as a real search.
+ *
+ * The input fetches on every keystroke, and that behaviour is deliberate --
+ * results update as you type. Analytics must not mirror it, or every search
+ * for "bmw" would also be logged as "b", "bm". This delay is purely an
+ * analytics concern: results still update immediately, only the recording
+ * waits for the query to settle.
+ */
+const SEARCH_ANALYTICS_SETTLE_MS = 900;
 
 function readSavedState(): ListScrollState | null {
   const saved = readListScrollState(LIST_SCROLL_KEYS.catalogAll);
@@ -99,6 +117,21 @@ export default function AllProductsFeed({
   /** The query the displayed results actually belong to, so the empty state
    * quotes what was searched rather than whatever is currently typed. */
   const [resultsQuery, setResultsQuery] = useState(initialQuery);
+
+  /*
+   * Search analytics state. Kept in refs so recording never triggers a
+   * re-render -- observation must be invisible to the rendering path.
+   * `searchIdRef` ties result clicks back to the search that produced them.
+   */
+  const searchIdRef = useRef<string | null>(null);
+  const lastRecordedRef = useRef<string | null>(null);
+  const lastResponseRef = useRef<{
+    query: string;
+    total: number;
+    correctedQuery: string | null;
+    tookMs: number | null;
+    top: CatalogProductCardData | null;
+  } | null>(null);
 
   const filteredBrands = useMemo(
     () =>
@@ -262,6 +295,17 @@ export default function AllProductsFeed({
         setCorrectedQuery(data.correctedQuery ?? null);
         setResultsQuery(query);
         setPage(1);
+
+        // Hand the settle-timer effect below what this response actually
+        // contained. Recording happens there, not here, so nothing is written
+        // while the visitor is still typing.
+        lastResponseRef.current = {
+          query,
+          total: data.total,
+          correctedQuery: data.correctedQuery ?? null,
+          tookMs: data.tookMs ?? null,
+          top: data.products[0] ?? null,
+        };
       } catch {
         // A stuck multi-page restore (see the loop above) or any other
         // fetch failure used to leave this stuck on "Loading products…"
@@ -283,8 +327,65 @@ export default function AllProductsFeed({
     };
   }, [fetchPage, restoreScroll]);
 
+  /*
+   * Records a search once the query has settled and its results have arrived.
+   *
+   * Sits entirely outside the fetch path: it reads what the last response
+   * contained and reports it. If this never ran, search would behave
+   * identically. Non-search browsing (empty query) is not recorded.
+   */
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!trimmed || loading) return;
+
+    const timer = setTimeout(() => {
+      const response = lastResponseRef.current;
+      if (!response || response.query.trim() !== trimmed) return;
+
+      // One record per settled query, so re-renders and filter changes that
+      // leave the query untouched do not inflate the counts.
+      const signature = `${trimmed}::${response.total}`;
+      if (lastRecordedRef.current === signature) return;
+      lastRecordedRef.current = signature;
+
+      searchIdRef.current = recordSearch({
+        query: trimmed,
+        normalizedQuery: normalizeText(trimmed),
+        correctedQuery: response.correctedQuery,
+        resultCount: response.total,
+        topProductId: response.top?.id ?? null,
+        topProductName: response.top?.name ?? null,
+        tookMs: response.tookMs,
+      });
+    }, SEARCH_ANALYTICS_SETTLE_MS);
+
+    return () => clearTimeout(timer);
+  }, [query, loading, products]);
+
   const handleProductNavigate = useCallback(
     (productId: number) => {
+      /*
+       * Attribute the click to the search that produced this list. Runs before
+       * the existing scroll-state save below and shares its trigger, so no new
+       * click handling is introduced into the card.
+       */
+      const searchId = searchIdRef.current;
+      const trimmed = query.trim();
+      if (searchId && trimmed) {
+        const index = products.findIndex((p) => p.id === productId);
+        const clicked = index >= 0 ? products[index] : null;
+        if (clicked) {
+          recordSearchResultClick({
+            searchId,
+            query: trimmed,
+            normalizedQuery: normalizeText(trimmed),
+            productId: clicked.id,
+            productName: clicked.name,
+            position: index + 1,
+          });
+        }
+      }
+
       saveCatalogAllState({
         scrollY: window.scrollY,
         page,
@@ -296,7 +397,7 @@ export default function AllProductsFeed({
         productId,
       });
     },
-    [page, query, categoryFilter, brandFilter, priceFilter, sortFilter]
+    [page, query, products, categoryFilter, brandFilter, priceFilter, sortFilter]
   );
 
   return (

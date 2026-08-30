@@ -8,6 +8,7 @@ export const ADMIN_NAV_LINKS = [
   { href: "/admin/dashboard", label: "Dashboard" },
   { href: "/admin/insights", label: "AI Insights" },
   { href: "/admin/analytics", label: "Analytics" },
+  { href: "/admin/search", label: "Search Analytics" },
   { href: "/admin/revenue", label: "Revenue" },
   { href: "/admin/customers", label: "Customers" },
   { href: "/admin/inventory", label: "Inventory" },

@@ -3,6 +3,7 @@
 import { useState, type MouseEvent } from "react";
 import { useCart } from "@/context/CartContext";
 import { trackEvent } from "@/lib/analytics/client";
+import { readSearchAttribution } from "@/lib/analytics/search-tracking";
 import { productHasStock } from "@/lib/stock";
 import {
   MAX_LINE_ITEMS,
@@ -78,11 +79,27 @@ export default function AddToCartButton({
       }
 
       addToCart(product, quantity);
+
+      /*
+       * Search attribution, when this product was reached from a search result.
+       * Read-only lookup of a value stored at click time -- the cart call above
+       * has already happened and is not affected by any of this.
+       */
+      const attribution = readSearchAttribution(product.id);
+
       trackEvent("add_to_cart", {
         productId: product.id,
         productName: product.name,
         price: product.price,
         quantity,
+        ...(attribution
+          ? {
+              searchId: attribution.searchId,
+              searchQuery: attribution.query,
+              searchPosition: attribution.position,
+              fromSearch: true,
+            }
+          : {}),
       });
       showToast("Added to cart");
     } catch {

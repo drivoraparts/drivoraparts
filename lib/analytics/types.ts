@@ -2,7 +2,11 @@ export type AnalyticsEventName =
   | "product_view"
   | "add_to_cart"
   | "checkout_start"
-  | "order_completed";
+  | "order_completed"
+  // Search analytics. Observation only -- these are written after a search has
+  // already returned and never participate in ranking.
+  | "search"
+  | "search_result_click";
 
 export type AnalyticsEvent = {
   id: string;

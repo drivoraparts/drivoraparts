@@ -10,6 +10,8 @@ const VALID_EVENTS: AnalyticsEventName[] = [
   "add_to_cart",
   "checkout_start",
   "order_completed",
+  "search",
+  "search_result_click",
 ];
 
 export async function GET() {
