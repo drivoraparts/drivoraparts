@@ -21,6 +21,7 @@ export const LIST_SCROLL_KEYS = {
   brand: (categorySlug: string, brandSlug: string) =>
     `brand:${categorySlug}:${brandSlug}`,
   enginePlatform: (platformSlug: string) => `engine:${platformSlug}`,
+  vehiclePlatform: (slug: string) => `vehicle:${slug}`,
 } as const;
 
 export const PENDING_LIST_SCROLL_KEY = "drivora:pending-list-scroll";

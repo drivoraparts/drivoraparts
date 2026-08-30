@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { engineTree, getPlatformSlug } from "@/data/engine";
+import { vehiclePlatforms } from "@/data/vehicles";
 import {
   brands,
   categories,
@@ -35,6 +36,7 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     { path: "", priority: 1 },
     { path: routes.catalog, priority: 0.95 },
     { path: routes.all, priority: 0.9 },
+    { path: "/vehicles", priority: 0.9 },
     { path: "/about", priority: 0.6 },
     { path: "/contact", priority: 0.6 },
     { path: "/policies", priority: 0.4 },
@@ -59,6 +61,10 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
         products.some((p) => p.category === brand.category && p.brand === brand.slug)
     )
     .map((brand) => entry(toUrl(routes.brand(brand.category, brand.slug)), 0.85));
+
+  const vehicleEntries = vehiclePlatforms.map((platform) =>
+    entry(toUrl(`/vehicles/${platform.slug}`), 0.85)
+  );
 
   const enginePlatformEntries = engineTree.flatMap((group) =>
     group.platforms.map((platform) =>

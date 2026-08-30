@@ -10,6 +10,7 @@ import { WISHLIST_CHANGE_EVENT, readWishlist } from "@/lib/wishlist";
 
 const NAV_LINKS = [
   { href: "/catalog/all", label: "Shop" },
+  { href: "/vehicles", label: "By Vehicle" },
   { href: "/cart", label: "Cart" },
   { href: "/track-order", label: "Track Order" },
   { href: "/about", label: "About" },
