@@ -11,7 +11,9 @@ import {
 } from "@/lib/catalog/price-filters";
 import {
   buildVocabulary,
+  createSearchIndex,
   searchProducts,
+  type SearchIndex,
   type SearchVocabulary,
 } from "@/lib/catalog/search";
 
@@ -32,6 +34,11 @@ function getVocabulary(): SearchVocabulary {
   }
   return cachedVocabulary;
 }
+
+// Same reasoning for the prepared-field index: normalizing every product's
+// description on each request was most of the search cost, and the catalog
+// never changes within an isolate. Fills lazily as products are scored.
+const searchIndex: SearchIndex = createSearchIndex();
 
 export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
@@ -72,6 +79,7 @@ export async function GET(request: NextRequest) {
       getBrandName: brandName,
       getCategoryName: categoryName,
       vocabulary: getVocabulary(),
+      index: searchIndex,
     });
     items = result.items;
     correctedQuery = result.correctedQuery;
