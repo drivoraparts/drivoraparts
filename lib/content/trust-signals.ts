@@ -6,6 +6,7 @@ import {
   US_HEADQUARTERS,
 } from "./company";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
+import { isExpressConfigured } from "@/lib/shipping/config";
 
 export type TrustSignal = {
   id: string;
@@ -82,7 +83,19 @@ export const TRUST_CATEGORIES: TrustCategory[] = [
     eyebrow: "Shipping & Returns",
     headline: "Free shipping. 30-day money-back guarantee.",
     detail: `Every order ships free, worldwide — from single parts to full engine assemblies, coordinated from our US, ${JAPAN_LOGISTICS_HUB.country}, and ${AUSTRALIA_LOGISTICS_HUB.country} hubs. Not the right fit? Return it within 30 days for a refund.`,
-    chips: ["Free Shipping", "30-Day Guarantee", "LTL Freight"],
+    /*
+     * "Express Available" appears only once an express price is actually
+     * configured (see lib/shipping/config.ts). Until then the option does not
+     * exist at checkout, and advertising it would be a claim the site cannot
+     * honour. No delivery-time guarantee is stated anywhere, because nothing
+     * in the system guarantees one.
+     */
+    chips: [
+      "Free Standard Shipping",
+      ...(isExpressConfigured() ? ["Express Available"] : []),
+      "30-Day Guarantee",
+      "LTL Freight",
+    ],
     seal: "shipping",
   },
   {

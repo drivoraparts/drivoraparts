@@ -6,6 +6,10 @@ import {
 } from "@/lib/checkout/validate-items";
 import { logError, logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
+import {
+  priceShippingMethod,
+  type ShippingMethod,
+} from "@/lib/shipping/quote";
 
 function getCheckoutErrorMessage(error: unknown): string {
   if (error instanceof Error && error.message) return error.message;
@@ -120,10 +124,31 @@ export async function POST(req: Request) {
         ? body.provider
         : undefined;
 
+    /*
+     * The customer chooses a METHOD; the price is computed here. A shipping
+     * amount is never read from the request body -- otherwise a crafted
+     * payload could set its own delivery fee, including a negative one.
+     */
+    const requestedMethod: ShippingMethod =
+      body?.shippingMethod === "express" ? "express" : "standard";
+
+    const shippingQuote = priceShippingMethod(
+      parsedItems.items.map((item) => ({
+        productId: item.productId,
+        quantity: item.quantity,
+      })),
+      customer.country,
+      requestedMethod
+    );
+
     const result = await processCheckout({
       items: lockedItems,
       customer,
       providerId,
+      shipping: shippingQuote.amount,
+      shippingMethod: shippingQuote.method,
+      freightClass: shippingQuote.freightClass,
+      shippingZone: shippingQuote.zone,
       requestMeta: { ip },
     });
 

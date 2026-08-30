@@ -139,6 +139,56 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
                 {order.customer.phone ? ` · ${order.customer.phone}` : ""}
               </p>
             ) : null}
+
+            {/*
+              * What the customer actually chose and paid, so the order can be
+              * dispatched on the right service without guessing. Freight class
+              * and zone are stored at order time rather than recomputed, since
+              * the catalog may have changed since.
+              */}
+            <div className="mt-3 border-t border-zinc-100 pt-2.5 text-xs">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                <span className="text-zinc-500">
+                  Method:{" "}
+                  <span
+                    className={`font-medium ${
+                      order.shipping_method === "express"
+                        ? "text-red-700"
+                        : "text-zinc-900"
+                    }`}
+                  >
+                    {order.shipping_method === "express"
+                      ? "Express (paid)"
+                      : "Standard (free)"}
+                  </span>
+                </span>
+
+                {order.shipment_freight_class ? (
+                  <span className="text-zinc-500">
+                    Package:{" "}
+                    <span className="font-medium text-zinc-900">
+                      {order.shipment_freight_class}
+                    </span>
+                  </span>
+                ) : null}
+
+                {order.shipment_zone ? (
+                  <span className="text-zinc-500">
+                    Zone:{" "}
+                    <span className="font-medium text-zinc-900">
+                      {order.shipment_zone}
+                    </span>
+                  </span>
+                ) : null}
+
+                <span className="text-zinc-500">
+                  Shipping fee:{" "}
+                  <span className="font-medium text-zinc-900">
+                    ${Number(order.shipping ?? 0).toFixed(2)}
+                  </span>
+                </span>
+              </div>
+            </div>
           </div>
 
           <div>

@@ -111,6 +111,12 @@ export type OrderRecord = {
   shipment_destination: string | null;
   shipment_reference: string | null;
   shipment_notes: string | null;
+  /** Which delivery option the customer chose at checkout. */
+  shipping_method: "standard" | "express";
+  /** parcel | multibox | pallet — the class the express fee was priced from. */
+  shipment_freight_class: string | null;
+  /** Destination zone recorded at order time. */
+  shipment_zone: string | null;
   shipment_type: string | null;
   shipment_current_location: string | null;
   shipment_current_location_updated_at: string | null;
@@ -148,6 +154,12 @@ export type CreateOrderInput = {
   customerId: string;
   items: CreateOrderItemInput[];
   shipping?: number;
+  /** Which option the customer chose. Priced server-side before it gets here. */
+  shippingMethod?: "standard" | "express";
+  /** parcel | multibox | pallet — what the express fee was based on. */
+  freightClass?: string;
+  /** Destination zone at order time. */
+  shippingZone?: string;
   customerEmail?: string;
 };
 
@@ -190,6 +202,21 @@ export async function createOrderRecord(
   let order: OrderRecord | null = null;
   let orderError: { code?: string; message: string } | null = null;
 
+  /*
+   * Shipping-method columns are written only while they exist.
+   *
+   * Code and migrations do not deploy at the same instant, and an insert
+   * naming a column the database has not gained yet fails outright -- which
+   * would take checkout down for every customer until the migration ran.
+   *
+   * PostgREST rejects an unknown column with PGRST204 from its schema cache
+   * before Postgres ever sees the statement, so it is that code -- not the
+   * Postgres 42703 -- that has to be caught. Both are handled: the insert is
+   * retried without these fields, an order is still placed correctly, and only
+   * the method annotation is missing until migration 013 is applied.
+   */
+  let includeShippingColumns = true;
+
   for (let attempt = 0; attempt < MAX_ORDER_NUMBER_ATTEMPTS; attempt += 1) {
     const result = await supabase
       .from("orders")
@@ -202,6 +229,13 @@ export async function createOrderRecord(
         order_number: generateOrderNumber(),
         order_status: "order_received",
         control_status: "active",
+        ...(includeShippingColumns
+          ? {
+              shipping_method: input.shippingMethod ?? "standard",
+              shipment_freight_class: input.freightClass ?? null,
+              shipment_zone: input.shippingZone ?? null,
+            }
+          : {}),
       })
       .select("*")
       .single();
@@ -210,6 +244,17 @@ export async function createOrderRecord(
       order = result.data as OrderRecord;
       orderError = null;
       break;
+    }
+
+    // Migration 013 has not run yet. Drop the new fields and try again rather
+    // than failing the customer's order.
+    if (
+      (result.error.code === "PGRST204" || result.error.code === "42703") &&
+      includeShippingColumns
+    ) {
+      includeShippingColumns = false;
+      orderError = result.error;
+      continue;
     }
 
     // 23505 = unique_violation -- retry with a freshly generated order_number.

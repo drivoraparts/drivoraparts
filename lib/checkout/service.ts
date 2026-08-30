@@ -110,6 +110,13 @@ export async function processCheckout(input: {
 
   shipping?: number;
 
+  /** Which option the customer chose. Priced server-side, never client-sent. */
+  shippingMethod?: "standard" | "express";
+
+  freightClass?: string;
+
+  shippingZone?: string;
+
   requestMeta?: Record<string, unknown>;
 
 }): Promise<CheckoutResult> {
@@ -220,6 +227,12 @@ export async function processCheckout(input: {
     items: lockedItems,
 
     shipping: input.shipping ?? 0,
+
+    shippingMethod: input.shippingMethod ?? "standard",
+
+    freightClass: input.freightClass,
+
+    shippingZone: input.shippingZone,
 
     customerEmail: customer.email,
 

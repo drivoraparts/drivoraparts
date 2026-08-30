@@ -22,6 +22,14 @@ import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-
 const glassCard =
   "box-border w-full max-w-full rounded-lg border border-neutral-200 bg-white p-4 shadow-sm sm:p-6";
 
+type ShippingQuoteOption = {
+  method: "standard" | "express";
+  label: string;
+  amount: number;
+  freightClassLabel: string;
+  unavailableReason?: string;
+};
+
 const inputClass =
   "box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500";
 
@@ -35,6 +43,17 @@ export default function CheckoutPage() {
   const [zip, setZip] = useState("");
   const [country, setCountry] = useState("");
   const [submitting, setSubmitting] = useState(false);
+
+  /*
+   * Shipping options for this cart and destination. Standard is always free
+   * and always present; express appears only when it is genuinely priced for
+   * the destination. Quotes are advisory — the fee charged is recomputed
+   * server-side at order time from the method name alone.
+   */
+  const [shippingOptions, setShippingOptions] = useState<ShippingQuoteOption[]>([]);
+  const [shippingMethod, setShippingMethod] = useState<"standard" | "express">(
+    "standard"
+  );
 
   const cart = useCartStore((s) => s.items);
   const clearCart = useCartStore((s) => s.clearCart);
@@ -113,6 +132,58 @@ export default function CheckoutPage() {
     });
   }, [hydrated, cart, breakdown.total]);
 
+  /*
+   * Re-quote whenever the cart or destination changes. Failure is silent and
+   * leaves the options empty, which renders as free standard shipping only —
+   * the customer can always complete an order even if quoting is unavailable.
+   */
+  useEffect(() => {
+    if (!hydrated || !cart.length) {
+      setShippingOptions([]);
+      return;
+    }
+
+    let cancelled = false;
+
+    const load = async () => {
+      try {
+        const res = await fetch("/api/shipping/quote", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            items: cart.map((item) => ({
+              productId: item.id,
+              quantity: item.quantity,
+            })),
+            country: country.trim() || undefined,
+          }),
+        });
+        if (!res.ok || cancelled) return;
+
+        const data = (await res.json()) as { options?: ShippingQuoteOption[] };
+        if (cancelled) return;
+
+        const options = data.options ?? [];
+        setShippingOptions(options);
+
+        // Never leave a method selected that this destination cannot fulfil.
+        const express = options.find((option) => option.method === "express");
+        if (!express || express.unavailableReason) setShippingMethod("standard");
+      } catch {
+        if (!cancelled) setShippingOptions([]);
+      }
+    };
+
+    void load();
+    return () => {
+      cancelled = true;
+    };
+  }, [hydrated, cart, country]);
+
+  const selectedShipping =
+    shippingOptions.find((option) => option.method === shippingMethod) ?? null;
+  const shippingFee = selectedShipping?.amount ?? 0;
+
   const handleCheckout = async () => {
     if (!cart.length || submitting) return;
 
@@ -152,6 +223,9 @@ export default function CheckoutPage() {
             zip: zip.trim(),
             country: country.trim() || undefined,
           },
+          // A method name only. The server prices it — the browser never
+          // sends an amount.
+          shippingMethod,
           provider: "nowpayments",
         }),
       });
@@ -527,8 +601,82 @@ export default function CheckoutPage() {
                   ))}
                 </div>
 
+                {/*
+                  * Shipping choice. Only rendered when there is a genuine
+                  * choice to make -- with express unconfigured this collapses
+                  * to nothing and checkout looks exactly as it did before.
+                  */}
+                {shippingOptions.length > 1 ? (
+                  <div className="mt-4 border-t border-neutral-200 pt-4">
+                    <p className="mb-2 text-sm font-semibold text-neutral-900">
+                      Delivery
+                    </p>
+                    <div className="space-y-2">
+                      {shippingOptions.map((option) => {
+                        const disabled = Boolean(option.unavailableReason);
+                        const active = shippingMethod === option.method && !disabled;
+
+                        return (
+                          <label
+                            key={option.method}
+                            className={`flex cursor-pointer items-start gap-3 rounded-lg border p-3 transition ${
+                              disabled
+                                ? "cursor-not-allowed border-neutral-200 bg-neutral-50 opacity-70"
+                                : active
+                                  ? "border-red-500 bg-red-50"
+                                  : "border-neutral-300 hover:border-neutral-400"
+                            }`}
+                          >
+                            <input
+                              type="radio"
+                              name="shipping-method"
+                              className="mt-0.5 accent-red-600"
+                              checked={active}
+                              disabled={disabled}
+                              onChange={() => setShippingMethod(option.method)}
+                            />
+                            <span className="min-w-0 flex-1">
+                              <span className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                                <span className="text-sm font-medium text-neutral-900">
+                                  {option.label}
+                                </span>
+                                <span className="text-sm font-semibold text-neutral-900">
+                                  {option.method === "standard" ? (
+                                    "Free"
+                                  ) : disabled ? (
+                                    "—"
+                                  ) : (
+                                    <Price usd={option.amount} />
+                                  )}
+                                </span>
+                              </span>
+                              <span className="mt-0.5 block text-xs leading-relaxed text-neutral-500">
+                                {option.unavailableReason ??
+                                  `${option.freightClassLabel}${
+                                    option.method === "express"
+                                      ? " · priced by package type and destination"
+                                      : ""
+                                  }`}
+                              </span>
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ) : null}
+
                 <div className="mt-4 border-t border-neutral-200 pt-4">
                   <OrderTotalsSummary breakdown={breakdown} />
+
+                  {shippingFee > 0 ? (
+                    <div className="mt-2 flex justify-between text-sm">
+                      <span className="text-neutral-600">Express shipping</span>
+                      <span className="font-medium text-neutral-900">
+                        <Price usd={shippingFee} />
+                      </span>
+                    </div>
+                  ) : null}
 
                   <div className="mt-3 flex items-center justify-center gap-2 text-xs text-neutral-500">
                     <svg
