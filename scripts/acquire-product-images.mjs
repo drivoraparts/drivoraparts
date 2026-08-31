@@ -10,13 +10,12 @@
  *   node scripts/acquire-product-images.mjs --apply --limit 20
  *   node scripts/acquire-product-images.mjs --apply --only 2117,2118
  *
- * WHY ONLY OPENVERSE AND WIKIMEDIA COMMONS
- * Both return a machine-readable licence per result, so "usage rights" is a
- * field we read rather than a claim we invent. A general image search returns
- * no licence at all, and downloading from one would mean asserting a permission
- * nobody granted. Every accepted image here carries its licence into the
- * manifest verbatim; anything whose licence forbids commercial use, or that
- * carries no licence, is rejected before download.
+ * WHY THESE SOURCES
+ * Pexels (when PEXELS_API_KEY is set), Openverse and Wikimedia Commons all
+ * return a machine-readable licence per result, so "usage rights" is a field
+ * we read rather than a claim we invent. A general image search returns no
+ * licence at all, and downloading from one would mean asserting a permission
+ * nobody granted.
  *
  * WHY MOST PRODUCTS WILL NOT GET AN IMAGE
  * A relevance gate (see scoreCandidate) requires the candidate's own title to
@@ -25,6 +24,12 @@
  * a *TP38* turbocharger. Freely-licensed libraries hold very few photographs of
  * specific aftermarket parts, so a low hit rate is the correct outcome: the
  * alternative is dressing a listing with a part the customer will not receive.
+ *
+ * Pexels raises the hit rate on the homepage but barely helps here, and it
+ * actively introduces one failure: it is full of whole-vehicle photography, so
+ * a product that names its fitment vehicle ("... for 85-97 Ford Mustang") will
+ * match a picture of that car. Eleven products were given photos of the
+ * vehicles their parts bolt to before the part-noun check below existed.
  *
  * PRODUCT BOUNDARIES ARE STRUCTURAL
  * Records are located and mutated by object identity after JSON.parse. There is
@@ -68,7 +73,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
  * Only licences that permit commercial reuse. NC forbids it outright. ND is
  * excluded because we resize and crop for the grid, which it does not allow.
  */
-const OK_LICENCE = /^(cc0|pdm|by|by-sa)$/i;
+const OK_LICENCE = /^(cc0|pdm|by|by-sa|pexels)$/i;
 function normaliseWikiLicence(s = "") {
   const t = s.toLowerCase();
   if (t.includes("public domain") || t.includes("pd-")) return "pdm";
@@ -192,6 +197,11 @@ const STOP = new Set(["for", "sale", "with", "and", "the", "new", "used", "oem",
 
 /* Category nouns. Present in almost every candidate title in the category, so
  * matching one proves nothing about product identity. */
+/* The component nouns among GENERIC. If a product title contains one of these,
+ * the candidate must mention it too -- otherwise the match is the vehicle the
+ * part fits, not the part. */
+const PART_NOUN = /^(engine|turbo|turbocharger|pump|piston|pistons|manifold|crossmember|transmission|gearbox|wastegate|wastegates|bed|shell|cover|topper|liner|rack|seal|seals|pipe|pipes|exhaust|intake|filter|brake|brakes|clutch|flywheel|bearing|gasket|injector|injectors|alternator|starter|radiator|cooler|sensor|switch|valve|cylinder|steering|suspension|spring|shock|strut|wheel|wheels|tire|tires|bumper|grille|fender|hood|door|mirror|glass|window|windows|visor|bars|rod|rods)$/;
+
 const GENERIC = new Set([
   "engine", "turbo", "turbocharger", "pump", "pistons", "piston", "manifold", "crossmember",
   "transmission", "gearbox", "wastegate", "wastegates", "truck", "shell", "cover", "camper",
@@ -229,6 +239,39 @@ function queriesFor(p) {
 }
 
 /* ------------------------------------------------------------ search adapters */
+/**
+ * Pexels, active only when PEXELS_API_KEY is set.
+ *
+ * Included for completeness, but expected to help far less here than on the
+ * homepage. Pexels is shot as commercial lifestyle photography, so it has no
+ * photograph of an Alliant AP63402 IPR valve or a TP38 turbocharger, and the
+ * relevance gate below will reject a generic turbo for a specific part -- as
+ * it should, since the customer receives the specific part.
+ */
+const PEXELS_KEY = process.env.PEXELS_API_KEY || "";
+async function searchPexels(q) {
+  if (!PEXELS_KEY) return [];
+  const u = `https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&per_page=30`;
+  const r = await fetch(u, { headers: { Authorization: PEXELS_KEY, "User-Agent": UA } });
+  if (r.status === 429) throw new Error("RATE_LIMIT");
+  if (!r.ok) return [];
+  const j = await r.json();
+  return (j.photos || []).map((p) => ({
+    url: (p.src && (p.src.original || p.src.large2x)) || "",
+    title: p.alt || q,
+    creator: p.photographer || "",
+    creatorUrl: p.photographer_url || "",
+    licence: "pexels",
+    licenceRaw: "Pexels Licence",
+    licenceUrl: "https://www.pexels.com/license/",
+    landing: p.url || "",
+    source: "Pexels",
+    via: "pexels",
+    w: p.width || null,
+    h: p.height || null,
+  })).filter((c) => c.url);
+}
+
 async function searchOpenverse(q) {
   const u = `https://api.openverse.org/v1/images/?q=${encodeURIComponent(q)}&page_size=12&license_type=commercial`;
   const r = await fetch(u, { headers: { "User-Agent": UA } });
@@ -302,6 +345,26 @@ function scoreCandidate(cand, tokens, product) {
   const hitsD = distinctive.filter((t) => hay.includes(t.toLowerCase()));
   const hitsA = tokens.filter((t) => hay.includes(t.toLowerCase()));
   if (!hitsD.length) return { ok: false, why: `no identifying token in "${cand.title.slice(0, 40)}"` };
+
+  /* THE MATCH MUST BE THE PART, NOT THE CAR THE PART FITS.
+   *
+   * Product titles name their fitment vehicle, and those names are distinctive
+   * tokens, so "Walbro 155lph Fuel Pump Kit for 85-97 Ford Mustang" matched a
+   * photograph of a Mustang. Eleven products were given photos of whole
+   * vehicles this way -- pumps and truck beds illustrated by the car they bolt
+   * to. A customer buying a fuel pump does not receive a Mustang.
+   *
+   * So when the product names a part, the candidate has to mention that part
+   * too. Matching only the vehicle is not evidence of the part. */
+  const partNouns = tokens
+    .map((t) => t.toLowerCase())
+    .filter((t) => GENERIC.has(t) && PART_NOUN.test(t));
+  if (partNouns.length) {
+    const corroborated = partNouns.some((n) => hay.includes(n));
+    if (!corroborated) {
+      return { ok: false, why: `matched the fitment vehicle, not the ${partNouns[0]}: "${cand.title.slice(0, 40)}"` };
+    }
+  }
   return { ok: true, score: hitsD.length * 10 + hitsA.length, matched: hitsD };
 }
 
@@ -350,6 +413,7 @@ let downloaded = 0, updated = 0, noMatch = 0;
  * tolerates far more, so losing one must not cost us the other. Only when every
  * provider is down do we stop and let the manifest resume the run later. */
 const providers = [
+  { name: "pexels", fn: searchPexels, live: true },
   { name: "openverse", fn: searchOpenverse, live: true },
   { name: "commons", fn: searchCommons, live: true },
 ];

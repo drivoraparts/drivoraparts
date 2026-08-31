@@ -685,822 +685,6 @@
     "status": "downloaded",
     "verified": "pending"
   },
-  "acq-48": {
-    "productId": 48,
-    "productName": "Ford Coyote 5.0L V8 Engine",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Ford Coyote 5.0L V8 Engine",
-      "ford Ford Coyote 5.0L V8 Engine"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:01.056Z"
-  },
-  "acq-221": {
-    "productId": 221,
-    "productName": "1968-72 GM A-Body Swap Transmission Crossmember",
-    "status": "no-licensed-match",
-    "reason": "583px",
-    "searched": [
-      "1968-72 GM A-Body Swap Transmission Crossmember",
-      "chevrolet 1968-72 GM A-Body Swap Transmission Crossmember"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:04.757Z"
-  },
-  "acq-349": {
-    "productId": 349,
-    "productName": "ATOMIC AIRFORCE MANIFOLD LT1",
-    "status": "no-licensed-match",
-    "reason": "583px",
-    "searched": [
-      "ATOMIC AIRFORCE MANIFOLD LT1",
-      "chevrolet ATOMIC AIRFORCE MANIFOLD LT1"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:08.570Z"
-  },
-  "acq-509": {
-    "productId": 509,
-    "productName": "Carrillo Bullet Series Pistons Coyote 5.0L Modular Stroker - Stock 4V",
-    "status": "no-licensed-match",
-    "reason": "276px",
-    "searched": [
-      "Carrillo Bullet Series Pistons Coyote 5.0L Modular Stroker - Stock 4V",
-      "ford Carrillo Bullet Series Pistons Coyote 5.0L Modular Stroker - Stoc"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:11.847Z"
-  },
-  "acq-575": {
-    "productId": 575,
-    "productName": "Dual Phantom Stealth Fuel System",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Dual Phantom Stealth Fuel System",
-      "chevrolet Dual Phantom Stealth Fuel System"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:15.732Z"
-  },
-  "acq-746": {
-    "productId": 746,
-    "productName": "Manely LS / LT H-Tuff Connecting Rod",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Manely LS / LT H-Tuff Connecting Rod",
-      "chevrolet Manely LS / LT H-Tuff Connecting Rod"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:28.106Z"
-  },
-  "acq-756": {
-    "productId": 756,
-    "productName": "Manley LS / LT H beam Connecting Rod",
-    "status": "no-licensed-match",
-    "reason": "540px",
-    "searched": [
-      "Manley LS / LT H beam Connecting Rod",
-      "chevrolet Manley LS / LT H beam Connecting Rod"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:40.426Z"
-  },
-  "acq-757": {
-    "productId": 757,
-    "productName": "Manley LS / LT H-Lite Connecting Rod",
-    "status": "no-licensed-match",
-    "reason": "396px",
-    "searched": [
-      "Manley LS / LT H-Lite Connecting Rod",
-      "chevrolet Manley LS / LT H-Lite Connecting Rod"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:43.227Z"
-  },
-  "acq-1305": {
-    "productId": 1305,
-    "productName": "Walbro 155lph Fuel Pump Kit for 85-97 Ford Mustang (EXCLUDES 96-97 Cobra)",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Walbro 155lph Fuel Pump Kit for 85-97 Ford Mustang (EXCLUDES 96-97 Cob",
-      "ford Walbro 155lph Fuel Pump Kit for 85-97 Ford Mustang"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:45.688Z"
-  },
-  "acq-1306": {
-    "productId": 1306,
-    "productName": "Walbro 155lph Universal In-Line Pump",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Walbro 155lph Universal In-Line Pump",
-      "chevrolet Walbro 155lph Universal In-Line Pump"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:48.217Z"
-  },
-  "acq-1314": {
-    "productId": 1314,
-    "productName": "Walbro 400lph 39/50 DC/SS Pump/Kit Package",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Walbro 400lph 39/50 DC/SS Pump/Kit Package",
-      "chevrolet Walbro 400lph 39/50 DC/SS Pump/Kit Package"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:50.665Z"
-  },
-  "acq-1315": {
-    "productId": 1315,
-    "productName": "Walbro 450 In-Tank Fuel Pump F90000267",
-    "status": "no-licensed-match",
-    "reason": "400px",
-    "searched": [
-      "Walbro 450 In-Tank Fuel Pump F90000267",
-      "chevrolet Walbro 450 In-Tank Fuel Pump F90000267"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:53.149Z"
-  },
-  "acq-1316": {
-    "productId": 1316,
-    "productName": "Walbro 450lph E85 Compatible Universal Fuel Pump & Installation Kit",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Walbro 450lph E85 Compatible Universal Fuel Pump & Installation Kit",
-      "chevrolet Walbro 450lph E85 Compatible Universal Fuel Pump & Installat"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:55.600Z"
-  },
-  "acq-1318": {
-    "productId": 1318,
-    "productName": "Walbro 85-92 Chevy Camaro / Pontiac Firebird/Fiero Fuel Pump & Setup Kit",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Walbro 85-92 Chevy Camaro / Pontiac Firebird/Fiero Fuel Pump & Setup K",
-      "chevrolet Walbro 85-92 Chevy Camaro / Pontiac Firebird/Fiero Fuel Pump"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:16:58.081Z"
-  },
-  "acq-1319": {
-    "productId": 1319,
-    "productName": "Walbro 85-97 Ford Mustang (Excludes Cobra) 70 Micron Fuel Pump & Setup Kit",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Walbro 85-97 Ford Mustang (Excludes Cobra) 70 Micron Fuel Pump & Setup",
-      "ford Walbro 85-97 Ford Mustang"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:17:00.530Z"
-  },
-  "acq-1329": {
-    "productId": 1329,
-    "productName": "Walbro Universal Installation Kit for F90000262 Pump w/Fuel Filter/Wiring Harness/Fuel Line",
-    "status": "no-licensed-match",
-    "reason": "390px",
-    "searched": [
-      "Walbro Universal Installation Kit for F90000262 Pump w/Fuel Filter/Wir",
-      "universal Walbro Universal Installation Kit for F90000262 Pump w/Fuel "
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:17:03.022Z"
-  },
-  "acq-1500": {
-    "productId": 1500,
-    "productName": "07-13 gmc sierra truck bed for sale​ (5’8 short truck bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "07-13 gmc sierra truck bed for sale​ (5’8 short truck bed)",
-      "gmc 07-13 gmc sierra truck bed for sale​"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:17:05.508Z"
-  },
-  "acq-1501": {
-    "productId": 1501,
-    "productName": "11-16 Ford F250 Truck Bed Cap Shell Camper Topper",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "11-16 Ford F250 Truck Bed Cap Shell Camper Topper",
-      "ford 11-16 Ford F250 Truck Bed Cap Shell Camper Topper"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:14.006Z"
-  },
-  "acq-1502": {
-    "productId": 1502,
-    "productName": "14-23 ARE Cover Camper Shell",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "14-23 ARE Cover Camper Shell",
-      "universal 14-23 ARE Cover Camper Shell"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:19.387Z"
-  },
-  "acq-1503": {
-    "productId": 1503,
-    "productName": "14-23 Ford F250 Camper Shell",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "14-23 Ford F250 Camper Shell",
-      "ford 14-23 Ford F250 Camper Shell"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:23.495Z"
-  },
-  "acq-1504": {
-    "productId": 1504,
-    "productName": "1999-2007 GM 6.5 Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1999-2007 GM 6.5 Truck Bed",
-      "gmc 1999-2007 GM 6.5 Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:27.095Z"
-  },
-  "acq-1505": {
-    "productId": 1505,
-    "productName": "1999-2007 GM 6.5ft Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1999-2007 GM 6.5ft Truck Bed",
-      "gmc 1999-2007 GM 6.5ft Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:30.804Z"
-  },
-  "acq-1506": {
-    "productId": 1506,
-    "productName": "1999-2010 Ford Super Duty f250/350 Long Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1999-2010 Ford Super Duty f250/350 Long Bed",
-      "ford 1999-2010 Ford Super Duty f250/350 Long Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:41.980Z"
-  },
-  "acq-1507": {
-    "productId": 1507,
-    "productName": "1999-2010 Ford Superduty 6.5ft Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1999-2010 Ford Superduty 6.5ft Truck Bed",
-      "ford 1999-2010 Ford Superduty 6.5ft Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:45.166Z"
-  },
-  "acq-1508": {
-    "productId": 1508,
-    "productName": "1999-2010 Ford Superduty Truck bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1999-2010 Ford Superduty Truck bed",
-      "ford 1999-2010 Ford Superduty Truck bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:47.630Z"
-  },
-  "acq-1509": {
-    "productId": 1509,
-    "productName": "2007-2013 GMC Sierra 1500 5&#8242; 8″ Short Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2007-2013 GMC Sierra 1500 5 8″ Short Truck Bed",
-      "gmc 2007-2013 GMC Sierra 1500 5 8″ Short Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:50.195Z"
-  },
-  "acq-1510": {
-    "productId": 1510,
-    "productName": "2009-2014 Ford F150 6.5 foot bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2009-2014 Ford F150 6.5 foot bed",
-      "ford 2009-2014 Ford F150 6.5 foot bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:52.622Z"
-  },
-  "acq-1511": {
-    "productId": 1511,
-    "productName": "2009-2014 Ford F150 6.5ft Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2009-2014 Ford F150 6.5ft Truck Bed",
-      "ford 2009-2014 Ford F150 6.5ft Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:55.058Z"
-  },
-  "acq-1512": {
-    "productId": 1512,
-    "productName": "2009-2014 Ford F150 Camper Shell Topper",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2009-2014 Ford F150 Camper Shell Topper",
-      "ford 2009-2014 Ford F150 Camper Shell Topper"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:26:58.055Z"
-  },
-  "acq-1513": {
-    "productId": 1513,
-    "productName": "2011 Ford F-250 Super Duty (2011-2016 F250/350 long bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2011 Ford F-250 Super Duty (2011-2016 F250/350 long bed)",
-      "ford 2011 Ford F-250 Super Duty"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:00.619Z"
-  },
-  "acq-1514": {
-    "productId": 1514,
-    "productName": "2011-2016 Ford F-350 Super Duty Pickup Short Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2011-2016 Ford F-350 Super Duty Pickup Short Bed",
-      "ford 2011-2016 Ford F-350 Super Duty Pickup Short Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:04.299Z"
-  },
-  "acq-1515": {
-    "productId": 1515,
-    "productName": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 1)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 1)",
-      "ford 2011-2016 Ford F250 Super Duty 8ft Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:06.747Z"
-  },
-  "acq-1516": {
-    "productId": 1516,
-    "productName": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 2)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 2)",
-      "ford 2011-2016 Ford F250 Super Duty 8ft Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:09.250Z"
-  },
-  "acq-1517": {
-    "productId": 1517,
-    "productName": "2011-2016 Ford Superduty 8ft truck bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2011-2016 Ford Superduty 8ft truck bed",
-      "ford 2011-2016 Ford Superduty 8ft truck bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:11.718Z"
-  },
-  "acq-1518": {
-    "productId": 1518,
-    "productName": "2014-2019 Chevy/GMC 6.6 foot bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2014-2019 Chevy/GMC 6.6 foot bed",
-      "gmc 2014-2019 Chevy/GMC 6.6 foot bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:14.144Z"
-  },
-  "acq-1519": {
-    "productId": 1519,
-    "productName": "2014-2019 GM 8ft Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2014-2019 GM 8ft Truck Bed",
-      "gmc 2014-2019 GM 8ft Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:16.540Z"
-  },
-  "acq-1520": {
-    "productId": 1520,
-    "productName": "2014-2019 GMC SIERRA 6.6’ Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "2014-2019 GMC SIERRA 6.6’ Truck Bed",
-      "gmc 2014-2019 GMC SIERRA 6.6’ Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:18.951Z"
-  },
-  "acq-1521": {
-    "productId": 1521,
-    "productName": "6.5 chevy truck bed for sale​ (1999-2007 Chevy/GMC Short Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "6.5 chevy truck bed for sale​ (1999-2007 Chevy/GMC Short Bed)",
-      "gmc 6.5 chevy truck bed for sale​"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:21.363Z"
-  },
-  "acq-1522": {
-    "productId": 1522,
-    "productName": "94-02 2nd gen Dodge ram short bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "94-02 2nd gen Dodge ram short bed",
-      "dodge 94-02 2nd gen Dodge ram short bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:23.749Z"
-  },
-  "acq-1525": {
-    "productId": 1525,
-    "productName": "99-06 chevy silverado truck bed for sale 98ft Truck Bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "99-06 chevy silverado truck bed for sale 98ft Truck Bed",
-      "chevrolet 99-06 chevy silverado truck bed for sale 98ft Truck Bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:26.182Z"
-  },
-  "acq-1527": {
-    "productId": 1527,
-    "productName": "Chevy Silverado 2500 (2007-2013 Chevy/GMC Long Truck Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Chevy Silverado 2500 (2007-2013 Chevy/GMC Long Truck Bed)",
-      "gmc Chevy Silverado 2500"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:28.662Z"
-  },
-  "acq-1528": {
-    "productId": 1528,
-    "productName": "Chevy Silverado Truck Bed​ (2007-2013 Chevy/GMC Sierra Short Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Chevy Silverado Truck Bed​ (2007-2013 Chevy/GMC Sierra Short Bed)",
-      "gmc Chevy Silverado Truck Bed​"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:31.218Z"
-  },
-  "acq-1529": {
-    "productId": 1529,
-    "productName": "Dodge Ram truck bed (2009-2018 4th gen dodge ram 3500 mega cab dually truck bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Dodge Ram truck bed (2009-2018 4th gen dodge ram 3500 mega cab dually ",
-      "dodge Dodge Ram truck bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:33.699Z"
-  },
-  "acq-1530": {
-    "productId": 1530,
-    "productName": "Dodge Ram Truck Bed for sale​ (2002-2009 3rd Gen Dodge Ram Short Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Dodge Ram Truck Bed for sale​ (2002-2009 3rd Gen Dodge Ram Short Bed)",
-      "dodge Dodge Ram Truck Bed for sale​"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:36.162Z"
-  },
-  "acq-1531": {
-    "productId": 1531,
-    "productName": "Dodge RAM Truck Bed For Sale​ (2019-2025 Dodge Ram 2500 &#038; 3500 5th Gen 8′ Long Truck Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Dodge RAM Truck Bed For Sale​ (2019-2025 Dodge Ram 2500 3500 5th Gen 8",
-      "dodge Dodge RAM Truck Bed For Sale​"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:38.643Z"
-  },
-  "acq-1532": {
-    "productId": 1532,
-    "productName": "Dodge Ram Truck Beds For Sale Near Me​ (2019-2023 Dodge Ram 2500 8’ Truck Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Dodge Ram Truck Beds For Sale Near Me​ (2019-2023 Dodge Ram 2500 8’ Tr",
-      "dodge Dodge Ram Truck Beds For Sale Near Me​"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:41.052Z"
-  },
-  "acq-1534": {
-    "productId": 1534,
-    "productName": "ford f250 truck bed for sale",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "ford f250 truck bed for sale",
-      "ford ford f250 truck bed for sale"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:43.564Z"
-  },
-  "acq-1535": {
-    "productId": 1535,
-    "productName": "ford f250 truck bed replacement (1999-2010 Ford F250 F350 Super Duty 8&#8242; Long Truck Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "ford f250 truck bed replacement (1999-2010 Ford F250 F350 Super Duty 8",
-      "ford ford f250 truck bed replacement"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:47.614Z"
-  },
-  "acq-1536": {
-    "productId": 1536,
-    "productName": "Ford F250 Truck Bed Replacement (​2011-2016 Ford F250/350 Super duty 8’ Long Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Ford F250 Truck Bed Replacement (​2011-2016 Ford F250/350 Super duty 8",
-      "ford Ford F250 Truck Bed Replacement"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:51.679Z"
-  },
-  "acq-1537": {
-    "productId": 1537,
-    "productName": "Ford F350 Truck Bed For Sale​ (2017-2024 Ford F250/F350 8’ Long Truck Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Ford F350 Truck Bed For Sale​ (2017-2024 Ford F250/F350 8’ Long Truck ",
-      "ford Ford F350 Truck Bed For Sale​"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:27:56.507Z"
-  },
-  "acq-1538": {
-    "productId": 1538,
-    "productName": "GMC Sierra Truck Bed Replacement (2007-2013 GMC SIERRA Truck Bed)",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "GMC Sierra Truck Bed Replacement (2007-2013 GMC SIERRA Truck Bed)",
-      "gmc GMC Sierra Truck Bed Replacement"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:00.621Z"
-  },
-  "acq-1540": {
-    "productId": 1540,
-    "productName": "Leer RAM 1500 6.5ft Fibreglass box",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Leer RAM 1500 6.5ft Fibreglass box",
-      "gmc Leer RAM 1500 6.5ft Fibreglass box"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:04.432Z"
-  },
-  "acq-1542": {
-    "productId": 1542,
-    "productName": "Pickup Sierra GMC 2007-2013 short bed",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "Pickup Sierra GMC 2007-2013 short bed",
-      "gmc Pickup Sierra GMC 2007-2013 short bed"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:08.746Z"
-  },
-  "acq-1543": {
-    "productId": 1543,
-    "productName": "Seating at Tractor Supply Co",
-    "status": "no-licensed-match",
-    "reason": "400px",
-    "searched": [
-      "Seating at Tractor Supply Co",
-      "universal Seating at Tractor Supply Co"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:14.476Z"
-  },
-  "acq-1662": {
-    "productId": 1662,
-    "productName": "BimmerWorld TA16 17x9.0 ET42 Forged Race Wheel Set (Gloss Black)",
-    "status": "no-licensed-match",
-    "reason": "192px",
-    "searched": [
-      "BimmerWorld TA16 17x9.0 ET42 Forged Race Wheel Set (Gloss Black)",
-      "bimmerworld BimmerWorld TA16 17x9.0 ET42 Forged Race Wheel Set"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:18.091Z"
-  },
-  "acq-1666": {
-    "productId": 1666,
-    "productName": "BimmerWorld TA16 18x10 Forged Wheel Set (Gloss Black) - E46 M3, E9X M3, F8X M3/M4",
-    "status": "no-licensed-match",
-    "reason": "192px",
-    "searched": [
-      "BimmerWorld TA16 18x10 Forged Wheel Set (Gloss Black) - E46 M3, E9X M3",
-      "bimmerworld BimmerWorld TA16 18x10 Forged Wheel Set"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:27.924Z"
-  },
-  "acq-1668": {
-    "productId": 1668,
-    "productName": "BimmerWorld TA16 18x9.5 ET22 Forged Race Wheel Set (Gloss Black)",
-    "status": "no-licensed-match",
-    "reason": "192px",
-    "searched": [
-      "BimmerWorld TA16 18x9.5 ET22 Forged Race Wheel Set (Gloss Black)",
-      "bimmerworld BimmerWorld TA16 18x9.5 ET22 Forged Race Wheel Set"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:32.039Z"
-  },
-  "acq-1671": {
-    "productId": 1671,
-    "productName": "BimmerWorld BMW Wheel Spacers (Set/Pair) - 5x120",
-    "status": "no-licensed-match",
-    "reason": "192px",
-    "searched": [
-      "BimmerWorld BMW Wheel Spacers (Set/Pair) - 5x120",
-      "bimmerworld BimmerWorld BMW Wheel Spacers"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:35.689Z"
-  },
-  "acq-1680": {
-    "productId": 1680,
-    "productName": "BMW Style 5 16x7.5 Wheel - E30 M3, E28, E34, E24, E32",
-    "status": "no-licensed-match",
-    "reason": "192px",
-    "searched": [
-      "BMW Style 5 16x7.5 Wheel - E30 M3, E28, E34, E24, E32",
-      "bmw BMW Style 5 16x7.5 Wheel - E30 M3, E28, E34, E24, E32"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:39.148Z"
-  },
-  "acq-1698": {
-    "productId": 1698,
-    "productName": "Style 662M Alloy Wheel 20x8 ET30 (Orbit Grey) - G30 5-Series",
-    "status": "no-licensed-match",
-    "reason": "384px",
-    "searched": [
-      "Style 662M Alloy Wheel 20x8 ET30 (Orbit Grey) - G30 5-Series",
-      "universal Style 662M Alloy Wheel 20x8 ET30"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:43.202Z"
-  },
-  "acq-1708": {
-    "productId": 1708,
-    "productName": "Titan7 T-S5 19-inch Forged Wheel Set - F87 M2 Competition",
-    "status": "no-licensed-match",
-    "reason": "192px",
-    "searched": [
-      "Titan7 T-S5 19-inch Forged Wheel Set - F87 M2 Competition",
-      "universal Titan7 T-S5 19-inch Forged Wheel Set - F87 M2 Competition"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:47.460Z"
-  },
-  "acq-1720": {
-    "productId": 1720,
-    "productName": "Toyo RR Race Tires",
-    "status": "no-licensed-match",
-    "reason": "192px",
-    "searched": [
-      "Toyo RR Race Tires",
-      "toyo Toyo RR Race Tires"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:51.243Z"
-  },
-  "acq-1721": {
-    "productId": 1721,
-    "productName": "Tire Valve - F82 M4 GT4 (Motorsport)",
-    "status": "no-licensed-match",
-    "reason": "193px",
-    "searched": [
-      "Tire Valve - F82 M4 GT4 (Motorsport)",
-      "universal Tire Valve - F82 M4 GT4"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:28:54.988Z"
-  },
-  "acq-1807": {
-    "productId": 1807,
-    "productName": "TJM Outback Bull Bar for Nissan Navara",
-    "status": "no-licensed-match",
-    "reason": "265px",
-    "searched": [
-      "TJM Outback Bull Bar for Nissan Navara",
-      "tjm TJM Outback Bull Bar for Nissan Navara"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:00.105Z"
-  },
-  "acq-1821": {
-    "productId": 1821,
-    "productName": "Safari ARMAX Snorkel for Nissan Patrol Y62",
-    "status": "no-licensed-match",
-    "reason": "175px",
-    "searched": [
-      "Safari ARMAX Snorkel for Nissan Patrol Y62",
-      "safari Safari ARMAX Snorkel for Nissan Patrol Y62"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:04.177Z"
-  },
-  "acq-1826": {
-    "productId": 1826,
-    "productName": "ARB Safari Snorkel for Ford Ranger",
-    "status": "no-licensed-match",
-    "reason": "175px",
-    "searched": [
-      "ARB Safari Snorkel for Ford Ranger",
-      "arb ARB Safari Snorkel for Ford Ranger"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:09.115Z"
-  },
-  "acq-1938": {
-    "productId": 1938,
-    "productName": "Nitto Ridge Grappler 285/70R17",
-    "status": "no-licensed-match",
-    "reason": "547px",
-    "searched": [
-      "Nitto Ridge Grappler 285/70R17",
-      "nitto Nitto Ridge Grappler 285/70R17"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:13.367Z"
-  },
-  "acq-1940": {
-    "productId": 1940,
-    "productName": "Nitto NT555 G2 275/35R20",
-    "status": "no-licensed-match",
-    "reason": "547px",
-    "searched": [
-      "Nitto NT555 G2 275/35R20",
-      "nitto Nitto NT555 G2 275/35R20"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:17.758Z"
-  },
   "acq-1947": {
     "productId": 1947,
     "productName": "Tremec TKX 5-Speed Transmission for Ford Mustang Classic",
@@ -1509,42 +693,6 @@
     "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Zona_indrustria_Benito_Juarez_Tremec_%281971%29_Quer%C3%A9taro_%28Remasterizado%29.jpg",
     "checkedAt": "2026-08-31T12:29:39.329Z"
   },
-  "acq-1948": {
-    "productId": 1948,
-    "productName": "Tremec T56 Magnum XL for Dodge Challenger",
-    "status": "no-licensed-match",
-    "reason": "524px",
-    "searched": [
-      "Tremec T56 Magnum XL for Dodge Challenger",
-      "tremec Tremec T56 Magnum XL for Dodge Challenger"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:45.073Z"
-  },
-  "acq-1951": {
-    "productId": 1951,
-    "productName": "Getrag MT82 Manual Transmission for Ford Mustang GT",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Getrag MT82 Manual Transmission for Ford Mustang GT",
-      "getrag Getrag MT82 Manual Transmission for Ford Mustang GT"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:49.539Z"
-  },
-  "acq-1953": {
-    "productId": 1953,
-    "productName": "Aisin AC60 Automatic Transmission for Toyota Hilux",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Aisin AC60 Automatic Transmission for Toyota Hilux",
-      "aisin Aisin AC60 Automatic Transmission for Toyota Hilux"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:29:54.018Z"
-  },
   "acq-1958": {
     "productId": 1958,
     "productName": "Allison 10-Speed Transmission for Chevrolet Silverado HD",
@@ -1552,34 +700,6 @@
     "error": "HTTP 502",
     "sourceUrl": "https://live.staticflickr.com/5209/5290470315_9ac01434c1_b.jpg",
     "checkedAt": "2026-08-31T12:31:02.412Z"
-  },
-  "acq-1959": {
-    "productId": 1959,
-    "productName": "Nissan JK41A Automatic Transmission for Nissan Patrol Y62",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "JK41A",
-      "nissan JK41A",
-      "Nissan JK41A Automatic Transmission for Nissan Patrol Y62",
-      "nissan Nissan JK41A Automatic Transmission for Nissan Patrol Y62"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:31:09.458Z"
-  },
-  "acq-1961": {
-    "productId": 1961,
-    "productName": "Toyota Genuine 6-Speed Manual Transmission for Toyota GR86",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Toyota",
-      "toyota Toyota",
-      "Toyota Genuine 6-Speed Manual Transmission for Toyota GR86",
-      "toyota Toyota Genuine 6-Speed Manual Transmission for Toyota GR86"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:31:51.293Z"
   },
   "acq-1962": {
     "productId": 1962,
@@ -1597,334 +717,6 @@
     "sourceUrl": "https://live.staticflickr.com/65535/52501756741_7cf6db28b8_b.jpg",
     "checkedAt": "2026-08-31T12:32:27.897Z"
   },
-  "acq-1965": {
-    "productId": 1965,
-    "productName": "Ford Genuine 10-Speed Transmission for Ford Ranger",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "10R80",
-      "ford 10R80",
-      "Ford Genuine 10-Speed Transmission for Ford Ranger",
-      "ford Ford Genuine 10-Speed Transmission for Ford Ranger"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:32:34.200Z"
-  },
-  "acq-1966": {
-    "productId": 1966,
-    "productName": "Chevrolet Performance 10L80 Automatic Transmission for Camaro SS",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "10L80",
-      "chevrolet-performance 10L80",
-      "Chevrolet Performance 10L80 Automatic Transmission for Camaro SS",
-      "chevrolet-performance Chevrolet Performance 10L80 Automatic Transmissi"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:32:42.468Z"
-  },
-  "acq-1967": {
-    "productId": 1967,
-    "productName": "Chevrolet Performance 8L90 Automatic Transmission for Corvette C7",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "Chevrolet Performance 8L90 Automatic Transmission for Corvette C7",
-      "chevrolet-performance Chevrolet Performance 8L90 Automatic Transmissio"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:32:48.133Z"
-  },
-  "acq-1968": {
-    "productId": 1968,
-    "productName": "ATSG Transmission Rebuild Kit for 6L80",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "ATSG Transmission Rebuild Kit for 6L80",
-      "atsg ATSG Transmission Rebuild Kit for 6L80"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:32:52.611Z"
-  },
-  "acq-1969": {
-    "productId": 1969,
-    "productName": "ATSG Transmission Master Rebuild Kit for 8HP70",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "ATSG Transmission Master Rebuild Kit for 8HP70",
-      "atsg ATSG Transmission Master Rebuild Kit for 8HP70"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:32:57.670Z"
-  },
-  "acq-1970": {
-    "productId": 1970,
-    "productName": "Sonnax Valve Body Upgrade Kit for 6R80",
-    "status": "no-licensed-match",
-    "reason": "450px",
-    "searched": [
-      "34200-40K",
-      "sonnax 34200-40K",
-      "Sonnax Valve Body Upgrade Kit for 6R80",
-      "sonnax Sonnax Valve Body Upgrade Kit for 6R80"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:04.925Z"
-  },
-  "acq-1972": {
-    "productId": 1972,
-    "productName": "TransGo Shift Kit for 10R80",
-    "status": "no-licensed-match",
-    "reason": "288px",
-    "searched": [
-      "SK10R80",
-      "transgo SK10R80",
-      "TransGo Shift Kit for 10R80",
-      "transgo TransGo Shift Kit for 10R80"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:12.413Z"
-  },
-  "acq-1973": {
-    "productId": 1973,
-    "productName": "Sonnax Zip Kit for ZF 8HP70",
-    "status": "no-licensed-match",
-    "reason": "450px",
-    "searched": [
-      "Sonnax Zip Kit for ZF 8HP70",
-      "sonnax Sonnax Zip Kit for ZF 8HP70"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:18.541Z"
-  },
-  "acq-1991": {
-    "productId": 1991,
-    "productName": "Ironman Raid Front Bumper for Nissan Navara",
-    "status": "no-licensed-match",
-    "reason": "265px",
-    "searched": [
-      "Ironman Raid Front Bumper for Nissan Navara",
-      "ironman-4x4 Ironman Raid Front Bumper for Nissan Navara"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:23.680Z"
-  },
-  "acq-2025": {
-    "productId": 2025,
-    "productName": "Rocket Bunny Rear Bumper for Mazda MX-5 ND",
-    "status": "no-licensed-match",
-    "reason": "265px",
-    "searched": [
-      "Rocket Bunny Rear Bumper for Mazda MX-5 ND",
-      "rocket-bunny Rocket Bunny Rear Bumper for Mazda MX-5 ND"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:27.731Z"
-  },
-  "acq-2035": {
-    "productId": 2035,
-    "productName": "Aeroklas Premium Canopy",
-    "status": "no-licensed-match",
-    "reason": "280px",
-    "searched": [
-      "Aeroklas Premium Canopy",
-      "aeroklas Aeroklas Premium Canopy"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:31.944Z"
-  },
-  "acq-2036": {
-    "productId": 2036,
-    "productName": "Aeroklas Stylish Canopy",
-    "status": "no-licensed-match",
-    "reason": "280px",
-    "searched": [
-      "Aeroklas Stylish Canopy",
-      "aeroklas Aeroklas Stylish Canopy"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:36.219Z"
-  },
-  "acq-2037": {
-    "productId": 2037,
-    "productName": "Aeroklas Commercial Canopy",
-    "status": "no-licensed-match",
-    "reason": "280px",
-    "searched": [
-      "Aeroklas Commercial Canopy",
-      "aeroklas Aeroklas Commercial Canopy"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:40.342Z"
-  },
-  "acq-2045": {
-    "productId": 2045,
-    "productName": "Flexiglass Premium Canopy",
-    "status": "no-licensed-match",
-    "reason": "280px",
-    "searched": [
-      "Flexiglass Premium Canopy",
-      "flexiglass Flexiglass Premium Canopy"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:44.603Z"
-  },
-  "acq-2046": {
-    "productId": 2046,
-    "productName": "Flexiglass Tradesman Canopy",
-    "status": "no-licensed-match",
-    "reason": "280px",
-    "searched": [
-      "Flexiglass Tradesman Canopy",
-      "flexiglass Flexiglass Tradesman Canopy"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:48.855Z"
-  },
-  "acq-2047": {
-    "productId": 2047,
-    "productName": "Flexiglass Sports Canopy",
-    "status": "no-licensed-match",
-    "reason": "280px",
-    "searched": [
-      "Flexiglass Sports Canopy",
-      "flexiglass Flexiglass Sports Canopy"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:53.347Z"
-  },
-  "acq-2078": {
-    "productId": 2078,
-    "productName": "BMW 1972 Automatic Transmission (ZF 3HP)",
-    "status": "no-licensed-match",
-    "reason": "265px",
-    "searched": [
-      "BMW 1972 Automatic Transmission (ZF 3HP)",
-      "bmw BMW 1972 Automatic Transmission"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:33:57.102Z"
-  },
-  "acq-2079": {
-    "productId": 2079,
-    "productName": "Original Behr A/C System (Classic BMW)",
-    "status": "no-licensed-match",
-    "reason": "333px",
-    "searched": [
-      "Original Behr A/C System (Classic BMW)",
-      "behr Original Behr A/C System"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:03.146Z"
-  },
-  "acq-2080": {
-    "productId": 2080,
-    "productName": "BMW 2000 NK Front & Rear Window Seals (Rubber)",
-    "status": "no-licensed-match",
-    "reason": "450px",
-    "searched": [
-      "BMW 2000 NK Front & Rear Window Seals (Rubber)",
-      "bmw BMW 2000 NK Front & Rear Window Seals"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:07.764Z"
-  },
-  "acq-2086": {
-    "productId": 2086,
-    "productName": "Volkswagen Caddy Maxi Load Area Liner",
-    "status": "no-licensed-match",
-    "reason": "260px",
-    "searched": [
-      "Volkswagen Caddy Maxi Load Area Liner",
-      "volkswagen Volkswagen Caddy Maxi Load Area Liner"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:11.853Z"
-  },
-  "acq-2099": {
-    "productId": 2099,
-    "productName": "1947 Chrysler External Sun Visor (Fulton Style)",
-    "status": "no-licensed-match",
-    "reason": "500px",
-    "searched": [
-      "1947 Chrysler External Sun Visor (Fulton Style)",
-      "chrysler 1947 Chrysler External Sun Visor"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:15.399Z"
-  },
-  "acq-2100": {
-    "productId": 2100,
-    "productName": "Hino FD500 Complete Gearbox (Casting 33111-2271)",
-    "status": "no-licensed-match",
-    "reason": "330px",
-    "searched": [
-      "33111-2271",
-      "hino 33111-2271",
-      "Hino FD500 Complete Gearbox (Casting 33111-2271)",
-      "hino Hino FD500 Complete Gearbox"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:21.615Z"
-  },
-  "acq-2107": {
-    "productId": 2107,
-    "productName": "UniSteer Performance Power Steering Pump",
-    "status": "no-licensed-match",
-    "reason": "436px",
-    "searched": [
-      "UniSteer Performance Power Steering Pump",
-      "unisteer UniSteer Performance Power Steering Pump"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:27.437Z"
-  },
-  "acq-2117": {
-    "productId": 2117,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS TP38 Turbocharger — Remanufactured",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "F6TZ-6K682-ARM",
-      "ford F6TZ-6K682-ARM",
-      "1994.5–1997 Ford 7.3L Power Stroke OBS TP38 Turbocharger — Remanufactu",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS TP38 Turbocharger"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:35.009Z"
-  },
-  "acq-2118": {
-    "productId": 2118,
-    "productName": "1996–1997 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — HP005X",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "F6TZ-9A543-ARM",
-      "ford F6TZ-9A543-ARM",
-      "1996–1997 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — H",
-      "ford 1996–1997 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:41.970Z"
-  },
-  "acq-2119": {
-    "productId": 2119,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Injector Set of 8 — AA Single-Shot Super Kit",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "F81Z-9E527-DRM",
-      "ford F81Z-9E527-DRM",
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Injector Set of 8 — AA Single-S",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS Injector Set of 8"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:34:50.475Z"
-  },
   "acq-2120": {
     "productId": 2120,
     "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Glow Plug Set of 8 — Motorcraft ZD-30",
@@ -1941,36 +733,12 @@
     "sourceUrl": "https://live.staticflickr.com/5023/5663622017_a9dc79f45c_b.jpg",
     "checkedAt": "2026-08-31T12:35:21.119Z"
   },
-  "acq-2122": {
-    "productId": 2122,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Control Pressure (ICP) Sensor — Ford OE",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Control Pressure (ICP",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS Injection Control Pressure"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:35:31.562Z"
-  },
   "acq-2124": {
     "productId": 2124,
     "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Glow Plug Relay — Alliant AP63405",
     "status": "duplicate",
     "duplicateOf": 2123,
     "checkedAt": "2026-08-31T12:38:13.129Z"
-  },
-  "acq-2125": {
-    "productId": 2125,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Under Valve Cover Harness Kit",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Under Valve Cover Harness Kit",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS Under Valve Cover Harness "
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:38:17.420Z"
   },
   "acq-2126": {
     "productId": 2126,
@@ -1993,68 +761,6 @@
     "duplicateOf": 2123,
     "checkedAt": "2026-08-31T12:38:54.689Z"
   },
-  "acq-2129": {
-    "productId": 2129,
-    "productName": "1994–1995 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — HP004X",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "HP004X",
-      "freedom-injection HP004X",
-      "1994–1995 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — H",
-      "freedom-injection 1994–1995 Ford 7.3L Power Stroke OBS High-Pressure O"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:01.598Z"
-  },
-  "acq-2130": {
-    "productId": 2130,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Oil Cooler Kit with Gaskets",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Oil Cooler Kit with Gaskets",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS Oil Cooler Kit with Gasket"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:07.576Z"
-  },
-  "acq-2131": {
-    "productId": 2131,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Low-Pressure Oil Pump Kit with Seal",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Low-Pressure Oil Pump Kit with ",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS Low-Pressure Oil Pump Kit "
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:11.667Z"
-  },
-  "acq-2132": {
-    "productId": 2132,
-    "productName": "1996–1997 Ford 7.3L Power Stroke OBS Water Pump",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1996–1997 Ford 7.3L Power Stroke OBS Water Pump",
-      "freedom-injection 1996–1997 Ford 7.3L Power Stroke OBS Water Pump"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:15.129Z"
-  },
-  "acq-2133": {
-    "productId": 2133,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Radiator",
-    "status": "no-licensed-match",
-    "reason": "placeholder",
-    "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Radiator",
-      "freedom-injection 1994.5–1997 Ford 7.3L Power Stroke OBS Radiator"
-    ],
-    "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:18.931Z"
-  },
   "acq-2134": {
     "productId": 2134,
     "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Regulated Return Fuel System Kit — Driven Diesel",
@@ -2063,66 +769,482 @@
     "sourceUrl": "https://live.staticflickr.com/2898/14061304837_2697da5cb0_b.jpg",
     "checkedAt": "2026-08-31T12:39:27.474Z"
   },
-  "acq-2135": {
-    "productId": 2135,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS HPOP Seal Kit",
+  "acq-48": {
+    "productId": 48,
+    "productName": "Ford Coyote 5.0L V8 Engine",
     "status": "no-licensed-match",
-    "reason": "placeholder",
+    "reason": "500px",
     "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS HPOP Seal Kit",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS HPOP Seal Kit"
+      "Ford Coyote 5.0L V8 Engine",
+      "ford Ford Coyote 5.0L V8 Engine"
     ],
     "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:32.419Z"
+    "checkedAt": "2026-08-31T18:15:17.525Z"
   },
-  "acq-2137": {
-    "productId": 2137,
-    "productName": "1995–1997 Ford 7.3L Power Stroke OBS E4OD Transmission & Torque Converter Package — BD Diesel",
+  "acq-221": {
+    "productId": 221,
+    "productName": "1968-72 GM A-Body Swap Transmission Crossmember",
     "status": "no-licensed-match",
-    "reason": "placeholder",
+    "reason": "583px",
     "searched": [
-      "1995–1997 Ford 7.3L Power Stroke OBS E4OD Transmission & Torque Conver",
-      "bd-diesel 1995–1997 Ford 7.3L Power Stroke OBS E4OD Transmission & Tor"
+      "1968-72 GM A-Body Swap Transmission Crossmember",
+      "chevrolet 1968-72 GM A-Body Swap Transmission Crossmember"
     ],
     "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:36.466Z"
+    "checkedAt": "2026-08-31T18:15:22.735Z"
   },
-  "acq-2138": {
-    "productId": 2138,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Starter (3-Bolt)",
+  "acq-349": {
+    "productId": 349,
+    "productName": "ATOMIC AIRFORCE MANIFOLD LT1",
     "status": "no-licensed-match",
-    "reason": "placeholder",
+    "reason": "583px",
     "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Starter (3-Bolt)",
-      "freedom-injection 1994.5–1997 Ford 7.3L Power Stroke OBS Starter"
+      "ATOMIC AIRFORCE MANIFOLD LT1",
+      "chevrolet ATOMIC AIRFORCE MANIFOLD LT1"
     ],
     "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:40.209Z"
+    "checkedAt": "2026-08-31T18:15:28.185Z"
   },
-  "acq-2139": {
-    "productId": 2139,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Gear Reduction Starter",
+  "acq-509": {
+    "productId": 509,
+    "productName": "Carrillo Bullet Series Pistons Coyote 5.0L Modular Stroker - Stock 4V",
     "status": "no-licensed-match",
-    "reason": "placeholder",
+    "reason": "276px",
     "searched": [
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Gear Reduction Starter",
-      "freedom-injection 1994.5–1997 Ford 7.3L Power Stroke OBS Gear Reductio"
+      "Carrillo Bullet Series Pistons Coyote 5.0L Modular Stroker - Stock 4V",
+      "ford Carrillo Bullet Series Pistons Coyote 5.0L Modular Stroker - Stoc"
     ],
     "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:39:43.768Z"
+    "checkedAt": "2026-08-31T18:15:34.412Z"
   },
-  "acq-2123": {
-    "productId": 2123,
-    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Pressure Regulator (IPR) Valve — Alliant AP63402",
+  "acq-575": {
+    "productId": 575,
+    "productName": "Dual Phantom Stealth Fuel System",
+    "status": "no-licensed-match",
+    "reason": "500px",
+    "searched": [
+      "Dual Phantom Stealth Fuel System",
+      "chevrolet Dual Phantom Stealth Fuel System"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:15:42.935Z"
+  },
+  "acq-746": {
+    "productId": 746,
+    "productName": "Manely LS / LT H-Tuff Connecting Rod",
+    "status": "no-licensed-match",
+    "reason": "500px",
+    "searched": [
+      "Manely LS / LT H-Tuff Connecting Rod",
+      "chevrolet Manely LS / LT H-Tuff Connecting Rod"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:15:57.062Z"
+  },
+  "acq-756": {
+    "productId": 756,
+    "productName": "Manley LS / LT H beam Connecting Rod",
+    "status": "no-licensed-match",
+    "reason": "540px",
+    "searched": [
+      "Manley LS / LT H beam Connecting Rod",
+      "chevrolet Manley LS / LT H beam Connecting Rod"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:16:01.088Z"
+  },
+  "acq-757": {
+    "productId": 757,
+    "productName": "Manley LS / LT H-Lite Connecting Rod",
+    "status": "no-licensed-match",
+    "reason": "396px",
+    "searched": [
+      "Manley LS / LT H-Lite Connecting Rod",
+      "chevrolet Manley LS / LT H-Lite Connecting Rod"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:16:04.636Z"
+  },
+  "acq-1305": {
+    "productId": 1305,
+    "productName": "Walbro 155lph Fuel Pump Kit for 85-97 Ford Mustang (EXCLUDES 96-97 Cobra)",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/36417201/pexels-photo-36417201.jpeg",
+    "matchedTokens": [
+      "Mustang"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.498Z"
+  },
+  "acq-1306": {
+    "productId": 1306,
+    "productName": "Walbro 155lph Universal In-Line Pump",
+    "status": "no-licensed-match",
+    "reason": "500px",
+    "searched": [
+      "Walbro 155lph Universal In-Line Pump",
+      "chevrolet Walbro 155lph Universal In-Line Pump"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:16:16.053Z"
+  },
+  "acq-1314": {
+    "productId": 1314,
+    "productName": "Walbro 400lph 39/50 DC/SS Pump/Kit Package",
+    "status": "no-licensed-match",
+    "reason": "500px",
+    "searched": [
+      "Walbro 400lph 39/50 DC/SS Pump/Kit Package",
+      "chevrolet Walbro 400lph 39/50 DC/SS Pump/Kit Package"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:16:19.992Z"
+  },
+  "acq-1315": {
+    "productId": 1315,
+    "productName": "Walbro 450 In-Tank Fuel Pump F90000267",
+    "status": "no-licensed-match",
+    "reason": "400px",
+    "searched": [
+      "Walbro 450 In-Tank Fuel Pump F90000267",
+      "chevrolet Walbro 450 In-Tank Fuel Pump F90000267"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:16:23.726Z"
+  },
+  "acq-1316": {
+    "productId": 1316,
+    "productName": "Walbro 450lph E85 Compatible Universal Fuel Pump & Installation Kit",
+    "status": "no-licensed-match",
+    "reason": "500px",
+    "searched": [
+      "Walbro 450lph E85 Compatible Universal Fuel Pump & Installation Kit",
+      "chevrolet Walbro 450lph E85 Compatible Universal Fuel Pump & Installat"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:16:27.447Z"
+  },
+  "acq-1318": {
+    "productId": 1318,
+    "productName": "Walbro 85-92 Chevy Camaro / Pontiac Firebird/Fiero Fuel Pump & Setup Kit",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/24712855/pexels-photo-24712855.jpeg",
+    "matchedTokens": [
+      "Pontiac"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.500Z"
+  },
+  "acq-1319": {
+    "productId": 1319,
+    "productName": "Walbro 85-97 Ford Mustang (Excludes Cobra) 70 Micron Fuel Pump & Setup Kit",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/17704576/pexels-photo-17704576.jpeg",
+    "matchedTokens": [
+      "Mustang",
+      "Cobra"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.501Z"
+  },
+  "acq-1329": {
+    "productId": 1329,
+    "productName": "Walbro Universal Installation Kit for F90000262 Pump w/Fuel Filter/Wiring Harness/Fuel Line",
+    "status": "no-licensed-match",
+    "reason": "390px",
+    "searched": [
+      "Walbro Universal Installation Kit for F90000262 Pump w/Fuel Filter/Wir",
+      "universal Walbro Universal Installation Kit for F90000262 Pump w/Fuel "
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:16:43.974Z"
+  },
+  "acq-1500": {
+    "productId": 1500,
+    "productName": "07-13 gmc sierra truck bed for sale​ (5’8 short truck bed)",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/18507891/pexels-photo-18507891.jpeg",
+    "matchedTokens": [
+      "sierra"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.502Z"
+  },
+  "acq-1501": {
+    "productId": 1501,
+    "productName": "11-16 Ford F250 Truck Bed Cap Shell Camper Topper",
     "status": "no-licensed-match",
     "reason": "placeholder",
     "searched": [
-      "Alliant",
-      "ford Alliant",
-      "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Pressure Regulator (I",
-      "ford 1994.5–1997 Ford 7.3L Power Stroke OBS Injection Pressure Regulat"
+      "11-16 Ford F250 Truck Bed Cap Shell Camper Topper",
+      "ford 11-16 Ford F250 Truck Bed Cap Shell Camper Topper"
     ],
     "note": "no commercially-licensed image matched this product's identifying tokens",
-    "checkedAt": "2026-08-31T12:43:39.983Z"
+    "checkedAt": "2026-08-31T18:16:56.876Z"
+  },
+  "acq-1502": {
+    "productId": 1502,
+    "productName": "14-23 ARE Cover Camper Shell",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "14-23 ARE Cover Camper Shell",
+      "universal 14-23 ARE Cover Camper Shell"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:17:00.553Z"
+  },
+  "acq-1503": {
+    "productId": 1503,
+    "productName": "14-23 Ford F250 Camper Shell",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "14-23 Ford F250 Camper Shell",
+      "ford 14-23 Ford F250 Camper Shell"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:17:04.160Z"
+  },
+  "acq-1504": {
+    "productId": 1504,
+    "productName": "1999-2007 GM 6.5 Truck Bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "1999-2007 GM 6.5 Truck Bed",
+      "gmc 1999-2007 GM 6.5 Truck Bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:17:07.771Z"
+  },
+  "acq-1505": {
+    "productId": 1505,
+    "productName": "1999-2007 GM 6.5ft Truck Bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "1999-2007 GM 6.5ft Truck Bed",
+      "gmc 1999-2007 GM 6.5ft Truck Bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:17:11.434Z"
+  },
+  "acq-1506": {
+    "productId": 1506,
+    "productName": "1999-2010 Ford Super Duty f250/350 Long Bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "1999-2010 Ford Super Duty f250/350 Long Bed",
+      "ford 1999-2010 Ford Super Duty f250/350 Long Bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:17:15.115Z"
+  },
+  "acq-1507": {
+    "productId": 1507,
+    "productName": "1999-2010 Ford Superduty 6.5ft Truck Bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "1999-2010 Ford Superduty 6.5ft Truck Bed",
+      "ford 1999-2010 Ford Superduty 6.5ft Truck Bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:17:18.847Z"
+  },
+  "acq-1508": {
+    "productId": 1508,
+    "productName": "1999-2010 Ford Superduty Truck bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "1999-2010 Ford Superduty Truck bed",
+      "ford 1999-2010 Ford Superduty Truck bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:17:22.474Z"
+  },
+  "acq-1509": {
+    "productId": 1509,
+    "productName": "2007-2013 GMC Sierra 1500 5&#8242; 8″ Short Truck Bed",
+    "status": "duplicate",
+    "duplicateOf": 1500,
+    "checkedAt": "2026-08-31T18:17:31.321Z"
+  },
+  "acq-1510": {
+    "productId": 1510,
+    "productName": "2009-2014 Ford F150 6.5 foot bed",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/38953358/pexels-photo-38953358.jpeg",
+    "matchedTokens": [
+      "F150"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.503Z"
+  },
+  "acq-1511": {
+    "productId": 1511,
+    "productName": "2009-2014 Ford F150 6.5ft Truck Bed",
+    "status": "duplicate",
+    "duplicateOf": 1510,
+    "checkedAt": "2026-08-31T18:17:50.477Z"
+  },
+  "acq-1512": {
+    "productId": 1512,
+    "productName": "2009-2014 Ford F150 Camper Shell Topper",
+    "status": "duplicate",
+    "duplicateOf": 1510,
+    "checkedAt": "2026-08-31T18:17:58.440Z"
+  },
+  "acq-1513": {
+    "productId": 1513,
+    "productName": "2011 Ford F-250 Super Duty (2011-2016 F250/350 long bed)",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/9152990/pexels-photo-9152990.jpeg",
+    "matchedTokens": [
+      "2011"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.505Z"
+  },
+  "acq-1514": {
+    "productId": 1514,
+    "productName": "2011-2016 Ford F-350 Super Duty Pickup Short Bed",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/33336584/pexels-photo-33336584.jpeg",
+    "matchedTokens": [
+      "Pickup"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.507Z"
+  },
+  "acq-1515": {
+    "productId": 1515,
+    "productName": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 1)",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 1)",
+      "ford 2011-2016 Ford F250 Super Duty 8ft Truck Bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:18:19.568Z"
+  },
+  "acq-1516": {
+    "productId": 1516,
+    "productName": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 2)",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 2)",
+      "ford 2011-2016 Ford F250 Super Duty 8ft Truck Bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:18:22.708Z"
+  },
+  "acq-1517": {
+    "productId": 1517,
+    "productName": "2011-2016 Ford Superduty 8ft truck bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "2011-2016 Ford Superduty 8ft truck bed",
+      "ford 2011-2016 Ford Superduty 8ft truck bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:18:26.606Z"
+  },
+  "acq-1518": {
+    "productId": 1518,
+    "productName": "2014-2019 Chevy/GMC 6.6 foot bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "2014-2019 Chevy/GMC 6.6 foot bed",
+      "gmc 2014-2019 Chevy/GMC 6.6 foot bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:18:30.069Z"
+  },
+  "acq-1519": {
+    "productId": 1519,
+    "productName": "2014-2019 GM 8ft Truck Bed",
+    "status": "no-licensed-match",
+    "reason": "placeholder",
+    "searched": [
+      "2014-2019 GM 8ft Truck Bed",
+      "gmc 2014-2019 GM 8ft Truck Bed"
+    ],
+    "note": "no commercially-licensed image matched this product's identifying tokens",
+    "checkedAt": "2026-08-31T18:18:33.797Z"
+  },
+  "acq-1520": {
+    "productId": 1520,
+    "productName": "2014-2019 GMC SIERRA 6.6’ Truck Bed",
+    "status": "duplicate",
+    "duplicateOf": 1500,
+    "checkedAt": "2026-08-31T18:18:39.601Z"
+  },
+  "acq-1521": {
+    "productId": 1521,
+    "productName": "6.5 chevy truck bed for sale​ (1999-2007 Chevy/GMC Short Bed)",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/28349414/pexels-photo-28349414.jpeg",
+    "matchedTokens": [
+      "chevy",
+      "Chevy"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.509Z"
+  },
+  "acq-1522": {
+    "productId": 1522,
+    "productName": "94-02 2nd gen Dodge ram short bed",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/26780555/pexels-photo-26780555.png",
+    "matchedTokens": [
+      "Dodge"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.513Z"
+  },
+  "acq-1525": {
+    "productId": 1525,
+    "productName": "99-06 chevy silverado truck bed for sale 98ft Truck Bed",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/28158979/pexels-photo-28158979.jpeg",
+    "matchedTokens": [
+      "chevy"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.514Z"
+  },
+  "acq-1527": {
+    "productId": 1527,
+    "productName": "Chevy Silverado 2500 (2007-2013 Chevy/GMC Long Truck Bed)",
+    "status": "duplicate",
+    "duplicateOf": 1521,
+    "checkedAt": "2026-08-31T18:20:25.591Z"
+  },
+  "acq-1528": {
+    "productId": 1528,
+    "productName": "Chevy Silverado Truck Bed​ (2007-2013 Chevy/GMC Sierra Short Bed)",
+    "status": "duplicate",
+    "duplicateOf": 1521,
+    "checkedAt": "2026-08-31T18:20:31.965Z"
+  },
+  "acq-1529": {
+    "productId": 1529,
+    "productName": "Dodge Ram truck bed (2009-2018 4th gen dodge ram 3500 mega cab dually truck bed)",
+    "status": "rejected-wrong-subject",
+    "sourceUrl": "https://images.pexels.com/photos/21875976/pexels-photo-21875976.jpeg",
+    "matchedTokens": [
+      "Dodge",
+      "dodge"
+    ],
+    "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
+    "checkedAt": "2026-08-31T18:26:14.517Z"
   }
 }
