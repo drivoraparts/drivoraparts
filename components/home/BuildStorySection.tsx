@@ -1,5 +1,6 @@
 import Link from "next/link";
 import EditorialImage from "./EditorialImage";
+import EditorialPlate from "./EditorialPlate";
 import ScrollReveal from "./ScrollReveal";
 import { getPhoto } from "@/lib/media/homepage-photo";
 import { routes } from "@/lib/inventory/routes";
@@ -70,8 +71,10 @@ const STORIES: Story[] = [
 ];
 
 export default function BuildStorySection() {
-  const stories = STORIES.filter((s) => getPhoto(s.slot));
-  if (!stories.length) return null;
+  // Every story is kept whether or not its slot found a photograph. Dropping
+  // the panel would silently shrink the range of builds we appear to serve,
+  // so a slot below the quality bar gets a typographic plate instead.
+  const stories = STORIES;
 
   return (
     <section className="bg-background-dark py-20 sm:py-28" aria-labelledby="build-story-heading">
@@ -98,12 +101,16 @@ export default function BuildStorySection() {
           <ScrollReveal key={story.slot} delayMs={60}>
             <article className="mx-auto grid max-w-6xl items-center gap-8 px-5 sm:px-8 lg:grid-cols-2 lg:gap-14">
               <div className={`overflow-hidden ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                <EditorialImage
-                  slot={story.slot}
-                  alt={`${story.kicker} — ${story.title}`}
-                  sizes="(min-width: 1024px) 44rem, 100vw"
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
-                />
+                {getPhoto(story.slot) ? (
+                  <EditorialImage
+                    slot={story.slot}
+                    alt={`${story.kicker} — ${story.title}`}
+                    sizes="(min-width: 1024px) 44rem, 100vw"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                  />
+                ) : (
+                  <EditorialPlate label={story.kicker} className="aspect-[4/3] w-full" />
+                )}
               </div>
 
               <div className={i % 2 === 1 ? "lg:order-1" : ""}>

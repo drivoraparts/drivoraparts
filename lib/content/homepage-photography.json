@@ -1,79 +1,410 @@
 {
+  "shipping": {
+    "slot": "shipping",
+    "status": "ok",
+    "purpose": "Worldwide delivery — road, distance, freight.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/35304722/pexels-photo-35304722.jpeg",
+    "landingPage": "https://www.pexels.com/photo/endless-road-through-mountainous-desert-landscape-35304722/",
+    "title": "A long road stretches through a barren desert landscape with mountains in the distance.",
+    "creator": "Jose Luis  Vanasco",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#847B72",
+    "toneLuminance": 0.203,
+    "score": 8.45,
+    "originalWidth": 6192,
+    "originalHeight": 4128,
+    "intrinsicWidth": 2000,
+    "intrinsicHeight": 1333,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/shipping/640.webp",
+        "bytes": 44620
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/shipping/1024.webp",
+        "bytes": 110238
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/shipping/1600.webp",
+        "bytes": 247884
+      },
+      {
+        "width": 2000,
+        "file": "/homepage/shipping/2000.webp",
+        "bytes": 350406
+      }
+    ],
+    "sha256": "ffb9be93279740bc",
+    "query": "freight truck highway landscape",
+    "downloadedAt": "2026-08-31T17:10:09.755Z",
+    "originalId": "35304722"
+  },
+  "offroader": {
+    "slot": "offroader",
+    "status": "ok",
+    "purpose": "THE OFF-ROADER — genuinely off the blacktop.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/15928394/pexels-photo-15928394.jpeg",
+    "landingPage": "https://www.pexels.com/photo/4x4-car-in-mud-15928394/",
+    "title": "SUV navigating through muddy terrain with mountains in the background, showcasing offroad adventure.",
+    "creator": "Andrés  Chirrisco",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#6D7577",
+    "toneLuminance": 0.173,
+    "score": 7.99,
+    "originalWidth": 6240,
+    "originalHeight": 4160,
+    "intrinsicWidth": 1600,
+    "intrinsicHeight": 1067,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/offroader/640.webp",
+        "bytes": 31480
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/offroader/1024.webp",
+        "bytes": 68838
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/offroader/1600.webp",
+        "bytes": 143126
+      }
+    ],
+    "sha256": "1d68e1920ea842a0",
+    "query": "Jeep off-road trail vehicle",
+    "downloadedAt": "2026-08-31T17:09:06.650Z",
+    "originalId": "15928394"
+  },
+  "project": {
+    "slot": "project",
+    "status": "ok",
+    "purpose": "THE PROJECT — a real workshop, mid-build.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/8478235/pexels-photo-8478235.jpeg",
+    "landingPage": "https://www.pexels.com/photo/man-in-black-crew-neck-t-shirt-fixing-a-car-8478235/",
+    "title": "Mechanic working on a car engine with hood open, showcasing automotive repair skills.",
+    "creator": "Sergey  Meshkov",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#5F5F61",
+    "toneLuminance": 0.115,
+    "score": 8.15,
+    "originalWidth": 6720,
+    "originalHeight": 4480,
+    "intrinsicWidth": 1600,
+    "intrinsicHeight": 1067,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/project/640.webp",
+        "bytes": 37496
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/project/1024.webp",
+        "bytes": 69936
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/project/1600.webp",
+        "bytes": 123282
+      }
+    ],
+    "sha256": "7115ef92bc0ff81a",
+    "query": "car on lift workshop",
+    "downloadedAt": "2026-08-31T17:09:50.404Z",
+    "originalId": "8478235"
+  },
+  "tourer": {
+    "slot": "tourer",
+    "status": "ok",
+    "purpose": "THE TOURER — a 4x4 a long way from anywhere.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/17519361/pexels-photo-17519361.jpeg",
+    "landingPage": "https://www.pexels.com/photo/silver-toyota-4runner-at-dusk-17519361/",
+    "title": "Silver SUV parked on a coastal cliff during dusk, overlooking the serene sea and sky.",
+    "creator": "Erik Mclean",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#5C656C",
+    "toneLuminance": 0.127,
+    "score": 8.42,
+    "originalWidth": 6000,
+    "originalHeight": 4000,
+    "intrinsicWidth": 1600,
+    "intrinsicHeight": 1067,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/tourer/640.webp",
+        "bytes": 16418
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/tourer/1024.webp",
+        "bytes": 36924
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/tourer/1600.webp",
+        "bytes": 78288
+      }
+    ],
+    "sha256": "315055ddffe90369",
+    "query": "Icelandic offroad vehicle",
+    "downloadedAt": "2026-08-31T17:08:55.006Z",
+    "originalId": "17519361"
+  },
+  "closing": {
+    "slot": "closing",
+    "status": "ok",
+    "purpose": "The finished machine. Final CTA backdrop.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/10658134/pexels-photo-10658134.jpeg",
+    "landingPage": "https://www.pexels.com/photo/cars-on-frozen-lake-at-sunset-10658134/",
+    "title": "Scenic view of off-road vehicles on a frozen lake during winter sunset with clear skies.",
+    "creator": "光曦 刘",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#63616E",
+    "toneLuminance": 0.123,
+    "score": 8.34,
+    "originalWidth": 9504,
+    "originalHeight": 6336,
+    "intrinsicWidth": 2400,
+    "intrinsicHeight": 1600,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/closing/640.webp",
+        "bytes": 25618
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/closing/1024.webp",
+        "bytes": 59462
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/closing/1600.webp",
+        "bytes": 140650
+      },
+      {
+        "width": 2400,
+        "file": "/homepage/closing/2400.webp",
+        "bytes": 302486
+      }
+    ],
+    "sha256": "3d499277fbb6efc5",
+    "query": "Dakar Rally desert",
+    "downloadedAt": "2026-08-31T17:12:04.317Z",
+    "originalId": "10658134"
+  },
+  "performance": {
+    "slot": "performance",
+    "status": "ok",
+    "purpose": "THE PERFORMANCE BUILD — close-up mechanical detail, not a whole car.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/18617941/pexels-photo-18617941.jpeg",
+    "landingPage": "https://www.pexels.com/photo/wires-in-engine-18617941/",
+    "title": "Detailed close-up of automotive engine parts with visible wires, showcasing engineering and machinery.",
+    "creator": "Mathias Reding",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#625D59",
+    "toneLuminance": 0.111,
+    "score": 8.07,
+    "originalWidth": 6240,
+    "originalHeight": 4160,
+    "intrinsicWidth": 1600,
+    "intrinsicHeight": 1067,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/performance/640.webp",
+        "bytes": 25850
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/performance/1024.webp",
+        "bytes": 53166
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/performance/1600.webp",
+        "bytes": 109448
+      }
+    ],
+    "sha256": "2c3917e45285bf44",
+    "query": "V8 engine bay muscle car",
+    "downloadedAt": "2026-08-31T17:23:27.175Z",
+    "originalId": "18617941"
+  },
+  "hero": {
+    "slot": "hero",
+    "status": "ok",
+    "purpose": "Opening frame. A vehicle working hard, with sky for the headline.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/13696313/pexels-photo-13696313.jpeg",
+    "landingPage": "https://www.pexels.com/photo/car-on-a-dirt-road-13696313/",
+    "title": "An SUV speeds through a dusty dirt road in a forest setting, showcasing off-road capabilities.",
+    "creator": "Burhan Çelik",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#726554",
+    "toneLuminance": 0.135,
+    "score": 8.38,
+    "originalWidth": 6000,
+    "originalHeight": 4000,
+    "intrinsicWidth": 2400,
+    "intrinsicHeight": 1600,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/hero/640.webp",
+        "bytes": 57016
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/hero/1024.webp",
+        "bytes": 130300
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/hero/1600.webp",
+        "bytes": 280508
+      },
+      {
+        "width": 2400,
+        "file": "/homepage/hero/2400.webp",
+        "bytes": 577236
+      }
+    ],
+    "sha256": "0b3f940c526db501",
+    "query": "4x4 desert landscape vehicle",
+    "downloadedAt": "2026-08-31T17:28:18.000Z",
+    "originalId": "13696313"
+  },
+  "workhorse": {
+    "slot": "workhorse",
+    "status": "below-bar",
+    "purpose": "THE WORKHORSE — a truck earning its keep.",
+    "note": "Four rounds produced a tipper lorry, a Mitsubishi press unit with door decals, a compact ute on tarmac, and a rusted FJ40 in flat light. None is premium editorial, so the panel renders the typographic plate.",
+    "checkedAt": "2026-08-31T17:41:02.870Z"
+  },
   "veh-ford-ranger-4x4": {
     "slot": "veh-ford-ranger-4x4",
     "status": "ok",
     "vehicle": "Ford Ranger",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/20200526_Ford_Ranger_XLT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3A20200526%20Ford%20Ranger%20XLT.jpg",
-    "title": "20200526 Ford Ranger XLT.jpg",
-    "creator": "Kahvilokki",
-    "license": "cc0",
-    "licenseRaw": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "attributionRequired": false,
-    "originalWidth": 2880,
-    "originalHeight": 1620,
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_Ranger_Stormtrak_%28T6%2C_P375%29_1X7A0369.jpg/3840px-Ford_Ranger_Stormtrak_%28T6%2C_P375%29_1X7A0369.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3AFord%20Ranger%20Stormtrak%20(T6%2C%20P375)%201X7A0369.jpg",
+    "title": "Ford Ranger Stormtrak (T6, P375) 1X7A0369.jpg",
+    "creator": "Alexander Migl",
+    "license": "by-sa",
+    "licenseRaw": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.7,
+    "originalWidth": 3840,
+    "originalHeight": 2020,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 720,
+    "intrinsicHeight": 673,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-ford-ranger-4x4/480.webp",
-        "bytes": 22706
+        "bytes": 27282
       },
       {
         "width": 800,
         "file": "/homepage/veh-ford-ranger-4x4/800.webp",
-        "bytes": 64960
+        "bytes": 70484
       },
       {
         "width": 1280,
         "file": "/homepage/veh-ford-ranger-4x4/1280.webp",
-        "bytes": 152246
+        "bytes": 165734
       }
     ],
-    "sha256": "2e96e635030ea407",
+    "sha256": "7c1bd3cb2f65cd02",
     "query": "Ford Ranger pickup",
-    "downloadedAt": "2026-08-31T15:35:32.886Z"
+    "downloadedAt": "2026-08-31T17:38:56.396Z",
+    "originalId": "Ford Ranger Stormtrak (T6, P375) 1X7A0369.jpg"
   },
   "veh-toyota-hilux-4x4": {
     "slot": "veh-toyota-hilux-4x4",
     "status": "ok",
     "vehicle": "Toyota HiLux",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/1982_Toyota_Hilux_1.jpg/3840px-1982_Toyota_Hilux_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3A1982%20Toyota%20Hilux%201.jpg",
-    "title": "1982 Toyota Hilux 1.jpg",
-    "creator": "Calreyn88",
-    "license": "by-sa",
-    "licenseRaw": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "attributionRequired": true,
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2026_Toyota_Hilux_BEV.jpg/3840px-2026_Toyota_Hilux_BEV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3A2026%20Toyota%20Hilux%20BEV.jpg",
+    "title": "2026 Toyota Hilux BEV.jpg",
+    "creator": "TTTNIS",
+    "license": "cc0",
+    "licenseRaw": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attributionRequired": false,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 7.7,
     "originalWidth": 3840,
-    "originalHeight": 2494,
+    "originalHeight": 2031,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 831,
+    "intrinsicHeight": 677,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-toyota-hilux-4x4/480.webp",
-        "bytes": 36606
+        "bytes": 15572
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-hilux-4x4/800.webp",
-        "bytes": 90760
+        "bytes": 31530
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-hilux-4x4/1280.webp",
-        "bytes": 208440
+        "bytes": 57784
       }
     ],
-    "sha256": "bc20adc90350a997",
+    "sha256": "c8c0b91afa353d80",
     "query": "Toyota Hilux",
-    "downloadedAt": "2026-08-31T15:36:03.945Z"
+    "downloadedAt": "2026-08-31T17:39:00.210Z",
+    "originalId": "2026 Toyota Hilux BEV.jpg"
   },
   "veh-isuzu-d-max-4x4": {
     "slot": "veh-isuzu-d-max-4x4",
@@ -88,6 +419,9 @@
     "licenseRaw": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.7,
     "originalWidth": 3840,
     "originalHeight": 2182,
     "intrinsicWidth": 1280,
@@ -111,21 +445,67 @@
     ],
     "sha256": "c362bb92f9483f52",
     "query": "Isuzu D-Max",
-    "downloadedAt": "2026-08-31T15:36:24.498Z"
+    "downloadedAt": "2026-08-31T17:39:05.809Z",
+    "originalId": "ISUZU D-MAX (SECOND GENERATION, PRE-FACELIFT) China (2).jpg"
+  },
+  "veh-mitsubishi-triton-4x4": {
+    "slot": "veh-mitsubishi-triton-4x4",
+    "status": "ok",
+    "vehicle": "Mitsubishi Triton",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Mitsubishi_Triton_2.4_GLX_4x2_2024_%284%29.jpg/3840px-Mitsubishi_Triton_2.4_GLX_4x2_2024_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3AMitsubishi%20Triton%202.4%20GLX%204x2%202024%20(4).jpg",
+    "title": "Mitsubishi Triton 2.4 GLX 4x2 2024 (4).jpg",
+    "creator": "Ethan Llamas",
+    "license": "by-sa",
+    "licenseRaw": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.7,
+    "originalWidth": 3840,
+    "originalHeight": 2880,
+    "intrinsicWidth": 1280,
+    "intrinsicHeight": 960,
+    "variants": [
+      {
+        "width": 480,
+        "file": "/homepage/veh-mitsubishi-triton-4x4/480.webp",
+        "bytes": 24660
+      },
+      {
+        "width": 800,
+        "file": "/homepage/veh-mitsubishi-triton-4x4/800.webp",
+        "bytes": 60984
+      },
+      {
+        "width": 1280,
+        "file": "/homepage/veh-mitsubishi-triton-4x4/1280.webp",
+        "bytes": 132796
+      }
+    ],
+    "sha256": "e416f28e2843c7c6",
+    "query": "Mitsubishi Triton pickup",
+    "downloadedAt": "2026-08-31T17:39:11.972Z",
+    "originalId": "Mitsubishi Triton 2.4 GLX 4x2 2024 (4).jpg"
   },
   "veh-byd-shark-6-phev": {
     "slot": "veh-byd-shark-6-phev",
     "status": "ok",
     "vehicle": "BYD Shark 6",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/BYD_Shark_6_DM-O_Park_Triangle_security_pickup_truck_01.jpg/3840px-BYD_Shark_6_DM-O_Park_Triangle_security_pickup_truck_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3ABYD%20Shark%206%20DM-O%20Park%20Triangle%20security%20pickup%20truck%2001.jpg",
-    "title": "BYD Shark 6 DM-O Park Triangle security pickup truck 01.jpg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/MIAS_2025_-_BYD_Shark_6_DMO_AWD_Premium_02.jpg/3840px-MIAS_2025_-_BYD_Shark_6_DMO_AWD_Premium_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3AMIAS%202025%20-%20BYD%20Shark%206%20DMO%20AWD%20Premium%2002.jpg",
+    "title": "MIAS 2025 - BYD Shark 6 DMO AWD Premium 02.jpg",
     "creator": "Ethan Llamas",
     "license": "by-sa",
     "licenseRaw": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.7,
     "originalWidth": 3840,
     "originalHeight": 2560,
     "intrinsicWidth": 1280,
@@ -134,22 +514,23 @@
       {
         "width": 480,
         "file": "/homepage/veh-byd-shark-6-phev/480.webp",
-        "bytes": 29996
+        "bytes": 24314
       },
       {
         "width": 800,
         "file": "/homepage/veh-byd-shark-6-phev/800.webp",
-        "bytes": 77782
+        "bytes": 49650
       },
       {
         "width": 1280,
         "file": "/homepage/veh-byd-shark-6-phev/1280.webp",
-        "bytes": 186512
+        "bytes": 89138
       }
     ],
-    "sha256": "15c1a77eaa18eebd",
+    "sha256": "75bf5821b642e910",
     "query": "BYD Shark pickup",
-    "downloadedAt": "2026-08-31T15:38:10.662Z"
+    "downloadedAt": "2026-08-31T17:39:22.570Z",
+    "originalId": "MIAS 2025 - BYD Shark 6 DMO AWD Premium 02.jpg"
   },
   "veh-mazda-bt-50-4x4": {
     "slot": "veh-mazda-bt-50-4x4",
@@ -164,6 +545,9 @@
     "licenseRaw": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.7,
     "originalWidth": 3840,
     "originalHeight": 2880,
     "intrinsicWidth": 1280,
@@ -187,524 +571,92 @@
     ],
     "sha256": "d920b4b4d2dd5d77",
     "query": "Mazda BT-50",
-    "downloadedAt": "2026-08-31T15:39:43.095Z"
+    "downloadedAt": "2026-08-31T17:39:28.333Z",
+    "originalId": "2023 Mazda BT-50 3.0 Standard 4x2 in Concrete Gray, 06-23-2024.jpg"
   },
   "veh-toyota-landcruiser-70-series": {
     "slot": "veh-toyota-landcruiser-70-series",
     "status": "ok",
     "vehicle": "LandCruiser 70",
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/10658277/pexels-photo-10658277.jpeg",
-    "landingPage": "https://www.pexels.com/photo/a-car-travelling-in-a-desert-10658277/",
-    "title": "A Toyota Land Cruiser drives through sandy desert dunes, kicking up clouds of sand in its wake.",
-    "creator": "光曦 刘",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 9504,
-    "originalHeight": 6336,
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Land_Cruiser_70-series_bundera_4.jpg/3840px-Land_Cruiser_70-series_bundera_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3ALand%20Cruiser%2070-series%20bundera%204.jpg",
+    "title": "Land Cruiser 70-series bundera 4.jpg",
+    "creator": "Cruiser-Aust",
+    "license": "by-sa",
+    "licenseRaw": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.23,
+    "originalWidth": 3840,
+    "originalHeight": 2616,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 853,
+    "intrinsicHeight": 872,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-toyota-landcruiser-70-series/480.webp",
-        "bytes": 17958
+        "bytes": 29948
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-landcruiser-70-series/800.webp",
-        "bytes": 40252
+        "bytes": 68100
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-landcruiser-70-series/1280.webp",
-        "bytes": 88158
+        "bytes": 132582
       }
     ],
-    "sha256": "3bfb5da02231d021",
+    "sha256": "c9b94d2bd01575b8",
     "query": "Toyota Land Cruiser 70 series",
-    "downloadedAt": "2026-08-31T15:41:23.437Z"
-  },
-  "veh-volkswagen-amarok-4x4": {
-    "slot": "veh-volkswagen-amarok-4x4",
-    "status": "ok",
-    "vehicle": "VW Amarok",
-    "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/VW_Amarok_DC_Life_2.0I_TDI_IAA_2022_%28DSC04079%29.jpg/3840px-VW_Amarok_DC_Life_2.0I_TDI_IAA_2022_%28DSC04079%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3AVW%20Amarok%20DC%20Life%202.0I%20TDI%20IAA%202022%20(DSC04079).jpg",
-    "title": "VW Amarok DC Life 2.0I TDI IAA 2022 (DSC04079).jpg",
-    "creator": "MarcelX42",
-    "license": "by-sa",
-    "licenseRaw": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "attributionRequired": true,
-    "originalWidth": 3840,
-    "originalHeight": 2161,
-    "intrinsicWidth": 1280,
-    "intrinsicHeight": 720,
-    "variants": [
-      {
-        "width": 480,
-        "file": "/homepage/veh-volkswagen-amarok-4x4/480.webp",
-        "bytes": 26418
-      },
-      {
-        "width": 800,
-        "file": "/homepage/veh-volkswagen-amarok-4x4/800.webp",
-        "bytes": 69780
-      },
-      {
-        "width": 1280,
-        "file": "/homepage/veh-volkswagen-amarok-4x4/1280.webp",
-        "bytes": 156862
-      }
-    ],
-    "sha256": "b6e1785a30953284",
-    "query": "Volkswagen Amarok",
-    "downloadedAt": "2026-08-31T15:43:56.002Z"
-  },
-  "veh-ford-obs-73-power-stroke": {
-    "slot": "veh-ford-obs-73-power-stroke",
-    "status": "ok",
-    "vehicle": "Ford OBS F-250",
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/19219710/pexels-photo-19219710.jpeg",
-    "landingPage": "https://www.pexels.com/photo/ford-f-series-in-black-and-white-19219710/",
-    "title": "Classic Ford F-Series truck front view, black and white, capturing vintage charm.",
-    "creator": "Jean Marc Bonnel",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 6000,
-    "originalHeight": 4000,
-    "intrinsicWidth": 1280,
-    "intrinsicHeight": 853,
-    "variants": [
-      {
-        "width": 480,
-        "file": "/homepage/veh-ford-obs-73-power-stroke/480.webp",
-        "bytes": 25952
-      },
-      {
-        "width": 800,
-        "file": "/homepage/veh-ford-obs-73-power-stroke/800.webp",
-        "bytes": 62452
-      },
-      {
-        "width": 1280,
-        "file": "/homepage/veh-ford-obs-73-power-stroke/1280.webp",
-        "bytes": 143274
-      }
-    ],
-    "sha256": "1f7d0be46ab3ba02",
-    "query": "Ford F-250 1996",
-    "downloadedAt": "2026-08-31T15:45:38.113Z"
-  },
-  "performance": {
-    "slot": "performance",
-    "status": "ok",
-    "purpose": "THE PERFORMANCE BUILD — power and intent.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/3076820/pexels-photo-3076820.jpeg",
-    "landingPage": "https://www.pexels.com/photo/a-clean-automotive-engine-3076820/",
-    "title": "Detailed view of a shiny chrome car engine highlighting automotive technology.",
-    "creator": "Tim Mossholder",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 9000,
-    "originalHeight": 6000,
-    "intrinsicWidth": 1600,
-    "intrinsicHeight": 1067,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/performance/640.webp",
-        "bytes": 50006
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/performance/1024.webp",
-        "bytes": 96190
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/performance/1600.webp",
-        "bytes": 172110
-      }
-    ],
-    "sha256": "2409c908d67328d6",
-    "query": "V8 engine bay muscle car",
-    "downloadedAt": "2026-08-31T15:31:19.919Z"
-  },
-  "shipping": {
-    "slot": "shipping",
-    "status": "ok",
-    "purpose": "Worldwide delivery — road and distance.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/35723365/pexels-photo-35723365.jpeg",
-    "landingPage": "https://www.pexels.com/photo/desert-highway-leading-to-mountain-under-cloudy-sky-35723365/",
-    "title": "A long road stretches through a barren desert landscape towards a distant mountain.",
-    "creator": "Reto Wiezel",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 6947,
-    "originalHeight": 3908,
-    "intrinsicWidth": 2000,
-    "intrinsicHeight": 1125,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/shipping/640.webp",
-        "bytes": 23908
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/shipping/1024.webp",
-        "bytes": 64104
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/shipping/1600.webp",
-        "bytes": 173626
-      },
-      {
-        "width": 2000,
-        "file": "/homepage/shipping/2000.webp",
-        "bytes": 276124
-      }
-    ],
-    "sha256": "0bf5106713e57667",
-    "query": "Australian road train highway",
-    "downloadedAt": "2026-08-31T15:32:11.087Z"
-  },
-  "veh-mitsubishi-triton-4x4": {
-    "slot": "veh-mitsubishi-triton-4x4",
-    "status": "ok",
-    "vehicle": "Mitsubishi Triton",
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/26868128/pexels-photo-26868128.jpeg",
-    "landingPage": "https://www.pexels.com/photo/mitsubishi-l200-in-motor-show-in-bangkok-26868128/",
-    "title": "Customized Mitsubishi L200 showcased at the Bangkok Motor Show.",
-    "creator": "I'm Zion",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 6645,
-    "originalHeight": 4430,
-    "intrinsicWidth": 1280,
-    "intrinsicHeight": 853,
-    "variants": [
-      {
-        "width": 480,
-        "file": "/homepage/veh-mitsubishi-triton-4x4/480.webp",
-        "bytes": 24062
-      },
-      {
-        "width": 800,
-        "file": "/homepage/veh-mitsubishi-triton-4x4/800.webp",
-        "bytes": 59380
-      },
-      {
-        "width": 1280,
-        "file": "/homepage/veh-mitsubishi-triton-4x4/1280.webp",
-        "bytes": 125922
-      }
-    ],
-    "sha256": "a8366b2daa31222d",
-    "query": "Mitsubishi Triton pickup exterior",
-    "downloadedAt": "2026-08-31T15:37:12.074Z"
+    "downloadedAt": "2026-08-31T17:39:34.468Z",
+    "originalId": "Land Cruiser 70-series bundera 4.jpg"
   },
   "veh-nissan-navara-4x4": {
     "slot": "veh-nissan-navara-4x4",
     "status": "ok",
     "vehicle": "Nissan Navara",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/NISSAN_NAVARA_D23_China.jpg/3840px-NISSAN_NAVARA_D23_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3ANISSAN%20NAVARA%20D23%20China.jpg",
-    "title": "NISSAN NAVARA D23 China.jpg",
-    "creator": "Dinkun Chen",
-    "license": "by-sa",
-    "licenseRaw": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "attributionRequired": true,
-    "originalWidth": 3840,
-    "originalHeight": 2560,
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/2010_Nissan_Navara_%28D40%29_ST_4-door_utility_%282011-04-22%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3A2010%20Nissan%20Navara%20(D40)%20ST%204-door%20utility%20(2011-04-22)%2001.jpg",
+    "title": "2010 Nissan Navara (D40) ST 4-door utility (2011-04-22) 01.jpg",
+    "creator": "OSX",
+    "license": "pdm",
+    "licenseRaw": "Public domain",
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 7.1,
+    "originalWidth": 3833,
+    "originalHeight": 2086,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 853,
+    "intrinsicHeight": 697,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-nissan-navara-4x4/480.webp",
-        "bytes": 33388
+        "bytes": 17388
       },
       {
         "width": 800,
         "file": "/homepage/veh-nissan-navara-4x4/800.webp",
-        "bytes": 84678
+        "bytes": 37140
       },
       {
         "width": 1280,
         "file": "/homepage/veh-nissan-navara-4x4/1280.webp",
-        "bytes": 186094
+        "bytes": 77640
       }
     ],
-    "sha256": "afb2a0b7749507cd",
+    "sha256": "f9ea91dceee2a9e1",
     "query": "Nissan Navara pickup",
-    "downloadedAt": "2026-08-31T15:43:03.416Z"
-  },
-  "workhorse": {
-    "slot": "workhorse",
-    "status": "ok",
-    "purpose": "THE WORKHORSE — a truck doing real work.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/15370207/pexels-photo-15370207.jpeg",
-    "landingPage": "https://www.pexels.com/photo/a-dump-truck-loaded-with-sand-near-concrete-building-15370207/",
-    "title": "A dump truck loaded with materials parked near a modern building in Belize.",
-    "creator": "Ronald Plett",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 7952,
-    "originalHeight": 5304,
-    "intrinsicWidth": 1600,
-    "intrinsicHeight": 1067,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/workhorse/640.webp",
-        "bytes": 24732
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/workhorse/1024.webp",
-        "bytes": 53440
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/workhorse/1600.webp",
-        "bytes": 108370
-      }
-    ],
-    "sha256": "afb4194c5853101e",
-    "query": "Australian road train headed",
-    "downloadedAt": "2026-08-31T15:29:51.045Z"
-  },
-  "offroader": {
-    "slot": "offroader",
-    "status": "ok",
-    "purpose": "THE OFF-ROADER — a vehicle genuinely off-road.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/38492458/pexels-photo-38492458.jpeg",
-    "landingPage": "https://www.pexels.com/photo/offroad-jeep-conquering-muddy-terrain-at-race-event-38492458/",
-    "title": "Yellow Jeep navigating a muddy obstacle in an outdoor offroad racing event with spectators.",
-    "creator": "Hobi Photography",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 8192,
-    "originalHeight": 5464,
-    "intrinsicWidth": 1600,
-    "intrinsicHeight": 1067,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/offroader/640.webp",
-        "bytes": 58734
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/offroader/1024.webp",
-        "bytes": 135832
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/offroader/1600.webp",
-        "bytes": 288770
-      }
-    ],
-    "sha256": "f5acb5c61c672392",
-    "query": "Jeep off-road trail vehicle",
-    "downloadedAt": "2026-08-31T15:31:08.521Z"
-  },
-  "project": {
-    "slot": "project",
-    "status": "ok",
-    "purpose": "THE PROJECT — a build in a workshop.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/8478259/pexels-photo-8478259.jpeg",
-    "landingPage": "https://www.pexels.com/photo/man-in-black-crew-neck-t-shirt-fixing-a-car-8478259/",
-    "title": "Auto mechanic performs engine maintenance on a car. Focus on hands and engine components.",
-    "creator": "Sergey  Meshkov",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 6720,
-    "originalHeight": 4480,
-    "intrinsicWidth": 1600,
-    "intrinsicHeight": 1067,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/project/640.webp",
-        "bytes": 29586
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/project/1024.webp",
-        "bytes": 54106
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/project/1600.webp",
-        "bytes": 94050
-      }
-    ],
-    "sha256": "bfdf947dd0687f0c",
-    "query": "car on lift workshop",
-    "downloadedAt": "2026-08-31T15:31:27.526Z"
-  },
-  "hero": {
-    "slot": "hero",
-    "status": "ok",
-    "purpose": "Full-bleed opening frame. Needs negative space for the headline.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/25211886/pexels-photo-25211886.jpeg",
-    "landingPage": "https://www.pexels.com/photo/column-of-off-road-vehicles-on-a-desert-road-from-a-birds-eye-view-25211886/",
-    "title": "A convoy of vehicles travels through a vast desert landscape under a stunning sunset.",
-    "creator": "Tauseef Kazmi",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 9504,
-    "originalHeight": 5344,
-    "intrinsicWidth": 2400,
-    "intrinsicHeight": 1349,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/hero/640.webp",
-        "bytes": 41316
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/hero/1024.webp",
-        "bytes": 90200
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/hero/1600.webp",
-        "bytes": 213068
-      },
-      {
-        "width": 2400,
-        "file": "/homepage/hero/2400.webp",
-        "bytes": 480034
-      }
-    ],
-    "sha256": "50d1eb655bd80584",
-    "query": "Dakar Rally truck",
-    "downloadedAt": "2026-08-31T15:56:47.994Z"
-  },
-  "tourer": {
-    "slot": "tourer",
-    "status": "ok",
-    "purpose": "THE TOURER — a 4x4 crossing a dramatic landscape.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/10658203/pexels-photo-10658203.jpeg",
-    "landingPage": "https://www.pexels.com/photo/vehicles-with-flags-on-brown-desert-10658203/",
-    "title": "A convoy of off-road vehicles navigating through vast desert dunes during the day.",
-    "creator": "光曦 刘",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 9504,
-    "originalHeight": 6336,
-    "intrinsicWidth": 1600,
-    "intrinsicHeight": 1067,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/tourer/640.webp",
-        "bytes": 36508
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/tourer/1024.webp",
-        "bytes": 80206
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/tourer/1600.webp",
-        "bytes": 181856
-      }
-    ],
-    "sha256": "beaf2636cbdca8fe",
-    "query": "Icelandic offroad vehicle",
-    "downloadedAt": "2026-08-31T15:59:37.629Z"
-  },
-  "closing": {
-    "slot": "closing",
-    "status": "ok",
-    "purpose": "Final CTA backdrop.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/32907776/pexels-photo-32907776.jpeg",
-    "landingPage": "https://www.pexels.com/photo/green-truck-by-river-in-arhavi-turkiye-32907776/",
-    "title": "A vibrant green truck parked by a river in Arhavi, Türkiye, with a forest backdrop.",
-    "creator": "Eren Ataselim",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "originalWidth": 16000,
-    "originalHeight": 8999,
-    "intrinsicWidth": 2400,
-    "intrinsicHeight": 1350,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/closing/640.webp",
-        "bytes": 58848
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/closing/1024.webp",
-        "bytes": 125730
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/closing/1600.webp",
-        "bytes": 248694
-      },
-      {
-        "width": 2400,
-        "file": "/homepage/closing/2400.webp",
-        "bytes": 456210
-      }
-    ],
-    "sha256": "59b266cd9cff7ff1",
-    "query": "Dakar Rally 2011 desert",
-    "downloadedAt": "2026-08-31T16:04:01.028Z"
+    "downloadedAt": "2026-08-31T17:39:40.996Z",
+    "originalId": "2010 Nissan Navara (D40) ST 4-door utility (2011-04-22) 01.jpg"
   },
   "veh-gwm-cannon": {
     "slot": "veh-gwm-cannon",
@@ -719,6 +671,9 @@
     "licenseRaw": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "attributionRequired": false,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 7.22,
     "originalWidth": 3840,
     "originalHeight": 2880,
     "intrinsicWidth": 1280,
@@ -742,6 +697,91 @@
     ],
     "sha256": "86ad82035ddb53bf",
     "query": "Great Wall Cannon pickup",
-    "downloadedAt": "2026-08-31T16:05:17.924Z"
+    "downloadedAt": "2026-08-31T17:39:46.205Z",
+    "originalId": "Great Wall King Kong Cannon 008.jpg"
+  },
+  "veh-volkswagen-amarok-4x4": {
+    "slot": "veh-volkswagen-amarok-4x4",
+    "status": "ok",
+    "vehicle": "VW Amarok",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/2017_Volkswagen_Amarok_Highline_V6_TDi_facelift_3.0.jpg/3840px-2017_Volkswagen_Amarok_Highline_V6_TDi_facelift_3.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3A2017%20Volkswagen%20Amarok%20Highline%20V6%20TDi%20facelift%203.0.jpg",
+    "title": "2017 Volkswagen Amarok Highline V6 TDi facelift 3.0.jpg",
+    "creator": "Vauxford",
+    "license": "by-sa",
+    "licenseRaw": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.7,
+    "originalWidth": 3840,
+    "originalHeight": 1977,
+    "intrinsicWidth": 1280,
+    "intrinsicHeight": 659,
+    "variants": [
+      {
+        "width": 480,
+        "file": "/homepage/veh-volkswagen-amarok-4x4/480.webp",
+        "bytes": 19006
+      },
+      {
+        "width": 800,
+        "file": "/homepage/veh-volkswagen-amarok-4x4/800.webp",
+        "bytes": 46650
+      },
+      {
+        "width": 1280,
+        "file": "/homepage/veh-volkswagen-amarok-4x4/1280.webp",
+        "bytes": 102898
+      }
+    ],
+    "sha256": "384da207ce0ce81e",
+    "query": "Volkswagen Amarok",
+    "downloadedAt": "2026-08-31T17:39:50.112Z",
+    "originalId": "2017 Volkswagen Amarok Highline V6 TDi facelift 3.0.jpg"
+  },
+  "veh-ford-obs-73-power-stroke": {
+    "slot": "veh-ford-obs-73-power-stroke",
+    "status": "ok",
+    "vehicle": "Ford OBS F-250",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/1996_Ford_F-250_XL_4x4_Regular_Cab%2C_rear_left_08-05-2023.jpg/3840px-1996_Ford_F-250_XL_4x4_Regular_Cab%2C_rear_left_08-05-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3A1996%20Ford%20F-250%20XL%204x4%20Regular%20Cab%2C%20rear%20left%2008-05-2023.jpg",
+    "title": "1996 Ford F-250 XL 4x4 Regular Cab, rear left 08-05-2023.jpg",
+    "creator": "MercurySable99",
+    "license": "by-sa",
+    "licenseRaw": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attributionRequired": true,
+    "avgColor": null,
+    "toneLuminance": null,
+    "score": 6.59,
+    "originalWidth": 3840,
+    "originalHeight": 2678,
+    "intrinsicWidth": 1280,
+    "intrinsicHeight": 893,
+    "variants": [
+      {
+        "width": 480,
+        "file": "/homepage/veh-ford-obs-73-power-stroke/480.webp",
+        "bytes": 32288
+      },
+      {
+        "width": 800,
+        "file": "/homepage/veh-ford-obs-73-power-stroke/800.webp",
+        "bytes": 83422
+      },
+      {
+        "width": 1280,
+        "file": "/homepage/veh-ford-obs-73-power-stroke/1280.webp",
+        "bytes": 186648
+      }
+    ],
+    "sha256": "48205eaa73dc374b",
+    "query": "Ford F-250 1996",
+    "downloadedAt": "2026-08-31T17:39:59.054Z",
+    "originalId": "1996 Ford F-250 XL 4x4 Regular Cab, rear left 08-05-2023.jpg"
   }
 }

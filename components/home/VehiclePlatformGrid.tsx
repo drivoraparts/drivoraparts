@@ -1,5 +1,6 @@
 import Link from "next/link";
 import EditorialImage from "./EditorialImage";
+import EditorialPlate from "./EditorialPlate";
 import ScrollReveal from "./ScrollReveal";
 import { getPhoto } from "@/lib/media/homepage-photo";
 import { vehiclePlatforms } from "@/data/vehicles";
@@ -63,11 +64,7 @@ export default function VehiclePlatformGrid() {
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]"
                     />
                   ) : (
-                    <div className="flex h-full w-full items-center justify-center">
-                      <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                        {p.name}
-                      </span>
-                    </div>
+                    <EditorialPlate label={p.name} className="h-full w-full" />
                   )}
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background-dark/70 via-transparent to-transparent" />
                 </div>

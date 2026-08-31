@@ -1,36 +1,37 @@
 /**
- * Acquires the homepage's editorial photography under licences that actually
- * permit commercial reuse, stores it locally, and derives responsive WebP.
+ * Art-directs and acquires the homepage photography.
  *
- *   node scripts/acquire-homepage-photography.mjs            # plan
- *   node scripts/acquire-homepage-photography.mjs --apply
- *   node scripts/acquire-homepage-photography.mjs --apply --only hero,workhorse
+ *   node scripts/acquire-homepage-photography.mjs                 # plan
+ *   PEXELS_API_KEY=<key> node scripts/... --apply
+ *   PEXELS_API_KEY=<key> node scripts/... --apply --refresh
+ *   ... --only hero,workhorse --debug
  *
- * WHY THESE SOURCES
- * Every source here returns a machine-readable licence per result, so "we may
- * use this commercially" is a field we read rather than a claim we invent.
- * Scraping a stock site's pages instead would mean taking images without
- * reading their terms -- the exact mistake the Edmunds hotlinks were.
+ * ONE CAMPAIGN, NOT NINETEEN SEARCHES
+ * The difference between a set of stock photos and a campaign is tonal
+ * consistency, and Pexels exposes `avg_color` per photograph, so that is
+ * something we can measure instead of hope for. Every editorial slot declares
+ * a target luminance band; a candidate outside it is penalised even when its
+ * subject is perfect. The result is a page that reads dark and filmic all the
+ * way down rather than lurching between a moody workshop and a bright,
+ * blown-out roadside snap.
  *
- * Pexels is tried first and only works when PEXELS_API_KEY is set. It is worth
- * the key: Commons is an encyclopedia, so its vehicle photography is
- * documentary ("car parked in a street") and its landscapes often contain no
- * vehicle at all. Without the key this script still runs, but the editorial
- * slots fall back to Commons and read as documentation rather than campaign.
+ * A QUALITY BAR, NOT A FILL RATE
+ * A slot whose best candidate scores below MIN_SCORE is recorded as
+ * "below-bar" and left empty on purpose. The components fall back to a
+ * typographic treatment, which looks deliberate; a weak stock image does not.
+ * Filling all nineteen slots is not the goal.
  *
- *   PEXELS_API_KEY=<key> node scripts/acquire-homepage-photography.mjs --apply --refresh
+ * WHY THE SOURCES DIFFER BY ROLE
+ * Editorial slots prefer Pexels: it is shot as commercial photography and the
+ * Pexels Licence permits commercial use with no attribution. Vehicle cards
+ * prefer Wikimedia Commons, because Pexels alt text rarely names an exact
+ * model and a correctly-identified Mazda BT-50 is worth more on a fitment
+ * grid than a prettier unnamed ute.
  *
- * NOTHING IS EVER HOTLINKED
- * Every accepted photograph is downloaded, verified, re-encoded locally and
- * recorded in homepage-photography.json with its source URL, licence,
- * creator and whether attribution is required. The rendered page references
- * only local files, so no third party can take the homepage down.
- *
- * SLOTS, NOT A PILE OF STOCK
- * Each image has a job. A slot declares what it must depict, the orientation
- * and resolution the layout needs, and the words that must appear in the
- * candidate's own title for it to qualify. A photo that cannot prove it shows
- * the right subject is rejected rather than used as filler.
+ * NOTHING IS HOTLINKED
+ * Everything is downloaded, re-encoded to responsive WebP, and recorded in
+ * homepage-photography.json with source, licence, creator and attribution.
+ * The rendered page references only local files.
  */
 import fs from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -45,17 +46,20 @@ const MANIFEST = path.join(ROOT, "lib/content/homepage-photography.json");
 
 const argv = process.argv.slice(2);
 const APPLY = argv.includes("--apply");
+const REFRESH = argv.includes("--refresh");
+const DEBUG = argv.includes("--debug");
 const onlyIdx = argv.indexOf("--only");
 const ONLY = onlyIdx > -1 ? new Set(argv[onlyIdx + 1].split(",")) : null;
-/* Re-acquire slots that already succeeded. Used when a better source becomes
-   available (a Pexels key) and the existing Commons picks should be replaced. */
-const REFRESH = argv.includes("--refresh");
 
 const UA = "DrivoraParts-Editorial/1.0 (homepage photography; drivoraparts.com)";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/* Commercial reuse only. NC forbids it; ND forbids the crops we need. */
+/** Commercial reuse only. NC forbids it; ND forbids the crops the layout needs. */
 const OK = /^(cc0|pdm|by|by-sa|pexels)$/i;
+
+/** Below this, a slot is left empty for a typographic treatment. */
+const MIN_SCORE = 3.0;
+
 function normWiki(s = "") {
   const t = s.toLowerCase();
   if (/-nc|\bnc\b|-nd\b|\bnd\b|fair use|non-free/.test(t)) return "restricted";
@@ -66,240 +70,320 @@ function normWiki(s = "") {
   return null;
 }
 
-/* Never acceptable as editorial photography, whatever the title says. */
-const REJECT = /\b(logo|wordmark|emblem|badge close|diagram|schematic|blueprint|drawing|sketch|chart|map|graph|assembly line|factory floor|showroom|dealership|museum|toy|model car|scale model|miniature|lego|die-?cast|crash|accident|wreck|burnt|fire|police|ambulance|funeral|cemetery|protest|war|military|patent|advertisement|poster|magazine cover|screenshot|interior of|dashboard|odometer|engine bay detail)\b/i;
+/* Never editorial photography, whatever the caption claims. Brand marks are in
+ * here deliberately: a logo in frame is a trademark question on top of a
+ * copyright one, and this page does not need that. */
+const REJECT = /\b(logo|wordmark|emblem|diagram|schematic|blueprint|drawing|sketch|render|3d model|illustration|chart|graph|map|infographic|showroom|dealership|museum|toy|model car|scale model|miniature|lego|die-?cast|crash|accident|wreck|burnt|scrap|junkyard|abandoned|derelict|police|ambulance|fire truck|military|army|war|protest|funeral|advertisement|poster|banner|billboard|magazine cover|screenshot|watermark|stock photo)\b/i;
 
 /**
- * Each slot: what it depicts, how the layout will use it, and the tokens a
- * candidate's title must contain to prove it shows the right thing.
+ * The page's visual story, in order:
+ *   vehicle -> build -> parts -> workshop -> performance -> finished machine
+ *
+ * tone: target luminance of the photograph's average colour, 0 (black) to 1.
+ *       The band is narrow on purpose -- it is what makes nineteen separate
+ *       searches read as one art-directed set.
  */
-const SLOTS = [
+const DARK = { target: 0.13, band: 0.13 };   // moody, filmic
+const MID = { target: 0.20, band: 0.16 };    // a little more open
+
+const EDITORIAL = [
   {
     id: "hero",
-    purpose: "Full-bleed opening frame. Needs negative space for the headline.",
-    queries: ["Dakar Rally truck", "rally raid truck desert", "Australian road train outback", "off-road racing truck dust"],
-    // Convoy-and-dunes language, because the opening frame needs vehicles in
-    // motion against open sky -- the sky is where the headline sits.
-    pq: ["off road vehicles convoy desert dunes","4x4 driving sand dunes sunset","offroad truck desert landscape","pickup truck dirt road mountains"],
-    must: [/\b(rally|dakar|road train|truck|4x4|4wd|off-?road)\b/i],
-    minWidth: 2000, landscape: true, widths: [640, 1024, 1600, 2400],
+    purpose: "Opening frame. A vehicle working hard, with sky for the headline.",
+    pq: [
+      "4x4 driving fast dirt road dust trail",
+      "pickup truck in motion desert dust cloud",
+      "suv driving through dust cinematic motion",
+      "off road vehicle driving mud splash action",
+    ],
+    queries: ["4x4 desert landscape vehicle", "pickup truck mountain road"],
+    must: [/\b(truck|4x4|4wd|off-?road|pickup|suv|vehicle)\b/i],
+    // A liveried race truck is dramatic but it advertises its sponsors, and
+    // this page cannot carry someone else's trademarks in its opening frame.
+    reject: /\b(racing|race truck|rally|dakar|nascar|sponsor|livery|team|championship|trophy truck|decal|parked|stationary|showroom)\b/i,
+    minWidth: 2400, landscape: true, minRatio: 1.5,
+    widths: [640, 1024, 1600, 2400], tone: DARK,
   },
   {
     id: "workhorse",
-    purpose: "THE WORKHORSE — a truck doing real work.",
-    queries: ["Australian road train headed", "road train outback highway", "mining haul truck", "logging truck road"],
-    pq: ["pickup truck construction site work","truck towing trailer","farm truck field work","heavy duty truck jobsite"],
-    must: [/\b(road train|truck|haul|logging|mining)\b/i],
-    minWidth: 1400, landscape: true, widths: [640, 1024, 1600],
+    purpose: "THE WORKHORSE — a truck earning its keep.",
+    pq: [
+      "pickup truck bed loaded with cargo work",
+      "truck towing horse trailer",
+      "pickup truck hauling firewood farm",
+      "worker loading pickup truck jobsite",
+    ],
+    queries: ["pickup truck farm", "ute towing trailer"],
+    must: [/\b(pickup|ute|truck)\b/i],
+    // A European tipper lorry is not this audience's workhorse.
+    // "parked" is rejected here too: a truck earning its keep should be doing
+    // something. It also filters out manufacturer press units, which are
+    // photographed stationary and carry brand decals the caption never mentions.
+    reject: /\b(dump truck|tipper|lorry|semi|articulated|excavator|crane|bus|racing|livery|press car|demo|showroom|parked|stationary)\b/i,
+    minWidth: 1600, landscape: true, widths: [640, 1024, 1600], tone: MID,
   },
   {
     id: "tourer",
-    purpose: "THE TOURER — a 4x4 crossing a dramatic landscape.",
-    queries: ["Icelandic offroad vehicle", "4x4 desert crossing expedition", "Land Cruiser desert track", "4wd mountain pass gravel"],
-    pq: ["4x4 camping overland desert","suv driving mountain road","offroad vehicle remote landscape","roof tent 4x4 outback"],
-    must: [/\b(offroad|off-?road|4x4|4wd|land ?cruiser|desert|track|expedition)\b/i],
-    minWidth: 1400, landscape: true, widths: [640, 1024, 1600],
+    purpose: "THE TOURER — a 4x4 a long way from anywhere.",
+    pq: [
+      "4x4 overland camping remote landscape dusk",
+      "suv driving mountain road dramatic landscape",
+      "off road vehicle desert horizon sunset",
+      "4x4 roof tent outback",
+    ],
+    queries: ["Icelandic offroad vehicle", "Land Cruiser desert track"],
+    must: [/\b(4x4|4wd|off-?road|suv|overland|expedition|vehicle|truck)\b/i],
+    minWidth: 1600, landscape: true, widths: [640, 1024, 1600], tone: DARK,
   },
   {
     id: "offroader",
-    purpose: "THE OFF-ROADER — a vehicle genuinely off-road.",
-    // "crossing" matched a photograph of an empty river with no vehicle in it,
-    // so the title must name a vehicle rather than the terrain.
-    queries: ["Jeep off-road trail vehicle", "Land Rover off-road course", "4x4 vehicle driving mud", "SUV off-road obstacle course"],
-    pq: ["4x4 offroad mud driving","jeep rock crawling trail","offroad vehicle splashing water","suv sand dune driving"],
-    must: [/\b(jeep|land rover|toyota|4x4|4wd|suv|truck|vehicle|car)\b/i],
-    reject: /\b(crossing|river|creek|stream|waterfall|landscape|national park)\b/i,
-    minWidth: 1400, landscape: true, widths: [640, 1024, 1600],
+    purpose: "THE OFF-ROADER — genuinely off the blacktop.",
+    pq: [
+      "4x4 driving through deep mud off road",
+      "jeep rock crawling trail obstacle",
+      "off road vehicle water crossing splash",
+      "4x4 sand dune driving action",
+    ],
+    queries: ["Jeep off-road trail vehicle", "Land Rover off-road course"],
+    must: [/\b(jeep|4x4|4wd|off-?road|suv|truck|vehicle)\b/i],
+    reject: /\b(river|creek|landscape only|national park)\b/i,
+    minWidth: 1600, landscape: true, widths: [640, 1024, 1600], tone: MID,
   },
   {
     id: "performance",
-    purpose: "THE PERFORMANCE BUILD — power and intent.",
-    queries: ["V8 engine bay muscle car", "race car pit lane", "motorsport car cornering", "turbocharged engine bay"],
-    pq: ["muscle car engine bay","sports car motion blur road","performance car race track","turbo engine closeup"],
-    // Commons names files after the subject; Pexels alt text is a sentence
-    // ("Red sports car on a road"), so plain vehicle nouns have to qualify too.
-    must: [/\b(engine|v8|race|motorsport|rally|turbo|muscle|sports? car|car|vehicle)\b/i],
-    minWidth: 1400, landscape: true, widths: [640, 1024, 1600],
+    purpose: "THE PERFORMANCE BUILD — close-up mechanical detail, not a whole car.",
+    pq: [
+      "turbocharger close up mechanical detail dark",
+      "engine internals pistons close up",
+      "exhaust manifold detail macro dark",
+      "engine block machined detail",
+    ],
+    queries: ["V8 engine bay muscle car", "turbocharged engine bay"],
+    must: [/\b(engine|turbo|motor|mechanical|piston|cylinder|exhaust|manifold)\b/i],
+    // A whole car in a car park is not a performance detail shot, and a
+    // manufacturer wordmark on an engine cover is a trademark in frame.
+    reject: /\b(parked|car park|street|showroom|dealership|traffic|srt|badge|emblem|nameplate|logo)\b/i,
+    minWidth: 1600, landscape: true, widths: [640, 1024, 1600], tone: DARK,
   },
   {
     id: "project",
-    purpose: "THE PROJECT — a build in a workshop.",
-    queries: ["car on lift workshop", "engine rebuild workbench", "vehicle restoration workshop", "mechanic repairing engine", "auto repair shop interior", "classic car restoration garage"],
-    pq: ["mechanic working on car engine","car workshop garage repair","auto repair shop lift","engine rebuild workbench"],
-    // "restoration" alone matched a slide deck about restoring a Korean
-    // stream, so the subject noun must be a vehicle, not the activity.
-    must: [/\b(car|vehicle|auto|automobile|engine|garage|workshop|mechanic)\b/i],
-    reject: /\b(shop ?front|storefront|services,|stream|river|creek|presentation|slide|poster|conference)\b/i,
-    // Lower floor than the other editorial slots: good workshop interiors are
-    // scarce on Commons, and this image renders in a half-width column.
-    minWidth: 1100, landscape: true, widths: [640, 1024, 1600],
+    purpose: "THE PROJECT — a real workshop, mid-build.",
+    pq: [
+      "mechanic working on car engine workshop dark",
+      "car on lift in garage workshop",
+      "auto repair workshop tools engine",
+      "mechanic hands repairing engine close up",
+    ],
+    queries: ["car on lift workshop", "mechanic repairing engine"],
+    must: [/\b(mechanic|workshop|garage|repair|engine|lift|tools|car)\b/i],
+    reject: /\b(shop ?front|storefront|street|presentation|slide)\b/i,
+    minWidth: 1400, landscape: true, widths: [640, 1024, 1600], tone: DARK,
   },
   {
     id: "shipping",
-    purpose: "Worldwide delivery — road and distance.",
-    queries: ["Australian road train highway", "freight truck highway landscape", "container ship port cranes", "long haul truck desert road"],
-    pq: ["long empty highway horizon","freight truck highway sunset","cargo containers port","desert road aerial"],
-    must: [/\b(road train|freight|truck|container|port|highway)\b/i],
-    minWidth: 1600, landscape: true, widths: [640, 1024, 1600, 2000],
+    purpose: "Worldwide delivery — road, distance, freight.",
+    pq: [
+      "long empty highway desert horizon",
+      "freight truck highway sunset landscape",
+      "cargo container port cranes dusk",
+      "aerial desert road straight",
+    ],
+    queries: ["freight truck highway landscape", "container ship port cranes"],
+    must: [/\b(road|highway|truck|freight|container|port|cargo)\b/i],
+    minWidth: 1800, landscape: true, widths: [640, 1024, 1600, 2000], tone: MID,
   },
   {
     id: "closing",
-    purpose: "Final CTA backdrop.",
-    queries: ["Dakar Rally 2011 desert", "4x4 desert dunes vehicle", "off-road truck dust cloud", "rally truck sand"],
-    pq: ["pickup truck golden hour landscape","4x4 sunset silhouette desert","offroad truck dust cloud","truck mountain road dusk"],
-    must: [/\b(rally|dakar|4x4|4wd|off-?road|truck|dune|desert)\b/i],
-    reject: /\b(abandoned|derelict|rust|wreck|scrap)\b/i,
-    minWidth: 1800, landscape: true, widths: [640, 1024, 1600, 2400],
+    purpose: "The finished machine. Final CTA backdrop.",
+    pq: [
+      "4x4 silhouette sunset dramatic landscape",
+      "pickup truck golden hour dramatic",
+      "off road truck dust cloud backlit",
+      "suv mountain road dusk cinematic",
+    ],
+    queries: ["Dakar Rally desert", "4x4 desert dunes vehicle"],
+    must: [/\b(4x4|4wd|off-?road|truck|pickup|suv|vehicle)\b/i],
+    minWidth: 2000, landscape: true, minRatio: 1.5,
+    widths: [640, 1024, 1600, 2400], tone: DARK,
   },
-  /* One per catalogue vehicle platform. Must name the actual model. */
-  { id: "veh-ford-ranger-4x4", vehicle: "Ford Ranger", queries: ["Ford Ranger pickup", "Ford Ranger 4x4"], must: [/ford ranger/i] },
-  { id: "veh-toyota-hilux-4x4", vehicle: "Toyota HiLux", queries: ["Toyota Hilux", "Toyota Hilux 4x4"], must: [/hilux/i] },
-  { id: "veh-isuzu-d-max-4x4", vehicle: "Isuzu D-Max", queries: ["Isuzu D-Max", "Isuzu DMax pickup"], must: [/isuzu d.?max/i] },
-  { id: "veh-mitsubishi-triton-4x4", vehicle: "Mitsubishi Triton", queries: ["Mitsubishi Triton pickup exterior", "Mitsubishi L200 pickup", "Mitsubishi Triton 4x4"], must: [/triton|l200/i], reject: /\b(interior|dashboard|cockpit|engine bay|rear seats)\b/i },
-  { id: "veh-byd-shark-6-phev", vehicle: "BYD Shark 6", queries: ["BYD Shark pickup", "BYD Shark 6"], must: [/byd shark/i] },
-  { id: "veh-mazda-bt-50-4x4", vehicle: "Mazda BT-50", queries: ["Mazda BT-50", "Mazda BT50 pickup"], must: [/bt.?50/i] },
-  { id: "veh-toyota-landcruiser-70-series", vehicle: "LandCruiser 70", queries: ["Toyota Land Cruiser 70 series", "Toyota Landcruiser 79"], must: [/land ?cruiser/i] },
-  { id: "veh-nissan-navara-4x4", vehicle: "Nissan Navara", queries: ["Nissan Navara pickup", "Nissan Navara NP300", "Nissan Frontier pickup"], must: [/navara|frontier|np300/i], reject: /\b(interior|dashboard|comparison|vs |shopfront)\b/i },
-  // "cannon" on its own matched a field of historic artillery, so the marque
-// has to appear -- the model name alone is not evidence of a vehicle.
-{ id: "veh-gwm-cannon", vehicle: "GWM Cannon", queries: ["Great Wall Cannon pickup", "GWM Cannon ute", "GWM Poer pickup"], must: [/\b(gwm|great wall|haval|poer)\b/i], reject: /\b(artillery|historic|museum|fort|war|napoleon|civil war)\b/i },
-  { id: "veh-volkswagen-amarok-4x4", vehicle: "VW Amarok", queries: ["Volkswagen Amarok", "VW Amarok pickup"], must: [/amarok/i] },
-  { id: "veh-ford-obs-73-power-stroke", vehicle: "Ford OBS F-250", queries: ["Ford F-250 1996", "Ford F-350 1997 pickup", "Ford F-Series ninth generation"], must: [/ford f.?[23]50|f.?series/i] },
 ];
-for (const s of SLOTS) {
-  if (!s.minWidth) s.minWidth = 1000;
-  if (s.landscape === undefined) s.landscape = true;
-  if (!s.widths) s.widths = [480, 800, 1280];
-}
 
-/* ------------------------------------------------------------------ search */
+/* Vehicle cards. Model accuracy beats mood here, so Commons leads and the
+ * tone band is wide. */
+const VEHICLES = [
+  ["ford-ranger-4x4", "Ford Ranger", ["Ford Ranger pickup", "Ford Ranger 4x4"], /ford ranger/i],
+  ["toyota-hilux-4x4", "Toyota HiLux", ["Toyota Hilux", "Toyota Hilux 4x4"], /hilux/i],
+  ["isuzu-d-max-4x4", "Isuzu D-Max", ["Isuzu D-Max", "Isuzu DMax pickup"], /isuzu d.?max/i],
+  ["mitsubishi-triton-4x4", "Mitsubishi Triton", ["Mitsubishi Triton pickup", "Mitsubishi L200 pickup"], /triton|l200/i],
+  ["byd-shark-6-phev", "BYD Shark 6", ["BYD Shark pickup", "BYD Shark 6"], /byd shark/i],
+  ["mazda-bt-50-4x4", "Mazda BT-50", ["Mazda BT-50", "Mazda BT50 pickup"], /bt.?50/i],
+  // Must name the 70/75/76/78/79 series: a bare "Land Cruiser" match pulled in
+  // a 100-series wagon, which is a different vehicle and misleads on fitment.
+  ["toyota-landcruiser-70-series", "LandCruiser 70", ["Toyota Land Cruiser 70 series", "Toyota Land Cruiser 79 series"], /land ?cruiser\s*(7[0-9]|series 7)/i],
+  ["nissan-navara-4x4", "Nissan Navara", ["Nissan Navara pickup", "Nissan Navara NP300"], /navara|np300/i],
+  ["gwm-cannon", "GWM Cannon", ["Great Wall Cannon pickup", "GWM Poer pickup"], /\b(gwm|great wall|poer)\b/i],
+  ["volkswagen-amarok-4x4", "VW Amarok", ["Volkswagen Amarok", "VW Amarok pickup"], /amarok/i],
+  ["ford-obs-73-power-stroke", "Ford OBS F-250", ["Ford F-250 1996", "Ford F-350 1997 pickup"], /ford f.?[23]50|f.?series/i],
+].map(([slug, vehicle, queries, must]) => ({
+  id: `veh-${slug}`, vehicle, queries, pq: queries, must: [must],
+  /* Commons' vehicle corpus is dominated by motor-show stands and liveried
+   * fleet units. Both were explicitly out of scope: a show photo puts the
+   * manufacturer's own signage in frame, and a security or dealer livery puts
+   * a third party's branding on our homepage. */
+  reject: /\b(interior|dashboard|cockpit|comparison|vs |artillery|historic|museum|motor ?show|auto ?show|salon|GIMS|IAA|expo|exhibition|stand|showroom|dealer|autohaus|security|police|taxi|ambulance|fleet|livery|BEV concept)\b/i,
+  minWidth: 1200, landscape: true, widths: [480, 800, 1280],
+  tone: { target: 0.25, band: 0.30 }, preferCommons: true,
+}));
+
+const SLOTS = [...EDITORIAL, ...VEHICLES];
+
+/* ------------------------------------------------------------------ sources */
 async function commons(q) {
   const u = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(q)}&gsrlimit=25&gsrnamespace=6&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=2560&format=json`;
   const r = await fetch(u, { headers: { "User-Agent": UA } });
+  if (r.status === 429) throw new Error("RATE_LIMIT");
   if (!r.ok) return [];
   const j = await r.json();
   return Object.values((j.query && j.query.pages) || {}).map((v) => {
     const ii = (v.imageinfo || [{}])[0], em = ii.extmetadata || {};
     const raw = (em.LicenseShortName && em.LicenseShortName.value) || "";
     return {
-      // Prefer the pre-scaled rendition: a 16000px original is throttled and
-      // wasted, since nothing here renders wider than 2400.
-      url: ii.thumburl || ii.url, fullUrl: ii.url,
+      url: ii.thumburl || ii.url,
       title: String(v.title || "").replace(/^File:/, ""),
       creator: String((em.Artist && em.Artist.value) || "").replace(/<[^>]+>/g, "").trim().slice(0, 90),
       licence: normWiki(raw), licenceRaw: raw,
       licenceUrl: (em.LicenseUrl && em.LicenseUrl.value) || "",
       landing: `https://commons.wikimedia.org/wiki/${encodeURIComponent(v.title || "")}`,
       source: "Wikimedia Commons", w: ii.width || 0, h: ii.height || 0,
+      avg: null,
     };
   }).filter((c) => c.url);
 }
-async function openverse(q) {
-  const u = `https://api.openverse.org/v1/images/?q=${encodeURIComponent(q)}&page_size=25&license_type=commercial&size=large`;
-  const r = await fetch(u, { headers: { "User-Agent": UA } });
-  if (!r.ok) return [];
-  const j = await r.json();
-  return (j.results || []).map((x) => ({
-    url: x.url, title: x.title || "", creator: x.creator || "",
-    licence: (x.license || "").toLowerCase(), licenceRaw: `${x.license} ${x.license_version || ""}`.trim(),
-    licenceUrl: x.license_url || "", landing: x.foreign_landing_url || "",
-    source: x.source === "flickr" ? "Flickr" : (x.source || "Openverse"),
-    w: x.width || 0, h: x.height || 0,
-  })).filter((c) => c.url);
-}
 
-/**
- * Pexels. Only active when PEXELS_API_KEY is set.
- *
- * Preferred over the other two when available: Commons is an encyclopedia, so
- * its vehicle photography is documentary ("car parked in a street") and its
- * landscapes rarely feature a vehicle at all -- fine for Wikipedia, wrong for
- * a brand campaign. Pexels is shot as commercial photography, and the Pexels
- * Licence permits commercial use with no attribution required.
- */
 const PEXELS_KEY = process.env.PEXELS_API_KEY || "";
 async function pexels(q) {
   if (!PEXELS_KEY) return [];
-  const u = `https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&per_page=30&orientation=landscape&size=large`;
+  const u = `https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&per_page=40&orientation=landscape&size=large`;
   const r = await fetch(u, { headers: { Authorization: PEXELS_KEY, "User-Agent": UA } });
   if (r.status === 429) throw new Error("RATE_LIMIT");
   if (!r.ok) return [];
   const j = await r.json();
   return (j.photos || []).map((p) => ({
-    // large2x is ~1880px wide and plenty for a 1600px render; original can be
-    // enormous and is not worth the transfer.
     url: (p.src && (p.src.original || p.src.large2x)) || "",
     title: p.alt || q,
     creator: p.photographer || "",
-    licence: "pexels",
-    licenceRaw: "Pexels Licence",
+    licence: "pexels", licenceRaw: "Pexels Licence",
     licenceUrl: "https://www.pexels.com/license/",
-    landing: p.url || "",
-    source: "Pexels",
+    landing: p.url || "", source: "Pexels",
     w: p.width || 0, h: p.height || 0,
+    avg: p.avg_color || null,
   })).filter((c) => c.url);
 }
 
-const DEBUG = argv.includes("--debug");
+/* ------------------------------------------------------------------ scoring */
+function lumOfHex(hex) {
+  if (!hex || !/^#[0-9a-f]{6}$/i.test(hex)) return null;
+  const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255)
+    .map((v) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4)));
+  return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+}
+
 function score(slot, c) {
-  const why = (r) => { if (DEBUG) console.log(`      reject[${r}] ${String(c.title).slice(0, 46)}`); return null; };
-  if (!c.licence || !OK.test(c.licence)) return why("licence=" + c.licence);
+  const why = (r) => { if (DEBUG) console.log(`      reject[${r}] ${String(c.title).slice(0, 44)}`); return null; };
+  if (!c.licence || !OK.test(c.licence)) return why(`licence=${c.licence}`);
+
   const hay = `${c.title} ${c.landing}`;
   if (REJECT.test(hay)) return why("global");
   if (slot.reject && slot.reject.test(hay)) return why("slot");
   if (!slot.must.some((re) => re.test(hay))) return why("must");
+
   if (c.w && c.h) {
-    if (c.w < slot.minWidth) return why("width " + c.w);
-    if (slot.landscape && c.w / c.h < 1.2) return why("portrait");
+    if (c.w < slot.minWidth) return why(`width ${c.w}`);
+    const ratio = c.w / c.h;
+    if (slot.landscape && ratio < (slot.minRatio || 1.2)) return why(`ratio ${ratio.toFixed(2)}`);
   }
-  // Prefer bigger, and prefer a cinematic ratio for full-bleed slots.
-  const ratio = c.w && c.h ? c.w / c.h : 1.5;
-  const cine = slot.minWidth >= 1600 ? -Math.abs(ratio - 1.85) * 40 : 0;
-  return c.w / 1000 + cine + (c.licence === "cc0" || c.licence === "pdm" ? 3 : 0);
+
+  let s = 0;
+  // Resolution, with sharply diminishing returns past what we render.
+  s += Math.min(3, (c.w || 1200) / 1600);
+  // Licences needing no credit are worth a little more operationally.
+  if (/^(cc0|pdm|pexels)$/i.test(c.licence)) s += 1;
+  // Art direction: how close the photograph sits to the slot's tonal target.
+  if (slot.tone && c.avg) {
+    const l = lumOfHex(c.avg);
+    if (l !== null) {
+      const off = Math.abs(l - slot.tone.target);
+      if (off > slot.tone.band) return why(`tone ${l.toFixed(2)} vs ${slot.tone.target}`);
+      s += 3 * (1 - off / slot.tone.band);
+    }
+  } else if (slot.tone && !c.avg) {
+    // Commons gives no average colour; neither reward nor punish it.
+    s += 1.2;
+  }
+  if (slot.preferCommons && c.source === "Wikimedia Commons") s += 2.5;
+  if (!slot.preferCommons && c.source === "Pexels") s += 1.5;
+  return s;
 }
 
-/* ------------------------------------------------------------------- main */
+/* -------------------------------------------------------------------- main */
 const manifest = await fs.readFile(MANIFEST, "utf8").then(JSON.parse).catch(() => ({}));
-const used = REFRESH ? new Set() : new Set(Object.values(manifest).filter((e) => e && e.sourceUrl).map((e) => e.sourceUrl));
-const todo = SLOTS.filter((s) => (!ONLY || ONLY.has(s.id)) && (REFRESH || !(manifest[s.id] && manifest[s.id].status === "ok")));
+/* "below-bar" is a decision, not a gap. Re-running must not quietly undo it by
+ * picking the same weak image again -- only --refresh or an explicit --only
+ * reopens such a slot. */
+const settled = (id) => manifest[id]?.status === "ok" || manifest[id]?.status === "below-bar";
+const todo = SLOTS.filter((s) => (!ONLY || ONLY.has(s.id)) && (REFRESH || !settled(s.id)));
+const used = REFRESH && !ONLY
+  ? new Set()
+  : new Set(Object.values(manifest).filter((e) => e && e.sourceUrl).map((e) => e.sourceUrl));
 
 console.log(`  slots        : ${SLOTS.length}`);
-console.log(`  already done : ${SLOTS.length - todo.length}`);
 console.log(`  to acquire   : ${todo.length}`);
+console.log(`  pexels key   : ${PEXELS_KEY ? "present" : "MISSING — editorial slots will be weak"}`);
 if (!APPLY) { console.log("\n  plan only — pass --apply"); process.exit(0); }
 
 await fs.mkdir(OUT, { recursive: true });
-let got = 0, missed = 0;
+let got = 0, belowBar = 0, failed = 0;
 
 for (const slot of todo) {
+  const providers = slot.preferCommons ? [commons, pexels] : [pexels, commons];
   let best = null, bestScore = -1e9;
+
   for (const [qi, q] of slot.queries.entries()) {
-    let cands = [];
-    for (const fn of [pexels, commons, openverse]) {
-      // Each source gets the phrasing it actually responds to.
+    const cands = [];
+    for (const fn of providers) {
       const term = fn === pexels && slot.pq ? slot.pq[Math.min(qi, slot.pq.length - 1)] : q;
-      try { cands.push(...(await fn(term))); }
-      catch (e) { if (!/RATE|ECONN|ETIMED|fetch failed/i.test(e.message)) throw e; }
+      for (let attempt = 0; attempt < 3; attempt++) {
+        try { cands.push(...(await fn(term))); break; }
+        catch (e) {
+          const transient = e.message === "RATE_LIMIT" || /ECONNRESET|ETIMEDOUT|EAI_AGAIN|socket|fetch failed/i.test(e.message);
+          if (!transient) throw e;
+          if (attempt === 2) { if (DEBUG) console.log(`      ${fn.name} unavailable`); }
+          else await sleep(2500 * (attempt + 1));
+        }
+      }
     }
-    await sleep(1400);
+    await sleep(1100);
     for (const c of cands) {
       if (used.has(c.url)) continue;
       const s = score(slot, c);
-      if (s !== null && s > bestScore) { bestScore = s; best = { ...c, query: q }; }
+      if (s !== null && s > bestScore) { bestScore = s; best = { ...c, query: q, score: s }; }
     }
-    if (best && bestScore > 2.2) break;
+    if (best && bestScore >= 6) break; // strong enough, stop spending calls
   }
 
-  if (!best) {
-    missed++;
-    manifest[slot.id] = { slot: slot.id, status: "no-match", purpose: slot.purpose, searched: slot.queries, checkedAt: new Date().toISOString() };
-    console.log(`   –  ${slot.id.padEnd(32)} no licensed match`);
+  if (!best || bestScore < MIN_SCORE) {
+    belowBar++;
+    manifest[slot.id] = {
+      slot: slot.id, status: "below-bar", purpose: slot.purpose,
+      bestScore: best ? Number(bestScore.toFixed(2)) : null,
+      note: "no candidate cleared the quality bar; the section renders a typographic treatment instead",
+      checkedAt: new Date().toISOString(),
+    };
     await fs.writeFile(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`);
+    console.log(`   ·  ${slot.id.padEnd(32)} below bar (${best ? bestScore.toFixed(1) : "no match"}) — typographic fallback`);
     continue;
   }
 
-  // upload.wikimedia.org throttles rapid pulls of multi-megabyte originals,
-  // so back off and retry rather than losing the slot to one 429.
   let buf = null;
   for (let attempt = 0; attempt < 4 && !buf; attempt++) {
     try {
@@ -312,48 +396,47 @@ for (const slot of todo) {
       await sleep(4000 * (attempt + 1));
     }
   }
-  if (!buf) { missed++; continue; }
+  if (!buf) { failed++; continue; }
 
   let meta;
-  try { meta = await sharp(buf).metadata(); }
-  catch { console.log(`   ✗  ${slot.id} not a decodable image`); missed++; continue; }
-  if (!meta.width || meta.width < slot.minWidth) { console.log(`   ✗  ${slot.id} ${meta.width}px < ${slot.minWidth}`); missed++; continue; }
+  try { meta = await sharp(buf).metadata(); } catch { console.log(`   ✗  ${slot.id} undecodable`); failed++; continue; }
+  if (!meta.width || meta.width < slot.minWidth) { console.log(`   ✗  ${slot.id} ${meta.width}px < ${slot.minWidth}`); failed++; continue; }
 
-  // Claim this photograph before writing it. Without this the set was seeded
-  // at startup and never updated, so two slots in the same run could pick the
-  // identical image -- the hero and the closing CTA did exactly that.
   used.add(best.url);
-
   const dir = path.join(OUT, slot.id);
+  await fs.rm(dir, { recursive: true, force: true }); // drop variants from a previous pick
   await fs.mkdir(dir, { recursive: true });
+
   const variants = [];
   for (const w of slot.widths) {
     if (w > meta.width) continue;
     const out = path.join(dir, `${w}.webp`);
     await sharp(buf).resize({ width: w, withoutEnlargement: true }).webp({ quality: 78, effort: 5 }).toFile(out);
-    const st = await fs.stat(out);
-    variants.push({ width: w, file: `/homepage/${slot.id}/${w}.webp`, bytes: st.size });
+    variants.push({ width: w, file: `/homepage/${slot.id}/${w}.webp`, bytes: (await fs.stat(out)).size });
   }
   const largest = variants[variants.length - 1];
-  const h = Math.round((meta.height / meta.width) * largest.width);
 
   manifest[slot.id] = {
     slot: slot.id, status: "ok", purpose: slot.purpose, vehicle: slot.vehicle || null,
     sourceName: best.source, sourceUrl: best.url, landingPage: best.landing,
     title: best.title, creator: best.creator || null,
     license: best.licence, licenseRaw: best.licenceRaw, licenseUrl: best.licenceUrl,
-    attributionRequired: /^(by|by-sa)$/i.test(best.licence), // Pexels/CC0/PDM need none
-
+    attributionRequired: /^(by|by-sa)$/i.test(best.licence),
+    avgColor: best.avg || null,
+    toneLuminance: best.avg ? Number((lumOfHex(best.avg) ?? 0).toFixed(3)) : null,
+    score: Number(bestScore.toFixed(2)),
     originalWidth: meta.width, originalHeight: meta.height,
-    intrinsicWidth: largest.width, intrinsicHeight: h,
+    intrinsicWidth: largest.width,
+    intrinsicHeight: Math.round((meta.height / meta.width) * largest.width),
     variants, sha256: createHash("sha256").update(buf).digest("hex").slice(0, 16),
     query: best.query, downloadedAt: new Date().toISOString(),
   };
   await fs.writeFile(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`);
   got++;
-  console.log(`   ✓  ${slot.id.padEnd(32)} ${String(best.licence).padEnd(6)} ${meta.width}x${meta.height}  ${best.title.slice(0, 42)}`);
+  const tone = best.avg ? `${best.avg} l=${(lumOfHex(best.avg) ?? 0).toFixed(2)}` : "—".padEnd(15);
+  console.log(`   ✓  ${slot.id.padEnd(32)} ${String(best.licence).padEnd(6)} s=${bestScore.toFixed(1).padStart(4)}  ${tone.padEnd(16)} ${best.title.slice(0, 40)}`);
 }
 
-console.log(`\n  acquired : ${got}`);
-console.log(`  missed   : ${missed}`);
-console.log(`  manifest : ${MANIFEST}`);
+console.log(`\n  acquired   : ${got}`);
+console.log(`  below bar  : ${belowBar}  (typographic fallback)`);
+console.log(`  failed     : ${failed}`);

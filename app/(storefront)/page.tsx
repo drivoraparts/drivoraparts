@@ -12,6 +12,7 @@ import VehiclePlatformGrid from "@/components/home/VehiclePlatformGrid";
 import BuildStorySection from "@/components/home/BuildStorySection";
 import GlobalReachBand from "@/components/home/GlobalReachBand";
 import EditorialImage from "@/components/home/EditorialImage";
+import PhotoCredits from "@/components/home/PhotoCredits";
 import { getPhoto } from "@/lib/media/homepage-photo";
 import TrendingRail from "@/components/catalog/TrendingRail";
 import RecentlyAddedRail from "@/components/catalog/RecentlyAddedRail";
@@ -177,6 +178,8 @@ export default function Home() {
           </div>
         </ScrollReveal>
       </section>
+
+      <PhotoCredits />
     </div>
   );
 }
