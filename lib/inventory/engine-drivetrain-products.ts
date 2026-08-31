@@ -914,8 +914,8 @@ Worldwide Shipping Available`,
     fitment: "Off-Road, Hydro-Boost & High-Flow Racing Applications — CBR/CBX Series",
     partNumber: "CBR/CBX Racing Series",
     createdAt: Date.now() + 24 * 60 * 60 * 1000,
-    thumbnail: "/product-media/engine/power-steering-cbr-cbx-racing/1.jpg",
-    images: ["/product-media/engine/power-steering-cbr-cbx-racing/1.jpg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `CBR/CBX Racing Series Power Steering Pump
 
 Brand-new high-flow CBR/CBX-style racing power steering pump, built for off-road, hydro-assist brake, and full-hydraulic steering applications that need more volume and pressure than a stock pump can deliver.
@@ -952,8 +952,8 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     fitment: "GM LS & F-Body Applications — Confirm Fitting/Mount Spec at Checkout",
     createdAt: Date.now() + 24 * 60 * 60 * 1000,
-    thumbnail: "/product-media/engine/power-steering-turn-one/1.jpg",
-    images: ["/product-media/engine/power-steering-turn-one/1.jpg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Turn One Power Steering Pump
 
 Brand-new Turn One power steering pump, hand-built with proprietary internals engineered to reduce parasitic horsepower loss and fluid temperature versus a factory-style Type II pump — a popular Stage 1 upgrade for LS-swapped and F-body builds.
@@ -1066,8 +1066,8 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     fitment: "High-Displacement Saginaw P-Series Application — Confirm Spec at Checkout",
     createdAt: Date.now() + 24 * 60 * 60 * 1000,
-    thumbnail: "/product-media/engine/power-steering-psc-motorsports/1.jpg",
-    images: ["/product-media/engine/power-steering-psc-motorsports/1.jpg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `PSC Motorsports Power Steering Pump
 
 Brand-new PSC Motorsports high-displacement Saginaw P-Series power steering pump — built by one of the most trusted names in off-road and racing steering systems for demanding full-hydraulic and hydro-assist applications.

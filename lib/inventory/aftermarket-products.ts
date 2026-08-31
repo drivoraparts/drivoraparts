@@ -395,7 +395,7 @@ export const aftermarketProducts: Product[] = [
     location: "USA Warehouse",
     fitment: "1946–1948 Chrysler / Plymouth / Dodge / DeSoto (Split Windshield Models)",
     createdAt: Date.now() + 24 * 60 * 60 * 1000,
-    ...media("1947-chrysler-external-sun-visor", ["1.jpg"]),
+    thumbnail: "/product-media/placeholders/aftermarket.svg", images: ["/product-media/placeholders/aftermarket.svg"],
     description: aftermarketDescription(
       "1947 Chrysler External Sun Visor (Fulton Style)",
       "Vintage Fulton-style exterior sun visor for split-windshield Chrysler Corporation cars — adjustable steel mount fits the outside of the windshield frame for period-correct 1940s styling and glare reduction.",
@@ -415,7 +415,7 @@ export const aftermarketProducts: Product[] = [
     partNumber: "33111-2271",
     fitment: "2000 Hino FD500 (Casting No. 33111-2271 — confirm casting number matches your unit before ordering)",
     createdAt: Date.now() + 24 * 60 * 60 * 1000,
-    ...media("hino-fd500-gearbox-33111-2271", ["1.jpg"]),
+    thumbnail: "/product-media/placeholders/transmission.svg", images: ["/product-media/placeholders/transmission.svg"],
     description: aftermarketDescription(
       "Hino FD500 Complete Gearbox (Casting 33111-2271)",
       "Rebuilt complete gearbox for the 2000 Hino FD500, matched to casting number 33111-2271 as pictured on the unit's spec tag. Rebuilt over-top with new clutch hydraulics — verify your existing casting number matches exactly before ordering, as Hino gearbox cases are not interchangeable across casting revisions.",
