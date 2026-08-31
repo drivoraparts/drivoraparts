@@ -44,8 +44,8 @@ export default function ReviewCard({ review }: ReviewCardProps) {
         .review-card {
           padding: 14px;
           border-radius: 6px;
-          background: #ffffff;
-          border: 1px solid #d1d5db;
+          background: var(--surface);
+          border: 1px solid var(--border-strong);
         }
 
         .review-card-header {
@@ -62,7 +62,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           margin: 0;
           font-size: 13px;
           font-weight: 600;
-          color: #111827;
+          color: var(--foreground);
         }
 
         .review-card-meta :global(.star-rating) {
@@ -86,14 +86,14 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           display: block;
           margin-top: 6px;
           font-size: 11px;
-          color: #6b7280;
+          color: var(--muted);
         }
 
         .review-card-content {
           margin: 12px 0 0;
           font-size: 14px;
           line-height: 1.6;
-          color: #374151;
+          color: var(--foreground);
         }
       `}</style>
     </article>

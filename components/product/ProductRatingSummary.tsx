@@ -99,7 +99,7 @@ export default function ProductRatingSummary({
           }
 
           .product-rating-summary-pro .product-rating-empty {
-            color: #374151;
+            color: var(--foreground);
             font-size: 13px;
             font-weight: 600;
           }
@@ -111,7 +111,7 @@ export default function ProductRatingSummary({
           }
 
           .product-rating-summary-pro .product-rating-cta {
-            color: #9ca3af;
+            color: var(--muted-foreground);
             font-size: 12px;
           }
         `}</style>
@@ -171,7 +171,7 @@ export default function ProductRatingSummary({
         }
 
         .product-rating-summary-pro .product-rating-count {
-          color: #374151;
+          color: var(--foreground);
         }
 
         .verified-buyers-strip {
@@ -184,7 +184,7 @@ export default function ProductRatingSummary({
         }
 
         .product-rating-summary-pro .verified-buyers-strip {
-          border-top-color: #e5e7eb;
+          border-top-color: var(--border);
         }
 
         .verified-buyers-avatars {

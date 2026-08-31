@@ -105,7 +105,7 @@ export default function TrustBadgeStrip({
         .trust-strip-header-pro {
           margin-bottom: 12px;
           padding-bottom: 12px;
-          border-bottom: 1px solid #e5e7eb;
+          border-bottom: 1px solid var(--border);
         }
 
         .trust-strip-eyebrow {
@@ -118,7 +118,7 @@ export default function TrustBadgeStrip({
         }
 
         .trust-strip-eyebrow-pro {
-          color: #dc2626;
+          color: var(--error);
         }
 
         .trust-strip-title {
@@ -130,7 +130,7 @@ export default function TrustBadgeStrip({
         }
 
         .trust-strip-title-pro {
-          color: #111827;
+          color: var(--foreground);
           font-size: 15px;
           font-weight: 700;
         }
@@ -202,8 +202,8 @@ export default function TrustBadgeStrip({
         }
 
         .trust-pill-pro {
-          background: #ffffff;
-          border: 1px solid #e5e7eb;
+          background: var(--surface);
+          border: 1px solid var(--border);
           border-radius: 8px;
           box-shadow: none;
           opacity: 1;
@@ -211,24 +211,24 @@ export default function TrustBadgeStrip({
         }
 
         .trust-pill-pro:hover {
-          border-color: #fca5a5;
-          background: #fafafa;
+          border-color: var(--error-subtle);
+          background: var(--surface-muted);
           box-shadow: 0 0 0 1px rgba(252, 165, 165, 0.35);
           transform: translateY(-1px);
         }
 
         .trust-pill-pro .trust-pill-label {
-          color: #111827;
+          color: var(--foreground);
         }
 
         .trust-pill-pro .trust-pill-subtext {
-          color: #6b7280;
+          color: var(--muted);
         }
 
         .trust-pill-pro .trust-pill-icon {
-          background: #f9fafb;
-          border-color: #e5e7eb;
-          color: #525252;
+          background: var(--surface-muted);
+          border-color: var(--border);
+          color: var(--muted);
         }
 
         .trust-pill-icon {

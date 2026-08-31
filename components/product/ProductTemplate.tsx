@@ -220,7 +220,7 @@ export default function ProductTemplate({
         </div>
 
         <div className="min-w-0 bg-white p-4 text-neutral-900 shadow-sm sm:p-7 lg:p-8">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-neutral-400">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
             {categoryLabel}
             {platformLabel ? ` · ${platformLabel}` : ""}
           </p>

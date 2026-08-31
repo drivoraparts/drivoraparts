@@ -104,37 +104,37 @@ export function getConditionDisplay(
     case "brand-new":
       return {
         label: "Brand New",
-        color: "#22c55e",
-        background: "rgba(34, 197, 94, 0.15)",
-        border: "rgba(34, 197, 94, 0.4)",
+        color: "var(--success)",
+        background: "color-mix(in srgb, var(--success) 15%, transparent)",
+        border: "color-mix(in srgb, var(--success) 40%, transparent)",
       };
     case "used":
       return {
         label: "Used",
-        color: "#f97316",
-        background: "rgba(249, 115, 22, 0.15)",
-        border: "rgba(249, 115, 22, 0.4)",
+        color: "var(--accent)",
+        background: "var(--accent-subtle)",
+        border: "var(--accent-border)",
       };
     case "refurbished":
       return {
         label: "Refurbished",
-        color: "#3b82f6",
-        background: "rgba(59, 130, 246, 0.15)",
-        border: "rgba(59, 130, 246, 0.4)",
+        color: "var(--info)",
+        background: "var(--info-subtle)",
+        border: "color-mix(in srgb, var(--info) 40%, transparent)",
       };
     case "aftermarket-used":
       return {
         label: "Used",
-        color: "#f97316",
-        background: "rgba(249, 115, 22, 0.15)",
-        border: "rgba(249, 115, 22, 0.4)",
+        color: "var(--accent)",
+        background: "var(--accent-subtle)",
+        border: "var(--accent-border)",
       };
     case "aftermarket-mixed":
       return {
         label: "Aftermarket",
-        color: "#9ca3af",
-        background: "rgba(156, 163, 175, 0.12)",
-        border: "rgba(156, 163, 175, 0.35)",
+        color: "var(--muted)",
+        background: "var(--surface-muted)",
+        border: "var(--border-strong)",
       };
   }
 }

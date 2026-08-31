@@ -138,7 +138,7 @@ export default function ComparePage() {
                       type="button"
                       aria-label={`Remove ${product.name} from compare`}
                       onClick={() => removeFromCompare(product.id)}
-                      className="mb-2 text-xs font-semibold text-neutral-400 hover:text-accent-hover"
+                      className="mb-2 text-xs font-semibold text-muted hover:text-accent-hover"
                     >
                       ✕ Remove
                     </button>

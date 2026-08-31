@@ -182,7 +182,7 @@ export default function CustomerReviewsSection({
           padding: 0;
           border: none;
           background: none;
-          color: #111827;
+          color: var(--foreground);
           text-align: left;
           cursor: pointer;
         }
@@ -202,7 +202,7 @@ export default function CustomerReviewsSection({
           display: block;
           margin-top: 8px;
           font-size: 13px;
-          color: #6b7280;
+          color: var(--muted);
         }
 
         .reviews-panel {
@@ -215,12 +215,12 @@ export default function CustomerReviewsSection({
           gap: 10px;
           margin-bottom: 14px;
           padding-bottom: 12px;
-          border-bottom: 1px solid #d1d5db;
+          border-bottom: 1px solid var(--border-strong);
         }
 
         .reviews-summary-count {
           font-size: 13px;
-          color: #374151;
+          color: var(--foreground);
           font-weight: 600;
         }
 
@@ -234,7 +234,7 @@ export default function CustomerReviewsSection({
         .review-loading {
           margin: 0;
           font-size: 14px;
-          color: #6b7280;
+          color: var(--muted);
         }
 
         .review-load-more {
@@ -242,17 +242,17 @@ export default function CustomerReviewsSection({
           width: 100%;
           padding: 10px 14px;
           border-radius: 6px;
-          border: 1px solid #d1d5db;
-          background: #ffffff;
-          color: #111827;
+          border: 1px solid var(--border-strong);
+          background: var(--surface);
+          color: var(--foreground);
           font-size: 14px;
           font-weight: 600;
           cursor: pointer;
         }
 
         .review-load-more:hover {
-          border-color: #dc2626;
-          background: #fef2f2;
+          border-color: var(--error);
+          background: var(--error-subtle);
         }
       `}</style>
     </section>

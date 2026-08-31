@@ -15,7 +15,7 @@ import {
 import type { DashboardChartData } from "@/lib/analytics/chartTypes";
 
 const gridStroke = "rgba(0,0,0,0.08)";
-const axisStroke = "#6b7280";
+const axisStroke = "var(--muted)";
 const tooltipStyle = {
   backgroundColor: "rgba(10,10,10,0.95)",
   border: "1px solid rgba(255,255,255,0.12)",
@@ -67,9 +67,9 @@ export default function DashboardCharts({ data }: { data: DashboardChartData }) 
               <Line
                 type="monotone"
                 dataKey="revenue"
-                stroke="#ef4444"
+                stroke="var(--error)"
                 strokeWidth={3}
-                dot={{ fill: "#ef4444", r: 4 }}
+                dot={{ fill: "var(--error)", r: 4 }}
                 activeDot={{ r: 6 }}
               />
             </LineChart>
@@ -86,7 +86,7 @@ export default function DashboardCharts({ data }: { data: DashboardChartData }) 
               <XAxis dataKey="label" stroke={axisStroke} tick={{ fill: axisStroke, fontSize: 12 }} />
               <YAxis stroke={axisStroke} tick={{ fill: axisStroke, fontSize: 12 }} allowDecimals={false} />
               <Tooltip contentStyle={tooltipStyle} />
-              <Bar dataKey="orders" fill="#ef4444" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="orders" fill="var(--error)" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </ChartPanel>
@@ -106,9 +106,9 @@ export default function DashboardCharts({ data }: { data: DashboardChartData }) 
               <Line
                 type="monotone"
                 dataKey="views"
-                stroke="#60a5fa"
+                stroke="var(--info)"
                 strokeWidth={3}
-                dot={{ fill: "#60a5fa", r: 4 }}
+                dot={{ fill: "var(--info)", r: 4 }}
               />
             </LineChart>
           </ResponsiveContainer>
@@ -134,9 +134,9 @@ export default function DashboardCharts({ data }: { data: DashboardChartData }) 
               <Line
                 type="monotone"
                 dataKey="rate"
-                stroke="#22c55e"
+                stroke="var(--success)"
                 strokeWidth={3}
-                dot={{ fill: "#22c55e", r: 4 }}
+                dot={{ fill: "var(--success)", r: 4 }}
               />
             </LineChart>
           </ResponsiveContainer>
@@ -166,9 +166,9 @@ export default function DashboardCharts({ data }: { data: DashboardChartData }) 
                 tick={{ fill: axisStroke, fontSize: 11 }}
               />
               <Tooltip contentStyle={tooltipStyle} />
-              <Legend wrapperStyle={{ color: "#9ca3af" }} />
-              <Bar dataKey="views" name="Views" fill="#60a5fa" radius={[0, 4, 4, 0]} />
-              <Bar dataKey="cartAdds" name="Cart Adds" fill="#ef4444" radius={[0, 4, 4, 0]} />
+              <Legend wrapperStyle={{ color: "var(--muted-foreground)" }} />
+              <Bar dataKey="views" name="Views" fill="var(--info)" radius={[0, 4, 4, 0]} />
+              <Bar dataKey="cartAdds" name="Cart Adds" fill="var(--error)" radius={[0, 4, 4, 0]} />
             </BarChart>
           </ResponsiveContainer>
         )}

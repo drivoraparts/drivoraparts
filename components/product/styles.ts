@@ -11,8 +11,8 @@ export const glassCard: React.CSSProperties = {
 
 /** Light storefront panel — reviews, collapsible sections, etc. */
 export const proSurfaceCard: React.CSSProperties = {
-  background: "#f9fafb",
-  border: "1px solid #d1d5db",
+  background: "var(--surface-muted)",
+  border: "1px solid var(--border-strong)",
   borderRadius: "6px",
   boxShadow: "0 1px 2px rgba(15, 23, 42, 0.06)",
 };

@@ -16,7 +16,7 @@ export default function FooterContent() {
           <h2 className="mb-3 text-lg font-bold">
             Drivora<span className="text-accent-on-dark">Parts</span>
           </h2>
-          <CompanyAddress variant="summary" className="mb-3" />
+          <CompanyAddress variant="summary" tone="dark" className="mb-3" />
           <p className="text-xs text-muted-on-dark">{t("footerBrand")}</p>
         </div>
 

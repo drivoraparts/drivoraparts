@@ -57,7 +57,7 @@ export default function GlobalDrawer({
         <div className="flex flex-col gap-6 text-neutral-700">
           {sections.map((section) => (
             <div key={section.heading}>
-              <p className="mb-1 text-xs tracking-widest text-neutral-400">
+              <p className="mb-1 text-xs tracking-widest text-muted">
                 {section.heading}
               </p>
               <div className="flex flex-col">

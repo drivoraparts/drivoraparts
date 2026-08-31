@@ -14,7 +14,7 @@ import {
 } from "recharts";
 
 const gridStroke = "rgba(0,0,0,0.08)";
-const axisStroke = "#6b7280";
+const axisStroke = "var(--muted)";
 const tooltipStyle = {
   backgroundColor: "rgba(10,10,10,0.95)",
   border: "1px solid rgba(255,255,255,0.12)",
@@ -166,7 +166,7 @@ export default function AdvancedCharts() {
               <XAxis dataKey="time" stroke={axisStroke} tick={{ fill: axisStroke, fontSize: 11 }} />
               <YAxis stroke={axisStroke} tick={{ fill: axisStroke, fontSize: 12 }} allowDecimals={false} />
               <Tooltip contentStyle={tooltipStyle} />
-              <Line type="monotone" dataKey="users" stroke="#ef4444" strokeWidth={3} dot={{ r: 3 }} />
+              <Line type="monotone" dataKey="users" stroke="var(--error)" strokeWidth={3} dot={{ r: 3 }} />
             </LineChart>
           </ResponsiveContainer>
         </ChartPanel>
@@ -178,7 +178,7 @@ export default function AdvancedCharts() {
               <XAxis dataKey="stage" stroke={axisStroke} tick={{ fill: axisStroke, fontSize: 12 }} />
               <YAxis stroke={axisStroke} tick={{ fill: axisStroke, fontSize: 12 }} allowDecimals={false} />
               <Tooltip contentStyle={tooltipStyle} />
-              <Bar dataKey="count" fill="#22c55e" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="count" fill="var(--success)" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </ChartPanel>
@@ -201,7 +201,7 @@ export default function AdvancedCharts() {
                   tick={{ fill: axisStroke, fontSize: 10 }}
                 />
                 <Tooltip contentStyle={tooltipStyle} />
-                <Bar dataKey="velocity" fill="#60a5fa" radius={[0, 4, 4, 0]} />
+                <Bar dataKey="velocity" fill="var(--info)" radius={[0, 4, 4, 0]} />
               </BarChart>
             </ResponsiveContainer>
           )}
@@ -223,7 +223,7 @@ export default function AdvancedCharts() {
                   tick={{ fill: axisStroke, fontSize: 10 }}
                 />
                 <Tooltip contentStyle={tooltipStyle} />
-                <Bar dataKey="score" fill="#f59e0b" radius={[0, 4, 4, 0]} />
+                <Bar dataKey="score" fill="var(--warning)" radius={[0, 4, 4, 0]} />
               </BarChart>
             </ResponsiveContainer>
           )}

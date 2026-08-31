@@ -417,7 +417,7 @@ export default function AllProductsFeed({
               type="button"
               onClick={() => setQuery("")}
               aria-label="Clear search"
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-neutral-400 transition hover:text-neutral-700"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-muted transition hover:text-neutral-700"
             >
               ✕
             </button>

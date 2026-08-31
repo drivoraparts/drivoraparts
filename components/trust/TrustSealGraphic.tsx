@@ -24,8 +24,8 @@ export function TrustSealGraphic({
   // and dark backgrounds). Everything else inherits `color` from the parent
   // via currentColor, since this graphic renders on both dark (HomeTrustBadges,
   // TrustBadgeStrip dark variant) and light (TrustBadgeStrip pro variant) surfaces.
-  const ring = kind === "ssl" ? "#10b981" : "currentColor";
-  const iconColor = kind === "ssl" ? "#10b981" : "currentColor";
+  const ring = kind === "ssl" ? "var(--success)" : "currentColor";
+  const iconColor = kind === "ssl" ? "var(--success)" : "currentColor";
   const ringOpacity = kind === "ssl" ? 1 : 0.25;
 
   const glyph = (() => {

@@ -15,9 +15,11 @@ export default function ProductBreadcrumbs({
   return (
     <nav
       aria-label="Breadcrumb"
-      className="border-b border-neutral-300 bg-[#e5e7eb] px-4 py-3 sm:px-6"
+      className="border-b border-neutral-300 bg-[var(--border)] px-4 py-3 sm:px-6"
     >
-      <ol className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-1.5 text-[11px] font-medium uppercase tracking-[0.08em] text-neutral-500">
+      {/* text-muted, not neutral-500: this bar sits on --border (#DED9CF),
+          where neutral-500 measures 3.46:1 and fails AA. --muted is 5.11:1. */}
+      <ol className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-1.5 text-[11px] font-medium uppercase tracking-[0.08em] text-muted">
         <li>
           <Link href={routes.catalog} className="transition hover:text-neutral-900">
             Catalog

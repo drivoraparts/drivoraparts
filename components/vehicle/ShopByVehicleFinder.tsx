@@ -117,7 +117,7 @@ export default function ShopByVehicleFinder({
         <div>
           <label className="mb-1.5 block text-[11px] font-bold uppercase tracking-wide text-neutral-500">
             Engine
-            <span className="ml-1 font-medium normal-case text-neutral-400">
+            <span className="ml-1 font-medium normal-case text-muted">
               (optional)
             </span>
           </label>

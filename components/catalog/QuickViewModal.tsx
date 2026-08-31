@@ -150,7 +150,7 @@ export default function QuickViewModal({
                 </div>
 
                 <div className="mt-4 min-w-0 flex-1 sm:mt-0">
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wide text-muted">
                     {product.category}
                     {product.brand ? ` · ${product.brand}` : ""}
                   </p>

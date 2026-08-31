@@ -38,7 +38,7 @@ export default function ProductPrice({
     <span className={`inline-flex flex-wrap items-baseline gap-x-2 gap-y-0.5 ${className}`}>
       {showCompare ? (
         <span
-          className={`font-medium text-gray-400 line-through decoration-gray-500/80 ${sizes.compare}`}
+          className={`font-medium text-muted line-through decoration-muted/70 ${sizes.compare}`}
           aria-label={`Competitor price ${compareAtPrice}`}
         >
           <Price usd={compareAtPrice} />

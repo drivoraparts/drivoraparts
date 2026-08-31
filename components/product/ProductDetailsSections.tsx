@@ -176,7 +176,7 @@ function FitmentLogistics({
                   key={item}
                   style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}
                 >
-                  <span aria-hidden style={{ color: "#059669", flexShrink: 0 }}>
+                  <span aria-hidden style={{ color: "var(--success)", flexShrink: 0 }}>
                     ✓
                   </span>
                   <TranslatedText as="span">{item}</TranslatedText>

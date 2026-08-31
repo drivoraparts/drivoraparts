@@ -35,15 +35,15 @@ const TONE_MAP: Record<string, StatusTone> = {
   delivery_exception: "negative",
 };
 
-// Matches GitHub's own Primer status colors (success/attention/danger/accent)
-// so "in progress" reads as the exact same yellow as a spinning GitHub Actions
-// check, and "resolved" reads as the exact same green as a passing one.
+// Status tints now come from the DrivoraParts palette rather than GitHub's
+// Primer set, so admin badges read as the same brand as the storefront. Each
+// pairs a *-subtle fill with its full-strength token for the text.
 const TONE_CLASSES: Record<StatusTone, string> = {
-  positive: "bg-[#dafbe1] text-[#1a7f37]",
-  warning: "bg-[#fff8c5] text-[#9a6700]",
-  info: "bg-[#ddf4ff] text-[#0969da]",
-  negative: "bg-[#ffebe9] text-[#cf222e]",
-  neutral: "bg-zinc-100 text-zinc-600",
+  positive: "bg-success-subtle text-success",
+  warning: "bg-warning-subtle text-warning",
+  info: "bg-info-subtle text-info",
+  negative: "bg-error-subtle text-error",
+  neutral: "bg-surface-muted text-muted",
 };
 
 export function statusBadgeClass(value: string): string {

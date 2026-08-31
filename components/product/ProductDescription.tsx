@@ -43,7 +43,7 @@ export default function ProductDescription({ text }: ProductDescriptionProps) {
           padding: 0,
           border: "none",
           background: "none",
-          color: "#e60000",
+          color: "var(--error)",
           fontWeight: 600,
           cursor: "pointer",
           fontSize: "14px",

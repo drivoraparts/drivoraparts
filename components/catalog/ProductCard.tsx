@@ -58,7 +58,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </h3>
 
         <p className="mt-1 text-xs text-neutral-500">{product.condition}</p>
-        <p className="mt-1 text-xs text-neutral-400">{product.location}</p>
+        <p className="mt-1 text-xs text-muted">{product.location}</p>
 
         <div className="mt-3 flex items-center justify-between gap-2">
           <ProductPrice
@@ -66,7 +66,7 @@ export default function ProductCard({ product }: { product: Product }) {
             compareAtPrice={product.compareAtPrice}
             size="sm"
           />
-          <span className="text-[10px] uppercase text-neutral-400">
+          <span className="text-[10px] uppercase text-muted">
             {product.category}
           </span>
         </div>

@@ -15,7 +15,7 @@ export default function Toast() {
           key={toast.id}
           type="button"
           onClick={() => dismissToast(toast.id)}
-          className="rounded-lg bg-[#111827] border border-white/10 px-4 py-3 text-sm text-white shadow-lg"
+          className="rounded-lg bg-background-dark border border-border-on-dark px-4 py-3 text-sm text-white shadow-lg"
         >
           {toast.text}
         </button>

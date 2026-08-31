@@ -151,9 +151,9 @@ function formatCalendarDate(dateOnly: string) {
 type Tone = "green" | "pending" | "red" | "neutral";
 
 const TONE_STYLES: Record<Tone, { bg: string; text: string; border: string }> = {
-  green: { bg: "bg-[#1a7f37]", text: "text-[#1a7f37]", border: "border-[#1a7f37]" },
-  pending: { bg: "bg-[#9a6700]", text: "text-[#9a6700]", border: "border-[#9a6700]" },
-  red: { bg: "bg-[#cf222e]", text: "text-[#cf222e]", border: "border-[#cf222e]" },
+  green: { bg: "bg-success", text: "text-success", border: "border-success" },
+  pending: { bg: "bg-warning", text: "text-warning", border: "border-warning" },
+  red: { bg: "bg-error", text: "text-error", border: "border-error" },
   neutral: { bg: "bg-neutral-300", text: "text-neutral-400", border: "border-neutral-300" },
 };
 
@@ -379,7 +379,7 @@ export default function TrackOrderForm() {
 
           {result.notice && (
             <p className="mt-2.5 flex items-center gap-1.5 rounded-lg border border-amber-200 bg-amber-50 px-3.5 py-2 text-sm font-medium text-amber-800">
-              <SpinnerIcon className="h-3.5 w-3.5 text-[#9a6700]" />
+              <SpinnerIcon className="h-3.5 w-3.5 text-warning" />
               {result.notice.label}
             </p>
           )}
@@ -523,7 +523,7 @@ export default function TrackOrderForm() {
                 if (groupSteps.length === 0) return null;
                 return (
                   <div key={group} className="mt-3 first:mt-2">
-                    <p className="text-[10px] font-semibold uppercase tracking-wide text-neutral-400">
+                    <p className="text-[10px] font-semibold uppercase tracking-wide text-muted">
                       {GROUP_LABELS[group]}
                     </p>
                     <ol className="mt-1.5">
@@ -543,7 +543,7 @@ export default function TrackOrderForm() {
                             <div className={isLast ? "pb-0.5" : "pb-4"}>
                               <p
                                 className={`text-sm font-medium ${
-                                  step.state === "upcoming" ? "text-neutral-400" : "text-neutral-900"
+                                  step.state === "upcoming" ? "text-muted" : "text-neutral-900"
                                 }`}
                               >
                                 {step.label}
