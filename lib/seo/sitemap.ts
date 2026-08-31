@@ -95,6 +95,12 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     ...staticPaths.map(({ path, priority }) => entry(toUrl(path), priority)),
     ...categoryEntries,
     ...brandEntries,
+    // Omitting these was a silent regression: vehicleEntries was built above
+    // but never spread in, so the ten vehicle hubs were absent from the
+    // sitemap while the /vehicles index was present. Nothing errors on an
+    // unused local, so the build stayed green and Google was never told the
+    // pages existed.
+    ...vehicleEntries,
     ...enginePlatformEntries,
     ...productEntries,
     ...policyEntries,
