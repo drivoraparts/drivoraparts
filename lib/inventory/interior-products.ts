@@ -37,6 +37,7 @@ Worldwide Shipping Available`;
 export const interiorProducts: Product[] = [
   {
     id: 161,
+    createdAt: 1782544602000,
     name: "Ford F-150 Interior Upgrade Kit",
     category: "interior",
     brand: "ford",
@@ -61,6 +62,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 162,
+    createdAt: 1782544602000,
     name: "Ford Mustang S550 Katzkin Leather Seat Kit",
     category: "interior",
     brand: "ford",
@@ -91,6 +93,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 163,
+    createdAt: 1782544602000,
     name: "Ford Ranger Interior Upgrade Kit",
     category: "interior",
     brand: "ford",
@@ -122,6 +125,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 164,
+    createdAt: 1782544602000,
     name: "Honda Civic FK8 Interior Upgrade Kit",
     category: "interior",
     brand: "honda",
@@ -146,6 +150,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 165,
+    createdAt: 1782544602000,
     name: "Honda Civic FK8 Type R Interior Upgrade Kit",
     category: "interior",
     brand: "honda",
@@ -170,6 +175,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 166,
+    createdAt: 1782544602000,
     name: "Nissan 350Z MOMO MOD 07 Steering Wheel",
     category: "interior",
     brand: "nissan",
@@ -209,6 +215,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 167,
+    createdAt: 1782544602000,
     name: "Nissan 370Z Interior Upgrade Kit",
     category: "interior",
     brand: "nissan",
@@ -239,6 +246,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 168,
+    createdAt: 1782544602000,
     name: "Subaru WRX STI Interior Performance Kit",
     category: "interior",
     brand: "subaru",
@@ -274,6 +282,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 169,
+    createdAt: 1782544602000,
     name: "Toyota GR Supra A90 Interior Upgrade Kit",
     category: "interior",
     brand: "toyota",
@@ -303,6 +312,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 170,
+    createdAt: 1782544602000,
     name: "Toyota Hilux Interior Upgrade Kit",
     category: "interior",
     brand: "toyota",
@@ -327,6 +337,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 171,
+    createdAt: 1782544602000,
     name: "Toyota Tacoma Dashboard Cover Kit",
     category: "interior",
     brand: "toyota",
@@ -351,6 +362,7 @@ export const interiorProducts: Product[] = [
   },
   {
     id: 172,
+    createdAt: 1782544602000,
     name: "Volkswagen Golf GTI MK7 Interior Upgrade Kit",
     category: "interior",
     brand: "volkswagen",
