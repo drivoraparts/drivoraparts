@@ -131,6 +131,8 @@ export const brands: Brand[] = [
   { slug: "tough-dog", name: "Tough Dog", category: "suspension" },
 
   // Electronics
+  // OBS 7.3 Power Stroke sensors carry Ford / Motorcraft part numbers.
+  { slug: "ford", name: "Ford", category: "electronics" },
   { slug: "aem", name: "AEM", category: "electronics" },
   { slug: "aeromotive", name: "Aeromotive", category: "electronics" },
   { slug: "holley", name: "Holley", category: "electronics" },

@@ -4263,6 +4263,459 @@ Shipping
 Worldwide Shipping Available`,
   },
 
+  /* --- OBS 7.3 sensors, electrical and fuel-system service parts ---
+     Part numbers and prices verified against diesel specialists. Prices are
+     the anchor applyPublicPrices() strikes through, so each is a real current
+     street price and the shelf figure undercuts it. Images are the placeholder:
+     no CC-licensed photograph of these specific components exists, and supplier
+     photography is their copyright. */
+  {
+    id: 2120,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Glow Plug Set of 8 — Motorcraft ZD-30",
+    category: "engine",
+    brand: "ford",
+    price: 193.08,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Motorcraft ZD-30 · MC3Z-12A342-F",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from over-voltage or a failed glow plug controller.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Complete set of eight Motorcraft ZD-30 glow plugs for the 7.3L Power Stroke.
+
+Hard starting below about 50°F, white smoke on a cold start, and a rough first minute are the classic signs of failed glow plugs. They fail individually, but a truck with two or three gone usually has the rest close behind, so they are replaced as a set.
+
+These are the Motorcraft ZD-30, the correct plug for the 7.3 Power Stroke. Check the glow plug relay at the same time — a failed relay presents identically and replacing plugs will not fix it.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Quantity: Set of 8
+Manufacturer: Motorcraft
+Manufacturer part number: ZD-30 / MC3Z-12A342-F
+Condition: New
+
+Highlights
+
+Motorcraft — the factory-specified glow plug
+Complete set of eight
+Check the relay at the same time; the symptoms are identical
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2121,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Camshaft Position Sensor (CPS) — Motorcraft",
+    category: "electronics",
+    brand: "ford",
+    price: 51.3,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Motorcraft F4TZ-12K073-C",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. This is the OBS-specification sensor; later 1997–2003 trucks use F7TZ-12K073-A. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and consequential costs from a roadside failure.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Motorcraft camshaft position sensor for the OBS 7.3L Power Stroke.
+
+The CPS is the part every 7.3 owner is told to carry a spare of, and the advice is sound. When it fails the engine simply stops — often without warning and sometimes while driving — and it will not restart until the sensor is replaced. Failures are frequently heat-related, so a truck that dies warm and restarts an hour later is the textbook case.
+
+It is a ten-minute job at the front of the engine, which is why keeping a spare in the glovebox is the standard recommendation on this platform.
+
+This is the OBS-specification sensor. Later 1997–2003 trucks moved to F7TZ-12K073-A; confirm which your truck takes before ordering.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer: Motorcraft
+Manufacturer part number: F4TZ-12K073-C
+Condition: New
+
+Highlights
+
+The single most common no-start cause on this engine
+Motorcraft, not a generic substitute
+Worth carrying a spare — failures are sudden and total
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2122,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Control Pressure (ICP) Sensor — Ford OE",
+    category: "electronics",
+    brand: "ford",
+    price: 169.1,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford YC3Z-9F838-A",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated engine oil.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Ford OE injection control pressure sensor for the 7.3L Power Stroke.
+
+The ICP sensor reports high-pressure oil to the PCM, which uses it to control injection. On a HEUI engine that makes it central to how the truck runs: a failing ICP causes surging, a miss under load, hard starting, or a bucking idle, and it commonly sets codes that look like fuel-system faults.
+
+A leaking sensor is the usual failure — oil wicks up into the connector and corrodes it. Inspect the pigtail when replacing the sensor; a corroded connector will fail a new sensor quickly.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Ford OE
+Manufacturer part number: YC3Z-9F838-A
+Condition: New
+
+Highlights
+
+Ford OE rather than an aftermarket substitute
+Inspect the connector pigtail at the same time — oil intrusion kills both
+Symptoms often mimic a fuel-system fault
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2123,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Pressure Regulator (IPR) Valve — Alliant AP63402",
+    category: "engine",
+    brand: "ford",
+    price: 250,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63402",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated engine oil.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Alliant Power injection pressure regulator for the OBS 7.3L Power Stroke.
+
+The IPR valve controls how much high-pressure oil the HPOP delivers to the injectors. It works alongside the ICP sensor, and the two produce overlapping symptoms — surging, a miss, hard starting, or an engine that will not build injection control pressure at all.
+
+A worn IPR is a common cause of a no-start on a truck whose HPOP is actually fine, which is why it is worth ruling out before condemning the pump.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63402
+Condition: New
+
+Highlights
+
+Rule this out before condemning the high-pressure oil pump
+Works in concert with the ICP sensor — symptoms overlap
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2124,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Glow Plug Relay — Alliant AP63405",
+    category: "electronics",
+    brand: "ford",
+    price: 65,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63405",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Alliant Power glow plug relay for the 7.3L Power Stroke.
+
+The relay switches power to all eight glow plugs. When it fails the plugs never energise, and the truck behaves exactly as though every plug has burned out — hard cold starting, white smoke, a rough first minute.
+
+That identical presentation is why the relay is worth testing before buying a set of eight plugs. It is also the cheaper part by a wide margin, so it is the sensible place to start.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63405
+Condition: New
+
+Highlights
+
+Test this before replacing eight glow plugs — the symptoms are identical
+Considerably cheaper than a full plug set
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2125,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Under Valve Cover Harness Kit",
+    category: "electronics",
+    brand: "ford",
+    price: 504.9,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "UVCH kit — OBS 7.3L Power Stroke",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: [
+      "Under valve cover harnesses",
+      "Valve cover gaskets",
+    ],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Under valve cover harness kit for the OBS 7.3L Power Stroke.
+
+The under-valve-cover harness carries the signal to each injector, and it lives in hot engine oil for its entire life. The connectors eventually go high-resistance or break outright, which produces a dead-miss on one cylinder that no amount of injector work will fix.
+
+A truck that misfires on a single cylinder, and keeps misfiring after the injector has been swapped, is very often a harness fault rather than an injector fault. The kit includes the valve cover gaskets, which have to come off either way.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Condition: New
+
+Highlights
+
+The usual cause of a single-cylinder miss that survives an injector swap
+Includes the valve cover gaskets needed for the job
+Replaces connectors that have spent their life in hot oil
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2126,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Exhaust Back Pressure (EBP) Sensor — Alliant AP63403",
+    category: "electronics",
+    brand: "ford",
+    price: 84.3,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63403",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Alliant Power exhaust back pressure sensor for the 7.3L Power Stroke.
+
+The EBP sensor feeds the exhaust back pressure valve, which the engine uses to warm itself faster in cold weather. The sensor and its tube are exposed to exhaust soot and eventually clog or fail, which typically shows up as a check engine light, poor cold-weather warm-up, or an EBP-related code.
+
+The tube in front of the sensor is worth clearing whenever the sensor is replaced — a blocked tube will make a new sensor read just as badly as the old one.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63403
+Condition: New
+
+Highlights
+
+Clear the sensor tube at the same time — soot blockage mimics sensor failure
+Alliant Power, a recognised diesel OE supplier
+Common source of an EBP fault code
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2127,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Engine Oil Temperature (EOT) Sensor — Alliant AP63436",
+    category: "electronics",
+    brand: "ford",
+    price: 49.19,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63436",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Alliant Power engine oil temperature sensor for the 7.3L Power Stroke.
+
+On a HEUI engine oil temperature is not a comfort reading — the PCM uses it to decide injection timing and glow plug behaviour, because cold oil behaves very differently to hot oil in the injectors. A failed EOT sensor therefore affects how the engine actually runs, not just what a gauge says.
+
+Symptoms are usually a check engine light, poor cold-start behaviour, or glow plugs cycling when they should not.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63436
+Condition: New
+
+Highlights
+
+Feeds injection timing and glow plug strategy, not just a gauge
+Affects cold-start behaviour when it fails
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2128,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Engine Oil Pressure Sensor — Alliant AP63435",
+    category: "electronics",
+    brand: "ford",
+    price: 61.32,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63435",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Alliant Power engine oil pressure sensor for the 7.3L Power Stroke.
+
+Reports engine oil pressure for the dash gauge. A failed sensor is a common cause of a gauge that reads zero, pegs high, or swings erratically on a truck whose oil pressure is in fact perfectly normal.
+
+Before condemning an engine on a bad gauge reading, this sensor is the cheap thing to eliminate — mechanical pressure at the port tells you which of the two is actually at fault.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63435
+Condition: New
+
+Highlights
+
+Common cause of an alarming but false oil pressure reading
+Cheap to eliminate before suspecting the engine
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
   {
     id: CHECKOUT_TEST_PRODUCT_ID,
     name: "Checkout Test Part",
