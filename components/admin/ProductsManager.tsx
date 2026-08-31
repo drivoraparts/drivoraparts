@@ -251,7 +251,7 @@ export default function ProductsManager({
                 <td className="p-4">${product.price.toFixed(2)}</td>
                 <td className="p-4">
                   {product.stock === false ? (
-                    <span className="text-red-600">Out of stock</span>
+                    <span className="text-accent">Out of stock</span>
                   ) : (
                     <span className="text-emerald-600">In stock</span>
                   )}
@@ -262,14 +262,14 @@ export default function ProductsManager({
                   <div className="flex gap-3">
                     <button
                       onClick={() => openEdit(product)}
-                      className="font-semibold text-zinc-700 hover:text-red-700"
+                      className="font-semibold text-zinc-700 hover:text-accent-hover"
                     >
                       Edit
                     </button>
                     <button
                       onClick={() => deleteProduct(product)}
                       disabled={deletingId === product.id}
-                      className="font-semibold text-red-600 hover:text-red-800 disabled:opacity-50"
+                      className="font-semibold text-accent hover:text-red-800 disabled:opacity-50"
                     >
                       {deletingId === product.id ? "Removing…" : "Delete"}
                     </button>

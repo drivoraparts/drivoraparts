@@ -29,7 +29,7 @@ export default function Policy({
 }) {
   return (
     <article className="text-neutral-900">
-      <h1 className="inline-block text-3xl md:text-4xl font-bold border-b-2 border-red-600 pb-2">
+      <h1 className="inline-block text-3xl md:text-4xl font-bold border-b-2 border-accent pb-2">
         {title}
       </h1>
 

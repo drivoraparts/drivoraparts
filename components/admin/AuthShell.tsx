@@ -118,9 +118,9 @@ export default function AuthShell({ title, subtitle, children, footer }: AuthShe
       <div className="relative w-full max-w-md">
         <div className="mb-8 text-center">
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-zinc-200 bg-white shadow-sm">
-            <span className="text-lg font-bold text-red-600">D</span>
+            <span className="text-lg font-bold text-accent">D</span>
           </div>
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-red-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-accent">
             DrivoraParts
           </p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-900">{title}</h1>
@@ -143,7 +143,7 @@ export function AuthFooterLink({
   children: ReactNode;
 }) {
   return (
-    <Link href={href} className="font-medium text-red-600 transition hover:text-red-500">
+    <Link href={href} className="font-medium text-accent transition hover:text-accent">
       {children}
     </Link>
   );

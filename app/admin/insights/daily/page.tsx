@@ -73,7 +73,7 @@ export default async function AdminDailyInsightsPage() {
                 <li key={row.productId} className="rounded-lg border border-zinc-100 p-3">
                   <p className="font-medium">{row.name}</p>
                   <p className="mt-1 text-zinc-600">{row.reason}</p>
-                  <p className="mt-1 text-red-600">~${row.estimatedLoss} at risk</p>
+                  <p className="mt-1 text-accent">~${row.estimatedLoss} at risk</p>
                 </li>
               ))
             )}
@@ -88,7 +88,7 @@ export default async function AdminDailyInsightsPage() {
             {daily.trending.slice(0, 5).map((p) => (
               <li key={p.productId} className="flex justify-between gap-3">
                 <span>{p.name}</span>
-                <span className="text-red-600">{p.viralScore}</span>
+                <span className="text-accent">{p.viralScore}</span>
               </li>
             ))}
           </ul>
@@ -127,7 +127,7 @@ export default async function AdminDailyInsightsPage() {
         <h2 className="mb-4 text-xl font-bold">Action Priority Matrix</h2>
         <div className="grid gap-6 lg:grid-cols-3 text-sm">
           <div>
-            <h3 className="mb-2 font-semibold text-red-600">High Impact</h3>
+            <h3 className="mb-2 font-semibold text-accent">High Impact</h3>
             <ul className="space-y-2">
               {actions.highImpact.slice(0, 4).map((a, i) => (
                 <li key={i}>{a.action}{a.productName ? `: ${a.productName}` : ""}</li>

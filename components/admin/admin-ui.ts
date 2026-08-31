@@ -23,7 +23,7 @@ export const adminUi = {
     "sticky top-0 z-20 flex h-16 items-center justify-between border-b border-zinc-200 bg-white/95 px-6 lg:px-8",
   shell: "mx-auto w-full max-w-screen-2xl px-6 py-8 lg:px-8",
   shellHeader: "mb-8 flex flex-col gap-4 border-b border-zinc-200 pb-6 sm:flex-row sm:items-center sm:justify-between",
-  kicker: "text-sm font-medium uppercase tracking-widest text-red-600",
+  kicker: "text-sm font-medium uppercase tracking-widest text-accent",
   title: "text-3xl font-semibold tracking-tight text-zinc-900",
   card: "rounded-xl border border-zinc-200 bg-white p-6 shadow-sm",
   cardCompact: "rounded-xl border border-zinc-200 bg-white p-5 shadow-sm",
@@ -33,15 +33,15 @@ export const adminUi = {
   statHint: "mt-2 text-xs text-zinc-600",
   navLink:
     "flex w-full items-center rounded-lg px-3 py-2.5 text-left text-sm font-medium transition",
-  navLinkActive: "bg-red-50 text-red-700 ring-1 ring-red-200",
+  navLinkActive: "bg-accent-subtle text-accent-hover ring-1 ring-accent-border",
   navLinkIdle: "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900",
   input:
-    "w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-zinc-900 outline-none transition focus:border-red-400 focus:ring-2 focus:ring-red-100",
+    "w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-zinc-900 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent-subtle",
   inputDisabled: "w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-zinc-600",
   buttonPrimary:
-    "rounded-xl bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-500 disabled:opacity-60",
+    "rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover disabled:opacity-60",
   buttonSecondary:
-    "rounded-xl border border-zinc-300 bg-white px-5 py-3 text-sm font-semibold text-zinc-700 transition hover:border-red-300 hover:text-red-700 disabled:opacity-60",
+    "rounded-xl border border-zinc-300 bg-white px-5 py-3 text-sm font-semibold text-zinc-700 transition hover:border-accent-border hover:text-accent-hover disabled:opacity-60",
   tableHead: "border-b border-zinc-200 text-zinc-600",
   tableRow: "border-b border-zinc-100",
   muted: "text-sm text-zinc-600",

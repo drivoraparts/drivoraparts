@@ -18,7 +18,7 @@ export default function ReturnsPage() {
         Returns must be authorized before you ship anything back to us. Tell us your
         order ID and the reason for the return below, and we&apos;ll follow up with
         return instructions if it&apos;s approved. Full details are in our{" "}
-        <Link href="/policies/refund-policy" className="text-red-600 hover:text-red-700">
+        <Link href="/policies/refund-policy" className="text-accent hover:text-accent-hover">
           Returns &amp; Refund Policy
         </Link>
         .

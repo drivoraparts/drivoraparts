@@ -66,8 +66,8 @@ export default function GlobalHeader({
     <header
       className={`fixed inset-x-0 top-0 z-[9999] box-border w-full max-w-full overflow-x-hidden border-b transition-all duration-300 ${
         scrolled
-          ? "border-neutral-300 bg-[#e5e7eb]/95 py-2.5 shadow-md backdrop-blur-xl"
-          : "border-neutral-300 bg-[#e5e7eb] py-4 shadow-sm"
+          ? "border-border bg-chrome/95 py-2.5 shadow-md backdrop-blur-xl"
+          : "border-border bg-chrome py-4 shadow-sm"
       }`}
     >
       <div className="mx-auto flex w-full min-w-0 max-w-full items-center justify-between gap-2 px-4 text-neutral-900 sm:px-6">
@@ -75,17 +75,17 @@ export default function GlobalHeader({
           href="/"
           className="min-w-0 shrink text-base font-bold tracking-wide text-neutral-900 sm:text-lg sm:tracking-widest"
         >
-          Drivora<span className="text-red-600">Parts</span>
+          Drivora<span className="text-accent">Parts</span>
         </Link>
 
-        <div className="hidden flex-1 px-4 text-center text-xs tracking-[0.3em] text-neutral-500 md:block">
+        <div className="hidden flex-1 px-4 text-center text-xs tracking-[0.3em] text-muted md:block">
           {t("headerTagline")}
         </div>
 
         <div className="flex shrink-0 items-center gap-3 pr-0.5 text-sm sm:gap-6">
           <nav
             aria-label="Primary"
-            className="hidden items-center gap-5 text-sm text-neutral-600 xl:flex"
+            className="hidden items-center gap-5 text-sm text-muted xl:flex"
           >
             {NAV_LINKS.map((link) => (
               <Link
@@ -98,7 +98,7 @@ export default function GlobalHeader({
             ))}
             <a
               href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
-              className="text-red-600 transition hover:text-red-700"
+              className="text-accent transition hover:text-accent-hover"
             >
               {COMPANY_SUPPORT_EMAIL}
             </a>
@@ -120,7 +120,7 @@ export default function GlobalHeader({
           >
             ♡
             {mounted && wishlistCount > 0 ? (
-              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-xs font-bold text-white">
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-xs font-bold text-white">
                 {wishlistCount}
               </span>
             ) : null}
@@ -133,7 +133,7 @@ export default function GlobalHeader({
           >
             🛒
             {mounted && itemCount > 0 ? (
-              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-xs font-bold text-white">
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-xs font-bold text-white">
                 {itemCount}
               </span>
             ) : null}
@@ -150,7 +150,7 @@ export default function GlobalHeader({
       </div>
 
       {searchOpen ? (
-        <div className="border-t border-neutral-300 bg-[#e5e7eb] px-4 py-3 sm:px-6">
+        <div className="border-t border-border bg-chrome px-4 py-3 sm:px-6">
           <form
             onSubmit={submitSearch}
             role="search"
@@ -164,7 +164,7 @@ export default function GlobalHeader({
                 onChange={(e) => setSearchValue(e.target.value)}
                 placeholder="Search parts, brands, categories…"
                 aria-label="Search products"
-                className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 pr-8 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+                className="w-full rounded-lg border border-border bg-white px-3 py-2 pr-8 text-sm text-neutral-900 placeholder:text-muted focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
               />
               {searchValue ? (
                 <button
@@ -174,7 +174,7 @@ export default function GlobalHeader({
                     searchInputRef.current?.focus();
                   }}
                   aria-label="Clear search"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 text-neutral-400 transition hover:text-neutral-700"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-muted transition hover:text-neutral-700"
                 >
                   ✕
                 </button>
@@ -182,7 +182,7 @@ export default function GlobalHeader({
             </div>
             <button
               type="submit"
-              className="shrink-0 rounded-lg bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-red-500"
+              className="shrink-0 rounded-lg bg-accent px-4 py-2 text-sm font-bold text-white transition hover:bg-accent-hover"
             >
               Search
             </button>
@@ -190,14 +190,14 @@ export default function GlobalHeader({
         </div>
       ) : null}
 
-      <div className="mt-2 hidden items-center justify-center gap-3 px-4 text-[11px] text-neutral-500 sm:px-6 md:flex xl:hidden">
+      <div className="mt-2 hidden items-center justify-center gap-3 px-4 text-[11px] text-muted sm:px-6 md:flex xl:hidden">
         {NAV_LINKS.map((link) => (
           <Link key={link.href} href={link.href} className="transition hover:text-neutral-900">
             {link.label}
           </Link>
         ))}
         <span aria-hidden="true">·</span>
-        <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`} className="text-red-600 hover:text-red-700">
+        <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`} className="text-accent hover:text-accent-hover">
           {COMPANY_SUPPORT_EMAIL}
         </a>
       </div>

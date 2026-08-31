@@ -12,7 +12,7 @@ export default function HomeCategoryGrid() {
           key={cat.slug}
           href={routes.category(cat.slug)}
           prefetch={false}
-          className="touch-manipulation rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition-colors hover:border-red-500 hover:bg-white active:bg-red-50"
+          className="touch-manipulation rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition-colors hover:border-accent hover:bg-white active:bg-accent-subtle"
         >
           <p className="font-semibold text-neutral-900">{cat.name}</p>
           <p className="mt-1 text-xs leading-snug text-neutral-500">

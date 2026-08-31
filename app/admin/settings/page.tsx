@@ -90,7 +90,7 @@ export default function AdminSettingsPage() {
           <Link
             key={section.href}
             href={section.href}
-            className={`${adminUi.card} transition hover:border-red-200 hover:shadow-md`}
+            className={`${adminUi.card} transition hover:border-accent-border hover:shadow-md`}
           >
             <h2 className="text-lg font-semibold text-zinc-900">{section.title}</h2>
             <p className={`mt-2 ${adminUi.muted}`}>{section.description}</p>

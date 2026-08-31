@@ -32,7 +32,7 @@ export default function HomeStatementBanner() {
         <Link
           href={routes.all}
           prefetch={false}
-          className="mt-9 inline-block touch-manipulation rounded-full bg-red-600 px-10 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-500 active:bg-red-700"
+          className="mt-9 inline-block touch-manipulation rounded-full bg-accent px-10 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-hover active:bg-accent-active"
         >
           Start Browsing
         </Link>

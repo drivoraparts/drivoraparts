@@ -58,7 +58,7 @@ function InstallationResourcesBlock({
               href={resources.guideUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-red-600 underline hover:text-red-700"
+              className="text-accent underline hover:text-accent-hover"
             >
               View guide
             </a>
@@ -74,7 +74,7 @@ function InstallationResourcesBlock({
               href={resources.videoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-red-600 underline hover:text-red-700"
+              className="text-accent underline hover:text-accent-hover"
             >
               Watch video
             </a>
@@ -275,12 +275,12 @@ function DetailTabs({
                 isPro
                   ? `shrink-0 whitespace-nowrap rounded-t-md px-3 py-2.5 text-sm font-bold transition-colors ${
                       isActive
-                        ? "border-b-2 border-red-600 text-neutral-900"
+                        ? "border-b-2 border-accent text-neutral-900"
                         : "border-b-2 border-transparent text-neutral-500 hover:text-neutral-800"
                     }`
                   : `shrink-0 whitespace-nowrap rounded-t-md px-3 py-2.5 text-sm font-bold transition-colors ${
                       isActive
-                        ? "border-b-2 border-red-500 text-white"
+                        ? "border-b-2 border-accent text-white"
                         : "border-b-2 border-transparent text-white/50 hover:text-white/80"
                     }`
               }

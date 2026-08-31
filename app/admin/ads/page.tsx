@@ -79,7 +79,7 @@ export default function AdminAdsPage() {
             type="button"
             onClick={generate}
             disabled={loading}
-            className="rounded-lg bg-red-600 px-5 py-2 text-sm font-semibold disabled:opacity-60"
+            className="rounded-lg bg-accent px-5 py-2 text-sm font-semibold disabled:opacity-60"
           >
             {loading ? "Generating…" : "Generate Ads"}
           </button>
@@ -87,7 +87,7 @@ export default function AdminAdsPage() {
             <button
               type="button"
               onClick={downloadPack}
-              className="rounded-lg border border-zinc-200 px-5 py-2 text-sm font-semibold hover:border-red-500/40"
+              className="rounded-lg border border-zinc-200 px-5 py-2 text-sm font-semibold hover:border-accent/40"
             >
               Download Ad Pack
             </button>

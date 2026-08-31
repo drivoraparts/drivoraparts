@@ -47,7 +47,7 @@ const sections = [
 export default function PoliciesPage() {
   return (
     <div className="text-neutral-900">
-      <h1 className="mb-4 inline-block border-b-2 border-red-600 pb-2 text-3xl font-bold md:text-4xl">
+      <h1 className="mb-4 inline-block border-b-2 border-accent pb-2 text-3xl font-bold md:text-4xl">
         Policies
       </h1>
       <p className="mb-10 text-sm text-neutral-500">
@@ -56,14 +56,14 @@ export default function PoliciesPage() {
 
       {sections.map((section) => (
         <div key={section.title} className="mb-10">
-          <h2 className="mb-4 text-xl text-red-600">{section.title}</h2>
+          <h2 className="mb-4 text-xl text-accent">{section.title}</h2>
 
           <div className="grid gap-3">
             {section.items.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-xl border border-neutral-200 bg-white p-4 transition hover:border-red-300 hover:bg-red-50"
+                className="rounded-xl border border-neutral-200 bg-white p-4 transition hover:border-accent-border hover:bg-accent-subtle"
               >
                 {item.name}
               </Link>

@@ -52,12 +52,12 @@ export default function NewsletterSignup() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@example.com"
         aria-label="Email address"
-        className="w-full min-w-0 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 outline-none focus:border-red-500"
+        className="w-full min-w-0 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 outline-none focus:border-accent"
       />
       <button
         type="submit"
         disabled={submitting}
-        className="shrink-0 rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-500 disabled:opacity-60"
+        className="shrink-0 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent-hover disabled:opacity-60"
       >
         {submitting ? "Joining..." : "Subscribe"}
       </button>

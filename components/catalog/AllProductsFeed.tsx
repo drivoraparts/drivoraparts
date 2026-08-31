@@ -409,7 +409,7 @@ export default function AllProductsFeed({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search parts..."
-            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 pr-8 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 pr-8 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
             aria-label="Search products"
           />
           {query ? (
@@ -478,12 +478,12 @@ export default function AllProductsFeed({
       {loading && products.length === 0 ? (
         <p className="text-sm text-gray-500">Loading products…</p>
       ) : error && products.length === 0 ? (
-        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div className="rounded-lg border border-accent-border bg-accent-subtle px-4 py-3 text-sm text-accent-hover">
           <p>Couldn&apos;t load products. Please try again.</p>
           <button
             type="button"
             onClick={() => void fetchProducts(1, false)}
-            className="mt-2 rounded-lg bg-red-600 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-red-700"
+            className="mt-2 rounded-lg bg-accent px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-accent-active"
           >
             Try again
           </button>
@@ -527,7 +527,7 @@ export default function AllProductsFeed({
                   setPage(next);
                   void fetchProducts(next, true);
                 }}
-                className="rounded-lg bg-red-600 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-red-700 disabled:opacity-60"
+                className="rounded-lg bg-accent px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-accent-active disabled:opacity-60"
               >
                 {loading ? "Loading…" : "Load more products"}
               </button>

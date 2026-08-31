@@ -47,7 +47,7 @@ function PasswordField({
           minLength={minLength}
           value={value}
           onChange={(event) => onChange(event.target.value)}
-          className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 pr-11 outline-none focus:border-red-400/60"
+          className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 pr-11 outline-none focus:border-accent/60"
           required
         />
         <button
@@ -167,7 +167,7 @@ export default function SecuritySettingsForm() {
           <button
             type="submit"
             disabled={loading}
-            className="rounded-xl bg-red-600 px-5 py-3 text-sm font-semibold hover:bg-red-500 disabled:opacity-60"
+            className="rounded-xl bg-accent px-5 py-3 text-sm font-semibold hover:bg-accent-hover disabled:opacity-60"
           >
             {loading ? "Updating..." : "Update password"}
           </button>
@@ -183,7 +183,7 @@ export default function SecuritySettingsForm() {
             type="button"
             onClick={invalidateSessions}
             disabled={sessionLoading}
-            className="rounded-xl border border-zinc-200 px-5 py-3 text-sm font-semibold hover:border-red-500/40 disabled:opacity-60"
+            className="rounded-xl border border-zinc-200 px-5 py-3 text-sm font-semibold hover:border-accent/40 disabled:opacity-60"
           >
             {sessionLoading ? "Clearing..." : "Logout all sessions"}
           </button>
@@ -191,7 +191,7 @@ export default function SecuritySettingsForm() {
       </div>
 
       {error ? (
-        <p className="mt-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <p className="mt-6 rounded-xl border border-accent-border bg-accent-subtle px-4 py-3 text-sm text-accent-hover">
           {error}
         </p>
       ) : null}

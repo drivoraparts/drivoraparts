@@ -57,7 +57,7 @@ export default function FitmentAssuranceCallout({
       <button
         type="button"
         onClick={openLiveChat}
-        className="flex w-full items-center justify-center gap-2 rounded-sm border border-neutral-300 bg-white px-3 py-2.5 text-xs font-semibold text-neutral-700 transition hover:border-red-300 hover:text-red-700"
+        className="flex w-full items-center justify-center gap-2 rounded-sm border border-neutral-300 bg-white px-3 py-2.5 text-xs font-semibold text-neutral-700 transition hover:border-accent-border hover:text-accent-hover"
       >
         <svg
           viewBox="0 0 20 20"

@@ -70,12 +70,12 @@ export default function ProfileSettingsForm({
             type="text"
             value={displayName}
             onChange={(event) => setDisplayName(event.target.value)}
-            className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-red-400/60"
+            className="w-full rounded-xl bg-zinc-50 border border-zinc-200 px-4 py-3 outline-none focus:border-accent/60"
           />
         </div>
 
         {error ? (
-          <p className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          <p className="rounded-xl border border-accent-border bg-accent-subtle px-4 py-3 text-sm text-accent-hover">
             {error}
           </p>
         ) : null}
@@ -88,7 +88,7 @@ export default function ProfileSettingsForm({
         <button
           type="submit"
           disabled={loading}
-          className="rounded-xl bg-red-600 px-5 py-3 text-sm font-semibold hover:bg-red-500 disabled:opacity-60"
+          className="rounded-xl bg-accent px-5 py-3 text-sm font-semibold hover:bg-accent-hover disabled:opacity-60"
         >
           {loading ? "Saving..." : "Save profile"}
         </button>

@@ -62,7 +62,7 @@ export default function LiveUsersPanel() {
                 className="flex items-center justify-between border-b border-zinc-200 pb-3 last:border-0"
               >
                 <span className="font-mono text-sm">{page.page}</span>
-                <span className="font-semibold text-red-400">
+                <span className="font-semibold text-accent-on-dark">
                   {page.activeUsers} live
                 </span>
               </li>

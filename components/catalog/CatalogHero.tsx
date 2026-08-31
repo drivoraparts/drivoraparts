@@ -24,7 +24,7 @@ export default function CatalogHero() {
   return (
     <section className="border-b border-neutral-200 bg-neutral-950 px-4 py-12 text-white sm:px-6 sm:py-16 lg:px-8">
       <ScrollReveal className="mx-auto max-w-4xl text-center">
-        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-red-500">
+        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent-on-dark">
           The Marketplace
         </p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">

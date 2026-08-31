@@ -108,7 +108,7 @@ export default function CatalogFilterSelect({
                   onKeyDown={(event) => event.stopPropagation()}
                   placeholder={searchPlaceholder}
                   aria-label={`${ariaLabel} search`}
-                  className="w-full rounded-md border border-neutral-200 bg-white py-1.5 pl-7 pr-2 text-xs text-neutral-900 placeholder:text-neutral-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500 sm:text-sm"
+                  className="w-full rounded-md border border-neutral-200 bg-white py-1.5 pl-7 pr-2 text-xs text-neutral-900 placeholder:text-neutral-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent sm:text-sm"
                 />
               </div>
             </li>
@@ -131,8 +131,8 @@ export default function CatalogFilterSelect({
                     onChange(option.value);
                     setOpen(false);
                   }}
-                  className={`block w-full px-3 py-2 text-left text-xs text-neutral-800 transition hover:bg-red-50 sm:text-sm ${
-                    isSelected ? "bg-red-50 font-semibold text-red-700" : ""
+                  className={`block w-full px-3 py-2 text-left text-xs text-neutral-800 transition hover:bg-accent-subtle sm:text-sm ${
+                    isSelected ? "bg-accent-subtle font-semibold text-accent-hover" : ""
                   }`}
                 >
                   {option.label}

@@ -59,7 +59,7 @@ export default function CinematicLifestyleSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
-          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-red-500">
+          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
             Every Build Has a Story
           </p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-[2rem]">
@@ -96,7 +96,7 @@ export default function CinematicLifestyleSection() {
                   <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-neutral-400">
                     {card.audience}
                   </p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-red-600 transition-colors group-hover:text-red-700">
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors group-hover:text-accent-hover">
                     {card.ctaLabel}
                     <span
                       aria-hidden

@@ -7,7 +7,7 @@ export default function PageHeading({
 }) {
   return (
     <header className="mb-10">
-      <h1 className="inline-block border-b-2 border-red-600 pb-2 text-3xl font-bold text-neutral-900">
+      <h1 className="inline-block border-b-2 border-accent pb-2 text-3xl font-bold text-neutral-900">
         {title}
       </h1>
 

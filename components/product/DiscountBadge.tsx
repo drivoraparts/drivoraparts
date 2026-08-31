@@ -21,7 +21,7 @@ export function ProductDiscountBadge({
 
   return (
     <span
-      className={`inline-flex items-center rounded-md border border-emerald-700 bg-emerald-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm ${className}`}
+      className={`inline-flex items-center rounded-md border border-success bg-success px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm ${className}`}
     >
       {getProductDiscountLabel(category)}
     </span>

@@ -65,7 +65,7 @@ export default function CompareBar() {
         <Link
           href={routes.compare}
           prefetch={false}
-          className="shrink-0 touch-manipulation rounded-lg bg-red-600 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-700"
+          className="shrink-0 touch-manipulation rounded-lg bg-accent px-4 py-2 text-xs font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-active"
         >
           Compare ({items.length})
         </Link>

@@ -45,7 +45,7 @@ export default function ProductPrice({
         </span>
       ) : null}
       <span
-        className={`font-bold text-red-500 ${sizes.sale}`}
+        className={`font-bold text-accent ${sizes.sale}`}
         aria-label={`Our price ${price}`}
       >
         <Price usd={price} />

@@ -59,7 +59,7 @@ export default async function AdminInsightsPage() {
       <div className="mb-6 flex flex-wrap gap-3">
         <Link
           href="/admin/insights/daily"
-          className="rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-2 text-sm font-semibold hover:bg-red-500/20"
+          className="rounded-lg border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-semibold hover:bg-accent-hover/20"
         >
           View Daily Business Report →
         </Link>
@@ -88,7 +88,7 @@ export default async function AdminInsightsPage() {
         />
       </div>
 
-      <section className="mt-8 rounded-lg border border-red-500/20 bg-red-500/5 p-6">
+      <section className="mt-8 rounded-lg border border-accent/20 bg-accent/5 p-6">
         <h2 className="mb-4 text-xl font-bold">Today&apos;s AI Decisions</h2>
         <p className="mb-4 text-sm text-zinc-600">
           Priority actions: {(brain.topActions ?? []).join(" · ") || "Collecting signals…"}

@@ -14,15 +14,15 @@ export default function FooterContent() {
       <div className="grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-5">
         <div>
           <h2 className="mb-3 text-lg font-bold">
-            Drivora<span className="text-red-500">Parts</span>
+            Drivora<span className="text-accent-on-dark">Parts</span>
           </h2>
           <CompanyAddress variant="summary" className="mb-3" />
-          <p className="text-xs text-gray-500">{t("footerBrand")}</p>
+          <p className="text-xs text-muted-on-dark">{t("footerBrand")}</p>
         </div>
 
         <div>
-          <h3 className="mb-3 text-red-500">{t("quickLinks")}</h3>
-          <div className="flex flex-col gap-2 text-sm text-neutral-600">
+          <h3 className="mb-3 text-accent-on-dark">{t("quickLinks")}</h3>
+          <div className="flex flex-col gap-2 text-sm text-muted-on-dark">
             <Link href="/catalog/all">All Products</Link>
             <Link href="/cart">{t("cart")}</Link>
             <Link href="/catalog">Enter Market</Link>
@@ -34,8 +34,8 @@ export default function FooterContent() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-red-500">{t("policies")}</h3>
-          <div className="flex flex-col gap-2 text-sm text-neutral-600">
+          <h3 className="mb-3 text-accent-on-dark">{t("policies")}</h3>
+          <div className="flex flex-col gap-2 text-sm text-muted-on-dark">
             <Link href="/policies/privacy-policy">{t("privacyPolicy")}</Link>
             <Link href="/policies/cookie-policy">{t("cookiePolicy")}</Link>
             <Link href="/policies/accessibility-statement">{t("accessibility")}</Link>
@@ -47,8 +47,8 @@ export default function FooterContent() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-red-500">{t("legalOperations")}</h3>
-          <div className="flex flex-col gap-2 text-sm text-neutral-600">
+          <h3 className="mb-3 text-accent-on-dark">{t("legalOperations")}</h3>
+          <div className="flex flex-col gap-2 text-sm text-muted-on-dark">
             <Link href="/policies/shipping-policy">{t("shippingPolicy")}</Link>
             <Link href="/policies/refund-policy">{t("returnsRefunds")}</Link>
             <Link href="/policies/terms-of-sale">{t("termsOfSale")}</Link>
@@ -59,15 +59,15 @@ export default function FooterContent() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-red-500">Stay Updated</h3>
-          <p className="mb-3 text-sm text-neutral-600">
+          <h3 className="mb-3 text-accent-on-dark">Stay Updated</h3>
+          <p className="mb-3 text-sm text-muted-on-dark">
             New listings and deals, straight to your inbox.
           </p>
           <NewsletterSignup />
         </div>
       </div>
 
-      <div className="border-t border-neutral-200 py-6 text-center text-xs text-neutral-500">
+      <div className="border-t border-border-on-dark py-6 text-center text-xs text-muted-on-dark">
         <CurrencyFooterNote />
         © {new Date().getFullYear()} DrivoraParts LLC. {t("rightsReserved")}
       </div>

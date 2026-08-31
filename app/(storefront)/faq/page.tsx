@@ -36,7 +36,7 @@ const FAQS: FaqItem[] = [
         receipt as soon as your order is placed, and another once payment is
         confirmed. If you need a status update at any time, reach out through
         our{" "}
-        <Link href="/contact" className="text-red-600 hover:text-red-700">
+        <Link href="/contact" className="text-accent hover:text-accent-hover">
           contact form
         </Link>{" "}
         with your order ID.
@@ -63,7 +63,7 @@ const FAQS: FaqItem[] = [
         in our{" "}
         <Link
           href="/policies/shipping-policy"
-          className="text-red-600 hover:text-red-700"
+          className="text-accent hover:text-accent-hover"
         >
           Shipping Policy
         </Link>
@@ -78,13 +78,13 @@ const FAQS: FaqItem[] = [
         Yes — most items can be returned within 30 days of delivery if
         they&apos;re unused, uninstalled, and in original packaging. Returns
         need authorization before you ship anything back.{" "}
-        <Link href="/returns" className="text-red-600 hover:text-red-700">
+        <Link href="/returns" className="text-accent hover:text-accent-hover">
           Start a return here
         </Link>
         , or see the full{" "}
         <Link
           href="/policies/refund-policy"
-          className="text-red-600 hover:text-red-700"
+          className="text-accent hover:text-accent-hover"
         >
           Returns &amp; Refund Policy
         </Link>
@@ -102,7 +102,7 @@ const FAQS: FaqItem[] = [
     answer: (
       <>
         Send us a message through the{" "}
-        <Link href="/contact" className="text-red-600 hover:text-red-700">
+        <Link href="/contact" className="text-accent hover:text-accent-hover">
           contact form
         </Link>{" "}
         and we&apos;ll typically reply within 1–2 business days.
@@ -136,7 +136,7 @@ export default function FaqPage() {
       <div className="mt-10 rounded-xl border border-neutral-200 bg-white p-6 text-center">
         <p className="text-sm text-neutral-600">
           Still have questions?{" "}
-          <Link href="/contact" className="text-red-600 hover:text-red-700">
+          <Link href="/contact" className="text-accent hover:text-accent-hover">
             Contact our support team
           </Link>
           .

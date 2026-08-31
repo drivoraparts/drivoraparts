@@ -44,7 +44,7 @@ function ActionList({
                 <span
                   className={
                     item.priority === "critical"
-                      ? "text-red-600"
+                      ? "text-accent"
                       : item.priority === "high"
                         ? "text-amber-700"
                         : "text-zinc-600"
@@ -127,7 +127,7 @@ export default function AutopilotIntelligence({
         <button
           type="button"
           onClick={() => window.location.reload()}
-          className="mt-4 rounded-xl border border-zinc-300 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 hover:border-red-300"
+          className="mt-4 rounded-xl border border-zinc-300 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 hover:border-accent-border"
         >
           Retry
         </button>
@@ -139,7 +139,7 @@ export default function AutopilotIntelligence({
 
   return (
     <section className="mt-8 space-y-6">
-      <div className="rounded-lg border border-red-500/20 bg-red-500/5 p-6">
+      <div className="rounded-lg border border-accent/20 bg-accent/5 p-6">
         <h2 className="text-xl font-bold">Autopilot Intelligence</h2>
         <p className="mt-2 text-sm text-zinc-600">{data.summary}</p>
         {usingFallback ? (

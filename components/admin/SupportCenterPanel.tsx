@@ -68,7 +68,7 @@ export default function SupportCenterPanel({
               }}
               className={`w-full rounded-lg border px-4 py-3 text-left ${
                 selectedId === message.id
-                  ? "border-red-500/40 bg-red-50 border border-red-100"
+                  ? "border-accent/40 bg-accent-subtle border border-red-100"
                   : "border-zinc-200 bg-zinc-50 border border-zinc-200"
               }`}
             >
@@ -110,14 +110,14 @@ export default function SupportCenterPanel({
                 onChange={(e) => setReply(e.target.value)}
                 rows={5}
                 placeholder="Admin reply..."
-                className="w-full rounded-lg bg-zinc-50 border border-zinc-200 px-4 py-3 text-sm outline-none focus:border-red-500"
+                className="w-full rounded-lg bg-zinc-50 border border-zinc-200 px-4 py-3 text-sm outline-none focus:border-accent"
               />
 
               <button
                 type="button"
                 disabled={loading}
                 onClick={saveUpdate}
-                className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold disabled:opacity-60"
+                className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold disabled:opacity-60"
               >
                 {loading ? "Saving..." : "Save Update"}
               </button>

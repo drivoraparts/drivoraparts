@@ -45,8 +45,8 @@ export default function CompareButton({
       }}
       className={`flex items-center gap-1.5 rounded-md border px-2 py-1 text-[10px] font-bold uppercase tracking-wide transition-colors sm:text-[11px] ${
         mounted && active
-          ? "border-red-600 bg-red-600 text-white"
-          : "border-neutral-300 bg-white/90 text-neutral-700 hover:border-red-400 hover:text-red-600"
+          ? "border-accent bg-accent text-white"
+          : "border-neutral-300 bg-white/90 text-neutral-700 hover:border-red-400 hover:text-accent-hover"
       } ${className}`}
     >
       <svg

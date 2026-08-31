@@ -32,7 +32,7 @@ export default function HomeFeaturedCard({
       <Link
         href={href}
         prefetch={false}
-        className="touch-manipulation absolute inset-0 z-10 rounded-xl active:bg-red-50/40"
+        className="touch-manipulation absolute inset-0 z-10 rounded-xl active:bg-accent-subtle/40"
         aria-label={`View ${product.name}`}
         onClick={() =>
           saveListScrollOnProductClick(

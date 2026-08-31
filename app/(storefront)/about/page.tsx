@@ -29,7 +29,7 @@ export default function AboutPage() {
     <main className="bg-white text-neutral-900">
       {/* Opening */}
       <div className="mx-auto max-w-3xl px-6 pb-4 pt-12 sm:pt-16">
-        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-red-600">
+        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
           About DrivoraParts
         </p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
@@ -58,7 +58,7 @@ export default function AboutPage() {
             </p>
             <p>And we kept asking ourselves:</p>
           </div>
-          <blockquote className="mt-6 border-l-2 border-red-600 pl-5 text-lg font-semibold leading-snug text-neutral-900 sm:text-xl">
+          <blockquote className="mt-6 border-l-2 border-accent pl-5 text-lg font-semibold leading-snug text-neutral-900 sm:text-xl">
             Why isn&apos;t there one place where you can search across automotive brands,
             categories, and parts without having to visit five different websites?
           </blockquote>
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 <li key={cat.label}>
                   <Link
                     href={routes.category(cat.slug)}
-                    className="inline-flex rounded-full border border-neutral-300 bg-white px-3.5 py-1.5 text-sm font-semibold text-neutral-700 transition-colors hover:border-red-300 hover:text-red-600"
+                    className="inline-flex rounded-full border border-neutral-300 bg-white px-3.5 py-1.5 text-sm font-semibold text-neutral-700 transition-colors hover:border-accent-border hover:text-accent-hover"
                   >
                     {cat.label}
                   </Link>
@@ -235,7 +235,7 @@ export default function AboutPage() {
             More possibilities.
           </p>
 
-          <p className="mt-6 text-xl font-bold tracking-tight text-red-600">
+          <p className="mt-6 text-xl font-bold tracking-tight text-accent">
             Find your part. Build your vision.
           </p>
         </section>
@@ -253,7 +253,7 @@ export default function AboutPage() {
         <div className="flex flex-col items-center gap-4">
           <Link
             href={routes.all}
-            className="inline-block transform rounded-full bg-red-600 px-10 py-4 font-semibold text-white transition hover:scale-105 hover:bg-red-700"
+            className="inline-block transform rounded-full bg-accent px-10 py-4 font-semibold text-white transition hover:scale-105 hover:bg-accent-active"
           >
             All Products
           </Link>

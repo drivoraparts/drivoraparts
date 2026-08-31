@@ -92,7 +92,7 @@ export default function GuidesPage() {
             <Link
               href={guide.shopHref}
               prefetch={false}
-              className="mt-4 inline-block text-sm font-semibold text-red-600 hover:text-red-700"
+              className="mt-4 inline-block text-sm font-semibold text-accent hover:text-accent-hover"
             >
               {guide.shopLabel} →
             </Link>
@@ -103,7 +103,7 @@ export default function GuidesPage() {
       <div className="mt-4 rounded-xl border border-neutral-200 bg-neutral-50 p-6 text-center">
         <p className="text-sm text-neutral-600">
           Have a specific build question?{" "}
-          <Link href="/contact" className="text-red-600 hover:text-red-700">
+          <Link href="/contact" className="text-accent hover:text-accent-hover">
             Ask our team
           </Link>
           .

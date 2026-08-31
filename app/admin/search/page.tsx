@@ -27,7 +27,9 @@ const QUALITY: Record<
 > = {
   strong: { dot: "🟢", label: "Strong", className: "text-emerald-700" },
   attention: { dot: "🟡", label: "Needs attention", className: "text-amber-700" },
-  poor: { dot: "🔴", label: "Poor", className: "text-red-700" },
+  // A "Poor" rating is a status signal, not brand chrome — it must not
+  // borrow the CTA colour, or a warning reads as an invitation.
+  poor: { dot: "🔴", label: "Poor", className: "text-error" },
 };
 
 function Section({
@@ -82,7 +84,7 @@ export default async function AdminSearchAnalyticsPage({ searchParams }: PagePro
             href={href(range.key)}
             className={`rounded-lg px-3 py-2 text-sm font-medium transition ${
               rangeKey === range.key
-                ? "bg-red-50 text-red-700 ring-1 ring-red-200"
+                ? "bg-accent-subtle text-accent-hover ring-1 ring-accent-border"
                 : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
             }`}
           >
@@ -110,7 +112,7 @@ export default async function AdminSearchAnalyticsPage({ searchParams }: PagePro
               className="mt-1 block rounded-lg border border-zinc-300 px-2 py-1.5 text-sm"
             />
           </label>
-          <button type="submit" className="rounded-lg border border-zinc-300 bg-white px-3 py-1.5 text-sm font-semibold text-zinc-700 transition hover:border-red-300 hover:text-red-700">
+          <button type="submit" className="rounded-lg border border-zinc-300 bg-white px-3 py-1.5 text-sm font-semibold text-zinc-700 transition hover:border-accent-border hover:text-accent-hover">
             Apply
           </button>
         </form>
@@ -259,12 +261,12 @@ export default async function AdminSearchAnalyticsPage({ searchParams }: PagePro
                       <td className="py-3 pr-4 font-medium text-zinc-900">
                         <Link
                           href={`/admin/search/query?q=${encodeURIComponent(row.query)}&range=${rangeKey}`}
-                          className="hover:text-red-700 hover:underline"
+                          className="hover:text-accent-hover hover:underline"
                         >
                           {row.query}
                         </Link>
                       </td>
-                      <td className="py-3 pr-4 font-semibold text-red-700">{row.searches}</td>
+                      <td className="py-3 pr-4 font-semibold text-accent-hover">{row.searches}</td>
                       <td className="py-3 pr-4 text-zinc-700">{row.uniqueSessions}</td>
                       <td className="py-3 pr-4 text-zinc-600">{when(row.firstSearchedAt)}</td>
                       <td className="py-3 pr-4 text-zinc-600">{when(row.lastSearchedAt)}</td>
@@ -305,7 +307,7 @@ export default async function AdminSearchAnalyticsPage({ searchParams }: PagePro
                       <td className="py-3 pr-4 font-medium text-zinc-900">
                         <Link
                           href={`/admin/search/query?q=${encodeURIComponent(row.query)}&range=${rangeKey}`}
-                          className="hover:text-red-700 hover:underline"
+                          className="hover:text-accent-hover hover:underline"
                         >
                           {row.query}
                         </Link>
@@ -352,7 +354,7 @@ export default async function AdminSearchAnalyticsPage({ searchParams }: PagePro
                       <td className="py-3 pr-4 text-zinc-900">
                         <Link
                           href={`/product/${row.productId}`}
-                          className="hover:text-red-700 hover:underline"
+                          className="hover:text-accent-hover hover:underline"
                         >
                           {row.productName}
                         </Link>
@@ -407,14 +409,14 @@ export default async function AdminSearchAnalyticsPage({ searchParams }: PagePro
                   <span className="w-24 shrink-0 text-zinc-600">{point.date}</span>
                   <div className="h-5 flex-1 overflow-hidden rounded bg-zinc-100">
                     <div
-                      className="h-full rounded bg-red-500"
+                      className="h-full rounded bg-accent"
                       style={{ width: `${(point.searches / maxDay) * 100}%` }}
                     />
                   </div>
                   <span className="w-32 shrink-0 text-right text-zinc-700">
                     {point.searches} searches
                     {point.zeroResults > 0 ? (
-                      <span className="ml-1 text-red-600">({point.zeroResults} empty)</span>
+                      <span className="ml-1 text-accent">({point.zeroResults} empty)</span>
                     ) : null}
                   </span>
                 </div>

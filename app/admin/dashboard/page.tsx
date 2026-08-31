@@ -101,7 +101,7 @@ export default async function AdminDashboardPage() {
           <div className="flex shrink-0 flex-wrap gap-3">
             <Link
               href="/admin/orders"
-              className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700"
+              className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-active"
             >
               Manage orders
             </Link>
@@ -124,7 +124,7 @@ export default async function AdminDashboardPage() {
           </div>
           <Link
             href="/admin/orders"
-            className="text-sm font-semibold text-red-600 hover:text-red-700"
+            className="text-sm font-semibold text-accent hover:text-accent-hover"
           >
             View all →
           </Link>
@@ -270,7 +270,7 @@ export default async function AdminDashboardPage() {
                   <span>{alert.productName}</span>
                   <span
                     className={
-                      alert.severity === "out" ? "font-semibold text-red-600" : "text-amber-700"
+                      alert.severity === "out" ? "font-semibold text-accent" : "text-amber-700"
                     }
                   >
                     {alert.quantity} left

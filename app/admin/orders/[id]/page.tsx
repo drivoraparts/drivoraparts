@@ -57,7 +57,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
   return (
     <AdminShell title={`Order ${order.order_number}`}>
       <div className="mb-3 flex items-center justify-between">
-        <Link href="/admin/orders" className="text-xs font-medium text-red-600 hover:text-red-700">
+        <Link href="/admin/orders" className="text-xs font-medium text-accent hover:text-accent-hover">
           ← Back to all orders
         </Link>
         <DeleteOrderButton orderId={order.id} orderNumber={order.order_number} redirectTo="/admin/orders" />
@@ -153,7 +153,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
                   <span
                     className={`font-medium ${
                       order.shipping_method === "express"
-                        ? "text-red-700"
+                        ? "text-accent-hover"
                         : "text-zinc-900"
                     }`}
                   >
@@ -234,7 +234,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
             <ol className="mt-3 space-y-3 border-l border-zinc-200 pl-3.5">
               {[...events].reverse().map((event) => (
                 <li key={event.id} className="relative">
-                  <span className="absolute -left-[18px] top-1 h-2 w-2 rounded-full bg-red-500" />
+                  <span className="absolute -left-[18px] top-1 h-2 w-2 rounded-full bg-accent" />
                   <p className="text-[10px] font-medium uppercase tracking-wide text-zinc-500">
                     {EVENT_LABELS[event.event_type] ?? event.event_type}
                   </p>

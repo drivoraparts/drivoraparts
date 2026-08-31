@@ -122,7 +122,7 @@ export default async function Page({ params }: PageProps) {
                 key={item}
                 className="flex gap-2.5 text-sm leading-relaxed text-neutral-700"
               >
-                <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-red-600" />
+                <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
                 {item}
               </li>
             ))}
@@ -224,7 +224,7 @@ export default async function Page({ params }: PageProps) {
               </p>
               <Link
                 href="/contact"
-                className="mt-4 inline-block rounded-lg bg-red-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-red-500"
+                className="mt-4 inline-block rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-accent-hover"
               >
                 Request a part
               </Link>
@@ -274,7 +274,7 @@ export default async function Page({ params }: PageProps) {
             </p>
             <Link
               href="/returns"
-              className="mt-3 inline-block text-sm font-medium text-red-600 hover:underline"
+              className="mt-3 inline-block text-sm font-medium text-accent hover:underline"
             >
               Returns &amp; warranty policy
             </Link>
@@ -287,7 +287,7 @@ export default async function Page({ params }: PageProps) {
             </p>
             <Link
               href="/faq"
-              className="mt-3 inline-block text-sm font-medium text-red-600 hover:underline"
+              className="mt-3 inline-block text-sm font-medium text-accent hover:underline"
             >
               Shipping questions
             </Link>

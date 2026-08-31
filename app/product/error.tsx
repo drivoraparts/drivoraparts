@@ -28,7 +28,7 @@ export default function ProductError({
         <button
           type="button"
           onClick={() => reset()}
-          className="rounded-lg border border-red-500 px-4 py-2 text-sm font-medium text-red-400 transition hover:bg-red-500/10"
+          className="rounded-lg border border-accent px-4 py-2 text-sm font-medium text-accent-on-dark transition hover:bg-accent-hover/10"
         >
           Try again
         </button>

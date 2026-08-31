@@ -19,13 +19,13 @@ export default function HomeTrustBadges() {
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -top-24 left-1/2 h-48 w-[min(100%,720px)] -translate-x-1/2 rounded-full bg-red-600/10 blur-3xl"
+        className="pointer-events-none absolute -top-24 left-1/2 h-48 w-[min(100%,720px)] -translate-x-1/2 rounded-full bg-accent/10 blur-3xl"
         aria-hidden
       />
 
       <div className="relative mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-red-400">
+          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent-on-dark">
             {TRUST_SECTION.eyebrow}
           </p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-[2rem]">
@@ -85,7 +85,7 @@ export default function HomeTrustBadges() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="transition-colors hover:text-red-400"
+                className="transition-colors hover:text-accent-on-dark"
               >
                 {link.label}
               </Link>

@@ -32,7 +32,7 @@ export default function AdminSidebar() {
   return (
     <aside className={adminUi.sidebar}>
       <div className={adminUi.sidebarBrand}>
-        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-red-600">
+        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-accent">
           DrivoraParts
         </p>
         <p className="mt-2 text-lg font-semibold text-zinc-900">Admin Console</p>

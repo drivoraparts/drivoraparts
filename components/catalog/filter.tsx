@@ -19,7 +19,7 @@ export default function Filter({
             px-4 py-2 rounded-full text-sm border transition
             ${
               active === cat
-                ? "border-red-500 bg-red-600 text-white"
+                ? "border-accent bg-accent text-white"
                 : "border-neutral-300 bg-white text-neutral-700 hover:border-neutral-400 hover:bg-neutral-50"
             }
           `}

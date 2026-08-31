@@ -290,7 +290,7 @@ export default function SuccessStatus({
           {paymentUrl ? (
             <a
               href={paymentUrl}
-              className="block w-full rounded-lg bg-red-600 py-3 text-center text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99]"
+              className="block w-full rounded-lg bg-accent py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-hover active:scale-[0.99]"
             >
               Continue Payment
             </a>
@@ -310,7 +310,7 @@ export default function SuccessStatus({
         <div className="mt-5 space-y-2">
           <Link
             href="/catalog"
-            className="block w-full rounded-lg bg-red-600 py-3 text-center text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99]"
+            className="block w-full rounded-lg bg-accent py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-hover active:scale-[0.99]"
           >
             Continue Shopping
           </Link>

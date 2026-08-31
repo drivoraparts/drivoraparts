@@ -46,8 +46,8 @@ export default function WishlistButton({
         }}
         className={`flex items-center justify-center gap-2 border text-xs font-bold uppercase tracking-wide transition-colors ${
           mounted && active
-            ? "border-red-600 bg-red-600 text-white"
-            : "border-neutral-300 bg-white text-neutral-700 hover:border-red-400 hover:text-red-600"
+            ? "border-accent bg-accent text-white"
+            : "border-neutral-300 bg-white text-neutral-700 hover:border-red-400 hover:text-accent-hover"
         } ${className}`}
       >
         <svg
@@ -77,8 +77,8 @@ export default function WishlistButton({
       }}
       className={`flex ${dims} shrink-0 items-center justify-center rounded-full border transition-colors ${
         mounted && active
-          ? "border-red-600 bg-red-600 text-white"
-          : "border-neutral-300 bg-white/90 text-neutral-700 hover:border-red-400 hover:text-red-600"
+          ? "border-accent bg-accent text-white"
+          : "border-neutral-300 bg-white/90 text-neutral-700 hover:border-red-400 hover:text-accent-hover"
       } ${className}`}
     >
       <svg

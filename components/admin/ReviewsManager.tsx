@@ -212,7 +212,7 @@ export default function ReviewsManager({
             onClick={() => setFilter(tab.key)}
             className={`rounded-lg px-3 py-2 text-sm font-medium transition ${
               filter === tab.key
-                ? "bg-red-50 text-red-700 ring-1 ring-red-200"
+                ? "bg-accent-subtle text-accent-hover ring-1 ring-accent-border"
                 : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
             }`}
           >
@@ -355,7 +355,7 @@ export default function ReviewsManager({
           onChange={(event) => setSearch(event.target.value)}
           placeholder="Search text, reviewer or product…"
           aria-label="Search reviews"
-          className="rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 outline-none transition focus:border-red-400 focus:ring-2 focus:ring-red-100"
+          className="rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent-subtle"
         />
         <select
           value={productFilter}
@@ -427,7 +427,7 @@ export default function ReviewsManager({
                   <p className="mt-1 text-xs text-zinc-500">
                     <a
                       href={`/product/${review.productId}`}
-                      className="hover:text-red-700 hover:underline"
+                      className="hover:text-accent-hover hover:underline"
                     >
                       {productNames[review.productId] ?? `Product ${review.productId}`}
                     </a>
@@ -464,7 +464,7 @@ export default function ReviewsManager({
                     type="button"
                     disabled={busyId === review.id}
                     onClick={() => moderate(review.id, "delete")}
-                    className="rounded-lg border border-red-200 bg-white px-3 py-1.5 text-sm font-semibold text-red-700 transition hover:bg-red-50 disabled:opacity-60"
+                    className="rounded-lg border border-accent-border bg-white px-3 py-1.5 text-sm font-semibold text-accent-hover transition hover:bg-accent-subtle disabled:opacity-60"
                   >
                     Delete
                   </button>

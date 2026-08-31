@@ -3,14 +3,14 @@ import { getForecastReport } from "@/lib/ai-forecast";
 
 export const dynamic = "force-dynamic";
 function riskClass(risk: string) {
-  if (risk === "high") return "text-red-600";
+  if (risk === "high") return "text-accent";
   if (risk === "medium") return "text-amber-700";
   return "text-emerald-700";
 }
 
 function trendClass(trend: string) {
   if (trend === "rising") return "text-emerald-700";
-  if (trend === "falling") return "text-red-600";
+  if (trend === "falling") return "text-accent";
   return "text-zinc-600";
 }
 

@@ -13,7 +13,7 @@ const TOPICS = [
 ] as const;
 
 const inputClass =
-  "mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500/20";
+  "mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20";
 
 type ContactFormProps = {
   defaultTopic?: (typeof TOPICS)[number]["value"];
@@ -94,7 +94,7 @@ export default function ContactForm({
             setMessage("");
             setOrderId("");
           }}
-          className="mt-4 text-sm font-medium text-red-600 hover:text-red-700"
+          className="mt-4 text-sm font-medium text-accent hover:text-accent-hover"
         >
           Send another message
         </button>
@@ -116,7 +116,7 @@ export default function ContactForm({
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="contact-name" className="text-sm font-medium text-neutral-700">
-            Name <span className="text-red-600">*</span>
+            Name <span className="text-accent">*</span>
           </label>
           <input
             id="contact-name"
@@ -132,7 +132,7 @@ export default function ContactForm({
 
         <div>
           <label htmlFor="contact-email" className="text-sm font-medium text-neutral-700">
-            Email <span className="text-red-600">*</span>
+            Email <span className="text-accent">*</span>
           </label>
           <input
             id="contact-email"
@@ -173,7 +173,7 @@ export default function ContactForm({
           <label htmlFor="contact-order" className="text-sm font-medium text-neutral-700">
             Order ID{" "}
             {requireOrderId ? (
-              <span className="text-red-600">*</span>
+              <span className="text-accent">*</span>
             ) : (
               <span className="font-normal text-neutral-500">(optional)</span>
             )}
@@ -193,7 +193,7 @@ export default function ContactForm({
 
       <div className="mt-4">
         <label htmlFor="contact-message" className="text-sm font-medium text-neutral-700">
-          Message <span className="text-red-600">*</span>
+          Message <span className="text-accent">*</span>
         </label>
         <textarea
           id="contact-message"
@@ -210,7 +210,7 @@ export default function ContactForm({
       <button
         type="submit"
         disabled={submitting}
-        className="mt-6 w-full rounded-lg bg-red-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-red-500 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:px-8"
+        className="mt-6 w-full rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:px-8"
       >
         {submitting ? "Sending..." : "Send message"}
       </button>
@@ -219,7 +219,7 @@ export default function ContactForm({
         Prefer email? Write to{" "}
         <a
           href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
-          className="text-red-600 hover:text-red-700"
+          className="text-accent hover:text-accent-hover"
         >
           {COMPANY_SUPPORT_EMAIL}
         </a>

@@ -87,7 +87,7 @@ export default function QuickViewModal({
           event.stopPropagation();
           setOpen(true);
         }}
-        className={`flex items-center gap-1.5 rounded-md border border-neutral-300 bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-neutral-700 transition-colors hover:border-red-400 hover:text-red-600 sm:text-[11px] ${triggerClassName}`}
+        className={`flex items-center gap-1.5 rounded-md border border-neutral-300 bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-neutral-700 transition-colors hover:border-red-400 hover:text-accent-hover sm:text-[11px] ${triggerClassName}`}
       >
         <svg
           viewBox="0 0 24 24"
@@ -194,7 +194,7 @@ export default function QuickViewModal({
                     <Link
                       href={routes.product(product.id)}
                       prefetch={false}
-                      className="block text-center text-sm font-semibold text-red-600 hover:text-red-700"
+                      className="block text-center text-sm font-semibold text-accent hover:text-accent-hover"
                     >
                       View full details →
                     </Link>

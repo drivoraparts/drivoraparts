@@ -214,7 +214,7 @@ export default function ImageCarousel({
               onClick={() => scrollToIndex(index)}
               className={`rounded-full transition ${
                 index === activeIndex
-                  ? "h-2.5 w-2.5 bg-red-600"
+                  ? "h-2.5 w-2.5 bg-accent"
                   : surface === "light"
                     ? "h-2 w-2 bg-neutral-300 hover:bg-neutral-400"
                     : "h-2 w-2 bg-white/35 hover:bg-white/55"

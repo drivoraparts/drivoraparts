@@ -32,7 +32,7 @@ export default function FeaturedBrandsStrip() {
       aria-label="Featured brands"
     >
       <ScrollReveal className="mx-auto max-w-2xl px-4 text-center sm:px-6">
-        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-red-600">
+        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
           Shop Parts By Brand
         </p>
         <h2 className="mt-3 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">

@@ -43,7 +43,7 @@ export default function StickyPurchaseBar({
         <AddToCartButton
           product={product}
           quantity={quantity}
-          className="!flex-1 !rounded-none !border-2 !border-red-600 !bg-white !px-4 !py-3 !text-xs !font-black !uppercase !tracking-[0.1em] !text-neutral-900 hover:!bg-red-50 md:!flex-none md:!min-w-[180px]"
+          className="!flex-1 !rounded-none !border-2 !border-accent !bg-white !px-4 !py-3 !text-xs !font-black !uppercase !tracking-[0.1em] !text-neutral-900 hover:!bg-accent-subtle md:!flex-none md:!min-w-[180px]"
         />
         <BuyNowButton
           product={product}

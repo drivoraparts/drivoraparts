@@ -17,7 +17,7 @@ export default function StaffPicksSection() {
     >
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mb-8">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-accent">
             Our Team's Picks
           </p>
           <h2 className="mt-1 text-xl font-bold text-neutral-900 sm:text-2xl">
@@ -34,7 +34,7 @@ export default function StaffPicksSection() {
               <Link
                 href={routes.product(pick.product.id)}
                 prefetch={false}
-                className="group flex h-full flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all hover:-translate-y-0.5 hover:border-red-200 hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
+                className="group flex h-full flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all hover:-translate-y-0.5 hover:border-accent-border hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
               >
                 <div className="aspect-square w-full overflow-hidden border-b border-neutral-100 bg-neutral-50">
                   <ProductImage
@@ -45,7 +45,7 @@ export default function StaffPicksSection() {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-4">
-                  <h3 className="line-clamp-2 text-sm font-bold text-neutral-900 group-hover:text-red-600">
+                  <h3 className="line-clamp-2 text-sm font-bold text-neutral-900 group-hover:text-accent-hover">
                     {pick.product.name}
                   </h3>
                   <ProductPrice

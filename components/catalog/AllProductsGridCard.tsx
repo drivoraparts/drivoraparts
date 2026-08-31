@@ -66,7 +66,7 @@ export default function AllProductsGridCard({
   return (
     <article
       id={catalogProductAnchorId(product.id)}
-      className="group relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-200/80 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-red-200 hover:shadow-lg"
+      className="group relative flex min-w-0 flex-col overflow-hidden rounded-lg border border-neutral-200/80 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-border hover:shadow-lg"
     >
       <Link
         href={productHref}
@@ -79,7 +79,7 @@ export default function AllProductsGridCard({
         <div className="relative aspect-square w-full overflow-hidden rounded-md border border-neutral-200 bg-neutral-50">
           <div className="absolute left-1 top-1 z-20 flex flex-col items-start gap-1">
             {product.isNew ? (
-              <span className="rounded-full bg-red-600 px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide text-white sm:text-[9px]">
+              <span className="rounded-full bg-accent px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide text-white sm:text-[9px]">
                 New
               </span>
             ) : null}

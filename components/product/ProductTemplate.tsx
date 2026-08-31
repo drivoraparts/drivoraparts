@@ -312,7 +312,7 @@ export default function ProductTemplate({
               <AddToCartButton
                 product={cartProduct}
                 quantity={quantity}
-                className="!rounded-none !border-2 !border-red-600 !bg-white !py-3.5 !text-sm !font-black !uppercase !tracking-[0.12em] !text-neutral-900 hover:!bg-red-50"
+                className="!rounded-none !border-2 !border-accent !bg-white !py-3.5 !text-sm !font-black !uppercase !tracking-[0.12em] !text-neutral-900 hover:!bg-accent-subtle"
               />
             </div>
 
@@ -405,7 +405,7 @@ export default function ProductTemplate({
           <Link
             href={routes.all}
             prefetch={false}
-            className="mt-6 inline-block touch-manipulation rounded-full bg-red-600 px-9 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-500 active:bg-red-700"
+            className="mt-6 inline-block touch-manipulation rounded-full bg-accent px-9 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-hover active:bg-accent-active"
           >
             Continue Browsing
           </Link>

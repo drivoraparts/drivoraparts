@@ -56,7 +56,7 @@ export default function DeleteOrderButton({
         disabled={loading}
         title={`Delete ${orderNumber}`}
         aria-label={`Delete order ${orderNumber}`}
-        className="shrink-0 rounded-md border border-transparent p-1.5 text-zinc-400 transition hover:border-red-200 hover:bg-red-50 hover:text-red-600 disabled:opacity-50"
+        className="shrink-0 rounded-md border border-transparent p-1.5 text-zinc-400 transition hover:border-accent-border hover:bg-accent-subtle hover:text-accent-hover disabled:opacity-50"
       >
         <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
           <path
@@ -75,7 +75,7 @@ export default function DeleteOrderButton({
         type="button"
         onClick={handleDelete}
         disabled={loading}
-        className="rounded-lg border border-red-200 px-3 py-1.5 text-xs font-semibold text-red-600 transition hover:bg-red-50 disabled:opacity-50"
+        className="rounded-lg border border-accent-border px-3 py-1.5 text-xs font-semibold text-accent transition hover:bg-accent-subtle disabled:opacity-50"
       >
         {loading ? "Deleting…" : "Delete order"}
       </button>

@@ -52,7 +52,7 @@ export default function CatalogProductCard({
   return (
     <article
       id={catalogProductAnchorId(product.id)}
-      className="group relative overflow-hidden rounded-xl border border-neutral-200/80 bg-white shadow-sm transition-all duration-300 hover:border-red-300 hover:shadow-lg"
+      className="group relative overflow-hidden rounded-xl border border-neutral-200/80 bg-white shadow-sm transition-all duration-300 hover:border-accent-border hover:shadow-lg"
     >
       <Link
         href={productHref}
@@ -69,7 +69,7 @@ export default function CatalogProductCard({
         }}
       />
 
-      <div className="pointer-events-none absolute inset-0 bg-red-500/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="pointer-events-none absolute inset-0 bg-accent/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative p-4">
         <div className="relative h-40 w-full overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50">
@@ -101,7 +101,7 @@ export default function CatalogProductCard({
         </div>
 
         <div className="mt-3 rounded-lg">
-          <h3 className="font-semibold text-neutral-900 group-hover:text-red-600">
+          <h3 className="font-semibold text-neutral-900 group-hover:text-accent-hover">
             <TranslatedText as="span">{product.name}</TranslatedText>
           </h3>
           <ProductPrice
@@ -119,7 +119,7 @@ export default function CatalogProductCard({
         <AddToCartButton product={cartProduct} compact />
       </div>
 
-      <div className="pointer-events-none absolute bottom-0 left-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full" />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full" />
     </article>
   );
 }

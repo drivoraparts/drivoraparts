@@ -24,7 +24,7 @@ export default function CartPageView() {
   return (
     <main className="mx-auto box-border w-full min-w-0 max-w-6xl bg-white px-4 py-8 text-neutral-900 sm:px-6 sm:py-10">
       <div className="mb-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-red-600">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
           DrivoraParts
         </p>
         <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{t("cart")}</h1>

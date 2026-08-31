@@ -35,7 +35,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const productHref = `/product/${product.id}`;
 
   return (
-    <article className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:border-red-500 hover:shadow-md">
+    <article className="group relative overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:border-accent hover:shadow-md">
       <Link
         href={productHref}
         className="absolute inset-0 z-10 rounded-xl"
@@ -53,7 +53,7 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
 
       <div className="p-4">
-        <h3 className="text-sm font-semibold text-neutral-900 group-hover:text-red-600">
+        <h3 className="text-sm font-semibold text-neutral-900 group-hover:text-accent-hover">
           <TranslatedText as="span">{product.name}</TranslatedText>
         </h3>
 

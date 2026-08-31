@@ -328,7 +328,7 @@ export default function TrackOrderForm() {
           onChange={(e) => setOrderId(e.target.value)}
           placeholder="Enter your Order ID or Payment ID (e.g. DRV-7K2QX9F)"
           aria-label="Order ID or Payment ID"
-          className="w-full min-w-0 rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none focus:border-red-500"
+          className="w-full min-w-0 rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none focus:border-accent"
         />
         <input
           type="email"
@@ -336,19 +336,19 @@ export default function TrackOrderForm() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email used at checkout (optional)"
           aria-label="Email"
-          className="w-full min-w-0 rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none focus:border-red-500"
+          className="w-full min-w-0 rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none focus:border-accent"
         />
         <button
           type="submit"
           disabled={loading}
-          className="shrink-0 rounded-lg bg-red-600 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-red-500 disabled:opacity-60"
+          className="shrink-0 rounded-lg bg-accent px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-accent-hover disabled:opacity-60"
         >
           {loading ? "Checking..." : "Track Order"}
         </button>
       </form>
 
       {error && (
-        <p className="mt-3 rounded-lg border border-red-200 bg-red-50 px-3.5 py-2.5 text-sm text-red-700">
+        <p className="mt-3 rounded-lg border border-accent-border bg-accent-subtle px-3.5 py-2.5 text-sm text-accent-hover">
           {error}
         </p>
       )}
@@ -363,7 +363,7 @@ export default function TrackOrderForm() {
               </p>
               <p
                 className={`mt-0.5 text-base font-semibold ${
-                  result.banner?.key === "cancelled" ? "text-red-700" : "text-neutral-900"
+                  result.banner?.key === "cancelled" ? "text-accent-hover" : "text-neutral-900"
                 }`}
               >
                 {HEADLINE_ICONS[result.headline] ? `${HEADLINE_ICONS[result.headline]} ` : ""}
@@ -385,7 +385,7 @@ export default function TrackOrderForm() {
           )}
 
           {result.customerMessage && (
-            <p className="mt-2.5 rounded-lg border border-red-100 bg-red-50 px-3.5 py-2.5 text-sm text-neutral-800">
+            <p className="mt-2.5 rounded-lg border border-red-100 bg-accent-subtle px-3.5 py-2.5 text-sm text-neutral-800">
               {result.customerMessage}
             </p>
           )}
@@ -587,7 +587,7 @@ export default function TrackOrderForm() {
                 <ol className="mt-3 space-y-3 border-l border-neutral-300 pl-4">
                   {historyEvents.map((event, index) => (
                     <li key={`${event.label}-${index}`} className="relative">
-                      <span className="absolute -left-[17px] top-1 h-2 w-2 rounded-full bg-red-600" />
+                      <span className="absolute -left-[17px] top-1 h-2 w-2 rounded-full bg-accent" />
                       <p className="text-sm font-medium text-neutral-900">{event.label}</p>
                       <p className="text-xs text-neutral-500">{formatDate(event.createdAt)}</p>
                     </li>
@@ -618,7 +618,7 @@ export default function TrackOrderForm() {
 
       <p className="mt-5 text-xs text-neutral-500">
         Order not showing up, or need more detail?{" "}
-        <Link href="/contact" className="text-red-600 hover:text-red-700">
+        <Link href="/contact" className="text-accent hover:text-accent-hover">
           Contact support
         </Link>{" "}
         with your order ID.

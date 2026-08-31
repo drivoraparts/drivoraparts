@@ -36,7 +36,7 @@ export default function AdminDashboardShell({
             />
             <aside className="fixed inset-y-0 left-0 z-50 flex w-64 flex-col border-r border-zinc-200 bg-white shadow-xl md:hidden">
               <div className={adminUi.sidebarBrand}>
-                <p className="text-xs font-semibold uppercase tracking-[0.35em] text-red-600">
+                <p className="text-xs font-semibold uppercase tracking-[0.35em] text-accent">
                   DrivoraParts
                 </p>
                 <p className="mt-2 text-lg font-semibold text-zinc-900">Admin Console</p>

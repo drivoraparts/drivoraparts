@@ -46,7 +46,7 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
           {isPage ? (
             <Link
               href={routes.all}
-              className="mt-6 inline-block rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white hover:bg-red-700"
+              className="mt-6 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-active"
             >
               {t("continueShopping")}
             </Link>
@@ -83,7 +83,7 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
               <Link
                 href={routes.product(item.id)}
                 onClick={onClose}
-                className={`font-medium text-neutral-900 hover:text-red-600 ${isPage ? "text-base sm:text-lg" : ""}`}
+                className={`font-medium text-neutral-900 hover:text-accent-hover ${isPage ? "text-base sm:text-lg" : ""}`}
               >
                 {item.name}
               </Link>
@@ -130,7 +130,7 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
                     removeFromCart(item.id);
                     showToast("Removed from cart");
                   }}
-                  className="text-sm text-red-600 hover:text-red-700"
+                  className="text-sm text-accent hover:text-accent-hover"
                 >
                   {t("remove")}
                 </button>
@@ -155,7 +155,7 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
           <Link
             href="/checkout"
             onClick={onClose}
-            className="mb-3 block w-full rounded-lg bg-red-600 py-3 text-center font-semibold text-white hover:bg-red-700"
+            className="mb-3 block w-full rounded-lg bg-accent py-3 text-center font-semibold text-white hover:bg-accent-active"
           >
             {t("proceedCheckout")}
           </Link>
@@ -185,14 +185,14 @@ export default function CartContents({ variant = "drawer", onClose }: CartConten
               <Link
                 href="/cart"
                 onClick={onClose}
-                className="text-sm font-medium text-neutral-800 underline-offset-2 hover:text-red-600 hover:underline"
+                className="text-sm font-medium text-neutral-800 underline-offset-2 hover:text-accent-hover hover:underline"
               >
                 {t("viewAll")}
               </Link>
               <button
                 type="button"
                 onClick={handleClear}
-                className="text-sm text-neutral-500 underline-offset-2 hover:text-red-600 hover:underline"
+                className="text-sm text-neutral-500 underline-offset-2 hover:text-accent-hover hover:underline"
               >
                 {t("clearCart")}
               </button>

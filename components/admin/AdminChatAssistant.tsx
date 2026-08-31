@@ -131,7 +131,7 @@ export default function AdminChatAssistant() {
                 className={`rounded-lg px-3 py-2 ${
                   message.role === "assistant"
                     ? "bg-white shadow-sm border border-zinc-200 text-zinc-700"
-                    : "bg-red-50 text-red-800"
+                    : "bg-accent-subtle text-accent-hover"
                 }`}
               >
                 {message.content}
@@ -146,7 +146,7 @@ export default function AdminChatAssistant() {
                   key={suggestion}
                   type="button"
                   onClick={() => sendMessage(suggestion)}
-                  className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 hover:border-red-500/40"
+                  className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 hover:border-accent/40"
                 >
                   {suggestion}
                 </button>
@@ -165,12 +165,12 @@ export default function AdminChatAssistant() {
               value={input}
               onChange={(event) => setInput(event.target.value)}
               placeholder="Ask about sales, stock, suppliers..."
-              className="flex-1 rounded-lg bg-zinc-50 border border-zinc-200 px-3 py-2 text-sm outline-none focus:border-red-500"
+              className="flex-1 rounded-lg bg-zinc-50 border border-zinc-200 px-3 py-2 text-sm outline-none focus:border-accent"
             />
             <button
               type="submit"
               disabled={loading}
-              className="rounded-lg bg-red-600 px-3 py-2 text-sm font-semibold disabled:opacity-60"
+              className="rounded-lg bg-accent px-3 py-2 text-sm font-semibold disabled:opacity-60"
             >
               Send
             </button>
@@ -181,7 +181,7 @@ export default function AdminChatAssistant() {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="pointer-events-auto rounded-full bg-red-600 px-5 py-3 text-sm font-bold shadow-lg"
+        className="pointer-events-auto rounded-full bg-accent px-5 py-3 text-sm font-bold shadow-lg"
       >
         {open ? "Close Assistant" : "AI Assistant"}
       </button>

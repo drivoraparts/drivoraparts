@@ -57,7 +57,7 @@ export default function CategoryProductGrid({
         <div className="mt-8 text-center">
           <Link
             href={`${routes.all}?category=${encodeURIComponent(categorySlug)}`}
-            className="inline-block rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500"
+            className="inline-block rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover"
           >
             View all {allProducts.length.toLocaleString()} products
           </Link>

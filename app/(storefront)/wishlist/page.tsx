@@ -35,7 +35,7 @@ export default function WishlistPage() {
           <Link
             href={routes.all}
             prefetch={false}
-            className="mt-4 inline-block rounded-full bg-red-600 px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-700"
+            className="mt-4 inline-block rounded-full bg-accent px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-active"
           >
             Browse marketplace
           </Link>

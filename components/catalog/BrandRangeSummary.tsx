@@ -86,7 +86,7 @@ export default function BrandRangeSummary({
         warranty stated on the product page.{" "}
         <Link
           href={routes.category(categorySlug)}
-          className="font-medium text-red-600 underline-offset-2 hover:underline"
+          className="font-medium text-accent underline-offset-2 hover:underline"
         >
           See the full {categoryName} range
         </Link>
@@ -103,7 +103,7 @@ export default function BrandRangeSummary({
               <li key={sibling.slug}>
                 <Link
                   href={routes.brand(categorySlug, sibling.slug)}
-                  className="inline-block rounded-full border border-neutral-300 px-3 py-1 text-xs text-neutral-700 transition hover:border-red-300 hover:text-red-700"
+                  className="inline-block rounded-full border border-neutral-300 px-3 py-1 text-xs text-neutral-700 transition hover:border-accent-border hover:text-accent-hover"
                 >
                   {sibling.name}
                 </Link>

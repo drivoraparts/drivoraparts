@@ -27,7 +27,7 @@ export default async function AdminOrdersPage() {
             return (
               <div
                 key={order.id}
-                className="flex items-stretch gap-2 rounded-lg border border-zinc-200 bg-white shadow-sm transition hover:border-red-300"
+                className="flex items-stretch gap-2 rounded-lg border border-zinc-200 bg-white shadow-sm transition hover:border-accent-border"
               >
                 <Link
                   href={`/admin/orders/${order.id}`}

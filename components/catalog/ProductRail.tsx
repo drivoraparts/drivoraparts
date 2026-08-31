@@ -32,7 +32,7 @@ export default function ProductRail({
       <div className="mx-auto max-w-6xl">
         <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-accent">
               {eyebrow}
             </p>
             <h2 className="mt-1 text-xl font-bold text-neutral-900 sm:text-2xl">
@@ -48,7 +48,7 @@ export default function ProductRail({
             <Link
               href={viewAllHref}
               prefetch={false}
-              className="touch-manipulation text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
+              className="touch-manipulation text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
             >
               View all →
             </Link>
@@ -63,7 +63,7 @@ export default function ProductRail({
             >
               <div className="relative">
                 {badge ? (
-                  <span className="absolute left-3 top-3 z-20 rounded-full bg-red-600 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
+                  <span className="absolute left-3 top-3 z-20 rounded-full bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
                     {badge}
                   </span>
                 ) : null}

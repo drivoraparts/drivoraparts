@@ -31,7 +31,7 @@ export default async function AdminSearchQueryPage({ searchParams }: PageProps) 
       <div className="mb-6">
         <Link
           href={`/admin/search?range=${rangeKey}`}
-          className="text-sm font-medium text-red-600 hover:underline"
+          className="text-sm font-medium text-accent hover:underline"
         >
           ← Back to Search Analytics
         </Link>
@@ -111,7 +111,7 @@ export default async function AdminSearchQueryPage({ searchParams }: PageProps) 
                           <td className="py-3 pr-4 text-zinc-900">
                             <Link
                               href={`/product/${product.productId}`}
-                              className="hover:text-red-700 hover:underline"
+                              className="hover:text-accent-hover hover:underline"
                             >
                               {product.productName}
                             </Link>

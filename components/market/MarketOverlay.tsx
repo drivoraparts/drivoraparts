@@ -148,12 +148,12 @@ export default function MarketOverlay({ onClose }: Props) {
                 className={`
                   p-5 rounded-xl border text-left
                   bg-white/5 border-white/10 text-white
-                  hover:border-red-500 hover:bg-white/10
+                  hover:border-accent hover:bg-white/10
                   transition active:scale-95
-                  ${clickAnim === group ? "scale-95 bg-red-600" : ""}
+                  ${clickAnim === group ? "scale-95 bg-accent" : ""}
                 `}
               >
-                <span className="text-red-500 font-bold uppercase">
+                <span className="text-accent font-bold uppercase">
                   {group.replace("-", " ")}
                 </span>
               </button>
@@ -171,7 +171,7 @@ export default function MarketOverlay({ onClose }: Props) {
                   p-5 rounded-xl border bg-white/5 border-white/10
                   hover:scale-[1.03] transition
                   active:scale-95 cursor-pointer
-                  ${clickAnim === item ? "scale-95 bg-red-600" : ""}
+                  ${clickAnim === item ? "scale-95 bg-accent" : ""}
                 `}
                 onClick={() => handleClick(item, () => {})}
               >

@@ -64,12 +64,12 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/35 via-neutral-900/50 to-neutral-900/75" />
 
         <div className="relative z-20 mx-auto max-w-4xl px-4 text-center text-white sm:px-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-red-400">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-on-dark">
             DrivoraParts Marketplace
           </p>
           <h1 className="mt-3 text-[clamp(1.75rem,5vw,3.25rem)] font-bold leading-tight tracking-tight">
             Performance Parts &{" "}
-            <span className="text-red-500">Truck Beds</span>
+            <span className="text-accent">Truck Beds</span>
             <span className="block text-[0.92em] font-bold text-white">
               Built for Real Builds
             </span>
@@ -84,7 +84,7 @@ export default function Home() {
             <Link
               href={routes.all}
               prefetch={false}
-              className="touch-manipulation inline-block rounded-full bg-red-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-700 active:bg-red-800"
+              className="touch-manipulation inline-block rounded-full bg-accent px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-active active:bg-red-800"
             >
               Shop All Parts
             </Link>
@@ -110,7 +110,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-accent">
                 Popular Categories
               </p>
               <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
@@ -120,7 +120,7 @@ export default function Home() {
             <Link
               href="/catalog"
               prefetch={false}
-              className="touch-manipulation text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
+              className="touch-manipulation text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
             >
               Full catalog →
             </Link>
@@ -139,7 +139,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-red-600">
+                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-accent">
                   Curated from live inventory
                 </p>
                 <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
@@ -149,7 +149,7 @@ export default function Home() {
               <Link
                 href={routes.all}
                 prefetch={false}
-                className="touch-manipulation text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
+                className="touch-manipulation text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
               >
                 View all →
               </Link>
@@ -206,7 +206,7 @@ export default function Home() {
             <Link
               href={routes.all}
               prefetch={false}
-              className="touch-manipulation inline-block rounded-full bg-red-600 px-10 py-3.5 text-sm font-bold uppercase tracking-wide transition-colors hover:bg-red-500 active:bg-red-700"
+              className="touch-manipulation inline-block rounded-full bg-accent px-10 py-3.5 text-sm font-bold uppercase tracking-wide transition-colors hover:bg-accent-hover active:bg-accent-active"
             >
               Browse marketplace
             </Link>

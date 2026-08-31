@@ -99,7 +99,7 @@ export default function WhyDrivoraSection() {
     >
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
         <ScrollReveal>
-          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-red-600">
+          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
             Why Drivora
           </p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-[2rem]">
@@ -112,7 +112,7 @@ export default function WhyDrivoraSection() {
                 <div
                   className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
                     reason.accent === "red"
-                      ? "bg-red-50 text-red-600"
+                      ? "bg-accent-subtle text-accent"
                       : "bg-neutral-100 text-neutral-700"
                   }`}
                 >

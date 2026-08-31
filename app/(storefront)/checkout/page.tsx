@@ -31,7 +31,7 @@ type ShippingQuoteOption = {
 };
 
 const inputClass =
-  "box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-red-500";
+  "box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-accent";
 
 export default function CheckoutPage() {
   const [hydrated, setHydrated] = useState(false);
@@ -301,7 +301,7 @@ export default function CheckoutPage() {
         {cart.length === 0 ? (
           <div className="text-center">
             <p className="mb-4 text-neutral-500">Your cart is empty.</p>
-            <Link href="/catalog" className="text-red-500 hover:underline">
+            <Link href="/catalog" className="text-accent hover:underline">
               Browse catalog
             </Link>
           </div>
@@ -481,7 +481,7 @@ export default function CheckoutPage() {
                       href="https://changenow.io/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-red-600 underline hover:text-red-700"
+                      className="text-accent underline hover:text-accent-hover"
                     >
                       ChangeNOW
                     </a>
@@ -529,7 +529,7 @@ export default function CheckoutPage() {
                   </p>
                   <p>
                     Need assistance?{" "}
-                    <Link href="/contact" className="text-red-600 underline hover:text-red-700">
+                    <Link href="/contact" className="text-accent underline hover:text-accent-hover">
                       Contact DrivoraParts Support
                     </Link>{" "}
                     before submitting your payment.
@@ -623,7 +623,7 @@ export default function CheckoutPage() {
                               disabled
                                 ? "cursor-not-allowed border-neutral-200 bg-neutral-50 opacity-70"
                                 : active
-                                  ? "border-red-500 bg-red-50"
+                                  ? "border-accent bg-accent-subtle"
                                   : "border-neutral-300 hover:border-neutral-400"
                             }`}
                           >
@@ -701,7 +701,7 @@ export default function CheckoutPage() {
                 type="button"
                 onClick={handleCheckout}
                 disabled={submitting}
-                className="box-border w-full max-w-full rounded-lg bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500 active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
+                className="box-border w-full max-w-full rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
               >
                 {submitting ? t("processing") : t("payNow")}
               </button>

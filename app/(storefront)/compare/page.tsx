@@ -116,7 +116,7 @@ export default function ComparePage() {
           <Link
             href={routes.all}
             prefetch={false}
-            className="mt-4 inline-block rounded-full bg-red-600 px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-700"
+            className="mt-4 inline-block rounded-full bg-accent px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-active"
           >
             Browse marketplace
           </Link>
@@ -138,7 +138,7 @@ export default function ComparePage() {
                       type="button"
                       aria-label={`Remove ${product.name} from compare`}
                       onClick={() => removeFromCompare(product.id)}
-                      className="mb-2 text-xs font-semibold text-neutral-400 hover:text-red-600"
+                      className="mb-2 text-xs font-semibold text-neutral-400 hover:text-accent-hover"
                     >
                       ✕ Remove
                     </button>
@@ -151,7 +151,7 @@ export default function ComparePage() {
                           className="h-full w-full object-cover"
                         />
                       </div>
-                      <p className="mt-2 line-clamp-2 text-sm font-bold text-neutral-900 hover:text-red-600">
+                      <p className="mt-2 line-clamp-2 text-sm font-bold text-neutral-900 hover:text-accent-hover">
                         {product.name}
                       </p>
                     </Link>

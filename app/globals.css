@@ -5,22 +5,115 @@
 @source not "../drivoraparts-ci-test";
 
 /* =========================
-   STOREFRONT THEME
+   DRIVORAPARTS COLOUR SYSTEM
+   -------------------------
+   Single source of truth. Nothing should hard-code a brand
+   colour; use these tokens or the Tailwind utilities mapped
+   from them in the @theme block below.
+
+   THE ACCENT IS TWO-TONE, AND THAT IS DELIBERATE.
+   The brand orange #C96A24 measures 3.77:1 on white, which
+   fails WCAG AA for normal text — it is only valid at 18pt+.
+   As a CTA and link colour that is disqualifying, and it is
+   worse than the red it replaces (4.83:1). So the same hue
+   is published at two lightnesses:
+
+     --accent          #9D531C   5.69 white / 5.27 warm / 4.53 chrome
+     --accent-hover    #8B4919   6.85 white / 6.34 warm / 5.45 chrome
+     --accent-on-dark  #C96A24   4.94:1 on charcoal
+
+   Use --accent on light backgrounds and --accent-on-dark on
+   dark ones. Never the reverse.
+
+   --accent is darker than it first looks because it must clear
+   4.5:1 on the DARKEST light surface, which is --chrome
+   (#E8E5DE), not white. An earlier value passed on white and
+   warm white but measured 3.96:1 in the header.
+
+   One measured caveat: --accent-on-dark against --surface-dark
+   (#1A1D1F) is 4.49:1, a hair under AA. Fine for large text,
+   not for body copy — put body-size accent text on --background-dark.
+
+   Sand is a DARK-SURFACE COLOUR ONLY. #B9A27A on charcoal is
+   7.55:1 (AAA); on white it is 2.47:1, an outright fail.
 ========================= */
 :root {
-  --background: #f3f4f6;
-  --surface: #ffffff;
-  --surface-muted: #f9fafb;
-  --chrome: #e5e7eb;
-  --foreground: #111827;
-  --muted: #6b7280;
-  --border: #d1d5db;
+  /* Light context — catalog, product pages, forms, checkout */
+  --background: #f7f6f2;        /* warm white */
+  --surface: #ffffff;           /* cards, panels */
+  --surface-muted: #f2f0ea;     /* subtle fills */
+  --surface-elevated: #ffffff;  /* modals, popovers */
+  --chrome: #e8e5de;            /* light stone — bars, rails */
+  --foreground: #111315;        /* deep charcoal, 17.22:1 on background */
+  --muted: #5c574b;             /* warm grey, 6.65:1 — AA for secondary text */
+  --muted-foreground: #77715f;  /* muted khaki, for large/decorative text only */
+  --border: #ded9cf;
+  --border-strong: #c9c2b4;
+
+  /* Dark context — hero, footer, lifestyle sections */
+  --background-dark: #111315;   /* deep charcoal */
+  --surface-dark: #1a1d1f;      /* dark graphite */
+  --foreground-on-dark: #f7f6f2;
+  --muted-on-dark: #a9a296;     /* 7.36:1 on charcoal */
+  --border-on-dark: #2c3033;
+
+  /* Accent — see the two-tone note above */
+  --accent: #9d531c;
+  --accent-hover: #8b4919;
+  --accent-active: #7f4216;
+  --accent-on-dark: #c96a24;
+  --accent-foreground: #ffffff; /* 5.69:1 on --accent */
+  --accent-subtle: #fbf1e8;     /* tinted fill for badges/selected states */
+  --accent-border: #e4c6ab;
+
+  /* Earth accents — dark surfaces only */
+  --sand: #b9a27a;
+  --khaki: #77715f;
+
+  /* Status. Chosen to clear AA on white rather than for vividness. */
+  --success: #1f7a4d;
+  --success-subtle: #eaf4ee;
+  --warning: #8a5a12;
+  --warning-subtle: #fbf2e3;
+  --error: #b3261e;
+  --error-subtle: #fbeceb;
+  --info: #1f5f7a;
+  --info-subtle: #e9f2f6;
+
   color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-dark: var(--surface-dark);
+  --color-background-dark: var(--background-dark);
+  --color-chrome: var(--chrome);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted-on-dark: var(--muted-on-dark);
+  --color-foreground-on-dark: var(--foreground-on-dark);
+  --color-border-strong: var(--border-strong);
+  --color-border-on-dark: var(--border-on-dark);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-active: var(--accent-active);
+  --color-accent-on-dark: var(--accent-on-dark);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-border: var(--accent-border);
+  --color-sand: var(--sand);
+  --color-khaki: var(--khaki);
+  --color-success: var(--success);
+  --color-success-subtle: var(--success-subtle);
+  --color-warning: var(--warning);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-error: var(--error);
+  --color-error-subtle: var(--error-subtle);
+  --color-info: var(--info);
+  --color-info-subtle: var(--info-subtle);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

@@ -31,7 +31,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 const YEARS = Array.from({ length: CURRENT_YEAR - 1969 }, (_, i) => CURRENT_YEAR - i);
 
 const fieldClass =
-  "w-full rounded-lg border border-neutral-300 bg-white px-3 py-3 text-sm text-neutral-900 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500/10";
+  "w-full rounded-lg border border-neutral-300 bg-white px-3 py-3 text-sm text-neutral-900 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/10";
 
 export default function ShopByVehicleFinder({
   className = "",
@@ -133,7 +133,7 @@ export default function ShopByVehicleFinder({
 
       <button
         type="submit"
-        className="mt-5 w-full touch-manipulation rounded-lg bg-red-600 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-red-700 active:bg-red-800 sm:w-auto sm:px-10"
+        className="mt-5 w-full touch-manipulation rounded-lg bg-accent py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-active active:bg-red-800 sm:w-auto sm:px-10"
       >
         Find Compatible Parts
       </button>
