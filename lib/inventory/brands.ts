@@ -80,6 +80,9 @@ export const brands: Brand[] = [
   { slug: "south-bend", name: "South Bend Clutch", category: "transmission" },
   { slug: "centerforce", name: "Centerforce", category: "transmission" },
 
+  { slug: "zumbrota", name: "Zumbrota Drivetrain", category: "transmission" },
+  { slug: "bd-diesel", name: "BD Diesel", category: "transmission" },
+
   // Bumpers
   { slug: "arb", name: "ARB", category: "bumper" },
   { slug: "tjm", name: "TJM", category: "bumper" },

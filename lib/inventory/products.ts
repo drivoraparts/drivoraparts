@@ -5065,6 +5065,219 @@ Shipping
 Worldwide Shipping Available`,
   },
 
+  /* --- OBS 7.3 drivetrain and starting --- */
+  {
+    id: 2136,
+    createdAt: 1788134400000,
+    name: "1994–1995 Ford 7.3L Power Stroke OBS ZF S5-42 5-Speed Manual Transmission 4x4 — Remanufactured",
+    category: "transmission",
+    brand: "zumbrota",
+    price: 2299.89,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Zumbrota RMTS5-42-12 (ZF S5-42, 4WD, without PTO)",
+    fitment:
+      "1987–1995 Ford 4WD applications including the 1994–1995 F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Without PTO. This is the S5-42; from 1996 Ford fitted the S5-47, so a 1996 or 1997 truck takes a different gearbox. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke, F350 7.3 Powerstroke and ZF5.",
+    drivetrain: "4x4",
+    weight: "Heavy — ships as freight",
+    freightNotes:
+      "Palletised freight. Cost calculated by destination; a liftgate or forklift is needed at delivery.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, clutch and hydraulics, and damage from incorrect fluid or a worn clutch.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Remanufactured ZF S5-42 five-speed manual transmission for the 1994–1995 OBS 7.3L Power Stroke, in 4x4 configuration without PTO.
+
+The ZF five-speed is the gearbox most OBS owners want behind a 7.3, and it is the reason a manual OBS commands a premium over an automatic one. This is the S5-42, the version Ford used through 1995.
+
+The year matters. From 1996 Ford moved to the S5-47, a different and stronger unit, so a 1996 or 1997 truck does not take this gearbox. Confirm which your truck has before ordering — "ZF5" is used loosely for both and they are not the same transmission.
+
+Supplied without PTO. Clutch, hydraulics and the bellhousing are not included.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1987–1995 (covers 1994–1995 within the OBS 7.3 run)
+Vehicle: Ford F-250 / F-350
+Transmission: ZF S5-42, 5-speed manual
+Drive configuration: 4WD
+PTO: Without
+Manufacturer part number: RMTS5-42-12
+Condition: Remanufactured
+
+Highlights
+
+The S5-42 — 1996–1997 trucks take the S5-47 instead
+4WD configuration, without PTO
+Clutch and hydraulics not included
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2137,
+    createdAt: 1788134400000,
+    name: "1995–1997 Ford 7.3L Power Stroke OBS E4OD Transmission & Torque Converter Package — BD Diesel",
+    category: "transmission",
+    brand: "bd-diesel",
+    price: 4899,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "BD Diesel 106442XSM",
+    fitment:
+      "1995–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel and the E4OD automatic. Matched transmission and converter set. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: ["E4OD transmission", "Matched torque converter"],
+    weight: "Heavy — ships as freight",
+    freightNotes:
+      "Palletised freight. Cost calculated by destination; a liftgate or forklift is needed at delivery.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, fluid, cooler lines, and damage from overheating or incorrect fluid.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `BD Diesel E4OD transmission and torque converter package for the OBS 7.3L Power Stroke.
+
+The E4OD is the automatic behind most OBS 7.3s, and it is the weak point of the drivetrain when the truck tows. Heat is what kills them, so a transmission that has spent its life pulling a trailer without an adequate cooler is usually the one being replaced.
+
+Supplied as a matched transmission and converter set. That pairing matters — a rebuilt transmission behind a tired converter is a common way to fail a rebuild early, because a converter that is shedding debris will contaminate the new unit.
+
+Fit an adequate cooler and change the fluid on schedule. That is what determines whether this lasts.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1995–1997
+Vehicle: Ford F-250 / F-350
+Transmission: E4OD 4-speed automatic
+Manufacturer: BD Diesel
+Manufacturer part number: 106442XSM
+Condition: Remanufactured
+Contents: Transmission and matched torque converter
+
+Highlights
+
+Transmission and converter matched as a set
+Heat is what kills an E4OD — cooling determines its life
+Fluid and cooler lines not included
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2138,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Starter (3-Bolt)",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 149.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F5TU-11000-AA (interchange F4TZ-11002-A · F5TU-11000-AB · F5TU-11000-AD)",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Three-bolt pattern — confirm yours before ordering. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Three-bolt starter for the 7.3L Power Stroke.
+
+A diesel of this size asks a great deal of its starter, and a tired one shows up first on cold mornings — slow cranking, a click with no crank, or a start that needs two attempts. Because slow cranking also prevents the glow plug system from doing its job, a weak starter often gets misdiagnosed as a glow plug fault.
+
+Check the battery cables and grounds before replacing the starter. Corroded cables produce identical symptoms and are cheaper to fix.
+
+Confirm you need the three-bolt pattern before ordering.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Mounting: 3-bolt
+Manufacturer part number: F5TU-11000-AA
+Condition: New
+
+Highlights
+
+Three-bolt pattern — verify against your engine
+Slow cranking is often cables or batteries, not the starter
+Cross-references F4TZ-11002-A, F5TU-11000-AB and F5TU-11000-AD
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2139,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Gear Reduction Starter",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 259.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F4TZ-11002-A-GRS (interchange F5TU-11000-AA · M8T50071)",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Gear reduction starter for the 7.3L Power Stroke.
+
+A gear reduction starter turns the engine faster while drawing less current than the standard unit. On a high-compression diesel that matters most in cold weather, where cranking speed is the difference between a start and a long crank.
+
+Worth the step up over a standard replacement on a truck that lives somewhere cold, tows heavy, or has ever been slow to start. On a truck that starts well in mild weather, the standard three-bolt starter is the cheaper and adequate choice.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Type: Gear reduction
+Manufacturer part number: F4TZ-11002-A-GRS
+Condition: New
+
+Highlights
+
+Faster cranking on less current than the standard starter
+The upgrade that matters in cold climates
+Standard three-bolt starter is the cheaper option if yours starts well
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
   {
     id: CHECKOUT_TEST_PRODUCT_ID,
     name: "Checkout Test Part",
