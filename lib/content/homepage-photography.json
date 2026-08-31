@@ -47,49 +47,6 @@
     "downloadedAt": "2026-08-31T17:10:09.755Z",
     "originalId": "35304722"
   },
-  "offroader": {
-    "slot": "offroader",
-    "status": "ok",
-    "purpose": "THE OFF-ROADER — genuinely off the blacktop.",
-    "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/15928394/pexels-photo-15928394.jpeg",
-    "landingPage": "https://www.pexels.com/photo/4x4-car-in-mud-15928394/",
-    "title": "SUV navigating through muddy terrain with mountains in the background, showcasing offroad adventure.",
-    "creator": "Andrés  Chirrisco",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "attributionRequired": false,
-    "avgColor": "#6D7577",
-    "toneLuminance": 0.173,
-    "score": 7.99,
-    "originalWidth": 6240,
-    "originalHeight": 4160,
-    "intrinsicWidth": 1600,
-    "intrinsicHeight": 1067,
-    "variants": [
-      {
-        "width": 640,
-        "file": "/homepage/offroader/640.webp",
-        "bytes": 31480
-      },
-      {
-        "width": 1024,
-        "file": "/homepage/offroader/1024.webp",
-        "bytes": 68838
-      },
-      {
-        "width": 1600,
-        "file": "/homepage/offroader/1600.webp",
-        "bytes": 143126
-      }
-    ],
-    "sha256": "1d68e1920ea842a0",
-    "query": "Jeep off-road trail vehicle",
-    "downloadedAt": "2026-08-31T17:09:06.650Z",
-    "originalId": "15928394"
-  },
   "project": {
     "slot": "project",
     "status": "ok",
@@ -115,23 +72,24 @@
       {
         "width": 640,
         "file": "/homepage/project/640.webp",
-        "bytes": 37496
+        "bytes": 38150
       },
       {
         "width": 1024,
         "file": "/homepage/project/1024.webp",
-        "bytes": 69936
+        "bytes": 70906
       },
       {
         "width": 1600,
         "file": "/homepage/project/1600.webp",
-        "bytes": 123282
+        "bytes": 124454
       }
     ],
     "sha256": "7115ef92bc0ff81a",
     "query": "car on lift workshop",
     "downloadedAt": "2026-08-31T17:09:50.404Z",
-    "originalId": "8478235"
+    "originalId": "8478235",
+    "grade": "film-warm"
   },
   "tourer": {
     "slot": "tourer",
@@ -158,23 +116,24 @@
       {
         "width": 640,
         "file": "/homepage/tourer/640.webp",
-        "bytes": 16418
+        "bytes": 15986
       },
       {
         "width": 1024,
         "file": "/homepage/tourer/1024.webp",
-        "bytes": 36924
+        "bytes": 36176
       },
       {
         "width": 1600,
         "file": "/homepage/tourer/1600.webp",
-        "bytes": 78288
+        "bytes": 75774
       }
     ],
     "sha256": "315055ddffe90369",
     "query": "Icelandic offroad vehicle",
     "downloadedAt": "2026-08-31T17:08:55.006Z",
-    "originalId": "17519361"
+    "originalId": "17519361",
+    "grade": "warm-color"
   },
   "closing": {
     "slot": "closing",
@@ -249,23 +208,24 @@
       {
         "width": 640,
         "file": "/homepage/performance/640.webp",
-        "bytes": 25850
+        "bytes": 28068
       },
       {
         "width": 1024,
         "file": "/homepage/performance/1024.webp",
-        "bytes": 53166
+        "bytes": 58850
       },
       {
         "width": 1600,
         "file": "/homepage/performance/1600.webp",
-        "bytes": 109448
+        "bytes": 121028
       }
     ],
     "sha256": "2c3917e45285bf44",
     "query": "V8 engine bay muscle car",
     "downloadedAt": "2026-08-31T17:23:27.175Z",
-    "originalId": "18617941"
+    "originalId": "18617941",
+    "grade": "full-color"
   },
   "hero": {
     "slot": "hero",
@@ -315,13 +275,6 @@
     "downloadedAt": "2026-08-31T17:28:18.000Z",
     "originalId": "13696313"
   },
-  "workhorse": {
-    "slot": "workhorse",
-    "status": "below-bar",
-    "purpose": "THE WORKHORSE — a truck earning its keep.",
-    "note": "Four rounds produced a tipper lorry, a Mitsubishi press unit with door decals, a compact ute on tarmac, and a rusted FJ40 in flat light. None is premium editorial, so the panel renders the typographic plate.",
-    "checkedAt": "2026-08-31T17:41:02.870Z"
-  },
   "veh-ford-ranger-4x4": {
     "slot": "veh-ford-ranger-4x4",
     "status": "ok",
@@ -346,24 +299,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-ford-ranger-4x4/480.webp",
-        "bytes": 22914
+        "bytes": 27282
       },
       {
         "width": 800,
         "file": "/homepage/veh-ford-ranger-4x4/800.webp",
-        "bytes": 60680
+        "bytes": 70484
       },
       {
         "width": 1280,
         "file": "/homepage/veh-ford-ranger-4x4/1280.webp",
-        "bytes": 143010
+        "bytes": 165734
       }
     ],
     "sha256": "7c1bd3cb2f65cd02",
     "query": "Ford Ranger pickup",
     "downloadedAt": "2026-08-31T17:38:56.396Z",
     "originalId": "Ford Ranger Stormtrak (T6, P375) 1X7A0369.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-toyota-hilux-4x4": {
     "slot": "veh-toyota-hilux-4x4",
@@ -389,24 +342,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-toyota-hilux-4x4/480.webp",
-        "bytes": 13948
+        "bytes": 15572
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-hilux-4x4/800.webp",
-        "bytes": 28300
+        "bytes": 31530
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-hilux-4x4/1280.webp",
-        "bytes": 51706
+        "bytes": 57784
       }
     ],
     "sha256": "c8c0b91afa353d80",
     "query": "Toyota Hilux",
     "downloadedAt": "2026-08-31T17:39:00.210Z",
     "originalId": "2026 Toyota Hilux BEV.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-isuzu-d-max-4x4": {
     "slot": "veh-isuzu-d-max-4x4",
@@ -432,24 +385,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-isuzu-d-max-4x4/480.webp",
-        "bytes": 30138
+        "bytes": 35638
       },
       {
         "width": 800,
         "file": "/homepage/veh-isuzu-d-max-4x4/800.webp",
-        "bytes": 79480
+        "bytes": 93928
       },
       {
         "width": 1280,
         "file": "/homepage/veh-isuzu-d-max-4x4/1280.webp",
-        "bytes": 179090
+        "bytes": 214686
       }
     ],
     "sha256": "c362bb92f9483f52",
     "query": "Isuzu D-Max",
     "downloadedAt": "2026-08-31T17:39:05.809Z",
     "originalId": "ISUZU D-MAX (SECOND GENERATION, PRE-FACELIFT) China (2).jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-mitsubishi-triton-4x4": {
     "slot": "veh-mitsubishi-triton-4x4",
@@ -475,24 +428,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-mitsubishi-triton-4x4/480.webp",
-        "bytes": 21582
+        "bytes": 24660
       },
       {
         "width": 800,
         "file": "/homepage/veh-mitsubishi-triton-4x4/800.webp",
-        "bytes": 53370
+        "bytes": 60984
       },
       {
         "width": 1280,
         "file": "/homepage/veh-mitsubishi-triton-4x4/1280.webp",
-        "bytes": 117912
+        "bytes": 132796
       }
     ],
     "sha256": "e416f28e2843c7c6",
     "query": "Mitsubishi Triton pickup",
     "downloadedAt": "2026-08-31T17:39:11.972Z",
     "originalId": "Mitsubishi Triton 2.4 GLX 4x2 2024 (4).jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-byd-shark-6-phev": {
     "slot": "veh-byd-shark-6-phev",
@@ -518,24 +471,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-byd-shark-6-phev/480.webp",
-        "bytes": 20456
+        "bytes": 24314
       },
       {
         "width": 800,
         "file": "/homepage/veh-byd-shark-6-phev/800.webp",
-        "bytes": 40902
+        "bytes": 49650
       },
       {
         "width": 1280,
         "file": "/homepage/veh-byd-shark-6-phev/1280.webp",
-        "bytes": 73164
+        "bytes": 89138
       }
     ],
     "sha256": "75bf5821b642e910",
     "query": "BYD Shark pickup",
     "downloadedAt": "2026-08-31T17:39:22.570Z",
     "originalId": "MIAS 2025 - BYD Shark 6 DMO AWD Premium 02.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-mazda-bt-50-4x4": {
     "slot": "veh-mazda-bt-50-4x4",
@@ -561,24 +514,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-mazda-bt-50-4x4/480.webp",
-        "bytes": 27668
+        "bytes": 33922
       },
       {
         "width": 800,
         "file": "/homepage/veh-mazda-bt-50-4x4/800.webp",
-        "bytes": 71854
+        "bytes": 86256
       },
       {
         "width": 1280,
         "file": "/homepage/veh-mazda-bt-50-4x4/1280.webp",
-        "bytes": 173680
+        "bytes": 204904
       }
     ],
     "sha256": "d920b4b4d2dd5d77",
     "query": "Mazda BT-50",
     "downloadedAt": "2026-08-31T17:39:28.333Z",
     "originalId": "2023 Mazda BT-50 3.0 Standard 4x2 in Concrete Gray, 06-23-2024.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-toyota-landcruiser-70-series": {
     "slot": "veh-toyota-landcruiser-70-series",
@@ -604,24 +557,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-toyota-landcruiser-70-series/480.webp",
-        "bytes": 26344
+        "bytes": 29948
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-landcruiser-70-series/800.webp",
-        "bytes": 58796
+        "bytes": 68100
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-landcruiser-70-series/1280.webp",
-        "bytes": 111824
+        "bytes": 132582
       }
     ],
     "sha256": "c9b94d2bd01575b8",
     "query": "Toyota Land Cruiser 70 series",
     "downloadedAt": "2026-08-31T17:39:34.468Z",
     "originalId": "Land Cruiser 70-series bundera 4.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-nissan-navara-4x4": {
     "slot": "veh-nissan-navara-4x4",
@@ -647,24 +600,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-nissan-navara-4x4/480.webp",
-        "bytes": 15560
+        "bytes": 17388
       },
       {
         "width": 800,
         "file": "/homepage/veh-nissan-navara-4x4/800.webp",
-        "bytes": 33464
+        "bytes": 37140
       },
       {
         "width": 1280,
         "file": "/homepage/veh-nissan-navara-4x4/1280.webp",
-        "bytes": 68754
+        "bytes": 77640
       }
     ],
     "sha256": "f9ea91dceee2a9e1",
     "query": "Nissan Navara pickup",
     "downloadedAt": "2026-08-31T17:39:40.996Z",
     "originalId": "2010 Nissan Navara (D40) ST 4-door utility (2011-04-22) 01.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-gwm-cannon": {
     "slot": "veh-gwm-cannon",
@@ -690,24 +643,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-gwm-cannon/480.webp",
-        "bytes": 32270
+        "bytes": 35058
       },
       {
         "width": 800,
         "file": "/homepage/veh-gwm-cannon/800.webp",
-        "bytes": 83534
+        "bytes": 90340
       },
       {
         "width": 1280,
         "file": "/homepage/veh-gwm-cannon/1280.webp",
-        "bytes": 177210
+        "bytes": 190174
       }
     ],
     "sha256": "86ad82035ddb53bf",
     "query": "Great Wall Cannon pickup",
     "downloadedAt": "2026-08-31T17:39:46.205Z",
     "originalId": "Great Wall King Kong Cannon 008.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-volkswagen-amarok-4x4": {
     "slot": "veh-volkswagen-amarok-4x4",
@@ -733,24 +686,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-volkswagen-amarok-4x4/480.webp",
-        "bytes": 17024
+        "bytes": 19006
       },
       {
         "width": 800,
         "file": "/homepage/veh-volkswagen-amarok-4x4/800.webp",
-        "bytes": 42132
+        "bytes": 46650
       },
       {
         "width": 1280,
         "file": "/homepage/veh-volkswagen-amarok-4x4/1280.webp",
-        "bytes": 93870
+        "bytes": 102898
       }
     ],
     "sha256": "384da207ce0ce81e",
     "query": "Volkswagen Amarok",
     "downloadedAt": "2026-08-31T17:39:50.112Z",
     "originalId": "2017 Volkswagen Amarok Highline V6 TDi facelift 3.0.jpg",
-    "treatment": "mono"
+    "grade": "none"
   },
   "veh-ford-obs-73-power-stroke": {
     "slot": "veh-ford-obs-73-power-stroke",
@@ -776,23 +729,109 @@
       {
         "width": 480,
         "file": "/homepage/veh-ford-obs-73-power-stroke/480.webp",
-        "bytes": 29936
+        "bytes": 32288
       },
       {
         "width": 800,
         "file": "/homepage/veh-ford-obs-73-power-stroke/800.webp",
-        "bytes": 76546
+        "bytes": 83422
       },
       {
         "width": 1280,
         "file": "/homepage/veh-ford-obs-73-power-stroke/1280.webp",
-        "bytes": 172790
+        "bytes": 186648
       }
     ],
     "sha256": "48205eaa73dc374b",
     "query": "Ford F-250 1996",
     "downloadedAt": "2026-08-31T17:39:59.054Z",
     "originalId": "1996 Ford F-250 XL 4x4 Regular Cab, rear left 08-05-2023.jpg",
-    "treatment": "mono"
+    "grade": "none"
+  },
+  "workhorse": {
+    "slot": "workhorse",
+    "status": "ok",
+    "purpose": "THE WORKHORSE — a truck earning its keep.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/29107880/pexels-photo-29107880.jpeg",
+    "landingPage": "https://www.pexels.com/photo/vintage-truck-loaded-with-cargo-on-rural-road-29107880/",
+    "title": "Vintage truck carrying heavy cargo bags on a dusty rural road under daylight.",
+    "creator": "Frank Thomas",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#7E7B74",
+    "toneLuminance": 0.199,
+    "score": 8.47,
+    "originalWidth": 6240,
+    "originalHeight": 4160,
+    "intrinsicWidth": 1600,
+    "intrinsicHeight": 1067,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/workhorse/640.webp",
+        "bytes": 28162
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/workhorse/1024.webp",
+        "bytes": 56294
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/workhorse/1600.webp",
+        "bytes": 111166
+      }
+    ],
+    "sha256": "37183780c44a4bf4",
+    "query": "pickup truck farm",
+    "downloadedAt": "2026-08-31T19:59:34.490Z",
+    "grade": "warm-mono"
+  },
+  "offroader": {
+    "slot": "offroader",
+    "status": "ok",
+    "purpose": "THE OFF-ROADER — genuinely off the blacktop.",
+    "vehicle": null,
+    "sourceName": "Pexels",
+    "sourceUrl": "https://images.pexels.com/photos/30657921/pexels-photo-30657921.jpeg",
+    "landingPage": "https://www.pexels.com/photo/toyota-off-road-adventure-in-dusty-mountain-terrain-30657921/",
+    "title": "A rugged Toyota off-roading through a dusty mountain landscape at daytime.",
+    "creator": "Shots by  Sandhu",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "avgColor": "#827A6D",
+    "toneLuminance": 0.198,
+    "score": 8.46,
+    "originalWidth": 7008,
+    "originalHeight": 3971,
+    "intrinsicWidth": 1600,
+    "intrinsicHeight": 907,
+    "variants": [
+      {
+        "width": 640,
+        "file": "/homepage/offroader/640.webp",
+        "bytes": 22986
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/offroader/1024.webp",
+        "bytes": 52566
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/offroader/1600.webp",
+        "bytes": 107154
+      }
+    ],
+    "sha256": "5ffbd5bfc745c28f",
+    "query": "Jeep off-road trail vehicle",
+    "downloadedAt": "2026-08-31T19:59:42.204Z",
+    "grade": "warm-mono-hard"
   }
 }
