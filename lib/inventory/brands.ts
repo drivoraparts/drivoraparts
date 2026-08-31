@@ -36,6 +36,14 @@ export const brands: Brand[] = [
   { slug: "motorcraft", name: "Motorcraft", category: "engine" },
   { slug: "delphi", name: "Delphi Technologies", category: "engine" },
 
+  // Diesel specialists supplying the OBS 7.3 Power Stroke cluster.
+  { slug: "freedom-injection", name: "Freedom Injection", category: "engine" },
+  { slug: "dieselsite", name: "DieselSite", category: "engine" },
+  { slug: "driven-diesel", name: "Driven Diesel", category: "engine" },
+  { slug: "alliant-power", name: "Alliant Power", category: "engine" },
+  { slug: "alliant-power", name: "Alliant Power", category: "electronics" },
+  { slug: "mishimoto", name: "Mishimoto", category: "engine" },
+
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
   // Needed for the OBS 7.3 Power Stroke TP38, which is a Ford part number.

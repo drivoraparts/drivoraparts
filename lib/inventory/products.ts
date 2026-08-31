@@ -4716,6 +4716,355 @@ Shipping
 Worldwide Shipping Available`,
   },
 
+  /* --- OBS 7.3 oil, cooling and fuel-delivery parts --- */
+  {
+    id: 2129,
+    createdAt: 1788134400000,
+    name: "1994–1995 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — HP004X",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 430,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "HP004X (Alliant equivalent AP63621)",
+    fitment:
+      "1994–1995 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. NOT interchangeable with 1996–1997, which uses the HP005X. The 1994–1995 pump carries the anti-drainback check valve inside the pump itself; from 1996 Ford moved that function into a redesigned front timing cover. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated oil or running the engine low on oil.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `High-pressure oil pump for the 1994–1995 OBS 7.3L Power Stroke.
+
+The 7.3 uses a HEUI fuel system, so the injectors are fired by high-pressure engine oil rather than a mechanical pump. When the HPOP wears the truck cranks without starting, starts hard cold, or loses power under load.
+
+This is the HP004X, the correct pump for 1994 and 1995 only. Those trucks carry the anti-drainback check valve inside the pump; from 1996 Ford moved that function into a redesigned front timing cover and fitted the HP005X. The two do not interchange in either direction, and fitting the wrong one causes exactly the hard-starting symptom you were trying to fix.
+
+If your truck is a 1996 or 1997, you want the HP005X instead.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994–1995
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: HP004X
+Condition: Remanufactured
+
+Highlights
+
+Correct pump for 1994–1995 — not a 1996–1997 fitment
+Anti-drainback check valve integral to the pump on these years
+Alliant Power equivalent is AP63621
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2130,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Oil Cooler Kit with Gaskets",
+    category: "engine",
+    brand: "ford",
+    price: 169.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F4TZ-6A636-A",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: ["Oil cooler", "Gasket set"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a neglected cooling system.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Oil cooler and gasket kit for the 7.3L Power Stroke.
+
+The 7.3 runs an oil-to-coolant cooler, and when it fails internally the two mix. Oil in the coolant recovery bottle, or coolant pushing into the oil, is the sign — and it needs attention quickly, because coolant in the oil damages bearings.
+
+Cooling system neglect is the usual cause. Old, depleted coolant lets the cooler corrode from the inside, so it is worth flushing and refilling properly when fitting a new one rather than putting the same coolant back.
+
+The kit includes the gaskets, which must be replaced whenever the cooler comes out.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F4TZ-6A636-A
+Condition: New
+
+Highlights
+
+Includes the gaskets the job requires
+Oil in the coolant bottle is the classic failure sign
+Flush and refill the cooling system when fitting — old coolant kills the replacement
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2131,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Low-Pressure Oil Pump Kit with Seal",
+    category: "engine",
+    brand: "ford",
+    price: 129.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F4TZ-6616-A",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: ["Low-pressure oil pump", "Seal"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Low-pressure oil pump kit for the 7.3L Power Stroke.
+
+Not to be confused with the HPOP. The low-pressure pump is the engine's ordinary oil pump — it lubricates the engine and feeds the high-pressure pump that fires the injectors. On a HEUI engine both matter, and a weak low-pressure pump starves the high-pressure side, producing symptoms that look like an HPOP fault.
+
+Worth checking mechanical oil pressure before condemning either pump; the two failures are easy to confuse and this is the cheaper part.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F4TZ-6616-A
+Condition: New
+
+Highlights
+
+The engine's main oil pump — not the HPOP
+A weak one starves the high-pressure side and mimics an HPOP fault
+Supplied with the seal
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2132,
+    createdAt: 1788134400000,
+    name: "1996–1997 Ford 7.3L Power Stroke OBS Water Pump",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 89.95,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F81Z-8501-CRM",
+    fitment:
+      "1996–2003 Ford 7.3L Power Stroke, including the 1996–1997 OBS F-250 / F-350. This part does NOT cover 1994–1995 — confirm your model year before ordering. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from running contaminated or depleted coolant.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Water pump for the 1996–1997 OBS 7.3L Power Stroke.
+
+Weeping from the pump's weep hole, a bearing whine, or coolant loss with no visible external leak are the usual signs of a failing water pump. On a diesel that works hard, replacing it before it fails outright is cheaper than the alternative.
+
+Note the year: this part covers 1996 onward. If your truck is a 1994 or 1995, confirm the correct pump before ordering — the OBS run is not a single fitment for every component.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1996–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F81Z-8501-CRM
+Condition: Remanufactured
+
+Highlights
+
+Covers 1996 onward — not a 1994–1995 fitment
+Weep-hole seepage is the early warning
+Worth doing alongside a coolant flush
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2133,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Radiator",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 249.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F5TH-8005-C5",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    weight: "Oversized — ships as freight",
+    freightNotes: "Bulky item. Freight cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage in service from debris or corrosion.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Radiator for the 1994.5–1997 OBS 7.3L Power Stroke.
+
+These trucks are thirty years old, and original radiators are long past their service life. Tanks crack, cores clog internally, and a marginal radiator shows up as high coolant temperature towing or climbing rather than as an obvious leak.
+
+A clogged radiator also shortens the life of the oil cooler, since the whole cooling system shares the same degraded coolant. Replacing the radiator is a reasonable moment to flush the system properly.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F5TH-8005-C5
+Condition: New
+
+Highlights
+
+Direct fit for the OBS chassis
+Marginal radiators show up under load, not at idle
+Flush the system when fitting — shared coolant affects the oil cooler too
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2134,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Regulated Return Fuel System Kit — Driven Diesel",
+    category: "engine",
+    brand: "driven-diesel",
+    price: 699.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Driven Diesel DD-73FS-OBS-RRK-V3",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Aftermarket upgrade, not a factory replacement. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, fabrication, and tuning.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Driven Diesel regulated return fuel system for the OBS 7.3L Power Stroke.
+
+This is an upgrade, not a repair part. The factory fuel system on these trucks does not regulate return pressure, which leaves fuel pressure varying with demand — worst exactly when the engine is working hardest. A regulated return holds pressure steady across the range and keeps both cylinder heads fed evenly.
+
+It is the usual first fuel-system modification on a truck that has had injector work, or one being asked to make more power than standard. On a stock truck in good health it is optional.
+
+Fitting involves plumbing work. Budget time accordingly, or have it fitted.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer: Driven Diesel
+Manufacturer part number: DD-73FS-OBS-RRK-V3
+Type: Aftermarket upgrade
+Condition: New
+
+Highlights
+
+Holds fuel pressure steady under load, unlike the factory system
+Feeds both heads evenly — the point of a regulated return
+An upgrade rather than a replacement; a healthy stock truck does not need it
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2135,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS HPOP Seal Kit",
+    category: "engine",
+    brand: "ford",
+    price: 24.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford 2C3Z-9G804-AA",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke high-pressure oil pump, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Seal kit for the 7.3L Power Stroke high-pressure oil pump.
+
+A leaking HPOP is not always a failed HPOP. These pumps commonly weep from their seals while the pump itself is still serviceable, and a seal kit costs a fraction of a replacement pump.
+
+Worth trying before condemning a pump that still builds pressure. If the pump will not make injection control pressure, that is a different fault and seals will not fix it.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: 2C3Z-9G804-AA
+Condition: New
+
+Highlights
+
+A weeping pump is often a seal fault, not a failed pump
+A fraction of the cost of a replacement HPOP
+Will not fix a pump that cannot build pressure
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
   {
     id: CHECKOUT_TEST_PRODUCT_ID,
     name: "Checkout Test Part",
