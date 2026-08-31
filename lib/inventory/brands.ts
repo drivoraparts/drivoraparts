@@ -38,6 +38,8 @@ export const brands: Brand[] = [
 
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
+  // Needed for the OBS 7.3 Power Stroke TP38, which is a Ford part number.
+  { slug: "ford", name: "Ford", category: "turbocharger" },
   { slug: "borgwarner", name: "BorgWarner", category: "turbocharger" },
   { slug: "precision", name: "Precision", category: "turbocharger" },
   { slug: "audi", name: "Audi", category: "turbocharger" },

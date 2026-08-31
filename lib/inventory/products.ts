@@ -3979,6 +3979,212 @@ Shipping
 Worldwide Shipping Available`,
   },
   ...extensionProducts,
+
+  /* =======================================================
+     1994.5–1997 FORD OBS 7.3L POWER STROKE
+     -------------------------------------------------------
+     Part numbers, fitment splits and reference prices below
+     were researched against diesel specialists and Ford
+     part-number cross-references, not inferred.
+
+     This generation is routinely confused with three others,
+     and parts do not interchange with any of them:
+       · 7.3 IDI (pre-1994, indirect injection, no HEUI)
+       · 1999.5–2003 7.3 Power Stroke (Super Duty, GTP38)
+       · 2020+ 7.3 "Godzilla" (petrol V8, unrelated)
+     The catalogue already contains Godzilla and 1999.5–2003
+     parts, so every listing here states the split explicitly.
+
+     PRICING: `price` is the anchor that applyPublicPrices()
+     shows struck through, so it must be a real reference.
+     Each is the current verified street price at a diesel
+     specialist; the 79% shelf price undercuts it. No invented
+     "was" figure is used anywhere in this block.
+
+     IMAGES: default placeholder. These are used/reman diesel
+     components and the only honest photograph is one of the
+     actual unit being shipped. Supplier photography is their
+     copyright and would also misrepresent our stock.
+  ======================================================= */
+  {
+    id: 2117,
+    // Listed 2026-08-31. Products without createdAt sort to the back of
+    // every browse (see getAllProducts), which would bury a new cluster.
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS TP38 Turbocharger — Remanufactured",
+    category: "turbocharger",
+    brand: "ford",
+    // Verified street price at a diesel specialist; shelf lands at $630.
+    price: 799.95,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "F6TZ-6K682-ARM (interchange 1822775C92 · 466057-5005 · 468485-9004)",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Applies to engine serial numbers up to 661,973. Does NOT fit the 1999.5–2003 Super Duty 7.3L, which uses the GTP38, nor the pre-1994 7.3 IDI or the 2020+ 7.3 Godzilla petrol V8. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    coreCharge: "$200 refundable core charge",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, tuning, and damage from oil starvation, over-boost or improper installation.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Remanufactured TP38 turbocharger for the OBS 7.3L Power Stroke.
+
+The TP38 is the factory turbocharger for the 1994.5–1997 Power Stroke, and it is the single most common failure point on a high-mileage OBS truck. Shaft play, a leaking centre section, or a wastegate that no longer holds are all reasons these come off.
+
+This is a remanufactured unit rather than a used take-off. Confirm your engine serial number before ordering — the TP38 covers serials up to 661,973, and later engines take a different turbocharger.
+
+The most frequent ordering mistake on this part is buying a GTP38 by mistake. That is the 1999.5–2003 Super Duty turbocharger; it will not fit an OBS truck.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Engine serial: up to 661,973
+Fuel type: Diesel
+Manufacturer part number: F6TZ-6K682-ARM
+Condition: Remanufactured
+
+Highlights
+
+Direct replacement for the factory TP38
+Covers both F-250 and F-350 OBS applications
+$200 core charge refunded on return of your old unit
+Cross-referenced against 1822775C92, 466057-5005 and 468485-9004
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2118,
+    // Listed 2026-08-31. Products without createdAt sort to the back of
+    // every browse (see getAllProducts), which would bury a new cluster.
+    createdAt: 1788134400000,
+    name: "1996–1997 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — HP005X",
+    category: "engine",
+    brand: "ford",
+    // Verified street price; shelf lands at $300, below market.
+    price: 375,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "F6TZ-9A543-ARM · HP005X · AP63622 (interchange 1825248C91 · 1825259C91)",
+    fitment:
+      "1996–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. NOT interchangeable with 1994–1995, which uses the HP004X: those pumps carry the anti-drainback check valve inside the pump, while 1996–1997 moved that function to a redesigned front timing cover. Fitting the wrong one causes hard starting and low ICP. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    coreCharge: "$200 refundable core charge",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated oil or running the engine low on oil.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `High-pressure oil pump for the 1996–1997 OBS 7.3L Power Stroke.
+
+The 7.3 Power Stroke uses a HEUI fuel system, so the injectors are fired by high-pressure engine oil rather than by a mechanical pump. The HPOP supplies that pressure. When it wears, the truck cranks but will not start, starts hard when cold, or loses power under load — all symptoms of injection control pressure falling below what the injectors need.
+
+This is the HP005X, the 17-degree swash-plate pump fitted to 1996 and 1997 trucks.
+
+The year split matters more here than on almost any other part of this engine. 1994 and 1995 trucks use the HP004X, which houses the anti-drainback check valve inside the pump itself. From 1996 Ford moved that function into a redesigned front timing cover, so the pumps are not interchangeable in either direction. If your truck is a 1994 or 1995, this is not the right pump.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1996–1997
+Vehicle: Ford F-250 / F-350
+Swash plate: 17 degrees
+Fuel type: Diesel
+Manufacturer part number: F6TZ-9A543-ARM (HP005X)
+Condition: Remanufactured
+
+Highlights
+
+Correct pump for 1996–1997 — not a 1994–1995 fitment
+17-degree swash plate as fitted from the factory
+$200 core charge refunded on return of your old unit
+Cross-referenced against AP63622, 1825248C91 and 1825259C91
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2119,
+    // Listed 2026-08-31. Products without createdAt sort to the back of
+    // every browse (see getAllProducts), which would bury a new cluster.
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Injector Set of 8 — AA Single-Shot Super Kit",
+    category: "engine",
+    brand: "ford",
+    // Verified street price; shelf lands at $940, below market.
+    price: 1195.95,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "F81Z-9E527-DRM · AP63800AA (interchange FI-2-RM · F4TZ-9VE527-AARM · F7TZ-9E527-ARM)",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel — AA-code single-shot injectors, as fitted to non-California trucks. NOT the AB split-shot injector used in 1997 California emissions trucks and early 1999 builds, which fires a pilot shot and flows appreciably more fuel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: [
+      "8 remanufactured AA-code HEUI injectors",
+      "Valve cover gaskets",
+      "Valve cover harnesses",
+      "Injector harness repair pigtails",
+    ],
+    coreCharge: "$600 refundable core charge",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated fuel or a failing high-pressure oil system.",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description: `Complete set of eight remanufactured AA injectors for the OBS 7.3L Power Stroke, supplied with the gaskets and harness parts the job actually needs.
+
+HEUI injectors wear as a set. By the time one is misfiring the others are usually close behind, which is why these are sold as eight rather than singly. Rough idle when cold, white smoke on start-up, and a miss that clears as the engine warms are the usual signs.
+
+This is the AA-code injector — the original single-shot design fitted to 1994.5–1997 non-California trucks. The AB injector is a split-shot that fires a small pilot charge before the main event and flows considerably more fuel; it went into 1997 California emissions trucks and early 1999 builds. The two are not interchangeable, and fitting AB injectors to an OBS truck without matching tuning will not run correctly.
+
+The kit includes the valve cover gaskets and harnesses, which have to come off to reach the injectors and are routinely damaged on removal.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Injector code: AA (single-shot)
+Quantity: Set of 8
+Fuel type: Diesel
+Manufacturer part number: F81Z-9E527-DRM / AP63800AA
+Condition: Remanufactured
+
+Highlights
+
+Complete set of eight — HEUI injectors should be replaced together
+Includes valve cover gaskets, harnesses and repair pigtails
+AA single-shot, correct for non-California OBS trucks
+$600 core charge refunded on return of your old injectors
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
   {
     id: CHECKOUT_TEST_PRODUCT_ID,
     name: "Checkout Test Part",
