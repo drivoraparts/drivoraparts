@@ -4107,8 +4107,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, tuning, and damage from oil starvation, over-boost or improper installation.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/turbocharger.svg",
+    images: ["/product-media/placeholders/turbocharger.svg"],
     description: `Remanufactured TP38 turbocharger for the OBS 7.3L Power Stroke.
 
 The TP38 is the factory turbocharger for the 1994.5–1997 Power Stroke, and it is the single most common failure point on a high-mileage OBS truck. Shaft play, a leaking centre section, or a wastegate that no longer holds are all reasons these come off.
@@ -4164,8 +4164,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated oil or running the engine low on oil.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `High-pressure oil pump for the 1996–1997 OBS 7.3L Power Stroke.
 
 The 7.3 Power Stroke uses a HEUI fuel system, so the injectors are fired by high-pressure engine oil rather than by a mechanical pump. The HPOP supplies that pressure. When it wears, the truck cranks but will not start, starts hard when cold, or loses power under load — all symptoms of injection control pressure falling below what the injectors need.
@@ -4227,8 +4227,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated fuel or a failing high-pressure oil system.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Complete set of eight remanufactured AA injectors for the OBS 7.3L Power Stroke, supplied with the gaskets and harness parts the job actually needs.
 
 HEUI injectors wear as a set. By the time one is misfiring the others are usually close behind, which is why these are sold as eight rather than singly. Rough idle when cold, white smoke on start-up, and a miss that clears as the engine warms are the usual signs.
@@ -4288,8 +4288,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from over-voltage or a failed glow plug controller.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Complete set of eight Motorcraft ZD-30 glow plugs for the 7.3L Power Stroke.
 
 Hard starting below about 50°F, white smoke on a cold start, and a rough first minute are the classic signs of failed glow plugs. They fail individually, but a truck with two or three gone usually has the rest close behind, so they are replaced as a set.
@@ -4338,8 +4338,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and consequential costs from a roadside failure.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
     description: `Motorcraft camshaft position sensor for the OBS 7.3L Power Stroke.
 
 The CPS is the part every 7.3 owner is told to carry a spare of, and the advice is sound. When it fails the engine simply stops — often without warning and sometimes while driving — and it will not restart until the sensor is replaced. Failures are frequently heat-related, so a truck that dies warm and restarts an hour later is the textbook case.
@@ -4389,8 +4389,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated engine oil.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
     description: `Ford OE injection control pressure sensor for the 7.3L Power Stroke.
 
 The ICP sensor reports high-pressure oil to the PCM, which uses it to control injection. On a HEUI engine that makes it central to how the truck runs: a failing ICP causes surging, a miss under load, hard starting, or a bucking idle, and it commonly sets codes that look like fuel-system faults.
@@ -4438,8 +4438,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated engine oil.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Alliant Power injection pressure regulator for the OBS 7.3L Power Stroke.
 
 The IPR valve controls how much high-pressure oil the HPOP delivers to the injectors. It works alongside the ICP sensor, and the two produce overlapping symptoms — surging, a miss, hard starting, or an engine that will not build injection control pressure at all.
@@ -4487,8 +4487,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
     description: `Alliant Power glow plug relay for the 7.3L Power Stroke.
 
 The relay switches power to all eight glow plugs. When it fails the plugs never energise, and the truck behaves exactly as though every plug has burned out — hard cold starting, white smoke, a rough first minute.
@@ -4540,8 +4540,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
     description: `Under valve cover harness kit for the OBS 7.3L Power Stroke.
 
 The under-valve-cover harness carries the signal to each injector, and it lives in hot engine oil for its entire life. The connectors eventually go high-resistance or break outright, which produces a dead-miss on one cylinder that no amount of injector work will fix.
@@ -4587,8 +4587,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
     description: `Alliant Power exhaust back pressure sensor for the 7.3L Power Stroke.
 
 The EBP sensor feeds the exhaust back pressure valve, which the engine uses to warm itself faster in cold weather. The sensor and its tube are exposed to exhaust soot and eventually clog or fail, which typically shows up as a check engine light, poor cold-weather warm-up, or an EBP-related code.
@@ -4636,8 +4636,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
     description: `Alliant Power engine oil temperature sensor for the 7.3L Power Stroke.
 
 On a HEUI engine oil temperature is not a comfort reading — the PCM uses it to decide injection timing and glow plug behaviour, because cold oil behaves very differently to hot oil in the injectors. A failed EOT sensor therefore affects how the engine actually runs, not just what a gauge says.
@@ -4685,8 +4685,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
     description: `Alliant Power engine oil pressure sensor for the 7.3L Power Stroke.
 
 Reports engine oil pressure for the dash gauge. A failed sensor is a common cause of a gauge that reads zero, pegs high, or swings erratically on a truck whose oil pressure is in fact perfectly normal.
@@ -4736,8 +4736,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated oil or running the engine low on oil.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `High-pressure oil pump for the 1994–1995 OBS 7.3L Power Stroke.
 
 The 7.3 uses a HEUI fuel system, so the injectors are fired by high-pressure engine oil rather than a mechanical pump. When the HPOP wears the truck cranks without starting, starts hard cold, or loses power under load.
@@ -4787,8 +4787,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a neglected cooling system.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Oil cooler and gasket kit for the 7.3L Power Stroke.
 
 The 7.3 runs an oil-to-coolant cooler, and when it fails internally the two mix. Oil in the coolant recovery bottle, or coolant pushing into the oil, is the sign — and it needs attention quickly, because coolant in the oil damages bearings.
@@ -4838,8 +4838,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Low-pressure oil pump kit for the 7.3L Power Stroke.
 
 Not to be confused with the HPOP. The low-pressure pump is the engine's ordinary oil pump — it lubricates the engine and feeds the high-pressure pump that fires the injectors. On a HEUI engine both matter, and a weak low-pressure pump starves the high-pressure side, producing symptoms that look like an HPOP fault.
@@ -4886,8 +4886,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from running contaminated or depleted coolant.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Water pump for the 1996–1997 OBS 7.3L Power Stroke.
 
 Weeping from the pump's weep hole, a bearing whine, or coolant loss with no visible external leak are the usual signs of a failing water pump. On a diesel that works hard, replacing it before it fails outright is cheaper than the alternative.
@@ -4935,8 +4935,8 @@ Worldwide Shipping Available`,
     freightNotes: "Bulky item. Freight cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage in service from debris or corrosion.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Radiator for the 1994.5–1997 OBS 7.3L Power Stroke.
 
 These trucks are thirty years old, and original radiators are long past their service life. Tanks crack, cores clog internally, and a marginal radiator shows up as high coolant temperature towing or climbing rather than as an obvious leak.
@@ -4983,8 +4983,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, fabrication, and tuning.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Driven Diesel regulated return fuel system for the OBS 7.3L Power Stroke.
 
 This is an upgrade, not a repair part. The factory fuel system on these trucks does not regulate return pressure, which leaves fuel pressure varying with demand — worst exactly when the engine is working hardest. A regulated return holds pressure steady across the range and keeps both cylinder heads fed evenly.
@@ -5035,8 +5035,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Seal kit for the 7.3L Power Stroke high-pressure oil pump.
 
 A leaking HPOP is not always a failed HPOP. These pumps commonly weep from their seals while the pump itself is still serviceable, and a seal kit costs a fraction of a replacement pump.
@@ -5088,8 +5088,8 @@ Worldwide Shipping Available`,
       "Palletised freight, approximately $400 within the continental US. Requires a loading dock or forklift; not suitable for residential delivery.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, clutch and hydraulics, and damage from incorrect fluid or a worn clutch.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/transmission.svg",
+    images: ["/product-media/placeholders/transmission.svg"],
     description: `Remanufactured ZF S5-47 five-speed manual transmission for the OBS 7.3L Power Stroke, 4x4 without PTO.
 
 The S5-47 is the gearbox Ford put behind the 7.3L Power Stroke, rated to 470 lb-ft against the earlier S5-42's 420. It is the reason a manual OBS is worth more than an automatic one, and it is what most people mean when they say "ZF5" in a Power Stroke context.
@@ -5149,8 +5149,8 @@ Worldwide Shipping Available`,
       "Palletised freight. Cost calculated by destination; a liftgate or forklift is needed at delivery.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, fluid, cooler lines, and damage from overheating or incorrect fluid.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/transmission.svg",
+    images: ["/product-media/placeholders/transmission.svg"],
     description: `BD Diesel E4OD transmission and torque converter package for the OBS 7.3L Power Stroke.
 
 The E4OD is the automatic behind most OBS 7.3s, and it is the weak point of the drivetrain when the truck tows. Heat is what kills them, so a transmission that has spent its life pulling a trailer without an adequate cooler is usually the one being replaced.
@@ -5202,8 +5202,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Three-bolt starter for the 7.3L Power Stroke.
 
 A diesel of this size asks a great deal of its starter, and a tired one shows up first on cold mornings — slow cranking, a click with no crank, or a start that needs two attempts. Because slow cranking also prevents the glow plug system from doing its job, a weak starter often gets misdiagnosed as a glow plug fault.
@@ -5253,8 +5253,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
-    thumbnail: "/product-media/avatars/default.svg",
-    images: ["/product-media/avatars/default.svg"],
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
     description: `Gear reduction starter for the 7.3L Power Stroke.
 
 A gear reduction starter turns the engine faster while drawing less current than the standard unit. On a high-compression diesel that matters most in cold weather, where cranking speed is the difference between a start and a long crank.

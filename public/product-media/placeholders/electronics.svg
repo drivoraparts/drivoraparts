@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Engine component — photography pending">
+  <rect width="800" height="800" fill="#111315"/>
+  <g fill="none" stroke="#2c3033" stroke-width="1">
+    <path d="M0 200h800M0 400h800M0 600h800M200 0v800M400 0v800M600 0v800"/>
+  </g>
+  <g transform="translate(400 372)" fill="none" stroke="#b9a27a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-118" y="-86" width="236" height="172" rx="10"/>
+    <path d="M-118-40h-34v80h34M118-40h34v80h-34"/>
+    <path d="M-70-86v-26h44v26M26-86v-26h44v26"/>
+    <circle cx="0" cy="0" r="40"/>
+    <path d="M0-40v-14M0 40v14M-40 0h-14M40 0h14"/>
+  </g>
+  <text x="400" y="574" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="7" fill="#c96a24">ELECTRONICS</text>
+  <text x="400" y="616" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#a9a296">Product photography pending</text>
+  <text x="400" y="716" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="4" fill="#77715f">DRIVORAPARTS</text>
+</svg>
