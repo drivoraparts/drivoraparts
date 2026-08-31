@@ -20,7 +20,7 @@ export const TRUST_SECTION = {
   headline: "Registered US seller · encrypted checkout · real inventory",
   // Derived, not hand-written: a hub that changes in company.ts must not be
   // able to leave this line claiming somewhere we no longer ship from.
-  subhead: `${COMPANY_LEGAL_NAME} operates from ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName} with distribution in ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.country} and ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}. Every listing is reviewed for accurate photos and specs, backed by freight-ready logistics and NOWPayments crypto checkout.`,
+  subhead: `${COMPANY_LEGAL_NAME} operates from ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName} with distribution in ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.country} and ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}. Freight-ready logistics and NOWPayments crypto checkout, with fitment confirmed on request before you order.`,
   legalLine: `${COMPANY_LEGAL_NAME} · ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} · ${COMPANY_SUPPORT_EMAIL}`,
   listingStat: `${HOME_LISTING_COUNT.toLocaleString()}+ active listings`,
 } as const;
@@ -50,10 +50,22 @@ export const TRUST_SIGNALS: TrustSignal[] = [
     detail: "Truck beds, shells, and pallet freight coordinated worldwide from our logistics hubs.",
     seal: "freight",
   },
+  /*
+   * This used to read "Listings reviewed for accuracy — N+ SKUs checked for
+   * correct photos, specs, and fitment". It was not true: roughly three
+   * quarters of listings carry the generic imported description that
+   * hasGenericPlaceholderDescription() detects and noindexes, and about the
+   * same proportion have no fitment field at all. A catalogue cannot claim its
+   * SKUs are checked for fitment when most of them hold no fitment data.
+   *
+   * What is left is what can be shown to be true: the size of the catalogue,
+   * and the offer to confirm fitment on request, which the product pages and
+   * vehicle hubs already make.
+   */
   {
     id: "inventory",
-    title: "Listings reviewed for accuracy",
-    detail: `${HOME_LISTING_COUNT.toLocaleString()}+ SKUs checked for correct photos, specs, and fitment.`,
+    title: "Ask before you order",
+    detail: `${HOME_LISTING_COUNT.toLocaleString()}+ active listings. Send us your vehicle details and we'll confirm fitment before you buy.`,
     seal: "inventory",
   },
 ];
@@ -110,8 +122,11 @@ export const TRUST_CATEGORIES: TrustCategory[] = [
     id: "verified",
     eyebrow: "Verified Marketplace",
     headline: `${COMPANY_LEGAL_NAME} — US registered`,
-    detail: `Corporate HQ in ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state}. Every listing reviewed before it goes live.`,
-    chips: ["US Registered", "Verified Listings", "Professional Support"],
+    // "Every listing reviewed before it goes live" and the "Verified Listings"
+    // chip were removed for the same reason as the inventory badge above --
+    // most listings are bulk imports the site itself flags as unreviewed.
+    detail: `Corporate HQ in ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state}. A real company you can email, with policies you can read.`,
+    chips: ["US Registered", "Named Company", "Professional Support"],
     seal: "company",
   },
 ];

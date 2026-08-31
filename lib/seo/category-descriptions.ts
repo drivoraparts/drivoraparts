@@ -60,10 +60,16 @@ export function getBrandSeoDescription(
     ? `Shop ${brandName} ${categoryName.toLowerCase()} for ${fitment}. ${categoryTerms}.`
     : `Shop ${brandName} ${categoryName.toLowerCase()} parts — ${categoryTerms}.`;
 
+  /*
+   * These promised "fitment specs" and "verified listings". Most listings are
+   * bulk imports with no fitment field and the generic description the SEO
+   * layer already noindexes, so neither could be supported. Replaced with
+   * claims that hold for every listing: the count, shipping and checkout.
+   */
   const tail =
     productCount > 0
-      ? `${productCount} listing${productCount === 1 ? "" : "s"} with fitment specs & secure checkout at DrivoraParts.`
-      : "Verified listings with fitment details and worldwide shipping at DrivoraParts.";
+      ? `${productCount} listing${productCount === 1 ? "" : "s"} with free standard shipping & secure checkout at DrivoraParts.`
+      : "Free standard shipping worldwide and secure crypto checkout at DrivoraParts.";
 
   return truncateSeoDescription(`${base} ${tail}`);
 }

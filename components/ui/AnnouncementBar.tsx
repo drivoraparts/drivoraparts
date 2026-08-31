@@ -2,6 +2,7 @@ import {
   BASE_ORDER_DISCOUNT_PERCENT,
   BULK_ORDER_DISCOUNT_PERCENT,
 } from "@/lib/inventory/discounts";
+import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 
 type AnnouncementMessage = {
   icon: string;
@@ -17,8 +18,15 @@ const DEFAULT_MESSAGES: AnnouncementMessage[] = [
   { icon: "🌎", text: "Worldwide Shipping & Freight Available" },
   { icon: "🛠️", text: "OEM & Aftermarket Parts For Serious Builds" },
   { icon: "💳", text: `Every Order — Save ${BASE_ORDER_DISCOUNT_PERCENT}%` },
-  { icon: "🔒", text: "Secure Checkout · Verified Listings · Global Freight" },
-  { icon: "⚡", text: "1,446+ Listings — Inventory Growing Regularly" },
+  // "Verified Listings" removed: most listings are bulk imports the site's own
+  // SEO layer flags as unreviewed, so the claim could not be supported.
+  { icon: "🔒", text: "Secure Checkout · Encrypted · Global Freight" },
+  // Imported rather than written out — this line read "1,446+" while the
+  // catalog held 1,867, which is exactly how the number drifted before.
+  {
+    icon: "⚡",
+    text: `${HOME_LISTING_COUNT.toLocaleString()}+ Listings — Inventory Growing Regularly`,
+  },
 ];
 
 /** Fixed, scrolling brand/offer strip directly under the header. */
