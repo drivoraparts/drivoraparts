@@ -16,8 +16,10 @@ function BrandMark({ brand }: { brand: (typeof BRAND_ASSETS)[number] }) {
     );
   }
 
+  // neutral-500, not -400: the wordmarks are deliberately muted, but -400
+  // measures 2.4:1 on this strip and large text still needs 3:1.
   return (
-    <span className="select-none whitespace-nowrap text-xl font-bold tracking-tight text-neutral-400 transition-colors duration-200 hover:text-neutral-900 sm:text-2xl">
+    <span className="select-none whitespace-nowrap text-xl font-bold tracking-tight text-neutral-500 transition-colors duration-200 hover:text-neutral-900 sm:text-2xl">
       {brand.name}
     </span>
   );

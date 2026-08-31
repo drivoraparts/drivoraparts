@@ -3,14 +3,16 @@ import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import StarterPicksRail from "@/components/home/StarterPicksRail";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
 import HomeTrustBadges from "@/components/home/HomeTrustBadges";
-import CinematicLifestyleSection from "@/components/home/CinematicLifestyleSection";
 import ShopByVehicleSection from "@/components/home/ShopByVehicleSection";
 import FeaturedBrandsStrip from "@/components/home/FeaturedBrandsStrip";
-import WhyDrivoraSection from "@/components/home/WhyDrivoraSection";
-import HomeStatsBand from "@/components/home/HomeStatsBand";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
-import HomeStatementBanner from "@/components/home/HomeStatementBanner";
 import ScrollReveal from "@/components/home/ScrollReveal";
+import HomeHeroCinematic from "@/components/home/HomeHeroCinematic";
+import VehiclePlatformGrid from "@/components/home/VehiclePlatformGrid";
+import BuildStorySection from "@/components/home/BuildStorySection";
+import GlobalReachBand from "@/components/home/GlobalReachBand";
+import EditorialImage from "@/components/home/EditorialImage";
+import { getPhoto } from "@/lib/media/homepage-photo";
 import TrendingRail from "@/components/catalog/TrendingRail";
 import RecentlyAddedRail from "@/components/catalog/RecentlyAddedRail";
 import SeasonalCollectionsSection from "@/components/catalog/SeasonalCollectionsSection";
@@ -24,8 +26,6 @@ import { routes } from "@/lib/inventory/routes";
 import { directAssetUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata, SITE_KEYWORDS } from "@/lib/seo";
 
-const HERO_IMAGE = "/home/hero-1280.webp";
-
 export const revalidate = 600;
 
 export const metadata = buildPageMetadata({
@@ -37,67 +37,19 @@ export const metadata = buildPageMetadata({
 });
 
 export default function Home() {
-  const heroSrc = directAssetUrl(HERO_IMAGE);
   const listingCount = HOME_LISTING_COUNT;
   const featuredPool = getHomeFeaturedProductPool();
   const featuredProducts = getFeaturedBatch(featuredPool, getFeaturedTimeSlot());
 
   return (
     <div className="relative z-0 w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] text-neutral-900">
-      {/* Compact hero — static image (no scroll JS) */}
-      <section className="relative -mt-[106px] flex min-h-[58vh] min-h-[420px] w-full min-w-0 items-center justify-center overflow-hidden pt-[106px] sm:-mt-[114px] sm:min-h-[62vh] sm:pt-[114px]">
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <img
-            src={heroSrc}
-            alt="Performance automotive parts"
-            width={1280}
-            height={720}
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-            sizes="100vw"
-            className="h-full w-full object-cover"
-          />
-        </div>
+      <HomeHeroCinematic listingCount={listingCount} />
 
-        <div className="pointer-events-none absolute inset-0 z-10 bg-neutral-900/55" />
-        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/35 via-neutral-900/50 to-neutral-900/75" />
+      {/* Vehicles before products: the page should say "we understand
+          vehicles" before it says "we sell things". */}
+      <VehiclePlatformGrid />
 
-        <div className="relative z-20 mx-auto max-w-4xl px-4 text-center text-white sm:px-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-on-dark">
-            DrivoraParts Marketplace
-          </p>
-          <h1 className="mt-3 text-[clamp(1.75rem,5vw,3.25rem)] font-bold leading-tight tracking-tight">
-            Performance Parts &{" "}
-            <span className="text-accent">Truck Beds</span>
-            <span className="block text-[0.92em] font-bold text-white">
-              Built for Real Builds
-            </span>
-          </h1>
-
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-neutral-200 sm:text-base">
-            Engines, transmissions, rust-free truck beds, and swap-ready drivetrains.
-            {listingCount.toLocaleString()}+ listings — what you see is what you get.
-          </p>
-
-          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <Link
-              href={routes.all}
-              prefetch={false}
-              className="touch-manipulation inline-block rounded-full bg-accent px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-active active:bg-red-800"
-            >
-              Shop All Parts
-            </Link>
-            <Link
-              href={routes.category("body-parts")}
-              prefetch={false}
-              className="touch-manipulation inline-block rounded-full border border-white/50 bg-white/10 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-white/20 active:bg-white/30"
-            >
-              Truck Beds & Shells
-            </Link>
-          </div>
-        </div>
-      </section>
+      <BuildStorySection />
 
       {/* Affordable stock first: checkout is crypto-only and irreversible, so a
           new visitor needs something they can risk before a $5,900 engine. */}
@@ -129,10 +81,6 @@ export default function Home() {
           <HomeCategoryGrid />
         </div>
       </section>
-
-      <CinematicLifestyleSection />
-
-      <HomeStatementBanner />
 
       {featuredProducts.length > 0 ? (
         <section className="relative z-10 border-b border-neutral-200 bg-[var(--background)] px-4 py-12 sm:px-6 lg:px-8">
@@ -171,34 +119,43 @@ export default function Home() {
 
       <FeaturedBrandsStrip />
 
-      <WhyDrivoraSection />
-
-      <HomeStatsBand />
+      <GlobalReachBand />
 
       <GuidesPreviewSection />
 
       <HomeTrustBadges />
 
-      {/* Premium closing CTA */}
-      <section className="relative overflow-hidden px-4 py-20 text-center text-white sm:px-6 sm:py-28">
+      {/* Closing CTA. Prefers the acquired `closing` frame and falls back to
+          the Pexels photograph already in the repo, so the section never
+          renders as a flat colour block if a slot is empty. */}
+      <section className="relative overflow-hidden px-4 py-24 text-center text-foreground-on-dark sm:px-6 sm:py-32">
         <div className="absolute inset-0 z-0">
-          <img
-            src={directAssetUrl("/home/pexels-mikebirdy-30734921.jpg")}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            sizes="100vw"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-neutral-950/80" />
-          <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/70 to-neutral-950/40" />
+          {getPhoto("closing") ? (
+            <EditorialImage
+              slot="closing"
+              alt=""
+              sizes="100vw"
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <img
+              src={directAssetUrl("/home/pexels-mikebirdy-30734921.jpg")}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              sizes="100vw"
+              className="h-full w-full object-cover"
+            />
+          )}
+          <div className="absolute inset-0 bg-background-dark/78" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/70 to-background-dark/40" />
         </div>
 
         <ScrollReveal className="relative z-10 mx-auto max-w-2xl">
-          <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+          <h2 className="text-[clamp(1.9rem,4.4vw,3.25rem)] font-bold uppercase leading-[1.02] tracking-[-0.015em]">
             Start your build today
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-neutral-300 sm:text-base">
+          <p className="mt-5 text-base leading-relaxed text-muted-on-dark">
             Exact item, as pictured — or upgraded to your spec. Secure crypto
             checkout, worldwide shipping, freight-ready logistics.
           </p>
@@ -206,14 +163,14 @@ export default function Home() {
             <Link
               href={routes.all}
               prefetch={false}
-              className="touch-manipulation inline-block rounded-full bg-accent px-10 py-3.5 text-sm font-bold uppercase tracking-wide transition-colors hover:bg-accent-hover active:bg-accent-active"
+              className="touch-manipulation inline-flex items-center justify-center bg-accent px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-accent-hover active:bg-accent-active"
             >
               Browse marketplace
             </Link>
             <Link
               href="/contact"
               prefetch={false}
-              className="touch-manipulation inline-block rounded-full border border-white/30 px-10 py-3.5 text-sm font-semibold transition-colors hover:bg-white/10 active:bg-white/20"
+              className="touch-manipulation inline-flex items-center justify-center border border-foreground-on-dark/35 px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] transition-colors hover:bg-foreground-on-dark/10 active:bg-foreground-on-dark/15"
             >
               Freight quote
             </Link>
