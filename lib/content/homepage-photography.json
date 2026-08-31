@@ -346,23 +346,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-ford-ranger-4x4/480.webp",
-        "bytes": 27282
+        "bytes": 22914
       },
       {
         "width": 800,
         "file": "/homepage/veh-ford-ranger-4x4/800.webp",
-        "bytes": 70484
+        "bytes": 60680
       },
       {
         "width": 1280,
         "file": "/homepage/veh-ford-ranger-4x4/1280.webp",
-        "bytes": 165734
+        "bytes": 143010
       }
     ],
     "sha256": "7c1bd3cb2f65cd02",
     "query": "Ford Ranger pickup",
     "downloadedAt": "2026-08-31T17:38:56.396Z",
-    "originalId": "Ford Ranger Stormtrak (T6, P375) 1X7A0369.jpg"
+    "originalId": "Ford Ranger Stormtrak (T6, P375) 1X7A0369.jpg",
+    "treatment": "mono"
   },
   "veh-toyota-hilux-4x4": {
     "slot": "veh-toyota-hilux-4x4",
@@ -388,23 +389,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-toyota-hilux-4x4/480.webp",
-        "bytes": 15572
+        "bytes": 13948
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-hilux-4x4/800.webp",
-        "bytes": 31530
+        "bytes": 28300
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-hilux-4x4/1280.webp",
-        "bytes": 57784
+        "bytes": 51706
       }
     ],
     "sha256": "c8c0b91afa353d80",
     "query": "Toyota Hilux",
     "downloadedAt": "2026-08-31T17:39:00.210Z",
-    "originalId": "2026 Toyota Hilux BEV.jpg"
+    "originalId": "2026 Toyota Hilux BEV.jpg",
+    "treatment": "mono"
   },
   "veh-isuzu-d-max-4x4": {
     "slot": "veh-isuzu-d-max-4x4",
@@ -430,23 +432,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-isuzu-d-max-4x4/480.webp",
-        "bytes": 35638
+        "bytes": 30138
       },
       {
         "width": 800,
         "file": "/homepage/veh-isuzu-d-max-4x4/800.webp",
-        "bytes": 93928
+        "bytes": 79480
       },
       {
         "width": 1280,
         "file": "/homepage/veh-isuzu-d-max-4x4/1280.webp",
-        "bytes": 214686
+        "bytes": 179090
       }
     ],
     "sha256": "c362bb92f9483f52",
     "query": "Isuzu D-Max",
     "downloadedAt": "2026-08-31T17:39:05.809Z",
-    "originalId": "ISUZU D-MAX (SECOND GENERATION, PRE-FACELIFT) China (2).jpg"
+    "originalId": "ISUZU D-MAX (SECOND GENERATION, PRE-FACELIFT) China (2).jpg",
+    "treatment": "mono"
   },
   "veh-mitsubishi-triton-4x4": {
     "slot": "veh-mitsubishi-triton-4x4",
@@ -472,23 +475,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-mitsubishi-triton-4x4/480.webp",
-        "bytes": 24660
+        "bytes": 21582
       },
       {
         "width": 800,
         "file": "/homepage/veh-mitsubishi-triton-4x4/800.webp",
-        "bytes": 60984
+        "bytes": 53370
       },
       {
         "width": 1280,
         "file": "/homepage/veh-mitsubishi-triton-4x4/1280.webp",
-        "bytes": 132796
+        "bytes": 117912
       }
     ],
     "sha256": "e416f28e2843c7c6",
     "query": "Mitsubishi Triton pickup",
     "downloadedAt": "2026-08-31T17:39:11.972Z",
-    "originalId": "Mitsubishi Triton 2.4 GLX 4x2 2024 (4).jpg"
+    "originalId": "Mitsubishi Triton 2.4 GLX 4x2 2024 (4).jpg",
+    "treatment": "mono"
   },
   "veh-byd-shark-6-phev": {
     "slot": "veh-byd-shark-6-phev",
@@ -514,23 +518,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-byd-shark-6-phev/480.webp",
-        "bytes": 24314
+        "bytes": 20456
       },
       {
         "width": 800,
         "file": "/homepage/veh-byd-shark-6-phev/800.webp",
-        "bytes": 49650
+        "bytes": 40902
       },
       {
         "width": 1280,
         "file": "/homepage/veh-byd-shark-6-phev/1280.webp",
-        "bytes": 89138
+        "bytes": 73164
       }
     ],
     "sha256": "75bf5821b642e910",
     "query": "BYD Shark pickup",
     "downloadedAt": "2026-08-31T17:39:22.570Z",
-    "originalId": "MIAS 2025 - BYD Shark 6 DMO AWD Premium 02.jpg"
+    "originalId": "MIAS 2025 - BYD Shark 6 DMO AWD Premium 02.jpg",
+    "treatment": "mono"
   },
   "veh-mazda-bt-50-4x4": {
     "slot": "veh-mazda-bt-50-4x4",
@@ -556,23 +561,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-mazda-bt-50-4x4/480.webp",
-        "bytes": 33922
+        "bytes": 27668
       },
       {
         "width": 800,
         "file": "/homepage/veh-mazda-bt-50-4x4/800.webp",
-        "bytes": 86256
+        "bytes": 71854
       },
       {
         "width": 1280,
         "file": "/homepage/veh-mazda-bt-50-4x4/1280.webp",
-        "bytes": 204904
+        "bytes": 173680
       }
     ],
     "sha256": "d920b4b4d2dd5d77",
     "query": "Mazda BT-50",
     "downloadedAt": "2026-08-31T17:39:28.333Z",
-    "originalId": "2023 Mazda BT-50 3.0 Standard 4x2 in Concrete Gray, 06-23-2024.jpg"
+    "originalId": "2023 Mazda BT-50 3.0 Standard 4x2 in Concrete Gray, 06-23-2024.jpg",
+    "treatment": "mono"
   },
   "veh-toyota-landcruiser-70-series": {
     "slot": "veh-toyota-landcruiser-70-series",
@@ -598,23 +604,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-toyota-landcruiser-70-series/480.webp",
-        "bytes": 29948
+        "bytes": 26344
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-landcruiser-70-series/800.webp",
-        "bytes": 68100
+        "bytes": 58796
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-landcruiser-70-series/1280.webp",
-        "bytes": 132582
+        "bytes": 111824
       }
     ],
     "sha256": "c9b94d2bd01575b8",
     "query": "Toyota Land Cruiser 70 series",
     "downloadedAt": "2026-08-31T17:39:34.468Z",
-    "originalId": "Land Cruiser 70-series bundera 4.jpg"
+    "originalId": "Land Cruiser 70-series bundera 4.jpg",
+    "treatment": "mono"
   },
   "veh-nissan-navara-4x4": {
     "slot": "veh-nissan-navara-4x4",
@@ -640,23 +647,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-nissan-navara-4x4/480.webp",
-        "bytes": 17388
+        "bytes": 15560
       },
       {
         "width": 800,
         "file": "/homepage/veh-nissan-navara-4x4/800.webp",
-        "bytes": 37140
+        "bytes": 33464
       },
       {
         "width": 1280,
         "file": "/homepage/veh-nissan-navara-4x4/1280.webp",
-        "bytes": 77640
+        "bytes": 68754
       }
     ],
     "sha256": "f9ea91dceee2a9e1",
     "query": "Nissan Navara pickup",
     "downloadedAt": "2026-08-31T17:39:40.996Z",
-    "originalId": "2010 Nissan Navara (D40) ST 4-door utility (2011-04-22) 01.jpg"
+    "originalId": "2010 Nissan Navara (D40) ST 4-door utility (2011-04-22) 01.jpg",
+    "treatment": "mono"
   },
   "veh-gwm-cannon": {
     "slot": "veh-gwm-cannon",
@@ -682,23 +690,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-gwm-cannon/480.webp",
-        "bytes": 35058
+        "bytes": 32270
       },
       {
         "width": 800,
         "file": "/homepage/veh-gwm-cannon/800.webp",
-        "bytes": 90340
+        "bytes": 83534
       },
       {
         "width": 1280,
         "file": "/homepage/veh-gwm-cannon/1280.webp",
-        "bytes": 190174
+        "bytes": 177210
       }
     ],
     "sha256": "86ad82035ddb53bf",
     "query": "Great Wall Cannon pickup",
     "downloadedAt": "2026-08-31T17:39:46.205Z",
-    "originalId": "Great Wall King Kong Cannon 008.jpg"
+    "originalId": "Great Wall King Kong Cannon 008.jpg",
+    "treatment": "mono"
   },
   "veh-volkswagen-amarok-4x4": {
     "slot": "veh-volkswagen-amarok-4x4",
@@ -724,23 +733,24 @@
       {
         "width": 480,
         "file": "/homepage/veh-volkswagen-amarok-4x4/480.webp",
-        "bytes": 19006
+        "bytes": 17024
       },
       {
         "width": 800,
         "file": "/homepage/veh-volkswagen-amarok-4x4/800.webp",
-        "bytes": 46650
+        "bytes": 42132
       },
       {
         "width": 1280,
         "file": "/homepage/veh-volkswagen-amarok-4x4/1280.webp",
-        "bytes": 102898
+        "bytes": 93870
       }
     ],
     "sha256": "384da207ce0ce81e",
     "query": "Volkswagen Amarok",
     "downloadedAt": "2026-08-31T17:39:50.112Z",
-    "originalId": "2017 Volkswagen Amarok Highline V6 TDi facelift 3.0.jpg"
+    "originalId": "2017 Volkswagen Amarok Highline V6 TDi facelift 3.0.jpg",
+    "treatment": "mono"
   },
   "veh-ford-obs-73-power-stroke": {
     "slot": "veh-ford-obs-73-power-stroke",
@@ -766,22 +776,23 @@
       {
         "width": 480,
         "file": "/homepage/veh-ford-obs-73-power-stroke/480.webp",
-        "bytes": 32288
+        "bytes": 29936
       },
       {
         "width": 800,
         "file": "/homepage/veh-ford-obs-73-power-stroke/800.webp",
-        "bytes": 83422
+        "bytes": 76546
       },
       {
         "width": 1280,
         "file": "/homepage/veh-ford-obs-73-power-stroke/1280.webp",
-        "bytes": 186648
+        "bytes": 172790
       }
     ],
     "sha256": "48205eaa73dc374b",
     "query": "Ford F-250 1996",
     "downloadedAt": "2026-08-31T17:39:59.054Z",
-    "originalId": "1996 Ford F-250 XL 4x4 Regular Cab, rear left 08-05-2023.jpg"
+    "originalId": "1996 Ford F-250 XL 4x4 Regular Cab, rear left 08-05-2023.jpg",
+    "treatment": "mono"
   }
 }

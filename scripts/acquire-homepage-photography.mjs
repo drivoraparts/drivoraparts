@@ -233,6 +233,7 @@ const VEHICLES = [
   reject: /\b(interior|dashboard|cockpit|comparison|vs |artillery|historic|museum|motor ?show|auto ?show|salon|GIMS|IAA|expo|exhibition|stand|showroom|dealer|autohaus|security|police|taxi|ambulance|fleet|livery|BEV concept)\b/i,
   minWidth: 1200, landscape: true, widths: [480, 800, 1280],
   tone: { target: 0.25, band: 0.30 }, preferCommons: true,
+  treatment: "mono",
 }));
 
 const SLOTS = [...EDITORIAL, ...VEHICLES];
@@ -278,6 +279,29 @@ async function pexels(q) {
     w: p.width || 0, h: p.height || 0,
     avg: p.avg_color || null,
   })).filter((c) => c.url);
+}
+
+/**
+ * The vehicle-grid treatment.
+ *
+ * Eleven cards sourced from eleven photographers arrive with eleven different
+ * backgrounds, colour casts and lighting, and that incoherence is what makes a
+ * grid look cheap -- not the subjects. Pulling the saturation down to a warm
+ * near-monochrome normalises the outliers: show-stand signage and dealer
+ * decals stop competing for attention, and the set reads as one deliberate
+ * series.
+ *
+ * Applied to vehicle cards only. The editorial frames keep their colour,
+ * because there the colour is the drama -- the dust, the sunset, the mud.
+ *
+ * The trade is the vehicle's real paint colour, which is acceptable on a model
+ * selector: the visitor is picking a HiLux, not a shade of blue.
+ */
+export function applyMono(pipe) {
+  return pipe
+    .modulate({ saturation: 0.42, brightness: 0.86 })
+    .linear(1.12, -14)                        // deepen the shadows
+    .tint({ r: 255, g: 247, b: 236 });        // warm it toward the brand neutrals
 }
 
 /* ------------------------------------------------------------------ scoring */
@@ -411,7 +435,9 @@ for (const slot of todo) {
   for (const w of slot.widths) {
     if (w > meta.width) continue;
     const out = path.join(dir, `${w}.webp`);
-    await sharp(buf).resize({ width: w, withoutEnlargement: true }).webp({ quality: 78, effort: 5 }).toFile(out);
+    let pipe = sharp(buf).resize({ width: w, withoutEnlargement: true });
+    if (slot.treatment === "mono") pipe = applyMono(pipe);
+    await pipe.webp({ quality: 78, effort: 5 }).toFile(out);
     variants.push({ width: w, file: `/homepage/${slot.id}/${w}.webp`, bytes: (await fs.stat(out)).size });
   }
   const largest = variants[variants.length - 1];
