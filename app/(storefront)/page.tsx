@@ -16,7 +16,6 @@ import PhotoCredits from "@/components/home/PhotoCredits";
 import { getPhoto } from "@/lib/media/homepage-photo";
 import TrendingRail from "@/components/catalog/TrendingRail";
 import RecentlyAddedRail from "@/components/catalog/RecentlyAddedRail";
-import SeasonalCollectionsSection from "@/components/catalog/SeasonalCollectionsSection";
 import {
   getFeaturedBatch,
   getFeaturedTimeSlot,
@@ -112,19 +111,22 @@ export default function Home() {
         </section>
       ) : null}
 
+      {/* The dark reach band sits mid-shopping rather than after it. Once the
+          build stories each gained their own product rail, everything from
+          "Under $400" onward became one long pale scroll and the page stopped
+          breathing. Placed here it splits that run near its middle, restoring
+          the intended cadence -- editorial, shopping, editorial. */}
+      <GlobalReachBand />
+
       <TrendingRail />
 
       <RecentlyAddedRail />
 
-      {/* The dark reach band sits mid-shopping rather than after it. Once the
-          build stories each gained their own product rail, everything from
-          "Under $400" to the brand strip became twelve light sections in a
-          row, and the page stopped breathing. Splitting that run restores the
-          intended cadence -- editorial, shopping, editorial -- without
-          removing any content. */}
-      <GlobalReachBand />
-
-      <SeasonalCollectionsSection />
+      {/* SeasonalCollectionsSection was removed from the homepage once each
+          build story gained its own product rail: "Off-Road Essentials" and
+          "Premium JDM Collection" pull the same categories (4x4-accessories,
+          engine) as the off-roader and tourer rails a few sections above.
+          The component still runs on /catalog/all, where nothing precedes it. */}
 
       <FeaturedBrandsStrip />
 
