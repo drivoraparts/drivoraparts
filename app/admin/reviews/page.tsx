@@ -17,6 +17,12 @@ export default async function AdminReviewsPage() {
     if (referenced.has(product.id)) productNames[product.id] = product.name;
   }
 
+  // id + name only — the transcription form needs a product picker, not the
+  // whole catalog shipped to the browser.
+  const catalog = getAllProducts()
+    .map((product) => ({ id: product.id, name: product.name }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
   const pending = reviews.filter((r) => r.status === "pending").length;
   const approved = reviews.filter((r) => r.status === "approved").length;
   const hidden = reviews.filter((r) => r.status === "hidden").length;
@@ -50,7 +56,11 @@ export default async function AdminReviewsPage() {
       </div>
 
       <div className="mt-8">
-        <ReviewsManager initialReviews={reviews} productNames={productNames} />
+        <ReviewsManager
+          initialReviews={reviews}
+          productNames={productNames}
+          catalog={catalog}
+        />
       </div>
     </AdminShell>
   );

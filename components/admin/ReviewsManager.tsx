@@ -2,7 +2,18 @@
 
 import { useMemo, useState } from "react";
 import { adminUi } from "./admin-ui";
-import type { ProductReview, ReviewModerationAction } from "@/lib/reviews/types";
+import {
+  REVIEW_SOURCE_LABELS,
+  type ProductReview,
+  type ReviewModerationAction,
+  type ReviewSource,
+} from "@/lib/reviews/types";
+
+/** Off-site origins an admin can transcribe from. "storefront" is excluded:
+ *  that means the customer typed it themselves, which this form is not. */
+const OFFSITE_SOURCES = (
+  Object.keys(REVIEW_SOURCE_LABELS) as ReviewSource[]
+).filter((source) => source !== "storefront");
 
 type Filter = "pending" | "approved" | "hidden" | "all";
 
@@ -28,13 +39,36 @@ function Stars({ rating }: { rating: number }) {
   );
 }
 
+type EntryForm = {
+  productId: string;
+  reviewerName: string;
+  rating: string;
+  review: string;
+  source: ReviewSource;
+  customerEmail: string;
+  collectedAt: string;
+};
+
+const EMPTY_ENTRY: EntryForm = {
+  productId: "",
+  reviewerName: "",
+  rating: "5",
+  review: "",
+  source: "whatsapp",
+  customerEmail: "",
+  collectedAt: "",
+};
+
 export default function ReviewsManager({
   initialReviews,
   productNames,
+  catalog,
 }: {
   initialReviews: ProductReview[];
   /** id -> name, resolved server-side; the catalog lives in the repo, not the DB. */
   productNames: Record<number, string>;
+  /** Searchable product list for the transcription form. */
+  catalog: { id: number; name: string }[];
 }) {
   const [reviews, setReviews] = useState(initialReviews);
   const [filter, setFilter] = useState<Filter>("pending");
@@ -43,6 +77,50 @@ export default function ReviewsManager({
   const [search, setSearch] = useState("");
   const [productFilter, setProductFilter] = useState("");
   const [ratingFilter, setRatingFilter] = useState("");
+  const [entryOpen, setEntryOpen] = useState(false);
+  const [entry, setEntry] = useState<EntryForm>(EMPTY_ENTRY);
+  const [entrySaving, setEntrySaving] = useState(false);
+  const [entryNote, setEntryNote] = useState<string | null>(null);
+
+  async function saveEntry(event: React.FormEvent) {
+    event.preventDefault();
+    setEntrySaving(true);
+    setEntryNote(null);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/admin/reviews", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          productId: Number(entry.productId),
+          reviewerName: entry.reviewerName,
+          rating: Number(entry.rating),
+          review: entry.review,
+          source: entry.source,
+          customerEmail: entry.customerEmail,
+          collectedAt: entry.collectedAt || null,
+        }),
+      });
+
+      const data = await res.json().catch(() => null);
+
+      if (!res.ok) {
+        setError(data?.error ?? "That review could not be saved.");
+        return;
+      }
+
+      setReviews((prev) => [data.review as ProductReview, ...prev]);
+      // Say plainly whether the badge attached and why, so nobody assumes it did.
+      setEntryNote(data.verificationNote ?? "Saved.");
+      setEntry({ ...EMPTY_ENTRY, source: entry.source });
+      setFilter("pending");
+    } catch {
+      setError("Network error — nothing was saved.");
+    } finally {
+      setEntrySaving(false);
+    }
+  }
 
   const counts = useMemo(
     () => ({
@@ -144,6 +222,132 @@ export default function ReviewsManager({
         ))}
       </div>
 
+      {/* Transcribe a review a customer left off-site */}
+      <div className="mb-6">
+        <button
+          type="button"
+          onClick={() => setEntryOpen((open) => !open)}
+          className={adminUi.buttonSecondary}
+        >
+          {entryOpen ? "Close" : "Add a review from WhatsApp, Instagram or in person"}
+        </button>
+
+        {entryOpen ? (
+          <form onSubmit={saveEntry} className={`mt-4 ${adminUi.card}`}>
+            <p className="mb-4 text-sm leading-relaxed text-zinc-600">
+              For reviews a real customer gave you somewhere other than the
+              website. Type what they actually said — the source and your admin
+              email are stored with it. The verified-purchase badge is looked up
+              from your orders and cannot be set here.
+            </p>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <label className="text-sm font-medium text-zinc-700">
+                Product
+                <select
+                  required
+                  value={entry.productId}
+                  onChange={(e) => setEntry({ ...entry, productId: e.target.value })}
+                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+                >
+                  <option value="">Choose a product…</option>
+                  {catalog.map((product) => (
+                    <option key={product.id} value={product.id}>
+                      {product.name.slice(0, 70)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="text-sm font-medium text-zinc-700">
+                Where they said it
+                <select
+                  value={entry.source}
+                  onChange={(e) =>
+                    setEntry({ ...entry, source: e.target.value as ReviewSource })
+                  }
+                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+                >
+                  {OFFSITE_SOURCES.map((source) => (
+                    <option key={source} value={source}>
+                      {REVIEW_SOURCE_LABELS[source]}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="text-sm font-medium text-zinc-700">
+                Customer name
+                <input
+                  required
+                  value={entry.reviewerName}
+                  onChange={(e) => setEntry({ ...entry, reviewerName: e.target.value })}
+                  placeholder="As they'd want it shown"
+                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+                />
+              </label>
+
+              <label className="text-sm font-medium text-zinc-700">
+                Rating
+                <select
+                  value={entry.rating}
+                  onChange={(e) => setEntry({ ...entry, rating: e.target.value })}
+                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+                >
+                  {[5, 4, 3, 2, 1].map((star) => (
+                    <option key={star} value={star}>
+                      {star} star{star === 1 ? "" : "s"}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="text-sm font-medium text-zinc-700">
+                Customer email <span className="font-normal text-zinc-500">(optional)</span>
+                <input
+                  type="email"
+                  value={entry.customerEmail}
+                  onChange={(e) => setEntry({ ...entry, customerEmail: e.target.value })}
+                  placeholder="Only used to check for a completed order"
+                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+                />
+              </label>
+
+              <label className="text-sm font-medium text-zinc-700">
+                When they said it <span className="font-normal text-zinc-500">(optional)</span>
+                <input
+                  type="date"
+                  value={entry.collectedAt}
+                  onChange={(e) => setEntry({ ...entry, collectedAt: e.target.value })}
+                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+                />
+              </label>
+            </div>
+
+            <label className="mt-4 block text-sm font-medium text-zinc-700">
+              What they said
+              <textarea
+                required
+                rows={4}
+                value={entry.review}
+                onChange={(e) => setEntry({ ...entry, review: e.target.value })}
+                placeholder="Their words, as close to verbatim as you can"
+                className="mt-1 w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
+              />
+            </label>
+
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <button type="submit" disabled={entrySaving} className={adminUi.buttonPrimary}>
+                {entrySaving ? "Saving…" : "Save for moderation"}
+              </button>
+              {entryNote ? (
+                <span className="text-sm text-zinc-600">{entryNote}</span>
+              ) : null}
+            </div>
+          </form>
+        ) : null}
+      </div>
+
       <div className="mb-6 grid gap-3 sm:grid-cols-3">
         <input
           type="search"
@@ -214,6 +418,11 @@ export default function ReviewsManager({
                     >
                       {review.status === "pending" ? "awaiting review" : review.status}
                     </span>
+                    {review.source && review.source !== "storefront" ? (
+                      <span className="rounded-full bg-sky-50 px-2 py-0.5 text-xs font-medium text-sky-800 ring-1 ring-sky-200">
+                        via {REVIEW_SOURCE_LABELS[review.source]}
+                      </span>
+                    ) : null}
                   </div>
                   <p className="mt-1 text-xs text-zinc-500">
                     <a

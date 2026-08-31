@@ -1,9 +1,14 @@
 import { NextResponse } from "next/server";
 import {
+  createAdminReview,
   getReviewStoreSnapshot,
   moderateReview,
+  REVIEW_SOURCE_LABELS,
   type ReviewModerationAction,
+  type ReviewSource,
 } from "@/lib/reviews";
+import { hasCompletedPurchase } from "@/lib/db/orders";
+import { isSupabaseConfigured } from "@/lib/env";
 import { requireAdminApi } from "@/lib/auth/require-admin";
 import { logWarn } from "@/lib/monitoring/logger";
 
@@ -31,6 +36,79 @@ export async function GET() {
       approved: reviews.filter((r) => r.status === "approved").length,
       hidden: reviews.filter((r) => r.status === "hidden").length,
     },
+  });
+}
+
+/**
+ * Records a review a customer left off-site — WhatsApp, Instagram, in person.
+ *
+ * The admin transcribes what a real customer said; the source and the admin's
+ * own email are stored with it. Verified-purchase is looked up here from the
+ * orders table and is never read from the request, so no form field can grant
+ * that badge.
+ */
+export async function POST(req: Request) {
+  const auth = await requireAdminApi();
+  if (auth.response) return auth.response;
+
+  const body = await req.json().catch(() => null);
+
+  const productId = Number(body?.productId);
+  const rating = Number(body?.rating);
+  const review = typeof body?.review === "string" ? body.review : "";
+  const reviewerName =
+    typeof body?.reviewerName === "string" ? body.reviewerName : "";
+  const source = body?.source as ReviewSource;
+  const customerEmail =
+    typeof body?.customerEmail === "string" ? body.customerEmail.trim() : "";
+  const collectedAt =
+    typeof body?.collectedAt === "string" && body.collectedAt
+      ? new Date(body.collectedAt).toISOString()
+      : null;
+
+  if (!Number.isFinite(productId) || productId <= 0) {
+    return NextResponse.json({ error: "Choose a product." }, { status: 400 });
+  }
+
+  if (!(source in REVIEW_SOURCE_LABELS)) {
+    return NextResponse.json({ error: "Choose a valid source." }, { status: 400 });
+  }
+
+  // Derived, never accepted. An email with no completed order simply yields an
+  // ordinary unverified review.
+  const verifiedPurchase =
+    customerEmail && isSupabaseConfigured()
+      ? await hasCompletedPurchase(customerEmail, productId).catch(() => false)
+      : false;
+
+  const result = await createAdminReview({
+    productId,
+    rating,
+    review,
+    reviewerName,
+    source,
+    // tsconfig runs with strict:false, so the requireAdminApi union does not
+    // narrow after the guard above — read through the optional chain rather
+    // than assuming the session branch.
+    enteredBy: auth.session?.email ?? "admin",
+    collectedAt,
+    verifiedPurchase,
+  });
+
+  if (result.ok === false) {
+    return NextResponse.json({ error: result.error }, { status: 400 });
+  }
+
+  return NextResponse.json({
+    success: true,
+    review: result.review,
+    verifiedPurchase,
+    // Told plainly, so an admin who expected the badge knows why it is absent.
+    verificationNote: customerEmail
+      ? verifiedPurchase
+        ? "Matched to a completed order."
+        : "No completed order found for that email — saved as unverified."
+      : "No email given, so the review is unverified.",
   });
 }
 

@@ -4,6 +4,7 @@ import { logError } from "@/lib/monitoring/logger";
 import type {
   ProductReview,
   ReviewModerationAction,
+  ReviewSource,
   ReviewSubmissionContext,
 } from "./types";
 
@@ -36,6 +37,11 @@ type ReviewRow = {
   profile_image: string | null;
   status: ProductReview["status"];
   created_at: string;
+  // Added by migration 014. Absent on rows written before it ran, so every
+  // read below tolerates undefined rather than assuming the column exists.
+  source?: ReviewSource | null;
+  entered_by?: string | null;
+  collected_at?: string | null;
 };
 
 function toReview(row: ReviewRow): ProductReview {
@@ -50,7 +56,22 @@ function toReview(row: ReviewRow): ProductReview {
     profileImage: row.profile_image ?? DEFAULT_AVATAR,
     reviewerName: row.reviewer_name,
     status: row.status,
+    source: row.source ?? "storefront",
+    enteredBy: row.entered_by ?? null,
+    collectedAt: row.collected_at ?? null,
   };
+}
+
+/**
+ * PostgREST rejects an insert naming a column it does not know about, with
+ * PGRST204, before Postgres ever sees the statement. Writing provenance
+ * unconditionally would therefore take review submission down entirely until
+ * migration 014 is run. Retrying without those keys keeps reviews working
+ * either way; only the provenance waits for the migration.
+ */
+function isUnknownColumnError(error: unknown): boolean {
+  const code = (error as { code?: string } | null)?.code;
+  return code === "PGRST204";
 }
 
 async function fetchApproved(productId: number): Promise<ProductReview[]> {
@@ -210,6 +231,103 @@ export async function submitReview(
       ok: false,
       error: "We couldn't save your review. Please try again.",
     };
+  }
+}
+
+export type AdminReviewInput = {
+  productId: number;
+  rating: number;
+  review: string;
+  reviewerName: string;
+  source: ReviewSource;
+  /** Admin email, recorded so a transcribed review is never anonymous. */
+  enteredBy: string;
+  /** When the customer actually said it. */
+  collectedAt?: string | null;
+  /**
+   * Derived by the caller from hasCompletedPurchase(). Never taken from the
+   * form -- an admin cannot mark their own entry as a verified purchase.
+   */
+  verifiedPurchase: boolean;
+};
+
+/**
+ * Records a review a customer gave somewhere off-site.
+ *
+ * Enters as "pending" like any other, so a transcribed review still passes
+ * through moderation rather than appearing because staff typed it.
+ */
+export async function createAdminReview(
+  input: AdminReviewInput
+): Promise<SubmitReviewResult> {
+  if (!isSupabaseConfigured()) {
+    return { ok: false, error: "Reviews are unavailable right now." };
+  }
+
+  const rating = Math.round(Number(input.rating));
+  if (!Number.isFinite(rating) || rating < 1 || rating > 5) {
+    return { ok: false, error: "Rating must be between 1 and 5." };
+  }
+  if (!input.review.trim()) {
+    return { ok: false, error: "Review text is required." };
+  }
+  if (!input.reviewerName.trim()) {
+    return { ok: false, error: "Customer name is required." };
+  }
+  if (input.source === "storefront") {
+    // Storefront means the customer typed it themselves, which is exactly what
+    // this path did not happen. Allowing it would erase the distinction the
+    // provenance column exists to preserve.
+    return { ok: false, error: "Choose where the customer left this review." };
+  }
+
+  const base = {
+    product_id: input.productId,
+    user_id: `offsite-${input.source}-${input.reviewerName.trim().toLowerCase().replace(/\s+/g, "-")}`,
+    reviewer_name: input.reviewerName.trim(),
+    rating,
+    review: input.review.trim(),
+    verified_purchase: input.verifiedPurchase,
+    profile_image: DEFAULT_AVATAR,
+    status: "pending" as const,
+  };
+
+  const provenance = {
+    source: input.source,
+    entered_by: input.enteredBy,
+    collected_at: input.collectedAt || null,
+  };
+
+  try {
+    const supabase = getSupabaseAdmin();
+
+    const attempt = await supabase
+      .from(TABLE)
+      .insert({ ...base, ...provenance })
+      .select("*")
+      .single();
+
+    if (!attempt.error) {
+      return { ok: true, review: toReview(attempt.data as ReviewRow) };
+    }
+
+    if (!isUnknownColumnError(attempt.error)) throw attempt.error;
+
+    // Migration 014 has not run. Save the review rather than lose the
+    // customer's words, and surface that provenance could not be stored.
+    const fallback = await supabase.from(TABLE).insert(base).select("*").single();
+    if (fallback.error) throw fallback.error;
+
+    logError(
+      "review_provenance_column_missing",
+      new Error("Run supabase/migrations/014_review_provenance.sql"),
+      { productId: input.productId }
+    );
+
+    return { ok: true, review: toReview(fallback.data as ReviewRow) };
+  } catch (error) {
+    logError("admin_review_create_failed", error, { productId: input.productId });
+    return { ok: false, error: "We couldn't save that review. Please try again." };
   }
 }
 
