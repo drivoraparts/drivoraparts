@@ -5067,53 +5067,59 @@ Worldwide Shipping Available`,
 
   /* --- OBS 7.3 drivetrain and starting --- */
   {
-    id: 2136,
+    id: 2140,
     createdAt: 1788134400000,
-    name: "1994–1995 Ford 7.3L Power Stroke OBS ZF S5-42 5-Speed Manual Transmission 4x4 — Remanufactured",
+    name: "1996–1997 Ford 7.3L Power Stroke OBS ZF S5-47 5-Speed Manual Transmission 4x4 — Remanufactured",
     category: "transmission",
     brand: "zumbrota",
-    price: 2299.89,
+    price: 3001.89,
     stock: true,
     stockQty: 1,
     condition: "refurbished",
     warranty: "12-Month Limited Warranty",
     location: "our USA warehouse or supplier network, depending on your location",
-    partNumber: "Zumbrota RMTS5-42-12 (ZF S5-42, 4WD, without PTO)",
+    partNumber: "Zumbrota RMTS5-47-6 (ZF S5-47, 4x4, without PTO)",
     fitment:
-      "1987–1995 Ford 4WD applications including the 1994–1995 F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Without PTO. This is the S5-42; from 1996 Ford fitted the S5-47, so a 1996 or 1997 truck takes a different gearbox. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke, F350 7.3 Powerstroke and ZF5.",
+      "1996–1997 Ford F-250 / F-350 with the 7.3L Power Stroke diesel, 4x4, without PTO. The S5-47 is the Power Stroke transmission and is NOT interchangeable with the earlier S5-42 (1988–1995, 420 lb-ft) or the later S5-47M (1999–2002). Ford used the S5-47 behind the 7.3L Power Stroke from 1994.5; this particular unit is listed for 1996–1997, so confirm your build before ordering. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke, F350 7.3 Powerstroke and ZF5.",
     drivetrain: "4x4",
+    coreCharge: "$2,000 refundable core charge",
     weight: "Heavy — ships as freight",
     freightNotes:
-      "Palletised freight. Cost calculated by destination; a liftgate or forklift is needed at delivery.",
+      "Palletised freight, approximately $400 within the continental US. Requires a loading dock or forklift; not suitable for residential delivery.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, clutch and hydraulics, and damage from incorrect fluid or a worn clutch.",
     thumbnail: "/product-media/avatars/default.svg",
     images: ["/product-media/avatars/default.svg"],
-    description: `Remanufactured ZF S5-42 five-speed manual transmission for the 1994–1995 OBS 7.3L Power Stroke, in 4x4 configuration without PTO.
+    description: `Remanufactured ZF S5-47 five-speed manual transmission for the OBS 7.3L Power Stroke, 4x4 without PTO.
 
-The ZF five-speed is the gearbox most OBS owners want behind a 7.3, and it is the reason a manual OBS commands a premium over an automatic one. This is the S5-42, the version Ford used through 1995.
+The S5-47 is the gearbox Ford put behind the 7.3L Power Stroke, rated to 470 lb-ft against the earlier S5-42's 420. It is the reason a manual OBS is worth more than an automatic one, and it is what most people mean when they say "ZF5" in a Power Stroke context.
 
-The year matters. From 1996 Ford moved to the S5-47, a different and stronger unit, so a 1996 or 1997 truck does not take this gearbox. Confirm which your truck has before ordering — "ZF5" is used loosely for both and they are not the same transmission.
+That loose use of "ZF5" is the problem. The S5-42 is a different, lower-rated transmission used in F-Series and Broncos from 1988 to 1995, and the later S5-47M is different again. None of the three interchange. If you are shopping by the name "ZF5" alone, confirm which unit your truck actually has before ordering.
 
-Supplied without PTO. Clutch, hydraulics and the bellhousing are not included.
+Diesel S5-47s use the 5.08:1 medium first-gear ratio; the 5.72:1 wide ratio is the petrol version.
+
+Clutch, hydraulics and bellhousing are not included. Freight requires a dock or forklift.
 
 Specifications
 
 Application: 7.3L Power Stroke diesel
 Generation: OBS / Old Body Style
-Years: 1987–1995 (covers 1994–1995 within the OBS 7.3 run)
+Years: 1996–1997
 Vehicle: Ford F-250 / F-350
-Transmission: ZF S5-42, 5-speed manual
-Drive configuration: 4WD
+Transmission: ZF S5-47, 5-speed manual
+Input torque rating: 470 lb-ft
+First gear ratio: 5.08:1 (diesel)
+Drive configuration: 4x4
 PTO: Without
-Manufacturer part number: RMTS5-42-12
+Manufacturer part number: RMTS5-47-6
 Condition: Remanufactured
 
 Highlights
 
-The S5-42 — 1996–1997 trucks take the S5-47 instead
-4WD configuration, without PTO
-Clutch and hydraulics not included
+The Power Stroke transmission — not the S5-42 or the later S5-47M
+470 lb-ft rating against the S5-42's 420
+$2,000 core charge, refunded on return of your old unit
+Ships on a pallet; a dock or forklift is required
 
 Warranty
 12-Month Limited Warranty
