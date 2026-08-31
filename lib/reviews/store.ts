@@ -187,7 +187,17 @@ export async function submitReview(
         // re-derive this from anything the reviewer submitted themselves.
         verified_purchase: context.verifiedPurchase,
         profile_image: context.profileImage || DEFAULT_AVATAR,
-        status: "approved",
+        /*
+         * Held for moderation rather than published on submit.
+         *
+         * getApprovedReviewsByProductId only reads status = 'approved', so a
+         * new review is invisible on the storefront until an admin releases it
+         * in /admin/reviews. A shop with no review history cannot afford to
+         * publish unmoderated text next to a $10,000 engine, and the reviewer
+         * is told plainly that it is awaiting review rather than left thinking
+         * the form failed.
+         */
+        status: "pending",
       })
       .select("*")
       .single();

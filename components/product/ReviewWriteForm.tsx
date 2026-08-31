@@ -67,7 +67,13 @@ export default function ReviewWriteForm({
         return;
       }
 
-      setMessage("Review submitted successfully.");
+      // Reviews are held for moderation, so "submitted successfully" alone
+      // would leave the author looking for text that is not there yet.
+      setMessage(
+        data.review.status === "approved"
+          ? "Thanks — your review is now live."
+          : "Thanks — your review has been received and will appear once it's checked."
+      );
       setReviewText("");
       setRating(5);
       setOpen(false);

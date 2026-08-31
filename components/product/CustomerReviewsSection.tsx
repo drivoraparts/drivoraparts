@@ -81,6 +81,20 @@ export default function CustomerReviewsSection({
   const hasMore = visibleCount < reviews.length;
 
   const handleReviewSubmitted = (review: ProductReview) => {
+    /*
+     * A submitted review is held for moderation, so it must not join the list
+     * or move the rating. Doing either would show the author a published
+     * review that no one else can see, and would shift the average on the
+     * strength of text an admin has not released yet.
+     *
+     * Only an already-approved review is merged in — which keeps this correct
+     * if moderation is ever turned off again.
+     */
+    if (review.status !== "approved") {
+      setLoaded(true);
+      return;
+    }
+
     setReviews((current) => [review, ...current]);
     setReviewCount((count) => count + 1);
     setRating((currentRating) => {
