@@ -65,6 +65,13 @@ const SOURCES = {
     "VW Amarok 3.0 TDI 4Motion Style (II) – f 05072025.jpg",
     "Volkswagen Amarok Mk2 1X7A0852.jpg",
   ],
+  // OBS-era trucks only. Commons has plenty of later Super Duty F-250/F-350,
+  // and using one here would show the wrong generation entirely.
+  "ford-obs-73-power-stroke": [
+    "1997 Ford F-350 4x4 DRW XL regular cab, front left, 08-03-2024.jpg",
+    "1996 Ford F-350 DRW XLT crew cab in Portofino Blue Metallic and Oxford White.jpg",
+    "'92-'96 Ford F-350 Single Cab.jpg",
+  ],
 };
 
 /** Licences we accept. Anything else is skipped rather than used on a shop. */
@@ -112,7 +119,18 @@ async function commonsInfo(titles) {
     "&titles=" +
     encodeURIComponent(titles.map((t) => `File:${t}`).join("|"));
 
-  const res = await fetch(url, { headers: { "User-Agent": UA } });
+  // The download helper below already backs off on 429, but this metadata call
+  // did not — so a rate-limited lookup aborted the whole run before a single
+  // image was fetched. Same treatment here.
+  let res;
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    res = await fetch(url, { headers: { "User-Agent": UA } });
+    if (res.ok) break;
+    if (res.status !== 429 && res.status < 500) break;
+    const wait = 2000 * attempt;
+    console.warn(`    …${res.status} on metadata lookup, retrying in ${wait / 1000}s`);
+    await sleep(wait);
+  }
   if (!res.ok) throw new Error(`Commons API ${res.status}`);
 
   const json = await res.json();

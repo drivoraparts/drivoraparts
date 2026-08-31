@@ -580,6 +580,81 @@ export const vehiclePlatforms: VehiclePlatform[] = [
       "amarok ranger parts",
     ],
   },
+
+  {
+    slug: "ford-obs-73-power-stroke",
+    name: "Ford OBS F-250 / F-350 — 7.3L Power Stroke",
+    tagline: "1994.5–1997 · Old Body Style · 7.3L Power Stroke diesel",
+    make: "Ford",
+    summary:
+      "Parts for the 1994.5–1997 OBS F-250 and F-350 with the 7.3L Power Stroke — kept strictly apart from the 7.3 IDI, the 1999.5–2003 Super Duty, and the 2020+ 7.3 Godzilla petrol V8.",
+    overview: [
+      "Four different Ford engines get called \"7.3\", and only one of them is this truck's. The 7.3 IDI that came before it is indirect-injection with no HEUI system at all. The 1999.5–2003 Power Stroke that came after it is a Super Duty, a different body and a different turbocharger. And the 2020+ 7.3 \"Godzilla\" is a petrol V8 that shares nothing but a displacement figure. Parts do not cross between any of them, and ordering the wrong one is the single most common mistake on this platform.",
+      "The OBS truck is the 1994.5–1997 F-250 and F-350: Old Body Style, the last of the ninth-generation F-Series before the Super Duty split off. The 7.3L Power Stroke arrived partway through 1994 as Ford's first HEUI direct-injection diesel, rated at 210 hp and 425 lb-ft, rising to 225 hp and 450 lb-ft by 1997. Behind it you will find either the ZF S5-42 or S5-47 five-speed manual, or the E4OD automatic.",
+      "Two components split by year within this generation, and both catch people out. The high-pressure oil pump changed for 1996: 1994–1995 trucks use the HP004X with the anti-drainback check valve inside the pump, while 1996–1997 uses the HP005X and a redesigned front timing cover. And the factory turbocharger, the TP38, applies to engine serial numbers up to 661,973 — check yours before ordering.",
+    ],
+    fitment: [
+      {
+        make: "Ford",
+        model: "F-250 / F-350",
+        series: "OBS (Old Body Style) — ninth-generation F-Series",
+        yearsFrom: 1994,
+        yearsTo: 1997,
+        bodyStyles: [
+          "Regular Cab",
+          "SuperCab",
+          "Crew Cab",
+          "Chassis Cab",
+          "Dual Rear Wheel (DRW)",
+        ],
+        drive: ["4x4", "4x2"],
+        notes:
+          "7.3L Power Stroke diesel (HEUI) from partway through 1994 — commonly written 1994.5. Transmissions: ZF S5-42 / S5-47 five-speed manual, or E4OD automatic.",
+      },
+    ],
+    highlights: [
+      "7.3L Power Stroke (HEUI) — not the 7.3 IDI, the 1999.5–2003, or the 2020+ Godzilla",
+      "HPOP splits by year: HP004X for 1994–1995, HP005X for 1996–1997 — not interchangeable",
+      "TP38 turbocharger covers engine serials up to 661,973",
+      "Injectors are AA single-shot; the AB split-shot belongs to 1997 California and early 1999",
+    ],
+    include: [
+      /\bobs\b[^|]{0,40}7\.3/i,
+      /7\.3[^|]{0,40}\bobs\b/i,
+      /\bTP38\b/i,
+      /HP00[45]X/i,
+      /AP63800AA/i,
+      /F6TZ|F81Z-9E527/i,
+    ],
+    /*
+     * Deliberately no exclusions.
+     *
+     * The obvious ones — GTP38, Godzilla, 1999.5–2003 — all backfired, because
+     * these listings name those engines in their fitment precisely to say they
+     * do NOT fit. An exclusion cannot tell a disclaimer from a claim, so
+     * excluding "Godzilla" removed the very turbocharger whose fitment warns
+     * against buying a Godzilla part.
+     *
+     * The includes carry the weight instead, and are specific enough alone:
+     * "GTP38R" has no word boundary before TP38 so /\bTP38\b/ skips it, and no
+     * Godzilla or 1999.5–2003 listing contains "OBS" next to 7.3, an HP00xX
+     * code, or a Ford F6TZ/F81Z part number. Verified against the whole
+     * catalogue: exactly the three OBS listings match.
+     */
+    seoTitle: "OBS Ford 7.3 Power Stroke Parts — 1994.5–1997 F-250 & F-350",
+    seoDescription:
+      "Parts for the 1994.5–1997 OBS Ford F-250 and F-350 7.3L Power Stroke. TP38 turbo, HPOP, injectors and ZF5 fitment, kept separate from the IDI, 1999.5–2003 and Godzilla 7.3.",
+    keywords: [
+      "obs 7.3 powerstroke parts",
+      "obs ford 7.3 parts",
+      "1994 f250 7.3 powerstroke parts",
+      "1996 f250 7.3 powerstroke parts",
+      "1997 f350 7.3 powerstroke parts",
+      "7.3 powerstroke tp38 turbo",
+      "7.3 powerstroke hpop",
+      "zf5 7.3 powerstroke",
+    ],
+  },
 ];
 
 export function getVehiclePlatform(slug: string): VehiclePlatform | undefined {

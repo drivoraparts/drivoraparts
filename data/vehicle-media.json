@@ -162,5 +162,19 @@
       "licence": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Amarok_Mk2_1X7A0852.jpg"
     }
+  ],
+  "ford-obs-73-power-stroke": [
+    {
+      "src": "/vehicle-media/ford-obs-73-power-stroke/1.jpg",
+      "author": "MercurySable99",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1997_Ford_F-350_4x4_DRW_XL_regular_cab,_front_left,_08-03-2024.jpg"
+    },
+    {
+      "src": "/vehicle-media/ford-obs-73-power-stroke/3.jpg",
+      "author": "Bull-Doser",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2792-%2796_Ford_F-350_Single_Cab.jpg"
+    }
   ]
 }
