@@ -116,11 +116,17 @@ export default function Home() {
 
       <RecentlyAddedRail />
 
+      {/* The dark reach band sits mid-shopping rather than after it. Once the
+          build stories each gained their own product rail, everything from
+          "Under $400" to the brand strip became twelve light sections in a
+          row, and the page stopped breathing. Splitting that run restores the
+          intended cadence -- editorial, shopping, editorial -- without
+          removing any content. */}
+      <GlobalReachBand />
+
       <SeasonalCollectionsSection />
 
       <FeaturedBrandsStrip />
-
-      <GlobalReachBand />
 
       <GuidesPreviewSection />
 
