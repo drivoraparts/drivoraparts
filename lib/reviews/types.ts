@@ -14,7 +14,17 @@ export type ReviewSource =
   | "facebook"
   | "email"
   | "in_person"
-  | "other";
+  | "other"
+  /**
+   * Machine-generated fixture from lib/reviews/generator.ts — not a customer.
+   *
+   * Exists so the restored generator can typecheck without claiming
+   * "storefront", which would assert a real person wrote it. Nothing in the
+   * production read path produces this value, and it is the marker that keeps
+   * fixture data distinguishable from a genuine review if it ever reaches a
+   * database.
+   */
+  | "seed";
 
 export const REVIEW_SOURCE_LABELS: Record<ReviewSource, string> = {
   storefront: "Website",
@@ -24,6 +34,7 @@ export const REVIEW_SOURCE_LABELS: Record<ReviewSource, string> = {
   email: "Email",
   in_person: "In person",
   other: "Other",
+  seed: "Sample data (not a customer)",
 };
 
 export type ProductReview = {
