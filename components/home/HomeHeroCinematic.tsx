@@ -63,13 +63,22 @@ export default function HomeHeroCinematic({ listingCount }: { listingCount: numb
             Trucks · 4x4 · Performance
           </p>
 
-          <h1 className="mt-5 max-w-4xl text-[clamp(2.25rem,7vw,5rem)] font-bold uppercase leading-[0.95] tracking-[-0.02em] text-foreground-on-dark">
-            Built for the
-            <br />
-            road ahead.
+          {/* No hard <br />. Forcing "Built for the / road ahead." made the
+              line 89% of the frame on a phone, so the type sat across the
+              whole picture. Constraining the measure instead lets it stack
+              into short lines down one side -- the way the reference site
+              breaks its own three-word headline -- and leaves the vehicle
+              visible beside it. */}
+          <h1 className="mt-5 max-w-[11ch] text-[clamp(2rem,6.2vw,4.5rem)] font-bold uppercase leading-[0.95] tracking-[-0.02em] text-foreground-on-dark sm:max-w-[15ch]">
+            Built for the road ahead.
           </h1>
 
-          <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+          {/* items-start, not items-stretch. Stretched, the two CTAs spanned
+              the full width of the frame on mobile and the film was covered by
+              a solid block of button. Sized to their own content they sit to
+              one side, the way the reference site's single outline button
+              does, and the vehicle stays visible beside them. */}
+          <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
             <Link
               href={routes.all}
               prefetch={false}
