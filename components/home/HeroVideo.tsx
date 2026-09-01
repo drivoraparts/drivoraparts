@@ -1,60 +1,70 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { getHeroVideo } from "@/lib/media/homepage-photo";
 
 /**
- * The hero film — on desktop. Phones and tablets get the still.
+ * The hero film, on every device, shuffled.
  *
- * WHY THE CLIP IS DESKTOP-ONLY
- * The montage is 4.9MB, and on a 390px phone it was 95% of the page's entire
- * transfer: 4,821KB of 5,071KB, against 116KB for every image combined. That
- * is a lot of someone's data for a background. The still is ~12KB at phone
- * width, so mobile drops by about 95% and the composition is unchanged --
- * the poster is a frame from the clip, so it is the same picture, just not
- * moving.
- *
- * The decision is made client-side and the <video> is never mounted for a
- * touch device, so the bytes are not merely hidden -- they are never
- * requested. CSS alone could not do this: a `hidden sm:block` video still
- * downloads.
- *
- * WHY THE TEST IS THE POINTER, NOT THE WIDTH
- * This was `(min-width: 640px)` alone, and an iPhone 8 walked straight through
- * it: 375px in portrait, but 667px in landscape. Rotating the phone cleared
- * the gate and pulled all 4.9MB -- precisely the cost the breakpoint existed
- * to avoid.
- *
- * No width fixes that, because phone landscape sizes now sit on top of tablet
- * sizes: an iPhone 8 is 667 landscape, an 8 Plus 736, an XR 896, a 15 Pro Max
- * 932 -- against an iPad's 768-834 portrait. There is no number between them.
- * Safari's "Request Desktop Website" reports ~980 and clears all of them.
- *
- * `hover: hover` with `pointer: fine` describes a mouse or a trackpad, which
- * is the thing actually being asked about, and it answers the same way at
- * every size and in both orientations. The width test is kept alongside so a
- * narrow desktop window still drops to the still.
- *
- * It re-evaluates on change, so dragging a desktop window narrow lands on the
- * right treatment rather than whatever matched at first paint.
- *
- * Autoplay is unconditional where the clip does load. Windows reports
- * prefers-reduced-motion whenever "Animation effects" is off, which is common
- * enough that honouring it hid the film from a large share of visitors who had
- * never asked for a still.
+ * WHY THE CLIP IS NO LONGER DESKTOP-ONLY
+ * This was gated to mouse-and-trackpad devices to keep a 4.9MB background off a
+ * phone's data plan. The gate worked -- too well: it is the film that carries
+ * the montage, so a phone got one frozen frame of the desert shot and none of
+ * the three locations the hero was cut to show. The shot list is the hero; a
+ * still is not a cheaper version of it, it is a different thing. So the film
+ * ships everywhere. The cost is deliberate: ~4.9MB per uncached load against
+ * ~12KB for the still it replaces. The poster paints first, so the composition
+ * is up immediately and the film takes over when it arrives.
  *
  * WHY THE SHUFFLE IS PLAYBACK, NOT FILES
  * hero.mp4 is one baked concatenation of three eight-second shots, so a plain
- * `loop` replayed desert → ridge → snow in that order forever: every visitor
- * saw the same opening frame and every lap of the loop was identical. Shipping
- * the shots as three separate files would shuffle them the obvious way and
- * cost three requests and three sets of headers for footage we already have in
- * one. Instead the player treats the single file as a reel and seeks between
- * its cut points, so the order is fresh on every load and on every lap, at no
- * extra bytes. The eight-second holds are untouched -- what varies is the
- * order of the shots, not how long any of them stays on screen.
+ * loop replays desert -> ridge -> snow in that order forever: every visitor
+ * sees the same opening frame and every lap is identical. Shipping the shots as
+ * three files would shuffle them the obvious way and cost three requests for
+ * footage we already have in one. Instead the player treats the single file as
+ * a reel and seeks between its cut points, so the order is fresh on every load
+ * and every lap, at no extra bytes. The eight-second holds are untouched --
+ * what varies is the order of the shots, not how long each is on screen.
+ *
+ * WHY A TIMER AND NOT requestAnimationFrame
+ * This watcher used to poll on rAF, on the reasoning that timeupdate fires only
+ * ~4x a second and would leave a visible slice of the wrong shot on screen
+ * before the cut was noticed. The reasoning was right; the mechanism was not.
+ * rAF only runs while the page is compositing, and a page can report itself
+ * visible with rAF entirely stopped -- measured here at zero callbacks over
+ * three seconds on a visible tab. iOS Safari also throttles it hard during
+ * scroll and in Low Power Mode. When rAF stalls, the opening seek lands and
+ * then nothing cuts again: the native loop takes over and the montage plays in
+ * baked order, which is exactly the bug this replaces.
+ *
+ * A timer armed to the current shot's remaining runtime has neither problem. It
+ * does not need the compositor, and it is more precise than polling was,
+ * because it is scheduled to the cut instead of checking whether the cut has
+ * already gone past. timeupdate stays on as a safety net for the two cases a
+ * timer cannot cover: background-tab clamping, and a seek the network refused.
+ *
+ * WHY THE PLAYHEAD WINS OVER OUR BOOKKEEPING
+ * A seek into a not-yet-downloaded part of the reel is simply refused, which on
+ * a phone is routine for the first few seconds. The old watcher read "we are
+ * not where I asked to be" as a wrap and advanced, walking the whole order in a
+ * few frames and landing somewhere arbitrary. This one re-reads the playhead
+ * and continues from whichever shot is genuinely on screen, so a slow start
+ * costs the chosen opening shot, never the shuffle itself.
+ *
+ * AUTOPLAY
+ * Muted autoplay is permitted on every current browser, but iOS Safari only
+ * grants it to a video that is muted at the moment play() is called, and React
+ * does not serialise the muted attribute into server-rendered HTML -- so
+ * between paint and hydration the element is briefly unmuted, and an attempt in
+ * that window is refused for good. Setting the property directly before play()
+ * closes it. The attempt repeats as the file becomes playable, and falls back
+ * to the first interaction for the one case nothing overrides: iOS Low Power
+ * Mode, which refuses muted autoplay outright.
+ *
+ * prefers-reduced-motion is deliberately not honoured: Windows reports it
+ * whenever "Animation effects" is off, which hid the film from a large share of
+ * visitors who had never asked for a still.
  */
-const DESKTOP = "(min-width: 640px) and (hover: hover) and (pointer: fine)";
 
 /** Fisher-Yates, avoiding `avoid` in the lead so no shot repeats across a lap. */
 function shuffled(count: number, avoid: number): number[] {
@@ -72,128 +82,159 @@ function shuffled(count: number, avoid: number): number[] {
 export default function HeroVideo() {
   const clip = getHeroVideo();
   const ref = useRef<HTMLVideoElement>(null);
-  const [motion, setMotion] = useState(false);
 
+  /* Keep it playing. */
   useEffect(() => {
-    const mq = window.matchMedia(DESKTOP);
-    const sync = () => setMotion(mq.matches);
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
-  }, []);
-
-  useEffect(() => {
-    if (!motion) return;
     const el = ref.current;
     if (!el) return;
-    const attempt = el.play();
-    if (attempt && typeof attempt.catch === "function") {
-      attempt.catch(() => {
-        /* Autoplay refused; the poster stands in. Nothing to recover. */
-      });
-    }
-  }, [motion]);
 
-  /*
-   * Drive the shot order.
-   *
-   * The watcher runs on rAF rather than `timeupdate`. `timeupdate` fires about
-   * four times a second, which is up to a quarter-second of the next shot
-   * already on screen before the cut is noticed -- a visible slice of the
-   * wrong location. A frame-rate check cuts within ~16ms, so the seek reads as
-   * an edit. rAF also idles with the tab in the background, which is where we
-   * want it: a hidden hero should not be seeking.
-   */
+    const start = () => {
+      if (!el.paused) return;
+      el.muted = true; // the property, not the JSX attribute alone -- see above
+      const attempt = el.play();
+      if (attempt && typeof attempt.catch === "function") {
+        attempt.catch(() => {
+          /* Refused for now; a later event or the first gesture retries. */
+        });
+      }
+    };
+
+    const onGesture = () => start();
+    const stopWaitingForGesture = () => {
+      document.removeEventListener("touchstart", onGesture);
+      document.removeEventListener("click", onGesture);
+    };
+
+    start();
+    el.addEventListener("loadeddata", start);
+    el.addEventListener("canplay", start);
+    el.addEventListener("playing", stopWaitingForGesture);
+    document.addEventListener("touchstart", onGesture, { passive: true });
+    document.addEventListener("click", onGesture);
+
+    return () => {
+      el.removeEventListener("loadeddata", start);
+      el.removeEventListener("canplay", start);
+      el.removeEventListener("playing", stopWaitingForGesture);
+      stopWaitingForGesture();
+    };
+  }, []);
+
+  /* Drive the shot order. */
   const segments = clip?.segments ?? [];
   const cuts = segments.length;
 
   useEffect(() => {
     // One shot is a plain loop -- there is no order to vary.
-    if (!motion || cuts < 2) return;
+    if (cuts < 2) return;
     const el = ref.current;
     if (!el) return;
 
     const shots = segments;
     let order = shuffled(cuts, -1);
     let at = 0;
-    let frame = 0;
+    let timer = 0;
 
-    const cut = (index: number) => {
-      at = index;
-      try {
-        el.currentTime = shots[order[at]].start;
-      } catch {
-        /* Not seekable yet. The next frame retries. */
+    const current = () => shots[order[at]];
+    const holds = (shot: { start: number; end: number }, t: number) =>
+      t >= shot.start - 0.05 && t < shot.end;
+
+    const clear = () => {
+      if (timer) {
+        window.clearTimeout(timer);
+        timer = 0;
       }
     };
 
-    const tick = () => {
-      frame = requestAnimationFrame(tick);
-      // A seek in flight still reports the old currentTime, which would read
-      // as an overrun and fire a second cut.
-      if (el.seeking) return;
-      const seg = shots[order[at]];
-      if (!seg) return;
-      // Second clause catches the native `loop` wrapping to zero underneath
-      // us, which happens if a seek is refused and playback runs to the end.
-      const overran = el.currentTime >= seg.end - 0.03;
-      const wrapped = el.currentTime < seg.start - 0.5;
-      if (!overran && !wrapped) return;
+    /** Believe the playhead over `at`, and settle on the shot really on screen. */
+    const reconcile = () => {
+      const t = el.currentTime;
+      if (holds(current(), t)) return true;
+      const shot = shots.findIndex((s) => holds(s, t));
+      if (shot < 0) return false; // mid-seek or past the end; the net retries
+      const pos = order.indexOf(shot);
+      if (pos < 0) return false;
+      at = pos;
+      return true;
+    };
+
+    /** Schedule the next cut for the moment this shot runs out. */
+    const arm = () => {
+      clear();
+      if (el.paused || el.ended) return; // the play handler re-arms
+      if (!reconcile()) return;
+      const remaining = (current().end - el.currentTime) / (el.playbackRate || 1);
+      timer = window.setTimeout(advance, Math.max(remaining * 1000, 0));
+    };
+
+    const advance = () => {
       if (at + 1 < order.length) {
-        cut(at + 1);
+        at += 1;
       } else {
         order = shuffled(cuts, order[at]);
-        cut(0);
+        at = 0;
       }
+      clear();
+      try {
+        el.currentTime = current().start;
+      } catch {
+        /* Not seekable yet; the net re-arms once it is. */
+      }
+      arm();
+    };
+
+    // The net: a clamped background timer, or a seek the network refused.
+    const onTime = () => {
+      if (!timer) arm();
+      else if (el.currentTime >= current().end) advance();
     };
 
     const begin = () => {
-      cut(0);
-      frame = requestAnimationFrame(tick);
+      // Open on a random shot, not always the one the file starts with.
+      try {
+        el.currentTime = shots[order[0]].start;
+      } catch {
+        /* As above. */
+      }
+      arm();
     };
 
-    // currentTime is not settable until the browser knows the duration.
     if (el.readyState >= 1) begin();
     else el.addEventListener("loadedmetadata", begin, { once: true });
 
+    el.addEventListener("seeked", arm);
+    el.addEventListener("play", arm);
+    el.addEventListener("playing", arm);
+    el.addEventListener("ratechange", arm);
+    el.addEventListener("timeupdate", onTime);
+    el.addEventListener("pause", clear);
+
     return () => {
-      cancelAnimationFrame(frame);
+      clear();
       el.removeEventListener("loadedmetadata", begin);
+      el.removeEventListener("seeked", arm);
+      el.removeEventListener("play", arm);
+      el.removeEventListener("playing", arm);
+      el.removeEventListener("ratechange", arm);
+      el.removeEventListener("timeupdate", onTime);
+      el.removeEventListener("pause", clear);
     };
-    // `segments` is derived fresh each render from a static manifest; `cuts`
-    // is the value that actually changes when the montage does.
+    // `segments` is derived fresh each render from a static manifest; `cuts` is
+    // the value that actually changes when the montage does.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [motion, cuts]);
+  }, [cuts]);
 
   if (!clip) return null;
-
-  const frame = "h-full w-full object-cover object-[34%_center] sm:object-center";
-
-  if (!motion) {
-    return (
-      <img
-        src={clip.poster}
-        srcSet={clip.posterSrcSet ?? undefined}
-        sizes="100vw"
-        alt=""
-        // The hero is the largest contentful paint on a phone, so this one
-        // loads eagerly and at high priority rather than waiting its turn.
-        fetchPriority="high"
-        decoding="async"
-        className={frame}
-      />
-    );
-  }
 
   return (
     <video
       ref={ref}
-      className={frame}
+      className="h-full w-full object-cover object-[34%_center] sm:object-center"
       poster={clip.poster}
       autoPlay
       muted
-      // Kept as a backstop: if a seek is ever refused, the film still loops
-      // instead of freezing on the last frame, and the watcher recovers.
+      // Backstop: if a seek is ever refused, the film keeps running instead of
+      // freezing on the last frame, and the watcher reconciles from there.
       loop
       playsInline
       preload="auto"
