@@ -12,6 +12,7 @@ import VehiclePlatformGrid from "@/components/home/VehiclePlatformGrid";
 import BuildStorySection from "@/components/home/BuildStorySection";
 import GlobalReachBand from "@/components/home/GlobalReachBand";
 import EditorialImage from "@/components/home/EditorialImage";
+import GarageClosingSection from "@/components/home/GarageClosingSection";
 import { getPhoto } from "@/lib/media/homepage-photo";
 import TrendingRail from "@/components/catalog/TrendingRail";
 import RecentlyAddedRail from "@/components/catalog/RecentlyAddedRail";
@@ -189,7 +190,8 @@ export default function Home() {
       {/* The photography credits band that used to sit here has moved to
           /photography-credits, linked from the footer of every page. The
           licence data itself is untouched -- it is read from the same
-          manifest as the images. */}
+          manifest as the images. The page closes on the artwork instead. */}
+      <GarageClosingSection />
     </div>
   );
 }
