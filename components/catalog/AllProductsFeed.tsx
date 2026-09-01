@@ -27,8 +27,25 @@ import {
   recordSearchResultClick,
 } from "@/lib/analytics/search-tracking";
 import { normalizeText } from "@/lib/catalog/search";
+import {
+  CATALOG_DEFAULT_LIMIT,
+  type CatalogQueryResult,
+} from "@/lib/catalog/query";
 
-const PAGE_SIZE = 48;
+const PAGE_SIZE = CATALOG_DEFAULT_LIMIT;
+
+/**
+ * How long a catalog request may run before it is treated as failed.
+ *
+ * A fetch with no deadline is how "Loading products..." became permanent: iOS
+ * Safari suspends in-flight requests in a backgrounded tab, and a flaky
+ * cellular connection can hold one open indefinitely. Nothing here ever gave
+ * up, so `loading` stayed true forever, with no error state and no way back.
+ * Twelve seconds is far longer than the query needs -- it reads a bundled
+ * array and the server reports single-digit milliseconds -- while still being
+ * inside the patience of someone watching an empty grid.
+ */
+const FETCH_TIMEOUT_MS = 12_000;
 
 const SORT_OPTIONS = [
   { value: "newest", label: "Newest First" },
@@ -73,6 +90,7 @@ function readSavedState(): ListScrollState | null {
 export default function AllProductsFeed({
   initialQuery = "",
   initialCategory = "",
+  initialData,
 }: {
   /** Supplied by the server page from ?q=. Deliberately a prop rather than
    * useSearchParams(): that hook requires this component to sit inside its
@@ -83,6 +101,10 @@ export default function AllProductsFeed({
   /** Supplied from ?category=, so a category page can hand off to this
    *  paginated view instead of rendering its entire catalog at once. */
   initialCategory?: string;
+  /** Page one, already run through the same query on the server. Present on
+   * a normal page load, so the grid has real products in its very first HTML
+   * and never has to render an empty "0 of 0" while a fetch is in flight. */
+  initialData?: CatalogQueryResult;
 }) {
   // Deliberately NOT read here (e.g. useRef(readSavedState())): sessionStorage
   // only exists in the browser, so a value read during the render that also
@@ -101,6 +123,10 @@ export default function AllProductsFeed({
   // detect it's stale and discard its response instead of appending
   // mismatched products onto the newly-filtered grid.
   const requestGenerationRef = useRef(0);
+  // Whether the server-rendered first page has been accepted. Only the very
+  // first pass of the load effect may adopt it; every later pass is a real
+  // filter/search change and must fetch.
+  const seedConsumedRef = useRef(false);
 
   const [query, setQuery] = useState(initialQuery);
   const [categoryFilter, setCategoryFilter] = useState(initialCategory);
@@ -108,10 +134,15 @@ export default function AllProductsFeed({
   const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
   const [sortFilter, setSortFilter] = useState("newest");
   const [page, setPage] = useState(1);
-  const [products, setProducts] = useState<CatalogProductCardData[]>([]);
-  const [total, setTotal] = useState(0);
-  const [hasMore, setHasMore] = useState(false);
-  const [loading, setLoading] = useState(true);
+  // Seeded from the server render when there is one. This is what stops the
+  // grid opening on "Showing 0 of 0 products": there is no window in which
+  // the component is mounted and knows nothing.
+  const [products, setProducts] = useState<CatalogProductCardData[]>(
+    initialData?.products ?? []
+  );
+  const [total, setTotal] = useState(initialData?.total ?? 0);
+  const [hasMore, setHasMore] = useState(initialData?.hasMore ?? false);
+  const [loading, setLoading] = useState(!initialData);
   const [error, setError] = useState(false);
   const [correctedQuery, setCorrectedQuery] = useState<string | null>(null);
   /** The query the displayed results actually belong to, so the empty state
@@ -179,11 +210,22 @@ export default function AllProductsFeed({
     if (priceFilter !== "all") params.set("price", priceFilter);
     if (sortFilter !== "newest") params.set("sort", sortFilter);
 
-    const res = await fetch(`/api/catalog/products?${params.toString()}`);
-    if (!res.ok) {
-      throw new Error(`Catalog request failed (${res.status})`);
+    const controller = new AbortController();
+    const deadline = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+    try {
+      const res = await fetch(`/api/catalog/products?${params.toString()}`, {
+        signal: controller.signal,
+      });
+      if (!res.ok) {
+        throw new Error(`Catalog request failed (${res.status})`);
+      }
+      return (await res.json()) as ApiResponse;
+    } finally {
+      // An abort surfaces as a throw, which the callers already turn into the
+      // error state and its retry button -- the recoverable outcome the old
+      // open-ended wait could never reach.
+      clearTimeout(deadline);
     }
-    return (await res.json()) as ApiResponse;
   }, [query, categoryFilter, brandFilter, priceFilter, sortFilter]);
 
   const fetchProducts = useCallback(
@@ -260,6 +302,18 @@ export default function AllProductsFeed({
           setBrandFilter(saved.brandFilter ?? "");
           setPriceFilter((saved.priceFilter as PriceFilterValue) ?? "all");
           setSortFilter(saved.sortFilter ?? "newest");
+        }
+      }
+
+      // The server already ran this exact query and its products are on
+      // screen. Re-fetching them here would spend a request to arrive at the
+      // same list, and would blank the grid while doing it. A restore (below)
+      // wants different pages, so it still runs.
+      if (!seedConsumedRef.current) {
+        seedConsumedRef.current = true;
+        if (initialData && !restorePendingRef.current) {
+          setLoading(false);
+          return;
         }
       }
 
@@ -469,9 +523,16 @@ export default function AllProductsFeed({
               ) : null}
             </p>
           ) : null}
-          <p className="text-xs text-neutral-500">
-            Showing {products.length} of {total.toLocaleString()} products
-          </p>
+          {products.length > 0 ? (
+            <p className="text-xs text-neutral-500">
+              Showing {products.length} of {total.toLocaleString()} products
+            </p>
+          ) : loading ? (
+            // "Showing 0 of 0 products" is not a loading state, it is a false
+            // statement about a 1,890-listing catalog -- and it used to render
+            // above the loading branch, so every visitor saw it.
+            <p className="text-xs text-neutral-500">Loading the marketplace…</p>
+          ) : null}
         </div>
       </div>
 

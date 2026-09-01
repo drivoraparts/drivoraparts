@@ -10,6 +10,7 @@ import StaffPicksSection from "@/components/catalog/StaffPicksSection";
 import CatalogVehicleFinderSection from "@/components/catalog/CatalogVehicleFinderSection";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { routes } from "@/lib/inventory";
+import { CATALOG_DEFAULT_LIMIT, queryCatalog } from "@/lib/catalog/query";
 import {
   buildPageMetadata,
   breadcrumbJsonLd,
@@ -43,6 +44,28 @@ export default async function AllProductsPage({
   const initialCategory =
     typeof params.category === "string" ? params.category : "";
   const isSearch = initialQuery.trim().length > 0;
+
+  /*
+   * Run the catalog query here, while rendering, and hand the result to the
+   * feed as its starting state.
+   *
+   * The feed used to mount empty and fetch its own first page, which meant
+   * every visit had a window -- a second on a desktop, far longer on a phone
+   * -- where the marketplace rendered "Showing 0 of 0 products" over an empty
+   * grid, and where a request that never came back left "Loading products..."
+   * on screen permanently. Neither is reachable now: page one is in the HTML.
+   * The client still owns everything after that (filters, search, paging), and
+   * runs the identical query through /api/catalog/products.
+   *
+   * This also puts real products and prices into the server-rendered markup
+   * for the first time, which is what a crawler reads.
+   */
+  const initialData = queryCatalog({
+    page: 1,
+    limit: CATALOG_DEFAULT_LIMIT,
+    q: initialQuery,
+    category: initialCategory,
+  });
 
   return (
     <>
@@ -92,6 +115,7 @@ export default async function AllProductsPage({
             key={`${initialQuery}|${initialCategory}`}
             initialQuery={initialQuery}
             initialCategory={initialCategory}
+            initialData={initialData}
           />
         </div>
 
