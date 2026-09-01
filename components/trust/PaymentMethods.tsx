@@ -127,14 +127,23 @@ export default function PaymentMethods() {
         </div>
       </div>
 
-      {/* Says what the row does not: that cards are not a rail here. */}
+      {/*
+        Says what the row does not, in both directions.
+
+        DrivoraParts never touches a card: the invoice is crypto, and no card
+        mark belongs in the row above. But a customer without crypto is not
+        stuck, and the checkout already points them at ChangeNOW to buy some
+        with a card. Leaving that out of the trust panel answers "can I pay by
+        card?" with silence, which reads as no. This says what is actually
+        true: not here, but there, and then back here.
+      */}
       <p className="mt-5 border-t border-neutral-800 pt-4 text-xs leading-relaxed text-neutral-400">
         Bitcoin, Ethereum and Tether shown — 300+ coins selectable on the
-        NOWPayments invoice. Crypto only:{" "}
-        <span className="text-neutral-300">
-          no bank account or card is required
-        </span>
-        , and card payments are not processed by DrivoraParts directly.
+        NOWPayments invoice.{" "}
+        <span className="text-neutral-300">No bank account needed.</span>{" "}
+        DrivoraParts does not process card payments itself — if you would
+        rather pay by card, checkout links you to ChangeNOW to buy crypto with
+        one first.
       </p>
     </div>
   );
