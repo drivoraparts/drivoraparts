@@ -70,6 +70,19 @@ export default function FooterContent() {
       <div className="border-t border-border-on-dark py-6 text-center text-xs text-muted-on-dark">
         <CurrencyFooterNote />
         © {new Date().getFullYear()} DrivoraParts LLC. {t("rightsReserved")}
+        {/* Several vehicle photographs are CC BY-SA, which requires the
+            creator, the licence and the source to be reachable. They used to
+            be a band across the bottom of the homepage; a link from every
+            page satisfies the licence without ending the homepage on legal
+            text. */}
+        <span aria-hidden="true" className="mx-2 text-border-on-dark">·</span>
+        <Link
+          href="/photography-credits"
+          prefetch={false}
+          className="underline decoration-border-on-dark underline-offset-2 transition-colors hover:text-foreground-on-dark"
+        >
+          Photography &amp; Image Credits
+        </Link>
       </div>
     </>
   );
