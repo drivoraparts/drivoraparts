@@ -216,7 +216,18 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   } else if (sort === "name-asc") {
     items.sort((a, b) => a.name.localeCompare(b.name));
   } else if (!query) {
-    items.sort((a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0));
+    // Ties break on id, and they tie constantly. A large part of the
+    // catalog is authored with createdAt set to Date.now() plus 24 hours,
+    // evaluated when the module loads -- so those listings carry
+    // near-identical, future-dated timestamps whose relative order depends
+    // on which module happened to load first. That differs between this
+    // route's isolate and the server component rendering the same query,
+    // and it left the catalog grid and the Fresh Inventory rail disagreeing
+    // about what "newest" meant on one page load. Ids ascend as listings
+    // are added here, so they are the stable stand-in.
+    items.sort(
+      (a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0) || b.id - a.id
+    );
   }
 
   const total = items.length;

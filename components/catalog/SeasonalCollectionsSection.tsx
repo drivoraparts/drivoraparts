@@ -14,6 +14,7 @@ export default function SeasonalCollectionsSection() {
           description={collection.blurb}
           products={collection.products}
           viewAllHref={collection.href}
+          photoSlot={collection.photoSlot}
           tone={index % 2 === 0 ? "muted" : "light"}
         />
       ))}

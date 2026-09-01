@@ -7,7 +7,7 @@ import AddToCartButton, {
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import ProductImage from "@/components/media/ProductImage";
-import { ProductDiscountBadge } from "@/components/product/DiscountBadge";
+import { getProductDiscountLabel } from "@/lib/inventory/discounts";
 import {
   catalogProductAnchorId,
   saveListScrollOnProductClick,
@@ -103,11 +103,14 @@ export default function CatalogProductCard({
               size="sm"
             />
           </div>
+          {/* Contained, not cropped -- same reason as the marketplace grid:
+              a cover crop takes the ends off gearboxes and body panels, and
+              a part's silhouette is most of what identifies it this small. */}
           <ProductImage
             src={thumbnail}
             alt={product.name}
             profile="grid"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain p-2 transition-transform duration-[var(--motion-duration-base)] ease-[var(--motion-ease-state)] group-hover:scale-[1.03]"
           />
         </div>
 
@@ -120,9 +123,18 @@ export default function CatalogProductCard({
             compareAtPrice={product.compareAtPrice}
             size="md"
           />
-          <div className="mt-2">
-            <ProductDiscountBadge category={product.category} />
-          </div>
+          {/*
+            The bulk offer is real and it stays, but it is the same sentence
+            on every card in every rail -- twelve filled green badges shouting
+            one site-wide policy, competing with twelve different products for
+            attention. It is already stated once in the announcement bar, so
+            here it drops to a quiet line under the price: still visible to
+            anyone weighing a second item, no longer the loudest thing on a
+            card whose job is to sell the part.
+          */}
+          <p className="mt-1.5 text-[10px] font-medium text-neutral-500">
+            {getProductDiscountLabel(product.category)}
+          </p>
         </div>
       </div>
 

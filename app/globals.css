@@ -707,3 +707,15 @@ img.rounded-full {
 .catalog-chip-row::-webkit-scrollbar {
   display: none;
 }
+
+/* Editorial rails scroll horizontally. The scrollbar under a row of product
+   cards is noise, and the fade at the right edge already says the row
+   continues -- see ProductRail. Touch devices never showed one anyway. */
+.catalog-rail {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.catalog-rail::-webkit-scrollbar {
+  display: none;
+}
