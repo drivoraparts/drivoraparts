@@ -3,32 +3,16 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-// Real vehicle makes represented in the catalog's fitment data.
-const VEHICLE_MAKES = [
-  "BMW",
-  "Toyota",
-  "Nissan",
-  "Honda",
-  "Mazda",
-  "Ford",
-  "Chevrolet",
-  "Dodge",
-  "Audi",
-  "Mercedes-Benz",
-  "Jaguar",
-  "Chrysler",
-  "GMC",
-  "Lexus",
-  "Jeep",
-  "Volkswagen",
-  "Subaru",
-  "Isuzu",
-  "Mitsubishi",
-  "Hino",
-] as const;
+import {
+  VEHICLE_MAKES,
+  fitmentHref,
+  vehicleYears,
+} from "@/lib/vehicle/fitment-query";
 
-const CURRENT_YEAR = new Date().getFullYear();
-const YEARS = Array.from({ length: CURRENT_YEAR - 1969 }, (_, i) => CURRENT_YEAR - i);
+// Shared with the catalog's finder panel, so the two cannot disagree about
+// what "compatible" means. See lib/vehicle/fitment-query.ts, which also
+// records why the year is collected but not searched.
+const YEARS = vehicleYears();
 
 const fieldClass =
   "w-full rounded-lg border border-neutral-300 bg-white px-3 py-3 text-sm text-neutral-900 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/10";
@@ -46,17 +30,7 @@ export default function ShopByVehicleFinder({
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    // Year isn't included: the catalog has no structured year-range data,
-    // so a specific model year almost never appears literally in a
-    // product's name/fitment text, and folding it into the search terms
-    // made nearly every real fitment match fail (e.g. "2020 Toyota Supra
-    // 2JZ" matched nothing, even though "Toyota Supra 2JZ" alone matches a
-    // real product). Make/Model/Engine are much more likely to appear in
-    // fitment text, so those still drive the search.
-    const query = [make, model.trim(), engine.trim()].filter(Boolean).join(" ");
-    router.push(
-      query ? `/catalog/all?q=${encodeURIComponent(query)}` : "/catalog/all"
-    );
+    router.push(fitmentHref({ year, make, model, engine }));
   };
 
   return (
