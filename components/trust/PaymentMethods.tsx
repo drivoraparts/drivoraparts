@@ -140,11 +140,44 @@ export default function PaymentMethods() {
       <p className="mt-5 border-t border-neutral-800 pt-4 text-xs leading-relaxed text-neutral-400">
         Bitcoin, Ethereum and Tether shown — 300+ coins selectable on the
         NOWPayments invoice.{" "}
-        <span className="text-neutral-300">No bank account needed.</span>{" "}
-        DrivoraParts does not process card payments itself — if you would
-        rather pay by card, checkout links you to ChangeNOW to buy crypto with
-        one first.
+        <span className="text-neutral-300">No bank account needed.</span>
       </p>
+
+      {/*
+        The card route, given its own row rather than a clause in the note
+        above it.
+
+        It is deliberately separate from "Accepted at checkout": that row is
+        what DrivoraParts takes, and a card is not one of those things. This
+        is a route that begins with a card and ends in crypto, and the label
+        names the party that actually takes the card.
+
+        The official Visa and Mastercard marks belong in this row. They are
+        not here because both brand centres gate their downloads behind
+        registration -- brand.mastercard.com answers 403 to every asset path
+        and renders empty without a session, and brand.visa.com does not
+        resolve at all. The alternatives are all ruled out: no third-party
+        logo sites, no redrawing, no AI, no screenshots. So the row ships as
+        type until the real files arrive, and the marks drop in here.
+      */}
+      <div className="mt-4 border-t border-neutral-800 pt-4">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-neutral-400">
+          Pay by card via ChangeNOW
+        </p>
+        <p className="mt-2 text-xs leading-relaxed text-neutral-400">
+          DrivoraParts does not process card payments itself. Buy crypto with
+          a Visa or Mastercard debit or credit card at{" "}
+          <a
+            href="https://changenow.io/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="text-neutral-200 underline decoration-neutral-600 underline-offset-2 transition-colors hover:text-accent-on-dark"
+          >
+            ChangeNOW
+          </a>
+          , then complete your order — the same route checkout links to.
+        </p>
+      </div>
     </div>
   );
 }
