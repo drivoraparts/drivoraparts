@@ -126,7 +126,7 @@ export default function AddToCartButton({
       ) : compact ? (
         <>
           <span aria-hidden="true">🛒</span>
-          ADD CART
+          Add to Cart
         </>
       ) : (
         "Add to Cart"

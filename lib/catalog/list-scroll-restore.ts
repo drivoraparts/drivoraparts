@@ -11,6 +11,7 @@ export type ListScrollState = {
   categoryFilter?: string;
   brandFilter?: string;
   priceFilter?: string;
+  conditionFilter?: string;
   sortFilter?: string;
 };
 

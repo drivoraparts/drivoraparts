@@ -95,12 +95,12 @@ export default async function AllProductsPage({
         <div className="px-3 pb-6 pt-10 sm:px-6">
           <header className="mb-3 sm:mb-6">
             <h2 className="inline-block border-b-2 border-accent pb-1 text-xl font-bold text-neutral-900 sm:text-3xl sm:pb-2">
-              {isSearch ? `Search results for “${initialQuery}”` : "Browse Everything"}
+              {isSearch ? `Search results for “${initialQuery}”` : "All Products"}
             </h2>
             <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
               {isSearch
                 ? "Refine with the category, brand, and price filters below."
-                : "Every listing in the marketplace, filterable by category, brand, and price."}
+                : "Browse the complete DrivoraParts inventory."}
             </p>
           </header>
           {/* No <Suspense> and no useSearchParams() inside the feed. That

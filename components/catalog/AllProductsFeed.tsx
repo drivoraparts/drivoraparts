@@ -29,6 +29,7 @@ import {
 import { normalizeText } from "@/lib/catalog/search";
 import {
   CATALOG_DEFAULT_LIMIT,
+  CONDITION_FILTERS,
   type CatalogQueryResult,
 } from "@/lib/catalog/query";
 
@@ -132,6 +133,10 @@ export default function AllProductsFeed({
   const [categoryFilter, setCategoryFilter] = useState(initialCategory);
   const [brandFilter, setBrandFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState<PriceFilterValue>("all");
+  const [conditionFilter, setConditionFilter] = useState("");
+  // The mobile filter sheet. Desktop shows the same controls inline, so this
+  // is only ever consulted below the sm breakpoint.
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortFilter, setSortFilter] = useState("newest");
   const [page, setPage] = useState(1);
   // Seeded from the server render when there is one. This is what stops the
@@ -208,6 +213,7 @@ export default function AllProductsFeed({
     if (categoryFilter) params.set("category", categoryFilter);
     if (brandFilter) params.set("brand", brandFilter);
     if (priceFilter !== "all") params.set("price", priceFilter);
+    if (conditionFilter) params.set("condition", conditionFilter);
     if (sortFilter !== "newest") params.set("sort", sortFilter);
 
     const controller = new AbortController();
@@ -226,7 +232,14 @@ export default function AllProductsFeed({
       // open-ended wait could never reach.
       clearTimeout(deadline);
     }
-  }, [query, categoryFilter, brandFilter, priceFilter, sortFilter]);
+  }, [
+    query,
+    categoryFilter,
+    brandFilter,
+    priceFilter,
+    conditionFilter,
+    sortFilter,
+  ]);
 
   const fetchProducts = useCallback(
     async (pageNum: number, append: boolean) => {
@@ -301,6 +314,7 @@ export default function AllProductsFeed({
           setCategoryFilter(initialCategory || (saved.categoryFilter ?? ""));
           setBrandFilter(saved.brandFilter ?? "");
           setPriceFilter((saved.priceFilter as PriceFilterValue) ?? "all");
+          setConditionFilter(saved.conditionFilter ?? "");
           setSortFilter(saved.sortFilter ?? "newest");
         }
       }
@@ -447,11 +461,92 @@ export default function AllProductsFeed({
         categoryFilter,
         brandFilter,
         priceFilter,
+        conditionFilter,
         sortFilter,
         productId,
       });
     },
-    [page, query, products, categoryFilter, brandFilter, priceFilter, sortFilter]
+    [
+      page,
+      query,
+      products,
+      categoryFilter,
+      brandFilter,
+      priceFilter,
+      conditionFilter,
+      sortFilter,
+    ]
+  );
+
+  /*
+   * Filters, and how many are on.
+   *
+   * Sort is excluded deliberately: re-ordering a list is not narrowing it, and
+   * counting it would tell someone a filter is applied when they have only
+   * changed the order. The count exists so a phone, where these controls sit
+   * behind a button, can still say what is currently hiding products.
+   */
+  const conditionOptions = useMemo(
+    () => [
+      { value: "", label: "Any Condition" },
+      ...CONDITION_FILTERS.map((c) => ({ value: c.value, label: c.label })),
+    ],
+    []
+  );
+
+  const activeFilterCount =
+    (categoryFilter ? 1 : 0) +
+    (brandFilter ? 1 : 0) +
+    (priceFilter !== "all" ? 1 : 0) +
+    (conditionFilter ? 1 : 0);
+
+  const clearAllFilters = useCallback(() => {
+    setCategoryFilter("");
+    setBrandFilter("");
+    setPriceFilter("all");
+    setConditionFilter("");
+  }, []);
+
+  /*
+   * The four narrowing controls, defined once and rendered twice -- inline on
+   * desktop, inside the sheet on phones. Two copies of this markup would be
+   * two places for the option lists to drift apart.
+   */
+  const filterControls = (
+    <>
+      <CatalogFilterSelect
+        ariaLabel="Filter by category"
+        value={categoryFilter}
+        onChange={(value) => {
+          setCategoryFilter(value);
+          setBrandFilter("");
+        }}
+        options={categoryOptions}
+      />
+
+      <CatalogFilterSelect
+        ariaLabel="Filter by brand"
+        value={brandFilter}
+        onChange={setBrandFilter}
+        options={brandOptions}
+        searchable
+        searchPlaceholder="Search brands…"
+      />
+
+      <CatalogFilterSelect
+        ariaLabel="Filter by budget"
+        value={priceFilter}
+        onChange={(value) => setPriceFilter(value as PriceFilterValue)}
+        options={priceOptions}
+      />
+
+      <CatalogFilterSelect
+        ariaLabel="Filter by condition"
+        value={conditionFilter}
+        onChange={setConditionFilter}
+        options={conditionOptions}
+      />
+    </>
   );
 
   return (
@@ -478,33 +573,9 @@ export default function AllProductsFeed({
           ) : null}
         </div>
 
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-          <CatalogFilterSelect
-            ariaLabel="Filter by category"
-            value={categoryFilter}
-            onChange={(value) => {
-              setCategoryFilter(value);
-              setBrandFilter("");
-            }}
-            options={categoryOptions}
-          />
-
-          <CatalogFilterSelect
-            ariaLabel="Filter by brand"
-            value={brandFilter}
-            onChange={setBrandFilter}
-            options={brandOptions}
-            searchable
-            searchPlaceholder="Search brands…"
-          />
-
-          <CatalogFilterSelect
-            ariaLabel="Filter by budget"
-            value={priceFilter}
-            onChange={(value) => setPriceFilter(value as PriceFilterValue)}
-            options={priceOptions}
-          />
-
+        {/* Desktop: the controls are the bar. */}
+        <div className="hidden gap-2 sm:grid sm:grid-cols-5">
+          {filterControls}
           <CatalogFilterSelect
             ariaLabel="Sort products"
             value={sortFilter}
@@ -512,6 +583,101 @@ export default function AllProductsFeed({
             options={sortOptions}
           />
         </div>
+
+        {/* Phones: filtering goes behind one button, sorting stays out in the
+            open. Sorting is one decision and belongs where it can be made
+            without opening anything; filtering is four and needs the room. */}
+        <div className="flex items-center gap-2 sm:hidden">
+          <button
+            type="button"
+            onClick={() => setFiltersOpen(true)}
+            aria-haspopup="dialog"
+            aria-expanded={filtersOpen}
+            className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm font-semibold text-neutral-900 transition-colors duration-[var(--motion-duration-fast)] active:bg-neutral-100"
+          >
+            Filters
+            {activeFilterCount > 0 ? (
+              <span className="inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-accent px-1.5 text-[11px] font-bold tabular-nums text-accent-foreground">
+                {activeFilterCount}
+              </span>
+            ) : null}
+          </button>
+          <div className="min-w-0 flex-1">
+            <CatalogFilterSelect
+              ariaLabel="Sort products"
+              value={sortFilter}
+              onChange={setSortFilter}
+              options={sortOptions}
+            />
+          </div>
+        </div>
+
+        {/*
+          The filter sheet.
+
+          Rendered only while open, so its selects are not in the tab order of
+          a page where they are invisible. The scrim closes it, as does the
+          close button and "Show results" -- filters apply as they are chosen,
+          so there is no pending state to discard and no way to leave this
+          having silently lost a choice.
+        */}
+        {filtersOpen ? (
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Filters"
+            className="fixed inset-0 z-50 sm:hidden"
+          >
+            <button
+              type="button"
+              aria-label="Close filters"
+              onClick={() => setFiltersOpen(false)}
+              className="absolute inset-0 bg-neutral-950/50"
+            />
+
+            <div className="absolute inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto rounded-t-2xl border-t border-neutral-200 bg-white pb-[env(safe-area-inset-bottom)]">
+              <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
+                <p className="text-sm font-bold text-neutral-900">
+                  Filters
+                  {activeFilterCount > 0 ? (
+                    <span className="ml-2 font-medium text-neutral-500">
+                      {activeFilterCount} active
+                    </span>
+                  ) : null}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setFiltersOpen(false)}
+                  className="-mr-2 px-2 py-1 text-sm text-neutral-500"
+                >
+                  Close
+                </button>
+              </div>
+
+              <div className="grid gap-3 px-4 py-4">{filterControls}</div>
+
+              <div className="sticky bottom-0 flex items-center gap-3 border-t border-neutral-200 bg-white px-4 py-3">
+                <button
+                  type="button"
+                  onClick={clearAllFilters}
+                  disabled={activeFilterCount === 0}
+                  className="rounded-lg border border-neutral-300 px-4 py-2.5 text-sm font-semibold text-neutral-700 transition-colors duration-[var(--motion-duration-fast)] disabled:opacity-40"
+                >
+                  Clear all
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setFiltersOpen(false)}
+                  className="flex-1 rounded-lg bg-accent px-4 py-2.5 text-sm font-bold text-accent-foreground transition-colors duration-[var(--motion-duration-fast)] active:bg-accent-active"
+                >
+                  {loading
+                    ? "Show results"
+                    : `Show ${total.toLocaleString()} result${total === 1 ? "" : "s"}`}
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : null}
 
         <div className="space-y-0.5">
           {correctedQuery && products.length > 0 ? (
@@ -567,7 +733,7 @@ export default function AllProductsFeed({
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-3 gap-1.5 sm:gap-3 md:gap-4">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 lg:gap-4">
             {products.map((product, index) => (
               <AllProductsGridCard
                 key={product.id}

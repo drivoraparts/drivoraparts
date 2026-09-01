@@ -27,6 +27,17 @@ export type CatalogProductCardData = {
   category: string;
   brand?: string;
   isNew?: boolean;
+  /**
+   * Supplied by the catalog query where the listing actually has them.
+   * Coverage is uneven -- partNumber ~11%, fitment ~35%, condition and stock
+   * ~99% -- so every consumer renders these conditionally rather than
+   * reserving a row that would be empty on most cards.
+   */
+  brandName?: string;
+  partNumber?: string;
+  fitment?: string;
+  condition?: string;
+  inStock?: boolean;
 };
 
 export default function CatalogProductCard({

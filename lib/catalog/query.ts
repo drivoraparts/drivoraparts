@@ -63,7 +63,49 @@ export type CatalogQueryInput = {
   brand?: string;
   price?: string;
   sort?: string;
+  /** "brand-new", "used", ... Matched case-insensitively against the listing. */
+  condition?: string;
+  /** "in-stock" hides listings not marked as stocked. Anything else is ignored. */
+  availability?: string;
 };
+
+/**
+ * Fitment text is a full sentence on the product page -- model years, body
+ * codes, the phrases people search for. A card has room for a line. Cut on a
+ * word boundary so the fragment still reads as English.
+ */
+function shortFitment(text: string | undefined): string | undefined {
+  if (!text) return undefined;
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= 96) return clean;
+  const cut = clean.slice(0, 96);
+  const boundary = cut.lastIndexOf(" ");
+  return (boundary > 40 ? cut.slice(0, boundary) : cut).trimEnd() + "…";
+}
+
+/**
+ * Conditions are recorded free-hand, so the catalog holds "Used", "used",
+ * "Used like new" and "used - inspected and tested" as separate strings. An
+ * exact match would leave three listings unreachable by any filter and would
+ * make "Used" quietly mean "the ones spelled exactly that way". Grouping is
+ * not a claim about the goods -- each card still prints the condition the
+ * listing actually recorded.
+ */
+export function conditionBucket(raw?: string): string {
+  const value = (raw || "").trim().toLowerCase();
+  if (!value) return "";
+  if (value.includes("refurb")) return "refurbished";
+  if (value.startsWith("used")) return "used";
+  if (value.includes("brand-new") || value === "new") return "brand-new";
+  return value;
+}
+
+/** The buckets offered as filter options, in the order they are shown. */
+export const CONDITION_FILTERS = [
+  { value: "brand-new", label: "Brand New" },
+  { value: "used", label: "Used" },
+  { value: "refurbished", label: "Refurbished" },
+] as const;
 
 export type CatalogProductPayload = {
   id: number;
@@ -75,6 +117,19 @@ export type CatalogProductPayload = {
   category: string;
   brand: string;
   isNew: boolean;
+  /** Display name for the brand slug, so a card can print "Wilwood". */
+  brandName: string;
+  /**
+   * The fields below are present only where the listing has them. Coverage
+   * across the catalog is uneven and the cards render each one conditionally
+   * rather than reserving space: partNumber ~11%, fitment ~35%, condition and
+   * stock ~99%. A fixed row for a field nine in ten listings lack would be a
+   * column of empty labels.
+   */
+  partNumber?: string;
+  fitment?: string;
+  condition?: string;
+  inStock?: boolean;
 };
 
 export type CatalogQueryResult = {
@@ -104,6 +159,8 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   const brand = input.brand || "";
   const priceFilter = (input.price || "all") as PriceFilterValue;
   const sort = input.sort || "newest";
+  const condition = (input.condition || "").trim().toLowerCase();
+  const inStockOnly = (input.availability || "") === "in-stock";
 
   let items = [...getAllProducts()];
 
@@ -120,6 +177,17 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
 
   if (priceFilter !== "all") {
     items = items.filter((p) => matchesPriceFilter(p.price, priceFilter));
+  }
+
+  // Condition and availability are real fields on ~99% of listings, so these
+  // narrow honestly. A listing with no condition recorded is excluded from a
+  // condition filter rather than assumed to match.
+  if (condition) {
+    items = items.filter((p) => conditionBucket(p.condition) === condition);
+  }
+
+  if (inStockOnly) {
+    items = items.filter((p) => p.stock !== false);
   }
 
   // Ranked, typo-tolerant search (see lib/catalog/search.ts). Returns items
@@ -164,6 +232,11 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
     category: product.category,
     brand: product.brand,
     isNew: Boolean(product.createdAt && product.createdAt >= newSinceMs),
+    brandName: brandName(product.brand),
+    partNumber: product.partNumber || undefined,
+    fitment: shortFitment(product.fitment),
+    condition: product.condition || undefined,
+    inStock: product.stock,
   }));
 
   return {

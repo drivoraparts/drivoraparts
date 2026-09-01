@@ -21,6 +21,8 @@ export async function GET(request: NextRequest) {
     brand: params.get("brand") || "",
     price: params.get("price") || "all",
     sort: params.get("sort") || "newest",
+    condition: params.get("condition") || "",
+    availability: params.get("availability") || "",
   });
 
   return NextResponse.json(result);
