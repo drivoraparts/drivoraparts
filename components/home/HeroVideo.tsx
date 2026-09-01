@@ -37,12 +37,19 @@ export default function HeroVideo() {
     }
   }, []);
 
+  /*
+   * The mobile crop is 34%, not centred. object-cover on a portrait phone
+   * shows a narrow vertical slice of a 16:9 source, and object-position picks
+   * which slice: below 50% the window moves left, so a centred subject lands
+   * to the RIGHT of the visible frame -- clear of the text column instead of
+   * behind it. Desktop shows enough of the frame to centre normally.
+   */
   if (!clip) return null;
 
   return (
     <video
       ref={ref}
-      className="h-full w-full object-cover object-[60%_center] sm:object-center"
+      className="h-full w-full object-cover object-[34%_center] sm:object-center"
       poster={clip.poster}
       autoPlay
       muted
