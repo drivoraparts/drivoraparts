@@ -33,6 +33,10 @@ export type Photo = {
   intrinsicWidth?: number;
   intrinsicHeight?: number;
   variants?: PhotoVariant[];
+  /* Optional parallel AVIF renditions. Only generated where WebP is
+     expensive -- dense, high-frequency subjects such as bare branches, where
+     AVIF is worth the extra encode. */
+  avifVariants?: PhotoVariant[];
 };
 
 const PHOTOS = photography as Record<string, Photo>;
@@ -69,6 +73,8 @@ export function getHeroVideo(): HeroVideoAsset | null {
 export type PhotoRender = {
   src: string;
   srcSet: string;
+  /** Null unless AVIF renditions were generated for this slot. */
+  avifSrcSet: string | null;
   width: number;
   height: number;
   credit: string | null;
@@ -87,9 +93,14 @@ export function renderPhoto(slot: string): PhotoRender | null {
   const largest = variants[variants.length - 1];
   const ratio = p.intrinsicHeight && p.intrinsicWidth ? p.intrinsicHeight / p.intrinsicWidth : 9 / 16;
 
+  const avif = p.avifVariants?.length
+    ? [...p.avifVariants].sort((a, b) => a.width - b.width)
+    : null;
+
   return {
     src: largest.file,
     srcSet: variants.map((v) => `${v.file} ${v.width}w`).join(", "),
+    avifSrcSet: avif ? avif.map((v) => `${v.file} ${v.width}w`).join(", ") : null,
     width: largest.width,
     height: Math.round(largest.width * ratio),
     // Only surface a credit where the licence actually demands one. CC0, public

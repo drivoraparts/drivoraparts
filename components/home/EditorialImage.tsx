@@ -29,7 +29,7 @@ export default function EditorialImage({
   const photo = renderPhoto(slot);
   if (!photo) return null;
 
-  return (
+  const img = (
     <img
       src={photo.src}
       srcSet={photo.srcSet}
@@ -42,5 +42,21 @@ export default function EditorialImage({
       fetchPriority={priority ? "high" : "auto"}
       className={className}
     />
+  );
+
+  /*
+   * A <picture> only where AVIF renditions exist. AVIF is markedly better on
+   * dense, high-frequency subjects -- the Workhorse frame's bare branches cost
+   * 473KB as WebP and 177KB as AVIF at the same width -- but it is not worth
+   * the encode on smooth skies, so most slots ship WebP alone and fall
+   * straight through to the <img>.
+   */
+  if (!photo.avifSrcSet) return img;
+
+  return (
+    <picture>
+      <source type="image/avif" srcSet={photo.avifSrcSet} sizes={sizes} />
+      {img}
+    </picture>
   );
 }

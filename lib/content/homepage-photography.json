@@ -768,27 +768,44 @@
     "toneLuminance": 0.142,
     "originalWidth": 4342,
     "originalHeight": 2756,
-    "intrinsicWidth": 1600,
-    "intrinsicHeight": 1016,
+    "intrinsicWidth": 1280,
+    "intrinsicHeight": 812,
     "variants": [
       {
         "width": 640,
         "file": "/homepage/workhorse/640.webp",
-        "bytes": 74208
+        "bytes": 69888
       },
       {
         "width": 1024,
         "file": "/homepage/workhorse/1024.webp",
-        "bytes": 197086
+        "bytes": 186034
       },
       {
-        "width": 1600,
-        "file": "/homepage/workhorse/1600.webp",
-        "bytes": 484120
+        "width": 1280,
+        "file": "/homepage/workhorse/1280.webp",
+        "bytes": 288696
+      }
+    ],
+    "avifVariants": [
+      {
+        "width": 640,
+        "file": "/homepage/workhorse/640.avif",
+        "bytes": 43088
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/workhorse/1024.avif",
+        "bytes": 115505
+      },
+      {
+        "width": 1280,
+        "file": "/homepage/workhorse/1280.avif",
+        "bytes": 181548
       }
     ],
     "sha256": "899263e5efb15148",
-    "downloadedAt": "2026-09-01T10:36:33.014Z"
+    "downloadedAt": "2026-09-01T11:05:28.743Z"
   },
   "offroader": {
     "slot": "offroader",
