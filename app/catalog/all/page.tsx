@@ -67,6 +67,39 @@ export default async function AllProductsPage({
     category: initialCategory,
   });
 
+  /*
+   * The listings themselves, defined once and positioned by the order below.
+   * Writing this twice would be two places for the heading, the key and the
+   * server-rendered first page to drift apart.
+   */
+  const marketplace = (
+    <div className="px-3 pb-6 pt-10 sm:px-6">
+      <header className="mb-3 sm:mb-6">
+        <h2 className="inline-block border-b-2 border-accent pb-1 text-xl font-bold text-neutral-900 sm:text-3xl sm:pb-2">
+          {isSearch ? `Search results for “${initialQuery}”` : "All Products"}
+        </h2>
+        <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
+          {isSearch
+            ? "Refine with the category, brand, and price filters below."
+            : "Browse the complete DrivoraParts inventory."}
+        </p>
+      </header>
+      {/* No <Suspense> and no useSearchParams() inside the feed. That
+          combination put the feed in its own streamed Suspense island, and in
+          production that island's HTML was delivered but never hydrated -- so
+          its effects never ran, no products were ever fetched, and it sat on
+          "Loading products..." forever for every visitor. The query now comes
+          from the server as a prop, and `key` remounts the feed whenever it
+          changes so a new search always starts from clean state. */}
+      <AllProductsFeed
+        key={`${initialQuery}|${initialCategory}`}
+        initialQuery={initialQuery}
+        initialCategory={initialCategory}
+        initialData={initialData}
+      />
+    </div>
+  );
+
   return (
     <>
       <JsonLdScript
@@ -83,55 +116,47 @@ export default async function AllProductsPage({
         ]}
       />
       <main className="min-h-screen bg-white text-neutral-900">
-        {/* Only the hero sits above the listings. Everything else that used to
-            — vehicle finder, category grid, editorial rails — pushed the feed
-            5,509px down, better than nine screens of scrolling. A search
-            looked like it had hung, and "View all" looked like it had bounced
-            the visitor back to a second homepage, since these are the same
-            components the homepage is built from. Whoever arrives here asked
-            for the list; the browsing aids belong underneath it. */}
-        {!isSearch ? <CatalogHero /> : null}
+        {/*
+          THE ORDER OF THIS PAGE, AND WHY IT DIFFERS BETWEEN BROWSING AND
+          SEARCHING.
 
-        <div className="px-3 pb-6 pt-10 sm:px-6">
-          <header className="mb-3 sm:mb-6">
-            <h2 className="inline-block border-b-2 border-accent pb-1 text-xl font-bold text-neutral-900 sm:text-3xl sm:pb-2">
-              {isSearch ? `Search results for “${initialQuery}”` : "All Products"}
-            </h2>
-            <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
-              {isSearch
-                ? "Refine with the category, brand, and price filters below."
-                : "Browse the complete DrivoraParts inventory."}
-            </p>
-          </header>
-          {/* No <Suspense> and no useSearchParams() inside the feed. That
-              combination put the feed in its own streamed Suspense island,
-              and in production that island's HTML was delivered but never
-              hydrated -- so its effects never ran, no products were ever
-              fetched, and it sat on "Loading products..." forever for every
-              visitor. The query now comes from the server as a prop, and
-              `key` remounts the feed whenever it changes so a new search
-              always starts from clean state. */}
-          <AllProductsFeed
-            key={`${initialQuery}|${initialCategory}`}
-            initialQuery={initialQuery}
-            initialCategory={initialCategory}
-            initialData={initialData}
-          />
-        </div>
+          Browsing follows the journey: say what the place is, ask what they
+          drive, show the systems, then the listings, then the editorial. Each
+          step narrows the one below it, which is the argument for putting
+          fitment and categories above the grid rather than under it.
 
-        {/* Still reachable, just below the listings rather than in front of
-            them. Same set either way — someone who searched and someone who
-            browsed both benefit from a way to keep looking. */}
-        <CatalogVehicleFinderSection />
-        <PopularCategoriesSection />
-        <TrendingRail />
-        {!isSearch ? (
+          Searching does not. Everything above the grid was once above it for
+          searches too, and it pushed the results 5,509px down -- nine screens
+          -- so a search looked like it had hung and "View all" looked like it
+          had bounced the visitor to a second homepage. Someone who has typed a
+          query has already told us what they want; asking them what they drive
+          first is answering a question they did not ask.
+
+          So the grid leads on a results page and the aids follow it, and the
+          journey applies where it is actually a journey. The reason the
+          earlier fix had to hide these sections entirely no longer holds:
+          page one is server-rendered now, so the grid is in the HTML on
+          arrival rather than waiting on a fetch that might never land.
+        */}
+        {isSearch ? (
           <>
+            {marketplace}
+            <CatalogVehicleFinderSection />
+            <PopularCategoriesSection />
+            <TrendingRail />
+          </>
+        ) : (
+          <>
+            <CatalogHero />
+            <CatalogVehicleFinderSection />
+            <PopularCategoriesSection />
+            {marketplace}
+            <TrendingRail />
             <SeasonalCollectionsSection />
             <RecentlyAddedRail />
             <StaffPicksSection />
           </>
-        ) : null}
+        )}
       </main>
     </>
   );

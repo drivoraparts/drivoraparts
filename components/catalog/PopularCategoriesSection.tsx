@@ -54,9 +54,14 @@ export default function PopularCategoriesSection() {
         </ScrollReveal>
 
         <ScrollReveal delayMs={MOTION.stagger}>
-          <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:gap-4">
+          {/* One scrolling row on phones, a grid once there is width for one.
+              Fourteen tiles two-across is seven rows, and with this section
+              now sitting above the listings that was most of a screen and a
+              half between someone arriving and seeing a product. Scrolling
+              sideways costs one row instead. */}
+          <ul className="catalog-rail mt-8 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 sm:grid sm:grid-cols-3 sm:overflow-x-visible sm:pb-0 lg:grid-cols-5 xl:gap-4">
             {previews.map((cat) => (
-              <li key={cat.slug}>
+              <li key={cat.slug} className="w-[44%] shrink-0 snap-start sm:w-auto">
                 <Link
                   href={cat.href}
                   prefetch={false}
