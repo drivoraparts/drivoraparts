@@ -73,7 +73,16 @@ export function getStaffPicks(): StaffPick[] {
         const thumb = getProductThumbnail(p);
         return Boolean(thumb) && !thumb.includes("/placeholders/");
       })
-      .sort((a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0));
+      // Highest id wins, which is the most recently added listing here.
+      //
+      // This sorted on createdAt until it turned out that much of the
+      // catalog sets createdAt to Date.now() plus a day, evaluated at module
+      // load -- so the value differs between the server render and the
+      // browser, and any component selecting on it can choose a different
+      // product in each, which is a hydration mismatch React does not repair.
+      // Ids ascend as listings are added, so they express the same intent
+      // and mean the same thing everywhere.
+      .sort((a, b) => b.id - a.id);
 
     const product = candidates[0];
     return product ? { categorySlug, reason, product } : null;

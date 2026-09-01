@@ -43,10 +43,28 @@ export function categoryPreviews(): CategoryPreview[] {
 
   cache = categories.map((cat) => {
     const items = all.filter((p) => p.category === cat.slug);
-    const photographed = items.find((p) => {
-      const thumb = getProductThumbnail(p);
-      return Boolean(thumb) && !thumb.includes("/placeholders/");
-    });
+
+    // Lowest id, not first-in-array.
+    //
+    // These sections render on the server and then hydrate on the client,
+    // and "first in array" is not guaranteed to mean the same thing in both
+    // places. It did not: React reported a hydration mismatch here, with the
+    // server and the client each choosing a different Wilwood brake kit as
+    // the face of the brakes category -- an error React explicitly does not
+    // patch up.
+    //
+    // Ordering by id makes the choice a property of the data rather than of
+    // however the arrays happened to be assembled in a given environment.
+    // Deliberately not createdAt: much of the catalog sets that to
+    // Date.now() plus a day, evaluated when the module loads, so it differs
+    // between the server render and the browser and would reintroduce the
+    // same mismatch.
+    const photographed = items
+      .filter((p) => {
+        const thumb = getProductThumbnail(p);
+        return Boolean(thumb) && !thumb.includes("/placeholders/");
+      })
+      .sort((a, b) => a.id - b.id)[0];
 
     return {
       slug: cat.slug,
