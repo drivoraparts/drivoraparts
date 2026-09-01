@@ -47,6 +47,8 @@ export function getPhoto(slot: string): Photo | null {
   return p && p.status === "ok" && p.variants && p.variants.length ? p : null;
 }
 
+export type HeroSegment = { start: number; end: number; label: string };
+
 export type HeroVideoAsset = {
   file: string;
   poster: string;
@@ -54,6 +56,15 @@ export type HeroVideoAsset = {
   posterSrcSet: string | null;
   bytes: number;
   durationSeconds: number;
+  /**
+   * Where each shot sits inside the montage, in seconds.
+   *
+   * hero.mp4 is a hard-cut concatenation -- no crossfades -- so these
+   * boundaries are exact frames rather than approximations, which is what lets
+   * the player seek between shots without landing mid-dissolve. Empty when the
+   * manifest records no shot list, and the player then leaves playback alone.
+   */
+  segments: HeroSegment[];
 };
 
 /**
@@ -65,6 +76,20 @@ export function getHeroVideo(): HeroVideoAsset | null {
   const v = PHOTOS["hero-video"] as Photo & Partial<HeroVideoAsset>;
   if (!v || v.status !== "ok" || !v.file || !v.poster) return null;
   const posters = (v as { posterVariants?: PhotoVariant[] }).posterVariants;
+
+  // Cumulative, because the manifest records each shot as a duration rather
+  // than an offset. A shot with a missing or nonsensical length is dropped
+  // instead of poisoning every offset that follows it.
+  const shots = (v as { shots?: { label?: string; seconds?: number }[] }).shots ?? [];
+  let at = 0;
+  const segments: HeroSegment[] = [];
+  for (const shot of shots) {
+    const seconds = Number(shot?.seconds);
+    if (!Number.isFinite(seconds) || seconds <= 0) continue;
+    segments.push({ start: at, end: at + seconds, label: shot?.label ?? "" });
+    at += seconds;
+  }
+
   return {
     file: v.file,
     poster: v.poster,
@@ -73,6 +98,7 @@ export function getHeroVideo(): HeroVideoAsset | null {
       : null,
     bytes: v.bytes ?? 0,
     durationSeconds: v.durationSeconds ?? 0,
+    segments,
   };
 }
 
