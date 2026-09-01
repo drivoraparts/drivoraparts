@@ -622,3 +622,88 @@ img.rounded-full {
   --motion-distance-sm: 8px;   /* hover nudge */
   --motion-distance-md: 18px;  /* section entrance */
 }
+
+/* ---------------------------------------------------------------------------
+   Entrance animations
+
+   These are CSS, not JavaScript, and that is the point. The end state of each
+   keyframe is the element's natural state, so if animations never run -- no
+   CSS animation support, a stylesheet that half-loaded, reduced motion
+   collapsing every duration to 0.01ms via the sitewide block above -- the
+   element simply is where it belongs. Nothing here can leave content hidden,
+   which is the same rule ScrollReveal now follows in TypeScript.
+
+   `both` fill means the element holds the `from` state during its delay, so
+   keep delays short. The longest stagger in the intro lands at ~395ms, and
+   nothing that carries meaning waits on one of these.
+   --------------------------------------------------------------------------- */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--rise-from, 10px));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise-in {
+  animation: rise-in var(--motion-duration-base) var(--motion-ease-entrance)
+    both;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
+/* ---------------------------------------------------------------------------
+   Blueprint ground
+
+   The marketplace intro sits on a technical grid rather than a photograph.
+   A hero photo behind this much type either fights the words or has to be
+   dimmed until it is not worth its bytes, and a generic engine bay would be
+   stock imagery chosen to look impressive rather than to mean anything.
+
+   This is two repeating-linear-gradients: no image request, no layout cost,
+   and it reads as drafting paper / a workshop measuring surface, which is the
+   idea the section wants. Kept near-invisible on purpose -- it should register
+   as texture, not pattern.
+   --------------------------------------------------------------------------- */
+.blueprint-ground {
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      color-mix(in srgb, var(--foreground-on-dark) 5%, transparent) 0 1px,
+      transparent 1px 64px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--foreground-on-dark) 5%, transparent) 0 1px,
+      transparent 1px 64px
+    );
+}
+
+/* Fades the grid out toward the edges so it never ends on a hard line. */
+.blueprint-fade {
+  -webkit-mask-image: radial-gradient(
+    ellipse 120% 100% at 50% 0%,
+    black 30%,
+    transparent 78%
+  );
+  mask-image: radial-gradient(
+    ellipse 120% 100% at 50% 0%,
+    black 30%,
+    transparent 78%
+  );
+}
+
+/* The intro's system shortcuts scroll horizontally on phones. The scrollbar
+   itself is noise on a row of eight chips, so it is hidden -- the row is a
+   shortcut, and the categories section further down is the full, visible
+   list, so nothing is only reachable by discovering this scrolls. */
+.catalog-chip-row {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.catalog-chip-row::-webkit-scrollbar {
+  display: none;
+}
