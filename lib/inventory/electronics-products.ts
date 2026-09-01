@@ -631,7 +631,7 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
-    createdAt: Date.now(),
+    createdAt: 1784394330000, // listed 2026-07-18
     ...media([
       "/product-media/electronics/ottocast-mini-tube-t4-wireless-carplay-adapter/1.jpg",
     ]),

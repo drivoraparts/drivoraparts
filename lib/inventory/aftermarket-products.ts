@@ -375,7 +375,7 @@ export const aftermarketProducts: Product[] = [
     // +1 day: guarantees top-of-catalog placement over every other Date.now()
     // listing regardless of module import order (their calls land within the
     // same process-startup millisecond window, not calendar days apart).
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785307447000, // listed 2026-07-29
     ...media("jaguar-xf-x260-bonnet-grey", ["1.jpg"]),
     description: aftermarketDescription(
       "Jaguar XF X260 Bonnet (Corris Grey)",
@@ -394,7 +394,7 @@ export const aftermarketProducts: Product[] = [
     condition: "Used",
     location: "USA Warehouse",
     fitment: "1946–1948 Chrysler / Plymouth / Dodge / DeSoto (Split Windshield Models)",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785311214000, // listed 2026-07-29
     thumbnail: "/product-media/aftermarket/1947-chrysler-external-sun-visor/1.jpg", images: ["/product-media/aftermarket/1947-chrysler-external-sun-visor/1.jpg"],
     description: aftermarketDescription(
       "1947 Chrysler External Sun Visor (Fulton Style)",
@@ -414,7 +414,7 @@ export const aftermarketProducts: Product[] = [
     location: "Import — Ships Worldwide",
     partNumber: "33111-2271",
     fitment: "2000 Hino FD500 (Casting No. 33111-2271 — confirm casting number matches your unit before ordering)",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785311214000, // listed 2026-07-29
     thumbnail: "/product-media/aftermarket/hino-fd500-gearbox-33111-2271/1.jpg", images: ["/product-media/aftermarket/hino-fd500-gearbox-33111-2271/1.jpg"],
     description: aftermarketDescription(
       "Hino FD500 Complete Gearbox (Casting 33111-2271)",
@@ -433,7 +433,7 @@ export const aftermarketProducts: Product[] = [
     condition: "Refurbished",
     location: "USA Warehouse",
     fitment: "Multiple GM/Ford/Chrysler Applications — Confirm Exact Fitment at Checkout",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     ...media("power-steering-cardone", ["1.jpg"]),
     description: aftermarketDescription(
       "Cardone Remanufactured Power Steering Pump",

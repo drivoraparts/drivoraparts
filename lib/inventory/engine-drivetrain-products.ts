@@ -835,7 +835,7 @@ export const engineDrivetrainProducts: Product[] = [
     location: "USA Warehouse",
     fitment: "1960s–1990s GM Cars & Trucks — Saginaw P-Series Wet-Reservoir Pump",
     partNumber: "Saginaw P-Series",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-saginaw-p-series/1.jpg",
     images: ["/product-media/engine/power-steering-saginaw-p-series/1.jpg"],
     description: `Saginaw P-Series Power Steering Pump (Canned Ham)
@@ -874,7 +874,7 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     fitment: "GM LS Swaps, Corvettes & Trucks — Type II TC/CB Series (Remote Reservoir)",
     partNumber: "GM Type II (TC/CB Series)",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-gm-type-ii/1.jpg",
     images: ["/product-media/engine/power-steering-gm-type-ii/1.jpg"],
     description: `GM Type II (TC/CB Series) Power Steering Pump
@@ -913,7 +913,7 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     fitment: "Off-Road, Hydro-Boost & High-Flow Racing Applications — CBR/CBX Series",
     partNumber: "CBR/CBX Racing Series",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-cbr-cbx-racing/1.jpg",
     images: ["/product-media/engine/power-steering-cbr-cbx-racing/1.jpg"],
     description: `CBR/CBX Racing Series Power Steering Pump
@@ -951,7 +951,7 @@ Worldwide Shipping Available`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "GM LS & F-Body Applications — Confirm Fitting/Mount Spec at Checkout",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-turn-one/1.jpg",
     images: ["/product-media/engine/power-steering-turn-one/1.jpg"],
     description: `Turn One Power Steering Pump
@@ -989,7 +989,7 @@ Worldwide Shipping Available`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Street Rods, Chevy, Ford, Mopar — Confirm Application at Checkout",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-borgeson-universal/1.jpg",
     images: ["/product-media/engine/power-steering-borgeson-universal/1.jpg"],
     description: `Borgeson Universal Power Steering Pump
@@ -1027,7 +1027,7 @@ Worldwide Shipping Available`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "GM Type II / TC Applications — Low-Flow, Confirm Spec at Checkout",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-unisteer/1.jpg",
     images: ["/product-media/engine/power-steering-unisteer/1.jpg"],
     description: `UniSteer Performance Power Steering Pump
@@ -1065,7 +1065,7 @@ Worldwide Shipping Available`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "High-Displacement Saginaw P-Series Application — Confirm Spec at Checkout",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-psc-motorsports/1.jpg",
     images: ["/product-media/engine/power-steering-psc-motorsports/1.jpg"],
     description: `PSC Motorsports Power Steering Pump
@@ -1102,7 +1102,7 @@ Worldwide Shipping Available`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "GM Saginaw-Style Applications, Keyed Shaft — Confirm Spec at Checkout",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-tuff-stuff/1.jpg",
     images: ["/product-media/engine/power-steering-tuff-stuff/1.jpg"],
     description: `Tuff Stuff Performance Power Steering Pump (Chrome)
@@ -1141,7 +1141,7 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     fitment: "GM Cars & Trucks (incl. Silverado/Suburban/Yukon/Tahoe) — Confirm Fitment at Checkout",
     partNumber: "19420691",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-acdelco/1.jpg",
     images: ["/product-media/engine/power-steering-acdelco/1.jpg"],
     description: `ACDelco GM Original Equipment Power Steering Pump
@@ -1180,7 +1180,7 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     fitment: "Ford, Lincoln & Mercury Applications — Confirm Fitment at Checkout",
     partNumber: "STP320",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-motorcraft/1.jpg",
     images: ["/product-media/engine/power-steering-motorcraft/1.jpg"],
     description: `Motorcraft Power Steering Pump
@@ -1218,7 +1218,7 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     fitment: "GM C5 Corvette (1998–2006) and Related Applications — Confirm Fitment at Checkout",
     partNumber: "26120639",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785762228000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-delphi/1.jpg",
     images: ["/product-media/engine/power-steering-delphi/1.jpg"],
     description: `Delphi Power Steering Pump
@@ -1255,7 +1255,7 @@ Worldwide Shipping Available`,
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Universal Fit — Confirm Application/Pulley Match at Checkout",
-    createdAt: Date.now() + 24 * 60 * 60 * 1000,
+    createdAt: 1785758693000, // listed 2026-08-03
     thumbnail: "/product-media/engine/power-steering-pump-universal/1.jpg",
     images: [
       "/product-media/engine/power-steering-pump-universal/1.jpg",

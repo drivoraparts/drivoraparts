@@ -19,7 +19,7 @@ export const jdmEuroBrakeKitsProducts: Product[] = [
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Nissan Skyline R32/R33/R34 (RB26DETT)",
-    createdAt: Date.now(),
+    createdAt: 1784394330000, // listed 2026-07-18
     ...media([
       "/product-media/brakes/wilwood-big-brake-kit-nissan-skyline-r32-r33-r34-rb26dett/1.jpg",
       "/product-media/brakes/wilwood-big-brake-kit-nissan-skyline-r32-r33-r34-rb26dett/2.jpg",
@@ -61,7 +61,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "BMW E9x 3-Series, incl. E90/E92 M3 (N54/S55)",
-    createdAt: Date.now(),
+    createdAt: 1784394330000, // listed 2026-07-18
     ...media([
       "/product-media/brakes/wilwood-rear-big-brake-kit-bmw-e9x-3-series-n54-s55/1.jpg",
     ]),
@@ -102,7 +102,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Toyota Supra MK4 / A80 (2JZ-GTE)",
-    createdAt: Date.now(),
+    createdAt: 1784394330000, // listed 2026-07-18
     ...media([
       "/product-media/brakes/ceika-big-brake-kit-toyota-supra-mk4-2jz-gte/1.jpg",
     ]),

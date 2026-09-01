@@ -19,7 +19,7 @@ export const performanceWheelsProducts: Product[] = [
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "Toyota Supra MK4 / A80 — 18x9.5 +40 Front / 18x10.5 +45 Rear",
-    createdAt: Date.now(),
+    createdAt: 1784394330000, // listed 2026-07-18
     ...media([
       "/product-media/wheels-tires/volk-racing-te37-wheel-set-toyota-supra-mk4-a80/1.jpg",
     ]),
@@ -59,7 +59,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     condition: "brand-new",
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
-    createdAt: Date.now(),
+    createdAt: 1784394330000, // listed 2026-07-18
     fitment: "Toyota Hilux / Ford Ranger (6x139.7)",
     ...media([
       "/product-media/wheels-tires/method-race-wheels-mr301-the-standard-toyota-hilux-ford-ranger/1.png",
@@ -101,7 +101,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     condition: "brand-new",
     warranty: "12-Month Limited Warranty",
     location: "USA Warehouse",
-    createdAt: Date.now(),
+    createdAt: 1784394330000, // listed 2026-07-18
     fitment: "Toyota Hilux / Ford Ranger (6x139.7)",
     ...media([
       "/product-media/wheels-tires/fuel-off-road-d611-stroke-wheel-set-toyota-hilux-ford-ranger/1.jpg",
@@ -146,7 +146,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     location: "USA Warehouse",
     partNumber: "36118073977 (Front) / 36118073979 (Rear) — Style 706M",
     fitment: "BMW M5 (F90) — 20x9.5 Front / 20x10.5 Rear, 5x112",
-    createdAt: Date.now(),
+    createdAt: 1784813361000, // listed 2026-07-23
     ...media([
       `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/1.jpg`,
       `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/2.jpg`,
