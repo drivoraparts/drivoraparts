@@ -754,42 +754,41 @@
     "purpose": "THE WORKHORSE — a truck earning its keep.",
     "vehicle": null,
     "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/29107880/pexels-photo-29107880.jpeg",
-    "landingPage": "https://www.pexels.com/photo/vintage-truck-loaded-with-cargo-on-rural-road-29107880/",
-    "title": "Vintage truck carrying heavy cargo bags on a dusty rural road under daylight.",
-    "creator": "Frank Thomas",
+    "sourceUrl": "https://images.pexels.com/photos/10196543/pexels-photo-10196543.jpeg",
+    "landingPage": "https://www.pexels.com/photo/a-moving-car-on-a-dirt-road-10196543/",
+    "originalId": "10196543",
+    "title": "A pickup truck splashes through muddy terrain, capturing the thrill of off-road driving.",
+    "creator": "Matheus Triaquim",
+    "creatorUrl": "https://www.pexels.com/@matheus-triaquim-118638681",
     "license": "pexels",
     "licenseRaw": "Pexels Licence",
     "licenseUrl": "https://www.pexels.com/license/",
     "attributionRequired": false,
-    "avgColor": "#7E7B74",
-    "toneLuminance": 0.199,
-    "score": 8.47,
-    "originalWidth": 6240,
-    "originalHeight": 4160,
+    "avgColor": "#786463",
+    "grade": "none",
+    "originalWidth": 6720,
+    "originalHeight": 4480,
     "intrinsicWidth": 1600,
     "intrinsicHeight": 1067,
     "variants": [
       {
         "width": 640,
         "file": "/homepage/workhorse/640.webp",
-        "bytes": 28992
+        "bytes": 54900
       },
       {
         "width": 1024,
         "file": "/homepage/workhorse/1024.webp",
-        "bytes": 58178
+        "bytes": 120760
       },
       {
         "width": 1600,
         "file": "/homepage/workhorse/1600.webp",
-        "bytes": 110992
+        "bytes": 248252
       }
     ],
-    "sha256": "37183780c44a4bf4",
-    "query": "pickup truck farm",
-    "downloadedAt": "2026-08-31T19:59:34.490Z",
-    "grade": "none"
+    "sha256": "5bf5907c3ba16282",
+    "downloadedAt": "2026-09-01T10:06:23.879Z"
   },
   "offroader": {
     "slot": "offroader",
