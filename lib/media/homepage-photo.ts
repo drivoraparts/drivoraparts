@@ -50,6 +50,8 @@ export function getPhoto(slot: string): Photo | null {
 export type HeroVideoAsset = {
   file: string;
   poster: string;
+  /** Responsive stills, used on phones where the clip is not downloaded. */
+  posterSrcSet: string | null;
   bytes: number;
   durationSeconds: number;
 };
@@ -62,9 +64,13 @@ export type HeroVideoAsset = {
 export function getHeroVideo(): HeroVideoAsset | null {
   const v = PHOTOS["hero-video"] as Photo & Partial<HeroVideoAsset>;
   if (!v || v.status !== "ok" || !v.file || !v.poster) return null;
+  const posters = (v as { posterVariants?: PhotoVariant[] }).posterVariants;
   return {
     file: v.file,
     poster: v.poster,
+    posterSrcSet: posters?.length
+      ? [...posters].sort((a, b) => a.width - b.width).map((x) => `${x.file} ${x.width}w`).join(", ")
+      : null,
     bytes: v.bytes ?? 0,
     durationSeconds: v.durationSeconds ?? 0,
   };

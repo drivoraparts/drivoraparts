@@ -895,6 +895,23 @@
       }
     ],
     "sha256": "5729df6589b7cae7",
-    "downloadedAt": "2026-09-01T07:55:49.176Z"
+    "downloadedAt": "2026-09-01T07:55:49.176Z",
+    "posterVariants": [
+      {
+        "width": 640,
+        "file": "/homepage/hero-video/poster-640.webp",
+        "bytes": 11970
+      },
+      {
+        "width": 1024,
+        "file": "/homepage/hero-video/poster-1024.webp",
+        "bytes": 22370
+      },
+      {
+        "width": 1600,
+        "file": "/homepage/hero-video/poster-1600.webp",
+        "bytes": 40332
+      }
+    ]
   }
 }
