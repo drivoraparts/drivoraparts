@@ -153,10 +153,10 @@ export default function BuildStorySection() {
                         slot={story.slot}
                         alt={`${story.kicker} — ${story.title}`}
                         sizes="(min-width: 1024px) 44rem, 100vw"
-                        className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                        className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                       />
                     ) : (
-                      <EditorialPlate label={story.kicker} className="aspect-[4/3] w-full" />
+                      <EditorialPlate label={story.kicker} className="aspect-[16/10] w-full" />
                     )}
                   </div>
 

@@ -753,42 +753,42 @@
     "status": "ok",
     "purpose": "THE WORKHORSE — a truck earning its keep.",
     "vehicle": null,
-    "sourceName": "Pexels",
-    "sourceUrl": "https://images.pexels.com/photos/10196543/pexels-photo-10196543.jpeg",
-    "landingPage": "https://www.pexels.com/photo/a-moving-car-on-a-dirt-road-10196543/",
-    "originalId": "10196543",
-    "title": "A pickup truck splashes through muddy terrain, capturing the thrill of off-road driving.",
-    "creator": "Matheus Triaquim",
-    "creatorUrl": "https://www.pexels.com/@matheus-triaquim-118638681",
-    "license": "pexels",
-    "licenseRaw": "Pexels Licence",
-    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceName": "Unsplash",
+    "sourceUrl": "https://images.unsplash.com/photo-1718380236109-2fd5d2a040c1?q=100&fm=jpg",
+    "landingPage": "https://unsplash.com/photos/a-blue-pickup-truck-towing-a-red-tractor-I6i77l3Cyng",
+    "originalId": "I6i77l3Cyng",
+    "title": "A blue pickup truck towing a red tractor — Ram Power Wagon with a Kioti DK 4710, Southern Indiana, USA",
+    "creator": "Preston A Larimer",
+    "creatorUrl": "https://unsplash.com/@palarimer",
+    "license": "unsplash",
+    "licenseRaw": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
     "attributionRequired": false,
-    "avgColor": "#786463",
     "grade": "none",
-    "originalWidth": 6720,
-    "originalHeight": 4480,
+    "toneLuminance": 0.142,
+    "originalWidth": 4342,
+    "originalHeight": 2756,
     "intrinsicWidth": 1600,
-    "intrinsicHeight": 1067,
+    "intrinsicHeight": 1016,
     "variants": [
       {
         "width": 640,
         "file": "/homepage/workhorse/640.webp",
-        "bytes": 54900
+        "bytes": 74208
       },
       {
         "width": 1024,
         "file": "/homepage/workhorse/1024.webp",
-        "bytes": 120760
+        "bytes": 197086
       },
       {
         "width": 1600,
         "file": "/homepage/workhorse/1600.webp",
-        "bytes": 248252
+        "bytes": 484120
       }
     ],
-    "sha256": "5bf5907c3ba16282",
-    "downloadedAt": "2026-09-01T10:06:23.879Z"
+    "sha256": "899263e5efb15148",
+    "downloadedAt": "2026-09-01T10:36:33.014Z"
   },
   "offroader": {
     "slot": "offroader",
