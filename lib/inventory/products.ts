@@ -4529,7 +4529,7 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "12-Month Limited Warranty",
     location: "our USA warehouse or supplier network, depending on your location",
-    partNumber: "UVCH kit — OBS 7.3L Power Stroke",
+    partNumber: "Ford F4TZ-9D930-K (Alliant equivalent AP63414) · 4 harnesses per engine",
     fitment:
       "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
     drivetrain: "4x2 and 4x4",
