@@ -3,7 +3,7 @@
  *
  *   PEXELS_API_KEY=<key> node scripts/build-hero-montage.mjs --apply
  *
- * WHY A MONTAGE AND NOT ONE LONGER CLIP
+ * WHY A MONTAGE, AND WHY THE HOLDS ARE LONG
  * The reference site runs 60 seconds behind its hero, and it holds attention
  * because it cuts between locations and weather -- red dust, alpine ridge in
  * cloud, tropical scrub -- with a differently-kitted vehicle in each. One
@@ -49,15 +49,18 @@ const MAX_BYTES = 5_200_000;
  * seconds: how long this shot runs in the cut.
  * start:   where to take it from; most clips open mid-move or on a slate.
  */
+/*
+ * THREE SHOTS, HELD LONG.
+ * Five shots at five seconds each cut too often -- it read as a slideshow
+ * shuffling rather than a film. The reference site holds each of its shots for
+ * roughly twelve to fifteen seconds across a minute, so the eye settles before
+ * anything changes. Three eight-second holds keep the location and weather
+ * change that matters while removing the churn.
+ */
 const SHOTS = [
-  { id: 10981175, label: "red desert dust", start: 2, seconds: 5 },
-  { id: 27363070, label: "river crossing", start: 2, seconds: 5 },
-  { id: 12839189, label: "ridge at dusk", start: 3, seconds: 5 },
-  { id: 34054945, label: "snow mountain", start: 4, seconds: 5 },
-  /* Closes on a wheel churning mud: tight, mechanical, and about the parts
-     rather than the lifestyle. The shot it replaced was a caravan being towed
-     across a car park, which read as recreation, not work. */
-  { id: 11794068, label: "wheel in mud", start: 1, seconds: 5 },
+  { id: 10981175, label: "red desert dust", start: 2, seconds: 8 },
+  { id: 12839189, label: "ridge at dusk", start: 3, seconds: 8 },
+  { id: 34054945, label: "snow mountain", start: 4, seconds: 8 },
 ];
 
 async function fetchMeta(id) {

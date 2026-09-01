@@ -845,10 +845,10 @@
     "attributionRequired": false,
     "file": "/homepage/hero-video/hero.mp4",
     "poster": "/homepage/hero-video/poster.webp",
-    "bytes": 4919797,
+    "bytes": 4936633,
     "width": 1600,
     "height": 900,
-    "durationSeconds": 25,
+    "durationSeconds": 24,
     "shots": [
       {
         "label": "red desert dust",
@@ -857,16 +857,7 @@
         "creator": "Ezmari Nabizadeh",
         "creatorUrl": "https://www.pexels.com/@ezmari-nabizadeh-13388480",
         "sourceUrl": "https://videos.pexels.com/video-files/10981175/10981175-hd_1920_1080_30fps.mp4",
-        "seconds": 5
-      },
-      {
-        "label": "river crossing",
-        "originalId": "27363070",
-        "landingPage": "https://www.pexels.com/video/a-truck-is-driving-through-a-muddy-field-27363070/",
-        "creator": "Alex Moliski",
-        "creatorUrl": "https://www.pexels.com/@alexmoliski",
-        "sourceUrl": "https://videos.pexels.com/video-files/27363070/12124668_1920_1080_60fps.mp4",
-        "seconds": 5
+        "seconds": 8
       },
       {
         "label": "ridge at dusk",
@@ -875,7 +866,7 @@
         "creator": "Zakaria Boumliha",
         "creatorUrl": "https://www.pexels.com/@zakaria",
         "sourceUrl": "https://videos.pexels.com/video-files/12839189/12839189-hd_1920_1080_25fps.mp4",
-        "seconds": 5
+        "seconds": 8
       },
       {
         "label": "snow mountain",
@@ -884,19 +875,10 @@
         "creator": "Nativo América",
         "creatorUrl": "https://www.pexels.com/@nativo-america-2704427",
         "sourceUrl": "https://videos.pexels.com/video-files/34054945/14443005_1920_1080_60fps.mp4",
-        "seconds": 5
-      },
-      {
-        "label": "wheel in mud",
-        "originalId": "11794068",
-        "landingPage": "https://www.pexels.com/video/car-driving-through-mud-11794068/",
-        "creator": "Connor Scott McManus",
-        "creatorUrl": "https://www.pexels.com/@connorscottmcmanus",
-        "sourceUrl": "https://videos.pexels.com/video-files/11794068/11794068-hd_1920_1080_24fps.mp4",
-        "seconds": 5
+        "seconds": 8
       }
     ],
-    "sha256": "70f97f7a8a6dbe0c",
-    "downloadedAt": "2026-09-01T07:32:18.578Z"
+    "sha256": "5729df6589b7cae7",
+    "downloadedAt": "2026-09-01T07:55:49.176Z"
   }
 }
