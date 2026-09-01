@@ -72,24 +72,24 @@
       {
         "width": 640,
         "file": "/homepage/project/640.webp",
-        "bytes": 38150
+        "bytes": 37496
       },
       {
         "width": 1024,
         "file": "/homepage/project/1024.webp",
-        "bytes": 70906
+        "bytes": 69936
       },
       {
         "width": 1600,
         "file": "/homepage/project/1600.webp",
-        "bytes": 124454
+        "bytes": 123282
       }
     ],
     "sha256": "7115ef92bc0ff81a",
     "query": "car on lift workshop",
     "downloadedAt": "2026-08-31T17:09:50.404Z",
     "originalId": "8478235",
-    "grade": "film-warm"
+    "grade": "none"
   },
   "tourer": {
     "slot": "tourer",
@@ -116,24 +116,24 @@
       {
         "width": 640,
         "file": "/homepage/tourer/640.webp",
-        "bytes": 15986
+        "bytes": 16418
       },
       {
         "width": 1024,
         "file": "/homepage/tourer/1024.webp",
-        "bytes": 36176
+        "bytes": 36924
       },
       {
         "width": 1600,
         "file": "/homepage/tourer/1600.webp",
-        "bytes": 75774
+        "bytes": 78288
       }
     ],
     "sha256": "315055ddffe90369",
     "query": "Icelandic offroad vehicle",
     "downloadedAt": "2026-08-31T17:08:55.006Z",
     "originalId": "17519361",
-    "grade": "warm-color"
+    "grade": "none"
   },
   "closing": {
     "slot": "closing",
@@ -208,24 +208,24 @@
       {
         "width": 640,
         "file": "/homepage/performance/640.webp",
-        "bytes": 28068
+        "bytes": 25850
       },
       {
         "width": 1024,
         "file": "/homepage/performance/1024.webp",
-        "bytes": 58850
+        "bytes": 53166
       },
       {
         "width": 1600,
         "file": "/homepage/performance/1600.webp",
-        "bytes": 121028
+        "bytes": 109448
       }
     ],
     "sha256": "2c3917e45285bf44",
     "query": "V8 engine bay muscle car",
     "downloadedAt": "2026-08-31T17:23:27.175Z",
     "originalId": "18617941",
-    "grade": "full-color"
+    "grade": "none"
   },
   "hero": {
     "slot": "hero",
@@ -773,23 +773,23 @@
       {
         "width": 640,
         "file": "/homepage/workhorse/640.webp",
-        "bytes": 28162
+        "bytes": 28992
       },
       {
         "width": 1024,
         "file": "/homepage/workhorse/1024.webp",
-        "bytes": 56294
+        "bytes": 58178
       },
       {
         "width": 1600,
         "file": "/homepage/workhorse/1600.webp",
-        "bytes": 111166
+        "bytes": 110992
       }
     ],
     "sha256": "37183780c44a4bf4",
     "query": "pickup truck farm",
     "downloadedAt": "2026-08-31T19:59:34.490Z",
-    "grade": "warm-mono"
+    "grade": "none"
   },
   "offroader": {
     "slot": "offroader",
@@ -816,22 +816,47 @@
       {
         "width": 640,
         "file": "/homepage/offroader/640.webp",
-        "bytes": 22986
+        "bytes": 23268
       },
       {
         "width": 1024,
         "file": "/homepage/offroader/1024.webp",
-        "bytes": 52566
+        "bytes": 54126
       },
       {
         "width": 1600,
         "file": "/homepage/offroader/1600.webp",
-        "bytes": 107154
+        "bytes": 110582
       }
     ],
     "sha256": "5ffbd5bfc745c28f",
     "query": "Jeep off-road trail vehicle",
     "downloadedAt": "2026-08-31T19:59:42.204Z",
-    "grade": "warm-mono-hard"
+    "grade": "none"
+  },
+  "hero-video": {
+    "slot": "hero-video",
+    "status": "ok",
+    "purpose": "Looping muted hero clip. The still `hero` frame remains the poster fallback.",
+    "sourceName": "Pexels",
+    "sourceUrl": "https://videos.pexels.com/video-files/18899012/18899012-hd_1920_1080_24fps.mp4",
+    "landingPage": "https://www.pexels.com/video/a-white-toyota-pickup-truck-is-driving-on-a-dirt-road-18899012/",
+    "originalId": "18899012",
+    "title": "4x4 truck driving dust offroad",
+    "creator": "Connor Scott McManus",
+    "creatorUrl": "https://www.pexels.com/@connorscottmcmanus",
+    "license": "pexels",
+    "licenseRaw": "Pexels Licence",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attributionRequired": false,
+    "file": "/homepage/hero-video/hero.mp4",
+    "poster": "/homepage/hero-video/poster.webp",
+    "bytes": 2349537,
+    "width": 1600,
+    "durationSeconds": 10,
+    "sourceDuration": 16,
+    "sha256": "c933921a604a8b80",
+    "query": "4x4 truck driving dust offroad",
+    "downloadedAt": "2026-09-01T06:38:24.465Z"
   }
 }

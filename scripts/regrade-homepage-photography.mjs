@@ -29,11 +29,16 @@ const UA = "DrivoraParts-Editorial/1.0 (homepage photography; drivoraparts.com)"
 
 /** slot -> grade. Anything absent is left untouched. */
 const PLAN = {
-  workhorse: "warm-mono",       // dusty afternoon, practical
-  tourer: "warm-color",         // golden hour, expansive
-  offroader: "warm-mono-hard",  // hard sun, dust, drama
-  performance: "full-color",    // technical, metallic, aggressive
-  project: "film-warm",         // nostalgic workshop
+  /* Full colour everywhere. The reference site this page is being matched to
+     carries no monochrome at all -- its hero is a truck throwing bright orange
+     dust against blue sky, and every product and vehicle frame is fully
+     saturated. The warm-mono grades read as arthouse next to that, so the
+     photography now keeps its own colour and the restraint moves to the UI. */
+  workhorse: "none",
+  tourer: "none",
+  offroader: "none",
+  performance: "none",
+  project: "none",
 };
 
 const manifest = JSON.parse(await fs.readFile(MANIFEST, "utf8"));

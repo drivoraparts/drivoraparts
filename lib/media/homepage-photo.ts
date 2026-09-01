@@ -43,6 +43,29 @@ export function getPhoto(slot: string): Photo | null {
   return p && p.status === "ok" && p.variants && p.variants.length ? p : null;
 }
 
+export type HeroVideoAsset = {
+  file: string;
+  poster: string;
+  bytes: number;
+  durationSeconds: number;
+};
+
+/**
+ * The hero clip, which is not a Photo: it has a single file and a poster
+ * rather than a responsive `variants` array, so getPhoto() rejects it. Asking
+ * getPhoto for it silently returned null and the hero fell back to the still.
+ */
+export function getHeroVideo(): HeroVideoAsset | null {
+  const v = PHOTOS["hero-video"] as Photo & Partial<HeroVideoAsset>;
+  if (!v || v.status !== "ok" || !v.file || !v.poster) return null;
+  return {
+    file: v.file,
+    poster: v.poster,
+    bytes: v.bytes ?? 0,
+    durationSeconds: v.durationSeconds ?? 0,
+  };
+}
+
 export type PhotoRender = {
   src: string;
   srcSet: string;
