@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 import StoreProviders from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
@@ -35,6 +36,25 @@ import { getGaMeasurementId, getGtmContainerId, getMetaPixelId, getTikTokPixelId
  */
 
 const siteUrl = getSiteUrl();
+
+/*
+ * The site rendered in Arial until now: globals.css hard-set it on <body>,
+ * and --font-geist-sans was referenced by the Tailwind theme but never
+ * actually defined anywhere. Nothing reads less premium than the browser
+ * default font on a brand page.
+ *
+ * Archivo is a grotesque with sturdy, slightly squared forms -- close in
+ * character to the industrial sans ARB and similar 4x4 brands license, and
+ * it carries weight well at the display sizes the hero uses. Self-hosted by
+ * next/font at build time, so there is no runtime request to Google and no
+ * layout shift while a webfont loads.
+ */
+const archivo = Archivo({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-archivo",
+  axes: ["wdth"],
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -136,7 +156,7 @@ export default async function RootLayout({
   const gtmContainerId = getGtmContainerId();
 
   return (
-    <html lang={initialLanguage} suppressHydrationWarning>
+    <html lang={initialLanguage} className={archivo.variable} suppressHydrationWarning>
       <body>
         {/* GTM noscript fallback must be the first element after <body>
             opens per Google's install instructions. */}

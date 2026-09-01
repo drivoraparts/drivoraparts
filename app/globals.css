@@ -119,8 +119,11 @@
   --color-error-subtle: var(--error-subtle);
   --color-info: var(--info);
   --color-info-subtle: var(--info-subtle);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --font-sans is defined by next/font in app/layout.tsx (Archivo) and
+     applied via a class on <html>. It previously pointed at
+     --font-geist-sans, which nothing ever defined. */
+  --font-sans: var(--font-archivo), "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", monospace;
 }
 
 html {
@@ -148,7 +151,7 @@ body {
   min-width: 0;
   color-scheme: light;
   overscroll-behavior-x: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -589,3 +592,5 @@ img.rounded-full {
 }
 
 /* palette remap active */
+
+/* archivo */

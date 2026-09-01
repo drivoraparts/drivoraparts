@@ -25,12 +25,18 @@ export default function HomeHeroCinematic({ listingCount }: { listingCount: numb
     <section className="relative -mt-[106px] flex min-h-[86svh] w-full min-w-0 items-end overflow-hidden bg-background-dark pt-[106px] sm:-mt-[114px] sm:min-h-[92svh] sm:pt-[114px]">
       {photo ? (
         <div className="absolute inset-0 z-0">
+          {/* The source is 3:2 and the mobile viewport is portrait, so
+              object-cover crops horizontally. Centred, that framed the dust
+              plume and pushed the vehicle out of shot -- measuring the image
+              by column puts the detail peak at ~71% and the bright (dusty
+              bodywork) peak at ~63%, so the crop is aimed there instead.
+              Wider viewports show enough of the frame to centre normally. */}
           <EditorialImage
             slot="hero"
             alt=""
             priority
             sizes="100vw"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-[66%_center] sm:object-center"
           />
         </div>
       ) : null}
@@ -40,7 +46,11 @@ export default function HomeHeroCinematic({ listingCount }: { listingCount: numb
           were not visible at all, which defeats the point of a hero image.
           The weight is concentrated in the bottom third, where the copy sits,
           so the sky and the horizon stay open. */}
-      <div className="pointer-events-none absolute inset-0 z-10 bg-background-dark/20" />
+      {/* Measured, not guessed: white over the scrimmed headline was 10.08:1
+          where large text needs 3. That headroom is better spent on the
+          photograph than banked, so both layers are lighter and the vehicle
+          reads through. Re-measure before lowering further. */}
+      <div className="pointer-events-none absolute inset-0 z-10 bg-background-dark/5" />
       <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-background-dark via-background-dark/45 to-transparent" />
 
       <div className="relative z-20 mx-auto w-full max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24 lg:pb-28">
