@@ -278,303 +278,296 @@
   "veh-ford-ranger-4x4": {
     "slot": "veh-ford-ranger-4x4",
     "status": "ok",
-    "vehicle": "Ford Ranger",
-    "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_Ranger_Stormtrak_%28T6%2C_P375%29_1X7A0369.jpg/3840px-Ford_Ranger_Stormtrak_%28T6%2C_P375%29_1X7A0369.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3AFord%20Ranger%20Stormtrak%20(T6%2C%20P375)%201X7A0369.jpg",
-    "title": "Ford Ranger Stormtrak (T6, P375) 1X7A0369.jpg",
-    "creator": "Alexander Migl",
-    "license": "by-sa",
-    "licenseRaw": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "attributionRequired": true,
-    "avgColor": null,
-    "toneLuminance": null,
-    "score": 6.7,
-    "originalWidth": 3840,
-    "originalHeight": 2020,
+    "purpose": "Vehicle platform card — Start with what you drive.",
+    "vehicle": "Ranger Wildtrak on a rocky trail, Queensland",
+    "sourceName": "Unsplash",
+    "sourceUrl": "https://images.unsplash.com/photo-1767566927815-04cf0631bfed?q=90&fm=jpg",
+    "landingPage": "https://unsplash.com/photos/black-pickup-truck-driving-up-a-rocky-wooded-hill-NlYX8KHKleY",
+    "originalId": "NlYX8KHKleY",
+    "title": "Ranger Wildtrak on a rocky trail, Queensland",
+    "creator": "4Wheelhouse",
+    "creatorUrl": "https://unsplash.com/@4wheelhouse",
+    "license": "unsplash",
+    "licenseRaw": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "attributionRequired": false,
+    "grade": "none",
+    "toneLuminance": 0.216,
+    "originalWidth": 3500,
+    "originalHeight": 2335,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 673,
+    "intrinsicHeight": 854,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-ford-ranger-4x4/480.webp",
-        "bytes": 27282
+        "bytes": 34052
       },
       {
         "width": 800,
         "file": "/homepage/veh-ford-ranger-4x4/800.webp",
-        "bytes": 70484
+        "bytes": 88162
       },
       {
         "width": 1280,
         "file": "/homepage/veh-ford-ranger-4x4/1280.webp",
-        "bytes": 165734
+        "bytes": 207254
       }
     ],
-    "sha256": "7c1bd3cb2f65cd02",
-    "query": "Ford Ranger pickup",
-    "downloadedAt": "2026-08-31T17:38:56.396Z",
-    "originalId": "Ford Ranger Stormtrak (T6, P375) 1X7A0369.jpg",
-    "grade": "none"
+    "sha256": "50dcb27365f3380a",
+    "downloadedAt": "2026-09-01T11:47:46.885Z"
   },
   "veh-toyota-hilux-4x4": {
     "slot": "veh-toyota-hilux-4x4",
     "status": "ok",
-    "vehicle": "Toyota HiLux",
-    "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2026_Toyota_Hilux_BEV.jpg/3840px-2026_Toyota_Hilux_BEV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3A2026%20Toyota%20Hilux%20BEV.jpg",
-    "title": "2026 Toyota Hilux BEV.jpg",
-    "creator": "TTTNIS",
-    "license": "cc0",
-    "licenseRaw": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "purpose": "Vehicle platform card — Start with what you drive.",
+    "vehicle": "HiLux crossing savanna, Botswana",
+    "sourceName": "Unsplash",
+    "sourceUrl": "https://images.unsplash.com/photo-1759131384820-c710de76997c?q=90&fm=jpg",
+    "landingPage": "https://unsplash.com/photos/white-pickup-truck-driving-through-dry-grassy-savanna-JwoibPDe7NA",
+    "originalId": "JwoibPDe7NA",
+    "title": "HiLux crossing savanna, Botswana",
+    "creator": "Ed Wingate",
+    "creatorUrl": "https://unsplash.com/@edwingate",
+    "license": "unsplash",
+    "licenseRaw": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
     "attributionRequired": false,
-    "avgColor": null,
-    "toneLuminance": null,
-    "score": 7.7,
-    "originalWidth": 3840,
-    "originalHeight": 2031,
+    "grade": "none",
+    "toneLuminance": 0.418,
+    "originalWidth": 6114,
+    "originalHeight": 3757,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 677,
+    "intrinsicHeight": 787,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-toyota-hilux-4x4/480.webp",
-        "bytes": 15572
+        "bytes": 8150
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-hilux-4x4/800.webp",
-        "bytes": 31530
+        "bytes": 19878
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-hilux-4x4/1280.webp",
-        "bytes": 57784
+        "bytes": 43630
       }
     ],
-    "sha256": "c8c0b91afa353d80",
-    "query": "Toyota Hilux",
-    "downloadedAt": "2026-08-31T17:39:00.210Z",
-    "originalId": "2026 Toyota Hilux BEV.jpg",
-    "grade": "none"
+    "sha256": "6b08fdb153e3b43a",
+    "downloadedAt": "2026-09-01T11:48:04.869Z"
   },
   "veh-isuzu-d-max-4x4": {
     "slot": "veh-isuzu-d-max-4x4",
     "status": "ok",
-    "vehicle": "Isuzu D-Max",
+    "purpose": "Vehicle platform card — Start with what you drive.",
+    "vehicle": "D-Max configured for camping",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ISUZU_D-MAX_%28SECOND_GENERATION%2C_PRE-FACELIFT%29_China_%282%29.jpg/3840px-ISUZU_D-MAX_%28SECOND_GENERATION%2C_PRE-FACELIFT%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3AISUZU%20D-MAX%20(SECOND%20GENERATION%2C%20PRE-FACELIFT)%20China%20(2).jpg",
-    "title": "ISUZU D-MAX (SECOND GENERATION, PRE-FACELIFT) China (2).jpg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/ISUZU_D-MAX_%28SECOND_GENERATION%2C_FACELIFT%29_CAMPING_CAR_IN_CHINA_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3AISUZU%20D-MAX%20(SECOND%20GENERATION%2C%20FACELIFT)%20CAMPING%20CAR%20IN%20CHINA%20(9).jpg",
+    "originalId": "ISUZU D-MAX (SECOND GENERATION, FACELIFT) CAMPING CAR IN CHINA (9).jpg",
+    "title": "D-Max configured for camping",
     "creator": "Dinkun Chen",
+    "creatorUrl": null,
     "license": "by-sa",
     "licenseRaw": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "attributionRequired": true,
-    "avgColor": null,
-    "toneLuminance": null,
-    "score": 6.7,
-    "originalWidth": 3840,
-    "originalHeight": 2182,
+    "grade": "none",
+    "toneLuminance": 0.276,
+    "originalWidth": 6795,
+    "originalHeight": 4732,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 727,
+    "intrinsicHeight": 891,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-isuzu-d-max-4x4/480.webp",
-        "bytes": 35638
+        "bytes": 30762
       },
       {
         "width": 800,
         "file": "/homepage/veh-isuzu-d-max-4x4/800.webp",
-        "bytes": 93928
+        "bytes": 75436
       },
       {
         "width": 1280,
         "file": "/homepage/veh-isuzu-d-max-4x4/1280.webp",
-        "bytes": 214686
+        "bytes": 163346
       }
     ],
-    "sha256": "c362bb92f9483f52",
-    "query": "Isuzu D-Max",
-    "downloadedAt": "2026-08-31T17:39:05.809Z",
-    "originalId": "ISUZU D-MAX (SECOND GENERATION, PRE-FACELIFT) China (2).jpg",
-    "grade": "none"
+    "sha256": "384f0b70aba30227",
+    "downloadedAt": "2026-09-01T11:48:29.038Z"
   },
   "veh-mitsubishi-triton-4x4": {
     "slot": "veh-mitsubishi-triton-4x4",
     "status": "ok",
-    "vehicle": "Mitsubishi Triton",
+    "purpose": "Vehicle platform card — Start with what you drive.",
+    "vehicle": "Triton/Strada Athlete 4x4, 2025",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Mitsubishi_Triton_2.4_GLX_4x2_2024_%284%29.jpg/3840px-Mitsubishi_Triton_2.4_GLX_4x2_2024_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3AMitsubishi%20Triton%202.4%20GLX%204x2%202024%20(4).jpg",
-    "title": "Mitsubishi Triton 2.4 GLX 4x2 2024 (4).jpg",
-    "creator": "Ethan Llamas",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Mitsubishi_Strada_Triton_4x4_Athlete_2025_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3AMitsubishi%20Strada%20Triton%204x4%20Athlete%202025%20(1).jpg",
+    "originalId": "Mitsubishi Strada Triton 4x4 Athlete 2025 (1).jpg",
+    "title": "Triton/Strada Athlete 4x4, 2025",
+    "creator": "Captainmorlypogi1959",
+    "creatorUrl": null,
     "license": "by-sa",
     "licenseRaw": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "attributionRequired": true,
-    "avgColor": null,
-    "toneLuminance": null,
-    "score": 6.7,
-    "originalWidth": 3840,
-    "originalHeight": 2880,
+    "grade": "none",
+    "toneLuminance": 0.207,
+    "originalWidth": 4032,
+    "originalHeight": 3024,
     "intrinsicWidth": 1280,
     "intrinsicHeight": 960,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-mitsubishi-triton-4x4/480.webp",
-        "bytes": 24660
+        "bytes": 18436
       },
       {
         "width": 800,
         "file": "/homepage/veh-mitsubishi-triton-4x4/800.webp",
-        "bytes": 60984
+        "bytes": 40686
       },
       {
         "width": 1280,
         "file": "/homepage/veh-mitsubishi-triton-4x4/1280.webp",
-        "bytes": 132796
+        "bytes": 85236
       }
     ],
-    "sha256": "e416f28e2843c7c6",
-    "query": "Mitsubishi Triton pickup",
-    "downloadedAt": "2026-08-31T17:39:11.972Z",
-    "originalId": "Mitsubishi Triton 2.4 GLX 4x2 2024 (4).jpg",
-    "grade": "none"
+    "sha256": "bd6abffcca1fff57",
+    "downloadedAt": "2026-09-01T11:48:35.032Z"
   },
   "veh-byd-shark-6-phev": {
     "slot": "veh-byd-shark-6-phev",
     "status": "ok",
-    "vehicle": "BYD Shark 6",
+    "purpose": "Vehicle platform card — Start with what you drive.",
+    "vehicle": "Shark 6 DMO Premium, 2025",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/MIAS_2025_-_BYD_Shark_6_DMO_AWD_Premium_02.jpg/3840px-MIAS_2025_-_BYD_Shark_6_DMO_AWD_Premium_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3AMIAS%202025%20-%20BYD%20Shark%206%20DMO%20AWD%20Premium%2002.jpg",
-    "title": "MIAS 2025 - BYD Shark 6 DMO AWD Premium 02.jpg",
-    "creator": "Ethan Llamas",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/BYD_Shark_6_DMO_Premium_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3ABYD%20Shark%206%20DMO%20Premium%202025.jpg",
+    "originalId": "BYD Shark 6 DMO Premium 2025.jpg",
+    "title": "Shark 6 DMO Premium, 2025",
+    "creator": "Captainmorlypogi1959",
+    "creatorUrl": null,
     "license": "by-sa",
     "licenseRaw": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "attributionRequired": true,
-    "avgColor": null,
-    "toneLuminance": null,
-    "score": 6.7,
-    "originalWidth": 3840,
-    "originalHeight": 2560,
+    "grade": "none",
+    "toneLuminance": 0.146,
+    "originalWidth": 3968,
+    "originalHeight": 2976,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 853,
+    "intrinsicHeight": 960,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-byd-shark-6-phev/480.webp",
-        "bytes": 24314
+        "bytes": 25054
       },
       {
         "width": 800,
         "file": "/homepage/veh-byd-shark-6-phev/800.webp",
-        "bytes": 49650
+        "bytes": 58422
       },
       {
         "width": 1280,
         "file": "/homepage/veh-byd-shark-6-phev/1280.webp",
-        "bytes": 89138
+        "bytes": 121908
       }
     ],
-    "sha256": "75bf5821b642e910",
-    "query": "BYD Shark pickup",
-    "downloadedAt": "2026-08-31T17:39:22.570Z",
-    "originalId": "MIAS 2025 - BYD Shark 6 DMO AWD Premium 02.jpg",
-    "grade": "none"
+    "sha256": "d4a76a350c7834cd",
+    "downloadedAt": "2026-09-01T11:48:41.873Z"
   },
   "veh-mazda-bt-50-4x4": {
     "slot": "veh-mazda-bt-50-4x4",
     "status": "ok",
-    "vehicle": "Mazda BT-50",
+    "purpose": "Vehicle platform card — Start with what you drive.",
+    "vehicle": "BT-50 4x4 Premium Pangolin, 2025",
     "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/2023_Mazda_BT-50_3.0_Standard_4x2_in_Concrete_Gray%2C_06-23-2024.jpg/3840px-2023_Mazda_BT-50_3.0_Standard_4x2_in_Concrete_Gray%2C_06-23-2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3A2023%20Mazda%20BT-50%203.0%20Standard%204x2%20in%20Concrete%20Gray%2C%2006-23-2024.jpg",
-    "title": "2023 Mazda BT-50 3.0 Standard 4x2 in Concrete Gray, 06-23-2024.jpg",
-    "creator": "Ethan Llamas",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mazda_BT50_4x4_Premium_Pangolin_2025_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "landingPage": "https://commons.wikimedia.org/wiki/File%3AMazda%20BT50%204x4%20Premium%20Pangolin%202025%20(5).jpg",
+    "originalId": "Mazda BT50 4x4 Premium Pangolin 2025 (5).jpg",
+    "title": "BT-50 4x4 Premium Pangolin, 2025",
+    "creator": "Captainmorlypogi1959",
+    "creatorUrl": null,
     "license": "by-sa",
     "licenseRaw": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "attributionRequired": true,
-    "avgColor": null,
-    "toneLuminance": null,
-    "score": 6.7,
-    "originalWidth": 3840,
-    "originalHeight": 2880,
+    "grade": "none",
+    "toneLuminance": 0.138,
+    "originalWidth": 4032,
+    "originalHeight": 3024,
     "intrinsicWidth": 1280,
     "intrinsicHeight": 960,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-mazda-bt-50-4x4/480.webp",
-        "bytes": 33922
+        "bytes": 28706
       },
       {
         "width": 800,
         "file": "/homepage/veh-mazda-bt-50-4x4/800.webp",
-        "bytes": 86256
+        "bytes": 73468
       },
       {
         "width": 1280,
         "file": "/homepage/veh-mazda-bt-50-4x4/1280.webp",
-        "bytes": 204904
+        "bytes": 182718
       }
     ],
-    "sha256": "d920b4b4d2dd5d77",
-    "query": "Mazda BT-50",
-    "downloadedAt": "2026-08-31T17:39:28.333Z",
-    "originalId": "2023 Mazda BT-50 3.0 Standard 4x2 in Concrete Gray, 06-23-2024.jpg",
-    "grade": "none"
+    "sha256": "26da4da22198b773",
+    "downloadedAt": "2026-09-01T11:48:50.329Z"
   },
   "veh-toyota-landcruiser-70-series": {
     "slot": "veh-toyota-landcruiser-70-series",
     "status": "ok",
-    "vehicle": "LandCruiser 70",
-    "sourceName": "Wikimedia Commons",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Land_Cruiser_70-series_bundera_4.jpg/3840px-Land_Cruiser_70-series_bundera_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "landingPage": "https://commons.wikimedia.org/wiki/File%3ALand%20Cruiser%2070-series%20bundera%204.jpg",
-    "title": "Land Cruiser 70-series bundera 4.jpg",
-    "creator": "Cruiser-Aust",
-    "license": "by-sa",
-    "licenseRaw": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "attributionRequired": true,
-    "avgColor": null,
-    "toneLuminance": null,
-    "score": 6.23,
-    "originalWidth": 3840,
-    "originalHeight": 2616,
+    "purpose": "Vehicle platform card — Start with what you drive.",
+    "vehicle": "Built 70 Series on K'gari beach",
+    "sourceName": "Unsplash",
+    "sourceUrl": "https://images.unsplash.com/photo-1770096145024-eefc88311851?q=90&fm=jpg",
+    "landingPage": "https://unsplash.com/photos/off-road-vehicle-parked-on-a-sandy-beach-near-ocean-J9mwMmjLsww",
+    "originalId": "J9mwMmjLsww",
+    "title": "Built 70 Series on K'gari beach",
+    "creator": "4Wheelhouse",
+    "creatorUrl": "https://unsplash.com/@4wheelhouse",
+    "license": "unsplash",
+    "licenseRaw": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "attributionRequired": false,
+    "grade": "none",
+    "toneLuminance": 0.255,
+    "originalWidth": 4032,
+    "originalHeight": 3024,
     "intrinsicWidth": 1280,
-    "intrinsicHeight": 872,
+    "intrinsicHeight": 960,
     "variants": [
       {
         "width": 480,
         "file": "/homepage/veh-toyota-landcruiser-70-series/480.webp",
-        "bytes": 29948
+        "bytes": 22720
       },
       {
         "width": 800,
         "file": "/homepage/veh-toyota-landcruiser-70-series/800.webp",
-        "bytes": 68100
+        "bytes": 58176
       },
       {
         "width": 1280,
         "file": "/homepage/veh-toyota-landcruiser-70-series/1280.webp",
-        "bytes": 132582
+        "bytes": 141814
       }
     ],
-    "sha256": "c9b94d2bd01575b8",
-    "query": "Toyota Land Cruiser 70 series",
-    "downloadedAt": "2026-08-31T17:39:34.468Z",
-    "originalId": "Land Cruiser 70-series bundera 4.jpg",
-    "grade": "none"
+    "sha256": "836209f49ba7a50e",
+    "downloadedAt": "2026-09-01T11:48:14.725Z"
   },
   "veh-nissan-navara-4x4": {
     "slot": "veh-nissan-navara-4x4",
