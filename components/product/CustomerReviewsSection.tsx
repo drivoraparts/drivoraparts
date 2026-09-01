@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import type { ProductReview } from "@/lib/reviews";
 import ReviewCard from "./ReviewCard";
-import ReviewWriteForm from "./ReviewWriteForm";
 import StarRating from "./StarRating";
 import { proSurfaceCard } from "./styles";
 
@@ -80,34 +79,21 @@ export default function CustomerReviewsSection({
   const visibleReviews = reviews.slice(0, visibleCount);
   const hasMore = visibleCount < reviews.length;
 
-  const handleReviewSubmitted = (review: ProductReview) => {
-    /*
-     * A submitted review is held for moderation, so it must not join the list
-     * or move the rating. Doing either would show the author a published
-     * review that no one else can see, and would shift the average on the
-     * strength of text an admin has not released yet.
-     *
-     * Only an already-approved review is merged in — which keeps this correct
-     * if moderation is ever turned off again.
-     */
-    if (review.status !== "approved") {
-      setLoaded(true);
-      return;
-    }
-
-    setReviews((current) => [review, ...current]);
-    setReviewCount((count) => count + 1);
-    setRating((currentRating) => {
-      const nextCount = reviewCount + 1;
-      const total = currentRating * reviewCount + review.rating;
-      return Math.round((total / nextCount) * 10) / 10;
-    });
-    setLoaded(true);
-  };
-
   const sectionTitle = hasReviews
     ? `Customer Reviews (${reviewCount.toLocaleString()})`
     : "Customer Reviews";
+
+  /*
+   * Reviews are display-only for now: there is no way to leave one, so a
+   * product with none has nothing to say here and the section is omitted
+   * rather than showing a permanent "No reviews yet". The count comes from
+   * the server, so this is decided before first paint and does not flicker.
+   *
+   * This is deliberately a render guard, not a deletion. ReviewWriteForm, the
+   * store and the POST handler are all still in the tree so the feature can
+   * be switched back on once there is a customer base to write them.
+   */
+  if (!initialReviewCount) return null;
 
   return (
     <section style={{ ...proSurfaceCard, padding: "14px" }}>
@@ -140,15 +126,8 @@ export default function CustomerReviewsSection({
               </span>
             </div>
           ) : (
-            <p className="review-empty">
-              Be the first to review this product.
-            </p>
+            <p className="review-empty">No reviews yet.</p>
           )}
-
-          <ReviewWriteForm
-            productId={productId}
-            onSubmitted={handleReviewSubmitted}
-          />
 
           {loaded ? (
             visibleReviews.length > 0 ? (

@@ -38,7 +38,26 @@ export async function GET(req: Request) {
   });
 }
 
+/*
+ * REVIEW SUBMISSION IS CLOSED.
+ *
+ * Removing the form would only hide the button -- this endpoint is public, so
+ * anything could still POST to it and land rows in product_reviews that no
+ * part of the site invited. The gate belongs here, at the door.
+ *
+ * 403 rather than 404: the route exists and is coming back once there is a
+ * customer base to write reviews. The body below is left intact for that.
+ */
+const REVIEWS_OPEN = false;
+
 export async function POST(req: Request) {
+  if (!REVIEWS_OPEN) {
+    return NextResponse.json(
+      { error: "Review submission is currently closed." },
+      { status: 403 }
+    );
+  }
+
   try {
     const body = await req.json().catch(() => null);
     const productId = Number(body?.product_id ?? body?.productId);
