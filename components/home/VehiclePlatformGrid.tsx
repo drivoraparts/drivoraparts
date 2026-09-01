@@ -1,29 +1,38 @@
-import Link from "next/link";
-import EditorialImage from "./EditorialImage";
-import EditorialPlate from "./EditorialPlate";
 import ScrollReveal from "./ScrollReveal";
-import { getPhoto } from "@/lib/media/homepage-photo";
+import VehicleShowcase, { type ShowcaseItem } from "./VehicleShowcase";
+import { renderPhoto } from "@/lib/media/homepage-photo";
 import { vehiclePlatforms } from "@/data/vehicles";
 
 /**
  * FIND YOUR VEHICLE — the page says "we understand vehicles" before it says
  * "we sell products".
  *
- * Every platform here comes from data/vehicles.ts, which is the same source
- * the /vehicles hubs and the fitment matcher use. Nothing is invented: if a
- * vehicle is on this grid, the catalogue genuinely has a hub for it.
+ * Every platform here comes from data/vehicles.ts, the same source the
+ * /vehicles hubs and the fitment matcher use. Nothing is invented: if a
+ * vehicle appears here, the catalogue genuinely has a hub for it.
  *
- * A platform without a photograph still renders, as a type-only card. Dropping
- * it instead would silently shrink the range we appear to cover, which is a
- * worse lie than a card with no picture.
+ * This component stays on the server so the vehicles dataset -- fitment
+ * regexes, generation notes, long blurbs -- never reaches the browser. Only
+ * the name, tagline and image URLs each slide actually needs are handed to
+ * the client carousel.
+ *
+ * A platform without a photograph still appears, as a type-only slide.
+ * Dropping it would silently shrink the range we look able to serve, which is
+ * a worse lie than a slide with no picture.
  */
 export default function VehiclePlatformGrid() {
-  const platforms = vehiclePlatforms.map((p) => ({
-    slug: p.slug,
-    name: p.name,
-    tagline: p.tagline,
-    hasPhoto: Boolean(getPhoto(`veh-${p.slug}`)),
-  }));
+  const items: ShowcaseItem[] = vehiclePlatforms.map((p) => {
+    const photo = renderPhoto(`veh-${p.slug}`);
+    return {
+      slug: p.slug,
+      name: p.name,
+      tagline: p.tagline,
+      src: photo?.src ?? null,
+      srcSet: photo?.srcSet ?? null,
+      width: photo?.width ?? null,
+      height: photo?.height ?? null,
+    };
+  });
 
   return (
     <section
@@ -47,40 +56,7 @@ export default function VehiclePlatformGrid() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {platforms.map((p, i) => (
-            <ScrollReveal key={p.slug} delayMs={Math.min(i, 6) * 40}>
-              <Link
-                href={`/vehicles/${p.slug}`}
-                prefetch={false}
-                className="group relative block h-full overflow-hidden border border-border bg-surface transition-colors hover:border-accent"
-              >
-                <div className="relative aspect-[16/10] overflow-hidden bg-surface-muted">
-                  {p.hasPhoto ? (
-                    <EditorialImage
-                      slot={`veh-${p.slug}`}
-                      alt={p.name}
-                      sizes="(min-width: 1024px) 22rem, (min-width: 640px) 45vw, 100vw"
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                    />
-                  ) : (
-                    <EditorialPlate label={p.name} className="h-full w-full" />
-                  )}
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background-dark/70 via-transparent to-transparent" />
-                </div>
-
-                <div className="p-5">
-                  <h3 className="text-base font-bold tracking-tight text-foreground group-hover:text-accent-hover">
-                    {p.name}
-                  </h3>
-                  <p className="mt-1 text-xs font-medium uppercase tracking-[0.1em] text-muted">
-                    {p.tagline}
-                  </p>
-                </div>
-              </Link>
-            </ScrollReveal>
-          ))}
-        </div>
+        <VehicleShowcase items={items} />
       </div>
     </section>
   );
