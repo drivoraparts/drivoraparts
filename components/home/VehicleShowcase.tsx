@@ -39,6 +39,7 @@ export default function VehicleShowcase({ items }: { items: ShowcaseItem[] }) {
   // it, the active slide is by definition the thing being looked at and must
   // not wait on an intersection check.
   const [touched, setTouched] = useState(false);
+  const [held, setHeld] = useState(false);
   const liveRef = useRef<HTMLDivElement>(null);
 
   const go = useCallback(
@@ -60,6 +61,36 @@ export default function VehicleShowcase({ items }: { items: ShowcaseItem[] }) {
     if (liveRef.current) liveRef.current.textContent = `${items[index].name}, ${index + 1} of ${items.length}`;
   }, [index, items]);
 
+  /*
+   * Advances on its own so the section shows its range without being clicked.
+   *
+   * `held` covers pointer and keyboard focus: reading a vehicle's copy while
+   * the slide changes underneath is the classic carousel failure, and WCAG
+   * 2.2.2 wants moving content stoppable. Hover and focus are that mechanism
+   * here rather than a visible button.
+   *
+   * The interval also stops when the tab is hidden -- otherwise a backgrounded
+   * page quietly works through eleven image fetches nobody is looking at.
+   * `index` is in the dependency list on purpose: every manual move restarts
+   * the clock, so a slide never gets cut short right after being chosen.
+   */
+  useEffect(() => {
+    if (held || items.length < 2) return;
+    if (typeof document !== "undefined" && document.visibilityState === "hidden") return;
+    const id = window.setInterval(() => {
+      setTouched(true);
+      setIndex((i) => (i + 1) % items.length);
+    }, 3000);
+    return () => window.clearInterval(id);
+  }, [held, items.length, index]);
+
+  // Re-evaluate when the tab is backgrounded or restored.
+  useEffect(() => {
+    const onVis = () => setHeld((h) => h);
+    document.addEventListener("visibilitychange", onVis);
+    return () => document.removeEventListener("visibilitychange", onVis);
+  }, []);
+
   if (!items.length) return null;
   const active = items[index];
 
@@ -71,6 +102,12 @@ export default function VehicleShowcase({ items }: { items: ShowcaseItem[] }) {
       aria-label="Vehicle platforms"
       tabIndex={0}
       onKeyDown={onKeyDown}
+      onMouseEnter={() => setHeld(true)}
+      onMouseLeave={() => setHeld(false)}
+      onFocusCapture={() => setHeld(true)}
+      onBlurCapture={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node)) setHeld(false);
+      }}
     >
       <div className="grid items-center gap-8 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
         {/* The picture. Fixed aspect so switching slides never shifts layout. */}
