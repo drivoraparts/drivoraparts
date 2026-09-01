@@ -76,13 +76,26 @@ export default function GarageClosingSection() {
             <p className="text-sm leading-relaxed text-neutral-200 lg:text-base">
               From the street to the trail, build something worth driving.
             </p>
-            <Link
-              href={routes.all}
-              prefetch={false}
-              className="touch-manipulation inline-flex items-center justify-center bg-accent px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors duration-[var(--motion-duration-fast)] hover:bg-accent-hover active:bg-accent-active"
-            >
-              Explore the catalog
-            </Link>
+            <div className="flex flex-col items-center gap-3 sm:flex-row">
+              <Link
+                href={routes.all}
+                prefetch={false}
+                className="touch-manipulation inline-flex items-center justify-center bg-accent px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors duration-[var(--motion-duration-fast)] hover:bg-accent-hover active:bg-accent-active"
+              >
+                Explore the catalog
+              </Link>
+              {/* The freight-quote route came off the CTA section this
+                  replaced, where it was the only /contact link on the
+                  homepage. Dropping that section without it would have
+                  removed the page path to a quote. */}
+              <Link
+                href="/contact"
+                prefetch={false}
+                className="touch-manipulation inline-flex items-center justify-center border border-white/35 px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors duration-[var(--motion-duration-fast)] hover:bg-white/10 active:bg-white/15"
+              >
+                Freight quote
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -98,6 +111,13 @@ export default function GarageClosingSection() {
           className="touch-manipulation inline-flex w-full items-center justify-center bg-accent px-8 py-4 text-sm font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors duration-[var(--motion-duration-fast)] active:bg-accent-active"
         >
           Explore the catalog
+        </Link>
+        <Link
+          href="/contact"
+          prefetch={false}
+          className="touch-manipulation inline-flex w-full items-center justify-center border border-white/35 px-8 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors duration-[var(--motion-duration-fast)] active:bg-white/15"
+        >
+          Freight quote
         </Link>
       </div>
     </section>

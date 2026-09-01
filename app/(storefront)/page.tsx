@@ -6,14 +6,11 @@ import HomeTrustBadges from "@/components/home/HomeTrustBadges";
 import ShopByVehicleSection from "@/components/home/ShopByVehicleSection";
 import FeaturedBrandsStrip from "@/components/home/FeaturedBrandsStrip";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
-import ScrollReveal from "@/components/home/ScrollReveal";
 import HomeHeroCinematic from "@/components/home/HomeHeroCinematic";
 import VehiclePlatformGrid from "@/components/home/VehiclePlatformGrid";
 import BuildStorySection from "@/components/home/BuildStorySection";
 import GlobalReachBand from "@/components/home/GlobalReachBand";
-import EditorialImage from "@/components/home/EditorialImage";
 import GarageClosingSection from "@/components/home/GarageClosingSection";
-import { getPhoto } from "@/lib/media/homepage-photo";
 import TrendingRail from "@/components/catalog/TrendingRail";
 import RecentlyAddedRail from "@/components/catalog/RecentlyAddedRail";
 import {
@@ -23,7 +20,6 @@ import {
 } from "@/lib/home/featured-products";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 import { routes } from "@/lib/inventory/routes";
-import { directAssetUrl } from "@/lib/media/optimize-image";
 import { buildPageMetadata, SITE_KEYWORDS } from "@/lib/seo";
 
 export const revalidate = 600;
@@ -133,59 +129,6 @@ export default function Home() {
       <GuidesPreviewSection />
 
       <HomeTrustBadges />
-
-      {/* Closing CTA. Prefers the acquired `closing` frame and falls back to
-          the Pexels photograph already in the repo, so the section never
-          renders as a flat colour block if a slot is empty. */}
-      <section className="relative overflow-hidden px-4 py-24 text-center text-foreground-on-dark sm:px-6 sm:py-32">
-        <div className="absolute inset-0 z-0">
-          {getPhoto("closing") ? (
-            <EditorialImage
-              slot="closing"
-              alt=""
-              sizes="100vw"
-              className="h-full w-full object-cover"
-            />
-          ) : (
-            <img
-              src={directAssetUrl("/home/pexels-mikebirdy-30734921.jpg")}
-              alt=""
-              loading="lazy"
-              decoding="async"
-              sizes="100vw"
-              className="h-full w-full object-cover"
-            />
-          )}
-          <div className="absolute inset-0 bg-background-dark/78" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/70 to-background-dark/40" />
-        </div>
-
-        <ScrollReveal className="relative z-10 mx-auto max-w-2xl">
-          <h2 className="text-[clamp(1.9rem,4.4vw,3.25rem)] font-bold uppercase leading-[1.02] tracking-[-0.015em]">
-            Start your build today
-          </h2>
-          <p className="mt-5 text-base leading-relaxed text-muted-on-dark">
-            Exact item, as pictured — or upgraded to your spec. Secure crypto
-            checkout, worldwide shipping, freight-ready logistics.
-          </p>
-          <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href={routes.all}
-              prefetch={false}
-              className="touch-manipulation inline-flex items-center justify-center bg-accent px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-accent-hover active:bg-accent-active"
-            >
-              Browse marketplace
-            </Link>
-            <Link
-              href="/contact"
-              prefetch={false}
-              className="touch-manipulation inline-flex items-center justify-center border border-foreground-on-dark/35 px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] transition-colors hover:bg-foreground-on-dark/10 active:bg-foreground-on-dark/15"
-            >
-              Freight quote
-            </Link>
-          </div>
-        </ScrollReveal>
-      </section>
 
       {/* The photography credits band that used to sit here has moved to
           /photography-credits, linked from the footer of every page. The
