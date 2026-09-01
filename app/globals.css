@@ -626,12 +626,25 @@ img.rounded-full {
 /* ---------------------------------------------------------------------------
    Entrance animations
 
-   These are CSS, not JavaScript, and that is the point. The end state of each
-   keyframe is the element's natural state, so if animations never run -- no
-   CSS animation support, a stylesheet that half-loaded, reduced motion
-   collapsing every duration to 0.01ms via the sitewide block above -- the
-   element simply is where it belongs. Nothing here can leave content hidden,
-   which is the same rule ScrollReveal now follows in TypeScript.
+   These are CSS, not JavaScript, but that alone does not make them safe.
+
+   These keyframes deliberately do NOT touch opacity, and that restriction
+   is the whole point. CSS animations run on the same frame clock as rAF and
+   IntersectionObserver, and when a page stops compositing that clock stops:
+   the animation stays pending at currentTime 0 while still reporting itself
+   as running. With animation-fill-mode: both, a pending animation holds its
+   FROM state -- so a keyframe starting at opacity 0 leaves the element
+   invisible, permanently, with nothing logged anywhere.
+
+   That was measured on production rather than theorised: the catalog H1 sat
+   at opacity 0 with currentTime frozen at 0. An earlier version of this very
+   comment claimed a stalled animation leaves the element where it belongs.
+   It does not, and the H1 proved it.
+
+   Animating transform alone means the worst a stalled animation can do is
+   leave an element ten pixels low and perfectly readable. Motion never hides
+   content here -- the same rule ScrollReveal follows in TypeScript, arrived
+   at the hard way twice.
 
    `both` fill means the element holds the `from` state during its delay, so
    keep delays short. The longest stagger in the intro lands at ~395ms, and
@@ -639,11 +652,9 @@ img.rounded-full {
    --------------------------------------------------------------------------- */
 @keyframes rise-in {
   from {
-    opacity: 0;
     transform: translateY(var(--rise-from, 10px));
   }
   to {
-    opacity: 1;
     transform: none;
   }
 }
