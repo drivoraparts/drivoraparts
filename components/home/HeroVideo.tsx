@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { getHeroVideo } from "@/lib/media/homepage-photo";
 
 /**
- * The hero film — on desktop. Phones get the still.
+ * The hero film — on desktop. Phones and tablets get the still.
  *
  * WHY THE CLIP IS DESKTOP-ONLY
  * The montage is 4.9MB, and on a 390px phone it was 95% of the page's entire
@@ -14,13 +14,29 @@ import { getHeroVideo } from "@/lib/media/homepage-photo";
  * the poster is a frame from the clip, so it is the same picture, just not
  * moving.
  *
- * The decision is made client-side and the <video> is never mounted below the
- * breakpoint, so the bytes are not merely hidden -- they are never requested.
- * CSS alone could not do this: a `hidden sm:block` video still downloads.
+ * The decision is made client-side and the <video> is never mounted for a
+ * touch device, so the bytes are not merely hidden -- they are never
+ * requested. CSS alone could not do this: a `hidden sm:block` video still
+ * downloads.
  *
- * It re-evaluates on resize, so rotating a phone into landscape, or dragging a
- * desktop window narrow, lands on the right treatment rather than whatever
- * matched at first paint.
+ * WHY THE TEST IS THE POINTER, NOT THE WIDTH
+ * This was `(min-width: 640px)` alone, and an iPhone 8 walked straight through
+ * it: 375px in portrait, but 667px in landscape. Rotating the phone cleared
+ * the gate and pulled all 4.9MB -- precisely the cost the breakpoint existed
+ * to avoid.
+ *
+ * No width fixes that, because phone landscape sizes now sit on top of tablet
+ * sizes: an iPhone 8 is 667 landscape, an 8 Plus 736, an XR 896, a 15 Pro Max
+ * 932 -- against an iPad's 768-834 portrait. There is no number between them.
+ * Safari's "Request Desktop Website" reports ~980 and clears all of them.
+ *
+ * `hover: hover` with `pointer: fine` describes a mouse or a trackpad, which
+ * is the thing actually being asked about, and it answers the same way at
+ * every size and in both orientations. The width test is kept alongside so a
+ * narrow desktop window still drops to the still.
+ *
+ * It re-evaluates on change, so dragging a desktop window narrow lands on the
+ * right treatment rather than whatever matched at first paint.
  *
  * Autoplay is unconditional where the clip does load. Windows reports
  * prefers-reduced-motion whenever "Animation effects" is off, which is common
@@ -38,7 +54,7 @@ import { getHeroVideo } from "@/lib/media/homepage-photo";
  * extra bytes. The eight-second holds are untouched -- what varies is the
  * order of the shots, not how long any of them stays on screen.
  */
-const DESKTOP = "(min-width: 640px)";
+const DESKTOP = "(min-width: 640px) and (hover: hover) and (pointer: fine)";
 
 /** Fisher-Yates, avoiding `avoid` in the lead so no shot repeats across a lap. */
 function shuffled(count: number, avoid: number): number[] {
