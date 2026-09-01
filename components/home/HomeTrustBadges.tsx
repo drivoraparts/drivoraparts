@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NowPaymentsMark from "@/components/trust/NowPaymentsMark";
+import PaymentMethods from "@/components/trust/PaymentMethods";
 import TrustSealGraphic from "@/components/trust/TrustSealGraphic";
 import {
   TRUST_CATEGORIES,
@@ -36,11 +36,15 @@ export default function HomeTrustBadges() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10">
+          <PaymentMethods />
+        </div>
+
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {TRUST_CATEGORIES.map((cat) => (
             <div
               key={cat.id}
-              className="flex flex-col rounded-2xl border border-neutral-800/90 bg-neutral-900/70 p-5 shadow-[0_10px_40px_rgba(0,0,0,0.35)] transition-colors hover:border-neutral-700 hover:bg-neutral-900 sm:p-6"
+              className="flex flex-col rounded-[3px] border border-neutral-800 bg-neutral-900/40 p-5 transition-colors hover:border-neutral-700 hover:bg-neutral-900/70"
             >
               <div className="flex items-center gap-2.5">
                 <TrustSealGraphic kind={cat.seal} className="h-8 w-8 shrink-0 text-neutral-400" />
@@ -54,9 +58,6 @@ export default function HomeTrustBadges() {
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-400">{cat.detail}</p>
 
-              {cat.id === "payments" ? (
-                <NowPaymentsMark className="mt-4 h-7 w-auto" />
-              ) : null}
 
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {cat.chips.map((chip) => (
