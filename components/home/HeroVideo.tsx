@@ -1,71 +1,58 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { getHeroVideo } from "@/lib/media/homepage-photo";
 
 /**
- * The looping hero clip.
+ * The looping hero clip. Plays on its own, always.
  *
- * Client-side because it has to make two decisions the server cannot: whether
- * the visitor has asked for reduced motion, and whether the browser actually
- * allowed autoplay. Both fall back to the poster frame, which is extracted
- * from the clip itself so the still and the first video frame match.
+ * There is deliberately no reduced-motion gate. An earlier version honoured
+ * prefers-reduced-motion and showed the poster instead, which sounds correct
+ * until you learn that Windows reports that preference whenever "Animation
+ * effects" is switched off in Accessibility settings -- common on machines
+ * tuned for performance, and enough to hide the hero film from a large share
+ * of visitors who never asked for a still. The reference site this page is
+ * matched to autoplays unconditionally too.
  *
- * WHY IT IS NOT JUST <video autoplay loop muted>
- *  - prefers-reduced-motion is a real accessibility setting, and a 10-second
- *    loop of a vehicle bouncing over a bank is exactly what it is meant to
- *    stop. Those visitors get the poster and no download at all.
- *  - Safari and most mobile browsers refuse autoplay unless the element is
- *    muted AND playsInline, and refuse it silently. play() returns a promise
- *    that rejects; if it does, we keep the poster rather than showing a frozen
- *    first frame.
- *  - preload="none" until we know we are allowed to play, so a phone on a
- *    metered connection is never billed for 2.3MB it will not see.
+ * The poster remains the fallback, but for the one case a site cannot control:
+ * Safari and most mobile browsers refuse autoplay unless the element is muted
+ * AND playsInline, and they refuse silently. play() returns a promise that
+ * rejects; when it does, the poster is what the visitor sees.
  */
 export default function HeroVideo() {
   const clip = getHeroVideo();
   const ref = useRef<HTMLVideoElement>(null);
-  const [play, setPlay] = useState(false);
 
-  // Decide whether we are allowed to animate at all.
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    setPlay(true);
-  }, []);
-
-  // Only once `play` is true does the <source> exist. Calling play() in the
-  // same tick as setPlay asked the element to start before it had anything to
-  // start, so nothing ever played; load() picks the newly-rendered source up.
-  useEffect(() => {
-    if (!play) return;
     const el = ref.current;
     if (!el) return;
-    el.load();
+    // The <source> is in the markup from the first render, so there is nothing
+    // to wait for -- but calling play() explicitly covers browsers that ignore
+    // the autoplay attribute while still allowing a muted inline start.
     const attempt = el.play();
     if (attempt && typeof attempt.catch === "function") {
-      // Autoplay refusal is silent apart from this rejection.
-      attempt.catch(() => setPlay(false));
+      attempt.catch(() => {
+        /* Autoplay refused; the poster stands in. Nothing to recover. */
+      });
     }
-  }, [play]);
+  }, []);
 
   if (!clip) return null;
-  const { poster, file: src } = clip;
 
   return (
     <video
       ref={ref}
       className="h-full w-full object-cover object-[60%_center] sm:object-center"
-      poster={poster}
-      // Muted + playsInline are what make autoplay permissible at all.
+      poster={clip.poster}
+      autoPlay
       muted
       loop
       playsInline
-      preload={play ? "auto" : "none"}
+      preload="auto"
       aria-hidden="true"
       tabIndex={-1}
     >
-      {play && src ? <source src={src} type="video/mp4" /> : null}
+      <source src={clip.file} type="video/mp4" />
     </video>
   );
 }
