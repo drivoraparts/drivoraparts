@@ -594,3 +594,31 @@ img.rounded-full {
 /* palette remap active */
 
 /* archivo */
+
+/* ---------------------------------------------------------------------------
+   Motion tokens
+
+   The CSS mirror of lib/motion/motion.ts. Same numbers, same curves, so a
+   hover state written in a stylesheet and a section entrance written in
+   TypeScript agree with each other. Keep the two files in step.
+
+   Only transform and opacity are animated anywhere in this system: both are
+   compositor properties, so motion never triggers layout or paint and cannot
+   make scrolling the product grid stutter.
+
+   Reduced motion is handled by the sitewide block further up this file, which
+   collapses every animation and transition duration. Nothing here needs its
+   own media query -- but nothing here may be the reason a piece of content is
+   visible, either. Motion decorates content that is already on screen.
+   --------------------------------------------------------------------------- */
+:root {
+  --motion-duration-fast: 160ms;   /* hover, focus */
+  --motion-duration-base: 320ms;   /* filters, sorting, state changes */
+  --motion-duration-slow: 700ms;   /* section entrances */
+
+  --motion-ease-entrance: cubic-bezier(0.16, 1, 0.3, 1); /* decelerating */
+  --motion-ease-state: cubic-bezier(0.4, 0, 0.2, 1);     /* reversible */
+
+  --motion-distance-sm: 8px;   /* hover nudge */
+  --motion-distance-md: 18px;  /* section entrance */
+}
