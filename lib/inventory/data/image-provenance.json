@@ -1265,7 +1265,9 @@
         "width": 1400,
         "height": 1050,
         "sourceWidth": 2048,
-        "sourceHeight": 1536
+        "sourceHeight": 1536,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1517/4.webp"
       },
       {
         "localFile": "/product-media/edmunds/1513/2.webp",
@@ -1275,7 +1277,9 @@
         "width": 960,
         "height": 720,
         "sourceWidth": 960,
-        "sourceHeight": 720
+        "sourceHeight": 720,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1517/2.webp"
       },
       {
         "localFile": "/product-media/edmunds/1513/3.webp",
@@ -1285,7 +1289,9 @@
         "width": 1400,
         "height": 1050,
         "sourceWidth": 2048,
-        "sourceHeight": 1536
+        "sourceHeight": 1536,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1517/3.webp"
       },
       {
         "localFile": "/product-media/edmunds/1513/4.webp",
@@ -1295,7 +1301,9 @@
         "width": 1400,
         "height": 1050,
         "sourceWidth": 2048,
-        "sourceHeight": 1536
+        "sourceHeight": 1536,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1517/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1513/5.webp",
@@ -1305,7 +1313,9 @@
         "width": 1400,
         "height": 1050,
         "sourceWidth": 2048,
-        "sourceHeight": 1536
+        "sourceHeight": 1536,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1517/5.webp"
       }
     ],
     "sourceUrl": [
@@ -1330,7 +1340,9 @@
     "status": "restored",
     "priorAction": "hotlinks replaced with category placeholder",
     "priorRecordedAt": "2026-08-31T11:44:07.308Z",
-    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery",
+    "mergedInto": 1517,
+    "mergedNote": "listing 1513 and listing 1517 were the same physical truck bed, published twice by the source site (2025/12 and 2026/01) under two slugs. 1513 was withdrawn on the owner instruction to keep the body-parts listing; its description body was carried over to 1517. These five files stay on disk and are byte-identical to 1517/1-5.webp."
   },
   "product-1514": {
     "productId": 1514,
@@ -3658,7 +3670,8 @@
       "2011"
     ],
     "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
-    "checkedAt": "2026-08-31T18:26:14.505Z"
+    "checkedAt": "2026-08-31T18:26:14.505Z",
+    "mergedInto": 1517
   },
   "acq-1514": {
     "productId": 1514,

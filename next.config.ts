@@ -19,6 +19,14 @@ const nextConfig: NextConfig = {
         destination: "/catalog/aftermarket",
         permanent: true,
       },
+      // 1513 and 1517 were the same 2011-2016 Superduty 8ft bed, published
+      // twice by the source site under two slugs. 1513 was withdrawn and
+      // merged into 1517, so its URL is kept alive rather than left to 404.
+      {
+        source: "/product/1513",
+        destination: "/product/1517",
+        permanent: true,
+      },
     ];
   },
   async headers() {
