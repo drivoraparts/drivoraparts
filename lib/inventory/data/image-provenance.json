@@ -1,4 +1,32 @@
 {
+  "product-2118": {
+    "productId": 2118,
+    "productName": "1996–1997 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — HP005X",
+    "localFile": "/product-media/engine/hpop-96-97-ap63622/1.webp",
+    "sourceUrl": "https://parts.alliantpower.com/product/image/large/app40848_1.jpg",
+    "sourceName": "parts.alliantpower.com",
+    "landingPage": "https://parts.alliantpower.com/en-us/fuel-system/fuel-injection-pumps/ap63622-app40848",
+    "creator": "Alliant Power",
+    "creatorUrl": "https://www.alliantpower.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer/distributor product photography — no machine-readable licence is offered by the source; downloaded on the site owner's explicit instruction and asserted dealer authorization, which this repository cannot itself verify",
+    "matchedTokens": [
+      "AP63622",
+      "HP005X",
+      "F6TZ-9A543"
+    ],
+    "query": "operator-supplied source URL",
+    "sha256": "f40302d66774faa91d21dbd1be6aad983bf71bb1e6ebd1e979e6f3af6a05184a",
+    "bytes": 79090,
+    "width": 1400,
+    "height": 1508,
+    "downloadedAt": "2026-09-02T07:24:00.000Z",
+    "status": "downloaded",
+    "verified": "operator-verified"
+  },
   "product-1500": {
     "productId": 1500,
     "productName": "07-13 gmc sierra truck bed for sale​ (5’8 short truck bed)",
