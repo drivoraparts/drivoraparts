@@ -1006,21 +1006,95 @@
   "product-1509": {
     "productId": 1509,
     "productName": "2007-2013 GMC Sierra 1500 5&#8242; 8″ Short Truck Bed",
-    "localFile": "/product-media/placeholders/body-parts.svg",
+    "localFile": "/product-media/edmunds/1509/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1509/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-07-at-13.26.17_f5c3c804-1.jpg",
+        "sha256": "8070f1351a5763d57953d326abf474ea19cf4843a018b0246e29b583b4829f9a",
+        "bytes": 91816,
+        "width": 828,
+        "height": 964,
+        "sourceWidth": 828,
+        "sourceHeight": 964
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-07-at-13.26.17_f5c3c804-1.jpg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.308Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:07:25.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.308Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1510": {
     "productId": 1510,
     "productName": "2009-2014 Ford F150 6.5 foot bed",
-    "localFile": "/product-media/placeholders/body-parts.svg",
+    "localFile": "/product-media/edmunds/1510/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1510/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4472.jpeg",
+        "sha256": "1ee876733c6f14fb4f8665bb74cf5725daa10e517befc1c3008f394a7a0b508c",
+        "bytes": 175940,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 1800,
+        "sourceHeight": 1350
+      },
+      {
+        "localFile": "/product-media/edmunds/1510/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4469.jpeg",
+        "sha256": "259ebd40caa4c95aca15928d9821e815e8f9e4f3ba037fcba25d5fbfde2b7b7a",
+        "bytes": 93072,
+        "width": 960,
+        "height": 720,
+        "sourceWidth": 960,
+        "sourceHeight": 720
+      },
+      {
+        "localFile": "/product-media/edmunds/1510/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4470.jpeg",
+        "sha256": "93139f0336ddde94dff71a0e38f479920415e8b07f5d793ab74e1e67d3433afc",
+        "bytes": 105128,
+        "width": 960,
+        "height": 720,
+        "sourceWidth": 960,
+        "sourceHeight": 720
+      },
+      {
+        "localFile": "/product-media/edmunds/1510/4.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4471.jpeg",
+        "sha256": "e5481c65b40635ae21e834c6dbd2b1796b0fa5660aeff51375fb9746a39ed357",
+        "bytes": 174612,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 1800,
+        "sourceHeight": 1350
+      },
+      {
+        "localFile": "/product-media/edmunds/1510/5.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4473.jpeg",
+        "sha256": "9263d3abbea1b7ae93a79c6f37d32c048669f78c397533b6d809024bdadb0d39",
+        "bytes": 222480,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 1800,
+        "sourceHeight": 1350
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4472.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4469.jpeg",
@@ -1029,32 +1103,126 @@
       "https://edmundstruckparts.com/wp-content/uploads/2026/04/IMG_4473.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.308Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:11:13.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.308Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1511": {
     "productId": 1511,
     "productName": "2009-2014 Ford F150 6.5ft Truck Bed",
-    "localFile": "/product-media/placeholders/body-parts.svg",
+    "localFile": "/product-media/edmunds/1511/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1511/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3277.jpeg",
+        "sha256": "efcaf8b0861051ba0978dfc92b82e743faebecffc4f740e7668041de653101e0",
+        "bytes": 187956,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1511/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3275.jpeg",
+        "sha256": "500583e847424cf290b1d02f19337614358edfeaace5ed52a333ca3f5a18358f",
+        "bytes": 258588,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1511/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3273.jpeg",
+        "sha256": "994aafffb7655597c5c1ada00f19d1ed985dfb100049dfe084019798eb832ea2",
+        "bytes": 127670,
+        "width": 960,
+        "height": 720,
+        "sourceWidth": 960,
+        "sourceHeight": 720
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3277.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3275.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3273.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.308Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:12:43.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.308Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1512": {
     "productId": 1512,
     "productName": "2009-2014 Ford F150 Camper Shell Topper",
-    "localFile": "/product-media/placeholders/aftermarket.svg",
+    "localFile": "/product-media/edmunds/1512/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1512/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_4019-1.jpeg",
+        "sha256": "5ad93b2098a7e7cb7fbddeeae971c3198683c3dc2f9727782fe2e40cdc78f2dc",
+        "bytes": 80204,
+        "width": 1284,
+        "height": 955,
+        "sourceWidth": 1284,
+        "sourceHeight": 955
+      },
+      {
+        "localFile": "/product-media/edmunds/1512/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_4019.jpeg",
+        "sha256": "5ad93b2098a7e7cb7fbddeeae971c3198683c3dc2f9727782fe2e40cdc78f2dc",
+        "bytes": 80204,
+        "width": 1284,
+        "height": 955,
+        "sourceWidth": 1284,
+        "sourceHeight": 955
+      },
+      {
+        "localFile": "/product-media/edmunds/1512/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_4021.jpeg",
+        "sha256": "ec9aaf836b966cfd80b8f7c3ef848431826064c426ee2161689548a19f29bf3b",
+        "bytes": 82120,
+        "width": 1284,
+        "height": 954,
+        "sourceWidth": 1284,
+        "sourceHeight": 954
+      },
+      {
+        "localFile": "/product-media/edmunds/1512/4.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_4020-1.jpeg",
+        "sha256": "3c31ac58c3b8859da4dbf67ffdcaf6ce8ef0ed7d932f3b82b0cabdf2803d8970",
+        "bytes": 78984,
+        "width": 1284,
+        "height": 952,
+        "sourceWidth": 1284,
+        "sourceHeight": 952
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_4019-1.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_4019.jpeg",
@@ -1062,16 +1230,78 @@
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_4020-1.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.308Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:13:29.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.308Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1513": {
     "productId": 1513,
     "productName": "2011 Ford F-250 Super Duty (2011-2016 F250/350 long bed)",
-    "localFile": "/product-media/placeholders/aftermarket.svg",
+    "localFile": "/product-media/edmunds/1513/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1513/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3331.jpeg",
+        "sha256": "8dc51b70de8e24451fafbd8e8afd3a67cf9abbb0949e4071671aefd9de1af2cf",
+        "bytes": 129624,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1513/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3328.jpeg",
+        "sha256": "a4ca31eacac55aae141a6acf045d12b178d65a97187d9fd9151c9dee6a10ca0a",
+        "bytes": 107654,
+        "width": 960,
+        "height": 720,
+        "sourceWidth": 960,
+        "sourceHeight": 720
+      },
+      {
+        "localFile": "/product-media/edmunds/1513/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3330.jpeg",
+        "sha256": "a56945c747cd4c90b372f618cd5e3e405ee6cadde8dc2d33636b4121fb40ac9a",
+        "bytes": 200326,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1513/4.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3329.jpeg",
+        "sha256": "f0914fe20aef86c0978a4d2307319df02e359f793a93491843e90f956e7f20bd",
+        "bytes": 237098,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1513/5.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3332.jpeg",
+        "sha256": "f0573641194003f4432be9a76869e10bcb9fabd8515552d14661d157a18760d8",
+        "bytes": 133508,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3331.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3328.jpeg",
@@ -1080,16 +1310,78 @@
       "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_3332.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.308Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:14:55.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.308Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1514": {
     "productId": 1514,
     "productName": "2011-2016 Ford F-350 Super Duty Pickup Short Bed",
-    "localFile": "/product-media/placeholders/aftermarket.svg",
+    "localFile": "/product-media/edmunds/1514/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1514/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0961.jpeg",
+        "sha256": "b9f1d9f1044b5a3710a9535f0c1712c8d6bf47940ce0a7d3d1e4b532bddab2b0",
+        "bytes": 103588,
+        "width": 960,
+        "height": 721,
+        "sourceWidth": 960,
+        "sourceHeight": 721
+      },
+      {
+        "localFile": "/product-media/edmunds/1514/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0962.jpeg",
+        "sha256": "ff95d496ffb985b0d343a0fd56c2ab0cc6e5c7ab9d7a59478b5c46b2271065fe",
+        "bytes": 86242,
+        "width": 960,
+        "height": 712,
+        "sourceWidth": 960,
+        "sourceHeight": 712
+      },
+      {
+        "localFile": "/product-media/edmunds/1514/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0963.jpeg",
+        "sha256": "a858bb62fde995ff35af612353f69b9c76974ed5a8cc72ed2f35877cce695361",
+        "bytes": 162398,
+        "width": 1284,
+        "height": 952,
+        "sourceWidth": 1284,
+        "sourceHeight": 952
+      },
+      {
+        "localFile": "/product-media/edmunds/1514/4.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0966.jpeg",
+        "sha256": "e1861106ab1aff5371170cd8403233a32be368b68cbc94856716a38f775a11e6",
+        "bytes": 217102,
+        "width": 1284,
+        "height": 953,
+        "sourceWidth": 1284,
+        "sourceHeight": 953
+      },
+      {
+        "localFile": "/product-media/edmunds/1514/5.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0964.jpeg",
+        "sha256": "a6b15e3ff2e295cc5ad43776ded502cbc04b238af369f6389797596e8f3ae698",
+        "bytes": 181250,
+        "width": 1284,
+        "height": 960,
+        "sourceWidth": 1284,
+        "sourceHeight": 960
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0961.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0962.jpeg",
@@ -1098,16 +1390,78 @@
       "https://edmundstruckparts.com/wp-content/uploads/2025/12/IMG_0964.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.308Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:16:02.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.308Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1515": {
     "productId": 1515,
     "productName": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 1)",
-    "localFile": "/product-media/placeholders/body-parts.svg",
+    "localFile": "/product-media/edmunds/1515/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1515/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3315.jpeg",
+        "sha256": "f8f36c73332e198fe782eae27631e18ab5dce51d8ba67aec840c4a60ba7793c2",
+        "bytes": 194714,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1515/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3311.jpeg",
+        "sha256": "117fa04e9ce6b2d454ba34bc418413224e093fa5eef26e6ef6e825e1bb60d5bb",
+        "bytes": 251550,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1515/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3312.jpeg",
+        "sha256": "fe3e2bd307e32fc100ffccec23c0f0074dce2c47edef37b8d870b0268b2c640e",
+        "bytes": 275342,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1515/4.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3313.jpeg",
+        "sha256": "223876ab295bae2db1226e9f4bb597d329485ef007064c5735fdf25b8eb8ee4b",
+        "bytes": 175112,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1515/5.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3316.jpeg",
+        "sha256": "8f18481dd9a1612a7965cce9dd1dac45b7a747d17d28ffb944324fb07890e086",
+        "bytes": 207100,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3315.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3311.jpeg",
@@ -1116,16 +1470,88 @@
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3316.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.309Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:18:37.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.309Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1516": {
     "productId": 1516,
     "productName": "2011-2016 Ford F250 Super Duty 8ft Truck Bed (Unit 2)",
-    "localFile": "/product-media/placeholders/body-parts.svg",
+    "localFile": "/product-media/edmunds/1516/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1516/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3324.jpeg",
+        "sha256": "0e019f86eab8ce510b2155468c8c655cc32fb60c2bb992100eaa3bafae5de0d4",
+        "bytes": 188558,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1516/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3319.jpeg",
+        "sha256": "5c97912a94c150ca3b6aaa4dd48f89ffa51b11c6b93c467e1c68e563f1cb49c9",
+        "bytes": 288512,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1516/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3320.jpeg",
+        "sha256": "ff636ad6eb40254fc40cca76e0ec53b49e86b48dd522b8ac1deab473d2965ddf",
+        "bytes": 300150,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1516/4.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3321.jpeg",
+        "sha256": "465c3ceeeb68219cd6b8da13505c94c9d57a68d43ad076b154a14224e63297fa",
+        "bytes": 258716,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1516/5.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3322.jpeg",
+        "sha256": "104589e85c059c18da5461e5c78d8d1057bf3c77aa620854277599043ee4607f",
+        "bytes": 189198,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1516/6.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3323.jpeg",
+        "sha256": "2a488b43c2b65c1dc57dd42fbf2b9d9ab4cf93b30e9ab58a1458b1bb00b966ec",
+        "bytes": 211052,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3324.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3319.jpeg",
@@ -1135,16 +1561,78 @@
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3323.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.309Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:19:56.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.309Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1517": {
     "productId": 1517,
     "productName": "2011-2016 Ford Superduty 8ft truck bed",
-    "localFile": "/product-media/placeholders/body-parts.svg",
+    "localFile": "/product-media/edmunds/1517/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/edmunds/1517/1.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3329.jpeg",
+        "sha256": "f0914fe20aef86c0978a4d2307319df02e359f793a93491843e90f956e7f20bd",
+        "bytes": 237098,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1517/2.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3328.jpeg",
+        "sha256": "a4ca31eacac55aae141a6acf045d12b178d65a97187d9fd9151c9dee6a10ca0a",
+        "bytes": 107654,
+        "width": 960,
+        "height": 720,
+        "sourceWidth": 960,
+        "sourceHeight": 720
+      },
+      {
+        "localFile": "/product-media/edmunds/1517/3.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3330.jpeg",
+        "sha256": "a56945c747cd4c90b372f618cd5e3e405ee6cadde8dc2d33636b4121fb40ac9a",
+        "bytes": 200326,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1517/4.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3331.jpeg",
+        "sha256": "8dc51b70de8e24451fafbd8e8afd3a67cf9abbb0949e4071671aefd9de1af2cf",
+        "bytes": 129624,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      },
+      {
+        "localFile": "/product-media/edmunds/1517/5.webp",
+        "sourceUrl": "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3332.jpeg",
+        "sha256": "f0573641194003f4432be9a76869e10bcb9fabd8515552d14661d157a18760d8",
+        "bytes": 133508,
+        "width": 1400,
+        "height": 1050,
+        "sourceWidth": 2048,
+        "sourceHeight": 1536
+      }
+    ],
     "sourceUrl": [
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3329.jpeg",
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3328.jpeg",
@@ -1153,11 +1641,21 @@
       "https://edmundstruckparts.com/wp-content/uploads/2026/01/IMG_3332.jpeg"
     ],
     "sourceName": "edmundstruckparts.com",
-    "usageBasis": "none established — competitor photography removed, not licensed",
+    "landingPage": "",
+    "creator": "Edmunds Truck Parts",
+    "creatorUrl": "https://edmundstruckparts.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
     "attributionRequired": false,
-    "action": "hotlinks replaced with category placeholder",
-    "recordedAt": "2026-08-31T11:44:07.309Z",
-    "verified": "verified: file present, HTTP 200, renders"
+    "usageBasis": "site owner's own photography on their affiliated site edmundstruckparts.com, restored on their explicit instruction and asserted ownership; the owner states some images may have originated elsewhere before being published there, which this repository cannot itself verify",
+    "matchedTokens": [],
+    "query": "restored from the source URLs this manifest recorded when the hotlinks were removed",
+    "downloadedAt": "2026-09-02T12:21:21.000Z",
+    "status": "restored",
+    "priorAction": "hotlinks replaced with category placeholder",
+    "priorRecordedAt": "2026-08-31T11:44:07.309Z",
+    "verified": "verified: all files present, HTTP 200 as image/webp, product page renders the full gallery"
   },
   "product-1518": {
     "productId": 1518,
