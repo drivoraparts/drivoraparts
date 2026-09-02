@@ -327,7 +327,9 @@
         "width": 1284,
         "height": 940,
         "sourceWidth": 1284,
-        "sourceHeight": 940
+        "sourceHeight": 940,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1500/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1500/4.webp",
@@ -775,7 +777,9 @@
         "width": 960,
         "height": 717,
         "sourceWidth": 960,
-        "sourceHeight": 717
+        "sourceHeight": 717,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1506/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1506/3.webp",
@@ -1200,7 +1204,9 @@
         "width": 1284,
         "height": 955,
         "sourceWidth": 1284,
-        "sourceHeight": 955
+        "sourceHeight": 955,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1512/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1512/3.webp",
@@ -1710,7 +1716,9 @@
         "width": 1400,
         "height": 1050,
         "sourceWidth": 1800,
-        "sourceHeight": 1350
+        "sourceHeight": 1350,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1518/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1518/6.webp",
@@ -2182,7 +2190,9 @@
         "width": 1284,
         "height": 946,
         "sourceWidth": 1284,
-        "sourceHeight": 946
+        "sourceHeight": 946,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1527/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1527/3.webp",
@@ -2353,7 +2363,9 @@
         "width": 960,
         "height": 720,
         "sourceWidth": 960,
-        "sourceHeight": 720
+        "sourceHeight": 720,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1529/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1529/3.webp",
@@ -2444,7 +2456,9 @@
         "width": 1284,
         "height": 1690,
         "sourceWidth": 1284,
-        "sourceHeight": 1690
+        "sourceHeight": 1690,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1530/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1530/3.webp",
@@ -2474,7 +2488,9 @@
         "width": 1284,
         "height": 1690,
         "sourceWidth": 1284,
-        "sourceHeight": 1690
+        "sourceHeight": 1690,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1530/1.webp"
       }
     ],
     "sourceUrl": [
@@ -2683,7 +2699,9 @@
         "width": 1400,
         "height": 1050,
         "sourceWidth": 2048,
-        "sourceHeight": 1536
+        "sourceHeight": 1536,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1534/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1534/4.webp",
@@ -2774,7 +2792,9 @@
         "width": 807,
         "height": 975,
         "sourceWidth": 807,
-        "sourceHeight": 975
+        "sourceHeight": 975,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1535/1.webp"
       },
       {
         "localFile": "/product-media/edmunds/1535/4.webp",
@@ -2943,7 +2963,9 @@
         "width": 1284,
         "height": 947,
         "sourceWidth": 1284,
-        "sourceHeight": 947
+        "sourceHeight": 947,
+        "unreferenced": true,
+        "duplicateOf": "/product-media/edmunds/1537/1.webp"
       }
     ],
     "sourceUrl": [
