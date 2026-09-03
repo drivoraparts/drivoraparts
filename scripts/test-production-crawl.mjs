@@ -156,7 +156,16 @@ async function main() {
   const results = [];
   const record = (r, family, label, extra = {}) => {
     const ins = inspect(r, family, extra.expect ?? 200);
-    results.push({ label, family, url: r.url, status: r.status, ms: r.ms, bytes: r.bytes, error: r.error, headers: r.headers, ins, ...extra });
+    results.push({
+      label, family, url: r.url, finalUrl: r.finalUrl ?? r.url, redirected: r.redirected ?? false,
+      status: r.status, ms: r.ms, bytes: r.bytes, error: r.error,
+      contentType: r.headers?.["content-type"] ?? null,
+      cacheControl: r.headers?.["cache-control"] ?? null,
+      cfCacheStatus: r.headers?.["cf-cache-status"] ?? null,
+      age: r.headers?.age ?? null,
+      vary: r.headers?.vary ?? null,
+      headers: r.headers, ins, ...extra,
+    });
     return ins;
   };
 
