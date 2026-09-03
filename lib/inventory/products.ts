@@ -5035,8 +5035,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/engine/hpop-seal-kit-obs/1.webp",
-    images: ["/product-media/engine/hpop-seal-kit-obs/1.webp"],
+    thumbnail: "/product-media/engine/hpop-seal-kit-obs-3c3z-9g804-aa/1.webp",
+    images: ["/product-media/engine/hpop-seal-kit-obs-3c3z-9g804-aa/1.webp"],
     description: `Seal kit for the 7.3L Power Stroke high-pressure oil pump.
 
 A leaking HPOP is not always a failed HPOP. These pumps commonly weep from their seals while the pump itself is still serviceable, and a seal kit costs a fraction of a replacement pump.

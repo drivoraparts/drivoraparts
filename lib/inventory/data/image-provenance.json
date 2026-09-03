@@ -3955,10 +3955,10 @@
   "product-2135": {
     "productId": 2135,
     "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS HPOP Seal Kit",
-    "localFile": "/product-media/engine/hpop-seal-kit-obs/1.webp",
+    "localFile": "/product-media/engine/hpop-seal-kit-obs-3c3z-9g804-aa/1.webp",
     "localFiles": [
       {
-        "localFile": "/product-media/engine/hpop-seal-kit-obs/1.webp",
+        "localFile": "/product-media/engine/hpop-seal-kit-obs-3c3z-9g804-aa/1.webp",
         "sourceFile": "s-l400.jpg",
         "sha256": "ae30c04f92faaa9f3095365c053c79dc0f24d914b669570e51d1d0f5dfe3e618",
         "bytes": 22928,
@@ -3975,8 +3975,9 @@
     "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
     "addedAt": "2026-09-03T09:39:58.633Z",
     "status": "supplied-by-owner",
-    "verified": "viewed before it was accepted and shows the part the listing describes. The Ford bag photographed reads 3C3Z-9G804-AA, which disagreed with the 2C3Z-9G804-AA this listing carried. The owner confirmed the bag is correct, and the listing was corrected to 3C3Z-9G804-AA on 2026-09-03. The directory name, hpop-seal-kit-obs, deliberately carries no part number and was left as it is.",
-    "partNumberResolvedAt": "2026-09-03T10:47:53.946Z"
+    "verified": "viewed before it was accepted and shows the part the listing describes. The Ford bag photographed reads 3C3Z-9G804-AA, which disagreed with the 2C3Z-9G804-AA this listing carried. The owner confirmed the bag is correct, and the listing was corrected to 3C3Z-9G804-AA on 2026-09-03. The directory was originally named hpop-seal-kit-obs, without a part number, because the number was in doubt. With the number settled it was renamed to hpop-seal-kit-obs-3c3z-9g804-aa, matching the convention its siblings follow. The file itself is unchanged: same bytes, same sha256.",
+    "partNumberResolvedAt": "2026-09-03T10:47:53.946Z",
+    "renamedAt": "2026-09-03T11:03:36.625Z"
   },
   "product-2138": {
     "productId": 2138,
