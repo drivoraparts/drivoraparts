@@ -1,9 +1,9 @@
 import type { Product } from "./types";
 
-function media(slug: string, count: number) {
+function media(slug: string, count: number, ext: string = "jpg") {
   const files = Array.from(
     { length: count },
-    (_, index) => `/product-media/bodyparts/${slug}/${index + 1}.jpg`
+    (_, index) => `/product-media/bodyparts/${slug}/${index + 1}.${ext}`
   );
   return { thumbnail: files[0], images: files };
 }
@@ -275,7 +275,7 @@ export const bodyPartsProducts: Product[] = [
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "2015–2021 Subaru WRX STI (VA)",
-    ...media("subaru-wrx-sti", 7),
+    ...media("subaru-wrx-sti", 7, "webp"),
     description: bodyPartDescription(
       "Subaru WRX STI Widebody Aero Kit",
       "2015–2021 Subaru WRX STI (VA)",

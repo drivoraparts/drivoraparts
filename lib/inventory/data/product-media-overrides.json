@@ -70,7 +70,7 @@
     "images": [
       "/product-media/engine/bmw/n54/3.webp",
       "/product-media/engine/bmw/n54/1.jpeg",
-      "/product-media/engine/bmw/n54/2.webp"
+      "/product-media/engine/bmw/n54/2.jpg"
     ]
   },
   "33": {
@@ -96,9 +96,9 @@
     ]
   },
   "37": {
-    "thumbnail": "/product-media/engine/bmw/n55/2.webp",
+    "thumbnail": "/product-media/engine/bmw/n55/2.jpg",
     "images": [
-      "/product-media/engine/bmw/n55/2.webp",
+      "/product-media/engine/bmw/n55/2.jpg",
       "/product-media/engine/bmw/n55/1.jpeg"
     ]
   },
@@ -263,13 +263,13 @@
     ]
   },
   "80": {
-    "thumbnail": "/product-media/transmission/audi-dq500-dsg/2.jpg",
+    "thumbnail": "/product-media/transmission/audi-dq500-dsg/2.webp",
     "images": [
-      "/product-media/transmission/audi-dq500-dsg/2.jpg",
+      "/product-media/transmission/audi-dq500-dsg/2.webp",
       "/product-media/transmission/audi-dq500-dsg/1.jpg",
-      "/product-media/transmission/audi-dq500-dsg/3.jpg",
+      "/product-media/transmission/audi-dq500-dsg/3.webp",
       "/product-media/transmission/audi-dq500-dsg/4.jpg",
-      "/product-media/transmission/audi-dq500-dsg/5.jpg",
+      "/product-media/transmission/audi-dq500-dsg/5.webp",
       "/product-media/transmission/audi-dq500-dsg/6.jpg"
     ]
   },
@@ -291,30 +291,30 @@
     ]
   },
   "87": {
-    "thumbnail": "/product-media/transmission/nissan-cd009-6-speed/1.jpg",
+    "thumbnail": "/product-media/transmission/nissan-cd009-6-speed/1.webp",
     "images": [
-      "/product-media/transmission/nissan-cd009-6-speed/1.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/2.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/3.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/4.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/5.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/6.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/7.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/8.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/9.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/10.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/11.jpg",
-      "/product-media/transmission/nissan-cd009-6-speed/12.jpg"
+      "/product-media/transmission/nissan-cd009-6-speed/1.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/2.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/3.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/4.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/5.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/6.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/7.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/8.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/9.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/10.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/11.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/12.webp"
     ]
   },
   "88": {
-    "thumbnail": "/product-media/transmission/toyota-r154/4.jpg",
+    "thumbnail": "/product-media/transmission/toyota-r154/4.webp",
     "images": [
-      "/product-media/transmission/toyota-r154/4.jpg",
+      "/product-media/transmission/toyota-r154/4.webp",
       "/product-media/transmission/toyota-r154/1.jpg",
       "/product-media/transmission/toyota-r154/2.jpg",
       "/product-media/transmission/toyota-r154/3.jpg",
-      "/product-media/transmission/toyota-r154/5.jpg",
+      "/product-media/transmission/toyota-r154/5.webp",
       "/product-media/transmission/toyota-r154/6.jpg",
       "/product-media/transmission/toyota-r154/7.jpg"
     ]
@@ -1445,13 +1445,13 @@
     ]
   },
   "1601": {
-    "thumbnail": "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/3.avif",
     "images": [
-      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/3.jpg",
+      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/3.avif",
       "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/2.jpg",
-      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/4.jpg",
-      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/5.jpg",
-      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/6.jpg"
+      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/4.avif",
+      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/5.avif",
+      "/product-media/wheels-tires/APEX-ARC-8-17x8-ET25-4x100-Wheel/6.avif"
     ]
   },
   "1602": {
@@ -1461,11 +1461,11 @@
     ]
   },
   "1603": {
-    "thumbnail": "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.png",
+    "thumbnail": "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.avif",
     "images": [
-      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.png",
+      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.avif",
       "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/2.jpg",
-      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/6.png"
+      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/6.avif"
     ]
   },
   "1604": {
@@ -1512,19 +1512,19 @@
     ]
   },
   "1611": {
-    "thumbnail": "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089892/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089892/3.avif",
     "images": [
-      "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089892/3.jpg",
+      "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089892/3.avif",
       "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089892/2.jpg",
       "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089892/4.jpg"
     ]
   },
   "1612": {
-    "thumbnail": "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089894/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089894/3.avif",
     "images": [
-      "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089894/3.jpg",
+      "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089894/3.avif",
       "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089894/2.jpg",
-      "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089894/4.jpg"
+      "/product-media/wheels-tires/BMW-5x112-19x8-ET27-Wheel-36118089894/4.avif"
     ]
   },
   "1613": {
@@ -1540,19 +1540,19 @@
     ]
   },
   "1615": {
-    "thumbnail": "/product-media/wheels-tires/BMW-5x112-19x85-ET40-Wheel-36118089895/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BMW-5x112-19x85-ET40-Wheel-36118089895/3.avif",
     "images": [
-      "/product-media/wheels-tires/BMW-5x112-19x85-ET40-Wheel-36118089895/3.jpg",
+      "/product-media/wheels-tires/BMW-5x112-19x85-ET40-Wheel-36118089895/3.avif",
       "/product-media/wheels-tires/BMW-5x112-19x85-ET40-Wheel-36118089895/2.jpg",
-      "/product-media/wheels-tires/BMW-5x112-19x85-ET40-Wheel-36118089895/4.jpg"
+      "/product-media/wheels-tires/BMW-5x112-19x85-ET40-Wheel-36118089895/4.avif"
     ]
   },
   "1616": {
-    "thumbnail": "/product-media/wheels-tires/BMW-Motorsport-Roundel-50-Year-Wheel-Center-Cap-36135A37E40/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BMW-Motorsport-Roundel-50-Year-Wheel-Center-Cap-36135A37E40/4.avif",
     "images": [
-      "/product-media/wheels-tires/BMW-Motorsport-Roundel-50-Year-Wheel-Center-Cap-36135A37E40/4.jpg",
+      "/product-media/wheels-tires/BMW-Motorsport-Roundel-50-Year-Wheel-Center-Cap-36135A37E40/4.avif",
       "/product-media/wheels-tires/BMW-Motorsport-Roundel-50-Year-Wheel-Center-Cap-36135A37E40/2.jpg",
-      "/product-media/wheels-tires/BMW-Motorsport-Roundel-50-Year-Wheel-Center-Cap-36135A37E40/6.jpg"
+      "/product-media/wheels-tires/BMW-Motorsport-Roundel-50-Year-Wheel-Center-Cap-36135A37E40/6.avif"
     ]
   },
   "1617": {
@@ -1615,9 +1615,9 @@
     ]
   },
   "1625": {
-    "thumbnail": "/product-media/wheels-tires/BMW-Wheel-Emblem/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BMW-Wheel-Emblem/4.avif",
     "images": [
-      "/product-media/wheels-tires/BMW-Wheel-Emblem/4.jpg",
+      "/product-media/wheels-tires/BMW-Wheel-Emblem/4.avif",
       "/product-media/wheels-tires/BMW-Wheel-Emblem/2.jpg"
     ]
   },
@@ -1647,12 +1647,12 @@
     ]
   },
   "1630": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/3.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/3.avif",
       "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/2.jpg",
       "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/4.jpg",
-      "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-17x95-TA5R-Wheel-Set-E36-E46/6.avif"
     ]
   },
   "1631": {
@@ -1688,59 +1688,55 @@
     ]
   },
   "1635": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-5-Lug-Wheel-Stud-Package/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-5-Lug-Wheel-Stud-Package/2.jpg",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-Black-5-Lug-Wheel-Stud-Package/3.jpg",
       "/product-media/wheels-tires/BimmerWorld-Black-5-Lug-Wheel-Stud-Package/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-Black-5-Lug-Wheel-Stud-Package/5.jpg"
+      "/product-media/wheels-tires/BimmerWorld-Black-5-Lug-Wheel-Stud-Package/5.avif"
     ]
   },
   "1636": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-4-Lug-Wheel-Stud-Package/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-4-Lug-Wheel-Stud-Package/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-4-Lug-Wheel-Stud-Package/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-4-Lug-Wheel-Stud-Package/4.avif",
       "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-4-Lug-Wheel-Stud-Package/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-4-Lug-Wheel-Stud-Package/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-4-Lug-Wheel-Stud-Package/6.avif"
     ]
   },
   "1637": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.webp",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.webp",
       "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-5-Lug-Wheel-Stud-Package/2.jpg",
       "/product-media/wheels-tires/BimmerWorld-Black-82mm-Race-Premium-5-Lug-Wheel-Stud-Package/6.jpg"
     ]
   },
   "1638": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-92mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Black-92mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.webp",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-Black-92mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-Black-92mm-Race-Premium-5-Lug-Wheel-Stud-Package/4.webp",
       "/product-media/wheels-tires/BimmerWorld-Black-92mm-Race-Premium-5-Lug-Wheel-Stud-Package/2.jpg",
       "/product-media/wheels-tires/BimmerWorld-Black-92mm-Race-Premium-5-Lug-Wheel-Stud-Package/6.jpg"
     ]
   },
   "1639": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-M14-Black-75mm-Wheel-Stud-Package/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-M14-Black-75mm-Wheel-Stud-Package/2.jpg",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-M14-Black-75mm-Wheel-Stud-Package/3.jpg",
       "/product-media/wheels-tires/BimmerWorld-M14-Black-75mm-Wheel-Stud-Package/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-M14-Black-75mm-Wheel-Stud-Package/5.jpg"
+      "/product-media/wheels-tires/BimmerWorld-M14-Black-75mm-Wheel-Stud-Package/5.avif"
     ]
   },
   "1640": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-M14-Black-82mm-Wheel-Stud-Packag/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-M14-Black-82mm-Wheel-Stud-Packag/2.jpg",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-M14-Black-82mm-Wheel-Stud-Packag/3.jpg",
       "/product-media/wheels-tires/BimmerWorld-M14-Black-82mm-Wheel-Stud-Packag/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-M14-Black-82mm-Wheel-Stud-Packag/5.jpg"
+      "/product-media/wheels-tires/BimmerWorld-M14-Black-82mm-Wheel-Stud-Packag/5.avif"
     ]
   },
   "1641": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-M14-Black-90mm-Wheel-Stud-Package/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-M14-Black-90mm-Wheel-Stud-Package/2.jpg",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-M14-Black-90mm-Wheel-Stud-Package/3.jpg",
       "/product-media/wheels-tires/BimmerWorld-M14-Black-90mm-Wheel-Stud-Package/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-M14-Black-90mm-Wheel-Stud-Package/5.jpg"
+      "/product-media/wheels-tires/BimmerWorld-M14-Black-90mm-Wheel-Stud-Package/5.avif"
     ]
   },
   "1642": {
@@ -1800,19 +1796,19 @@
     ]
   },
   "1649": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.avif",
       "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/6.avif"
     ]
   },
   "1650": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.avif",
       "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/6.avif"
     ]
   },
   "1651": {
@@ -1824,9 +1820,9 @@
     ]
   },
   "1652": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-17x9-Wheel-Set-E36-E46-F3X-E60-Z3-Z4/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-17x9-Wheel-Set-E36-E46-F3X-E60-Z3-Z4/3.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA8S-17x9-Wheel-Set-E36-E46-F3X-E60-Z3-Z4/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-17x9-Wheel-Set-E36-E46-F3X-E60-Z3-Z4/3.avif",
       "/product-media/wheels-tires/BimmerWorld-TA8S-17x9-Wheel-Set-E36-E46-F3X-E60-Z3-Z4/2.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-17x9-Wheel-Set-E36-E46-F3X-E60-Z3-Z4/4.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-17x9-Wheel-Set-E36-E46-F3X-E60-Z3-Z4/6.jpg"
@@ -1841,56 +1837,56 @@
     ]
   },
   "1654": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET25-5120-Wheel-Set-1M-M3-M4/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET25-5120-Wheel-Set-1M-M3-M4/3.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET25-5120-Wheel-Set-1M-M3-M4/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET25-5120-Wheel-Set-1M-M3-M4/3.avif",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET25-5120-Wheel-Set-1M-M3-M4/2.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET25-5120-Wheel-Set-1M-M3-M4/4.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET25-5120-Wheel-Set-1M-M3-M4/6.jpg"
     ]
   },
   "1655": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/3.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/3.avif",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/4.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/4.avif",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x10-ET33-5120-Wheel-Set-M2-M3-M4/6.avif"
     ]
   },
   "1656": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/3.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/3.avif",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/4.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/4.avif",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-E46-M3/6.avif"
     ]
   },
   "1657": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-F8X-M2-M3-M4/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-F8X-M2-M3-M4/3.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-F8X-M2-M3-M4/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-F8X-M2-M3-M4/3.avif",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-F8X-M2-M3-M4/2.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-F8X-M2-M3-M4/4.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-105-Staggered-Wheel-Set-F8X-M2-M3-M4/6.jpg"
     ]
   },
   "1658": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-ET35-Wheel-Set-E46-M3/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-ET35-Wheel-Set-E46-M3/3.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-ET35-Wheel-Set-E46-M3/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-ET35-Wheel-Set-E46-M3/3.avif",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-ET35-Wheel-Set-E46-M3/2.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-ET35-Wheel-Set-E46-M3/4.jpg",
       "/product-media/wheels-tires/BimmerWorld-TA8S-18x95-ET35-Wheel-Set-E46-M3/6.jpg"
     ]
   },
   "1659": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-Forged-Race-Wheel_3/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-Forged-Race-Wheel_3/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TEAL-Forged-Race-Wheel_3/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-Forged-Race-Wheel_3/4.avif",
       "/product-media/wheels-tires/BimmerWorld-TEAL-Forged-Race-Wheel_3/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-Forged-Race-Wheel_3/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TEAL-Forged-Race-Wheel_3/6.avif"
     ]
   },
   "1660": {
@@ -1902,20 +1898,20 @@
     ]
   },
   "1661": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x85-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x85-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x85-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x85-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.avif",
       "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x85-Forged-Race-Wheel-Set-Gloss-Gunmetal/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x85-Forged-Race-Wheel-Set-Gloss-Gunmetal/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x85-Forged-Race-Wheel-Set-Gloss-Gunmetal/6.avif"
     ]
   },
   "1662": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/3.webp",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/3.webp",
       "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/4.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/4.avif",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-17x9-Forged-Race-Wheel-Set-Gloss-Black/6.avif"
     ]
   },
   "1663": {
@@ -1943,29 +1939,29 @@
     ]
   },
   "1666": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/3.webp",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/3.webp",
       "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/4.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/4.avif",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Black/6.avif"
     ]
   },
   "1667": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Gunmetal/4.avif",
       "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Gunmetal/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Gunmetal/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x10-Forged-Race-Wheel-Set-Gloss-Gunmetal/6.avif"
     ]
   },
   "1668": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/3.webp",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/3.webp",
       "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/4.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/4.avif",
+      "/product-media/wheels-tires/BimmerWorld-TEAL-TA16-18x95-Forged-Race-Wheel-Set-Gloss-Black/6.avif"
     ]
   },
   "1669": {
@@ -1985,16 +1981,16 @@
     ]
   },
   "1671": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Wheel-Spacer-Set/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-Wheel-Spacer-Set/3.webp",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-Wheel-Spacer-Set/3.jpg",
+      "/product-media/wheels-tires/BimmerWorld-Wheel-Spacer-Set/3.webp",
       "/product-media/wheels-tires/BimmerWorld-Wheel-Spacer-Set/2.jpg"
     ]
   },
   "1672": {
-    "thumbnail": "/product-media/wheels-tires/Black-Lug-Nut-M12-17mm/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/Black-Lug-Nut-M12-17mm/4.avif",
     "images": [
-      "/product-media/wheels-tires/Black-Lug-Nut-M12-17mm/4.jpg",
+      "/product-media/wheels-tires/Black-Lug-Nut-M12-17mm/4.avif",
       "/product-media/wheels-tires/Black-Lug-Nut-M12-17mm/2.jpg"
     ]
   },
@@ -2045,9 +2041,9 @@
     ]
   },
   "1679": {
-    "thumbnail": "/product-media/wheels-tires/Genuine-BMW-Compact-Spare-Wheel-G30-G01-G02-G11-G12/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/Genuine-BMW-Compact-Spare-Wheel-G30-G01-G02-G11-G12/3.avif",
     "images": [
-      "/product-media/wheels-tires/Genuine-BMW-Compact-Spare-Wheel-G30-G01-G02-G11-G12/3.jpg",
+      "/product-media/wheels-tires/Genuine-BMW-Compact-Spare-Wheel-G30-G01-G02-G11-G12/3.avif",
       "/product-media/wheels-tires/Genuine-BMW-Compact-Spare-Wheel-G30-G01-G02-G11-G12/2.jpg"
     ]
   },
@@ -2066,16 +2062,16 @@
     ]
   },
   "1682": {
-    "thumbnail": "/product-media/wheels-tires/HR-11mm-Wheel-Spacers-BMW-5x112-Wheels/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/HR-11mm-Wheel-Spacers-BMW-5x112-Wheels/4.avif",
     "images": [
-      "/product-media/wheels-tires/HR-11mm-Wheel-Spacers-BMW-5x112-Wheels/4.jpg",
+      "/product-media/wheels-tires/HR-11mm-Wheel-Spacers-BMW-5x112-Wheels/4.avif",
       "/product-media/wheels-tires/HR-11mm-Wheel-Spacers-BMW-5x112-Wheels/2.jpg"
     ]
   },
   "1683": {
-    "thumbnail": "/product-media/wheels-tires/HR-12mm-Wheel-Spacers-BMW-5x112-Wheels/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/HR-12mm-Wheel-Spacers-BMW-5x112-Wheels/4.avif",
     "images": [
-      "/product-media/wheels-tires/HR-12mm-Wheel-Spacers-BMW-5x112-Wheels/4.jpg",
+      "/product-media/wheels-tires/HR-12mm-Wheel-Spacers-BMW-5x112-Wheels/4.avif",
       "/product-media/wheels-tires/HR-12mm-Wheel-Spacers-BMW-5x112-Wheels/2.jpg"
     ]
   },
@@ -2086,9 +2082,9 @@
     ]
   },
   "1685": {
-    "thumbnail": "/product-media/wheels-tires/HR-15mm-Wheel-Spacers-BMW-5x112-Wheels/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/HR-15mm-Wheel-Spacers-BMW-5x112-Wheels/4.avif",
     "images": [
-      "/product-media/wheels-tires/HR-15mm-Wheel-Spacers-BMW-5x112-Wheels/4.jpg",
+      "/product-media/wheels-tires/HR-15mm-Wheel-Spacers-BMW-5x112-Wheels/4.avif",
       "/product-media/wheels-tires/HR-15mm-Wheel-Spacers-BMW-5x112-Wheels/2.jpg"
     ]
   },
@@ -2173,34 +2169,34 @@
     ]
   },
   "1698": {
-    "thumbnail": "/product-media/wheels-tires/Style-662M-Alloy-Wheel-20x8-ET30-Orbit-Grey-G30-5-Series/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/Style-662M-Alloy-Wheel-20x8-ET30-Orbit-Grey-G30-5-Series/3.webp",
     "images": [
-      "/product-media/wheels-tires/Style-662M-Alloy-Wheel-20x8-ET30-Orbit-Grey-G30-5-Series/3.jpg",
+      "/product-media/wheels-tires/Style-662M-Alloy-Wheel-20x8-ET30-Orbit-Grey-G30-5-Series/3.webp",
       "/product-media/wheels-tires/Style-662M-Alloy-Wheel-20x8-ET30-Orbit-Grey-G30-5-Series/2.jpg"
     ]
   },
   "1699": {
-    "thumbnail": "/product-media/wheels-tires/Style-668M-Alloy-Front-Wheel-20x8-ET30-Titanium-Matte-G30-5-Series/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/Style-668M-Alloy-Front-Wheel-20x8-ET30-Titanium-Matte-G30-5-Series/3.avif",
     "images": [
-      "/product-media/wheels-tires/Style-668M-Alloy-Front-Wheel-20x8-ET30-Titanium-Matte-G30-5-Series/3.jpg",
+      "/product-media/wheels-tires/Style-668M-Alloy-Front-Wheel-20x8-ET30-Titanium-Matte-G30-5-Series/3.avif",
       "/product-media/wheels-tires/Style-668M-Alloy-Front-Wheel-20x8-ET30-Titanium-Matte-G30-5-Series/2.jpg",
-      "/product-media/wheels-tires/Style-668M-Alloy-Front-Wheel-20x8-ET30-Titanium-Matte-G30-5-Series/4.jpg"
+      "/product-media/wheels-tires/Style-668M-Alloy-Front-Wheel-20x8-ET30-Titanium-Matte-G30-5-Series/4.avif"
     ]
   },
   "1700": {
-    "thumbnail": "/product-media/wheels-tires/Style-668M-Alloy-Rear-Wheel-20x9-ET44-Titanium-Matte-G30-5-Series/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/Style-668M-Alloy-Rear-Wheel-20x9-ET44-Titanium-Matte-G30-5-Series/3.avif",
     "images": [
-      "/product-media/wheels-tires/Style-668M-Alloy-Rear-Wheel-20x9-ET44-Titanium-Matte-G30-5-Series/3.jpg",
+      "/product-media/wheels-tires/Style-668M-Alloy-Rear-Wheel-20x9-ET44-Titanium-Matte-G30-5-Series/3.avif",
       "/product-media/wheels-tires/Style-668M-Alloy-Rear-Wheel-20x9-ET44-Titanium-Matte-G30-5-Series/2.jpg",
-      "/product-media/wheels-tires/Style-668M-Alloy-Rear-Wheel-20x9-ET44-Titanium-Matte-G30-5-Series/4.jpg"
+      "/product-media/wheels-tires/Style-668M-Alloy-Rear-Wheel-20x9-ET44-Titanium-Matte-G30-5-Series/4.avif"
     ]
   },
   "1701": {
-    "thumbnail": "/product-media/wheels-tires/Style-718M-Alloy-Wheel-21x85-ET30-Black-Polished-G01-X3-G02-X4/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/Style-718M-Alloy-Wheel-21x85-ET30-Black-Polished-G01-X3-G02-X4/3.avif",
     "images": [
-      "/product-media/wheels-tires/Style-718M-Alloy-Wheel-21x85-ET30-Black-Polished-G01-X3-G02-X4/3.jpg",
+      "/product-media/wheels-tires/Style-718M-Alloy-Wheel-21x85-ET30-Black-Polished-G01-X3-G02-X4/3.avif",
       "/product-media/wheels-tires/Style-718M-Alloy-Wheel-21x85-ET30-Black-Polished-G01-X3-G02-X4/2.jpg",
-      "/product-media/wheels-tires/Style-718M-Alloy-Wheel-21x85-ET30-Black-Polished-G01-X3-G02-X4/4.jpg"
+      "/product-media/wheels-tires/Style-718M-Alloy-Wheel-21x85-ET30-Black-Polished-G01-X3-G02-X4/4.avif"
     ]
   },
   "1702": {
@@ -2250,18 +2246,18 @@
     ]
   },
   "1708": {
-    "thumbnail": "/product-media/wheels-tires/Titan-TS5-19-Forged-Wheel-Set-F87-M2-Competition/3.jpg",
+    "thumbnail": "/product-media/wheels-tires/Titan-TS5-19-Forged-Wheel-Set-F87-M2-Competition/3.webp",
     "images": [
-      "/product-media/wheels-tires/Titan-TS5-19-Forged-Wheel-Set-F87-M2-Competition/3.jpg",
+      "/product-media/wheels-tires/Titan-TS5-19-Forged-Wheel-Set-F87-M2-Competition/3.webp",
       "/product-media/wheels-tires/Titan-TS5-19-Forged-Wheel-Set-F87-M2-Competition/2.jpg",
       "/product-media/wheels-tires/Titan-TS5-19-Forged-Wheel-Set-F87-M2-Competition/4.jpg",
       "/product-media/wheels-tires/Titan-TS5-19-Forged-Wheel-Set-F87-M2-Competition/6.jpg"
     ]
   },
   "1709": {
-    "thumbnail": "/product-media/wheels-tires/Titan-TS5-20x11-ET44-Forged-Wheel/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/Titan-TS5-20x11-ET44-Forged-Wheel/4.webp",
     "images": [
-      "/product-media/wheels-tires/Titan-TS5-20x11-ET44-Forged-Wheel/4.jpg",
+      "/product-media/wheels-tires/Titan-TS5-20x11-ET44-Forged-Wheel/4.webp",
       "/product-media/wheels-tires/Titan-TS5-20x11-ET44-Forged-Wheel/2.jpg",
       "/product-media/wheels-tires/Titan-TS5-20x11-ET44-Forged-Wheel/6.jpg"
     ]
@@ -2290,9 +2286,9 @@
     ]
   },
   "1713": {
-    "thumbnail": "/product-media/wheels-tires/Titan7-T-P10-20in-Forged-Wheel-Set-G8X-M2-M3-M4/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/Titan7-T-P10-20in-Forged-Wheel-Set-G8X-M2-M3-M4/4.avif",
     "images": [
-      "/product-media/wheels-tires/Titan7-T-P10-20in-Forged-Wheel-Set-G8X-M2-M3-M4/4.jpg",
+      "/product-media/wheels-tires/Titan7-T-P10-20in-Forged-Wheel-Set-G8X-M2-M3-M4/4.avif",
       "/product-media/wheels-tires/Titan7-T-P10-20in-Forged-Wheel-Set-G8X-M2-M3-M4/2.jpg"
     ]
   },
@@ -2321,17 +2317,17 @@
     ]
   },
   "1717": {
-    "thumbnail": "/product-media/wheels-tires/Titan7-TS5-19x105-ET44-Forged-Wheel/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/Titan7-TS5-19x105-ET44-Forged-Wheel/4.webp",
     "images": [
-      "/product-media/wheels-tires/Titan7-TS5-19x105-ET44-Forged-Wheel/4.jpg",
+      "/product-media/wheels-tires/Titan7-TS5-19x105-ET44-Forged-Wheel/4.webp",
       "/product-media/wheels-tires/Titan7-TS5-19x105-ET44-Forged-Wheel/2.jpg",
       "/product-media/wheels-tires/Titan7-TS5-19x105-ET44-Forged-Wheel/6.jpg"
     ]
   },
   "1718": {
-    "thumbnail": "/product-media/wheels-tires/Titan7-TS5-19x95-ET27-Forged-Wheel/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/Titan7-TS5-19x95-ET27-Forged-Wheel/4.webp",
     "images": [
-      "/product-media/wheels-tires/Titan7-TS5-19x95-ET27-Forged-Wheel/4.jpg",
+      "/product-media/wheels-tires/Titan7-TS5-19x95-ET27-Forged-Wheel/4.webp",
       "/product-media/wheels-tires/Titan7-TS5-19x95-ET27-Forged-Wheel/2.jpg",
       "/product-media/wheels-tires/Titan7-TS5-19x95-ET27-Forged-Wheel/6.jpg"
     ]
@@ -2379,11 +2375,11 @@
     ]
   },
   "1725": {
-    "thumbnail": "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.png",
+    "thumbnail": "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.avif",
     "images": [
-      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.png",
+      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/4.avif",
       "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/2.jpg",
-      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/6.png"
+      "/product-media/wheels-tires/APEX-SM10-Flow-Formed-Wheel-5x112-19/6.avif"
     ]
   },
   "1726": {
@@ -2395,19 +2391,19 @@
     ]
   },
   "1727": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/4.avif",
       "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TA5R-17-Flow-Form-Wheel/6.avif"
     ]
   },
   "1728": {
-    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.jpg",
+    "thumbnail": "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.avif",
     "images": [
-      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.jpg",
+      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/4.avif",
       "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/2.jpg",
-      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/6.jpg"
+      "/product-media/wheels-tires/BimmerWorld-TA5R-18-Flow-Form-Wheel/6.avif"
     ]
   },
   "1729": {
@@ -2822,8 +2818,8 @@
     "thumbnail": "/product-media/headlights/oracle-led-headlights-for-jeep-wrangler-jl/3.webp",
     "images": [
       "/product-media/headlights/oracle-led-headlights-for-jeep-wrangler-jl/3.webp",
-      "/product-media/headlights/oracle-led-headlights-for-jeep-wrangler-jl/4.webp",
-      "/product-media/headlights/oracle-led-headlights-for-jeep-wrangler-jl/5.webp",
+      "/product-media/headlights/oracle-led-headlights-for-jeep-wrangler-jl/4.jpg",
+      "/product-media/headlights/oracle-led-headlights-for-jeep-wrangler-jl/5.jpg",
       "/product-media/headlights/oracle-led-headlights-for-jeep-wrangler-jl/6.webp"
     ]
   },

@@ -372,7 +372,7 @@ export const interiorProducts: Product[] = [
     warranty: "24-Month Limited Warranty",
     location: "USA Warehouse",
     fitment: "2015–2021 Volkswagen Golf GTI MK7",
-    ...media("volkswagen-golf-gti-mk7", ["1.jpg", "2.jpg", "3.jpg"]),
+    ...media("volkswagen-golf-gti-mk7", ["1.webp", "2.webp", "3.webp"]),
     description: interiorDescription(
       "Volkswagen Golf GTI MK7 Interior Upgrade Kit",
       "2015–2021 Volkswagen Golf GTI MK7",
