@@ -4059,5 +4059,71 @@
     "sourceFile": "D_NQ_NP_738776-CBT104015600727_012026-O.jpg",
     "note": "supplied in the 2130 folder but shows a modern spin-on oil cooler housing, not the cylindrical tube-and-gasket cooler the 7.3L Power Stroke uses. The other file in that folder, F143920951.png, is the correct part and was used instead.",
     "checkedAt": "2026-09-03T09:39:58.633Z"
+  },
+  "product-2120": {
+    "productId": 2120,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Glow Plug Set of 8 — Motorcraft ZD-30",
+    "localFile": "/product-media/engine/glow-plugs-obs-zd-30/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/glow-plugs-obs-zd-30/1.webp",
+        "sourceFile": "0036811_motorcraft-oem-glow-plug-ford-73l-powerstroke-1994-2003.jpg",
+        "sha256": "3ed175ab47d93f068a35a92e7d7cfeac05d126ab4f7d5b732ed9027d120a7d98",
+        "bytes": 7314,
+        "width": 709,
+        "height": 578
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here.",
+    "addedAt": "2026-09-03T10:04:54.196Z",
+    "status": "supplied-by-owner",
+    "verified": "viewed before it was accepted and shows the part the listing describes. NOTE: the photograph shows a single glow plug; the listing is a set of eight."
+  },
+  "product-2133": {
+    "productId": 2133,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Radiator",
+    "localFile": "/product-media/engine/radiator-obs-f5th-8005-c5/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/radiator-obs-f5th-8005-c5/1.webp",
+        "sourceFile": "OBS_7.3_Radiator-3__30684.jpg",
+        "sha256": "5f637e0dc3dc0e7588a984b1a8e88bf2bd7763a1679ede12a96409da90878573",
+        "bytes": 261000,
+        "width": 1280,
+        "height": 939
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here.",
+    "addedAt": "2026-09-03T10:04:54.196Z",
+    "status": "supplied-by-owner",
+    "verified": "viewed before it was accepted and shows the part the listing describes. NOTE: the pictured unit is an all-aluminium aftermarket radiator, while the listing records an OEM-style part number, Ford F5TH-8005-C5. The listing brand is freedom-injection, so an aftermarket unit is consistent with it, but the part number reads as an OE interchange rather than the item shown."
+  },
+  "rejected-2131-hpop": {
+    "productId": 2131,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Low-Pressure Oil Pump Kit with Seal",
+    "status": "rejected-wrong-subject",
+    "sourceFile": "HP200__04554.1749501114.1280.1280_1769623036__89112.jpg",
+    "note": "the file shows a 7.3L HIGH-pressure oil pump (HPOP): the casting with red shipping plugs, and HP200 in the file name. This listing is the LOW-pressure lube oil pump, Ford F4TZ-6616-A, whose own description opens by saying it is not to be confused with the HPOP, and whose included list is a low-pressure pump and a seal. The listing is internally consistent and was left unchanged; the image does not belong on it. HPOPs are already sold separately as 2118 and 2129.",
+    "checkedAt": "2026-09-03T10:04:54.196Z"
+  },
+  "rejected-2119-alt": {
+    "productId": 2119,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Injector Set of 8 — AA Single-Shot Super Kit",
+    "status": "rejected-wrong-subject",
+    "sourceFile": "s-l1200.jpg",
+    "note": "four injectors with pigtail harnesses and round plug connectors, a different injector family from the 7.3L HEUI unit already on this listing. The existing photograph matches the listing own part number AP63800AA and carries the characteristic yellow solenoid and stepped body of the 7.3L HEUI injector. Only one of the two can be the 7.3L part, so the existing photograph was kept and this file was not used.",
+    "checkedAt": "2026-09-03T10:04:54.196Z"
   }
 }

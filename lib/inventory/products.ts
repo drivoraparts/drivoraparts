@@ -4288,8 +4288,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from over-voltage or a failed glow plug controller.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/glow-plugs-obs-zd-30/1.webp",
+    images: ["/product-media/engine/glow-plugs-obs-zd-30/1.webp"],
     description: `Complete set of eight Motorcraft ZD-30 glow plugs for the 7.3L Power Stroke.
 
 Hard starting below about 50°F, white smoke on a cold start, and a rough first minute are the classic signs of failed glow plugs. They fail individually, but a truck with two or three gone usually has the rest close behind, so they are replaced as a set.
@@ -4935,8 +4935,8 @@ Worldwide Shipping Available`,
     freightNotes: "Bulky item. Freight cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage in service from debris or corrosion.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/radiator-obs-f5th-8005-c5/1.webp",
+    images: ["/product-media/engine/radiator-obs-f5th-8005-c5/1.webp"],
     description: `Radiator for the 1994.5–1997 OBS 7.3L Power Stroke.
 
 These trucks are thirty years old, and original radiators are long past their service life. Tanks crack, cores clog internally, and a marginal radiator shows up as high coolant temperature towing or climbing rather than as an obvious leak.
