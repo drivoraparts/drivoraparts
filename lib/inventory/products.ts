@@ -4107,8 +4107,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, tuning, and damage from oil starvation, over-boost or improper installation.",
-    thumbnail: "/product-media/placeholders/turbocharger.svg",
-    images: ["/product-media/placeholders/turbocharger.svg"],
+    thumbnail: "/product-media/turbocharger/tp38-turbo-obs-f6tz-6k682-arm/1.webp",
+    images: ["/product-media/turbocharger/tp38-turbo-obs-f6tz-6k682-arm/1.webp"],
     description: `Remanufactured TP38 turbocharger for the OBS 7.3L Power Stroke.
 
 The TP38 is the factory turbocharger for the 1994.5–1997 Power Stroke, and it is the single most common failure point on a high-mileage OBS truck. Shaft play, a leaking centre section, or a wastegate that no longer holds are all reasons these come off.
@@ -4227,8 +4227,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated fuel or a failing high-pressure oil system.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/injectors-obs-ap63800aa/1.webp",
+    images: ["/product-media/engine/injectors-obs-ap63800aa/1.webp"],
     description: `Complete set of eight remanufactured AA injectors for the OBS 7.3L Power Stroke, supplied with the gaskets and harness parts the job actually needs.
 
 HEUI injectors wear as a set. By the time one is misfiring the others are usually close behind, which is why these are sold as eight rather than singly. Rough idle when cold, white smoke on start-up, and a miss that clears as the engine warms are the usual signs.
@@ -4787,8 +4787,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a neglected cooling system.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/oil-cooler-obs-f4tz-6a636-a/1.webp",
+    images: ["/product-media/engine/oil-cooler-obs-f4tz-6a636-a/1.webp"],
     description: `Oil cooler and gasket kit for the 7.3L Power Stroke.
 
 The 7.3 runs an oil-to-coolant cooler, and when it fails internally the two mix. Oil in the coolant recovery bottle, or coolant pushing into the oil, is the sign — and it needs attention quickly, because coolant in the oil damages bearings.
@@ -4886,8 +4886,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from running contaminated or depleted coolant.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/water-pump-obs-f81z-8501-crm/1.webp",
+    images: ["/product-media/engine/water-pump-obs-f81z-8501-crm/1.webp"],
     description: `Water pump for the 1996–1997 OBS 7.3L Power Stroke.
 
 Weeping from the pump's weep hole, a bearing whine, or coolant loss with no visible external leak are the usual signs of a failing water pump. On a diesel that works hard, replacing it before it fails outright is cheaper than the alternative.
@@ -4983,8 +4983,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, fabrication, and tuning.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/1.webp",
+    images: ["/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/1.webp", "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/2.webp", "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/3.webp"],
     description: `Driven Diesel regulated return fuel system for the OBS 7.3L Power Stroke.
 
 This is an upgrade, not a repair part. The factory fuel system on these trucks does not regulate return pressure, which leaves fuel pressure varying with demand — worst exactly when the engine is working hardest. A regulated return holds pressure steady across the range and keeps both cylinder heads fed evenly.
@@ -5035,8 +5035,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/hpop-seal-kit-obs/1.webp",
+    images: ["/product-media/engine/hpop-seal-kit-obs/1.webp"],
     description: `Seal kit for the 7.3L Power Stroke high-pressure oil pump.
 
 A leaking HPOP is not always a failed HPOP. These pumps commonly weep from their seals while the pump itself is still serviceable, and a seal kit costs a fraction of a replacement pump.
@@ -5088,8 +5088,8 @@ Worldwide Shipping Available`,
       "Palletised freight, approximately $400 within the continental US. Requires a loading dock or forklift; not suitable for residential delivery.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, clutch and hydraulics, and damage from incorrect fluid or a worn clutch.",
-    thumbnail: "/product-media/placeholders/transmission.svg",
-    images: ["/product-media/placeholders/transmission.svg"],
+    thumbnail: "/product-media/transmission/zf-s5-47-obs-rmts5-47-6/1.webp",
+    images: ["/product-media/transmission/zf-s5-47-obs-rmts5-47-6/1.webp"],
     description: `Remanufactured ZF S5-47 five-speed manual transmission for the OBS 7.3L Power Stroke, 4x4 without PTO.
 
 The S5-47 is the gearbox Ford put behind the 7.3L Power Stroke, rated to 470 lb-ft against the earlier S5-42's 420. It is the reason a manual OBS is worth more than an automatic one, and it is what most people mean when they say "ZF5" in a Power Stroke context.
@@ -5202,8 +5202,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/starter-3-bolt-obs-f5tu-11000-aa/1.webp",
+    images: ["/product-media/engine/starter-3-bolt-obs-f5tu-11000-aa/1.webp"],
     description: `Three-bolt starter for the 7.3L Power Stroke.
 
 A diesel of this size asks a great deal of its starter, and a tired one shows up first on cold mornings — slow cranking, a click with no crank, or a start that needs two attempts. Because slow cranking also prevents the glow plug system from doing its job, a weak starter often gets misdiagnosed as a glow plug fault.
@@ -5253,8 +5253,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/gear-reduction-starter-obs-f4tz-11002-a-grs/1.webp",
+    images: ["/product-media/engine/gear-reduction-starter-obs-f4tz-11002-a-grs/1.webp"],
     description: `Gear reduction starter for the 7.3L Power Stroke.
 
 A gear reduction starter turns the engine faster while drawing less current than the standard unit. On a high-compression diesel that matters most in cold weather, where cranking speed is the difference between a start and a long crank.

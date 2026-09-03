@@ -3810,5 +3810,254 @@
     ],
     "note": "matched the fitment vehicle named in the product title, not the part; a photo of the car a part fits is not a photo of the part",
     "checkedAt": "2026-08-31T18:26:14.517Z"
+  },
+  "product-2117": {
+    "productId": 2117,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS TP38 Turbocharger — Remanufactured",
+    "localFile": "/product-media/turbocharger/tp38-turbo-obs-f6tz-6k682-arm/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/turbocharger/tp38-turbo-obs-f6tz-6k682-arm/1.webp",
+        "sourceFile": "0d55d33ea65355bc19a9d20d905117f5.jpg",
+        "sha256": "5e6427b9430f002e1cee3b1a16abdd7a2096b792658e99261ddfe6b3400c11fe",
+        "bytes": 6750,
+        "width": 400,
+        "height": 300
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes."
+  },
+  "product-2119": {
+    "productId": 2119,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Injector Set of 8 — AA Single-Shot Super Kit",
+    "localFile": "/product-media/engine/injectors-obs-ap63800aa/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/injectors-obs-ap63800aa/1.webp",
+        "sourceFile": "eyJ3aWR0aCI6ODAwLCJoZWlnaHQiOjYwMCwiZml0IjoiY29udGFpbiIsIndhdGVybWFya2VkIjpmYWxzZSwibm9faW1hZ2VfcHJlZml4IjoiYWxsaWFudF9ub2ltYWdlIiwia2V5IjoiYXNzZXRzL2ltY.jpg",
+        "sha256": "343bfd5845a3265eeb54e165a57a029a9ac3f665201419ca85b2973e7af4f94e",
+        "bytes": 7790,
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes. NOTE: the photograph shows a single injector; the listing is a set of eight."
+  },
+  "product-2130": {
+    "productId": 2130,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Oil Cooler Kit with Gaskets",
+    "localFile": "/product-media/engine/oil-cooler-obs-f4tz-6a636-a/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/oil-cooler-obs-f4tz-6a636-a/1.webp",
+        "sourceFile": "F143920951.png",
+        "sha256": "2d995a61936e55dc391858dca7d28bff93df462eae803638e86a28a8fb9300cc",
+        "bytes": 15498,
+        "width": 687,
+        "height": 687
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes."
+  },
+  "product-2132": {
+    "productId": 2132,
+    "productName": "1996–1997 Ford 7.3L Power Stroke OBS Water Pump",
+    "localFile": "/product-media/engine/water-pump-obs-f81z-8501-crm/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/water-pump-obs-f81z-8501-crm/1.webp",
+        "sourceFile": "images.jpg",
+        "sha256": "a00810ce4d1ddeb5655a6519d0c57344a395aa7872f010ac56c6bff9ded54b3f",
+        "bytes": 19138,
+        "width": 586,
+        "height": 523
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes."
+  },
+  "product-2134": {
+    "productId": 2134,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Regulated Return Fuel System Kit — Driven Diesel",
+    "localFile": "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/1.webp",
+        "sourceFile": "2684.jpg",
+        "sha256": "82ad94be76c2ab9c4585a2db850163865d14861a8d53bb9ed85645279595013f",
+        "bytes": 17408,
+        "width": 500,
+        "height": 500
+      },
+      {
+        "localFile": "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/2.webp",
+        "sourceFile": "2684_2_.jpg",
+        "sha256": "24d9b09daeedff756d966a48f9e548e83eeb4024a1609830753708defc134c1a",
+        "bytes": 24028,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "localFile": "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/3.webp",
+        "sourceFile": "2684_3_.jpg",
+        "sha256": "214b4f11fd2a148c91223095c292ffe16cbf628734aa1c0798c74a41bb01f9cb",
+        "bytes": 27238,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes."
+  },
+  "product-2135": {
+    "productId": 2135,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS HPOP Seal Kit",
+    "localFile": "/product-media/engine/hpop-seal-kit-obs/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/hpop-seal-kit-obs/1.webp",
+        "sourceFile": "s-l400.jpg",
+        "sha256": "ae30c04f92faaa9f3095365c053c79dc0f24d914b669570e51d1d0f5dfe3e618",
+        "bytes": 22928,
+        "width": 375,
+        "height": 400
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes. NOTE: the bag photographed reads Ford 3C3Z-9G804-AA; this listing records the part number as 2C3Z-9G804-AA. The two have not been reconciled and the listing was left unchanged."
+  },
+  "product-2138": {
+    "productId": 2138,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Starter (3-Bolt)",
+    "localFile": "/product-media/engine/starter-3-bolt-obs-f5tu-11000-aa/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/starter-3-bolt-obs-f5tu-11000-aa/1.webp",
+        "sourceFile": "F143944518.jpg",
+        "sha256": "c85c2b647c51ef4334fe87c9759e5da11e467eaa3b26b87c1cb27bb5f1750a47",
+        "bytes": 11140,
+        "width": 600,
+        "height": 600
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes."
+  },
+  "product-2139": {
+    "productId": 2139,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Gear Reduction Starter",
+    "localFile": "/product-media/engine/gear-reduction-starter-obs-f4tz-11002-a-grs/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/gear-reduction-starter-obs-f4tz-11002-a-grs/1.webp",
+        "sourceFile": "images.jpg",
+        "sha256": "cdfd1d9ab49f61c704513b712ffeab330b8112e6457e9aeb385f7de286ccdc79",
+        "bytes": 13144,
+        "width": 447,
+        "height": 447
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes."
+  },
+  "product-2140": {
+    "productId": 2140,
+    "productName": "1996–1997 Ford 7.3L Power Stroke OBS ZF S5-47 5-Speed Manual Transmission 4x4 — Remanufactured",
+    "localFile": "/product-media/transmission/zf-s5-47-obs-rmts5-47-6/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/transmission/zf-s5-47-obs-rmts5-47-6/1.webp",
+        "sourceFile": "zumbrota-drivetrain-manual-transmissions-s5-47-manual-transmission-for-ford-1996-1997-f-series-7.3l-4x4-5-speed-with-pto-rmts5-47-6-p__09798.jpg",
+        "sha256": "76f14505a6af1660222538d1eeb9c60824de1124f1cdae9a8f9643c5292f7ad4",
+        "bytes": 40262,
+        "width": 800,
+        "height": 702
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
+    "addedAt": "2026-09-03T09:39:58.633Z",
+    "status": "supplied-by-owner",
+    "verified": "every file was viewed before it was accepted and shows the part the listing describes. NOTE: the source file name describes this unit as \"with PTO\"; the listing describes it as without PTO. The image also carries a tiled Zumbrota Z watermark across the casing."
+  },
+  "rejected-2130-alt": {
+    "productId": 2130,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Oil Cooler Kit with Gaskets",
+    "status": "rejected-wrong-subject",
+    "sourceFile": "D_NQ_NP_738776-CBT104015600727_012026-O.jpg",
+    "note": "supplied in the 2130 folder but shows a modern spin-on oil cooler housing, not the cylindrical tube-and-gasket cooler the 7.3L Power Stroke uses. The other file in that folder, F143920951.png, is the correct part and was used instead.",
+    "checkedAt": "2026-09-03T09:39:58.633Z"
   }
 }
