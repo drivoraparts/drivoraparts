@@ -3,31 +3,48 @@ import kvIncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cac
 import { withRegionalCache } from "@opennextjs/cloudflare/overrides/incremental-cache/regional-cache";
 
 /**
- * Incremental cache for ISR routes.
+ * Incremental cache store.
  *
- * There was no cache store at all before this, so `export const revalidate =
- * 3600` on /product/[id] had nowhere to put a render and every request rebuilt
- * the page — roughly two seconds each, with no `cf-cache-status` on any
- * response because a Worker's output is not edge-cached on its own.
+ * READ THIS BEFORE RELYING ON IT: nothing currently uses this cache. It is
+ * configured and the binding is live on the deployed Worker, but the KV
+ * namespace stays empty however much traffic the site takes, because no route
+ * reaches the runtime cache:
  *
- * Staleness is bounded by the deploy, not just by the hour. Product data is
- * compiled into the bundle at build time (admin edits are committed to
- * lib/inventory/data/*.json through GitHub, which triggers a rebuild), and
- * cache keys are namespaced by OPEN_NEXT_BUILD_ID, so a deploy starts from a
- * cold cache and no entry can outlive the build it came from. /catalog/all is
- * `force-dynamic` and is not cached here at all, so search and filtering stay
- * live. Nothing in the app calls revalidatePath or revalidateTag, so no tag
- * cache is needed.
+ *   - the 246 prerendered routes (/catalog/[category], /vehicles/[slug] and
+ *     friends) are force-static and served from the asset bundle;
+ *   - /catalog/all is force-dynamic on purpose, so search and filtering stay
+ *     live per request;
+ *   - /product/[id] declares `revalidate = 3600` but is dynamically rendered,
+ *     because a dynamic segment without generateStaticParams is dynamic
+ *     whatever revalidate says. The hour has never applied.
  *
- * KV rather than R2 only because R2 is not enabled on the Cloudflare account
- * (API code 10042 — it needs to be switched on in the dashboard). To move
- * across: create the bucket, bind it as NEXT_INC_CACHE_R2_BUCKET, and import
- * r2-incremental-cache in place of the KV line above.
+ * Adding `generateStaticParams` returning [] does make it ISR, and that was
+ * tried: it builds clean, typechecks, passes pages:build, and then every
+ * product page 500s in the Worker with
  *
- * short-lived regional caching sits in front of KV so repeat hits in the same
- * data centre skip the KV round trip, and KV's eventual consistency (writes
- * take up to a minute to reach every region) never shows a reader something
- * older than the current build.
+ *   ChunkLoadError: Failed to load chunk
+ *   server/chunks/ssr/[root-of-the-server]__0iase11._.js
+ *
+ * Turbopack emits a server chunk whose filename contains square brackets and
+ * the OpenNext bundler does not resolve it for this route; the dynamic path
+ * never loads that chunk, so the fault only appears once the route is ISR and
+ * only in the bundled Worker, never in the build. Reverted in 16d08f5.
+ * Reproduce with `wrangler dev` against .open-next, not in production.
+ *
+ * If that is ever fixed, the cache below starts working with no further
+ * change, and product pages become up to an hour stale in their review counts
+ * and view figures only. Price and stock cannot go stale beyond a deploy: that
+ * data is compiled into the bundle at build time (admin edits are committed to
+ * lib/inventory/data/*.json through GitHub, which triggers a rebuild) and cache
+ * keys are namespaced by OPEN_NEXT_BUILD_ID, so every deploy starts cold.
+ * Nothing calls revalidatePath or revalidateTag, so no tag cache is needed.
+ *
+ * KV rather than the R2 store OpenNext recommends only because R2 is not
+ * enabled on this Cloudflare account — the API refuses with code 10042 and it
+ * has to be switched on in the dashboard by a person. R2 is the better store
+ * here if this is ever revisited: KV allows 1,000 writes a day on the free
+ * tier and a crawl of 1,889 products on a cold cache would exceed that.
+ * Moving across is the binding in wrangler.jsonc plus the import above.
  */
 export default defineCloudflareConfig({
   incrementalCache: withRegionalCache(kvIncrementalCache, { mode: "short-lived" }),
