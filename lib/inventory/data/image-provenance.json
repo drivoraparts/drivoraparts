@@ -4119,7 +4119,9 @@
     "status": "rejected-wrong-subject",
     "sourceFile": "HP200__04554.1749501114.1280.1280_1769623036__89112.jpg",
     "note": "the file shows a 7.3L HIGH-pressure oil pump (HPOP): the casting with red shipping plugs, and HP200 in the file name. This listing is the LOW-pressure lube oil pump, Ford F4TZ-6616-A, whose own description opens by saying it is not to be confused with the HPOP, and whose included list is a low-pressure pump and a seal. The listing is internally consistent and was left unchanged; the image does not belong on it. HPOPs are already sold separately as 2118 and 2129.",
-    "checkedAt": "2026-09-03T10:04:54.196Z"
+    "checkedAt": "2026-09-03T10:04:54.196Z",
+    "supersededBy": "product-2131",
+    "supersededAt": "2026-09-03T11:25:18.678Z"
   },
   "rejected-2119-alt": {
     "productId": 2119,
@@ -4128,5 +4130,31 @@
     "sourceFile": "s-l1200.jpg",
     "note": "four injectors with pigtail harnesses and round plug connectors, a different injector family from the 7.3L HEUI unit already on this listing. The existing photograph matches the listing own part number AP63800AA and carries the characteristic yellow solenoid and stepped body of the 7.3L HEUI injector. Only one of the two can be the 7.3L part, so the existing photograph was kept and this file was not used.",
     "checkedAt": "2026-09-03T10:04:54.196Z"
+  },
+  "product-2131": {
+    "productId": 2131,
+    "productName": "1994.5–1997 Ford 7.3L Power Stroke OBS Low-Pressure Oil Pump Kit with Seal",
+    "localFile": "/product-media/engine/low-pressure-oil-pump-obs-f4tz-6616-a/1.webp",
+    "localFiles": [
+      {
+        "localFile": "/product-media/engine/low-pressure-oil-pump-obs-f4tz-6616-a/1.webp",
+        "sourceFile": "F198647145_grande.jpg",
+        "sha256": "107a3ef9032b4a8e479d40a111d3f3c3d94dd1235ed1762b7fea9038b88ff9e8",
+        "bytes": 15950,
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "sourceUrl": null,
+    "sourceName": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here.",
+    "addedAt": "2026-09-03T11:25:18.678Z",
+    "status": "supplied-by-owner",
+    "verified": "viewed before it was accepted. Shows a gerotor oil pump: inner and outer rotor set in a front-cover housing, which is what the crank-driven low-pressure lube pump is, and not the HPOP that was supplied for this listing on the first attempt and rejected. NOTE: the photograph shows the pump alone; the listing is a kit whose included list is a low-pressure oil pump and a seal, and no seal is pictured.",
+    "supersedes": "rejected-2131-hpop"
   }
 }

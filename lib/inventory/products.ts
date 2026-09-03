@@ -4838,8 +4838,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel. Cost calculated by destination.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
-    thumbnail: "/product-media/placeholders/engine.svg",
-    images: ["/product-media/placeholders/engine.svg"],
+    thumbnail: "/product-media/engine/low-pressure-oil-pump-obs-f4tz-6616-a/1.webp",
+    images: ["/product-media/engine/low-pressure-oil-pump-obs-f4tz-6616-a/1.webp"],
     description: `Low-pressure oil pump kit for the 7.3L Power Stroke.
 
 Not to be confused with the HPOP. The low-pressure pump is the engine's ordinary oil pump — it lubricates the engine and feeds the high-pressure pump that fires the injectors. On a HEUI engine both matter, and a weak low-pressure pump starves the high-pressure side, producing symptoms that look like an HPOP fault.
