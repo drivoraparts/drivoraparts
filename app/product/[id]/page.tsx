@@ -27,21 +27,6 @@ import { getProductReviewAggregate } from "@/lib/reviews";
 import { getProductInterest } from "@/lib/analytics/product-interest";
 
 export const revalidate = 3600;
-
-/**
- * Returning an empty array is what turns this route into ISR. Next renders a
- * product on its first request and then caches it for the hour declared above;
- * without this the segment is dynamically rendered and `revalidate` never
- * applies, which is why the route was absent from dynamicRoutes in the
- * prerender manifest and every crawler hit paid for a full render.
- *
- * Empty rather than all 1,889 ids on purpose: prebuilding every product would
- * add roughly 245MB of HTML to the Worker asset bundle for pages that are
- * cheap to render once and then cache.
- */
-export function generateStaticParams(): { id: string }[] {
-  return [];
-}
 type PageProps = {
   params: Promise<{ id: string }>;
 };
