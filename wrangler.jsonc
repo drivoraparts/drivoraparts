@@ -11,6 +11,22 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  // Store for the OpenNext incremental cache. Without one, every request to an
+  // ISR route re-rendered the page from scratch: /product/[id] declares
+  // `revalidate = 3600` but had nowhere to keep the render, so the hour never
+  // meant anything and each crawler hit cost a full ~2s render.
+  //
+  // R2 is the store OpenNext recommends and is what this should eventually use.
+  // It is not enabled on this Cloudflare account -- the API refuses with code
+  // 10042, "Please enable R2 through the Cloudflare Dashboard", which needs a
+  // person to accept the terms. KV was already enabled, so it is used instead.
+  // Swapping to R2 later is this binding plus one import in open-next.config.ts.
+  "kv_namespaces": [
+    {
+      "binding": "NEXT_INC_CACHE_KV",
+      "id": "bebde3fd882f4ed1a7f31912389cebcf"
+    }
+  ],
   "routes": [
     { "pattern": "drivoraparts.com", "custom_domain": true }
   ],
