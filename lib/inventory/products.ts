@@ -5028,7 +5028,7 @@ Worldwide Shipping Available`,
     condition: "brand-new",
     warranty: "12-Month Limited Warranty",
     location: "our USA warehouse or supplier network, depending on your location",
-    partNumber: "Ford 2C3Z-9G804-AA",
+    partNumber: "Ford 3C3Z-9G804-AA",
     fitment:
       "1994.5–2003 Ford 7.3L Power Stroke high-pressure oil pump, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
     drivetrain: "4x2 and 4x4",
@@ -5049,7 +5049,7 @@ Application: 7.3L Power Stroke diesel (HEUI)
 Generation: OBS / Old Body Style and later
 Years: 1994.5–2003
 Vehicle: Ford F-250 / F-350
-Manufacturer part number: 2C3Z-9G804-AA
+Manufacturer part number: 3C3Z-9G804-AA
 Condition: New
 
 Highlights

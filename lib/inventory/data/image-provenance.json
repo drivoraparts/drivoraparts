@@ -3975,7 +3975,8 @@
     "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
     "addedAt": "2026-09-03T09:39:58.633Z",
     "status": "supplied-by-owner",
-    "verified": "every file was viewed before it was accepted and shows the part the listing describes. NOTE: the bag photographed reads Ford 3C3Z-9G804-AA; this listing records the part number as 2C3Z-9G804-AA. The two have not been reconciled and the listing was left unchanged."
+    "verified": "viewed before it was accepted and shows the part the listing describes. The Ford bag photographed reads 3C3Z-9G804-AA, which disagreed with the 2C3Z-9G804-AA this listing carried. The owner confirmed the bag is correct, and the listing was corrected to 3C3Z-9G804-AA on 2026-09-03. The directory name, hpop-seal-kit-obs, deliberately carries no part number and was left as it is.",
+    "partNumberResolvedAt": "2026-09-03T10:47:53.946Z"
   },
   "product-2138": {
     "productId": 2138,
@@ -4050,7 +4051,8 @@
     "usageBasis": "supplied directly by the site owner as a folder of files, one directory per product id, with no source URL or licence attached. Provenance beyond the owner handing them over is unknown to this repository and cannot be verified here; the file names suggest manufacturer, marketplace and reseller product photography.",
     "addedAt": "2026-09-03T09:39:58.633Z",
     "status": "supplied-by-owner",
-    "verified": "every file was viewed before it was accepted and shows the part the listing describes. NOTE: the source file name describes this unit as \"with PTO\"; the listing describes it as without PTO. The image also carries a tiled Zumbrota Z watermark across the casing."
+    "verified": "viewed before it was accepted and shows the part the listing describes. The source file name described this unit as \"with PTO\" where the listing says without. The owner confirmed the unit has no PTO, so the listing was correct and is unchanged; the discrepancy was in the supplied file name. Still true of the image itself: it carries a tiled Zumbrota Z watermark across the casing.",
+    "ptoResolvedAt": "2026-09-03T10:47:53.946Z"
   },
   "rejected-2130-alt": {
     "productId": 2130,
