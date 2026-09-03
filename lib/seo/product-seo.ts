@@ -71,9 +71,16 @@ export function buildProductSeoDescription(input: ProductSeoInput): string {
  * canonical tag is correct, so they're kept out of the index until they get
  * real descriptions.
  */
+// The second marker used to be /confirm[^.\n]*at checkout/i, which matched any
+// sentence pairing "confirm" with "at checkout" anywhere in a description. That
+// is ordinary fitment wording, not boilerplate: "Fitment: Application-Specific
+// (Confirm at Checkout)" on the AlphaRex headlights, "Confirm year, bed length,
+// and cab style at checkout" on the truck beds. It noindexed 39 fully written
+// listings whose only sin was a fitment spec line. Narrowed to the exact
+// template sentence, which no genuinely written listing uses.
 const GENERIC_DESCRIPTION_MARKERS = [
   /sourced and inspected for drivoraparts customers who need reliable fitment/i,
-  /confirm[^.\n]*at checkout/i,
+  /confirm vehicle fitment at checkout/i,
 ];
 
 export function hasGenericPlaceholderDescription(description?: string): boolean {

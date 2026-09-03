@@ -62,8 +62,13 @@ export function buildPageMetadata({
       description: metaDescription,
       images: [ogImage],
     },
+    // noindex keeps a thin page out of the index; nofollow also told crawlers
+    // to stop at it, so the links out of 1,219 product pages — to categories,
+    // to related products — were dead ends, and the pages worth indexing lost
+    // that many paths to them. "noindex, follow" is the pairing that keeps the
+    // page unindexed while letting the crawl continue through it.
     robots: noIndex
-      ? { index: false, follow: false }
+      ? { index: false, follow: true }
       : { index: true, follow: true },
   };
 }
