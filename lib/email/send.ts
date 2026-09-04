@@ -471,7 +471,10 @@ export async function sendAdminNewOrderEmail(input: {
 
   return sendEmail({
     to: getAdminEmail(),
-    subject: `New order #${orderRef} — $${input.total.toFixed(2)} from ${input.customerName}`,
+    // The body has always said "Pending payment confirmation"; the subject did
+    // not, and the subject is the part read in a notification. An order that
+    // has not been paid for should not look settled from the inbox list.
+    subject: `Pending order #${orderRef} — $${input.total.toFixed(2)} from ${input.customerName} (awaiting payment)`,
     html: documentLayout(
       `
       <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#9d531c;font-family:Arial,Helvetica,sans-serif;">New customer order</p>

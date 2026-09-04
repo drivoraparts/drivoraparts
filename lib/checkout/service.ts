@@ -25,6 +25,7 @@ import {
 import {
 
   sendPaymentReceivedEmail,
+  sendAdminNewOrderEmail,
   sendAdminPaymentConfirmedEmail,
 
 } from "@/lib/email/send";
@@ -312,6 +313,43 @@ export async function processCheckout(input: {
   // sendAdminPaymentConfirmedEmail to admin) fire from
   // applyOrderPaidSideEffects() below, which only runs once the NOWPayments
   // webhook confirms payment -- see handlePaidWebhook / finalizeOrderPaid.
+  /*
+   * Tell the store owner an order exists.
+   *
+   * The comment above is right that this is not a confirmation, and nothing
+   * here tells the customer otherwise -- they still get no email until payment
+   * lands. But "do not send a confirmation" had been implemented as "send
+   * nothing at all", and the admin half of that was a mistake: with the
+   * NOWPayments flow, an order that is never paid never reaches
+   * applyOrderPaidSideEffects, so the owner was never told it happened. One
+   * customer placed the same ,756.50 order on 27 Aug, 29 Aug and 1 Sep and
+   * nobody found out until the orders table was read by hand.
+   *
+   * sendAdminNewOrderEmail already renders Status: "Pending payment
+   * confirmation", so it states what it is. It is fire-and-forget: an email
+   * failure must never cost the order that has already been written.
+   */
+  try {
+    await sendAdminNewOrderEmail({
+      orderNumber: order.order_number,
+      customerName: customer.full_name,
+      customerEmail: customer.email,
+      customerPhone: customer.phone ?? undefined,
+      shippingAddress: input.customer.shippingAddress,
+      total: Number(order.total),
+      items: order.items.map((item) => ({
+        name: item.name,
+        quantity: item.quantity,
+        unitPrice: Number(item.price),
+        image: item.image,
+      })),
+    });
+  } catch (error) {
+    logWarn("admin_pending_order_email_failed", {
+      orderId: order.id,
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
   await logActivity("info", "checkout.order_pending_created", {
     orderId: order.id,
     itemCount: order.items.length,
