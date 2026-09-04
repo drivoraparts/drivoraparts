@@ -755,3 +755,69 @@ export async function sendAdminCheckoutFailedEmail(input: {
     ),
   });
 }
+
+/**
+ * The order exists; the money does not.
+ *
+ * Deliberately NOT the receipt. sendOrderCreatedEmail renders a two-page
+ * receipt-and-invoice document and says "Order successfully placed", which is
+ * a reasonable thing to send someone who has paid and a misleading thing to
+ * send someone who has not. This says the opposite in its subject, its
+ * heading, its status row and its button.
+ *
+ * The button points at the DrivoraParts order page, never at the raw
+ * NOWPayments invoice. That page asks the server what the payment is actually
+ * doing before it renders, so an email opened an hour later -- after the
+ * customer paid, after the invoice expired -- shows what is true then rather
+ * than what was true when it was sent.
+ */
+export async function sendPaymentIncompleteEmail(input: {
+  to: string;
+  customerName: string;
+  orderId: string;
+  orderNumber: string;
+  total: number;
+  items: OrderInvoiceLine[];
+}): Promise<boolean> {
+  const orderRef = input.orderNumber;
+  const siteUrl = getSiteUrl();
+  const orderUrl = `${siteUrl}/success?orderId=${encodeURIComponent(input.orderId)}`;
+
+  return sendEmail({
+    to: input.to,
+    subject: `Payment Not Completed — Order #${orderRef}`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#b4341c;font-family:Arial,Helvetica,sans-serif;">Payment not completed</p>
+      <h1 style="margin:0 0 8px;font-size:28px;line-height:1.15;color:#111315;font-family:Georgia,'Times New Roman',Times,serif;">Your order is saved — payment is still needed</h1>
+      <p style="margin:0 0 24px;font-size:15px;line-height:1.65;color:#46423a;font-family:Arial,Helvetica,sans-serif;">
+        Hi ${escapeHtml(input.customerName)}, we have your order and your items are held, but no payment has reached us yet.
+        Nothing has been charged. Use the button below to open your order and finish paying.
+      </p>
+
+      ${renderReceiptMetaTable(`
+        ${renderReceiptMetaRow("Status", `<span style="color:#b4341c;">Payment not completed</span>`)}
+        ${renderOrderIdRow(orderRef)}
+        ${renderReceiptMetaRow("Customer", escapeHtml(input.customerName))}
+      `)}
+
+      ${renderReceiptLinesTable(input.items)}
+      ${renderReceiptTotalRow(input.total, "Amount due")}
+
+      <table role="presentation" cellspacing="0" cellpadding="0" style="margin:4px 0 0;">
+        <tr>
+          <td style="border-radius:6px;background:#1f7a4d;">
+            <a href="${orderUrl}" style="display:inline-block;padding:14px 28px;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;border-radius:6px;">Continue Payment →</a>
+          </td>
+        </tr>
+      </table>
+
+      <p style="margin:18px 0 0;font-size:12px;line-height:1.6;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
+        This link opens your order on drivoraparts.com and always shows its current status.
+        If you have already paid, it will say so — you do not need to pay again.
+      </p>`,
+      `Order #${orderRef} is saved but payment has not been completed — $${input.total.toFixed(2)} due.`,
+      "Order payment status"
+    ),
+  });
+}

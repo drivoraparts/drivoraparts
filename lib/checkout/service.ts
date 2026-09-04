@@ -1,7 +1,6 @@
 import { insertAnalyticsEvent } from "@/lib/db/analytics";
 
 import { upsertCustomerByEmail } from "@/lib/db/customers";
-import { emailCustomerOrderInvoice } from "@/lib/checkout/customer-invoice";
 
 import { hasInventory } from "@/lib/db/inventory";
 
@@ -16,6 +15,7 @@ import {
   forceUpdateOrderStatus,
 
   getOrderById,
+  claimConfirmationSend,
 
   transitionOrderStatus,
 
@@ -27,6 +27,8 @@ import {
 
   sendPaymentReceivedEmail,
   sendAdminPaymentConfirmedEmail,
+  sendAdminNewOrderEmail,
+  sendPaymentIncompleteEmail,
 
 } from "@/lib/email/send";
 
@@ -324,33 +326,46 @@ export async function processCheckout(input: {
    * customer placed the same $9,756.50 order on 27 Aug, 29 Aug and 1 Sep and
    * nobody found out until the orders table was read by hand.
    *
-   * The customer is emailed too, and this is the part the original comment was
-   * right to be careful about. It is not a confirmation: the subject reads
-   * "Complete your payment", the status line reads "Awaiting payment", and it
-   * carries a button back to the NOWPayments invoice. A crypto checkout that is
-   * abandoned at the payment screen currently has no route back to it from the
-   * customer's inbox, which is the likeliest reason those three attempts died.
+   * The customer gets sendPaymentIncompleteEmail, NOT the receipt. An earlier
+   * version of this block sent sendOrderCreatedEmail with a payment link, which
+   * renders the two-page receipt-and-invoice document -- a reasonable thing to
+   * send someone who has paid and a misleading thing to send someone who has
+   * not. The receipt now belongs exclusively to confirmed payment, and is sent
+   * from applyOrderPaidSideEffects.
    *
-   * emailCustomerOrderInvoice sends both halves and is the same function the
-   * offline path has always used. Fire-and-forget: the order is already
-   * written, and a mail failure must never cost an order that exists.
+   * Its button points at /success?orderId=..., not at the raw NOWPayments
+   * invoice, so the link keeps telling the truth: the page asks the server what
+   * the payment is doing before it renders, and offers to resume the stored
+   * invoice from there.
+   *
+   * Fire-and-forget: the order is already written, and a mail failure must
+   * never cost an order that exists.
    */
   try {
-    await emailCustomerOrderInvoice({
+    await sendPaymentIncompleteEmail({
       to: customer.email,
+      customerName: customer.full_name,
+      orderId: order.id,
+      orderNumber: order.order_number,
+      total: Number(order.total),
+      items: order.items.map((item) => ({
+        name: item.name,
+        quantity: item.quantity,
+        unitPrice: Number(item.price),
+        image: item.image,
+      })),
+    });
+    await sendAdminNewOrderEmail({
+      orderNumber: order.order_number,
       customerName: customer.full_name,
       customerEmail: customer.email,
       customerPhone: customer.phone ?? undefined,
       shippingAddress: input.customer.shippingAddress,
-      orderNumber: order.order_number,
       total: Number(order.total),
-      subtotal: Number(order.subtotal),
-      shipping: Number(order.shipping),
-      paymentUrl: payment.paymentUrl,
       items: order.items.map((item) => ({
         name: item.name,
         quantity: item.quantity,
-        price: Number(item.price),
+        unitPrice: Number(item.price),
         image: item.image,
       })),
     });
@@ -518,7 +533,25 @@ async function applyOrderPaidSideEffects(orderId: string): Promise<void> {
     }
   }
 
-  if (updated?.customer) {
+  /*
+   * The receipt goes out once per order, ever.
+   *
+   * The webhook route already returns early on a duplicate delivery or an
+   * order that is already paid, but that is a read-then-write check: two IPNs
+   * arriving together can both pass it and both send a receipt.
+   * claimConfirmationSend is the atomic version -- an UPDATE ... WHERE
+   * confirmation_sent_at IS NULL that only one caller can win, whatever the
+   * ordering.
+   *
+   * markConfirmationSent has existed for this since it was written and had no
+   * callers, so nothing was using it and the guarantee it offers was never
+   * actually in force.
+   */
+  const mayEmailReceipt = updated?.customer
+    ? await claimConfirmationSend(orderId)
+    : false;
+
+  if (updated?.customer && mayEmailReceipt) {
 
     await sendPaymentReceivedEmail({
 

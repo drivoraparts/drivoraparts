@@ -1326,3 +1326,29 @@ export async function markConfirmationSent(id: string): Promise<void> {
     .eq("id", id)
     .is("confirmation_sent_at", null);
 }
+
+/**
+ * Claims the right to send this order's receipt, exactly once.
+ *
+ * markConfirmationSent stamps the column but tells the caller nothing, so it
+ * could not be used to decide whether to send -- which is presumably why it sat
+ * unused. This is the same conditional UPDATE with the row returned: the WHERE
+ * confirmation_sent_at IS NULL means only one concurrent caller can match, and
+ * whoever gets a row back is the one that may send. Two NOWPayments IPNs
+ * landing at the same instant therefore produce one receipt, not two.
+ *
+ * Returns false on error rather than throwing: failing to send a receipt is
+ * recoverable, sending two is not, and a webhook must not 500 over email.
+ */
+export async function claimConfirmationSend(id: string): Promise<boolean> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ confirmation_sent_at: new Date().toISOString() })
+    .eq("id", id)
+    .is("confirmation_sent_at", null)
+    .select("id");
+
+  if (error) return false;
+  return (data?.length ?? 0) > 0;
+}
