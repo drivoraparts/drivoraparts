@@ -40,6 +40,10 @@ export async function emailCustomerOrderInvoice(input: {
     subtotal: input.subtotal,
     shipping: input.shipping,
     items: lines,
+    // This function has always accepted a paymentUrl and then dropped it on the
+    // floor, so the customer received an order email with no way back to the
+    // invoice they had not paid.
+    paymentUrl: input.paymentUrl,
   });
 
   const adminSent = await sendAdminNewOrderEmail({

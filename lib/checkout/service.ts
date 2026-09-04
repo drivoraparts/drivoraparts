@@ -1,6 +1,7 @@
 import { insertAnalyticsEvent } from "@/lib/db/analytics";
 
 import { upsertCustomerByEmail } from "@/lib/db/customers";
+import { emailCustomerOrderInvoice } from "@/lib/checkout/customer-invoice";
 
 import { hasInventory } from "@/lib/db/inventory";
 
@@ -25,7 +26,6 @@ import {
 import {
 
   sendPaymentReceivedEmail,
-  sendAdminNewOrderEmail,
   sendAdminPaymentConfirmedEmail,
 
 } from "@/lib/email/send";
@@ -305,14 +305,13 @@ export async function processCheckout(input: {
 
 
 
-  // Deliberately no customer/admin email here. Reaching this point only
-  // means an order + NOWPayments invoice were created ("pending") -- not
-  // that payment happened. Sending a confirmation-sounding email now would
-  // tell both the customer and admin the order is done before it is. The
-  // real confirmation emails (sendPaymentReceivedEmail to the customer,
-  // sendAdminPaymentConfirmedEmail to admin) fire from
-  // applyOrderPaidSideEffects() below, which only runs once the NOWPayments
-  // webhook confirms payment -- see handlePaidWebhook / finalizeOrderPaid.
+  // Reaching this point means an order and a NOWPayments invoice exist
+  // ("pending") -- not that payment happened. That distinction is why the
+  // CONFIRMATION emails still live elsewhere: sendPaymentReceivedEmail and
+  // sendAdminPaymentConfirmedEmail fire from applyOrderPaidSideEffects()
+  // below, which only runs once the webhook confirms payment (see
+  // handlePaidWebhook / finalizeOrderPaid). What is sent here is the opposite
+  // of a confirmation -- it says the money has not arrived.
   /*
    * Tell the store owner an order exists.
    *
@@ -322,30 +321,41 @@ export async function processCheckout(input: {
    * nothing at all", and the admin half of that was a mistake: with the
    * NOWPayments flow, an order that is never paid never reaches
    * applyOrderPaidSideEffects, so the owner was never told it happened. One
-   * customer placed the same ,756.50 order on 27 Aug, 29 Aug and 1 Sep and
+   * customer placed the same $9,756.50 order on 27 Aug, 29 Aug and 1 Sep and
    * nobody found out until the orders table was read by hand.
    *
-   * sendAdminNewOrderEmail already renders Status: "Pending payment
-   * confirmation", so it states what it is. It is fire-and-forget: an email
-   * failure must never cost the order that has already been written.
+   * The customer is emailed too, and this is the part the original comment was
+   * right to be careful about. It is not a confirmation: the subject reads
+   * "Complete your payment", the status line reads "Awaiting payment", and it
+   * carries a button back to the NOWPayments invoice. A crypto checkout that is
+   * abandoned at the payment screen currently has no route back to it from the
+   * customer's inbox, which is the likeliest reason those three attempts died.
+   *
+   * emailCustomerOrderInvoice sends both halves and is the same function the
+   * offline path has always used. Fire-and-forget: the order is already
+   * written, and a mail failure must never cost an order that exists.
    */
   try {
-    await sendAdminNewOrderEmail({
-      orderNumber: order.order_number,
+    await emailCustomerOrderInvoice({
+      to: customer.email,
       customerName: customer.full_name,
       customerEmail: customer.email,
       customerPhone: customer.phone ?? undefined,
       shippingAddress: input.customer.shippingAddress,
+      orderNumber: order.order_number,
       total: Number(order.total),
+      subtotal: Number(order.subtotal),
+      shipping: Number(order.shipping),
+      paymentUrl: payment.paymentUrl,
       items: order.items.map((item) => ({
         name: item.name,
         quantity: item.quantity,
-        unitPrice: Number(item.price),
+        price: Number(item.price),
         image: item.image,
       })),
     });
   } catch (error) {
-    logWarn("admin_pending_order_email_failed", {
+    logWarn("pending_order_email_failed", {
       orderId: order.id,
       message: error instanceof Error ? error.message : String(error),
     });

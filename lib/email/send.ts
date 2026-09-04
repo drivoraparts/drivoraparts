@@ -215,16 +215,25 @@ type OrderDocumentInput = {
   items: OrderInvoiceLine[];
   documentDate: string;
   paid: boolean;
+  /** NOWPayments invoice. Present only while the order is unpaid. */
+  paymentUrl?: string;
 };
 
 function buildReceiptPage(input: OrderDocumentInput): string {
   const orderRef = input.orderNumber;
-  const statusLabel = input.paid ? "Payment confirmed" : "Order placed";
+  const statusLabel = input.paid ? "Payment confirmed" : "Awaiting payment";
   const statusColor = input.paid ? "#1f7a4d" : "#1f5f7a";
-  const headline = input.paid ? "Payment receipt" : "Order successfully placed";
+  const awaitingPayment = !input.paid && Boolean(input.paymentUrl);
+  const headline = input.paid
+    ? "Payment receipt"
+    : awaitingPayment
+      ? "Your order is reserved — payment still needed"
+      : "Order successfully placed";
   const intro = input.paid
     ? `Hi ${escapeHtml(input.customerName)}, this receipt confirms payment for your order. Please retain it for your records.`
-    : `Hi ${escapeHtml(input.customerName)}, thank you for shopping with DrivoraParts. Your order has been received and recorded in our system.`;
+    : awaitingPayment
+      ? `Hi ${escapeHtml(input.customerName)}, your order is recorded and your items are held, but we have not received payment yet. Use the button below to finish paying — the link reopens the same invoice, so you will not be charged twice.`
+      : `Hi ${escapeHtml(input.customerName)}, thank you for shopping with DrivoraParts. Your order has been received and recorded in our system.`;
   const totalLabel = input.paid ? "Amount paid" : "Order total";
 
   return `
@@ -247,6 +256,7 @@ function buildReceiptPage(input: OrderDocumentInput): string {
       ${input.paid ? "Your order is now being prepared for fulfillment." : "We will email your paid invoice once payment is confirmed on our payment processor."}
     </p>
 
+    ${awaitingPayment ? renderCompletePaymentButton(input.paymentUrl as string) : ""}
     ${renderTrackOrderButton(input.orderNumber)}`;
 }
 
@@ -353,13 +363,20 @@ export async function sendOrderCreatedEmail(input: {
   subtotal?: number;
   shipping?: number;
   items: OrderInvoiceLine[];
+  /** Reopens the unpaid invoice. Omitted once payment has landed. */
+  paymentUrl?: string;
 }): Promise<boolean> {
   const orderRef = input.orderNumber;
   const documentDate = formatDocumentDate();
+  const awaitingPayment = Boolean(input.paymentUrl);
 
   return sendEmail({
     to: input.to,
-    subject: `Order successfully placed — #${orderRef}`,
+    // "Order successfully placed" on an unpaid crypto invoice reads as done.
+    // Say what is actually outstanding.
+    subject: awaitingPayment
+      ? `Complete your payment — Order #${orderRef}`
+      : `Order successfully placed — #${orderRef}`,
     html: documentLayout(
       buildTwoPageOrderDocument({
         customerName: input.customerName,
@@ -591,6 +608,23 @@ function trackOrderLink(orderNumber: string): string {
  * making the customer retype it. The Order ID row next to it (rendered
  * separately via renderOrderIdRow) is the fallback for manual lookup if the
  * button doesn't come through in a given email client. */
+/**
+ * Reopens the existing NOWPayments invoice. Crypto checkouts are abandoned at
+ * the payment screen constantly -- one customer reached it three times for the
+ * same $9,756.50 engine and never completed -- and without this the customer
+ * had no way back to the invoice from their inbox.
+ */
+function renderCompletePaymentButton(paymentUrl: string): string {
+  return `
+    <table role="presentation" cellspacing="0" cellpadding="0" style="margin:20px 0 0;">
+      <tr>
+        <td style="border-radius:6px;background:#1f7a4d;">
+          <a href="${escapeHtml(paymentUrl)}" style="display:inline-block;padding:12px 24px;font-size:14px;font-weight:700;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;border-radius:6px;">Complete Your Payment →</a>
+        </td>
+      </tr>
+    </table>`;
+}
+
 function renderTrackOrderButton(orderNumber: string): string {
   return `
     <table role="presentation" cellspacing="0" cellpadding="0" style="margin:20px 0 0;">
@@ -667,6 +701,57 @@ export async function sendOrderDeliveredEmail(input: {
     `,
       `Order #${orderRef} delivered.`,
       "Delivery confirmation"
+    ),
+  });
+}
+
+/**
+ * A checkout that reached the server and did not become an order.
+ *
+ * Successful pending orders now notify the owner, but a failure notified
+ * nobody: it was logged and the customer saw an error. Those are the ones
+ * worth knowing about soonest -- stock that ran out mid-checkout, a payment
+ * provider that would not issue an invoice -- because each is a customer who
+ * tried to hand over money and could not.
+ *
+ * Only sent once a real customer has been parsed out of the request, so
+ * malformed or bot traffic hitting /api/checkout does not generate mail.
+ */
+export async function sendAdminCheckoutFailedEmail(input: {
+  customerName: string;
+  customerEmail: string;
+  reason: string;
+  itemSummary?: string;
+  total?: number;
+}): Promise<boolean> {
+  const siteUrl = getSiteUrl();
+  return sendEmail({
+    to: getAdminEmail(),
+    replyTo: input.customerEmail,
+    subject: `Checkout FAILED — ${input.customerName} could not complete an order`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#b4341c;font-family:Arial,Helvetica,sans-serif;">Checkout failed</p>
+      <h1 style="margin:0 0 16px;font-size:26px;color:#111315;font-family:Georgia,'Times New Roman',Times,serif;">A customer could not complete their order</h1>
+
+      ${renderReceiptMetaTable(`
+        ${renderReceiptMetaRow("Customer", escapeHtml(input.customerName))}
+        ${renderReceiptMetaRow("Email", escapeHtml(input.customerEmail))}
+        ${input.total !== undefined ? renderReceiptMetaRow("Cart total", `$${input.total.toFixed(2)} USD`) : ""}
+        ${input.itemSummary ? renderReceiptMetaRow("Items", escapeHtml(input.itemSummary)) : ""}
+        ${renderReceiptMetaRow("Reason", `<span style="color:#b4341c;">${escapeHtml(input.reason)}</span>`)}
+      `)}
+
+      <p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#46423a;font-family:Arial,Helvetica,sans-serif;">
+        No order was created. Reply to this email to reach the customer directly.
+      </p>
+
+      <p style="margin:0;font-size:14px;font-family:Arial,Helvetica,sans-serif;">
+        <a href="${siteUrl}/admin/orders" style="color:#9d531c;font-weight:700;text-decoration:none;">Open admin dashboard →</a>
+      </p>
+    `,
+      `Checkout failed for ${input.customerName}: ${input.reason}`,
+      "Store notification"
     ),
   });
 }

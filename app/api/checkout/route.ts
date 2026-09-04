@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { processCheckout } from "@/lib/checkout/service";
+import { sendAdminCheckoutFailedEmail } from "@/lib/email/send";
 import {
   lockOrderItemsFromCatalog,
   parseRawCheckoutItems,
@@ -75,11 +76,24 @@ function parseCustomer(raw: unknown) {
 
 export async function POST(req: Request) {
   const ip = getClientIp(req);
+  /*
+   * Held outside the try so the catch can name who was affected.
+   *
+   * A checkout that fails produces no order, so it used to produce no
+   * notification either -- it was logged, the customer saw an error message,
+   * and that was the end of it. A successful pending order now emails the
+   * owner; a failed one is arguably more urgent, because someone tried to hand
+   * over money and could not.
+   */
+  let attemptedCustomer: { fullName: string; email: string } | null = null;
 
   try {
     const body = await req.json().catch(() => null);
     const parsedItems = parseRawCheckoutItems(body?.items);
     const customer = parseCustomer(body?.customer);
+    if (customer) {
+      attemptedCustomer = { fullName: customer.fullName, email: customer.email };
+    }
 
     // Item problems are reported separately from customer-detail problems, so
     // the customer is told what is actually wrong rather than being handed one
@@ -155,6 +169,26 @@ export async function POST(req: Request) {
     return NextResponse.json(result);
   } catch (error) {
     logError("checkout_failed", error, { ip });
+
+    /*
+     * Only mail when a real customer was parsed. Malformed bodies and bot
+     * traffic hitting /api/checkout never get this far with a name and email,
+     * so they cannot turn this into an inbox full of noise. Fire-and-forget:
+     * the customer's error response must not wait on, or be changed by, an
+     * email send.
+     */
+    if (attemptedCustomer) {
+      try {
+        await sendAdminCheckoutFailedEmail({
+          customerName: attemptedCustomer.fullName,
+          customerEmail: attemptedCustomer.email,
+          reason: error instanceof Error ? error.message : String(error),
+        });
+      } catch (mailError) {
+        logError("checkout_failed_email_failed", mailError, { ip });
+      }
+    }
+
     return NextResponse.json(
       { error: getCheckoutErrorMessage(error) },
       { status: 400 }
