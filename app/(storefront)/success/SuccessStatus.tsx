@@ -77,6 +77,9 @@ export default function SuccessStatus({
     orderId || npPaymentId ? "confirming" : "unknown"
   );
   const [total, setTotal] = useState<number | null>(null);
+  const [orderNumber, setOrderNumber] = useState<string | null>(null);
+  type StatusItem = { name: string; quantity: number; price: number; image: string | null };
+  const [items, setItems] = useState<StatusItem[]>([]);
   const [resolvedOrderId, setResolvedOrderId] = useState<string | null>(orderId);
   // The invoice the customer already has. Resuming it avoids creating a second
   // order or a second payment session for the same purchase.
@@ -116,6 +119,8 @@ export default function SuccessStatus({
           status?: string;
           total?: number;
           orderId?: string;
+          orderNumber?: string;
+          items?: StatusItem[];
           paymentStatus?: string | null;
           paymentUrl?: string | null;
         };
@@ -125,6 +130,8 @@ export default function SuccessStatus({
           setResolvedOrderId(data.orderId);
         }
         if (typeof data.total === "number") setTotal(data.total);
+        if (typeof data.orderNumber === "string") setOrderNumber(data.orderNumber);
+        if (Array.isArray(data.items)) setItems(data.items);
         if (typeof data.paymentUrl === "string") setPaymentUrl(data.paymentUrl);
 
         if (data.status === "paid") {
@@ -266,8 +273,48 @@ export default function SuccessStatus({
         <div className="mt-4 space-y-3 rounded-xl border border-neutral-200 bg-white p-4">
           <div>
             <p className="text-xs text-neutral-500">Order ID</p>
-            <p className="break-all text-sm text-neutral-900">{resolvedOrderId}</p>
+            <p className="break-all text-sm text-neutral-900">
+              {orderNumber ?? resolvedOrderId}
+            </p>
+            {orderNumber ? (
+              <p className="break-all text-[11px] text-neutral-400">
+                {resolvedOrderId}
+              </p>
+            ) : null}
           </div>
+
+          {/*
+            * What the money is for.
+            *
+            * The page showed a total and the order id and nothing else, so
+            * someone deciding whether to send $9,756.50 could not see from it
+            * which part they were paying for. The lines come from the same
+            * server response as the status, so they are the order's own
+            * snapshot rather than anything read back out of the cart.
+            */}
+          {items.length > 0 ? (
+            <div>
+              <p className="mb-1.5 text-xs text-neutral-500">Items</p>
+              <ul className="space-y-1.5">
+                {items.map((item, index) => (
+                  <li
+                    key={`${item.name}-${index}`}
+                    className="flex items-start justify-between gap-3 text-sm"
+                  >
+                    <span className="min-w-0 text-neutral-900">
+                      {item.name}
+                      {item.quantity > 1 ? (
+                        <span className="text-neutral-500"> × {item.quantity}</span>
+                      ) : null}
+                    </span>
+                    <span className="shrink-0 tabular-nums text-neutral-700">
+                      {formatUsdAsCurrency(item.price * item.quantity, "USD", 1, locale)}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
           {npPaymentId ? (
             <div>
               <p className="text-xs text-neutral-500">NOWPayments Transaction ID</p>

@@ -397,19 +397,51 @@ export async function getOrderStatusById(id: string): Promise<OrderStatus | null
  * unguessable UUID and the total is an amount the buyer already knows, so
  * this exposes no PII beyond what the purchaser supplied.
  */
-export async function getOrderStatusSummaryById(
-  id: string
-): Promise<{ status: OrderStatus; total: number } | null> {
+export async function getOrderStatusSummaryById(id: string): Promise<{
+  status: OrderStatus;
+  total: number;
+  orderNumber: string;
+  items: { name: string; quantity: number; price: number; image: string | null }[];
+} | null> {
   const supabase = getSupabaseAdmin();
   const { data, error } = await supabase
     .from("orders")
-    .select("status, total")
+    .select("status, total, order_number")
     .eq("id", id)
     .maybeSingle();
 
   if (error) throw error;
   if (!data) return null;
-  return { status: data.status as OrderStatus, total: Number(data.total) };
+
+  /*
+   * The lines are part of the answer, not an extra.
+   *
+   * This returned status and total alone, so the page a customer lands on
+   * after payment could tell them a number and nothing about what the number
+   * was for -- no part name, no quantity. Someone deciding whether to pay
+   * $9,756.50 should be able to see it is for the engine they chose.
+   *
+   * Nothing here is private: the buyer supplied the order and already knows
+   * what is in it, and the id is an unguessable UUID. A failed item lookup
+   * degrades to an empty list rather than failing the status poll, which is
+   * the part the page actually depends on.
+   */
+  const { data: items } = await supabase
+    .from("order_items")
+    .select("name, quantity, price, image")
+    .eq("order_id", id);
+
+  return {
+    status: data.status as OrderStatus,
+    total: Number(data.total),
+    orderNumber: data.order_number as string,
+    items: (items ?? []).map((i) => ({
+      name: String(i.name),
+      quantity: Number(i.quantity),
+      price: Number(i.price),
+      image: (i.image as string | null) ?? null,
+    })),
+  };
 }
 
 /**

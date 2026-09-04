@@ -83,6 +83,8 @@ export async function GET(req: Request) {
         status: summary.status,
         total: summary.total,
         orderId,
+        orderNumber: summary.orderNumber,
+        items: summary.items,
         paymentStatus: payment?.status ?? null,
         paymentUrl: payment?.payment_url ?? null,
       },
