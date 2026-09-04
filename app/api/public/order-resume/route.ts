@@ -46,9 +46,18 @@ export async function GET(req: Request) {
   try {
     const supabase = getSupabaseAdmin();
 
+    /*
+     * shipping_method is NOT selected here, deliberately. That column arrives
+     * with migration 013, which has not been applied -- createOrderRecord
+     * already carries a retry for exactly this. PostgREST rejects an unknown
+     * column with 42703 for the whole statement, so asking for it turned every
+     * lookup into an error and every resume into a 404. The shipping amount is
+     * on the order and is all this needs; the method is re-derived at checkout
+     * from the address anyway.
+     */
     const { data: order } = await supabase
       .from("orders")
-      .select("id, order_number, status, customer_id, shipping, shipping_method")
+      .select("id, order_number, status, customer_id, shipping")
       .eq("id", orderId)
       .maybeSingle();
 
@@ -98,7 +107,6 @@ export async function GET(req: Request) {
         orderId: order.id,
         orderNumber: order.order_number,
         shipping: Number(order.shipping ?? 0),
-        shippingMethod: order.shipping_method ?? "standard",
         items: items.map((i) => ({
           id: Number(i.product_id),
           name: String(i.name),
