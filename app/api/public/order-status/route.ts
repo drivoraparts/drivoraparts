@@ -56,6 +56,17 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "orderId or NP_id required" }, { status: 400 });
   }
 
+  /*
+   * Anything that is not a UUID cannot be an order id, and Postgres rejects it
+   * with 22P02 rather than returning no rows -- which surfaced as a 500 for
+   * anyone who edited the id in the address bar. Answer 404, identical to a
+   * well-formed id that does not exist, so the response never distinguishes
+   * "malformed", "not yours" and "no such order".
+   */
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(orderId)) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  }
+
   try {
     const summary = await getOrderStatusSummaryById(orderId);
 
