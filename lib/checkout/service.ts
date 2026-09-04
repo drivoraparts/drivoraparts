@@ -1,6 +1,6 @@
 import { insertAnalyticsEvent } from "@/lib/db/analytics";
 
-import { createCustomer } from "@/lib/db/customers";
+import { upsertCustomerByEmail } from "@/lib/db/customers";
 
 import { hasInventory } from "@/lib/db/inventory";
 
@@ -206,7 +206,7 @@ export async function processCheckout(input: {
 
 
 
-  const customer = await createCustomer({
+  const customer = await upsertCustomerByEmail({
 
     fullName: input.customer.fullName,
 
@@ -235,6 +235,12 @@ export async function processCheckout(input: {
     shippingZone: input.shippingZone,
 
     customerEmail: customer.email,
+
+    // Snapshot the address on the order itself. The customer record now
+
+    // carries the latest address, so it cannot be used as the historical one.
+
+    shipmentDestination: input.customer.shippingAddress,
 
   });
 

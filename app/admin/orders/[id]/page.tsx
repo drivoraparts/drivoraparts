@@ -133,10 +133,20 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
                 </li>
               ))}
             </ul>
-            {order.customer?.shipping_address ? (
+            {/*
+              * The address this order was placed with, not the customer's
+              * current one. Customers are matched by email now, so a returning
+              * buyer who has moved updates their record -- and reading the
+              * customer here would retroactively change where an already
+              * dispatched order appears to have gone. Orders placed before
+              * shipment_destination was captured have nothing of their own, so
+              * they still fall back to the customer record.
+              */}
+            {order.shipment_destination || order.customer?.shipping_address ? (
               <p className="mt-3 border-t border-zinc-100 pt-2.5 text-xs text-zinc-500">
-                Ship to: {order.customer.shipping_address}
-                {order.customer.phone ? ` · ${order.customer.phone}` : ""}
+                Ship to:{" "}
+                {order.shipment_destination ?? order.customer?.shipping_address}
+                {order.customer?.phone ? ` · ${order.customer.phone}` : ""}
               </p>
             ) : null}
 

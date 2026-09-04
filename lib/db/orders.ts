@@ -161,6 +161,12 @@ export type CreateOrderInput = {
   /** Destination zone at order time. */
   shippingZone?: string;
   customerEmail?: string;
+  /**
+   * Where this order ships, captured at checkout. Held on the order rather
+   * than read back from the customer, so that refreshing a returning
+   * customer's address cannot silently change where past orders went.
+   */
+  shipmentDestination?: string;
 };
 
 /**
@@ -229,6 +235,7 @@ export async function createOrderRecord(
         order_number: generateOrderNumber(),
         order_status: "order_received",
         control_status: "active",
+        shipment_destination: input.shipmentDestination ?? null,
         ...(includeShippingColumns
           ? {
               shipping_method: input.shippingMethod ?? "standard",
