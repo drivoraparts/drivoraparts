@@ -119,6 +119,12 @@ export default function CheckoutPage() {
   // useState initializer) so the server-rendered empty inputs match the
   // client's first render -- no hydration mismatch.
   useEffect(() => {
+    // ?resume= wins over the local draft — see the effect below, which loads
+    // the order from the server. Restoring stale localStorage over it would
+    // reintroduce exactly the bug that parameter exists to fix.
+    if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("resume")) {
+      return;
+    }
     const draft = readCheckoutFormDraft();
     if (!draft) return;
     setFullName(draft.fullName);
@@ -129,6 +135,99 @@ export default function CheckoutPage() {
     setZip(draft.zip);
     setCountry(draft.country);
   }, []);
+
+  /*
+   * Resuming an existing pending order.
+   *
+   * The order is the source of truth, not the browser: the cart is rebuilt
+   * from the order's own item snapshot and the form from the customer record,
+   * so this works on a device that has never seen this order. Everything
+   * lands in ordinary editable state -- the customer can change any of it
+   * before continuing, and submitting goes through the normal checkout path.
+   *
+   * No order is created or modified here; this is a read.
+   */
+  const [resuming, setResuming] = useState(false);
+  const resumeAttempted = useRef(false);
+
+  useEffect(() => {
+    if (!hydrated || resumeAttempted.current) return;
+    const resumeId = new URLSearchParams(window.location.search).get("resume");
+    if (!resumeId) return;
+    resumeAttempted.current = true;
+
+    let active = true;
+    setResuming(true);
+
+    (async () => {
+      try {
+        const res = await fetch(
+          `/api/public/order-resume?orderId=${encodeURIComponent(resumeId)}`,
+          { cache: "no-store" }
+        );
+        if (!active) return;
+        if (!res.ok) {
+          showToast(
+            res.status === 404
+              ? "That order can no longer be resumed."
+              : "Could not load your order. Please try again."
+          );
+          return;
+        }
+
+        const data = (await res.json()) as {
+          items?: {
+            id: number; name: string; price: number; image: string;
+            category: string; brand?: string; quantity: number;
+          }[];
+          customer?: {
+            fullName: string; email: string; phone: string;
+            address: string; city: string; zip: string; country: string;
+          };
+        };
+        if (!active) return;
+
+        if (data.items?.length) {
+          // Replace rather than merge: the order defines what is being bought,
+          // and adding to whatever happened to be in the cart would change the
+          // amount away from the invoice the customer already has.
+          clearCart();
+          for (const item of data.items) {
+            useCartStore.getState().addToCart(
+              {
+                id: item.id,
+                name: item.name,
+                price: item.price,
+                image: item.image,
+                category: item.category,
+                brand: item.brand,
+              },
+              item.quantity
+            );
+          }
+        }
+
+        const c = data.customer;
+        if (c) {
+          setFullName(c.fullName);
+          setEmail(c.email);
+          setPhone(c.phone);
+          setAddress(c.address);
+          setCity(c.city);
+          setZip(c.zip);
+          setCountry(c.country);
+        }
+      } catch {
+        if (active) showToast("Could not load your order. Please try again.");
+      } finally {
+        if (active) setResuming(false);
+      }
+    })();
+
+    return () => {
+      active = false;
+    };
+  }, [hydrated, clearCart]);
 
   useEffect(() => {
     if (!hydrated) return;

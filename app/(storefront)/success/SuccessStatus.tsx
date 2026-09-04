@@ -372,8 +372,22 @@ export default function SuccessStatus({
               Continue Payment
             </a>
           ) : null}
+          {/*
+            * Carries the order across.
+            *
+            * This was a bare href="/checkout", which left the page to rebuild
+            * itself from localStorage -- so opening the payment email on a
+            * phone, in another browser, or after clearing site data landed the
+            * customer on an empty checkout with their order apparently gone.
+            * ?resume= makes checkout load the order's own snapshot from the
+            * server instead.
+            */}
           <Link
-            href="/checkout"
+            href={
+              resolvedOrderId
+                ? `/checkout?resume=${encodeURIComponent(resolvedOrderId)}`
+                : "/checkout"
+            }
             className="block w-full rounded-lg border border-neutral-300 py-3 text-center text-sm font-semibold text-neutral-700 transition hover:bg-neutral-50"
           >
             Return to Checkout
