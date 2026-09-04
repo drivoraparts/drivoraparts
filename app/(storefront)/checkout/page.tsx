@@ -90,6 +90,30 @@ export default function CheckoutPage() {
     });
   }, []);
 
+  /*
+   * Back from NOWPayments on iOS Safari.
+   *
+   * Before leaving, this page rewrites its own history entry to
+   * /success?orderId=... so Back returns to the order rather than to an empty
+   * form. Safari's back-forward cache restores the page from memory instead of
+   * refetching, which would show the checkout DOM sitting under the /success
+   * URL -- the customer would be looking at a form when the address bar says
+   * order status. Reloading on a restored pageshow makes the browser fetch
+   * whatever the URL now points at.
+   *
+   * Only fires when the URL has actually been rewritten, so an ordinary
+   * bfcache return to /checkout still restores instantly.
+   */
+  useEffect(() => {
+    const onPageShow = (event: PageTransitionEvent) => {
+      if (event.persisted && !window.location.pathname.startsWith("/checkout")) {
+        window.location.reload();
+      }
+    };
+    window.addEventListener("pageshow", onPageShow);
+    return () => window.removeEventListener("pageshow", onPageShow);
+  }, []);
+
   // Restore customer info if the customer left for NOWPayments and came
   // back without completing payment. Read after mount (not as a lazy
   // useState initializer) so the server-rendered empty inputs match the
@@ -268,6 +292,30 @@ export default function CheckoutPage() {
       // customer backs out or abandons payment, they need their cart intact
       // to try again. The cart is only cleared once /success confirms the
       // order actually reached "paid" (see SuccessStatus.tsx).
+
+      /*
+       * Put the order status page in history BEFORE leaving for NOWPayments.
+       *
+       * Navigating straight to the invoice left /checkout as the previous
+       * entry, so Back from the NOWPayments page landed on an empty checkout
+       * form and the order the customer had just created looked lost. It was
+       * never lost -- it is in the database with its invoice attached -- but
+       * nothing in the browser pointed at it.
+       *
+       * replaceState swaps this entry's URL for the status page without
+       * navigating, so the subsequent assignment pushes NOWPayments on top of
+       * /success?orderId=... rather than on top of /checkout. Back now lands
+       * on the order, which resolves its real state server-side and offers
+       * Continue Payment against the existing invoice.
+       */
+      const orderId = typeof data.orderId === "string" ? data.orderId : null;
+      if (orderId) {
+        window.history.replaceState(
+          null,
+          "",
+          `/success?orderId=${encodeURIComponent(orderId)}`
+        );
+      }
       window.location.href = paymentUrl;
     } catch {
       showToast("Checkout failed");
