@@ -297,7 +297,11 @@ export default function SuccessStatus({
               </p>
               {currency !== "USD" ? (
                 <p className="text-xs text-neutral-500">
-                  ≈ <Price usd={total} /> at today&apos;s rate · charged in USD
+                  {/* Explicit {" "}: Price renders a <span>, and the literal
+                      space after it was being dropped, so the line read
+                      "FCFA 5,507,928at today's rate". */}
+                  ≈ <Price usd={total} />
+                  {" at today’s rate · charged in USD"}
                 </p>
               ) : null}
             </div>
