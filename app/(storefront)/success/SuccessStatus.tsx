@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Price from "@/components/currency/Price";
+import { formatUsdAsCurrency } from "@/lib/currency/format";
+import { useCurrencyStore } from "@/lib/store/currencyStore";
 import { useCartStore } from "@/lib/store/cartStore";
 import { clearCheckoutFormDraft } from "@/lib/checkout/form-persist";
 import { clearCheckoutStartClaim } from "@/lib/checkout/checkout-tracking";
@@ -81,6 +83,10 @@ export default function SuccessStatus({
   const [paymentUrl, setPaymentUrl] = useState<string | null>(null);
   const purchaseTracked = useRef(false);
   const clearCart = useCartStore((s) => s.clearCart);
+  // Only to decide whether an approximate line is worth showing; the amount due
+  // is always rendered in USD, the currency the invoice settles in.
+  const currency = useCurrencyStore((s) => s.currency);
+  const locale = useCurrencyStore((s) => s.locale);
 
   useEffect(() => {
     if (!orderId && !npPaymentId) return;
@@ -269,11 +275,31 @@ export default function SuccessStatus({
             </div>
           ) : null}
           {total != null ? (
+            /*
+             * USD is the figure, not a converted one.
+             *
+             * This used to render <Price usd={total} />, which converts into
+             * whichever currency the visitor is browsing in. On a catalog page
+             * that is the point; on the page where someone is about to pay it
+             * is a different number from the one NOWPayments will charge. A
+             * $9,756.50 invoice was being shown as "FCFA 6,507,928" directly
+             * above a Continue Payment button that opens a USD invoice.
+             *
+             * The settlement amount leads. When the visitor is browsing in
+             * another currency the converted value is kept underneath, clearly
+             * marked approximate, so the familiar figure is not lost -- it just
+             * stops impersonating the amount due.
+             */
             <div>
               <p className="text-xs text-neutral-500">{totalLabel}</p>
               <p className="text-lg font-medium text-neutral-900">
-                <Price usd={total} />
+                {formatUsdAsCurrency(total, "USD", 1, locale)}
               </p>
+              {currency !== "USD" ? (
+                <p className="text-xs text-neutral-500">
+                  ≈ <Price usd={total} /> at today&apos;s rate · charged in USD
+                </p>
+              ) : null}
             </div>
           ) : null}
         </div>
