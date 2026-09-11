@@ -145,20 +145,46 @@ export async function GET() {
   }
 
   let token: string | null = null;
+  let data: Record<string, unknown> = {};
   try {
-    const data = JSON.parse(raw) as Record<string, unknown>;
+    data = JSON.parse(raw) as Record<string, unknown>;
     const candidate = data.token ?? data.sessionToken ?? data.session_token;
     token = typeof candidate === "string" && candidate ? candidate : null;
   } catch {
     token = null;
   }
 
-  if (!token) {
+  // North's checkout.js is WAF-blocked in the browser, so an embedded mount
+  // cannot work from here. If the session response carries a North-HOSTED
+  // checkout URL, redirecting to it sidesteps checkout.js entirely -- North
+  // serves the whole page. Scan every string field for an https URL on
+  // North's domain.
+  const hostedUrl = Object.values(data).find(
+    (v): v is string =>
+      typeof v === "string" && /^https:\/\/[^\s]*north\.com/i.test(v)
+  );
+
+  if (!token && !hostedUrl) {
     return page(
       "North sandbox — no token in response",
-      `<div class="err">North answered HTTP ${upstream.status} but no token was found in
-      the response:<pre>${escapeHtml(raw.slice(0, 1500))}</pre></div>`,
+      `<div class="err">North answered HTTP ${upstream.status} but no usable token or
+      hosted URL was found:<pre>${escapeHtml(raw.slice(0, 1500))}</pre></div>`,
       502
+    );
+  }
+
+  if (hostedUrl) {
+    return page(
+      "North sandbox — hosted checkout available",
+      `<div class="note"><strong>SANDBOX ONLY.</strong> North returned a hosted
+      checkout URL, which avoids the blocked embedded script. Open it and enter the
+      test card <code>4111 1111 1111 1111</code>, exp <code>12/30</code>, CVV
+      <code>123</code>, ZIP <code>12345</code>.</div>
+      <p style="margin:16px 0"><a href="${escapeHtml(hostedUrl)}" target="_blank" rel="noopener"
+      style="display:inline-block;background:#1f7a4d;color:#fff;padding:14px 28px;border-radius:6px;
+      font-weight:700;text-decoration:none">Open North hosted checkout →</a></p>
+      <p style="font-size:13px;color:#555">Full session response, for reference:</p>
+      <pre>${escapeHtml(raw.slice(0, 2000))}</pre>`
     );
   }
 
@@ -170,6 +196,8 @@ export async function GET() {
     Reloading this page creates a new session.</div>
     <div id="status">Session created. Loading North's checkout form…</div>
     <div id="checkout-container"></div>
+    <details style="margin-top:16px"><summary style="cursor:pointer;font-size:13px;color:#555">Full session response (for spotting a hosted URL)</summary>
+    <pre>${escapeHtml(raw.slice(0, 2000))}</pre></details>
     <script>
       (function () {
         var token = ${jsString(token)};
