@@ -170,25 +170,61 @@ export async function GET() {
     Reloading this page creates a new session.</div>
     <div id="status">Session created. Loading North's checkout form…</div>
     <div id="checkout-container"></div>
-    <script src="https://checkout.north.com/checkout.js"></script>
     <script>
       (function () {
         var token = ${jsString(token)};
         var status = document.getElementById("status");
         function log(m) { status.textContent += "\\n" + m; }
-        var api = window.checkout || window.Checkout || window.North || window.NorthCheckout;
-        if (!api || typeof api.mount !== "function") {
-          log("checkout.js did not expose mount(). Globals found: " +
-            Object.keys(window).filter(function (k) { return /check|north/i.test(k); }).join(", "));
-          return;
+
+        // Snapshot globals before loading, so we can name exactly what
+        // checkout.js adds -- the earlier probe only looked for a fixed set of
+        // names and reported nothing, which does not distinguish "script did
+        // not load" from "script loaded under a name I did not guess".
+        var before = {};
+        Object.keys(window).forEach(function (k) { before[k] = true; });
+
+        function tryMount(api, label) {
+          var fn = api && (api.mount || api.render || api.init || api.create);
+          if (typeof fn !== "function") return false;
+          log("Using " + label + "." + (api.mount ? "mount" : api.render ? "render" : api.init ? "init" : "create") + "().");
+          try {
+            Promise.resolve(fn.call(api, token, "checkout-container"))
+              .then(function () { log("Form mounted. Enter the test card and submit."); })
+              .catch(function (e) { log("mount failed: " + (e && e.message ? e.message : e)); });
+          } catch (e) {
+            log("mount threw: " + (e && e.message ? e.message : e));
+          }
+          return true;
         }
-        try {
-          Promise.resolve(api.mount(token, "checkout-container"))
-            .then(function () { log("Form mounted. Enter the test card and submit."); })
-            .catch(function (e) { log("mount() failed: " + (e && e.message ? e.message : e)); });
-        } catch (e) {
-          log("mount() threw: " + (e && e.message ? e.message : e));
-        }
+
+        var s = document.createElement("script");
+        s.src = "https://checkout.north.com/checkout.js";
+        s.onerror = function () {
+          log("checkout.js FAILED to load. The browser was blocked from fetching it " +
+              "(WAF/Radware 403, or a network refusal) -- the same wall the server hit. " +
+              "North's embedded script is not reachable from the browser either, so this " +
+              "needs North support: ask them to allow checkout.js and the sandbox origin " +
+              "for drivoraparts.com.");
+        };
+        s.onload = function () {
+          var added = Object.keys(window).filter(function (k) { return !before[k]; });
+          // Anything new that carries a mount-like function is the SDK entry point.
+          var entry = null, entryName = "";
+          added.concat(["checkout", "Checkout", "North", "NorthCheckout"]).some(function (k) {
+            var v = window[k];
+            if (v && (typeof v.mount === "function" || typeof v.render === "function" ||
+                      typeof v.init === "function" || typeof v.create === "function")) {
+              entry = v; entryName = k; return true;
+            }
+            return false;
+          });
+          if (entry) { tryMount(entry, entryName); return; }
+          log("checkout.js loaded but exposed no mount()/render()/init()/create().");
+          log("New globals it added: " + (added.length ? added.join(", ") : "(none)"));
+          log("If this list is empty, the file loaded as an empty/blocked response. " +
+              "Send this to North support with the checkout ID.");
+        };
+        document.head.appendChild(s);
       })();
     </script>`
   );
