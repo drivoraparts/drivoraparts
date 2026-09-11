@@ -188,6 +188,27 @@ export async function GET() {
     );
   }
 
+  /*
+   * Diagnostic: fetch checkout.js from the WORKER (Cloudflare's global
+   * network, not the merchant's browser/region). The browser in Cameroon gets
+   * 403 rdwr, and a curl from the merchant's own machine (also Cameroon) gets
+   * 403 rdwr -- but the /api/sessions POST from this Worker succeeded. So the
+   * question North needs answered is: does checkout.js 403 everywhere, or only
+   * for certain regions? If this probe is 200, the block is geographic; if it
+   * is also 403 rdwr, North's embedded script is blocked for all clients and
+   * the integration is broken at their WAF regardless of origin.
+   */
+  let jsProbe = "not run";
+  try {
+    const probe = await fetch("https://checkout.north.com/checkout.js", {
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; DrivoraDiag/1.0)" },
+    });
+    await probe.text();
+    jsProbe = `HTTP ${probe.status} · Server: ${probe.headers.get("server") ?? "?"} · ${probe.headers.get("content-type") ?? "?"}`;
+  } catch (error) {
+    jsProbe = "fetch failed: " + (error instanceof Error ? error.message : String(error));
+  }
+
   return page(
     "North sandbox — test transaction",
     `<div class="note"><strong>SANDBOX ONLY.</strong> Enter the test card
@@ -196,6 +217,10 @@ export async function GET() {
     Reloading this page creates a new session.</div>
     <div id="status">Session created. Loading North's checkout form…</div>
     <div id="checkout-container"></div>
+    <p style="margin-top:16px;font-size:13px;color:#555">Diagnostic — checkout.js fetched from the Worker (Cloudflare network, not this browser's region):
+    <br /><code>${escapeHtml(jsProbe)}</code>
+    <br />If this is 200 but the browser above says "FAILED to load", the 403 is a geographic block.
+    If this is also 403 rdwr, checkout.js is blocked for all clients.</p>
     <details style="margin-top:16px"><summary style="cursor:pointer;font-size:13px;color:#555">Full session response (for spotting a hosted URL)</summary>
     <pre>${escapeHtml(raw.slice(0, 2000))}</pre></details>
     <script>
