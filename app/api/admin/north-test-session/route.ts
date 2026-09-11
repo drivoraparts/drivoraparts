@@ -239,13 +239,42 @@ export async function GET() {
         function tryMount(api, label) {
           var fn = api && (api.mount || api.render || api.init || api.create);
           if (typeof fn !== "function") return false;
-          log("Using " + label + "." + (api.mount ? "mount" : api.render ? "render" : api.init ? "init" : "create") + "().");
+          var method = api.mount ? "mount" : api.render ? "render" : api.init ? "init" : "create";
+          log("Using " + label + "." + method + "().");
+
+          /*
+           * North's Form Integration Guide and North's own sample repo disagree
+           * on this call. The guide documents a single options object --
+           *   checkout.mount({ sessionToken, containerId })
+           * -- while North-EC-Sample-JS/src/web/form/form.js uses positional
+           * args -- checkout.mount(sessionToken, "checkout-container"). Which one
+           * the loaded script actually wants is unknown until it runs, and it
+           * has never run here because the script is geo-blocked. So try the
+           * guide's shape first (it is the current authoritative doc), and fall
+           * back to positional if that throws synchronously.
+           */
+          function invoke(kind) {
+            if (kind === "options") {
+              return fn.call(api, { sessionToken: token, containerId: "checkout-container" });
+            }
+            return fn.call(api, token, "checkout-container");
+          }
+
+          function settle(p) {
+            Promise.resolve(p)
+              .then(function () { log("Form mounted (" + method + "). Enter the test card and submit."); })
+              .catch(function (e) { log(method + " rejected: " + (e && e.message ? e.message : e)); });
+          }
+
           try {
-            Promise.resolve(fn.call(api, token, "checkout-container"))
-              .then(function () { log("Form mounted. Enter the test card and submit."); })
-              .catch(function (e) { log("mount failed: " + (e && e.message ? e.message : e)); });
-          } catch (e) {
-            log("mount threw: " + (e && e.message ? e.message : e));
+            settle(invoke("options"));
+          } catch (e1) {
+            log(method + "(options) threw (" + (e1 && e1.message ? e1.message : e1) + "); trying positional.");
+            try {
+              settle(invoke("positional"));
+            } catch (e2) {
+              log(method + "(positional) also threw: " + (e2 && e2.message ? e2.message : e2));
+            }
           }
           return true;
         }
