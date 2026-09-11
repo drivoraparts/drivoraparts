@@ -80,8 +80,8 @@ export async function GET() {
   const { response } = await requireAdminApi();
   if (response) return response;
 
-  const key = process.env.NORTH_PRIVATE_KEY;
-  if (!key) {
+  const rawKey = process.env.NORTH_PRIVATE_KEY;
+  if (!rawKey) {
     return page(
       "North sandbox — key not configured",
       `<div class="err">The <code>NORTH_PRIVATE_KEY</code> Worker secret is not set.
@@ -90,6 +90,17 @@ export async function GET() {
       500
     );
   }
+
+  // A trailing newline from `wrangler secret put` is the usual reason a key
+  // that looks right is rejected -- North receives 65 characters and matches
+  // none. Trim before sending. The shape is reported below (length, charset,
+  // whitespace -- never the key) so a wrong key can be told from a mangled one.
+  const key = rawKey.trim();
+  const keyShape =
+    `length ${rawKey.length}` +
+    (rawKey.length !== key.length ? ` (trimmed to ${key.length} -- had surrounding whitespace)` : "") +
+    ` · ${/^[0-9a-f]+$/i.test(key) ? "hex" : "NOT plain hex"}` +
+    ` · expected 64 hex chars`;
 
   let upstream: Response;
   try {
@@ -126,7 +137,9 @@ export async function GET() {
       `<div class="err">North did not create a session.<br />
       HTTP <strong>${upstream.status}</strong> · Server:
       <code>${escapeHtml(upstream.headers.get("server") ?? "unknown")}</code>
-      <pre>${escapeHtml(raw.slice(0, 1500))}</pre></div>`,
+      <pre>${escapeHtml(raw.slice(0, 1500))}</pre>
+      <p style="font-size:13px;margin:8px 0 0">Stored key shape:
+      <code>${escapeHtml(keyShape)}</code></p></div>`,
       502
     );
   }
