@@ -17,6 +17,11 @@ import {
 import ProductImage from "@/components/media/ProductImage";
 import { useTranslation } from "@/hooks/useTranslation";
 import { readCheckoutFormDraft, writeCheckoutFormDraft } from "@/lib/checkout/form-persist";
+import {
+  MANUAL_METHODS,
+  getManualMethod,
+  type ManualMethodId,
+} from "@/lib/payments/manual-methods";
 import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-tracking";
 
 const glassCard =
@@ -43,6 +48,11 @@ export default function CheckoutPage() {
   const [zip, setZip] = useState("");
   const [country, setCountry] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  // "crypto" keeps the existing NOWPayments flow exactly. Any manual method id
+  // routes the order through the manual/direct-payment path instead. Defaults
+  // to crypto so the current behaviour is unchanged unless the customer picks
+  // a direct method.
+  const [payChoice, setPayChoice] = useState<"crypto" | ManualMethodId>("crypto");
 
   /*
    * Shipping options for this cart and destination. Standard is always free
@@ -349,7 +359,8 @@ export default function CheckoutPage() {
           // A method name only. The server prices it — the browser never
           // sends an amount.
           shippingMethod,
-          provider: "nowpayments",
+          provider: payChoice === "crypto" ? "nowpayments" : "manual",
+          ...(payChoice !== "crypto" ? { manualMethod: payChoice } : {}),
         }),
       });
 
@@ -358,6 +369,19 @@ export default function CheckoutPage() {
       if (!res.ok) {
         showToast(data.error ?? "Checkout failed");
         setSubmitting(false);
+        return;
+      }
+
+      // Manual / direct payment: no external invoice exists. The order is
+      // created and pending; send the customer to their order page, where the
+      // instructions (once an admin sends them) and the receipt upload live.
+      // The cart is left intact until an admin verifies payment, exactly as
+      // with the crypto path.
+      if (data.payment?.manualPending && typeof data.orderId === "string") {
+        storeMetaCheckoutItems(
+          cart.map((item) => ({ id: item.id, quantity: item.quantity }))
+        );
+        window.location.href = `/success?orderId=${encodeURIComponent(data.orderId)}`;
         return;
       }
 
@@ -584,6 +608,72 @@ export default function CheckoutPage() {
 
               <section className={glassCard}>
                 <h2 className="mb-4 text-xl font-bold">Payment</h2>
+
+                {/* Direct/manual methods first, then the existing crypto option
+                    below an OR divider. Selecting a card sets payChoice, which
+                    drives both the instructions shown here and what checkout
+                    submits. Crypto stays the default so the NOWPayments flow is
+                    unchanged unless the customer chooses otherwise. */}
+                <div className="mb-5">
+                  <p className="mb-2 text-sm font-semibold text-neutral-800">
+                    Pay Directly
+                  </p>
+                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                    {MANUAL_METHODS.filter((m) => m.enabled).map((m) => (
+                      <button
+                        key={m.id}
+                        type="button"
+                        onClick={() => setPayChoice(m.id)}
+                        className={`flex items-start gap-2.5 rounded-lg border px-3 py-2.5 text-left transition ${
+                          payChoice === m.id
+                            ? "border-accent bg-accent-subtle ring-1 ring-accent"
+                            : "border-neutral-200 hover:border-neutral-300"
+                        }`}
+                      >
+                        <span className="text-lg leading-none">{m.icon}</span>
+                        <span className="min-w-0">
+                          <span className="block text-sm font-medium text-neutral-900">
+                            {m.label}
+                          </span>
+                          <span className="block text-[11px] leading-tight text-neutral-500">
+                            {m.blurb}
+                          </span>
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="h-px flex-1 bg-neutral-200" />
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-neutral-400">
+                    or
+                  </span>
+                  <span className="h-px flex-1 bg-neutral-200" />
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setPayChoice("crypto")}
+                  className={`mb-4 flex w-full items-start gap-2.5 rounded-lg border px-3 py-2.5 text-left transition ${
+                    payChoice === "crypto"
+                      ? "border-accent bg-accent-subtle ring-1 ring-accent"
+                      : "border-neutral-200 hover:border-neutral-300"
+                  }`}
+                >
+                  <span className="text-lg leading-none">₿</span>
+                  <span className="min-w-0">
+                    <span className="block text-sm font-medium text-neutral-900">
+                      Pay with Cryptocurrency
+                    </span>
+                    <span className="block text-[11px] leading-tight text-neutral-500">
+                      Bitcoin · Ethereum · USDT · 300+ coins via NOWPayments
+                    </span>
+                  </span>
+                </button>
+
+                {payChoice === "crypto" ? (
+                  <>
                 <p className="mb-4 font-medium">Secure Checkout via NOWPayments</p>
                 <p className="mb-4 text-sm text-neutral-600">
                   Complete your payment securely through NOWPayments, with
@@ -688,6 +778,24 @@ export default function CheckoutPage() {
                   alt="Crypto payments by NOWPayments"
                   className="h-10 w-auto opacity-90"
                 />
+                  </>
+                ) : (
+                  <div className="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
+                    <p className="mb-1.5 font-semibold text-neutral-800">
+                      Direct payment — {getManualMethod(payChoice)?.label}
+                    </p>
+                    <p className="mb-2">
+                      Place your order now. DrivoraParts will email you the
+                      payment details for this method, and your order stays
+                      reserved as <strong>Awaiting Payment</strong> until we
+                      confirm the funds.
+                    </p>
+                    <p className="text-xs text-neutral-500">
+                      You will not be charged automatically. Nothing ships until
+                      payment is verified.
+                    </p>
+                  </div>
+                )}
               </section>
             </div>
 
@@ -850,7 +958,11 @@ export default function CheckoutPage() {
                 disabled={submitting}
                 className="box-border w-full max-w-full rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
               >
-                {submitting ? t("processing") : t("payNow")}
+                {submitting
+                  ? t("processing")
+                  : payChoice === "crypto"
+                    ? t("payNow")
+                    : "Place Order"}
               </button>
             </div>
           </div>

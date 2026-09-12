@@ -111,6 +111,9 @@ export async function processCheckout(input: {
 
   providerId?: PaymentProviderId;
 
+  /** For providerId "manual": which method the customer picked. */
+  manualMethod?: string;
+
   shipping?: number;
 
   /** Which option the customer chose. Priced server-side, never client-sent. */
@@ -282,6 +285,8 @@ export async function processCheckout(input: {
       amount: Number(order.total),
 
       customerEmail: customer.email,
+
+      manualMethod: input.manualMethod,
 
     },
 

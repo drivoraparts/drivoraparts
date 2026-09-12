@@ -7,6 +7,8 @@ export type CreatePaymentSessionInput = {
   amount: number;
   currency?: string;
   customerEmail: string;
+  /** For the manual provider: which method the customer picked. */
+  manualMethod?: string;
 };
 
 export type PaymentSessionResult = {

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { processCheckout } from "@/lib/checkout/service";
+import { isManualMethodId } from "@/lib/payments/manual-methods";
 import { sendAdminCheckoutFailedEmail } from "@/lib/email/send";
 import {
   lockOrderItemsFromCatalog,
@@ -138,6 +139,14 @@ export async function POST(req: Request) {
         ? body.provider
         : undefined;
 
+    // Only meaningful for provider "manual". Validated against the enabled
+    // method list; an unknown value falls back to bank_transfer in the
+    // provider, so a crafted body cannot inject an arbitrary method label.
+    const manualMethod =
+      providerId === "manual" && isManualMethodId(body?.manualMethod)
+        ? (body.manualMethod as string)
+        : undefined;
+
     /*
      * The customer chooses a METHOD; the price is computed here. A shipping
      * amount is never read from the request body -- otherwise a crafted
@@ -159,6 +168,7 @@ export async function POST(req: Request) {
       items: lockedItems,
       customer,
       providerId,
+      manualMethod,
       shipping: shippingQuote.amount,
       shippingMethod: shippingQuote.method,
       freightClass: shippingQuote.freightClass,

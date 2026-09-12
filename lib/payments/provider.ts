@@ -20,6 +20,8 @@ export type InvoiceOrder = {
   amount: number;
   currency?: string;
   customerEmail?: string;
+  /** For the manual provider: which method the customer picked. */
+  manualMethod?: string;
 };
 
 export type InvoiceResult = {
@@ -265,20 +267,34 @@ export const manualPaymentProvider: PaymentProvider = {
         customerEmail: order.customerEmail,
         mode: "manual_pending",
         payment_method: "manual",
+        // Which method the customer chose (bank_transfer, zelle, ...). The
+        // receiving details are never here -- an admin sends them per order.
+        manual_method: order.manualMethod ?? "bank_transfer",
+        // Where this payment is in the manual lifecycle. Advances via the
+        // admin panel and the customer receipt upload; never here past the
+        // initial state. See lib/payments/manual-methods.ts ManualPaymentState.
+        manual_state: "awaiting_payment",
+        // Uploaded proof-of-payment file paths (Supabase Storage keys). Empty
+        // until the customer submits a receipt.
+        receipts: [],
       },
     });
 
     await logActivity("info", "payment.manual_pending", {
       orderId: order.orderId,
       paymentId: payment.id,
+      manualMethod: order.manualMethod ?? "bank_transfer",
     });
 
+    // status "disabled" is what createCheckoutPayment maps to manualPending:true
+    // -- it means "no external invoice, keep the order pending and route the
+    // customer to the order page", not that anything is turned off.
     return {
       provider: "manual",
       paymentId: payment.id,
       status: "disabled",
       message:
-        "Order received. Complete payment instructions will be emailed.",
+        "Order received. Payment instructions will be sent to your email shortly.",
     };
   },
 };
