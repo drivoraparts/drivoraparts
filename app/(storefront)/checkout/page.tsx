@@ -24,6 +24,7 @@ import {
   methodRequiresRoute,
   type ManualMethodId,
 } from "@/lib/payments/manual-methods";
+import PaymentMethodIcon from "@/components/checkout/PaymentMethodIcon";
 import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-tracking";
 
 const glassCard =
@@ -639,83 +640,102 @@ export default function CheckoutPage() {
                   <p className="mb-2 text-sm font-semibold text-neutral-800">
                     Pay Directly
                   </p>
-                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                    {MANUAL_METHODS.filter((m) => m.enabled).map((m) => (
-                      <button
-                        key={m.id}
-                        type="button"
-                        onClick={() => setPayChoice(m.id)}
-                        className={`flex items-start gap-2.5 rounded-lg border px-3 py-2.5 text-left transition ${
-                          payChoice === m.id
-                            ? "border-accent bg-accent-subtle ring-1 ring-accent"
-                            : "border-neutral-200 hover:border-neutral-300"
-                        }`}
-                      >
-                        <span className="text-lg leading-none">{m.icon}</span>
-                        <span className="min-w-0">
-                          <span className="block text-sm font-medium text-neutral-900">
-                            {m.label}
-                          </span>
-                          <span className="block text-[11px] leading-tight text-neutral-500">
-                            {m.blurb}
-                          </span>
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-
                   {/*
-                    The second, required question for any method that declares
-                    requiresRoute. "Bank Transfer" on its own does not say which
-                    instructions to send back -- a US customer and an Australian
-                    one need different details entirely -- so the route is
-                    captured at order time rather than resolved over email
-                    afterwards.
+                    One row per method, each owning whatever secondary controls
+                    it needs.
 
-                    It renders only for methods that need it, so switching to
-                    Zelle, Cash App, Venmo, Wire or crypto removes it and it can
-                    never block those checkouts. Route names only: no account
-                    numbers, sort codes or SWIFT/BIC appear here.
+                    The route selector used to sit below the whole list, which
+                    left it ambiguous which method it belonged to. A two-column
+                    grid made that worse, not better: a full-width panel dropped
+                    into it lands under two cards at once. A single column with
+                    the panel nested inside the selected card's own border makes
+                    ownership unmistakable, and any future method that needs its
+                    own follow-up question slots into the same place without
+                    touching this layout again.
                   */}
-                  {methodRequiresRoute(payChoice) ? (
-                    <div className="mt-3 rounded-lg border border-accent bg-accent-subtle/40 px-3 py-3">
-                      <label
-                        htmlFor="bank-route"
-                        className="block text-sm font-medium text-neutral-900"
-                      >
-                        Select Bank / Transfer Route{" "}
-                        <span className="text-red-600" aria-hidden="true">
-                          *
-                        </span>
-                      </label>
-                      <p className="mb-2 mt-0.5 text-[11px] leading-relaxed text-neutral-600">
-                        Tells us which account details to send you. No account
-                        numbers are shown or stored here.
-                      </p>
-                      <select
-                        id="bank-route"
-                        required
-                        aria-required="true"
-                        value={bankRoute}
-                        onChange={(e) => setBankRoute(e.target.value)}
-                        className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900"
-                      >
-                        <option value="">Choose your transfer route…</option>
-                        {BANK_ROUTES.filter((route) => route.enabled).map(
-                          (route) => (
-                            <option key={route.id} value={route.id}>
-                              {route.label}
-                            </option>
-                          )
-                        )}
-                      </select>
-                      {!bankRoute ? (
-                        <p className="mt-1.5 text-[11px] font-medium text-neutral-600">
-                          Required before you can place the order.
-                        </p>
-                      ) : null}
-                    </div>
-                  ) : null}
+                  <div className="space-y-2">
+                    {MANUAL_METHODS.filter((m) => m.enabled).map((m) => {
+                      const selected = payChoice === m.id;
+                      const expanded = selected && methodRequiresRoute(m.id);
+
+                      return (
+                        <div
+                          key={m.id}
+                          className={`overflow-hidden rounded-lg border transition ${
+                            selected
+                              ? "border-accent bg-accent-subtle ring-1 ring-accent"
+                              : "border-neutral-200 hover:border-neutral-300"
+                          }`}
+                        >
+                          <button
+                            type="button"
+                            onClick={() => setPayChoice(m.id)}
+                            aria-expanded={expanded}
+                            className="flex w-full items-start gap-2.5 px-3 py-2.5 text-left"
+                          >
+                            <PaymentMethodIcon id={m.id} />
+                            <span className="min-w-0">
+                              <span className="block text-sm font-medium text-neutral-900">
+                                {m.label}
+                              </span>
+                              <span className="block text-[11px] leading-tight text-neutral-500">
+                                {m.blurb}
+                              </span>
+                            </span>
+                          </button>
+
+                          {/*
+                            The required follow-up question, rendered inside the
+                            card it belongs to rather than after the list. Only
+                            for a selected method that declares requiresRoute, so
+                            switching to Zelle, Cash App, Venmo, Wire or crypto
+                            removes it entirely and it can never block those
+                            checkouts. Route names only: no account numbers, sort
+                            codes or SWIFT/BIC appear here.
+                          */}
+                          {expanded ? (
+                            <div className="border-t border-accent/40 px-3 pb-3 pt-2.5">
+                              <label
+                                htmlFor="bank-route"
+                                className="block text-sm font-medium text-neutral-900"
+                              >
+                                Select Bank / Transfer Route{" "}
+                                <span className="text-red-600" aria-hidden="true">
+                                  *
+                                </span>
+                              </label>
+                              <p className="mb-2 mt-0.5 text-[11px] leading-relaxed text-neutral-600">
+                                Tells us which account details to send you. No
+                                account numbers are shown or stored here.
+                              </p>
+                              <select
+                                id="bank-route"
+                                required
+                                aria-required="true"
+                                value={bankRoute}
+                                onChange={(e) => setBankRoute(e.target.value)}
+                                className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900"
+                              >
+                                <option value="">Choose your transfer route…</option>
+                                {BANK_ROUTES.filter((route) => route.enabled).map(
+                                  (route) => (
+                                    <option key={route.id} value={route.id}>
+                                      {route.label}
+                                    </option>
+                                  )
+                                )}
+                              </select>
+                              {!bankRoute ? (
+                                <p className="mt-1.5 text-[11px] font-medium text-neutral-600">
+                                  Required before you can place the order.
+                                </p>
+                              ) : null}
+                            </div>
+                          ) : null}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
 
                 <div className="mb-5 flex items-center gap-3">
@@ -735,7 +755,7 @@ export default function CheckoutPage() {
                       : "border-neutral-200 hover:border-neutral-300"
                   }`}
                 >
-                  <span className="text-lg leading-none">₿</span>
+                  <PaymentMethodIcon id="crypto" />
                   <span className="min-w-0">
                     <span className="block text-sm font-medium text-neutral-900">
                       Pay with Cryptocurrency
