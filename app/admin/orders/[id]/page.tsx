@@ -11,7 +11,7 @@ import { getOrderById, listOrderEvents } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
 import { readManualPayment } from "@/lib/payments/manual-payment";
 import { createReceiptSignedUrl } from "@/lib/payments/receipt-storage";
-import { getManualMethod } from "@/lib/payments/manual-methods";
+import { getBankRoute, getManualMethod } from "@/lib/payments/manual-methods";
 
 export const dynamic = "force-dynamic";
 
@@ -228,6 +228,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
             <ManualPaymentPanel
               orderId={order.id}
               methodLabel={getManualMethod(manual.method)?.label ?? "Bank Transfer"}
+              routeLabel={getBankRoute(manual.route)?.label ?? manual.route}
               state={manual.state}
               amount={manual.amount}
               currency={manual.currency}

@@ -39,6 +39,8 @@ export type ManualPaymentView = {
   currency: string;
   /** Method id from manual-methods.ts (bank_transfer, zelle, ...). */
   method: string;
+  /** Bank/transfer route id the customer chose, for methods that need one. */
+  route: string | null;
   state: ManualPaymentState;
   /** The payment details an admin pasted and sent. Never in source control. */
   instructions: string | null;
@@ -116,6 +118,7 @@ export function readManualPayment(
     amount: Number(payment.amount),
     currency: payment.currency ?? "USD",
     method: asString(meta.manual_method) ?? "bank_transfer",
+    route: asString(meta.manual_route),
     state,
     instructions: asString(meta.manual_instructions),
     instructionsSentAt: asString(meta.manual_instructions_sent_at),

@@ -9,6 +9,8 @@ export type CreatePaymentSessionInput = {
   customerEmail: string;
   /** For the manual provider: which method the customer picked. */
   manualMethod?: string;
+  /** For methods that require one (Bank Transfer): the chosen bank/route. */
+  manualRoute?: string;
 };
 
 export type PaymentSessionResult = {

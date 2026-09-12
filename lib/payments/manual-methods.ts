@@ -28,16 +28,23 @@ export type ManualMethod = {
   /** Rough region, for the customer's orientation only. */
   region: string;
   enabled: boolean;
+  /**
+   * When true, checkout asks a second, required question: which bank/transfer
+   * route. "Bank Transfer" alone does not tell the owner which instructions to
+   * send back, which is the whole point of capturing it at order time.
+   */
+  requiresRoute?: boolean;
 };
 
 export const MANUAL_METHODS: ManualMethod[] = [
   {
     id: "bank_transfer",
     label: "Bank Transfer",
-    blurb: "Domestic or SEPA/UK/AU transfer — instructions sent after you order",
+    blurb: "Choose your transfer route — instructions sent after you order",
     icon: "🏦",
     region: "Worldwide",
     enabled: true,
+    requiresRoute: true,
   },
   {
     id: "wire",
@@ -101,3 +108,85 @@ export const MANUAL_STATE_LABELS: Record<ManualPaymentState, string> = {
   verified: "Payment Verified",
   verification_failed: "Verification Failed",
 };
+
+/**
+ * Bank / transfer routes offered when a customer picks Bank Transfer.
+ *
+ * "Bank Transfer" on its own does not say which instructions to send back --
+ * a US customer and an Australian one need different details entirely. This
+ * captures the requested route at order time so the owner knows which
+ * instructions to paste without a round trip of emails.
+ *
+ * These are ROUTE names, not bank names, and they hold no account data: no
+ * account numbers, sort codes, routing numbers, IBANs or SWIFT/BIC codes
+ * appear here or anywhere else in the repo. The receiving details are still
+ * pasted per order from the admin screen.
+ *
+ * To rename one to an actual bank ("United States — Chase"), edit the label
+ * here and nowhere else -- checkout, the order record, the admin screen and
+ * the owner's notification email all read from this list. To retire a route
+ * without breaking orders that already chose it, set enabled:false: existing
+ * orders keep resolving their stored id to this label.
+ */
+export type BankRoute = {
+  id: string;
+  label: string;
+  /** Grouping shown beside the label; orientation only. */
+  region: string;
+  enabled: boolean;
+};
+
+export const BANK_ROUTES: BankRoute[] = [
+  {
+    id: "us_domestic",
+    label: "United States — Domestic Transfer (ACH)",
+    region: "United States",
+    enabled: true,
+  },
+  {
+    id: "uk_faster",
+    label: "United Kingdom — Faster Payments",
+    region: "United Kingdom",
+    enabled: true,
+  },
+  {
+    id: "eu_sepa",
+    label: "Europe — SEPA Transfer",
+    region: "Europe",
+    enabled: true,
+  },
+  {
+    id: "au_payid",
+    label: "Australia — PayID / Bank Transfer",
+    region: "Australia",
+    enabled: true,
+  },
+  {
+    id: "intl_swift",
+    label: "International — SWIFT Wire",
+    region: "International",
+    enabled: true,
+  },
+];
+
+/** Resolve a stored route id to its label. Disabled routes still resolve, so
+ *  an order placed before a route was retired still reads correctly. */
+export function getBankRoute(id: string | null | undefined): BankRoute | undefined {
+  if (!id) return undefined;
+  return BANK_ROUTES.find((route) => route.id === id);
+}
+
+/** Accepts only routes currently offered -- used to validate what checkout
+ *  sends, so a crafted body cannot inject an arbitrary route label. */
+export function isBankRouteId(value: unknown): boolean {
+  return (
+    typeof value === "string" &&
+    BANK_ROUTES.some((route) => route.id === value && route.enabled)
+  );
+}
+
+/** Whether a given method id demands a route before checkout may proceed. */
+export function methodRequiresRoute(id: string | null | undefined): boolean {
+  if (!id) return false;
+  return MANUAL_METHODS.some((m) => m.id === id && m.enabled && m.requiresRoute === true);
+}

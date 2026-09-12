@@ -45,6 +45,7 @@ function formatBytes(bytes: number): string {
 export default function ManualPaymentPanel({
   orderId,
   methodLabel,
+  routeLabel,
   state,
   amount,
   currency,
@@ -57,6 +58,9 @@ export default function ManualPaymentPanel({
 }: {
   orderId: string;
   methodLabel: string;
+  /** The bank/transfer route the customer asked for, when the method needs
+   * one. Null for Zelle/Cash App/Venmo/Wire, which have no sub-route. */
+  routeLabel: string | null;
   state: ManualPaymentState;
   amount: number;
   currency: string;
@@ -124,6 +128,15 @@ export default function ManualPaymentPanel({
         <span>
           Method: <span className="font-medium text-zinc-900">{methodLabel}</span>
         </span>
+        {/* The route the customer asked for. This is what says which set of
+            instructions to paste below, so it sits beside the method rather
+            than buried in the timeline. */}
+        {routeLabel ? (
+          <span>
+            Selected bank/route:{" "}
+            <span className="font-medium text-zinc-900">{routeLabel}</span>
+          </span>
+        ) : null}
         <span>
           Amount:{" "}
           <span className="font-medium text-zinc-900">

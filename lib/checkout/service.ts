@@ -33,7 +33,7 @@ import {
 
 } from "@/lib/email/send";
 
-import { getManualMethod } from "@/lib/payments/manual-methods";
+import { getBankRoute, getManualMethod } from "@/lib/payments/manual-methods";
 
 import { sendMetaCapIPurchase } from "@/lib/analytics/meta-capi";
 
@@ -116,6 +116,9 @@ export async function processCheckout(input: {
 
   /** For providerId "manual": which method the customer picked. */
   manualMethod?: string;
+
+  /** For methods that require one (Bank Transfer): the chosen bank/route. */
+  manualRoute?: string;
 
   shipping?: number;
 
@@ -291,6 +294,8 @@ export async function processCheckout(input: {
 
       manualMethod: input.manualMethod,
 
+      manualRoute: input.manualRoute,
+
     },
 
     input.providerId
@@ -410,6 +415,13 @@ export async function processCheckout(input: {
         image: item.image,
       })),
       paymentMethod: manualMethodLabel ?? "Cryptocurrency (NOWPayments)",
+      // Resolved to its label here so the notification reads "United States —
+      // Domestic Transfer (ACH)" rather than "us_domestic". Falls back to the
+      // raw id if a route is ever removed from the config after an order chose
+      // it, so the email still says something true.
+      paymentRoute: input.manualRoute
+        ? (getBankRoute(input.manualRoute)?.label ?? input.manualRoute)
+        : undefined,
     });
   } catch (error) {
     logWarn("pending_order_email_failed", {

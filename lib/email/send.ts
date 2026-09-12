@@ -480,6 +480,9 @@ export async function sendAdminNewOrderEmail(input: {
    * a manual order is recognisable from the inbox list, where it needs an
    * action from the owner that a crypto order does not. */
   paymentMethod?: string;
+  /** For Bank Transfer: the specific bank/route the customer asked for, so
+   * the right instructions can be sent back without a round trip. */
+  paymentRoute?: string;
 }): Promise<boolean> {
   const orderRef = input.orderNumber;
   const siteUrl = getSiteUrl();
@@ -510,6 +513,7 @@ export async function sendAdminNewOrderEmail(input: {
         ${input.shippingAddress ? renderReceiptMetaRow("Ship to", escapeHtml(input.shippingAddress)) : ""}
         ${renderReceiptMetaRow("Total", `$${input.total.toFixed(2)} USD`)}
         ${input.paymentMethod ? renderReceiptMetaRow("Payment method", escapeHtml(input.paymentMethod)) : ""}
+        ${input.paymentRoute ? renderReceiptMetaRow("Selected bank/route", escapeHtml(input.paymentRoute)) : ""}
         ${renderReceiptMetaRow("Status", "Awaiting payment")}
       `)}
 

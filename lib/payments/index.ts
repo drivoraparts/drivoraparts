@@ -42,6 +42,7 @@ export async function createCheckoutPayment(
       currency: input.currency,
       customerEmail: input.customerEmail,
       manualMethod: input.manualMethod,
+      manualRoute: input.manualRoute,
     },
     providerId
   );

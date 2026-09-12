@@ -22,6 +22,8 @@ export type InvoiceOrder = {
   customerEmail?: string;
   /** For the manual provider: which method the customer picked. */
   manualMethod?: string;
+  /** For methods that require one (Bank Transfer): the chosen bank/route. */
+  manualRoute?: string;
 };
 
 export type InvoiceResult = {
@@ -270,6 +272,9 @@ export const manualPaymentProvider: PaymentProvider = {
         // Which method the customer chose (bank_transfer, zelle, ...). The
         // receiving details are never here -- an admin sends them per order.
         manual_method: order.manualMethod ?? "bank_transfer",
+        // Which bank/transfer route the customer asked for, when the method
+        // requires one. A route id only -- never account details.
+        manual_route: order.manualRoute ?? null,
         // Where this payment is in the manual lifecycle. Advances via the
         // admin panel and the customer receipt upload; never here past the
         // initial state. See lib/payments/manual-methods.ts ManualPaymentState.

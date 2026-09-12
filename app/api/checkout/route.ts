@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { processCheckout } from "@/lib/checkout/service";
-import { isManualMethodId } from "@/lib/payments/manual-methods";
+import {
+  isBankRouteId,
+  isManualMethodId,
+  methodRequiresRoute,
+} from "@/lib/payments/manual-methods";
 import { sendAdminCheckoutFailedEmail } from "@/lib/email/send";
 import {
   lockOrderItemsFromCatalog,
@@ -147,6 +151,27 @@ export async function POST(req: Request) {
         ? (body.manualMethod as string)
         : undefined;
 
+    // Which bank/transfer route was requested. Validated against the enabled
+    // route list, so a crafted body cannot inject an arbitrary label.
+    const manualRoute =
+      manualMethod && isBankRouteId(body?.manualRoute)
+        ? (body.manualRoute as string)
+        : undefined;
+
+    /*
+     * A method that declares requiresRoute cannot be ordered without one.
+     * Enforced here rather than only in the browser: knowing which route was
+     * asked for is the entire reason it is collected, and an order that
+     * arrives without it costs a round trip of emails to resolve.
+     */
+    if (manualMethod && methodRequiresRoute(manualMethod) && !manualRoute) {
+      logWarn("checkout_missing_bank_route", { ip, method: manualMethod });
+      return NextResponse.json(
+        { error: "Please choose your bank / transfer route." },
+        { status: 400 }
+      );
+    }
+
     /*
      * The customer chooses a METHOD; the price is computed here. A shipping
      * amount is never read from the request body -- otherwise a crafted
@@ -169,6 +194,7 @@ export async function POST(req: Request) {
       customer,
       providerId,
       manualMethod,
+      manualRoute,
       shipping: shippingQuote.amount,
       shippingMethod: shippingQuote.method,
       freightClass: shippingQuote.freightClass,

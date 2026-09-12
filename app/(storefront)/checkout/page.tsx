@@ -18,8 +18,10 @@ import ProductImage from "@/components/media/ProductImage";
 import { useTranslation } from "@/hooks/useTranslation";
 import { readCheckoutFormDraft, writeCheckoutFormDraft } from "@/lib/checkout/form-persist";
 import {
+  BANK_ROUTES,
   MANUAL_METHODS,
   getManualMethod,
+  methodRequiresRoute,
   type ManualMethodId,
 } from "@/lib/payments/manual-methods";
 import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-tracking";
@@ -53,6 +55,10 @@ export default function CheckoutPage() {
   // to crypto so the current behaviour is unchanged unless the customer picks
   // a direct method.
   const [payChoice, setPayChoice] = useState<"crypto" | ManualMethodId>("crypto");
+  // Only meaningful for a method that declares requiresRoute (Bank Transfer).
+  // Kept when the customer switches away and back, but never submitted -- and
+  // never required -- unless the selected method actually asks for it.
+  const [bankRoute, setBankRoute] = useState("");
 
   /*
    * Shipping options for this cart and destination. Standard is always free
@@ -320,6 +326,17 @@ export default function CheckoutPage() {
   const handleCheckout = async () => {
     if (!cart.length || submitting) return;
 
+    /*
+     * A method that declares requiresRoute cannot be submitted without one.
+     * The server enforces this as well (400) -- this exists so the customer is
+     * told immediately rather than after a round trip, and so the button does
+     * not appear to do nothing.
+     */
+    if (methodRequiresRoute(payChoice) && !bankRoute) {
+      showToast("Please choose your bank / transfer route.");
+      return;
+    }
+
     if (
       !fullName.trim() ||
       !email.trim() ||
@@ -361,6 +378,10 @@ export default function CheckoutPage() {
           shippingMethod,
           provider: payChoice === "crypto" ? "nowpayments" : "manual",
           ...(payChoice !== "crypto" ? { manualMethod: payChoice } : {}),
+          // Sent only for a method that asks for one, so switching to Zelle,
+          // Venmo or crypto cannot carry a stale route over from an earlier
+          // selection the customer changed their mind about.
+          ...(methodRequiresRoute(payChoice) ? { manualRoute: bankRoute } : {}),
         }),
       });
 
@@ -642,6 +663,59 @@ export default function CheckoutPage() {
                       </button>
                     ))}
                   </div>
+
+                  {/*
+                    The second, required question for any method that declares
+                    requiresRoute. "Bank Transfer" on its own does not say which
+                    instructions to send back -- a US customer and an Australian
+                    one need different details entirely -- so the route is
+                    captured at order time rather than resolved over email
+                    afterwards.
+
+                    It renders only for methods that need it, so switching to
+                    Zelle, Cash App, Venmo, Wire or crypto removes it and it can
+                    never block those checkouts. Route names only: no account
+                    numbers, sort codes or SWIFT/BIC appear here.
+                  */}
+                  {methodRequiresRoute(payChoice) ? (
+                    <div className="mt-3 rounded-lg border border-accent bg-accent-subtle/40 px-3 py-3">
+                      <label
+                        htmlFor="bank-route"
+                        className="block text-sm font-medium text-neutral-900"
+                      >
+                        Select Bank / Transfer Route{" "}
+                        <span className="text-red-600" aria-hidden="true">
+                          *
+                        </span>
+                      </label>
+                      <p className="mb-2 mt-0.5 text-[11px] leading-relaxed text-neutral-600">
+                        Tells us which account details to send you. No account
+                        numbers are shown or stored here.
+                      </p>
+                      <select
+                        id="bank-route"
+                        required
+                        aria-required="true"
+                        value={bankRoute}
+                        onChange={(e) => setBankRoute(e.target.value)}
+                        className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900"
+                      >
+                        <option value="">Choose your transfer route…</option>
+                        {BANK_ROUTES.filter((route) => route.enabled).map(
+                          (route) => (
+                            <option key={route.id} value={route.id}>
+                              {route.label}
+                            </option>
+                          )
+                        )}
+                      </select>
+                      {!bankRoute ? (
+                        <p className="mt-1.5 text-[11px] font-medium text-neutral-600">
+                          Required before you can place the order.
+                        </p>
+                      ) : null}
+                    </div>
+                  ) : null}
                 </div>
 
                 <div className="mb-5 flex items-center gap-3">
@@ -955,7 +1029,9 @@ export default function CheckoutPage() {
               <button
                 type="button"
                 onClick={handleCheckout}
-                disabled={submitting}
+                disabled={
+                  submitting || (methodRequiresRoute(payChoice) && !bankRoute)
+                }
                 className="box-border w-full max-w-full rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
               >
                 {submitting
