@@ -54,7 +54,15 @@ export default function CheckoutPage() {
   // routes the order through the manual/direct-payment path instead. Defaults
   // to crypto so the current behaviour is unchanged unless the customer picks
   // a direct method.
-  const [payChoice, setPayChoice] = useState<"crypto" | ManualMethodId>("crypto");
+  //
+  // null means every card is collapsed -- clicking the open method closes it.
+  // That is a real state the customer can reach, not just a transient one, so
+  // the Place Order button is disabled while it holds and handleCheckout
+  // refuses it: otherwise a cleared selection would post an order with no
+  // payment method attached at all.
+  const [payChoice, setPayChoice] = useState<"crypto" | ManualMethodId | null>(
+    "crypto"
+  );
   // Only meaningful for a method that declares requiresRoute (Bank Transfer).
   // Kept when the customer switches away and back, but never submitted -- and
   // never required -- unless the selected method actually asks for it.
@@ -325,6 +333,18 @@ export default function CheckoutPage() {
 
   const handleCheckout = async () => {
     if (!cart.length || submitting) return;
+
+    /*
+     * No method chosen -- every card is collapsed. The button is disabled in
+     * this state, so this catches only a submit that arrived another way (a
+     * keypress, a stale click). It matters because payChoice is what decides
+     * provider and manualMethod: without this, a cleared selection would post
+     * a manual order naming no method at all.
+     */
+    if (!payChoice) {
+      showToast("Please choose a payment method.");
+      return;
+    }
 
     /*
      * A method that declares requiresRoute cannot be submitted without one.
@@ -668,7 +688,11 @@ export default function CheckoutPage() {
                         >
                           <button
                             type="button"
-                            onClick={() => setPayChoice(m.id)}
+                            onClick={() =>
+                              setPayChoice((current) =>
+                                current === m.id ? null : m.id
+                              )
+                            }
                             aria-expanded={selected}
                             className="flex w-full items-start gap-2.5 px-3 py-2.5 text-left"
                           >
@@ -773,7 +797,11 @@ export default function CheckoutPage() {
 
                 <button
                   type="button"
-                  onClick={() => setPayChoice("crypto")}
+                  onClick={() =>
+                    setPayChoice((current) =>
+                      current === "crypto" ? null : "crypto"
+                    )
+                  }
                   className={`mb-4 flex w-full items-start gap-2.5 rounded-lg border px-3 py-2.5 text-left transition ${
                     payChoice === "crypto"
                       ? "border-accent bg-accent-subtle ring-1 ring-accent"
@@ -1059,7 +1087,9 @@ export default function CheckoutPage() {
                 type="button"
                 onClick={handleCheckout}
                 disabled={
-                  submitting || (methodRequiresRoute(payChoice) && !bankRoute)
+                  submitting ||
+                  !payChoice ||
+                  (methodRequiresRoute(payChoice) && !bankRoute)
                 }
                 className="box-border w-full max-w-full rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
               >
