@@ -35,6 +35,8 @@
  *   nowpayments   already bundled, the official dark-background variant
  */
 
+import { MANUAL_METHODS } from "@/lib/payments/manual-methods";
+
 type Coin = {
   name: string;
   src: string;
@@ -73,13 +75,51 @@ const COINS: Coin[] = [
 ];
 
 export default function PaymentMethods() {
+  const directMethods = MANUAL_METHODS.filter((method) => method.enabled);
+
   return (
     <div className="rounded-[3px] border border-neutral-800 bg-neutral-900/60 p-5 sm:p-7">
       <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-neutral-500">
         Payment methods
       </p>
 
-      <div className="mt-5 flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-10">
+      {/*
+        Direct payment, first -- it now matches checkout, where the manual
+        methods sit above the crypto option.
+
+        The list is derived from MANUAL_METHODS rather than typed out, so a
+        method added, renamed or disabled in that one file changes here too and
+        this panel can never advertise a rail checkout does not actually offer.
+        That is also why regional variants (SEPA, UK, PayID) are not named
+        separately: they are all served by Bank Transfer, whose details are sent
+        per order, and listing them as distinct options would promise a choice
+        the customer is never shown.
+      */}
+      <div className="mt-5 border-b border-neutral-800 pb-5">
+        <p className="mb-2.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-neutral-400">
+          Direct payment
+        </p>
+        <ul className="flex flex-wrap items-center gap-2">
+          {directMethods.map((method) => (
+            <li
+              key={method.id}
+              className="rounded-[3px] border border-neutral-700 px-3 py-1.5 text-xs font-medium text-neutral-200"
+            >
+              {method.label}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-xs leading-relaxed text-neutral-400">
+          Pay directly and we email you the details for your order. Your order is
+          reserved and ships once DrivoraParts confirms the payment has arrived.
+        </p>
+      </div>
+
+      <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-neutral-400">
+        Cryptocurrency
+      </p>
+
+      <div className="mt-3 flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-10">
         {/* The processor, first and largest: it is the answer to "who takes my
             money", which is the question this section exists to settle. */}
         <div className="shrink-0">
