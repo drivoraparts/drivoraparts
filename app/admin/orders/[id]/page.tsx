@@ -4,8 +4,14 @@ import AdminShell from "@/components/admin/AdminShell";
 import DeleteOrderButton from "@/components/admin/DeleteOrderButton";
 import OrderLifecycleControls from "@/components/admin/OrderLifecycleControls";
 import StatusPill, { SpinnerIcon } from "@/components/admin/StatusPill";
+import ManualPaymentPanel, {
+  type PanelReceipt,
+} from "@/components/admin/ManualPaymentPanel";
 import { getOrderById, listOrderEvents } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
+import { readManualPayment } from "@/lib/payments/manual-payment";
+import { createReceiptSignedUrl } from "@/lib/payments/receipt-storage";
+import { getManualMethod } from "@/lib/payments/manual-methods";
 
 export const dynamic = "force-dynamic";
 
@@ -53,6 +59,23 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
     listOrderEvents(order.id),
     findPaymentByOrderId(order.id),
   ]);
+
+  /*
+   * Manual payments get their own console alongside the status controls.
+   *
+   * Receipts live in a private bucket, so each is signed here -- server-side,
+   * for five minutes. The page never holds a durable URL to a private file,
+   * and nothing signed is stored, logged or emailed.
+   */
+  const manual = readManualPayment(payment);
+  const manualReceipts: PanelReceipt[] = manual
+    ? await Promise.all(
+        manual.receipts.map(async (receipt) => ({
+          ...receipt,
+          url: await createReceiptSignedUrl(receipt.path),
+        }))
+      )
+    : [];
 
   return (
     <AdminShell title={`Order ${order.order_number}`}>
@@ -200,6 +223,22 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               </div>
             </div>
           </div>
+
+          {manual ? (
+            <ManualPaymentPanel
+              orderId={order.id}
+              methodLabel={getManualMethod(manual.method)?.label ?? "Bank Transfer"}
+              state={manual.state}
+              amount={manual.amount}
+              currency={manual.currency}
+              instructions={manual.instructions}
+              instructionsSentAt={manual.instructionsSentAt}
+              customerNote={manual.customerNote}
+              lastAdminMessage={manual.lastAdminMessage}
+              receipts={manualReceipts}
+              paid={manual.paid}
+            />
+          ) : null}
 
           <div>
             <h2 className="mb-2 text-[11px] font-medium uppercase tracking-wide text-zinc-500">

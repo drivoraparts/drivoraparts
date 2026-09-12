@@ -475,10 +475,16 @@ export async function sendAdminNewOrderEmail(input: {
   shippingAddress?: string;
   total: number;
   items: OrderInvoiceLine[];
+  /** Human label for how the customer chose to pay ("Zelle", "Bank
+   * Transfer", "Cryptocurrency"). Shown in the subject and the meta table so
+   * a manual order is recognisable from the inbox list, where it needs an
+   * action from the owner that a crypto order does not. */
+  paymentMethod?: string;
 }): Promise<boolean> {
   const orderRef = input.orderNumber;
   const siteUrl = getSiteUrl();
   const adminUrl = `${siteUrl}/admin/orders`;
+  const methodSuffix = input.paymentMethod ? ` · ${input.paymentMethod}` : "";
   const itemRows = input.items
     .map(
       (item) =>
@@ -491,7 +497,7 @@ export async function sendAdminNewOrderEmail(input: {
     // The body has always said "Pending payment confirmation"; the subject did
     // not, and the subject is the part read in a notification. An order that
     // has not been paid for should not look settled from the inbox list.
-    subject: `Pending order #${orderRef} — $${input.total.toFixed(2)} from ${input.customerName} (awaiting payment)`,
+    subject: `Pending order #${orderRef} — $${input.total.toFixed(2)} from ${input.customerName} (awaiting payment)${methodSuffix}`,
     html: documentLayout(
       `
       <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#9d531c;font-family:Arial,Helvetica,sans-serif;">New customer order</p>
@@ -503,7 +509,8 @@ export async function sendAdminNewOrderEmail(input: {
         ${input.customerPhone ? renderReceiptMetaRow("Phone", escapeHtml(input.customerPhone)) : ""}
         ${input.shippingAddress ? renderReceiptMetaRow("Ship to", escapeHtml(input.shippingAddress)) : ""}
         ${renderReceiptMetaRow("Total", `$${input.total.toFixed(2)} USD`)}
-        ${renderReceiptMetaRow("Status", "Pending payment confirmation")}
+        ${input.paymentMethod ? renderReceiptMetaRow("Payment method", escapeHtml(input.paymentMethod)) : ""}
+        ${renderReceiptMetaRow("Status", "Awaiting payment")}
       `)}
 
       <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#46423a;font-family:Arial,Helvetica,sans-serif;">Items ordered</p>
@@ -817,6 +824,261 @@ export async function sendPaymentIncompleteEmail(input: {
         If you have already paid, it will say so — you do not need to pay again.
       </p>`,
       `Order #${orderRef} is saved but payment has not been completed — $${input.total.toFixed(2)} due.`,
+      "Order payment status"
+    ),
+  });
+}
+
+/* ---------------------------------------------------------------------------
+ * Manual / direct payments
+ *
+ * These carry no account details of their own. Everything specific to how the
+ * customer should pay is text an admin pasted into the order screen for that
+ * one order, which is why `instructions` is rendered as a pre-wrapped block
+ * rather than parsed: it must arrive exactly as it was typed, and it must never
+ * be reconstructed from anything stored in source control.
+ * ------------------------------------------------------------------------ */
+
+/** The customer's own order page -- their durable route back to instructions
+ *  and the receipt upload, independent of any email they may have lost. */
+function manualPaymentPageUrl(orderId: string): string {
+  return `${getSiteUrl()}/pay/${encodeURIComponent(orderId)}`;
+}
+
+/** Admin-typed text, shown verbatim: newlines preserved, HTML neutralised. */
+function renderPastedBlock(text: string, title: string): string {
+  return `
+    <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#46423a;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(title)}</p>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 24px;background:#faf9f6;border:1px solid #e8e5de;border-radius:4px;">
+      <tr>
+        <td style="padding:16px 18px;">
+          <div style="margin:0;font-family:'Courier New',Courier,monospace;font-size:13px;line-height:1.7;color:#111315;white-space:pre-wrap;word-break:break-word;">${escapeHtml(text)}</div>
+        </td>
+      </tr>
+    </table>`;
+}
+
+function renderManualPaymentButton(orderId: string, label: string): string {
+  return `
+    <table role="presentation" cellspacing="0" cellpadding="0" style="margin:4px 0 0;">
+      <tr>
+        <td style="border-radius:6px;background:#1f7a4d;">
+          <a href="${manualPaymentPageUrl(orderId)}" style="display:inline-block;padding:14px 28px;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;border-radius:6px;">${escapeHtml(label)} →</a>
+        </td>
+      </tr>
+    </table>`;
+}
+
+/**
+ * Sent when an admin presses Send on the manual-payment panel. Carries the
+ * pasted payment details and the link back to the customer's payment page.
+ */
+export async function sendManualPaymentInstructionsEmail(input: {
+  to: string;
+  customerName: string;
+  orderId: string;
+  orderNumber: string;
+  total: number;
+  methodLabel: string;
+  instructions: string;
+  items: OrderInvoiceLine[];
+}): Promise<boolean> {
+  const orderRef = input.orderNumber;
+
+  return sendEmail({
+    to: input.to,
+    subject: `Payment Instructions — Order #${orderRef}`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#9d531c;font-family:Arial,Helvetica,sans-serif;">Your payment instructions</p>
+      <h1 style="margin:0 0 8px;font-size:28px;line-height:1.15;color:#111315;font-family:Georgia,'Times New Roman',Times,serif;">How to pay for order #${escapeHtml(orderRef)}</h1>
+      <p style="margin:0 0 24px;font-size:15px;line-height:1.65;color:#46423a;font-family:Arial,Helvetica,sans-serif;">
+        Hi ${escapeHtml(input.customerName)}, your order is reserved. Please send the exact amount below using the details provided,
+        then upload your payment receipt so we can verify it.
+      </p>
+
+      ${renderReceiptMetaTable(`
+        ${renderReceiptMetaRow("Amount due", `<span style="font-size:16px;">$${input.total.toFixed(2)} USD</span>`)}
+        ${renderReceiptMetaRow("Payment method", escapeHtml(input.methodLabel))}
+        ${renderOrderIdRow(orderRef)}
+        ${renderReceiptMetaRow("Status", `<span style="color:#9d531c;">Awaiting payment</span>`)}
+      `)}
+
+      ${renderPastedBlock(input.instructions, "Payment details")}
+
+      ${renderReceiptLinesTable(input.items)}
+      ${renderReceiptTotalRow(input.total, "Amount due")}
+
+      ${renderManualPaymentButton(input.orderId, "View Payment Instructions & Submit Receipt")}
+
+      <p style="margin:18px 0 0;font-size:12px;line-height:1.6;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
+        Please use your order number <strong>${escapeHtml(orderRef)}</strong> as the payment reference where possible.
+        Your order stays reserved and will not ship until DrivoraParts confirms the funds have arrived.
+        Never send payment to details received from anyone other than DrivoraParts — if anything looks wrong, contact us before paying.
+      </p>`,
+      `Payment instructions for order #${orderRef} — $${input.total.toFixed(2)} due.`,
+      "Payment instructions"
+    ),
+  });
+}
+
+/**
+ * Sent when an admin presses Request More Information -- a receipt was
+ * unreadable, the amount did not match, nothing arrived. The order stays
+ * unpaid; this only asks the customer for something.
+ */
+export async function sendManualPaymentInfoRequestEmail(input: {
+  to: string;
+  customerName: string;
+  orderId: string;
+  orderNumber: string;
+  total: number;
+  message: string;
+}): Promise<boolean> {
+  const orderRef = input.orderNumber;
+
+  return sendEmail({
+    to: input.to,
+    subject: `Action needed on your payment — Order #${orderRef}`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#b4341c;font-family:Arial,Helvetica,sans-serif;">Action needed</p>
+      <h1 style="margin:0 0 8px;font-size:28px;line-height:1.15;color:#111315;font-family:Georgia,'Times New Roman',Times,serif;">We need a little more on order #${escapeHtml(orderRef)}</h1>
+      <p style="margin:0 0 24px;font-size:15px;line-height:1.65;color:#46423a;font-family:Arial,Helvetica,sans-serif;">
+        Hi ${escapeHtml(input.customerName)}, we could not verify your payment yet. Your order is still reserved and nothing has been charged.
+      </p>
+
+      ${renderReceiptMetaTable(`
+        ${renderReceiptMetaRow("Amount due", `$${input.total.toFixed(2)} USD`)}
+        ${renderOrderIdRow(orderRef)}
+        ${renderReceiptMetaRow("Status", `<span style="color:#b4341c;">Awaiting verification</span>`)}
+      `)}
+
+      ${renderPastedBlock(input.message, "Message from DrivoraParts")}
+
+      ${renderManualPaymentButton(input.orderId, "View Payment Instructions & Submit Receipt")}
+
+      <p style="margin:18px 0 0;font-size:12px;line-height:1.6;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
+        You can upload another receipt from the page above at any time. Replying to this email reaches our support team directly.
+      </p>`,
+      `We need more information to verify payment for order #${orderRef}.`,
+      "Payment verification"
+    ),
+  });
+}
+
+/**
+ * Owner notification that a customer submitted proof of payment.
+ *
+ * Deliberately carries no receipt image and no signed link. Receipts are
+ * private, signed URLs are short-lived by design, and a viewable link sitting
+ * in an inbox is neither. The email says what arrived and links to the
+ * authenticated order screen, where the receipt opens through a fresh
+ * five-minute URL.
+ */
+export async function sendAdminManualReceiptEmail(input: {
+  orderNumber: string;
+  orderId: string;
+  customerName: string;
+  customerEmail: string;
+  total: number;
+  methodLabel: string;
+  receiptCount: number;
+  customerNote?: string;
+}): Promise<boolean> {
+  const orderRef = input.orderNumber;
+  const adminUrl = `${getSiteUrl()}/admin/orders/${encodeURIComponent(input.orderId)}`;
+
+  return sendEmail({
+    to: getAdminEmail(),
+    subject: `Payment receipt submitted — Order #${orderRef} ($${input.total.toFixed(2)} from ${input.customerName})`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#9d531c;font-family:Arial,Helvetica,sans-serif;">Receipt submitted</p>
+      <h1 style="margin:0 0 16px;font-size:26px;color:#111315;font-family:Georgia,'Times New Roman',Times,serif;">Order #${escapeHtml(orderRef)}</h1>
+
+      ${renderReceiptMetaTable(`
+        ${renderReceiptMetaRow("Customer", escapeHtml(input.customerName))}
+        ${renderReceiptMetaRow("Email", escapeHtml(input.customerEmail))}
+        ${renderReceiptMetaRow("Amount", `$${input.total.toFixed(2)} USD`)}
+        ${renderReceiptMetaRow("Method", escapeHtml(input.methodLabel))}
+        ${renderReceiptMetaRow("Files submitted", String(input.receiptCount))}
+        ${renderReceiptMetaRow("Submitted", escapeHtml(formatDocumentDate()))}
+        ${renderReceiptMetaRow("Status", `<span style="color:#9d531c;">Awaiting your verification</span>`)}
+      `)}
+
+      ${input.customerNote ? renderPastedBlock(input.customerNote, "Customer message") : ""}
+
+      <p style="margin:0 0 20px;font-size:13px;line-height:1.6;color:#46423a;font-family:Arial,Helvetica,sans-serif;">
+        This is the customer stating they have paid. It is not proof that funds arrived —
+        confirm the money is in the account before marking this order paid.
+      </p>
+
+      <table role="presentation" cellspacing="0" cellpadding="0" style="margin:4px 0 0;">
+        <tr>
+          <td style="border-radius:6px;background:#9d531c;">
+            <a href="${adminUrl}" style="display:inline-block;padding:14px 28px;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;border-radius:6px;">Review receipt in admin →</a>
+          </td>
+        </tr>
+      </table>`,
+      `${input.customerName} submitted a payment receipt for order #${orderRef}.`,
+      "Store notification"
+    ),
+  });
+}
+
+/**
+ * The customer's acknowledgement at checkout for a manual/direct payment.
+ *
+ * Manual orders must NOT get sendPaymentIncompleteEmail: that one is written
+ * for the crypto flow -- it says payment was not completed and offers a
+ * Continue Payment button for an invoice that does not exist here. At this
+ * point a manual customer has done nothing wrong; they are simply waiting for
+ * details that only an admin can send. This says exactly that, and gives them
+ * the durable link to their payment page.
+ */
+export async function sendManualOrderReceivedEmail(input: {
+  to: string;
+  customerName: string;
+  orderId: string;
+  orderNumber: string;
+  total: number;
+  methodLabel: string;
+  items: OrderInvoiceLine[];
+}): Promise<boolean> {
+  const orderRef = input.orderNumber;
+
+  return sendEmail({
+    to: input.to,
+    subject: `Order received #${orderRef} — payment instructions on the way`,
+    html: documentLayout(
+      `
+      <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#9d531c;font-family:Arial,Helvetica,sans-serif;">Order received</p>
+      <h1 style="margin:0 0 8px;font-size:28px;line-height:1.15;color:#111315;font-family:Georgia,'Times New Roman',Times,serif;">Thank you — order #${escapeHtml(orderRef)} is reserved</h1>
+      <p style="margin:0 0 24px;font-size:15px;line-height:1.65;color:#46423a;font-family:Arial,Helvetica,sans-serif;">
+        Hi ${escapeHtml(input.customerName)}, we have your order and your items are held for you.
+        You chose to pay by <strong>${escapeHtml(input.methodLabel)}</strong>, so our team will email you the
+        payment details shortly. Nothing has been charged, and there is nothing you need to do until those arrive.
+      </p>
+
+      ${renderReceiptMetaTable(`
+        ${renderReceiptMetaRow("Amount due", `<span style="font-size:16px;">$${input.total.toFixed(2)} USD</span>`)}
+        ${renderReceiptMetaRow("Payment method", escapeHtml(input.methodLabel))}
+        ${renderOrderIdRow(orderRef)}
+        ${renderReceiptMetaRow("Status", `<span style="color:#9d531c;">Awaiting payment instructions</span>`)}
+      `)}
+
+      ${renderReceiptLinesTable(input.items)}
+      ${renderReceiptTotalRow(input.total, "Amount due")}
+
+      ${renderManualPaymentButton(input.orderId, "View Your Order & Payment Status")}
+
+      <p style="margin:18px 0 0;font-size:12px;line-height:1.6;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
+        Keep this link — it always shows the current status of your order, and is where you
+        will upload your payment receipt once you have paid. Your order will not ship until
+        DrivoraParts confirms payment has been received.
+      </p>`,
+      `Order #${orderRef} received — payment instructions for ${input.methodLabel} are on the way.`,
       "Order payment status"
     ),
   });

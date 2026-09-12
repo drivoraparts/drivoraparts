@@ -29,8 +29,11 @@ import {
   sendAdminPaymentConfirmedEmail,
   sendAdminNewOrderEmail,
   sendPaymentIncompleteEmail,
+  sendManualOrderReceivedEmail,
 
 } from "@/lib/email/send";
+
+import { getManualMethod } from "@/lib/payments/manual-methods";
 
 import { sendMetaCapIPurchase } from "@/lib/analytics/meta-capi";
 
@@ -346,20 +349,53 @@ export async function processCheckout(input: {
    * Fire-and-forget: the order is already written, and a mail failure must
    * never cost an order that exists.
    */
+  /*
+   * Manual/direct payments take the other branch.
+   *
+   * sendPaymentIncompleteEmail is written for the crypto flow: it says payment
+   * was not completed and offers Continue Payment against a NOWPayments invoice
+   * that a manual order does not have. A manual customer has done nothing wrong
+   * at this point -- they are waiting on payment details that only an admin can
+   * send -- so telling them their payment failed would be both wrong and
+   * alarming. They get an order-received acknowledgement instead.
+   */
+  const manualMethodLabel =
+    payment.provider === "manual"
+      ? (getManualMethod(input.manualMethod ?? "bank_transfer")?.label ??
+        "Bank Transfer")
+      : null;
+
   try {
-    await sendPaymentIncompleteEmail({
-      to: customer.email,
-      customerName: customer.full_name,
-      orderId: order.id,
-      orderNumber: order.order_number,
-      total: Number(order.total),
-      items: order.items.map((item) => ({
-        name: item.name,
-        quantity: item.quantity,
-        unitPrice: Number(item.price),
-        image: item.image,
-      })),
-    });
+    if (manualMethodLabel) {
+      await sendManualOrderReceivedEmail({
+        to: customer.email,
+        customerName: customer.full_name,
+        orderId: order.id,
+        orderNumber: order.order_number,
+        total: Number(order.total),
+        methodLabel: manualMethodLabel,
+        items: order.items.map((item) => ({
+          name: item.name,
+          quantity: item.quantity,
+          unitPrice: Number(item.price),
+          image: item.image,
+        })),
+      });
+    } else {
+      await sendPaymentIncompleteEmail({
+        to: customer.email,
+        customerName: customer.full_name,
+        orderId: order.id,
+        orderNumber: order.order_number,
+        total: Number(order.total),
+        items: order.items.map((item) => ({
+          name: item.name,
+          quantity: item.quantity,
+          unitPrice: Number(item.price),
+          image: item.image,
+        })),
+      });
+    }
     await sendAdminNewOrderEmail({
       orderNumber: order.order_number,
       customerName: customer.full_name,
@@ -373,6 +409,7 @@ export async function processCheckout(input: {
         unitPrice: Number(item.price),
         image: item.image,
       })),
+      paymentMethod: manualMethodLabel ?? "Cryptocurrency (NOWPayments)",
     });
   } catch (error) {
     logWarn("pending_order_email_failed", {
