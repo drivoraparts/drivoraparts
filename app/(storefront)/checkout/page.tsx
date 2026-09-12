@@ -20,7 +20,6 @@ import { readCheckoutFormDraft, writeCheckoutFormDraft } from "@/lib/checkout/fo
 import {
   BANK_ROUTES,
   MANUAL_METHODS,
-  getManualMethod,
   methodRequiresRoute,
   type ManualMethodId,
 } from "@/lib/payments/manual-methods";
@@ -656,7 +655,7 @@ export default function CheckoutPage() {
                   <div className="space-y-2">
                     {MANUAL_METHODS.filter((m) => m.enabled).map((m) => {
                       const selected = payChoice === m.id;
-                      const expanded = selected && methodRequiresRoute(m.id);
+                      const needsRoute = methodRequiresRoute(m.id);
 
                       return (
                         <div
@@ -670,7 +669,7 @@ export default function CheckoutPage() {
                           <button
                             type="button"
                             onClick={() => setPayChoice(m.id)}
-                            aria-expanded={expanded}
+                            aria-expanded={selected}
                             className="flex w-full items-start gap-2.5 px-3 py-2.5 text-left"
                           >
                             <PaymentMethodIcon id={m.id} />
@@ -685,51 +684,77 @@ export default function CheckoutPage() {
                           </button>
 
                           {/*
-                            The required follow-up question, rendered inside the
-                            card it belongs to rather than after the list. Only
-                            for a selected method that declares requiresRoute, so
-                            switching to Zelle, Cash App, Venmo, Wire or crypto
-                            removes it entirely and it can never block those
-                            checkouts. Route names only: no account numbers, sort
-                            codes or SWIFT/BIC appear here.
+                            Every method expands under itself.
+
+                            What each one says is the same promise -- we email
+                            the details, the order waits, nothing is charged --
+                            because that is genuinely how all of them work; only
+                            Bank Transfer has a further question to ask. This
+                            copy used to live in a single box after the crypto
+                            option, which meant choosing Zelle put its
+                            explanation at the far end of the section, under a
+                            card the customer had not picked. Rendering it in
+                            the selected card keeps the answer next to the
+                            question, and collapsing is automatic: payChoice
+                            holds one value, so opening one closes the rest.
                           */}
-                          {expanded ? (
+                          {selected ? (
                             <div className="border-t border-accent/40 px-3 pb-3 pt-2.5">
-                              <label
-                                htmlFor="bank-route"
-                                className="block text-sm font-medium text-neutral-900"
-                              >
-                                Select Bank / Transfer Route{" "}
-                                <span className="text-red-600" aria-hidden="true">
-                                  *
-                                </span>
-                              </label>
-                              <p className="mb-2 mt-0.5 text-[11px] leading-relaxed text-neutral-600">
-                                Tells us which account details to send you. No
-                                account numbers are shown or stored here.
-                              </p>
-                              <select
-                                id="bank-route"
-                                required
-                                aria-required="true"
-                                value={bankRoute}
-                                onChange={(e) => setBankRoute(e.target.value)}
-                                className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900"
-                              >
-                                <option value="">Choose your transfer route…</option>
-                                {BANK_ROUTES.filter((route) => route.enabled).map(
-                                  (route) => (
-                                    <option key={route.id} value={route.id}>
-                                      {route.label}
-                                    </option>
-                                  )
-                                )}
-                              </select>
-                              {!bankRoute ? (
-                                <p className="mt-1.5 text-[11px] font-medium text-neutral-600">
-                                  Required before you can place the order.
-                                </p>
+                              {/* Route names only: no account numbers, sort
+                                  codes or SWIFT/BIC appear here. */}
+                              {needsRoute ? (
+                                <div className="mb-3">
+                                  <label
+                                    htmlFor="bank-route"
+                                    className="block text-sm font-medium text-neutral-900"
+                                  >
+                                    Select Bank / Transfer Route{" "}
+                                    <span className="text-red-600" aria-hidden="true">
+                                      *
+                                    </span>
+                                  </label>
+                                  <p className="mb-2 mt-0.5 text-[11px] leading-relaxed text-neutral-600">
+                                    Tells us which account details to send you. No
+                                    account numbers are shown or stored here.
+                                  </p>
+                                  <select
+                                    id="bank-route"
+                                    required
+                                    aria-required="true"
+                                    value={bankRoute}
+                                    onChange={(e) => setBankRoute(e.target.value)}
+                                    className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900"
+                                  >
+                                    <option value="">Choose your transfer route…</option>
+                                    {BANK_ROUTES.filter((route) => route.enabled).map(
+                                      (route) => (
+                                        <option key={route.id} value={route.id}>
+                                          {route.label}
+                                        </option>
+                                      )
+                                    )}
+                                  </select>
+                                  {!bankRoute ? (
+                                    <p className="mt-1.5 text-[11px] font-medium text-neutral-600">
+                                      Required before you can place the order.
+                                    </p>
+                                  ) : null}
+                                </div>
                               ) : null}
+
+                              <p className="text-[11px] leading-relaxed text-neutral-600">
+                                Place your order now. DrivoraParts will email you
+                                the payment details for this method, and your
+                                order stays reserved as{" "}
+                                <strong className="font-semibold text-neutral-800">
+                                  Awaiting Payment
+                                </strong>{" "}
+                                until we confirm the funds.
+                              </p>
+                              <p className="mt-1.5 text-[11px] leading-relaxed text-neutral-500">
+                                You will not be charged automatically. Nothing
+                                ships until payment is verified.
+                              </p>
                             </div>
                           ) : null}
                         </div>
@@ -873,23 +898,7 @@ export default function CheckoutPage() {
                   className="h-10 w-auto opacity-90"
                 />
                   </>
-                ) : (
-                  <div className="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
-                    <p className="mb-1.5 font-semibold text-neutral-800">
-                      Direct payment — {getManualMethod(payChoice)?.label}
-                    </p>
-                    <p className="mb-2">
-                      Place your order now. DrivoraParts will email you the
-                      payment details for this method, and your order stays
-                      reserved as <strong>Awaiting Payment</strong> until we
-                      confirm the funds.
-                    </p>
-                    <p className="text-xs text-neutral-500">
-                      You will not be charged automatically. Nothing ships until
-                      payment is verified.
-                    </p>
-                  </div>
-                )}
+                ) : null}
               </section>
             </div>
 
