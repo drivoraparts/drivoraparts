@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="International wire transfer">
+  <!--
+    Generic international-transfer icon drawn for DrivoraParts. Like the bank
+    icon beside it, this is deliberately not any institution's or network's
+    mark (no SWIFT, no bank logos): a wire is a route, and borrowing a real
+    mark would imply a relationship that does not exist.
+
+    Fixed stroke colour rather than currentColor, because it is loaded through
+    <img> and cannot inherit the surrounding text colour. #e5e5e5 matches the
+    neutral-200 used by the footer type on its dark ground.
+  -->
+  <g fill="none" stroke="#e5e5e5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="16" r="11" />
+    <path d="M5 16h22" />
+    <path d="M16 5c3 3.2 4.6 7 4.6 11S19 24.8 16 27c-3-2.2-4.6-6-4.6-11S13 8.2 16 5Z" />
+    <path d="m19.4 12.2 2.6 2.6-2.6 2.6" />
+  </g>
+</svg>

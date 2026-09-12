@@ -74,6 +74,43 @@ const COINS: Coin[] = [
   },
 ];
 
+/**
+ * How each direct-payment method is presented, keyed by its MANUAL_METHODS id.
+ *
+ * VENMO is the official wordmark, downloaded from PayPal's own corporate
+ * newsroom (newsroom.paypal-corp.com -> Venmo_Logos_and_Guidelines.zip) and
+ * used unmodified. The white variant is the one Venmo ships for dark grounds,
+ * and it carries its own alpha channel, so it needs no plate behind it.
+ *
+ * CASH APP is type, not a logo, and not by choice: every official first-party
+ * source refused this environment. cash.app answers 403 through Cloudflare,
+ * and the asset host behind developers.cash.app
+ * (fdr-prod-docs-files-public.s3.us-east-1.amazonaws.com) answers 403
+ * AccessDenied to curl and to a real browser alike. A third-party logo site,
+ * a recreation or a trace are all worse than type, so the wordmark stays as
+ * type until the official file can be fetched -- at which point it drops in
+ * here as `logo` and nothing else changes.
+ *
+ * ZELLE is type by licence rather than by circumstance. Zelle's trademark
+ * guidelines reserve stylized marks and logos to licensees and extend fair use
+ * to plain standard-character references only, so the mark must not be drawn
+ * even if a file were available.
+ *
+ * BANK TRANSFER and INTERNATIONAL WIRE use icons drawn for this site. A
+ * transfer is a route, not a brand; borrowing a real institution's mark would
+ * imply a relationship that does not exist.
+ */
+const METHOD_VISUALS: Record<
+  string,
+  { logo?: string; icon?: string; text?: string }
+> = {
+  bank_transfer: { icon: "/trust/icon-bank-transfer.svg" },
+  wire: { icon: "/trust/icon-wire-transfer.svg" },
+  venmo: { logo: "/trust/venmo-logo-white.png" },
+  zelle: { text: "Zelle®" },
+  cash_app: { text: "Cash App" },
+};
+
 export default function PaymentMethods() {
   const directMethods = MANUAL_METHODS.filter((method) => method.enabled);
 
@@ -100,14 +137,46 @@ export default function PaymentMethods() {
           Direct payment
         </p>
         <ul className="flex flex-wrap items-center gap-2">
-          {directMethods.map((method) => (
-            <li
-              key={method.id}
-              className="rounded-[3px] border border-neutral-700 px-3 py-1.5 text-xs font-medium text-neutral-200"
-            >
-              {method.label}
-            </li>
-          ))}
+          {directMethods.map((method) => {
+            const visual = METHOD_VISUALS[method.id];
+            return (
+              <li
+                key={method.id}
+                className="flex h-9 items-center gap-2 rounded-[3px] border border-neutral-700 px-3"
+              >
+                {visual?.icon ? (
+                  <img
+                    src={visual.icon}
+                    alt=""
+                    aria-hidden="true"
+                    width={32}
+                    height={32}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-4 w-auto shrink-0 opacity-90"
+                  />
+                ) : null}
+
+                {visual?.logo ? (
+                  // The official wordmark already reads "Venmo", so it stands
+                  // in for the label rather than sitting beside a duplicate.
+                  <img
+                    src={visual.logo}
+                    alt={method.label}
+                    width={1400}
+                    height={265}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-3 w-auto"
+                  />
+                ) : (
+                  <span className="text-xs font-medium text-neutral-200">
+                    {visual?.text ?? method.label}
+                  </span>
+                )}
+              </li>
+            );
+          })}
         </ul>
         <p className="mt-3 text-xs leading-relaxed text-neutral-400">
           Pay directly and we email you the details for your order. Your order is
