@@ -920,9 +920,22 @@ export default function CheckoutPage() {
                   </p>
                 </div>
 
+                {/*
+                  Served from our own origin, not hotlinked from nowpayments.io.
+                  This is the same official mark -- the local copy the footer
+                  already uses -- so nothing about the branding changes; it just
+                  stops checkout depending on a third-party host staying up and
+                  reachable to render. Purely the image source: the NOWPayments
+                  flow, invoice and copy are untouched.
+                */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://nowpayments.io/images/embeds/payments-button-black.svg"
+                  src="/trust/nowpayments-mark.svg"
                   alt="Crypto payments by NOWPayments"
+                  width={250}
+                  height={55}
+                  loading="lazy"
+                  decoding="async"
                   className="h-10 w-auto opacity-90"
                 />
                   </>
