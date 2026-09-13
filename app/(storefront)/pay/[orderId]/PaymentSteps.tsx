@@ -15,7 +15,8 @@ import {
  *
  * Only the look is shared. Which step is done or current still comes straight
  * from the manual-payment state, exactly as before -- and, as on Track Order,
- * the last step reached is the "current" one.
+ * the last step reached is the "current" one. The exception is Payment
+ * Verified: see `finished` below.
  */
 
 /** The happy path, in order. verification_failed is an aside, not a step. */
@@ -86,8 +87,12 @@ export default function PaymentSteps({ state }: { state: ManualPaymentState }) {
     ? STEPS.indexOf("receipt_submitted")
     : STEPS.indexOf(state);
 
+  // Verified is the finish line, not a step in progress: it gets a tick like
+  // everything before it, never the spinner, which would read as still loading.
+  const finished = state === "verified";
+
   const states: StepState[] = STEPS.map((_, index) =>
-    index < activeIndex
+    index < activeIndex || finished
       ? "completed"
       : index === activeIndex && !failed
         ? "current"
