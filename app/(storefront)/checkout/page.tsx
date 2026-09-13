@@ -422,7 +422,10 @@ export default function CheckoutPage() {
         storeMetaCheckoutItems(
           cart.map((item) => ({ id: item.id, quantity: item.quantity }))
         );
-        window.location.href = `/success?orderId=${encodeURIComponent(data.orderId)}`;
+        // Their payment page, not /success. /success is the crypto status page:
+        // it would tell a manual customer their payment "was not completed" and
+        // offer Return to Checkout, which places the same order a second time.
+        window.location.href = `/pay/${encodeURIComponent(data.orderId)}`;
         return;
       }
 

@@ -55,6 +55,7 @@ export default function ManualPaymentPanel({
   lastAdminMessage,
   receipts,
   paid,
+  closed,
 }: {
   orderId: string;
   methodLabel: string;
@@ -70,6 +71,9 @@ export default function ManualPaymentPanel({
   lastAdminMessage: string | null;
   receipts: PanelReceipt[];
   paid: boolean;
+  /** Cancelled, failed or refunded. The API refuses every action on a closed
+   * order, so the controls are withdrawn rather than left to fail. */
+  closed: boolean;
 }) {
   const router = useRouter();
   const [draft, setDraft] = useState(instructions ?? "");
@@ -176,7 +180,7 @@ export default function ManualPaymentPanel({
         <button
           type="button"
           onClick={() => run("send_instructions", draft)}
-          disabled={busy !== null || draft.trim().length < 5}
+          disabled={busy !== null || paid || closed || draft.trim().length < 5}
           className={`${adminUi.buttonPrimary} mt-2 !py-1.5 text-xs`}
         >
           {busy === "send_instructions"
@@ -248,6 +252,12 @@ export default function ManualPaymentPanel({
           <p className="rounded-lg bg-emerald-50 px-2.5 py-2 text-xs text-emerald-800">
             Payment verified. The paid-order workflow has already run for this
             order.
+          </p>
+        ) : closed ? (
+          <p className="rounded-lg bg-zinc-50 px-2.5 py-2 text-xs text-zinc-600">
+            This order is closed (cancelled, failed or refunded), so its payment
+            can&apos;t be verified and nothing is sent to the customer. Reopen the
+            order first if payment has genuinely arrived.
           </p>
         ) : (
           <>

@@ -3,7 +3,12 @@ import { requireAdminApi } from "@/lib/auth/require-admin";
 import { logAdminAudit } from "@/lib/monitoring/audit";
 import { logActivity } from "@/lib/monitoring/activity";
 import { getClientIp } from "@/lib/security/ip";
-import { getOrderById, logOrderEvent, updateOrderLifecycleStatus } from "@/lib/db/orders";
+import {
+  claimOrderPaid,
+  getOrderById,
+  logOrderEvent,
+  updateOrderLifecycleStatus,
+} from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
 import { adminMarkOrderPaid } from "@/lib/checkout/service";
 import {
@@ -86,6 +91,29 @@ export async function POST(
   const message = body?.message?.trim() ?? "";
   const methodLabel = getManualMethod(manual.method)?.label ?? "Bank Transfer";
   const customer = order.customer;
+
+  /*
+   * Only an order that is still open can be acted on. Nothing checked this
+   * before: an admin could email payment instructions for a cancelled order
+   * (whose /pay page tells the customer it is no longer active) or for one
+   * that was already paid. Verify has its own atomic form of this check below.
+   */
+  if (action !== "verify") {
+    if (payment.status === "paid" || order.status === "paid") {
+      return NextResponse.json(
+        { error: "This order is already paid." },
+        { status: 409 }
+      );
+    }
+    if (order.status !== "pending" && order.status !== "processing") {
+      return NextResponse.json(
+        {
+          error: `This order is ${order.status}. Reopen it before contacting the customer about payment.`,
+        },
+        { status: 409 }
+      );
+    }
+  }
 
   try {
     if (action === "send_instructions" || action === "request_info") {
@@ -198,11 +226,8 @@ export async function POST(
 
     // action === "verify"
     //
-    // The only path that moves money-state. Guarded so the existing paid
-    // workflow -- inventory commit, receipt email, analytics, admin
-    // confirmation -- runs exactly once no matter how many times this is
-    // pressed or how many tabs are open.
-    if (payment.status === "paid" || order.status === "paid") {
+    // The only path that moves money-state.
+    if (payment.status === "paid") {
       return NextResponse.json({
         ok: true,
         state: "verified",
@@ -210,17 +235,57 @@ export async function POST(
       });
     }
 
-    await adminMarkOrderPaid(id);
-
     /*
-     * Re-read before touching metadata. adminMarkOrderPaid writes paid_at and
-     * payment_method onto this same row; updating from the copy loaded at the
-     * top of the request would write them straight back out.
+     * Claim the transition atomically: UPDATE ... WHERE status IN (pending,
+     * processing), which exactly one request can win.
+     *
+     * The previous guard read the status and then acted on it, so two tabs
+     * pressing Verify together both got through and ran the paid workflow
+     * twice -- stock deducted twice, order_completed recorded twice. The same
+     * WHERE clause is also what keeps a cancelled, failed or refunded order
+     * from being revived as paid: adminMarkOrderPaid writes the status
+     * directly and would not have stopped it.
      */
-    const fresh = await findPaymentByOrderId(id);
-    if (fresh) {
-      await updateManualPayment(fresh, { state: "verified" });
+    const claimed = await claimOrderPaid(id);
+    if (!claimed) {
+      const current = await getOrderById(id);
+      if (current?.status === "paid") {
+        return NextResponse.json({
+          ok: true,
+          state: "verified",
+          alreadyVerified: true,
+        });
+      }
+      return NextResponse.json(
+        {
+          error: `This order is ${current?.status ?? "unavailable"} and can't be marked paid. Reopen it first.`,
+        },
+        { status: 409 }
+      );
     }
+
+    // The order is already paid now, so adminMarkOrderPaid skips its own
+    // status write and runs the shared side effects -- once, because only this
+    // request holds the claim.
+    try {
+      await adminMarkOrderPaid(id);
+    } catch (error) {
+      await logActivity("error", "payment.manual_verify_incomplete", {
+        orderId: id,
+        admin: actor,
+        ip,
+        message: error instanceof Error ? error.message : "side effects failed",
+      });
+      return NextResponse.json(
+        {
+          error:
+            "The order is marked paid, but finishing the paid-order steps failed. Use Status controls → Payment status → Paid to complete them.",
+        },
+        { status: 500 }
+      );
+    }
+
+    await updateManualPayment(payment, { state: "verified" });
 
     // Mirror the lifecycle route: nudge processing forward, never regress an
     // order that is already further along.

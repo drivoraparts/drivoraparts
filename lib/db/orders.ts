@@ -1384,3 +1384,31 @@ export async function claimConfirmationSend(id: string): Promise<boolean> {
   if (error) return false;
   return (data?.length ?? 0) > 0;
 }
+
+/**
+ * Atomically moves an order that is still open (pending or processing) to paid.
+ * Returns true only for the one caller whose UPDATE matched.
+ *
+ * The same conditional-UPDATE shape as claimConfirmationSend above, for the
+ * same reason: a read-then-write check lets two concurrent callers both pass.
+ * Used by the manual-payment Verify action, where two tabs pressing it together
+ * used to run the paid workflow twice. The WHERE clause also refuses cancelled,
+ * failed and refunded orders, which forceUpdateOrderStatus would happily have
+ * rewritten to paid.
+ *
+ * Throws on a database error rather than returning false. Here false means
+ * "someone else already won, or the order is closed", and the caller tells the
+ * admin exactly that -- a swallowed error would make it say so falsely.
+ */
+export async function claimOrderPaid(id: string): Promise<boolean> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ status: "paid", updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .in("status", ["pending", "processing"])
+    .select("id");
+
+  if (error) throw error;
+  return (data?.length ?? 0) > 0;
+}

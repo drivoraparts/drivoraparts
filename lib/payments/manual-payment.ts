@@ -14,11 +14,8 @@
  * explicit admin action that calls the existing adminMarkOrderPaid workflow --
  * see app/api/admin/orders/[id]/manual-payment/route.ts.
  */
-import {
-  updatePaymentRecord,
-  findPaymentByOrderId,
-  type PaymentRecord,
-} from "@/lib/db/payments";
+import { findPaymentByOrderId, type PaymentRecord } from "@/lib/db/payments";
+import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import type { ManualPaymentState } from "./manual-methods";
 
 /** One customer-uploaded proof of payment. */
@@ -151,17 +148,16 @@ type ManualPatch = {
 };
 
 /**
- * Merge manual fields into the payment's metadata.
+ * Apply a manual patch to a metadata object.
  *
- * Always spreads the existing metadata first: the crypto provider and the paid
- * workflow both write their own keys there (payment_method, paid_at, ...) and
- * a manual update must never drop them.
+ * Spreads the existing metadata first: the crypto provider and the paid
+ * workflow both write their own keys there (payment_method, paid_at,
+ * inventory_deducted, ...) and a manual update must never drop them.
  */
-export async function updateManualPayment(
-  payment: PaymentRecord,
+function applyManualPatch(
+  existing: Record<string, unknown>,
   patch: ManualPatch
-): Promise<PaymentRecord | null> {
-  const existing = (payment.metadata ?? {}) as Record<string, unknown>;
+): Record<string, unknown> {
   const now = new Date().toISOString();
   const next: Record<string, unknown> = { ...existing };
 
@@ -189,5 +185,70 @@ export async function updateManualPayment(
     next.manual_receipt_submitted_at = now;
   }
 
-  return updatePaymentRecord(payment.id, { metadata: next });
+  return next;
+}
+
+const MAX_WRITE_ATTEMPTS = 5;
+
+/**
+ * Merge manual fields into the payment's metadata without losing a write that
+ * landed in between.
+ *
+ * This used to spread whatever copy of the row the CALLER had loaded, often
+ * seconds earlier: the admin route loads the payment and then waits on the
+ * email provider; the upload route loads it and then streams several files to
+ * storage. Anything written in that gap -- a customer's receipts, the admin's
+ * instructions, the paid workflow's own keys -- was put straight back to its
+ * old value. Receipts vanished from their order; instructions vanished from
+ * /pay.
+ *
+ * It now re-reads the row itself and writes back only if nothing changed since
+ * that read -- compare-and-swap on updated_at, which every write through
+ * updatePaymentRecord bumps -- and retries on a clash, the same approach
+ * lib/db/inventory.ts takes for stock. Callers may pass a stale record; only
+ * its id is used. A database-side merge would be tighter still, but it needs a
+ * SQL function, and this deploy has no step that applies migrations.
+ */
+export async function updateManualPayment(
+  payment: Pick<PaymentRecord, "id">,
+  patch: ManualPatch
+): Promise<PaymentRecord | null> {
+  const supabase = getSupabaseAdmin();
+
+  for (let attempt = 0; attempt < MAX_WRITE_ATTEMPTS; attempt += 1) {
+    const { data: current, error: readError } = await supabase
+      .from("payments")
+      .select("*")
+      .eq("id", payment.id)
+      .maybeSingle();
+
+    if (readError) throw readError;
+    if (!current) return null;
+
+    const row = current as PaymentRecord;
+    const next = applyManualPatch(
+      (row.metadata ?? {}) as Record<string, unknown>,
+      patch
+    );
+
+    const write = supabase
+      .from("payments")
+      .update({ metadata: next, updated_at: new Date().toISOString() })
+      .eq("id", payment.id);
+
+    const { data: written, error: writeError } = await (row.updated_at
+      ? write.eq("updated_at", row.updated_at)
+      : write.is("updated_at", null)
+    )
+      .select("*")
+      .maybeSingle();
+
+    if (writeError) throw writeError;
+    if (written) return written as PaymentRecord;
+    // Another write landed between the read and this one: re-read, re-apply.
+  }
+
+  throw new Error(
+    "This payment was being updated at the same moment. Please try again."
+  );
 }

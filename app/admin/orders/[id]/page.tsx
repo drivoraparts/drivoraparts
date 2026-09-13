@@ -238,6 +238,11 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               lastAdminMessage={manual.lastAdminMessage}
               receipts={manualReceipts}
               paid={manual.paid}
+              closed={
+                order.status === "cancelled" ||
+                order.status === "failed" ||
+                order.status === "refunded"
+              }
             />
           ) : null}
 

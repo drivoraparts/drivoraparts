@@ -144,12 +144,25 @@ export async function POST(req: Request) {
         : undefined;
 
     // Only meaningful for provider "manual". Validated against the enabled
-    // method list; an unknown value falls back to bank_transfer in the
-    // provider, so a crafted body cannot inject an arbitrary method label.
+    // method list, so a crafted body cannot inject an arbitrary method label.
     const manualMethod =
       providerId === "manual" && isManualMethodId(body?.manualMethod)
         ? (body.manualMethod as string)
         : undefined;
+
+    /*
+     * A manual order must name a real method. A missing or unknown one used to
+     * fall through to a bank_transfer default inside the provider -- AFTER the
+     * route check below had already been skipped for want of a method -- which
+     * created exactly the routeless Bank Transfer order that check refuses.
+     */
+    if (providerId === "manual" && !manualMethod) {
+      logWarn("checkout_invalid_manual_method", { ip });
+      return NextResponse.json(
+        { error: "Please choose a payment method." },
+        { status: 400 }
+      );
+    }
 
     // Which bank/transfer route was requested. Validated against the enabled
     // route list, so a crafted body cannot inject an arbitrary label.
