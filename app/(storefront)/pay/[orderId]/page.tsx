@@ -215,11 +215,24 @@ export default async function PayPage({
                 </p>
               </>
             ) : (
-              <p className="mt-1.5 text-sm text-neutral-600">
-                Your order is reserved. Our team is preparing your{" "}
-                {methodLabel.toLowerCase()} details and will email them shortly —
-                this page will show them as soon as they are sent.
-              </p>
+              /*
+               * Waiting state: an admin has not sent this order's real payment
+               * details yet. Deliberately shows no bank or recipient
+               * information and no payment-reference advice -- there is
+               * nothing to pay to until those details exist, and the moment
+               * they are sent the branch above replaces this with them.
+               */
+              <>
+                <p className="mt-1.5 text-sm font-semibold text-neutral-900">
+                  Payment details are being prepared
+                </p>
+                <p className="mt-1 text-sm text-neutral-600">
+                  You will receive another email from DrivoraParts with the
+                  payment details for your selected payment method. Please keep
+                  an eye on your inbox — your payment instructions will be sent
+                  there shortly.
+                </p>
+              </>
             )}
           </section>
 
