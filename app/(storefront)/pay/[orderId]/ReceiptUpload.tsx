@@ -114,9 +114,16 @@ export default function ReceiptUpload({
               key={`${file.name}-${index}`}
               className="flex items-center justify-between gap-3 rounded-lg border border-neutral-200 px-3 py-2"
             >
-              <span className="min-w-0 truncate text-xs text-neutral-700">
-                {file.name}
-                <span className="ml-2 text-neutral-400">
+              {/*
+                Name and size as siblings, so only the name truncates. The size
+                used to sit inside the truncating span, where a long filename
+                pushed it past the ellipsis and out of view.
+              */}
+              <span className="flex min-w-0 items-baseline gap-2 text-xs">
+                <span className="min-w-0 truncate text-neutral-700">
+                  {file.name}
+                </span>
+                <span className="shrink-0 text-neutral-400">
                   {(file.size / 1024).toFixed(0)} KB
                 </span>
               </span>

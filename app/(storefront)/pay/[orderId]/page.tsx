@@ -195,8 +195,16 @@ export default async function PayPage({
         </div>
       ) : null}
 
+      {/*
+        min-w-0 on both columns is load-bearing. Grid items default to
+        min-width: auto, so a single unbreakable string anywhere inside -- a
+        phone receipt's filename, a long IBAN in the instructions -- stretches
+        the whole track past the viewport, and on mobile both columns share that
+        one track. That is what pushed this page off the right edge the moment a
+        receipt appeared under "Receipts you sent".
+      */}
       <div className="mt-6 grid gap-5 lg:grid-cols-5">
-        <div className="space-y-5 lg:col-span-3">
+        <div className="min-w-0 space-y-5 lg:col-span-3">
           {/* Instructions -------------------------------------------------- */}
           <section className={card}>
             <h2 className="text-base font-bold">Payment instructions</h2>
@@ -273,7 +281,8 @@ export default async function PayPage({
                     className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-neutral-200 px-3 py-2"
                   >
                     <span className="min-w-0 text-xs text-neutral-600">
-                      <span className="font-medium text-neutral-900">
+                      {/* break-all: filenames have no spaces to wrap at. */}
+                      <span className="break-all font-medium text-neutral-900">
                         {receipt.originalName ?? "Receipt"}
                       </span>
                       <span className="ml-2 text-neutral-400">
@@ -298,7 +307,7 @@ export default async function PayPage({
         </div>
 
         {/* Sidebar ---------------------------------------------------------- */}
-        <div className="space-y-5 lg:col-span-2">
+        <div className="min-w-0 space-y-5 lg:col-span-2">
           <section className={card}>
             <h2 className="text-sm font-bold">Payment progress</h2>
             <div className="mt-3">
