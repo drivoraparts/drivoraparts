@@ -87,38 +87,37 @@ function SendGlyph() {
   );
 }
 
-/** Cash/value transfer, for Cash App while its official mark is unobtainable. */
-function CashGlyph() {
-  return (
-    <svg viewBox="0 0 24 24" className={GLYPH} aria-hidden="true">
-      <g {...STROKE}>
-        <rect x="2.5" y="6" width="19" height="12" rx="2.5" />
-        <circle cx="12" cy="12" r="2.5" />
-        <path d="M6 10v4M18 10v4" />
-      </g>
-    </svg>
-  );
-}
+/**
+ * Official brand marks, every one served from our own origin.
+ *
+ * Cash App's lockup finally arrives here from Block's own CDN
+ * (static.afterpaycdn.com -- Afterpay and Cash App are both Block), which is
+ * reachable where every cash.app and S3 path answered 403. It is stored in
+ * public/trust like the others rather than hotlinked, so a third-party host
+ * going down cannot leave an empty box on the payment step.
+ */
+const BRAND_MARKS: Record<string, { src: string; w: number; h: number }> = {
+  venmo: { src: "/trust/venmo-logo-blue.png", w: 1400, h: 265 },
+  cash_app: { src: "/trust/cashapp-pay.svg", w: 180, h: 32 },
+  // 300x63 is what the browser reports as this file's intrinsic size; the
+  // viewBox alone (0 0 190 40) is not the whole story. These are a layout hint
+  // to reserve the right aspect box and avoid shift.
+  crypto: { src: "/trust/bitcoin.svg", w: 300, h: 63 },
+};
 
 export default function PaymentMethodIcon({ id }: { id: string }) {
-  if (id === "venmo" || id === "crypto") {
-    const brand =
-      id === "venmo"
-        ? { src: "/trust/venmo-logo-blue.png", w: 1400, h: 265 }
-        // 300x63 is what the browser reports as this file's intrinsic size;
-        // the viewBox alone (0 0 190 40) is not the whole story. These are a
-        // layout hint to reserve the right aspect box and avoid shift.
-        : { src: "/trust/bitcoin.svg", w: 300, h: 63 };
+  const mark = BRAND_MARKS[id];
 
+  if (mark) {
     return (
       <span className={BOX}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={brand.src}
+          src={mark.src}
           alt=""
           aria-hidden="true"
-          width={brand.w}
-          height={brand.h}
+          width={mark.w}
+          height={mark.h}
           loading="lazy"
           decoding="async"
           className={WORDMARK}
@@ -131,7 +130,6 @@ export default function PaymentMethodIcon({ id }: { id: string }) {
     bank_transfer: <BankGlyph />,
     wire: <GlobeGlyph />,
     zelle: <SendGlyph />,
-    cash_app: <CashGlyph />,
   };
 
   return <span className={BOX}>{glyph[id as IconId] ?? <BankGlyph />}</span>;
