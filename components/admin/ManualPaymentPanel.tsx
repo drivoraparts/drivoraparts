@@ -31,7 +31,9 @@ const STATE_TONE: Record<ManualPaymentState, string> = {
   awaiting_payment: "bg-amber-100 text-amber-800",
   instructions_sent: "bg-blue-100 text-blue-800",
   receipt_submitted: "bg-violet-100 text-violet-800",
-  under_review: "bg-violet-100 text-violet-800",
+  // Its own colour. It used to share violet with receipt_submitted, so marking
+  // an order under review changed nothing you could see at a glance.
+  under_review: "bg-cyan-100 text-cyan-800",
   verified: "bg-emerald-100 text-emerald-800",
   verification_failed: "bg-red-100 text-red-800",
 };
@@ -81,11 +83,18 @@ export default function ManualPaymentPanel({
   const [busy, setBusy] = useState<string | null>(null);
   const [status, setStatus] = useState("");
   const [isError, setIsError] = useState(false);
+  // Which action the current message belongs to, so it renders beside that
+  // action's own button. It used to render once, at the very bottom of the
+  // panel, whatever was pressed -- so the result of Mark under review or Send
+  // instructions, errors included, appeared far from the control and the
+  // button looked as though it had done nothing.
+  const [statusFor, setStatusFor] = useState<string | null>(null);
 
   const run = async (action: string, message?: string) => {
     setBusy(action);
     setStatus("");
     setIsError(false);
+    setStatusFor(action);
     try {
       const res = await fetch(`/api/admin/orders/${orderId}/manual-payment`, {
         method: "POST",
@@ -104,7 +113,9 @@ export default function ManualPaymentPanel({
               ? "Message sent to the customer."
               : action === "verify"
                 ? "Payment verified. The paid-order workflow has run."
-                : "Updated."
+                : action === "mark_under_review"
+                  ? "Marked as under review. The customer's page now shows “Payment Under Review”."
+                  : "Updated."
       );
       router.refresh();
     } catch (err) {
@@ -114,6 +125,17 @@ export default function ManualPaymentPanel({
       setBusy(null);
     }
   };
+
+  /** The last action's result, shown beside the control that produced it. */
+  const feedback = (forActions: string[]) =>
+    status && statusFor && forActions.includes(statusFor) ? (
+      <p
+        role="status"
+        className={`mt-2 text-xs ${isError ? "font-medium text-red-600" : "text-emerald-700"}`}
+      >
+        {status}
+      </p>
+    ) : null;
 
   return (
     <div className="min-w-0 rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
@@ -189,6 +211,7 @@ export default function ManualPaymentPanel({
               ? "Re-send instructions"
               : "Send instructions"}
         </button>
+        {feedback(["send_instructions"])}
       </div>
 
       {/* What the customer submitted ---------------------------------------- */}
@@ -207,7 +230,9 @@ export default function ManualPaymentPanel({
                 className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-zinc-200 px-2.5 py-1.5"
               >
                 <span className="min-w-0 text-xs text-zinc-600">
-                  <span className="font-medium text-zinc-900">
+                  {/* break-all: receipt filenames have no spaces to wrap at, and
+                      without it a long one runs out past the panel's edge. */}
+                  <span className="break-all font-medium text-zinc-900">
                     {receipt.originalName ?? receipt.path.split("/").pop()}
                   </span>
                   <span className="ml-2 text-zinc-400">
@@ -277,12 +302,17 @@ export default function ManualPaymentPanel({
               <button
                 type="button"
                 onClick={() => run("mark_under_review")}
-                disabled={busy !== null}
+                disabled={busy !== null || state === "under_review"}
                 className={`${adminUi.buttonSecondary} !px-4 !py-1.5 text-xs`}
               >
-                {busy === "mark_under_review" ? "Saving…" : "Mark under review"}
+                {busy === "mark_under_review"
+                  ? "Saving…"
+                  : state === "under_review"
+                    ? "Under review ✓"
+                    : "Mark under review"}
               </button>
             </div>
+            {feedback(["verify", "mark_under_review"])}
 
             <label className="mt-3 block text-xs font-medium text-zinc-700">
               Request more information
@@ -303,6 +333,7 @@ export default function ManualPaymentPanel({
             >
               {busy === "request_info" ? "Sending…" : "Send request to customer"}
             </button>
+            {feedback(["request_info"])}
           </>
         )}
 
@@ -310,14 +341,6 @@ export default function ManualPaymentPanel({
           <p className="mt-2.5 text-[11px] text-zinc-500">
             Last message sent:{" "}
             <span className="text-zinc-700">{lastAdminMessage}</span>
-          </p>
-        ) : null}
-
-        {status ? (
-          <p
-            className={`mt-2 text-xs ${isError ? "text-red-600" : "text-emerald-700"}`}
-          >
-            {status}
           </p>
         ) : null}
       </div>
