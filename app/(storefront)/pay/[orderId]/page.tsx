@@ -9,8 +9,8 @@ import { createReceiptSignedUrl } from "@/lib/payments/receipt-storage";
 import {
   getManualMethod,
   MANUAL_STATE_LABELS,
-  type ManualPaymentState,
 } from "@/lib/payments/manual-methods";
+import PaymentSteps from "./PaymentSteps";
 import ReceiptUpload from "./ReceiptUpload";
 
 /*
@@ -42,55 +42,6 @@ const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 const card =
   "rounded-xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6";
-
-/** The happy path, in order. verification_failed is an aside, not a step. */
-const STEPS: ManualPaymentState[] = [
-  "awaiting_payment",
-  "instructions_sent",
-  "receipt_submitted",
-  "under_review",
-  "verified",
-];
-
-function StepList({ state }: { state: ManualPaymentState }) {
-  const failed = state === "verification_failed";
-  const activeIndex = failed
-    ? STEPS.indexOf("receipt_submitted")
-    : STEPS.indexOf(state);
-
-  return (
-    <ol className="space-y-2.5">
-      {STEPS.map((step, index) => {
-        const done = index < activeIndex;
-        const current = index === activeIndex && !failed;
-        return (
-          <li key={step} className="flex items-center gap-2.5">
-            <span
-              className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${
-                done
-                  ? "bg-emerald-100 text-emerald-700"
-                  : current
-                    ? "bg-accent text-white"
-                    : "bg-neutral-100 text-neutral-400"
-              }`}
-            >
-              {done ? "✓" : index + 1}
-            </span>
-            <span
-              className={`text-sm ${
-                done || current
-                  ? "font-medium text-neutral-900"
-                  : "text-neutral-400"
-              }`}
-            >
-              {MANUAL_STATE_LABELS[step]}
-            </span>
-          </li>
-        );
-      })}
-    </ol>
-  );
-}
 
 export default async function PayPage({
   params,
@@ -311,7 +262,7 @@ export default async function PayPage({
           <section className={card}>
             <h2 className="text-sm font-bold">Payment progress</h2>
             <div className="mt-3">
-              <StepList state={manual.state} />
+              <PaymentSteps state={manual.state} />
             </div>
             {manual.state === "verification_failed" ? (
               <p className="mt-3 rounded-lg bg-red-50 px-3 py-2 text-xs text-red-700">
