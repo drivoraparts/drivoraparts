@@ -35,7 +35,14 @@
  * and any dark surface without a second set of files.
  */
 
-type IconId = "bank_transfer" | "wire" | "zelle" | "cash_app" | "venmo" | "crypto";
+type IconId =
+  | "bank_transfer"
+  | "wire"
+  | "zelle"
+  | "cash_app"
+  | "venmo"
+  | "paypal"
+  | "crypto";
 
 const STROKE = {
   fill: "none",
@@ -88,6 +95,27 @@ function SendGlyph() {
 }
 
 /**
+ * Wallet, for PayPal.
+ *
+ * A generic online-wallet glyph, deliberately NOT a redrawn PayPal mark:
+ * recreating a brand logo is not permitted, and the file supplied for it was
+ * the white-on-white variant (fully opaque, 92% near-white), which would have
+ * rendered as a pale rectangle on this light surface. The real mark drops into
+ * BRAND_MARKS below the moment a transparent, coloured version exists.
+ */
+function WalletGlyph() {
+  return (
+    <svg viewBox="0 0 24 24" className={GLYPH} aria-hidden="true">
+      <g {...STROKE}>
+        <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h11A2.5 2.5 0 0 1 19 7.5" />
+        <rect x="3" y="7.5" width="18" height="12" rx="2.5" />
+        <path d="M21 11.5h-3.5a2 2 0 0 0 0 4H21" />
+      </g>
+    </svg>
+  );
+}
+
+/**
  * Official brand marks, every one served from our own origin.
  *
  * Cash App's lockup finally arrives here from Block's own CDN
@@ -130,6 +158,7 @@ export default function PaymentMethodIcon({ id }: { id: string }) {
     bank_transfer: <BankGlyph />,
     wire: <GlobeGlyph />,
     zelle: <SendGlyph />,
+    paypal: <WalletGlyph />,
   };
 
   return <span className={BOX}>{glyph[id as IconId] ?? <BankGlyph />}</span>;

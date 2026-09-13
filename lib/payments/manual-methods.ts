@@ -16,7 +16,8 @@ export type ManualMethodId =
   | "wire"
   | "zelle"
   | "cash_app"
-  | "venmo";
+  | "venmo"
+  | "paypal";
 
 export type ManualMethod = {
   id: ManualMethodId;
@@ -76,6 +77,20 @@ export const MANUAL_METHODS: ManualMethod[] = [
     blurb: "U.S. — handle sent after you order",
     icon: "💜",
     region: "United States",
+    enabled: true,
+  },
+  {
+    id: "paypal",
+    label: "PayPal",
+    // Manual like the rest: the customer sends from their own PayPal account
+    // and we verify it by hand. This is NOT a PayPal processor integration,
+    // and nothing here talks to PayPal's API.
+    blurb: "Send from your PayPal account — recipient sent after you order",
+    // Legacy field. Nothing renders it any more: checkout draws marks through
+    // components/checkout/PaymentMethodIcon.tsx and the footer through
+    // METHOD_VISUALS. Kept only so every entry has the same shape.
+    icon: "💳",
+    region: "Worldwide",
     enabled: true,
   },
 ];
