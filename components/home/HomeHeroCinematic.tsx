@@ -82,9 +82,14 @@ export default function HomeHeroCinematic({ listingCount }: { listingCount: numb
               Built for the road ahead.
             </h1>
 
+            {/* The two primary markets first, then the reach -- the same line
+                the shipping band carries further down. It replaced a sentence
+                ending "sourced for drivers worldwide", which left worldwide as
+                the only market the first screen named. It is also shorter, so
+                the column keeps its height and the buttons do not move. */}
             <p className="mt-2.5 text-[10.5px] leading-snug text-foreground-on-dark/90 sm:mt-4 sm:max-w-sm sm:text-base sm:leading-relaxed">
-              Premium OEM and aftermarket parts for trucks, 4x4s and performance
-              vehicles — sourced for drivers worldwide.
+              4WDs and utes across Australia. Trucks and performance across the
+              USA. Builds everywhere.
             </p>
 
             <div className="mt-4 flex flex-col items-start gap-2 sm:mt-7 sm:flex-row sm:items-center sm:gap-3">
