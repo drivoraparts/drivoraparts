@@ -91,23 +91,23 @@ const COINS: Coin[] = [
  * type until the official file can be fetched -- at which point it drops in
  * here as `logo` and nothing else changes.
  *
- * ZELLE is type by licence rather than by circumstance. Zelle's trademark
- * guidelines reserve stylized marks and logos to licensees and extend fair use
- * to plain standard-character references only, so the mark must not be drawn
- * even if a file were available.
+ * ZELLE shows its own logo tile beside the name. The file was supplied by the
+ * owner; Zelle's trademark guidelines reserve the logo to licensees, and
+ * showing it was the owner's decision.
  *
- * BANK TRANSFER and INTERNATIONAL WIRE use icons drawn for this site. A
- * transfer is a route, not a brand; borrowing a real institution's mark would
- * imply a relationship that does not exist.
+ * BANK TRANSFER uses the coloured bank icon the owner supplied -- the same
+ * mark checkout uses. INTERNATIONAL WIRE keeps the icon drawn for this site.
+ * A transfer is a route, not a brand; neither borrows a real institution's
+ * mark.
  */
 const METHOD_VISUALS: Record<
   string,
   { logo?: string; icon?: string; text?: string }
 > = {
-  bank_transfer: { icon: "/trust/icon-bank-transfer.svg" },
+  bank_transfer: { icon: "/trust/bank-transfer-mark.png" },
   wire: { icon: "/trust/icon-wire-transfer.svg" },
   venmo: { logo: "/trust/venmo-logo-white.png" },
-  zelle: { text: "Zelle®" },
+  zelle: { icon: "/trust/zelle-mark.png" },
   cash_app: { text: "Cash App" },
 };
 
