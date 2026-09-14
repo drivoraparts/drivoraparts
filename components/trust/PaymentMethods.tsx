@@ -77,38 +77,44 @@ const COINS: Coin[] = [
 /**
  * How each direct-payment method is presented, keyed by its MANUAL_METHODS id.
  *
- * VENMO is the official wordmark, downloaded from PayPal's own corporate
- * newsroom (newsroom.paypal-corp.com -> Venmo_Logos_and_Guidelines.zip) and
- * used unmodified. The white variant is the one Venmo ships for dark grounds,
- * and it carries its own alpha channel, so it needs no plate behind it.
+ * Every method shows its real mark in its own colours, as checkout does. Each
+ * takes one of three shapes, decided by what its file is:
  *
- * CASH APP is type, not a logo, and not by choice: every official first-party
- * source refused this environment. cash.app answers 403 through Cloudflare,
- * and the asset host behind developers.cash.app
- * (fdr-prod-docs-files-public.s3.us-east-1.amazonaws.com) answers 403
- * AccessDenied to curl and to a real browser alike. A third-party logo site,
- * a recreation or a trace are all worse than type, so the wordmark stays as
- * type until the official file can be fetched -- at which point it drops in
- * here as `logo` and nothing else changes.
+ *  - `mark`: a square mark beside the method's name. BANK TRANSFER and ZELLE
+ *    use the same files as checkout. CASH APP is the green $ tile from the
+ *    owner-supplied lockup; the lockup's black "Cash App" type would vanish on
+ *    this near-black ground, so the name beside it is set in the section's own
+ *    type. PAYPAL is the owner-supplied PP monogram, cut out of its white
+ *    ground. Zelle's trademark guidelines reserve its logo to licensees;
+ *    showing it was the owner's decision.
  *
- * ZELLE shows its own logo tile beside the name. The file was supplied by the
- * owner; Zelle's trademark guidelines reserve the logo to licensees, and
- * showing it was the owner's decision.
+ *  - `logo`: a wordmark that stands in for the name. VENMO is the
+ *    owner-supplied banner -- the white wordmark on Venmo blue -- cropped to a
+ *    rounded chip around the wordmark, so it keeps its colour on a dark ground.
  *
- * BANK TRANSFER uses the coloured bank icon the owner supplied -- the same
- * mark checkout uses. INTERNATIONAL WIRE keeps the icon drawn for this site.
- * A transfer is a route, not a brand; neither borrows a real institution's
- * mark.
+ *  - `icon`: a line icon drawn for this site, for INTERNATIONAL WIRE. A wire is
+ *    a route, not a brand; borrowing a real institution's mark would imply a
+ *    relationship that does not exist.
+ *
+ * Marks and logos render at full opacity, in their own colours. Only the
+ * drawn icon is softened.
  */
-const METHOD_VISUALS: Record<
-  string,
-  { logo?: string; icon?: string; text?: string }
-> = {
-  bank_transfer: { icon: "/trust/bank-transfer-mark.png" },
+type MethodVisual =
+  | { mark: string; size?: string }
+  | { logo: { src: string; w: number; h: number } }
+  | { icon: string };
+
+/** Square marks match checkout's line-icon size. */
+const MARK_SIZE = "h-[18px] w-[18px]";
+
+const METHOD_VISUALS: Record<string, MethodVisual> = {
+  // Keeps its canvas padding, so it gets the full 20px -- as at checkout.
+  bank_transfer: { mark: "/trust/bank-transfer-mark.png", size: "h-5 w-5" },
   wire: { icon: "/trust/icon-wire-transfer.svg" },
-  venmo: { logo: "/trust/venmo-logo-white.png" },
-  zelle: { icon: "/trust/zelle-mark.png" },
-  cash_app: { text: "Cash App" },
+  zelle: { mark: "/trust/zelle-mark.png" },
+  cash_app: { mark: "/trust/cashapp-mark.png" },
+  venmo: { logo: { src: "/trust/venmo-chip.png", w: 414, h: 120 } },
+  paypal: { mark: "/trust/paypal-mark.png" },
 };
 
 export default function PaymentMethods() {
@@ -144,35 +150,50 @@ export default function PaymentMethods() {
                 key={method.id}
                 className="flex h-9 items-center gap-2 rounded-[3px] border border-neutral-700 px-3"
               >
-                {visual?.icon ? (
-                  <img
-                    src={visual.icon}
-                    alt=""
-                    aria-hidden="true"
-                    width={32}
-                    height={32}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-4 w-auto shrink-0 opacity-90"
-                  />
-                ) : null}
-
-                {visual?.logo ? (
-                  // The official wordmark already reads "Venmo", so it stands
+                {visual && "logo" in visual ? (
+                  // The wordmark already reads the method's name, so it stands
                   // in for the label rather than sitting beside a duplicate.
                   <img
-                    src={visual.logo}
+                    src={visual.logo.src}
                     alt={method.label}
-                    width={1400}
-                    height={265}
+                    width={visual.logo.w}
+                    height={visual.logo.h}
                     loading="lazy"
                     decoding="async"
-                    className="h-3 w-auto"
+                    className="h-5 w-auto"
                   />
                 ) : (
-                  <span className="text-xs font-medium text-neutral-200">
-                    {visual?.text ?? method.label}
-                  </span>
+                  <>
+                    {visual && "mark" in visual ? (
+                      <img
+                        src={visual.mark}
+                        alt=""
+                        aria-hidden="true"
+                        width={64}
+                        height={64}
+                        loading="lazy"
+                        decoding="async"
+                        className={`${visual.size ?? MARK_SIZE} shrink-0`}
+                      />
+                    ) : null}
+
+                    {visual && "icon" in visual ? (
+                      <img
+                        src={visual.icon}
+                        alt=""
+                        aria-hidden="true"
+                        width={32}
+                        height={32}
+                        loading="lazy"
+                        decoding="async"
+                        className="h-4 w-auto shrink-0 opacity-90"
+                      />
+                    ) : null}
+
+                    <span className="text-xs font-medium text-neutral-200">
+                      {method.label}
+                    </span>
+                  </>
                 )}
               </li>
             );

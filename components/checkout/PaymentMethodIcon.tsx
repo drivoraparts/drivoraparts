@@ -6,15 +6,15 @@
  *
  *  - IMAGE MARKS, every one served from our own origin (see BRAND_MARKS).
  *    Venmo, Cash App and Bitcoin are official brand files used unmodified.
- *    Venmo's is the BLUE variant because checkout is a light surface, where
- *    the white variant the footer uses would be invisible. Bank Transfer and
- *    Zelle use marks the owner supplied: a coloured bank icon, and Zelle's own
- *    logo tile. Zelle's trademark guidelines reserve its logo to licensees;
- *    showing it here was the owner's decision.
+ *    Venmo's is the BLUE variant because checkout is a light surface. Bank
+ *    Transfer, Zelle and PayPal use marks the owner supplied: a coloured bank
+ *    icon, Zelle's logo tile and PayPal's PP monogram. Zelle's trademark
+ *    guidelines reserve its logo to licensees; showing it here was the
+ *    owner's decision.
  *
- *  - GENERIC LINE ICONS, drawn here, for International Wire and PayPal. A wire
- *    is a route rather than a brand, and PayPal's supplied file was unusable
- *    (see WalletGlyph).
+ *  - A GENERIC LINE ICON, drawn here, for International Wire. A wire is a
+ *    route rather than a brand, so borrowing a real bank's or network's mark
+ *    would imply a relationship that does not exist.
  *
  * WHY THE COLUMN IS A FIXED WIDTH
  * Venmo, Cash App and Bitcoin are wordmarks -- Venmo is 1400x265, Bitcoin
@@ -78,27 +78,6 @@ function GlobeGlyph() {
 }
 
 /**
- * Wallet, for PayPal.
- *
- * A generic online-wallet glyph, deliberately NOT a redrawn PayPal mark:
- * recreating a brand logo is not permitted, and the file supplied for it was
- * the white-on-white variant (fully opaque, 92% near-white), which would have
- * rendered as a pale rectangle on this light surface. The real mark drops into
- * BRAND_MARKS below the moment a transparent, coloured version exists.
- */
-function WalletGlyph() {
-  return (
-    <svg viewBox="0 0 24 24" className={GLYPH} aria-hidden="true">
-      <g {...STROKE}>
-        <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h11A2.5 2.5 0 0 1 19 7.5" />
-        <rect x="3" y="7.5" width="18" height="12" rx="2.5" />
-        <path d="M21 11.5h-3.5a2 2 0 0 0 0 4H21" />
-      </g>
-    </svg>
-  );
-}
-
-/**
  * Image marks, every one served from our own origin.
  *
  * Cash App's lockup finally arrives here from Block's own CDN
@@ -107,8 +86,8 @@ function WalletGlyph() {
  * public/trust like the others rather than hotlinked, so a third-party host
  * going down cannot leave an empty box on the payment step.
  *
- * `className` sizes a mark; wordmarks default to WORDMARK. The two square
- * marks sit at the line icons' size so the column still reads as one set.
+ * `className` sizes a mark; wordmarks default to WORDMARK. The square marks
+ * sit at the line icons' size so the column still reads as one set.
  */
 const BRAND_MARKS: Record<
   string,
@@ -120,11 +99,12 @@ const BRAND_MARKS: Record<
   // viewBox alone (0 0 190 40) is not the whole story. These are a layout hint
   // to reserve the right aspect box and avoid shift.
   crypto: { src: "/trust/bitcoin.svg", w: 300, h: 63 },
-  // Both supplied by the owner as JPEGs, which carry no transparency: the
-  // bank icon on solid black, Zelle's tile on a grey margin. Each was cut out
-  // onto a transparent ground -- the bank's black outline rebuilt where it met
-  // the backdrop, Zelle cropped to its tile -- and is otherwise as supplied.
-  // The bank icon keeps its canvas padding, so it gets the full 20px box.
+  // The owner-supplied marks all arrived as JPEGs, which carry no
+  // transparency: the bank icon on solid black, Zelle's tile on a grey
+  // margin, PayPal's monogram on white. Each was cut out onto a transparent
+  // ground -- the bank's black outline rebuilt where it met the backdrop,
+  // Zelle cropped to its tile -- and is otherwise as supplied. The bank icon
+  // keeps its canvas padding, so it gets the full 20px box.
   bank_transfer: {
     src: "/trust/bank-transfer-mark.png",
     w: 256,
@@ -135,6 +115,12 @@ const BRAND_MARKS: Record<
     src: "/trust/zelle-mark.png",
     w: 196,
     h: 196,
+    className: GLYPH,
+  },
+  paypal: {
+    src: "/trust/paypal-mark.png",
+    w: 209,
+    h: 209,
     className: GLYPH,
   },
 };
@@ -162,7 +148,6 @@ export default function PaymentMethodIcon({ id }: { id: string }) {
 
   const glyph: Partial<Record<IconId, React.ReactNode>> = {
     wire: <GlobeGlyph />,
-    paypal: <WalletGlyph />,
   };
 
   return <span className={BOX}>{glyph[id as IconId] ?? <BankGlyph />}</span>;
