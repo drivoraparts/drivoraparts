@@ -43,8 +43,10 @@ export default function GlobalReachBand() {
             We ship it to you
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-on-dark">
-            Small parts move by air. Truck beds, engines and transmissions move
-            by freight. Tell us where it is going and we will quote it properly.
+            4WDs and utes across Australia. Trucks and performance across the
+            USA. Builds everywhere. Small parts move by air. Truck beds, engines
+            and transmissions move by freight. Tell us where it is going and we
+            will quote it properly.
           </p>
         </ScrollReveal>
 

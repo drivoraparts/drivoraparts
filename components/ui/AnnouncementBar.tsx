@@ -15,7 +15,7 @@ type AnnouncementMessage = {
 // does not actually apply.
 const DEFAULT_MESSAGES: AnnouncementMessage[] = [
   { icon: "🔧", text: `Buy 2+ Items — Save ${BULK_ORDER_DISCOUNT_PERCENT}%` },
-  { icon: "🌎", text: "Worldwide Shipping & Freight Available" },
+  { icon: "🌎", text: "Shipping & Freight — Australia · USA · Worldwide" },
   { icon: "🛠️", text: "OEM & Aftermarket Parts For Serious Builds" },
   { icon: "💳", text: `Every Order — Save ${BASE_ORDER_DISCOUNT_PERCENT}%` },
   // "Verified Listings" removed: most listings are bulk imports the site's own

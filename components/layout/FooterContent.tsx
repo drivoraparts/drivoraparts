@@ -11,12 +11,19 @@ export default function FooterContent() {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-5">
-        <div>
+      {/*
+        Two columns on phones, five from md up. The three link groups used to
+        stack one after another in a single column; paired, they read as a
+        directory and the footer is far shorter. The brand block and the
+        newsletter keep the full width -- the sign-up form is cramped at half
+        a phone screen. md:gap-10 restores the original desktop spacing.
+      */}
+      <div className="grid grid-cols-2 gap-x-6 gap-y-10 px-6 py-12 md:grid-cols-5 md:gap-10">
+        <div className="col-span-2 md:col-span-1">
           <h2 className="mb-3 text-lg font-bold">
             Drivora<span className="text-accent-on-dark">Parts</span>
           </h2>
-          <CompanyAddress variant="summary" tone="dark" className="mb-3" />
+          <CompanyAddress variant="footprint" tone="dark" className="mb-3" />
           <p className="text-xs text-muted-on-dark">{t("footerBrand")}</p>
         </div>
 
@@ -25,7 +32,7 @@ export default function FooterContent() {
           <div className="flex flex-col gap-2 text-sm text-muted-on-dark">
             <Link href="/catalog/all">All Products</Link>
             <Link href="/cart">{t("cart")}</Link>
-            <Link href="/catalog">Enter Market</Link>
+            <Link href="/catalog">Shop by Category</Link>
             <Link href="/">{t("home")}</Link>
             <Link href="/faq">FAQ</Link>
             <Link href="/returns">Start a Return</Link>
@@ -58,7 +65,7 @@ export default function FooterContent() {
           </div>
         </div>
 
-        <div>
+        <div className="col-span-2 md:col-span-1">
           <h3 className="mb-3 text-accent-on-dark">Stay Updated</h3>
           <p className="mb-3 text-sm text-muted-on-dark">
             New listings and deals, straight to your inbox.
