@@ -51,6 +51,7 @@ export const brands: Brand[] = [
   { slug: "csf", name: "CSF Radiators", category: "engine" },
   { slug: "banks-power", name: "Banks Power", category: "engine" },
   { slug: "kc-turbos", name: "KC Turbos", category: "engine" },
+  { slug: "xdp", name: "XDP", category: "engine" },
 
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
@@ -171,6 +172,7 @@ export const brands: Brand[] = [
   { slug: "apex-chassis", name: "Apex Chassis", category: "suspension" },
   { slug: "synergy", name: "Synergy Manufacturing", category: "suspension" },
   { slug: "rare-parts", name: "Rare Parts", category: "suspension" },
+  { slug: "xdp", name: "XDP", category: "suspension" },
 
   // Electronics
   // OBS 7.3 Power Stroke sensors carry Ford / Motorcraft part numbers.
@@ -187,6 +189,7 @@ export const brands: Brand[] = [
   { slug: "volkswagen", name: "Volkswagen", category: "electronics" },
   { slug: "universal", name: "Universal", category: "electronics" },
   { slug: "bosch", name: "Bosch", category: "electronics" },
+  { slug: "xdp", name: "XDP", category: "electronics" },
 
   // Lighting
   { slug: "alpharex", name: "AlphaRex", category: "lighting" },
@@ -250,6 +253,8 @@ export const brands: Brand[] = [
   // Market expansion (2026-09): brands added for the USA and Australia listings.
   { slug: "warn", name: "WARN", category: "4x4-accessories" },
   { slug: "maxtrax", name: "MAXTRAX", category: "4x4-accessories" },
+  { slug: "dobinsons", name: "Dobinsons", category: "4x4-accessories" },
+  { slug: "aev", name: "AEV (American Expedition Vehicles)", category: "4x4-accessories" },
 
   // Aftermarket
   { slug: "ford", name: "Ford", category: "aftermarket" },

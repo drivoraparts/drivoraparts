@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   510 listings added 2026-09-15 from manufacturer and
+   553 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -25659,6 +25659,2032 @@ Common bolt pattern suits many aftermarket lights
 
 Warranty
 ARB 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2655,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for Toyota Prado 150 / FJ Cruiser / 4Runner — 63080",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63080.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63080 (supersedes 60080)",
+    fitment: "Toyota Land Cruiser Prado 150 Series 2009–2017; Toyota FJ Cruiser 2010–2016; Toyota 4Runner 2010–2022. Rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-rear-nitrocharger-plus-shock-63080-for-toyota-prado-150-series-replacement-of-60080",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63080/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63080/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the rear of the Toyota Prado 150 / FJ Cruiser / 4Runner.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63080, which replaces the earlier 60080, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63080
+Supersedes: 60080
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2656,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for 2009–2023 Toyota Prado 150 / 4Runner — 63081",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63081.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63081 (supersedes 60081)",
+    fitment: "Toyota Prado 150 Series 2009–2023; Toyota 4Runner 2010–2023. Rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-rear-nitrocharger-plus-shock-63081-for-prado-150-series-replacement-of-60081",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63081/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63081/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the rear of the 2009–2023 Toyota Prado 150 / 4Runner.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63081, which replaces the earlier 60081, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63081
+Supersedes: 60081
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2657,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for 2002–2009 Toyota Prado 120 — 63112",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63112.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63112 (supersedes 60112)",
+    fitment: "Toyota Prado 120 Series 2002–2009. Rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-rear-nitrocharger-plus-shock-63112-for-toyota-prado-120-series-replacement-of-60112",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63112/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63112/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the rear of the 2002–2009 Toyota Prado 120.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63112, which replaces the earlier 60112, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63112
+Supersedes: 60112
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2658,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for 2003–2009 Toyota Prado 120 / 4Runner — 63005",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63005.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63005 (supersedes 60005)",
+    fitment: "Toyota Land Cruiser Prado 120 Series 2003–2009; Toyota 4Runner 2003–2009. Rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-rear-nitrocharger-plus-shock-63005-for-toyota-prado-120-series-replacement-of-60005",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63005/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63005/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the rear of the 2003–2009 Toyota Prado 120 / 4Runner.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63005, which replaces the earlier 60005, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63005
+Supersedes: 60005
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2659,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for Toyota Prado 120 / 4Runner / FJ Cruiser — 63004",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63004.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63004",
+    fitment: "Toyota Land Cruiser Prado 120–125 Series 2003–2009, LWB and SWB, not TEMS or Grande models; Toyota 4Runner 2003–2009; Toyota FJ Cruiser 2007–2016. Rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-rear-nitrocharger-sport-63004-for-toyota-4runner-fj-cruiser-prado-120-series-lwb-swb-not-tems-grande-models-replacement-of-60004",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63004/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63004/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the rear of the Toyota Prado 120 / 4Runner / FJ Cruiser.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63004, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63004
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2660,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for Nissan Patrol Y61 and Y60 — 63014",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63014.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63014",
+    fitment: "Nissan Patrol Y61 and Y60, rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-rear-nitrocharger-plus-shock-63014-patrol-y61-and-y60",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63014/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63014/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the rear of the Nissan Patrol Y61 and Y60.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63014, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63014
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2661,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Front Shock for 1997–2009 Nissan Patrol Y61 — 63012",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63012.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63012",
+    fitment: "Nissan Patrol Y61 1997–2009, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/old-man-emu-front-nitrocharger-plus-shock-63012-for-patrol-y61",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-front-shock-63012/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-front-shock-63012/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the front of the 1997–2009 Nissan Patrol Y61.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63012, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Front
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63012
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2662,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for 2015-on Mitsubishi Triton — 63138",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63138.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63138 (supersedes 60138)",
+    fitment: "Mitsubishi Triton 2015-on, rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-rear-nitrocharger-plus-shock-63138-for-mitsubishi-triton-2015-on-replacement-of-60138",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63138/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63138/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus shock for the rear of the 2015-on Mitsubishi Triton.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 63138, which replaces the earlier 60138, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged shock
+Piston rod: 18 mm induction-hardened chrome
+Part number: 63138
+Supersedes: 60138
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2663,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Sport Front Strut for 2015-on Mitsubishi Triton — 90033",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 90033.
+    price: 211,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "90033",
+    fitment: "Mitsubishi Triton 2015-on, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-front-nitrocharger-sport-strut-90033-for-mitsubishi-triton",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-sport-front-strut-90033/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-sport-front-strut-90033/1.webp"],
+    description: `Old Man Emu Nitrocharger Sport strut for the front of the 2015-on Mitsubishi Triton.
+
+Old Man Emu tunes each shock to the vehicle and to the springs it will be controlling, which is why most vehicles have more than one OME option. This is part number 90033, and the applications above are the ones OME lists for it.
+
+The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
+
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Sport
+Position: Front
+Type: Twin-tube, nitrogen-charged strut
+Piston rod: 18 mm induction-hardened chrome
+Part number: 90033
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Nitrogen-charged twin-tube construction
+18 mm induction-hardened chrome rod
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2664,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Front Right Coilover for Isuzu D-Max — BP5190009R (Each)",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for BP5190009R.
+    price: 949.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BP5190009R",
+    fitment: "Isuzu D-Max, front right-hand side. Sold individually — the other side is part BP5190009L.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/old-man-emu-front-bp-51-coilover-for-right-side-bp5190009r",
+    thumbnail: "/product-media/suspension/ome-bp-51-front-coilover-right-dmax-bp5190009r/1.webp",
+    images: ["/product-media/suspension/ome-bp-51-front-coilover-right-dmax-bp5190009r/1.webp"],
+    description: `Old Man Emu BP-51 front right-hand coilover for the Isuzu D-Max, sold individually.
+
+BP-51 is OME's internal-bypass shock: damping stays soft around ride height for comfort, then firms up as the shock nears the end of its travel, so it resists bottoming without riding harshly around town.
+
+Rebound and compression adjust independently on the vehicle. The build uses a large bore and bypass diameter for oil volume and tuning range, with a hard-chromed ground shaft and an impact-resistant guard.
+
+This is the right-hand unit only. A pair needs both part numbers.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: BP-51
+Position: Front right
+Design: Internal bypass, position-sensitive, remote reservoir
+Adjustment: Independent rebound and compression, on-vehicle
+Quantity: 1 coilover
+Part number: BP5190009R
+
+Highlights
+
+Comfort at ride height, control at the end of travel
+On-vehicle rebound and compression adjustment
+Right-hand side, sold individually
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2665,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Front Left Coilover for Isuzu D-Max — BP5190009L (Each)",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for BP5190009L.
+    price: 949.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BP5190009L",
+    fitment: "Isuzu D-Max, front left-hand side. Sold individually — the other side is part BP5190009R.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/old-man-emu-front-bp-51-coilover-for-left-side-bp5190009l",
+    thumbnail: "/product-media/suspension/ome-bp-51-front-coilover-left-dmax-bp5190009l/1.webp",
+    images: ["/product-media/suspension/ome-bp-51-front-coilover-left-dmax-bp5190009l/1.webp"],
+    description: `Old Man Emu BP-51 front left-hand coilover for the Isuzu D-Max, sold individually.
+
+BP-51 is OME's internal-bypass shock: damping stays soft around ride height for comfort, then firms up as the shock nears the end of its travel, so it resists bottoming without riding harshly around town.
+
+Rebound and compression adjust independently on the vehicle. The build uses a large bore and bypass diameter for oil volume and tuning range, with a hard-chromed ground shaft and an impact-resistant guard.
+
+This is the left-hand unit only. A pair needs both part numbers.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: BP-51
+Position: Front left
+Design: Internal bypass, position-sensitive, remote reservoir
+Adjustment: Independent rebound and compression, on-vehicle
+Quantity: 1 coilover
+Part number: BP5190009L
+
+Highlights
+
+Comfort at ride height, control at the end of travel
+On-vehicle rebound and compression adjustment
+Left-hand side, sold individually
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2666,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Front Strut Top Hat Kit for Isuzu D-Max — OMETH004 (Pair)",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for OMETH004-pair.
+    price: 190,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "OMETH004",
+    fitment: "Isuzu D-Max, front struts. Supplied as a pair.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-front-strut-top-hat-kit-ometh004-pair-for-isuzu-d-max",
+    thumbnail: "/product-media/suspension/ome-front-strut-top-hat-kit-dmax-someth004/1.webp",
+    images: ["/product-media/suspension/ome-front-strut-top-hat-kit-dmax-someth004/1.webp"],
+    description: `Old Man Emu front strut top hat kit for the Isuzu D-Max, supplied as a pair.
+
+The top hat is what the strut mounts through at the top of the tower, and it carries the bearing the strut turns on. Worn ones knock over bumps and bind the steering.
+
+OME supplies these as a pair, as part of the fitting range built around their own struts.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: Front strut top hat kit
+Quantity: Pair
+Part number: OMETH004
+
+Highlights
+
+Replaces worn strut top mounts
+Supplied as a pair
+Matched to OME front struts
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2667,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Greasable Shackle Kit for Isuzu D-Max — OMEGS26",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for OMEGS26.
+    price: 199.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "OMEGS26",
+    fitment: "Isuzu D-Max, rear leaf springs.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/ome-greasable-shackle-kit-omegs26-for-isuzu-d-max-old-man-emu",
+    thumbnail: "/product-media/suspension/ome-greasable-shackle-kit-dmax-omegs26/1.webp",
+    images: ["/product-media/suspension/ome-greasable-shackle-kit-dmax-omegs26/1.webp"],
+    description: `Old Man Emu greasable shackle kit for the Isuzu D-Max.
+
+OME's Dakar leaf springs have bushes that need periodic greasing, and greasable shackles let you do it with a grease gun rather than pulling the shackles apart.
+
+The kit bolts together, which avoids the out-of-angle pin-to-plate problems of press-fit shackles. Each heat-treated pin has two grease outlets, and the side plates are zinc-plated.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: Greasable shackle kit
+Pins: Heat-treated, two grease outlets per pin
+Part number: OMEGS26
+
+Highlights
+
+Grease the spring bushes in place
+Bolt-together assembly
+Zinc-plated side plates
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2668,
+    createdAt: 1789430400000,
+    name: "Dobinsons SS Loop Deluxe Bull Bar for Toyota Land Cruiser Prado 150 Series — BU59-3662",
+    category: "bumper",
+    brand: "dobinsons",
+    // mudify listing price for BU59-3662.
+    price: 2300,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BU59-3662",
+    fitment: "Toyota Land Cruiser Prado 150 Series.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-bull-bar-ss-loop-deluxe-for-toyota-prado-150-series-bu59-3662",
+    thumbnail: "/product-media/bumper/dobinsons-bull-bar-ss-loop-deluxe-bu59-3662/1.webp",
+    images: ["/product-media/bumper/dobinsons-bull-bar-ss-loop-deluxe-bu59-3662/1.webp"],
+    description: `Dobinsons SS Loop Deluxe steel bull bar for the Toyota Land Cruiser Prado 150 Series.
+
+Dobinsons CNC-cuts, bends and welds its bull bars from structural steel. They are airbag- and winch-compatible, with driving-light mounts, reinforced wing sections, dual aerial mounts and reinforced dual Hi-Lift jacking points, finished in heavy-duty black powder coat.
+
+The SS Loop Deluxe carries a stainless loop over the centre section.
+
+Dobinsons publishes this photograph marked "Illustration Purposes Only", and says features vary by bumper model. Go by the specification list above rather than the details in the picture.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Style: SS Loop Deluxe
+Vehicle: Toyota Land Cruiser Prado 150 Series
+Winch: Winch-compatible (winch not included)
+Finish: Black powder coat
+Part number: BU59-3662
+
+Highlights
+
+Airbag- and winch-compatible
+Driving-light mounts
+Reinforced dual Hi-Lift jacking points
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2669,
+    createdAt: 1789430400000,
+    name: "Dobinsons SS Loop Deluxe Bull Bar for Toyota Land Cruiser Prado 120 Series — BU59-3661",
+    category: "bumper",
+    brand: "dobinsons",
+    // mudify listing price for BU59-3661.
+    price: 2300,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BU59-3661",
+    fitment: "Toyota Land Cruiser Prado 120 Series.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-bull-bar-ss-loop-deluxe-for-toyota-prado-120-series-bu59-3661",
+    thumbnail: "/product-media/bumper/dobinsons-bull-bar-ss-loop-deluxe-bu59-3661/1.webp",
+    images: ["/product-media/bumper/dobinsons-bull-bar-ss-loop-deluxe-bu59-3661/1.webp"],
+    description: `Dobinsons SS Loop Deluxe steel bull bar for the Toyota Land Cruiser Prado 120 Series.
+
+Dobinsons CNC-cuts, bends and welds its bull bars from structural steel. They are airbag- and winch-compatible, with driving-light mounts, reinforced wing sections, dual aerial mounts and reinforced dual Hi-Lift jacking points, finished in heavy-duty black powder coat.
+
+The SS Loop Deluxe carries a stainless loop over the centre section.
+
+Dobinsons publishes this photograph marked "Illustration Purposes Only", and says features vary by bumper model. Go by the specification list above rather than the details in the picture.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Style: SS Loop Deluxe
+Vehicle: Toyota Land Cruiser Prado 120 Series
+Winch: Winch-compatible (winch not included)
+Finish: Black powder coat
+Part number: BU59-3661
+
+Highlights
+
+Airbag- and winch-compatible
+Driving-light mounts
+Reinforced dual Hi-Lift jacking points
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2670,
+    createdAt: 1789430400000,
+    name: "Dobinsons Black Deluxe Bull Bar for 2012–2016 Isuzu D-Max (2nd Gen) — BU21-3685",
+    category: "bumper",
+    brand: "dobinsons",
+    // mudify listing price for BU21-3685.
+    price: 2150,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BU21-3685",
+    fitment: "Isuzu D-Max second generation 2012–2016, 4x4 and 4x2.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-bull-bar-black-deluxe-for-2nd-gen-isuzu-d-max-2012-2016-bu21-3685",
+    thumbnail: "/product-media/bumper/dobinsons-bull-bar-black-deluxe-bu21-3685/1.webp",
+    images: ["/product-media/bumper/dobinsons-bull-bar-black-deluxe-bu21-3685/1.webp"],
+    description: `Dobinsons Black Deluxe steel bull bar for the 2012–2016 Isuzu D-Max (2nd Gen).
+
+Dobinsons CNC-cuts, bends and welds its bull bars from structural steel. They are airbag- and winch-compatible, with driving-light mounts, reinforced wing sections, dual aerial mounts and reinforced dual Hi-Lift jacking points, finished in heavy-duty black powder coat.
+
+It comes with impact-resistant 100 mm fog lights and LED park and indicator lights, plus polyurethane bumper protectors.
+
+Dobinsons publishes this photograph marked "Illustration Purposes Only", and says features vary by bumper model. Go by the specification list above rather than the details in the picture.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Style: Black Deluxe
+Vehicle: 2012–2016 Isuzu D-Max (2nd Gen)
+Winch: Winch-compatible (winch not included)
+Finish: Black powder coat
+Part number: BU21-3685
+
+Highlights
+
+Airbag- and winch-compatible
+Driving-light mounts
+Reinforced dual Hi-Lift jacking points
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2671,
+    createdAt: 1789430400000,
+    name: "Dobinsons Black Deluxe Bull Bar for 2017–2019 Isuzu D-Max (2nd Gen Facelift) — BU21-3718",
+    category: "bumper",
+    brand: "dobinsons",
+    // mudify listing price for BU21-3718.
+    price: 2150,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BU21-3718",
+    fitment: "Isuzu D-Max second generation facelift 2017–2019.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-bull-bar-black-deluxe-for-2nd-gen-isuzu-d-max-with-face-lift-2017-2019-bu21-3718",
+    thumbnail: "/product-media/bumper/dobinsons-bull-bar-black-deluxe-bu21-3718/1.webp",
+    images: ["/product-media/bumper/dobinsons-bull-bar-black-deluxe-bu21-3718/1.webp"],
+    description: `Dobinsons Black Deluxe steel bull bar for the 2017–2019 Isuzu D-Max (2nd Gen Facelift).
+
+Dobinsons CNC-cuts, bends and welds its bull bars from structural steel. They are airbag- and winch-compatible, with driving-light mounts, reinforced wing sections, dual aerial mounts and reinforced dual Hi-Lift jacking points, finished in heavy-duty black powder coat.
+
+It comes with impact-resistant 100 mm fog lights and LED park and indicator lights, plus polyurethane bumper protectors.
+
+Dobinsons publishes this photograph marked "Illustration Purposes Only", and says features vary by bumper model. Go by the specification list above rather than the details in the picture.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Style: Black Deluxe
+Vehicle: 2017–2019 Isuzu D-Max (2nd Gen Facelift)
+Winch: Winch-compatible (winch not included)
+Finish: Black powder coat
+Part number: BU21-3718
+
+Highlights
+
+Airbag- and winch-compatible
+Driving-light mounts
+Reinforced dual Hi-Lift jacking points
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2672,
+    createdAt: 1789430400000,
+    name: "Dobinsons Rear Bumper with Swing-Outs for 2006–2021 Nissan Patrol Y61 GU — BW80-4111",
+    category: "bumper",
+    brand: "dobinsons",
+    // mudify listing price for BW80-4111.
+    price: 3000,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BW80-4111",
+    fitment: "Nissan Patrol Y61 GU 2006–2021.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-rear-bumper-with-swing-outs-for-nissan-patrol-y61-gu-2006-2021-bw80-4111",
+    thumbnail: "/product-media/bumper/dobinsons-rear-bumper-swing-outs-patrol-y61-bw80-4111/1.webp",
+    images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-patrol-y61-bw80-4111/1.webp"],
+    description: `Dobinsons steel rear bumper with swing-outs for the 2006–2021 Nissan Patrol Y61 GU.
+
+Sold as a complete kit, with an adjustable-offset tyre carrier head, and it works with the factory tow hitch in its original position.
+
+Standard finish is black powder coat with stainless-steel latches and hardware. The 12 V LED lights need splicing into the factory harness — they are not plug-and-play.
+
+Dobinsons publishes this photograph marked "Illustration Purposes Only". Go by the specification list rather than the details in the picture.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Vehicle: Nissan Patrol Y61 GU 2006–2021
+Lighting: 12 V LED (requires splicing)
+Tow hitch: Works with the factory hitch in the OE position
+Finish: Black powder coat
+Part number: BW80-4111
+
+Highlights
+
+Complete kit with swing-out tyre carrier
+Retains the factory tow hitch
+Stainless-steel latches and hardware
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2673,
+    createdAt: 1789430400000,
+    name: "Dobinsons Greaseable Extended Rear Shackles for Isuzu D-Max (2nd Gen) — SK21-071 (Pair)",
+    category: "suspension",
+    brand: "dobinsons",
+    // mudify listing price for SK21-071-PAIR.
+    price: 230,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SK21-071",
+    fitment: "Isuzu D-Max second generation. Side-specific — one left and one right, supplied as a pair. Gives roughly 25–30 mm of rear lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-rear-greaseable-extended-shackle-for-isuzu-d-max-2nd-gen-1-lift-sk21-071",
+    thumbnail: "/product-media/suspension/dobinsons-rear-extended-shackles-dmax-sk21-071/1.webp",
+    images: ["/product-media/suspension/dobinsons-rear-extended-shackles-dmax-sk21-071/1.webp"],
+    description: `Dobinsons greaseable extended rear shackles for the second-generation Isuzu D-Max, sold as a pair.
+
+Extended shackles are the cheapest way to add a little rear height to a leaf-sprung ute. These are about 50 mm longer than the original shackles, which works out to roughly 25–30 mm of lift at the body.
+
+They are greaseable, so the bushes can be maintained rather than replaced, and side-specific — the pair includes one left and one right.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Product: Greaseable extended rear shackles
+Length: ~50 mm longer than OE
+Lift: ~25–30 mm
+Quantity: Pair (one left, one right)
+Part number: SK21-071
+
+Highlights
+
+About 25–30 mm of rear lift
+Greaseable bushes
+Sold as a side-specific pair
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2674,
+    createdAt: 1789430400000,
+    name: "Dobinsons Full Front Differential Drop Kit for Isuzu D-Max (2nd Gen) — DD21-533K",
+    category: "suspension",
+    brand: "dobinsons",
+    // mudify listing price for DD21-533K.
+    price: 400,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DD21-533K",
+    fitment: "Isuzu D-Max second generation, lifted more than 2.0 in.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-full-diff-drop-kit-for-isuzu-d-max-2nd-gen-dd21-533k",
+    thumbnail: "/product-media/suspension/dobinsons-front-diff-drop-kit-dmax-dd21-533k/1.webp",
+    images: ["/product-media/suspension/dobinsons-front-diff-drop-kit-dmax-dd21-533k/1.webp"],
+    description: `Dobinsons full front differential drop kit for the second-generation Isuzu D-Max.
+
+Lift an independent-front-suspension ute more than about 2 in and the CV joints start running at angles that wear them out early. A diff drop lowers the front of the differential to bring those angles back toward standard.
+
+Dobinsons lists it for lifts over 2.0 in, and as a complement to their own lift kits.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Product: Full front differential drop kit
+For lifts: Over 2.0 in
+Part number: DD21-533K
+
+Highlights
+
+Corrects CV angles on a lifted D-Max
+Full kit, not a single spacer
+For lifts over 2 in
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2675,
+    createdAt: 1789430400000,
+    name: "Dobinsons 4-Degree Caster Correction Kit for Toyota Land Cruiser 76 / 78 / 79 Series — WA59-585K",
+    category: "suspension",
+    brand: "dobinsons",
+    // mudify listing price for WA59-585K.
+    price: 300,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "WA59-585K",
+    fitment: "Toyota Land Cruiser 76, 78 and 79 Series with a 3 to 5 in lift. Includes plates and bushings.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-4-degree-caster-correction-kit-includes-plates-and-bushings-for-toyota-land-cruiser-76-78-79-series-wa59-585k",
+    thumbnail: "/product-media/suspension/dobinsons-caster-correction-kit-lc70-wa59-585k/1.webp",
+    images: ["/product-media/suspension/dobinsons-caster-correction-kit-lc70-wa59-585k/1.webp"],
+    description: `Dobinsons 4-degree caster correction kit for the lifted Land Cruiser 76, 78 and 79 Series.
+
+Lifting a solid-axle Land Cruiser rotates the axle and takes caster with it. Too little caster and the steering stops self-centring — the truck wanders and feels vague at highway speed.
+
+This kit corrects four degrees, which Dobinsons rates for 3 to 5 in of lift, and it maintains tie-rod to radius-arm clearance. It uses OEM-quality natural rubber bushes and needs no cutting, welding or drilling.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Correction: 4 degrees
+For lifts: 3–5 in
+Includes: Plates and bushings
+Installation: No cutting, welding or drilling
+Part number: WA59-585K
+
+Highlights
+
+Restores caster after a 3–5 in lift
+Keeps tie-rod to radius-arm clearance
+Bolt-in — no cutting or welding
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2676,
+    createdAt: 1789430400000,
+    name: "Safari Snorkel for Toyota Land Cruiser Prado 150 Series — SS188HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // mudify listing price for SS188HF.
+    price: 534.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SS188HF",
+    fitment: "Toyota Land Cruiser Prado 150 Series.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-safari-4x4-snorkel-ss188hf-for-toyota-prado-150-series",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss188hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss188hf/1.webp"],
+    description: `Safari snorkel kit for the Toyota Land Cruiser Prado 150 Series.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari's Air Ram head is CAD-designed and lab-tested to strip water out of the incoming air while still delivering the airflow the engine wants, and the body is moulded from UV-stable polyethylene.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari
+Product: Snorkel kit
+Material: UV-stable polyethylene
+Vehicle: Toyota Land Cruiser Prado 150 Series
+Part number: SS188HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding
+Reduces dust reaching the air filter
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2677,
+    createdAt: 1789430400000,
+    name: "Safari Snorkel for 2018-on Mitsubishi Triton — SS663HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // mudify listing price for SS663HF.
+    price: 534.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SS663HF",
+    fitment: "Mitsubishi Triton 2018-on.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-safari-4x4-snorkel-ss663hf-for-mitsubishi-triton",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss663hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss663hf/1.webp"],
+    description: `Safari snorkel kit for the 2018-on Mitsubishi Triton.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari's Air Ram head is CAD-designed and lab-tested to strip water out of the incoming air while still delivering the airflow the engine wants, and the body is moulded from UV-stable polyethylene.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari
+Product: Snorkel kit
+Material: UV-stable polyethylene
+Vehicle: 2018-on Mitsubishi Triton
+Part number: SS663HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding
+Reduces dust reaching the air filter
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2678,
+    createdAt: 1789430400000,
+    name: "Dobinsons Snorkel for Mitsubishi Triton / L200 ML and MN, 2.5L and 3.2L Diesel — SN43-3329",
+    category: "4x4-accessories",
+    brand: "dobinsons",
+    // mudify listing price for SN43-3329.
+    price: 375,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SN43-3329",
+    fitment: "Mitsubishi Triton / L200 ML and MN with the 2.5L or 3.2L diesel. Right-side mount.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-snorkel-kit-for-mitsubishi-triton-l200-ml-mn-2-5l-3-2l-diesel-right-side-mount-suits-models-with-flares-only-sn43-3329",
+    thumbnail: "/product-media/4x4-accessories/dobinsons-snorkel-sn43-3329/1.webp",
+    images: ["/product-media/4x4-accessories/dobinsons-snorkel-sn43-3329/1.webp"],
+    description: `Dobinsons snorkel kit for the Mitsubishi Triton / L200 ML and MN, 2.5L and 3.2L Diesel.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Dobinsons rotationally moulds these using CNC-shaped aluminium dies, in UV-resistant LLDPE, so the body holds its shape and colour in sun.
+
+This is the right-side-mount version.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Dobinsons
+Product: Snorkel kit
+Material: UV-resistant LLDPE, rotationally moulded
+Vehicle: Mitsubishi Triton / L200 ML and MN, 2.5L and 3.2L Diesel
+Part number: SN43-3329
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding
+Reduces dust reaching the air filter
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2679,
+    createdAt: 1789430400000,
+    name: "ARB BASE Rack Gutter Mount Kit (Set of 6) — 17900010",
+    category: "4x4-accessories",
+    brand: "arb",
+    // mudify listing price for 17900010.
+    price: 454,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "17900010",
+    fitment: "Gutter-mounted vehicles, for use with an ARB BASE Rack (sold separately). Set of six mounts.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-base-roof-rack-gutter-mount-kit-17900010",
+    thumbnail: "/product-media/4x4-accessories/arb-base-rack-gutter-mount-kit-17900010/1.webp",
+    images: ["/product-media/4x4-accessories/arb-base-rack-gutter-mount-kit-17900010/1.webp"],
+    description: `ARB BASE Rack gutter mount kit — a set of six mounts for gutter-equipped vehicles.
+
+Older 4x4s mount a roof rack to the rain gutter rather than to threaded roof points. This kit is ARB's gutter fitting for the BASE Rack: steel gutter runners with plastic sleeves that spread the load along the gutter instead of concentrating it at each foot.
+
+The support plates suit the BASE Rack extrusion, and the finish is ARB's Integrit textured black. It comes as a set of six.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: BASE Rack gutter mount kit
+Quantity: Set of 6
+Construction: Steel runners with plastic sleeves
+Finish: Integrit textured black
+Part number: 17900010
+
+Highlights
+
+For gutter-mounted vehicles
+Spreads load along the gutter
+Set of six
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2680,
+    createdAt: 1789430400000,
+    name: "XDP X-TRA Cool Direct-Fit Radiator — 2003–2007 Ford 6.0L Power Stroke — XD298",
+    category: "engine",
+    brand: "xdp",
+    // dpp listing price for XDP-XD298.
+    price: 320.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD298",
+    fitment: "2003–2007 Ford F-250 / F-350 / F-450 / F-550 with the 6.0L Power Stroke. Direct fit — no modification required.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18221-xdp-x-tra-cool-direct-fit-replacement-radiator-03-07-60l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/engine/xdp-x-tra-cool-radiator-xd298/1.webp",
+    images: ["/product-media/engine/xdp-x-tra-cool-radiator-xd298/1.webp"],
+    description: `XDP X-TRA Cool direct-fit replacement radiator for the 2003–2007 Ford 6.0L Power Stroke.
+
+A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
+
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+
+It is a direct-fit replacement, so it goes in where the factory radiator came out.
+
+Specifications
+
+Manufacturer: XDP
+Product: X-TRA Cool direct-fit radiator
+Core: High-efficiency, increased fins per inch
+Tank attachment: Heavy-gauge steel crimp strip
+Application: 2003–2007 Ford 6.0L Power Stroke
+Part number: XD298
+
+Highlights
+
+Higher fin count than the factory core
+Reinforced end tanks and corners
+Steel crimp strip, not aluminium
+Direct fit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2681,
+    createdAt: 1789430400000,
+    name: "XDP X-TRA Cool Direct-Fit Radiator — 1999–2003 Ford 7.3L Power Stroke — XD538",
+    category: "engine",
+    brand: "xdp",
+    // dpp listing price for XDP-XD538.
+    price: 312.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD538",
+    fitment: "1999–2003 Ford Super Duty and Excursion with the 7.3L Power Stroke. Direct fit — no modification required.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-xdp-x-tra-cool-direct-fit-replacement-radiator-99-03-ford-73l-powerstroke",
+    thumbnail: "/product-media/engine/xdp-x-tra-cool-radiator-xd538/1.webp",
+    images: ["/product-media/engine/xdp-x-tra-cool-radiator-xd538/1.webp"],
+    description: `XDP X-TRA Cool direct-fit replacement radiator for the 1999–2003 Ford 7.3L Power Stroke.
+
+A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
+
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+
+It is a direct-fit replacement, so it goes in where the factory radiator came out.
+
+Specifications
+
+Manufacturer: XDP
+Product: X-TRA Cool direct-fit radiator
+Core: High-efficiency, increased fins per inch
+Tank attachment: Heavy-gauge steel crimp strip
+Application: 1999–2003 Ford 7.3L Power Stroke
+Part number: XD538
+
+Highlights
+
+Higher fin count than the factory core
+Reinforced end tanks and corners
+Steel crimp strip, not aluminium
+Direct fit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2682,
+    createdAt: 1789430400000,
+    name: "XDP X-TRA Cool Direct-Fit Radiator — 2003–2009 Dodge Ram 5.9L / 6.7L Cummins — XD296",
+    category: "engine",
+    brand: "xdp",
+    // dpp listing price for XDP-XD296.
+    price: 319.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD296",
+    fitment: "2003–2009 Dodge Ram 2500 / 3500 with the 5.9L or 6.7L Cummins. Direct fit — no modification required.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18218-xdp-x-tra-cool-direct-fit-replacement-radiator-03-09-59l-67l-dodge-cummins-aspx",
+    thumbnail: "/product-media/engine/xdp-x-tra-cool-radiator-xd296/1.webp",
+    images: ["/product-media/engine/xdp-x-tra-cool-radiator-xd296/1.webp"],
+    description: `XDP X-TRA Cool direct-fit replacement radiator for the 2003–2009 Dodge Ram 5.9L / 6.7L Cummins.
+
+A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
+
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+
+It is a direct-fit replacement, so it goes in where the factory radiator came out.
+
+Specifications
+
+Manufacturer: XDP
+Product: X-TRA Cool direct-fit radiator
+Core: High-efficiency, increased fins per inch
+Tank attachment: Heavy-gauge steel crimp strip
+Application: 2003–2009 Dodge Ram 5.9L / 6.7L Cummins
+Part number: XD296
+
+Highlights
+
+Higher fin count than the factory core
+Reinforced end tanks and corners
+Steel crimp strip, not aluminium
+Direct fit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2683,
+    createdAt: 1789430400000,
+    name: "XDP X-TRA Cool Direct-Fit Radiator — 2010–2012 Dodge Ram 6.7L Cummins — XD293",
+    category: "engine",
+    brand: "xdp",
+    // dpp listing price for XDP-XD293.
+    price: 382.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD293",
+    fitment: "2010–2012 Dodge Ram 2500 / 3500 with the 6.7L Cummins. Direct fit — no modification required.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18215-xdp-x-tra-cool-direct-fit-replacement-radiator-10-12-67l-dodge-cummins-aspx",
+    thumbnail: "/product-media/engine/xdp-x-tra-cool-radiator-xd293/1.webp",
+    images: ["/product-media/engine/xdp-x-tra-cool-radiator-xd293/1.webp"],
+    description: `XDP X-TRA Cool direct-fit replacement radiator for the 2010–2012 Dodge Ram 6.7L Cummins.
+
+A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
+
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+
+It is a direct-fit replacement, so it goes in where the factory radiator came out.
+
+Specifications
+
+Manufacturer: XDP
+Product: X-TRA Cool direct-fit radiator
+Core: High-efficiency, increased fins per inch
+Tank attachment: Heavy-gauge steel crimp strip
+Application: 2010–2012 Dodge Ram 6.7L Cummins
+Part number: XD293
+
+Highlights
+
+Higher fin count than the factory core
+Reinforced end tanks and corners
+Steel crimp strip, not aluminium
+Direct fit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2684,
+    createdAt: 1789430400000,
+    name: "XDP X-TRA Cool Direct-Fit Radiator — 2013–2018 Ram 6.7L Cummins — XD294",
+    category: "engine",
+    brand: "xdp",
+    // dpp listing price for XDP-XD294.
+    price: 329.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD294",
+    fitment: "2013–2018 Ram 2500 / 3500 with the 6.7L Cummins. Direct fit — no modification required.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18216-xdp-x-tra-cool-direct-fit-replacement-radiator-13-18-67l-ram-cummins-aspx",
+    thumbnail: "/product-media/engine/xdp-x-tra-cool-radiator-xd294/1.webp",
+    images: ["/product-media/engine/xdp-x-tra-cool-radiator-xd294/1.webp"],
+    description: `XDP X-TRA Cool direct-fit replacement radiator for the 2013–2018 Ram 6.7L Cummins.
+
+A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
+
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+
+It is a direct-fit replacement, so it goes in where the factory radiator came out.
+
+Specifications
+
+Manufacturer: XDP
+Product: X-TRA Cool direct-fit radiator
+Core: High-efficiency, increased fins per inch
+Tank attachment: Heavy-gauge steel crimp strip
+Application: 2013–2018 Ram 6.7L Cummins
+Part number: XD294
+
+Highlights
+
+Higher fin count than the factory core
+Reinforced end tanks and corners
+Steel crimp strip, not aluminium
+Direct fit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2685,
+    createdAt: 1789430400000,
+    name: "XDP HD High-Output Alternator, 245 Amp, Wrinkle Black — 2011–2020 Ford 6.7L Power Stroke — XD352",
+    category: "electronics",
+    brand: "xdp",
+    // dpp listing price for XDP-XD352.
+    price: 552.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD352",
+    fitment: "2011–2020 Ford 6.7L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-xdp-xd352-wrinkle-black-hd-high-output-alternator-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/electronics/xdp-hd-high-output-alternator-xd352/1.webp",
+    images: ["/product-media/electronics/xdp-hd-high-output-alternator-xd352/1.webp"],
+    description: `XDP heavy-duty 245 amp alternator for the 2011–2020 Ford 6.7L Power Stroke, wrinkle black finish.
+
+A factory charging system has very little headroom once a truck carries aftermarket lights, a stereo, air horns, a winch or a fridge. The symptom is dim lights at idle and batteries that never quite come back up.
+
+This is a 245 amp heavy-duty unit in a wrinkle black finish — a straight upgrade in output over the factory alternator.
+
+Specifications
+
+Manufacturer: XDP
+Output: 245 amp
+Finish: Wrinkle black
+Engine: 6.7L Power Stroke
+Years: 2011–2020
+Part number: XD352
+
+Highlights
+
+245 amp output
+Headroom for lights, winches and fridges
+Wrinkle black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2686,
+    createdAt: 1789430400000,
+    name: "XDP HD High-Output Alternator, Wrinkle Black — 2007.5–2020 Ram 6.7L Cummins — XD354",
+    category: "electronics",
+    brand: "xdp",
+    // dpp listing price for XDP-XD354.
+    price: 568.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD354",
+    fitment: "2007.5–2020 Dodge / Ram 2500 / 3500 with the 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-xdp-xd354-wrinkle-black-hd-high-output-alternator-075-18-ram-67l-cummins",
+    thumbnail: "/product-media/electronics/xdp-hd-high-output-alternator-xd354/1.webp",
+    images: ["/product-media/electronics/xdp-hd-high-output-alternator-xd354/1.webp"],
+    description: `XDP heavy-duty high-output alternator for the 2007.5–2020 Ram 6.7L Cummins, wrinkle black finish.
+
+Factory charging systems run short of margin once a truck carries aftermarket lights, a winch, a fridge or a large stereo. A high-output alternator restores that margin.
+
+This is XDP's heavy-duty unit for the 6.7L Cummins, in a wrinkle black finish.
+
+Specifications
+
+Manufacturer: XDP
+Product: HD high-output alternator
+Finish: Wrinkle black
+Engine: 6.7L Cummins
+Years: 2007.5–2020
+Part number: XD354
+
+Highlights
+
+High-output replacement for the factory alternator
+Covers accessory load
+Wrinkle black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2687,
+    createdAt: 1789430400000,
+    name: "XDP HD High-Output Alternator, Wrinkle Black — 1990–1998.5 Dodge Ram 5.9L Cummins — XD510",
+    category: "electronics",
+    brand: "xdp",
+    // dpp listing price for XDP-XD510.
+    price: 418.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD510",
+    fitment: "1990–1998.5 Dodge Ram with the 5.9L Cummins (12-valve).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-xdp-xd510-wrinkle-black-hd-high-output-alternator-90-985-dodge-ram-59l-cummins",
+    thumbnail: "/product-media/electronics/xdp-hd-high-output-alternator-xd510/1.webp",
+    images: ["/product-media/electronics/xdp-hd-high-output-alternator-xd510/1.webp"],
+    description: `XDP heavy-duty high-output alternator for the 1990–1998.5 Dodge Ram 5.9L Cummins.
+
+First and second-generation Cummins trucks left the factory with modest charging output, which runs out quickly with lights, a winch or a second battery added.
+
+This is XDP's heavy-duty replacement for those trucks, finished in wrinkle black.
+
+Specifications
+
+Manufacturer: XDP
+Product: HD high-output alternator
+Finish: Wrinkle black
+Engine: 5.9L Cummins
+Years: 1990–1998.5
+Part number: XD510
+
+Highlights
+
+High-output replacement
+Suits added lighting and winches
+Wrinkle black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2688,
+    createdAt: 1789430400000,
+    name: "XDP Gear Reduction Starter, Wrinkle Black — 1994–2002 Dodge Ram 5.9L Cummins — XD257",
+    category: "electronics",
+    brand: "xdp",
+    // dpp listing price for XDP-XD257.
+    price: 299.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD257",
+    fitment: "1994–2002 Dodge Ram 2500 / 3500 with the 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18149-xdp-wrinkle-black-gear-reduction-starter-94-02-59l-dodge-cummins-aspx",
+    thumbnail: "/product-media/electronics/xdp-gear-reduction-starter-xd257/1.webp",
+    images: ["/product-media/electronics/xdp-gear-reduction-starter-xd257/1.webp"],
+    description: `XDP heavy-duty gear reduction starter for the 1994–2002 Dodge Ram 5.9L Cummins.
+
+A gear reduction starter uses a smaller, faster motor through a reduction gearset. It produces more torque than the factory unit at about a third of the size, and draws less current doing it — which is what you want on a cold morning with a tired battery.
+
+It's a bolt-on replacement in a wrinkle black finish, and the reduced size frees up room around the block.
+
+Specifications
+
+Manufacturer: XDP
+Product: Gear reduction starter
+Finish: Wrinkle black
+Application: 1994–2002 Dodge Ram 5.9L Cummins
+Part number: XD257
+
+Highlights
+
+More cranking torque than the factory starter
+Lower current draw
+Compact gear reduction design
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2689,
+    createdAt: 1789430400000,
+    name: "XDP Gear Reduction Starter, Wrinkle Black — 2003–2006 Dodge Ram 5.9L Cummins — XD258",
+    category: "electronics",
+    brand: "xdp",
+    // dpp listing price for XDP-XD258.
+    price: 290.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD258",
+    fitment: "2003–2006 Dodge Ram 2500 / 3500 with the 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18150-xdp-wrinkle-black-gear-reduction-starter-03-06-59l-dodge-cummins-aspx",
+    thumbnail: "/product-media/electronics/xdp-gear-reduction-starter-xd258/1.webp",
+    images: ["/product-media/electronics/xdp-gear-reduction-starter-xd258/1.webp"],
+    description: `XDP heavy-duty gear reduction starter for the 2003–2006 Dodge Ram 5.9L Cummins.
+
+A gear reduction starter uses a smaller, faster motor through a reduction gearset. It produces more torque than the factory unit at about a third of the size, and draws less current doing it — which is what you want on a cold morning with a tired battery.
+
+It's a bolt-on replacement in a wrinkle black finish, and the reduced size frees up room around the block.
+
+Specifications
+
+Manufacturer: XDP
+Product: Gear reduction starter
+Finish: Wrinkle black
+Application: 2003–2006 Dodge Ram 5.9L Cummins
+Part number: XD258
+
+Highlights
+
+More cranking torque than the factory starter
+Lower current draw
+Compact gear reduction design
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2690,
+    createdAt: 1789430400000,
+    name: "XDP Gear Reduction Starter, Wrinkle Black — 2007–2022 Ram 5.9L / 6.7L Cummins — XD259",
+    category: "electronics",
+    brand: "xdp",
+    // dpp listing price for XDP-XD259.
+    price: 364.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD259",
+    fitment: "2007–2022 Dodge / Ram 2500 / 3500 with the 5.9L or 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18151-xdp-wrinkle-black-gear-reduction-starter-07-18-59l-67l-dodge-ram-cummins-aspx",
+    thumbnail: "/product-media/electronics/xdp-gear-reduction-starter-xd259/1.webp",
+    images: ["/product-media/electronics/xdp-gear-reduction-starter-xd259/1.webp"],
+    description: `XDP heavy-duty gear reduction starter for the 2007–2022 Ram 5.9L / 6.7L Cummins.
+
+A gear reduction starter uses a smaller, faster motor through a reduction gearset. It produces more torque than the factory unit at about a third of the size, and draws less current doing it — which is what you want on a cold morning with a tired battery.
+
+It's a bolt-on replacement in a wrinkle black finish, and the reduced size frees up room around the block.
+
+Specifications
+
+Manufacturer: XDP
+Product: Gear reduction starter
+Finish: Wrinkle black
+Application: 2007–2022 Ram 5.9L / 6.7L Cummins
+Part number: XD259
+
+Highlights
+
+More cranking torque than the factory starter
+Lower current draw
+Compact gear reduction design
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2691,
+    createdAt: 1789430400000,
+    name: "XDP Stock+ Power Steering Gearbox, New — 2003–2008 Dodge Ram 2500 / 3500 4WD — XD750",
+    category: "suspension",
+    brand: "xdp",
+    // dpp listing price for XDP-XD750.
+    price: 730.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD750",
+    fitment: "2003–2008 Dodge Ram 2500 / 3500 4WD. Works with the factory pitman arm and steering linkage.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/xdp-stock-power-steering-gearbox-03-08-dodge-ram-2500-3500-4wd",
+    thumbnail: "/product-media/suspension/xdp-stock-plus-power-steering-gearbox-xd750/1.webp",
+    images: ["/product-media/suspension/xdp-stock-plus-power-steering-gearbox-xd750/1.webp"],
+    description: `XDP Stock+ power steering gearbox for 2003–2008 Dodge Ram 2500 / 3500 4WD — 100% new, not remanufactured.
+
+Years of towing, big tyres and rough roads wear a steering box internally. It shows up as play at the wheel, wandering on the highway, and steering that needs constant correction.
+
+The Stock+ XD750 is built entirely from new components — not a rebuild that reuses parts from a worn unit — and bolts on with the factory pitman arm and linkage.
+
+Specifications
+
+Manufacturer: XDP
+Product: Stock+ power steering gearbox
+Condition: 100% new, not remanufactured
+Years: 2003–2008
+Drivetrain: 4WD
+Part number: XD750
+
+Highlights
+
+Built from all-new components
+Direct fit with factory pitman arm and linkage
+Restores steering precision on a worn truck
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2692,
+    createdAt: 1789430400000,
+    name: "XDP Remanufactured CP3 Injection Pump — 2001–2010 GM 6.6L Duramax LB7 / LLY / LBZ / LMM — XD522",
+    category: "engine",
+    brand: "xdp",
+    // dpp listing price for XDP-XD522.
+    price: 669.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "XD522",
+    fitment: "2001–2010 Chevrolet Silverado and GMC Sierra 2500HD / 3500HD with the LB7, LLY, LBZ or LMM Duramax.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-xdp-remanufactured-cp3-injection-pump-01-10-gm-66l-duramax",
+    thumbnail: "/product-media/engine/xdp-remanufactured-cp3-duramax-xd522/1.webp",
+    images: ["/product-media/engine/xdp-remanufactured-cp3-duramax-xd522/1.webp"],
+    description: `XDP remanufactured CP3 injection pump for the 2001–2010 Duramax.
+
+A failing CP3 on a common-rail Duramax shows up as hard starting, smoke or poor fuel economy. Left alone, a pump that comes apart puts debris through the rest of the fuel system.
+
+This is XDP's remanufactured stock-output pump — a replacement for the failed unit rather than a performance upgrade.
+
+Specifications
+
+Manufacturer: XDP
+Product: CP3 injection pump, stock output
+Condition: Remanufactured
+Application: LB7 / LLY / LBZ / LMM Duramax
+Years: 2001–2010
+Part number: XD522
+
+Highlights
+
+Stock-output replacement pump
+Covers all four early Duramax variants
+Remanufactured
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2693,
+    createdAt: 1789430400000,
+    name: "PPE Transfer Case Brace — 2001–2007 GM 6.6L Duramax with Allison — 129020107",
+    category: "transmission",
+    brand: "ppe",
+    // dpp listing price for PPE-129020107.
+    price: 98.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "129020107",
+    fitment: "2001–2007 Chevrolet Silverado / GMC Sierra 2500HD / 3500HD 4WD with the 6.6L Duramax and Allison transmission.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-15931-ppe-129020107-transfer-case-brace-01-07-66l-gm-duramax-allison-trans-aspx",
+    thumbnail: "/product-media/transmission/ppe-transfer-case-brace-129020107/1.webp",
+    images: ["/product-media/transmission/ppe-transfer-case-brace-129020107/1.webp"],
+    description: `PPE transfer case brace for the 2001–2007 GM 6.6L Duramax with Allison.
+
+The tail shaft housing between the transmission and transfer case cracks on Allison-equipped GM 4x4s. Driveline vibration does it over time; off-road use and hard launches do it faster.
+
+The brace supports the overhanging weight of the transfer case by spreading the load up and across the adapter housing into the centre section of the transmission, instead of leaving it hanging off the tail housing.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Product: Transfer case brace
+Transmission: Allison
+Application: 2001–2007 GM 6.6L Duramax with Allison
+Part number: 129020107
+
+Highlights
+
+Targets cracked tail shaft housings
+Spreads transfer case load into the transmission
+Bolt-on
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2694,
+    createdAt: 1789430400000,
+    name: "PPE Transfer Case Brace — 2007.5–2010 GM 6.6L LMM Duramax with Allison — 129020710",
+    category: "transmission",
+    brand: "ppe",
+    // dpp listing price for PPE-129020710.
+    price: 134.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "129020710",
+    fitment: "2007.5–2010 Chevrolet Silverado / GMC Sierra 2500HD / 3500HD 4WD with the 6.6L LMM Duramax and Allison transmission.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-15932-ppe-129020710-transfer-case-brace-075-10-66l-gm-duramax-lmm-allison-trans-aspx",
+    thumbnail: "/product-media/transmission/ppe-transfer-case-brace-129020710/1.webp",
+    images: ["/product-media/transmission/ppe-transfer-case-brace-129020710/1.webp"],
+    description: `PPE transfer case brace for the 2007.5–2010 GM 6.6L LMM Duramax with Allison.
+
+The tail shaft housing between the transmission and transfer case cracks on Allison-equipped GM 4x4s. Driveline vibration does it over time; off-road use and hard launches do it faster.
+
+The brace supports the overhanging weight of the transfer case by spreading the load up and across the adapter housing into the centre section of the transmission, instead of leaving it hanging off the tail housing.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Product: Transfer case brace
+Transmission: Allison
+Application: 2007.5–2010 GM 6.6L LMM Duramax with Allison
+Part number: 129020710
+
+Highlights
+
+Targets cracked tail shaft housings
+Spreads transfer case load into the transmission
+Bolt-on
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2695,
+    createdAt: 1789430400000,
+    name: "AEV Transfer Case Skid Plate Kit — 2020–2024 Silverado / Sierra 2500HD / 3500HD 6.6L Duramax L5P — 57060003AA",
+    category: "4x4-accessories",
+    brand: "aev",
+    // dpp listing price for AEV-57060003AA.
+    price: 575,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57060003AA",
+    fitment: "2020–2024 Chevrolet Silverado and GMC Sierra 2500HD / 3500HD with the 6.6L L5P Duramax.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-aev-transfer-case-skid-plate-kit-20-24-gm-66l-duramax-silverado-hd-sierra-hd-copy",
+    thumbnail: "/product-media/4x4-accessories/aev-transfer-case-skid-plate-57060003aa/1.webp",
+    images: ["/product-media/4x4-accessories/aev-transfer-case-skid-plate-57060003aa/1.webp"],
+    description: `AEV transfer case skid plate kit for the 2020–2024 Silverado / Sierra 2500HD / 3500HD 6.6L Duramax L5P.
+
+The transfer case sits low and unprotected on most factory trucks. One rock is enough to crack a case, and that ends the trip where it happens rather than at a workshop.
+
+AEV's skid plate kit shields it, so an impact meets steel instead of the case.
+
+Specifications
+
+Manufacturer: AEV (American Expedition Vehicles)
+Product: Transfer case skid plate kit
+Application: 2020–2024 Silverado / Sierra 2500HD / 3500HD 6.6L Duramax L5P
+Part number: 57060003AA
+
+Highlights
+
+Protects the transfer case from impacts
+Vehicle-specific kit
+Bolt-on
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2696,
+    createdAt: 1789430400000,
+    name: "AEV Transfer Case Skid Plate Kit — 2020–2024 Silverado / Sierra 1500 3.0L Duramax — 56060002AA",
+    category: "4x4-accessories",
+    brand: "aev",
+    // dpp listing price for AEV-56060002AA.
+    price: 525,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "56060002AA",
+    fitment: "2020–2024 Chevrolet Silverado and GMC Sierra 1500 with the 3.0L Duramax.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-aev-transfer-case-skid-plate-kit-20-24-gm-30l-duramax-1500",
+    thumbnail: "/product-media/4x4-accessories/aev-transfer-case-skid-plate-56060002aa/1.webp",
+    images: ["/product-media/4x4-accessories/aev-transfer-case-skid-plate-56060002aa/1.webp"],
+    description: `AEV transfer case skid plate kit for the 2020–2024 Silverado / Sierra 1500 3.0L Duramax.
+
+The transfer case sits low and unprotected on most factory trucks. One rock is enough to crack a case, and that ends the trip where it happens rather than at a workshop.
+
+AEV's skid plate kit shields it, so an impact meets steel instead of the case.
+
+Specifications
+
+Manufacturer: AEV (American Expedition Vehicles)
+Product: Transfer case skid plate kit
+Application: 2020–2024 Silverado / Sierra 1500 3.0L Duramax
+Part number: 56060002AA
+
+Highlights
+
+Protects the transfer case from impacts
+Vehicle-specific kit
+Bolt-on
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2697,
+    createdAt: 1789430400000,
+    name: "AEV Transfer Case Skid Plate Kit — 2015–2022 Chevrolet Colorado ZR2 / Z71 — 58060007AA",
+    category: "4x4-accessories",
+    brand: "aev",
+    // dpp listing price for AEV-58060007AA.
+    price: 406,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "58060007AA",
+    fitment: "2015–2022 Chevrolet Colorado ZR2 and Z71.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/aev-skid-plate-15-19-chevy-colorado",
+    thumbnail: "/product-media/4x4-accessories/aev-transfer-case-skid-plate-58060007aa/1.webp",
+    images: ["/product-media/4x4-accessories/aev-transfer-case-skid-plate-58060007aa/1.webp"],
+    description: `AEV transfer case skid plate kit for the 2015–2022 Chevrolet Colorado ZR2 / Z71.
+
+The transfer case sits low and unprotected on most factory trucks. One rock is enough to crack a case, and that ends the trip where it happens rather than at a workshop.
+
+AEV's skid plate kit shields it, so an impact meets steel instead of the case.
+
+Specifications
+
+Manufacturer: AEV (American Expedition Vehicles)
+Product: Transfer case skid plate kit
+Application: 2015–2022 Chevrolet Colorado ZR2 / Z71
+Part number: 58060007AA
+
+Highlights
+
+Protects the transfer case from impacts
+Vehicle-specific kit
+Bolt-on
+
+Warranty
+Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
