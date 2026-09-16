@@ -224,6 +224,7 @@ export const brands: Brand[] = [
   { slug: "apex-chassis", name: "Apex Chassis", category: "suspension" },
   { slug: "synergy", name: "Synergy Manufacturing", category: "suspension" },
   { slug: "red-head-steering-gears", name: "Red-Head Steering Gears", category: "suspension" },
+  { slug: "s-and-b", name: "S&B Filters", category: "suspension" },
   { slug: "rare-parts", name: "Rare Parts", category: "suspension" },
   { slug: "xdp", name: "XDP", category: "suspension" },
 
@@ -316,6 +317,7 @@ export const brands: Brand[] = [
   { slug: "maxtrax", name: "MAXTRAX", category: "4x4-accessories" },
   { slug: "dobinsons", name: "Dobinsons", category: "4x4-accessories" },
   { slug: "aev", name: "AEV (American Expedition Vehicles)", category: "4x4-accessories" },
+  { slug: "s-and-b", name: "S&B Filters", category: "4x4-accessories" },
 
   // Aftermarket
   { slug: "ford", name: "Ford", category: "aftermarket" },
