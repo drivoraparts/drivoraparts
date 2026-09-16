@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   1899 listings added 2026-09-15 from manufacturer and
+   2155 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -95836,6 +95836,13180 @@ Highlights
 Machined from billet, not forged to a price
 Carries the torque a built transmission makes
 Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4048,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado/ GMC Sierra 6.6L Duramax 2017–2019, 2WD — 1064782SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064782SS.
+    price: 5999,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064782SS",
+    fitment: "2017–2019 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2017–2019 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). 2WD option.",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-allison-1000-chevrolet-siverado-gmc-sierra-6-6l-duramax-2017-2019",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-allison-1000-chevrolet-silver-1064782ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-allison-1000-chevrolet-silver-1064782ss/1.webp"],
+    description: `Towmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado/ GMC Sierra 6.6L Duramax 2017–2019, 2wd, BD part 1064782SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064782SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 2WD
+Application: 2017–2019 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2017–2019 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $2,000, refundable
+Warranty: 36 months
+Part number: 1064782SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4049,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016, 2WD — 1064882SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064882SS.
+    price: 4599,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064882SS",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). 2WD option.",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lml-duramax-2011-2016",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064882ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064882ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016, 2wd, BD part 1064882SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064882SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $2,000, refundable
+Warranty: 24 months
+Part number: 1064882SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4050,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax 2006–2007, 2WD — 1064862SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064862SS.
+    price: 4400,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064862SS",
+    fitment: "2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). 2WD option.",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lbz-duramax-2006-2007",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064862ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064862ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax 2006–2007, 2wd, BD part 1064862SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064862SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Core charge: $2,000, refundable
+Warranty: 24 months
+Part number: 1064862SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4051,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax 2001–2004, 2WD — 1064852SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064852SS.
+    price: 4900,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064852SS",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L). 2WD option.",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lb7-duramax-2001-2004",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064852ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064852ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax 2001–2004, 2wd, BD part 1064852SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064852SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $2,000, refundable
+Warranty: 24 months
+Part number: 1064852SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4052,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado / GMC Sierra 6.6L L5P Duramax 2017–2019, 2WD — 1064792SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064792SS.
+    price: 4599,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064792SS",
+    fitment: "2017–2019 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2017–2019 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). 2WD option.",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-6-6l-duramax-2017-2019",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064792ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-allison-1000-chevrolet-silve-1064792ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Allison 1000 Chevrolet Silverado / GMC Sierra 6.6L L5P Duramax 2017–2019, 2wd, BD part 1064792SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064792SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2017–2019 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2017–2019 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $2,000, refundable
+Warranty: 24 months
+Part number: 1064792SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4053,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Bridges Dodge/RAM 2500–5500 5.9L/6.7L Cummins 1998–2018 — DJPCNC100098",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCNC100098.
+    price: 399.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCNC100098",
+    fitment: "1998–2009 Dodge / Ram 2500; 1998–2008 Dodge / Ram 3500; and 2007–2008 Dodge / Ram 4500 and 5500 (5.9L, 6.7L). BD list this part for 1998–2018; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-bridges-dodge-ram-2500-5500-5-9l-6-7l-cummins-1998-2018",
+    thumbnail: "/product-media/engine/bd-billet-bridges-dodge-ram-2500-5500-5-9l-6-7l-cummins-1998-2018-djpcnc100098/1.webp",
+    images: ["/product-media/engine/bd-billet-bridges-dodge-ram-2500-5500-5-9l-6-7l-cummins-1998-2018-djpcnc100098/1.webp"],
+    description: `Billet Bridges Dodge/RAM 2500–5500 5.9L/6.7L Cummins 1998–2018, BD part DJPCNC100098.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part DJPCNC100098.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engines
+Application: 1998–2009 Dodge / Ram 2500; 1998–2008 Dodge / Ram 3500; and 2007–2008 Dodge / Ram 4500 and 5500 (5.9L, 6.7L)
+BD catalogue range: 1998–2018
+Warranty: 12 months
+Part number: DJPCNC100098
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4054,
+    createdAt: 1789430400000,
+    name: "BD Diesel Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD Right Hand PTO — 1065022PTOSM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065022PTOSM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065022PTOSM",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065022ptosm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065022ptosm/1.webp"],
+    description: `Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd right hand pto, BD part 1065022PTOSM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065022PTOSM, the 2wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Torquemaster
+Option: 2WD Right Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065022PTOSM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4055,
+    createdAt: 1789430400000,
+    name: "BD Diesel Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD — 1065022SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065022SM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065022SM",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065022sm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065022sm/1.webp"],
+    description: `Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd, BD part 1065022SM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065022SM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Torquemaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065022SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4056,
+    createdAt: 1789430400000,
+    name: "BD Diesel Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 4WD Right Hand PTO — 1065024PTOSM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065024PTOSM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065024PTOSM",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 4WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065024ptosm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065024ptosm/1.webp"],
+    description: `Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 4wd right hand pto, BD part 1065024PTOSM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065024PTOSM, the 4wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Torquemaster
+Option: 4WD Right Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065024PTOSM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4057,
+    createdAt: 1789430400000,
+    name: "BD Diesel Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD Left Hand PTO — 1065052SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065052SM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065052SM",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Left Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065052sm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1065052sm/1.webp"],
+    description: `Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd left hand pto, BD part 1065052SM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065052SM, the 2wd left hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Torquemaster
+Option: 2WD Left Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065052SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4058,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD Right Hand PTO — 1065012PTOSS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065012PTOSS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065012PTOSS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065012ptoss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065012ptoss/1.webp"],
+    description: `Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd right hand pto, BD part 1065012PTOSS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065012PTOSS, the 2wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 2WD Right Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065012PTOSS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4059,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD — 1065012SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065012SS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065012SS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065012ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065012ss/1.webp"],
+    description: `Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd, BD part 1065012SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065012SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065012SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4060,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 4WD Right Hand PTO — 1065014PTOSS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065014PTOSS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065014PTOSS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 4WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065014ptoss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065014ptoss/1.webp"],
+    description: `Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 4wd right hand pto, BD part 1065014PTOSS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065014PTOSS, the 4wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 4WD Right Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065014PTOSS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4061,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD Left Hand PTO — 1065042SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065042SS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065042SS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Left Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065042ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1065042ss/1.webp"],
+    description: `Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd left hand pto, BD part 1065042SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065042SS, the 2wd left hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 2WD Left Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1065042SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4062,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Breather Cover Dodge/RAM 2500/3500 Pickup & 2500/3500/4500/5500 Cab & Chassis 6.7L Cummins 2007.5-2024, Natural — DJPCNC100360",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCNC100360.
+    price: 449.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCNC100360",
+    fitment: "2007–2014 Dodge / Ram 2500; and 2007–2013 Dodge / Ram 3500, 4500 and 5500 (6.7L). Natural option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-breather-cover-dodge-ram-2500-3500-pickup-2500-3500-4500-5500-cab-chassis-6-7l-cummins-2007-5-2024",
+    thumbnail: "/product-media/engine/bd-billet-breather-cover-dodge-ram-2500-3500-pickup-2500-3500-4500-5500-c-djpcnc100360/1.webp",
+    images: ["/product-media/engine/bd-billet-breather-cover-dodge-ram-2500-3500-pickup-2500-3500-4500-5500-c-djpcnc100360/1.webp"],
+    description: `Billet Breather Cover Dodge/RAM 2500/3500 Pickup & 2500/3500/4500/5500 Cab & Chassis 6.7L Cummins 2007.5-2024, natural, BD part DJPCNC100360.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part DJPCNC100360, the natural option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Cover
+Option: Natural
+Application: 2007–2014 Dodge / Ram 2500; and 2007–2013 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Warranty: 36 months
+Part number: DJPCNC100360
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4063,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Breather Cover Dodge/RAM 2500/3500 Pickup & 2500/3500/4500/5500 Cab & Chassis 6.7L Cummins 2007.5-2024, Black Powder Coated — DJPCNC100373",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCNC100373.
+    price: 569.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCNC100373",
+    fitment: "2007–2014 Dodge / Ram 2500; and 2007–2013 Dodge / Ram 3500, 4500 and 5500 (6.7L). Black Powder Coated option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-breather-cover-dodge-ram-2500-3500-pickup-2500-3500-4500-5500-cab-chassis-6-7l-cummins-2007-5-2024",
+    thumbnail: "/product-media/engine/bd-billet-breather-cover-dodge-ram-2500-3500-pickup-2500-3500-4500-5500-c-djpcnc100373/1.webp",
+    images: ["/product-media/engine/bd-billet-breather-cover-dodge-ram-2500-3500-pickup-2500-3500-4500-5500-c-djpcnc100373/1.webp"],
+    description: `Billet Breather Cover Dodge/RAM 2500/3500 Pickup & 2500/3500/4500/5500 Cab & Chassis 6.7L Cummins 2007.5-2024, black powder coated, BD part DJPCNC100373.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part DJPCNC100373, the black powder coated option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Cover
+Option: Black Powder Coated
+Application: 2007–2014 Dodge / Ram 2500; and 2007–2013 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Warranty: 36 months
+Part number: DJPCNC100373
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4064,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD Right Hand PTO — 1065002PTOSS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065002PTOSS.
+    price: 6500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065002PTOSS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065002ptoss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065002ptoss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd right hand pto, BD part 1065002PTOSS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065002PTOSS, the 2wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD Right Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1065002PTOSS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4065,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD — 1065002SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065002SS.
+    price: 6500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065002SS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065002ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065002ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd, BD part 1065002SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065002SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1065002SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4066,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 4WD Right Hand PTO — 1065004PTOSS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065004PTOSS.
+    price: 6500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065004PTOSS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 4WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065004ptoss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065004ptoss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 4wd right hand pto, BD part 1065004PTOSS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065004PTOSS, the 4wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 4WD Right Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1065004PTOSS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4067,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2WD Left Hand PTO — 1065032SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065032SS.
+    price: 6500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065032SS",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Left Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065032ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1065032ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024, 2wd left hand pto, BD part 1065032SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1065032SS, the 2wd left hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD Left Hand PTO
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1065032SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4068,
+    createdAt: 1789430400000,
+    name: "BD Diesel Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2WD Right Hand PTO — 1064362SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064362SM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064362SM",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1064362sm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1064362sm/1.webp"],
+    description: `Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2wd right hand pto, BD part 1064362SM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064362SM, the 2wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Torquemaster
+Option: 2WD Right Hand PTO
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064362SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4069,
+    createdAt: 1789430400000,
+    name: "BD Diesel Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2WD Left Hand PTO — 1064392SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064392SM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064392SM",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Left Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1064392sm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-1064392sm/1.webp"],
+    description: `Torquemaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2wd left hand pto, BD part 1064392SM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064392SM, the 2wd left hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Torquemaster
+Option: 2WD Left Hand PTO
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064392SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4070,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 66RFE RAM 2500/3500 5.7L/6.4L HEMI 2012–2018, 2WD — 1064912SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064912SS.
+    price: 5490,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064912SS",
+    fitment: "2012–2018 Dodge / Ram 2500 and 3500 (5.7L, 6.4L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4l-hemi-2012-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4-1064912ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4-1064912ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 66RFE RAM 2500/3500 5.7L/6.4L HEMI 2012–2018, 2wd, BD part 1064912SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064912SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2012–2018 Dodge / Ram 2500 and 3500 (5.7L, 6.4L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064912SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4071,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 10r80 Ford Transit 3.5L 2020–2024, 2WD — 1064682SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064682SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064682SS",
+    fitment: "2020–2024 Ford Transit 150, Transit 250, Transit 350 and Transit 350 HD (3.5L). 2WD option.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-transit-3-5l-2020-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-transit-3-5l-2020-1064682ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-transit-3-5l-2020-1064682ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 10r80 Ford Transit 3.5L 2020–2024, 2wd, BD part 1064682SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064682SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2020–2024 Ford Transit 150, Transit 250, Transit 350 and Transit 350 HD (3.5L)
+Core charge: $1,500, refundable
+Warranty: 24 months
+Part number: 1064682SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4072,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2WD Right Hand PTO — 1064352SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064352SS.
+    price: 6767.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064352SS",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1064352ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1064352ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2wd right hand pto, BD part 1064352SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064352SS, the 2wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD Right Hand PTO
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064352SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4073,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2WD Left Hand PTO — 1064372SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064372SS.
+    price: 6800.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064372SS",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Left Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1064372ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5-1064372ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2wd left hand pto, BD part 1064372SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064372SS, the 2wd left hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD Left Hand PTO
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064372SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4074,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbochargers Ford F-250/F-350/F-450 6.7L Power Stroke 2020–2022 — 1045850",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045850.
+    price: 3753.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045850",
+    fitment: "2020–2022 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty (6.7L).",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbochargers-ford-f-250-f-350-6-7l-powerstroke-2020-2022",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbochargers-ford-f-250-f-350-f-450-6-7l-power-stroke-2020-2-1045850/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbochargers-ford-f-250-f-350-f-450-6-7l-power-stroke-2020-2-1045850/1.webp"],
+    description: `Screamer Turbochargers Ford F-250/F-350/F-450 6.7L Power Stroke 2020–2022, BD part 1045850.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1045850.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: SCREAMER TURBO
+Application: 2020–2022 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty (6.7L)
+Core charge: $300, refundable
+Warranty: 24 months
+Part number: 1045850
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4075,
+    createdAt: 1789430400000,
+    name: "Garrett GT3788VA Turbo Exchange with Position Sensor Chevy LML Duramax 2011–2016 — 848212-9002S",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 848212-9002S.
+    price: 1539.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "848212-9002S",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    coreCharge: "$350 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/garrett-gt3788va-turbo-exchange-c-w-position-sensor-chevy-lml-duramax-2011-2016",
+    thumbnail: "/product-media/turbocharger/bd-garrett-gt3788va-turbo-exchange-with-position-sensor-chevy-lml-duramax-8482129002s/1.webp",
+    images: ["/product-media/turbocharger/bd-garrett-gt3788va-turbo-exchange-with-position-sensor-chevy-lml-duramax-8482129002s/1.webp"],
+    description: `Garrett GT3788VA Turbo Exchange with Position Sensor Chevy LML Duramax 2011–2016, Garrett Motion part 848212-9002S.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD supply this as an exchange unit: a $350 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 848212-9002S.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $350, refundable
+Warranty: 12 months
+Part number: 848212-9002S
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4076,
+    createdAt: 1789430400000,
+    name: "Garrett GT3788VA Turbo Exchange with Vane Position Sensor Chevy LLY/LBZ/LMM Duramax 2004–2010 (LLY requires sensor adapter) — 848212-9001S",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 848212-9001S.
+    price: 1539.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "848212-9001S",
+    fitment: "2004–2009 Chevrolet Silverado 2500 HD; 2004–2008 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2005–2006 Chevrolet Silverado 3500; 2006–2007 Chevrolet Express 2500 and Express 3500; 2006–2007 GMC Savana 2500 and Savana 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2008 Chevrolet Silverado 3500 HD; and 2007–2008 GMC Sierra 3500 HD (6.6L). BD list this part for 2004–2010; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "$350 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/garrett-gt3788va-turbo-exchange-c-w-vane-position-sensor-chevy-lly-lbz-lmm-duramax-2004-2010-lly-requires-sensor-adapter",
+    thumbnail: "/product-media/turbocharger/bd-garrett-gt3788va-turbo-exchange-with-vane-position-sensor-chevy-lly-lb-8482129001s/1.webp",
+    images: ["/product-media/turbocharger/bd-garrett-gt3788va-turbo-exchange-with-vane-position-sensor-chevy-lly-lb-8482129001s/1.webp"],
+    description: `Garrett GT3788VA Turbo Exchange with Vane Position Sensor Chevy LLY/LBZ/LMM Duramax 2004–2010 (LLY requires sensor adapter), Garrett Motion part 848212-9001S.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD supply this as an exchange unit: a $350 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 848212-9001S.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2004–2009 Chevrolet Silverado 2500 HD; 2004–2008 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2005–2006 Chevrolet Silverado 3500; 2006–2007 Chevrolet Express 2500 and Express 3500; 2006–2007 GMC Savana 2500 and Savana 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2008 Chevrolet Silverado 3500 HD; and 2007–2008 GMC Sierra 3500 HD (6.6L)
+BD catalogue range: 2004–2010
+Core charge: $350, refundable
+Warranty: 12 months
+Part number: 848212-9001S
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4077,
+    createdAt: 1789430400000,
+    name: "Garrett 6.0L Power Stroke Turbo Stock Exchange - Ford 2005.5-2007 — 743250-5025",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 743250-5025.
+    price: 1230,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "743250-5025",
+    fitment: "2006–2007 Ford E-350 Super Duty, E-450 Super Duty, F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/garrett-6-0l-powerstroke-turbo-stock-exchange-ford-2005-5-2007",
+    thumbnail: "/product-media/turbocharger/bd-garrett-6-0l-power-stroke-turbo-stock-exchange-ford-2005-5-2007-7432505025/1.webp",
+    images: ["/product-media/turbocharger/bd-garrett-6-0l-power-stroke-turbo-stock-exchange-ford-2005-5-2007-7432505025/1.webp"],
+    description: `Garrett 6.0L Power Stroke Turbo Stock Exchange - Ford 2005.5-2007, Garrett Motion part 743250-5025.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 743250-5025.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2006–2007 Ford E-350 Super Duty, E-450 Super Duty, F-250 Super Duty and F-350 Super Duty (6.0L)
+Warranty: 24 months
+Part number: 743250-5025
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4078,
+    createdAt: 1789430400000,
+    name: "Garrett 6.0L Power Stroke Turbo Stock Exchange - Ford 2004–2005 — 743250-5024",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 743250-5024.
+    price: 1230,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "743250-5024",
+    fitment: "2004–2005 Ford E-350 Club Wagon, E-350 Super Duty, E-450 Super Duty, Excursion, F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/garrett-6-0l-powerstroke-turbo-stock-exchange-ford-2004-2005",
+    thumbnail: "/product-media/turbocharger/bd-garrett-6-0l-power-stroke-turbo-stock-exchange-ford-2004-2005-7432505024/1.webp",
+    images: ["/product-media/turbocharger/bd-garrett-6-0l-power-stroke-turbo-stock-exchange-ford-2004-2005-7432505024/1.webp"],
+    description: `Garrett 6.0L Power Stroke Turbo Stock Exchange - Ford 2004–2005, Garrett Motion part 743250-5024.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 743250-5024.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2004–2005 Ford E-350 Club Wagon, E-350 Super Duty, E-450 Super Duty, Excursion, F-250 Super Duty and F-350 Super Duty (6.0L)
+Warranty: 24 months
+Part number: 743250-5024
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4079,
+    createdAt: 1789430400000,
+    name: "Garrett 6.0L Power Stroke Turbo Stock Exchange - Ford 2003 — 725390-5006",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 725390-5006.
+    price: 1099,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "725390-5006",
+    fitment: "2003 Ford Excursion, F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/garrett-6-0l-powerstroke-turbo-stock-exchange-ford-2003",
+    thumbnail: "/product-media/turbocharger/bd-garrett-6-0l-power-stroke-turbo-stock-exchange-ford-2003-7253905006/1.webp",
+    images: ["/product-media/turbocharger/bd-garrett-6-0l-power-stroke-turbo-stock-exchange-ford-2003-7253905006/1.webp"],
+    description: `Garrett 6.0L Power Stroke Turbo Stock Exchange - Ford 2003, Garrett Motion part 725390-5006.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 725390-5006.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2003 Ford Excursion, F-250 Super Duty and F-350 Super Duty (6.0L)
+Warranty: 24 months
+Part number: 725390-5006
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4080,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LMM CR Injector 60hp-90hp Chevy 2007.5-2010 6.6L, 33% (60hp) — 1716615",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716615.
+    price: 543.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716615",
+    fitment: "2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. 33% (60hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716615/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716615/1.webp"],
+    description: `BD-Built Duramax LMM CR Injector 60hp-90hp Chevy 2007.5-2010 6.6L, 33% (60hp), BD part 1716615.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716615, the 33% (60hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp)
+Application: 2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716615
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4081,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LMM CR Injector 60hp-90hp Chevy 2007.5-2010 6.6L, 43% (90hp) — 1716616",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716616.
+    price: 540.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716616",
+    fitment: "2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. 43% (90hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716616/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716616/1.webp"],
+    description: `BD-Built Duramax LMM CR Injector 60hp-90hp Chevy 2007.5-2010 6.6L, 43% (90hp), BD part 1716616.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716616, the 43% (90hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 43% (90hp)
+Application: 2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716616
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4082,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LLY CR Injector 60hp-90hp Chevy 2004.5-2006 6.6L, 33% (60hp) — 1716605",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716605.
+    price: 462.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716605",
+    fitment: "2004–2006 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2006 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. 33% (60hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lly-cr-injector-60hp-90hp-chevy-2004-5-2006-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lly-cr-injector-60hp-90hp-chevy-2004-5-2006-6-6l-1716605/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lly-cr-injector-60hp-90hp-chevy-2004-5-2006-6-6l-1716605/1.webp"],
+    description: `BD-Built Duramax LLY CR Injector 60hp-90hp Chevy 2004.5-2006 6.6L, 33% (60hp), BD part 1716605.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716605, the 33% (60hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp)
+Application: 2004–2006 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2006 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716605
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4083,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LLY CR Injector 60hp-90hp Chevy 2004.5-2006 6.6L, 43% (90hp) — 1716606",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716606.
+    price: 456.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716606",
+    fitment: "2004–2006 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2006 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. 43% (90hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lly-cr-injector-60hp-90hp-chevy-2004-5-2006-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lly-cr-injector-60hp-90hp-chevy-2004-5-2006-6-6l-1716606/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lly-cr-injector-60hp-90hp-chevy-2004-5-2006-6-6l-1716606/1.webp"],
+    description: `BD-Built Duramax LLY CR Injector 60hp-90hp Chevy 2004.5-2006 6.6L, 43% (90hp), BD part 1716606.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716606, the 43% (90hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 43% (90hp)
+Application: 2004–2006 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2006 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716606
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4084,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LB7 CR Injector 60hp-90hp Chevy 2001–2004 6.6L, 33% (60hp) — 1716600",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716600.
+    price: 419.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716600",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. 33% (60hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lb7-cr-injector-60hp-90hp-chevy-2001-2004-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lb7-cr-injector-60hp-90hp-chevy-2001-2004-6-6l-1716600/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lb7-cr-injector-60hp-90hp-chevy-2001-2004-6-6l-1716600/1.webp"],
+    description: `BD-Built Duramax LB7 CR Injector 60hp-90hp Chevy 2001–2004 6.6L, 33% (60hp), BD part 1716600.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716600, the 33% (60hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp)
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716600
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4085,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LB7 CR Injector 60hp-90hp Chevy 2001–2004 6.6L, 43% (90hp) — 1716601",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716601.
+    price: 440.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716601",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. 43% (90hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lb7-cr-injector-60hp-90hp-chevy-2001-2004-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lb7-cr-injector-60hp-90hp-chevy-2001-2004-6-6l-1716601/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lb7-cr-injector-60hp-90hp-chevy-2001-2004-6-6l-1716601/1.webp"],
+    description: `BD-Built Duramax LB7 CR Injector 60hp-90hp Chevy 2001–2004 6.6L, 43% (90hp), BD part 1716601.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716601, the 43% (90hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 43% (90hp)
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716601
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4086,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 6.7L Cummins CR 60hp-120hp Dodge 2007.5-2018, 33% (60hp) — 1715870",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715870.
+    price: 492.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715870",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). Sold individually — one injector, not a set. 33% (60hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5--1715870/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5--1715870/1.webp"],
+    description: `BD-Built Performance Injector 6.7L Cummins CR 60hp-120hp Dodge 2007.5-2018, 33% (60hp), BD part 1715870.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715870, the 33% (60hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp)
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715870
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4087,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 6.7L Cummins CR 60hp-120hp Dodge 2007.5-2018, 43% (90hp) — 1715871",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715871.
+    price: 510.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715871",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). Sold individually — one injector, not a set. 43% (90hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5--1715871/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5--1715871/1.webp"],
+    description: `BD-Built Performance Injector 6.7L Cummins CR 60hp-120hp Dodge 2007.5-2018, 43% (90hp), BD part 1715871.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715871, the 43% (90hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 43% (90hp)
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715871
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4088,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 6.7L Cummins CR 60hp-120hp Dodge 2007.5-2018, 53% (120hp) — 1715872",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715872.
+    price: 504.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715872",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). Sold individually — one injector, not a set. 53% (120hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5--1715872/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-6-7l-cummins-cr-60hp-120hp-dodge-2007-5--1715872/1.webp"],
+    description: `BD-Built Performance Injector 6.7L Cummins CR 60hp-120hp Dodge 2007.5-2018, 53% (120hp), BD part 1715872.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715872, the 53% (120hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 53% (120hp)
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715872
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4089,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 33% (60hp) / Standard — 1715865",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715865.
+    price: 468.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715865",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 33% (60hp) / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1715865/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1715865/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 33% (60hp) / standard, BD part 1715865.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715865, the 33% (60hp) / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp) / Standard
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715865
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4090,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 43% (90hp) / Standard — 1715866",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715866.
+    price: 478.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715866",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 43% (90hp) / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1715866/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1715866/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 43% (90hp) / standard, BD part 1715866.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715866, the 43% (90hp) / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 43% (90hp) / Standard
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715866
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4091,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 53% (120hp) / Standard — 1715867",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715867.
+    price: 514.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715867",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 53% (120hp) / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1715867/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1715867/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 53% (120hp) / standard, BD part 1715867.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715867, the 53% (120hp) / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 53% (120hp) / Standard
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715867
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4092,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 33% (60hp) / Premium — 1725865",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725865.
+    price: 515.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725865",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 33% (60hp) / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1725865/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2004-5--1725865/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2004.5-2007, 33% (60hp) / premium, BD part 1725865.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725865, the 33% (60hp) / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp) / Premium
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725865
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4093,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 33% (60hp) / Standard — 1715860",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715860.
+    price: 482.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715860",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 33% (60hp) / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1715860/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1715860/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 33% (60hp) / standard, BD part 1715860.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715860, the 33% (60hp) / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp) / Standard
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715860
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4094,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 43% (90hp) / Standard — 1715861",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715861.
+    price: 493.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715861",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 43% (90hp) / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1715861/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1715861/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 43% (90hp) / standard, BD part 1715861.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715861, the 43% (90hp) / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 43% (90hp) / Standard
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715861
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4095,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 53% (120hp) / Standard — 1715862",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715862.
+    price: 504.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715862",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 53% (120hp) / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1715862/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1715862/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 53% (120hp) / standard, BD part 1715862.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715862, the 53% (120hp) / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 53% (120hp) / Standard
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715862
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4096,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 33% (60hp) / Premium — 1725860",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725860.
+    price: 544.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725860",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. 33% (60hp) / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1725860/1.webp",
+    images: ["/product-media/engine/bd-bd-built-performance-injector-5-9l-cummins-cr-60hp-120hp-dodge-2003-20-1725860/1.webp"],
+    description: `BD-Built Performance Injector 5.9L Cummins CR 60hp-120hp Dodge 2003–2004, 33% (60hp) / premium, BD part 1725860.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725860, the 33% (60hp) / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp) / Premium
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725860
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4097,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435621) RAM 2013–2018 Pick-Up, Stock Plus up to 30HP / Standard — 1714542",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714542.
+    price: 411.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714542",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L). Sold individually — one injector, not a set. Stock Plus up to 30HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-2018-pick-up",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-201-1714542/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-201-1714542/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435621) RAM 2013–2018 Pick-Up, stock plus up to 30hp / standard, BD part 1714542.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714542, the stock plus up to 30hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock Plus up to 30HP / Standard
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714542
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4098,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435621) RAM 2013–2018 Pick-Up, Stock Plus up to 30HP / Premium — 1724542",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724542.
+    price: 483.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724542",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L). Sold individually — one injector, not a set. Stock Plus up to 30HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-2018-pick-up",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-201-1724542/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-201-1724542/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435621) RAM 2013–2018 Pick-Up, stock plus up to 30hp / premium, BD part 1724542.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724542, the stock plus up to 30hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock Plus up to 30HP / Premium
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724542
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4099,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435621) RAM 2013–2018 Pick-Up, Stock / Premium — 1725542",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725542.
+    price: 454.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725542",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-2018-pick-up",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-201-1725542/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435621-ram-2013-201-1725542/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435621) RAM 2013–2018 Pick-Up, stock / premium, BD part 1725542.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725542, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725542
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4100,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LBZ Injector Stock/StockPlus (0986435521) Chevy/GMC 2006–2007, StockPlus 5-15 HP / Standard — 1714521",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714521.
+    price: 439.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714521",
+    fitment: "2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-2006-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-200-1714521/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-200-1714521/1.webp"],
+    description: `BD-Built Duramax LBZ Injector Stock/StockPlus (0986435521) Chevy/GMC 2006–2007, stockplus 5-15 hp / standard, BD part 1714521.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714521, the stockplus 5-15 hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Standard
+Application: 2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714521
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4101,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LBZ Injector Stock/StockPlus (0986435521) Chevy/GMC 2006–2007, StockPlus 5-15 HP / Premium — 1724521",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724521.
+    price: 500.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724521",
+    fitment: "2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-2006-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-200-1724521/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-200-1724521/1.webp"],
+    description: `BD-Built Duramax LBZ Injector Stock/StockPlus (0986435521) Chevy/GMC 2006–2007, stockplus 5-15 hp / premium, BD part 1724521.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724521, the stockplus 5-15 hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Premium
+Application: 2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724521
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4102,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LBZ Injector Stock/StockPlus (0986435521) Chevy/GMC 2006–2007, Stock / Premium — 1725521",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725521.
+    price: 468.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725521",
+    fitment: "2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-2006-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-200-1725521/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lbz-injector-stock-stockplus-0986435521-chevy-gmc-200-1725521/1.webp"],
+    description: `BD-Built Duramax LBZ Injector Stock/StockPlus (0986435521) Chevy/GMC 2006–2007, stock / premium, BD part 1725521.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725521, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725521
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4103,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435518) Dodge/RAM 2007.5-2012 Pick-Up, StockPlus 5-15 HP / Standard — 1714518",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714518.
+    price: 385.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714518",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-2007-5-2012-pick-up",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-20-1714518/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-20-1714518/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435518) Dodge/RAM 2007.5-2012 Pick-Up, stockplus 5-15 hp / standard, BD part 1714518.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714518, the stockplus 5-15 hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Standard
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714518
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4104,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435518) Dodge/RAM 2007.5-2012 Pick-Up, StockPlus 5-15 HP / Premium — 1724518",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724518.
+    price: 460.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724518",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-2007-5-2012-pick-up",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-20-1724518/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-20-1724518/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435518) Dodge/RAM 2007.5-2012 Pick-Up, stockplus 5-15 hp / premium, BD part 1724518.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724518, the stockplus 5-15 hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Premium
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724518
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4105,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435518) Dodge/RAM 2007.5-2012 Pick-Up, Stock / Premium — 1725518",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725518.
+    price: 456.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725518",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-2007-5-2012-pick-up",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-20-1725518/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-stockplus-0986435518-dodge-ram-20-1725518/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock/StockPlus (0986435518) Dodge/RAM 2007.5-2012 Pick-Up, stock / premium, BD part 1725518.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725518, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725518
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4106,
+    createdAt: 1789430400000,
+    name: "BD Diesel Return Spring Bracket for Bosch P7100 Mechanical Inline Injection Pump Dodge 5.9L Cummins 1994–1998 — 1500068",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1500068.
+    price: 85.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1500068",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/return-spring-bracket-for-bosch-p7100-mechanical-inline-injection-pump-dodge-5-9l-cummins-1994-1998",
+    thumbnail: "/product-media/engine/bd-return-spring-bracket-for-bosch-p7100-mechanical-inline-injection-pump-1500068/1.webp",
+    images: ["/product-media/engine/bd-return-spring-bracket-for-bosch-p7100-mechanical-inline-injection-pump-1500068/1.webp"],
+    description: `Return Spring Bracket for Bosch P7100 Mechanical Inline Injection Pump Dodge 5.9L Cummins 1994–1998, BD part 1500068.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1500068.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1500068
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4107,
+    createdAt: 1789430400000,
+    name: "BD Diesel Oil Drain Dodge/RAM 6.7L Cummins 2007.5-2018 — 1453104",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1453104.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1453104",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/oil-drain-dodge-ram-6-7l-cummins-2007-5-2018",
+    thumbnail: "/product-media/turbocharger/bd-oil-drain-dodge-ram-6-7l-cummins-2007-5-2018-1453104/1.webp",
+    images: ["/product-media/turbocharger/bd-oil-drain-dodge-ram-6-7l-cummins-2007-5-2018-1453104/1.webp"],
+    description: `Oil Drain Dodge/RAM 6.7L Cummins 2007.5-2018, BD part 1453104.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1453104.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OIL LINE
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1453104
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4108,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 6L80 Transmission & Converter Package Chevy/GMC 1500 2014–2021, 2WD — 1064842SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064842SS.
+    price: 3850.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064842SS",
+    fitment: "2014–2018 Chevrolet Silverado 1500, Suburban and Tahoe; 2014–2018 GMC Sierra 1500 and Yukon XL; and 2014–2017 GMC Yukon (5.3L). BD list this part for 2014–2021; the years above are the ones tagged per model on their own listing. 2WD option.",
+    coreCharge: "$1,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-2021",
+    thumbnail: "/product-media/transmission/bd-roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-202-1064842ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-202-1064842ss/1.webp"],
+    description: `Roadmaster 6L80 Transmission & Converter Package Chevy/GMC 1500 2014–2021, 2wd, BD part 1064842SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064842SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2014–2018 Chevrolet Silverado 1500, Suburban and Tahoe; 2014–2018 GMC Sierra 1500 and Yukon XL; and 2014–2017 GMC Yukon (5.3L)
+BD catalogue range: 2014–2021
+Core charge: $1,000, refundable
+Warranty: 24 months
+Part number: 1064842SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4109,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 10r80 Ford F-150 2.7L/3.5L EcoBoost & Raptor 2017, 2WD — 1064692SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064692SS.
+    price: 4585,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064692SS",
+    fitment: "2017 Ford F-150 (2.7L, 3.5L). 2WD option.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-f150-2-7l-3-5l-ecoboost-raptor-2017",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-f-150-2-7l-3-5l-e-1064692ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-f-150-2-7l-3-5l-e-1064692ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 10r80 Ford F-150 2.7L/3.5L EcoBoost & Raptor 2017, 2wd, BD part 1064692SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064692SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2017 Ford F-150 (2.7L, 3.5L)
+Core charge: $1,500, refundable
+Warranty: 24 months
+Part number: 1064692SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4110,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 10r80 Ford Expedition / Lincoln Navigator 3.5L EcoBoost 2018–2021, 2WD — 1064662SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064662SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064662SS",
+    fitment: "2018–2021 Ford Expedition; and 2018–2021 Lincoln Navigator (3.5L). 2WD option.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-expedition-lincoln-navigator-3-5l-ecoboost-2018-2021",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-expedition-lincol-1064662ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-expedition-lincol-1064662ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 10r80 Ford Expedition / Lincoln Navigator 3.5L EcoBoost 2018–2021, 2wd, BD part 1064662SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064662SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2018–2021 Ford Expedition; and 2018–2021 Lincoln Navigator (3.5L)
+Core charge: $1,500, refundable
+Warranty: 24 months
+Part number: 1064662SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4111,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Ford 10r80 Transmission & Converter Package F-150 2.7L/3.5L V6 2018–2020, 2WD — 1064612SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064612SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064612SS",
+    fitment: "2018–2020 Ford F-150 (2.7L, 3.5L). 2WD option.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-ford-10r80-transmission-converter-package-f-150-2-7l-3-5l-v6-2018-2020",
+    thumbnail: "/product-media/transmission/bd-roadmaster-ford-10r80-transmission-converter-package-f-150-2-7l-3-5l-v-1064612ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-ford-10r80-transmission-converter-package-f-150-2-7l-3-5l-v-1064612ss/1.webp"],
+    description: `Roadmaster Ford 10r80 Transmission & Converter Package F-150 2.7L/3.5L V6 2018–2020, 2wd, BD part 1064612SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064612SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2018–2020 Ford F-150 (2.7L, 3.5L)
+Core charge: $1,500, refundable
+Warranty: 24 months
+Part number: 1064612SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4112,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 10r80 Ford F-150 3.0L Power Stroke Diesel 2018–2020, 2WD — 1064602SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064602SS.
+    price: 4495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064602SS",
+    fitment: "2018–2020 Ford F-150 (3.0L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2018-2020",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power--1064602ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power--1064602ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 10r80 Ford F-150 3.0L Power Stroke Diesel 2018–2020, 2wd, BD part 1064602SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064602SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TRANSMISSIONS
+Series: Roadmaster
+Option: 2WD
+Application: 2018–2020 Ford F-150 (3.0L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064602SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4113,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 10r80 Ford F-150 3.0L Power Stroke Diesel 2021, 2WD — 1064572SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064572SS.
+    price: 4495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064572SS",
+    fitment: "2021 Ford F-150 (3.0L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2021",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power--1064572ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power--1064572ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 10r80 Ford F-150 3.0L Power Stroke Diesel 2021, 2wd, BD part 1064572SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064572SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TRANSMISSIONS
+Series: Roadmaster
+Option: 2WD
+Application: 2021 Ford F-150 (3.0L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064572SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4114,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Ford 4R100 Transmission & Converter Package - 1999–2003, 2WD — 1064442SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064442SM.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064442SM",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L). 2WD option.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-4r100-transmission-converter-package-1999-2003",
+    thumbnail: "/product-media/transmission/bd-towmaster-ford-4r100-transmission-converter-package-1999-2003-1064442sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-ford-4r100-transmission-converter-package-1999-2003-1064442sm/1.webp"],
+    description: `TowMaster Ford 4R100 Transmission & Converter Package - 1999–2003, 2wd, BD part 1064442SM.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064442SM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Core charge: $1,500, refundable
+Warranty: 36 months
+Part number: 1064442SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4115,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Ford E4OD Transmission - 1995–1997, 2WD — 1064422F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064422F.
+    price: 4085,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064422F",
+    fitment: "1995–1996 Ford F-250; 1995–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L). 2WD option.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-e4od-transmission-1995-1997",
+    thumbnail: "/product-media/transmission/bd-towmaster-ford-e4od-transmission-1995-1997-1064422f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-ford-e4od-transmission-1995-1997-1064422f/1.webp"],
+    description: `TowMaster Ford E4OD Transmission - 1995–1997, 2wd, BD part 1064422F.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064422F, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 1995–1996 Ford F-250; 1995–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+Core charge: $1,500, refundable
+Warranty: 36 months
+Part number: 1064422F
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4116,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 68RFE Transmission & Converter Package RAM 6.7L Cummins 2019–2024, 2WD — 1064302SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064302SS.
+    price: 5735,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064302SS",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-68rfe-transmission-converter-package-ram-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-68rfe-transmission-converter-package-ram-6-7l-cummins-2019--1064302ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-68rfe-transmission-converter-package-ram-6-7l-cummins-2019--1064302ss/1.webp"],
+    description: `Roadmaster 68RFE Transmission & Converter Package RAM 6.7L Cummins 2019–2024, 2wd, BD part 1064302SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064302SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064302SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4117,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 68RFE Transmission & Converter Package 2019–2024, 2WD — 1064292SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064292SS.
+    price: 6994.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064292SS",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-68rfe-transmission-converter-package-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-68rfe-transmission-converter-package-2019-2024-1064292ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-68rfe-transmission-converter-package-2019-2024-1064292ss/1.webp"],
+    description: `TowMaster Dodge 68RFE Transmission & Converter Package 2019–2024, 2wd, BD part 1064292SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064292SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064292SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4118,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Transmission Dodge 68RFE 2019–2024 with Billet Input Shaft, 2WD — 1064292B",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064292B.
+    price: 6795,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064292B",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-dodge-68rfe-2019-2024-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-dodge-68rfe-2019-2024-with-billet-input-shaf-1064292b/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-dodge-68rfe-2019-2024-with-billet-input-shaf-1064292b/1.webp"],
+    description: `TorqueMaster Transmission Dodge 68RFE 2019–2024 with Billet Input Shaft, 2wd, BD part 1064292B.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064292B, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TorqueMaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $1,800, refundable
+Warranty: 36 months
+Part number: 1064292B
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4119,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster RAM 6.7L Cummins 68RFE Transmission 2019–2024, 2WD — 1064292",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064292.
+    price: 5795,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064292",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ram-6-7l-cummins-68rfe-transmission-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-ram-6-7l-cummins-68rfe-transmission-2019-2024-1064292/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-ram-6-7l-cummins-68rfe-transmission-2019-2024-1064292/1.webp"],
+    description: `Towmaster RAM 6.7L Cummins 68RFE Transmission 2019–2024, 2wd, BD part 1064292.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064292, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $1,800, refundable
+Warranty: 36 months
+Part number: 1064292
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4120,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 48RE Transmission & Converter Package 2005–2007 w/TVV Stepper Motor with TapShifter, 2WD — 1064232SST",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064232SST.
+    price: 6474.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064232SST",
+    fitment: "2005–2007 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-stepper-motor-c-w-tapshifter",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-st-1064232sst/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-st-1064232sst/1.webp"],
+    description: `TowMaster Dodge 48RE Transmission & Converter Package 2005–2007 w/TVV Stepper Motor with TapShifter, 2wd, BD part 1064232SST.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064232SST, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2005–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064232SST
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4121,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 48RE Transmission & Converter Package 2005–2007 w/TVV Stepper Motor, 2WD — 1064232SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064232SS.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064232SS",
+    fitment: "2005–2007 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-stepper-motor",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-st-1064232ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-st-1064232ss/1.webp"],
+    description: `TowMaster Dodge 48RE Transmission & Converter Package 2005–2007 w/TVV Stepper Motor, 2wd, BD part 1064232SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064232SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2005–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064232SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4122,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 48RE Transmission 2005–2007 w/TVV Stepper Motor, 2WD — 1064232F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064232F.
+    price: 4245,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064232F",
+    fitment: "2005–2007 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-2005-2007-w-tvv-stepper-motor",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-48re-transmission-2005-2007-w-tvv-stepper-motor-1064232f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-48re-transmission-2005-2007-w-tvv-stepper-motor-1064232f/1.webp"],
+    description: `TowMaster Dodge 48RE Transmission 2005–2007 w/TVV Stepper Motor, 2wd, BD part 1064232F.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064232F, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2005–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $1,800, refundable
+Warranty: 36 months
+Part number: 1064232F
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4123,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Transmission & Converter Package Dodge 48RE 2005–2007 w/TVV Stepper Motor with Auxiliary Filter & Billet Input, 2WD — 1064232BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064232BM.
+    price: 6495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064232BM",
+    fitment: "2005–2007 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-48re-2005-2007-w-tvv-stepper-motor-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-48re-2005-2007-w-tvv-1064232bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-48re-2005-2007-w-tvv-1064232bm/1.webp"],
+    description: `TorqueMaster Transmission & Converter Package Dodge 48RE 2005–2007 w/TVV Stepper Motor with Auxiliary Filter & Billet Input, 2wd, BD part 1064232BM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064232BM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TorqueMaster
+Option: 2WD
+Application: 2005–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064232BM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4124,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Dodge 68RFE Transmission & Converter Package 6.7L Cummins 2007.5-2018, 2WD — 1064222SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064222SS.
+    price: 5894.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064222SS",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-dodge-68rfe-transmission-converter-package-6-7l-cummins-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-dodge-68rfe-transmission-converter-package-6-7l-cummins-200-1064222ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-dodge-68rfe-transmission-converter-package-6-7l-cummins-200-1064222ss/1.webp"],
+    description: `Roadmaster Dodge 68RFE Transmission & Converter Package 6.7L Cummins 2007.5-2018, 2wd, BD part 1064222SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064222SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $2,100, refundable
+Warranty: 24 months
+Part number: 1064222SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4125,
+    createdAt: 1789430400000,
+    name: "BD Diesel RoadMaster Dodge 68RFE Transmission 2007.5-2018, 2WD — 1064222",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064222.
+    price: 4655,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064222",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-dodge-68rfe-transmission-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-dodge-68rfe-transmission-2007-5-2018-1064222/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-dodge-68rfe-transmission-2007-5-2018-1064222/1.webp"],
+    description: `RoadMaster Dodge 68RFE Transmission 2007.5-2018, 2wd, BD part 1064222.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064222, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: RoadMaster
+Option: 2WD
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $1,800, refundable
+Warranty: 24 months
+Part number: 1064222
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4126,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 48RE Transmission & Converter Package - 2003–2004 with TapShifter, 2WD — 1064192SST",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064192SST.
+    price: 6425,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064192SST",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-converter-package-2003-2004-c-w-tapshifter",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-48re-transmission-converter-package-2003-2004-with-tap-1064192sst/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-48re-transmission-converter-package-2003-2004-with-tap-1064192sst/1.webp"],
+    description: `TowMaster Dodge 48RE Transmission & Converter Package - 2003–2004 with TapShifter, 2wd, BD part 1064192SST.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064192SST, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064192SST
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4127,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Transmission & Converter Package Dodge 48RE 2003–2004, 2WD — 1064192SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064192SS.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064192SS",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-dodge-48re-2003-2004",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-dodge-48re-2003-2004-1064192ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-dodge-48re-2003-2004-1064192ss/1.webp"],
+    description: `TowMaster Transmission & Converter Package Dodge 48RE 2003–2004, 2wd, BD part 1064192SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064192SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064192SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4128,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Transmission & Converter Package Dodge 48RE 2003–2004 with Auxiliary Filter & Billet Input, 2WD — 1064192BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064192BM.
+    price: 6495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064192BM",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-48re-2003-2004-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-48re-2003-2004-with--1064192bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-48re-2003-2004-with--1064192bm/1.webp"],
+    description: `TorqueMaster Transmission & Converter Package Dodge 48RE 2003–2004 with Auxiliary Filter & Billet Input, 2wd, BD part 1064192BM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064192BM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TorqueMaster
+Option: 2WD
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064192BM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4129,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Transmission & Converter Package Dodge 47RE 2000–2002, 2WD — 1064182SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064182SS.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064182SS",
+    fitment: "2000–2002 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-dodge-47re-2000-2002",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-dodge-47re-2000-2002-1064182ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-dodge-47re-2000-2002-1064182ss/1.webp"],
+    description: `TowMaster Transmission & Converter Package Dodge 47RE 2000–2002, 2wd, BD part 1064182SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064182SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2000–2002 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064182SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4130,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 47RE Transmission 2000–2002, 2WD — 1064182F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064182F.
+    price: 4245,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064182F",
+    fitment: "2000–2002 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-2000-2002",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-47re-transmission-2000-2002-1064182f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-47re-transmission-2000-2002-1064182f/1.webp"],
+    description: `TowMaster Dodge 47RE Transmission 2000–2002, 2wd, BD part 1064182F.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064182F, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2000–2002 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $1,800, refundable
+Warranty: 36 months
+Part number: 1064182F
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4131,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Transmission & Converter Package Dodge 47RE 1996–1998 12-valve with Auxiliary Filter & Billet Input, 2WD — 1064162BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064162BM.
+    price: 6495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064162BM",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-47re-1996-1998-12-valve-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-47re-1996-1998-12-va-1064162bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-47re-1996-1998-12-va-1064162bm/1.webp"],
+    description: `TorqueMaster Transmission & Converter Package Dodge 47RE 1996–1998 12-valve with Auxiliary Filter & Billet Input, 2wd, BD part 1064162BM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064162BM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TorqueMaster
+Option: 2WD
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064162BM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4132,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Transmission & Converter Package Dodge 47RH 1994–1995, 2WD — 1064152SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064152SS.
+    price: 5294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064152SS",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-dodge-47rh-1994-1995",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-dodge-47rh-1994-1995-1064152ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-dodge-47rh-1994-1995-1064152ss/1.webp"],
+    description: `TowMaster Transmission & Converter Package Dodge 47RH 1994–1995, 2wd, BD part 1064152SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064152SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064152SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4133,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Dodge 48RE Transmission & Converter Package 2003–2004, 2WD — 1064142SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064142SS.
+    price: 4624.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064142SS",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-dodge-48re-transmission-converter-package-2003-2004",
+    thumbnail: "/product-media/transmission/bd-roadmaster-dodge-48re-transmission-converter-package-2003-2004-1064142ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-dodge-48re-transmission-converter-package-2003-2004-1064142ss/1.webp"],
+    description: `Roadmaster Dodge 48RE Transmission & Converter Package 2003–2004, 2wd, BD part 1064142SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064142SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064142SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4134,
+    createdAt: 1789430400000,
+    name: "BD Diesel Transmission Filter Kit Ford Power Stroke 5R110 2008–2010 — 1064018",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064018.
+    price: 319.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064018",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-kit-ford-power-stroke-5r110-2008-2010",
+    thumbnail: "/product-media/transmission/bd-transmission-filter-kit-ford-power-stroke-5r110-2008-2010-1064018/1.webp",
+    images: ["/product-media/transmission/bd-transmission-filter-kit-ford-power-stroke-5r110-2008-2010-1064018/1.webp"],
+    description: `Transmission Filter Kit Ford Power Stroke 5R110 2008–2010, BD part 1064018.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1064018.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Filters
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Warranty: 12 months
+Part number: 1064018
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4135,
+    createdAt: 1789430400000,
+    name: "BD Diesel Inline Trans Filter Kit Dodge Cummins 47RH/47RE/48RE 1994–2007 — 1064017",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064017.
+    price: 349.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064017",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/inline-trans-filter-kit-dodge-cummins-47rh-47re-48re-1994-2007",
+    thumbnail: "/product-media/transmission/bd-inline-trans-filter-kit-dodge-cummins-47rh-47re-48re-1994-2007-1064017/1.webp",
+    images: ["/product-media/transmission/bd-inline-trans-filter-kit-dodge-cummins-47rh-47re-48re-1994-2007-1064017/1.webp"],
+    description: `Inline Trans Filter Kit Dodge Cummins 47RH/47RE/48RE 1994–2007, BD part 1064017.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1064017.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Filters
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1064017
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4136,
+    createdAt: 1789430400000,
+    name: "BD Diesel Inline Trans Filter Kit Ford Power Stroke 4R100 1999–2003 — 1064013",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064013.
+    price: 308.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064013",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/inline-trans-filter-kit-ford-power-stroke-4r100-1999-2003",
+    thumbnail: "/product-media/transmission/bd-inline-trans-filter-kit-ford-power-stroke-4r100-1999-2003-1064013/1.webp",
+    images: ["/product-media/transmission/bd-inline-trans-filter-kit-ford-power-stroke-4r100-1999-2003-1064013/1.webp"],
+    description: `Inline Trans Filter Kit Ford Power Stroke 4R100 1999–2003, BD part 1064013.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1064013.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Filters
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Warranty: 12 months
+Part number: 1064013
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4137,
+    createdAt: 1789430400000,
+    name: "BD Diesel Inline Trans Filter Kit Ford Power Stroke E4OD 1994–1997 — 1064012",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064012.
+    price: 314.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064012",
+    fitment: "1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/inline-trans-filter-kit-ford-power-stroke-e4od-1994-1997",
+    thumbnail: "/product-media/transmission/bd-inline-trans-filter-kit-ford-power-stroke-e4od-1994-1997-1064012/1.webp",
+    images: ["/product-media/transmission/bd-inline-trans-filter-kit-ford-power-stroke-e4od-1994-1997-1064012/1.webp"],
+    description: `Inline Trans Filter Kit Ford Power Stroke E4OD 1994–1997, BD part 1064012.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1064012.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Filters
+Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+Warranty: 12 months
+Part number: 1064012
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4138,
+    createdAt: 1789430400000,
+    name: "BD Diesel 58-volt Fuel Injection Control Module (ficm) Ford 6.0L Power Stroke 2003–2007 — 1059700-A",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1059700-A.
+    price: 750.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1059700-A",
+    fitment: "2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    coreCharge: "$250 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/58-volt-fuel-injection-control-module-ficm-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/electronics/bd-58-volt-fuel-injection-control-module-ficm-ford-6-0l-power-stroke-2003-1059700a/1.webp",
+    images: ["/product-media/electronics/bd-58-volt-fuel-injection-control-module-ficm-ford-6-0l-power-stroke-2003-1059700a/1.webp"],
+    description: `58-volt Fuel Injection Control Module (ficm) Ford 6.0L Power Stroke 2003–2007, BD part 1059700-A.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD supply this as an exchange unit: a $250 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1059700-A.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: FICM
+Application: 2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Core charge: $250, refundable
+Warranty: 12 months
+Part number: 1059700-A
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4139,
+    createdAt: 1789430400000,
+    name: "BD Diesel Banjo Bolt Upgrade Kit Dodge Cummins 2000–2002 — 1050220",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050220.
+    price: 79.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050220",
+    fitment: "2000–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/banjo-bolt-upgrade-kit-dodge-cummins-2000-2002",
+    thumbnail: "/product-media/engine/bd-banjo-bolt-upgrade-kit-dodge-cummins-2000-2002-1050220/1.webp",
+    images: ["/product-media/engine/bd-banjo-bolt-upgrade-kit-dodge-cummins-2000-2002-1050220/1.webp"],
+    description: `Banjo Bolt Upgrade Kit Dodge Cummins 2000–2002, BD part 1050220.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1050220.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: VP44 Pumps
+Application: 2000–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1050220
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4140,
+    createdAt: 1789430400000,
+    name: "BD Diesel Banjo Bolt Upgrade Kit Dodge Cummins 1999 — 1050215",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050215.
+    price: 101.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050215",
+    fitment: "1999 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/banjo-bolt-upgrade-kit-dodge-cummins-1999",
+    thumbnail: "/product-media/engine/bd-banjo-bolt-upgrade-kit-dodge-cummins-1999-1050215/1.webp",
+    images: ["/product-media/engine/bd-banjo-bolt-upgrade-kit-dodge-cummins-1999-1050215/1.webp"],
+    description: `Banjo Bolt Upgrade Kit Dodge Cummins 1999, BD part 1050215.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1050215.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: VP44 Pumps
+Application: 1999 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1050215
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4141,
+    createdAt: 1789430400000,
+    name: "BD Diesel Patriot Fuel Plug Cap RAM 6.7L Cummins 2013–2018 / RAM 3.0L EcoDiesel 2014–2018 — 1050073",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050073.
+    price: 43.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050073",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500; and 2014–2018 Dodge / Ram 1500 Dt (3.0L, 6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/patriot-fuel-plug-cap-ram-6-7l-cummins-2013-2018-ram-3-0l-ecodiesel-2014-2018",
+    thumbnail: "/product-media/engine/bd-patriot-fuel-plug-cap-ram-6-7l-cummins-2013-2018-ram-3-0l-ecodiesel-20-1050073/1.webp",
+    images: ["/product-media/engine/bd-patriot-fuel-plug-cap-ram-6-7l-cummins-2013-2018-ram-3-0l-ecodiesel-20-1050073/1.webp"],
+    description: `Patriot Fuel Plug Cap RAM 6.7L Cummins 2013–2018 / RAM 3.0L EcoDiesel 2014–2018, BD part 1050073.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1050073.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Cap
+Application: 2013–2018 Dodge / Ram 2500 and 3500; and 2014–2018 Dodge / Ram 1500 Dt (3.0L, 6.7L)
+Warranty: 12 months
+Part number: 1050073
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4142,
+    createdAt: 1789430400000,
+    name: "BD Diesel GTP38 Non-EBV Turbo Pedestal Upgrade Ford 7.3L Power Stroke — 1047512",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047512.
+    price: 525.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1047512",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/gtp38-non-ebv-turbo-pedestal-upgrade-ford-7-3l-power-stroke",
+    thumbnail: "/product-media/turbocharger/bd-gtp38-non-ebv-turbo-pedestal-upgrade-ford-7-3l-power-stroke-1047512/1.webp",
+    images: ["/product-media/turbocharger/bd-gtp38-non-ebv-turbo-pedestal-upgrade-ford-7-3l-power-stroke-1047512/1.webp"],
+    description: `GTP38 Non-EBV Turbo Pedestal Upgrade Ford 7.3L Power Stroke, BD part 1047512.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1047512.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Thruster
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Warranty: 12 months
+Part number: 1047512
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4143,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer HX35 Turbo Dodge 5.9L 24 Valve Cummins 2500/3500 1999–2002 — 1045758",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045758.
+    price: 1282.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045758",
+    fitment: "1999–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-hx35-turbo-dodge-5-9l-24-valve-cummins-2500-3500-1999-2002",
+    thumbnail: "/product-media/turbocharger/bd-screamer-hx35-turbo-dodge-5-9l-24-valve-cummins-2500-3500-1999-2002-1045758/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-hx35-turbo-dodge-5-9l-24-valve-cummins-2500-3500-1999-2002-1045758/1.webp"],
+    description: `Screamer HX35 Turbo Dodge 5.9L 24 Valve Cummins 2500/3500 1999–2002, BD part 1045758.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045758.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 1999–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Warranty: 24 months
+Part number: 1045758
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4144,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S364SXE/80 0.91 AR — 1045294",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045294.
+    price: 2214.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045294",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S364SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045294/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045294/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s364sxe/80 0.91 ar, BD part 1045294.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045294, the s364sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S364SXE/80 0.91 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045294
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4145,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S363SXE/76 0.91 AR — 1045292",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045292.
+    price: 2135.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045292",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S363SXE/76 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045292/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045292/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s363sxe/76 0.91 ar, BD part 1045292.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045292, the s363sxe/76 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S363SXE/76 0.91 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045292
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4146,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S363SXE/80 0.91 AR — 1045293",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045293.
+    price: 2093.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045293",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S363SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045293/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045293/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s363sxe/80 0.91 ar, BD part 1045293.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045293, the s363sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S363SXE/80 0.91 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045293
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4147,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S364SXE/80 1.00 AR — 1045295",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045295.
+    price: 2103.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045295",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S364SXE/80 1.00 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045295/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045295/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s364sxe/80 1.00 ar, BD part 1045295.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045295, the s364sxe/80 1.00 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S364SXE/80 1.00 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045295
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4148,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S366SXE/80 0.91 AR — 1045296",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045296.
+    price: 2219.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045296",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S366SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045296/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045296/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s366sxe/80 0.91 ar, BD part 1045296.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045296, the s366sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S366SXE/80 0.91 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045296
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4149,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S366SXE/80 1.00 AR — 1045297",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045297.
+    price: 2297.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045297",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S366SXE/80 1.00 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045297/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045297/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s366sxe/80 1.00 ar, BD part 1045297.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045297, the s366sxe/80 1.00 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S366SXE/80 1.00 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045297
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4150,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S369SXE/80 0.91 AR — 1045298",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045298.
+    price: 2226.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045298",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S369SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045298/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045298/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s369sxe/80 0.91 ar, BD part 1045298.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045298, the s369sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S369SXE/80 0.91 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045298
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4151,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, S369SXE/80 1.00 AR — 1045299",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045299.
+    price: 2341.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045299",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). S369SXE/80 1.00 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045299/1.webp",
+    images: ["/product-media/turbocharger/bd-iron-horn-turbo-manifold-package-dodge-ram-6-7l-cummins-2007-2018-1045299/1.webp"],
+    description: `Iron Horn Turbo Manifold Package Dodge/RAM 6.7L Cummins 2007–2018, s369sxe/80 1.00 ar, BD part 1045299.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045299, the s369sxe/80 1.00 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Iron Horn
+Option: S369SXE/80 1.00 AR
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1045299
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4152,
+    createdAt: 1789430400000,
+    name: "BD Diesel Super B Killer SX-E S361 Turbo Kit Dodge 5.9L Cummins 1994–2002 — 1045265",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045265.
+    price: 2627.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045265",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/super-b-killer-sx-e-s361-turbo-kit-dodge-5-9l-cummins-1994-2002",
+    thumbnail: "/product-media/turbocharger/bd-super-b-killer-sx-e-s361-turbo-kit-dodge-5-9l-cummins-1994-2002-1045265/1.webp",
+    images: ["/product-media/turbocharger/bd-super-b-killer-sx-e-s361-turbo-kit-dodge-5-9l-cummins-1994-2002-1045265/1.webp"],
+    description: `Super B Killer SX-E S361 Turbo Kit Dodge 5.9L Cummins 1994–2002, BD part 1045265.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045265.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Super B Turbos
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1045265
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4153,
+    createdAt: 1789430400000,
+    name: "BD Diesel Super B 600 SX-E S364.5 Turbo Kit Dodge 5.9L Cummins 1994–2002 — 1045250",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045250.
+    price: 2627.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045250",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/super-b-600-sx-e-s364-5-turbo-kit-dodge-5-9l-cummins-1994-2002",
+    thumbnail: "/product-media/turbocharger/bd-super-b-600-sx-e-s364-5-turbo-kit-dodge-5-9l-cummins-1994-2002-1045250/1.webp",
+    images: ["/product-media/turbocharger/bd-super-b-600-sx-e-s364-5-turbo-kit-dodge-5-9l-cummins-1994-2002-1045250/1.webp"],
+    description: `Super B 600 SX-E S364.5 Turbo Kit Dodge 5.9L Cummins 1994–2002, BD part 1045250.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045250.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Super B Turbos
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1045250
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4154,
+    createdAt: 1789430400000,
+    name: "BD Diesel Up-Pipes Kit Ford 7.3L Power Stroke 1999.5-2003 F-250 / F-350 / Excursion / E-350 — 1043900",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043900.
+    price: 472.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1043900",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/up-pipes-kit-ford-7-3l-power-stroke-1999-5-2003-f-250-f-350-excursion-e-350",
+    thumbnail: "/product-media/turbocharger/bd-up-pipes-kit-ford-7-3l-power-stroke-1999-5-2003-f-250-f-350-excursion--1043900/1.webp",
+    images: ["/product-media/turbocharger/bd-up-pipes-kit-ford-7-3l-power-stroke-1999-5-2003-f-250-f-350-excursion--1043900/1.webp"],
+    description: `Up-Pipes Kit Ford 7.3L Power Stroke 1999.5-2003 F-250 / F-350 / Excursion / E-350, BD part 1043900.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1043900.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpPipes
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Warranty: 12 months
+Part number: 1043900
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4155,
+    createdAt: 1789430400000,
+    name: "BD Diesel Killer Grid Heater Upgrade Kit Dodge/RAM 6.7L Cummins 2500/3500 Pick-up 3500/4500/5500 Cab & Chassis 2007–2024 — 1041520",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041520.
+    price: 219.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1041520",
+    fitment: "2007–2014 Dodge / Ram 2500; and 2007–2013 Dodge / Ram 3500, 4500 and 5500 (6.7L). BD list this part for 2007–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/killer-grid-heater-upgrade-kit-dodge-ram-6-7l-cummins-2500-3500-pick-up-3500-4500-5500-cab-chassis-2007-2024",
+    thumbnail: "/product-media/turbocharger/bd-killer-grid-heater-upgrade-kit-dodge-ram-6-7l-cummins-2500-3500-pick-u-1041520/1.webp",
+    images: ["/product-media/turbocharger/bd-killer-grid-heater-upgrade-kit-dodge-ram-6-7l-cummins-2500-3500-pick-u-1041520/1.webp"],
+    description: `Killer Grid Heater Upgrade Kit Dodge/RAM 6.7L Cummins 2500/3500 Pick-up 3500/4500/5500 Cab & Chassis 2007–2024, BD part 1041520.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1041520.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Upgrade Kit
+Application: 2007–2014 Dodge / Ram 2500; and 2007–2013 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+BD catalogue range: 2007–2024
+Warranty: 12 months
+Part number: 1041520
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4156,
+    createdAt: 1789430400000,
+    name: "BD Diesel Killer Dowel Pin (KDP) Dodge 24-valve 5.9L Cummins 1998–2002 — 1040183",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040183.
+    price: 248.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040183",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/killer-dowel-pin-kdp-dodge-24-valve-5-9l-cummins-1998-2002",
+    thumbnail: "/product-media/engine/bd-killer-dowel-pin-kdp-dodge-24-valve-5-9l-cummins-1998-2002-1040183/1.webp",
+    images: ["/product-media/engine/bd-killer-dowel-pin-kdp-dodge-24-valve-5-9l-cummins-1998-2002-1040183/1.webp"],
+    description: `Killer Dowel Pin (KDP) Dodge 24-valve 5.9L Cummins 1998–2002, BD part 1040183.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1040183.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: KDP
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1040183
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4157,
+    createdAt: 1789430400000,
+    name: "BD Diesel Killer Dowel Pin (KDP) Dodge 12-valve 5.9L Cummins 1994–1998 — 1040182",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040182.
+    price: 213.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040182",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/killer-dowel-pin-kdp-dodge-12-valve-5-9l-cummins-1994-1998",
+    thumbnail: "/product-media/engine/bd-killer-dowel-pin-kdp-dodge-12-valve-5-9l-cummins-1994-1998-1040182/1.webp",
+    images: ["/product-media/engine/bd-killer-dowel-pin-kdp-dodge-12-valve-5-9l-cummins-1994-1998-1040182/1.webp"],
+    description: `Killer Dowel Pin (KDP) Dodge 12-valve 5.9L Cummins 1994–1998, BD part 1040182.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1040182.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: KDP
+Application: 1994–1998 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1040182
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4158,
+    createdAt: 1789430400000,
+    name: "BD Diesel VE Pump Fuel Pin & Spring Kit Dodge 5.9L Cummins 1989–1993 — 1040178",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040178.
+    price: 211.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040178",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ve-pump-fuel-pin-spring-kit-dodge-5-9l-cummins-1989-1993",
+    thumbnail: "/product-media/engine/bd-ve-pump-fuel-pin-spring-kit-dodge-5-9l-cummins-1989-1993-1040178/1.webp",
+    images: ["/product-media/engine/bd-ve-pump-fuel-pin-spring-kit-dodge-5-9l-cummins-1989-1993-1040178/1.webp"],
+    description: `VE Pump Fuel Pin & Spring Kit Dodge 5.9L Cummins 1989–1993, BD part 1040178.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040178.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: VE Pumps
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350 (5.9L)
+Warranty: 12 months
+Part number: 1040178
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4159,
+    createdAt: 1789430400000,
+    name: "BD Diesel End Links (pair) Chevy/GM Duramax 2500 HD / 3500HD Silverado/sierra 2001–2019 — 1032126",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032126.
+    price: 81.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1032126",
+    fitment: "2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L). BD list this part for 2001–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/end-links-pair-chevy-gm-duramax-2500-hd-3500hd-silverado-sierra-2001-2019",
+    thumbnail: "/product-media/suspension/bd-end-links-pair-chevy-gm-duramax-2500-hd-3500hd-silverado-sierra-2001-2-1032126/1.webp",
+    images: ["/product-media/suspension/bd-end-links-pair-chevy-gm-duramax-2500-hd-3500hd-silverado-sierra-2001-2-1032126/1.webp"],
+    description: `End Links (pair) Chevy/GM Duramax 2500 HD / 3500HD Silverado/sierra 2001–2019, BD part 1032126.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's steering and suspension parts are built to put that geometry back rather than simply to raise the truck further.
+
+BD list this as part 1032126.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Steering/Suspension
+Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
+BD catalogue range: 2001–2019
+Warranty: 12 months
+Part number: 1032126
+
+Highlights
+
+Corrects geometry a lift changes
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4160,
+    createdAt: 1789430400000,
+    name: "BD Diesel Short Shift - 5-spd NV 4500 24-valve Diesel & HEMI Dodge Cummins 1998.5-2003 — 1031056",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031056.
+    price: 352.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1031056",
+    fitment: "1998–2002 Dodge / Ram 2500; and 1998–2001 Dodge / Ram 3500 (5.9L, 8.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/short-shift-5-spd-nv-4500-24-valve-diesel-hemi-dodge-cummins-1998-5-2003",
+    thumbnail: "/product-media/transmission/bd-short-shift-5-spd-nv-4500-24-valve-diesel-hemi-dodge-cummins-1998-5-20-1031056/1.webp",
+    images: ["/product-media/transmission/bd-short-shift-5-spd-nv-4500-24-valve-diesel-hemi-dodge-cummins-1998-5-20-1031056/1.webp"],
+    description: `Short Shift - 5-spd NV 4500 24-valve Diesel & HEMI Dodge Cummins 1998.5-2003, BD part 1031056.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1031056.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Short Shift
+Application: 1998–2002 Dodge / Ram 2500; and 1998–2001 Dodge / Ram 3500 (5.9L, 8.0L)
+Warranty: 12 months
+Part number: 1031056
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4161,
+    createdAt: 1789430400000,
+    name: "BD Diesel Short Shift - 6-speed NV 5600 - Dodge 2003–2005 — 1031055",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031055.
+    price: 363.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1031055",
+    fitment: "2003–2005 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/short-shift-6-speed-nv-5600-dodge-2003-2005",
+    thumbnail: "/product-media/transmission/bd-short-shift-6-speed-nv-5600-dodge-2003-2005-1031055/1.webp",
+    images: ["/product-media/transmission/bd-short-shift-6-speed-nv-5600-dodge-2003-2005-1031055/1.webp"],
+    description: `Short Shift - 6-speed NV 5600 - Dodge 2003–2005, BD part 1031055.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1031055.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Short Shift
+Application: 2003–2005 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
+Warranty: 12 months
+Part number: 1031055
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4162,
+    createdAt: 1789430400000,
+    name: "BD Diesel Short Shift Kit - 6-speed NV 5600 Dodge Cummins 1999–2002 — 1031050",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031050.
+    price: 370.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1031050",
+    fitment: "1999–2002 Dodge / Ram 2500 and 3500 (5.9L, 8.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/short-shift-kit-6-speed-nv-5600-dodge-cummins-1999-2002",
+    thumbnail: "/product-media/transmission/bd-short-shift-kit-6-speed-nv-5600-dodge-cummins-1999-2002-1031050/1.webp",
+    images: ["/product-media/transmission/bd-short-shift-kit-6-speed-nv-5600-dodge-cummins-1999-2002-1031050/1.webp"],
+    description: `Short Shift Kit - 6-speed NV 5600 Dodge Cummins 1999–2002, BD part 1031050.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1031050.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Short Shift
+Application: 1999–2002 Dodge / Ram 2500 and 3500 (5.9L, 8.0L)
+Warranty: 12 months
+Part number: 1031050
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4163,
+    createdAt: 1789430400000,
+    name: "BD Diesel 2 Low UnLoc Chevy 2014-up - 2015–2019 2500–3500 4wd / 2014–2019 1500 4wd / 2015–2020 SUV 4wd — 1030711",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030711.
+    price: 198.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030711",
+    fitment: "2014–2015 Chevrolet Silverado 1500; 2014–2015 GMC Sierra 1500; 2015–2016 Cadillac Escalade Esv; 2015 Cadillac Escalade; 2015 Chevrolet Silverado 2500 HD, Silverado 3500 HD, Suburban and Tahoe; and 2015 GMC Sierra 2500 HD, Sierra 3500 HD, Yukon and Yukon XL (4.3L, 5.3L, 6.0L, 6.2L, 6.6L). BD list this part for 2014–2020; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-chevy-2014-up-2015-2019-2500-3500-4wd-2014-2019-1500-4wd-2015-2020-suv-4wd",
+    thumbnail: "/product-media/electronics/bd-2-low-unloc-chevy-2014-up-2015-2019-2500-3500-4wd-2014-2019-1500-4wd-2-1030711/1.webp",
+    images: ["/product-media/electronics/bd-2-low-unloc-chevy-2014-up-2015-2019-2500-3500-4wd-2014-2019-1500-4wd-2-1030711/1.webp"],
+    description: `2 Low UnLoc Chevy 2014-up - 2015–2019 2500–3500 4wd / 2014–2019 1500 4wd / 2015–2020 SUV 4wd, BD part 1030711.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1030711.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: 2 Low
+Application: 2014–2015 Chevrolet Silverado 1500; 2014–2015 GMC Sierra 1500; 2015–2016 Cadillac Escalade Esv; 2015 Cadillac Escalade; 2015 Chevrolet Silverado 2500 HD, Silverado 3500 HD, Suburban and Tahoe; and 2015 GMC Sierra 2500 HD, Sierra 3500 HD, Yukon and Yukon XL (4.3L, 5.3L, 6.0L, 6.2L, 6.6L)
+BD catalogue range: 2014–2020
+Warranty: 12 months
+Part number: 1030711
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4164,
+    createdAt: 1789430400000,
+    name: "BD Diesel 2 Low UnLoc Dodge 4wd - 1500 2009–2024 / 2500 2014–2024 / 3500 2013–2024 / 4500–5500 2019–2024 — 1030705",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030705.
+    price: 200.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030705",
+    fitment: "2009–2010 Dodge / Ram 1500; 2011–2015 Dodge / Ram 1500 Classic Ds; 2013–2014 Dodge / Ram 3500; and 2014 Dodge / Ram 2500 (3.0L, 3.6L, 3.7L, 4.7L, 5.7L, 6.4L, 6.7L). BD list this part for 2009–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-dodge-4wd-1500-2009-2024-2500-2014-2024-3500-2013-2024-4500-5500-2019-2024",
+    thumbnail: "/product-media/electronics/bd-2-low-unloc-dodge-4wd-1500-2009-2024-2500-2014-2024-3500-2013-2024-450-1030705/1.webp",
+    images: ["/product-media/electronics/bd-2-low-unloc-dodge-4wd-1500-2009-2024-2500-2014-2024-3500-2013-2024-450-1030705/1.webp"],
+    description: `2 Low UnLoc Dodge 4wd - 1500 2009–2024 / 2500 2014–2024 / 3500 2013–2024 / 4500–5500 2019–2024, BD part 1030705.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1030705.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: 2 Low
+Application: 2009–2010 Dodge / Ram 1500; 2011–2015 Dodge / Ram 1500 Classic Ds; 2013–2014 Dodge / Ram 3500; and 2014 Dodge / Ram 2500 (3.0L, 3.6L, 3.7L, 4.7L, 5.7L, 6.4L, 6.7L)
+BD catalogue range: 2009–2024
+Warranty: 12 months
+Part number: 1030705
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4165,
+    createdAt: 1789430400000,
+    name: "BD Diesel 2 Low UnLoc Dodge 1994–2002 CAD Front Axle - 1994–2002 2500–3500 4wd / 1994–2001 1500 4wd — 1030703",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030703.
+    price: 241.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030703",
+    fitment: "1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L). BD list this part for 1994–2002; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-dodge-1994-2002-cad-front-axle-1994-2002-2500-3500-4wd-1994-2001-1500-4wd",
+    thumbnail: "/product-media/electronics/bd-2-low-unloc-dodge-1994-2002-cad-front-axle-1994-2002-2500-3500-4wd-199-1030703/1.webp",
+    images: ["/product-media/electronics/bd-2-low-unloc-dodge-1994-2002-cad-front-axle-1994-2002-2500-3500-4wd-199-1030703/1.webp"],
+    description: `2 Low UnLoc Dodge 1994–2002 CAD Front Axle - 1994–2002 2500–3500 4wd / 1994–2001 1500 4wd, BD part 1030703.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1030703.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: 2 Low
+Application: 1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L)
+BD catalogue range: 1994–2002
+Warranty: 12 months
+Part number: 1030703
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4166,
+    createdAt: 1789430400000,
+    name: "BD Diesel AutoLoc Ford 7.3L Power Stroke 1990–2003 / Dodge 5.9L Cummins 1994–2005 / Chevy 6.5L Duramax 1992–2000 — 1030390",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030390.
+    price: 376.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030390",
+    fitment: "1990–1992 Ford F-250 and F-350; 1992–1994 Chevrolet C2500, C3500, K2500 and K3500; 1992–1993 GMC C2500, C3500, K2500 and K3500; 1994 Chevrolet C1500 and K1500; and 1994 Dodge / Ram 2500 (5.9L, 6.5L, 7.3L). BD list this part for 1990–2005; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/autoloc-ford-7-3l-power-stroke-1990-2003-dodge-5-9l-cummins-1994-2005-chevy-6-5l-duramax-1992-2000",
+    thumbnail: "/product-media/transmission/bd-autoloc-ford-7-3l-power-stroke-1990-2003-dodge-5-9l-cummins-1994-2005--1030390/1.webp",
+    images: ["/product-media/transmission/bd-autoloc-ford-7-3l-power-stroke-1990-2003-dodge-5-9l-cummins-1994-2005--1030390/1.webp"],
+    description: `AutoLoc Ford 7.3L Power Stroke 1990–2003 / Dodge 5.9L Cummins 1994–2005 / Chevy 6.5L Duramax 1992–2000, BD part 1030390.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030390.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Controls
+Application: 1990–1992 Ford F-250 and F-350; 1992–1994 Chevrolet C2500, C3500, K2500 and K3500; 1992–1993 GMC C2500, C3500, K2500 and K3500; 1994 Chevrolet C1500 and K1500; and 1994 Dodge / Ram 2500 (5.9L, 6.5L, 7.3L)
+BD catalogue range: 1990–2005
+Warranty: 12 months
+Part number: 1030390
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4167,
+    createdAt: 1789430400000,
+    name: "BD Diesel PROTECT68 Gasket Plate KIT Dodge 6.7L Cummins 68RFE 2019–2024 — 1030375",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030375.
+    price: 197.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030375",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/protect68-gasket-plate-kit-dodge-6-7l-cummins-68rfe-2019-2024",
+    thumbnail: "/product-media/transmission/bd-protect68-gasket-plate-kit-dodge-6-7l-cummins-68rfe-2019-2024-1030375/1.webp",
+    images: ["/product-media/transmission/bd-protect68-gasket-plate-kit-dodge-6-7l-cummins-68rfe-2019-2024-1030375/1.webp"],
+    description: `PROTECT68 Gasket Plate KIT Dodge 6.7L Cummins 68RFE 2019–2024, BD part 1030375.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030375.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: ProTect68
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1030375
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4168,
+    createdAt: 1789430400000,
+    name: "BD Diesel Protect68 Gasket Plate Kit Dodge 6.7L Cummins 68RFE 2007.5-2018 — 1030373",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030373.
+    price: 197.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030373",
+    fitment: "2007–2018 Dodge / Ram 2500; and 2008–2018 Dodge / Ram 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/protect68-gasket-plate-kit-dodge-6-7l-cummins-68rfe-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-protect68-gasket-plate-kit-dodge-6-7l-cummins-68rfe-2007-5-2018-1030373/1.webp",
+    images: ["/product-media/transmission/bd-protect68-gasket-plate-kit-dodge-6-7l-cummins-68rfe-2007-5-2018-1030373/1.webp"],
+    description: `Protect68 Gasket Plate Kit Dodge 6.7L Cummins 68RFE 2007.5-2018, BD part 1030373.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030373.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: ProTect68
+Application: 2007–2018 Dodge / Ram 2500; and 2008–2018 Dodge / Ram 3500 (6.7L)
+Warranty: 12 months
+Part number: 1030373
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4169,
+    createdAt: 1789430400000,
+    name: "BD Diesel Protect68 Pressure Control Kit Dodge 6.7L Cummins 68RFE 2007.5-2018 — 1030362",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030362.
+    price: 395.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030362",
+    fitment: "2007–2018 Dodge / Ram 2500; and 2008–2018 Dodge / Ram 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/protect68-pressure-control-kit-dodge-6-7l-cummins-68rfe-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-protect68-pressure-control-kit-dodge-6-7l-cummins-68rfe-2007-5-2018-1030362/1.webp",
+    images: ["/product-media/transmission/bd-protect68-pressure-control-kit-dodge-6-7l-cummins-68rfe-2007-5-2018-1030362/1.webp"],
+    description: `Protect68 Pressure Control Kit Dodge 6.7L Cummins 68RFE 2007.5-2018, BD part 1030362.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030362.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: ProTect68
+Application: 2007–2018 Dodge / Ram 2500; and 2008–2018 Dodge / Ram 3500 (6.7L)
+Warranty: 12 months
+Part number: 1030362
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4170,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LBZ CR Injector 60hp-90hp Chevy 2006–2007 6.6L, 33% (60hp) — 1716610",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716610.
+    price: 551.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716610",
+    fitment: "2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. 33% (60hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lbz-cr-injector-60hp-90hp-chevy-2006-2007-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lbz-cr-injector-60hp-90hp-chevy-2006-2007-6-6l-1716610/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lbz-cr-injector-60hp-90hp-chevy-2006-2007-6-6l-1716610/1.webp"],
+    description: `BD-Built Duramax LBZ CR Injector 60hp-90hp Chevy 2006–2007 6.6L, 33% (60hp), BD part 1716610.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716610, the 33% (60hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 33% (60hp)
+Application: 2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716610
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4171,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LBZ CR Injector 60hp-90hp Chevy 2006–2007 6.6L, 43% (90hp) — 1716611",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1716611.
+    price: 540.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1716611",
+    fitment: "2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. 43% (90hp) option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lbz-cr-injector-60hp-90hp-chevy-2006-2007-6-6l",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lbz-cr-injector-60hp-90hp-chevy-2006-2007-6-6l-1716611/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lbz-cr-injector-60hp-90hp-chevy-2006-2007-6-6l-1716611/1.webp"],
+    description: `BD-Built Duramax LBZ CR Injector 60hp-90hp Chevy 2006–2007 6.6L, 43% (90hp), BD part 1716611.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1716611, the 43% (90hp) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: 43% (90hp)
+Application: 2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1716611
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4172,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Dodge 68RFE Transmission & Converter Package 2019–2024 with Billet Input Shaft, 2WD — 1064292BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064292BM.
+    price: 8395,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064292BM",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-68rfe-transmission-converter-package-2019-2024-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-torquemaster-dodge-68rfe-transmission-converter-package-2019-2024-with-1064292bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-dodge-68rfe-transmission-converter-package-2019-2024-with-1064292bm/1.webp"],
+    description: `TorqueMaster Dodge 68RFE Transmission & Converter Package 2019–2024 with Billet Input Shaft, 2wd, BD part 1064292BM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064292BM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TorqueMaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064292BM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4173,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 48RE Transmission 2003–2004, 2WD — 1064192F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064192F.
+    price: 4324.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064192F",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-2003-2004",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-48re-transmission-2003-2004-1064192f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-48re-transmission-2003-2004-1064192f/1.webp"],
+    description: `TowMaster Dodge 48RE Transmission 2003–2004, 2wd, BD part 1064192F.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064192F, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $1,800, refundable
+Warranty: 36 months
+Part number: 1064192F
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4174,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold & Up-pipe Kit Ford F-250/F-350/F-450/F-550 Super Duty 6.4L Power Stroke 2008–2010 — 1041484",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041484.
+    price: 1019.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1041484",
+    fitment: "2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-up-pipe-kit-ford-f250-f350-f450-f550-super-duty-6-4l-power-stroke-2008-2010",
+    thumbnail: "/product-media/turbocharger/bd-exhaust-manifold-up-pipe-kit-ford-f-250-f-350-f-450-f-550-super-duty-6-1041484/1.webp",
+    images: ["/product-media/turbocharger/bd-exhaust-manifold-up-pipe-kit-ford-f-250-f-350-f-450-f-550-super-duty-6-1041484/1.webp"],
+    description: `Exhaust Manifold & Up-pipe Kit Ford F-250/F-350/F-450/F-550 Super Duty 6.4L Power Stroke 2008–2010, BD part 1041484.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1041484.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpPipes
+Application: 2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L)
+Warranty: 36 months
+Part number: 1041484
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4175,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 AFC Spring Kit Dodge 12-valve 5.9L Cummins 1994–1998 — 1040181",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040181.
+    price: 76.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040181",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-afc-spring-kit-dodge-12-valve-5-9l-cummins-1994-1998",
+    thumbnail: "/product-media/engine/bd-p7100-afc-spring-kit-dodge-12-valve-5-9l-cummins-1994-1998-1040181/1.webp",
+    images: ["/product-media/engine/bd-p7100-afc-spring-kit-dodge-12-valve-5-9l-cummins-1994-1998-1040181/1.webp"],
+    description: `P7100 AFC Spring Kit Dodge 12-valve 5.9L Cummins 1994–1998, BD part 1040181.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040181.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040181
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4176,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 5R110 Transmission & Converter Package Ford 6.4L Power Stroke F-250/F-350 2008–2010, 4WD/2WD Flange — 1064654SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064654SM.
+    price: 4584.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064654SM",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L). 4WD/2WD Flange option.",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-f250-f350-2008-2010",
+    thumbnail: "/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-1064654sm/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-1064654sm/1.webp"],
+    description: `Roadmaster 5R110 Transmission & Converter Package Ford 6.4L Power Stroke F-250/F-350 2008–2010, 4wd/2wd flange, BD part 1064654SM.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064654SM, the 4wd/2wd flange option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TRANSMISSIONS
+Series: Roadmaster
+Option: 4WD/2WD Flange
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Core charge: $2,000, refundable
+Warranty: 24 months
+Part number: 1064654SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4177,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 5R110 Transmission & Converter Package Ford 6.0L Power Stroke F-250/F-350 2005–2007, 4WD/2WD Flange — 1064644SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064644SM.
+    price: 4194.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064644SM",
+    fitment: "2005 Ford E-350 Club Wagon; 2005–2007 Ford E-350 Super Duty, E-450 Super Duty, F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2007 Ford E-350 Econoline (6.0L). 4WD/2WD Flange option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-f250-f350-2005-2007",
+    thumbnail: "/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-1064644sm/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-1064644sm/1.webp"],
+    description: `Roadmaster 5R110 Transmission & Converter Package Ford 6.0L Power Stroke F-250/F-350 2005–2007, 4wd/2wd flange, BD part 1064644SM.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064644SM, the 4wd/2wd flange option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TRANSMISSIONS
+Series: Roadmaster
+Option: 4WD/2WD Flange
+Application: 2005 Ford E-350 Club Wagon; 2005–2007 Ford E-350 Super Duty, E-450 Super Duty, F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2007 Ford E-350 Econoline (6.0L)
+Core charge: $1,800, refundable
+Warranty: 24 months
+Part number: 1064644SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4178,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 5R110 Transmission & Converter Package Ford 6.0L Power Stroke F-250/F-350 2003–2004, 4WD/2WD Flange — 1064634SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064634SM.
+    price: 4194.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064634SM",
+    fitment: "2003–2004 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2004 Ford E-350 Club Wagon, E-350 Super Duty and E-450 Super Duty (6.0L). 4WD/2WD Flange option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-f250-f350-2003-2004",
+    thumbnail: "/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-1064634sm/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-1064634sm/1.webp"],
+    description: `Roadmaster 5R110 Transmission & Converter Package Ford 6.0L Power Stroke F-250/F-350 2003–2004, 4wd/2wd flange, BD part 1064634SM.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064634SM, the 4wd/2wd flange option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TRANSMISSIONS
+Series: Roadmaster
+Option: 4WD/2WD Flange
+Application: 2003–2004 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2004 Ford E-350 Club Wagon, E-350 Super Duty and E-450 Super Duty (6.0L)
+Core charge: $1,800, refundable
+Warranty: 24 months
+Part number: 1064634SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4179,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Ford 10r80 Transmission & Converter Package F-150 5.0L V8 2018–2020, 2WD — 1064622SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064622SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064622SS",
+    fitment: "2018–2020 Ford F-150 (5.0L). 2WD option.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-2018-2020",
+    thumbnail: "/product-media/transmission/bd-roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-201-1064622ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-201-1064622ss/1.webp"],
+    description: `Roadmaster Ford 10r80 Transmission & Converter Package F-150 5.0L V8 2018–2020, 2wd, BD part 1064622SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064622SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2018–2020 Ford F-150 (5.0L)
+Core charge: $1,500, refundable
+Warranty: 24 months
+Part number: 1064622SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4180,
+    createdAt: 1789430400000,
+    name: "BD Diesel VP44 Injection Pump - Dodge 2000–2002 24-valve 245hp HO 6-speed Manual — 1050031",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050031.
+    price: 1599,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050031",
+    fitment: "2000–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 2000–2004 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$700 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/vp44-injection-pump-dodge-2000-2002-24-valve-245hp-ho-6-speed-manual",
+    thumbnail: "/product-media/engine/bd-vp44-injection-pump-dodge-2000-2002-24-valve-245hp-ho-6-speed-manual-1050031/1.webp",
+    images: ["/product-media/engine/bd-vp44-injection-pump-dodge-2000-2002-24-valve-245hp-ho-6-speed-manual-1050031/1.webp"],
+    description: `VP44 Injection Pump - Dodge 2000–2002 24-valve 245hp HO 6-speed Manual, BD part 1050031.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $700 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050031.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: VP44 Pumps
+Application: 2000–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 2000–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $700, refundable
+Warranty: 12 months
+Part number: 1050031
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4181,
+    createdAt: 1789430400000,
+    name: "BD Diesel VP44 Injection Pump - Dodge 1998.5-2002 Auto / 1998.5-2002 5-speed — 1050030",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050030.
+    price: 1599,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050030",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    coreCharge: "$700 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/vp44-injection-pump-dodge-1998-5-2002-auto-1998-5-2002-5-speed",
+    thumbnail: "/product-media/engine/bd-vp44-injection-pump-dodge-1998-5-2002-auto-1998-5-2002-5-speed-1050030/1.webp",
+    images: ["/product-media/engine/bd-vp44-injection-pump-dodge-1998-5-2002-auto-1998-5-2002-5-speed-1050030/1.webp"],
+    description: `VP44 Injection Pump - Dodge 1998.5-2002 Auto / 1998.5-2002 5-speed, BD part 1050030.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $700 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050030.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: VP44 Pumps
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Core charge: $700, refundable
+Warranty: 12 months
+Part number: 1050030
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4182,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 47RE Dodge RAM 2500/3500 5.9L Cummins 2000–2002, 2WD — 1064992SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064992SS.
+    price: 4525,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064992SS",
+    fitment: "2000–2002 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9l-cummins-2000-2002",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9-1064992ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9-1064992ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 47RE Dodge RAM 2500/3500 5.9L Cummins 2000–2002, 2wd, BD part 1064992SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064992SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2000–2002 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064992SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4183,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 47RE Dodge RAM 2500/3500 5.9L Cummins 1998.5-1999, 2WD — 1064982SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064982SS.
+    price: 4525,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064982SS",
+    fitment: "1998–1999 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9l-cummins-1998-5-1999",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9-1064982ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9-1064982ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 47RE Dodge RAM 2500/3500 5.9L Cummins 1998.5-1999, 2wd, BD part 1064982SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064982SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 1998–1999 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064982SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4184,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package 47RE Dodge RAM 2500/3500 5.9L Cummins 1996–1998, 2WD — 1064972SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064972SS.
+    price: 4525,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064972SS",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9l-cummins-1996-1998",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9-1064972ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9-1064972ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package 47RE Dodge RAM 2500/3500 5.9L Cummins 1996–1998, 2wd, BD part 1064972SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064972SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064972SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4185,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2WD Right Hand PTO — 1064272SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064272SS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064272SS",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Right Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1064272ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1064272ss/1.webp"],
+    description: `Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2wd right hand pto, BD part 1064272SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064272SS, the 2wd right hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 2WD Right Hand PTO
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064272SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4186,
+    createdAt: 1789430400000,
+    name: "BD Diesel Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2WD Left Hand PTO — 1064382SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064382SS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064382SS",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). 2WD Left Hand PTO option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1064382ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-55-1064382ss/1.webp"],
+    description: `Towmaster Transmission & Converter Package Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018, 2wd left hand pto, BD part 1064382SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064382SS, the 2wd left hand pto option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Towmaster
+Option: 2WD Left Hand PTO
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $2,500, refundable
+Warranty: 36 months
+Part number: 1064382SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4187,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Valve Cover Dodge Cummins 2003–2005 — DJPCNC100071",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCNC100071.
+    price: 674.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCNC100071",
+    fitment: "2003–2005 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-valve-cover-dodge-cummins-2003-2005",
+    thumbnail: "/product-media/engine/bd-billet-valve-cover-dodge-cummins-2003-2005-djpcnc100071/1.webp",
+    images: ["/product-media/engine/bd-billet-valve-cover-dodge-cummins-2003-2005-djpcnc100071/1.webp"],
+    description: `Billet Valve Cover Dodge Cummins 2003–2005, BD part DJPCNC100071.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part DJPCNC100071.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Covers
+Application: 2003–2005 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 36 months
+Part number: DJPCNC100071
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4188,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Valve Cover Dodge/RAM 5.9L/6.7L Cummins 2006–2024, Natural — DJPCNC100068",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCNC100068.
+    price: 674.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCNC100068",
+    fitment: "2006–2013 Dodge / Ram 2500 and 3500; 2008–2013 Dodge / Ram 4500; and 2008–2012 Dodge / Ram 5500 (5.9L, 6.7L). BD list this part for 2006–2024; the years above are the ones tagged per model on their own listing. Natural option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-valve-cover-dodge-ram-5-9l-6-7l-cummins-2006-2024",
+    thumbnail: "/product-media/engine/bd-billet-valve-cover-dodge-ram-5-9l-6-7l-cummins-2006-2024-djpcnc100068/1.webp",
+    images: ["/product-media/engine/bd-billet-valve-cover-dodge-ram-5-9l-6-7l-cummins-2006-2024-djpcnc100068/1.webp"],
+    description: `Billet Valve Cover Dodge/RAM 5.9L/6.7L Cummins 2006–2024, natural, BD part DJPCNC100068.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part DJPCNC100068, the natural option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Cover
+Option: Natural
+Application: 2006–2013 Dodge / Ram 2500 and 3500; 2008–2013 Dodge / Ram 4500; and 2008–2012 Dodge / Ram 5500 (5.9L, 6.7L)
+BD catalogue range: 2006–2024
+Warranty: 36 months
+Part number: DJPCNC100068
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4189,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Valve Cover Dodge/RAM 5.9L/6.7L Cummins 2006–2024, Black Powder Coated — DJPCNC100075",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCNC100075.
+    price: 786.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCNC100075",
+    fitment: "2006–2013 Dodge / Ram 2500 and 3500; 2008–2013 Dodge / Ram 4500; and 2008–2012 Dodge / Ram 5500 (5.9L, 6.7L). BD list this part for 2006–2024; the years above are the ones tagged per model on their own listing. Black Powder Coated option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-valve-cover-dodge-ram-5-9l-6-7l-cummins-2006-2024",
+    thumbnail: "/product-media/engine/bd-billet-valve-cover-dodge-ram-5-9l-6-7l-cummins-2006-2024-djpcnc100075/1.webp",
+    images: ["/product-media/engine/bd-billet-valve-cover-dodge-ram-5-9l-6-7l-cummins-2006-2024-djpcnc100075/1.webp"],
+    description: `Billet Valve Cover Dodge/RAM 5.9L/6.7L Cummins 2006–2024, black powder coated, BD part DJPCNC100075.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part DJPCNC100075, the black powder coated option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Cover
+Option: Black Powder Coated
+Application: 2006–2013 Dodge / Ram 2500 and 3500; 2008–2013 Dodge / Ram 4500; and 2008–2012 Dodge / Ram 5500 (5.9L, 6.7L)
+BD catalogue range: 2006–2024
+Warranty: 36 months
+Part number: DJPCNC100075
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4190,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package E4OD Ford F-250/F-350 7.3L Power Stroke 1995–1997, 2WD — 1064072SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064072SS.
+    price: 4278.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064072SS",
+    fitment: "1995–1996 Ford F-250; 1995–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-e4od-ford-f250-f350-7-3l-power-stroke-1995-1997",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-e4od-ford-f-250-f-350-7-3l-p-1064072ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-e4od-ford-f-250-f-350-7-3l-p-1064072ss/1.webp"],
+    description: `Roadmaster Transmission & Converter Package E4OD Ford F-250/F-350 7.3L Power Stroke 1995–1997, 2wd, BD part 1064072SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064072SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 1995–1996 Ford F-250; 1995–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+Core charge: $1,800, refundable
+Warranty: 24 months
+Part number: 1064072SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4191,
+    createdAt: 1789430400000,
+    name: "BD Diesel Electronic Exhaust Brake 5.0-inch RAM 2500/3500 6.7L Cummins 2013–2024 — 1027349",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027349.
+    price: 1095.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1027349",
+    fitment: "2013–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/electronic-exhaust-brake-5-0-inch-ram-2500-3500-6-7l-cummins-2013-2024",
+    thumbnail: "/product-media/engine/bd-electronic-exhaust-brake-5-0-inch-ram-2500-3500-6-7l-cummins-2013-2024-1027349/1.webp",
+    images: ["/product-media/engine/bd-electronic-exhaust-brake-5-0-inch-ram-2500-3500-6-7l-cummins-2013-2024-1027349/1.webp"],
+    description: `Electronic Exhaust Brake 5.0-inch RAM 2500/3500 6.7L Cummins 2013–2024, BD part 1027349.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1027349.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2013–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 24 months
+Part number: 1027349
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4192,
+    createdAt: 1789430400000,
+    name: "BD Diesel Electronic Exhaust Brake 4.0in RAM 2500/3500 6.7L Cummins 2013–2024 — 1027348",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027348.
+    price: 1077.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1027348",
+    fitment: "2013–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/electronic-exhaust-brake-4-0in-ram-2500-3500-6-7l-cummins-2013-2024",
+    thumbnail: "/product-media/engine/bd-electronic-exhaust-brake-4-0in-ram-2500-3500-6-7l-cummins-2013-2024-1027348/1.webp",
+    images: ["/product-media/engine/bd-electronic-exhaust-brake-4-0in-ram-2500-3500-6-7l-cummins-2013-2024-1027348/1.webp"],
+    description: `Electronic Exhaust Brake 4.0in RAM 2500/3500 6.7L Cummins 2013–2024, BD part 1027348.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1027348.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2013–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 24 months
+Part number: 1027348
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4193,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Dodge 48RE Transmission & Converter Package 2005–2007, 2WD — 1064202SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064202SS.
+    price: 4624.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064202SS",
+    fitment: "2005–2007 Dodge / Ram 2500 and 3500 (5.9L). 2WD option.",
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-dodge-48re-transmission-converter-package-2005-2007",
+    thumbnail: "/product-media/transmission/bd-roadmaster-dodge-48re-transmission-converter-package-2005-2007-1064202ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-dodge-48re-transmission-converter-package-2005-2007-1064202ss/1.webp"],
+    description: `Roadmaster Dodge 48RE Transmission & Converter Package 2005–2007, 2wd, BD part 1064202SS.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064202SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2005–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,500, refundable
+Warranty: 24 months
+Part number: 1064202SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4194,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Transmission & Converter Package Dodge 68RFE 2007.5-2018 with Billet Input Shaft, 2WD — 1064262BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064262BM.
+    price: 8395,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064262BM",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-68rfe-2007-5-2018-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-68rfe-2007-5-2018-wi-1064262bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-transmission-converter-package-dodge-68rfe-2007-5-2018-wi-1064262bm/1.webp"],
+    description: `TorqueMaster Transmission & Converter Package Dodge 68RFE 2007.5-2018 with Billet Input Shaft, 2wd, BD part 1064262BM.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064262BM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TorqueMaster
+Option: 2WD
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $2,100, refundable
+Warranty: 36 months
+Part number: 1064262BM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4195,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Dodge 68RFE Transmission & Converter Package - 2007.5-2018, 2WD — 1064262SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064262SS.
+    price: 6994.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064262SS",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-68rfe-transmission-converter-package-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-towmaster-dodge-68rfe-transmission-converter-package-2007-5-2018-1064262ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-dodge-68rfe-transmission-converter-package-2007-5-2018-1064262ss/1.webp"],
+    description: `TowMaster Dodge 68RFE Transmission & Converter Package - 2007.5-2018, 2wd, BD part 1064262SS.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064262SS, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $2,100, refundable
+Warranty: 36 months
+Part number: 1064262SS
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4196,
+    createdAt: 1789430400000,
+    name: "Bosch Common Rail Supply Connector Tube Dodge/RAM 5.9L Cummins 2003–2007 — F00RJ01572",
+    category: "electronics",
+    brand: "bosch",
+    // bddiesel listing price for F00RJ01572.
+    price: 49.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F00RJ01572",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bosch-5-9l-cummins-common-rail-supply-connector-tube-dodge-2003-2007",
+    thumbnail: "/product-media/electronics/bd-bosch-common-rail-supply-connector-tube-dodge-ram-5-9l-cummins-2003-20-f00rj01572/1.webp",
+    images: ["/product-media/electronics/bd-bosch-common-rail-supply-connector-tube-dodge-ram-5-9l-cummins-2003-20-f00rj01572/1.webp"],
+    description: `Bosch Common Rail Supply Connector Tube Dodge/RAM 5.9L Cummins 2003–2007, Bosch part F00RJ01572.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part F00RJ01572.
+
+Specifications
+
+Manufacturer: Bosch
+Product: Bosch
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: F00RJ01572
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4197,
+    createdAt: 1789430400000,
+    name: "Accelerator Pedal Position Sensor (APPS) - Dodge 1998–2004 5.9L — AP63458",
+    category: "electronics",
+    brand: "alliant-power",
+    // bddiesel listing price for AP63458.
+    price: 189.08,
+    stock: true,
+    condition: "brand-new",
+    warranty: "13-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "AP63458",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1998–2004 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/accelerator-pedal-position-sensor-apps-dodge-1998-2004-5-9l",
+    thumbnail: "/product-media/electronics/bd-accelerator-pedal-position-sensor-apps-dodge-1998-2004-5-9l-ap63458/1.webp",
+    images: ["/product-media/electronics/bd-accelerator-pedal-position-sensor-apps-dodge-1998-2004-5-9l-ap63458/1.webp"],
+    description: `Accelerator Pedal Position Sensor (APPS) - Dodge 1998–2004 5.9L, Alliant Power part AP63458.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part AP63458.
+
+Specifications
+
+Manufacturer: Alliant Power
+Product: Alliant Power
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1998–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 13 months
+Part number: AP63458
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+13-month BD warranty
+
+Warranty
+13-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4198,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock (0986435573) RAM 2013–2018 Cab & Chassis, Standard — 1715589",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715589.
+    price: 366.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715589",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). Sold individually — one injector, not a set. Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-0986435573-ram-2013-2018-cab-chassis",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435573-ram-2013-2018-cab-chas-1715589/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435573-ram-2013-2018-cab-chas-1715589/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock (0986435573) RAM 2013–2018 Cab & Chassis, standard, BD part 1715589.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715589, the standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Standard
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715589
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4199,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock (0986435573) RAM 2013–2018 Cab & Chassis, Premium — 1725589",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725589.
+    price: 475.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725589",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L). Sold individually — one injector, not a set. Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-0986435573-ram-2013-2018-cab-chassis",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435573-ram-2013-2018-cab-chas-1725589/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435573-ram-2013-2018-cab-chas-1725589/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock (0986435573) RAM 2013–2018 Cab & Chassis, premium, BD part 1725589.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725589, the premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Premium
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725589
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4200,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock (0986435574) Dodge/RAM 2010.5-2012 Cab & Chassis w/SCR, Standard — 1715588",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715588.
+    price: 373.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715588",
+    fitment: "2010–2012 Dodge / Ram 3500, 4500 and 5500 (6.7L). Sold individually — one injector, not a set. Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-0986435574-dodge-ram-2010-5-2012-cab-chassis-w-scr",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435574-dodge-ram-2010-5-2012--1715588/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435574-dodge-ram-2010-5-2012--1715588/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock (0986435574) Dodge/RAM 2010.5-2012 Cab & Chassis w/SCR, standard, BD part 1715588.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715588, the standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Standard
+Application: 2010–2012 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715588
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4201,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock (0986435574) Dodge/RAM 2010.5-2012 Cab & Chassis w/SCR, Premium — 1725588",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725588.
+    price: 487.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725588",
+    fitment: "2010–2012 Dodge / Ram 3500, 4500 and 5500 (6.7L). Sold individually — one injector, not a set. Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-0986435574-dodge-ram-2010-5-2012-cab-chassis-w-scr",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435574-dodge-ram-2010-5-2012--1725588/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435574-dodge-ram-2010-5-2012--1725588/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock (0986435574) Dodge/RAM 2010.5-2012 Cab & Chassis w/SCR, premium, BD part 1725588.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725588, the premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Premium
+Application: 2010–2012 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725588
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4202,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock (0986435519) Dodge/RAM 2007.5-2010 Cab & Chassis w/o SCR, Standard — 1715571",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715571.
+    price: 373.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715571",
+    fitment: "2007–2010 Dodge / Ram 3500; and 2008–2010 Dodge / Ram 4500 and 5500 (6.7L). Sold individually — one injector, not a set. Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-0986435519-dodge-ram-2007-5-2010-cab-chassis-w-o-scr",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435519-dodge-ram-2007-5-2010--1715571/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435519-dodge-ram-2007-5-2010--1715571/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock (0986435519) Dodge/RAM 2007.5-2010 Cab & Chassis w/o SCR, standard, BD part 1715571.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715571, the standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Standard
+Application: 2007–2010 Dodge / Ram 3500; and 2008–2010 Dodge / Ram 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715571
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4203,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 6.7L Cummins Injector Stock (0986435519) Dodge/RAM 2007.5-2010 Cab & Chassis w/o SCR, Premium — 1725571",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725571.
+    price: 485.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725571",
+    fitment: "2007–2010 Dodge / Ram 3500; and 2008–2010 Dodge / Ram 4500 and 5500 (6.7L). Sold individually — one injector, not a set. Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-6-7l-cummins-injector-stock-0986435519-dodge-ram-2007-5-2010-cab-chassis-w-o-scr",
+    thumbnail: "/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435519-dodge-ram-2007-5-2010--1725571/1.webp",
+    images: ["/product-media/engine/bd-bd-built-6-7l-cummins-injector-stock-0986435519-dodge-ram-2007-5-2010--1725571/1.webp"],
+    description: `BD-Built 6.7L Cummins Injector Stock (0986435519) Dodge/RAM 2007.5-2010 Cab & Chassis w/o SCR, premium, BD part 1725571.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725571, the premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Premium
+Application: 2007–2010 Dodge / Ram 3500; and 2008–2010 Dodge / Ram 4500 and 5500 (6.7L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725571
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4204,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, Stock / Standard — 1715520",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715520.
+    price: 407.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715520",
+    fitment: "2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. Stock / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-2007-2010",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1715520/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1715520/1.webp"],
+    description: `BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, stock / standard, BD part 1715520.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715520, the stock / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Standard
+Application: 2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715520
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4205,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, StockPlus 5-15 HP / Standard — 1714520",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714520.
+    price: 450.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714520",
+    fitment: "2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-2007-2010",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1714520/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1714520/1.webp"],
+    description: `BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, stockplus 5-15 hp / standard, BD part 1714520.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714520, the stockplus 5-15 hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Standard
+Application: 2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714520
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4206,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, StockPlus 5-15 HP / Premium — 1724520",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724520.
+    price: 525.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724520",
+    fitment: "2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-2007-2010",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1724520/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1724520/1.webp"],
+    description: `BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, stockplus 5-15 hp / premium, BD part 1724520.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724520, the stockplus 5-15 hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Premium
+Application: 2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724520
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4207,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, Stock / Premium — 1725520",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725520.
+    price: 520.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725520",
+    fitment: "2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-2007-2010",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1725520/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lmm-injector-stock-stockplus-0986435520-chevy-gmc-200-1725520/1.webp"],
+    description: `BD-Built Duramax LMM Injector Stock/StockPlus (0986435520) Chevy/GMC 2007–2010, stock / premium, BD part 1725520.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725520, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2007–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2007 Chevrolet Silverado 3500 Classic; and 2007–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725520
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4208,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, Stock / Standard — 1715505",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715505.
+    price: 321.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715505",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. Stock / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1715505/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1715505/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, stock / standard, BD part 1715505.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715505, the stock / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Standard
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715505
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4209,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, StockPlus 5-15 HP / Standard — 1714505",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714505.
+    price: 346.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714505",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1714505/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1714505/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, stockplus 5-15 hp / standard, BD part 1714505.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714505, the stockplus 5-15 hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Standard
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714505
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4210,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, StockPlus 5-15 HP / Premium — 1724505",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724505.
+    price: 416.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724505",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1724505/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1724505/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, stockplus 5-15 hp / premium, BD part 1724505.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724505, the stockplus 5-15 hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Premium
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724505
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4211,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, Stock / Premium — 1725505",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725505.
+    price: 384.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725505",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1725505/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435505-dodge-2004-5-1725505/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435505) Dodge 2004.5-2007, stock / premium, BD part 1725505.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725505, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725505
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4212,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, Stock / Standard — 1715504",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715504.
+    price: 342.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715504",
+    fitment: "2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L). Sold individually — one injector, not a set. Stock / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-2004-5-2006",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1715504/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1715504/1.webp"],
+    description: `BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, stock / standard, BD part 1715504.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715504, the stock / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Standard
+Application: 2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715504
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4213,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, StockPlus 5-15 HP / Standard — 1714504",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714504.
+    price: 365.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714504",
+    fitment: "2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-2004-5-2006",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1714504/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1714504/1.webp"],
+    description: `BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, stockplus 5-15 hp / standard, BD part 1714504.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714504, the stockplus 5-15 hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Standard
+Application: 2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714504
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4214,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, StockPlus 5-15 HP / Premium — 1724504",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724504.
+    price: 427.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724504",
+    fitment: "2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-2004-5-2006",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1724504/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1724504/1.webp"],
+    description: `BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, stockplus 5-15 hp / premium, BD part 1724504.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724504, the stockplus 5-15 hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Premium
+Application: 2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724504
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4215,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, Stock / Premium — 1725504",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725504.
+    price: 396.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725504",
+    fitment: "2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-2004-5-2006",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1725504/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lly-injector-stock-stockplus-0986435504-chevy-gmc-200-1725504/1.webp"],
+    description: `BD-Built Duramax LLY Injector Stock/StockPlus (0986435504) Chevy/GMC 2004.5-2006, stock / premium, BD part 1725504.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725504, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725504
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4216,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, Stock / Standard — 1715503",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715503.
+    price: 321.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715503",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. Stock / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1715503/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1715503/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, stock / standard, BD part 1715503.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715503, the stock / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Standard
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715503
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4217,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, StockPlus 5-15 HP / Standard — 1714503",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714503.
+    price: 353.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714503",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1714503/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1714503/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, stockplus 5-15 hp / standard, BD part 1714503.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714503, the stockplus 5-15 hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Standard
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714503
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4218,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, StockPlus 5-15 HP / Premium — 1724503",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724503.
+    price: 438.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724503",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1724503/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1724503/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, stockplus 5-15 hp / premium, BD part 1724503.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724503, the stockplus 5-15 hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Premium
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724503
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4219,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, Stock / Premium — 1725503",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725503.
+    price: 356.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725503",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1725503/1.webp",
+    images: ["/product-media/engine/bd-bd-built-5-9l-cummins-injector-stock-stockplus-0986435503-dodge-2003-2-1725503/1.webp"],
+    description: `BD-Built 5.9L Cummins Injector Stock/StockPlus (0986435503) Dodge 2003–2004, stock / premium, BD part 1725503.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725503, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725503
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4220,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, Stock / Standard — 1715502",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1715502.
+    price: 257.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1715502",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. Stock / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-2001-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1715502/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1715502/1.webp"],
+    description: `BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, stock / standard, BD part 1715502.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1715502, the stock / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Standard
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1715502
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4221,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, StockPlus 5-15 HP / Standard — 1714502",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1714502.
+    price: 294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1714502",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Standard option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-2001-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1714502/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1714502/1.webp"],
+    description: `BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, stockplus 5-15 hp / standard, BD part 1714502.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1714502, the stockplus 5-15 hp / standard option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Standard
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1714502
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4222,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, StockPlus 5-15 HP / Premium — 1724502",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1724502.
+    price: 372.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1724502",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. StockPlus 5-15 HP / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-2001-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1724502/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1724502/1.webp"],
+    description: `BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, stockplus 5-15 hp / premium, BD part 1724502.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1724502, the stockplus 5-15 hp / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: StockPlus 5-15 HP / Premium
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1724502
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4223,
+    createdAt: 1789430400000,
+    name: "BD Diesel BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, Stock / Premium — 1725502",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1725502.
+    price: 332.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1725502",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L). Sold individually — one injector, not a set. Stock / Premium option.",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-2001-2004",
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1725502/1.webp",
+    images: ["/product-media/engine/bd-bd-built-duramax-lb7-injector-stock-stockplus-0986435502-chevy-gmc-200-1725502/1.webp"],
+    description: `BD-Built Duramax LB7 Injector Stock/StockPlus (0986435502) Chevy/GMC 2001–2004, stock / premium, BD part 1725502.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1725502, the stock / premium option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CR Injectors
+Quantity: One injector, sold individually
+Option: Stock / Premium
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: 1725502
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4224,
+    createdAt: 1789430400000,
+    name: "BD Diesel 2 Low UnLoc Chevy 2001–2014 2001–2014 2500–3500 4wd / 2001–2013 1500 4wd — 1030710",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030710.
+    price: 194.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030710",
+    fitment: "2001–2002 Chevrolet Silverado 1500, Silverado 1500 HD, Silverado 2500 HD and Silverado 3500; and 2001 GMC Sierra 1500, Sierra 1500 HD, Sierra 2500 HD and Sierra 3500 (4.3L, 4.8L, 5.3L, 6.0L, 6.6L, 8.1L). BD list this part for 2001–2014; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-chevy-2001-2014-2001-2014-2500-3500-4wd-2001-2013-1500-4wd",
+    thumbnail: "/product-media/electronics/bd-2-low-unloc-chevy-2001-2014-2001-2014-2500-3500-4wd-2001-2013-1500-4wd-1030710/1.webp",
+    images: ["/product-media/electronics/bd-2-low-unloc-chevy-2001-2014-2001-2014-2500-3500-4wd-2001-2013-1500-4wd-1030710/1.webp"],
+    description: `2 Low UnLoc Chevy 2001–2014 2001–2014 2500–3500 4wd / 2001–2013 1500 4wd, BD part 1030710.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1030710.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: 2 Low
+Application: 2001–2002 Chevrolet Silverado 1500, Silverado 1500 HD, Silverado 2500 HD and Silverado 3500; and 2001 GMC Sierra 1500, Sierra 1500 HD, Sierra 2500 HD and Sierra 3500 (4.3L, 4.8L, 5.3L, 6.0L, 6.6L, 8.1L)
+BD catalogue range: 2001–2014
+Warranty: 12 months
+Part number: 1030710
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4225,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Ford E4OD Transmission & Converter Package - 1995–1997, 2WD — 1064422SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064422SM.
+    price: 5294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064422SM",
+    fitment: "1995–1996 Ford F-250; 1995–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-e4od-transmission-converter-package-1995-1997-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-ford-e4od-transmission-converter-package-1995-1997-1064422sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-ford-e4od-transmission-converter-package-1995-1997-1064422sm/1.webp"],
+    description: `TowMaster Ford E4OD Transmission & Converter Package - 1995–1997, 2wd, BD part 1064422SM.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064422SM, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: TowMaster
+Option: 2WD
+Application: 1995–1996 Ford F-250; 1995–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+Core charge: $1,800, refundable
+Warranty: 36 months
+Part number: 1064422SM
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4226,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster RAM 68RFE Transmission RAM 6.7L Cummins 2019–2024, 2WD — 1064302",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064302.
+    price: 4655,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064302",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). 2WD option.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-ram-68rfe-transmission-ram-6-7l-cummins-2019-2022-4wd",
+    thumbnail: "/product-media/transmission/bd-roadmaster-ram-68rfe-transmission-ram-6-7l-cummins-2019-2024-1064302/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-ram-68rfe-transmission-ram-6-7l-cummins-2019-2024-1064302/1.webp"],
+    description: `Roadmaster RAM 68RFE Transmission RAM 6.7L Cummins 2019–2024, 2wd, BD part 1064302.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD supply this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1064302, the 2wd option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Transmissions
+Series: Roadmaster
+Option: 2WD
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $1,800, refundable
+Warranty: 24 months
+Part number: 1064302
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4227,
+    createdAt: 1789430400000,
+    name: "BD Diesel Venom CP3 Conversion Kit with Standard Pump - Chevy/GMC Duramax 6.6L 2011–2016 2500/3500, Kit w/stock CP3 Pump — 1050496",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050496.
+    price: 1974.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050496",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). Kit w/stock CP3 Pump option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/venom-cp3-conversion-kit-c-w-standard-pump-chevy-gmc-duramax-6-6l-2011-2016-2500-3500",
+    thumbnail: "/product-media/engine/bd-venom-cp3-conversion-kit-with-standard-pump-chevy-gmc-duramax-6-6l-201-1050496/1.webp",
+    images: ["/product-media/engine/bd-venom-cp3-conversion-kit-with-standard-pump-chevy-gmc-duramax-6-6l-201-1050496/1.webp"],
+    description: `Venom CP3 Conversion Kit with Standard Pump - Chevy/GMC Duramax 6.6L 2011–2016 2500/3500, kit w/stock cp3 pump, BD part 1050496.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1050496, the kit w/stock cp3 pump option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Venom CP3
+Option: Kit w/stock CP3 Pump
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Warranty: 12 months
+Part number: 1050496
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4228,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (4-pack) — 1050458",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050458.
+    price: 168.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050458",
+    fitment: "2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L). BD list this part for 2017–2022; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-4-pack",
+    thumbnail: "/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-4-pack-1050458/1.webp",
+    images: ["/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-4-pack-1050458/1.webp"],
+    description: `Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (4-pack), BD part 1050458.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1050458.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Injector Electrical
+Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
+BD catalogue range: 2017–2022
+Warranty: 12 months
+Part number: 1050458
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4229,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (single) — 1050457",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050457.
+    price: 44.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050457",
+    fitment: "2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L). BD list this part for 2017–2022; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-single",
+    thumbnail: "/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-single-1050457/1.webp",
+    images: ["/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-single-1050457/1.webp"],
+    description: `Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (single), BD part 1050457.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1050457.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Injector Electrical
+Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
+BD catalogue range: 2017–2022
+Warranty: 12 months
+Part number: 1050457
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4230,
+    createdAt: 1789430400000,
+    name: "BD Diesel PMD (Grey) Extension Cable 72-inch - Chevy/GMC 6.5L 1994–2000, Grey / 72 inches — 1036533",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036533.
+    price: 61.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1036533",
+    fitment: "1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L). BD list this part for 1994–2000; the years above are the ones tagged per model on their own listing. Grey / 72 inches option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/pmd-grey-extension-cable-72-inch-chevy-6-5l-1994-2000",
+    thumbnail: "/product-media/electronics/bd-pmd-grey-extension-cable-72-inch-chevy-gmc-6-5l-1994-2000-1036533/1.webp",
+    images: ["/product-media/electronics/bd-pmd-grey-extension-cable-72-inch-chevy-gmc-6-5l-1994-2000-1036533/1.webp"],
+    description: `PMD (Grey) Extension Cable 72-inch - Chevy/GMC 6.5L 1994–2000, grey / 72 inches, BD part 1036533.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1036533, the grey / 72 inches option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PMD
+Option: Grey / 72 inches
+Application: 1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L)
+BD catalogue range: 1994–2000
+Warranty: 12 months
+Part number: 1036533
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4231,
+    createdAt: 1789430400000,
+    name: "BD Diesel PMD (Black) Extension Cable 40-inch - Chevy/GMC 6.5L 1994–2000, Black / 40 inches — 1036530",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036530.
+    price: 57.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1036530",
+    fitment: "1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L). BD list this part for 1994–2000; the years above are the ones tagged per model on their own listing. Black / 40 inches option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/pmd-black-extension-cable-40-inch-chevy-6-5l-1994-2000",
+    thumbnail: "/product-media/electronics/bd-pmd-black-extension-cable-40-inch-chevy-gmc-6-5l-1994-2000-1036530/1.webp",
+    images: ["/product-media/electronics/bd-pmd-black-extension-cable-40-inch-chevy-gmc-6-5l-1994-2000-1036530/1.webp"],
+    description: `PMD (Black) Extension Cable 40-inch - Chevy/GMC 6.5L 1994–2000, black / 40 inches, BD part 1036530.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1036530, the black / 40 inches option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PMD
+Option: Black / 40 inches
+Application: 1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L)
+BD catalogue range: 1994–2000
+Warranty: 12 months
+Part number: 1036530
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4232,
+    createdAt: 1789430400000,
+    name: "BD Diesel Electronic Exhaust Brake 5.0in RAM 2500/3500 6.7L Cummins 2007.5-2012 — 1027347",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027347.
+    price: 1077.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1027347",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/electronic-exhaust-brake-5-0in-ram-2500-3500-6-7l-cummins-2007-5-2017",
+    thumbnail: "/product-media/engine/bd-electronic-exhaust-brake-5-0in-ram-2500-3500-6-7l-cummins-2007-5-2012-1027347/1.webp",
+    images: ["/product-media/engine/bd-electronic-exhaust-brake-5-0in-ram-2500-3500-6-7l-cummins-2007-5-2012-1027347/1.webp"],
+    description: `Electronic Exhaust Brake 5.0in RAM 2500/3500 6.7L Cummins 2007.5-2012, BD part 1027347.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1027347.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 24 months
+Part number: 1027347
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4233,
+    createdAt: 1789430400000,
+    name: "BD Diesel Passenger Side Up-pipe Chevy/GMC LB7 Duramax 2001–2004 — 1043803",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043803.
+    price: 299.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1043803",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-passenger-side-uppipe-chevy-gmc-lb7-duramax-2001-2004",
+    thumbnail: "/product-media/turbocharger/bd-passenger-side-up-pipe-chevy-gmc-lb7-duramax-2001-2004-1043803/1.webp",
+    images: ["/product-media/turbocharger/bd-passenger-side-up-pipe-chevy-gmc-lb7-duramax-2001-2004-1043803/1.webp"],
+    description: `Passenger Side Up-pipe Chevy/GMC LB7 Duramax 2001–2004, BD part 1043803.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1043803.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpPipes
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Warranty: 12 months
+Part number: 1043803
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4234,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injection Pump Stock Exchange CP3 Chevy LBZ/LMM Duramax 2006–2010 — 1050112",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050112.
+    price: 840.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050112",
+    fitment: "2006–2010 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2010 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 Chevrolet Silverado 3500 HD; and 2007–2010 GMC Sierra 3500 HD (6.6L).",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-injection-pump-stock-exchange-cp3chevy-2006-2010-lbz-lmm",
+    thumbnail: "/product-media/engine/bd-injection-pump-stock-exchange-cp3-chevy-lbz-lmm-duramax-2006-2010-1050112/1.webp",
+    images: ["/product-media/engine/bd-injection-pump-stock-exchange-cp3-chevy-lbz-lmm-duramax-2006-2010-1050112/1.webp"],
+    description: `Injection Pump Stock Exchange CP3 Chevy LBZ/LMM Duramax 2006–2010, BD part 1050112.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050112.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CP3 Pumps
+Application: 2006–2010 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2010 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 Chevrolet Silverado 3500 HD; and 2007–2010 GMC Sierra 3500 HD (6.6L)
+Core charge: $300, refundable
+Warranty: 12 months
+Part number: 1050112
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4235,
+    createdAt: 1789430400000,
+    name: "Bosch 6.7L Cummins Common Rail Supply Connector Tube - Cummins 6.7L Dodge 2007–2018 — F00RC00647",
+    category: "electronics",
+    brand: "bosch",
+    // bddiesel listing price for F00RC00647.
+    price: 84.56,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F00RC00647",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). BD list this part for 2007–2018; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bosch-6-7l-cummins-common-rail-supply-connector-tube-cummins-6-7l-dodge-2007-2018",
+    thumbnail: "/product-media/electronics/bd-bosch-6-7l-cummins-common-rail-supply-connector-tube-cummins-6-7l-dodg-f00rc00647/1.webp",
+    images: ["/product-media/electronics/bd-bosch-6-7l-cummins-common-rail-supply-connector-tube-cummins-6-7l-dodg-f00rc00647/1.webp"],
+    description: `Bosch 6.7L Cummins Common Rail Supply Connector Tube - Cummins 6.7L Dodge 2007–2018, Bosch part F00RC00647.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part F00RC00647.
+
+Specifications
+
+Manufacturer: Bosch
+Product: Bosch
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+BD catalogue range: 2007–2018
+Part number: F00RC00647
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4236,
+    createdAt: 1789430400000,
+    name: "BD Diesel Cold Side Intercooler Pipe Kit Ford 6.7L Power Stroke 2011–2016 — 1047038",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047038.
+    price: 346.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1047038",
+    fitment: "2011–2016 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/cac-intake-pipe-upgrade-ford-6-7l-powerstroke-2011-2016",
+    thumbnail: "/product-media/turbocharger/bd-cold-side-intercooler-pipe-kit-ford-6-7l-power-stroke-2011-2016-1047038/1.webp",
+    images: ["/product-media/turbocharger/bd-cold-side-intercooler-pipe-kit-ford-6-7l-power-stroke-2011-2016-1047038/1.webp"],
+    description: `Cold Side Intercooler Pipe Kit Ford 6.7L Power Stroke 2011–2016, BD part 1047038.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1047038.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Intake Pipe
+Application: 2011–2016 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
+Warranty: 12 months
+Part number: 1047038
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4237,
+    createdAt: 1789430400000,
+    name: "BD Diesel Duramax CP4 Pump - Chevy 2011–2016 6.6L LGM/LML — 0986437421",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 0986437421.
+    price: 724.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "0986437421",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    coreCharge: "$240 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-cp4-pump-chevy-2011-2016-6-6l-lgm-lml",
+    thumbnail: "/product-media/engine/bd-duramax-cp4-pump-chevy-2011-2016-6-6l-lgm-lml-0986437421/1.webp",
+    images: ["/product-media/engine/bd-duramax-cp4-pump-chevy-2011-2016-6-6l-lgm-lml-0986437421/1.webp"],
+    description: `Duramax CP4 Pump - Chevy 2011–2016 6.6L LGM/LML, BD part 0986437421.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $240 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 0986437421.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Common Rail Pumps
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Core charge: $240, refundable
+Warranty: 12 months
+Part number: 0986437421
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4238,
+    createdAt: 1789430400000,
+    name: "BD Diesel Venom Lift Pump Replacement Filter Dual-Pack - Fuel & Water Separator — 1050341",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050341.
+    price: 60.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050341",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission; 2001–2003 Chevrolet Silverado 2500 HD; 2001–2002 Chevrolet Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (5.9L, 6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/venom-lift-pump-replacement-filter-dual-pack-fuel-water-separator",
+    thumbnail: "/product-media/engine/bd-venom-lift-pump-replacement-filter-dual-pack-fuel-water-separator-1050341/1.webp",
+    images: ["/product-media/engine/bd-venom-lift-pump-replacement-filter-dual-pack-fuel-water-separator-1050341/1.webp"],
+    description: `Venom Lift Pump Replacement Filter Dual-Pack - Fuel & Water Separator, BD part 1050341.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1050341.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Venom
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission; 2001–2003 Chevrolet Silverado 2500 HD; 2001–2002 Chevrolet Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (5.9L, 6.6L)
+Part number: 1050341
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4239,
+    createdAt: 1789430400000,
+    name: "BD Diesel Venom Fuel Lift Pump with Filter & Separator Chevy 6.6L Duramax 2001–2010 — 1050322",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050322.
+    price: 853.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050322",
+    fitment: "2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). BD list this part for 2001–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/venom-duramax-fuel-lift-pump-c-w-filter-separator-chevy-2001-2010-6-6l",
+    thumbnail: "/product-media/engine/bd-venom-fuel-lift-pump-with-filter-separator-chevy-6-6l-duramax-2001-201-1050322/1.webp",
+    images: ["/product-media/engine/bd-venom-fuel-lift-pump-with-filter-separator-chevy-6-6l-duramax-2001-201-1050322/1.webp"],
+    description: `Venom Fuel Lift Pump with Filter & Separator Chevy 6.6L Duramax 2001–2010, BD part 1050322.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1050322.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Venom Lift Pump
+Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+BD catalogue range: 2001–2010
+Warranty: 24 months
+Part number: 1050322
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4240,
+    createdAt: 1789430400000,
+    name: "BD Diesel Threaded Filter Adapter Dodge 6.7L Cummins 68RFE 2007.5-2024 — 1030374",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030374.
+    price: 37.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030374",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-threaded-filter-adapter",
+    thumbnail: "/product-media/transmission/bd-threaded-filter-adapter-dodge-6-7l-cummins-68rfe-2007-5-2024-1030374/1.webp",
+    images: ["/product-media/transmission/bd-threaded-filter-adapter-dodge-6-7l-cummins-68rfe-2007-5-2024-1030374/1.webp"],
+    description: `Threaded Filter Adapter Dodge 6.7L Cummins 68RFE 2007.5-2024, BD part 1030374.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030374.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Parts
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+Warranty: 12 months
+Part number: 1030374
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4241,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector, Stock - DI Code AE #8-Cylinder (1833640C1) Ford 7.3L Power Stroke 1999.5-2003 — UP7003-PP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for UP7003-PP.
+    price: 257.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "UP7003-PP",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L). Sold individually — one injector, not a set.",
+    coreCharge: "$125 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-stock-ford-1999-5-2003-7-3l-di-code-ae-8-cylinder-1833640c1",
+    thumbnail: "/product-media/engine/bd-injector-stock-di-code-ae-8-cylinder-1833640c1-ford-7-3l-power-stroke--up7003pp/1.webp",
+    images: ["/product-media/engine/bd-injector-stock-di-code-ae-8-cylinder-1833640c1-ford-7-3l-power-stroke--up7003pp/1.webp"],
+    description: `Injector, Stock - DI Code AE #8-Cylinder (1833640C1) Ford 7.3L Power Stroke 1999.5-2003, BD part UP7003-PP.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $125 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part UP7003-PP.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpTime
+Quantity: One injector, sold individually
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Core charge: $125, refundable
+Warranty: 24 months
+Part number: UP7003-PP
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4242,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector, Stock -DI Code AD Cylinders 1-7 (1831489C1) Ford 7.3L Power Stroke 1999.5-2003 — UP7002-PP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for UP7002-PP.
+    price: 257.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "UP7002-PP",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L). Sold individually — one injector, not a set.",
+    coreCharge: "$125 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-stock-ford-1999-5-2003-7-3l-di-code-ad-cylinders-1-7-1831489c1",
+    thumbnail: "/product-media/engine/bd-injector-stock-di-code-ad-cylinders-1-7-1831489c1-ford-7-3l-power-stro-up7002pp/1.webp",
+    images: ["/product-media/engine/bd-injector-stock-di-code-ad-cylinders-1-7-1831489c1-ford-7-3l-power-stro-up7002pp/1.webp"],
+    description: `Injector, Stock -DI Code AD Cylinders 1-7 (1831489C1) Ford 7.3L Power Stroke 1999.5-2003, BD part UP7002-PP.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $125 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part UP7002-PP.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpTime
+Quantity: One injector, sold individually
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Core charge: $125, refundable
+Warranty: 24 months
+Part number: UP7002-PP
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4243,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector - DI Code AB (1825125C1) Ford 7.3L Power Stroke 1996–1998.5 — UP7000-PP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for UP7000-PP.
+    price: 257.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "UP7000-PP",
+    fitment: "1996 Ford F-250; 1996–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L). Sold individually — one injector, not a set. BD list this part for 1996–1998; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "$125 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-ford-1996-1998-5-7-3l-di-code-ab-1825125c1",
+    thumbnail: "/product-media/engine/bd-injector-di-code-ab-1825125c1-ford-7-3l-power-stroke-1996-1998-5-up7000pp/1.webp",
+    images: ["/product-media/engine/bd-injector-di-code-ab-1825125c1-ford-7-3l-power-stroke-1996-1998-5-up7000pp/1.webp"],
+    description: `Injector - DI Code AB (1825125C1) Ford 7.3L Power Stroke 1996–1998.5, BD part UP7000-PP.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $125 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part UP7000-PP.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpTime
+Quantity: One injector, sold individually
+Application: 1996 Ford F-250; 1996–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+BD catalogue range: 1996–1998
+Core charge: $125, refundable
+Warranty: 24 months
+Part number: UP7000-PP
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4244,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector - DI Code AA (1821836C2) Ford 7.3L Power Stroke 1994–1997 — UP6999-PP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for UP6999-PP.
+    price: 257.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "UP6999-PP",
+    fitment: "1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L). Sold individually — one injector, not a set.",
+    coreCharge: "$125 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-ford-1994-1997-7-3l-di-code-aa-1821836c2",
+    thumbnail: "/product-media/engine/bd-injector-di-code-aa-1821836c2-ford-7-3l-power-stroke-1994-1997-up6999pp/1.webp",
+    images: ["/product-media/engine/bd-injector-di-code-aa-1821836c2-ford-7-3l-power-stroke-1994-1997-up6999pp/1.webp"],
+    description: `Injector - DI Code AA (1821836C2) Ford 7.3L Power Stroke 1994–1997, BD part UP6999-PP.
+
+An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
+
+BD assemble their injectors using OE procedures and calibrate and test every one, so what goes back in behaves like the set it is joining rather than like an outlier.
+
+BD's own listing states the price is for a single injector, so order the number your engine needs — one to replace a failure, or the full set.
+
+BD supply this as an exchange unit: a $125 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part UP6999-PP.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpTime
+Quantity: One injector, sold individually
+Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+Core charge: $125, refundable
+Warranty: 24 months
+Part number: UP6999-PP
+
+Highlights
+
+Sold individually — replace one or all
+Calibrated and tested to OE procedures
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4245,
+    createdAt: 1789430400000,
+    name: "BD Diesel Replacement Filter Cartridge - Coolant Filter - Ford 6.0L Power Stroke 2003–2007 — P554685",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for P554685.
+    price: 27.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "P554685",
+    fitment: "2003–2005 Ford Excursion; 2003–2007 Ford F-250 Super Duty and F-350 Super Duty; and 2004–2007 Ford E-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/replacement-filter-cartridge-coolant-filter-ford-6-0l-2003-2007",
+    thumbnail: "/product-media/electronics/bd-replacement-filter-cartridge-coolant-filter-ford-6-0l-power-stroke-200-p554685/1.webp",
+    images: ["/product-media/electronics/bd-replacement-filter-cartridge-coolant-filter-ford-6-0l-power-stroke-200-p554685/1.webp"],
+    description: `Replacement Filter Cartridge - Coolant Filter - Ford 6.0L Power Stroke 2003–2007, BD part P554685.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part P554685.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: FICM
+Application: 2003–2005 Ford Excursion; 2003–2007 Ford F-250 Super Duty and F-350 Super Duty; and 2004–2007 Ford E-350 Super Duty (6.0L)
+Warranty: 12 months
+Part number: P554685
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4246,
+    createdAt: 1789430400000,
+    name: "BD Diesel Bully Dog Unlock Cable - Dodge 2013-up — BUL42214",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for BUL42214.
+    price: 50,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BUL42214",
+    fitment: "2013–2017 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bully-dog-unlock-cable-dodge-2013-up",
+    thumbnail: "/product-media/electronics/bd-bully-dog-unlock-cable-dodge-2013-up-bul42214/1.webp",
+    images: ["/product-media/electronics/bd-bully-dog-unlock-cable-dodge-2013-up-bul42214/1.webp"],
+    description: `Bully Dog Unlock Cable - Dodge 2013-up, BD part BUL42214.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part BUL42214.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Bully Dog
+Application: 2013–2017 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: BUL42214
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4247,
+    createdAt: 1789430400000,
+    name: "High Pressure Oil Pump Ford 6.0L DI 2003–2004 Bostech — BOSHPOP-123X",
+    category: "engine",
+    brand: "bostech",
+    // bddiesel listing price for BOSHPOP-123X.
+    price: 679.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BOSHPOP-123X",
+    fitment: "2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-pressure-oil-pump-ford-6-0l-di-2003-2004-bostech",
+    thumbnail: "/product-media/engine/bd-high-pressure-oil-pump-ford-6-0l-di-2003-2004-bostech-boshpop123x/1.webp",
+    images: ["/product-media/engine/bd-high-pressure-oil-pump-ford-6-0l-di-2003-2004-bostech-boshpop123x/1.webp"],
+    description: `High Pressure Oil Pump Ford 6.0L DI 2003–2004 Bostech, Bostech part BOSHPOP-123X.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part BOSHPOP-123X.
+
+Specifications
+
+Manufacturer: Bostech
+Product: Bostech
+Application: 2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Core charge: $150, refundable
+Part number: BOSHPOP-123X
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4248,
+    createdAt: 1789430400000,
+    name: "High Pressure Oil Pump Ford 6.0L DI 2004.5-2008 Bostech — BOSHPOP-122X",
+    category: "engine",
+    brand: "bostech",
+    // bddiesel listing price for BOSHPOP-122X.
+    price: 579.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BOSHPOP-122X",
+    fitment: "2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    coreCharge: "$200 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-pressure-oil-pump-ford-6-0l-di-2004-5-2008-bostech",
+    thumbnail: "/product-media/engine/bd-high-pressure-oil-pump-ford-6-0l-di-2004-5-2008-bostech-boshpop122x/1.webp",
+    images: ["/product-media/engine/bd-high-pressure-oil-pump-ford-6-0l-di-2004-5-2008-bostech-boshpop122x/1.webp"],
+    description: `High Pressure Oil Pump Ford 6.0L DI 2004.5-2008 Bostech, Bostech part BOSHPOP-122X.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $200 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part BOSHPOP-122X.
+
+Specifications
+
+Manufacturer: Bostech
+Product: Bostech
+Application: 2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Core charge: $200, refundable
+Part number: BOSHPOP-122X
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4249,
+    createdAt: 1789430400000,
+    name: "High Press Oil Pump Ford 7.3L DI 1999.5-2003 Bostech — BOSHPOP-008X",
+    category: "engine",
+    brand: "bostech",
+    // bddiesel listing price for BOSHPOP-008X.
+    price: 479.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BOSHPOP-008X",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-press-oil-pump-ford-7-3l-di-1999-5-2003-bostech",
+    thumbnail: "/product-media/engine/bd-high-press-oil-pump-ford-7-3l-di-1999-5-2003-bostech-boshpop008x/1.webp",
+    images: ["/product-media/engine/bd-high-press-oil-pump-ford-7-3l-di-1999-5-2003-bostech-boshpop008x/1.webp"],
+    description: `High Press Oil Pump Ford 7.3L DI 1999.5-2003 Bostech, Bostech part BOSHPOP-008X.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part BOSHPOP-008X.
+
+Specifications
+
+Manufacturer: Bostech
+Product: Bostech
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Core charge: $150, refundable
+Part number: BOSHPOP-008X
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4250,
+    createdAt: 1789430400000,
+    name: "Injector, Stock - Ford 6.4L Power Stroke 2008–2010 — AP64900",
+    category: "electronics",
+    brand: "alliant-power",
+    // bddiesel listing price for AP64900.
+    price: 318.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "AP64900",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    coreCharge: "$175 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-stock-ford-2008-2010-6-4l",
+    thumbnail: "/product-media/electronics/bd-injector-stock-ford-6-4l-power-stroke-2008-2010-ap64900/1.webp",
+    images: ["/product-media/electronics/bd-injector-stock-ford-6-4l-power-stroke-2008-2010-ap64900/1.webp"],
+    description: `Injector, Stock - Ford 6.4L Power Stroke 2008–2010, Alliant Power part AP64900.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD supply this as an exchange unit: a $175 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part AP64900.
+
+Specifications
+
+Manufacturer: Alliant Power
+Product: Alliant Power
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Core charge: $175, refundable
+Warranty: 24 months
+Part number: AP64900
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4251,
+    createdAt: 1789430400000,
+    name: "Stock Fuel Injector Ford 6.0L Power Stroke 2004–2007 (after 09/21/2003) — AP60901",
+    category: "electronics",
+    brand: "alliant-power",
+    // bddiesel listing price for AP60901.
+    price: 226.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "AP60901",
+    fitment: "2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/stock-6-0l-powerstroke-fuel-injector-ford-2004-2007-after-09-21-2003",
+    thumbnail: "/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2004-2007-after-09-21-2003-ap60901/1.webp",
+    images: ["/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2004-2007-after-09-21-2003-ap60901/1.webp"],
+    description: `Stock Fuel Injector Ford 6.0L Power Stroke 2004–2007 (after 09/21/2003), Alliant Power part AP60901.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part AP60901.
+
+Specifications
+
+Manufacturer: Alliant Power
+Product: Alliant Power
+Application: 2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: AP60901
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4252,
+    createdAt: 1789430400000,
+    name: "Stock Fuel Injector Ford 6.0L Power Stroke 2003–2004 (up to 09/21/2003) — AP60900",
+    category: "electronics",
+    brand: "alliant-power",
+    // bddiesel listing price for AP60900.
+    price: 226.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "AP60900",
+    fitment: "2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    coreCharge: "$150 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/stock-6-0l-powerstroke-fuel-injector-ford-2003-2004-up-to-09-21-2003",
+    thumbnail: "/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2003-2004-up-to-09-21-2003-ap60900/1.webp",
+    images: ["/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2003-2004-up-to-09-21-2003-ap60900/1.webp"],
+    description: `Stock Fuel Injector Ford 6.0L Power Stroke 2003–2004 (up to 09/21/2003), Alliant Power part AP60900.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part AP60900.
+
+Specifications
+
+Manufacturer: Alliant Power
+Product: Alliant Power
+Application: 2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Core charge: $150, refundable
+Warranty: 24 months
+Part number: AP60900
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4253,
+    createdAt: 1789430400000,
+    name: "Injector Seal Kit Ford 6.0L 2003–2008 — AP0002",
+    category: "electronics",
+    brand: "alliant-power",
+    // bddiesel listing price for AP0002.
+    price: 11.58,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AP0002",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L). BD list this part for 2003–2008; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-seal-kit-ford-6-0l-2003-2008",
+    thumbnail: "/product-media/electronics/bd-injector-seal-kit-ford-6-0l-2003-2008-ap0002/1.webp",
+    images: ["/product-media/electronics/bd-injector-seal-kit-ford-6-0l-2003-2008-ap0002/1.webp"],
+    description: `Injector Seal Kit Ford 6.0L 2003–2008, Alliant Power part AP0002.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part AP0002.
+
+Specifications
+
+Manufacturer: Alliant Power
+Product: Alliant Power
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+BD catalogue range: 2003–2008
+Part number: AP0002
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4254,
+    createdAt: 1789430400000,
+    name: "Exchange Turbo - Ford 2011–2014 6.7L Pick-up — 851824-5001",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 851824-5001.
+    price: 2350,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "851824-5001",
+    fitment: "2011–2014 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-exchange-ford-2011-2014-6-7l-f250-f350-f450",
+    thumbnail: "/product-media/turbocharger/bd-exchange-turbo-ford-2011-2014-6-7l-pick-up-8518245001/1.webp",
+    images: ["/product-media/turbocharger/bd-exchange-turbo-ford-2011-2014-6-7l-pick-up-8518245001/1.webp"],
+    description: `Exchange Turbo - Ford 2011–2014 6.7L Pick-up, Garrett Motion part 851824-5001.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 851824-5001.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2011–2014 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Warranty: 12 months
+Part number: 851824-5001
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4255,
+    createdAt: 1789430400000,
+    name: "Vane Control Valve Solenoid, Garrett VGT - Ford 2003–2007 6.0L Power Stroke – GM 2004–2016 6.6L Duramax (OE# 5C3Z6F089BA) — 792593-0001",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 792593-0001.
+    price: 249.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "792593-0001",
+    fitment: "2003–2005 Ford Excursion, F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; 2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2004–2005 Ford E-350 and E-450; 2004–2005 GMC Sierra 2500 HD and Sierra 3500 HD; and 2006 Chevrolet Express 2500 and Express 3500 (6.0L, 6.6L). BD list this part for 2003–2016; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/vane-control-valve-soleniod-garrett-vgt-ford-2003-2007-6-0l-oe-5c3z6f089ba",
+    thumbnail: "/product-media/turbocharger/bd-vane-control-valve-solenoid-garrett-vgt-ford-2003-2007-6-0l-power-stro-7925930001/1.webp",
+    images: ["/product-media/turbocharger/bd-vane-control-valve-solenoid-garrett-vgt-ford-2003-2007-6-0l-power-stro-7925930001/1.webp"],
+    description: `Vane Control Valve Solenoid, Garrett VGT - Ford 2003–2007 6.0L Power Stroke – GM 2004–2016 6.6L Duramax (OE# 5C3Z6F089BA), Garrett Motion part 792593-0001.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 792593-0001.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2003–2005 Ford Excursion, F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; 2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2004–2005 Ford E-350 and E-450; 2004–2005 GMC Sierra 2500 HD and Sierra 3500 HD; and 2006 Chevrolet Express 2500 and Express 3500 (6.0L, 6.6L)
+BD catalogue range: 2003–2016
+Part number: 792593-0001
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4256,
+    createdAt: 1789430400000,
+    name: "Vane Position Sensor, Garrett GT37 - Chevy Duramax 6.6L 2004.5-2016 (LLY Require Adapter Cable 771864–0001) — 763527-0712",
+    category: "turbocharger",
+    brand: "garrett",
+    // bddiesel listing price for 763527-0712.
+    price: 399.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "763527-0712",
+    fitment: "2004–2007 Chevrolet Silverado 2500 HD; 2004 Chevrolet Silverado 2500; 2004–2006 Chevrolet Silverado 3500; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; 2004 GMC Sierra 2500; 2006–2007 Chevrolet Express 2500, Express 3500, Kodiac C4500 and Kodiac C5500; 2006 GMC Savana 2500, Savana 3500, Topkick C4500 and Topkick C5500; and 2007 Chevrolet Silverado 2500 HD Classic and Silverado 3500 Classic (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/vane-position-sensor-garrett-gt37-chevy-duramax-6-6l-2004-5-2010-lly-require-adapter-cable-771864-0001",
+    thumbnail: "/product-media/turbocharger/bd-vane-position-sensor-garrett-gt37-chevy-duramax-6-6l-2004-5-2016-lly-r-7635270712/1.webp",
+    images: ["/product-media/turbocharger/bd-vane-position-sensor-garrett-gt37-chevy-duramax-6-6l-2004-5-2016-lly-r-7635270712/1.webp"],
+    description: `Vane Position Sensor, Garrett GT37 - Chevy Duramax 6.6L 2004.5-2016 (LLY Require Adapter Cable 771864–0001), Garrett Motion part 763527-0712.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 763527-0712.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Product: Garrett
+Application: 2004–2007 Chevrolet Silverado 2500 HD; 2004 Chevrolet Silverado 2500; 2004–2006 Chevrolet Silverado 3500; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; 2004 GMC Sierra 2500; 2006–2007 Chevrolet Express 2500, Express 3500, Kodiac C4500 and Kodiac C5500; 2006 GMC Savana 2500, Savana 3500, Topkick C4500 and Topkick C5500; and 2007 Chevrolet Silverado 2500 HD Classic and Silverado 3500 Classic (6.6L)
+Part number: 763527-0712
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4257,
+    createdAt: 1789430400000,
+    name: "BD Diesel Dodge Valve Body Transducer 1996–1999 47RE — 56041403AA",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 56041403AA.
+    price: 143,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "56041403AA",
+    fitment: "1996–1999 Dodge / Ram 2500 and 3500; and 1998–1999 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-valve-body-transducer-1996-1999-47re",
+    thumbnail: "/product-media/transmission/bd-dodge-valve-body-transducer-1996-1999-47re-56041403aa/1.webp",
+    images: ["/product-media/transmission/bd-dodge-valve-body-transducer-1996-1999-47re-56041403aa/1.webp"],
+    description: `Dodge Valve Body Transducer 1996–1999 47RE, BD part 56041403AA.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 56041403AA.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Parts
+Application: 1996–1999 Dodge / Ram 2500 and 3500; and 1998–1999 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 56041403AA
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4258,
+    createdAt: 1789430400000,
+    name: "BD Diesel CCV Replacement Filter Element — 1302171",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1302171.
+    price: 103.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1302171",
+    fitment: "1999–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ccv-replacement-filter-element",
+    thumbnail: "/product-media/engine/bd-ccv-replacement-filter-element-1302171/1.webp",
+    images: ["/product-media/engine/bd-ccv-replacement-filter-element-1302171/1.webp"],
+    description: `CCV Replacement Filter Element, BD part 1302171.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1302171.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CCV Filter
+Application: 1999–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
+Warranty: 12 months
+Part number: 1302171
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4259,
+    createdAt: 1789430400000,
+    name: "BD Diesel Cool Down Timer Kit v2.0 — 1081160",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1081160.
+    price: 254.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1081160",
+    fitment: "1994–2000 Dodge / Ram 2500; 1994–1999 Dodge / Ram 3500; 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; 1998–2000 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1999 Ford F-250 Super Duty and F-350 Super Duty (5.9L, 7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/cool-down-timer-kit-v2-0",
+    thumbnail: "/product-media/electronics/bd-cool-down-timer-kit-v2-0-1081160/1.webp",
+    images: ["/product-media/electronics/bd-cool-down-timer-kit-v2-0-1081160/1.webp"],
+    description: `Cool Down Timer Kit v2.0, BD part 1081160.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1081160.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Cool Down Timer
+Application: 1994–2000 Dodge / Ram 2500; 1994–1999 Dodge / Ram 3500; 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; 1998–2000 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1999 Ford F-250 Super Duty and F-350 Super Duty (5.9L, 7.3L)
+Warranty: 12 months
+Part number: 1081160
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4260,
+    createdAt: 1789430400000,
+    name: "BD Diesel Low Fuel Pressure Light & Alarm Kit Dodge 24-valve 5.9L Cummins 1998–2007 — 1081130",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1081130.
+    price: 98.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1081130",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-low-fuel-pressure-light-alarm-kit-dodge-1998-2007-24-valve",
+    thumbnail: "/product-media/electronics/bd-low-fuel-pressure-light-alarm-kit-dodge-24-valve-5-9l-cummins-1998-200-1081130/1.webp",
+    images: ["/product-media/electronics/bd-low-fuel-pressure-light-alarm-kit-dodge-24-valve-5-9l-cummins-1998-200-1081130/1.webp"],
+    description: `Low Fuel Pressure Light & Alarm Kit Dodge 24-valve 5.9L Cummins 1998–2007, BD part 1081130.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 1081130.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Low Pressure Alarm
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
+Warranty: 12 months
+Part number: 1081130
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4261,
+    createdAt: 1789430400000,
+    name: "BD Diesel HI5 Torque Converter Rebuild Kit Dodge Cummins 47RE/48RE 1994–2007 — 1071269",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1071269.
+    price: 284.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1071269",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/hi5-torque-converter-rebuild-kit-dodge-1994-2007-47re-48re",
+    thumbnail: "/product-media/transmission/bd-hi5-torque-converter-rebuild-kit-dodge-cummins-47re-48re-1994-2007-1071269/1.webp",
+    images: ["/product-media/transmission/bd-hi5-torque-converter-rebuild-kit-dodge-cummins-47re-48re-1994-2007-1071269/1.webp"],
+    description: `HI5 Torque Converter Rebuild Kit Dodge Cummins 47RE/48RE 1994–2007, BD part 1071269.
+
+BD build complete transmissions rather than selling parts to fix one, because the pieces that fail in a stock transmission fail together and replacing them one at a time is how a rebuild turns into two.
+
+It is the transmission on its own, for a truck whose converter is sound or already chosen.
+
+BD list this as part 1071269.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Torque Converters
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1071269
+
+Highlights
+
+Complete built transmission
+BD Diesel Performance
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4262,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Power Injection Pump P7100 400hp 3200rpm Dodge Cummins 5-speed Manual Transmission 1996–1998 — 1052913",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1052913.
+    price: 4303.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1052913",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-power-injection-pump-p7100-400hp-3200rpm-dodge-1996-1998-5spd-manual",
+    thumbnail: "/product-media/engine/bd-high-power-injection-pump-p7100-400hp-3200rpm-dodge-cummins-5-speed-ma-1052913/1.webp",
+    images: ["/product-media/engine/bd-high-power-injection-pump-p7100-400hp-3200rpm-dodge-cummins-5-speed-ma-1052913/1.webp"],
+    description: `High Power Injection Pump P7100 400hp 3200rpm Dodge Cummins 5-speed Manual Transmission 1996–1998, BD part 1052913.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1052913.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Part number: 1052913
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4263,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Power Injection Pump P7100 400hp 3200rpm Dodge Cummins Automatic Transmission 1996–1998 — 1052911",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1052911.
+    price: 4220,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1052911",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-power-injection-pump-p7100-400hp-3200rpm-dodge-1996-1998-auto-trans",
+    thumbnail: "/product-media/engine/bd-high-power-injection-pump-p7100-400hp-3200rpm-dodge-cummins-automatic--1052911/1.webp",
+    images: ["/product-media/engine/bd-high-power-injection-pump-p7100-400hp-3200rpm-dodge-cummins-automatic--1052911/1.webp"],
+    description: `High Power Injection Pump P7100 400hp 3200rpm Dodge Cummins Automatic Transmission 1996–1998, BD part 1052911.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1052911.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Part number: 1052911
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4264,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins 5-speed Manual Transmission 1996–1998 — 1051913",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1051913.
+    price: 3043.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1051913",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-power-injection-pump-p7100-300hp-3000rpm-dodge-1996-1998-5spd-manual",
+    thumbnail: "/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-5-speed-ma-1051913/1.webp",
+    images: ["/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-5-speed-ma-1051913/1.webp"],
+    description: `High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins 5-speed Manual Transmission 1996–1998, BD part 1051913.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1051913.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Part number: 1051913
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4265,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins Automatic Transmission 1996–1998 — 1051911",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1051911.
+    price: 3200.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1051911",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-power-injection-pump-p7100-300hp-3000rpm-dodge-1996-1998-auto-trans",
+    thumbnail: "/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-automatic--1051911/1.webp",
+    images: ["/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-automatic--1051911/1.webp"],
+    description: `High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins Automatic Transmission 1996–1998, BD part 1051911.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1051911.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Part number: 1051911
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4266,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins Automatic Transmission 1994–1995 — 1051854",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1051854.
+    price: 3043.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1051854",
+    fitment: "1994–1995 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-power-injection-pump-p7100-300hp-3000rpm-dodge-1994-1995-auto-trans",
+    thumbnail: "/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-automatic--1051854/1.webp",
+    images: ["/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-automatic--1051854/1.webp"],
+    description: `High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins Automatic Transmission 1994–1995, BD part 1051854.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1051854.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1995 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Part number: 1051854
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4267,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins 5-speed Manual Transmission 1994–1995 — 1051841",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1051841.
+    price: 3043.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1051841",
+    fitment: "1994–1995 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-power-injection-pump-p7100-300hp-3000rpm-dodge-1994-1995-5spd-manual",
+    thumbnail: "/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-5-speed-ma-1051841/1.webp",
+    images: ["/product-media/engine/bd-high-power-injection-pump-p7100-300hp-3000rpm-dodge-cummins-5-speed-ma-1051841/1.webp"],
+    description: `High Power Injection Pump P7100 300hp 3000rpm Dodge Cummins 5-speed Manual Transmission 1994–1995, BD part 1051841.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1051841.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1995 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Part number: 1051841
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4268,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Stock Exchange injection Pump Dodge Cummins 5-speed Manual Transmission 1996–1998 — 1050913",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050913.
+    price: 2647.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050913",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-stock-exchange-injection-pump-dodge-1996-1998-5spd-manual-trans",
+    thumbnail: "/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-5-speed-manual-trans-1050913/1.webp",
+    images: ["/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-5-speed-manual-trans-1050913/1.webp"],
+    description: `P7100 Stock Exchange injection Pump Dodge Cummins 5-speed Manual Transmission 1996–1998, BD part 1050913.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050913.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Warranty: 12 months
+Part number: 1050913
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4269,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Stock Exchange injection Pump Dodge Cummins Automatic Transmission 1996–1998 — 1050911",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050911.
+    price: 2517.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050911",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-stock-exchange-injection-pump-dodge-1996-1998-auto-trans",
+    thumbnail: "/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-automatic-transmissi-1050911/1.webp",
+    images: ["/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-automatic-transmissi-1050911/1.webp"],
+    description: `P7100 Stock Exchange injection Pump Dodge Cummins Automatic Transmission 1996–1998, BD part 1050911.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050911.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Warranty: 12 months
+Part number: 1050911
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4270,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Stock Exchange injection Pump Dodge Cummins Automatic Transmission 1994–1995 — 1050854",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050854.
+    price: 2596,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050854",
+    fitment: "1994–1995 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-stock-exchange-injection-pump-dodge-1994-1995-auto-trans",
+    thumbnail: "/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-automatic-transmissi-1050854/1.webp",
+    images: ["/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-automatic-transmissi-1050854/1.webp"],
+    description: `P7100 Stock Exchange injection Pump Dodge Cummins Automatic Transmission 1994–1995, BD part 1050854.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050854.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1995 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Warranty: 12 months
+Part number: 1050854
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4271,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Stock Exchange injection Pump Dodge Cummins 5-speed Manual Transmission 1994–1995 — 1050841",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050841.
+    price: 2660.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050841",
+    fitment: "1994–1995 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-stock-exchange-injection-pump-dodge-1994-1995-5-speed-manual",
+    thumbnail: "/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-5-speed-manual-trans-1050841/1.webp",
+    images: ["/product-media/engine/bd-p7100-stock-exchange-injection-pump-dodge-cummins-5-speed-manual-trans-1050841/1.webp"],
+    description: `P7100 Stock Exchange injection Pump Dodge Cummins 5-speed Manual Transmission 1994–1995, BD part 1050841.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050841.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1995 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $2,000, refundable
+Warranty: 12 months
+Part number: 1050841
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4272,
+    createdAt: 1789430400000,
+    name: "BD Diesel R900 12mm Duramax Stroker CP3 Injection Pump 6.6L Chevy Duramax 2001–2010 — 1050651",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050651.
+    price: 2547.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050651",
+    fitment: "2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). BD list this part for 2001–2010; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/r900-12mm-duramax-stroker-cp3-injection-pump",
+    thumbnail: "/product-media/engine/bd-r900-12mm-duramax-stroker-cp3-injection-pump-6-6l-chevy-duramax-2001-2-1050651/1.webp",
+    images: ["/product-media/engine/bd-r900-12mm-duramax-stroker-cp3-injection-pump-6-6l-chevy-duramax-2001-2-1050651/1.webp"],
+    description: `R900 12mm Duramax Stroker CP3 Injection Pump 6.6L Chevy Duramax 2001–2010, BD part 1050651.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050651.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CP3 Pumps
+Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+BD catalogue range: 2001–2010
+Core charge: $300, refundable
+Warranty: 12 months
+Part number: 1050651
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4273,
+    createdAt: 1789430400000,
+    name: "BD Diesel R900 12mm Stroker CP3 Injection Pump Dodge 5.9L/6.7L Cummins 2003–2018 — 1050551",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050551.
+    price: 2705.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050551",
+    fitment: "2003–2016 Dodge / Ram 2500; and 2003–2015 Dodge / Ram 3500 (5.9L, 6.7L). BD list this part for 2003–2018; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/r900-5-9l-6-7l-cummins-12mm-stroker-cp3-injection-pump",
+    thumbnail: "/product-media/engine/bd-r900-12mm-stroker-cp3-injection-pump-dodge-5-9l-6-7l-cummins-2003-2018-1050551/1.webp",
+    images: ["/product-media/engine/bd-r900-12mm-stroker-cp3-injection-pump-dodge-5-9l-6-7l-cummins-2003-2018-1050551/1.webp"],
+    description: `R900 12mm Stroker CP3 Injection Pump Dodge 5.9L/6.7L Cummins 2003–2018, BD part 1050551.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050551.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CP3 Pumps
+Application: 2003–2016 Dodge / Ram 2500; and 2003–2015 Dodge / Ram 3500 (5.9L, 6.7L)
+BD catalogue range: 2003–2018
+Core charge: $300, refundable
+Warranty: 12 months
+Part number: 1050551
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4274,
+    createdAt: 1789430400000,
+    name: "BD Diesel Stealth Cover for High Performance VP44 Injection Pump Dodge 24-valve 5.9L 1998.5-2002 — 1050201",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050201.
+    price: 80.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050201",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/vp44-stealth-pump-cover-kit-dodge-24-valve-1998-2002",
+    thumbnail: "/product-media/engine/bd-stealth-cover-for-high-performance-vp44-injection-pump-dodge-24-valve--1050201/1.webp",
+    images: ["/product-media/engine/bd-stealth-cover-for-high-performance-vp44-injection-pump-dodge-24-valve--1050201/1.webp"],
+    description: `Stealth Cover for High Performance VP44 Injection Pump Dodge 24-valve 5.9L 1998.5-2002, BD part 1050201.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1050201.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: VP44 Pumps
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1050201
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4275,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Performance VP44 Injection Pump Dodge 24-valve 5.9L Cummins 1998.5-2002 — 1050127HP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050127HP.
+    price: 2837.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050127HP",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    coreCharge: "$600 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-performance-dodge-24-valve-vp44-injection-pump-1998-5-2002-5-9l",
+    thumbnail: "/product-media/engine/bd-high-performance-vp44-injection-pump-dodge-24-valve-5-9l-cummins-1998--1050127hp/1.webp",
+    images: ["/product-media/engine/bd-high-performance-vp44-injection-pump-dodge-24-valve-5-9l-cummins-1998--1050127hp/1.webp"],
+    description: `High Performance VP44 Injection Pump Dodge 24-valve 5.9L Cummins 1998.5-2002, BD part 1050127HP.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $600 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050127HP.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: VP44 Pumps
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Core charge: $600, refundable
+Part number: 1050127HP
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4276,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injection Pump Stock Exchange CP3 Chevy LLY 6.6L Duramax 2004.5-2005 — 1050111",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050111.
+    price: 883.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050111",
+    fitment: "2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-injection-pump-stock-exchange-cp3chevy-2004-5-2005-6-6l-lly",
+    thumbnail: "/product-media/engine/bd-injection-pump-stock-exchange-cp3-chevy-lly-6-6l-duramax-2004-5-2005-1050111/1.webp",
+    images: ["/product-media/engine/bd-injection-pump-stock-exchange-cp3-chevy-lly-6-6l-duramax-2004-5-2005-1050111/1.webp"],
+    description: `Injection Pump Stock Exchange CP3 Chevy LLY 6.6L Duramax 2004.5-2005, BD part 1050111.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050111.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CP3 Pumps
+Application: 2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $300, refundable
+Warranty: 12 months
+Part number: 1050111
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4277,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injection Pump Stock Exchange CP3 Chevy LB7 6.6L Duramax 2001–2004 — 1050110",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050110.
+    price: 883.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050110",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-injection-pump-stock-exchange-cp3chevy-2001-2004-6-6l-lb7",
+    thumbnail: "/product-media/engine/bd-injection-pump-stock-exchange-cp3-chevy-lb7-6-6l-duramax-2001-2004-1050110/1.webp",
+    images: ["/product-media/engine/bd-injection-pump-stock-exchange-cp3-chevy-lb7-6-6l-duramax-2001-2004-1050110/1.webp"],
+    description: `Injection Pump Stock Exchange CP3 Chevy LB7 6.6L Duramax 2001–2004, BD part 1050110.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050110.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CP3 Pumps
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Core charge: $300, refundable
+Warranty: 12 months
+Part number: 1050110
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4278,
+    createdAt: 1789430400000,
+    name: "BD Diesel CP3 Injection Pump Stock Exchange Dodge 6.7L Cummins 2007.5-2018 — 1050106",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050106.
+    price: 840.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050106",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-cp3-injection-pump-stock-exchange",
+    thumbnail: "/product-media/engine/bd-cp3-injection-pump-stock-exchange-dodge-6-7l-cummins-2007-5-2018-1050106/1.webp",
+    images: ["/product-media/engine/bd-cp3-injection-pump-stock-exchange-dodge-6-7l-cummins-2007-5-2018-1050106/1.webp"],
+    description: `CP3 Injection Pump Stock Exchange Dodge 6.7L Cummins 2007.5-2018, BD part 1050106.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050106.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CP3 Pumps
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Core charge: $300, refundable
+Warranty: 12 months
+Part number: 1050106
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4279,
+    createdAt: 1789430400000,
+    name: "BD Diesel CP3 Injection Pump Stock Exchange Dodge 5.9L Cummins 2003–2007 — 1050105",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050105.
+    price: 883.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1050105",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-cp3-injection-pump-stock-exchange",
+    thumbnail: "/product-media/engine/bd-cp3-injection-pump-stock-exchange-dodge-5-9l-cummins-2003-2007-1050105/1.webp",
+    images: ["/product-media/engine/bd-cp3-injection-pump-stock-exchange-dodge-5-9l-cummins-2003-2007-1050105/1.webp"],
+    description: `CP3 Injection Pump Stock Exchange Dodge 5.9L Cummins 2003–2007, BD part 1050105.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD supply this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+BD list this as part 1050105.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CP3 Pumps
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Core charge: $300, refundable
+Warranty: 12 months
+Part number: 1050105
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+Exchange unit — core deposit refunded on return
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4280,
+    createdAt: 1789430400000,
+    name: "BD Diesel T3 Mount Turbo Pedestal Chevy Duramax 2001–2007 — 1046203",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046203.
+    price: 300.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1046203",
+    fitment: "2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-t3-mount-turbo-pedestal-chevy-2001-2007",
+    thumbnail: "/product-media/turbocharger/bd-t3-mount-turbo-pedestal-chevy-duramax-2001-2007-1046203/1.webp",
+    images: ["/product-media/turbocharger/bd-t3-mount-turbo-pedestal-chevy-duramax-2001-2007-1046203/1.webp"],
+    description: `T3 Mount Turbo Pedestal Chevy Duramax 2001–2007, BD part 1046203.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1046203.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: SuperMax Turbos
+Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Warranty: 12 months
+Part number: 1046203
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4281,
+    createdAt: 1789430400000,
+    name: "BD Diesel Down Pipe Kit, 4in HX40/Super B Dodge 5.9L Cummins 1994–2002 — 1045223",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045223.
+    price: 285.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1045223",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/down-pipe-kit-4in-hx40-super-b-dodge-1994-2002-5-9l-cummins",
+    thumbnail: "/product-media/turbocharger/bd-down-pipe-kit-4in-hx40-super-b-dodge-5-9l-cummins-1994-2002-1045223/1.webp",
+    images: ["/product-media/turbocharger/bd-down-pipe-kit-4in-hx40-super-b-dodge-5-9l-cummins-1994-2002-1045223/1.webp"],
+    description: `Down Pipe Kit, 4in HX40/Super B Dodge 5.9L Cummins 1994–2002, BD part 1045223.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1045223.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Super B Turbos
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Warranty: 12 months
+Part number: 1045223
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4282,
+    createdAt: 1789430400000,
+    name: "BD Diesel Up-pipes Kit Chevy/GMC LB7 Duramax 2001–2004 — 1043800",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043800.
+    price: 626.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1043800",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-up-pipes-kit-chevy-gmc-2001-2004-lb7",
+    thumbnail: "/product-media/turbocharger/bd-up-pipes-kit-chevy-gmc-lb7-duramax-2001-2004-1043800/1.webp",
+    images: ["/product-media/turbocharger/bd-up-pipes-kit-chevy-gmc-lb7-duramax-2001-2004-1043800/1.webp"],
+    description: `Up-pipes Kit Chevy/GMC LB7 Duramax 2001–2004, BD part 1043800.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1043800.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: UpPipes
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Warranty: 12 months
+Part number: 1043800
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4283,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Intake Pipe Dodge 6.7L Cummins 2007–2009 — 1042595",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1042595.
+    price: 229.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1042595",
+    fitment: "2007–2010 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-intercooler-intake-pipe",
+    thumbnail: "/product-media/turbocharger/bd-intercooler-intake-pipe-dodge-6-7l-cummins-2007-2009-1042595/1.webp",
+    images: ["/product-media/turbocharger/bd-intercooler-intake-pipe-dodge-6-7l-cummins-2007-2009-1042595/1.webp"],
+    description: `Intercooler Intake Pipe Dodge 6.7L Cummins 2007–2009, BD part 1042595.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1042595.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Intake Pipe
+Application: 2007–2010 Dodge / Ram 2500 and 3500 (6.7L)
+Warranty: 12 months
+Part number: 1042595
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4284,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Intake Pipe Dodge 5.9L Cummins 2003–2007 — 1042590",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1042590.
+    price: 162.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1042590",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-intercooler-intake-pipe",
+    thumbnail: "/product-media/turbocharger/bd-intercooler-intake-pipe-dodge-5-9l-cummins-2003-2007-1042590/1.webp",
+    images: ["/product-media/turbocharger/bd-intercooler-intake-pipe-dodge-5-9l-cummins-2003-2007-1042590/1.webp"],
+    description: `Intercooler Intake Pipe Dodge 5.9L Cummins 2003–2007, BD part 1042590.
+
+More airflow at the same fuelling means lower exhaust gas temperature, and on a diesel that works, EGT is the number that decides how long the engine lasts.
+
+BD's turbocharger range covers stock replacements, exchange units and their own performance builds, along with the up-pipes and oil lines that go with a turbo job.
+
+BD list this as part 1042590.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Intake Pipe
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1042590
+
+Highlights
+
+More airflow, lower exhaust gas temperature
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4285,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #12 — 1040195",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040195.
+    price: 316.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040195",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L). #12 option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-fuel-control-plate-12",
+    thumbnail: "/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040195/1.webp",
+    images: ["/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040195/1.webp"],
+    description: `P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #12, BD part 1040195.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040195, the #12 option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Option: #12
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040195
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4286,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #6 — 1040192",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040192.
+    price: 316.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040192",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L). #6 option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-fuel-control-plate-12",
+    thumbnail: "/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040192/1.webp",
+    images: ["/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040192/1.webp"],
+    description: `P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #6, BD part 1040192.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040192, the #6 option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Option: #6
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040192
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4287,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #8 — 1040193",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040193.
+    price: 316.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040193",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L). #8 option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-fuel-control-plate-12",
+    thumbnail: "/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040193/1.webp",
+    images: ["/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040193/1.webp"],
+    description: `P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #8, BD part 1040193.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040193, the #8 option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Option: #8
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040193
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4288,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #11 — 1040194",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040194.
+    price: 316.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040194",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L). #11 option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-fuel-control-plate-12",
+    thumbnail: "/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040194/1.webp",
+    images: ["/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040194/1.webp"],
+    description: `P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #11, BD part 1040194.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040194, the #11 option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Option: #11
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040194
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4289,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #5 — 1040196",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040196.
+    price: 316.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040196",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L). #5 option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-fuel-control-plate-12",
+    thumbnail: "/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040196/1.webp",
+    images: ["/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040196/1.webp"],
+    description: `P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #5, BD part 1040196.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040196, the #5 option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Option: #5
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040196
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4290,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #10 — 1040197",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040197.
+    price: 316.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040197",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L). #10 option.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-fuel-control-plate-12",
+    thumbnail: "/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040197/1.webp",
+    images: ["/product-media/engine/bd-p7100-fuel-control-plate-dodge-1994-1998-12-valve-1040197/1.webp"],
+    description: `P7100 Fuel Control Plate Dodge 1994–1998 12-valve, #10, BD part 1040197.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040197, the #10 option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Option: #10
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040197
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4291,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Governor Spring Kit 3000rpm Dodge 12-valve Cummins 1994–1998 — 1040187",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040187.
+    price: 123.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040187",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-governor-spring-kit-3000rpm",
+    thumbnail: "/product-media/engine/bd-p7100-governor-spring-kit-3000rpm-dodge-12-valve-cummins-1994-1998-1040187/1.webp",
+    images: ["/product-media/engine/bd-p7100-governor-spring-kit-3000rpm-dodge-12-valve-cummins-1994-1998-1040187/1.webp"],
+    description: `P7100 Governor Spring Kit 3000rpm Dodge 12-valve Cummins 1994–1998, BD part 1040187.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040187.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040187
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4292,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Delivery Valve Kit Dodge 12-valve Cummins 1994–1998 — 1040186",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040186.
+    price: 479.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040186",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-delivery-valve-kit",
+    thumbnail: "/product-media/engine/bd-p7100-delivery-valve-kit-dodge-12-valve-cummins-1994-1998-1040186/1.webp",
+    images: ["/product-media/engine/bd-p7100-delivery-valve-kit-dodge-12-valve-cummins-1994-1998-1040186/1.webp"],
+    description: `P7100 Delivery Valve Kit Dodge 12-valve Cummins 1994–1998, BD part 1040186.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040186.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040186
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4293,
+    createdAt: 1789430400000,
+    name: "BD Diesel P7100 Governor Spring Kit 4000rpm Dodge 12-valve Cummins 1994–1998 — 1040185",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040185.
+    price: 228.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040185",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/p7100-governor-spring-kit-4000rpm",
+    thumbnail: "/product-media/engine/bd-p7100-governor-spring-kit-4000rpm-dodge-12-valve-cummins-1994-1998-1040185/1.webp",
+    images: ["/product-media/engine/bd-p7100-governor-spring-kit-4000rpm-dodge-12-valve-cummins-1994-1998-1040185/1.webp"],
+    description: `P7100 Governor Spring Kit 4000rpm Dodge 12-valve Cummins 1994–1998, BD part 1040185.
+
+The injection pump is the part the whole fuel system depends on, and it is not a place to economise. A pump that is worn or starved makes rail pressure that wanders, and wandering rail pressure shows up as poor running long before it shows up as a fault code.
+
+BD have been rebuilding injection systems since 1972, to their own production standards rather than to whatever the core arrived as.
+
+BD list this as part 1040185.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: P7100 Pumps
+Application: 1994–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1040185
+
+Highlights
+
+Injection system built in-house since 1972
+Consistent, tested output
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4294,
+    createdAt: 1789430400000,
+    name: "BD Diesel Killer Frost Plug Plate Dodge 5.9L/6.7L Cummins 2003–2018 — 1040023",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040023.
+    price: 70.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040023",
+    fitment: "2003–2016 Dodge / Ram 2500; and 2003–2015 Dodge / Ram 3500 (5.9L, 6.7L). BD list this part for 2003–2018; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-6-7l-cummins-killer-frost-plug-plate",
+    thumbnail: "/product-media/engine/bd-killer-frost-plug-plate-dodge-5-9l-6-7l-cummins-2003-2018-1040023/1.webp",
+    images: ["/product-media/engine/bd-killer-frost-plug-plate-dodge-5-9l-6-7l-cummins-2003-2018-1040023/1.webp"],
+    description: `Killer Frost Plug Plate Dodge 5.9L/6.7L Cummins 2003–2018, BD part 1040023.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1040023.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Frost Plug
+Application: 2003–2016 Dodge / Ram 2500; and 2003–2015 Dodge / Ram 3500 (5.9L, 6.7L)
+BD catalogue range: 2003–2018
+Warranty: 12 months
+Part number: 1040023
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4295,
+    createdAt: 1789430400000,
+    name: "BD Diesel Killer Frost Plug Plate Dodge 5.9L Cummins 1989–2002 — 1040022",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040022.
+    price: 70.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1040022",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L). BD list this part for 1989–2002; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-killer-frost-plug-plate",
+    thumbnail: "/product-media/engine/bd-killer-frost-plug-plate-dodge-5-9l-cummins-1989-2002-1040022/1.webp",
+    images: ["/product-media/engine/bd-killer-frost-plug-plate-dodge-5-9l-cummins-1989-2002-1040022/1.webp"],
+    description: `Killer Frost Plug Plate Dodge 5.9L Cummins 1989–2002, BD part 1040022.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1040022.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Frost Plug
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+BD catalogue range: 1989–2002
+Warranty: 12 months
+Part number: 1040022
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4296,
+    createdAt: 1789430400000,
+    name: "BD Diesel Crank Case Vent Filter Kit - Ford 7.3L Power Stroke 1999–2003 — 1032170",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032170.
+    price: 524.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1032170",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/crank-case-vent-filter-kit-1999-2003-ford-7-3l",
+    thumbnail: "/product-media/engine/bd-crank-case-vent-filter-kit-ford-7-3l-power-stroke-1999-2003-1032170/1.webp",
+    images: ["/product-media/engine/bd-crank-case-vent-filter-kit-ford-7-3l-power-stroke-1999-2003-1032170/1.webp"],
+    description: `Crank Case Vent Filter Kit - Ford 7.3L Power Stroke 1999–2003, BD part 1032170.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1032170.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: CCV Filter
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Warranty: 12 months
+Part number: 1032170
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4297,
+    createdAt: 1789430400000,
+    name: "BD Diesel Coolant Filter Kit Ford 6.0L Power Stroke 2003–2007 — 1032121",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032121.
+    price: 205.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1032121",
+    fitment: "2003–2005 Ford Excursion; 2003–2007 Ford F-250 Super Duty and F-350 Super Duty; and 2004–2007 Ford E-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-coolant-filter-kit",
+    thumbnail: "/product-media/engine/bd-coolant-filter-kit-ford-6-0l-power-stroke-2003-2007-1032121/1.webp",
+    images: ["/product-media/engine/bd-coolant-filter-kit-ford-6-0l-power-stroke-2003-2007-1032121/1.webp"],
+    description: `Coolant Filter Kit Ford 6.0L Power Stroke 2003–2007, BD part 1032121.
+
+Engines have known failure points, and on a diesel those are well documented — a dowel pin that walks out behind the timing cover, a breather that cannot keep up, a frost plug that lets go where nobody can reach it.
+
+BD build parts for those specific problems rather than general-purpose replacements, which is why the fitment is narrow and the part does one job properly.
+
+BD list this as part 1032121.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Coolant Filter
+Application: 2003–2005 Ford Excursion; 2003–2007 Ford F-250 Super Duty and F-350 Super Duty; and 2004–2007 Ford E-350 Super Duty (6.0L)
+Warranty: 12 months
+Part number: 1032121
+
+Highlights
+
+Built for a known failure point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4298,
+    createdAt: 1789430400000,
+    name: "BD Diesel LockOut Overdrive Disable Dodge Cummins 2005 — 1031350",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031350.
+    price: 299.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1031350",
+    fitment: "2005 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/lockout-overdrive-disable-dodge-2005",
+    thumbnail: "/product-media/transmission/bd-lockout-overdrive-disable-dodge-cummins-2005-1031350/1.webp",
+    images: ["/product-media/transmission/bd-lockout-overdrive-disable-dodge-cummins-2005-1031350/1.webp"],
+    description: `LockOut Overdrive Disable Dodge Cummins 2005, BD part 1031350.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1031350.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Lock Out
+Application: 2005 Dodge / Ram 2500 and 3500 (5.9L)
+Warranty: 12 months
+Part number: 1031350
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4299,
+    createdAt: 1789430400000,
+    name: "BD Diesel Torq/UnLoc Kit Dodge 5.9L Cummins 1994–2004 /Chevy 6.5L Duramax 1992–2000 — 1030398",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030398.
+    price: 446.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030398",
+    fitment: "1993–1995 Chevrolet C2500, C3500, K2500 and K3500; 1993–1994 GMC C2500, C3500, K2500 and K3500; 1994–1995 Chevrolet C1500 and K1500; 1994–1995 Dodge / Ram 2500; 1994 Dodge / Ram 3500; and 1994 GMC C1500 and K1500 (5.9L, 6.5L). BD list this part for 1992–2004; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torq-unloc-kit",
+    thumbnail: "/product-media/transmission/bd-torq-unloc-kit-dodge-5-9l-cummins-1994-2004-chevy-6-5l-duramax-1992-20-1030398/1.webp",
+    images: ["/product-media/transmission/bd-torq-unloc-kit-dodge-5-9l-cummins-1994-2004-chevy-6-5l-duramax-1992-20-1030398/1.webp"],
+    description: `Torq/UnLoc Kit Dodge 5.9L Cummins 1994–2004 /Chevy 6.5L Duramax 1992–2000, BD part 1030398.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030398.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Controls
+Application: 1993–1995 Chevrolet C2500, C3500, K2500 and K3500; 1993–1994 GMC C2500, C3500, K2500 and K3500; 1994–1995 Chevrolet C1500 and K1500; 1994–1995 Dodge / Ram 2500; 1994 Dodge / Ram 3500; and 1994 GMC C1500 and K1500 (5.9L, 6.5L)
+BD catalogue range: 1992–2004
+Warranty: 12 months
+Part number: 1030398
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4300,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqLoc Ford Power Stroke 7.3L 1990–2003/ Dodge Cummins 5.9L 1994–2005/ Chevy Duramax 6.5L 1992–2000 — 1030395",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030395.
+    price: 446.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030395",
+    fitment: "1990–1992 Ford F-250 and F-350; 1992–1994 Chevrolet C2500, C3500, K2500 and K3500; 1992–1993 GMC C2500, C3500, K2500 and K3500; 1994 Chevrolet C1500 and K1500; and 1994 Dodge / Ram 2500 (5.9L, 6.5L, 7.3L). BD list this part for 1990–2005; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torqloc",
+    thumbnail: "/product-media/transmission/bd-torqloc-ford-power-stroke-7-3l-1990-2003-dodge-cummins-5-9l-1994-2005--1030395/1.webp",
+    images: ["/product-media/transmission/bd-torqloc-ford-power-stroke-7-3l-1990-2003-dodge-cummins-5-9l-1994-2005--1030395/1.webp"],
+    description: `TorqLoc Ford Power Stroke 7.3L 1990–2003/ Dodge Cummins 5.9L 1994–2005/ Chevy Duramax 6.5L 1992–2000, BD part 1030395.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030395.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Controls
+Application: 1990–1992 Ford F-250 and F-350; 1992–1994 Chevrolet C2500, C3500, K2500 and K3500; 1992–1993 GMC C2500, C3500, K2500 and K3500; 1994 Chevrolet C1500 and K1500; and 1994 Dodge / Ram 2500 (5.9L, 6.5L, 7.3L)
+BD catalogue range: 1990–2005
+Warranty: 12 months
+Part number: 1030395
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4301,
+    createdAt: 1789430400000,
+    name: "BD Diesel Pressure Enhancer Ford 6.7L Power Stroke 6R140 2011–2019 — 1030385",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030385.
+    price: 168.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "12-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030385",
+    fitment: "2011–2017 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2017 Ford F650 (6.7L). BD list this part for 2011–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6r140-pressure-enhancer",
+    thumbnail: "/product-media/transmission/bd-pressure-enhancer-ford-6-7l-power-stroke-6r140-2011-2019-1030385/1.webp",
+    images: ["/product-media/transmission/bd-pressure-enhancer-ford-6-7l-power-stroke-6r140-2011-2019-1030385/1.webp"],
+    description: `Pressure Enhancer Ford 6.7L Power Stroke 6R140 2011–2019, BD part 1030385.
+
+A transmission fails in a small number of predictable places, and most of them are cheap to address while the box is apart and expensive to address afterwards.
+
+These are the parts BD build for those places: filters and adapters, separator plates and gasket kits, and the controls that decide when the transmission does what.
+
+BD list this as part 1030385.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Trans Controls
+Application: 2011–2017 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2017 Ford F650 (6.7L)
+BD catalogue range: 2011–2019
+Warranty: 12 months
+Part number: 1030385
+
+Highlights
+
+Addresses a known transmission weak point
+BD Diesel Performance
+12-month BD warranty
+
+Warranty
+12-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4302,
+    createdAt: 1789430400000,
+    name: "Bosch 6.7L Cummins CR Fuel Rail Dodge 2007.5-2012 — 0445226044",
+    category: "electronics",
+    brand: "bosch",
+    // bddiesel listing price for 0445226044.
+    price: 495,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0445226044",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bosch-6-7l-cummins-cr-fuel-rail",
+    thumbnail: "/product-media/electronics/bd-bosch-6-7l-cummins-cr-fuel-rail-dodge-2007-5-2012-0445226044/1.webp",
+    images: ["/product-media/electronics/bd-bosch-6-7l-cummins-cr-fuel-rail-dodge-2007-5-2012-0445226044/1.webp"],
+    description: `Bosch 6.7L Cummins CR Fuel Rail Dodge 2007.5-2012, Bosch part 0445226044.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 0445226044.
+
+Specifications
+
+Manufacturer: Bosch
+Product: Bosch
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 0445226044
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4303,
+    createdAt: 1789430400000,
+    name: "Bosch 5.9L Cummins CR Fuel Rail Dodge 2003–2007 — 0445226014",
+    category: "electronics",
+    brand: "bosch",
+    // bddiesel listing price for 0445226014.
+    price: 319,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0445226014",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bosch-5-9l-cummins-cr-fuel-rail",
+    thumbnail: "/product-media/electronics/bd-bosch-5-9l-cummins-cr-fuel-rail-dodge-2003-2007-0445226014/1.webp",
+    images: ["/product-media/electronics/bd-bosch-5-9l-cummins-cr-fuel-rail-dodge-2003-2007-0445226014/1.webp"],
+    description: `Bosch 5.9L Cummins CR Fuel Rail Dodge 2003–2007, Bosch part 0445226014.
+
+Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
+
+These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
+
+BD list this as part 0445226014.
+
+Specifications
+
+Manufacturer: Bosch
+Product: Bosch
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 0445226014
+
+Highlights
+
+Replaces a failing module or sensor
+Restores the behaviour the truck had
 
 Warranty
 BD Diesel Manufacturer Warranty

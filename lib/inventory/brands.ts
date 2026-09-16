@@ -39,6 +39,7 @@ export const brands: Brand[] = [
   // Diesel specialists supplying the OBS 7.3 Power Stroke cluster.
   { slug: "freedom-injection", name: "Freedom Injection", category: "engine" },
   { slug: "dieselsite", name: "DieselSite", category: "engine" },
+  { slug: "bostech", name: "Bostech", category: "engine" },
   { slug: "driven-diesel", name: "Driven Diesel", category: "engine" },
   { slug: "alliant-power", name: "Alliant Power", category: "engine" },
   { slug: "alliant-power", name: "Alliant Power", category: "electronics" },
