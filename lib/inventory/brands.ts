@@ -45,6 +45,7 @@ export const brands: Brand[] = [
   { slug: "mishimoto", name: "Mishimoto", category: "engine" },
   // Market expansion (2026-09): brands added for the USA and Australia listings.
   { slug: "s-and-b", name: "S&B Filters", category: "engine" },
+  { slug: "jlt", name: "JLT Performance", category: "engine" },
   { slug: "bd-diesel", name: "BD Diesel", category: "engine" },
   { slug: "bosch", name: "Bosch", category: "engine" },
   { slug: "industrial-injection", name: "Industrial Injection", category: "engine" },
