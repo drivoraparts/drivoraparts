@@ -250,6 +250,7 @@ export const brands: Brand[] = [
   { slug: "fleece", name: "Fleece Performance", category: "electronics" },
   { slug: "mechman", name: "Mechman Alternators", category: "electronics" },
   { slug: "driven-diesel", name: "Driven Diesel", category: "electronics" },
+  { slug: "bd-diesel", name: "BD Diesel", category: "electronics" },
   { slug: "mean-green", name: "Mean Green", category: "electronics" },
   { slug: "powermaster", name: "Powermaster Performance", category: "electronics" },
   { slug: "xdp", name: "XDP", category: "electronics" },

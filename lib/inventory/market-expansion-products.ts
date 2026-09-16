@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   1504 listings added 2026-09-15 from manufacturer and
+   1748 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -76715,6 +76715,11820 @@ Bilstein Limited Lifetime Warranty
 
 Warranty
 Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3651,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate AS69RC RAM 3500/4500/5500 6.7L Cummins 2013–2018 — 1041223",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041223.
+    price: 459.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041223",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/flexplate-as69rc-ram-3500-4500-5500-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/transmission/bd-flexplate-as69rc-ram-3500-4500-5500-6-7l-cummins-2013-2018-1041223/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-as69rc-ram-3500-4500-5500-6-7l-cummins-2013-2018-1041223/1.webp"],
+    description: `Flexplate AS69RC RAM 3500/4500/5500 6.7L Cummins 2013–2018, BD part 1041223.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041223.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Part number: 1041223
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3652,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Driver Side RAM 2500–5500 6.4L HEMI 2014–2024 — 1041456",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041456.
+    price: 435.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041456",
+    fitment: "2014–2021 Dodge / Ram 2500; and 2014–2020 Dodge / Ram 3500, 4500 and 5500 (6.4L). BD list this part for 2014–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-driver-side-ram-2500-5500-6-4l-hemi-2014-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-driver-side-ram-2500-5500-6-4l-hemi-2014-2024-1041456/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ram-2500-5500-6-4l-hemi-2014-2024-1041456/1.webp"],
+    description: `Exhaust Manifold Driver Side RAM 2500–5500 6.4L HEMI 2014–2024, BD part 1041456.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041456.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2014–2021 Dodge / Ram 2500; and 2014–2020 Dodge / Ram 3500, 4500 and 5500 (6.4L)
+BD catalogue range: 2014–2024
+Part number: 1041456
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3653,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit RAM 2500–5500 6.4L HEMI 2014–2024 — 1041454",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041454.
+    price: 695.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041454",
+    fitment: "2014–2021 Dodge / Ram 2500; and 2014–2020 Dodge / Ram 3500, 4500 and 5500 (6.4L). BD list this part for 2014–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ram-2500-5500-6-4l-hemi-2014-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ram-2500-5500-6-4l-hemi-2014-2024-1041454/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-2500-5500-6-4l-hemi-2014-2024-1041454/1.webp"],
+    description: `Exhaust Manifold Kit RAM 2500–5500 6.4L HEMI 2014–2024, BD part 1041454.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041454.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2014–2021 Dodge / Ram 2500; and 2014–2020 Dodge / Ram 3500, 4500 and 5500 (6.4L)
+BD catalogue range: 2014–2024
+Part number: 1041454
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3654,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 BMW — 1057941",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057941.
+    price: 301.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057941",
+    fitment: "2002–2005 BMW 745Li and 745i; 2003–2005 BMW 760Li; 2003–2004 BMW Z4 with Automatic or SMG; and 2004–2005 BMW 525i with Automatic or SMG, 530i with Automatic or SMG, 545i with Automatic or SMG, 645ci with Automatic or SMG, 760i and X3 with Automatic (2.5L, 3.0L, 4.4L, 6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-bmw",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-bmw-1057941/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-bmw-1057941/1.webp"],
+    description: `TS Booster V3.0 BMW, BD part 1057941.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057941.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2002–2005 BMW 745Li and 745i; 2003–2005 BMW 760Li; 2003–2004 BMW Z4 with Automatic or SMG; and 2004–2005 BMW 525i with Automatic or SMG, 530i with Automatic or SMG, 545i with Automatic or SMG, 645ci with Automatic or SMG, 760i and X3 with Automatic (2.5L, 3.0L, 4.4L, 6.0L)
+Part number: 1057941
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3655,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 Ford (Check application listings) — 1057934",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057934.
+    price: 295.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057934",
+    fitment: "2003–2005 Ford Thunderbird; 2004 Ford F-150 New Body Style; and 2005 Ford Crown Victoria, E-350 Club Wagon, E-350 Super Duty, E-450 Super Duty, Expedition, Explorer, F-150, F-250 Super Duty, F-350, F-350 Super Duty, Five Hundred, Freestyle and Mustang (3.0L, 3.9L, 4.0L, 4.2L, 4.6L, 5.4L, 6.0L, 6.8L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-ford-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-ford-check-application-listings-1057934/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-ford-check-application-listings-1057934/1.webp"],
+    description: `TS Booster V3.0 Ford (Check application listings), BD part 1057934.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057934.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2003–2005 Ford Thunderbird; 2004 Ford F-150 New Body Style; and 2005 Ford Crown Victoria, E-350 Club Wagon, E-350 Super Duty, E-450 Super Duty, Expedition, Explorer, F-150, F-250 Super Duty, F-350, F-350 Super Duty, Five Hundred, Freestyle and Mustang (3.0L, 3.9L, 4.0L, 4.2L, 4.6L, 5.4L, 6.0L, 6.8L)
+Part number: 1057934
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3656,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster v3.0 Dodge/Jeep (Check application listings) — 1057931",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057931.
+    price: 279.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057931",
+    fitment: "2005–2006 Chrysler 300; 2005–2006 Dodge / Ram Durango, Magnum, 1500, 2500 and 3500; 2005 Jeep Grand Cherokee and Liberty; and 2006 Dodge / Ram Charger (2.7L, 2.8L, 3.5L, 4.7L, 5.7L, 5.9L, 6.1L, 8.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-dodge-jeep-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-dodge-jeep-check-application-listings-1057931/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-dodge-jeep-check-application-listings-1057931/1.webp"],
+    description: `TS Booster v3.0 Dodge/Jeep (Check application listings), BD part 1057931.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057931.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2005–2006 Chrysler 300; 2005–2006 Dodge / Ram Durango, Magnum, 1500, 2500 and 3500; 2005 Jeep Grand Cherokee and Liberty; and 2006 Dodge / Ram Charger (2.7L, 2.8L, 3.5L, 4.7L, 5.7L, 5.9L, 6.1L, 8.3L)
+Part number: 1057931
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3657,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbochargers Ford 3.5L EcoBoost F-150 2013–2016 — 1047621",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047621.
+    price: 2084.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047621",
+    fitment: "2013–2016 Ford F-150 (3.5L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbochargers-ford-3-5l-ecoboost-f-150-2013-2016",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbochargers-ford-3-5l-ecoboost-f-150-2013-2016-1047621/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbochargers-ford-3-5l-ecoboost-f-150-2013-2016-1047621/1.webp"],
+    description: `Screamer Turbochargers Ford 3.5L EcoBoost F-150 2013–2016, BD part 1047621.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1047621.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2013–2016 Ford F-150 (3.5L)
+Part number: 1047621
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3658,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024 — 1046070",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046070.
+    price: 860.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046070",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019--1046070/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019--1046070/1.webp"],
+    description: `Exhaust Manifold Kit RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024, BD part 1046070.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046070.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Part number: 1046070
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3659,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024 — 1045970",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045970.
+    price: 716.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045970",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019-2024-1045970/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019-2024-1045970/1.webp"],
+    description: `Exhaust Manifold RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024, BD part 1045970.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045970.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Part number: 1045970
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3660,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Chevy LML Duramax 2011–2016 — 1045830",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045830.
+    price: 2496.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045830",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbo-chevy-lml-duramax-2011-2016",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbo-chevy-lml-duramax-2011-2016-1045830/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbo-chevy-lml-duramax-2011-2016-1045830/1.webp"],
+    description: `Screamer Turbo Chevy LML Duramax 2011–2016, BD part 1045830.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045830.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Part number: 1045830
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3661,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Ford F-150 3.5L EcoBoost 2011–2016 / Transit 2015–2024 — 1043001",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043001.
+    price: 418.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043001",
+    fitment: "2011–2016 Ford F-150; 2015–2017 Ford Expedition and Transit 350; 2015–2016 Ford Lobo; 2015–2018 Ford Transit 150, Transit 250 and Transit 350 HD; and 2015–2017 Lincoln Navigator (3.5L). BD list this part for 2011–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ford-f150-3-5l-ecoboost-2011-2016-transit-2015-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-3-5l-ecoboost-2011-2016-transit-2015-2-1043001/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-3-5l-ecoboost-2011-2016-transit-2015-2-1043001/1.webp"],
+    description: `Exhaust Manifold Kit Ford F-150 3.5L EcoBoost 2011–2016 / Transit 2015–2024, BD part 1043001.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043001.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2016 Ford F-150; 2015–2017 Ford Expedition and Transit 350; 2015–2016 Ford Lobo; 2015–2018 Ford Transit 150, Transit 250 and Transit 350 HD; and 2015–2017 Lincoln Navigator (3.5L)
+BD catalogue range: 2011–2024
+Part number: 1043001
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3662,
+    createdAt: 1789430400000,
+    name: "BD Diesel VGT Turbo Actuator Harness Adapter Dodge 6.7L Cummins (5347703) 2007.5-2012 — 1407046",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1407046.
+    price: 55.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1407046",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/vgt-turbo-actuator-harness-adapter-dodge-6-7l-cummins-5347703-2007-5-2012",
+    thumbnail: "/product-media/turbocharger/bd-vgt-turbo-actuator-harness-adapter-dodge-6-7l-cummins-5347703-2007-5-2-1407046/1.webp",
+    images: ["/product-media/turbocharger/bd-vgt-turbo-actuator-harness-adapter-dodge-6-7l-cummins-5347703-2007-5-2-1407046/1.webp"],
+    description: `VGT Turbo Actuator Harness Adapter Dodge 6.7L Cummins (5347703) 2007.5-2012, BD part 1407046.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1407046.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1407046
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3663,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Bushing Kit 1032018 2013+ Dodge Cummins — 1302038",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1302038.
+    price: 44.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1302038",
+    fitment: "2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/track-bar-bushing-kit-1032018-2013-dodge-cummins",
+    thumbnail: "/product-media/suspension/bd-track-bar-bushing-kit-1032018-2013-dodge-cummins-1302038/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-bushing-kit-1032018-2013-dodge-cummins-1302038/1.webp"],
+    description: `Track Bar Bushing Kit 1032018 2013+ Dodge Cummins, BD part 1302038.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1302038.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
+Part number: 1302038
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3664,
+    createdAt: 1789430400000,
+    name: "BD Diesel APPS Noise Isolator Dodge 5.9L 1994–2004 / 8.0L 1999–2003 — 1300030",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1300030.
+    price: 37.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1300030",
+    fitment: "1994–1997 and 1999–2003 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L, 8.0L). BD list this part for 1994–2004; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/apps-noise-isolator-dodge-5-9l-1994-2004-8-0l-1999-2003",
+    thumbnail: "/product-media/electronics/bd-apps-noise-isolator-dodge-5-9l-1994-2004-8-0l-1999-2003-1300030/1.webp",
+    images: ["/product-media/electronics/bd-apps-noise-isolator-dodge-5-9l-1994-2004-8-0l-1999-2003-1300030/1.webp"],
+    description: `APPS Noise Isolator Dodge 5.9L 1994–2004 / 8.0L 1999–2003, BD part 1300030.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1300030.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 1994–1997 and 1999–2003 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L, 8.0L)
+BD catalogue range: 1994–2004
+Part number: 1300030
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3665,
+    createdAt: 1789430400000,
+    name: "BD Diesel Rear Differential Cover Dana 70 Dodge 2500/3500 1981–1993 & 2500 1994–2002 — 1061835",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061835.
+    price: 409.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061835",
+    fitment: "1982–1984 Dodge / Ram D150 and D250; and 1982–1983 Dodge / Ram D350, W150, W250 and W350 (3.7L, 5.2L, 5.9L). BD list this part for 1981–2002; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/rear-differential-cover-dana-70-dodge-2500-3500-1981-1993-2500-1994-2002",
+    thumbnail: "/product-media/suspension/bd-rear-differential-cover-dana-70-dodge-2500-3500-1981-1993-2500-1994-20-1061835/1.webp",
+    images: ["/product-media/suspension/bd-rear-differential-cover-dana-70-dodge-2500-3500-1981-1993-2500-1994-20-1061835/1.webp"],
+    description: `Rear Differential Cover Dana 70 Dodge 2500/3500 1981–1993 & 2500 1994–2002, BD part 1061835.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061835.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 1982–1984 Dodge / Ram D150 and D250; and 1982–1983 Dodge / Ram D350, W150, W250 and W350 (3.7L, 5.2L, 5.9L)
+BD catalogue range: 1981–2002
+Part number: 1061835
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3666,
+    createdAt: 1789430400000,
+    name: "BD Diesel Rear Differential Cover AAM 14-Bolt w/RCS (Rear Coil Spring) Dodge 2500 Cummins 2013–2018 — 1061825-RCS",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061825-RCS.
+    price: 358.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061825-RCS",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/rear-differential-cover-aam-14-bolt-w-rcs-rear-coil-spring-dodge-2500-cummins-2013-2018",
+    thumbnail: "/product-media/suspension/bd-rear-differential-cover-aam-14-bolt-w-rcs-rear-coil-spring-dodge-2500--1061825rcs/1.webp",
+    images: ["/product-media/suspension/bd-rear-differential-cover-aam-14-bolt-w-rcs-rear-coil-spring-dodge-2500--1061825rcs/1.webp"],
+    description: `Rear Differential Cover AAM 14-Bolt w/RCS (Rear Coil Spring) Dodge 2500 Cummins 2013–2018, BD part 1061825-RCS.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061825-RCS.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1061825-RCS
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3667,
+    createdAt: 1789430400000,
+    name: "BD Diesel Deep Sump Transmission Pan Kit Ford 10r60/10r80 2017–2024 — 1061718",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061718.
+    price: 446.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061718",
+    fitment: "2017–2020 Ford F-150; 2018–2020 Lincoln Navigator; 2019–2020 Ford Ranger; 2020 Ford Explorer; and 2021 Ford Bronco and Expedition (2.3L, 2.7L, 3.0L, 3.3L, 3.5L, 5.0L). BD list this part for 2017–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/deep-sump-transmission-pan-kit-ford-10r60-10r80-2017-2024",
+    thumbnail: "/product-media/transmission/bd-deep-sump-transmission-pan-kit-ford-10r60-10r80-2017-2024-1061718/1.webp",
+    images: ["/product-media/transmission/bd-deep-sump-transmission-pan-kit-ford-10r60-10r80-2017-2024-1061718/1.webp"],
+    description: `Deep Sump Transmission Pan Kit Ford 10r60/10r80 2017–2024, BD part 1061718.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061718.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2017–2020 Ford F-150; 2018–2020 Lincoln Navigator; 2019–2020 Ford Ranger; 2020 Ford Explorer; and 2021 Ford Bronco and Expedition (2.3L, 2.7L, 3.0L, 3.3L, 3.5L, 5.0L)
+BD catalogue range: 2017–2024
+Part number: 1061718
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3668,
+    createdAt: 1789430400000,
+    name: "BD Diesel Accumulator Body Ford 7.3L Power Stroke E4OD/4R100 4wd 1995–2003 — 1060444",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1060444.
+    price: 383.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1060444",
+    fitment: "1995–1996 Ford F-250; 1995–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/accumulator-body-ford-7-3l-power-stroke-e4od-4r100-4wd-1995-2003",
+    thumbnail: "/product-media/transmission/bd-accumulator-body-ford-7-3l-power-stroke-e4od-4r100-4wd-1995-2003-1060444/1.webp",
+    images: ["/product-media/transmission/bd-accumulator-body-ford-7-3l-power-stroke-e4od-4r100-4wd-1995-2003-1060444/1.webp"],
+    description: `Accumulator Body Ford 7.3L Power Stroke E4OD/4R100 4wd 1995–2003, BD part 1060444.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1060444.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1995–1996 Ford F-250; 1995–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 1060444
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3669,
+    createdAt: 1789430400000,
+    name: "BD Diesel Accumulator Body Ford 7.3L Power Stroke E4OD/4R100 2wd 1995–2003 — 1060442",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1060442.
+    price: 383.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1060442",
+    fitment: "1995–1996 Ford F-250; 1995–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/accumulator-body-ford-7-3l-power-stroke-e4od-4r100-2wd-1995-2003",
+    thumbnail: "/product-media/transmission/bd-accumulator-body-ford-7-3l-power-stroke-e4od-4r100-2wd-1995-2003-1060442/1.webp",
+    images: ["/product-media/transmission/bd-accumulator-body-ford-7-3l-power-stroke-e4od-4r100-2wd-1995-2003-1060442/1.webp"],
+    description: `Accumulator Body Ford 7.3L Power Stroke E4OD/4R100 2wd 1995–2003, BD part 1060442.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1060442.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1995–1996 Ford F-250; 1995–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 1060442
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3670,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 Chevy/Dodge/Ford/GMC/Jeep (Check application listings) — 1057932",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057932.
+    price: 279.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057932",
+    fitment: "2007 Chrysler 300, Aspen and Pacifica; and 2007 Dodge / Ram Charger, Dakota, Durango, Magnum, Nitro, 1500, 2500 and 3500 (2.7L, 3.5L, 3.7L, 3.8L, 4.0L, 4.7L, 5.7L, 5.9L, 6.1L, 6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-chevy-dodge-ford-gmc-jeep-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-chevy-dodge-ford-gmc-jeep-check-application-listings-1057932/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-chevy-dodge-ford-gmc-jeep-check-application-listings-1057932/1.webp"],
+    description: `TS Booster V3.0 Chevy/Dodge/Ford/GMC/Jeep (Check application listings), BD part 1057932.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057932.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2007 Chrysler 300, Aspen and Pacifica; and 2007 Dodge / Ram Charger, Dakota, Durango, Magnum, Nitro, 1500, 2500 and 3500 (2.7L, 3.5L, 3.7L, 3.8L, 4.0L, 4.7L, 5.7L, 5.9L, 6.1L, 6.7L)
+Part number: 1057932
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3671,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Boost Control Adjustable Wastegate Kit Ford 7.3L Power Stroke 1999.5-2003 — 1047170",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047170.
+    price: 247.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047170",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-boost-control-adjustable-wastegate-kit-ford-7-3l-power-stroke-1999-5-2003",
+    thumbnail: "/product-media/turbocharger/bd-turbo-boost-control-adjustable-wastegate-kit-ford-7-3l-power-stroke-19-1047170/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-boost-control-adjustable-wastegate-kit-ford-7-3l-power-stroke-19-1047170/1.webp"],
+    description: `Turbo Boost Control Adjustable Wastegate Kit Ford 7.3L Power Stroke 1999.5-2003, BD part 1047170.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047170.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 1047170
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3672,
+    createdAt: 1789430400000,
+    name: "BD Diesel DTurbo Boost Control Adjustable Waste Gate Kit Chevy LB7 Duramax 2001–2004 — 1047160",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047160.
+    price: 240.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047160",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dturbo-boost-control-adjustable-waste-gate-kit-chevy-lb7-duramax-2001-2004",
+    thumbnail: "/product-media/turbocharger/bd-dturbo-boost-control-adjustable-waste-gate-kit-chevy-lb7-duramax-2001--1047160/1.webp",
+    images: ["/product-media/turbocharger/bd-dturbo-boost-control-adjustable-waste-gate-kit-chevy-lb7-duramax-2001--1047160/1.webp"],
+    description: `DTurbo Boost Control Adjustable Waste Gate Kit Chevy LB7 Duramax 2001–2004, BD part 1047160.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047160.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1047160
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3673,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Boost Control Adjustable Wastegate Kit Dodge 5.9L Cummins 2003–2007 — 1047154",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047154.
+    price: 256.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047154",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-boost-control-adjustable-wastegate-kit-dodge-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/turbocharger/bd-turbo-boost-control-adjustable-wastegate-kit-dodge-5-9l-cummins-2003-2-1047154/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-boost-control-adjustable-wastegate-kit-dodge-5-9l-cummins-2003-2-1047154/1.webp"],
+    description: `Turbo Boost Control Adjustable Wastegate Kit Dodge 5.9L Cummins 2003–2007, BD part 1047154.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047154.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L)
+Part number: 1047154
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3674,
+    createdAt: 1789430400000,
+    name: "BD Diesel HX35 Turbo Boost Control Adjustable Wategate Kit Dodge 5.9L Cummins Manual Trans 1999–2002 / Auto Trans 1999 — 1047151",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047151.
+    price: 256.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047151",
+    fitment: "1999–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/hx35-turbo-boost-control-adjustable-wategate-kit-dodge-5-9l-cummins-manual-trans-1999-2002-auto-trans-1999",
+    thumbnail: "/product-media/turbocharger/bd-hx35-turbo-boost-control-adjustable-wategate-kit-dodge-5-9l-cummins-ma-1047151/1.webp",
+    images: ["/product-media/turbocharger/bd-hx35-turbo-boost-control-adjustable-wategate-kit-dodge-5-9l-cummins-ma-1047151/1.webp"],
+    description: `HX35 Turbo Boost Control Adjustable Wategate Kit Dodge 5.9L Cummins Manual Trans 1999–2002 / Auto Trans 1999, BD part 1047151.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047151.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 1999–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Part number: 1047151
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3675,
+    createdAt: 1789430400000,
+    name: "BD Diesel HX35 Turbo Boost Control Adjustable Wategate Kit Dodge 5.9L Cummins 1994–1998.5 — 1047150",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047150.
+    price: 315.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047150",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/hx35-turbo-boost-control-adjustable-wategate-kit-dodge-5-9l-cummins-1994-1998-5",
+    thumbnail: "/product-media/turbocharger/bd-hx35-turbo-boost-control-adjustable-wategate-kit-dodge-5-9l-cummins-19-1047150/1.webp",
+    images: ["/product-media/turbocharger/bd-hx35-turbo-boost-control-adjustable-wategate-kit-dodge-5-9l-cummins-19-1047150/1.webp"],
+    description: `HX35 Turbo Boost Control Adjustable Wategate Kit Dodge 5.9L Cummins 1994–1998.5, BD part 1047150.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047150.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 1994–1998 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 1047150
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3676,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Dodge/RAM 6.7L Cummins 3500/4500/5500 Cab-chassis 2013–2018 — 1046068",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046068.
+    price: 745.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046068",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-2013-2018",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-1046068/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-1046068/1.webp"],
+    description: `Exhaust Manifold Kit Dodge/RAM 6.7L Cummins 3500/4500/5500 Cab-chassis 2013–2018, BD part 1046068.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046068.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Part number: 1046068
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3677,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Dodge/RAM 6.7L Cummins 3500/4500/5500 Cab & Chassis 2007.5-2012 — 1046067",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046067.
+    price: 757.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046067",
+    fitment: "2007–2012 Dodge / Ram 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-1046067/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-1046067/1.webp"],
+    description: `Exhaust Manifold Kit Dodge/RAM 6.7L Cummins 3500/4500/5500 Cab & Chassis 2007.5-2012, BD part 1046067.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046067.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2007–2012 Dodge / Ram 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Part number: 1046067
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3678,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Stock/t3 Dodge 12-valve 5.9L Cummins 1988–1998 — 1046048",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046048.
+    price: 648.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046048",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998-1046048/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998-1046048/1.webp"],
+    description: `Exhaust Manifold Kit Stock/t3 Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1046048.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046048.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+Part number: 1046048
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3679,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Stock/t3 Dodge 24-valve 5.9L Cummins 1998.5-2002 — 1046047",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046047.
+    price: 746.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046047",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-stock-t3-dodge-24-valve-5-9l-cummins-1998-5-2002",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-stock-t3-dodge-24-valve-5-9l-cummins-1998-5-2002-1046047/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-stock-t3-dodge-24-valve-5-9l-cummins-1998-5-2002-1046047/1.webp"],
+    description: `Exhaust Manifold Kit Stock/t3 Dodge 24-valve 5.9L Cummins 1998.5-2002, BD part 1046047.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046047.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Part number: 1046047
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3680,
+    createdAt: 1789430400000,
+    name: "BD Diesel 20-degree Exhaust Manifold T6 Mount Dodge 5.9L Cummins 1998.5-2007 — 1045995-T6",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045995-T6.
+    price: 682.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045995-T6",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/20-degree-exhaust-manifold-t6-mount-dodge-5-9l-cummins-1998-5-2007",
+    thumbnail: "/product-media/engine/bd-20-degree-exhaust-manifold-t6-mount-dodge-5-9l-cummins-1998-5-2007-1045995t6/1.webp",
+    images: ["/product-media/engine/bd-20-degree-exhaust-manifold-t6-mount-dodge-5-9l-cummins-1998-5-2007-1045995t6/1.webp"],
+    description: `20-degree Exhaust Manifold T6 Mount Dodge 5.9L Cummins 1998.5-2007, BD part 1045995-T6.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045995-T6.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
+Part number: 1045995-T6
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3681,
+    createdAt: 1789430400000,
+    name: "BD Diesel 20-degree Exhaust Manifold T4 Mount Dodge 5.9L Cummins 1998.5-2007 — 1045995-T4",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045995-T4.
+    price: 593.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045995-T4",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/20-degree-exhaust-manifold-t4-mount-dodge-5-9l-cummins-1998-5-2007",
+    thumbnail: "/product-media/engine/bd-20-degree-exhaust-manifold-t4-mount-dodge-5-9l-cummins-1998-5-2007-1045995t4/1.webp",
+    images: ["/product-media/engine/bd-20-degree-exhaust-manifold-t4-mount-dodge-5-9l-cummins-1998-5-2007-1045995t4/1.webp"],
+    description: `20-degree Exhaust Manifold T4 Mount Dodge 5.9L Cummins 1998.5-2007, BD part 1045995-T4.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045995-T4.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
+Part number: 1045995-T4
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3682,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set T4 Mount Dodge 6.7L Cummins 2007.5-2018 — 1045992-T4",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045992-T4.
+    price: 97.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045992-T4",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-gasket-set-t4-mount-dodge-6-7l-cummins-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-t4-mount-dodge-6-7l-cummins-2007-5-2018-1045992t4/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-t4-mount-dodge-6-7l-cummins-2007-5-2018-1045992t4/1.webp"],
+    description: `Exhaust Manifold Gasket Set T4 Mount Dodge 6.7L Cummins 2007.5-2018, BD part 1045992-T4.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045992-T4.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045992-T4
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3683,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, Pick-Up / T4 — 1045965-T4",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045965-T4.
+    price: 593.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045965-T4",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). Pick-Up / T4 option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up-3500-4500-5500-cab-chassis",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045965t4/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045965t4/1.webp"],
+    description: `Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, pick-up / t4, BD part 1045965-T4.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045965-T4, the pick-up / t4 option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Option: Pick-Up / T4
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+Part number: 1045965-T4
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+Pick-Up / T4
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3684,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, Cab-Chassis 2007–2012 / HE351 (OEM) — 1045967",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045967.
+    price: 529.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045967",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). Cab-Chassis 2007–2012 / HE351 (OEM) option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up-3500-4500-5500-cab-chassis",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045967/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045967/1.webp"],
+    description: `Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, cab-chassis 2007–2012 / he351 (oem), BD part 1045967.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045967, the cab-chassis 2007–2012 / he351 (oem) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Option: Cab-Chassis 2007–2012 / HE351 (OEM)
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+Part number: 1045967
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+Cab-Chassis 2007–2012 / HE351 (OEM)
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3685,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, Cab-Chassis 2013–2018 / HE351 (OEM) — 1045968",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045968.
+    price: 620.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045968",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). Cab-Chassis 2013–2018 / HE351 (OEM) option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up-3500-4500-5500-cab-chassis",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045968/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045968/1.webp"],
+    description: `Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, cab-chassis 2013–2018 / he351 (oem), BD part 1045968.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045968, the cab-chassis 2013–2018 / he351 (oem) option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Option: Cab-Chassis 2013–2018 / HE351 (OEM)
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+Part number: 1045968
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+Cab-Chassis 2013–2018 / HE351 (OEM)
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3686,
+    createdAt: 1789430400000,
+    name: "BD Diesel Pulse Exhaust Manifold Stock/t3 Dodge 12-valve 5.9L Cummins 1988–1998 — 1045948",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045948.
+    price: 529.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045948",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/pulse-exhaust-manifold-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998",
+    thumbnail: "/product-media/engine/bd-pulse-exhaust-manifold-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998-1045948/1.webp",
+    images: ["/product-media/engine/bd-pulse-exhaust-manifold-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998-1045948/1.webp"],
+    description: `Pulse Exhaust Manifold Stock/t3 Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1045948.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045948.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+Part number: 1045948
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3687,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Actuator HE351 Dodge/RAM 2500/3500 6.7L Cummins 2007.5-2012 (Non-Corded w/ Adapter) — 1045922",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045922.
+    price: 2284.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045922",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-actuator-he351-dodge-ram-2500-3500-6-7l-cummins-2007-5-2012-non-corded-w-adapter",
+    thumbnail: "/product-media/turbocharger/bd-turbo-actuator-he351-dodge-ram-2500-3500-6-7l-cummins-2007-5-2012-non--1045922/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-actuator-he351-dodge-ram-2500-3500-6-7l-cummins-2007-5-2012-non--1045922/1.webp"],
+    description: `Turbo Actuator HE351 Dodge/RAM 2500/3500 6.7L Cummins 2007.5-2012 (Non-Corded w/ Adapter), BD part 1045922.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045922.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045922
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3688,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Chevy/GM 6.6L L5P Duramax 2017–2023 — 1045844",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045844.
+    price: 3918.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045844",
+    fitment: "2017–2023 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2017–2023 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbo-chevy-gm-6-6l-l5p-duramax-2017-2023",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbo-chevy-gm-6-6l-l5p-duramax-2017-2023-1045844/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbo-chevy-gm-6-6l-l5p-duramax-2017-2023-1045844/1.webp"],
+    description: `Screamer Turbo Chevy/GM 6.6L L5P Duramax 2017–2023, BD part 1045844.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045844.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2017–2023 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2017–2023 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Part number: 1045844
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3689,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Chevy/GM LB7 6.6L Duramax 2001–2004 — 1045837",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045837.
+    price: 1866.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045837",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbo-chevy-gm-lb7-6-6l-duramax-2001-2004",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbo-chevy-gm-lb7-6-6l-duramax-2001-2004-1045837/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbo-chevy-gm-lb7-6-6l-duramax-2001-2004-1045837/1.webp"],
+    description: `Screamer Turbo Chevy/GM LB7 6.6L Duramax 2001–2004, BD part 1045837.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045837.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1045837
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3690,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Chevy/GMC 6.6L LB7 Duramax (Non-California Spec) 2001–2004 — 1045836",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045836.
+    price: 1386.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045836",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-chevy-gmc-6-6l-lb7-duramax-non-california-spec-2001-2004",
+    thumbnail: "/product-media/turbocharger/bd-turbo-chevy-gmc-6-6l-lb7-duramax-non-california-spec-2001-2004-1045836/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-chevy-gmc-6-6l-lb7-duramax-non-california-spec-2001-2004-1045836/1.webp"],
+    description: `Turbo Chevy/GMC 6.6L LB7 Duramax (Non-California Spec) 2001–2004, BD part 1045836.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045836.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1045836
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3691,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Stage 1 Performance Gt37 Turbo Ford F-250/F-350 6.0L Power Stroke 2003–2007 — 1045818",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045818.
+    price: 2001.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045818",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-stage-1-performance-gt37-turbo-ford-f250-f350-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/turbocharger/bd-screamer-stage-1-performance-gt37-turbo-ford-f-250-f-350-6-0l-power-st-1045818/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-stage-1-performance-gt37-turbo-ford-f-250-f-350-6-0l-power-st-1045818/1.webp"],
+    description: `Screamer Stage 1 Performance Gt37 Turbo Ford F-250/F-350 6.0L Power Stroke 2003–2007, BD part 1045818.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045818.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1045818
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3692,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Ford Pick-up F-250/350 6.7L Power Stroke (FC3Z-6K682-A) 2015–2016 — 1045813",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045813.
+    price: 2548.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045813",
+    fitment: "2015–2016 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-ford-pick-up-f-250-350-6-7l-power-stroke-fc3z-6k682-a-2015-2016",
+    thumbnail: "/product-media/turbocharger/bd-turbo-ford-pick-up-f-250-350-6-7l-power-stroke-fc3z-6k682-a-2015-2016-1045813/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-ford-pick-up-f-250-350-6-7l-power-stroke-fc3z-6k682-a-2015-2016-1045813/1.webp"],
+    description: `Turbo Ford Pick-up F-250/350 6.7L Power Stroke (FC3Z-6K682-A) 2015–2016, BD part 1045813.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045813.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2015–2016 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Part number: 1045813
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3693,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Stock Replacement HE300VG Dodge Cab & Chassis 6.7L Cummins 2013–2018 — 1045779",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045779.
+    price: 3124.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045779",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-stock-replacement-he300vg-dodge-cab-chassis-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/turbocharger/bd-turbo-stock-replacement-he300vg-dodge-cab-chassis-6-7l-cummins-2013-20-1045779/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-stock-replacement-he300vg-dodge-cab-chassis-6-7l-cummins-2013-20-1045779/1.webp"],
+    description: `Turbo Stock Replacement HE300VG Dodge Cab & Chassis 6.7L Cummins 2013–2018, BD part 1045779.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045779.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Part number: 1045779
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3694,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer HE351CW Turbo Dodge Pick-up 5.9L Cummins 2003–2007 — 1045768",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045768.
+    price: 1715.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045768",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-he351cw-turbo-dodge-pick-up-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/turbocharger/bd-screamer-he351cw-turbo-dodge-pick-up-5-9l-cummins-2003-2007-1045768/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-he351cw-turbo-dodge-pick-up-5-9l-cummins-2003-2007-1045768/1.webp"],
+    description: `Screamer HE351CW Turbo Dodge Pick-up 5.9L Cummins 2003–2007, BD part 1045768.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045768.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045768
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3695,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Driver Side Ford F-150 3.5L EcoBoost 2017–2020 — 1043063",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043063.
+    price: 278.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043063",
+    fitment: "2017 Ford F-150; 2018 Ford Expedition; and 2018 Lincoln Navigator (3.5L). BD list this part for 2017–2020; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-driver-side-ford-f-150-3-5l-ecoboost-2017-2020",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-driver-side-ford-f-150-3-5l-ecoboost-2017-2020-1043063/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-f-150-3-5l-ecoboost-2017-2020-1043063/1.webp"],
+    description: `Exhaust Manifold Driver Side Ford F-150 3.5L EcoBoost 2017–2020, BD part 1043063.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043063.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2017 Ford F-150; 2018 Ford Expedition; and 2018 Lincoln Navigator (3.5L)
+BD catalogue range: 2017–2020
+Part number: 1043063
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3696,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Passenger Side Ford F-150 3.5L EcoBoost 2017–2020 — 1043062",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043062.
+    price: 281.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043062",
+    fitment: "2017–2020 Ford F-150; 2018–2021 Ford Expedition; and 2018–2021 Lincoln Navigator (3.5L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-ford-f-150-3-5l-ecoboost-2017-2020",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-ford-f-150-3-5l-ecoboost-2017-2020-1043062/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-f-150-3-5l-ecoboost-2017-2020-1043062/1.webp"],
+    description: `Exhaust Manifold Passenger Side Ford F-150 3.5L EcoBoost 2017–2020, BD part 1043062.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043062.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2017–2020 Ford F-150; 2018–2021 Ford Expedition; and 2018–2021 Lincoln Navigator (3.5L)
+Part number: 1043062
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3697,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Ford F-150 3.5L EcoBoost 2017–2020 — 1043061",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043061.
+    price: 532.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043061",
+    fitment: "2017–2020 Ford F-150; 2018–2021 Ford Expedition; and 2018–2021 Lincoln Navigator (3.5L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ford-f-150-3-5l-ecoboost-2017-2020",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-3-5l-ecoboost-2017-2020-1043061/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-3-5l-ecoboost-2017-2020-1043061/1.webp"],
+    description: `Exhaust Manifold Kit Ford F-150 3.5L EcoBoost 2017–2020, BD part 1043061.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043061.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2017–2020 Ford F-150; 2018–2021 Ford Expedition; and 2018–2021 Lincoln Navigator (3.5L)
+Part number: 1043061
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3698,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Driver Side Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022 — 1043057",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043057.
+    price: 269.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043057",
+    fitment: "2010–2014 Ford F-150; and 2011–2020 and 2022 Ford F-250 Super Duty and F-350 Super Duty (6.2L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-driver-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-2022",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-driver-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-1043057/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-1043057/1.webp"],
+    description: `Exhaust Manifold Driver Side Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022, BD part 1043057.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043057.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2010–2014 Ford F-150; and 2011–2020 and 2022 Ford F-250 Super Duty and F-350 Super Duty (6.2L)
+Part number: 1043057
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3699,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Passenger Side Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022 — 1043056",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043056.
+    price: 269.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043056",
+    fitment: "2010–2014 Ford F-150; and 2011–2020 and 2022 Ford F-250 Super Duty and F-350 Super Duty (6.2L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-2022",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2-1043056/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2-1043056/1.webp"],
+    description: `Exhaust Manifold Passenger Side Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022, BD part 1043056.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043056.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2010–2014 Ford F-150; and 2011–2020 and 2022 Ford F-250 Super Duty and F-350 Super Duty (6.2L)
+Part number: 1043056
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3700,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022 — 1043055",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043055.
+    price: 499.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043055",
+    fitment: "2010–2014 Ford F-150; and 2011–2020 and 2022 Ford F-250 Super Duty and F-350 Super Duty (6.2L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-2022",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-2022-1043055/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-2022-1043055/1.webp"],
+    description: `Exhaust Manifold Kit Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022, BD part 1043055.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043055.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2010–2014 Ford F-150; and 2011–2020 and 2022 Ford F-250 Super Duty and F-350 Super Duty (6.2L)
+Part number: 1043055
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3701,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Passenger Side Ford 3.5L EcoBoost F-150 2011–2016 — 1043004",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043004.
+    price: 250.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043004",
+    fitment: "2011–2016 Ford F-150; 2015–2017 Ford Expedition and Transit 350; 2015–2016 Ford Lobo; 2015–2018 Ford Transit 150, Transit 250 and Transit 350 HD; and 2015–2017 Lincoln Navigator (3.5L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-ford-3-5l-ecoboost-f-150-2011-2016",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-ford-3-5l-ecoboost-f-150-2011-2016-1043004/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-3-5l-ecoboost-f-150-2011-2016-1043004/1.webp"],
+    description: `Exhaust Manifold Passenger Side Ford 3.5L EcoBoost F-150 2011–2016, BD part 1043004.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043004.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2016 Ford F-150; 2015–2017 Ford Expedition and Transit 350; 2015–2016 Ford Lobo; 2015–2018 Ford Transit 150, Transit 250 and Transit 350 HD; and 2015–2017 Lincoln Navigator (3.5L)
+Part number: 1043004
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3702,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Driver Side Ford 3.5L EcoBoost F-150 2011–2016 — 1043003",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043003.
+    price: 231.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043003",
+    fitment: "2011–2016 Ford F-150; 2015–2017 Ford Expedition and Transit 350; 2015–2016 Ford Lobo; 2015–2018 Ford Transit 150, Transit 250 and Transit 350 HD; and 2015–2017 Lincoln Navigator (3.5L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-driver-side-ford-3-5l-ecoboost-f-150-2011-2016",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-driver-side-ford-3-5l-ecoboost-f-150-2011-2016-1043003/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-3-5l-ecoboost-f-150-2011-2016-1043003/1.webp"],
+    description: `Exhaust Manifold Driver Side Ford 3.5L EcoBoost F-150 2011–2016, BD part 1043003.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043003.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2016 Ford F-150; 2015–2017 Ford Expedition and Transit 350; 2015–2016 Ford Lobo; 2015–2018 Ford Transit 150, Transit 250 and Transit 350 HD; and 2015–2017 Lincoln Navigator (3.5L)
+Part number: 1043003
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3703,
+    createdAt: 1789430400000,
+    name: "BD Diesel Open Grid X-Intake Dodge 2500/3500 6.7L Cummins 2007.5-2018 — 1041564",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041564.
+    price: 253.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041564",
+    fitment: "2008–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/open-grid-x-intake-dodge-2500-3500-6-7l-cummins-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-open-grid-x-intake-dodge-2500-3500-6-7l-cummins-2007-5-2018-1041564/1.webp",
+    images: ["/product-media/engine/bd-open-grid-x-intake-dodge-2500-3500-6-7l-cummins-2007-5-2018-1041564/1.webp"],
+    description: `Open Grid X-Intake Dodge 2500/3500 6.7L Cummins 2007.5-2018, BD part 1041564.
+
+The factory intake grid heater plate sits directly in the path of everything the turbocharger pushes into the engine, and it is a real restriction once airflow goes up.
+
+Removing the grid heating element and fitting BD's open grid plate increases the opening by 35%, which takes the bottleneck out of the intake path.
+
+It pairs with BD's X-Flow intake elbow, and the two together are what make the difference rather than either alone.
+
+BD list this as part 1041564.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Air Horn
+Application: 2008–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1041564
+
+Highlights
+
+35% larger intake opening
+Removes the factory grid restriction
+Pairs with the X-Flow intake elbow
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3704,
+    createdAt: 1789430400000,
+    name: "BD Diesel X-Flow Air Intake Heater Kit Dodge 2500/3500 6.7L Cummins 2007.5-2018 — 1041563",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041563.
+    price: 146.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041563",
+    fitment: "2008–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/x-flow-air-intake-heater-kit-dodge-2500-3500-6-7l-cummins-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-x-flow-air-intake-heater-kit-dodge-2500-3500-6-7l-cummins-2007-5-2018-1041563/1.webp",
+    images: ["/product-media/engine/bd-x-flow-air-intake-heater-kit-dodge-2500-3500-6-7l-cummins-2007-5-2018-1041563/1.webp"],
+    description: `X-Flow Air Intake Heater Kit Dodge 2500/3500 6.7L Cummins 2007.5-2018, BD part 1041563.
+
+The factory intake grid heater plate sits directly in the path of everything the turbocharger pushes into the engine, and it is a real restriction once airflow goes up.
+
+Removing the grid heating element and fitting BD's open grid plate increases the opening by 35%, which takes the bottleneck out of the intake path.
+
+It pairs with BD's X-Flow intake elbow, and the two together are what make the difference rather than either alone.
+
+BD list this as part 1041563.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Air Horn
+Application: 2008–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1041563
+
+Highlights
+
+35% larger intake opening
+Removes the factory grid restriction
+Pairs with the X-Flow intake elbow
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3705,
+    createdAt: 1789430400000,
+    name: "BD Diesel X-Flow Power Intake Elbow Dodge 5.9L Cummins 2003–2007 — 1041555",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041555.
+    price: 346.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041555",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/x-flow-power-intake-elbow-dodge-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/engine/bd-x-flow-power-intake-elbow-dodge-5-9l-cummins-2003-2007-1041555/1.webp",
+    images: ["/product-media/engine/bd-x-flow-power-intake-elbow-dodge-5-9l-cummins-2003-2007-1041555/1.webp"],
+    description: `X-Flow Power Intake Elbow Dodge 5.9L Cummins 2003–2007, BD part 1041555.
+
+The factory intake grid heater plate sits directly in the path of everything the turbocharger pushes into the engine, and it is a real restriction once airflow goes up.
+
+Removing the grid heating element and fitting BD's open grid plate increases the opening by 35%, which takes the bottleneck out of the intake path.
+
+It pairs with BD's X-Flow intake elbow, and the two together are what make the difference rather than either alone.
+
+BD list this as part 1041555.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Air Horn
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1041555
+
+Highlights
+
+35% larger intake opening
+Removes the factory grid restriction
+Pairs with the X-Flow intake elbow
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3706,
+    createdAt: 1789430400000,
+    name: "BD Diesel X-Flow Power Intake Elbow Dodge 24-valve 5.9L Cummins 1998–2002 — 1041550",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041550.
+    price: 396.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041550",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/x-flow-power-intake-elbow-dodge-24-valve-5-9l-cummins-1998-2002",
+    thumbnail: "/product-media/engine/bd-x-flow-power-intake-elbow-dodge-24-valve-5-9l-cummins-1998-2002-1041550/1.webp",
+    images: ["/product-media/engine/bd-x-flow-power-intake-elbow-dodge-24-valve-5-9l-cummins-1998-2002-1041550/1.webp"],
+    description: `X-Flow Power Intake Elbow Dodge 24-valve 5.9L Cummins 1998–2002, BD part 1041550.
+
+The factory intake grid heater plate sits directly in the path of everything the turbocharger pushes into the engine, and it is a real restriction once airflow goes up.
+
+Removing the grid heating element and fitting BD's open grid plate increases the opening by 35%, which takes the bottleneck out of the intake path.
+
+It pairs with BD's X-Flow intake elbow, and the two together are what make the difference rather than either alone.
+
+BD list this as part 1041550.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Air Horn
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Part number: 1041550
+
+Highlights
+
+35% larger intake opening
+Removes the factory grid restriction
+Pairs with the X-Flow intake elbow
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3707,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold (passenger Side) Ford 6.0L Power Stroke 2003–2007 — 1041486",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041486.
+    price: 418.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041486",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-ford-6-0l-power-stroke-2003-2007-1041486/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-6-0l-power-stroke-2003-2007-1041486/1.webp"],
+    description: `Exhaust Manifold (passenger Side) Ford 6.0L Power Stroke 2003–2007, BD part 1041486.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041486.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1041486
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3708,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Driver Side Ford 6.0L Power Stroke 2003–2007 — 1041485",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041485.
+    price: 371.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041485",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-driver-side-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-driver-side-ford-6-0l-power-stroke-2003-2007-1041485/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-6-0l-power-stroke-2003-2007-1041485/1.webp"],
+    description: `Exhaust Manifold Driver Side Ford 6.0L Power Stroke 2003–2007, BD part 1041485.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041485.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1041485
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3709,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Ford 6.4L Power Stroke 2008–2010 — 1041482",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041482.
+    price: 542.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041482",
+    fitment: "2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ford-6-4l-power-stroke-2008-2010",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ford-6-4l-power-stroke-2008-2010-1041482/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-6-4l-power-stroke-2008-2010-1041482/1.webp"],
+    description: `Exhaust Manifold Kit Ford 6.4L Power Stroke 2008–2010, BD part 1041482.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041482.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L)
+Part number: 1041482
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3710,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Set Ford 6.0L Power Stroke 2003–2007 — 1041480",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041480.
+    price: 709.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041480",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-set-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-set-ford-6-0l-power-stroke-2003-2007-1041480/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-set-ford-6-0l-power-stroke-2003-2007-1041480/1.webp"],
+    description: `Exhaust Manifold Set Ford 6.0L Power Stroke 2003–2007, BD part 1041480.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041480.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1041480
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3711,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Passenger Side Kit RAM/dodge/jeep 5.7L HEMI: 1500 Dt 19-24 / Durango 11-26 / Jeep Grand Cherokee & Wagoneer 11-23 — 1041469",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041469.
+    price: 295.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041469",
+    fitment: "2011–2022 Dodge / Ram Durango; 2011–2022 Jeep Grand Cherokee; 2019–2022 Dodge / Ram 1500 Dt; and 2022 Jeep Grand Wagoneer (5.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-19-24-durango-11-26-jeep-grand-cherokee-wagoneer-11-23",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-1-1041469/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-1-1041469/1.webp"],
+    description: `Exhaust Manifold Passenger Side Kit RAM/dodge/jeep 5.7L HEMI: 1500 Dt 19-24 / Durango 11-26 / Jeep Grand Cherokee & Wagoneer 11-23, BD part 1041469.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041469.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2022 Dodge / Ram Durango; 2011–2022 Jeep Grand Cherokee; 2019–2022 Dodge / Ram 1500 Dt; and 2022 Jeep Grand Wagoneer (5.7L)
+Part number: 1041469
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3712,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit RAM/dodge/jeep 5.7L HEMI: 1500 Dt 19-24 / Durango 11-26 / Jeep Grand Cherokee & Wagoneer 11-23 — 1041467",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041467.
+    price: 556.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041467",
+    fitment: "2011–2023 Dodge / Ram Durango; 2011–2020 Jeep Grand Cherokee; 2019–2023 Dodge / Ram 1500 Dt; and 2022 Jeep Grand Wagoneer (5.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-19-24-durango-11-26-jeep-grand-cherokee-wagoneer-11-23",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-19-24-durango-11-1041467/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-19-24-durango-11-1041467/1.webp"],
+    description: `Exhaust Manifold Kit RAM/dodge/jeep 5.7L HEMI: 1500 Dt 19-24 / Durango 11-26 / Jeep Grand Cherokee & Wagoneer 11-23, BD part 1041467.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041467.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2023 Dodge / Ram Durango; 2011–2020 Jeep Grand Cherokee; 2019–2023 Dodge / Ram 1500 Dt; and 2022 Jeep Grand Wagoneer (5.7L)
+Part number: 1041467
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3713,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Passenger Side Kit RAM 5.7L & 6.4L HEMI: 1500 Ds 09-24 / 2500–5500 09-26 — 1041464",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041464.
+    price: 295.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041464",
+    fitment: "2009–2015 Dodge / Ram 1500 Classic Ds, 2500 and 3500 Candc; 2013–2014 Dodge / Ram 3500; and 2014 Dodge / Ram 4500 Candc and 5500 Candc (5.7L, 6.4L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-kit-ram-5-7l-6-4l-hemi-1500-ds-09-24-2500-5500-09-26",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-kit-ram-5-7l-6-4l-hemi-1500-ds-09-24-2-1041464/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-kit-ram-5-7l-6-4l-hemi-1500-ds-09-24-2-1041464/1.webp"],
+    description: `Exhaust Manifold Passenger Side Kit RAM 5.7L & 6.4L HEMI: 1500 Ds 09-24 / 2500–5500 09-26, BD part 1041464.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041464.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2009–2015 Dodge / Ram 1500 Classic Ds, 2500 and 3500 Candc; 2013–2014 Dodge / Ram 3500; and 2014 Dodge / Ram 4500 Candc and 5500 Candc (5.7L, 6.4L)
+Part number: 1041464
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3714,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit RAM 5.7L HEMI: 1500 Ds 09-24 / 2500–3500 09-18 — 1041463",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041463.
+    price: 554.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041463",
+    fitment: "2009–2017 Dodge / Ram 1500 Classic Ds and 2500; 2009–2015 Dodge / Ram 3500 Candc; and 2013–2016 Dodge / Ram 3500 (5.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ram-5-7l-hemi-1500-ds-09-24-2500-3500-09-18",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ram-5-7l-hemi-1500-ds-09-24-2500-3500-09-18-1041463/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-5-7l-hemi-1500-ds-09-24-2500-3500-09-18-1041463/1.webp"],
+    description: `Exhaust Manifold Kit RAM 5.7L HEMI: 1500 Ds 09-24 / 2500–3500 09-18, BD part 1041463.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041463.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2009–2017 Dodge / Ram 1500 Classic Ds and 2500; 2009–2015 Dodge / Ram 3500 Candc; and 2013–2016 Dodge / Ram 3500 (5.7L)
+Part number: 1041463
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3715,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Passenger Side Kit Chevy Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016 — 1041461",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041461.
+    price: 285.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041461",
+    fitment: "2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L). BD list this part for 2001–2016; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-kit-chevy-silverado-gmc-sierra-2500hd-3500hd-6-6l-duramax-2001-2016",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-kit-chevy-silverado-gmc-sierra-2500hd--1041461/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-kit-chevy-silverado-gmc-sierra-2500hd--1041461/1.webp"],
+    description: `Exhaust Manifold Passenger Side Kit Chevy Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016, BD part 1041461.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041461.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L)
+BD catalogue range: 2001–2016
+Part number: 1041461
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3716,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Driver Side Kit Chevy Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016 — 1041460",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041460.
+    price: 285.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041460",
+    fitment: "2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L). BD list this part for 2001–2016; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-chevy-lb7-lly-lbz-lmm-duramax-2001-2010",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-driver-side-kit-chevy-silverado-gmc-sierra-2500hd-350-1041460/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-driver-side-kit-chevy-silverado-gmc-sierra-2500hd-350-1041460/1.webp"],
+    description: `Exhaust Manifold Driver Side Kit Chevy Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016, BD part 1041460.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041460.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L)
+BD catalogue range: 2001–2016
+Part number: 1041460
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3717,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate Ford 7.3L Power Stroke 4R100/E4OD 1994–2003 — 1041241",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041241.
+    price: 799.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041241",
+    fitment: "1994–1996 Ford F-250; 1994–1997 Ford F-350; 1995–2000 Ford E-350 Econoline Club Wagon; 1995–1998 Ford E-350 Econoline; 1996–1999 Ford Econoline Super Duty; 1997 Ford F-250 HD; 1999–2000 Ford E-450 Econoline Super Duty; 1999 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2000 Ford Excursion (7.3L). BD list this part for 1994–2003; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/flexplate-ford-7-3l-power-stroke-4r100-e4od-1994-2003",
+    thumbnail: "/product-media/transmission/bd-flexplate-ford-7-3l-power-stroke-4r100-e4od-1994-2003-1041241/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-ford-7-3l-power-stroke-4r100-e4od-1994-2003-1041241/1.webp"],
+    description: `Flexplate Ford 7.3L Power Stroke 4R100/E4OD 1994–2003, BD part 1041241.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041241.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1995–2000 Ford E-350 Econoline Club Wagon; 1995–1998 Ford E-350 Econoline; 1996–1999 Ford Econoline Super Duty; 1997 Ford F-250 HD; 1999–2000 Ford E-450 Econoline Super Duty; 1999 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2000 Ford Excursion (7.3L)
+BD catalogue range: 1994–2003
+Part number: 1041241
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3718,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate Dodge 6.7L Cummins 68RFE 2007.5-2018 — 1041221",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041221.
+    price: 459.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041221",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/flexplate-dodge-6-7l-cummins-68rfe-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-flexplate-dodge-6-7l-cummins-68rfe-2007-5-2018-1041221/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-dodge-6-7l-cummins-68rfe-2007-5-2018-1041221/1.webp"],
+    description: `Flexplate Dodge 6.7L Cummins 68RFE 2007.5-2018, BD part 1041221.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041221.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1041221
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3719,
+    createdAt: 1789430400000,
+    name: "BD Diesel GM-8/GM-5 Turbo Chevy 6.5L Pick-Up 1996–2000 — 1040500",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040500.
+    price: 1072.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1040500",
+    fitment: "1996–1997 Chevrolet C1500 Suburban, C2500, C2500 Suburban, C3500, K1500, K1500 Suburban and K2500 Suburban; 1996 Chevrolet C1500, K2500, K3500 and Tahoe; and 1996 GMC C1500, C1500 Suburban, C2500, C2500 Suburban, C3500, K1500, K1500 Suburban, K2500, K2500 Suburban, K3500 and Yukon (6.5L). BD list this part for 1996–2000; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/gm-8-gm-5-turbo-chevy-6-5l-pick-up-1996-2000",
+    thumbnail: "/product-media/turbocharger/bd-gm-8-gm-5-turbo-chevy-6-5l-pick-up-1996-2000-1040500/1.webp",
+    images: ["/product-media/turbocharger/bd-gm-8-gm-5-turbo-chevy-6-5l-pick-up-1996-2000-1040500/1.webp"],
+    description: `GM-8/GM-5 Turbo Chevy 6.5L Pick-Up 1996–2000, BD part 1040500.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1040500.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 1996–1997 Chevrolet C1500 Suburban, C2500, C2500 Suburban, C3500, K1500, K1500 Suburban and K2500 Suburban; 1996 Chevrolet C1500, K2500, K3500 and Tahoe; and 1996 GMC C1500, C1500 Suburban, C2500, C2500 Suburban, C3500, K1500, K1500 Suburban, K2500, K2500 Suburban, K3500 and Yukon (6.5L)
+BD catalogue range: 1996–2000
+Part number: 1040500
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3720,
+    createdAt: 1789430400000,
+    name: "BD Diesel Tie Rod Kit Chevy/GM 1500HD 2001–2003 & 2005–2007 & 2500 Hd/3500HD Silverado / Sierra 2001–2010 — 1032125",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032125.
+    price: 269.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032125",
+    fitment: "2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L). BD list this part for 2001–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/tie-rod-kit-chevy-gm-1500hd-2001-2003-2005-2007-2500-hd-3500hd-silverado-sierra-2001-2010",
+    thumbnail: "/product-media/suspension/bd-tie-rod-kit-chevy-gm-1500hd-2001-2003-2005-2007-2500-hd-3500hd-silvera-1032125/1.webp",
+    images: ["/product-media/suspension/bd-tie-rod-kit-chevy-gm-1500hd-2001-2003-2005-2007-2500-hd-3500hd-silvera-1032125/1.webp"],
+    description: `Tie Rod Kit Chevy/GM 1500HD 2001–2003 & 2005–2007 & 2500 Hd/3500HD Silverado / Sierra 2001–2010, BD part 1032125.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032125.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
+BD catalogue range: 2001–2010
+Part number: 1032125
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3721,
+    createdAt: 1789430400000,
+    name: "BD Diesel LED Kit Transmission Pressure Controller Ford 6.7L Power Stroke 6R140 2011–2019 — 1031319",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031319.
+    price: 32.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031319",
+    fitment: "2011–2019 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/led-kit-transmission-pressure-controller-ford-6-7l-power-stroke-6r140-2011-2019",
+    thumbnail: "/product-media/transmission/bd-led-kit-transmission-pressure-controller-ford-6-7l-power-stroke-6r140--1031319/1.webp",
+    images: ["/product-media/transmission/bd-led-kit-transmission-pressure-controller-ford-6-7l-power-stroke-6r140--1031319/1.webp"],
+    description: `LED Kit Transmission Pressure Controller Ford 6.7L Power Stroke 6R140 2011–2019, BD part 1031319.
+
+Line pressure is what holds an automatic's clutches. Raise it and the clutches hold more torque without slipping, and slipping is what burns them.
+
+BD's pressure controller boosts line pressure on demand rather than permanently, so the transmission is firm when it is working and normal when it is not.
+
+The LED indicator shows when boosting is active, which is the difference between knowing the system is working and assuming it.
+
+BD list this as part 1031319.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PressureLoc
+Application: 2011–2019 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Part number: 1031319
+
+Highlights
+
+Raises line pressure when it is needed
+Less clutch slip under load
+LED shows when boosting is active
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3722,
+    createdAt: 1789430400000,
+    name: "BD Diesel Allison Valve Body Chevy LBZ/LMM Duramax 6-speed 2006–2010 — 1030472",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030472.
+    price: 1225.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030472",
+    fitment: "2006–2010 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2010 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 GMC Sierra 3500 HD; and 2008–2010 Chevrolet Silverado 3500 HD (6.6L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/allison-valve-body-chevy-lbz-lmm-duramax-6-speed-2006-2010",
+    thumbnail: "/product-media/transmission/bd-allison-valve-body-chevy-lbz-lmm-duramax-6-speed-2006-2010-1030472/1.webp",
+    images: ["/product-media/transmission/bd-allison-valve-body-chevy-lbz-lmm-duramax-6-speed-2006-2010-1030472/1.webp"],
+    description: `Allison Valve Body Chevy LBZ/LMM Duramax 6-speed 2006–2010, BD part 1030472.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030472.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2006–2010 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2010 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 GMC Sierra 3500 HD; and 2008–2010 Chevrolet Silverado 3500 HD (6.6L)
+Part number: 1030472
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3723,
+    createdAt: 1789430400000,
+    name: "BD Diesel Allison Valve Body Chevy LLY Duramax 2004–2006 — 1030471",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030471.
+    price: 1225.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030471",
+    fitment: "2004–2005 Chevrolet Silverado 2500 HD; 2004–2005 GMC Sierra 2500 HD and Sierra 3500; and 2005 Chevrolet Silverado 3500 (6.6L). BD list this part for 2004–2006; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/allison-valve-body-chevy-lly-duramax-2004-2006",
+    thumbnail: "/product-media/transmission/bd-allison-valve-body-chevy-lly-duramax-2004-2006-1030471/1.webp",
+    images: ["/product-media/transmission/bd-allison-valve-body-chevy-lly-duramax-2004-2006-1030471/1.webp"],
+    description: `Allison Valve Body Chevy LLY Duramax 2004–2006, BD part 1030471.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030471.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2004–2005 Chevrolet Silverado 2500 HD; 2004–2005 GMC Sierra 2500 HD and Sierra 3500; and 2005 Chevrolet Silverado 3500 (6.6L)
+BD catalogue range: 2004–2006
+Part number: 1030471
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3724,
+    createdAt: 1789430400000,
+    name: "BD Diesel Allison Valve Body Chevy LB7 Duramax 2001–2004 — 1030470",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030470.
+    price: 1225.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030470",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/allison-valve-body-chevy-lb7-duramax-2001-2004",
+    thumbnail: "/product-media/transmission/bd-allison-valve-body-chevy-lb7-duramax-2001-2004-1030470/1.webp",
+    images: ["/product-media/transmission/bd-allison-valve-body-chevy-lb7-duramax-2001-2004-1030470/1.webp"],
+    description: `Allison Valve Body Chevy LB7 Duramax 2001–2004, BD part 1030470.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030470.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1030470
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3725,
+    createdAt: 1789430400000,
+    name: "BD Diesel 68RFE Valve Body W/o Solenoid Dodge/RAM 6.7L Cummins 2011–2018 — 1030468",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030468.
+    price: 862.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030468",
+    fitment: "2011–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-valve-body-w-o-solenoid-dodge-ram-6-7l-cummins-2011-2018",
+    thumbnail: "/product-media/transmission/bd-68rfe-valve-body-w-o-solenoid-dodge-ram-6-7l-cummins-2011-2018-1030468/1.webp",
+    images: ["/product-media/transmission/bd-68rfe-valve-body-w-o-solenoid-dodge-ram-6-7l-cummins-2011-2018-1030468/1.webp"],
+    description: `68RFE Valve Body W/o Solenoid Dodge/RAM 6.7L Cummins 2011–2018, BD part 1030468.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030468.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2011–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1030468
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3726,
+    createdAt: 1789430400000,
+    name: "BD Diesel 68RFE Valve Body W/o Solenoid Dodge/RAM 6.7L Cummins 2008–2010 — 1030465",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030465.
+    price: 862.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030465",
+    fitment: "2007–2010 Dodge / Ram 2500 and 3500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-valve-body-w-o-solenoid-dodge-ram-6-7l-cummins-2008-2010",
+    thumbnail: "/product-media/transmission/bd-68rfe-valve-body-w-o-solenoid-dodge-ram-6-7l-cummins-2008-2010-1030465/1.webp",
+    images: ["/product-media/transmission/bd-68rfe-valve-body-w-o-solenoid-dodge-ram-6-7l-cummins-2008-2010-1030465/1.webp"],
+    description: `68RFE Valve Body W/o Solenoid Dodge/RAM 6.7L Cummins 2008–2010, BD part 1030465.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030465.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2007–2010 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1030465
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3727,
+    createdAt: 1789430400000,
+    name: "BD Diesel 47RE Valve Body with Governor Pressure Solenoid - 12-valve Dodge Cummins 1996–1998 — 1030416E",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030416E.
+    price: 915.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030416E",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/47re-valve-body-c-w-governor-pressure-solenoid-12-valve-dodge-cummins-1996-1998",
+    thumbnail: "/product-media/transmission/bd-47re-valve-body-with-governor-pressure-solenoid-12-valve-dodge-cummins-1030416e/1.webp",
+    images: ["/product-media/transmission/bd-47re-valve-body-with-governor-pressure-solenoid-12-valve-dodge-cummins-1030416e/1.webp"],
+    description: `47RE Valve Body with Governor Pressure Solenoid - 12-valve Dodge Cummins 1996–1998, BD part 1030416E.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030416E.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1030416E
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3728,
+    createdAt: 1789430400000,
+    name: "BD Diesel 518 Valve Body Dodge Cummins 1991–1993 — 1030410",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030410.
+    price: 647.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030410",
+    fitment: "1991–1993 Dodge / Ram D250, D350 and W250 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/518-valve-body-dodge-cummins-1991-1993",
+    thumbnail: "/product-media/transmission/bd-518-valve-body-dodge-cummins-1991-1993-1030410/1.webp",
+    images: ["/product-media/transmission/bd-518-valve-body-dodge-cummins-1991-1993-1030410/1.webp"],
+    description: `518 Valve Body Dodge Cummins 1991–1993, BD part 1030410.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030410.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1991–1993 Dodge / Ram D250, D350 and W250 (5.9L)
+Part number: 1030410
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3729,
+    createdAt: 1789430400000,
+    name: "BD Diesel 6.0L Power Stroke Exhaust Brake (Remote) Manual Transmision, Stock — 1027145",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027145.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027145",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L). Stock option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-exhaust-brake-remote-manual-transmision",
+    thumbnail: "/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-manual-transmision-1027145/1.webp",
+    images: ["/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-manual-transmision-1027145/1.webp"],
+    description: `6.0L Power Stroke Exhaust Brake (Remote) Manual Transmision, stock, BD part 1027145.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027145, the stock option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Option: Stock
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1027145
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+Stock
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3730,
+    createdAt: 1789430400000,
+    name: "BD Diesel 6.0L Power Stroke Exhaust Brake (Remote) Manual Transmision, 4-Inch — 1027146",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027146.
+    price: 1674.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027146",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L). 4-Inch option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-exhaust-brake-remote-manual-transmision",
+    thumbnail: "/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-manual-transmision-1027146/1.webp",
+    images: ["/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-manual-transmision-1027146/1.webp"],
+    description: `6.0L Power Stroke Exhaust Brake (Remote) Manual Transmision, 4-inch, BD part 1027146.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027146, the 4-inch option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Option: 4-Inch
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1027146
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+4-Inch
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3731,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake w/4-INCH Exhaust Chevy Duramax 2001–2010 — 1024311",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1024311.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1024311",
+    fitment: "2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007 GMC Sierra 3500 HD (6.6L). BD list this part for 2001–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-w-4-inch-exhaust-chevy-duramax-2001-2010",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-w-4-inch-exhaust-chevy-duramax-2001-2010-1024311/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-w-4-inch-exhaust-chevy-duramax-2001-2010-1024311/1.webp"],
+    description: `Exhaust Brake w/4-INCH Exhaust Chevy Duramax 2001–2010, BD part 1024311.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1024311.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007 GMC Sierra 3500 HD (6.6L)
+BD catalogue range: 2001–2010
+Part number: 1024311
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3732,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake w/STOCK Exhaust Chevy Duramax 2001–2010 — 1024310",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1024310.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1024310",
+    fitment: "2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007 GMC Sierra 3500 HD (6.6L). BD list this part for 2001–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-w-stock-exhaust-chevy-duramax-2001-2010",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-w-stock-exhaust-chevy-duramax-2001-2010-1024310/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-w-stock-exhaust-chevy-duramax-2001-2010-1024310/1.webp"],
+    description: `Exhaust Brake w/STOCK Exhaust Chevy Duramax 2001–2010, BD part 1024310.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1024310.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007 GMC Sierra 3500 HD (6.6L)
+BD catalogue range: 2001–2010
+Part number: 1024310
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3733,
+    createdAt: 1789430400000,
+    name: "BD Diesel Deep Sump Transmission Pan Ford 10r60/10r80 2017–2024 — 1061717",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061717.
+    price: 353.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061717",
+    fitment: "2017–2020 Ford F-150; 2018–2020 Ford Expedition; 2018–2020 Lincoln Navigator; 2019–2020 Ford Ranger; 2020 Ford Explorer; and 2021 Ford Bronco (2.3L, 2.7L, 3.0L, 3.3L, 3.5L, 5.0L). BD list this part for 2017–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/deep-sump-transmission-pan-ford-10r60-10r80-2017-2024",
+    thumbnail: "/product-media/transmission/bd-deep-sump-transmission-pan-ford-10r60-10r80-2017-2024-1061717/1.webp",
+    images: ["/product-media/transmission/bd-deep-sump-transmission-pan-ford-10r60-10r80-2017-2024-1061717/1.webp"],
+    description: `Deep Sump Transmission Pan Ford 10r60/10r80 2017–2024, BD part 1061717.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061717.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2017–2020 Ford F-150; 2018–2020 Ford Expedition; 2018–2020 Lincoln Navigator; 2019–2020 Ford Ranger; 2020 Ford Explorer; and 2021 Ford Bronco (2.3L, 2.7L, 3.0L, 3.3L, 3.5L, 5.0L)
+BD catalogue range: 2017–2024
+Part number: 1061717
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3734,
+    createdAt: 1789430400000,
+    name: "BD Diesel Deep Sump Transmission Pan Dodge/RAM Aisin AS69RC 2013–2024 — 1061535",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061535.
+    price: 475.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061535",
+    fitment: "2013–2022 Dodge / Ram 3500 and 4500; and 2013–2021 Dodge / Ram 5500 (6.7L). BD list this part for 2013–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/deep-sump-transmission-pan-dodge-ram-aisin-as69rc-2013-2024",
+    thumbnail: "/product-media/transmission/bd-deep-sump-transmission-pan-dodge-ram-aisin-as69rc-2013-2024-1061535/1.webp",
+    images: ["/product-media/transmission/bd-deep-sump-transmission-pan-dodge-ram-aisin-as69rc-2013-2024-1061535/1.webp"],
+    description: `Deep Sump Transmission Pan Dodge/RAM Aisin AS69RC 2013–2024, BD part 1061535.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061535.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2013–2022 Dodge / Ram 3500 and 4500; and 2013–2021 Dodge / Ram 5500 (6.7L)
+BD catalogue range: 2013–2024
+Part number: 1061535
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3735,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Stock Mount Dodge 5.9L Cummins 2003–2007 — 1046087",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046087.
+    price: 746.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046087",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-stock-mount-dodge-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-stock-mount-dodge-5-9l-cummins-2003-2007-1046087/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-stock-mount-dodge-5-9l-cummins-2003-2007-1046087/1.webp"],
+    description: `Exhaust Manifold Kit Stock Mount Dodge 5.9L Cummins 2003–2007, BD part 1046087.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046087.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1046087
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3736,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Dodge/RAM 6.7L 2500/3500 Pick-up 2007.5-2018 — 1046065",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046065.
+    price: 745.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046065",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-dodge-ram-6-7l-2500-3500-pick-up-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-2500-3500-pick-up-2007-5-2018-1046065/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-2500-3500-pick-up-2007-5-2018-1046065/1.webp"],
+    description: `Exhaust Manifold Kit Dodge/RAM 6.7L 2500/3500 Pick-up 2007.5-2018, BD part 1046065.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046065.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1046065
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3737,
+    createdAt: 1789430400000,
+    name: "BD Diesel Waste Gated Exhaust Manifold w/T4 40-degree Mount Dodge 5.9L Cummins 1998.5-2007 — 1045947-T4",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045947-T4.
+    price: 682.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045947-T4",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/waste-gated-exhaust-manifold-w-t4-40-degree-mount-dodge-5-9l-cummins-1998-5-2007",
+    thumbnail: "/product-media/engine/bd-waste-gated-exhaust-manifold-w-t4-40-degree-mount-dodge-5-9l-cummins-1-1045947t4/1.webp",
+    images: ["/product-media/engine/bd-waste-gated-exhaust-manifold-w-t4-40-degree-mount-dodge-5-9l-cummins-1-1045947t4/1.webp"],
+    description: `Waste Gated Exhaust Manifold w/T4 40-degree Mount Dodge 5.9L Cummins 1998.5-2007, BD part 1045947-T4.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045947-T4.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
+Part number: 1045947-T4
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3738,
+    createdAt: 1789430400000,
+    name: "BD Diesel Center Link & Tie Rod Kit Chevy/GM Duramax 1500HD 2001–2003 & 2005–2007 & 2500 Hd/3500HD Silverado / Sierra 2001–2010 — 1032150",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032150.
+    price: 525.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032150",
+    fitment: "2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L). BD list this part for 2001–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/center-link-tie-rod-kit-chevy-gm-duramax-1500hd-2001-2003-2005-2007-2500-hd-3500hd-silverado-sierra-2001-2010",
+    thumbnail: "/product-media/suspension/bd-center-link-tie-rod-kit-chevy-gm-duramax-1500hd-2001-2003-2005-2007-25-1032150/1.webp",
+    images: ["/product-media/suspension/bd-center-link-tie-rod-kit-chevy-gm-duramax-1500hd-2001-2003-2005-2007-25-1032150/1.webp"],
+    description: `Center Link & Tie Rod Kit Chevy/GM Duramax 1500HD 2001–2003 & 2005–2007 & 2500 Hd/3500HD Silverado / Sierra 2001–2010, BD part 1032150.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032150.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
+BD catalogue range: 2001–2010
+Part number: 1032150
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3739,
+    createdAt: 1789430400000,
+    name: "BD Diesel 6.0L Power Stroke Exhaust Brake (Remote) Automatic Transmission, Stock — 1027145AP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027145AP.
+    price: 2125.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027145AP",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L). Stock option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-exhaust-brake-remote-automatic-transmission",
+    thumbnail: "/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-automatic-transmission-1027145ap/1.webp",
+    images: ["/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-automatic-transmission-1027145ap/1.webp"],
+    description: `6.0L Power Stroke Exhaust Brake (Remote) Automatic Transmission, stock, BD part 1027145AP.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027145AP, the stock option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Option: Stock
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1027145AP
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+Stock
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3740,
+    createdAt: 1789430400000,
+    name: "BD Diesel 6.0L Power Stroke Exhaust Brake (Remote) Automatic Transmission, 4-Inch — 1027146AP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027146AP.
+    price: 2105,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027146AP",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L). 4-Inch option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-exhaust-brake-remote-automatic-transmission",
+    thumbnail: "/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-automatic-transmission-1027146ap/1.webp",
+    images: ["/product-media/engine/bd-6-0l-power-stroke-exhaust-brake-remote-automatic-transmission-1027146ap/1.webp"],
+    description: `6.0L Power Stroke Exhaust Brake (Remote) Automatic Transmission, 4-inch, BD part 1027146AP.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027146AP, the 4-inch option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Option: 4-Inch
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1027146AP
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+4-Inch
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3741,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set Stock Mount RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024 — 1045998",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045998.
+    price: 95.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045998",
+    fitment: "2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L, 6.8L, 6.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-gasket-set-stock-mount-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-ram-3500-4500-5500-cab-chassis-1045998/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-ram-3500-4500-5500-cab-chassis-1045998/1.webp"],
+    description: `Exhaust Manifold Gasket Set Stock Mount RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024, BD part 1045998.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045998.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2019–2024 Dodge / Ram 3500, 4500 and 5500 (6.7L, 6.8L, 6.9L)
+Part number: 1045998
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3742,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set Stock Mount RAM 2500/3500 Pickup 6.7L Cummins 2019–2024 — 1045997",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045997.
+    price: 95.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045997",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-gasket-set-stock-mount-ram-2500-3500-pickup-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-ram-2500-3500-pickup-6-7l-cumm-1045997/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-ram-2500-3500-pickup-6-7l-cumm-1045997/1.webp"],
+    description: `Exhaust Manifold Gasket Set Stock Mount RAM 2500/3500 Pickup 6.7L Cummins 2019–2024, BD part 1045997.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045997.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045997
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3743,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Chevrolet Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016 — 1041459",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041459.
+    price: 535.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041459",
+    fitment: "2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L). BD list this part for 2001–2016; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-duramax-2001-2016",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-1041459/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-1041459/1.webp"],
+    description: `Exhaust Manifold Kit Chevrolet Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016, BD part 1041459.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041459.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L)
+BD catalogue range: 2001–2016
+Part number: 1041459
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3744,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit RAM 2500/3500 Pickup 6.7L Cummins 2019–2024 — 1046069",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046069.
+    price: 809.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046069",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-ram-2500-3500-pickup-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ram-2500-3500-pickup-6-7l-cummins-2019-2024-1046069/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-2500-3500-pickup-6-7l-cummins-2019-2024-1046069/1.webp"],
+    description: `Exhaust Manifold Kit RAM 2500/3500 Pickup 6.7L Cummins 2019–2024, BD part 1046069.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1046069.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: EXHAUST MANIFOLDS
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1046069
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3745,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Control Ford F-250 / F-350 / F-450 / F-550 / F-600 6.2L/6.8L/7.3L Gasoline 2017–2022 — 1036616",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036616.
+    price: 125.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036616",
+    fitment: "2017–2022 Ford F-250 Super Duty and F-350 Super Duty; 2017–2021 Ford F-450 Super Duty and F-550 Super Duty; and 2020–2021 Ford F-600 Super Duty (6.2L, 6.8L, 7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-idle-control-ford-f250-f350-f450-f550-f600-6-2l-6-8l-7-3l-gasoline-2017-2022",
+    thumbnail: "/product-media/electronics/bd-high-idle-control-ford-f-250-f-350-f-450-f-550-f-600-6-2l-6-8l-7-3l-ga-1036616/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-control-ford-f-250-f-350-f-450-f-550-f-600-6-2l-6-8l-7-3l-ga-1036616/1.webp"],
+    description: `High Idle Control Ford F-250 / F-350 / F-450 / F-550 / F-600 6.2L/6.8L/7.3L Gasoline 2017–2022, BD part 1036616.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036616.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2017–2022 Ford F-250 Super Duty and F-350 Super Duty; 2017–2021 Ford F-450 Super Duty and F-550 Super Duty; and 2020–2021 Ford F-600 Super Duty (6.2L, 6.8L, 7.3L)
+Part number: 1036616
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3746,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Passenger Side Chevrolet Silverado 1500 / GMC Sierra 1500 V8 2002–2013 — 1041401",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041401.
+    price: 321.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041401",
+    fitment: "2003 Cadillac Escalade, Escalade Esv and Escalade Ext; 2003 Chevrolet Avalanche 1500, Express 1500, Express 2500, Express 3500, Silverado 1500, Silverado 1500 HD, Silverado 2500, Silverado 2500 HD, Silverado 3500, Suburban 1500, Suburban 2500 and Tahoe; and 2003 GMC Savana 1500, Savana 2500, Savana 3500, Sierra 1500 and Sierra 1500 HD (4.8L, 5.3L, 6.0L). BD list this part for 2002–2013; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-passenger-side-chevrolet-silverado-1500-gmc-sierra-1500-v8-2002-2013",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-passenger-side-chevrolet-silverado-1500-gmc-sierra-15-1041401/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-chevrolet-silverado-1500-gmc-sierra-15-1041401/1.webp"],
+    description: `Exhaust Manifold Passenger Side Chevrolet Silverado 1500 / GMC Sierra 1500 V8 2002–2013, BD part 1041401.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041401.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2003 Cadillac Escalade, Escalade Esv and Escalade Ext; 2003 Chevrolet Avalanche 1500, Express 1500, Express 2500, Express 3500, Silverado 1500, Silverado 1500 HD, Silverado 2500, Silverado 2500 HD, Silverado 3500, Suburban 1500, Suburban 2500 and Tahoe; and 2003 GMC Savana 1500, Savana 2500, Savana 3500, Sierra 1500 and Sierra 1500 HD (4.8L, 5.3L, 6.0L)
+BD catalogue range: 2002–2013
+Part number: 1041401
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3747,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit Chevrolet Silverado 1500 / GMC Sierra 1500 V8 2002–2013 — 1041400",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041400.
+    price: 593.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041400",
+    fitment: "2002–2003 Cadillac Escalade; 2002–2003 Chevrolet Silverado 1500 and Suburban 1500; 2002 Chevrolet Tahoe; 2002 GMC Sierra 1500, Yukon and Yukon XL 1500; 2003 Cadillac Escalade Esv and Escalade Ext; and 2003 Chevrolet Avalanche 1500, Express 1500, Express 2500, Express 3500, Silverado 1500 HD, Silverado 2500, Silverado 2500 HD and Silverado 3500 (4.8L, 5.3L, 6.0L). BD list this part for 2002–2013; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-kit-chevrolet-silverado-1500-gmc-sierra-1500-v8-2002-2013",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-chevrolet-silverado-1500-gmc-sierra-1500-v8-2002--1041400/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-chevrolet-silverado-1500-gmc-sierra-1500-v8-2002--1041400/1.webp"],
+    description: `Exhaust Manifold Kit Chevrolet Silverado 1500 / GMC Sierra 1500 V8 2002–2013, BD part 1041400.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041400.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2002–2003 Cadillac Escalade; 2002–2003 Chevrolet Silverado 1500 and Suburban 1500; 2002 Chevrolet Tahoe; 2002 GMC Sierra 1500, Yukon and Yukon XL 1500; 2003 Cadillac Escalade Esv and Escalade Ext; and 2003 Chevrolet Avalanche 1500, Express 1500, Express 2500, Express 3500, Silverado 1500 HD, Silverado 2500, Silverado 2500 HD and Silverado 3500 (4.8L, 5.3L, 6.0L)
+BD catalogue range: 2002–2013
+Part number: 1041400
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3748,
+    createdAt: 1789430400000,
+    name: "BD Diesel Waste Gate Regulator Kit — 1045996-WGK",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045996-WGK.
+    price: 85.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045996-WGK",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/waste-gate-regulator-kit",
+    thumbnail: "/product-media/engine/bd-waste-gate-regulator-kit-1045996wgk/1.webp",
+    images: ["/product-media/engine/bd-waste-gate-regulator-kit-1045996wgk/1.webp"],
+    description: `Waste Gate Regulator Kit, BD part 1045996-WGK.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045996-WGK.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
+Part number: 1045996-WGK
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3749,
+    createdAt: 1789430400000,
+    name: "BD Diesel Wastegate Control Valve Dodge 5.9L Cummins (4036054) 2004.5-2007 — 1045921",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045921.
+    price: 215.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045921",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/wastegate-control-valve-dodge-5-9l-cummins-4036054-2004-5-2007",
+    thumbnail: "/product-media/turbocharger/bd-wastegate-control-valve-dodge-5-9l-cummins-4036054-2004-5-2007-1045921/1.webp",
+    images: ["/product-media/turbocharger/bd-wastegate-control-valve-dodge-5-9l-cummins-4036054-2004-5-2007-1045921/1.webp"],
+    description: `Wastegate Control Valve Dodge 5.9L Cummins (4036054) 2004.5-2007, BD part 1045921.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045921.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045921
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3750,
+    createdAt: 1789430400000,
+    name: "BD Diesel 66RFE/68RFE Valvebody w/ Solenoid Dodge/RAM 6.4L HEMI/6.7L Cummins 2008–2018 — 1030467",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030467.
+    price: 1265.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030467",
+    fitment: "2007–2016 Dodge / Ram 2500 and 3500 (6.4L, 6.7L). BD list this part for 2008–2018; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-valve-body-w-solenoid-dodge-ram-6-7l-cummins-2008-2018",
+    thumbnail: "/product-media/transmission/bd-66rfe-68rfe-valvebody-w-solenoid-dodge-ram-6-4l-hemi-6-7l-cummins-2008-1030467/1.webp",
+    images: ["/product-media/transmission/bd-66rfe-68rfe-valvebody-w-solenoid-dodge-ram-6-4l-hemi-6-7l-cummins-2008-1030467/1.webp"],
+    description: `66RFE/68RFE Valvebody w/ Solenoid Dodge/RAM 6.4L HEMI/6.7L Cummins 2008–2018, BD part 1030467.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030467.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2007–2016 Dodge / Ram 2500 and 3500 (6.4L, 6.7L)
+BD catalogue range: 2008–2018
+Part number: 1030467
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3751,
+    createdAt: 1789430400000,
+    name: "BD Diesel 48RE Valve Body with Governor Pressure Solenoid & Transducer Dodge 2003–2007 — 1030423E",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030423E.
+    price: 933.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030423E",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/48re-valve-body-c-w-governor-pressure-solenoid-transducer-dodge-2003-2007",
+    thumbnail: "/product-media/transmission/bd-48re-valve-body-with-governor-pressure-solenoid-transducer-dodge-2003--1030423e/1.webp",
+    images: ["/product-media/transmission/bd-48re-valve-body-with-governor-pressure-solenoid-transducer-dodge-2003--1030423e/1.webp"],
+    description: `48RE Valve Body with Governor Pressure Solenoid & Transducer Dodge 2003–2007, BD part 1030423E.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030423E.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1030423E
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3752,
+    createdAt: 1789430400000,
+    name: "BD Diesel 48RE Valve Body Dodge 2003–2007 — 1030423",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030423.
+    price: 756.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030423",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/48re-valve-body-dodge-2003-2007",
+    thumbnail: "/product-media/transmission/bd-48re-valve-body-dodge-2003-2007-1030423/1.webp",
+    images: ["/product-media/transmission/bd-48re-valve-body-dodge-2003-2007-1030423/1.webp"],
+    description: `48RE Valve Body Dodge 2003–2007, BD part 1030423.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030423.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1030423
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3753,
+    createdAt: 1789430400000,
+    name: "BD Diesel 47RE Full Manual Valve Body (1996–2002) Dodge 12-valve & 24-Valve — 1030418-FM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030418-FM.
+    price: 870.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030418-FM",
+    fitment: "1996–2002 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/47re-full-manual-valve-body-1996-2002-dodge-12-valve-24-valve",
+    thumbnail: "/product-media/transmission/bd-47re-full-manual-valve-body-1996-2002-dodge-12-valve-24-valve-1030418fm/1.webp",
+    images: ["/product-media/transmission/bd-47re-full-manual-valve-body-1996-2002-dodge-12-valve-24-valve-1030418fm/1.webp"],
+    description: `47RE Full Manual Valve Body (1996–2002) Dodge 12-valve & 24-Valve, BD part 1030418-FM.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030418-FM.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1996–2002 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1030418-FM
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3754,
+    createdAt: 1789430400000,
+    name: "BD Diesel 47RE Valve Body (1998.5-2002) with Governor Pressure Solenoid & Transducer Dodge 24-valve — 1030418E",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030418E.
+    price: 915.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030418E",
+    fitment: "1998–2002 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/47re-valve-body-1998-5-2002-c-w-governor-pressure-solenoid-transducer-dodge-24-valve",
+    thumbnail: "/product-media/transmission/bd-47re-valve-body-1998-5-2002-with-governor-pressure-solenoid-transducer-1030418e/1.webp",
+    images: ["/product-media/transmission/bd-47re-valve-body-1998-5-2002-with-governor-pressure-solenoid-transducer-1030418e/1.webp"],
+    description: `47RE Valve Body (1998.5-2002) with Governor Pressure Solenoid & Transducer Dodge 24-valve, BD part 1030418E.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030418E.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1998–2002 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1030418E
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3755,
+    createdAt: 1789430400000,
+    name: "BD Diesel 47RE Valve Body (1998.5-2002) Dodge 24-valve — 1030418",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030418.
+    price: 756.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030418",
+    fitment: "1998–2002 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/47re-valve-body-1998-5-2002-dodge-24-valve",
+    thumbnail: "/product-media/transmission/bd-47re-valve-body-1998-5-2002-dodge-24-valve-1030418/1.webp",
+    images: ["/product-media/transmission/bd-47re-valve-body-1998-5-2002-dodge-24-valve-1030418/1.webp"],
+    description: `47RE Valve Body (1998.5-2002) Dodge 24-valve, BD part 1030418.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030418.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1998–2002 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1030418
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3756,
+    createdAt: 1789430400000,
+    name: "BD Diesel 47RE Valve Body (1996–1998) Dodge 12-valve — 1030416",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030416.
+    price: 756.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030416",
+    fitment: "1996–1998 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/47re-valve-body-1996-1998-dodge-12-valve",
+    thumbnail: "/product-media/transmission/bd-47re-valve-body-1996-1998-dodge-12-valve-1030416/1.webp",
+    images: ["/product-media/transmission/bd-47re-valve-body-1996-1998-dodge-12-valve-1030416/1.webp"],
+    description: `47RE Valve Body (1996–1998) Dodge 12-valve, BD part 1030416.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030416.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1996–1998 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1030416
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3757,
+    createdAt: 1789430400000,
+    name: "BD Diesel Steering Upgrade Kit Chevy/GM Duramax 1500HD 2001–2003 & 2005–2007 & 2500 Hd/3500HD Silverado / Sierra 2001–2010 — 1032160",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032160.
+    price: 896.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032160",
+    fitment: "2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L). BD list this part for 2001–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/steering-upgrade-kit-chevy-gmc-duramax-1500hd-2001-2003-2005-2007-2500-hd-3500hd-silverado-sierra-2001-2010",
+    thumbnail: "/product-media/suspension/bd-steering-upgrade-kit-chevy-gm-duramax-1500hd-2001-2003-2005-2007-2500--1032160/1.webp",
+    images: ["/product-media/suspension/bd-steering-upgrade-kit-chevy-gm-duramax-1500hd-2001-2003-2005-2007-2500--1032160/1.webp"],
+    description: `Steering Upgrade Kit Chevy/GM Duramax 1500HD 2001–2003 & 2005–2007 & 2500 Hd/3500HD Silverado / Sierra 2001–2010, BD part 1032160.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032160.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
+BD catalogue range: 2001–2010
+Part number: 1032160
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3758,
+    createdAt: 1789430400000,
+    name: "BD Diesel Sector Shaft Bolt 30mm Flange - Dodge/RAM 2003-up — 1302074",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1302074.
+    price: 33.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1302074",
+    fitment: "2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/sector-shaft-bolt-30mm-flange-dodge-ram-2003-up",
+    thumbnail: "/product-media/suspension/bd-sector-shaft-bolt-30mm-flange-dodge-ram-2003-up-1302074/1.webp",
+    images: ["/product-media/suspension/bd-sector-shaft-bolt-30mm-flange-dodge-ram-2003-up-1302074/1.webp"],
+    description: `Sector Shaft Bolt 30mm Flange - Dodge/RAM 2003-up, BD part 1302074.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1302074.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
+Part number: 1302074
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3759,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbochargers Ford 3.5L EcoBoost F-150 2011–2012 — 1047620",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047620.
+    price: 2081.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047620",
+    fitment: "2011–2012 Ford F-150 (3.5L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbochargers-ford-3-5l-ecoboost-f-150-2011-2012",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbochargers-ford-3-5l-ecoboost-f-150-2011-2012-1047620/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbochargers-ford-3-5l-ecoboost-f-150-2011-2012-1047620/1.webp"],
+    description: `Screamer Turbochargers Ford 3.5L EcoBoost F-150 2011–2012, BD part 1047620.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1047620.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2011–2012 Ford F-150 (3.5L)
+Part number: 1047620
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3760,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Mounting Gasket Kit Ford 6.0L Power Stroke 2003–2007 — 1045819",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045819.
+    price: 22.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045819",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-mounting-gasket-kit-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/turbocharger/bd-turbo-mounting-gasket-kit-ford-6-0l-power-stroke-2003-2007-1045819/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-mounting-gasket-kit-ford-6-0l-power-stroke-2003-2007-1045819/1.webp"],
+    description: `Turbo Mounting Gasket Kit Ford 6.0L Power Stroke 2003–2007, BD part 1045819.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045819.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1045819
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3761,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer HE300VG Turbo RAM 6.7L Cummins 2019–2024 — 1045772",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045772.
+    price: 3294.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045772",
+    fitment: "2019–2024 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-he300vg-turbo-ram-6-7l-cummins-2019-2022",
+    thumbnail: "/product-media/turbocharger/bd-screamer-he300vg-turbo-ram-6-7l-cummins-2019-2024-1045772/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-he300vg-turbo-ram-6-7l-cummins-2019-2024-1045772/1.webp"],
+    description: `Screamer HE300VG Turbo RAM 6.7L Cummins 2019–2024, BD part 1045772.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045772.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2019–2024 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: 1045772
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3762,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Intake Horn Chevy/GM 2500HD & 3500HD 6.6L Duramax 2017–2022 — 1045630",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045630.
+    price: 166.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045630",
+    fitment: "2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L). BD list this part for 2017–2022; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-intake-horn-chevy-gm-2500hd-3500hd-6-6l-duramax-2017-2022",
+    thumbnail: "/product-media/engine/bd-turbo-intake-horn-chevy-gm-2500hd-3500hd-6-6l-duramax-2017-2022-1045630/1.webp",
+    images: ["/product-media/engine/bd-turbo-intake-horn-chevy-gm-2500hd-3500hd-6-6l-duramax-2017-2022-1045630/1.webp"],
+    description: `Turbo Intake Horn Chevy/GM 2500HD & 3500HD 6.6L Duramax 2017–2022, BD part 1045630.
+
+The factory intake grid heater plate sits directly in the path of everything the turbocharger pushes into the engine, and it is a real restriction once airflow goes up.
+
+Removing the grid heating element and fitting BD's open grid plate increases the opening by 35%, which takes the bottleneck out of the intake path.
+
+It pairs with BD's X-Flow intake elbow, and the two together are what make the difference rather than either alone.
+
+BD list this as part 1045630.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Air Horn
+Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
+BD catalogue range: 2017–2022
+Part number: 1045630
+
+Highlights
+
+35% larger intake opening
+Removes the factory grid restriction
+Pairs with the X-Flow intake elbow
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3763,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold (single) Ford 6.4L Power Stroke 2008–2010 — 1041487",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041487.
+    price: 305.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041487",
+    fitment: "2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-single-ford-6-4l-power-stroke-2008-2010",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-single-ford-6-4l-power-stroke-2008-2010-1041487/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-single-ford-6-4l-power-stroke-2008-2010-1041487/1.webp"],
+    description: `Exhaust Manifold (single) Ford 6.4L Power Stroke 2008–2010, BD part 1041487.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041487.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L)
+Part number: 1041487
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3764,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Control Ford F-series Superduty F-250 / F-350 / F-450 / F-550 / F-600 2023+ — 1036613",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036613.
+    price: 126.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036613",
+    fitment: "2023–2025 Ford F-250 Super Duty and F-350 Super Duty; and 2023–2024 Ford F-450 Super Duty, F-550 Super Duty and F-600 Super Duty (6.7L, 6.8L, 7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-idle-control-ford-6-7l-power-stroke-f-series-superduty-f250-f350-f450-f550-f600-2023",
+    thumbnail: "/product-media/electronics/bd-high-idle-control-ford-f-series-superduty-f-250-f-350-f-450-f-550-f-60-1036613/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-control-ford-f-series-superduty-f-250-f-350-f-450-f-550-f-60-1036613/1.webp"],
+    description: `High Idle Control Ford F-series Superduty F-250 / F-350 / F-450 / F-550 / F-600 2023+, BD part 1036613.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036613.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2023–2025 Ford F-250 Super Duty and F-350 Super Duty; and 2023–2024 Ford F-450 Super Duty, F-550 Super Duty and F-600 Super Duty (6.7L, 6.8L, 7.3L)
+Part number: 1036613
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3765,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Kit RAM 4wd 2500 2014–2025 / 3500 2013–2025 — 1032018",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032018.
+    price: 428.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032018",
+    fitment: "2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L). BD list this part for 2013–2025; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/track-bar-kit-ram-4wd-2500-2014-2022-3500-2013-2022",
+    thumbnail: "/product-media/suspension/bd-track-bar-kit-ram-4wd-2500-2014-2025-3500-2013-2025-1032018/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-kit-ram-4wd-2500-2014-2025-3500-2013-2025-1032018/1.webp"],
+    description: `Track Bar Kit RAM 4wd 2500 2014–2025 / 3500 2013–2025, BD part 1032018.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032018.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
+BD catalogue range: 2013–2025
+Part number: 1032018
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3766,
+    createdAt: 1789430400000,
+    name: "BD Diesel Electronic Exhaust Brake 4.0in RAM 2500/3500 6.7L Cummins 2007.5-2012 — 1027346",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027346.
+    price: 1077.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027346",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/electronic-exhaust-brake-4-0in-ram-2500-3500-6-7l-cummins-2007-5-2017",
+    thumbnail: "/product-media/engine/bd-electronic-exhaust-brake-4-0in-ram-2500-3500-6-7l-cummins-2007-5-2012-1027346/1.webp",
+    images: ["/product-media/engine/bd-electronic-exhaust-brake-4-0in-ram-2500-3500-6-7l-cummins-2007-5-2012-1027346/1.webp"],
+    description: `Electronic Exhaust Brake 4.0in RAM 2500/3500 6.7L Cummins 2007.5-2012, BD part 1027346.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027346.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1027346
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3767,
+    createdAt: 1789430400000,
+    name: "BD Diesel Coolant Tube Relocation Kit, Howler Turbo - Dodge Automatic 2003–2005 5.9L — 1047137",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047137.
+    price: 194.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047137",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/coolant-tube-relocation-kit-howler-turbo-dodge-automatic-2003-2005-5-9l",
+    thumbnail: "/product-media/turbocharger/bd-coolant-tube-relocation-kit-howler-turbo-dodge-automatic-2003-2005-5-9-1047137/1.webp",
+    images: ["/product-media/turbocharger/bd-coolant-tube-relocation-kit-howler-turbo-dodge-automatic-2003-2005-5-9-1047137/1.webp"],
+    description: `Coolant Tube Relocation Kit, Howler Turbo - Dodge Automatic 2003–2005 5.9L, BD part 1047137.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1047137.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1047137
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3768,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set Cummins 6.7L RAM 2013–2018 Cab & Chassis — 1045994",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045994.
+    price: 120.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045994",
+    fitment: "2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-gasket-set-cummins-6-7l-ram-2013-2018-cab-chassis",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-cummins-6-7l-ram-2013-2018-cab-chassis-1045994/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-cummins-6-7l-ram-2013-2018-cab-chassis-1045994/1.webp"],
+    description: `Exhaust Manifold Gasket Set Cummins 6.7L RAM 2013–2018 Cab & Chassis, BD part 1045994.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045994.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2013–2018 Dodge / Ram 3500, 4500 and 5500 (6.7L)
+Part number: 1045994
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3769,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Actuator HE300VG Dodge 6.7L Cummins 2013–2024 — 1045923",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045923.
+    price: 2239.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045923",
+    fitment: "2013–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-actuator-he300vg-dodge-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/turbocharger/bd-turbo-actuator-he300vg-dodge-6-7l-cummins-2013-2024-1045923/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-actuator-he300vg-dodge-6-7l-cummins-2013-2024-1045923/1.webp"],
+    description: `Turbo Actuator HE300VG Dodge 6.7L Cummins 2013–2024, BD part 1045923.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045923.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2013–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045923
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3770,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Stock Replacement He351cw Dodge 5.9L Cummins 2004.5-2007 — 1045767",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045767.
+    price: 1304.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045767",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-stock-replacement-he351cw-dodge-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/turbocharger/bd-turbo-stock-replacement-he351cw-dodge-5-9l-cummins-2004-5-2007-1045767/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-stock-replacement-he351cw-dodge-5-9l-cummins-2004-5-2007-1045767/1.webp"],
+    description: `Turbo Stock Replacement He351cw Dodge 5.9L Cummins 2004.5-2007, BD part 1045767.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045767.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045767
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3771,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Elbow, Turbo Cast Dodge 5.9L Cummins 2004.5-2007 — 1045100",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045100.
+    price: 112.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045100",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-elbow-turbo-cast-dodge-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/turbocharger/bd-exhaust-elbow-turbo-cast-dodge-5-9l-cummins-2004-5-2007-1045100/1.webp",
+    images: ["/product-media/turbocharger/bd-exhaust-elbow-turbo-cast-dodge-5-9l-cummins-2004-5-2007-1045100/1.webp"],
+    description: `Exhaust Elbow, Turbo Cast Dodge 5.9L Cummins 2004.5-2007, BD part 1045100.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045100.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045100
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3772,
+    createdAt: 1789430400000,
+    name: "BD Diesel Valve Body Dodge 47RH 1994–1995 — 1030415",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030415.
+    price: 756.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030415",
+    fitment: "1994–1995 Dodge / Ram 2500; and 1995 Dodge / Ram 3500 (5.9L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/valve-body-dodge-47rh-1994-1995",
+    thumbnail: "/product-media/transmission/bd-valve-body-dodge-47rh-1994-1995-1030415/1.webp",
+    images: ["/product-media/transmission/bd-valve-body-dodge-47rh-1994-1995-1030415/1.webp"],
+    description: `Valve Body Dodge 47RH 1994–1995, BD part 1030415.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1030415.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 1994–1995 Dodge / Ram 2500; and 1995 Dodge / Ram 3500 (5.9L)
+Part number: 1030415
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3773,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track BAR Bracket Ford SuperDuty F-250/F-350 4wd 2008–2022 — 1032113",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032113.
+    price: 241.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032113",
+    fitment: "2008–2013 Ford F-250 Super Duty and F-350 Super Duty (5.4L, 6.2L, 6.4L, 6.7L, 6.8L). BD list this part for 2008–2022; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/track-bar-bracket-ford-f-250-f-350-superduty-4wd-2008-2021",
+    thumbnail: "/product-media/suspension/bd-track-bar-bracket-ford-superduty-f-250-f-350-4wd-2008-2022-1032113/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-bracket-ford-superduty-f-250-f-350-4wd-2008-2022-1032113/1.webp"],
+    description: `Track BAR Bracket Ford SuperDuty F-250/F-350 4wd 2008–2022, BD part 1032113.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032113.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2008–2013 Ford F-250 Super Duty and F-350 Super Duty (5.4L, 6.2L, 6.4L, 6.7L, 6.8L)
+BD catalogue range: 2008–2022
+Part number: 1032113
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3774,
+    createdAt: 1789430400000,
+    name: "BD Diesel Sway Bar End Link Bushing Kit Dodge Cummins 2013+ — 1312068",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1312068.
+    price: 110.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1312068",
+    fitment: "2013–2018 Dodge / Ram 2500; and 2013–2017 Dodge / Ram 3500 (5.7L, 6.4L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bushing-kit-1032052-sway-bar-end-link-dodge-2013",
+    thumbnail: "/product-media/suspension/bd-sway-bar-end-link-bushing-kit-dodge-cummins-2013-1312068/1.webp",
+    images: ["/product-media/suspension/bd-sway-bar-end-link-bushing-kit-dodge-cummins-2013-1312068/1.webp"],
+    description: `Sway Bar End Link Bushing Kit Dodge Cummins 2013+, BD part 1312068.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1312068.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2013–2018 Dodge / Ram 2500; and 2013–2017 Dodge / Ram 3500 (5.7L, 6.4L, 6.7L)
+Part number: 1312068
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3775,
+    createdAt: 1789430400000,
+    name: "BD Diesel Sway Bar End Link Bushing Kit Dodge Cummins 2010–2012 — 1312062",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1312062.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1312062",
+    fitment: "2010–2012 Dodge / Ram 2500 and 3500 (5.7L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bushing-kit-1032051-sway-bar-end-link-dodge-2010-2012",
+    thumbnail: "/product-media/suspension/bd-sway-bar-end-link-bushing-kit-dodge-cummins-2010-2012-1312062/1.webp",
+    images: ["/product-media/suspension/bd-sway-bar-end-link-bushing-kit-dodge-cummins-2010-2012-1312062/1.webp"],
+    description: `Sway Bar End Link Bushing Kit Dodge Cummins 2010–2012, BD part 1312062.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1312062.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2010–2012 Dodge / Ram 2500 and 3500 (5.7L, 6.7L)
+Part number: 1312062
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3776,
+    createdAt: 1789430400000,
+    name: "BD Diesel Tie Rod Kit Chevy/GM Duramax 2500 HD / 3500HD Silverado/sierra 2011–2024 — 1032124",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032124.
+    price: 273.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032124",
+    fitment: "2011–2014 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2011–2014 GMC Sierra 2500 HD; and 2011–2013 GMC Sierra 3500 HD (6.0L, 6.6L). BD list this part for 2011–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/tie-rod-upgrade-chevy-gmc-2011-2019-2500-hd-3500hd-silverado-sierra",
+    thumbnail: "/product-media/suspension/bd-tie-rod-kit-chevy-gm-duramax-2500-hd-3500hd-silverado-sierra-2011-2024-1032124/1.webp",
+    images: ["/product-media/suspension/bd-tie-rod-kit-chevy-gm-duramax-2500-hd-3500hd-silverado-sierra-2011-2024-1032124/1.webp"],
+    description: `Tie Rod Kit Chevy/GM Duramax 2500 HD / 3500HD Silverado/sierra 2011–2024, BD part 1032124.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032124.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2011–2014 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2011–2014 GMC Sierra 2500 HD; and 2011–2013 GMC Sierra 3500 HD (6.0L, 6.6L)
+BD catalogue range: 2011–2024
+Part number: 1032124
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3777,
+    createdAt: 1789430400000,
+    name: "BD Diesel Sway Bar End Link Kit Dodge/RAM 2500 4wd 2014–2025 & 3500 4wd 2013–2025 — 1032052",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032052.
+    price: 199.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032052",
+    fitment: "2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L). BD list this part for 2013–2025; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-sway-bar-end-link-kit-2013-2021-2500-3500-4wd",
+    thumbnail: "/product-media/suspension/bd-sway-bar-end-link-kit-dodge-ram-2500-4wd-2014-2025-3500-4wd-2013-2025-1032052/1.webp",
+    images: ["/product-media/suspension/bd-sway-bar-end-link-kit-dodge-ram-2500-4wd-2014-2025-3500-4wd-2013-2025-1032052/1.webp"],
+    description: `Sway Bar End Link Kit Dodge/RAM 2500 4wd 2014–2025 & 3500 4wd 2013–2025, BD part 1032052.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032052.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
+BD catalogue range: 2013–2025
+Part number: 1032052
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3778,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake (remote) w/NON-VGT Turbo & 4-INCH Exhaust KIT with AIR Compressor Dodge 6.7L Cummins 2007.5-2017 — 1027344",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027344.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027344",
+    fitment: "2007–2017 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-exhaust-brake-remote-dodge-2007-5-2017-w-non-vgt-turbo-4in-exhaust-kit-c-w-air-compressor",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-remote-w-non-vgt-turbo-4-inch-exhaust-kit-with-air-compr-1027344/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-remote-w-non-vgt-turbo-4-inch-exhaust-kit-with-air-compr-1027344/1.webp"],
+    description: `Exhaust Brake (remote) w/NON-VGT Turbo & 4-INCH Exhaust KIT with AIR Compressor Dodge 6.7L Cummins 2007.5-2017, BD part 1027344.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027344.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2007–2017 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1027344
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3779,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 Vw/audi/porsche — 1057942",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057942.
+    price: 302.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057942",
+    fitment: "2005–2007 Porsche Boxster; 2006–2007 Audi A3 and A3 Quattro; 2006–2007 Porsche 911 and Cayman; 2006 Volkswagen Gti, Passat and Rabbit; 2006–2007 Volkswagen Jetta; 2007 Audi S6; and 2007 Volkswagen Eos (1.9L, 2.0L, 2.5L, 2.7L, 3.2L, 3.4L, 3.6L, 3.8L, 5.2L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-vw-audi-porsche-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-vw-audi-porsche-1057942/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-vw-audi-porsche-1057942/1.webp"],
+    description: `TS Booster V3.0 Vw/audi/porsche, BD part 1057942.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057942.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2005–2007 Porsche Boxster; 2006–2007 Audi A3 and A3 Quattro; 2006–2007 Porsche 911 and Cayman; 2006 Volkswagen Gti, Passat and Rabbit; 2006–2007 Volkswagen Jetta; 2007 Audi S6; and 2007 Volkswagen Eos (1.9L, 2.0L, 2.5L, 2.7L, 3.2L, 3.4L, 3.6L, 3.8L, 5.2L)
+Part number: 1057942
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3780,
+    createdAt: 1789430400000,
+    name: "BD Diesel Sway Bar End Link Kit Dodge/RAM 2500 4wd 2010–2013 & 3500 4wd 2010–2012 — 1032051",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032051.
+    price: 195.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032051",
+    fitment: "2010–2013 Dodge / Ram 2500; and 2010–2012 Dodge / Ram 3500 (5.7L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-sway-bar-end-link-kit-2010-2012-2500-3500-4wd",
+    thumbnail: "/product-media/suspension/bd-sway-bar-end-link-kit-dodge-ram-2500-4wd-2010-2013-3500-4wd-2010-2012-1032051/1.webp",
+    images: ["/product-media/suspension/bd-sway-bar-end-link-kit-dodge-ram-2500-4wd-2010-2013-3500-4wd-2010-2012-1032051/1.webp"],
+    description: `Sway Bar End Link Kit Dodge/RAM 2500 4wd 2010–2013 & 3500 4wd 2010–2012, BD part 1032051.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032051.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2010–2013 Dodge / Ram 2500; and 2010–2012 Dodge / Ram 3500 (5.7L, 6.7L)
+Part number: 1032051
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3781,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 Chevy/GMC/Dodge/Jeep/Fiat/Nissan (Check application listings) — 1057938",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057938.
+    price: 279.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057938",
+    fitment: "2004–2008 Chevrolet Colorado; 2004–2007 GMC Canyon; 2006–2007 Chevrolet Hhr; 2006–2007 Hummer H3; and 2008 Chevrolet Express 1500 and Express 2500 (2.2L, 2.4L, 2.8L, 2.9L, 3.5L, 3.7L, 4.3L, 4.8L, 5.3L, 6.0L, 6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-chevy-gmc-dodge-jeep-fiat-nissan-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-chevy-gmc-dodge-jeep-fiat-nissan-check-application-lis-1057938/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-chevy-gmc-dodge-jeep-fiat-nissan-check-application-lis-1057938/1.webp"],
+    description: `TS Booster V3.0 Chevy/GMC/Dodge/Jeep/Fiat/Nissan (Check application listings), BD part 1057938.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057938.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2004–2008 Chevrolet Colorado; 2004–2007 GMC Canyon; 2006–2007 Chevrolet Hhr; 2006–2007 Hummer H3; and 2008 Chevrolet Express 1500 and Express 2500 (2.2L, 2.4L, 2.8L, 2.9L, 3.5L, 3.7L, 4.3L, 4.8L, 5.3L, 6.0L, 6.6L)
+Part number: 1057938
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3782,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Ford Pick-up 6.7L Power Stroke F-250 / F-350 2015–2016 — 1045828",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045828.
+    price: 3473.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045828",
+    fitment: "2015–2016 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-power-stroke-screamer-turbo-ford-2015-2016-f250-f350-pick-up",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbo-ford-pick-up-6-7l-power-stroke-f-250-f-350-2015-2016-1045828/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbo-ford-pick-up-6-7l-power-stroke-f-250-f-350-2015-2016-1045828/1.webp"],
+    description: `Screamer Turbo Ford Pick-up 6.7L Power Stroke F-250 / F-350 2015–2016, BD part 1045828.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045828.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2015–2016 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Part number: 1045828
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3783,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Ford 6.7L Power Stroke F-250 / F-350 / F-450 / F-550 Pick-up & Cab-Chassis 2017–2019 — 1045827",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045827.
+    price: 3264.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045827",
+    fitment: "2017–2019 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-power-stroke-screamer-turbo-ford-2017-2019-f250-f350-f450-f550-pick-up-cab-chassis",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbo-ford-6-7l-power-stroke-f-250-f-350-f-450-f-550-pick-up--1045827/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbo-ford-6-7l-power-stroke-f-250-f-350-f-450-f-550-pick-up--1045827/1.webp"],
+    description: `Screamer Turbo Ford 6.7L Power Stroke F-250 / F-350 / F-450 / F-550 Pick-up & Cab-Chassis 2017–2019, BD part 1045827.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045827.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2017–2019 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
+Part number: 1045827
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3784,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake (remote) w/NON-VGT Turbo & 5-INCH Exhaust KIT with AIR Compressor Dodge 6.7L Cummins 2007.5-2017 — 1027345",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027345.
+    price: 1708.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027345",
+    fitment: "2007–2017 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-exhaust-brake-remote-dodge-2007-5-2017-w-non-vgt-turbo-5-0in-exhaust-kit-c-w-air-compressor",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-remote-w-non-vgt-turbo-5-inch-exhaust-kit-with-air-compr-1027345/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-remote-w-non-vgt-turbo-5-inch-exhaust-kit-with-air-compr-1027345/1.webp"],
+    description: `Exhaust Brake (remote) w/NON-VGT Turbo & 5-INCH Exhaust KIT with AIR Compressor Dodge 6.7L Cummins 2007.5-2017, BD part 1027345.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027345.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2007–2017 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1027345
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3785,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Bolt & Spacer Kit - Ford F-250/F-350 6.0L Power Stroke 2003–2007 — 1041483",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041483.
+    price: 64.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041483",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-manifold-bolt-spacer-kit-ford-6-0l-powerstroke-2003-2007-f250-f350",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-bolt-spacer-kit-ford-f-250-f-350-6-0l-power-stroke-20-1041483/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-bolt-spacer-kit-ford-f-250-f-350-6-0l-power-stroke-20-1041483/1.webp"],
+    description: `Exhaust Manifold Bolt & Spacer Kit - Ford F-250/F-350 6.0L Power Stroke 2003–2007, BD part 1041483.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1041483.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1041483
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3786,
+    createdAt: 1789430400000,
+    name: "BD Diesel Stud Install Tool M8x1.25 — 1462434",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1462434.
+    price: 26.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1462434",
+    fitment: "2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/stud-install-tool-m8x1-25",
+    thumbnail: "/product-media/engine/bd-stud-install-tool-m8x1-25-1462434/1.webp",
+    images: ["/product-media/engine/bd-stud-install-tool-m8x1-25-1462434/1.webp"],
+    description: `Stud Install Tool M8x1.25, BD part 1462434.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1462434.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
+Part number: 1462434
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3787,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Sleeve 16mm (1032013-F Kit) Dodge 2007–2012 — 1302058",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1302058.
+    price: 15.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1302058",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/track-bar-sleeve-16mm-dodge-2007-2012-1032013-f-kit",
+    thumbnail: "/product-media/suspension/bd-track-bar-sleeve-16mm-1032013-f-kit-dodge-2007-2012-1302058/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-sleeve-16mm-1032013-f-kit-dodge-2007-2012-1302058/1.webp"],
+    description: `Track Bar Sleeve 16mm (1032013-F Kit) Dodge 2007–2012, BD part 1302058.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1302058.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L)
+Part number: 1302058
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3788,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 Toyota/Subaru (Check application listings) — 1057940",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057940.
+    price: 305.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057940",
+    fitment: "2005–2008 Toyota Avalon; 2006–2008 Toyota Rav4; 2007–2008 Toyota Camry and Tundra; 2008 Subaru Outback; 2008 Toyota Corolla and Sequoia; and 2009 Subaru Forester, Impreza and Legacy (1.8L, 2.4L, 2.5L, 3.0L, 3.5L, 4.0L, 4.7L, 5.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-toyota-subaru-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-toyota-subaru-check-application-listings-1057940/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-toyota-subaru-check-application-listings-1057940/1.webp"],
+    description: `TS Booster V3.0 Toyota/Subaru (Check application listings), BD part 1057940.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057940.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2005–2008 Toyota Avalon; 2006–2008 Toyota Rav4; 2007–2008 Toyota Camry and Tundra; 2008 Subaru Outback; 2008 Toyota Corolla and Sequoia; and 2009 Subaru Forester, Impreza and Legacy (1.8L, 2.4L, 2.5L, 3.0L, 3.5L, 4.0L, 4.7L, 5.7L)
+Part number: 1057940
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3789,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 Toyota (Check application listings) — 1057939",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057939.
+    price: 279.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057939",
+    fitment: "2003–2007 Toyota 4runner; 2004–2007 Toyota Highlander, Prius and Sienna; 2005–2007 Toyota Tacoma; and 2007 Toyota Fj Cruiser (1.5L, 2.4L, 2.7L, 3.3L, 3.5L, 4.0L, 4.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-toyota-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-toyota-check-application-listings-1057939/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-toyota-check-application-listings-1057939/1.webp"],
+    description: `TS Booster V3.0 Toyota (Check application listings), BD part 1057939.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057939.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2003–2007 Toyota 4runner; 2004–2007 Toyota Highlander, Prius and Sienna; 2005–2007 Toyota Tacoma; and 2007 Toyota Fj Cruiser (1.5L, 2.4L, 2.7L, 3.3L, 3.5L, 4.0L, 4.7L)
+Part number: 1057939
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3790,
+    createdAt: 1789430400000,
+    name: "BD Diesel TS Booster V3.0 Chevy/GMC (Check application listings) — 1057937",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057937.
+    price: 279.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057937",
+    fitment: "2007–2008 Cadillac Escalade and Escalade Esv; 2007–2008 Chevrolet Avalanche and Silverado 1500; 2007 Chevrolet Silverado 2500 HD, Silverado 3500 Classic, Silverado 3500 HD and Tahoe; and 2007 GMC Sierra 1500, Sierra 2500 HD, Sierra 3500 HD, Yukon, Yukon XL 1500 and Yukon XL 2500 (4.3L, 4.8L, 5.3L, 6.0L, 6.2L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ts-booster-v3-0-chevy-gmc-check-application-listings",
+    thumbnail: "/product-media/electronics/bd-ts-booster-v3-0-chevy-gmc-check-application-listings-1057937/1.webp",
+    images: ["/product-media/electronics/bd-ts-booster-v3-0-chevy-gmc-check-application-listings-1057937/1.webp"],
+    description: `TS Booster V3.0 Chevy/GMC (Check application listings), BD part 1057937.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057937.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2007–2008 Cadillac Escalade and Escalade Esv; 2007–2008 Chevrolet Avalanche and Silverado 1500; 2007 Chevrolet Silverado 2500 HD, Silverado 3500 Classic, Silverado 3500 HD and Tahoe; and 2007 GMC Sierra 1500, Sierra 2500 HD, Sierra 3500 HD, Yukon, Yukon XL 1500 and Yukon XL 2500 (4.3L, 4.8L, 5.3L, 6.0L, 6.2L)
+Part number: 1057937
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3791,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Stock Replacement HE351 Dodge Pick-up 6.7L Cummins 2007.5-2012 — 1045775",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045775.
+    price: 1949.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045775",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-turbo-stock-replacement-dodge-2007-5-2012-pick-up-he351",
+    thumbnail: "/product-media/turbocharger/bd-turbo-stock-replacement-he351-dodge-pick-up-6-7l-cummins-2007-5-2012-1045775/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-stock-replacement-he351-dodge-pick-up-6-7l-cummins-2007-5-2012-1045775/1.webp"],
+    description: `Turbo Stock Replacement HE351 Dodge Pick-up 6.7L Cummins 2007.5-2012, BD part 1045775.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045775.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Part number: 1045775
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3792,
+    createdAt: 1789430400000,
+    name: "BD Diesel Cam Caster Adjusting Kit - Ford Power Stroke F-250/F-350 4wd & F-450/F-550 2wd/4wd 2011–2022 — 1032103",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032103.
+    price: 335.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032103",
+    fitment: "2011–2014 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty; and 2011–2013 Ford F-550 Super Duty (6.2L, 6.7L, 6.8L). BD list this part for 2011–2022; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/cam-caster-adjusting-kit-ford-2011-2020-f250-f350-2wd-f450-f550-2wd-4wd",
+    thumbnail: "/product-media/suspension/bd-cam-caster-adjusting-kit-ford-power-stroke-f-250-f-350-4wd-f-450-f-550-1032103/1.webp",
+    images: ["/product-media/suspension/bd-cam-caster-adjusting-kit-ford-power-stroke-f-250-f-350-4wd-f-450-f-550-1032103/1.webp"],
+    description: `Cam Caster Adjusting Kit - Ford Power Stroke F-250/F-350 4wd & F-450/F-550 2wd/4wd 2011–2022, BD part 1032103.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032103.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2011–2014 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty; and 2011–2013 Ford F-550 Super Duty (6.2L, 6.7L, 6.8L)
+BD catalogue range: 2011–2022
+Part number: 1032103
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3793,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Stage 2 GT37 Retrofit Turbo Kit - Ford 6.7L Power Stroke F-250/F-350 2011–2014 & F-450/F-550 2011–2016 — 1045825",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045825.
+    price: 4653.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045825",
+    fitment: "2011–2014 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2016 Ford F-450 Super Duty and F-550 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-power-stroke-screamer-retrofit-turbo-kit-ford-2011-2014-f250-f350-2011-2016-f450-f550",
+    thumbnail: "/product-media/turbocharger/bd-screamer-stage-2-gt37-retrofit-turbo-kit-ford-6-7l-power-stroke-f-250--1045825/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-stage-2-gt37-retrofit-turbo-kit-ford-6-7l-power-stroke-f-250--1045825/1.webp"],
+    description: `Screamer Stage 2 GT37 Retrofit Turbo Kit - Ford 6.7L Power Stroke F-250/F-350 2011–2014 & F-450/F-550 2011–2016, BD part 1045825.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045825.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2011–2014 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2016 Ford F-450 Super Duty and F-550 Super Duty (6.7L)
+Part number: 1045825
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3794,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Bolt and Spacer Kit Dodge 5.9L/6.7L Cummins 1998.5-2024 — 1045982",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045982.
+    price: 85.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045982",
+    fitment: "1998–2011 Dodge / Ram 2500; and 1998–2010 Dodge / Ram 3500 (5.9L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-6-7l-cummins-exhaust-manifold-bolt-and-spacer-kit-dodge-1998-5-2018",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-bolt-and-spacer-kit-dodge-5-9l-6-7l-cummins-1998-5-20-1045982/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-bolt-and-spacer-kit-dodge-5-9l-6-7l-cummins-1998-5-20-1045982/1.webp"],
+    description: `Exhaust Manifold Bolt and Spacer Kit Dodge 5.9L/6.7L Cummins 1998.5-2024, BD part 1045982.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045982.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2011 Dodge / Ram 2500; and 1998–2010 Dodge / Ram 3500 (5.9L, 6.7L)
+Part number: 1045982
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3795,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Kit Ford Superduty F-250/F-350 4wd 2017–2026 — 1032111",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032111.
+    price: 503.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032111",
+    fitment: "2017–2024 Ford F-250 Super Duty; and 2017–2023 Ford F-350 Super Duty (6.2L, 6.7L). BD list this part for 2017–2026; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ford-track-bar-kit-2017-2019-superduty-f250-f350-f450-f550-4wd",
+    thumbnail: "/product-media/suspension/bd-track-bar-kit-ford-superduty-f-250-f-350-4wd-2017-2026-1032111/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-kit-ford-superduty-f-250-f-350-4wd-2017-2026-1032111/1.webp"],
+    description: `Track Bar Kit Ford Superduty F-250/F-350 4wd 2017–2026, BD part 1032111.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032111.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2017–2024 Ford F-250 Super Duty; and 2017–2023 Ford F-350 Super Duty (6.2L, 6.7L)
+BD catalogue range: 2017–2026
+Part number: 1032111
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3796,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate w/6-bolt converter Ford 6.7L Power Stroke 6R140 2011–2019 — 1041245",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041245.
+    price: 599.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041245",
+    fitment: "2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L). BD list this part for 2011–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/flexplate-6-7l-powerstroke-6r140-ford-2011-2019-w-6-bolt-converter",
+    thumbnail: "/product-media/transmission/bd-flexplate-w-6-bolt-converter-ford-6-7l-power-stroke-6r140-2011-2019-1041245/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-w-6-bolt-converter-ford-6-7l-power-stroke-6r140-2011-2019-1041245/1.webp"],
+    description: `Flexplate w/6-bolt converter Ford 6.7L Power Stroke 6R140 2011–2019, BD part 1041245.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041245.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
+BD catalogue range: 2011–2019
+Part number: 1041245
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3797,
+    createdAt: 1789430400000,
+    name: "BD Diesel Howler VGT Complete Install Kit with Controller Dodge 5.9L Cummins 2003–2007 — 1047136",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047136.
+    price: 1387.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047136",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-howler-vgt-complete-install-kit-c-w-controller-dodge-2003-2007",
+    thumbnail: "/product-media/turbocharger/bd-howler-vgt-complete-install-kit-with-controller-dodge-5-9l-cummins-200-1047136/1.webp",
+    images: ["/product-media/turbocharger/bd-howler-vgt-complete-install-kit-with-controller-dodge-5-9l-cummins-200-1047136/1.webp"],
+    description: `Howler VGT Complete Install Kit with Controller Dodge 5.9L Cummins 2003–2007, BD part 1047136.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1047136.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1047136
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3798,
+    createdAt: 1789430400000,
+    name: "BD Diesel Howler VGT Controller Kit Dodge 5.9L Cummins 2003–2007 — 1047135",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047135.
+    price: 802.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047135",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-howler-vgt-controller-kit-dodge-2003-2007",
+    thumbnail: "/product-media/turbocharger/bd-howler-vgt-controller-kit-dodge-5-9l-cummins-2003-2007-1047135/1.webp",
+    images: ["/product-media/turbocharger/bd-howler-vgt-controller-kit-dodge-5-9l-cummins-2003-2007-1047135/1.webp"],
+    description: `Howler VGT Controller Kit Dodge 5.9L Cummins 2003–2007, BD part 1047135.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1047135.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1047135
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3799,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Chevy LLY/LBZ/LMM Duramax 2004.5-2010 — 1045840",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045840.
+    price: 2274.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045840",
+    fitment: "2004–2009 Chevrolet Silverado 2500 HD; 2004–2008 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2005–2006 Chevrolet Silverado 3500; 2006–2007 Chevrolet Express 2500 and Express 3500; 2006–2007 GMC Savana 2500 and Savana 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2008 Chevrolet Silverado 3500 HD; and 2007–2008 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-screamer-turbo-chevy-2004-5-2010-lly-lbz-lmm",
+    thumbnail: "/product-media/turbocharger/bd-screamer-turbo-chevy-lly-lbz-lmm-duramax-2004-5-2010-1045840/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-turbo-chevy-lly-lbz-lmm-duramax-2004-5-2010-1045840/1.webp"],
+    description: `Screamer Turbo Chevy LLY/LBZ/LMM Duramax 2004.5-2010, BD part 1045840.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045840.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2004–2009 Chevrolet Silverado 2500 HD; 2004–2008 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2005–2006 Chevrolet Silverado 3500; 2006–2007 Chevrolet Express 2500 and Express 3500; 2006–2007 GMC Savana 2500 and Savana 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2008 Chevrolet Silverado 3500 HD; and 2007–2008 GMC Sierra 3500 HD (6.6L)
+Part number: 1045840
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3800,
+    createdAt: 1789430400000,
+    name: "BD Diesel Auto/PressueLoc Ford 6.0L Power Stroke 5R110 2003–2007 — 1031300",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031300.
+    price: 678.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031300",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5r110-powerstroke-auto-pressueloc",
+    thumbnail: "/product-media/transmission/bd-auto-pressueloc-ford-6-0l-power-stroke-5r110-2003-2007-1031300/1.webp",
+    images: ["/product-media/transmission/bd-auto-pressueloc-ford-6-0l-power-stroke-5r110-2003-2007-1031300/1.webp"],
+    description: `Auto/PressueLoc Ford 6.0L Power Stroke 5R110 2003–2007, BD part 1031300.
+
+Line pressure is what holds an automatic's clutches. Raise it and the clutches hold more torque without slipping, and slipping is what burns them.
+
+BD's pressure controller boosts line pressure on demand rather than permanently, so the transmission is firm when it is working and normal when it is not.
+
+The LED indicator shows when boosting is active, which is the difference between knowing the system is working and assuming it.
+
+BD list this as part 1031300.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PressureLoc
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1031300
+
+Highlights
+
+Raises line pressure when it is needed
+Less clutch slip under load
+LED shows when boosting is active
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3801,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exchange Turbo GTP38 Pick-up w/o Pedestal Ford 7.3L Power Stroke 1999.5-2003 — 702011-9011-B",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 702011-9011-B.
+    price: 1245.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "702011-9011-B",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exchange-turbo-ford-1999-5-2003-7-3l-gtp38-pick-up-w-o-pedestal",
+    thumbnail: "/product-media/turbocharger/bd-exchange-turbo-gtp38-pick-up-w-o-pedestal-ford-7-3l-power-stroke-1999--7020119011b/1.webp",
+    images: ["/product-media/turbocharger/bd-exchange-turbo-gtp38-pick-up-w-o-pedestal-ford-7-3l-power-stroke-1999--7020119011b/1.webp"],
+    description: `Exchange Turbo GTP38 Pick-up w/o Pedestal Ford 7.3L Power Stroke 1999.5-2003, BD part 702011-9011-B.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 702011-9011-B.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 702011-9011-B
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3802,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Vac/Turbo Mount Dodge Cummins 1999–2002 — 2033137",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2033137.
+    price: 1475.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2033137",
+    fitment: "1999–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-1999-2002-dodge-vac-turbo-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-vac-turbo-mount-dodge-cummins-1999-2002-2033137/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-vac-turbo-mount-dodge-cummins-1999-2002-2033137/1.webp"],
+    description: `Exhaust Brake Vac/Turbo Mount Dodge Cummins 1999–2002, BD part 2033137.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2033137.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1999–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Part number: 2033137
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3803,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake 60psi Vac/Turbo Mount Dodge Cummins 1994–1998 — 2033135",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2033135.
+    price: 1399.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2033135",
+    fitment: "1994–1998 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-1989-1998-dodge-60psi-vac-turbo-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-60psi-vac-turbo-mount-dodge-cummins-1994-1998-2033135/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-60psi-vac-turbo-mount-dodge-cummins-1994-1998-2033135/1.webp"],
+    description: `Exhaust Brake 60psi Vac/Turbo Mount Dodge Cummins 1994–1998, BD part 2033135.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2033135.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1994–1998 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 2033135
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3804,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake 325hp Air/turbo Mount Dodge Cummins 2004.5-2005 — 2023331",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2023331.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2023331",
+    fitment: "2004–2005 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-2004-5-2005-dodge-325hp-air-turbo-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-325hp-air-turbo-mount-dodge-cummins-2004-5-2005-2023331/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-325hp-air-turbo-mount-dodge-cummins-2004-5-2005-2023331/1.webp"],
+    description: `Exhaust Brake 325hp Air/turbo Mount Dodge Cummins 2004.5-2005, BD part 2023331.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2023331.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2004–2005 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 2023331
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3805,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Air/turbo Mount Dodge Cummins 2006–2007 — 2023330",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2023330.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2023330",
+    fitment: "2006–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-2006-2007-dodge-air-turbo-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-air-turbo-mount-dodge-cummins-2006-2007-2023330/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-air-turbo-mount-dodge-cummins-2006-2007-2023330/1.webp"],
+    description: `Exhaust Brake Air/turbo Mount Dodge Cummins 2006–2007, BD part 2023330.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2023330.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2006–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 2023330
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3806,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Air/turbo Mount Ford 7.3L Power Stroke 1999–2003 — 2023144",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2023144.
+    price: 1674.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2023144",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-1999-2003-ford-7-3l-air-turbo-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-air-turbo-mount-ford-7-3l-power-stroke-1999-2003-2023144/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-air-turbo-mount-ford-7-3l-power-stroke-1999-2003-2023144/1.webp"],
+    description: `Exhaust Brake Air/turbo Mount Ford 7.3L Power Stroke 1999–2003, BD part 2023144.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2023144.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 2023144
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3807,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Air/turbo Mount Dodge Cummins 2003–2004 — 2023138",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2023138.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2023138",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-2003-2004-dodge-air-turbo-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-air-turbo-mount-dodge-cummins-2003-2004-2023138/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-air-turbo-mount-dodge-cummins-2003-2004-2023138/1.webp"],
+    description: `Exhaust Brake Air/turbo Mount Dodge Cummins 2003–2004, BD part 2023138.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2023138.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 2023138
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3808,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Ford F-250/F-350 6.7L Power Stroke 2011–2014 — 2001102",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2001102.
+    price: 816.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2001102",
+    fitment: "2011–2014 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-powerstroke-exhaust-brake-ford-2011-2014-f250-f350",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-ford-f-250-f-350-6-7l-power-stroke-2011-2014-2001102/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-ford-f-250-f-350-6-7l-power-stroke-2011-2014-2001102/1.webp"],
+    description: `Exhaust Brake Ford F-250/F-350 6.7L Power Stroke 2011–2014, BD part 2001102.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2001102.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2011–2014 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Part number: 2001102
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3809,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Variable Vane Exhaust Ford 6.4L 2008–2010 — 2001100",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 2001100.
+    price: 824.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2001100",
+    fitment: "2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/brake-variable-vane-exhaust-ford-2008-2010-6-4l",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-variable-vane-exhaust-ford-6-4l-2008-2010-2001100/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-variable-vane-exhaust-ford-6-4l-2008-2010-2001100/1.webp"],
+    description: `Exhaust Brake Variable Vane Exhaust Ford 6.4L 2008–2010, BD part 2001100.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 2001100.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2008–2010 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.4L)
+Part number: 2001100
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3810,
+    createdAt: 1789430400000,
+    name: "BD Diesel Install KIT, HP/LP Turbo - Ford 2008–2010 6.4L Power Stroke — 179618",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 179618.
+    price: 109.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "179618",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/install-kit-hp-lp-turbo-ford-2008-2010-6-4l-powerstroke",
+    thumbnail: "/product-media/turbocharger/bd-install-kit-hp-lp-turbo-ford-2008-2010-6-4l-power-stroke-179618/1.webp",
+    images: ["/product-media/turbocharger/bd-install-kit-hp-lp-turbo-ford-2008-2010-6-4l-power-stroke-179618/1.webp"],
+    description: `Install KIT, HP/LP Turbo - Ford 2008–2010 6.4L Power Stroke, BD part 179618.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 179618.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 179618
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3811,
+    createdAt: 1789430400000,
+    name: "BD Diesel Sway Bar End Link Bushing Kit Dodge Cummins 2000–2009 — 1312051",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1312051.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1312051",
+    fitment: "2000–2007 Dodge / Ram 2500; and 2000–2006 Dodge / Ram 3500 (5.7L, 5.9L, 6.7L, 8.0L). BD list this part for 2000–2009; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bushing-kit-1032050-sway-bar-end-link",
+    thumbnail: "/product-media/suspension/bd-sway-bar-end-link-bushing-kit-dodge-cummins-2000-2009-1312051/1.webp",
+    images: ["/product-media/suspension/bd-sway-bar-end-link-bushing-kit-dodge-cummins-2000-2009-1312051/1.webp"],
+    description: `Sway Bar End Link Bushing Kit Dodge Cummins 2000–2009, BD part 1312051.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1312051.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2000–2007 Dodge / Ram 2500; and 2000–2006 Dodge / Ram 3500 (5.7L, 5.9L, 6.7L, 8.0L)
+BD catalogue range: 2000–2009
+Part number: 1312051
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3812,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Poly Bushing Kit 1032110/1032111 Ford — 1303104-KT",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1303104-KT.
+    price: 32.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1303104-KT",
+    fitment: "2005–2007 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (5.4L, 6.0L, 6.8L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/poly-bushing-kit-ford-track-bar-1032110",
+    thumbnail: "/product-media/suspension/bd-track-bar-poly-bushing-kit-1032110-1032111-ford-1303104kt/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-poly-bushing-kit-1032110-1032111-ford-1303104kt/1.webp"],
+    description: `Track Bar Poly Bushing Kit 1032110/1032111 Ford, BD part 1303104-KT.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1303104-KT.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2005–2007 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (5.4L, 6.0L, 6.8L)
+Part number: 1303104-KT
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3813,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Bushing Set 1032011-F/1032013-F Dodge Cummins — 1302033-1",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1302033-1.
+    price: 51.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1302033-1",
+    fitment: "1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-track-bar-bushing-set-1032011-f-1032013-f",
+    thumbnail: "/product-media/suspension/bd-track-bar-bushing-set-1032011-f-1032013-f-dodge-cummins-13020331/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-bushing-set-1032011-f-1032013-f-dodge-cummins-13020331/1.webp"],
+    description: `Track Bar Bushing Set 1032011-F/1032013-F Dodge Cummins, BD part 1302033-1.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1302033-1.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L)
+Part number: 1302033-1
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3814,
+    createdAt: 1789430400000,
+    name: "BD Diesel Push/Pull Switch Kit, Exhaust Brake 3/4in Manual Lever — 1300240",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1300240.
+    price: 83.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1300240",
+    fitment: "1994–1995 Chevrolet C1500, C2500, C3500, K1500, K2500 and K3500; 1994–1995 Dodge / Ram 2500 and 3500; 1994–1995 Ford F-250 and F-350; 1994–1995 GMC C1500, C2500 and C3500; and 1994 GMC K1500, K2500 and K3500 (5.9L, 6.5L, 7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/push-pull-switch-kit-exhaust-brake-3-4in-manual-lever",
+    thumbnail: "/product-media/engine/bd-push-pull-switch-kit-exhaust-brake-3-4in-manual-lever-1300240/1.webp",
+    images: ["/product-media/engine/bd-push-pull-switch-kit-exhaust-brake-3-4in-manual-lever-1300240/1.webp"],
+    description: `Push/Pull Switch Kit, Exhaust Brake 3/4in Manual Lever, BD part 1300240.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1300240.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1994–1995 Chevrolet C1500, C2500, C3500, K1500, K2500 and K3500; 1994–1995 Dodge / Ram 2500 and 3500; 1994–1995 Ford F-250 and F-350; 1994–1995 GMC C1500, C2500 and C3500; and 1994 GMC K1500, K2500 and K3500 (5.9L, 6.5L, 7.3L)
+Part number: 1300240
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3815,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Push/Pull Switch Kit 5/8 Shift Lever — 1300210",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1300210.
+    price: 85.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1300210",
+    fitment: "1983–1985 Chevrolet C10, C20, C30, K10 and K20; 1983–1984 Chevrolet K30; and 1983–1984 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.2L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-brake-push-pull-switch-kit-5-8-shift-lever",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-push-pull-switch-kit-5-8-shift-lever-1300210/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-push-pull-switch-kit-5-8-shift-lever-1300210/1.webp"],
+    description: `Exhaust Brake Push/Pull Switch Kit 5/8 Shift Lever, BD part 1300210.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1300210.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1983–1985 Chevrolet C10, C20, C30, K10 and K20; 1983–1984 Chevrolet K30; and 1983–1984 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.2L)
+Part number: 1300210
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3816,
+    createdAt: 1789430400000,
+    name: "BD Diesel Rear Differential Cover Sterling 12-10.25/10.5 Ford F-250/F-350 1989–2016 & F-250 2017–2024 — 1061830",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061830.
+    price: 381.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061830",
+    fitment: "1989–1996 Ford F-250; 1989–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L). BD list this part for 1989–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/rear-differential-cover-sterling-12-10-25-10-5",
+    thumbnail: "/product-media/suspension/bd-rear-differential-cover-sterling-12-10-25-10-5-ford-f-250-f-350-1989-2-1061830/1.webp",
+    images: ["/product-media/suspension/bd-rear-differential-cover-sterling-12-10-25-10-5-ford-f-250-f-350-1989-2-1061830/1.webp"],
+    description: `Rear Differential Cover Sterling 12-10.25/10.5 Ford F-250/F-350 1989–2016 & F-250 2017–2024, BD part 1061830.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061830.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 1989–1996 Ford F-250; 1989–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
+BD catalogue range: 1989–2024
+Part number: 1061830
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3817,
+    createdAt: 1789430400000,
+    name: "BD Diesel Differential Cover Pack Front AA 12-9.25 & Rear AA 14-11.5 Dodge 2500 2014–2018 / 3500 2013–2018 — 1061829",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061829.
+    price: 624.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061829",
+    fitment: "2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/differential-cover-pack-front-aa-12-9-25-rear-aa-14-11-5",
+    thumbnail: "/product-media/suspension/bd-differential-cover-pack-front-aa-12-9-25-rear-aa-14-11-5-dodge-2500-20-1061829/1.webp",
+    images: ["/product-media/suspension/bd-differential-cover-pack-front-aa-12-9-25-rear-aa-14-11-5-dodge-2500-20-1061829/1.webp"],
+    description: `Differential Cover Pack Front AA 12-9.25 & Rear AA 14-11.5 Dodge 2500 2014–2018 / 3500 2013–2018, BD part 1061829.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061829.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
+Part number: 1061829
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3818,
+    createdAt: 1789430400000,
+    name: "BD Diesel Front Differential Cover AA 12-9.25 Dodge 2500 2014–2022 / 3500 2013–2022 — 1061828",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061828.
+    price: 380.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061828",
+    fitment: "2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L). BD list this part for 2013–2022; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/front-differential-cover-aa-12-9-25",
+    thumbnail: "/product-media/suspension/bd-front-differential-cover-aa-12-9-25-dodge-2500-2014-2022-3500-2013-202-1061828/1.webp",
+    images: ["/product-media/suspension/bd-front-differential-cover-aa-12-9-25-dodge-2500-2014-2022-3500-2013-202-1061828/1.webp"],
+    description: `Front Differential Cover AA 12-9.25 Dodge 2500 2014–2022 / 3500 2013–2022, BD part 1061828.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061828.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
+BD catalogue range: 2013–2022
+Part number: 1061828
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3819,
+    createdAt: 1789430400000,
+    name: "BD Diesel Differential Cover Pack Front AA 14-9.25 & Rear AA 14-11.5 Dodge 2500/3500 Cummins 2003–2013 — 1061827",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061827.
+    price: 617.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061827",
+    fitment: "2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L). BD list this part for 2003–2013; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/differential-cover-pack-front-aa-14-9-25-rear-aa-14-11-5",
+    thumbnail: "/product-media/suspension/bd-differential-cover-pack-front-aa-14-9-25-rear-aa-14-11-5-dodge-2500-35-1061827/1.webp",
+    images: ["/product-media/suspension/bd-differential-cover-pack-front-aa-14-9-25-rear-aa-14-11-5-dodge-2500-35-1061827/1.webp"],
+    description: `Differential Cover Pack Front AA 14-9.25 & Rear AA 14-11.5 Dodge 2500/3500 Cummins 2003–2013, BD part 1061827.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061827.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
+BD catalogue range: 2003–2013
+Part number: 1061827
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3820,
+    createdAt: 1789430400000,
+    name: "BD Diesel Front Differential Cover AA 14-9.25 Dodge 2500/3500 2003–2013 — 1061826",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061826.
+    price: 353.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061826",
+    fitment: "2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L). BD list this part for 2003–2013; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/front-differential-cover-aa-14-9-25",
+    thumbnail: "/product-media/suspension/bd-front-differential-cover-aa-14-9-25-dodge-2500-3500-2003-2013-1061826/1.webp",
+    images: ["/product-media/suspension/bd-front-differential-cover-aa-14-9-25-dodge-2500-3500-2003-2013-1061826/1.webp"],
+    description: `Front Differential Cover AA 14-9.25 Dodge 2500/3500 2003–2013, BD part 1061826.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061826.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
+BD catalogue range: 2003–2013
+Part number: 1061826
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3821,
+    createdAt: 1789430400000,
+    name: "BD Diesel Rear Differential Cover AA14-11.5 Dodge Cummins 2003–2018 / Chevy Duramax 2001–2018 — 1061825",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061825.
+    price: 347.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061825",
+    fitment: "2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2005 GMC Sierra 2500 HD and Sierra 3500; 2003–2006 Dodge / Ram 2500; and 2003–2005 Dodge / Ram 3500 (5.9L, 6.6L). BD list this part for 2001–2018; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/rear-differential-cover-aa14-11-5",
+    thumbnail: "/product-media/suspension/bd-rear-differential-cover-aa14-11-5-dodge-cummins-2003-2018-chevy-durama-1061825/1.webp",
+    images: ["/product-media/suspension/bd-rear-differential-cover-aa14-11-5-dodge-cummins-2003-2018-chevy-durama-1061825/1.webp"],
+    description: `Rear Differential Cover AA14-11.5 Dodge Cummins 2003–2018 / Chevy Duramax 2001–2018, BD part 1061825.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061825.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2005 GMC Sierra 2500 HD and Sierra 3500; 2003–2006 Dodge / Ram 2500; and 2003–2005 Dodge / Ram 3500 (5.9L, 6.6L)
+BD catalogue range: 2001–2018
+Part number: 1061825
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3822,
+    createdAt: 1789430400000,
+    name: "BD Diesel Cool Cover (Set of 6) Dodge 12-valve 5.9L Cummins 1988–1998 — 1061800-6",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061800-6.
+    price: 399.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061800-6",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/cool-cover-dodge-1988-1998-12-valve-5-9l-set-of-6",
+    thumbnail: "/product-media/transmission/bd-cool-cover-set-of-6-dodge-12-valve-5-9l-cummins-1988-1998-10618006/1.webp",
+    images: ["/product-media/transmission/bd-cool-cover-set-of-6-dodge-12-valve-5-9l-cummins-1988-1998-10618006/1.webp"],
+    description: `Cool Cover (Set of 6) Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1061800-6.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061800-6.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+Part number: 1061800-6
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3823,
+    createdAt: 1789430400000,
+    name: "BD Diesel Cool Cover (Single) Dodge 12-valve 5.9L Cummins 1988–1998 — 1061800",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061800.
+    price: 75.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061800",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/cool-cover-dodge-1988-1998-12-valve-5-9l-single",
+    thumbnail: "/product-media/transmission/bd-cool-cover-single-dodge-12-valve-5-9l-cummins-1988-1998-1061800/1.webp",
+    images: ["/product-media/transmission/bd-cool-cover-single-dodge-12-valve-5-9l-cummins-1988-1998-1061800/1.webp"],
+    description: `Cool Cover (Single) Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1061800.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061800.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+Part number: 1061800
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3824,
+    createdAt: 1789430400000,
+    name: "BD Diesel Deep Sump Trans Pan Ford Power Stroke 6R140 2011–2019 — 1061720",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061720.
+    price: 439.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061720",
+    fitment: "2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L). BD list this part for 2011–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ford-deep-sump-6r140-trans-pan",
+    thumbnail: "/product-media/transmission/bd-deep-sump-trans-pan-ford-power-stroke-6r140-2011-2019-1061720/1.webp",
+    images: ["/product-media/transmission/bd-deep-sump-trans-pan-ford-power-stroke-6r140-2011-2019-1061720/1.webp"],
+    description: `Deep Sump Trans Pan Ford Power Stroke 6R140 2011–2019, BD part 1061720.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061720.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
+BD catalogue range: 2011–2019
+Part number: 1061720
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3825,
+    createdAt: 1789430400000,
+    name: "BD Diesel Deep Sump Trans Pan Ford Power Stroke E4OD/4R100/5R110 1989–2010 — 1061716",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061716.
+    price: 450.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061716",
+    fitment: "1989–1996 Ford F-250; 1989–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L). BD list this part for 1989–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ford-deep-sump-trans-pan-1989-2010-e4od-4r100-5r110",
+    thumbnail: "/product-media/transmission/bd-deep-sump-trans-pan-ford-power-stroke-e4od-4r100-5r110-1989-2010-1061716/1.webp",
+    images: ["/product-media/transmission/bd-deep-sump-trans-pan-ford-power-stroke-e4od-4r100-5r110-1989-2010-1061716/1.webp"],
+    description: `Deep Sump Trans Pan Ford Power Stroke E4OD/4R100/5R110 1989–2010, BD part 1061716.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061716.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 1989–1996 Ford F-250; 1989–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
+BD catalogue range: 1989–2010
+Part number: 1061716
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3826,
+    createdAt: 1789430400000,
+    name: "BD Diesel Deep Sump Trans Pan Chevy Duramax Allison 1000 — 1061650",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061650.
+    price: 439.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061650",
+    fitment: "2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-deep-sump-allison-1000-trans-pan",
+    thumbnail: "/product-media/transmission/bd-deep-sump-trans-pan-chevy-duramax-allison-1000-1061650/1.webp",
+    images: ["/product-media/transmission/bd-deep-sump-trans-pan-chevy-duramax-allison-1000-1061650/1.webp"],
+    description: `Deep Sump Trans Pan Chevy Duramax Allison 1000, BD part 1061650.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061650.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Part number: 1061650
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3827,
+    createdAt: 1789430400000,
+    name: "BD Diesel Deep Sump Trans Pan Dodge Cummins 727/518/47RH/47RE/48RE 1989–2007 — 1061501",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061501.
+    price: 342.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061501",
+    fitment: "1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L). BD list this part for 1989–2007; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-deep-sump-trans-pan-1989-2007-727-518-47rh-47re-48re",
+    thumbnail: "/product-media/transmission/bd-deep-sump-trans-pan-dodge-cummins-727-518-47rh-47re-48re-1989-2007-1061501/1.webp",
+    images: ["/product-media/transmission/bd-deep-sump-trans-pan-dodge-cummins-727-518-47rh-47re-48re-1989-2007-1061501/1.webp"],
+    description: `Deep Sump Trans Pan Dodge Cummins 727/518/47RH/47RE/48RE 1989–2007, BD part 1061501.
+
+More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
+
+BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+
+A magnetic drain plug catches the suspended material that would otherwise keep circulating.
+
+BD list this as part 1061501.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Pans/Cover
+Application: 1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L)
+BD catalogue range: 1989–2007
+Part number: 1061501
+
+Highlights
+
+More fluid and more cooling area
+Internal and external cast fins
+Separate fill and drain ports
+Magnetic drain plug
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3828,
+    createdAt: 1789430400000,
+    name: "BD Diesel Pressure Valve Body Electronics Upgrade Dodge Cummins 47RE/48RE 2000–2007 — 1060605",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1060605.
+    price: 288.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1060605",
+    fitment: "2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L). BD list this part for 2000–2007; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/pressure-valve-body-electronics-upgrade-dodge-2000-2007-47re-48re",
+    thumbnail: "/product-media/transmission/bd-pressure-valve-body-electronics-upgrade-dodge-cummins-47re-48re-2000-2-1060605/1.webp",
+    images: ["/product-media/transmission/bd-pressure-valve-body-electronics-upgrade-dodge-cummins-47re-48re-2000-2-1060605/1.webp"],
+    description: `Pressure Valve Body Electronics Upgrade Dodge Cummins 47RE/48RE 2000–2007, BD part 1060605.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1060605.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
+BD catalogue range: 2000–2007
+Part number: 1060605
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3829,
+    createdAt: 1789430400000,
+    name: "BD Diesel Pressure Transducer Upgrade Kit Dodge Diesel/Gas 47RE/48RE/46RE/44RE/42RE 2000–2007 — 1060602",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1060602.
+    price: 219.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1060602",
+    fitment: "2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L). BD list this part for 2000–2007; the years above are the ones tagged per model on their own listing.",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/pressure-transducer-upgrade-kit-dodge-2000-2007-47re-48re-46re-44re-42re-trans-diesel-gas",
+    thumbnail: "/product-media/transmission/bd-pressure-transducer-upgrade-kit-dodge-diesel-gas-47re-48re-46re-44re-4-1060602/1.webp",
+    images: ["/product-media/transmission/bd-pressure-transducer-upgrade-kit-dodge-diesel-gas-47re-48re-46re-44re-4-1060602/1.webp"],
+    description: `Pressure Transducer Upgrade Kit Dodge Diesel/Gas 47RE/48RE/46RE/44RE/42RE 2000–2007, BD part 1060602.
+
+The valve body is where an automatic decides what to do: line pressure, shift timing and how firmly each clutch is applied are all set here.
+
+BD's exchange valve bodies are modified, tuned and tested rather than simply rebuilt. The result is better shift quality, more clutch holding capacity, less wear and a transmission that lasts longer under load.
+
+They are supplied as exchange units, so the original goes back.
+
+BD list this as part 1060602.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Valve Bodie
+Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
+BD catalogue range: 2000–2007
+Part number: 1060602
+
+Highlights
+
+Modified, tuned and tested — not just rebuilt
+Better shift quality and clutch capacity
+Exchange unit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3830,
+    createdAt: 1789430400000,
+    name: "BD Diesel Throttle Sensitivity Booster Chevy/GMC Duramax 2001–2005 (Check application listings) — 1057735",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057735.
+    price: 289.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057735",
+    fitment: "2001–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/throttle-sensitivity-booster-chevy-gmc-2001-2005",
+    thumbnail: "/product-media/electronics/bd-throttle-sensitivity-booster-chevy-gmc-duramax-2001-2005-check-applica-1057735/1.webp",
+    images: ["/product-media/electronics/bd-throttle-sensitivity-booster-chevy-gmc-duramax-2001-2005-check-applica-1057735/1.webp"],
+    description: `Throttle Sensitivity Booster Chevy/GMC Duramax 2001–2005 (Check application listings), BD part 1057735.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057735.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2001–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1057735
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3831,
+    createdAt: 1789430400000,
+    name: "BD Diesel Top Speed Eliminator w/RAD Technology Dodge Cummins 2000.5-2003 — 1057650",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1057650.
+    price: 162.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1057650",
+    fitment: "2000–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 2000–2003 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/top-speed-eliminator-w-rad-technology-2000-5-2003-dodge",
+    thumbnail: "/product-media/electronics/bd-top-speed-eliminator-w-rad-technology-dodge-cummins-2000-5-2003-1057650/1.webp",
+    images: ["/product-media/electronics/bd-top-speed-eliminator-w-rad-technology-dodge-cummins-2000-5-2003-1057650/1.webp"],
+    description: `Top Speed Eliminator w/RAD Technology Dodge Cummins 2000.5-2003, BD part 1057650.
+
+A drive-by-wire throttle pedal has a deliberate softness built into it, and on a heavy vehicle that reads as lag: you press, and the engine thinks about it.
+
+The TS Booster amplifies the signal between the pedal and the ECM so the same pedal travel asks for more, sooner. It does not change what the engine can make — it changes how quickly it is asked for it.
+
+It uses the factory connectors, so installation is plug-in rather than cut-and-splice.
+
+BD list this as part 1057650.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Throttle Control
+Application: 2000–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 2000–2003 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1057650
+
+Highlights
+
+Removes drive-by-wire pedal lag
+Plugs into the factory connectors
+No cutting or splicing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3832,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Turnbuckle 5/16NF Rod w/Pin w/Aftermarket Turbo or Wastegate Chevy LB7 Duramax 2001–2004 — 1047116",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047116.
+    price: 60.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047116",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-turnbuckle-5-16nf-rod-w-pin",
+    thumbnail: "/product-media/turbocharger/bd-turbo-turnbuckle-5-16nf-rod-w-pin-w-aftermarket-turbo-or-wastegate-che-1047116/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-turnbuckle-5-16nf-rod-w-pin-w-aftermarket-turbo-or-wastegate-che-1047116/1.webp"],
+    description: `Turbo Turnbuckle 5/16NF Rod w/Pin w/Aftermarket Turbo or Wastegate Chevy LB7 Duramax 2001–2004, BD part 1047116.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047116.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1047116
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3833,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Turnbuckle 5/16NF Rod w/.250\" Hole w/Aftermarket Turbo or Wastegate Ford 7.3L/6.0L Power Stroke 1999.5-2007 — 1047115",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047115.
+    price: 49.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047115",
+    fitment: "1999–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-turnbuckle-5-16nf-rod-w-250-hole",
+    thumbnail: "/product-media/turbocharger/bd-turbo-turnbuckle-5-16nf-rod-w-250-hole-w-aftermarket-turbo-or-wastegat-1047115/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-turnbuckle-5-16nf-rod-w-250-hole-w-aftermarket-turbo-or-wastegat-1047115/1.webp"],
+    description: `Turbo Turnbuckle 5/16NF Rod w/.250" Hole w/Aftermarket Turbo or Wastegate Ford 7.3L/6.0L Power Stroke 1999.5-2007, BD part 1047115.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047115.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 1999–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
+Part number: 1047115
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3834,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Turnbuckle 5/16NF Rod w/.320\" Hole w/Holset or Aftermarket Turbo/Wastegate Dodge 5.9L Cummins 1994–2007 — 1047110",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047110.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047110",
+    fitment: "1994–2003 Dodge / Ram 2500; 1994–2002 Dodge / Ram 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L). BD list this part for 1994–2007; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-turnbuckle-5-16nf-rod-w-320-hole",
+    thumbnail: "/product-media/turbocharger/bd-turbo-turnbuckle-5-16nf-rod-w-320-hole-w-holset-or-aftermarket-turbo-w-1047110/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-turnbuckle-5-16nf-rod-w-320-hole-w-holset-or-aftermarket-turbo-w-1047110/1.webp"],
+    description: `Turbo Turnbuckle 5/16NF Rod w/.320" Hole w/Holset or Aftermarket Turbo/Wastegate Dodge 5.9L Cummins 1994–2007, BD part 1047110.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1047110.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 1994–2003 Dodge / Ram 2500; 1994–2002 Dodge / Ram 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+BD catalogue range: 1994–2007
+Part number: 1047110
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3835,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set Stock Mount Dodge 6.7L Cummins 2007.5-2018 — 1045992",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045992.
+    price: 93.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045992",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-exhaust-manifold-gasket-set-stock-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-6-7l-cummins-2007-5-2018-1045992/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-6-7l-cummins-2007-5-2018-1045992/1.webp"],
+    description: `Exhaust Manifold Gasket Set Stock Mount Dodge 6.7L Cummins 2007.5-2018, BD part 1045992.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045992.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045992
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3836,
+    createdAt: 1789430400000,
+    name: "BD Diesel HY35 X-Hook Turbo Wastegate Control Dodge 5.9L Cummins 2001–2002 — 1045991",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045991.
+    price: 85.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045991",
+    fitment: "2001–2002 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-hy35-x-hook-turbo-wastegate-control",
+    thumbnail: "/product-media/turbocharger/bd-hy35-x-hook-turbo-wastegate-control-dodge-5-9l-cummins-2001-2002-1045991/1.webp",
+    images: ["/product-media/turbocharger/bd-hy35-x-hook-turbo-wastegate-control-dodge-5-9l-cummins-2001-2002-1045991/1.webp"],
+    description: `HY35 X-Hook Turbo Wastegate Control Dodge 5.9L Cummins 2001–2002, BD part 1045991.
+
+A wastegate that creeps lets boost fall away exactly when you are asking for it, because the gate opens earlier than it should under sustained load.
+
+BD's adjustable wastegate kits deal with that: stainless steel brackets, a high-temperature Nomex diaphragm with a heavier spring, and a turnbuckle so the boost pressure setting can be dialled in precisely.
+
+It is an adjustment you make once and then leave alone.
+
+BD list this as part 1045991.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Wastegate
+Application: 2001–2002 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045991
+
+Highlights
+
+Stops wastegate creep under load
+Nomex diaphragm with a heavier spring
+Turnbuckle for precise boost setting
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3837,
+    createdAt: 1789430400000,
+    name: "BD Diesel Common Rail Cummins Exhaust Manifold T4 Mount Dodge 5.9L Cummins 2003–2007 — 1045987-T4",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045987-T4.
+    price: 567.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045987-T4",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-common-rail-cummins-exhaust-manifold-t4-mount",
+    thumbnail: "/product-media/engine/bd-common-rail-cummins-exhaust-manifold-t4-mount-dodge-5-9l-cummins-2003--1045987t4/1.webp",
+    images: ["/product-media/engine/bd-common-rail-cummins-exhaust-manifold-t4-mount-dodge-5-9l-cummins-2003--1045987t4/1.webp"],
+    description: `Common Rail Cummins Exhaust Manifold T4 Mount Dodge 5.9L Cummins 2003–2007, BD part 1045987-T4.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045987-T4.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045987-T4
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3838,
+    createdAt: 1789430400000,
+    name: "BD Diesel Common Rail Exhaust Manifold Stock Mount Dodge 5.9L Cummins 2003–2007 — 1045987",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045987.
+    price: 588.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045987",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-common-rail-cummins-exhaust-manifold-stock-mount",
+    thumbnail: "/product-media/engine/bd-common-rail-exhaust-manifold-stock-mount-dodge-5-9l-cummins-2003-2007-1045987/1.webp",
+    images: ["/product-media/engine/bd-common-rail-exhaust-manifold-stock-mount-dodge-5-9l-cummins-2003-2007-1045987/1.webp"],
+    description: `Common Rail Exhaust Manifold Stock Mount Dodge 5.9L Cummins 2003–2007, BD part 1045987.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045987.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045987
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3839,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set T6 Mount Dodge 5.9L/6.7L Cummins 1998.5-2018 — 1045986-T6",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045986-T6.
+    price: 93.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045986-T6",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-6-7l-cummins-exhaust-manifold-gasket-set-t6-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-t6-mount-dodge-5-9l-6-7l-cummins-1998-5-20-1045986t6/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-t6-mount-dodge-5-9l-6-7l-cummins-1998-5-20-1045986t6/1.webp"],
+    description: `Exhaust Manifold Gasket Set T6 Mount Dodge 5.9L/6.7L Cummins 1998.5-2018, BD part 1045986-T6.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045986-T6.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
+Part number: 1045986-T6
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3840,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set T4 Mount Dodge 5.9L/6.7L Cummins 1998.5-2018 — 1045986-T4",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045986-T4.
+    price: 92.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045986-T4",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-6-7l-cummins-exhaust-manifold-gasket-set-t4-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-t4-mount-dodge-5-9l-6-7l-cummins-1998-5-20-1045986t4/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-t4-mount-dodge-5-9l-6-7l-cummins-1998-5-20-1045986t4/1.webp"],
+    description: `Exhaust Manifold Gasket Set T4 Mount Dodge 5.9L/6.7L Cummins 1998.5-2018, BD part 1045986-T4.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045986-T4.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
+Part number: 1045986-T4
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3841,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set Stock Mount Dodge 24-valve 5.9L Cummins 1998.5-2007 — 1045986",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045986.
+    price: 86.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045986",
+    fitment: "1999–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1999–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-24-valve-exhaust-manifold-gasket-set-stock-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-24-valve-5-9l-cummins-19-1045986/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-24-valve-5-9l-cummins-19-1045986/1.webp"],
+    description: `Exhaust Manifold Gasket Set Stock Mount Dodge 24-valve 5.9L Cummins 1998.5-2007, BD part 1045986.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045986.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1999–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1999–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045986
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3842,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Gasket Set Stock Mount Dodge 12-valve 5.9L Cummins 1988–1998 — 1045981",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045981.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045981",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-12-valve-exhaust-manifold-gasket-set-stock-mount",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-12-valve-5-9l-cummins-19-1045981/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-12-valve-5-9l-cummins-19-1045981/1.webp"],
+    description: `Exhaust Manifold Gasket Set Stock Mount Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1045981.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045981.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+Part number: 1045981
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3843,
+    createdAt: 1789430400000,
+    name: "BD Diesel Pulse Exhaust Manifold Stock/t3 Dodge 24-valve 5.9L Cummins 1998.5-2002 — 1045947",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045947.
+    price: 588.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045947",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-24-valve-pulse-exhaust-manifold-stock-t3",
+    thumbnail: "/product-media/engine/bd-pulse-exhaust-manifold-stock-t3-dodge-24-valve-5-9l-cummins-1998-5-200-1045947/1.webp",
+    images: ["/product-media/engine/bd-pulse-exhaust-manifold-stock-t3-dodge-24-valve-5-9l-cummins-1998-5-200-1045947/1.webp"],
+    description: `Pulse Exhaust Manifold Stock/t3 Dodge 24-valve 5.9L Cummins 1998.5-2002, BD part 1045947.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1045947.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Part number: 1045947
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3844,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Stage 2 Performance GT37 Turbo Ford 6.0L Power Stroke 2003–2007 — 1045821",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045821.
+    price: 1929.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045821",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-screamer-stage-2-performance-gt37-turbo",
+    thumbnail: "/product-media/turbocharger/bd-screamer-stage-2-performance-gt37-turbo-ford-6-0l-power-stroke-2003-20-1045821/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-stage-2-performance-gt37-turbo-ford-6-0l-power-stroke-2003-20-1045821/1.webp"],
+    description: `Screamer Stage 2 Performance GT37 Turbo Ford 6.0L Power Stroke 2003–2007, BD part 1045821.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045821.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1045821
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3845,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Stock Replacement HE300VG Dodge Pick-up 6.7L Cummins 2013–2018 — 1045778",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045778.
+    price: 2694.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045778",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    coreCharge: "Exchange unit — the original goes back to BD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-he300vg-pick-up-turbo-stock-replacement",
+    thumbnail: "/product-media/turbocharger/bd-turbo-stock-replacement-he300vg-dodge-pick-up-6-7l-cummins-2013-2018-1045778/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-stock-replacement-he300vg-dodge-pick-up-6-7l-cummins-2013-2018-1045778/1.webp"],
+    description: `Turbo Stock Replacement HE300VG Dodge Pick-up 6.7L Cummins 2013–2018, BD part 1045778.
+
+When the factory turbocharger has done its time, a properly remanufactured unit puts the truck back where it was — which is what most owners actually want.
+
+BD remanufacture these from core turbochargers with high-speed balancing and quality replacement bearings. Turbo remanufacturing is their own specialism rather than something bought in.
+
+It is a drop-in stock installation, so it goes where the original came out.
+
+BD list this as part 1045778.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: OEM Turbo
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045778
+
+Highlights
+
+Remanufactured with high-speed balancing
+Quality replacement bearings
+Drop-in stock installation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3846,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer HE300VG Turbo Dodge 6.7L Cummins 2013–2018 — 1045771",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045771.
+    price: 2998.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045771",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-he300vg-6-7l-cummins-turbo",
+    thumbnail: "/product-media/turbocharger/bd-screamer-he300vg-turbo-dodge-6-7l-cummins-2013-2018-1045771/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-he300vg-turbo-dodge-6-7l-cummins-2013-2018-1045771/1.webp"],
+    description: `Screamer HE300VG Turbo Dodge 6.7L Cummins 2013–2018, BD part 1045771.
+
+A Screamer is a drop-in replacement that looks stock and is not. The larger compressor wheel moves more air at the same drive pressure, which raises what the engine can make and lowers exhaust gas temperature at the same time.
+
+Because it is a drop-in, nothing around it has to change — no new manifold, no kit, no relocation of anything.
+
+Lower EGT on a truck that tows is worth more over the life of the engine than the peak figure is.
+
+BD list this as part 1045771.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Screamer Turbo
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045771
+
+Highlights
+
+Drop-in, stock-appearing replacement
+Larger compressor wheel, lower drive pressure
+Lower exhaust gas temperature
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3847,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Kit - Ford 6.7L Power Stroke F-250 / F-350 Pick-up 2011–2014 & F-350 / F-450 / F-550 Cab & Chassis 2011–2016 — 1043007",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043007.
+    price: 549.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043007",
+    fitment: "2011–2014 Ford F-250 Super Duty; and 2011–2016 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-powerstroke-exhaust-manifold-kit-ford-2011-2014-f250-f350-f450-f550-super-duty",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-kit-ford-6-7l-power-stroke-f-250-f-350-pick-up-2011-2-1043007/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-6-7l-power-stroke-f-250-f-350-pick-up-2011-2-1043007/1.webp"],
+    description: `Exhaust Manifold Kit - Ford 6.7L Power Stroke F-250 / F-350 Pick-up 2011–2014 & F-350 / F-450 / F-550 Cab & Chassis 2011–2016, BD part 1043007.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043007.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2014 Ford F-250 Super Duty; and 2011–2016 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
+Part number: 1043007
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3848,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Manifold Driver Side Ford 6.7L Power Stroke F-250 / F-350 / F-450 / F-550 / F-650 / F-750 Super Duty 2011–2019 — 1043006",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1043006.
+    price: 358.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1043006",
+    fitment: "2011–2017 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty; 2011–2016 Ford F-550 Super Duty; and 2016 Ford F-650 Super Duty and F-750 (6.7L). BD list this part for 2011–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-powerstroke-drivers-side-exhaust-manifold-kit-ford-2011-2016-f250-f350-super-duty",
+    thumbnail: "/product-media/engine/bd-exhaust-manifold-driver-side-ford-6-7l-power-stroke-f-250-f-350-f-450--1043006/1.webp",
+    images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-6-7l-power-stroke-f-250-f-350-f-450--1043006/1.webp"],
+    description: `Exhaust Manifold Driver Side Ford 6.7L Power Stroke F-250 / F-350 / F-450 / F-550 / F-650 / F-750 Super Duty 2011–2019, BD part 1043006.
+
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+
+BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
+
+Fitting a manifold is a job worth doing once. The right time is when the studs are already out.
+
+BD list this as part 1043006.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Manifold
+Application: 2011–2017 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty; 2011–2016 Ford F-550 Super Duty; and 2016 Ford F-650 Super Duty and F-750 (6.7L)
+BD catalogue range: 2011–2019
+Part number: 1043006
+
+Highlights
+
+Built for the heat cycling that warps the original
+Uses stud locations the OE part leaves empty
+BD Diesel
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3849,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate Chevy Duramax Allison 2001–2019 — 1041260",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041260.
+    price: 459.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041260",
+    fitment: "2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L). BD list this part for 2001–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-allison-flexplate",
+    thumbnail: "/product-media/transmission/bd-flexplate-chevy-duramax-allison-2001-2019-1041260/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-chevy-duramax-allison-2001-2019-1041260/1.webp"],
+    description: `Flexplate Chevy Duramax Allison 2001–2019, BD part 1041260.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041260.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+BD catalogue range: 2001–2019
+Part number: 1041260
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3850,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate Ford 6.0L Power Stroke 5R110 2003–2007 — 1041242",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041242.
+    price: 599.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041242",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-5r110-flexplate",
+    thumbnail: "/product-media/transmission/bd-flexplate-ford-6-0l-power-stroke-5r110-2003-2007-1041242/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-ford-6-0l-power-stroke-5r110-2003-2007-1041242/1.webp"],
+    description: `Flexplate Ford 6.0L Power Stroke 5R110 2003–2007, BD part 1041242.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041242.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1041242
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3851,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate Ford 6.4L Power Stroke 5R110 2008–2010 — 1041240",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041240.
+    price: 599.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041240",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-4l-powerstroke-5r110-flexplate",
+    thumbnail: "/product-media/transmission/bd-flexplate-ford-6-4l-power-stroke-5r110-2008-2010-1041240/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-ford-6-4l-power-stroke-5r110-2008-2010-1041240/1.webp"],
+    description: `Flexplate Ford 6.4L Power Stroke 5R110 2008–2010, BD part 1041240.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041240.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 1041240
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3852,
+    createdAt: 1789430400000,
+    name: "BD Diesel HI5 12-Bolt Flexplate Dodge 5.9L Cummins 47RH/47RH/48RE 1994–2007 — 1041212",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041212.
+    price: 536.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041212",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/hi5-12-bolt-5-9l-cummins-flexplate",
+    thumbnail: "/product-media/transmission/bd-hi5-12-bolt-flexplate-dodge-5-9l-cummins-47rh-47rh-48re-1994-2007-1041212/1.webp",
+    images: ["/product-media/transmission/bd-hi5-12-bolt-flexplate-dodge-5-9l-cummins-47rh-47rh-48re-1994-2007-1041212/1.webp"],
+    description: `HI5 12-Bolt Flexplate Dodge 5.9L Cummins 47RH/47RH/48RE 1994–2007, BD part 1041212.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041212.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1041212
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3853,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flexplate Dodge 5.9L Cummins 47RH/47RE/48RE 1994–2007 — 1041210",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1041210.
+    price: 459.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1041210",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-flexplate",
+    thumbnail: "/product-media/transmission/bd-flexplate-dodge-5-9l-cummins-47rh-47re-48re-1994-2007-1041210/1.webp",
+    images: ["/product-media/transmission/bd-flexplate-dodge-5-9l-cummins-47rh-47re-48re-1994-2007-1041210/1.webp"],
+    description: `Flexplate Dodge 5.9L Cummins 47RH/47RE/48RE 1994–2007, BD part 1041210.
+
+A flexplate carries every bit of torque the engine makes into the converter, and the forces are extreme. In a hard-worked truck it can slip against the crankshaft even with the bolts correctly torqued.
+
+It takes very little movement for the bolts to loosen, and once the plate starts oscillating against the crank it destroys both.
+
+BD's answer is a diamond-etched interface that grips rather than relying on clamp load alone.
+
+BD list this as part 1041210.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flex Plate
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1041210
+
+Highlights
+
+Stops the plate slipping on the crank
+Diamond-etched gripping surface
+Protects crankshaft and flexplate
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3854,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake 4-inch Exhaust Remote Mount Vacuum Controlled Ford 7.3L Power Stroke 1994–1997 — 1037144",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1037144.
+    price: 1395.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1037144",
+    fitment: "1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/7-3l-powerstroke-exhaust-brake-ford-1994-1997-4inch-exhaust",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-4-inch-exhaust-remote-mount-vacuum-controlled-ford-7-3l--1037144/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-4-inch-exhaust-remote-mount-vacuum-controlled-ford-7-3l--1037144/1.webp"],
+    description: `Exhaust Brake 4-inch Exhaust Remote Mount Vacuum Controlled Ford 7.3L Power Stroke 1994–1997, BD part 1037144.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1037144.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+Part number: 1037144
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3855,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake Truck/Van Remote Mount Vacuum Controlled Ford 7.3L Power Stroke 1994–1997 — 1037143",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1037143.
+    price: 1531.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1037143",
+    fitment: "1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/7-3l-powerstroke-exhaust-brake-ford-1994-1997",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-truck-van-remote-mount-vacuum-controlled-ford-7-3l-power-1037143/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-truck-van-remote-mount-vacuum-controlled-ford-7-3l-power-1037143/1.webp"],
+    description: `Exhaust Brake Truck/Van Remote Mount Vacuum Controlled Ford 7.3L Power Stroke 1994–1997, BD part 1037143.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1037143.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
+Part number: 1037143
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3856,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake w/APPS Remote Mount Vacuum Controlled 60psi 4-INCH Exhuast Dodge 24-VALVE 5.9L Cummins 1998.5-2002 — 1037136",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1037136.
+    price: 1531.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1037136",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-exhaust-brake-dodge-1998-5-2002-24-valve-w-apps",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-w-apps-remote-mount-vacuum-controlled-60psi-4-inch-exhua-1037136/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-w-apps-remote-mount-vacuum-controlled-60psi-4-inch-exhua-1037136/1.webp"],
+    description: `Exhaust Brake w/APPS Remote Mount Vacuum Controlled 60psi 4-INCH Exhuast Dodge 24-VALVE 5.9L Cummins 1998.5-2002, BD part 1037136.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1037136.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 1037136
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3857,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake No APPS Remote Mount Vacuum Controlled 60psi 4inch Exhaust Dodge 12-valve 5.9L Cummins 1989–1998 — 1037135",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1037135.
+    price: 1531.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1037135",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-exhaust-brake-dodge-1989-1998-12-valve-no-apps",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-no-apps-remote-mount-vacuum-controlled-60psi-4inch-exhau-1037135/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-no-apps-remote-mount-vacuum-controlled-60psi-4inch-exhau-1037135/1.webp"],
+    description: `Exhaust Brake No APPS Remote Mount Vacuum Controlled 60psi 4inch Exhaust Dodge 12-valve 5.9L Cummins 1989–1998, BD part 1037135.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1037135.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+Part number: 1037135
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3858,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Kit Duramax 2500 HD/3500 HD 2008–2019 & 4500 HD/5500 HD/6500 HD 2019 — 1036627",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036627.
+    price: 342.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036627",
+    fitment: "2008–2015 Chevrolet Silverado 2500 HD; 2008–2014 Chevrolet Silverado 3500 HD; and 2008–2014 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). BD list this part for 2008–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-high-idle-kit",
+    thumbnail: "/product-media/electronics/bd-high-idle-kit-duramax-2500-hd-3500-hd-2008-2019-4500-hd-5500-hd-6500-h-1036627/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-kit-duramax-2500-hd-3500-hd-2008-2019-4500-hd-5500-hd-6500-h-1036627/1.webp"],
+    description: `High Idle Kit Duramax 2500 HD/3500 HD 2008–2019 & 4500 HD/5500 HD/6500 HD 2019, BD part 1036627.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036627.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2008–2015 Chevrolet Silverado 2500 HD; 2008–2014 Chevrolet Silverado 3500 HD; and 2008–2014 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+BD catalogue range: 2008–2019
+Part number: 1036627
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3859,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Kit Dodge/RAM 5.9L-6.7L Cummins / Chevy-GMC Duramax — 1036622",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036622.
+    price: 328.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036622",
+    fitment: "2007–2014 Dodge / Ram 2500; 2007–2013 Dodge / Ram 3500; and 2008–2013 Dodge / Ram 4500 and 5500 (5.9L, 6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/high-idle-kit-dodge-3-0l-5-9l-6-7l",
+    thumbnail: "/product-media/electronics/bd-high-idle-kit-dodge-ram-5-9l-6-7l-cummins-chevy-gmc-duramax-1036622/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-kit-dodge-ram-5-9l-6-7l-cummins-chevy-gmc-duramax-1036622/1.webp"],
+    description: `High Idle Kit Dodge/RAM 5.9L-6.7L Cummins / Chevy-GMC Duramax, BD part 1036622.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036622.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2007–2014 Dodge / Ram 2500; 2007–2013 Dodge / Ram 3500; and 2008–2013 Dodge / Ram 4500 and 5500 (5.9L, 6.7L)
+Part number: 1036622
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3860,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Kit Dodge 5.9L Cummins 2005–2006 — 1036621",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036621.
+    price: 342.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036621",
+    fitment: "2005–2006 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-high-idle-kit-dodge-2005-2006",
+    thumbnail: "/product-media/electronics/bd-high-idle-kit-dodge-5-9l-cummins-2005-2006-1036621/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-kit-dodge-5-9l-cummins-2005-2006-1036621/1.webp"],
+    description: `High Idle Kit Dodge 5.9L Cummins 2005–2006, BD part 1036621.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036621.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2005–2006 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1036621
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3861,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Kit Dodge 5.9L Cummins 24-valve & CR w/ Bell Rank mounted APPS 1998.5-2004 — 1036620",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036620.
+    price: 325.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036620",
+    fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 2003–2004 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-high-idle-kit-dodge-1998-5-2004",
+    thumbnail: "/product-media/electronics/bd-high-idle-kit-dodge-5-9l-cummins-24-valve-cr-w-bell-rank-mounted-apps--1036620/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-kit-dodge-5-9l-cummins-24-valve-cr-w-bell-rank-mounted-apps--1036620/1.webp"],
+    description: `High Idle Kit Dodge 5.9L Cummins 24-valve & CR w/ Bell Rank mounted APPS 1998.5-2004, BD part 1036620.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036620.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1036620
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3862,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Control Ford 6.7L Power Stroke F-Series SuperDuty F-250 / F-350 / F-450 / F-550 / F-600 2017–2022 — 1036612",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036612.
+    price: 124.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036612",
+    fitment: "2017–2022 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2020–2022 Ford F-600 Super Duty (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-powerstroke-high-idle-control-ford-2017-2019",
+    thumbnail: "/product-media/electronics/bd-high-idle-control-ford-6-7l-power-stroke-f-series-superduty-f-250-f-35-1036612/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-control-ford-6-7l-power-stroke-f-series-superduty-f-250-f-35-1036612/1.webp"],
+    description: `High Idle Control Ford 6.7L Power Stroke F-Series SuperDuty F-250 / F-350 / F-450 / F-550 / F-600 2017–2022, BD part 1036612.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036612.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2017–2022 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2020–2022 Ford F-600 Super Duty (6.7L)
+Part number: 1036612
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3863,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Switch Ford 6.0L/6.4L/6.7L Power Stroke F-250/F-350/F-450/F-550 2005–2016 & 6.7L/6.8L/7.3L F-650/F-750 2016–2024 — 1036610",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036610.
+    price: 99.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036610",
+    fitment: "2005–2012 Ford F-250 Super Duty; and 2005–2011 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.0L, 6.4L, 6.7L). BD list this part for 2005–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/powerstroke-high-idle-switch-ford-2005-2016",
+    thumbnail: "/product-media/electronics/bd-high-idle-switch-ford-6-0l-6-4l-6-7l-power-stroke-f-250-f-350-f-450-f--1036610/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-switch-ford-6-0l-6-4l-6-7l-power-stroke-f-250-f-350-f-450-f--1036610/1.webp"],
+    description: `High Idle Switch Ford 6.0L/6.4L/6.7L Power Stroke F-250/F-350/F-450/F-550 2005–2016 & 6.7L/6.8L/7.3L F-650/F-750 2016–2024, BD part 1036610.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036610.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2005–2012 Ford F-250 Super Duty; and 2005–2011 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.0L, 6.4L, 6.7L)
+BD catalogue range: 2005–2024
+Part number: 1036610
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3864,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Control - Automatic Transmission- Ford 6.0L PowerStoke F-Series Pick-Up 2003–2004 — 1036609",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036609.
+    price: 41.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036609",
+    fitment: "2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstoke-high-idle-control-2003-2004",
+    thumbnail: "/product-media/electronics/bd-high-idle-control-automatic-transmission-ford-6-0l-powerstoke-f-series-1036609/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-control-automatic-transmission-ford-6-0l-powerstoke-f-series-1036609/1.webp"],
+    description: `High Idle Control - Automatic Transmission- Ford 6.0L PowerStoke F-Series Pick-Up 2003–2004, BD part 1036609.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036609.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1036609
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3865,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Control Chevy LBZ Duramax 2006–2007 — 1036606",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036606.
+    price: 46.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036606",
+    fitment: "2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-lbz-high-idle-control",
+    thumbnail: "/product-media/electronics/bd-high-idle-control-chevy-lbz-duramax-2006-2007-1036606/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-control-chevy-lbz-duramax-2006-2007-1036606/1.webp"],
+    description: `High Idle Control Chevy LBZ Duramax 2006–2007, BD part 1036606.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036606.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2006–2007 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2007 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Part number: 1036606
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3866,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Control - Automatic w/Cruise Control - Chevy LLY Duramax 2004–2006 — 1036605",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036605.
+    price: 44.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036605",
+    fitment: "2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-lly-high-idle-control",
+    thumbnail: "/product-media/electronics/bd-high-idle-control-automatic-w-cruise-control-chevy-lly-duramax-2004-20-1036605/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-control-automatic-w-cruise-control-chevy-lly-duramax-2004-20-1036605/1.webp"],
+    description: `High Idle Control - Automatic w/Cruise Control - Chevy LLY Duramax 2004–2006, BD part 1036605.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036605.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2004–2006 Chevrolet Silverado 2500 HD; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; and 2005–2006 Chevrolet Silverado 3500 (6.6L)
+Part number: 1036605
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3867,
+    createdAt: 1789430400000,
+    name: "BD Diesel High Idle Control Chevy/GMC LB7 Duramax 2001–2004 — 1036600",
+    category: "electronics",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036600.
+    price: 46.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036600",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-lb7-high-idle-control",
+    thumbnail: "/product-media/electronics/bd-high-idle-control-chevy-gmc-lb7-duramax-2001-2004-1036600/1.webp",
+    images: ["/product-media/electronics/bd-high-idle-control-chevy-gmc-lb7-duramax-2001-2004-1036600/1.webp"],
+    description: `High Idle Control Chevy/GMC LB7 Duramax 2001–2004, BD part 1036600.
+
+A diesel at idle in the cold barely makes heat. If you are waiting for the cab to warm, running a PTO, or idling for long stretches on a job, a raised idle is what gets you there.
+
+BD's high idle kits are straightforward to install and, in most cases, adjustable — so the raised idle is set where the job needs it rather than at one fixed figure.
+
+BD list this as part 1036600.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: High Idle
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1036600
+
+Highlights
+
+Faster warm-up in cold weather
+Suits PTO and long idling
+Adjustable in most applications
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3868,
+    createdAt: 1789430400000,
+    name: "BD Diesel Traction Bars Kit Dodge Cummins 2500/3500 w/o OEM Rear Airbags 2003–2018 — 1032130",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032130.
+    price: 915.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032130",
+    fitment: "2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L). BD list this part for 2003–2018; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-traction-bars-kit",
+    thumbnail: "/product-media/suspension/bd-traction-bars-kit-dodge-cummins-2500-3500-w-o-oem-rear-airbags-2003-20-1032130/1.webp",
+    images: ["/product-media/suspension/bd-traction-bars-kit-dodge-cummins-2500-3500-w-o-oem-rear-airbags-2003-20-1032130/1.webp"],
+    description: `Traction Bars Kit Dodge Cummins 2500/3500 w/o OEM Rear Airbags 2003–2018, BD part 1032130.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032130.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
+BD catalogue range: 2003–2018
+Part number: 1032130
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3869,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Kit Ford Superduty F-250/F-350 4wd 2005–2016 & F-450/F-550 2wd/4wd 2005–2026 — 1032110",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032110.
+    price: 415.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032110",
+    fitment: "2005–2007 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (5.4L, 6.0L, 6.8L). BD list this part for 2005–2026; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ford-track-bar-kit-2005-2016-superduty-4wd-f250-f350-2005-2015-4wd-f450-f550-2005-2013-2wd-f450-f550",
+    thumbnail: "/product-media/suspension/bd-track-bar-kit-ford-superduty-f-250-f-350-4wd-2005-2016-f-450-f-550-2wd-1032110/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-kit-ford-superduty-f-250-f-350-4wd-2005-2016-f-450-f-550-2wd-1032110/1.webp"],
+    description: `Track Bar Kit Ford Superduty F-250/F-350 4wd 2005–2016 & F-450/F-550 2wd/4wd 2005–2026, BD part 1032110.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032110.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2005–2007 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (5.4L, 6.0L, 6.8L)
+BD catalogue range: 2005–2026
+Part number: 1032110
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3870,
+    createdAt: 1789430400000,
+    name: "BD Diesel Control Arm Caster Adjusting Cam Ford 2005–2010 Super Duty F-250/F-350/F-450 Pick-up/Cab-Chassis — 1032100",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032100.
+    price: 362.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032100",
+    fitment: "2005–2008 Ford F-250 Super Duty and F-350 Super Duty; and 2005–2007 Ford F-450 Super Duty (5.4L, 6.0L, 6.4L, 6.8L). BD list this part for 2005–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/ford-control-arm-caster-adjusting-cam-2005-2010",
+    thumbnail: "/product-media/suspension/bd-control-arm-caster-adjusting-cam-ford-2005-2010-super-duty-f-250-f-350-1032100/1.webp",
+    images: ["/product-media/suspension/bd-control-arm-caster-adjusting-cam-ford-2005-2010-super-duty-f-250-f-350-1032100/1.webp"],
+    description: `Control Arm Caster Adjusting Cam Ford 2005–2010 Super Duty F-250/F-350/F-450 Pick-up/Cab-Chassis, BD part 1032100.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032100.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2005–2008 Ford F-250 Super Duty and F-350 Super Duty; and 2005–2007 Ford F-450 Super Duty (5.4L, 6.0L, 6.4L, 6.8L)
+BD catalogue range: 2005–2010
+Part number: 1032100
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3871,
+    createdAt: 1789430400000,
+    name: "BD Diesel Sway Bar End Link Kit Dodge Cummins 2500/3500 4wd 2000–2009 — 1032050",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032050.
+    price: 195.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032050",
+    fitment: "2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L). BD list this part for 2000–2009; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-sway-bar-end-link-kit-2000-2009-2500-3500-4wd",
+    thumbnail: "/product-media/suspension/bd-sway-bar-end-link-kit-dodge-cummins-2500-3500-4wd-2000-2009-1032050/1.webp",
+    images: ["/product-media/suspension/bd-sway-bar-end-link-kit-dodge-cummins-2500-3500-4wd-2000-2009-1032050/1.webp"],
+    description: `Sway Bar End Link Kit Dodge Cummins 2500/3500 4wd 2000–2009, BD part 1032050.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032050.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
+BD catalogue range: 2000–2009
+Part number: 1032050
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3872,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Kit Dodge/RAM 4wd 2500 2003–2013 / 3500 2003–2012 — 1032013-F",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032013-F.
+    price: 433.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032013-F",
+    fitment: "2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L). BD list this part for 2003–2013; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-track-bar-kit-2003-2012",
+    thumbnail: "/product-media/suspension/bd-track-bar-kit-dodge-ram-4wd-2500-2003-2013-3500-2003-2012-1032013f/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-kit-dodge-ram-4wd-2500-2003-2013-3500-2003-2012-1032013f/1.webp"],
+    description: `Track Bar Kit Dodge/RAM 4wd 2500 2003–2013 / 3500 2003–2012, BD part 1032013-F.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032013-F.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
+BD catalogue range: 2003–2013
+Part number: 1032013-F
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3873,
+    createdAt: 1789430400000,
+    name: "BD Diesel Track Bar Kit Dodge Cummins 2500/3500 4wd 1994–2002 — 1032011-F",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032011-F.
+    price: 622.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032011-F",
+    fitment: "1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L). BD list this part for 1994–2002; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-track-bar-kit-1994-2002",
+    thumbnail: "/product-media/suspension/bd-track-bar-kit-dodge-cummins-2500-3500-4wd-1994-2002-1032011f/1.webp",
+    images: ["/product-media/suspension/bd-track-bar-kit-dodge-cummins-2500-3500-4wd-1994-2002-1032011f/1.webp"],
+    description: `Track Bar Kit Dodge Cummins 2500/3500 4wd 1994–2002, BD part 1032011-F.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032011-F.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L)
+BD catalogue range: 1994–2002
+Part number: 1032011-F
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3874,
+    createdAt: 1789430400000,
+    name: "BD Diesel Steering Box Stabilizer Bar Dodge Cummins 2500/3500 4wd 1994–2002|1500 1994–2001 — 1032004",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032004.
+    price: 253.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032004",
+    fitment: "1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L). BD list this part for 1994–2002; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-steering-box-stabilizer-bar-4wd-ram-1994-2002-2500-3500-1994-2001-1500",
+    thumbnail: "/product-media/suspension/bd-steering-box-stabilizer-bar-dodge-cummins-2500-3500-4wd-1994-2002-1500-1032004/1.webp",
+    images: ["/product-media/suspension/bd-steering-box-stabilizer-bar-dodge-cummins-2500-3500-4wd-1994-2002-1500-1032004/1.webp"],
+    description: `Steering Box Stabilizer Bar Dodge Cummins 2500/3500 4wd 1994–2002|1500 1994–2001, BD part 1032004.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032004.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L)
+BD catalogue range: 1994–2002
+Part number: 1032004
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3875,
+    createdAt: 1789430400000,
+    name: "BD Diesel Steering Box Stabilizer Bar Dodge Cummins 2500/3500 4wd 2003–2025 — 1032003",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032003.
+    price: 269.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032003",
+    fitment: "2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L). BD list this part for 2003–2025; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-steering-box-stabilizer-bar",
+    thumbnail: "/product-media/suspension/bd-steering-box-stabilizer-bar-dodge-cummins-2500-3500-4wd-2003-2025-1032003/1.webp",
+    images: ["/product-media/suspension/bd-steering-box-stabilizer-bar-dodge-cummins-2500-3500-4wd-2003-2025-1032003/1.webp"],
+    description: `Steering Box Stabilizer Bar Dodge Cummins 2500/3500 4wd 2003–2025, BD part 1032003.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032003.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
+BD catalogue range: 2003–2025
+Part number: 1032003
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3876,
+    createdAt: 1789430400000,
+    name: "BD Diesel Steering Box Stabilizer Bar Dodge Cummins 2500/3500 2wd 1994–2002|1500 1994–2001 — 1032002",
+    category: "suspension",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1032002.
+    price: 253.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1032002",
+    fitment: "1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L). BD list this part for 1994–2002; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/dodge-steering-box-stabilizer-bar-2wd-ram-1994-2002-2500-3500-1994-2001-1500",
+    thumbnail: "/product-media/suspension/bd-steering-box-stabilizer-bar-dodge-cummins-2500-3500-2wd-1994-2002-1500-1032002/1.webp",
+    images: ["/product-media/suspension/bd-steering-box-stabilizer-bar-dodge-cummins-2500-3500-2wd-1994-2002-1500-1032002/1.webp"],
+    description: `Steering Box Stabilizer Bar Dodge Cummins 2500/3500 2wd 1994–2002|1500 1994–2001, BD part 1032002.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
+
+BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+
+The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
+
+BD list this as part 1032002.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Suspension/Steering
+Application: 1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L)
+BD catalogue range: 1994–2002
+Part number: 1032002
+
+Highlights
+
+Re-centres the axle after a lift
+Adjustable in place, no removal
+Serviceable polyurethane bushings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3877,
+    createdAt: 1789430400000,
+    name: "BD Diesel TapShifter with Valve Body Dodge Cummins 48RE 2003–2007 — 1031382",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031382.
+    price: 1863.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031382",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/48re-tapshifter-c-w-valve-body",
+    thumbnail: "/product-media/transmission/bd-tapshifter-with-valve-body-dodge-cummins-48re-2003-2007-1031382/1.webp",
+    images: ["/product-media/transmission/bd-tapshifter-with-valve-body-dodge-cummins-48re-2003-2007-1031382/1.webp"],
+    description: `TapShifter with Valve Body Dodge Cummins 48RE 2003–2007, BD part 1031382.
+
+A TapShifter gives fingertip control of an automatic: full electronic gear selection, converter lock-up control and a genuine manual mode, with a gear-limiting function for towing.
+
+It ships with a BD high-performance valve body, a new shift lever, the control module, the gear selection display and the wiring harness — so it is a complete change rather than a module bolted onto a standard transmission.
+
+There is no programming to do; it works with the truck's standard shifting as well as in manual mode.
+
+BD list this as part 1031382.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TapShifter
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1031382
+
+Highlights
+
+Full manual gear selection and lock-up control
+Includes a BD high-performance valve body
+Gear limiting for towing
+No programming required
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3878,
+    createdAt: 1789430400000,
+    name: "BD Diesel TapShifter Ford F-250/F-350 6.4L Power Stroke 2008–2010 — 1031370",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031370.
+    price: 703.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031370",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-4l-powerstroke-tapshifter",
+    thumbnail: "/product-media/transmission/bd-tapshifter-ford-f-250-f-350-6-4l-power-stroke-2008-2010-1031370/1.webp",
+    images: ["/product-media/transmission/bd-tapshifter-ford-f-250-f-350-6-4l-power-stroke-2008-2010-1031370/1.webp"],
+    description: `TapShifter Ford F-250/F-350 6.4L Power Stroke 2008–2010, BD part 1031370.
+
+A TapShifter gives fingertip control of an automatic: full electronic gear selection, converter lock-up control and a genuine manual mode, with a gear-limiting function for towing.
+
+It ships with a BD high-performance valve body, a new shift lever, the control module, the gear selection display and the wiring harness — so it is a complete change rather than a module bolted onto a standard transmission.
+
+There is no programming to do; it works with the truck's standard shifting as well as in manual mode.
+
+BD list this as part 1031370.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TapShifter
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 1031370
+
+Highlights
+
+Full manual gear selection and lock-up control
+Includes a BD high-performance valve body
+Gear limiting for towing
+No programming required
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3879,
+    createdAt: 1789430400000,
+    name: "BD Diesel TapShifter/Exhaust Brake Ford F-250/F-350 6.0L Power Stroke 2003–2007 — 1031369",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031369.
+    price: 729.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031369",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-0l-powerstroke-tapshifter-exhaust-brake",
+    thumbnail: "/product-media/transmission/bd-tapshifter-exhaust-brake-ford-f-250-f-350-6-0l-power-stroke-2003-2007-1031369/1.webp",
+    images: ["/product-media/transmission/bd-tapshifter-exhaust-brake-ford-f-250-f-350-6-0l-power-stroke-2003-2007-1031369/1.webp"],
+    description: `TapShifter/Exhaust Brake Ford F-250/F-350 6.0L Power Stroke 2003–2007, BD part 1031369.
+
+A TapShifter gives fingertip control of an automatic: full electronic gear selection, converter lock-up control and a genuine manual mode, with a gear-limiting function for towing.
+
+It ships with a BD high-performance valve body, a new shift lever, the control module, the gear selection display and the wiring harness — so it is a complete change rather than a module bolted onto a standard transmission.
+
+There is no programming to do; it works with the truck's standard shifting as well as in manual mode.
+
+BD list this as part 1031369.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TapShifter
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1031369
+
+Highlights
+
+Full manual gear selection and lock-up control
+Includes a BD high-performance valve body
+Gear limiting for towing
+No programming required
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3880,
+    createdAt: 1789430400000,
+    name: "BD Diesel TapShifter Chevy Duramax Allison 2003–2005 — 1031361",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031361.
+    price: 482.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031361",
+    fitment: "2003–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2003–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/allison-tapshifter-chevy-2003-2005",
+    thumbnail: "/product-media/transmission/bd-tapshifter-chevy-duramax-allison-2003-2005-1031361/1.webp",
+    images: ["/product-media/transmission/bd-tapshifter-chevy-duramax-allison-2003-2005-1031361/1.webp"],
+    description: `TapShifter Chevy Duramax Allison 2003–2005, BD part 1031361.
+
+A TapShifter gives fingertip control of an automatic: full electronic gear selection, converter lock-up control and a genuine manual mode, with a gear-limiting function for towing.
+
+It ships with a BD high-performance valve body, a new shift lever, the control module, the gear selection display and the wiring harness — so it is a complete change rather than a module bolted onto a standard transmission.
+
+There is no programming to do; it works with the truck's standard shifting as well as in manual mode.
+
+BD list this as part 1031361.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TapShifter
+Application: 2003–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2003–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1031361
+
+Highlights
+
+Full manual gear selection and lock-up control
+Includes a BD high-performance valve body
+Gear limiting for towing
+No programming required
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3881,
+    createdAt: 1789430400000,
+    name: "BD Diesel TapShifter Chevy Duramax Allison 2001–2002 — 1031360",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031360.
+    price: 482.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031360",
+    fitment: "2001–2002 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/allison-tapshifter-chevy-2001-2002",
+    thumbnail: "/product-media/transmission/bd-tapshifter-chevy-duramax-allison-2001-2002-1031360/1.webp",
+    images: ["/product-media/transmission/bd-tapshifter-chevy-duramax-allison-2001-2002-1031360/1.webp"],
+    description: `TapShifter Chevy Duramax Allison 2001–2002, BD part 1031360.
+
+A TapShifter gives fingertip control of an automatic: full electronic gear selection, converter lock-up control and a genuine manual mode, with a gear-limiting function for towing.
+
+It ships with a BD high-performance valve body, a new shift lever, the control module, the gear selection display and the wiring harness — so it is a complete change rather than a module bolted onto a standard transmission.
+
+There is no programming to do; it works with the truck's standard shifting as well as in manual mode.
+
+BD list this as part 1031360.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: TapShifter
+Application: 2001–2002 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1031360
+
+Highlights
+
+Full manual gear selection and lock-up control
+Includes a BD high-performance valve body
+Gear limiting for towing
+No programming required
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3882,
+    createdAt: 1789430400000,
+    name: "BD Diesel Transmission Pressure Controller Ford 6.7L Power Stroke 6R140 2011–2019 — 1031320",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1031320.
+    price: 360.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1031320",
+    fitment: "2011–2019 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6r140-transmission-pressure-controller",
+    thumbnail: "/product-media/transmission/bd-transmission-pressure-controller-ford-6-7l-power-stroke-6r140-2011-201-1031320/1.webp",
+    images: ["/product-media/transmission/bd-transmission-pressure-controller-ford-6-7l-power-stroke-6r140-2011-201-1031320/1.webp"],
+    description: `Transmission Pressure Controller Ford 6.7L Power Stroke 6R140 2011–2019, BD part 1031320.
+
+Line pressure is what holds an automatic's clutches. Raise it and the clutches hold more torque without slipping, and slipping is what burns them.
+
+BD's pressure controller boosts line pressure on demand rather than permanently, so the transmission is firm when it is working and normal when it is not.
+
+The LED indicator shows when boosting is active, which is the difference between knowing the system is working and assuming it.
+
+BD list this as part 1031320.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PressureLoc
+Application: 2011–2019 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Part number: 1031320
+
+Highlights
+
+Raises line pressure when it is needed
+Less clutch slip under load
+LED shows when boosting is active
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3883,
+    createdAt: 1789430400000,
+    name: "BD Diesel Rocker Switch Kit, Exhaust Brake - 3/4 Manual Lever — 1030910",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030910.
+    price: 147.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030910",
+    fitment: "1994–1995 Chevrolet C1500, C2500, C3500, K1500, K2500 and K3500; 1994–1995 Dodge / Ram 2500 and 3500; 1994–1995 Ford F-250 and F-350; 1994–1995 GMC C1500, C2500 and C3500; and 1994 GMC K1500, K2500 and K3500 (5.9L, 6.5L, 7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/rocker-switch-kit-exhaust-brake-3-4-manual-lever",
+    thumbnail: "/product-media/engine/bd-rocker-switch-kit-exhaust-brake-3-4-manual-lever-1030910/1.webp",
+    images: ["/product-media/engine/bd-rocker-switch-kit-exhaust-brake-3-4-manual-lever-1030910/1.webp"],
+    description: `Rocker Switch Kit, Exhaust Brake - 3/4 Manual Lever, BD part 1030910.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1030910.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1994–1995 Chevrolet C1500, C2500, C3500, K1500, K2500 and K3500; 1994–1995 Dodge / Ram 2500 and 3500; 1994–1995 Ford F-250 and F-350; 1994–1995 GMC C1500, C2500 and C3500; and 1994 GMC K1500, K2500 and K3500 (5.9L, 6.5L, 7.3L)
+Part number: 1030910
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3884,
+    createdAt: 1789430400000,
+    name: "BD Diesel Rocker Switch Kit, Exhaust Brake - 5/8 Manual Lever — 1030900",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030900.
+    price: 123.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030900",
+    fitment: "1999–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1999–2003 Dodge / Ram 2500 and 3500; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (5.9L, 6.0L, 7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/rocker-switch-kit-exhaust-brake-5-8-manual-lever",
+    thumbnail: "/product-media/engine/bd-rocker-switch-kit-exhaust-brake-5-8-manual-lever-1030900/1.webp",
+    images: ["/product-media/engine/bd-rocker-switch-kit-exhaust-brake-5-8-manual-lever-1030900/1.webp"],
+    description: `Rocker Switch Kit, Exhaust Brake - 5/8 Manual Lever, BD part 1030900.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1030900.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1999–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1999–2003 Dodge / Ram 2500 and 3500; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (5.9L, 6.0L, 7.3L)
+Part number: 1030900
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3885,
+    createdAt: 1789430400000,
+    name: "BD Diesel Brakeloc Manual Transmission Ford 7.3L Power Stroke 1994–2003 — 1030755",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030755.
+    price: 282.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030755",
+    fitment: "1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/7-3l-brakeloc-manual-trans",
+    thumbnail: "/product-media/engine/bd-brakeloc-manual-transmission-ford-7-3l-power-stroke-1994-2003-1030755/1.webp",
+    images: ["/product-media/engine/bd-brakeloc-manual-transmission-ford-7-3l-power-stroke-1994-2003-1030755/1.webp"],
+    description: `Brakeloc Manual Transmission Ford 7.3L Power Stroke 1994–2003, BD part 1030755.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1030755.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 1030755
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3886,
+    createdAt: 1789430400000,
+    name: "BD Diesel Brakeloc Automatic Transmission Ford 7.3L Power Stroke 1995–2003 — 1030750",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030750.
+    price: 564.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030750",
+    fitment: "1995–1996 Ford F-250; 1995–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/7-3l-brakeloc-automatic-trans",
+    thumbnail: "/product-media/engine/bd-brakeloc-automatic-transmission-ford-7-3l-power-stroke-1995-2003-1030750/1.webp",
+    images: ["/product-media/engine/bd-brakeloc-automatic-transmission-ford-7-3l-power-stroke-1995-2003-1030750/1.webp"],
+    description: `Brakeloc Automatic Transmission Ford 7.3L Power Stroke 1995–2003, BD part 1030750.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1030750.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1995–1996 Ford F-250; 1995–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 1030750
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3887,
+    createdAt: 1789430400000,
+    name: "BD Diesel Transmission Pressure Controller Dodge 6.7L Cummins 68RFE 2007.5-2018 — 1030369",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030369.
+    price: 235.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030369",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68fre-transmission-pressure-enhancer",
+    thumbnail: "/product-media/transmission/bd-transmission-pressure-controller-dodge-6-7l-cummins-68rfe-2007-5-2018-1030369/1.webp",
+    images: ["/product-media/transmission/bd-transmission-pressure-controller-dodge-6-7l-cummins-68rfe-2007-5-2018-1030369/1.webp"],
+    description: `Transmission Pressure Controller Dodge 6.7L Cummins 68RFE 2007.5-2018, BD part 1030369.
+
+Line pressure is what holds an automatic's clutches. Raise it and the clutches hold more torque without slipping, and slipping is what burns them.
+
+BD's pressure controller boosts line pressure on demand rather than permanently, so the transmission is firm when it is working and normal when it is not.
+
+The LED indicator shows when boosting is active, which is the difference between knowing the system is working and assuming it.
+
+BD list this as part 1030369.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PressureLoc
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1030369
+
+Highlights
+
+Raises line pressure when it is needed
+Less clutch slip under load
+LED shows when boosting is active
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3888,
+    createdAt: 1789430400000,
+    name: "BD Diesel Electronic PressureLoc Dodge 6.7L Cummins 68RFE 2007.5-2018 — 1030368-V2",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030368-V2.
+    price: 159.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030368-V2",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-electronic-pressureloc",
+    thumbnail: "/product-media/transmission/bd-electronic-pressureloc-dodge-6-7l-cummins-68rfe-2007-5-2018-1030368v2/1.webp",
+    images: ["/product-media/transmission/bd-electronic-pressureloc-dodge-6-7l-cummins-68rfe-2007-5-2018-1030368v2/1.webp"],
+    description: `Electronic PressureLoc Dodge 6.7L Cummins 68RFE 2007.5-2018, BD part 1030368-V2.
+
+Line pressure is what holds an automatic's clutches. Raise it and the clutches hold more torque without slipping, and slipping is what burns them.
+
+BD's pressure controller boosts line pressure on demand rather than permanently, so the transmission is firm when it is working and normal when it is not.
+
+The LED indicator shows when boosting is active, which is the difference between knowing the system is working and assuming it.
+
+BD list this as part 1030368-V2.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PressureLoc
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1030368-V2
+
+Highlights
+
+Raises line pressure when it is needed
+Less clutch slip under load
+LED shows when boosting is active
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3889,
+    createdAt: 1789430400000,
+    name: "BD Diesel Electronic Pressure Control Dodge Cummins 48RE 2005–2007 — 1030348",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030348.
+    price: 459.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030348",
+    fitment: "2005–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/48re-electronic-pressure-control",
+    thumbnail: "/product-media/transmission/bd-electronic-pressure-control-dodge-cummins-48re-2005-2007-1030348/1.webp",
+    images: ["/product-media/transmission/bd-electronic-pressure-control-dodge-cummins-48re-2005-2007-1030348/1.webp"],
+    description: `Electronic Pressure Control Dodge Cummins 48RE 2005–2007, BD part 1030348.
+
+Line pressure is what holds an automatic's clutches. Raise it and the clutches hold more torque without slipping, and slipping is what burns them.
+
+BD's pressure controller boosts line pressure on demand rather than permanently, so the transmission is firm when it is working and normal when it is not.
+
+The LED indicator shows when boosting is active, which is the difference between knowing the system is working and assuming it.
+
+BD list this as part 1030348.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: PressureLoc
+Application: 2005–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L)
+Part number: 1030348
+
+Highlights
+
+Raises line pressure when it is needed
+Less clutch slip under load
+LED shows when boosting is active
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3890,
+    createdAt: 1789430400000,
+    name: "BD Diesel Valve Spring Kit (60lbs) Dodge 2500/3500 12 Valve 5.9L Cummins 1988–1998 — 1030060",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030060.
+    price: 120.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030060",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-6lbs-valve-spring-kit",
+    thumbnail: "/product-media/engine/bd-valve-spring-kit-60lbs-dodge-2500-3500-12-valve-5-9l-cummins-1988-1998-1030060/1.webp",
+    images: ["/product-media/engine/bd-valve-spring-kit-60lbs-dodge-2500-3500-12-valve-5-9l-cummins-1988-1998-1030060/1.webp"],
+    description: `Valve Spring Kit (60lbs) Dodge 2500/3500 12 Valve 5.9L Cummins 1988–1998, BD part 1030060.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1030060.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
+Part number: 1030060
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3891,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake (remote) with AIR Compressor Dodge 5.9L Cummins 2003–2005 — 1027338",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027338.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027338",
+    fitment: "2003–2005 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-exhaust-brake-remote-dodge-2003-2005-c-w-air-compressor",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-remote-with-air-compressor-dodge-5-9l-cummins-2003-2005-1027338/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-remote-with-air-compressor-dodge-5-9l-cummins-2003-2005-1027338/1.webp"],
+    description: `Exhaust Brake (remote) with AIR Compressor Dodge 5.9L Cummins 2003–2005, BD part 1027338.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027338.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2003–2005 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1027338
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3892,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake (remote) with AIR Compressor Dodge 5.9L Cummins 2006–2007 — 1027330",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027330.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027330",
+    fitment: "2006–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-exhaust-brake-remote-dodge-2006-2007-c-w-air-compressor",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-remote-with-air-compressor-dodge-5-9l-cummins-2006-2007-1027330/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-remote-with-air-compressor-dodge-5-9l-cummins-2006-2007-1027330/1.webp"],
+    description: `Exhaust Brake (remote) with AIR Compressor Dodge 5.9L Cummins 2006–2007, BD part 1027330.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027330.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2006–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L)
+Part number: 1027330
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3893,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake (remote) with AIR Compressor FORD 6.7L Power Stroke 2011–2016 — 1027150",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027150.
+    price: 2016.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027150",
+    fitment: "2011–2016 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-powerstroke-exhaust-brake-remote",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-remote-with-air-compressor-ford-6-7l-power-stroke-2011-2-1027150/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-remote-with-air-compressor-ford-6-7l-power-stroke-2011-2-1027150/1.webp"],
+    description: `Exhaust Brake (remote) with AIR Compressor FORD 6.7L Power Stroke 2011–2016, BD part 1027150.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027150.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 2011–2016 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Part number: 1027150
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3894,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Brake (remote) 4-INCH Exhaust with AIR Compressor FORD 7.3L Power Stroke 1999–2003 — 1027144",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1027144.
+    price: 1691.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1027144",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/7-3l-powerstroke-exhaust-brake-remote-ford",
+    thumbnail: "/product-media/engine/bd-exhaust-brake-remote-4-inch-exhaust-with-air-compressor-ford-7-3l-powe-1027144/1.webp",
+    images: ["/product-media/engine/bd-exhaust-brake-remote-4-inch-exhaust-with-air-compressor-ford-7-3l-powe-1027144/1.webp"],
+    description: `Exhaust Brake (remote) 4-INCH Exhaust with AIR Compressor FORD 7.3L Power Stroke 1999–2003, BD part 1027144.
+
+An exhaust brake closes a valve in the exhaust and makes the engine work against its own back pressure. On a heavy truck coming down a grade with a trailer, that is the difference between arriving at the bottom with service brakes you can still use and arriving with a smell and a soft pedal.
+
+BD have built exhaust brakes longer than most, and the range covers both the older vacuum and air-operated designs and the current electronic inline units, which need no air compressor or air lines and ask less maintenance in return.
+
+BD's Variable Orifice Technology regulates back pressure evenly across the rev range rather than only at one point, which is what makes the braking consistent instead of arriving all at once.
+
+BD list this as part 1027144.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Exhaust Brake
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
+Part number: 1027144
+
+Highlights
+
+Engine braking on grades and with a trailer
+Saves the service brakes
+Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
