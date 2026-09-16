@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   1748 listings added 2026-09-15 from manufacturer and
+   1899 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -88526,6 +88526,7316 @@ Highlights
 Engine braking on grades and with a trailer
 Saves the service brakes
 Variable Orifice Technology for even regulation
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3896,
+    createdAt: 1789430400000,
+    name: "BD Diesel Essential Short Block Engine Dodge/RAM 6.7L Cummins 2013–2018 — DJPSB100022",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100022.
+    price: 5879.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100022",
+    fitment: "2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/essential-short-block-engine-dodge-ram-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-essential-short-block-engine-dodge-ram-6-7l-cummins-2013-2018-djpsb100022/1.webp",
+    images: ["/product-media/engine/bd-essential-short-block-engine-dodge-ram-6-7l-cummins-2013-2018-djpsb100022/1.webp"],
+    description: `Essential Short Block Engine Dodge/RAM 6.7L Cummins 2013–2018, BD part DJPSB100022.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100022.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPSB100022
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3897,
+    createdAt: 1789430400000,
+    name: "BD Diesel Essential Short Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012 — DJPSB100021",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100021.
+    price: 5879.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100021",
+    fitment: "2007–2012 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/essential-short-block-engine-dodge-ram-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-essential-short-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djpsb100021/1.webp",
+    images: ["/product-media/engine/bd-essential-short-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djpsb100021/1.webp"],
+    description: `Essential Short Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012, BD part DJPSB100021.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100021.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPSB100021
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3898,
+    createdAt: 1789430400000,
+    name: "BD Diesel Essential Short Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007 — DJPSB100020",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100020.
+    price: 5669.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100020",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/essential-short-block-engine-dodge-ram-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-essential-short-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djpsb100020/1.webp",
+    images: ["/product-media/engine/bd-essential-short-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djpsb100020/1.webp"],
+    description: `Essential Short Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007, BD part DJPSB100020.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100020.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPSB100020
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3899,
+    createdAt: 1789430400000,
+    name: "BD Diesel Essential Short Block Engine Dodge/RAM 5.9L Cummins 2003–2004 — DJPSB100019",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100019.
+    price: 5669.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100019",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/essential-short-block-engine-dodge-ram-5-9l-cummins-2003-2004",
+    thumbnail: "/product-media/engine/bd-essential-short-block-engine-dodge-ram-5-9l-cummins-2003-2004-djpsb100019/1.webp",
+    images: ["/product-media/engine/bd-essential-short-block-engine-dodge-ram-5-9l-cummins-2003-2004-djpsb100019/1.webp"],
+    description: `Essential Short Block Engine Dodge/RAM 5.9L Cummins 2003–2004, BD part DJPSB100019.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100019.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPSB100019
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3900,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Short Block Engine Dodge/RAM 5.9L Cummins 2003–2004 — DJPSB100018",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100018.
+    price: 6404.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100018",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-short-block-engine-dodge-ram-5-9l-cummins-2003-2004",
+    thumbnail: "/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-5-9l-cummins-2003-2004-djpsb100018/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-5-9l-cummins-2003-2004-djpsb100018/1.webp"],
+    description: `Precision Plus Short Block Engine Dodge/RAM 5.9L Cummins 2003–2004, BD part DJPSB100018.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100018.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPSB100018
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3901,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Short Block Engine Dodge/RAM 6.7L Cummins 2013–2018 — DJPSB100008",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100008.
+    price: 6614.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100008",
+    fitment: "2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-short-block-engine-dodge-ram-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-6-7l-cummins-2013-2018-djpsb100008/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-6-7l-cummins-2013-2018-djpsb100008/1.webp"],
+    description: `Precision Plus Short Block Engine Dodge/RAM 6.7L Cummins 2013–2018, BD part DJPSB100008.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100008.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPSB100008
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3902,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Short Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007 — DJPSB100005",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100005.
+    price: 6404.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100005",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-short-block-engine-dodge-ram-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djpsb100005/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djpsb100005/1.webp"],
+    description: `Precision Plus Short Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007, BD part DJPSB100005.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100005.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPSB100005
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3903,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Short Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012 — DJPSB100004",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPSB100004.
+    price: 6614.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPSB100004",
+    fitment: "2007–2012 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-short-block-engine-dodge-ram-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djpsb100004/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-short-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djpsb100004/1.webp"],
+    description: `Precision Plus Short Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012, BD part DJPSB100004.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPSB100004.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPSB100004
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3904,
+    createdAt: 1789430400000,
+    name: "BD Diesel Proforce Torque Converter Dodge 1994–2007 47RH/47RE/48RE, Low — 1070247LX",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1070247LX.
+    price: 1320.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1070247LX",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L). Low option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-torque-converter-dodge-1994-2007-47rh-47re-48re",
+    thumbnail: "/product-media/engine/bd-proforce-torque-converter-dodge-1994-2007-47rh-47re-48re-1070247lx/1.webp",
+    images: ["/product-media/engine/bd-proforce-torque-converter-dodge-1994-2007-47rh-47re-48re-1070247lx/1.webp"],
+    description: `Proforce Torque Converter Dodge 1994–2007 47RH/47RE/48RE, low, BD part 1070247LX.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1070247LX, the low option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: Low
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1070247LX
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+Low
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3905,
+    createdAt: 1789430400000,
+    name: "BD Diesel Proforce Torque Converter Dodge 1994–2007 47RH/47RE/48RE, High — 1070247X-HS",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1070247X-HS.
+    price: 1294.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1070247X-HS",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L). High option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-torque-converter-dodge-1994-2007-47rh-47re-48re",
+    thumbnail: "/product-media/engine/bd-proforce-torque-converter-dodge-1994-2007-47rh-47re-48re-1070247xhs/1.webp",
+    images: ["/product-media/engine/bd-proforce-torque-converter-dodge-1994-2007-47rh-47re-48re-1070247xhs/1.webp"],
+    description: `Proforce Torque Converter Dodge 1994–2007 47RH/47RE/48RE, high, BD part 1070247X-HS.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1070247X-HS, the high option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: High
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1070247X-HS
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+High
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3906,
+    createdAt: 1789430400000,
+    name: "BD Diesel 6.4L Power Stroke Screamer V2S Twin Turbo Kit Ford 2008–2010, W/O Intake System — 1047083",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047083.
+    price: 4125.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047083",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L). W/O Intake System option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-4l-powerstroke-screamer-v2s-twin-turbo-kit-ford-2008-2010",
+    thumbnail: "/product-media/engine/bd-6-4l-power-stroke-screamer-v2s-twin-turbo-kit-ford-2008-2010-1047083/1.webp",
+    images: ["/product-media/engine/bd-6-4l-power-stroke-screamer-v2s-twin-turbo-kit-ford-2008-2010-1047083/1.webp"],
+    description: `6.4L Power Stroke Screamer V2S Twin Turbo Kit Ford 2008–2010, w/o intake system, BD part 1047083.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1047083, the w/o intake system option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: W/O Intake System
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 1047083
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+W/O Intake System
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3907,
+    createdAt: 1789430400000,
+    name: "BD Diesel 6.4L Power Stroke Screamer V2S Twin Turbo Kit Ford 2008–2010, with Intake System — 1047082",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047082.
+    price: 4662.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047082",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L). with Intake System option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-4l-powerstroke-screamer-v2s-twin-turbo-kit-ford-2008-2010",
+    thumbnail: "/product-media/engine/bd-6-4l-power-stroke-screamer-v2s-twin-turbo-kit-ford-2008-2010-1047082/1.webp",
+    images: ["/product-media/engine/bd-6-4l-power-stroke-screamer-v2s-twin-turbo-kit-ford-2008-2010-1047082/1.webp"],
+    description: `6.4L Power Stroke Screamer V2S Twin Turbo Kit Ford 2008–2010, with intake system, BD part 1047082.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1047082, the with intake system option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: with Intake System
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 1047082
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+with Intake System
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3908,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Stage 1 GT37 Retrofit Turbo Kit Ford 6.7L Power Stroke F-250/350 2011-14 & F-450/550 2011-16 — 1045824",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045824.
+    price: 4776.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045824",
+    fitment: "2011–2014 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2016 Ford F-450 Super Duty and F-550 Super Duty (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-stage-1-gt37-retrofit-turbo-kit-ford-6-7l-power-stroke-f250-350-2011-14-f450-550-2011-16",
+    thumbnail: "/product-media/engine/bd-screamer-stage-1-gt37-retrofit-turbo-kit-ford-6-7l-power-stroke-f-250--1045824/1.webp",
+    images: ["/product-media/engine/bd-screamer-stage-1-gt37-retrofit-turbo-kit-ford-6-7l-power-stroke-f-250--1045824/1.webp"],
+    description: `Screamer Stage 1 GT37 Retrofit Turbo Kit Ford 6.7L Power Stroke F-250/350 2011-14 & F-450/550 2011-16, BD part 1045824.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045824.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2011–2014 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2016 Ford F-450 Super Duty and F-550 Super Duty (6.7L)
+Part number: 1045824
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3909,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Ready Run Engine Dodge RAM 2500/3500 5.9L Cummins 2006–2007 — DJPLB100097",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100097.
+    price: 24299.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100097",
+    fitment: "2006–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2006-2007",
+    thumbnail: "/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2006--djplb100097/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2006--djplb100097/1.webp"],
+    description: `Precision Plus Ready Run Engine Dodge RAM 2500/3500 5.9L Cummins 2006–2007, BD part DJPLB100097.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100097.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2006–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100097
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3910,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Input Shaft Dodge Cummins 68RFE 2007.5-2024 — 1600189",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600189.
+    price: 1325.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600189",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-input-shaft-dodge-cummins-68rfe-2007-5-2024",
+    thumbnail: "/product-media/transmission/bd-billet-input-shaft-dodge-cummins-68rfe-2007-5-2024-1600189/1.webp",
+    images: ["/product-media/transmission/bd-billet-input-shaft-dodge-cummins-68rfe-2007-5-2024-1600189/1.webp"],
+    description: `Billet Input Shaft Dodge Cummins 68RFE 2007.5-2024, BD part 1600189.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600189.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1600189
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3911,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Intermediate Shaft Dodge Cummins 47RE/47RH/48RE 1994–2007 — 1600117",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600117.
+    price: 1512.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600117",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-intermediate-shaft-dodge-cummins-47re-47rh-48re-1994-2007",
+    thumbnail: "/product-media/transmission/bd-billet-intermediate-shaft-dodge-cummins-47re-47rh-48re-1994-2007-1600117/1.webp",
+    images: ["/product-media/transmission/bd-billet-intermediate-shaft-dodge-cummins-47re-47rh-48re-1994-2007-1600117/1.webp"],
+    description: `Billet Intermediate Shaft Dodge Cummins 47RE/47RH/48RE 1994–2007, BD part 1600117.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600117.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1600117
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3912,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Output Shaft Dodge Cummins 47RE/48RE 4wd 1996–2007 — 1600116",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600116.
+    price: 1527.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600116",
+    fitment: "1996–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-output-shaft-dodge-cummins-47re-48re-4wd-1996-2007",
+    thumbnail: "/product-media/transmission/bd-billet-output-shaft-dodge-cummins-47re-48re-4wd-1996-2007-1600116/1.webp",
+    images: ["/product-media/transmission/bd-billet-output-shaft-dodge-cummins-47re-48re-4wd-1996-2007-1600116/1.webp"],
+    description: `Billet Output Shaft Dodge Cummins 47RE/48RE 4wd 1996–2007, BD part 1600116.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600116.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 1996–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1600116
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3913,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Input Shaft Dodge Cummins 47RE/47RH/48RE 1994–2007 — 1600115",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600115.
+    price: 1198.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600115",
+    fitment: "1994–2007 Dodge / Ram 2500; and 1994–2006 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-input-shaft-dodge-cummins-47re-47rh-48re-1994-2007",
+    thumbnail: "/product-media/transmission/bd-billet-input-shaft-dodge-cummins-47re-47rh-48re-1994-2007-1600115/1.webp",
+    images: ["/product-media/transmission/bd-billet-input-shaft-dodge-cummins-47re-47rh-48re-1994-2007-1600115/1.webp"],
+    description: `Billet Input Shaft Dodge Cummins 47RE/47RH/48RE 1994–2007, BD part 1600115.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600115.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 1994–2007 Dodge / Ram 2500; and 1994–2006 Dodge / Ram 3500 (5.9L)
+Part number: 1600115
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3914,
+    createdAt: 1789430400000,
+    name: "BD Diesel Big Stack Shaft & Drum Kit - Dodge Cummins 68RFE 2007.5-2024 — 1062036",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1062036.
+    price: 1413.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1062036",
+    fitment: "2007–2021 Dodge / Ram 2500; and 2007–2020 Dodge / Ram 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/big-stack-shaft-drum-kit-dodge-cummins-68rfe-2007-5-2024",
+    thumbnail: "/product-media/transmission/bd-big-stack-shaft-drum-kit-dodge-cummins-68rfe-2007-5-2024-1062036/1.webp",
+    images: ["/product-media/transmission/bd-big-stack-shaft-drum-kit-dodge-cummins-68rfe-2007-5-2024-1062036/1.webp"],
+    description: `Big Stack Shaft & Drum Kit - Dodge Cummins 68RFE 2007.5-2024, BD part 1062036.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1062036.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2007–2021 Dodge / Ram 2500; and 2007–2020 Dodge / Ram 3500 (6.7L)
+Part number: 1062036
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3915,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Overdrive Reaction Plates Dodge 6.7L Cummins 68RFE 2007.5-2018 — 1062034",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1062034.
+    price: 252.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1062034",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-overdrive-reaction-plates-dodge-6-7l-cummins-68rfe-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-billet-overdrive-reaction-plates-dodge-6-7l-cummins-68rfe-2007-5-2018-1062034/1.webp",
+    images: ["/product-media/transmission/bd-billet-overdrive-reaction-plates-dodge-6-7l-cummins-68rfe-2007-5-2018-1062034/1.webp"],
+    description: `Billet Overdrive Reaction Plates Dodge 6.7L Cummins 68RFE 2007.5-2018, BD part 1062034.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1062034.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1062034
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3916,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Ford 6.4L Power Stroke 2008–2010 — 1047037",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047037.
+    price: 374.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047037",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-ford-6-4l-power-stroke-2008-2010",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-ford-6-4l-power-stroke-2008-2010-1047037/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-ford-6-4l-power-stroke-2008-2010-1047037/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Ford 6.4L Power Stroke 2008–2010, BD part 1047037.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1047037.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 1047037
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3917,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Ford 6.0L Power Stroke 2003–2007 — 1047035",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047035.
+    price: 356.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047035",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-ford-6-0l-power-stroke-2003-2007-1047035/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-ford-6-0l-power-stroke-2003-2007-1047035/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Ford 6.0L Power Stroke 2003–2007, BD part 1047035.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1047035.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1047035
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3918,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit w/Intake Pipe Ford 6.0L Power Stroke 2003–2007 — 1047034",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047034.
+    price: 525.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047034",
+    fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-w-intake-pipe-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-w-intake-pipe-ford-6-0l-power-stroke-2003-2-1047034/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-w-intake-pipe-ford-6-0l-power-stroke-2003-2-1047034/1.webp"],
+    description: `Intercooler Hose & Clamp Kit w/Intake Pipe Ford 6.0L Power Stroke 2003–2007, BD part 1047034.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1047034.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1047034
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3919,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intake Clamp Kit Ford 7.3L Power Stroke 1999.5-2003 — 1047020",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047020.
+    price: 88.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047020",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intake-clamp-kit-ford-7-3l-power-stroke-1999-5-2003",
+    thumbnail: "/product-media/engine/bd-intake-clamp-kit-ford-7-3l-power-stroke-1999-5-2003-1047020/1.webp",
+    images: ["/product-media/engine/bd-intake-clamp-kit-ford-7-3l-power-stroke-1999-5-2003-1047020/1.webp"],
+    description: `Intake Clamp Kit Ford 7.3L Power Stroke 1999.5-2003, BD part 1047020.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1047020.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L)
+Part number: 1047020
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3920,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Wheel & Waste Gate Combo Kit w/OEM or Garrett Replacement Turbo Ford 7.3L Power Stroke 1999.5-2003 — 1047002",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047002.
+    price: 520.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047002",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-wheel-waste-gate-combo-kit-w-oem-or-garrett-replacement-turbo-ford-7-3l-power-stroke-1999-5-2003",
+    thumbnail: "/product-media/turbocharger/bd-billet-wheel-waste-gate-combo-kit-w-oem-or-garrett-replacement-turbo-f-1047002/1.webp",
+    images: ["/product-media/turbocharger/bd-billet-wheel-waste-gate-combo-kit-w-oem-or-garrett-replacement-turbo-f-1047002/1.webp"],
+    description: `Billet Wheel & Waste Gate Combo Kit w/OEM or Garrett Replacement Turbo Ford 7.3L Power Stroke 1999.5-2003, BD part 1047002.
+
+A billet compressor wheel is lighter than the cast wheel it replaces, which means it spins up faster, and it is stronger, which means it tolerates the conditions that destroy a cast one.
+
+On the 7.3L Power Stroke the billet wheel also removes the compressor surge these turbochargers are known for.
+
+It is an upgrade made inside the turbocharger you already have rather than a replacement for it.
+
+BD list this as part 1047002.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Accessories
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L)
+Part number: 1047002
+
+Highlights
+
+Lighter and stronger than a cast wheel
+Faster spool-up
+Eliminates compressor surge on the 7.3L
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3921,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Turbo Compressor Wheel w/OEM or Garrett Replacement Turbo Ford 7.3L Power Stroke 1999.5-2003 — 1047001",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047001.
+    price: 282.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047001",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-turbo-compressor-wheel-w-oem-or-garrett-replacement-turbo-ford-7-3l-power-stroke-1999-5-2003",
+    thumbnail: "/product-media/turbocharger/bd-billet-turbo-compressor-wheel-w-oem-or-garrett-replacement-turbo-ford--1047001/1.webp",
+    images: ["/product-media/turbocharger/bd-billet-turbo-compressor-wheel-w-oem-or-garrett-replacement-turbo-ford--1047001/1.webp"],
+    description: `Billet Turbo Compressor Wheel w/OEM or Garrett Replacement Turbo Ford 7.3L Power Stroke 1999.5-2003, BD part 1047001.
+
+A billet compressor wheel is lighter than the cast wheel it replaces, which means it spins up faster, and it is stronger, which means it tolerates the conditions that destroy a cast one.
+
+On the 7.3L Power Stroke the billet wheel also removes the compressor surge these turbochargers are known for.
+
+It is an upgrade made inside the turbocharger you already have rather than a replacement for it.
+
+BD list this as part 1047001.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Accessories
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L)
+Part number: 1047001
+
+Highlights
+
+Lighter and stronger than a cast wheel
+Faster spool-up
+Eliminates compressor surge on the 7.3L
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3922,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Chevy Duramax (Driver's Side) 2006–2010 — 1046277",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046277.
+    price: 249.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046277",
+    fitment: "2006–2010 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2010 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 Chevrolet Silverado 3500 HD; and 2007–2010 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-chevy-duramax-drivers-side-2006-2010",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-chevy-duramax-driver-s-side-2006-2010-1046277/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-chevy-duramax-driver-s-side-2006-2010-1046277/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Chevy Duramax (Driver's Side) 2006–2010, BD part 1046277.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1046277.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2006–2010 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2006–2010 GMC Sierra 2500 HD; 2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 Chevrolet Silverado 3500 HD; and 2007–2010 GMC Sierra 3500 HD (6.6L)
+Part number: 1046277
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3923,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Chevy LB7 Duramax 2001–2004 — 1046275",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046275.
+    price: 456.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046275",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-chevy-lb7-duramax-2001-2004",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-chevy-lb7-duramax-2001-2004-1046275/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-chevy-lb7-duramax-2001-2004-1046275/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Chevy LB7 Duramax 2001–2004, BD part 1046275.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1046275.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; and 2001–2004 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1046275
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3924,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Manifold Package RAM 2500/3500 6.7L Cummins 2019–2024 — 1045872",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045872.
+    price: 3766.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045872",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbo-manifold-package-ram-2500-3500-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-screamer-turbo-manifold-package-ram-2500-3500-6-7l-cummins-2019-2024-1045872/1.webp",
+    images: ["/product-media/engine/bd-screamer-turbo-manifold-package-ram-2500-3500-6-7l-cummins-2019-2024-1045872/1.webp"],
+    description: `Screamer Turbo Manifold Package RAM 2500/3500 6.7L Cummins 2019–2024, BD part 1045872.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045872.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045872
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3925,
+    createdAt: 1789430400000,
+    name: "BD Diesel Super B Special SX-E S363 Turbo Kit Dodge 5.9L Cummins 1994–2002 — 1045257",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045257.
+    price: 2627.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045257",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/super-b-special-sx-e-s363-turbo-kit-dodge-5-9l-cummins-1994-2002",
+    thumbnail: "/product-media/engine/bd-super-b-special-sx-e-s363-turbo-kit-dodge-5-9l-cummins-1994-2002-1045257/1.webp",
+    images: ["/product-media/engine/bd-super-b-special-sx-e-s363-turbo-kit-dodge-5-9l-cummins-1994-2002-1045257/1.webp"],
+    description: `Super B Special SX-E S363 Turbo Kit Dodge 5.9L Cummins 1994–2002, BD part 1045257.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045257.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 1045257
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3926,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit RAM 2500/3500/4500/5500 6.7L Cummins 2013–2018 — 1045218",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045218.
+    price: 337.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045218",
+    fitment: "2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-ram-2500-3500-4500-5500-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-ram-2500-3500-4500-5500-6-7l-cummins-2013-2-1045218/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-ram-2500-3500-4500-5500-6-7l-cummins-2013-2-1045218/1.webp"],
+    description: `Intercooler Hose & Clamp Kit RAM 2500/3500/4500/5500 6.7L Cummins 2013–2018, BD part 1045218.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1045218.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: 1045218
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3927,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Dodge 5.9L Cummins 2003–2007 — 1045215",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045215.
+    price: 450.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045215",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-dodge-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-5-9l-cummins-2003-2007-1045215/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-5-9l-cummins-2003-2007-1045215/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Dodge 5.9L Cummins 2003–2007, BD part 1045215.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1045215.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045215
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3928,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Dodge 5.9L Cummins 1994–2002 — 1045210",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045210.
+    price: 450.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045210",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-dodge-5-9l-cummins-1994-2002",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-5-9l-cummins-1994-2002-1045210/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-5-9l-cummins-1994-2002-1045210/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Dodge 5.9L Cummins 1994–2002, BD part 1045210.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1045210.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 1045210
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3929,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off LM2/LZ0 Chevy/GM 3.0L Duramax 2019+ — 1036762",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036762.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036762",
+    fitment: "2019–2025 Chevrolet Silverado 1500; 2019–2024 GMC Sierra 1500; 2021–2024 Chevrolet Suburban and Tahoe; and 2021–2024 GMC Yukon and Yukon XL (3.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/e-pas-positive-air-shut-off-lm2-lz0-chevy-gm-3-0l-duramax-2019",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-lm2-lz0-chevy-gm-3-0l-duramax-2019-1036762/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-lm2-lz0-chevy-gm-3-0l-duramax-2019-1036762/1.webp"],
+    description: `E-PAS Positive Air Shut-Off LM2/LZ0 Chevy/GM 3.0L Duramax 2019+, BD part 1036762.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036762.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2019–2025 Chevrolet Silverado 1500; 2019–2024 GMC Sierra 1500; 2021–2024 Chevrolet Suburban and Tahoe; and 2021–2024 GMC Yukon and Yukon XL (3.0L)
+Part number: 1036762
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3930,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off (Manual Controlled) Chevy LLY/LBZ/LMM Duramax 2004.5-2010 — 1036712-M",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036712-M.
+    price: 737.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036712-M",
+    fitment: "2004–2008 Chevrolet Silverado 2500 HD; 2004–2006 Chevrolet Silverado 3500; 2004–2008 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2008 Chevrolet Silverado 3500 HD; and 2007–2008 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-manual-controlled-chevy-lly-lbz-lmm-duramax-2004-5-2010",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-manual-controlled-chevy-lly-lbz-lmm-duramax-2004-1036712m/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-manual-controlled-chevy-lly-lbz-lmm-duramax-2004-1036712m/1.webp"],
+    description: `Positive Air Shut-Off (Manual Controlled) Chevy LLY/LBZ/LMM Duramax 2004.5-2010, BD part 1036712-M.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036712-M.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2004–2008 Chevrolet Silverado 2500 HD; 2004–2006 Chevrolet Silverado 3500; 2004–2008 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2008 Chevrolet Silverado 3500 HD; and 2007–2008 GMC Sierra 3500 HD (6.6L)
+Part number: 1036712-M
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3931,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off Chevy LLY/LBZ/LMM Duramax 2004.5-2010 — 1036712",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036712.
+    price: 1031.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036712",
+    fitment: "2004–2010 Chevrolet Silverado 2500 HD; 2004–2006 Chevrolet Silverado 3500; 2004–2010 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 Chevrolet Silverado 3500 HD; and 2007–2010 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-chevy-lly-lbz-lmm-duramax-2004-5-2010",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-chevy-lly-lbz-lmm-duramax-2004-5-2010-1036712/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-chevy-lly-lbz-lmm-duramax-2004-5-2010-1036712/1.webp"],
+    description: `Positive Air Shut-Off Chevy LLY/LBZ/LMM Duramax 2004.5-2010, BD part 1036712.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036712.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2004–2010 Chevrolet Silverado 2500 HD; 2004–2006 Chevrolet Silverado 3500; 2004–2010 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2010 Chevrolet Silverado 3500 HD; and 2007–2010 GMC Sierra 3500 HD (6.6L)
+Part number: 1036712
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3932,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off (Manual Controlled) Ford 6.0L Power Stroke 2003–2007 — 1036701-M",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036701-M.
+    price: 737.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036701-M",
+    fitment: "2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-manual-controlled-ford-6-0l-power-stroke-2003-2007",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-manual-controlled-ford-6-0l-power-stroke-2003-20-1036701m/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-manual-controlled-ford-6-0l-power-stroke-2003-20-1036701m/1.webp"],
+    description: `Positive Air Shut-Off (Manual Controlled) Ford 6.0L Power Stroke 2003–2007, BD part 1036701-M.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036701-M.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1036701-M
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3933,
+    createdAt: 1789430400000,
+    name: "BD Diesel Billet Input Shaft Ford Power Stroke E40D/4R100/5R110 1994–2010 — 1600149",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600149.
+    price: 482.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600149",
+    fitment: "1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; 1999–2008 Ford F-250 Super Duty; and 1999–2007 Ford F-350 Super Duty (6.0L, 6.4L, 7.3L). BD list this part for 1994–2010; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/billet-input-shaft-ford-power-stroke-e40d-4r100-5r110-1994-2010",
+    thumbnail: "/product-media/transmission/bd-billet-input-shaft-ford-power-stroke-e40d-4r100-5r110-1994-2010-1600149/1.webp",
+    images: ["/product-media/transmission/bd-billet-input-shaft-ford-power-stroke-e40d-4r100-5r110-1994-2010-1600149/1.webp"],
+    description: `Billet Input Shaft Ford Power Stroke E40D/4R100/5R110 1994–2010, BD part 1600149.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600149.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; 1999–2008 Ford F-250 Super Duty; and 1999–2007 Ford F-350 Super Duty (6.0L, 6.4L, 7.3L)
+BD catalogue range: 1994–2010
+Part number: 1600149
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3934,
+    createdAt: 1789430400000,
+    name: "BD Diesel Big Stack Overdrive Shaft & Reaction Plates Kit Dodge Cummins 68RFE 2007.5-2024 — 1062035",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1062035.
+    price: 686.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1062035",
+    fitment: "2007–2021 Dodge / Ram 2500; and 2007–2020 Dodge / Ram 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/big-stack-overdrive-shaft-reaction-plates-kit-dodge-cummins-68rfe-2007-5-2024",
+    thumbnail: "/product-media/transmission/bd-big-stack-overdrive-shaft-reaction-plates-kit-dodge-cummins-68rfe-2007-1062035/1.webp",
+    images: ["/product-media/transmission/bd-big-stack-overdrive-shaft-reaction-plates-kit-dodge-cummins-68rfe-2007-1062035/1.webp"],
+    description: `Big Stack Overdrive Shaft & Reaction Plates Kit Dodge Cummins 68RFE 2007.5-2024, BD part 1062035.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1062035.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2007–2021 Dodge / Ram 2500; and 2007–2020 Dodge / Ram 3500 (6.7L)
+Part number: 1062035
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3935,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Ford 7.3L Power Stroke 1999.5-2003 — 1047030",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047030.
+    price: 356.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047030",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-ford-7-3l-power-stroke-1999-5-2003",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-ford-7-3l-power-stroke-1999-5-2003-1047030/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-ford-7-3l-power-stroke-1999-5-2003-1047030/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Ford 7.3L Power Stroke 1999.5-2003, BD part 1047030.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1047030.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L)
+Part number: 1047030
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3936,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Chevy LLY Duramax 2004.5-2005 — 1046276",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1046276.
+    price: 397.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1046276",
+    fitment: "2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/intercooler-hose-clamp-kit-chevy-lly-duramax-2004-5-2005",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-chevy-lly-duramax-2004-5-2005-1046276/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-chevy-lly-duramax-2004-5-2005-1046276/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Chevy LLY Duramax 2004.5-2005, BD part 1046276.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1046276.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500; and 2004–2005 GMC Sierra 2500 HD and Sierra 3500 (6.6L)
+Part number: 1046276
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3937,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbine Housing (16cm) Dodge 5.9L Cummins 1988–1993 — 1045911",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045911.
+    price: 210.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045911",
+    fitment: "1989–1993 Dodge / Ram D250, D350, W250 and W350 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbine-housing-16cm-dodge-5-9l-cummins-1988-1993",
+    thumbnail: "/product-media/turbocharger/bd-turbine-housing-16cm-dodge-5-9l-cummins-1988-1993-1045911/1.webp",
+    images: ["/product-media/turbocharger/bd-turbine-housing-16cm-dodge-5-9l-cummins-1988-1993-1045911/1.webp"],
+    description: `Turbine Housing (16cm) Dodge 5.9L Cummins 1988–1993, BD part 1045911.
+
+A billet compressor wheel is lighter than the cast wheel it replaces, which means it spins up faster, and it is stronger, which means it tolerates the conditions that destroy a cast one.
+
+On the 7.3L Power Stroke the billet wheel also removes the compressor surge these turbochargers are known for.
+
+It is an upgrade made inside the turbocharger you already have rather than a replacement for it.
+
+BD list this as part 1045911.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Accessories
+Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350 (5.9L)
+Part number: 1045911
+
+Highlights
+
+Lighter and stronger than a cast wheel
+Faster spool-up
+Eliminates compressor surge on the 7.3L
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3938,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Ready Run Engine Dodge RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2013–2018 — DJPLB100099",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100099.
+    price: 24299.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100099",
+    fitment: "2013–2018 Dodge / Ram 3500 Candc, 4500 Candc and 5500 Candc (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-ready-run-engine-dodge-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-3500-4500-5500-cab-chassis-6-djplb100099/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-3500-4500-5500-cab-chassis-6-djplb100099/1.webp"],
+    description: `Precision Plus Ready Run Engine Dodge RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2013–2018, BD part DJPLB100099.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100099.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 3500 Candc, 4500 Candc and 5500 Candc (6.7L)
+Part number: DJPLB100099
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3939,
+    createdAt: 1789430400000,
+    name: "BD Diesel 68RFE Proforce 3D Torque Converter, Low — 1071220LX",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1071220LX.
+    price: 1822.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1071220LX",
+    fitment: "2007–2021 Dodge / Ram 2500; and 2007–2020 Dodge / Ram 3500 (6.7L). Low option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-proforce-3d-torque-converter",
+    thumbnail: "/product-media/engine/bd-68rfe-proforce-3d-torque-converter-1071220lx/1.webp",
+    images: ["/product-media/engine/bd-68rfe-proforce-3d-torque-converter-1071220lx/1.webp"],
+    description: `68RFE Proforce 3D Torque Converter, low, BD part 1071220LX.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1071220LX, the low option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: Low
+Application: 2007–2021 Dodge / Ram 2500; and 2007–2020 Dodge / Ram 3500 (6.7L)
+Part number: 1071220LX
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+Low
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3940,
+    createdAt: 1789430400000,
+    name: "BD Diesel Proforce 3D Torque Converter Dodge 1994–2007 47RH/47RE/48RE, 23 Stock Shaft / Low — 1071217LX",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1071217LX.
+    price: 1665.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1071217LX",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L). 23 Stock Shaft / Low option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re",
+    thumbnail: "/product-media/engine/bd-proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re-1071217lx/1.webp",
+    images: ["/product-media/engine/bd-proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re-1071217lx/1.webp"],
+    description: `Proforce 3D Torque Converter Dodge 1994–2007 47RH/47RE/48RE, 23 stock shaft / low, BD part 1071217LX.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1071217LX, the 23 stock shaft / low option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: 23 Stock Shaft / Low
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1071217LX
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+23 Stock Shaft / Low
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3941,
+    createdAt: 1789430400000,
+    name: "BD Diesel Proforce 3D Torque Converter Dodge 1994–2007 47RH/47RE/48RE, 23 Stock Shaft / High — 1071217X-HS",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1071217X-HS.
+    price: 1665.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1071217X-HS",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L). 23 Stock Shaft / High option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re",
+    thumbnail: "/product-media/engine/bd-proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re-1071217xhs/1.webp",
+    images: ["/product-media/engine/bd-proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re-1071217xhs/1.webp"],
+    description: `Proforce 3D Torque Converter Dodge 1994–2007 47RH/47RE/48RE, 23 stock shaft / high, BD part 1071217X-HS.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1071217X-HS, the 23 stock shaft / high option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: 23 Stock Shaft / High
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1071217X-HS
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+23 Stock Shaft / High
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3942,
+    createdAt: 1789430400000,
+    name: "BD Diesel Clutch Kit Ford 1999–2003 7.3L DI PS - 475hp/1000tq — SBC1944-6OFEK",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for SBC1944-6OFEK.
+    price: 1075.62,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SBC1944-6OFEK",
+    fitment: "1999–2003 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (7.3L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/clutch-kit-ford-1999-2003-7-3l-di-ps-475hp-1000tq",
+    thumbnail: "/product-media/engine/bd-clutch-kit-ford-1999-2003-7-3l-di-ps-475hp-1000tq-sbc19446ofek/1.webp",
+    images: ["/product-media/engine/bd-clutch-kit-ford-1999-2003-7-3l-di-ps-475hp-1000tq-sbc19446ofek/1.webp"],
+    description: `Clutch Kit Ford 1999–2003 7.3L DI PS - 475hp/1000tq, BD part SBC1944-6OFEK.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part SBC1944-6OFEK.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 1999–2003 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (7.3L)
+Part number: SBC1944-6OFEK
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3943,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Ready Run Engine Dodge/RAM 2500/3500 5.9L Cummins 2004–2005 — DJPLB100102",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100102.
+    price: 28149.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100102",
+    fitment: "2004–2005 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2004-2005",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2004-20-djplb100102/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2004-20-djplb100102/1.webp"],
+    description: `Heavy Hauler Ready Run Engine Dodge/RAM 2500/3500 5.9L Cummins 2004–2005, BD part DJPLB100102.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100102.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2005 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100102
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3944,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Ready Run Engine Dodge/RAM 2500/3500 5.9L Cummins 2006–2007 — DJPLB100101",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100101.
+    price: 28149.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100101",
+    fitment: "2006–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2006-2007",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2006-20-djplb100101/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2006-20-djplb100101/1.webp"],
+    description: `Heavy Hauler Ready Run Engine Dodge/RAM 2500/3500 5.9L Cummins 2006–2007, BD part DJPLB100101.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100101.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2006–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100101
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3945,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2007–2012 — DJPLB100100",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100100.
+    price: 28149.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100100",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2007-2012",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2007-20-djplb100100/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2007-20-djplb100100/1.webp"],
+    description: `Heavy Hauler Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2007–2012, BD part DJPLB100100.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100100.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100100
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3946,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2013–2018 — DJPLB100098",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100098.
+    price: 28149.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100098",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2013-20-djplb100098/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2013-20-djplb100098/1.webp"],
+    description: `Heavy Hauler Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2013–2018, BD part DJPLB100098.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100098.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100098
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3947,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2021–2024 — DJPLB100086",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100086.
+    price: 12232.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100086",
+    fitment: "2021–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2021-2024",
+    thumbnail: "/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2021-2024-djplb100086/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2021-2024-djplb100086/1.webp"],
+    description: `Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2021–2024, BD part DJPLB100086.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100086.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2021–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100086
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3948,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2013–2018 — DJPLB100094",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100094.
+    price: 24299.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100094",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/engine-package-dodge-ram-2500-3500-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2013--djplb100094/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2013--djplb100094/1.webp"],
+    description: `Precision Plus Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2013–2018, BD part DJPLB100094.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100094.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100094
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3949,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2007.5-2012 — DJPLB100093",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100093.
+    price: 24299.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100093",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/engine-package-dodge-ram-2500-3500-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2007--djplb100093/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2007--djplb100093/1.webp"],
+    description: `Precision Plus Ready Run Engine Dodge RAM 2500/3500 6.7L Cummins 2007.5-2012, BD part DJPLB100093.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100093.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100093
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3950,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Ready Run Engine Dodge RAM 2500/3500 5.9L Cummins 2004.5-2005 — DJPLB100092",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100092.
+    price: 24299.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100092",
+    fitment: "2004–2005 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/engine-package-dodge-ram-2500-3500-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2004--djplb100092/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2004--djplb100092/1.webp"],
+    description: `Precision Plus Ready Run Engine Dodge RAM 2500/3500 5.9L Cummins 2004.5-2005, BD part DJPLB100092.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100092.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2005 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100092
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3951,
+    createdAt: 1789430400000,
+    name: "BD Diesel Street Performance Long Block Engine Dodge/RAM 6.7L Cummins 2019–2020 — DJPLB100081",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100081.
+    price: 18730.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100081",
+    fitment: "2019–2020 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/street-performance-long-block-engine-dodge-ram-6-7l-cummins-2019-2020",
+    thumbnail: "/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-6-7l-cummins-2019-2020-djplb100081/1.webp",
+    images: ["/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-6-7l-cummins-2019-2020-djplb100081/1.webp"],
+    description: `Street Performance Long Block Engine Dodge/RAM 6.7L Cummins 2019–2020, BD part DJPLB100081.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100081.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2019–2020 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100081
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3952,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2019–2020 — DJPLB100080",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100080.
+    price: 12232.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100080",
+    fitment: "2019–2020 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2019-2020",
+    thumbnail: "/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2019-2020-djplb100080/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2019-2020-djplb100080/1.webp"],
+    description: `Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2019–2020, BD part DJPLB100080.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100080.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2019–2020 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100080
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3953,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Long Block Engine Dodge/RAM 6.7L Cummins 2021–2024 — DJPLB100079",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100079.
+    price: 15708.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100079",
+    fitment: "2021–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2021-2024",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2021-2024-djplb100079/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2021-2024-djplb100079/1.webp"],
+    description: `Heavy Hauler Long Block Engine Dodge/RAM 6.7L Cummins 2021–2024, BD part DJPLB100079.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100079.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2021–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100079
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3954,
+    createdAt: 1789430400000,
+    name: "BD Diesel Essential Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018 — DJPLB100078",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100078.
+    price: 7699.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100078",
+    fitment: "2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/essential-long-block-engine-dodge-ram-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-essential-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100078/1.webp",
+    images: ["/product-media/engine/bd-essential-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100078/1.webp"],
+    description: `Essential Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018, BD part DJPLB100078.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100078.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPLB100078
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3955,
+    createdAt: 1789430400000,
+    name: "BD Diesel Essential Long Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012 — DJPLB100077",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100077.
+    price: 7699.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100077",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/essential-long-block-engine-dodge-ram-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-essential-long-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djplb100077/1.webp",
+    images: ["/product-media/engine/bd-essential-long-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djplb100077/1.webp"],
+    description: `Essential Long Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012, BD part DJPLB100077.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100077.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Part number: DJPLB100077
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3956,
+    createdAt: 1789430400000,
+    name: "BD Diesel Essential Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007 — DJPLB100076",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100076.
+    price: 7699.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100076",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/essential-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-essential-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djplb100076/1.webp",
+    images: ["/product-media/engine/bd-essential-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djplb100076/1.webp"],
+    description: `Essential Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007, BD part DJPLB100076.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100076.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100076
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3957,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Long Block Engine Dodge/RAM 6.7L Cummins 2019–2020 — DJPLB100075",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100075.
+    price: 15708.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100075",
+    fitment: "2019–2020 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2019-2020",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2019-2020-djplb100075/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2019-2020-djplb100075/1.webp"],
+    description: `Heavy Hauler Long Block Engine Dodge/RAM 6.7L Cummins 2019–2020, BD part DJPLB100075.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100075.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2019–2020 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPLB100075
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3958,
+    createdAt: 1789430400000,
+    name: "BD Diesel Street Performance Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018 — DJPLB100024",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100024.
+    price: 18184.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100024",
+    fitment: "2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/street-performance-long-block-engine-dodge-ram-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100024/1.webp",
+    images: ["/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100024/1.webp"],
+    description: `Street Performance Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018, BD part DJPLB100024.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100024.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPLB100024
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3959,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018 — DJPLB100023",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100023.
+    price: 13112.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100023",
+    fitment: "2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100023/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100023/1.webp"],
+    description: `Heavy Hauler Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018, BD part DJPLB100023.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100023.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPLB100023
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3960,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018 — DJPLB100022",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100022.
+    price: 10500.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100022",
+    fitment: "2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100022/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2013-2018-djplb100022/1.webp"],
+    description: `Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2013–2018, BD part DJPLB100022.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100022.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: DJPLB100022
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3961,
+    createdAt: 1789430400000,
+    name: "BD Diesel Street Performance Long Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012 — DJPLB100020",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100020.
+    price: 18184.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100020",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/street-performance-long-block-engine-dodge-ram-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-6-7l-cummins-2007-5-201-djplb100020/1.webp",
+    images: ["/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-6-7l-cummins-2007-5-201-djplb100020/1.webp"],
+    description: `Street Performance Long Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012, BD part DJPLB100020.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100020.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Part number: DJPLB100020
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3962,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Long Block Engine Dodge 6.7L Cummins 2007.5-2012 — DJPLB100019",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100019.
+    price: 13112.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100019",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-long-block-engine-dodge-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-6-7l-cummins-2007-5-2012-djplb100019/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-6-7l-cummins-2007-5-2012-djplb100019/1.webp"],
+    description: `Heavy Hauler Long Block Engine Dodge 6.7L Cummins 2007.5-2012, BD part DJPLB100019.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100019.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Part number: DJPLB100019
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3963,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012 — DJPLB100018",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100018.
+    price: 10500.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100018",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djplb100018/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2007-5-2012-djplb100018/1.webp"],
+    description: `Precision Plus Long Block Engine Dodge/RAM 6.7L Cummins 2007.5-2012, BD part DJPLB100018.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100018.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500 and 3500; and 2008–2012 Dodge / Ram 4500 and 5500 (6.7L)
+Part number: DJPLB100018
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3964,
+    createdAt: 1789430400000,
+    name: "BD Diesel Street Performance Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007 — DJPLB100016",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100016.
+    price: 18184.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100016",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/street-performance-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-5-9l-cummins-2004-5-200-djplb100016/1.webp",
+    images: ["/product-media/engine/bd-street-performance-long-block-engine-dodge-ram-5-9l-cummins-2004-5-200-djplb100016/1.webp"],
+    description: `Street Performance Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007, BD part DJPLB100016.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100016.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100016
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3965,
+    createdAt: 1789430400000,
+    name: "BD Diesel Heavy Hauler Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007 — DJPLB100015",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100015.
+    price: 13112.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100015",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/heavy-hauler-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djplb100015/1.webp",
+    images: ["/product-media/engine/bd-heavy-hauler-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djplb100015/1.webp"],
+    description: `Heavy Hauler Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007, BD part DJPLB100015.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100015.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100015
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3966,
+    createdAt: 1789430400000,
+    name: "BD Diesel Precision Plus Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007 — DJPLB100014",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPLB100014.
+    price: 10500.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPLB100014",
+    fitment: "2004–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/precision-plus-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007",
+    thumbnail: "/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djplb100014/1.webp",
+    images: ["/product-media/engine/bd-precision-plus-long-block-engine-dodge-ram-5-9l-cummins-2004-5-2007-djplb100014/1.webp"],
+    description: `Precision Plus Long Block Engine Dodge/RAM 5.9L Cummins 2004.5-2007, BD part DJPLB100014.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPLB100014.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2004–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPLB100014
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3967,
+    createdAt: 1789430400000,
+    name: "BD Diesel Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2019–2024, w/o Fire Rings — DJPCH100103",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100103.
+    price: 3244.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100103",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). w/o Fire Rings option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024-djpch100103/1.webp",
+    images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024-djpch100103/1.webp"],
+    description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2019–2024, w/o fire rings, BD part DJPCH100103.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100103, the w/o fire rings option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: w/o Fire Rings
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPCH100103
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+w/o Fire Rings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3968,
+    createdAt: 1789430400000,
+    name: "BD Diesel Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2019–2024, with Fire Rings — DJPCH100206",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100206.
+    price: 3964.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100206",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L). with Fire Rings option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024-djpch100206/1.webp",
+    images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024-djpch100206/1.webp"],
+    description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2019–2024, with fire rings, BD part DJPCH100206.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100206, the with fire rings option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: with Fire Rings
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPCH100206
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+with Fire Rings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3969,
+    createdAt: 1789430400000,
+    name: "BD Diesel Reman Cylinder Head Dodge/RAM 6.7L Cummins 2019–2024 — DJPCH100089",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100089.
+    price: 2274.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100089",
+    fitment: "2019–2024 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/reman-cylinder-head-dodge-ram-6-7l-cummins-2019-2024",
+    thumbnail: "/product-media/engine/bd-reman-cylinder-head-dodge-ram-6-7l-cummins-2019-2024-djpch100089/1.webp",
+    images: ["/product-media/engine/bd-reman-cylinder-head-dodge-ram-6-7l-cummins-2019-2024-djpch100089/1.webp"],
+    description: `Reman Cylinder Head Dodge/RAM 6.7L Cummins 2019–2024, BD part DJPCH100089.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100089.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: DJPCH100089
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3970,
+    createdAt: 1789430400000,
+    name: "BD Diesel Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2007–2018, w/o Fire Rings — DJPCH100046",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100046.
+    price: 3149.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100046",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). BD list this part for 2007–2018; the years above are the ones tagged per model on their own listing. w/o Fire Rings option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018-djpch100046/1.webp",
+    images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018-djpch100046/1.webp"],
+    description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2007–2018, w/o fire rings, BD part DJPCH100046.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100046, the w/o fire rings option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: w/o Fire Rings
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+BD catalogue range: 2007–2018
+Part number: DJPCH100046
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+w/o Fire Rings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3971,
+    createdAt: 1789430400000,
+    name: "BD Diesel Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2007–2018, with Fire Rings — DJPCH100205",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100205.
+    price: 3964.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100205",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). BD list this part for 2007–2018; the years above are the ones tagged per model on their own listing. with Fire Rings option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018",
+    thumbnail: "/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018-djpch100205/1.webp",
+    images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018-djpch100205/1.webp"],
+    description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2007–2018, with fire rings, BD part DJPCH100205.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100205, the with fire rings option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: with Fire Rings
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+BD catalogue range: 2007–2018
+Part number: DJPCH100205
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+with Fire Rings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3972,
+    createdAt: 1789430400000,
+    name: "BD Diesel Reman Cylinder Head Dodge/RAM 6.7L Cummins 2007.5-2018 — DJPCH100039",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100039.
+    price: 2204.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100039",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/reman-cylinder-head-dodge-ram-6-7l-cummins-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-reman-cylinder-head-dodge-ram-6-7l-cummins-2007-5-2018-djpch100039/1.webp",
+    images: ["/product-media/engine/bd-reman-cylinder-head-dodge-ram-6-7l-cummins-2007-5-2018-djpch100039/1.webp"],
+    description: `Reman Cylinder Head Dodge/RAM 6.7L Cummins 2007.5-2018, BD part DJPCH100039.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100039.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+Part number: DJPCH100039
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3973,
+    createdAt: 1789430400000,
+    name: "BD Diesel Performance Cylinder Head (Stage 1) Dodge/RAM 5.9L Cummins 2003–2007, w/o Fire Rings — DJPCH100026",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100026.
+    price: 3149.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100026",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). w/o Fire Rings option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007-djpch100026/1.webp",
+    images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007-djpch100026/1.webp"],
+    description: `Performance Cylinder Head (Stage 1) Dodge/RAM 5.9L Cummins 2003–2007, w/o fire rings, BD part DJPCH100026.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100026, the w/o fire rings option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: w/o Fire Rings
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPCH100026
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+w/o Fire Rings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3974,
+    createdAt: 1789430400000,
+    name: "BD Diesel Performance Cylinder Head (Stage 1) Dodge/RAM 5.9L Cummins 2003–2007, with Fire Rings — DJPCH100202",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100202.
+    price: 3964.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100202",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). with Fire Rings option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007-djpch100202/1.webp",
+    images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007-djpch100202/1.webp"],
+    description: `Performance Cylinder Head (Stage 1) Dodge/RAM 5.9L Cummins 2003–2007, with fire rings, BD part DJPCH100202.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100202, the with fire rings option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: with Fire Rings
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPCH100202
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+with Fire Rings
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3975,
+    createdAt: 1789430400000,
+    name: "BD Diesel Reman Cylinder Head Dodge/RAM 5.9L Cummins 2003–2007 — DJPCH100008",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for DJPCH100008.
+    price: 2204.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DJPCH100008",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/reman-cylinder-head-dodge-ram-5-9l-cummins-2003-2007",
+    thumbnail: "/product-media/engine/bd-reman-cylinder-head-dodge-ram-5-9l-cummins-2003-2007-djpch100008/1.webp",
+    images: ["/product-media/engine/bd-reman-cylinder-head-dodge-ram-5-9l-cummins-2003-2007-djpch100008/1.webp"],
+    description: `Reman Cylinder Head Dodge/RAM 5.9L Cummins 2003–2007, BD part DJPCH100008.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part DJPCH100008.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: DJPCH100008
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3976,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-off RAM 2500/3500/4500/5500 6.7L Cummins 2025+ — 1036766",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036766.
+    price: 698.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036766",
+    fitment: "2025–2026 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/e-pas-positive-air-shut-off-ram-2500-3500-4500-5500-6-7l-cummins-2025",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-ram-2500-3500-4500-5500-6-7l-cummins-2025-1036766/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-ram-2500-3500-4500-5500-6-7l-cummins-2025-1036766/1.webp"],
+    description: `E-PAS Positive Air Shut-off RAM 2500/3500/4500/5500 6.7L Cummins 2025+, BD part 1036766.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036766.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2025–2026 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: 1036766
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3977,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-off Chevy/GMC 2500HD / 3500HD / 4500HD / 5500HD / 6500HD 6.6L L5P 2024+ — 1036765",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036765.
+    price: 698.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036765",
+    fitment: "2024–2026 Chevrolet Silverado 2500 HD, Silverado 3500 HD, Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD; and 2024–2026 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/e-pas-positive-air-shut-off-chevy-gmc-2500hd-3500hd-4500hd-5500hd-6500hd-6-6l-l5p-2024",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-gmc-2500hd-3500hd-4500hd-5500hd-6500-1036765/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-gmc-2500hd-3500hd-4500hd-5500hd-6500-1036765/1.webp"],
+    description: `E-PAS Positive Air Shut-off Chevy/GMC 2500HD / 3500HD / 4500HD / 5500HD / 6500HD 6.6L L5P 2024+, BD part 1036765.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036765.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2024–2026 Chevrolet Silverado 2500 HD, Silverado 3500 HD, Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD; and 2024–2026 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Part number: 1036765
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3978,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-off Chevy/GMC 2500HD / 3500HD / 4500HD / 5500HD / 6500HD 6.6L L5P 2017–2023 — 1036764",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036764.
+    price: 698.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036764",
+    fitment: "2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L). BD list this part for 2017–2023; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/e-pas-positive-air-shut-off-chevy-gmc-2500hd-3500hd-4500hd-5500hd-6500hd-6-6l-l5p-2017-2023",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-gmc-2500hd-3500hd-4500hd-5500hd-6500-1036764/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-gmc-2500hd-3500hd-4500hd-5500hd-6500-1036764/1.webp"],
+    description: `E-PAS Positive Air Shut-off Chevy/GMC 2500HD / 3500HD / 4500HD / 5500HD / 6500HD 6.6L L5P 2017–2023, BD part 1036764.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036764.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
+BD catalogue range: 2017–2023
+Part number: 1036764
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3979,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Line Set Chevy/GM 6.6L Duramax LML 2011–2016 — 1050170",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050170.
+    price: 309.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050170",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011 and 2013–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-line-set-chevy-gm-6-6l-duramax-lml-2011-2016",
+    thumbnail: "/product-media/engine/bd-injector-line-set-chevy-gm-6-6l-duramax-lml-2011-2016-1050170/1.webp",
+    images: ["/product-media/engine/bd-injector-line-set-chevy-gm-6-6l-duramax-lml-2011-2016-1050170/1.webp"],
+    description: `Injector Line Set Chevy/GM 6.6L Duramax LML 2011–2016, BD part 1050170.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050170.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011 and 2013–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Part number: 1050170
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3980,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Line Set Ford 6.7L Power Stroke 2011–2021 — 1050165",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050165.
+    price: 320.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050165",
+    fitment: "2011–2020 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2019 Ford F-450 Super Duty (6.7L). BD list this part for 2011–2021; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-line-set-ford-6-7l-power-stroke-2011-2021",
+    thumbnail: "/product-media/engine/bd-injector-line-set-ford-6-7l-power-stroke-2011-2021-1050165/1.webp",
+    images: ["/product-media/engine/bd-injector-line-set-ford-6-7l-power-stroke-2011-2021-1050165/1.webp"],
+    description: `Injector Line Set Ford 6.7L Power Stroke 2011–2021, BD part 1050165.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050165.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2011–2020 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2019 Ford F-450 Super Duty (6.7L)
+BD catalogue range: 2011–2021
+Part number: 1050165
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3981,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Install Kit Dodge 6.7L Cr Cummins 2007–2018 — 1050157",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050157.
+    price: 1114.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050157",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). BD list this part for 2007–2018; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-install-kit-dodge-6-7l-cr-cummins-2007-2018",
+    thumbnail: "/product-media/engine/bd-injector-install-kit-dodge-6-7l-cr-cummins-2007-2018-1050157/1.webp",
+    images: ["/product-media/engine/bd-injector-install-kit-dodge-6-7l-cr-cummins-2007-2018-1050157/1.webp"],
+    description: `Injector Install Kit Dodge 6.7L Cr Cummins 2007–2018, BD part 1050157.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050157.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+BD catalogue range: 2007–2018
+Part number: 1050157
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3982,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Install Kit Dodge 5.9L Cr Cummins 2006–2007 — 1050156",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050156.
+    price: 758.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050156",
+    fitment: "2006–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-install-kit-dodge-5-9l-cr-cummins-2006-2007",
+    thumbnail: "/product-media/engine/bd-injector-install-kit-dodge-5-9l-cr-cummins-2006-2007-1050156/1.webp",
+    images: ["/product-media/engine/bd-injector-install-kit-dodge-5-9l-cr-cummins-2006-2007-1050156/1.webp"],
+    description: `Injector Install Kit Dodge 5.9L Cr Cummins 2006–2007, BD part 1050156.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050156.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2006–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1050156
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3983,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Install Kit Dodge 5.9L Cr Cummins 2003–2005 — 1050155",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050155.
+    price: 636.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050155",
+    fitment: "2003–2005 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-install-kit-dodge-5-9l-cr-cummins-2003-2005",
+    thumbnail: "/product-media/engine/bd-injector-install-kit-dodge-5-9l-cr-cummins-2003-2005-1050155/1.webp",
+    images: ["/product-media/engine/bd-injector-install-kit-dodge-5-9l-cr-cummins-2003-2005-1050155/1.webp"],
+    description: `Injector Install Kit Dodge 5.9L Cr Cummins 2003–2005, BD part 1050155.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050155.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2003–2005 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1050155
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3984,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Line Set Dodge/RAM 6.7L Cummins Common Rail 2007.5 - 2018 — 1050151",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050151.
+    price: 435.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050151",
+    fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-line-set-dodge-ram-6-7l-cummins-common-rail-2007-5-2018",
+    thumbnail: "/product-media/engine/bd-injector-line-set-dodge-ram-6-7l-cummins-common-rail-2007-5-2018-1050151/1.webp",
+    images: ["/product-media/engine/bd-injector-line-set-dodge-ram-6-7l-cummins-common-rail-2007-5-2018-1050151/1.webp"],
+    description: `Injector Line Set Dodge/RAM 6.7L Cummins Common Rail 2007.5 - 2018, BD part 1050151.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050151.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
+Part number: 1050151
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3985,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Line Set Dodge 5.9L Cummins 24 Valve 2003–2007 — 1050150",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050150.
+    price: 287.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050150",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-line-set-dodge-5-9l-cummins-24-valve-2003-2007",
+    thumbnail: "/product-media/engine/bd-injector-line-set-dodge-5-9l-cummins-24-valve-2003-2007-1050150/1.webp",
+    images: ["/product-media/engine/bd-injector-line-set-dodge-5-9l-cummins-24-valve-2003-2007-1050150/1.webp"],
+    description: `Injector Line Set Dodge 5.9L Cummins 24 Valve 2003–2007, BD part 1050150.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050150.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1050150
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3986,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Install Kit GMC 6.6L LB7 Duramax 2001–2004 — 1050141",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050141.
+    price: 834.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050141",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2004 GMC Sierra 2500 HD and Sierra 3500; 2003–2004 Chevrolet Kodiac C4500; 2003 GMC Topkick C4500; and 2004 GMC Topkick C5500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-install-kit-gmc-6-6l-lb7-duramax-2001-2004",
+    thumbnail: "/product-media/engine/bd-injector-install-kit-gmc-6-6l-lb7-duramax-2001-2004-1050141/1.webp",
+    images: ["/product-media/engine/bd-injector-install-kit-gmc-6-6l-lb7-duramax-2001-2004-1050141/1.webp"],
+    description: `Injector Install Kit GMC 6.6L LB7 Duramax 2001–2004, BD part 1050141.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050141.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2004 GMC Sierra 2500 HD and Sierra 3500; 2003–2004 Chevrolet Kodiac C4500; 2003 GMC Topkick C4500; and 2004 GMC Topkick C5500 (6.6L)
+Part number: 1050141
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3987,
+    createdAt: 1789430400000,
+    name: "BD Diesel Injector Line Set Chevy/GMC LB7 2001–2004 — 1050140",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050140.
+    price: 475.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050140",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2004 GMC Sierra 2500 HD and Sierra 3500; 2003–2004 Chevrolet Kodiac C4500; 2003 GMC Topkick C4500; and 2004 GMC Topkick C5500 (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/injector-line-set-chevy-gmc-lb7-2001-2004",
+    thumbnail: "/product-media/engine/bd-injector-line-set-chevy-gmc-lb7-2001-2004-1050140/1.webp",
+    images: ["/product-media/engine/bd-injector-line-set-chevy-gmc-lb7-2001-2004-1050140/1.webp"],
+    description: `Injector Line Set Chevy/GMC LB7 2001–2004, BD part 1050140.
+
+Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+
+Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
+
+These are stock replacement lines, so the fit and the routing are as the engine expects.
+
+BD list this as part 1050140.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Fuel Systems
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2004 GMC Sierra 2500 HD and Sierra 3500; 2003–2004 Chevrolet Kodiac C4500; 2003 GMC Topkick C4500; and 2004 GMC Topkick C5500 (6.6L)
+Part number: 1050140
+
+Highlights
+
+Stock replacement high-pressure feed lines
+Lines should not be reused once disturbed
+Correct fit and routing
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3988,
+    createdAt: 1789430400000,
+    name: "BD Diesel He300 Turbo Mounting Kit RAM 6.7L Cummins 2019–2024 — 1045999",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045999.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045999",
+    fitment: "2019–2022 Dodge / Ram 2500 and 3500 (6.7L). BD list this part for 2019–2024; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/he300-turbo-mounting-kit-ram-6-7l-cummins-2019",
+    thumbnail: "/product-media/turbocharger/bd-he300-turbo-mounting-kit-ram-6-7l-cummins-2019-2024-1045999/1.webp",
+    images: ["/product-media/turbocharger/bd-he300-turbo-mounting-kit-ram-6-7l-cummins-2019-2024-1045999/1.webp"],
+    description: `He300 Turbo Mounting Kit RAM 6.7L Cummins 2019–2024, BD part 1045999.
+
+A billet compressor wheel is lighter than the cast wheel it replaces, which means it spins up faster, and it is stronger, which means it tolerates the conditions that destroy a cast one.
+
+On the 7.3L Power Stroke the billet wheel also removes the compressor surge these turbochargers are known for.
+
+It is an upgrade made inside the turbocharger you already have rather than a replacement for it.
+
+BD list this as part 1045999.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Accessories
+Application: 2019–2022 Dodge / Ram 2500 and 3500 (6.7L)
+BD catalogue range: 2019–2024
+Part number: 1045999
+
+Highlights
+
+Lighter and stronger than a cast wheel
+Faster spool-up
+Eliminates compressor surge on the 7.3L
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3989,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Manifold Package RAM 6.7L Cummins 2013–2018 — 1045871",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045871.
+    price: 3554.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045871",
+    fitment: "2013–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbo-manifold-package-ram-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/engine/bd-screamer-turbo-manifold-package-ram-6-7l-cummins-2013-2018-1045871/1.webp",
+    images: ["/product-media/engine/bd-screamer-turbo-manifold-package-ram-6-7l-cummins-2013-2018-1045871/1.webp"],
+    description: `Screamer Turbo Manifold Package RAM 6.7L Cummins 2013–2018, BD part 1045871.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045871.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045871
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3990,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer Turbo Manifold Package Dodge 6.7L Cummins 2007.5-2012 — 1045870",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045870.
+    price: 3484.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045870",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/screamer-turbo-manifold-package-dodge-6-7l-cummins-2007-5-2012",
+    thumbnail: "/product-media/engine/bd-screamer-turbo-manifold-package-dodge-6-7l-cummins-2007-5-2012-1045870/1.webp",
+    images: ["/product-media/engine/bd-screamer-turbo-manifold-package-dodge-6-7l-cummins-2007-5-2012-1045870/1.webp"],
+    description: `Screamer Turbo Manifold Package Dodge 6.7L Cummins 2007.5-2012, BD part 1045870.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045870.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045870
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3991,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off 3.0L ECO Diesel 2014–2023 - RAM 1500 / Jeep Grand Cherokee-Wrangler-Gladiator — 1036763",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036763.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036763",
+    fitment: "2014–2018 and 2020–2023 Dodge / Ram 1500 Dt; 2014–2019 Jeep Grand Cherokee; 2020–2023 Jeep Wrangler; and 2021–2023 Jeep Gladiator (3.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/e-pas-positive-air-shut-off-3-0l-eco-diesel-2014-2023-ram-1500-jeep-grand-cherokee-wrangler-gladiator",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-3-0l-eco-diesel-2014-2023-ram-1500-jeep-gr-1036763/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-3-0l-eco-diesel-2014-2023-ram-1500-jeep-gr-1036763/1.webp"],
+    description: `E-PAS Positive Air Shut-Off 3.0L ECO Diesel 2014–2023 - RAM 1500 / Jeep Grand Cherokee-Wrangler-Gladiator, BD part 1036763.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036763.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2014–2018 and 2020–2023 Dodge / Ram 1500 Dt; 2014–2019 Jeep Grand Cherokee; 2020–2023 Jeep Wrangler; and 2021–2023 Jeep Gladiator (3.0L)
+Part number: 1036763
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3992,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S361SXE/76 0.91 AR — 1045170",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045170.
+    price: 2122.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045170",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S361SXE/76 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045170/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045170/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s361sxe/76 0.91 ar, BD part 1045170.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045170, the s361sxe/76 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S361SXE/76 0.91 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045170
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S361SXE/76 0.91 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3993,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S364SXE/76 1.00 AR — 1045169",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045169.
+    price: 2103.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045169",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S364SXE/76 1.00 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045169/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045169/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/76 1.00 ar, BD part 1045169.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045169, the s364sxe/76 1.00 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S364SXE/76 1.00 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045169
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S364SXE/76 1.00 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3994,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S364SXE/76 0.91 AR — 1045171",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045171.
+    price: 2211.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045171",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S364SXE/76 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045171/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045171/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/76 0.91 ar, BD part 1045171.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045171, the s364sxe/76 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S364SXE/76 0.91 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045171
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S364SXE/76 0.91 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3995,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S363SXE/76 0.91 AR — 1045172",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045172.
+    price: 2168.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045172",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S363SXE/76 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045172/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045172/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s363sxe/76 0.91 ar, BD part 1045172.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045172, the s363sxe/76 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S363SXE/76 0.91 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045172
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S363SXE/76 0.91 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3996,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S363SXE/80 0.91 AR — 1045173",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045173.
+    price: 2103.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045173",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S363SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045173/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045173/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s363sxe/80 0.91 ar, BD part 1045173.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045173, the s363sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S363SXE/80 0.91 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045173
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S363SXE/80 0.91 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3997,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S364SXE/80 0.91 AR — 1045174",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045174.
+    price: 2263.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045174",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S364SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045174/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045174/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/80 0.91 ar, BD part 1045174.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045174, the s364sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S364SXE/80 0.91 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045174
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S364SXE/80 0.91 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3998,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S364SXE/80 1.00 AR — 1045175",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045175.
+    price: 2297.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045175",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S364SXE/80 1.00 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045175/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045175/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/80 1.00 ar, BD part 1045175.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045175, the s364sxe/80 1.00 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S364SXE/80 1.00 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045175
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S364SXE/80 1.00 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3999,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S366SXE/80 0.91 AR — 1045176",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045176.
+    price: 2375.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045176",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S366SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045176/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045176/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s366sxe/80 0.91 ar, BD part 1045176.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045176, the s366sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S366SXE/80 0.91 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045176
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S366SXE/80 0.91 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4000,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S366SXE/80 1.00 AR — 1045177",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045177.
+    price: 2364.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045177",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S366SXE/80 1.00 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045177/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045177/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s366sxe/80 1.00 ar, BD part 1045177.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045177, the s366sxe/80 1.00 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S366SXE/80 1.00 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045177
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S366SXE/80 1.00 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4001,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S369SXE/80 0.91 AR — 1045178",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045178.
+    price: 2392.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045178",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S369SXE/80 0.91 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045178/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045178/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s369sxe/80 0.91 ar, BD part 1045178.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045178, the s369sxe/80 0.91 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S369SXE/80 0.91 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045178
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S369SXE/80 0.91 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4002,
+    createdAt: 1789430400000,
+    name: "BD Diesel Iron Horn 5.9L Cummins Turbo Kit, S369SXE/80 1.00 AR — 1045179",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045179.
+    price: 2392.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045179",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L). S369SXE/80 1.00 AR option.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/iron-horn-5-9l-cummins-turbo-kit",
+    thumbnail: "/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045179/1.webp",
+    images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045179/1.webp"],
+    description: `Iron Horn 5.9L Cummins Turbo Kit, s369sxe/80 1.00 ar, BD part 1045179.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045179, the s369sxe/80 1.00 ar option.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Option: S369SXE/80 1.00 AR
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045179
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+S369SXE/80 1.00 AR
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4003,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exhaust Elbow, Turbo Cast - Dodge 6.7L Cummins 2007.5-2012 — 1045101",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045101.
+    price: 205.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045101",
+    fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exhaust-elbow-turbo-cast-dodge-2007-5-2012-6-7l-cummins",
+    thumbnail: "/product-media/turbocharger/bd-exhaust-elbow-turbo-cast-dodge-6-7l-cummins-2007-5-2012-1045101/1.webp",
+    images: ["/product-media/turbocharger/bd-exhaust-elbow-turbo-cast-dodge-6-7l-cummins-2007-5-2012-1045101/1.webp"],
+    description: `Exhaust Elbow, Turbo Cast - Dodge 6.7L Cummins 2007.5-2012, BD part 1045101.
+
+A billet compressor wheel is lighter than the cast wheel it replaces, which means it spins up faster, and it is stronger, which means it tolerates the conditions that destroy a cast one.
+
+On the 7.3L Power Stroke the billet wheel also removes the compressor surge these turbochargers are known for.
+
+It is an upgrade made inside the turbocharger you already have rather than a replacement for it.
+
+BD list this as part 1045101.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Accessories
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045101
+
+Highlights
+
+Lighter and stronger than a cast wheel
+Faster spool-up
+Eliminates compressor surge on the 7.3L
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4004,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo T3/T4 Mounting Kit Dodge 5.9L Cummins HX / HY / S300 / S400 1994–2007 — 1045984",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045984.
+    price: 49.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045984",
+    fitment: "1994–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/turbo-t3-t4-mounting-kit-dodge-5-9l-1994-2007-hx-hy-s300-s400",
+    thumbnail: "/product-media/turbocharger/bd-turbo-t3-t4-mounting-kit-dodge-5-9l-cummins-hx-hy-s300-s400-1994-2007-1045984/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-t3-t4-mounting-kit-dodge-5-9l-cummins-hx-hy-s300-s400-1994-2007-1045984/1.webp"],
+    description: `Turbo T3/T4 Mounting Kit Dodge 5.9L Cummins HX / HY / S300 / S400 1994–2007, BD part 1045984.
+
+A billet compressor wheel is lighter than the cast wheel it replaces, which means it spins up faster, and it is stronger, which means it tolerates the conditions that destroy a cast one.
+
+On the 7.3L Power Stroke the billet wheel also removes the compressor surge these turbochargers are known for.
+
+It is an upgrade made inside the turbocharger you already have rather than a replacement for it.
+
+BD list this as part 1045984.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Accessories
+Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1045984
+
+Highlights
+
+Lighter and stronger than a cast wheel
+Faster spool-up
+Eliminates compressor surge on the 7.3L
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4005,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Ford F-250 / F-350 / F-450 / F-550 / F-600 Super Duty 6.7L Power Stroke 2020+ — 1036757",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036757.
+    price: 698.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036757",
+    fitment: "2020–2025 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2020–2024 Ford F-600 Super Duty (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/e-pas-positive-air-shut-off-6-7l-powerstroke-ford-2020-f-series-superduty-f250-f350-f450-f550",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-ford-f-250-f-350-f-450-f-550-f-600-super-d-1036757/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-ford-f-250-f-350-f-450-f-550-f-600-super-d-1036757/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Ford F-250 / F-350 / F-450 / F-550 / F-600 Super Duty 6.7L Power Stroke 2020+, BD part 1036757.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036757.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2020–2025 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2020–2024 Ford F-600 Super Duty (6.7L)
+Part number: 1036757
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4006,
+    createdAt: 1789430400000,
+    name: "BD Diesel Howler VGT Turbo Kit Dodge 5.9L Cummins 2003–2007 — 1047140",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047140.
+    price: 3952.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047140",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-howler-performance-vgt-turbo-kit-dodge-2003-2007",
+    thumbnail: "/product-media/engine/bd-howler-vgt-turbo-kit-dodge-5-9l-cummins-2003-2007-1047140/1.webp",
+    images: ["/product-media/engine/bd-howler-vgt-turbo-kit-dodge-5-9l-cummins-2003-2007-1047140/1.webp"],
+    description: `Howler VGT Turbo Kit Dodge 5.9L Cummins 2003–2007, BD part 1047140.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1047140.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1047140
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4007,
+    createdAt: 1789430400000,
+    name: "BD Diesel Howler Stock VGT Turbo Kit Dodge 5.9L Cummins 2003–2007 — 1047139",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1047139.
+    price: 2811.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047139",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-howler-stock-vgt-turbo-kit-dodge-2003-2007",
+    thumbnail: "/product-media/engine/bd-howler-stock-vgt-turbo-kit-dodge-5-9l-cummins-2003-2007-1047139/1.webp",
+    images: ["/product-media/engine/bd-howler-stock-vgt-turbo-kit-dodge-5-9l-cummins-2003-2007-1047139/1.webp"],
+    description: `Howler Stock VGT Turbo Kit Dodge 5.9L Cummins 2003–2007, BD part 1047139.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1047139.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1047139
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4008,
+    createdAt: 1789430400000,
+    name: "BD Diesel Exchange Twin Turbo Assembly Ford 6.4L Power Stroke 2008–2010 — 179514-B",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 179514-B.
+    price: 2434.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "179514-B",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/exchange-twin-turbo-assembly-ford-2008-2010-6-4l-powerstroke",
+    thumbnail: "/product-media/engine/bd-exchange-twin-turbo-assembly-ford-6-4l-power-stroke-2008-2010-179514b/1.webp",
+    images: ["/product-media/engine/bd-exchange-twin-turbo-assembly-ford-6-4l-power-stroke-2008-2010-179514b/1.webp"],
+    description: `Exchange Twin Turbo Assembly Ford 6.4L Power Stroke 2008–2010, BD part 179514-B.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 179514-B.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 179514-B
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4009,
+    createdAt: 1789430400000,
+    name: "BD Diesel Shift Kit - Chevy Allison 1000 6-speed 2006–2008 — 1604721",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1604721.
+    price: 124.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1604721",
+    fitment: "2006–2008 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007–2008 Chevrolet Silverado 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/shift-kit-chevy-allison-1000-2006-2008-6spd",
+    thumbnail: "/product-media/transmission/bd-shift-kit-chevy-allison-1000-6-speed-2006-2008-1604721/1.webp",
+    images: ["/product-media/transmission/bd-shift-kit-chevy-allison-1000-6-speed-2006-2008-1604721/1.webp"],
+    description: `Shift Kit - Chevy Allison 1000 6-speed 2006–2008, BD part 1604721.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1604721.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2006–2008 Chevrolet Silverado 2500 HD; 2006 Chevrolet Silverado 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007–2008 Chevrolet Silverado 3500 HD (6.6L)
+Part number: 1604721
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4010,
+    createdAt: 1789430400000,
+    name: "BD Diesel Shift Kit Chevy Allison 1000 5-speed 2001–2005 — 1604720",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1604720.
+    price: 433.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1604720",
+    fitment: "2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2008 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; and 2007–2008 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/shift-kit-chev-allison-1000-2001-2005-5spd",
+    thumbnail: "/product-media/transmission/bd-shift-kit-chevy-allison-1000-5-speed-2001-2005-1604720/1.webp",
+    images: ["/product-media/transmission/bd-shift-kit-chevy-allison-1000-5-speed-2001-2005-1604720/1.webp"],
+    description: `Shift Kit Chevy Allison 1000 5-speed 2001–2005, BD part 1604720.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1604720.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2001–2004 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2008 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; and 2007–2008 GMC Sierra 3500 HD (6.6L)
+Part number: 1604720
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4011,
+    createdAt: 1789430400000,
+    name: "BD Diesel On/Off Lockup Kit Ford Power Stroke 4R100 1999–2003 — 1600411",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600411.
+    price: 98.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600411",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/on-off-lockup-kit-1999-2003-ford-4r100",
+    thumbnail: "/product-media/transmission/bd-on-off-lockup-kit-ford-power-stroke-4r100-1999-2003-1600411/1.webp",
+    images: ["/product-media/transmission/bd-on-off-lockup-kit-ford-power-stroke-4r100-1999-2003-1600411/1.webp"],
+    description: `On/Off Lockup Kit Ford Power Stroke 4R100 1999–2003, BD part 1600411.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600411.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
+Part number: 1600411
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4012,
+    createdAt: 1789430400000,
+    name: "BD Diesel Tugger Shift Kit Ford Power Stroke 4R100 1999–2003 — 1600410",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600410.
+    price: 210.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600410",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/tugger-shift-kit-1999-2003-ford-4r100",
+    thumbnail: "/product-media/transmission/bd-tugger-shift-kit-ford-power-stroke-4r100-1999-2003-1600410/1.webp",
+    images: ["/product-media/transmission/bd-tugger-shift-kit-ford-power-stroke-4r100-1999-2003-1600410/1.webp"],
+    description: `Tugger Shift Kit Ford Power Stroke 4R100 1999–2003, BD part 1600410.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600410.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
+Part number: 1600410
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4013,
+    createdAt: 1789430400000,
+    name: "BD Diesel Bypass Tube Eliminator Kit Ford Power Stroke 4R100 1999–2003 — 1600036",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1600036.
+    price: 36.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1600036",
+    fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/bypass-tube-eliminator-kit-ford-1999-2003-4r100",
+    thumbnail: "/product-media/transmission/bd-bypass-tube-eliminator-kit-ford-power-stroke-4r100-1999-2003-1600036/1.webp",
+    images: ["/product-media/transmission/bd-bypass-tube-eliminator-kit-ford-power-stroke-4r100-1999-2003-1600036/1.webp"],
+    description: `Bypass Tube Eliminator Kit Ford Power Stroke 4R100 1999–2003, BD part 1600036.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1600036.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty; and 2000–2003 Ford Excursion (7.3L)
+Part number: 1600036
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4014,
+    createdAt: 1789430400000,
+    name: "BD Diesel Spring Fuel Pressure Control BLUE Ford 6.0L Power Stroke 2003–2007 — 1500388",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1500388.
+    price: 16.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1500388",
+    fitment: "2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/spring-fuel-pressure-control-blue-ford-2003-2007-6-0l-powerstroke",
+    thumbnail: "/product-media/engine/bd-spring-fuel-pressure-control-blue-ford-6-0l-power-stroke-2003-2007-1500388/1.webp",
+    images: ["/product-media/engine/bd-spring-fuel-pressure-control-blue-ford-6-0l-power-stroke-2003-2007-1500388/1.webp"],
+    description: `Spring Fuel Pressure Control BLUE Ford 6.0L Power Stroke 2003–2007, BD part 1500388.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1500388.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1500388
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4015,
+    createdAt: 1789430400000,
+    name: "BD Diesel Remote Fuel Filter Replacement Cartridge — 1500063",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1500063.
+    price: 41.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1500063",
+    fitment: "2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/remote-fuel-filter-replacement-cartridge-1050060-kit",
+    thumbnail: "/product-media/engine/bd-remote-fuel-filter-replacement-cartridge-1500063/1.webp",
+    images: ["/product-media/engine/bd-remote-fuel-filter-replacement-cartridge-1500063/1.webp"],
+    description: `Remote Fuel Filter Replacement Cartridge, BD part 1500063.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1500063.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
+Part number: 1500063
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4016,
+    createdAt: 1789430400000,
+    name: "BD Diesel Trans Pressure Guage Adapter Kit 68RFE — 1061529",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1061529.
+    price: 55.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1061529",
+    fitment: "2007–2021 Dodge / Ram 2500; and 2008–2021 Dodge / Ram 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-trans-pressure-guage-adapter-kit",
+    thumbnail: "/product-media/transmission/bd-trans-pressure-guage-adapter-kit-68rfe-1061529/1.webp",
+    images: ["/product-media/transmission/bd-trans-pressure-guage-adapter-kit-68rfe-1061529/1.webp"],
+    description: `Trans Pressure Guage Adapter Kit 68RFE, BD part 1061529.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1061529.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2007–2021 Dodge / Ram 2500; and 2008–2021 Dodge / Ram 3500 (6.7L)
+Part number: 1061529
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4017,
+    createdAt: 1789430400000,
+    name: "BD Diesel Pressure Transducer Adapter Diesel/Gas Dodge Diesel/Gas 47RE/48RE/46RE/44RE/42RE 2000–2007 — 1060604",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1060604.
+    price: 80.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1060604",
+    fitment: "2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L). BD list this part for 2000–2007; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/pressure-transducer-adapter-dodge-2000-2007-47re-48re-46re-44re-42re-diesel-gas",
+    thumbnail: "/product-media/transmission/bd-pressure-transducer-adapter-diesel-gas-dodge-diesel-gas-47re-48re-46re-1060604/1.webp",
+    images: ["/product-media/transmission/bd-pressure-transducer-adapter-diesel-gas-dodge-diesel-gas-47re-48re-46re-1060604/1.webp"],
+    description: `Pressure Transducer Adapter Diesel/Gas Dodge Diesel/Gas 47RE/48RE/46RE/44RE/42RE 2000–2007, BD part 1060604.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1060604.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
+BD catalogue range: 2000–2007
+Part number: 1060604
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4018,
+    createdAt: 1789430400000,
+    name: "BD Diesel One Way Clutch/Sprag - Dodge 6.7L Cummins 68RFE 2007.5-2018 — 1060603",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1060603.
+    price: 368.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1060603",
+    fitment: "2007–2018 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-one-way-clutch-sprag",
+    thumbnail: "/product-media/transmission/bd-one-way-clutch-sprag-dodge-6-7l-cummins-68rfe-2007-5-2018-1060603/1.webp",
+    images: ["/product-media/transmission/bd-one-way-clutch-sprag-dodge-6-7l-cummins-68rfe-2007-5-2018-1060603/1.webp"],
+    description: `One Way Clutch/Sprag - Dodge 6.7L Cummins 68RFE 2007.5-2018, BD part 1060603.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1060603.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2007–2018 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1060603
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4019,
+    createdAt: 1789430400000,
+    name: "BD Diesel Fuel Distribution Block - Dodge 6.7L Cummins 2010–2022 — 1050371",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050371.
+    price: 114.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050371",
+    fitment: "2010–2022 Dodge / Ram 2500; and 2010–2012 and 2014–2022 Dodge / Ram 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-fuel-distribution-block",
+    thumbnail: "/product-media/engine/bd-fuel-distribution-block-dodge-6-7l-cummins-2010-2022-1050371/1.webp",
+    images: ["/product-media/engine/bd-fuel-distribution-block-dodge-6-7l-cummins-2010-2022-1050371/1.webp"],
+    description: `Fuel Distribution Block - Dodge 6.7L Cummins 2010–2022, BD part 1050371.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1050371.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 2010–2022 Dodge / Ram 2500; and 2010–2012 and 2014–2022 Dodge / Ram 3500 (6.7L)
+Part number: 1050371
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4020,
+    createdAt: 1789430400000,
+    name: "BD Diesel Fuel Distribution Block - Dodge 5.9L/6.7L Cummins 2003–2009 — 1050370",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050370.
+    price: 124.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050370",
+    fitment: "2003–2009 Dodge / Ram 2500 and 3500 (5.9L, 6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/5-9l-6-7l-cummins-fuel-distribution-block",
+    thumbnail: "/product-media/engine/bd-fuel-distribution-block-dodge-5-9l-6-7l-cummins-2003-2009-1050370/1.webp",
+    images: ["/product-media/engine/bd-fuel-distribution-block-dodge-5-9l-6-7l-cummins-2003-2009-1050370/1.webp"],
+    description: `Fuel Distribution Block - Dodge 5.9L/6.7L Cummins 2003–2009, BD part 1050370.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1050370.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 2003–2009 Dodge / Ram 2500 and 3500 (5.9L, 6.7L)
+Part number: 1050370
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4021,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flow-MaX Add-On Pre Water Separator Filter Kit — 1050340-WSP",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050340-WSP.
+    price: 97.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050340-WSP",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission; 2001–2003 Chevrolet Silverado 2500 HD; 2001–2002 Chevrolet Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (5.9L, 6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/flow-max-add-on-pre-water-separator-filter-kit",
+    thumbnail: "/product-media/engine/bd-flow-max-add-on-pre-water-separator-filter-kit-1050340wsp/1.webp",
+    images: ["/product-media/engine/bd-flow-max-add-on-pre-water-separator-filter-kit-1050340wsp/1.webp"],
+    description: `Flow-MaX Add-On Pre Water Separator Filter Kit, BD part 1050340-WSP.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1050340-WSP.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission; 2001–2003 Chevrolet Silverado 2500 HD; 2001–2002 Chevrolet Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (5.9L, 6.6L)
+Part number: 1050340-WSP
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4022,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flow-MaX Add-On Post Fine Particle Fuel Filter Kit — 1050340-PFF",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050340-PFF.
+    price: 90.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050340-PFF",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission; 2001–2003 Chevrolet Silverado 2500 HD; 2001–2002 Chevrolet Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (5.9L, 6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/flow-max-add-on-post-fine-particle-fuel-filter-kit",
+    thumbnail: "/product-media/engine/bd-flow-max-add-on-post-fine-particle-fuel-filter-kit-1050340pff/1.webp",
+    images: ["/product-media/engine/bd-flow-max-add-on-post-fine-particle-fuel-filter-kit-1050340pff/1.webp"],
+    description: `Flow-MaX Add-On Post Fine Particle Fuel Filter Kit, BD part 1050340-PFF.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1050340-PFF.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission; 2001–2003 Chevrolet Silverado 2500 HD; 2001–2002 Chevrolet Silverado 3500; and 2001–2002 GMC Sierra 2500 HD and Sierra 3500 (5.9L, 6.6L)
+Part number: 1050340-PFF
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4023,
+    createdAt: 1789430400000,
+    name: "BD Diesel Flow-MaX Retrofit Kit OEM Intank Pump Conversions 1998.5-2004 — 1050302",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050302.
+    price: 14.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050302",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission and 3500 Manual Transmission; and 1998–2004 Dodge / Ram 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/flow-max-retrofit-kit-1998-5-2004-oem-intank-pump-conversions",
+    thumbnail: "/product-media/engine/bd-flow-max-retrofit-kit-oem-intank-pump-conversions-1998-5-2004-1050302/1.webp",
+    images: ["/product-media/engine/bd-flow-max-retrofit-kit-oem-intank-pump-conversions-1998-5-2004-1050302/1.webp"],
+    description: `Flow-MaX Retrofit Kit OEM Intank Pump Conversions 1998.5-2004, BD part 1050302.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1050302.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission and 3500 Manual Transmission; and 1998–2004 Dodge / Ram 3500 (5.9L)
+Part number: 1050302
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4024,
+    createdAt: 1789430400000,
+    name: "BD Diesel Lift Pump OEM Replacement Dodge 5.9L Cummins 2003–2004.5 — 1050231",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050231.
+    price: 468.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050231",
+    fitment: "2003–2004 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/lift-pump-oem-replacement-dodge-2003-2004-5-dodge-5-9l",
+    thumbnail: "/product-media/engine/bd-lift-pump-oem-replacement-dodge-5-9l-cummins-2003-2004-5-1050231/1.webp",
+    images: ["/product-media/engine/bd-lift-pump-oem-replacement-dodge-5-9l-cummins-2003-2004-5-1050231/1.webp"],
+    description: `Lift Pump OEM Replacement Dodge 5.9L Cummins 2003–2004.5, BD part 1050231.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1050231.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 2003–2004 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1050231
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4025,
+    createdAt: 1789430400000,
+    name: "BD Diesel Lift Pump Kit, OEM Replacement Dodge 24-Valve Cummins 1998–2002 — 1050224",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1050224.
+    price: 391.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1050224",
+    fitment: "1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/lift-pump-kit-oem-replacement-1998-2002-dodge-24-valve",
+    thumbnail: "/product-media/engine/bd-lift-pump-kit-oem-replacement-dodge-24-valve-cummins-1998-2002-1050224/1.webp",
+    images: ["/product-media/engine/bd-lift-pump-kit-oem-replacement-dodge-24-valve-cummins-1998-2002-1050224/1.webp"],
+    description: `Lift Pump Kit, OEM Replacement Dodge 24-Valve Cummins 1998–2002, BD part 1050224.
+
+Fuel supply is the quiet limit on a diesel. Pressure that sags under load starves the injection pump, and a pump that is being starved wears in ways that show up much later and cost much more.
+
+BD's Flow-MaX line covers the supply side: lift pumps, filtration, pressure control springs, sumps and distribution blocks.
+
+Getting the supply right is unglamorous and it is the cheapest protection an injection system gets.
+
+BD list this as part 1050224.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Flow Max
+Application: 1998–2002 Dodge / Ram 2500, 2500 Manual Transmission, 3500 and 3500 Manual Transmission (5.9L)
+Part number: 1050224
+
+Highlights
+
+Protects the injection pump from fuel starvation
+Filtration and water separation
+BD Flow-MaX
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4026,
+    createdAt: 1789430400000,
+    name: "BD Diesel Super B Single SX S358 Turbo Kit w/FMW Billet Wheel Dodge 5.9L Cummins 1994–2002 — 1045220",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045220.
+    price: 2984.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045220",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/super-b-single-sx-s358-turbo-kit-w-fmw-billet-wheel-dodge-1994-2002-5-9l",
+    thumbnail: "/product-media/engine/bd-super-b-single-sx-s358-turbo-kit-w-fmw-billet-wheel-dodge-5-9l-cummins-1045220/1.webp",
+    images: ["/product-media/engine/bd-super-b-single-sx-s358-turbo-kit-w-fmw-billet-wheel-dodge-5-9l-cummins-1045220/1.webp"],
+    description: `Super B Single SX S358 Turbo Kit w/FMW Billet Wheel Dodge 5.9L Cummins 1994–2002, BD part 1045220.
+
+A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
+
+BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
+
+Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
+
+BD list this as part 1045220.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Engine assembly
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 1045220
+
+Highlights
+
+Crack-checked and precision-machined
+New pistons, bearings and gaskets
+Built to OEM specification
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4027,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Dodge 6.7L Cummins 2010–2012 — 1045217",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045217.
+    price: 439.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045217",
+    fitment: "2010–2012 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummin-intercooler-hose-clamp-kit-dodge-2010-2012",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-6-7l-cummins-2010-2012-1045217/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-6-7l-cummins-2010-2012-1045217/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Dodge 6.7L Cummins 2010–2012, BD part 1045217.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1045217.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2010–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045217
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4028,
+    createdAt: 1789430400000,
+    name: "BD Diesel Intercooler Hose & Clamp Kit Dodge 6.7L Cummins 2007.5-2009 — 1045216",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1045216.
+    price: 439.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045216",
+    fitment: "2007–2009 Dodge / Ram 2500 and 3500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummin-intercooler-hose-clamp-kit-dodge-2007-5-2009",
+    thumbnail: "/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-6-7l-cummins-2007-5-2009-1045216/1.webp",
+    images: ["/product-media/engine/bd-intercooler-hose-clamp-kit-dodge-6-7l-cummins-2007-5-2009-1045216/1.webp"],
+    description: `Intercooler Hose & Clamp Kit Dodge 6.7L Cummins 2007.5-2009, BD part 1045216.
+
+A charge air hose that blows off ends a hard pull instantly, and the factory hoses on a worked diesel are usually the first thing to go.
+
+BD's boots are built for the pressure and the heat, and the kits include clamps chosen to hold them rather than whatever was in the parts bin.
+
+Replacing the hoses and the clamps together is the point — a good boot on a tired clamp still lets go.
+
+BD list this as part 1045216.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Hose & Clamp
+Application: 2007–2009 Dodge / Ram 2500 and 3500 (6.7L)
+Part number: 1045216
+
+Highlights
+
+Boots built for boost and heat
+Matched clamps included
+Stops charge pipes blowing off under load
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4029,
+    createdAt: 1789430400000,
+    name: "BD Diesel HX35 Boost Elbow Dodge 5.9L Cummins 1994–2002 — 1040310",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1040310.
+    price: 46.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1040310",
+    fitment: "1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/hx35-boost-elbow",
+    thumbnail: "/product-media/turbocharger/bd-hx35-boost-elbow-dodge-5-9l-cummins-1994-2002-1040310/1.webp",
+    images: ["/product-media/turbocharger/bd-hx35-boost-elbow-dodge-5-9l-cummins-1994-2002-1040310/1.webp"],
+    description: `HX35 Boost Elbow Dodge 5.9L Cummins 1994–2002, BD part 1040310.
+
+A billet compressor wheel is lighter than the cast wheel it replaces, which means it spins up faster, and it is stronger, which means it tolerates the conditions that destroy a cast one.
+
+On the 7.3L Power Stroke the billet wheel also removes the compressor surge these turbochargers are known for.
+
+It is an upgrade made inside the turbocharger you already have rather than a replacement for it.
+
+BD list this as part 1040310.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Turbo Accessories
+Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
+Part number: 1040310
+
+Highlights
+
+Lighter and stronger than a cast wheel
+Faster spool-up
+Eliminates compressor surge on the 7.3L
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4030,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Chevy 2.8L Duramax Canyon/Colorado 2016–2023 — 1036760",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036760.
+    price: 735.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036760",
+    fitment: "2016–2023 Chevrolet Colorado; and 2016–2023 GMC Canyon (2.8L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/2-8l-duramax-e-pas-positive-air-shut-off",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-2-8l-duramax-canyon-colorado-2016-20-1036760/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-2-8l-duramax-canyon-colorado-2016-20-1036760/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Chevy 2.8L Duramax Canyon/Colorado 2016–2023, BD part 1036760.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036760.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2016–2023 Chevrolet Colorado; and 2016–2023 GMC Canyon (2.8L)
+Part number: 1036760
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4031,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off LML Chevy LML Duramax Pick-Up 2011–2016 / LML Cab & Chassis 2013–2016 — 1036759",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036759.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036759",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-e-pas-positive-air-shut-off-lml",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-lml-chevy-lml-duramax-pick-up-2011-2016-lm-1036759/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-lml-chevy-lml-duramax-pick-up-2011-2016-lm-1036759/1.webp"],
+    description: `E-PAS Positive Air Shut-Off LML Chevy LML Duramax Pick-Up 2011–2016 / LML Cab & Chassis 2013–2016, BD part 1036759.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036759.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Part number: 1036759
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4032,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Chevy LMM / LGH Duramax Pick-Up 2008–2010 / LMM-LGH Van 2008–2015 / LGH Cab & Chassis Duramax 2011–2012 — 1036758",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036758.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036758",
+    fitment: "2008–2012 Chevrolet Express 2500; 2008–2011 Chevrolet Express 3500; 2008–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2008–2011 GMC Savana 2500 and Savana 3500; and 2008–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). BD list this part for 2008–2015; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-e-pas-positive-air-shut-off-lbz-lmm-lgh",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-lmm-lgh-duramax-pick-up-2008-2010-lm-1036758/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-chevy-lmm-lgh-duramax-pick-up-2008-2010-lm-1036758/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Chevy LMM / LGH Duramax Pick-Up 2008–2010 / LMM-LGH Van 2008–2015 / LGH Cab & Chassis Duramax 2011–2012, BD part 1036758.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036758.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2008–2012 Chevrolet Express 2500; 2008–2011 Chevrolet Express 3500; 2008–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2008–2011 GMC Savana 2500 and Savana 3500; and 2008–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+BD catalogue range: 2008–2015
+Part number: 1036758
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4033,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Ford F-150 3.0L Power Stroke 2018–2021 — 1036756",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036756.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036756",
+    fitment: "2018–2020 Ford F-150 (3.0L). BD list this part for 2018–2021; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/3-0l-powerstroke-e-pas-positive-air-shut-off",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-ford-f-150-3-0l-power-stroke-2018-2021-1036756/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-ford-f-150-3-0l-power-stroke-2018-2021-1036756/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Ford F-150 3.0L Power Stroke 2018–2021, BD part 1036756.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036756.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2018–2020 Ford F-150 (3.0L)
+BD catalogue range: 2018–2021
+Part number: 1036756
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4034,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Ford F-250/F-350/F-450/F-550 6.7L Power Stroke 2011–2019 — 1036755",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036755.
+    price: 698.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036755",
+    fitment: "2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L). BD list this part for 2011–2019; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-powerstroke-e-pas-positive-air-shut-off",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-ford-f-250-f-350-f-450-f-550-6-7l-power-st-1036755/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-ford-f-250-f-350-f-450-f-550-6-7l-power-st-1036755/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Ford F-250/F-350/F-450/F-550 6.7L Power Stroke 2011–2019, BD part 1036755.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036755.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
+BD catalogue range: 2011–2019
+Part number: 1036755
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4035,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Ford 6.4L Power Stroke 2008–2010 — 1036754",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036754.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036754",
+    fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-4l-powerstroke-e-pas-positive-air-shut-off",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-ford-6-4l-power-stroke-2008-2010-1036754/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-ford-6-4l-power-stroke-2008-2010-1036754/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Ford 6.4L Power Stroke 2008–2010, BD part 1036754.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036754.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
+Part number: 1036754
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4036,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Dodge 6.7L Cummins Pick-up / Cab & Chassis 2019–2024 — 1036753",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036753.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036753",
+    fitment: "2019–2024 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-e-pas-positive-air-shut-off-2019-up",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-dodge-6-7l-cummins-pick-up-cab-chassis-201-1036753/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-dodge-6-7l-cummins-pick-up-cab-chassis-201-1036753/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Dodge 6.7L Cummins Pick-up / Cab & Chassis 2019–2024, BD part 1036753.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036753.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2019–2024 Dodge / Ram 2500, 3500, 4500 and 5500 (6.7L)
+Part number: 1036753
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4037,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Dodge 6.7L Cummins Pick-Up 2010–2018 / Cab & Chassis 2011–2018 — 1036751",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036751.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036751",
+    fitment: "2010–2017 Dodge / Ram 2500 and 3500; 2011–2017 Dodge / Ram 4500; and 2011–2016 Dodge / Ram 5500 (6.7L). BD list this part for 2010–2018; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-e-pas-positive-air-shut-off-2010-2018",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-dodge-6-7l-cummins-pick-up-2010-2018-cab-c-1036751/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-dodge-6-7l-cummins-pick-up-2010-2018-cab-c-1036751/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Dodge 6.7L Cummins Pick-Up 2010–2018 / Cab & Chassis 2011–2018, BD part 1036751.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036751.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2010–2017 Dodge / Ram 2500 and 3500; 2011–2017 Dodge / Ram 4500; and 2011–2016 Dodge / Ram 5500 (6.7L)
+BD catalogue range: 2010–2018
+Part number: 1036751
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4038,
+    createdAt: 1789430400000,
+    name: "BD Diesel E-PAS Positive Air Shut-Off Dodge 6.7L Cummins Pick-Up 2007–2009 / Cab & Chassis 2007–2010 — 1036750",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036750.
+    price: 661.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036750",
+    fitment: "2007–2009 Dodge / Ram 2500 and 3500; 2008–2010 Dodge / Ram 4500; and 2010 Dodge / Ram 5500 (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/6-7l-cummins-e-pas-positive-air-shut-off-2007-2010",
+    thumbnail: "/product-media/engine/bd-e-pas-positive-air-shut-off-dodge-6-7l-cummins-pick-up-2007-2009-cab-c-1036750/1.webp",
+    images: ["/product-media/engine/bd-e-pas-positive-air-shut-off-dodge-6-7l-cummins-pick-up-2007-2009-cab-c-1036750/1.webp"],
+    description: `E-PAS Positive Air Shut-Off Dodge 6.7L Cummins Pick-Up 2007–2009 / Cab & Chassis 2007–2010, BD part 1036750.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036750.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2007–2009 Dodge / Ram 2500 and 3500; 2008–2010 Dodge / Ram 4500; and 2010 Dodge / Ram 5500 (6.7L)
+Part number: 1036750
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4039,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off (Manual Controlled) Dodge 5.9L Cummins 2003–2007 — 1036720-M",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036720-M.
+    price: 737.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036720-M",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-manual-controlled-dodge-2003-2007-5-9l",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-manual-controlled-dodge-5-9l-cummins-2003-2007-1036720m/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-manual-controlled-dodge-5-9l-cummins-2003-2007-1036720m/1.webp"],
+    description: `Positive Air Shut-Off (Manual Controlled) Dodge 5.9L Cummins 2003–2007, BD part 1036720-M.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036720-M.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1036720-M
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4040,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off Dodge 5.9L Cummins 2003–2007 — 1036720",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036720.
+    price: 1031.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036720",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-dodge-2003-2007-5-9l",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-dodge-5-9l-cummins-2003-2007-1036720/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-dodge-5-9l-cummins-2003-2007-1036720/1.webp"],
+    description: `Positive Air Shut-Off Dodge 5.9L Cummins 2003–2007, BD part 1036720.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036720.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Part number: 1036720
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4041,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off (Manual Controlled) Chevy Duramax 2011–2016 — 1036713-M",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036713-M.
+    price: 741.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036713-M",
+    fitment: "2011–2015 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011 and 2013–2015 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L). BD list this part for 2011–2016; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-manual-controlled-chevy-2011-2016",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-manual-controlled-chevy-duramax-2011-2016-1036713m/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-manual-controlled-chevy-duramax-2011-2016-1036713m/1.webp"],
+    description: `Positive Air Shut-Off (Manual Controlled) Chevy Duramax 2011–2016, BD part 1036713-M.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036713-M.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2011–2015 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011 and 2013–2015 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+BD catalogue range: 2011–2016
+Part number: 1036713-M
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4042,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off Chevy Duramax 2011–2016 — 1036713",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036713.
+    price: 1021.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036713",
+    fitment: "2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011 and 2013–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-chevy-2011-2016",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-chevy-duramax-2011-2016-1036713/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-chevy-duramax-2011-2016-1036713/1.webp"],
+    description: `Positive Air Shut-Off Chevy Duramax 2011–2016, BD part 1036713.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036713.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2011–2016 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011 and 2013–2016 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
+Part number: 1036713
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4043,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off (Manual Controlled) Ford 6.7L Power Stroke 2011–2014 — 1036703-M",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036703-M.
+    price: 741.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036703-M",
+    fitment: "2011–2014 Ford F-250 Super Duty and F-350 Super Duty (6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-manual-controlled-ford-2011-2014-6-7l",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-manual-controlled-ford-6-7l-power-stroke-2011-20-1036703m/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-manual-controlled-ford-6-7l-power-stroke-2011-20-1036703m/1.webp"],
+    description: `Positive Air Shut-Off (Manual Controlled) Ford 6.7L Power Stroke 2011–2014, BD part 1036703-M.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036703-M.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2011–2014 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+Part number: 1036703-M
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4044,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off Ford 6.7L Power Stroke 2011–2014 — 1036703",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036703.
+    price: 996.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036703",
+    fitment: "2011 Ford F-250 Super Duty and F-350 Super Duty (6.7L). BD list this part for 2011–2014; the years above are the ones tagged per model on their own listing.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-ford-2011-2014-6-7l",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-ford-6-7l-power-stroke-2011-2014-1036703/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-ford-6-7l-power-stroke-2011-2014-1036703/1.webp"],
+    description: `Positive Air Shut-Off Ford 6.7L Power Stroke 2011–2014, BD part 1036703.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036703.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2011 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
+BD catalogue range: 2011–2014
+Part number: 1036703
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4045,
+    createdAt: 1789430400000,
+    name: "BD Diesel Positive Air Shut-Off Ford Power Stroke 2003–2007 — 1036701",
+    category: "engine",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1036701.
+    price: 996.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1036701",
+    fitment: "2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/positive-air-shut-off-ford-2003-2007-6-0l",
+    thumbnail: "/product-media/engine/bd-positive-air-shut-off-ford-power-stroke-2003-2007-1036701/1.webp",
+    images: ["/product-media/engine/bd-positive-air-shut-off-ford-power-stroke-2003-2007-1036701/1.webp"],
+    description: `Positive Air Shut-Off Ford Power Stroke 2003–2007, BD part 1036701.
+
+Diesel engine runaway happens when the engine finds a fuel source other than its own: crankcase oil past worn seals, or hydrocarbon vapour drawn in through the intake. Once it does, shutting off the key does nothing — the engine has stopped needing the fuel system, and it will keep accelerating until something breaks or it runs out of what it is drinking.
+
+A positive air shut-off is a valve in the intake that closes and starves the engine of air, which is the only thing that reliably stops a runaway. BD build both manually triggered and electronic versions.
+
+It is a part you hope never to use. The argument for fitting one is the same as for a fire extinguisher in the house.
+
+BD list this as part 1036701.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Positive air shut-off
+Application: 2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
+Part number: 1036701
+
+Highlights
+
+Stops a diesel engine runaway
+Closes the intake — the only reliable stop
+Manual and electronic versions available
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 4046,
+    createdAt: 1789430400000,
+    name: "BD Diesel Transmission Geartrain Dodge 48RE 6-pin 2003–2007 — 1030342",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030342.
+    price: 782.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1030342",
+    fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/48re-transmission-geartrain",
+    thumbnail: "/product-media/transmission/bd-transmission-geartrain-dodge-48re-6-pin-2003-2007-1030342/1.webp",
+    images: ["/product-media/transmission/bd-transmission-geartrain-dodge-48re-6-pin-2003-2007-1030342/1.webp"],
+    description: `Transmission Geartrain Dodge 48RE 6-pin 2003–2007, BD part 1030342.
+
+Shafts are where a transmission finally gives up once the clutches have been made to hold more than the factory intended. The input shaft twists, and it takes the rest with it.
+
+BD's billet shafts are machined from solid rather than forged to a price, which is what lets them carry the torque a built transmission is capable of putting through them.
+
+It is the part to fit while the transmission is apart, not after it has failed a second time.
+
+BD list this as part 1030342.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Product: Rebuild-It
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L, 6.7L)
+Part number: 1030342
+
+Highlights
+
+Machined from billet, not forged to a price
+Carries the torque a built transmission makes
+Fit it while the box is apart
 
 Warranty
 BD Diesel Manufacturer Warranty
