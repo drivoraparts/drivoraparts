@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   1023 listings added 2026-09-15 from manufacturer and
+   1059 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -52406,6 +52406,1852 @@ Highlights
 Stainless braided, made in the USA
 Firmer pedal feel
 ICON Vehicle Dynamics
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3168,
+    createdAt: 1789430400000,
+    name: "BD Diesel Screamer HE351VE Turbocharger — 2007.5–2012 Dodge / Ram 6.7L Cummins — 1045770",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // dpp listing price for BD-1045770.
+    price: 2998.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045770",
+    fitment: "2007.5–2012 Dodge / Ram 6.7L Cummins. Retains the factory variable geometry and exhaust brake.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/bd-he351ve-turbo-075-12-cummins",
+    thumbnail: "/product-media/turbocharger/bd-screamer-he351ve-turbo-1045770/1.webp",
+    images: ["/product-media/turbocharger/bd-screamer-he351ve-turbo-1045770/1.webp"],
+    description: `BD Diesel Screamer upgraded HE351VE variable-geometry turbocharger for the 2007.5–2012 6.7L Cummins.
+
+Most turbo upgrades for the 6.7L Cummins ask you to abandon the factory VGT for a fixed-geometry unit — which also means a different exhaust manifold, a list of other parts, and the loss of the factory exhaust brake.
+
+The Screamer takes the other route. It is an upgraded HE351VE, so the variable geometry stays, the exhaust brake stays, and nothing around it has to change.
+
+For an owner who uses the exhaust brake — towing down a grade, or simply not wearing out service brakes — that is not a small consideration.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Model: Screamer HE351VE
+Type: Upgraded variable-geometry turbocharger
+Retains: Factory VGT operation and exhaust brake
+Engine: 6.7L Cummins
+Years: 2007.5–2012
+Part number: 1045770
+
+Highlights
+
+Keeps the factory exhaust brake
+No manifold or conversion parts needed
+Upgraded HE351VE
+BD Diesel Screamer
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3169,
+    createdAt: 1789430400000,
+    name: "BD Diesel Turbo Thruster 66 mm Billet Turbocharger — 1999.5–2003 Ford 7.3L Power Stroke — 1047511",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // dpp listing price for BD-1047511.
+    price: 1979.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1047511",
+    fitment: "1999.5–2003 Ford 7.3L Power Stroke. Direct bolt-in replacement for the factory turbocharger.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/bd-turbo-thruster-995-03-powerstroke",
+    thumbnail: "/product-media/turbocharger/bd-turbo-thruster-1047511/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-thruster-1047511/1.webp"],
+    description: `BD Diesel Turbo Thruster with 66 mm Ballistic Billet compressor wheel and 0.84 A/R turbine housing for the 1999.5–2003 Ford 7.3L Power Stroke.
+
+The 7.3L Power Stroke has more in it than the factory turbo will feed, and airflow is where it runs out first.
+
+BD's Turbo Thruster uses their 66 mm Ballistic Billet compressor wheel for about 30% more airflow, against a 0.84 A/R turbine housing chosen for quick response rather than top-end only.
+
+The centre section runs a BD-designed sintered brass 360-degree thrust bearing, which is the part that decides service life on a turbo asked to work harder than standard.
+
+It is a direct bolt-in replacement for the stock turbo.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Model: Turbo Thruster
+Compressor wheel: 66 mm Ballistic Billet
+Airflow: About 30% above stock
+Turbine housing: 0.84 A/R
+Thrust bearing: Sintered brass, 360 degree
+Installation: Direct bolt-in
+Part number: 1047511
+
+Highlights
+
+66 mm Ballistic Billet compressor wheel
+About 30% more airflow
+0.84 A/R for quick response
+Direct bolt-in replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3170,
+    createdAt: 1789430400000,
+    name: "BD Diesel HE351VE / HE300VG Turbo Mounting Kit — 2007.5–2018 Ram 6.7L Cummins — 1045983",
+    category: "turbocharger",
+    brand: "bd-diesel",
+    // dpp listing price for BD-1045983.
+    price: 39.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1045983",
+    fitment: "2007.5–2018 Dodge / Ram 6.7L Cummins with the HE351VE or HE300VG turbocharger.",
+    included: ["Turbo mounting gaskets","Studs","Miscellaneous hardware"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bd-diesel-1045983-he351vehe300vg-turbo-mounting-kit-075-20-ram-67l-cummins",
+    thumbnail: "/product-media/turbocharger/bd-turbo-mounting-kit-1045983/1.webp",
+    images: ["/product-media/turbocharger/bd-turbo-mounting-kit-1045983/1.webp"],
+    description: `BD Diesel turbo mounting kit with gaskets, studs and hardware for the HE351VE and HE300VG on the 2007.5–2018 6.7L Cummins.
+
+Turbo studs are a known problem on these engines — they corrode, they seize, and they snap at the worst point in the job. Reusing old ones on a fresh turbo is a false economy.
+
+This kit supplies everything needed to mount a factory-style HE351VE or HE300VG turbocharger: gaskets, studs and the associated hardware.
+
+Fitting new gaskets and studs at the same time as the turbo is what stops the job coming back as an exhaust leak.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Type: Turbo mounting kit
+Included: Gaskets, studs, miscellaneous hardware
+Fits: HE351VE and HE300VG turbochargers
+Application: 2007.5–2018 Ram 6.7L Cummins
+Part number: 1045983
+
+Highlights
+
+Gaskets, studs and hardware
+Replaces studs prone to breaking
+For HE351VE and HE300VG
+BD Diesel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3171,
+    createdAt: 1789430400000,
+    name: "ATS Aurora VNT Turbocharger Kit — 2011–2014 Ford 6.7L Power Stroke pickup — 202-306-3368",
+    category: "turbocharger",
+    brand: "ats",
+    // dpp listing price for ATS-202-306-3368.
+    price: 2864.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "202-306-3368",
+    fitment: "2011–2014 Ford 6.7L Power Stroke pickup. The pickup and the cab and chassis take different part numbers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ats-202-307-3368-aurora-vnt-turbocharger-kit-2011-2016-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/ats-aurora-vnt-turbocharger-kit-202-306-3368/1.webp",
+    images: ["/product-media/turbocharger/ats-aurora-vnt-turbocharger-kit-202-306-3368/1.webp"],
+    description: `ATS Diesel Aurora VNT turbocharger kit for the 2011–2014 Ford 6.7L Power Stroke pickup.
+
+Turbochargers on modern diesels fail for two reasons: heat, and the electronics that control the vanes. The 6.7L Power Stroke's factory unit has had a hard time with both.
+
+ATS redesigned this one from the ground up rather than modifying the original. The VNT is the next step on from their Aurora VFR line, carrying over the parts of that design that proved reliable.
+
+This kit is for the 2011–2014 Ford 6.7L Power Stroke pickup. Ford's pickup and cab and chassis trucks do not share a turbocharger, so check the build before ordering.
+
+Specifications
+
+Manufacturer: ATS Diesel Performance
+Model: Aurora VNT
+Design: Clean-sheet redesign, developed from the Aurora VFR line
+Type: Turbocharger kit
+Application: 2011–2014 Ford 6.7L Power Stroke pickup
+Part number: 202-306-3368
+
+Highlights
+
+Ground-up redesign, not a modified stock unit
+Built on the proven Aurora VFR line
+Application-specific — pickup or cab and chassis
+ATS Diesel Performance
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3172,
+    createdAt: 1789430400000,
+    name: "ATS Aurora VNT Turbocharger Kit — 2011–2016 Ford 6.7L Power Stroke cab and chassis — 202-307-3368",
+    category: "turbocharger",
+    brand: "ats",
+    // dpp listing price for ATS-202-307-3368.
+    price: 2864.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "202-307-3368",
+    fitment: "2011–2016 Ford 6.7L Power Stroke cab and chassis. The pickup and the cab and chassis take different part numbers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ats-202-307-3368-aurora-vnt-turbocharger-kit-2011-2016-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/ats-aurora-vnt-turbocharger-kit-202-307-3368/1.webp",
+    images: ["/product-media/turbocharger/ats-aurora-vnt-turbocharger-kit-202-307-3368/1.webp"],
+    description: `ATS Diesel Aurora VNT turbocharger kit for the 2011–2016 Ford 6.7L Power Stroke cab and chassis.
+
+Turbochargers on modern diesels fail for two reasons: heat, and the electronics that control the vanes. The 6.7L Power Stroke's factory unit has had a hard time with both.
+
+ATS redesigned this one from the ground up rather than modifying the original. The VNT is the next step on from their Aurora VFR line, carrying over the parts of that design that proved reliable.
+
+This kit is for the 2011–2016 Ford 6.7L Power Stroke cab and chassis. Ford's pickup and cab and chassis trucks do not share a turbocharger, so check the build before ordering.
+
+Specifications
+
+Manufacturer: ATS Diesel Performance
+Model: Aurora VNT
+Design: Clean-sheet redesign, developed from the Aurora VFR line
+Type: Turbocharger kit
+Application: 2011–2016 Ford 6.7L Power Stroke cab and chassis
+Part number: 202-307-3368
+
+Highlights
+
+Ground-up redesign, not a modified stock unit
+Built on the proven Aurora VFR line
+Application-specific — pickup or cab and chassis
+ATS Diesel Performance
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3173,
+    createdAt: 1789430400000,
+    name: "aFe BladeRunner GT Series Turbocharger — 1999.5–2003 Ford 7.3L Power Stroke — 46-60072",
+    category: "turbocharger",
+    brand: "afe",
+    // dpp listing price for AFE-46-60072.
+    price: 2135,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-60072",
+    fitment: "1999.5–2003 Ford 7.3L Power Stroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-13648-afe-bladerunner-gt-series-turbocharger-995-03-73l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/turbocharger/afe-bladerunner-gt-series-turbocharger-46-60072/1.webp",
+    images: ["/product-media/turbocharger/afe-bladerunner-gt-series-turbocharger-46-60072/1.webp"],
+    description: `aFe BladeRunner GT Series direct bolt-on turbocharger for the 1999.5–2003 Ford 7.3L Power Stroke.
+
+A turbo upgrade earns its money twice: once in power, and once in the exhaust gas temperature it takes out of a truck working hard.
+
+aFe's BladeRunner GT Series is built for performance while still bolting to the factory components on the 1999.5–2003 Ford 7.3L Power Stroke.
+
+It bolts directly to the OE components, so it is an easy install as well as an airflow upgrade.
+
+Specifications
+
+Manufacturer: aFe Power
+Series: BladeRunner GT
+Installation: Direct bolt-on to OE components
+Application: 1999.5–2003 Ford 7.3L Power Stroke
+Part number: 46-60072
+
+Highlights
+
+Direct bolt-on to factory components
+More airflow, lower EGT
+aFe BladeRunner GT Series
+1999.5–2003 Ford 7.3L Power Stroke
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3174,
+    createdAt: 1789430400000,
+    name: "aFe BladeRunner GT Series Turbocharger — 2004.5–2010 GM 6.6L Duramax LLY / LBZ / LMM — 46-60242",
+    category: "turbocharger",
+    brand: "afe",
+    // dpp listing price for AFE-46-60242.
+    price: 2500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-60242",
+    fitment: "2004.5–2010 GM 6.6L Duramax LLY / LBZ / LMM.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-afe-bladerunner-gt-series-turbocharger-045-10-gm-66l-duramax-lly-lbz-lmm",
+    thumbnail: "/product-media/turbocharger/afe-bladerunner-gt-series-turbocharger-46-60242/1.webp",
+    images: ["/product-media/turbocharger/afe-bladerunner-gt-series-turbocharger-46-60242/1.webp"],
+    description: `aFe BladeRunner GT Series direct bolt-on turbocharger for the 2004.5–2010 GM 6.6L Duramax LLY / LBZ / LMM.
+
+A turbo upgrade earns its money twice: once in power, and once in the exhaust gas temperature it takes out of a truck working hard.
+
+aFe's BladeRunner GT Series is built for performance while still bolting to the factory components on the 2004.5–2010 GM 6.6L Duramax LLY / LBZ / LMM.
+
+It is a direct replacement, and it runs a gold anodised 6/12-bladed billet compressor wheel — the right time to fit one is when the factory turbo has failed anyway.
+
+Specifications
+
+Manufacturer: aFe Power
+Series: BladeRunner GT
+Installation: Direct bolt-on to OE components
+Application: 2004.5–2010 GM 6.6L Duramax LLY / LBZ / LMM
+Part number: 46-60242
+
+Highlights
+
+Direct bolt-on to factory components
+More airflow, lower EGT
+aFe BladeRunner GT Series
+2004.5–2010 GM 6.6L Duramax LLY / LBZ / LMM
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3175,
+    createdAt: 1789430400000,
+    name: "BD Diesel 68RFE Performance Transmission — 2007.5–2018 Dodge / Ram 6.7L Cummins 2WD — 1064262",
+    category: "transmission",
+    brand: "bd-diesel",
+    // dpp listing price for BD-1064262.
+    price: 5894.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064262",
+    fitment: "2007.5–2018 Dodge / Ram 6.7L Cummins. 2WD.",
+    drivetrain: "2WD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/bd-power-68rfe-trans-075-18-cummins",
+    thumbnail: "/product-media/transmission/bd-68rfe-performance-transmission-1064262/1.webp",
+    images: ["/product-media/transmission/bd-68rfe-performance-transmission-1064262/1.webp"],
+    description: `BD Diesel 68RFE performance transmission for the 2007.5–2018 Ram 6.7L Cummins, 2WD.
+
+Dodge spent years putting ordinary transmissions behind an extraordinary engine, and the reputation stuck. The 68RFE that arrived with the 2007.5 6.7L was a genuine improvement — a six-speed automatic with real capacity behind it — but a Cummins will still find the limits of a standard build.
+
+This is the transmission on its own rather than a transmission-and-converter package — the right choice when the converter in the truck is sound, or when you have already chosen one.
+
+BD list the 2WD and 4WD builds under separate part numbers; this is the 2WD version.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: 68RFE performance build
+Torque converter: Not included
+Drivetrain: 2WD
+Application: 2007.5–2018 Ram 6.7L Cummins
+Part number: 1064262
+
+Highlights
+
+68RFE performance build
+Transmission only — no converter
+2WD
+BD Diesel Performance
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3176,
+    createdAt: 1789430400000,
+    name: "aFe Power ShiftLogic Transmission Module, 68RFE — 2007.5–2018 Dodge / Ram 6.7L Cummins — 77-52002",
+    category: "transmission",
+    brand: "afe",
+    // dpp listing price for AFE-77-52002.
+    price: 410,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "77-52002",
+    fitment: "2007.5–2018 Dodge / Ram 6.7L Cummins with the 68RFE automatic transmission.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-77-52002-shiftlogic-trans-module",
+    thumbnail: "/product-media/transmission/afe-shiftlogic-transmission-module-77-52002/1.webp",
+    images: ["/product-media/transmission/afe-shiftlogic-transmission-module-77-52002/1.webp"],
+    description: `aFe Power ShiftLogic line-pressure module for the 68RFE in the 2007.5–2018 Ram 6.7L Cummins.
+
+The 68RFE is known for shudder and slippage at low rpm, and it gets worse once power adders are in the mix. Slippage is heat, and heat is what eventually takes the clutches with it.
+
+The ShiftLogic module modifies transmission line pressure. Firmer shifts and less slip are the immediate result; lower fluid temperature and a longer-lived transmission are the reason to do it.
+
+It addresses the transmission specifically — it is a line-pressure controller, not an engine tune.
+
+Specifications
+
+Manufacturer: aFe Power
+Product: ShiftLogic transmission module
+Transmission: 68RFE
+Function: Modifies line pressure for firmer shifts and less slip
+Benefit: Lower fluid temperature, longer transmission life
+Application: 2007.5–2018 Ram 6.7L Cummins
+Part number: 77-52002
+
+Highlights
+
+Firmer shifts, less slippage
+Lower transmission fluid temperature
+Line-pressure control, not an engine tune
+For the 68RFE
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3177,
+    createdAt: 1789430400000,
+    name: "ATS Allison Conversion Stage 3 Transmission — 2010–2012 Ram 6.7L Cummins 2WD, replaces 68RFE — 319-932-2356",
+    category: "transmission",
+    brand: "ats",
+    // dpp listing price for ATS-319-932-2356.
+    price: 13749.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "319-932-2356",
+    fitment: "2010–2012 Ram 6.7L Cummins. 2WD. Replaces the factory 68RFE transmission.",
+    drivetrain: "2WD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ats-allison-conversion-stage-3-transmission-68rfe-10-12-ram-67l-cummins-2wd",
+    thumbnail: "/product-media/transmission/ats-allison-conversion-stage-3-transmission-319-932-2356/1.webp",
+    images: ["/product-media/transmission/ats-allison-conversion-stage-3-transmission-319-932-2356/1.webp"],
+    description: `ATS Diesel Allison conversion kit with a built Stage 3 Allison transmission, replacing the 68RFE in the 2010–2012 Ram 6.7L Cummins 2WD.
+
+Sometimes the factory 68RFE behind a Cummins simply is not enough, and no amount of rebuilding a weak design fixes a weak design.
+
+The Allison is the alternative — a transmission with a long reputation for strength and durability behind heavy diesels. Putting one behind a Cummins used to be a serious fabrication project.
+
+ATS have made it a kit: everything needed to swap the 68RFE for a built Stage 3 Allison, engineered as a package rather than assembled from parts.
+
+This is the 2WD version for the 2010–2012 Ram 6.7L Cummins. Drivetrain and model year both change the part number.
+
+Specifications
+
+Manufacturer: ATS Diesel Performance
+Conversion: 68RFE to Allison
+Build: Stage 3 Allison
+Drivetrain: 2WD
+Supplied as: Complete conversion kit
+Application: 2010–2012 Ram 6.7L Cummins
+Part number: 319-932-2356
+
+Highlights
+
+Built Stage 3 Allison transmission
+Replaces the factory 68RFE
+Complete conversion kit
+2WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3178,
+    createdAt: 1789430400000,
+    name: "ATS Allison Conversion Stage 4 Transmission — 2013–2018 Ram 6.7L Cummins 2WD, replaces Aisin AS69RC — 319-943-2392",
+    category: "transmission",
+    brand: "ats",
+    // dpp listing price for ATS-319-943-2392.
+    price: 14444.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "319-943-2392",
+    fitment: "2013–2018 Ram 6.7L Cummins. 2WD. Replaces the factory Aisin AS69RC transmission.",
+    drivetrain: "2WD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ats-allison-conversion-stage-4-transmission-13-18-ram-67l-cummins-aisin-as68rc-2wd",
+    thumbnail: "/product-media/transmission/ats-allison-conversion-stage-4-transmission-319-943-2392/1.webp",
+    images: ["/product-media/transmission/ats-allison-conversion-stage-4-transmission-319-943-2392/1.webp"],
+    description: `ATS Diesel Allison conversion kit with a built Stage 4 Allison transmission, replacing the Aisin AS69RC in the 2013–2018 Ram 6.7L Cummins 2WD.
+
+Sometimes the factory Aisin AS69RC behind a Cummins simply is not enough, and no amount of rebuilding a weak design fixes a weak design.
+
+The Allison is the alternative — a transmission with a long reputation for strength and durability behind heavy diesels. Putting one behind a Cummins used to be a serious fabrication project.
+
+ATS have made it a kit: everything needed to swap the Aisin AS69RC for a built Stage 4 Allison, engineered as a package rather than assembled from parts.
+
+This is the 2WD version for the 2013–2018 Ram 6.7L Cummins. Drivetrain and model year both change the part number.
+
+Specifications
+
+Manufacturer: ATS Diesel Performance
+Conversion: Aisin AS69RC to Allison
+Build: Stage 4 Allison
+Drivetrain: 2WD
+Supplied as: Complete conversion kit
+Application: 2013–2018 Ram 6.7L Cummins
+Part number: 319-943-2392
+
+Highlights
+
+Built Stage 4 Allison transmission
+Replaces the factory Aisin AS69RC
+Complete conversion kit
+2WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3179,
+    createdAt: 1789430400000,
+    name: "ATS Allison Conversion Stage 5 Transmission — 2019–2022 Ram 6.7L Cummins 2WD, replaces Aisin AS69RC — 319-953-2464",
+    category: "transmission",
+    brand: "ats",
+    // dpp listing price for ATS-319-953-2464.
+    price: 16304.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "319-953-2464",
+    fitment: "2019–2022 Ram 6.7L Cummins. 2WD. Replaces the factory Aisin AS69RC transmission.",
+    drivetrain: "2WD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ats-allison-conversion-stage-5-transmission-19-22-ram-67l-cummins-aisin-as68rc-2wd",
+    thumbnail: "/product-media/transmission/ats-allison-conversion-stage-5-transmission-319-953-2464/1.webp",
+    images: ["/product-media/transmission/ats-allison-conversion-stage-5-transmission-319-953-2464/1.webp"],
+    description: `ATS Diesel Allison conversion kit with a built Stage 5 Allison transmission, replacing the Aisin AS69RC in the 2019–2022 Ram 6.7L Cummins 2WD.
+
+Sometimes the factory Aisin AS69RC behind a Cummins simply is not enough, and no amount of rebuilding a weak design fixes a weak design.
+
+The Allison is the alternative — a transmission with a long reputation for strength and durability behind heavy diesels. Putting one behind a Cummins used to be a serious fabrication project.
+
+ATS have made it a kit: everything needed to swap the Aisin AS69RC for a built Stage 5 Allison, engineered as a package rather than assembled from parts.
+
+This is the 2WD version for the 2019–2022 Ram 6.7L Cummins. Drivetrain and model year both change the part number.
+
+Specifications
+
+Manufacturer: ATS Diesel Performance
+Conversion: Aisin AS69RC to Allison
+Build: Stage 5 Allison
+Drivetrain: 2WD
+Supplied as: Complete conversion kit
+Application: 2019–2022 Ram 6.7L Cummins
+Part number: 319-953-2464
+
+Highlights
+
+Built Stage 5 Allison transmission
+Replaces the factory Aisin AS69RC
+Complete conversion kit
+2WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3180,
+    createdAt: 1789430400000,
+    name: "ATS Allison Conversion Stage 5 Transmission — 2019–2022 Ram 6.7L Cummins 4WD, replaces Aisin AS69RC — 319-955-2464",
+    category: "transmission",
+    brand: "ats",
+    // dpp listing price for ATS-319-955-2464.
+    price: 16304.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "319-955-2464",
+    fitment: "2019–2022 Ram 6.7L Cummins. 4WD. Replaces the factory Aisin AS69RC transmission.",
+    drivetrain: "4WD",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ats-allison-conversion-stage-5-transmission-19-22-ram-67l-cummins-aisin-as68rc-4wd",
+    thumbnail: "/product-media/transmission/ats-allison-conversion-stage-5-transmission-319-955-2464/1.webp",
+    images: ["/product-media/transmission/ats-allison-conversion-stage-5-transmission-319-955-2464/1.webp"],
+    description: `ATS Diesel Allison conversion kit with a built Stage 5 Allison transmission, replacing the Aisin AS69RC in the 2019–2022 Ram 6.7L Cummins 4WD.
+
+Sometimes the factory Aisin AS69RC behind a Cummins simply is not enough, and no amount of rebuilding a weak design fixes a weak design.
+
+The Allison is the alternative — a transmission with a long reputation for strength and durability behind heavy diesels. Putting one behind a Cummins used to be a serious fabrication project.
+
+ATS have made it a kit: everything needed to swap the Aisin AS69RC for a built Stage 5 Allison, engineered as a package rather than assembled from parts.
+
+This is the 4WD version for the 2019–2022 Ram 6.7L Cummins. Drivetrain and model year both change the part number.
+
+Specifications
+
+Manufacturer: ATS Diesel Performance
+Conversion: Aisin AS69RC to Allison
+Build: Stage 5 Allison
+Drivetrain: 4WD
+Supplied as: Complete conversion kit
+Application: 2019–2022 Ram 6.7L Cummins
+Part number: 319-955-2464
+
+Highlights
+
+Built Stage 5 Allison transmission
+Replaces the factory Aisin AS69RC
+Complete conversion kit
+4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3181,
+    createdAt: 1789430400000,
+    name: "ATS Diesel Allison Transmission Pan, +5 Quarts — 2001–2016 GM 6.6L Duramax Allison — 3019004248",
+    category: "transmission",
+    brand: "ats",
+    // dpp listing price for ATS-3019004248.
+    price: 384.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3019004248",
+    fitment: "2001–2016 Chevrolet and GMC 6.6L Duramax with the Allison transmission. Direct replacement for the factory pan.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ats-trans-pan-5-qts-01-16-duramax",
+    thumbnail: "/product-media/transmission/ats-transmission-pan-plus-5-quarts-3019004248/1.webp",
+    images: ["/product-media/transmission/ats-transmission-pan-plus-5-quarts-3019004248/1.webp"],
+    description: `ATS Diesel finned aluminium Allison transmission pan holding five quarts more than stock, with magnetic drain plug and temperature sensor boss.
+
+Keeping an Allison cool is the single most effective thing you can do to make it last. Heat is what breaks down the fluid, and degraded fluid is what burns clutches.
+
+This ATS pan is finned aluminium and holds an extra five quarts over the factory pan — more fluid, more surface area, and more thermal mass to absorb a heavy pull.
+
+It is a direct replacement for the factory pan, with a magnetic drain plug and a pre-tapped boss for a transmission temperature sensor probe.
+
+Specifications
+
+Manufacturer: ATS Diesel Performance
+Transmission: Allison
+Material: Finned aluminium
+Extra capacity: 5 quarts over stock
+Drain plug: Magnetic
+Sensor: Pre-tapped for a temperature probe
+Application: 2001–2016 GM 6.6L Duramax
+Part number: 3019004248
+
+Highlights
+
+Five extra quarts of fluid
+Finned aluminium for heat dissipation
+Magnetic drain plug
+Pre-tapped for a temperature sensor
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3182,
+    createdAt: 1789430400000,
+    name: "Merchant Automotive Allison Transmission Rear Housing Support — 2011–2019 GM 6.6L Duramax — 10357",
+    category: "transmission",
+    brand: "merchant-automotive",
+    // dpp listing price for MA-10357.
+    price: 149.63,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "10357",
+    fitment: "2011–2019 Chevrolet and GMC 6.6L Duramax with the Allison transmission.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/merchant-trans-rear-housing-11-19-gm",
+    thumbnail: "/product-media/transmission/merchant-automotive-transmission-rear-housing-support-10357/1.webp",
+    images: ["/product-media/transmission/merchant-automotive-transmission-rear-housing-support-10357/1.webp"],
+    description: `Merchant Automotive rear housing support for the Allison transmission in the 2011–2019 GM 6.6L Duramax.
+
+A vibration as minor as a worn U-joint can crack the rear housing of an Allison transmission. It is a disproportionate failure — a cheap part upstream destroying an expensive one downstream.
+
+Merchant Automotive developed this support specifically to prevent it. It is an inexpensive piece of insurance against a repair that is anything but.
+
+It is worth fitting at the same time as any driveline work, when the area is already accessible.
+
+Specifications
+
+Manufacturer: Merchant Automotive
+Part: Transmission rear housing support
+Transmission: Allison
+Prevents: Rear housing cracking from driveline vibration
+Application: 2011–2019 GM 6.6L Duramax
+Part number: 10357
+
+Highlights
+
+Protects the Allison rear housing
+Guards against driveline vibration damage
+Inexpensive insurance
+Merchant Automotive
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3183,
+    createdAt: 1789430400000,
+    name: "Valair NV5600 Spring Hub Dual Disc Clutch, Ceramic, Standard floater plate — 2000–2005 Dodge Ram 5.9L Cummins — NMU70NV56DDSN",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-NMU70NV56DDSN.
+    price: 1166.97,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "NMU70NV56DDSN",
+    fitment: "2000–2005 Dodge Ram 5.9L Cummins with the NV5600 manual gearbox.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-spring-hub-clutch-00-05-cummins",
+    thumbnail: "/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-nmu70nv56ddsn/1.webp",
+    images: ["/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-nmu70nv56ddsn/1.webp"],
+    description: `Valair NV5600 spring hub dual disc clutch, ceramic surfacing rated to 650 hp, with the standard floater plate.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the ceramic version, rated to 650 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV5600
+Type: Spring hub dual disc
+Surfacing: Ceramic/ceramic
+Rating: 650 hp
+Floater plate: Standard floater plate
+Application: 2000–2005 Dodge Ram 5.9L Cummins
+Part number: NMU70NV56DDSN
+
+Highlights
+
+Ceramic surfacing, rated to 650 hp
+Spring hub dual disc
+Standard floater plate
+For the NV5600
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3184,
+    createdAt: 1789430400000,
+    name: "Valair NV5600 Spring Hub Dual Disc Clutch, Ceramic, Quiet floater plate with spring strap — 2000–2005 Dodge Ram 5.9L Cummins — QNV56DDSN",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-QNV56DDSN.
+    price: 1412.28,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "QNV56DDSN",
+    fitment: "2000–2005 Dodge Ram 5.9L Cummins with the NV5600 manual gearbox.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-spring-hub-clutch-00-05-cummins",
+    thumbnail: "/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-qnv56ddsn/1.webp",
+    images: ["/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-qnv56ddsn/1.webp"],
+    description: `Valair NV5600 spring hub dual disc clutch, ceramic surfacing rated to 650 hp, with the quiet floater plate with spring strap.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the ceramic version, rated to 650 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV5600
+Type: Spring hub dual disc
+Surfacing: Ceramic/ceramic
+Rating: 650 hp
+Floater plate: Quiet floater plate with spring strap
+Application: 2000–2005 Dodge Ram 5.9L Cummins
+Part number: QNV56DDSN
+
+Highlights
+
+Ceramic surfacing, rated to 650 hp
+Spring hub dual disc
+Quiet floater plate with spring strap
+For the NV5600
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3185,
+    createdAt: 1789430400000,
+    name: "Valair NV5600 Spring Hub Dual Disc Clutch, Organic, Standard floater plate — 2000–2005 Dodge Ram 5.9L Cummins — NMU70NV56DDSN-ORG",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-NMU70NV56DDSN-ORG.
+    price: 1166.67,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "NMU70NV56DDSN-ORG",
+    fitment: "2000–2005 Dodge Ram 5.9L Cummins with the NV5600 manual gearbox.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-spring-hub-clutch-00-05-cummins",
+    thumbnail: "/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-nmu70nv56ddsn-org/1.webp",
+    images: ["/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-nmu70nv56ddsn-org/1.webp"],
+    description: `Valair NV5600 spring hub dual disc clutch, organic surfacing rated to 550 hp, with the standard floater plate.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the organic version, rated to 550 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV5600
+Type: Spring hub dual disc
+Surfacing: Organic/organic
+Rating: 550 hp
+Floater plate: Standard floater plate
+Application: 2000–2005 Dodge Ram 5.9L Cummins
+Part number: NMU70NV56DDSN-ORG
+
+Highlights
+
+Organic surfacing, rated to 550 hp
+Spring hub dual disc
+Standard floater plate
+For the NV5600
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3186,
+    createdAt: 1789430400000,
+    name: "Valair NV5600 Spring Hub Dual Disc Clutch, Organic, Quiet floater plate with spring strap — 2000–2005 Dodge Ram 5.9L Cummins — QNV56DDSN-ORG",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-QNV56DDSN-ORG.
+    price: 1412.28,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "QNV56DDSN-ORG",
+    fitment: "2000–2005 Dodge Ram 5.9L Cummins with the NV5600 manual gearbox.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-spring-hub-clutch-00-05-cummins",
+    thumbnail: "/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-qnv56ddsn-org/1.webp",
+    images: ["/product-media/transmission/valair-nv5600-spring-hub-dual-disc-clutch-qnv56ddsn-org/1.webp"],
+    description: `Valair NV5600 spring hub dual disc clutch, organic surfacing rated to 550 hp, with the quiet floater plate with spring strap.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the organic version, rated to 550 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV5600
+Type: Spring hub dual disc
+Surfacing: Organic/organic
+Rating: 550 hp
+Floater plate: Quiet floater plate with spring strap
+Application: 2000–2005 Dodge Ram 5.9L Cummins
+Part number: QNV56DDSN-ORG
+
+Highlights
+
+Organic surfacing, rated to 550 hp
+Spring hub dual disc
+Quiet floater plate with spring strap
+For the NV5600
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3187,
+    createdAt: 1789430400000,
+    name: "Valair NV4500 Spring Hub Dual Disc Clutch, Ceramic, Standard floater plate — 1994–2003 Dodge Ram 5.9L Cummins — NMU70NV45DDSN",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-NMU70NV45DDSN.
+    price: 1240.35,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "NMU70NV45DDSN",
+    fitment: "1994–2003 Dodge Ram 5.9L Cummins with the NV4500 manual gearbox. This kit requires a 1.375 in input shaft (Valair part VA1.375).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-clutch-dual-disc-94-03-cummins",
+    thumbnail: "/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-nmu70nv45ddsn/1.webp",
+    images: ["/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-nmu70nv45ddsn/1.webp"],
+    description: `Valair NV4500 spring hub dual disc clutch, ceramic surfacing rated to 650 hp, with the standard floater plate.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the ceramic version, rated to 650 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+This kit requires a 1.375 in input shaft (Valair part VA1.375). The factory 1.25 in shaft will not work, so if you do not already have one it has to be fitted at the same time. Valair keep the shaft optional because many owners already have one.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV4500
+Type: Spring hub dual disc
+Surfacing: Ceramic/ceramic
+Rating: 650 hp
+Floater plate: Standard floater plate
+Application: 1994–2003 Dodge Ram 5.9L Cummins
+Part number: NMU70NV45DDSN
+
+Highlights
+
+Ceramic surfacing, rated to 650 hp
+Spring hub dual disc
+Standard floater plate
+For the NV4500
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3188,
+    createdAt: 1789430400000,
+    name: "Valair NV4500 Spring Hub Dual Disc Clutch, Ceramic, Quiet floater plate with spring strap — 1994–2003 Dodge Ram 5.9L Cummins — QNV45DDSN",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-QNV45DDSN.
+    price: 1485.96,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "QNV45DDSN",
+    fitment: "1994–2003 Dodge Ram 5.9L Cummins with the NV4500 manual gearbox. This kit requires a 1.375 in input shaft (Valair part VA1.375).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-clutch-dual-disc-94-03-cummins",
+    thumbnail: "/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-qnv45ddsn/1.webp",
+    images: ["/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-qnv45ddsn/1.webp"],
+    description: `Valair NV4500 spring hub dual disc clutch, ceramic surfacing rated to 650 hp, with the quiet floater plate with spring strap.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the ceramic version, rated to 650 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+This kit requires a 1.375 in input shaft (Valair part VA1.375). The factory 1.25 in shaft will not work, so if you do not already have one it has to be fitted at the same time.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV4500
+Type: Spring hub dual disc
+Surfacing: Ceramic/ceramic
+Rating: 650 hp
+Floater plate: Quiet floater plate with spring strap
+Application: 1994–2003 Dodge Ram 5.9L Cummins
+Part number: QNV45DDSN
+
+Highlights
+
+Ceramic surfacing, rated to 650 hp
+Spring hub dual disc
+Quiet floater plate with spring strap
+For the NV4500
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3189,
+    createdAt: 1789430400000,
+    name: "Valair NV4500 Spring Hub Dual Disc Clutch, Organic, Standard floater plate — 1994–2003 Dodge Ram 5.9L Cummins — NMU70NV45DDSN-ORG",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-NMU70NV45DDSN-ORG.
+    price: 1240.35,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "NMU70NV45DDSN-ORG",
+    fitment: "1994–2003 Dodge Ram 5.9L Cummins with the NV4500 manual gearbox. This kit requires a 1.375 in input shaft (Valair part VA1.375).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-clutch-dual-disc-94-03-cummins",
+    thumbnail: "/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-nmu70nv45ddsn-org/1.webp",
+    images: ["/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-nmu70nv45ddsn-org/1.webp"],
+    description: `Valair NV4500 spring hub dual disc clutch, organic surfacing rated to 550 hp, with the standard floater plate.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the organic version, rated to 550 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+This kit requires a 1.375 in input shaft (Valair part VA1.375). The factory 1.25 in shaft will not work, so if you do not already have one it has to be fitted at the same time.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV4500
+Type: Spring hub dual disc
+Surfacing: Organic/organic
+Rating: 550 hp
+Floater plate: Standard floater plate
+Application: 1994–2003 Dodge Ram 5.9L Cummins
+Part number: NMU70NV45DDSN-ORG
+
+Highlights
+
+Organic surfacing, rated to 550 hp
+Spring hub dual disc
+Standard floater plate
+For the NV4500
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3190,
+    createdAt: 1789430400000,
+    name: "Valair NV4500 Spring Hub Dual Disc Clutch, Organic, Quiet floater plate with spring strap — 1994–2003 Dodge Ram 5.9L Cummins — QNV45DDSN-ORG",
+    category: "transmission",
+    brand: "valair",
+    // dpp listing price for VAL-QNV45DDSN-ORG.
+    price: 1485.96,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "QNV45DDSN-ORG",
+    fitment: "1994–2003 Dodge Ram 5.9L Cummins with the NV4500 manual gearbox. This kit requires a 1.375 in input shaft (Valair part VA1.375).",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/valair-clutch-dual-disc-94-03-cummins",
+    thumbnail: "/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-qnv45ddsn-org/1.webp",
+    images: ["/product-media/transmission/valair-nv4500-spring-hub-dual-disc-clutch-qnv45ddsn-org/1.webp"],
+    description: `Valair NV4500 spring hub dual disc clutch, organic surfacing rated to 550 hp, with the quiet floater plate with spring strap.
+
+A dual disc clutch is how you hold real torque without giving up drivability — two friction surfaces sharing the load instead of one being asked to do everything.
+
+Valair offer two friction surfaces. Organic/organic is rated to 550 hp — the smoothest engagement, and the right choice for a stock or mildly modified truck pulling heavy weight. Ceramic/ceramic is rated to 650 hp, for a modified truck that needs the holding power and the quicker shift a diaphragm clutch gives.
+
+This one is the organic version, rated to 550 hp.
+
+The other choice is the floater plate. The standard plate is the design used across the industry, and some trucks develop floater plate rattle with it; Valair's quiet version adds a spring strap specifically to deal with that.
+
+This kit requires a 1.375 in input shaft (Valair part VA1.375). The factory 1.25 in shaft will not work, so if you do not already have one it has to be fitted at the same time.
+
+Specifications
+
+Manufacturer: Valair Clutch
+Gearbox: NV4500
+Type: Spring hub dual disc
+Surfacing: Organic/organic
+Rating: 550 hp
+Floater plate: Quiet floater plate with spring strap
+Application: 1994–2003 Dodge Ram 5.9L Cummins
+Part number: QNV45DDSN-ORG
+
+Highlights
+
+Organic surfacing, rated to 550 hp
+Spring hub dual disc
+Quiet floater plate with spring strap
+For the NV4500
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3191,
+    createdAt: 1789430400000,
+    name: "South Bend Street Dual Disc Clutch, 650 RWHP — 2000–2005 Dodge Ram 5.9L Cummins NV5600 — SDD3250-6",
+    category: "transmission",
+    brand: "south-bend-clutch",
+    // dpp listing price for SBC-SDD3250-6.
+    price: 1392.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SDD3250-6",
+    fitment: "2000–2005 Dodge Ram 5.9L Cummins with the NV5600 six-speed manual gearbox.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/southbend-clutch-00-05-cummins-nv5600",
+    thumbnail: "/product-media/transmission/south-bend-street-dual-disc-clutch-sdd3250-6/1.webp",
+    images: ["/product-media/transmission/south-bend-street-dual-disc-clutch-sdd3250-6/1.webp"],
+    description: `South Bend Street Dual Disc clutch rated to 650 RWHP for the 2000–2005 Dodge Ram 5.9L Cummins with the NV5600.
+
+Dual disc clutches usually make you choose: holding power or a pedal you can live with in traffic. The Street Dual Disc is South Bend's attempt to avoid that trade.
+
+It uses 12 ceramic buttons per side facing the centre plate, and organic buttons facing the pressure plate and flywheel. The ceramic raises holding power and the temperature the intermediate plate will take; the organic keeps engagement smooth.
+
+It is rated to 650 RWHP and it will still tow — which is the point for an owner who daily drives the truck, works it, and occasionally plays with horsepower.
+
+Specifications
+
+Manufacturer: South Bend Clutch
+Model: Street Dual Disc
+Rating: 650 RWHP
+Friction: 12 ceramic buttons per side to the centre plate, organic to pressure plate and flywheel
+Gearbox: NV5600 six-speed
+Application: 2000–2005 Dodge Ram 5.9L Cummins
+Part number: SDD3250-6
+
+Highlights
+
+Rated to 650 RWHP
+Ceramic and organic buttons combined
+Easy engagement — still tows
+For the NV5600
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3192,
+    createdAt: 1789430400000,
+    name: "South Bend Dyna Max 13 in Heavy Duty Organic Clutch Kit — 1989–2004 Dodge Ram 5.9L Cummins, Getrag / NV4500 5-Speed — 13125-OK-HD",
+    category: "transmission",
+    brand: "south-bend-clutch",
+    // dpp listing price for SBC-13125-OK-HD.
+    price: 986.46,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "13125-OK-HD",
+    fitment: "1989–2004 Dodge Ram 5.9L Cummins with the five-speed Getrag or NV4500 manual gearbox.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/south-bend-nv4500-88-04-cummins",
+    thumbnail: "/product-media/transmission/south-bend-13-inch-heavy-duty-organic-clutch-kit-13125-ok-hd/1.webp",
+    images: ["/product-media/transmission/south-bend-13-inch-heavy-duty-organic-clutch-kit-13125-ok-hd/1.webp"],
+    description: `South Bend Dyna Max 13 in heavy-duty organic clutch kit with 3 in premium lining for the 1989–2004 Dodge Ram 5.9L Cummins five-speed.
+
+Premature disc failure on these trucks is almost always the same story: more power than the clutch was specified for, or more weight, or both.
+
+This kit uses a performance organic friction material with a 3 in wide premium lining, and the pressure plate is modified for higher plate load — more clamping force without losing engagement quality.
+
+South Bend designed it specifically to cure that premature disc failure, rather than to be a like-for-like replacement of the part that failed.
+
+Specifications
+
+Manufacturer: South Bend Clutch
+Model: Dyna Max 13 Heavy Duty
+Friction: Performance organic, 3 in wide premium lining
+Pressure plate: Modified for higher plate load
+Gearbox: Getrag or NV4500 five-speed
+Application: 1989–2004 Dodge Ram 5.9L Cummins
+Part number: 13125-OK-HD
+
+Highlights
+
+3 in wide premium organic lining
+Higher plate load than stock
+Cures premature disc failure
+Smooth engagement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3193,
+    createdAt: 1789430400000,
+    name: "BulletProof Diesel OEM-Style Oil Cooler Remote Mount Kit — 2003–2007 Ford 6.0L Power Stroke — VK688-100",
+    category: "engine",
+    brand: "bulletproof-diesel",
+    // dpp listing price for BPD-VK688-100.
+    price: 1825,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "VK688-100",
+    fitment: "2003–2007 Ford 6.0L Power Stroke.",
+    included: ["Billet aluminium oil transfer block","Braided hoses","Factory-style oil cooler","Mounting hardware"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bulletproof-oem-style-oil-cooler-remote-mount-kit-03-07-ford-60l-powerstroke",
+    thumbnail: "/product-media/engine/bulletproof-oem-style-oil-cooler-remote-mount-kit-vk688-100/1.webp",
+    images: ["/product-media/engine/bulletproof-oem-style-oil-cooler-remote-mount-kit-vk688-100/1.webp"],
+    description: `BulletProof Diesel remote-mount oil cooler relocation kit with billet transfer block and cooler for the 2003–2007 Ford 6.0L Power Stroke.
+
+The 6.0L Power Stroke's oil cooler sits in the engine valley, where it is surrounded by heat, and it plugs with soot over time. A restricted cooler drives oil temperature up and starves the EGR cooler downstream of it — and getting to the thing means removing the intake manifold and the turbo.
+
+This kit moves the problem rather than replacing it in place. A billet aluminium oil transfer block takes the oil out of the valley through braided hoses to a factory-style cooler mounted behind the passenger battery.
+
+Out of the valley means cooler oil and far easier servicing — the next time the cooler needs attention, the intake manifold stays where it is.
+
+Specifications
+
+Manufacturer: BulletProof Diesel
+Kit: OEM-style oil cooler remote mount
+Transfer block: Billet aluminium
+Lines: Braided hoses
+Cooler location: Behind the passenger battery
+Engine: 6.0L Power Stroke
+Part number: VK688-100
+
+Highlights
+
+Relocates the cooler out of the engine valley
+Billet aluminium transfer block
+Serviceable without pulling the intake
+Cooler oil temperatures
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3194,
+    createdAt: 1789430400000,
+    name: "Ford Factory Upgraded Engine Oil Cooler — 2003–2007 Ford 6.0L Power Stroke — 3C3Z-6A810-A",
+    category: "engine",
+    brand: "ford",
+    // dpp listing price for FORD-3C3Z-6A810-A.
+    price: 429,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3C3Z-6A810-A",
+    fitment: "2003–2007 Ford 6.0L Power Stroke, truck and van.",
+    included: ["Engine oil cooler","Gaskets","Replacement screen"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/factory-oil-cooler-60l-powerstroke",
+    thumbnail: "/product-media/engine/ford-factory-upgraded-oil-cooler-3c3z-6a810-a/1.webp",
+    images: ["/product-media/engine/ford-factory-upgraded-oil-cooler-3c3z-6a810-a/1.webp"],
+    description: `Ford's own revised engine oil cooler for the 6.0L Power Stroke, supplied complete with gaskets and replacement screen.
+
+The 6.0L Power Stroke's oil cooler sits in the engine valley, where it is surrounded by heat, and it plugs with soot over time. A restricted cooler drives oil temperature up and starves the EGR cooler downstream of it — and getting to the thing means removing the intake manifold and the turbo.
+
+This is Ford's own answer: the revised design that replaced the failure-prone original, and a more effective cooler than the part that came out.
+
+It is a direct replacement and it fits both the truck and the van applications. The kit is complete with gaskets and a replacement screen.
+
+Specifications
+
+Manufacturer: Ford Motor Company
+Type: Genuine Ford engine oil cooler, revised design
+Included: Gaskets and replacement screen
+Fits: Truck and van applications
+Engine: 6.0L Power Stroke
+Part number: 3C3Z-6A810-A
+
+Highlights
+
+Genuine Ford revised design
+More effective than the original cooler
+Gaskets and screen included
+Truck and van
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3195,
+    createdAt: 1789430400000,
+    name: "Sinister Diesel Engine Oil Cooler — 2003–2007 Ford 6.0L Power Stroke — SD-OC-6.0",
+    category: "engine",
+    brand: "sinister-diesel",
+    // dpp listing price for SD-OC-6.0.
+    price: 399.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SD-OC-6.0",
+    fitment: "2003–2007 Ford 6.0L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/sinister-diesel-oil-cooler-03-07-ford",
+    thumbnail: "/product-media/engine/sinister-diesel-oil-cooler-sd-oc-6-0/1.webp",
+    images: ["/product-media/engine/sinister-diesel-oil-cooler-sd-oc-6-0/1.webp"],
+    description: `Sinister Diesel replacement engine oil cooler with increased flow for the 2003–2007 Ford 6.0L Power Stroke.
+
+The 6.0L Power Stroke's oil cooler sits in the engine valley, where it is surrounded by heat, and it plugs with soot over time. A restricted cooler drives oil temperature up and starves the EGR cooler downstream of it — and getting to the thing means removing the intake manifold and the turbo.
+
+Sinister Diesel's replacement allows increased oil flow and more efficient cooling than the stock unit — the two things that decide whether the cooler keeps up with the engine or slowly loses to it.
+
+On an engine where the oil cooler is a known service item, fitting something better than the original is the sensible use of the labour.
+
+Specifications
+
+Manufacturer: Sinister Diesel
+Type: Replacement engine oil cooler
+Improvement: Increased oil flow and cooling efficiency over stock
+Engine: 6.0L Power Stroke
+Years: 2003–2007
+Part number: SD-OC-6.0
+
+Highlights
+
+Increased oil flow over stock
+More efficient cooling
+Direct replacement
+Sinister Diesel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3196,
+    createdAt: 1789430400000,
+    name: "DieselSite Engine Oil Cooler Kit — 2003–2007 Ford 6.0L Power Stroke — OC6",
+    category: "engine",
+    brand: "dieselsite",
+    // dpp listing price for DS-OC6.
+    price: 159,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "OC6",
+    fitment: "2003–2007 Ford 6.0L Power Stroke.",
+    included: ["Engine oil cooler","All O-rings and gaskets","Stainless steel reservoir screen"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-dieselsite-oil-cooler-kit-03-07-ford-60l-powerstroke",
+    thumbnail: "/product-media/engine/dieselsite-oil-cooler-kit-oc6/1.webp",
+    images: ["/product-media/engine/dieselsite-oil-cooler-kit-oc6/1.webp"],
+    description: `DieselSite redesigned engine oil cooler kit with extra plates, O-rings, gaskets and a stainless steel reservoir screen for the 2003–2007 Ford 6.0L Power Stroke.
+
+The 6.0L Power Stroke's oil cooler sits in the engine valley, where it is surrounded by heat, and it plugs with soot over time. A restricted cooler drives oil temperature up and starves the EGR cooler downstream of it — and getting to the thing means removing the intake manifold and the turbo.
+
+DieselSite redesigned this cooler rather than copying the original. It carries more plates than the OE unit with properly sized passages, so there is more area for heat exchange and less to restrict flow through it.
+
+The kit includes all the O-rings and gaskets the job needs, along with a stainless steel reservoir screen.
+
+Specifications
+
+Manufacturer: DieselSite
+Type: Redesigned engine oil cooler kit
+Plates: More than the OE cooler
+Passages: Sized to maximise heat exchange
+Included: All O-rings and gaskets, stainless steel reservoir screen
+Engine: 6.0L Power Stroke
+Part number: OC6
+
+Highlights
+
+More plates than the OE cooler
+Properly sized passages
+All O-rings and gaskets included
+Stainless steel reservoir screen
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3197,
+    createdAt: 1789430400000,
+    name: "aFe BladeRunner Replacement Engine Oil Cooler — 2003–2007 Ford 6.0L Power Stroke — 46-80001",
+    category: "engine",
+    brand: "afe",
+    // dpp listing price for AFE-46-80001.
+    price: 376,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-80001",
+    fitment: "2003–2007 Ford 6.0L Power Stroke.",
+    included: ["Engine oil cooler","All necessary hardware","Gaskets"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18391-afe-46-80001-bladerunner-replacement-oil-cooler-03-07-60l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/engine/afe-bladerunner-replacement-oil-cooler-46-80001/1.webp",
+    images: ["/product-media/engine/afe-bladerunner-replacement-oil-cooler-46-80001/1.webp"],
+    description: `aFe BladeRunner brand-new aluminium replacement engine oil cooler with all hardware and gaskets for the 2003–2007 Ford 6.0L Power Stroke.
+
+The 6.0L Power Stroke's oil cooler sits in the engine valley, where it is surrounded by heat, and it plugs with soot over time. A restricted cooler drives oil temperature up and starves the EGR cooler downstream of it — and getting to the thing means removing the intake manifold and the turbo.
+
+This is a brand-new unit rather than a remanufactured one, built in new aluminium, and it comes with all the hardware and gaskets needed to remove the old cooler and fit this one.
+
+Having the gaskets in the box matters on this job: it is not one you want to stop halfway through.
+
+Specifications
+
+Manufacturer: aFe Power
+Series: BladeRunner
+Condition: 100% new, not remanufactured
+Material: New aluminium
+Included: All necessary hardware and gaskets
+Engine: 6.0L Power Stroke
+Part number: 46-80001
+
+Highlights
+
+Brand new, not remanufactured
+All hardware and gaskets included
+New aluminium construction
+aFe BladeRunner
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3198,
+    createdAt: 1789430400000,
+    name: "Smeding Diesel Direct-Replacement Intercooler — 1994–2002 Dodge Ram 5.9L Cummins — 9402IC",
+    category: "engine",
+    brand: "smeding-diesel",
+    // dpp listing price for SME-9402IC.
+    price: 988,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "9402IC",
+    fitment: "1994–2002 Dodge Ram 5.9L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-smeding-diesel-59l-intercooler-upgrade",
+    thumbnail: "/product-media/engine/smeding-diesel-intercooler-9402ic/1.webp",
+    images: ["/product-media/engine/smeding-diesel-intercooler-9402ic/1.webp"],
+    description: `Smeding Diesel thicker-core direct-replacement intercooler for the 1994–2002 Dodge Ram 5.9L Cummins.
+
+An intercooler that cannot keep up costs you three things at once: power, exhaust gas temperature margin, and turbocharger life.
+
+Smeding's direct replacement runs a thicker core than the factory unit. They put the drop in intake air temperature at up to 25%, which takes generated exhaust gas temperature down with it.
+
+Lower charge temperature is also easier on the turbocharger, which is the part quietly paying for every hot mile.
+
+Specifications
+
+Manufacturer: Smeding Diesel
+Type: Direct-replacement intercooler
+Core: Thicker than factory
+Intake air temperature: Down by up to 25%
+Engine: 5.9L Cummins
+Years: 1994–2002
+Part number: 9402IC
+
+Highlights
+
+Thicker core than factory
+Intake air temperature down by up to 25%
+Lower exhaust gas temperature
+Longer turbocharger life
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3199,
+    createdAt: 1789430400000,
+    name: "Ford OE Replacement Intercooler — 2011–2016 Ford 6.7L Power Stroke — BC3Z-6K775-B",
+    category: "engine",
+    brand: "ford",
+    // dpp listing price for FORD-BC3Z6K775B.
+    price: 720.35,
+    stock: true,
+    condition: "brand-new",
+    warranty: "2-Year Ford Factory Warranty",
+    location: "our supplier network",
+    partNumber: "BC3Z6K775B",
+    fitment: "2011–2016 Ford 6.7L Power Stroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ford-oe-intercooler-67l-ford",
+    thumbnail: "/product-media/engine/ford-oe-replacement-intercooler-bc3z6k775b/1.webp",
+    images: ["/product-media/engine/ford-oe-replacement-intercooler-bc3z6k775b/1.webp"],
+    description: `Genuine Ford OE replacement intercooler for the 2011–2016 6.7L Power Stroke, with a two-year factory warranty.
+
+The turbocharger on the 2011–2014 Power Stroke is a known weak point, and it gets weaker as boost goes up. When one fails it usually sends oil into the intercooler, which means the intercooler is being replaced too.
+
+This is the OE replacement direct from Ford — the correct part rather than an equivalent, for a repair where the rest of the system is factory.
+
+It carries a two-year factory-backed warranty, which on a Ford part also covers the labour.
+
+Specifications
+
+Manufacturer: Ford Motor Company
+Type: OE replacement intercooler
+Warranty: Two-year factory backed, including labour
+Engine: 6.7L Power Stroke
+Years: 2011–2016
+Part number: BC3Z-6K775-B
+
+Highlights
+
+Genuine Ford OE part
+Two-year factory warranty covering labour
+Replaces an intercooler oiled by a failed turbo
+2011–2016 6.7L Power Stroke
+
+Warranty
+2-Year Ford Factory Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3200,
+    createdAt: 1789430400000,
+    name: "Driven Diesel Mechanical Fan Clutch Adapter — 2003–2018 Dodge / Ram 5.9L and 6.7L Cummins — GOS-FANHUB",
+    category: "engine",
+    brand: "driven-diesel",
+    // dpp listing price for DD-GOS-FANHUB.
+    price: 199.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "GOS-FANHUB",
+    fitment: "2003–2018 Dodge / Ram 5.9L and 6.7L Cummins. Adapter only — the fan clutch is a separate part.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-20009-driven-diesel-mechanical-fan-clutch-adapter-03-18-59l-67l-dodge-cummins-aspx",
+    thumbnail: "/product-media/engine/driven-diesel-mechanical-fan-clutch-adapter-gos-fanhub/1.webp",
+    images: ["/product-media/engine/driven-diesel-mechanical-fan-clutch-adapter-gos-fanhub/1.webp"],
+    description: `Driven Diesel adapter for converting a common-rail Cummins to a mechanical fan clutch.
+
+The electronically controlled fan clutch on a common-rail Cummins has a poor reputation. When it stops doing its job the first sign is coolant temperature climbing on a hot day with a load on, which is exactly when you need it working.
+
+Converting to a mechanical clutch is not difficult, but it does need the right parts: this adapter, and a fan clutch from an OBS Ford — a 1994–1997 model year — which is the clutch the conversion is designed around.
+
+This is the adapter on its own. Driven Diesel also sell the complete hub assembly, which includes this adapter along with the rest of what the conversion needs.
+
+Specifications
+
+Manufacturer: Driven Diesel
+Part: Mechanical fan clutch adapter
+Supplied: Adapter only
+Requires: A 1994–1997 OBS Ford fan clutch
+Application: 2003–2018 Ram 5.9L and 6.7L Cummins
+Part number: GOS-FANHUB
+
+Highlights
+
+Converts to a mechanical fan clutch
+Adapter only
+Uses a 1994–1997 OBS Ford clutch
+Driven Diesel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3201,
+    createdAt: 1789430400000,
+    name: "Driven Diesel Fan Hub Assembly for Mechanical Clutch — 2003–2018 Dodge / Ram 5.9L and 6.7L Cummins — GOS-ASSY",
+    category: "engine",
+    brand: "driven-diesel",
+    // dpp listing price for DD-GOS-ASSY.
+    price: 699.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "GOS-ASSY",
+    fitment: "2003–2018 Dodge / Ram 5.9L and 6.7L Cummins. Reusing your existing fan blade requires the 6-bolt blade assembly, typically found on 2003–2008 trucks; a 4-bolt blade means the fan blade has to be bought as well.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-driven-diesel-fan-hub-assembly",
+    thumbnail: "/product-media/engine/driven-diesel-fan-hub-assembly-gos-assy/1.webp",
+    images: ["/product-media/engine/driven-diesel-fan-hub-assembly-gos-assy/1.webp"],
+    description: `Driven Diesel complete fan hub assembly for converting a common-rail Cummins to a mechanical fan clutch.
+
+The electronically controlled fan clutch on a common-rail Cummins has a poor reputation. When it stops doing its job the first sign is coolant temperature climbing on a hot day with a load on, which is exactly when you need it working.
+
+Converting to a mechanical clutch is not difficult, but it does need the right parts: this adapter, and a fan clutch from an OBS Ford — a 1994–1997 model year — which is the clutch the conversion is designed around.
+
+This assembly includes the required adapter along with the rest of the hub, so it is the complete answer rather than one piece of it.
+
+One thing to check before ordering: to reuse your existing engine fan blade you need the 6-bolt blade assembly, which is typically only on 2003–2008 trucks. A 4-bolt blade assembly means buying the fan blade too.
+
+Specifications
+
+Manufacturer: Driven Diesel
+Part: Fan hub assembly for mechanical clutch
+Includes: The mechanical fan clutch adapter
+Requires: A 1994–1997 OBS Ford fan clutch
+Fan blade: 6-bolt blade assembly needed to reuse the factory blade
+Application: 2003–2018 Ram 5.9L and 6.7L Cummins
+Part number: GOS-ASSY
+
+Highlights
+
+Complete hub assembly, adapter included
+Converts to a mechanical fan clutch
+Needs a 6-bolt fan blade to reuse yours
+Driven Diesel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3202,
+    createdAt: 1789430400000,
+    name: "Driven Diesel Fan Clutch Accelerator Switch — 2005–2007 Ram 5.9L Manual and 2007.5–2020 Ram 6.7L Cummins — DFCS",
+    category: "electronics",
+    brand: "driven-diesel",
+    // dpp listing price for DD-DFCS.
+    price: 259.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DFCS",
+    fitment: "2005–2007 Dodge Ram 5.9L Cummins with a manual transmission, and 2007.5–2020 Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-driven-diesel-fan-clutch-accelerator-switch-03-07-ram-59l-manual-trans-07-20-ram-5967l-cummins",
+    thumbnail: "/product-media/electronics/driven-diesel-fan-clutch-accelerator-switch-dfcs/1.webp",
+    images: ["/product-media/electronics/driven-diesel-fan-clutch-accelerator-switch-dfcs/1.webp"],
+    description: `Driven Diesel switch that commands more fan speed on demand, for the 2005–2007 Ram 5.9L manual and 2007.5–2020 Ram 6.7L Cummins.
+
+Sometimes you want the fan working before the ECM thinks it needs to — climbing a grade with a trailer on a hot day, or idling down after a hard pull.
+
+This switch gives you that on demand. Enabled, it makes the ECM read a higher engine coolant temperature than the truck actually has, so it commands more fan speed from the clutch. Disabled, the ECM sees the real sensor value and the truck behaves exactly as standard.
+
+It is a driver-controlled addition rather than a permanent change: nothing is altered when it is switched off.
+
+Specifications
+
+Manufacturer: Driven Diesel
+Part: Fan clutch accelerator switch
+Function: Commands more fan speed on demand
+When disabled: ECM reads the true coolant temperature
+Application: 2005–2007 Ram 5.9L manual, 2007.5–2020 Ram 6.7L Cummins
+Part number: DFCS
+
+Highlights
+
+More fan speed on demand
+Returns to standard behaviour when switched off
+Useful towing and cooling down
+Driven Diesel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3203,
+    createdAt: 1789430400000,
+    name: "Sick Diesel Curved LED Grille Light Kit — 2025–2026 Ram 2500 / 3500 — RAM25-BWCL",
+    category: "lighting",
+    brand: "sick-diesel",
+    // dpp listing price for SDG-RAM25-BWCL.
+    price: 187,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "RAM25-BWCL",
+    fitment: "2025–2026 Ram 2500 / 3500, sixth generation. Bolt-on to the factory mounting locations; no trimming or permanent modification.",
+    included: ["Curved LED light bar","Stainless steel mounting hardware","Wiring harness with 2 ft lead"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/2025-2026-ram-2500-3500-6th-gen-led-grille-light-kit-curved-fit-ip67-bolt-on-silver-or-black-anodized-frame",
+    thumbnail: "/product-media/lighting/sick-diesel-led-grille-light-kit-ram25-bwcl/1.webp",
+    images: ["/product-media/lighting/sick-diesel-led-grille-light-kit-ram25-bwcl/1.webp"],
+    description: `Sick Diesel curved IP67 LED grille light bar with wiring harness and stainless mounting hardware for the 2025–2026 Ram 2500 / 3500.
+
+A grille light bar is the shortest route to a truck that reads as deliberate rather than stock — provided it follows the grille rather than being bolted across it.
+
+This bar is shaped to the contours of the sixth-generation Ram grille, so it sits as a one-piece line rather than an add-on. The light is a crisp white, which reads as a daytime running light.
+
+The housing is IP67 rated — sealed against water, dust and road debris — and the LEDs are rated for up to 50,000 hours.
+
+Installation is bolt-on using the factory mounting locations. The wiring harness has a two-foot lead that connects to any 12-volt ignition source, so it can run as a daytime running light or as an accessory light.
+
+Specifications
+
+Manufacturer: Sick Diesel
+Type: Curved LED grille light bar
+Colour: White
+Sealing: IP67 — water, dust and debris
+LED life: Up to 50,000 hours
+Wiring: Harness with 2 ft lead to a 12 V ignition source
+Installation: Bolt-on, factory mounting locations
+Part number: RAM25-BWCL
+
+Highlights
+
+Curved to the sixth-generation Ram grille
+IP67 sealed, 50,000-hour LEDs
+Bolt-on — no trimming
+Wiring harness included
 
 Warranty
 Manufacturer Warranty

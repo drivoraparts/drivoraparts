@@ -58,6 +58,12 @@ export const brands: Brand[] = [
   { slug: "power-driven-diesel", name: "Power Driven Diesel", category: "engine" },
   { slug: "no-limit-fabrication", name: "No Limit Fabrication", category: "engine" },
   { slug: "grizzly", name: "Grizzly", category: "engine" },
+  { slug: "smeding-diesel", name: "Smeding Diesel", category: "engine" },
+  { slug: "ford", name: "Ford", category: "engine" },
+  { slug: "bulletproof-diesel", name: "BulletProof Diesel", category: "engine" },
+  { slug: "sinister-diesel", name: "Sinister Diesel", category: "engine" },
+  { slug: "dieselsite", name: "DieselSite", category: "engine" },
+  { slug: "driven-diesel", name: "Driven Diesel", category: "engine" },
   { slug: "csf", name: "CSF Radiators", category: "engine" },
   { slug: "ppe", name: "PPE Diesel", category: "engine" },
   { slug: "afe", name: "aFe Power", category: "engine" },
@@ -84,6 +90,8 @@ export const brands: Brand[] = [
   { slug: "synapse-auto", name: "Synapse Auto", category: "turbocharger" },
   { slug: "river-city-turbo", name: "River City Turbo", category: "turbocharger" },
   { slug: "power-driven-diesel", name: "Power Driven Diesel", category: "turbocharger" },
+  { slug: "ats", name: "ATS Diesel Performance", category: "turbocharger" },
+  { slug: "afe", name: "aFe Power", category: "turbocharger" },
   { slug: "rotomaster", name: "Rotomaster", category: "turbocharger" },
 
   // Transmission
@@ -117,6 +125,11 @@ export const brands: Brand[] = [
   { slug: "mag-hytec", name: "Mag-Hytec", category: "transmission" },
   { slug: "suncoast", name: "SunCoast Performance", category: "transmission" },
   { slug: "ppe", name: "PPE Diesel", category: "transmission" },
+  { slug: "ats", name: "ATS Diesel Performance", category: "transmission" },
+  { slug: "afe", name: "aFe Power", category: "transmission" },
+  { slug: "valair", name: "Valair Clutch", category: "transmission" },
+  { slug: "south-bend-clutch", name: "South Bend Clutch", category: "transmission" },
+  { slug: "merchant-automotive", name: "Merchant Automotive", category: "transmission" },
   { slug: "cognito", name: "Cognito Motorsports", category: "transmission" },
 
   // Bumpers
@@ -230,12 +243,14 @@ export const brands: Brand[] = [
   { slug: "bosch", name: "Bosch", category: "electronics" },
   { slug: "fleece", name: "Fleece Performance", category: "electronics" },
   { slug: "mechman", name: "Mechman Alternators", category: "electronics" },
+  { slug: "driven-diesel", name: "Driven Diesel", category: "electronics" },
   { slug: "mean-green", name: "Mean Green", category: "electronics" },
   { slug: "powermaster", name: "Powermaster Performance", category: "electronics" },
   { slug: "xdp", name: "XDP", category: "electronics" },
 
   // Lighting
   { slug: "alpharex", name: "AlphaRex", category: "lighting" },
+  { slug: "sick-diesel", name: "Sick Diesel", category: "lighting" },
   { slug: "baja-designs", name: "Baja Designs", category: "lighting" },
   { slug: "diode-dynamics", name: "Diode Dynamics", category: "lighting" },
   { slug: "govee", name: "Govee", category: "lighting" },
