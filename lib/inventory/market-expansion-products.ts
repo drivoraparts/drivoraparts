@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   276 listings added 2026-09-15 from manufacturer and
+   496 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -12301,6 +12301,3241 @@ Shipping
 Worldwide Shipping Available`,
   },
   {
+    id: 2418,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Tacoma — Front 3 in / 0–330 lb — 1214K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1214K.
+    price: 2009.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1214K",
+    fitment: "Toyota Tacoma 2024. Kit covers the front only: front 3 in of lift rated for 0–330 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-fr-3-in-0-330-lb-1214k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-tacoma-1214k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-tacoma-1214k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 1214K for the 2024 Toyota Tacoma (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Tacoma
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Coverage: front only
+Part number: 1214K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2419,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb — 2223K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2223K.
+    price: 2030.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2223K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front only: front 3 in of lift rated for 0–330 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-fr-3-in-0-330-lb-2223k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2223k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2223k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2223K for the 2024 Toyota Land Cruiser (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Coverage: front only
+Part number: 2223K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2420,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Tacoma — Front 3 in / 0–330 lb, Rear 0 in / 0 lb — 1207K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1207K.
+    price: 3289.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1207K",
+    fitment: "Toyota Tacoma 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-fr-3-in-0-330-lb-rr-0-in-0-lb-1207k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-tacoma-1207k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-tacoma-1207k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 1207K for the 2024 Toyota Tacoma.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Tacoma
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 1207K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2421,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb, Rear 0 in / 0 lb — 2216K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2216K.
+    price: 3340.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2216K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-fr-3-in-0-330-lb-rr-0-in-0-lb-2216k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2216k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2216k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2216K for the 2024 Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 2216K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2422,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb, Rear 2 in / 0 lb — 2217K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2217K.
+    price: 3600.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2217K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-fr-3-in-0-330-lb-rr-2-in-0-lb-2217k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2217k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2217k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2217K for the 2024 Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2217K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2423,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb, Rear 2 in / 440 lb — 2218K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2218K.
+    price: 3600.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2218K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-fr-3-in-0-330-lb-rr-2-in-440-lb-2218k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2218k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2218k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2218K for the 2024 Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 2218K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 440 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2424,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb, Rear 2 in / 880 lb — 2219K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2219K.
+    price: 3600.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2219K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 880 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-fr-3-in-0-330-lb-rr-2-in-880-lb-2219k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2219k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2219k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2219K for the 2024 Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 2 in / 880 lb
+Coverage: front and rear
+Part number: 2219K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 880 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2425,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Tacoma — Rear 0 in / 0 lb — 1215K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1215K.
+    price: 1279.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1215K",
+    fitment: "Toyota Tacoma 2024. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-rr-0-in-0-lb-1215k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-tacoma-1215k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-tacoma-1215k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 1215K for the 2024 Toyota Tacoma (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Tacoma
+Years: 2024
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 1215K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2426,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024 Toyota Land Cruiser — Rear 0 in / 0 lb — 2224K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2224K.
+    price: 1309.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2224K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-rr-0-in-0-lb-2224k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2224k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2224k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2224K for the 2024 Toyota Land Cruiser (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 2224K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2427,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2022–2024 Toyota Tundra — Rear 0 in / 0 lb — 3209K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 3209K.
+    price: 1264.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "3209K",
+    fitment: "Toyota Tundra 2022–2024. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-rr-0-in-0-lb-3209k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-tundra-3209k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-tundra-3209k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 3209K for the 2022–2024 Toyota Tundra (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Toyota Tundra
+Years: 2022–2024
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 3209K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2428,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit with Upper Control Arms for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb, Rear 2 in / 0 lb — 2220K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2220K.
+    price: 4280.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2220K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-w-uca-fr-3-in-0-330-lb-rr-2-in-0-lb-2220k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2220k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2220k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2220K for the 2024 Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51 with upper control arms
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2220K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+BP-51 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2429,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit with Upper Control Arms for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb, Rear 2 in / 440 lb — 2221K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2221K.
+    price: 4280.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2221K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-w-uca-fr-3-in-0-330-lb-rr-2-in-440-lb-2221k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2221k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2221k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2221K for the 2024 Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51 with upper control arms
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 2221K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 440 lb rear added weight
+BP-51 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2430,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit with Upper Control Arms for 2024 Toyota Land Cruiser — Front 3 in / 0–330 lb, Rear 2 in / 880 lb — 2222K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2222K.
+    price: 4280.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2222K",
+    fitment: "Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 880 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-w-uca-fr-3-in-0-330-lb-rr-2-in-880-lb-2222k/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2222k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-toyota-land-cruiser-2222k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 2222K for the 2024 Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51 with upper control arms
+Vehicle: Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0–330 lb
+Rear lift / load: 2 in / 880 lb
+Coverage: front and rear
+Part number: 2222K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 880 lb rear added weight
+BP-51 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2431,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 0 lb — 2121K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2121K.
+    price: 1483.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2121K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front only: front 3 in of lift rated for 0 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3-in-0-lb-2121k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2121k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2121k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2121K for the 2024 Lexus GX550 / Toyota Land Cruiser (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0 lb
+Coverage: front only
+Part number: 2121K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2432,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2022–2024 Toyota Tundra — Front 1.75–3 in / 0 lb — 3106K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 3106K.
+    price: 1578.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "3106K",
+    fitment: "Toyota Tundra 2022–2024. Kit covers the front only: front 1.75–3 in of lift rated for 0 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3-in-0-lb-3106k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-toyota-tundra-3106k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-toyota-tundra-3106k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 3106K for the 2022–2024 Toyota Tundra (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Toyota Tundra
+Years: 2022–2024
+Front lift / load: 1.75–3 in / 0 lb
+Coverage: front only
+Part number: 3106K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2433,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 0 lb, Rear 0 in / 0 lb — 2116K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2116K.
+    price: 2305.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2116K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3-in-0-lb-rr-0-in-0-lb-2116k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2116k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2116k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2116K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 2116K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2434,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 0 lb, Rear 2 in / 0 lb — 2117K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2117K.
+    price: 2565.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2117K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3-in-0-lb-rr-2-in-0-lb-2117k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2117k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2117k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2117K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2117K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2435,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 0 lb, Rear 2 in / 440 lb — 2119K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2119K.
+    price: 2565.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2119K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3-in-0-lb-rr-2-in-440-lb-2119k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2119k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2119k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2119K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 2119K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 440 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2436,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024–2026 Toyota Tacoma — Front 3 in / 220–330 lb — 1126K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1126K.
+    price: 1459.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1126K",
+    fitment: "Toyota Tacoma 2024–2026. Kit covers the front only: front 3 in of lift rated for 220–330 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-1126k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-toyota-tacoma-1126k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-toyota-tacoma-1126k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 1126K for the 2024–2026 Toyota Tacoma (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Toyota Tacoma
+Years: 2024–2026
+Front lift / load: 3 in / 220–330 lb
+Coverage: front only
+Part number: 1126K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2437,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb — 2130K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2130K.
+    price: 1459.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2130K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front only: front 3 in of lift rated for 220–330 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-2130k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2130k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2130k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2130K for the 2024 Lexus GX550 / Toyota Land Cruiser (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Coverage: front only
+Part number: 2130K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2438,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2022–2024 Toyota Tundra — Front 3 in / 220–330 lb — 3113K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 3113K.
+    price: 1459.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "3113K",
+    fitment: "Toyota Tundra 2022–2024. Kit covers the front only: front 3 in of lift rated for 220–330 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-3113k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-toyota-tundra-3113k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-toyota-tundra-3113k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 3113K for the 2022–2024 Toyota Tundra (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Toyota Tundra
+Years: 2022–2024
+Front lift / load: 3 in / 220–330 lb
+Coverage: front only
+Part number: 3113K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2439,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024–2026 Toyota Tacoma — Front 3 in / 220–330 lb, Rear 0 in / 0 lb — 1121K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1121K.
+    price: 2281.8,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1121K",
+    fitment: "Toyota Tacoma 2024–2026. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-rr-0in-0lb-1121k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-toyota-tacoma-1121k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-toyota-tacoma-1121k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 1121K for the 2024–2026 Toyota Tacoma.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Toyota Tacoma
+Years: 2024–2026
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 1121K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2440,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb, Rear 0 in / 0 lb — 2125K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2125K.
+    price: 2281.8,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2125K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-rr-0in-0lb-2125k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2125k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2125k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2125K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 2125K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2441,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb, Rear 2 in / 0 lb — 2124K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2124K.
+    price: 2565.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2124K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-rr-2in-0lb-2124k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2124k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2124k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2124K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2124K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2442,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb, Rear 2 in / 440 lb — 2127K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2127K.
+    price: 2565.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2127K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-rr-2in-440lbs-2127k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2127k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2127k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2127K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 2127K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 440 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2443,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb, Rear 2 in / 880 lb — 2129K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2129K.
+    price: 2563.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2129K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 2 in of lift rated for 880 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-3in-220-330lbs-rr-2in-880lbs-2129k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2129k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2129k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2129K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 2 in / 880 lb
+Coverage: front and rear
+Part number: 2129K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 880 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2444,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Rear 0 in / 0 lb — 2122K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2122K.
+    price: 821.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2122K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-rr-0-in-0-lb-2122k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2122k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2122k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2122K for the 2024 Lexus GX550 / Toyota Land Cruiser (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 2122K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2445,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2022–2024 Toyota Tundra — Rear 0 in / 0 lb — 3107K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 3107K.
+    price: 821.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "3107K",
+    fitment: "Toyota Tundra 2022–2024. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-rr-0-in-0-lb-3107k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-toyota-tundra-3107k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-toyota-tundra-3107k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 3107K for the 2022–2024 Toyota Tundra (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Toyota Tundra
+Years: 2022–2024
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 3107K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2446,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024–2026 Toyota Tacoma — Rear 0 in / 440–880 lb — 1127K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1127K.
+    price: 821.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1127K",
+    fitment: "Toyota Tacoma 2024–2026. Kit covers the rear only: rear 0 in of lift rated for 440–880 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-rr-0in-440-880lbs-1127k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-toyota-tacoma-1127k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-toyota-tacoma-1127k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 1127K for the 2024–2026 Toyota Tacoma (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Toyota Tacoma
+Years: 2024–2026
+Rear lift / load: 0 in / 440–880 lb
+Coverage: rear only
+Part number: 1127K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 440–880 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2447,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2024 Lexus GX550 / Toyota Land Cruiser — Rear 0 in / 440–880 lb — 2131K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2131K.
+    price: 820,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2131K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the rear only: rear 0 in of lift rated for 440–880 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-rr-0in-440-880lbs-2131k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2131k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2131k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2131K for the 2024 Lexus GX550 / Toyota Land Cruiser (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Rear lift / load: 0 in / 440–880 lb
+Coverage: rear only
+Part number: 2131K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 440–880 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2448,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit with Upper Control Arms for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 0 lb, Rear 2 in / 0 lb — 2118K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2118K.
+    price: 3245.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2118K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-w-uca-fr-3-in-0-lb-rr-2-in-0-lb-2118k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2118k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2118k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2118K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64 with upper control arms
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2118K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+MT64 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2449,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit with Upper Control Arms for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 0 lb, Rear 2 in / 440 lb — 2120K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2120K.
+    price: 3245.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2120K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 0 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-w-uca-fr-3-in-0-lb-rr-2-in-440-lb-2120k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2120k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2120k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2120K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64 with upper control arms
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 0 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 2120K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 440 lb rear added weight
+MT64 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2450,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit with Upper Control Arms for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb, Rear 2 in / 0 lb — 2123K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2123K.
+    price: 3245.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2123K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-w-uca-fr-3in-220-330lbs-rr-2in-0lb-2123k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2123k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2123k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2123K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64 with upper control arms
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2123K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 0 lb rear added weight
+MT64 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2451,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit with Upper Control Arms for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb, Rear 2 in / 440 lb — 2126K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2126K.
+    price: 3245.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2126K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-w-uca-fr-3in-220-330lbs-rr-2in-440lbs-2126k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2126k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2126k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2126K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64 with upper control arms
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 2126K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 440 lb rear added weight
+MT64 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2452,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit with Upper Control Arms for 2024 Lexus GX550 / Toyota Land Cruiser — Front 3 in / 220–330 lb, Rear 2 in / 880 lb — 2128K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2128K.
+    price: 3243.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2128K",
+    fitment: "Lexus GX550 2024; Toyota Land Cruiser 2024. Kit covers the front and rear: front 3 in of lift rated for 220–330 lb of added front weight; rear 2 in of lift rated for 880 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-w-uca-fr-3in-220-330lbs-rr-2in-880lbs-2128k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-lexus-gx550-2128k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-lexus-gx550-2128k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2128K for the 2024 Lexus GX550 / Toyota Land Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64 with upper control arms
+Vehicle: Lexus GX550 / Toyota Land Cruiser
+Years: 2024
+Front lift / load: 3 in / 220–330 lb
+Rear lift / load: 2 in / 880 lb
+Coverage: front and rear
+Part number: 2128K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 220–330 lb front / 880 lb rear added weight
+MT64 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2453,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2025+ Toyota 4Runner — Rear 0 in / 0 lb — 2137K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2137K.
+    price: 821.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2137K",
+    fitment: "Toyota 4Runner 2025-on. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-suspension-kit-for-4runner-2025-rear-0in-0lb-2137k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-4runner-2137k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-4runner-2137k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 2137K for the 2025-on Toyota 4Runner (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Toyota 4Runner
+Years: 2025-on
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 2137K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2454,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 1998–2004 Toyota Tacoma — Front 1.8 in / 0–330 lb, Rear 2 in / 0 lb — 1002K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1002K.
+    price: 1700.25,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1002K",
+    fitment: "Toyota Tacoma 1998–2004. Kit covers the front and rear: front 1.8 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-8-in-0-330-lb-rr-2-in-0-lb-1002k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-tacoma-1002k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-tacoma-1002k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 1002K for the 1998–2004 Toyota Tacoma.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota Tacoma
+Years: 1998–2004
+Front lift / load: 1.8 in / 0–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 1002K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2455,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2005–2015 Toyota Tacoma — Front 2 in / 0–330 lb, Rear 0 in / 0 lb — 1003K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1003K.
+    price: 899.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1003K",
+    fitment: "Toyota Tacoma 2005–2015. Kit covers the front and rear: front 2 in of lift rated for 0–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-2-in-0-330-lb-rr-0-in-0-lb-1003k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-tacoma-1003k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-tacoma-1003k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 1003K for the 2005–2015 Toyota Tacoma.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota Tacoma
+Years: 2005–2015
+Front lift / load: 2 in / 0–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 1003K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2456,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 1996–2002 Toyota 4Runner — Front 1 in / 0–330 lb, Rear 0 in / 0 lb — 2001K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2001K.
+    price: 863.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2001K",
+    fitment: "Toyota 4Runner 1996–2002. Kit covers the front and rear: front 1 in of lift rated for 0–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-in-0-330-lb-rr-0-in-0-lb-2001k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-4runner-2001k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-4runner-2001k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 2001K for the 1996–2002 Toyota 4Runner.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota 4Runner
+Years: 1996–2002
+Front lift / load: 1 in / 0–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 2001K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2457,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 1996–2002 Toyota 4Runner — Front 1 in / 0–330 lb, Rear 2 in / 0 lb — 2002K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2002K.
+    price: 1113.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2002K",
+    fitment: "Toyota 4Runner 1996–2002. Kit covers the front and rear: front 1 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-in-0-330-lb-rr-2-in-0-lb-2002k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-4runner-2002k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-4runner-2002k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 2002K for the 1996–2002 Toyota 4Runner.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota 4Runner
+Years: 1996–2002
+Front lift / load: 1 in / 0–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2002K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2458,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 1996–2002 Toyota 4Runner — Front 1 in / 0–330 lb, Rear 2 in / 550 lb — 2003K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2003K.
+    price: 1113.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2003K",
+    fitment: "Toyota 4Runner 1996–2002. Kit covers the front and rear: front 1 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 550 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-in-0-330-lb-rr-2-in-550-lb-2003k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-4runner-2003k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-4runner-2003k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 2003K for the 1996–2002 Toyota 4Runner.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota 4Runner
+Years: 1996–2002
+Front lift / load: 1 in / 0–330 lb
+Rear lift / load: 2 in / 550 lb
+Coverage: front and rear
+Part number: 2003K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 550 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2459,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2003–2009 Toyota 4Runner — Front 1–2 in / 0–330 lb, Rear 2 in / 0 lb — 2005K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2005K.
+    price: 1149.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2005K",
+    fitment: "Toyota 4Runner 2003–2009. Kit covers the front and rear: front 1–2 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-2-in-0-330-lb-rr-2-in-0-lb-2005k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-4runner-2005k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-4runner-2005k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 2005K for the 2003–2009 Toyota 4Runner.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota 4Runner
+Years: 2003–2009
+Front lift / load: 1–2 in / 0–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 2005K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2460,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2003–2009 Toyota 4Runner — Front 1–2 in / 0–330 lb, Rear 2 in / 330 lb — 2006K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2006K.
+    price: 1149.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2006K",
+    fitment: "Toyota 4Runner 2003–2009. Kit covers the front and rear: front 1–2 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 330 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-2-in-0-330-lb-rr-2-in-330-lb-2006k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-4runner-2006k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-4runner-2006k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 2006K for the 2003–2009 Toyota 4Runner.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota 4Runner
+Years: 2003–2009
+Front lift / load: 1–2 in / 0–330 lb
+Rear lift / load: 2 in / 330 lb
+Coverage: front and rear
+Part number: 2006K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 330 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2461,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2003–2009 Toyota 4Runner — Front 1–2 in / 0–330 lb, Rear 2 in / 660 lb — 2007K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2007K.
+    price: 1149.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2007K",
+    fitment: "Toyota 4Runner 2003–2009. Kit covers the front and rear: front 1–2 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 660 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-2-in-0-330-lb-rr-2-in-660-lb-2007k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-4runner-2007k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-4runner-2007k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 2007K for the 2003–2009 Toyota 4Runner.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota 4Runner
+Years: 2003–2009
+Front lift / load: 1–2 in / 0–330 lb
+Rear lift / load: 2 in / 660 lb
+Coverage: front and rear
+Part number: 2007K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 660 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2462,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2003–2009 Toyota 4Runner — Front 1–2 in / 0–330 lb, Rear 0 in / 0 lb — 2004K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 2004K.
+    price: 899.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2004K",
+    fitment: "Toyota 4Runner 2003–2009. Kit covers the front and rear: front 1–2 in of lift rated for 0–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-2in-0-330lb-rr-0in-0lb-2004k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-4runner-2004k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-4runner-2004k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 2004K for the 2003–2009 Toyota 4Runner.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota 4Runner
+Years: 2003–2009
+Front lift / load: 1–2 in / 0–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 2004K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2463,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 1998–2004 Toyota Tacoma — Front 1.8 in / 0–330 lb, Rear 0 in / 0 lb — 1001K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1001K.
+    price: 863.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1001K",
+    fitment: "Toyota Tacoma 1998–2004. Kit covers the front and rear: front 1.8 in of lift rated for 0–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-1-8-in-0-330-lb-rr-0-in-0-lb-1001k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-tacoma-1001k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-tacoma-1001k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 1001K for the 1998–2004 Toyota Tacoma.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota Tacoma
+Years: 1998–2004
+Front lift / load: 1.8 in / 0–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 1001K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2464,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2005–2015 Toyota Tacoma — Front 2 in / 0–330 lb, Rear 2 in / 0 lb — 1004K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1004K.
+    price: 1769.3,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1004K",
+    fitment: "Toyota Tacoma 2005–2015. Kit covers the front and rear: front 2 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-2-in-0-330-lb-rr-2-in-0-lb-1004k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-tacoma-1004k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-tacoma-1004k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 1004K for the 2005–2015 Toyota Tacoma.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota Tacoma
+Years: 2005–2015
+Front lift / load: 2 in / 0–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 1004K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2465,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2005–2015 Toyota Tacoma — Front 2 in / 0–330 lb, Rear 2 in / 660 lb — 1005K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 1005K.
+    price: 1849.3,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1005K",
+    fitment: "Toyota Tacoma 2005–2015. Kit covers the front and rear: front 2 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 660 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-2-in-0-330-lb-rr-2-in-660-lb-1005k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-tacoma-1005k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-tacoma-1005k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 1005K for the 2005–2015 Toyota Tacoma.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota Tacoma
+Years: 2005–2015
+Front lift / load: 2 in / 0–330 lb
+Rear lift / load: 2 in / 660 lb
+Coverage: front and rear
+Part number: 1005K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 660 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2589,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster — Front 2 in / 0 lb, Rear 2 in / 0 lb — 7001K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 7001K.
+    price: 3354.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "7001K",
+    fitment: "Ineos Grenadier 2024–2026; Ineos Grenadier Quartermaster 2025–2027. Kit covers the front and rear: front 2 in of lift rated for 0 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-2-kit-for-ineos-grenadier-2024-front-2-in-0-lb-rear-2-in-0-lb/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-ineos-grenadier-7001k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-ineos-grenadier-7001k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 7001K for the 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Ineos Grenadier / Ineos Grenadier Quartermaster
+Years: 2024–2026 / 2025–2027
+Front lift / load: 2 in / 0 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 7001K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2590,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster — Front 2 in / 0 lb, Rear 2 in / 440 lb — 7002K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 7002K.
+    price: 3354.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "7002K",
+    fitment: "Ineos Grenadier 2024–2026; Ineos Grenadier Quartermaster 2025–2027. Kit covers the front and rear: front 2 in of lift rated for 0 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-2-kit-for-ineos-grenadier-2024-front-2-in-0-lb-rear-2-in-440-lb/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-ineos-grenadier-7002k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-ineos-grenadier-7002k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 7002K for the 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Ineos Grenadier / Ineos Grenadier Quartermaster
+Years: 2024–2026 / 2025–2027
+Front lift / load: 2 in / 0 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 7002K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 440 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2591,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster — Front 0 in / 0 lb, Rear 0 in / 0 lb — 7003K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 7003K.
+    price: 2524.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "7003K",
+    fitment: "Ineos Grenadier 2024–2026; Ineos Grenadier Quartermaster 2025–2027. Kit covers the front and rear: front 0 in of lift rated for 0 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-for-ineos-grenadier-2024-front-0-in-0-lb-rear-0-in-0-lb/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-ineos-grenadier-7003k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-ineos-grenadier-7003k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 7003K for the 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Ineos Grenadier / Ineos Grenadier Quartermaster
+Years: 2024–2026 / 2025–2027
+Front lift / load: 0 in / 0 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 7003K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2592,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster — Front 0 in / 0 lb — 7004K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 7004K.
+    price: 1264.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "7004K",
+    fitment: "Ineos Grenadier 2024–2026; Ineos Grenadier Quartermaster 2025–2027. Kit covers the front only: front 0 in of lift rated for 0 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-for-ineos-grenadier-2024-front-0-in-0-lb/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-ineos-grenadier-7004k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-ineos-grenadier-7004k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 7004K for the 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Ineos Grenadier / Ineos Grenadier Quartermaster
+Years: 2024–2026 / 2025–2027
+Front lift / load: 0 in / 0 lb
+Coverage: front only
+Part number: 7004K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2593,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Suspension Kit for 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster — Rear 0 in / 0 lb — 7005K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 7005K.
+    price: 1259.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "7005K",
+    fitment: "Ineos Grenadier 2024–2026; Ineos Grenadier Quartermaster 2025–2027. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/bp-51-kit-for-ineos-grenadier-2024-rear-0-in-0-lb/",
+    thumbnail: "/product-media/suspension/ome-bp51-kit-ineos-grenadier-7005k/1.webp",
+    images: ["/product-media/suspension/ome-bp51-kit-ineos-grenadier-7005k/1.webp"],
+    description: `Old Man Emu BP-51 integrated suspension kit 7005K for the 2024–2026 / 2025–2027 Ineos Grenadier / Ineos Grenadier Quartermaster (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: BP-51
+Vehicle: Ineos Grenadier / Ineos Grenadier Quartermaster
+Years: 2024–2026 / 2025–2027
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 7005K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+BP-51 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2594,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2021–2024 Ford F-150 — Front 2.5 in / 0 lb, Rear 0 in / 0 lb — 5101K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 5101K.
+    price: 2281.8,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "5101K",
+    fitment: "Ford F-150 2021–2024. Kit covers the front and rear: front 2.5 in of lift rated for 0 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-2-5in-0lb-rr-0in-0lb-5101k-5101k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-ford-f-150-5101k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-ford-f-150-5101k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 5101K for the 2021–2024 Ford F-150.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Ford F-150
+Years: 2021–2024
+Front lift / load: 2.5 in / 0 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 5101K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2595,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit with Upper Control Arms for 2021–2024 Ford F-150 — Front 2.5 in / 0 lb, Rear 0 in / 0 lb — 5102K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 5102K.
+    price: 2961.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "5102K",
+    fitment: "Ford F-150 2021–2024. Kit covers the front and rear: front 2.5 in of lift rated for 0 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-w-uca-fr-2-5in-0lb-rr-0in-0lb-5102k-5102k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-ford-f-150-5102k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-ford-f-150-5102k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 5102K for the 2021–2024 Ford F-150.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64 with upper control arms
+Vehicle: Ford F-150
+Years: 2021–2024
+Front lift / load: 2.5 in / 0 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 5102K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+MT64 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2596,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2021–2024 Ford F-150 — Front 2.5 in / 0 lb, Rear 1.5 in / 0 lb — 5103K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 5103K.
+    price: 2423.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "5103K",
+    fitment: "Ford F-150 2021–2024. Kit covers the front and rear: front 2.5 in of lift rated for 0 lb of added front weight; rear 1.5 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-2-5in-0lb-rr-1-5in-0lb-5103k-5103k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-ford-f-150-5103k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-ford-f-150-5103k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 5103K for the 2021–2024 Ford F-150.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Ford F-150
+Years: 2021–2024
+Front lift / load: 2.5 in / 0 lb
+Rear lift / load: 1.5 in / 0 lb
+Coverage: front and rear
+Part number: 5103K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2597,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit with Upper Control Arms for 2021–2024 Ford F-150 — Front 2.5 in / 0 lb, Rear 1.5 in / 0 lb — 5104K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 5104K.
+    price: 3103.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "5104K",
+    fitment: "Ford F-150 2021–2024. Kit covers the front and rear: front 2.5 in of lift rated for 0 lb of added front weight; rear 1.5 in of lift rated for 0 lb of added rear load. Includes upper control arms.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-w-uca-fr-2-5in-0lb-rr-1-5in-0lb-5104k-5104k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-ford-f-150-5104k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-ford-f-150-5104k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 5104K for the 2021–2024 Ford F-150.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+Upper control arms are included to correct front alignment geometry at the raised ride height.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64 with upper control arms
+Vehicle: Ford F-150
+Years: 2021–2024
+Front lift / load: 2.5 in / 0 lb
+Rear lift / load: 1.5 in / 0 lb
+Coverage: front and rear
+Part number: 5104K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front / 0 lb rear added weight
+MT64 dampers
+Upper control arms included
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2598,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2021–2024 Ford F-150 — Front 2.5 in / 0 lb — 5105K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 5105K.
+    price: 1459.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "5105K",
+    fitment: "Ford F-150 2021–2024. Kit covers the front only: front 2.5 in of lift rated for 0 lb of added front weight.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-fr-2-5in-0lb-5105k-5105k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-ford-f-150-5105k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-ford-f-150-5105k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 5105K for the 2021–2024 Ford F-150 (front only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Ford F-150
+Years: 2021–2024
+Front lift / load: 2.5 in / 0 lb
+Coverage: front only
+Part number: 5105K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb front added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2599,
+    createdAt: 1789430400000,
+    name: "Old Man Emu MT64 Suspension Kit for 2021–2024 Ford F-150 — Rear 0 in / 0 lb — 5106K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 5106K.
+    price: 821.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "5106K",
+    fitment: "Ford F-150 2021–2024. Kit covers the rear only: rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/mt64-kit-rr-0in-0lb-5106k-5106k/",
+    thumbnail: "/product-media/suspension/ome-mt64-kit-ford-f-150-5106k/1.webp",
+    images: ["/product-media/suspension/ome-mt64-kit-ford-f-150-5106k/1.webp"],
+    description: `Old Man Emu MT64 integrated suspension kit 5106K for the 2021–2024 Ford F-150 (rear only).
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: MT64
+Vehicle: Ford F-150
+Years: 2021–2024
+Rear lift / load: 0 in / 0 lb
+Coverage: rear only
+Part number: 5106K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0 lb rear added weight
+MT64 dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2600,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2007–2014 Toyota FJ Cruiser — Front 2 in / 0–330 lb, Rear 0 in / 0 lb — 4001K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 4001K.
+    price: 899.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "4001K",
+    fitment: "Toyota FJ Cruiser 2007–2014. Kit covers the front and rear: front 2 in of lift rated for 0–330 lb of added front weight; rear 0 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-2-in-0-330-lb-rr-0-in-0-lb-4001k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-fj-cruiser-4001k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-fj-cruiser-4001k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 4001K for the 2007–2014 Toyota FJ Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota FJ Cruiser
+Years: 2007–2014
+Front lift / load: 2 in / 0–330 lb
+Rear lift / load: 0 in / 0 lb
+Coverage: front and rear
+Part number: 4001K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2601,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2007–2014 Toyota FJ Cruiser — Front 2 in / 0–330 lb, Rear 2 in / 0 lb — 4002K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 4002K.
+    price: 1149.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "4002K",
+    fitment: "Toyota FJ Cruiser 2007–2014. Kit covers the front and rear: front 2 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 0 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-2-in-0-330-lb-rr-2-in-0-lb-4002k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-fj-cruiser-4002k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-fj-cruiser-4002k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 4002K for the 2007–2014 Toyota FJ Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota FJ Cruiser
+Years: 2007–2014
+Front lift / load: 2 in / 0–330 lb
+Rear lift / load: 2 in / 0 lb
+Coverage: front and rear
+Part number: 4002K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 0 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2602,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Suspension Kit for 2007–2014 Toyota FJ Cruiser — Front 2 in / 0–330 lb, Rear 2 in / 440 lb — 4003K",
+    category: "suspension",
+    brand: "old-man-emu",
+    // ARB USA store price for 4003K.
+    price: 1149.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB / Old Man Emu 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "4003K",
+    fitment: "Toyota FJ Cruiser 2007–2014. Kit covers the front and rear: front 2 in of lift rated for 0–330 lb of added front weight; rear 2 in of lift rated for 440 lb of added rear load.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nitro-plus-kit-fr-2-in-0-330-lb-rr-2-in-440-lb-4003k/",
+    thumbnail: "/product-media/suspension/ome-nitro-kit-toyota-fj-cruiser-4003k/1.webp",
+    images: ["/product-media/suspension/ome-nitro-kit-toyota-fj-cruiser-4003k/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus integrated suspension kit 4003K for the 2007–2014 Toyota FJ Cruiser.
+
+OME sells integrated kits with the shocks and springs already matched, tuned for how much weight the vehicle carries. Heavy accessories slowly compress a suspension that wasn't built for them, and that sag shows up as poor ride and lost clearance. Picking the kit rated for your weight avoids it.
+
+This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
+
+The kit uses OME's Nitrocharger Plus struts and shocks: a twin-tube design with a heavy-gauge steel reserve tube that protects the internals in rough terrain. A 5-position spring seat, with coil seat spacers included, lets you tune front ride height to your setup.
+
+A wheel alignment is required after fitting.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Kit: Nitrocharger Plus
+Vehicle: Toyota FJ Cruiser
+Years: 2007–2014
+Front lift / load: 2 in / 0–330 lb
+Rear lift / load: 2 in / 440 lb
+Coverage: front and rear
+Part number: 4003K
+
+Highlights
+
+Shocks and springs matched as a system
+Rated for 0–330 lb front / 440 lb rear added weight
+Nitrocharger Plus dampers
+
+Warranty
+ARB / Old Man Emu 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
     id: 2382,
     createdAt: 1789430400000,
     name: "Bosch New CP3 Injection Pump — 2003–2007 Dodge Ram 5.9L Cummins — 0445020147",
@@ -13941,6 +17176,7743 @@ Banks design
 
 Warranty
 Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2466,
+    createdAt: 1789430400000,
+    name: "Icon 0–3 in Suspension System Stage 5 Kit for 2012–2015 Toyota Hilux RWD — K53145",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53145.
+    price: 4318.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53145",
+    fitment: "2012–2015 Toyota Hilux RWD. Drivetrain: 2WD. Height: 0–3 in Lift.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-0-3-suspension-system-stage-5-2005-2016-toyota-hilux-4wd-w-0-3-lift-k53145",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53145/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53145/1.webp"],
+    description: `Icon 0–3 in Suspension System Stage 5 Kit for 2012–2015 Toyota Hilux RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 0–3 in Suspension System - Stage 5, for the front and rear of the vehicle, set for 0–3 in lift.
+
+Applications: 2012–2015 Toyota Hilux RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 0–3 in Suspension System - Stage 5
+Position: Front and Rear
+Height: 0–3 in Lift
+Drivetrain: 2WD
+Part number: K53145
+
+Highlights
+
+0–3 in Suspension System - Stage 5
+Increased wheel travel and ride quality over stock with no change in towing capacity
+0–3 in Lift height setting
+Front and Rear fitment
+2WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2467,
+    createdAt: 1789430400000,
+    name: "Icon 0–3 in Suspension System Stage 3 Kit for 2012–2015 Toyota Hilux RWD — K53143",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53143.
+    price: 3648.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53143",
+    fitment: "2012–2015 Toyota Hilux RWD. Drivetrain: 2WD. Height: 0–3 in Lift.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-0-3-suspension-system-stage-3-2005-2016-toyota-hilux-4wd-w-0-3-lift-k53143",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53143/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53143/1.webp"],
+    description: `Icon 0–3 in Suspension System Stage 3 Kit for 2012–2015 Toyota Hilux RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 0–3 in Suspension System - Stage 3, for the front and rear of the vehicle, set for 0–3 in lift.
+
+Applications: 2012–2015 Toyota Hilux RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 0–3 in Suspension System - Stage 3
+Position: Front and Rear
+Height: 0–3 in Lift
+Drivetrain: 2WD
+Part number: K53143
+
+Highlights
+
+0–3 in Suspension System - Stage 3
+Increased wheel travel and ride quality over stock with no change in towing capacity
+0–3 in Lift height setting
+Front and Rear fitment
+2WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2468,
+    createdAt: 1789430400000,
+    name: "Icon 0–3 in Suspension System Stage 2 Kit for 2012–2015 Toyota Hilux RWD — K53142",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53142.
+    price: 1998.8,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53142",
+    fitment: "2012–2015 Toyota Hilux RWD. Drivetrain: 2WD. Height: 0–3 in Lift.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-0-3-suspension-system-stage-2-2005-2016-toyota-hilux-4wd-w-0-3-lift-k53142",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53142/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53142/1.webp"],
+    description: `Icon 0–3 in Suspension System Stage 2 Kit for 2012–2015 Toyota Hilux RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 0–3 in Suspension System - Stage 2, for the front and rear of the vehicle, set for 0–3 in lift.
+
+Applications: 2012–2015 Toyota Hilux RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 0–3 in Suspension System - Stage 2
+Position: Front and Rear
+Height: 0–3 in Lift
+Drivetrain: 2WD
+Part number: K53142
+
+Highlights
+
+0–3 in Suspension System - Stage 2
+Increased wheel travel and ride quality over stock with no change in towing capacity
+0–3 in Lift height setting
+Front and Rear fitment
+2WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2469,
+    createdAt: 1789430400000,
+    name: "Icon 0–3 in Suspension System Stage 4 Tubular Kit for 2012–2015 Toyota Hilux RWD — K53144T",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53144T.
+    price: 3508.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53144T",
+    fitment: "2012–2015 Toyota Hilux RWD. Drivetrain: 2WD. Height: 0–3 in Lift.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-0-3-suspension-system-stage-4-tubular-2005-2016-toyota-hilux-4wd-w-0-3-lift-k53144t",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53144t/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53144t/1.webp"],
+    description: `Icon 0–3 in Suspension System Stage 4 Tubular Kit for 2012–2015 Toyota Hilux RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 0–3 in Suspension System - Stage 4 Tubular, for the front and rear of the vehicle, set for 0–3 in lift.
+
+Applications: 2012–2015 Toyota Hilux RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 0–3 in Suspension System - Stage 4 Tubular
+Position: Front and Rear
+Height: 0–3 in Lift
+Drivetrain: 2WD
+Part number: K53144T
+
+Highlights
+
+0–3 in Suspension System - Stage 4 Tubular
+Increased wheel travel and ride quality over stock with no change in towing capacity
+0–3 in Lift height setting
+Front and Rear fitment
+2WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2470,
+    createdAt: 1789430400000,
+    name: "Icon 3 in Suspension System Stage 1 Kit for 2005–2011 Toyota Hilux RWD — K53136",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53136.
+    price: 1839.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53136",
+    fitment: "2005–2011 Toyota Hilux RWD. Drivetrain: 2WD. Height: 0–3 in Lift.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-3-suspension-system-stage-1-kit-for-2005-2011-toyota-hilux-rwd-k53136",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53136/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53136/1.webp"],
+    description: `Icon 3 in Suspension System Stage 1 Kit for 2005–2011 Toyota Hilux RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 3 in Suspension System - Stage 1, for the front and rear of the vehicle, set for 0–3 in lift.
+
+Applications: 2005–2011 Toyota Hilux RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 3 in Suspension System - Stage 1
+Position: Front and Rear
+Height: 0–3 in Lift
+Drivetrain: 2WD
+Part number: K53136
+
+Highlights
+
+3 in Suspension System - Stage 1
+Increased wheel travel and ride quality over stock with no change in towing capacity
+0–3 in Lift height setting
+Front and Rear fitment
+2WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2471,
+    createdAt: 1789430400000,
+    name: "Dobinsons Front Upper Control Arm Kit for 2019–2023 Ford Ranger — UCA19-004K",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBUCA19-004K.
+    price: 1025.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UCA19-004K",
+    fitment: "2019–2023 Ford Ranger; Ford Ranger PX/T6 MK1&2 2011–2018; Ford RangerPX/T7 USA2018-on; Mazda BT-50 Series 2 2011–2022.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-front-upper-control-arm-kit-for-2019-2023-ford-ranger",
+    thumbnail: "/product-media/suspension/ss-dobinsons-uca19-004k/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-uca19-004k/1.webp"],
+    description: `Dobinsons Front Upper Control Arm Kit for 2019–2023 Ford Ranger.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the Front Upper Control Arm Kit, for the front of the vehicle.
+
+Applications: 2019–2023 Ford Ranger; Ford Ranger PX/T6 MK1&2 2011–2018; Ford RangerPX/T7 USA2018-on; Mazda BT-50 Series 2 2011–2022.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Product: Front Upper Control Arm Kit
+Position: Front
+Part number: UCA19-004K
+
+Highlights
+
+Front Upper Control Arm Kit
+Front fitment
+Fits 2019–2023 Ford Ranger
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2472,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Stage 2R Coilovers & Reservoir Shocks Set for 2019–2023 Ford Ranger 4WD RWD w/0–3.75 in lift — E86-35-048-02-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE86-35-048-02-22.
+    price: 1565,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Limited Lifetime Warranty.",
+    location: "our supplier network",
+    partNumber: "E86-35-048-02-22",
+    fitment: "2019–2023 Ford Ranger 4WD RWD w/0–3.75 in lift. Drivetrain: 2WD and 4WD. Height: 0–3.75 in Lift.",
+    drivetrain: "2WD and 4WD",
+    included: ["2 Coilovers 2 Shocks"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-stage-2r-coilover-kit-front-coilovers-rear-reservoir-shocks-e86-35-048-02-22",
+    thumbnail: "/product-media/suspension/ss-eibach-e86-35-048-02-22/1.webp",
+    images: ["/product-media/suspension/ss-eibach-e86-35-048-02-22/1.webp"],
+    description: `Eibach Pro-Truck Stage 2R Coilovers & Reservoir Shocks Set for 2019–2023 Ford Ranger 4WD RWD w/0–3.75 in lift.
+
+Eibach is a spring maker first, and its Pro-Truck systems are built around spring rates chosen for the vehicle's front-end weight, with dampers matched to those rates rather than sold separately.
+
+This listing is the Strut & Spring, for the front & rear of the vehicle, supplied as a set, set for 0–3.75 in lift.
+
+Contents: 2 Coilovers 2 Shocks
+
+Applications: 2019–2023 Ford Ranger 4WD RWD w/0–3.75 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Strut & Spring
+Position: Front & Rear
+Height: 0–3.75 in Lift
+Quantity: Set
+Drivetrain: 2WD and 4WD
+Part number: E86-35-048-02-22
+
+Highlights
+
+Package Contains 2 Coilovers 2 Shocks
+You'll get two front coilovers and two rear shocks.
+Lifts your vehicle up to 3.75 in in the front
+For vehicles with no suspension modifications or up to 3.75 in in the front and up to 1.5 in in the rear
+Strut & Spring
+
+Warranty
+Limited Lifetime Warranty.
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2473,
+    createdAt: 1789430400000,
+    name: "Bilstein 6112 Strut & Spring Front Pair for 2019–2023 Ford Ranger RWD w/0.7–2.9 in lift — 47-294301",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL47-294301.
+    price: 923,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "47-294301",
+    fitment: "2019–2023 Ford Ranger RWD w/0.7–2.9 in lift. Drivetrain: 2WD. Height: 0.7–2.9 in Lift.",
+    drivetrain: "2WD",
+    included: ["2 Front Shocks, 2 Coil Springs, and 2 Coil Spring Seats"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-6112-strut-spring-front-pair-47-294301",
+    thumbnail: "/product-media/suspension/ss-bilstein-47-294301/1.webp",
+    images: ["/product-media/suspension/ss-bilstein-47-294301/1.webp"],
+    description: `Bilstein 6112 Strut & Spring Front Pair for 2019–2023 Ford Ranger RWD w/0.7–2.9 in lift.
+
+Bilstein builds monotube gas dampers, where a single tube carries the oil and a floating piston separates it from the nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall. The 5100 and 6112 lines are the truck-height ranges; the 5160 adds a remote reservoir for more oil and more heat capacity again.
+
+This listing is the Strut & Spring, for the front of the vehicle, supplied as a pair, set for 0.7–2.9 in lift.
+
+Contents: 2 Front Shocks, 2 Coil Springs, and 2 Coil Spring Seats
+
+Applications: 2019–2023 Ford Ranger RWD w/0.7–2.9 in lift.
+
+Fitting note: Kit includes two front shocks, two coil spring seats, and two coil springs. Coil spring compressor required for installation.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: Strut & Spring
+Position: Front
+Height: 0.7–2.9 in Lift
+Quantity: Pair
+Drivetrain: 2WD
+Part number: 47-294301
+
+Highlights
+
+Package Contains 2 Front Shocks, 2 Coil Springs, and 2 Coil Spring Seats
+Front height adjustment from 0.7–2.9 in
+Front height adjustment from 0.7–2.9 in using the included coil spring collar and adjustable circlip.
+Designed for RWD vehicles
+Strut & Spring
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2474,
+    createdAt: 1789430400000,
+    name: "Icon 2.5 Remote Reservoir Coilovers Ext Travel Pair for 2019–2022 Ford Ranger w/0–3.5 in lift — 91355",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD91355.
+    price: 1975.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "91355",
+    fitment: "2019–2022 Ford Ranger w/0–3.5 in lift. Height: 0–3.5 in Lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-2-5-remote-reservoir-coilovers-ext-travel-pair-for-2019-2022-ford-ranger-w-0-3-5-lift",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-91355/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-91355/1.webp"],
+    description: `Icon 2.5 Remote Reservoir Coilovers Ext Travel Pair for 2019–2022 Ford Ranger w/0–3.5 in lift.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the Strut & Spring, for the front of the vehicle, supplied as a pair, set for 0–3.5 in lift.
+
+Applications: 2019–2022 Ford Ranger w/0–3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Strut & Spring
+Position: Front
+Height: 0–3.5 in Lift
+Quantity: Pair
+Part number: 91355
+
+Highlights
+
+Increased wheel travel over stock
+FK Rod End bearings for extended longevity and minimal deflection
+100% Bolt-on - no cutting or welding necessary for installation
+Vehicle specific tuned front shocks for superior shock damping and control
+Strut & Spring
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2475,
+    createdAt: 1789430400000,
+    name: "Icon 2.5 Remote Reservoir Coilovers Ext Travel CDCV Pair for 2019–2022 Ford Ranger w/0–3.5 in lift — 91355C",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD91355C.
+    price: 2319.15,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "91355C",
+    fitment: "2019–2022 Ford Ranger w/0–3.5 in lift. Height: 0–3.5 in Lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-2-5-remote-reservoir-coilovers-ext-travel-cdcv-pair-for-2019-2022-ford-ranger-w-0-3-5-lift",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-91355c/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-91355c/1.webp"],
+    description: `Icon 2.5 Remote Reservoir Coilovers Ext Travel CDCV Pair for 2019–2022 Ford Ranger w/0–3.5 in lift.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the Strut & Spring, for the front of the vehicle, supplied as a pair, set for 0–3.5 in lift.
+
+Applications: 2019–2022 Ford Ranger w/0–3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Strut & Spring
+Position: Front
+Height: 0–3.5 in Lift
+Quantity: Pair
+Part number: 91355C
+
+Highlights
+
+Increased wheel travel and ride quality over stock
+FK rod end bearings for extended longevity and minimal deflection
+100% Bolt-on - no cutting or welding necessary for installation
+Vehicle specific tuned for superior shock damping and control
+Strut & Spring
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2476,
+    createdAt: 1789430400000,
+    name: "Icon 2.5 Piggyback Reservoir CDCV Shocks Pair for 2019–2022 Ford Ranger w/1.5 in lift — 97730CP",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD97730CP.
+    price: 1504.15,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "97730CP",
+    fitment: "2019–2022 Ford Ranger w/1.5 in lift. Height: 1.5 in Lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-2-5-piggyback-reservoir-cdcv-shocks-pair-for-2019-2022-ford-ranger-w-1-5-lift",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-97730cp/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-97730cp/1.webp"],
+    description: `Icon 2.5 Piggyback Reservoir CDCV Shocks Pair for 2019–2022 Ford Ranger w/1.5 in lift.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the Shock Absorber, for the rear of the vehicle, supplied as a pair, set for 1.5 in lift.
+
+Applications: 2019–2022 Ford Ranger w/1.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Shock Absorber
+Position: Rear
+Height: 1.5 in Lift
+Quantity: Pair
+Part number: 97730CP
+
+Highlights
+
+CAD plated, precision machined 1026 DOM steel shock body for maximum durability and corrosion resistance
+Remote reservoir design improves heat dissipation to reduce shock fade during prolonged use
+Premium grade 5WT shock oil for consistent suspension damping along a wide temperature range
+Nitrogen charged monotube design with piggyback reservoir
+Shock Absorber
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2477,
+    createdAt: 1789430400000,
+    name: "Pro-Truck Stage 2 Shocks Kit for 2019–2023 Ford Ranger 4WD w/0–3.75 in lift — E86-35-048-01-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE86-35-048-01-22.
+    price: 1295,
+    stock: true,
+    condition: "brand-new",
+    warranty: "One-Year Warranty.",
+    location: "our supplier network",
+    partNumber: "E86-35-048-01-22",
+    fitment: "2019–2023 Ford Ranger 4WD w/0–3.75 in lift. Drivetrain: 4WD. Height: 0–3.75 in Lift.",
+    drivetrain: "4WD",
+    included: ["2 Coilovers 2 Shocks"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-stage-2-coilover-kit-rear-shocks-kit-for-2019-2022-ford-ranger-4wd-w-0-3-75-lift",
+    thumbnail: "/product-media/suspension/ss-eibach-e86-35-048-01-22/1.webp",
+    images: ["/product-media/suspension/ss-eibach-e86-35-048-01-22/1.webp"],
+    description: `Pro-Truck Stage 2 Shocks Kit for 2019–2023 Ford Ranger 4WD w/0–3.75 in lift.
+
+Eibach is a spring maker first, and its Pro-Truck systems are built around spring rates chosen for the vehicle's front-end weight, with dampers matched to those rates rather than sold separately.
+
+This listing is the Pro-Truck Stage 2 Coilover Kit + Rear Shocks, for the front & rear of the vehicle, set for 0–3.75 in lift.
+
+Contents: 2 Coilovers 2 Shocks
+
+Applications: 2019–2023 Ford Ranger 4WD w/0–3.75 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Stage 2 Coilover Kit + Rear Shocks
+Position: Front & Rear
+Height: 0–3.75 in Lift
+Drivetrain: 4WD
+Part number: E86-35-048-01-22
+
+Highlights
+
+Package Contains 2 Coilovers 2 Shocks
+You'll get two front coilovers and two rear shocks.
+Fits vehicles at factory height or with up to 3.75 in front lift
+Designed for 4WD vehicles
+Pro-Truck Stage 2 Coilover Kit + Rear Shocks
+
+Warranty
+One-Year Warranty.
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2478,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance w/ Remote Reservoir Shocks Rear Pair for 1984–2020 Toyota Land Cruiser 79 Series 4WD — 25001-364A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-364A.
+    price: 1483.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-364A",
+    fitment: "1984–2020 Toyota Land Cruiser 79 Series 4WD; 1984–2020 Toyota Land Cruiser 76 4WD. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    included: ["2 Shocks"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-w-remote-reservoir-shocks-rear-pair-for-1984-2020-toyota-land-cruiser-79-series-4wd",
+    thumbnail: "/product-media/suspension/ss-king-shocks-25001-364a/1.webp",
+    images: ["/product-media/suspension/ss-king-shocks-25001-364a/1.webp"],
+    description: `King Shocks 2.5 Performance w/ Remote Reservoir Shocks Rear Pair for 1984–2020 Toyota Land Cruiser 79 Series 4WD.
+
+King builds race-derived dampers that are fully rebuildable and revalvable. The 2.5 Performance series pairs a 2.5 in body with a reservoir, so the shock carries more oil and gas and runs at lower pressure — the combination that keeps damping consistent and resists fade on long rough sections.
+
+This listing is the part shown, for the rear of the vehicle, supplied as a pair.
+
+Contents: 2 Shocks
+
+Applications: 1984–2020 Toyota Land Cruiser 79 Series 4WD; 1984–2020 Toyota Land Cruiser 76 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Position: Rear
+Quantity: Pair
+Drivetrain: 4WD
+Part number: 25001-364A
+
+Highlights
+
+Package Contains 2 Shocks
+Rear pair of two shock absorbers.
+Designed for 4WD vehicles
+This product only works for 4WD vehicles.
+Supplied as a pair
+
+Warranty
+King 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2479,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance w/ Remote Reservoir Shocks Front Pair for 1984–2020 Toyota Land Cruiser 76 4WD — 25001-363A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-363A.
+    price: 1540.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-363A",
+    fitment: "1984–2020 Toyota Land Cruiser 76 4WD. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    included: ["2 Shocks"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-w-remote-reservoir-shocks-front-pair-for-1984-2020-toyota-land-cruiser-79-series-4wd",
+    thumbnail: "/product-media/suspension/ss-king-shocks-25001-363a/1.webp",
+    images: ["/product-media/suspension/ss-king-shocks-25001-363a/1.webp"],
+    description: `King Shocks 2.5 Performance w/ Remote Reservoir Shocks Front Pair for 1984–2020 Toyota Land Cruiser 76 4WD.
+
+King builds race-derived dampers that are fully rebuildable and revalvable. The 2.5 Performance series pairs a 2.5 in body with a reservoir, so the shock carries more oil and gas and runs at lower pressure — the combination that keeps damping consistent and resists fade on long rough sections.
+
+This listing is the part shown, for the front of the vehicle, supplied as a pair.
+
+Contents: 2 Shocks
+
+Applications: 1984–2020 Toyota Land Cruiser 76 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Position: Front
+Quantity: Pair
+Drivetrain: 4WD
+Part number: 25001-363A
+
+Highlights
+
+Package Contains 2 Shocks
+Pair of two shock absorbers.
+Designed for 4WD vehicles
+This product only works for 4WD vehicles.
+Supplied as a pair
+
+Warranty
+King 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2480,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Steering Stabilizer for 1969–2016 Toyota Land Cruiser 76 4WD RWD — OMESD47",
+    category: "suspension",
+    brand: "old-man-emu",
+    // shocksurplus listing price for ARBOMESD47.
+    price: 104.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Old Man Emu 3 Year / 35,000 Mile Warranty",
+    location: "our supplier network",
+    partNumber: "OMESD47",
+    fitment: "1969–2016 Toyota Land Cruiser 76 4WD RWD. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    included: ["1 Steering Stabilizer"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/old-man-emu-steering-stabilizer-for-1969-2016-toyota-land-cruiser-76-4wd-rwd-omesd47",
+    thumbnail: "/product-media/suspension/ss-old-man-emu-omesd47/1.webp",
+    images: ["/product-media/suspension/ss-old-man-emu-omesd47/1.webp"],
+    description: `Old Man Emu Steering Stabilizer for 1969–2016 Toyota Land Cruiser 76 4WD RWD.
+
+Old Man Emu tunes springs and dampers as a system for a given vehicle and load, which is why the range lists several rates per vehicle rather than one universal part.
+
+This listing is the Steering Stabilizer.
+
+Contents: 1 Steering Stabilizer
+
+Applications: 1969–2016 Toyota Land Cruiser 76 4WD RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Old Man Emu
+Product: Steering Stabilizer
+Drivetrain: 2WD and 4WD
+Part number: OMESD47
+
+Highlights
+
+Package Contains 1 Steering Stabilizer
+You'll be getting one steering damper.
+Fits 4WD & RWD vehicles
+This product works for 4WD and RWD vehicles.
+Steering Stabilizer
+
+Warranty
+Old Man Emu 3 Year / 35,000 Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2482,
+    createdAt: 1789430400000,
+    name: "Dobinsons Coil Springs Kit for 1984–1989 Toyota Land Cruiser 70 4WD w/1.75 in lift — C59-082",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBC59-082.
+    price: 369.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "C59-082",
+    fitment: "1984–1989 Toyota Land Cruiser 70 4WD w/1.75 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-coil-springs-kit-for-1984-1989-toyota-land-cruiser-70-4wd-w-1-75-lift",
+    thumbnail: "/product-media/suspension/ss-dobinsons-c59-082/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-c59-082/1.webp"],
+    description: `Dobinsons Coil Springs Kit for 1984–1989 Toyota Land Cruiser 70 4WD w/1.75 in lift.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the part shown.
+
+Applications: 1984–1989 Toyota Land Cruiser 70 4WD w/1.75 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Drivetrain: 4WD
+Part number: C59-082
+
+Highlights
+
+4WD application
+Fits 1984–1989 Toyota Land Cruiser 70 4WD w/1.75 in lift
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2483,
+    createdAt: 1789430400000,
+    name: "Dobinsons Coil Springs Kit for 1984–1989 Toyota Land Cruiser 70 4WD w/2 in lift — C59-083",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBC59-083.
+    price: 369.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "C59-083",
+    fitment: "1984–1989 Toyota Land Cruiser 70 4WD w/2 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-coil-springs-kit-for-1984-1989-toyota-land-cruiser-70-4wd-w-2-lift",
+    thumbnail: "/product-media/suspension/ss-dobinsons-c59-083/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-c59-083/1.webp"],
+    description: `Dobinsons Coil Springs Kit for 1984–1989 Toyota Land Cruiser 70 4WD w/2 in lift.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the part shown.
+
+Applications: 1984–1989 Toyota Land Cruiser 70 4WD w/2 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Drivetrain: 4WD
+Part number: C59-083
+
+Highlights
+
+4WD application
+Fits 1984–1989 Toyota Land Cruiser 70 4WD w/2 in lift
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2484,
+    createdAt: 1789430400000,
+    name: "Icon 1.5–3.5 in Suspension System Stage 5 Kit for 2008–2021 Toyota Land Cruiser 200 4WD RWD — K53075",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53075.
+    price: 6668.25,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53075",
+    fitment: "2008–2021 Toyota Land Cruiser 200 4WD RWD. Drivetrain: 2WD and 4WD. Height: 1.5–3.5 in Lift.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-1-5-3-5-suspension-system-stage-5-2008-2018-toyota-land-cruiser-4wd-rwd-w-1-5-3-5-lift-k53075",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53075/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53075/1.webp"],
+    description: `Icon 1.5–3.5 in Suspension System Stage 5 Kit for 2008–2021 Toyota Land Cruiser 200 4WD RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 1.5–3.5 in Suspension System - Stage 5, for the front and rear of the vehicle, set for 1.5–3.5 in lift.
+
+Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 1.5–3.5 in Suspension System - Stage 5
+Position: Front and Rear
+Height: 1.5–3.5 in Lift
+Drivetrain: 2WD and 4WD
+Part number: K53075
+
+Highlights
+
+1.5–3.5 in Suspension System - Stage 5
+Increased wheel travel and ride quality over stock
+1.5–3.5 in Lift height setting
+Front and Rear fitment
+2WD and 4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2485,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance w/ Remote Reservoir Shocks Rear Pair for 2008–2021 Toyota Land Cruiser 200 4WD — 25001-267A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-267A.
+    price: 1358.5,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-267A",
+    fitment: "2008–2021 Toyota Land Cruiser 200 4WD. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    included: ["2 Shocks"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-w-remote-reservoir-shocks-rear-pair-for-2008-2020-toyota-land-cruiser-200-4wd",
+    thumbnail: "/product-media/suspension/ss-king-shocks-25001-267a/1.webp",
+    images: ["/product-media/suspension/ss-king-shocks-25001-267a/1.webp"],
+    description: `King Shocks 2.5 Performance w/ Remote Reservoir Shocks Rear Pair for 2008–2021 Toyota Land Cruiser 200 4WD.
+
+King builds race-derived dampers that are fully rebuildable and revalvable. The 2.5 Performance series pairs a 2.5 in body with a reservoir, so the shock carries more oil and gas and runs at lower pressure — the combination that keeps damping consistent and resists fade on long rough sections.
+
+This listing is the part shown, for the rear of the vehicle, supplied as a pair.
+
+Contents: 2 Shocks
+
+Applications: 2008–2021 Toyota Land Cruiser 200 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Position: Rear
+Quantity: Pair
+Drivetrain: 4WD
+Part number: 25001-267A
+
+Highlights
+
+Package Contains 2 Shocks
+Rear pair of two shock absorbers.
+Designed for 4WD vehicles
+This product only works for 4WD vehicles.
+Supplied as a pair
+
+Warranty
+King 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2486,
+    createdAt: 1789430400000,
+    name: "Icon 1.5–3.5 in Suspension System Stage 3 Kit for 2008–2021 Toyota Land Cruiser 200 4WD RWD — K53073",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53073.
+    price: 4365.8,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53073",
+    fitment: "2008–2021 Toyota Land Cruiser 200 4WD RWD. Drivetrain: 2WD and 4WD. Height: 1.5–3.5 in Lift.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-1-5-3-5-suspension-system-stage-3-2008-2018-toyota-land-cruiser-4wd-rwd-w-1-5-3-5-lift-k53073",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53073/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53073/1.webp"],
+    description: `Icon 1.5–3.5 in Suspension System Stage 3 Kit for 2008–2021 Toyota Land Cruiser 200 4WD RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 1.5–3.5 in Suspension System - Stage 3, for the front and rear of the vehicle, set for 1.5–3.5 in lift.
+
+Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 1.5–3.5 in Suspension System - Stage 3
+Position: Front and Rear
+Height: 1.5–3.5 in Lift
+Drivetrain: 2WD and 4WD
+Part number: K53073
+
+Highlights
+
+1.5–3.5 in Suspension System - Stage 3
+1.5–3.5 in Lift height setting
+Front and Rear fitment
+2WD and 4WD application
+Fits 2008–2021 Toyota Land Cruiser 200 4WD RWD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2487,
+    createdAt: 1789430400000,
+    name: "Icon 2.5 Remote Reservoir Coilovers CDCV Front Pair for 2008–2021 Toyota Land Cruiser 200 4WD RWD w/1.5–3.5 in lift — 58760C",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD58760C.
+    price: 2317.45,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "58760C",
+    fitment: "2008–2021 Toyota Land Cruiser 200 4WD RWD w/1.5–3.5 in lift. Drivetrain: 2WD and 4WD. Height: 1.5–3.5 in Lift.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-2-5-remote-reservoir-coilovers-cdcv-58760c",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-58760c/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-58760c/1.webp"],
+    description: `Icon 2.5 Remote Reservoir Coilovers CDCV Front Pair for 2008–2021 Toyota Land Cruiser 200 4WD RWD w/1.5–3.5 in lift.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the Strut & Spring, for the front of the vehicle, supplied as a pair, set for 1.5–3.5 in lift.
+
+Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD w/1.5–3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Strut & Spring
+Position: Front
+Height: 1.5–3.5 in Lift
+Quantity: Pair
+Drivetrain: 2WD and 4WD
+Part number: 58760C
+
+Highlights
+
+Factory Wheels & Tires Fitment: Yes
+Increased wheel travel and ride quality over stock
+Vehicle specific tuned for superior shock damping and control
+External reservoir to attain cooler operating temperatures during extended offroad use
+Strut & Spring
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2488,
+    createdAt: 1789430400000,
+    name: "Icon 1.5–3.5 in Suspension System Stage 4 Kit for 2008–2021 Toyota Land Cruiser 200 4WD RWD — K53074",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53074.
+    price: 5118.3,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53074",
+    fitment: "2008–2021 Toyota Land Cruiser 200 4WD RWD. Drivetrain: 2WD and 4WD. Height: 1.5–3.5 in Lift.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-1-5-3-5-suspension-system-stage-4-2008-2018-toyota-land-cruiser-4wd-rwd-w-1-5-3-5-lift-k53074",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53074/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53074/1.webp"],
+    description: `Icon 1.5–3.5 in Suspension System Stage 4 Kit for 2008–2021 Toyota Land Cruiser 200 4WD RWD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 1.5–3.5 in Suspension System - Stage 4, for the front and rear of the vehicle, set for 1.5–3.5 in lift.
+
+Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 1.5–3.5 in Suspension System - Stage 4
+Position: Front and Rear
+Height: 1.5–3.5 in Lift
+Drivetrain: 2WD and 4WD
+Part number: K53074
+
+Highlights
+
+1.5–3.5 in Suspension System - Stage 4
+1.5–3.5 in Lift height setting
+Front and Rear fitment
+2WD and 4WD application
+Fits 2008–2021 Toyota Land Cruiser 200 4WD RWD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2489,
+    createdAt: 1789430400000,
+    name: "Icon Performance Shocks System Stage 2 Kit for 1998–2012 Toyota Land Cruiser 100 4WD — K53082",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53082.
+    price: 2209.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53082",
+    fitment: "1998–2012 Toyota Land Cruiser 100 4WD. Drivetrain: 4WD. Height: 0–2 in Lift.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-performance-shocks-system-stage-2-1998-2007-toyota-land-cruiser-4wd-w-0-3-lift-k53082",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53082/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53082/1.webp"],
+    description: `Icon Performance Shocks System Stage 2 Kit for 1998–2012 Toyota Land Cruiser 100 4WD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the Performance Shock System Stage 2, for the front and rear of the vehicle, set for 0–2 in lift.
+
+Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Performance Shock System Stage 2
+Position: Front and Rear
+Height: 0–2 in Lift
+Drivetrain: 4WD
+Part number: K53082
+
+Highlights
+
+Performance Shock System Stage 2
+0–2 in Lift height setting
+Front and Rear fitment
+4WD application
+Fits 1998–2012 Toyota Land Cruiser 100 4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2490,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance w/ Remote Reservoir Shocks Rear Pair for 1998–2012 Toyota Land Cruiser 100 4WD — 25001-258A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-258A.
+    price: 1309.1,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-258A",
+    fitment: "1998–2012 Toyota Land Cruiser 100 4WD. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    included: ["2 Shocks"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-w-remote-reservoir-shocks-rear-pair-for-1998-2002-toyota-land-cruiser-100-4wd",
+    thumbnail: "/product-media/suspension/ss-king-shocks-25001-258a/1.webp",
+    images: ["/product-media/suspension/ss-king-shocks-25001-258a/1.webp"],
+    description: `King Shocks 2.5 Performance w/ Remote Reservoir Shocks Rear Pair for 1998–2012 Toyota Land Cruiser 100 4WD.
+
+King builds race-derived dampers that are fully rebuildable and revalvable. The 2.5 Performance series pairs a 2.5 in body with a reservoir, so the shock carries more oil and gas and runs at lower pressure — the combination that keeps damping consistent and resists fade on long rough sections.
+
+This listing is the part shown, for the rear of the vehicle, supplied as a pair.
+
+Contents: 2 Shocks
+
+Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Position: Rear
+Quantity: Pair
+Drivetrain: 4WD
+Part number: 25001-258A
+
+Highlights
+
+Package Contains 2 Shocks
+Rear pair of two shock absorbers.
+Designed for 4WD vehicles
+This product only works for 4WD vehicles.
+Supplied as a pair
+
+Warranty
+King 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2491,
+    createdAt: 1789430400000,
+    name: "Dobinsons MRR 3-way Adjustable Shocks Front Pair for 1998–2012 Toyota Land Cruiser 100 4WD — MRA59-A782",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBMRA59-A782.
+    price: 1719.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MRA59-A782",
+    fitment: "1998–2012 Toyota Land Cruiser 100 4WD. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-mrr-3-way-adjustable-shocks-front-pair-for-1998-2007-toyota-land-cruiser-100-4wd",
+    thumbnail: "/product-media/suspension/ss-dobinsons-mra59-a782/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-mra59-a782/1.webp"],
+    description: `Dobinsons MRR 3-way Adjustable Shocks Front Pair for 1998–2012 Toyota Land Cruiser 100 4WD.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the part shown, for the front of the vehicle, supplied as a pair.
+
+Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Position: Front
+Quantity: Pair
+Drivetrain: 4WD
+Part number: MRA59-A782
+
+Highlights
+
+Supplied as a pair
+Front fitment
+4WD application
+Fits 1998–2012 Toyota Land Cruiser 100 4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2492,
+    createdAt: 1789430400000,
+    name: "Icon Performance Shocks System Stage 1 Kit for 1998–2012 Toyota Land Cruiser 100 4WD — K53081",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53081.
+    price: 1139.85,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53081",
+    fitment: "1998–2012 Toyota Land Cruiser 100 4WD. Drivetrain: 4WD. Height: 0–2 in Lift.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-performance-shocks-system-stage-1-1998-2007-toyota-land-cruiser-4wd-w-0-3-lift-k53081",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53081/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53081/1.webp"],
+    description: `Icon Performance Shocks System Stage 1 Kit for 1998–2012 Toyota Land Cruiser 100 4WD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the Performance Shock System Stage 1, for the front and rear of the vehicle, set for 0–2 in lift.
+
+Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Performance Shock System Stage 1
+Position: Front and Rear
+Height: 0–2 in Lift
+Drivetrain: 4WD
+Part number: K53081
+
+Highlights
+
+Performance Shock System Stage 1
+0–2 in Lift height setting
+Front and Rear fitment
+4WD application
+Fits 1998–2012 Toyota Land Cruiser 100 4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2493,
+    createdAt: 1789430400000,
+    name: "Icon 3 in Suspension System Stage 2 Kit for 1990–1997 Toyota Land Cruiser 80 4WD — K53092",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53092.
+    price: 3274.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53092",
+    fitment: "1990–1997 Toyota Land Cruiser 80 4WD. Drivetrain: 4WD. Height: 3.0 in Lift.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-3-suspension-system-stage-2-1991-1997-toyota-land-cruiser-4wd-w-3-lift-k53092",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53092/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53092/1.webp"],
+    description: `Icon 3 in Suspension System Stage 2 Kit for 1990–1997 Toyota Land Cruiser 80 4WD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 3 in Suspension System - Stage 2, for the front and rear of the vehicle, set for 3.0 in lift.
+
+Applications: 1990–1997 Toyota Land Cruiser 80 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 3 in Suspension System - Stage 2
+Position: Front and Rear
+Height: 3.0 in Lift
+Drivetrain: 4WD
+Part number: K53092
+
+Highlights
+
+3 in Suspension System - Stage 2
+Approximately 40% increased front wheel travel over stock
+3.0 in Lift height setting
+Front and Rear fitment
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2494,
+    createdAt: 1789430400000,
+    name: "Icon 3 in Suspension System Stage 1 Kit for 1991–1997 Toyota Land Cruiser 80 4WD — K53091",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53091.
+    price: 1784.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53091",
+    fitment: "1991–1997 Toyota Land Cruiser 80 4WD. Drivetrain: 4WD. Height: 3.0 in Lift.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-3-suspension-system-stage-1-1991-1997-toyota-land-cruiser-4wd-w-3-lift-k53091",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53091/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53091/1.webp"],
+    description: `Icon 3 in Suspension System Stage 1 Kit for 1991–1997 Toyota Land Cruiser 80 4WD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 3 in Suspension System - Stage 1, for the front and rear of the vehicle, set for 3.0 in lift.
+
+Applications: 1991–1997 Toyota Land Cruiser 80 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 3 in Suspension System - Stage 1
+Position: Front and Rear
+Height: 3.0 in Lift
+Drivetrain: 4WD
+Part number: K53091
+
+Highlights
+
+3 in Suspension System - Stage 1
+Approximately 40% increased front wheel travel over stock
+3.0 in Lift height setting
+Front and Rear fitment
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2495,
+    createdAt: 1789430400000,
+    name: "Icon 3 in Suspension System Stage 3 Kit for 1990–1997 Toyota Land Cruiser 80 4WD — K53093",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK53093.
+    price: 3824.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K53093",
+    fitment: "1990–1997 Toyota Land Cruiser 80 4WD. Drivetrain: 4WD. Height: 3.0 in Lift.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-3-suspension-system-stage-3-1991-1997-toyota-land-cruiser-4wd-w-3-lift-k53093",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k53093/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k53093/1.webp"],
+    description: `Icon 3 in Suspension System Stage 3 Kit for 1990–1997 Toyota Land Cruiser 80 4WD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 3 in Suspension System - Stage 3, for the front and rear of the vehicle, set for 3.0 in lift.
+
+Applications: 1990–1997 Toyota Land Cruiser 80 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 3 in Suspension System - Stage 3
+Position: Front and Rear
+Height: 3.0 in Lift
+Drivetrain: 4WD
+Part number: K53093
+
+Highlights
+
+3 in Suspension System - Stage 3
+3.0 in Lift height setting
+Front and Rear fitment
+4WD application
+Fits 1990–1997 Toyota Land Cruiser 80 4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2496,
+    createdAt: 1789430400000,
+    name: "Camburg Toyota Prado 120/150 03–21 KINETIK Billet Uniball Upper Control Arms — CBG310192-GRY",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG310192-GRY.
+    price: 1699,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG310192-GRY",
+    fitment: "Toyota Prado 120/150 2003–2021.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-toyota-prado-120-150-03-21-kinetik-billet-uniball-upper-control-arms",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg310192-gry/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg310192-gry/1.webp"],
+    description: `Camburg Toyota Prado 120/150 03–21 KINETIK Billet Uniball Upper Control Arms.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Toyota Prado 120/150 2003–2021.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Part number: CBG310192-GRY
+
+Highlights
+
+Uniball Upper Control Arms
+Fits Toyota Prado 120/150 2003–2021
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2497,
+    createdAt: 1789430400000,
+    name: "Camburg Toyota Prado 120/150 03–21 1.25 in Performance Uniball Upper Control Arms — CBG310044",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG310044.
+    price: 1099,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG310044",
+    fitment: "Toyota Prado 120/150 2003–2021.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-toyota-prado-120-150-03-21-1-25-performance-uniball-upper-control-arms",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg310044/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg310044/1.webp"],
+    description: `Camburg Toyota Prado 120/150 03–21 1.25 in Performance Uniball Upper Control Arms.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Toyota Prado 120/150 2003–2021.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Part number: CBG310044
+
+Highlights
+
+Uniball Upper Control Arms
+Fits Toyota Prado 120/150 2003–2021
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2498,
+    createdAt: 1789430400000,
+    name: "Dobinsons IMS Struts Front Pair for 2010–2024 Toyota 4Runner 4WD — IMS59-50700",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBIMS59-50700.
+    price: 844.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "IMS59-50700",
+    fitment: "2010–2024 Toyota 4Runner 4WD; Toyota FJ Cruiser 2010–2017; Toyota 4Runner 5th Gen; Toyota Prado 150; Lexus GX460. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-ims-struts-front-pair-for-2010-2023-toyota-4runner-4wd",
+    thumbnail: "/product-media/suspension/ss-dobinsons-ims59-50700/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-ims59-50700/1.webp"],
+    description: `Dobinsons IMS Struts Front Pair for 2010–2024 Toyota 4Runner 4WD.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the Strut, for the front of the vehicle, supplied as a pair.
+
+Applications: 2010–2024 Toyota 4Runner 4WD; Toyota FJ Cruiser 2010–2017; Toyota 4Runner 5th Gen; Toyota Prado 150; Lexus GX460.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Product: Strut
+Position: Front
+Quantity: Pair
+Drivetrain: 4WD
+Part number: IMS59-50700
+
+Highlights
+
+Strut
+Supplied as a pair
+Front fitment
+4WD application
+Fits 2010–2024 Toyota 4Runner 4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2499,
+    createdAt: 1789430400000,
+    name: "Dobinsons Extended Travel MRR 3-way Adjustable Struts Front Pair for 2010–2024 Toyota 4runner 4WD w/3 in lift — MRA59-A574",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBMRA59-A574.
+    price: 1632.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MRA59-A574",
+    fitment: "2010–2024 Toyota 4runner 4WD w/3 in lift; Toyota FJ Cruiser 2010–2017; Toyota 4Runner 5th Gen; Toyota Prado 150; Lexus GX460. Drivetrain: 4WD. Height: 3.0 in Lift.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-extended-travel-mrr-3-way-adjustable-struts-front-pair-for-2010-toyota-4runner-4wd-w-3-lift",
+    thumbnail: "/product-media/suspension/ss-dobinsons-mra59-a574/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-mra59-a574/1.webp"],
+    description: `Dobinsons Extended Travel MRR 3-way Adjustable Struts Front Pair for 2010–2024 Toyota 4runner 4WD w/3 in lift.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the Strut, for the front of the vehicle, supplied as a pair, set for 3.0 in lift.
+
+Applications: 2010–2024 Toyota 4runner 4WD w/3 in lift; Toyota FJ Cruiser 2010–2017; Toyota 4Runner 5th Gen; Toyota Prado 150; Lexus GX460.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Product: Strut
+Position: Front
+Height: 3.0 in Lift
+Quantity: Pair
+Drivetrain: 4WD
+Part number: MRA59-A574
+
+Highlights
+
+FrontStrut AssemblyInstructions
+Strut
+Supplied as a pair
+3.0 in Lift height setting
+Front fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2500,
+    createdAt: 1789430400000,
+    name: "Dobinsons GS Struts Front Pair for 2003–2009 Toyota 4Runner 4WD — GS59-221",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBGS59-221.
+    price: 469.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "GS59-221",
+    fitment: "2003–2009 Toyota 4Runner 4WD; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-gs-struts-front-pair-for-2007-2010-toyota-fj-cruiser-4wd",
+    thumbnail: "/product-media/suspension/ss-dobinsons-gs59-221/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-gs59-221/1.webp"],
+    description: `Dobinsons GS Struts Front Pair for 2003–2009 Toyota 4Runner 4WD.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the Strut, for the front of the vehicle, supplied as a pair.
+
+Applications: 2003–2009 Toyota 4Runner 4WD; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Product: Strut
+Position: Front
+Quantity: Pair
+Drivetrain: 4WD
+Part number: GS59-221
+
+Highlights
+
+Strut
+Supplied as a pair
+Front fitment
+4WD application
+Fits 2003–2009 Toyota 4Runner 4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2501,
+    createdAt: 1789430400000,
+    name: "Dobinsons Extended Travel GS Struts Front Pair for 2003–2009 Toyota 4Runner 4WD — GS59-220",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBGS59-220.
+    price: 469.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "GS59-220",
+    fitment: "2003–2009 Toyota 4Runner 4WD; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-extended-travel-gs-struts-front-pair-for-2002-lexus-gx470-awd",
+    thumbnail: "/product-media/suspension/ss-dobinsons-gs59-220/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-gs59-220/1.webp"],
+    description: `Dobinsons Extended Travel GS Struts Front Pair for 2003–2009 Toyota 4Runner 4WD.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the Strut, for the front of the vehicle, supplied as a pair.
+
+Applications: 2003–2009 Toyota 4Runner 4WD; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Product: Strut
+Position: Front
+Quantity: Pair
+Drivetrain: 4WD
+Part number: GS59-220
+
+Highlights
+
+Strut
+Supplied as a pair
+Front fitment
+4WD application
+Fits 2003–2009 Toyota 4Runner 4WD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2502,
+    createdAt: 1789430400000,
+    name: "Dobinsons Extended Travel MRR 3-way Adjustable Struts Front Pair for 2016–2023 Toyota Tacoma 4WD w/3 in lift — MRA59-A220",
+    category: "suspension",
+    brand: "dobinsons",
+    // shocksurplus listing price for DOBMRA59-A220.
+    price: 1632.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MRA59-A220",
+    fitment: "2016–2023 Toyota Tacoma 4WD w/3 in lift; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470. Drivetrain: 4WD. Height: 3.0 in Lift.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/dobinsons-extended-travel-mrr-3-way-adjustable-struts-front-pair-for-2016-toyota-tacoma-4wd-w-3-lift",
+    thumbnail: "/product-media/suspension/ss-dobinsons-mra59-a220/1.webp",
+    images: ["/product-media/suspension/ss-dobinsons-mra59-a220/1.webp"],
+    description: `Dobinsons Extended Travel MRR 3-way Adjustable Struts Front Pair for 2016–2023 Toyota Tacoma 4WD w/3 in lift.
+
+Dobinsons is an Australian spring and shock maker whose range is built around loaded touring vehicles. Its twin-tube dampers run a low-pressure nitrogen charge to limit oil aeration; the IMS and MRR lines move to monotube and remote-reservoir designs for sustained rough-road work.
+
+This listing is the Strut, for the front of the vehicle, supplied as a pair, set for 3.0 in lift.
+
+Applications: 2016–2023 Toyota Tacoma 4WD w/3 in lift; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Dobinsons
+Product: Strut
+Position: Front
+Height: 3.0 in Lift
+Quantity: Pair
+Drivetrain: 4WD
+Part number: MRA59-A220
+
+Highlights
+
+Reservoir Installation Instructions
+FrontStrut AssemblyInstructions
+Strut
+Supplied as a pair
+3.0 in Lift height setting
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2504,
+    createdAt: 1789430400000,
+    name: "Fabtech 1.5 in Leveling System Kit w/1.5 in lift 2015–2020 Ford F-150 4WD RWD — FTL5207",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABFTL5207.
+    price: 164.73,
+    stock: true,
+    condition: "brand-new",
+    warranty: "5 Year 60,000 Mile Powertrain Warranty",
+    location: "our supplier network",
+    partNumber: "FTL5207",
+    fitment: "2015–2020 Ford F-150 4WD RWD. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-1-5-leveling-system-kit-for-2015-2017-ford-f150-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-ftl5207/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-ftl5207/1.webp"],
+    description: `Fabtech 1.5 in Leveling System Kit w/1.5 in lift 2015–2020 Ford F-150 4WD RWD.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 1.5 in Leveling System.
+
+Applications: 2015–2020 Ford F-150 4WD RWD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 1.5 in Leveling System
+Drivetrain: 2WD and 4WD
+Part number: FTL5207
+
+Highlights
+
+1.5 in Leveling System
+Heavy Duty Construction
+1/4 in Thick steel with high grade hardware
+Aircraft grade billet aluminum
+2WD and 4WD application
+
+Warranty
+5 Year 60,000 Mile Powertrain Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2505,
+    createdAt: 1789430400000,
+    name: "Fabtech 2 in Leveling System Kit for 2009–2014 Ford F150 4WD RWD w/2 in lift — FTL5204",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABFTL5204.
+    price: 137.09,
+    stock: true,
+    condition: "brand-new",
+    warranty: "5 Year 60,000 Mile Powertrain Warranty",
+    location: "our supplier network",
+    partNumber: "FTL5204",
+    fitment: "2009–2014 Ford F150 4WD RWD w/2 in lift. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-2-leveling-system-kit-for-2010-2014-ford-f150-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-ftl5204/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-ftl5204/1.webp"],
+    description: `Fabtech 2 in Leveling System Kit for 2009–2014 Ford F150 4WD RWD w/2 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 2 in Leveling System.
+
+Applications: 2009–2014 Ford F150 4WD RWD w/2 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 2 in Leveling System
+Drivetrain: 2WD and 4WD
+Part number: FTL5204
+
+Highlights
+
+Heavy Duty Construction
+1/4 in Thick steel with high grade hardware
+Aircraft grade billet aluminum
+Powdercoated for maximum corrosion resistance
+2 in Leveling System
+
+Warranty
+5 Year 60,000 Mile Powertrain Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2506,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4wd 17–23 King 2.50 in Performance Leveling Kit — CBG110199-G",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110199-G.
+    price: 3487.97,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110199-G",
+    fitment: "Ford F-250/350 4wd 2017–2023.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-17-23-king-2-50-performance-leveling-kit-1",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110199-g/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110199-g/1.webp"],
+    description: `Camburg Ford F-250/350 4wd 17–23 King 2.50 in Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4wd 2017–2023.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Part number: CBG110199-G
+
+Highlights
+
+in Performance Leveling Kit
+Fits Ford F-250/350 4wd 2017–2023
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2507,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4WD 17–23 Bilstein 5100 Performance Leveling Kit — CBG110171",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110171.
+    price: 1203.97,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110171",
+    fitment: "Ford F-250/350 4WD 2017–2023. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-17-23-bilstein-5100-performance-leveling-kit",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110171/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110171/1.webp"],
+    description: `Camburg Ford F-250/350 4WD 17–23 Bilstein 5100 Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4WD 2017–2023.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Drivetrain: 4WD
+Part number: CBG110171
+
+Highlights
+
+4WD application
+5100 Performance Leveling Kit
+Fits Ford F-250/350 4WD 2017–2023
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2508,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4WD 17–23 FOX 2.00 in Performance Leveling Kit — CBG110141",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110141.
+    price: 1651.77,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110141",
+    fitment: "Ford F-250/350 4WD 2017–2023. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-17-23-fox-2-00-performance-leveling-kit",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110141/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110141/1.webp"],
+    description: `Camburg Ford F-250/350 4WD 17–23 FOX 2.00 in Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4WD 2017–2023.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Drivetrain: 4WD
+Part number: CBG110141
+
+Highlights
+
+4WD application
+in Performance Leveling Kit
+Fits Ford F-250/350 4WD 2017–2023
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2509,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4WD 17–23 FOX 2.00 in Performance Leveling Kit — CBG110141-G",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110141-G.
+    price: 1651.77,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110141-G",
+    fitment: "Ford F-250/350 4WD 2017–2023. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-17-23-fox-2-00-performance-leveling-kit-1",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110141-g/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110141-g/1.webp"],
+    description: `Camburg Ford F-250/350 4WD 17–23 FOX 2.00 in Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4WD 2017–2023.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Drivetrain: 4WD
+Part number: CBG110141-G
+
+Highlights
+
+4WD application
+in Performance Leveling Kit
+Fits Ford F-250/350 4WD 2017–2023
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2510,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4WD 05–16 Bilstein 5100 Performance Leveling Kit — CBG110081-G",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110081-G.
+    price: 787.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110081-G",
+    fitment: "Ford F-250/350 4WD 2005–2016. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-05-16-bilstein-5100-performance-leveling-kit-1",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110081-g/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110081-g/1.webp"],
+    description: `Camburg Ford F-250/350 4WD 05–16 Bilstein 5100 Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4WD 2005–2016.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Drivetrain: 4WD
+Part number: CBG110081-G
+
+Highlights
+
+4WD application
+5100 Performance Leveling Kit
+Fits Ford F-250/350 4WD 2005–2016
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2511,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4wd 17–23 FOX 2.5 Performance Elite DSC Leveling Kit — CBG110247-G",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110247-G.
+    price: 4303.87,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110247-G",
+    fitment: "Ford F-250/350 4wd 2017–2023.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-17-23-fox-2-5-performance-elite-dsc-leveling-kit",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110247-g/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110247-g/1.webp"],
+    description: `Camburg Ford F-250/350 4wd 17–23 FOX 2.5 Performance Elite DSC Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4wd 2017–2023.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Part number: CBG110247-G
+
+Highlights
+
+Elite DSC Leveling Kit
+Fits Ford F-250/350 4wd 2017–2023
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2512,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4wd 17–23 King 2.50 in Performance Leveling Kit — CBG110199",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110199.
+    price: 3487.97,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110199",
+    fitment: "Ford F-250/350 4wd 2017–2023.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-17-23-king-2-50-performance-leveling-kit",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110199/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110199/1.webp"],
+    description: `Camburg Ford F-250/350 4wd 17–23 King 2.50 in Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4wd 2017–2023.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Part number: CBG110199
+
+Highlights
+
+in Performance Leveling Kit
+Fits Ford F-250/350 4wd 2017–2023
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2513,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4WD 17–23 Bilstein 5100 Performance Leveling Kit — CBG110171-G",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110171-G.
+    price: 1203.97,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110171-G",
+    fitment: "Ford F-250/350 4WD 2017–2023. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-17-23-bilstein-5100-performance-leveling-kit-1",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110171-g/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110171-g/1.webp"],
+    description: `Camburg Ford F-250/350 4WD 17–23 Bilstein 5100 Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4WD 2017–2023.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Drivetrain: 4WD
+Part number: CBG110171-G
+
+Highlights
+
+4WD application
+5100 Performance Leveling Kit
+Fits Ford F-250/350 4WD 2017–2023
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2514,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4wd 05–16 King 2.5 Performance Leveling Kit — CBG110201",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110201.
+    price: 3071.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110201",
+    fitment: "Ford F-250/350 4wd 2005–2016.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-05-16-king-2-5-performance-leveling-kit",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110201/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110201/1.webp"],
+    description: `Camburg Ford F-250/350 4wd 05–16 King 2.5 Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4wd 2005–2016.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Part number: CBG110201
+
+Highlights
+
+2.5 Performance Leveling Kit
+Fits Ford F-250/350 4wd 2005–2016
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2515,
+    createdAt: 1789430400000,
+    name: "Camburg Ford F-250/350 4wd 05–16 King 2.5 Performance Leveling Kit — CBG110201-G",
+    category: "suspension",
+    brand: "camburg",
+    // shocksurplus listing price for CBG110201-G.
+    price: 3071.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CBG110201-G",
+    fitment: "Ford F-250/350 4wd 2005–2016.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/camburg-ford-f-250-350-4wd-05-16-king-2-5-performance-leveling-kit-1",
+    thumbnail: "/product-media/suspension/ss-camburg-cbg110201-g/1.webp",
+    images: ["/product-media/suspension/ss-camburg-cbg110201-g/1.webp"],
+    description: `Camburg Ford F-250/350 4wd 05–16 King 2.5 Performance Leveling Kit.
+
+Camburg Engineering builds chassis and suspension parts for desert-style trucks: tubular and billet control arms, uniball pivots and long-travel geometry, aimed at owners who want more travel and stronger pivots than the factory arms allow.
+
+This listing is the part shown.
+
+Applications: Ford F-250/350 4wd 2005–2016.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Camburg
+Part number: CBG110201-G
+
+Highlights
+
+2.5 Performance Leveling Kit
+Fits Ford F-250/350 4wd 2005–2016
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2516,
+    createdAt: 1789430400000,
+    name: "Fabtech 2.5 in Basic Lift Kit w/Stealth Shocks for 2017–2024 Ford F250 Super Duty 4WD w/2.5 in lift — K2333M",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK2333M.
+    price: 1312.86,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K2333M",
+    fitment: "2017–2024 Ford F250 Super Duty 4WD w/2.5 in lift; 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-2-5-basic-lift-kit-w-stealth-shocks-kit-for-2017-2020-ford-f250-super-duty-4wd-w-2-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k2333m/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k2333m/1.webp"],
+    description: `Fabtech 2.5 in Basic Lift Kit w/Stealth Shocks for 2017–2024 Ford F250 Super Duty 4WD w/2.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 2.5 in Basic Lift Kit w/Stealth Shocks.
+
+Applications: 2017–2024 Ford F250 Super Duty 4WD w/2.5 in lift; 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 2.5 in Basic Lift Kit w/Stealth Shocks
+Drivetrain: 4WD
+Part number: K2333M
+
+Highlights
+
+2.5 in Basic Lift Kit w/Stealth Shocks
+Adjustable Track Bar
+Sway Bar Drop Brackets
+Brakeline Extension Brackets
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2517,
+    createdAt: 1789430400000,
+    name: "Icon 2.5 in Suspension System Stage 6 Kit for 2020–2024 Ford F350 Super Duty 4WD — K62526",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVDK62526.
+    price: 6650.79,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Icon 1 Year Warranty",
+    location: "our supplier network",
+    partNumber: "K62526",
+    fitment: "2020–2024 Ford F350 Super Duty 4WD. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-2-5-suspension-system-stage-6-kit-for-2020-ford-f350-super-duty-4wd",
+    thumbnail: "/product-media/suspension/ss-icon-vehicle-dynamics-k62526/1.webp",
+    images: ["/product-media/suspension/ss-icon-vehicle-dynamics-k62526/1.webp"],
+    description: `Icon 2.5 in Suspension System Stage 6 Kit for 2020–2024 Ford F350 Super Duty 4WD.
+
+ICON builds vehicle-specific damping rather than one universal valving curve, so a kit is tuned around the weight and geometry of the truck it is sold for. The 2.5 series uses a 2.5 in body with more piston area and oil volume than a factory damper, which is what holds damping consistent once the shock is hot.
+
+This listing is the 2.5 in Suspension System - Stage 6, for the front and rear of the vehicle.
+
+Applications: 2020–2024 Ford F350 Super Duty 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: 2.5 in Suspension System - Stage 6
+Position: Front and Rear
+Drivetrain: 4WD
+Part number: K62526
+
+Highlights
+
+2.5 in suspension system - stage 6.
+Trucks equipped with Tremor package with have front lift height of 1.5 in over stock.
+Designed for 4WD vehicles
+This product only works for 4WD vehicles.
+2.5 in Suspension System - Stage 6
+
+Warranty
+Icon 1 Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2518,
+    createdAt: 1789430400000,
+    name: "Fabtech 2.5 in Basic Lift Kit — K2334DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK2334DL.
+    price: 2491.76,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K2334DL",
+    fitment: "2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-2-5-basic-lift-kit-w-front-dirt-logic-2-25-shocks-w-reservoir-rear-2-25-shocks-kit-for-2017-2020-ford-f350-super-duty-4wd-w-2-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k2334dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k2334dl/1.webp"],
+    description: `Fabtech 2.5 in Basic Lift Kit w/Front Dirt Logic 2.25 Shocks w/Reservoir & Rear 2.25 Shocks for 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 2.5 in Basic Lift Kit w/Front Dirt Logic 2.25 Shocks w/Reservoir & Rear 2.25 Shocks, for the front and rear of the vehicle.
+
+Applications: 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 2.5 in Basic Lift Kit w/Front Dirt Logic 2.25 Shocks w/Reservoir & Rear 2.25 Shocks
+Position: Front and Rear
+Drivetrain: 4WD
+Part number: K2334DL
+
+Highlights
+
+2.5 in Basic Lift Kit w/Front Dirt Logic 2.25 Shocks w/Reservoir & Rear 2.25 Shocks
+Fabtech Replacement Radius Arms
+Fabtech Front Coil Springs
+Trac Bar Relocation Bracket
+Front and Rear fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2519,
+    createdAt: 1789430400000,
+    name: "Fabtech 2.5 in Budget Lift Kit w/Dirt Logic 2.25 Shocks for 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift — K2339DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK2339DL.
+    price: 1816.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K2339DL",
+    fitment: "2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-2-5-budget-lift-kit-w-dirt-logic-2-25-shocks-kit-for-2017-2020-ford-f350-super-duty-4wd-w-2-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k2339dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k2339dl/1.webp"],
+    description: `Fabtech 2.5 in Budget Lift Kit w/Dirt Logic 2.25 Shocks for 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 2.5 in Budget Lift Kit w/Dirt Logic 2.25 Shocks.
+
+Applications: 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 2.5 in Budget Lift Kit w/Dirt Logic 2.25 Shocks
+Drivetrain: 4WD
+Part number: K2339DL
+
+Highlights
+
+2.5 in Budget Lift Kit w/Dirt Logic 2.25 Shocks
+Trac Bar Relocation Bracket
+Sway Bar Drop Brackets
+Brakeline Extension Brackets
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2520,
+    createdAt: 1789430400000,
+    name: "Fabtech 5 in Basic Lift Kit w/Coil Spacers & Performance Shocks for 2019–2024 Ram 2500 4WD w/5 in lift — K3173",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK3173.
+    price: 1538.34,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Includes Free 5 year 60,000 mile Powertrain warranty",
+    location: "our supplier network",
+    partNumber: "K3173",
+    fitment: "2019–2024 Ram 2500 4WD w/5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-5-basic-lift-kit-w-coil-spacers-performance-shocks-kit-for-2019-ram-2500-4wd-w-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k3173/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k3173/1.webp"],
+    description: `Fabtech 5 in Basic Lift Kit w/Coil Spacers & Performance Shocks for 2019–2024 Ram 2500 4WD w/5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 5 in Basic Lift Kit w/Coil Spacers & Performance Shocks.
+
+Applications: 2019–2024 Ram 2500 4WD w/5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 5 in Basic Lift Kit w/Coil Spacers & Performance Shocks
+Drivetrain: 4WD
+Part number: K3173
+
+Highlights
+
+5 in Basic Lift Kit w/Coil Spacers & Performance Shocks
+Retains factory coil springs for proper handling and load carrying capacity
+Heavy duty Radius Arm drop brackets provide proper caster for the increased ride height
+1/4 in thick steel bracket construction throughout for added strength
+4WD application
+
+Warranty
+Includes Free 5 year 60,000 mile Powertrain warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2521,
+    createdAt: 1789430400000,
+    name: "Fabtech 5 in Basic Lift Kit w/Coil Spacers & Stealth Shocks for 2019–2024 Ram 2500 4WD w/5 in lift — K3173M",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK3173M.
+    price: 1705.5,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Includes Free 5 year 60,000 mile Powertrain warranty",
+    location: "our supplier network",
+    partNumber: "K3173M",
+    fitment: "2019–2024 Ram 2500 4WD w/5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-5-basic-lift-kit-w-coil-spacers-stealth-shocks-kit-for-2019-ram-2500-4wd-w-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k3173m/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k3173m/1.webp"],
+    description: `Fabtech 5 in Basic Lift Kit w/Coil Spacers & Stealth Shocks for 2019–2024 Ram 2500 4WD w/5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 5 in Basic Lift Kit w/Coil Spacers & Stealth Shocks.
+
+Applications: 2019–2024 Ram 2500 4WD w/5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 5 in Basic Lift Kit w/Coil Spacers & Stealth Shocks
+Drivetrain: 4WD
+Part number: K3173M
+
+Highlights
+
+5 in Basic Lift Kit w/Coil Spacers & Stealth Shocks
+Retains factory coil springs for proper handling and load carrying capacity
+Heavy duty Radius Arm drop brackets provide proper caster for the increased ride height
+1/4 in thick steel bracket construction throughout for added strength
+4WD application
+
+Warranty
+Includes Free 5 year 60,000 mile Powertrain warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2522,
+    createdAt: 1789430400000,
+    name: "Fabtech 4.5 in Performance System w/Dirt Logic Shocks Kit for 2009–2013 Ram 3500 4WD w/4.5 in lift — K3037DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK3037DL.
+    price: 2656.81,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K3037DL",
+    fitment: "2009–2013 Ram 3500 4WD w/4.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-4-5-performance-system-w-dirt-logic-shocks-kit-for-2009-2013-ram-3500-4wd-w-4-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k3037dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k3037dl/1.webp"],
+    description: `Fabtech 4.5 in Performance System w/Dirt Logic Shocks Kit for 2009–2013 Ram 3500 4WD w/4.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 4.5 in Performance System w/Dirt Logic Shocks.
+
+Applications: 2009–2013 Ram 3500 4WD w/4.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 4.5 in Performance System w/Dirt Logic Shocks
+Drivetrain: 4WD
+Part number: K3037DL
+
+Highlights
+
+4.5 in Performance System w/Dirt Logic Shocks
+1 3/4 in OD Upper & Lower Control Links
+Rear Block & U-bolt Kit
+Front Performance Shocks
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2523,
+    createdAt: 1789430400000,
+    name: "Fabtech 4.5 in Performance System w/Performance Shocks Kit for 2003–2010 Dodge Ram 3500 4WD w/4.5 in lift — K3006",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK3006.
+    price: 1494.1,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K3006",
+    fitment: "2003–2010 Dodge Ram 3500 4WD w/4.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-4-5-performance-system-w-performance-shocks-kit-for-2004-2008-dodge-ram-3500-4wd-w-4-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k3006/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k3006/1.webp"],
+    description: `Fabtech 4.5 in Performance System w/Performance Shocks Kit for 2003–2010 Dodge Ram 3500 4WD w/4.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 4.5 in Performance System w/Performance Shocks.
+
+Applications: 2003–2010 Dodge Ram 3500 4WD w/4.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 4.5 in Performance System w/Performance Shocks
+Drivetrain: 4WD
+Part number: K3006
+
+Highlights
+
+4.5 in Performance System w/Performance Shocks
+High quality Fabtech construction with a low price
+1/4 in thick steel lower control arm crossmembers and skid plate
+Allows use of 33 in or 35 in tires
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2524,
+    createdAt: 1789430400000,
+    name: "Fabtech 6 in Performance System w/Dirt Logic Shocks Kit for 2009–2013 Ram 3500 4WD w/6 in lift — K3038DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK3038DL.
+    price: 2729.66,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K3038DL",
+    fitment: "2009–2013 Ram 3500 4WD w/6 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-6-performance-system-w-dirt-logic-shocks-kit-for-2009-2013-ram-3500-4wd-w-6-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k3038dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k3038dl/1.webp"],
+    description: `Fabtech 6 in Performance System w/Dirt Logic Shocks Kit for 2009–2013 Ram 3500 4WD w/6 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 6 in Performance System w/Dirt Logic Shocks.
+
+Applications: 2009–2013 Ram 3500 4WD w/6 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 6 in Performance System w/Dirt Logic Shocks
+Drivetrain: 4WD
+Part number: K3038DL
+
+Highlights
+
+6 in Performance System w/Dirt Logic Shocks
+1 3/4 in OD Upper & Lower Control Links
+Rear Block & U-bolt Kit
+Front Stealth Shocks
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2525,
+    createdAt: 1789430400000,
+    name: "Fabtech 6 in Performance System w/Performance Shocks Kit for 2009–2013 Ram 3500 4WD w/6 in lift — K3038",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK3038.
+    price: 1603.14,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K3038",
+    fitment: "2009–2013 Ram 3500 4WD w/6 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-6-performance-system-w-performance-shocks-kit-for-2009-2013-ram-3500-4wd-w-6-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k3038/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k3038/1.webp"],
+    description: `Fabtech 6 in Performance System w/Performance Shocks Kit for 2009–2013 Ram 3500 4WD w/6 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 6 in Performance System w/Performance Shocks.
+
+Applications: 2009–2013 Ram 3500 4WD w/6 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 6 in Performance System w/Performance Shocks
+Drivetrain: 4WD
+Part number: K3038
+
+Highlights
+
+6 in Performance System w/Performance Shocks
+1.75 in OD Upper & Lower Control Links
+Rear Block & U-bolt Kit
+Front Dirt Logic 2.25 Non Resi
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2526,
+    createdAt: 1789430400000,
+    name: "Fabtech 3 in Ball Joint UCA Lift Kit — K1126DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1126DL.
+    price: 2852.4,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1126DL",
+    fitment: "2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-ball-joint-uca-lift-kit-w-front-dirt-logic-2-5-coilovers-rear-2-25-shocks-kit-for-2019-2020-chevrolet-silverado-1500-4wd-w-3-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1126dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1126dl/1.webp"],
+    description: `Fabtech 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks for 2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks, for the front and rear of the vehicle.
+
+Applications: 2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks
+Position: Front and Rear
+Drivetrain: 4WD
+Part number: K1126DL
+
+Highlights
+
+3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks
+Increased ground clearance
+Extended range upper ball joints provide a smooth quiet ride
+Increased fender clearance compared to a Leveling Kit for 33 in tall tires
+Front and Rear fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2527,
+    createdAt: 1789430400000,
+    name: "Fabtech 3 in Ball Joint UCA Lift Kit — K1127DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1127DL.
+    price: 3299.05,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1127DL",
+    fitment: "2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-ball-joint-uca-lift-kit-w-front-dirt-logic-2-5-coilovers-w-reservoir-rear-2-25-shocks-kit-for-2019-2020-chevrolet-silverado-1500-4wd-w-3-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1127dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1127dl/1.webp"],
+    description: `Fabtech 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers w/Reservoir & Rear 2.25 Shocks for 2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers w/Reservoir & Rear 2.25 Shocks, for the front and rear of the vehicle.
+
+Applications: 2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers w/Reservoir & Rear 2.25 Shocks
+Position: Front and Rear
+Drivetrain: 4WD
+Part number: K1127DL
+
+Highlights
+
+3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers w/Reservoir & Rear 2.25 Shocks
+Increased ground clearance
+Extended range upper ball joints provide a smooth quiet ride
+Increased fender clearance compared to a Leveling Kit for 33 in tall tires
+Front and Rear fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2528,
+    createdAt: 1789430400000,
+    name: "Fabtech 3 in Uniball UCA Lift Kit w/Rear Performance Shocks for 2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift — K1071",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1071.
+    price: 1142.72,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1071",
+    fitment: "2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-uniball-uca-lift-kit-w-rear-performance-shocks-kit-for-2014-chevrolet-silverado-1500-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1071/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1071/1.webp"],
+    description: `Fabtech 3 in Uniball UCA Lift Kit w/Rear Performance Shocks for 2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3 in Uniball UCA Lift Kit w/Rear Performance Shocks, for the rear of the vehicle.
+
+Applications: 2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3 in Uniball UCA Lift Kit w/Rear Performance Shocks
+Position: Rear
+Drivetrain: 2WD and 4WD
+Part number: K1071
+
+Highlights
+
+3 in Uniball UCA Lift Kit w/Rear Performance Shocks
+This system offers a mild lift height with easy installation for clearance of 33 in tall tires on K1500s.
+Increased ground clearance
+Top quality Uniball Upper Control Arms for aggressive offroad use
+Rear fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2529,
+    createdAt: 1789430400000,
+    name: "Fabtech 3 in Ball Joint UCA Lift Kit — K1070DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1070DL.
+    price: 2987.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1070DL",
+    fitment: "2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-ball-joint-uca-lift-kit-w-front-dirt-logic-2-5-coilovers-rear-2-25-shocks-kit-for-2014-chevrolet-silverado-1500-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1070dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1070dl/1.webp"],
+    description: `Fabtech 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks for 2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks, for the front and rear of the vehicle.
+
+Applications: 2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks
+Position: Front and Rear
+Drivetrain: 2WD and 4WD
+Part number: K1070DL
+
+Highlights
+
+3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilovers & Rear 2.25 Shocks
+Value priced system with Fabtech quality
+Increased ground clearance
+Includes Dirt Logic 2.5 Coilovers for superior damping
+Front and Rear fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2530,
+    createdAt: 1789430400000,
+    name: "Fabtech 6 in RTS Lift Kit w/Performance Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift — K1159",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1159.
+    price: 2628.76,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1159",
+    fitment: "2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-6-rts-lift-kit-w-performance-shocks-kit-for-2020-2021-chevrolet-silverado-2500-hd-4wd-w-6-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1159/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1159/1.webp"],
+    description: `Fabtech 6 in RTS Lift Kit w/Performance Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 6 in RTS Lift Kit w/Performance Shocks.
+
+Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 6 in RTS Lift Kit w/Performance Shocks
+Drivetrain: 4WD
+Part number: K1159
+
+Highlights
+
+6 in RTS Lift Kit w/Performance Shocks
+Fabtech RTS® Lift Kit
+Other lift kits leave the torsion bars exposed, which reduces clearance and adds risk of damage.
+Oversized tie rods are provided to replace the stock units that are designed to handle oversized tires.
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2531,
+    createdAt: 1789430400000,
+    name: "Fabtech 6 in RTS Lift Kit w/Dirt Logic 2.25 Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift — K1159DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1159DL.
+    price: 3697.34,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1159DL",
+    fitment: "2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-6-rts-lift-kit-w-dirt-logic-2-25-shocks-kit-for-2020-2021-chevrolet-silverado-2500-hd-4wd-w-6-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1159dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1159dl/1.webp"],
+    description: `Fabtech 6 in RTS Lift Kit w/Dirt Logic 2.25 Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 6 in RTS Lift Kit w/Dirt Logic 2.25 Shocks.
+
+Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 6 in RTS Lift Kit w/Dirt Logic 2.25 Shocks
+Drivetrain: 4WD
+Part number: K1159DL
+
+Highlights
+
+6 in RTS Lift Kit w/Dirt Logic 2.25 Shocks
+Fabtech RTS® Lift Kit
+Other lift kits leave the torsion bars exposed, which reduces clearance and adds risk of damage.
+Oversized tie rods are provided to replace the stock units that are designed to handle oversized tires.
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2532,
+    createdAt: 1789430400000,
+    name: "Fabtech 6 in RTS Lift Kit — K1160DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1160DL.
+    price: 3916.88,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1160DL",
+    fitment: "2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-6-rts-lift-kit-w-front-dirt-logic-2-25-reservoir-shocks-rear-2-25-shocks-kit-for-2020-2021-chevrolet-silverado-2500-hd-4wd-w-6-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1160dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1160dl/1.webp"],
+    description: `Fabtech 6 in RTS Lift Kit w/Front Dirt Logic 2.25 Reservoir Shocks & Rear 2.25 Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 6 in RTS Lift Kit w/Front Dirt Logic 2.25 Reservoir Shocks & Rear 2.25 Shocks, for the front and rear of the vehicle.
+
+Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 6 in RTS Lift Kit w/Front Dirt Logic 2.25 Reservoir Shocks & Rear 2.25 Shocks
+Position: Front and Rear
+Drivetrain: 4WD
+Part number: K1160DL
+
+Highlights
+
+6 in RTS Lift Kit w/Front Dirt Logic 2.25 Reservoir Shocks & Rear 2.25 Shocks
+Fabtech RTS® Lift Kit
+Other lift kits leave the torsion bars exposed, which reduces clearance and adds risk of damage.
+Oversized tie rods are provided to replace the stock units that are designed to handle oversized tires.
+Front and Rear fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2533,
+    createdAt: 1789430400000,
+    name: "Fabtech 6 in RTS Lift Kit w/Stealth Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift — K1159M",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1159M.
+    price: 2829.16,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1159M",
+    fitment: "2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-6-rts-lift-kit-w-stealth-shocks-kit-for-2020-2021-chevrolet-silverado-2500-hd-4wd-w-6-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1159m/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1159m/1.webp"],
+    description: `Fabtech 6 in RTS Lift Kit w/Stealth Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 6 in RTS Lift Kit w/Stealth Shocks.
+
+Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 6 in RTS Lift Kit w/Stealth Shocks
+Drivetrain: 4WD
+Part number: K1159M
+
+Highlights
+
+6 in RTS Lift Kit w/Stealth Shocks
+Fabtech RTS® Lift Kit
+Other lift kits leave the torsion bars exposed, which reduces clearance and adds risk of damage.
+Oversized tie rods are provided to replace the stock units that are designed to handle oversized tires.
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2534,
+    createdAt: 1789430400000,
+    name: "Fabtech 3.5 in Uniball UCA Lift Kit w/Performance Shocks for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift — K1064",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1064.
+    price: 1697.61,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1064",
+    fitment: "2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-5-uniball-uca-lift-kit-w-performance-shocks-kit-for-2011-2018-chevrolet-silverado-2500-hd-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1064/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1064/1.webp"],
+    description: `Fabtech 3.5 in Uniball UCA Lift Kit w/Performance Shocks for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3.5 in Uniball UCA Lift Kit w/Performance Shocks.
+
+Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3.5 in Uniball UCA Lift Kit w/Performance Shocks
+Drivetrain: 2WD and 4WD
+Part number: K1064
+
+Highlights
+
+3.5 in Uniball UCA Lift Kit w/Performance Shocks
+Upper Control Arms Built With Same Materials Found On Trophy Trucks
+.120 in Wall 4130 Chromoly Tubing. 1.50 in OD
+.250 in wall DOM Bushing Barrels
+2WD and 4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2535,
+    createdAt: 1789430400000,
+    name: "Fabtech 3.5 in Uniball UCA Lift Kit w/Stealth Shocks for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift — K1064M",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1064M.
+    price: 1913.73,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1064M",
+    fitment: "2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-5-uniball-uca-lift-kit-w-stealth-shocks-kit-for-2011-2018-chevrolet-silverado-2500-hd-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1064m/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1064m/1.webp"],
+    description: `Fabtech 3.5 in Uniball UCA Lift Kit w/Stealth Shocks for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3.5 in Uniball UCA Lift Kit w/Stealth Shocks.
+
+Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3.5 in Uniball UCA Lift Kit w/Stealth Shocks
+Drivetrain: 2WD and 4WD
+Part number: K1064M
+
+Highlights
+
+3.5 in Uniball UCA Lift Kit w/Stealth Shocks
+Upper Control Arms Built With Same Materials Found On Trophy Trucks
+.120 in Wall 4130 Chromoly Tubing. 1.50 in OD
+.250 in wall DOM Bushing Barrels
+2WD and 4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2536,
+    createdAt: 1789430400000,
+    name: "Fabtech 3.5 in Ball Joint UCA Lift Kit w/Dirt Logic 2.25 Reservoir Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in l — K1158DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1158DL.
+    price: 2273.08,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1158DL",
+    fitment: "2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-5-ball-joint-uca-lift-kit-w-dirt-logic-2-25-reservoir-shocks-kit-for-2020-2021-chevrolet-silverado-2500-hd-4wd-w-3-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1158dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1158dl/1.webp"],
+    description: `Fabtech 3.5 in Ball Joint UCA Lift Kit w/Dirt Logic 2.25 Reservoir Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3.5 in Ball Joint UCA Lift Kit w/Dirt Logic 2.25 Reservoir Shocks.
+
+Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3.5 in Ball Joint UCA Lift Kit w/Dirt Logic 2.25 Reservoir Shocks
+Drivetrain: 4WD
+Part number: K1158DL
+
+Highlights
+
+3.5 in Ball Joint UCA Lift Kit w/Dirt Logic 2.25 Reservoir Shocks
+Tubular Steel Upper Control Arms
+Additional 1 degree of caster built in
+1.5 in OD x .120 in wall DOM tubing
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2537,
+    createdAt: 1789430400000,
+    name: "Fabtech 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks w/Reservoir for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in li — K1156DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1156DL.
+    price: 2591.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1156DL",
+    fitment: "2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-5-uniball-uca-lift-kit-w-dirt-logic-2-25-shocks-w-reservoir-kit-for-2020-2021-chevrolet-silverado-2500-hd-4wd-w-3-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1156dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1156dl/1.webp"],
+    description: `Fabtech 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks w/Reservoir for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks w/Reservoir.
+
+Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks w/Reservoir
+Drivetrain: 4WD
+Part number: K1156DL
+
+Highlights
+
+3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks w/Reservoir
+Additional caster is built into Arms for enhanced align ability with oversized tires
+1.50 in OD .120 in wall 4130 Chromoly tubing reduces flex found in stock arms for more positive road feel
+17–4 Stainless steel misalignments for proper clearance of large Uniballs throughout the travel range
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2538,
+    createdAt: 1789430400000,
+    name: "Fabtech 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift — K1155DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1155DL.
+    price: 2372.45,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1155DL",
+    fitment: "2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-5-uniball-uca-lift-kit-w-dirt-logic-2-25-shocks-kit-for-2020-2021-chevrolet-silverado-2500-hd-4wd-w-3-5-lift",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1155dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1155dl/1.webp"],
+    description: `Fabtech 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks for 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks.
+
+Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks
+Drivetrain: 4WD
+Part number: K1155DL
+
+Highlights
+
+3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks
+Additional caster is built into Arms for enhanced align ability with oversized tires
+1.50 in OD .120 in wall 4130 Chromoly tubing reduces flex found in stock arms for more positive road feel
+17–4 Stainless steel misalignments for proper clearance of large Uniballs throughout the travel range
+4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2539,
+    createdAt: 1789430400000,
+    name: "Fabtech 3.5 in Uniball UCA Lift Kit w/Dirt Logic Shocks for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift — K1065DL",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABK1065DL.
+    price: 2773.62,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K1065DL",
+    fitment: "2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-3-5-uniball-uca-lift-kit-w-dirt-logic-shocks-kit-for-2011-2018-chevrolet-silverado-2500-hd-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-k1065dl/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-k1065dl/1.webp"],
+    description: `Fabtech 3.5 in Uniball UCA Lift Kit w/Dirt Logic Shocks for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 3.5 in Uniball UCA Lift Kit w/Dirt Logic Shocks.
+
+Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 3.5 in Uniball UCA Lift Kit w/Dirt Logic Shocks
+Drivetrain: 2WD and 4WD
+Part number: K1065DL
+
+Highlights
+
+3.5 in Uniball UCA Lift Kit w/Dirt Logic Shocks
+Upper Control Arms Built With Same Materials Found On Trophy Trucks
+.120 in Wall 4130 Chromoly Tubing. 1.50 in OD
+.250 in wall DOM Bushing Barrels
+2WD and 4WD application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2540,
+    createdAt: 1789430400000,
+    name: "Fabtech 2.25 in Leveling System Kit for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/2.25 in lift — FTL5105",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABFTL5105.
+    price: 197.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "5 Year 60,000 Mile Powertrain Warranty",
+    location: "our supplier network",
+    partNumber: "FTL5105",
+    fitment: "2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/2.25 in lift; 2011–2019 Chevrolet Silverado 3500 HD 4WD RWD w/2.25 in lift. Drivetrain: 2WD and 4WD.",
+    drivetrain: "2WD and 4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-2-25-leveling-system-kit-for-2012-2017-chevrolet-silverado-2500-hd-4wd-rwd",
+    thumbnail: "/product-media/suspension/ss-fabtech-ftl5105/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-ftl5105/1.webp"],
+    description: `Fabtech 2.25 in Leveling System Kit for 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/2.25 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 2.25 in Leveling System.
+
+Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/2.25 in lift; 2011–2019 Chevrolet Silverado 3500 HD 4WD RWD w/2.25 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 2.25 in Leveling System
+Drivetrain: 2WD and 4WD
+Part number: FTL5105
+
+Highlights
+
+2.25 in Leveling System
+Heavy Duty Construction
+1/4 in Thick steel with high grade hardware
+Aircraft grade billet aluminum
+2WD and 4WD application
+
+Warranty
+5 Year 60,000 Mile Powertrain Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2541,
+    createdAt: 1789430400000,
+    name: "Fabtech 2.25 in Leveling System Kit for 2001–2010 Chevrolet Silverado 2500 HD 4WD w/2.25 in lift — FTL5104",
+    category: "suspension",
+    brand: "fabtech",
+    // shocksurplus listing price for FABFTL5104.
+    price: 164.73,
+    stock: true,
+    condition: "brand-new",
+    warranty: "5 Year 60,000 Mile Powertrain Warranty",
+    location: "our supplier network",
+    partNumber: "FTL5104",
+    fitment: "2001–2010 Chevrolet Silverado 2500 HD 4WD w/2.25 in lift; 2001–2003 Chevrolet Silverado 1500 HD 4WD w/2.25 in lift. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fabtech-2-25-leveling-system-kit-for-2001-2010-chevrolet-silverado-2500-hd-4wd",
+    thumbnail: "/product-media/suspension/ss-fabtech-ftl5104/1.webp",
+    images: ["/product-media/suspension/ss-fabtech-ftl5104/1.webp"],
+    description: `Fabtech 2.25 in Leveling System Kit for 2001–2010 Chevrolet Silverado 2500 HD 4WD w/2.25 in lift.
+
+Fabtech builds bolt-on lift systems: the brackets, arms and spacers that set the new ride height, packaged with dampers matched to it. Kits come in tiers — Performance and Stealth shocks for street-biased builds, Dirt Logic for off-road use, with reservoir options where heat is the limiting factor.
+
+This listing is the 2.25 in Leveling System.
+
+Applications: 2001–2010 Chevrolet Silverado 2500 HD 4WD w/2.25 in lift; 2001–2003 Chevrolet Silverado 1500 HD 4WD w/2.25 in lift.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fabtech
+Product: 2.25 in Leveling System
+Drivetrain: 4WD
+Part number: FTL5104
+
+Highlights
+
+2.25 in Leveling System
+Heavy Duty Construction
+1/4 in Thick steel with high grade hardware
+Aircraft grade billet aluminum
+4WD application
+
+Warranty
+5 Year 60,000 Mile Powertrain Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2542,
+    createdAt: 1789430400000,
+    name: "Bilstein B8 5100 Monotube Adjustable Shocks 2021–2026 Ford F-150 4WD — 24-352925",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL24-352925.
+    price: 181,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-352925",
+    fitment: "2021–2026 Ford F-150 4WD. Drivetrain: 4WD.",
+    drivetrain: "4WD",
+    included: ["1 Shock"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b8-5100-monotube-adjustable-shocks-24-323680",
+    thumbnail: "/product-media/suspension/ss-bilstein-24-352925/1.webp",
+    images: ["/product-media/suspension/ss-bilstein-24-352925/1.webp"],
+    description: `Bilstein B8 5100 Monotube Adjustable Shocks 2021–2026 Ford F-150 4WD.
+
+Bilstein builds monotube gas dampers, where a single tube carries the oil and a floating piston separates it from the nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall. The 5100 and 6112 lines are the truck-height ranges; the 5160 adds a remote reservoir for more oil and more heat capacity again.
+
+This listing is the Shock Absorber, for the front of the vehicle.
+
+Contents: 1 Shock
+
+Applications: 2021–2026 Ford F-150 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: Shock Absorber
+Position: Front
+Drivetrain: 4WD
+Part number: 24-352925
+
+Highlights
+
+Package Contains 1 Shock
+You'll be getting one shock absorber.
+Factory Hardware for Installation
+Better Handling On and Off-Road
+Shock Absorber
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2543,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Dual Steering Stabilizer Kit Dual Steering Stabilizer + Mounts for 2014–2023 Ram 2500 4WD — 53-264817",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL53-264817.
+    price: 294,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "53-264817",
+    fitment: "2014–2023 Ram 2500 4WD. Drivetrain: 4WD. Height: Bottom Mount.",
+    drivetrain: "4WD",
+    included: ["Dual stabilizer with mounting hardware"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-5100-dual-steering-stabilizer-kit-dual-steering-stabilizer-mounts-for-2014-2023-ram-2500-4wd",
+    thumbnail: "/product-media/suspension/ss-bilstein-53-264817/1.webp",
+    images: ["/product-media/suspension/ss-bilstein-53-264817/1.webp"],
+    description: `Bilstein 5100 Dual Steering Stabilizer Kit Dual Steering Stabilizer + Mounts for 2014–2023 Ram 2500 4WD.
+
+Bilstein builds monotube gas dampers, where a single tube carries the oil and a floating piston separates it from the nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall. The 5100 and 6112 lines are the truck-height ranges; the 5160 adds a remote reservoir for more oil and more heat capacity again.
+
+This listing is the Color, for the reservoir of the vehicle, set for bottom mount of lift.
+
+Contents: Dual stabilizer with mounting hardware
+
+Applications: 2014–2023 Ram 2500 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: Color
+Position: Reservoir
+Height: Bottom Mount
+Drivetrain: 4WD
+Part number: 53-264817
+
+Highlights
+
+Package Contains Dual stabilizer with mounting hardware
+Kit contains dual steering stabilizer with mounting hardware.
+Designed for 4WD vehicles
+This product only works for 4WD vehicles.
+Color
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2544,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Monotube Steering Stabilizer for 2003–2010 Dodge Ram 2500 4WD — 24-164870",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL24-164870.
+    price: 121,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-164870",
+    fitment: "2003–2010 Dodge Ram 2500 4WD. Drivetrain: 4WD. Height: Compressed Length.",
+    drivetrain: "4WD",
+    included: ["1 Steering Stabilizer"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-5100-monotube-gas-steering-stabilizer-2003-2007-dodge-ram-2500-4wd-24-164870",
+    thumbnail: "/product-media/suspension/ss-bilstein-24-164870/1.webp",
+    images: ["/product-media/suspension/ss-bilstein-24-164870/1.webp"],
+    description: `Bilstein 5100 Monotube Steering Stabilizer for 2003–2010 Dodge Ram 2500 4WD.
+
+Bilstein builds monotube gas dampers, where a single tube carries the oil and a floating piston separates it from the nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall. The 5100 and 6112 lines are the truck-height ranges; the 5160 adds a remote reservoir for more oil and more heat capacity again.
+
+This listing is the Top Mount, for the travel of the vehicle, set for compressed length of lift.
+
+Contents: 1 Steering Stabilizer
+
+Applications: 2003–2010 Dodge Ram 2500 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: Top Mount
+Position: Travel
+Height: Compressed Length
+Drivetrain: 4WD
+Part number: 24-164870
+
+Highlights
+
+Package Contains 1 Steering Stabilizer
+You'll be getting one steering damper.
+Important Fitment Note
+Designed for 4WD vehicles
+Top Mount
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2545,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Monotube Steering Stabilizer for 2008–2013 Dodge Ram 2500 4WD — 33-170794",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL33-170794.
+    price: 121,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "33-170794",
+    fitment: "2008–2013 Dodge Ram 2500 4WD. Drivetrain: 4WD. Height: Compressed Length.",
+    drivetrain: "4WD",
+    included: ["1 Steering Stabilizer"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-5100-monotube-gas-steering-stabilizer-2008-2013-dodge-ram-2500-4wd-33-170794",
+    thumbnail: "/product-media/suspension/ss-bilstein-33-170794/1.webp",
+    images: ["/product-media/suspension/ss-bilstein-33-170794/1.webp"],
+    description: `Bilstein 5100 Monotube Steering Stabilizer for 2008–2013 Dodge Ram 2500 4WD.
+
+Bilstein builds monotube gas dampers, where a single tube carries the oil and a floating piston separates it from the nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall. The 5100 and 6112 lines are the truck-height ranges; the 5160 adds a remote reservoir for more oil and more heat capacity again.
+
+This listing is the Top Mount, for the travel of the vehicle, set for compressed length of lift.
+
+Contents: 1 Steering Stabilizer
+
+Applications: 2008–2013 Dodge Ram 2500 4WD.
+
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: Top Mount
+Position: Travel
+Height: Compressed Length
+Drivetrain: 4WD
+Part number: 33-170794
+
+Highlights
+
+Package Contains 1 Steering Stabilizer
+You'll be getting one steering damper.
+Designed for 4WD vehicles
+This product only works for 4WD vehicles.
+Top Mount
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2546,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Nitrocharger Plus Rear Shock for 1997–2004 Toyota Hilux — 63044",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for 63044.
+    price: 129.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "63044",
+    fitment: "Toyota Hilux 1997–2004, rear.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/old-man-emu-rear-nitrocharger-plus-shock-63044-for-toyota-hilux-97-04",
+    thumbnail: "/product-media/suspension/ome-nitrocharger-plus-rear-shock-63044/1.webp",
+    images: ["/product-media/suspension/ome-nitrocharger-plus-rear-shock-63044/1.webp"],
+    description: `Old Man Emu Nitrocharger Plus rear shock absorber for the 1997–2004 Toyota Hilux.
+
+OME matches each shock to the vehicle and to the springs it controls, so a vehicle usually has more than one OME option. This is part 63044 for the rear of the 1997–2004 Hilux.
+
+It's a twin-tube design: the outer reserve tube shields the working internals from stone damage, and the tube is heavy-gauge steel. An integrated high-flow piston reduces aeration and oil temperature, and the bushes are vehicle-specific polyurethane and rubber.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: Nitrocharger Plus
+Position: Rear
+Type: Twin-tube, nitrogen-charged
+Part number: 63044
+
+Highlights
+
+Valving tuned to the vehicle and OME spring range
+Heavy-gauge twin-tube body
+Vehicle-specific polyurethane and rubber bushes
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2547,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Leaf Spring Bushing Kit for Ford Ranger PX / PX2 / PX3 — OMESB117",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for OMESB117.
+    price: 28.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "OMESB117",
+    fitment: "Ford Ranger PX, PX2 and PX3, 2011-on. Rear leaf spring bushings.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/ome-leaf-spring-bushing-kit-omesb117-for-ford-ranger-px-px2-px3-old-man-emu",
+    thumbnail: "/product-media/suspension/ome-leaf-spring-bushing-kit-omesb117/1.webp",
+    images: ["/product-media/suspension/ome-leaf-spring-bushing-kit-omesb117/1.webp"],
+    description: `Old Man Emu leaf spring bushing kit for the Ford Ranger PX, PX2 and PX3.
+
+Leaf spring bushes are a wear item. Once they are worn the spring eye moves where it shouldn't, which shows up as clunks over bumps, vague steering feel under load and uneven tyre wear.
+
+This is OME's bushing kit for the Ranger PX-series leaf springs — the parts to refresh the spring eyes when fitting new springs or servicing old ones.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: Leaf spring bushing kit
+Position: Rear
+Part number: OMESB117
+
+Highlights
+
+Replaces worn leaf spring bushes
+Vehicle-specific kit
+Fit at the same time as new springs
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2548,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Leaf Spring Bushing Kit for Toyota Land Cruiser 70 Series — OMESB93",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for OMESB93.
+    price: 30.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "OMESB93",
+    fitment: "Toyota Land Cruiser 70 Series. Leaf spring bushings.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-leaf-spring-bushing-kit-omesb93-for-toyota-landcruiser-70-series",
+    thumbnail: "/product-media/suspension/ome-leaf-spring-bushing-kit-omesb93/1.webp",
+    images: ["/product-media/suspension/ome-leaf-spring-bushing-kit-omesb93/1.webp"],
+    description: `Old Man Emu leaf spring bushing kit for the Toyota Land Cruiser 70 Series.
+
+Worn leaf spring bushes let the spring eye move where it shouldn't: clunks over bumps, vague feel under load, uneven tyre wear.
+
+This is OME's bushing kit for 70 Series leaf springs — the parts to refresh the spring eyes when fitting new springs or servicing old ones.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: Leaf spring bushing kit
+Part number: OMESB93
+
+Highlights
+
+Replaces worn leaf spring bushes
+Vehicle-specific kit
+Fit at the same time as new springs
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2549,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Greasable Shackle Kit for Toyota Land Cruiser 40 / 60 / 70 / 75 Series — OMEGS2",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for OMEGS2.
+    price: 159.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "OMEGS2",
+    fitment: "Toyota Land Cruiser 40, 60, 70 and 75 Series.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/ome-greasable-shackle-kit-omegs2-for-toyota-landcruiser-40-60-70-75-series-old-man-emu",
+    thumbnail: "/product-media/suspension/ome-greasable-shackle-kit-omegs2/1.webp",
+    images: ["/product-media/suspension/ome-greasable-shackle-kit-omegs2/1.webp"],
+    description: `Old Man Emu greasable shackle kit for the Toyota Land Cruiser 40, 60, 70 and 75 Series.
+
+OME's Dakar leaf springs use bushes that need periodic greasing. Greasable shackles let you do that with a grease gun instead of pulling the shackles off.
+
+The kit bolts together, which avoids the out-of-angle pin-to-plate problems of press-fit shackles. Each heat-treated pin has two grease outlets to spread grease across the bush, and the side plates are zinc-plated against corrosion.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: Greasable shackle kit
+Pins: Heat-treated, two grease outlets per pin
+Side plates: Zinc-plated
+Part number: OMEGS2
+
+Highlights
+
+Grease the bushes in place
+Bolt-together assembly
+Heat-treated pins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2550,
+    createdAt: 1789430400000,
+    name: "Old Man Emu Front Coil Spring Packer for Toyota Land Cruiser 79 Series — OME79PF10",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for OME79PF10.
+    price: 16.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "OME79PF10",
+    fitment: "Toyota Land Cruiser 79 Series, front coil springs.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/ome-coil-spring-packer-front-ome79pf10-for-toyota-land-cruiser-79-series-old-man-emu",
+    thumbnail: "/product-media/suspension/ome-front-coil-spring-packer-ome79pf10/1.webp",
+    images: ["/product-media/suspension/ome-front-coil-spring-packer-ome79pf10/1.webp"],
+    description: `Old Man Emu front coil spring packer for the Toyota Land Cruiser 79 Series.
+
+A spring packer sits on top of the coil to trim front ride height — useful for correcting a small side-to-side height difference, or for lifting the nose slightly after adding weight to the front.
+
+It's part of OME's fitting range: bushes, U-bolts, centre bolts, spring liners, trim packers and fitting kits designed around their springs and shocks.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: Front coil spring packer
+Part number: OME79PF10
+
+Highlights
+
+Trims front ride height
+Works with OME front coils
+Vehicle-specific part
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2551,
+    createdAt: 1789430400000,
+    name: "Old Man Emu ABS Wire Bracket Kit for Toyota Land Cruiser 76 / 78 / 79 Series — FK65",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for FK65.
+    price: 29.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FK65",
+    fitment: "Toyota Land Cruiser 76, 78 and 79 Series fitted with a suspension lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-old-man-emu-abs-wire-bracket-kit-fk65-for-toyota-landcruiser-76-78-79-series",
+    thumbnail: "/product-media/suspension/ome-abs-wire-bracket-kit-fk65/1.webp",
+    images: ["/product-media/suspension/ome-abs-wire-bracket-kit-fk65/1.webp"],
+    description: `Old Man Emu ABS wire bracket kit for the lifted Toyota Land Cruiser 76, 78 and 79 Series.
+
+Lift a vehicle and the ABS wiring at the axle ends up stretched, because the axle now sits further from its mounting points through droop. This bracket kit relocates the wiring so it isn't pulled tight at full extension.
+
+It's part of OME's fitting range, designed around their suspension components for this chassis.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: ABS wire bracket kit
+Part number: FK65
+
+Highlights
+
+Keeps ABS wiring safe at full droop
+Vehicle-specific brackets
+Fit with a suspension lift
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2552,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Front Fitting Kit for Ford Ranger PX3 — VM80010040",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for VM80010040.
+    price: 79.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "VM80010040",
+    fitment: "Ford Ranger PX3 (2018-on), front BP-51 shocks.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/old-man-emu-bp-51-front-fitting-kit-vm80010040",
+    thumbnail: "/product-media/suspension/ome-bp-51-front-fitting-kit-vm80010040/1.webp",
+    images: ["/product-media/suspension/ome-bp-51-front-fitting-kit-vm80010040/1.webp"],
+    description: `Old Man Emu vehicle-specific front fitting kit for BP-51 shocks on the Ford Ranger PX3.
+
+BP-51 shocks mount with vehicle-specific hardware rather than generic bushes and sleeves. This is the front fitting kit for the Ford Ranger PX3.
+
+It's part of OME's fitting range — bushes, U-bolts, centre bolts, spring liners, packers and fitting kits made to suit their own suspension components.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: BP-51 front fitting kit
+Position: Front
+Part number: VM80010040
+
+Highlights
+
+Vehicle-specific front BP-51 mounting hardware
+Matches OME's BP-51 shock range
+Sold as a kit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2553,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Front Fitting Kit for Toyota Land Cruiser 76 / 78 / 79 Series — VM80010006",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for VM80010006.
+    price: 59.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "VM80010006",
+    fitment: "Toyota Land Cruiser 76, 78 and 79 Series, front BP-51 shocks.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/ome-bp-51-front-fitting-kit-vm80010006-for-toyota-landcruiser-76-78-79-series-old-man-emu",
+    thumbnail: "/product-media/suspension/ome-bp-51-front-fitting-kit-vm80010006/1.webp",
+    images: ["/product-media/suspension/ome-bp-51-front-fitting-kit-vm80010006/1.webp"],
+    description: `Old Man Emu vehicle-specific front fitting kit for BP-51 shocks on the Toyota Land Cruiser 76 / 78 / 79 Series.
+
+BP-51 shocks mount with vehicle-specific hardware rather than generic bushes and sleeves. This is the front fitting kit for the Toyota Land Cruiser 76 / 78 / 79 Series.
+
+It's part of OME's fitting range — bushes, U-bolts, centre bolts, spring liners, packers and fitting kits made to suit their own suspension components.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: BP-51 front fitting kit
+Position: Front
+Part number: VM80010006
+
+Highlights
+
+Vehicle-specific front BP-51 mounting hardware
+Matches OME's BP-51 shock range
+Sold as a kit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2554,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Rear Fitting Kit for Toyota Land Cruiser 76 / 78 / 79 Series — VM80010007",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for VM80010007.
+    price: 79.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "VM80010007",
+    fitment: "Toyota Land Cruiser 76, 78 and 79 Series, rear BP-51 shocks.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/ome-bp-51-rear-fitting-kit-vm80010007-for-toyota-landcruiser-76-78-79-series-old-man-emu",
+    thumbnail: "/product-media/suspension/ome-bp-51-rear-fitting-kit-vm80010007/1.webp",
+    images: ["/product-media/suspension/ome-bp-51-rear-fitting-kit-vm80010007/1.webp"],
+    description: `Old Man Emu vehicle-specific rear fitting kit for BP-51 shocks on the Toyota Land Cruiser 76 / 78 / 79 Series.
+
+BP-51 shocks mount with vehicle-specific hardware rather than generic bushes and sleeves. This is the rear fitting kit for the Toyota Land Cruiser 76 / 78 / 79 Series.
+
+It's part of OME's fitting range — bushes, U-bolts, centre bolts, spring liners, packers and fitting kits made to suit their own suspension components.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Product: BP-51 rear fitting kit
+Position: Rear
+Part number: VM80010007
+
+Highlights
+
+Vehicle-specific rear BP-51 mounting hardware
+Matches OME's BP-51 shock range
+Sold as a kit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2555,
+    createdAt: 1789430400000,
+    name: "Old Man Emu BP-51 Front Left Coilover for 2019–2022 Ford Ranger PX3 — BP5190012L (Each)",
+    category: "suspension",
+    brand: "old-man-emu",
+    // mudify listing price for BP5190012L.
+    price: 949.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BP5190012L",
+    fitment: "Ford Ranger PX3 2019–2022, front left-hand side. Sold individually — the right-hand side is a separate part number.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/old-man-emu-bp-51-front-coilover-for-left-side-bp5190012l-for-ranger-px3-19-22",
+    thumbnail: "/product-media/suspension/ome-bp-51-front-coilover-left-bp5190012l/1.webp",
+    images: ["/product-media/suspension/ome-bp-51-front-coilover-left-bp5190012l/1.webp"],
+    description: `Old Man Emu BP-51 front left-hand coilover for the 2019–2022 Ford Ranger PX3, sold individually.
+
+BP-51 is OME's internal-bypass shock: damping stays soft around ride height for comfort, then firms up as the shock approaches the end of its travel, so it resists bottoming without riding harshly on the road.
+
+Rebound and compression adjust independently on the vehicle. The build includes large Teflon-lined spherical bearings, oversized rubber bushings, a hard-chromed ground shaft and an impact-resistant polyethylene shaft guard.
+
+This is the left-hand front unit only. A pair needs the right-hand part as well.
+
+Specifications
+
+Manufacturer: Old Man Emu (ARB)
+Series: BP-51
+Position: Front left
+Design: Internal bypass, position-sensitive
+Adjustment: Independent rebound and compression
+Quantity: 1 coilover
+Part number: BP5190012L
+
+Highlights
+
+Comfort at ride height, control at the end of travel
+On-vehicle rebound and compression adjustment
+Left-hand side, sold individually
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2556,
+    createdAt: 1789430400000,
+    name: "ARB Alloy Flat Roof Rack with Mesh Floor for 2012–2015 Toyota Land Cruiser 200 Series — 4900040MKLC2",
+    category: "4x4-accessories",
+    brand: "arb",
+    // mudify listing price for 4900040MKLC2.
+    price: 1699,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4900040MKLC2",
+    fitment: "Toyota Land Cruiser 200 Series 2012–2015.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/alloy-flat-rack-with-mesh-floor-for-toyota-land-cruiser-200-series-arb-4900040mklc2",
+    thumbnail: "/product-media/4x4-accessories/arb-alloy-flat-rack-mesh-floor-lc200-4900040mklc2/1.webp",
+    images: ["/product-media/4x4-accessories/arb-alloy-flat-rack-mesh-floor-lc200-4900040mklc2/1.webp"],
+    description: `ARB alloy flat roof rack with a mesh floor for the 2012–2015 Toyota Land Cruiser 200 Series.
+
+An alloy rack keeps roof weight down, which matters on a wagon that is already tall and heavy. The mesh floor gives gear something to sit on and strap to, rather than resting on bare rails.
+
+It is a vehicle-specific rack that mounts to the 200 Series roof, with ARB's cover straps so there are no exposed edges.
+
+Roof load affects handling and is limited by the vehicle's own roof rating. Check your owner's manual for the dynamic roof load limit before loading it.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Alloy flat rack with mesh floor
+Vehicle: Toyota Land Cruiser 200 Series
+Years: 2012–2015
+Part number: 4900040MKLC2
+
+Highlights
+
+Alloy construction keeps roof weight down
+Mesh floor for securing gear
+Vehicle-specific fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2557,
+    createdAt: 1789430400000,
+    name: "ARB BASE Rack Mount Kit for 2008–2022 Toyota Land Cruiser 200 Series — 17915010",
+    category: "4x4-accessories",
+    brand: "arb",
+    // mudify listing price for 17915010.
+    price: 291,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "17915010",
+    fitment: "Toyota Land Cruiser 200 Series 2008–2022. For use with an ARB BASE Rack (sold separately).",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-base-roof-rack-mount-kit-17915010-for-toyota-land-cruiser-200-series-2008-2022",
+    thumbnail: "/product-media/4x4-accessories/arb-base-rack-mount-kit-lc200-17915010/1.webp",
+    images: ["/product-media/4x4-accessories/arb-base-rack-mount-kit-lc200-17915010/1.webp"],
+    description: `ARB BASE Rack mount kit for the 2008–2022 Toyota Land Cruiser 200 Series.
+
+The mount kit is what attaches an ARB BASE Rack to this vehicle: mount feet that bolt to the factory roof points, and support plates sized for the BASE Rack extrusion.
+
+ARB's dovetail mounting system is designed so accessories and loads attach and come off quickly and stay secure in between. Finish is ARB's Integrit textured black.
+
+This is the mount kit only — the rack itself is a separate part.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: BASE Rack mount kit
+Vehicle: Toyota Land Cruiser 200 Series
+Years: 2008–2022
+Mounting: OE factory roof points
+Part number: 17915010
+
+Highlights
+
+Bolts to factory roof mounting points
+Dovetail mounting system
+Rack sold separately
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2558,
+    createdAt: 1789430400000,
+    name: "ARB BASE Rack Wind Deflector for 2008–2022 Toyota Land Cruiser 200 Series — 17915040",
+    category: "4x4-accessories",
+    brand: "arb",
+    // mudify listing price for 17915040.
+    price: 107,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "17915040",
+    fitment: "Toyota Land Cruiser 200 Series 2008–2022, with an ARB BASE Rack.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-base-roof-rack-deflector-17915040-for-toyota-land-cruiser-200-series-2008-2022",
+    thumbnail: "/product-media/4x4-accessories/arb-base-rack-deflector-lc200-17915040/1.webp",
+    images: ["/product-media/4x4-accessories/arb-base-rack-deflector-lc200-17915040/1.webp"],
+    description: `ARB BASE Rack wind deflector for the 2008–2022 Toyota Land Cruiser 200 Series.
+
+A roof rack turns into a noise generator at highway speed. The deflector sits at the front of the rack and cuts the turbulence that causes it.
+
+It is press-formed for rigidity, finished in durable powder coat, and pre-slotted so a front-mounted roof rack light bar can be fitted through it.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: BASE Rack wind deflector
+Vehicle: Toyota Land Cruiser 200 Series
+Years: 2008–2022
+Part number: 17915040
+
+Highlights
+
+Cuts roof rack wind noise
+Pre-cut slots for a light bar
+Vehicle-specific
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2559,
+    createdAt: 1789430400000,
+    name: "ARB BASE Rack Mount Kit for Toyota Land Cruiser 100 Series — 17913010",
+    category: "4x4-accessories",
+    brand: "arb",
+    // mudify listing price for 17913010.
+    price: 429,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "17913010",
+    fitment: "Toyota Land Cruiser 100 Series. Compatible with ARB BASE Rack part 1770020 (61 × 51 in). Rack sold separately.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/arb-base-rack-mount-kit-17913010-for-land-cruiser-100-series",
+    thumbnail: "/product-media/4x4-accessories/arb-base-rack-mount-kit-lc100-17913010/1.webp",
+    images: ["/product-media/4x4-accessories/arb-base-rack-mount-kit-lc100-17913010/1.webp"],
+    description: `ARB BASE Rack mount kit for the Toyota Land Cruiser 100 Series, with wind deflector.
+
+Vehicle-specific mount feet bolt to the factory roof points, and the support plates suit the BASE Rack extrusion. This kit includes the wind deflector.
+
+ARB lists it as compatible with the 61 × 51 in BASE Rack, part 1770020, and with ARB's roof rack LED light bar. Finish is Integrit textured black.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: BASE Rack mount kit with wind deflector
+Vehicle: Toyota Land Cruiser 100 Series
+Compatible rack: 1770020 (61 × 51 in)
+Part number: 17913010
+
+Highlights
+
+Includes wind deflector
+Bolts to factory roof points
+Compatible with ARB roof rack LED light bar
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2560,
+    createdAt: 1789430400000,
+    name: "ARB Sahara Bar Centre Tube for Toyota Land Cruiser 100 Series — 5100050",
+    category: "bumper",
+    brand: "arb",
+    // mudify listing price for 5100050.
+    price: 182,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "5100050",
+    fitment: "Toyota Land Cruiser 100 Series ARB Sahara bar.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/sahara-tube-100lc-prado120-gu-fit-5100160",
+    thumbnail: "/product-media/bumper/arb-sahara-tube-lc100-5100050/1.webp",
+    images: ["/product-media/bumper/arb-sahara-tube-lc100-5100050/1.webp"],
+    description: `ARB Sahara bar centre tube for the Toyota Land Cruiser 100 Series.
+
+An optional centre tube changes the look of a Sahara bar against the more traditional bumper style. It comes with moulded protection buffers.
+
+ARB shapes the tube on an internal mandrel bender, which keeps wall thickness even through the bends rather than thinning them on the outside of the curve.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: Sahara bar centre tube
+Vehicle: Toyota Land Cruiser 100 Series
+Part number: 5100050
+
+Highlights
+
+Optional styling tube for a Sahara bar
+Moulded protection buffers
+Mandrel-bent for even wall thickness
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2561,
+    createdAt: 1789430400000,
+    name: "Dobinsons Rear Bumper with Swing-Outs for Toyota Land Cruiser 76 / 78 Series LWB Wagon — BW80-4133",
+    category: "bumper",
+    brand: "dobinsons",
+    // mudify listing price for BW80-4133.
+    price: 3000,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BW80-4133",
+    fitment: "Toyota Land Cruiser 76 and 78 Series long-wheelbase wagons.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-rear-bumper-with-swing-outs-for-toyota-landcruiser-70-series-lwb-bw80-4133",
+    thumbnail: "/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc70-lwb-bw80-4133/1.webp",
+    images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc70-lwb-bw80-4133/1.webp"],
+    description: `Dobinsons steel rear bumper with swing-outs for the long-wheelbase Land Cruiser 76 and 78 Series wagon.
+
+It's sold as a complete kit, made for the long-wheelbase 76 and 78 Series wagons, with an adjustable-offset tyre carrier head that takes up to a 35 in spare. It works with the factory tow hitch in its original position.
+
+Standard finish is black powder coat, with stainless-steel latches and hardware. The LED lights are 12 V and have to be spliced into the factory harness, so they are not plug-and-play.
+
+Dobinsons publishes this photograph marked "Illustration Purposes Only". Go by the specification list rather than the details in the picture.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Vehicle: Land Cruiser 76 / 78 Series LWB wagon
+Tyre size: Up to 35 in
+Lighting: 12 V LED (requires splicing)
+Tow hitch: Works with the factory hitch in the OE position
+Part number: BW80-4133
+
+Highlights
+
+Complete kit with swing-out tyre carrier
+Retains the factory tow hitch
+Stainless-steel latches and hardware
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2562,
+    createdAt: 1789430400000,
+    name: "Dobinsons Rear Bumper with Swing-Outs for Toyota Land Cruiser 80 Series — BW80-4134",
+    category: "bumper",
+    brand: "dobinsons",
+    // mudify listing price for BW80-4134.
+    price: 3000,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BW80-4134",
+    fitment: "Toyota Land Cruiser 80 Series.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-rear-bumper-with-swing-outs-for-toyota-landcruiser-80-series-bw80-4134",
+    thumbnail: "/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc80-bw80-4134/1.webp",
+    images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc80-bw80-4134/1.webp"],
+    description: `Dobinsons steel rear bumper with swing-outs for the Toyota Land Cruiser 80 Series.
+
+Sold as a complete kit, with an adjustable-offset tyre carrier head that takes up to a 35 in spare, and it works with the factory tow hitch in its original position.
+
+Finish is black powder coat with stainless-steel latches and hardware. The 12 V LED lights need splicing into the factory harness — they are not plug-and-play.
+
+Dobinsons publishes this photograph marked "Illustration Purposes Only". Go by the specification list rather than the details in the picture.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Vehicle: Land Cruiser 80 Series
+Tyre size: Up to 35 in
+Lighting: 12 V LED (requires splicing)
+Tow hitch: Works with the factory hitch in the OE position
+Part number: BW80-4134
+
+Highlights
+
+Complete kit with swing-out tyre carrier
+Retains the factory tow hitch
+Stainless-steel latches and hardware
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2563,
+    createdAt: 1789430400000,
+    name: "Dobinsons Tailshaft Spacer Kit for Ford Ranger — WA19-527K",
+    category: "suspension",
+    brand: "dobinsons",
+    // mudify listing price for WA19-527K.
+    price: 50,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "WA19-527K",
+    fitment: "Ford Ranger with a suspension lift. Offers 0–24 mm of adjustment in 12 mm increments.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/dobinsons-tailshaft-spacer-kit-for-ford-ranger-wa19-527k",
+    thumbnail: "/product-media/suspension/dobinsons-tailshaft-spacer-kit-ranger-wa19-527k/1.webp",
+    images: ["/product-media/suspension/dobinsons-tailshaft-spacer-kit-ranger-wa19-527k/1.webp"],
+    description: `Dobinsons tailshaft spacer kit for the lifted Ford Ranger.
+
+Lifting a ute changes the angle the tailshaft runs at, and past a point that shows up as driveline vibration at speed. A tailshaft spacer restores the geometry by moving the carrier bearing.
+
+This kit offers 0–24 mm of adjustment in 12 mm increments, so it can be matched to the lift height. It's zinc-coated steel for corrosion resistance.
+
+Specifications
+
+Manufacturer: Dobinsons Spring & Suspension
+Product: Tailshaft spacer kit
+Adjustment: 0–24 mm in 12 mm increments
+Material: Zinc-coated steel
+Part number: WA19-527K
+
+Highlights
+
+Reduces driveline vibration after a lift
+0–24 mm of adjustment
+Zinc-coated steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2564,
+    createdAt: 1789430400000,
+    name: "King Front Bump Stop Kit for 1990–1997 Toyota Land Cruiser 80 Series — 20AB001-101",
+    category: "suspension",
+    brand: "king-shocks",
+    // mudify listing price for 20AB001-101.
+    price: 982.3,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "20AB001-101",
+    fitment: "Toyota Land Cruiser 80 Series 1990–1997.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/king-front-bump-stop-kit-20ab001-101-1990-1997-for-toyota-land-cruiser-80",
+    thumbnail: "/product-media/suspension/king-front-bump-stop-kit-lc80-20ab001-101/1.webp",
+    images: ["/product-media/suspension/king-front-bump-stop-kit-lc80-20ab001-101/1.webp"],
+    description: `King front hydraulic bump stop kit for the 1990–1997 Toyota Land Cruiser 80 Series.
+
+A hydraulic bump stop catches the suspension before it slams into the frame. On a lifted truck run hard over whoops or washouts, that impact is what breaks mounts and cracks welds — a bump stop absorbs it instead.
+
+King's compact bump stop is a 2.0 in diameter unit with 2 in of stroke, on a fully threaded cylinder so the height can be adjusted to suit an aftermarket lift and maximise usable travel.
+
+The kit is bolt-on: brackets, hardware and instructions are included.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: Front bump stop kit
+Bump stop: 2.0 in diameter, 2 in stroke
+Adjustment: Threaded cylinder, height adjustable
+Vehicle: Toyota Land Cruiser 80 Series 1990–1997
+Part number: 20AB001-101
+
+Highlights
+
+Absorbs bottoming impacts
+Height-adjustable to suit a lift
+Brackets, hardware and instructions included
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2565,
+    createdAt: 1789430400000,
+    name: "King Rear Bump Stop Kit for 1990–1997 Toyota Land Cruiser 80 Series — 20AB001-102",
+    category: "suspension",
+    brand: "king-shocks",
+    // mudify listing price for 20AB001-102.
+    price: 982.3,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "20AB001-102",
+    fitment: "Toyota Land Cruiser 80 Series 1990–1997.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://mudify.com/products/king-rear-bump-stop-kit-20ab001-102-1990-1997-for-toyota-land-cruiser-80-copia",
+    thumbnail: "/product-media/suspension/king-rear-bump-stop-kit-lc80-20ab001-102/1.webp",
+    images: ["/product-media/suspension/king-rear-bump-stop-kit-lc80-20ab001-102/1.webp"],
+    description: `King rear hydraulic bump stop kit for the 1990–1997 Toyota Land Cruiser 80 Series.
+
+A hydraulic bump stop catches the suspension before it slams into the frame. On a lifted truck run hard over whoops or washouts, that impact is what breaks mounts and cracks welds — a bump stop absorbs it instead.
+
+King's compact bump stop is a 2.0 in diameter unit with 2 in of stroke, on a fully threaded cylinder so the height can be adjusted to suit an aftermarket lift and maximise usable travel.
+
+The kit is bolt-on: brackets, hardware and instructions are included.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: Rear bump stop kit
+Bump stop: 2.0 in diameter, 2 in stroke
+Adjustment: Threaded cylinder, height adjustable
+Vehicle: Toyota Land Cruiser 80 Series 1990–1997
+Part number: 20AB001-102
+
+Highlights
+
+Absorbs bottoming impacts
+Height-adjustable to suit a lift
+Brackets, hardware and instructions included
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2566,
+    createdAt: 1789430400000,
+    name: "Bosch New Stock CP4 Injection Pump — 2011–2014 Ford 6.7L Power Stroke — 0445010851",
+    category: "engine",
+    brand: "bosch",
+    // dpp listing price for BOSCH-0445010851.
+    price: 1448.61,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bosch Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0445010851",
+    fitment: "2011–2014 Ford F-250 / F-350 / F-450 with the 6.7L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-0445010851-new-stock-cp4-injection-pump-11-14-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/bosch-new-cp4-0445010851/1.webp",
+    images: ["/product-media/engine/bosch-new-cp4-0445010851/1.webp"],
+    description: `New Bosch CP4 high-pressure injection pump for the 2011–2014 Ford 6.7L Power Stroke.
+
+The CP4 is the high-pressure pump that feeds the common rail. It is the part these engines are known for: when it wears, metal can travel downstream through the injectors and rails, which turns a pump job into a fuel-system job. Hard starting, low rail pressure codes and power loss are the warnings.
+
+It is a direct replacement built to meet or exceed factory specification — a stock pump, not a conversion or an uprated unit.
+
+Specifications
+
+Manufacturer: Bosch
+Product: CP4 high-pressure injection pump
+Application: 2011–2014 Ford 6.7L Power Stroke
+Condition: New
+Part number: 0445010851
+
+Highlights
+
+New Bosch pump, not a rebuild
+Direct replacement
+Meets or exceeds factory specification
+
+Warranty
+Bosch Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2567,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured Stock CP4 Injection Pump — 2011–2014 Ford 6.7L Power Stroke — 0986437422",
+    category: "engine",
+    brand: "bosch",
+    // dpp listing price for BOSCH-0986437422.
+    price: 1056.76,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Bosch Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986437422",
+    fitment: "2011–2014 Ford F-250 / F-350 / F-450 with the 6.7L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-0986437422-remanufactured-stock-cp4-injection-pump-11-14-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/bosch-reman-cp4-0986437422/1.webp",
+    images: ["/product-media/engine/bosch-reman-cp4-0986437422/1.webp"],
+    description: `Bosch-remanufactured Bosch CP4 high-pressure injection pump for the 2011–2014 Ford 6.7L Power Stroke.
+
+The CP4 is the high-pressure pump that feeds the common rail. It is the part these engines are known for: when it wears, metal can travel downstream through the injectors and rails, which turns a pump job into a fuel-system job. Hard starting, low rail pressure codes and power loss are the warnings.
+
+This is the remanufactured version of the same pump; Bosch rebuilds it to the same specification as the new unit.
+
+It is a direct replacement built to meet or exceed factory specification — a stock pump, not a conversion or an uprated unit.
+
+Specifications
+
+Manufacturer: Bosch
+Product: CP4 high-pressure injection pump
+Application: 2011–2014 Ford 6.7L Power Stroke
+Condition: Remanufactured by Bosch
+Part number: 0986437422
+
+Highlights
+
+Remanufactured by Bosch
+Direct replacement
+Meets or exceeds factory specification
+
+Warranty
+Bosch Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2568,
+    createdAt: 1789430400000,
+    name: "Bosch New Stock CP4 Injection Pump — 2015–2019 Ford 6.7L Power Stroke — 0445010810",
+    category: "engine",
+    brand: "bosch",
+    // dpp listing price for BOSCH-0445010810.
+    price: 1363.4,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bosch Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0445010810",
+    fitment: "2015–2019 Ford F-250 / F-350 / F-450 with the 6.7L Power Stroke. The 2011–2014 engine uses a different pump.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-0445010810-new-stock-cp4-injection-pump-15-19-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/bosch-new-cp4-0445010810/1.webp",
+    images: ["/product-media/engine/bosch-new-cp4-0445010810/1.webp"],
+    description: `New Bosch CP4 high-pressure injection pump for the 2015–2019 Ford 6.7L Power Stroke.
+
+The CP4 is the high-pressure pump that feeds the common rail. It is the part these engines are known for: when it wears, metal can travel downstream through the injectors and rails, which turns a pump job into a fuel-system job. Hard starting, low rail pressure codes and power loss are the warnings.
+
+It is a direct replacement built to meet or exceed factory specification — a stock pump, not a conversion or an uprated unit.
+
+Specifications
+
+Manufacturer: Bosch
+Product: CP4 high-pressure injection pump
+Application: 2015–2019 Ford 6.7L Power Stroke
+Condition: New
+Part number: 0445010810
+
+Highlights
+
+New Bosch pump, not a rebuild
+Direct replacement
+Meets or exceeds factory specification
+
+Warranty
+Bosch Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2569,
+    createdAt: 1789430400000,
+    name: "Garrett New GTP38 Turbocharger — 1999.5–2003 Ford 7.3L Power Stroke — 702011-5011",
+    category: "turbocharger",
+    brand: "garrett",
+    // dpp listing price for GAR-702011-5011.
+    price: 1104.17,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "702011-5011",
+    fitment: "1999.5–2003 Ford Super Duty and Excursion with the 7.3L Power Stroke (GTP38). Not for 1994.5–1997 OBS trucks, which use the TP38. Match your original part number before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/garrett-turbocharger-99-5-03-ford-7-3l-powerstroke",
+    thumbnail: "/product-media/turbocharger/garrett-gtp38-turbo-1999-2003-ford-7-3-702011-5011/1.webp",
+    images: ["/product-media/turbocharger/garrett-gtp38-turbo-1999-2003-ford-7-3-702011-5011/1.webp"],
+    description: `New genuine Garrett GTP38 turbocharger for the 1999.5–2003 Ford 7.3L Power Stroke.
+
+Garrett built the factory turbocharger for this engine, and this is a new one — not a rebuild. A worn turbo shows up as low boost, smoke, poor acceleration, higher fuel use, noise, oil leaks and lost towing performance.
+
+The GTP38 is the Super Duty turbo. The earlier OBS 7.3 uses the TP38 and the two do not interchange, so check which engine you have.
+
+Specifications
+
+Manufacturer: Garrett
+Model: GTP38
+Engine: 7.3L Power Stroke
+Years: 1999.5–2003
+Condition: New
+Part number: 702011-5011
+
+Highlights
+
+New genuine Garrett unit
+Factory-design replacement
+Restores stock boost response
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2570,
+    createdAt: 1789430400000,
+    name: "Rotomaster Remanufactured Turbocharger — 2011–2016 Ford 6.7L Power Stroke Cab & Chassis — A8670101R",
+    category: "turbocharger",
+    brand: "rotomaster",
+    // dpp listing price for ROT-A8670101R.
+    price: 1236.47,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A8670101R",
+    fitment: "2011–2016 Ford 6.7L Power Stroke cab & chassis trucks. Pickups use a different turbocharger.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-rotomaster-remanufactured-turbo-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/rotomaster-reman-turbo-2011-2016-ford-6-7-cab-chassis-a8670101r/1.webp",
+    images: ["/product-media/turbocharger/rotomaster-reman-turbo-2011-2016-ford-6-7-cab-chassis-a8670101r/1.webp"],
+    description: `Remanufactured stock-replacement turbocharger for 2011–2016 Ford 6.7L Power Stroke cab & chassis trucks.
+
+A failing turbo on a 6.7L rarely stays a turbo problem: debris travels, and oil supply issues compound. Replacing it before that point keeps the job contained.
+
+This is a direct replacement for the factory Garrett unit, remanufactured with fresh components throughout, and the hardware and gaskets needed for the install come with it.
+
+Ford's cab & chassis trucks and pickups take different turbochargers for these years. This is the cab & chassis part.
+
+Specifications
+
+Manufacturer: Rotomaster
+Engine: 6.7L Power Stroke
+Years: 2011–2016
+Vehicle: Cab & chassis
+Condition: Remanufactured
+Includes: Installation hardware and gaskets
+Part number: A8670101R
+
+Highlights
+
+Direct replacement for the factory Garrett turbo
+Hardware and gaskets included
+Cab & chassis application
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2571,
+    createdAt: 1789430400000,
+    name: "Bosch Stock Replacement Injector — 2011–2014 Ford 6.7L Power Stroke — 0986435415 (Each)",
+    category: "engine",
+    brand: "bosch",
+    // industrialinjection listing price for 0986435415-IIS.
+    price: 290,
+    stock: true,
+    condition: "refurbished",
+    warranty: "2-Year Unlimited-Mileage Warranty",
+    location: "our supplier network",
+    partNumber: "0986435415-IIS",
+    fitment: "2011–2014 Ford 6.7L Power Stroke. Sold individually.",
+    coreCharge: "$100 refundable core charge per injector",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://industrialinjection.com/products/genuine-bosch-performance-6-7l-power-stroke-injectors-2011-2014",
+    thumbnail: "/product-media/engine/bosch-stock-injector-2011-2014-ford-6-7-0986435415-iis/1.webp",
+    images: ["/product-media/engine/bosch-stock-injector-2011-2014-ford-6-7-0986435415-iis/1.webp"],
+    description: `Bosch OEM stock-replacement injector for the 2011–2014 Ford 6.7L Power Stroke, sold individually.
+
+The first-generation 6.7L runs very high injection pressure, and injectors wear with hours and fuel quality. White smoke, a hard start and a rough idle when cold are the usual signs.
+
+This is the Bosch stock replacement, supplied by Industrial Injection with a 2-year unlimited-mileage warranty. Each injector carries a $100 core charge, refunded when the old unit goes back.
+
+Sold individually. Most owners replace all eight once one has failed, because the rest have done the same hours.
+
+Specifications
+
+Manufacturer: Bosch
+Engine: 6.7L Power Stroke
+Years: 2011–2014
+Quantity: 1 injector
+Core charge: $100, refundable
+Part number: 0986435415
+
+Highlights
+
+Bosch OEM stock replacement
+2-year unlimited-mileage warranty
+Sold individually
+
+Warranty
+2-Year Unlimited-Mileage Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2572,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Stock Remanufactured Injector — 2003–2004 Ford 6.0L Power Stroke — 316301 (Each)",
+    category: "engine",
+    brand: "industrial-injection",
+    // industrialinjection listing price for 316301.
+    price: 219.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month Unlimited-Mile Warranty",
+    location: "our supplier network",
+    partNumber: "316301",
+    fitment: "2003–2004 Ford 6.0L Power Stroke. Sold individually. The 2004–2007 engine uses a different injector.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://industrialinjection.com/products/2003-2004-industrial-injection-power-stroke-6-0l-stock-fuel-injector",
+    thumbnail: "/product-media/engine/industrial-injection-stock-reman-injector-2003-2004-ford-6-0-316301/1.webp",
+    images: ["/product-media/engine/industrial-injection-stock-reman-injector-2003-2004-ford-6-0-316301/1.webp"],
+    description: `Remanufactured stock injector for the 2003–2004 Ford 6.0L Power Stroke, sold individually.
+
+The 6.0L uses HEUI injectors, fired by high-pressure engine oil rather than by a mechanical pump, and they wear as a set. A miss that clears as the engine warms, white smoke on a cold start and a rough idle all point at them.
+
+Industrial Injection remanufactures these to stock specification and backs them with a 24-month unlimited-mile warranty.
+
+Sold individually, and explicitly so on the manufacturer's listing. The early 2003–2004 injector is not the same part as the 2004–2007 one.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Engine: 6.0L Power Stroke (HEUI)
+Years: 2003–2004
+Condition: Remanufactured
+Quantity: 1 injector
+Part number: 316301
+
+Highlights
+
+Stock-specification reman
+24-month unlimited-mile warranty
+Sold individually
+
+Warranty
+24-Month Unlimited-Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2573,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured 150 Amp Alternator — 2011–2016 Ford 6.7L Power Stroke — AL7588X",
+    category: "electronics",
+    brand: "bosch",
+    // dpp listing price for BOSCH-AL7588X.
+    price: 258.43,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AL7588X",
+    fitment: "2011–2016 Ford F-250 / F-350 / F-450 with the 6.7L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-remanufactured-150-amp-alternator-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/electronics/bosch-alternator-al7588x/1.webp",
+    images: ["/product-media/electronics/bosch-alternator-al7588x/1.webp"],
+    description: `Bosch replacement alternator, 150 Amp, for the 2011–2016 Ford 6.7L Power Stroke.
+
+A diesel's charging system carries glow plugs, high-pressure fuel electronics and, on many trucks, a second battery. A failing alternator shows up as slow cranking, dim lights under load and battery warnings — and it strands the truck once it quits.
+
+Bosch remanufactured alternators are built with more new parts than a standard rebuild and tested before they ship, to match or exceed OE specification for fit, function and output.
+
+Specifications
+
+Manufacturer: Bosch
+Output: 150 Amp
+Application: 2011–2016 Ford 6.7L Power Stroke
+Condition: Remanufactured
+Part number: AL7588X
+
+Highlights
+
+150 Amp output
+Bosch remanufactured and tested
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2574,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured 157 Amp Alternator — 2011–2016 Ford 6.7L Power Stroke (top position) — AL7677X",
+    category: "electronics",
+    brand: "bosch",
+    // dpp listing price for BOSCH-AL7677X.
+    price: 224.92,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AL7677X",
+    fitment: "2011–2016 Ford 6.7L Power Stroke — the top alternator position.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-remanufactured-157-amp-top-alternator-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/electronics/bosch-alternator-al7677x/1.webp",
+    images: ["/product-media/electronics/bosch-alternator-al7677x/1.webp"],
+    description: `Bosch replacement alternator, 157 Amp, for the 2011–2016 Ford 6.7L Power Stroke (top position).
+
+A diesel's charging system carries glow plugs, high-pressure fuel electronics and, on many trucks, a second battery. A failing alternator shows up as slow cranking, dim lights under load and battery warnings — and it strands the truck once it quits.
+
+Bosch remanufactured alternators are built with more new parts than a standard rebuild and tested before they ship, to match or exceed OE specification for fit, function and output.
+
+On trucks with two alternators the top and bottom units are different parts. This is the top one.
+
+Specifications
+
+Manufacturer: Bosch
+Output: 157 Amp
+Application: 2011–2016 Ford 6.7L Power Stroke (top position)
+Condition: Remanufactured
+Part number: AL7677X
+
+Highlights
+
+157 Amp output
+Bosch remanufactured and tested
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2575,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured 220 Amp Alternator — 2011–2016 Ford 6.7L Power Stroke (bottom position) — AL7587X",
+    category: "electronics",
+    brand: "bosch",
+    // dpp listing price for BOSCH-AL7587X.
+    price: 232.06,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AL7587X",
+    fitment: "2011–2016 Ford 6.7L Power Stroke — the bottom alternator position.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-remanufactured-220-amp-alternator-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/electronics/bosch-alternator-al7587x/1.webp",
+    images: ["/product-media/electronics/bosch-alternator-al7587x/1.webp"],
+    description: `Bosch replacement alternator, 220 Amp, for the 2011–2016 Ford 6.7L Power Stroke (bottom position).
+
+A diesel's charging system carries glow plugs, high-pressure fuel electronics and, on many trucks, a second battery. A failing alternator shows up as slow cranking, dim lights under load and battery warnings — and it strands the truck once it quits.
+
+Bosch remanufactured alternators are built with more new parts than a standard rebuild and tested before they ship, to match or exceed OE specification for fit, function and output.
+
+On trucks with two alternators the top and bottom units are different parts. This is the bottom one.
+
+Specifications
+
+Manufacturer: Bosch
+Output: 220 Amp
+Application: 2011–2016 Ford 6.7L Power Stroke (bottom position)
+Condition: Remanufactured
+Part number: AL7587X
+
+Highlights
+
+220 Amp output
+Bosch remanufactured and tested
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2576,
+    createdAt: 1789430400000,
+    name: "Alliant Power Alternator — 2011–2016 Ford 6.7L Power Stroke — AP83010",
+    category: "electronics",
+    brand: "alliant-power",
+    // dpp listing price for ALI-AP83010.
+    price: 360.27,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AP83010",
+    fitment: "2011–2016 Ford 6.7L Power Stroke. Replaces factory part BC3Z10346B.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-alliant-ap83010-replacement-alternator-11-16-67l-ford-powerstroke",
+    thumbnail: "/product-media/electronics/alliant-power-alternator-ap83010/1.webp",
+    images: ["/product-media/electronics/alliant-power-alternator-ap83010/1.webp"],
+    description: `Alliant Power replacement alternator for the 2011–2016 Ford 6.7L Power Stroke.
+
+A diesel's charging system carries glow plugs, high-pressure fuel electronics and, on many trucks, a second battery. A failing alternator shows up as slow cranking, dim lights under load and battery warnings — and it strands the truck once it quits.
+
+Alliant Power builds replacement parts to meet or exceed factory specification for these engines.
+
+Alliant lists it as a replacement for factory part number BC3Z10346B.
+
+Specifications
+
+Manufacturer: Alliant Power
+Application: 2011–2016 Ford 6.7L Power Stroke
+Condition: New
+Part number: AP83010
+
+Highlights
+
+OE-specification output
+Meets or exceeds factory specification
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2577,
+    createdAt: 1789430400000,
+    name: "Alliant Power Alternator — 2011–2016 Ford 6.7L Power Stroke with dual alternators (bottom) — AP83009",
+    category: "electronics",
+    brand: "alliant-power",
+    // dpp listing price for ALI-AP83009.
+    price: 414.24,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AP83009",
+    fitment: "2011–2016 Ford 6.7L Power Stroke fitted with dual alternators — the bottom position.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-alliant-ap83009-bottom-replacement-alternator-11-16-67l-ford-powerstroke-w-dual-alternators",
+    thumbnail: "/product-media/electronics/alliant-power-alternator-ap83009/1.webp",
+    images: ["/product-media/electronics/alliant-power-alternator-ap83009/1.webp"],
+    description: `Alliant Power replacement alternator for the 2011–2016 Ford 6.7L Power Stroke with dual alternators (bottom).
+
+A diesel's charging system carries glow plugs, high-pressure fuel electronics and, on many trucks, a second battery. A failing alternator shows up as slow cranking, dim lights under load and battery warnings — and it strands the truck once it quits.
+
+Alliant Power builds replacement parts to meet or exceed factory specification for these engines.
+
+This is the bottom unit on dual-alternator trucks; the top position is a different part.
+
+Specifications
+
+Manufacturer: Alliant Power
+Application: 2011–2016 Ford 6.7L Power Stroke with dual alternators (bottom)
+Condition: New
+Part number: AP83009
+
+Highlights
+
+OE-specification output
+Meets or exceeds factory specification
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2578,
+    createdAt: 1789430400000,
+    name: "Apex Chassis Extreme Duty Upper & Lower Ball Joint Set — 2000–2002 Dodge Ram 2500 / 3500 — KIT114",
+    category: "suspension",
+    brand: "apex-chassis",
+    // dpp listing price for APX-KIT114.
+    price: 260,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "KIT114",
+    fitment: "2000–2002 Dodge Ram 2500 and 3500 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-apex-chassis-kit114-super-hd-upper-lower-ball-joint-combo-set-00-02-dodge-ram-25003500",
+    thumbnail: "/product-media/suspension/apex-chassis-ball-joint-set-ram-2000-2002-kit114/1.webp",
+    images: ["/product-media/suspension/apex-chassis-ball-joint-set-ram-2000-2002-kit114/1.webp"],
+    description: `Apex Chassis extreme-duty upper and lower ball joint set for the 2000–2002 Dodge Ram 2500 / 3500.
+
+Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tyre wear and, on solid-axle Rams, the wandering front end owners call death wobble.
+
+Apex reworked the factory design with stronger materials and redesigned grease channels, and every application includes zerk fittings so the joints can be greased in service.
+
+Specifications
+
+Manufacturer: Apex Chassis
+Product: Extreme duty upper and lower ball joint set
+Greasable: Yes — zerk fittings included
+Part number: KIT114
+
+Highlights
+
+Upper and lower joints in one set
+Greasable — zerk fittings included
+Stronger than the factory design
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2579,
+    createdAt: 1789430400000,
+    name: "Apex Chassis Extreme Duty Upper & Lower Ball Joint Set — 2003–2013 Ram 2500 / 2003–2010 Ram 3500 — KIT201",
+    category: "suspension",
+    brand: "apex-chassis",
+    // dpp listing price for APX-KIT201.
+    price: 130,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "KIT201",
+    fitment: "2003–2013 Dodge / Ram 2500 and 2003–2010 Ram 3500 4WD. One upper and one lower joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-apex-chassis-kit201-super-hd-1-upper-1-lower-ball-joint-set-03-13-dodge-ram-25003500",
+    thumbnail: "/product-media/suspension/apex-chassis-ball-joint-set-ram-2003-2013-kit201/1.webp",
+    images: ["/product-media/suspension/apex-chassis-ball-joint-set-ram-2003-2013-kit201/1.webp"],
+    description: `Apex Chassis extreme-duty ball joint set — one upper, one lower — for 2003–2013 Ram 2500 and 2003–2010 Ram 3500.
+
+Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tyre wear and, on solid-axle Rams, the wandering front end owners call death wobble.
+
+Apex uses stronger materials than the factory joints and redesigned grease channels, with a pre-threaded zerk housing so the grease fitting goes in without fighting it on installation.
+
+Specifications
+
+Manufacturer: Apex Chassis
+Product: Extreme duty ball joint set (1 upper, 1 lower)
+Greasable: Yes — pre-threaded zerk housing
+Part number: KIT201
+
+Highlights
+
+One upper and one lower joint
+Pre-threaded zerk housing
+Heavy-duty replacement for a known weak point
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2580,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Adjustable Rebuildable Ball Joint Kit — 2003–2013 Ram 2500 / 2003–2012 Ram 3500 4WD — 4123",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-4123.
+    price: 450,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Limited Lifetime Warranty (defects in materials or workmanship)",
+    location: "our supplier network",
+    partNumber: "4123",
+    fitment: "2003–2013 Ram 2500 and 2003–2012 Ram 3500 4WD. This is the standard (non-knurled) version; Synergy's knurled version is part 4123KN, for knuckles with worn bores or previously knurled joints.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-17980-synergy-mfg-heavy-duty-adjustable-rebuildable-ball-joint-kit-03-13-dodge-ram-2500-3500-aspx",
+    thumbnail: "/product-media/suspension/synergy-rebuildable-ball-joint-kit-ram-4123/1.webp",
+    images: ["/product-media/suspension/synergy-rebuildable-ball-joint-kit-ram-4123/1.webp"],
+    description: `Synergy heavy-duty adjustable, rebuildable ball joint kit for 2003–2013 Ram 2500 and 2003–2012 Ram 3500 4WD.
+
+Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tyre wear and, on solid-axle Rams, the wandering front end owners call death wobble.
+
+These are adjustable and rebuildable: rather than pressing out a worn joint and buying another, the wear is taken up by adjustment and the joint is serviced in place.
+
+Synergy covers defects in materials or workmanship for the lifetime of the joint for the original purchaser — normal wear excluded, as ball joints are a wear item.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Product: Adjustable, rebuildable ball joint kit
+Version: Standard (non-knurled)
+Part number: 4123
+
+Highlights
+
+Adjustable and rebuildable in place
+Standard press fit, not knurled
+Limited lifetime warranty against defects
+
+Warranty
+Limited Lifetime Warranty (defects in materials or workmanship)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2581,
+    createdAt: 1789430400000,
+    name: "Rare Parts Diamond Series Front Track Bar Ball Joint — 2005–2026 Ford F-250 / F-350 / F-450 / F-550 4WD — 11901",
+    category: "suspension",
+    brand: "rare-parts",
+    // dpp listing price for RP-11901.
+    price: 63,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "11901",
+    fitment: "2005–2026 Ford F-250 / F-350 / F-450 / F-550 Super Duty 4WD — front track bar. 0.006 in oversize for a precise press-in fit.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/rare-parts-diamond-series-ball-joint-05-26-ford-f-250-f-350-f-450-f-550-superduty-4wd",
+    thumbnail: "/product-media/suspension/rare-parts-track-bar-ball-joint-super-duty-11901/1.webp",
+    images: ["/product-media/suspension/rare-parts-track-bar-ball-joint-super-duty-11901/1.webp"],
+    description: `Rare Parts Diamond Series greaseable ball joint for the front track bar on 2005–2026 Ford Super Duty 4WD trucks.
+
+The track bar locates the front axle side to side. When its joint wears, the axle moves under the truck and the steering goes vague — often blamed on the steering box before anyone checks the bar.
+
+Unlike sealed-for-life joints, this one has a greaseable housing with a 90-degree grease fitting, so it can be maintained rather than replaced on a schedule.
+
+Each joint is inspected and tested in-house by Rare Parts. The Diamond Series is 0.006 in oversize, giving a precise press-in fit in applicable applications.
+
+Specifications
+
+Manufacturer: Rare Parts
+Product: Diamond Series track bar ball joint
+Greasable: Yes — 90-degree fitting
+Sizing: 0.006 in oversize
+Part number: 11901
+
+Highlights
+
+Greaseable rather than sealed
+0.006 in oversize for a tight press fit
+Inspected and tested in-house
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2582,
+    createdAt: 1789430400000,
+    name: "Mishimoto Performance Intercooler Kit — 2019–2026 Ram 6.7L Cummins — MMINT-RAM-19KSLP",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MMINT-RAM-19KSLP.
+    price: 2178.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-RAM-19KSLP",
+    fitment: "2019–2026 Ram 2500 / 3500 with the 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mishimoto-performance-intercooler-kit-19-24-ram-67l-cummins",
+    thumbnail: "/product-media/engine/mishimoto-intercooler-kit-ram-2019-2026-mmint-ram-19kslp/1.webp",
+    images: ["/product-media/engine/mishimoto-intercooler-kit-ram-2019-2026-mmint-ram-19kslp/1.webp"],
+    description: `Mishimoto intercooler kit for the 2019–2026 Ram 6.7L Cummins.
+
+Charge-air temperature is what limits a diesel once it is working: hot intake air means higher exhaust gas temperatures and less margin under tow.
+
+Mishimoto's core is bar-and-plate, 63% larger than stock and 44.7% less restrictive by their figures, with cast aluminium end tanks. They measure 20 °F cooler outlet temperatures and a 237% increase in flow over the factory unit.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Bar-and-plate, 63% larger than stock
+End tanks: Cast aluminium
+Engine: 6.7L Cummins
+Years: 2019–2026
+Part number: MMINT-RAM-19KSLP
+
+Highlights
+
+63% larger core than stock (Mishimoto figure)
+20 °F cooler outlet temperatures (Mishimoto figure)
+Cast aluminium end tanks
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2583,
+    createdAt: 1789430400000,
+    name: "Mishimoto Performance Intercooler Kit with Piping, Black — 2010–2012 Ram 6.7L Cummins — MMINT-RAM-10KBK",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MMINT-RAM-10KBK.
+    price: 1795.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-RAM-10KBK",
+    fitment: "2010–2012 Ram 2500 / 3500 with the 6.7L Cummins. Black finish; the silver kit is MMINT-RAM-10KSL.",
+    included: ["Intercooler","Hot- and cold-side intercooler pipes"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-12412-mishimoto-performance-intercooler-kit-with-piping-10-12-67l-ram-cummins-aspx",
+    thumbnail: "/product-media/engine/mishimoto-intercooler-kit-ram-2010-2012-mmint-ram-10kbk/1.webp",
+    images: ["/product-media/engine/mishimoto-intercooler-kit-ram-2010-2012-mmint-ram-10kbk/1.webp"],
+    description: `Mishimoto intercooler and piping kit for the 2010–2012 Ram 6.7L Cummins, black.
+
+This is the complete charge-air path, not just the cooler: an aluminium intercooler plus upgraded hot- and cold-side pipes.
+
+Lower charge temperatures mean lower exhaust gas temperatures, which is what matters when the truck is towing in heat.
+
+Specifications
+
+Manufacturer: Mishimoto
+Kit: Intercooler with hot- and cold-side piping
+Finish: Black
+Engine: 6.7L Cummins
+Years: 2010–2012
+Part number: MMINT-RAM-10KBK
+
+Highlights
+
+Complete intercooler and pipe kit
+Aluminium construction
+Lower charge and exhaust temperatures
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2584,
+    createdAt: 1789430400000,
+    name: "KC Turbos Upgraded Intercooler — 2003–2007 Ford 6.0L Power Stroke — 302291",
+    category: "engine",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-302291.
+    price: 790,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "302291",
+    fitment: "2003–2007 Ford 6.0L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-turbos-upgraded-intercooler-03-07-ford-60l-powerstroke",
+    thumbnail: "/product-media/engine/kc-turbos-upgraded-intercooler-2003-2007-ford-6-0-302291/1.webp",
+    images: ["/product-media/engine/kc-turbos-upgraded-intercooler-2003-2007-ford-6-0-302291/1.webp"],
+    description: `KC Turbos bar-and-plate intercooler for the 2003–2007 Ford 6.0L Power Stroke.
+
+The factory 6.0L intercooler is a known weak point, and charge-air temperature is what limits the engine under sustained load.
+
+This one is all-aluminium welded construction with a bar-and-plate core, built to take boost and to move more air than the factory cooler.
+
+Specifications
+
+Manufacturer: KC Turbos
+Core: Bar-and-plate
+Construction: All-aluminium welded
+Engine: 6.0L Power Stroke
+Years: 2003–2007
+Part number: 302291
+
+Highlights
+
+Bar-and-plate core
+All-welded aluminium
+Replaces the weak factory cooler
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2585,
+    createdAt: 1789430400000,
+    name: "Mag-Hytec Deep Transmission Pan, 68RFE — 2007.5–2024 Ram 6.7L Cummins — 68RFE",
+    category: "transmission",
+    brand: "mag-hytec",
+    // dpp listing price for MH-68RFE.
+    price: 350.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MH-68RFE",
+    fitment: "2007.5–2024 Dodge / Ram 2500 and 3500 with the 6.7L Cummins and 68RFE automatic.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mag-hytec-68rfe-trans-pan-67l-cummins",
+    thumbnail: "/product-media/transmission/mag-hytec-68rfe-transmission-pan/1.webp",
+    images: ["/product-media/transmission/mag-hytec-68rfe-transmission-pan/1.webp"],
+    description: `Mag-Hytec cast aluminium deep transmission pan for the 68RFE in 2007.5–2024 Ram 6.7L Cummins trucks.
+
+Transmission life is mostly a heat story. A deep cast-aluminium pan adds fluid volume and sheds heat far better than the stamped steel factory pan, which is the cheapest way to buy margin on a truck that tows.
+
+Mag-Hytec casts these in the USA.
+
+Specifications
+
+Manufacturer: Mag-Hytec
+Transmission: 68RFE
+Material: Cast aluminium
+Years: 2007.5–2024
+Part number: 68RFE
+
+Highlights
+
+Extra fluid capacity
+Cast aluminium sheds heat
+Made in the USA
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2586,
+    createdAt: 1789430400000,
+    name: "SunCoast Deep Aluminium Transmission Pan, +4 Quarts, 68RFE — 2007.5–2024 Ram 6.7L Cummins — P68REP22",
+    category: "transmission",
+    brand: "suncoast",
+    // dpp listing price for SC-P68REP22.
+    price: 335,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "P68REP22",
+    fitment: "2007.5–2024 Ram 2500 / 3500 with the 6.7L Cummins and 68RFE automatic.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-suncoast-68rfe-deep-aluminum-pan-075-18-ram-67l-cummins",
+    thumbnail: "/product-media/transmission/suncoast-68rfe-deep-transmission-pan-p68rep22/1.webp",
+    images: ["/product-media/transmission/suncoast-68rfe-deep-transmission-pan-p68rep22/1.webp"],
+    description: `SunCoast deep aluminium transmission pan for the 68RFE — four extra quarts of fluid.
+
+Four extra quarts is a meaningful increase on a 68RFE, and more fluid means more thermal mass and a lower steady-state temperature under tow.
+
+The aluminium casting also carries heat out better than the factory stamped pan.
+
+Specifications
+
+Manufacturer: SunCoast Performance
+Transmission: 68RFE
+Extra capacity: +4 quarts
+Material: Aluminium
+Years: 2007.5–2024
+Part number: P68REP22
+
+Highlights
+
+Four extra quarts of fluid
+Aluminium casting for heat transfer
+Direct replacement for the factory pan
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2587,
+    createdAt: 1789430400000,
+    name: "PPE Bar and Plate Transmission Cooler, 68RFE — 2019–2024 Ram 6.7L Cummins — 224065000",
+    category: "transmission",
+    brand: "ppe",
+    // dpp listing price for PPE-224065000.
+    price: 395.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "224065000",
+    fitment: "2019–2024 Ram 2500 / 3500 with the 6.7L Cummins and 68RFE automatic.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ppe-68rfe-8hp75-bar-and-plate-transmission-cooler-19-26-ram-6-7l-cummins",
+    thumbnail: "/product-media/transmission/ppe-68rfe-bar-and-plate-transmission-cooler-224065000/1.webp",
+    images: ["/product-media/transmission/ppe-68rfe-bar-and-plate-transmission-cooler-224065000/1.webp"],
+    description: `PPE bar-and-plate transmission cooler for 2019–2024 Ram 6.7L Cummins trucks with the 68RFE.
+
+Heat is what kills an automatic: high fluid temperatures lead to clutch slip and burnt fluid, and towing heavy or climbing is where they show up.
+
+A bar-and-plate core carries more fluid and rejects more heat than the tube-and-fin cooler it replaces.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Product: Bar-and-plate transmission cooler
+Transmission: 68RFE
+Years: 2019–2024
+Part number: 224065000
+
+Highlights
+
+Bar-and-plate core
+Targets the 68RFE's heat limit
+Direct fit for 2019–2024 trucks
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2588,
+    createdAt: 1789430400000,
+    name: "Cognito Allison Transmission Shift Linkage Bracket — 2005–2019 Silverado / Sierra 2500HD / 3500HD 4WD — 110-90278",
+    category: "transmission",
+    brand: "cognito",
+    // dpp listing price for CM-110-90278.
+    price: 54.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "110-90278",
+    fitment: "2005–2019 Chevrolet Silverado and GMC Sierra 2500HD / 3500HD 4WD with the six-speed Allison. Required with Cognito CV-style front drivelines.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-cognito-110-90278-allison-transmission-bracket-05-19-66l-gm-duramax-25003500",
+    thumbnail: "/product-media/transmission/cognito-allison-transmission-bracket-110-90278/1.webp",
+    images: ["/product-media/transmission/cognito-allison-transmission-bracket-110-90278/1.webp"],
+    description: `Cognito shift linkage bracket for the Allison in 2005–2019 Silverado / Sierra HD 4WD trucks.
+
+The bracket relocates the transmission shift linkage to clear the CV head on Cognito drivelines. Cognito lists it as required with their CV front driveline.
+
+It is a small part with a specific job: without the clearance, the linkage and driveline can interfere. Made in the USA.
+
+Specifications
+
+Manufacturer: Cognito Motorsports
+Product: Allison shift linkage bracket
+Transmission: Six-speed Allison
+Years: 2005–2019
+Part number: 110-90278
+
+Highlights
+
+Clears the CV head on Cognito drivelines
+Required with Cognito CV front drivelines
+Made in the USA
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2603,
+    createdAt: 1789430400000,
+    name: "Safari ARMAX Snorkel for 2010–2023 Toyota 4Runner — SS450HP",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS450HP.
+    price: 659.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS450HP",
+    fitment: "Toyota 4Runner 2010–2023 (2.7L, 4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-armax-snorkel-ss450hp/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss450hp/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss450hp/1.webp"],
+    description: `Safari ARMAX snorkel for the 2010–2023 Toyota 4Runner.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the ARMAX model: a high-flow design with a 4 in air ram intake, which ARB rates at 10% higher CFM than other brands.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: ARMAX
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota 4Runner 2010–2023 (2.7L, 4L)
+Part number: SS450HP
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+ARMAX high-flow body with 4 in air ram
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2604,
+    createdAt: 1789430400000,
+    name: "Safari ARMAX Snorkel for 2016–2023 Toyota Tacoma — SS172HP",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS172HP.
+    price: 659.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS172HP",
+    fitment: "Toyota Tacoma 2016–2023 (2.7L, 3.5L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-armax-snorkel-ss172hp/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss172hp/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss172hp/1.webp"],
+    description: `Safari ARMAX snorkel for the 2016–2023 Toyota Tacoma.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the ARMAX model: a high-flow design with a 4 in air ram intake, which ARB rates at 10% higher CFM than other brands.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: ARMAX
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota Tacoma 2016–2023 (2.7L, 3.5L)
+Part number: SS172HP
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+ARMAX high-flow body with 4 in air ram
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2605,
+    createdAt: 1789430400000,
+    name: "Safari ARMAX Snorkel for 2005–2015 Toyota Tacoma — SS171HP",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS171HP.
+    price: 659.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS171HP",
+    fitment: "Toyota Tacoma 2005–2015 (2.7L, 4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-armax-snorkel-ss171hp/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss171hp/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss171hp/1.webp"],
+    description: `Safari ARMAX snorkel for the 2005–2015 Toyota Tacoma.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the ARMAX model: a high-flow design with a 4 in air ram intake, which ARB rates at 10% higher CFM than other brands.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: ARMAX
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota Tacoma 2005–2015 (2.7L, 4L)
+Part number: SS171HP
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+ARMAX high-flow body with 4 in air ram
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2606,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2018–2023 / 2020–2023 Jeep Wrangler / Jeep Gladiator — SS1080HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS1080HF.
+    price: 699.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS1080HF",
+    fitment: "Jeep Wrangler 2018–2023 (2L, 3.6L, 3L, 6.4L); Jeep Gladiator 2020–2023 (3.6L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss1080hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss1080hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss1080hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2018–2023 / 2020–2023 Jeep Wrangler / Jeep Gladiator.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Jeep Wrangler 2018–2023 (2L, 3.6L, 3L, 6.4L); Jeep Gladiator 2020–2023 (3.6L)
+Part number: SS1080HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2607,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2019–2023 Ford Ranger — SS983HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS983HF.
+    price: 224.25,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS983HF",
+    fitment: "Ford Ranger 2019–2023 (2.2L, 2.3L, 2.5L, 3.2L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss983hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss983hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss983hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2019–2023 Ford Ranger.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Ford Ranger 2019–2023 (2.2L, 2.3L, 2.5L, 3.2L)
+Part number: SS983HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2608,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2007–2009 Toyota FJ Cruiser — SS410HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS410HF.
+    price: 559.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS410HF",
+    fitment: "Toyota FJ Cruiser 2007–2009 (4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/snorkel-vspec-toy-fj-cruiser-4l-v6-ss410hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss410hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss410hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2007–2009 Toyota FJ Cruiser.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota FJ Cruiser 2007–2009 (4L)
+Part number: SS410HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2609,
+    createdAt: 1789430400000,
+    name: "Safari ARMAX Snorkel for 2005–2015 Toyota Tacoma — SS123HP",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS123HP.
+    price: 659.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS123HP",
+    fitment: "Toyota Tacoma 2005–2015 (2.7L, 4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-armax-snorkel-ss123hp/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss123hp/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss123hp/1.webp"],
+    description: `Safari ARMAX snorkel for the 2005–2015 Toyota Tacoma.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the ARMAX model: a high-flow design with a 4 in air ram intake, which ARB rates at 10% higher CFM than other brands.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: ARMAX
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota Tacoma 2005–2015 (2.7L, 4L)
+Part number: SS123HP
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+ARMAX high-flow body with 4 in air ram
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2610,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2003–2009 Toyota 4Runner — SS445HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS445HF.
+    price: 649.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS445HF",
+    fitment: "Toyota 4Runner 2003–2009 (4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss445hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss445hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss445hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2003–2009 Toyota 4Runner.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota 4Runner 2003–2009 (4L)
+Part number: SS445HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2611,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2010–2014 Toyota FJ Cruiser — SS420HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS420HF.
+    price: 559.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS420HF",
+    fitment: "Toyota FJ Cruiser 2010–2014 (4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss420hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss420hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss420hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2010–2014 Toyota FJ Cruiser.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota FJ Cruiser 2010–2014 (4L)
+Part number: SS420HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2612,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 1995–2004 Toyota Tacoma — SS170HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS170HF.
+    price: 503,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS170HF",
+    fitment: "Toyota Tacoma 1995–2004 (2.4L, 2.7L, 3.4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss170hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss170hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss170hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 1995–2004 Toyota Tacoma.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota Tacoma 1995–2004 (2.4L, 2.7L, 3.4L)
+Part number: SS170HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2613,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2003–2009 Toyota 4Runner — SS440HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS440HF.
+    price: 649.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS440HF",
+    fitment: "Toyota 4Runner 2003–2009 (4.7L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss440hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss440hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss440hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2003–2009 Toyota 4Runner.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Toyota 4Runner 2003–2009 (4.7L)
+Part number: SS440HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2614,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2012–2017 / 2018 Jeep Wrangler / Jeep Wrangler JK — SS1070HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS1070HF.
+    price: 699.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS1070HF",
+    fitment: "Jeep Wrangler 2012–2017 (3.6L); Jeep Wrangler JK 2018 (3.6L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss1070hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss1070hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss1070hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2012–2017 / 2018 Jeep Wrangler / Jeep Wrangler JK.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Jeep Wrangler 2012–2017 (3.6L); Jeep Wrangler JK 2018 (3.6L)
+Part number: SS1070HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2615,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 1987–1995 Jeep Wrangler — SS1000HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS1000HF.
+    price: 527,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS1000HF",
+    fitment: "Jeep Wrangler 1987–1995 (2.5L, 4.2L, 4L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss1000hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss1000hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss1000hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 1987–1995 Jeep Wrangler.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Jeep Wrangler 1987–1995 (2.5L, 4.2L, 4L)
+Part number: SS1000HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2616,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2002–2005 Jeep Liberty — SS1130HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS1130HF.
+    price: 588,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS1130HF",
+    fitment: "Jeep Liberty 2002–2005 (2.4L, 3.7L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss1130hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss1130hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss1130hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2002–2005 Jeep Liberty.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Jeep Liberty 2002–2005 (2.4L, 3.7L)
+Part number: SS1130HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2617,
+    createdAt: 1789430400000,
+    name: "Safari VSPEC Snorkel for 2005–2006 Jeep Liberty — SS1135HF",
+    category: "4x4-accessories",
+    brand: "safari",
+    // ARB USA store price for SS1135HF.
+    price: 588,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty (snorkel body)",
+    location: "our supplier network",
+    partNumber: "SS1135HF",
+    fitment: "Jeep Liberty 2005–2006 (2.8L). Vehicle-specific — fits this application only.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/safari-vspec-snorkel-ss1135hf/",
+    thumbnail: "/product-media/4x4-accessories/safari-snorkel-ss1135hf/1.webp",
+    images: ["/product-media/4x4-accessories/safari-snorkel-ss1135hf/1.webp"],
+    description: `Safari VSPEC snorkel for the 2005–2006 Jeep Liberty.
+
+A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+
+Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
+
+This is the VSPEC model, with high-flow ducting sized to supply more air than the engine needs, and sealing aimed squarely at keeping dust and water out.
+
+A snorkel raises the intake; it does not by itself make a vehicle waterproof. Diff, gearbox and transfer case breathers, and the electrics, all need attention before deep water.
+
+Specifications
+
+Manufacturer: Safari (ARB)
+Range: VSPEC
+Material: UV-stable cross-linked polyethylene
+Includes: Fasteners and mounting brackets
+Applications: Jeep Liberty 2005–2006 (2.8L)
+Part number: SS1135HF
+
+Highlights
+
+Raises the air intake to roof height
+Vehicle-specific moulding, not a universal kit
+High-flow ducting sized above engine demand
+Fasteners and brackets included
+
+Warranty
+Lifetime Warranty (snorkel body)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2618,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Point for 2008–2021 Toyota Land Cruiser — 2815020",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 2815020.
+    price: 111,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2815020",
+    fitment: "Toyota Land Cruiser 2008–2021. Sold individually.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/recovery-point-2815020/",
+    thumbnail: "/product-media/4x4-accessories/arb-recovery-point-2815020/1.webp",
+    images: ["/product-media/4x4-accessories/arb-recovery-point-2815020/1.webp"],
+    description: `ARB engineered recovery point of the Toyota Land Cruiser.
+
+Factory tow hooks are for towing a vehicle on flat ground, not for snatching one out of a bog. There is no industry standard covering them, which is exactly the confusion ARB set out to fix with an engineered, vehicle-specific recovery point.
+
+The issues with generic tow points are mounting locations nobody has tested, uncertainty about which shackle and strap to pair with them, and their inability to handle the loads of an angled pull. ARB rates each recovery point as part of a matched recovery chain.
+
+This is the vehicle-specific point for the Toyota Land Cruiser 2008–2021. It is sold individually.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: Rated recovery point
+Applications: Toyota Land Cruiser 2008–2021
+Quantity: 1
+Part number: 2815020
+
+Highlights
+
+Engineered, vehicle-specific mounting
+Designed for the loads of an angled recovery pull
+Sold individually
+
+Warranty
+ARB 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2619,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Point (LHS) for 2024–2026 Toyota Land Cruiser — 2821040",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 2821040.
+    price: 255,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2821040",
+    fitment: "Toyota Land Cruiser 2024–2026. Fits the left-hand side. Sold individually.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/forged-recovery-point-lhs-2821040/",
+    thumbnail: "/product-media/4x4-accessories/arb-recovery-point-2821040/1.webp",
+    images: ["/product-media/4x4-accessories/arb-recovery-point-2821040/1.webp"],
+    description: `ARB engineered recovery point for the left-hand side of the Toyota Land Cruiser.
+
+Factory tow hooks are for towing a vehicle on flat ground, not for snatching one out of a bog. There is no industry standard covering them, which is exactly the confusion ARB set out to fix with an engineered, vehicle-specific recovery point.
+
+The issues with generic tow points are mounting locations nobody has tested, uncertainty about which shackle and strap to pair with them, and their inability to handle the loads of an angled pull. ARB rates each recovery point as part of a matched recovery chain.
+
+This is the vehicle-specific point for the Toyota Land Cruiser 2024–2026, left-hand side. It is sold individually.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: Rated recovery point
+Side: left-hand side
+Applications: Toyota Land Cruiser 2024–2026
+Quantity: 1
+Part number: 2821040
+
+Highlights
+
+Engineered, vehicle-specific mounting
+Designed for the loads of an angled recovery pull
+Sold individually
+
+Warranty
+ARB 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2620,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Point (RHS) for 2024–2026 Toyota Land Cruiser — 2821050",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 2821050.
+    price: 255,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2821050",
+    fitment: "Toyota Land Cruiser 2024–2026. Fits the right-hand side. Sold individually.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/forged-recovery-point-rhs-2821050/",
+    thumbnail: "/product-media/4x4-accessories/arb-recovery-point-2821050/1.webp",
+    images: ["/product-media/4x4-accessories/arb-recovery-point-2821050/1.webp"],
+    description: `ARB engineered recovery point for the right-hand side of the Toyota Land Cruiser.
+
+Factory tow hooks are for towing a vehicle on flat ground, not for snatching one out of a bog. There is no industry standard covering them, which is exactly the confusion ARB set out to fix with an engineered, vehicle-specific recovery point.
+
+The issues with generic tow points are mounting locations nobody has tested, uncertainty about which shackle and strap to pair with them, and their inability to handle the loads of an angled pull. ARB rates each recovery point as part of a matched recovery chain.
+
+This is the vehicle-specific point for the Toyota Land Cruiser 2024–2026, right-hand side. It is sold individually.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: Rated recovery point
+Side: right-hand side
+Applications: Toyota Land Cruiser 2024–2026
+Quantity: 1
+Part number: 2821050
+
+Highlights
+
+Engineered, vehicle-specific mounting
+Designed for the loads of an angled recovery pull
+Sold individually
+
+Warranty
+ARB 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2621,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Point for 2005–2023 Toyota Tacoma — 2823010",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 2823010.
+    price: 321,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "2823010",
+    fitment: "Toyota Tacoma 2005–2023. Sold individually.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/recovery-point-2823010/",
+    thumbnail: "/product-media/4x4-accessories/arb-recovery-point-2823010/1.webp",
+    images: ["/product-media/4x4-accessories/arb-recovery-point-2823010/1.webp"],
+    description: `ARB engineered recovery point of the Toyota Tacoma.
+
+Factory tow hooks are for towing a vehicle on flat ground, not for snatching one out of a bog. There is no industry standard covering them, which is exactly the confusion ARB set out to fix with an engineered, vehicle-specific recovery point.
+
+The issues with generic tow points are mounting locations nobody has tested, uncertainty about which shackle and strap to pair with them, and their inability to handle the loads of an angled pull. ARB rates each recovery point as part of a matched recovery chain.
+
+This is the vehicle-specific point for the Toyota Tacoma 2005–2023. It is sold individually.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: Rated recovery point
+Applications: Toyota Tacoma 2005–2023
+Quantity: 1
+Part number: 2823010
+
+Highlights
+
+Engineered, vehicle-specific mounting
+Designed for the loads of an angled recovery pull
+Sold individually
+
+Warranty
+ARB 3-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2622,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Bow Shackle, 10 mm, 1 t Rated — ARB2011",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for ARB2011.
+    price: 6.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "ARB2011",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/recovery-bow-shackle-10mm-1t-rated-pin-size-12mm-type-s-arb2011/",
+    thumbnail: "/product-media/4x4-accessories/arb-arb2011/1.webp",
+    images: ["/product-media/4x4-accessories/arb-arb2011/1.webp"],
+    description: `ARB Recovery Bow Shackle, 10 mm, 1 t Rated.
+
+A rated bow shackle is the link between a recovery strap and a recovery point. Using an unrated hardware-store shackle is where recoveries turn dangerous, because nothing on it tells you what it will hold.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Bow shackle, Type S
+Body: 10 mm
+Rating: 1 t
+Pin size: 12 mm
+Part number: ARB2011
+
+Highlights
+
+Rated to 1 t
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2623,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Bow Shackle, 16 mm, 3.25 t Rated — ARB2012",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for ARB2012.
+    price: 14.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "ARB2012",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/recovery-bow-shackle-16mm-3-25t-rated-pin-size-19mm-type-s-arb2012/",
+    thumbnail: "/product-media/4x4-accessories/arb-arb2012/1.webp",
+    images: ["/product-media/4x4-accessories/arb-arb2012/1.webp"],
+    description: `ARB Recovery Bow Shackle, 16 mm, 3.25 t Rated.
+
+A rated bow shackle is the link between a recovery strap and a recovery point. Rated hardware is what lets you match the shackle to the load.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Bow shackle, Type S
+Body: 16 mm
+Rating: 3.25 t
+Pin size: 19 mm
+Part number: ARB2012
+
+Highlights
+
+Rated to 3.25 t
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2624,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Bow Shackle, 19 mm, 4.75 t Rated — ARB2014",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for ARB2014.
+    price: 22.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "ARB2014",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/recovery-bow-shackle-19mm-4-75t-rated-pin-size-23mm-type-s-arb2014/",
+    thumbnail: "/product-media/4x4-accessories/arb-arb2014/1.webp",
+    images: ["/product-media/4x4-accessories/arb-arb2014/1.webp"],
+    description: `ARB Recovery Bow Shackle, 19 mm, 4.75 t Rated.
+
+A rated bow shackle is the link between a recovery strap and a recovery point. This is the size most often paired with a mid-size 4x4's recovery points.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Bow shackle, Type S
+Body: 19 mm
+Rating: 4.75 t
+Pin size: 23 mm
+Part number: ARB2014
+
+Highlights
+
+Rated to 4.75 t
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2625,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Bow Shackle, 25 mm, 8.5 t Rated — ARB2016",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for ARB2016.
+    price: 40.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "ARB2016",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/recovery-bow-shackle-25mm-8-5t-rated-29mm-type-s-arb2016/",
+    thumbnail: "/product-media/4x4-accessories/arb-arb2016/1.webp",
+    images: ["/product-media/4x4-accessories/arb-arb2016/1.webp"],
+    description: `ARB Recovery Bow Shackle, 25 mm, 8.5 t Rated.
+
+A rated bow shackle is the link between a recovery strap and a recovery point. The 25 mm size suits heavier vehicles and higher-rated points.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Bow shackle, Type S
+Body: 25 mm
+Rating: 8.5 t
+Pin size: 29 mm
+Part number: ARB2016
+
+Highlights
+
+Rated to 8.5 t
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2626,
+    createdAt: 1789430400000,
+    name: "ARB Soft Connect Shackle — ARB2018",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for ARB2018.
+    price: 68.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "ARB2018",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/soft-connect-shackle-14-5t-arb2018/",
+    thumbnail: "/product-media/4x4-accessories/arb-arb2018/1.webp",
+    images: ["/product-media/4x4-accessories/arb-arb2018/1.webp"],
+    description: `ARB Soft Connect Shackle.
+
+A soft shackle does the same job as a steel bow shackle with a fraction of the mass, so if something lets go there is far less energy in the object flying through the air. It also threads through recovery points that a steel shackle will not fit.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Soft shackle
+Part number: ARB2018
+
+Highlights
+
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2627,
+    createdAt: 1789430400000,
+    name: "ARB Recovery Damper — ARB220",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for ARB220.
+    price: 60.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "ARB220",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/recovery-damper-arb220/",
+    thumbnail: "/product-media/4x4-accessories/arb-arb220/1.webp",
+    images: ["/product-media/4x4-accessories/arb-arb220/1.webp"],
+    description: `ARB Recovery Damper.
+
+A recovery damper is draped over a strap or winch line under load. If the line parts, the damper's weight drops it to the ground instead of letting it whip. It is the cheapest piece of safety equipment in a recovery kit and the one most often missing.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Recovery damper (line damper)
+Part number: ARB220
+
+Highlights
+
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2628,
+    createdAt: 1789430400000,
+    name: "ARB Snatch Block, 15,000 lb — ARB2091A",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for ARB2091A.
+    price: 112.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "ARB2091A",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/snatch-block-15-000lb-arb2091a/",
+    thumbnail: "/product-media/4x4-accessories/arb-arb2091a/1.webp",
+    images: ["/product-media/4x4-accessories/arb-arb2091a/1.webp"],
+    description: `ARB Snatch Block, 15,000 lb.
+
+A snatch block redirects a winch line or doubles its pulling power by halving line speed. It is what you reach for when the anchor is off to one side, or when the winch alone will not move the vehicle.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Snatch block
+Rating: 15,000 lb
+Part number: ARB2091A
+
+Highlights
+
+Rated to 15,000 lb
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2629,
+    createdAt: 1789430400000,
+    name: "ARB Ultra Light Snatch Block, 20,000 lb — 10100020A",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 10100020A.
+    price: 141,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "10100020A",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/ultra-light-snatch-block-20-000lb-10100020a/",
+    thumbnail: "/product-media/4x4-accessories/arb-10100020a/1.webp",
+    images: ["/product-media/4x4-accessories/arb-10100020a/1.webp"],
+    description: `ARB Ultra Light Snatch Block, 20,000 lb.
+
+A snatch block redirects a winch line or doubles pulling power by halving line speed. This is the ultra-light version, rated at 20,000 lb.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Snatch block, ultra light
+Rating: 20,000 lb
+Part number: 10100020A
+
+Highlights
+
+Rated to 20,000 lb
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2630,
+    createdAt: 1789430400000,
+    name: "ARB Hawse Fairlead Spacer Kit — 3500600",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 3500600.
+    price: 139.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3500600",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/hawse-fairlead-spacer-kit-3500600/",
+    thumbnail: "/product-media/4x4-accessories/arb-3500600/1.webp",
+    images: ["/product-media/4x4-accessories/arb-3500600/1.webp"],
+    description: `ARB Hawse Fairlead Spacer Kit.
+
+Some ARB bumpers need a spacer behind a hawse fairlead so the fairlead sits at the right depth for the winch line. ARB lists this kit as required when fitting a hawse fairlead to those bars.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Hawse fairlead spacer kit
+Part number: 3500600
+
+Highlights
+
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2631,
+    createdAt: 1789430400000,
+    name: "ARB Winch Spacer Kit — 3500050",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 3500050.
+    price: 79.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3500050",
+    fitment: "Universal recovery equipment. Match rated gear to the rating of the recovery points it is used with.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/winch-spacer-kit-3500050/",
+    thumbnail: "/product-media/4x4-accessories/arb-3500050/1.webp",
+    images: ["/product-media/4x4-accessories/arb-3500050/1.webp"],
+    description: `ARB Winch Spacer Kit.
+
+A winch spacer kit sets the winch at the correct depth in the bumper's cradle so the drum, fairlead and line all align.
+
+Recovery gear is only as strong as its weakest link: the strap, the shackle, the point it bolts to and the person judging the pull. Match ratings across the whole chain, and keep people clear of the line.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Winch spacer kit
+Part number: 3500050
+
+Highlights
+
+Use with matched, rated recovery points and straps
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2632,
+    createdAt: 1789430400000,
+    name: "ARB Front Air Locker Dash Switch — 180223SP",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 180223SP.
+    price: 29.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "180223SP",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/front-air-locker-switch-180223sp/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-180223sp/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-180223sp/1.webp"],
+    description: `ARB Front Air Locker Dash Switch.
+
+The dash switch that engages a front Air Locker. ARB supplies front and rear switches with different legends so the dash reads correctly.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Front Air Locker switch
+Part number: 180223SP
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2633,
+    createdAt: 1789430400000,
+    name: "ARB Rear Air Locker Dash Switch — 180224SP",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 180224SP.
+    price: 29.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "180224SP",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/rear-air-locker-switch-180224sp/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-180224sp/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-180224sp/1.webp"],
+    description: `ARB Rear Air Locker Dash Switch.
+
+The dash switch that engages a rear Air Locker. ARB supplies front and rear switches with different legends so the dash reads correctly.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Rear Air Locker switch
+Part number: 180224SP
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2634,
+    createdAt: 1789430400000,
+    name: "ARB 1/8 in 12V Aluminium Solenoid Valve — 180103SP",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 180103SP.
+    price: 95.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "180103SP",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/1-8-12v-dc-electric-aluminum-solenoid-valve-180103sp/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-180103sp/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-180103sp/1.webp"],
+    description: `ARB 1/8 in 12V Aluminium Solenoid Valve.
+
+The solenoid valve is what actually sends air to the locker when the switch is pressed. This is the 12 V aluminium-bodied valve used in ARB's air locker systems.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Solenoid valve
+Voltage: 12 V DC
+Port: 1/8 in
+Body: Aluminium
+Part number: 180103SP
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2635,
+    createdAt: 1789430400000,
+    name: "ARB Air Locker Seal Housing and O-Ring Kit — 082104SP",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 082104SP.
+    price: 119,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "082104SP",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/seal-housing-and-oring-kit-082104sp/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-082104sp/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-082104sp/1.webp"],
+    description: `ARB Air Locker Seal Housing and O-Ring Kit.
+
+The seal housing carries air into the rotating differential. It is the service part on an Air Locker: when a locker stops holding air, this is usually what has worn.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Seal housing and O-ring kit
+Part number: 082104SP
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2636,
+    createdAt: 1789430400000,
+    name: "ARB Air Locker Seal Housing and O-Ring Kit — 082101SP",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 082101SP.
+    price: 118,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "082101SP",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/seal-housing-and-o-ring-kit-082101sp/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-082101sp/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-082101sp/1.webp"],
+    description: `ARB Air Locker Seal Housing and O-Ring Kit.
+
+The seal housing carries air into the rotating differential, and it is the usual service part when an Air Locker stops holding air. Check which housing your locker uses before ordering.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Seal housing and O-ring kit
+Part number: 082101SP
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2637,
+    createdAt: 1789430400000,
+    name: "ARB Air Line, 6 mm × 3 mm × 6 m — 170314",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 170314.
+    price: 17,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "170314",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/air-line-6mm-x-3mm-x-6m-long-170314/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-170314/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-170314/1.webp"],
+    description: `ARB Air Line, 6 mm × 3 mm × 6 m.
+
+Replacement air line for an Air Locker or compressor installation — 6 m of 6 mm outside diameter, 3 mm bore.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Air line
+Size: 6 mm OD × 3 mm ID
+Length: 6 m
+Part number: 170314
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2638,
+    createdAt: 1789430400000,
+    name: "ARB Air Fitting, LP 6 mm Push-in — 170213SP",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 170213SP.
+    price: 10,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "170213SP",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/air-fitting-lp-6mm-push-in-170213sp/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-170213sp/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-170213sp/1.webp"],
+    description: `ARB Air Fitting, LP 6 mm Push-in.
+
+A push-in low-pressure fitting for 6 mm ARB air line. Push-in fittings seal on the line itself, so a run can be cut, routed and reconnected without tools or thread tape — which is how most Air Locker and on-board air plumbing is put together.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Push-in air fitting
+Line size: 6 mm
+Pressure: Low pressure
+Part number: 170213SP
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2639,
+    createdAt: 1789430400000,
+    name: "ARB Push-in Fitting, 5 mm to 1/8 BSPP — 170201SP",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 170201SP.
+    price: 17,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "170201SP",
+    fitment: "Service and installation part for ARB Air Locker and on-board air systems. Check the part against your locker or compressor before ordering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/push-in-fitting-5mm-to-1-8-bspp-170201sp/",
+    thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-170201sp/1.webp",
+    images: ["/product-media/4x4-accessories/arb-air-locker-part-170201sp/1.webp"],
+    description: `ARB Push-in Fitting, 5 mm to 1/8 BSPP.
+
+A push-in fitting joining 5 mm air line to a 1/8 BSPP port.
+
+ARB's air system is modular: compressor, solenoid, switch, air line and the seal housing inside the differential. Each piece is replaceable on its own, which is why a failed locker rarely means a new locker.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Type: Push-in air fitting
+Thread: 1/8 BSPP
+Line size: 5 mm
+Part number: 170201SP
+
+Highlights
+
+Genuine ARB service part
+Keeps an existing Air Locker system serviceable
+Sold individually
+
+Warranty
+ARB Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,

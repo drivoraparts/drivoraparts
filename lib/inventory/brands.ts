@@ -50,6 +50,7 @@ export const brands: Brand[] = [
   { slug: "industrial-injection", name: "Industrial Injection", category: "engine" },
   { slug: "csf", name: "CSF Radiators", category: "engine" },
   { slug: "banks-power", name: "Banks Power", category: "engine" },
+  { slug: "kc-turbos", name: "KC Turbos", category: "engine" },
 
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
@@ -64,6 +65,7 @@ export const brands: Brand[] = [
   { slug: "bd-diesel", name: "BD Diesel", category: "turbocharger" },
   { slug: "holset", name: "Holset", category: "turbocharger" },
   { slug: "industrial-injection", name: "Industrial Injection", category: "turbocharger" },
+  { slug: "rotomaster", name: "Rotomaster", category: "turbocharger" },
 
   // Transmission
   { slug: "zf", name: "ZF", category: "transmission" },
@@ -93,6 +95,10 @@ export const brands: Brand[] = [
 
   { slug: "zumbrota", name: "Zumbrota Drivetrain", category: "transmission" },
   { slug: "bd-diesel", name: "BD Diesel", category: "transmission" },
+  { slug: "mag-hytec", name: "Mag-Hytec", category: "transmission" },
+  { slug: "suncoast", name: "SunCoast Performance", category: "transmission" },
+  { slug: "ppe", name: "PPE Diesel", category: "transmission" },
+  { slug: "cognito", name: "Cognito Motorsports", category: "transmission" },
 
   // Bumpers
   { slug: "arb", name: "ARB", category: "bumper" },
@@ -159,6 +165,12 @@ export const brands: Brand[] = [
   { slug: "icon-vehicle-dynamics", name: "ICON Vehicle Dynamics", category: "suspension" },
   { slug: "emf", name: "EMF Ball Joints", category: "suspension" },
   { slug: "dynatrac", name: "Dynatrac", category: "suspension" },
+  { slug: "eibach", name: "Eibach", category: "suspension" },
+  { slug: "camburg", name: "Camburg Engineering", category: "suspension" },
+  { slug: "fabtech", name: "Fabtech", category: "suspension" },
+  { slug: "apex-chassis", name: "Apex Chassis", category: "suspension" },
+  { slug: "synergy", name: "Synergy Manufacturing", category: "suspension" },
+  { slug: "rare-parts", name: "Rare Parts", category: "suspension" },
 
   // Electronics
   // OBS 7.3 Power Stroke sensors carry Ford / Motorcraft part numbers.
@@ -174,6 +186,7 @@ export const brands: Brand[] = [
   { slug: "ottocast", name: "Ottocast", category: "electronics" },
   { slug: "volkswagen", name: "Volkswagen", category: "electronics" },
   { slug: "universal", name: "Universal", category: "electronics" },
+  { slug: "bosch", name: "Bosch", category: "electronics" },
 
   // Lighting
   { slug: "alpharex", name: "AlphaRex", category: "lighting" },
