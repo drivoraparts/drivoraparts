@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   496 listings added 2026-09-15 from manufacturer and
+   510 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -24913,6 +24913,752 @@ Sold individually
 
 Warranty
 ARB Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2640,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro LED Auxiliary Light Spot Set — PM431",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM431.
+    price: 549.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM431",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nacho-quatro-led-auxiliary-light-spot-set-pm431/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm431/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm431/1.webp"],
+    description: `NACHO Quatro LED Auxiliary Light Spot Set — 10,820 effective lumens (pair, max, high beam), 60 per light (max, any mode).
+
+A spot beam is the long-throw option: a narrow cone that puts light far down the road, so you see further at speed. Pair it with a flood if you also want width.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 per Light (Max, any mode)
+Spread: 10 degrees (Widest Beam Width, any beam)
+Colour temperature: 5700
+Dimensions: 4 inches (Single)
+Weight: 1.2 lb (Single)
+Output: 10,820 (Pair, Max, High Beam)
+Design: Combo Light
+Part number: PM431
+
+Highlights
+
+Utilizes a white back light designed as a Trail Running Light
+9.5 degree beam with 212,000 candela and 14,400 raw lumens
+Comes with 2 Amber Covers and 2 Smoke Covers
+Includes a stainless steel universal mount bracket and chrome plated mounting hardware
+Pressure Equilizing Vent
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2641,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro LED Auxiliary Light Flood Set — PM451",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM451.
+    price: 549.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM451",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nacho-quatro-led-auxiliary-light-flood-set-pm451/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm451/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm451/1.webp"],
+    description: `NACHO Quatro LED Auxiliary Light Flood Set — 8,166 effective lumens (pair, max, high beam), 60 per light (max, any mode).
+
+A flood beam is the wide option: it lights the verges and the ground either side of the vehicle rather than throwing far ahead. Pair it with a spot if you also want reach.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 per Light (Max, any mode)
+Spread: 35 degrees (Widest Beam Width, any beam)
+Colour temperature: 5700
+Dimensions: 4 inches (Single)
+Weight: 1.2 lb (Single)
+Output: 8,166 (Pair, Max, High Beam)
+Design: Flood Light
+Part number: PM451
+
+Highlights
+
+Utilizes a white back light designed as a Trail Running Light
+Diffused light output for ideal light spread over the immediate area
+Comes with 2 Amber Covers and 2 Smoke Covers
+Includes a stainless steel universal mount bracket and chrome plated mounting hardware
+Pressure Equilizing Vent
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2642,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Amber Light SAE Combo — PM491",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM491.
+    price: 549.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM491",
+    fitment: "Universal 4-inch auxiliary light, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nacho-quatro-amber-light-sae-combo-pm491/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm491/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm491/1.webp"],
+    description: `NACHO Quatro Amber Light SAE Combo.
+
+SAE-pattern lights are designed to meet the beam-pattern standard for on-road auxiliary lighting, which is what separates a legal fog or driving light from an off-road-only one. The Quatro SAE models build that pattern into mode 1 and keep an off-road beam on another mode.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as listed by ARB — check the quantity on the specification list below before ordering.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Spread: 40 Degrees (Widest Beam Width, any beam)
+Design: Combo Light
+Part number: PM491
+
+Highlights
+
+Multi Function 3-N-1 lighting
+Housing a Fog Light, Spot Beam, and Backlight in 1 single light
+SAE Compliant Beam Pattern
+Includes a stainless steel universal mount bracket and chrome plated mounting hardware
+Pressure Equilizing Vent
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2644,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Amber/Blue Chase Light Set — PM455AB",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM455AB.
+    price: 649.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM455AB",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Check local law on auxiliary light colours and strobe patterns before using it on a public road.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/quatro-amber-blue-chase-light-set-pm455ab/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm455ab/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm455ab/1.webp"],
+    description: `NACHO Quatro Amber/Blue Chase Light Set, 60 watts per light max, any mode.
+
+A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Colour and flash patterns are regulated. In most US states and Australian states, red and blue are reserved for emergency vehicles, and rearward strobes have their own rules. Fit and use accordingly.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 Watts per light max, any mode
+Spread: 35 Degrees (widest beam width, any beam)
+Colour temperature: 5,700 Degrees
+Part number: PM455AB
+
+Highlights
+
+Multple Functioning Chase Lights
+Copper Circuit Board
+Lifetime Warranty
+Corrosion Resistant Material
+Program up to 3 outputs
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2645,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Red Chase Light Set — PM455RD",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM455RD.
+    price: 649.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM455RD",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Check local law on auxiliary light colours and strobe patterns before using it on a public road.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/quatro-red-chase-light-set-pm455rd/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm455rd/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm455rd/1.webp"],
+    description: `NACHO Quatro Red Chase Light Set, 60 watts per light max, any mode.
+
+A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Colour and flash patterns are regulated. In most US states and Australian states, red and blue are reserved for emergency vehicles, and rearward strobes have their own rules. Fit and use accordingly.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 Watts per light max, any mode
+Spread: 35 Degrees (widest beam width, any beam)
+Colour temperature: 5,700 Degrees
+Part number: PM455RD
+
+Highlights
+
+Multple Functioning Chase Lights
+Copper Circuit Board
+Lifetime Warranty
+Corrosion Resistant Material
+Program up to 3 outputs
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2646,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Red/Amber Chase Light Set — PM455RA",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM455RA.
+    price: 649.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM455RA",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Check local law on auxiliary light colours and strobe patterns before using it on a public road.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/quatro-red-amber-chase-light-set-pm455ra/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm455ra/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm455ra/1.webp"],
+    description: `NACHO Quatro Red/Amber Chase Light Set, 60 watts per light max, any mode.
+
+A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Colour and flash patterns are regulated. In most US states and Australian states, red and blue are reserved for emergency vehicles, and rearward strobes have their own rules. Fit and use accordingly.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 Watts per light max, any mode
+Spread: 35 Degrees (widest beam width, any beam)
+Colour temperature: 5,700 Degrees
+Part number: PM455RA
+
+Highlights
+
+Multple Functioning Chase Lights
+Copper Circuit Board
+Lifetime Warranty
+Corrosion Resistant Material
+Program up to 3 outputs
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2647,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Amber Chase Light Set — PM455AM",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM455AM.
+    price: 649.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM455AM",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Check local law on auxiliary light colours and strobe patterns before using it on a public road.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/quatro-amber-chase-light-set-pm455am/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm455am/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm455am/1.webp"],
+    description: `NACHO Quatro Amber Chase Light Set, 60 watts per light max, any mode.
+
+A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Colour and flash patterns are regulated. In most US states and Australian states, red and blue are reserved for emergency vehicles, and rearward strobes have their own rules. Fit and use accordingly.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 Watts per light max, any mode
+Spread: 35 Degrees (widest beam width, any beam)
+Colour temperature: 5,700 Degrees
+Part number: PM455AM
+
+Highlights
+
+Multple Functioning Chase Lights
+Copper Circuit Board
+Lifetime Warranty
+Corrosion Resistant Material
+Program up to 3 outputs
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2648,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Red/Blue Emergency Light Set — PM435RB",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM435RB.
+    price: 649.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM435RB",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Check local law on auxiliary light colours and strobe patterns before using it on a public road.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/quatro-red-blue-emergency-light-set-pm435rb/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm435rb/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm435rb/1.webp"],
+    description: `NACHO Quatro Red/Blue Emergency Light Set, 80 watts per light max, any mode.
+
+This is an emergency-pattern light set. Red and blue emergency colours are restricted to authorised vehicles in most jurisdictions, so check the law where you drive before fitting or using them on a public road.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Colour and flash patterns are regulated. In most US states and Australian states, red and blue are reserved for emergency vehicles, and rearward strobes have their own rules. Fit and use accordingly.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 80 Watts per light max, any mode
+Spread: 60 Degrees (widest beam width, any beam)
+Colour temperature: 5,700 Degrees
+Part number: PM435RB
+
+Highlights
+
+High Intensity Red Blue Flashers
+Tactical Strobe
+Tint Piercing Spot Beam
+Lifetime Warranty
+Emergency Lighting
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2649,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Supreme 80 — PM435",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM435.
+    price: 649.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM435",
+    fitment: "Universal 4-inch auxiliary light, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/quatro-supreme-80-pm435/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm435/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm435/1.webp"],
+    description: `NACHO Quatro Supreme 80 — 10500 effective lumens, 80 watts.
+
+The Supreme 80 puts 80 watts into a 4-inch housing across three zones — a spot zone for speed, a flood zone for trail work and an area zone for lighting a work site or camp — with nine selectable modes.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as listed by ARB — check the quantity on the specification list below before ordering.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 80 watts
+Spread: 60 degrees
+Dimensions: 4 in
+Output: 10500 effective lumens
+Design: Combo Light
+Part number: PM435
+
+Highlights
+
+Nine different lighting modes in one light
+Full power multi-zone lighting
+Lifetime Warranty (US)
+Made from corrosion resistant materials
+Designed with an impact resistant lens
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2650,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro Supreme 100 — PM415",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM415.
+    price: 649.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM415",
+    fitment: "Universal 4-inch auxiliary light, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/quatro-supreme-100-pm415/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm415/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm415/1.webp"],
+    description: `NACHO Quatro Supreme 100 — 11080 effective lumens, 80 watts.
+
+The Supreme 100 puts 100 watts into a 4-inch housing with selectable zones, so one light covers the jobs that normally need three.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as listed by ARB — check the quantity on the specification list below before ordering.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 80 watts
+Spread: 5.5 degrees
+Dimensions: 4 in
+Output: 11080 effective lumens
+Design: Spot Light
+Part number: PM415
+
+Highlights
+
+Nine different lighting modes in one light
+Full power multi-zone lighting
+Lifetime Warranty (US)
+Made from corrosion resistant materials
+Designed with an impact resistant lens
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2651,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro LED Auxiliary Light Combo Set — PM411",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM411.
+    price: 549.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM411",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nacho-quatro-led-auxiliary-light-combo-set-pm411/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm411/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm411/1.webp"],
+    description: `NACHO Quatro LED Auxiliary Light Combo Set — 10,486 effective lumens (pair, max, high beam), 60 per light (max, any mode).
+
+A combo set gives you both patterns — reach and width — in one pair of lights, which is the usual choice if you are only fitting one set.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 per Light (Max, any mode)
+Spread: 35 degrees (Widest Beam Width, any beam)
+Colour temperature: 5700
+Dimensions: 4 inches (Single)
+Weight: 1.2 lb (Single)
+Output: 10,486 (Pair, Max, High Beam)
+Design: Combo Light
+Part number: PM411
+
+Highlights
+
+Utilizes a white back light designed as a Trail Running Light, bringing additional safety during daylight driving conditions
+Utilizes a wide spread light pattern and a 9.5 degree spot beam
+Comes with 2 Amber Covers and 2 Smoke Covers
+Includes a stainless steel universal mount bracket and chrome plated mounting hardware
+Pressure Equilizing Vent
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2652,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro SAE LED Auxiliary Light Combo Amber Set — PM471",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM471.
+    price: 449.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM471",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nacho-quatro-sae-led-auxiliary-light-combo-amber-set-pm471/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm471/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm471/1.webp"],
+    description: `NACHO Quatro SAE LED Auxiliary Light Combo Amber Set — 8,720 effective lumens (pair, max, high beam), 60 per light (max, any mode).
+
+SAE-pattern lights are designed to meet the beam-pattern standard for on-road auxiliary lighting, which is what separates a legal fog or driving light from an off-road-only one. The Quatro SAE models build that pattern into mode 1 and keep an off-road beam on another mode.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 per Light (Max, any mode)
+Spread: 35 degrees (Widest Beam Width, any beam)
+Colour temperature: 2700
+Dimensions: 4 inches (Single)
+Weight: 1.2 lb (Single)
+Output: 8,720 (Pair, Max, High Beam)
+Part number: PM471
+
+Highlights
+
+Utilizes a white back light designed as a Daytime Running Light, bringing additional safety during daylight driving conditions
+SAE and Spot Beam in 1 single light
+SAE Compliant Beam Pattern
+Includes a stainless steel universal mount bracket and chrome plated mounting hardware
+Pressure Equilizing Vent
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2653,
+    createdAt: 1789430400000,
+    name: "NACHO Quatro SAE LED Auxiliary Combo White Set — PM461",
+    category: "lighting",
+    brand: "nacho",
+    // ARB USA store price for PM461.
+    price: 549.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "NACHO Lifetime Warranty (US)",
+    location: "our supplier network",
+    partNumber: "PM461",
+    fitment: "Universal 4-inch auxiliary light set, bar- or bracket-mounted. A stainless universal mount bracket is included where NACHO supplies one; ARB's BASE Rack adaptor kit 1780860 mounts a pair to a BASE Rack. Auxiliary driving lights are subject to local rules on fitment and use — check yours.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/nacho-quatro-sae-led-auxiliary-combo-white-set-pm461/",
+    thumbnail: "/product-media/lighting/nacho-quatro-pm461/1.webp",
+    images: ["/product-media/lighting/nacho-quatro-pm461/1.webp"],
+    description: `NACHO Quatro SAE LED Auxiliary Combo White Set — 9,176 effective lumens (pair, max, high beam), 60 per light (max, any mode).
+
+SAE-pattern lights are designed to meet the beam-pattern standard for on-road auxiliary lighting, which is what separates a legal fog or driving light from an off-road-only one. The Quatro SAE models build that pattern into mode 1 and keep an off-road beam on another mode.
+
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+
+Supplied as a set of two lights.
+
+Auxiliary lights are not a substitute for headlights, and most jurisdictions restrict when non-SAE beams may be used on a public road.
+
+Specifications
+
+Manufacturer: NACHO
+Model: Quatro
+Watts: 60 per Light (Max, any mode)
+Spread: 35 degrees (Widest Beam Width, any beam)
+Colour temperature: 5700
+Dimensions: 4 inches (Single)
+Weight: 1.2 lb (Single)
+Output: 9,176 (Pair, Max, High Beam)
+Design: Combo Light
+Part number: PM461
+
+Highlights
+
+Utilizes a white back light designed as a Daytime Running Light
+SAE and Spot Beam in 1 single light
+SAE Compliant Beam Pattern
+Includes a stainless steel universal mount bracket and chrome plated mounting hardware
+Pressure Equilizing Vent
+
+Warranty
+NACHO Lifetime Warranty (US)
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2654,
+    createdAt: 1789430400000,
+    name: "ARB BASE Rack Light Adaptor Kit for NACHO Quatro (Twin Pack) — 1780860",
+    category: "4x4-accessories",
+    brand: "arb",
+    // ARB USA store price for 1780860.
+    price: 46,
+    stock: true,
+    condition: "brand-new",
+    warranty: "ARB 3-Year Warranty",
+    location: "our supplier network",
+    partNumber: "1780860",
+    fitment: "ARB BASE Rack. Twin pack — mounts two lights. The basic bolt pattern also suits a range of other aftermarket lights.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://store.arbusa.com/base-rack-nacho-quatro-light-adaptor-kit-1780860/",
+    thumbnail: "/product-media/4x4-accessories/arb-base-rack-nacho-quatro-light-adaptor-1780860/1.webp",
+    images: ["/product-media/4x4-accessories/arb-base-rack-nacho-quatro-light-adaptor-1780860/1.webp"],
+    description: `ARB BASE Rack light adaptor kit — a twin pack for mounting NACHO Quatro lights to a BASE Rack.
+
+Roof-mounted lights need a mount that takes the load and does not rattle loose. This adaptor uses the BASE Rack's dovetail system, which is what gives it strength and stability rather than relying on a clamp.
+
+It comes as a twin pack, so a pair of lights can be mounted, and the bolt pattern is a common one, so it suits a range of aftermarket lights beyond the Quatro.
+
+It is steel with a textured black powder-coat finish.
+
+Specifications
+
+Manufacturer: ARB 4x4 Accessories
+Product: BASE Rack light adaptor kit
+Quantity: Twin pack (two mounts)
+Material: Steel
+Finish: Textured black powder coat
+Part number: 1780860
+
+Highlights
+
+Twin pack — mounts two lights
+Uses the BASE Rack dovetail system
+Common bolt pattern suits many aftermarket lights
+
+Warranty
+ARB 3-Year Warranty
 
 Shipping
 Worldwide Shipping Available`,

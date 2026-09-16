@@ -212,6 +212,7 @@ export const brands: Brand[] = [
   { slug: "universal", name: "Universal", category: "lighting" },
   // Market expansion (2026-09): brands added for the USA and Australia listings.
   { slug: "arb", name: "ARB", category: "lighting" },
+  { slug: "nacho", name: "NACHO", category: "lighting" },
 
   // Body Parts
   { slug: "bmw", name: "BMW", category: "body-parts" },
