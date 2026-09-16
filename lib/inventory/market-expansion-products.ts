@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   553 listings added 2026-09-15 from manufacturer and
+   692 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -27685,6 +27685,7507 @@ Bolt-on
 
 Warranty
 Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2698,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Allison 1000 Transmission & Converter Package — Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 4WD — 1064884SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064884SS.
+    price: 4599,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064884SS",
+    fitment: "Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lml-duramax-2011-2016",
+    thumbnail: "/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064884ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064884ss/1.webp"],
+    description: `BD Roadmaster Allison 1000 Transmission & Converter Package for the Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064884SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: Allison 1000
+Application: Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016
+Years: 2011–2016
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064884SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2699,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Allison 1000 Transmission & Converter Package — Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LMM Duramax 4WD — 1064874SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064874SS.
+    price: 4450,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064874SS",
+    fitment: "Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LMM Duramax 2007.5-2010. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lmm-duramax-2007-5-2010",
+    thumbnail: "/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064874ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064874ss/1.webp"],
+    description: `BD Roadmaster Allison 1000 Transmission & Converter Package for the Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LMM Duramax 2007.5-2010.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064874SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: Allison 1000
+Application: Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LMM Duramax 2007.5-2010
+Years: 2007.5–2010
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064874SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2700,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Allison 1000 Transmission & Converter Package — Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax 4WD — 1064864SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064864SS.
+    price: 4400,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064864SS",
+    fitment: "Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax 2006–2007. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lbz-duramax-2006-2007",
+    thumbnail: "/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064864ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064864ss/1.webp"],
+    description: `BD Roadmaster Allison 1000 Transmission & Converter Package for the Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax 2006–2007.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064864SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: Allison 1000
+Application: Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax 2006–2007
+Years: 2006–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064864SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2701,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Allison 1000 Transmission & Converter Package — Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax 4WD — 1064854SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064854SS.
+    price: 4900,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064854SS",
+    fitment: "Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax 2001–2004. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lb7-duramax-2001-2004",
+    thumbnail: "/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064854ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-allison-1000-transmission-converter-package-1064854ss/1.webp"],
+    description: `BD Roadmaster Allison 1000 Transmission & Converter Package for the Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax 2001–2004.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064854SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: Allison 1000
+Application: Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax 2001–2004
+Years: 2001–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064854SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2702,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster AS69RC Transmission & Converter Package — Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024 4WD — 1065024SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065024SM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065024SM",
+    fitment: "Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024. 4WD.",
+    drivetrain: "4WD",
+    included: ["AS69RC transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-torquemaster-as69rc-transmission-converter-package-1065024sm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-as69rc-transmission-converter-package-1065024sm/1.webp"],
+    description: `BD TorqueMaster AS69RC Transmission & Converter Package for the Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1065024SM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: AS69RC
+Application: Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024
+Years: 2019–2024
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1065024SM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2703,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster AS69RC Transmission & Converter Package — Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024 4WD — 1065014SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1065014SS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1065014SS",
+    fitment: "Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024. 4WD.",
+    drivetrain: "4WD",
+    included: ["AS69RC transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-as69rc-transmission-converter-package-1065014ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-as69rc-transmission-converter-package-1065014ss/1.webp"],
+    description: `BD TowMaster AS69RC Transmission & Converter Package for the Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1065014SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: AS69RC
+Application: Aisin AS69RC RAM 3500/4500/5500 6.7L 2019–2024
+Years: 2019–2024
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1065014SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2704,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster AS69RC Transmission & Converter Package — Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018 4WD — 1064364SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064364SM.
+    price: 9500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064364SM",
+    fitment: "Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018. 4WD.",
+    drivetrain: "4WD",
+    included: ["AS69RC transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-torquemaster-as69rc-transmission-converter-package-1064364sm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-as69rc-transmission-converter-package-1064364sm/1.webp"],
+    description: `BD TorqueMaster AS69RC Transmission & Converter Package for the Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064364SM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: AS69RC
+Application: Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018
+Years: 2013–2018
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064364SM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2705,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Dodge 1994–2007 47RH/47RE/48RE — 1070247X",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1070247X.
+    price: 1294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1070247X",
+    fitment: "Dodge 1994–2007 47RH/47RE/48RE.",
+    coreCharge: "$700 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-torque-converter-dodge-1994-2007-47rh-47re-48re",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1070247x/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1070247x/1.webp"],
+    description: `BD ProForce Torque Converter for the Dodge 1994–2007 47RH/47RE/48RE.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1070247X. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $700 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 47RH
+Application: Dodge 1994–2007 47RH/47RE/48RE
+Years: 1994–2007
+Core charge: $700, refundable
+Part number: 1070247X
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2706,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 66RFE Transmission & Converter Package — RAM 2500/3500 5.7L/6.4L HEMI 2012–2018 4WD — 1064914SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064914SS.
+    price: 5624.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064914SS",
+    fitment: "66RFE RAM 2500/3500 5.7L/6.4L HEMI 2012–2018. 4WD.",
+    drivetrain: "4WD",
+    included: ["66RFE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4l-hemi-2012-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-66rfe-transmission-converter-package-1064914ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-66rfe-transmission-converter-package-1064914ss/1.webp"],
+    description: `BD Roadmaster 66RFE Transmission & Converter Package for the 66RFE RAM 2500/3500 5.7L/6.4L HEMI 2012–2018.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064914SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 66RFE
+Application: 66RFE RAM 2500/3500 5.7L/6.4L HEMI 2012–2018
+Years: 2012–2018
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064914SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2707,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — Ford Transit 3.5L 2020–2024 4WD — 1064684SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064684SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064684SS",
+    fitment: "10R80 Ford Transit 3.5L 2020–2024. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-transit-3-5l-2020-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064684ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064684ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the 10R80 Ford Transit 3.5L 2020–2024.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064684SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: 10R80 Ford Transit 3.5L 2020–2024
+Years: 2020–2024
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064684SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2708,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster AS69RC Transmission & Converter Package — Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018 4WD — 1064354SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064354SS.
+    price: 6694.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064354SS",
+    fitment: "Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018. 4WD.",
+    drivetrain: "4WD",
+    included: ["AS69RC transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-as69rc-transmission-converter-package-1064354ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-as69rc-transmission-converter-package-1064354ss/1.webp"],
+    description: `BD Roadmaster AS69RC Transmission & Converter Package for the Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064354SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: AS69RC
+Application: Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018
+Years: 2013–2018
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064354SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2709,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — 10D Aisin AS69RC RAM 3500/4500/5500 6.7L Cummins 2013–2024 — 1070290",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1070290.
+    price: 2905.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1070290",
+    fitment: "10D Aisin AS69RC RAM 3500/4500/5500 6.7L Cummins 2013–2024.",
+    coreCharge: "$500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-10d-torque-converter-aisin-as69rc-ram-3500-4500-5500-6-7l-cummins-2013-2018",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1070290/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1070290/1.webp"],
+    description: `BD ProForce Torque Converter for the 10D Aisin AS69RC RAM 3500/4500/5500 6.7L Cummins 2013–2024.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1070290.
+
+BD supplies this as an exchange unit: a $500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: AS69RC
+Application: 10D Aisin AS69RC RAM 3500/4500/5500 6.7L Cummins 2013–2024
+Years: 2013–2024
+Core charge: $500, refundable
+Part number: 1070290
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2710,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 6L80 Transmission & Converter Package — Chevy/GMC 1500 2014–2021 4WD — 1064844SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064844SS.
+    price: 3850.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064844SS",
+    fitment: "6L80 Chevy/GMC 1500 2014–2021. 4WD.",
+    drivetrain: "4WD",
+    included: ["6L80 transmission","BD torque converter"],
+    coreCharge: "$1,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-2021",
+    thumbnail: "/product-media/transmission/bd-roadmaster-6l80-transmission-converter-package-1064844ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-6l80-transmission-converter-package-1064844ss/1.webp"],
+    description: `BD Roadmaster 6L80 Transmission & Converter Package for the 6L80 Chevy/GMC 1500 2014–2021.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064844SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 6L80
+Application: 6L80 Chevy/GMC 1500 2014–2021
+Years: 2014–2021
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,000, refundable
+Part number: 1064844SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2711,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission — Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD — 1064734",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064734.
+    price: 4747.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064734",
+    fitment: "Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-2006-2007-lbz-5-speed-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-1064734/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-1064734/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission for the Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064734.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD
+Years: 2006–2007
+Core charge: $1,800, refundable
+Part number: 1064734
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2712,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — Ford F-150 2.7L/3.5L EcoBoost & Raptor 2017 4WD — 1064694SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064694SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064694SS",
+    fitment: "10R80 Ford F-150 2.7L/3.5L EcoBoost & Raptor 2017. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-f150-2-7l-3-5l-ecoboost-raptor-2017",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064694ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064694ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the 10R80 Ford F-150 2.7L/3.5L EcoBoost & Raptor 2017.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064694SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: 10R80 Ford F-150 2.7L/3.5L EcoBoost & Raptor 2017
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064694SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2713,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — EcoBoost F-150 3.5L/2.7L 2021–2024 & Expedition/navigator 3.5L 4WD — 1064674SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064674SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064674SS",
+    fitment: "10R80 EcoBoost F-150 3.5L/2.7L 2021–2024 & Expedition/navigator 3.5L 2022–2024 & Ford Raptor 3.5L 2021–2024. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ecoboost-f150-3-5l-2-7l-2021-2024-expedition-navigator-3-5l-2022-2024-ford-raptor-3-5l-2021-2024",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064674ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064674ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the 10R80 EcoBoost F-150 3.5L/2.7L 2021–2024 & Expedition/navigator 3.5L 2022–2024 & Ford Raptor 3.5L 2021–2024.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064674SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: 10R80 EcoBoost F-150 3.5L/2.7L 2021–2024 & Expedition/navigator 3.5L 2022–2024 & Ford Raptor 3.5L 2021–2024
+Years: 2021–2024
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064674SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2714,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — Ford Expedition / Lincoln Navigator 3.5L EcoBoost 2018–2021 4WD — 1064664SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064664SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064664SS",
+    fitment: "10R80 Ford Expedition / Lincoln Navigator 3.5L EcoBoost 2018–2021. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-expedition-lincoln-navigator-3-5l-ecoboost-2018-2021",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064664ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064664ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the 10R80 Ford Expedition / Lincoln Navigator 3.5L EcoBoost 2018–2021.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064664SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: 10R80 Ford Expedition / Lincoln Navigator 3.5L EcoBoost 2018–2021
+Years: 2018–2021
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064664SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2715,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — Ford 10R80 F-150 2.7L/3.5L V6 2018–2020 4WD — 1064614SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064614SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064614SS",
+    fitment: "Ford 10R80 F-150 2.7L/3.5L V6 2018–2020. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-ford-10r80-transmission-converter-package-f-150-2-7l-3-5l-v6-2018-2020",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064614ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064614ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the Ford 10R80 F-150 2.7L/3.5L V6 2018–2020.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064614SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: Ford 10R80 F-150 2.7L/3.5L V6 2018–2020
+Years: 2018–2020
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064614SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2716,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — Ford F-150 3.0L Power Stroke Diesel 2018–2020 4WD — 1064604SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064604SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064604SS",
+    fitment: "10R80 Ford F-150 3.0L Power Stroke Diesel 2018–2020. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2018-2020",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064604ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064604ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the 10R80 Ford F-150 3.0L Power Stroke Diesel 2018–2020.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064604SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: 10R80 Ford F-150 3.0L Power Stroke Diesel 2018–2020
+Years: 2018–2020
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064604SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2717,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — Ford F-150 3.0L Power Stroke Diesel 2021 4WD — 1064574SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064574SS.
+    price: 4495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064574SS",
+    fitment: "10R80 Ford F-150 3.0L Power Stroke Diesel 2021. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2021",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064574ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064574ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the 10R80 Ford F-150 3.0L Power Stroke Diesel 2021.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064574SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: 10R80 Ford F-150 3.0L Power Stroke Diesel 2021
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064574SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2718,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 4R100 Transmission & Converter Package — Ford 4R100 - 1999–2003 4WD — 1064444SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064444SM.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064444SM",
+    fitment: "Ford 4R100 - 1999–2003. 4WD.",
+    drivetrain: "4WD",
+    included: ["4R100 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-4r100-transmission-converter-package-1999-2003",
+    thumbnail: "/product-media/transmission/bd-towmaster-4r100-transmission-converter-package-1064444sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-4r100-transmission-converter-package-1064444sm/1.webp"],
+    description: `BD TowMaster 4R100 Transmission & Converter Package for the Ford 4R100 - 1999–2003.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064444SM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 4R100
+Application: Ford 4R100 - 1999–2003
+Years: 1999–2003
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064444SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2719,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster E4OD Transmission — Ford E4OD - 1995–1997 4WD — 1064424F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064424F.
+    price: 4227.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064424F",
+    fitment: "Ford E4OD - 1995–1997. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-e4od-transmission-1995-1997",
+    thumbnail: "/product-media/transmission/bd-towmaster-e4od-transmission-1064424f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-e4od-transmission-1064424f/1.webp"],
+    description: `BD TowMaster E4OD Transmission for the Ford E4OD - 1995–1997.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064424F, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: E4OD
+Application: Ford E4OD - 1995–1997
+Years: 1995–1997
+Drivetrain: 4WD
+Core charge: $1,500, refundable
+Part number: 1064424F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2720,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 68RFE Transmission & Converter Package — Dodge 68RFE 2019–2024 4WD — 1064294SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064294SS.
+    price: 6994.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064294SS",
+    fitment: "Dodge 68RFE 2019–2024. 4WD.",
+    drivetrain: "4WD",
+    included: ["68RFE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-68rfe-transmission-converter-package-2019-2024",
+    thumbnail: "/product-media/transmission/bd-towmaster-68rfe-transmission-converter-package-1064294ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-68rfe-transmission-converter-package-1064294ss/1.webp"],
+    description: `BD TowMaster 68RFE Transmission & Converter Package for the Dodge 68RFE 2019–2024.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064294SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 68RFE
+Application: Dodge 68RFE 2019–2024
+Years: 2019–2024
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064294SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2721,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 68RFE Transmission — Dodge 68RFE 2019–2024 with Billet Input Shaft 4WD — 1064294B",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064294B.
+    price: 6994.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064294B",
+    fitment: "Dodge 68RFE 2019–2024 with Billet Input Shaft. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-dodge-68rfe-2019-2024-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-torquemaster-68rfe-transmission-1064294b/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-68rfe-transmission-1064294b/1.webp"],
+    description: `BD TorqueMaster 68RFE Transmission for the Dodge 68RFE 2019–2024 with Billet Input Shaft.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064294B, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 68RFE
+Application: Dodge 68RFE 2019–2024 with Billet Input Shaft
+Years: 2019–2024
+Drivetrain: 4WD
+Core charge: $1,800, refundable
+Part number: 1064294B
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2722,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 48RE Transmission & Converter Package — Dodge 48RE 2005–2007 w/TVV Stepper Motor with TapShifter 4WD — 1064234SST",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234SST.
+    price: 6474.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234SST",
+    fitment: "Dodge 48RE 2005–2007 w/TVV Stepper Motor with TapShifter. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-stepper-motor-c-w-tapshifter",
+    thumbnail: "/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064234sst/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064234sst/1.webp"],
+    description: `BD TowMaster 48RE Transmission & Converter Package for the Dodge 48RE 2005–2007 w/TVV Stepper Motor with TapShifter.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064234SST, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 48RE
+Application: Dodge 48RE 2005–2007 w/TVV Stepper Motor with TapShifter
+Years: 2005–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064234SST
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2723,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 48RE Transmission & Converter Package — Dodge 48RE 2005–2007 w/TVV Stepper Motor 4WD — 1064234SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234SS.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234SS",
+    fitment: "Dodge 48RE 2005–2007 w/TVV Stepper Motor. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-stepper-motor",
+    thumbnail: "/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064234ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064234ss/1.webp"],
+    description: `BD TowMaster 48RE Transmission & Converter Package for the Dodge 48RE 2005–2007 w/TVV Stepper Motor.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064234SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 48RE
+Application: Dodge 48RE 2005–2007 w/TVV Stepper Motor
+Years: 2005–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064234SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2724,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 48RE Transmission — Dodge 48RE 2005–2007 w/TVV Stepper Motor 4WD — 1064234F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234F.
+    price: 4324.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234F",
+    fitment: "Dodge 48RE 2005–2007 w/TVV Stepper Motor. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-2005-2007-w-tvv-stepper-motor",
+    thumbnail: "/product-media/transmission/bd-towmaster-48re-transmission-1064234f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-48re-transmission-1064234f/1.webp"],
+    description: `BD TowMaster 48RE Transmission for the Dodge 48RE 2005–2007 w/TVV Stepper Motor.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064234F, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 48RE
+Application: Dodge 48RE 2005–2007 w/TVV Stepper Motor
+Years: 2005–2007
+Drivetrain: 4WD
+Core charge: $1,800, refundable
+Part number: 1064234F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2725,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission & Converter Package — Dodge 48RE 2005–2007 w/TVV Stepper Motor with Auxiliary Filter & Billet 4WD — 1064234BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234BM.
+    price: 6554.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234BM",
+    fitment: "Dodge 48RE 2005–2007 w/TVV Stepper Motor with Auxiliary Filter & Billet Input. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-48re-2005-2007-w-tvv-stepper-motor-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064234bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064234bm/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission & Converter Package for the Dodge 48RE 2005–2007 w/TVV Stepper Motor with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064234BM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE 2005–2007 w/TVV Stepper Motor with Auxiliary Filter & Billet Input
+Years: 2005–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064234BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2726,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 68RFE Transmission — Dodge 68RFE 2007.5-2018 4WD — 1064224",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064224.
+    price: 4794.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064224",
+    fitment: "Dodge 68RFE 2007.5-2018. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-dodge-68rfe-transmission-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-roadmaster-68rfe-transmission-1064224/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-68rfe-transmission-1064224/1.webp"],
+    description: `BD Roadmaster 68RFE Transmission for the Dodge 68RFE 2007.5-2018.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+BD lists this as part 1064224, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 68RFE
+Application: Dodge 68RFE 2007.5-2018
+Years: 2007.5–2018
+Drivetrain: 4WD
+Core charge: $1,800, refundable
+Part number: 1064224
+
+Highlights
+
+Roadmaster specification
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2727,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 48RE Transmission & Converter Package — Dodge 48RE - 2003–2004 with TapShifter 4WD — 1064194SST",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064194SST.
+    price: 6425,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064194SST",
+    fitment: "Dodge 48RE - 2003–2004 with TapShifter. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-converter-package-2003-2004-c-w-tapshifter",
+    thumbnail: "/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064194sst/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064194sst/1.webp"],
+    description: `BD TowMaster 48RE Transmission & Converter Package for the Dodge 48RE - 2003–2004 with TapShifter.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064194SST, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2003–2004 with TapShifter
+Years: 2003–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064194SST
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2728,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 48RE Transmission & Converter Package — Dodge 48RE 2003–2004 4WD — 1064194SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064194SS.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064194SS",
+    fitment: "Dodge 48RE 2003–2004. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-dodge-48re-2003-2004",
+    thumbnail: "/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064194ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-48re-transmission-converter-package-1064194ss/1.webp"],
+    description: `BD TowMaster 48RE Transmission & Converter Package for the Dodge 48RE 2003–2004.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064194SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 48RE
+Application: Dodge 48RE 2003–2004
+Years: 2003–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064194SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2729,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission & Converter Package — Dodge 48RE 2003–2004 with Auxiliary Filter & Billet Input 4WD — 1064194BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064194BM.
+    price: 6554.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064194BM",
+    fitment: "Dodge 48RE 2003–2004 with Auxiliary Filter & Billet Input. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-48re-2003-2004-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064194bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064194bm/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission & Converter Package for the Dodge 48RE 2003–2004 with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064194BM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE 2003–2004 with Auxiliary Filter & Billet Input
+Years: 2003–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064194BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2730,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission & Converter Package — Dodge 47RE 2000–2002 4WD — 1064184SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064184SS.
+    price: 5294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064184SS",
+    fitment: "Dodge 47RE 2000–2002. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-dodge-47re-2000-2002",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064184ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064184ss/1.webp"],
+    description: `BD TowMaster 47RE Transmission & Converter Package for the Dodge 47RE 2000–2002.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064184SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE 2000–2002
+Years: 2000–2002
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064184SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2731,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission — Dodge 47RE 2000–2002 4WD — 1064184F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064184F.
+    price: 4424.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064184F",
+    fitment: "Dodge 47RE 2000–2002. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-2000-2002",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-1064184f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-1064184f/1.webp"],
+    description: `BD TowMaster 47RE Transmission for the Dodge 47RE 2000–2002.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064184F, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE 2000–2002
+Years: 2000–2002
+Drivetrain: 4WD
+Core charge: $1,800, refundable
+Part number: 1064184F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2732,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RE Transmission & Converter Package — Dodge 47RE 1996–1998 12-valve with Auxiliary Filter & Billet Input 4WD — 1064164BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064164BM.
+    price: 6554.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064164BM",
+    fitment: "Dodge 47RE 1996–1998 12-valve with Auxiliary Filter & Billet Input. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-47re-1996-1998-12-valve-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064164bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064164bm/1.webp"],
+    description: `BD TorqueMaster 47RE Transmission & Converter Package for the Dodge 47RE 1996–1998 12-valve with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064164BM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RE
+Application: Dodge 47RE 1996–1998 12-valve with Auxiliary Filter & Billet Input
+Years: 1996–1998
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064164BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2733,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RH Transmission & Converter Package — Dodge 47RH 1994–1995 4WD — 1064154SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064154SS.
+    price: 5400.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064154SS",
+    fitment: "Dodge 47RH 1994–1995. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RH transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-dodge-47rh-1994-1995",
+    thumbnail: "/product-media/transmission/bd-towmaster-47rh-transmission-converter-package-1064154ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47rh-transmission-converter-package-1064154ss/1.webp"],
+    description: `BD TowMaster 47RH Transmission & Converter Package for the Dodge 47RH 1994–1995.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064154SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RH
+Application: Dodge 47RH 1994–1995
+Years: 1994–1995
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064154SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2734,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 48RE Transmission & Converter Package — Dodge 48RE 2003–2004 4WD — 1064144SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064144SS.
+    price: 4624.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064144SS",
+    fitment: "Dodge 48RE 2003–2004. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-dodge-48re-transmission-converter-package-2003-2004",
+    thumbnail: "/product-media/transmission/bd-roadmaster-48re-transmission-converter-package-1064144ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-48re-transmission-converter-package-1064144ss/1.webp"],
+    description: `BD Roadmaster 48RE Transmission & Converter Package for the Dodge 48RE 2003–2004.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064144SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 48RE
+Application: Dodge 48RE 2003–2004
+Years: 2003–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064144SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2735,
+    createdAt: 1789430400000,
+    name: "BD Diesel 6R140 Transmission Filter Service Kit — Ford Power Stroke 6R140 2011–2022 — 1064046",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064046.
+    price: 100.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064046",
+    fitment: "Ford Power Stroke 6R140 2011–2022.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-ford-power-stroke-6r140-2011-2022",
+    thumbnail: "/product-media/transmission/bd-6r140-transmission-filter-service-kit-1064046/1.webp",
+    images: ["/product-media/transmission/bd-6r140-transmission-filter-service-kit-1064046/1.webp"],
+    description: `BD 6R140 Transmission Filter Service Kit for the Ford Power Stroke 6R140 2011–2022.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the Ford Power Stroke 6R140 2011–2022 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: 6R140
+Application: Ford Power Stroke 6R140 2011–2022
+Years: 2011–2022
+Part number: 1064046
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2736,
+    createdAt: 1789430400000,
+    name: "BD Diesel 5R110 Transmission Filter Service Kit — Ford Power Stroke 5R110 2003–2010 — 1064045",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064045.
+    price: 175.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064045",
+    fitment: "Ford Power Stroke 5R110 2003–2010.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-ford-power-stroke-5r110-2003-2010",
+    thumbnail: "/product-media/transmission/bd-5r110-transmission-filter-service-kit-1064045/1.webp",
+    images: ["/product-media/transmission/bd-5r110-transmission-filter-service-kit-1064045/1.webp"],
+    description: `BD 5R110 Transmission Filter Service Kit for the Ford Power Stroke 5R110 2003–2010.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the Ford Power Stroke 5R110 2003–2010 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: 5R110
+Application: Ford Power Stroke 5R110 2003–2010
+Years: 2003–2010
+Part number: 1064045
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2737,
+    createdAt: 1789430400000,
+    name: "BD Diesel 4R100 Transmission Filter Service Kit — Ford Power Stroke E4OR/4R100 1989–2003 — 1064044",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064044.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064044",
+    fitment: "Ford Power Stroke E4OR/4R100 1989–2003.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-ford-power-stroke-e4or-4r100-1989-2003",
+    thumbnail: "/product-media/transmission/bd-4r100-transmission-filter-service-kit-1064044/1.webp",
+    images: ["/product-media/transmission/bd-4r100-transmission-filter-service-kit-1064044/1.webp"],
+    description: `BD 4R100 Transmission Filter Service Kit for the Ford Power Stroke E4OR/4R100 1989–2003.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the Ford Power Stroke E4OR/4R100 1989–2003 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: 4R100
+Application: Ford Power Stroke E4OR/4R100 1989–2003
+Years: 1989–2003
+Part number: 1064044
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2738,
+    createdAt: 1789430400000,
+    name: "BD Diesel 66RFE Transmission Filter Service Kit — Dodge 66RFE/68RFE 2007.5-2024 — 1064043",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064043.
+    price: 99.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064043",
+    fitment: "Dodge 66RFE/68RFE 2007.5-2024.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-dodge-66rfe-68rfe-2007-5-2024",
+    thumbnail: "/product-media/transmission/bd-66rfe-transmission-filter-service-kit-1064043/1.webp",
+    images: ["/product-media/transmission/bd-66rfe-transmission-filter-service-kit-1064043/1.webp"],
+    description: `BD 66RFE Transmission Filter Service Kit for the Dodge 66RFE/68RFE 2007.5-2024.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the Dodge 66RFE/68RFE 2007.5-2024 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: 66RFE
+Application: Dodge 66RFE/68RFE 2007.5-2024
+Years: 2007.5–2024
+Part number: 1064043
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2739,
+    createdAt: 1789430400000,
+    name: "BD Diesel 47RE Transmission Filter Service Kit — Dodge Cummins 47RE/48RE 1998–2007 — 1064042",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064042.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064042",
+    fitment: "Dodge Cummins 47RE/48RE 1998–2007.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-dodge-cummins-47re-48re-1998-2007",
+    thumbnail: "/product-media/transmission/bd-47re-transmission-filter-service-kit-1064042/1.webp",
+    images: ["/product-media/transmission/bd-47re-transmission-filter-service-kit-1064042/1.webp"],
+    description: `BD 47RE Transmission Filter Service Kit for the Dodge Cummins 47RE/48RE 1998–2007.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the Dodge Cummins 47RE/48RE 1998–2007 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: 47RE
+Application: Dodge Cummins 47RE/48RE 1998–2007
+Years: 1998–2007
+Part number: 1064042
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2740,
+    createdAt: 1789430400000,
+    name: "BD Diesel Allison 1000 Transmission Filter Service Kit — Chevy Allison 1000 2001–2016 — 1064041",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064041.
+    price: 48.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064041",
+    fitment: "Chevy Allison 1000 2001–2016.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-chevy-allison-1000-2001-2016",
+    thumbnail: "/product-media/transmission/bd-allison-1000-transmission-filter-service-kit-1064041/1.webp",
+    images: ["/product-media/transmission/bd-allison-1000-transmission-filter-service-kit-1064041/1.webp"],
+    description: `BD Allison 1000 Transmission Filter Service Kit for the Chevy Allison 1000 2001–2016.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the Chevy Allison 1000 2001–2016 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: Allison 1000
+Application: Chevy Allison 1000 2001–2016
+Years: 2001–2016
+Part number: 1064041
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2741,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Ford F-150/expedition/transit 2.7L/3.5L/5.0L 2017–2025 — 1030243",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030243.
+    price: 706.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030243",
+    fitment: "10R80 Ford F-150/expedition/transit 2.7L/3.5L/5.0L 2017–2025.",
+    coreCharge: "$500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-torque-converter-10r80-ford-f-150-expedition-transit-2-7l-3-5l-5-0l-2017-2025",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030243/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030243/1.webp"],
+    description: `BD ProForce Torque Converter for the 10R80 Ford F-150/expedition/transit 2.7L/3.5L/5.0L 2017–2025.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030243.
+
+BD supplies this as an exchange unit: a $500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 10R80
+Application: 10R80 Ford F-150/expedition/transit 2.7L/3.5L/5.0L 2017–2025
+Years: 2017–2025
+Core charge: $500, refundable
+Part number: 1030243
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2742,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — 3D Ford 6.4L Power Stroke 5R110 2008–2010 — 1030222",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030222.
+    price: 1822.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030222",
+    fitment: "3D Ford 6.4L Power Stroke 5R110 2008–2010.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-3d-torque-converter-ford-6-4l-power-stroke-5r110-2008-2010",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030222/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030222/1.webp"],
+    description: `BD ProForce Torque Converter for the 3D Ford 6.4L Power Stroke 5R110 2008–2010.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030222.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 5R110
+Application: 3D Ford 6.4L Power Stroke 5R110 2008–2010
+Years: 2008–2010
+Core charge: $300, refundable
+Part number: 1030222
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2743,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 68RFE Transmission & Converter Package — Dodge 68RFE 2019–2024 with Billet Input Shaft 4WD — 1064294BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064294BM.
+    price: 8594.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064294BM",
+    fitment: "Dodge 68RFE 2019–2024 with Billet Input Shaft. 4WD.",
+    drivetrain: "4WD",
+    included: ["68RFE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-68rfe-transmission-converter-package-2019-2024-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-torquemaster-68rfe-transmission-converter-package-1064294bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-68rfe-transmission-converter-package-1064294bm/1.webp"],
+    description: `BD TorqueMaster 68RFE Transmission & Converter Package for the Dodge 68RFE 2019–2024 with Billet Input Shaft.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064294BM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 68RFE
+Application: Dodge 68RFE 2019–2024 with Billet Input Shaft
+Years: 2019–2024
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064294BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2744,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 68RFE Transmission — Dodge 68RFE 2007.5-2018 4WD — 1064264",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064264.
+    price: 5894.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064264",
+    fitment: "Dodge 68RFE 2007.5-2018. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-68rfe-transmission-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-towmaster-68rfe-transmission-1064264/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-68rfe-transmission-1064264/1.webp"],
+    description: `BD TowMaster 68RFE Transmission for the Dodge 68RFE 2007.5-2018.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064264, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 68RFE
+Application: Dodge 68RFE 2007.5-2018
+Years: 2007.5–2018
+Drivetrain: 4WD
+Core charge: $1,800, refundable
+Part number: 1064264
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2745,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 48RE Transmission — Dodge 48RE 2003–2004 4WD — 1064194F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064194F.
+    price: 4324.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064194F",
+    fitment: "Dodge 48RE 2003–2004. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-2003-2004",
+    thumbnail: "/product-media/transmission/bd-towmaster-48re-transmission-1064194f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-48re-transmission-1064194f/1.webp"],
+    description: `BD TowMaster 48RE Transmission for the Dodge 48RE 2003–2004.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064194F, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 48RE
+Application: Dodge 48RE 2003–2004
+Years: 2003–2004
+Drivetrain: 4WD
+Core charge: $1,800, refundable
+Part number: 1064194F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2746,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — RAM 2500/3500 Pickup/cab & Chassis 5.7L/6.4L 2012–2018 — 1070200",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1070200.
+    price: 550.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1070200",
+    fitment: "66RFE RAM 2500/3500 Pickup/cab & Chassis 5.7L/6.4L 2012–2018.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-torque-converter-66rfe-ram-2500-3500-pickup-cab-chassis-5-7l-6-4l-2012-2018",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1070200/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1070200/1.webp"],
+    description: `BD ProForce Torque Converter for the 66RFE RAM 2500/3500 Pickup/cab & Chassis 5.7L/6.4L 2012–2018.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1070200.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 66RFE
+Application: 66RFE RAM 2500/3500 Pickup/cab & Chassis 5.7L/6.4L 2012–2018
+Years: 2012–2018
+Core charge: $300, refundable
+Part number: 1070200
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2747,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — 3D — 1071220X",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1071220X.
+    price: 1987.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1071220X",
+    fitment: "68RFE 3D.",
+    coreCharge: "$700 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-proforce-3d-torque-converter",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1071220x/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1071220x/1.webp"],
+    description: `BD ProForce Torque Converter for the 68RFE 3D.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1071220X. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $700 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 68RFE
+Application: 68RFE 3D
+Core charge: $700, refundable
+Part number: 1071220X
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2748,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — 3D Dodge 1994–2007 47RH/47RE/48RE — 1071217X",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1071217X.
+    price: 1624.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1071217X",
+    fitment: "3D Dodge 1994–2007 47RH/47RE/48RE.",
+    coreCharge: "$700 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1071217x/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1071217x/1.webp"],
+    description: `BD ProForce Torque Converter for the 3D Dodge 1994–2007 47RH/47RE/48RE.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1071217X. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $700 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 47RH
+Application: 3D Dodge 1994–2007 47RH/47RE/48RE
+Years: 1994–2007
+Core charge: $700, refundable
+Part number: 1071217X
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2749,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 5R110 Transmission & Converter Package — Ford 6.4L Power Stroke F-250/F-350 2008–2010 — 1064652SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064652SM.
+    price: 4495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064652SM",
+    fitment: "5R110 Ford 6.4L Power Stroke F-250/F-350 2008–2010.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-f250-f350-2008-2010",
+    thumbnail: "/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-1064652sm/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-1064652sm/1.webp"],
+    description: `BD Roadmaster 5R110 Transmission & Converter Package for the 5R110 Ford 6.4L Power Stroke F-250/F-350 2008–2010.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064652SM. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 5R110
+Application: 5R110 Ford 6.4L Power Stroke F-250/F-350 2008–2010
+Years: 2008–2010
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064652SM
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2750,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 5R110 Transmission & Converter Package — Ford 6.0L Power Stroke F-250/F-350 2005–2007 — 1064642SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064642SM.
+    price: 4085,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064642SM",
+    fitment: "5R110 Ford 6.0L Power Stroke F-250/F-350 2005–2007.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-f250-f350-2005-2007",
+    thumbnail: "/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-1064642sm/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-1064642sm/1.webp"],
+    description: `BD Roadmaster 5R110 Transmission & Converter Package for the 5R110 Ford 6.0L Power Stroke F-250/F-350 2005–2007.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064642SM. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 5R110
+Application: 5R110 Ford 6.0L Power Stroke F-250/F-350 2005–2007
+Years: 2005–2007
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064642SM
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2751,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 5R110 Transmission & Converter Package — Ford 6.0L Power Stroke F-250/F-350 2003–2004 — 1064632SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064632SM.
+    price: 4085,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064632SM",
+    fitment: "5R110 Ford 6.0L Power Stroke F-250/F-350 2003–2004.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-5r110-transmission-converter-package-ford-6-0l-power-stroke-f250-f350-2003-2004",
+    thumbnail: "/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-1064632sm/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-5r110-transmission-converter-package-1064632sm/1.webp"],
+    description: `BD Roadmaster 5R110 Transmission & Converter Package for the 5R110 Ford 6.0L Power Stroke F-250/F-350 2003–2004.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064632SM. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 5R110
+Application: 5R110 Ford 6.0L Power Stroke F-250/F-350 2003–2004
+Years: 2003–2004
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064632SM
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2752,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 10R80 Transmission & Converter Package — Ford 10R80 F-150 5.0L V8 2018–2020 4WD — 1064624SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064624SS.
+    price: 4999.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064624SS",
+    fitment: "Ford 10R80 F-150 5.0L V8 2018–2020. 4WD.",
+    drivetrain: "4WD",
+    included: ["10R80 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-2018-2020",
+    thumbnail: "/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064624ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-10r80-transmission-converter-package-1064624ss/1.webp"],
+    description: `BD Roadmaster 10R80 Transmission & Converter Package for the Ford 10R80 F-150 5.0L V8 2018–2020.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064624SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 10R80
+Application: Ford 10R80 F-150 5.0L V8 2018–2020
+Years: 2018–2020
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064624SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2753,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 47RE Transmission & Converter Package — Dodge RAM 2500/3500 5.9L Cummins 2000–2002 4WD — 1064994SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064994SS.
+    price: 4525,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064994SS",
+    fitment: "47RE Dodge RAM 2500/3500 5.9L Cummins 2000–2002. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9l-cummins-2000-2002",
+    thumbnail: "/product-media/transmission/bd-roadmaster-47re-transmission-converter-package-1064994ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-47re-transmission-converter-package-1064994ss/1.webp"],
+    description: `BD Roadmaster 47RE Transmission & Converter Package for the 47RE Dodge RAM 2500/3500 5.9L Cummins 2000–2002.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064994SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 47RE
+Application: 47RE Dodge RAM 2500/3500 5.9L Cummins 2000–2002
+Years: 2000–2002
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064994SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2754,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 47RE Transmission & Converter Package — Dodge RAM 2500/3500 5.9L Cummins 1998.5-1999 4WD — 1064984SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064984SS.
+    price: 4525,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064984SS",
+    fitment: "47RE Dodge RAM 2500/3500 5.9L Cummins 1998.5-1999. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9l-cummins-1998-5-1999",
+    thumbnail: "/product-media/transmission/bd-roadmaster-47re-transmission-converter-package-1064984ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-47re-transmission-converter-package-1064984ss/1.webp"],
+    description: `BD Roadmaster 47RE Transmission & Converter Package for the 47RE Dodge RAM 2500/3500 5.9L Cummins 1998.5-1999.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064984SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 47RE
+Application: 47RE Dodge RAM 2500/3500 5.9L Cummins 1998.5-1999
+Years: 1998.5–1999
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064984SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2755,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 47RE Transmission & Converter Package — Dodge RAM 2500/3500 5.9L Cummins 1996–1998 4WD — 1064974SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064974SS.
+    price: 4525,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064974SS",
+    fitment: "47RE Dodge RAM 2500/3500 5.9L Cummins 1996–1998. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-47re-dodge-ram-2500-3500-5-9l-cummins-1996-1998",
+    thumbnail: "/product-media/transmission/bd-roadmaster-47re-transmission-converter-package-1064974ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-47re-transmission-converter-package-1064974ss/1.webp"],
+    description: `BD Roadmaster 47RE Transmission & Converter Package for the 47RE Dodge RAM 2500/3500 5.9L Cummins 1996–1998.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064974SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 47RE
+Application: 47RE Dodge RAM 2500/3500 5.9L Cummins 1996–1998
+Years: 1996–1998
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064974SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2756,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster AS69RC Transmission & Converter Package — Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018 4WD — 1064274SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064274SS.
+    price: 8500,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064274SS",
+    fitment: "Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018. 4WD.",
+    drivetrain: "4WD",
+    included: ["AS69RC transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-transmission-converter-package-aisin-as69rc-ram-3500-4500-5500-6-7l-2013-2018",
+    thumbnail: "/product-media/transmission/bd-towmaster-as69rc-transmission-converter-package-1064274ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-as69rc-transmission-converter-package-1064274ss/1.webp"],
+    description: `BD TowMaster AS69RC Transmission & Converter Package for the Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064274SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: AS69RC
+Application: Aisin AS69RC RAM 3500/4500/5500 6.7L 2013–2018
+Years: 2013–2018
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064274SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2757,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster Transmission & Converter Package — Allison GMC/chevy Sierra/silverado 2500HD/3500HD 6.6L Duramax — 1064774SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064774SS.
+    price: 4676.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064774SS",
+    fitment: "Allison GMC/chevy Sierra/silverado 2500HD/3500HD 6.6L Duramax 2004.5-2006 4WD.",
+    included: ["transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-allison-gmc-chevy-sierra-silverado-2500hd-3500hd-6-6l-duramax-2004-5-2006-4wd",
+    thumbnail: "/product-media/transmission/bd-roadmaster-transmission-converter-package-1064774ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-transmission-converter-package-1064774ss/1.webp"],
+    description: `BD Roadmaster Transmission & Converter Package for the Allison GMC/chevy Sierra/silverado 2500HD/3500HD 6.6L Duramax 2004.5-2006 4WD.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064774SS.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Application: Allison GMC/chevy Sierra/silverado 2500HD/3500HD 6.6L Duramax 2004.5-2006 4WD
+Years: 2004.5–2006
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064774SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2758,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster E4OD Transmission & Converter Package — Ford F-250/F-350 7.3L Power Stroke 1995–1997 4WD — 1064074SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064074SS.
+    price: 4299.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064074SS",
+    fitment: "E4OD Ford F-250/F-350 7.3L Power Stroke 1995–1997. 4WD.",
+    drivetrain: "4WD",
+    included: ["E4OD transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-transmission-converter-package-e4od-ford-f250-f350-7-3l-power-stroke-1995-1997",
+    thumbnail: "/product-media/transmission/bd-roadmaster-e4od-transmission-converter-package-1064074ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-e4od-transmission-converter-package-1064074ss/1.webp"],
+    description: `BD Roadmaster E4OD Transmission & Converter Package for the E4OD Ford F-250/F-350 7.3L Power Stroke 1995–1997.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064074SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: E4OD
+Application: E4OD Ford F-250/F-350 7.3L Power Stroke 1995–1997
+Years: 1995–1997
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064074SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2759,
+    createdAt: 1789430400000,
+    name: "BD Diesel AS69RC Transmission Filter Service Kit — RAM Aisin AS69RC 2013–2024 — 1064048",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064048.
+    price: 46.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064048",
+    fitment: "RAM Aisin AS69RC 2013–2024.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-ram-aisin-as69rc-2013-2024",
+    thumbnail: "/product-media/transmission/bd-as69rc-transmission-filter-service-kit-1064048/1.webp",
+    images: ["/product-media/transmission/bd-as69rc-transmission-filter-service-kit-1064048/1.webp"],
+    description: `BD AS69RC Transmission Filter Service Kit for the RAM Aisin AS69RC 2013–2024.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the RAM Aisin AS69RC 2013–2024 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: AS69RC
+Application: RAM Aisin AS69RC 2013–2024
+Years: 2013–2024
+Part number: 1064048
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2760,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 6R140 Transmission & Converter Package — Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd 2WD and 4WD — 1064514BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064514BM.
+    price: 8524.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064514BM",
+    fitment: "Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd. 2WD and 4WD.",
+    included: ["6R140 transmission","BD torque converter"],
+    coreCharge: "$1,200 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-ford-6r140-transmission-converter-package-6-7l-power-stroke-2017-2019-2wd-4wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-6r140-transmission-converter-package-1064514bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-6r140-transmission-converter-package-1064514bm/1.webp"],
+    description: `BD TorqueMaster 6R140 Transmission & Converter Package for the Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064514BM, the 2WD and 4WD version.
+
+BD supplies this as an exchange unit: a $1,200 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 6R140
+Application: Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd
+Years: 2017–2019
+Drivetrain: 2WD and 4WD
+Torque converter: Included
+Core charge: $1,200, refundable
+Part number: 1064514BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2761,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 6R140 Transmission & Converter Package — Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd 2WD and 4WD — 1064504BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064504BM.
+    price: 8524.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064504BM",
+    fitment: "Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd. 2WD and 4WD.",
+    included: ["6R140 transmission","BD torque converter"],
+    coreCharge: "$1,200 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-ford-6r140-transmission-converter-package-6-7l-power-stroke-2011-2016-2wd-4wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-6r140-transmission-converter-package-1064504bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-6r140-transmission-converter-package-1064504bm/1.webp"],
+    description: `BD TorqueMaster 6R140 Transmission & Converter Package for the Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064504BM, the 2WD and 4WD version.
+
+BD supplies this as an exchange unit: a $1,200 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 6R140
+Application: Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd
+Years: 2011–2016
+Drivetrain: 2WD and 4WD
+Torque converter: Included
+Core charge: $1,200, refundable
+Part number: 1064504BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2762,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 4R100 Transmission & Converter Package — Ford 4R100 - 1999–2003 4WD with Billet Input Shaft — 1064444BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064444BM.
+    price: 5784.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064444BM",
+    fitment: "Ford 4R100 - 1999–2003 4WD with Billet Input Shaft.",
+    included: ["4R100 transmission","BD torque converter"],
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-4r100-transmission-converter-package-1999-2003-4wd-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-towmaster-4r100-transmission-converter-package-1064444bm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-4r100-transmission-converter-package-1064444bm/1.webp"],
+    description: `BD TowMaster 4R100 Transmission & Converter Package for the Ford 4R100 - 1999–2003 4WD with Billet Input Shaft.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064444BM.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 4R100
+Application: Ford 4R100 - 1999–2003 4WD with Billet Input Shaft
+Years: 1999–2003
+Torque converter: Included
+Core charge: $1,500, refundable
+Part number: 1064444BM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2763,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 4R100 Transmission — & Pro Force Ford 7.3L Power Stroke 1999–2003 2WD — 1064432SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064432SM.
+    price: 4254.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064432SM",
+    fitment: "4R100 & Pro Force Ford 7.3L Power Stroke 1999–2003 2WD.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-4r100-transmission-pro-force-torque-converter-ford-7-3l-powerstroke-1999-2003-2wd",
+    thumbnail: "/product-media/transmission/bd-roadmaster-4r100-transmission-1064432sm/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-4r100-transmission-1064432sm/1.webp"],
+    description: `BD Roadmaster 4R100 Transmission for the 4R100 & Pro Force Ford 7.3L Power Stroke 1999–2003 2WD.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+BD lists this as part 1064432SM.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 4R100
+Application: 4R100 & Pro Force Ford 7.3L Power Stroke 1999–2003 2WD
+Years: 1999–2003
+Core charge: $1,500, refundable
+Part number: 1064432SM
+
+Highlights
+
+Roadmaster specification
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2764,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 48RE Transmission & Converter Package — Dodge 48RE 2005–2007 4WD — 1064204SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064204SS.
+    price: 4624.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064204SS",
+    fitment: "Dodge 48RE 2005–2007. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-dodge-48re-transmission-converter-package-2005-2007",
+    thumbnail: "/product-media/transmission/bd-roadmaster-48re-transmission-converter-package-1064204ss/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-48re-transmission-converter-package-1064204ss/1.webp"],
+    description: `BD Roadmaster 48RE Transmission & Converter Package for the Dodge 48RE 2005–2007.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064204SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 48RE
+Application: Dodge 48RE 2005–2007
+Years: 2005–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064204SS
+
+Highlights
+
+Roadmaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2765,
+    createdAt: 1789430400000,
+    name: "BD Diesel 10R80 Transmission Filter Service Kit — Ford 10R80 2017–2024 — 1064047",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064047.
+    price: 152.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "BD Diesel Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1064047",
+    fitment: "Ford 10R80 2017–2024.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/transmission-filter-service-kit-ford-10r80-2017-2024",
+    thumbnail: "/product-media/transmission/bd-10r80-transmission-filter-service-kit-1064047/1.webp",
+    images: ["/product-media/transmission/bd-10r80-transmission-filter-service-kit-1064047/1.webp"],
+    description: `BD 10R80 Transmission Filter Service Kit for the Ford 10R80 2017–2024.
+
+Fluid and filter changes are the cheapest thing you can do for an automatic, and the interval matters more on a truck that tows, where the fluid runs hotter for longer.
+
+A clogged filter starves the pump, and low line pressure is what burns clutches. Most heavy-use schedules call for fluid and filter far more often than the factory interval assumes.
+
+This is BD's filter service kit for the Ford 10R80 2017–2024 — the filter and the seals needed to do the job properly rather than reusing old ones.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Transmission: 10R80
+Application: Ford 10R80 2017–2024
+Years: 2017–2024
+Part number: 1064047
+
+Highlights
+
+BD transmission service kit
+
+Warranty
+BD Diesel Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2766,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — 4D Ford F-250/F-350/F-450/F-550 6.7L 2011–2019 6R140 — 1030238",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030238.
+    price: 2244.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030238",
+    fitment: "4D Ford F-250/F-350/F-450/F-550 6.7L 2011–2019 6R140.",
+    coreCharge: "$500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-4d-torque-converter-ford-f250-f350-f450-f550-6-7l-2011-2019-6r140",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030238/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030238/1.webp"],
+    description: `BD ProForce Torque Converter for the 4D Ford F-250/F-350/F-450/F-550 6.7L 2011–2019 6R140.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030238.
+
+BD supplies this as an exchange unit: a $500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 6R140
+Application: 4D Ford F-250/F-350/F-450/F-550 6.7L 2011–2019 6R140
+Years: 2011–2019
+Core charge: $500, refundable
+Part number: 1030238
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2767,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 68RFE Transmission & Converter Package — Dodge 68RFE 2007.5-2018 with Billet Input Shaft 4WD — 1064264BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064264BM.
+    price: 8594.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064264BM",
+    fitment: "Dodge 68RFE 2007.5-2018 with Billet Input Shaft. 4WD.",
+    drivetrain: "4WD",
+    included: ["68RFE transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-transmission-converter-package-dodge-68rfe-2007-5-2018-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-torquemaster-68rfe-transmission-converter-package-1064264bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-68rfe-transmission-converter-package-1064264bm/1.webp"],
+    description: `BD TorqueMaster 68RFE Transmission & Converter Package for the Dodge 68RFE 2007.5-2018 with Billet Input Shaft.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064264BM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 68RFE
+Application: Dodge 68RFE 2007.5-2018 with Billet Input Shaft
+Years: 2007.5–2018
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064264BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2768,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 68RFE Transmission & Converter Package — Dodge 68RFE - 2007.5-2018 4WD — 1064264SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064264SS.
+    price: 6994.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064264SS",
+    fitment: "Dodge 68RFE - 2007.5-2018. 4WD.",
+    drivetrain: "4WD",
+    included: ["68RFE transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-68rfe-transmission-converter-package-2007-5-2018",
+    thumbnail: "/product-media/transmission/bd-towmaster-68rfe-transmission-converter-package-1064264ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-68rfe-transmission-converter-package-1064264ss/1.webp"],
+    description: `BD TowMaster 68RFE Transmission & Converter Package for the Dodge 68RFE - 2007.5-2018.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064264SS, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 68RFE
+Application: Dodge 68RFE - 2007.5-2018
+Years: 2007.5–2018
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064264SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2769,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — w/ Billet Input Allison 1000 Chevrolet Silverado / GMC Sierra 6.6L 4WD — 1064754BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064754BM.
+    price: 7236.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064754BM",
+    fitment: "w/ Billet Input Allison 1000 Chevrolet Silverado / GMC Sierra 6.6L Duramax 2011–2016 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-transmission-converter-package-c-w-billet-input-triple-torque-controller-2011-2016-lml-4wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064754bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064754bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the w/ Billet Input Allison 1000 Chevrolet Silverado / GMC Sierra 6.6L Duramax 2011–2016 4WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064754BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: w/ Billet Input Allison 1000 Chevrolet Silverado / GMC Sierra 6.6L Duramax 2011–2016 4WD
+Years: 2011–2016
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064754BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2770,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission — Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax — 1064754",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064754.
+    price: 4545,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064754",
+    fitment: "Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-transmission-c-w-billet-input-triple-torque-controller-2011-2016-lml-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-1064754/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-1064754/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission for the Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064754.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Allison 1000 Chevrolet Silverado & GMC Sierra 2500HD/3500HD 6.6L LML Duramax 2011–2016 4WD
+Years: 2011–2016
+Core charge: $1,800, refundable
+Part number: 1064754
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2771,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2007–2010 LMM 4WD — 1064744SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064744SS.
+    price: 5737.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064744SS",
+    fitment: "Chevy Allison 1000 - 2007–2010 LMM 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2007-2010-lmm-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064744ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064744ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2007–2010 LMM 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064744SS, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2007–2010 LMM 4WD
+Years: 2007–2010
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064744SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2772,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 4WD — 1064744BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064744BM.
+    price: 7001.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064744BM",
+    fitment: "Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2007-2010-lmm-4wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064744bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064744bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 4WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064744BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 4WD
+Years: 2007–2010
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064744BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2773,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission — Chevy Allison 1000 - 2007–2010 LMM 4WD — 1064744",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064744.
+    price: 4770.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064744",
+    fitment: "Chevy Allison 1000 - 2007–2010 LMM 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-2007-2010-lmm-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-1064744/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-1064744/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission for the Chevy Allison 1000 - 2007–2010 LMM 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064744.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2007–2010 LMM 4WD
+Years: 2007–2010
+Core charge: $1,800, refundable
+Part number: 1064744
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2774,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2007–2010 LMM 2WD — 1064742SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064742SS.
+    price: 5737.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064742SS",
+    fitment: "Chevy Allison 1000 - 2007–2010 LMM 2WD. 2WD.",
+    drivetrain: "2WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2007-2010-lmm-2wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064742ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064742ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2007–2010 LMM 2WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064742SS, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2007–2010 LMM 2WD
+Years: 2007–2010
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064742SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2775,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 2WD — 1064742BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064742BM.
+    price: 6865,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064742BM",
+    fitment: "Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 2WD. 2WD.",
+    drivetrain: "2WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2007-2010-lmm-2wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064742bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064742bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 2WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064742BM, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 with Billet Input & Triple Torque - 2007–2010 LMM 2WD
+Years: 2007–2010
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064742BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2776,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission — Chevy Allison 1000 - 2007–2010 LMM 2WD — 1064742",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064742.
+    price: 4655,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064742",
+    fitment: "Chevy Allison 1000 - 2007–2010 LMM 2WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-2006-2007-lbz-6-speed-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-1064742/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-1064742/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission for the Chevy Allison 1000 - 2007–2010 LMM 2WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064742.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2007–2010 LMM 2WD
+Years: 2007–2010
+Core charge: $1,800, refundable
+Part number: 1064742
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2777,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD — 1064734SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064734SS.
+    price: 5737.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064734SS",
+    fitment: "Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2006-2007-lbz-6-speed-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064734ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064734ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064734SS, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2006–2007 LBZ 6-speed 4WD
+Years: 2006–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064734SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2778,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 4WD — 1064734BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064734BM.
+    price: 7001.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064734BM",
+    fitment: "Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 6-speed 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2006-2007-lbz-6-speed-4wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064734bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064734bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 6-speed 4WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064734BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 6-speed 4WD
+Years: 2006–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064734BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2779,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2006–2007 LBZ 6-speed 2WD — 1064732SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064732SS.
+    price: 5625,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064732SS",
+    fitment: "Chevy Allison 1000 - 2006–2007 LBZ 6-speed 2WD. 2WD.",
+    drivetrain: "2WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2006-2007-lbz-6-speed-2wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064732ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064732ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2006–2007 LBZ 6-speed 2WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064732SS, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2006–2007 LBZ 6-speed 2WD
+Years: 2006–2007
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064732SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2780,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 2WD — 1064732BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064732BM.
+    price: 6865,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064732BM",
+    fitment: "Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 6-speed 2WD. 2WD.",
+    drivetrain: "2WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2006-2007-lbz-6-speed-2wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064732bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064732bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 6-speed 2WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064732BM, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 with Billet Input & Triple Torque - 2006–2007 LBZ 6-speed 2WD
+Years: 2006–2007
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064732BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2781,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD — 1064724SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064724SS.
+    price: 5737.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064724SS",
+    fitment: "Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2004-5-2006-lly-5-speed-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064724ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064724ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064724SS, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD
+Years: 2004.5–2006
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064724SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2782,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 4WD — 1064724BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064724BM.
+    price: 7001.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064724BM",
+    fitment: "Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 5-speed 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2004-5-2006-lly-5-speed-4wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064724bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064724bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 5-speed 4WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064724BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 5-speed 4WD
+Years: 2004.5–2006
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064724BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2783,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission — Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD — 1064724",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064724.
+    price: 4817.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064724",
+    fitment: "Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-2004-5-2006-lly-5-speed-2wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-1064724/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-1064724/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission for the Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064724.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 4WD
+Years: 2004.5–2006
+Core charge: $1,800, refundable
+Part number: 1064724
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2784,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 2WD — 1064722SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064722SS.
+    price: 5625,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064722SS",
+    fitment: "Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 2WD. 2WD.",
+    drivetrain: "2WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2004-5-2006-lly-5-speed-2wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064722ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064722ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 2WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064722SS, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2004.5-2006 LLY 5-speed 2WD
+Years: 2004.5–2006
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064722SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2785,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 2WD — 1064722BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064722BM.
+    price: 6865,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064722BM",
+    fitment: "Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 5-speed 2WD. 2WD.",
+    drivetrain: "2WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2004-5-2006-lly-5-speed-2wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064722bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064722bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 5-speed 2WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064722BM, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 with Billet Input & Triple Torque - 2004.5-2006 LLY 5-speed 2WD
+Years: 2004.5–2006
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064722BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2786,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2001–2004 LB7 4WD — 1064704SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064704SS.
+    price: 5793.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064704SS",
+    fitment: "Chevy Allison 1000 - 2001–2004 LB7 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2001-2004-lb7-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064704ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064704ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2001–2004 LB7 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064704SS, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2001–2004 LB7 4WD
+Years: 2001–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064704SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2787,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 with Billet Input & Triple Torque - 2001–2004 LB7 4WD — 1064704BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064704BM.
+    price: 7001.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064704BM",
+    fitment: "Chevy Allison 1000 with Billet Input & Triple Torque - 2001–2004 LB7 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2001-2004-lb7-4wd",
+    thumbnail: "/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064704bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-allison-1000-transmission-converter-package-1064704bm/1.webp"],
+    description: `BD TorqueMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 with Billet Input & Triple Torque - 2001–2004 LB7 4WD.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064704BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 with Billet Input & Triple Torque - 2001–2004 LB7 4WD
+Years: 2001–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064704BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2788,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission — Chevy Allison 1000 - 2001–2004 LB7 4WD — 1064704",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064704.
+    price: 4747.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064704",
+    fitment: "Chevy Allison 1000 - 2001–2004 LB7 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-2001-2004-lb7-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-1064704/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-1064704/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission for the Chevy Allison 1000 - 2001–2004 LB7 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064704.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2001–2004 LB7 4WD
+Years: 2001–2004
+Core charge: $1,800, refundable
+Part number: 1064704
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2789,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster Allison 1000 Transmission & Converter Package — Chevy Allison 1000 - 2001–2004 LB7 2WD — 1064702SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064702SS.
+    price: 5737.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064702SS",
+    fitment: "Chevy Allison 1000 - 2001–2004 LB7 2WD. 2WD.",
+    drivetrain: "2WD",
+    included: ["Allison 1000 transmission","BD torque converter"],
+    coreCharge: "$2,100 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-chevy-allison-1000-transmission-converter-package-2001-2004-lb7-2wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064702ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-allison-1000-transmission-converter-package-1064702ss/1.webp"],
+    description: `BD TowMaster Allison 1000 Transmission & Converter Package for the Chevy Allison 1000 - 2001–2004 LB7 2WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064702SS, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,100 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: Allison 1000
+Application: Chevy Allison 1000 - 2001–2004 LB7 2WD
+Years: 2001–2004
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,100, refundable
+Part number: 1064702SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2790,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 6R140 Transmission & Converter Package — Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd 2WD and 4WD — 1064514SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064514SS.
+    price: 6994.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064514SS",
+    fitment: "Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd. 2WD and 4WD.",
+    included: ["6R140 transmission","BD torque converter"],
+    coreCharge: "$1,200 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-6r140-transmission-converter-package-2017-2019-6-7l-power-stroke-2wd-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-6r140-transmission-converter-package-1064514ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-6r140-transmission-converter-package-1064514ss/1.webp"],
+    description: `BD TowMaster 6R140 Transmission & Converter Package for the Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064514SS, the 2WD and 4WD version.
+
+BD supplies this as an exchange unit: a $1,200 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 6R140
+Application: Ford 6R140 6.7L Power Stroke 2017–2019 2wd/4wd
+Years: 2017–2019
+Drivetrain: 2WD and 4WD
+Torque converter: Included
+Core charge: $1,200, refundable
+Part number: 1064514SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2791,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 6R140 Transmission & Converter Package — Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd 2WD and 4WD — 1064504SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064504SS.
+    price: 7094.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064504SS",
+    fitment: "Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd. 2WD and 4WD.",
+    included: ["6R140 transmission","BD torque converter"],
+    coreCharge: "$1,200 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-6r140-transmission-converter-package-2011-2016-6-7l-power-stroke-2wd-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-6r140-transmission-converter-package-1064504ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-6r140-transmission-converter-package-1064504ss/1.webp"],
+    description: `BD TowMaster 6R140 Transmission & Converter Package for the Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064504SS, the 2WD and 4WD version.
+
+BD supplies this as an exchange unit: a $1,200 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 6R140
+Application: Ford 6R140 6.7L Power Stroke 2011–2016 2wd/4wd
+Years: 2011–2016
+Drivetrain: 2WD and 4WD
+Torque converter: Included
+Core charge: $1,200, refundable
+Part number: 1064504SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2792,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission & Converter Package — Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD — 1064494SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064494SM.
+    price: 5524.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064494SM",
+    fitment: "Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-converter-package-2008-2010-6-4l-power-stroke-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064494sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064494sm/1.webp"],
+    description: `BD TowMaster 5R110 Transmission & Converter Package for the Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064494SM.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD
+Years: 2008–2010
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064494SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2793,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission — Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD — 1064494",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064494.
+    price: 3934.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064494",
+    fitment: "Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-2008-2010-6-4l-power-stroke-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-1064494/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-1064494/1.webp"],
+    description: `BD TowMaster 5R110 Transmission for the Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064494.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2008–2010 6.4L Power Stroke 4WD
+Years: 2008–2010
+Core charge: $1,500, refundable
+Part number: 1064494
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2794,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission & Converter Package — Ford 5R110 - 2008–2010 6.4L Power Stroke 2WD w/Slip Yoke Drive Shaft — 1064492SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064492SM.
+    price: 5525,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064492SM",
+    fitment: "Ford 5R110 - 2008–2010 6.4L Power Stroke 2WD w/Slip Yoke Drive Shaft Mount.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$2,000 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-converter-package-2008-2010-6-4l-powerstroke-2wd-w-slip-yoke-drive-shaft-mount",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064492sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064492sm/1.webp"],
+    description: `BD TowMaster 5R110 Transmission & Converter Package for the Ford 5R110 - 2008–2010 6.4L Power Stroke 2WD w/Slip Yoke Drive Shaft Mount.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064492SM.
+
+BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2008–2010 6.4L Power Stroke 2WD w/Slip Yoke Drive Shaft Mount
+Years: 2008–2010
+Torque converter: Included
+Core charge: $2,000, refundable
+Part number: 1064492SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2795,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission & Converter Package — Ford 5R110 2005–2007 4WD — 1064484SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064484SM.
+    price: 5194.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064484SM",
+    fitment: "Ford 5R110 2005–2007 4WD.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-converter-package-2005-2007-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064484sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064484sm/1.webp"],
+    description: `BD TowMaster 5R110 Transmission & Converter Package for the Ford 5R110 2005–2007 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064484SM.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 2005–2007 4WD
+Years: 2005–2007
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064484SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2796,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission — Ford 5R110 - 2005–2007 4WD — 1064484",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064484.
+    price: 3934.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064484",
+    fitment: "Ford 5R110 - 2005–2007 4WD.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-2005-2007-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-1064484/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-1064484/1.webp"],
+    description: `BD TowMaster 5R110 Transmission for the Ford 5R110 - 2005–2007 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064484.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2005–2007 4WD
+Years: 2005–2007
+Core charge: $1,500, refundable
+Part number: 1064484
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2797,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission & Converter Package — Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount — 1064482SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064482SM.
+    price: 5194.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064482SM",
+    fitment: "Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-converter-package-2005-2007-2wd-w-slip-yoke-drive-shaft-mount",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064482sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064482sm/1.webp"],
+    description: `BD TowMaster 5R110 Transmission & Converter Package for the Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064482SM.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount
+Years: 2005–2007
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064482SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2798,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission — Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount — 1064482",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064482.
+    price: 3855,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064482",
+    fitment: "Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-2005-2007-2wd-w-slip-yoke-drive-shaft-mount",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-1064482/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-1064482/1.webp"],
+    description: `BD TowMaster 5R110 Transmission for the Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064482.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2005–2007 2WD w/Slip Yoke Drive Shaft Mount
+Years: 2005–2007
+Core charge: $1,500, refundable
+Part number: 1064482
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2799,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission & Converter Package — Ford 5R110 - 2003–2004 4WD — 1064464SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064464SM.
+    price: 5194.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064464SM",
+    fitment: "Ford 5R110 - 2003–2004 4WD.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-converter-package-2003-2004-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064464sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064464sm/1.webp"],
+    description: `BD TowMaster 5R110 Transmission & Converter Package for the Ford 5R110 - 2003–2004 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064464SM.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2003–2004 4WD
+Years: 2003–2004
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064464SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2800,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission — Ford 5R110 - 2003–2004 4WD — 1064464",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064464.
+    price: 3934.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064464",
+    fitment: "Ford 5R110 - 2003–2004 4WD.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-2003-2004-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-1064464/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-1064464/1.webp"],
+    description: `BD TowMaster 5R110 Transmission for the Ford 5R110 - 2003–2004 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064464.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2003–2004 4WD
+Years: 2003–2004
+Core charge: $1,500, refundable
+Part number: 1064464
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2801,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission & Converter Package — Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount — 1064462SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064462SM.
+    price: 5194.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064462SM",
+    fitment: "Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount.",
+    included: ["5R110 transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-converter-package-2003-2004-2wd-w-slip-yoke-drive-shaft-mount",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064462sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-converter-package-1064462sm/1.webp"],
+    description: `BD TowMaster 5R110 Transmission & Converter Package for the Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064462SM.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount
+Years: 2003–2004
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064462SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2802,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 5R110 Transmission — Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount — 1064462",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064462.
+    price: 3934.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064462",
+    fitment: "Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount.",
+    coreCharge: "$1,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-5r110-transmission-2003-2004-2wd-w-slip-yoke-drive-shaft-mount",
+    thumbnail: "/product-media/transmission/bd-towmaster-5r110-transmission-1064462/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-5r110-transmission-1064462/1.webp"],
+    description: `BD TowMaster 5R110 Transmission for the Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064462.
+
+BD supplies this as an exchange unit: a $1,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 5R110
+Application: Ford 5R110 - 2003–2004 2WD w/Slip Yoke Drive Shaft Mount
+Years: 2003–2004
+Core charge: $1,500, refundable
+Part number: 1064462
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2803,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 4R100 Transmission — Ford 4R100 - 1999–2003 4WD — 1064444F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064444F.
+    price: 4194.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064444F",
+    fitment: "Ford 4R100 - 1999–2003 4WD.",
+    coreCharge: "$1,200 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-4r100-transmission-1999-2003-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-4r100-transmission-1064444f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-4r100-transmission-1064444f/1.webp"],
+    description: `BD TowMaster 4R100 Transmission for the Ford 4R100 - 1999–2003 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064444F.
+
+BD supplies this as an exchange unit: a $1,200 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 4R100
+Application: Ford 4R100 - 1999–2003 4WD
+Years: 1999–2003
+Core charge: $1,200, refundable
+Part number: 1064444F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2804,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 4R100 Transmission — Ford 4R100 - 1999–2003 2WD PTO — 1064442FPTO",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064442FPTO.
+    price: 4585,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064442FPTO",
+    fitment: "Ford 4R100 - 1999–2003 2WD PTO.",
+    coreCharge: "$1,200 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-4r100-transmission-1999-2003-2wd-pto",
+    thumbnail: "/product-media/transmission/bd-towmaster-4r100-transmission-1064442fpto/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-4r100-transmission-1064442fpto/1.webp"],
+    description: `BD TowMaster 4R100 Transmission for the Ford 4R100 - 1999–2003 2WD PTO.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064442FPTO.
+
+BD supplies this as an exchange unit: a $1,200 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 4R100
+Application: Ford 4R100 - 1999–2003 2WD PTO
+Years: 1999–2003
+Core charge: $1,200, refundable
+Part number: 1064442FPTO
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2805,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster E4OD Transmission & Converter Package — Ford E4OD - 1995–1997 4WD — 1064424SM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064424SM.
+    price: 5479.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064424SM",
+    fitment: "Ford E4OD - 1995–1997. 4WD.",
+    drivetrain: "4WD",
+    included: ["E4OD transmission","BD torque converter"],
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-ford-e4od-transmission-converter-package-1995-1997-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-e4od-transmission-converter-package-1064424sm/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-e4od-transmission-converter-package-1064424sm/1.webp"],
+    description: `BD TowMaster E4OD Transmission & Converter Package for the Ford E4OD - 1995–1997.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064424SM, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: E4OD
+Application: Ford E4OD - 1995–1997
+Years: 1995–1997
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $1,800, refundable
+Part number: 1064424SM
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2806,
+    createdAt: 1789430400000,
+    name: "BD Diesel Roadmaster 68RFE Transmission — RAM 68RFE RAM 6.7L Cummins 2019–2024 4WD — 1064304",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064304.
+    price: 4794.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "24-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064304",
+    fitment: "RAM 68RFE RAM 6.7L Cummins 2019–2024. 4WD.",
+    drivetrain: "4WD",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/roadmaster-ram-68rfe-transmission-ram-6-7l-cummins-2019-2022-4wd",
+    thumbnail: "/product-media/transmission/bd-roadmaster-68rfe-transmission-1064304/1.webp",
+    images: ["/product-media/transmission/bd-roadmaster-68rfe-transmission-1064304/1.webp"],
+    description: `BD Roadmaster 68RFE Transmission for the RAM 68RFE RAM 6.7L Cummins 2019–2024.
+
+The Roadmaster is BD's base build: a transmission for a stock or lightly modified truck where the point is reliability and longevity rather than extra torque capacity. It keeps OEM clutch counts and adds BD's own fixes to the known weak points.
+
+BD lists this as part 1064304, the 4WD version. Other drivetrain and PTO combinations carry their own part numbers.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: Roadmaster
+Transmission: 68RFE
+Application: RAM 68RFE RAM 6.7L Cummins 2019–2024
+Years: 2019–2024
+Drivetrain: 4WD
+Core charge: $1,800, refundable
+Part number: 1064304
+
+Highlights
+
+Roadmaster specification
+Exchange unit — core deposit refunded on return
+24-month BD warranty
+
+Warranty
+24-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2807,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 68RFE Transmission — Dodge 68RFE - 2007.5-2018 4WD with Billet Input Shaft — 1064264B",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064264B.
+    price: 6994.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064264B",
+    fitment: "Dodge 68RFE - 2007.5-2018 4WD with Billet Input Shaft.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-68rfe-transmission-2007-5-2018-4wd-c-w-billet-input-shaft",
+    thumbnail: "/product-media/transmission/bd-torquemaster-68rfe-transmission-1064264b/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-68rfe-transmission-1064264b/1.webp"],
+    description: `BD TorqueMaster 68RFE Transmission for the Dodge 68RFE - 2007.5-2018 4WD with Billet Input Shaft.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064264B.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 68RFE
+Application: Dodge 68RFE - 2007.5-2018 4WD with Billet Input Shaft
+Years: 2007.5–2018
+Core charge: $1,800, refundable
+Part number: 1064264B
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2808,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 48RE Transmission — Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with TapShifter — 1064234FT",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234FT.
+    price: 5355,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234FT",
+    fitment: "Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with TapShifter.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-48re-transmission-2005-2007-4wd-w-tvv-stepper-motor-c-w-tapshifter",
+    thumbnail: "/product-media/transmission/bd-towmaster-48re-transmission-1064234ft/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-48re-transmission-1064234ft/1.webp"],
+    description: `BD TowMaster 48RE Transmission for the Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with TapShifter.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064234FT.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with TapShifter
+Years: 2005–2007
+Core charge: $1,800, refundable
+Part number: 1064234FT
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2809,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission & Converter Package — Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Filter, Billet — 1064234BMT",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234BMT.
+    price: 7794.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234BMT",
+    fitment: "Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Filter, Billet Input & TapShifter. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-48re-transmission-converter-package-2005-2007-4wd-w-tvv-stepper-motor-c-w-filter-billet-input-tapshifter",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064234bmt/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064234bmt/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission & Converter Package for the Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Filter, Billet Input & TapShifter.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064234BMT, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Filter, Billet Input & TapShifter
+Years: 2005–2007
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064234BMT
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2810,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission — Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter — 1064234BFT",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234BFT.
+    price: 6554.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234BFT",
+    fitment: "Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter -& Billet Input - TapShifter.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-48re-transmission-2005-2007-4wd-w-tvv-stepper-motor-c-w-auxiliary-filter-billet-input-tapshifter",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-1064234bft/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-1064234bft/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission for the Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter -& Billet Input - TapShifter.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064234BFT.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter -& Billet Input - TapShifter
+Years: 2005–2007
+Core charge: $1,800, refundable
+Part number: 1064234BFT
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2811,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission — Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter — 1064234BF",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064234BF.
+    price: 5294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064234BF",
+    fitment: "Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter & Billet Input.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-48re-transmission-2005-2007-4wd-w-tvv-stepper-motor-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-1064234bf/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-1064234bf/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission for the Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064234BF.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2005–2007 4WD w/TVV Stepper Motor - with Auxiliary Filter & Billet Input
+Years: 2005–2007
+Core charge: $1,800, refundable
+Part number: 1064234BF
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2812,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission & Converter Package — Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & — 1064194BMT",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064194BMT.
+    price: 7794.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064194BMT",
+    fitment: "Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & TapShifter. 4WD.",
+    drivetrain: "4WD",
+    included: ["48RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-48re-transmission-converter-package-2003-2004-4wd-c-w-auxiliary-filter-billet-input-tapshifter",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064194bmt/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-converter-package-1064194bmt/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission & Converter Package for the Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & TapShifter.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064194BMT, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & TapShifter
+Years: 2003–2004
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064194BMT
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2813,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission — Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & — 1064194BFT",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064194BFT.
+    price: 6425,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064194BFT",
+    fitment: "Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & TapShifter.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-48re-transmission-2003-2004-4wd-c-w-auxiliary-filter-billet-input-tapshifter",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-1064194bft/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-1064194bft/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission for the Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & TapShifter.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064194BFT.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2003–2004 4WD with Auxiliary Filter, Billet Input & TapShifter
+Years: 2003–2004
+Core charge: $1,800, refundable
+Part number: 1064194BFT
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2814,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 48RE Transmission — Dodge 48RE - 2003–2004 4WD with Auxiliary Filter & Billet Input — 1064194BF",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064194BF.
+    price: 5195,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064194BF",
+    fitment: "Dodge 48RE - 2003–2004 4WD with Auxiliary Filter & Billet Input.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-48re-transmission-2003-2004-4wd-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-48re-transmission-1064194bf/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-48re-transmission-1064194bf/1.webp"],
+    description: `BD TorqueMaster 48RE Transmission for the Dodge 48RE - 2003–2004 4WD with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064194BF.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 48RE
+Application: Dodge 48RE - 2003–2004 4WD with Auxiliary Filter & Billet Input
+Years: 2003–2004
+Core charge: $1,800, refundable
+Part number: 1064194BF
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2815,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RE Transmission & Converter Package — Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input — 1064184BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064184BM.
+    price: 6494.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064184BM",
+    fitment: "Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-47re-transmission-converter-package-2000-2002-4wd-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064184bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064184bm/1.webp"],
+    description: `BD TorqueMaster 47RE Transmission & Converter Package for the Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064184BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RE
+Application: Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input
+Years: 2000–2002
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064184BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2816,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RE Transmission — Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input — 1064184BF",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064184BF.
+    price: 5294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064184BF",
+    fitment: "Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-47re-transmission-2000-2002-4wd-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47re-transmission-1064184bf/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47re-transmission-1064184bf/1.webp"],
+    description: `BD TorqueMaster 47RE Transmission for the Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064184BF.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RE
+Application: Dodge 47RE - 2000–2002 4WD with Auxiliary Filter & Billet Input
+Years: 2000–2002
+Core charge: $1,800, refundable
+Part number: 1064184BF
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2817,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RE Transmission & Converter Package — Dodge 47RE - 2000–2002 2WD with Auxiliary Filter & Billet Input — 1064182BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064182BM.
+    price: 6495,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064182BM",
+    fitment: "Dodge 47RE - 2000–2002 2WD with Auxiliary Filter & Billet Input. 2WD.",
+    drivetrain: "2WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-47re-transmission-converter-package-2000-2002-2wd-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064182bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064182bm/1.webp"],
+    description: `BD TorqueMaster 47RE Transmission & Converter Package for the Dodge 47RE - 2000–2002 2WD with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064182BM, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RE
+Application: Dodge 47RE - 2000–2002 2WD with Auxiliary Filter & Billet Input
+Years: 2000–2002
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064182BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2818,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission & Converter Package — Dodge 47RE - 1998.5-1999 24-valve 4WD — 1064174SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064174SS.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064174SS",
+    fitment: "Dodge 47RE - 1998.5-1999 24-valve 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-converter-package-1998-5-1999-24-valve-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064174ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064174ss/1.webp"],
+    description: `BD TowMaster 47RE Transmission & Converter Package for the Dodge 47RE - 1998.5-1999 24-valve 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064174SS, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1998.5-1999 24-valve 4WD
+Years: 1998.5–1999
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064174SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2819,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission — Dodge 47RE - 1998.5-1999 24-valve 4WD — 1064174F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064174F.
+    price: 4245,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064174F",
+    fitment: "Dodge 47RE - 1998.5-1999 24-valve 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-1998-5-1999-24-valve-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-1064174f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-1064174f/1.webp"],
+    description: `BD TowMaster 47RE Transmission for the Dodge 47RE - 1998.5-1999 24-valve 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064174F.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1998.5-1999 24-valve 4WD
+Years: 1998.5–1999
+Core charge: $1,800, refundable
+Part number: 1064174F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2820,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RE Transmission & Converter Package — Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet — 1064174BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064174BM.
+    price: 6554.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064174BM",
+    fitment: "Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet Input. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-47re-transmission-converter-package-1998-5-1999-24-valve-4wd-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064174bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47re-transmission-converter-package-1064174bm/1.webp"],
+    description: `BD TorqueMaster 47RE Transmission & Converter Package for the Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064174BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet Input
+Years: 1998.5–1999
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064174BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2821,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RE Transmission — Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet — 1064174BF",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064174BF.
+    price: 5195,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064174BF",
+    fitment: "Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet Input.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-47re-transmission-1998-5-1999-24-valve-4wd-c-w-auxiliary-filter-billet-input",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47re-transmission-1064174bf/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47re-transmission-1064174bf/1.webp"],
+    description: `BD TorqueMaster 47RE Transmission for the Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet Input.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+BD lists this as part 1064174BF.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1998.5-1999 24-valve 4WD with Auxiliary Filter & Billet Input
+Years: 1998.5–1999
+Core charge: $1,800, refundable
+Part number: 1064174BF
+
+Highlights
+
+TorqueMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2822,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission & Converter Package — Dodge 47RE - 1997–1999 2WD w/Speed Sensor Only (No Speedo Head) — 1064172SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064172SS.
+    price: 5394.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064172SS",
+    fitment: "Dodge 47RE - 1997–1999 2WD w/Speed Sensor Only (No Speedo Head). 2WD.",
+    drivetrain: "2WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-converter-package-1997-1999-2wd-w-speed-sensor-only-no-speedo-head",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064172ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064172ss/1.webp"],
+    description: `BD TowMaster 47RE Transmission & Converter Package for the Dodge 47RE - 1997–1999 2WD w/Speed Sensor Only (No Speedo Head).
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064172SS, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1997–1999 2WD w/Speed Sensor Only (No Speedo Head)
+Years: 1997–1999
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064172SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2823,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission & Converter Package — Dodge 47RE - 1996–1998 12-valve 4WD — 1064164SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064164SS.
+    price: 5294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064164SS",
+    fitment: "Dodge 47RE - 1996–1998 12-valve 4WD. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-converter-package-1996-1998-12-valve-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064164ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064164ss/1.webp"],
+    description: `BD TowMaster 47RE Transmission & Converter Package for the Dodge 47RE - 1996–1998 12-valve 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064164SS, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1996–1998 12-valve 4WD
+Years: 1996–1998
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064164SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2824,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission — Dodge 47RE - 1996–1998 12-valve 4WD — 1064164F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064164F.
+    price: 4245,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064164F",
+    fitment: "Dodge 47RE - 1996–1998 12-valve 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-1996-1998-12-valve-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-1064164f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-1064164f/1.webp"],
+    description: `BD TowMaster 47RE Transmission for the Dodge 47RE - 1996–1998 12-valve 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064164F.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1996–1998 12-valve 4WD
+Years: 1996–1998
+Core charge: $1,800, refundable
+Part number: 1064164F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2825,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RE Transmission & Converter Package — Dodge 47RE - 1996–1997 2WD w/Speed Sensor & Speedo Head - — 1064162SS",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064162SS.
+    price: 5295,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064162SS",
+    fitment: "Dodge 47RE - 1996–1997 2WD w/Speed Sensor & Speedo Head -. 2WD.",
+    drivetrain: "2WD",
+    included: ["47RE transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47re-transmission-converter-package-1996-1997-2wd-w-speed-sensor-speedo-head",
+    thumbnail: "/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064162ss/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47re-transmission-converter-package-1064162ss/1.webp"],
+    description: `BD TowMaster 47RE Transmission & Converter Package for the Dodge 47RE - 1996–1997 2WD w/Speed Sensor & Speedo Head -.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064162SS, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RE
+Application: Dodge 47RE - 1996–1997 2WD w/Speed Sensor & Speedo Head -
+Years: 1996–1997
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064162SS
+
+Highlights
+
+TowMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2826,
+    createdAt: 1789430400000,
+    name: "BD Diesel TowMaster 47RH Transmission — Dodge 47RH - 1994–1995 4WD — 1064154F",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064154F.
+    price: 4245,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064154F",
+    fitment: "Dodge 47RH - 1994–1995 4WD.",
+    coreCharge: "$1,800 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/towmaster-dodge-47rh-transmission-1994-1995-4wd",
+    thumbnail: "/product-media/transmission/bd-towmaster-47rh-transmission-1064154f/1.webp",
+    images: ["/product-media/transmission/bd-towmaster-47rh-transmission-1064154f/1.webp"],
+    description: `BD TowMaster 47RH Transmission for the Dodge 47RH - 1994–1995 4WD.
+
+The TowMaster is BD's build for trucks that tow. It goes further than the Roadmaster on clutch capacity and line pressure, which is what a transmission runs out of when it is pulling weight up a grade in the heat.
+
+BD lists this as part 1064154F.
+
+BD supplies this as an exchange unit: a $1,800 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TowMaster
+Transmission: 47RH
+Application: Dodge 47RH - 1994–1995 4WD
+Years: 1994–1995
+Core charge: $1,800, refundable
+Part number: 1064154F
+
+Highlights
+
+TowMaster specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2827,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RH Transmission & Converter Package — Dodge 47RH - 1994–1995 4WD with Billet Input & Auxiliary Filter — 1064154BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064154BM.
+    price: 6554.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064154BM",
+    fitment: "Dodge 47RH - 1994–1995 4WD with Billet Input & Auxiliary Filter. 4WD.",
+    drivetrain: "4WD",
+    included: ["47RH transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-47rh-transmission-converter-package-1994-1995-4wd-c-w-billet-input-auxiliary-filter",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47rh-transmission-converter-package-1064154bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47rh-transmission-converter-package-1064154bm/1.webp"],
+    description: `BD TorqueMaster 47RH Transmission & Converter Package for the Dodge 47RH - 1994–1995 4WD with Billet Input & Auxiliary Filter.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064154BM, the 4WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RH
+Application: Dodge 47RH - 1994–1995 4WD with Billet Input & Auxiliary Filter
+Years: 1994–1995
+Drivetrain: 4WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064154BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2828,
+    createdAt: 1789430400000,
+    name: "BD Diesel TorqueMaster 47RH Transmission & Converter Package — Dodge 47RH - 1994–1995 2WD with Billet Input & Auxiliary Filter — 1064152BM",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1064152BM.
+    price: 6554.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1064152BM",
+    fitment: "Dodge 47RH - 1994–1995 2WD with Billet Input & Auxiliary Filter. 2WD.",
+    drivetrain: "2WD",
+    included: ["47RH transmission","BD torque converter"],
+    coreCharge: "$2,500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/torquemaster-dodge-47rh-transmission-converter-package-1994-1995-2wd-c-w-billet-input-auxiliary-filter",
+    thumbnail: "/product-media/transmission/bd-torquemaster-47rh-transmission-converter-package-1064152bm/1.webp",
+    images: ["/product-media/transmission/bd-torquemaster-47rh-transmission-converter-package-1064152bm/1.webp"],
+    description: `BD TorqueMaster 47RH Transmission & Converter Package for the Dodge 47RH - 1994–1995 2WD with Billet Input & Auxiliary Filter.
+
+The TorqueMaster is BD's heavy-duty build, a step above the TowMaster. It carries the harder parts — billet shafts and upgraded internals, depending on the model — for trucks working at the top of what the transmission was designed for.
+
+It ships as a matched set with a BD torque converter, so the converter's stall speed and clutch capacity suit the transmission rather than being picked separately.
+
+BD lists this as part 1064152BM, the 2WD version.
+
+BD supplies this as an exchange unit: a $2,500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: TorqueMaster
+Transmission: 47RH
+Application: Dodge 47RH - 1994–1995 2WD with Billet Input & Auxiliary Filter
+Years: 1994–1995
+Drivetrain: 2WD
+Torque converter: Included
+Core charge: $2,500, refundable
+Part number: 1064152BM
+
+Highlights
+
+TorqueMaster specification
+Transmission and converter matched as a set
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2829,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Ford 2011–2019 6.7L 6R140 — 1030239",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030239.
+    price: 1270.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030239",
+    fitment: "Ford 2011–2019 6.7L 6R140.",
+    coreCharge: "$500 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-torque-converter-ford-2011-2019-6-7l-6r140",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030239/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030239/1.webp"],
+    description: `BD ProForce Torque Converter for the Ford 2011–2019 6.7L 6R140.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030239.
+
+BD supplies this as an exchange unit: a $500 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 6R140
+Application: Ford 2011–2019 6.7L 6R140
+Years: 2011–2019
+Core charge: $500, refundable
+Part number: 1030239
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2830,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — 3D Chevy Duramax Allison 1000 2001–2016 — 1071240",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1071240.
+    price: 1715.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1071240",
+    fitment: "3D Chevy Duramax Allison 1000 2001–2016.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/duramax-proforce-3d-torque-converter-chevy-2001-2016-allison-1000",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1071240/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1071240/1.webp"],
+    description: `BD ProForce Torque Converter for the 3D Chevy Duramax Allison 1000 2001–2016.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1071240.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: Allison 1000
+Application: 3D Chevy Duramax Allison 1000 2001–2016
+Years: 2001–2016
+Core charge: $300, refundable
+Part number: 1071240
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2831,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Enhanced Stall Dodge 6.7L Cummins 68RFE 2007.5-2024 — 1070220X",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1070220X.
+    price: 1354.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1070220X",
+    fitment: "Enhanced Stall Dodge 6.7L Cummins 68RFE 2007.5-2024.",
+    coreCharge: "$700 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/68rfe-proforce-enhanced-stall-torque-converter",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1070220x/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1070220x/1.webp"],
+    description: `BD ProForce Torque Converter for the Enhanced Stall Dodge 6.7L Cummins 68RFE 2007.5-2024.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1070220X.
+
+BD supplies this as an exchange unit: a $700 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 68RFE
+Application: Enhanced Stall Dodge 6.7L Cummins 68RFE 2007.5-2024
+Years: 2007.5–2024
+Core charge: $700, refundable
+Part number: 1070220X
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2832,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Dodge 5.9L Cummins 727/518 1988–1993 — 1060210X",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1060210X.
+    price: 1009.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1060210X",
+    fitment: "Dodge 5.9L Cummins 727/518 1988–1993.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-torque-converter-dodge-1988-1993-5-9l-727-518",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1060210x/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1060210x/1.webp"],
+    description: `BD ProForce Torque Converter for the Dodge 5.9L Cummins 727/518 1988–1993.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1060210X.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 727/518
+Application: Dodge 5.9L Cummins 727/518 1988–1993
+Years: 1988–1993
+Core charge: $300, refundable
+Part number: 1060210X
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2833,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Chevy Duramax Allison 2001–2010 — 1030230",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030230.
+    price: 1294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030230",
+    fitment: "Chevy Duramax Allison 2001–2010.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-duramax-allison-torque-converter",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030230/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030230/1.webp"],
+    description: `BD ProForce Torque Converter for the Chevy Duramax Allison 2001–2010.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030230.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Application: Chevy Duramax Allison 2001–2010
+Years: 2001–2010
+Core charge: $300, refundable
+Part number: 1030230
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2834,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Ford 6.4L Power Stroke 5R110 2008–2010 — 1030229",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030229.
+    price: 1294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030229",
+    fitment: "Ford 6.4L Power Stroke 5R110 2008–2010.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-5r110-6-4l-torque-converter",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030229/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030229/1.webp"],
+    description: `BD ProForce Torque Converter for the Ford 6.4L Power Stroke 5R110 2008–2010.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030229.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 5R110
+Application: Ford 6.4L Power Stroke 5R110 2008–2010
+Years: 2008–2010
+Core charge: $300, refundable
+Part number: 1030229
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2835,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — Ford 6.0L Power Stroke 5R110 2003–2007 — 1030227",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030227.
+    price: 1294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030227",
+    fitment: "Ford 6.0L Power Stroke 5R110 2003–2007.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-5r110-6-0l-torque-converter",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030227/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030227/1.webp"],
+    description: `BD ProForce Torque Converter for the Ford 6.0L Power Stroke 5R110 2003–2007.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030227.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: 5R110
+Application: Ford 6.0L Power Stroke 5R110 2003–2007
+Years: 2003–2007
+Core charge: $300, refundable
+Part number: 1030227
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2836,
+    createdAt: 1789430400000,
+    name: "BD Diesel ProForce Torque Converter — 6 Stud - Ford 7.3L Power Stroke E4OD/4R100 1995–2003 — 1030223",
+    category: "transmission",
+    brand: "bd-diesel",
+    // bddiesel listing price for 1030223.
+    price: 1294.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "36-Month BD Diesel Warranty",
+    location: "our supplier network",
+    partNumber: "1030223",
+    fitment: "6 Stud - Ford 7.3L Power Stroke E4OD/4R100 1995–2003.",
+    coreCharge: "$300 refundable core deposit",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://us.bddiesel.com/products/proforce-e4od-4r100-6-stud-torque-converter",
+    thumbnail: "/product-media/transmission/bd-proforce-torque-converter-1030223/1.webp",
+    images: ["/product-media/transmission/bd-proforce-torque-converter-1030223/1.webp"],
+    description: `BD ProForce Torque Converter for the 6 Stud - Ford 7.3L Power Stroke E4OD/4R100 1995–2003.
+
+The torque converter is the coupling between engine and transmission, and it is where much of the heat is made. BD's ProForce converters are OEM-style multi-disc units built to hold torque without slipping, which is what keeps fluid temperature down.
+
+Fitting a converter means dropping the transmission, so it is usually done alongside a transmission service or rebuild.
+
+BD lists this as part 1030223.
+
+BD supplies this as an exchange unit: a $300 refundable core deposit applies, refunded when your old unit is returned.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Series: ProForce
+Transmission: E4OD
+Application: 6 Stud - Ford 7.3L Power Stroke E4OD/4R100 1995–2003
+Years: 1995–2003
+Core charge: $300, refundable
+Part number: 1030223
+
+Highlights
+
+ProForce specification
+Exchange unit — core deposit refunded on return
+36-month BD warranty
+
+Warranty
+36-Month BD Diesel Warranty
 
 Shipping
 Worldwide Shipping Available`,
