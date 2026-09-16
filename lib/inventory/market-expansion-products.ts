@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   1454 listings added 2026-09-15 from manufacturer and
+   1504 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -74059,6 +74059,2662 @@ Direct fit
 
 Warranty
 Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3599,
+    createdAt: 1789430400000,
+    name: "Fox 2.0 Performance Series Coilovers & Shocks Set — 2005–2015 Toyota Hilux 4WD — 985-24-071 / 983-02-087",
+    category: "suspension",
+    brand: "fox",
+    // shocksurplus listing price for SHS11FOX36578490045.
+    price: 1719.8,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Fox 1-Year Warranty",
+    location: "our supplier network",
+    partNumber: "985-24-071 / 983-02-087",
+    fitment: "2005–2015 Toyota Hilux 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fox-2-0-performance-series-coilovers-shocks-set-for-2005-2015-toyota-hilux-4wd",
+    thumbnail: "/product-media/suspension/fox-2-0-performance-series-coilovers-shocks-set-98524071/1.webp",
+    images: ["/product-media/suspension/fox-2-0-performance-series-coilovers-shocks-set-98524071/1.webp"],
+    description: `Fox 2.0 Performance Series Coilovers & Shocks Set for the 2005–2015 Toyota Hilux 4WD, package contains 2 coilovers 2 rear shocks.
+
+Fox dampers come out of off-road racing, and the Performance Series brings that valving to a bolt-on part. The larger body carries more oil than a factory damper, so the heat a rough road puts into it has somewhere to go before damping starts to fade.
+
+Package Contains 2 coilovers 2 Rear Shocks. Front pair of Strut & Spring assemblies with two rear shocks. Part number 985-24-071 and 983-02-087.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fox
+Product: 2.0 Performance Series Coilovers & Shocks Set
+Item: Shock Absorber / Strut & Spring
+Quantity: 4
+Extended length: 23.65 in / 22.26 in
+Compressed length: 15.05 in / 17.63 in
+Travel: 8.6 in / 4.63 in
+Top mount: EYELET / OEM
+Bottom mount: EYELET/SLEEVE / EYELET
+Reservoir: Internal Floating Piston (IFP)
+Drivetrain: 4WD
+Part number: 985-24-071 / 983-02-087
+
+Highlights
+
+2.0 Performance Series Coilovers & Shocks Set
+Package Contains 2 coilovers 2 Rear Shocks
+4WD application
+Fox 1-Year Warranty
+
+Warranty
+Fox 1-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3600,
+    createdAt: 1789430400000,
+    name: "Fox 2.0 Performance Series Coilovers Front Pair — 2005–2015 Toyota Hilux RWD — 983-02-087",
+    category: "suspension",
+    brand: "fox",
+    // shocksurplus listing price for SHS11FOX36686429613.
+    price: 1239.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Fox 1-Year Warranty",
+    location: "our supplier network",
+    partNumber: "983-02-087",
+    fitment: "2005–2015 Toyota Hilux RWD. 2WD only.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fox-2-0-performance-series-coilovers-front-pair-2005-2015-toyota-hilux-2wd-4wd",
+    thumbnail: "/product-media/suspension/fox-2-0-performance-series-coilovers-front-pair-98302087/1.webp",
+    images: ["/product-media/suspension/fox-2-0-performance-series-coilovers-front-pair-98302087/1.webp"],
+    description: `Fox 2.0 Performance Series Coilovers Front Pair for the 2005–2015 Toyota Hilux RWD, package contains 2 coilovers.
+
+Fox dampers come out of off-road racing, and the Performance Series brings that valving to a bolt-on part. The larger body carries more oil than a factory damper, so the heat a rough road puts into it has somewhere to go before damping starts to fade.
+
+Package Contains 2 coilovers. Front pair of Strut & Spring assemblies. Part number 983-02-087.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fox
+Product: 2.0 Performance Series Coilovers Front Pair
+Item: Strut & Spring
+Position: Front
+Quantity: 2
+Ride height: 0-2 in Lift
+Extended length: 22.26 in
+Compressed length: 17.63 in
+Travel: 4.63 in
+Top mount: OEM
+Bottom mount: EYELET
+Reservoir: Internal Floating Piston (IFP)
+Drivetrain: 2WD
+Part number: 983-02-087
+
+Highlights
+
+2.0 Performance Series Coilovers Front Pair
+Package Contains 2 coilovers
+2WD application
+Fox 1-Year Warranty
+
+Warranty
+Fox 1-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3601,
+    createdAt: 1789430400000,
+    name: "Bilstein 4600 Monotube OEM Shocks Set — 1998–2011 Ford Ranger XLT 4WD w/Torsion — 24-188241 / 24-188258",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS11BIL36577259103.
+    price: 398.05,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-188241 (front) / 24-188258 (rear)",
+    fitment: "1998–2011 Ford Ranger XLT 4WD w/Torsion. 4WD only. Fits vehicles with torsion bar front suspension ONLY.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-4600-monotube-gas-oem-shocks-set-1998-2011-ford-ranger-xlt-4wd-w-torsion",
+    thumbnail: "/product-media/suspension/bilstein-4600-monotube-oem-shocks-set-24188241/1.webp",
+    images: ["/product-media/suspension/bilstein-4600-monotube-oem-shocks-set-24188241/1.webp"],
+    description: `Bilstein 4600 Monotube OEM Shocks Set for the 1998–2011 Ford Ranger XLT 4WD w/Torsion, package contains 4 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 24-188241 (front) / 24-188258 (rear).
+
+One fitment note from the manufacturer: Fits vehicles with torsion bar front suspension ONLY.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 4600 Monotube OEM Shocks Set
+Item: Shock Absorber
+Position: Front / Rear
+Quantity: 4
+Ride height: Factory
+Internal design: Monotube
+Extended length: 17.92 in / 26.36 in
+Compressed length: 13.72 in / 16.14 in
+Travel: 4.2 in / 10.22 in
+Top mount: STEM / EYELET
+Bottom mount: BARPIN / EYELET
+Reservoir: No
+Finish: Yellow Paint
+Drivetrain: 4WD
+Part number: 24-188241 (front) / 24-188258 (rear)
+
+Highlights
+
+4600 Monotube OEM Shocks Set
+Package Contains 4 Shocks
+Monotube design
+4WD application
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3602,
+    createdAt: 1789430400000,
+    name: "Rancho RS5000X Gas Shocks Set — 1998–2011 Ford Ranger 4WD w/0 in lift w/Torsion — RS55229 / RS55126",
+    category: "suspension",
+    brand: "rancho",
+    // shocksurplus listing price for SHS11RAN36581958873.
+    price: 298.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Rancho Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "RS55229 (front) / RS55126 (rear)",
+    fitment: "1998–2011 Ford Ranger 4WD w/0 in lift w/Torsion. 4WD only. Fits vehicles with torsion bar front suspension ONLY.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/rancho-rs5000x-gas-shocks-set-1998-2011-ford-ranger-4wd-w-torsion",
+    thumbnail: "/product-media/suspension/rancho-rs5000x-gas-shocks-set-rs55229/1.webp",
+    images: ["/product-media/suspension/rancho-rs5000x-gas-shocks-set-rs55229/1.webp"],
+    description: `Rancho RS5000X Gas Shocks Set for the 1998–2011 Ford Ranger 4WD w/0 in lift w/Torsion, package contains 4 shocks and 4 shock boots.
+
+Rancho's RS5000X is a twin-tube damper with valving tuned for light trucks that are actually loaded. It is the straightforward replacement for a tired factory shock rather than a race part, and it is priced accordingly.
+
+Package Contains 4 Shocks and 4 Shock Boots. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — RS55229 (front) / RS55126 (rear).
+
+One fitment note from the manufacturer: Fits vehicles with torsion bar front suspension ONLY.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Rancho
+Product: RS5000X Gas Shocks Set
+Item: Shock Absorber
+Position: Front / Rear
+Quantity: 4
+Ride height: 0.0 in Lift
+Extended length: 18.25 in / 26.42 in
+Compressed length: 13.72 in / 16.01 in
+Travel: 4.53 in / 10.41 in
+Top mount: OEM / EYELET
+Bottom mount: BARPIN / EYELET/SLEEVE
+Drivetrain: 4WD
+Part number: RS55229 (front) / RS55126 (rear)
+
+Highlights
+
+RS5000X Gas Shocks Set
+Package Contains 4 Shocks and 4 Shock Boots
+4WD application
+Rancho Lifetime Warranty
+
+Warranty
+Rancho Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3603,
+    createdAt: 1789430400000,
+    name: "Bilstein 4600 Monotube OEM Shocks Set — 1998–2011 Ford Ranger RWD w/0-3 in lift w/Coils — 24-196277 / 24-196260",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL18608492448.
+    price: 350.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-196277 (rear) / 24-196260 (front)",
+    fitment: "1998–2011 Ford Ranger RWD w/0-3 in lift w/Coils. 2WD only. For coil truck applications only",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-4600-monotube-oem-shocks-set-for-1998-2011-ford-ranger-rwd-w-0-3-lift",
+    thumbnail: "/product-media/suspension/bilstein-4600-monotube-oem-shocks-set-24196277/1.webp",
+    images: ["/product-media/suspension/bilstein-4600-monotube-oem-shocks-set-24196277/1.webp"],
+    description: `Bilstein 4600 Monotube OEM Shocks Set for the 1998–2011 Ford Ranger RWD w/0-3 in lift w/Coils, package contains 4 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 24-196277 (rear) / 24-196260 (front).
+
+One fitment note from the manufacturer: For coil truck applications only
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 4600 Monotube OEM Shocks Set
+Item: Shock Absorber
+Position: Rear / Front
+Quantity: 4
+Ride height: 0-1 in Lift / 0-3 in Lift
+Internal design: Monotube
+Extended length: 22.68 in / 14.02 in
+Compressed length: 14.21 in / 9.8 in
+Travel: 8.47 in / 4.22 in
+Top mount: EYELET / STEM
+Bottom mount: EYELET / BARPIN
+Reservoir: No
+Finish: Yellow Paint
+Drivetrain: 2WD
+Part number: 24-196277 (rear) / 24-196260 (front)
+
+Highlights
+
+4600 Monotube OEM Shocks Set
+Package Contains 4 Shocks
+Monotube design
+2WD application
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3604,
+    createdAt: 1789430400000,
+    name: "Bilstein 4600 Monotube OEM Shocks Front Pair — 1998–2011 Ford Ranger RWD w/0-3 in lift — 24-196260",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL76540807218.
+    price: 184,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-196260",
+    fitment: "1998–2011 Ford Ranger RWD w/0-3 in lift. 2WD only.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b6-4600-monotube-oem-shocks-front-pair-for-1998-2011-ford-ranger-rwd-w-0-3-lift",
+    thumbnail: "/product-media/suspension/bilstein-4600-monotube-oem-shocks-front-pair-24196260/1.webp",
+    images: ["/product-media/suspension/bilstein-4600-monotube-oem-shocks-front-pair-24196260/1.webp"],
+    description: `Bilstein 4600 Monotube OEM Shocks Front Pair for the 1998–2011 Ford Ranger RWD w/0-3 in lift, package contains 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Shocks. Front pair of two shock absorbers. Part number 24-196260.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 4600 Monotube OEM Shocks Front Pair
+Item: Shock Absorber
+Position: Front
+Quantity: 2
+Ride height: 0-3 in Lift
+Internal design: Monotube
+Extended length: 14.02 in
+Compressed length: 9.8 in
+Travel: 4.22 in
+Top mount: STEM
+Bottom mount: BARPIN
+Reservoir: No
+Finish: Yellow Paint
+Drivetrain: 2WD
+Part number: 24-196260
+
+Highlights
+
+4600 Monotube OEM Shocks Front Pair
+Package Contains 2 Shocks
+Monotube design
+2WD application
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3605,
+    createdAt: 1789430400000,
+    name: "Icon Vehicle Dynamics Icon Steel Knuckle Delta Joint Kit — 2022–2023 Ford Ranger — 614557",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD614557.
+    price: 267.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "614557",
+    fitment: "2022–2023 Ford Ranger.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-steel-knuckle-delta-joint-kit-for-2022-2023-ford-ranger",
+    thumbnail: "/product-media/suspension/icon-vehicle-dynamics-icon-steel-knuckle-delta-joint-kit-614557/1.webp",
+    images: ["/product-media/suspension/icon-vehicle-dynamics-icon-steel-knuckle-delta-joint-kit-614557/1.webp"],
+    description: `Icon Vehicle Dynamics Icon Steel Knuckle Delta Joint Kit for the 2022–2023 Ford Ranger.
+
+ICON build vehicle-specific damping rather than one universal valving curve, so a part is tuned around the weight and geometry of the truck it is sold for. Their larger-bodied dampers carry more piston area and more oil than a factory unit, which is what holds damping consistent once the shock is hot.
+
+This listing covers 614557.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Icon Steel Knuckle Delta Joint Kit
+Item: Steel Knuckle Delta Joint Kit
+Quantity: 1
+Part number: 614557
+
+Highlights
+
+Icon Steel Knuckle Delta Joint Kit
+Manufacturer Warranty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3606,
+    createdAt: 1789430400000,
+    name: "Bilstein 4600 Monotube OEM Shocks Front Pair — 2019–2023 Ford Ranger 4WD RWD — 24-233552",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL76580914000.
+    price: 246,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-233552",
+    fitment: "2019–2023 Ford Ranger 4WD RWD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b6-4600-monotube-oem-shocks-front-pair-for-2019-2021-ford-ranger-4wd-rwd",
+    thumbnail: "/product-media/suspension/bilstein-4600-monotube-oem-shocks-front-pair-24233552/1.webp",
+    images: ["/product-media/suspension/bilstein-4600-monotube-oem-shocks-front-pair-24233552/1.webp"],
+    description: `Bilstein 4600 Monotube OEM Shocks Front Pair for the 2019–2023 Ford Ranger 4WD RWD, package contains 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Shocks. Front pair of two shock absorbers. Part number 24-233552.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 4600 Monotube OEM Shocks Front Pair
+Item: Shock Absorber
+Position: Front
+Quantity: 2
+Ride height: Factory
+Part number: 24-233552
+
+Highlights
+
+4600 Monotube OEM Shocks Front Pair
+Package Contains 2 Shocks
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3607,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Sport Strut & Shocks Set — 2019–2023 Ford Ranger 4WD RWD w/0-3 in lift — E60-35-048-01-01 / E60-35-048-01-10",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for SHS13EIB49587408821.
+    price: 599.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E60-35-048-01-01 (rear) / E60-35-048-01-10 (front)",
+    fitment: "2019–2023 Ford Ranger 4WD RWD w/0-3 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-sport-strut-shocks-set-for-2019-2023-ford-ranger-4wd-rwd-w-0-3-lift",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-sport-strut-shocks-set-e60350480101/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-sport-strut-shocks-set-e60350480101/1.webp"],
+    description: `Eibach Pro-Truck Sport Strut & Shocks Set for the 2019–2023 Ford Ranger 4WD RWD w/0-3 in lift, package contains 1 set of strut & shock.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+Package Contains 1 Set of Strut & Shock. You'll be getting 2 Front Struts and 2 Rear Shocks. The front and rear carry different part numbers — E60-35-048-01-01 (rear) / E60-35-048-01-10 (front).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Sport Strut & Shocks Set
+Item: Shock Absorber
+Position: Rear / Front
+Quantity: 4
+Ride height: 0-1.5 in Lift / 0-3 in Lift
+Part number: E60-35-048-01-01 (rear) / E60-35-048-01-10 (front)
+
+Highlights
+
+Pro-Truck Sport Strut & Shocks Set
+Package Contains 1 Set of Strut & Shock
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3608,
+    createdAt: 1789430400000,
+    name: "Icon Vehicle Dynamics Icon Brake Line Kit — 1990–1997 Toyota Land Cruiser 80 4WD — 53009",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD53009.
+    price: 195.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "53009",
+    fitment: "1990–1997 Toyota Land Cruiser 80 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-brake-line-kit-for-1991-1997-toyota-land-cruiser-4wd-53009",
+    thumbnail: "/product-media/suspension/icon-vehicle-dynamics-icon-brake-line-kit-53009/1.webp",
+    images: ["/product-media/suspension/icon-vehicle-dynamics-icon-brake-line-kit-53009/1.webp"],
+    description: `Icon Vehicle Dynamics Icon Brake Line Kit for the 1990–1997 Toyota Land Cruiser 80 4WD.
+
+ICON build vehicle-specific damping rather than one universal valving curve, so a part is tuned around the weight and geometry of the truck it is sold for. Their larger-bodied dampers carry more piston area and more oil than a factory unit, which is what holds damping consistent once the shock is hot.
+
+This listing covers 53009.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Icon Brake Line Kit
+Item: Brake Line Kit
+Position: Front and Rear
+Quantity: 1
+Ride height: Factory
+Part number: 53009
+
+Highlights
+
+Icon Brake Line Kit
+Manufacturer Warranty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3609,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Shocks Set — 1990–1997 Toyota Land Cruiser 80 4WD w/2-2.5 in lift — 24-238878 / 24-238885",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS11BIL36686362634.
+    price: 492.1,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-238878 (front) / 24-238885 (rear)",
+    fitment: "1990–1997 Toyota Land Cruiser 80 4WD w/2-2.5 in lift. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b8-5100-monotube-gas-shocks-set-for-1991-1997-toyota-land-cruiser-4wd-w-2-2-5-lift",
+    thumbnail: "/product-media/suspension/bilstein-5100-shocks-set-24238878/1.webp",
+    images: ["/product-media/suspension/bilstein-5100-shocks-set-24238878/1.webp"],
+    description: `Bilstein 5100 Shocks Set for the 1990–1997 Toyota Land Cruiser 80 4WD w/2-2.5 in lift, package contains 4 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 24-238878 (front) / 24-238885 (rear).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 5100 Shocks Set
+Item: Shock Absorber
+Position: Front / Rear
+Quantity: 4
+Ride height: 2-2.5 in Lift
+Internal design: Monotube
+Extended length: 24.61 in / 24.59 in
+Compressed length: 14.96 in / 14.94 in
+Travel: 9.65 in
+Top mount: STEM
+Bottom mount: STEM / EYELET
+Reservoir: No
+Finish: Zinc Plated
+Drivetrain: 4WD
+Part number: 24-238878 (front) / 24-238885 (rear)
+
+Highlights
+
+5100 Shocks Set
+Package Contains 4 Shocks
+Monotube design
+4WD application
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3610,
+    createdAt: 1789430400000,
+    name: "Bilstein 5160 w/ Remote Reservoir Shocks Front Pair — 1998–2012 Toyota Land Cruiser 100 w/1.5-2.5 in lift — 25-275100",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL88045798300.
+    price: 620,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein 2-Year Warranty",
+    location: "our supplier network",
+    partNumber: "25-275100",
+    fitment: "1998–2012 Toyota Land Cruiser 100 w/1.5-2.5 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-5160-w-remote-reservoir-shocks-front-pair-for-1998-2007-toyota-land-cruiser-100-w-1-5-2-5-lift",
+    thumbnail: "/product-media/suspension/bilstein-5160-w-remote-reservoir-shocks-front-pair-25275100/1.webp",
+    images: ["/product-media/suspension/bilstein-5160-w-remote-reservoir-shocks-front-pair-25275100/1.webp"],
+    description: `Bilstein 5160 w/ Remote Reservoir Shocks Front Pair for the 1998–2012 Toyota Land Cruiser 100 w/1.5-2.5 in lift, package contains 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Shocks. Front pair of two shock absorbers. Part number 25-275100.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 5160 w/ Remote Reservoir Shocks Front Pair
+Item: Shock Absorber
+Position: Front Left
+Quantity: 2
+Ride height: 1.5-2.5 in Lift
+Part number: 25-275100
+
+Highlights
+
+5160 w/ Remote Reservoir Shocks Front Pair
+Package Contains 2 Shocks
+Bilstein 2-Year Warranty
+
+Warranty
+Bilstein 2-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3611,
+    createdAt: 1789430400000,
+    name: "Fox 2.0 Performance Series Shocks Set — 1998–2012 Toyota Land Cruiser 100 4WD — 985-24-066 / 985-24-124",
+    category: "suspension",
+    brand: "fox",
+    // shocksurplus listing price for SHS11FOX36578442874.
+    price: 919.8,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Fox 1-Year Warranty",
+    location: "our supplier network",
+    partNumber: "985-24-066 (front) / 985-24-124 (rear)",
+    fitment: "1998–2012 Toyota Land Cruiser 100 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/fox-2-0-performance-series-shocks-set-for-1998-2007-toyota-land-cruiser-4wd-100-series",
+    thumbnail: "/product-media/suspension/fox-2-0-performance-series-shocks-set-98524066/1.webp",
+    images: ["/product-media/suspension/fox-2-0-performance-series-shocks-set-98524066/1.webp"],
+    description: `Fox 2.0 Performance Series Shocks Set for the 1998–2012 Toyota Land Cruiser 100 4WD, package contains 4 shocks.
+
+Fox dampers come out of off-road racing, and the Performance Series brings that valving to a bolt-on part. The larger body carries more oil than a factory damper, so the heat a rough road puts into it has somewhere to go before damping starts to fade.
+
+Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 985-24-066 (front) / 985-24-124 (rear).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Fox
+Product: 2.0 Performance Series Shocks Set
+Item: Shock Absorber
+Position: Front / Rear
+Quantity: 4
+Ride height: 0-1.5 in Lift
+Extended length: 17.55 in / 23.55 in
+Compressed length: 11.45 in / 14.95 in
+Travel: 6.1 in / 8.6 in
+Top mount: STEM
+Bottom mount: EYELET/SLEEVE / EYELET
+Reservoir: Internal Floating Piston (IFP)
+Drivetrain: 4WD
+Part number: 985-24-066 (front) / 985-24-124 (rear)
+
+Highlights
+
+2.0 Performance Series Shocks Set
+Package Contains 4 Shocks
+4WD application
+Fox 1-Year Warranty
+
+Warranty
+Fox 1-Year Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3612,
+    createdAt: 1789430400000,
+    name: "Bilstein 4600 Monotube OEM Shocks Set — 1998–2012 Toyota Land Cruiser 100 4WD RWD — 24-027397 / 24-027403",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS11BIL36577342052.
+    price: 499.7,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-027397 (front) / 24-027403 (rear)",
+    fitment: "1998–2012 Toyota Land Cruiser 100 4WD RWD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-4600-monotube-gas-oem-shocks-set-1998-2007-toyota-land-cruiser-2wd-4wd",
+    thumbnail: "/product-media/suspension/bilstein-4600-monotube-oem-shocks-set-24027397/1.webp",
+    images: ["/product-media/suspension/bilstein-4600-monotube-oem-shocks-set-24027397/1.webp"],
+    description: `Bilstein 4600 Monotube OEM Shocks Set for the 1998–2012 Toyota Land Cruiser 100 4WD RWD, package contains 4 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 24-027397 (front) / 24-027403 (rear).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 4600 Monotube OEM Shocks Set
+Item: Shock Absorber
+Position: Front / Rear
+Quantity: 4
+Ride height: Factory
+Internal design: Monotube
+Extended length: 16.91 in / 22.38 in
+Compressed length: 11.42 in / 14.25 in
+Travel: 5.49 in / 8.13 in
+Top mount: STEM
+Bottom mount: EYELET
+Reservoir: No
+Finish: Yellow Paint
+Part number: 24-027397 (front) / 24-027403 (rear)
+
+Highlights
+
+4600 Monotube OEM Shocks Set
+Package Contains 4 Shocks
+Monotube design
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3613,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair — 2010–2020 Nissan Patrol Y62 4WD — 25001-323A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-323A.
+    price: 2716.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-323A",
+    fitment: "2010–2020 Nissan Patrol Y62 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-for-2010-2020-nissan-patrol-y62-4wd",
+    thumbnail: "/product-media/suspension/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-25001323a/1.webp",
+    images: ["/product-media/suspension/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-25001323a/1.webp"],
+    description: `King Shocks 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair for the 2010–2020 Nissan Patrol Y62 4WD, package contains 2 strut & spring assemblies.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 2 Strut & Spring Assemblies. Pair of two coilovers. Part number 25001-323A.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair
+Item: Strut & Spring
+Position: Front
+Quantity: 1
+Ride height: 0-2 in Lift
+Drivetrain: 4WD
+Part number: 25001-323A
+
+Highlights
+
+2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair
+Package Contains 2 Strut & Spring Assemblies
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3615,
+    createdAt: 1789430400000,
+    name: "SuperSprings SumoSprings Coil Insert Rear Pair Kit — 2010–2020 Nissan Patrol 4WD RWD — CSS-1145",
+    category: "suspension",
+    brand: "supersprings",
+    // shocksurplus listing price for SSPCSS-1145.
+    price: 206.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "SuperSprings Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "CSS-1145",
+    fitment: "2010–2020 Nissan Patrol 4WD RWD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/supersprings-sumosprings-coil-insert-rear-pair-kit-for-2010-2020-nissan-patrol-4wd-rwd",
+    thumbnail: "/product-media/suspension/supersprings-sumosprings-coil-insert-rear-pair-kit-css1145/1.webp",
+    images: ["/product-media/suspension/supersprings-sumosprings-coil-insert-rear-pair-kit-css1145/1.webp"],
+    description: `SuperSprings SumoSprings Coil Insert Rear Pair Kit for the 2010–2020 Nissan Patrol 4WD RWD.
+
+SuperSprings make load-carrying add-ons: self-adjusting helper springs that engage progressively as weight goes on, so an unladen truck rides as it did and a loaded one stops squatting.
+
+This listing covers CSS-1145.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: SuperSprings
+Product: SumoSprings Coil Insert Rear Pair Kit
+Item: SumoSprings Coil Insert Rear Pair
+Position: Front
+Quantity: 1
+Ride height: Factory
+Part number: CSS-1145
+
+Highlights
+
+SumoSprings Coil Insert Rear Pair Kit
+SuperSprings Limited Lifetime Warranty
+
+Warranty
+SuperSprings Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3616,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.0 Performance Steering Stabilizer — 1997–2017 Nissan Patrol Y61 4WD — 20C001-202",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG20C001-202.
+    price: 345.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "20C001-202",
+    fitment: "1997–2017 Nissan Patrol Y61 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-0-performance-steering-stabilizer-20c001-202",
+    thumbnail: "/product-media/suspension/king-shocks-2-0-performance-steering-stabilizer-20c001202/1.webp",
+    images: ["/product-media/suspension/king-shocks-2-0-performance-steering-stabilizer-20c001202/1.webp"],
+    description: `King Shocks 2.0 Performance Steering Stabilizer for the 1997–2017 Nissan Patrol Y61 4WD, package contains 1 steering stabilizer.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 1 Steering Stabilizer. You'll be getting one steering damper. Part number 20C001-202.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 2.0 Performance Steering Stabilizer
+Item: Steering Stabilizer
+Position: Front
+Quantity: 1
+Ride height: Factory
+Drivetrain: 4WD
+Part number: 20C001-202
+
+Highlights
+
+2.0 Performance Steering Stabilizer
+Package Contains 1 Steering Stabilizer
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3617,
+    createdAt: 1789430400000,
+    name: "King Shocks 3.0 Performance w/ Adjustable Remote Reservoir Shocks Rear Pair — 1997–2023 Nissan Patrol 4WD — 33001-213A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG33001-213A.
+    price: 1929.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "33001-213A",
+    fitment: "1997–2023 Nissan Patrol 4WD. 4WD only. Comes with Finned Reservoir and Brackets.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-3-0-performance-w-adjustable-remote-reservoir-shocks-rear-pair-for-1997-2023-nissan-patrol-4wd",
+    thumbnail: "/product-media/suspension/king-shocks-3-0-performance-w-adjustable-remote-reservoir-shocks-rear-pair-33001213a/1.webp",
+    images: ["/product-media/suspension/king-shocks-3-0-performance-w-adjustable-remote-reservoir-shocks-rear-pair-33001213a/1.webp"],
+    description: `King Shocks 3.0 Performance w/ Adjustable Remote Reservoir Shocks Rear Pair for the 1997–2023 Nissan Patrol 4WD, package contains 2 shocks.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 33001-213A.
+
+One fitment note from the manufacturer: Comes with Finned Reservoir and Brackets.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 3.0 Performance w/ Adjustable Remote Reservoir Shocks Rear Pair
+Item: Shock Absorber
+Position: Rear
+Quantity: 1
+Ride height: 0-2 in Lift
+Drivetrain: 4WD
+Part number: 33001-213A
+
+Highlights
+
+3.0 Performance w/ Adjustable Remote Reservoir Shocks Rear Pair
+Package Contains 2 Shocks
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3618,
+    createdAt: 1789430400000,
+    name: "King Shocks 3.0 Performance w/ Remote Reservoir Shocks Rear Pair — 1997–2023 Nissan Patrol 4WD — 33001-213",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG33001-213.
+    price: 1543.98,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "33001-213",
+    fitment: "1997–2023 Nissan Patrol 4WD. 4WD only. Comes with Finned Reservoir and Brackets.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-3-0-performance-w-remote-reservoir-shocks-rear-pair-for-1997-2023-nissan-patrol-4wd",
+    thumbnail: "/product-media/suspension/king-shocks-3-0-performance-w-remote-reservoir-shocks-rear-pair-33001213/1.webp",
+    images: ["/product-media/suspension/king-shocks-3-0-performance-w-remote-reservoir-shocks-rear-pair-33001213/1.webp"],
+    description: `King Shocks 3.0 Performance w/ Remote Reservoir Shocks Rear Pair for the 1997–2023 Nissan Patrol 4WD, package contains 2 shocks.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 33001-213.
+
+One fitment note from the manufacturer: Comes with Finned Reservoir and Brackets.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 3.0 Performance w/ Remote Reservoir Shocks Rear Pair
+Item: Shock Absorber
+Position: Rear
+Quantity: 1
+Ride height: 0-2 in Lift
+Drivetrain: 4WD
+Part number: 33001-213
+
+Highlights
+
+3.0 Performance w/ Remote Reservoir Shocks Rear Pair
+Package Contains 2 Shocks
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3619,
+    createdAt: 1789430400000,
+    name: "Skyjacker Black MAX Hydro Shocks Set — 1961–1971 Dodge D200 Series RWD — B8558 / B8517",
+    category: "suspension",
+    brand: "skyjacker",
+    // shocksurplus listing price for SHS11SKY36582846851.
+    price: 249.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Skyjacker Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "B8558 (front) / B8517 (rear)",
+    fitment: "1961–1971 Dodge D200 Series RWD. 2WD only.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/skyjacker-black-max-shocks-set-1961-1971-dodge-d200-series-2wd",
+    thumbnail: "/product-media/suspension/skyjacker-black-max-hydro-shocks-set-b8558/1.webp",
+    images: ["/product-media/suspension/skyjacker-black-max-hydro-shocks-set-b8558/1.webp"],
+    description: `Skyjacker Black MAX Hydro Shocks Set for the 1961–1971 Dodge D200 Series RWD, package contains 4 shocks and 4 shock boots.
+
+Skyjacker have been building truck lift hardware since the 1970s, and their shocks are specified to work at the ride heights their own kits produce rather than at the factory height.
+
+Package Contains 4 Shocks and 4 Shock Boots. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — B8558 (front) / B8517 (rear).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Skyjacker
+Product: Black MAX Hydro Shocks Set
+Item: Shock Absorber
+Position: Front / Rear
+Quantity: 4
+Ride height: 0-2 in Lift
+Extended length: 24.94 in / 27.19 in
+Compressed length: 14.91 in / 16.16 in
+Travel: 10.03 in / 11.03 in
+Top mount: EYELET/SLEEVE
+Bottom mount: EYELET/SLEEVE
+Drivetrain: 2WD
+Part number: B8558 (front) / B8517 (rear)
+
+Highlights
+
+Black MAX Hydro Shocks Set
+Package Contains 4 Shocks and 4 Shock Boots
+2WD application
+Skyjacker Lifetime Warranty
+
+Warranty
+Skyjacker Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3620,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Spacer 5mm Wheel Spacer Kit — 1989–2006 Nissan Maxima FWD — S90-5-05-030",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBS90-5-05-030.
+    price: 115,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "S90-5-05-030",
+    fitment: "1989–2006 Nissan Maxima FWD. For vehicles with Bolt Pattern 5x114.3.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-spacer-5mm-wheel-spacer-kit-for-1989-2006-nissan-maxima-fwd-s90-5-05-030",
+    thumbnail: "/product-media/suspension/eibach-pro-spacer-5mm-wheel-spacer-kit-s90505030/1.webp",
+    images: ["/product-media/suspension/eibach-pro-spacer-5mm-wheel-spacer-kit-s90505030/1.webp"],
+    description: `Eibach Pro-Spacer 5mm Wheel Spacer Kit for the 1989–2006 Nissan Maxima FWD, package contains pro-spacer pair.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+Package Contains Pro-Spacer Pair. You'll get two wheel spacers. Part number S90-5-05-030.
+
+One fitment note from the manufacturer: For vehicles with Bolt Pattern 5x114.3.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Spacer 5mm Wheel Spacer Kit
+Item: Pro-Spacer 5mm Wheel Spacer Kit
+Quantity: 1
+Part number: S90-5-05-030
+
+Highlights
+
+Pro-Spacer 5mm Wheel Spacer Kit
+Package Contains Pro-Spacer Pair
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3621,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance Adjustable Shocks Rear Pair — 2018–2021 Mitsubishi Triton 4WD — 25001-318A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-318A.
+    price: 1439.25,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-318A",
+    fitment: "2018–2021 Mitsubishi Triton 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-adjustable-shocks-rear-pair-for-2018-2021-mitsubishi-triton-4wd",
+    thumbnail: "/product-media/suspension/king-shocks-2-5-performance-adjustable-shocks-rear-pair-25001318a/1.webp",
+    images: ["/product-media/suspension/king-shocks-2-5-performance-adjustable-shocks-rear-pair-25001318a/1.webp"],
+    description: `King Shocks 2.5 Performance Adjustable Shocks Rear Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 shocks.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 25001-318A.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 2.5 Performance Adjustable Shocks Rear Pair
+Item: Shock Absorber
+Position: Rear
+Quantity: 1
+Ride height: Factory
+Drivetrain: 4WD
+Part number: 25001-318A
+
+Highlights
+
+2.5 Performance Adjustable Shocks Rear Pair
+Package Contains 2 Shocks
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3622,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance Shocks Rear Pair — 2018–2021 Mitsubishi Triton 4WD — 25001-318",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-318.
+    price: 1072.55,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-318",
+    fitment: "2018–2021 Mitsubishi Triton 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-shocks-rear-pair-for-2018-2021-mitsubishi-triton-4wd",
+    thumbnail: "/product-media/suspension/king-shocks-2-5-performance-shocks-rear-pair-25001318/1.webp",
+    images: ["/product-media/suspension/king-shocks-2-5-performance-shocks-rear-pair-25001318/1.webp"],
+    description: `King Shocks 2.5 Performance Shocks Rear Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 shocks.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 25001-318.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 2.5 Performance Shocks Rear Pair
+Item: Shock Absorber
+Position: Rear
+Quantity: 1
+Ride height: Factory
+Drivetrain: 4WD
+Part number: 25001-318
+
+Highlights
+
+2.5 Performance Shocks Rear Pair
+Package Contains 2 Shocks
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3623,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance Coilovers Front Pair — 2018–2021 Mitsubishi Triton 4WD — 25001-317",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-317.
+    price: 1805,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-317",
+    fitment: "2018–2021 Mitsubishi Triton 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-coilovers-front-pair-for-2018-2021-mitsubishi-triton-4wd",
+    thumbnail: "/product-media/suspension/king-shocks-2-5-performance-coilovers-front-pair-25001317/1.webp",
+    images: ["/product-media/suspension/king-shocks-2-5-performance-coilovers-front-pair-25001317/1.webp"],
+    description: `King Shocks 2.5 Performance Coilovers Front Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 coilovers.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 2 coilovers. Pair of two coilover assemblies. Part number 25001-317.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 2.5 Performance Coilovers Front Pair
+Item: Strut & Spring
+Position: Front
+Quantity: 1
+Ride height: Factory
+Drivetrain: 4WD
+Part number: 25001-317
+
+Highlights
+
+2.5 Performance Coilovers Front Pair
+Package Contains 2 coilovers
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3624,
+    createdAt: 1789430400000,
+    name: "King Shocks 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair — 2018–2021 Mitsubishi Triton 4WD — 25001-317A",
+    category: "suspension",
+    brand: "king-shocks",
+    // shocksurplus listing price for KNG25001-317A.
+    price: 2172.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "King Shocks 90-Day Warranty",
+    location: "our supplier network",
+    partNumber: "25001-317A",
+    fitment: "2018–2021 Mitsubishi Triton 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-for-2018-2021-mitsubishi-triton-4wd",
+    thumbnail: "/product-media/suspension/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-25001317a/1.webp",
+    images: ["/product-media/suspension/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-25001317a/1.webp"],
+    description: `King Shocks 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 strut & spring assemblies.
+
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+
+Package Contains 2 Strut & Spring Assemblies. Pair of two coilovers. Part number 25001-317A.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: King Shocks
+Product: 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair
+Item: Strut & Spring
+Position: Front
+Quantity: 1
+Ride height: Factory
+Drivetrain: 4WD
+Part number: 25001-317A
+
+Highlights
+
+2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair
+Package Contains 2 Strut & Spring Assemblies
+4WD application
+King Shocks 90-Day Warranty
+
+Warranty
+King Shocks 90-Day Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3625,
+    createdAt: 1789430400000,
+    name: "Bilstein B12 Pro-Kit Suspension Kit — 2004–2010 Volkswagen Touareg AWD 30mm — 46-187901",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL46-187901.
+    price: 1488,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "46-187901",
+    fitment: "2004–2010 Volkswagen Touareg AWD 30mm.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b12-pro-kit-suspension-kit-46-187901",
+    thumbnail: "/product-media/suspension/bilstein-b12-pro-kit-suspension-kit-46187901/1.webp",
+    images: ["/product-media/suspension/bilstein-b12-pro-kit-suspension-kit-46187901/1.webp"],
+    description: `Bilstein B12 Pro-Kit Suspension Kit for the 2004–2010 Volkswagen Touareg AWD 30mm, package contains 4 shocks and 4 springs.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks and 4 Springs. Full set of four shocks and four matched coil springs. Part number 46-187901.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: B12 Pro-Kit Suspension Kit
+Item: B12 Pro-Kit Suspension Kit
+Position: Front and Rear
+Quantity: 1
+Ride height: 30mm Lowered
+Internal design: Monotube
+Finish: Dampers: Yellow/Springs: Dark Grey
+Part number: 46-187901
+
+Highlights
+
+B12 Pro-Kit Suspension Kit
+Package Contains 4 Shocks and 4 Springs
+Monotube design
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3626,
+    createdAt: 1789430400000,
+    name: "Bilstein B6 Performance Strut & Shocks Set — 2010–2014 Volkswagen GTI FWD — 35-158714 / 33-158723",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL86728031361.
+    price: 856,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "35-158714 (front) / 33-158723 (rear)",
+    fitment: "2010–2014 Volkswagen GTI FWD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b6-performance-strut-shocks-set-for-2010-2014-volkswagen-gti-fwd",
+    thumbnail: "/product-media/suspension/bilstein-b6-performance-strut-shocks-set-35158714/1.webp",
+    images: ["/product-media/suspension/bilstein-b6-performance-strut-shocks-set-35158714/1.webp"],
+    description: `Bilstein B6 Performance Strut & Shocks Set for the 2010–2014 Volkswagen GTI FWD, package contains 2 struts and 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Struts and 2 Shocks. Set of two front struts and two rear shocks. The front and rear carry different part numbers — 35-158714 (front) / 33-158723 (rear).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: B6 Performance Strut & Shocks Set
+Item: Strut / Shock Absorber
+Position: Front / Rear
+Quantity: 4
+Ride height: Factory
+Internal design: Monotube
+Extended length: 20.53 in / 25.2 in
+Compressed length: 16.71 in / 14.07 in
+Travel: 3.82 in / 11.13 in
+Top mount: STEM
+Bottom mount: CLEVIS / EYELET
+Finish: Yellow Paint
+Part number: 35-158714 (front) / 33-158723 (rear)
+
+Highlights
+
+B6 Performance Strut & Shocks Set
+Package Contains 2 Struts and 2 Shocks
+Monotube design
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3627,
+    createdAt: 1789430400000,
+    name: "Bilstein B6 Performance DampTronic Shocks Rear Pair — 2015–2019 Volkswagen Golf R AWD — 20-254353",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL86748809472.
+    price: 818,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "20-254353",
+    fitment: "2015–2019 Volkswagen Golf R AWD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b6-performance-damptronic-shocks-rear-pair-for-2015-2019-volkswagen-golf-r-awd",
+    thumbnail: "/product-media/suspension/bilstein-b6-performance-damptronic-shocks-rear-pair-20254353/1.webp",
+    images: ["/product-media/suspension/bilstein-b6-performance-damptronic-shocks-rear-pair-20254353/1.webp"],
+    description: `Bilstein B6 Performance DampTronic Shocks Rear Pair for the 2015–2019 Volkswagen Golf R AWD, package contains 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 20-254353.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: B6 Performance DampTronic Shocks Rear Pair
+Item: Shock Absorber
+Position: Rear
+Quantity: 2
+Ride height: Factory
+Internal design: Twintube
+Extended length: 24.82 in
+Compressed length: 15.87 in
+Travel: 8.95 in
+Top mount: STEM
+Bottom mount: EYELET
+Finish: Yellow Paint
+Part number: 20-254353
+
+Highlights
+
+B6 Performance DampTronic Shocks Rear Pair
+Package Contains 2 Shocks
+Twintube design
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3628,
+    createdAt: 1789430400000,
+    name: "Bilstein B6 Performance DampTronic Strut Front Pair — 2015–2019 Volkswagen Golf R AWD — 23-254343",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL86748844196.
+    price: 918,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "23-254343",
+    fitment: "2015–2019 Volkswagen Golf R AWD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b6-performance-damptronic-strut-front-pair-for-2015-2019-volkswagen-golf-r-awd",
+    thumbnail: "/product-media/suspension/bilstein-b6-performance-damptronic-strut-front-pair-23254343/1.webp",
+    images: ["/product-media/suspension/bilstein-b6-performance-damptronic-strut-front-pair-23254343/1.webp"],
+    description: `Bilstein B6 Performance DampTronic Strut Front Pair for the 2015–2019 Volkswagen Golf R AWD, package contains 2 struts.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Struts. Front pair of two struts. Part number 23-254343.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: B6 Performance DampTronic Strut Front Pair
+Item: Strut
+Position: Front
+Quantity: 2
+Ride height: Factory
+Internal design: Twintube
+Extended length: 21.67 in
+Compressed length: 14.65 in
+Travel: 7.02 in
+Top mount: STEM
+Bottom mount: SPECIAL
+Finish: Yellow Paint
+Part number: 23-254343
+
+Highlights
+
+B6 Performance DampTronic Strut Front Pair
+Package Contains 2 Struts
+Twintube design
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3629,
+    createdAt: 1789430400000,
+    name: "Bilstein B12 Pro-Kit Suspension Kit — 2007–2008 Volkswagen Passat AWD 30mm — 46-184443",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL46-184443.
+    price: 927,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "46-184443",
+    fitment: "2007–2008 Volkswagen Passat AWD 30mm.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b12-pro-kit-suspension-kit-for-2007-2008-volkswagen-passat-awd",
+    thumbnail: "/product-media/suspension/bilstein-b12-pro-kit-suspension-kit-46184443/1.webp",
+    images: ["/product-media/suspension/bilstein-b12-pro-kit-suspension-kit-46184443/1.webp"],
+    description: `Bilstein B12 Pro-Kit Suspension Kit for the 2007–2008 Volkswagen Passat AWD 30mm, package contains 4 shocks and 4 springs.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks and 4 Springs. Full set of four shocks and four matched coil springs. Part number 46-184443.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: B12 Pro-Kit Suspension Kit
+Item: B12 Pro-Kit Suspension Kit
+Position: Front and Rear
+Quantity: 1
+Ride height: 30mm Lowered
+Internal design: Monotube
+Finish: Dampers: Yellow/Springs: Dark Grey
+Part number: 46-184443
+
+Highlights
+
+B12 Pro-Kit Suspension Kit
+Package Contains 4 Shocks and 4 Springs
+Monotube design
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3630,
+    createdAt: 1789430400000,
+    name: "Bilstein B12 Pro-Kit Suspension Kit — 2009–2011 Volkswagen CC AWD 25mm — 46-184399",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for BIL46-184399.
+    price: 962,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "46-184399",
+    fitment: "2009–2011 Volkswagen CC AWD 25mm.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b12-pro-kit-suspension-kit-for-2009-2011-volkswagen-cc-awd",
+    thumbnail: "/product-media/suspension/bilstein-b12-pro-kit-suspension-kit-46184399/1.webp",
+    images: ["/product-media/suspension/bilstein-b12-pro-kit-suspension-kit-46184399/1.webp"],
+    description: `Bilstein B12 Pro-Kit Suspension Kit for the 2009–2011 Volkswagen CC AWD 25mm, package contains 4 shocks and 4 springs.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks and 4 Springs. Full set of four shocks and four matched coil springs. Part number 46-184399.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: B12 Pro-Kit Suspension Kit
+Item: B12 Pro-Kit Suspension Kit
+Position: Front and Rear
+Quantity: 1
+Ride height: 25mm Lowered
+Internal design: Monotube
+Finish: Dampers: Yellow/Springs: Dark Grey
+Part number: 46-184399
+
+Highlights
+
+B12 Pro-Kit Suspension Kit
+Package Contains 4 Shocks and 4 Springs
+Monotube design
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3631,
+    createdAt: 1789430400000,
+    name: "SuperSprings JBS Leveling Kit 2015–2026 Ford F-150 4WD — SuperSprings JBS Leveling Kit 2015–2026 Ford F-150 4WD — JBS-101-01",
+    category: "suspension",
+    brand: "supersprings",
+    // shocksurplus listing price for SSPJBS-101-01.
+    price: 855.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "SuperSprings Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "JBS-101-01",
+    fitment: "SuperSprings JBS Leveling Kit 2015–2026 Ford F-150 4WD. 4WD only. Excl. Raptor.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/supersprings-jbs-leveling-kit-for-2015-2023-ford-f150-4wd",
+    thumbnail: "/product-media/suspension/supersprings-jbs-leveling-kit-2015-2026-ford-f-150-4wd-jbs10101/1.webp",
+    images: ["/product-media/suspension/supersprings-jbs-leveling-kit-2015-2026-ford-f-150-4wd-jbs10101/1.webp"],
+    description: `SuperSprings JBS Leveling Kit 2015–2026 Ford F-150 4WD for the SuperSprings JBS Leveling Kit 2015–2026 Ford F-150 4WD.
+
+SuperSprings make load-carrying add-ons: self-adjusting helper springs that engage progressively as weight goes on, so an unladen truck rides as it did and a loaded one stops squatting.
+
+This listing covers JBS-101-01.
+
+One fitment note from the manufacturer: Excl. Raptor.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: SuperSprings
+Product: JBS Leveling Kit 2015–2026 Ford F-150 4WD
+Item: JBS Leveling Kit
+Position: Front & Rear
+Quantity: 1
+Ride height: Factory
+Drivetrain: 4WD
+Part number: JBS-101-01
+
+Highlights
+
+JBS Leveling Kit 2015–2026 Ford F-150 4WD
+4WD application
+SuperSprings Limited Lifetime Warranty
+
+Warranty
+SuperSprings Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3632,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2017–2024 Ford F250 Super Duty 4WD w/3.3 in lift — E80-35-034-01-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-35-034-01-22.
+    price: 930,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-35-034-01-22",
+    fitment: "2017–2024 Ford F250 Super Duty 4WD w/3.3 in lift. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2017-2022-ford-f250-super-duty-4wd-w-3-3-lift",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80350340122/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80350340122/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2017–2024 Ford F250 Super Duty 4WD w/3.3 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-35-034-01-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front
+Quantity: 1
+Ride height: 3.3 in Lift
+Drivetrain: 4WD
+Part number: E80-35-034-01-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+4WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3633,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2005–2016 Ford F250 Super Duty 4WD w/3-3.3 in lift — E80-35-033-02-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-35-033-02-22.
+    price: 930,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-35-033-02-22",
+    fitment: "2005–2016 Ford F250 Super Duty 4WD w/3-3.3 in lift. 4WD only. Includes Pro-Truck Lift Springs and Pro-Truck Sport Shocks.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2005-2022-ford-f250-super-duty-4wd-w-3-3-3-lift",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80350330222/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80350330222/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2005–2016 Ford F250 Super Duty 4WD w/3-3.3 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-35-033-02-22.
+
+One fitment note from the manufacturer: Includes Pro-Truck Lift Springs and Pro-Truck Sport Shocks.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front & Rear
+Quantity: 1
+Ride height: 3-3.3 in Lift
+Drivetrain: 4WD
+Part number: E80-35-033-02-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+4WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3634,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2014–2023 Ram 2500 4WD w/2.75 in lift — E80-27-006-03-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-27-006-03-22.
+    price: 1175,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-27-006-03-22",
+    fitment: "2014–2023 Ram 2500 4WD w/2.75 in lift. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2014-2021-ram-2500-4wd-w-2-75-lift",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270060322/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270060322/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2014–2023 Ram 2500 4WD w/2.75 in lift, package contains complete system.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+Package Contains Complete System. You'll get shocks all around and front springs. Part number E80-27-006-03-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front & Rear
+Quantity: 1
+Ride height: 2.75 in Lift
+Drivetrain: 4WD
+Part number: E80-27-006-03-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+Package Contains Complete System
+4WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3635,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2014–2023 Ram 2500 4WD w/2.5 in lift — E80-27-006-01-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-27-006-01-22.
+    price: 930,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-27-006-01-22",
+    fitment: "2014–2023 Ram 2500 4WD w/2.5 in lift. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2014-2019-ram-2500-4wd-w-2-5-lift-e80-27-006-01-22",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270060122/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270060122/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2014–2023 Ram 2500 4WD w/2.5 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-27-006-01-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front & Rear
+Quantity: 1
+Ride height: 2.5 in Lift
+Drivetrain: 4WD
+Part number: E80-27-006-01-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+4WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3636,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2003–2010 Dodge Ram 2500 4WD w/2.75 in lift — E80-27-005-03-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-27-005-03-22.
+    price: 930,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-27-005-03-22",
+    fitment: "2003–2010 Dodge Ram 2500 4WD w/2.75 in lift. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2003-2009-dodge-ram-2500-4wd-w-2-75-lift-e80-27-005-03-22",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270050322/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270050322/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2003–2010 Dodge Ram 2500 4WD w/2.75 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-27-005-03-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front & Rear
+Quantity: 1
+Ride height: 2.75 in Lift
+Drivetrain: 4WD
+Part number: E80-27-005-03-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+4WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3637,
+    createdAt: 1789430400000,
+    name: "Icon Vehicle Dynamics Icon 2.5 in Lift Block Kit — 2003–2012 Dodge Ram 2500 4WD — 211205",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD211205.
+    price: 148.19,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "211205",
+    fitment: "2003–2012 Dodge Ram 2500 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-2-5-lift-block-kit-for-2003-2012-dodge-ram-2500-4wd",
+    thumbnail: "/product-media/suspension/icon-vehicle-dynamics-icon-2-5-in-lift-block-kit-211205/1.webp",
+    images: ["/product-media/suspension/icon-vehicle-dynamics-icon-2-5-in-lift-block-kit-211205/1.webp"],
+    description: `Icon Vehicle Dynamics Icon 2.5 in Lift Block Kit for the 2003–2012 Dodge Ram 2500 4WD.
+
+ICON build vehicle-specific damping rather than one universal valving curve, so a part is tuned around the weight and geometry of the truck it is sold for. Their larger-bodied dampers carry more piston area and more oil than a factory unit, which is what holds damping consistent once the shock is hot.
+
+This listing covers 211205.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Icon 2.5 in Lift Block Kit
+Item: 2.5 in Lift Block Kit
+Position: Rear
+Quantity: 1
+Ride height: Factory
+Part number: 211205
+
+Highlights
+
+Icon 2.5 in Lift Block Kit
+Manufacturer Warranty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3638,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2013–2022 Ram 3500 4WD w/2.5 in lift — E80-27-006-02-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-27-006-02-22.
+    price: 930,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-27-006-02-22",
+    fitment: "2013–2022 Ram 3500 4WD w/2.5 in lift. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2013-2018-ram-3500-4wd-w-2-5-lift-e80-27-006-02-22",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270060222/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80270060222/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2013–2022 Ram 3500 4WD w/2.5 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-27-006-02-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front
+Quantity: 1
+Ride height: 2.5 in Lift
+Drivetrain: 4WD
+Part number: E80-27-006-02-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+4WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3639,
+    createdAt: 1789430400000,
+    name: "Icon Vehicle Dynamics Icon 1 in Cast Lift Block Kit — 2003–2012 Ram 3500 4WD — 211200",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD211200.
+    price: 111.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "211200",
+    fitment: "2003–2012 Ram 3500 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-1-cast-lift-block-kit-for-2003-2012-ram-3500-4wd-211200",
+    thumbnail: "/product-media/suspension/icon-vehicle-dynamics-icon-1-in-cast-lift-block-kit-211200/1.webp",
+    images: ["/product-media/suspension/icon-vehicle-dynamics-icon-1-in-cast-lift-block-kit-211200/1.webp"],
+    description: `Icon Vehicle Dynamics Icon 1 in Cast Lift Block Kit for the 2003–2012 Ram 3500 4WD.
+
+ICON build vehicle-specific damping rather than one universal valving curve, so a part is tuned around the weight and geometry of the truck it is sold for. Their larger-bodied dampers carry more piston area and more oil than a factory unit, which is what holds damping consistent once the shock is hot.
+
+This listing covers 211200.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Icon 1 in Cast Lift Block Kit
+Item: 1 in Cast Lift Block Kit
+Position: Rear
+Quantity: 1
+Ride height: Factory
+Part number: 211200
+
+Highlights
+
+Icon 1 in Cast Lift Block Kit
+Manufacturer Warranty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3640,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2014–2018 Chevrolet Silverado 1500 4WD RWD w/2.5 in lift — E80-23-006-02-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-23-006-02-22.
+    price: 899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-23-006-02-22",
+    fitment: "2014–2018 Chevrolet Silverado 1500 4WD RWD w/2.5 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2014-2018-chevrolet-silverado-1500-4wd-rwd-w-2-5-lift-e80-23-006-02-22",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80230060222/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80230060222/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2014–2018 Chevrolet Silverado 1500 4WD RWD w/2.5 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-23-006-02-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front & Rear
+Quantity: 1
+Ride height: 2.5 in Lift
+Part number: E80-23-006-02-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3641,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2019–2024 Chevrolet Silverado 1500 4WD w/1.2-1.9 in lift — E80-23-032-01-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-23-032-01-22.
+    price: 910,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-23-032-01-22",
+    fitment: "2019–2024 Chevrolet Silverado 1500 4WD w/1.2-1.9 in lift. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2019-2021-chevrolet-silverado-1500-4wd-w-1-2-1-9-lift",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80230320122/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80230320122/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2019–2024 Chevrolet Silverado 1500 4WD w/1.2-1.9 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-23-032-01-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Position: Front & Rear
+Quantity: 1
+Ride height: 1.2-1.9 in Lift
+Drivetrain: 4WD
+Part number: E80-23-032-01-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+4WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3642,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Rear 1 in Lift Block Kit — 2019–2024 Chevrolet Silverado 1500 w/1 in lift — LB81-23-032-01-02",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBLB81-23-032-01-02.
+    price: 155,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "LB81-23-032-01-02",
+    fitment: "2019–2024 Chevrolet Silverado 1500 w/1 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-rear-1-lift-block-kit-for-2019-2021-chevrolet-silverado-1500-w-1-lift",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-rear-1-in-lift-block-kit-lb81230320102/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-rear-1-in-lift-block-kit-lb81230320102/1.webp"],
+    description: `Eibach Pro-Truck Rear 1 in Lift Block Kit for the 2019–2024 Chevrolet Silverado 1500 w/1 in lift, package contains pro-truck lift blocks.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+Package Contains Pro-Truck Lift Blocks. You'll get a pair of 1.0" rear lift blocks, u-bolts, and requisite installation hardware. Part number LB81-23-032-01-02.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Rear 1 in Lift Block Kit
+Item: Pro-Truck Rear 1 in Lift Block
+Quantity: 1
+Part number: LB81-23-032-01-02
+
+Highlights
+
+Pro-Truck Rear 1 in Lift Block Kit
+Package Contains Pro-Truck Lift Blocks
+Manufacturer Warranty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3643,
+    createdAt: 1789430400000,
+    name: "Icon Vehicle Dynamics Icon 1 in Cast Lift Block Kit — 2022 Chevrolet Silverado 1500 LTD — 51001",
+    category: "suspension",
+    brand: "icon-vehicle-dynamics",
+    // shocksurplus listing price for IVD51001.
+    price: 76.25,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "51001",
+    fitment: "2022 Chevrolet Silverado 1500 LTD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/icon-1-cast-lift-block-kit-for-2022-chevrolet-silverado-1500-ltd",
+    thumbnail: "/product-media/suspension/icon-vehicle-dynamics-icon-1-in-cast-lift-block-kit-51001/1.webp",
+    images: ["/product-media/suspension/icon-vehicle-dynamics-icon-1-in-cast-lift-block-kit-51001/1.webp"],
+    description: `Icon Vehicle Dynamics Icon 1 in Cast Lift Block Kit for the 2022 Chevrolet Silverado 1500 LTD.
+
+ICON build vehicle-specific damping rather than one universal valving curve, so a part is tuned around the weight and geometry of the truck it is sold for. Their larger-bodied dampers carry more piston area and more oil than a factory unit, which is what holds damping consistent once the shock is hot.
+
+This listing covers 51001.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Icon Vehicle Dynamics
+Product: Icon 1 in Cast Lift Block Kit
+Item: 1 in Cast Lift Block Kit
+Position: Rear
+Quantity: 1
+Ride height: Factory
+Part number: 51001
+
+Highlights
+
+Icon 1 in Cast Lift Block Kit
+Manufacturer Warranty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3644,
+    createdAt: 1789430400000,
+    name: "Eibach Pro-Truck Lift System Stage 1 Kit — 2019–2024 Chevrolet Silverado 1500 RWD w/2.4 in lift — E80-23-032-02-22",
+    category: "suspension",
+    brand: "eibach",
+    // shocksurplus listing price for EIBE80-23-032-02-22.
+    price: 910,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Eibach Million Mile Warranty",
+    location: "our supplier network",
+    partNumber: "E80-23-032-02-22",
+    fitment: "2019–2024 Chevrolet Silverado 1500 RWD w/2.4 in lift. 2WD only.",
+    drivetrain: "2WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/eibach-pro-truck-lift-system-stage-1-kit-for-2019-2021-chevrolet-silverado-1500-rwd-w-2-4-lift",
+    thumbnail: "/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80230320222/1.webp",
+    images: ["/product-media/suspension/eibach-pro-truck-lift-system-stage-1-kit-e80230320222/1.webp"],
+    description: `Eibach Pro-Truck Lift System Stage 1 Kit for the 2019–2024 Chevrolet Silverado 1500 RWD w/2.4 in lift.
+
+Eibach is a spring maker first. Their truck systems are built around spring rates chosen for the vehicle's actual front-end weight, with the damping matched to those rates rather than specified separately — which is why a spring and a shock from the same kit behave better together than two good parts chosen apart.
+
+This listing covers E80-23-032-02-22.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Eibach
+Product: Pro-Truck Lift System Stage 1 Kit
+Item: Pro-Truck Lift System Stage 1
+Quantity: 1
+Drivetrain: 2WD
+Part number: E80-23-032-02-22
+
+Highlights
+
+Pro-Truck Lift System Stage 1 Kit
+2WD application
+Eibach Million Mile Warranty
+
+Warranty
+Eibach Million Mile Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3645,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Shocks Set w/0-2.1 in lift 2015–2020 Ford F-150 4WD — Bilstein 5100 Shocks Set w/0-2.1 in lift 2015–2020 Ford F-150 4WD — 33-253190 / 24-336970",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS11BIL36686411486.
+    price: 568.1,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "33-253190 (rear) / 24-336970 (front)",
+    fitment: "Bilstein 5100 Shocks Set w/0-2.1 in lift 2015–2020 Ford F-150 4WD. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b8-5100-monotube-gas-adjustable-shocks-set-for-2015-2019-ford-f150-4wd-w-0-2-1-lift",
+    thumbnail: "/product-media/suspension/bilstein-5100-shocks-set-w-0-2-1-in-lift-2015-2020-ford-f-150-4wd-33253190/1.webp",
+    images: ["/product-media/suspension/bilstein-5100-shocks-set-w-0-2-1-in-lift-2015-2020-ford-f-150-4wd-33253190/1.webp"],
+    description: `Bilstein 5100 Shocks Set w/0-2.1 in lift 2015–2020 Ford F-150 4WD for the Bilstein 5100 Shocks Set w/0-2.1 in lift 2015–2020 Ford F-150 4WD, package contains 2 struts and 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Struts and 2 Shocks. Set of two front struts and two rear shocks. The front and rear carry different part numbers — 33-253190 (rear) / 24-336970 (front).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 5100 Shocks Set w/0-2.1 in lift 2015–2020 Ford F-150 4WD
+Item: Shock Absorber
+Position: Rear / Front
+Quantity: 4
+Ride height: 0-1 in Lift / 0-2.1 in Lift
+Internal design: Monotube
+Extended length: 28.74 in / 22.46 in
+Compressed length: 17.52 in / 16.91 in
+Travel: 11.22 in / 5.55 in
+Top mount: EYELET / STEM
+Bottom mount: EYELET / BARPIN
+Reservoir: No
+Finish: Zinc Plated
+Drivetrain: 4WD
+Part number: 33-253190 (rear) / 24-336970 (front)
+
+Highlights
+
+5100 Shocks Set w/0-2.1 in lift 2015–2020 Ford F-150 4WD
+Package Contains 2 Struts and 2 Shocks
+Monotube design
+4WD application
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3646,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Monotube Shocks Rear Pair — 2014–2018 Ram 2500 4WD w/o Air leveling — 24-239455",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS11BIL36577543079.
+    price: 246,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-239455",
+    fitment: "2014–2018 Ram 2500 4WD w/o Air leveling. 4WD only.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-5100-monotube-shocks-rear-pair-for-2014-2018-ram-2500-4wd-w-o-air-leveling",
+    thumbnail: "/product-media/suspension/bilstein-5100-monotube-shocks-rear-pair-24239455/1.webp",
+    images: ["/product-media/suspension/bilstein-5100-monotube-shocks-rear-pair-24239455/1.webp"],
+    description: `Bilstein 5100 Monotube Shocks Rear Pair for the 2014–2018 Ram 2500 4WD w/o Air leveling, package contains 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 24-239455.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 5100 Monotube Shocks Rear Pair
+Item: Shock Absorber
+Position: Rear
+Quantity: 2
+Ride height: 0-1 in Lift
+Internal design: Monotube
+Extended length: 24.96 in
+Compressed length: 16.75 in
+Travel: 8.21 in
+Top mount: STEM
+Bottom mount: EYELET
+Reservoir: No
+Finish: Zinc Plated
+Drivetrain: 4WD
+Part number: 24-239455
+
+Highlights
+
+5100 Monotube Shocks Rear Pair
+Package Contains 2 Shocks
+Monotube design
+4WD application
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3647,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Monotube Strut & Shocks Set — 2019–2024 Chevrolet Silverado 1500 4WD RWD w/0-2.5 in lift — 24-293471 / 24-337052",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL56690689490.
+    price: 577.6,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-293471 (rear) / 24-337052 (front)",
+    fitment: "2019–2024 Chevrolet Silverado 1500 4WD RWD w/0-2.5 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b8-5100-monotube-shocks-set-for-2019-2022-chevrolet-silverado-1500-4wd-rwd-w-0-2-5-lift",
+    thumbnail: "/product-media/suspension/bilstein-5100-monotube-strut-shocks-set-24293471/1.webp",
+    images: ["/product-media/suspension/bilstein-5100-monotube-strut-shocks-set-24293471/1.webp"],
+    description: `Bilstein 5100 Monotube Strut & Shocks Set for the 2019–2024 Chevrolet Silverado 1500 4WD RWD w/0-2.5 in lift, package contains 2 struts and 2 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Struts and 2 Shocks. Set of two front struts and two rear shocks. The front and rear carry different part numbers — 24-293471 (rear) / 24-337052 (front).
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 5100 Monotube Strut & Shocks Set
+Item: Shock Absorber
+Position: Rear / Front
+Quantity: 4
+Ride height: 0-1 in Lift / 0-2.5 in Lift
+Part number: 24-293471 (rear) / 24-337052 (front)
+
+Highlights
+
+5100 Monotube Strut & Shocks Set
+Package Contains 2 Struts and 2 Shocks
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3648,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Shocks Set — 1999–2006 Chevrolet Silverado 1500 4WD w/2-2.5 in lift w/Torsion — 24-186742 / 24-186643",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS11BIL36577424859.
+    price: 467.4,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-186742 (rear) / 24-186643 (front)",
+    fitment: "1999–2006 Chevrolet Silverado 1500 4WD w/2-2.5 in lift w/Torsion. 4WD only. Excludes HD models. Fits vehicles with torsion Key Lift ONLY.",
+    drivetrain: "4WD",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-5100-monotube-gas-shocks-set-1999-2006-chevrolet-silverado-1500-4wd-w-torsion",
+    thumbnail: "/product-media/suspension/bilstein-5100-shocks-set-24186742/1.webp",
+    images: ["/product-media/suspension/bilstein-5100-shocks-set-24186742/1.webp"],
+    description: `Bilstein 5100 Shocks Set for the 1999–2006 Chevrolet Silverado 1500 4WD w/2-2.5 in lift w/Torsion, package contains 4 shocks.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 24-186742 (rear) / 24-186643 (front).
+
+One fitment note from the manufacturer: Excludes HD models. Fits vehicles with torsion Key Lift ONLY.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 5100 Shocks Set
+Item: Shock Absorber
+Position: Rear / Front
+Quantity: 4
+Ride height: 0-1 in Lift / 2-2.5 in Lift
+Internal design: Monotube
+Extended length: 26.15 in / 16.3 in
+Compressed length: 16.14 in / 12.54 in
+Travel: 10.01 in / 3.76 in
+Top mount: EYELET / STEM
+Bottom mount: EYELET / CLEVIS
+Reservoir: No
+Finish: Zinc Plated
+Drivetrain: 4WD
+Part number: 24-186742 (rear) / 24-186643 (front)
+
+Highlights
+
+5100 Shocks Set
+Package Contains 4 Shocks
+Monotube design
+4WD application
+
+Warranty
+Bilstein Limited Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3649,
+    createdAt: 1789430400000,
+    name: "Bilstein 5100 Monotube Adjustable Strut Front Pair — 2019–2024 Chevrolet Silverado 1500 4WD RWD w/0-2.5 in lift — 24-337052",
+    category: "suspension",
+    brand: "bilstein",
+    // shocksurplus listing price for SHS13BIL76674443162.
+    price: 362,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Bilstein Limited Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "24-337052",
+    fitment: "2019–2024 Chevrolet Silverado 1500 4WD RWD w/0-2.5 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.shocksurplus.com/products/bilstein-b8-5100-monotube-adjustable-shocks-front-pair-for-2019-2021-chevrolet-silverado-1500-4wd-rwd",
+    thumbnail: "/product-media/suspension/bilstein-5100-monotube-adjustable-strut-front-pair-24337052/1.webp",
+    images: ["/product-media/suspension/bilstein-5100-monotube-adjustable-strut-front-pair-24337052/1.webp"],
+    description: `Bilstein 5100 Monotube Adjustable Strut Front Pair for the 2019–2024 Chevrolet Silverado 1500 4WD RWD w/0-2.5 in lift, package contains 2 struts.
+
+Bilstein builds monotube gas dampers: one tube carries the oil, and a floating piston separates it from a nitrogen charge. That layout resists the foaming that fades a twin-tube damper on a long corrugated road, and it sheds heat better because the oil sits against the outer wall.
+
+Package Contains 2 Struts. Front pair of two struts. Part number 24-337052.
+
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+
+Specifications
+
+Manufacturer: Bilstein
+Product: 5100 Monotube Adjustable Strut Front Pair
+Item: Shock Absorber
+Position: Front
+Quantity: 2
+Ride height: 0-2.5 in Lift
+Part number: 24-337052
+
+Highlights
+
+5100 Monotube Adjustable Strut Front Pair
+Package Contains 2 Struts
+Bilstein Limited Lifetime Warranty
+
+Warranty
+Bilstein Limited Lifetime Warranty
 
 Shipping
 Worldwide Shipping Available`,
