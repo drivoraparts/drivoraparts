@@ -30,6 +30,7 @@ import { canopyProducts } from "./canopy-products";
 import { classicEuroProducts } from "./classic-euro-products";
 import { jdmEuroBrakeKitsProducts } from "./jdm-euro-brake-kits-products";
 import { performanceWheelsProducts } from "./performance-wheels-products";
+import { marketExpansionProducts } from "./market-expansion-products";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
 import { applyAdminCatalog } from "./apply-admin-catalog";
@@ -57,6 +58,7 @@ const extensionProducts: Product[] = [
   ...classicEuroProducts,
   ...jdmEuroBrakeKitsProducts,
   ...performanceWheelsProducts,
+  ...marketExpansionProducts,
 ];
 
 const productCatalog: Product[] = [

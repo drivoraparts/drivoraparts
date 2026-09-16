@@ -43,6 +43,13 @@ export const brands: Brand[] = [
   { slug: "alliant-power", name: "Alliant Power", category: "engine" },
   { slug: "alliant-power", name: "Alliant Power", category: "electronics" },
   { slug: "mishimoto", name: "Mishimoto", category: "engine" },
+  // Market expansion (2026-09): brands added for the USA and Australia listings.
+  { slug: "s-and-b", name: "S&B Filters", category: "engine" },
+  { slug: "bd-diesel", name: "BD Diesel", category: "engine" },
+  { slug: "bosch", name: "Bosch", category: "engine" },
+  { slug: "industrial-injection", name: "Industrial Injection", category: "engine" },
+  { slug: "csf", name: "CSF Radiators", category: "engine" },
+  { slug: "banks-power", name: "Banks Power", category: "engine" },
 
   // Turbocharger
   { slug: "garrett", name: "Garrett", category: "turbocharger" },
@@ -53,6 +60,10 @@ export const brands: Brand[] = [
   { slug: "audi", name: "Audi", category: "turbocharger" },
   { slug: "bmw", name: "BMW", category: "turbocharger" },
   { slug: "universal", name: "Universal", category: "turbocharger" },
+  // Market expansion (2026-09): brands added for the USA and Australia listings.
+  { slug: "bd-diesel", name: "BD Diesel", category: "turbocharger" },
+  { slug: "holset", name: "Holset", category: "turbocharger" },
+  { slug: "industrial-injection", name: "Industrial Injection", category: "turbocharger" },
 
   // Transmission
   { slug: "zf", name: "ZF", category: "transmission" },
@@ -99,6 +110,9 @@ export const brands: Brand[] = [
   { slug: "ford", name: "Ford", category: "bumper" },
   { slug: "nissan", name: "Nissan", category: "bumper" },
   { slug: "roo-riders", name: "Roo Riders", category: "bumper" },
+  // Market expansion (2026-09): brands added for the USA and Australia listings.
+  { slug: "dobinsons", name: "Dobinsons", category: "bumper" },
+  { slug: "westin", name: "Westin", category: "bumper" },
 
   // Canopies
   { slug: "arb", name: "ARB", category: "canopy" },
@@ -140,6 +154,11 @@ export const brands: Brand[] = [
   { slug: "king-shocks", name: "King Shocks", category: "suspension" },
   { slug: "ironman-4x4", name: "Ironman 4x4", category: "suspension" },
   { slug: "tough-dog", name: "Tough Dog", category: "suspension" },
+  // Market expansion (2026-09): brands added for the USA and Australia listings.
+  { slug: "air-lift", name: "Air Lift", category: "suspension" },
+  { slug: "icon-vehicle-dynamics", name: "ICON Vehicle Dynamics", category: "suspension" },
+  { slug: "emf", name: "EMF Ball Joints", category: "suspension" },
+  { slug: "dynatrac", name: "Dynatrac", category: "suspension" },
 
   // Electronics
   // OBS 7.3 Power Stroke sensors carry Ford / Motorcraft part numbers.
@@ -178,6 +197,8 @@ export const brands: Brand[] = [
   { slug: "porsche", name: "Porsche", category: "lighting" },
   { slug: "mars-performance", name: "Mars Performance", category: "lighting" },
   { slug: "universal", name: "Universal", category: "lighting" },
+  // Market expansion (2026-09): brands added for the USA and Australia listings.
+  { slug: "arb", name: "ARB", category: "lighting" },
 
   // Body Parts
   { slug: "bmw", name: "BMW", category: "body-parts" },
@@ -212,6 +233,9 @@ export const brands: Brand[] = [
   { slug: "front-runner", name: "Front Runner", category: "4x4-accessories" },
   { slug: "rola", name: "Rola", category: "4x4-accessories" },
   { slug: "volkswagen", name: "Volkswagen", category: "4x4-accessories" },
+  // Market expansion (2026-09): brands added for the USA and Australia listings.
+  { slug: "warn", name: "WARN", category: "4x4-accessories" },
+  { slug: "maxtrax", name: "MAXTRAX", category: "4x4-accessories" },
 
   // Aftermarket
   { slug: "ford", name: "Ford", category: "aftermarket" },
