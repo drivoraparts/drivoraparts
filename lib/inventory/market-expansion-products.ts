@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   844 listings added 2026-09-15 from manufacturer and
+   1023 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -43000,6 +43000,9412 @@ Classic RC1 design
 Race-proven diamond mesh
 Airflow-conscious pattern
 Royalty Core
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2989,
+    createdAt: 1789430400000,
+    name: "Synergy Manufacturing Adjustable Front Track Bar — 2005–2016 F-250 / F-350 and 2005 onward F-450 Ford Super Duty — 7675-01",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-7675-01.
+    price: 500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7675-01",
+    fitment: "2005–2016 Ford F-250 and F-350 Super Duty, and 2005 onward F-450. 4x4.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synergy-manufacturing-adjustable-front-track-bar-05-22-ford-f250f350f450f550",
+    thumbnail: "/product-media/suspension/synergy-adjustable-front-track-bar-7675-01/1.webp",
+    images: ["/product-media/suspension/synergy-adjustable-front-track-bar-7675-01/1.webp"],
+    description: `Synergy Manufacturing heavy-duty adjustable front track bar for the 2005–2016 F-250 / F-350 and 2005 onward F-450 Ford Super Duty.
+
+The track bar is what stops the front axle moving side to side under the truck. Lift it and the bar's geometry changes, which pushes the axle off centre — the visible symptom is a wheel sitting closer to one guard than the other, and the felt one is steering that wanders.
+
+This bar is adjustable, so the axle can be brought back to centre after a lift rather than left where the factory geometry put it.
+
+It is also considerably stronger than the standard bar in lateral stiffness, which matters on oversized tyres where the loads through it go up sharply.
+
+Synergy split this part by model year — this is the 2005–2016 F-250 / F-350 and 2005 onward F-450 version.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: Adjustable front track bar
+Adjustment: Re-centres the axle after a lift
+Construction: Heavy duty, increased lateral stiffness over stock
+Application: 2005–2016 F-250 / F-350 and 2005 onward F-450 Ford Super Duty
+Part number: 7675-01
+
+Highlights
+
+Re-centres the axle after a lift
+Much stiffer laterally than stock
+Adjustable length
+Synergy Manufacturing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2990,
+    createdAt: 1789430400000,
+    name: "Synergy Manufacturing Adjustable Front Track Bar — 2017 onward F-250 / F-350 Ford Super Duty — 7675-02",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-7675-02.
+    price: 500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7675-02",
+    fitment: "2017 onward Ford F-250 and F-350 Super Duty. 4x4.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synergy-manufacturing-adjustable-front-track-bar-05-22-ford-f250f350f450f550",
+    thumbnail: "/product-media/suspension/synergy-adjustable-front-track-bar-7675-02/1.webp",
+    images: ["/product-media/suspension/synergy-adjustable-front-track-bar-7675-02/1.webp"],
+    description: `Synergy Manufacturing heavy-duty adjustable front track bar for the 2017 onward F-250 / F-350 Ford Super Duty.
+
+The track bar is what stops the front axle moving side to side under the truck. Lift it and the bar's geometry changes, which pushes the axle off centre — the visible symptom is a wheel sitting closer to one guard than the other, and the felt one is steering that wanders.
+
+This bar is adjustable, so the axle can be brought back to centre after a lift rather than left where the factory geometry put it.
+
+It is also considerably stronger than the standard bar in lateral stiffness, which matters on oversized tyres where the loads through it go up sharply.
+
+Synergy split this part by model year — this is the 2017 onward F-250 / F-350 version.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: Adjustable front track bar
+Adjustment: Re-centres the axle after a lift
+Construction: Heavy duty, increased lateral stiffness over stock
+Application: 2017 onward F-250 / F-350 Ford Super Duty
+Part number: 7675-02
+
+Highlights
+
+Re-centres the axle after a lift
+Much stiffer laterally than stock
+Adjustable length
+Synergy Manufacturing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2991,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, No steering stabiliser — 2005–2025 Ford F-250 / F-350 — 8625-00",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-00.
+    price: 1100,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-00",
+    fitment: "2005–2025 Ford F-250 and F-350 Super Duty. This is the configuration without steering stabiliser.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-00/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-00/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit without steering stabiliser for the 2005–2025 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+This is the kit on its own, for a truck that already runs an upgraded stabiliser or is heading for a custom setup.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: No steering stabiliser
+Years: 2005–2025
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-00
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+No steering stabiliser
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2992,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Single FOX steering stabiliser — 2005–2007 Ford F-250 / F-350 — 8625-02",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-02.
+    price: 1340,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-02",
+    fitment: "2005–2007 Ford F-250 and F-350 Super Duty. This is the configuration with a single FOX steering stabiliser.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-02/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-02/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with a single FOX steering stabiliser for the 2005–2007 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+The FOX stabiliser here is tuned for the early Super Duty steering geometry, to take shimmy out and improve on-centre feel.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With a single FOX steering stabiliser
+Years: 2005–2007
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-02
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With a single FOX steering stabiliser
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2993,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Single FOX steering stabiliser — 2008–2025 Ford F-250 / F-350 — 8625-01",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-01.
+    price: 1340,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-01",
+    fitment: "2008–2025 Ford F-250 and F-350 Super Duty. This is the configuration with a single FOX steering stabiliser.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-01/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-01/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with a single FOX steering stabiliser for the 2008–2025 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+The FOX stabiliser here is matched to the later trucks, which carry more front-end weight and a revised geometry.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With a single FOX steering stabiliser
+Years: 2008–2025
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-01
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With a single FOX steering stabiliser
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2994,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Single KING steering stabiliser — 2005–2007 Ford F-250 / F-350 — 8625-04",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-04.
+    price: 1500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-04",
+    fitment: "2005–2007 Ford F-250 and F-350 Super Duty. This is the configuration with a single KING steering stabiliser.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-04/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-04/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with a single KING steering stabiliser for the 2005–2007 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+KING damping is the premium option for the early trucks — more control and more durability than the FOX equivalent.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With a single KING steering stabiliser
+Years: 2005–2007
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-04
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With a single KING steering stabiliser
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2995,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Single KING steering stabiliser — 2008–2025 Ford F-250 / F-350 — 8625-03",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-03.
+    price: 1500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-03",
+    fitment: "2008–2025 Ford F-250 and F-350 Super Duty. This is the configuration with a single KING steering stabiliser.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-03/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-03/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with a single KING steering stabiliser for the 2008–2025 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+KING damping for the later trucks, for owners who want the most steering stability available in a single-stabiliser setup.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With a single KING steering stabiliser
+Years: 2008–2025
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-03
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With a single KING steering stabiliser
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2996,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Single tie-rod-mount FOX steering stabiliser — 2005–2022 Ford F-250 / F-350 — 8625-05",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-05.
+    price: 1565,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-05",
+    fitment: "2005–2022 Ford F-250 and F-350 Super Duty. This is the configuration with a single tie-rod-mount FOX steering stabiliser.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-05/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-05/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with a single tie-rod-mount FOX steering stabiliser for the 2005–2022 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+Mounting the stabiliser to the tie rod rather than the axle improves response and simplifies packaging around the front end.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With a single tie-rod-mount FOX steering stabiliser
+Years: 2005–2022
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-05
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With a single tie-rod-mount FOX steering stabiliser
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2997,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Single tie-rod-mount KING steering stabiliser — 2005–2022 Ford F-250 / F-350 — 8625-06",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-06.
+    price: 1685,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-06",
+    fitment: "2005–2022 Ford F-250 and F-350 Super Duty. This is the configuration with a single tie-rod-mount KING steering stabiliser.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-06/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-06/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with a single tie-rod-mount KING steering stabiliser for the 2005–2022 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+Race-proven KING damping mounted directly to the tie rod, for maximum steering control.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With a single tie-rod-mount KING steering stabiliser
+Years: 2005–2022
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-06
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With a single tie-rod-mount KING steering stabiliser
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2998,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Dual FOX steering stabilisers — 2005–2025 Ford F-250 / F-350 — 8625-07",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-07.
+    price: 2040,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-07",
+    fitment: "2005–2025 Ford F-250 and F-350 Super Duty. This is the configuration with dual FOX steering stabilisers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-07/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-07/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with dual FOX steering stabilisers for the 2005–2025 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+A balanced dual-stabiliser setup, aimed at aggressive tyres, lifted trucks and heavy off-road use.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With dual FOX steering stabilisers
+Years: 2005–2025
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-07
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With dual FOX steering stabilisers
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2999,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Steering Kit, Dual KING steering stabilisers — 2005–2025 Ford F-250 / F-350 — 8625-08",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8625-08.
+    price: 2280,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8625-08",
+    fitment: "2005–2025 Ford F-250 and F-350 Super Duty. This is the configuration with dual KING steering stabilisers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-heavy-duty-steering-kit-05-25-ford-f-250-f-350",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-steering-kit-8625-08/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-steering-kit-8625-08/1.webp"],
+    description: `Synergy Manufacturing heavy-duty steering kit with dual KING steering stabilisers for the 2005–2025 Ford F-250 / F-350.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+
+The top dual-stabiliser configuration in the range.
+
+Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Tie rods: 1.75 in heat-treated 4130 chromoly
+Drag link: 1.5 in 1026 DOM
+Configuration: With dual KING steering stabilisers
+Years: 2005–2025
+Application: Ford F-250 / F-350 Super Duty
+Part number: 8625-08
+
+Highlights
+
+1.75 in 4130 chromoly tie rods
+1.5 in 1026 DOM drag link
+Much less deflection under load
+With dual KING steering stabilisers
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3000,
+    createdAt: 1789430400000,
+    name: "Synergy Single Stabiliser Tie Rod Mount Kit, With a Synergy-tuned FOX steering stabiliser — 2005–2022 Ford F-250 / F-350 Super Duty — 8603-04",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8603-04.
+    price: 425,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8603-04",
+    fitment: "2005–2022 Ford F-250 and F-350 Super Duty. Supplied with a Synergy-tuned FOX steering stabiliser.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-single-stabilizer-tie-rod-mount-kit-05-22-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8603-04/1.webp",
+    images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8603-04/1.webp"],
+    description: `Synergy steering stabiliser tie-rod relocation kit for the 2005–2022 Ford Super Duty, with a Synergy-tuned FOX steering stabiliser.
+
+Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+
+This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
+
+This version ships with a Synergy-tuned FOX steering stabiliser, so the damper and the mount are matched to each other.
+
+It is a bolt-on kit — no cutting, no welding.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: Single stabiliser tie rod mount kit
+Function: Relocates the stabiliser from axle to tie rod
+Stabiliser: Synergy-tuned FOX, included
+Installation: Bolt-on
+Years: 2005–2022
+Part number: 8603-04
+
+Highlights
+
+Moves damping to the tie rod
+Clearance for a larger stabiliser
+Synergy-tuned FOX stabiliser included
+Bolt-on installation
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3001,
+    createdAt: 1789430400000,
+    name: "Synergy Single Stabiliser Tie Rod Mount Kit, No a stabiliser — 2005–2022 Ford F-250 / F-350 Super Duty — 8603-03",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8603-03.
+    price: 195,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8603-03",
+    fitment: "2005–2022 Ford F-250 and F-350 Super Duty. Supplied without a stabiliser.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-single-stabilizer-tie-rod-mount-kit-05-22-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8603-03/1.webp",
+    images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8603-03/1.webp"],
+    description: `Synergy steering stabiliser tie-rod relocation kit for the 2005–2022 Ford Super Duty, without a stabiliser.
+
+Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+
+This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
+
+This version is the mount alone, for a truck that already has the stabiliser you want to use.
+
+It is a bolt-on kit — no cutting, no welding.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: Single stabiliser tie rod mount kit
+Function: Relocates the stabiliser from axle to tie rod
+Stabiliser: Not included
+Installation: Bolt-on
+Years: 2005–2022
+Part number: 8603-03
+
+Highlights
+
+Moves damping to the tie rod
+Clearance for a larger stabiliser
+Mount only — use your own stabiliser
+Bolt-on installation
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3002,
+    createdAt: 1789430400000,
+    name: "Synergy Single Stabiliser Tie Rod Mount Kit, With a Synergy-tuned FOX steering stabiliser — 2023–2026 Ford F-250 / F-350 Super Duty — 8604-04",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8604-04.
+    price: 425,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8604-04",
+    fitment: "2023–2026 Ford F-250 and F-350 Super Duty. Supplied with a Synergy-tuned FOX steering stabiliser.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-single-stabilizer-tie-rod-mount-kit-23-26-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8604-04/1.webp",
+    images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8604-04/1.webp"],
+    description: `Synergy steering stabiliser tie-rod relocation kit for the 2023–2026 Ford Super Duty, with a Synergy-tuned FOX steering stabiliser.
+
+Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+
+This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
+
+This version ships with a Synergy-tuned FOX steering stabiliser, so the damper and the mount are matched to each other.
+
+It is a bolt-on kit — no cutting, no welding.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: Single stabiliser tie rod mount kit
+Function: Relocates the stabiliser from axle to tie rod
+Stabiliser: Synergy-tuned FOX, included
+Installation: Bolt-on
+Years: 2023–2026
+Part number: 8604-04
+
+Highlights
+
+Moves damping to the tie rod
+Clearance for a larger stabiliser
+Synergy-tuned FOX stabiliser included
+Bolt-on installation
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3003,
+    createdAt: 1789430400000,
+    name: "Synergy Single Stabiliser Tie Rod Mount Kit, No a stabiliser — 2023–2026 Ford F-250 / F-350 Super Duty — 8604-03",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8604-03.
+    price: 195,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8604-03",
+    fitment: "2023–2026 Ford F-250 and F-350 Super Duty. Supplied without a stabiliser.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-single-stabilizer-tie-rod-mount-kit-23-26-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8604-03/1.webp",
+    images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8604-03/1.webp"],
+    description: `Synergy steering stabiliser tie-rod relocation kit for the 2023–2026 Ford Super Duty, without a stabiliser.
+
+Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+
+This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
+
+This version is the mount alone, for a truck that already has the stabiliser you want to use.
+
+It is a bolt-on kit — no cutting, no welding.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: Single stabiliser tie rod mount kit
+Function: Relocates the stabiliser from axle to tie rod
+Stabiliser: Not included
+Installation: Bolt-on
+Years: 2023–2026
+Part number: 8604-03
+
+Highlights
+
+Moves damping to the tie rod
+Clearance for a larger stabiliser
+Mount only — use your own stabiliser
+Bolt-on installation
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3004,
+    createdAt: 1789430400000,
+    name: "Synergy Manufacturing Steering Box Brace — 2009–2025 Ram 2500 / 3500 — 8559-04",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-8559-04.
+    price: 250,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "8559-04",
+    fitment: "2009–2025 Dodge / Ram 2500 and 3500.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/synergy-steering-box-brace-09-18-ram",
+    thumbnail: "/product-media/suspension/synergy-steering-box-brace-8559-04/1.webp",
+    images: ["/product-media/suspension/synergy-steering-box-brace-8559-04/1.webp"],
+    description: `Synergy Manufacturing sector shaft steering box brace in 2.0 in square tube for the 2009–2025 Ram 2500 / 3500.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+On a Ram HD one of the most common sources is play in the sector shaft where the pitman arm attaches — the steering box is bolted to the frame on one side only, and the shaft end has nothing supporting it.
+
+This brace installs between the frame rails and the factory front sway bar, effectively adding a crossmember that the steering box now also attaches to. The sector shaft gets supported at both ends instead of one.
+
+It is built from 2.0 in × 0.120 in wall square tubing in a gloss black powder coat, and it is about the quickest and cheapest worthwhile upgrade available for the front end of these trucks.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: Steering box / sector shaft brace
+Material: 2.0 in × 0.120 in square tubing
+Finish: Gloss black powder coat
+Mounts: Between the frame rails, to the factory front sway bar
+Application: 2009–2025 Ram 2500 / 3500
+Part number: 8559-04
+
+Highlights
+
+Supports the sector shaft at both ends
+2.0 in × 0.120 in wall square tube
+Gloss black powder coat
+Fast, inexpensive fix for steering play
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3005,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Replacement Tie Rod End, passenger side — 2005–2025 Ford F-250 / F-350 4x4 — 4150-L",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-4150-L.
+    price: 110,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4150-L",
+    fitment: "2005–2025 Ford F-250 and F-350 4x4, passenger side tie rod end. For Synergy steering systems only — this does not fit the factory steering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synergy-tie-rod-end-05-23-ford-f-250-f-350-4x4",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-tie-rod-end-4150-l/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4150-l/1.webp"],
+    description: `Synergy heavy-duty replacement tie rod end, passenger side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
+
+Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+
+These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
+
+They are built bigger and stronger than the factory ends they replaced in the first place.
+
+Synergy's fitment table splits these by position and side. This is the passenger side tie rod end: the driver-side tie rod end carries its own part number.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: tie rod end
+Side: passenger side
+Fits: Synergy steering systems only — not the factory steering
+Application: 2005–2025 Ford F-250 / F-350 4x4
+Part number: 4150-L
+
+Highlights
+
+passenger side tie rod end
+For Synergy steering systems
+Bigger and stronger than stock
+Synergy Manufacturing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3006,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Replacement Tie Rod End, driver side — 2005–2025 Ford F-250 / F-350 4x4 — 4151-L",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-4151-L.
+    price: 105,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4151-L",
+    fitment: "2005–2025 Ford F-250 and F-350 4x4, driver side tie rod end. For Synergy steering systems only — this does not fit the factory steering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synergy-tie-rod-end-05-23-ford-f-250-f-350-4x4-4151",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-tie-rod-end-4151-l/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4151-l/1.webp"],
+    description: `Synergy heavy-duty replacement tie rod end, driver side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
+
+Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+
+These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
+
+They are built bigger and stronger than the factory ends they replaced in the first place.
+
+Synergy's fitment table splits these by position and side. This is the driver side tie rod end: the driver-side tie rod end carries its own part number.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: tie rod end
+Side: driver side
+Fits: Synergy steering systems only — not the factory steering
+Application: 2005–2025 Ford F-250 / F-350 4x4
+Part number: 4151-L
+
+Highlights
+
+driver side tie rod end
+For Synergy steering systems
+Bigger and stronger than stock
+Synergy Manufacturing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3007,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Replacement Drag Link End, driver side — 2005–2025 Ford F-250 / F-350 4x4 — 4152-L",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-4152-L.
+    price: 70,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4152-L",
+    fitment: "2005–2025 Ford F-250 and F-350 4x4, driver side drag link end. For Synergy steering systems only — this does not fit the factory steering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synergy-tie-rod-end-05-23-ford-f-250-f-350-4x4-4152",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-tie-rod-end-4152-l/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4152-l/1.webp"],
+    description: `Synergy heavy-duty replacement drag link end, driver side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
+
+Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+
+These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
+
+They are built bigger and stronger than the factory ends they replaced in the first place.
+
+Synergy's fitment table splits these by position and side. This is the driver side drag link end: the driver-side drag link end carries its own part number.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: drag link end
+Side: driver side
+Fits: Synergy steering systems only — not the factory steering
+Application: 2005–2025 Ford F-250 / F-350 4x4
+Part number: 4152-L
+
+Highlights
+
+driver side drag link end
+For Synergy steering systems
+Bigger and stronger than stock
+Synergy Manufacturing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3008,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Replacement Drag Link End, passenger side — 2005–2025 Ford F-250 / F-350 4x4 — 4153-L",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-4153-L.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4153-L",
+    fitment: "2005–2025 Ford F-250 and F-350 4x4, passenger side drag link end. For Synergy steering systems only — this does not fit the factory steering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synergy-tie-rod-end-05-23-ford-f-250-f-350-4x4-4153",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-tie-rod-end-4153-l/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4153-l/1.webp"],
+    description: `Synergy heavy-duty replacement drag link end, passenger side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
+
+Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+
+These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
+
+They are built bigger and stronger than the factory ends they replaced in the first place.
+
+Synergy's fitment table splits these by position and side. This is the passenger side drag link end: the driver-side drag link end carries its own part number.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: drag link end
+Side: passenger side
+Fits: Synergy steering systems only — not the factory steering
+Application: 2005–2025 Ford F-250 / F-350 4x4
+Part number: 4153-L
+
+Highlights
+
+passenger side drag link end
+For Synergy steering systems
+Bigger and stronger than stock
+Synergy Manufacturing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3009,
+    createdAt: 1789430400000,
+    name: "Synergy Heavy Duty Replacement Track Bar End, passenger side — 2005–2025 Ford F-250 / F-350 4x4 — 4154-L",
+    category: "suspension",
+    brand: "synergy",
+    // dpp listing price for SYN-4154-L.
+    price: 70,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4154-L",
+    fitment: "2005–2025 Ford F-250 and F-350 4x4, passenger side track bar end. For Synergy steering systems only — this does not fit the factory steering.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synergy-passenger-side-hd-tie-rod-end-05-24-ford-f-250-f-350-4x4",
+    thumbnail: "/product-media/suspension/synergy-heavy-duty-tie-rod-end-4154-l/1.webp",
+    images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4154-l/1.webp"],
+    description: `Synergy heavy-duty replacement track bar end, passenger side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
+
+Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+
+These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
+
+They are built bigger and stronger than the factory ends they replaced in the first place.
+
+Synergy's fitment table splits these by position and side. This is the passenger side track bar end: the track bar takes a passenger-side end only.
+
+Specifications
+
+Manufacturer: Synergy Manufacturing
+Part: track bar end
+Side: passenger side
+Fits: Synergy steering systems only — not the factory steering
+Application: 2005–2025 Ford F-250 / F-350 4x4
+Part number: 4154-L
+
+Highlights
+
+passenger side track bar end
+For Synergy steering systems
+Bigger and stronger than stock
+Synergy Manufacturing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3010,
+    createdAt: 1789430400000,
+    name: "Red-Head Steering Gear Box — 1980–1993 Dodge Ram — 2856SNI",
+    category: "suspension",
+    brand: "red-head-steering-gears",
+    // dpp listing price for RH-2856SNI.
+    price: 396,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2856SNI",
+    fitment: "1980–1993 Dodge Ram.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-9681-red-head-steering-gear-box-80-93-dodge-ram-2856sni-aspx",
+    thumbnail: "/product-media/suspension/red-head-steering-gear-box-2856sni/1.webp",
+    images: ["/product-media/suspension/red-head-steering-gear-box-2856sni/1.webp"],
+    description: `Red-Head steering gear box for the 1980–1993 Dodge Ram, built in Washington state.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+The steering box is often where it starts. A worn box has play in it that no amount of front-end work elsewhere will take out, and the factory box on these trucks is not the strongest part of them.
+
+Red-Head build these boxes in Washington state. They are not the generic rebuilt box from a parts counter — the difference shows up as steering control and as how long the box stays tight.
+
+It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
+
+This is the box for the first-generation heavy-duty Rams.
+
+Specifications
+
+Manufacturer: Red-Head Steering Gears
+Model: Steering Gear Box
+Built in: Washington state, USA
+Retains: Factory steering shaft and stock pitman arm
+Years: 1980–1993
+Application: Dodge Ram
+Part number: 2856SNI
+
+Highlights
+
+Built in Washington state, not a generic rebuild
+Keeps the factory shaft and pitman arm
+Removes the play a worn box creates
+Steering Gear Box
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3011,
+    createdAt: 1789430400000,
+    name: "Red-Head Steering Gear Box — 1994–2002 Dodge Ram 2500 / 3500 — 2869DS 4T",
+    category: "suspension",
+    brand: "red-head-steering-gears",
+    // dpp listing price for RH-2869DS 4T.
+    price: 526,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2869DS 4T",
+    fitment: "1994–2002 Dodge Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/red-head-gear-box-94-02-ram-aspx",
+    thumbnail: "/product-media/suspension/red-head-steering-gear-box-2869ds-4t/1.webp",
+    images: ["/product-media/suspension/red-head-steering-gear-box-2869ds-4t/1.webp"],
+    description: `Red-Head steering gear box for the 1994–2002 Dodge Ram 2500 / 3500, built in Washington state.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+The steering box is often where it starts. A worn box has play in it that no amount of front-end work elsewhere will take out, and the factory box on these trucks is not the strongest part of them.
+
+Red-Head build these boxes in Washington state. They are not the generic rebuilt box from a parts counter — the difference shows up as steering control and as how long the box stays tight.
+
+It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
+
+This is the box for the second-generation heavy-duty Rams.
+
+Specifications
+
+Manufacturer: Red-Head Steering Gears
+Model: Steering Gear Box
+Built in: Washington state, USA
+Retains: Factory steering shaft and stock pitman arm
+Years: 1994–2002
+Application: Dodge Ram 2500 / 3500
+Part number: 2869DS 4T
+
+Highlights
+
+Built in Washington state, not a generic rebuild
+Keeps the factory shaft and pitman arm
+Removes the play a worn box creates
+Steering Gear Box
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3012,
+    createdAt: 1789430400000,
+    name: "Red-Head Heavy Duty Steering Gear Box — 1994–2002 Dodge Ram 2500 / 3500 — 2869ND-4T",
+    category: "suspension",
+    brand: "red-head-steering-gears",
+    // dpp listing price for RH-2869ND-4T.
+    price: 696,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2869ND-4T",
+    fitment: "1994–2002 Dodge Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-17122-red-head-heavy-duty-steering-gear-box-94-02-dodge-ram-2500-3500-aspx",
+    thumbnail: "/product-media/suspension/red-head-steering-gear-box-2869nd-4t/1.webp",
+    images: ["/product-media/suspension/red-head-steering-gear-box-2869nd-4t/1.webp"],
+    description: `Red-Head heavy duty steering gear box for the 1994–2002 Dodge Ram 2500 / 3500, built in Washington state.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+The steering box is often where it starts. A worn box has play in it that no amount of front-end work elsewhere will take out, and the factory box on these trucks is not the strongest part of them.
+
+Red-Head build these boxes in Washington state. They are not the generic rebuilt box from a parts counter — the difference shows up as steering control and as how long the box stays tight.
+
+It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
+
+This is the heavy-duty model — a step above Red-Head's standard box, which was already a substantial upgrade over stock.
+
+Specifications
+
+Manufacturer: Red-Head Steering Gears
+Model: Heavy Duty Steering Gear Box
+Built in: Washington state, USA
+Retains: Factory steering shaft and stock pitman arm
+Years: 1994–2002
+Application: Dodge Ram 2500 / 3500
+Part number: 2869ND-4T
+
+Highlights
+
+Built in Washington state, not a generic rebuild
+Keeps the factory shaft and pitman arm
+Removes the play a worn box creates
+Heavy Duty Steering Gear Box
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3013,
+    createdAt: 1789430400000,
+    name: "Red-Head Steering Gear Box — 2003–2008 Dodge Ram 2500 / 3500 — 2879",
+    category: "suspension",
+    brand: "red-head-steering-gears",
+    // dpp listing price for RH-2879.
+    price: 486,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2879",
+    fitment: "2003–2008 Dodge Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-7082-red-head-steering-gear-box-03-08-dodge-ram-2500-3500-2879-aspx",
+    thumbnail: "/product-media/suspension/red-head-steering-gear-box-2879/1.webp",
+    images: ["/product-media/suspension/red-head-steering-gear-box-2879/1.webp"],
+    description: `Red-Head steering gear box for the 2003–2008 Dodge Ram 2500 / 3500, built in Washington state.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+The steering box is often where it starts. A worn box has play in it that no amount of front-end work elsewhere will take out, and the factory box on these trucks is not the strongest part of them.
+
+Red-Head build these boxes in Washington state. They are not the generic rebuilt box from a parts counter — the difference shows up as steering control and as how long the box stays tight.
+
+It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
+
+This is the box for the third-generation heavy-duty Rams, covering both the 5.9L and the early 6.7L.
+
+Specifications
+
+Manufacturer: Red-Head Steering Gears
+Model: Steering Gear Box
+Built in: Washington state, USA
+Retains: Factory steering shaft and stock pitman arm
+Years: 2003–2008
+Application: Dodge Ram 2500 / 3500
+Part number: 2879
+
+Highlights
+
+Built in Washington state, not a generic rebuild
+Keeps the factory shaft and pitman arm
+Removes the play a worn box creates
+Steering Gear Box
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3014,
+    createdAt: 1789430400000,
+    name: "Red-Head Extreme Duty Steering Gear Box — 2003–2008 Dodge Ram 2500 / 3500 — 2879U",
+    category: "suspension",
+    brand: "red-head-steering-gears",
+    // dpp listing price for RH-2879U.
+    price: 1166,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2879U",
+    fitment: "2003–2008 Dodge Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-17123-red-head-extreme-duty-steering-gear-box-03-08-dodge-ram-2500-3500-aspx",
+    thumbnail: "/product-media/suspension/red-head-steering-gear-box-2879u/1.webp",
+    images: ["/product-media/suspension/red-head-steering-gear-box-2879u/1.webp"],
+    description: `Red-Head extreme duty steering gear box for the 2003–2008 Dodge Ram 2500 / 3500, built in Washington state.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+The steering box is often where it starts. A worn box has play in it that no amount of front-end work elsewhere will take out, and the factory box on these trucks is not the strongest part of them.
+
+Red-Head build these boxes in Washington state. They are not the generic rebuilt box from a parts counter — the difference shows up as steering control and as how long the box stays tight.
+
+It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
+
+The Extreme Duty model is built to take anything you put through it while still being entirely suitable for a daily driver — the right answer for oversized tyres or serious off-road use.
+
+Specifications
+
+Manufacturer: Red-Head Steering Gears
+Model: Extreme Duty Steering Gear Box
+Built in: Washington state, USA
+Retains: Factory steering shaft and stock pitman arm
+Years: 2003–2008
+Application: Dodge Ram 2500 / 3500
+Part number: 2879U
+
+Highlights
+
+Built in Washington state, not a generic rebuild
+Keeps the factory shaft and pitman arm
+Removes the play a worn box creates
+Extreme Duty Steering Gear Box
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3015,
+    createdAt: 1789430400000,
+    name: "Red-Head Steering Gear Box — 2009–2012 Dodge Ram 2500 / 3500 — 2880",
+    category: "suspension",
+    brand: "red-head-steering-gears",
+    // dpp listing price for RH-2880.
+    price: 796,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2880",
+    fitment: "2009–2012 Dodge Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/red-head-steering-gear-box-09-12-dodge",
+    thumbnail: "/product-media/suspension/red-head-steering-gear-box-2880/1.webp",
+    images: ["/product-media/suspension/red-head-steering-gear-box-2880/1.webp"],
+    description: `Red-Head steering gear box for the 2009–2012 Dodge Ram 2500 / 3500, built in Washington state.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+The steering box is often where it starts. A worn box has play in it that no amount of front-end work elsewhere will take out, and the factory box on these trucks is not the strongest part of them.
+
+Red-Head build these boxes in Washington state. They are not the generic rebuilt box from a parts counter — the difference shows up as steering control and as how long the box stays tight.
+
+It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
+
+Specifications
+
+Manufacturer: Red-Head Steering Gears
+Model: Steering Gear Box
+Built in: Washington state, USA
+Retains: Factory steering shaft and stock pitman arm
+Years: 2009–2012
+Application: Dodge Ram 2500 / 3500
+Part number: 2880
+
+Highlights
+
+Built in Washington state, not a generic rebuild
+Keeps the factory shaft and pitman arm
+Removes the play a worn box creates
+Steering Gear Box
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3016,
+    createdAt: 1789430400000,
+    name: "Red-Head Steering Gear Box — 2009–2020 Dodge Ram 2500 / 3500 — 2881",
+    category: "suspension",
+    brand: "red-head-steering-gears",
+    // dpp listing price for RH-2881.
+    price: 866,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "2881",
+    fitment: "2009–2020 Dodge Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/red-head-steering-gear-box-13-18-ram",
+    thumbnail: "/product-media/suspension/red-head-steering-gear-box-2881/1.webp",
+    images: ["/product-media/suspension/red-head-steering-gear-box-2881/1.webp"],
+    description: `Red-Head steering gear box for the 2009–2020 Dodge Ram 2500 / 3500, built in Washington state.
+
+Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
+
+The steering box is often where it starts. A worn box has play in it that no amount of front-end work elsewhere will take out, and the factory box on these trucks is not the strongest part of them.
+
+Red-Head build these boxes in Washington state. They are not the generic rebuilt box from a parts counter — the difference shows up as steering control and as how long the box stays tight.
+
+It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
+
+Specifications
+
+Manufacturer: Red-Head Steering Gears
+Model: Steering Gear Box
+Built in: Washington state, USA
+Retains: Factory steering shaft and stock pitman arm
+Years: 2009–2020
+Application: Dodge Ram 2500 / 3500
+Part number: 2881
+
+Highlights
+
+Built in Washington state, not a generic rebuild
+Keeps the factory shaft and pitman arm
+Removes the play a worn box creates
+Steering Gear Box
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3017,
+    createdAt: 1789430400000,
+    name: "Apex Chassis Heavy Duty Upper Ball Joint — 2000–2002 Dodge Ram 2500 / 3500 — BJ124",
+    category: "suspension",
+    brand: "apex-chassis",
+    // dpp listing price for APX-BJ124.
+    price: 65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BJ124",
+    fitment: "2000–2002 Dodge Ram 2500 and 3500. Upper ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/apex-chassis-upper-ball-joint-00-02-ram-2500-3500",
+    thumbnail: "/product-media/suspension/apex-chassis-upper-ball-joint-bj124/1.webp",
+    images: ["/product-media/suspension/apex-chassis-upper-ball-joint-bj124/1.webp"],
+    description: `Apex Chassis heavy-duty upper ball joint for the 2000–2002 Dodge Ram 2500 / 3500.
+
+The front suspension on a work truck takes a beating, and it takes more of one with big tyres, a plough on the front or a trailer behind. The factory ball joints are not built for that duty cycle.
+
+A worn joint shows up as front-end slop: uneven tyre wear, steering that wanders, and eventually the shake nobody wants to feel twice.
+
+Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
+
+Specifications
+
+Manufacturer: Apex Chassis
+Part: Upper ball joint
+Housing: SAE 1045 solid forged steel, CNC machined
+Ball stud: SAE 4140 hot-forged chromoly, induction heat treated
+Threads: Rolled
+Application: 2000–2002 Dodge Ram 2500 / 3500
+Part number: BJ124
+
+Highlights
+
+Forged 1045 steel housing, CNC machined
+4140 chromoly induction-treated ball stud
+Rolled threads
+Built for ploughs, big tyres and towing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3018,
+    createdAt: 1789430400000,
+    name: "Apex Chassis Heavy Duty Track Bar Ball Joint — 2005–2025 Ford F-250 / F-350 — BJ162",
+    category: "suspension",
+    brand: "apex-chassis",
+    // dpp listing price for APX-BJ162.
+    price: 65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BJ162",
+    fitment: "2005–2025 Ford F-250 and F-350. Track bar ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-apex-chassis-bj162-track-bar-ball-joint-05-19-ford-f250f350",
+    thumbnail: "/product-media/suspension/apex-chassis-track-bar-ball-joint-bj162/1.webp",
+    images: ["/product-media/suspension/apex-chassis-track-bar-ball-joint-bj162/1.webp"],
+    description: `Apex Chassis heavy-duty track bar ball joint for the 2005–2025 Ford F-250 / F-350.
+
+Ford's Super Duty steering is adequate on tarmac. Take it off the road, or work it hard, and the shortcomings show — and once death wobble has started, every joint in the front end is a suspect.
+
+The track bar's ball joint is one of the usual culprits. This part replaces the factory joint with a much heavier unit.
+
+Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
+
+Specifications
+
+Manufacturer: Apex Chassis
+Part: Track bar ball joint
+Housing: SAE 1045 solid forged steel, CNC machined
+Ball stud: SAE 4140 hot-forged chromoly, induction heat treated
+Threads: Rolled
+Application: 2005–2025 Ford F-250 / F-350
+Part number: BJ162
+
+Highlights
+
+Replaces the factory track bar joint
+Forged 1045 housing, 4140 chromoly stud
+A common death wobble contributor
+Apex Chassis
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3019,
+    createdAt: 1789430400000,
+    name: "Apex Chassis ProLock Tie Rod Kit, DOM steel, matte black powder coated — 2005–2026 Ford F-250 / F-350 Super Duty — KIT372-STL",
+    category: "suspension",
+    brand: "apex-chassis",
+    // dpp listing price for APX-KIT372-STL.
+    price: 700,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "KIT372-STL",
+    fitment: "2005–2026 Ford F-250 and F-350 Super Duty. DOM steel, matte black powder coated.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-apex-chassis-kit372-hd-tie-rod-kit-05-22-ford-f250f350",
+    thumbnail: "/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-stl/1.webp",
+    images: ["/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-stl/1.webp"],
+    description: `Apex Chassis ProLock heavy-duty tie rod kit in DOM steel, matte black powder coated for the 2005–2026 Ford Super Duty.
+
+Ford's Super Duty steering works well enough on pavement. Off it, or worked hard, the factory tie rods are the part that gives — and a truck that has started to death-wobble usually has slop in them.
+
+Apex's ProLock kit replaces them with a noticeably stronger assembly, and the feel tightens up with it.
+
+This version is built in DOM steel, matte black powder coated. Apex offer the kit in steel and in two aluminium finishes; they carry different part numbers and different prices.
+
+Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
+
+Specifications
+
+Manufacturer: Apex Chassis
+Kit: ProLock tie rod kit
+Material: DOM steel, matte black powder coated
+Ball studs: SAE 4140 hot-forged chromoly, induction heat treated
+Threads: Rolled
+Application: 2005–2026 Ford F-250 / F-350 Super Duty
+Part number: KIT372-STL
+
+Highlights
+
+ProLock heavy-duty tie rod kit
+DOM steel, matte black powder coated
+4140 chromoly induction-treated studs
+Tighter steering feel than stock
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3020,
+    createdAt: 1789430400000,
+    name: "Apex Chassis ProLock Tie Rod Kit, 7075-T6 polished aluminium — 2005–2026 Ford F-250 / F-350 Super Duty — KIT372-POL",
+    category: "suspension",
+    brand: "apex-chassis",
+    // dpp listing price for APX-KIT372-POL.
+    price: 652,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "KIT372-POL",
+    fitment: "2005–2026 Ford F-250 and F-350 Super Duty. 7075-T6 polished aluminium.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-apex-chassis-kit372-hd-tie-rod-kit-05-22-ford-f250f350",
+    thumbnail: "/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-pol/1.webp",
+    images: ["/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-pol/1.webp"],
+    description: `Apex Chassis ProLock heavy-duty tie rod kit in 7075-T6 polished aluminium for the 2005–2026 Ford Super Duty.
+
+Ford's Super Duty steering works well enough on pavement. Off it, or worked hard, the factory tie rods are the part that gives — and a truck that has started to death-wobble usually has slop in them.
+
+Apex's ProLock kit replaces them with a noticeably stronger assembly, and the feel tightens up with it.
+
+This version is built in 7075-T6 polished aluminium. Apex offer the kit in steel and in two aluminium finishes; they carry different part numbers and different prices.
+
+Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
+
+Specifications
+
+Manufacturer: Apex Chassis
+Kit: ProLock tie rod kit
+Material: 7075-T6 polished aluminium
+Ball studs: SAE 4140 hot-forged chromoly, induction heat treated
+Threads: Rolled
+Application: 2005–2026 Ford F-250 / F-350 Super Duty
+Part number: KIT372-POL
+
+Highlights
+
+ProLock heavy-duty tie rod kit
+7075-T6 polished aluminium
+4140 chromoly induction-treated studs
+Tighter steering feel than stock
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3021,
+    createdAt: 1789430400000,
+    name: "Apex Chassis ProLock Tie Rod Kit, 7075-T6 anodised black aluminium — 2005–2026 Ford F-250 / F-350 Super Duty — KIT372-BLK",
+    category: "suspension",
+    brand: "apex-chassis",
+    // dpp listing price for APX-KIT372-BLK.
+    price: 652,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "KIT372-BLK",
+    fitment: "2005–2026 Ford F-250 and F-350 Super Duty. 7075-T6 anodised black aluminium.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-apex-chassis-kit372-hd-tie-rod-kit-05-22-ford-f250f350",
+    thumbnail: "/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-blk/1.webp",
+    images: ["/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-blk/1.webp"],
+    description: `Apex Chassis ProLock heavy-duty tie rod kit in 7075-T6 anodised black aluminium for the 2005–2026 Ford Super Duty.
+
+Ford's Super Duty steering works well enough on pavement. Off it, or worked hard, the factory tie rods are the part that gives — and a truck that has started to death-wobble usually has slop in them.
+
+Apex's ProLock kit replaces them with a noticeably stronger assembly, and the feel tightens up with it.
+
+This version is built in 7075-T6 anodised black aluminium. Apex offer the kit in steel and in two aluminium finishes; they carry different part numbers and different prices.
+
+Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
+
+Specifications
+
+Manufacturer: Apex Chassis
+Kit: ProLock tie rod kit
+Material: 7075-T6 anodised black aluminium
+Ball studs: SAE 4140 hot-forged chromoly, induction heat treated
+Threads: Rolled
+Application: 2005–2026 Ford F-250 / F-350 Super Duty
+Part number: KIT372-BLK
+
+Highlights
+
+ProLock heavy-duty tie rod kit
+7075-T6 anodised black aluminium
+4140 chromoly induction-treated studs
+Tighter steering feel than stock
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3022,
+    createdAt: 1789430400000,
+    name: "EMF Rebuildable Ball Joint Kit, Factory size — 2000–2002 Dodge Ram 2500 / 3500 4WD — 7397/7394 KIT",
+    category: "suspension",
+    brand: "emf",
+    // dpp listing price for EMF-7397-7394-KIT.
+    price: 625,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7397/7394 KIT",
+    fitment: "2000–2002 Dodge Ram 2500 and 3500 4WD. Factory size joints.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-emf-ball-joints-kit-00-02-dodge-ram-2500-3500-4wd",
+    thumbnail: "/product-media/suspension/emf-rebuildable-ball-joint-kit-7397-7394-kit/1.webp",
+    images: ["/product-media/suspension/emf-rebuildable-ball-joint-kit-7397-7394-kit/1.webp"],
+    description: `EMF rebuildable ball joint kit, factory size, for the 2000–2002 Dodge Ram 2500 / 3500 4WD.
+
+Ball joints wear internally with miles and use, and on most trucks the answer when they do is to press them out and start again.
+
+EMF's are genuinely rebuildable instead. When up-and-down play appears in the lower joint, you take the set screw out of the side of the housing, tighten the ring, put the screw back, grease it, and carry on — no press, no new parts.
+
+This kit is the factory size version. EMF offer oversized joints as well, for a knuckle that has been opened up by a previous joint failing.
+
+Specifications
+
+Manufacturer: EMF Ball Joints
+Type: Rebuildable ball joint kit
+Size: Factory size
+Adjustment: Set screw and ring — no press required
+Application: 2000–2002 Dodge Ram 2500 / 3500 4WD
+Part number: 7397/7394 KIT
+
+Highlights
+
+Genuinely rebuildable, not replaceable
+Adjust play with a set screw and ring
+Greaseable
+Factory size
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3023,
+    createdAt: 1789430400000,
+    name: "EMF Rebuildable Ball Joint Kit, Oversized — 2000–2002 Dodge Ram 2500 / 3500 4WD — 7397.1/7394.1 KIT",
+    category: "suspension",
+    brand: "emf",
+    // dpp listing price for EMF-7397.1-7394.1-KIT.
+    price: 625,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7397.1/7394.1 KIT",
+    fitment: "2000–2002 Dodge Ram 2500 and 3500 4WD. Oversized joints.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-emf-ball-joints-kit-00-02-dodge-ram-2500-3500-4wd",
+    thumbnail: "/product-media/suspension/emf-rebuildable-ball-joint-kit-7397-1-7394-1-kit/1.webp",
+    images: ["/product-media/suspension/emf-rebuildable-ball-joint-kit-7397-1-7394-1-kit/1.webp"],
+    description: `EMF rebuildable ball joint kit, oversized, for the 2000–2002 Dodge Ram 2500 / 3500 4WD.
+
+Ball joints wear internally with miles and use, and on most trucks the answer when they do is to press them out and start again.
+
+EMF's are genuinely rebuildable instead. When up-and-down play appears in the lower joint, you take the set screw out of the side of the housing, tighten the ring, put the screw back, grease it, and carry on — no press, no new parts.
+
+This kit is the oversized version. EMF offer oversized joints as well, for a knuckle that has been opened up by a previous joint failing.
+
+Specifications
+
+Manufacturer: EMF Ball Joints
+Type: Rebuildable ball joint kit
+Size: Oversized
+Adjustment: Set screw and ring — no press required
+Application: 2000–2002 Dodge Ram 2500 / 3500 4WD
+Part number: 7397.1/7394.1 KIT
+
+Highlights
+
+Genuinely rebuildable, not replaceable
+Adjust play with a set screw and ring
+Greaseable
+Oversized
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3024,
+    createdAt: 1789430400000,
+    name: "Mevotech Supreme Upper Ball Joint — 2000–2002 Dodge Ram 2500 / 3500 4x4 — MK7394",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-MK7394.
+    price: 60.24,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MK7394",
+    fitment: "2000–2002 Dodge Ram 2500 / 3500 4x4. Upper ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-supreme-upper-ball-joint-00-02-dodge-ram-25003500-4x4",
+    thumbnail: "/product-media/suspension/mevotech-supreme-upper-ball-joint-mk7394/1.webp",
+    images: ["/product-media/suspension/mevotech-supreme-upper-ball-joint-mk7394/1.webp"],
+    description: `Mevotech Supreme upper ball joint for the 2000–2002 Dodge Ram 2500 / 3500 4x4.
+
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+
+Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+
+Mevotech's Supreme line uses long-lasting sintered bearings with a 180 SAE grease fitting, so the joint can be serviced rather than simply worn out.
+
+This is the upper joint. The upper and lower are different parts and carry different numbers, so check which one you are replacing.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: Supreme
+Position: Upper ball joint
+Application: 2000–2002 Dodge Ram 2500 / 3500 4x4
+Part number: MK7394
+
+Highlights
+
+Supreme specification
+Upper position
+Built for worked trucks, not a like-for-like replacement
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3025,
+    createdAt: 1789430400000,
+    name: "Mevotech Supreme Lower Ball Joint — 2000–2002 Dodge Ram 2500 / 3500 4x4 — MK7397",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-MK7397.
+    price: 59,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MK7397",
+    fitment: "2000–2002 Dodge Ram 2500 / 3500 4x4. Lower ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-supreme-lower-ball-joint-00-02-dodge-ram-25003500-4x4",
+    thumbnail: "/product-media/suspension/mevotech-supreme-lower-ball-joint-mk7397/1.webp",
+    images: ["/product-media/suspension/mevotech-supreme-lower-ball-joint-mk7397/1.webp"],
+    description: `Mevotech Supreme lower ball joint for the 2000–2002 Dodge Ram 2500 / 3500 4x4.
+
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+
+Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+
+Mevotech's Supreme line uses long-lasting sintered bearings with a 180 SAE grease fitting, so the joint can be serviced rather than simply worn out.
+
+This is the lower joint. The upper and lower are different parts and carry different numbers, so check which one you are replacing.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: Supreme
+Position: Lower ball joint
+Application: 2000–2002 Dodge Ram 2500 / 3500 4x4
+Part number: MK7397
+
+Highlights
+
+Supreme specification
+Lower position
+Built for worked trucks, not a like-for-like replacement
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3026,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX Lower Ball Joint — 1999–2023 Ford F-250 / F-350 Super Duty 2WD — TXK80027",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-TXK80027.
+    price: 38.16,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXK80027",
+    fitment: "1999–2023 Ford F-250 / F-350 Super Duty 2WD. Lower ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-suspension-lower-ball-joint-99-23-ford-superduty-f-250f-350-2wd",
+    thumbnail: "/product-media/suspension/mevotech-ttx-lower-ball-joint-txk80027/1.webp",
+    images: ["/product-media/suspension/mevotech-ttx-lower-ball-joint-txk80027/1.webp"],
+    description: `Mevotech TTX lower ball joint for the 1999–2023 Ford F-250 / F-350 Super Duty 2WD.
+
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+
+Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+
+The TTX line is Mevotech's strongest: parts engineered for trucks that are worked, on the principle that the part failed for a reason and an equal-or-lesser replacement will fail the same way.
+
+This is the lower joint. The upper and lower are different parts and carry different numbers, so check which one you are replacing.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX
+Position: Lower ball joint
+Application: 1999–2023 Ford F-250 / F-350 Super Duty 2WD
+Part number: TXK80027
+
+Highlights
+
+TTX specification
+Lower position
+Built for worked trucks, not a like-for-like replacement
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3027,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX Upper Ball Joint — 1994–1999 Dodge Ram 2500 / 3500 and 1999–2023 Ford F-250 / F-350 — TXK80026",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-TXK80026.
+    price: 50.39,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXK80026",
+    fitment: "1994–1999 Dodge Ram 2500 / 3500 and 1999–2023 Ford F-250 / F-350. Upper ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-suspension-upper-ball-joint-94-99-ram-25003500-99-23-ford-f250f350",
+    thumbnail: "/product-media/suspension/mevotech-ttx-upper-ball-joint-txk80026/1.webp",
+    images: ["/product-media/suspension/mevotech-ttx-upper-ball-joint-txk80026/1.webp"],
+    description: `Mevotech TTX upper ball joint for the 1994–1999 Dodge Ram 2500 / 3500 and 1999–2023 Ford F-250 / F-350.
+
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+
+Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+
+The TTX line is Mevotech's strongest: parts engineered for trucks that are worked, on the principle that the part failed for a reason and an equal-or-lesser replacement will fail the same way.
+
+This is the upper joint. The upper and lower are different parts and carry different numbers, so check which one you are replacing.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX
+Position: Upper ball joint
+Application: 1994–1999 Dodge Ram 2500 / 3500 and 1999–2023 Ford F-250 / F-350
+Part number: TXK80026
+
+Highlights
+
+TTX specification
+Upper position
+Built for worked trucks, not a like-for-like replacement
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3028,
+    createdAt: 1789430400000,
+    name: "MOOG Problem Solver Lower Ball Joint — 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500 — K8607T",
+    category: "suspension",
+    brand: "moog",
+    // dpp listing price for MOG-K8607T.
+    price: 57.34,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K8607T",
+    fitment: "1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500. Lower ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/moog-lower-ball-joint-92-19-ford",
+    thumbnail: "/product-media/suspension/moog-problem-solver-lower-ball-joint-k8607t/1.webp",
+    images: ["/product-media/suspension/moog-problem-solver-lower-ball-joint-k8607t/1.webp"],
+    description: `MOOG Problem Solver lower ball joint for the 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500.
+
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+
+Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+
+MOOG is the steering and suspension brand most professional workshops reach for, and the Problem Solver line exists specifically to improve on what the factory fitted.
+
+This is the lower joint. The upper and lower are different parts and carry different numbers, so check which one you are replacing.
+
+Specifications
+
+Manufacturer: MOOG
+Line: Problem Solver
+Position: Lower ball joint
+Application: 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500
+Part number: K8607T
+
+Highlights
+
+Problem Solver specification
+Lower position
+Built for worked trucks, not a like-for-like replacement
+MOOG Problem Solver
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3029,
+    createdAt: 1789430400000,
+    name: "MOOG Problem Solver Upper Ball Joint — 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500 — K80026",
+    category: "suspension",
+    brand: "moog",
+    // dpp listing price for MOG-K80026.
+    price: 45.57,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "K80026",
+    fitment: "1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500. Upper ball joint.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/moog-upper-ball-joint-92-19-ford",
+    thumbnail: "/product-media/suspension/moog-problem-solver-upper-ball-joint-k80026/1.webp",
+    images: ["/product-media/suspension/moog-problem-solver-upper-ball-joint-k80026/1.webp"],
+    description: `MOOG Problem Solver upper ball joint for the 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500.
+
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+
+Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+
+MOOG is the steering and suspension brand most professional workshops reach for, and the Problem Solver line exists specifically to improve on what the factory fitted.
+
+This is the upper joint. The upper and lower are different parts and carry different numbers, so check which one you are replacing.
+
+Specifications
+
+Manufacturer: MOOG
+Line: Problem Solver
+Position: Upper ball joint
+Application: 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500
+Part number: K80026
+
+Highlights
+
+Problem Solver specification
+Upper position
+Built for worked trucks, not a like-for-like replacement
+MOOG Problem Solver
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3030,
+    createdAt: 1789430400000,
+    name: "ReadyLIFT TeraFlex Dana 60 Ball Joint Kit, Set of 4 — 1992–2022 Ford F-250 / F-350 and 1994–1999 Ram 2500 / 3500 — 3452030",
+    category: "suspension",
+    brand: "readylift",
+    // dpp listing price for RL-3452030.
+    price: 399.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3452030",
+    fitment: "1992–2022 Ford F-250 and F-350, and 1994–1999 Dodge Ram 2500 and 3500, with the Dana 60 front axle. Set of four — both uppers and both lowers.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/readylift-teraflex-dana-60-ball-joint-kit-set-of-4-92-22-ford-f-250-f-350-94-99-ram-2500-3500",
+    thumbnail: "/product-media/suspension/readylift-teraflex-dana-60-ball-joint-kit-3452030/1.webp",
+    images: ["/product-media/suspension/readylift-teraflex-dana-60-ball-joint-kit-3452030/1.webp"],
+    description: `ReadyLIFT TeraFlex Dana 60 ball joint kit, a full set of four, for Ford Super Duty and Dodge Ram trucks with the Dana 60 front axle.
+
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+
+Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+
+This kit covers the whole axle: four joints, both uppers and both lowers, so the front end is done in one go rather than one corner at a time.
+
+It is for the Dana 60 front axle, which is the axle under the Ford Super Duty and the 1994–1999 Ram 2500 / 3500 — check the axle rather than the badge before ordering.
+
+Specifications
+
+Manufacturer: ReadyLIFT (TeraFlex)
+Axle: Dana 60 front
+Quantity: Set of four — two upper, two lower
+Application: 1992–2022 Ford F-250 / F-350, 1994–1999 Ram 2500 / 3500
+Part number: 3452030
+
+Highlights
+
+Complete set of four joints
+For the Dana 60 front axle
+Covers both sides in one kit
+ReadyLIFT TeraFlex
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3031,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX Outer Tie Rod End, passenger side — 2005–2023 Ford F-250 / F-350 Super Duty 4WD — TXMS40625",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-TXMS40625.
+    price: 80.71,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXMS40625",
+    fitment: "2005–2023 Ford F-250 and F-350 Super Duty 4WD. Outer tie rod end, passenger side.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-tie-rod-end-05-23-ford-superduty-f-250f-350-4wd",
+    thumbnail: "/product-media/suspension/mevotech-ttx-outer-tie-rod-end-txms40625/1.webp",
+    images: ["/product-media/suspension/mevotech-ttx-outer-tie-rod-end-txms40625/1.webp"],
+    description: `Mevotech TTX outer tie rod end, passenger side, for the 2005–2023 Ford F-250 / F-350 Super Duty 4WD.
+
+Lift a truck and fit bigger tyres and the loads through the steering go up, not down. The factory tie rod ends were not specified with that in mind.
+
+Mevotech's TTX line is built for exactly that: the strongest and most durable parts they make, for trucks whose owners are not willing to find out at the worst possible moment.
+
+This is the passenger side outer end — the two sides are different parts with different numbers.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX
+Part: Outer tie rod end
+Side: passenger side
+Application: 2005–2023 Ford F-250 / F-350 Super Duty 4WD
+Part number: TXMS40625
+
+Highlights
+
+TTX — Mevotech's strongest line
+passenger side outer end
+Sized for lifted trucks and big tyres
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3032,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX Outer Tie Rod End, driver side — 2005–2023 Ford F-250 / F-350 Super Duty 4WD — TXES80754",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-TXES80754.
+    price: 102.41,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXES80754",
+    fitment: "2005–2023 Ford F-250 and F-350 Super Duty 4WD. Outer tie rod end, driver side.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-tie-rod-end-05-23-ford-superduty-f-250f-350-4wd",
+    thumbnail: "/product-media/suspension/mevotech-ttx-outer-tie-rod-end-txes80754/1.webp",
+    images: ["/product-media/suspension/mevotech-ttx-outer-tie-rod-end-txes80754/1.webp"],
+    description: `Mevotech TTX outer tie rod end, driver side, for the 2005–2023 Ford F-250 / F-350 Super Duty 4WD.
+
+Lift a truck and fit bigger tyres and the loads through the steering go up, not down. The factory tie rod ends were not specified with that in mind.
+
+Mevotech's TTX line is built for exactly that: the strongest and most durable parts they make, for trucks whose owners are not willing to find out at the worst possible moment.
+
+This is the driver side outer end — the two sides are different parts with different numbers.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX
+Part: Outer tie rod end
+Side: driver side
+Application: 2005–2023 Ford F-250 / F-350 Super Duty 4WD
+Part number: TXES80754
+
+Highlights
+
+TTX — Mevotech's strongest line
+driver side outer end
+Sized for lifted trucks and big tyres
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3033,
+    createdAt: 1789430400000,
+    name: "Mopar Extreme Duty Steering Box Upgrade Kit — 2003–2008 Ram 2500 / 3500 HD — 68170214AB",
+    category: "suspension",
+    brand: "mopar",
+    // dpp listing price for MOP68170214AB.
+    price: 1066.67,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "68170214AB",
+    fitment: "2003–2008 Dodge Ram 2500 and 3500 HD.",
+    included: ["Extreme duty steering gearbox","Pitman arm","Upper tie rod"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mopar-steering-box-upgrade-03-08-ram",
+    thumbnail: "/product-media/suspension/mopar-steering-box-upgrade-kit-68170214ab/1.webp",
+    images: ["/product-media/suspension/mopar-steering-box-upgrade-kit-68170214ab/1.webp"],
+    description: `Mopar factory steering box upgrade kit with extreme-duty box, pitman arm and upper tie rod for the 2003–2008 Ram HD.
+
+Dodge released this kit themselves for the 2003–2008 HD Rams, which is about as clear an acknowledgement of the original gearbox as an owner is going to get.
+
+It is a complete kit: an extreme-duty gearbox, a pitman arm and an upper tie rod, so the parts that work together are replaced together.
+
+The box itself is among the heaviest-built units available for these trucks.
+
+Specifications
+
+Manufacturer: Mopar
+Type: Extreme duty steering box upgrade kit
+Included: Steering gearbox, pitman arm, upper tie rod
+Application: 2003–2008 Ram 2500 / 3500 HD
+Part number: 68170214AB
+
+Highlights
+
+Factory Mopar upgrade kit
+Extreme-duty gearbox
+Pitman arm and upper tie rod included
+2003–2008 Ram HD
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3034,
+    createdAt: 1789430400000,
+    name: "BD Diesel Steering Box Stabiliser Bearing Assembly — 1994–2018 Dodge Ram 2500 / 3500 — 1302017",
+    category: "suspension",
+    brand: "bd-diesel",
+    // dpp listing price for BD-1302017.
+    price: 39.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "1302017",
+    fitment: "1994–2018 Dodge / Ram 2500 and 3500.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bd-1302017-steering-box-stabilizer-bearing-assembly-94-18-dodge-ram-25003500",
+    thumbnail: "/product-media/suspension/bd-steering-box-stabilizer-bearing-1302017/1.webp",
+    images: ["/product-media/suspension/bd-steering-box-stabilizer-bearing-1302017/1.webp"],
+    description: `BD Diesel replacement bearing assembly for the steering box stabiliser on the 1994–2018 Ram 2500 / 3500.
+
+A steering box stabiliser supports the sector shaft at the end the factory left unsupported. The bearing inside it is the wear part.
+
+This is BD's replacement bearing assembly for that unit — the service part, not the whole brace.
+
+Replacing a worn bearing restores the support the brace was fitted to provide, which is the whole point of having one.
+
+Specifications
+
+Manufacturer: BD Diesel Performance
+Part: Steering box stabiliser bearing assembly
+Function: Service part for a sector shaft support
+Application: 1994–2018 Ram 2500 / 3500
+Part number: 1302017
+
+Highlights
+
+Service bearing for a steering box stabiliser
+Restores sector shaft support
+Covers 1994–2018 Ram HD
+BD Diesel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3035,
+    createdAt: 1789430400000,
+    name: "Mevotech Wheel Bearing & Hub Assembly — 2006–2008 Ram 2500 / 3500 5.9L and 6.7L Cummins 4WD — H515101",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-H515101.
+    price: 141.33,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "H515101",
+    fitment: "2006–2008 Ram 2500 / 3500 5.9L and 6.7L Cummins 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-supreme-wheel-bearing-hub-assembly-06-08-ram-25003500-4wd",
+    thumbnail: "/product-media/suspension/mevotech-wheel-bearing-hub-assembly-h515101/1.webp",
+    images: ["/product-media/suspension/mevotech-wheel-bearing-hub-assembly-h515101/1.webp"],
+    description: `Mevotech Supreme wheel bearing and hub assembly for the 2006–2008 Ram 2500 / 3500 5.9L and 6.7L Cummins 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Factory bearing assemblies are a common failure on these trucks, and heavy offset wheel and tyre packages make it a certainty rather than a risk.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Mevotech
+Part: Wheel bearing and hub assembly
+Specification: Supreme
+Application: 2006–2008 Ram 2500 / 3500 5.9L and 6.7L Cummins 4WD
+Part number: H515101
+
+Highlights
+
+Supreme
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3036,
+    createdAt: 1789430400000,
+    name: "Mevotech Wheel Bearing & Hub Assembly — 2000–2002 Ram 2500 / 3500 5.9L Cummins 4WD — H515063",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-H515063.
+    price: 123.69,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "H515063",
+    fitment: "2000–2002 Ram 2500 / 3500 5.9L Cummins 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-btx-wheel-bearing-hub-assembly-00-02-ram-59-cummins-25003500-4wd",
+    thumbnail: "/product-media/suspension/mevotech-wheel-bearing-hub-assembly-h515063/1.webp",
+    images: ["/product-media/suspension/mevotech-wheel-bearing-hub-assembly-h515063/1.webp"],
+    description: `Mevotech BTX wheel bearing and hub assembly for the 2000–2002 Ram 2500 / 3500 5.9L Cummins 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Factory bearing assemblies are a common failure on the second-generation Cummins trucks, and wide offset wheels accelerate it.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Mevotech
+Part: Wheel bearing and hub assembly
+Specification: BTX
+Application: 2000–2002 Ram 2500 / 3500 5.9L Cummins 4WD
+Part number: H515063
+
+Highlights
+
+BTX
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3037,
+    createdAt: 1789430400000,
+    name: "Mevotech Wheel Bearing & Hub Assembly — 2014–2018 Ram 2500 and 2013–2018 Ram 3500 — TXF25321",
+    category: "suspension",
+    brand: "mevotech",
+    // dpp listing price for MT-TXF25321.
+    price: 261.19,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXF25321",
+    fitment: "2014–2018 Ram 2500 and 2013–2018 Ram 3500.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-wheel-bearing-and-hub-assembly-with-abs-sensor-14-18-ram-2500-13-18-3500",
+    thumbnail: "/product-media/suspension/mevotech-wheel-bearing-hub-assembly-txf25321/1.webp",
+    images: ["/product-media/suspension/mevotech-wheel-bearing-hub-assembly-txf25321/1.webp"],
+    description: `Mevotech TTX, with ABS sensor wheel bearing and hub assembly for the 2014–2018 Ram 2500 and 2013–2018 Ram 3500.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+This assembly includes the ABS sensor, so the job is done in one part rather than two.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Mevotech
+Part: Wheel bearing and hub assembly
+Specification: TTX, with ABS sensor
+Application: 2014–2018 Ram 2500 and 2013–2018 Ram 3500
+Part number: TXF25321
+
+Highlights
+
+TTX, with ABS sensor
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3038,
+    createdAt: 1789430400000,
+    name: "MOOG Wheel Bearing & Hub Assembly — 2000–2002 Dodge Ram 2500 / 3500 5.9L Cummins 4WD — 515063",
+    category: "suspension",
+    brand: "moog",
+    // dpp listing price for MOG-515063.
+    price: 357.4,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "515063",
+    fitment: "2000–2002 Dodge Ram 2500 / 3500 5.9L Cummins 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-moog-515063-wheel-bearing-hub-assembly-00-02-dodge-ram-59l-cummins-25003500-4wd",
+    thumbnail: "/product-media/suspension/moog-wheel-bearing-hub-assembly-515063/1.webp",
+    images: ["/product-media/suspension/moog-wheel-bearing-hub-assembly-515063/1.webp"],
+    description: `MOOG hub assembly wheel bearing and hub assembly for the 2000–2002 Dodge Ram 2500 / 3500 5.9L Cummins 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+MOOG's design changes here are aimed at longer life, smoother operation and correct ABS function. The wheel studs are coated against rust, which is what makes a wheel come off easily years later.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: MOOG
+Part: Wheel bearing and hub assembly
+Specification: hub assembly
+Application: 2000–2002 Dodge Ram 2500 / 3500 5.9L Cummins 4WD
+Part number: 515063
+
+Highlights
+
+Hub assembly
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+MOOG
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3039,
+    createdAt: 1789430400000,
+    name: "MOOG Wheel Bearing & Hub Assembly — 2006–2008 Dodge Ram 5.9L Cummins 4WD — 515101",
+    category: "suspension",
+    brand: "moog",
+    // dpp listing price for MOG-515101.
+    price: 352.13,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "515101",
+    fitment: "2006–2008 Dodge Ram 5.9L Cummins 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-moog-515101-wheel-bearing-hub-assembly-06-08-dodge-ram-59l-cummins-250035",
+    thumbnail: "/product-media/suspension/moog-wheel-bearing-hub-assembly-515101/1.webp",
+    images: ["/product-media/suspension/moog-wheel-bearing-hub-assembly-515101/1.webp"],
+    description: `MOOG hub assembly wheel bearing and hub assembly for the 2006–2008 Dodge Ram 5.9L Cummins 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+MOOG's design changes here are aimed at longer life, smoother operation and correct ABS function, with coated wheel studs to resist corrosion.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: MOOG
+Part: Wheel bearing and hub assembly
+Specification: hub assembly
+Application: 2006–2008 Dodge Ram 5.9L Cummins 4WD
+Part number: 515101
+
+Highlights
+
+Hub assembly
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+MOOG
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3040,
+    createdAt: 1789430400000,
+    name: "Kryptonite Wheel Bearing & Hub Assembly, fine thread (M14 × 1.50) — 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4 — KR205-F",
+    category: "suspension",
+    brand: "kryptonite",
+    // dpp listing price for KRY-KR205-F.
+    price: 284.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "KR205-F",
+    fitment: "1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kryptonite-lifetime-warranty-wheel-bearing-99-04-ford-f-250-f-350-superduty-4x4",
+    thumbnail: "/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr205-f/1.webp",
+    images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr205-f/1.webp"],
+    description: `Kryptonite lifetime warranty, fine thread (M14 × 1.50) wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Super Duty wheel studs come in two threads and they are not interchangeable — this is the fine thread (M14 × 1.50) version.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Kryptonite
+Part: Wheel bearing and hub assembly
+Specification: lifetime warranty, fine thread (M14 × 1.50)
+Warranty: Lifetime Warranty
+Application: 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4
+Part number: KR205-F
+
+Highlights
+
+Lifetime warranty, fine thread (M14 × 1.50)
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Kryptonite
+
+Warranty
+Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3041,
+    createdAt: 1789430400000,
+    name: "Kryptonite Wheel Bearing & Hub Assembly, coarse thread (M14 × 2.0) — 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4 — KR205-C",
+    category: "suspension",
+    brand: "kryptonite",
+    // dpp listing price for KRY-KR205-C.
+    price: 284.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "KR205-C",
+    fitment: "1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kryptonite-lifetime-warranty-wheel-bearing-99-04-ford-f-250-f-350-superduty-4x4",
+    thumbnail: "/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr205-c/1.webp",
+    images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr205-c/1.webp"],
+    description: `Kryptonite lifetime warranty, coarse thread (M14 × 2.0) wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Super Duty wheel studs come in two threads and they are not interchangeable — this is the coarse thread (M14 × 2.0) version.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Kryptonite
+Part: Wheel bearing and hub assembly
+Specification: lifetime warranty, coarse thread (M14 × 2.0)
+Warranty: Lifetime Warranty
+Application: 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4
+Part number: KR205-C
+
+Highlights
+
+Lifetime warranty, coarse thread (M14 × 2.0)
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Kryptonite
+
+Warranty
+Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3042,
+    createdAt: 1789430400000,
+    name: "Kryptonite Wheel Bearing & Hub Assembly — 2005–2010 Ford F-250 / F-350 Super Duty 4x4 — KR200",
+    category: "suspension",
+    brand: "kryptonite",
+    // dpp listing price for KRY-KR200.
+    price: 417.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "KR200",
+    fitment: "2005–2010 Ford F-250 / F-350 Super Duty 4x4.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kryptonite-lifetime-warranty-wheel-bearing-05-10-ford-f-250-f-350-superduty-4x4",
+    thumbnail: "/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr200/1.webp",
+    images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr200/1.webp"],
+    description: `Kryptonite lifetime warranty wheel bearing and hub assembly for the 2005–2010 Ford F-250 / F-350 Super Duty 4x4.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Kryptonite's answer to bearings that fail again is a lifetime warranty on the replacement.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Kryptonite
+Part: Wheel bearing and hub assembly
+Specification: lifetime warranty
+Warranty: Lifetime Warranty
+Application: 2005–2010 Ford F-250 / F-350 Super Duty 4x4
+Part number: KR200
+
+Highlights
+
+Lifetime warranty
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Kryptonite
+
+Warranty
+Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3043,
+    createdAt: 1789430400000,
+    name: "Kryptonite Wheel Bearing & Hub Assembly — 2011–2016 Ford F-250 / F-350 Super Duty 4x4 — KR435",
+    category: "suspension",
+    brand: "kryptonite",
+    // dpp listing price for KRY-KR435.
+    price: 417.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "KR435",
+    fitment: "2011–2016 Ford F-250 / F-350 Super Duty 4x4.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kryptonite-lifetime-warranty-wheel-bearing-11-16-ford-f-250-f-350-superduty-4x4",
+    thumbnail: "/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr435/1.webp",
+    images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr435/1.webp"],
+    description: `Kryptonite lifetime warranty wheel bearing and hub assembly for the 2011–2016 Ford F-250 / F-350 Super Duty 4x4.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Kryptonite's answer to bearings that fail again is a lifetime warranty on the replacement.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Kryptonite
+Part: Wheel bearing and hub assembly
+Specification: lifetime warranty
+Warranty: Lifetime Warranty
+Application: 2011–2016 Ford F-250 / F-350 Super Duty 4x4
+Part number: KR435
+
+Highlights
+
+Lifetime warranty
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Kryptonite
+
+Warranty
+Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3044,
+    createdAt: 1789430400000,
+    name: "Kryptonite Wheel Bearing & Hub Assembly — 2011–2019 GM 2500HD / 3500 — 2WD and 4WD, single and dual rear wheel — KR303",
+    category: "suspension",
+    brand: "kryptonite",
+    // dpp listing price for KRY-KR303.
+    price: 332.49,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "KR303",
+    fitment: "2011–2019 GM 2500HD / 3500 — 2WD and 4WD, single and dual rear wheel.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kryptonite-lifetime-warranty-wheel-bearing-11-21-gm-2500hd-3500",
+    thumbnail: "/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr303/1.webp",
+    images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr303/1.webp"],
+    description: `Kryptonite lifetime warranty, 8 lug wheel bearing and hub assembly for the 2011–2019 GM 2500HD / 3500 — 2WD and 4WD, single and dual rear wheel.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+This is the 8-lug assembly, and it covers both drivetrains and both rear wheel configurations.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Kryptonite
+Part: Wheel bearing and hub assembly
+Specification: lifetime warranty, 8 lug
+Warranty: Lifetime Warranty
+Application: 2011–2019 GM 2500HD / 3500 — 2WD and 4WD, single and dual rear wheel
+Part number: KR303
+
+Highlights
+
+Lifetime warranty, 8 lug
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Kryptonite
+
+Warranty
+Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3045,
+    createdAt: 1789430400000,
+    name: "Axiom Supply Wheel Bearing & Hub Assembly — 2017–2022 Ford F-250 / F-350 4WD — AX515183",
+    category: "suspension",
+    brand: "axiom-supply",
+    // dpp listing price for AX515183.
+    price: 399.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AX515183",
+    fitment: "2017–2022 Ford F-250 / F-350 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/axiom-supply-wheel-bearing-17-22-ford-f-250-f-350-4ed",
+    thumbnail: "/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515183/1.webp",
+    images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515183/1.webp"],
+    description: `Axiom Supply reinforced hub and bearing wheel bearing and hub assembly for the 2017–2022 Ford F-250 / F-350 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Axiom reinforce the internals so the hub does not flex under load, which is what keeps the steering tight and the brakes feeling right.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Axiom Supply
+Part: Wheel bearing and hub assembly
+Specification: reinforced hub and bearing
+Application: 2017–2022 Ford F-250 / F-350 4WD
+Part number: AX515183
+
+Highlights
+
+Reinforced hub and bearing
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Axiom Supply
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3046,
+    createdAt: 1789430400000,
+    name: "Axiom Supply Wheel Bearing & Hub Assembly, fine thread — 1999–2004 Ford F-250 / F-350 4WD — AX515056",
+    category: "suspension",
+    brand: "axiom-supply",
+    // dpp listing price for AXS-AX515056.
+    price: 279.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AX515056",
+    fitment: "1999–2004 Ford F-250 / F-350 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/axiom-supply-wheel-bearing-assembly-fine-coarse-thread-99-04-ford-f-250-f-350-4wd",
+    thumbnail: "/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515056/1.webp",
+    images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515056/1.webp"],
+    description: `Axiom Supply reinforced, fine thread wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Super Duty wheel studs come in two threads — this is the fine thread version. Check yours before ordering.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Axiom Supply
+Part: Wheel bearing and hub assembly
+Specification: reinforced, fine thread
+Application: 1999–2004 Ford F-250 / F-350 4WD
+Part number: AX515056
+
+Highlights
+
+Reinforced, fine thread
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Axiom Supply
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3047,
+    createdAt: 1789430400000,
+    name: "Axiom Supply Wheel Bearing & Hub Assembly, coarse thread — 1999–2004 Ford F-250 / F-350 4WD — AX515025",
+    category: "suspension",
+    brand: "axiom-supply",
+    // dpp listing price for AXS-AX515025.
+    price: 279.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AX515025",
+    fitment: "1999–2004 Ford F-250 / F-350 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/axiom-supply-wheel-bearing-assembly-fine-coarse-thread-99-04-ford-f-250-f-350-4wd",
+    thumbnail: "/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515025/1.webp",
+    images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515025/1.webp"],
+    description: `Axiom Supply reinforced, coarse thread wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+Super Duty wheel studs come in two threads — this is the coarse thread version. Check yours before ordering.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Axiom Supply
+Part: Wheel bearing and hub assembly
+Specification: reinforced, coarse thread
+Application: 1999–2004 Ford F-250 / F-350 4WD
+Part number: AX515025
+
+Highlights
+
+Reinforced, coarse thread
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Axiom Supply
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3048,
+    createdAt: 1789430400000,
+    name: "Axiom Supply Wheel Bearing & Hub Assembly — 2005–2010 Ford F-250 / F-350 4WD — AX515081",
+    category: "suspension",
+    brand: "axiom-supply",
+    // dpp listing price for AXS-AX515081.
+    price: 399.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AX515081",
+    fitment: "2005–2010 Ford F-250 / F-350 4WD.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/axiom-supply-wheel-bearing-assembly-05-10-ford-f-250-f-350-4wd",
+    thumbnail: "/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515081/1.webp",
+    images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515081/1.webp"],
+    description: `Axiom Supply reinforced hub and bearing wheel bearing and hub assembly for the 2005–2010 Ford F-250 / F-350 4WD.
+
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+
+Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+
+The internal structure is built to resist flex under heavy load, oversized tyres and lifted suspension.
+
+A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
+
+Specifications
+
+Manufacturer: Axiom Supply
+Part: Wheel bearing and hub assembly
+Specification: reinforced hub and bearing
+Application: 2005–2010 Ford F-250 / F-350 4WD
+Part number: AX515081
+
+Highlights
+
+Reinforced hub and bearing
+Direct replacement assembly
+Built for heavy offset wheels and big tyres
+Axiom Supply
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3049,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, Warn hubs, coarse studs — 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion — FO60-3X1104-A",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-FO60-3X1104-A.
+    price: 2202,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FO60-3X1104-A",
+    fitment: "1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion. Supplied with Warn hubs, coarse studs. Stud thread must match your truck — the coarse and fine versions are separate part numbers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-spin-hub-99-14-superduty-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-a/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-a/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with Warn hubs, coarse studs for the 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with Warn hubs, coarse studs. Dynatrac build the kit with a choice of hub brand and stud thread, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: Warn hubs, coarse studs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion
+Part number: FO60-3X1104-A
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+Warn hubs, coarse studs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3050,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, Warn hubs, fine studs — 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion — FO60-3X1104-B",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-FO60-3X1104-B.
+    price: 2202,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FO60-3X1104-B",
+    fitment: "1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion. Supplied with Warn hubs, fine studs. Stud thread must match your truck — the coarse and fine versions are separate part numbers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-spin-hub-99-14-superduty-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-b/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-b/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with Warn hubs, fine studs for the 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with Warn hubs, fine studs. Dynatrac build the kit with a choice of hub brand and stud thread, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: Warn hubs, fine studs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion
+Part number: FO60-3X1104-B
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+Warn hubs, fine studs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3051,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, DynaLoc hubs, coarse studs — 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion — FO60-3X1104-I",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-FO60-3X1104-I.
+    price: 2644,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FO60-3X1104-I",
+    fitment: "1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion. Supplied with DynaLoc hubs, coarse studs. Stud thread must match your truck — the coarse and fine versions are separate part numbers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-spin-hub-99-14-superduty-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-i/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-i/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with DynaLoc hubs, coarse studs for the 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with DynaLoc hubs, coarse studs. Dynatrac build the kit with a choice of hub brand and stud thread, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: DynaLoc hubs, coarse studs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion
+Part number: FO60-3X1104-I
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+DynaLoc hubs, coarse studs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3052,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, DynaLoc hubs, fine studs — 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion — FO60-3X1104-H",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-FO60-3X1104-H.
+    price: 2644,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FO60-3X1104-H",
+    fitment: "1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion. Supplied with DynaLoc hubs, fine studs. Stud thread must match your truck — the coarse and fine versions are separate part numbers.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-spin-hub-99-14-superduty-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-h/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-h/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with DynaLoc hubs, fine studs for the 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with DynaLoc hubs, fine studs. Dynatrac build the kit with a choice of hub brand and stud thread, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: DynaLoc hubs, fine studs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 1999–2004 Ford Super Duty F-250 / F-350 and 2005 Excursion
+Part number: FO60-3X1104-H
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+DynaLoc hubs, fine studs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3053,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, Warn hubs — 2005–2014 Ford Super Duty F-250 / F-350 — FO60-3X1104-C",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-FO60-3X1104-C.
+    price: 2202,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FO60-3X1104-C",
+    fitment: "2005–2014 Ford Super Duty F-250 / F-350. Supplied with Warn hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-spin-hub-99-14-superduty-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-c/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-c/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with Warn hubs for the 2005–2014 Ford Super Duty F-250 / F-350.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with Warn hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: Warn hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2005–2014 Ford Super Duty F-250 / F-350
+Part number: FO60-3X1104-C
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+Warn hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3054,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, DynaLoc hubs — 2005–2014 Ford Super Duty F-250 / F-350 — FO60-3X1104-F",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-FO60-3X1104-F.
+    price: 2644,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FO60-3X1104-F",
+    fitment: "2005–2014 Ford Super Duty F-250 / F-350. Supplied with DynaLoc hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-spin-hub-99-14-superduty-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-f/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-fo60-3x1104-f/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with DynaLoc hubs for the 2005–2014 Ford Super Duty F-250 / F-350.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with DynaLoc hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: DynaLoc hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2005–2014 Ford Super Duty F-250 / F-350
+Part number: FO60-3X1104-F
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+DynaLoc hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3055,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, Warn hubs — 2003–2008 Dodge Ram 2500 / 3500 — CR60-3X1104-A",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-CR60-3X1104-A.
+    price: 2202,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CR60-3X1104-A",
+    fitment: "2003–2008 Dodge Ram 2500 / 3500. Supplied with Warn hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-front-hub-kit-03-09-ram",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-a/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-a/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with Warn hubs for the 2003–2008 Dodge Ram 2500 / 3500.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with Warn hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: Warn hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2003–2008 Dodge Ram 2500 / 3500
+Part number: CR60-3X1104-A
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+Warn hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3056,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, DynaLoc hubs — 2003–2008 Dodge Ram 2500 / 3500 — CR60-3X1104-E",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-CR60-3X1104-E.
+    price: 2644,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CR60-3X1104-E",
+    fitment: "2003–2008 Dodge Ram 2500 / 3500. Supplied with DynaLoc hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-front-hub-kit-03-09-ram",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-e/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-e/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with DynaLoc hubs for the 2003–2008 Dodge Ram 2500 / 3500.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with DynaLoc hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: DynaLoc hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2003–2008 Dodge Ram 2500 / 3500
+Part number: CR60-3X1104-E
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+DynaLoc hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3057,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, Warn hubs — 2010–2011 Dodge Ram 2500 / 3500 — CR60-3X1104-H",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-CR60-3X1104-H.
+    price: 2202,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CR60-3X1104-H",
+    fitment: "2010–2011 Dodge Ram 2500 / 3500. Supplied with Warn hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-front-hub-kit-10-18-ram-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-h/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-h/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with Warn hubs for the 2010–2011 Dodge Ram 2500 / 3500.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with Warn hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: Warn hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2010–2011 Dodge Ram 2500 / 3500
+Part number: CR60-3X1104-H
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+Warn hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3058,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, DynaLoc hubs — 2010–2011 Dodge Ram 2500 / 3500 — CR60-3X1104-J",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-CR60-3X1104-J.
+    price: 2644,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CR60-3X1104-J",
+    fitment: "2010–2011 Dodge Ram 2500 / 3500. Supplied with DynaLoc hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-front-hub-kit-10-18-ram-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-j/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-j/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with DynaLoc hubs for the 2010–2011 Dodge Ram 2500 / 3500.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with DynaLoc hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: DynaLoc hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2010–2011 Dodge Ram 2500 / 3500
+Part number: CR60-3X1104-J
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+DynaLoc hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3059,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, Warn hubs — 2012–2022 Ram 2500 / 3500 — CR60-3X1104-K",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-CR60-3X1104-K.
+    price: 2202,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CR60-3X1104-K",
+    fitment: "2012–2022 Ram 2500 / 3500. Supplied with Warn hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-front-hub-kit-10-18-ram-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-k/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-k/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with Warn hubs for the 2012–2022 Ram 2500 / 3500.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with Warn hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: Warn hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2012–2022 Ram 2500 / 3500
+Part number: CR60-3X1104-K
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+Warn hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3060,
+    createdAt: 1789430400000,
+    name: "Dynatrac Free-Spin Heavy-Duty Hub Conversion Kit, DynaLoc hubs — 2012–2022 Ram 2500 / 3500 — CR60-3X1104-L",
+    category: "suspension",
+    brand: "dynatrac",
+    // dpp listing price for DYN-CR60-3X1104-L.
+    price: 2644,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CR60-3X1104-L",
+    fitment: "2012–2022 Ram 2500 / 3500. Supplied with DynaLoc hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/dynatrac-front-hub-kit-10-18-ram-aspx",
+    thumbnail: "/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-l/1.webp",
+    images: ["/product-media/suspension/dynatrac-free-spin-hub-conversion-cr60-3x1104-l/1.webp"],
+    description: `Dynatrac Free-Spin heavy-duty hub conversion kit with DynaLoc hubs for the 2012–2022 Ram 2500 / 3500.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+For a truck that is an investment as much as a tool, the argument is downtime: a serviceable bearing is maintained on your schedule rather than replaced on its own.
+
+This configuration ships with DynaLoc hubs. Dynatrac build the kit with a choice of hub brand, each with its own part number, so check both before ordering.
+
+Specifications
+
+Manufacturer: Dynatrac
+Kit: Free-Spin heavy-duty hub conversion
+Hubs: DynaLoc hubs
+Replaces: Sealed unit bearings
+Gives: Fixed spindle, serviceable wheel bearings, manual locking hubs
+Application: 2012–2022 Ram 2500 / 3500
+Part number: CR60-3X1104-L
+
+Highlights
+
+Replaces sealed unit bearings
+Serviceable, adjustable wheel bearings
+DynaLoc hubs
+Dynatrac Free-Spin
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3061,
+    createdAt: 1789430400000,
+    name: "Spyntec Hub Conversion Kit, Mile Marker hubs — 1999–2002 Ford F-250 / F-350 Super Duty, coarse threads — F9904C",
+    category: "suspension",
+    brand: "spyntec",
+    // dpp listing price for SAST-F9904C.
+    price: 1950,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F9904C",
+    fitment: "1999–2002 Ford F-250 and F-350 Super Duty with coarse threads. Supplied with Mile Marker hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/spyntec-hub-conversion-99-08-ford-superduty",
+    thumbnail: "/product-media/suspension/spyntec-hub-conversion-kit-f9904c/1.webp",
+    images: ["/product-media/suspension/spyntec-hub-conversion-kit-f9904c/1.webp"],
+    description: `Spyntec hub conversion kit with Mile Marker hubs for the 1999–2002 Ford F-250 / F-350 Super Duty.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+Spyntec's case for it is straightforward: better fuel economy with the front axle disconnected, less wear on the front driveline, and the strength of a fixed spindle.
+
+It also puts the choice of locking hub back in your hands — a mechanical hub you select rather than a sealed assembly you inherit.
+
+This kit is the 1999–2002 version for trucks with coarse threads, supplied with Mile Marker hubs. Spyntec split this part three ways by year and thread, so confirm yours before ordering.
+
+Specifications
+
+Manufacturer: Spyntec Industries
+Kit: Hub conversion
+Hubs: Mile Marker hubs
+Thread: coarse threads
+Years: 1999–2002
+Application: Ford F-250 / F-350 Super Duty
+Part number: F9904C
+
+Highlights
+
+Fixed spindle with serviceable bearings
+Mechanical locking hubs of your choice
+Mile Marker hubs
+Less front driveline wear
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3062,
+    createdAt: 1789430400000,
+    name: "Spyntec Hub Conversion Kit, Warn hubs — 1999–2002 Ford F-250 / F-350 Super Duty, coarse threads — F9904C-WARNHUBS",
+    category: "suspension",
+    brand: "spyntec",
+    // dpp listing price for SAST-F9904C-WARNHUBS.
+    price: 2100,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F9904C-WARNHUBS",
+    fitment: "1999–2002 Ford F-250 and F-350 Super Duty with coarse threads. Supplied with Warn hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/spyntec-hub-conversion-99-08-ford-superduty",
+    thumbnail: "/product-media/suspension/spyntec-hub-conversion-kit-f9904c-warnhubs/1.webp",
+    images: ["/product-media/suspension/spyntec-hub-conversion-kit-f9904c-warnhubs/1.webp"],
+    description: `Spyntec hub conversion kit with Warn hubs for the 1999–2002 Ford F-250 / F-350 Super Duty.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+Spyntec's case for it is straightforward: better fuel economy with the front axle disconnected, less wear on the front driveline, and the strength of a fixed spindle.
+
+It also puts the choice of locking hub back in your hands — a mechanical hub you select rather than a sealed assembly you inherit.
+
+This kit is the 1999–2002 version for trucks with coarse threads, supplied with Warn hubs. Spyntec split this part three ways by year and thread, so confirm yours before ordering.
+
+Specifications
+
+Manufacturer: Spyntec Industries
+Kit: Hub conversion
+Hubs: Warn hubs
+Thread: coarse threads
+Years: 1999–2002
+Application: Ford F-250 / F-350 Super Duty
+Part number: F9904C-WARNHUBS
+
+Highlights
+
+Fixed spindle with serviceable bearings
+Mechanical locking hubs of your choice
+Warn hubs
+Less front driveline wear
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3063,
+    createdAt: 1789430400000,
+    name: "Spyntec Hub Conversion Kit, Mile Marker hubs — 2002.5–2004 Ford F-250 / F-350 Super Duty, fine threads — F9904F",
+    category: "suspension",
+    brand: "spyntec",
+    // dpp listing price for SAST-F9904F.
+    price: 1950,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F9904F",
+    fitment: "2002.5–2004 Ford F-250 and F-350 Super Duty with fine threads. Supplied with Mile Marker hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/spyntec-hub-conversion-99-08-ford-superduty",
+    thumbnail: "/product-media/suspension/spyntec-hub-conversion-kit-f9904f/1.webp",
+    images: ["/product-media/suspension/spyntec-hub-conversion-kit-f9904f/1.webp"],
+    description: `Spyntec hub conversion kit with Mile Marker hubs for the 2002.5–2004 Ford F-250 / F-350 Super Duty.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+Spyntec's case for it is straightforward: better fuel economy with the front axle disconnected, less wear on the front driveline, and the strength of a fixed spindle.
+
+It also puts the choice of locking hub back in your hands — a mechanical hub you select rather than a sealed assembly you inherit.
+
+This kit is the 2002.5–2004 version for trucks with fine threads, supplied with Mile Marker hubs. Spyntec split this part three ways by year and thread, so confirm yours before ordering.
+
+Specifications
+
+Manufacturer: Spyntec Industries
+Kit: Hub conversion
+Hubs: Mile Marker hubs
+Thread: fine threads
+Years: 2002.5–2004
+Application: Ford F-250 / F-350 Super Duty
+Part number: F9904F
+
+Highlights
+
+Fixed spindle with serviceable bearings
+Mechanical locking hubs of your choice
+Mile Marker hubs
+Less front driveline wear
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3064,
+    createdAt: 1789430400000,
+    name: "Spyntec Hub Conversion Kit, Warn hubs — 2002.5–2004 Ford F-250 / F-350 Super Duty, fine threads — F9904F-WARNHUBS",
+    category: "suspension",
+    brand: "spyntec",
+    // dpp listing price for SAST-F9904F-WARNHUBS.
+    price: 2100,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F9904F-WARNHUBS",
+    fitment: "2002.5–2004 Ford F-250 and F-350 Super Duty with fine threads. Supplied with Warn hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/spyntec-hub-conversion-99-08-ford-superduty",
+    thumbnail: "/product-media/suspension/spyntec-hub-conversion-kit-f9904f-warnhubs/1.webp",
+    images: ["/product-media/suspension/spyntec-hub-conversion-kit-f9904f-warnhubs/1.webp"],
+    description: `Spyntec hub conversion kit with Warn hubs for the 2002.5–2004 Ford F-250 / F-350 Super Duty.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+Spyntec's case for it is straightforward: better fuel economy with the front axle disconnected, less wear on the front driveline, and the strength of a fixed spindle.
+
+It also puts the choice of locking hub back in your hands — a mechanical hub you select rather than a sealed assembly you inherit.
+
+This kit is the 2002.5–2004 version for trucks with fine threads, supplied with Warn hubs. Spyntec split this part three ways by year and thread, so confirm yours before ordering.
+
+Specifications
+
+Manufacturer: Spyntec Industries
+Kit: Hub conversion
+Hubs: Warn hubs
+Thread: fine threads
+Years: 2002.5–2004
+Application: Ford F-250 / F-350 Super Duty
+Part number: F9904F-WARNHUBS
+
+Highlights
+
+Fixed spindle with serviceable bearings
+Mechanical locking hubs of your choice
+Warn hubs
+Less front driveline wear
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3065,
+    createdAt: 1789430400000,
+    name: "Spyntec Hub Conversion Kit, Mile Marker hubs — 2005–2008 Ford F-250 / F-350 Super Duty — F0508",
+    category: "suspension",
+    brand: "spyntec",
+    // dpp listing price for SAST-F0508.
+    price: 1950,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F0508",
+    fitment: "2005–2008 Ford F-250 and F-350 Super Duty. Supplied with Mile Marker hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/spyntec-hub-conversion-99-08-ford-superduty",
+    thumbnail: "/product-media/suspension/spyntec-hub-conversion-kit-f0508/1.webp",
+    images: ["/product-media/suspension/spyntec-hub-conversion-kit-f0508/1.webp"],
+    description: `Spyntec hub conversion kit with Mile Marker hubs for the 2005–2008 Ford F-250 / F-350 Super Duty.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+Spyntec's case for it is straightforward: better fuel economy with the front axle disconnected, less wear on the front driveline, and the strength of a fixed spindle.
+
+It also puts the choice of locking hub back in your hands — a mechanical hub you select rather than a sealed assembly you inherit.
+
+This kit is the 2005–2008 version, supplied with Mile Marker hubs. Spyntec split this part three ways by year and thread, so confirm yours before ordering.
+
+Specifications
+
+Manufacturer: Spyntec Industries
+Kit: Hub conversion
+Hubs: Mile Marker hubs
+Years: 2005–2008
+Application: Ford F-250 / F-350 Super Duty
+Part number: F0508
+
+Highlights
+
+Fixed spindle with serviceable bearings
+Mechanical locking hubs of your choice
+Mile Marker hubs
+Less front driveline wear
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3066,
+    createdAt: 1789430400000,
+    name: "Spyntec Hub Conversion Kit, Warn hubs — 2005–2008 Ford F-250 / F-350 Super Duty — F0508-WARNHUBS",
+    category: "suspension",
+    brand: "spyntec",
+    // dpp listing price for SAST-F0508-WARNHUBS.
+    price: 2100,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F0508-WARNHUBS",
+    fitment: "2005–2008 Ford F-250 and F-350 Super Duty. Supplied with Warn hubs.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/spyntec-hub-conversion-99-08-ford-superduty",
+    thumbnail: "/product-media/suspension/spyntec-hub-conversion-kit-f0508-warnhubs/1.webp",
+    images: ["/product-media/suspension/spyntec-hub-conversion-kit-f0508-warnhubs/1.webp"],
+    description: `Spyntec hub conversion kit with Warn hubs for the 2005–2008 Ford F-250 / F-350 Super Duty.
+
+A unit bearing is sealed, non-serviceable and turns whenever the wheel does. When it wears, the whole assembly is replaced. A free-spin conversion swaps that arrangement for fixed spindles with serviceable wheel bearings and manual locking hubs — bearings you can adjust and repack, and a front axle that stops turning when it is not needed.
+
+Spyntec's case for it is straightforward: better fuel economy with the front axle disconnected, less wear on the front driveline, and the strength of a fixed spindle.
+
+It also puts the choice of locking hub back in your hands — a mechanical hub you select rather than a sealed assembly you inherit.
+
+This kit is the 2005–2008 version, supplied with Warn hubs. Spyntec split this part three ways by year and thread, so confirm yours before ordering.
+
+Specifications
+
+Manufacturer: Spyntec Industries
+Kit: Hub conversion
+Hubs: Warn hubs
+Years: 2005–2008
+Application: Ford F-250 / F-350 Super Duty
+Part number: F0508-WARNHUBS
+
+Highlights
+
+Fixed spindle with serviceable bearings
+Mechanical locking hubs of your choice
+Warn hubs
+Less front driveline wear
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3067,
+    createdAt: 1789430400000,
+    name: "WARN Premium Manual Locking Hub Set — 1999–2004 Ford F-250 / F-350 Super Duty and Excursion — 38826",
+    category: "suspension",
+    brand: "warn",
+    // dpp listing price for WARN-38826.
+    price: 345.92,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "38826",
+    fitment: "1999–2004 Ford F-250 / F-350 Super Duty and Excursion.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/warn-38826-manual-hub-set-99-04-ford",
+    thumbnail: "/product-media/suspension/warn-premium-manual-hub-set-38826/1.webp",
+    images: ["/product-media/suspension/warn-premium-manual-hub-set-38826/1.webp"],
+    description: `WARN Premium manual locking hub set for the 1999–2004 Ford Super Duty and Excursion.
+
+A manual locking hub disconnects the front wheels from the front axle shafts when four-wheel drive is not in use. The front differential and shafts stop turning, which saves wear and a little fuel.
+
+The other half of the argument is control: a manual hub locks when you lock it and stays locked, rather than relying on a vacuum or automatic mechanism that may or may not have engaged.
+
+WARN's Premium hubs are the long-standing choice for these trucks.
+
+Specifications
+
+Manufacturer: WARN Industries
+Type: Premium manual locking hubs
+Quantity: Set — both sides
+Application: 1999–2004 Ford Super Duty and Excursion
+Part number: 38826
+
+Highlights
+
+Manual engagement — locks when you lock it
+Disconnects the front driveline
+Set for both sides
+WARN Premium
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3068,
+    createdAt: 1789430400000,
+    name: "Yukon Gear & Axle Dana 60 Hardcore Locking Hub Set — 1989–1993 Dodge W250 / W350 and 1983–1997 Ford F-250 / F-350 — YHC70003",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YHC70003.
+    price: 737.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YHC70003",
+    fitment: "1989–1993 Dodge W250 / W350 and 1983–1997 Ford F-250 / F-350 with the Dana 60 front axle.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-gear-axle-dana-60-hardcore-locking-hub-set-89-93-dodge-w250350-83-97-ford-f-250350",
+    thumbnail: "/product-media/suspension/yukon-dana-60-hardcore-locking-hub-set-yhc70003/1.webp",
+    images: ["/product-media/suspension/yukon-dana-60-hardcore-locking-hub-set-yhc70003/1.webp"],
+    description: `Yukon Hardcore locking hub set with chromoly internals for Dana 60 front axles.
+
+Factory locking hubs have a habit of letting go under high torque, which is exactly the moment you needed them.
+
+Yukon's Hardcore hubs use chromoly internals in all-steel construction, built so that disengagement under load is not something to think about.
+
+The 1/3-turn engagement is quick and unambiguous — an important quality in a part you operate with cold hands in bad conditions.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Series: Hardcore locking hubs
+Internals: Chromoly
+Construction: All steel
+Engagement: 1/3 turn
+Axle: Dana 60 front
+Part number: YHC70003
+
+Highlights
+
+Chromoly internals, all-steel construction
+Will not disengage under high torque
+1/3-turn engagement
+Dana 60 front axles
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3069,
+    createdAt: 1789430400000,
+    name: "Yukon 4340 Chromoly Dana 60 Inner Front Axle Shaft, left-hand, 35 Spline — 1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4 — YA W48228",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YA W48228.
+    price: 384.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YA W48228",
+    fitment: "1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4, Dana 60 front axle. Left-hand inner shaft. Sold individually.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-chromoly-dana-60-inner-front-lh-35-spline-axle-shaft-99-04-ford-f-350-02-04-ford-f-250-4x4",
+    thumbnail: "/product-media/suspension/yukon-chromoly-dana-60-inner-front-axle-ya-w48228/1.webp",
+    images: ["/product-media/suspension/yukon-chromoly-dana-60-inner-front-axle-ya-w48228/1.webp"],
+    description: `Yukon 4340 chromoly Dana 60 inner front axle shaft, left-hand, 35 spline, for the 1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4.
+
+Front axle shafts break at the worst time and in the worst place — usually mid-corner, under power, with a tyre already off the ground.
+
+This is Yukon's 4340 chromoly upgrade for the factory shaft: 35 splines, 37.62 in long, produced with cold rolling and the rest of Yukon's manufacturing process, which is what puts the strength above a standard replacement.
+
+It is an upgraded stock replacement, so it goes in where the original came out. Sold individually — left and right are different parts.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Material: 4340 chromoly
+Axle: Dana 60 front, inner shaft
+Side: left-hand
+Splines: 35
+Length: 37.62 in
+Quantity: Sold individually
+Part number: YA W48228
+
+Highlights
+
+4340 chromoly, stronger than stock
+35 spline, 37.62 in
+left-hand inner shaft
+Upgraded stock replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3070,
+    createdAt: 1789430400000,
+    name: "Yukon 4340 Chromoly Dana 60 Inner Front Axle Shaft, right-hand, 35 Spline — 1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4 — YA W48227",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YA W48227.
+    price: 425.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YA W48227",
+    fitment: "1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4, Dana 60 front axle. Right-hand inner shaft. Sold individually.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-dana-60-inner-front-right-hand-35-spline-axle-shaft-99-04-ford-superduty",
+    thumbnail: "/product-media/suspension/yukon-chromoly-dana-60-inner-front-axle-ya-w48227/1.webp",
+    images: ["/product-media/suspension/yukon-chromoly-dana-60-inner-front-axle-ya-w48227/1.webp"],
+    description: `Yukon 4340 chromoly Dana 60 inner front axle shaft, right-hand, 35 spline, for the 1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4.
+
+Front axle shafts break at the worst time and in the worst place — usually mid-corner, under power, with a tyre already off the ground.
+
+This is Yukon's 4340 chromoly upgrade for the factory shaft: 35 splines, 37.62 in long, produced with cold rolling and the rest of Yukon's manufacturing process, which is what puts the strength above a standard replacement.
+
+It is an upgraded stock replacement, so it goes in where the original came out. Sold individually — left and right are different parts.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Material: 4340 chromoly
+Axle: Dana 60 front, inner shaft
+Side: right-hand
+Splines: 35
+Length: 37.62 in
+Quantity: Sold individually
+Part number: YA W48227
+
+Highlights
+
+4340 chromoly, stronger than stock
+35 spline, 37.62 in
+right-hand inner shaft
+Upgraded stock replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3071,
+    createdAt: 1789430400000,
+    name: "Yukon 4340 Chromoly Front Right Axle Shaft, AAM 9.25 — 2003–2009 Dodge Ram 2500 / 3500 — YA W43002",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YA W43002.
+    price: 321.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YA W43002",
+    fitment: "2003–2009 Dodge Ram 2500 / 3500 with the AAM 9.25 front differential. Right side. Sold individually — the U-joint is a separate part.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-4340-chromoly-front-right-side-axle-aam-925-differential-03-09-dodge-ram-25003500",
+    thumbnail: "/product-media/suspension/yukon-4340-chromoly-front-axle-ya-w43002/1.webp",
+    images: ["/product-media/suspension/yukon-4340-chromoly-front-axle-ya-w43002/1.webp"],
+    description: `Yukon 4340 chromoly right front axle shaft for the AAM 9.25 differential in the 2003–2009 Dodge Ram 2500 / 3500.
+
+A front axle shaft is a wear-and-break part on a truck running big tyres, and the factory shaft in the AAM 9.25 is the usual limit.
+
+This is Yukon's 4340 chromoly upgraded stock replacement: 33 splines with a 1485 U-joint, so the spline count and joint size match the factory arrangement while the material does not.
+
+Sold individually, and the U-joint is sold separately.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Material: 4340 chromoly
+Differential: AAM 9.25 front
+Side: Right
+Splines: 33
+U-joint: 1485 — sold separately
+Quantity: Sold individually
+Part number: YA W43002
+
+Highlights
+
+4340 chromoly upgrade
+33 spline, 1485 U-joint
+Right side, sold individually
+U-joint sold separately
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3072,
+    createdAt: 1789430400000,
+    name: "Yukon Rear Axle Bearing & Seal Kit, Ford 10.5 — 1999–2014 Ford F-250 and 1999–2013 F-350 — AK F10.5-A",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-AK F10.5-A.
+    price: 304.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AK F10.5-A",
+    fitment: "1999–2014 Ford F-250 and 1999–2013 Ford F-350 with the Ford 10.5 rear differential. Each kit services one side — order two to do both.",
+    included: ["Inner bearing and race","Outer bearing and race","Axle seal"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-rear-axle-bearing-seal-kit-105-ford-99-14-f-250-99-13-f-350",
+    thumbnail: "/product-media/suspension/yukon-rear-axle-bearing-seal-kit-ak-f10-5-a/1.webp",
+    images: ["/product-media/suspension/yukon-rear-axle-bearing-seal-kit-ak-f10-5-a/1.webp"],
+    description: `Yukon rear axle bearing and seal kit for the Ford 10.5 rear differential, one side per kit.
+
+Rear axle bearings give warning before they fail — a growl that changes with load, and eventually gear oil finding its way past the seal onto the brakes.
+
+This kit supplies high-quality inner and outer bearings with races and a new axle seal, which is everything the job needs on one side.
+
+Each kit services one side. If you are doing both, order two.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Differential: Ford 10.5 rear
+Included: Inner and outer bearings with races, axle seal
+Coverage: One side per kit
+Application: 1999–2014 F-250, 1999–2013 F-350
+Part number: AK F10.5-A
+
+Highlights
+
+Inner and outer bearings with races
+New axle seal included
+One side per kit
+Ford 10.5 rear differential
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3073,
+    createdAt: 1789430400000,
+    name: "Yukon Gear & Axle Front Dana 60 Ring and Pinion, 3.54 Ratio — 2017–2019 Ford F-250 / F-350 Super Duty — YG D60SR-354R",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YG D60SR-354R.
+    price: 744.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YG D60SR-354R",
+    fitment: "2017–2019 Ford F-250 / F-350 Super Duty, front Dana 60 axle. 3.54 ratio.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-gear-axle-front-dana-60-ring-and-pinion-17-19-ford-f-250350-superduty",
+    thumbnail: "/product-media/suspension/yukon-front-dana-60-ring-and-pinion-3-54-yg-d60sr-354r/1.webp",
+    images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-3-54-yg-d60sr-354r/1.webp"],
+    description: `Yukon Gear & Axle 3.54 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
+
+Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+
+Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
+
+Ring and pinion sets are not all equal, and the difference only shows up under abuse. Yukon's are made to current designs and manufacturing standards, and they have earned a reputation for surviving what finishes other sets.
+
+This is the 3.54 ratio. Yukon list each ratio as its own part number and they are priced differently — pick the one that matches the rear.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Axle: Dana 60 front
+Ratio: 3.54
+Application: 2017–2019 Ford F-250 / F-350 Super Duty
+Part number: YG D60SR-354R
+
+Highlights
+
+3.54 ratio
+Front Dana 60
+Matches the rear set — regear both
+Yukon Gear & Axle
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3074,
+    createdAt: 1789430400000,
+    name: "Yukon Gear & Axle Front Dana 60 Ring and Pinion, 3.73 Ratio — 2017–2019 Ford F-250 / F-350 Super Duty — YG D60SR-373R",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YG D60SR-373R.
+    price: 572.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YG D60SR-373R",
+    fitment: "2017–2019 Ford F-250 / F-350 Super Duty, front Dana 60 axle. 3.73 ratio.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-gear-axle-front-dana-60-ring-and-pinion-17-19-ford-f-250350-superduty",
+    thumbnail: "/product-media/suspension/yukon-front-dana-60-ring-and-pinion-3-73-yg-d60sr-373r/1.webp",
+    images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-3-73-yg-d60sr-373r/1.webp"],
+    description: `Yukon Gear & Axle 3.73 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
+
+Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+
+Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
+
+Ring and pinion sets are not all equal, and the difference only shows up under abuse. Yukon's are made to current designs and manufacturing standards, and they have earned a reputation for surviving what finishes other sets.
+
+This is the 3.73 ratio. Yukon list each ratio as its own part number and they are priced differently — pick the one that matches the rear.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Axle: Dana 60 front
+Ratio: 3.73
+Application: 2017–2019 Ford F-250 / F-350 Super Duty
+Part number: YG D60SR-373R
+
+Highlights
+
+3.73 ratio
+Front Dana 60
+Matches the rear set — regear both
+Yukon Gear & Axle
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3075,
+    createdAt: 1789430400000,
+    name: "Yukon Gear & Axle Front Dana 60 Ring and Pinion, 4.10 Ratio — 2017–2019 Ford F-250 / F-350 Super Duty — YG D60SR-410R",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YG D60SR-410R.
+    price: 572.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YG D60SR-410R",
+    fitment: "2017–2019 Ford F-250 / F-350 Super Duty, front Dana 60 axle. 4.10 ratio.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-gear-axle-front-dana-60-ring-and-pinion-17-19-ford-f-250350-superduty",
+    thumbnail: "/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-10-yg-d60sr-410r/1.webp",
+    images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-10-yg-d60sr-410r/1.webp"],
+    description: `Yukon Gear & Axle 4.10 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
+
+Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+
+Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
+
+Ring and pinion sets are not all equal, and the difference only shows up under abuse. Yukon's are made to current designs and manufacturing standards, and they have earned a reputation for surviving what finishes other sets.
+
+This is the 4.10 ratio. Yukon list each ratio as its own part number and they are priced differently — pick the one that matches the rear.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Axle: Dana 60 front
+Ratio: 4.10
+Application: 2017–2019 Ford F-250 / F-350 Super Duty
+Part number: YG D60SR-410R
+
+Highlights
+
+4.10 ratio
+Front Dana 60
+Matches the rear set — regear both
+Yukon Gear & Axle
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3076,
+    createdAt: 1789430400000,
+    name: "Yukon Gear & Axle Front Dana 60 Ring and Pinion, 4.30 Ratio — 2017–2019 Ford F-250 / F-350 Super Duty — YG D60SR-430R",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YG D60SR-430R.
+    price: 572.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YG D60SR-430R",
+    fitment: "2017–2019 Ford F-250 / F-350 Super Duty, front Dana 60 axle. 4.30 ratio.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-gear-axle-front-dana-60-ring-and-pinion-17-19-ford-f-250350-superduty",
+    thumbnail: "/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-30-yg-d60sr-430r/1.webp",
+    images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-30-yg-d60sr-430r/1.webp"],
+    description: `Yukon Gear & Axle 4.30 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
+
+Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+
+Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
+
+Ring and pinion sets are not all equal, and the difference only shows up under abuse. Yukon's are made to current designs and manufacturing standards, and they have earned a reputation for surviving what finishes other sets.
+
+This is the 4.30 ratio. Yukon list each ratio as its own part number and they are priced differently — pick the one that matches the rear.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Axle: Dana 60 front
+Ratio: 4.30
+Application: 2017–2019 Ford F-250 / F-350 Super Duty
+Part number: YG D60SR-430R
+
+Highlights
+
+4.30 ratio
+Front Dana 60
+Matches the rear set — regear both
+Yukon Gear & Axle
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3077,
+    createdAt: 1789430400000,
+    name: "Yukon Gear & Axle Front Dana 60 Ring and Pinion, 4.88 Ratio — 2017–2019 Ford F-250 / F-350 Super Duty — YG D60SR-488R",
+    category: "suspension",
+    brand: "yukon-gear",
+    // dpp listing price for YUK-YG D60SR-488R.
+    price: 874.89,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "YG D60SR-488R",
+    fitment: "2017–2019 Ford F-250 / F-350 Super Duty, front Dana 60 axle. 4.88 ratio.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-yukon-gear-axle-front-dana-60-ring-and-pinion-17-19-ford-f-250350-superduty",
+    thumbnail: "/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-88-yg-d60sr-488r/1.webp",
+    images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-88-yg-d60sr-488r/1.webp"],
+    description: `Yukon Gear & Axle 4.88 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
+
+Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+
+Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
+
+Ring and pinion sets are not all equal, and the difference only shows up under abuse. Yukon's are made to current designs and manufacturing standards, and they have earned a reputation for surviving what finishes other sets.
+
+This is the 4.88 ratio. Yukon list each ratio as its own part number and they are priced differently — pick the one that matches the rear.
+
+Specifications
+
+Manufacturer: Yukon Gear & Axle
+Axle: Dana 60 front
+Ratio: 4.88
+Application: 2017–2019 Ford F-250 / F-350 Super Duty
+Part number: YG D60SR-488R
+
+Highlights
+
+4.88 ratio
+Front Dana 60
+Matches the rear set — regear both
+Yukon Gear & Axle
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3078,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, raw cast aluminium — 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front — 46-70400",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-70400.
+    price: 298,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-70400",
+    fitment: "2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18205-afe-pro-series-front-differential-cover-13-18-ram-cummins-25003500-aspx",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70400/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-70400/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in raw cast aluminium for the 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This cover includes an oil sight glass and magnetic deep-reach fill plug, so checking and topping the oil does not mean guessing.
+
+This is the raw cast aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: raw cast aluminium
+Included: Oil sight glass and magnetic deep-reach fill plug
+Application: 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front
+Part number: 46-70400
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Raw cast aluminium
+Oil sight glass and magnetic deep-reach fill plug
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3079,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, black powder coated — 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front — 46-70402",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-70402.
+    price: 354,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-70402",
+    fitment: "2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18205-afe-pro-series-front-differential-cover-13-18-ram-cummins-25003500-aspx",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70402/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-70402/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in black powder coated for the 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This cover includes an oil sight glass and magnetic deep-reach fill plug, so checking and topping the oil does not mean guessing.
+
+This is the black powder coated version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: black powder coated
+Included: Oil sight glass and magnetic deep-reach fill plug
+Application: 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front
+Part number: 46-70402
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Black powder coated
+Oil sight glass and magnetic deep-reach fill plug
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3080,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, raw aluminium — 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front — 46-70040",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-70040.
+    price: 298,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-70040",
+    fitment: "2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-front-diff-cover-03-12-ram-cummins",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70040/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-70040/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in raw aluminium for the 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the raw aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: raw aluminium
+Application: 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front
+Part number: 46-70040
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Raw aluminium
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3081,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, black with machined fins — 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front — 46-70042",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-70042.
+    price: 354,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-70042",
+    fitment: "2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-front-diff-cover-03-12-ram-cummins",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70042/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-70042/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in black with machined fins for the 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the black with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: black with machined fins
+Application: 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front
+Part number: 46-70042
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Black with machined fins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3082,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, Street Series, raw — 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front — 46-71050A",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71050A.
+    price: 298,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71050A",
+    fitment: "2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-power-front-differential-cover-01-18-gm-6-6l-duramax",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71050a/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71050a/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in Street Series, raw for the 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the Street Series, raw version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: Street Series, raw
+Application: 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front
+Part number: 46-71050A
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Street Series, raw
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3083,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, Pro Series black with machined fins — 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front — 46-71050B",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71050B.
+    price: 354,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71050B",
+    fitment: "2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-power-front-differential-cover-01-18-gm-6-6l-duramax",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71050b/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71050b/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in Pro Series black with machined fins for the 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the Pro Series black with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: Pro Series black with machined fins
+Application: 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front
+Part number: 46-71050B
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Pro Series black with machined fins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3084,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, raw cast aluminium — 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front — 46-71100A",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71100A.
+    price: 298,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71100A",
+    fitment: "2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-street-raw-front-cover-powerstroke",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71100a/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71100a/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in raw cast aluminium for the 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This cover includes an magnetic drain plug, so checking and topping the oil does not mean guessing.
+
+This is the raw cast aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: raw cast aluminium
+Included: Magnetic drain plug
+Application: 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front
+Part number: 46-71100A
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Raw cast aluminium
+Magnetic drain plug
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3085,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, black powder coated — 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front — 46-71100B",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71100B.
+    price: 354,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71100B",
+    fitment: "2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-street-raw-front-cover-powerstroke",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71100b/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71100b/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in black powder coated for the 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This cover includes an magnetic drain plug, so checking and topping the oil does not mean guessing.
+
+This is the black powder coated version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: black powder coated
+Included: Magnetic drain plug
+Application: 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front
+Part number: 46-71100B
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Black powder coated
+Magnetic drain plug
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3086,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, raw with machined fins — 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front — 46-71430A",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71430A.
+    price: 262,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71430A",
+    fitment: "2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-power-pro-series-front-differential-cover-with-machined-fins-20-26-gm-3-l-duramax",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71430a/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71430a/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in raw with machined fins for the 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the raw with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: raw with machined fins
+Application: 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front
+Part number: 46-71430A
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Raw with machined fins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3087,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, black with machined fins — 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front — 46-71430B",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71430B.
+    price: 298,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71430B",
+    fitment: "2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-power-pro-series-front-differential-cover-with-machined-fins-20-26-gm-3-l-duramax",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71430b/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71430b/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in black with machined fins for the 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the black with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: black with machined fins
+Application: 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front
+Part number: 46-71430B
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Black with machined fins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3088,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, raw cast aluminium — 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front — 46-71030A",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71030A.
+    price: 285,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71030A",
+    fitment: "2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-afe-power-dana-m210-front-differential-cover-18-23-jeep-wranglergladiator-jljt",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71030a/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71030a/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in raw cast aluminium for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the raw cast aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: raw cast aluminium
+Application: 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front
+Part number: 46-71030A
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Raw cast aluminium
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3089,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, black powder coated — 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front — 46-71030B",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71030B.
+    price: 328,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71030B",
+    fitment: "2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-afe-power-dana-m210-front-differential-cover-18-23-jeep-wranglergladiator-jljt",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71030b/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71030b/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in black powder coated for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the black powder coated version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: black powder coated
+Application: 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front
+Part number: 46-71030B
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Black powder coated
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3090,
+    createdAt: 1789430400000,
+    name: "aFe Power Front Differential Cover, red powder coated — 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front — 46-71030R",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-71030R.
+    price: 343,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-71030R",
+    fitment: "2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-afe-power-dana-m210-front-differential-cover-18-23-jeep-wranglergladiator-jljt",
+    thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71030r/1.webp",
+    images: ["/product-media/suspension/afe-front-differential-cover-46-71030r/1.webp"],
+    description: `aFe Power cast aluminium front differential cover in red powder coated for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the red powder coated version. aFe offer the same cover in more than one finish, each with its own part number and price.
+
+Specifications
+
+Manufacturer: aFe Power
+Part: Front differential cover
+Material: Cast aluminium with reinforcing ribs
+Finish: red powder coated
+Application: 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front
+Part number: 46-71030R
+
+Highlights
+
+Cast aluminium with reinforcing ribs
+Added fluid capacity and heat dissipation
+Red powder coated
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3091,
+    createdAt: 1789430400000,
+    name: "aFe Power Front and Rear Differential Covers with Oil — 1999–2016 Ford F-250 / F-350 Super Duty 4WD — 46-7703AB",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-7703AB.
+    price: 953,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-7703AB",
+    fitment: "1999–2016 Ford F-250 / F-350 Super Duty 4WD.",
+    included: ["Front differential cover","Rear differential cover","Gear oil"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-front-and-rear-differential-covers-with-oil-99-16-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7703ab/1.webp",
+    images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7703ab/1.webp"],
+    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 1999–2016 Ford F-250 / F-350 Super Duty 4WD.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
+
+Keeping rear differential temperature down is the point on a truck that tows — that is where the heat goes.
+
+Specifications
+
+Manufacturer: aFe Power
+Kit: Front and rear differential covers with oil
+Material: Cast aluminium with reinforcing ribs
+Included: Both covers and gear oil
+Application: 1999–2016 Ford F-250 / F-350 Super Duty 4WD
+Part number: 46-7703AB
+
+Highlights
+
+Front and rear covers together
+Gear oil included
+Cast aluminium with reinforcing ribs
+Lower differential temperature when towing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3092,
+    createdAt: 1789430400000,
+    name: "aFe Power Front and Rear Differential Covers with Oil — 2017–2022 Ford F-250 / F-350 Super Duty 4WD, 10.5 in 12-bolt rear axle — 46-7704AB",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-7704AB.
+    price: 953,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-7704AB",
+    fitment: "2017–2022 Ford F-250 / F-350 Super Duty 4WD. For the 10.5 in 12-bolt rear axle — the other axle combination carries a different part number.",
+    included: ["Front differential cover","Rear differential cover","Gear oil"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-front-and-rear-differential-covers-with-oil-17-22-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7704ab/1.webp",
+    images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7704ab/1.webp"],
+    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2017–2022 Ford F-250 / F-350 Super Duty 4WD.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
+
+Ford used two different rear axles on these trucks. This kit is for the 10.5 in 12-bolt rear axle; check yours before ordering.
+
+Specifications
+
+Manufacturer: aFe Power
+Kit: Front and rear differential covers with oil
+Material: Cast aluminium with reinforcing ribs
+Rear axle: 10.5 in 12-bolt rear axle
+Included: Both covers and gear oil
+Application: 2017–2022 Ford F-250 / F-350 Super Duty 4WD
+Part number: 46-7704AB
+
+Highlights
+
+Front and rear covers together
+Gear oil included
+Cast aluminium with reinforcing ribs
+Lower differential temperature when towing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3093,
+    createdAt: 1789430400000,
+    name: "aFe Power Front and Rear Differential Covers with Oil — 2017–2022 Ford F-250 / F-350 Super Duty 4WD, Dana M275 14-bolt rear axle — 46-7705AB",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-7705AB.
+    price: 953,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-7705AB",
+    fitment: "2017–2022 Ford F-250 / F-350 Super Duty 4WD. For the Dana M275 14-bolt rear axle — the other axle combination carries a different part number.",
+    included: ["Front differential cover","Rear differential cover","Gear oil"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-front-and-rear-differential-covers-with-oil-17-22-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7705ab/1.webp",
+    images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7705ab/1.webp"],
+    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2017–2022 Ford F-250 / F-350 Super Duty 4WD.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
+
+Ford used two different rear axles on these trucks. This kit is for the Dana M275 14-bolt rear axle; check yours before ordering.
+
+Specifications
+
+Manufacturer: aFe Power
+Kit: Front and rear differential covers with oil
+Material: Cast aluminium with reinforcing ribs
+Rear axle: Dana M275 14-bolt rear axle
+Included: Both covers and gear oil
+Application: 2017–2022 Ford F-250 / F-350 Super Duty 4WD
+Part number: 46-7705AB
+
+Highlights
+
+Front and rear covers together
+Gear oil included
+Cast aluminium with reinforcing ribs
+Lower differential temperature when towing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3094,
+    createdAt: 1789430400000,
+    name: "aFe Power Front and Rear Differential Covers with Oil — 2019–2025 Ram 2500 / 3500 — 46-7702AB",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-7702AB.
+    price: 925,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-7702AB",
+    fitment: "2019–2025 Ram 2500 / 3500.",
+    included: ["Front differential cover","Rear differential cover","Gear oil"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-front-and-rear-differential-covers-with-oil-19-25-ram-2500-3500",
+    thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7702ab/1.webp",
+    images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7702ab/1.webp"],
+    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2019–2025 Ram 2500 / 3500.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
+
+Keeping rear differential temperature down is the point on a truck that tows — that is where the heat goes.
+
+Specifications
+
+Manufacturer: aFe Power
+Kit: Front and rear differential covers with oil
+Material: Cast aluminium with reinforcing ribs
+Included: Both covers and gear oil
+Application: 2019–2025 Ram 2500 / 3500
+Part number: 46-7702AB
+
+Highlights
+
+Front and rear covers together
+Gear oil included
+Cast aluminium with reinforcing ribs
+Lower differential temperature when towing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3095,
+    createdAt: 1789430400000,
+    name: "aFe Power Front and Rear Differential Covers with Oil — 2020–2025 GM 2500HD / 3500HD 4WD — 46-7708AB",
+    category: "suspension",
+    brand: "afe",
+    // dpp listing price for AFE-46-7708AB.
+    price: 871,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-7708AB",
+    fitment: "2020–2025 GM 2500HD / 3500HD 4WD.",
+    included: ["Front differential cover","Rear differential cover","Gear oil"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-front-and-rear-differential-cover-with-oil-20-25-chevy-gmc-2500hd-3500hd-4wd",
+    thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7708ab/1.webp",
+    images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7708ab/1.webp"],
+    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2020–2025 GM 2500HD / 3500HD 4WD.
+
+A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
+
+aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+
+This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
+
+Keeping rear differential temperature down is the point on a truck that tows — that is where the heat goes.
+
+Specifications
+
+Manufacturer: aFe Power
+Kit: Front and rear differential covers with oil
+Material: Cast aluminium with reinforcing ribs
+Included: Both covers and gear oil
+Application: 2020–2025 GM 2500HD / 3500HD 4WD
+Part number: 46-7708AB
+
+Highlights
+
+Front and rear covers together
+Gear oil included
+Cast aluminium with reinforcing ribs
+Lower differential temperature when towing
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3096,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 8.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-085",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-085.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-085",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 8.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-085/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-085/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 8.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 8.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 8.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-085
+
+Highlights
+
+Semi-round bend
+8.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3097,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 9.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-095",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-095.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-095",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 9.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-095/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-095/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 9.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 9.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 9.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-095
+
+Highlights
+
+Semi-round bend
+9.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3098,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 10.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-105",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-105.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-105",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 10.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-105/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-105/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 10.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 10.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 10.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-105
+
+Highlights
+
+Semi-round bend
+10.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3099,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 11.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-115",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-115.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-115",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 11.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-115/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-115/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 11.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 11.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 11.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-115
+
+Highlights
+
+Semi-round bend
+11.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3100,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 12.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-125",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-125.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-125",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 12.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-125/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-125/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 12.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 12.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 12.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-125
+
+Highlights
+
+Semi-round bend
+12.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3101,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 13.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-135",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-135.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-135",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 13.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-135/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-135/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 13.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 13.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 13.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-135
+
+Highlights
+
+Semi-round bend
+13.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3102,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 14.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-145",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-145.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-145",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 14.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-145/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-145/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 14.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 14.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 14.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-145
+
+Highlights
+
+Semi-round bend
+14.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3103,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Semi-round, 15.5 in — 1988–1997 Ford F-250 / F-350 — UBFSR563-30-155",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSR563-30-155.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSR563-30-155",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Semi-round bend, 15.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-155/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsr563-30-155/1.webp"],
+    description: `PMF Suspension semi-round front axle U-bolt kit, 15.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: semi-round is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 15.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Semi-round
+Leg length: 15.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSR563-30-155
+
+Highlights
+
+Semi-round bend
+15.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3104,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Square, 8.5 in — 1988–1997 Ford F-250 / F-350 — UBFSQ563-30-085",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSQ563-30-085.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSQ563-30-085",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Square bend, 8.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-085/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-085/1.webp"],
+    description: `PMF Suspension square front axle U-bolt kit, 8.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: square is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 8.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Square
+Leg length: 8.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSQ563-30-085
+
+Highlights
+
+Square bend
+8.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3105,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Square, 9.5 in — 1988–1997 Ford F-250 / F-350 — UBFSQ563-30-095",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSQ563-30-095.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSQ563-30-095",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Square bend, 9.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-095/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-095/1.webp"],
+    description: `PMF Suspension square front axle U-bolt kit, 9.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: square is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 9.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Square
+Leg length: 9.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSQ563-30-095
+
+Highlights
+
+Square bend
+9.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3106,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Square, 10.5 in — 1988–1997 Ford F-250 / F-350 — UBFSQ563-30-105",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSQ563-30-105.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSQ563-30-105",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Square bend, 10.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-105/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-105/1.webp"],
+    description: `PMF Suspension square front axle U-bolt kit, 10.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: square is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 10.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Square
+Leg length: 10.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSQ563-30-105
+
+Highlights
+
+Square bend
+10.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3107,
+    createdAt: 1789430400000,
+    name: "PMF Suspension Front Axle U-Bolt Kit, Square, 11.5 in — 1988–1997 Ford F-250 / F-350 — UBFSQ563-30-115",
+    category: "suspension",
+    brand: "pmf-suspension",
+    // dpp listing price for PMF-UBFSQ563-30-115.
+    price: 75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "UBFSQ563-30-115",
+    fitment: "1988–1997 Ford F-250 / F-350 front axle. Square bend, 11.5 in leg length.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-pmf-suspension-front-axle-u-bolt-kit-88-97-ford-f-250f-350",
+    thumbnail: "/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-115/1.webp",
+    images: ["/product-media/suspension/pmf-front-axle-u-bolt-kit-ubfsq563-30-115/1.webp"],
+    description: `PMF Suspension square front axle U-bolt kit, 11.5 in legs, for the 1988–1997 Ford F-250 / F-350.
+
+U-bolts are not reusable. They stretch when they are torqued, which is how they hold clamp load, and a second torque cycle does not put that back. New ones go in whenever the spring pack comes apart — and a lift almost always means longer ones.
+
+U-bolts come in two bend profiles and the axle decides which one you need: square is what this kit supplies. Measure the leg length you need from under the spring plate, not from the old bolt if it has already been stretched.
+
+This kit is the 11.5 in length. PMF list every length as its own part number at the same price, so order by measurement rather than by guess.
+
+Fitting new U-bolts is cheap insurance on a job that is already apart.
+
+Specifications
+
+Manufacturer: PMF Suspension
+Part: Front axle U-bolt kit
+Bend: Square
+Leg length: 11.5 in
+Application: 1988–1997 Ford F-250 / F-350
+Part number: UBFSQ563-30-115
+
+Highlights
+
+Square bend
+11.5 in leg length
+U-bolts are not reusable once torqued
+PMF Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3108,
+    createdAt: 1789430400000,
+    name: "Zone Offroad 4 in Suspension System, radiused U-bolts and Nitro Series shocks — 1999–2004 Ford F-250 / F-350 Super Duty — F1N",
+    category: "suspension",
+    brand: "zone-offroad",
+    // dpp listing price for ZON-F1N.
+    price: 736.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F1N",
+    fitment: "1999–2004 Ford F-250 / F-350 Super Duty. Supplied with radiused U-bolts and Nitro Series shocks.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-15872-zone-offroad-4-suspension-system-99-04-ford-f-250-f-350-superduty-aspx",
+    thumbnail: "/product-media/suspension/zone-offroad-4-inch-suspension-system-f1n/1.webp",
+    images: ["/product-media/suspension/zone-offroad-4-inch-suspension-system-f1n/1.webp"],
+    description: `Zone Offroad 4 in suspension lift system with Nitro Series shocks for the 1999–2004 Ford Super Duty.
+
+A four-inch lift is the point at which a Super Duty stops being a truck with bigger tyres and starts needing its geometry thought about — which is why a system beats a spacer.
+
+This kit is supplied with radiused U-bolts. Ford used two U-bolt profiles across these years, and they are not interchangeable, so check which the truck has before ordering.
+
+This version ships with Zone's Nitro Series shocks, matched to the kit's spring rates.
+
+Four inches of lift changes the driveline angles, the brake line lengths and the track bar geometry. Plan the whole job rather than only the springs.
+
+Specifications
+
+Manufacturer: Zone Offroad
+Lift: 4 in
+U-bolts: radiused U-bolts
+Shocks: Nitro Series shocks
+Application: 1999–2004 Ford F-250 / F-350 Super Duty
+Part number: F1N
+
+Highlights
+
+4 in suspension system
+Nitro Series shocks
+Radiused U-bolts
+Zone Offroad
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3109,
+    createdAt: 1789430400000,
+    name: "Zone Offroad 4 in Suspension System, square U-bolts and Nitro Series shocks — 1999–2004 Ford F-250 / F-350 Super Duty — F2N",
+    category: "suspension",
+    brand: "zone-offroad",
+    // dpp listing price for ZON-F2N.
+    price: 736.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F2N",
+    fitment: "1999–2004 Ford F-250 / F-350 Super Duty. Supplied with square U-bolts and Nitro Series shocks.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-15872-zone-offroad-4-suspension-system-99-04-ford-f-250-f-350-superduty-aspx",
+    thumbnail: "/product-media/suspension/zone-offroad-4-inch-suspension-system-f2n/1.webp",
+    images: ["/product-media/suspension/zone-offroad-4-inch-suspension-system-f2n/1.webp"],
+    description: `Zone Offroad 4 in suspension lift system with Nitro Series shocks for the 1999–2004 Ford Super Duty.
+
+A four-inch lift is the point at which a Super Duty stops being a truck with bigger tyres and starts needing its geometry thought about — which is why a system beats a spacer.
+
+This kit is supplied with square U-bolts. Ford used two U-bolt profiles across these years, and they are not interchangeable, so check which the truck has before ordering.
+
+This version ships with Zone's Nitro Series shocks, matched to the kit's spring rates.
+
+Four inches of lift changes the driveline angles, the brake line lengths and the track bar geometry. Plan the whole job rather than only the springs.
+
+Specifications
+
+Manufacturer: Zone Offroad
+Lift: 4 in
+U-bolts: square U-bolts
+Shocks: Nitro Series shocks
+Application: 1999–2004 Ford F-250 / F-350 Super Duty
+Part number: F2N
+
+Highlights
+
+4 in suspension system
+Nitro Series shocks
+Square U-bolts
+Zone Offroad
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3110,
+    createdAt: 1789430400000,
+    name: "Zone Offroad 4 in Suspension System, radiused U-bolts and FOX 2.0 Adventure Series shocks — 1999–2004 Ford F-250 / F-350 Super Duty — F1F",
+    category: "suspension",
+    brand: "zone-offroad",
+    // dpp listing price for ZON-F1F.
+    price: 1023.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "F1F",
+    fitment: "1999–2004 Ford F-250 / F-350 Super Duty. Supplied with radiused U-bolts and FOX 2.0 Adventure Series shocks.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-15872-zone-offroad-4-suspension-system-99-04-ford-f-250-f-350-superduty-aspx",
+    thumbnail: "/product-media/suspension/zone-offroad-4-inch-suspension-system-f1f/1.webp",
+    images: ["/product-media/suspension/zone-offroad-4-inch-suspension-system-f1f/1.webp"],
+    description: `Zone Offroad 4 in suspension lift system with FOX 2.0 Adventure Series shocks for the 1999–2004 Ford Super Duty.
+
+A four-inch lift is the point at which a Super Duty stops being a truck with bigger tyres and starts needing its geometry thought about — which is why a system beats a spacer.
+
+This kit is supplied with radiused U-bolts. Ford used two U-bolt profiles across these years, and they are not interchangeable, so check which the truck has before ordering.
+
+This version ships with FOX 2.0 Adventure Series shocks — a monotube damper with more oil volume and more consistent damping when it gets hot than a twin-tube.
+
+Four inches of lift changes the driveline angles, the brake line lengths and the track bar geometry. Plan the whole job rather than only the springs.
+
+Specifications
+
+Manufacturer: Zone Offroad
+Lift: 4 in
+U-bolts: radiused U-bolts
+Shocks: FOX 2.0 Adventure Series shocks
+Application: 1999–2004 Ford F-250 / F-350 Super Duty
+Part number: F1F
+
+Highlights
+
+4 in suspension system
+FOX 2.0 Adventure Series shocks
+Radiused U-bolts
+Zone Offroad
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3111,
+    createdAt: 1789430400000,
+    name: "BDS Suspension Front Track Bar Relocation Bracket, 4 in to 6 in Lift — 2005–2007 Ford F-250 / F-350 Super Duty — 123010",
+    category: "suspension",
+    brand: "bds-suspension",
+    // dpp listing price for BDS-123010.
+    price: 261.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "123010",
+    fitment: "2005–2007 Ford F-250 / F-350 Super Duty with a 4 in to 6 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/bds-suspension-front-track-bar-relocation-bracket-05-07-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/bds-front-track-bar-relocation-bracket-123010/1.webp",
+    images: ["/product-media/suspension/bds-front-track-bar-relocation-bracket-123010/1.webp"],
+    description: `BDS Suspension front track bar relocation bracket for a 4 in to 6 in lift on the 2005–2007 Ford Super Duty.
+
+Lifting a solid front axle moves the track bar's arc away from the arc the steering drag link follows. The two no longer agree, and what the driver feels is bump steer — the truck darting as the suspension moves.
+
+A relocation bracket puts the track bar's frame end back where the geometry wants it, which brings the two arcs back into agreement.
+
+This bracket is for a 4 in to 6 in lift. The correction needed depends on how far the truck has been lifted, so the bracket is specific to lift height.
+
+Specifications
+
+Manufacturer: BDS Suspension
+Part: Front track bar relocation bracket
+Lift height: 4 in to 6 in
+Corrects: Track bar geometry and bump steer
+Application: 2005–2007 Ford F-250 / F-350 Super Duty
+Part number: 123010
+
+Highlights
+
+For a 4 in to 6 in lift
+Corrects track bar geometry
+Reduces bump steer after a lift
+BDS Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3112,
+    createdAt: 1789430400000,
+    name: "BDS Suspension Front Track Bar Relocation Bracket, 8 in Lift — 2005–2007 Ford F-250 / F-350 Super Duty — 123801",
+    category: "suspension",
+    brand: "bds-suspension",
+    // dpp listing price for BDS-123801.
+    price: 261.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "123801",
+    fitment: "2005–2007 Ford F-250 / F-350 Super Duty with a 8 in lift.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/bds-suspension-front-track-bar-relocation-bracket-05-07-ford-f-250-f-350-superduty",
+    thumbnail: "/product-media/suspension/bds-front-track-bar-relocation-bracket-123801/1.webp",
+    images: ["/product-media/suspension/bds-front-track-bar-relocation-bracket-123801/1.webp"],
+    description: `BDS Suspension front track bar relocation bracket for a 8 in lift on the 2005–2007 Ford Super Duty.
+
+Lifting a solid front axle moves the track bar's arc away from the arc the steering drag link follows. The two no longer agree, and what the driver feels is bump steer — the truck darting as the suspension moves.
+
+A relocation bracket puts the track bar's frame end back where the geometry wants it, which brings the two arcs back into agreement.
+
+This bracket is for a 8 in lift. The correction needed depends on how far the truck has been lifted, so the bracket is specific to lift height.
+
+Specifications
+
+Manufacturer: BDS Suspension
+Part: Front track bar relocation bracket
+Lift height: 8 in
+Corrects: Track bar geometry and bump steer
+Application: 2005–2007 Ford F-250 / F-350 Super Duty
+Part number: 123801
+
+Highlights
+
+For a 8 in lift
+Corrects track bar geometry
+Reduces bump steer after a lift
+BDS Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3113,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Clear anodised — 2005–2012 Ford F-250 / F-350 — A403-20",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-20.
+    price: 1829,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-20",
+    fitment: "2005–2012 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in clear anodised for the 2005–2012 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: clear anodised
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-20
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3114,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Clear anodised, with DS Performance Rotors — 2005–2012 Ford F-250 / F-350 — A403-20-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-20-DS.
+    price: 2185,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-20-DS",
+    fitment: "2005–2012 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in clear anodised for the 2005–2012 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: clear anodised
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-20-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3115,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Black — 2005–2012 Ford F-250 / F-350 — A403-20BLK",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-20BLK.
+    price: 1924,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-20BLK",
+    fitment: "2005–2012 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20blk/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20blk/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in black for the 2005–2012 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: black
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-20BLK
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3116,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Black, with DS Performance Rotors — 2005–2012 Ford F-250 / F-350 — A403-20BLK-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-20BLK-DS.
+    price: 2280,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-20BLK-DS",
+    fitment: "2005–2012 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20blk-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20blk-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in black for the 2005–2012 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: black
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-20BLK-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3117,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Red — 2005–2012 Ford F-250 / F-350 — A403-20R",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-20R.
+    price: 1924,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-20R",
+    fitment: "2005–2012 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20r/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20r/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in red for the 2005–2012 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: red
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-20R
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3118,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Red, with DS Performance Rotors — 2005–2012 Ford F-250 / F-350 — A403-20R-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-20R-DS.
+    price: 2280,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-20R-DS",
+    fitment: "2005–2012 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20r-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a403-20r-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in red for the 2005–2012 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: red
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-20R-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3119,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised — 2005–2012 Ford F-250 / F-350 — A403-21",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-21.
+    price: 1630,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-21",
+    fitment: "2005–2012 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2005–2012 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-21
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3120,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised, with DS Performance Rotors — 2005–2012 Ford F-250 / F-350 — A403-21-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-21-DS.
+    price: 1953,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-21-DS",
+    fitment: "2005–2012 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2005–2012 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-21-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3121,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black — 2005–2012 Ford F-250 / F-350 — A403-21BLK",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-21BLK.
+    price: 1725,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-21BLK",
+    fitment: "2005–2012 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21blk/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21blk/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2005–2012 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-21BLK
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3122,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black, with DS Performance Rotors — 2005–2012 Ford F-250 / F-350 — A403-21BLK-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-21BLK-DS.
+    price: 2048,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-21BLK-DS",
+    fitment: "2005–2012 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21blk-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21blk-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2005–2012 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-21BLK-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3123,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red — 2005–2012 Ford F-250 / F-350 — A403-21R",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBc-A403-21R.
+    price: 1725,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-21R",
+    fitment: "2005–2012 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21r/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21r/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2005–2012 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-21R
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3124,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red, with DS Performance Rotors — 2005–2012 Ford F-250 / F-350 — A403-21R-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A403-21R-DS.
+    price: 2048,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A403-21R-DS",
+    fitment: "2005–2012 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-disc-brake-conversion-kit-w-rotors-05-12-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21r-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a403-21r-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2005–2012 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2005–2012 Ford F-250 / F-350
+Part number: A403-21R-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3125,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Clear anodised — 2013–2022 Ford F-250 / F-350 — A404-20",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-20.
+    price: 2152,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-20",
+    fitment: "2013–2022 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in clear anodised for the 2013–2022 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: clear anodised
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-20
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3126,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Clear anodised, with DS Performance Rotors — 2013–2022 Ford F-250 / F-350 — A404-20-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-20-DS.
+    price: 2523,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-20-DS",
+    fitment: "2013–2022 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in clear anodised for the 2013–2022 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: clear anodised
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-20-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3127,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Black — 2013–2022 Ford F-250 / F-350 — A404-20BLK",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-20BLK.
+    price: 2247,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-20BLK",
+    fitment: "2013–2022 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20blk/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20blk/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in black for the 2013–2022 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: black
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-20BLK
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3128,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Black, with DS Performance Rotors — 2013–2022 Ford F-250 / F-350 — A404-20BLK-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-20BLK-DS.
+    price: 2618,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-20BLK-DS",
+    fitment: "2013–2022 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20blk-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20blk-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in black for the 2013–2022 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: black
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-20BLK-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3129,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Red — 2013–2022 Ford F-250 / F-350 — A404-20R",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBc-A404-20R.
+    price: 2247,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-20R",
+    fitment: "2013–2022 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20r/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20r/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in red for the 2013–2022 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: red
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-20R
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3130,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Red, with DS Performance Rotors — 2013–2022 Ford F-250 / F-350 — A404-20R-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-20R-DS.
+    price: 2618,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-20R-DS",
+    fitment: "2013–2022 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20r-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-20r-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in red for the 2013–2022 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: red
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-20R-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3131,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised — 2013–2022 Ford F-250 / F-350 — A404-21",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-21.
+    price: 2024,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-21",
+    fitment: "2013–2022 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2013–2022 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-21
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3132,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised, with DS Performance Rotors — 2013–2022 Ford F-250 / F-350 — A404-21-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-21-DS.
+    price: 2409,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-21-DS",
+    fitment: "2013–2022 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2013–2022 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-21-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3133,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black — 2013–2022 Ford F-250 / F-350 — A404-21BLK",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-21BLK.
+    price: 2119,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-21BLK",
+    fitment: "2013–2022 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21blk/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21blk/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2013–2022 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-21BLK
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3134,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black, with DS Performance Rotors — 2013–2022 Ford F-250 / F-350 — A404-21BLK-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-21BLK-DS.
+    price: 2504,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-21BLK-DS",
+    fitment: "2013–2022 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21blk-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21blk-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2013–2022 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-21BLK-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3135,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red — 2013–2022 Ford F-250 / F-350 — A404-21R",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-21R.
+    price: 2119,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-21R",
+    fitment: "2013–2022 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21r/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21r/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2013–2022 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-21R
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3136,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red, with DS Performance Rotors — 2013–2022 Ford F-250 / F-350 — A404-21R-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-21R-DS.
+    price: 2504,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-21R-DS",
+    fitment: "2013–2022 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21r-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-21r-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2013–2022 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2013–2022 Ford F-250 / F-350
+Part number: A404-21R-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3137,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Clear anodised — 2023–2025 Ford F-250 / F-350 — A404-22",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-22.
+    price: 2128,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-22",
+    fitment: "2023–2025 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-351",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in clear anodised for the 2023–2025 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: clear anodised
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-22
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3138,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Clear anodised, with DS Performance Rotors — 2023–2025 Ford F-250 / F-350 — A404-22-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-22-DS.
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-22-DS",
+    fitment: "2023–2025 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-351",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in clear anodised for the 2023–2025 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: clear anodised
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-22-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3139,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Black — 2023–2025 Ford F-250 / F-350 — A404-22BLK",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-22BLK.
+    price: 2223,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-22BLK",
+    fitment: "2023–2025 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-351",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22blk/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22blk/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in black for the 2023–2025 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: black
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-22BLK
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3140,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Black, with DS Performance Rotors — 2023–2025 Ford F-250 / F-350 — A404-22BLK-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-22BLK-DS.
+    price: 2594,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-22BLK-DS",
+    fitment: "2023–2025 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-351",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22blk-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22blk-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in black for the 2023–2025 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: black
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-22BLK-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3141,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Red — 2023–2025 Ford F-250 / F-350 — A404-22R",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-22R.
+    price: 2223,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-22R",
+    fitment: "2023–2025 Ford F-250 / F-350. Front axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-351",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22r/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22r/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in red for the 2023–2025 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: red
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-22R
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3142,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Front Caliper Upgrade Kit, Red, with DS Performance Rotors — 2023–2025 Ford F-250 / F-350 — A404-22R-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-22R-DS.
+    price: 2594,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-22R-DS",
+    fitment: "2023–2025 Ford F-250 / F-350. Front axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-front-caliper-upgrade-kit-w-rotors-13-22-ford-f-250-f-351",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22r-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-front-caliper-kit-a404-22r-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston front caliper upgrade kit in red for the 2023–2025 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Front axle
+Finish: red
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-22R-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3143,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised — 2023–2025 Ford F-250 / F-350 — A404-23",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-23.
+    price: 2048,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-23",
+    fitment: "2023–2025 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-23-24-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2023–2025 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-23
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3144,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised, with DS Performance Rotors — 2023–2025 Ford F-250 / F-350 — A404-23-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-23-DS.
+    price: 2432,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-23-DS",
+    fitment: "2023–2025 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-23-24-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2023–2025 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-23-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3145,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black — 2023–2025 Ford F-250 / F-350 — A404-23BLK",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-23BLK.
+    price: 2143,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-23BLK",
+    fitment: "2023–2025 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-23-24-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23blk/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23blk/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2023–2025 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-23BLK
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3146,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black, with DS Performance Rotors — 2023–2025 Ford F-250 / F-350 — A404-23BLK-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-23BLK-DS.
+    price: 2527,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-23BLK-DS",
+    fitment: "2023–2025 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-23-24-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23blk-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23blk-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2023–2025 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-23BLK-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3147,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red — 2023–2025 Ford F-250 / F-350 — A404-23R",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-23R.
+    price: 2143,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-23R",
+    fitment: "2023–2025 Ford F-250 / F-350. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-23-24-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23r/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23r/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2023–2025 Ford F-250 / F-350.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-23R
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3148,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red, with DS Performance Rotors — 2023–2025 Ford F-250 / F-350 — A404-23R-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-23R-DS.
+    price: 2527,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-23R-DS",
+    fitment: "2023–2025 Ford F-250 / F-350. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-23-24-ford-f-250-f-350",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23r-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-23r-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2023–2025 Ford F-250 / F-350, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2023–2025 Ford F-250 / F-350
+Part number: A404-23R-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3149,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised — 2009–2018 Dodge / Ram 2500 / 3500 — A404-11",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-11.
+    price: 2031,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-11",
+    fitment: "2009–2018 Dodge / Ram 2500 / 3500. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-09-18-dodge-ram-2500-3500",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2009–2018 Dodge / Ram 2500 / 3500.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2009–2018 Dodge / Ram 2500 / 3500
+Part number: A404-11
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3150,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Clear anodised, with DS Performance Rotors — 2009–2018 Dodge / Ram 2500 / 3500 — A404-11-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-11-DS.
+    price: 2363,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-11-DS",
+    fitment: "2009–2018 Dodge / Ram 2500 / 3500. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-09-18-dodge-ram-2500-3500",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in clear anodised for the 2009–2018 Dodge / Ram 2500 / 3500, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is clear anodised. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: clear anodised
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2009–2018 Dodge / Ram 2500 / 3500
+Part number: A404-11-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Clear anodised finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3151,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black — 2009–2018 Dodge / Ram 2500 / 3500 — A404-11BLK",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-11BLK.
+    price: 2126,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-11BLK",
+    fitment: "2009–2018 Dodge / Ram 2500 / 3500. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-09-18-dodge-ram-2500-3500",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11blk/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11blk/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2009–2018 Dodge / Ram 2500 / 3500.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2009–2018 Dodge / Ram 2500 / 3500
+Part number: A404-11BLK
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3152,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Black, with DS Performance Rotors — 2009–2018 Dodge / Ram 2500 / 3500 — A404-11BLK-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-11BLK-DS.
+    price: 2458,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-11BLK-DS",
+    fitment: "2009–2018 Dodge / Ram 2500 / 3500. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-09-18-dodge-ram-2500-3500",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11blk-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11blk-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in black for the 2009–2018 Dodge / Ram 2500 / 3500, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is black. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: black
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2009–2018 Dodge / Ram 2500 / 3500
+Part number: A404-11BLK-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Black finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3153,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red — 2009–2018 Dodge / Ram 2500 / 3500 — A404-11R",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-11R.
+    price: 2126,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-11R",
+    fitment: "2009–2018 Dodge / Ram 2500 / 3500. Rear axle. Caliper kit only — reuses your stock rotors, which are not included.",
+    included: ["Assembled B8-Barbarian calipers","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-09-18-dodge-ram-2500-3500",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11r/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11r/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2009–2018 Dodge / Ram 2500 / 3500.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the caliper-only version — it reuses your stock rotors, which are not included.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: Reuses stock rotors — not included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2009–2018 Dodge / Ram 2500 / 3500
+Part number: A404-11R
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+Reuses your stock rotors
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3154,
+    createdAt: 1789430400000,
+    name: "SSBC-USA B8-Barbarian 8-Piston Rear Caliper Upgrade Kit, Red, with DS Performance Rotors — 2009–2018 Dodge / Ram 2500 / 3500 — A404-11R-DS",
+    category: "brakes",
+    brand: "ssbc",
+    // dpp listing price for SSBC-A404-11R-DS.
+    price: 2458,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A404-11R-DS",
+    fitment: "2009–2018 Dodge / Ram 2500 / 3500. Rear axle. Supplied with DS Performance rotors.",
+    included: ["Assembled B8-Barbarian calipers","DS Performance rotors","Low-dust brake pads","Bleeders, pad pins and anti-rattle clips"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ssbc-b8-barbarian-direct-fit-rear-caliper-upgrade-kit-w-rotors-09-18-dodge-ram-2500-3500",
+    thumbnail: "/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11r-ds/1.webp",
+    images: ["/product-media/brakes/ssbc-b8-barbarian-rear-caliper-kit-a404-11r-ds/1.webp"],
+    description: `SSBC-USA B8-Barbarian eight-piston rear caliper upgrade kit in red for the 2009–2018 Dodge / Ram 2500 / 3500, with DS Performance rotors.
+
+Stopping a heavy-duty truck with a loaded trailer behind it is a heat problem more than a friction one. Eight pistons spread clamping force more evenly across a larger pad, which holds the bite where a two-piston caliper starts to fade.
+
+The B8-Barbarian is an eight-piston caliper machined in the USA from T6061 aircraft-grade billet aluminium. It is a direct fit — it works with the stock hydraulics and the factory ABS, and it goes behind the factory wheels.
+
+This is the DS package: premium dimple-drilled, slotted and zinc-plated rotors are included, for better cooling and less fade than the stock discs.
+
+Each kit arrives fully assembled with high-performance low-dust pads, stainless steel pistons, bleeders, pad pins and anti-rattle clips, so the installation is a bolt-on rather than a build.
+
+Calipers are available in clear anodised, black and red; this one is red. Each colour and rotor combination carries its own part number.
+
+Specifications
+
+Manufacturer: SSBC-USA
+Model: B8-Barbarian, 8-piston
+Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Position: Rear axle
+Finish: red
+Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
+Included: Pads, stainless pistons, bleeders, pad pins, anti-rattle clips
+Compatibility: Works with stock hydraulics and factory ABS
+Application: 2009–2018 Dodge / Ram 2500 / 3500
+Part number: A404-11R-DS
+
+Highlights
+
+Eight-piston billet aluminium caliper
+Works with stock hydraulics and ABS
+DS Performance rotors included
+Red finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3155,
+    createdAt: 1789430400000,
+    name: "Hawk Performance Talon Slotted Rear Rotor & Ceramic Pad Kit — 2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD — HKS4451.299Z",
+    category: "brakes",
+    brand: "hawk",
+    // dpp listing price for HAWK-HKS4451.299Z.
+    price: 495.78,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "HKS4451.299Z",
+    fitment: "2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD. Rear axle.",
+    included: ["Pair of Talon slotted rear rotors","Hawk Ceramic brake pad set"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-hawk-performance-talon-slotted-rear-brake-rotor-ceramic-pad-kit-00-02-ram-25003500-2wd4wd",
+    thumbnail: "/product-media/brakes/hawk-talon-slotted-rear-rotor-and-ceramic-pad-kit-hks4451-299z/1.webp",
+    images: ["/product-media/brakes/hawk-talon-slotted-rear-rotor-and-ceramic-pad-kit-hks4451-299z/1.webp"],
+    description: `Hawk Performance Talon slotted rear rotor and Ceramic pad kit for the 2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD.
+
+Most replacement rotors barely meet the factory specification, which is a strange thing to accept on the system that decides whether the truck stops.
+
+Hawk's Talon rotors are high-carbon iron, slotted for thermal efficiency, heat dissipation and wet braking. Each one is balanced on a CNC machine, which cuts the harmonic resonance that makes a brake sing, and the slots keep the pad face clean by expelling debris.
+
+Ceramic pads run clean and quiet, with low dust — the right choice for a truck that is driven as much as it is worked.
+
+A Magni coating on the rotor resists corrosion and helps the pads bed in quickly without galling — worth having on a truck that sits between jobs.
+
+Specifications
+
+Manufacturer: Hawk Performance
+Rotors: Talon slotted, high-carbon iron, Magni coated
+Balancing: CNC balanced
+Pad compound: Ceramic
+Position: Rear axle
+Application: 2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD
+Part number: HKS4451.299Z
+
+Highlights
+
+Slotted high-carbon iron rotors
+CNC balanced against resonance
+Ceramic pad compound
+Magni corrosion coating
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3156,
+    createdAt: 1789430400000,
+    name: "Hawk Performance Talon Slotted Rear Rotor & HPS Pad Kit — 2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD — HKS4451.299F",
+    category: "brakes",
+    brand: "hawk",
+    // dpp listing price for HAWK-HKS4451.299F.
+    price: 489.78,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "HKS4451.299F",
+    fitment: "2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD. Rear axle.",
+    included: ["Pair of Talon slotted rear rotors","Hawk HPS brake pad set"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-hawk-performance-talon-slotted-rear-brake-rotor-hps-pad-kit-00-02-ram-25003500-2wd4wd",
+    thumbnail: "/product-media/brakes/hawk-talon-slotted-rear-rotor-and-hps-pad-kit-hks4451-299f/1.webp",
+    images: ["/product-media/brakes/hawk-talon-slotted-rear-rotor-and-hps-pad-kit-hks4451-299f/1.webp"],
+    description: `Hawk Performance Talon slotted rear rotor and HPS pad kit for the 2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD.
+
+Most replacement rotors barely meet the factory specification, which is a strange thing to accept on the system that decides whether the truck stops.
+
+Hawk's Talon rotors are high-carbon iron, slotted for thermal efficiency, heat dissipation and wet braking. Each one is balanced on a CNC machine, which cuts the harmonic resonance that makes a brake sing, and the slots keep the pad face clean by expelling debris.
+
+HPS is Hawk's high-performance street compound: more bite and better fade resistance than a standard pad, without the noise of a track compound.
+
+A Magni coating on the rotor resists corrosion and helps the pads bed in quickly without galling — worth having on a truck that sits between jobs.
+
+Specifications
+
+Manufacturer: Hawk Performance
+Rotors: Talon slotted, high-carbon iron, Magni coated
+Balancing: CNC balanced
+Pad compound: HPS
+Position: Rear axle
+Application: 2000–2002 Dodge Ram 2500 / 3500, 2WD and 4WD
+Part number: HKS4451.299F
+
+Highlights
+
+Slotted high-carbon iron rotors
+CNC balanced against resonance
+HPS pad compound
+Magni corrosion coating
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3157,
+    createdAt: 1789430400000,
+    name: "Hawk Performance Talon Slotted Rear Rotor & LTS Pad Kit — 2008–2012 Ford F-250 / F-350 Super Duty, single rear wheel — HKS4260.556Y",
+    category: "brakes",
+    brand: "hawk",
+    // dpp listing price for HAWK-HKS4260.556Y.
+    price: 499.78,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "HKS4260.556Y",
+    fitment: "2008–2012 Ford F-250 / F-350 Super Duty, single rear wheel. Rear axle.",
+    included: ["Pair of Talon slotted rear rotors","Hawk LTS brake pad set"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-hawk-performance-talon-slotted-rear-brake-rotor-lts-pad-kit-08-12-ford-f-250350-superduty-srw",
+    thumbnail: "/product-media/brakes/hawk-talon-slotted-rear-rotor-and-lts-pad-kit-hks4260-556y/1.webp",
+    images: ["/product-media/brakes/hawk-talon-slotted-rear-rotor-and-lts-pad-kit-hks4260-556y/1.webp"],
+    description: `Hawk Performance Talon slotted rear rotor and LTS pad kit for the 2008–2012 Ford F-250 / F-350 Super Duty, single rear wheel.
+
+Most replacement rotors barely meet the factory specification, which is a strange thing to accept on the system that decides whether the truck stops.
+
+Hawk's Talon rotors are high-carbon iron, slotted for thermal efficiency, heat dissipation and wet braking. Each one is balanced on a CNC machine, which cuts the harmonic resonance that makes a brake sing, and the slots keep the pad face clean by expelling debris.
+
+LTS is Hawk's Light Truck and SUV compound, formulated for the weight and the duty cycle of a truck that tows rather than for a car.
+
+A Magni coating on the rotor resists corrosion and helps the pads bed in quickly without galling — worth having on a truck that sits between jobs.
+
+Specifications
+
+Manufacturer: Hawk Performance
+Rotors: Talon slotted, high-carbon iron, Magni coated
+Balancing: CNC balanced
+Pad compound: LTS
+Position: Rear axle
+Application: 2008–2012 Ford F-250 / F-350 Super Duty, single rear wheel
+Part number: HKS4260.556Y
+
+Highlights
+
+Slotted high-carbon iron rotors
+CNC balanced against resonance
+LTS pad compound
+Magni corrosion coating
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3158,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX SuperMet Brake Pads, Front Set — 2019–2024 Ram 2500 / 3500 — TXBSM2223",
+    category: "brakes",
+    brand: "mevotech",
+    // dpp listing price for MT-TXBSM2223.
+    price: 131.1,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXBSM2223",
+    fitment: "2019–2024 Ram 2500 / 3500. Front axle set.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-supermet-brake-pads-19-24-dodge-ram-25003500",
+    thumbnail: "/product-media/brakes/mevotech-ttx-supermet-brake-pads-front-txbsm2223/1.webp",
+    images: ["/product-media/brakes/mevotech-ttx-supermet-brake-pads-front-txbsm2223/1.webp"],
+    description: `Mevotech TTX SuperMet front brake pad set for the 2019–2024 Ram 2500 / 3500.
+
+Brake pads get less attention than suspension or power, which is backwards — they are the part that decides the outcome when something goes wrong in front of you.
+
+A generic pad is formulated for an average vehicle. A three-quarter-ton diesel towing a trailer is not that vehicle.
+
+SuperMet is formulated for maximum friction — for drivers hauling heavy loads, or making repeated stops in short distances, where braking is the priority over everything else.
+
+This is the front set. Front and rear are separate part numbers.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX SuperMet
+Position: Front axle
+Formulated for: Towing, hauling and repeated heavy stops
+Application: 2019–2024 Ram 2500 / 3500
+Part number: TXBSM2223
+
+Highlights
+
+TTX SuperMet compound
+Front axle set
+Formulated for heavy loads
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3159,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX SuperMet Brake Pads, Rear Set — 2019–2024 Ram 2500 / 3500 — TXBSM2225",
+    category: "brakes",
+    brand: "mevotech",
+    // dpp listing price for MT-TXBSM2225.
+    price: 113.69,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXBSM2225",
+    fitment: "2019–2024 Ram 2500 / 3500. Rear axle set.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-supermet-brake-pads-19-24-dodge-ram-25003500",
+    thumbnail: "/product-media/brakes/mevotech-ttx-supermet-brake-pads-rear-txbsm2225/1.webp",
+    images: ["/product-media/brakes/mevotech-ttx-supermet-brake-pads-rear-txbsm2225/1.webp"],
+    description: `Mevotech TTX SuperMet rear brake pad set for the 2019–2024 Ram 2500 / 3500.
+
+Brake pads get less attention than suspension or power, which is backwards — they are the part that decides the outcome when something goes wrong in front of you.
+
+A generic pad is formulated for an average vehicle. A three-quarter-ton diesel towing a trailer is not that vehicle.
+
+SuperMet is formulated for maximum friction — for drivers hauling heavy loads, or making repeated stops in short distances, where braking is the priority over everything else.
+
+This is the rear set. Front and rear are separate part numbers.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX SuperMet
+Position: Rear axle
+Formulated for: Towing, hauling and repeated heavy stops
+Application: 2019–2024 Ram 2500 / 3500
+Part number: TXBSM2225
+
+Highlights
+
+TTX SuperMet compound
+Rear axle set
+Formulated for heavy loads
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3160,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX Premium Met Brake Pads, Front Set — 2009–2018 Ram 2500 / 3500 — TXBPM1399",
+    category: "brakes",
+    brand: "mevotech",
+    // dpp listing price for MT-TXBPM1399.
+    price: 124.43,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXBPM1399",
+    fitment: "2009–2018 Ram 2500 / 3500. Front axle set.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-premium-met-brake-pads-09-18-dodge-ram-25003500",
+    thumbnail: "/product-media/brakes/mevotech-ttx-premium-met-brake-pads-front-txbpm1399/1.webp",
+    images: ["/product-media/brakes/mevotech-ttx-premium-met-brake-pads-front-txbpm1399/1.webp"],
+    description: `Mevotech TTX Premium Met front brake pad set for the 2009–2018 Ram 2500 / 3500.
+
+Brake pads get less attention than suspension or power, which is backwards — they are the part that decides the outcome when something goes wrong in front of you.
+
+A generic pad is formulated for an average vehicle. A three-quarter-ton diesel towing a trailer is not that vehicle.
+
+Premium Met is Mevotech's metallic compound for a truck that works: consistent friction through heavy payloads and severe conditions.
+
+This is the front set. Front and rear are separate part numbers.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX Premium Met
+Position: Front axle
+Formulated for: Towing, hauling and repeated heavy stops
+Application: 2009–2018 Ram 2500 / 3500
+Part number: TXBPM1399
+
+Highlights
+
+TTX Premium Met compound
+Front axle set
+Formulated for heavy loads
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3161,
+    createdAt: 1789430400000,
+    name: "Mevotech TTX Premium Met Brake Pads, Rear Set — 2009–2018 Ram 2500 / 3500 — TXBPM1400",
+    category: "brakes",
+    brand: "mevotech",
+    // dpp listing price for MT-TXBPM1400.
+    price: 108.14,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TXBPM1400",
+    fitment: "2009–2018 Ram 2500 / 3500. Rear axle set.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mevotech-ttx-premium-met-brake-pads-09-18-dodge-ram-25003500",
+    thumbnail: "/product-media/brakes/mevotech-ttx-premium-met-brake-pads-rear-txbpm1400/1.webp",
+    images: ["/product-media/brakes/mevotech-ttx-premium-met-brake-pads-rear-txbpm1400/1.webp"],
+    description: `Mevotech TTX Premium Met rear brake pad set for the 2009–2018 Ram 2500 / 3500.
+
+Brake pads get less attention than suspension or power, which is backwards — they are the part that decides the outcome when something goes wrong in front of you.
+
+A generic pad is formulated for an average vehicle. A three-quarter-ton diesel towing a trailer is not that vehicle.
+
+Premium Met is Mevotech's metallic compound for a truck that works: consistent friction through heavy payloads and severe conditions.
+
+This is the rear set. Front and rear are separate part numbers.
+
+Specifications
+
+Manufacturer: Mevotech
+Line: TTX Premium Met
+Position: Rear axle
+Formulated for: Towing, hauling and repeated heavy stops
+Application: 2009–2018 Ram 2500 / 3500
+Part number: TXBPM1400
+
+Highlights
+
+TTX Premium Met compound
+Rear axle set
+Formulated for heavy loads
+Mevotech
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3162,
+    createdAt: 1789430400000,
+    name: "Carli Stainless Braided Brake Line Kit, 2.5 in to 3 in Lift — 2003–2011 Ram 2500 / 3500 4x4 Cummins — D3BBL-03",
+    category: "brakes",
+    brand: "carli",
+    // dpp listing price for CS-D3BBL-03.
+    price: 226,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "D3BBL-03",
+    fitment: "2003–2011 Ram 2500 / 3500 4x4 Cummins with a 2.5 in to 3 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/carli-stainless-brake-line-03-13-ram",
+    thumbnail: "/product-media/brakes/carli-stainless-braided-brake-line-kit-d3bbl-03/1.webp",
+    images: ["/product-media/brakes/carli-stainless-braided-brake-line-kit-d3bbl-03/1.webp"],
+    description: `Carli extended stainless braided brake line kit for a 2.5 in to 3 in lift on the 2003–2011 Ram 2500 / 3500 4x4 Cummins.
+
+Lift a truck and the factory brake lines become the limit on droop — the axle runs out of hose before it runs out of travel, and something eventually tears. Extended lines remove that limit.
+
+Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
+
+This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+
+One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
+
+This kit is the 2003–2011 version for a 2.5 in to 3 in lift — the year split and the lift height both change the part number.
+
+Specifications
+
+Manufacturer: Carli Suspension
+Type: Extended stainless braided brake lines
+Lift height: 2.5 in to 3 in
+Included: Front and rear lines, centre brackets
+Not included: Outer axle-to-caliper hose
+Years: 2003–2011
+Part number: D3BBL-03
+
+Highlights
+
+For a 2.5 in to 3 in lift
+Front and rear lines with brackets
+Firmer pedal — no volumetric expansion
+Carli Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3163,
+    createdAt: 1789430400000,
+    name: "Carli Stainless Braided Brake Line Kit, 2.5 in to 3 in Lift — 2012–2013 Ram 2500 / 3500 4x4 Cummins — D3BBL-12",
+    category: "brakes",
+    brand: "carli",
+    // dpp listing price for CS-D3BBL-12.
+    price: 288,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "D3BBL-12",
+    fitment: "2012–2013 Ram 2500 / 3500 4x4 Cummins with a 2.5 in to 3 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/carli-stainless-brake-line-03-13-ram",
+    thumbnail: "/product-media/brakes/carli-stainless-braided-brake-line-kit-d3bbl-12/1.webp",
+    images: ["/product-media/brakes/carli-stainless-braided-brake-line-kit-d3bbl-12/1.webp"],
+    description: `Carli extended stainless braided brake line kit for a 2.5 in to 3 in lift on the 2012–2013 Ram 2500 / 3500 4x4 Cummins.
+
+Lift a truck and the factory brake lines become the limit on droop — the axle runs out of hose before it runs out of travel, and something eventually tears. Extended lines remove that limit.
+
+Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
+
+This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+
+One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
+
+This kit is the 2012–2013 version for a 2.5 in to 3 in lift — the year split and the lift height both change the part number.
+
+Specifications
+
+Manufacturer: Carli Suspension
+Type: Extended stainless braided brake lines
+Lift height: 2.5 in to 3 in
+Included: Front and rear lines, centre brackets
+Not included: Outer axle-to-caliper hose
+Years: 2012–2013
+Part number: D3BBL-12
+
+Highlights
+
+For a 2.5 in to 3 in lift
+Front and rear lines with brackets
+Firmer pedal — no volumetric expansion
+Carli Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3164,
+    createdAt: 1789430400000,
+    name: "Carli Stainless Braided Brake Line Kit, 6 in Lift — 2003–2011 Ram 2500 / 3500 4x4 Cummins — D6BBL-03",
+    category: "brakes",
+    brand: "carli",
+    // dpp listing price for CS-D6BBL-03.
+    price: 226,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "D6BBL-03",
+    fitment: "2003–2011 Ram 2500 / 3500 4x4 Cummins with a 6 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/carli-stainless-brake-line-03-13-ram",
+    thumbnail: "/product-media/brakes/carli-stainless-braided-brake-line-kit-d6bbl-03/1.webp",
+    images: ["/product-media/brakes/carli-stainless-braided-brake-line-kit-d6bbl-03/1.webp"],
+    description: `Carli extended stainless braided brake line kit for a 6 in lift on the 2003–2011 Ram 2500 / 3500 4x4 Cummins.
+
+Lift a truck and the factory brake lines become the limit on droop — the axle runs out of hose before it runs out of travel, and something eventually tears. Extended lines remove that limit.
+
+Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
+
+This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+
+One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
+
+This kit is the 2003–2011 version for a 6 in lift — the year split and the lift height both change the part number.
+
+Specifications
+
+Manufacturer: Carli Suspension
+Type: Extended stainless braided brake lines
+Lift height: 6 in
+Included: Front and rear lines, centre brackets
+Not included: Outer axle-to-caliper hose
+Years: 2003–2011
+Part number: D6BBL-03
+
+Highlights
+
+For a 6 in lift
+Front and rear lines with brackets
+Firmer pedal — no volumetric expansion
+Carli Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3165,
+    createdAt: 1789430400000,
+    name: "Carli Stainless Braided Brake Line Kit, 6 in Lift — 2012–2013 Ram 2500 / 3500 4x4 Cummins — D6BBL-12",
+    category: "brakes",
+    brand: "carli",
+    // dpp listing price for CS-D6BBL-12.
+    price: 288,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "D6BBL-12",
+    fitment: "2012–2013 Ram 2500 / 3500 4x4 Cummins with a 6 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/carli-stainless-brake-line-03-13-ram",
+    thumbnail: "/product-media/brakes/carli-stainless-braided-brake-line-kit-d6bbl-12/1.webp",
+    images: ["/product-media/brakes/carli-stainless-braided-brake-line-kit-d6bbl-12/1.webp"],
+    description: `Carli extended stainless braided brake line kit for a 6 in lift on the 2012–2013 Ram 2500 / 3500 4x4 Cummins.
+
+Lift a truck and the factory brake lines become the limit on droop — the axle runs out of hose before it runs out of travel, and something eventually tears. Extended lines remove that limit.
+
+Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
+
+This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+
+One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
+
+This kit is the 2012–2013 version for a 6 in lift — the year split and the lift height both change the part number.
+
+Specifications
+
+Manufacturer: Carli Suspension
+Type: Extended stainless braided brake lines
+Lift height: 6 in
+Included: Front and rear lines, centre brackets
+Not included: Outer axle-to-caliper hose
+Years: 2012–2013
+Part number: D6BBL-12
+
+Highlights
+
+For a 6 in lift
+Front and rear lines with brackets
+Firmer pedal — no volumetric expansion
+Carli Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3166,
+    createdAt: 1789430400000,
+    name: "Carli Extended Front Brake Line Kit, Levelling — 2017–2026 Ford F-250 / F-350 4x4 — FORDBBL-LVL-17-F",
+    category: "brakes",
+    brand: "carli",
+    // dpp listing price for CS-FORDBBL-LVL-17-F.
+    price: 175,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FORDBBL-LVL-17-F",
+    fitment: "2017–2026 Ford F-250 / F-350 4x4 with a Carli levelling kit. Front lines.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-carli-extended-front-brakeline-kit-17-23-ford-f-250-f-350-4x4",
+    thumbnail: "/product-media/brakes/carli-extended-front-brake-line-kit-fordbbl-lvl-17-f/1.webp",
+    images: ["/product-media/brakes/carli-extended-front-brake-line-kit-fordbbl-lvl-17-f/1.webp"],
+    description: `Carli extended front brake lines for the 2017–2026 Ford F-250 / F-350 4x4 running a Carli levelling kit.
+
+Lift a truck and the factory brake lines become the limit on droop — the axle runs out of hose before it runs out of travel, and something eventually tears. Extended lines remove that limit.
+
+These are designed specifically around Carli's levelling kits — the extra length matches the ride height change those kits introduce, so the lines are neither tight at full droop nor slack enough to chafe.
+
+Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
+
+They are built from materials chosen for on-road and off-road duty, and they fit without modification.
+
+Specifications
+
+Manufacturer: Carli Suspension
+Type: Extended front brake lines
+Designed for: Carli levelling kits
+Position: Front
+Application: 2017–2026 Ford F-250 / F-350 4x4
+Part number: FORDBBL-LVL-17-F
+
+Highlights
+
+Matched to Carli levelling kits
+Front lines
+No modification to fit
+Carli Suspension
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 3167,
+    createdAt: 1789430400000,
+    name: "ICON 2.5 in Extended Stainless Steel Brake Line Kit — 2017–2023 Ford F-250 / F-350 — 61111",
+    category: "brakes",
+    brand: "icon-vehicle-dynamics",
+    // dpp listing price for ICON-61111.
+    price: 206.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "61111",
+    fitment: "2017–2023 Ford F-250 / F-350. Lines are 2.5 in longer than factory.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-18909-icon-25-extended-stainless-steel-brake-line-kit-17-19-ford-f-250f-350-aspx",
+    thumbnail: "/product-media/brakes/icon-extended-stainless-brake-line-kit-61111/1.webp",
+    images: ["/product-media/brakes/icon-extended-stainless-brake-line-kit-61111/1.webp"],
+    description: `ICON Vehicle Dynamics extended stainless steel brake line kit, 2.5 in longer than factory, for the 2017–2023 Ford F-250 / F-350.
+
+Lift a truck and the factory brake lines become the limit on droop — the axle runs out of hose before it runs out of travel, and something eventually tears. Extended lines remove that limit.
+
+These lines are 2.5 in longer than the factory hoses, which covers the travel a moderate lift adds without leaving so much slack that the line can catch on something.
+
+Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
+
+ICON make them in the USA, braided in stainless steel.
+
+Specifications
+
+Manufacturer: ICON Vehicle Dynamics
+Type: Extended stainless braided brake lines
+Extra length: 2.5 in over factory
+Made in: USA
+Application: 2017–2023 Ford F-250 / F-350
+Part number: 61111
+
+Highlights
+
+2.5 in longer than factory
+Stainless braided, made in the USA
+Firmer pedal feel
+ICON Vehicle Dynamics
 
 Warranty
 Manufacturer Warranty
