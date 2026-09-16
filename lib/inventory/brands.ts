@@ -48,7 +48,19 @@ export const brands: Brand[] = [
   { slug: "bd-diesel", name: "BD Diesel", category: "engine" },
   { slug: "bosch", name: "Bosch", category: "engine" },
   { slug: "industrial-injection", name: "Industrial Injection", category: "engine" },
+  { slug: "fleece", name: "Fleece Performance", category: "engine" },
+  { slug: "fass", name: "FASS Fuel Systems", category: "engine" },
+  { slug: "s-and-s-diesel", name: "S&S Diesel Motorsport", category: "engine" },
+  { slug: "purepower", name: "PurePower Technologies", category: "engine" },
+  { slug: "airdog", name: "AirDog", category: "engine" },
+  { slug: "cummins", name: "Cummins", category: "engine" },
+  { slug: "dynomite-diesel", name: "Dynomite Diesel", category: "engine" },
+  { slug: "power-driven-diesel", name: "Power Driven Diesel", category: "engine" },
+  { slug: "no-limit-fabrication", name: "No Limit Fabrication", category: "engine" },
+  { slug: "grizzly", name: "Grizzly", category: "engine" },
   { slug: "csf", name: "CSF Radiators", category: "engine" },
+  { slug: "ppe", name: "PPE Diesel", category: "engine" },
+  { slug: "afe", name: "aFe Power", category: "engine" },
   { slug: "banks-power", name: "Banks Power", category: "engine" },
   { slug: "kc-turbos", name: "KC Turbos", category: "engine" },
   { slug: "xdp", name: "XDP", category: "engine" },
@@ -66,6 +78,12 @@ export const brands: Brand[] = [
   { slug: "bd-diesel", name: "BD Diesel", category: "turbocharger" },
   { slug: "holset", name: "Holset", category: "turbocharger" },
   { slug: "industrial-injection", name: "Industrial Injection", category: "turbocharger" },
+  { slug: "fleece", name: "Fleece Performance", category: "turbocharger" },
+  { slug: "kc-turbos", name: "KC Turbos", category: "turbocharger" },
+  { slug: "alliant-power", name: "Alliant Power", category: "turbocharger" },
+  { slug: "synapse-auto", name: "Synapse Auto", category: "turbocharger" },
+  { slug: "river-city-turbo", name: "River City Turbo", category: "turbocharger" },
+  { slug: "power-driven-diesel", name: "Power Driven Diesel", category: "turbocharger" },
   { slug: "rotomaster", name: "Rotomaster", category: "turbocharger" },
 
   // Transmission
@@ -147,6 +165,7 @@ export const brands: Brand[] = [
 
   // Brakes
   { slug: "brembo-gt-kits", name: "Brembo GT Kits", category: "brakes" },
+  { slug: "bosch", name: "Bosch", category: "brakes" },
   { slug: "brembo-oem", name: "Brembo OEM", category: "brakes" },
   { slug: "wilwood-big-brake-kits", name: "Wilwood Big Brake Kits", category: "brakes" },
   { slug: "ebc-rotors-pads", name: "EBC Rotors & Pads", category: "brakes" },
@@ -189,6 +208,10 @@ export const brands: Brand[] = [
   { slug: "volkswagen", name: "Volkswagen", category: "electronics" },
   { slug: "universal", name: "Universal", category: "electronics" },
   { slug: "bosch", name: "Bosch", category: "electronics" },
+  { slug: "fleece", name: "Fleece Performance", category: "electronics" },
+  { slug: "mechman", name: "Mechman Alternators", category: "electronics" },
+  { slug: "mean-green", name: "Mean Green", category: "electronics" },
+  { slug: "powermaster", name: "Powermaster Performance", category: "electronics" },
   { slug: "xdp", name: "XDP", category: "electronics" },
 
   // Lighting
@@ -219,6 +242,8 @@ export const brands: Brand[] = [
 
   // Body Parts
   { slug: "bmw", name: "BMW", category: "body-parts" },
+  { slug: "t-rex-grilles", name: "T-Rex Grilles", category: "body-parts" },
+  { slug: "royalty-core", name: "Royalty Core", category: "body-parts" },
   { slug: "chevrolet", name: "Chevrolet", category: "body-parts" },
   { slug: "dodge", name: "Dodge", category: "body-parts" },
   { slug: "ford", name: "Ford", category: "body-parts" },

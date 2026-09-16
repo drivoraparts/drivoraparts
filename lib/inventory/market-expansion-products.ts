@@ -1,7 +1,7 @@
 /* =========================================================
    MARKET EXPANSION — USA & AUSTRALIA
    ---------------------------------------------------------
-   692 listings added 2026-09-15 from manufacturer and
+   844 listings added 2026-09-15 from manufacturer and
    specialist-retailer sources. Every part number, fitment,
    specification and price below was read from the source
    listing for that exact part number, not inferred.
@@ -35186,6 +35186,7823 @@ Exchange unit — core deposit refunded on return
 
 Warranty
 36-Month BD Diesel Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2837,
+    createdAt: 1789430400000,
+    name: "Mishimoto Performance Intercooler Kit — 1994–2002 Dodge Ram 5.9L Cummins — MMINT-RAM-94KBK",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-MMINT-RAM-94KBK.
+    price: 1499.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-RAM-94KBK",
+    fitment: "1994–2002 Dodge/Ram 5.9L Cummins. Covers both the 12-valve and 24-valve 5.9L.",
+    included: ["Bar-and-plate intercooler","3 mandrel-bent aluminium pipes","DuraCore silicone boots","Constant-tension T-bolt clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-intercooler-94-02-dodge-59l-cummins",
+    thumbnail: "/product-media/engine/mishimoto-intercooler-kit-mmint-ram-94kbk/1.webp",
+    images: ["/product-media/engine/mishimoto-intercooler-kit-mmint-ram-94kbk/1.webp"],
+    description: `Mishimoto bar-and-plate intercooler kit for the 1994–2002 Dodge Ram 5.9L Cummins, with piping, boots and clamps.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+Mishimoto's core for this truck carries 47% more core volume than the factory cooler and is 50% thicker, on cast aluminium end tanks and a bar-and-plate core.
+
+It is a kit rather than a bare cooler: three mandrel-bent polished aluminium pipes, Mishimoto DuraCore silicone boots and constant-tension T-bolt clamps go with it, so the charge air path is replaced end to end.
+
+It suits a stock 12-valve or 24-valve truck as much as a modified one — the gain on a standard engine is in intake and exhaust gas temperature rather than in peak numbers.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Bar-and-plate
+End tanks: Cast aluminium
+Core volume: 47% greater than factory
+Core thickness: 50% greater than factory
+Included: Intercooler, 3 aluminium pipes, DuraCore boots, T-bolt clamps
+Engine: 5.9L Cummins (12v and 24v)
+Part number: MMINT-RAM-94KBK
+
+Highlights
+
+47% more core volume, 50% thicker than stock
+Cast aluminium end tanks, bar-and-plate core
+Complete kit — pipes, boots and clamps included
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2838,
+    createdAt: 1789430400000,
+    name: "Mishimoto Air-to-Water Performance Intercooler — 2011–2016 Ford 6.7L Power Stroke — MMINT-F2D-11SL",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-MMINT-F2D-11SL.
+    price: 959.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-F2D-11SL",
+    fitment: "2011–2016 Ford 6.7L Powerstroke. Direct replacement for the factory air-to-water unit; no tune required.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-a-w-intercooler-11-16-ford",
+    thumbnail: "/product-media/engine/mishimoto-air-to-water-intercooler-mmint-f2d-11sl/1.webp",
+    images: ["/product-media/engine/mishimoto-air-to-water-intercooler-mmint-f2d-11sl/1.webp"],
+    description: `Mishimoto direct-fit air-to-water intercooler for the 2011–2016 Ford 6.7L Power Stroke.
+
+The 2011–2016 6.7L Power Stroke uses an air-to-water charge cooler, and the factory unit has a reputation for leaking internally — which puts coolant somewhere it should not be.
+
+Mishimoto's replacement drops the stamped-and-stacked plate design for cast aluminium end tanks precision TIG-welded to a bar-and-plate core. Fewer joins means fewer places to fail.
+
+Mishimoto rates it at roughly 40 lb-ft over the factory cooler. It is a direct drop-in that leaves the emissions equipment alone and needs no tune.
+
+Specifications
+
+Manufacturer: Mishimoto
+Type: Air-to-water charge cooler
+Core: Bar-and-plate
+End tanks: Cast aluminium, TIG-welded
+Gain: About 40 lb-ft over the factory cooler
+Installation: Direct drop-in, no tune
+Engine: 6.7L Power Stroke
+Part number: MMINT-F2D-11SL
+
+Highlights
+
+Replaces the factory unit known for internal leaks
+Cast tanks and bar-and-plate core
+About 40 lb-ft over stock, emissions intact
+No tune required
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2839,
+    createdAt: 1789430400000,
+    name: "Mishimoto Performance Intercooler Kit — 2003–2007 Ford 6.0L Power Stroke — MMINT-F2D-03KBK",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MMINT-F2D-03KBK.
+    price: 1375.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-F2D-03KBK",
+    fitment: "2003–2007 Ford 6.0L Powerstroke.",
+    included: ["Bar-and-plate intercooler","Mandrel-bent aluminium piping","DuraCore silicone boots","T-bolt clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-9261-mishimoto-performance-intercooler-kit-03-07-60l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/engine/mishimoto-intercooler-kit-mmint-f2d-03kbk/1.webp",
+    images: ["/product-media/engine/mishimoto-intercooler-kit-mmint-f2d-03kbk/1.webp"],
+    description: `Mishimoto intercooler, piping and boot kit for the 2003–2007 Ford 6.0L Power Stroke.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+Mishimoto builds these on a bar-and-plate core with cast aluminium end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
+
+This is the full kit rather than the cooler alone. The piping is mandrel-bent aluminium polished to a mirror finish, routed to take the restrictive bends out of the factory path, and it ships with Mishimoto DuraCore silicone boots and constant-tension T-bolt clamps.
+
+DuraCore is Mishimoto's own boot material: the inner liner is built to resist heat and oil, which is what kills ordinary silicone on a diesel charge pipe.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Bar-and-plate
+End tanks: Cast aluminium
+Piping: Mandrel-bent polished aluminium
+Boots: Mishimoto DuraCore silicone
+Clamps: Constant-tension T-bolt
+Engine: 6.0L Power Stroke
+Part number: MMINT-F2D-03KBK
+
+Highlights
+
+Complete charge-air path, not just the cooler
+Mandrel-bent polished aluminium piping
+DuraCore boots resist heat and oil
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2840,
+    createdAt: 1789430400000,
+    name: "Mishimoto Aluminium Performance Intercooler — 2006–2010 GM 6.6L Duramax LLY/LBZ/LMM — MMINT-DMAX-06BK",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MMINT-DMAX-06BK.
+    price: 1260.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-DMAX-06BK",
+    fitment: "2006–2007 Chevrolet 6.6L Duramax LLY/LBZ; 2006–2007 GMC 6.6L Duramax LLY/LBZ; 2007.5–2010 Chevrolet 6.6L Duramax LMM; and 2007.5–2010 GMC 6.6L Duramax LMM.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-intercooler-06-10-duramax",
+    thumbnail: "/product-media/engine/mishimoto-aluminum-intercooler-mmint-dmax-06bk/1.webp",
+    images: ["/product-media/engine/mishimoto-aluminum-intercooler-mmint-dmax-06bk/1.webp"],
+    description: `Mishimoto bar-and-plate intercooler for the 2006–2010 Chevrolet and GMC 6.6L Duramax.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+Mishimoto builds these on a bar-and-plate core with cast aluminium end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
+
+It is a direct fit in place of the factory cooler, so the mounting points and the charge pipe connections are where the truck expects them.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Bar-and-plate
+End tanks: Cast aluminium
+Installation: Direct fit
+Engine: 6.6L Duramax LLY, LBZ and LMM
+Part number: MMINT-DMAX-06BK
+
+Highlights
+
+Bar-and-plate core, cast aluminium tanks
+Direct fit in the factory location
+Covers LLY, LBZ and LMM
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2841,
+    createdAt: 1789430400000,
+    name: "Mishimoto Performance Intercooler Kit — 2011–2016 GM 6.6L Duramax LML — MMINT-DMAX-11KBK",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-MMINT-DMAX-11KBK.
+    price: 1899.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-DMAX-11KBK",
+    fitment: "2011–2016 Chevrolet 6.6L Duramax LML; and 2011–2016 GMC 6.6L Duramax LML.",
+    included: ["Bar-and-plate intercooler","Charge piping","DuraCore silicone boots","T-bolt clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-13366-mishimoto-performance-intercooler-kit-11-16-66l-gm-duramax-lml-aspx",
+    thumbnail: "/product-media/engine/mishimoto-intercooler-kit-mmint-dmax-11kbk/1.webp",
+    images: ["/product-media/engine/mishimoto-intercooler-kit-mmint-dmax-11kbk/1.webp"],
+    description: `Mishimoto intercooler and piping kit for the 2011–2016 Chevrolet and GMC 6.6L Duramax LML.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+Mishimoto builds these on a bar-and-plate core with cast aluminium end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
+
+The kit includes Mishimoto's charge piping with DuraCore silicone boots and constant-tension T-bolt clamps, so the whole charge air path is upgraded rather than just the cooler in the middle of it.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Bar-and-plate
+End tanks: Cast aluminium
+Boots: Mishimoto DuraCore silicone
+Clamps: Constant-tension T-bolt
+Engine: 6.6L Duramax LML
+Part number: MMINT-DMAX-11KBK
+
+Highlights
+
+Complete intercooler and piping kit
+Bar-and-plate core with cast tanks
+DuraCore boots and T-bolt clamps
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2842,
+    createdAt: 1789430400000,
+    name: "Mishimoto Performance Intercooler Kit — 2017–2019 GM 6.6L Duramax L5P — MMINT-DMAX-17KSLBK",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-MMINT-DMAX-17KSLBK.
+    price: 2052.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMINT-DMAX-17KSLBK",
+    fitment: "2017–2019 Chevrolet 6.6L Duramax L5P; and 2017–2019 GMC 6.6L Duramax L5P.",
+    included: ["68 mm bar-and-plate intercooler","3.0 in mandrel-bent piping","Silicone boots and clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mishimoto-performance-intercooler-17-19-gm-66l-duramax-77133",
+    thumbnail: "/product-media/engine/mishimoto-performance-intercooler-mmint-dmax-17kslbk/1.webp",
+    images: ["/product-media/engine/mishimoto-performance-intercooler-mmint-dmax-17kslbk/1.webp"],
+    description: `Mishimoto 68 mm bar-and-plate intercooler kit with 3.0 in piping for the 2017–2019 6.6L Duramax L5P.
+
+The L5P is a capable engine out of the box, which is exactly why its charge cooling is worth attention: the limits show up under sustained load rather than in short bursts.
+
+This kit centres on a 68 mm-thick bar-and-plate intercooler — around 70% thicker than the factory unit — with cast aluminium end tanks, and it ships with 3.0 in mandrel-bent piping.
+
+The point of the extra thickness is heat capacity under load: more core means the charge temperature climbs more slowly when the truck is pulling hard in the heat.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core thickness: 68 mm — about 70% thicker than factory
+Core: Bar-and-plate
+End tanks: Cast aluminium
+Piping: 3.0 in mandrel-bent
+Engine: 6.6L Duramax L5P
+Part number: MMINT-DMAX-17KSLBK
+
+Highlights
+
+68 mm core, about 70% thicker than stock
+Cast aluminium end tanks
+3.0 in mandrel-bent piping included
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2843,
+    createdAt: 1789430400000,
+    name: "Mishimoto Aluminium Performance Radiator — 2003–2007 Ford 6.0L Power Stroke — MMRAD-F2D-60",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-MMRAD-F2D-60.
+    price: 899.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMRAD-F2D-60",
+    fitment: "2003–2007 Ford 6.0L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-aluminum-radiator-60l-ford",
+    thumbnail: "/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-60/1.webp",
+    images: ["/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-60/1.webp"],
+    description: `Mishimoto two-row all-aluminium performance radiator for the 2003–2007 Ford 6.0L Power Stroke.
+
+Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
+
+This is the all-aluminium answer rather than the like-for-like one: a lightweight two-row core in 100% brazed aluminium with TIG-welded aluminium end tanks, so there is no plastic tank to crack.
+
+It is a direct factory fit — no cutting and no modification — and it is the sensible upgrade on a truck that tows or works hard rather than one that only commutes.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Two-row, 100% brazed aluminium
+End tanks: TIG-welded aluminium
+Installation: Direct factory fit, no modification
+Engine: 6.0L Power Stroke
+Part number: MMRAD-F2D-60
+
+Highlights
+
+All-aluminium — no plastic tanks to crack
+Two-row brazed core
+Direct fit, no cutting
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2844,
+    createdAt: 1789430400000,
+    name: "Mishimoto Aluminium Performance Radiator — 1995–1997 Ford 7.3L Power Stroke — MMRAD-F2D-95",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MMRAD-F2D-95.
+    price: 499.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMRAD-F2D-95",
+    fitment: "1995–1997 Ford 7.3L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-aluminum-radiator-73l-ford",
+    thumbnail: "/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-95/1.webp",
+    images: ["/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-95/1.webp"],
+    description: `Mishimoto bar-and-plate aluminium performance radiator for the 1995–1997 Ford 7.3L Power Stroke.
+
+The early 7.3L Power Stroke trucks were not intercooled, which puts the whole job of managing heat on the cooling system.
+
+Mishimoto's answer is a bar-and-plate aluminium radiator built to shed more heat than the unit that came out. On an engine with the 7.3's reputation for longevity, the cooling system is worth bringing up to the same standard.
+
+Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Bar-and-plate aluminium
+Installation: Direct fit
+Engine: 7.3L Power Stroke
+Years: 1995–1997
+Part number: MMRAD-F2D-95
+
+Highlights
+
+Bar-and-plate aluminium core
+Built for the non-intercooled early 7.3L
+Direct fit
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2845,
+    createdAt: 1789430400000,
+    name: "Mishimoto OEM Replacement Radiator — 2008–2010 Ford 6.4L Power Stroke — R6375-V2",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-R6375-V2.
+    price: 671.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "R6375-V2",
+    fitment: "2008–2010 Ford 6.4L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-replacement-radiator-08-10-ford-64l-powerstroke",
+    thumbnail: "/product-media/engine/mishimoto-replacement-radiator-r6375-v2/1.webp",
+    images: ["/product-media/engine/mishimoto-replacement-radiator-r6375-v2/1.webp"],
+    description: `Mishimoto direct-fit OEM replacement radiator for the 2008–2010 Ford 6.4L Power Stroke.
+
+The 6.4L Power Stroke has a well-earned reputation for radiator leaks, and this is the like-for-like way to fix one: OEM-spec plastic end tanks on an aluminium core, at stock cooling capacity.
+
+Mishimoto's addition is at the bottom — their own lower bushings isolate the radiator from frame flex, which is the load that works the tank joints loose in the first place.
+
+It is a direct fit, so nothing needs bending, cutting or modifying to get it in.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Aluminium
+End tanks: OEM-spec plastic
+Mounting: Mishimoto lower bushings to isolate frame flex
+Installation: Direct fit
+Engine: 6.4L Power Stroke
+Part number: R6375-V2
+
+Highlights
+
+Direct OEM replacement at stock capacity
+Lower bushings isolate frame flex
+No cutting or modification
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2846,
+    createdAt: 1789430400000,
+    name: "Mishimoto Aluminium Performance Radiator — 2008–2010 Ford 6.4L Power Stroke — MMRAD-F2D-08V2",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MMRAD-F2D-08V2.
+    price: 1095.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMRAD-F2D-08V2",
+    fitment: "2008–2010 Ford 6.4L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-aluminum-radiator-64l-ford",
+    thumbnail: "/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-08v2/1.webp",
+    images: ["/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-08v2/1.webp"],
+    description: `Mishimoto all-aluminium performance radiator for the 2008–2010 Ford 6.4L Power Stroke.
+
+This is the performance end of Mishimoto's answer to the 6.4L's radiator problem — all-aluminium construction rather than the OEM-spec plastic-tank replacement, so the failure mode the 6.4L is known for is designed out rather than replaced in kind.
+
+Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
+
+It is engineered as a direct fit in the factory location.
+
+Specifications
+
+Manufacturer: Mishimoto
+Construction: All-aluminium
+Installation: Direct fit
+Engine: 6.4L Power Stroke
+Years: 2008–2010
+Part number: MMRAD-F2D-08V2
+
+Highlights
+
+All-aluminium — no plastic tanks
+Direct fit in the factory location
+Aimed at the 6.4L's known radiator failures
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2847,
+    createdAt: 1789430400000,
+    name: "Mishimoto Performance Aluminium Radiator — 2010–2012 Ram 6.7L Cummins — MMRAD-RAM-10",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-MMRAD-RAM-10.
+    price: 999.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMRAD-RAM-10",
+    fitment: "2010–2012 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mishimoto-aluminum-radiator-67-cummins",
+    thumbnail: "/product-media/engine/mishimoto-performance-aluminum-radiator-mmrad-ram-10/1.webp",
+    images: ["/product-media/engine/mishimoto-performance-aluminum-radiator-mmrad-ram-10/1.webp"],
+    description: `Mishimoto all-aluminium performance radiator for the 2010–2012 Ram 6.7L Cummins.
+
+Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
+
+Mishimoto's performance radiator for this truck is all-aluminium rather than plastic-tanked, and it is built as a direct fit so it goes in where the factory unit came out.
+
+It is the upgrade worth making on a truck that tows, where the cooling system spends real time at the top of its range.
+
+Specifications
+
+Manufacturer: Mishimoto
+Construction: All-aluminium
+Installation: Direct fit
+Engine: 6.7L Cummins
+Years: 2010–2012
+Part number: MMRAD-RAM-10
+
+Highlights
+
+All-aluminium construction
+Direct fit
+Suits a truck that tows
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2848,
+    createdAt: 1789430400000,
+    name: "Mishimoto OEM Replacement Radiator — 2010–2012 Ram 6.7L Cummins — R13296",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-R13296.
+    price: 320.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "R13296",
+    fitment: "2010–2012 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mishimoto-replacement-radiator-10-12-ram-67l-cummins",
+    thumbnail: "/product-media/engine/mishimoto-replacement-radiator-r13296/1.webp",
+    images: ["/product-media/engine/mishimoto-replacement-radiator-r13296/1.webp"],
+    description: `Mishimoto direct-fit OEM replacement radiator for the 2010–2012 Ram 6.7L Cummins.
+
+Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
+
+This is the like-for-like replacement: OEM-spec plastic end tanks on an aluminium core, matching factory cooling capacity at a price that suits a repair rather than an upgrade.
+
+It is a direct fit — no cutting, bending or modification.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Aluminium
+End tanks: OEM-spec plastic
+Capacity: Matches factory cooling efficiency
+Installation: Direct fit
+Engine: 6.7L Cummins
+Part number: R13296
+
+Highlights
+
+Direct OEM-spec replacement
+Aluminium core, plastic end tanks
+No modification to fit
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2849,
+    createdAt: 1789430400000,
+    name: "Mishimoto OEM Replacement Radiator — 2013–2018 Ram 6.7L Cummins — R13490",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-R13490.
+    price: 295.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "R13490",
+    fitment: "2013–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mishimoto-oem-replacement-radiator-13-18-ram-67l-cummins",
+    thumbnail: "/product-media/engine/mishimoto-replacement-radiator-r13490/1.webp",
+    images: ["/product-media/engine/mishimoto-replacement-radiator-r13490/1.webp"],
+    description: `Mishimoto direct-fit OEM replacement radiator for the 2013–2018 Ram 6.7L Cummins.
+
+Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
+
+This unit is built to match the cooling efficiency of the radiator it replaces: durable plastic end tanks on an aluminium core, to OEM specification.
+
+Installation is direct — no cutting, bending or modification — which is what you want when the truck is off the road waiting on a radiator.
+
+Specifications
+
+Manufacturer: Mishimoto
+Core: Aluminium
+End tanks: Plastic, OEM spec
+Capacity: Matches factory cooling efficiency
+Installation: Direct fit
+Engine: 6.7L Cummins
+Part number: R13490
+
+Highlights
+
+Matches factory cooling capacity
+Direct, hassle-free fit
+Aluminium core with plastic tanks
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2850,
+    createdAt: 1789430400000,
+    name: "Mishimoto Replacement Oil Cooler Kit — 2003–2007 Ford 6.0L Power Stroke — MMOC-F2D-03",
+    category: "engine",
+    brand: "mishimoto",
+    // dpp listing price for MISH-MMOC-F2D-03.
+    price: 189.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Mishimoto Lifetime Warranty",
+    location: "our supplier network",
+    partNumber: "MMOC-F2D-03",
+    fitment: "2003–2007 Ford 6.0L Powerstroke.",
+    included: ["Replacement oil cooler","New seals","New O-rings"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mishimoto-mmoc-f2d-03-replacement-oil-cooler-kit-03-07-60l-ford-powerstroke",
+    thumbnail: "/product-media/engine/mishimoto-replacement-oil-cooler-kit-mmoc-f2d-03/1.webp",
+    images: ["/product-media/engine/mishimoto-replacement-oil-cooler-kit-mmoc-f2d-03/1.webp"],
+    description: `Mishimoto direct-fit replacement oil cooler with seals and O-rings for the 2003–2007 Ford 6.0L Power Stroke.
+
+The 6.0L Power Stroke's oil cooler clogs. When it does, the oil stops handing its heat to the coolant, the oil thins, and the parts that depend on that oil film start paying for it — and on this engine a restricted oil cooler is also what starves the EGR cooler downstream of it.
+
+This is a direct-fit replacement cooler supplied with new seals and O-rings, so the job gets done with fresh sealing rather than reused parts.
+
+Mishimoto positions it as the cooler for a daily-driven 6.0L: stock cooling capacity restored, at a sensible price, rather than an oversized unit.
+
+Specifications
+
+Manufacturer: Mishimoto
+Type: Direct-fit replacement engine oil cooler
+Included: Cooler, new seals and O-rings
+Engine: 6.0L Power Stroke
+Years: 2003–2007
+Part number: MMOC-F2D-03
+
+Highlights
+
+Restores oil cooling on a clogged 6.0L
+New seals and O-rings included
+Direct fit
+Mishimoto lifetime warranty
+
+Warranty
+Mishimoto Lifetime Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2851,
+    createdAt: 1789430400000,
+    name: "CSF OEM+ Replacement Intercooler — 2011–2016 GM 6.6L Duramax LML — 6001",
+    category: "engine",
+    brand: "csf",
+    // dpp listing price for CSF-6001.
+    price: 381.02,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "6001",
+    fitment: "2011–2016 Chevrolet 6.6L Duramax LML; and 2011–2016 GMC 6.6L Duramax LML.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-csf-6001-oem-intercooler-11-15-66l-gm-duramax-lml",
+    thumbnail: "/product-media/engine/csf-oem-plus-intercooler-6001/1.webp",
+    images: ["/product-media/engine/csf-oem-plus-intercooler-6001/1.webp"],
+    description: `CSF OEM+ direct-fit replacement intercooler for the 2011–2016 6.6L Duramax LML.
+
+An intercooler that has been hit by road debris, or that has split at a tank, stops doing its job quietly — the first sign is usually rising exhaust gas temperature rather than an obvious failure.
+
+CSF's OEM+ intercooler is built with cast aluminium end tanks, 100% TIG-welded construction and an OEM-style tube-and-fin core. It meets or exceeds the specification of the unit it replaces.
+
+It is a direct drop-in that needs no modification to fit.
+
+CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
+
+Specifications
+
+Manufacturer: CSF
+Series: OEM+
+End tanks: Cast aluminium
+Construction: 100% TIG-welded
+Core: OEM-style tube and fin
+Installation: Direct drop-in
+Engine: 6.6L Duramax LML
+Part number: 6001
+
+Highlights
+
+Meets or exceeds OEM specification
+Cast aluminium tanks, fully TIG-welded
+Direct drop-in, no modification
+ISO-certified OE-level manufacturer
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2852,
+    createdAt: 1789430400000,
+    name: "CSF OEM+ Replacement Intercooler — 2006–2010 GM 6.6L Duramax LBZ/LMM — 6002",
+    category: "engine",
+    brand: "csf",
+    // dpp listing price for CSF-6002.
+    price: 327.65,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "6002",
+    fitment: "2006–2007 Chevrolet 6.6L Duramax LLY/LBZ; 2006–2007 GMC 6.6L Duramax LLY/LBZ; 2007.5–2010 Chevrolet 6.6L Duramax LMM; and 2007.5–2010 GMC 6.6L Duramax LMM.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-csf-6002-oem-intercooler-06-10-66l-gm-duramax-lbzlmm",
+    thumbnail: "/product-media/engine/csf-oem-plus-intercooler-6002/1.webp",
+    images: ["/product-media/engine/csf-oem-plus-intercooler-6002/1.webp"],
+    description: `CSF OEM+ direct-fit replacement intercooler for the 2006–2010 6.6L Duramax LBZ and LMM.
+
+This is the like-for-like replacement for a damaged or leaking factory intercooler on the LBZ and LMM Duramax, built to OEM specification rather than as an oversized upgrade.
+
+Construction is cast aluminium end tanks, 100% TIG-welded, on an OEM-style tube-and-fin core, and it is a direct drop-in with no modification required.
+
+CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
+
+Specifications
+
+Manufacturer: CSF
+Series: OEM+
+End tanks: Cast aluminium
+Construction: 100% TIG-welded
+Core: OEM-style tube and fin
+Installation: Direct drop-in
+Engine: 6.6L Duramax LBZ and LMM
+Part number: 6002
+
+Highlights
+
+Built to OEM specification
+Cast tanks, fully TIG-welded
+Direct drop-in
+Covers LBZ and LMM
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2853,
+    createdAt: 1789430400000,
+    name: "CSF OEM Replacement Radiator — 2008–2010 Ford 6.4L Power Stroke — 3642",
+    category: "engine",
+    brand: "csf",
+    // dpp listing price for CSF-3642.
+    price: 391.33,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3642",
+    fitment: "2008–2010 Ford 6.4L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-csf-3642-oem-replacement-radiator-08-10-64-ford-powerstroke",
+    thumbnail: "/product-media/engine/csf-oem-replacement-radiator-3642/1.webp",
+    images: ["/product-media/engine/csf-oem-replacement-radiator-3642/1.webp"],
+    description: `CSF direct-fit OEM replacement radiator for the 2008–2010 Ford 6.4L Power Stroke.
+
+The 6.4L Power Stroke's factory radiator is the engine's most common failure, usually cracking at an end tank.
+
+This is the straightforward replacement: an exact factory match designed for a direct swap with no modification, so the truck is back on the road quickly and at OE cooling capacity.
+
+CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
+
+Specifications
+
+Manufacturer: CSF
+Type: OEM replacement radiator
+Fit: Exact factory match
+Installation: Direct, no modification
+Engine: 6.4L Power Stroke
+Years: 2008–2010
+Part number: 3642
+
+Highlights
+
+Exact factory match
+No modification to install
+OE-level cooling capacity
+ISO-certified manufacturer
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2854,
+    createdAt: 1789430400000,
+    name: "CSF Heavy-Duty All-Aluminium Replacement Radiator — 2008–2010 Ford 6.4L Power Stroke — 7062",
+    category: "engine",
+    brand: "csf",
+    // dpp listing price for CSF-7062.
+    price: 1059,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7062",
+    fitment: "2008–2010 Ford 6.4L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/csf-hd-aluminum-radiator-64l-ford",
+    thumbnail: "/product-media/engine/csf-heavy-duty-aluminum-radiator-7062/1.webp",
+    images: ["/product-media/engine/csf-heavy-duty-aluminum-radiator-7062/1.webp"],
+    description: `CSF all-aluminium heavy-duty replacement radiator with B-Tube core for the 2008–2010 Ford 6.4L Power Stroke.
+
+The 6.4L's factory radiator is a plastic-tank design and it is the single most common thing to fail on the engine. Replacing it with another plastic-tank unit fixes the leak; replacing it with this one addresses the design that caused it.
+
+CSF builds this radiator entirely in aluminium. The core uses their B-Tube design — tubes formed into a "B" section and then brazed over the seam, which adds internal surface area and strength over a plain flat tube.
+
+It is the upgrade rather than the repair: more cooling capacity than the factory unit as well as a construction that does not depend on a plastic tank surviving years of heat cycling.
+
+CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
+
+Specifications
+
+Manufacturer: CSF
+Construction: All-aluminium
+Core: CSF B-Tube, brazed over the seam
+Capacity: Above factory
+Engine: 6.4L Power Stroke
+Years: 2008–2010
+Part number: 7062
+
+Highlights
+
+All-aluminium — no plastic tank to crack
+B-Tube core for strength and surface area
+More cooling than the factory unit
+Aimed at the 6.4L's known failure
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2855,
+    createdAt: 1789430400000,
+    name: "CSF OEM Replacement Radiator — 1994–2002 Dodge Ram 5.9L Cummins — 3273",
+    category: "engine",
+    brand: "csf",
+    // dpp listing price for CSF-3273.
+    price: 199.28,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3273",
+    fitment: "1994–2002 Dodge/Ram 5.9L Cummins. Radiator cap not included.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/csf-3273-oem-radiator-94-02-cummins",
+    thumbnail: "/product-media/engine/csf-oem-replacement-radiator-3273/1.webp",
+    images: ["/product-media/engine/csf-oem-replacement-radiator-3273/1.webp"],
+    description: `CSF direct-fit OEM replacement radiator for the 1994–2002 Dodge Ram 5.9L Cummins.
+
+A radiator loses capacity long before it leaks. Dirt, debris and insects pack the fins until air stops passing through the core, and the result shows up as rising temperature on a hot day with a load behind you.
+
+This CSF unit is designed as an exact match for the original radiator — a straightforward swap with no modification — restoring OE cooling on a truck that has earned a new one.
+
+The radiator cap is not included, so reuse the existing one or order a new cap separately.
+
+CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
+
+Specifications
+
+Manufacturer: CSF
+Type: OEM replacement radiator
+Fit: Exact factory match
+Installation: Direct, zero modification
+Radiator cap: Not included
+Engine: 5.9L Cummins
+Part number: 3273
+
+Highlights
+
+Exact factory match
+Zero modification to install
+OE cooling restored
+Covers 12-valve and 24-valve years
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2856,
+    createdAt: 1789430400000,
+    name: "CSF OEM Replacement Radiator — 2003–2009 Dodge Ram 5.9L / 6.7L Cummins — 3710",
+    category: "engine",
+    brand: "csf",
+    // dpp listing price for CSF-3710.
+    price: 200.78,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3710",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins; and 2007.5–2009 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-csf-3710-oem-replacement-radiator-03-09-59l-67l-dodge-cummins",
+    thumbnail: "/product-media/engine/csf-oem-replacement-radiator-3710/1.webp",
+    images: ["/product-media/engine/csf-oem-replacement-radiator-3710/1.webp"],
+    description: `CSF direct-fit OEM replacement radiator for the 2003–2009 Dodge Ram 5.9L and 6.7L Cummins.
+
+Factory radiators silt up internally and clog externally, and the capacity they lose is not recoverable with a hose and a brush.
+
+CSF's replacement is designed as an exact match for the original, installed with no modification, and it covers both the 5.9L common-rail years and the early 6.7L.
+
+CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
+
+Specifications
+
+Manufacturer: CSF
+Type: OEM replacement radiator
+Fit: Exact factory match
+Installation: Direct, no modification
+Engine: 5.9L and 6.7L Cummins
+Years: 2003–2009
+Part number: 3710
+
+Highlights
+
+Exact factory match
+Covers 5.9L common rail and early 6.7L
+Direct installation
+ISO-certified manufacturer
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2857,
+    createdAt: 1789430400000,
+    name: "CSF OEM Replacement Radiator — 2010–2012 Ram 6.7L Cummins — 3529",
+    category: "engine",
+    brand: "csf",
+    // dpp listing price for CSF-3529.
+    price: 224.58,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3529",
+    fitment: "2010–2012 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/csf-3529-oem-radiator-10-12-cummins",
+    thumbnail: "/product-media/engine/csf-oem-replacement-radiator-3529/1.webp",
+    images: ["/product-media/engine/csf-oem-replacement-radiator-3529/1.webp"],
+    description: `CSF direct-fit OEM replacement radiator for the 2010–2012 Ram 6.7L Cummins.
+
+This is the like-for-like replacement for a tired or leaking factory radiator on the 2010–2012 6.7L Cummins: an exact factory match, installed directly with no modification.
+
+A radiator at OE capacity is the right answer for most trucks. The case for spending more only arrives when the truck spends its life towing heavy in the heat.
+
+CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
+
+Specifications
+
+Manufacturer: CSF
+Type: OEM replacement radiator
+Fit: Exact factory match
+Installation: Direct, no modification
+Engine: 6.7L Cummins
+Years: 2010–2012
+Part number: 3529
+
+Highlights
+
+Exact factory match
+Direct installation
+OE cooling capacity
+ISO-certified manufacturer
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2858,
+    createdAt: 1789430400000,
+    name: "Banks Power Techni-Cooler Intercooler System — 2003–2007 Ford 6.0L Power Stroke — 25975",
+    category: "engine",
+    brand: "banks-power",
+    // dpp listing price for BAN-25975.
+    price: 1459,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "25975",
+    fitment: "2003–2007 Ford 6.0L Powerstroke.",
+    included: ["Techni-Cooler intercooler","Charge piping","Boots","Clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/banks-intercooler-03-07-powerstroke",
+    thumbnail: "/product-media/engine/banks-techni-cooler-intercooler-25975/1.webp",
+    images: ["/product-media/engine/banks-techni-cooler-intercooler-25975/1.webp"],
+    description: `Banks Techni-Cooler intercooler system for the 2003–2007 Ford 6.0L Power Stroke.
+
+The factory intercooler on the 6.0L Power Stroke has plastic end tanks, and plastic end tanks are what let go when boost climbs. The core behind them is also smaller than the engine really wants.
+
+Banks replaces both problems at once with a larger bar-and-plate core and end tanks that are not the failure point.
+
+Banks sells the Techni-Cooler as a system rather than a bare core: the intercooler, the charge piping, the boots and the clamps, so nothing in the charge air path is left as the weak link.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+Specifications
+
+Manufacturer: Banks Power
+Product: Techni-Cooler intercooler system
+Core: Bar-and-plate, larger than factory
+Included: Intercooler, piping, boots, clamps
+Engine: 6.0L Power Stroke
+Years: 2003–2007
+Part number: 25975
+
+Highlights
+
+Replaces the failure-prone plastic-tank factory cooler
+Larger bar-and-plate core
+Complete system — piping, boots and clamps
+Lower intake and exhaust gas temperatures
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2859,
+    createdAt: 1789430400000,
+    name: "Banks Power Techni-Cooler Intercooler System — 1994–1997 Ford 7.3L Power Stroke — 25970",
+    category: "engine",
+    brand: "banks-power",
+    // dpp listing price for BAN-25970.
+    price: 1769,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "25970",
+    fitment: "1994–1997 Ford 7.3L Powerstroke.",
+    included: ["Techni-Cooler intercooler","Charge piping","Boots","Clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/banks-intercooler-94-97-powersstroke",
+    thumbnail: "/product-media/engine/banks-techni-cooler-intercooler-25970/1.webp",
+    images: ["/product-media/engine/banks-techni-cooler-intercooler-25970/1.webp"],
+    description: `Banks Techni-Cooler intercooler system for the 1994–1997 Ford 7.3L Power Stroke.
+
+The 1994–1997 7.3L Power Stroke left the factory without an intercooler at all, which is why a Techni-Cooler system on one of these trucks is an addition rather than a replacement — and why the difference it makes is larger than on a truck that already had one.
+
+Cooler charge air is denser charge air: more oxygen per cylinder filling, lower exhaust gas temperature and a truck that holds up better under sustained load.
+
+Banks sells the Techni-Cooler as a system rather than a bare core: the intercooler, the charge piping, the boots and the clamps, so nothing in the charge air path is left as the weak link.
+
+Specifications
+
+Manufacturer: Banks Power
+Product: Techni-Cooler intercooler system
+Application: Non-intercooled factory truck
+Included: Intercooler, piping, boots, clamps
+Engine: 7.3L Power Stroke
+Years: 1994–1997
+Part number: 25970
+
+Highlights
+
+Adds charge cooling the truck never had
+Complete system, not a bare core
+Lower exhaust gas temperature under load
+Banks Techni-Cooler
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2860,
+    createdAt: 1789430400000,
+    name: "Banks Power Techni-Cooler Intercooler System — 2001–2004 GM 6.6L Duramax LB7 — 25977",
+    category: "engine",
+    brand: "banks-power",
+    // dpp listing price for BAN-25977.
+    price: 1459,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "25977",
+    fitment: "2001–2004 Chevrolet 6.6L Duramax LB7; and 2001–2004 GMC 6.6L Duramax LB7.",
+    included: ["Techni-Cooler intercooler","Charge piping","Boots","Clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/banks-intercooler-lb7-duramax",
+    thumbnail: "/product-media/engine/banks-techni-cooler-intercooler-25977/1.webp",
+    images: ["/product-media/engine/banks-techni-cooler-intercooler-25977/1.webp"],
+    description: `Banks Techni-Cooler intercooler system for the 2001–2004 6.6L Duramax LB7.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+Banks' Techni-Cooler for the LB7 replaces the factory cooler with a higher-flowing unit designed to drop charge temperature and, with it, exhaust gas temperature.
+
+Banks sells the Techni-Cooler as a system rather than a bare core: the intercooler, the charge piping, the boots and the clamps, so nothing in the charge air path is left as the weak link.
+
+Specifications
+
+Manufacturer: Banks Power
+Product: Techni-Cooler intercooler system
+Included: Intercooler, piping, boots, clamps
+Engine: 6.6L Duramax LB7
+Years: 2001–2004
+Part number: 25977
+
+Highlights
+
+Higher-flowing replacement for the factory cooler
+Complete system with piping and boots
+Lower charge and exhaust gas temperature
+Banks Techni-Cooler
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2861,
+    createdAt: 1789430400000,
+    name: "Banks Power Techni-Cooler Intercooler System — 2011–2016 GM 6.6L Duramax LML — 25988",
+    category: "engine",
+    brand: "banks-power",
+    // dpp listing price for BAN-25988.
+    price: 1829,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "25988",
+    fitment: "2011–2016 GMC 6.6L Duramax LML; and 2012–2016 Chevrolet 6.6L Duramax LML.",
+    included: ["High-flow intercooler","Intercooler piping","Boots","Clamps"],
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-17244-banks-25988-techni-cooler-intercooler-system-11-16-66l-gm-duramax-lml-aspx",
+    thumbnail: "/product-media/engine/banks-techni-cooler-intercooler-25988/1.webp",
+    images: ["/product-media/engine/banks-techni-cooler-intercooler-25988/1.webp"],
+    description: `Banks Techni-Cooler intercooler system for the 2011–2016 6.6L Duramax LML.
+
+Heat costs a diesel horsepower, fuel economy and service life, and the intercooler is the most direct lever on it.
+
+This Banks system pairs a high-flow intercooler with the intercooler piping, boots and clamps for a complete installation, so the restriction does not simply move from the core to the plumbing.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+Specifications
+
+Manufacturer: Banks Power
+Product: Techni-Cooler intercooler system
+Included: High-flow intercooler, piping, boots, clamps
+Engine: 6.6L Duramax LML
+Years: 2011–2016
+Part number: 25988
+
+Highlights
+
+High-flow intercooler
+Complete installation kit
+Lower intake and exhaust gas temperature
+Banks Techni-Cooler
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2862,
+    createdAt: 1789430400000,
+    name: "PPE Air-to-Water Intercooler Kit — 2011–2025 Ford 6.7L Power Stroke — 315045100",
+    category: "engine",
+    brand: "ppe",
+    // dpp listing price for PPE-315045100.
+    price: 1439.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "315045100",
+    fitment: "2011–2025 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ppe-air-to-water-intercooler-kit-11-23-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/ppe-air-to-water-intercooler-kit-315045100/1.webp",
+    images: ["/product-media/engine/ppe-air-to-water-intercooler-kit-315045100/1.webp"],
+    description: `PPE all-aluminium air-to-water intercooler kit for the 2011–2025 Ford 6.7L Power Stroke.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+PPE's unit is all-aluminium bar-and-plate with flow-optimised cast aluminium end tanks, and the core is 50% larger than the one it replaces.
+
+PPE puts the pressure drop across it at up to 63% lower than the factory cooler. Pressure drop matters as much as temperature does — air the turbo has already compressed and then lost to restriction is work the engine paid for and did not get back.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Type: Air-to-water intercooler kit
+Construction: All-aluminium bar-and-plate
+End tanks: Flow-optimised cast aluminium
+Core size: 50% larger than factory
+Pressure drop: Up to 63% lower than factory
+Engine: 6.7L Power Stroke
+Part number: 315045100
+
+Highlights
+
+50% larger core than factory
+Up to 63% less pressure drop
+Cast aluminium end tanks
+Lower exhaust gas temperature
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2863,
+    createdAt: 1789430400000,
+    name: "PPE Air-to-Water Intercooler Coolant Heat Exchanger — 2020–2025 GM 3.0L Duramax LM2/LZ0 — 119010300",
+    category: "engine",
+    brand: "ppe",
+    // dpp listing price for PPE-119010300.
+    price: 359.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "119010300",
+    fitment: "2020–2025 Chevrolet 3.0L Duramax; and 2020–2025 GMC 3.0L Duramax.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ppe-air-to-water-intercooler-coolant-heat-exchanger-20-24-gm-30l-duramax-lm2lz0",
+    thumbnail: "/product-media/engine/ppe-intercooler-coolant-heat-exchanger-119010300/1.webp",
+    images: ["/product-media/engine/ppe-intercooler-coolant-heat-exchanger-119010300/1.webp"],
+    description: `PPE upgraded charge-air coolant heat exchanger for the 2020–2025 GM 3.0L Duramax LM2 and LZ0.
+
+On an air-to-water charge cooling system the heat exchanger out front is what finally dumps the heat to atmosphere. If it saturates — towing, or a hot day, or both — the charge cooler behind it has nowhere to send heat and intake temperature climbs regardless of how good the intercooler is.
+
+PPE's replacement carries a 20% larger core with more rows of fins and holds an additional quart of coolant, so there is more thermal mass to absorb a load spike as well as more area to shed it.
+
+The core is fully brazed at 18.5 fins per inch with all-aluminium end tanks, and the two-row coolant tube layout is optimised to cut pressure drop by 15% against stock. It is a direct-fit replacement.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Type: Charge-air coolant heat exchanger
+Core: 20% larger, fully brazed, 18.5 fins per inch
+Coolant capacity: One quart more than factory
+Tube layout: Optimised two-row
+Pressure drop: 15% lower than factory
+End tanks: All-aluminium
+Installation: Direct fit
+Part number: 119010300
+
+Highlights
+
+20% larger core, one extra quart of coolant
+15% less pressure drop than stock
+Fully brazed at 18.5 fins per inch
+Direct-fit replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2864,
+    createdAt: 1789430400000,
+    name: "PPE Air-to-Water Intercooler Kit — 2020–2025 GM 3.0L Duramax LM2/LZ0 — 115030010",
+    category: "engine",
+    brand: "ppe",
+    // dpp listing price for PPE-115030010.
+    price: 1214.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "115030010",
+    fitment: "2020–2025 Chevrolet 3.0L Duramax; and 2020–2025 GMC 3.0L Duramax.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ppe-air-to-water-intercooler-kit-20-22-gm-30l-duramax-lm2",
+    thumbnail: "/product-media/engine/ppe-air-to-water-intercooler-kit-115030010/1.webp",
+    images: ["/product-media/engine/ppe-air-to-water-intercooler-kit-115030010/1.webp"],
+    description: `PPE all-aluminium air-to-water intercooler kit for the 2020–2025 GM 3.0L Duramax LM2 and LZ0.
+
+A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
+
+PPE's kit for the 3.0L Duramax uses all-aluminium bar-and-plate construction with a considered fin layout, and the core is 2.4 times the size of the factory unit.
+
+Cooler, denser charge air lowers exhaust gas temperature and helps fuel economy. On a light-duty diesel that spends time towing, that headroom is the whole point.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Type: Air-to-water intercooler kit
+Construction: All-aluminium bar-and-plate
+Core size: 2.4× the factory core
+Engine: 3.0L Duramax LM2 and LZ0
+Years: 2020–2025
+Part number: 115030010
+
+Highlights
+
+Core 2.4× the size of factory
+All-aluminium bar-and-plate
+Lower exhaust gas temperature
+Suits towing and high ambient temperatures
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2865,
+    createdAt: 1789430400000,
+    name: "PPE Upgraded Engine Oil Cooler — 2003–2007 Ford 6.0L Power Stroke — 314030310",
+    category: "engine",
+    brand: "ppe",
+    // dpp listing price for PPE-314030310.
+    price: 224.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "314030310",
+    fitment: "2003–2007 Ford 6.0L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ppe-oil-cooler-03-07-60l-powerstroke",
+    thumbnail: "/product-media/engine/ppe-upgraded-oil-cooler-314030310/1.webp",
+    images: ["/product-media/engine/ppe-upgraded-oil-cooler-314030310/1.webp"],
+    description: `PPE direct-replacement engine oil cooler with enlarged internal passages for the 2003–2007 Ford 6.0L Power Stroke.
+
+Soot is what kills the 6.0L Power Stroke's oil cooler. It builds inside the channels until flow is restricted, and the restriction is what takes the EGR cooler with it.
+
+PPE's replacement is designed with larger internal passages for improved oil and coolant flow — the same job as the factory cooler, with more room for the soot that is going to arrive anyway.
+
+It is a direct replacement for the factory engine oil cooler. PPE offers the kit with or without the gaskets needed to remove and reuse the cover from the old cooler, so check which version suits your job before ordering.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Type: Direct-replacement engine oil cooler
+Passages: Larger than factory for improved oil and coolant flow
+Engine: 6.0L Power Stroke
+Years: 2003–2007
+Part number: 314030310
+
+Highlights
+
+Larger internal passages than the factory cooler
+Direct replacement
+Aimed at the 6.0L's soot clogging problem
+PPE Diesel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2866,
+    createdAt: 1789430400000,
+    name: "PPE Spin-On Transmission Filter, 68RFE — 2007.5–2023 Ram 6.7L Cummins — 228052150",
+    category: "transmission",
+    brand: "ppe",
+    // dpp listing price for PPE-228052150.
+    price: 17.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "228052150",
+    fitment: "2007.5–2023 Dodge/Ram 6.7L Cummins. Requires a PPE transmission pan — it does not fit the factory pan.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/ppe-spin-on-transmission-oil-filter-68rfe-075-18-ram-67l-cummins",
+    thumbnail: "/product-media/transmission/ppe-spin-on-transmission-filter-228052150/1.webp",
+    images: ["/product-media/transmission/ppe-spin-on-transmission-filter-228052150/1.webp"],
+    description: `PPE spin-on replacement transmission filter for the 68RFE, for use with a PPE transmission pan.
+
+A transmission filter is a cheap part protecting an expensive one. A restricted filter starves the pump, and low line pressure is what burns clutches.
+
+PPE's spin-on filter uses an extended cup housing 57% more 10-micron media than the standard filter, with 81% larger passages for higher flow. A steel adapter, a spring-loaded anti-drain-back valve with a silicone O-ring, a coil spring against blow-by and a perforated metal centre tube holding the media make up the rest of it.
+
+This filter is part of PPE's spin-on system: it requires a PPE transmission pan and will not mount to the factory pan.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Transmission: 68RFE
+Media: 10 micron, 57% more than standard
+Passages: 81% larger for higher flow
+Valve: Spring-loaded anti-drain-back with silicone O-ring
+Centre tube: Perforated metal
+Requires: PPE transmission pan
+Part number: 228052150
+
+Highlights
+
+57% more 10-micron media
+81% larger passages for flow
+Anti-drain-back valve and anti-blow-by spring
+Requires a PPE transmission pan
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2867,
+    createdAt: 1789430400000,
+    name: "PPE Allison 1000 Performance Transmission Mount — 2001–2010 GM 2500HD / 3500HD Duramax — 169030170",
+    category: "transmission",
+    brand: "ppe",
+    // dpp listing price for PPE-169030170.
+    price: 80.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "169030170",
+    fitment: "2001–2004 Chevrolet 6.6L Duramax LB7; 2001–2004 GMC 6.6L Duramax LB7; 2004.5–2005 Chevrolet 6.6L Duramax LLY; 2004.5–2005 GMC 6.6L Duramax LLY; 2006–2007 Chevrolet 6.6L Duramax LLY/LBZ; 2006–2007 GMC 6.6L Duramax LLY/LBZ; 2007.5–2010 Chevrolet 6.6L Duramax LMM; and 2007.5–2010 GMC 6.6L Duramax LMM.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ppe-allison-1000-performance-transmission-mount-01-10-gm-2500hd3500hd",
+    thumbnail: "/product-media/transmission/ppe-allison-1000-transmission-mount-169030170/1.webp",
+    images: ["/product-media/transmission/ppe-allison-1000-transmission-mount-169030170/1.webp"],
+    description: `PPE dual-silicone-bushing transmission mount for the Allison 1000 in 2001–2010 GM 2500HD and 3500HD Duramax trucks.
+
+The factory rubber transmission mount is a consumable. As it breaks down it lets the driveline move, and what the driver feels is vibration, misalignment and shifts that have gone sloppy.
+
+PPE's replacement uses dual silicone bushings and a 30% larger steel-to-elastomer contact area, spreading the load rather than concentrating it where the rubber tears.
+
+The silicone compound is chosen for heat resistance and tear strength — the two things that finish a rubber mount on a truck that works.
+
+Specifications
+
+Manufacturer: PPE (Pacific Performance Engineering)
+Transmission: Allison 1000
+Bushings: Dual silicone
+Contact area: 30% larger steel-to-elastomer than factory
+Material: Heat-resistant, tear-resistant silicone
+Years: 2001–2010
+Part number: 169030170
+
+Highlights
+
+Dual silicone bushings
+30% larger contact area than factory
+Heat and tear resistant
+Fixes sloppy shifts from a worn mount
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2868,
+    createdAt: 1789430400000,
+    name: "S&B Cold Side Intercooler Pipe — 2011–2016 Ford 6.7L Power Stroke — 83-1000",
+    category: "engine",
+    brand: "s-and-b",
+    // dpp listing price for SB-83-1000.
+    price: 299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "83-1000",
+    fitment: "2011–2016 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-sb-cold-side-intercooler-pipe-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/s-and-b-cold-side-intercooler-pipe-83-1000/1.webp",
+    images: ["/product-media/engine/s-and-b-cold-side-intercooler-pipe-83-1000/1.webp"],
+    description: `S&B direct-replacement cold-side intercooler pipe for the 2011–2016 Ford 6.7L Power Stroke.
+
+The factory cold-side intercooler pipe on the 6.7L Power Stroke is plastic, and it is known for splitting — sometimes on a completely standard truck. When it goes, the charge air escapes before it reaches the engine, and what is left will barely move the truck under its own power.
+
+S&B's replacement is a direct fit for the factory part, built to take the boost that finishes the plastic one — including on a truck running a tune.
+
+This is the 2011–2016 pipe. The 6.7L Power Stroke cold-side pipe is not common across the engine's whole production run, so match the part number to the year.
+
+Specifications
+
+Manufacturer: S&B Filters
+Part: Cold-side intercooler pipe
+Installation: Direct replacement
+Engine: 6.7L Power Stroke
+Years: 2011–2016
+Part number: 83-1000
+
+Highlights
+
+Replaces the factory plastic pipe known to split
+Direct fit
+Suits stock and tuned trucks
+S&B Filters
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2869,
+    createdAt: 1789430400000,
+    name: "S&B Cold Side Intercooler Pipe — 2017–2026 Ford 6.7L Power Stroke — 83-1001",
+    category: "engine",
+    brand: "s-and-b",
+    // dpp listing price for SB-83-1001.
+    price: 299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "83-1001",
+    fitment: "2017–2026 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-sb-cold-side-intercooler-pipe-17-26-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/s-and-b-cold-side-intercooler-pipe-83-1001/1.webp",
+    images: ["/product-media/engine/s-and-b-cold-side-intercooler-pipe-83-1001/1.webp"],
+    description: `S&B direct-replacement cold-side intercooler pipe for the 2017–2026 Ford 6.7L Power Stroke.
+
+The factory cold-side intercooler pipe on the 6.7L Power Stroke is plastic, and it is known for splitting — sometimes on a completely standard truck. When it goes, the charge air escapes before it reaches the engine, and what is left will barely move the truck under its own power.
+
+S&B's replacement is a direct fit for the factory part, built to take the boost that finishes the plastic one — including on a truck running a tune.
+
+This is the 2017–2026 pipe. The 6.7L Power Stroke cold-side pipe is not common across the engine's whole production run, so match the part number to the year.
+
+Specifications
+
+Manufacturer: S&B Filters
+Part: Cold-side intercooler pipe
+Installation: Direct replacement
+Engine: 6.7L Power Stroke
+Years: 2017–2026
+Part number: 83-1001
+
+Highlights
+
+Replaces the factory plastic pipe known to split
+Direct fit
+Suits stock and tuned trucks
+S&B Filters
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2870,
+    createdAt: 1789430400000,
+    name: "aFe BladeRunner Street Series Radiator — 2008–2010 Ford 6.4L Power Stroke — 46-52091",
+    category: "engine",
+    brand: "afe",
+    // dpp listing price for AFE-46-52091.
+    price: 1153,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "46-52091",
+    fitment: "2008–2010 Ford 6.4L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/afe-bladerunner-street-radiator-ford",
+    thumbnail: "/product-media/engine/afe-bladerunner-street-series-radiator-46-52091/1.webp",
+    images: ["/product-media/engine/afe-bladerunner-street-series-radiator-46-52091/1.webp"],
+    description: `aFe BladeRunner Street Series radiator with a 2-3/4 in tube-and-fin core for the 2008–2010 Ford 6.4L Power Stroke.
+
+The 6.4L Power Stroke's radiator cracks at the end tanks, and the sensible time to deal with it is before it lets go rather than after.
+
+aFe's BladeRunner uses an oversized 2-3/4 in thick tube-and-fin core for more heat dissipation and better coolant flow than the factory unit, with fabricated end tanks made from 1/8 in aluminium plate rather than plastic.
+
+The upper mounts have been reconfigured to improve how the radiator is held, which matters on a truck where mounting load is part of what cracks the original.
+
+Specifications
+
+Manufacturer: aFe Power
+Series: BladeRunner Street Series
+Core: 2-3/4 in thick tube and fin
+End tanks: Fabricated 1/8 in aluminium plate
+Mounting: Reconfigured upper mounts
+Engine: 6.4L Power Stroke
+Years: 2008–2010
+Part number: 46-52091
+
+Highlights
+
+2-3/4 in oversized core
+1/8 in fabricated aluminium end tanks
+Reconfigured upper mounting
+Aimed at the 6.4L's cracked-tank failure
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2871,
+    createdAt: 1789430400000,
+    name: "Garrett AVNT3788 SST Stock Replacement Turbocharger — 2015–2016 Ford F-250 / F-350 6.7L Power Stroke — 892147-5001S",
+    category: "turbocharger",
+    brand: "garrett",
+    // dpp listing price for GAR-892147-5001S.
+    price: 1725.56,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "892147-5001S",
+    fitment: "2015–2016 Ford F-250 and F-350 pickup with the 6.7L Power Stroke. Not for the F-450 or cab and chassis, which use a different turbocharger.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-garrett-new-stock-replacement-turbocharger-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/garrett-avnt3788-turbocharger-892147-5001s/1.webp",
+    images: ["/product-media/turbocharger/garrett-avnt3788-turbocharger-892147-5001s/1.webp"],
+    description: `Genuine Garrett AVNT3788 turbocharger for the 2015–2016 Ford F-250 / F-350 6.7L Power Stroke.
+
+Garrett calls this design SST — Single Sequential Turbo. Two compressor wheels sit on one shaft, so a single turbocharger behaves much like a pair: response low down, and a mid-range and top end that do not run out. Ford fits it to the 6.7L Power Stroke, and Garrett is the manufacturer behind the factory unit as well as this one.
+
+The AVNT3788 is Garrett's revision of the SST, released for the 2015–2016 model years after the earlier version proved failure-prone. It runs a 61 mm × 90.5 mm compressor wheel with 11 blades against a 70.5 mm × 62.5 mm turbine wheel with 13 blades.
+
+The compressor wheel is still double-sided, so the truck gets close to two-stage boosting behaviour out of one turbocharger.
+
+This is a genuine Garrett unit, not a copy or a rebuild of unknown history, and it carries Garrett's current revisions rather than the specification the truck left the factory with.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Model: AVNT3788
+Compressor wheel: 61 mm × 90.5 mm, 11 blades, double-sided
+Turbine wheel: 70.5 mm × 62.5 mm, 13 blades
+Application: 2015–2016 F-250 / F-350 pickup
+Engine: 6.7L Power Stroke
+Part number: 892147-5001S
+
+Highlights
+
+Garrett's revised AVNT3788 design
+61 mm × 90.5 mm double-sided compressor
+70.5 mm × 62.5 mm, 13-blade turbine
+F-250 / F-350 pickup only
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2872,
+    createdAt: 1789430400000,
+    name: "Garrett SST Stock Replacement Turbocharger — 2011–2016 Ford F-450 and Cab & Chassis 6.7L Power Stroke — 854572-5001S",
+    category: "turbocharger",
+    brand: "garrett",
+    // dpp listing price for GAR-854572-5001S.
+    price: 1607.93,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "854572-5001S",
+    fitment: "2011–2016 Ford F-450 pickup and all cab and chassis applications with the 6.7L Power Stroke. Not for the F-250 or F-350 pickup.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-garrett-new-stock-replacement-turbocharger-11-16-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/garrett-sst-turbocharger-854572-5001s/1.webp",
+    images: ["/product-media/turbocharger/garrett-sst-turbocharger-854572-5001s/1.webp"],
+    description: `Genuine Garrett SST replacement turbocharger for the 2011–2016 Ford F-450 and cab and chassis 6.7L Power Stroke.
+
+Garrett calls this design SST — Single Sequential Turbo. Two compressor wheels sit on one shaft, so a single turbocharger behaves much like a pair: response low down, and a mid-range and top end that do not run out. Ford fits it to the 6.7L Power Stroke, and Garrett is the manufacturer behind the factory unit as well as this one.
+
+Where the F-250 and F-350 pickups changed turbocharger partway through the 6.7L's first generation, Garrett kept the same unit across the whole 2011–2016 run for F-450 pickups and every cab and chassis truck. That is this part.
+
+Getting this one right matters: the pickup and cab-and-chassis turbos are not interchangeable, and the model year alone does not tell you which you need.
+
+This is a genuine Garrett unit, not a copy or a rebuild of unknown history, and it carries Garrett's current revisions rather than the specification the truck left the factory with.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Design: SST — Single Sequential Turbo
+Application: F-450 pickup and all cab and chassis, 2011–2016
+Type: Stock replacement
+Engine: 6.7L Power Stroke
+Part number: 854572-5001S
+
+Highlights
+
+Covers the whole 2011–2016 run on these trucks
+F-450 and cab and chassis only
+Genuine Garrett
+SST twin-compressor design
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2873,
+    createdAt: 1789430400000,
+    name: "Garrett Variable-Vane Stock Replacement Turbocharger — 2003 (build date 28 September 2003 and earlier) Ford 6.0L Power Stroke — 725390-5006S",
+    category: "turbocharger",
+    brand: "garrett",
+    // dpp listing price for GAR-725390-5006S.
+    price: 1024.86,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "725390-5006S",
+    fitment: "2003 Ford 6.0L Power Stroke with an engine build date of 28 September 2003 or earlier.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-9833-garrett-new-stock-replacement-turbo-03-07-60l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/turbocharger/garrett-variable-vane-turbocharger-725390-5006s/1.webp",
+    images: ["/product-media/turbocharger/garrett-variable-vane-turbocharger-725390-5006s/1.webp"],
+    description: `Genuine new Garrett variable-vane replacement turbocharger for the 2003 (build date 28 September 2003 and earlier) Ford 6.0L Power Stroke.
+
+The 6.0L Power Stroke arrived in 2003 with a Garrett variable-vane turbocharger — vanes inside the housing move to make the turbo behave like a small frame low down and a large one higher up. The known weakness is soot: it packs around the vanes until they stick in one position, and the turbo stops varying anything.
+
+Garrett refined these turbos over the years. These are new units direct from Garrett carrying the current revisions, rather than a rebuild of the original design a truck left the factory with — and by now those factory warranties are long gone.
+
+Fitment on the 6.0L splits by engine build date and serial number, not just by model year, so check yours against the range for this part before ordering.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Type: Variable-vane, new stock replacement
+Application: 2003 (build date 28 September 2003 and earlier)
+Engine: 6.0L Power Stroke
+Part number: 725390-5006S
+
+Highlights
+
+Genuine new Garrett, not remanufactured
+Carries Garrett's current revisions
+Matched to engine build date and serial range
+Variable-vane design
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2874,
+    createdAt: 1789430400000,
+    name: "Garrett Variable-Vane Stock Replacement Turbocharger — 2004–2005 (build date 29 September 2003 to 3 November 2004) Ford 6.0L Power Stroke — 743250-5024S",
+    category: "turbocharger",
+    brand: "garrett",
+    // dpp listing price for GAR-743250-5024S.
+    price: 1113.58,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "743250-5024S",
+    fitment: "2004–2005 Ford 6.0L Power Stroke with an engine build date between 29 September 2003 and 3 November 2004, engine serial numbers 6155637 to 6344932.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-9833-garrett-new-stock-replacement-turbo-03-07-60l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/turbocharger/garrett-variable-vane-turbocharger-743250-5024s/1.webp",
+    images: ["/product-media/turbocharger/garrett-variable-vane-turbocharger-743250-5024s/1.webp"],
+    description: `Genuine new Garrett variable-vane replacement turbocharger for the 2004–2005 (build date 29 September 2003 to 3 November 2004) Ford 6.0L Power Stroke.
+
+The 6.0L Power Stroke arrived in 2003 with a Garrett variable-vane turbocharger — vanes inside the housing move to make the turbo behave like a small frame low down and a large one higher up. The known weakness is soot: it packs around the vanes until they stick in one position, and the turbo stops varying anything.
+
+Garrett refined these turbos over the years. These are new units direct from Garrett carrying the current revisions, rather than a rebuild of the original design a truck left the factory with — and by now those factory warranties are long gone.
+
+Fitment on the 6.0L splits by engine build date and serial number, not just by model year, so check yours against the range for this part before ordering.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Type: Variable-vane, new stock replacement
+Application: 2004–2005 (build date 29 September 2003 to 3 November 2004)
+Engine serial numbers: 6155637 to 6344932
+Engine: 6.0L Power Stroke
+Part number: 743250-5024S
+
+Highlights
+
+Genuine new Garrett, not remanufactured
+Carries Garrett's current revisions
+Matched to engine build date and serial range
+Variable-vane design
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2875,
+    createdAt: 1789430400000,
+    name: "Garrett New Stock Replacement Turbocharger — 2004.5–2010 GM 6.6L Duramax LLY/LBZ/LMM — 848212-5001S",
+    category: "turbocharger",
+    brand: "garrett",
+    // dpp listing price for GAR-848212-5001S.
+    price: 1647,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "848212-5001S",
+    fitment: "2004.5–2005 Chevrolet 6.6L Duramax LLY; 2004.5–2005 GMC 6.6L Duramax LLY; 2006–2007 Chevrolet 6.6L Duramax LLY/LBZ; 2006–2007 GMC 6.6L Duramax LLY/LBZ; 2007.5–2010 Chevrolet 6.6L Duramax LMM; and 2007.5–2010 GMC 6.6L Duramax LMM.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-16119-garrett-848212-5001s-new-stock-replacement-turbocharger-045-10-66l-gm-duramax-aspx",
+    thumbnail: "/product-media/turbocharger/garrett-stock-replacement-turbocharger-848212-5001s/1.webp",
+    images: ["/product-media/turbocharger/garrett-stock-replacement-turbocharger-848212-5001s/1.webp"],
+    description: `Genuine new Garrett drop-in replacement turbocharger for the 2004.5–2010 6.6L Duramax.
+
+This is a brand new unit direct from Garrett, the manufacturer of the factory turbocharger — not a remanufactured one.
+
+It carries Garrett's latest upgrades, including the revised centre housing with three cobalt pins added. The pins are there to reduce distortion and improve how the vanes actuate, which is the mechanism that goes wrong on a variable-vane turbo full of soot.
+
+One note for 2004.5–2005 LLY engines: fitting this turbo to those trucks also requires the Vane Position Sensor Adapter, which is a separate part.
+
+Specifications
+
+Manufacturer: Garrett Motion
+Condition: New, not remanufactured
+Centre housing: Revised, with three cobalt pins
+Benefit: Reduced distortion, improved vane actuation
+LLY note: 2004.5–2005 also requires the Vane Position Sensor Adapter
+Engine: 6.6L Duramax LLY, LBZ and LMM
+Part number: 848212-5001S
+
+Highlights
+
+Brand new genuine Garrett, not reman
+Revised centre housing with cobalt pins
+Drop-in for LLY, LBZ and LMM
+LLY needs the vane position sensor adapter
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2876,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured Fuel Injector — 2015–2019 Ford 6.7L Power Stroke — 0986435433",
+    category: "engine",
+    brand: "bosch",
+    // dpp listing price for BOSCH-0986435433.
+    price: 298.48,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986435433",
+    fitment: "2015–2019 Ford 6.7L Power Stroke. Sold individually — one injector, not a set.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-0986434415-remanufactured-injector-2015-2017-67l-ford-powerstroke",
+    thumbnail: "/product-media/engine/bosch-remanufactured-injector-0986435433/1.webp",
+    images: ["/product-media/engine/bosch-remanufactured-injector-0986435433/1.webp"],
+    description: `Genuine Bosch remanufactured fuel injector for the 2015–2019 Ford 6.7L Power Stroke, sold individually.
+
+Common-rail injectors work at pressures that leave no margin for poor fuel. Over time they fail, and the symptoms an owner notices first are white smoke and a hard start.
+
+A failing injector is usually one injector, which is why these are sold one at a time rather than as a set of eight. Replace the one that has gone, or all of them, as the diagnosis warrants.
+
+This is a genuine Bosch remanufactured unit — Bosch builds the factory injector on this engine, so the part going in is the same design remanufactured by the company that designed it.
+
+Specifications
+
+Manufacturer: Bosch
+Condition: Remanufactured by Bosch
+Quantity: One injector, sold individually
+Engine: 6.7L Power Stroke
+Years: 2015–2019
+Part number: 0986435433
+
+Highlights
+
+Genuine Bosch, the OE injector manufacturer
+Sold individually — replace one or all
+Remanufactured to Bosch specification
+Addresses white smoke and hard starting
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2877,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured 145 amp Alternator — 2007.5–2013 Dodge / Ram 6.7L Cummins — AL6474X",
+    category: "electronics",
+    brand: "bosch",
+    // dpp listing price for BOSCH-AL6474X.
+    price: 230.33,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AL6474X",
+    fitment: "2007.5–2013 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-remanufactured-136-amp-alternator-075-13-dodge-ram-67l-cummins",
+    thumbnail: "/product-media/electronics/bosch-remanufactured-alternator-al6474x/1.webp",
+    images: ["/product-media/electronics/bosch-remanufactured-alternator-al6474x/1.webp"],
+    description: `Genuine Bosch remanufactured 145 amp alternator for the 2007.5–2013 Dodge / Ram 6.7L Cummins.
+
+The alternator is what keeps voltage where the rest of the truck expects to find it. When it starts to go the symptoms are indirect — lights that dim at idle, batteries that never quite come back up, electronics that behave oddly — which is why it is often diagnosed late.
+
+This is the 145 amp unit for the 2007.5–2013 Dodge / Ram 6.7L Cummins, remanufactured by Bosch.
+
+Bosch remanufactured units are built with more new parts than a standard rebuild and are tested before they leave, and the specification they are held to is the OE one — which Bosch wrote, since these are the parts the trucks were built with.
+
+Specifications
+
+Manufacturer: Bosch
+Condition: Remanufactured by Bosch
+Output: 145 amp
+Specification: Matches or exceeds OE
+Application: 2007.5–2013 Dodge / Ram 6.7L Cummins
+Part number: AL6474X
+
+Highlights
+
+145 amp output
+Genuine Bosch remanufactured
+More new parts than a standard rebuild
+Tested to OE specification
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2878,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured 132 amp Alternator — 2003–2005 Dodge Ram 5.9L Cummins — AL6430X",
+    category: "electronics",
+    brand: "bosch",
+    // dpp listing price for BOSCH-AL6430X.
+    price: 158.01,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AL6430X",
+    fitment: "2003–2005 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-remanufactured-132-amp-alternator-03-05-dodge-59l-cummins",
+    thumbnail: "/product-media/electronics/bosch-remanufactured-alternator-al6430x/1.webp",
+    images: ["/product-media/electronics/bosch-remanufactured-alternator-al6430x/1.webp"],
+    description: `Genuine Bosch remanufactured 132 amp alternator for the 2003–2005 Dodge Ram 5.9L Cummins.
+
+The alternator is what keeps voltage where the rest of the truck expects to find it. When it starts to go the symptoms are indirect — lights that dim at idle, batteries that never quite come back up, electronics that behave oddly — which is why it is often diagnosed late.
+
+This is the 132 amp unit for the 2003–2005 Dodge Ram 5.9L Cummins, remanufactured by Bosch.
+
+Bosch remanufactured units are built with more new parts than a standard rebuild and are tested before they leave, and the specification they are held to is the OE one — which Bosch wrote, since these are the parts the trucks were built with.
+
+Specifications
+
+Manufacturer: Bosch
+Condition: Remanufactured by Bosch
+Output: 132 amp
+Specification: Matches or exceeds OE
+Application: 2003–2005 Dodge Ram 5.9L Cummins
+Part number: AL6430X
+
+Highlights
+
+132 amp output
+Genuine Bosch remanufactured
+More new parts than a standard rebuild
+Tested to OE specification
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2879,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured Starter, 13-Tooth — 2007.5–2018 Dodge / Ram 6.7L Cummins — SR6470X",
+    category: "electronics",
+    brand: "bosch",
+    // dpp listing price for BOSCH-SR6470X.
+    price: 203,
+    stock: true,
+    condition: "refurbished",
+    warranty: "2-Year Limited Warranty",
+    location: "our supplier network",
+    partNumber: "SR6470X",
+    fitment: "2007.5–2018 Dodge / Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-remanufactured-starter-075-18-dodge-ram-67l-cummins",
+    thumbnail: "/product-media/electronics/bosch-remanufactured-starter-sr6470x/1.webp",
+    images: ["/product-media/electronics/bosch-remanufactured-starter-sr6470x/1.webp"],
+    description: `Genuine Bosch remanufactured 13-tooth starter for the 2007.5–2018 Dodge / Ram 6.7L Cummins.
+
+A starter is judged on the worst morning of the year, not the average one — cold, a tired battery, and a diesel that needs cranking.
+
+This unit is built in aluminium with a 13-tooth drive and is factory-tested before it ships. Bosch holds it to the OE specification, and installation needs only basic hand tools.
+
+Bosch remanufactured units are built with more new parts than a standard rebuild and are tested before they leave, and the specification they are held to is the OE one — which Bosch wrote, since these are the parts the trucks were built with.
+
+Specifications
+
+Manufacturer: Bosch
+Condition: Remanufactured by Bosch
+Drive: 13-tooth
+Housing: Aluminium
+Specification: Matches or exceeds OE
+Application: 2007.5–2018 Dodge / Ram 6.7L Cummins
+Part number: SR6470X
+
+Highlights
+
+Genuine Bosch remanufactured
+13-tooth aluminium construction
+Factory-tested before shipping
+Installs with basic hand tools
+
+Warranty
+2-Year Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2880,
+    createdAt: 1789430400000,
+    name: "Bosch Remanufactured Starter, 13-Tooth — 1994–2002 Dodge Ram 5.9L Cummins — SR6519X",
+    category: "electronics",
+    brand: "bosch",
+    // dpp listing price for BOSCH-SR6519X.
+    price: 170.47,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "SR6519X",
+    fitment: "1994–2002 Dodge Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-remanufactured-starter-94-02-dodge-59l-cummins",
+    thumbnail: "/product-media/electronics/bosch-remanufactured-starter-sr6519x/1.webp",
+    images: ["/product-media/electronics/bosch-remanufactured-starter-sr6519x/1.webp"],
+    description: `Genuine Bosch remanufactured 13-tooth starter for the 1994–2002 Dodge Ram 5.9L Cummins.
+
+A starter is judged on the worst morning of the year, not the average one — cold, a tired battery, and a diesel that needs cranking.
+
+This unit is built in aluminium with a 13-tooth drive and is factory-tested before it ships. Bosch holds it to the OE specification, and installation needs only basic hand tools.
+
+Bosch remanufactured units are built with more new parts than a standard rebuild and are tested before they leave, and the specification they are held to is the OE one — which Bosch wrote, since these are the parts the trucks were built with.
+
+Specifications
+
+Manufacturer: Bosch
+Condition: Remanufactured by Bosch
+Drive: 13-tooth
+Housing: Aluminium
+Specification: Matches or exceeds OE
+Application: 1994–2002 Dodge Ram 5.9L Cummins
+Part number: SR6519X
+
+Highlights
+
+Genuine Bosch remanufactured
+13-tooth aluminium construction
+Factory-tested before shipping
+Installs with basic hand tools
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2881,
+    createdAt: 1789430400000,
+    name: "Bosch QuietCast Semi-Metallic Front Brake Pads — 2009–2016 Ram 2500 / 3500 — BP1399",
+    category: "brakes",
+    brand: "bosch",
+    // dpp listing price for BOSCH-BP1399.
+    price: 47.28,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "BP1399",
+    fitment: "2009–2016 Ram 2500 and 3500. Front axle.",
+    included: ["Front brake pad set","Hardware kit","Lubricant"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-bosch-quietcast-ceramic-front-brake-pads-09-16-ram-25003500",
+    thumbnail: "/product-media/brakes/bosch-quietcast-semi-metallic-front-brake-pads-bp1399/1.webp",
+    images: ["/product-media/brakes/bosch-quietcast-semi-metallic-front-brake-pads-bp1399/1.webp"],
+    description: `Bosch QuietCast semi-metallic front brake pads with shims, hardware and lubricant for the 2009–2016 Ram 2500 / 3500.
+
+Semi-metallic pads are the sensible choice on a heavy truck: they hold their friction as temperature climbs, which is what matters coming down a grade with weight behind you.
+
+Bosch's QuietCast line addresses the usual complaint about semi-metallic pads — noise — with their Molded Shim Technology, a shim moulded to the pad rather than clipped on, to keep noise and vibration down.
+
+The backing plate is powder-coated against rust and corrosion, and the pads are slotted and chamfered. Lubricant and a hardware kit are included, so the job can be done properly in one go.
+
+Specifications
+
+Manufacturer: Bosch
+Line: QuietCast
+Compound: Semi-metallic
+Position: Front axle
+Noise control: Molded Shim Technology (MST)
+Backing plate: Powder-coated
+Included: Pads, hardware kit, lubricant
+Part number: BP1399
+
+Highlights
+
+Semi-metallic compound for heavy trucks
+Molded Shim Technology against noise
+Powder-coated backing plate
+Hardware kit and lubricant included
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2882,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Remanufactured 120% over, 12 mm stroker CP3 Injection Pump — 2007.5–2018 Dodge / Ram 6.7L Cummins — 0986437334DDSE",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986437334DDSE.
+    price: 1842.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986437334DDSE",
+    fitment: "2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-industrial-injection-reman-120-over-12mm-stroker-cp3-injection-pump-075-18-dodge-67l-cummins",
+    thumbnail: "/product-media/engine/industrial-injection-cp3-injection-pump-0986437334ddse/1.webp",
+    images: ["/product-media/engine/industrial-injection-cp3-injection-pump-0986437334ddse/1.webp"],
+    description: `Industrial Injection remanufactured CP3 injection pump, 120% over, 12 mm stroker, for the 2007.5–2018 Dodge / Ram 6.7L Cummins.
+
+Tuning alone runs out. Past a certain point the engine wants more fuel than the factory pump can deliver, and asking a stock pump to keep up is how rail pressure goes soft at exactly the moment you wanted it.
+
+This pump is completely remanufactured by Industrial Injection and built to deliver 120% more fuel than the stock CP3. It is their 12 mm stroker build.
+
+Fuelling is only half of the equation — air has to come with it, and the tune has to be written for the hardware. A pump this far over stock belongs in a truck where the rest of the combination has been thought through.
+
+Industrial Injection remanufacture and modify diesel fuel systems as their whole business, and these pumps are built in-house rather than bought in.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Type: CP3 injection pump
+Condition: Remanufactured by Industrial Injection
+Fuel delivery: 120% over stock
+Build: 12 mm stroker
+Application: 2007.5–2018 Dodge / Ram 6.7L Cummins
+Part number: 0986437334DDSE
+
+Highlights
+
+120% more fuel than the stock CP3
+Remanufactured in-house by Industrial Injection
+12 mm stroker build
+For a truck with matched air and tuning
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2883,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Remanufactured 33% over, modified CP3 Injection Pump — 2007.5–2018 Dodge / Ram 6.7L Cummins — 0986437334SHOSE",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986437334SHOSE.
+    price: 1106.72,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986437334SHOSE",
+    fitment: "2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-15246-industrial-injection-reman-modified-33-over-cp3-injection-pump-075-18-67l-dodge-cummins-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-cp3-injection-pump-0986437334shose/1.webp",
+    images: ["/product-media/engine/industrial-injection-cp3-injection-pump-0986437334shose/1.webp"],
+    description: `Industrial Injection remanufactured CP3 injection pump, 33% over, modified, for the 2007.5–2018 Dodge / Ram 6.7L Cummins.
+
+Tuning alone runs out. Past a certain point the engine wants more fuel than the factory pump can deliver, and asking a stock pump to keep up is how rail pressure goes soft at exactly the moment you wanted it.
+
+This pump is completely remanufactured by Industrial Injection and built to deliver 33% more fuel than the stock CP3.
+
+Fuelling is only half of the equation — air has to come with it, and the tune has to be written for the hardware. A pump this far over stock belongs in a truck where the rest of the combination has been thought through.
+
+Industrial Injection remanufacture and modify diesel fuel systems as their whole business, and these pumps are built in-house rather than bought in.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Type: CP3 injection pump
+Condition: Remanufactured by Industrial Injection
+Fuel delivery: 33% over stock
+Application: 2007.5–2018 Dodge / Ram 6.7L Cummins
+Part number: 0986437334SHOSE
+
+Highlights
+
+33% more fuel than the stock CP3
+Remanufactured in-house by Industrial Injection
+For a truck with matched air and tuning
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2884,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Remanufactured 42% over, modified CP3 Injection Pump — 2006–2010 GM 6.6L Duramax — 0986437332SHOSE",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986437332SHOSE.
+    price: 1106.72,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986437332SHOSE",
+    fitment: "2006–2007 Chevrolet 6.6L Duramax LLY/LBZ; 2006–2007 GMC 6.6L Duramax LLY/LBZ; 2007.5–2010 Chevrolet 6.6L Duramax LMM; and 2007.5–2010 GMC 6.6L Duramax LMM.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-15242-industrial-injection-reman-modified-42-over-cp3-injection-pump-06-10-gm-duramax-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-cp3-injection-pump-0986437332shose/1.webp",
+    images: ["/product-media/engine/industrial-injection-cp3-injection-pump-0986437332shose/1.webp"],
+    description: `Industrial Injection remanufactured CP3 injection pump, 42% over, modified, for the 2006–2010 GM 6.6L Duramax.
+
+Tuning alone runs out. Past a certain point the engine wants more fuel than the factory pump can deliver, and asking a stock pump to keep up is how rail pressure goes soft at exactly the moment you wanted it.
+
+This pump is completely remanufactured by Industrial Injection and built to deliver 42% more fuel than the stock CP3.
+
+Fuelling is only half of the equation — air has to come with it, and the tune has to be written for the hardware. A pump this far over stock belongs in a truck where the rest of the combination has been thought through.
+
+Industrial Injection remanufacture and modify diesel fuel systems as their whole business, and these pumps are built in-house rather than bought in.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Type: CP3 injection pump
+Condition: Remanufactured by Industrial Injection
+Fuel delivery: 42% over stock
+Application: 2006–2010 GM 6.6L Duramax
+Part number: 0986437332SHOSE
+
+Highlights
+
+42% more fuel than the stock CP3
+Remanufactured in-house by Industrial Injection
+For a truck with matched air and tuning
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2885,
+    createdAt: 1789430400000,
+    name: "Industrial Injection XR1 Upgraded Turbocharger — 2017–2019 Ford 6.7L Power Stroke Cab & Chassis — 888142-0001-XR1",
+    category: "turbocharger",
+    brand: "industrial-injection",
+    // dpp listing price for II-888142-0001-XR1.
+    price: 2556.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "888142-0001-XR1",
+    fitment: "2017–2019 Ford 6.7L Power Stroke, cab and chassis applications only.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/industrial-injection-xr1-upgraded-turbocharger-17-19-ford-6-7l-powerstroke-cab-chassis",
+    thumbnail: "/product-media/turbocharger/industrial-injection-xr1-turbocharger-888142-0001-xr1/1.webp",
+    images: ["/product-media/turbocharger/industrial-injection-xr1-turbocharger-888142-0001-xr1/1.webp"],
+    description: `Industrial Injection XR1 drop-in upgraded turbocharger for the 2017–2019 Ford 6.7L Power Stroke cab and chassis, no core charge.
+
+The XR1 is Industrial Injection's answer to wanting more out of the factory turbocharger without rebuilding the front of the engine around it: a drop-in replacement that supports 650 horsepower and spools quickly.
+
+More airflow at the same fuelling means lower exhaust gas temperature, which is the number that decides how long a hard-working diesel lasts.
+
+There is no core charge on this one — the old turbo stays with you rather than going back as an exchange. It is for cab and chassis applications only.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: XR1
+Supports: 650 horsepower
+Installation: Drop-in replacement
+Core charge: None
+Application: Cab and chassis only
+Engine: 6.7L Power Stroke
+Part number: 888142-0001-XR1
+
+Highlights
+
+Supports 650 horsepower
+Drop-in — no kit required
+No core charge
+Cab and chassis only
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2886,
+    createdAt: 1789430400000,
+    name: "Industrial Injection XR Series Billet 61 mm Turbocharger — 2011–2016 GM 6.6L Duramax LML — 848212-0002-XR",
+    category: "turbocharger",
+    brand: "industrial-injection",
+    // dpp listing price for IIS-848212-0002-XR.
+    price: 2166.95,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "848212-0002-XR",
+    fitment: "2011–2016 Chevrolet 6.6L Duramax LML; and 2011–2016 GMC 6.6L Duramax LML.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/industrial-injection-xr-series-turbo-billet-61mm-11-16-gm-6-6l-duramax-lml",
+    thumbnail: "/product-media/turbocharger/industrial-injection-xr-series-turbocharger-848212-0002-xr/1.webp",
+    images: ["/product-media/turbocharger/industrial-injection-xr-series-turbocharger-848212-0002-xr/1.webp"],
+    description: `Industrial Injection XR Series 61 mm billet drop-in turbocharger for the 2011–2016 6.6L Duramax LML.
+
+The XR Series is an OE-style turbocharger built for more airflow than the factory unit — quicker spool, lower exhaust gas temperature, and headroom for a truck that works.
+
+Because it is a direct stock replacement, it bolts to the OEM mounting points and keeps the original variable geometry operation. No major modification, and nothing downstream needs rethinking.
+
+It suits daily driving, towing and work-truck duty rather than being a single-purpose part.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: XR
+Compressor wheel: 61 mm billet
+Style: OE-style, retains variable geometry
+Mounting: OEM mounting points
+Engine: 6.6L Duramax LML
+Part number: 848212-0002-XR
+
+Highlights
+
+61 mm billet compressor wheel
+Keeps factory variable geometry operation
+Bolts to OEM mounting points
+Quicker spool, lower EGT
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2887,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Exchange Turbocharger — 2017–2019 GM 6.6L Duramax L5P — 12709901060SE",
+    category: "turbocharger",
+    brand: "industrial-injection",
+    // dpp listing price for IIS-12709901060SE.
+    price: 2097.95,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "12709901060SE",
+    fitment: "2017–2019 Chevrolet 6.6L Duramax L5P; and 2017–2019 GMC 6.6L Duramax L5P.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/industrial-injection-exchange-turbocharger-17-19-gm-duramax-l5p",
+    thumbnail: "/product-media/turbocharger/industrial-injection-exchange-turbocharger-12709901060se/1.webp",
+    images: ["/product-media/turbocharger/industrial-injection-exchange-turbocharger-12709901060se/1.webp"],
+    description: `Industrial Injection direct-fit exchange turbocharger for the 2017–2019 6.6L Duramax L5P.
+
+A failed turbocharger takes power, fuel economy and drivability with it, and on an L5P it is not the sort of job that waits.
+
+This is Industrial Injection's exchange unit: a direct-fit turbocharger delivering OE-level performance, built as the replacement for a worn, damaged or low-performing original.
+
+It suits towing, daily driving and an engine rebuild equally — it is a restoration of what the truck had, done properly, rather than a change of character.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Type: Exchange turbocharger
+Performance: OE level
+Installation: Direct fit
+Engine: 6.6L Duramax L5P
+Years: 2017–2019
+Part number: 12709901060SE
+
+Highlights
+
+Direct-fit OE-level replacement
+Restores power and fuel economy
+Suits towing and rebuild work
+Industrial Injection exchange unit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2888,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Dragon Fly Injector, Sold Individually — 2013–2018 Ram 6.7L Cummins — 0986435621SEDFLY",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986435621SEDFLY.
+    price: 412.2,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986435621SEDFLY",
+    fitment: "2013–2018 Ram 6.7L Cummins. Sold individually — a complete set is six injectors.",
+    coreCharge: "Refundable core deposit, credited when your old injectors are received",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-14193-industrial-injection-race-dragon-fly-reman-injectors-13-18-67l-cummins-pick-up-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-dragon-fly-injector-0986435621sedfly/1.webp",
+    images: ["/product-media/engine/industrial-injection-dragon-fly-injector-0986435621sedfly/1.webp"],
+    description: `Industrial Injection Dragon Fly injector for the 2013–2018 Ram 6.7L Cummins, sold one at a time.
+
+White smoke, a hard start or a miss usually means one injector rather than all of them, which is why these are priced and sold individually.
+
+Dragon Fly injectors are extrude-honed rather than re-nozzled, and Industrial Injection rate them at 10% over stock — around 50 to 60 horsepower. They do not require other major changes to the truck, such as a higher-output injection pump.
+
+Each unit is completely remanufactured by Industrial Injection, with testing and balancing done on a Bosch test stand.
+
+The price is for a single injector. A complete set for this engine is six, so order the quantity you need — one to replace a failed injector, or the full set.
+
+An upfront core deposit applies. It is credited back once your old injectors are received and processed.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: Dragon Fly
+Condition: Remanufactured
+Testing: Balanced on a Bosch test stand
+Quantity: One injector — a full set is six
+Core: Refundable deposit required
+Application: 2013–2018 Ram 6.7L Cummins
+Part number: 0986435621SEDFLY
+
+Highlights
+
+Dragon Fly specification
+Sold individually — replace one or all
+Balanced on a Bosch test stand
+Refundable core deposit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2889,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Stock Remanufactured Injector, Sold Individually — 2013–2018 Ram 6.7L Cummins — 0986435621SE-IIS",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986435621SE-IIS.
+    price: 257,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986435621SE-IIS",
+    fitment: "2013–2018 Ram 6.7L Cummins. Sold individually — a complete set is six injectors.",
+    coreCharge: "Refundable core deposit, credited when your old injectors are received",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-14193-industrial-injection-race-dragon-fly-reman-injectors-13-18-67l-cummins-pick-up-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-stock-remanufactured-injector-0986435621se-iis/1.webp",
+    images: ["/product-media/engine/industrial-injection-stock-remanufactured-injector-0986435621se-iis/1.webp"],
+    description: `Industrial Injection Stock Remanufactured injector for the 2013–2018 Ram 6.7L Cummins, sold one at a time.
+
+White smoke, a hard start or a miss usually means one injector rather than all of them, which is why these are priced and sold individually.
+
+This is the stock-flow remanufactured injector — the right part when the job is to replace a failed injector and leave the truck's fuelling where it is.
+
+Each unit is completely remanufactured by Industrial Injection, with testing and balancing done on a Bosch test stand.
+
+The price is for a single injector. A complete set for this engine is six, so order the quantity you need — one to replace a failed injector, or the full set.
+
+An upfront core deposit applies. It is credited back once your old injectors are received and processed.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: Stock Remanufactured
+Condition: Remanufactured
+Testing: Balanced on a Bosch test stand
+Quantity: One injector — a full set is six
+Core: Refundable deposit required
+Application: 2013–2018 Ram 6.7L Cummins
+Part number: 0986435621SE-IIS
+
+Highlights
+
+Stock Remanufactured specification
+Sold individually — replace one or all
+Balanced on a Bosch test stand
+Refundable core deposit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2890,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Stock Remanufactured Injector, Sold Individually — 2007.5–2010 GM 6.6L Duramax LMM — 0986435520SE-IIS",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986435520SE-IIS.
+    price: 379.22,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986435520SE-IIS",
+    fitment: "2007.5–2010 GM 6.6L Duramax LMM. Sold individually — a complete set is eight injectors.",
+    coreCharge: "Refundable core deposit, credited when your old injectors are received",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-11188-industrial-injection-dragonfly-race-reman-injectors-075-10-66l-lmm-gm-duramax-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-stock-remanufactured-injector-0986435520se-iis/1.webp",
+    images: ["/product-media/engine/industrial-injection-stock-remanufactured-injector-0986435520se-iis/1.webp"],
+    description: `Industrial Injection Stock Remanufactured injector for the 2007.5–2010 GM 6.6L Duramax LMM, sold one at a time.
+
+White smoke, a hard start or a miss usually means one injector rather than all of them, which is why these are priced and sold individually.
+
+This is the stock-flow remanufactured injector, for replacing a failed one without changing how the engine is fuelled.
+
+Each unit is completely remanufactured by Industrial Injection, with testing and balancing done on a Bosch test stand.
+
+The price is for a single injector. A complete set for this engine is eight, so order the quantity you need — one to replace a failed injector, or the full set.
+
+An upfront core deposit applies. It is credited back once your old injectors are received and processed.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: Stock Remanufactured
+Condition: Remanufactured
+Testing: Balanced on a Bosch test stand
+Quantity: One injector — a full set is eight
+Core: Refundable deposit required
+Application: 2007.5–2010 GM 6.6L Duramax LMM
+Part number: 0986435520SE-IIS
+
+Highlights
+
+Stock Remanufactured specification
+Sold individually — replace one or all
+Balanced on a Bosch test stand
+Refundable core deposit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2891,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Dragon Fly Injector, Sold Individually — 2007.5–2010 GM 6.6L Duramax LMM — 0986435520SEDFLY",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986435520SEDFLY.
+    price: 413.17,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986435520SEDFLY",
+    fitment: "2007.5–2010 GM 6.6L Duramax LMM. Sold individually — a complete set is eight injectors.",
+    coreCharge: "Refundable core deposit, credited when your old injectors are received",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-11188-industrial-injection-dragonfly-race-reman-injectors-075-10-66l-lmm-gm-duramax-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-dragon-fly-injector-0986435520sedfly/1.webp",
+    images: ["/product-media/engine/industrial-injection-dragon-fly-injector-0986435520sedfly/1.webp"],
+    description: `Industrial Injection Dragon Fly injector for the 2007.5–2010 GM 6.6L Duramax LMM, sold one at a time.
+
+White smoke, a hard start or a miss usually means one injector rather than all of them, which is why these are priced and sold individually.
+
+Industrial Injection size their injectors by flow rather than by a horsepower claim. The Dragon Fly for this engine is 15% over stock at 19 litres per minute displacement, which they put at around 50 horsepower — though what any injector is worth depends on the turbo, pump and tuning already on the truck.
+
+Each unit is completely remanufactured by Industrial Injection, with testing and balancing done on a Bosch test stand.
+
+The price is for a single injector. A complete set for this engine is eight, so order the quantity you need — one to replace a failed injector, or the full set.
+
+An upfront core deposit applies. It is credited back once your old injectors are received and processed.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: Dragon Fly
+Condition: Remanufactured
+Testing: Balanced on a Bosch test stand
+Quantity: One injector — a full set is eight
+Core: Refundable deposit required
+Application: 2007.5–2010 GM 6.6L Duramax LMM
+Part number: 0986435520SEDFLY
+
+Highlights
+
+Dragon Fly specification
+Sold individually — replace one or all
+Balanced on a Bosch test stand
+Refundable core deposit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2892,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Stock Remanufactured Injector, Sold Individually — 2006–2007 GM 6.6L Duramax LLY/LBZ — 0986435521SE-IIS",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986435521SE-IIS.
+    price: 379.22,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986435521SE-IIS",
+    fitment: "2006–2007 GM 6.6L Duramax LLY/LBZ. Sold individually — a complete set is eight injectors.",
+    coreCharge: "Refundable core deposit, credited when your old injectors are received",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-11187-industrial-injection-dragonfly-race-reman-injectors-06-07-66l-lly-lbz-gm-duramax-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-stock-remanufactured-injector-0986435521se-iis/1.webp",
+    images: ["/product-media/engine/industrial-injection-stock-remanufactured-injector-0986435521se-iis/1.webp"],
+    description: `Industrial Injection Stock Remanufactured injector for the 2006–2007 GM 6.6L Duramax LLY/LBZ, sold one at a time.
+
+White smoke, a hard start or a miss usually means one injector rather than all of them, which is why these are priced and sold individually.
+
+This is the stock-flow remanufactured injector, for a straight replacement rather than a fuelling change.
+
+Each unit is completely remanufactured by Industrial Injection, with testing and balancing done on a Bosch test stand.
+
+The price is for a single injector. A complete set for this engine is eight, so order the quantity you need — one to replace a failed injector, or the full set.
+
+An upfront core deposit applies. It is credited back once your old injectors are received and processed.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: Stock Remanufactured
+Condition: Remanufactured
+Testing: Balanced on a Bosch test stand
+Quantity: One injector — a full set is eight
+Core: Refundable deposit required
+Application: 2006–2007 GM 6.6L Duramax LLY/LBZ
+Part number: 0986435521SE-IIS
+
+Highlights
+
+Stock Remanufactured specification
+Sold individually — replace one or all
+Balanced on a Bosch test stand
+Refundable core deposit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2893,
+    createdAt: 1789430400000,
+    name: "Industrial Injection Dragon Fly Injector, Sold Individually — 2006–2007 GM 6.6L Duramax LLY/LBZ — 0986435521SEDFLY",
+    category: "engine",
+    brand: "industrial-injection",
+    // dpp listing price for II-0986435521SEDFLY.
+    price: 413.17,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "0986435521SEDFLY",
+    fitment: "2006–2007 GM 6.6L Duramax LLY/LBZ. Sold individually — a complete set is eight injectors.",
+    coreCharge: "Refundable core deposit, credited when your old injectors are received",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-11187-industrial-injection-dragonfly-race-reman-injectors-06-07-66l-lly-lbz-gm-duramax-aspx",
+    thumbnail: "/product-media/engine/industrial-injection-dragon-fly-injector-0986435521sedfly/1.webp",
+    images: ["/product-media/engine/industrial-injection-dragon-fly-injector-0986435521sedfly/1.webp"],
+    description: `Industrial Injection Dragon Fly injector for the 2006–2007 GM 6.6L Duramax LLY/LBZ, sold one at a time.
+
+White smoke, a hard start or a miss usually means one injector rather than all of them, which is why these are priced and sold individually.
+
+Industrial Injection size their injectors by flow rather than by a horsepower figure, because what an injector is worth depends on the turbo, pump and tuning already on the truck.
+
+Each unit is completely remanufactured by Industrial Injection, with testing and balancing done on a Bosch test stand.
+
+The price is for a single injector. A complete set for this engine is eight, so order the quantity you need — one to replace a failed injector, or the full set.
+
+An upfront core deposit applies. It is credited back once your old injectors are received and processed.
+
+Specifications
+
+Manufacturer: Industrial Injection
+Series: Dragon Fly
+Condition: Remanufactured
+Testing: Balanced on a Bosch test stand
+Quantity: One injector — a full set is eight
+Core: Refundable deposit required
+Application: 2006–2007 GM 6.6L Duramax LLY/LBZ
+Part number: 0986435521SEDFLY
+
+Highlights
+
+Dragon Fly specification
+Sold individually — replace one or all
+Balanced on a Bosch test stand
+Refundable core deposit
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2894,
+    createdAt: 1789430400000,
+    name: "Fleece Performance 63 mm FMW Cheetah Drop-In Turbocharger — 2007.5–2012 Dodge / Ram 6.7L Cummins — FPE-351-0712",
+    category: "turbocharger",
+    brand: "fleece",
+    // dpp listing price for FPE-351-0712.
+    price: 3099,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-351-0712",
+    fitment: "2007.5–2012 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/fleece-holset-vgt-cheetah-67l-cummins",
+    thumbnail: "/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-351-0712/1.webp",
+    images: ["/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-351-0712/1.webp"],
+    description: `Fleece Performance 63 mm FMW Cheetah drop-in turbocharger for the 2007.5–2012 Dodge / Ram 6.7L Cummins, rated to support 700 RWHP.
+
+The Cheetah series is built around a drop-in idea: Fleece's own FMW billet compressor wheel and a high-flow turbine wheel inside a housing that bolts where the factory turbo came out. No kit, no specialised tuning, and it still looks standard under the bonnet.
+
+This one runs a 63 mm billet FMW compressor wheel, high-flow inconel turbine wheel. Fleece rate it to support 700 rear-wheel horsepower without giving up drivability.
+
+This is the HE351VE VGT Cheetah — it keeps the variable-geometry operation the truck was built with, including the exhaust brake function that depends on it.
+
+A drop-in turbo is the least disruptive way to add airflow: nothing downstream has to be re-engineered, and the truck still drives like a truck.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: FMW Cheetah
+Wheels: 63 mm billet FMW compressor wheel, high-flow inconel turbine wheel
+Supports: 700 RWHP
+Installation: Drop-in — no kit required
+Application: 2007.5–2012 Dodge / Ram 6.7L Cummins
+Part number: FPE-351-0712
+
+Highlights
+
+Fleece FMW billet compressor wheel
+Supports 700 RWHP
+Drop-in, no kit or special tuning
+Stock appearance under the bonnet
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2895,
+    createdAt: 1789430400000,
+    name: "Fleece Performance 63 mm FMW Cheetah Drop-In Turbocharger — 2015–2019 Ford 6.7L Power Stroke — FPE-PS-FMW-63-1518",
+    category: "turbocharger",
+    brand: "fleece",
+    // dpp listing price for FPE-PS-FMW-63-1518.
+    price: 2699,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-PS-FMW-63-1518",
+    fitment: "2015–2019 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/fleece-fmw-cheetah-turbo-15-19-ford",
+    thumbnail: "/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-ps-fmw-63-1518/1.webp",
+    images: ["/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-ps-fmw-63-1518/1.webp"],
+    description: `Fleece Performance 63 mm FMW Cheetah drop-in turbocharger for the 2015–2019 Ford 6.7L Power Stroke.
+
+The Cheetah series is built around a drop-in idea: Fleece's own FMW billet compressor wheel and a high-flow turbine wheel inside a housing that bolts where the factory turbo came out. No kit, no specialised tuning, and it still looks standard under the bonnet.
+
+This one runs a 63 mm billet FMW compressor wheel.
+
+One note from Fleece: depending on which core they have available to rebuild, this turbocharger ships with either an external oil tube from turbo to pedestal or an internal one. If yours has the internal tube, there is a small filter in the bottom of the pedestal to be aware of at install.
+
+A drop-in turbo is the least disruptive way to add airflow: nothing downstream has to be re-engineered, and the truck still drives like a truck.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: FMW Cheetah
+Wheels: 63 mm billet FMW compressor wheel
+Installation: Drop-in — no kit required
+Application: 2015–2019 Ford 6.7L Power Stroke
+Part number: FPE-PS-FMW-63-1518
+
+Highlights
+
+Fleece FMW billet compressor wheel
+Drop-in, no kit or special tuning
+Stock appearance under the bonnet
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2896,
+    createdAt: 1789430400000,
+    name: "Fleece Performance 63 mm FMW Cheetah Drop-In Turbocharger — 2011–2016 GM 6.6L Duramax LML — FPE-LML-VNT-63-FMW-N",
+    category: "turbocharger",
+    brand: "fleece",
+    // dpp listing price for FPE-LML-VNT-63-FMW-N.
+    price: 2649,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-LML-VNT-63-FMW-N",
+    fitment: "2011–2016 Chevrolet 6.6L Duramax LML; and 2011–2016 GMC 6.6L Duramax LML.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-17415-fleece-performance-63mm-billet-vnt-cheetah-turbocharger-brand-new-no-core-11-16-66l-gm-duramax-lml-aspx",
+    thumbnail: "/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-lml-vnt-63-fmw-n/1.webp",
+    images: ["/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-lml-vnt-63-fmw-n/1.webp"],
+    description: `Fleece Performance 63 mm FMW Cheetah drop-in turbocharger for the 2011–2016 GM 6.6L Duramax LML, rated to support 650 RWHP.
+
+The Cheetah series is built around a drop-in idea: Fleece's own FMW billet compressor wheel and a high-flow turbine wheel inside a housing that bolts where the factory turbo came out. No kit, no specialised tuning, and it still looks standard under the bonnet.
+
+This one runs a 63 mm FMW compressor wheel, high-flow Cheetah turbine wheel. Fleece rate it to support 650 rear-wheel horsepower without giving up drivability.
+
+This is the no-core version, so there is nothing to send back.
+
+A drop-in turbo is the least disruptive way to add airflow: nothing downstream has to be re-engineered, and the truck still drives like a truck.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: FMW Cheetah
+Wheels: 63 mm FMW compressor wheel, high-flow Cheetah turbine wheel
+Supports: 650 RWHP
+Installation: Drop-in — no kit required
+Application: 2011–2016 GM 6.6L Duramax LML
+Part number: FPE-LML-VNT-63-FMW-N
+
+Highlights
+
+Fleece FMW billet compressor wheel
+Supports 650 RWHP
+Drop-in, no kit or special tuning
+Stock appearance under the bonnet
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2897,
+    createdAt: 1789430400000,
+    name: "Fleece Performance 63 mm FMW Cheetah Drop-In Turbocharger — 2017–2023 GM 6.6L Duramax L5P — FPE-L5P-VNT63-1723",
+    category: "turbocharger",
+    brand: "fleece",
+    // dpp listing price for FPE-L5P-VNT63-1723.
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-L5P-VNT63-1723",
+    fitment: "2017–2023 Chevrolet 6.6L Duramax L5P; and 2017–2023 GMC 6.6L Duramax L5P.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/fleece-performance-63mm-cheetah-turbocharger-17-23-gm-6-6l-duramax-l5p",
+    thumbnail: "/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-l5p-vnt63-1723/1.webp",
+    images: ["/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-l5p-vnt63-1723/1.webp"],
+    description: `Fleece Performance 63 mm FMW Cheetah drop-in turbocharger for the 2017–2023 GM 6.6L Duramax L5P, rated to support 650 RWHP.
+
+The Cheetah series is built around a drop-in idea: Fleece's own FMW billet compressor wheel and a high-flow turbine wheel inside a housing that bolts where the factory turbo came out. No kit, no specialised tuning, and it still looks standard under the bonnet.
+
+This one runs a 63 mm billet compressor wheel, 65 mm high-flow turbine wheel. Fleece rate it to support 650 rear-wheel horsepower without giving up drivability.
+
+A drop-in turbo is the least disruptive way to add airflow: nothing downstream has to be re-engineered, and the truck still drives like a truck.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: FMW Cheetah
+Wheels: 63 mm billet compressor wheel, 65 mm high-flow turbine wheel
+Supports: 650 RWHP
+Installation: Drop-in — no kit required
+Application: 2017–2023 GM 6.6L Duramax L5P
+Part number: FPE-L5P-VNT63-1723
+
+Highlights
+
+Fleece FMW billet compressor wheel
+Supports 650 RWHP
+Drop-in, no kit or special tuning
+Stock appearance under the bonnet
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2898,
+    createdAt: 1789430400000,
+    name: "Fleece Performance 63 mm FMW Cheetah Drop-In Turbocharger — 2004.5–2010 GM 6.6L Duramax — FPE-VNT63-STREET",
+    category: "turbocharger",
+    brand: "fleece",
+    // dpp listing price for FPE-VNT63-STREET.
+    price: 2599,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-VNT63-STREET",
+    fitment: "2004.5–2005 Chevrolet 6.6L Duramax LLY; 2004.5–2005 GMC 6.6L Duramax LLY; 2006–2007 Chevrolet 6.6L Duramax LLY/LBZ; 2006–2007 GMC 6.6L Duramax LLY/LBZ; 2007.5–2010 Chevrolet 6.6L Duramax LMM; and 2007.5–2010 GMC 6.6L Duramax LMM.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/fleece-63mm-fmw-cheetah-turbo-duramax",
+    thumbnail: "/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-vnt63-street/1.webp",
+    images: ["/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-vnt63-street/1.webp"],
+    description: `Fleece Performance 63 mm FMW Cheetah drop-in turbocharger for the 2004.5–2010 GM 6.6L Duramax, rated to support 650 RWHP.
+
+The Cheetah series is built around a drop-in idea: Fleece's own FMW billet compressor wheel and a high-flow turbine wheel inside a housing that bolts where the factory turbo came out. No kit, no specialised tuning, and it still looks standard under the bonnet.
+
+This one runs a 63 mm billet compressor wheel, high-flow Cheetah turbine wheel. Fleece rate it to support 650 rear-wheel horsepower without giving up drivability.
+
+Fleece pitch this one at dual-purpose trucks — the spool and throttle response of a small turbo with the top end of a larger one.
+
+A drop-in turbo is the least disruptive way to add airflow: nothing downstream has to be re-engineered, and the truck still drives like a truck.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: FMW Cheetah
+Wheels: 63 mm billet compressor wheel, high-flow Cheetah turbine wheel
+Supports: 650 RWHP
+Installation: Drop-in — no kit required
+Application: 2004.5–2010 GM 6.6L Duramax
+Part number: FPE-VNT63-STREET
+
+Highlights
+
+Fleece FMW billet compressor wheel
+Supports 650 RWHP
+Drop-in, no kit or special tuning
+Stock appearance under the bonnet
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2899,
+    createdAt: 1789430400000,
+    name: "Fleece Performance 10 mm PowerFlo 750 Stroker CP3 Injection Pump — 2007.5–2018 Ram 6.7L Cummins — FPE-CUMM-CP3-10MM-6.7",
+    category: "engine",
+    brand: "fleece",
+    // dpp listing price for FPE-CUMM-CP3-10MM-6.7.
+    price: 1999,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-CUMM-CP3-10MM-6.7",
+    fitment: "2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/fleece-cp3-injection-pump-67l-cummins",
+    thumbnail: "/product-media/engine/fleece-powerflo-750-stroker-cp3-cumm-cp3-10mm-6-7/1.webp",
+    images: ["/product-media/engine/fleece-powerflo-750-stroker-cp3-cumm-cp3-10mm-6-7/1.webp"],
+    description: `Fleece Performance 10 mm PowerFlo 750 stroker CP3 injection pump for the 2007.5–2018 Ram 6.7L Cummins.
+
+The factory CP3 runs into a fuel flow restriction from about 3,000 rpm. On a stock pump you are losing flow and rail pressure exactly where the engine is asking for the most, and that shows up as horsepower you paid for and did not get.
+
+The PowerFlo 750 is Fleece's 10 mm stroker CP3. They rate it to support 750 RWHP with the rest of the combination in place, and it removes the flow restriction above 3,000 rpm rather than working around it.
+
+Fleece are straightforward about the number — it is a rating for what the pump supports with matching modifications, not a horsepower claim for the pump on its own.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Type: CP3 injection pump, 10 mm stroker
+Series: PowerFlo 750
+Supports: 750 RWHP with matching modifications
+Addresses: Factory flow restriction above 3,000 rpm
+Engine: 6.7L Cummins
+Part number: FPE-CUMM-CP3-10MM-6.7
+
+Highlights
+
+10 mm stroker CP3
+Supports 750 RWHP with matching modifications
+Eliminates the factory restriction above 3,000 rpm
+Holds rail pressure where stock pumps fall off
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2900,
+    createdAt: 1789430400000,
+    name: "Fleece Performance PowerFlo In-Tank Lift Pump Assembly — 2011–2024 Ram 6.7L Cummins — FPE-34562",
+    category: "engine",
+    brand: "fleece",
+    // dpp listing price for FPE-34562.
+    price: 799,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-34562",
+    fitment: "2011–2024 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/fleece-performance-powerflo-lift-pump-in-tank-11-24-ram-6-7l-cummins",
+    thumbnail: "/product-media/engine/fleece-powerflo-in-tank-lift-pump-fpe-34562/1.webp",
+    images: ["/product-media/engine/fleece-powerflo-in-tank-lift-pump-fpe-34562/1.webp"],
+    description: `Fleece Performance PowerFlo in-tank lift pump assembly for the 2011–2024 Ram 6.7L Cummins.
+
+Low fuel flow is what puts strain on an injection pump. Starve it and throttle response falls away, and on a truck under load that is not just an inconvenience.
+
+The usual aftermarket answer is a frame-mounted pump with a draw tube into the tank, which brings its own problems: noise, holes cut in the tank, and running out of pickup below a quarter tank. The PowerFlo goes in the factory in-tank location instead.
+
+It is a drop-in assembly, it runs silently, and it uses the factory location rather than fighting it. Fleece rate it to support up to 800 horsepower.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: PowerFlo
+Type: In-tank lift pump assembly
+Location: Factory in-tank position
+Supports: Up to 800 hp
+Application: 2011–2024 Ram 6.7L Cummins
+Part number: FPE-34562
+
+Highlights
+
+Fits the factory in-tank location
+No tank cutting, no quarter-tank pickup problems
+Silent operation
+Supports up to 800 hp
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2901,
+    createdAt: 1789430400000,
+    name: "Fleece Performance PowerFlo In-Tank Lift Pump Assembly — 2005–2009 Dodge / Ram 5.9L and 6.7L Cummins — FPE-34560",
+    category: "engine",
+    brand: "fleece",
+    // dpp listing price for FPE-34560.
+    price: 799,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-34560",
+    fitment: "2005–2007 Dodge/Ram 5.9L Cummins; and 2007.5–2009 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-17343-fleece-performance-powerflo-lift-pump-in-tank-pump-assembly-05-09-59l-67l-dodge-cummins-aspx",
+    thumbnail: "/product-media/engine/fleece-powerflo-in-tank-lift-pump-fpe-34560/1.webp",
+    images: ["/product-media/engine/fleece-powerflo-in-tank-lift-pump-fpe-34560/1.webp"],
+    description: `Fleece Performance PowerFlo in-tank lift pump assembly for the 2005–2009 Dodge / Ram 5.9L and 6.7L Cummins.
+
+Low fuel flow is what puts strain on an injection pump. Starve it and throttle response falls away, and on a truck under load that is not just an inconvenience.
+
+The usual aftermarket answer is a frame-mounted pump with a draw tube into the tank, which brings its own problems: noise, holes cut in the tank, and running out of pickup below a quarter tank. The PowerFlo goes in the factory in-tank location instead.
+
+It is a drop-in assembly, it runs silently, and it uses the factory location rather than fighting it.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: PowerFlo
+Type: In-tank lift pump assembly
+Location: Factory in-tank position
+Application: 2005–2009 Dodge / Ram 5.9L and 6.7L Cummins
+Part number: FPE-34560
+
+Highlights
+
+Fits the factory in-tank location
+No tank cutting, no quarter-tank pickup problems
+Silent operation
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2902,
+    createdAt: 1789430400000,
+    name: "Fleece Performance PowerFlo In-Tank Lift Pump Assembly — 1998.5–2002 Dodge Ram 5.9L Cummins (VP44) — FPE-34754",
+    category: "engine",
+    brand: "fleece",
+    // dpp listing price for FPE-34754.
+    price: 1049,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-34754",
+    fitment: "1998.5–2002 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fleece-performance-powerflo-lift-pump-in-tank-pump-assembly-985-02-59l-dodge-cummins",
+    thumbnail: "/product-media/engine/fleece-powerflo-in-tank-lift-pump-fpe-34754/1.webp",
+    images: ["/product-media/engine/fleece-powerflo-in-tank-lift-pump-fpe-34754/1.webp"],
+    description: `Fleece Performance PowerFlo in-tank lift pump assembly for the 1998.5–2002 Dodge Ram 5.9L Cummins (VP44).
+
+Low fuel flow is what puts strain on an injection pump. Starve it and throttle response falls away, and on a truck under load that is not just an inconvenience.
+
+The usual aftermarket answer is a frame-mounted pump with a draw tube into the tank, which brings its own problems: noise, holes cut in the tank, and running out of pickup below a quarter tank. The PowerFlo goes in the factory in-tank location instead.
+
+It is a drop-in assembly, it runs silently, and it uses the factory location rather than fighting it.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Series: PowerFlo
+Type: In-tank lift pump assembly
+Location: Factory in-tank position
+Application: 1998.5–2002 Dodge Ram 5.9L Cummins (VP44)
+Part number: FPE-34754
+
+Highlights
+
+Fits the factory in-tank location
+No tank cutting, no quarter-tank pickup problems
+Silent operation
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2903,
+    createdAt: 1789430400000,
+    name: "Fleece Performance Turbine Shaft Speed Sensor, HE351VE / HE300VE / VG — 2007.5–2022 Ram 6.7L Cummins — FPE-351-SP-SEN",
+    category: "electronics",
+    brand: "fleece",
+    // dpp listing price for FPE-351-SP-SEN.
+    price: 139.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-351-SP-SEN",
+    fitment: "2007.5–2022 Dodge/Ram 6.7L Cummins.",
+    included: ["Turbine shaft speed sensor","O-ring seal"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fleece-performance-he351vehe300vevg-turbine-shaft-speed-sensor-075-20-ram-67l-cummins",
+    thumbnail: "/product-media/electronics/fleece-turbine-shaft-speed-sensor-fpe-351-sp-sen/1.webp",
+    images: ["/product-media/electronics/fleece-turbine-shaft-speed-sensor-fpe-351-sp-sen/1.webp"],
+    description: `Fleece Performance direct-replacement turbine shaft speed sensor with O-ring for Holset turbos on the 2007.5–2022 Ram 6.7L Cummins.
+
+The turbine shaft speed sensor is a small part with an outsized ability to hold up a turbo job. It is easy to break while getting the old turbo out, and new turbos do not always ship with one.
+
+This Fleece sensor is a direct replacement for all the Holset turbochargers fitted to 2007.5–2022 6.7L Cummins trucks — HE351VE, HE300VE and VG.
+
+It includes the O-ring seal needed for a proper fit, which is the other thing that catches people out on this job.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Part: Turbine shaft speed sensor
+Fits: Holset HE351VE, HE300VE and VG turbochargers
+Included: Sensor and O-ring seal
+Engine: 6.7L Cummins
+Years: 2007.5–2022
+Part number: FPE-351-SP-SEN
+
+Highlights
+
+Direct replacement for all Holset turbos on these trucks
+O-ring seal included
+Covers HE351VE, HE300VE and VG
+The part new turbos often do not include
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2904,
+    createdAt: 1789430400000,
+    name: "Fleece Performance Cooling Fan & Clutch Pigtail Repair Kit — 2003–2012 Ram 5.9L and 6.7L Cummins — FPE-HAR-CUMM-CF-0312",
+    category: "electronics",
+    brand: "fleece",
+    // dpp listing price for FPE-HAR-CUMM-CF-0312.
+    price: 59.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-HAR-CUMM-CF-0312",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins; and 2007.5–2012 Dodge/Ram 6.7L Cummins.",
+    included: ["Both connector halves with flying leads","Heat-sealable butt-style connectors"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fleece-performance-cooling-fan-clutch-pigtail-03-12-ram-5967l-cummins",
+    thumbnail: "/product-media/electronics/fleece-cooling-fan-clutch-pigtail-fpe-har-cumm-cf-0312/1.webp",
+    images: ["/product-media/electronics/fleece-cooling-fan-clutch-pigtail-fpe-har-cumm-cf-0312/1.webp"],
+    description: `Fleece Performance cooling fan and clutch connector pigtail repair kit for the 2003–2012 Ram 5.9L and 6.7L Cummins.
+
+When a serpentine belt lets go on a Cummins it tends to take the cooling fan and clutch wiring with it — the belt whips, and the connector is right there in its path.
+
+This kit supplies both halves of the connector with flying leads, so the damaged section is cut out and replaced rather than the whole harness.
+
+Heat-sealable butt connectors are included, which is what makes the repair hold up in an engine bay rather than being a temporary fix.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Part: Cooling fan and clutch connector pigtail
+Supplied: Both connector halves with flying leads
+Included: Heat-sealable butt connectors
+Application: 2003–2012 Ram 5.9L and 6.7L Cummins
+Part number: FPE-HAR-CUMM-CF-0312
+
+Highlights
+
+Both sides of the connector supplied
+Heat-sealable butt connectors included
+Repairs belt damage without a new harness
+Fleece Performance Engineering
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2905,
+    createdAt: 1789430400000,
+    name: "Fleece Performance Cooling Fan & Clutch Pigtail Repair Kit — 2013–2022 Ram 6.7L Cummins — FPE-HAR-CUMM-CF-1322",
+    category: "electronics",
+    brand: "fleece",
+    // dpp listing price for FPE-HAR-CUMM-CF-1322.
+    price: 59.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FPE-HAR-CUMM-CF-1322",
+    fitment: "2013–2022 Dodge/Ram 6.7L Cummins.",
+    included: ["Both connector halves with flying leads","Heat-sealable butt-style connectors"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fleece-performance-cooling-fan-clutch-pigtail-13-22-ram-67l-cummins",
+    thumbnail: "/product-media/electronics/fleece-cooling-fan-clutch-pigtail-fpe-har-cumm-cf-1322/1.webp",
+    images: ["/product-media/electronics/fleece-cooling-fan-clutch-pigtail-fpe-har-cumm-cf-1322/1.webp"],
+    description: `Fleece Performance cooling fan and clutch connector pigtail repair kit for the 2013–2022 Ram 6.7L Cummins.
+
+When a serpentine belt lets go on a Cummins it tends to take the cooling fan and clutch wiring with it — the belt whips, and the connector is right there in its path.
+
+This kit supplies both halves of the connector with flying leads, so the damaged section is cut out and replaced rather than the whole harness.
+
+Heat-sealable butt connectors are included, which is what makes the repair hold up in an engine bay rather than being a temporary fix.
+
+Specifications
+
+Manufacturer: Fleece Performance Engineering
+Part: Cooling fan and clutch connector pigtail
+Supplied: Both connector halves with flying leads
+Included: Heat-sealable butt connectors
+Application: 2013–2022 Ram 6.7L Cummins
+Part number: FPE-HAR-CUMM-CF-1322
+
+Highlights
+
+Both sides of the connector supplied
+Heat-sealable butt connectors included
+Repairs belt damage without a new harness
+Fleece Performance Engineering
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2906,
+    createdAt: 1789430400000,
+    name: "KC Turbos KC300x Stage 3 Drop-In 66/73 Turbocharger, Standard, 3.5 in metal CCV tube — 1994–1997 Ford OBS 7.3L Power Stroke — 300230",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300230.
+    price: 1290,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300230",
+    fitment: "1994–1997 Ford OBS 7.3L Power Stroke with the 3.5 in metal CCV tube. Standard finish.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-300x-stage-3-drop-in-6673-turbo-94-97-ford-73l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300230/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300230/1.webp"],
+    description: `KC Turbos KC300x Stage 3 66/73 drop-in turbocharger for the 1994–1997 OBS 7.3L Power Stroke, standard finish, for the 3.5 in metal CCV tube.
+
+Exhaust gas temperature is what limits how hard an OBS 7.3L can work, and the standard turbo runs out of air before the engine runs out of ambition.
+
+The KC300x line is built around drop-in fitment: a bigger turbo that goes in where the factory one came out, rather than a kit that reorganises the front of the engine. More airflow means a broader powerband and, more to the point on a working truck, lower exhaust gas temperature.
+
+This is a journal-bearing turbo using a Borg Warner 300SX-E style turbine wheel, modified to fit inside a drop-in-ready Power Stroke housing. KC have run it on the dyno, at the track and through their own durability testing.
+
+The compressor inlet has to match what your truck already has. KC build this turbo for three intake arrangements — the 3.5 in metal CCV tube, the 4.0 in plastic CCV tube, and an aftermarket intake — and each is its own part number. Check which one is on your engine before ordering.
+
+Specifications
+
+Manufacturer: KC Turbos
+Series: KC300x Stage 3
+Size: 66/73
+Bearing: Journal
+Turbine wheel: Borg Warner 300SX-E style, modified for drop-in fitment
+Compressor inlet: 3.5 in metal CCV tube
+Finish: Standard
+Engine: 7.3L Power Stroke
+Years: 1994–1997 OBS
+Part number: 300230
+
+Highlights
+
+Drop-in Stage 3 upgrade, no kit needed
+Borg Warner 300SX-E style turbine wheel
+Built for the 3.5 in metal CCV tube
+Standard finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2907,
+    createdAt: 1789430400000,
+    name: "KC Turbos KC300x Stage 3 Drop-In 66/73 Turbocharger, Standard, 4.0 in plastic CCV tube — 1994–1997 Ford OBS 7.3L Power Stroke — 300519",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300519.
+    price: 1290,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300519",
+    fitment: "1994–1997 Ford OBS 7.3L Power Stroke with the 4.0 in plastic CCV tube. Standard finish.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-300x-stage-3-drop-in-6673-turbo-94-97-ford-73l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300519/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300519/1.webp"],
+    description: `KC Turbos KC300x Stage 3 66/73 drop-in turbocharger for the 1994–1997 OBS 7.3L Power Stroke, standard finish, for the 4.0 in plastic CCV tube.
+
+Exhaust gas temperature is what limits how hard an OBS 7.3L can work, and the standard turbo runs out of air before the engine runs out of ambition.
+
+The KC300x line is built around drop-in fitment: a bigger turbo that goes in where the factory one came out, rather than a kit that reorganises the front of the engine. More airflow means a broader powerband and, more to the point on a working truck, lower exhaust gas temperature.
+
+This is a journal-bearing turbo using a Borg Warner 300SX-E style turbine wheel, modified to fit inside a drop-in-ready Power Stroke housing. KC have run it on the dyno, at the track and through their own durability testing.
+
+The compressor inlet has to match what your truck already has. KC build this turbo for three intake arrangements — the 3.5 in metal CCV tube, the 4.0 in plastic CCV tube, and an aftermarket intake — and each is its own part number. Check which one is on your engine before ordering.
+
+Specifications
+
+Manufacturer: KC Turbos
+Series: KC300x Stage 3
+Size: 66/73
+Bearing: Journal
+Turbine wheel: Borg Warner 300SX-E style, modified for drop-in fitment
+Compressor inlet: 4.0 in plastic CCV tube
+Finish: Standard
+Engine: 7.3L Power Stroke
+Years: 1994–1997 OBS
+Part number: 300519
+
+Highlights
+
+Drop-in Stage 3 upgrade, no kit needed
+Borg Warner 300SX-E style turbine wheel
+Built for the 4.0 in plastic CCV tube
+Standard finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2908,
+    createdAt: 1789430400000,
+    name: "KC Turbos KC300x Stage 3 Drop-In 66/73 Turbocharger, Standard, aftermarket intake — 1994–1997 Ford OBS 7.3L Power Stroke — 300520",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300520.
+    price: 1290,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300520",
+    fitment: "1994–1997 Ford OBS 7.3L Power Stroke with the aftermarket intake. Standard finish.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-300x-stage-3-drop-in-6673-turbo-94-97-ford-73l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300520/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300520/1.webp"],
+    description: `KC Turbos KC300x Stage 3 66/73 drop-in turbocharger for the 1994–1997 OBS 7.3L Power Stroke, standard finish, for the aftermarket intake.
+
+Exhaust gas temperature is what limits how hard an OBS 7.3L can work, and the standard turbo runs out of air before the engine runs out of ambition.
+
+The KC300x line is built around drop-in fitment: a bigger turbo that goes in where the factory one came out, rather than a kit that reorganises the front of the engine. More airflow means a broader powerband and, more to the point on a working truck, lower exhaust gas temperature.
+
+This is a journal-bearing turbo using a Borg Warner 300SX-E style turbine wheel, modified to fit inside a drop-in-ready Power Stroke housing. KC have run it on the dyno, at the track and through their own durability testing.
+
+The compressor inlet has to match what your truck already has. KC build this turbo for three intake arrangements — the 3.5 in metal CCV tube, the 4.0 in plastic CCV tube, and an aftermarket intake — and each is its own part number. Check which one is on your engine before ordering.
+
+Specifications
+
+Manufacturer: KC Turbos
+Series: KC300x Stage 3
+Size: 66/73
+Bearing: Journal
+Turbine wheel: Borg Warner 300SX-E style, modified for drop-in fitment
+Compressor inlet: aftermarket intake
+Finish: Standard
+Engine: 7.3L Power Stroke
+Years: 1994–1997 OBS
+Part number: 300520
+
+Highlights
+
+Drop-in Stage 3 upgrade, no kit needed
+Borg Warner 300SX-E style turbine wheel
+Built for the aftermarket intake
+Standard finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2909,
+    createdAt: 1789430400000,
+    name: "KC Turbos KC300x Stage 3 Drop-In 66/73 Turbocharger, Polished, 3.5 in metal CCV tube — 1994–1997 Ford OBS 7.3L Power Stroke — 300721",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300721.
+    price: 1540,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300721",
+    fitment: "1994–1997 Ford OBS 7.3L Power Stroke with the 3.5 in metal CCV tube. Polished compressor housing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-300x-stage-3-drop-in-6673-turbo-94-97-ford-73l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300721/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300721/1.webp"],
+    description: `KC Turbos KC300x Stage 3 66/73 drop-in turbocharger for the 1994–1997 OBS 7.3L Power Stroke, polished finish, for the 3.5 in metal CCV tube.
+
+Exhaust gas temperature is what limits how hard an OBS 7.3L can work, and the standard turbo runs out of air before the engine runs out of ambition.
+
+The KC300x line is built around drop-in fitment: a bigger turbo that goes in where the factory one came out, rather than a kit that reorganises the front of the engine. More airflow means a broader powerband and, more to the point on a working truck, lower exhaust gas temperature.
+
+This is a journal-bearing turbo using a Borg Warner 300SX-E style turbine wheel, modified to fit inside a drop-in-ready Power Stroke housing. KC have run it on the dyno, at the track and through their own durability testing.
+
+The compressor inlet has to match what your truck already has. KC build this turbo for three intake arrangements — the 3.5 in metal CCV tube, the 4.0 in plastic CCV tube, and an aftermarket intake — and each is its own part number. Check which one is on your engine before ordering.
+
+Specifications
+
+Manufacturer: KC Turbos
+Series: KC300x Stage 3
+Size: 66/73
+Bearing: Journal
+Turbine wheel: Borg Warner 300SX-E style, modified for drop-in fitment
+Compressor inlet: 3.5 in metal CCV tube
+Finish: Polished
+Engine: 7.3L Power Stroke
+Years: 1994–1997 OBS
+Part number: 300721
+
+Highlights
+
+Drop-in Stage 3 upgrade, no kit needed
+Borg Warner 300SX-E style turbine wheel
+Built for the 3.5 in metal CCV tube
+Polished finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2910,
+    createdAt: 1789430400000,
+    name: "KC Turbos KC300x Stage 3 Drop-In 66/73 Turbocharger, Polished, 4.0 in plastic CCV tube — 1994–1997 Ford OBS 7.3L Power Stroke — 300722",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300722.
+    price: 1540,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300722",
+    fitment: "1994–1997 Ford OBS 7.3L Power Stroke with the 4.0 in plastic CCV tube. Polished compressor housing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-300x-stage-3-drop-in-6673-turbo-94-97-ford-73l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300722/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300722/1.webp"],
+    description: `KC Turbos KC300x Stage 3 66/73 drop-in turbocharger for the 1994–1997 OBS 7.3L Power Stroke, polished finish, for the 4.0 in plastic CCV tube.
+
+Exhaust gas temperature is what limits how hard an OBS 7.3L can work, and the standard turbo runs out of air before the engine runs out of ambition.
+
+The KC300x line is built around drop-in fitment: a bigger turbo that goes in where the factory one came out, rather than a kit that reorganises the front of the engine. More airflow means a broader powerband and, more to the point on a working truck, lower exhaust gas temperature.
+
+This is a journal-bearing turbo using a Borg Warner 300SX-E style turbine wheel, modified to fit inside a drop-in-ready Power Stroke housing. KC have run it on the dyno, at the track and through their own durability testing.
+
+The compressor inlet has to match what your truck already has. KC build this turbo for three intake arrangements — the 3.5 in metal CCV tube, the 4.0 in plastic CCV tube, and an aftermarket intake — and each is its own part number. Check which one is on your engine before ordering.
+
+Specifications
+
+Manufacturer: KC Turbos
+Series: KC300x Stage 3
+Size: 66/73
+Bearing: Journal
+Turbine wheel: Borg Warner 300SX-E style, modified for drop-in fitment
+Compressor inlet: 4.0 in plastic CCV tube
+Finish: Polished
+Engine: 7.3L Power Stroke
+Years: 1994–1997 OBS
+Part number: 300722
+
+Highlights
+
+Drop-in Stage 3 upgrade, no kit needed
+Borg Warner 300SX-E style turbine wheel
+Built for the 4.0 in plastic CCV tube
+Polished finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2911,
+    createdAt: 1789430400000,
+    name: "KC Turbos KC300x Stage 3 Drop-In 66/73 Turbocharger, Polished, aftermarket intake — 1994–1997 Ford OBS 7.3L Power Stroke — 300723",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300723.
+    price: 1540,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300723",
+    fitment: "1994–1997 Ford OBS 7.3L Power Stroke with the aftermarket intake. Polished compressor housing.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-300x-stage-3-drop-in-6673-turbo-94-97-ford-73l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300723/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-kc300x-stage-3-66-73-turbo-300723/1.webp"],
+    description: `KC Turbos KC300x Stage 3 66/73 drop-in turbocharger for the 1994–1997 OBS 7.3L Power Stroke, polished finish, for the aftermarket intake.
+
+Exhaust gas temperature is what limits how hard an OBS 7.3L can work, and the standard turbo runs out of air before the engine runs out of ambition.
+
+The KC300x line is built around drop-in fitment: a bigger turbo that goes in where the factory one came out, rather than a kit that reorganises the front of the engine. More airflow means a broader powerband and, more to the point on a working truck, lower exhaust gas temperature.
+
+This is a journal-bearing turbo using a Borg Warner 300SX-E style turbine wheel, modified to fit inside a drop-in-ready Power Stroke housing. KC have run it on the dyno, at the track and through their own durability testing.
+
+The compressor inlet has to match what your truck already has. KC build this turbo for three intake arrangements — the 3.5 in metal CCV tube, the 4.0 in plastic CCV tube, and an aftermarket intake — and each is its own part number. Check which one is on your engine before ordering.
+
+Specifications
+
+Manufacturer: KC Turbos
+Series: KC300x Stage 3
+Size: 66/73
+Bearing: Journal
+Turbine wheel: Borg Warner 300SX-E style, modified for drop-in fitment
+Compressor inlet: aftermarket intake
+Finish: Polished
+Engine: 7.3L Power Stroke
+Years: 1994–1997 OBS
+Part number: 300723
+
+Highlights
+
+Drop-in Stage 3 upgrade, no kit needed
+Borg Warner 300SX-E style turbine wheel
+Built for the aftermarket intake
+Polished finish
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2912,
+    createdAt: 1789430400000,
+    name: "KC Turbos Balanced Turbo Assembly Kit — 1994–1997 Ford 7.3L Power Stroke — 300376",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300376.
+    price: 450,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300376",
+    fitment: "1994–1997 Ford 7.3L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-turbos-balanced-dyi-turbo-assembly-kit-94-03-ford-73l-powerstoke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-balanced-turbo-assembly-kit-300376/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-balanced-turbo-assembly-kit-300376/1.webp"],
+    description: `KC Turbos balanced and assembled rebuild kit with billet compressor wheel and SXE turbine wheel for the 1994–1997 Ford 7.3L Power Stroke.
+
+A tired factory turbo on a 7.3L is a rebuild rather than a write-off, and rebuilding it is the cheapest way back to good boost — provided the rotating assembly is balanced properly, which is the part a home rebuild usually cannot do.
+
+This kit arrives from KC already balanced and assembled. It pairs their billet compressor wheel with their updated SXE turbine wheel design, so the rebuild also brings the turbo up to a newer specification rather than back to where it started.
+
+It is aimed at stock 7.3L trucks running complete stock turbos that want the updated design.
+
+The 7.3L split into three different turbo arrangements across its life, and this is the 1994–1997 part. Match it to your truck rather than to the model year alone.
+
+Specifications
+
+Manufacturer: KC Turbos
+Type: Balanced, assembled turbo rebuild kit
+Compressor wheel: KC billet
+Turbine wheel: KC updated SXE design
+Balancing: Completed by KC before shipping
+Application: 1994–1997 7.3L Power Stroke
+Part number: 300376
+
+Highlights
+
+Arrives balanced and assembled
+Billet compressor wheel
+Updated SXE turbine wheel design
+For stock turbos being rebuilt
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2913,
+    createdAt: 1789430400000,
+    name: "KC Turbos Balanced Turbo Assembly Kit — early 1999 Ford 7.3L Power Stroke — 300383",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300383.
+    price: 450,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300383",
+    fitment: "Early 1999 Ford 7.3L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-turbos-balanced-dyi-turbo-assembly-kit-94-03-ford-73l-powerstoke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-balanced-turbo-assembly-kit-300383/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-balanced-turbo-assembly-kit-300383/1.webp"],
+    description: `KC Turbos balanced and assembled rebuild kit with billet compressor wheel and SXE turbine wheel for the early 1999 Ford 7.3L Power Stroke.
+
+A tired factory turbo on a 7.3L is a rebuild rather than a write-off, and rebuilding it is the cheapest way back to good boost — provided the rotating assembly is balanced properly, which is the part a home rebuild usually cannot do.
+
+This kit arrives from KC already balanced and assembled. It pairs their billet compressor wheel with their updated SXE turbine wheel design, so the rebuild also brings the turbo up to a newer specification rather than back to where it started.
+
+It is aimed at stock 7.3L trucks running complete stock turbos that want the updated design.
+
+The 7.3L split into three different turbo arrangements across its life, and this is the early 1999 part. Match it to your truck rather than to the model year alone.
+
+Specifications
+
+Manufacturer: KC Turbos
+Type: Balanced, assembled turbo rebuild kit
+Compressor wheel: KC billet
+Turbine wheel: KC updated SXE design
+Balancing: Completed by KC before shipping
+Application: early 1999 7.3L Power Stroke
+Part number: 300383
+
+Highlights
+
+Arrives balanced and assembled
+Billet compressor wheel
+Updated SXE turbine wheel design
+For stock turbos being rebuilt
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2914,
+    createdAt: 1789430400000,
+    name: "KC Turbos Balanced Turbo Assembly Kit — 1999.5–2003 Ford 7.3L Power Stroke — 300377",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300377.
+    price: 450,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300377",
+    fitment: "1999.5–2003 Ford 7.3L Power Stroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-turbos-balanced-dyi-turbo-assembly-kit-94-03-ford-73l-powerstoke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-balanced-turbo-assembly-kit-300377/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-balanced-turbo-assembly-kit-300377/1.webp"],
+    description: `KC Turbos balanced and assembled rebuild kit with billet compressor wheel and SXE turbine wheel for the 1999.5–2003 Ford 7.3L Power Stroke.
+
+A tired factory turbo on a 7.3L is a rebuild rather than a write-off, and rebuilding it is the cheapest way back to good boost — provided the rotating assembly is balanced properly, which is the part a home rebuild usually cannot do.
+
+This kit arrives from KC already balanced and assembled. It pairs their billet compressor wheel with their updated SXE turbine wheel design, so the rebuild also brings the turbo up to a newer specification rather than back to where it started.
+
+It is aimed at stock 7.3L trucks running complete stock turbos that want the updated design.
+
+The 7.3L split into three different turbo arrangements across its life, and this is the 1999.5–2003 part. Match it to your truck rather than to the model year alone.
+
+Specifications
+
+Manufacturer: KC Turbos
+Type: Balanced, assembled turbo rebuild kit
+Compressor wheel: KC billet
+Turbine wheel: KC updated SXE design
+Balancing: Completed by KC before shipping
+Application: 1999.5–2003 7.3L Power Stroke
+Part number: 300377
+
+Highlights
+
+Arrives balanced and assembled
+Billet compressor wheel
+Updated SXE turbine wheel design
+For stock turbos being rebuilt
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2915,
+    createdAt: 1789430400000,
+    name: "KC Turbos Whistler Stage 1 Drop-In 63 mm Turbocharger — 2011–2019 Ford 6.7L Power Stroke — 300869",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-300869.
+    price: 2890,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "300869",
+    fitment: "2011–2019 Ford 6.7L Power Stroke. Bolts straight up on 2017–2019 trucks. 2015–2016 additionally needs a pedestal conversion kit; 2011–2014 needs an installation kit that converts the surrounding components to the later-style turbo. Both kits are separate parts.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-whistler-stage-1-drop-in-63mm-turbo-11-19-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-whistler-stage-1-63mm-turbo-300869/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-whistler-stage-1-63mm-turbo-300869/1.webp"],
+    description: `KC Turbos Whistler Stage 1 63 mm drop-in turbocharger for the 2011–2019 Ford 6.7L Power Stroke.
+
+The factory VGT is the 6.7L Power Stroke's weak point. The 2011–2014 trucks were the worst of it, with failures common once boost went above standard; Garrett improved the design for 2015 and again for 2017. Either way, the stock turbo runs out of airflow well before these engines run out of appetite for fuel.
+
+The Whistler runs a 6.0L Power Stroke-style billet 63 mm ten-blade compressor wheel that vastly outflows the factory unit — and, as the name suggests, brings back the 2003 turbo whistle with it. On the exhaust side there is an upgraded ten-blade high-flow turbine wheel.
+
+Larger wheels in upgraded housings give better boost control, cooler exhaust gas temperatures and faster spool. KC pitch it at the daily driver and the towing rig rather than at a race truck.
+
+Fitment is worth reading twice: it is built on the 2017–2019 framework, so those trucks bolt it straight on. 2015–2016 needs a pedestal conversion kit, and 2011–2014 needs an installation kit to convert the surrounding components.
+
+Specifications
+
+Manufacturer: KC Turbos
+Model: Whistler Stage 1
+Compressor wheel: 63 mm billet, 10 blade, 6.0L-style
+Turbine wheel: 10 blade, high flow
+Direct bolt-on: 2017–2019
+2015–2016: Requires pedestal conversion kit
+2011–2014: Requires installation kit
+Engine: 6.7L Power Stroke
+Part number: 300869
+
+Highlights
+
+63 mm billet 10-blade compressor wheel
+Brings back the 6.0L turbo whistle
+Cooler EGT and faster spool
+Direct bolt-on for 2017–2019
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2916,
+    createdAt: 1789430400000,
+    name: "KC Turbos Jetfire Drop-In VGT Turbocharger, Whistler — 2011–2019 Ford 6.7L Power Stroke — 302673",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-302673.
+    price: 2890,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "302673",
+    fitment: "2011–2019 Ford 6.7L Power Stroke. Whistler version — the compressor wheel produces the turbo whistle.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/kc-turbos-jetfire-drop-in-turbo-11-19-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-jetfire-drop-in-turbo-302673/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-jetfire-drop-in-turbo-302673/1.webp"],
+    description: `KC Turbos Jetfire direct-replacement VGT turbocharger for the 2011–2019 Ford 6.7L Power Stroke, Whistler version.
+
+The factory VGT is the 6.7L Power Stroke's weak point. The 2011–2014 trucks were the worst of it, with failures common once boost went above standard; Garrett improved the design for 2015 and again for 2017. Either way, the stock turbo runs out of airflow well before these engines run out of appetite for fuel.
+
+The Jetfire is a direct-replacement VGT: a Gen 3 KC compressor wheel, the Jetfire turbine wheel, a high-flow vane cage and KC's custom-ported compressor cover. It keeps the variable-geometry operation the truck relies on rather than trading it away for airflow.
+
+What that combination buys is quicker spool, better boost control and more airflow across the powerband, with vane response improved rather than compromised.
+
+This is the Whistler version — the compressor wheel gives the turbo the audible whistle. The Non-Whistler carries its own part number if you would rather it stayed quiet.
+
+Specifications
+
+Manufacturer: KC Turbos
+Model: Jetfire
+Type: Direct-replacement VGT
+Compressor wheel: KC Gen 3
+Turbine wheel: Jetfire
+Vane cage: High flow
+Compressor cover: KC custom-ported
+Sound: Whistler
+Engine: 6.7L Power Stroke
+Part number: 302673
+
+Highlights
+
+Keeps factory VGT operation
+Gen 3 compressor wheel and high-flow vane cage
+Custom-ported compressor cover
+Whistler — audible turbo whistle
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2917,
+    createdAt: 1789430400000,
+    name: "KC Turbos Jetfire Drop-In VGT Turbocharger, Non-Whistler — 2011–2019 Ford 6.7L Power Stroke — 302672",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-302672.
+    price: 2890,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "302672",
+    fitment: "2011–2019 Ford 6.7L Power Stroke. Non-Whistler version — no added turbo whistle.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/kc-turbos-jetfire-drop-in-turbo-11-19-ford-67l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-jetfire-drop-in-turbo-302672/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-jetfire-drop-in-turbo-302672/1.webp"],
+    description: `KC Turbos Jetfire direct-replacement VGT turbocharger for the 2011–2019 Ford 6.7L Power Stroke, Non-Whistler version.
+
+The factory VGT is the 6.7L Power Stroke's weak point. The 2011–2014 trucks were the worst of it, with failures common once boost went above standard; Garrett improved the design for 2015 and again for 2017. Either way, the stock turbo runs out of airflow well before these engines run out of appetite for fuel.
+
+The Jetfire is a direct-replacement VGT: a Gen 3 KC compressor wheel, the Jetfire turbine wheel, a high-flow vane cage and KC's custom-ported compressor cover. It keeps the variable-geometry operation the truck relies on rather than trading it away for airflow.
+
+What that combination buys is quicker spool, better boost control and more airflow across the powerband, with vane response improved rather than compromised.
+
+This is the Non-Whistler version, for anyone who wants the airflow without the whistle. The Whistler carries its own part number.
+
+Specifications
+
+Manufacturer: KC Turbos
+Model: Jetfire
+Type: Direct-replacement VGT
+Compressor wheel: KC Gen 3
+Turbine wheel: Jetfire
+Vane cage: High flow
+Compressor cover: KC custom-ported
+Sound: Non-Whistler
+Engine: 6.7L Power Stroke
+Part number: 302672
+
+Highlights
+
+Keeps factory VGT operation
+Gen 3 compressor wheel and high-flow vane cage
+Custom-ported compressor cover
+Non-Whistler — no added whistle
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2918,
+    createdAt: 1789430400000,
+    name: "KC Turbos Stage 2 Budget Drop-In Turbocharger, 64 mm — 2003–2007 Ford 6.0L Power Stroke — 302300",
+    category: "turbocharger",
+    brand: "kc-turbos",
+    // dpp listing price for KCT-302300.
+    price: 1490,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "302300",
+    fitment: "2003–2007 Ford 6.0L Power Stroke.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-kc-turbos-stage-2-budget-turbo-03-07-ford-60l-powerstroke",
+    thumbnail: "/product-media/turbocharger/kc-turbos-stage-2-budget-turbo-302300/1.webp",
+    images: ["/product-media/turbocharger/kc-turbos-stage-2-budget-turbo-302300/1.webp"],
+    description: `KC Turbos Stage 2 Budget drop-in turbocharger with a 64 mm compressor wheel for the 2003–2007 Ford 6.0L Power Stroke.
+
+Not every turbo upgrade needs to start with a new casting. KC's budget approach is to machine out the stock Garrett compressor cover to take a larger 64 mm compressor wheel, which gets most of the airflow for a good deal less money.
+
+The centre section is not left alone either: the bearings are upgraded to a 360-degree thrust washer, which is the part that decides whether a turbo pushed harder than standard lasts.
+
+KC rate the result at 500 to 575 horsepower, and it is still a drop-in — it goes where the factory turbo came out.
+
+Specifications
+
+Manufacturer: KC Turbos
+Model: Stage 2 Budget
+Compressor wheel: 64 mm
+Compressor cover: Stock Garrett cover, machined to suit
+Bearing: Upgraded 360-degree thrust washer
+Supports: 500–575 hp
+Engine: 6.0L Power Stroke
+Part number: 302300
+
+Highlights
+
+64 mm compressor wheel in a machined stock cover
+Upgraded 360-degree thrust bearing
+Supports 500–575 hp
+Drop-in fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2919,
+    createdAt: 1789430400000,
+    name: "FASS Titanium Signature Series Plus Fuel Lift Pump, 100 GPH — 1998.5–2004.5 Dodge Ram 5.9L Cummins — TS PD08 100G",
+    category: "engine",
+    brand: "fass",
+    // dpp listing price for FASS-TSPD08100G.
+    price: 719,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TS PD08 100G",
+    fitment: "1998.5–2004.5 Dodge Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fass-fuel-systems-titanium-signature-series-plus-lift-pump-98-04-dodge-59l-cummins",
+    thumbnail: "/product-media/engine/fass-titanium-signature-plus-lift-pump-100-gph-ts-pd08-100g/1.webp",
+    images: ["/product-media/engine/fass-titanium-signature-plus-lift-pump-100-gph-ts-pd08-100g/1.webp"],
+    description: `FASS Titanium Signature Series Plus 100 GPH fuel lift pump and filtration system for the 1998.5–2004.5 Dodge Ram 5.9L Cummins.
+
+A lift pump's job is to get clean, air-free fuel to the injection pump at a steady pressure. The factory arrangement on these trucks struggles with all three: pressure wanders, air stays entrained in the fuel, and filtration is marginal — and the injection pump is the expensive part that pays for it.
+
+The Titanium Signature Series Plus is a complete system rather than a pump: it lifts the fuel, separates the air and vapour back to the tank, and filters what is left before it reaches the injection pump.
+
+The Plus line adds a heat sink to the pump body. FASS put the drop in internal motor temperature at up to 20 degrees, which matters on a motor they warrant for a million miles.
+
+Flow rate is not a bigger-is-better choice. The rating wants to match what the truck actually asks for: the 100 GPH pump covers a stock or mildly modified truck, and the larger ratings exist for builds that genuinely move that much fuel.
+
+This is the 100 GPH version.
+
+Specifications
+
+Manufacturer: FASS Fuel Systems
+Series: Titanium Signature Series Plus
+Flow rate: 100 GPH
+Heat sink: Yes — up to 20°F lower internal motor temperature
+Function: Lift, air and vapour separation, filtration
+Application: 1998.5–2004.5 Dodge Ram 5.9L Cummins
+Part number: TS PD08 100G
+
+Highlights
+
+100 GPH flow rate
+Heat sink lowers motor temperature
+Separates air and vapour from the fuel
+Complete system, not just a pump
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2920,
+    createdAt: 1789430400000,
+    name: "FASS Titanium Signature Series Plus Fuel Lift Pump, 165 GPH — 1998.5–2004.5 Dodge Ram 5.9L Cummins — TS PD08 165G",
+    category: "engine",
+    brand: "fass",
+    // dpp listing price for FASS-TSPD08165G.
+    price: 769,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TS PD08 165G",
+    fitment: "1998.5–2004.5 Dodge Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fass-fuel-systems-titanium-signature-series-plus-lift-pump-98-04-dodge-59l-cummins",
+    thumbnail: "/product-media/engine/fass-titanium-signature-plus-lift-pump-165-gph-ts-pd08-165g/1.webp",
+    images: ["/product-media/engine/fass-titanium-signature-plus-lift-pump-165-gph-ts-pd08-165g/1.webp"],
+    description: `FASS Titanium Signature Series Plus 165 GPH fuel lift pump and filtration system for the 1998.5–2004.5 Dodge Ram 5.9L Cummins.
+
+A lift pump's job is to get clean, air-free fuel to the injection pump at a steady pressure. The factory arrangement on these trucks struggles with all three: pressure wanders, air stays entrained in the fuel, and filtration is marginal — and the injection pump is the expensive part that pays for it.
+
+The Titanium Signature Series Plus is a complete system rather than a pump: it lifts the fuel, separates the air and vapour back to the tank, and filters what is left before it reaches the injection pump.
+
+The Plus line adds a heat sink to the pump body. FASS put the drop in internal motor temperature at up to 20 degrees, which matters on a motor they warrant for a million miles.
+
+Flow rate is not a bigger-is-better choice. The rating wants to match what the truck actually asks for: the 100 GPH pump covers a stock or mildly modified truck, and the larger ratings exist for builds that genuinely move that much fuel.
+
+This is the 165 GPH version.
+
+Specifications
+
+Manufacturer: FASS Fuel Systems
+Series: Titanium Signature Series Plus
+Flow rate: 165 GPH
+Heat sink: Yes — up to 20°F lower internal motor temperature
+Function: Lift, air and vapour separation, filtration
+Application: 1998.5–2004.5 Dodge Ram 5.9L Cummins
+Part number: TS PD08 165G
+
+Highlights
+
+165 GPH flow rate
+Heat sink lowers motor temperature
+Separates air and vapour from the fuel
+Complete system, not just a pump
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2921,
+    createdAt: 1789430400000,
+    name: "FASS Titanium Signature Series Plus Fuel Lift Pump, 250 GPH — 1998.5–2004.5 Dodge Ram 5.9L Cummins — TS PD08 250G",
+    category: "engine",
+    brand: "fass",
+    // dpp listing price for FASS-TSPD08250G.
+    price: 849,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TS PD08 250G",
+    fitment: "1998.5–2004.5 Dodge Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fass-fuel-systems-titanium-signature-series-plus-lift-pump-98-04-dodge-59l-cummins",
+    thumbnail: "/product-media/engine/fass-titanium-signature-plus-lift-pump-250-gph-ts-pd08-250g/1.webp",
+    images: ["/product-media/engine/fass-titanium-signature-plus-lift-pump-250-gph-ts-pd08-250g/1.webp"],
+    description: `FASS Titanium Signature Series Plus 250 GPH fuel lift pump and filtration system for the 1998.5–2004.5 Dodge Ram 5.9L Cummins.
+
+A lift pump's job is to get clean, air-free fuel to the injection pump at a steady pressure. The factory arrangement on these trucks struggles with all three: pressure wanders, air stays entrained in the fuel, and filtration is marginal — and the injection pump is the expensive part that pays for it.
+
+The Titanium Signature Series Plus is a complete system rather than a pump: it lifts the fuel, separates the air and vapour back to the tank, and filters what is left before it reaches the injection pump.
+
+The Plus line adds a heat sink to the pump body. FASS put the drop in internal motor temperature at up to 20 degrees, which matters on a motor they warrant for a million miles.
+
+Flow rate is not a bigger-is-better choice. The rating wants to match what the truck actually asks for: the 100 GPH pump covers a stock or mildly modified truck, and the larger ratings exist for builds that genuinely move that much fuel.
+
+This is the 250 GPH version.
+
+Specifications
+
+Manufacturer: FASS Fuel Systems
+Series: Titanium Signature Series Plus
+Flow rate: 250 GPH
+Heat sink: Yes — up to 20°F lower internal motor temperature
+Function: Lift, air and vapour separation, filtration
+Application: 1998.5–2004.5 Dodge Ram 5.9L Cummins
+Part number: TS PD08 250G
+
+Highlights
+
+250 GPH flow rate
+Heat sink lowers motor temperature
+Separates air and vapour from the fuel
+Complete system, not just a pump
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2922,
+    createdAt: 1789430400000,
+    name: "FASS Titanium Signature Series Plus Fuel Lift Pump, 290 GPH — 1998.5–2004.5 Dodge Ram 5.9L Cummins — TS PD08 290G",
+    category: "engine",
+    brand: "fass",
+    // dpp listing price for FASS-TSPD08290G.
+    price: 899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "TS PD08 290G",
+    fitment: "1998.5–2004.5 Dodge Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-fass-fuel-systems-titanium-signature-series-plus-lift-pump-98-04-dodge-59l-cummins",
+    thumbnail: "/product-media/engine/fass-titanium-signature-plus-lift-pump-290-gph-ts-pd08-290g/1.webp",
+    images: ["/product-media/engine/fass-titanium-signature-plus-lift-pump-290-gph-ts-pd08-290g/1.webp"],
+    description: `FASS Titanium Signature Series Plus 290 GPH fuel lift pump and filtration system for the 1998.5–2004.5 Dodge Ram 5.9L Cummins.
+
+A lift pump's job is to get clean, air-free fuel to the injection pump at a steady pressure. The factory arrangement on these trucks struggles with all three: pressure wanders, air stays entrained in the fuel, and filtration is marginal — and the injection pump is the expensive part that pays for it.
+
+The Titanium Signature Series Plus is a complete system rather than a pump: it lifts the fuel, separates the air and vapour back to the tank, and filters what is left before it reaches the injection pump.
+
+The Plus line adds a heat sink to the pump body. FASS put the drop in internal motor temperature at up to 20 degrees, which matters on a motor they warrant for a million miles.
+
+Flow rate is not a bigger-is-better choice. The rating wants to match what the truck actually asks for: the 100 GPH pump covers a stock or mildly modified truck, and the larger ratings exist for builds that genuinely move that much fuel.
+
+This is the 290 GPH version.
+
+Specifications
+
+Manufacturer: FASS Fuel Systems
+Series: Titanium Signature Series Plus
+Flow rate: 290 GPH
+Heat sink: Yes — up to 20°F lower internal motor temperature
+Function: Lift, air and vapour separation, filtration
+Application: 1998.5–2004.5 Dodge Ram 5.9L Cummins
+Part number: TS PD08 290G
+
+Highlights
+
+290 GPH flow rate
+Heat sink lowers motor temperature
+Separates air and vapour from the fuel
+Complete system, not just a pump
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2923,
+    createdAt: 1789430400000,
+    name: "FASS Signature Series Adjustable Fuel Lift Pump, 100 GPH — 1998.5–2004.5 Dodge Ram 5.9L Cummins, Block-Mounted — FAS D08 100G",
+    category: "engine",
+    brand: "fass",
+    // dpp listing price for DDP-FAS D08 100G.
+    price: 591,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FAS D08 100G",
+    fitment: "1998.5–2004.5 Dodge Ram 5.9L Cummins with the factory block-mounted lift pump. Many of these trucks were retrofitted by Dodge with the later in-tank pump — turn the key on and listen: a faint hum from the engine bay means block-mounted.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-5112-fass-hpfp-series-adjustable-fuel-lift-pump-985-045-59l-dodge-cummins-with-block-mounted-pump",
+    thumbnail: "/product-media/engine/fass-signature-adjustable-lift-pump-100-gph-fas-d08-100g/1.webp",
+    images: ["/product-media/engine/fass-signature-adjustable-lift-pump-100-gph-fas-d08-100g/1.webp"],
+    description: `FASS Signature Series adjustable 100 GPH fuel lift pump for the 1998.5–2004.5 Dodge Ram 5.9L Cummins with a block-mounted pump.
+
+Not every truck needs a complete filtration system. If you already run standalone filtration, or the budget does not stretch to a full FASS system, the pump on its own is the sensible piece to buy.
+
+This is FASS's adjustable high-performance fuel pump, built around the same motor as their Titanium Signature Series, with adjustable fuel pressure to suit what the engine is asking for.
+
+It is for trucks with the factory block-mounted lift pump. Before ordering, check yours — turn the key on and listen for a faint hum from the engine bay, which means block-mounted; silence usually means the pump is in the tank.
+
+FASS warranty coverage requires registering the product with FASS after purchase.
+
+Flow rate is not a bigger-is-better choice. The rating wants to match what the truck actually asks for: the 100 GPH pump covers a stock or mildly modified truck, and the larger ratings exist for builds that genuinely move that much fuel.
+
+Specifications
+
+Manufacturer: FASS Fuel Systems
+Series: Signature Series Adjustable
+Flow rate: 100 GPH
+Pressure: Adjustable
+Motor: As used in the Titanium Signature Series
+Requires: Factory block-mounted lift pump location
+Part number: FAS D08 100G
+
+Highlights
+
+100 GPH flow rate
+Adjustable fuel pressure
+Pump only — suits an existing filtration setup
+For block-mounted pump trucks
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2924,
+    createdAt: 1789430400000,
+    name: "FASS Signature Series Adjustable Fuel Lift Pump, 165 GPH — 1998.5–2004.5 Dodge Ram 5.9L Cummins, Block-Mounted — FAS D08 165G",
+    category: "engine",
+    brand: "fass",
+    // dpp listing price for DDP-FAS D08 165G.
+    price: 644,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "FAS D08 165G",
+    fitment: "1998.5–2004.5 Dodge Ram 5.9L Cummins with the factory block-mounted lift pump. Many of these trucks were retrofitted by Dodge with the later in-tank pump — turn the key on and listen: a faint hum from the engine bay means block-mounted.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-5112-fass-hpfp-series-adjustable-fuel-lift-pump-985-045-59l-dodge-cummins-with-block-mounted-pump",
+    thumbnail: "/product-media/engine/fass-signature-adjustable-lift-pump-165-gph-fas-d08-165g/1.webp",
+    images: ["/product-media/engine/fass-signature-adjustable-lift-pump-165-gph-fas-d08-165g/1.webp"],
+    description: `FASS Signature Series adjustable 165 GPH fuel lift pump for the 1998.5–2004.5 Dodge Ram 5.9L Cummins with a block-mounted pump.
+
+Not every truck needs a complete filtration system. If you already run standalone filtration, or the budget does not stretch to a full FASS system, the pump on its own is the sensible piece to buy.
+
+This is FASS's adjustable high-performance fuel pump, built around the same motor as their Titanium Signature Series, with adjustable fuel pressure to suit what the engine is asking for.
+
+It is for trucks with the factory block-mounted lift pump. Before ordering, check yours — turn the key on and listen for a faint hum from the engine bay, which means block-mounted; silence usually means the pump is in the tank.
+
+FASS warranty coverage requires registering the product with FASS after purchase.
+
+Flow rate is not a bigger-is-better choice. The rating wants to match what the truck actually asks for: the 100 GPH pump covers a stock or mildly modified truck, and the larger ratings exist for builds that genuinely move that much fuel.
+
+Specifications
+
+Manufacturer: FASS Fuel Systems
+Series: Signature Series Adjustable
+Flow rate: 165 GPH
+Pressure: Adjustable
+Motor: As used in the Titanium Signature Series
+Requires: Factory block-mounted lift pump location
+Part number: FAS D08 165G
+
+Highlights
+
+165 GPH flow rate
+Adjustable fuel pressure
+Pump only — suits an existing filtration setup
+For block-mounted pump trucks
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2925,
+    createdAt: 1789430400000,
+    name: "S&S Diesel Motorsport 14 mm CP3 Injection Pump, Standard — 2003–2018 Dodge / Ram 5.9L and 6.7L Cummins — CP3-CU-14",
+    category: "engine",
+    brand: "s-and-s-diesel",
+    // dpp listing price for SSDM-CP3-CU-14.
+    price: 2800,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CP3-CU-14",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins; and 2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ss-diesel-motorsport-14mm-cp3-injection-pump-03-18-ram-59l67l-cummins",
+    thumbnail: "/product-media/engine/s-and-s-diesel-14mm-cp3-injection-pump-cp3-cu-14/1.webp",
+    images: ["/product-media/engine/s-and-s-diesel-14mm-cp3-injection-pump-cp3-cu-14/1.webp"],
+    description: `S&S Diesel Motorsport 14 mm CP3 high-pressure injection pump, Standard build, for the 2003–2018 Cummins.
+
+Past a certain power level the stock CP3 simply cannot move enough fuel, and no amount of tuning gets around a pump that has run out of displacement.
+
+S&S Diesel Motorsport build a series of 14 mm CP3 high-pressure pumps for exactly that problem — extreme-horsepower applications where the fuel demand is well beyond anything the factory pump was designed for.
+
+This is specialist hardware for a built engine. It belongs in a combination where the injectors, turbo and tuning have all been sized to match.
+
+Specifications
+
+Manufacturer: S&S Diesel Motorsport
+Type: 14 mm CP3 high-pressure injection pump
+Build: Standard
+Application: 2003–2018 Cummins 5.9L and 6.7L
+Intended use: High-horsepower builds
+Part number: CP3-CU-14
+
+Highlights
+
+14 mm CP3 for high-horsepower builds
+Standard build
+Stability at high rpm
+S&S Diesel Motorsport
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2926,
+    createdAt: 1789430400000,
+    name: "S&S Diesel Motorsport 14 mm CP3 Injection Pump, High Speed — 2003–2018 Dodge / Ram 5.9L and 6.7L Cummins — CP3-CU-14-HS",
+    category: "engine",
+    brand: "s-and-s-diesel",
+    // dpp listing price for SSDM-CP3-CU-14-HS.
+    price: 2900,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CP3-CU-14-HS",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins; and 2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ss-diesel-motorsport-14mm-cp3-injection-pump-03-18-ram-59l67l-cummins",
+    thumbnail: "/product-media/engine/s-and-s-diesel-14mm-cp3-injection-pump-cp3-cu-14-hs/1.webp",
+    images: ["/product-media/engine/s-and-s-diesel-14mm-cp3-injection-pump-cp3-cu-14-hs/1.webp"],
+    description: `S&S Diesel Motorsport 14 mm CP3 high-pressure injection pump, High Speed build, for the 2003–2018 Cummins.
+
+Past a certain power level the stock CP3 simply cannot move enough fuel, and no amount of tuning gets around a pump that has run out of displacement.
+
+S&S Diesel Motorsport build a series of 14 mm CP3 high-pressure pumps for exactly that problem — extreme-horsepower applications where the fuel demand is well beyond anything the factory pump was designed for.
+
+The High Speed build is for engines that spend time at the top of the rev range, where pump stability is what decides whether rail pressure holds.
+
+This is specialist hardware for a built engine. It belongs in a combination where the injectors, turbo and tuning have all been sized to match.
+
+Specifications
+
+Manufacturer: S&S Diesel Motorsport
+Type: 14 mm CP3 high-pressure injection pump
+Build: High Speed
+Application: 2003–2018 Cummins 5.9L and 6.7L
+Intended use: High-horsepower builds
+Part number: CP3-CU-14-HS
+
+Highlights
+
+14 mm CP3 for high-horsepower builds
+High Speed build
+Stability at high rpm
+S&S Diesel Motorsport
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2927,
+    createdAt: 1789430400000,
+    name: "S&S Diesel Motorsport 14 mm CP3 Injection Pump, High Speed with SP3000 — 2003–2018 Dodge / Ram 5.9L and 6.7L Cummins — CP3-CU-14-HS-SP",
+    category: "engine",
+    brand: "s-and-s-diesel",
+    // dpp listing price for SSDM-CP3-CU-14-HS-SP.
+    price: 3900,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CP3-CU-14-HS-SP",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins; and 2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ss-diesel-motorsport-14mm-cp3-injection-pump-03-18-ram-59l67l-cummins",
+    thumbnail: "/product-media/engine/s-and-s-diesel-14mm-cp3-injection-pump-cp3-cu-14-hs-sp/1.webp",
+    images: ["/product-media/engine/s-and-s-diesel-14mm-cp3-injection-pump-cp3-cu-14-hs-sp/1.webp"],
+    description: `S&S Diesel Motorsport 14 mm CP3 high-pressure injection pump, High Speed with SP3000 build, for the 2003–2018 Cummins.
+
+Past a certain power level the stock CP3 simply cannot move enough fuel, and no amount of tuning gets around a pump that has run out of displacement.
+
+S&S Diesel Motorsport build a series of 14 mm CP3 high-pressure pumps for exactly that problem — extreme-horsepower applications where the fuel demand is well beyond anything the factory pump was designed for.
+
+This version pairs the High Speed pump with the SP3000.
+
+This is specialist hardware for a built engine. It belongs in a combination where the injectors, turbo and tuning have all been sized to match.
+
+Specifications
+
+Manufacturer: S&S Diesel Motorsport
+Type: 14 mm CP3 high-pressure injection pump
+Build: High Speed with SP3000
+Application: 2003–2018 Cummins 5.9L and 6.7L
+Intended use: High-horsepower builds
+Part number: CP3-CU-14-HS-SP
+
+Highlights
+
+14 mm CP3 for high-horsepower builds
+High Speed with SP3000 build
+Stability at high rpm
+S&S Diesel Motorsport
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2928,
+    createdAt: 1789430400000,
+    name: "S&S Diesel Motorsport CP4 to DCR Pump Conversion — 2011–2024 Ford 6.7L Power Stroke — 67F-DCR-1",
+    category: "engine",
+    brand: "s-and-s-diesel",
+    // dpp listing price for SSDM-67F-DCR-1.
+    price: 2400,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "67F-DCR-1",
+    fitment: "2011–2024 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ss-diesel-motorsport-cp4-to-dcr-pump-conversion-20-22-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/s-and-s-diesel-cp4-to-dcr-pump-conversion-67f-dcr-1/1.webp",
+    images: ["/product-media/engine/s-and-s-diesel-cp4-to-dcr-pump-conversion-67f-dcr-1/1.webp"],
+    description: `S&S Diesel Motorsport plug-and-play DCR pump conversion replacing the CP4.2 on the 2011–2024 Ford 6.7L Power Stroke, no ECU calibration required.
+
+The CP4.2 high-pressure fuel pump is the 6.7L Power Stroke's most expensive known problem. When it fails it does not fail quietly — metal goes downstream into the rails, lines and injectors, and the bill covers the whole high-pressure system rather than the pump.
+
+S&S Diesel Motorsport, with PurePower Technologies, built a two-piston DCR pump as a more durable replacement. It is plug-and-play: no ECU calibration, original fit and function, and the truck keeps its original specification and performance.
+
+This is a preventative change as much as a repair. Fitted before the CP4 lets go, it removes the failure mode entirely.
+
+Specifications
+
+Manufacturer: S&S Diesel Motorsport, with PurePower Technologies
+Type: CP4.2 to DCR pump conversion
+Pump: Two-piston DCR
+Calibration: None required — plug and play
+Fit: Original fit and function
+Engine: 6.7L Power Stroke
+Part number: 67F-DCR-1
+
+Highlights
+
+Removes the CP4.2 failure mode
+Plug and play — no ECU calibration
+Two-piston DCR pump
+Keeps original fit and function
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2929,
+    createdAt: 1789430400000,
+    name: "S&S Diesel Motorsport 50-State CP3 Conversion — 2011–2016 GM 6.6L Duramax LML — LML-CP3-CARB",
+    category: "engine",
+    brand: "s-and-s-diesel",
+    // dpp listing price for SSDM-LML-CP3-CARB.
+    price: 2600,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "LML-CP3-CARB",
+    fitment: "2011–2016 Chevrolet 6.6L Duramax LML; and 2011–2016 GMC 6.6L Duramax LML.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-ss-diesel-motorsport-50-state-cp3-conversion-lml-gm-11-16-66l-duramax",
+    thumbnail: "/product-media/engine/s-and-s-diesel-50-state-cp3-conversion-lml-cp3-carb/1.webp",
+    images: ["/product-media/engine/s-and-s-diesel-50-state-cp3-conversion-lml-cp3-carb/1.webp"],
+    description: `S&S Diesel Motorsport 50-state legal CP3 conversion replacing the CP4.2 on the 2011–2016 6.6L Duramax LML.
+
+The CP4.2 is the LML Duramax's Achilles heel. Its failure rate is high, and when it goes it usually takes the entire high-pressure system with it — injectors, rails and lines — which is a very expensive way to find out.
+
+S&S Diesel Motorsport's answer is preventative: replace the CP4.2 with the CP3, a pump with a long and well-understood service record on these engines.
+
+This is their 50-state version, carrying a CARB designation, so it is a conversion that keeps the truck street legal everywhere.
+
+Specifications
+
+Manufacturer: S&S Diesel Motorsport
+Type: CP4.2 to CP3 conversion
+Compliance: 50-state, CARB
+Purpose: Prevents CP4.2 failure damaging the high-pressure system
+Engine: 6.6L Duramax LML
+Years: 2011–2016
+Part number: LML-CP3-CARB
+
+Highlights
+
+Replaces the failure-prone CP4.2 with a CP3
+50-state, CARB designation
+Protects injectors, rails and lines
+S&S Diesel Motorsport
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2930,
+    createdAt: 1789430400000,
+    name: "Alliant Power Remanufactured Fuel Injector Kit, Cylinders 1, 2, 7 or 8 — 2015–2019 Ford 6.7L Power Stroke — AP67002",
+    category: "engine",
+    brand: "alliant-power",
+    // dpp listing price for ALI-AP67002.
+    price: 345.83,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AP67002",
+    fitment: "2015–2019 Ford 6.7L Power Stroke, cylinders 1, 2, 7 or 8. Sold individually — the 6.7L takes two different injectors, and this is the one for that cylinder group.",
+    included: ["Remanufactured fuel injector","New injector bolt","New high-pressure fuel line"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-alliant-power-remanufactured-fuel-injector-kit-15-19-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/alliant-power-remanufactured-injector-kit-ap67002/1.webp",
+    images: ["/product-media/engine/alliant-power-remanufactured-injector-kit-ap67002/1.webp"],
+    description: `Alliant Power remanufactured injector with bolt and high-pressure line for cylinders 1, 2, 7 or 8 of the 2015–2019 Ford 6.7L Power Stroke.
+
+Hard starting, a rough idle or fuel economy that has quietly slipped are the usual signs of an injector on its way out, and it is normally one injector rather than all eight.
+
+The 6.7L Power Stroke does not use the same injector in every hole. This kit is for cylinders 1, 2, 7 or 8; the other group carries its own part number.
+
+Each kit is one remanufactured injector built to meet or exceed OEM specification, supplied with a new injector bolt and a new high-pressure fuel line — the two parts that should not be reused.
+
+Specifications
+
+Manufacturer: Alliant Power
+Condition: Remanufactured
+Cylinders: 1, 2, 7 or 8
+Included: Injector, new bolt, new high-pressure fuel line
+Quantity: One injector
+Specification: Meets or exceeds OEM
+Part number: AP67002
+
+Highlights
+
+For cylinders 1, 2, 7 or 8
+New bolt and high-pressure line included
+Sold individually
+Meets or exceeds OEM specification
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2931,
+    createdAt: 1789430400000,
+    name: "Alliant Power Remanufactured Fuel Injector Kit, Cylinders 3, 4, 5 or 6 — 2015–2019 Ford 6.7L Power Stroke — AP67003",
+    category: "engine",
+    brand: "alliant-power",
+    // dpp listing price for ALI-AP67003.
+    price: 345.83,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AP67003",
+    fitment: "2015–2019 Ford 6.7L Power Stroke, cylinders 3, 4, 5 or 6. Sold individually — the 6.7L takes two different injectors, and this is the one for that cylinder group.",
+    included: ["Remanufactured fuel injector","New injector bolt","New high-pressure fuel line"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-alliant-power-remanufactured-fuel-injector-kit-15-19-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/alliant-power-remanufactured-injector-kit-ap67003/1.webp",
+    images: ["/product-media/engine/alliant-power-remanufactured-injector-kit-ap67003/1.webp"],
+    description: `Alliant Power remanufactured injector with bolt and high-pressure line for cylinders 3, 4, 5 or 6 of the 2015–2019 Ford 6.7L Power Stroke.
+
+Hard starting, a rough idle or fuel economy that has quietly slipped are the usual signs of an injector on its way out, and it is normally one injector rather than all eight.
+
+The 6.7L Power Stroke does not use the same injector in every hole. This kit is for cylinders 3, 4, 5 or 6; the other group carries its own part number.
+
+Each kit is one remanufactured injector built to meet or exceed OEM specification, supplied with a new injector bolt and a new high-pressure fuel line — the two parts that should not be reused.
+
+Specifications
+
+Manufacturer: Alliant Power
+Condition: Remanufactured
+Cylinders: 3, 4, 5 or 6
+Included: Injector, new bolt, new high-pressure fuel line
+Quantity: One injector
+Specification: Meets or exceeds OEM
+Part number: AP67003
+
+Highlights
+
+For cylinders 3, 4, 5 or 6
+New bolt and high-pressure line included
+Sold individually
+Meets or exceeds OEM specification
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2932,
+    createdAt: 1789430400000,
+    name: "Alliant Power Engine Oil Cooler Kit — 2003–2007 Ford 6.0L Power Stroke — AP63451",
+    category: "engine",
+    brand: "alliant-power",
+    // dpp listing price for ALI-AP63451.
+    price: 289.9,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AP63451 (cross-reference 3C3Z6A642CA)",
+    fitment: "2003–2007 Ford 6.0L Powerstroke.",
+    included: ["Engine oil cooler","All O-rings","Screen"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-14317-alliant-ap63451-engine-oil-cooler-kit-03-07-60l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/engine/alliant-power-engine-oil-cooler-kit-ap63451/1.webp",
+    images: ["/product-media/engine/alliant-power-engine-oil-cooler-kit-ap63451/1.webp"],
+    description: `Alliant Power engine oil cooler kit with all O-rings and screen for the 2003–2007 Ford 6.0L Power Stroke.
+
+The oil cooler is one of the most commonly replaced parts on a 6.0L Power Stroke. It plugs with debris over time, and a restricted cooler is what starves the EGR cooler downstream and lets oil temperature climb.
+
+This kit includes everything needed to do the job — the cooler, all the O-rings and the screen — rather than leaving you to source the sealing separately halfway through.
+
+It cross-references to Ford part number 3C3Z6A642CA.
+
+Specifications
+
+Manufacturer: Alliant Power
+Type: Engine oil cooler kit
+Included: Oil cooler, all O-rings, screen
+Cross-reference: 3C3Z6A642CA
+Engine: 6.0L Power Stroke
+Years: 2003–2007
+Part number: AP63451
+
+Highlights
+
+Complete kit — cooler, O-rings and screen
+Cross-references Ford 3C3Z6A642CA
+The 6.0L's most commonly replaced part
+Alliant Power
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2933,
+    createdAt: 1789430400000,
+    name: "Alliant Power Turbocharger Installation Kit, Without Clamps — 2011–2014 Ford 6.7L Power Stroke — AP0166",
+    category: "turbocharger",
+    brand: "alliant-power",
+    // dpp listing price for ALI-AP0166.
+    price: 114.78,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "AP0166",
+    fitment: "2011–2014 Ford 6.7L Power Stroke. Clamps are not included in this kit.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-alliant-ap0156-turbocharger-installation-kit-without-clamps-11-14-67l-ford-powerstroke",
+    thumbnail: "/product-media/turbocharger/alliant-power-turbocharger-installation-kit-ap0166/1.webp",
+    images: ["/product-media/turbocharger/alliant-power-turbocharger-installation-kit-ap0166/1.webp"],
+    description: `Alliant Power turbocharger installation kit of seals and gaskets for the 2011–2014 Ford 6.7L Power Stroke, clamps not included.
+
+The original turbocharger design on the 2011–2014 6.7L Power Stroke is known to fail, so this is a job a lot of these trucks eventually need.
+
+Doing it properly means new seals and gaskets rather than reused ones. This Alliant kit supplies the seals and gaskets required to fit a turbocharger to these engines.
+
+Note that clamps are not part of this kit — source those separately if yours are not reusable.
+
+Specifications
+
+Manufacturer: Alliant Power
+Type: Turbocharger installation kit
+Included: Seals and gaskets
+Not included: Clamps
+Engine: 6.7L Power Stroke
+Years: 2011–2014
+Part number: AP0166
+
+Highlights
+
+Seals and gaskets for a turbo replacement
+Clamps not included
+For the 2011–2014 6.7L Power Stroke
+Alliant Power
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2934,
+    createdAt: 1789430400000,
+    name: "PurePower Remanufactured Fuel Injector with Line and Bolt, Cylinders 3/4/5/6 — 2015–2019 Ford 6.7L Power Stroke — 7781-PP",
+    category: "engine",
+    brand: "purepower",
+    // dpp listing price for PP-7781-PP.
+    price: 231,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7781-PP",
+    fitment: "2015–2019 Ford 6.7L Power Stroke, cylinders 3, 4, 5 and 6 only.",
+    included: ["Remanufactured injector","High-pressure line","Injector bolt"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-purepower-remanufactured-injector-with-line-bolt-cylinders-3-4-5-6-15-19-ford-67l-powerstroke",
+    thumbnail: "/product-media/engine/purepower-remanufactured-injector-7781-pp/1.webp",
+    images: ["/product-media/engine/purepower-remanufactured-injector-7781-pp/1.webp"],
+    description: `PurePower remanufactured fuel injector with line and bolt for cylinders 3, 4, 5 and 6 of the 2015–2019 Ford 6.7L Power Stroke.
+
+The 6.7L Power Stroke uses different injectors on different cylinders. This one is specifically for cylinders 3, 4, 5 and 6 — fitting the wrong group is a mistake that only shows up after the job is done.
+
+It ships with the line and the bolt, so the fit is right and the parts that should be replaced are replaced.
+
+PurePower build these to meet or exceed OE specification. What a fresh injector restores is a steady fuel supply — which shows up as throttle response, smoother running and less strain on the rest of the fuel system.
+
+Specifications
+
+Manufacturer: PurePower Technologies
+Condition: Remanufactured
+Cylinders: 3, 4, 5 and 6
+Included: Injector, high-pressure line, bolt
+Specification: Meets or exceeds OE
+Engine: 6.7L Power Stroke
+Part number: 7781-PP
+
+Highlights
+
+For cylinders 3, 4, 5 and 6
+Line and bolt included
+Meets or exceeds OE specification
+PurePower Technologies
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2935,
+    createdAt: 1789430400000,
+    name: "AirDog II-5G 165 GPH Air/Fuel Separation Lift Pump System — 2019–2024 Ram 6.7L Cummins — A7SABD427",
+    category: "engine",
+    brand: "airdog",
+    // dpp listing price for PF-A7SABD427.
+    price: 816,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A7SABD427",
+    fitment: "2019–2024 Dodge/Ram 6.7L Cummins.",
+    included: ["AirDog II-5G pump and filtration system","Complete installation kit"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-airdog-ii-5g-165-gph-air-fuel-separation-lift-pump-system-19-21-59l-67l-cummins",
+    thumbnail: "/product-media/engine/airdog-ii-5g-165-gph-lift-pump-a7sabd427/1.webp",
+    images: ["/product-media/engine/airdog-ii-5g-165-gph-lift-pump-a7sabd427/1.webp"],
+    description: `AirDog II-5G 165 GPH fuel pump and filtration system with air/fuel separation for the 2019–2024 Ram 6.7L Cummins.
+
+Air entrained in diesel fuel is invisible and expensive. It compresses where fuel does not, it upsets injection timing, and it reaches the injection pump as a gap in lubrication.
+
+The AirDog II-5G is an all-in-one pump and filtration system: it removes water, particulates and entrained air, and returns the separated air to the tank through a small return fitting.
+
+It delivers fuel at the pressure and flow the engine wants under all conditions, with a built-in adjustable diaphragm pressure regulator, and ships with a complete installation kit.
+
+Specifications
+
+Manufacturer: AirDog (PureFlow Technologies)
+Model: II-5G
+Flow rate: 165 GPH
+Function: Lift, water and particulate filtration, air separation
+Regulator: Built-in adjustable diaphragm
+Included: Complete installation kit
+Engine: 6.7L Cummins
+Part number: A7SABD427
+
+Highlights
+
+Separates entrained air and returns it to the tank
+165 GPH with adjustable pressure regulator
+Water and particulate filtration
+Complete installation kit included
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2936,
+    createdAt: 1789430400000,
+    name: "Cummins Genuine Mechanical Fuel Lift Pump — 1989–1993 Dodge Ram 5.9L Cummins — 4983584",
+    category: "engine",
+    brand: "cummins",
+    // dpp listing price for CMNS-4983584.
+    price: 230.74,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4983584",
+    fitment: "1989–1993 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-cummins-replacement-mechanical-fuel-lift-pump-89-93-dodge-ram-59l-cummins",
+    thumbnail: "/product-media/engine/cummins-mechanical-fuel-lift-pump-4983584/1.webp",
+    images: ["/product-media/engine/cummins-mechanical-fuel-lift-pump-4983584/1.webp"],
+    description: `Genuine Cummins mechanical fuel lift pump for the 1989–1993 first-generation Dodge Ram 5.9L Cummins.
+
+The 12-valve Cummins uses a mechanical lift pump driven off the camshaft. They are reliable, which is why a failure tends to be a surprise rather than something you saw coming.
+
+This is the genuine Cummins replacement. It goes in where the factory pump came out and installs using the factory hardware.
+
+On a first-generation truck, keeping the fuel system to the original mechanical arrangement is often exactly what the owner wants.
+
+Specifications
+
+Manufacturer: Cummins
+Type: Mechanical lift pump, camshaft driven
+Installation: Factory location and hardware
+Engine: 5.9L Cummins, 12 valve
+Years: 1989–1993
+Part number: 4983584
+
+Highlights
+
+Genuine Cummins part
+Direct factory replacement
+Installs with factory hardware
+First-generation 12-valve trucks
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2937,
+    createdAt: 1789430400000,
+    name: "Cummins Genuine Cylinder #1 Fuel Injector Line — 1998.5–2002 Dodge Ram 5.9L Cummins — 3943765",
+    category: "engine",
+    brand: "cummins",
+    // dpp listing price for CMNS-3943765.
+    price: 177.73,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "3943765",
+    fitment: "1998.5–2002 Dodge Ram 5.9L Cummins. Cylinder #1 line.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-16828-cummins-3943765-cylinder-1-replacement-fuel-injector-line-985-02-59l-dodge-cummins-aspx",
+    thumbnail: "/product-media/engine/cummins-cylinder-1-injector-line-3943765/1.webp",
+    images: ["/product-media/engine/cummins-cylinder-1-injector-line-3943765/1.webp"],
+    description: `Genuine Cummins replacement cylinder #1 fuel injector line for the 1998.5–2002 Dodge Ram 5.9L Cummins.
+
+Injector lines do not last forever once they have been disturbed. The compression fitting at the end takes a set, and after an injector job or two it stops sealing and starts weeping fuel.
+
+This is the genuine Cummins line for cylinder #1 — the right fix for a leaking fitting rather than tightening it further and hoping.
+
+Specifications
+
+Manufacturer: Cummins
+Part: Fuel injector line, cylinder #1
+Condition: Genuine new Cummins part
+Engine: 5.9L Cummins, 24 valve
+Years: 1998.5–2002
+Part number: 3943765
+
+Highlights
+
+Genuine Cummins part
+Cylinder #1 specific
+Fixes a leaking compression fitting
+1998.5–2002 24-valve trucks
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2938,
+    createdAt: 1789430400000,
+    name: "Dynomite Diesel Stock Replacement CP4 Injection Pump — 2011–2014 Ford 6.7L Power Stroke — CP4-422",
+    category: "engine",
+    brand: "dynomite-diesel",
+    // dpp listing price for DDP CP4-422.
+    price: 1026,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "CP4-422",
+    fitment: "2011–2014 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-14870-dynomite-diesel-stock-replacement-cp4-injection-pump-11-14-67l-ford-powerstroke-aspx",
+    thumbnail: "/product-media/engine/dynomite-diesel-stock-replacement-cp4-pump-cp4-422/1.webp",
+    images: ["/product-media/engine/dynomite-diesel-stock-replacement-cp4-pump-cp4-422/1.webp"],
+    description: `Dynomite Diesel direct stock replacement CP4 injection pump for the 2011–2014 Ford 6.7L Power Stroke.
+
+When the high-pressure pump on a 6.7L Power Stroke fails, the replacement is not optional and it is not cheap — so the part that goes back in matters.
+
+This is Dynomite Diesel's stock replacement CP4: a direct replacement for the factory pump, built to the same standard as their performance line rather than as a budget afterthought.
+
+It restores the truck to the specification it left the factory with, which is what most owners want from a pump replacement.
+
+Specifications
+
+Manufacturer: Dynomite Diesel Products
+Type: CP4 injection pump, stock replacement
+Installation: Direct replacement for the factory pump
+Engine: 6.7L Power Stroke
+Years: 2011–2014
+Part number: CP4-422
+
+Highlights
+
+Direct replacement for the factory CP4
+Built to Dynomite's performance-line standard
+Restores factory specification
+Dynomite Diesel Products
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2939,
+    createdAt: 1789430400000,
+    name: "Dynomite Diesel Stock Remanufactured Injector, Sold Individually — 2004.5–2005 GM 6.6L Duramax LLY — DDP-LLY-STK",
+    category: "engine",
+    brand: "dynomite-diesel",
+    // dpp listing price for DDP-LLY-STK.
+    price: 408.5,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "DDP-LLY-STK",
+    fitment: "2004.5–2005 Chevrolet and GMC 6.6L Duramax LLY. Sold individually — a full set is eight injectors.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-dynomite-diesel-individual-stock-reman-injector-045-05-gm-66l-lly-duramax",
+    thumbnail: "/product-media/engine/dynomite-diesel-stock-reman-injector-lly-stk/1.webp",
+    images: ["/product-media/engine/dynomite-diesel-stock-reman-injector-lly-stk/1.webp"],
+    description: `Dynomite Diesel remanufactured stock-power-level injector for the 2004.5–2005 6.6L Duramax LLY, sold individually.
+
+White smoke, hard starting, a miss or a tick, or a no-start — all of them point at one or more injectors rather than at the whole set.
+
+This is Dynomite Diesel's remanufactured stock-power-level injector for the LLY Duramax. Every internal component is replaced with new OE parts at the latest revision, so what goes back in is current rather than a copy of what failed.
+
+It is sold individually, so order one to replace a failed injector or eight for a complete set.
+
+Specifications
+
+Manufacturer: Dynomite Diesel Products
+Condition: Remanufactured
+Power level: Stock
+Internals: New OE components at the latest revision
+Quantity: One injector — a full set is eight
+Engine: 6.6L Duramax LLY
+Part number: DDP-LLY-STK
+
+Highlights
+
+Stock power level — no fuelling change
+New OE internals at the latest revision
+Sold individually
+2004.5–2005 LLY Duramax
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2940,
+    createdAt: 1789430400000,
+    name: "Power Driven Diesel Hot Rod Modified Lift Pump, 95 GPH — 1994–1998 Dodge Ram 5.9L Cummins — 64121681800",
+    category: "engine",
+    brand: "power-driven-diesel",
+    // dpp listing price for PDD-64121681800.
+    price: 374,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "64121681800",
+    fitment: "1994–1998 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-power-driven-diesel-hot-rod-modified-cummins-lift-pump-94-98-dodge-59l-cummins",
+    thumbnail: "/product-media/engine/power-driven-diesel-hot-rod-lift-pump-64121681800/1.webp",
+    images: ["/product-media/engine/power-driven-diesel-hot-rod-lift-pump-64121681800/1.webp"],
+    description: `Power Driven Diesel Hot Rod modified lift pump for the 1994–1998 12-valve Dodge Ram 5.9L Cummins, 95 GPH at up to 100 psi.
+
+A 12-valve Cummins built for power asks more of its fuel supply than the factory pump was ever meant to give, and the shortfall shows up at wide-open throttle when it matters most.
+
+Power Driven Diesel modify this pump to keep up with high-revving performance builds: up to 95 gallons per hour at pressures up to 100 psi.
+
+What that buys is consistent fuel delivery under load rather than a pump that runs out of breath at the top of the rev range.
+
+Specifications
+
+Manufacturer: Power Driven Diesel
+Type: Modified lift pump
+Flow rate: Up to 95 GPH
+Pressure: Up to 100 psi
+Engine: 5.9L Cummins, 12 valve
+Years: 1994–1998
+Part number: 64121681800
+
+Highlights
+
+Up to 95 GPH at up to 100 psi
+Modified for high-revving builds
+Consistent delivery at wide-open throttle
+1994–1998 12-valve trucks
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2941,
+    createdAt: 1789430400000,
+    name: "No Limit Fabrication CP4 Disaster Prevention Bypass Kit — 2011–2014 Ford 6.7L Power Stroke — 67CP4BPK1114",
+    category: "engine",
+    brand: "no-limit-fabrication",
+    // dpp listing price for NL-67CP4BPK1114.
+    price: 329,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "67CP4BPK1114",
+    fitment: "2011–2014 Ford 6.7L Power Stroke.",
+    included: ["Aluminium adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/no-limit-fabrication-cp4-disaster-prevention-bypass-kit-11-24-ford-6-7-powerstroke",
+    thumbnail: "/product-media/engine/no-limit-fabrication-cp4-bypass-kit-67cp4bpk1114/1.webp",
+    images: ["/product-media/engine/no-limit-fabrication-cp4-bypass-kit-67cp4bpk1114/1.webp"],
+    description: `No Limit Fabrication CP4 disaster prevention bypass kit for the 2011–2014 Ford 6.7L Power Stroke.
+
+When a CP4.2 high-pressure fuel pump fails, the damage is rarely confined to the pump. Debris travels into the high-pressure side — rails, injectors and lines — and turns a pump failure into a fuel system replacement.
+
+This kit reroutes the fuel supply path so that debris from a failing pump does not reach the high-pressure side. It does not stop the pump failing; it stops the failure taking everything else with it.
+
+The kit uses an aluminium adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
+
+This is the 2011–2014 version — No Limit build a separate kit for each generation of the 6.7L.
+
+Specifications
+
+Manufacturer: No Limit Fabrication
+Type: CP4 disaster prevention bypass kit
+Components: Aluminium adapter block, O-rings, braided hydraulic hose, fittings, hardware
+Purpose: Keeps failed-pump debris out of the high-pressure system
+Application: 2011–2014 6.7L Power Stroke
+Part number: 67CP4BPK1114
+
+Highlights
+
+Keeps CP4 debris out of rails and injectors
+Aluminium adapter block and braided hose
+Complete with fittings and hardware
+Built specifically for 2011–2014
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2942,
+    createdAt: 1789430400000,
+    name: "No Limit Fabrication CP4 Disaster Prevention Bypass Kit — 2015–2019 Ford 6.7L Power Stroke — 67CP4BPK1519",
+    category: "engine",
+    brand: "no-limit-fabrication",
+    // dpp listing price for NL-67CP4BPK1519.
+    price: 329,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "67CP4BPK1519",
+    fitment: "2015–2019 Ford 6.7L Power Stroke.",
+    included: ["Aluminium adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/no-limit-fabrication-cp4-disaster-prevention-bypass-kit-11-24-ford-6-7-powerstroke",
+    thumbnail: "/product-media/engine/no-limit-fabrication-cp4-bypass-kit-67cp4bpk1519/1.webp",
+    images: ["/product-media/engine/no-limit-fabrication-cp4-bypass-kit-67cp4bpk1519/1.webp"],
+    description: `No Limit Fabrication CP4 disaster prevention bypass kit for the 2015–2019 Ford 6.7L Power Stroke.
+
+When a CP4.2 high-pressure fuel pump fails, the damage is rarely confined to the pump. Debris travels into the high-pressure side — rails, injectors and lines — and turns a pump failure into a fuel system replacement.
+
+This kit reroutes the fuel supply path so that debris from a failing pump does not reach the high-pressure side. It does not stop the pump failing; it stops the failure taking everything else with it.
+
+The kit uses an aluminium adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
+
+This is the 2015–2019 version — No Limit build a separate kit for each generation of the 6.7L.
+
+Specifications
+
+Manufacturer: No Limit Fabrication
+Type: CP4 disaster prevention bypass kit
+Components: Aluminium adapter block, O-rings, braided hydraulic hose, fittings, hardware
+Purpose: Keeps failed-pump debris out of the high-pressure system
+Application: 2015–2019 6.7L Power Stroke
+Part number: 67CP4BPK1519
+
+Highlights
+
+Keeps CP4 debris out of rails and injectors
+Aluminium adapter block and braided hose
+Complete with fittings and hardware
+Built specifically for 2015–2019
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2943,
+    createdAt: 1789430400000,
+    name: "No Limit Fabrication CP4 Disaster Prevention Bypass Kit — 2020–2026 Ford 6.7L Power Stroke — 67CP4BPK20",
+    category: "engine",
+    brand: "no-limit-fabrication",
+    // dpp listing price for NL-67CP4BPK20.
+    price: 349,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "67CP4BPK20",
+    fitment: "2020–2026 Ford 6.7L Power Stroke.",
+    included: ["Aluminium adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/no-limit-fabrication-cp4-disaster-prevention-bypass-kit-11-24-ford-6-7-powerstroke",
+    thumbnail: "/product-media/engine/no-limit-fabrication-cp4-bypass-kit-67cp4bpk20/1.webp",
+    images: ["/product-media/engine/no-limit-fabrication-cp4-bypass-kit-67cp4bpk20/1.webp"],
+    description: `No Limit Fabrication CP4 disaster prevention bypass kit for the 2020–2026 Ford 6.7L Power Stroke.
+
+When a CP4.2 high-pressure fuel pump fails, the damage is rarely confined to the pump. Debris travels into the high-pressure side — rails, injectors and lines — and turns a pump failure into a fuel system replacement.
+
+This kit reroutes the fuel supply path so that debris from a failing pump does not reach the high-pressure side. It does not stop the pump failing; it stops the failure taking everything else with it.
+
+The kit uses an aluminium adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
+
+This is the 2020–2026 version — No Limit build a separate kit for each generation of the 6.7L.
+
+Specifications
+
+Manufacturer: No Limit Fabrication
+Type: CP4 disaster prevention bypass kit
+Components: Aluminium adapter block, O-rings, braided hydraulic hose, fittings, hardware
+Purpose: Keeps failed-pump debris out of the high-pressure system
+Application: 2020–2026 6.7L Power Stroke
+Part number: 67CP4BPK20
+
+Highlights
+
+Keeps CP4 debris out of rails and injectors
+Aluminium adapter block and braided hose
+Complete with fittings and hardware
+Built specifically for 2020–2026
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2944,
+    createdAt: 1789430400000,
+    name: "Holset Genuine OE New HE351VE VGT Turbocharger Actuator — 2007.5–2012 Dodge / Ram 6.7L Cummins — 4034315H",
+    category: "turbocharger",
+    brand: "holset",
+    // dpp listing price for HOL-4034315H.
+    price: 1755.18,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4034315H",
+    fitment: "2007.5–2012 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-holset-genuine-oe-new-he351ve-vgt-turbocharger-actuator-075-12-dodgeram-67l-cummins",
+    thumbnail: "/product-media/turbocharger/holset-genuine-oe-new-he351ve-actuator-4034315h/1.webp",
+    images: ["/product-media/turbocharger/holset-genuine-oe-new-he351ve-actuator-4034315h/1.webp"],
+    description: `Genuine new Holset HE351VE VGT turbocharger actuator for the 2007.5–2012 Dodge / Ram 6.7L Cummins.
+
+The HE351VE's actuator is what tells the variable-geometry turbo when to open and close. It is also the part that fails — usually electronically — and when it does the turbo stops varying anything and behaves like a fixed-geometry unit, taking the exhaust brake with it.
+
+This is the genuine Holset unit and it is 100% new rather than remanufactured — factory components, factory quality testing, and no core to send back.
+
+It is a direct bolt-on replacement, and what it restores is precise boost control: proper spool, proper regulation, and the drivability the truck had when the actuator was working.
+
+Specifications
+
+Manufacturer: Holset (Cummins Turbo Technologies)
+Condition: New, genuine OE
+Part: HE351VE VGT actuator
+Core: None required
+Installation: Direct bolt-on
+Engine: 6.7L Cummins
+Years: 2007.5–2012
+Part number: 4034315H
+
+Highlights
+
+Genuine Holset, 100% new
+No core return required
+Direct bolt-on
+Restores full VGT operation
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2945,
+    createdAt: 1789430400000,
+    name: "Holset Remanufactured HE351VE VGT Turbocharger Actuator — 2007.5–2012 Dodge / Ram 6.7L Cummins — 4034315HX",
+    category: "turbocharger",
+    brand: "holset",
+    // dpp listing price for HOL-4034315HX.
+    price: 941.18,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "4034315HX",
+    fitment: "2007.5–2012 Dodge / Ram 6.7L Cummins. Exchange unit — your original actuator must be returned.",
+    coreCharge: "Exchange unit — the original actuator must be returned",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/holset-he351ve-remanufactured-vgt-turbo-actuator",
+    thumbnail: "/product-media/turbocharger/holset-remanufactured-he351ve-actuator-4034315hx/1.webp",
+    images: ["/product-media/turbocharger/holset-remanufactured-he351ve-actuator-4034315hx/1.webp"],
+    description: `Genuine Holset remanufactured HE351VE VGT turbocharger actuator for the 2007.5–2012 Dodge / Ram 6.7L Cummins, supplied as an exchange.
+
+The HE351VE's actuator is what tells the variable-geometry turbo when to open and close. It is also the part that fails — usually electronically — and when it does the turbo stops varying anything and behaves like a fixed-geometry unit, taking the exhaust brake with it.
+
+This is the genuine Holset remanufactured unit — the same part, rebuilt by the company that makes it, at a considerable saving over the new one.
+
+It is supplied as an exchange, so your original actuator has to go back.
+
+Specifications
+
+Manufacturer: Holset (Cummins Turbo Technologies)
+Condition: Remanufactured by Holset
+Part: HE351VE VGT actuator
+Core: Original actuator must be returned
+Engine: 6.7L Cummins
+Years: 2007.5–2012
+Part number: 4034315HX
+
+Highlights
+
+Genuine Holset remanufactured
+Restores variable geometry operation
+Exchange — original goes back
+2007.5–2012 6.7L Cummins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2946,
+    createdAt: 1789430400000,
+    name: "Synapse Auto Remanufactured HE351VE Turbo Actuator with Calibration Tool — 2007.5–2012 Ram 6.7L Cummins — S79-HE351VE + S83-351CAL",
+    category: "turbocharger",
+    brand: "synapse-auto",
+    // dpp listing price for SYNA-S79-HE351VE+S83-351CAL-KIT.
+    price: 949.98,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "S79-HE351VE + S83-351CAL",
+    fitment: "2007.5–2012 Dodge/Ram 6.7L Cummins.",
+    included: ["Remanufactured HE351VE actuator","Calibration tool"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-synapse-auto-remanufactured-he351ve-turbo-actuator-and-calibration-tool-075-12-ram-67l-cummins",
+    thumbnail: "/product-media/turbocharger/synapse-he351ve-actuator-and-calibration-tool-kit/1.webp",
+    images: ["/product-media/turbocharger/synapse-he351ve-actuator-and-calibration-tool-kit/1.webp"],
+    description: `Synapse Auto remanufactured HE351VE turbo actuator supplied with the calibration tool, for the 2007.5–2012 Ram 6.7L Cummins.
+
+The HE351VE's actuator is what tells the variable-geometry turbo when to open and close. It is also the part that fails — usually electronically — and when it does the turbo stops varying anything and behaves like a fixed-geometry unit, taking the exhaust brake with it.
+
+Replacing the actuator itself is straightforward. The catch has always been calibration: a new actuator has to be calibrated to the turbo, which normally means a trip to a shop with the right equipment.
+
+This kit pairs Synapse's remanufactured actuator with their calibration tool, so the whole job — replace and calibrate — can be finished on your own driveway.
+
+Specifications
+
+Manufacturer: Synapse Auto
+Condition: Remanufactured actuator
+Included: HE351VE actuator and calibration tool
+Why it matters: The actuator must be calibrated to the turbo after fitting
+Engine: 6.7L Cummins
+Years: 2007.5–2012
+Part number: S79-HE351VE + S83-351CAL
+
+Highlights
+
+Actuator and calibration tool together
+No shop visit needed to calibrate
+Restores variable geometry operation
+2007.5–2012 6.7L Cummins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2947,
+    createdAt: 1789430400000,
+    name: "River City Turbo Direct Replacement HE351VE VGT Turbocharger, Billet Compressor Wheel — 2007.5–2012 Dodge / Ram 6.7L Cummins — HE351VEBCW",
+    category: "turbocharger",
+    brand: "river-city-turbo",
+    // dpp listing price for RCT-HE351VEBCW.
+    price: 1515,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "HE351VEBCW",
+    fitment: "2007.5–2012 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/he351ve-vgt-turbo-075-12-cummins",
+    thumbnail: "/product-media/turbocharger/river-city-turbo-he351ve-billet-compressor-wheel-turbo/1.webp",
+    images: ["/product-media/turbocharger/river-city-turbo-he351ve-billet-compressor-wheel-turbo/1.webp"],
+    description: `River City Turbo direct-replacement HE351VE VGT turbocharger with a billet compressor wheel upgrade for the 2007.5–2012 6.7L Cummins.
+
+The factory HE351VE exists to solve an old problem: a fixed-geometry turbo is either lazy at the bottom or inefficient at the top, and the variable-geometry design gets you both ends of the range out of one turbo.
+
+This is a direct replacement for that turbo with a billet compressor wheel in place of the cast one — more airflow, without changing how the truck behaves or what it can do.
+
+Because it keeps the variable geometry, it keeps the factory exhaust brake with it. That is the part most owners are not willing to give up.
+
+Specifications
+
+Manufacturer: River City Turbo
+Type: Direct replacement HE351VE VGT
+Compressor wheel: Billet upgrade
+Retains: Variable geometry and factory exhaust brake
+Engine: 6.7L Cummins
+Years: 2007.5–2012
+Part number: HE351VEBCW
+
+Highlights
+
+Billet compressor wheel upgrade
+Keeps the factory exhaust brake
+Direct replacement — no kit needed
+2007.5–2012 6.7L Cummins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2948,
+    createdAt: 1789430400000,
+    name: "River City Turbo 64 mm HE351VE VGT Turbocharger, Billet Compressor Wheel — 2007.5–2012 Dodge / Ram 6.7L Cummins — RC64B6008VERNA",
+    category: "turbocharger",
+    brand: "river-city-turbo",
+    // dpp listing price for RCT-RC64B6008VERNA.
+    price: 2800,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "RC64B6008VERNA",
+    fitment: "2007.5–2012 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/64mm-he351ve-vgt-turbo-075-12-cummins",
+    thumbnail: "/product-media/turbocharger/river-city-turbo-64mm-he351ve-billet-turbo/1.webp",
+    images: ["/product-media/turbocharger/river-city-turbo-64mm-he351ve-billet-turbo/1.webp"],
+    description: `River City Turbo 64 mm direct drop-in HE351VE VGT turbocharger with billet compressor wheel for the 2007.5–2012 6.7L Cummins.
+
+Most turbo upgrades on a 6.7L Cummins ask you to give up the factory exhaust brake. If you use the truck as a truck, that is a real loss — and this turbo does not ask for it.
+
+It is a 64 mm direct drop-in replacement with a billet compressor wheel: substantially more airflow, more power and lower exhaust gas temperature, while keeping the variable-geometry behaviour and the exhaust brake that comes with it.
+
+Drop-in means drop-in — it goes where the factory turbo came out.
+
+Specifications
+
+Manufacturer: River City Turbo
+Type: Direct drop-in HE351VE VGT
+Compressor wheel: 64 mm billet
+Retains: Variable geometry and factory exhaust brake
+Engine: 6.7L Cummins
+Years: 2007.5–2012
+Part number: RC64B6008VERNA
+
+Highlights
+
+64 mm billet compressor wheel
+Keeps the factory exhaust brake
+Lower EGT and more airflow
+Direct drop-in fitment
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2949,
+    createdAt: 1789430400000,
+    name: "Power Driven Diesel Aggressor HE351VE VGT-63 Turbocharger — 2007.5–2018 Dodge / Ram 6.7L Cummins — 17309090025",
+    category: "turbocharger",
+    brand: "power-driven-diesel",
+    // dpp listing price for PDD-17309090025.
+    price: 2790,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "17309090025",
+    fitment: "2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/power-driven-diesel-aggressor-he351ve-vgt-63-turbocharger-07-5-18-dodge-ram-6-7l-cummins",
+    thumbnail: "/product-media/turbocharger/power-driven-diesel-aggressor-vgt-63-turbo-17309090025/1.webp",
+    images: ["/product-media/turbocharger/power-driven-diesel-aggressor-vgt-63-turbo-17309090025/1.webp"],
+    description: `Power Driven Diesel Aggressor VGT-63 upgraded HE351VE turbocharger for the 2007.5–2018 6.7L Cummins, supporting up to 700 RWHP.
+
+The Aggressor is an upgraded HE351VE: a 63 mm billet compressor wheel against a 12-blade 70 × 64 mm turbine wheel, which addresses the airflow bottleneck in the factory turbo without changing how the truck drives.
+
+Power Driven Diesel rate it to support up to 700 rear-wheel horsepower, with quicker spool and smooth power delivery across the rev range.
+
+It is aimed at daily driving and towing rather than at a single-purpose build — cooler temperatures under load are usually worth more to a working truck than a peak number.
+
+Specifications
+
+Manufacturer: Power Driven Diesel
+Model: Aggressor HE351VE VGT-63
+Compressor wheel: 63 mm billet
+Turbine wheel: 70 × 64 mm, 12 blade
+Supports: Up to 700 RWHP
+Engine: 6.7L Cummins
+Years: 2007.5–2018
+Part number: 17309090025
+
+Highlights
+
+63 mm billet compressor wheel
+12-blade 70 × 64 mm turbine wheel
+Supports up to 700 RWHP
+Quicker spool, cooler temperatures
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2950,
+    createdAt: 1789430400000,
+    name: "Rotomaster Remanufactured Stock Replacement Turbocharger — 2006–2007 GM 6.6L Duramax LLY/LBZ — A8370105R",
+    category: "turbocharger",
+    brand: "rotomaster",
+    // dpp listing price for ROT-A8370105R.
+    price: 893.57,
+    stock: true,
+    condition: "refurbished",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "A8370105R",
+    fitment: "2006–2007 Chevrolet 6.6L Duramax LLY/LBZ; and 2006–2007 GMC 6.6L Duramax LLY/LBZ.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-rotomaster-a8370105r-remanufactured-stock-replacement-turbocharger-06-07-gm-66l-duramax",
+    thumbnail: "/product-media/turbocharger/rotomaster-remanufactured-turbocharger-a8370105r/1.webp",
+    images: ["/product-media/turbocharger/rotomaster-remanufactured-turbocharger-a8370105r/1.webp"],
+    description: `Rotomaster remanufactured drop-in stock replacement turbocharger for the 2006–2007 6.6L Duramax.
+
+A failed turbocharger on an LBZ Duramax does not need to be an upgrade opportunity. Often the right answer is simply the factory turbo, properly rebuilt.
+
+Rotomaster are a leading manufacturer of remanufactured diesel turbochargers, and this unit is built to meet or exceed factory specification.
+
+It is a drop-in replacement for the original — no kit, no adapters, no change to how the truck behaves.
+
+Specifications
+
+Manufacturer: Rotomaster
+Condition: Remanufactured
+Type: Drop-in stock replacement
+Specification: Meets or exceeds factory
+Engine: 6.6L Duramax LLY/LBZ
+Years: 2006–2007
+Part number: A8370105R
+
+Highlights
+
+Drop-in stock replacement
+Meets or exceeds factory specification
+Remanufactured by Rotomaster
+2006–2007 Duramax
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2951,
+    createdAt: 1789430400000,
+    name: "Grizzly New Replacement Oil Cooler Kit — 2003–2007 Ford 6.0L Power Stroke — GA320N",
+    category: "engine",
+    brand: "grizzly",
+    // dpp listing price for GZ-GA320N.
+    price: 307.69,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "GA320N",
+    fitment: "2003–2007 Ford 6.0L Powerstroke.",
+    included: ["New engine oil cooler","All required gaskets","All required seals"],
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-grizzly-new-oil-cooler-kit-03-07-ford-60l-powerstroke",
+    thumbnail: "/product-media/engine/grizzly-new-replacement-oil-cooler-kit-ga320n/1.webp",
+    images: ["/product-media/engine/grizzly-new-replacement-oil-cooler-kit-ga320n/1.webp"],
+    description: `Grizzly new replacement engine oil cooler kit with gaskets and seals for the 2003–2007 Ford 6.0L Power Stroke.
+
+On a 6.0L Power Stroke the engine oil does more than lubricate and cool — it also drives fuel injection through the high-pressure oil pump. Oil temperature is not a secondary concern on this engine.
+
+The factory oil cooler manages that well enough until it plugs with contaminants from poor coolant or oil quality, which is when temperature climbs and the EGR cooler downstream starts to suffer.
+
+This Grizzly kit is a new replacement cooler supplied with all the gaskets and seals needed for a leak-free installation.
+
+Specifications
+
+Manufacturer: Grizzly
+Condition: New
+Type: Engine oil cooler kit
+Included: Cooler, all gaskets and seals
+Engine: 6.0L Power Stroke
+Years: 2003–2007
+Part number: GA320N
+
+Highlights
+
+New, not remanufactured
+All gaskets and seals included
+Restores oil cooling on a plugged 6.0L
+Direct replacement
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2952,
+    createdAt: 1789430400000,
+    name: "Mechman Elite Series High-Output Alternator, 320 amp — 2011–2022 Ford 6.7L Power Stroke — 11627320",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-11627320.
+    price: 519,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "11627320",
+    fitment: "2011–2022 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-elite-series-high-output-alternator-11-22-ford-67-powerstroke",
+    thumbnail: "/product-media/electronics/mechman-elite-series-alternator-320a-11627320/1.webp",
+    images: ["/product-media/electronics/mechman-elite-series-alternator-320a-11627320/1.webp"],
+    description: `Mechman Elite Series 320 amp high-output alternator for the 2011–2022 Ford 6.7L Power Stroke, replacing the 175 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 175 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 320 amp.
+
+The Elite series is the highest output and durability Mechman offer in a large-case alternator: six-phase technology with twin rectifier assemblies and twelve 80-amp diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: Elite Series
+Output: 320 amp
+Factory output: 175 amp
+Design: Six-phase
+Application: 2011–2022 Ford 6.7L Power Stroke
+Part number: 11627320
+
+Highlights
+
+320 amp output against 175 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman Elite Series
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2953,
+    createdAt: 1789430400000,
+    name: "Mechman Elite Series High-Output Alternator, 370 amp — 2011–2022 Ford 6.7L Power Stroke — 11627370",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-11627370.
+    price: 599,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "11627370",
+    fitment: "2011–2022 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-elite-series-high-output-alternator-11-22-ford-67-powerstroke",
+    thumbnail: "/product-media/electronics/mechman-elite-series-alternator-370a-11627370/1.webp",
+    images: ["/product-media/electronics/mechman-elite-series-alternator-370a-11627370/1.webp"],
+    description: `Mechman Elite Series 370 amp high-output alternator for the 2011–2022 Ford 6.7L Power Stroke, replacing the 175 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 175 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 370 amp.
+
+The Elite series is the highest output and durability Mechman offer in a large-case alternator: six-phase technology with twin rectifier assemblies and twelve 80-amp diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: Elite Series
+Output: 370 amp
+Factory output: 175 amp
+Design: Six-phase
+Application: 2011–2022 Ford 6.7L Power Stroke
+Part number: 11627370
+
+Highlights
+
+370 amp output against 175 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman Elite Series
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2954,
+    createdAt: 1789430400000,
+    name: "Mechman High Output High-Output Alternator, 240 amp — 1999–2007 Ford 7.3L and 6.0L Power Stroke — 7796240",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-7796240.
+    price: 429,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7796240",
+    fitment: "1999–2003 Ford 7.3L Powerstroke; and 2003–2007 Ford 6.0L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-high-output-alternator-99-07-73l-60l-ford-powerstroke",
+    thumbnail: "/product-media/electronics/mechman-high-output-alternator-240a-7796240/1.webp",
+    images: ["/product-media/electronics/mechman-high-output-alternator-240a-7796240/1.webp"],
+    description: `Mechman High Output 240 amp high-output alternator for the 1999–2007 Ford 7.3L and 6.0L Power Stroke, replacing the 110 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 110 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 240 amp.
+
+This large-case alternator uses six-phase hairpin stator technology with twin rectifier plates and twelve heavy diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: High Output
+Output: 240 amp
+Factory output: 110 amp
+Design: Six-phase
+Application: 1999–2007 Ford 7.3L and 6.0L Power Stroke
+Part number: 7796240
+
+Highlights
+
+240 amp output against 110 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman High Output
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2955,
+    createdAt: 1789430400000,
+    name: "Mechman High Output High-Output Alternator, 320 amp — 1999–2007 Ford 7.3L and 6.0L Power Stroke — 7796320",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-7796320.
+    price: 519,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7796320",
+    fitment: "1999–2003 Ford 7.3L Powerstroke; and 2003–2007 Ford 6.0L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-high-output-alternator-99-07-73l-60l-ford-powerstroke",
+    thumbnail: "/product-media/electronics/mechman-high-output-alternator-320a-7796320/1.webp",
+    images: ["/product-media/electronics/mechman-high-output-alternator-320a-7796320/1.webp"],
+    description: `Mechman High Output 320 amp high-output alternator for the 1999–2007 Ford 7.3L and 6.0L Power Stroke, replacing the 110 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 110 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 320 amp.
+
+This large-case alternator uses six-phase hairpin stator technology with twin rectifier plates and twelve heavy diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: High Output
+Output: 320 amp
+Factory output: 110 amp
+Design: Six-phase
+Application: 1999–2007 Ford 7.3L and 6.0L Power Stroke
+Part number: 7796320
+
+Highlights
+
+320 amp output against 110 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman High Output
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2956,
+    createdAt: 1789430400000,
+    name: "Mechman High Output High-Output Alternator, 370 amp — 1999–2007 Ford 7.3L and 6.0L Power Stroke — 7796370",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-7796370.
+    price: 599,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "7796370",
+    fitment: "1999–2003 Ford 7.3L Powerstroke; and 2003–2007 Ford 6.0L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-high-output-alternator-99-07-73l-60l-ford-powerstroke",
+    thumbnail: "/product-media/electronics/mechman-high-output-alternator-370a-7796370/1.webp",
+    images: ["/product-media/electronics/mechman-high-output-alternator-370a-7796370/1.webp"],
+    description: `Mechman High Output 370 amp high-output alternator for the 1999–2007 Ford 7.3L and 6.0L Power Stroke, replacing the 110 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 110 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 370 amp.
+
+This large-case alternator uses six-phase hairpin stator technology with twin rectifier plates and twelve heavy diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: High Output
+Output: 370 amp
+Factory output: 110 amp
+Design: Six-phase
+Application: 1999–2007 Ford 7.3L and 6.0L Power Stroke
+Part number: 7796370
+
+Highlights
+
+370 amp output against 110 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman High Output
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2957,
+    createdAt: 1789430400000,
+    name: "Mechman S Series High-Output Alternator, 240 amp — 2003–2007 Dodge Ram 5.9L Cummins — 11235240",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-11235240.
+    price: 429,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "11235240",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-s-series-high-output-alternator-03-07-dodge-59l-cummins",
+    thumbnail: "/product-media/electronics/mechman-s-series-alternator-240a-11235240/1.webp",
+    images: ["/product-media/electronics/mechman-s-series-alternator-240a-11235240/1.webp"],
+    description: `Mechman S Series 240 amp high-output alternator for the 2003–2007 Dodge Ram 5.9L Cummins, replacing the 136 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 136 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 240 amp.
+
+This large-case alternator uses six-phase hairpin stator technology with twin rectifier plates and twelve heavy diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: S Series
+Output: 240 amp
+Factory output: 136 amp
+Design: Six-phase
+Application: 2003–2007 Dodge Ram 5.9L Cummins
+Part number: 11235240
+
+Highlights
+
+240 amp output against 136 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman S Series
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2958,
+    createdAt: 1789430400000,
+    name: "Mechman S Series High-Output Alternator, 320 amp — 2003–2007 Dodge Ram 5.9L Cummins — 11235320",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-11235320.
+    price: 599,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "11235320",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-s-series-high-output-alternator-03-07-dodge-59l-cummins",
+    thumbnail: "/product-media/electronics/mechman-s-series-alternator-320a-11235320/1.webp",
+    images: ["/product-media/electronics/mechman-s-series-alternator-320a-11235320/1.webp"],
+    description: `Mechman S Series 320 amp high-output alternator for the 2003–2007 Dodge Ram 5.9L Cummins, replacing the 136 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 136 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 320 amp.
+
+This large-case alternator uses six-phase hairpin stator technology with twin rectifier plates and twelve heavy diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: S Series
+Output: 320 amp
+Factory output: 136 amp
+Design: Six-phase
+Application: 2003–2007 Dodge Ram 5.9L Cummins
+Part number: 11235320
+
+Highlights
+
+320 amp output against 136 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman S Series
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2959,
+    createdAt: 1789430400000,
+    name: "Mechman S Series High-Output Alternator, 370 amp — 2003–2007 Dodge Ram 5.9L Cummins — 11235370",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-11235370.
+    price: 599,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "11235370",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-s-series-high-output-alternator-03-07-dodge-59l-cummins",
+    thumbnail: "/product-media/electronics/mechman-s-series-alternator-370a-11235370/1.webp",
+    images: ["/product-media/electronics/mechman-s-series-alternator-370a-11235370/1.webp"],
+    description: `Mechman S Series 370 amp high-output alternator for the 2003–2007 Dodge Ram 5.9L Cummins, replacing the 136 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 136 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 370 amp.
+
+This large-case alternator uses six-phase hairpin stator technology with twin rectifier plates and twelve heavy diodes.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: S Series
+Output: 370 amp
+Factory output: 136 amp
+Design: Six-phase
+Application: 2003–2007 Dodge Ram 5.9L Cummins
+Part number: 11235370
+
+Highlights
+
+370 amp output against 136 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman S Series
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2960,
+    createdAt: 1789430400000,
+    name: "Mechman S Series High-Output Alternator, 240 amp — 1989–2002 Dodge Ram 5.9L Cummins — 13302240",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-13302240.
+    price: 429,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "13302240",
+    fitment: "1989–2002 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-s-series-high-output-alternator-89-02-dodge-59l-cummins",
+    thumbnail: "/product-media/electronics/mechman-s-series-alternator-240a-13302240/1.webp",
+    images: ["/product-media/electronics/mechman-s-series-alternator-240a-13302240/1.webp"],
+    description: `Mechman S Series 240 amp high-output alternator for the 1989–2002 Dodge Ram 5.9L Cummins, replacing the 120 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 120 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 240 amp.
+
+The S series packs six-phase output into a compact, durable case — high efficiency without needing a large-case housing.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: S Series
+Output: 240 amp
+Factory output: 120 amp
+Design: Six-phase
+Application: 1989–2002 Dodge Ram 5.9L Cummins
+Part number: 13302240
+
+Highlights
+
+240 amp output against 120 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman S Series
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2961,
+    createdAt: 1789430400000,
+    name: "Mechman S Series High-Output Alternator, 320 amp — 1989–2002 Dodge Ram 5.9L Cummins — 13302320",
+    category: "electronics",
+    brand: "mechman",
+    // dpp listing price for MECH-13302320.
+    price: 519,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "13302320",
+    fitment: "1989–2002 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mechman-s-series-high-output-alternator-89-02-dodge-59l-cummins",
+    thumbnail: "/product-media/electronics/mechman-s-series-alternator-320a-13302320/1.webp",
+    images: ["/product-media/electronics/mechman-s-series-alternator-320a-13302320/1.webp"],
+    description: `Mechman S Series 320 amp high-output alternator for the 1989–2002 Dodge Ram 5.9L Cummins, replacing the 120 amp factory unit.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+The factory alternator on these trucks is rated at 120 amp, which is modest even when new — and they are known to fail without warning once they have some age on them. This unit puts out 320 amp.
+
+The S series packs six-phase output into a compact, durable case — high efficiency without needing a large-case housing.
+
+Mechman build these as six-phase alternators rather than the conventional three-phase. Six phases put out a smoother, denser current and draw less engine horsepower per kilowatt produced, which is why the output figures are achievable in a case this size.
+
+Specifications
+
+Manufacturer: Mechman
+Series: S Series
+Output: 320 amp
+Factory output: 120 amp
+Design: Six-phase
+Application: 1989–2002 Dodge Ram 5.9L Cummins
+Part number: 13302320
+
+Highlights
+
+320 amp output against 120 amp factory
+Six-phase design
+Twin rectifiers and heavy diode set
+Mechman S Series
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2962,
+    createdAt: 1789430400000,
+    name: "Mean Green 375 Amp High-Output Alternator — 2003–2007 Ram 5.9L Cummins — MG1398SHD",
+    category: "electronics",
+    brand: "mean-green",
+    // dpp listing price for MEAN-MG1398SHD.
+    price: 719,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MG1398SHD",
+    fitment: "2003–2007 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mean-green-375-amp-high-output-alternator-03-07-dodge-ram-59l-cummins",
+    thumbnail: "/product-media/electronics/mean-green-375-amp-alternator-mg1398shd/1.webp",
+    images: ["/product-media/electronics/mean-green-375-amp-alternator-mg1398shd/1.webp"],
+    description: `Mean Green 375 amp high-output alternator delivering full output from 2,000 rpm, for the 2003–2007 Ram 5.9L Cummins.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+This Mean Green unit produces 375 amps at just 2,000 rpm, which is the number that actually matters — an alternator that only reaches its rating at high rpm is not much use to a truck idling with the lights on.
+
+The build is aimed at surviving a diesel engine bay: a tool-steel rotor shaft supported at both ends by heavy-duty double-sealed bearings, and heavy-duty solid copper stator windings sealed with high-temperature insulation.
+
+Specifications
+
+Manufacturer: Mean Green
+Output: 375 amp at 2,000 rpm
+Rotor shaft: Tool steel, supported at both ends
+Bearings: Heavy-duty double sealed
+Windings: Solid copper with high-temperature insulation
+Engine: 5.9L Cummins
+Years: 2003–2007
+Part number: MG1398SHD
+
+Highlights
+
+375 amp at only 2,000 rpm
+Tool-steel rotor shaft, bearings both ends
+Solid copper windings, high-temperature insulation
+Mean Green
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2963,
+    createdAt: 1789430400000,
+    name: "Mean Green Gear Reduction Starter — 2007–2019 Dodge / Ram 5.9L and 6.7L Cummins — MG9029",
+    category: "electronics",
+    brand: "mean-green",
+    // dpp listing price for MEAN-MG9029.
+    price: 439,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MG9029",
+    fitment: "2007 Dodge/Ram 5.9L Cummins; and 2007.5–2019 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-mean-green-gear-reduction-starter-07-18-dodge-59l-67l-cummins",
+    thumbnail: "/product-media/electronics/mean-green-gear-reduction-starter-mg9029/1.webp",
+    images: ["/product-media/electronics/mean-green-gear-reduction-starter-mg9029/1.webp"],
+    description: `Mean Green gear reduction starter with 4.4:1 reduction for the 2007–2019 Dodge / Ram 5.9L and 6.7L Cummins.
+
+A gear reduction starter uses a smaller, faster motor through a reduction gearset. The result is more cranking torque from a lighter unit that draws less current — which is what you want on a cold morning with a battery that is no longer new.
+
+The Mean Green starter produces 100% more torque than the heavy factory unit it replaces, through a 4.4:1 gear reduction with roller bearing support and an integrated solenoid. A 3 in tool-steel driveshaft runs on bearings at both ends.
+
+Static compression is what defeats a tired starter on a diesel. More torque at the pinion is the direct answer to it.
+
+Specifications
+
+Manufacturer: Mean Green
+Type: Gear reduction starter
+Gear reduction: 4.4:1
+Torque: 100% more than the factory starter
+Driveshaft: 3 in tool steel, bearings both ends
+Solenoid: Integrated
+Application: 2007–2019 Dodge / Ram 5.9L and 6.7L Cummins
+Part number: MG9029
+
+Highlights
+
+4.4:1 gear reduction
+Twice the torque of the factory starter
+3 in tool-steel driveshaft on bearings
+Integrated solenoid
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2964,
+    createdAt: 1789430400000,
+    name: "Mean Green Gear Reduction Starter — 2003–2006 Dodge Ram 5.9L Cummins — MG7892",
+    category: "electronics",
+    brand: "mean-green",
+    // dpp listing price for MEAN-MG7892.
+    price: 439,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "MG7892",
+    fitment: "2003–2006 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/mean-reduction-starter-03-06-cummins",
+    thumbnail: "/product-media/electronics/mean-green-gear-reduction-starter-mg7892/1.webp",
+    images: ["/product-media/electronics/mean-green-gear-reduction-starter-mg7892/1.webp"],
+    description: `Mean Green gear reduction starter with 4.4:1 reduction for the 2003–2006 Dodge Ram 5.9L Cummins.
+
+A gear reduction starter uses a smaller, faster motor through a reduction gearset. The result is more cranking torque from a lighter unit that draws less current — which is what you want on a cold morning with a battery that is no longer new.
+
+The Mean Green starter produces 100% more torque than the heavy factory unit it replaces, through a 4.4:1 gear reduction with roller bearing support and an integrated solenoid. A 3 in tool-steel driveshaft runs on bearings at both ends.
+
+Static compression is what defeats a tired starter on a diesel. More torque at the pinion is the direct answer to it.
+
+Specifications
+
+Manufacturer: Mean Green
+Type: Gear reduction starter
+Gear reduction: 4.4:1
+Torque: 100% more than the factory starter
+Driveshaft: 3 in tool steel, bearings both ends
+Solenoid: Integrated
+Application: 2003–2006 Dodge Ram 5.9L Cummins
+Part number: MG7892
+
+Highlights
+
+4.4:1 gear reduction
+Twice the torque of the factory starter
+3 in tool-steel driveshaft on bearings
+Integrated solenoid
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2965,
+    createdAt: 1789430400000,
+    name: "Powermaster 245 Amp High-Output Alternator — 2011–2018 Ford 6.7L Power Stroke — 51627W",
+    category: "electronics",
+    brand: "powermaster",
+    // dpp listing price for PM-51627W.
+    price: 496.81,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "51627W",
+    fitment: "2011–2018 Ford 6.7L Powerstroke.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-powermaster-245-amp-alternator-11-18-ford-67l-powerstroke",
+    thumbnail: "/product-media/electronics/powermaster-245-amp-alternator-51627w/1.webp",
+    images: ["/product-media/electronics/powermaster-245-amp-alternator-51627w/1.webp"],
+    description: `Powermaster 245 amp high-output alternator for the 2011–2018 Ford 6.7L Power Stroke.
+
+The factory alternator copes fine with a relatively standard truck that has not done many miles. The trouble arrives on two fronts at once: twelve-volt accessories get added, and the original unit gets old.
+
+This is Powermaster's 245 amp replacement — a straightforward capacity upgrade for a truck that has outgrown what it left the factory with.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+Specifications
+
+Manufacturer: Powermaster Performance
+Output: 245 amp
+Type: High-output replacement alternator
+Application: 2011–2018 Ford 6.7L Power Stroke
+Part number: 51627W
+
+Highlights
+
+245 amp output
+Headroom for added 12 V accessories
+Direct replacement
+Powermaster Performance
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2966,
+    createdAt: 1789430400000,
+    name: "Powermaster 245 Amp High-Output Alternator — 2007.5–2018 Dodge / Ram 6.7L Cummins — 51379W",
+    category: "electronics",
+    brand: "powermaster",
+    // dpp listing price for PM-51379W.
+    price: 519.17,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "51379W",
+    fitment: "2007.5–2018 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-powermaster-245-amp-alternator-075-18-dodge-67l-cummins",
+    thumbnail: "/product-media/electronics/powermaster-245-amp-alternator-51379w/1.webp",
+    images: ["/product-media/electronics/powermaster-245-amp-alternator-51379w/1.webp"],
+    description: `Powermaster 245 amp high-output alternator for the 2007.5–2018 Dodge / Ram 6.7L Cummins.
+
+The factory alternator copes fine with a relatively standard truck that has not done many miles. The trouble arrives on two fronts at once: twelve-volt accessories get added, and the original unit gets old.
+
+This is Powermaster's 245 amp replacement — a straightforward capacity upgrade for a truck that has outgrown what it left the factory with.
+
+A factory alternator is sized for a factory truck. Add lights, a winch, a compressor, a fridge, a second battery or a serious stereo and the margin disappears — the symptoms are dim lights at idle and batteries that never quite come back up.
+
+Specifications
+
+Manufacturer: Powermaster Performance
+Output: 245 amp
+Type: High-output replacement alternator
+Application: 2007.5–2018 Dodge / Ram 6.7L Cummins
+Part number: 51379W
+
+Highlights
+
+245 amp output
+Headroom for added 12 V accessories
+Direct replacement
+Powermaster Performance
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2967,
+    createdAt: 1789430400000,
+    name: "Powermaster Ultra Duty Replacement Starter — 2007–2016 Dodge / Ram 5.9L and 6.7L Cummins — 9058",
+    category: "electronics",
+    brand: "powermaster",
+    // dpp listing price for PM-9058.
+    price: 323.75,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "9058",
+    fitment: "2007 Dodge/Ram 5.9L Cummins; and 2007.5–2016 Dodge/Ram 6.7L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/powermaster-starter-07-16-cummins",
+    thumbnail: "/product-media/electronics/powermaster-ultra-duty-starter-9058/1.webp",
+    images: ["/product-media/electronics/powermaster-ultra-duty-starter-9058/1.webp"],
+    description: `Powermaster Ultra Duty gear reduction starter, 5.5:1 with 260 lb-ft, for the 2007–2016 Dodge / Ram 5.9L and 6.7L Cummins.
+
+A Cummins ready for a new starter does not always mean the starter — tired injectors, a worn injection pump or low battery voltage all look the same from the driver's seat. More often than not, though, the starter is the part on its way out.
+
+Since it has to come off either way, the question is what goes back on. An OE-quality replacement puts the truck back where it was; the Ultra Duty improves on it.
+
+Powermaster's Ultra Duty starters use a 5.5:1 gear reduction with a 3.6 horsepower motor producing 260 lb-ft of torque — faster, more reliable starts than the unit that came out.
+
+Specifications
+
+Manufacturer: Powermaster Performance
+Series: Ultra Duty
+Gear reduction: 5.5:1
+Motor: 3.6 hp
+Torque: 260 lb-ft
+Application: 2007–2016 Dodge / Ram 5.9L and 6.7L Cummins
+Part number: 9058
+
+Highlights
+
+5.5:1 gear reduction
+3.6 hp motor, 260 lb-ft
+Faster, more reliable starts
+Powermaster Ultra Duty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2968,
+    createdAt: 1789430400000,
+    name: "Powermaster Ultra Duty Replacement Starter — 1994–2002 Dodge Ram 5.9L Cummins — 9053",
+    category: "electronics",
+    brand: "powermaster",
+    // dpp listing price for PM-9053.
+    price: 266.39,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "9053",
+    fitment: "1994–2002 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/powermaster-starter-94-02-cummins",
+    thumbnail: "/product-media/electronics/powermaster-ultra-duty-starter-9053/1.webp",
+    images: ["/product-media/electronics/powermaster-ultra-duty-starter-9053/1.webp"],
+    description: `Powermaster Ultra Duty gear reduction starter, 5.5:1 with 260 lb-ft, for the 1994–2002 Dodge Ram 5.9L Cummins.
+
+A Cummins cranking longer than it used to before it fires does not always mean the starter — tired injectors, a worn injection pump or low battery voltage all look the same from the driver's seat. More often than not, though, the starter is the part on its way out.
+
+Since it has to come off either way, the question is what goes back on. An OE-quality replacement puts the truck back where it was; the Ultra Duty improves on it.
+
+Powermaster's Ultra Duty starters use a 5.5:1 gear reduction with a 3.6 horsepower motor producing 260 lb-ft of torque — faster, more reliable starts than the unit that came out.
+
+Specifications
+
+Manufacturer: Powermaster Performance
+Series: Ultra Duty
+Gear reduction: 5.5:1
+Motor: 3.6 hp
+Torque: 260 lb-ft
+Application: 1994–2002 Dodge Ram 5.9L Cummins
+Part number: 9053
+
+Highlights
+
+5.5:1 gear reduction
+3.6 hp motor, 260 lb-ft
+Faster, more reliable starts
+Powermaster Ultra Duty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2969,
+    createdAt: 1789430400000,
+    name: "Powermaster Ultra Duty Replacement Starter — 2003–2006 Dodge Ram 5.9L Cummins — 9054",
+    category: "electronics",
+    brand: "powermaster",
+    // dpp listing price for PM-9054.
+    price: 280,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "9054",
+    fitment: "2003–2006 Dodge/Ram 5.9L Cummins.",
+    freightNotes: "Ships as a parcel. Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/powermaster-starter-03-06-cummins",
+    thumbnail: "/product-media/electronics/powermaster-ultra-duty-starter-9054/1.webp",
+    images: ["/product-media/electronics/powermaster-ultra-duty-starter-9054/1.webp"],
+    description: `Powermaster Ultra Duty gear reduction starter, 5.5:1 with 260 lb-ft, for the 2003–2006 Dodge Ram 5.9L Cummins.
+
+A Cummins cranking longer than it used to before it fires does not always mean the starter — tired injectors, a worn injection pump or low battery voltage all look the same from the driver's seat. More often than not, though, the starter is the part on its way out.
+
+Since it has to come off either way, the question is what goes back on. An OE-quality replacement puts the truck back where it was; the Ultra Duty improves on it.
+
+Powermaster's Ultra Duty starters use a 5.5:1 gear reduction with a 3.6 horsepower motor producing 260 lb-ft of torque — faster, more reliable starts than the unit that came out.
+
+Specifications
+
+Manufacturer: Powermaster Performance
+Series: Ultra Duty
+Gear reduction: 5.5:1
+Motor: 3.6 hp
+Torque: 260 lb-ft
+Application: 2003–2006 Dodge Ram 5.9L Cummins
+Part number: 9054
+
+Highlights
+
+5.5:1 gear reduction
+3.6 hp motor, 260 lb-ft
+Faster, more reliable starts
+Powermaster Ultra Duty
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2970,
+    createdAt: 1789430400000,
+    name: "AEV IFS Skid Plate Kit, 4 mm Stamped Steel — 2020–2024 Chevrolet Silverado HD / GMC Sierra HD 6.6L Duramax — 57060001AA",
+    category: "4x4-accessories",
+    brand: "aev",
+    // dpp listing price for AEV-57060001AA.
+    price: 475,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57060001AA",
+    fitment: "2020–2024 Chevrolet Silverado HD and GMC Sierra HD with the 6.6L Duramax.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-aev-ifs-skid-plate-kit-20-24-gm-66l-duramax-silverado-hd-sierra-hd",
+    thumbnail: "/product-media/4x4-accessories/aev-ifs-skid-plate-kit-57060001aa/1.webp",
+    images: ["/product-media/4x4-accessories/aev-ifs-skid-plate-kit-57060001aa/1.webp"],
+    description: `AEV 4 mm stamped steel IFS skid plate kit protecting the front axle and steering on the 2020–2024 Silverado HD / Sierra HD 6.6L Duramax.
+
+Undercarriage damage is the cheapest thing to prevent and among the most expensive to repair. One badly placed rock into a pan or a differential housing ends a trip, and often ends it a long way from a workshop.
+
+The independent front suspension and the steering components are among the most exposed parts under a heavy-duty truck, and they are the ones this kit covers.
+
+It is built from 4 mm stamped steel, and it is shaped rather than simply bolted flat, so it shields the components without taking ground clearance away.
+
+Specifications
+
+Manufacturer: AEV (American Expedition Vehicles)
+Type: IFS skid plate kit
+Material: 4 mm stamped steel
+Protects: Front axle and steering suspension
+Ground clearance: Unchanged
+Application: 2020–2024 Silverado HD / Sierra HD 6.6L Duramax
+Part number: 57060001AA
+
+Highlights
+
+4 mm stamped steel construction
+Covers front axle and steering
+No loss of ground clearance
+AEV
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2971,
+    createdAt: 1789430400000,
+    name: "AEV Exhaust / Transmission Skid Plate Kit, 4 mm Stamped Steel — 2020–2024 GM 2500HD / 3500HD 6.6L Duramax — 57060002AA",
+    category: "4x4-accessories",
+    brand: "aev",
+    // dpp listing price for AEV-57060002AA.
+    price: 500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57060002AA",
+    fitment: "2020–2024 Chevrolet Silverado 2500HD / 3500HD and GMC Sierra 2500HD / 3500HD with the 6.6L Duramax.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-aev-exhausttransmission-skid-plate-kit-20-24-gm-66l-duramax-silverado-hd-sierra-hd",
+    thumbnail: "/product-media/4x4-accessories/aev-exhaust-transmission-skid-plate-kit-57060002aa/1.webp",
+    images: ["/product-media/4x4-accessories/aev-exhaust-transmission-skid-plate-kit-57060002aa/1.webp"],
+    description: `AEV 4 mm stamped steel exhaust and transmission skid plate kit for the 2020–2024 GM 2500HD / 3500HD 6.6L Duramax.
+
+Undercarriage damage is the cheapest thing to prevent and among the most expensive to repair. One badly placed rock into a pan or a differential housing ends a trip, and often ends it a long way from a workshop.
+
+The exhaust and the transmission sit low and central on a heavy-duty truck, which makes them the parts most likely to find a rock the driver did not.
+
+This kit is 4 mm stamped steel, shaped to shield those areas without giving up ground clearance to do it.
+
+Specifications
+
+Manufacturer: AEV (American Expedition Vehicles)
+Type: Exhaust and transmission skid plate kit
+Material: 4 mm stamped steel
+Protects: Exhaust and transmission
+Ground clearance: Unchanged
+Application: 2020–2024 GM 2500HD / 3500HD 6.6L Duramax
+Part number: 57060002AA
+
+Highlights
+
+4 mm stamped steel construction
+Covers exhaust and transmission
+No loss of ground clearance
+AEV
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2972,
+    createdAt: 1789430400000,
+    name: "AEV IFS Skid Plate Kit, Hot-Stamped Boron Steel — 2020–2024 Chevrolet Silverado 1500 / GMC Sierra 1500 3.0L Duramax — 56060001AA",
+    category: "4x4-accessories",
+    brand: "aev",
+    // dpp listing price for AEV-56060001AA.
+    price: 279,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "56060001AA",
+    fitment: "2020–2024 Chevrolet Silverado 1500 and GMC Sierra 1500 with the 3.0L Duramax.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-aev-ifs-skid-plate-kit-20-24-gm-1500-30-duramax",
+    thumbnail: "/product-media/4x4-accessories/aev-ifs-skid-plate-kit-56060001aa/1.webp",
+    images: ["/product-media/4x4-accessories/aev-ifs-skid-plate-kit-56060001aa/1.webp"],
+    description: `AEV hot-stamped boron steel IFS skid plate kit for the 2020–2024 Silverado 1500 / Sierra 1500 3.0L Duramax.
+
+Undercarriage damage is the cheapest thing to prevent and among the most expensive to repair. One badly placed rock into a pan or a differential housing ends a trip, and often ends it a long way from a workshop.
+
+This kit covers the front axle and the steering suspension — the components that take the hit first when the ground comes up faster than expected.
+
+AEV use hot-stamped boron steel: very high yield strength for its weight, and hard enough to resist gouging rather than just denting. That combination is why these plates are not the slabs of mild steel that cost you ground clearance.
+
+They are developed, tested and validated to the same standard as an OEM part, which on a skid plate matters in ways that are easy to overlook — a plate that blocks airflow or traps debris creates a problem rather than solving one.
+
+Specifications
+
+Manufacturer: AEV (American Expedition Vehicles)
+Type: IFS skid plate kit
+Material: Hot-stamped boron steel
+Protects: Front axle and steering suspension
+Ground clearance: Unchanged
+Application: 2020–2024 Silverado 1500 / Sierra 1500 3.0L Duramax
+Part number: 56060001AA
+
+Highlights
+
+Hot-stamped boron steel
+Covers front axle and steering
+No loss of ground clearance
+Validated to OEM standard
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2973,
+    createdAt: 1789430400000,
+    name: "AEV Rear Differential Skid Plate Kit, Hot-Stamped Boron Steel — 2020–2024 Chevrolet Silverado 1500 / GMC Sierra 1500 3.0L Duramax — 56060004AA",
+    category: "4x4-accessories",
+    brand: "aev",
+    // dpp listing price for AEV-56060004AA.
+    price: 389,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "56060004AA",
+    fitment: "2020–2024 Chevrolet Silverado 1500 and GMC Sierra 1500 with the 3.0L Duramax.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-aev-rear-differential-skid-plate-kit-20-24-gm-30l-duramax-1500",
+    thumbnail: "/product-media/4x4-accessories/aev-rear-differential-skid-plate-kit-56060004aa/1.webp",
+    images: ["/product-media/4x4-accessories/aev-rear-differential-skid-plate-kit-56060004aa/1.webp"],
+    description: `AEV hot-stamped boron steel rear differential skid plate kit for the 2020–2024 Silverado 1500 / Sierra 1500 3.0L Duramax.
+
+A rear differential housing is a large, round, low target, and debris hitting the wrong spot on it turns a weekend into a recovery.
+
+AEV use hot-stamped boron steel: very high yield strength for its weight, and hard enough to resist gouging rather than just denting. That combination is why these plates are not the slabs of mild steel that cost you ground clearance.
+
+They are developed, tested and validated to the same standard as an OEM part, which on a skid plate matters in ways that are easy to overlook — a plate that blocks airflow or traps debris creates a problem rather than solving one.
+
+Specifications
+
+Manufacturer: AEV (American Expedition Vehicles)
+Type: Rear differential skid plate kit
+Material: Hot-stamped boron steel
+Protects: Rear differential housing
+Ground clearance: Unchanged
+Application: 2020–2024 Silverado 1500 / Sierra 1500 3.0L Duramax
+Part number: 56060004AA
+
+Highlights
+
+Hot-stamped boron steel
+Covers the rear differential
+Will not block airflow or trap debris
+Validated to OEM standard
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2974,
+    createdAt: 1789430400000,
+    name: "Westin HDX 1-Piece Grille Guard, Polished stainless steel — 2006–2009 Dodge Ram 2500 / 3500 — 57-1950",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-1950.
+    price: 2006.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-1950",
+    fitment: "2006–2009 Dodge Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-1-piece-grille-guard-06-09-dodge-ram-2500-3500",
+    thumbnail: "/product-media/bumper/westin-hdx-1-piece-grille-guard-57-1950/1.webp",
+    images: ["/product-media/bumper/westin-hdx-1-piece-grille-guard-57-1950/1.webp"],
+    description: `Westin HDX 1-piece grille guard in polished stainless steel for the 2006–2009 Dodge Ram 2500 / 3500.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in polished stainless steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 1-Piece
+Finish: Polished stainless steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Application: 2006–2009 Dodge Ram 2500 / 3500
+Part number: 57-1950
+
+Highlights
+
+HDX 1-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Polished stainless steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2975,
+    createdAt: 1789430400000,
+    name: "Westin HDX 1-Piece Grille Guard, Polished stainless steel — 2019–2024 Ram 2500 / 3500 — 57-4020",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-4020.
+    price: 2006.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-4020",
+    fitment: "2019–2024 Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-1-piece-grille-guard-19-24-ram-2500-3500",
+    thumbnail: "/product-media/bumper/westin-hdx-1-piece-grille-guard-57-4020/1.webp",
+    images: ["/product-media/bumper/westin-hdx-1-piece-grille-guard-57-4020/1.webp"],
+    description: `Westin HDX 1-piece grille guard in polished stainless steel for the 2019–2024 Ram 2500 / 3500.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in polished stainless steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 1-Piece
+Finish: Polished stainless steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Application: 2019–2024 Ram 2500 / 3500
+Part number: 57-4020
+
+Highlights
+
+HDX 1-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Polished stainless steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2976,
+    createdAt: 1789430400000,
+    name: "Westin HDX 1-Piece Grille Guard, Black steel — 2011–2016 Ford F-250 / F-350 Super Duty — 57-2375",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-2375.
+    price: 1146.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-2375",
+    fitment: "2011–2016 Ford F-250 / F-350 Super Duty.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-1-piece-grille-guard-11-16-ford-f-320-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-1-piece-grille-guard-57-2375/1.webp",
+    images: ["/product-media/bumper/westin-hdx-1-piece-grille-guard-57-2375/1.webp"],
+    description: `Westin HDX 1-piece grille guard in black steel for the 2011–2016 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in black steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 1-Piece
+Finish: Black steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Application: 2011–2016 Ford F-250 / F-350 Super Duty
+Part number: 57-2375
+
+Highlights
+
+HDX 1-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Black steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2977,
+    createdAt: 1789430400000,
+    name: "Westin HDX 1-Piece Grille Guard, Polished stainless steel — 2011–2016 Ford F-250 / F-350 Super Duty — 57-2370",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-2370.
+    price: 2006.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-2370",
+    fitment: "2011–2016 Ford F-250 / F-350 Super Duty.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-1-piece-grille-guard-11-16-ford-f-320-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-1-piece-grille-guard-57-2370/1.webp",
+    images: ["/product-media/bumper/westin-hdx-1-piece-grille-guard-57-2370/1.webp"],
+    description: `Westin HDX 1-piece grille guard in polished stainless steel for the 2011–2016 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in polished stainless steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 1-Piece
+Finish: Polished stainless steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Application: 2011–2016 Ford F-250 / F-350 Super Duty
+Part number: 57-2370
+
+Highlights
+
+HDX 1-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Polished stainless steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2978,
+    createdAt: 1789430400000,
+    name: "Westin HDX 1-Piece Grille Guard, Black steel — 2017–2022 Ford F-250 / F-350 Super Duty — 57-3945",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-3945.
+    price: 1146.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-3945",
+    fitment: "2017–2022 Ford F-250 / F-350 Super Duty. Front camera compatible — this is the centre-cutout version, for trucks with a front camera.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-1-piece-grille-guard-17-22-ford-f-250-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-1-piece-grille-guard-57-3945/1.webp",
+    images: ["/product-media/bumper/westin-hdx-1-piece-grille-guard-57-3945/1.webp"],
+    description: `Westin HDX 1-piece grille guard in black steel for the 2017–2022 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+Front camera compatible — this is the centre-cutout version, for trucks with a front camera.
+
+This one is finished in black steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 1-Piece
+Finish: Black steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Application: 2017–2022 Ford F-250 / F-350 Super Duty
+Part number: 57-3945
+
+Highlights
+
+HDX 1-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Black steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2979,
+    createdAt: 1789430400000,
+    name: "Westin HDX 1-Piece Grille Guard, Polished stainless steel — 2017–2022 Ford F-250 / F-350 Super Duty — 57-3900",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-3900.
+    price: 2006.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-3900",
+    fitment: "2017–2022 Ford F-250 / F-350 Super Duty. Standard mesh.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-1-piece-grille-guard-17-22-ford-f-250-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-1-piece-grille-guard-57-3900/1.webp",
+    images: ["/product-media/bumper/westin-hdx-1-piece-grille-guard-57-3900/1.webp"],
+    description: `Westin HDX 1-piece grille guard in polished stainless steel for the 2017–2022 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+Standard mesh.
+
+This one is finished in polished stainless steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 1-Piece
+Finish: Polished stainless steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Application: 2017–2022 Ford F-250 / F-350 Super Duty
+Part number: 57-3900
+
+Highlights
+
+HDX 1-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Polished stainless steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2980,
+    createdAt: 1789430400000,
+    name: "Westin HDX 3-Piece Grille Guard, Polished stainless steel — 2019–2024 Ram 2500 / 3500 — 57-24020",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-24020.
+    price: 1604.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-24020",
+    fitment: "2019–2024 Ram 2500 / 3500.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-3-piece-grille-guard-19-24-ram-2500-3500",
+    thumbnail: "/product-media/bumper/westin-hdx-3-piece-grille-guard-57-24020/1.webp",
+    images: ["/product-media/bumper/westin-hdx-3-piece-grille-guard-57-24020/1.webp"],
+    description: `Westin HDX 3-piece grille guard in polished stainless steel for the 2019–2024 Ram 2500 / 3500.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in polished stainless steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 3-Piece
+Finish: Polished stainless steel
+Tubing: Heavy-duty 2 in steel
+Construction: Reinforced centre with bolt-on headlight guards
+Application: 2019–2024 Ram 2500 / 3500
+Part number: 57-24020
+
+Highlights
+
+HDX 3-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Polished stainless steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2981,
+    createdAt: 1789430400000,
+    name: "Westin HDX 3-Piece Grille Guard, Black steel — 2011–2016 Ford F-250 / F-350 Super Duty — 57-22375",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-22375.
+    price: 917.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-22375",
+    fitment: "2011–2016 Ford F-250 / F-350 Super Duty.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-3-piece-grille-guard-11-16-ford-f-250-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-3-piece-grille-guard-57-22375/1.webp",
+    images: ["/product-media/bumper/westin-hdx-3-piece-grille-guard-57-22375/1.webp"],
+    description: `Westin HDX 3-piece grille guard in black steel for the 2011–2016 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in black steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 3-Piece
+Finish: Black steel
+Tubing: Heavy-duty 2 in steel
+Construction: Reinforced centre with bolt-on headlight guards
+Application: 2011–2016 Ford F-250 / F-350 Super Duty
+Part number: 57-22375
+
+Highlights
+
+HDX 3-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Black steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2982,
+    createdAt: 1789430400000,
+    name: "Westin HDX 3-Piece Grille Guard, Polished stainless steel — 2011–2016 Ford F-250 / F-350 Super Duty — 57-22370",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-22370.
+    price: 1604.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-22370",
+    fitment: "2011–2016 Ford F-250 / F-350 Super Duty.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-3-piece-grille-guard-11-16-ford-f-250-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-3-piece-grille-guard-57-22370/1.webp",
+    images: ["/product-media/bumper/westin-hdx-3-piece-grille-guard-57-22370/1.webp"],
+    description: `Westin HDX 3-piece grille guard in polished stainless steel for the 2011–2016 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in polished stainless steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 3-Piece
+Finish: Polished stainless steel
+Tubing: Heavy-duty 2 in steel
+Construction: Reinforced centre with bolt-on headlight guards
+Application: 2011–2016 Ford F-250 / F-350 Super Duty
+Part number: 57-22370
+
+Highlights
+
+HDX 3-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Polished stainless steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2983,
+    createdAt: 1789430400000,
+    name: "Westin HDX 3-Piece Grille Guard, Black steel — 2017–2022 Ford F-250 / F-350 Super Duty — 57-23905",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-23905.
+    price: 917.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-23905",
+    fitment: "2017–2022 Ford F-250 / F-350 Super Duty. For trucks without a front camera or sensors. Camera-equipped trucks take part 57-23945.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-3-piece-grille-guard-17-22-ford-f-250-f-350",
+    thumbnail: "/product-media/bumper/westin-hdx-3-piece-grille-guard-57-23905/1.webp",
+    images: ["/product-media/bumper/westin-hdx-3-piece-grille-guard-57-23905/1.webp"],
+    description: `Westin HDX 3-piece grille guard in black steel for the 2017–2022 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+For trucks without a front camera or sensors. Camera-equipped trucks take part 57-23945.
+
+This one is finished in black steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 3-Piece
+Finish: Black steel
+Tubing: Heavy-duty 2 in steel
+Construction: Reinforced centre with bolt-on headlight guards
+Application: 2017–2022 Ford F-250 / F-350 Super Duty
+Part number: 57-23905
+
+Highlights
+
+HDX 3-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Black steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2984,
+    createdAt: 1789430400000,
+    name: "Westin HDX 3-Piece Grille Guard, Black steel — 2017–2022 Ford F-250 / F-350 Super Duty — 57-23945",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-23945.
+    price: 917.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-23945",
+    fitment: "2017–2022 Ford F-250 / F-350 Super Duty. For trucks with a front camera.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-3-piece-grille-guard-17-22-ford-f-250-f-350",
+    thumbnail: "/product-media/bumper/westin-hdx-3-piece-grille-guard-57-23945/1.webp",
+    images: ["/product-media/bumper/westin-hdx-3-piece-grille-guard-57-23945/1.webp"],
+    description: `Westin HDX 3-piece grille guard in black steel for the 2017–2022 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+For trucks with a front camera.
+
+This one is finished in black steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: 3-Piece
+Finish: Black steel
+Tubing: Heavy-duty 2 in steel
+Construction: Reinforced centre with bolt-on headlight guards
+Application: 2017–2022 Ford F-250 / F-350 Super Duty
+Part number: 57-23945
+
+Highlights
+
+HDX 3-Piece design
+Heavy-duty 2 in steel tubing
+Full punch plate grille
+Black steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2985,
+    createdAt: 1789430400000,
+    name: "Westin HDX Winch Mount Grille Guard, Black steel — 2011–2016 Ford F-250 / F-350 Super Duty — 57-92375",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-92375.
+    price: 1593.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-92375",
+    fitment: "2011–2016 Ford F-250 / F-350 Super Duty.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-winch-mount-grille-guard-11-16-ford-f-250-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-winch-mount-grille-guard-57-92375/1.webp",
+    images: ["/product-media/bumper/westin-hdx-winch-mount-grille-guard-57-92375/1.webp"],
+    description: `Westin HDX winch mount grille guard in black steel for the 2011–2016 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+This is the winch mount version — the same fully welded one-piece construction in 2 in steel tubing, with the mounting built in so a winch can be carried behind the guard rather than instead of it.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in black steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: Winch Mount
+Finish: Black steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Winch mount: Integrated
+Application: 2011–2016 Ford F-250 / F-350 Super Duty
+Part number: 57-92375
+
+Highlights
+
+HDX Winch Mount design
+Heavy-duty 2 in steel tubing
+Integrated winch mounting
+Black steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2986,
+    createdAt: 1789430400000,
+    name: "Westin HDX Winch Mount Grille Guard, Black steel — 2020–2022 Ford F-250 / F-350 Super Duty — 57-94015",
+    category: "bumper",
+    brand: "westin",
+    // dpp listing price for WES-57-94015.
+    price: 1593.99,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "57-94015",
+    fitment: "2020–2022 Ford F-250 / F-350 Super Duty.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/westin-hdx-winch-mount-grille-guard-20-22-ford-f-250-f-350-super-duty",
+    thumbnail: "/product-media/bumper/westin-hdx-winch-mount-grille-guard-57-94015/1.webp",
+    images: ["/product-media/bumper/westin-hdx-winch-mount-grille-guard-57-94015/1.webp"],
+    description: `Westin HDX winch mount grille guard in black steel for the 2020–2022 Ford F-250 / F-350 Super Duty.
+
+A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
+
+This is the winch mount version — the same fully welded one-piece construction in 2 in steel tubing, with the mounting built in so a winch can be carried behind the guard rather than instead of it.
+
+Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
+
+This one is finished in black steel.
+
+Specifications
+
+Manufacturer: Westin
+Series: HDX
+Design: Winch Mount
+Finish: Black steel
+Tubing: Heavy-duty 2 in steel
+Construction: Fully welded one piece
+Winch mount: Integrated
+Application: 2020–2022 Ford F-250 / F-350 Super Duty
+Part number: 57-94015
+
+Highlights
+
+HDX Winch Mount design
+Heavy-duty 2 in steel tubing
+Integrated winch mounting
+Black steel
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2987,
+    createdAt: 1789430400000,
+    name: "T-Rex Upper Class Series Polished Mesh Replacement Grille — 2013–2018 Ram 2500 / 3500 6.7L Cummins — 54452",
+    category: "body-parts",
+    brand: "t-rex-grilles",
+    // dpp listing price for TREX-54452.
+    price: 1889.5,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "54452",
+    fitment: "2013–2018 Ram 2500 / 3500 with the 6.7L Cummins.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-19003-t-rex-54452-upper-class-series-polished-mesh-replacement-grille-13-18-67l-ram-cummins-aspx",
+    thumbnail: "/product-media/body-parts/t-rex-upper-class-polished-mesh-grille-54452/1.webp",
+    images: ["/product-media/body-parts/t-rex-upper-class-polished-mesh-grille-54452/1.webp"],
+    description: `T-Rex Upper Class Series polished mesh direct-replacement grille for the 2013–2018 Ram 6.7L Cummins.
+
+Changing the grille is the shortest route to changing how a truck looks, which is why it is usually the first thing an owner does and the thing they notice every time they walk up to it.
+
+This is a direct replacement rather than an overlay or an insert, so the factory grille comes out whole and nothing gets cut to make it fit.
+
+T-Rex build the Upper Class Series in polished mesh with longevity in mind — a finish that still looks right after a few winters rather than only in the first photograph.
+
+Specifications
+
+Manufacturer: T-Rex Grilles
+Series: Upper Class
+Style: Polished mesh
+Type: Direct replacement — no cutting
+Application: 2013–2018 Ram 2500 / 3500 6.7L Cummins
+Part number: 54452
+
+Highlights
+
+Direct replacement, no cutting
+Polished mesh finish
+T-Rex Upper Class Series
+2013–2018 Ram 6.7L Cummins
+
+Warranty
+Manufacturer Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2988,
+    createdAt: 1789430400000,
+    name: "Royalty Core Classic RC1 Grille — 2020–2022 Ford F-250 / F-350 / F-450 — 16039",
+    category: "body-parts",
+    brand: "royalty-core",
+    // dpp listing price for ROC-16039.
+    price: 1079,
+    stock: true,
+    condition: "brand-new",
+    warranty: "Manufacturer Warranty",
+    location: "our supplier network",
+    partNumber: "16039",
+    fitment: "2020–2022 Ford F-250, F-350 and F-450.",
+    freightNotes: "Ships by freight (oversized). Cost calculated by destination.",
+    warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
+    sourceUrl: "https://www.dieselpowerproducts.com/products/p-royalty-core-rc4-doublex-grille-with-led-light-bars-20-22-ford-f-250f-350f-450",
+    thumbnail: "/product-media/body-parts/royalty-core-classic-rc1-grille-16039/1.webp",
+    images: ["/product-media/body-parts/royalty-core-classic-rc1-grille-16039/1.webp"],
+    description: `Royalty Core Classic RC1 diamond mesh grille for the 2020–2022 Ford F-250 / F-350 / F-450.
+
+The RC1 is Royalty Core's classic design — a sleek, dynamic look for an owner who wants the front of the truck to say something specific.
+
+It is built around their race-proven diamond mesh, which is a structural choice as much as a visual one: the mesh pattern is designed to keep air moving through to the radiator rather than standing in front of it.
+
+Royalty Core test these grilles for protection, appearance and performance before they are released, which is a reasonable thing to ask of a part bolted to the front of a working truck.
+
+Specifications
+
+Manufacturer: Royalty Core
+Series: Classic RC1
+Mesh: Race-proven diamond mesh
+Airflow: Designed to maintain radiator airflow
+Application: 2020–2022 Ford F-250 / F-350 / F-450
+Part number: 16039
+
+Highlights
+
+Classic RC1 design
+Race-proven diamond mesh
+Airflow-conscious pattern
+Royalty Core
+
+Warranty
+Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
