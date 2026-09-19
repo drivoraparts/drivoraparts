@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import Link from "next/link";
 
 import CountUp from "@/components/motion/CountUp";
+import MarketSwitcher from "./MarketSwitcher";
 import MarketplaceSearch from "./MarketplaceSearch";
 import { categories } from "@/lib/inventory/categories";
 import { getAllProducts } from "@/lib/inventory";
@@ -78,9 +79,14 @@ export default function CatalogHero({
         className="blueprint-ground blueprint-fade pointer-events-none absolute inset-0"
       />
 
-      <div className="relative mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+      <div className="relative mx-auto w-full max-w-6xl px-4 pb-14 pt-5 sm:px-6 sm:pb-20 sm:pt-7 lg:px-8">
+        {/* The same market bar every market view opens with, here with All
+            Products current: this page is the catalog those markets are
+            views of, and one tap from any of them. */}
+        <MarketSwitcher active="all" />
+
         <p
-          className="rise-in text-[11px] font-bold uppercase tracking-[0.28em] text-accent-on-dark"
+          className="rise-in mt-10 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-on-dark sm:mt-14"
           style={delay(0)}
         >
           The Marketplace

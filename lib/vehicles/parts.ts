@@ -17,18 +17,33 @@ import {
  * array and the page says so, rather than padding itself with near-misses.
  */
 
-const searchableText = (product: Product): string =>
+/**
+ * The text fitment is matched against: name and fitment, never description.
+ * Exported so the market views in lib/catalog/markets.ts match vehicles by
+ * exactly the same rule as these hubs -- two places deciding separately what
+ * "fits a Ranger" means is how the site starts contradicting itself.
+ */
+export const fitmentMatchText = (product: Product): string =>
   [product.name, product.fitment].filter(Boolean).join(" • ");
 
+export function matchesFitmentPatterns(
+  text: string,
+  include: RegExp[],
+  exclude?: RegExp[]
+): boolean {
+  if (!include.some((pattern) => pattern.test(text))) return false;
+  if (exclude?.some((pattern) => pattern.test(text))) return false;
+  return true;
+}
+
 export function getVehicleParts(platform: VehiclePlatform): Product[] {
-  return getAllProducts().filter((product) => {
-    const text = searchableText(product);
-
-    if (!platform.include.some((pattern) => pattern.test(text))) return false;
-    if (platform.exclude?.some((pattern) => pattern.test(text))) return false;
-
-    return true;
-  });
+  return getAllProducts().filter((product) =>
+    matchesFitmentPatterns(
+      fitmentMatchText(product),
+      platform.include,
+      platform.exclude
+    )
+  );
 }
 
 /**

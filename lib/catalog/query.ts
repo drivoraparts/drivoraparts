@@ -4,6 +4,8 @@ import {
   getCategory,
   getProductThumbnail,
 } from "@/lib/inventory";
+import { marketScope } from "@/lib/catalog/markets";
+import { CATALOG_DEFAULT_LIMIT } from "@/lib/catalog/query-options";
 import {
   matchesPriceFilter,
   type PriceFilterValue,
@@ -32,7 +34,9 @@ import {
  * -- server-rendered page one and every later fetch cannot disagree.
  */
 
-export const CATALOG_DEFAULT_LIMIT = 48;
+// Defined apart so the client feed can import them without this module --
+// see lib/catalog/query-options.ts. Re-exported so server callers are unchanged.
+export { CATALOG_DEFAULT_LIMIT, CONDITION_FILTERS } from "@/lib/catalog/query-options";
 const MAX_LIMIT = 96;
 const NEW_BADGE_WINDOW_DAYS = 14;
 
@@ -67,6 +71,14 @@ export type CatalogQueryInput = {
   condition?: string;
   /** "in-stock" hides listings not marked as stocked. Anything else is ignored. */
   availability?: string;
+  /**
+   * A market view ("usa", "australia", "uk") and optionally one of its
+   * vehicles -- see lib/catalog/markets.ts. A narrowing of this same
+   * catalog, never a separate one; "worldwide" and unknown keys narrow
+   * nothing.
+   */
+  market?: string;
+  vehicle?: string;
 };
 
 /**
@@ -99,13 +111,6 @@ export function conditionBucket(raw?: string): string {
   if (value.includes("brand-new") || value === "new") return "brand-new";
   return value;
 }
-
-/** The buckets offered as filter options, in the order they are shown. */
-export const CONDITION_FILTERS = [
-  { value: "brand-new", label: "Brand New" },
-  { value: "used", label: "Used" },
-  { value: "refurbished", label: "Refurbished" },
-] as const;
 
 export type CatalogProductPayload = {
   id: number;
@@ -167,6 +172,11 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   // Narrow by the explicit filters first so search only ranks candidates the
   // customer can actually see, and so fitment/category filtering keeps
   // working exactly as before alongside a query.
+  const scope = marketScope(input.market, input.vehicle);
+  if (scope) {
+    items = items.filter((p) => scope.has(p.id));
+  }
+
   if (category) {
     items = items.filter((p) => p.category === category);
   }

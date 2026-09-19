@@ -30,8 +30,8 @@ import { normalizeText } from "@/lib/catalog/search";
 import {
   CATALOG_DEFAULT_LIMIT,
   CONDITION_FILTERS,
-  type CatalogQueryResult,
-} from "@/lib/catalog/query";
+} from "@/lib/catalog/query-options";
+import type { CatalogQueryResult } from "@/lib/catalog/query";
 
 const PAGE_SIZE = CATALOG_DEFAULT_LIMIT;
 
@@ -92,6 +92,9 @@ export default function AllProductsFeed({
   initialQuery = "",
   initialCategory = "",
   initialData,
+  market = "",
+  vehicle = "",
+  categoryShortcuts,
 }: {
   /** Supplied by the server page from ?q=. Deliberately a prop rather than
    * useSearchParams(): that hook requires this component to sit inside its
@@ -106,6 +109,15 @@ export default function AllProductsFeed({
    * a normal page load, so the grid has real products in its very first HTML
    * and never has to render an empty "0 of 0" while a fetch is in flight. */
   initialData?: CatalogQueryResult;
+  /** Set by a market page (lib/catalog/markets.ts). Fixed for the life of the
+   *  page and sent with every request, so a market view is this same feed
+   *  narrowed, never a second catalog. Empty on /catalog/all. */
+  market?: string;
+  vehicle?: string;
+  /** Categories with listings in that market, in its own order, shown as
+   *  chips. They set the same state as the category dropdown, so the two can
+   *  never disagree about what is selected. */
+  categoryShortcuts?: { slug: string; name: string }[];
 }) {
   // Deliberately NOT read here (e.g. useRef(readSavedState())): sessionStorage
   // only exists in the browser, so a value read during the render that also
@@ -215,6 +227,8 @@ export default function AllProductsFeed({
     if (priceFilter !== "all") params.set("price", priceFilter);
     if (conditionFilter) params.set("condition", conditionFilter);
     if (sortFilter !== "newest") params.set("sort", sortFilter);
+    if (market) params.set("market", market);
+    if (vehicle) params.set("vehicle", vehicle);
 
     const controller = new AbortController();
     const deadline = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
@@ -239,6 +253,8 @@ export default function AllProductsFeed({
     priceFilter,
     conditionFilter,
     sortFilter,
+    market,
+    vehicle,
   ]);
 
   const fetchProducts = useCallback(
@@ -701,6 +717,54 @@ export default function AllProductsFeed({
           ) : null}
         </div>
       </div>
+
+      {/*
+        Systems, as chips, on a market page.
+
+        On a phone the category control otherwise sits inside the filter
+        sheet, out of sight -- and choosing a system is the very next step
+        after choosing a vehicle. These are the dropdown's state, not a copy
+        of it: pick Suspension here and the sheet says Suspension; clear it
+        there and the chip lets go. Only categories the market actually has
+        listings in are offered, so no chip opens onto an empty grid.
+      */}
+      {categoryShortcuts && categoryShortcuts.length > 1 ? (
+        <div
+          role="group"
+          aria-label="Filter by system"
+          className="catalog-chip-row -mx-3 mb-4 flex gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-x-visible sm:px-0 sm:pb-0"
+        >
+          {[{ slug: "", name: "All systems" }, ...categoryShortcuts].map(
+            (shortcut) => {
+              const active = categoryFilter === shortcut.slug;
+              return (
+                <button
+                  key={shortcut.slug || "all"}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => {
+                    // A second press on the active system lets go of it,
+                    // which is what someone pressing it again means.
+                    const next = active ? "" : shortcut.slug;
+                    if (next === categoryFilter) return;
+                    setCategoryFilter(next);
+                    // As the dropdown does: a brand chosen under one system
+                    // rarely exists under the next.
+                    setBrandFilter("");
+                  }}
+                  className={`shrink-0 touch-manipulation rounded-[2px] border px-3 py-1.5 text-xs font-semibold transition-colors duration-[var(--motion-duration-fast)] ${
+                    active
+                      ? "border-neutral-900 bg-neutral-900 text-white"
+                      : "border-neutral-300 bg-white text-neutral-700 hover:border-neutral-500 hover:text-neutral-900"
+                  }`}
+                >
+                  {shortcut.name}
+                </button>
+              );
+            }
+          )}
+        </div>
+      ) : null}
 
       {loading && products.length === 0 ? (
         <p className="text-sm text-gray-500">Loading products…</p>

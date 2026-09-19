@@ -23,6 +23,8 @@ export async function GET(request: NextRequest) {
     sort: params.get("sort") || "newest",
     condition: params.get("condition") || "",
     availability: params.get("availability") || "",
+    market: params.get("market") || "",
+    vehicle: params.get("vehicle") || "",
   });
 
   return NextResponse.json(result);
