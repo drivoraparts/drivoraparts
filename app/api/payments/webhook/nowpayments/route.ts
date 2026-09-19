@@ -41,13 +41,23 @@ export async function POST(req: Request) {
     const order = await getOrderById(result.orderId);
 
     if (result.status === "paid") {
-      if (order?.status === "paid" || result.duplicate) {
+      if (order?.status === "paid") {
         await logActivity("warn", "nowpayments.webhook_duplicate", {
           ip,
           orderId: result.orderId,
           paymentId: result.paymentId,
         });
         return NextResponse.json({ success: true, duplicate: true });
+      }
+
+      if (result.duplicate) {
+        // Payment row can be marked paid before order side-effects complete.
+        // If the order is still unpaid, retries must continue processing.
+        await logActivity("warn", "nowpayments.webhook_duplicate_unpaid_order", {
+          ip,
+          orderId: result.orderId,
+          paymentId: result.paymentId,
+        });
       }
 
       const payment = await findPaymentByOrderId(result.orderId);
