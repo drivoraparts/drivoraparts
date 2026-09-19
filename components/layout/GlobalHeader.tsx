@@ -9,7 +9,9 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { WISHLIST_CHANGE_EVENT, readWishlist } from "@/lib/wishlist";
 
 const NAV_LINKS = [
-  { href: "/catalog/all", label: "Shop" },
+  // The Shop Parts landing: the four markets first, then All Products and
+  // every category. Search still goes straight to /catalog/all (below).
+  { href: "/catalog", label: "Shop" },
   { href: "/vehicles", label: "By Vehicle" },
   { href: "/cart", label: "Cart" },
   { href: "/track-order", label: "Track Order" },
