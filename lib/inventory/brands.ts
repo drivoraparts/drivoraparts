@@ -197,6 +197,7 @@ export const brands: Brand[] = [
   { slug: "dobinsons", name: "Dobinsons", category: "suspension" },
   { slug: "bilstein", name: "Bilstein", category: "suspension" },
   { slug: "fox", name: "FOX", category: "suspension" },
+  { slug: "timbren", name: "Timbren", category: "suspension" },
   { slug: "rancho", name: "Rancho", category: "suspension" },
   { slug: "skyjacker", name: "Skyjacker", category: "suspension" },
   { slug: "supersprings", name: "SuperSprings", category: "suspension" },
@@ -366,4 +367,42 @@ export const brands: Brand[] = [
   { slug: "method-race-wheels", name: "Method Race Wheels", category: "wheels-tires" },
   { slug: "fuel-off-road", name: "Fuel Off-Road", category: "wheels-tires" },
   { slug: "universal", name: "Universal", category: "wheels-tires" },
+
+  /* ---------------------------------------------------------
+     Manufacturers identified during the ESS catalog recovery.
+     Every one of these was already the real maker of listings
+     we were filing under "Universal" or a vehicle marque; the
+     brand field now names them, so they need to resolve here
+     or a card would print the slug ("bmr-suspension") instead
+     of the name. Category is the one most of that brand's
+     listings sit in. Display names follow each manufacturer's
+     own spelling.
+  --------------------------------------------------------- */
+  { slug: "nrg", name: "NRG Innovations", category: "interior" },
+  { slug: "bmr-suspension", name: "BMR Suspension", category: "suspension" },
+  { slug: "qa1", name: "QA1", category: "suspension" },
+  { slug: "umi-performance", name: "UMI Performance", category: "suspension" },
+  { slug: "deatschwerks", name: "DeatschWerks", category: "engine" },
+  { slug: "ridetech", name: "Ridetech", category: "suspension" },
+  { slug: "tialsport", name: "TiAL Sport", category: "turbocharger" },
+  { slug: "spal", name: "SPAL", category: "aftermarket" },
+  { slug: "walbro", name: "Walbro", category: "engine" },
+  { slug: "mcleod-racing", name: "McLeod Racing", category: "transmission" },
+  { slug: "antigravity-batteries", name: "Antigravity Batteries", category: "electronics" },
+  { slug: "injector-dynamics", name: "Injector Dynamics", category: "engine" },
+  { slug: "sparco", name: "Sparco", category: "interior" },
+  { slug: "stainless-works", name: "Stainless Works", category: "engine" },
+  { slug: "weld", name: "Weld Racing", category: "aftermarket" },
+  { slug: "kooks-headers", name: "Kooks Headers", category: "engine" },
+  { slug: "manley-performance", name: "Manley Performance", category: "engine" },
+  { slug: "black-label-exhaust", name: "Black Label Exhaust", category: "engine" },
+  { slug: "carrillo", name: "CP-Carrillo", category: "engine" },
+  { slug: "circle-d", name: "Circle D Specialties", category: "transmission" },
+  { slug: "fast", name: "FAST", category: "engine" },
+  { slug: "cvf", name: "CVF Racing", category: "engine" },
+  { slug: "harrop", name: "Harrop", category: "engine" },
+  { slug: "magnaflow", name: "MagnaFlow", category: "engine" },
+  { slug: "k1-technology", name: "K1 Technology", category: "engine" },
+  { slug: "recaro", name: "Recaro", category: "interior" },
+  { slug: "wegner", name: "Wegner Automotive", category: "engine" },
 ];
