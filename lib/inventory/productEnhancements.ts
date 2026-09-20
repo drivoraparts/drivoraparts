@@ -368,6 +368,9 @@ const UNSUPPORTED_SPEC = [
   /^drivoraparts performance catalog$/i,
   /^new or low-mile takeout \(unit dependent\)$/i,
   /^performance \/ swap component$/i,
+  // Says the photograph is of the unit being sold. True for the listings shot
+  // in-house, unverified for the rest, and not something to assert as a spec.
+  /^inspected and photographed as the actual unit/i,
 ];
 
 function specRowsFromDescription(product: Product, section: string) {
@@ -429,7 +432,35 @@ function buildSpecRows(
 export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
   const description = product.description ?? "";
   const sections = splitDescriptionSections(description);
-  const specRows = buildSpecRows(product, sections.specifications);
+
+  /*
+   * Some products carry their attributes loose in the body rather than under a
+   * Specifications heading -- a used gearbox stating its casting number, a tyre
+   * its size and category. Those are read too, but only when there is no
+   * Specifications section to read instead, and the lines are then taken out of
+   * the narrative so the page does not state them on two tabs.
+   */
+  const fromBody = sections.specifications.trim() ? "" : sections.descriptionBody;
+  const specRows = buildSpecRows(product, sections.specifications || fromBody);
+  /*
+   * Strip whenever there are rows, not only when they came from the body: a
+   * few products state an attribute under Specifications AND again in their
+   * opening paragraph, which read as the page repeating itself.
+   */
+  const descriptionBody = specRows.length > 0
+    ? sections.descriptionBody
+        .split("\n")
+        // Matched on the label, not the whole line: the body often ends the
+        // sentence with a full stop that the captured value does not carry,
+        // and an exact comparison left the line sitting under its own row.
+        .filter((line) => {
+          const bare = line.trim().replace(/^[•\-*]\s*/, "").toLowerCase();
+          return !specRows.some((r) => bare.startsWith(`${r.label.toLowerCase()}:`));
+        })
+        .join("\n")
+        .replace(/\n{3,}/g, "\n\n")
+        .trim()
+    : sections.descriptionBody;
 
   return {
     horsepower: resolveProductHorsepower(product),
@@ -438,7 +469,7 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
     warranty: resolveProductWarranty(product, description),
     rating: resolveProductRating(product),
     reviewCount: resolveProductReviewCount(product),
-    descriptionBody: sections.descriptionBody,
+    descriptionBody,
     /*
      * Attributes become rows; feature bullets stay prose. When the spec lines
      * are parsed out of the description they must not also appear below the
