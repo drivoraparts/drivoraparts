@@ -145,15 +145,14 @@ function splitDescriptionSections(description: string) {
   const warranty = getSection("Warranty");
   const shipping = getSection("Shipping");
 
-  const specBlocks = [specifications, highlights, keyFeatures]
-    .filter(Boolean)
-    .join("\n\n");
-
   const shippingAndWarranty = [warranty, shipping].filter(Boolean).join("\n\n");
 
   return {
     descriptionBody: descriptionBody || description.trim(),
-    specifications: specBlocks,
+    /** The Specifications section on its own -- see buildSpecRows. */
+    specifications,
+    /** Feature bullets, which are claims about the part rather than attributes. */
+    featureBlocks: [highlights, keyFeatures].filter(Boolean).join("\n\n"),
     shippingAndWarranty,
   };
 }
@@ -310,7 +309,96 @@ const humanizeKey = (key: string) =>
     .replace(/([a-z])([A-Z])/g, "$1 $2")
     .replace(/\b\w/g, (c) => c.toUpperCase());
 
-function buildSpecRows(product: Product): { label: string; value: string }[] {
+/*
+ * "Manufacturer: BD Diesel Performance" written into a description is an
+ * attribute, not prose, and 2,351 products carry 11,000 such lines. They were
+ * rendered as a wall of text because the only structured source was the
+ * `specifications` field, which the ESS research filled and nothing else has.
+ *
+ * Reading them back out here rather than rewriting the catalog is deliberate:
+ * most of these products are object literals inside a five-megabyte
+ * TypeScript source file, and the descriptions are the authored original. A
+ * parser keeps one source of truth; a migration would create two that drift.
+ */
+const SPEC_LINE = /^\s*[•\-*]?\s*([A-Za-z][A-Za-z0-9 /&()'.+-]{1,34}):\s*(.+?)\s*$/;
+
+const normalizeValue = (value: unknown) =>
+  String(value ?? "").toLowerCase().replace(/\s+/g, " ").replace(/[.,;]+$/, "").trim();
+
+/**
+ * Fields the product page already shows on another tab. A spec line is dropped
+ * only when its text matches one of them exactly -- anything that differs is
+ * kept, because a near-match is usually extra detail and losing it to tidy the
+ * page would trade information for neatness.
+ */
+function shownElsewhere(product: Product, key: string): string[] {
+  switch (key.toLowerCase()) {
+    case "part number":
+    case "part no":
+      return [product.partNumber ?? ""];
+    case "application":
+    case "applications":
+    case "vehicle":
+    case "fitment":
+      return [product.fitment ?? ""];
+    case "drivetrain":
+      return [product.drivetrain ?? ""];
+    case "core charge":
+      return [product.coreCharge ?? ""];
+    case "warranty":
+      return [product.warranty ?? ""];
+    case "included":
+    case "includes":
+      return product.included ?? [];
+    default:
+      return [];
+  }
+}
+
+/*
+ * Boilerplate from the ESS import that carries no information about the part.
+ * It was removed from 1,095 descriptions; the 124 still holding it are the
+ * listings whose identity is unresolved and which are waiting on evidence.
+ * Parsing lifts a line out of a paragraph and gives it a label and its own
+ * row, so without this the claim we deleted everywhere else would end up
+ * *more* prominent on exactly the products we trust least.
+ */
+const UNSUPPORTED_SPEC = [
+  /^confirm vehicle fitment at checkout$/i,
+  /^drivoraparts performance catalog$/i,
+  /^new or low-mile takeout \(unit dependent\)$/i,
+  /^performance \/ swap component$/i,
+];
+
+function specRowsFromDescription(product: Product, section: string) {
+  const rows: { label: string; value: string }[] = [];
+  const seen = new Set<string>();
+
+  for (const line of section.split("\n")) {
+    const match = line.match(SPEC_LINE);
+    if (!match) continue;
+    const label = match[1].trim();
+    const value = match[2].trim();
+    if (!label || !value) continue;
+    if (UNSUPPORTED_SPEC.some((re) => re.test(value))) continue;
+    if (seen.has(label.toLowerCase())) continue;
+    if (shownElsewhere(product, label).some((v) => v && normalizeValue(v) === normalizeValue(value))) continue;
+    seen.add(label.toLowerCase());
+    rows.push({ label, value });
+  }
+
+  return rows;
+}
+
+function buildSpecRows(
+  product: Product,
+  descriptionSection = ""
+): { label: string; value: string }[] {
+  // The researched field wins where it exists; otherwise read the description.
+  if (!product.specifications && descriptionSection.trim()) {
+    return specRowsFromDescription(product, descriptionSection);
+  }
+
   const rows: { label: string; value: string }[] = [];
   const specs = product.specifications ?? {};
 
@@ -341,6 +429,7 @@ function buildSpecRows(product: Product): { label: string; value: string }[] {
 export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
   const description = product.description ?? "";
   const sections = splitDescriptionSections(description);
+  const specRows = buildSpecRows(product, sections.specifications);
 
   return {
     horsepower: resolveProductHorsepower(product),
@@ -350,8 +439,13 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
     rating: resolveProductRating(product),
     reviewCount: resolveProductReviewCount(product),
     descriptionBody: sections.descriptionBody,
-    specifications: sections.specifications,
-    specRows: buildSpecRows(product),
+    /*
+     * Attributes become rows; feature bullets stay prose. When the spec lines
+     * are parsed out of the description they must not also appear below the
+     * rows, or the page states everything twice.
+     */
+    specifications: specRows.length > 0 ? sections.featureBlocks : [sections.specifications, sections.featureBlocks].filter(Boolean).join("\n\n"),
+    specRows,
     shippingAndWarranty: sections.shippingAndWarranty,
     logistics: resolveProductLogistics(product),
     installResources: {
