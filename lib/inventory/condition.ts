@@ -36,56 +36,52 @@ export function isAftermarketCategory(category: string): boolean {
   return category === "aftermarket";
 }
 
-function resolveAftermarketCondition(raw?: string): ProductCondition {
-  const value = (raw ?? "").toLowerCase().trim();
-
-  if (value.includes("mixed")) return "aftermarket-mixed";
-  if (value.includes("remanufactured") || value.includes("refurbished")) {
-    return "refurbished";
-  }
-  if (value === "new") return "refurbished";
-  if (value.includes("used")) return "aftermarket-used";
-
-  return "aftermarket-used";
-}
-
 /**
- * Resolve canonical condition slug for any product.
- * Catalog products are always forced to brand-new.
+ * Resolve the canonical condition slug from what the listing itself records.
+ *
+ * THE CATEGORY DOES NOT DECIDE THIS ANY MORE, AND IT NEVER SHOULD HAVE.
+ * A category says where a part sits in the catalog. Only the listing knows
+ * whether the part has been used. The old rule got that wrong in both
+ * directions:
+ *
+ *  - Catalog categories were forced to brand-new unconditionally, which
+ *    silently overrode listings that said otherwise: the Audi 4.0 TFSI (id
+ *    55) declared "used" and was badged Brand New on the storefront and in
+ *    the Meta catalog feed. Selling a used engine under a Brand New badge is
+ *    a dispute the seller cannot win, so a stated condition started winning.
+ *  - Everything in `aftermarket` was badged Used whatever it recorded. That
+ *    category holds both genuine donor stock (truck beds, camper shells) and
+ *    boxed new parts, so on 2026-09-20 an audit found 98 listings stored
+ *    brand-new — Aeromotive regulators, DeatschWerks fittings — advertised
+ *    as Used on the site, in the catalog filter's own results and to Meta.
+ *
+ * So the listing decides, whatever category it is in. Nothing is inferred
+ * from the product name: a listing that records no condition at all falls
+ * back to brand-new, which is what the overwhelming majority of the catalog
+ * is, though in practice every listing carries one today.
+ *
+ * The aftermarket variants are kept rather than folded into `used`: they
+ * carry the same wording and colour, and keeping them means an aftermarket
+ * listing that says "used" resolves exactly as it did before this change.
  */
 export function resolveProductCondition(
   product: Pick<Product, "category" | "condition">
 ): ProductCondition {
-  if (isAftermarketCategory(product.category)) {
-    return resolveAftermarketCondition(product.condition);
-  }
-
-  /*
-   * An explicitly declared condition wins over the category default.
-   *
-   * Catalog categories used to be forced to brand-new unconditionally, on the
-   * assumption that everything in them is new. That silently overrode listings
-   * that said otherwise: the Audi 4.0 TFSI (id 55) declared "used" and was
-   * badged Brand New on the storefront and in the Meta catalog feed. Selling a
-   * used engine under a Brand New badge is a dispute the seller cannot win, so
-   * a stated condition is now respected.
-   *
-   * Anything that does not declare one still defaults to brand-new, which is
-   * what the overwhelming majority of catalog listings are.
-   */
   const declared = (product.condition ?? "").toLowerCase().trim();
+  const aftermarket = isAftermarketCategory(product.category);
+
+  if (declared.includes("mixed")) return "aftermarket-mixed";
 
   if (declared.includes("refurbished") || declared.includes("remanufactured")) {
     return "refurbished";
   }
 
+  // "Used Like New" is a used part, so used has to be tested before new.
   if (declared.includes("used")) {
-    return "used";
+    return aftermarket ? "aftermarket-used" : "used";
   }
 
-  if (isCatalogCategory(product.category)) {
-    return "brand-new";
-  }
+  if (declared.includes("new")) return "brand-new";
 
   return "brand-new";
 }
