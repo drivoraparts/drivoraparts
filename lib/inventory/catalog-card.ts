@@ -1,6 +1,7 @@
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
 import type { Product } from "./types";
 import { getProductThumbnail } from "./media";
+import { getConditionLabel } from "./condition";
 
 export function toCatalogCardData(product: Product): CatalogProductCardData {
   return {
@@ -12,5 +13,7 @@ export function toCatalogCardData(product: Product): CatalogProductCardData {
     images: product.images,
     category: product.category,
     brand: product.brand,
+    condition: product.condition,
+    conditionLabel: product.condition ? getConditionLabel(product) : undefined,
   };
 }

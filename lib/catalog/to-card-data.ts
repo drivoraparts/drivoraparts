@@ -1,4 +1,8 @@
-import { getProductThumbnail, resolveProductGallery } from "@/lib/inventory";
+import {
+  getConditionLabel,
+  getProductThumbnail,
+  resolveProductGallery,
+} from "@/lib/inventory";
 import type { Product } from "@/lib/inventory/types";
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
 
@@ -12,5 +16,7 @@ export function toCatalogCardData(product: Product): CatalogProductCardData {
     images: resolveProductGallery(product.thumbnail ?? product.image, product.images),
     category: product.category,
     brand: product.brand,
+    condition: product.condition,
+    conditionLabel: product.condition ? getConditionLabel(product) : undefined,
   };
 }

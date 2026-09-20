@@ -29,14 +29,15 @@ export type CatalogProductCardData = {
   isNew?: boolean;
   /**
    * Supplied by the catalog query where the listing actually has them.
-   * Coverage is uneven -- partNumber ~11%, fitment ~35%, condition and stock
-   * ~99% -- so every consumer renders these conditionally rather than
-   * reserving a row that would be empty on most cards.
+   * Coverage measured 2026-09-20: partNumber 55%, fitment 66%, condition and
+   * stock 100%. The marketplace grid reserves a line for the application so
+   * its tiles align; anything scarcer than that stays off the card.
    */
   brandName?: string;
   partNumber?: string;
   fitment?: string;
   condition?: string;
+  conditionLabel?: string;
   inStock?: boolean;
 };
 
@@ -61,9 +62,18 @@ export default function CatalogProductCard({
   const productHref = routes.product(product.id);
 
   return (
+    /*
+     * A column, so every card in a row ends on its button.
+     *
+     * These sit in rails where the row is as tall as its tallest card, and a
+     * quarter of the catalogue's titles run past 95 characters. An unclamped
+     * title used to set the height for eleven other cards and leave their
+     * buttons floating at different heights; the title now holds two lines
+     * whatever it says, and the price and button are pinned to the bottom.
+     */
     <article
       id={catalogProductAnchorId(product.id)}
-      className="group relative overflow-hidden rounded-xl border border-neutral-200/80 bg-white shadow-sm transition-all duration-300 hover:border-accent-border hover:shadow-lg"
+      className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-neutral-200/80 bg-white shadow-sm transition-all duration-300 hover:border-accent-border hover:shadow-lg"
     >
       <Link
         href={productHref}
@@ -82,7 +92,7 @@ export default function CatalogProductCard({
 
       <div className="pointer-events-none absolute inset-0 bg-accent/5 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
 
-      <div className="relative p-4">
+      <div className="relative flex flex-1 flex-col p-4">
         <div className="relative h-40 w-full overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50">
           {isProductOnSale(product.price, product.compareAtPrice) ? (
             <div className="absolute left-1.5 top-1.5 z-20">
@@ -114,15 +124,18 @@ export default function CatalogProductCard({
           />
         </div>
 
-        <div className="mt-3 rounded-lg">
-          <h3 className="font-semibold text-neutral-900 group-hover:text-accent-hover">
+        <div className="mt-3 flex flex-1 flex-col rounded-lg">
+          {/* Two lines, reserved whether the title fills them or not, so the
+              cards beside this one keep their shape. */}
+          <h3 className="line-clamp-2 min-h-[2.75em] text-sm font-semibold leading-snug text-neutral-900 group-hover:text-accent-hover">
             <TranslatedText as="span">{product.name}</TranslatedText>
           </h3>
-          <ProductPrice
-            price={product.price}
-            compareAtPrice={product.compareAtPrice}
-            size="md"
-          />
+          <div className="mt-auto pt-2">
+            <ProductPrice
+              price={product.price}
+              compareAtPrice={product.compareAtPrice}
+              size="md"
+            />
           {/*
             The bulk offer is real and it stays, but it is the same sentence
             on every card in every rail -- twelve filled green badges shouting
@@ -132,9 +145,10 @@ export default function CatalogProductCard({
             anyone weighing a second item, no longer the loudest thing on a
             card whose job is to sell the part.
           */}
-          <p className="mt-1.5 text-[10px] font-medium text-neutral-500">
-            {getProductDiscountLabel(product.category)}
-          </p>
+            <p className="mt-1.5 text-[10px] font-medium text-neutral-500">
+              {getProductDiscountLabel(product.category)}
+            </p>
+          </div>
         </div>
       </div>
 

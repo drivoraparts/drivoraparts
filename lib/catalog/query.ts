@@ -2,6 +2,7 @@ import {
   getAllProducts,
   getBrandBySlug,
   getCategory,
+  getConditionLabel,
   getProductThumbnail,
 } from "@/lib/inventory";
 import { marketScope } from "@/lib/catalog/markets";
@@ -142,6 +143,8 @@ export type CatalogProductPayload = {
   partNumber?: string;
   fitment?: string;
   condition?: string;
+  /** The wording the product page uses, so a card never disagrees with it. */
+  conditionLabel?: string;
   inStock?: boolean;
 };
 
@@ -274,6 +277,7 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
     partNumber: product.partNumber || undefined,
     fitment: shortFitment(product.fitment),
     condition: product.condition || undefined,
+    conditionLabel: product.condition ? getConditionLabel(product) : undefined,
     inStock: product.stock,
   }));
 

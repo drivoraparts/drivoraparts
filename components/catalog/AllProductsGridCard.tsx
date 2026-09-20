@@ -52,16 +52,22 @@ export function saveCatalogAllState(state: CatalogAllSavedState) {
  * badges, because the catalog holds no such data and inventing it would be
  * inventing trust.
  *
- * WHY ROWS APPEAR AND DISAPPEAR
- * Part number exists on about one listing in nine and fitment on about one in
- * three. Reserving a line for each would put two empty rows on most cards, so
- * both render only where the listing has them. Cards in a row therefore differ
- * slightly in internal content -- which is honest, and preferable to a grid of
- * blank labels.
+ * WHY THE SLOTS ARE HELD OPEN
+ * The title takes two lines and the application one, whether the listing
+ * fills them or not, and the price and button sit at the bottom of the card.
+ * Letting those slots collapse is what made a row of tiles ragged: a quarter
+ * of the catalogue's titles run past 95 characters while others are short,
+ * and fitment is recorded on about two listings in three, so the price landed
+ * at a different height on every card. Two reserved lines cost a little white
+ * space on the shortest listings and buy a grid that reads as a grid.
  *
- * On phones both are hidden regardless. Two columns on a 375px screen leaves
- * roughly 166px of card, and a part number set in that space is a smudge. The
- * name, the brand, the price and the button are what a phone needs to scan.
+ * The part number is no longer here. It is on ~55% of listings, which made it
+ * a second ragged line, and what a customer scanning a grid wants to know is
+ * what the part fits -- the number is on the product page, in full.
+ *
+ * The application line is hidden on phones regardless. Two columns on a 375px
+ * screen leaves roughly 166px of card, and fitment text set in that space is a
+ * smudge; the name, the brand, the price and the button are what a phone needs.
  *
  * WHY THE IMAGE IS CONTAINED, NOT COVERED
  * This was object-cover, which fills the square by cropping. On a catalog of
@@ -167,25 +173,33 @@ export default function AllProductsGridCard({
           </p>
         ) : null}
 
-        <h3 className="mt-1 line-clamp-2 text-[11px] font-semibold leading-snug text-neutral-900 sm:text-[13px]">
+        {/*
+          ALIGNMENT
+          Two lines for the title and one for the application, held whether
+          the listing fills them or not, then everything below pinned to the
+          bottom of the card. A quarter of the catalogue's titles run past 95
+          characters, and cards whose slots collapsed left the price and the
+          button sitting at a different height on every tile in the row.
+
+          The part number used to sit here too. Dropping it is not a loss:
+          what a customer scanning a grid needs is what the part fits, the
+          number belongs on the product page, and two optional lines at
+          ~55% and ~66% coverage were most of the raggedness.
+        */}
+        <h3 className="mt-1 line-clamp-2 min-h-[2.75em] text-[11px] font-semibold leading-snug text-neutral-900 sm:text-[13px]">
           <TranslatedText as="span">{product.name}</TranslatedText>
         </h3>
 
-        {product.partNumber ? (
-          <p className="mt-1 hidden truncate text-[10px] tabular-nums text-neutral-500 sm:block">
-            <span className="text-neutral-400">Part </span>
-            {product.partNumber}
-          </p>
-        ) : null}
+        <p className="mt-0.5 hidden min-h-[1.375em] line-clamp-1 text-[10px] leading-snug text-neutral-500 sm:block">
+          {product.fitment ? (
+            <>
+              <span className="text-neutral-400">Fits </span>
+              {product.fitment}
+            </>
+          ) : null}
+        </p>
 
-        {product.fitment ? (
-          <p className="mt-0.5 hidden line-clamp-1 text-[10px] leading-snug text-neutral-500 sm:block">
-            <span className="text-neutral-400">Fits </span>
-            {product.fitment}
-          </p>
-        ) : null}
-
-        <div className="mt-2">
+        <div className="mt-auto pt-2">
           <ProductPrice
             price={product.price}
             compareAtPrice={product.compareAtPrice}
@@ -211,8 +225,11 @@ export default function AllProductsGridCard({
               <span aria-hidden="true" className="text-neutral-300">
                 ·
               </span>
+              {/* The product page's own wording (getConditionLabel), not the
+                  raw stored string -- a card reading "brand new" beside a page
+                  reading "Brand New" is the same listing arguing with itself. */}
               <span className="capitalize">
-                {product.condition.replace(/-/g, " ")}
+                {product.conditionLabel ?? product.condition.replace(/-/g, " ")}
               </span>
             </>
           ) : null}
