@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import AllProductsFeed from "./AllProductsFeed";
 import MarketHero from "./MarketHero";
+import MarketSections from "./MarketSections";
 import JsonLdScript from "@/components/seo/JsonLdScript";
+import { getSection } from "@/lib/catalog/sections";
 import {
   getMarket,
   getMarketOverview,
@@ -78,17 +81,31 @@ export default async function MarketCatalogView({
   const category = overview.categories.some((c) => c.slug === requestedCategory)
     ? requestedCategory
     : "";
+  const section = getSection(param(params.section));
+
+  /*
+   * Rows or grid.
+   *
+   * A market opens as rows of systems -- that is the point of the page. The
+   * grid is what a choice leads to: a section's "View all", a category chip,
+   * a search, or "Browse all listings" (view=all). Both are this same feed
+   * and this same catalogue either way.
+   */
+  const showGrid = Boolean(query || category || section || param(params.view) === "all");
 
   // Page one rendered into the HTML, exactly as /catalog/all does, through
   // the same query the feed calls for every page after it.
-  const initialData = queryCatalog({
-    page: 1,
-    limit: CATALOG_DEFAULT_LIMIT,
-    q: query,
-    category,
-    market: market.key,
-    vehicle: vehicle?.key,
-  });
+  const initialData = showGrid
+    ? queryCatalog({
+        page: 1,
+        limit: CATALOG_DEFAULT_LIMIT,
+        q: query,
+        category,
+        section: section?.key,
+        market: market.key,
+        vehicle: vehicle?.key,
+      })
+    : undefined;
 
   const regional = market.groups.length > 0;
   const scopeName = vehicle
@@ -115,45 +132,67 @@ export default async function MarketCatalogView({
       <main className="min-h-screen bg-white text-neutral-900">
         <MarketHero overview={overview} />
 
-        <div className="px-3 pb-6 pt-10 sm:px-6">
-          {/* The vehicle chips link here (#listings). Choosing a vehicle
-              reloads the page, and without this it reopened at the top: on a
-              phone that is the market head again, with the listings the tap
-              was for a full screen below. The margin clears the sticky site
-              header, the same 106/114px the feed's filter bar sticks under. */}
-          <header
-            id="listings"
-            className="mb-3 scroll-mt-[112px] sm:mb-6 sm:scroll-mt-[122px]"
-          >
-            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
-              {market.name}
-            </p>
-            <h2 className="mt-1 inline-block border-b-2 border-accent pb-1 text-xl font-bold text-neutral-900 sm:pb-2 sm:text-3xl">
-              {query ? `Results for “${query}”` : scopeName}
-            </h2>
-            <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
-              {query
-                ? `Searching ${vehicle ? vehicleLabel(vehicle) : market.name} listings only. All Products searches everything.`
-                : "Narrow by system, brand, budget or condition, or search within these listings."}
-            </p>
-          </header>
+        {showGrid ? (
+          <div className="px-3 pb-6 pt-10 sm:px-6">
+            {/* The vehicle chips link here (#listings). Choosing a vehicle
+                reloads the page, and without this it reopened at the top: on a
+                phone that is the market head again, with the listings the tap
+                was for a full screen below. The margin clears the sticky site
+                header, the same 106/114px the feed's filter bar sticks under. */}
+            <header
+              id="listings"
+              className="mb-3 scroll-mt-[112px] sm:mb-6 sm:scroll-mt-[122px]"
+            >
+              <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
+                {market.name}
+                {vehicle ? ` · ${vehicleLabel(vehicle)}` : ""}
+              </p>
+              <h2 className="mt-1 inline-block border-b-2 border-accent pb-1 text-xl font-bold text-neutral-900 sm:pb-2 sm:text-3xl">
+                {query ? `Results for “${query}”` : (section?.label ?? scopeName)}
+              </h2>
+              <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
+                {query
+                  ? `Searching ${vehicle ? vehicleLabel(vehicle) : market.name} listings only. All Products searches everything.`
+                  : "Narrow by system, brand, budget or condition, or search within these listings."}
+              </p>
+              {regional ? (
+                <p className="mt-2 text-sm">
+                  <Link
+                    href={
+                      vehicle
+                        ? `${routes.market(market.key)}?vehicle=${encodeURIComponent(vehicle.key)}`
+                        : routes.market(market.key)
+                    }
+                    prefetch={false}
+                    className="font-semibold text-accent transition-colors duration-[var(--motion-duration-fast)] hover:text-accent-hover"
+                  >
+                    ← Back to {vehicle ? vehicleLabel(vehicle) : market.name} sections
+                  </Link>
+                </p>
+              ) : null}
+            </header>
 
-          {/* Remounted whenever the scope changes, so a new vehicle or search
-              always starts from clean state -- the same reason /catalog/all
-              keys its feed. */}
-          <AllProductsFeed
-            key={`${market.key}|${vehicle?.key ?? ""}|${query}|${category}`}
-            market={market.key}
-            vehicle={vehicle?.key}
-            initialQuery={query}
-            initialCategory={category}
-            initialData={initialData}
-            categoryShortcuts={overview.categories.map(({ slug, name }) => ({
-              slug,
-              name,
-            }))}
-          />
-        </div>
+            {/* Remounted whenever the scope changes, so a new vehicle, section
+                or search always starts from clean state -- the same reason
+                /catalog/all keys its feed. */}
+            <AllProductsFeed
+              key={`${market.key}|${vehicle?.key ?? ""}|${query}|${category}|${section?.key ?? ""}`}
+              market={market.key}
+              vehicle={vehicle?.key}
+              section={section?.key}
+              initialQuery={query}
+              initialCategory={category}
+              initialData={initialData}
+              categoryShortcuts={
+                section
+                  ? undefined
+                  : overview.categories.map(({ slug, name }) => ({ slug, name }))
+              }
+            />
+          </div>
+        ) : (
+          <MarketSections overview={overview} />
+        )}
       </main>
     </>
   );

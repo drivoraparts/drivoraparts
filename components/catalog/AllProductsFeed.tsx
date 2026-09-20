@@ -103,6 +103,7 @@ export default function AllProductsFeed({
   initialData,
   market = "",
   vehicle = "",
+  section = "",
   categoryShortcuts,
 }: {
   /** Supplied by the server page from ?q=. Deliberately a prop rather than
@@ -123,6 +124,10 @@ export default function AllProductsFeed({
    *  narrowed, never a second catalog. Empty on /catalog/all. */
   market?: string;
   vehicle?: string;
+  /** A market page section (lib/catalog/sections.ts) when the visitor opened
+   *  one from a row's "View all". Narrows every request the same way the row
+   *  was built. */
+  section?: string;
   /** Categories with listings in that market, in its own order, shown as
    *  chips. They set the same state as the category dropdown, so the two can
    *  never disagree about what is selected. */
@@ -238,6 +243,7 @@ export default function AllProductsFeed({
     if (sortFilter !== DEFAULT_SORT) params.set("sort", sortFilter);
     if (market) params.set("market", market);
     if (vehicle) params.set("vehicle", vehicle);
+    if (section) params.set("section", section);
 
     const controller = new AbortController();
     const deadline = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
@@ -264,6 +270,7 @@ export default function AllProductsFeed({
     sortFilter,
     market,
     vehicle,
+    section,
   ]);
 
   const fetchProducts = useCallback(

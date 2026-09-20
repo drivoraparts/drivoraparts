@@ -6,6 +6,7 @@ import {
 } from "@/lib/inventory";
 import { marketScope } from "@/lib/catalog/markets";
 import { compareByMerchandising } from "@/lib/catalog/merchandising";
+import { sectionMatcher } from "@/lib/catalog/sections";
 import { CATALOG_DEFAULT_LIMIT } from "@/lib/catalog/query-options";
 import {
   matchesPriceFilter,
@@ -80,6 +81,12 @@ export type CatalogQueryInput = {
    */
   market?: string;
   vehicle?: string;
+  /**
+   * A market page's section ("fuel-system", "snorkels", a category slug) --
+   * see lib/catalog/sections.ts. It narrows by the same rule the row was
+   * built from, so "View all" opens exactly what the row was showing.
+   */
+  section?: string;
 };
 
 /**
@@ -179,6 +186,11 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   const scope = marketScope(input.market, input.vehicle);
   if (scope) {
     items = items.filter((p) => scope.has(p.id));
+  }
+
+  if (input.section) {
+    const matches = sectionMatcher(input.section);
+    if (matches) items = items.filter(matches);
   }
 
   if (category) {

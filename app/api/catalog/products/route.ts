@@ -25,6 +25,7 @@ export async function GET(request: NextRequest) {
     availability: params.get("availability") || "",
     market: params.get("market") || "",
     vehicle: params.get("vehicle") || "",
+    section: params.get("section") || "",
   });
 
   return NextResponse.json(result);
