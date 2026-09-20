@@ -17,7 +17,8 @@ export type InstallationResources = {
 
 export type ProductCatalogMeta = {
   horsepower?: string;
-  mileage: string;
+  /** Absent when mileage does not apply to this product. */
+  mileage?: string;
   conditionLabel: string;
   warranty: string;
   rating: number;
@@ -157,13 +158,52 @@ function splitDescriptionSections(description: string) {
   };
 }
 
-export function resolveProductMileage(product: Product): string {
+/*
+ * A unit that accrues mileage, as opposed to a part bolted to one.
+ *
+ * The category field cannot answer this: "engine" holds 1,024 items, most of
+ * them filters, manifolds and sensors. This reads the product name for the
+ * thing being sold, then removes the accessories that merely mention a
+ * powertrain -- an exhaust brake "(Automatic Transmission)" is a brake, and a
+ * transfer case brace is a bracket.
+ */
+const POWERTRAIN_ASSEMBLY =
+  /\b(complete engine|engine assembly|long ?block|short ?block|crate engine|engine package|swap package|drivetrain package|complete drivetrain|rotating assembly|transmission|transaxle|transfer case|gearbox)\b/i;
+
+const POWERTRAIN_ACCESSORY =
+  /\b(mount|mounts|bracket|brace|skid|filter|belt|hose|line|manifold|sensor|gasket|seal|bolt|stud|nut|washer|hardware|cooler|pan|pump|adapter|adaptor|spacer|shifter|linkage|cable|harness|controller|solenoid|valve body|dipstick|crossmember|fluid|cover|plate|flange|clamp|bushing|insulator|power steering|service kit|rebuild kit|shift kit|install kit|swap kit|conversion kit|kit for|flexplate|flywheel|clutch|dust|shield|guard|spring|arm|link|exhaust brake|brakeloc|idle control|module|support|tuner|programmer|monitor|gauge|switch|relay|wire)\b/i;
+
+export function isPowertrainAssembly(product: Product): boolean {
+  const name = product.name ?? "";
+  return POWERTRAIN_ASSEMBLY.test(name) && !POWERTRAIN_ACCESSORY.test(name);
+}
+
+/**
+ * Mileage, shown only where it means something.
+ *
+ * This used to return "0 Miles" for anything marked brand-new, which put an
+ * odometer reading on 3,567 products -- seat belts, alternators, canopies,
+ * recovery boards. That number was never recorded anywhere; it was inferred
+ * from the condition field and rendered as though it were data. Forty-one
+ * products in the catalog actually record a mileage.
+ *
+ * Returns undefined when the row should not appear at all. "Brand New" in the
+ * condition row already tells a buyer the part is unused.
+ */
+export function resolveProductMileage(product: Product): string | undefined {
   if (product.mileage?.trim()) return product.mileage.trim();
 
   const condition = resolveProductCondition(product);
-  if (condition === "brand-new") return "0 Miles";
 
-  return "Contact for Details";
+  // A crate engine or gearbox genuinely is zero miles, and that is worth
+  // stating -- it is the difference between a new unit and a takeout.
+  if (condition === "brand-new") {
+    return isPowertrainAssembly(product) ? "0 Miles (Crate / Brand New)" : undefined;
+  }
+
+  // Used or remanufactured: mileage is a real question and we do not hold the
+  // answer, so the row invites the one conversation that can settle it.
+  return "Inquire for Mileage";
 }
 
 export function resolveProductWarranty(

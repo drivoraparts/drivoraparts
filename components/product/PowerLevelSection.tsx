@@ -10,6 +10,12 @@ export type ProSpecSection = {
    * to it or it reads as a second thing being sold.
    */
   options?: { title: string; caption: string; emphasis?: boolean }[];
+  /**
+   * Turns the pill into a link. Used where the value is an invitation rather
+   * than a fact -- "Inquire for Mileage" on a used unit whose odometer we do
+   * not hold has to go somewhere, or it is just a shrug printed on the page.
+   */
+  href?: string;
 };
 
 type PowerLevelSectionProps = {
@@ -19,21 +25,28 @@ type PowerLevelSectionProps = {
 function SpecPill({
   value,
   active = true,
+  href,
 }: {
   value: string;
   active?: boolean;
+  href?: string;
 }) {
-  return (
-    <span
-      className={
-        active
-          ? "inline-flex min-h-[38px] items-center justify-center rounded-sm border border-neutral-800 bg-neutral-800 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.08em] text-white"
-          : "inline-flex min-h-[38px] items-center justify-center rounded-sm border border-neutral-300 bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.08em] text-neutral-800"
-      }
-    >
-      {value}
-    </span>
-  );
+  const className = active
+    ? "inline-flex min-h-[38px] items-center justify-center rounded-sm border border-neutral-800 bg-neutral-800 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.08em] text-white"
+    : "inline-flex min-h-[38px] items-center justify-center rounded-sm border border-neutral-300 bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.08em] text-neutral-800";
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        className={`${className} underline decoration-white/40 underline-offset-2 transition hover:decoration-white`}
+      >
+        {value}
+      </a>
+    );
+  }
+
+  return <span className={className}>{value}</span>;
 }
 
 function SpecOption({
@@ -107,7 +120,12 @@ export default function PowerLevelSection({ sections }: PowerLevelSectionProps) 
               {section.values
                 .filter((value) => value.trim().length > 0)
                 .map((value, index) => (
-                  <SpecPill key={`${section.label}-${value}`} value={value} active={index === 0} />
+                  <SpecPill
+                    key={`${section.label}-${value}`}
+                    value={value}
+                    active={index === 0}
+                    href={section.href}
+                  />
                 ))}
             </div>
           )}

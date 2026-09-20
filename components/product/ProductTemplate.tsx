@@ -185,11 +185,24 @@ export default function ProductTemplate({
       );
     }
 
-    sections.push(
-      { label: "Condition", values: [catalogMeta.conditionLabel] },
-      { label: "Mileage", values: [catalogMeta.mileage] },
-      { label: "Warranty", values: [catalogMeta.warranty] }
-    );
+    sections.push({ label: "Condition", values: [catalogMeta.conditionLabel] });
+
+    /*
+     * Mileage only where it means something. A brand-new bolt-on part has no
+     * odometer, so the row is absent rather than asserting "0 Miles" -- the
+     * Condition row above already says the part is new. Where the unit is used
+     * and we do not hold the reading, the pill links to the one place the
+     * question can actually be answered.
+     */
+    if (catalogMeta.mileage) {
+      sections.push({
+        label: "Mileage",
+        values: [catalogMeta.mileage],
+        href: catalogMeta.mileage === "Inquire for Mileage" ? "/contact" : undefined,
+      });
+    }
+
+    sections.push({ label: "Warranty", values: [catalogMeta.warranty] });
 
     if (catalogMeta.logistics?.fitment) {
       sections.push({
