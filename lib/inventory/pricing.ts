@@ -47,6 +47,30 @@ export function resolvePublicPrice(product: Pick<Product, "id" | "price">): numb
   return Math.round(discounted / 10) * 10;
 }
 
+/**
+ * The struck-through figure is shown only where the listing records where its
+ * reference price was read from.
+ *
+ * A listing's authored `price` is meant to be the reference at the source --
+ * MSRP where the manufacturer publishes one, otherwise the specialist's
+ * listed price -- and the 2,564 listings carrying a `sourceUrl` are exactly
+ * the ones where that can still be checked against the page it came from. An
+ * audit on 2026-09-20 spot-checked six of them against the live supplier
+ * pages five days after capture and all six matched to the cent.
+ *
+ * The rest cannot be checked by anyone: 1,219 arrived in a bulk JSON import
+ * carrying a price and nothing else, 42 are the owner's own yard parts where
+ * the "was" figure is their own asking price, and the remainder state no
+ * basis at all. Those listings sell at the same price as before and simply
+ * stop claiming a discount -- which also drops their ON SALE badge, since
+ * isProductOnSale() reads the same field.
+ *
+ * Nothing here invents a reference price, and no selling price changes.
+ */
+function hasVerifiableReferencePrice(product: Product): boolean {
+  return Boolean(product.sourceUrl?.trim());
+}
+
 export function applyPublicPrices(items: Product[]): Product[] {
   return items.map((product) => {
     const salePrice = resolvePublicPrice(product);
@@ -57,6 +81,10 @@ export function applyPublicPrices(items: Product[]): Product[] {
 
     if (salePrice >= product.price) {
       return product;
+    }
+
+    if (!hasVerifiableReferencePrice(product)) {
+      return { ...product, price: salePrice };
     }
 
     return {

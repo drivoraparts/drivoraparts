@@ -24,6 +24,18 @@ const sizeClasses = {
   },
 } as const;
 
+/**
+ * The struck-through figure is named, not left bare.
+ *
+ * It is the list price at the source the listing was read from -- the
+ * manufacturer's where they publish one, otherwise the specialist's -- and
+ * never a price DrivoraParts itself used to charge. An unlabelled strike
+ * through implies the second, so the label says which it is. Listings with
+ * no checkable source carry no compareAtPrice at all and render as a single
+ * price (see applyPublicPrices).
+ *
+ * The short form is for cards, where the row shares a line with the price.
+ */
 export default function ProductPrice({
   price,
   compareAtPrice,
@@ -38,10 +50,13 @@ export default function ProductPrice({
     <span className={`inline-flex flex-wrap items-baseline gap-x-2 gap-y-0.5 ${className}`}>
       {showCompare ? (
         <span
-          className={`font-medium text-muted line-through decoration-muted/70 ${sizes.compare}`}
-          aria-label={`Competitor price ${compareAtPrice}`}
+          className={`inline-flex items-baseline gap-1 font-medium text-muted ${sizes.compare}`}
+          aria-label={`List price ${compareAtPrice}`}
         >
-          <Price usd={compareAtPrice} />
+          <span>{size === "sm" ? "List" : "List price"}</span>
+          <span className="line-through decoration-muted/70">
+            <Price usd={compareAtPrice} />
+          </span>
         </span>
       ) : null}
       <span
