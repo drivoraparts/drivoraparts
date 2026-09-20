@@ -405,4 +405,34 @@ export const brands: Brand[] = [
   { slug: "k1-technology", name: "K1 Technology", category: "engine" },
   { slug: "recaro", name: "Recaro", category: "interior" },
   { slug: "wegner", name: "Wegner Automotive", category: "engine" },
+
+  /* ---------------------------------------------------------
+     The same manufacturers again, in the other categories they
+     actually sell into. A brand page is one category deep
+     (/catalog/[category]/[brand]), so BMR's body-parts listings
+     had no page to live on even though BMR's suspension page
+     worked. Counts are the listings each combination holds.
+
+     Nothing is registered for category "engine": the literal
+     /catalog/engine/[platform] route always wins over this
+     generic one, so an engine brand page can never be served
+     and registering it would only add a dead sitemap entry.
+     That affects BMR (13), QA1 (3) and UMI (2); those parts
+     stay reachable through search and the category pages.
+  --------------------------------------------------------- */
+  { slug: "umi-performance", name: "UMI Performance", category: "body-parts" },
+  { slug: "bmr-suspension", name: "BMR Suspension", category: "body-parts" },
+  { slug: "bmr-suspension", name: "BMR Suspension", category: "bumper" },
+  { slug: "bmr-suspension", name: "BMR Suspension", category: "transmission" },
+  { slug: "bmr-suspension", name: "BMR Suspension", category: "aftermarket" },
+  { slug: "deatschwerks", name: "DeatschWerks", category: "aftermarket" },
+  { slug: "nrg", name: "NRG Innovations", category: "aftermarket" },
+  { slug: "nrg", name: "NRG Innovations", category: "body-parts" },
+  { slug: "walbro", name: "Walbro", category: "electronics" },
+  { slug: "spal", name: "SPAL", category: "electronics" },
+  { slug: "ridetech", name: "Ridetech", category: "body-parts" },
+  { slug: "ridetech", name: "Ridetech", category: "aftermarket" },
+  { slug: "harrop", name: "Harrop", category: "aftermarket" },
+  { slug: "injector-dynamics", name: "Injector Dynamics", category: "aftermarket" },
+  { slug: "kooks-headers", name: "Kooks Headers", category: "aftermarket" },
 ];

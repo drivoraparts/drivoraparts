@@ -49038,8 +49038,8 @@
       "product_type": "Quick Release Adapters",
       "material": "solid steel",
       "mechanism": "ball-lock with key",
-      "supplied": "2 keys, no replacements available",
-      "purpose": "anti-theft lock for a quick release hub"
+      "purpose": "anti-theft lock for a quick release hub",
+      "supplied": "2 keys, no replacements available"
     },
     "sourceUrl": "https://engineswapsupply.com/products/nrg-quick-lock-neochrome"
   },
@@ -51956,10 +51956,17 @@
     "specifications": {
       "product_type": "Suspension Packages",
       "spring_rate": "200 lb/in (Medium)",
-      "includes": "adjustable tubular truck arms, single adjustable shocks, high travel springs, C-notch bracket, panhard bar, brace bar",
       "max_drop": "up to 6in total"
     },
-    "sourceUrl": "https://qa1.net/products/rear-tubular-truck-arm-coilover-kit-63-72-c10-single-adjustable-200lb-in-springs/"
+    "sourceUrl": "https://qa1.net/products/rear-tubular-truck-arm-coilover-kit-63-72-c10-single-adjustable-200lb-in-springs/",
+    "included": [
+      "adjustable tubular truck arms",
+      "single adjustable shocks",
+      "high travel springs",
+      "C-notch bracket",
+      "panhard bar",
+      "brace bar"
+    ]
   },
   {
     "id": 919,
@@ -68949,8 +68956,8 @@
     "specifications": {
       "product_type": "Subframes",
       "finish": "satin black powder coat",
-      "supplied": "pair, with hardware",
-      "type": "bolt-in"
+      "type": "bolt-in",
+      "supplied": "pair, with hardware"
     },
     "sourceUrl": "https://ridetech.com/product/camaro-firebird-subframe-connectors/"
   },
