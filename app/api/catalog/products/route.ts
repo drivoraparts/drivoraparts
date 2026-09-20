@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
     category: params.get("category") || "",
     brand: params.get("brand") || "",
     price: params.get("price") || "all",
-    sort: params.get("sort") || "newest",
+    sort: params.get("sort") || "",
     condition: params.get("condition") || "",
     availability: params.get("availability") || "",
     market: params.get("market") || "",

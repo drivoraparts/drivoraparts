@@ -5,6 +5,7 @@ import {
   getProductThumbnail,
 } from "@/lib/inventory";
 import { marketScope } from "@/lib/catalog/markets";
+import { compareByMerchandising } from "@/lib/catalog/merchandising";
 import { CATALOG_DEFAULT_LIMIT } from "@/lib/catalog/query-options";
 import {
   matchesPriceFilter,
@@ -163,7 +164,10 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   const category = input.category || "";
   const brand = input.brand || "";
   const priceFilter = (input.price || "all") as PriceFilterValue;
-  const sort = input.sort || "newest";
+  // "newest" is the value older saved sessions carry. It was the default
+  // then and the default is what it maps to now, rather than the literal
+  // recency sort it used to mean -- which never meant much (see "recent").
+  const sort = input.sort === "newest" ? "recommended" : input.sort || "recommended";
   const condition = (input.condition || "").trim().toLowerCase();
   const inStockOnly = (input.availability || "") === "in-stock";
 
@@ -216,28 +220,29 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   }
 
   // Explicit sorts always win. Otherwise a query keeps its relevance order
-  // (re-sorting by date would throw the ranking away), and an unfiltered
-  // browse falls back to newest-first -- products without a createdAt sort
-  // to the back as if timestamped 0, so newly added listings surface first.
+  // (re-sorting would throw the ranking away) and a browse falls back to the
+  // merchandised order -- see lib/catalog/merchandising.ts.
   if (sort === "price-asc") {
     items.sort((a, b) => a.price - b.price);
   } else if (sort === "price-desc") {
     items.sort((a, b) => b.price - a.price);
   } else if (sort === "name-asc") {
     items.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sort === "recent") {
+    /*
+     * "Recently added", and it says only that.
+     *
+     * This deliberately does not read createdAt. A large part of the catalog
+     * is authored with createdAt set to Date.now() plus 24 hours, evaluated
+     * when the module loads, so 2,340 listings are future-dated and 2,155
+     * share one timestamp whose relative order depends on which module
+     * happened to load first -- it differed between this route's isolate and
+     * the server component rendering the same query. Ids ascend as listings
+     * are added, which is the only honest recency signal the catalog has.
+     */
+    items.sort((a, b) => b.id - a.id);
   } else if (!query) {
-    // Ties break on id, and they tie constantly. A large part of the
-    // catalog is authored with createdAt set to Date.now() plus 24 hours,
-    // evaluated when the module loads -- so those listings carry
-    // near-identical, future-dated timestamps whose relative order depends
-    // on which module happened to load first. That differs between this
-    // route's isolate and the server component rendering the same query,
-    // and it left the catalog grid and the Fresh Inventory rail disagreeing
-    // about what "newest" meant on one page load. Ids ascend as listings
-    // are added here, so they are the stable stand-in.
-    items.sort(
-      (a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0) || b.id - a.id
-    );
+    items.sort(compareByMerchandising);
   }
 
   const total = items.length;

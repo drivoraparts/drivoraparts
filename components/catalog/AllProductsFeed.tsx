@@ -48,12 +48,21 @@ const PAGE_SIZE = CATALOG_DEFAULT_LIMIT;
  */
 const FETCH_TIMEOUT_MS = 12_000;
 
+/*
+ * "Recommended" is the merchandised order (lib/catalog/merchandising.ts), and
+ * it is the default. "Newest First" used to be, and it was not true: most of
+ * the catalog carries a generated timestamp, so it really sorted by insertion
+ * order. That order is still offered, under the name it actually deserves.
+ */
 const SORT_OPTIONS = [
-  { value: "newest", label: "Newest First" },
+  { value: "recommended", label: "Recommended" },
+  { value: "recent", label: "Recently Added" },
   { value: "price-asc", label: "Price: Low to High" },
   { value: "price-desc", label: "Price: High to Low" },
   { value: "name-asc", label: "Name: A to Z" },
 ];
+
+const DEFAULT_SORT = "recommended";
 
 const categoriesList = categories;
 const brandsList = brands;
@@ -149,7 +158,7 @@ export default function AllProductsFeed({
   // The mobile filter sheet. Desktop shows the same controls inline, so this
   // is only ever consulted below the sm breakpoint.
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [sortFilter, setSortFilter] = useState("newest");
+  const [sortFilter, setSortFilter] = useState(DEFAULT_SORT);
   const [page, setPage] = useState(1);
   // Seeded from the server render when there is one. This is what stops the
   // grid opening on "Showing 0 of 0 products": there is no window in which
@@ -226,7 +235,7 @@ export default function AllProductsFeed({
     if (brandFilter) params.set("brand", brandFilter);
     if (priceFilter !== "all") params.set("price", priceFilter);
     if (conditionFilter) params.set("condition", conditionFilter);
-    if (sortFilter !== "newest") params.set("sort", sortFilter);
+    if (sortFilter !== DEFAULT_SORT) params.set("sort", sortFilter);
     if (market) params.set("market", market);
     if (vehicle) params.set("vehicle", vehicle);
 
@@ -331,7 +340,14 @@ export default function AllProductsFeed({
           setBrandFilter(saved.brandFilter ?? "");
           setPriceFilter((saved.priceFilter as PriceFilterValue) ?? "all");
           setConditionFilter(saved.conditionFilter ?? "");
-          setSortFilter(saved.sortFilter ?? "newest");
+          // A session saved before the sort options changed carries
+          // "newest", which was the default then; the default is what it
+          // means now.
+          setSortFilter(
+            !saved.sortFilter || saved.sortFilter === "newest"
+              ? DEFAULT_SORT
+              : saved.sortFilter
+          );
         }
       }
 
