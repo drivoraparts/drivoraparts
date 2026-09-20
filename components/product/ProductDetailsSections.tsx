@@ -17,6 +17,7 @@ type ProductDetailsSectionsProps = {
   rating: number;
   descriptionBody: string;
   specifications: string;
+  specRows: { label: string; value: string }[];
   shippingAndWarranty: string;
   reviewCount: number;
   logistics: ProductLogistics;
@@ -311,6 +312,7 @@ export default function ProductDetailsSections({
   rating,
   descriptionBody,
   specifications,
+  specRows,
   shippingAndWarranty,
   reviewCount,
   logistics,
@@ -356,11 +358,35 @@ export default function ProductDetailsSections({
     },
   ];
 
-  if (specifications) {
+  /*
+   * Verified attributes first, then whatever the description says.
+   *
+   * specRows come from the product's own structured fields, so a micron
+   * rating or an AN size is stated as a fact rather than recovered by parsing
+   * prose. Products with no structured data still render exactly as before,
+   * from the description alone.
+   */
+  if (specRows.length > 0 || specifications) {
     tabs.push({
       id: "specifications",
       label: t("specificationsTitle"),
-      content: <RichDescription text={specifications} />,
+      content: (
+        <>
+          {specRows.length > 0 ? (
+            <div>
+              {specRows.map((row) => (
+                <LogisticsRow
+                  key={row.label}
+                  label={row.label}
+                  value={<TranslatedText as="span">{row.value}</TranslatedText>}
+                  theme={theme}
+                />
+              ))}
+            </div>
+          ) : null}
+          {specifications ? <RichDescription text={specifications} /> : null}
+        </>
+      ),
     });
   }
 

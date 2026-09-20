@@ -112,6 +112,34 @@ export type Product = {
   partNumber?: string;
   /** What vehicles/chassis/years this part fits, incl. bellhousing notes. */
   fitment?: string;
+  /**
+   * Verified attributes for this exact part -- micron rating, AN size, CFM,
+   * finish and so on. Recovered from the manufacturer's own record during the
+   * catalog research, so the product page can state a fact instead of parsing
+   * it back out of marketing prose.
+   */
+  specifications?: Record<string, string | number>;
+  /**
+   * Every vehicle the manufacturer lists for this part, kept whole rather than
+   * flattened into a sentence. `fitment` is the readable summary of it.
+   */
+  fitmentApplications?: {
+    yearFrom: number | null;
+    yearTo: number | null;
+    make: string;
+    model: string;
+    submodel?: string | null;
+  }[];
+  /** The years `fitment` covers, when the source states a range. */
+  fitmentYears?: string;
+  /** Engine or platform the part is built for, e.g. "Gen V LT", "Coyote". */
+  fitmentEngine?: string;
+  /**
+   * Sold without a vehicle application -- a wastegate, a fan, a seat. Set only
+   * where the maker says so, never because fitment could not be found: those
+   * two states are different and must not be confused.
+   */
+  universalFitment?: boolean;
   /** Drivetrain layout this unit is configured for, e.g. "RWD", "AWD". */
   drivetrain?: string;
   /** Physical contents included with the unit. */

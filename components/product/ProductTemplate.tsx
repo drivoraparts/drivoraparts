@@ -375,6 +375,7 @@ export default function ProductTemplate({
             rating={catalogMeta.rating}
             descriptionBody={catalogMeta.descriptionBody}
             specifications={catalogMeta.specifications}
+            specRows={catalogMeta.specRows}
             shippingAndWarranty={catalogMeta.shippingAndWarranty}
             reviewCount={catalogMeta.reviewCount}
             logistics={catalogMeta.logistics}
