@@ -1,6 +1,7 @@
 import { categories, getAllProducts } from "@/lib/inventory";
 import { getVehiclePlatform } from "@/data/vehicles";
 import {
+  applicationMatchText,
   fitmentMatchText,
   matchesFitmentPatterns,
 } from "@/lib/vehicles/parts";
@@ -150,7 +151,7 @@ export const MARKETS: Market[] = [
     name: "USA",
     tagline: "Trucks · Diesel · Performance",
     summary:
-      "F-150, Super Duty, Silverado, Sierra and Ram trucks, and the Power Stroke, Cummins, Duramax and LS engines inside them.",
+      "F-150, Super Duty, Silverado, Sierra and Ram trucks, the Power Stroke, Cummins, Duramax and LS engines inside them, and the muscle era: Camaro, Mustang, Chevelle, Firebird and more.",
     groups: [
       {
         label: "Trucks",
@@ -206,6 +207,111 @@ export const MARKETS: Market[] = [
           },
         ],
       },
+      {
+        /*
+         * MUSCLE & CLASSIC
+         *
+         * These platforms were in the catalogue all along and reachable by
+         * nobody. 440 listings name one of them, and for several the only
+         * place that is recorded is the manufacturer's structured application
+         * table -- the Nova has no prose fitment mentioning it at all, and 69
+         * of the 74 Skylark listings, 66 of the 80 Cutlass and 60 of the 90
+         * GTO are structured-only. Before applicationMatchText() those were
+         * invisible to every market page.
+         *
+         * Every entry below clears MIN_VEHICLE_LISTINGS by at least tenfold,
+         * so nothing here is a chip opening onto a near-empty page. The gate
+         * still applies: a platform that falls below three listings withdraws
+         * itself, and none was added that the catalogue could not already
+         * support.
+         *
+         * Nameplates are grouped only where the parts genuinely interchange
+         * -- the GM A-bodies with their siblings, the C10 with the K5 Blazer
+         * -- never to pad a count to clear the gate.
+         */
+        label: "Muscle & Classic",
+        vehicles: [
+          { key: "camaro", make: "Chevrolet", model: "Camaro", include: [/\bcamaro\b/i] },
+          { key: "mustang", make: "Ford", model: "Mustang", include: [/\bmustang\b/i] },
+          {
+            key: "chevelle",
+            make: "Chevrolet",
+            model: "Chevelle / El Camino",
+            include: [
+              /\bchevelle\b/i,
+              /\bel\s?camino\b/i,
+              /\bmalibu\b/i,
+              /\bmonte\s?carlo\b/i,
+            ],
+          },
+          {
+            key: "firebird",
+            make: "Pontiac",
+            model: "Firebird / Trans Am",
+            include: [/\bfirebird\b/i, /\btrans\s?am\b/i],
+          },
+          {
+            key: "gto",
+            make: "Pontiac",
+            model: "GTO / LeMans",
+            // "GTO" alone is also a Mitsubishi and a Ferrari, so the make has
+            // to be present for it to count.
+            include: [
+              /\bpontiac\s+gto\b/i,
+              /\bgto\s+judge\b/i,
+              /\blemans\b/i,
+              /\bpontiac\s+tempest\b/i,
+            ],
+          },
+          {
+            key: "cutlass",
+            make: "Oldsmobile",
+            model: "Cutlass / 442",
+            include: [/\bcutlass\b/i, /\boldsmobile\s+442\b/i],
+          },
+          {
+            key: "skylark",
+            make: "Buick",
+            model: "Skylark / GS",
+            include: [/\bskylark\b/i, /\bbuick\s+gran\s?sport\b/i],
+          },
+          {
+            key: "nova",
+            make: "Chevrolet",
+            model: "Nova",
+            // A bare "nova" is a supernova, a brand name and a font. The make
+            // or the trim has to say it is the car.
+            include: [/\bchev(?:rolet|y)\s+nova\b/i, /\bnova\s+ss\b/i],
+          },
+          { key: "corvette", make: "Chevrolet", model: "Corvette", include: [/\bcorvette\b/i] },
+          {
+            key: "impala",
+            make: "Chevrolet",
+            model: "Impala / Caprice",
+            include: [/\bimpala\b/i, /\bcaprice\b/i, /\bbel\s?air\b/i],
+          },
+          {
+            key: "c10",
+            make: "Chevrolet",
+            model: "C10 / K5 Blazer",
+            // "C10" is also a battery size and a capacitor code, so it is
+            // only the truck when the make or the body style says so.
+            include: [
+              /\bchev(?:rolet|y)\s+c-?10\b/i,
+              /\bc-?10\s+(?:pickup|truck|suburban)\b/i,
+              /\bk5\s+blazer\b/i,
+            ],
+          },
+          {
+            key: "charger",
+            make: "Dodge",
+            model: "Charger / Challenger",
+            include: [
+              /\bdodge\b[^•]{0,20}\b(?:charger|challenger|dart|coronet|super\s?bee)\b/i,
+            ],
+          },
+        ],
+      },
     ],
     categoryOrder: [
       "suspension",
@@ -223,9 +329,9 @@ export const MARKETS: Market[] = [
       "interior",
       "aftermarket",
     ],
-    seoTitle: "USA Truck, Diesel & Performance Parts",
+    seoTitle: "USA Truck, Diesel, Muscle & Performance Parts",
     seoDescription:
-      "Parts for the Ford F-150 and Super Duty, Chevrolet Silverado, GMC Sierra and Ram, and for Power Stroke, Cummins, Duramax and LS engines, each matched to the vehicle by its fitment.",
+      "Parts for the Ford F-150 and Super Duty, Chevrolet Silverado, GMC Sierra and Ram, for Power Stroke, Cummins, Duramax and LS engines, and for the Camaro, Mustang, Chevelle, Firebird and Cutlass, each matched to the vehicle by its fitment.",
   },
   {
     key: "australia",
@@ -435,8 +541,20 @@ function scopeIndex(market: Market): MarketScopeIndex {
     const stated = statedMarket(text);
     if (stated && stated !== market.key) continue;
 
+    // Two sources of evidence, the same patterns over both. The prose comes
+    // first because it is what 83% of the catalogue records; the
+    // manufacturer's structured application table is checked when the prose
+    // does not settle it. This is additive by construction -- a listing that
+    // matched before still matches, because the first test is unchanged.
+    const applications = applicationMatchText(product);
+
     for (const vehicle of vehicles) {
-      if (matchesFitmentPatterns(text, vehicle.include, vehicle.exclude)) {
+      const matched =
+        matchesFitmentPatterns(text, vehicle.include, vehicle.exclude) ||
+        (applications.length > 0 &&
+          matchesFitmentPatterns(applications, vehicle.include, vehicle.exclude));
+
+      if (matched) {
         index.byVehicle.get(vehicle.key)?.add(product.id);
         index.all.add(product.id);
       }

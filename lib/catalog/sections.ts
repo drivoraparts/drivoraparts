@@ -4,11 +4,19 @@ import { getMarket, marketScope, type MarketKey } from "@/lib/catalog/markets";
 import { compareByMerchandising } from "@/lib/catalog/merchandising";
 
 /* =========================================================
-   DRIVORAPARTS — MARKET SECTIONS
+   DRIVORAPARTS — CATALOG SECTIONS
    ---------------------------------------------------------
-   A market page is rows, not one endless grid: the systems
-   that market actually buys, each a horizontal row of real
+   A catalog page is rows, not one endless grid: the systems
+   that scope actually buys, each a horizontal row of real
    listings with a way through to the rest.
+
+   A SCOPE IS A MARKET, OR THE WHOLE CATALOGUE
+   The four market pages were the only pages built this way.
+   /catalog/all now uses the same builder with no market
+   filter applied -- the same gate, the same claiming, the
+   same order. Widening the scope was the whole change; a
+   second implementation for the front page would have been
+   free to drift from this one, and eventually would have.
 
    A SECTION EXISTS ONLY WHERE THE STOCK DOES
    Every row below is gated on MIN_SECTION_LISTINGS in the
@@ -166,12 +174,58 @@ const SECTIONS: SectionDefinition[] = [
 const BY_KEY = new Map(SECTIONS.map((section) => [section.key, section]));
 
 /**
- * The rows each market offers, in the order they are shown.
+ * What a set of rows can be built over.
  *
- * Ordered by what that market buys, not by how many listings it has: the
+ * A market, or the whole catalogue. "all" is not a fifth market and holds no
+ * products of its own -- it is the absence of a market filter, which is
+ * exactly what marketScope() already returns null for. One builder, one set
+ * of rules, two kinds of scope.
+ */
+export type SectionScope = MarketKey | "all";
+
+/**
+ * The rows each scope offers, in the order they are shown.
+ *
+ * Ordered by what that scope buys, not by how many listings it has: the
  * counts decide whether a row appears at all, never where it sits.
  */
-const MARKET_SECTION_ORDER: Record<MarketKey, string[]> = {
+const SECTION_ORDER: Record<SectionScope, string[]> = {
+  /*
+   * The whole catalogue, read as systems.
+   *
+   * Deliberately not Worldwide's order, though both scopes hold the same
+   * 4,044 listings. Worldwide is a market plate and leads with the
+   * catalogue's own categories. This is the marketplace's front door, and it
+   * leads with the way a build is actually assembled -- engine, then what
+   * feeds it, then what moves the power, then what controls it -- which
+   * brings forward the four part types the category system does not model at
+   * all (fuel system, cooling, exhaust, steering). Those four are 470
+   * listings that no category row can surface.
+   *
+   * MAX_SECTIONS caps what is rendered; the tail is here so that a row
+   * failing the minimum is replaced by the next real one rather than leaving
+   * the page a row short.
+   */
+  all: [
+    "engine",
+    "turbocharger",
+    "fuel-system",
+    "transmission",
+    "suspension",
+    "brakes",
+    "cooling",
+    "exhaust",
+    "steering",
+    "lift-kits",
+    "electronics",
+    "wheels-tires",
+    "lighting",
+    "4x4-accessories",
+    "interior",
+    "bumper",
+    "body-parts",
+    "canopy",
+  ],
   usa: [
     "engine",
     "turbocharger",
@@ -252,7 +306,7 @@ export function sectionMatcher(key: string): ((product: Product) => boolean) | n
   return (product) => matchesSection(product, section);
 }
 
-export type MarketSection = {
+export type CatalogSection = {
   key: string;
   label: string;
   blurb?: string;
@@ -262,32 +316,42 @@ export type MarketSection = {
   total: number;
 };
 
-const cache = new Map<string, MarketSection[]>();
+const cache = new Map<string, CatalogSection[]>();
 
 /**
- * The rows to render for a market, optionally narrowed to one of its vehicles.
+ * The rows to render for a scope, optionally narrowed to one of its vehicles.
  *
  * Sections are filled in specificity order so no listing appears twice, then
- * returned in the market's display order. A section that cannot reach
+ * returned in the scope's display order. A section that cannot reach
  * MIN_SECTION_LISTINGS after that is dropped rather than shown thin.
+ *
+ * This was getMarketSections(MarketKey, vehicle?) and is otherwise unchanged:
+ * the gate, the specificity claiming, the deduplication and the merchandised
+ * ordering are all the same code doing the same thing. Only the scope widened,
+ * so /catalog/all could stop being the one page in the catalogue that had no
+ * rows rather than gaining a second implementation that would drift from this
+ * one.
  */
-export function getMarketSections(
-  marketKey: MarketKey,
+export function getCatalogSections(
+  scope: SectionScope,
   vehicleKey?: string
-): MarketSection[] {
-  const cacheKey = `${marketKey}|${vehicleKey ?? ""}`;
+): CatalogSection[] {
+  const cacheKey = `${scope}|${vehicleKey ?? ""}`;
   const cached = cache.get(cacheKey);
   if (cached) return cached;
 
-  const market = getMarket(marketKey);
-  if (!market) return [];
+  // A market key has to name a real market; "all" names no market at all,
+  // and marketScope() already returns null for that -- which is precisely
+  // "do not narrow the catalogue".
+  if (scope !== "all" && !getMarket(scope)) return [];
 
-  const scope = marketScope(marketKey, vehicleKey);
+  const productScope =
+    scope === "all" ? null : marketScope(scope, vehicleKey);
   const inScope = getAllProducts()
-    .filter((product) => !scope || scope.has(product.id))
+    .filter((product) => !productScope || productScope.has(product.id))
     .sort(compareByMerchandising);
 
-  const order = MARKET_SECTION_ORDER[marketKey] ?? [];
+  const order = SECTION_ORDER[scope] ?? [];
   const claimOrder = [...order].sort((a, b) => {
     const left = BY_KEY.get(a)?.specificity ?? 2;
     const right = BY_KEY.get(b)?.specificity ?? 2;
@@ -295,7 +359,7 @@ export function getMarketSections(
   });
 
   const claimed = new Set<number>();
-  const built = new Map<string, MarketSection>();
+  const built = new Map<string, CatalogSection>();
 
   for (const key of claimOrder) {
     const section = BY_KEY.get(key);
@@ -318,7 +382,7 @@ export function getMarketSections(
 
   const result = order
     .map((key) => built.get(key))
-    .filter((section): section is MarketSection => Boolean(section))
+    .filter((section): section is CatalogSection => Boolean(section))
     .slice(0, MAX_SECTIONS);
 
   cache.set(cacheKey, result);

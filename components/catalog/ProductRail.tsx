@@ -176,7 +176,10 @@ export default function ProductRail({
                         {badge}
                       </span>
                     ) : null}
-                    <CatalogProductCard product={toCatalogCardData(product)} />
+                    <CatalogProductCard
+                      product={toCatalogCardData(product)}
+                      detailed
+                    />
                   </div>
                 </div>
               ))}

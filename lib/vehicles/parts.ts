@@ -26,6 +26,36 @@ import {
 export const fitmentMatchText = (product: Product): string =>
   [product.name, product.fitment].filter(Boolean).join(" • ");
 
+/**
+ * The same text, built from the manufacturer's structured application list.
+ *
+ * `fitment` is a sentence someone wrote; `fitmentApplications` is the
+ * manufacturer's own table of what the part fits -- 11,873 verified rows
+ * across the catalogue, each a make, a model, an optional submodel and a year
+ * range. Nothing here is inferred: a listing with no applications recorded
+ * yields an empty string and matches nothing.
+ *
+ * Rendered in the same shape the catalogue's own fitment prose uses
+ * ("1964-1968 Ford Mustang"), because that is the shape the existing vehicle
+ * patterns were written against -- including the exclusions that depend on a
+ * year range being present, such as the pre-2011 US compact Ranger. Reusing
+ * the patterns rather than writing new ones is the point: one definition of
+ * what "fits a Mustang" means, tested against two sources of evidence.
+ */
+export const applicationMatchText = (product: Product): string =>
+  (product.fitmentApplications ?? [])
+    .map((application) => {
+      const { yearFrom, yearTo, make, model, submodel } = application;
+      const years =
+        yearFrom && yearTo
+          ? yearFrom === yearTo
+            ? String(yearFrom)
+            : `${yearFrom}-${yearTo}`
+          : (yearFrom ?? yearTo ?? "");
+      return [years, make, model, submodel].filter(Boolean).join(" ");
+    })
+    .join(" • ");
+
 export function matchesFitmentPatterns(
   text: string,
   include: RegExp[],

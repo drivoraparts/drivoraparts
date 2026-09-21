@@ -8,6 +8,7 @@ import {
 import { marketScope } from "@/lib/catalog/markets";
 import { compareByMerchandising } from "@/lib/catalog/merchandising";
 import { sectionMatcher } from "@/lib/catalog/sections";
+import { shortFitment } from "@/lib/catalog/short-fitment";
 import { CATALOG_DEFAULT_LIMIT } from "@/lib/catalog/query-options";
 import {
   matchesPriceFilter,
@@ -89,20 +90,6 @@ export type CatalogQueryInput = {
    */
   section?: string;
 };
-
-/**
- * Fitment text is a full sentence on the product page -- model years, body
- * codes, the phrases people search for. A card has room for a line. Cut on a
- * word boundary so the fragment still reads as English.
- */
-function shortFitment(text: string | undefined): string | undefined {
-  if (!text) return undefined;
-  const clean = text.replace(/\s+/g, " ").trim();
-  if (clean.length <= 96) return clean;
-  const cut = clean.slice(0, 96);
-  const boundary = cut.lastIndexOf(" ");
-  return (boundary > 40 ? cut.slice(0, boundary) : cut).trimEnd() + "…";
-}
 
 /**
  * Conditions are recorded free-hand, so the catalog holds "Used", "used",

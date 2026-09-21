@@ -44,11 +44,29 @@ export type CatalogProductCardData = {
 export default function CatalogProductCard({
   product,
   scrollListKey,
+  detailed = false,
 }: {
   product: CatalogProductCardData;
   scrollListKey?: string;
+  /*
+   * The rails' density.
+   *
+   * A rail card used to print a name, a price and the bulk-offer line, which
+   * meant that scrolling down /catalog/all the cards got LESS informative than
+   * the grid directly above them -- the grid was already showing the brand,
+   * what the part fits, its condition and whether it was in stock, from data
+   * this card's own type had always declared and nothing had ever filled.
+   *
+   * It is a prop rather than the new default because this component is also
+   * the card on the category, brand, engine-platform, vehicle and wishlist
+   * pages, and those hand it a minimal object with none of these fields. They
+   * would gain nothing and would pay for it in reserved empty rows, so they
+   * keep exactly the card they have until their own data is widened.
+   */
+  detailed?: boolean;
 }) {
   const thumbnail = getProductThumbnail(product);
+  const outOfStock = product.inStock === false;
 
   const cartProduct: AddToCartProduct = {
     id: product.id,
@@ -124,30 +142,100 @@ export default function CatalogProductCard({
           />
         </div>
 
+        {/*
+          BRAND · PRODUCT · FITMENT · CONDITION/AVAILABILITY · PRICE · CTA.
+
+          The order is the order a buyer reads a part in: who made it, what it
+          is, whether it fits their vehicle, what state it is in, what it
+          costs. The wording and the condition resolution are the marketplace
+          grid's own (AllProductsGridCard), not a second vocabulary -- a rail
+          card reading "brand new" beside a grid card reading "Brand New" is
+          the same catalogue arguing with itself.
+        */}
         <div className="mt-3 flex flex-1 flex-col rounded-lg">
+          {detailed && product.brandName ? (
+            <p className="truncate text-[9px] font-bold uppercase tracking-[0.14em] text-neutral-500 sm:text-[10px]">
+              {product.brandName}
+            </p>
+          ) : null}
+
           {/* Two lines, reserved whether the title fills them or not, so the
               cards beside this one keep their shape. */}
-          <h3 className="line-clamp-2 min-h-[2.75em] text-sm font-semibold leading-snug text-neutral-900 group-hover:text-accent-hover">
+          <h3
+            className={`line-clamp-2 min-h-[2.75em] text-sm font-semibold leading-snug text-neutral-900 group-hover:text-accent-hover ${
+              detailed && product.brandName ? "mt-0.5" : ""
+            }`}
+          >
             <TranslatedText as="span">{product.name}</TranslatedText>
           </h3>
+
+          {/* One line, height reserved whether this listing records a fitment
+              or not (about one in six does not), so a row of cards keeps a
+              common baseline instead of the price landing at a different
+              height on every one. Shown at every width: what a part fits is
+              the question a parts buyer is actually asking, and a rail card
+              that withholds it on a phone is withholding the answer. */}
+          {detailed ? (
+            <p className="mt-0.5 line-clamp-1 min-h-[1.375em] text-[10px] leading-snug text-neutral-500">
+              {product.fitment ? (
+                <>
+                  <span className="text-neutral-400">Fits </span>
+                  {product.fitment}
+                </>
+              ) : null}
+            </p>
+          ) : null}
+
           <div className="mt-auto pt-2">
             <ProductPrice
               price={product.price}
               compareAtPrice={product.compareAtPrice}
               size="md"
             />
-          {/*
-            The bulk offer is real and it stays, but it is the same sentence
-            on every card in every rail -- twelve filled green badges shouting
-            one site-wide policy, competing with twelve different products for
-            attention. It is already stated once in the announcement bar, so
-            here it drops to a quiet line under the price: still visible to
-            anyone weighing a second item, no longer the loudest thing on a
-            card whose job is to sell the part.
-          */}
-            <p className="mt-1.5 text-[10px] font-medium text-neutral-500">
-              {getProductDiscountLabel(product.category)}
-            </p>
+
+            {detailed ? (
+              /* Condition and availability exactly as the grid states them.
+                 "In stock" is not a quantity claim -- the catalog stores a
+                 boolean, so that is all this says. */
+              <p className="mt-1.5 flex flex-wrap items-center gap-x-1.5 text-[10px] text-neutral-500">
+                <span
+                  className={
+                    outOfStock
+                      ? "font-semibold text-error"
+                      : "font-semibold text-success"
+                  }
+                >
+                  {outOfStock ? "Out of stock" : "In stock"}
+                </span>
+                {product.condition ? (
+                  <>
+                    <span aria-hidden="true" className="text-neutral-300">
+                      ·
+                    </span>
+                    <span className="capitalize">
+                      {product.conditionLabel ??
+                        product.condition.replace(/-/g, " ")}
+                    </span>
+                  </>
+                ) : null}
+              </p>
+            ) : (
+              /*
+                The bulk offer is real and it stays, but it is the same
+                sentence on every card in every rail -- one site-wide policy
+                repeated fifty-two times on a single page, competing with
+                fifty-two different products for attention, and it is already
+                stated in the announcement bar and again on the product page.
+                In a rail the condition and stock of THIS part is worth more
+                of that line than a policy that applies to all of them, so the
+                detailed card spends it there. Nothing about the discount
+                itself changes: the calculation, the cart and the product page
+                are untouched.
+              */
+              <p className="mt-1.5 text-[10px] font-medium text-neutral-500">
+                {getProductDiscountLabel(product.category)}
+              </p>
+            )}
           </div>
         </div>
       </div>

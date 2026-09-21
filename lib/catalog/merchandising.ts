@@ -99,7 +99,7 @@ function completeness(product: Product, sharedImage: boolean): number {
  * can still be found and bought -- it just cannot be what the front page is
  * made of, however many times it has been opened.
  */
-function canLead(product: Product): boolean {
+export function canLead(product: Product): boolean {
   return Boolean(product.fitment) || !hasGenericPlaceholderDescription(product.description);
 }
 
@@ -120,7 +120,7 @@ function inAnyMarket(id: number): boolean {
  * The lookahead is bounded, so a brand that genuinely is everything left
  * simply continues rather than the order collapsing.
  */
-function spreadBrands(items: Product[], maxRun = MAX_BRAND_RUN): Product[] {
+export function spreadBrands(items: Product[], maxRun = MAX_BRAND_RUN): Product[] {
   const LOOKAHEAD = 400;
   const queue = [...items];
   const out: Product[] = [];

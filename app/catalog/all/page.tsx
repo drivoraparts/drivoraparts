@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import AllProductsFeed from "@/components/catalog/AllProductsFeed";
 import CatalogHero from "@/components/catalog/CatalogHero";
+import CatalogSectionRails from "@/components/catalog/CatalogSectionRails";
 import PopularCategoriesSection from "@/components/catalog/PopularCategoriesSection";
 import SeasonalCollectionsSection from "@/components/catalog/SeasonalCollectionsSection";
 import TrendingRail from "@/components/catalog/TrendingRail";
@@ -10,6 +11,7 @@ import StaffPicksSection from "@/components/catalog/StaffPicksSection";
 import CatalogVehicleFinderSection from "@/components/catalog/CatalogVehicleFinderSection";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { routes } from "@/lib/inventory";
+import { getCatalogSections, getSection } from "@/lib/catalog/sections";
 import { CATALOG_DEFAULT_LIMIT, queryCatalog } from "@/lib/catalog/query";
 import {
   buildPageMetadata,
@@ -37,13 +39,34 @@ export const metadata: Metadata = buildPageMetadata({
 export default async function AllProductsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string | string[]; category?: string | string[] }>;
+  searchParams: Promise<{
+    q?: string | string[];
+    category?: string | string[];
+    section?: string | string[];
+  }>;
 }) {
   const params = await searchParams;
-  const initialQuery = typeof params.q === "string" ? params.q : "";
-  const initialCategory =
-    typeof params.category === "string" ? params.category : "";
-  const isSearch = initialQuery.trim().length > 0;
+  const param = (value: string | string[] | undefined) =>
+    typeof value === "string" ? value.trim() : "";
+
+  const initialQuery = param(params.q);
+  const initialCategory = param(params.category);
+  // A row's "View all" lands here. The section narrows by the same rule the
+  // row was built from, so the grid opens on exactly what the row was
+  // showing -- the market pages have worked this way all along.
+  const section = getSection(param(params.section));
+  const isSearch = initialQuery.length > 0;
+
+  /*
+   * Narrowed, or browsing.
+   *
+   * Someone who has typed a query, tapped a category or followed a row's
+   * "View all" has already said what they want. Putting ten merchandised
+   * rows between them and the answer is answering a question they did not
+   * ask, so on those views the grid leads and the discovery aids follow it.
+   * Browsing is the journey, and that is where the rows belong.
+   */
+  const isNarrowed = Boolean(isSearch || initialCategory || section);
 
   /*
    * Run the catalog query here, while rendering, and hand the result to the
@@ -65,7 +88,19 @@ export default async function AllProductsPage({
     limit: CATALOG_DEFAULT_LIMIT,
     q: initialQuery,
     category: initialCategory,
+    section: section?.key,
   });
+
+  /*
+   * The rows.
+   *
+   * The same builder the four market pages use, with no market filter
+   * applied -- see lib/catalog/sections.ts. Every row is gated on real stock
+   * in the scope, deduplicated against the rows above it and ordered by the
+   * merchandising rank the grid uses. Nothing is padded to make the page look
+   * full: a system the catalogue cannot supply simply has no row.
+   */
+  const sections = isNarrowed ? [] : getCatalogSections("all");
 
   /*
    * The listings themselves, defined once and positioned by the order below.
@@ -74,14 +109,21 @@ export default async function AllProductsPage({
    */
   const marketplace = (
     <div className="px-3 pb-6 pt-10 sm:px-6">
-      <header className="mb-3 sm:mb-6">
+      <header
+        id="all-products"
+        className="mb-3 scroll-mt-[112px] sm:mb-6 sm:scroll-mt-[122px]"
+      >
         <h2 className="inline-block border-b-2 border-accent pb-1 text-xl font-bold text-neutral-900 sm:text-3xl sm:pb-2">
-          {isSearch ? `Search results for “${initialQuery}”` : "All Products"}
+          {isSearch
+            ? `Search results for “${initialQuery}”`
+            : (section?.label ?? "All Products")}
         </h2>
         <p className="mt-1 hidden text-sm text-neutral-500 sm:block">
           {isSearch
             ? "Refine with the category, brand, and price filters below."
-            : "Browse the complete DrivoraParts inventory."}
+            : section
+              ? "Narrow by brand, budget or condition, or search within these listings."
+              : "Browse the complete DrivoraParts inventory."}
         </p>
       </header>
       {/* No <Suspense> and no useSearchParams() inside the feed. That
@@ -92,9 +134,10 @@ export default async function AllProductsPage({
           from the server as a prop, and `key` remounts the feed whenever it
           changes so a new search always starts from clean state. */}
       <AllProductsFeed
-        key={`${initialQuery}|${initialCategory}`}
+        key={`${initialQuery}|${initialCategory}|${section?.key ?? ""}`}
         initialQuery={initialQuery}
         initialCategory={initialCategory}
+        section={section?.key}
         initialData={initialData}
       />
     </div>
@@ -118,27 +161,28 @@ export default async function AllProductsPage({
       <main className="min-h-screen bg-white text-neutral-900">
         {/*
           THE ORDER OF THIS PAGE, AND WHY IT DIFFERS BETWEEN BROWSING AND
-          SEARCHING.
+          NARROWING.
 
           Browsing follows the journey: say what the place is, ask what they
-          drive, show the systems, then the listings, then the editorial. Each
-          step narrows the one below it, which is the argument for putting
-          fitment and categories above the grid rather than under it.
+          drive, show the systems, walk the systems as rows of real stock,
+          then hand over the whole catalogue with its filters, then the
+          editorial. Each step narrows the one below it, which is the argument
+          for putting fitment, categories and the rows above the grid rather
+          than under it.
 
-          Searching does not. Everything above the grid was once above it for
+          Narrowing does not. Everything above the grid was once above it for
           searches too, and it pushed the results 5,509px down -- nine screens
           -- so a search looked like it had hung and "View all" looked like it
-          had bounced the visitor to a second homepage. Someone who has typed a
-          query has already told us what they want; asking them what they drive
-          first is answering a question they did not ask.
+          had bounced the visitor to a second homepage. Someone who has typed
+          a query has already told us what they want; asking them what they
+          drive first is answering a question they did not ask. A category
+          choice and a row's "View all" are the same kind of statement, so
+          they behave the same way.
 
-          So the grid leads on a results page and the aids follow it, and the
-          journey applies where it is actually a journey. The reason the
-          earlier fix had to hide these sections entirely no longer holds:
-          page one is server-rendered now, so the grid is in the HTML on
-          arrival rather than waiting on a fetch that might never land.
+          So the grid leads on a narrowed page and the aids follow it, and the
+          journey applies where it is actually a journey.
         */}
-        {isSearch ? (
+        {isNarrowed ? (
           <>
             {marketplace}
             <CatalogVehicleFinderSection />
@@ -150,6 +194,32 @@ export default async function AllProductsPage({
             <CatalogHero />
             <CatalogVehicleFinderSection />
             <PopularCategoriesSection />
+
+            {/* The systems, as rows of real stock. This is the discovery the
+                page leads with; the grid below is the complete catalogue for
+                anyone who would rather filter it themselves. */}
+            <CatalogSectionRails
+              sections={sections}
+              anchorId="systems"
+              viewAllHref={(s) =>
+                `${routes.all}?section=${encodeURIComponent(s.key)}`
+              }
+              closing={{
+                title: "Browse all products",
+                detail: (
+                  <>
+                    <span className="tabular-nums">
+                      {initialData.total.toLocaleString()}
+                    </span>{" "}
+                    listings, with search, category, brand, budget and
+                    condition filters.
+                  </>
+                ),
+                href: "#all-products",
+                cta: "Open the full catalog",
+              }}
+            />
+
             {marketplace}
             <TrendingRail />
             <SeasonalCollectionsSection />
