@@ -199,8 +199,9 @@ const SECTION_ORDER: Record<SectionScope, string[]> = {
    * leads with the way a build is actually assembled -- engine, then what
    * feeds it, then what moves the power, then what controls it -- which
    * brings forward the four part types the category system does not model at
-   * all (fuel system, cooling, exhaust, steering). Those four are 470
-   * listings that no category row can surface.
+   * all. Fuel System (326), Cooling (123), Exhaust (118) and Steering (77)
+   * are 644 listings that no category row can surface, because the catalogue
+   * files them under engine, suspension and the rest.
    *
    * MAX_SECTIONS caps what is rendered; the tail is here so that a row
    * failing the minimum is replaced by the next real one rather than leaving
