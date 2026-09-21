@@ -11,6 +11,8 @@ import { MANUAL_METHODS } from "@/lib/payments/manual-methods";
  *    every cart, and the Shipping Policy (section 4) says the same;
  *  - processing time: Shipping Policy, section 1;
  *  - returns: Returns & Refund Policy, sections 2-10;
+ *  - warranty: whatever the listing itself states, read against the Warranty
+ *    Policy at /warranty -- never a default;
  *  - payment methods: the enabled entries in lib/payments/manual-methods.ts,
  *    which is the list checkout renders, plus the NOWPayments crypto option.
  *
@@ -20,6 +22,7 @@ import { MANUAL_METHODS } from "@/lib/payments/manual-methods";
 
 export const SHIPPING_POLICY_HREF = "/policies/shipping-policy";
 export const RETURN_POLICY_HREF = "/policies/refund-policy";
+export const WARRANTY_POLICY_HREF = "/warranty";
 export const START_RETURN_HREF = "/returns";
 export const CONTACT_HREF = "/contact";
 
@@ -35,12 +38,11 @@ export const REFUND_PROCESSING = "5–10 business days";
 /**
  * How the item travels, read from the listing's own freight notes.
  *
- * The notes are catalog data and stay as authored. Only the handling class is
- * taken from them: several also say "Cost calculated by destination" or offer
- * liftgate service "at checkout", and neither is true of the checkout, which
- * charges nothing for standard shipping and has no liftgate option. Listings
- * without notes return undefined -- the page says nothing rather than
- * guessing from the category.
+ * Only the handling class is taken from the notes. They are catalog data,
+ * and some still carry product-specific handling detail (a dock or forklift
+ * at delivery) that belongs on the listing rather than in this summary.
+ * Listings without notes return undefined -- the page says nothing rather
+ * than guessing from the category.
  *
  * Order matters. "Standard insured parcel/courier -- no special freight
  * handling required" mentions freight only to rule it out, and a multi-box

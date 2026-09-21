@@ -497,9 +497,9 @@ export const MARKETS: Market[] = [
       "canopy",
       "interior",
     ],
-    seoTitle: "Engines, Turbos, Suspension & More, Shipped Worldwide",
+    seoTitle: "Engines, Turbos, Suspension & More, Shipped Internationally",
     seoDescription:
-      "The complete DrivoraParts catalog by system: engines, transmissions, turbochargers, suspension, brakes, electronics, lighting, wheels and 4x4 accessories, shipped worldwide.",
+      "The complete DrivoraParts catalog by system: engines, transmissions, turbochargers, suspension, brakes, electronics, lighting, wheels and 4x4 accessories, shipped internationally.",
   },
 ];
 

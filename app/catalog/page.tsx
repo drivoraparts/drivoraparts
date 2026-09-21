@@ -17,7 +17,7 @@ import {
 export const dynamic = "force-static";
 
 const DESCRIPTION =
-  "Shop DrivoraParts by market: trucks, diesel and performance for the USA, 4WDs and utes for Australia, 4x4s and European performance for the UK, and the complete catalog, shipped worldwide.";
+  "Shop DrivoraParts by market: trucks, diesel and performance for the USA, 4WDs and utes for Australia, 4x4s and European performance for the UK, and the complete catalog, shipped internationally.";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Shop Parts by Market",

@@ -20,7 +20,8 @@ export type ProductCatalogMeta = {
   /** Absent when mileage does not apply to this product. */
   mileage?: string;
   conditionLabel: string;
-  warranty: string;
+  /** Absent when the listing states no warranty -- see resolveProductWarranty. */
+  warranty?: string;
   rating: number;
   reviewCount: number;
   descriptionBody: string;
@@ -231,20 +232,27 @@ export function resolveProductMileage(product: Product): string | undefined {
   return "Inquire for Mileage";
 }
 
+/**
+ * The warranty the listing states, exactly as it states it -- or nothing.
+ *
+ * This used to end in `return "24 Month Warranty"`, which gave a two-year
+ * warranty to 19 listings that state none, most of them used parts. It also
+ * rewrote "24-Month Limited Warranty" as "24-Month Warranty", dropping the
+ * word that limits it. Under the Warranty Policy (/warranty) the listing is
+ * the source of any warranty, and a listing that states none carries no
+ * separate DrivoraParts warranty -- so absence has to reach the page as
+ * absence.
+ */
 export function resolveProductWarranty(
   product: Product,
   description?: string
-): string {
+): string | undefined {
   if (product.warranty?.trim()) return product.warranty.trim();
 
   const fromDescription = description
     ? extractWarranty(description)
     : undefined;
-  if (fromDescription) {
-    return fromDescription.replace(/limited warranty/i, "Warranty").trim();
-  }
-
-  return "24 Month Warranty";
+  return fromDescription || undefined;
 }
 
 export function resolveProductHorsepower(product: Product): string | undefined {

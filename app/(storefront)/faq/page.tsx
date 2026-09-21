@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
+import {
+  DIRECT_PAYMENT_METHODS,
+  ORDER_PROCESSING,
+  WARRANTY_POLICY_HREF,
+  listWithOr,
+} from "@/lib/content/purchase-terms";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Frequently Asked Questions",
   description:
-    "Answers to common questions about DrivoraParts orders, payment, shipping, fitment, and returns.",
+    "Answers to common questions about DrivoraParts orders, payment, shipping, fitment, warranty, and returns.",
   path: "/faq",
 });
 
@@ -17,13 +23,15 @@ type FaqItem = {
 const FAQS: FaqItem[] = [
   {
     question: "How do I pay for an order?",
+    // Said checkout was crypto-only. It lists the direct methods first, from
+    // lib/payments/manual-methods.ts, which is where this answer reads them.
     answer: (
       <>
-        Checkout is handled through our secure crypto payment processor,
-        accepting Bitcoin, Ethereum, USDT, and 300+ other cryptocurrencies. If
-        you don&apos;t hold crypto yet, the checkout page walks you through
-        buying it with a debit or credit card via a trusted exchange partner
-        first, then sending it to your order&apos;s payment address.
+        At checkout you choose a direct payment method — {listWithOr(DIRECT_PAYMENT_METHODS)}{" "}
+        — or pay in cryptocurrency (Bitcoin, Ethereum, USDT and 300+ other
+        coins) through NOWPayments. For a direct payment, the payment details
+        are sent to you after you order, and the order ships once the payment
+        is received and verified.
       </>
     ),
   },
@@ -45,8 +53,10 @@ const FAQS: FaqItem[] = [
   },
   {
     question: "How do I know if a part fits my vehicle?",
+    // "Every listing shows fitment details" was not true: about one listing
+    // in six records no fitment, and its page says so.
     answer:
-      "Every listing shows fitment details for the specific make, model, and years it's compatible with. If anything is unclear or your vehicle isn't explicitly listed, confirm with us before ordering — reach out via the contact form with your part number and vehicle details.",
+      "Listings show the fitment recorded for the part: a list of vehicle applications, a fitment note, or universal where the maker sells it that way. Some listings record no fitment. If anything is unclear or your vehicle isn't listed, confirm with us before ordering — reach out via the contact form with your part number and vehicle details.",
   },
   {
     question: "What condition are the parts in?",
@@ -57,10 +67,14 @@ const FAQS: FaqItem[] = [
     question: "How long does shipping take, and do you ship internationally?",
     answer: (
       <>
-        Yes, we ship worldwide. Smaller parts ship via standard carriers;
-        larger items (engines, transmissions, canopies, truck beds) are
-        coordinated via freight/LTL shipping. Full timelines and details are
-        in our{" "}
+        Yes. We ship to most domestic and many international destinations,
+        and standard shipping is free on every order; some large or
+        regulated items can only ship to certain regions. Orders are
+        typically processed within {ORDER_PROCESSING} once payment is
+        verified, and delivery typically takes 5–15 business days after that
+        — estimates, not guarantees. Smaller parts ship via standard carriers;
+        larger items (engines, transmissions, canopies, truck beds) ship as
+        freight/LTL. Full timelines and details are in our{" "}
         <Link
           href="/policies/shipping-policy"
           className="text-accent hover:text-accent-hover"
@@ -89,6 +103,21 @@ const FAQS: FaqItem[] = [
           Returns &amp; Refund Policy
         </Link>
         .
+      </>
+    ),
+  },
+  {
+    question: "Do parts come with a warranty?",
+    answer: (
+      <>
+        It depends on the part. Where a manufacturer or supplier warranty
+        applies, the product listing states it, and that warranty&apos;s terms
+        govern. A listing that states no warranty carries no separate
+        DrivoraParts warranty. Our{" "}
+        <Link href={WARRANTY_POLICY_HREF} className="text-accent hover:text-accent-hover">
+          Warranty Policy
+        </Link>{" "}
+        explains how to submit a warranty request.
       </>
     ),
   },

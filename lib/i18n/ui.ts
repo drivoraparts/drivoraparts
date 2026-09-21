@@ -33,6 +33,7 @@ export const UI = {
   legalOperations: "Legal & Operations",
   shippingPolicy: "Shipping Policy",
   returnsRefunds: "Returns & Refunds",
+  warrantyPolicy: "Warranty Policy",
   termsOfSale: "Terms of Sale",
   disclaimer: "Disclaimer",
   affiliateDisclosure: "Affiliate Disclosure",

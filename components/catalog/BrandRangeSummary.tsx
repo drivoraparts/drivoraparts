@@ -79,11 +79,16 @@ export default function BrandRangeSummary({
         ))}
       </ul>
 
+      {/* This used to say every listing is "checked for correct photos and
+          specifications before it goes live", "ships worldwide" and "is
+          covered by the warranty stated on the product page". Most listings
+          are bulk imports the site itself flags as unreviewed, the Shipping
+          Policy ships to most destinations rather than all, and some listings
+          state no warranty. */}
       <p className="text-sm leading-relaxed text-neutral-600">
-        Every {brandName} {category} listing on DrivoraParts is checked for
-        correct photos and specifications before it goes live, ships worldwide
-        with freight arranged on heavy assemblies, and is covered by the
-        warranty stated on the product page.{" "}
+        Price, condition and any fitment or warranty terms are stated on each{" "}
+        {brandName} listing. Standard shipping is free on every order; heavy
+        assemblies ship as freight.{" "}
         <Link
           href={routes.category(categorySlug)}
           className="font-medium text-accent underline-offset-2 hover:underline"

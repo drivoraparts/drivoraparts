@@ -8,7 +8,7 @@ import {
 import { marketScope } from "@/lib/catalog/markets";
 import { compareByMerchandising } from "@/lib/catalog/merchandising";
 import { sectionMatcher } from "@/lib/catalog/sections";
-import { shortFitment } from "@/lib/catalog/short-fitment";
+import { compactFitment, shortFitment } from "@/lib/catalog/short-fitment";
 import { CATALOG_DEFAULT_LIMIT } from "@/lib/catalog/query-options";
 import {
   matchesPriceFilter,
@@ -262,7 +262,7 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
     isNew: Boolean(product.createdAt && product.createdAt >= newSinceMs),
     brandName: brandName(product.brand),
     partNumber: product.partNumber || undefined,
-    fitment: shortFitment(product.fitment),
+    fitment: shortFitment(compactFitment(product)),
     condition: product.condition || undefined,
     conditionLabel: product.condition ? getConditionLabel(product) : undefined,
     inStock: product.stock,

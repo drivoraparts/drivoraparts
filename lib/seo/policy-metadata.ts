@@ -22,6 +22,11 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
     description:
       "30-day return window, condition requirements, and refund processing for DrivoraParts performance parts orders.",
   },
+  "/warranty": {
+    title: "Warranty Policy",
+    description:
+      "How warranty coverage works at DrivoraParts: the product listing states any manufacturer or supplier warranty, and how to submit a warranty request.",
+  },
   "/policies/terms-of-service": {
     title: "Terms of Service",
     description:

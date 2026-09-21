@@ -4,7 +4,7 @@ import {
   getProductThumbnail,
   resolveProductGallery,
 } from "@/lib/inventory";
-import { shortFitment } from "@/lib/catalog/short-fitment";
+import { compactFitment, shortFitment } from "@/lib/catalog/short-fitment";
 import type { Product } from "@/lib/inventory/types";
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
 
@@ -16,9 +16,11 @@ import type { CatalogProductCardData } from "@/components/catalog/CatalogProduct
  * brand, what the part fits, its condition and whether it was in stock. The
  * card's own type had always declared those fields; nothing was filling them.
  *
- * Everything here is read from the listing. Nothing is derived, defaulted or
- * inferred: a listing with no fitment recorded yields no fitment, and the card
- * prints nothing rather than a guess.
+ * Everything here is read from the listing. Nothing is defaulted or inferred:
+ * a listing with no fitment recorded yields no fitment, and the card prints
+ * nothing rather than a guess. (The fitment line is the listing's own, or a
+ * summary of its own application list where the stored line leaves a make
+ * out -- see compactFitment.)
  */
 export function toCatalogCardData(product: Product): CatalogProductCardData {
   return {
@@ -36,7 +38,7 @@ export function toCatalogCardData(product: Product): CatalogProductCardData {
     // than "wilwood-big-brake-kits". Same resolution the query uses.
     brandName: getBrandBySlug(product.brand)?.name ?? product.brand,
     partNumber: product.partNumber || undefined,
-    fitment: shortFitment(product.fitment),
+    fitment: shortFitment(compactFitment(product)),
     inStock: product.stock,
   };
 }

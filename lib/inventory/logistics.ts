@@ -18,7 +18,7 @@
 import type { ProductLogistics } from "./types";
 
 const ENGINE_FREIGHT =
-  "Ships as palletized heavy freight. Liftgate service and residential delivery available at checkout; a commercial address is recommended for fastest handling.";
+  "Ships as palletized heavy freight. A commercial address is recommended for fastest handling.";
 const KIT_FREIGHT =
   "Ships in multiple insured boxes via ground courier; larger kits may be palletized.";
 const PARCEL_FREIGHT =

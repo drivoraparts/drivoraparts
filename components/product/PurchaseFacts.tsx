@@ -8,6 +8,7 @@ import {
   ORDER_PROCESSING,
   RETURN_POLICY_HREF,
   RETURN_WINDOW_DAYS,
+  WARRANTY_POLICY_HREF,
   listWithOr,
   shipmentType,
 } from "@/lib/content/purchase-terms";
@@ -78,18 +79,37 @@ export default function PurchaseFacts({
         </p>
       </FactRow>
 
-      {warranty ? (
-        <FactRow label="Warranty">
-          <p className="font-semibold">
-            <TranslatedText as="span">{warranty}</TranslatedText>
-          </p>
-          {warrantyTerms ? (
-            <p className="mt-0.5 text-muted">
-              <TranslatedText as="span">{warrantyTerms}</TranslatedText>
+      {/* The listing's own warranty, or a plain statement that it has none.
+          Terms qualify a stated warranty, so they are shown only with one. */}
+      <FactRow label="Warranty">
+        {warranty ? (
+          <>
+            <p className="font-semibold">
+              <TranslatedText as="span">{warranty}</TranslatedText>
             </p>
-          ) : null}
-        </FactRow>
-      ) : null}
+            <p className="mt-0.5 text-muted">
+              {warrantyTerms ? (
+                <>
+                  <TranslatedText as="span">{warrantyTerms}</TranslatedText>{" "}
+                </>
+              ) : null}
+              <Link href={WARRANTY_POLICY_HREF} prefetch={false} className={linkClass}>
+                Warranty policy
+              </Link>
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="font-semibold">None stated</p>
+            <p className="mt-0.5 text-muted">
+              This listing states no manufacturer or supplier warranty.{" "}
+              <Link href={WARRANTY_POLICY_HREF} prefetch={false} className={linkClass}>
+                Warranty policy
+              </Link>
+            </p>
+          </>
+        )}
+      </FactRow>
 
       {coreCharge ? (
         <FactRow label="Core">

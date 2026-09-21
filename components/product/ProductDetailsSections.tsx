@@ -19,6 +19,7 @@ import {
   RETURN_WINDOW_DAYS,
   SHIPPING_POLICY_HREF,
   START_RETURN_HREF,
+  WARRANTY_POLICY_HREF,
   shipmentType,
 } from "@/lib/content/purchase-terms";
 
@@ -322,10 +323,14 @@ export default function ProductDetailsSections({
           <SubHeading>Warranty</SubHeading>
           <TermList
             items={[
-              ...(warranty ? [<TranslatedText key="warranty" as="span">{warranty}</TranslatedText>] : []),
-              ...(warrantyTerms
-                ? [<TranslatedText key="terms" as="span">{warrantyTerms}</TranslatedText>]
-                : []),
+              ...(warranty
+                ? [
+                    <TranslatedText key="warranty" as="span">{warranty}</TranslatedText>,
+                    ...(warrantyTerms
+                      ? [<TranslatedText key="terms" as="span">{warrantyTerms}</TranslatedText>]
+                      : []),
+                  ]
+                : ["No manufacturer or supplier warranty is stated for this listing."]),
               ...(coreCharge
                 ? [
                     <>
@@ -334,9 +339,13 @@ export default function ProductDetailsSections({
                     </>,
                   ]
                 : []),
-              ...(!warranty && !warrantyTerms && !coreCharge
-                ? ["No warranty terms are recorded for this listing."]
-                : []),
+              <>
+                How coverage and warranty requests work:{" "}
+                <Link href={WARRANTY_POLICY_HREF} prefetch={false} className={linkClass}>
+                  warranty policy
+                </Link>
+                .
+              </>,
             ]}
           />
         </div>

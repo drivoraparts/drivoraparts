@@ -55,7 +55,7 @@ export function buildProductSeoDescription(input: ProductSeoInput): string {
     lead,
     brandLine,
     fitmentLine,
-    "Buy online at DrivoraParts with secure checkout and worldwide shipping.",
+    "Buy online at DrivoraParts with free standard shipping.",
   ]
     .filter(Boolean)
     .join(" ");

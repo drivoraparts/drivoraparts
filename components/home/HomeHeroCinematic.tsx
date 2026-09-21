@@ -113,11 +113,12 @@ export default function HomeHeroCinematic({ listingCount }: { listingCount: numb
       </section>
 
       {/* The stock line lives below the film, where it does not compete with
-          it. Wording unchanged. */}
+          it. It said "Worldwide delivery"; the Shipping Policy ships to most
+          domestic and many international destinations, not all of them. */}
       <div className="border-b border-border bg-chrome">
         <div className="mx-auto max-w-6xl px-5 py-4 sm:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-            {listingCount.toLocaleString()} listings in stock · Worldwide delivery
+            {listingCount.toLocaleString()} listings in stock · International delivery
           </p>
         </div>
       </div>

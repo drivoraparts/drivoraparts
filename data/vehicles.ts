@@ -123,7 +123,7 @@ export const vehiclePlatforms: VehiclePlatform[] = [
     exclude: [/range\s?rover/i, /polaris/i, /\brzr\b/i],
     seoTitle: "Ford Ranger 4x4 Parts & Accessories",
     seoDescription:
-      "Bull bars, lift kits, snorkels, canopies and roof racks for the Ford Ranger 4x4. PX/T6 and T6.2 (P703) fitment explained. Worldwide shipping from DrivoraParts.",
+      "Bull bars, lift kits, snorkels, canopies and roof racks for the Ford Ranger 4x4. PX/T6 and T6.2 (P703) fitment explained. International shipping from DrivoraParts.",
     keywords: [
       "ford ranger 4x4 parts",
       "ford ranger accessories",
@@ -174,7 +174,7 @@ export const vehiclePlatforms: VehiclePlatform[] = [
     include: [/hi-?lux/i],
     seoTitle: "Toyota HiLux 4x4 Parts & Accessories",
     seoDescription:
-      "Lift kits, bull bars, snorkels and canopies for the Toyota HiLux 4x4. AN120/AN130 and AN220/AN230 fitment explained. Worldwide shipping from DrivoraParts.",
+      "Lift kits, bull bars, snorkels and canopies for the Toyota HiLux 4x4. AN120/AN130 and AN220/AN230 fitment explained. International shipping from DrivoraParts.",
     keywords: [
       "toyota hilux 4x4 parts",
       "hilux accessories",
@@ -218,7 +218,7 @@ export const vehiclePlatforms: VehiclePlatform[] = [
     include: [/d-?max/i],
     seoTitle: "Isuzu D-Max 4x4 Parts & Accessories",
     seoDescription:
-      "Bull bars, lift kits, snorkels and canopies for the Isuzu D-Max 4x4 (RG01, 2019+). Fitment by cab configuration. Worldwide shipping from DrivoraParts.",
+      "Bull bars, lift kits, snorkels and canopies for the Isuzu D-Max 4x4 (RG01, 2019+). Fitment by cab configuration. International shipping from DrivoraParts.",
     keywords: [
       "isuzu d-max 4x4 parts",
       "d-max accessories",

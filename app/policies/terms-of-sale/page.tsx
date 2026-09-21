@@ -2,6 +2,7 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 
 export const metadata = buildPolicyMetadata("/policies/terms-of-sale");
 
+import Link from "next/link";
 import Policy from "@/components/policy/Policy";
 
 export default function TermsOfSalePage() {
@@ -62,6 +63,14 @@ export default function TermsOfSalePage() {
           heading: "Warranties",
           paragraphs: [
             "Unless expressly stated in writing, products are sold without any warranty from DrivoraParts LLC. Any applicable manufacturer or third-party warranties are passed through to you to the extent permitted. To the maximum extent permitted by law, we disclaim all implied warranties, including merchantability and fitness for a particular purpose.",
+            <>
+              How warranty coverage is determined for a product, and how to submit a warranty
+              request, is explained in our{" "}
+              <Link href="/warranty" className="text-accent hover:text-accent-hover">
+                Warranty Policy
+              </Link>
+              .
+            </>,
           ],
         },
         {

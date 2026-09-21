@@ -32,6 +32,7 @@ const sections = [
       { name: "Terms of Sale", href: "/policies/terms-of-sale" },
       { name: "Shipping Policy", href: "/policies/shipping-policy" },
       { name: "Return & Refund Policy", href: "/policies/refund-policy" },
+      { name: "Warranty Policy", href: "/warranty" },
     ],
   },
   {

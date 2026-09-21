@@ -11,6 +11,7 @@ import {
   brands,
 } from "@/lib/inventory";
 import { getProductThumbnail } from "@/lib/inventory/media";
+import { compactFitment } from "@/lib/catalog/short-fitment";
 import ProductTemplate from "@/components/product/ProductTemplate";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import {
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     name: product.name,
     category: product.category,
     brand: inventoryProduct?.brand ?? product.brand,
-    fitment: inventoryProduct?.fitment,
+    fitment: inventoryProduct ? compactFitment(inventoryProduct) : undefined,
     description: product.description,
   };
 

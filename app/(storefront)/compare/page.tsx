@@ -12,6 +12,7 @@ import {
 } from "@/lib/compare";
 import { getProductThumbnail } from "@/lib/inventory";
 import { routes } from "@/lib/inventory/routes";
+import { compactFitment } from "@/lib/catalog/short-fitment";
 
 type FullProduct = {
   id: number;
@@ -26,6 +27,7 @@ type FullProduct = {
   weight?: string;
   coreCharge?: string;
   fitment?: string;
+  fitmentApplications?: { make: string; yearFrom: number | null; yearTo: number | null }[];
   drivetrain?: string;
   partNumber?: string;
   thumbnail?: string;
@@ -176,7 +178,9 @@ export default function ComparePage() {
                       key={product.id}
                       className="border-b border-neutral-100 px-3 py-3 text-neutral-700"
                     >
-                      {(product[row.key] as string) || "—"}
+                      {(row.key === "fitment"
+                        ? compactFitment(product)
+                        : (product[row.key] as string)) || "—"}
                     </td>
                   ))}
                 </tr>

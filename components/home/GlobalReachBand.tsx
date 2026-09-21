@@ -9,12 +9,18 @@ import { getPhoto } from "@/lib/media/homepage-photo";
  * The figures here are capabilities, not achievements. There is deliberately
  * no order count, customer count or rating: none of those are measured, and
  * inventing them is the fastest way to make a real business look fake.
+ *
+ * Each one has to hold at checkout, too. "Free & express" advertised an
+ * express option checkout does not offer until a rate is configured (see
+ * lib/shipping/config.ts), "Worldwide" outran the Shipping Policy's "most
+ * domestic and many international destinations", and "Secure & crypto"
+ * skipped the six direct payment methods checkout lists first.
  */
 const FACTS = [
-  { label: "Delivery", value: "Worldwide" },
-  { label: "Shipping", value: "Free & express" },
+  { label: "Delivery", value: "International" },
+  { label: "Shipping", value: "Free standard" },
   { label: "Oversize freight", value: "LTL capable" },
-  { label: "Checkout", value: "Secure & crypto" },
+  { label: "Payment", value: "Direct or crypto" },
 ];
 
 export default function GlobalReachBand() {
@@ -44,9 +50,9 @@ export default function GlobalReachBand() {
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-on-dark">
             4WDs and utes across Australia. Trucks and performance across the
-            USA. Builds everywhere. Small parts move by air. Truck beds, engines
-            and transmissions move by freight. Tell us where it is going and we
-            will quote it properly.
+            USA. Standard shipping is free on every order, to most domestic and
+            many international destinations. Truck beds, engines and
+            transmissions move by freight.
           </p>
         </ScrollReveal>
 

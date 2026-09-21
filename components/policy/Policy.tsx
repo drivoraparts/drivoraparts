@@ -6,12 +6,17 @@
    identity, structured H2 sections, and a footer note.
 ========================================================= */
 
+import type { ReactNode } from "react";
 import { COMPANY_LEGAL_NAME, COMPANY_SUPPORT_EMAIL, US_HEADQUARTERS } from "@/lib/content/company";
 
 export type PolicySection = {
   heading: string;
-  paragraphs?: string[];
-  bullets?: string[];
+  paragraphs?: ReactNode[];
+  bullets?: ReactNode[];
+  /** A numbered procedure, for steps that happen in order. */
+  steps?: ReactNode[];
+  /** Paragraphs that follow the list rather than introduce it. */
+  closing?: ReactNode[];
 };
 
 export default function Policy({
@@ -70,6 +75,20 @@ export default function Policy({
                 ))}
               </ul>
             )}
+
+            {section.steps && (
+              <ol className="list-decimal space-y-1 pl-6 leading-relaxed text-neutral-600">
+                {section.steps.map((step, i) => (
+                  <li key={i}>{step}</li>
+                ))}
+              </ol>
+            )}
+
+            {section.closing?.map((paragraph, i) => (
+              <p key={i} className="mt-3 leading-relaxed text-neutral-600">
+                {paragraph}
+              </p>
+            ))}
           </section>
         ))}
       </div>
@@ -77,7 +96,7 @@ export default function Policy({
       <p className="mt-14 border-t border-neutral-200 pt-6 text-xs leading-relaxed text-neutral-500">
         © {new Date().getFullYear()} {COMPANY_LEGAL_NAME}. All rights reserved. This
         document is provided for general informational purposes only and does
-        not constitute legal advice. For questions about this policy, contact
+        not constitute legal advice. For questions about this policy, contact{" "}
         {COMPANY_LEGAL_NAME} at {COMPANY_SUPPORT_EMAIL}.
       </p>
     </article>

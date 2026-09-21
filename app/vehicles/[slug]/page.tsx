@@ -9,6 +9,7 @@ import {
 import vehicleMedia from "@/data/vehicle-media.json";
 import { getSharedPlatformParts, getVehicleParts } from "@/lib/vehicles/parts";
 import { routes } from "@/lib/inventory";
+import { SHIPPING_POLICY_HREF, WARRANTY_POLICY_HREF } from "@/lib/content/purchase-terms";
 import PageHeading from "@/components/catalog/PageHeading";
 import CatalogProductCard from "@/components/catalog/CatalogProductCard";
 import ImageCarousel from "@/components/product/ImageCarousel";
@@ -269,27 +270,29 @@ export default async function Page({ params }: PageProps) {
           <div className="rounded-xl border border-neutral-200 p-4">
             <h3 className="mb-2 text-sm font-semibold text-neutral-900">Warranty</h3>
             <p className="text-sm leading-relaxed text-neutral-600">
-              Warranty terms are set per part and shown on each listing. All
-              orders are covered by the DrivoraParts Warranty Policy.
+              Warranty coverage varies by part. Where a manufacturer or supplier
+              warranty applies, it is stated on the listing; a listing that
+              states none carries no separate DrivoraParts warranty.
             </p>
             <Link
-              href="/returns"
+              href={WARRANTY_POLICY_HREF}
               className="mt-3 inline-block text-sm font-medium text-accent hover:underline"
             >
-              Returns &amp; warranty policy
+              Warranty policy
             </Link>
           </div>
           <div className="rounded-xl border border-neutral-200 p-4">
             <h3 className="mb-2 text-sm font-semibold text-neutral-900">Shipping</h3>
             <p className="text-sm leading-relaxed text-neutral-600">
-              Worldwide shipping is available. Bar work, canopies and suspension
-              ship as freight, with cost calculated by destination at checkout.
+              Standard shipping is free on every order, to most domestic and
+              many international destinations. Bar work, canopies and
+              suspension ship as freight.
             </p>
             <Link
-              href="/faq"
+              href={SHIPPING_POLICY_HREF}
               className="mt-3 inline-block text-sm font-medium text-accent hover:underline"
             >
-              Shipping questions
+              Shipping policy
             </Link>
           </div>
         </section>

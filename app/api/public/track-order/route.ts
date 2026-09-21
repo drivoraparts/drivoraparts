@@ -3,6 +3,7 @@ import { getOrderById, getOrderByNumber, listOrderEvents, type OrderWithDetails 
 import { findPaymentByAnyProviderId, findPaymentByOrderId } from "@/lib/db/payments";
 import { isSupabaseConfigured } from "@/lib/env";
 import { getProductById } from "@/lib/inventory";
+import { compactFitment } from "@/lib/catalog/short-fitment";
 import { buildCustomerTrackingView } from "@/lib/tracking/customer-view";
 
 export const dynamic = "force-dynamic";
@@ -76,7 +77,7 @@ export async function GET(req: Request) {
         unitPrice: Number(item.price),
         lineTotal: Number(item.price) * item.quantity,
         partNumber: product?.partNumber ?? null,
-        fitment: product?.fitment ?? null,
+        fitment: (product && compactFitment(product)) ?? null,
       };
     });
 

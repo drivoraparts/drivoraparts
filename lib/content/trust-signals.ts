@@ -7,6 +7,7 @@ import {
 } from "./company";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 import { isExpressConfigured } from "@/lib/shipping/config";
+import { DIRECT_PAYMENT_METHODS } from "@/lib/content/purchase-terms";
 
 export type TrustSignal = {
   id: string;
@@ -17,10 +18,13 @@ export type TrustSignal = {
 
 export const TRUST_SECTION = {
   eyebrow: "Shop with confidence",
-  headline: "Registered US seller · encrypted checkout · real inventory",
+  // "encrypted checkout" was dropped from this line: the site still serves
+  // plain http:// without redirecting (a Cloudflare setting), so it was not
+  // true of every visit. See the security card below.
+  headline: "Registered US seller · published policies · real inventory",
   // Derived, not hand-written: a hub that changes in company.ts must not be
   // able to leave this line claiming somewhere we no longer ship from.
-  subhead: `${COMPANY_LEGAL_NAME} operates from ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName} with distribution in ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.country} and ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}. Freight-ready logistics and NOWPayments crypto checkout, with fitment confirmed on request before you order.`,
+  subhead: `${COMPANY_LEGAL_NAME} operates from ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName} with distribution in ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.country} and ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.country}. Freight-ready logistics, direct payment or NOWPayments crypto at checkout, and fitment confirmed on request before you order.`,
   legalLine: `${COMPANY_LEGAL_NAME} · ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} · ${COMPANY_SUPPORT_EMAIL}`,
   listingStat: `${HOME_LISTING_COUNT.toLocaleString()}+ active listings`,
 } as const;
@@ -84,17 +88,25 @@ export const TRUST_CATEGORIES: TrustCategory[] = [
   {
     id: "payments",
     eyebrow: "Payments",
-    headline: "Pay your way — crypto, done right",
-    detail:
-      "Every order runs through NOWPayments. No bank holds, no chargebacks, no placeholder badge.",
-    chips: ["Bitcoin", "Ethereum", "USDT", "300+ coins"],
+    /*
+     * This said "Every order runs through NOWPayments. No bank holds, no
+     * chargebacks" -- directly under a strip listing the six direct methods
+     * checkout offers first. The methods are read from the list checkout
+     * renders, so the card cannot name one checkout does not offer.
+     */
+    headline: "Direct payment or crypto",
+    detail: `Pay by ${DIRECT_PAYMENT_METHODS.join(", ")}, or in cryptocurrency through NOWPayments. Direct payments are confirmed by DrivoraParts before the order ships.`,
+    chips: ["Direct payment", "Bitcoin", "Ethereum", "USDT", "300+ coins"],
     seal: "payments",
   },
   {
     id: "shipping",
     eyebrow: "Shipping & Returns",
     headline: "Free shipping. 30-day money-back guarantee.",
-    detail: `Every order ships free, worldwide — from single parts to full engine assemblies, coordinated from our US, ${JAPAN_LOGISTICS_HUB.country}, and ${AUSTRALIA_LOGISTICS_HUB.country} hubs. Not the right fit? Return it within 30 days for a refund.`,
+    // "Worldwide" and "Not the right fit? Return it" both went further than
+    // the policies: shipping reaches most domestic and many international
+    // destinations, and a return has to be unused and uninstalled.
+    detail: `Every order ships free — from single parts to full engine assemblies — to most domestic and many international destinations, coordinated from our US, ${JAPAN_LOGISTICS_HUB.country}, and ${AUSTRALIA_LOGISTICS_HUB.country} hubs. Unused, uninstalled items can be returned within 30 days of delivery for a refund.`,
     /*
      * "Express Available" appears only once an express price is actually
      * configured (see lib/shipping/config.ts). Until then the option does not
@@ -110,23 +122,35 @@ export const TRUST_CATEGORIES: TrustCategory[] = [
     ],
     seal: "shipping",
   },
+  /*
+   * This read "Encrypted, every request -- Checkout and account pages run on
+   * modern HTTPS/TLS, no exceptions", with a "256-bit TLS" chip. It was not
+   * true: http://drivoraparts.com/checkout is served over plain HTTP with no
+   * redirect (Cloudflare's "Always Use HTTPS" is off), and the cipher is
+   * whatever the browser negotiates. What the payment flow itself does is
+   * verifiable in the code, so that is what the card says.
+   */
   {
     id: "security",
-    eyebrow: "Security",
-    headline: "Encrypted, every request",
-    detail: "Checkout and account pages run on modern HTTPS/TLS — no exceptions.",
-    chips: ["256-bit TLS", "Encrypted Checkout"],
+    eyebrow: "Payment security",
+    headline: "Payment confirmed before dispatch",
+    detail:
+      "Direct-payment details are sent to you for each order rather than published on the site, and crypto is paid on a NOWPayments hosted invoice. Orders ship once payment is received and verified.",
+    chips: ["Per-order payment details", "Hosted crypto invoice", "Verified before dispatch"],
     seal: "ssl",
   },
   {
     id: "verified",
-    eyebrow: "Verified Marketplace",
+    eyebrow: "Company",
     headline: `${COMPANY_LEGAL_NAME} — US registered`,
     // "Every listing reviewed before it goes live" and the "Verified Listings"
     // chip were removed for the same reason as the inventory badge above --
     // most listings are bulk imports the site itself flags as unreviewed.
+    // The eyebrow said "Verified Marketplace" for the same unsupported
+    // reason, and "Professional Support" named a service level nothing
+    // defines; support is the contact form and email address.
     detail: `Corporate HQ in ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state}. A real company you can email, with policies you can read.`,
-    chips: ["US Registered", "Named Company", "Professional Support"],
+    chips: ["US Registered", "Named Company", "Email Support"],
     seal: "company",
   },
 ];

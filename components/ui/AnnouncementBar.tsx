@@ -3,6 +3,7 @@ import {
   BULK_ORDER_DISCOUNT_PERCENT,
 } from "@/lib/inventory/discounts";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
+import { DIRECT_PAYMENT_METHODS, listWithOr } from "@/lib/content/purchase-terms";
 
 type AnnouncementMessage = {
   icon: string;
@@ -15,12 +16,23 @@ type AnnouncementMessage = {
 // does not actually apply.
 const DEFAULT_MESSAGES: AnnouncementMessage[] = [
   { icon: "🔧", text: `Buy 2+ Items — Save ${BULK_ORDER_DISCOUNT_PERCENT}%` },
-  { icon: "🌎", text: "Shipping & Freight — Australia · USA · Worldwide" },
+  // Was "Australia · USA · Worldwide". The Shipping Policy ships free to most
+  // domestic and many international destinations -- not everywhere.
+  { icon: "🌎", text: "Free Standard Shipping — USA · Australia · International" },
   { icon: "🛠️", text: "OEM & Aftermarket Parts For Serious Builds" },
   { icon: "💳", text: `Every Order — Save ${BASE_ORDER_DISCOUNT_PERCENT}%` },
   // "Verified Listings" removed: most listings are bulk imports the site's own
   // SEO layer flags as unreviewed, so the claim could not be supported.
-  { icon: "🔒", text: "Secure Checkout · Encrypted · Global Freight" },
+  //
+  // "Secure Checkout · Encrypted · Global Freight" removed as well: the site
+  // still answers plain http:// without redirecting to HTTPS (a Cloudflare
+  // setting, not something this code controls), so "Encrypted" was not true
+  // of every visit, and "Global Freight" overstated the Shipping Policy. What
+  // checkout does offer is stated instead, from the list checkout renders.
+  {
+    icon: "💵",
+    text: `Pay by ${listWithOr([...DIRECT_PAYMENT_METHODS, "Crypto"])}`,
+  },
   // Imported rather than written out — this line read "1,446+" while the
   // catalog held 1,867, which is exactly how the number drifted before.
   {

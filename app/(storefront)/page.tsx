@@ -27,7 +27,7 @@ export const revalidate = 600;
 export const metadata = buildPageMetadata({
   title: "Performance Auto Parts & Truck Beds Marketplace",
   description:
-    "Shop 1,400+ listings: rust-free truck beds, LS & JDM engine swaps, OME & Fox 4x4 lift kits, ARB bull bars, Safari snorkels, turbos, brakes & suspension. Secure crypto checkout with worldwide shipping.",
+    `Shop ${HOME_LISTING_COUNT.toLocaleString("en-US")}+ listings: rust-free truck beds, LS & JDM engine swaps, OME & Fox 4x4 lift kits, ARB bull bars, Safari snorkels, turbos, brakes & suspension. Free standard shipping on every order.`,
   path: "/",
   keywords: SITE_KEYWORDS,
 });

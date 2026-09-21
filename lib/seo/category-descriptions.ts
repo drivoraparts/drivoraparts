@@ -39,7 +39,7 @@ export function getCategorySeoDescription(slug: string, productCount = 0): strin
 
   if (productCount > 0) {
     return truncateSeoDescription(
-      `${base} ${productCount.toLocaleString()}+ in-stock listings with worldwide shipping.`
+      `${base} ${productCount.toLocaleString()}+ in-stock listings with free standard shipping.`
     );
   }
 
@@ -64,12 +64,14 @@ export function getBrandSeoDescription(
    * These promised "fitment specs" and "verified listings". Most listings are
    * bulk imports with no fitment field and the generic description the SEO
    * layer already noindexes, so neither could be supported. Replaced with
-   * claims that hold for every listing: the count, shipping and checkout.
+   * claims that hold for every listing: the count and free standard shipping
+   * (Shipping Policy, section 4). "Secure checkout" went too: the site still
+   * serves plain http:// without redirecting, so it was not true of every visit.
    */
   const tail =
     productCount > 0
-      ? `${productCount} listing${productCount === 1 ? "" : "s"} with free standard shipping & secure checkout at DrivoraParts.`
-      : "Free standard shipping worldwide and secure crypto checkout at DrivoraParts.";
+      ? `${productCount} listing${productCount === 1 ? "" : "s"} with free standard shipping at DrivoraParts.`
+      : "Free standard shipping at DrivoraParts.";
 
   return truncateSeoDescription(`${base} ${tail}`);
 }

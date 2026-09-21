@@ -40,7 +40,7 @@ export function websiteJsonLd(): JsonLd {
     name: SITE_NAME,
     url: absoluteUrl("/"),
     description:
-      "Shop performance engines, rust-free truck beds, 4x4 lift kits, bull bars, snorkels, turbos, brakes, suspension and swap parts with worldwide shipping.",
+      "Shop performance engines, rust-free truck beds, 4x4 lift kits, bull bars, snorkels, turbos, brakes, suspension and swap parts with free standard shipping.",
     potentialAction: {
       "@type": "SearchAction",
       target: {

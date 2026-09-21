@@ -58,6 +58,7 @@ export default function FooterContent() {
           <div className="flex flex-col gap-2 text-sm text-muted-on-dark">
             <Link href="/policies/shipping-policy">{t("shippingPolicy")}</Link>
             <Link href="/policies/refund-policy">{t("returnsRefunds")}</Link>
+            <Link href="/warranty">{t("warrantyPolicy")}</Link>
             <Link href="/policies/terms-of-sale">{t("termsOfSale")}</Link>
             <Link href="/policies/disclaimer">{t("disclaimer")}</Link>
             <Link href="/policies/affiliate-disclosure">{t("affiliateDisclosure")}</Link>

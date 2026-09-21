@@ -84,16 +84,18 @@ export default function GarageClosingSection() {
               >
                 Explore the catalog
               </Link>
-              {/* The freight-quote route came off the CTA section this
-                  replaced, where it was the only /contact link on the
-                  homepage. Dropping that section without it would have
-                  removed the page path to a quote. */}
+              {/* The /contact route came off the CTA section this replaced,
+                  where it was the only contact link on the homepage. It was
+                  labelled "Freight quote", but standard shipping is free on
+                  every order (Shipping Policy, section 4) and there is no
+                  freight charge to quote -- what a buyer of a truck bed or an
+                  engine needs to ask about is delivery. */}
               <Link
                 href="/contact"
                 prefetch={false}
                 className="touch-manipulation inline-flex items-center justify-center border border-white/35 px-10 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors duration-[var(--motion-duration-fast)] hover:bg-white/10 active:bg-white/15"
               >
-                Freight quote
+                Ask about freight
               </Link>
             </div>
           </div>
@@ -117,7 +119,7 @@ export default function GarageClosingSection() {
           prefetch={false}
           className="touch-manipulation inline-flex w-full items-center justify-center border border-white/35 px-8 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors duration-[var(--motion-duration-fast)] active:bg-white/15"
         >
-          Freight quote
+          Ask about freight
         </Link>
       </div>
     </section>
