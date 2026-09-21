@@ -174,12 +174,12 @@ export default function StickyPurchaseBar({
         <AddToCartButton
           product={product}
           quantity={quantity}
-          className="!flex-1 !rounded-none !border-2 !border-accent !bg-white !px-4 !py-3 !text-xs !font-black !uppercase !tracking-[0.1em] !text-neutral-900 hover:!bg-accent-subtle md:!flex-none md:!min-w-[180px]"
+          className="inline-flex h-11 flex-1 items-center justify-center rounded-[3px] bg-accent px-4 text-xs font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-accent-hover active:bg-accent-active disabled:opacity-60 md:min-w-[180px] md:flex-none"
         />
         <BuyNowButton
           product={product}
           quantity={quantity}
-          className="!mt-0 !flex-1 !rounded-none !border !border-neutral-900 !bg-neutral-900 !px-4 !py-3 !text-xs !font-bold !uppercase !tracking-[0.1em] !text-white hover:!bg-neutral-800 md:!flex-none md:!min-w-[180px]"
+          className="inline-flex h-11 flex-1 cursor-pointer items-center justify-center rounded-[3px] border border-neutral-900 bg-white px-4 text-xs font-bold uppercase tracking-[0.12em] text-neutral-900 transition-colors hover:bg-neutral-50 md:min-w-[180px] md:flex-none"
         />
       </div>
     </div>

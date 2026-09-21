@@ -29,11 +29,15 @@ function ProductScrollRow({
         <h2 className="mb-4 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-600">
           {title}
         </h2>
-        <div className="grid grid-cols-2 gap-3 sm:flex sm:max-w-full sm:gap-3 sm:overflow-x-auto sm:overscroll-x-contain sm:pb-1 sm:[scrollbar-width:thin]">
+        {/* One scrolling row at every width. Two-across on phones stacked
+            eight cards into four rows -- well over a screen of scrolling
+            between the product and everything below it -- where a row costs
+            one, the same trade the category rail makes. */}
+        <div className="flex max-w-full snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pb-1 [scrollbar-width:thin]">
           {products.map((product) => (
             <div
               key={product.id}
-              className="w-full sm:w-[148px] sm:shrink-0 md:w-[168px]"
+              className="w-[44%] shrink-0 snap-start sm:w-[148px] md:w-[168px]"
             >
               <AllProductsGridCard product={product} />
             </div>

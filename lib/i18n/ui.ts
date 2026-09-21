@@ -58,19 +58,13 @@ export const UI = {
   currencyFooter:
     "Prices auto-converted to {currency}. Checkout is charged in USD.",
   descriptionTitle: "Description",
-  productImageNotice:
-    "What you see is what you get — exact item, as pictured. Want it upgraded? We’ll refurbish it to your spec.",
   specificationsTitle: "Specifications",
-  fitmentLogisticsTitle: "Fitment & Logistics",
-  shippingWarrantyTitle: "Shipping & Warranty",
-  fitsCompatibility: "Fits / Compatibility",
-  drivetrainLabel: "Drivetrain",
-  partCode: "Part / Code",
+  featuresTitle: "Features",
+  fitmentTitle: "Fitment",
+  shippingReturnsTitle: "Shipping & Returns",
   whatsIncluded: "What's Included",
   coreChargeLabel: "Core Charge",
   weightLabel: "Shipping Weight",
-  freightNotesLabel: "Freight / Shipping Notes",
-  warrantyTermsLabel: "Warranty Terms",
   installationResourcesTitle: "Installation Resources",
 } as const;
 

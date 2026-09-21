@@ -1,9 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
 import type { Product } from "@/data/store";
-import { routes } from "@/lib/inventory/routes";
 import { trackEvent } from "@/lib/analytics/client";
 import type { ProductCatalogMeta } from "@/lib/inventory/productEnhancements";
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
@@ -11,20 +9,15 @@ import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
 import ImageCarousel from "./ImageCarousel";
-import ProTrustBadges from "./ProTrustBadges";
-import ConditionBadge from "./ConditionBadge";
 import ProductRatingSummary from "./ProductRatingSummary";
-import PowerLevelSection, {
-  type ProSpecSection,
-} from "./PowerLevelSection";
-import ProductDetailsSections from "./ProductDetailsSections";
-import CompatibilityHighlight from "./CompatibilityHighlight";
+import ProductDetailsSections, { type SpecRow } from "./ProductDetailsSections";
 import ProductInterest from "./ProductInterest";
 import type { ProductInterest as Interest } from "@/lib/analytics/product-interest";
-import FitmentAssuranceCallout from "./FitmentAssuranceCallout";
 import ProductBreadcrumbs from "./ProductBreadcrumbs";
 import StickyPurchaseBar from "./StickyPurchaseBar";
 import ProductDiscoverySections from "./ProductDiscoverySections";
+import PurchaseFacts from "./PurchaseFacts";
+import { FitmentSummary, type FitmentApplication } from "./ProductFitment";
 import PopularCategoriesSection from "@/components/catalog/PopularCategoriesSection";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
 import WishlistButton from "@/components/wishlist/WishlistButton";
@@ -32,46 +25,80 @@ import CompareButton from "@/components/compare/CompareButton";
 import ProductPrice from "@/components/currency/ProductPrice";
 import TranslatedText from "@/components/i18n/TranslatedText";
 import {
-  OrderDiscountBadge,
-  ProductDiscountBadge,
-} from "@/components/product/DiscountBadge";
-import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
+  BASE_ORDER_DISCOUNT_PERCENT,
+  BULK_MIN_QUANTITY,
+  BULK_ORDER_DISCOUNT_PERCENT,
+} from "@/lib/inventory/discounts";
 import {
-  formatCategoryLabel,
-  formatPlatformLabel,
-} from "./styles";
+  getConditionDisplay,
+  resolveProductCondition,
+} from "@/lib/inventory/condition";
+import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
+import { CONTACT_HREF } from "@/lib/content/purchase-terms";
+import { formatPlatformLabel } from "./styles";
 
 const MAX_QUANTITY = 10;
 
-function MetaRow({
-  label,
+/*
+ * A build target is only ever stated in the listing's own description (the
+ * 1UZ-FE package: "300 HP is a build target, not the factory-rated output").
+ * The figure is read from there rather than printed as a fixed caption, which
+ * is what this page used to do -- a second listing with a build potential
+ * would have been labelled "300 HP" whatever its description said.
+ */
+function buildTargetFigure(description?: string): string | undefined {
+  const match = description?.match(/\b(\d{2,4}\+?)\s*HP\s+(?:is\s+a\s+)?(?:build\s+)?target\b/i);
+  return match ? `${match[1]} HP` : undefined;
+}
+
+function QuantityStepper({
   value,
-  tone,
+  onChange,
 }: {
-  label: string;
-  value: string;
-  tone?: "positive" | "neutral";
+  value: number;
+  onChange: (next: number) => void;
 }) {
+  const buttonClass =
+    "flex w-10 items-center justify-center text-lg text-neutral-800 transition-colors hover:bg-neutral-50 disabled:text-neutral-300";
+
   return (
-    <div className="flex items-center justify-between gap-4 border-b border-neutral-200 py-2.5 text-sm last:border-b-0">
-      <span className="text-neutral-500">{label}</span>
-      {tone ? (
-        <span
-          className={`flex items-center gap-1.5 text-right font-semibold ${
-            tone === "positive" ? "text-emerald-700" : "text-neutral-500"
-          }`}
-        >
-          <span
-            className={`h-1.5 w-1.5 shrink-0 rounded-full ${
-              tone === "positive" ? "bg-emerald-500" : "bg-neutral-400"
-            }`}
-            aria-hidden
-          />
-          {value}
-        </span>
-      ) : (
-        <span className="text-right font-semibold text-neutral-900">{value}</span>
-      )}
+    <div className="flex h-12 shrink-0 items-stretch rounded-[3px] border border-neutral-300 bg-white">
+      <button
+        type="button"
+        aria-label="Decrease quantity"
+        disabled={value <= 1}
+        onClick={() => onChange(Math.max(1, value - 1))}
+        className={buttonClass}
+      >
+        −
+      </button>
+      <label htmlFor="product-qty" className="sr-only">
+        Quantity
+      </label>
+      <input
+        id="product-qty"
+        type="number"
+        inputMode="numeric"
+        min={1}
+        max={MAX_QUANTITY}
+        value={value}
+        onChange={(e) => {
+          const val = parseInt(e.target.value, 10);
+          if (!Number.isNaN(val)) {
+            onChange(Math.min(MAX_QUANTITY, Math.max(1, val)));
+          }
+        }}
+        className="w-12 border-x border-neutral-300 bg-white text-center text-base font-semibold tabular-nums text-neutral-900 outline-none [appearance:textfield] focus:bg-neutral-50 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+      />
+      <button
+        type="button"
+        aria-label="Increase quantity"
+        disabled={value >= MAX_QUANTITY}
+        onClick={() => onChange(Math.min(MAX_QUANTITY, value + 1))}
+        className={buttonClass}
+      >
+        +
+      </button>
     </div>
   );
 }
@@ -84,6 +111,10 @@ export default function ProductTemplate({
   categoryName,
   categorySlug,
   relatedProducts,
+  fitmentApplications = [],
+  universalFitment = false,
+  fitmentYears,
+  fitmentEngine,
   productInterest = null,
 }: {
   product: Product;
@@ -95,6 +126,11 @@ export default function ProductTemplate({
   categoryName: string;
   categorySlug: string;
   relatedProducts: CatalogProductCardData[];
+  /** Every vehicle the listing records, row by row. */
+  fitmentApplications?: FitmentApplication[];
+  universalFitment?: boolean;
+  fitmentYears?: string;
+  fitmentEngine?: string;
 }) {
   const [quantity, setQuantity] = useState(1);
   const ctaRef = useRef<HTMLDivElement>(null);
@@ -116,7 +152,14 @@ export default function ProductTemplate({
       : [product.thumbnail || DEFAULT_PRODUCT_IMAGE];
 
   const platformLabel = formatPlatformLabel(product.platform);
-  const categoryLabel = formatCategoryLabel(product.category);
+  const logistics = catalogMeta.logistics;
+  const partNumber = logistics?.partNumber;
+
+  // The verified condition system: the listing's own condition, resolved by
+  // the same helpers the catalog and the spec rows use.
+  const conditionTone = getConditionDisplay(
+    resolveProductCondition({ category: product.category, condition: rawCondition })
+  ).color;
 
   const cartProduct: AddToCartProduct = {
     id: product.id,
@@ -148,71 +191,103 @@ export default function ProductTemplate({
     ]
   );
 
-  const specSections = useMemo(() => {
-    const sections: ProSpecSection[] = [];
+  const fitment = useMemo(
+    () => ({
+      text: logistics?.fitment,
+      applications: fitmentApplications,
+      years: fitmentYears,
+      engine: fitmentEngine,
+      drivetrain: logistics?.drivetrain,
+      universal: universalFitment,
+      swapPackage: Boolean(product.swapPackage),
+    }),
+    [
+      logistics?.fitment,
+      logistics?.drivetrain,
+      fitmentApplications,
+      fitmentYears,
+      fitmentEngine,
+      universalFitment,
+      product.swapPackage,
+    ]
+  );
+
+  /*
+   * Rows for the Specifications tab. Power and mileage lead because on the
+   * listings that carry them (engines, gearboxes) they are the first thing a
+   * buyer compares; the structured attributes follow.
+   */
+  const specRows = useMemo(() => {
+    const rows: SpecRow[] = [];
+
+    /*
+     * Most engine descriptions already state their power as an attribute
+     * ("Factory Power: 600 HP"), and those lines are parsed into the rows
+     * below. Where one matches, it is moved to the top under its own label
+     * rather than printed a second time beside it.
+     */
+    const normalize = (value: string) =>
+      value.toLowerCase().replace(/\s+/g, " ").replace(/[.,;]+$/, "").trim();
+    const remaining = [...catalogMeta.specRows];
+    const takeRow = (value: string) => {
+      const index = remaining.findIndex((row) => normalize(row.value) === normalize(value));
+      return index >= 0 ? remaining.splice(index, 1)[0] : undefined;
+    };
 
     if (catalogMeta.horsepower) {
-      // Labelled "Choose Power Level" even though these pills have no click
-      // handler and nothing is selectable. On a listing that also shows a
-      // build target, that wording would read as an option to buy a modified
-      // engine, so it states what it is instead.
-      //
-      // Where a build target exists the two are rendered as captioned cards,
-      // not matching pills: the factory rating is what ships, the target is
-      // what the engine can reach with work, and that difference has to be
-      // legible at a glance.
-      sections.push(
-        product.buildPotential
-          ? {
-              label: "Power Output",
-              values: [],
-              options: [
-                {
-                  caption: "Factory Configuration",
-                  title: catalogMeta.horsepower,
-                  emphasis: true,
-                },
-                {
-                  caption: "300 HP Build Target",
-                  title: product.buildPotential,
-                },
-              ],
-            }
+      const stated = takeRow(catalogMeta.horsepower);
+      rows.push(
+        stated
+          ? { label: stated.label, value: <TranslatedText as="span">{stated.value}</TranslatedText> }
           : {
-              label: "Power Output",
-              values: [catalogMeta.horsepower],
+              label: product.buildPotential ? "Factory output" : "Power output",
+              value: catalogMeta.horsepower,
             }
       );
+      if (product.buildPotential) {
+        const figure = buildTargetFigure(product.description);
+        rows.push({
+          label: figure ? `Build target (${figure})` : "Build potential",
+          value: product.buildPotential,
+        });
+      }
     }
-
-    sections.push({ label: "Condition", values: [catalogMeta.conditionLabel] });
 
     /*
      * Mileage only where it means something. A brand-new bolt-on part has no
-     * odometer, so the row is absent rather than asserting "0 Miles" -- the
-     * Condition row above already says the part is new. Where the unit is used
-     * and we do not hold the reading, the pill links to the one place the
-     * question can actually be answered.
+     * odometer, so the row is absent rather than asserting "0 Miles". Where
+     * the unit is used and we do not hold the reading, the row links to the
+     * one place the question can actually be answered.
      */
     if (catalogMeta.mileage) {
-      sections.push({
+      takeRow(catalogMeta.mileage);
+      rows.push({
         label: "Mileage",
-        values: [catalogMeta.mileage],
-        href: catalogMeta.mileage === "Inquire for Mileage" ? "/contact" : undefined,
+        value:
+          catalogMeta.mileage === "Inquire for Mileage" ? (
+            <a
+              href={CONTACT_HREF}
+              className="font-semibold text-accent underline-offset-2 hover:text-accent-hover hover:underline"
+            >
+              Ask us for the reading
+            </a>
+          ) : (
+            catalogMeta.mileage
+          ),
       });
     }
 
-    sections.push({ label: "Warranty", values: [catalogMeta.warranty] });
-
-    if (catalogMeta.logistics?.fitment) {
-      sections.push({
-        label: "Fitment",
-        values: [catalogMeta.logistics.fitment],
+    for (const row of remaining) {
+      rows.push({
+        label: row.label,
+        value: <TranslatedText as="span">{row.value}</TranslatedText>,
       });
     }
 
-    return sections;
-  }, [catalogMeta]);
+    return rows;
+  }, [catalogMeta, product.buildPotential, product.description]);
+
+  const hasReviews = catalogMeta.reviewCount > 0;
 
   return (
     <div className="storefront-page min-h-screen overflow-x-clip bg-[var(--background)] pb-24">
@@ -222,114 +297,112 @@ export default function ProductTemplate({
         productName={product.name}
       />
 
-      <div className="mx-auto grid w-full min-w-0 max-w-[1200px] grid-cols-1 items-start gap-0 overflow-x-clip md:grid-cols-[1.15fr_1fr]">
-        <div className="min-w-0 border-b border-neutral-300 bg-white p-4 shadow-sm sm:p-6 md:border-b-0 md:border-r">
-          <ImageCarousel
-            images={galleryImages}
-            alt={product.name}
-            thumbnail={product.thumbnail}
-            surface="light"
-          />
+      {/*
+        Gallery, purchase column and details on one sheet.
+
+        Phones and tablets read top to bottom: photos, the purchase column,
+        then the details. From 1024px the purchase column takes the right and
+        the details sit under the photos, so the specifications and the
+        fitment list are on screen beside the price instead of below a tall
+        blank panel. Between 768 and 1024 the page stays single-column: side
+        by side there, the purchase column was left at about 370px.
+      */}
+      <div className="mx-auto grid w-full min-w-0 max-w-[1200px] grid-cols-1 border-b border-neutral-300 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:grid-rows-[auto_1fr]">
+        <div className="min-w-0 border-b border-neutral-300 bg-white p-4 sm:p-6 lg:col-start-1 lg:row-start-1 lg:border-b-0">
+          <div className="mx-auto w-full max-w-[560px] lg:max-w-none">
+            <ImageCarousel
+              images={galleryImages}
+              alt={product.name}
+              thumbnail={product.thumbnail}
+              surface="light"
+            />
+          </div>
         </div>
 
-        <div className="min-w-0 bg-white p-4 text-neutral-900 shadow-sm sm:p-7 lg:p-8">
+        <div className="min-w-0 bg-white px-4 pb-6 pt-5 text-neutral-900 sm:px-7 sm:pb-8 sm:pt-7 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:border-l lg:border-neutral-300 lg:px-9">
+          {/* Identity: who makes it, what it is, how it is identified. */}
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
-            {categoryLabel}
+            {product.brand ? (
+              <span className="text-neutral-900">{product.brand}</span>
+            ) : null}
+            {product.brand ? <span aria-hidden="true"> · </span> : null}
+            {categoryName}
             {platformLabel ? ` · ${platformLabel}` : ""}
           </p>
 
-          <h1 className="mt-2 text-[clamp(22px,4vw,30px)] font-bold leading-tight text-neutral-900">
+          <h1 className="mt-2 text-[clamp(22px,3.4vw,28px)] font-bold leading-[1.2] text-neutral-900">
             <TranslatedText as="span">{product.name}</TranslatedText>
           </h1>
 
-          <ProductRatingSummary
-            productId={product.id}
-            rating={catalogMeta.rating}
-            reviewCount={catalogMeta.reviewCount}
-            theme="pro"
-          />
+          <dl className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px]">
+            {partNumber ? (
+              <div className="flex min-w-0 gap-1.5">
+                <dt className="shrink-0 text-muted">Part No.</dt>
+                <dd className="min-w-0 break-words font-semibold text-neutral-900">{partNumber}</dd>
+              </div>
+            ) : null}
+            <div className="flex items-center gap-1.5">
+              <dt className="text-muted">Condition</dt>
+              <dd className="flex items-center gap-1.5 font-semibold text-neutral-900">
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 shrink-0 rounded-full"
+                  style={{ background: conditionTone }}
+                />
+                {catalogMeta.conditionLabel}
+              </dd>
+            </div>
+          </dl>
 
-          <div className="mt-3 border-b border-neutral-200 pb-4">
+          {hasReviews ? (
+            <ProductRatingSummary
+              productId={product.id}
+              rating={catalogMeta.rating}
+              reviewCount={catalogMeta.reviewCount}
+              theme="pro"
+            />
+          ) : null}
+
+          {/* Price and availability. */}
+          <div className="mt-5 border-t border-neutral-200 pt-5">
             <ProductPrice
               price={product.price}
               compareAtPrice={product.compareAtPrice}
               size="lg"
-              className="[&_span:last-child]:text-neutral-900 [&_span:last-child]:text-3xl [&_span:last-child]:font-black"
+              className="flex-row-reverse justify-end [&>span:last-child]:text-[28px] [&>span:last-child]:leading-none [&>span:last-child]:text-neutral-900 sm:[&>span:last-child]:text-[32px]"
             />
-          </div>
-
-          <div className="mt-3 flex flex-wrap items-center gap-2">
-            <ProductDiscountBadge category={product.category} />
-            <OrderDiscountBadge />
-            <ConditionBadge category={product.category} condition={rawCondition} />
-          </div>
-
-          <CompatibilityHighlight
-            fitment={catalogMeta.logistics?.fitment}
-            drivetrain={catalogMeta.logistics?.drivetrain}
-            label={
-              product.swapPackage ? "Swap Compatibility" : "Confirmed Compatibility"
-            }
-          />
-
-          <ProductInterest interest={productInterest} />
-
-          <PowerLevelSection sections={specSections} />
-
-          <div ref={ctaRef} className="mt-6 border-t border-neutral-200 pt-5">
-            <p className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500">
-              Quantity
+            <p className="mt-3 flex items-center gap-2 text-[13px] font-semibold">
+              <span
+                aria-hidden="true"
+                className={`h-2 w-2 shrink-0 rounded-full ${inStock ? "bg-success" : "bg-neutral-400"}`}
+              />
+              <span className={inStock ? "text-success" : "text-muted"}>
+                {inStock ? "In stock" : "Out of stock"}
+              </span>
             </p>
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                aria-label="Decrease quantity"
-                onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                className="flex h-10 w-10 items-center justify-center border border-neutral-300 bg-white text-lg text-neutral-800"
-              >
-                −
-              </button>
-              <input
-                id="product-qty"
-                type="number"
-                min={1}
-                max={MAX_QUANTITY}
-                value={quantity}
-                onChange={(e) => {
-                  const val = parseInt(e.target.value, 10);
-                  if (!Number.isNaN(val)) {
-                    setQuantity(Math.min(MAX_QUANTITY, Math.max(1, val)));
-                  }
-                }}
-                className="h-10 w-16 border border-neutral-300 bg-white text-center text-base text-neutral-900 outline-none focus:border-neutral-800"
-              />
-              <button
-                type="button"
-                aria-label="Increase quantity"
-                onClick={() => setQuantity((q) => Math.min(MAX_QUANTITY, q + 1))}
-                className="flex h-10 w-10 items-center justify-center border border-neutral-300 bg-white text-lg text-neutral-800"
-              >
-                +
-              </button>
-            </div>
+            <p className="mt-1.5 text-[12px] leading-relaxed text-muted">
+              {BASE_ORDER_DISCOUNT_PERCENT}% off every order, or{" "}
+              {BULK_ORDER_DISCOUNT_PERCENT}% when you buy {BULK_MIN_QUANTITY} or
+              more items. Applied automatically at checkout.
+            </p>
+          </div>
 
-            <div className="mt-4 border-b border-neutral-200 pb-4">
-              <ProductPrice
-                price={product.price}
-                compareAtPrice={product.compareAtPrice}
-                size="md"
-              />
-            </div>
+          <div className="mt-5 border-t border-neutral-200 pt-5">
+            <FitmentSummary fitment={fitment} />
+          </div>
 
-            <div className="mt-4 space-y-3">
-              <AddToCartButton
-                product={cartProduct}
-                quantity={quantity}
-                className="!rounded-none !border-2 !border-accent !bg-white !py-3.5 !text-sm !font-black !uppercase !tracking-[0.12em] !text-neutral-900 hover:!bg-accent-subtle"
-              />
+          <div ref={ctaRef} className="mt-6 space-y-3">
+            <div className="flex items-stretch gap-3">
+              <QuantityStepper value={quantity} onChange={setQuantity} />
+              <div className="min-w-0 flex-1">
+                <AddToCartButton
+                  product={cartProduct}
+                  quantity={quantity}
+                  className="inline-flex h-12 w-full items-center justify-center rounded-[3px] bg-accent px-5 text-sm font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-accent-hover active:bg-accent-active disabled:opacity-60"
+                />
+              </div>
             </div>
-
-            <div className="mt-3 flex items-center gap-2">
+            <div className="grid grid-cols-2 gap-3">
               <WishlistButton
                 product={{
                   id: product.id,
@@ -341,7 +414,7 @@ export default function ProductTemplate({
                   brand: product.brand,
                 }}
                 showLabel
-                className="flex-1 px-4 py-2.5"
+                className="h-10 rounded-[3px] px-3"
               />
               <CompareButton
                 product={{
@@ -352,49 +425,42 @@ export default function ProductTemplate({
                   category: product.category,
                   brand: product.brand,
                 }}
-                className="flex-1 justify-center px-4 py-2.5"
+                className="h-10 justify-center !rounded-[3px] !px-3 !text-xs sm:!text-xs"
               />
             </div>
+          </div>
 
-            <FitmentAssuranceCallout
-              assurance={
-                product.swapPackage
-                  ? "Fitment Assistance Available — contact us before ordering."
-                  : undefined
-              }
+          <div className="mt-6">
+            <PurchaseFacts
+              location={product.location}
+              freightNotes={logistics?.freightNotes}
+              warranty={catalogMeta.warranty}
+              warrantyTerms={logistics?.warrantyTerms}
+              coreCharge={logistics?.coreCharge}
             />
           </div>
 
-          <div className="mt-6 border-t border-neutral-200 pt-5">
-            <ProTrustBadges />
-          </div>
+          <ProductInterest interest={productInterest} />
+        </div>
 
-          <p className="mt-4 text-xs leading-relaxed text-neutral-500">
-            Ships from {product.location}. Fast worldwide fulfillment available on
-            eligible orders.
-          </p>
-
-          <div className="mt-5 rounded-sm border border-neutral-300 bg-neutral-50 px-4 py-3 shadow-sm">
-            <MetaRow
-              label="Stock Status"
-              value={inStock ? "In Stock" : "Out of Stock"}
-              tone={inStock ? "positive" : "neutral"}
-            />
-            <MetaRow label="Brand" value={product.brand} />
-          </div>
-
-          <ProductDetailsSections
-            productId={product.id}
-            rating={catalogMeta.rating}
-            descriptionBody={catalogMeta.descriptionBody}
-            specifications={catalogMeta.specifications}
-            specRows={catalogMeta.specRows}
-            shippingAndWarranty={catalogMeta.shippingAndWarranty}
-            reviewCount={catalogMeta.reviewCount}
-            logistics={catalogMeta.logistics}
-            installResources={catalogMeta.installResources}
-            theme="pro"
-          />
+        <div className="min-w-0 border-t border-neutral-300 bg-[var(--background)] px-4 py-8 sm:px-6 sm:py-10 lg:col-start-1 lg:row-start-2 lg:border-t-0 lg:bg-white lg:px-6 lg:pb-8 lg:pt-2">
+        <ProductDetailsSections
+          productId={product.id}
+          rating={catalogMeta.rating}
+          reviewCount={catalogMeta.reviewCount}
+          specRows={specRows}
+          features={catalogMeta.specifications}
+          included={logistics?.included}
+          weight={logistics?.weight}
+          descriptionBody={catalogMeta.descriptionBody}
+          fitment={fitment}
+          location={product.location}
+          freightNotes={logistics?.freightNotes}
+          warranty={catalogMeta.warranty}
+          warrantyTerms={logistics?.warrantyTerms}
+          coreCharge={logistics?.coreCharge}
+          installResources={catalogMeta.installResources}
+        />
         </div>
       </div>
 
@@ -407,24 +473,6 @@ export default function ProductTemplate({
       <PopularCategoriesSection />
 
       <GuidesPreviewSection />
-
-      <section className="border-t border-neutral-200 bg-neutral-950 px-4 py-14 text-center text-white sm:px-6">
-        <div className="mx-auto max-w-xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">
-            Keep building
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-neutral-300">
-            1,400+ listings across engines, transmissions, suspension, brakes, and more.
-          </p>
-          <Link
-            href={routes.all}
-            prefetch={false}
-            className="mt-6 inline-block touch-manipulation rounded-full bg-accent px-9 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-accent-hover active:bg-accent-active"
-          >
-            Continue Browsing
-          </Link>
-        </div>
-      </section>
 
       <StickyPurchaseBar
         ctaRef={ctaRef}

@@ -131,6 +131,10 @@ export default async function ProductPage({ params }: PageProps) {
         categoryName={category?.name ?? product.category}
         categorySlug={category?.slug ?? product.category}
         relatedProducts={relatedProducts}
+        fitmentApplications={inventoryProduct?.fitmentApplications ?? []}
+        universalFitment={Boolean(inventoryProduct?.universalFitment)}
+        fitmentYears={inventoryProduct?.fitmentYears}
+        fitmentEngine={inventoryProduct?.fitmentEngine}
       />
     </>
   );

@@ -106,6 +106,32 @@ function extractWarranty(description: string): string | undefined {
   return match?.[1]?.trim();
 }
 
+/*
+ * Lines the ESS import wrote into the Highlights of 1,200+ listings that
+ * describe the store rather than the part. The product page now states
+ * shipping and fitment help from the store's published terms, so repeating
+ * them as features said the same thing twice -- and "Quality-checked before
+ * shipment" is a process nothing in the order flow performs or records. The
+ * descriptions themselves are untouched; only these lines are not rendered.
+ */
+const STORE_BOILERPLATE_FEATURES = [
+  /^usa warehouse fulfillment$/i,
+  /^technical fitment support available$/i,
+  /^quality-checked before shipment$/i,
+];
+
+function withoutStoreBoilerplate(block: string): string {
+  return block
+    .split("\n")
+    .filter((line) => {
+      const bare = line.trim().replace(/^[•\-*✓]\s*/, "");
+      return !STORE_BOILERPLATE_FEATURES.some((re) => re.test(bare));
+    })
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 function splitDescriptionSections(description: string) {
   const lines = description.split("\n");
   const sectionIndexes: { name: string; index: number }[] = [];
@@ -140,8 +166,8 @@ function splitDescriptionSections(description: string) {
   };
 
   const specifications = getSection("Specifications");
-  const highlights = getSection("Highlights");
-  const keyFeatures = getSection("Key Features");
+  const highlights = withoutStoreBoilerplate(getSection("Highlights"));
+  const keyFeatures = withoutStoreBoilerplate(getSection("Key Features"));
   const warranty = getSection("Warranty");
   const shipping = getSection("Shipping");
 
@@ -373,6 +399,15 @@ const UNSUPPORTED_SPEC = [
   /^inspected and photographed as the actual unit/i,
 ];
 
+/*
+ * Availability written into a description ("Stock Status: In Stock") is a
+ * snapshot of the day it was written. The page states availability from the
+ * listing's stock field, which is the one that changes, so a copy frozen in
+ * the prose could only ever agree with it or contradict it.
+ */
+const LIVE_STATE_LABEL = /^(stock status|availability)$/i;
+const LIVE_STATE_LINE = /^(stock status|availability)\s*:/i;
+
 function specRowsFromDescription(product: Product, section: string) {
   const rows: { label: string; value: string }[] = [];
   const seen = new Set<string>();
@@ -383,6 +418,7 @@ function specRowsFromDescription(product: Product, section: string) {
     const label = match[1].trim();
     const value = match[2].trim();
     if (!label || !value) continue;
+    if (LIVE_STATE_LABEL.test(label)) continue;
     if (UNSUPPORTED_SPEC.some((re) => re.test(value))) continue;
     if (seen.has(label.toLowerCase())) continue;
     if (shownElsewhere(product, label).some((v) => v && normalizeValue(v) === normalizeValue(value))) continue;
@@ -455,6 +491,7 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
         // and an exact comparison left the line sitting under its own row.
         .filter((line) => {
           const bare = line.trim().replace(/^[•\-*]\s*/, "").toLowerCase();
+          if (LIVE_STATE_LINE.test(bare)) return false;
           return !specRows.some((r) => bare.startsWith(`${r.label.toLowerCase()}:`));
         })
         .join("\n")

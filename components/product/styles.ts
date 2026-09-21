@@ -30,13 +30,6 @@ export const productPageGrid: React.CSSProperties = {
   alignItems: "start",
 };
 
-export function formatCategoryLabel(category: string): string {
-  return category
-    .split("-")
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(" ");
-}
-
 export function formatPlatformLabel(platform?: string): string | null {
   if (!platform) return null;
 
