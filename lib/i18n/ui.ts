@@ -52,6 +52,7 @@ export const UI = {
   marketUnitedKingdom: "United Kingdom",
   marketWorldwide: "Worldwide",
   imageCredits: "Image Credits",
+  footerPaymentMethods: "Payment methods accepted at checkout",
   catalog: "Catalog",
   shippingPolicy: "Shipping Policy",
   returnsRefunds: "Returns & Refunds",
