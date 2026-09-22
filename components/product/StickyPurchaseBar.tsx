@@ -169,7 +169,10 @@ export default function StickyPurchaseBar({
   if (!ctaOffScreen || !inStock) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[9998] border-t border-neutral-300 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] backdrop-blur-md">
+    <div
+      data-sticky-purchase-bar=""
+      className="fixed inset-x-0 bottom-0 z-[9998] border-t border-neutral-300 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] backdrop-blur-md"
+    >
       <div className="mx-auto flex max-w-[1200px] items-center gap-3 md:justify-end">
         <AddToCartButton
           product={product}

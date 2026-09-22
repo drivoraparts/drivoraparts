@@ -260,6 +260,16 @@ img.rounded-full {
   overflow-x: hidden;
 }
 
+/*
+ * The product page's sticky purchase bar (69px) and the compare bar (65px)
+ * are fixed to the bottom of the viewport, so at the end of the page they sat
+ * over the footer's legal row -- Terms of Sale, Privacy and the rest could not
+ * be clicked. The footer makes room only while one of them is on screen.
+ */
+body:has([data-sticky-purchase-bar], [data-compare-bar]) .site-shell > footer {
+  padding-bottom: 5rem;
+}
+
 .storefront-page {
   box-sizing: border-box;
   width: 100%;
