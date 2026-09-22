@@ -590,7 +590,7 @@ export default function AllProductsFeed({
 
   return (
     <div>
-      <div className="sticky top-[106px] z-30 -mx-3 mb-4 space-y-3 border-b border-neutral-200 bg-white/95 px-3 pb-3 pt-3 backdrop-blur sm:top-[114px] sm:-mx-6 sm:px-6">
+      <div className="sticky top-[var(--header-h-scrolled)] z-30 -mx-3 mb-4 space-y-3 border-b border-neutral-200 bg-white/95 px-3 pb-3 pt-3 backdrop-blur sm:-mx-6 sm:px-6">
         <div className="relative">
           <input
             type="search"

@@ -111,7 +111,7 @@ export default async function AllProductsPage({
     <div className="px-3 pb-6 pt-10 sm:px-6">
       <header
         id="all-products"
-        className="mb-3 scroll-mt-[112px] sm:mb-6 sm:scroll-mt-[122px]"
+        className="mb-3 scroll-mt-[calc(var(--header-h-scrolled)+8px)] sm:mb-6"
       >
         <h2 className="inline-block border-b-2 border-accent pb-1 text-xl font-bold text-neutral-900 sm:text-3xl sm:pb-2">
           {isSearch

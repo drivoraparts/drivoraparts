@@ -138,10 +138,10 @@ export default async function MarketCatalogView({
                 reloads the page, and without this it reopened at the top: on a
                 phone that is the market head again, with the listings the tap
                 was for a full screen below. The margin clears the sticky site
-                header, the same 106/114px the feed's filter bar sticks under. */}
+                header, the same height the feed's filter bar sticks under. */}
             <header
               id="listings"
-              className="mb-3 scroll-mt-[112px] sm:mb-6 sm:scroll-mt-[122px]"
+              className="mb-3 scroll-mt-[calc(var(--header-h-scrolled)+8px)] sm:mb-6"
             >
               <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
                 {market.name}

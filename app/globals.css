@@ -210,44 +210,37 @@ img.rounded-full {
   }
 }
 
-/* Sitewide — header announcement marquee */
-.announcement-marquee-mask {
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 6%,
-    black 94%,
-    transparent
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 6%,
-    black 94%,
-    transparent
-  );
+/*
+ * The fixed header's rendered height, measured at each breakpoint. Page
+ * content starts under it (--header-h); sticky bars stick under its scrolled
+ * state (--header-h-scrolled), which is 12px shorter and applies once the page
+ * is past 50px. From 1280 it is 65px up to 1439 and 61px from 1440; the larger
+ * figure is used so nothing sits under it, and the smaller scrolled one so no
+ * strip of content shows above a stuck bar.
+ */
+:root {
+  --header-h: 57px;
+  --header-h-scrolled: 45px;
 }
 
-.announcement-marquee-track {
-  animation: announcement-marquee 32s linear infinite;
-}
-
-.announcement-bar:hover .announcement-marquee-track {
-  animation-play-state: paused;
-}
-
-@keyframes announcement-marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
+@media (min-width: 640px) {
+  :root {
+    --header-h: 61px;
+    --header-h-scrolled: 49px;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .announcement-marquee-track {
-    animation: none;
+@media (min-width: 768px) {
+  :root {
+    --header-h: 86px;
+    --header-h-scrolled: 74px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --header-h: 65px;
+    --header-h-scrolled: 49px;
   }
 }
 

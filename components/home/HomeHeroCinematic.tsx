@@ -29,7 +29,7 @@ export default function HomeHeroCinematic({ listingCount }: { listingCount: numb
 
   return (
     <>
-      <section className="relative -mt-[106px] flex min-h-[86svh] w-full min-w-0 items-center overflow-hidden bg-background-dark pt-[106px] sm:-mt-[114px] sm:min-h-[92svh] sm:pt-[114px]">
+      <section className="relative -mt-[var(--header-h)] flex min-h-[86svh] w-full min-w-0 items-center overflow-hidden bg-background-dark pt-[var(--header-h)] sm:min-h-[92svh]">
         {/* Left at auto z-index. `z-0` on a positioned element creates a
             stacking context, which would trap anything this layer renders
             beneath the gradients. */}

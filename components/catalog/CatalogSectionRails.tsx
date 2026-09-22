@@ -43,7 +43,7 @@ export default function CatalogSectionRails({
           that vehicle's rows rather than back at the top of the page -- on a
           phone the difference is a full screen. The margin clears the sticky
           site header. */}
-      <div id={anchorId} className="scroll-mt-[112px] sm:scroll-mt-[122px]" />
+      <div id={anchorId} className="scroll-mt-[calc(var(--header-h-scrolled)+8px)]" />
 
       {sections.map((section, index) => (
         <ProductRail
