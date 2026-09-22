@@ -10,8 +10,8 @@ export default function CurrencyFooterNote() {
   if (isBaseCurrency) return null;
 
   return (
-    <p className="text-gray-500 text-xs mt-4">
-      {t("currencyFooter", { currency })}
-    </p>
+    // Inherits the footer's on-dark text colour: gray-500 measured below AA
+    // on the charcoal background.
+    <p className="mb-1">{t("currencyFooter", { currency })}</p>
   );
 }

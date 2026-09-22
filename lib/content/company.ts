@@ -42,34 +42,6 @@ export const COMPANY_LOCATION_SUMMARY = {
   motto: COMPANY_MOTTO,
 } as const;
 
-/**
- * The operating footprint, one entry per market, for the footer. The United
- * States and Australia lead as the two primary markets; Japan follows. Built
- * from the records above, so a hub that moves cannot leave this line behind.
- *
- * Sydney and Nagoya are "logistics hubs" -- what these records and the
- * shipping policy call them -- rather than "distribution & inventory": the
- * policy says only select premium parts may be dispatched from them, and
- * almost every listing names a USA ship-from location.
- */
-export const COMPANY_FOOTPRINT = [
-  {
-    market: US_HEADQUARTERS.country,
-    role: "Corporate HQ",
-    place: `${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.stateName}`,
-  },
-  {
-    market: AUSTRALIA_LOGISTICS_HUB.country,
-    role: "Logistics hub",
-    place: `${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.state}`,
-  },
-  {
-    market: JAPAN_LOGISTICS_HUB.country,
-    role: "Logistics hub",
-    place: `${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.prefecture}`,
-  },
-] as const;
-
 export function formatUsHeadquarters(multiline = true): string {
   const lines = [
     US_HEADQUARTERS.companyName,

@@ -1,43 +1,37 @@
 import {
-  COMPANY_FOOTPRINT,
   COMPANY_LOCATION_SUMMARY,
-  COMPANY_MOTTO,
-  COMPANY_SUPPORT_EMAIL,
   JAPAN_LOGISTICS_HUB,
   US_HEADQUARTERS,
 } from "@/lib/content/company";
 
-type CompanyAddressVariant = "summary" | "footprint" | "us-hq" | "japan-hub";
+type CompanyAddressVariant = "summary" | "us-hq" | "japan-hub";
 type CompanyAddressTone = "light" | "dark";
 
 const variantClass: Record<CompanyAddressVariant, string> = {
   summary: "space-y-1 text-sm",
-  footprint: "space-y-3 text-sm",
   "us-hq": "space-y-0.5 text-sm leading-relaxed",
   "japan-hub": "space-y-0.5 text-sm leading-relaxed",
 };
 
 /*
- * The summary variant renders on the light About page AND inside the dark
- * footer, so its colours cannot be fixed to one surface. On charcoal the
- * light-surface muted grey measured 3.82:1 -- below AA -- so the dark tone
- * switches to the on-dark tokens, which are chosen for exactly this case.
+ * The address can sit on a light page or a dark surface, so its colours cannot
+ * be fixed to one. On charcoal the light-surface muted grey measured 3.82:1 --
+ * below AA -- so the dark tone switches to the on-dark tokens, which are chosen
+ * for exactly this case.
  */
 const toneClass: Record<
   CompanyAddressTone,
-  { body: string; strong: string; motto: string; link: string }
+  { body: string; strong: string; motto: string }
 > = {
   light: {
     body: "text-muted",
     strong: "text-foreground",
     motto: "text-muted",
-    link: "text-accent hover:text-accent-hover",
   },
   dark: {
     body: "text-muted-on-dark",
     strong: "text-foreground-on-dark",
     motto: "text-muted-on-dark",
-    link: "text-accent-on-dark hover:text-foreground-on-dark",
   },
 };
 
@@ -62,40 +56,6 @@ export default function CompanyAddress({
         <p className={`pt-1 text-xs italic ${t.motto}`}>
           {COMPANY_LOCATION_SUMMARY.motto}
         </p>
-      </address>
-    );
-  }
-
-  /*
-   * The footer's operating footprint: one labelled line per market, the two
-   * primary markets first, then how to reach us. It replaced the summary in
-   * the footer, whose two run-on sentences could not be scanned and repeated
-   * the brand name the footer column already opens with.
-   */
-  if (variant === "footprint") {
-    return (
-      <address className={`${classes} not-italic`}>
-        {COMPANY_FOOTPRINT.map((site) => (
-          <div key={site.market}>
-            <p
-              className={`text-[11px] font-semibold uppercase tracking-[0.14em] ${t.strong}`}
-            >
-              {site.market}
-            </p>
-            <p className="mt-0.5">
-              {site.role} · {site.place}
-            </p>
-          </div>
-        ))}
-        <p>
-          <a
-            href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
-            className={`transition-colors ${t.link}`}
-          >
-            {COMPANY_SUPPORT_EMAIL}
-          </a>
-        </p>
-        <p className={`text-xs italic ${t.motto}`}>{COMPANY_MOTTO}</p>
       </address>
     );
   }

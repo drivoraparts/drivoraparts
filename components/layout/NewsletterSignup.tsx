@@ -37,7 +37,7 @@ export default function NewsletterSignup() {
 
   if (subscribed) {
     return (
-      <p className="text-sm text-neutral-600">
+      <p className="text-sm text-foreground-on-dark">
         You&apos;re subscribed — thanks for joining.
       </p>
     );
