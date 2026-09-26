@@ -16,9 +16,11 @@ export default function RecentlyAddedRail({
   // every card. It was neither fresh nor new -- it was the first twelve
   // listings, and it would have stayed the same twelve as stock changed.
   //
-  // Only ~216 of ~1,890 listings carry a createdAt, so the rest sort as though
-  // timestamped zero and never reach this rail. That is the correct outcome:
-  // a listing with no recorded date cannot honestly be called recent.
+  // A listing with no recorded date is filtered out rather than sorted last: a
+  // listing that cannot be dated cannot honestly be called recent. When this
+  // was written that excluded most of the catalog (~216 of ~1,890 carried a
+  // createdAt); the bulk imports since are all timestamped, so it is now
+  // 4,043 of 4,044 and the filter only catches the stragglers.
   const products = [...getAllProducts()]
     .filter((p) => typeof p.createdAt === "number")
     // Same tiebreaker as the catalog query, for the reason recorded there:

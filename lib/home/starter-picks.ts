@@ -4,11 +4,17 @@ import type { Product } from "@/lib/inventory/types";
 /**
  * Affordable, photographed parts for the top of the homepage.
  *
- * The storefront led with engine packages at $3,000-6,000, but 900 of the
- * 1,865 listings are under $300 and in stock. Checkout is crypto-only and
- * irreversible, so a stranger's first order from an unfamiliar shop is not
- * going to be a $5,900 engine — it needs to be something they can risk. This
- * surfaces that half of the catalog instead of burying it.
+ * The storefront led with engine packages at $3,000-6,000, while roughly 1,900
+ * of the 4,044 listings sit in the $40-400 band selected below. Every payment
+ * method here is verified by hand before an order ships, so a stranger's first
+ * order from an unfamiliar shop is not going to be a $5,900 engine — it needs
+ * to be something they can risk. This surfaces that half of the catalog
+ * instead of burying it.
+ *
+ * The figures above are approximate on purpose. getStarterPickCount() reports
+ * the live number, so nothing here needs editing when the catalog moves; the
+ * earlier version quoted "900 of 1,865 under $300, crypto-only checkout",
+ * none of which was still true.
  */
 
 /** Low enough to be an easy first order, high enough to be a real part. */
