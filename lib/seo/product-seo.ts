@@ -63,29 +63,61 @@ export function buildProductSeoDescription(input: ProductSeoInput): string {
   return truncateSeoDescription(composed);
 }
 
-/**
- * Bulk-imported catalog rows (ess-catalog, edmunds-truck-parts) fall back to a
- * generic template when no real spec/fitment copy exists ("Sourced and
- * inspected for DrivoraParts..." / "Confirm ... at checkout"). Google flags
- * these as near-duplicate thin content and won't index them even once the
- * canonical tag is correct, so they're kept out of the index until they get
- * real descriptions.
- */
-// The second marker used to be /confirm[^.\n]*at checkout/i, which matched any
-// sentence pairing "confirm" with "at checkout" anywhere in a description. That
-// is ordinary fitment wording, not boilerplate: "Fitment: Application-Specific
-// (Confirm at Checkout)" on the AlphaRex headlights, "Confirm year, bed length,
-// and cab style at checkout" on the truck beds. It noindexed 39 fully written
-// listings whose only sin was a fitment spec line. Narrowed to the exact
-// template sentence, which no genuinely written listing uses.
-const GENERIC_DESCRIPTION_MARKERS = [
-  /sourced and inspected for drivoraparts customers who need reliable fitment/i,
-  /confirm vehicle fitment at checkout/i,
-];
+/** Section headings a description may carry after its opening title line. */
+const DESCRIPTION_SECTIONS = /^(Specifications|Highlights|Warranty|Shipping|Key Features)$/;
 
+/**
+ * True when a listing has no copy of its own — nothing beyond its name and the
+ * store-wide warranty and shipping lines every listing repeats.
+ *
+ * Google treats those as thin, near-duplicate pages and will not index them
+ * even with a correct canonical, so they stay out of the sitemap and carry
+ * noindex until they have real copy. Merchandising reads the same signal to
+ * sort them behind listings that do (lib/catalog/merchandising.ts).
+ *
+ * This used to look for the two template sentences the bulk imports wrote
+ * ("Sourced and inspected for DrivoraParts..." / "Confirm vehicle fitment at
+ * checkout"). Those sentences are gone: the ESS listings now carry the
+ * seller's own copy where it exists, and where it does not the body is simply
+ * absent rather than filled with a template. Matching strings would therefore
+ * match nothing, and ~590 body-less pages would have quietly become indexable.
+ *
+ * So the test is structural instead of textual: is there a body at all? That
+ * holds for the next import too, without anyone having to register its
+ * particular boilerplate here.
+ */
 export function hasGenericPlaceholderDescription(description?: string): boolean {
-  if (!description) return false;
-  return GENERIC_DESCRIPTION_MARKERS.some((marker) => marker.test(description));
+  if (!description) return true;
+
+  const lines = description.split("\n");
+  const firstSection = lines.findIndex((line) =>
+    DESCRIPTION_SECTIONS.test(line.trim())
+  );
+
+  // Everything between the title line and the first section heading.
+  const body = lines
+    .slice(1, firstSection === -1 ? lines.length : firstSection)
+    .join("\n")
+    .trim();
+
+  if (body) return false;
+
+  /*
+   * No prose, but a Specifications or Highlights block is still substance a
+   * buyer came for -- a spec table is not thin content. Only a listing with
+   * neither is treated as having nothing to say.
+   */
+  if (firstSection === -1) return true;
+
+  const sectionNames = lines
+    .slice(firstSection)
+    .map((line) => line.trim())
+    .filter((line) => DESCRIPTION_SECTIONS.test(line));
+
+  return !sectionNames.some(
+    (name) =>
+      name === "Specifications" || name === "Highlights" || name === "Key Features"
+  );
 }
 
 export function buildProductMetaKeywords(input: ProductSeoInput): string[] {
