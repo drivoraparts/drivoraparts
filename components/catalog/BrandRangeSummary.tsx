@@ -58,8 +58,10 @@ export default function BrandRangeSummary({
   const category = categoryName.toLowerCase();
   const count = products.length;
 
+  // "in stock" came off this line: the count is of listings, and more than
+  // half the catalog is supplier-network fulfilled rather than held here.
   const facts: string[] = [
-    `${count} ${brandName} ${category} listing${count === 1 ? "" : "s"} in stock`,
+    `${count} ${brandName} ${category} listing${count === 1 ? "" : "s"}`,
   ];
   if (low !== null && high !== null) {
     facts.push(low === high ? formatUsd(low) : `${formatUsd(low)} – ${formatUsd(high)}`);

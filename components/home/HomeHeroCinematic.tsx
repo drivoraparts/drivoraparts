@@ -112,13 +112,19 @@ export default function HomeHeroCinematic({ listingCount }: { listingCount: numb
         </div>
       </section>
 
-      {/* The stock line lives below the film, where it does not compete with
+      {/* The catalog line lives below the film, where it does not compete with
           it. It said "Worldwide delivery"; the Shipping Policy ships to most
-          domestic and many international destinations, not all of them. */}
+          domestic and many international destinations, not all of them.
+
+          It also said "listings in stock". Just over half the catalog is
+          fulfilled through the supplier network rather than held here, and
+          nothing in the system verifies a unit is on a shelf, so this counts
+          listings and claims only that. Each product page states its own
+          fulfilment source, which is where that question is answerable. */}
       <div className="border-b border-border bg-chrome">
         <div className="mx-auto max-w-6xl px-5 py-4 sm:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-            {listingCount.toLocaleString()} listings in stock · International delivery
+            {listingCount.toLocaleString()} listings · International delivery
           </p>
         </div>
       </div>

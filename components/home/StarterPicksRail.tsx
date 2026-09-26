@@ -18,7 +18,7 @@ export default function StarterPicksRail() {
   return (
     <ProductRail
       eyebrow="Everyday parts"
-      title="Under $400, in stock now"
+      title="Under $400"
       description={`${count.toLocaleString()} listings you can order today — brakes, cooling, fuel, wheels and interior. Real photos, free standard shipping.`}
       products={products}
       viewAllHref={routes.all}

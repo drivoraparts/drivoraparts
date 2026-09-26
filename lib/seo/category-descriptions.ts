@@ -37,9 +37,16 @@ export function getCategorySeoDescription(slug: string, productCount = 0): strin
     CATEGORY_COPY[slug] ??
     `Shop ${slug.replace(/-/g, " ")} performance parts online at DrivoraParts. ${categoryKeywordPhrase(slug)}.`;
 
+  /*
+   * "in-stock listings" went the same way as the brand page's "verified
+   * listings" below: just over half the catalog is fulfilled through the
+   * supplier network, and nothing verifies a unit is physically held, so the
+   * count cannot carry a stock claim. The count and free standard shipping
+   * (Shipping Policy, section 4) are true of every listing.
+   */
   if (productCount > 0) {
     return truncateSeoDescription(
-      `${base} ${productCount.toLocaleString()}+ in-stock listings with free standard shipping.`
+      `${base} ${productCount.toLocaleString()}+ listings with free standard shipping.`
     );
   }
 

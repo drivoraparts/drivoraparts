@@ -94,10 +94,14 @@ export default function Page() {
                  * The count is the real number of matching listings. A platform
                  * with none says so here rather than letting someone click
                  * through expecting stock.
+                 *
+                 * It read "in stock", which the catalog cannot support: just
+                 * over half of it is fulfilled through the supplier network and
+                 * no unit is verified as held. It counts listings instead.
                  */}
                 <span className="mt-3 text-xs font-medium text-neutral-500">
                   {count > 0
-                    ? `${count} part${count === 1 ? "" : "s"} in stock`
+                    ? `${count} listing${count === 1 ? "" : "s"}`
                     : "Sourcing only — request a part"}
                 </span>
               </div>
