@@ -100690,31 +100690,26 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/58-volt-fuel-injection-control-module-ficm-ford-6-0l-power-stroke-2003-2007",
     thumbnail: "/product-media/electronics/bd-58-volt-fuel-injection-control-module-ficm-ford-6-0l-power-stroke-2003-1059700a/1.webp",
     images: ["/product-media/electronics/bd-58-volt-fuel-injection-control-module-ficm-ford-6-0l-power-stroke-2003-1059700a/1.webp"],
-    description: `58-volt Fuel Injection Control Module (ficm) Ford 6.0L Power Stroke 2003–2007, BD part 1059700-A.
+    description: `BD Diesel 58-volt Fuel Injection Control Module (ficm) Ford 6.0L Power Stroke 2003–2007 — 1059700-A
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD supply this as an exchange unit: a $250 refundable core deposit applies, refunded when your old unit is returned.
-
-BD list this as part 1059700-A.
+BD's 58-volt Ford Injection Control Module (FICM) provides quicker, more affirmative starts in both cold and warm weather over the OEM versions. All applicable critical components voltage and temperature ranges have been increased which maximizes current output without setting an overvoltage code. Field test reports have indicated restored throttle response and horsepower. These exchange units come preprogrammed and ready to install.
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: FICM
-Application: 2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
-Core charge: $250, refundable
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 2003–2005 Ford Excursion; and 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).
 Part number: 1059700-A
+Core: $250 refundable core deposit
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-Exchange unit — core deposit refunded on return
-12-month BD warranty
+50 State Legal
+58-Volt Fuel Injection Control Module (FICM)
+Quicker, more affirmative starts in both cold and warm weather
+Critical components' voltage and temperature ranges have been increased
+Maximized current output without setting an overvoltage code
+Field test reports have indicated restored throttle response and horsepower
+Pre-programmed and ready to install
 
 Warranty
 12-Month BD Diesel Warranty
@@ -101879,28 +101874,26 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-chevy-2014-up-2015-2019-2500-3500-4wd-2014-2019-1500-4wd-2015-2020-suv-4wd",
     thumbnail: "/product-media/electronics/bd-2-low-unloc-chevy-2014-up-2015-2019-2500-3500-4wd-2014-2019-1500-4wd-2-1030711/1.webp",
     images: ["/product-media/electronics/bd-2-low-unloc-chevy-2014-up-2015-2019-2500-3500-4wd-2014-2019-1500-4wd-2-1030711/1.webp"],
-    description: `2 Low UnLoc Chevy 2014-up - 2015–2019 2500–3500 4wd / 2014–2019 1500 4wd / 2015–2020 SUV 4wd, BD part 1030711.
+    description: `BD Diesel 2 Low UnLoc Chevy 2014-up - 2015–2019 2500–3500 4wd / 2014–2019 1500 4wd / 2015–2020 SUV 4wd — 1030711
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1030711.
+Vehicle maneuverability is reduced while in 4WD. When the 2Low Unloc is turned on, you disable the front wheel drive mechanism allowing for full torque to be available to the rear wheels only. The front wheels will NOT be driven, delivering normal 2WD maneuverability while in low range!  This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding.
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: 2 Low
-Application: 2014–2015 Chevrolet Silverado 1500; 2014–2015 GMC Sierra 1500; 2015–2016 Cadillac Escalade Esv; 2015 Cadillac Escalade; 2015 Chevrolet Silverado 2500 HD, Silverado 3500 HD, Suburban and Tahoe; and 2015 GMC Sierra 2500 HD, Sierra 3500 HD, Yukon and Yukon XL (4.3L, 5.3L, 6.0L, 6.2L, 6.6L)
-BD catalogue range: 2014–2020
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 2014–2015 Chevrolet Silverado 1500; 2014–2015 GMC Sierra 1500; 2015–2016 Cadillac Escalade Esv; 2015 Cadillac Escalade; 2015 Chevrolet Silverado 2500 HD, Silverado 3500 HD, Suburban and Tahoe; and 2015 GMC Sierra 2500 HD, Sierra 3500 HD, Yukon and Yukon XL (4.3L, 5.3L, 6.0L, 6.2L, 6.6L). BD list this part for 2014–2020; the years above are the ones tagged per model on their own listing.
 Part number: 1030711
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Installation is simple, the kit plugs in under the hood
+No wire cutting or splicing
+Kit comes with an illuminated rocker switch for control and to indicate when the front axle is being overridden
+Designed to allow the operator to manually disable the front wheel drive mechanism by holding the hubs in the free (2WD) mode with the transfer case in 4WD low range
+By allowing the front wheels to be disengaged, maximum torque is available to the rear wheels
+This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding
+With this kit installed, the front wheels will NOT be driven through the transfer case
+Allows to have full power and torque while in a high gear reduction applied to the rear axle(s) only
 
 Warranty
 12-Month BD Diesel Warranty
@@ -101927,28 +101920,26 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-dodge-4wd-1500-2009-2024-2500-2014-2024-3500-2013-2024-4500-5500-2019-2024",
     thumbnail: "/product-media/electronics/bd-2-low-unloc-dodge-4wd-1500-2009-2024-2500-2014-2024-3500-2013-2024-450-1030705/1.webp",
     images: ["/product-media/electronics/bd-2-low-unloc-dodge-4wd-1500-2009-2024-2500-2014-2024-3500-2013-2024-450-1030705/1.webp"],
-    description: `2 Low UnLoc Dodge 4wd - 1500 2009–2024 / 2500 2014–2024 / 3500 2013–2024 / 4500–5500 2019–2024, BD part 1030705.
+    description: `BD Diesel 2 Low UnLoc Dodge 4wd - 1500 2009–2024 / 2500 2014–2024 / 3500 2013–2024 / 4500–5500 2019–2024 — 1030705
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1030705.
+Vehicle maneuverability is reduced while in 4WD. When the 2Low Unloc is turned on, you disable the front wheel drive mechanism allowing for full torque to be available to the rear wheels only. The front wheels will NOT be driven, delivering normal 2WD maneuverability while in low range!  This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding.
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: 2 Low
-Application: 2009–2010 Dodge / Ram 1500; 2011–2015 Dodge / Ram 1500 Classic Ds; 2013–2014 Dodge / Ram 3500; and 2014 Dodge / Ram 2500 (3.0L, 3.6L, 3.7L, 4.7L, 5.7L, 6.4L, 6.7L)
-BD catalogue range: 2009–2024
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 2009–2010 Dodge / Ram 1500; 2011–2015 Dodge / Ram 1500 Classic Ds; 2013–2014 Dodge / Ram 3500; and 2014 Dodge / Ram 2500 (3.0L, 3.6L, 3.7L, 4.7L, 5.7L, 6.4L, 6.7L). BD list this part for 2009–2024; the years above are the ones tagged per model on their own listing.
 Part number: 1030705
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Installation is simple, the kit plugs in below the glove box
+No wire cutting or splicing and no wires through the firewall
+Kit comes with an illuminated rocker switch for control and to indicate when the front axle is being overridden
+Designed to allow the operator to manually disable the front wheel drive mechanism by holding the hubs in the free (2WD) mode with the transfer case in 4WD low range
+By allowing the front wheels to be disengaged, maximum torque is available to the rear wheels
+This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding
+With this kit installed, the front wheels will NOT be driven through the transfer case
+Allows to have full power and torque while in a high gear reduction applied to the rear axle(s) only
 
 Warranty
 12-Month BD Diesel Warranty
@@ -101975,28 +101966,23 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-dodge-1994-2002-cad-front-axle-1994-2002-2500-3500-4wd-1994-2001-1500-4wd",
     thumbnail: "/product-media/electronics/bd-2-low-unloc-dodge-1994-2002-cad-front-axle-1994-2002-2500-3500-4wd-199-1030703/1.webp",
     images: ["/product-media/electronics/bd-2-low-unloc-dodge-1994-2002-cad-front-axle-1994-2002-2500-3500-4wd-199-1030703/1.webp"],
-    description: `2 Low UnLoc Dodge 1994–2002 CAD Front Axle - 1994–2002 2500–3500 4wd / 1994–2001 1500 4wd, BD part 1030703.
+    description: `BD Diesel 2 Low UnLoc Dodge 1994–2002 CAD Front Axle - 1994–2002 2500–3500 4wd / 1994–2001 1500 4wd — 1030703
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1030703.
+Vehicle maneuverability is reduced while in 4WD. When the 2Low Unloc is turned on, you disable the front wheel drive mechanism allowing for full torque to be available to the rear wheels only. The front wheels will NOT be driven, delivering normal 2WD maneuverability while in low range!  This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding.
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: 2 Low
-Application: 1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L)
-BD catalogue range: 1994–2002
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L). BD list this part for 1994–2002; the years above are the ones tagged per model on their own listing.
 Part number: 1030703
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Designed to allow the operator to manually disable the front wheel drive mechanism by holding the hubs in the free (2WD) mode with the transfer case in 4WD low range
+By allowing the front wheels to be disengaged, maximum torque is available to the rear wheels
+This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding
+With this kit installed, the front wheels will NOT be driven through the transfer case
+Allows to have full power and torque while in a high gear reduction applied to the rear axle(s) only
 
 Warranty
 12-Month BD Diesel Warranty
@@ -103562,7 +103548,7 @@ Worldwide Shipping Available`,
     price: 49.95,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bosch Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "F00RJ01572",
     fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
@@ -103571,28 +103557,20 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/bosch-5-9l-cummins-common-rail-supply-connector-tube-dodge-2003-2007",
     thumbnail: "/product-media/electronics/bd-bosch-common-rail-supply-connector-tube-dodge-ram-5-9l-cummins-2003-20-f00rj01572/1.webp",
     images: ["/product-media/electronics/bd-bosch-common-rail-supply-connector-tube-dodge-ram-5-9l-cummins-2003-20-f00rj01572/1.webp"],
-    description: `Bosch Common Rail Supply Connector Tube Dodge/RAM 5.9L Cummins 2003–2007, Bosch part F00RJ01572.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part F00RJ01572.
+    description: `Bosch Common Rail Supply Connector Tube Dodge/RAM 5.9L Cummins 2003–2007 — F00RJ01572
 
 Specifications
 
 Manufacturer: Bosch
-Product: Bosch
-Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L).
 Part number: F00RJ01572
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
+OEM supply/connector tube sold individually
 
 Warranty
-BD Diesel Manufacturer Warranty
+Bosch Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -103607,7 +103585,7 @@ Worldwide Shipping Available`,
     price: 189.08,
     stock: true,
     condition: "brand-new",
-    warranty: "13-Month BD Diesel Warranty",
+    warranty: "Alliant Power 13-Month Unlimited-Mileage Warranty",
     location: "our supplier network",
     partNumber: "AP63458",
     fitment: "1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1998–2004 Dodge / Ram 2500 and 3500 (5.9L).",
@@ -103616,30 +103594,21 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/accelerator-pedal-position-sensor-apps-dodge-1998-2004-5-9l",
     thumbnail: "/product-media/electronics/bd-accelerator-pedal-position-sensor-apps-dodge-1998-2004-5-9l-ap63458/1.webp",
     images: ["/product-media/electronics/bd-accelerator-pedal-position-sensor-apps-dodge-1998-2004-5-9l-ap63458/1.webp"],
-    description: `Accelerator Pedal Position Sensor (APPS) - Dodge 1998–2004 5.9L, Alliant Power part AP63458.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part AP63458.
+    description: `Accelerator Pedal Position Sensor (APPS) - Dodge 1998–2004 5.9L — AP63458
 
 Specifications
 
 Manufacturer: Alliant Power
-Product: Alliant Power
-Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1998–2004 Dodge / Ram 2500 and 3500 (5.9L)
-Warranty: 13 months
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1998–2004 Dodge / Ram 2500 and 3500 (5.9L).
 Part number: AP63458
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-13-month BD warranty
+Alliant Power Products Line of Quality New and Remanufactured Parts
+All Alliant Power Products are Backed with a 13-Month Unlimited Mileage Warranty and Professional Technical Support
 
 Warranty
-13-Month BD Diesel Warranty
+Alliant Power 13-Month Unlimited-Mileage Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -105119,28 +105088,26 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/2-low-unloc-chevy-2001-2014-2001-2014-2500-3500-4wd-2001-2013-1500-4wd",
     thumbnail: "/product-media/electronics/bd-2-low-unloc-chevy-2001-2014-2001-2014-2500-3500-4wd-2001-2013-1500-4wd-1030710/1.webp",
     images: ["/product-media/electronics/bd-2-low-unloc-chevy-2001-2014-2001-2014-2500-3500-4wd-2001-2013-1500-4wd-1030710/1.webp"],
-    description: `2 Low UnLoc Chevy 2001–2014 2001–2014 2500–3500 4wd / 2001–2013 1500 4wd, BD part 1030710.
+    description: `BD Diesel 2 Low UnLoc Chevy 2001–2014 2001–2014 2500–3500 4wd / 2001–2013 1500 4wd — 1030710
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1030710.
+Vehicle maneuverability is reduced while in 4WD. When the 2Low Unloc is turned on, you disable the front wheel drive mechanism allowing for full torque to be available to the rear wheels only. The front wheels will NOT be driven, delivering normal 2WD maneuverability while in low range!  This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding.
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: 2 Low
-Application: 2001–2002 Chevrolet Silverado 1500, Silverado 1500 HD, Silverado 2500 HD and Silverado 3500; and 2001 GMC Sierra 1500, Sierra 1500 HD, Sierra 2500 HD and Sierra 3500 (4.3L, 4.8L, 5.3L, 6.0L, 6.6L, 8.1L)
-BD catalogue range: 2001–2014
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 2001–2002 Chevrolet Silverado 1500, Silverado 1500 HD, Silverado 2500 HD and Silverado 3500; and 2001 GMC Sierra 1500, Sierra 1500 HD, Sierra 2500 HD and Sierra 3500 (4.3L, 4.8L, 5.3L, 6.0L, 6.6L, 8.1L). BD list this part for 2001–2014; the years above are the ones tagged per model on their own listing.
 Part number: 1030710
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Installation is simple, the kit plugs in under the hood
+No wire cutting or splicing
+Kit comes with an illuminated rocker switch for control and to indicate when the front axle is being overridden
+Designed to allow the operator to manually disable the front wheel drive mechanism by holding the hubs in the free (2WD) mode with the transfer case in 4WD low range
+By allowing the front wheels to be disengaged, maximum torque is available to the rear wheels
+This will also allow for sharp "All The Way Over" turns without the front axle u-joint hopping or binding
+With this kit installed, the front wheels will NOT be driven through the transfer case
+Allows to have full power and torque while in a high gear reduction applied to the rear axle(s) only
 
 Warranty
 12-Month BD Diesel Warranty
@@ -105323,28 +105290,22 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-4-pack",
     thumbnail: "/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-4-pack-1050458/1.webp",
     images: ["/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-4-pack-1050458/1.webp"],
-    description: `Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (4-pack), BD part 1050458.
+    description: `BD Diesel Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (4-pack) — 1050458
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1050458.
+A common failure point on the L5P Duramax, BD's replacement connector with pigtail for the fuel injectors will get you back on the road quickly. The connector is usually replaced at the same time as the injectors and is prone to increased resistance that can cause an injector DTC (P0201-P0208).
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: Fuel Injector Electrical
-Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
-BD catalogue range: 2017–2022
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L). BD list this part for 2017–2022; the years above are the ones tagged per model on their own listing.
 Part number: 1050458
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+8-inch length
+Includes two heat shrink butt connectors
+Easy to install
+Exact fit
 
 Warranty
 12-Month BD Diesel Warranty
@@ -105371,28 +105332,22 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-single",
     thumbnail: "/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-single-1050457/1.webp",
     images: ["/product-media/electronics/bd-injector-connector-w-pigtail-chevy-gm-duramax-l5p-2017-2022-single-1050457/1.webp"],
-    description: `Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (single), BD part 1050457.
+    description: `BD Diesel Injector Connector W/pigtail Chevy/GM Duramax L5P 2017–2022 (single) — 1050457
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1050457.
+A common failure point on the L5P Duramax, BD's replacement connector with pigtail for the fuel injectors will get you back on the road quickly. The connector is usually replaced at the same time as the injectors and is prone to increased resistance that can cause an injector DTC (P0201-P0208).
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: Fuel Injector Electrical
-Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
-BD catalogue range: 2017–2022
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L). BD list this part for 2017–2022; the years above are the ones tagged per model on their own listing.
 Part number: 1050457
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+8-inch length
+Includes two heat shrink butt connectors
+Easy to install
+Exact fit
 
 Warranty
 12-Month BD Diesel Warranty
@@ -105419,29 +105374,18 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/pmd-grey-extension-cable-72-inch-chevy-6-5l-1994-2000",
     thumbnail: "/product-media/electronics/bd-pmd-grey-extension-cable-72-inch-chevy-gmc-6-5l-1994-2000-1036533/1.webp",
     images: ["/product-media/electronics/bd-pmd-grey-extension-cable-72-inch-chevy-gmc-6-5l-1994-2000-1036533/1.webp"],
-    description: `PMD (Grey) Extension Cable 72-inch - Chevy/GMC 6.5L 1994–2000, grey / 72 inches, BD part 1036533.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1036533, the grey / 72 inches option.
+    description: `BD Diesel PMD (Grey) Extension Cable 72-inch - Chevy/GMC 6.5L 1994–2000, Grey / 72 inches — 1036533
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: PMD
-Option: Grey / 72 inches
-Application: 1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L)
-BD catalogue range: 1994–2000
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L). BD list this part for 1994–2000; the years above are the ones tagged per model on their own listing. Grey / 72 inches option.
 Part number: 1036533
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Relocates Pump Mounted Driver (PMD) extension cable
+Great addition to the 1036520 PMD Relocation Kit
 
 Warranty
 12-Month BD Diesel Warranty
@@ -105468,29 +105412,18 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/pmd-black-extension-cable-40-inch-chevy-6-5l-1994-2000",
     thumbnail: "/product-media/electronics/bd-pmd-black-extension-cable-40-inch-chevy-gmc-6-5l-1994-2000-1036530/1.webp",
     images: ["/product-media/electronics/bd-pmd-black-extension-cable-40-inch-chevy-gmc-6-5l-1994-2000-1036530/1.webp"],
-    description: `PMD (Black) Extension Cable 40-inch - Chevy/GMC 6.5L 1994–2000, black / 40 inches, BD part 1036530.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1036530, the black / 40 inches option.
+    description: `BD Diesel PMD (Black) Extension Cable 40-inch - Chevy/GMC 6.5L 1994–2000, Black / 40 inches — 1036530
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: PMD
-Option: Black / 40 inches
-Application: 1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L)
-BD catalogue range: 1994–2000
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 1994–1996 Chevrolet C1500, C2500, C3500, K1500 and K2500; 1994–1995 Chevrolet K3500; and 1994–1995 GMC C1500, C2500, C3500, K1500, K2500 and K3500 (6.5L). BD list this part for 1994–2000; the years above are the ones tagged per model on their own listing. Black / 40 inches option.
 Part number: 1036530
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Relocates Pump Mounted Driver (PMD) extension cable
+Great addition to the 1036520 PMD Relocation Kit
 
 Warranty
 12-Month BD Diesel Warranty
@@ -105654,7 +105587,7 @@ Worldwide Shipping Available`,
     price: 84.56,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bosch Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "F00RC00647",
     fitment: "2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). BD list this part for 2007–2018; the years above are the ones tagged per model on their own listing.",
@@ -105663,29 +105596,20 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/bosch-6-7l-cummins-common-rail-supply-connector-tube-cummins-6-7l-dodge-2007-2018",
     thumbnail: "/product-media/electronics/bd-bosch-6-7l-cummins-common-rail-supply-connector-tube-cummins-6-7l-dodg-f00rc00647/1.webp",
     images: ["/product-media/electronics/bd-bosch-6-7l-cummins-common-rail-supply-connector-tube-cummins-6-7l-dodg-f00rc00647/1.webp"],
-    description: `Bosch 6.7L Cummins Common Rail Supply Connector Tube - Cummins 6.7L Dodge 2007–2018, Bosch part F00RC00647.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part F00RC00647.
+    description: `Bosch 6.7L Cummins Common Rail Supply Connector Tube - Cummins 6.7L Dodge 2007–2018 — F00RC00647
 
 Specifications
 
 Manufacturer: Bosch
-Product: Bosch
-Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
-BD catalogue range: 2007–2018
+Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L). BD list this part for 2007–2018; the years above are the ones tagged per model on their own listing.
 Part number: F00RC00647
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
+OEM supply/connector tube sold individually
 
 Warranty
-BD Diesel Manufacturer Warranty
+Bosch Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -106169,27 +106093,19 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/replacement-filter-cartridge-coolant-filter-ford-6-0l-2003-2007",
     thumbnail: "/product-media/electronics/bd-replacement-filter-cartridge-coolant-filter-ford-6-0l-power-stroke-200-p554685/1.webp",
     images: ["/product-media/electronics/bd-replacement-filter-cartridge-coolant-filter-ford-6-0l-power-stroke-200-p554685/1.webp"],
-    description: `Replacement Filter Cartridge - Coolant Filter - Ford 6.0L Power Stroke 2003–2007, BD part P554685.
+    description: `BD Diesel Replacement Filter Cartridge - Coolant Filter - Ford 6.0L Power Stroke 2003–2007 — P554685
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part P554685.
+Replacement spin-on filter for BD's 1032121 Ford 6.0L Coolant Filter Kit, to be serviced 15,0000 miles / 24,000 kms / 6 Months.
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: FICM
-Application: 2003–2005 Ford Excursion; 2003–2007 Ford F-250 Super Duty and F-350 Super Duty; and 2004–2007 Ford E-350 Super Duty (6.0L)
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 2003–2005 Ford Excursion; 2003–2007 Ford F-250 Super Duty and F-350 Super Duty; and 2004–2007 Ford E-350 Super Duty (6.0L).
 Part number: P554685
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Donaldon filter for Ford 6.0L Coolant Filter Kit p/n 1032121
 
 Warranty
 12-Month BD Diesel Warranty
@@ -106207,7 +106123,7 @@ Worldwide Shipping Available`,
     price: 50,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bully Dog Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "BUL42214",
     fitment: "2013–2017 Dodge / Ram 2500 and 3500 (6.7L).",
@@ -106216,28 +106132,20 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/bully-dog-unlock-cable-dodge-2013-up",
     thumbnail: "/product-media/electronics/bd-bully-dog-unlock-cable-dodge-2013-up-bul42214/1.webp",
     images: ["/product-media/electronics/bd-bully-dog-unlock-cable-dodge-2013-up-bul42214/1.webp"],
-    description: `Bully Dog Unlock Cable - Dodge 2013-up, BD part BUL42214.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part BUL42214.
+    description: `BD Diesel Bully Dog Unlock Cable - Dodge 2013-up — BUL42214
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: Bully Dog
-Application: 2013–2017 Dodge / Ram 2500 and 3500 (6.7L)
+Manufacturer: Bully Dog
+Application: 2013–2017 Dodge / Ram 2500 and 3500 (6.7L).
 Part number: BUL42214
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
+Unlock cable used for 2013-2015 Dodge 6.7L with BUL40420 or BUL40428 tuners
 
 Warranty
-BD Diesel Manufacturer Warranty
+Bully Dog Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -106252,7 +106160,7 @@ Worldwide Shipping Available`,
     price: 679.95,
     stock: true,
     condition: "refurbished",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bostech Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "BOSHPOP-123X",
     fitment: "2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
@@ -106275,7 +106183,6 @@ BD list this as part BOSHPOP-123X.
 Specifications
 
 Manufacturer: Bostech
-Product: Bostech
 Application: 2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
 Core charge: $150, refundable
 Part number: BOSHPOP-123X
@@ -106302,7 +106209,7 @@ Worldwide Shipping Available`,
     price: 579.95,
     stock: true,
     condition: "refurbished",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bostech Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "BOSHPOP-122X",
     fitment: "2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
@@ -106325,7 +106232,6 @@ BD list this as part BOSHPOP-122X.
 Specifications
 
 Manufacturer: Bostech
-Product: Bostech
 Application: 2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
 Core charge: $200, refundable
 Part number: BOSHPOP-122X
@@ -106352,7 +106258,7 @@ Worldwide Shipping Available`,
     price: 479.95,
     stock: true,
     condition: "refurbished",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bostech Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "BOSHPOP-008X",
     fitment: "1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L).",
@@ -106375,7 +106281,6 @@ BD list this as part BOSHPOP-008X.
 Specifications
 
 Manufacturer: Bostech
-Product: Bostech
 Application: 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (7.3L)
 Core charge: $150, refundable
 Part number: BOSHPOP-008X
@@ -106402,7 +106307,7 @@ Worldwide Shipping Available`,
     price: 318.95,
     stock: true,
     condition: "refurbished",
-    warranty: "24-Month BD Diesel Warranty",
+    warranty: "Alliant Power 24-Month Warranty",
     location: "our supplier network",
     partNumber: "AP64900",
     fitment: "2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).",
@@ -106412,34 +106317,28 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/injector-stock-ford-2008-2010-6-4l",
     thumbnail: "/product-media/electronics/bd-injector-stock-ford-6-4l-power-stroke-2008-2010-ap64900/1.webp",
     images: ["/product-media/electronics/bd-injector-stock-ford-6-4l-power-stroke-2008-2010-ap64900/1.webp"],
-    description: `Injector, Stock - Ford 6.4L Power Stroke 2008–2010, Alliant Power part AP64900.
+    description: `Injector, Stock - Ford 6.4L Power Stroke 2008–2010 — AP64900
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD supply this as an exchange unit: a $175 refundable core deposit applies, refunded when your old unit is returned.
-
-BD list this as part AP64900.
+Each unit completely refreshed with new rail connections, thru-rod, nuts and belleville washers, o-rings, springs and spool valves, dampening pins and check plates. Control valve body and spool are precision ground to ensure perfect original spec sealing. Precision honed intensifier body with new matched plungers. Each injector is thoroughly tested and all sealing surfaces are refinished.
 
 Specifications
 
 Manufacturer: Alliant Power
-Product: Alliant Power
-Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
-Core charge: $175, refundable
-Warranty: 24 months
+Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L).
 Part number: AP64900
+Core: $175 refundable core deposit
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-Exchange unit — core deposit refunded on return
-24-month BD warranty
+Stock exchange replacement Alliant Power injector
+Original OEM Parts
+Original OEM Process assembled in class 100,000 clean room
+Each injector is 100% flow tested and nitrogen tested for leaks
+Quality OEM injector at an aftermarket price
+Comes with connector feed tube
 
 Warranty
-24-Month BD Diesel Warranty
+Alliant Power 24-Month Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -106454,7 +106353,7 @@ Worldwide Shipping Available`,
     price: 226.95,
     stock: true,
     condition: "refurbished",
-    warranty: "24-Month BD Diesel Warranty",
+    warranty: "Alliant Power 24-Month Warranty",
     location: "our supplier network",
     partNumber: "AP60901",
     fitment: "2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
@@ -106464,34 +106363,32 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/stock-6-0l-powerstroke-fuel-injector-ford-2004-2007-after-09-21-2003",
     thumbnail: "/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2004-2007-after-09-21-2003-ap60901/1.webp",
     images: ["/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2004-2007-after-09-21-2003-ap60901/1.webp"],
-    description: `Stock Fuel Injector Ford 6.0L Power Stroke 2004–2007 (after 09/21/2003), Alliant Power part AP60901.
+    description: `Stock Fuel Injector Ford 6.0L Power Stroke 2004–2007 (after 09/21/2003) — AP60901
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
-
-BD list this as part AP60901.
+Comes with everything you need for an injector install, including o-rings and seals. Each unit completely refreshed with new rail connections, thru-rod, nuts and Belleville washers, o-rings, springs and spool valves, dampening pins and check plates. Control valve body and spool are precision ground to ensure perfect original spec sealing. Precision honed intensifier body with new matched plungers. Each injector is thoroughly tested, and all sealing surfaces are refinished.
 
 Specifications
 
 Manufacturer: Alliant Power
-Product: Alliant Power
-Application: 2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
-Core charge: $150, refundable
-Warranty: 24 months
+Application: 2004–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L).
 Part number: AP60901
+Core: $150 refundable core deposit
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-Exchange unit — core deposit refunded on return
-24-month BD warranty
+Remanufactured by UpTime Parts/PurePower Technologies - an OE rebuilding company
+Replaced rail connections, thru-rod, nuts and belleville washers, o-rings, springs and spool valves
+Control Valve body and spool are precision ground to specific diametrical clearance for sealing and directing oil for injector operation
+All spools are replaced 100% and machined to original specification
+Each injector is 100% flow tested and nitrogen tested for leaks
+Flow volume, leakage rate, max needle lift and valve opening pressure (VOP) are also tested
+All sealing surfaces are refinished and maintain less than 2 microns of flatness
+Precision honed intensifier body is matched with new plungers to operate at extreme pressures and temperatures
+Replaced dampening pins and check plates to prevent cavitation
+Quality OEM injector at an aftermarket price
 
 Warranty
-24-Month BD Diesel Warranty
+Alliant Power 24-Month Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -106506,7 +106403,7 @@ Worldwide Shipping Available`,
     price: 226.95,
     stock: true,
     condition: "refurbished",
-    warranty: "24-Month BD Diesel Warranty",
+    warranty: "Alliant Power 24-Month Warranty",
     location: "our supplier network",
     partNumber: "AP60900",
     fitment: "2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L).",
@@ -106516,34 +106413,32 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/stock-6-0l-powerstroke-fuel-injector-ford-2003-2004-up-to-09-21-2003",
     thumbnail: "/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2003-2004-up-to-09-21-2003-ap60900/1.webp",
     images: ["/product-media/electronics/bd-stock-fuel-injector-ford-6-0l-power-stroke-2003-2004-up-to-09-21-2003-ap60900/1.webp"],
-    description: `Stock Fuel Injector Ford 6.0L Power Stroke 2003–2004 (up to 09/21/2003), Alliant Power part AP60900.
+    description: `Stock Fuel Injector Ford 6.0L Power Stroke 2003–2004 (up to 09/21/2003) — AP60900
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD supply this as an exchange unit: a $150 refundable core deposit applies, refunded when your old unit is returned.
-
-BD list this as part AP60900.
+Each unit completely refreshed with new rail connections, thru-rod, nuts and belleville washers, o-rings, springs and spool valves, dampening pins and check plates. Control valve body and spool are precision ground to ensure perfect original spec sealing. Precision honed intensifier body with new matched plungers. Each injector is thoroughly tested and all sealing surfaces are refinished.
 
 Specifications
 
 Manufacturer: Alliant Power
-Product: Alliant Power
-Application: 2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
-Core charge: $150, refundable
-Warranty: 24 months
+Application: 2003–2004 Ford F-250 Super Duty and F-350 Super Duty (6.0L).
 Part number: AP60900
+Core: $150 refundable core deposit
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-Exchange unit — core deposit refunded on return
-24-month BD warranty
+Remanufactured by UpTime Parts/PurePower Technologies - an OE rebuilding company
+Replaced rail connections, thru-rod, nuts and belleville washers, o-rings, springs and spool valves
+Control Valve body and spool are precision ground to specific diametrical clearance for sealing and directing oil for injector operation
+All spools are replaced 100% and machined to original specification
+Each injector is 100% flow tested and nitrogen tested for leaks
+Flow volume, leakage rate, max needle lift and valve opening pressure (VOP) are also tested
+All sealing surfaces are refinished and maintain less than 2 microns of flatness
+Precision honed intensifier body is matched with new plungers to operate at extreme pressures and temperatures
+Replaced dampening pins and check plates to prevent cavitation
+Quality OEM injector at an aftermarket price
 
 Warranty
-24-Month BD Diesel Warranty
+Alliant Power 24-Month Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -106558,7 +106453,7 @@ Worldwide Shipping Available`,
     price: 11.58,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Alliant Power Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "AP0002",
     fitment: "2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L). BD list this part for 2003–2008; the years above are the ones tagged per model on their own listing.",
@@ -106567,29 +106462,20 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/injector-seal-kit-ford-6-0l-2003-2008",
     thumbnail: "/product-media/electronics/bd-injector-seal-kit-ford-6-0l-2003-2008-ap0002/1.webp",
     images: ["/product-media/electronics/bd-injector-seal-kit-ford-6-0l-2003-2008-ap0002/1.webp"],
-    description: `Injector Seal Kit Ford 6.0L 2003–2008, Alliant Power part AP0002.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part AP0002.
+    description: `Injector Seal Kit Ford 6.0L 2003–2008 — AP0002
 
 Specifications
 
 Manufacturer: Alliant Power
-Product: Alliant Power
-Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L)
-BD catalogue range: 2003–2008
+Application: 2003–2007 Ford F-250 Super Duty and F-350 Super Duty (6.0L). BD list this part for 2003–2008; the years above are the ones tagged per model on their own listing.
 Part number: AP0002
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
+Alliant Power External Injector Oring Kit
 
 Warranty
-BD Diesel Manufacturer Warranty
+Alliant Power Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -106651,7 +106537,7 @@ Worldwide Shipping Available`,
     price: 249.95,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Garrett Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "792593-0001",
     fitment: "2003–2005 Ford Excursion, F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; 2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2004–2005 Ford E-350 and E-450; 2004–2005 GMC Sierra 2500 HD and Sierra 3500 HD; and 2006 Chevrolet Express 2500 and Express 3500 (6.0L, 6.6L). BD list this part for 2003–2016; the years above are the ones tagged per model on their own listing.",
@@ -106697,7 +106583,7 @@ Worldwide Shipping Available`,
     price: 399.98,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Garrett Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "763527-0712",
     fitment: "2004–2007 Chevrolet Silverado 2500 HD; 2004 Chevrolet Silverado 2500; 2004–2006 Chevrolet Silverado 3500; 2004–2006 GMC Sierra 2500 HD and Sierra 3500; 2004 GMC Sierra 2500; 2006–2007 Chevrolet Express 2500, Express 3500, Kodiac C4500 and Kodiac C5500; 2006 GMC Savana 2500, Savana 3500, Topkick C4500 and Topkick C5500; and 2007 Chevrolet Silverado 2500 HD Classic and Silverado 3500 Classic (6.6L).",
@@ -106843,27 +106729,25 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/cool-down-timer-kit-v2-0",
     thumbnail: "/product-media/electronics/bd-cool-down-timer-kit-v2-0-1081160/1.webp",
     images: ["/product-media/electronics/bd-cool-down-timer-kit-v2-0-1081160/1.webp"],
-    description: `Cool Down Timer Kit v2.0, BD part 1081160.
+    description: `BD Diesel Cool Down Timer Kit v2.0 — 1081160
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1081160.
+Turbochargers operate at high temperatures. The Cool Down Timer is designed to keep the engine running when the ignition is turned off to prevent turbocharger bearing failure that could occur when the engine is shut down, stopping the cool lubricating oil flowing to the turbocharger while it is still hot. If the oil flow is shut off too early, the remaining oil in the bearing housing will overheat causing coking of the bearings which causes both premature bearing wear and reduced oiling of the bearings. Allowing the engine to idle to a minimum operating speed gives the turbocharger time to cool down. The CDT is adjustable for up to 5 minutes of idle time, or optionally works with any K-Type EGT probe for temperature-based shutdown.
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: Cool Down Timer
-Application: 1994–2000 Dodge / Ram 2500; 1994–1999 Dodge / Ram 3500; 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; 1998–2000 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1999 Ford F-250 Super Duty and F-350 Super Duty (5.9L, 7.3L)
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 1994–2000 Dodge / Ram 2500; 1994–1999 Dodge / Ram 3500; 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; 1998–2000 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; and 1999 Ford F-250 Super Duty and F-350 Super Duty (5.9L, 7.3L).
 Part number: 1081160
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Prevent turbo damage during hot engine shutdown
+EGT, time and manual controlled shutdown
+Works with any K-Type EGT probe
+Compatible with most OEM vehicle security alarms
+Dodge 1994-2005 5.9L Cummins
+Ford 1994-2018 PowerStroke 7.3L/6.0L/6.4L/6.7L (w/o Push Button Start)
+Chevy 2001-2014 Duramax 6.6L
 
 Warranty
 12-Month BD Diesel Warranty
@@ -106890,27 +106774,21 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/5-9l-cummins-low-fuel-pressure-light-alarm-kit-dodge-1998-2007-24-valve",
     thumbnail: "/product-media/electronics/bd-low-fuel-pressure-light-alarm-kit-dodge-24-valve-5-9l-cummins-1998-200-1081130/1.webp",
     images: ["/product-media/electronics/bd-low-fuel-pressure-light-alarm-kit-dodge-24-valve-5-9l-cummins-1998-200-1081130/1.webp"],
-    description: `Low Fuel Pressure Light & Alarm Kit Dodge 24-valve 5.9L Cummins 1998–2007, BD part 1081130.
+    description: `BD Diesel Low Fuel Pressure Light & Alarm Kit Dodge 24-valve 5.9L Cummins 1998–2007 — 1081130
 
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 1081130.
+A failing lift or fuel supply pump will not only cause sub-standard performance, it can cause costly damage to the injection pump. Keep tabs on your truck's fuel system with the BD low fuel pressure LED kit, which incorporates a red or amber LED that illuminates if lift pump pressure falls below spec. Inexpensive protection and easy installation!
 
 Specifications
 
-Manufacturer: BD Diesel Performance
-Product: Low Pressure Alarm
-Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L)
-Warranty: 12 months
+Manufacturer: BD Diesel
+Application: 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission; 1998–2007 Dodge / Ram 2500; and 1998–2006 Dodge / Ram 3500 (5.9L).
 Part number: 1081130
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
-12-month BD warranty
+Keep tabs on your truck's fuel system
+Inexpensive protection and easy installation!
+RedLED that illuminates if lift pump pressure falls below spec
 
 Warranty
 12-Month BD Diesel Warranty
@@ -108937,7 +108815,7 @@ Worldwide Shipping Available`,
     price: 495,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bosch Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "0445226044",
     fitment: "2007–2012 Dodge / Ram 2500 and 3500 (6.7L).",
@@ -108946,28 +108824,21 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/bosch-6-7l-cummins-cr-fuel-rail",
     thumbnail: "/product-media/electronics/bd-bosch-6-7l-cummins-cr-fuel-rail-dodge-2007-5-2012-0445226044/1.webp",
     images: ["/product-media/electronics/bd-bosch-6-7l-cummins-cr-fuel-rail-dodge-2007-5-2012-0445226044/1.webp"],
-    description: `Bosch 6.7L Cummins CR Fuel Rail Dodge 2007.5-2012, Bosch part 0445226044.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 0445226044.
+    description: `Bosch 6.7L Cummins CR Fuel Rail Dodge 2007.5-2012 — 0445226044
 
 Specifications
 
 Manufacturer: Bosch
-Product: Bosch
-Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
+Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L).
 Part number: 0445226044
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
+OEM Replacement Part
+Comes with fuel rail pressure sensor and fuel pressure limiting valve
 
 Warranty
-BD Diesel Manufacturer Warranty
+Bosch Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
@@ -108982,7 +108853,7 @@ Worldwide Shipping Available`,
     price: 319,
     stock: true,
     condition: "brand-new",
-    warranty: "BD Diesel Manufacturer Warranty",
+    warranty: "Bosch Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "0445226014",
     fitment: "2003–2007 Dodge / Ram 2500 and 3500 (5.9L).",
@@ -108991,28 +108862,21 @@ Worldwide Shipping Available`,
     sourceUrl: "https://us.bddiesel.com/products/bosch-5-9l-cummins-cr-fuel-rail",
     thumbnail: "/product-media/electronics/bd-bosch-5-9l-cummins-cr-fuel-rail-dodge-2003-2007-0445226014/1.webp",
     images: ["/product-media/electronics/bd-bosch-5-9l-cummins-cr-fuel-rail-dodge-2003-2007-0445226014/1.webp"],
-    description: `Bosch 5.9L Cummins CR Fuel Rail Dodge 2003–2007, Bosch part 0445226014.
-
-Modern diesels put a surprising amount of their behaviour in modules and sensors, and a failing one rarely announces itself clearly — it shows up as hard starting, an inconsistent idle, or a truck that will not do what it did last week.
-
-These are the control and sensing parts for those systems, replacing what has failed or improving on what the factory specified.
-
-BD list this as part 0445226014.
+    description: `Bosch 5.9L Cummins CR Fuel Rail Dodge 2003–2007 — 0445226014
 
 Specifications
 
 Manufacturer: Bosch
-Product: Bosch
-Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
+Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L).
 Part number: 0445226014
 
 Highlights
 
-Replaces a failing module or sensor
-Restores the behaviour the truck had
+OEM Replacement Part
+Comes with fuel rail pressure sensor and fuel pressure limiting valve
 
 Warranty
-BD Diesel Manufacturer Warranty
+Bosch Manufacturer Warranty
 
 Shipping
 Worldwide Shipping Available`,
