@@ -40,6 +40,35 @@ type ShippingQuoteOption = {
 const inputClass =
   "box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-accent";
 
+/**
+ * Everything the payment selector offers, in the order it offers it.
+ *
+ * Derived from MANUAL_METHODS rather than restated, so adding, renaming or
+ * disabling a method in lib/payments/manual-methods.ts is still the only edit
+ * needed -- checkout, the order record, the admin screen and the owner's
+ * notification email all keep reading from that one list.
+ *
+ * Crypto is appended as the same "crypto" sentinel payChoice has always used;
+ * it is not a manual method and has no entry there. It stays last, where the
+ * OR-divided card it replaces used to sit. Its blurb is that card's own copy.
+ */
+const PAY_OPTIONS: {
+  value: "crypto" | ManualMethodId;
+  label: string;
+  blurb: string;
+}[] = [
+  ...MANUAL_METHODS.filter((m) => m.enabled).map((m) => ({
+    value: m.id,
+    label: m.label,
+    blurb: m.blurb,
+  })),
+  {
+    value: "crypto" as const,
+    label: "Cryptocurrency",
+    blurb: "Bitcoin · Ethereum · USDT · 300+ coins via NOWPayments",
+  },
+];
+
 export default function CheckoutPage() {
   const [hydrated, setHydrated] = useState(false);
   const [fullName, setFullName] = useState("");
@@ -50,19 +79,26 @@ export default function CheckoutPage() {
   const [zip, setZip] = useState("");
   const [country, setCountry] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  // "crypto" keeps the existing NOWPayments flow exactly. Any manual method id
-  // routes the order through the manual/direct-payment path instead. Defaults
-  // to crypto so the current behaviour is unchanged unless the customer picks
-  // a direct method.
-  //
-  // null means every card is collapsed -- clicking the open method closes it.
-  // That is a real state the customer can reach, not just a transient one, so
-  // the Place Order button is disabled while it holds and handleCheckout
-  // refuses it: otherwise a cleared selection would post an order with no
-  // payment method attached at all.
+  /*
+   * Which payment method the customer has chosen. "crypto" is the existing
+   * NOWPayments flow; any manual method id routes the order through the
+   * manual/direct-payment path instead.
+   *
+   * Starts null -- NOTHING is preselected. It used to start at "crypto",
+   * which meant an order could record "Cryptocurrency (NOWPayments)" without
+   * the customer ever having looked at the payment step, and afterwards there
+   * was no way to tell a deliberate choice from an untouched default. The
+   * Place Order button stays clickable while this is null so the customer
+   * gets told why it will not go through; handleCheckout refuses the submit.
+   */
   const [payChoice, setPayChoice] = useState<"crypto" | ManualMethodId | null>(
-    "crypto"
+    null
   );
+  /** Set when a submit is attempted with no method chosen; cleared on choice. */
+  const [payError, setPayError] = useState(false);
+  const paymentSelectRef = useRef<HTMLSelectElement>(null);
+  const selectedPayOption =
+    PAY_OPTIONS.find((option) => option.value === payChoice) ?? null;
   // Only meaningful for a method that declares requiresRoute (Bank Transfer).
   // Kept when the customer switches away and back, but never submitted -- and
   // never required -- unless the selected method actually asks for it.
@@ -335,14 +371,25 @@ export default function CheckoutPage() {
     if (!cart.length || submitting) return;
 
     /*
-     * No method chosen -- every card is collapsed. The button is disabled in
-     * this state, so this catches only a submit that arrived another way (a
-     * keypress, a stale click). It matters because payChoice is what decides
-     * provider and manualMethod: without this, a cleared selection would post
-     * a manual order naming no method at all.
+     * No method chosen. This is the state checkout now opens in, so it is an
+     * ordinary path rather than an edge case: the button stays clickable
+     * precisely so the customer finds out why the order will not go through
+     * instead of pressing a dead control. The selector is marked invalid,
+     * scrolled to and focused, and the order is not sent.
+     *
+     * The server refuses a manual order with no method too (400), and an
+     * order must never be allowed to fall back to a default here: payChoice
+     * is what decides provider and manualMethod, and guessing one is exactly
+     * the bug this selector exists to remove.
      */
     if (!payChoice) {
-      showToast("Please choose a payment method.");
+      setPayError(true);
+      paymentSelectRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+      paymentSelectRef.current?.focus({ preventScroll: true });
+      showToast("Please select a payment method to continue.");
       return;
     }
 
@@ -653,295 +700,288 @@ export default function CheckoutPage() {
               <section className={glassCard}>
                 <h2 className="mb-4 text-xl font-bold">Payment</h2>
 
-                {/* Direct/manual methods first, then the existing crypto option
-                    below an OR divider. Selecting a card sets payChoice, which
-                    drives both the instructions shown here and what checkout
-                    submits. Crypto stays the default so the NOWPayments flow is
-                    unchanged unless the customer chooses otherwise. */}
-                <div className="mb-5">
-                  <p className="mb-2 text-sm font-semibold text-neutral-800">
-                    Pay Directly
-                  </p>
-                  {/*
-                    One row per method, each owning whatever secondary controls
-                    it needs.
+                {/*
+                  One selector, nothing preselected.
 
-                    The route selector used to sit below the whole list, which
-                    left it ambiguous which method it belonged to. A two-column
-                    grid made that worse, not better: a full-width panel dropped
-                    into it lands under two cards at once. A single column with
-                    the panel nested inside the selected card's own border makes
-                    ownership unmistakable, and any future method that needs its
-                    own follow-up question slots into the same place without
-                    touching this layout again.
-                  */}
-                  <div className="space-y-2">
-                    {MANUAL_METHODS.filter((m) => m.enabled).map((m) => {
-                      const selected = payChoice === m.id;
-                      const needsRoute = methodRequiresRoute(m.id);
+                  This used to be a list of cards with the crypto card
+                  preselected, which meant a customer could complete checkout
+                  having never touched the payment step -- the order recorded
+                  "Cryptocurrency (NOWPayments)" and there was no way to tell
+                  afterwards whether they had chosen it or simply not noticed.
+                  A select that starts empty makes the choice deliberate: the
+                  order can only name a method the customer actually picked.
 
-                      return (
-                        <div
-                          key={m.id}
-                          className={`overflow-hidden rounded-lg border transition ${
-                            selected
-                              ? "border-accent bg-accent-subtle ring-1 ring-accent"
-                              : "border-neutral-200 hover:border-neutral-300"
-                          }`}
-                        >
-                          <button
-                            type="button"
-                            onClick={() =>
-                              setPayChoice((current) =>
-                                current === m.id ? null : m.id
-                              )
-                            }
-                            aria-expanded={selected}
-                            className="flex w-full items-start gap-2.5 px-3 py-2.5 text-left"
-                          >
-                            <PaymentMethodIcon id={m.id} />
-                            <span className="min-w-0">
-                              <span className="block text-sm font-medium text-neutral-900">
-                                {m.label}
-                              </span>
-                              <span className="block text-[11px] leading-tight text-neutral-500">
-                                {m.blurb}
-                              </span>
-                            </span>
-                          </button>
+                  A native select rather than a custom listbox, matching the
+                  bank-route control below it: it is keyboard accessible and
+                  uses the platform picker on mobile for free, and it cannot
+                  clip or overflow the way a floating menu can inside this
+                  column. The selected method is restated underneath with its
+                  brand mark, since a select can only render text.
 
-                          {/*
-                            Every method expands under itself.
+                  Options come from MANUAL_METHODS plus the existing "crypto"
+                  sentinel -- the same values payChoice has always held and the
+                  same provider/manualMethod pair checkout has always posted,
+                  so nothing downstream changes.
+                */}
+                <p className="mb-2 text-sm font-semibold text-neutral-800">
+                  Pay Directly
+                </p>
 
-                            What each one says is the same promise -- we email
-                            the details, the order waits, nothing is charged --
-                            because that is genuinely how all of them work; only
-                            Bank Transfer has a further question to ask. This
-                            copy used to live in a single box after the crypto
-                            option, which meant choosing Zelle put its
-                            explanation at the far end of the section, under a
-                            card the customer had not picked. Rendering it in
-                            the selected card keeps the answer next to the
-                            question, and collapsing is automatic: payChoice
-                            holds one value, so opening one closes the rest.
-                          */}
-                          {selected ? (
-                            <div className="border-t border-accent/40 px-3 pb-3 pt-2.5">
-                              {/* Route names only: no account numbers, sort
-                                  codes or SWIFT/BIC appear here. */}
-                              {needsRoute ? (
-                                <div className="mb-3">
-                                  <label
-                                    htmlFor="bank-route"
-                                    className="block text-sm font-medium text-neutral-900"
-                                  >
-                                    Select Bank / Transfer Route{" "}
-                                    <span className="text-red-600" aria-hidden="true">
-                                      *
-                                    </span>
-                                  </label>
-                                  <p className="mb-2 mt-0.5 text-[11px] leading-relaxed text-neutral-600">
-                                    Tells us which account details to send you. No
-                                    account numbers are shown or stored here.
-                                  </p>
-                                  <select
-                                    id="bank-route"
-                                    required
-                                    aria-required="true"
-                                    value={bankRoute}
-                                    onChange={(e) => setBankRoute(e.target.value)}
-                                    className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900"
-                                  >
-                                    <option value="">Choose your transfer route…</option>
-                                    {BANK_ROUTES.filter((route) => route.enabled).map(
-                                      (route) => (
-                                        <option key={route.id} value={route.id}>
-                                          {route.label}
-                                        </option>
-                                      )
-                                    )}
-                                  </select>
-                                  {!bankRoute ? (
-                                    <p className="mt-1.5 text-[11px] font-medium text-neutral-600">
-                                      Required before you can place the order.
-                                    </p>
-                                  ) : null}
-                                </div>
-                              ) : null}
-
-                              <p className="text-[11px] leading-relaxed text-neutral-600">
-                                Place your order now. DrivoraParts will email you
-                                the payment details for this method, and your
-                                order stays reserved as{" "}
-                                <strong className="font-semibold text-neutral-800">
-                                  Awaiting Payment
-                                </strong>{" "}
-                                until we confirm the funds.
-                              </p>
-                              <p className="mt-1.5 text-[11px] leading-relaxed text-neutral-500">
-                                You will not be charged automatically. Nothing
-                                ships until payment is verified.
-                              </p>
-                            </div>
-                          ) : null}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-
-                <div className="mb-5 flex items-center gap-3">
-                  <span className="h-px flex-1 bg-neutral-200" />
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-neutral-400">
-                    or
-                  </span>
-                  <span className="h-px flex-1 bg-neutral-200" />
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    setPayChoice((current) =>
-                      current === "crypto" ? null : "crypto"
-                    )
-                  }
-                  className={`mb-4 flex w-full items-start gap-2.5 rounded-lg border px-3 py-2.5 text-left transition ${
-                    payChoice === "crypto"
-                      ? "border-accent bg-accent-subtle ring-1 ring-accent"
-                      : "border-neutral-200 hover:border-neutral-300"
+                <label htmlFor="payment-method" className="sr-only">
+                  Payment method
+                </label>
+                <select
+                  id="payment-method"
+                  ref={paymentSelectRef}
+                  required
+                  aria-required="true"
+                  aria-invalid={payError || undefined}
+                  aria-describedby="payment-method-hint"
+                  value={payChoice ?? ""}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    setPayChoice(
+                      value ? (value as "crypto" | ManualMethodId) : null
+                    );
+                    // Clears the moment they choose, so the warning never
+                    // lingers over a selection that has since been made.
+                    setPayError(false);
+                  }}
+                  className={`box-border w-full max-w-full rounded-lg border bg-white px-4 py-3 text-base text-neutral-900 outline-none ${
+                    payError
+                      ? // Focus is moved here when the error fires, and a bare
+                        // focus:border-accent would out-specify the red and
+                        // hide the very state that just stopped the order.
+                        "border-red-500 focus:border-red-500"
+                      : "border-neutral-300 focus:border-accent"
                   }`}
                 >
-                  <PaymentMethodIcon id="crypto" />
-                  <span className="min-w-0">
-                    <span className="block text-sm font-medium text-neutral-900">
-                      Pay with Cryptocurrency
-                    </span>
-                    <span className="block text-[11px] leading-tight text-neutral-500">
-                      Bitcoin · Ethereum · USDT · 300+ coins via NOWPayments
-                    </span>
-                  </span>
-                </button>
+                  <option value="">Choose a payment method</option>
+                  {PAY_OPTIONS.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
 
-                {payChoice === "crypto" ? (
-                  <>
-                <p className="mb-4 font-medium">Secure Checkout via NOWPayments</p>
-                <p className="mb-4 text-sm text-neutral-600">
-                  Complete your payment securely through NOWPayments, with
-                  support for BTC, ETH, USDT, and 300+ cryptocurrencies.
-                </p>
-                <p className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
-                  Select Pay Now to proceed to your secure NOWPayments payment
-                  page and complete your transaction.
+                <p
+                  id="payment-method-hint"
+                  {...(payError ? { role: "alert" as const } : {})}
+                  className={`mt-1.5 text-[11px] leading-relaxed ${
+                    payError ? "font-medium text-red-600" : "text-neutral-500"
+                  }`}
+                >
+                  {payError
+                    ? "Please select a payment method to continue."
+                    : "Required. Choose how you want to pay — the details for that method appear below."}
                 </p>
 
-                <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-800">
-                  <p className="mb-2 font-semibold">Important Payment Instructions</p>
-                  <ul className="list-disc space-y-1.5 pl-4 leading-relaxed">
-                    <li>
-                      After completing your payment, copy and securely save
-                      your NOWPayments Transaction ID for your records.
-                    </li>
-                    <li>
-                      Once your Transaction ID has been copied, the
-                      NOWPayments payment page will automatically close and
-                      redirect you back to DrivoraParts.
-                    </li>
-                    <li>
-                      Your return to DrivoraParts confirms that your checkout
-                      has been successfully submitted.
-                    </li>
-                    <li>
-                      Please retain your Transaction ID until your payment and
-                      order have been fully confirmed.
-                    </li>
-                  </ul>
-                </div>
+                {selectedPayOption ? (
+                  <div className="mt-3 overflow-hidden rounded-lg border border-accent ring-1 ring-accent">
+                    {/* The mark the rest of the site uses for this method. The
+                        select itself can only show text, so the selected state
+                        is restated here where it is unmistakable. */}
+                    <div className="flex items-start gap-2.5 border-b border-accent/40 bg-accent-subtle px-3 py-2.5">
+                      <PaymentMethodIcon id={selectedPayOption.value} />
+                      <span className="min-w-0">
+                        <span className="block text-sm font-medium text-neutral-900">
+                          {selectedPayOption.label}
+                        </span>
+                        <span className="block text-[11px] leading-tight text-neutral-500">
+                          {selectedPayOption.blurb}
+                        </span>
+                      </span>
+                    </div>
 
-                <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
-                  <p className="mb-2 text-xs font-medium text-neutral-700">
-                    Don&apos;t Have Cryptocurrency?
-                  </p>
-                  <p className="mb-3 text-xs leading-relaxed text-neutral-500">
-                    You can purchase cryptocurrency using a debit or credit
-                    card through a third-party exchange such as{" "}
-                    <a
-                      href="https://changenow.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-accent underline hover:text-accent-hover"
-                    >
-                      ChangeNOW
-                    </a>
-                    , then use your cryptocurrency to complete your
-                    DrivoraParts payment.
-                  </p>
-                  <p className="mb-2 text-xs font-semibold text-neutral-700">How It Works</p>
-                  <ol className="list-decimal space-y-2 pl-4 text-xs leading-relaxed text-neutral-500">
-                    <li>
-                      <strong className="text-neutral-700">
-                        Purchase Cryptocurrency —
-                      </strong>{" "}
-                      Open ChangeNOW in a new tab and purchase BTC or another
-                      cryptocurrency supported by NOWPayments using your debit
-                      or credit card.
-                    </li>
-                    <li>
-                      <strong className="text-neutral-700">
-                        Return to DrivoraParts —
-                      </strong>{" "}
-                      Return to this checkout and select Pay Now to open your
-                      secure, unique NOWPayments payment page.
-                    </li>
-                    <li>
-                      <strong className="text-neutral-700">
-                        Complete Payment &amp; Save Your Transaction ID —
-                      </strong>{" "}
-                      Complete your payment through NOWPayments and copy your
-                      Transaction ID. The payment page will then automatically
-                      close and redirect you back to DrivoraParts.
-                    </li>
-                  </ol>
-                </div>
+                    <div className="px-3 pb-3 pt-2.5">
+                      {payChoice === "crypto" ? (
+                        <>
+                          <p className="mb-4 font-medium">Secure Checkout via NOWPayments</p>
+                          <p className="mb-4 text-sm text-neutral-600">
+                            Complete your payment securely through NOWPayments, with
+                            support for BTC, ETH, USDT, and 300+ cryptocurrencies.
+                          </p>
+                          <p className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
+                            Select Pay Now to proceed to your secure NOWPayments payment
+                            page and complete your transaction.
+                          </p>
 
-                <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-xs leading-relaxed text-neutral-500">
-                  <p className="mb-1.5 font-semibold text-neutral-700">Important</p>
-                  <p className="mb-1.5">
-                    ChangeNOW is an independent third-party service.
-                    DrivoraParts does not process, control, or verify
-                    transactions conducted through ChangeNOW.
-                  </p>
-                  <p className="mb-1.5">
-                    Your cryptocurrency payment to DrivoraParts is processed
-                    through NOWPayments.
-                  </p>
-                  <p>
-                    Need assistance?{" "}
-                    <Link href="/contact" className="text-accent underline hover:text-accent-hover">
-                      Contact DrivoraParts Support
-                    </Link>{" "}
-                    before submitting your payment.
-                  </p>
-                </div>
+                          <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-800">
+                            <p className="mb-2 font-semibold">Important Payment Instructions</p>
+                            <ul className="list-disc space-y-1.5 pl-4 leading-relaxed">
+                              <li>
+                                After completing your payment, copy and securely save
+                                your NOWPayments Transaction ID for your records.
+                              </li>
+                              <li>
+                                Once your Transaction ID has been copied, the
+                                NOWPayments payment page will automatically close and
+                                redirect you back to DrivoraParts.
+                              </li>
+                              <li>
+                                Your return to DrivoraParts confirms that your checkout
+                                has been successfully submitted.
+                              </li>
+                              <li>
+                                Please retain your Transaction ID until your payment and
+                                order have been fully confirmed.
+                              </li>
+                            </ul>
+                          </div>
 
-                {/*
-                  Served from our own origin, not hotlinked from nowpayments.io.
-                  This is the same official mark -- the local copy the footer
-                  already uses -- so nothing about the branding changes; it just
-                  stops checkout depending on a third-party host staying up and
-                  reachable to render. Purely the image source: the NOWPayments
-                  flow, invoice and copy are untouched.
-                */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/trust/nowpayments-mark.svg"
-                  alt="Crypto payments by NOWPayments"
-                  width={250}
-                  height={55}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-10 w-auto opacity-90"
-                />
-                  </>
+                          <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
+                            <p className="mb-2 text-xs font-medium text-neutral-700">
+                              Don&apos;t Have Cryptocurrency?
+                            </p>
+                            <p className="mb-3 text-xs leading-relaxed text-neutral-500">
+                              You can purchase cryptocurrency using a debit or credit
+                              card through a third-party exchange such as{" "}
+                              <a
+                                href="https://changenow.io/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent underline hover:text-accent-hover"
+                              >
+                                ChangeNOW
+                              </a>
+                              , then use your cryptocurrency to complete your
+                              DrivoraParts payment.
+                            </p>
+                            <p className="mb-2 text-xs font-semibold text-neutral-700">How It Works</p>
+                            <ol className="list-decimal space-y-2 pl-4 text-xs leading-relaxed text-neutral-500">
+                              <li>
+                                <strong className="text-neutral-700">
+                                  Purchase Cryptocurrency —
+                                </strong>{" "}
+                                Open ChangeNOW in a new tab and purchase BTC or another
+                                cryptocurrency supported by NOWPayments using your debit
+                                or credit card.
+                              </li>
+                              <li>
+                                <strong className="text-neutral-700">
+                                  Return to DrivoraParts —
+                                </strong>{" "}
+                                Return to this checkout and select Pay Now to open your
+                                secure, unique NOWPayments payment page.
+                              </li>
+                              <li>
+                                <strong className="text-neutral-700">
+                                  Complete Payment &amp; Save Your Transaction ID —
+                                </strong>{" "}
+                                Complete your payment through NOWPayments and copy your
+                                Transaction ID. The payment page will then automatically
+                                close and redirect you back to DrivoraParts.
+                              </li>
+                            </ol>
+                          </div>
+
+                          <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-xs leading-relaxed text-neutral-500">
+                            <p className="mb-1.5 font-semibold text-neutral-700">Important</p>
+                            <p className="mb-1.5">
+                              ChangeNOW is an independent third-party service.
+                              DrivoraParts does not process, control, or verify
+                              transactions conducted through ChangeNOW.
+                            </p>
+                            <p className="mb-1.5">
+                              Your cryptocurrency payment to DrivoraParts is processed
+                              through NOWPayments.
+                            </p>
+                            <p>
+                              Need assistance?{" "}
+                              <Link href="/contact" className="text-accent underline hover:text-accent-hover">
+                                Contact DrivoraParts Support
+                              </Link>{" "}
+                              before submitting your payment.
+                            </p>
+                          </div>
+
+                          {/*
+                            Served from our own origin, not hotlinked from nowpayments.io.
+                            This is the same official mark -- the local copy the footer
+                            already uses -- so nothing about the branding changes; it just
+                            stops checkout depending on a third-party host staying up and
+                            reachable to render. Purely the image source: the NOWPayments
+                            flow, invoice and copy are untouched.
+                          */}
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src="/trust/nowpayments-mark.svg"
+                            alt="Crypto payments by NOWPayments"
+                            width={250}
+                            height={55}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-10 w-auto opacity-90"
+                          />
+                        </>
+                      ) : (
+                        <>
+                          {/* Route names only: no account numbers, sort codes
+                              or SWIFT/BIC appear here. */}
+                          {methodRequiresRoute(payChoice) ? (
+                            <div className="mb-3">
+                              <label
+                                htmlFor="bank-route"
+                                className="block text-sm font-medium text-neutral-900"
+                              >
+                                Select Bank / Transfer Route{" "}
+                                <span className="text-red-600" aria-hidden="true">
+                                  *
+                                </span>
+                              </label>
+                              <p className="mb-2 mt-0.5 text-[11px] leading-relaxed text-neutral-600">
+                                Tells us which account details to send you. No
+                                account numbers are shown or stored here.
+                              </p>
+                              <select
+                                id="bank-route"
+                                required
+                                aria-required="true"
+                                value={bankRoute}
+                                onChange={(e) => setBankRoute(e.target.value)}
+                                className="box-border w-full max-w-full rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-base text-neutral-900 outline-none focus:border-accent"
+                              >
+                                <option value="">Choose your transfer route…</option>
+                                {BANK_ROUTES.filter((route) => route.enabled).map(
+                                  (route) => (
+                                    <option key={route.id} value={route.id}>
+                                      {route.label}
+                                    </option>
+                                  )
+                                )}
+                              </select>
+                              {!bankRoute ? (
+                                <p className="mt-1.5 text-[11px] font-medium text-neutral-600">
+                                  Required before you can place the order.
+                                </p>
+                              ) : null}
+                            </div>
+                          ) : null}
+
+                          {/*
+                            What every direct method says is the same promise --
+                            we email the details, the order waits, nothing is
+                            charged -- because that is genuinely how all of them
+                            work; only Bank Transfer has a further question to
+                            ask.
+                          */}
+                          <p className="text-[11px] leading-relaxed text-neutral-600">
+                            Place your order now. DrivoraParts will email you
+                            the payment details for this method, and your
+                            order stays reserved as{" "}
+                            <strong className="font-semibold text-neutral-800">
+                              Awaiting Payment
+                            </strong>{" "}
+                            until we confirm the funds.
+                          </p>
+                          <p className="mt-1.5 text-[11px] leading-relaxed text-neutral-500">
+                            You will not be charged automatically. Nothing
+                            ships until payment is verified.
+                          </p>
+                        </>
+                      )}
+                    </div>
+                  </div>
                 ) : null}
               </section>
             </div>
@@ -1102,10 +1142,16 @@ export default function CheckoutPage() {
               <button
                 type="button"
                 onClick={handleCheckout}
+                /*
+                  Deliberately NOT disabled when no method is chosen: a dead
+                  button explains nothing, and that is now the state checkout
+                  opens in. handleCheckout blocks the submit and says why.
+                  A missing bank route still disables, because that case
+                  already carries its own always-visible "Required before you
+                  can place the order" line under the route selector.
+                */
                 disabled={
-                  submitting ||
-                  !payChoice ||
-                  (methodRequiresRoute(payChoice) && !bankRoute)
+                  submitting || (methodRequiresRoute(payChoice) && !bankRoute)
                 }
                 className="box-border w-full max-w-full rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover active:scale-[0.99] disabled:opacity-60 disabled:active:scale-100"
               >
