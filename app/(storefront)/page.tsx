@@ -2,7 +2,6 @@ import Link from "next/link";
 import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
 import StarterPicksRail from "@/components/home/StarterPicksRail";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
-import HomeTrustBadges from "@/components/home/HomeTrustBadges";
 import ShopByVehicleSection from "@/components/home/ShopByVehicleSection";
 import FeaturedBrandsStrip from "@/components/home/FeaturedBrandsStrip";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
@@ -10,7 +9,6 @@ import HomeHeroCinematic from "@/components/home/HomeHeroCinematic";
 import VehiclePlatformGrid from "@/components/home/VehiclePlatformGrid";
 import BuildStorySection from "@/components/home/BuildStorySection";
 import GlobalReachBand from "@/components/home/GlobalReachBand";
-import GarageClosingSection from "@/components/home/GarageClosingSection";
 import TrendingRail from "@/components/catalog/TrendingRail";
 import RecentlyAddedRail from "@/components/catalog/RecentlyAddedRail";
 import {
@@ -127,14 +125,6 @@ export default function Home() {
       <FeaturedBrandsStrip />
 
       <GuidesPreviewSection />
-
-      <HomeTrustBadges />
-
-      {/* The photography credits band that used to sit here has moved to
-          /photography-credits, linked from the footer of every page. The
-          licence data itself is untouched -- it is read from the same
-          manifest as the images. The page closes on the artwork instead. */}
-      <GarageClosingSection />
     </div>
   );
 }
