@@ -77,13 +77,10 @@ export default function CompanyAddress({
   return (
     <address className={`${classes} not-italic`}>
       <p className={`font-medium ${t.strong}`}>{JAPAN_LOGISTICS_HUB.companyName}</p>
-      <p>{JAPAN_LOGISTICS_HUB.street}</p>
       <p>
         {JAPAN_LOGISTICS_HUB.city}, {JAPAN_LOGISTICS_HUB.ward}
       </p>
-      <p>
-        {JAPAN_LOGISTICS_HUB.prefecture} {JAPAN_LOGISTICS_HUB.postalCode}
-      </p>
+      <p>{JAPAN_LOGISTICS_HUB.prefecture}</p>
       <p>{JAPAN_LOGISTICS_HUB.country}</p>
     </address>
   );

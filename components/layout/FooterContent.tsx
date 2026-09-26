@@ -4,7 +4,11 @@ import Link from "next/link";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import NewsletterSignup from "@/components/layout/NewsletterSignup";
 import { useTranslation } from "@/hooks/useTranslation";
-import { COMPANY_LEGAL_NAME, COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
+import {
+  COMPANY_LEGAL_NAME,
+  COMPANY_SUPPORT_EMAIL,
+  US_HEADQUARTERS,
+} from "@/lib/content/company";
 import {
   CONTACT_HREF,
   RETURN_POLICY_HREF,
@@ -160,7 +164,21 @@ export default function FooterContent() {
           </p>
           <p className="mt-2 text-sm leading-relaxed text-muted-on-dark">{t("footerBrand")}</p>
 
-          <p className="mt-4 flex flex-wrap items-center gap-x-1.5 text-sm">
+          {/*
+            Who the seller is, in one line: the entity a customer contracts
+            with and the city it answers from. This is not the "operating
+            footprint" the note above removed -- that presented a corporate HQ
+            and two logistics hubs as three operations, on records that could
+            not be confirmed. One registered office is the fact that every
+            other page already states (Contact, Terms of Sale, Returns), so
+            the footer agreeing with them is one less thing to reconcile.
+          */}
+          <p className="mt-4 text-sm text-muted-on-dark">
+            {COMPANY_LEGAL_NAME} · {US_HEADQUARTERS.city},{" "}
+            {US_HEADQUARTERS.stateName}, USA
+          </p>
+
+          <p className="mt-2 flex flex-wrap items-center gap-x-1.5 text-sm">
             <span className="text-foreground-on-dark">{t("footerSupport")}:</span>
             <a
               href={`mailto:${COMPANY_SUPPORT_EMAIL}`}

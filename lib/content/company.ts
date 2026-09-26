@@ -12,13 +12,20 @@ export const US_HEADQUARTERS = {
   country: "United States",
 } as const;
 
+/**
+ * City, ward and prefecture only -- no street line or postcode on file.
+ *
+ * It previously carried "3-12-1 Golden Drive, Midori-ku" with postcode
+ * 458-0004, neither of which matches any record held for this hub (and an
+ * English street name is not how a Japanese address is written). The locality
+ * stands; the rest stays unpublished until there is a document behind it, the
+ * same basis AUSTRALIA_LOGISTICS_HUB has always been on.
+ */
 export const JAPAN_LOGISTICS_HUB = {
   companyName: "Drivora Logistics Japan",
-  street: "3-12-1 Golden Drive, Midori-ku",
   city: "Nagoya",
   ward: "Midori-ku",
   prefecture: "Aichi",
-  postalCode: "458-0004",
   country: "Japan",
 } as const;
 
@@ -55,9 +62,8 @@ export function formatUsHeadquarters(multiline = true): string {
 export function formatJapanLogisticsHub(multiline = true): string {
   const lines = [
     JAPAN_LOGISTICS_HUB.companyName,
-    JAPAN_LOGISTICS_HUB.street,
     `${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.ward}`,
-    `${JAPAN_LOGISTICS_HUB.prefecture} ${JAPAN_LOGISTICS_HUB.postalCode}`,
+    JAPAN_LOGISTICS_HUB.prefecture,
     JAPAN_LOGISTICS_HUB.country,
   ];
   return multiline ? lines.join("\n") : lines.join(", ");
