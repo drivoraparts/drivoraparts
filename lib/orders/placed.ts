@@ -1,7 +1,7 @@
 import type { OrderStatus, OrderWithDetails } from "@/lib/db/orders";
 import type { PaymentRecord } from "@/lib/db/payments";
 
-/** Fulfillment pipeline — always shown in admin Orders. */
+/** Fulfillment pipeline — every one of these is a live order. */
 export const CONFIRMED_ORDER_STATUSES: OrderStatus[] = [
   "processing",
   "paid",
@@ -9,61 +9,6 @@ export const CONFIRMED_ORDER_STATUSES: OrderStatus[] = [
   "delivered",
   "refunded",
 ];
-
-/**
- * How long a pending checkout with NO payment activity stays listed.
- *
- * Was 6 hours, which hid a live $1,083 order seven hours after it was placed:
- * DRV-LCSURBC, crypto, customer still to pay. Customer tracking kept showing it
- * to them the whole time, because that path does not apply this filter -- so the
- * buyer could see an order the owner could not.
- *
- * Six hours suits a shop where payment settles during checkout. Every method
- * here is a bank transfer, a peer-to-peer app or a crypto invoice (see
- * MANUAL_METHODS and the NOWPayments flow): none settle in minutes, and a wire
- * begun on Friday may not arrive before Monday. A week is the shortest window
- * that does not hide a customer who is simply paying at their own pace.
- *
- * Age only decides an order with no payment activity at all -- see
- * hasPaymentActivity, which keeps an engaged order listed however old it is.
- */
-export const OPEN_CHECKOUT_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
-
-/** Manual states that mean somebody has acted on the payment. */
-const ENGAGED_MANUAL_STATES = new Set([
-  "instructions_sent",
-  "receipt_submitted",
-  "under_review",
-  "verified",
-  "verification_failed",
-]);
-
-/**
- * Has anyone touched this payment since checkout created it?
- *
- * Read off the payment row: a provider invoice that actually exists, a manual
- * payment moved past "awaiting_payment", an uploaded receipt, or a status past
- * the initial "pending". Any of those means the order is being paid rather than
- * abandoned, so it stays listed indefinitely -- there is something for the owner
- * to do about it.
- *
- * Deliberately NOT a signal: having chosen a manual method. Since the payment
- * selector began requiring an explicit choice, every manual order carries one
- * from the moment it is placed, so treating that as activity would keep
- * genuinely abandoned carts listed forever -- which is what the age window is
- * there to prevent.
- */
-function hasPaymentActivity(payment: PaymentRecord): boolean {
-  if (payment.status !== "pending") return true;
-  if (payment.provider_payment_id) return true;
-
-  const meta = payment.metadata ?? {};
-  const state = meta.manual_state;
-  if (typeof state === "string" && ENGAGED_MANUAL_STATES.has(state)) return true;
-
-  const receipts = meta.manual_receipts;
-  return Array.isArray(receipts) && receipts.length > 0;
-}
 
 export function isConfirmedOrderStatus(status: OrderStatus): boolean {
   return CONFIRMED_ORDER_STATUSES.includes(status);
@@ -85,8 +30,31 @@ export type PlacedOrderCandidate = {
 };
 
 /**
- * A placed order completed checkout (customer + line items + payment session).
- * Abandoned unpaid checkouts and failed/cancelled attempts are excluded.
+ * Did somebody actually place this order?
+ *
+ * A customer, at least one line item, and a payment session. That is the whole
+ * test. Anything missing one of those is not an order somebody placed — it is a
+ * row left behind by a checkout that broke partway through, which is why the
+ * admin list and the order stats both exclude it.
+ *
+ * NOTHING IS HIDDEN BY AGE OR BY PAYMENT PROGRESS, on purpose.
+ *
+ * This used to drop a pending order once it passed OPEN_CHECKOUT_MAX_AGE_MS, six
+ * hours, on the theory that an unpaid checkout that old had been abandoned. It
+ * cost the owner a live sale: DRV-LCSURBC, $1,083, crypto, vanished from admin
+ * Orders seven hours after it was placed while the customer was still arranging
+ * payment. The row was fine the whole time — customer tracking does not apply
+ * this filter, so the buyer could see an order the owner could not.
+ *
+ * Every payment method here is a bank transfer, a peer-to-peer app or a crypto
+ * invoice. None settle in minutes; a wire begun on Friday may not arrive before
+ * Monday. There is no age at which an unpaid order is safely assumed dead, and
+ * guessing at one hides real money. The admin Orders list has a delete button on
+ * every row (see components/admin/DeleteOrderButton), so removing an order that
+ * really is abandoned is the owner's call to make and theirs to see.
+ *
+ * Cancelled and failed orders stay excluded: those are explicit end states
+ * somebody or something recorded, not a guess about elapsed time.
  */
 export function isPlacedOrder(
   order: PlacedOrderCandidate,
@@ -100,27 +68,5 @@ export function isPlacedOrder(
     return false;
   }
 
-  if (!payment) {
-    return false;
-  }
-
-  if (isConfirmedOrderStatus(order.status)) {
-    return true;
-  }
-
-  if (order.status === "pending") {
-    if (payment.status === "paid") {
-      return true;
-    }
-
-    // Being paid, however slowly, is not abandonment.
-    if (hasPaymentActivity(payment)) {
-      return true;
-    }
-
-    const ageMs = Date.now() - new Date(order.created_at).getTime();
-    return ageMs <= OPEN_CHECKOUT_MAX_AGE_MS;
-  }
-
-  return false;
+  return Boolean(payment);
 }
