@@ -67,9 +67,9 @@ const FAQS: FaqItem[] = [
     question: "How long does shipping take, and do you ship internationally?",
     answer: (
       <>
-        Yes. We ship to most domestic and many international destinations,
-        and standard shipping is free on every order; some large or
-        regulated items can only ship to certain regions. Orders are
+        Yes. We ship to most domestic and many international destinations;
+        some large or regulated items can only ship to certain regions.
+        Shipping is calculated per order and sent with your payment details. Orders are
         typically processed within {ORDER_PROCESSING} once payment is
         verified, and delivery typically takes 5–15 business days after that
         — estimates, not guarantees. Smaller parts ship via standard carriers;

@@ -8,8 +8,9 @@ import {
   getOrderById,
   logOrderEvent,
   updateOrderLifecycleStatus,
+  updateOrderShippingCharge,
 } from "@/lib/db/orders";
-import { findPaymentByOrderId } from "@/lib/db/payments";
+import { findPaymentByOrderId, updatePaymentRecord } from "@/lib/db/payments";
 import { adminMarkOrderPaid } from "@/lib/checkout/service";
 import {
   readManualPayment,
@@ -67,6 +68,10 @@ export async function POST(
   const body = (await req.json().catch(() => null)) as {
     action?: string;
     message?: string;
+    /** Shipping charge the admin worked out for this order, in USD. */
+    shipping?: unknown;
+    /** Expedited charge, when the customer asked for faster delivery. */
+    expeditedShipping?: unknown;
   } | null;
 
   const action = body?.action;
@@ -87,6 +92,38 @@ export async function POST(
       { status: 400 }
     );
   }
+
+  /*
+   * Shipping figures arrive as typed text and are the only numbers in this
+   * flow a person enters by hand, so they are parsed strictly: a finite,
+   * non-negative amount under a ceiling no legitimate consignment reaches.
+   * An unparseable value is rejected rather than coerced, because coercing
+   * "1,200" to 1 would quietly undercharge and coercing it to NaN would
+   * produce a total of NaN on the customer's payment page.
+   */
+  const MAX_SHIPPING_CHARGE = 100000;
+  const parseCharge = (
+    value: unknown,
+    label: string
+  ): { value: number; error: string | null } => {
+    if (value === undefined || value === null || value === "") {
+      return { value: 0, error: null };
+    }
+    const num = typeof value === "number" ? value : Number(String(value).trim());
+    if (!Number.isFinite(num)) {
+      return { value: 0, error: `Enter ${label} as a number.` };
+    }
+    if (num < 0) {
+      return { value: 0, error: `${label} cannot be negative.` };
+    }
+    if (num > MAX_SHIPPING_CHARGE) {
+      return {
+        value: 0,
+        error: `${label} looks wrong — it is over ${MAX_SHIPPING_CHARGE.toLocaleString()}.`,
+      };
+    }
+    return { value: Math.round(num * 100) / 100, error: null };
+  };
 
   const message = body?.message?.trim() ?? "";
   const methodLabel = getManualMethod(manual.method)?.label ?? "Bank Transfer";
@@ -132,13 +169,65 @@ export async function POST(
 
       const sending = action === "send_instructions";
 
+      /*
+       * Sending instructions is the moment shipping becomes a real number.
+       *
+       * It is written to the order BEFORE the email, so the figure the
+       * customer is emailed and the figure /pay shows are the same one. If
+       * the email then fails, the charge stands and the admin can re-send --
+       * the reverse order would email a total the order did not hold.
+       */
+      let orderTotal = Number(order.total);
+      let expeditedCharge: number | null = null;
+
+      if (sending) {
+        const shipping = parseCharge(body?.shipping, "the shipping charge");
+        if (shipping.error) {
+          return NextResponse.json({ error: shipping.error }, { status: 400 });
+        }
+        const expedited = parseCharge(
+          body?.expeditedShipping,
+          "the expedited shipping charge"
+        );
+        if (expedited.error) {
+          return NextResponse.json({ error: expedited.error }, { status: 400 });
+        }
+
+        const updated = await updateOrderShippingCharge(
+          id,
+          { shipping: shipping.value, expedited: expedited.value },
+          actor
+        );
+        if (!updated) {
+          return NextResponse.json(
+            { error: "Could not record the shipping charge on this order." },
+            { status: 500 }
+          );
+        }
+
+        orderTotal = Number(updated.total);
+
+        expeditedCharge = expedited.value > 0 ? expedited.value : null;
+
+        await updateManualPayment(payment, {
+          expeditedShipping: expedited.value,
+        });
+
+        // The payment row is what the paid workflow and the payment stats
+        // read, so it has to carry the same amount the customer is asked for.
+        await updatePaymentRecord(payment.id, { amount: orderTotal });
+      }
+
       const sent = sending
         ? await sendManualPaymentInstructionsEmail({
             to: customer.email,
             customerName: customer.full_name,
             orderId: order.id,
             orderNumber: order.order_number,
-            total: Number(order.total),
+            total: orderTotal,
+            subtotal: Number(order.subtotal),
+            shipping: orderTotal - Number(order.subtotal) - (expeditedCharge ?? 0),
+            expeditedShipping: expeditedCharge,
             methodLabel,
             instructions: message,
             items: order.items.map((item) => ({
@@ -153,7 +242,7 @@ export async function POST(
             customerName: customer.full_name,
             orderId: order.id,
             orderNumber: order.order_number,
-            total: Number(order.total),
+            total: orderTotal,
             message,
           });
 

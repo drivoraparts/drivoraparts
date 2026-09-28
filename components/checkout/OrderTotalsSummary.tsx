@@ -61,10 +61,21 @@ export default function OrderTotalsSummary({
         </div>
       )}
 
+      {/*
+        A zero here means "nobody has quoted this yet", not "free". Shipping is
+        worked out by hand after the order is placed and sent with the payment
+        details, so neither the cart nor checkout can name a figure -- and
+        printing t("free") for a missing number promised delivery at no charge
+        on every order in every country.
+      */}
       <div className="flex items-center justify-between gap-3 text-sm">
         <span className="text-neutral-500">{t("shipping")}</span>
         <span className="text-neutral-800">
-          {breakdown.shipping === 0 ? t("free") : <Price usd={breakdown.shipping} />}
+          {breakdown.shipping > 0 ? (
+            <Price usd={breakdown.shipping} />
+          ) : (
+            t("shippingTbc")
+          )}
         </span>
       </div>
 

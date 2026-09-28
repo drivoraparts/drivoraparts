@@ -883,11 +883,48 @@ export async function sendManualPaymentInstructionsEmail(input: {
   orderId: string;
   orderNumber: string;
   total: number;
+  /** Goods total before shipping. */
+  subtotal?: number;
+  /** Standard / freight charge the admin worked out for this order. */
+  shipping?: number;
+  /** Only when the customer asked for it; null means not selected. */
+  expeditedShipping?: number | null;
   methodLabel: string;
   instructions: string;
   items: OrderInvoiceLine[];
 }): Promise<boolean> {
   const orderRef = input.orderNumber;
+
+  /*
+   * The breakdown behind "Amount due".
+   *
+   * Shipping is quoted by hand, so this email is the first time the customer
+   * sees what it costs -- the figure did not exist when they checked out. The
+   * expedited line appears only when expedited shipping was actually
+   * selected: a zero there would read as a free upgrade nobody offered.
+   */
+  const breakdownRows =
+    typeof input.subtotal === "number" && typeof input.shipping === "number"
+      ? [
+          renderReceiptMetaRow(
+            "Order subtotal",
+            `$${input.subtotal.toFixed(2)} USD`
+          ),
+          renderReceiptMetaRow(
+            "Shipping",
+            input.shipping > 0
+              ? `$${input.shipping.toFixed(2)} USD`
+              : "No charge on this order"
+          ),
+          typeof input.expeditedShipping === "number" &&
+          input.expeditedShipping > 0
+            ? renderReceiptMetaRow(
+                "Expedited shipping",
+                `$${input.expeditedShipping.toFixed(2)} USD`
+              )
+            : "",
+        ].join("")
+      : "";
 
   return sendEmail({
     to: input.to,
@@ -902,7 +939,8 @@ export async function sendManualPaymentInstructionsEmail(input: {
       </p>
 
       ${renderReceiptMetaTable(`
-        ${renderReceiptMetaRow("Amount due", `<span style="font-size:16px;">$${input.total.toFixed(2)} USD</span>`)}
+        ${breakdownRows}
+        ${renderReceiptMetaRow("Amount due", `<span style="font-size:16px;">${input.total.toFixed(2)} USD</span>`)}
         ${renderReceiptMetaRow("Payment method", escapeHtml(input.methodLabel))}
         ${renderOrderIdRow(orderRef)}
         ${renderReceiptMetaRow("Status", `<span style="color:#9d531c;">Awaiting payment</span>`)}

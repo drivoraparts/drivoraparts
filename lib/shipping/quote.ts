@@ -1,42 +1,37 @@
 /* =========================================================
-   DRIVORAPARTS — SHIPPING QUOTES
+   DRIVORAPARTS — SHIPPING ASSESSMENT
    ---------------------------------------------------------
-   Standard is free. Express is priced from the rate table in
-   ./config.ts, using the freight class the catalog already
-   records per product and the destination country checkout
-   already collects.
+   THIS FILE PRICES NOTHING. IT USED TO.
 
-   Quotes are computed SERVER-SIDE from the product id and
-   the chosen method. The customer picks a method, never a
-   price -- a client cannot submit a shipping amount.
+   It previously returned "Free Standard Shipping" at $0 for
+   every cart, every destination and every freight class, and
+   checkout rendered that as the word "Free". That was not a
+   quote, it was a constant -- and it contradicted the actual
+   policy, under which Australia and other international
+   destinations are charged and a crated engine can carry a
+   charge even to a free-eligible one.
+
+   An order's shipping charge is worked out by a person and
+   entered when they send the customer their payment details.
+   Until that happens the charge is genuinely unknown, and the
+   storefront says so rather than showing a zero.
+
+   What remains is the description of the shipment that the
+   admin needs in order to quote it: how it physically ships,
+   where it is going, and which policy applies there.
 ========================================================= */
 
 import { getProductById } from "@/lib/inventory";
 import { getProductCatalogMeta } from "@/lib/inventory/productEnhancements";
 import {
-  EXPRESS_RATES,
-  EXTRA_ITEM_SURCHARGE,
   FREIGHT_CLASS_LABEL,
-  isExpressConfigured,
+  isFreeStandardEligibleZone,
   resolveZone,
+  zoneLabel,
+  ZONE_LABEL,
   type FreightClass,
   type ShippingZone,
 } from "./config";
-
-export type ShippingMethod = "standard" | "express";
-
-export type ShippingQuote = {
-  method: ShippingMethod;
-  label: string;
-  /** USD. Always 0 for standard. */
-  amount: number;
-  /** Heaviest class in the cart — what the express price is based on. */
-  freightClass: FreightClass;
-  freightClassLabel: string;
-  zone: ShippingZone;
-  /** Set when express cannot be offered, so the UI can say why. */
-  unavailableReason?: string;
-};
 
 /**
  * Freight class for one product.
@@ -67,11 +62,10 @@ export function resolveFreightClass(productId: number): FreightClass {
    * describes how that kind of part usually ships.
    *
    * Category alone is too coarse on its own: the "engine" category holds
-   * complete engines AND fuel pumps, filters and sensors, and pricing a
-   * $60 fuel pump as palletized freight would overcharge badly. So a
+   * complete engines AND fuel pumps, filters and sensors, so a
    * small-component name demotes the item back to parcel regardless of
-   * category. Erring toward the cheaper class is the right direction to be
-   * wrong in -- it undercharges us, never the customer.
+   * category. This only decides which note the admin sees while quoting, so
+   * erring toward parcel costs nothing -- the person still reads the order.
    */
   const name = product.name.toLowerCase();
   const isSmallComponent =
@@ -99,7 +93,7 @@ export function resolveFreightClass(productId: number): FreightClass {
 
 const CLASS_ORDER: FreightClass[] = ["parcel", "multibox", "pallet"];
 
-/** The heaviest class in a cart decides the shipment's handling. */
+/** The heaviest class in a cart decides how the shipment is handled. */
 export function resolveCartFreightClass(
   items: { productId: number; quantity: number }[]
 ): FreightClass {
@@ -114,98 +108,65 @@ export function resolveCartFreightClass(
 }
 
 /**
- * Every shipping option for a cart going to a destination.
+ * Everything known about a shipment before anyone has priced it.
  *
- * Standard is always present and always free. Express appears only when the
- * rate table prices that class-and-zone combination -- an unpriced cell means
- * we genuinely do not offer it, and saying so is better than quoting a number
- * nobody stands behind.
+ * Deliberately carries no amount. The admin payment screen renders this as
+ * context beside the box where the real figure is typed.
  */
-export function quoteShipping(
+export type ShippingAssessment = {
+  freightClass: FreightClass;
+  freightClassLabel: string;
+  zone: ShippingZone;
+  zoneLabel: string;
+  /** Destination where an eligible standard order can ship at no charge. */
+  freeStandardEligibleZone: boolean;
+  /** Moves as freight, so it can be charged even to a free-eligible zone. */
+  movesAsFreight: boolean;
+};
+
+export function assessShipping(
   items: { productId: number; quantity: number }[],
   country?: string | null
-): ShippingQuote[] {
+): ShippingAssessment {
   const zone = resolveZone(country);
   const freightClass = resolveCartFreightClass(items);
-  const freightClassLabel = FREIGHT_CLASS_LABEL[freightClass];
 
-  const standard: ShippingQuote = {
-    method: "standard",
-    label: "Free Standard Shipping",
-    amount: 0,
+  return {
     freightClass,
-    freightClassLabel,
+    freightClassLabel: FREIGHT_CLASS_LABEL[freightClass],
     zone,
+    zoneLabel: ZONE_LABEL[zone],
+    freeStandardEligibleZone: isFreeStandardEligibleZone(zone),
+    movesAsFreight: freightClass === "pallet",
   };
-
-  if (!isExpressConfigured()) return [standard];
-
-  const base = EXPRESS_RATES[zone]?.[freightClass] ?? null;
-
-  if (base == null || base <= 0) {
-    return [
-      standard,
-      {
-        method: "express",
-        label: "Express Shipping",
-        amount: 0,
-        freightClass,
-        freightClassLabel,
-        zone,
-        unavailableReason:
-          "Express is not available for this item and destination. Contact us for a freight quote.",
-      },
-    ];
-  }
-
-  const totalUnits = items.reduce((sum, item) => sum + Math.max(1, item.quantity), 0);
-  const surcharge = EXTRA_ITEM_SURCHARGE[zone];
-  const extras = Math.max(0, totalUnits - 1);
-  const amount =
-    Math.round((base + (surcharge ? surcharge * extras : 0)) * 100) / 100;
-
-  return [
-    standard,
-    {
-      method: "express",
-      label: "Express Shipping",
-      amount,
-      freightClass,
-      freightClassLabel,
-      zone,
-    },
-  ];
 }
 
 /**
- * The authoritative price for a chosen method. Checkout calls this instead of
- * trusting any amount from the browser -- the client sends a method name, and
- * the fee is recomputed here from the same catalog data every time.
+ * One sentence an admin can read while deciding what to charge.
+ *
+ * Guidance for the person quoting, never customer-facing copy.
+ *
+ * Built from the zone and freight class RECORDED ON THE ORDER at checkout,
+ * not re-derived now: the customer record holds no country, and an order's
+ * destination should not be able to change under it because someone edited an
+ * address later.
  */
-export function priceShippingMethod(
-  items: { productId: number; quantity: number }[],
-  country: string | null | undefined,
-  method: ShippingMethod
-): { amount: number; method: ShippingMethod; freightClass: FreightClass; zone: ShippingZone } {
-  const quotes = quoteShipping(items, country);
-  const chosen = quotes.find((quote) => quote.method === method);
+export function describeStoredShipment(
+  zone: string | null | undefined,
+  freightClass: string | null | undefined
+): string {
+  const destination = zoneLabel(zone);
+  const eligible =
+    typeof zone === "string" && isFreeStandardEligibleZone(zone as ShippingZone);
+  const freight = freightClass === "pallet";
 
-  // An express selection we cannot price falls back to free standard rather
-  // than failing the order or charging a guessed amount.
-  if (!chosen || chosen.unavailableReason || chosen.amount < 0) {
-    const standard = quotes[0];
-    return {
-      amount: 0,
-      method: "standard",
-      freightClass: standard.freightClass,
-      zone: standard.zone,
-    };
+  if (!eligible) {
+    return `${destination} — a charged destination, so shipping applies.`;
   }
 
-  return {
-    amount: chosen.amount,
-    method: chosen.method,
-    freightClass: chosen.freightClass,
-    zone: chosen.zone,
-  };
+  if (freight) {
+    return `${destination} — standard shipping can be free here, but this order moves as freight, so a charge may still apply.`;
+  }
+
+  return `${destination} — standard shipping can be free on an eligible order like this one.`;
 }

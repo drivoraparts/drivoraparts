@@ -26,7 +26,7 @@ export default function StarterPicksRail() {
        * as a dispatch guarantee -- nothing here checks a shelf, only a
        * boolean. The line now describes the filter it actually ran.
        */
-      description={`${count.toLocaleString()} photographed listings between $40 and $400 — brakes, cooling, fuel, wheels and interior. Free standard shipping.`}
+      description={`${count.toLocaleString()} photographed listings between $40 and $400 — brakes, cooling, fuel, wheels and interior.`}
       products={products}
       viewAllHref={routes.all}
     />

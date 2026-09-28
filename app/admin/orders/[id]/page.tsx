@@ -12,6 +12,7 @@ import { findPaymentByOrderId } from "@/lib/db/payments";
 import { readManualPayment } from "@/lib/payments/manual-payment";
 import { createReceiptSignedUrl } from "@/lib/payments/receipt-storage";
 import { getBankRoute, getManualMethod } from "@/lib/payments/manual-methods";
+import { describeStoredShipment } from "@/lib/shipping/quote";
 
 export const dynamic = "force-dynamic";
 
@@ -236,6 +237,13 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               instructionsSentAt={manual.instructionsSentAt}
               customerNote={manual.customerNote}
               lastAdminMessage={manual.lastAdminMessage}
+              subtotal={Number(order.subtotal)}
+              shippingCharge={Number(order.shipping)}
+              expeditedShipping={manual.expeditedShipping}
+              shippingGuidance={describeStoredShipment(
+                order.shipment_zone,
+                order.shipment_freight_class
+              )}
               receipts={manualReceipts}
               paid={manual.paid}
               closed={

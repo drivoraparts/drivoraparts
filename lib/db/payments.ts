@@ -64,7 +64,10 @@ export async function updatePaymentRecord(
   patch: Partial<
     Pick<
       PaymentRecord,
-      "status" | "payment_url" | "provider_payment_id" | "metadata"
+      // "amount" is here because a manual order's total is not final when the
+      // payment row is created: shipping is quoted by hand afterwards, and the
+      // row has to carry the figure the customer is actually asked for.
+      "status" | "payment_url" | "provider_payment_id" | "metadata" | "amount"
     >
   >
 ): Promise<PaymentRecord | null> {

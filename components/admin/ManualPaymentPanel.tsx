@@ -55,6 +55,10 @@ export default function ManualPaymentPanel({
   instructionsSentAt,
   customerNote,
   lastAdminMessage,
+  subtotal,
+  shippingCharge,
+  expeditedShipping,
+  shippingGuidance,
   receipts,
   paid,
   closed,
@@ -71,6 +75,14 @@ export default function ManualPaymentPanel({
   instructionsSentAt: string | null;
   customerNote: string | null;
   lastAdminMessage: string | null;
+  /** Goods total. Fixed at checkout; shipping is added on top of it here. */
+  subtotal: number;
+  /** What has been charged so far. 0 means nobody has quoted this order yet. */
+  shippingCharge: number;
+  /** Null when expedited shipping was not selected -- not the same as 0. */
+  expeditedShipping: number | null;
+  /** Which policy applies to this destination, for the person quoting. */
+  shippingGuidance: string;
   receipts: PanelReceipt[];
   paid: boolean;
   /** Cancelled, failed or refunded. The API refuses every action on a closed
@@ -79,6 +91,18 @@ export default function ManualPaymentPanel({
 }) {
   const router = useRouter();
   const [draft, setDraft] = useState(instructions ?? "");
+  /*
+   * Shipping is typed, not calculated. These are strings rather than numbers
+   * because a half-typed "12." is a valid thing to have in the box and must
+   * not be snapped to 12 while the admin is still going.
+   */
+  const [shippingDraft, setShippingDraft] = useState(
+    shippingCharge > 0 ? String(shippingCharge) : ""
+  );
+  const [expedited, setExpedited] = useState(expeditedShipping !== null);
+  const [expeditedDraft, setExpeditedDraft] = useState(
+    expeditedShipping !== null ? String(expeditedShipping) : ""
+  );
   const [infoDraft, setInfoDraft] = useState("");
   const [busy, setBusy] = useState<string | null>(null);
   const [status, setStatus] = useState("");
@@ -90,7 +114,20 @@ export default function ManualPaymentPanel({
   // button looked as though it had done nothing.
   const [statusFor, setStatusFor] = useState<string | null>(null);
 
-  const run = async (action: string, message?: string) => {
+  const money = (value: string): number => {
+    const num = Number(value.trim());
+    return Number.isFinite(num) && num > 0 ? num : 0;
+  };
+
+  const shippingValue = money(shippingDraft);
+  const expeditedValue = expedited ? money(expeditedDraft) : 0;
+  const totalDue = Math.round((subtotal + shippingValue + expeditedValue) * 100) / 100;
+
+  const run = async (
+    action: string,
+    message?: string,
+    charges?: { shipping: number; expeditedShipping: number }
+  ) => {
     setBusy(action);
     setStatus("");
     setIsError(false);
@@ -99,7 +136,7 @@ export default function ManualPaymentPanel({
       const res = await fetch(`/api/admin/orders/${orderId}/manual-payment`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action, message }),
+        body: JSON.stringify({ action, message, ...charges }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error ?? "Action failed");
@@ -179,6 +216,108 @@ export default function ManualPaymentPanel({
         ) : null}
       </div>
 
+      {/* Shipping — quoted by hand, and this is where it happens ------------ */}
+      <div className="mt-4 border-t border-zinc-100 pt-3.5">
+        <p className="text-xs font-medium text-zinc-700">Shipping charge</p>
+        <p className="mt-0.5 text-[11px] leading-relaxed text-zinc-500">
+          Nothing here calculates a rate. Work the figure out and type it —
+          the customer has been told shipping is sent with their payment
+          details, and this is the first time they see it.
+        </p>
+        <p className="mt-1.5 rounded-md bg-zinc-50 px-2.5 py-1.5 text-[11px] leading-relaxed text-zinc-600">
+          {shippingGuidance}
+        </p>
+
+        <div className="mt-3 flex flex-wrap gap-4">
+          <div>
+            <label
+              htmlFor="manual-shipping"
+              className="text-[11px] font-medium text-zinc-700"
+            >
+              Standard / freight charge (USD)
+            </label>
+            <input
+              id="manual-shipping"
+              type="number"
+              min="0"
+              step="0.01"
+              inputMode="decimal"
+              value={shippingDraft}
+              disabled={busy !== null || paid || closed}
+              onChange={(e) => setShippingDraft(e.target.value)}
+              placeholder="0.00"
+              className="mt-1 w-32 rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs tabular-nums"
+            />
+            <p className="mt-1 text-[10px] text-zinc-500">
+              Leave empty for no shipping charge on this order.
+            </p>
+          </div>
+
+          <div>
+            <label className="flex items-center gap-2 text-[11px] font-medium text-zinc-700">
+              <input
+                type="checkbox"
+                checked={expedited}
+                disabled={busy !== null || paid || closed}
+                onChange={(e) => setExpedited(e.target.checked)}
+              />
+              Expedited shipping requested
+            </label>
+            {expedited ? (
+              <>
+                <input
+                  aria-label="Expedited shipping charge in US dollars"
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  inputMode="decimal"
+                  value={expeditedDraft}
+                  disabled={busy !== null || paid || closed}
+                  onChange={(e) => setExpeditedDraft(e.target.value)}
+                  placeholder="0.00"
+                  className="mt-1 w-32 rounded-lg border border-zinc-300 bg-white px-2.5 py-1.5 text-xs tabular-nums"
+                />
+                <p className="mt-1 text-[10px] text-zinc-500">
+                  Added on top of the charge above.
+                </p>
+              </>
+            ) : (
+              <p className="mt-1 text-[10px] text-zinc-500">
+                Off — the customer sees no expedited line at all.
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* What the customer will be asked for, before it is sent. */}
+        <dl className="mt-3 space-y-1 border-t border-zinc-100 pt-2.5 text-xs">
+          <div className="flex justify-between gap-3">
+            <dt className="text-zinc-500">Order subtotal</dt>
+            <dd className="tabular-nums text-zinc-800">${subtotal.toFixed(2)}</dd>
+          </div>
+          <div className="flex justify-between gap-3">
+            <dt className="text-zinc-500">Shipping</dt>
+            <dd className="tabular-nums text-zinc-800">
+              {shippingValue > 0 ? `${shippingValue.toFixed(2)}` : "No charge"}
+            </dd>
+          </div>
+          {expedited ? (
+            <div className="flex justify-between gap-3">
+              <dt className="text-zinc-500">Expedited shipping</dt>
+              <dd className="tabular-nums text-zinc-800">
+                ${expeditedValue.toFixed(2)}
+              </dd>
+            </div>
+          ) : null}
+          <div className="flex justify-between gap-3 border-t border-zinc-100 pt-1.5">
+            <dt className="font-medium text-zinc-700">Total due</dt>
+            <dd className="font-semibold tabular-nums text-zinc-900">
+              ${totalDue.toFixed(2)}
+            </dd>
+          </div>
+        </dl>
+      </div>
+
       {/* Send / re-send payment instructions -------------------------------- */}
       <div className="mt-4 border-t border-zinc-100 pt-3.5">
         <label className="text-xs font-medium text-zinc-700">
@@ -186,8 +325,8 @@ export default function ManualPaymentPanel({
         </label>
         <p className="mt-0.5 text-[11px] leading-relaxed text-zinc-500">
           Paste your bank / recipient details for this order. Sent exactly as
-          typed, with the order number and amount added automatically. Nothing
-          here is stored in the site&apos;s code.
+          typed, with the order number and the totals above added
+          automatically. Nothing here is stored in the site&apos;s code.
         </p>
         <textarea
           value={draft}
@@ -201,7 +340,12 @@ export default function ManualPaymentPanel({
         />
         <button
           type="button"
-          onClick={() => run("send_instructions", draft)}
+          onClick={() =>
+            run("send_instructions", draft, {
+              shipping: shippingValue,
+              expeditedShipping: expeditedValue,
+            })
+          }
           disabled={busy !== null || paid || closed || draft.trim().length < 5}
           className={`${adminUi.buttonPrimary} mt-2 !py-1.5 text-xs`}
         >

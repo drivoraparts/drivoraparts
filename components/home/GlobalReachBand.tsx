@@ -18,7 +18,7 @@ import { getPhoto } from "@/lib/media/homepage-photo";
  */
 const FACTS = [
   { label: "Delivery", value: "International" },
-  { label: "Shipping", value: "Free standard" },
+  { label: "Shipping", value: "Quoted per order" },
   { label: "Oversize freight", value: "LTL capable" },
   { label: "Payment", value: "Direct or crypto" },
 ];
@@ -50,9 +50,9 @@ export default function GlobalReachBand() {
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-on-dark">
             4WDs and utes across Australia. Trucks and performance across the
-            USA. Standard shipping is free on every order, to most domestic and
-            many international destinations. Truck beds, engines and
-            transmissions move by freight.
+            USA, and most domestic and many international destinations beyond
+            them. Truck beds, engines and transmissions move by freight.
+            Shipping is calculated per order and sent with your payment details.
           </p>
         </ScrollReveal>
 

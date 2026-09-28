@@ -48,6 +48,14 @@ export type ManualPaymentView = {
   receiptSubmittedAt: string | null;
   /** Last message an admin sent asking for more information. */
   lastAdminMessage: string | null;
+  /**
+   * The expedited charge an admin added, in the payment currency.
+   *
+   * null means no expedited shipping was selected, which is different from 0
+   * and is displayed differently: an unselected option shows no line at all,
+   * never a zero that looks like a free upgrade.
+   */
+  expeditedShipping: number | null;
   verifiedAt: string | null;
   /** True once the payment row itself is paid -- the single source of truth
    * for "this order is settled", shared with the crypto flow. */
@@ -123,6 +131,12 @@ export function readManualPayment(
     receipts: readReceipts(meta.receipts),
     receiptSubmittedAt: asString(meta.manual_receipt_submitted_at),
     lastAdminMessage: asString(meta.manual_last_admin_message),
+    expeditedShipping:
+      typeof meta.manual_expedited_shipping === "number" &&
+      Number.isFinite(meta.manual_expedited_shipping) &&
+      meta.manual_expedited_shipping > 0
+        ? meta.manual_expedited_shipping
+        : null,
     verifiedAt: asString(meta.manual_verified_at),
     paid: payment.status === "paid",
   };
@@ -142,6 +156,8 @@ type ManualPatch = {
   instructions?: string;
   customerNote?: string;
   lastAdminMessage?: string;
+  /** Expedited charge in the payment currency. 0 clears it. */
+  expeditedShipping?: number;
   /** Appended to the existing list rather than replacing it, so a customer can
    * submit several receipts across attempts without losing earlier ones. */
   addReceipts?: ManualReceipt[];
@@ -173,6 +189,17 @@ function applyManualPatch(
 
   if (patch.customerNote !== undefined) {
     next.manual_customer_note = patch.customerNote;
+  }
+
+  if (patch.expeditedShipping !== undefined) {
+    // Stored only when it is a real charge. Writing a 0 would make an order
+    // that was never offered expedited shipping indistinguishable from one
+    // that was offered it for nothing.
+    if (patch.expeditedShipping > 0) {
+      next.manual_expedited_shipping = patch.expeditedShipping;
+    } else {
+      delete next.manual_expedited_shipping;
+    }
   }
 
   if (patch.lastAdminMessage !== undefined) {

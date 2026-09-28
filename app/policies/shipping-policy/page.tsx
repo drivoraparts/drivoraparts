@@ -32,13 +32,15 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Methods and Carriers",
           paragraphs: [
-            "We ship using reputable third-party carriers selected based on the destination, weight, dimensions, and type of product. The shipping method used for your order is confirmed at checkout at no additional cost to you.",
+            "We ship using reputable third-party carriers selected based on the destination, weight, dimensions, and type of product. The carrier and service used for your order are chosen by us when the order is prepared.",
           ],
         },
         {
           heading: "Shipping Costs",
           paragraphs: [
-            "Shipping is free on every order placed through the Services, regardless of destination, package weight, or dimensions. Any applicable duties or taxes for international orders are calculated separately and are the responsibility of the recipient.",
+            "Shipping is calculated per order. We confirm the shipping charge with you, together with your payment details, before any payment is made — your order is not charged for shipping until you have seen the amount.",
+            "Standard shipping may be provided at no charge on eligible orders to the United States and the United Kingdom. Orders to Australia and other international destinations are charged for shipping. Engines, transmissions, truck beds and other oversized or freight items may carry a shipping charge to any destination, including those where standard shipping is otherwise free.",
+            "Any applicable duties or taxes for international orders are calculated separately and are the responsibility of the recipient.",
           ],
         },
         {

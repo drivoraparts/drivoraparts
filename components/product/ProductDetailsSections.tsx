@@ -270,7 +270,7 @@ export default function ProductDetailsSections({
           <SubHeading>Shipping</SubHeading>
           <TermList
             items={[
-              "Standard shipping is free.",
+              "Shipping is calculated per order and sent with your payment details.",
               ...(shipment ? [`${shipment}.`] : []),
               ...(location
                 ? [

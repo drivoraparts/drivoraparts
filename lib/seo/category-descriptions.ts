@@ -41,12 +41,16 @@ export function getCategorySeoDescription(slug: string, productCount = 0): strin
    * "in-stock listings" went the same way as the brand page's "verified
    * listings" below: just over half the catalog is fulfilled through the
    * supplier network, and nothing verifies a unit is physically held, so the
-   * count cannot carry a stock claim. The count and free standard shipping
-   * (Shipping Policy, section 4) are true of every listing.
+   * count cannot carry a stock claim.
+   *
+   * Free shipping came off these descriptions too. It is not true of every
+   * listing: Australia and other international destinations are charged, and
+   * freight items can be charged anywhere. The count is what survives as a
+   * claim that holds for all of them.
    */
   if (productCount > 0) {
     return truncateSeoDescription(
-      `${base} ${productCount.toLocaleString()}+ listings with free standard shipping.`
+      `${base} ${productCount.toLocaleString()}+ listings at DrivoraParts.`
     );
   }
 
@@ -71,14 +75,16 @@ export function getBrandSeoDescription(
    * These promised "fitment specs" and "verified listings". Most listings are
    * bulk imports with no fitment field and the generic description the SEO
    * layer already noindexes, so neither could be supported. Replaced with
-   * claims that hold for every listing: the count and free standard shipping
-   * (Shipping Policy, section 4). "Secure checkout" went too: the site still
-   * serves plain http:// without redirecting, so it was not true of every visit.
+   * claims that hold for every listing -- which is now just the count.
+   * "Secure checkout" went too: the site still serves plain http:// without
+   * redirecting, so it was not true of every visit. Free shipping followed it
+   * once the policy became "USA and UK can be free, elsewhere is charged,
+   * freight can be charged anywhere".
    */
   const tail =
     productCount > 0
-      ? `${productCount} listing${productCount === 1 ? "" : "s"} with free standard shipping at DrivoraParts.`
-      : "Free standard shipping at DrivoraParts.";
+      ? `${productCount} listing${productCount === 1 ? "" : "s"} at DrivoraParts.`
+      : "Parts and accessories at DrivoraParts.";
 
   return truncateSeoDescription(`${base} ${tail}`);
 }

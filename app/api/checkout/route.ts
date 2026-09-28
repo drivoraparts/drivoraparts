@@ -12,10 +12,7 @@ import {
 } from "@/lib/checkout/validate-items";
 import { logError, logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
-import {
-  priceShippingMethod,
-  type ShippingMethod,
-} from "@/lib/shipping/quote";
+import { assessShipping } from "@/lib/shipping/quote";
 
 function getCheckoutErrorMessage(error: unknown): string {
   if (error instanceof Error && error.message) return error.message;
@@ -186,20 +183,25 @@ export async function POST(req: Request) {
     }
 
     /*
-     * The customer chooses a METHOD; the price is computed here. A shipping
-     * amount is never read from the request body -- otherwise a crafted
-     * payload could set its own delivery fee, including a negative one.
+     * An order is placed before anyone has priced its shipping.
+     *
+     * Nothing here talks to a carrier, so the charge is worked out by hand and
+     * added when the admin sends the customer their payment details. The order
+     * is therefore created with shipping at zero meaning NOT YET CALCULATED,
+     * never meaning free -- /pay says "to be calculated" until the figure
+     * exists, and the total it shows is the subtotal alone.
+     *
+     * A shipping amount is still never read from the request body: a crafted
+     * payload could otherwise set its own delivery fee, including a negative
+     * one. What is recorded is the description of the shipment, so whoever
+     * quotes it can see how it ships and where it is going.
      */
-    const requestedMethod: ShippingMethod =
-      body?.shippingMethod === "express" ? "express" : "standard";
-
-    const shippingQuote = priceShippingMethod(
+    const shipment = assessShipping(
       parsedItems.items.map((item) => ({
         productId: item.productId,
         quantity: item.quantity,
       })),
-      customer.country,
-      requestedMethod
+      customer.country
     );
 
     const result = await processCheckout({
@@ -208,10 +210,10 @@ export async function POST(req: Request) {
       providerId,
       manualMethod,
       manualRoute,
-      shipping: shippingQuote.amount,
-      shippingMethod: shippingQuote.method,
-      freightClass: shippingQuote.freightClass,
-      shippingZone: shippingQuote.zone,
+      shipping: 0,
+      shippingMethod: "standard",
+      freightClass: shipment.freightClass,
+      shippingZone: shipment.zone,
       requestMeta: { ip },
     });
 

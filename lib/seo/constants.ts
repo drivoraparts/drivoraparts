@@ -6,7 +6,7 @@ export const SITE_TAGLINE =
 
 // The count is the synced catalog size (lib/home/listing-count.ts), not a
 // typed-in figure: this read "1,400+" long after the catalog passed 4,000.
-export const DEFAULT_DESCRIPTION = `Shop ${HOME_LISTING_COUNT.toLocaleString("en-US")}+ performance auto parts: rust-free truck beds, LS & JDM engine swaps, 4x4 lift kits, bull bars, snorkels, turbos, brakes & suspension. Free standard shipping from DrivoraParts.`;
+export const DEFAULT_DESCRIPTION = `Shop ${HOME_LISTING_COUNT.toLocaleString("en-US")}+ performance auto parts: rust-free truck beds, LS & JDM engine swaps, 4x4 lift kits, bull bars, snorkels, turbos, brakes & suspension from DrivoraParts.`;
 
 /** Bump when favicon / default link-preview art changes (cache bust for crawlers). */
 export const ICON_VERSION = "7";

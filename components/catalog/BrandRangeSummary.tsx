@@ -89,8 +89,7 @@ export default function BrandRangeSummary({
           state no warranty. */}
       <p className="text-sm leading-relaxed text-neutral-600">
         Price, condition and any fitment or warranty terms are stated on each{" "}
-        {brandName} listing. Standard shipping is free on every order; heavy
-        assemblies ship as freight.{" "}
+        {brandName} listing. Heavy assemblies ship as freight. Shipping is calculated per order and sent with your payment details.{" "}
         <Link
           href={routes.category(categorySlug)}
           className="font-medium text-accent underline-offset-2 hover:underline"

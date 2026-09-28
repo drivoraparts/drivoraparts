@@ -1305,6 +1305,70 @@ export async function resumeShipping(
  * structured status fields; the admin is the sole author, matching the
  * fully-manual tracking model (no carrier feed writes this).
  */
+/**
+ * Record the shipping charge an admin worked out, and the total it produces.
+ *
+ * An order is created with shipping at zero meaning NOT YET CALCULATED. This
+ * is the one place that figure becomes real, and it is always a person's
+ * decision -- nothing in this codebase derives it. `total` is recomputed here
+ * from the order's own subtotal rather than trusted from the caller, so the
+ * three numbers a customer is shown can never disagree with each other.
+ *
+ * Expedited shipping is included in `total` but is not a column: it rides in
+ * the payment row's metadata with the rest of the manual-payment fields, for
+ * the reason recorded in lib/payments/manual-payment.ts -- this deploy has no
+ * step that applies migrations.
+ */
+export async function updateOrderShippingCharge(
+  id: string,
+  input: { shipping: number; expedited: number },
+  actor: string
+): Promise<OrderRecord | null> {
+  const supabase = getSupabaseAdmin();
+
+  const { data: existing, error: readError } = await supabase
+    .from("orders")
+    .select("subtotal")
+    .eq("id", id)
+    .maybeSingle();
+  if (readError) throw readError;
+  if (!existing) return null;
+
+  const subtotal = Number((existing as { subtotal: number }).subtotal);
+  const shipping = Math.round(input.shipping * 100) / 100;
+  const expedited = Math.round(input.expedited * 100) / 100;
+  const total = Math.round((subtotal + shipping + expedited) * 100) / 100;
+
+  const { data, error } = await supabase
+    .from("orders")
+    .update({
+      shipping,
+      total,
+      shipping_method: expedited > 0 ? "express" : "standard",
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+
+  if (error) throw error;
+  const updated = data as OrderRecord | null;
+
+  if (updated) {
+    await logOrderEvent({
+      orderId: id,
+      eventType: "note",
+      actor,
+      note: expedited > 0
+        ? `Shipping charged at ${shipping.toFixed(2)} plus ${expedited.toFixed(2)} expedited — total ${total.toFixed(2)}`
+        : `Shipping charged at ${shipping.toFixed(2)} — total ${total.toFixed(2)}`,
+      customerVisible: true,
+    });
+  }
+
+  return updated;
+}
+
 export async function updateCustomerMessage(
   id: string,
   message: string | null,

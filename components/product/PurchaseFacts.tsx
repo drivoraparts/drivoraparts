@@ -56,7 +56,7 @@ export default function PurchaseFacts({
   return (
     <dl className="divide-y divide-neutral-200 border-y border-neutral-200">
       <FactRow label="Shipping">
-        <p className="font-semibold">Free standard shipping</p>
+        <p className="font-semibold">Calculated per order</p>
         <p className="mt-0.5 text-muted">
           {shipment ? `${shipment}. ` : ""}
           {location ? (

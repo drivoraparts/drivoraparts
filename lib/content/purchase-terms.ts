@@ -7,8 +7,10 @@ import { MANUAL_METHODS } from "@/lib/payments/manual-methods";
  * already commits to elsewhere, so the product page can say it at the point
  * of purchase without inventing its own version:
  *
- *  - free standard shipping: lib/shipping/quote.ts prices standard at zero on
- *    every cart, and the Shipping Policy (section 4) says the same;
+ *  - shipping: quoted by hand per order and sent with the payment details.
+ *    Nothing prices it automatically -- see lib/shipping/config.ts for the
+ *    policy and lib/shipping/quote.ts for why this file no longer promises
+ *    a free standard rate;
  *  - processing time: Shipping Policy, section 1;
  *  - returns: Returns & Refund Policy, sections 2-10;
  *  - warranty: whatever the listing itself states, read against the Warranty

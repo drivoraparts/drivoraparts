@@ -64,6 +64,22 @@ export default async function PayPage({
 
   const methodLabel = getManualMethod(manual.method)?.label ?? "Bank Transfer";
   const total = Number(order.total);
+
+  /*
+   * The money breakdown.
+   *
+   * Shipping is quoted by a person after the order is placed, so until the
+   * instructions go out there is genuinely no shipping figure. That state
+   * shows as "To be calculated" -- never a zero, which would read as free,
+   * and never a total presented as final when it is not.
+   *
+   * Expedited shipping is null unless it was actually selected, so an order
+   * without it shows no expedited line at all rather than one reading $0.00.
+   */
+  const subtotal = Number(order.subtotal);
+  const shipping = Number(order.shipping);
+  const expedited = manual.expeditedShipping;
+  const shippingQuoted = Boolean(manual.instructionsSentAt);
   const closed =
     order.status === "cancelled" ||
     order.status === "failed" ||
@@ -89,9 +105,9 @@ export default async function PayPage({
 
       <div className="mt-4 flex flex-wrap gap-x-8 gap-y-2 border-y border-neutral-200 py-3.5 text-sm">
         <span className="text-neutral-500">
-          Amount:{" "}
+          {shippingQuoted ? "Amount due:" : "Items:"}{" "}
           <span className="font-semibold text-neutral-900">
-            ${total.toFixed(2)} USD
+            ${(shippingQuoted ? total : subtotal).toFixed(2)} USD
           </span>
         </span>
         <span className="text-neutral-500">
@@ -289,9 +305,43 @@ export default async function PayPage({
                 </li>
               ))}
             </ul>
-            <div className="mt-3 flex justify-between border-t border-neutral-200 pt-3 text-sm font-bold">
-              <span>Total</span>
-              <span>${total.toFixed(2)}</span>
+            <div className="mt-3 space-y-1.5 border-t border-neutral-200 pt-3 text-sm">
+              <div className="flex justify-between">
+                <span className="text-neutral-500">Order subtotal</span>
+                <span className="text-neutral-800">${subtotal.toFixed(2)}</span>
+              </div>
+
+              <div className="flex justify-between">
+                <span className="text-neutral-500">Shipping</span>
+                <span className="text-neutral-800">
+                  {!shippingQuoted
+                    ? "To be calculated"
+                    : shipping > 0
+                      ? `${shipping.toFixed(2)}`
+                      : "No charge"}
+                </span>
+              </div>
+
+              {expedited !== null ? (
+                <div className="flex justify-between">
+                  <span className="text-neutral-500">Expedited shipping</span>
+                  <span className="text-neutral-800">
+                    ${expedited.toFixed(2)}
+                  </span>
+                </div>
+              ) : null}
+
+              <div className="flex justify-between border-t border-neutral-200 pt-1.5 font-bold">
+                <span>{shippingQuoted ? "Total due" : "Items total"}</span>
+                <span>${(shippingQuoted ? total : subtotal).toFixed(2)}</span>
+              </div>
+
+              {!shippingQuoted ? (
+                <p className="pt-1 text-xs font-normal leading-relaxed text-neutral-500">
+                  Shipping will be calculated and sent with your payment
+                  details. This is not the final amount due.
+                </p>
+              ) : null}
             </div>
           </section>
 

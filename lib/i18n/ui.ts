@@ -68,6 +68,7 @@ export const UI = {
   subtotal: "Subtotal",
   shipping: "Shipping",
   free: "Free",
+  shippingTbc: "To be calculated",
   payNow: "Pay Now",
   processing: "Processing...",
   orderSummary: "Order Summary",
