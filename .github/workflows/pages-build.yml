@@ -27,6 +27,18 @@ jobs:
       - name: Install dependencies (deterministic)
         run: npm ci
 
+      # A storefront-claims regression is invisible in a diff and reaches
+      # customers as a contradiction -- a listing titled "Used ..." badged
+      # Brand New, an engine-block description on a torque converter, a
+      # homepage count that no longer matches the catalog it claims to
+      # count. Placed before the build so a bad catalog fails in seconds
+      # rather than after a four-minute bundle. A non-zero exit fails this
+      # job, and every later step is then skipped -- including the deploy,
+      # whose `if` names no status function and so carries the implicit
+      # success() that GitHub applies by default.
+      - name: Storefront claims audit
+        run: npm run audit:storefront-claims
+
       - name: Pre-build verification
         run: npm run verify:cloudflare
 
