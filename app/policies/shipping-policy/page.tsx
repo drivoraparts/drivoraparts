@@ -25,7 +25,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Time and Delivery Estimates",
           paragraphs: [
-            "Once an order has been processed and shipped, estimated delivery typically ranges from 5 to 15 business days, depending on the destination region, the carrier, and the shipping method selected at checkout. Remote or rural destinations may require additional transit time.",
+            "Once an order has been processed and shipped, estimated delivery typically ranges from 5 to 15 business days, depending on the destination region, the carrier, and the shipping method arranged for your order. Remote or rural destinations may require additional transit time.",
             "All delivery timeframes are estimates only and are not guaranteed. Estimated delivery dates do not include order processing time and may be affected by factors outside our control.",
           ],
         },
@@ -38,8 +38,10 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Costs",
           paragraphs: [
-            "Shipping is calculated per order. We confirm the shipping charge with you, together with your payment details, before any payment is made — your order is not charged for shipping until you have seen the amount.",
-            "Standard shipping may be provided at no charge on eligible orders to the United States and the United Kingdom. Orders to Australia and other international destinations are charged for shipping. Engines, transmissions, truck beds and other oversized or freight items may carry a shipping charge to any destination, including those where standard shipping is otherwise free.",
+            "Shipping is calculated manually by DrivoraParts for each order. We do not use automatic live carrier-rate calculation, and no shipping amount is quoted to you at checkout. We review your order and confirm the shipping charge with you, together with your payment details, before any payment is made — you are never charged for shipping before you have seen the amount.",
+            "Standard shipping may be provided at no charge on eligible orders to the United States and the United Kingdom. This is not guaranteed on every order to those destinations. Orders to Australia and to other international destinations are charged for shipping.",
+            "Engines, transmissions, truck beds, other oversized or freight/LTL items, and any order requiring special handling may carry a shipping charge to any destination, including the United States and the United Kingdom, where standard shipping would otherwise be free.",
+            "Expedited shipping is available on some orders, where the destination and the items allow it. It is not offered on every order. Where it is offered and you accept it, the expedited charge is determined manually for your order and shown as a separate line in your payment details, in addition to any standard or freight charge.",
             "Any applicable duties or taxes for international orders are calculated separately and are the responsibility of the recipient.",
           ],
         },
