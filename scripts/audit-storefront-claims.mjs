@@ -50,25 +50,29 @@ process.stdout.write(
 `
 );
 
-// esbuild's own JS entry, not the .bin shim: Node refuses to spawn a .cmd
-// without a shell on Windows, and this path is the same on every platform.
-const esbuild = path.join(ROOT, "node_modules", "esbuild", "bin", "esbuild");
+/*
+ * esbuild's JS API rather than its bin/ entry.
+ *
+ * bin/esbuild is not the same kind of file on every platform. On Windows it
+ * is a Node shim, but esbuild's install script replaces it with the native
+ * executable on Linux, so handing it to `node` on a CI runner fails with
+ * "SyntaxError: Invalid or unexpected token" on the ELF header -- which is
+ * precisely how this step first ran in Actions. The JS API is JavaScript
+ * everywhere and finds the right binary itself.
+ */
+const { build } = await import("esbuild");
 
-execFileSync(
-  process.execPath,
-  [
-    esbuild,
-    entry,
-    "--bundle",
-    "--platform=node",
-    "--format=esm",
-    `--outfile=${bundle}`,
-    "--loader:.json=json",
-    `--alias:@=${ROOT}`,
-    "--log-level=error",
-  ],
-  { cwd: ROOT, stdio: ["ignore", "inherit", "inherit"] }
-);
+await build({
+  entryPoints: [entry],
+  bundle: true,
+  platform: "node",
+  format: "esm",
+  outfile: bundle,
+  loader: { ".json": "json" },
+  alias: { "@": ROOT },
+  logLevel: "error",
+  absWorkingDir: ROOT,
+});
 
 const raw = execFileSync(process.execPath, ["--max-old-space-size=4096", bundle], {
   cwd: ROOT,
