@@ -118,7 +118,7 @@ export default function BuildStorySection() {
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted">
               A ute that works, a wagon that travels, a build that never quite
-              finishes. We stock for all of them.
+              finishes. We source for all of them.
             </p>
           </ScrollReveal>
         </div>

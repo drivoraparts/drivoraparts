@@ -19,7 +19,14 @@ export default function StarterPicksRail() {
     <ProductRail
       eyebrow="Everyday parts"
       title="Under $400"
-      description={`${count.toLocaleString()} listings you can order today — brakes, cooling, fuel, wheels and interior. Real photos, free standard shipping.`}
+      /*
+       * The count is getStarterPickCount(): listings priced $40-$400, flagged
+       * in stock, carrying a hosted photograph, with trivial hardware and
+       * merch excluded. It said "listings you can order today", which reads
+       * as a dispatch guarantee -- nothing here checks a shelf, only a
+       * boolean. The line now describes the filter it actually ran.
+       */
+      description={`${count.toLocaleString()} photographed listings between $40 and $400 — brakes, cooling, fuel, wheels and interior. Free standard shipping.`}
       products={products}
       viewAllHref={routes.all}
     />

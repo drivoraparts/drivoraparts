@@ -1,0 +1,203 @@
+/**
+ * Audit the claims the storefront makes against the catalog behind them.
+ *
+ *   node scripts/audit-storefront-claims.mjs
+ *
+ * Three classes of bug that all reached production once and are all invisible
+ * in a diff:
+ *
+ *   1. A listing whose stored `condition` contradicts its own title, e.g.
+ *      "Used 2014-2018 L83 / L86 Water Pump" stored as brand-new and badged
+ *      "Brand New" on the homepage, the catalog grid and the Meta feed.
+ *   2. Boilerplate copied onto a part it does not describe -- 37 turbo kits,
+ *      torque converters and cylinder heads carried three paragraphs about a
+ *      crack-checked engine block with new pistons and bearings.
+ *   3. HOME_LISTING_COUNT drifting from the catalog it claims to count. It
+ *      sat at 1,446 while the catalog held 1,867.
+ *
+ * The catalog is TypeScript, so this bundles it with the esbuild already in
+ * node_modules rather than adding a loader dependency.
+ */
+import { execFileSync } from "node:child_process";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
+const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "drivora-audit-"));
+const entry = path.join(tmp, "entry.ts");
+const bundle = path.join(tmp, "entry.mjs");
+
+fs.writeFileSync(
+  entry,
+  `import { getAllProducts, resolveProductCondition } from "@/lib/inventory";
+import { brands } from "@/lib/inventory/brands";
+import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
+process.stdout.write(
+  JSON.stringify({
+    homeListingCount: HOME_LISTING_COUNT,
+    brands,
+    products: getAllProducts().map((p) => ({
+      id: p.id,
+      name: p.name,
+      condition: p.condition,
+      resolved: resolveProductCondition(p),
+      description: p.description || "",
+    })),
+  })
+);
+`
+);
+
+// esbuild's own JS entry, not the .bin shim: Node refuses to spawn a .cmd
+// without a shell on Windows, and this path is the same on every platform.
+const esbuild = path.join(ROOT, "node_modules", "esbuild", "bin", "esbuild");
+
+execFileSync(
+  process.execPath,
+  [
+    esbuild,
+    entry,
+    "--bundle",
+    "--platform=node",
+    "--format=esm",
+    `--outfile=${bundle}`,
+    "--loader:.json=json",
+    `--alias:@=${ROOT}`,
+    "--log-level=error",
+  ],
+  { cwd: ROOT, stdio: ["ignore", "inherit", "inherit"] }
+);
+
+const raw = execFileSync(process.execPath, ["--max-old-space-size=4096", bundle], {
+  cwd: ROOT,
+  maxBuffer: 256 * 1024 * 1024,
+  encoding: "utf8",
+});
+fs.rmSync(tmp, { recursive: true, force: true });
+
+const { products, homeListingCount, brands } = JSON.parse(raw);
+const problems = [];
+
+/* ---------------------------------------------------------------------------
+   1. Condition vs. the title the listing carries
+--------------------------------------------------------------------------- */
+
+/*
+ * "Used On IG75" is a Turbosmart diaphragm that FITS the IWG75 actuator and
+ * is sold new, so "used" followed by "on"/"in"/"for"/"with" is a fitment
+ * phrase, not a condition. Matching it would train everyone to ignore this
+ * check.
+ */
+const TITLE_USED = /\b(?:used(?!\s+(?:on|in|for|with|by)\b)|pre[-\s]?owned|salvage|donor|take[-\s]?off|second[-\s]?hand)\b/i;
+/*
+ * "Exchange" is a condition word here, not a fitment one. A BD Diesel stock
+ * exchange turbo or injection pump is a remanufactured core: you send yours
+ * in and get a rebuilt one back. All 18 listings whose title carries the word
+ * are that kind of part, and "Heat Exchanger" does not match because of the
+ * word boundary.
+ *
+ * It earns its place because four of these shipped alongside the genuinely
+ * new unit of the SAME part number -- BD marks those with an "S" suffix --
+ * so the storefront showed two near-identical Garrett turbos at two prices,
+ * both badged "Brand New", one of which was a rebuilt core.
+ */
+const TITLE_REFURB = /\b(?:refurbished|remanufactured|reman|rebuilt|reconditioned|exchange)\b/i;
+
+for (const product of products) {
+  if (product.resolved !== "brand-new") continue;
+  if (TITLE_USED.test(product.name)) {
+    problems.push(
+      `[condition] ${product.id} titled used but stored "${product.condition}" -> badged Brand New: ${product.name}`
+    );
+  } else if (TITLE_REFURB.test(product.name)) {
+    problems.push(
+      `[condition] ${product.id} titled remanufactured but stored "${product.condition}" -> badged Brand New: ${product.name}`
+    );
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   2. Engine-block boilerplate on a part that is not an engine assembly
+--------------------------------------------------------------------------- */
+
+const BLOCK_PROSE = /A short block, long block or ready-run engine is the sensible answer/i;
+const BLOCK_SPEC = /^Product: Engine assembly$/im;
+const IS_ENGINE_ASSEMBLY = /\b(?:short block|long block|ready[-\s]?run engine|engine|motor)\b/i;
+
+for (const product of products) {
+  const claimsBlock = BLOCK_PROSE.test(product.description) || BLOCK_SPEC.test(product.description);
+  if (claimsBlock && !IS_ENGINE_ASSEMBLY.test(product.name)) {
+    problems.push(
+      `[description] ${product.id} is not an engine assembly but its description describes a machined block: ${product.name}`
+    );
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   3. The one hardcoded count left on the site
+--------------------------------------------------------------------------- */
+
+if (homeListingCount !== products.length) {
+  problems.push(
+    `[count] HOME_LISTING_COUNT is ${homeListingCount} but the catalog holds ${products.length}. ` +
+      `Run: node scripts/sync-home-listing-count.mjs (with a server running).`
+  );
+}
+
+/* ---------------------------------------------------------------------------
+   4. Brand registry hygiene
+
+   A brand is a (slug, category) pair, so the same manufacturer is registered
+   once per category on purpose. An exact repeat of one pair is never
+   intentional: it double-counts that brand in getBrandsByCategory(), which is
+   what renders the sibling-brand list on a brand page.
+
+   Display names are checked per slug too. "SnugTop" and "Snugtop" were
+   registered under the same slug in two categories, so the same manufacturer
+   printed two ways depending on which page you landed on. Three slugs
+   legitimately carry a second name -- Toyota/Nissan/Ford also trade as
+   "<make> Genuine" in some categories -- so only a pure capitalisation
+   difference is reported.
+--------------------------------------------------------------------------- */
+
+const seenPairs = new Set();
+const namesBySlug = new Map();
+
+for (const brand of brands) {
+  const pair = `${brand.slug}|${brand.category}`;
+  if (seenPairs.has(pair)) {
+    problems.push(
+      `[brands] duplicate registration of (${brand.slug}, ${brand.category}) in lib/inventory/brands.ts`
+    );
+  }
+  seenPairs.add(pair);
+
+  if (!namesBySlug.has(brand.slug)) namesBySlug.set(brand.slug, new Set());
+  namesBySlug.get(brand.slug).add(brand.name);
+}
+
+for (const [slug, names] of namesBySlug) {
+  if (names.size < 2) continue;
+  const lowered = new Set([...names].map((n) => n.toLowerCase()));
+  if (lowered.size === names.size) continue; // genuinely different names
+  problems.push(
+    `[brands] slug "${slug}" is registered under names differing only in case: ${[...names]
+      .map((n) => `"${n}"`)
+      .join(" vs ")}`
+  );
+}
+
+/* ------------------------------------------------------------------------ */
+
+console.log(`Audited ${products.length} listings and ${brands.length} brand registrations.`);
+
+if (problems.length === 0) {
+  console.log("No storefront-claim problems found.");
+  process.exit(0);
+}
+
+console.error(`\n${problems.length} problem(s):\n`);
+for (const problem of problems) console.error("  " + problem);
+process.exit(1);

@@ -16,7 +16,7 @@ import {
   getFeaturedTimeSlot,
   getHomeFeaturedProductPool,
 } from "@/lib/home/featured-products";
-import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
+import { getActiveListingCount } from "@/lib/catalog/counts";
 import { routes } from "@/lib/inventory/routes";
 import { buildPageMetadata, SITE_KEYWORDS } from "@/lib/seo";
 
@@ -25,13 +25,15 @@ export const revalidate = 600;
 export const metadata = buildPageMetadata({
   title: "Performance Auto Parts & Truck Beds Marketplace",
   description:
-    `Shop ${HOME_LISTING_COUNT.toLocaleString("en-US")}+ listings: rust-free truck beds, LS & JDM engine swaps, OME & Fox 4x4 lift kits, ARB bull bars, Safari snorkels, turbos, brakes & suspension. Free standard shipping on every order.`,
+    `Shop ${getActiveListingCount().toLocaleString("en-US")} listings: rust-free truck beds, LS & JDM engine swaps, OME & Fox 4x4 lift kits, ARB bull bars, Safari snorkels, turbos, brakes & suspension. Free standard shipping on every order.`,
   path: "/",
   keywords: SITE_KEYWORDS,
 });
 
 export default function Home() {
-  const listingCount = HOME_LISTING_COUNT;
+  // Counted from the catalog itself rather than a hand-synced constant --
+  // see lib/catalog/counts.ts for why, and for what an active listing is.
+  const listingCount = getActiveListingCount();
   const featuredPool = getHomeFeaturedProductPool();
   const featuredProducts = getFeaturedBatch(featuredPool, getFeaturedTimeSlot());
 
@@ -81,8 +83,14 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
+                {/* "Curated from live inventory" claimed a stock feed this
+                    site does not have. The pool is chosen from the published
+                    catalog by category and photography (see
+                    lib/home/featured-products.ts) and the catalog is a static
+                    bundle; what is true is that the selection is hand-shaped
+                    and rotates, so the line says that instead. */}
                 <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-accent">
-                  Curated from live inventory
+                  Selected from the catalog
                 </p>
                 <h2 className="mt-1 text-2xl font-bold text-neutral-900 sm:text-3xl">
                   Performance Picks

@@ -204,9 +204,37 @@ img.rounded-full {
   }
 }
 
+/*
+ * No animation means no scrolling, and a 7,700px track inside a 1,000px
+ * overflow-hidden mask with nothing to move it left leaves 17 of the 23
+ * brands permanently off-screen and unreachable -- there is no scrollbar and
+ * nothing to hover. Reduced motion should cost the animation, not the
+ * content, so the row wraps into a static block that shows all of them.
+ *
+ * The clone exists only to feed the loop, so it goes: repeating the list
+ * under a heading that says "Shop Parts By Brand" is the duplicate section
+ * a reader sees, not a second lap of a marquee.
+ */
 @media (prefers-reduced-motion: reduce) {
   .brand-marquee-track {
     animation: none;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1.5rem;
+    padding-left: 0;
+    padding-inline: 1rem;
+  }
+
+  .brand-marquee-clone {
+    display: none;
+  }
+
+  /* Nothing is running off the edges any more, so the fade would just dim
+     the first and last brand in each row. */
+  .brand-marquee-mask {
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 }
 

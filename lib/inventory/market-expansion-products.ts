@@ -88938,27 +88938,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-proforce-torque-converter-dodge-1994-2007-47rh-47re-48re-1070247lx/1.webp"],
     description: `Proforce Torque Converter Dodge 1994–2007 47RH/47RE/48RE, low, BD part 1070247LX.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1070247LX, the low option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: Low
 Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1070247LX
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 Low
 
 Warranty
@@ -88988,27 +88978,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-proforce-torque-converter-dodge-1994-2007-47rh-47re-48re-1070247xhs/1.webp"],
     description: `Proforce Torque Converter Dodge 1994–2007 47RH/47RE/48RE, high, BD part 1070247X-HS.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1070247X-HS, the high option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: High
 Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1070247X-HS
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 High
 
 Warranty
@@ -89038,27 +89018,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-6-4l-power-stroke-screamer-v2s-twin-turbo-kit-ford-2008-2010-1047083/1.webp"],
     description: `6.4L Power Stroke Screamer V2S Twin Turbo Kit Ford 2008–2010, w/o intake system, BD part 1047083.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1047083, the w/o intake system option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: W/O Intake System
 Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
 Part number: 1047083
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 W/O Intake System
 
 Warranty
@@ -89088,27 +89058,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-6-4l-power-stroke-screamer-v2s-twin-turbo-kit-ford-2008-2010-1047082/1.webp"],
     description: `6.4L Power Stroke Screamer V2S Twin Turbo Kit Ford 2008–2010, with intake system, BD part 1047082.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1047082, the with intake system option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: with Intake System
 Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
 Part number: 1047082
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 with Intake System
 
 Warranty
@@ -89138,27 +89098,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-screamer-stage-1-gt37-retrofit-turbo-kit-ford-6-7l-power-stroke-f-250--1045824/1.webp"],
     description: `Screamer Stage 1 GT37 Retrofit Turbo Kit Ford 6.7L Power Stroke F-250/350 2011-14 & F-450/550 2011-16, BD part 1045824.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045824.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2011–2014 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2016 Ford F-450 Super Duty and F-550 Super Duty (6.7L)
 Part number: 1045824
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -89906,27 +89852,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-screamer-turbo-manifold-package-ram-2500-3500-6-7l-cummins-2019-2024-1045872/1.webp"],
     description: `Screamer Turbo Manifold Package RAM 2500/3500 6.7L Cummins 2019–2024, BD part 1045872.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045872.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
 Part number: 1045872
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -89954,27 +89886,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-super-b-special-sx-e-s363-turbo-kit-dodge-5-9l-cummins-1994-2002-1045257/1.webp"],
     description: `Super B Special SX-E S363 Turbo Kit Dodge 5.9L Cummins 1994–2002, BD part 1045257.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045257.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
 Part number: 1045257
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -90627,27 +90545,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-68rfe-proforce-3d-torque-converter-1071220lx/1.webp"],
     description: `68RFE Proforce 3D Torque Converter, low, BD part 1071220LX.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1071220LX, the low option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: Low
 Application: 2007–2021 Dodge / Ram 2500; and 2007–2020 Dodge / Ram 3500 (6.7L)
 Part number: 1071220LX
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 Low
 
 Warranty
@@ -90677,27 +90585,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re-1071217lx/1.webp"],
     description: `Proforce 3D Torque Converter Dodge 1994–2007 47RH/47RE/48RE, 23 stock shaft / low, BD part 1071217LX.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1071217LX, the 23 stock shaft / low option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: 23 Stock Shaft / Low
 Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1071217LX
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 23 Stock Shaft / Low
 
 Warranty
@@ -90727,27 +90625,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-proforce-3d-torque-converter-dodge-1994-2007-47rh-47re-48re-1071217xhs/1.webp"],
     description: `Proforce 3D Torque Converter Dodge 1994–2007 47RH/47RE/48RE, 23 stock shaft / high, BD part 1071217X-HS.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1071217X-HS, the 23 stock shaft / high option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: 23 Stock Shaft / High
 Application: 1994–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1071217X-HS
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 23 Stock Shaft / High
 
 Warranty
@@ -90777,27 +90665,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-clutch-kit-ford-1999-2003-7-3l-di-ps-475hp-1000tq-sbc19446ofek/1.webp"],
     description: `Clutch Kit Ford 1999–2003 7.3L DI PS - 475hp/1000tq, BD part SBC1944-6OFEK.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part SBC1944-6OFEK.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 1999–2003 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (7.3L)
 Part number: SBC1944-6OFEK
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -91977,27 +91851,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024-djpch100103/1.webp"],
     description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2019–2024, w/o fire rings, BD part DJPCH100103.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100103, the w/o fire rings option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: w/o Fire Rings
 Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
 Part number: DJPCH100103
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 w/o Fire Rings
 
 Warranty
@@ -92027,27 +91891,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2019-2024-djpch100206/1.webp"],
     description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2019–2024, with fire rings, BD part DJPCH100206.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100206, the with fire rings option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: with Fire Rings
 Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
 Part number: DJPCH100206
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 with Fire Rings
 
 Warranty
@@ -92065,7 +91919,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for DJPCH100089.
     price: 2274.99,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "BD Diesel Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "DJPCH100089",
@@ -92077,27 +91931,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-reman-cylinder-head-dodge-ram-6-7l-cummins-2019-2024-djpch100089/1.webp"],
     description: `Reman Cylinder Head Dodge/RAM 6.7L Cummins 2019–2024, BD part DJPCH100089.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100089.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2019–2024 Dodge / Ram 2500 and 3500 (6.7L)
 Part number: DJPCH100089
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -92125,18 +91965,11 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018-djpch100046/1.webp"],
     description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2007–2018, w/o fire rings, BD part DJPCH100046.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100046, the w/o fire rings option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: w/o Fire Rings
 Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
 BD catalogue range: 2007–2018
@@ -92144,9 +91977,6 @@ Part number: DJPCH100046
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 w/o Fire Rings
 
 Warranty
@@ -92176,18 +92006,11 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-6-7l-cummins-2007-2018-djpch100205/1.webp"],
     description: `Performance Cylinder Head (Stage 1) Dodge/RAM 6.7L Cummins 2007–2018, with fire rings, BD part DJPCH100205.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100205, the with fire rings option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: with Fire Rings
 Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
 BD catalogue range: 2007–2018
@@ -92195,9 +92018,6 @@ Part number: DJPCH100205
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 with Fire Rings
 
 Warranty
@@ -92215,7 +92035,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for DJPCH100039.
     price: 2204.99,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "BD Diesel Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "DJPCH100039",
@@ -92227,27 +92047,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-reman-cylinder-head-dodge-ram-6-7l-cummins-2007-5-2018-djpch100039/1.webp"],
     description: `Reman Cylinder Head Dodge/RAM 6.7L Cummins 2007.5-2018, BD part DJPCH100039.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100039.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
 Part number: DJPCH100039
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -92275,27 +92081,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007-djpch100026/1.webp"],
     description: `Performance Cylinder Head (Stage 1) Dodge/RAM 5.9L Cummins 2003–2007, w/o fire rings, BD part DJPCH100026.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100026, the w/o fire rings option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: w/o Fire Rings
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: DJPCH100026
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 w/o Fire Rings
 
 Warranty
@@ -92325,27 +92121,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-performance-cylinder-head-stage-1-dodge-ram-5-9l-cummins-2003-2007-djpch100202/1.webp"],
     description: `Performance Cylinder Head (Stage 1) Dodge/RAM 5.9L Cummins 2003–2007, with fire rings, BD part DJPCH100202.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100202, the with fire rings option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: with Fire Rings
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: DJPCH100202
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 with Fire Rings
 
 Warranty
@@ -92363,7 +92149,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for DJPCH100008.
     price: 2204.99,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "BD Diesel Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "DJPCH100008",
@@ -92375,27 +92161,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-reman-cylinder-head-dodge-ram-5-9l-cummins-2003-2007-djpch100008/1.webp"],
     description: `Reman Cylinder Head Dodge/RAM 5.9L Cummins 2003–2007, BD part DJPCH100008.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part DJPCH100008.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: DJPCH100008
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -93051,27 +92823,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-screamer-turbo-manifold-package-ram-6-7l-cummins-2013-2018-1045871/1.webp"],
     description: `Screamer Turbo Manifold Package RAM 6.7L Cummins 2013–2018, BD part 1045871.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045871.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2013–2018 Dodge / Ram 2500 and 3500 (6.7L)
 Part number: 1045871
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -93099,27 +92857,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-screamer-turbo-manifold-package-dodge-6-7l-cummins-2007-5-2012-1045870/1.webp"],
     description: `Screamer Turbo Manifold Package Dodge 6.7L Cummins 2007.5-2012, BD part 1045870.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045870.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2007–2012 Dodge / Ram 2500 and 3500 (6.7L)
 Part number: 1045870
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -93195,27 +92939,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045170/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s361sxe/76 0.91 ar, BD part 1045170.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045170, the s361sxe/76 0.91 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S361SXE/76 0.91 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045170
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S361SXE/76 0.91 AR
 
 Warranty
@@ -93245,27 +92979,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045169/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/76 1.00 ar, BD part 1045169.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045169, the s364sxe/76 1.00 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S364SXE/76 1.00 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045169
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S364SXE/76 1.00 AR
 
 Warranty
@@ -93295,27 +93019,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045171/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/76 0.91 ar, BD part 1045171.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045171, the s364sxe/76 0.91 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S364SXE/76 0.91 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045171
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S364SXE/76 0.91 AR
 
 Warranty
@@ -93345,27 +93059,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045172/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s363sxe/76 0.91 ar, BD part 1045172.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045172, the s363sxe/76 0.91 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S363SXE/76 0.91 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045172
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S363SXE/76 0.91 AR
 
 Warranty
@@ -93395,27 +93099,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045173/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s363sxe/80 0.91 ar, BD part 1045173.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045173, the s363sxe/80 0.91 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S363SXE/80 0.91 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045173
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S363SXE/80 0.91 AR
 
 Warranty
@@ -93445,27 +93139,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045174/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/80 0.91 ar, BD part 1045174.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045174, the s364sxe/80 0.91 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S364SXE/80 0.91 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045174
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S364SXE/80 0.91 AR
 
 Warranty
@@ -93495,27 +93179,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045175/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s364sxe/80 1.00 ar, BD part 1045175.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045175, the s364sxe/80 1.00 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S364SXE/80 1.00 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045175
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S364SXE/80 1.00 AR
 
 Warranty
@@ -93545,27 +93219,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045176/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s366sxe/80 0.91 ar, BD part 1045176.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045176, the s366sxe/80 0.91 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S366SXE/80 0.91 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045176
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S366SXE/80 0.91 AR
 
 Warranty
@@ -93595,27 +93259,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045177/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s366sxe/80 1.00 ar, BD part 1045177.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045177, the s366sxe/80 1.00 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S366SXE/80 1.00 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045177
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S366SXE/80 1.00 AR
 
 Warranty
@@ -93645,27 +93299,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045178/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s369sxe/80 0.91 ar, BD part 1045178.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045178, the s369sxe/80 0.91 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S369SXE/80 0.91 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045178
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S369SXE/80 0.91 AR
 
 Warranty
@@ -93695,27 +93339,17 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-iron-horn-5-9l-cummins-turbo-kit-1045179/1.webp"],
     description: `Iron Horn 5.9L Cummins Turbo Kit, s369sxe/80 1.00 ar, BD part 1045179.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045179, the s369sxe/80 1.00 ar option.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Option: S369SXE/80 1.00 AR
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1045179
 
 Highlights
 
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
 S369SXE/80 1.00 AR
 
 Warranty
@@ -93889,27 +93523,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-howler-vgt-turbo-kit-dodge-5-9l-cummins-2003-2007-1047140/1.webp"],
     description: `Howler VGT Turbo Kit Dodge 5.9L Cummins 2003–2007, BD part 1047140.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1047140.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1047140
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -93937,27 +93557,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-howler-stock-vgt-turbo-kit-dodge-5-9l-cummins-2003-2007-1047139/1.webp"],
     description: `Howler Stock VGT Turbo Kit Dodge 5.9L Cummins 2003–2007, BD part 1047139.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1047139.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2003–2007 Dodge / Ram 2500 and 3500 (5.9L)
 Part number: 1047139
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -93973,7 +93579,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for 179514-B.
     price: 2434.95,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "BD Diesel Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "179514-B",
@@ -93985,27 +93591,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-exchange-twin-turbo-assembly-ford-6-4l-power-stroke-2008-2010-179514b/1.webp"],
     description: `Exchange Twin Turbo Assembly Ford 6.4L Power Stroke 2008–2010, BD part 179514-B.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 179514-B.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 2008–2010 Ford F-250 Super Duty and F-350 Super Duty (6.4L)
 Part number: 179514-B
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -94850,27 +94442,13 @@ Worldwide Shipping Available`,
     images: ["/product-media/engine/bd-super-b-single-sx-s358-turbo-kit-w-fmw-billet-wheel-dodge-5-9l-cummins-1045220/1.webp"],
     description: `Super B Single SX S358 Turbo Kit w/FMW Billet Wheel Dodge 5.9L Cummins 1994–2002, BD part 1045220.
 
-A short block, long block or ready-run engine is the sensible answer when a rebuild has become a bigger job than the engine is worth — the machining, the parts and the assembly are already done, and done consistently.
-
-BD's blocks are fully disassembled, crack-checked and precision-machined to OEM specification, with new pistons, bearings and gaskets. They are built by D&J Precision Machine.
-
-Fitting a complete block is a large job either way, so the question is whether the machining behind it is known — and here it is.
-
 BD list this as part 1045220.
 
 Specifications
 
 Manufacturer: BD Diesel Performance
-Product: Engine assembly
 Application: 1994–2002 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
 Part number: 1045220
-
-Highlights
-
-Crack-checked and precision-machined
-New pistons, bearings and gaskets
-Built to OEM specification
-
 Warranty
 BD Diesel Manufacturer Warranty
 
@@ -97395,7 +96973,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for 743250-5025.
     price: 1230,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "24-Month BD Diesel Warranty",
     location: "our supplier network",
     partNumber: "743250-5025",
@@ -97442,7 +97020,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for 743250-5024.
     price: 1230,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "24-Month BD Diesel Warranty",
     location: "our supplier network",
     partNumber: "743250-5024",
@@ -97489,7 +97067,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for 725390-5006.
     price: 1099,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "24-Month BD Diesel Warranty",
     location: "our supplier network",
     partNumber: "725390-5006",
@@ -106489,7 +106067,7 @@ Worldwide Shipping Available`,
     // bddiesel listing price for 851824-5001.
     price: 2350,
     stock: true,
-    condition: "brand-new",
+    condition: "refurbished",
     warranty: "12-Month BD Diesel Warranty",
     location: "our supplier network",
     partNumber: "851824-5001",
