@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getCategory as getLegacyCategory } from "@/data/store";
 import {
   getCategory,
@@ -54,10 +55,18 @@ export default async function Page({ params }: PageProps) {
 
   const categoryData = getLegacyCategory(slug);
 
+  /*
+   * An unknown slug is a 404, not an empty category page.
+   *
+   * This used to render "No products found in this category" and return 200,
+   * which made every misspelling and every piece of crawler junk under
+   * /catalog/ its own indexable page -- an unbounded set of them, all empty,
+   * all carrying robots "index, follow". The sibling brand route
+   * (/catalog/[category]/[brand]) has always called notFound() for the same
+   * case; this route was the one that did not.
+   */
   if (!categoryData) {
-    return (
-      <div className="bg-white p-6 text-neutral-900">No products found in this category</div>
-    );
+    notFound();
   }
 
   const products = getProductsByCategory(slug);
