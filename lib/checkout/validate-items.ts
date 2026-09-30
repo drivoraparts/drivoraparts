@@ -83,7 +83,39 @@ export function parseRawCheckoutItems(raw: unknown): CheckoutItemsResult {
     });
   }
 
-  return { items, error: null };
+  /*
+   * One line per product, and the limit counted across all of them.
+   *
+   * The per-line check above is not the limit the copy promises. "Up to 20 of
+   * any item per order" is a statement about the ORDER, and nothing stopped a
+   * payload from spelling the same productId across fifty lines of twenty --
+   * a thousand units, past both caps, each line individually legal. The cart
+   * cannot produce that (addToCart merges by id), so it only ever arrives
+   * from a hand-made request, which is the case worth closing.
+   *
+   * Merging rather than rejecting, because duplicate lines are not in
+   * themselves wrong and the cart already treats them as one: the customer
+   * asked for N of a thing. The merged total is then held to the same limit,
+   * and reports the same message as a single oversized line would.
+   */
+  const merged = new Map<number, RawCheckoutItem>();
+
+  for (const item of items) {
+    const existing = merged.get(item.productId);
+    if (!existing) {
+      merged.set(item.productId, item);
+      continue;
+    }
+    existing.quantity += item.quantity;
+  }
+
+  for (const item of merged.values()) {
+    if (item.quantity > MAX_QUANTITY_PER_ITEM) {
+      return { items: null, error: quantityLimitMessage(item.name) };
+    }
+  }
+
+  return { items: [...merged.values()], error: null };
 }
 
 /**
