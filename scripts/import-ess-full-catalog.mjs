@@ -78,6 +78,22 @@ const TITLE_BRAND = [
   [/\bbilstein\b/i, "bilstein"],
   [/\bkw\b/i, "kw-suspension"],
   [/\btein\b/i, "tein"],
+  /*
+   * BMR has to be here, not left to fall through.
+   *
+   * The vehicle-make entries below match names that appear in a title for
+   * FITMENT, not because the make built the part. With no BMR entry,
+   * "BMR 15-20 Ford Mustang Rear Strut Tower Brace" matched /ford/ and was
+   * filed under Ford; Challenger parts went to Dodge and G-Body parts to
+   * Chevrolet, and the rest fell to the suspension default of "universal" --
+   * which is the one thing a chassis-specific control arm is not. 31 listings
+   * landed that way, against 120 BMR parts imported elsewhere that are
+   * correctly bmr-suspension.
+   *
+   * Manufacturer entries win because this loop returns the first match, so
+   * anything added later that names a make belongs below this line.
+   */
+  [/\bbmr\b/i, "bmr-suspension"],
   [/\btremec\b/i, "tremec"],
   [/\bchevrolet\b|\bgm\b|\bls\d|\blt\d|\bl83|\bl86|\bl87|\bduramax/i, "chevrolet"],
   [/\bford\b|\bcoyote\b|\bpowerstroke\b|\becoboost\b/i, "ford"],
