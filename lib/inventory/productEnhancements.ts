@@ -133,6 +133,47 @@ function withoutStoreBoilerplate(block: string): string {
     .trim();
 }
 
+/*
+ * Paragraphs the ESS import carried over from the supplier's own storefront
+ * that advertise the SUPPLIER's terms instead of describing the part.
+ *
+ * The GT 1000 Supercharged Coyote -- a crated engine at $31,175 -- opened by
+ * promising "free shipping and free custom paint", promised free shipping a
+ * second time a paragraph later, and pressed a November sale against an
+ * "upcoming price increase" to make the reader hurry.
+ *
+ * None of that is true here. Shipping on a crated engine is quoted by hand and
+ * can carry a charge to any destination, including the ones where standard
+ * shipping can be free (see lib/shipping/config.ts) -- so the page was
+ * promising free freight on the most expensive thing to freight in the whole
+ * catalog. The sale was the supplier's, it is not November, and no price
+ * increase of ours was ever pending.
+ *
+ * The catalog JSON stays exactly as imported; these paragraphs are simply not
+ * rendered, the same basis STORE_BOILERPLATE_FEATURES works on.
+ */
+const SUPPLIER_PROMOTION_PARAGRAPH = [
+  /\bfree\s+(?:standard\s+)?(?:shipping|delivery|freight)\b/i,
+  /\bshipping\s+is\s+free\b/i,
+  /\bsale\s+of\s+the\s+year\b/i,
+  /\bfor\s+the\s+entire\s+month\s+of\b/i,
+  /\bact\s+now\b/i,
+  /\b(?:upcoming|pending)\s+price\s+increase\b/i,
+];
+
+/*
+ * Paragraph-level rather than line-level: these are prose claims, and dropping
+ * one line out of the middle of a paragraph would leave half a sentence behind.
+ */
+function withoutSupplierPromotions(block: string): string {
+  return block
+    .split(/\n{2,}/)
+    .filter((para) => !SUPPLIER_PROMOTION_PARAGRAPH.some((re) => re.test(para)))
+    .join("\n\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 function splitDescriptionSections(description: string) {
   const lines = description.split("\n");
   const sectionIndexes: { name: string; index: number }[] = [];
@@ -146,7 +187,9 @@ function splitDescriptionSections(description: string) {
 
   const introEnd =
     sectionIndexes.length > 0 ? sectionIndexes[0].index : lines.length;
-  const descriptionBody = lines.slice(0, introEnd).join("\n").trim();
+  const descriptionBody = withoutSupplierPromotions(
+    lines.slice(0, introEnd).join("\n").trim()
+  );
 
   const getSection = (name: string) => {
     const start = sectionIndexes.find((section) => section.name === name);
@@ -175,7 +218,8 @@ function splitDescriptionSections(description: string) {
   const shippingAndWarranty = [warranty, shipping].filter(Boolean).join("\n\n");
 
   return {
-    descriptionBody: descriptionBody || description.trim(),
+    descriptionBody:
+      descriptionBody || withoutSupplierPromotions(description.trim()),
     /** The Specifications section on its own -- see buildSpecRows. */
     specifications,
     /** Feature bullets, which are claims about the part rather than attributes. */

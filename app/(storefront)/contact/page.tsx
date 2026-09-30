@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact/ContactForm";
 import CompanyAddress from "@/components/content/CompanyAddress";
+import { CALIFORNIA_FULFILLMENT } from "@/lib/content/company";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -28,6 +29,34 @@ export default function ContactPage() {
           <CompanyAddress variant="us-hq" />
         </div>
 
+        {/*
+          The registered office above is who the customer contracts with; this is
+          where their part is actually picked and packed. Both are stated because a
+          customer checking whether there is a real operation behind the site is
+          asking about this one, and the Shipping Policy names it too.
+
+          This is also the return address the refund policy gives, which is why the
+          note below asks for authorization first: an unannounced parcel arriving
+          here cannot be matched to an order.
+        */}
+        <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
+          <h2 className="mb-3 text-xl font-semibold text-neutral-900">
+            California Fulfillment Center
+          </h2>
+          <address className="space-y-0.5 text-sm not-italic leading-relaxed">
+            <p>{CALIFORNIA_FULFILLMENT.street}</p>
+            <p>
+              {CALIFORNIA_FULFILLMENT.city}, {CALIFORNIA_FULFILLMENT.state}{" "}
+              {CALIFORNIA_FULFILLMENT.postalCode}
+            </p>
+            <p>{CALIFORNIA_FULFILLMENT.country}</p>
+          </address>
+          <p className="mt-3 text-sm">
+            Orders are dispatched from here, and authorized returns come back
+            here. Request authorization through the form above before sending
+            anything back, so the parcel can be matched to your order.
+          </p>
+        </div>
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
           <h2 className="mb-3 text-xl font-semibold text-neutral-900">
             Business Inquiries

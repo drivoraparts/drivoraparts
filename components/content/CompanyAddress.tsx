@@ -1,16 +1,14 @@
 import {
   COMPANY_LOCATION_SUMMARY,
-  JAPAN_LOGISTICS_HUB,
   US_HEADQUARTERS,
 } from "@/lib/content/company";
 
-type CompanyAddressVariant = "summary" | "us-hq" | "japan-hub";
+type CompanyAddressVariant = "summary" | "us-hq";
 type CompanyAddressTone = "light" | "dark";
 
 const variantClass: Record<CompanyAddressVariant, string> = {
   summary: "space-y-1 text-sm",
   "us-hq": "space-y-0.5 text-sm leading-relaxed",
-  "japan-hub": "space-y-0.5 text-sm leading-relaxed",
 };
 
 /*
@@ -60,28 +58,15 @@ export default function CompanyAddress({
     );
   }
 
-  if (variant === "us-hq") {
-    return (
-      <address className={`${classes} not-italic`}>
-        <p className={`font-medium ${t.strong}`}>{US_HEADQUARTERS.companyName}</p>
-        <p>{US_HEADQUARTERS.street}</p>
-        <p>
-          {US_HEADQUARTERS.city}, {US_HEADQUARTERS.state}{" "}
-          {US_HEADQUARTERS.postalCode}
-        </p>
-        <p>{US_HEADQUARTERS.country}</p>
-      </address>
-    );
-  }
-
   return (
     <address className={`${classes} not-italic`}>
-      <p className={`font-medium ${t.strong}`}>{JAPAN_LOGISTICS_HUB.companyName}</p>
+      <p className={`font-medium ${t.strong}`}>{US_HEADQUARTERS.companyName}</p>
+      <p>{US_HEADQUARTERS.street}</p>
       <p>
-        {JAPAN_LOGISTICS_HUB.city}, {JAPAN_LOGISTICS_HUB.ward}
+        {US_HEADQUARTERS.city}, {US_HEADQUARTERS.state}{" "}
+        {US_HEADQUARTERS.postalCode}
       </p>
-      <p>{JAPAN_LOGISTICS_HUB.prefecture}</p>
-      <p>{JAPAN_LOGISTICS_HUB.country}</p>
+      <p>{US_HEADQUARTERS.country}</p>
     </address>
   );
 }

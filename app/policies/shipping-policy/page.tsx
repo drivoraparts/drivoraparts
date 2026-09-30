@@ -3,11 +3,7 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 export const metadata = buildPolicyMetadata("/policies/shipping-policy");
 
 import Policy from "@/components/policy/Policy";
-import {
-  AUSTRALIA_LOGISTICS_HUB,
-  COMPANY_SUPPORT_EMAIL,
-  JAPAN_LOGISTICS_HUB,
-} from "@/lib/content/company";
+import { CALIFORNIA_FULFILLMENT, COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 
 export default function ShippingPolicyPage() {
   return (
@@ -52,11 +48,10 @@ export default function ShippingPolicyPage() {
           ],
         },
         {
-          heading: "Premium Parts Inspection & Dispatch (Japan & Australia)",
+          heading: "Where Orders Are Dispatched From",
           paragraphs: [
-            "Select premium and specialty performance components may be inspected, prepared, and dispatched from our Japan or Australia inventory and logistics hubs before onward delivery to your destination. These facilities support quality control and fulfillment for parts sourced through our Japanese and Australian supply networks.",
-            `${JAPAN_LOGISTICS_HUB.companyName}, ${JAPAN_LOGISTICS_HUB.city}, ${JAPAN_LOGISTICS_HUB.ward}, ${JAPAN_LOGISTICS_HUB.prefecture}, ${JAPAN_LOGISTICS_HUB.country}.`,
-            `${AUSTRALIA_LOGISTICS_HUB.companyName}, ${AUSTRALIA_LOGISTICS_HUB.suburb}, ${AUSTRALIA_LOGISTICS_HUB.city}, ${AUSTRALIA_LOGISTICS_HUB.state} ${AUSTRALIA_LOGISTICS_HUB.country}.`,
+            `Orders are picked, packed, and dispatched from our California fulfillment location at ${CALIFORNIA_FULFILLMENT.street}, ${CALIFORNIA_FULFILLMENT.city}, ${CALIFORNIA_FULFILLMENT.state} ${CALIFORNIA_FULFILLMENT.postalCode}, ${CALIFORNIA_FULFILLMENT.country}.`,
+            "Select premium and specialty performance components are sourced, inspected, and dispatched in Japan or Australia before onward delivery to your destination, through the supply and logistics partners we use in those countries. Where an order ships from does not change the shipping charge you are quoted, which is worked out for the order as a whole.",
           ],
         },
         {

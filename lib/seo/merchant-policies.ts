@@ -27,11 +27,23 @@ function shippingDetailsForCountry(
 ): JsonLd {
   return {
     "@type": "OfferShippingDetails",
-    shippingRate: {
-      "@type": "MonetaryAmount",
-      value: "0",
-      currency: "USD",
-    },
+    /*
+     * No shippingRate. There is no rate to state.
+     *
+     * This block used to declare a flat "0" USD for all four countries, on
+     * every product, which made each listing carry a machine-readable promise
+     * of free shipping to the US, UK, Canada AND Australia. Australia and
+     * Canada are charged destinations, and even in the US and UK free standard
+     * shipping is only ever an eligibility (see lib/shipping/config.ts) that a
+     * crated engine or any freight consignment can lose.
+     *
+     * So the number was wrong in two of the four countries outright and
+     * unguaranteed in the other two, while the page beside it correctly said
+     * shipping is calculated per order. Shipping here is quoted by hand and is
+     * genuinely unknown until an admin works it out, so the rate is omitted
+     * rather than guessed. Handling and transit times stay -- those are real,
+     * and they match the Shipping Policy.
+     */
     shippingDestination: {
       "@type": "DefinedRegion",
       addressCountry,
