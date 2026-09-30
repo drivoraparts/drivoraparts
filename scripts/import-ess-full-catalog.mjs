@@ -79,21 +79,28 @@ const TITLE_BRAND = [
   [/\bkw\b/i, "kw-suspension"],
   [/\btein\b/i, "tein"],
   /*
-   * BMR has to be here, not left to fall through.
+   * Suspension manufacturers have to be named here, not left to fall through.
    *
    * The vehicle-make entries below match names that appear in a title for
-   * FITMENT, not because the make built the part. With no BMR entry,
-   * "BMR 15-20 Ford Mustang Rear Strut Tower Brace" matched /ford/ and was
-   * filed under Ford; Challenger parts went to Dodge and G-Body parts to
-   * Chevrolet, and the rest fell to the suspension default of "universal" --
-   * which is the one thing a chassis-specific control arm is not. 31 listings
-   * landed that way, against 120 BMR parts imported elsewhere that are
-   * correctly bmr-suspension.
+   * FITMENT, not because the make built the part. With no entry of their own,
+   * these manufacturers were caught by that half of the list instead:
+   *
+   *   BMR 15-20 Ford Mustang Rear Strut Tower Brace      -> ford
+   *   BMR 08-17 Challenger Rear Toe Rods                 -> dodge
+   *   UMI Performance 64-72 GM A-Body Lowering Spring    -> chevrolet
+   *
+   * and anything with no make in its title fell to the suspension default of
+   * "universal" -- which is the one thing a control arm cut for an S197
+   * Mustang or a 78-88 G-Body is not. 31 BMR, 19 UMI and 1 QA1 listing landed
+   * that way, while 120 BMR, 57 UMI and 67 QA1 parts were already filed
+   * correctly, so each manufacturer showed up under several brands at once.
    *
    * Manufacturer entries win because this loop returns the first match, so
    * anything added later that names a make belongs below this line.
    */
   [/\bbmr\b/i, "bmr-suspension"],
+  [/\bumi\b/i, "umi-performance"],
+  [/\bqa1\b/i, "qa1"],
   [/\btremec\b/i, "tremec"],
   [/\bchevrolet\b|\bgm\b|\bls\d|\blt\d|\bl83|\bl86|\bl87|\bduramax/i, "chevrolet"],
   [/\bford\b|\bcoyote\b|\bpowerstroke\b|\becoboost\b/i, "ford"],
