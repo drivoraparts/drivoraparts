@@ -4,8 +4,9 @@ export const metadata = buildPolicyMetadata("/policies/refund-policy");
 
 import Policy from "@/components/policy/Policy";
 import {
+  CALIFORNIA_FULFILLMENT,
+  COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
-  US_HEADQUARTERS,
 } from "@/lib/content/company";
 
 export default function RefundPolicyPage() {
@@ -102,8 +103,8 @@ export default function RefundPolicyPage() {
         {
           heading: "Return Mailing Address",
           paragraphs: [
-            "Approved returns must be shipped only after you receive return authorization. Unless we provide different instructions for your order, return packages should be mailed to our U.S. corporate headquarters:",
-            `${US_HEADQUARTERS.companyName}, ${US_HEADQUARTERS.street}, ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} ${US_HEADQUARTERS.postalCode}, ${US_HEADQUARTERS.country}.`,
+            "Approved returns must be shipped only after you receive return authorization. A return sent without it cannot be matched to an order. Unless we provide different instructions for your order, return packages should be mailed to our California fulfillment center, not to our corporate headquarters:",
+            `${COMPANY_LEGAL_NAME}, ${CALIFORNIA_FULFILLMENT.street}, ${CALIFORNIA_FULFILLMENT.city}, ${CALIFORNIA_FULFILLMENT.state} ${CALIFORNIA_FULFILLMENT.postalCode}, ${CALIFORNIA_FULFILLMENT.country}.`,
           ],
         },
         {

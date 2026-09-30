@@ -35,9 +35,9 @@ export default function ContactPage() {
           customer checking whether there is a real operation behind the site is
           asking about this one, and the Shipping Policy names it too.
 
-          It is deliberately not offered as a returns address: a return needs
-          authorization first, which is what the refund policy already requires,
-          and an unannounced parcel arriving here cannot be matched to an order.
+          This is also the return address the refund policy gives, which is why the
+          note below asks for authorization first: an unannounced parcel arriving
+          here cannot be matched to an order.
         */}
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
           <h2 className="mb-3 text-xl font-semibold text-neutral-900">
@@ -52,9 +52,9 @@ export default function ContactPage() {
             <p>{CALIFORNIA_FULFILLMENT.country}</p>
           </address>
           <p className="mt-3 text-sm">
-            Orders are dispatched from here. Please do not send a return to this
-            address without authorization — request one through the form above so it
-            can be matched to your order.
+            Orders are dispatched from here, and authorized returns come back
+            here. Request authorization through the form above before sending
+            anything back, so the parcel can be matched to your order.
           </p>
         </div>
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
