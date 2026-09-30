@@ -18,6 +18,20 @@ export const brands: Brand[] = [
   { slug: "chevrolet", name: "Chevrolet", category: "engine" },
   { slug: "ford", name: "Ford", category: "engine" },
   { slug: "dodge", name: "Dodge", category: "engine" },
+  /*
+   * AMG is its own marque here, not a spelling of Mercedes-Benz: the M157 is
+   * an AMG engine and mercedes-benz is registered separately for transmission
+   * and aftermarket.
+   *
+   * It was the only brand slug in the catalog with no entry in this file at
+   * all, which is the case the note further down warns about. Cards got away
+   * with it -- they uppercase the value, so "mercedes-amg" happened to read as
+   * "MERCEDES-AMG" -- but the SEO helpers had no such cover. The meta
+   * description for the M157 (id 57) read "mercedes-amg engine part.", and
+   * buildProductSeoTitle drops the brand altogether, because it reads
+   * brand?.name with no fallback to the slug.
+   */
+  { slug: "mercedes-amg", name: "Mercedes-AMG", category: "engine" },
   { slug: "aeromotive", name: "Aeromotive", category: "engine" },
   { slug: "holley", name: "Holley", category: "engine" },
   { slug: "garrett", name: "Garrett", category: "engine" },

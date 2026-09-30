@@ -10,6 +10,7 @@ import {
   getManualMethod,
   MANUAL_STATE_LABELS,
 } from "@/lib/payments/manual-methods";
+import LocalTimestamp from "@/components/orders/LocalTimestamp";
 import PaymentSteps from "./PaymentSteps";
 import ReceiptUpload from "./ReceiptUpload";
 
@@ -252,9 +253,10 @@ export default async function PayPage({
                       <span className="break-all font-medium text-neutral-900">
                         {receipt.originalName ?? "Receipt"}
                       </span>
-                      <span className="ml-2 text-neutral-400">
-                        {new Date(receipt.uploadedAt).toLocaleString()}
-                      </span>
+                      <LocalTimestamp
+                        iso={receipt.uploadedAt}
+                        className="ml-2 text-neutral-400"
+                      />
                     </span>
                     {receipt.url ? (
                       <a
