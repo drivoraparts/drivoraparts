@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import TranslatedText from "@/components/i18n/TranslatedText";
-import { COMPANY_LEGAL_NAME, US_HEADQUARTERS } from "@/lib/content/company";
+import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
 import {
   CONTACT_HREF,
   DIRECT_PAYMENT_METHODS,
@@ -132,7 +132,6 @@ export default function PurchaseFacts({
       <FactRow label="Seller">
         <p className="font-semibold">{COMPANY_LEGAL_NAME}</p>
         <p className="mt-0.5 text-muted">
-          {US_HEADQUARTERS.city}, {US_HEADQUARTERS.stateName} ·{" "}
           <Link href={CONTACT_HREF} prefetch={false} className={linkClass}>
             Contact us
           </Link>

@@ -5,6 +5,7 @@ export const metadata = buildPolicyMetadata("/policies/refund-policy");
 import Policy from "@/components/policy/Policy";
 import {
   CALIFORNIA_FULFILLMENT,
+  COMPANY_DISPLAY_NAME,
   COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
 } from "@/lib/content/company";
@@ -13,7 +14,7 @@ export default function RefundPolicyPage() {
   return (
     <Policy
       title="Returns & Refund Policy"
-      intro="DrivoraParts LLC (“Company”, “we”, “us”) wants you to be confident in your purchase. This Returns & Refund Policy explains the conditions under which you may return a product, how to request a return, and how refunds are processed. These rules apply consistently to all eligible products sold through our website and services (the “Services”). By placing an order, you agree to the terms of this policy."
+      intro={`${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”) wants you to be confident in your purchase. This Returns & Refund Policy explains the conditions under which you may return a product, how to request a return, and how refunds are processed. These rules apply consistently to all eligible products sold through our website and services (the “Services”). By placing an order, you agree to the terms of this policy.`}
       sections={[
         {
           heading: "Our 30-Day Money-Back Guarantee",
@@ -42,7 +43,7 @@ export default function RefundPolicyPage() {
         {
           heading: "Return Authorization Required",
           paragraphs: [
-            "All returns must be authorized by DrivoraParts LLC before you ship any item back to us. To request a return, contact us with your order number and the reason for your return. We will review your request and, if approved, provide return instructions and a return authorization.",
+            `All returns must be authorized by ${COMPANY_LEGAL_NAME} before you ship any item back to us. To request a return, contact us with your order number and the reason for your return. We will review your request and, if approved, provide return instructions and a return authorization.`,
             "Items sent back without prior return authorization may be refused, returned to you, or may not qualify for a refund. Please do not ship any item until your return has been approved.",
           ],
         },
@@ -103,8 +104,8 @@ export default function RefundPolicyPage() {
         {
           heading: "Return Mailing Address",
           paragraphs: [
-            "Approved returns must be shipped only after you receive return authorization. A return sent without it cannot be matched to an order. Unless we provide different instructions for your order, return packages should be mailed to our California fulfillment center, not to our corporate headquarters:",
-            `${COMPANY_LEGAL_NAME}, ${CALIFORNIA_FULFILLMENT.street}, ${CALIFORNIA_FULFILLMENT.city}, ${CALIFORNIA_FULFILLMENT.state} ${CALIFORNIA_FULFILLMENT.postalCode}, ${CALIFORNIA_FULFILLMENT.country}.`,
+            "Approved returns must be shipped only after you receive return authorization. A return sent without it cannot be matched to an order. Unless we provide different instructions for your order, return packages should be mailed to the address below, quoting your order number:",
+            `${COMPANY_DISPLAY_NAME} Returns, ${CALIFORNIA_FULFILLMENT.street}, ${CALIFORNIA_FULFILLMENT.city}, ${CALIFORNIA_FULFILLMENT.state} ${CALIFORNIA_FULFILLMENT.postalCode}, ${CALIFORNIA_FULFILLMENT.country}.`,
           ],
         },
         {

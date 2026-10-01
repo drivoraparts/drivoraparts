@@ -5,9 +5,10 @@ import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import NewsletterSignup from "@/components/layout/NewsletterSignup";
 import { useTranslation } from "@/hooks/useTranslation";
 import {
+  COMPANY_DISPLAY_NAME,
   COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
-  US_HEADQUARTERS,
+  copyrightYears,
 } from "@/lib/content/company";
 import {
   CONTACT_HREF,
@@ -164,17 +165,12 @@ export default function FooterContent() {
           <p className="mt-2 text-sm leading-relaxed text-muted-on-dark">{t("footerBrand")}</p>
 
           {/*
-            Who the seller is, in one line: the entity a customer contracts
-            with and the city it answers from. This is not the "operating
-            footprint" the note above removed -- that presented a corporate HQ
-            and two logistics hubs as three operations, on records that could
-            not be confirmed. One registered office is the fact that every
-            other page already states (Contact, Terms of Sale, Returns), so
-            the footer agreeing with them is one less thing to reconcile.
+            Who runs the store, in one line, and no address: the entity is
+            documented, a headquarters is not. This is not the "operating
+            footprint" the note above removed.
           */}
           <p className="mt-4 text-sm text-muted-on-dark">
-            {COMPANY_LEGAL_NAME} · {US_HEADQUARTERS.city},{" "}
-            {US_HEADQUARTERS.stateName}, USA
+            {COMPANY_DISPLAY_NAME} is operated by {COMPANY_LEGAL_NAME}.
           </p>
 
           <p className="mt-2 flex flex-wrap items-center gap-x-1.5 text-sm">
@@ -219,7 +215,7 @@ export default function FooterContent() {
         <div className="text-xs text-muted-on-dark">
           <CurrencyFooterNote />
           <p>
-            © {new Date().getFullYear()} {COMPANY_LEGAL_NAME}. {t("rightsReserved")}
+            © {copyrightYears()} {COMPANY_DISPLAY_NAME}. {t("rightsReserved")}
           </p>
         </div>
         <nav aria-label="Legal">

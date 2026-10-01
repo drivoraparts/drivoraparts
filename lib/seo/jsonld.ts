@@ -1,5 +1,9 @@
 import type { Product } from "@/lib/inventory/types";
-import { COMPANY_SUPPORT_EMAIL, US_HEADQUARTERS } from "@/lib/content/company";
+import {
+  COMPANY_ADDRESS,
+  COMPANY_LEGAL_NAME,
+  COMPANY_SUPPORT_EMAIL,
+} from "@/lib/content/company";
 import { routes } from "@/lib/inventory/routes";
 import { getBrandBySlug } from "@/lib/inventory";
 import { resolveProductGallery } from "@/lib/inventory/media";
@@ -19,17 +23,24 @@ export function organizationJsonLd(): JsonLd {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: SITE_NAME,
+    // The registered entity behind the brand. No address, telephone or
+    // headquarters is stated: none is documented for publication.
+    legalName: COMPANY_LEGAL_NAME,
     url: absoluteUrl("/"),
     logo: absoluteImageUrl("/favicon.png"),
     email: COMPANY_SUPPORT_EMAIL,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: US_HEADQUARTERS.street,
-      addressLocality: US_HEADQUARTERS.city,
-      addressRegion: US_HEADQUARTERS.state,
-      postalCode: US_HEADQUARTERS.postalCode,
-      addressCountry: "US",
-    },
+    ...(COMPANY_ADDRESS
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: COMPANY_ADDRESS.street,
+            addressLocality: COMPANY_ADDRESS.city,
+            addressRegion: COMPANY_ADDRESS.state,
+            postalCode: COMPANY_ADDRESS.postalCode,
+            addressCountry: "US",
+          },
+        }
+      : {}),
   };
 }
 

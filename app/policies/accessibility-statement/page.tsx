@@ -3,12 +3,13 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 export const metadata = buildPolicyMetadata("/policies/accessibility-statement");
 
 import Policy from "@/components/policy/Policy";
+import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
 
 export default function AccessibilityStatementPage() {
   return (
     <Policy
       title="Accessibility Statement"
-      intro="DrivoraParts LLC (“Company”, “we”, “us”) is committed to ensuring that our website and services (the “Services”) are accessible to all users, including people with disabilities. We believe that everyone should be able to browse, shop, and access information with ease, and we continually work to improve the accessibility and usability of the Services in line with recognized standards."
+      intro={`${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”) is committed to ensuring that our website and services (the “Services”) are accessible to all users, including people with disabilities. We believe that everyone should be able to browse, shop, and access information with ease, and we continually work to improve the accessibility and usability of the Services in line with recognized standards.`}
       sections={[
         {
           heading: "Our Commitment",
@@ -63,7 +64,7 @@ export default function AccessibilityStatementPage() {
         {
           heading: "Contact",
           paragraphs: [
-            "To report an accessibility issue or request assistance, contact DrivoraParts LLC at support@drivoraparts.com. We will make reasonable efforts to provide the information, support, or accommodation you need.",
+            `To report an accessibility issue or request assistance, contact ${COMPANY_LEGAL_NAME} at support@drivoraparts.com. We will make reasonable efforts to provide the information, support, or accommodation you need.`,
           ],
         },
       ]}

@@ -3,13 +3,25 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 export const metadata = buildPolicyMetadata("/policies/terms-of-service");
 
 import Policy from "@/components/policy/Policy";
+import {
+  COMPANY_DISPLAY_NAME,
+  COMPANY_LEGAL_NAME,
+  COMPANY_STATE_OF_FORMATION,
+  COMPANY_SUPPORT_EMAIL,
+} from "@/lib/content/company";
 
 export default function TermsOfServicePage() {
   return (
     <Policy
       title="Terms of Service"
-      intro="These Terms of Service (“Terms”) constitute a legally binding agreement between you and DrivoraParts LLC (“Company”, “we”, “us”) and govern your access to and use of the website and services we operate (collectively, the “Services”). These Terms apply to all visitors, users, and customers of the Services. By accessing, browsing, or using the Services, or by placing an order, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you must not access or use the Services."
+      intro={`These Terms of Service (“Terms”) constitute a legally binding agreement between you and ${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”) and govern your access to and use of the website and services we operate (collectively, the “Services”). These Terms apply to all visitors, users, and customers of the Services. By accessing, browsing, or using the Services, or by placing an order, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you must not access or use the Services.`}
       sections={[
+        {
+          heading: "Who We Are",
+          paragraphs: [
+            `${COMPANY_DISPLAY_NAME} is a website and online store operated by ${COMPANY_LEGAL_NAME}, a ${COMPANY_STATE_OF_FORMATION} limited liability company. In these Terms, "Company", "we", "us" and "our" refer to ${COMPANY_LEGAL_NAME}. You can reach us at ${COMPANY_SUPPORT_EMAIL}.`,
+          ],
+        },
         {
           heading: "Acceptance of Terms",
           paragraphs: [
@@ -71,7 +83,7 @@ export default function TermsOfServicePage() {
         {
           heading: "Intellectual Property",
           paragraphs: [
-            "All content on the Services, including text, graphics, logos, images, page layouts, and software, is the property of DrivoraParts LLC or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written permission.",
+            `All content on the Services, including text, graphics, logos, images, page layouts, and software, is the property of ${COMPANY_LEGAL_NAME} or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written permission.`,
           ],
         },
         {
@@ -89,13 +101,13 @@ export default function TermsOfServicePage() {
         {
           heading: "Limitation of Liability",
           paragraphs: [
-            "To the maximum extent permitted by law, DrivoraParts LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Services. Our total aggregate liability for any claim shall not exceed the amount you paid for the product or order giving rise to the claim.",
+            `To the maximum extent permitted by law, ${COMPANY_LEGAL_NAME} shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Services. Our total aggregate liability for any claim shall not exceed the amount you paid for the product or order giving rise to the claim.`,
           ],
         },
         {
           heading: "Indemnification",
           paragraphs: [
-            "You agree to indemnify, defend, and hold harmless DrivoraParts LLC and its officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising out of your violation of these Terms or your misuse of the Services.",
+            `You agree to indemnify, defend, and hold harmless ${COMPANY_LEGAL_NAME} and its officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising out of your violation of these Terms or your misuse of the Services.`,
           ],
         },
         {
@@ -107,7 +119,7 @@ export default function TermsOfServicePage() {
         {
           heading: "Dispute Resolution and Governing Law",
           paragraphs: [
-            "These Terms are governed by the laws of the United States and the state in which DrivoraParts LLC is organized, without regard to conflict-of-law principles. You agree that any dispute arising out of or relating to these Terms or the Services will first be addressed through good-faith negotiation, and that any formal proceedings will be brought in the courts having jurisdiction in that location, unless otherwise required by applicable law.",
+            `These Terms are governed by the laws of the State of ${COMPANY_STATE_OF_FORMATION} and applicable United States federal law, without regard to conflict-of-law principles. You agree that any dispute arising out of or relating to these Terms or the Services will first be addressed through good-faith negotiation, and that any formal proceedings will be brought in the courts having jurisdiction in ${COMPANY_STATE_OF_FORMATION}, unless otherwise required by applicable law.`,
           ],
         },
         {
@@ -119,7 +131,7 @@ export default function TermsOfServicePage() {
         {
           heading: "Contact",
           paragraphs: [
-            "Questions about these Terms may be sent to DrivoraParts LLC at support@drivoraparts.com.",
+            `Questions about these Terms may be sent to ${COMPANY_LEGAL_NAME} at ${COMPANY_SUPPORT_EMAIL}.`,
           ],
         },
       ]}

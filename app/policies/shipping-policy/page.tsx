@@ -3,13 +3,13 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 export const metadata = buildPolicyMetadata("/policies/shipping-policy");
 
 import Policy from "@/components/policy/Policy";
-import { CALIFORNIA_FULFILLMENT, COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
+import { CALIFORNIA_FULFILLMENT, COMPANY_SUPPORT_EMAIL, COMPANY_LEGAL_NAME } from "@/lib/content/company";
 
 export default function ShippingPolicyPage() {
   return (
     <Policy
       title="Shipping Policy"
-      intro="This Shipping Policy explains how DrivoraParts LLC (“Company”, “we”, “us”) processes, ships, and delivers orders placed through our website and services (the “Services”). It also describes estimated timeframes, shipping costs, international shipping, and the responsibilities of both the Company and the customer. Please review this policy carefully before placing an order, as placing an order indicates your acceptance of the terms described here."
+      intro={`This Shipping Policy explains how ${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”) processes, ships, and delivers orders placed through our website and services (the “Services”). It also describes estimated timeframes, shipping costs, international shipping, and the responsibilities of both the Company and the customer. Please review this policy carefully before placing an order, as placing an order indicates your acceptance of the terms described here.`}
       sections={[
         {
           heading: "Order Processing Time",
@@ -64,7 +64,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Customs and Carrier Delays",
           paragraphs: [
-            "Delivery may be delayed by customs inspections, incomplete or inaccurate address information, carrier disruptions, severe weather, or other circumstances beyond our reasonable control. DrivoraParts LLC is not responsible for delays caused by these factors, but we will make reasonable efforts to assist you in resolving delivery issues.",
+            `Delivery may be delayed by customs inspections, incomplete or inaccurate address information, carrier disruptions, severe weather, or other circumstances beyond our reasonable control. ${COMPANY_LEGAL_NAME} is not responsible for delays caused by these factors, but we will make reasonable efforts to assist you in resolving delivery issues.`,
           ],
         },
         {
@@ -88,7 +88,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Carrier Responsibility Limitations",
           paragraphs: [
-            "Once an order is handed over to a carrier, delivery is subject to the carrier's terms, handling, and timelines. DrivoraParts LLC is not liable for the acts or omissions of carriers, including delays, mishandling, or loss occurring while the package is in the carrier's possession.",
+            `Once an order is handed over to a carrier, delivery is subject to the carrier's terms, handling, and timelines. ${COMPANY_LEGAL_NAME} is not liable for the acts or omissions of carriers, including delays, mishandling, or loss occurring while the package is in the carrier's possession.`,
           ],
         },
         {

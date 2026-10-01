@@ -4,8 +4,10 @@ export const metadata = buildPolicyMetadata("/policies/privacy-policy");
 
 import Policy from "@/components/policy/Policy";
 import {
+  COMPANY_ADDRESS,
+  COMPANY_DISPLAY_NAME,
+  COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
-  US_HEADQUARTERS,
 } from "@/lib/content/company";
 
 export default function PrivacyPolicyPage() {
@@ -13,12 +15,13 @@ export default function PrivacyPolicyPage() {
     <Policy
       title="Privacy Policy"
       lastUpdated="October 1, 2026"
-      intro="DrivoraParts LLC (“Company”, “we”, “us”, or “our”) operates this website and the related e-commerce services (collectively, the “Services”). This Privacy Policy describes in detail how we collect, use, store, share, and protect your personal information when you visit our website, create an account, place an order, or otherwise interact with us. We are committed to handling your information responsibly and transparently. By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy and agree to the practices described below. If you do not agree with this Privacy Policy, please do not use the Services."
+      intro={`${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”, or “our”) operates this website and the related e-commerce services (collectively, the “Services”). This Privacy Policy describes in detail how we collect, use, store, share, and protect your personal information when you visit our website, create an account, place an order, or otherwise interact with us. We are committed to handling your information responsibly and transparently. By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy and agree to the practices described below. If you do not agree with this Privacy Policy, please do not use the Services.`}
       sections={[
         {
           heading: "Scope of This Policy",
           paragraphs: [
-            "This Privacy Policy applies to all visitors, registered users, and customers of the Services, and to all personal information that DrivoraParts LLC collects through the website, checkout process, customer support channels, and related business operations.",
+            `${COMPANY_DISPLAY_NAME} is operated by ${COMPANY_LEGAL_NAME}, the business responsible for the personal information collected through the Services.`,
+            `This Privacy Policy applies to all visitors, registered users, and customers of the Services, and to all personal information that ${COMPANY_LEGAL_NAME} collects through the website, checkout process, customer support channels, and related business operations.`,
             "This Privacy Policy does not apply to third-party websites, services, or applications that may be linked from our Services. Those third parties operate under their own privacy policies, and we encourage you to review them before providing any personal information.",
           ],
         },
@@ -76,8 +79,9 @@ export default function PrivacyPolicyPage() {
         {
           heading: "Analytics and Tracking",
           paragraphs: [
-            "We use analytics services, which may include platform analytics and tools such as Google Analytics, to measure traffic, understand visitor behavior, and improve the Services. These tools may use cookies and similar identifiers to collect information about your use of the website.",
-            "Analytics data is generally aggregated or pseudonymized and is used to understand usage trends rather than to personally identify you. Third-party analytics providers process this data under their own privacy policies.",
+            "We use third-party analytics, advertising and chat tools on the Services: Google Tag Manager and Google Analytics, Cloudflare Web Analytics, the Meta (Facebook) Pixel, the TikTok Pixel, and the Tawk.to chat widget. These tools use cookies and similar identifiers to collect information about your device and your use of the website, such as pages viewed and items added to your cart, and the advertising pixels use it to measure and attribute advertising.",
+            "When you place an order, we also send Meta a record of the purchase from our servers (Meta's Conversions API). It includes the order value, currency, order number and product details, together with your email address and telephone number in hashed (one-way encoded) form. Meta may use this information to match the purchase to your Meta account and to measure advertising, under its own privacy policy.",
+            "If you use the chat widget, the messages you send and the details you give are received by Tawk.to. Third-party analytics, advertising and chat providers process this data under their own privacy policies.",
           ],
         },
         {
@@ -134,7 +138,7 @@ export default function PrivacyPolicyPage() {
         {
           heading: "Legal Compliance",
           paragraphs: [
-            "We process personal information in accordance with applicable data protection and consumer protection laws. We may disclose information where necessary to comply with a legal obligation, enforce our agreements, or protect the rights, property, or safety of DrivoraParts LLC, our customers, or others.",
+            `We process personal information in accordance with applicable data protection and consumer protection laws. We may disclose information where necessary to comply with a legal obligation, enforce our agreements, or protect the rights, property, or safety of ${COMPANY_LEGAL_NAME}, our customers, or others.`,
           ],
         },
         {
@@ -147,7 +151,12 @@ export default function PrivacyPolicyPage() {
           heading: "Contact Us",
           paragraphs: [
             `If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, you may contact us at ${COMPANY_SUPPORT_EMAIL}. We will respond to legitimate requests within a reasonable timeframe and in accordance with applicable law.`,
-            `Mailing address: ${US_HEADQUARTERS.companyName}, ${US_HEADQUARTERS.street}, ${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} ${US_HEADQUARTERS.postalCode}, ${US_HEADQUARTERS.country}.`,
+            `Privacy requests are handled by ${COMPANY_LEGAL_NAME}.`,
+            ...(COMPANY_ADDRESS
+              ? [
+                  `Mailing address: ${COMPANY_LEGAL_NAME}, ${COMPANY_ADDRESS.street}, ${COMPANY_ADDRESS.city}, ${COMPANY_ADDRESS.state} ${COMPANY_ADDRESS.postalCode}, ${COMPANY_ADDRESS.country}.`,
+                ]
+              : []),
           ],
         },
       ]}

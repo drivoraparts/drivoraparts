@@ -3,6 +3,7 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 export const metadata = buildPolicyMetadata("/policies/terms-of-sale");
 
 import Link from "next/link";
+import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
 import Policy from "@/components/policy/Policy";
 
 export default function TermsOfSalePage() {
@@ -10,7 +11,7 @@ export default function TermsOfSalePage() {
     <Policy
       title="Terms of Sale"
       lastUpdated="October 1, 2026"
-      intro="These Terms of Sale govern all purchases of products made through the website and services operated by DrivoraParts LLC (“Company”, “we”, “us”). They describe how orders are placed and accepted, how prices and payments are handled, and the rights and responsibilities of both parties in a sale. By placing an order, you agree to these Terms of Sale in addition to our Terms of Service, Shipping Policy, and Returns & Refund Policy."
+      intro={`These Terms of Sale govern all purchases of products made through the website and services operated by ${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”). They describe how orders are placed and accepted, how prices and payments are handled, and the rights and responsibilities of both parties in a sale. By placing an order, you agree to these Terms of Sale in addition to our Terms of Service, Shipping Policy, and Returns & Refund Policy.`}
       sections={[
         {
           heading: "Application of These Terms",
@@ -64,7 +65,7 @@ export default function TermsOfSalePage() {
         {
           heading: "Warranties",
           paragraphs: [
-            "Unless expressly stated in writing, products are sold without any warranty from DrivoraParts LLC. Any applicable manufacturer or third-party warranties are passed through to you to the extent permitted. To the maximum extent permitted by law, we disclaim all implied warranties, including merchantability and fitness for a particular purpose.",
+            `Unless expressly stated in writing, products are sold without any warranty from ${COMPANY_LEGAL_NAME}. Any applicable manufacturer or third-party warranties are passed through to you to the extent permitted. To the maximum extent permitted by law, we disclaim all implied warranties, including merchantability and fitness for a particular purpose.`,
             <>
               How warranty coverage is determined for a product, and how to submit a warranty
               request, is explained in our{" "}
@@ -84,7 +85,7 @@ export default function TermsOfSalePage() {
         {
           heading: "Contact",
           paragraphs: [
-            "For questions about a purchase or these Terms of Sale, contact DrivoraParts LLC at support@drivoraparts.com.",
+            `For questions about a purchase or these Terms of Sale, contact ${COMPANY_LEGAL_NAME} at support@drivoraparts.com.`,
           ],
         },
       ]}

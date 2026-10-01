@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -53,7 +54,7 @@ export default function PoliciesPage() {
         Policies
       </h1>
       <p className="mb-10 text-sm text-neutral-500">
-        Legal information and operating policies for DrivoraParts LLC.
+        Legal information and operating policies for DrivoraParts, operated by {COMPANY_LEGAL_NAME}.
       </p>
 
       {sections.map((section) => (
