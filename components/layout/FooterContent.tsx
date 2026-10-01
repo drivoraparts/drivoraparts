@@ -100,16 +100,20 @@ const LEGAL_LINKS: FooterLink[] = [
 ];
 
 /*
- * The payment row at the foot of the footer: one quiet badge per method
- * checkout offers, and no others. The direct methods are read from
- * MANUAL_METHODS -- the list checkout renders -- so disabling one there takes
- * its badge away too. Cryptocurrency is checkout's NOWPayments option.
+ * The payment row at the foot of the footer: one quiet badge per manual method
+ * checkout offers. The methods are read from MANUAL_METHODS -- the list
+ * checkout renders -- so disabling one there takes its badge away too.
+ *
+ * Cryptocurrency is deliberately not in this row. It is still accepted, and
+ * checkout shows it plainly when a customer gets there, but a Bitcoin wordmark
+ * on every page of the site made it look like the business's payment identity
+ * when it is one additional option. The footer shows the manual methods; the
+ * rest is for checkout to say.
  *
  * Marks are the files already in public/trust and already used at checkout,
- * unmodified: Zelle's tile, Cash App's $ tile, Venmo's blue wordmark, PayPal's
- * PP monogram and the Bitcoin wordmark checkout uses for its crypto option.
- * Bank transfer and wire are routes rather than brands, so they are set as
- * text. No card-network marks: checkout takes no cards.
+ * unmodified: Zelle's tile, Cash App's $ tile, Venmo's blue wordmark and
+ * PayPal's PP monogram. Bank transfer and wire are routes rather than brands,
+ * so they are set as text. No card-network marks: checkout takes no cards.
  */
 type PaymentBadge =
   | { text: string; srPrefix?: string }
@@ -130,11 +134,6 @@ const PAYMENT_ROW: { key: string; label: string; badge: PaymentBadge }[] = [
     label: method.label,
     badge: PAYMENT_BADGES[method.id] ?? { text: method.label },
   })),
-  {
-    key: "crypto",
-    label: "Bitcoin and other cryptocurrency",
-    badge: { src: "/trust/bitcoin.svg", width: 300, height: 63, className: "h-4 w-auto" },
-  },
 ];
 
 const focusRing =

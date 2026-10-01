@@ -105,7 +105,7 @@ export async function analyzeCustomerBehavior(): Promise<CustomerBehaviorReport>
       cartAbandonmentProbability: Math.min(99, cartAbandonment),
       purchaseLikelihood: Math.max(10, Math.round(purchaseLikelihood * 0.55)),
       topPages,
-      insight: "Retarget with urgency offers and crypto checkout reassurance.",
+      insight: "Retarget with urgency offers and a reminder of the payment options available.",
     },
     {
       segment: "Checkout starters",

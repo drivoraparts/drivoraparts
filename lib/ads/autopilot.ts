@@ -72,7 +72,7 @@ function buildMetaAd(
     productId: product.id,
     platform: "meta",
     hook,
-    adCopy: `${hook}. OEM-grade ${product.category} component for serious builds. ${metrics.views} recent views, ${metrics.cartAdds} cart adds. Secure checkout with crypto support. Starting at $${product.price.toLocaleString()}.`,
+    adCopy: `${hook}. OEM-grade ${product.category} component for serious builds. ${metrics.views} recent views, ${metrics.cartAdds} cart adds. Multiple payment options available. Starting at $${product.price.toLocaleString()}.`,
     script: `Lead with proof: ${product.reviewCount}+ reviews at ${product.rating}★. Highlight fast fulfillment from ${product.location}. Close with limited inventory urgency.`,
     cta: "Buy Now",
     targeting: buildTargeting(product, metrics.cartRate),
