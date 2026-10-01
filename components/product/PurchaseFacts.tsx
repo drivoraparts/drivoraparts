@@ -51,7 +51,11 @@ export default function PurchaseFacts({
   coreCharge,
 }: PurchaseFactsProps) {
   const shipment = shipmentType(freightNotes);
-  const payment = listWithOr([...DIRECT_PAYMENT_METHODS, "cryptocurrency (NOWPayments)"]);
+  // Cryptocurrency is listed last and without its provider's name: it is one
+  // more option at checkout, and a product page has no reason to say who
+  // processes it. It stays in the list because a customer reading "how can I
+  // pay" is owed the whole answer.
+  const payment = listWithOr([...DIRECT_PAYMENT_METHODS, "cryptocurrency"]);
 
   return (
     <dl className="divide-y divide-neutral-200 border-y border-neutral-200">

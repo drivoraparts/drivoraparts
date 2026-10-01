@@ -135,7 +135,6 @@ export const SITE_KEYWORDS = [
   "lift kits",
   "bull bars",
   "snorkels",
-  "crypto checkout auto parts",
   "worldwide shipping car parts",
   "DrivoraParts",
 ];

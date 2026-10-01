@@ -23,16 +23,18 @@ type FaqItem = {
 const FAQS: FaqItem[] = [
   {
     question: "How do I pay for an order?",
-    // Said checkout was crypto-only. It lists the direct methods first, from
+    // Said checkout was crypto-only. It lists the manual methods first, from
     // lib/payments/manual-methods.ts, which is where this answer reads them.
+    // Cryptocurrency gets one plain sentence of its own: it is available, it is
+    // paid through NOWPayments, and it is not a manual payment, so the sentence
+    // about instructions and shipping below is scoped to manual payments.
     answer: (
       <>
-        At checkout you choose a manual payment method — {listWithOr(DIRECT_PAYMENT_METHODS)}{" "}
-        — or pay in cryptocurrency (Bitcoin, Ethereum, USDT and 300+ other
-        coins) through NOWPayments. For a manual payment, your order is
-        reviewed and the payment details are sent to you, with shipping,
-        before you pay; the order ships once the payment is received and
-        verified.{" "}
+        At checkout you choose a manual payment method — {listWithOr(DIRECT_PAYMENT_METHODS)}.{" "}
+        Cryptocurrency is also available as an additional option, paid through
+        NOWPayments. For a manual payment, your order is reviewed and the
+        payment details are sent to you, with shipping, before you pay; the
+        order ships once the payment is received and verified.{" "}
         <Link href="/policies/manual-payment" className="text-accent hover:text-accent-hover">
           How manual payment works
         </Link>

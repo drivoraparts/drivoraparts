@@ -14,13 +14,19 @@ import { getPhoto } from "@/lib/media/homepage-photo";
  * express option checkout does not offer until a rate is configured (see
  * lib/shipping/config.ts), "Worldwide" outran the Shipping Policy's "most
  * domestic and many international destinations", and "Secure & crypto"
- * skipped the six direct payment methods checkout lists first.
+ * skipped the six manual payment methods checkout lists first.
+ *
+ * "Payment" says "Multiple options" and names no method. It used to read
+ * "Direct or crypto", which put cryptocurrency in the headline of the homepage
+ * -- cryptocurrency is one additional option at checkout, not the business's
+ * payment identity. Naming any single provider here would make the same
+ * mistake, so it counts the choice instead of describing it.
  */
 const FACTS = [
   { label: "Delivery", value: "International" },
   { label: "Shipping", value: "Quoted per order" },
   { label: "Oversize freight", value: "LTL capable" },
-  { label: "Payment", value: "Direct or crypto" },
+  { label: "Payment", value: "Multiple options" },
 ];
 
 export default function GlobalReachBand() {

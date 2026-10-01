@@ -801,11 +801,30 @@ export default function CheckoutPage() {
                     : "Required. Choose how you want to pay — payment details for your selected method will appear below."}
                 </p>
 
-                {/* Shipping is quoted by hand once the order is in, so this is
-                    the whole of what checkout can honestly say about it. */}
-                <p className="mt-1.5 text-[11px] leading-relaxed text-neutral-500">
-                  Shipping will be calculated and sent with your payment details.
-                </p>
+                {/*
+                  Shipping is quoted by hand once the order is in, so this is
+                  the whole of what checkout can honestly say about it -- for
+                  the manual methods.
+
+                  It is NOT true of cryptocurrency, and is hidden when that is
+                  selected. A crypto order is created with shipping at 0 (the
+                  checkout route's "not yet calculated" marker), the NOWPayments
+                  invoice is for the order total, and the only code that records
+                  a real shipping charge -- the admin "send payment instructions"
+                  action -- refuses an order that is not a manual payment. So no
+                  payment details are sent to a crypto customer and nothing adds
+                  shipping to their order.
+
+                  Nothing replaces the sentence for crypto: what actually
+                  happens to shipping on those orders is a business decision, not
+                  something this wording can supply. Shown when no method is
+                  chosen yet, since the choice is made from the manual methods.
+                */}
+                {payChoice !== "crypto" ? (
+                  <p className="mt-1.5 text-[11px] leading-relaxed text-neutral-500">
+                    Shipping will be calculated and sent with your payment details.
+                  </p>
+                ) : null}
 
                 {selectedPayOption ? (
                   <div
