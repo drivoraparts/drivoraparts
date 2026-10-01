@@ -12,6 +12,7 @@ export default function PrivacyPolicyPage() {
   return (
     <Policy
       title="Privacy Policy"
+      lastUpdated="October 1, 2026"
       intro="DrivoraParts LLC (“Company”, “we”, “us”, or “our”) operates this website and the related e-commerce services (collectively, the “Services”). This Privacy Policy describes in detail how we collect, use, store, share, and protect your personal information when you visit our website, create an account, place an order, or otherwise interact with us. We are committed to handling your information responsibly and transparently. By accessing or using the Services, you acknowledge that you have read and understood this Privacy Policy and agree to the practices described below. If you do not agree with this Privacy Policy, please do not use the Services."
       sections={[
         {
@@ -30,7 +31,7 @@ export default function PrivacyPolicyPage() {
             "Identity and contact data: your name, email address, telephone number, billing address, and shipping address.",
             "Account data: login credentials and preferences if you create an account.",
             "Order and transaction data: products purchased, order totals, order history, and related communications.",
-            "Payment data: limited transaction information processed by our payment providers; we do not store complete card numbers.",
+            "Payment data: the payment method you selected, the amount, currency and status of your payment, any reference issued by the payment provider, the payment instructions and messages associated with your order, and any receipt you choose to upload as proof of payment.",
             "Device and technical data: IP address, browser type, device type, operating system, language settings, and referring URLs.",
             "Usage data: pages viewed, items added to the cart, search queries, and interactions with content on the Services.",
             "Cookie data: identifiers and preferences stored through cookies and similar technologies.",
@@ -60,8 +61,9 @@ export default function PrivacyPolicyPage() {
         {
           heading: "Payment Processing",
           paragraphs: [
-            "Payments made through the Services are handled by trusted third-party payment processors such as Stripe and PayPal. When you submit payment information at checkout, your data is transmitted directly to the relevant processor and handled under their own security standards and privacy policies.",
-            "DrivoraParts LLC does not store complete payment card numbers on its servers. We may retain limited transaction records, such as the last four digits of a card, the payment method type, and the transaction status, for order management, fraud prevention, and accounting purposes.",
+            "Most orders are paid through a manual process. After you place an order, we send you payment instructions for the payment method you selected, and you complete the payment yourself, using your own account with that payment provider or your own bank. Your payment credentials are entered with that provider or bank, not on our Services, and are handled under their terms and privacy policies.",
+            "Cryptocurrency payments are made through NOWPayments, a third-party payment service. When you choose cryptocurrency, we send you to a NOWPayments payment page, where the payment is handled under NOWPayments' own terms and privacy policy. We receive confirmation of the status of the payment.",
+            "We keep a record of each payment for order management, fraud prevention, and accounting purposes: the payment method, amount, currency, status, any provider reference and, for manual payments, the instructions we sent, related messages, and any receipts you upload. Receipts are kept in private storage that is not publicly accessible and is available to DrivoraParts administrators. We do not ask for payment card details at checkout, and we do not store payment card numbers in our order records.",
           ],
         },
         {
