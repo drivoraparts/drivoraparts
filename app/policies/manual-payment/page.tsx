@@ -90,12 +90,6 @@ export default function ManualPaymentPage() {
           paragraphs: [PAYPAL_DISCLOSURE.body],
         },
         {
-          heading: "Cryptocurrency",
-          paragraphs: [
-            "Cryptocurrency is paid through NOWPayments. A NOWPayments payment page opens when you place the order, so it does not follow the steps above. The checkout page explains how that works.",
-          ],
-        },
-        {
           heading: "Questions",
           paragraphs: [
             `If you have a question about paying for your order, contact us at ${COMPANY_SUPPORT_EMAIL} and include your order number.`,

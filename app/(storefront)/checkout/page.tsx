@@ -28,6 +28,7 @@ import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-
 import {
   MANUAL_PAYMENT_CHECKOUT_INTRO,
   MANUAL_PAYMENT_CHECKOUT_LINK,
+  MANUAL_PAYMENT_CHECKOUT_QUESTION,
   MANUAL_PAYMENT_POLICY_HREF,
   PAYPAL_DISCLOSURE,
   VENMO_DISCLOSURE,
@@ -695,7 +696,17 @@ export default function CheckoutPage() {
                   <p className="mt-1 text-xs leading-relaxed text-neutral-600">
                     {MANUAL_PAYMENT_CHECKOUT_INTRO}
                   </p>
-                  <p className="mt-1.5 text-xs">
+                  {/*
+                    The question is plain text; only "Learn more →" is the link.
+
+                    A bare "Learn more" tells a screen-reader user nothing about
+                    where it goes, so its accessible name carries the rest:
+                    "Learn more about why we use manual payment (opens in a new
+                    tab)". That name still starts with the visible label, which
+                    is what keeps it consistent with what a sighted user sees.
+                  */}
+                  <p className="mt-1.5 text-xs text-neutral-600">
+                    {MANUAL_PAYMENT_CHECKOUT_QUESTION}{" "}
                     <Link
                       href={MANUAL_PAYMENT_POLICY_HREF}
                       prefetch={false}
@@ -705,7 +716,10 @@ export default function CheckoutPage() {
                     >
                       {MANUAL_PAYMENT_CHECKOUT_LINK}
                       <span aria-hidden="true"> →</span>
-                      <span className="sr-only"> (opens in a new tab)</span>
+                      <span className="sr-only">
+                        {" "}
+                        about why we use manual payment (opens in a new tab)
+                      </span>
                     </Link>
                   </p>
                 </div>
@@ -940,12 +954,13 @@ export default function CheckoutPage() {
                             PayPal and Venmo, each only for itself, and before
                             the order is placed.
 
-                            A customer who learns afterwards, from the
-                            instructions, that the payment carries no purchase
-                            protection has already committed to the order. The
-                            panel below is the existing place a selected method
-                            explains itself, so the disclosure lives here rather
-                            than in a banner over checkout or on another page.
+                            One short line on how that method is paid, so the
+                            customer knows what to do when the instructions
+                            arrive: pick Friends & Family on PayPal, follow the
+                            instructions on Venmo. The panel below is the
+                            existing place a selected method explains itself, so
+                            the line lives here rather than in a banner over
+                            checkout or on another page.
 
                             Looked up by payChoice, so a method with no entry
                             shows nothing and neither notice can appear under
