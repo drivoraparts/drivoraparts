@@ -2,9 +2,9 @@
  * Customer-facing copy for the manual payment process, in one place.
  *
  * Checkout and /policies/manual-payment both say the same two things -- how the
- * process works, and what PayPal does and does not cover -- and the second one
- * is a disclosure a customer relies on before they place an order. Written
- * twice, the two would drift. Written here, an edit to the wording changes both.
+ * process works, and how a PayPal payment is made -- and the second is
+ * something a customer needs before they place an order. Written twice, the two
+ * would drift. Written here, an edit to the wording changes both.
  *
  * Only the process the code actually implements is described: an order is
  * placed, a person reviews it, payment instructions (with shipping) are sent,
@@ -20,52 +20,60 @@ export const MANUAL_PAYMENT_POLICY_HREF = "/policies/manual-payment";
 /**
  * The line under the "Manual Payment" heading at checkout.
  *
- * The second sentence is there because the selector also lists cryptocurrency,
- * which is NOT a manual payment: it creates a NOWPayments invoice and sends the
- * customer straight to it, with no review step in between. Saying "payment
- * instructions are provided after your order is reviewed" about the whole list
- * would be false for that one option.
+ * It is scoped to "manual payment methods" rather than to the whole selector,
+ * and that scoping is what keeps it true. The selector also lists
+ * cryptocurrency, which is NOT a manual payment: it creates a NOWPayments
+ * invoice and sends the customer straight to it, with no review step in
+ * between. An unscoped "payment instructions are provided after your order is
+ * reviewed" would be false for that one option.
+ *
+ * This line used to say so out loud ("Cryptocurrency is the exception…"). The
+ * owner took it out because putting cryptocurrency in front of every customer
+ * made some of them uneasy. The scoping makes the sentence true without it:
+ * the select's own "Manual Payment" and "Cryptocurrency" groups already tell
+ * the two apart, and choosing cryptocurrency shows its own panel.
  */
 export const MANUAL_PAYMENT_CHECKOUT_INTRO =
-  "Choose your preferred payment method. Payment instructions are provided after your order is reviewed. Cryptocurrency is the exception: it opens a NOWPayments invoice straight away.";
-
-export const MANUAL_PAYMENT_CHECKOUT_LINK = "Why do we use manual payment? Learn more";
+  "Choose your preferred payment method. For manual payment methods, payment instructions are provided after your order is reviewed.";
 
 /**
- * Shown the moment PayPal is selected, so the customer has it before they
- * submit rather than after they receive instructions.
+ * The question and the link are two pieces on purpose. Only "Learn more" is
+ * clickable; the question is plain text, so the target is the one phrase that
+ * says what clicking does.
+ */
+export const MANUAL_PAYMENT_CHECKOUT_QUESTION = "Why do we use manual payment?";
+export const MANUAL_PAYMENT_CHECKOUT_LINK = "Learn more";
+
+/**
+ * Shown the moment PayPal is selected, so the customer knows how to complete
+ * the payment before they submit, rather than after they receive instructions.
  *
- * Worded as "may be requested" on purpose. Which PayPal payment type an order
- * is asked to use is decided when an admin writes the instructions, not by this
- * code, so the disclosure cannot truthfully say it always is, or never is,
- * Friends & Family. The protection statement is limited to what PayPal itself
- * distinguishes: eligible Goods & Services payments carry PayPal's purchase
- * protection, and Friends & Family payments do not. Nothing about fees, limits
- * or PayPal's current terms is asserted.
+ * The owner has confirmed the route: PayPal orders are paid through Friends &
+ * Family, so this says so plainly and tells the customer which option to pick.
+ * It used to be hedged ("may be requested") and carried a paragraph on purchase
+ * protection and dispute coverage; the owner replaced that with this, because
+ * the longer text read as a warning against a legitimate payment method.
+ *
+ * Shared with /policies/manual-payment, which shows the same body.
  */
 export const PAYPAL_DISCLOSURE = {
   lead: "Before you choose PayPal",
   body:
-    "Your payment may be requested through PayPal Friends & Family. Friends & Family payments do not include the purchase protection and dispute coverage PayPal applies to eligible Goods & Services transactions. Choose PayPal only if you understand and accept this; otherwise, select a different payment method.",
+    "PayPal payments are handled through Friends & Family. Please make sure you select the Friends & Family option when completing your payment.",
 } as const;
 
 /**
  * Shown the moment Venmo is selected -- the same idea as the PayPal notice,
  * kept deliberately separate from it.
  *
- * Two things this does not do. It does not say "Friends & Family": that is
- * PayPal's name for its personal payments, and nothing here establishes that
- * Venmo uses it, so the wording says "personal payment" and stops there. And it
- * does not describe Venmo's own protection programme or say it works like
- * PayPal's -- only that a personal payment MAY lack the coverage available on
- * eligible purchase transactions, which is the hedge the process can support.
- *
- * "May", not "will": as with PayPal, how an order is asked to be paid is decided
- * when an admin writes the instructions. If the business confirms every Venmo
- * payment is requested as a personal payment, "may" should become explicit.
+ * It says "personal payment" and not "Friends & Family". That is PayPal's name
+ * for its personal payments, and nothing here establishes that Venmo uses it.
+ * The owner has confirmed Venmo orders are handled as a personal payment, so
+ * the wording is explicit rather than "may", and points the customer at the
+ * instructions DrivoraParts sends, which is where the details are.
  */
 export const VENMO_DISCLOSURE = {
   lead: "Before you choose Venmo",
   body:
-    "Your payment may be requested through Venmo as a personal payment. Personal payments may not include the same purchase protection or dispute coverage available for eligible purchase transactions. Choose Venmo only if you understand and accept this; otherwise, select a different payment method.",
+    "Venmo payments are handled as a personal payment. Please follow the payment instructions provided by DrivoraParts when completing your payment.",
 } as const;
