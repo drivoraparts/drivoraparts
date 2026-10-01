@@ -9,7 +9,16 @@
  * later verifies the incoming payment by hand.
  *
  * To add a method, add an entry. To hide one without deleting history, set
- * enabled:false. Order here is the order shown in checkout.
+ * enabled:false. Order here is the order shown in checkout, the footer, the
+ * FAQ and the product page. Nothing reads a method by its position: the
+ * checkout API, the order record, the admin screens and the emails all look a
+ * method up by id, so reordering is presentation only.
+ *
+ * The intended order is PayPal, Bank Transfer, Venmo, Cash App, Zelle,
+ * International Wire. Cryptocurrency is not in this list and is always last:
+ * checkout appends it as its own group, because it opens a NOWPayments invoice
+ * rather than waiting for instructions. The customer still has to choose a
+ * method -- nothing is preselected.
  */
 export type ManualMethodId =
   | "bank_transfer"
@@ -39,6 +48,20 @@ export type ManualMethod = {
 
 export const MANUAL_METHODS: ManualMethod[] = [
   {
+    id: "paypal",
+    label: "PayPal",
+    // Manual like the rest: the customer sends from their own PayPal account
+    // and we verify it by hand. This is NOT a PayPal processor integration,
+    // and nothing here talks to PayPal's API.
+    blurb: "Send from your PayPal account — recipient sent after you order",
+    // Legacy field. Nothing renders it any more: checkout draws marks through
+    // components/checkout/PaymentMethodIcon.tsx and the footer through
+    // METHOD_VISUALS. Kept only so every entry has the same shape.
+    icon: "💳",
+    region: "Worldwide",
+    enabled: true,
+  },
+  {
     id: "bank_transfer",
     label: "Bank Transfer",
     blurb: "Choose your transfer route — instructions sent after you order",
@@ -48,18 +71,10 @@ export const MANUAL_METHODS: ManualMethod[] = [
     requiresRoute: true,
   },
   {
-    id: "wire",
-    label: "International Wire (SWIFT)",
-    blurb: "Cross-border wire — SWIFT/BIC details sent after you order",
-    icon: "🌎",
-    region: "International",
-    enabled: true,
-  },
-  {
-    id: "zelle",
-    label: "Zelle",
-    blurb: "U.S. bank-to-bank — recipient sent after you order",
-    icon: "🇺🇸",
+    id: "venmo",
+    label: "Venmo",
+    blurb: "U.S. — handle sent after you order",
+    icon: "💜",
     region: "United States",
     enabled: true,
   },
@@ -72,25 +87,19 @@ export const MANUAL_METHODS: ManualMethod[] = [
     enabled: true,
   },
   {
-    id: "venmo",
-    label: "Venmo",
-    blurb: "U.S. — handle sent after you order",
-    icon: "💜",
+    id: "zelle",
+    label: "Zelle",
+    blurb: "U.S. bank-to-bank — recipient sent after you order",
+    icon: "🇺🇸",
     region: "United States",
     enabled: true,
   },
   {
-    id: "paypal",
-    label: "PayPal",
-    // Manual like the rest: the customer sends from their own PayPal account
-    // and we verify it by hand. This is NOT a PayPal processor integration,
-    // and nothing here talks to PayPal's API.
-    blurb: "Send from your PayPal account — recipient sent after you order",
-    // Legacy field. Nothing renders it any more: checkout draws marks through
-    // components/checkout/PaymentMethodIcon.tsx and the footer through
-    // METHOD_VISUALS. Kept only so every entry has the same shape.
-    icon: "💳",
-    region: "Worldwide",
+    id: "wire",
+    label: "International Wire (SWIFT)",
+    blurb: "Cross-border wire — SWIFT/BIC details sent after you order",
+    icon: "🌎",
+    region: "International",
     enabled: true,
   },
 ];

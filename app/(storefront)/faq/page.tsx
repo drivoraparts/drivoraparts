@@ -27,11 +27,16 @@ const FAQS: FaqItem[] = [
     // lib/payments/manual-methods.ts, which is where this answer reads them.
     answer: (
       <>
-        At checkout you choose a direct payment method — {listWithOr(DIRECT_PAYMENT_METHODS)}{" "}
+        At checkout you choose a manual payment method — {listWithOr(DIRECT_PAYMENT_METHODS)}{" "}
         — or pay in cryptocurrency (Bitcoin, Ethereum, USDT and 300+ other
-        coins) through NOWPayments. For a direct payment, the payment details
-        are sent to you after you order, and the order ships once the payment
-        is received and verified.
+        coins) through NOWPayments. For a manual payment, your order is
+        reviewed and the payment details are sent to you, with shipping,
+        before you pay; the order ships once the payment is received and
+        verified.{" "}
+        <Link href="/policies/manual-payment" className="text-accent hover:text-accent-hover">
+          How manual payment works
+        </Link>
+        .
       </>
     ),
   },

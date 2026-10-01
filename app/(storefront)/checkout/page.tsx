@@ -25,6 +25,13 @@ import {
 } from "@/lib/payments/manual-methods";
 import PaymentMethodIcon from "@/components/checkout/PaymentMethodIcon";
 import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-tracking";
+import {
+  MANUAL_PAYMENT_CHECKOUT_INTRO,
+  MANUAL_PAYMENT_CHECKOUT_LINK,
+  MANUAL_PAYMENT_POLICY_HREF,
+  PAYPAL_DISCLOSURE,
+  VENMO_DISCLOSURE,
+} from "@/lib/content/manual-payment";
 
 const glassCard =
   "box-border w-full max-w-full rounded-lg border border-neutral-200 bg-white p-4 shadow-sm sm:p-6";
@@ -664,11 +671,49 @@ export default function CheckoutPage() {
                   same provider/manualMethod pair checkout has always posted,
                   so nothing downstream changes.
                 */}
-                <p className="mb-2 text-sm font-semibold text-neutral-800">
-                  Pay Directly
-                </p>
+                {/*
+                  "Manual Payment", not "Pay Directly".
 
-                <label htmlFor="payment-method" className="sr-only">
+                  "Pay Directly" said nothing about what the customer is
+                  actually about to do, and read as if money would move at this
+                  step. What happens is an order, a review, instructions, a
+                  payment and a verification -- see /policies/manual-payment --
+                  so the heading names the process and the line under it says
+                  what comes next.
+
+                  The explanation is a sentence and a link, not a panel: the
+                  methods below are what the customer came here to choose, and
+                  the reasoning is one click away for anyone who wants it. The
+                  link opens in a new tab so a half-completed form is not lost
+                  to a navigation. The wording is shared with the policy page
+                  (lib/content/manual-payment.ts) so the two cannot disagree.
+                */}
+                <div className="mb-4">
+                  <h3 className="text-sm font-semibold text-neutral-800">
+                    Manual Payment
+                  </h3>
+                  <p className="mt-1 text-xs leading-relaxed text-neutral-600">
+                    {MANUAL_PAYMENT_CHECKOUT_INTRO}
+                  </p>
+                  <p className="mt-1.5 text-xs">
+                    <Link
+                      href={MANUAL_PAYMENT_POLICY_HREF}
+                      prefetch={false}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent underline underline-offset-2 hover:text-accent-hover"
+                    >
+                      {MANUAL_PAYMENT_CHECKOUT_LINK}
+                      <span aria-hidden="true"> →</span>
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </Link>
+                  </p>
+                </div>
+
+                <label
+                  htmlFor="payment-method"
+                  className="mb-1.5 block text-sm font-medium text-neutral-900"
+                >
                   Payment method
                 </label>
                 <select
@@ -677,7 +722,11 @@ export default function CheckoutPage() {
                   required
                   aria-required="true"
                   aria-invalid={payError || undefined}
-                  aria-describedby="payment-method-hint"
+                  aria-describedby={
+                    selectedPayOption
+                      ? "payment-method-hint payment-method-detail"
+                      : "payment-method-hint"
+                  }
                   value={payChoice ?? ""}
                   onChange={(e) => {
                     const value = e.target.value;
@@ -698,11 +747,32 @@ export default function CheckoutPage() {
                   }`}
                 >
                   <option value="">Choose a payment method</option>
-                  {PAY_OPTIONS.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
+                  {/*
+                    Two groups, because the two really are different: the
+                    manual methods wait for an admin to send instructions,
+                    cryptocurrency opens an invoice immediately. Grouping keeps
+                    the heading above honest without a second control, and a
+                    native optgroup is announced by screen readers and drawn by
+                    the platform picker on mobile.
+                  */}
+                  <optgroup label="Manual Payment">
+                    {PAY_OPTIONS.filter((option) => option.value !== "crypto").map(
+                      (option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      )
+                    )}
+                  </optgroup>
+                  <optgroup label="Cryptocurrency">
+                    {PAY_OPTIONS.filter((option) => option.value === "crypto").map(
+                      (option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      )
+                    )}
+                  </optgroup>
                 </select>
 
                 <p
@@ -714,7 +784,7 @@ export default function CheckoutPage() {
                 >
                   {payError
                     ? "Please select a payment method to continue."
-                    : "Required. Choose how you want to pay — the details for that method appear below."}
+                    : "Required. Choose how you want to pay — payment details for your selected method will appear below."}
                 </p>
 
                 {/* Shipping is quoted by hand once the order is in, so this is
@@ -724,7 +794,10 @@ export default function CheckoutPage() {
                 </p>
 
                 {selectedPayOption ? (
-                  <div className="mt-3 overflow-hidden rounded-lg border border-accent ring-1 ring-accent">
+                  <div
+                    id="payment-method-detail"
+                    className="mt-3 overflow-hidden rounded-lg border border-accent ring-1 ring-accent"
+                  >
                     {/* The mark the rest of the site uses for this method. The
                         select itself can only show text, so the selected state
                         is restated here where it is unmistakable. */}
@@ -863,6 +936,40 @@ export default function CheckoutPage() {
                         </>
                       ) : (
                         <>
+                          {/*
+                            PayPal and Venmo, each only for itself, and before
+                            the order is placed.
+
+                            A customer who learns afterwards, from the
+                            instructions, that the payment carries no purchase
+                            protection has already committed to the order. The
+                            panel below is the existing place a selected method
+                            explains itself, so the disclosure lives here rather
+                            than in a banner over checkout or on another page.
+
+                            Looked up by payChoice, so a method with no entry
+                            shows nothing and neither notice can appear under
+                            another method. The text is wired into the select's
+                            aria-describedby (via #payment-method-detail) so it
+                            is read out when the method is chosen, not just
+                            drawn.
+                          */}
+                          {(() => {
+                            const notice =
+                              payChoice === "paypal"
+                                ? PAYPAL_DISCLOSURE
+                                : payChoice === "venmo"
+                                  ? VENMO_DISCLOSURE
+                                  : null;
+
+                            return notice ? (
+                              <div className="mb-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2.5 text-xs leading-relaxed text-amber-900">
+                                <p className="font-semibold">{notice.lead}</p>
+                                <p className="mt-1">{notice.body}</p>
+                              </div>
+                            ) : null;
+                          })()}
+
                           {/* Route names only: no account numbers, sort codes
                               or SWIFT/BIC appear here. */}
                           {methodRequiresRoute(payChoice) ? (

@@ -120,7 +120,7 @@ export default function PurchaseFacts({
       <FactRow label="Payment">
         <p>{payment}.</p>
         <p className="mt-0.5 text-muted">
-          Chosen at checkout. Direct payments are confirmed by DrivoraParts
+          Chosen at checkout. Manual payments are confirmed by DrivoraParts
           before the order ships.
         </p>
       </FactRow>
