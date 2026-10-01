@@ -1028,24 +1028,27 @@ export default function CheckoutPage() {
                           ) : null}
 
                           {/*
-                            What every direct method says is the same promise --
-                            we email the details, the order waits, nothing is
-                            charged -- because that is genuinely how all of them
-                            work; only Bank Transfer has a further question to
-                            ask.
+                            One paragraph for every manual method, because it
+                            is genuinely how all of them work: the order is
+                            placed, it is reviewed, the details are emailed, the
+                            order waits as Awaiting Payment, and it ships only
+                            once payment is received and verified. Only Bank
+                            Transfer has a further question to ask, above.
+
+                            Owner-supplied wording. "Awaiting Payment" keeps the
+                            bold it had, because it is the exact status label the
+                            customer will see on their order page.
                           */}
                           <p className="text-[11px] leading-relaxed text-neutral-600">
-                            Place your order now. DrivoraParts will email you
-                            the payment details for this method, and your
-                            order stays reserved as{" "}
+                            Place your order now and DrivoraParts will email
+                            your payment details after the order is reviewed.
+                            Your order will remain{" "}
                             <strong className="font-semibold text-neutral-800">
                               Awaiting Payment
                             </strong>{" "}
-                            until we confirm the funds.
-                          </p>
-                          <p className="mt-1.5 text-[11px] leading-relaxed text-neutral-500">
-                            You will not be charged automatically. Nothing
-                            ships until payment is verified.
+                            until payment is received and verified. Orders are
+                            shipped after payment has been received and
+                            verified.
                           </p>
                         </>
                       )}
