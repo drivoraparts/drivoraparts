@@ -48,3 +48,24 @@ export const PAYPAL_DISCLOSURE = {
   body:
     "Your payment may be requested through PayPal Friends & Family. Friends & Family payments do not include the purchase protection and dispute coverage PayPal applies to eligible Goods & Services transactions. Choose PayPal only if you understand and accept this; otherwise, select a different payment method.",
 } as const;
+
+/**
+ * Shown the moment Venmo is selected -- the same idea as the PayPal notice,
+ * kept deliberately separate from it.
+ *
+ * Two things this does not do. It does not say "Friends & Family": that is
+ * PayPal's name for its personal payments, and nothing here establishes that
+ * Venmo uses it, so the wording says "personal payment" and stops there. And it
+ * does not describe Venmo's own protection programme or say it works like
+ * PayPal's -- only that a personal payment MAY lack the coverage available on
+ * eligible purchase transactions, which is the hedge the process can support.
+ *
+ * "May", not "will": as with PayPal, how an order is asked to be paid is decided
+ * when an admin writes the instructions. If the business confirms every Venmo
+ * payment is requested as a personal payment, "may" should become explicit.
+ */
+export const VENMO_DISCLOSURE = {
+  lead: "Before you choose Venmo",
+  body:
+    "Your payment may be requested through Venmo as a personal payment. Personal payments may not include the same purchase protection or dispute coverage available for eligible purchase transactions. Choose Venmo only if you understand and accept this; otherwise, select a different payment method.",
+} as const;

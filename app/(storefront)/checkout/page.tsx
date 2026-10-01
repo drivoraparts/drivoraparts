@@ -30,6 +30,7 @@ import {
   MANUAL_PAYMENT_CHECKOUT_LINK,
   MANUAL_PAYMENT_POLICY_HREF,
   PAYPAL_DISCLOSURE,
+  VENMO_DISCLOSURE,
 } from "@/lib/content/manual-payment";
 
 const glassCard =
@@ -936,7 +937,8 @@ export default function CheckoutPage() {
                       ) : (
                         <>
                           {/*
-                            PayPal only, and before the order is placed.
+                            PayPal and Venmo, each only for itself, and before
+                            the order is placed.
 
                             A customer who learns afterwards, from the
                             instructions, that the payment carries no purchase
@@ -945,17 +947,28 @@ export default function CheckoutPage() {
                             explains itself, so the disclosure lives here rather
                             than in a banner over checkout or on another page.
 
-                            Gated on payChoice so no other method can show it,
-                            and wired into the select's aria-describedby (via
-                            #payment-method-detail) so it is read out when
-                            PayPal is chosen, not just drawn.
+                            Looked up by payChoice, so a method with no entry
+                            shows nothing and neither notice can appear under
+                            another method. The text is wired into the select's
+                            aria-describedby (via #payment-method-detail) so it
+                            is read out when the method is chosen, not just
+                            drawn.
                           */}
-                          {payChoice === "paypal" ? (
-                            <div className="mb-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2.5 text-xs leading-relaxed text-amber-900">
-                              <p className="font-semibold">{PAYPAL_DISCLOSURE.lead}</p>
-                              <p className="mt-1">{PAYPAL_DISCLOSURE.body}</p>
-                            </div>
-                          ) : null}
+                          {(() => {
+                            const notice =
+                              payChoice === "paypal"
+                                ? PAYPAL_DISCLOSURE
+                                : payChoice === "venmo"
+                                  ? VENMO_DISCLOSURE
+                                  : null;
+
+                            return notice ? (
+                              <div className="mb-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2.5 text-xs leading-relaxed text-amber-900">
+                                <p className="font-semibold">{notice.lead}</p>
+                                <p className="mt-1">{notice.body}</p>
+                              </div>
+                            ) : null;
+                          })()}
 
                           {/* Route names only: no account numbers, sort codes
                               or SWIFT/BIC appear here. */}
