@@ -19,6 +19,7 @@ export const POLICY_PATHS = [
   "/policies/cookie-policy",
   "/policies/shipping-policy",
   "/policies/refund-policy",
+  "/policies/manual-payment",
   "/warranty",
   "/policies/terms-of-service",
   "/policies/terms-of-sale",

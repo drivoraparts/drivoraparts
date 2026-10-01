@@ -17,6 +17,11 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
     description:
       "DrivoraParts shipping times, freight handling for truck beds and oversized parts, and international delivery.",
   },
+  "/policies/manual-payment": {
+    title: "Manual Payment",
+    description:
+      "How manual payment works at DrivoraParts: place your order, order review, payment instructions, payment and verification before fulfillment.",
+  },
   "/policies/refund-policy": {
     title: "Returns & Refund Policy",
     description:

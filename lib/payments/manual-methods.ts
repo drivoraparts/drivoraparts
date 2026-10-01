@@ -9,7 +9,10 @@
  * later verifies the incoming payment by hand.
  *
  * To add a method, add an entry. To hide one without deleting history, set
- * enabled:false. Order here is the order shown in checkout.
+ * enabled:false. Order here is the order shown in checkout, the footer, the
+ * FAQ and the product page, and nothing reads a method by its position.
+ * PayPal is listed first; that is presentation only, and the customer still
+ * has to choose a method -- nothing is preselected.
  */
 export type ManualMethodId =
   | "bank_transfer"
@@ -38,6 +41,20 @@ export type ManualMethod = {
 };
 
 export const MANUAL_METHODS: ManualMethod[] = [
+  {
+    id: "paypal",
+    label: "PayPal",
+    // Manual like the rest: the customer sends from their own PayPal account
+    // and we verify it by hand. This is NOT a PayPal processor integration,
+    // and nothing here talks to PayPal's API.
+    blurb: "Send from your PayPal account — recipient sent after you order",
+    // Legacy field. Nothing renders it any more: checkout draws marks through
+    // components/checkout/PaymentMethodIcon.tsx and the footer through
+    // METHOD_VISUALS. Kept only so every entry has the same shape.
+    icon: "💳",
+    region: "Worldwide",
+    enabled: true,
+  },
   {
     id: "bank_transfer",
     label: "Bank Transfer",
@@ -77,20 +94,6 @@ export const MANUAL_METHODS: ManualMethod[] = [
     blurb: "U.S. — handle sent after you order",
     icon: "💜",
     region: "United States",
-    enabled: true,
-  },
-  {
-    id: "paypal",
-    label: "PayPal",
-    // Manual like the rest: the customer sends from their own PayPal account
-    // and we verify it by hand. This is NOT a PayPal processor integration,
-    // and nothing here talks to PayPal's API.
-    blurb: "Send from your PayPal account — recipient sent after you order",
-    // Legacy field. Nothing renders it any more: checkout draws marks through
-    // components/checkout/PaymentMethodIcon.tsx and the footer through
-    // METHOD_VISUALS. Kept only so every entry has the same shape.
-    icon: "💳",
-    region: "Worldwide",
     enabled: true,
   },
 ];
