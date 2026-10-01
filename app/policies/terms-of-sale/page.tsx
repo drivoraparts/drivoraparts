@@ -9,6 +9,7 @@ export default function TermsOfSalePage() {
   return (
     <Policy
       title="Terms of Sale"
+      lastUpdated="October 1, 2026"
       intro="These Terms of Sale govern all purchases of products made through the website and services operated by DrivoraParts LLC (“Company”, “we”, “us”). They describe how orders are placed and accepted, how prices and payments are handled, and the rights and responsibilities of both parties in a sale. By placing an order, you agree to these Terms of Sale in addition to our Terms of Service, Shipping Policy, and Returns & Refund Policy."
       sections={[
         {
@@ -38,7 +39,8 @@ export default function TermsOfSalePage() {
         {
           heading: "Payment",
           paragraphs: [
-            "Payment must be received and verified in full before an order is processed and shipped. We use trusted third-party payment processors such as Stripe and PayPal to handle transactions securely. We do not store complete payment card details on our servers. You represent that you are authorized to use the payment method you provide.",
+            "Payment must be received and verified in full before an order is processed and shipped. When you place an order, we review it and send you payment instructions for the payment method you selected, together with the final amount due, including shipping. You then pay using those instructions, and we verify the payment before your order moves into fulfillment. Cryptocurrency payments are made instead through a payment page operated by NOWPayments, which opens when you place the order.",
+            "Each payment method is operated by its own provider and is subject to that provider's terms and conditions, which may differ between methods, including in the protections they offer. We do not ask for payment card details at checkout. You represent that you are authorized to use the payment method you provide.",
           ],
         },
         {
