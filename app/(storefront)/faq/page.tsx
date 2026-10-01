@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
+import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
 import {
   DIRECT_PAYMENT_METHODS,
   ORDER_PROCESSING,
@@ -129,9 +130,9 @@ const FAQS: FaqItem[] = [
     ),
   },
   {
-    question: "Is DrivoraParts a real, registered business?",
+    question: "Who operates DrivoraParts?",
     answer:
-      "Yes — DrivoraParts LLC is a US-registered company with headquarters in Torrance, California. Full company and policy details are available in our footer, including Terms of Sale, Privacy Policy, and Refund Policy.",
+      `DrivoraParts is operated by ${COMPANY_LEGAL_NAME}, a California limited liability company. Our Terms of Sale, Privacy Policy, and Refund Policy are linked in the footer of every page.`,
   },
   {
     question: "I have a question that isn't answered here — what do I do?",

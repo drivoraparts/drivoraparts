@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact/ContactForm";
 import CompanyAddress from "@/components/content/CompanyAddress";
-import { CALIFORNIA_FULFILLMENT } from "@/lib/content/company";
+import {
+  CALIFORNIA_FULFILLMENT,
+  COMPANY_LEGAL_NAME,
+  COMPANY_SUPPORT_EMAIL,
+} from "@/lib/content/company";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -24,24 +28,34 @@ export default function ContactPage() {
       <div className="mt-8 space-y-6 text-neutral-600">
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
           <h2 className="mb-3 text-xl font-semibold text-neutral-900">
-            U.S. Corporate Headquarters
+            Operated by
           </h2>
-          <CompanyAddress variant="us-hq" />
+          <CompanyAddress variant="operator" />
+          <p className="mt-3 text-sm">
+            DrivoraParts is operated by {COMPANY_LEGAL_NAME}. Questions go to
+            support at{" "}
+            <a
+              href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
+              className="font-semibold text-accent underline-offset-2 hover:text-accent-hover hover:underline"
+            >
+              {COMPANY_SUPPORT_EMAIL}
+            </a>
+            .
+          </p>
         </div>
 
         {/*
-          The registered office above is who the customer contracts with; this is
-          where their part is actually picked and packed. Both are stated because a
-          customer checking whether there is a real operation behind the site is
-          asking about this one, and the Shipping Policy names it too.
+          Where parts are sent back to, and where the Shipping Policy says
+          orders go out from. It is a fulfillment and returns address, not an
+          office -- nothing establishes it as one -- so it is not headed as a
+          headquarters or a warehouse.
 
-          This is also the return address the refund policy gives, which is why the
-          note below asks for authorization first: an unannounced parcel arriving
-          here cannot be matched to an order.
+          The note below asks for authorization first: an unannounced parcel
+          arriving here cannot be matched to an order.
         */}
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
           <h2 className="mb-3 text-xl font-semibold text-neutral-900">
-            California Fulfillment Center
+            Fulfillment &amp; Returns Address
           </h2>
           <address className="space-y-0.5 text-sm not-italic leading-relaxed">
             <p>{CALIFORNIA_FULFILLMENT.street}</p>

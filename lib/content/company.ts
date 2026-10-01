@@ -1,34 +1,57 @@
-export const COMPANY_LEGAL_NAME = "DrivoraParts LLC";
+/**
+ * The legal entity that operates DrivoraParts, and the ONE place its name is
+ * written. Everything that names the entity -- the footer, every policy page,
+ * the product page's Seller row, the structured data -- reads this, so a change
+ * of name is one edit and cannot leave a stale one behind.
+ *
+ * Source: the California Articles of Organization filed in July 2024, which
+ * name the company BROOKSTONEUS LLC (filings are in capitals). No registration
+ * or tax number from those documents is stored in this repository, and none
+ * should be. It was previously "DrivoraParts LLC", for
+ * which no registration document exists; "DrivoraParts" is the store's brand,
+ * not a legal entity, and is COMPANY_DISPLAY_NAME below.
+ *
+ * What that document does NOT establish, and so is not claimed anywhere: that
+ * this entity is the merchant of record, holds the payment accounts, or has a
+ * trade-name registration for "DrivoraParts".
+ */
+export const COMPANY_LEGAL_NAME = "BrookstoneUS LLC";
 export const COMPANY_DISPLAY_NAME = "DrivoraParts";
 export const COMPANY_SUPPORT_EMAIL = "support@drivoraparts.com";
 
+/** Verified by the Articles of Organization above: a California LLC. */
+export const COMPANY_STATE_OF_FORMATION = "California";
+
+export type CompanyAddress = {
+  street: string;
+  city: string;
+  state: string;
+  stateName: string;
+  postalCode: string;
+  country: string;
+};
+
 /**
- * The registered office -- the entity a customer contracts with.
+ * The business address customer-facing pages print -- or null, which is what
+ * it is today, and every page that would show one simply omits it.
  *
- * This is the company's legal identity, not a place parts move through. It is
- * what Contact, Terms of Sale, the privacy and refund policies and the
- * Organization JSON-LD all state, and they should keep stating it: mail and
- * legal notice go here. Where an order physically ships from is a different
- * question with a different answer -- see CALIFORNIA_FULFILLMENT.
+ * It is null on purpose. The site used to publish "19800 S. Vermont Ave,
+ * Suite 240, Torrance" as the registered office and headquarters; no document
+ * supports that, and the address the Articles of Organization give is a
+ * different one (which may be a private mailbox). Which address, if any, is
+ * published is the owner's decision. When it is made, set it here and the
+ * Privacy Policy, the Contact
+ * page, the policy-page header and the structured data all pick it up.
  */
-export const US_HEADQUARTERS = {
-  companyName: COMPANY_LEGAL_NAME,
-  street: "19800 S. Vermont Ave, Suite 240",
-  city: "Torrance",
-  state: "CA",
-  stateName: "California",
-  postalCode: "90502",
-  country: "United States",
-} as const;
+export const COMPANY_ADDRESS: CompanyAddress | null = null;
 
 /**
  * The California fulfillment address -- where orders are actually handled.
  *
- * Kept separate from US_HEADQUARTERS on purpose. Collapsing the two would
- * either move the registered office, which is wrong, or imply parts are picked
- * and packed out of a corporate suite, which is also wrong. A customer asking
- * "where does my part ship from" and a customer asking "who am I buying from"
- * are asking different things.
+ * It is a fulfillment and returns address, nothing more: it is not labelled a
+ * headquarters or an office, because nothing establishes that it is one. A
+ * customer asking "where does my part ship from" and a customer asking "who am
+ * I buying from" are asking different things.
  */
 export const CALIFORNIA_FULFILLMENT = {
   street: "1401 Monterey Pass Rd",
@@ -58,23 +81,36 @@ export const REGIONAL_FULFILLMENT_SUMMARY =
 
 export const COMPANY_MOTTO = "Engineered • Fitment • Performance";
 
-/** Short lines for the about page. */
+/**
+ * Short lines for the about page. There is no "Corporate HQ" line: nothing
+ * documents a headquarters, so none is claimed.
+ */
 export const COMPANY_LOCATION_SUMMARY = {
   brand: COMPANY_DISPLAY_NAME,
-  corporateHq: "Corporate HQ: Torrance, California, USA",
+  operatedBy: `Operated by ${COMPANY_LEGAL_NAME}`,
   distribution: REGIONAL_FULFILLMENT_SUMMARY,
   motto: COMPANY_MOTTO,
 } as const;
 
-export function formatUsHeadquarters(multiline = true): string {
-  const lines = [
-    US_HEADQUARTERS.companyName,
-    US_HEADQUARTERS.street,
-    `${US_HEADQUARTERS.city}, ${US_HEADQUARTERS.state} ${US_HEADQUARTERS.postalCode}`,
-    US_HEADQUARTERS.country,
-  ];
-  return multiline ? lines.join("\n") : lines.join(", ");
-}
-
 /** @deprecated Use COMPANY_LEGAL_NAME — kept for existing imports. */
 export const COMPANY_NAME = COMPANY_LEGAL_NAME;
+
+/**
+ * The year the site's copyright notice starts from, and the one place that
+ * knows it.
+ *
+ * Two surfaces print a copyright line -- the site footer and the foot of every
+ * policy page -- and each used to build its own, from the current year alone.
+ * Both now call copyrightYears(), so the range cannot differ between them and
+ * rolls forward on its own: "2024–2026" this year, "2024–2027" next.
+ *
+ * The range is a property of the site's content, not of whichever legal entity
+ * is named beside it, which is why it lives here rather than with the entity
+ * name. The en dash is deliberate.
+ */
+export const COPYRIGHT_START_YEAR = 2024;
+
+export function copyrightYears(now: Date = new Date()): string {
+  const year = now.getFullYear();
+  return year > COPYRIGHT_START_YEAR ? `${COPYRIGHT_START_YEAR}–${year}` : String(COPYRIGHT_START_YEAR);
+}

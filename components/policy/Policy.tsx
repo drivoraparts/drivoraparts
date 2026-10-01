@@ -7,7 +7,12 @@
 ========================================================= */
 
 import type { ReactNode } from "react";
-import { COMPANY_LEGAL_NAME, COMPANY_SUPPORT_EMAIL, US_HEADQUARTERS } from "@/lib/content/company";
+import {
+  COMPANY_LEGAL_NAME,
+  COMPANY_SUPPORT_EMAIL,
+  COMPANY_DISPLAY_NAME,
+  copyrightYears,
+} from "@/lib/content/company";
 
 export type PolicySection = {
   heading: string;
@@ -40,12 +45,8 @@ export default function Policy({
 
       <div className="mt-5 space-y-1 text-sm text-neutral-500">
         <p>
-          Company:{" "}
+          Operated by:{" "}
           <span className="font-medium text-neutral-800">{COMPANY_LEGAL_NAME}</span>
-        </p>
-        <p>
-          Headquarters: {US_HEADQUARTERS.city}, {US_HEADQUARTERS.stateName},{" "}
-          {US_HEADQUARTERS.country}
         </p>
         <p>Effective Date: {effectiveDate}</p>
         <p>Last Updated: {lastUpdated}</p>
@@ -94,10 +95,10 @@ export default function Policy({
       </div>
 
       <p className="mt-14 border-t border-neutral-200 pt-6 text-xs leading-relaxed text-neutral-500">
-        © {new Date().getFullYear()} {COMPANY_LEGAL_NAME}. All rights reserved. This
+        © {copyrightYears()} {COMPANY_DISPLAY_NAME}. All rights reserved. This
         document is provided for general informational purposes only and does
         not constitute legal advice. For questions about this policy, contact{" "}
-        {COMPANY_LEGAL_NAME} at {COMPANY_SUPPORT_EMAIL}.
+        {COMPANY_DISPLAY_NAME} at {COMPANY_SUPPORT_EMAIL}.
       </p>
     </article>
   );
