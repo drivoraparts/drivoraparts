@@ -418,6 +418,8 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-duramax-6-6", ["1.jpg", "2.jpg", "3.jpg"]),
     ...BASE,
     mileage: "Verified low-mile takeout",
+    // Pulled from a donor vehicle ("takeout"), so not new. BASE assumes brand-new.
+    condition: "used",
     description: swapDescription(
       "GM 6.6L Duramax Diesel Engine",
       "6.6L Duramax L5P/LML-family diesel for tow-heavy swap builds and repower projects — massive torque and modern common-rail efficiency in a freight-ready unit.",
@@ -629,6 +631,8 @@ export const engineDrivetrainProducts: Product[] = [
     ]),
     ...BASE,
     mileage: "Low-mile diesel takeout",
+    // Pulled from a donor vehicle ("takeout"), so not new. BASE assumes brand-new.
+    condition: "used",
     description: swapDescription(
       "Ford 6.7L Powerstroke + 10-Speed Diesel Drivetrain",
       "Ford 6.7L Power Stroke diesel with 10-speed automatic — the ultimate tow and work package for heavy-duty swap and repower projects.",
