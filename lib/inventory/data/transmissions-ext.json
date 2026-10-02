@@ -162,21 +162,25 @@
   },
   {
     "id": 1953,
-    "name": "Aisin AC60 6-Speed Automatic Transmission for Toyota Hilux / Fortuner (2015+ Diesel)",
+    "name": "Toyota 35000-0K130 AC60F 6-Speed Automatic Transmission — Hilux 2.8L Diesel (2016+)",
     "category": "transmission",
-    "brand": "aisin",
+    "brand": "toyota",
     "price": 3100,
     "stock": false,
-    "fitment": "Toyota Hilux and Fortuner diesel, 2015 and newer",
+    "fitment": "Toyota Hilux (Revo) with the 2.8L 1GD-FTV diesel (GUN126), four-wheel drive, 2016 onward. Toyota's dealer catalog lists 35000-0K130 as a new genuine assembly without a vehicle list; the 2.8L Hilux application comes from Australian and Middle East Toyota-parts suppliers. The 2.4L diesel uses a different assembly (35000-0K040)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Aisin AC60 6-Speed Automatic Transmission for Toyota Hilux / Fortuner (2015+ Diesel)\n\nComplete transmission.\nFitment: Toyota Hilux and Fortuner diesel, 2015 and newer\nSpecifications: 6-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Toyota 35000-0K130 AC60F 6-Speed Automatic Transmission — Hilux 2.8L Diesel (2016+)\n\nComplete six-speed automatic transmission assembly for the 2.8L diesel Hilux, listed by Toyota's dealer catalog as a new genuine assembly under part number 35000-0K130. The AC60F is Aisin's four-wheel-drive six-speed automatic.\n\nFitment: Toyota Hilux (Revo) with the 2.8L 1GD-FTV diesel (GUN126), four-wheel drive, 2016 onward. Toyota's dealer catalog lists 35000-0K130 as a new genuine assembly without a vehicle list; the 2.8L Hilux application comes from Australian and Middle East Toyota-parts suppliers. The 2.4L diesel uses a different assembly (35000-0K040)\nPart Number: 35000-0K130\nSpecifications: 6-speed automatic (AC60F); Toyota part 35000-0K130\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "aisin-ac60-automatic-transmission-for-toyota-hilux",
     "createdAt": 1751959999992,
-    "topDemand": true
+    "topDemand": true,
+    "partNumber": "35000-0K130",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1954,
@@ -316,55 +320,67 @@
   },
   {
     "id": 1961,
-    "name": "Aisin 6-Speed Manual Transmission for Toyota GR86 / Subaru BRZ (2022+, FA24)",
+    "name": "Toyota SU003-10764 6-Speed Manual Transmission (TL701V8ACA) — GR86 (2022–2024)",
     "category": "transmission",
-    "brand": "aisin",
+    "brand": "toyota",
     "price": 3200,
     "stock": false,
-    "fitment": "Toyota GR86 and Subaru BRZ with the 2.4L FA24, 2022 and newer",
+    "fitment": "Toyota GR86 with the 2.4L FA24 and manual transmission, 2022–2024 (chassis ZN8), per Toyota's dealer catalog",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Aisin 6-Speed Manual Transmission for Toyota GR86 / Subaru BRZ (2022+, FA24)\n\nComplete transmission.\nFitment: Toyota GR86 and Subaru BRZ with the 2.4L FA24, 2022 and newer\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Toyota SU003-10764 6-Speed Manual Transmission (TL701V8ACA) — GR86 (2022–2024)\n\nComplete six-speed manual transmission assembly for the Toyota GR86, listed in Toyota's parts catalog under part number SU003-10764 (Toyota code TL70, assembly TL701V8ACA). The Subaru-style prefix is Toyota's own catalog number for this part.\n\nFitment: Toyota GR86 with the 2.4L FA24 and manual transmission, 2022–2024 (chassis ZN8), per Toyota's dealer catalog\nPart Number: SU003-10764\nSpecifications: 6-speed manual; Toyota part SU003-10764 (TL701V8ACA); rear-wheel drive; 2.4L FA24 engine\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "toyota-genuine-6-speed-manual-transmission-for-toyota-gr86",
     "createdAt": 1751959999984,
-    "topDemand": true
+    "topDemand": true,
+    "partNumber": "SU003-10764",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1962,
-    "name": "Toyota A750F 5-Speed Automatic Transmission for Land Cruiser Prado 150",
+    "name": "Toyota A750F 5-Speed Automatic Transmission (35000-60D90) — Land Cruiser Prado 150 4.0L (2009–2015)",
     "category": "transmission",
     "brand": "toyota",
     "price": 2537.5,
     "stock": false,
-    "fitment": "Toyota Land Cruiser Prado 150 Series with the 5-speed A750F",
+    "fitment": "Toyota Land Cruiser Prado 150 Series (GRJ150 / GRJ151) with the 4.0L 1GR-FE petrol engine, 2009–2015, per Toyota's Japan catalog. Toyota lists 35000-60C30 for 2009–2013 builds and 35000-60D90 for 2009–2015 builds; the 2.7L petrol and the 2015-and-newer diesel use different transmissions",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Toyota A750F 5-Speed Automatic Transmission for Land Cruiser Prado 150\n\nComplete transmission.\nFitment: Toyota Land Cruiser Prado 150 Series with the 5-speed A750F\nSpecifications: 5-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Toyota A750F 5-Speed Automatic Transmission (35000-60D90) — Land Cruiser Prado 150 4.0L (2009–2015)\n\nComplete Aisin A750F five-speed automatic transmission assembly for the 4.0L petrol Prado 150, listed in Toyota's catalog as the new automatic assembly (Toyota also lists separate rebuilt numbers, 30030-60C30 and 30030-60D90, which this is not).\n\nFitment: Toyota Land Cruiser Prado 150 Series (GRJ150 / GRJ151) with the 4.0L 1GR-FE petrol engine, 2009–2015, per Toyota's Japan catalog. Toyota lists 35000-60C30 for 2009–2013 builds and 35000-60D90 for 2009–2015 builds; the 2.7L petrol and the 2015-and-newer diesel use different transmissions\nPart Number: 35000-60D90\nSpecifications: 5-speed automatic (A750F); Toyota parts 35000-60D90 (2009–2015) and 35000-60C30 (2009–2013); new assembly\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "toyota-genuine-automatic-transmission-for-toyota-prado-150",
-    "createdAt": 1751959999983
+    "createdAt": 1751959999983,
+    "partNumber": "35000-60D90",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1963,
-    "name": "Aisin AC60 6-Speed Automatic Transmission for Toyota Hilux (2015+ Diesel)",
+    "name": "Toyota 35000-0K130 AC60F 6-Speed Automatic Transmission — Hilux Revo 2.8L Diesel (2016+)",
     "category": "transmission",
-    "brand": "aisin",
+    "brand": "toyota",
     "price": 2900,
     "stock": false,
-    "fitment": "Toyota Hilux diesel, 2015 and newer",
+    "fitment": "Toyota Hilux (Revo) with the 2.8L 1GD-FTV diesel (GUN126), four-wheel drive, 2016 onward. Toyota's dealer catalog lists 35000-0K130 as a new genuine assembly without a vehicle list; the 2.8L Hilux application comes from Australian and Middle East Toyota-parts suppliers. The 2.4L diesel uses a different assembly (35000-0K040)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Aisin AC60 6-Speed Automatic Transmission for Toyota Hilux (2015+ Diesel)\n\nComplete transmission.\nFitment: Toyota Hilux diesel, 2015 and newer\nSpecifications: 6-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Toyota 35000-0K130 AC60F 6-Speed Automatic Transmission — Hilux Revo 2.8L Diesel (2016+)\n\nComplete six-speed automatic transmission assembly for the Hilux Revo with the 2.8L diesel, listed by Toyota's dealer catalog as a new genuine assembly under part number 35000-0K130. The AC60F is Aisin's four-wheel-drive six-speed automatic.\n\nFitment: Toyota Hilux (Revo) with the 2.8L 1GD-FTV diesel (GUN126), four-wheel drive, 2016 onward. Toyota's dealer catalog lists 35000-0K130 as a new genuine assembly without a vehicle list; the 2.8L Hilux application comes from Australian and Middle East Toyota-parts suppliers. The 2.4L diesel uses a different assembly (35000-0K040)\nPart Number: 35000-0K130\nSpecifications: 6-speed automatic (AC60F); Toyota part 35000-0K130\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "toyota-genuine-automatic-transmission-for-toyota-hilux",
-    "createdAt": 1751959999982
+    "createdAt": 1751959999982,
+    "partNumber": "35000-0K130",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1964,
