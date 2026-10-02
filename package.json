@@ -12,7 +12,7 @@
     "verify:seo": "node scripts/verify-seo.mjs",
     "test:crawl": "node scripts/test-production-crawl.mjs",
     "audit:routes": "node scripts/audit-routes-opennext.mjs",
-    "audit:storefront-claims": "node scripts/audit-storefront-claims.mjs && node scripts/audit-storefront-claims.mjs --self-test && node scripts/check-unknown-listing-facts.mjs",
+    "audit:storefront-claims": "node scripts/audit-storefront-claims.mjs && node scripts/audit-storefront-claims.mjs --self-test && node scripts/check-unknown-listing-facts.mjs && node scripts/check-meta-feed-images.mjs",
     "verify:opennext": "node scripts/verify-opennext-output.mjs",
     "pages:build": "node scripts/verify-cloudflare-config.mjs && npx opennextjs-cloudflare build && node scripts/patch-opennext-assets.mjs && node scripts/patch-opennext-cron.mjs && node scripts/verify-opennext-output.mjs",
     "pages:deploy": "node scripts/verify-worker-chunks.mjs && npx opennextjs-cloudflare deploy",

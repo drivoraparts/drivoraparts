@@ -76,6 +76,12 @@ function isFeedReadyImage(src: string): boolean {
   if (!src || src === DEFAULT_PRODUCT_IMAGE || src.includes("default.svg")) {
     return false;
   }
+  // A category placeholder ("photography pending") is not a product photo.
+  // Without a real image the listing is left out of the feed, not advertised
+  // with a generic picture.
+  if (src.includes("/product-media/placeholders/")) {
+    return false;
+  }
   // Hotlinked third-party hosts often fail Meta's image crawler (403/timeout).
   if (/^https?:\/\//i.test(src) && !/drivoraparts\.com/i.test(src)) {
     return false;
