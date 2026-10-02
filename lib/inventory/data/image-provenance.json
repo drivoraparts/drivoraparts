@@ -64732,5 +64732,33 @@
     "downloadedAt": "2026-10-02T18:39:49.961Z",
     "status": "downloaded",
     "verified": "verified visually: Exedy clutch kit with pressure plate, organic disc, release bearing, alignment tool and grease on a white background, no watermark; supplier page identifies 05803AHD (Evo X). Original 5232x3488"
+  },
+  "product-1983": {
+    "productId": 1983,
+    "productName": "South Bend Stage 2 Clutch Kit — Ford F-150 5.0L (1993–1996)",
+    "localFile": "/product-media/transmission/south-bend-stage-2-clutch-kit-ford-f-150-5-0l-1993-1996/1.webp",
+    "sourceUrl": "https://southbendclutch.com/cdn/shop/files/K07097-HD.jpg",
+    "sourceName": "southbendclutch.com",
+    "landingPage": "https://southbendclutch.com/products/sbc-clutch-kit-for-1993-1996-ford-f-150-5-0l-gas-fits-other-vehicles",
+    "creator": "South Bend Clutch",
+    "creatorUrl": "https://southbendclutch.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "SOURCE IDENTIFIED — RIGHTS NOT INDEPENDENTLY VERIFIED — USED ON BUSINESS OWNER'S STATED INSTRUCTION: official manufacturer product-page photography; the repository has not verified copyright ownership or authorization",
+    "matchedTokens": [
+      "K07097-HD",
+      "F-150",
+      "1993-1996"
+    ],
+    "query": "manufacturer product page for the 1993-1996 F-150 5.0L kit",
+    "sha256": "5af02e5839f15cd71c977bb74e953215e772ca4d4dbd95e08abcc1050f362d43",
+    "bytes": 142356,
+    "width": 1600,
+    "height": 1600,
+    "downloadedAt": "2026-10-02T19:51:14.831Z",
+    "status": "downloaded",
+    "verified": "verified visually: South Bend red-cover clutch assembly shown on the product page of this exact application; the page uses one image for all friction options (the photo shows the cover and disc, not the bearing and tool)"
   }
 }
