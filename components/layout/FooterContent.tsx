@@ -93,10 +93,6 @@ const LEGAL_LINKS: FooterLink[] = [
   { href: SHIPPING_POLICY_HREF, label: "shippingPolicy" },
   { href: RETURN_POLICY_HREF, label: "returnsRefunds" },
   { href: WARRANTY_POLICY_HREF, label: "warrantyPolicy" },
-  // Several vehicle photographs are CC BY-SA, which requires the creator,
-  // the licence and the source to be reachable. A link from every page
-  // satisfies the licence without ending the homepage on legal text.
-  { href: "/photography-credits", label: "imageCredits" },
 ];
 
 /*
