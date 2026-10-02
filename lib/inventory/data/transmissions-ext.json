@@ -255,11 +255,14 @@
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Nissan 32010-JK41A 6-Speed Manual Transmission\n\nNissan manual transmission assembly 32010-JK41A, a six-speed manual used in the Nissan 350Z / 370Z and Infiniti G35 / G37 family. Nissan's parts catalog lists it as replacing 32010-JK40B and 32010-JK40D. It is a manual transmission, not an automatic.\n\nFitment: Nissan 370Z (Nissan parts catalog); also marketed for the 350Z and Infiniti G35 / G37. Model years not established\nPart Number: 32010-JK41A\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Nissan 32010-JK41A 6-Speed Manual Transmission\n\nGenuine Nissan manual transmission assembly 32010-JK41A, a six-speed manual for the Nissan 370Z family. Nissan lists it as the replacement for 32010-JK40B and 32010-JK40D. It is a manual transmission, not an automatic.\n\nFitment: Nissan 370Z (Nissan parts catalog). Model years are not stated; confirm the application by VIN with a Nissan parts lookup\nPart Number: 32010-JK41A\nSpecifications: 6-speed manual; Nissan part 32010-JK41A (replaces 32010-JK40B and 32010-JK40D); shipping weight about 260 lb\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "nissan-jk41a-automatic-transmission-for-nissan-patrol-y62",
     "createdAt": 1751959999986,
-    "fitment": "Nissan 370Z (Nissan parts catalog); also marketed for the 350Z and Infiniti G35 / G37. Model years not established",
-    "partNumber": "32010-JK41A"
+    "fitment": "Nissan 370Z (Nissan parts catalog). Model years are not stated; confirm the application by VIN with a Nissan parts lookup",
+    "partNumber": "32010-JK41A",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1960,
@@ -687,37 +690,44 @@
   },
   {
     "id": 1983,
-    "name": "South Bend Stage 2 Clutch Kit for Ford F-150 5.0L (1993–1996)",
+    "name": "South Bend Stage 2 Clutch Kit — Ford F-150 5.0L (1993–1996)",
     "category": "transmission",
     "brand": "south-bend",
     "price": 890,
     "stock": false,
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "thumbnail": "/product-media/transmission/south-bend-stage-2-clutch-kit-ford-f-150-5-0l-1993-1996/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/south-bend-stage-2-clutch-kit-ford-f-150-5-0l-1993-1996/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "South Bend Stage 2 Clutch Kit for Ford F-150 5.0L (1993–1996)\n\nSouth Bend Clutch Stage 2 clutch kit for the 1993–1996 Ford F-150 with the 5.0L gas V8. South Bend offers this Stage 2 kit in several friction materials, and the material for this listing is not specified. It is not a kit for the 5.0L Coyote.\n\nFitment: Ford F-150 5.0L gas V8, 1993–1996\nSpecifications: Stage 2 clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/south-bend-stage-2-clutch-kit-ford-f-150-5-0l-1993-1996/1.webp",
+    "description": "South Bend Stage 2 Clutch Kit — Ford F-150 5.0L (1993–1996)\n\nSouth Bend Clutch Stage 2 replacement clutch kit for the 1993–1996 F-150 5.0L. It reuses the existing flywheel, and South Bend offers the Stage 2 kit in several friction materials (organic, ceramic and Kevlar blends); the friction material for this listing is not specified. It is not a kit for the 5.0L Coyote.\n\nFitment: Ford F-150 5.0L gas V8 with manual transmission, 1993–1996\nSpecifications: Stage 2 clutch kit; includes throw-out bearing, pilot bushing and alignment tool; reuses the existing flywheel\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "south-bend-stage-2-clutch-kit-for-ford-f-150",
     "createdAt": 1751959999962,
-    "fitment": "Ford F-150 5.0L gas V8, 1993–1996"
+    "fitment": "Ford F-150 5.0L gas V8 with manual transmission, 1993–1996",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1984,
-    "name": "South Bend Stage 3 Clutch Kit for Dodge Ram 2500 Cummins",
+    "name": "South Bend Stage 3 Endurance Clutch Kit SDD3250-GK — Dodge / Ram 2500 Cummins 5.9L & 6.7L (2005–2018)",
     "category": "transmission",
     "brand": "south-bend",
     "price": 1190,
     "stock": false,
-    "fitment": "Dodge / Ram 2500 with the Cummins 5.9L and 6.7L diesel; kit depends on the gearbox (NV5600 2000.5–2005.5, G56 from 2005.5)",
+    "fitment": "Dodge / Ram 2500 with the 5.9L or 6.7L Cummins diesel, 2005–2018",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "South Bend Stage 3 Clutch Kit for Dodge Ram 2500 Cummins\n\nClutch kit.\nFitment: Dodge / Ram 2500 with the Cummins 5.9L and 6.7L diesel; kit depends on the gearbox (NV5600 2000.5–2005.5, G56 from 2005.5)\nSpecifications: Dual-disc clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "South Bend Stage 3 Endurance Clutch Kit SDD3250-GK — Dodge / Ram 2500 Cummins 5.9L & 6.7L (2005–2018)\n\nSouth Bend Clutch Stage 3 Endurance clutch kit for the Ram 2500 Cummins diesel, offered with organic or ceramic friction material. South Bend's product page for this application also lists a milder Stage 2 Daily option under the same part number, so confirm the stage when ordering.\n\nFitment: Dodge / Ram 2500 with the 5.9L or 6.7L Cummins diesel, 2005–2018\nPart Number: SDD3250-GK\nSpecifications: Stage 3 Endurance; organic/ceramic friction; includes throw-out bearing and alignment tool\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "south-bend-stage-3-clutch-kit-for-dodge-ram-2500",
-    "createdAt": 1751959999961
+    "createdAt": 1751959999961,
+    "partNumber": "SDD3250-GK",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1985,
