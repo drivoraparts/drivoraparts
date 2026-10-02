@@ -64839,5 +64839,58 @@
     "downloadedAt": "2026-10-02T20:11:48.655Z",
     "status": "downloaded",
     "verified": "verified visually: Tremec's own Magnum XL image from its product page, showing the transmission with the steel bellhousing, crossmember and shifter the page lists"
+  },
+  "product-1985": {
+    "productId": 1985,
+    "productName": "Centerforce Dual Friction Clutch Pressure Plate and Disc Set DF593010 — Chevrolet Camaro SS 6.2L (2010–2015)",
+    "localFile": "/product-media/transmission/centerforce-dual-friction-clutch-pressure-plate-and-disc-set-df593010/1.webp",
+    "sourceUrl": "https://www.centerforce.com/images/I30500390.jpg",
+    "sourceName": "centerforce.com",
+    "landingPage": "https://www.centerforce.com/i-30500390-centerforce-dual-friction-high-performance-clutch-pressure-plate-and-disc-set-700-ft-lbs-capacity-12in-dia-26-spline-fits-chevrolet-camaro-ss-6-2l-7-0l.html",
+    "creator": "Centerforce",
+    "creatorUrl": "https://www.centerforce.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "SOURCE IDENTIFIED — RIGHTS NOT INDEPENDENTLY VERIFIED — USED ON BUSINESS OWNER'S STATED INSTRUCTION: product photography from the manufacturer or an established supplier; the repository has not verified copyright ownership or authorization",
+    "matchedTokens": [
+      "DF593010"
+    ],
+    "query": "manufacturer product page for DF593010",
+    "sha256": "ce054b49f5e97f53b52686569cbde835e55b74848fe2451d30805c7a2a0cce5e",
+    "bytes": 17650,
+    "width": 300,
+    "height": 300,
+    "downloadedAt": "2026-10-02T20:31:57.071Z",
+    "status": "downloaded",
+    "verified": "verified visually: Centerforce Dual Friction pressure plate and sprung disc with bolts and alignment tool, matching the contents on the manufacturer page. Source resolution is 300 px (the largest the page offers)"
+  },
+  "product-1981": {
+    "productId": 1981,
+    "productName": "ACT Twin Disc XT Race Clutch Kit T2R-F05 — Ford Mustang GT (2011–2017)",
+    "localFile": "/product-media/transmission/act-xt-race-clutch-kit-for-ford-mustang-gt/1.jpg",
+    "sourceUrl": null,
+    "sourceName": "ACT twin-disc XT Race kit product image (exact source URL not recorded)",
+    "landingPage": "https://www.tf-works.com/act-twin-disc-xt-race-kit-2015-ford-mustang-gt-v8-5-0l/",
+    "creator": "Advanced Clutch Technology",
+    "creatorUrl": "https://www.advancedclutch.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "SOURCE PARTLY IDENTIFIED — RIGHTS NOT INDEPENDENTLY VERIFIED — USED ON BUSINESS OWNER'S STATED INSTRUCTION: retained from the 2026-07-15 catalog sourcing (commit 98cab42e), whose exact source URL was not recorded; it is the same ACT twin-disc exploded image shown on the retailer page for T2R-F05",
+    "matchedTokens": [
+      "T2R-F05",
+      "XT Race"
+    ],
+    "query": "n/a",
+    "sha256": "ab871f2ae2e6580b037da786e641937c9f6420a5b5425ae53d42549d73d76e7d",
+    "bytes": 74061,
+    "width": 800,
+    "height": 600,
+    "downloadedAt": "2026-10-02T20:31:57.078Z",
+    "status": "retained",
+    "verified": "verified visually: exploded ACT twin-disc kit (flywheel, two discs, floater, pressure plate) identical in composition to the T2R-F05 product image on tf-works.com (500 px there; 800 px here)"
   }
 }

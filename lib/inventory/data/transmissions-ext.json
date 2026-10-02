@@ -180,9 +180,9 @@
   },
   {
     "id": 1954,
-    "name": "Aisin TB-68LS 6-Speed Automatic Transmission",
+    "name": "Toyota 35000-0W010 6-Speed Automatic Transmission (Aisin AB60F / TB-68LS) — Land Cruiser (2008–2016)",
     "category": "transmission",
-    "brand": "aisin",
+    "brand": "toyota",
     "price": 5400,
     "stock": false,
     "thumbnail": "/product-media/placeholders/transmission.svg",
@@ -190,10 +190,14 @@
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Aisin TB-68LS 6-Speed Automatic Transmission\n\nAisin TB-68LS six-speed automatic transmission (sold under the AB60E rear-drive and AB60F four-wheel-drive designations). It was fitted to the Toyota Land Cruiser 200, Lexus LX570, Toyota Sequoia and Toyota Tundra; it is not the transmission used in the Land Cruiser 300, which has a 10-speed.\n\nFitment: Toyota Land Cruiser 200 and Lexus LX570 (2007–2015); Toyota Sequoia (2007–2022); Toyota Tundra (2006–2021). The AB60E / AB60F variant is not specified\nSpecifications: 6-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Toyota 35000-0W010 6-Speed Automatic Transmission (Aisin AB60F / TB-68LS) — Land Cruiser (2008–2016)\n\nComplete six-speed automatic transmission assembly for the 200 Series Land Cruiser, listed in Toyota's parts catalog under part number 35000-0W010 (Toyota code AB60F). It is the four-wheel-drive version of the Aisin TB-68LS design.\n\nFitment: Toyota Land Cruiser (200 Series, URJ200) with the 5.7L 3UR-FE V8, 2008–2016, per Toyota's catalog. The same Aisin transmission family is used in the Lexus LX 570, Toyota Sequoia and Toyota Tundra under other part numbers, and it is not the transmission of the Land Cruiser 300\nPart Number: 35000-0W010\nSpecifications: 6-speed automatic; Toyota part 35000-0W010 (AB60F, Aisin TB-68LS); shipping weight about 296 lb\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "aisin-tb68-automatic-transmission-for-toyota-landcruiser-300",
     "createdAt": 1751959999991,
-    "fitment": "Toyota Land Cruiser 200 and Lexus LX570 (2007–2015); Toyota Sequoia (2007–2022); Toyota Tundra (2006–2021). The AB60E / AB60F variant is not specified"
+    "fitment": "Toyota Land Cruiser (200 Series, URJ200) with the 5.7L 3UR-FE V8, 2008–2016, per Toyota's catalog. The same Aisin transmission family is used in the Lexus LX 570, Toyota Sequoia and Toyota Tundra under other part numbers, and it is not the transmission of the Land Cruiser 300",
+    "partNumber": "35000-0W010",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1955,
@@ -214,55 +218,64 @@
   },
   {
     "id": 1956,
-    "name": "Allison 1000 Automatic Transmission for Chevrolet Silverado HD",
+    "name": "Allison 1000 Automatic Transmission, Remanufactured — Chevrolet Silverado 2500HD / 3500HD 6.6L Duramax (2001–2019)",
     "category": "transmission",
     "brand": "allison",
     "price": 1450,
     "stock": false,
-    "fitment": "Chevrolet Silverado 2500HD / 3500HD with 6.6L Duramax diesel; family covers 2001–2019 (5-speed through 2005, 6-speed from 2006)",
+    "fitment": "Chevrolet Silverado 2500HD and 3500HD with the 6.6L Duramax diesel, 2001–2019. GM lists the remanufactured assemblies by year and engine (for example 29541361 for 2003 and 29543981 for 2005, five-speed; 19303541 for 2012, 19354385 for 2016 and 19418774 for 2019, six-speed)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Allison 1000 Automatic Transmission for Chevrolet Silverado HD\n\nComplete transmission.\nFitment: Chevrolet Silverado 2500HD / 3500HD with 6.6L Duramax diesel; family covers 2001–2019 (5-speed through 2005, 6-speed from 2006)\nSpecifications: Automatic; 5-speed through 2005, 6-speed from 2006\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Allison 1000 Automatic Transmission, Remanufactured — Chevrolet Silverado 2500HD / 3500HD 6.6L Duramax (2001–2019)\n\nComplete Allison 1000 automatic transmission for the Duramax-powered Silverado HD. GM supplies this transmission as a remanufactured assembly: the five-speed version was used through 2005 and the six-speed from 2006, and the part number depends on the model year and engine.\n\nFitment: Chevrolet Silverado 2500HD and 3500HD with the 6.6L Duramax diesel, 2001–2019. GM lists the remanufactured assemblies by year and engine (for example 29541361 for 2003 and 29543981 for 2005, five-speed; 19303541 for 2012, 19354385 for 2016 and 19418774 for 2019, six-speed)\nSpecifications: Allison 1000; 5-speed (2001–2005) or 6-speed (2006–2019); remanufactured; confirm the part number for your model year and engine\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "allison-1000-automatic-transmission-for-chevrolet-silverado-2500hd",
     "createdAt": 1751959999989,
-    "topDemand": true
+    "topDemand": true,
+    "condition": "refurbished",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1957,
-    "name": "Allison 1000 Automatic Transmission for GMC Sierra HD",
+    "name": "Allison 1000 Automatic Transmission, Remanufactured — GMC Sierra 2500HD / 3500HD 6.6L Duramax (2001–2019)",
     "category": "transmission",
     "brand": "allison",
     "price": 1450,
     "stock": false,
-    "fitment": "GMC Sierra 2500HD / 3500HD with 6.6L Duramax diesel; family covers 2001–2019 (5-speed through 2005, 6-speed from 2006)",
+    "fitment": "GMC Sierra 2500HD and 3500HD with the 6.6L Duramax diesel, 2001–2019. GM lists the remanufactured assemblies by year and engine (for example 29541361 for 2003 and 29543981 for 2005, five-speed; 19303541 for 2012, 19354385 for 2016 and 19418774 for 2019, six-speed)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Allison 1000 Automatic Transmission for GMC Sierra HD\n\nComplete transmission.\nFitment: GMC Sierra 2500HD / 3500HD with 6.6L Duramax diesel; family covers 2001–2019 (5-speed through 2005, 6-speed from 2006)\nSpecifications: Automatic; 5-speed through 2005, 6-speed from 2006\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Allison 1000 Automatic Transmission, Remanufactured — GMC Sierra 2500HD / 3500HD 6.6L Duramax (2001–2019)\n\nComplete Allison 1000 automatic transmission for the Duramax-powered Sierra HD. GM supplies this transmission as a remanufactured assembly: the five-speed version was used through 2005 and the six-speed from 2006, and the part number depends on the model year and engine.\n\nFitment: GMC Sierra 2500HD and 3500HD with the 6.6L Duramax diesel, 2001–2019. GM lists the remanufactured assemblies by year and engine (for example 29541361 for 2003 and 29543981 for 2005, five-speed; 19303541 for 2012, 19354385 for 2016 and 19418774 for 2019, six-speed)\nSpecifications: Allison 1000; 5-speed (2001–2005) or 6-speed (2006–2019); remanufactured; confirm the part number for your model year and engine\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "allison-1000-automatic-transmission-for-gmc-sierra-hd",
-    "createdAt": 1751959999988
+    "createdAt": 1751959999988,
+    "condition": "refurbished",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1958,
-    "name": "GM / Allison 10L1000 10-Speed Automatic Transmission — Silverado / Sierra 2500HD–3500HD",
+    "name": "GM / Allison 10L1000 10-Speed Automatic Transmission, Remanufactured — Silverado / Sierra 2500HD–3500HD 6.6L L5P (2020–2023)",
     "category": "transmission",
     "brand": "allison",
     "price": 4600,
     "stock": false,
-    "fitment": "Chevrolet Silverado HD and GMC Sierra HD 2500/3500, 6.6L L5P diesel, 2020 onward",
+    "fitment": "Chevrolet Silverado and GMC Sierra 2500HD / 3500HD with the 6.6L L5P Duramax diesel, 2020–2023. GM lists 19434353 (which replaces 24043722) for the standard 10L1000 and 19540552 (which replaces 24043723) for the power-take-off version",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "GM / Allison 10L1000 10-Speed Automatic Transmission — Silverado / Sierra 2500HD–3500HD\n\nTen-speed 10L1000 automatic transmission used behind the 6.6L L5P Duramax in the 2020-and-newer Chevrolet Silverado and GMC Sierra heavy-duty trucks. It is a GM-designed unit carrying Allison branding.\n\nFitment: Chevrolet Silverado HD and GMC Sierra HD 2500/3500, 6.6L L5P diesel, 2020 onward\nSpecifications: 10-speed automatic; first gear 4.54, tenth 0.63; 10.63 in converter; 22.1 qt capacity\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "GM / Allison 10L1000 10-Speed Automatic Transmission, Remanufactured — Silverado / Sierra 2500HD–3500HD 6.6L L5P (2020–2023)\n\nComplete 10L1000 ten-speed automatic transmission for the L5P Duramax heavy-duty trucks, supplied by GM as a factory-remanufactured assembly. It is a GM-designed unit carrying Allison branding.\n\nFitment: Chevrolet Silverado and GMC Sierra 2500HD / 3500HD with the 6.6L L5P Duramax diesel, 2020–2023. GM lists 19434353 (which replaces 24043722) for the standard 10L1000 and 19540552 (which replaces 24043723) for the power-take-off version\nSpecifications: 10-speed automatic (10L1000); remanufactured; first gear 4.54, tenth 0.63; 10.63 in converter; 22.1 qt capacity\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "allison-10-speed-transmission-for-chevrolet-silverado-hd",
-    "createdAt": 1751959999987
+    "createdAt": 1751959999987,
+    "condition": "refurbished",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1959,
@@ -685,20 +698,24 @@
   },
   {
     "id": 1981,
-    "name": "ACT Twin Disc Clutch Kit for Ford Mustang GT (2011–2017)",
+    "name": "ACT Twin Disc XT Race Clutch Kit T2R-F05 — Ford Mustang GT (2011–2017)",
     "category": "transmission",
     "brand": "act",
     "price": 1091.85,
     "stock": false,
-    "fitment": "Ford Mustang GT 2011–2017 and Boss 302 2012–2013 with the 23-spline MT-82",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "fitment": "Ford Mustang GT 5.0L, 2011–2017, and Mustang Boss 302, 2012–2013, with the 23-spline MT-82 manual transmission",
+    "thumbnail": "/product-media/transmission/act-xt-race-clutch-kit-for-ford-mustang-gt/1.jpg",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/act-xt-race-clutch-kit-for-ford-mustang-gt/1.jpg"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "ACT Twin Disc Clutch Kit for Ford Mustang GT (2011–2017)\n\nClutch kit.\nFitment: Ford Mustang GT 2011–2017 and Boss 302 2012–2013 with the 23-spline MT-82\nSpecifications: Twin-disc clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/act-xt-race-clutch-kit-for-ford-mustang-gt/1.jpg",
+    "description": "ACT Twin Disc XT Race Clutch Kit T2R-F05 — Ford Mustang GT (2011–2017)\n\nACT's Twin Disc XT Race kit for the 5.0L Mustang GT: two ceramic race discs separated by a floater plate that uses ACT's Positive Lift design to stay quiet and rattle-free. It is a race-oriented kit rated at about 1,623 ft-lb, and includes the flywheel. (ACT's MaXX XT Race kit, T3R-F05, is a different product.)\n\nFitment: Ford Mustang GT 5.0L, 2011–2017, and Mustang Boss 302, 2012–2013, with the 23-spline MT-82 manual transmission\nPart Number: T2R-F05\nSpecifications: Twin disc, ceramic; rated about 1,623 ft-lb; 23 spline; race use; kit includes pressure plate, two discs, floater, flywheel and alignment tool\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "act-xt-race-clutch-kit-for-ford-mustang-gt",
-    "createdAt": 1751959999964
+    "createdAt": 1751959999964,
+    "partNumber": "T2R-F05",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1982,
@@ -764,20 +781,24 @@
   },
   {
     "id": 1985,
-    "name": "Centerforce Dual Friction Clutch Kit for Chevrolet Camaro SS (LT1)",
+    "name": "Centerforce Dual Friction Clutch Pressure Plate and Disc Set DF593010 — Chevrolet Camaro SS 6.2L (2010–2015)",
     "category": "transmission",
     "brand": "centerforce",
     "price": 317.54,
     "stock": false,
-    "fitment": "Chevrolet Camaro SS with the 6.2L LT1, 6-speed (years depend on the kit)",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "fitment": "Chevrolet Camaro SS 6.2L with the 6-speed manual, 2010–2015, and Camaro Z/28 7.0L, 2014–2015. Centerforce lists no Dual Friction kit for the 2016-and-newer LT1 Camaro",
+    "thumbnail": "/product-media/transmission/centerforce-dual-friction-clutch-pressure-plate-and-disc-set-df593010/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/centerforce-dual-friction-clutch-pressure-plate-and-disc-set-df593010/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Centerforce Dual Friction Clutch Kit for Chevrolet Camaro SS (LT1)\n\nClutch kit.\nFitment: Chevrolet Camaro SS with the 6.2L LT1, 6-speed (years depend on the kit)\nSpecifications: Dual Friction clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
-    "sourceSlug": "centerforce-dual-friction-clutch-kit-for-chevrolet-camaro-ss",
-    "createdAt": 1751959999960
+    "image": "/product-media/transmission/centerforce-dual-friction-clutch-pressure-plate-and-disc-set-df593010/1.webp",
+    "description": "Centerforce Dual Friction Clutch Pressure Plate and Disc Set DF593010 — Chevrolet Camaro SS 6.2L (2010–2015)\n\nCenterforce Dual Friction pressure plate and disc set for the 6.2L Camaro SS, pairing a cast-iron pressure plate with a segmented organic/carbon sprung disc. It is a cover-and-disc set: the flywheel is not part of it, and Centerforce lists only the cover, disc, mounting hardware and alignment tool.\n\nFitment: Chevrolet Camaro SS 6.2L with the 6-speed manual, 2010–2015, and Camaro Z/28 7.0L, 2014–2015. Centerforce lists no Dual Friction kit for the 2016-and-newer LT1 Camaro\nPart Number: DF593010\nSpecifications: Dual Friction; 700 ft-lb capacity; 12 in (304.8 mm) disc; 1-1/8 in x 26 spline; sprung segmented organic/carbon disc with counterweight assist; includes cover, disc, mounting hardware and alignment tool\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "sourceSlug": "centerforce-dual-friction-clutch-pressure-plate-and-disc-set-df593010",
+    "createdAt": 1751959999960,
+    "partNumber": "DF593010",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1986,
