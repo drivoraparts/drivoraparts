@@ -22,54 +22,64 @@
   },
   {
     "id": 1946,
-    "name": "ZF 8-Speed Automatic Transmission for Toyota GR Supra A90 / A91",
+    "name": "Toyota 35000-WAA10 8-Speed Automatic Transmission — GR Supra (2020–2025)",
     "category": "transmission",
-    "brand": "zf",
+    "brand": "toyota",
     "price": 3900,
     "stock": false,
-    "fitment": "Toyota GR Supra A90 / A91, 3.0L B58, automatic, 2020 and newer",
+    "fitment": "Toyota GR Supra, 2020–2025; Toyota's catalog lists the 2.0L and 3.0L (B58) engines. Confirm by VIN",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "ZF 8-Speed Automatic Transmission for Toyota GR Supra A90 / A91\n\nComplete transmission.\nFitment: Toyota GR Supra A90 / A91, 3.0L B58, automatic, 2020 and newer\nSpecifications: ZF 8HP-family automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Toyota 35000-WAA10 8-Speed Automatic Transmission — GR Supra (2020–2025)\n\nComplete eight-speed automatic transmission assembly for the Toyota GR Supra, listed in Toyota's parts catalog under part number 35000-WAA10. The A90 uses a ZF 8HP-family automatic.\n\nFitment: Toyota GR Supra, 2020–2025; Toyota's catalog lists the 2.0L and 3.0L (B58) engines. Confirm by VIN\nPart Number: 35000-WAA10\nSpecifications: 8-speed automatic; Toyota part 35000-WAA10; rear-wheel drive\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "zf-8hp50-automatic-transmission-for-toyota-gr-supra-a90",
-    "createdAt": 1751959999999
+    "createdAt": 1751959999999,
+    "partNumber": "35000-WAA10",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1947,
-    "name": "Tremec TKX 5-Speed Manual Transmission for Ford Mustang",
+    "name": "Tremec TKX 5-Speed Manual Transmission — Ford Mustang Conversions",
     "category": "transmission",
     "brand": "tremec",
     "price": 2098.88,
     "stock": false,
-    "fitment": "Ford Mustang manual-transmission conversion; kit-specific",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "fitment": "Ford Mustang conversions. Tremec lists a Ford-application TKX (TCET18085) for 1979–1993 Fox Body Mustangs; other TKX kits are specified by application",
+    "thumbnail": "/product-media/transmission/tremec-tkx-5-speed-manual-transmission/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/tremec-tkx-5-speed-manual-transmission/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Tremec TKX 5-Speed Manual Transmission for Ford Mustang\n\nComplete transmission.\nFitment: Ford Mustang manual-transmission conversion; kit-specific\nSpecifications: 5-speed rear-wheel-drive manual; 600 lb-ft; 3 shifter locations; shift point 7,500 rpm (Tremec)\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/tremec-tkx-5-speed-manual-transmission/1.webp",
+    "description": "Tremec TKX 5-Speed Manual Transmission — Ford Mustang Conversions\n\nTremec's TKX is a five-speed rear-wheel-drive manual built for restomod and conversion projects, with a slim ribbed three-piece aluminium housing, multi-cone synchronizers and caged needle bearings. It is offered with three shifter positions, and the Ford-application kit is used to convert 1979–1993 Fox Body Mustangs to a five-speed.\n\nFitment: Ford Mustang conversions. Tremec lists a Ford-application TKX (TCET18085) for 1979–1993 Fox Body Mustangs; other TKX kits are specified by application\nSpecifications: 5-speed rear-wheel-drive manual; 600 lb-ft capacity; capable of 8,000 rpm with a 7,500 rpm shift point; three shifter locations; Ford kit TCET18085: ratios 3.27, 1.98, 1.34, 1.00, 0.72, reverse 3.00; 26-spline input\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "tremec-tkx-5-speed-transmission-for-ford-mustang-classic",
-    "createdAt": 1751959999998
+    "createdAt": 1751959999998,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1948,
-    "name": "Tremec T56 Magnum XL 6-Speed Manual Transmission",
+    "name": "Tremec T56 Magnum XL 6-Speed Manual Transmission Kit (700 lb-ft)",
     "category": "transmission",
     "brand": "tremec",
     "price": 2678.88,
     "stock": false,
-    "fitment": "Aftermarket swap application; a vehicle-specific kit is required",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "fitment": "Tremec designed the Magnum XL for 2005-and-newer Ford S197 Mustangs and also offers a GM-application version; it replaces an OEM 5- or 6-speed. Tremec lists no Dodge Challenger or Charger application, so confirm fitment before ordering",
+    "thumbnail": "/product-media/transmission/tremec-t56-magnum-xl-6-speed-manual-transmission-kit/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/tremec-t56-magnum-xl-6-speed-manual-transmission-kit/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Tremec T56 Magnum XL 6-Speed Manual Transmission\n\nComplete transmission.\nFitment: Aftermarket swap application; a vehicle-specific kit is required\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/tremec-t56-magnum-xl-6-speed-manual-transmission-kit/1.webp",
+    "description": "Tremec T56 Magnum XL 6-Speed Manual Transmission Kit (700 lb-ft)\n\nTremec's Magnum XL is a 700 lb-ft six-speed rear-wheel-drive manual derived from the factory TR-6060. It is supplied as a swap kit with an SFI-approved steel bellhousing, crossmember and transmission mount, and an isolated direct-mount shifter with shift ball and extended tail section, and it reuses the factory hydraulic clutch release system.\n\nFitment: Tremec designed the Magnum XL for 2005-and-newer Ford S197 Mustangs and also offers a GM-application version; it replaces an OEM 5- or 6-speed. Tremec lists no Dodge Challenger or Charger application, so confirm fitment before ordering\nSpecifications: 6-speed rear-wheel-drive manual; 700 lb-ft capacity; two ratio sets (2.66 or 2.97 first gear; the 2.66 set is 2.66, 1.78, 1.30, 1.00, 0.80, 0.63, reverse 2.90); kit includes steel bellhousing, crossmember and mount, isolated shifter and shift ball\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "tremec-t56-magnum-xl-for-dodge-challenger",
-    "createdAt": 1751959999997
+    "createdAt": 1751959999997,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1949,
@@ -90,54 +100,65 @@
   },
   {
     "id": 1950,
-    "name": "Getrag 420G 6-Speed Manual Transmission — BMW M5 (E39)",
+    "name": "BMW 23007501757 Getrag S6S420G 6-Speed Manual Transmission, Remanufactured — M5 (E39)",
     "category": "transmission",
-    "brand": "getrag",
+    "brand": "bmw",
     "price": 5100,
     "stock": false,
-    "fitment": "BMW M5 (E39), S62 4.9L V8, 1999–2003",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "fitment": "BMW M5 (E39) with the 4.9L S62 V8, 2000–2003",
+    "thumbnail": "/product-media/transmission/bmw-23007501757-getrag-s6s420g-6-speed-manual-transmission-e39-m5/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/bmw-23007501757-getrag-s6s420g-6-speed-manual-transmission-e39-m5/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Getrag 420G 6-Speed Manual Transmission — BMW M5 (E39)\n\nGetrag 420G six-speed manual transmission as fitted to the E39 BMW M5 with the 4.9L S62 V8. The 420G is rated to roughly 368 lb-ft (499 N·m) and is also used in several other BMW M-car applications.\n\nFitment: BMW M5 (E39), S62 4.9L V8, 1999–2003\nSpecifications: 6-speed manual; about 368 lb-ft (499 N·m) rated torque\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/bmw-23007501757-getrag-s6s420g-6-speed-manual-transmission-e39-m5/1.webp",
+    "description": "BMW 23007501757 Getrag S6S420G 6-Speed Manual Transmission, Remanufactured — M5 (E39)\n\nRemanufactured Getrag S6S420G six-speed manual transmission for the E39 M5, listed by BMW as part number 23007501757. It was built for the 4.9L M engine and is rated to roughly 368 lb-ft.\n\nFitment: BMW M5 (E39) with the 4.9L S62 V8, 2000–2003\nPart Number: 23007501757\nSpecifications: 6-speed manual; Getrag S6S420G (420G); about 368 lb-ft (499 N·m) rated torque; remanufactured\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "getrag-420g-6-speed-manual-transmission-for-bmw-m5-e39",
-    "createdAt": 1751959999995
+    "createdAt": 1751959999995,
+    "partNumber": "23007501757",
+    "condition": "refurbished",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1951,
-    "name": "Getrag MT82 6-Speed Manual Transmission — Ford Mustang GT (2011–2017)",
+    "name": "Ford MT82 6-Speed Manual Transmission — Mustang GT 5.0L (2011–2017)",
     "category": "transmission",
-    "brand": "getrag",
+    "brand": "ford",
     "price": 2200,
     "stock": false,
-    "fitment": "Ford Mustang GT 5.0L, 2011–2017",
+    "fitment": "Ford Mustang GT with the 5.0L Coyote V8, rear-wheel drive, 2011–2017. Ford lists the part under different numbers by model year (for example BR3Z-7003-AA for 2011, CR3Z-7003-A for 2013 and FR3Z-7003-F for 2015–2017)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Getrag MT82 6-Speed Manual Transmission — Ford Mustang GT (2011–2017)\n\nSix-speed Getrag MT82 manual transmission for the 5.0L Coyote Mustang GT. This is the pre-2018 MT82; the later MT82-D4 with a direct-drive fourth gear is a different transmission.\n\nFitment: Ford Mustang GT 5.0L, 2011–2017\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Ford MT82 6-Speed Manual Transmission — Mustang GT 5.0L (2011–2017)\n\nComplete Getrag-built MT82 six-speed manual transmission for the 5.0L Mustang GT, as listed in Ford's parts catalog. This is the pre-2018 MT82; the 2018-and-newer MT82-D4 with a direct-drive fourth gear is a different transmission.\n\nFitment: Ford Mustang GT with the 5.0L Coyote V8, rear-wheel drive, 2011–2017. Ford lists the part under different numbers by model year (for example BR3Z-7003-AA for 2011, CR3Z-7003-A for 2013 and FR3Z-7003-F for 2015–2017)\nSpecifications: 6-speed manual (MT82); rear-wheel drive; confirm the part number for your model year\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "getrag-mt82-manual-transmission-for-ford-mustang-gt",
-    "createdAt": 1751959999994
+    "createdAt": 1751959999994,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1952,
-    "name": "Aisin AY6 6-Speed Manual Transmission for Toyota Tacoma (2004–2015)",
+    "name": "Toyota 33030-35A22 6-Speed Manual Transmission (RA60) — Tacoma (2005–2016)",
     "category": "transmission",
-    "brand": "aisin",
+    "brand": "toyota",
     "price": 2400,
     "stock": false,
-    "fitment": "Toyota Tacoma, 2004–2015",
+    "fitment": "Toyota Tacoma, 2005–2016; Toyota's catalog lists the 2.7L, 3.5L and 4.0L applications. Confirm by VIN",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Aisin AY6 6-Speed Manual Transmission for Toyota Tacoma (2004–2015)\n\nComplete transmission.\nFitment: Toyota Tacoma, 2004–2015\nSpecifications: 6-speed manual; rated to about 345 lb-ft\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Toyota 33030-35A22 6-Speed Manual Transmission (RA60) — Tacoma (2005–2016)\n\nToyota's six-speed manual transmission assembly for the Tacoma, listed under part number 33030-35A22 (Toyota code RA60). The unit is Aisin's AY6 design and replaces 33030-35A20 and 33030-35A21.\n\nFitment: Toyota Tacoma, 2005–2016; Toyota's catalog lists the 2.7L, 3.5L and 4.0L applications. Confirm by VIN\nPart Number: 33030-35A22\nSpecifications: 6-speed manual; Toyota part 33030-35A22 (RA60, Aisin AY6); replaces 33030-35A20 and 33030-35A21\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "aisin-ay6-manual-transmission-for-toyota-tacoma",
-    "createdAt": 1751959999993
+    "createdAt": 1751959999993,
+    "partNumber": "33030-35A22",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1953,
@@ -334,73 +355,85 @@
   },
   {
     "id": 1964,
-    "name": "MT82-D4 6-Speed Manual Transmission — Ford Mustang GT (2018–2023)",
+    "name": "Ford MT82-D4 6-Speed Manual Transmission — Mustang GT 5.0L (2018–2023)",
     "category": "transmission",
     "brand": "ford",
     "price": 2824.42,
     "stock": false,
-    "fitment": "Ford Mustang GT 5.0L, 2018–2023",
+    "fitment": "Ford Mustang GT with the 5.0L Coyote V8, rear-wheel drive, 2018–2023. Ford lists JR3Z-7003-A for 2018 and JR3Z-7003-E (which replaces JR3Z-7003-B, -C and -D) for the later years",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "MT82-D4 6-Speed Manual Transmission — Ford Mustang GT (2018–2023)\n\nSix-speed MT82-D4 manual transmission for the 5.0L Coyote Mustang GT. The D4 designation refers to the direct-drive fourth gear, with fifth and sixth as overdrives, and revised synchronizers compared with the earlier MT82.\n\nFitment: Ford Mustang GT 5.0L, 2018–2023\nSpecifications: 6-speed manual; direct-drive 4th gear; overdrive 5th and 6th\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Ford MT82-D4 6-Speed Manual Transmission — Mustang GT 5.0L (2018–2023)\n\nComplete MT82-D4 six-speed manual transmission for the 2018-and-newer Mustang GT, as listed in Ford's parts catalog. The D4 designation refers to its direct-drive fourth gear, with fifth and sixth as overdrives and revised synchronizers compared with the earlier MT82.\n\nFitment: Ford Mustang GT with the 5.0L Coyote V8, rear-wheel drive, 2018–2023. Ford lists JR3Z-7003-A for 2018 and JR3Z-7003-E (which replaces JR3Z-7003-B, -C and -D) for the later years\nSpecifications: 6-speed manual; direct-drive 4th, overdrive 5th and 6th; rear-wheel drive\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "ford-performance-mt82-d4-manual-transmission-for-mustang-gt",
     "createdAt": 1751959999981,
-    "topDemand": true
+    "topDemand": true,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1965,
-    "name": "Ford 10R80 10-Speed Automatic Transmission — Ford Ranger (2019–2023)",
+    "name": "Ford 10R80 10-Speed Automatic Transmission — Ranger 2.3L EcoBoost (2019–2023)",
     "category": "transmission",
     "brand": "ford",
     "price": 2682.5,
     "stock": false,
-    "fitment": "Ford Ranger (US), 2.3L EcoBoost, 2019–2023",
+    "fitment": "Ford Ranger (US) with the 2.3L EcoBoost, 2019–2023. Ford lists KB3Z-7000-A for two-wheel drive and KB3Z-7000-B for four-wheel drive",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Ford 10R80 10-Speed Automatic Transmission — Ford Ranger (2019–2023)\n\nFord's 10R80 ten-speed automatic transmission as fitted to the US-market Ranger with the 2.3L EcoBoost. The 2024 and newer Ranger uses the 10R60 instead.\n\nFitment: Ford Ranger (US), 2.3L EcoBoost, 2019–2023\nSpecifications: 10-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Ford 10R80 10-Speed Automatic Transmission — Ranger 2.3L EcoBoost (2019–2023)\n\nComplete Ford 10R80 ten-speed automatic transmission assembly for the 2.3L Ranger, as listed in Ford's parts catalog. The 2024-and-newer Ranger uses the 10R60 instead.\n\nFitment: Ford Ranger (US) with the 2.3L EcoBoost, 2019–2023. Ford lists KB3Z-7000-A for two-wheel drive and KB3Z-7000-B for four-wheel drive\nSpecifications: 10-speed automatic (10R80); part KB3Z-7000-A (2WD) or KB3Z-7000-B (4WD)\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "ford-genuine-10-speed-transmission-for-ford-ranger",
-    "createdAt": 1751959999980
+    "createdAt": 1751959999980,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1966,
-    "name": "GM 10L80 10-Speed Automatic Transmission — Chevrolet Camaro SS (2019–2022)",
+    "name": "GM 10L80 10-Speed Automatic Transmission — Chevrolet Camaro SS 6.2L LT1 (2019–2022)",
     "category": "transmission",
     "brand": "gm",
     "price": 2174.96,
     "stock": false,
-    "fitment": "Chevrolet Camaro SS 6.2L LT1, 2019–2022",
+    "fitment": "Chevrolet Camaro SS (1SS/2SS) with the 6.2L LT1, 2019–2022. GM lists the assembly under several part numbers by build code (for example 24290637 for 2019 and 24294946 for 2021–2022)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "GM 10L80 10-Speed Automatic Transmission — Chevrolet Camaro SS (2019–2022)\n\nGM 10L80 ten-speed automatic transmission for the 6.2L LT1 Camaro SS from the 2019 model year, when the SS moved from the 8L90 to the 10-speed. The ZL1 uses the related 10L90 and is not covered.\n\nFitment: Chevrolet Camaro SS 6.2L LT1, 2019–2022\nSpecifications: 10-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "GM 10L80 10-Speed Automatic Transmission — Chevrolet Camaro SS 6.2L LT1 (2019–2022)\n\nComplete GM 10L80 ten-speed automatic transmission assembly for the Camaro SS, as listed in GM's parts catalog. The ZL1 uses the related 10L90 and is not covered.\n\nFitment: Chevrolet Camaro SS (1SS/2SS) with the 6.2L LT1, 2019–2022. GM lists the assembly under several part numbers by build code (for example 24290637 for 2019 and 24294946 for 2021–2022)\nSpecifications: 10-speed automatic (10L80); rear-wheel drive; confirm the part number for your model year and build\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "chevrolet-performance-10l80-automatic-transmission-for-camaro-ss",
     "createdAt": 1751959999979,
-    "topDemand": true
+    "topDemand": true,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1967,
-    "name": "GM 8L90 8-Speed Automatic Transmission for Chevrolet Corvette C7 (2015–2019)",
+    "name": "GM 8L90 8-Speed Automatic Transmission, Remanufactured — Chevrolet Corvette C7 (2015–2019)",
     "category": "transmission",
     "brand": "gm",
     "price": 4241.25,
     "stock": false,
-    "fitment": "Chevrolet Corvette C7, 2015–2019",
+    "fitment": "Chevrolet Corvette C7 with the 6.2L V8, 2015–2019. GM lists remanufactured assemblies by year (for example 19433286 for 2015–2017, 19433309 for 2018 and 19433320 or 19433321 for 2019; 19433287 for the Z06)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "GM 8L90 8-Speed Automatic Transmission for Chevrolet Corvette C7 (2015–2019)\n\nComplete transmission.\nFitment: Chevrolet Corvette C7, 2015–2019\nSpecifications: 8-speed automatic; ratios 4.56 / 2.97 / 2.08 / 1.69 / 1.27 / 1.00 / 0.85 / 0.65\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "GM 8L90 8-Speed Automatic Transmission, Remanufactured — Chevrolet Corvette C7 (2015–2019)\n\nComplete GM 8L90 eight-speed automatic transmission, supplied by GM as a remanufactured assembly for the C7 Corvette. The standard-coupe and Z06 units carry different part numbers.\n\nFitment: Chevrolet Corvette C7 with the 6.2L V8, 2015–2019. GM lists remanufactured assemblies by year (for example 19433286 for 2015–2017, 19433309 for 2018 and 19433320 or 19433321 for 2019; 19433287 for the Z06)\nSpecifications: 8-speed automatic (8L90); remanufactured; confirm the part number for your model year and trim\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "chevrolet-performance-8l90-automatic-transmission-for-corvette-c7",
-    "createdAt": 1751959999978
+    "createdAt": 1751959999978,
+    "condition": "refurbished",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1968,
