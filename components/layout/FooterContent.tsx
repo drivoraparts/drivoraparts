@@ -94,10 +94,6 @@ const LEGAL_LINKS: FooterLink[] = [
   { href: SHIPPING_POLICY_HREF, label: "shippingPolicy" },
   { href: RETURN_POLICY_HREF, label: "returnsRefunds" },
   { href: WARRANTY_POLICY_HREF, label: "warrantyPolicy" },
-  // Several vehicle photographs are CC BY-SA, which requires the creator,
-  // the licence and the source to be reachable. A link from every page
-  // satisfies the licence without ending the homepage on legal text.
-  { href: "/photography-credits", label: "imageCredits" },
 ];
 
 /*
@@ -123,10 +119,10 @@ type PaymentBadge =
 const PAYMENT_BADGES: Record<string, PaymentBadge> = {
   bank_transfer: { text: "Bank Transfer" },
   wire: { text: "Wire (SWIFT)", srPrefix: "International " },
-  zelle: { src: "/trust/zelle-mark.png", width: 196, height: 196, className: "h-5 w-5" },
-  cash_app: { src: "/trust/cashapp-mark.png", width: 132, height: 132, className: "h-5 w-5" },
-  venmo: { src: "/trust/venmo-logo-blue.png", width: 1400, height: 265, className: "h-3.5 w-auto" },
-  paypal: { src: "/trust/paypal-mark.png", width: 209, height: 209, className: "h-5 w-5" },
+  zelle: { src: "/trust/zelle-mark.png", width: 196, height: 196, className: "h-3 w-3" },
+  cash_app: { src: "/trust/cashapp-mark.png", width: 132, height: 132, className: "h-3 w-3" },
+  venmo: { src: "/trust/venmo-logo-blue.png", width: 1400, height: 265, className: "h-2 w-auto" },
+  paypal: { src: "/trust/paypal-mark.png", width: 209, height: 209, className: "h-3 w-3" },
 };
 
 const PAYMENT_ROW: { key: string; label: string; badge: PaymentBadge }[] = [
@@ -237,21 +233,21 @@ export default function FooterContent() {
 
       <ul
         aria-label={t("footerPaymentMethods")}
-        className="flex flex-wrap items-center justify-center gap-2 pb-8"
+        className="flex flex-nowrap items-center justify-center gap-1 pb-8"
       >
         {PAYMENT_ROW.map(({ key, label, badge }) => (
           <li
             key={key}
-            className="inline-flex h-7 items-center justify-center rounded-[4px] bg-white px-2"
+            className="inline-flex h-4 shrink-0 items-center justify-center rounded-[3px] bg-white px-1"
           >
             {"text" in badge ? (
-              <span className="px-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-neutral-800">
+              <span className="text-[7px] font-semibold uppercase leading-none tracking-[0.04em] text-neutral-800">
                 {badge.srPrefix ? <span className="sr-only">{badge.srPrefix}</span> : null}
                 {badge.text}
               </span>
             ) : (
               // Small static brand files served as-is; the image optimiser
-              // would add nothing at 20px.
+              // would add nothing at 12px.
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={badge.src}
