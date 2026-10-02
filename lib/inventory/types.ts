@@ -97,7 +97,22 @@ export type Product = {
   /** Curated high-demand SKU flag for category starter lists. */
   topDemand?: boolean;
 
-  /** Original supplier / reference listing URL (imported catalog provenance). */
+  /**
+   * The listing's reference price was read from a supplier page that can still
+   * be checked. This is all the storefront needs from that provenance: it
+   * decides whether a struck-through price and ON SALE badge may be shown.
+   * The supplier URL itself is deliberately NOT stored here -- catalog data is
+   * bundled into browser JavaScript, so a URL in it is readable by every
+   * visitor and names the supplier.
+   */
+  referencePriceVerified?: boolean;
+
+  /**
+   * Import-time only. New import scripts may still emit a supplier URL; it is
+   * honoured by the pricing check but must be converted to
+   * `referencePriceVerified` before it is committed (audit-storefront-claims
+   * fails the build otherwise).
+   */
   sourceUrl?: string;
 
   /* =======================================================

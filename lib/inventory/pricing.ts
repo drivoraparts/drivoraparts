@@ -114,7 +114,7 @@ export function resolvePublicPrice(product: Pick<Product, "id" | "price">): numb
  * Nothing here invents a reference price, and no selling price changes.
  */
 function hasVerifiableReferencePrice(product: Product): boolean {
-  return Boolean(product.sourceUrl?.trim());
+  return product.referencePriceVerified === true || Boolean(product.sourceUrl?.trim());
 }
 
 export function applyPublicPrices(items: Product[]): Product[] {

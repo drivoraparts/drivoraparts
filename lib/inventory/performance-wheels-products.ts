@@ -153,8 +153,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
       `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/3.png`,
       `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/4.jpg`,
     ]),
-    sourceUrl:
-      "https://www.getbmwparts.com/p-m-double-spoke-style-706m-20-rim-set-black-36118073979kit",
+    referencePriceVerified: true,
     description: `OEM 20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)
 
 100% genuine BMW OEM wheel set for the BMW M5 (F90) — the factory M Double Spoke Style 706M, finished in a deep Gloss Black for a clean, factory-correct, performance-luxury look. Every wheel is brand new, built to BMW's exact factory specifications, and sourced through an authorized genuine-parts channel for true OEM fitment, load rating, and finish quality.
