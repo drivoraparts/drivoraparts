@@ -103,6 +103,10 @@ function pickMetaCatalogImage(product: Product): string | null {
 }
 
 export function toMetaCatalogFeedRow(product: Product): MetaCatalogFeedRow | null {
+  // The feed never invents a condition: a listing with none recorded (held
+  // pending business confirmation) is left out rather than sent as "new".
+  if (!product.condition?.trim()) return null;
+
   const image = pickMetaCatalogImage(product);
   if (!image) return null;
 

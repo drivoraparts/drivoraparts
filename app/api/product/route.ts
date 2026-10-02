@@ -26,7 +26,9 @@ export async function GET(req: Request) {
     {
       ...product,
       stock,
-      inStock: stock > 0 || catalogInStock,
+      // An explicit catalog out-of-stock state (stock:false) can never be
+      // overridden by a positive database quantity.
+      inStock: catalogInStock && stock > 0,
     },
     {
       headers: {

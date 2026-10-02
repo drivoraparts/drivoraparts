@@ -54,6 +54,7 @@ process.stdout.write(
       id: p.id,
       name: p.name,
       condition: p.condition,
+      stock: p.stock,
       sourceUrl: p.sourceUrl,
       mileage: p.mileage,
       coreCharge: p.coreCharge,
@@ -179,8 +180,46 @@ for (const product of products) {
   }
 }
 
+// The transmission importer used to stamp every listing with claims nobody had
+// verified. These phrases are never acceptable in a description, and the
+// importer must not be able to reintroduce them or the invented values.
+const IMPORTER_TEMPLATE_CLAIMS = [
+  /verified fitment, inspected before shipment/i,
+  /ready for performance street, track, or 4WD builds/i,
+  /Worldwide shipping available . freight quotes provided for heavy assemblies/i,
+];
+for (const product of products) {
+  for (const re of IMPORTER_TEMPLATE_CLAIMS) {
+    if (re.test(product.description)) {
+      problems.push(`[claims] ${product.id} carries an unverified importer template claim (${re}): ${product.name}`);
+    }
+  }
+}
+{
+  const importerSrc = fs.readFileSync(path.join(ROOT, "scripts", "import-transmissions.mjs"), "utf8");
+  const forbidden = [
+    [/stockQty\s*:\s*\d/, "invents stock quantity"],
+    [/condition\s*:\s*["']/, "invents a condition"],
+    [/warranty\s*:\s*["']/, "invents a warranty"],
+    [/location\s*:\s*["']/, "invents a fulfilment location"],
+    [/verified fitment|inspected before shipment|inspected and tested/i, "makes an unverified claim"],
+    [/sourceUrl\s*:\s*listingMeta/, "ships a supplier URL"],
+  ];
+  for (const [re, why] of forbidden) {
+    if (re.test(importerSrc)) {
+      problems.push(`[importer] scripts/import-transmissions.mjs ${why} (${re})`);
+    }
+  }
+  if (!importerSrc.includes("--force-overwrite")) {
+    problems.push("[importer] scripts/import-transmissions.mjs lost its overwrite protection");
+  }
+}
+
 for (const product of products) {
   const stored = String(product.condition ?? "").trim();
+  // A held listing (stock:false) with no condition at all is allowed: it cannot
+  // be bought and every layer omits the condition instead of defaulting it.
+  if (!stored && product.stock === false) continue;
   if (!stored || !KNOWN_CONDITION.test(stored)) {
     problems.push(
       `[condition] ${product.id} records no recognised condition ("${stored}") and would silently badge Brand New: ${product.name}`

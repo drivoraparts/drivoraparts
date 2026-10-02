@@ -4,7 +4,7 @@ import { useState, type MouseEvent } from "react";
 import { useCart } from "@/context/CartContext";
 import { trackEvent } from "@/lib/analytics/client";
 import { readSearchAttribution } from "@/lib/analytics/search-tracking";
-import { productHasStock } from "@/lib/stock";
+import { catalogAllowsPurchase, productHasStock } from "@/lib/stock";
 import {
   MAX_LINE_ITEMS,
   MAX_QUANTITY_PER_ITEM,
@@ -67,7 +67,11 @@ export default function AddToCartButton({
         const data = await res.json().catch(() => null);
 
         if (res.ok && data) {
-          canAdd = Boolean(data.inStock) && Number(data.stock) >= totalQty;
+          // Catalog stock:false is authoritative; the API may only add more detail.
+          canAdd =
+            catalogAllowsPurchase(product.id) &&
+            Boolean(data.inStock) &&
+            Number(data.stock) >= totalQty;
         }
       } catch {
         // Use catalog stock when the API is unavailable.
