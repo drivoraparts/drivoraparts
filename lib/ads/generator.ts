@@ -1,6 +1,6 @@
 import { listAnalyticsEvents } from "@/lib/db/analytics";
 import { safeQuery } from "@/lib/db/safe-query";
-import { withKnown } from "@/lib/ads/text";
+import { joinKnown, ratingText, reviewsText, withKnown } from "@/lib/ads/text";
 import { getProductById } from "@/lib/inventory";
 import type { Product } from "@/lib/inventory/types";
 
@@ -34,7 +34,7 @@ function buildFacebookAds(product: Product, views: number, cartAdds: number): Fa
   const price = `$${product.price.toLocaleString()}`;
   const socialProof =
     product.reviewCount > 0
-      ? `${product.reviewCount}+ reviews · ${product.rating}★`
+      ? joinKnown([reviewsText(product.reviewCount), ratingText(product.rating)])
       : "Trusted by performance builders";
 
   return [

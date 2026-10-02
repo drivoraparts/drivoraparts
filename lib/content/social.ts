@@ -1,7 +1,7 @@
 import { getProductById } from "@/lib/inventory";
 import type { Product } from "@/lib/inventory/types";
 import { collectProductSignals } from "@/lib/ai/product-metrics";
-import { withKnown } from "@/lib/ads/text";
+import { joinKnown, ratingText, reviewsText, withKnown } from "@/lib/ads/text";
 
 export type SocialContentPack = {
   productId: number;
@@ -49,9 +49,9 @@ function buildPack(
     productId: product.id,
     productName: product.name,
     tiktokCaption: `🔥 ${product.name} is LIVE\n${price}${withKnown(product.location, " · ")}\n${metrics.cartAdds}+ added to cart this week\n#${(product.brand ?? "cars").replace(/\s/g, "")} #${product.category} #enginebuild #drivoraparts`,
-    instagramCaption: `${product.name}\n\n${product.rating}★ rated · ${product.reviewCount}+ reviews\n${price}${withKnown(product.condition, " · ")}\n${withKnown(product.location, "Ships from ", "\n")}\nTap link in bio — limited stock.\n\n${keywordLine}`,
+    instagramCaption: `${product.name}\n\n${withKnown(joinKnown([withKnown(ratingText(product.rating), "", " rated"), reviewsText(product.reviewCount)]), "", "\n")}${price}${withKnown(product.condition, " · ")}\n${withKnown(product.location, "Ships from ", "\n")}\nTap link in bio — limited stock.\n\n${keywordLine}`,
     facebookMarketplaceDescription: `${product.name}\n\n${withKnown(product.condition, "Condition: ", "\n")}Price: ${price}\n${withKnown(product.location, "Location: ", "\n")}\nOEM-grade ${product.category} part for performance builds. Verified catalog listing on DrivoraParts with secure checkout.\n\nKeywords: ${keywords.join(", ")}`,
-    seoDescription: `Buy ${product.name} online at DrivoraParts. ${withKnown(product.condition, "", " ")}${product.category} for ${product.platform?.replace(/-/g, " ") ?? "performance builds"}. ${product.rating}★ rating, fast shipping${withKnown(product.location, " from ")}. Price ${price}.`,
+    seoDescription: `Buy ${product.name} online at DrivoraParts. ${withKnown(product.condition, "", " ")}${product.category} for ${product.platform?.replace(/-/g, " ") ?? "performance builds"}. ${withKnown(ratingText(product.rating), "", " rating, ")}fast shipping${withKnown(product.location, " from ")}. Price ${price}.`,
     trendingKeywords: keywords,
     generatedAt: Date.now(),
   };

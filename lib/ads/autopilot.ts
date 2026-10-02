@@ -3,7 +3,7 @@ import type { Product } from "@/lib/inventory/types";
 import { detectViralProducts } from "@/lib/ai/viral-detector";
 import { collectProductSignals } from "@/lib/ai/product-metrics";
 import { safeQuery } from "@/lib/db/safe-query";
-import { withKnown } from "@/lib/ads/text";
+import { joinKnown, ratingText, reviewsText, withKnown } from "@/lib/ads/text";
 
 export type AutopilotAdPlatform = "tiktok" | "meta" | "google";
 
@@ -55,12 +55,21 @@ function buildTikTokAd(
     script: [
       `[0s] ${hook}`,
       `[2s] POV: your project finally moves forward`,
-      `[4s] ${product.name} — ${product.rating}★ · ${product.reviewCount}+ reviews`,
+      `[4s] ${product.name}${withKnown(joinKnown([ratingText(product.rating), reviewsText(product.reviewCount)]), " — ")}`,
       `[6s] Tap before stock runs out`,
     ].join(" "),
     cta: "Shop Now",
     targeting: buildTargeting(product, metrics.cartRate),
   };
+}
+
+/** "Lead with proof: N+ reviews at R★." when both are known; omits whatever is missing. */
+function proofLead(product: Product): string {
+  const reviews = reviewsText(product.reviewCount);
+  const rating = ratingText(product.rating);
+  if (reviews && rating) return `Lead with proof: ${reviews} at ${rating}.`;
+  if (reviews || rating) return `Lead with proof: ${reviews || rating}.`;
+  return "Lead with the product details.";
 }
 
 function buildMetaAd(
@@ -74,7 +83,7 @@ function buildMetaAd(
     platform: "meta",
     hook,
     adCopy: `${hook}. OEM-grade ${product.category} component for serious builds. ${metrics.views} recent views, ${metrics.cartAdds} cart adds. Multiple payment options available. Starting at $${product.price.toLocaleString()}.`,
-    script: `Lead with proof: ${product.reviewCount}+ reviews at ${product.rating}★. Highlight fast fulfillment${withKnown(product.location, " from ")}. Close with limited inventory urgency.`,
+    script: `${proofLead(product)} Highlight fast fulfillment${withKnown(product.location, " from ")}. Close with limited inventory urgency.`,
     cta: "Buy Now",
     targeting: buildTargeting(product, metrics.cartRate),
   };

@@ -37,6 +37,8 @@ import { generateSocialContentForProduct } from "@/lib/content/social";
 const all = getAllProducts();
 const unknown = all.find((p) => p.id >= 1945 && p.id <= 1986 && !p.location);
 const known = all.find((p) => p.location && p.condition);
+const rated = all.find((p) => Number.isFinite(p.rating) && p.reviewCount > 0 && p.location && p.condition);
+const unrated = all.find((p) => p.rating == null && p.reviewCount == null);
 async function texts(id: number) {
   return JSON.stringify([
     await generateAdPack(id),
@@ -50,6 +52,12 @@ process.stdout.write(JSON.stringify({
   knownId: known?.id ?? null,
   knownLocation: known?.location ?? "",
   knownText: known ? await texts(known.id) : "",
+  ratedId: rated?.id ?? null,
+  rating: rated?.rating ?? null,
+  reviewCount: rated?.reviewCount ?? null,
+  ratedText: rated ? await texts(rated.id) : "",
+  unratedId: unrated?.id ?? null,
+  unratedText: unrated ? await texts(unrated.id) : "",
 }));
 `
 );
@@ -79,13 +87,8 @@ const out = JSON.parse(
 );
 fs.rmSync(tmp, { recursive: true, force: true });
 
-/*
- * Only location/condition leaks are in scope: a literal "undefined"/"null"
- * where one of those facts belongs. Other generated fields (e.g. rating) are
- * not covered by this check.
- */
-const LEAK =
-  /(?:from|Location:|Condition:|In-stock)\s*(?:undefined|null)\b|·\s*(?:undefined|null)\b(?![★+])|\b(?:undefined|null)(?: condition| auto parts| ·)/i;
+/* No generated copy may contain a literal placeholder for a missing fact. */
+const LEAK = /\bundefined\b|\bNaN\b|\bnull\b/i;
 const problems = [];
 if (out.unknownId == null) problems.push("no location-less listing found to test (expected a held listing in 1945-1986)");
 if (out.knownId == null) problems.push("no listing with a location and condition found to test");
@@ -102,8 +105,19 @@ if (LEAK.test(out.knownText)) {
   problems.push(`generated copy for #${out.knownId} contains "undefined" or "null"`);
 }
 
+if (out.unratedId == null) problems.push("no listing without rating/review data found to test");
+else if (LEAK.test(out.unratedText)) problems.push(`generated copy for #${out.unratedId} (no rating/reviews) contains "undefined", "null" or "NaN"`);
+else if (/★|\d\+ reviews/.test(out.unratedText)) problems.push(`generated copy for #${out.unratedId} mentions a rating or review count it does not have`);
+if (out.ratedId == null) {
+  // The catalog may legitimately hold no rating data; the unrated case above still guards the leak.
+} else {
+  if (LEAK.test(out.ratedText)) problems.push(`generated copy for #${out.ratedId} contains "undefined", "null" or "NaN"`);
+  if (!out.ratedText.includes(`${out.rating}★`) || !out.ratedText.includes(`${out.reviewCount}+ reviews`)) {
+    problems.push(`generated copy for #${out.ratedId} lost its known rating (${out.rating}★) or review count (${out.reviewCount}+ reviews)`);
+  }
+}
 if (problems.length) {
   console.error(problems.map((p) => `  [unknown-facts] ${p}`).join("\n"));
   process.exit(1);
 }
-console.log(`Unknown-facts check passed (location-less #${out.unknownId}, known-location #${out.knownId}).`);
+console.log(`Unknown-facts check passed (location-less #${out.unknownId}, known-location #${out.knownId}, unrated #${out.unratedId}, rated ${out.ratedId == null ? "none in catalog" : "#" + out.ratedId}).`);
