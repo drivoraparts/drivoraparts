@@ -1,20 +1,24 @@
 [
   {
     "id": 1945,
-    "name": "ZF 8HP90 8-Speed Automatic Transmission for Dodge Challenger / Charger SRT Hellcat",
+    "name": "ZF 8HP90 8-Speed Automatic Transmission — Dodge Challenger / Charger SRT Hellcat",
     "category": "transmission",
     "brand": "zf",
     "price": 4800,
     "stock": false,
-    "fitment": "Dodge Challenger and Charger SRT Hellcat, 6.2L supercharged V8",
+    "fitment": "Dodge Challenger SRT Hellcat and Charger SRT Hellcat (including Redeye and Widebody), 6.2L supercharged V8, 2015–2023",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "ZF 8HP90 8-Speed Automatic Transmission for Dodge Challenger / Charger SRT Hellcat\n\nComplete transmission.\nFitment: Dodge Challenger and Charger SRT Hellcat, 6.2L supercharged V8\nSpecifications: 8-speed automatic (8HP90)\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "ZF 8HP90 8-Speed Automatic Transmission — Dodge Challenger / Charger SRT Hellcat\n\nComplete ZF 8HP90 eight-speed automatic transmission supplied with its torque converter, built for the supercharged 6.2L V8 in the Dodge Challenger and Charger SRT Hellcat. The 8HP90 is the highest-torque version of ZF's 8HP family and is not interchangeable with the 8HP70 or 8HP75 used in lower-output models. Mopar part number 68283000AB.\n\nFitment: Dodge Challenger SRT Hellcat and Charger SRT Hellcat (including Redeye and Widebody), 6.2L supercharged V8, 2015–2023\nPart Number: 68283000AB\nSpecifications: 8-speed automatic; supplied with torque converter\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "zf-8hp75-automatic-transmission-for-dodge-challenger-hellcat",
-    "createdAt": 1751960000000
+    "createdAt": 1751960000000,
+    "partNumber": "68283000AB",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1946,
@@ -41,13 +45,11 @@
     "price": 2098.88,
     "stock": false,
     "fitment": "Ford Mustang manual-transmission conversion; kit-specific",
-    "thumbnail": "/product-media/transmission/tremec-tkx-5-speed-transmission-for-ford-mustang-classic/1.jpg",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/tremec-tkx-5-speed-transmission-for-ford-mustang-classic/1.jpg",
-      "/product-media/transmission/tremec-tkx-5-speed-transmission-for-ford-mustang-classic/2.jpg",
-      "/product-media/transmission/tremec-tkx-5-speed-transmission-for-ford-mustang-classic/3.jpg"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/tremec-tkx-5-speed-transmission-for-ford-mustang-classic/1.jpg",
+    "image": "/product-media/placeholders/transmission.svg",
     "description": "Tremec TKX 5-Speed Manual Transmission for Ford Mustang\n\nComplete transmission.\nFitment: Ford Mustang manual-transmission conversion; kit-specific\nSpecifications: 5-speed rear-wheel-drive manual; 600 lb-ft; 3 shifter locations; shift point 7,500 rpm (Tremec)\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "tremec-tkx-5-speed-transmission-for-ford-mustang-classic",
     "createdAt": 1751959999998
@@ -60,12 +62,11 @@
     "price": 2678.88,
     "stock": false,
     "fitment": "Aftermarket swap application; a vehicle-specific kit is required",
-    "thumbnail": "/product-media/transmission/tremec-t56-magnum-xl-for-dodge-challenger/1.jpg",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/tremec-t56-magnum-xl-for-dodge-challenger/1.jpg",
-      "/product-media/transmission/tremec-t56-magnum-xl-for-dodge-challenger/2.jpg"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/tremec-t56-magnum-xl-for-dodge-challenger/1.jpg",
+    "image": "/product-media/placeholders/transmission.svg",
     "description": "Tremec T56 Magnum XL 6-Speed Manual Transmission\n\nComplete transmission.\nFitment: Aftermarket swap application; a vehicle-specific kit is required\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "tremec-t56-magnum-xl-for-dodge-challenger",
     "createdAt": 1751959999997
@@ -89,35 +90,35 @@
   },
   {
     "id": 1950,
-    "name": "Getrag 420G 6-Speed Manual Transmission for BMW M5 (E39)",
+    "name": "Getrag 420G 6-Speed Manual Transmission — BMW M5 (E39)",
     "category": "transmission",
     "brand": "getrag",
     "price": 5100,
     "stock": false,
-    "fitment": "BMW M5 (E39) with the S62 V8",
+    "fitment": "BMW M5 (E39), S62 4.9L V8, 1999–2003",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Getrag 420G 6-Speed Manual Transmission for BMW M5 (E39)\n\nComplete transmission.\nFitment: BMW M5 (E39) with the S62 V8\nSpecifications: 6-speed manual; rated to about 368 lb-ft (499 N·m)\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Getrag 420G 6-Speed Manual Transmission — BMW M5 (E39)\n\nGetrag 420G six-speed manual transmission as fitted to the E39 BMW M5 with the 4.9L S62 V8. The 420G is rated to roughly 368 lb-ft (499 N·m) and is also used in several other BMW M-car applications.\n\nFitment: BMW M5 (E39), S62 4.9L V8, 1999–2003\nSpecifications: 6-speed manual; about 368 lb-ft (499 N·m) rated torque\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "getrag-420g-6-speed-manual-transmission-for-bmw-m5-e39",
     "createdAt": 1751959999995
   },
   {
     "id": 1951,
-    "name": "Getrag MT82 6-Speed Manual Transmission for Ford Mustang GT (2011–2017)",
+    "name": "Getrag MT82 6-Speed Manual Transmission — Ford Mustang GT (2011–2017)",
     "category": "transmission",
     "brand": "getrag",
     "price": 2200,
     "stock": false,
-    "fitment": "Ford Mustang GT 2011–2014 (S197) and 2015–2017 (S550); the 2018+ MT82-D4 is a different unit",
+    "fitment": "Ford Mustang GT 5.0L, 2011–2017",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Getrag MT82 6-Speed Manual Transmission for Ford Mustang GT (2011–2017)\n\nComplete transmission.\nFitment: Ford Mustang GT 2011–2014 (S197) and 2015–2017 (S550); the 2018+ MT82-D4 is a different unit\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Getrag MT82 6-Speed Manual Transmission — Ford Mustang GT (2011–2017)\n\nSix-speed Getrag MT82 manual transmission for the 5.0L Coyote Mustang GT. This is the pre-2018 MT82; the later MT82-D4 with a direct-drive fourth gear is a different transmission.\n\nFitment: Ford Mustang GT 5.0L, 2011–2017\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "getrag-mt82-manual-transmission-for-ford-mustang-gt",
     "createdAt": 1751959999994
   },
@@ -146,12 +147,11 @@
     "price": 3100,
     "stock": false,
     "fitment": "Toyota Hilux and Fortuner diesel, 2015 and newer",
-    "thumbnail": "/product-media/transmission/aisin-ac60-automatic-transmission-for-toyota-hilux/1.webp",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/aisin-ac60-automatic-transmission-for-toyota-hilux/1.webp",
-      "/product-media/transmission/aisin-ac60-automatic-transmission-for-toyota-hilux/2.webp"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/aisin-ac60-automatic-transmission-for-toyota-hilux/1.jpg",
+    "image": "/product-media/placeholders/transmission.svg",
     "description": "Aisin AC60 6-Speed Automatic Transmission for Toyota Hilux / Fortuner (2015+ Diesel)\n\nComplete transmission.\nFitment: Toyota Hilux and Fortuner diesel, 2015 and newer\nSpecifications: 6-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "aisin-ac60-automatic-transmission-for-toyota-hilux",
     "createdAt": 1751959999992,
@@ -159,7 +159,7 @@
   },
   {
     "id": 1954,
-    "name": "Aisin Automatic Transmission",
+    "name": "Aisin TB-68LS 6-Speed Automatic Transmission",
     "category": "transmission",
     "brand": "aisin",
     "price": 5400,
@@ -169,9 +169,10 @@
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Aisin Automatic Transmission\n",
+    "description": "Aisin TB-68LS 6-Speed Automatic Transmission\n\nAisin TB-68LS six-speed automatic transmission (sold under the AB60E rear-drive and AB60F four-wheel-drive designations). It was fitted to the Toyota Land Cruiser 200, Lexus LX570, Toyota Sequoia and Toyota Tundra; it is not the transmission used in the Land Cruiser 300, which has a 10-speed.\n\nFitment: Toyota Land Cruiser 200 and Lexus LX570 (2007–2015); Toyota Sequoia (2007–2022); Toyota Tundra (2006–2021). The AB60E / AB60F variant is not specified\nSpecifications: 6-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "aisin-tb68-automatic-transmission-for-toyota-landcruiser-300",
-    "createdAt": 1751959999991
+    "createdAt": 1751959999991,
+    "fitment": "Toyota Land Cruiser 200 and Lexus LX570 (2007–2015); Toyota Sequoia (2007–2022); Toyota Tundra (2006–2021). The AB60E / AB60F variant is not specified"
   },
   {
     "id": 1955,
@@ -227,25 +228,24 @@
   },
   {
     "id": 1958,
-    "name": "GM / Allison 10L1000 10-Speed Automatic Transmission for Silverado / Sierra 2500HD–3500HD (2020+)",
+    "name": "GM / Allison 10L1000 10-Speed Automatic Transmission — Silverado / Sierra 2500HD–3500HD",
     "category": "transmission",
     "brand": "allison",
     "price": 4600,
     "stock": false,
-    "fitment": "Chevrolet Silverado and GMC Sierra 2500HD / 3500HD, 2020–2025 with the 6.6L L5P diesel; 6.6L gas engine from 2024",
-    "thumbnail": "/product-media/transmission/allison-10-speed-transmission-for-chevrolet-silverado-hd/1.jpg",
+    "fitment": "Chevrolet Silverado HD and GMC Sierra HD 2500/3500, 6.6L L5P diesel, 2020 onward",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/allison-10-speed-transmission-for-chevrolet-silverado-hd/1.jpg",
-      "/product-media/transmission/allison-10-speed-transmission-for-chevrolet-silverado-hd/2.jpg"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/allison-10-speed-transmission-for-chevrolet-silverado-hd/1.jpg",
-    "description": "GM / Allison 10L1000 10-Speed Automatic Transmission for Silverado / Sierra 2500HD–3500HD (2020+)\n\nComplete transmission.\nFitment: Chevrolet Silverado and GMC Sierra 2500HD / 3500HD, 2020–2025 with the 6.6L L5P diesel; 6.6L gas engine from 2024\nSpecifications: 10-speed automatic; overall ratio span 4.540 to 0.631; 10.63 in torque converter; 22.1 qt fluid capacity\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/placeholders/transmission.svg",
+    "description": "GM / Allison 10L1000 10-Speed Automatic Transmission — Silverado / Sierra 2500HD–3500HD\n\nTen-speed 10L1000 automatic transmission used behind the 6.6L L5P Duramax in the 2020-and-newer Chevrolet Silverado and GMC Sierra heavy-duty trucks. It is a GM-designed unit carrying Allison branding.\n\nFitment: Chevrolet Silverado HD and GMC Sierra HD 2500/3500, 6.6L L5P diesel, 2020 onward\nSpecifications: 10-speed automatic; first gear 4.54, tenth 0.63; 10.63 in converter; 22.1 qt capacity\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "allison-10-speed-transmission-for-chevrolet-silverado-hd",
     "createdAt": 1751959999987
   },
   {
     "id": 1959,
-    "name": "Nissan Automatic Transmission for Patrol Y62",
+    "name": "Nissan 32010-JK41A 6-Speed Manual Transmission",
     "category": "transmission",
     "brand": "nissan",
     "price": 3800,
@@ -255,9 +255,11 @@
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Nissan Automatic Transmission for Patrol Y62\n",
+    "description": "Nissan 32010-JK41A 6-Speed Manual Transmission\n\nNissan manual transmission assembly 32010-JK41A, a six-speed manual used in the Nissan 350Z / 370Z and Infiniti G35 / G37 family. Nissan's parts catalog lists it as replacing 32010-JK40B and 32010-JK40D. It is a manual transmission, not an automatic.\n\nFitment: Nissan 370Z (Nissan parts catalog); also marketed for the 350Z and Infiniti G35 / G37. Model years not established\nPart Number: 32010-JK41A\nSpecifications: 6-speed manual\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "nissan-jk41a-automatic-transmission-for-nissan-patrol-y62",
-    "createdAt": 1751959999986
+    "createdAt": 1751959999986,
+    "fitment": "Nissan 370Z (Nissan parts catalog); also marketed for the 350Z and Infiniti G35 / G37. Model years not established",
+    "partNumber": "32010-JK41A"
   },
   {
     "id": 1960,
@@ -279,7 +281,7 @@
     "id": 1961,
     "name": "Aisin 6-Speed Manual Transmission for Toyota GR86 / Subaru BRZ (2022+, FA24)",
     "category": "transmission",
-    "brand": "toyota",
+    "brand": "aisin",
     "price": 3200,
     "stock": false,
     "fitment": "Toyota GR86 and Subaru BRZ with the 2.4L FA24, 2022 and newer",
@@ -314,7 +316,7 @@
     "id": 1963,
     "name": "Aisin AC60 6-Speed Automatic Transmission for Toyota Hilux (2015+ Diesel)",
     "category": "transmission",
-    "brand": "toyota",
+    "brand": "aisin",
     "price": 2900,
     "stock": false,
     "fitment": "Toyota Hilux diesel, 2015 and newer",
@@ -329,54 +331,53 @@
   },
   {
     "id": 1964,
-    "name": "MT82-D4 6-Speed Manual Transmission for Ford Mustang GT (2018–2023)",
+    "name": "MT82-D4 6-Speed Manual Transmission — Ford Mustang GT (2018–2023)",
     "category": "transmission",
-    "brand": "ford-performance",
+    "brand": "ford",
     "price": 2824.42,
     "stock": false,
-    "fitment": "Ford Mustang GT 5.0L, 2018–2023 (S550)",
+    "fitment": "Ford Mustang GT 5.0L, 2018–2023",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "MT82-D4 6-Speed Manual Transmission for Ford Mustang GT (2018–2023)\n\nComplete transmission.\nFitment: Ford Mustang GT 5.0L, 2018–2023 (S550)\nSpecifications: 6-speed manual with direct-drive fourth gear\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "MT82-D4 6-Speed Manual Transmission — Ford Mustang GT (2018–2023)\n\nSix-speed MT82-D4 manual transmission for the 5.0L Coyote Mustang GT. The D4 designation refers to the direct-drive fourth gear, with fifth and sixth as overdrives, and revised synchronizers compared with the earlier MT82.\n\nFitment: Ford Mustang GT 5.0L, 2018–2023\nSpecifications: 6-speed manual; direct-drive 4th gear; overdrive 5th and 6th\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "ford-performance-mt82-d4-manual-transmission-for-mustang-gt",
     "createdAt": 1751959999981,
     "topDemand": true
   },
   {
     "id": 1965,
-    "name": "Ford 10R80 10-Speed Automatic Transmission for Ford Ranger (2019–2023)",
+    "name": "Ford 10R80 10-Speed Automatic Transmission — Ford Ranger (2019–2023)",
     "category": "transmission",
     "brand": "ford",
     "price": 2682.5,
     "stock": false,
-    "fitment": "Ford Ranger 2019–2023 (2.3L EcoBoost and EcoBlue 2.0 with the 10-speed)",
+    "fitment": "Ford Ranger (US), 2.3L EcoBoost, 2019–2023",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Ford 10R80 10-Speed Automatic Transmission for Ford Ranger (2019–2023)\n\nComplete transmission.\nFitment: Ford Ranger 2019–2023 (2.3L EcoBoost and EcoBlue 2.0 with the 10-speed)\nSpecifications: 10-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Ford 10R80 10-Speed Automatic Transmission — Ford Ranger (2019–2023)\n\nFord's 10R80 ten-speed automatic transmission as fitted to the US-market Ranger with the 2.3L EcoBoost. The 2024 and newer Ranger uses the 10R60 instead.\n\nFitment: Ford Ranger (US), 2.3L EcoBoost, 2019–2023\nSpecifications: 10-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "ford-genuine-10-speed-transmission-for-ford-ranger",
     "createdAt": 1751959999980
   },
   {
     "id": 1966,
-    "name": "GM 10L80 10-Speed Automatic Transmission for Chevrolet Camaro SS",
+    "name": "GM 10L80 10-Speed Automatic Transmission — Chevrolet Camaro SS (2019–2022)",
     "category": "transmission",
-    "brand": "chevrolet-performance",
+    "brand": "gm",
     "price": 2174.96,
     "stock": false,
-    "fitment": "Chevrolet Camaro SS with the 6.2L LT1 (later model years)",
-    "thumbnail": "/product-media/transmission/chevrolet-performance-10l80-automatic-transmission-for-camaro-ss/1.webp",
+    "fitment": "Chevrolet Camaro SS 6.2L LT1, 2019–2022",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/chevrolet-performance-10l80-automatic-transmission-for-camaro-ss/1.webp",
-      "/product-media/transmission/chevrolet-performance-10l80-automatic-transmission-for-camaro-ss/2.webp"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/chevrolet-performance-10l80-automatic-transmission-for-camaro-ss/1.jpg",
-    "description": "GM 10L80 10-Speed Automatic Transmission for Chevrolet Camaro SS\n\nComplete transmission.\nFitment: Chevrolet Camaro SS with the 6.2L LT1 (later model years)\nSpecifications: 10-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/placeholders/transmission.svg",
+    "description": "GM 10L80 10-Speed Automatic Transmission — Chevrolet Camaro SS (2019–2022)\n\nGM 10L80 ten-speed automatic transmission for the 6.2L LT1 Camaro SS from the 2019 model year, when the SS moved from the 8L90 to the 10-speed. The ZL1 uses the related 10L90 and is not covered.\n\nFitment: Chevrolet Camaro SS 6.2L LT1, 2019–2022\nSpecifications: 10-speed automatic\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "chevrolet-performance-10l80-automatic-transmission-for-camaro-ss",
     "createdAt": 1751959999979,
     "topDemand": true
@@ -385,16 +386,15 @@
     "id": 1967,
     "name": "GM 8L90 8-Speed Automatic Transmission for Chevrolet Corvette C7 (2015–2019)",
     "category": "transmission",
-    "brand": "chevrolet-performance",
+    "brand": "gm",
     "price": 4241.25,
     "stock": false,
     "fitment": "Chevrolet Corvette C7, 2015–2019",
-    "thumbnail": "/product-media/transmission/chevrolet-performance-8l90-automatic-transmission-for-corvette-c7/1.webp",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/chevrolet-performance-8l90-automatic-transmission-for-corvette-c7/1.webp",
-      "/product-media/transmission/chevrolet-performance-8l90-automatic-transmission-for-corvette-c7/2.webp"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/chevrolet-performance-8l90-automatic-transmission-for-corvette-c7/1.jpg",
+    "image": "/product-media/placeholders/transmission.svg",
     "description": "GM 8L90 8-Speed Automatic Transmission for Chevrolet Corvette C7 (2015–2019)\n\nComplete transmission.\nFitment: Chevrolet Corvette C7, 2015–2019\nSpecifications: 8-speed automatic; ratios 4.56 / 2.97 / 2.08 / 1.69 / 1.27 / 1.00 / 0.85 / 0.65\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "chevrolet-performance-8l90-automatic-transmission-for-corvette-c7",
     "createdAt": 1751959999978
@@ -433,74 +433,87 @@
   },
   {
     "id": 1970,
-    "name": "Sonnax Valve Body Kit — 34200-40K",
+    "name": "Sonnax Smart-Tech Overrun Clutch Valve Kit 34200-40K — GM 4L80-E / 4L85-E",
     "category": "transmission",
     "brand": "sonnax",
     "price": 420,
     "stock": false,
     "partNumber": "34200-40K",
-    "thumbnail": "/product-media/transmission/sonnax-valve-body-upgrade-kit-for-6r80/1.webp",
+    "thumbnail": "/product-media/transmission/sonnax-smart-tech-overrun-clutch-valve-kit-34200-40k/1.webp",
     "images": [
-      "/product-media/transmission/sonnax-valve-body-upgrade-kit-for-6r80/1.webp"
+      "/product-media/transmission/sonnax-smart-tech-overrun-clutch-valve-kit-34200-40k/1.webp"
     ],
-    "image": "/product-media/transmission/sonnax-valve-body-upgrade-kit-for-6r80/1.webp",
-    "description": "Sonnax Valve Body Kit — 34200-40K\n\nValve-body kit.\nPart Number: 34200-40K\n\nConfirm fitment against your vehicle and part number before ordering.",
-    "sourceSlug": "sonnax-valve-body-upgrade-kit-for-6r80",
-    "createdAt": 1751959999975
+    "image": "/product-media/transmission/sonnax-smart-tech-overrun-clutch-valve-kit-34200-40k/1.webp",
+    "description": "Sonnax Smart-Tech Overrun Clutch Valve Kit 34200-40K — GM 4L80-E / 4L85-E\n\nSonnax valve-body kit that applies the overrun clutch in every gear except overdrive fourth, reinforcing the overdrive roller clutch of the 4L80-E and 4L85-E under heavy load. It installs with a supplied drill jig and includes the valve manifold, valve, spring, sleeve, plugs, o-rings, brackets, tubes and hardware.\n\nFitment: GM 4L80-E and 4L85-E, 1997 onward\nPart Number: 34200-40K\nSpecifications: Part 34200-40K; includes drill jig with two drill bits, valve manifold assembly, valve, spring, sleeve, tabbed bore plug, o-rings, brackets and hardware\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "sourceSlug": "sonnax-smart-tech-overrun-clutch-valve-kit-34200-40k",
+    "createdAt": 1751959999975,
+    "fitment": "GM 4L80-E and 4L85-E, 1997 onward",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1971,
-    "name": "TransGo SHIFT KIT for GM 6L45 / 6L50 / 6L80 / 6L90 — SK 6L80",
+    "name": "TransGo SHIFT KIT SK 6L80 — GM 6L45 / 6L50 / 6L80 / 6L90",
     "category": "transmission",
     "brand": "transgo",
     "price": 87,
     "stock": false,
-    "fitment": "GM 6L45, 6L50, 6L80 and 6L90 transmissions, 2006 and newer",
+    "fitment": "GM 6L45, 6L50, 6L80 and 6L90 (also BMW applications using them), 2006 onward",
     "partNumber": "SK 6L80",
     "thumbnail": "/product-media/transmission/transgo-shift-kit-for-6l80/1.webp",
     "images": [
       "/product-media/transmission/transgo-shift-kit-for-6l80/1.webp"
     ],
     "image": "/product-media/transmission/transgo-shift-kit-for-6l80/1.webp",
-    "description": "TransGo SHIFT KIT for GM 6L45 / 6L50 / 6L80 / 6L90 — SK 6L80\n\nShift kit.\nFitment: GM 6L45, 6L50, 6L80 and 6L90 transmissions, 2006 and newer\nPart Number: SK 6L80\nSpecifications: Valve-body repair (shift) kit\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "TransGo SHIFT KIT SK 6L80 — GM 6L45 / 6L50 / 6L80 / 6L90\n\nValve-body repair kit for the GM 6L-series automatics. Its drop-in steel valves address wear in the pressure-regulator and solenoid-regulator valve bores, a common cause of erratic shifts and delayed forward or reverse engagement.\n\nFitment: GM 6L45, 6L50, 6L80 and 6L90 (also BMW applications using them), 2006 onward\nPart Number: SK 6L80\nSpecifications: Includes steel pressure regulator valve with spring and seat, boost valve with bushing and EPC relief assembly, solenoid regulator valve set, three stator rings with expanders, and five pressure-switch diaphragms and seals\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "transgo-shift-kit-for-6l80",
-    "createdAt": 1751959999974
+    "createdAt": 1751959999974,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1972,
-    "name": "TransGo SHIFT KIT for Ford 10R60 / 10R80 / 10R100 and GM 10L80 / 10L90 — SK 10RL80-G1",
+    "name": "TransGo SHIFT KIT SK 10RL80-G1 — Ford 10R60/10R80/10R100 and GM 10L80/10L90",
     "category": "transmission",
     "brand": "transgo",
     "price": 195,
     "stock": false,
-    "fitment": "Ford 10R60, 10R80 and 10R100; GM Gen 1 10L80 and 10L90",
+    "fitment": "Ford 10R60, 10R80 and 10R100; GM Gen 1 10L80 and 10L90 (model years not stated by the source)",
     "partNumber": "SK 10RL80-G1",
     "thumbnail": "/product-media/transmission/transgo-shift-kit-for-10r80/1.webp",
     "images": [
       "/product-media/transmission/transgo-shift-kit-for-10r80/1.webp"
     ],
-    "image": "/product-media/transmission/transgo-shift-kit-for-10r80/1.jpg",
-    "description": "TransGo SHIFT KIT for Ford 10R60 / 10R80 / 10R100 and GM 10L80 / 10L90 — SK 10RL80-G1\n\nShift kit.\nFitment: Ford 10R60, 10R80 and 10R100; GM Gen 1 10L80 and 10L90\nPart Number: SK 10RL80-G1\nSpecifications: Drop-in pressure-regulator valve assembly; four latch valves and springs; converter-feed priority valve kit; anti-backflow valve kit; HP TCC regulator valve kit; heavy-duty solenoid retainers; cooler-flow bypass delete\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/transgo-shift-kit-for-10r80/1.webp",
+    "description": "TransGo SHIFT KIT SK 10RL80-G1 — Ford 10R60/10R80/10R100 and GM 10L80/10L90\n\nTransGo valve-body kit for the Ford and GM ten-speed automatics, built around a drop-in pressure-regulator valve assembly with latch valves, a converter-feed priority valve, an anti-backflow valve, a high-pressure TCC regulator valve, heavy-duty solenoid retainers and a cooler-flow bypass delete.\n\nFitment: Ford 10R60, 10R80 and 10R100; GM Gen 1 10L80 and 10L90 (model years not stated by the source)\nPart Number: SK 10RL80-G1\nSpecifications: Part SK 10RL80-G1; four latch valves and springs; converter-feed priority valve kit; anti-backflow valve kit; HP TCC regulator valve kit; heavy-duty solenoid retainers; cooler-flow bypass delete\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "transgo-shift-kit-for-10r80",
-    "createdAt": 1751959999973
+    "createdAt": 1751959999973,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1973,
-    "name": "Sonnax Zip Kit for ZF 8HP45 / 8HP55 / 8HP70 and Chrysler 845RE — ZF8-ZIP",
+    "name": "Sonnax Zip Kit ZF8-ZIP — ZF 8HP45 / 8HP55 / 8HP70 and Chrysler 845RE",
     "category": "transmission",
     "brand": "sonnax",
     "price": 94.25,
     "stock": false,
-    "fitment": "ZF 8HP45, 8HP55 and 8HP70, and Chrysler 845RE (ZF 8HP50 and 8HP75 take a different kit, ZF8-GEN2-ZIP)",
+    "fitment": "ZF 8HP45, 8HP55 and 8HP70; Chrysler 845RE",
     "partNumber": "ZF8-ZIP",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "thumbnail": "/product-media/transmission/sonnax-zip-kit-zf8-zip/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/sonnax-zip-kit-zf8-zip/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Sonnax Zip Kit for ZF 8HP45 / 8HP55 / 8HP70 and Chrysler 845RE — ZF8-ZIP\n\nValve-body kit.\nFitment: ZF 8HP45, 8HP55 and 8HP70, and Chrysler 845RE (ZF 8HP50 and 8HP75 take a different kit, ZF8-GEN2-ZIP)\nPart Number: ZF8-ZIP\nSpecifications: Seals valve-body pressure-loss circuits: pressure regulator sleeve, priming valve and seal, end plugs, o-rings, accumulator piston kit, solenoid o-rings\n\nConfirm fitment against your vehicle and part number before ordering.",
-    "sourceSlug": "sonnax-zip-kit-for-zf-8hp70",
-    "createdAt": 1751959999972
+    "image": "/product-media/transmission/sonnax-zip-kit-zf8-zip/1.webp",
+    "description": "Sonnax Zip Kit ZF8-ZIP — ZF 8HP45 / 8HP55 / 8HP70 and Chrysler 845RE\n\nSonnax Zip Kit that seals pressure losses in the valve body and restores accumulator action on the ZF eight-speed automatic, installed without special tools. Transmissions with the 8HP50 or 8HP75 need the Gen 2 kit (ZF8-GEN2-ZIP) instead.\n\nFitment: ZF 8HP45, 8HP55 and 8HP70; Chrysler 845RE\nPart Number: ZF8-ZIP\nSpecifications: Part ZF8-ZIP; pressure regulator sleeve; priming valve and seal; internal and o-ringed end plugs with o-rings; accumulator piston kit; 24 solenoid o-rings\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "sourceSlug": "sonnax-zip-kit-zf8-zip",
+    "createdAt": 1751959999972,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1974,
@@ -510,11 +523,11 @@
     "price": 1290,
     "stock": false,
     "fitment": "Nissan 350Z (Z33) with the 3.5L VQ35DE",
-    "thumbnail": "/product-media/transmission/xtreme-clutch-twin-plate-kit-for-nissan-350z/1.jpg",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/xtreme-clutch-twin-plate-kit-for-nissan-350z/1.jpg"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/xtreme-clutch-twin-plate-kit-for-nissan-350z/1.png",
+    "image": "/product-media/placeholders/transmission.svg",
     "description": "Xtreme Clutch Twin Plate Clutch Kit for Nissan 350Z (VQ35DE)\n\nClutch kit.\nFitment: Nissan 350Z (Z33) with the 3.5L VQ35DE\nSpecifications: 200 mm (8.00 in) twin-plate clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "xtreme-clutch-twin-plate-kit-for-nissan-350z",
     "createdAt": 1751959999971,
@@ -563,11 +576,11 @@
     "price": 620,
     "stock": false,
     "fitment": "Toyota GR86 (ZN8) and Subaru BRZ (ZD8) with the 2.4L FA24, 2022 and newer",
-    "thumbnail": "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg",
+    "image": "/product-media/placeholders/transmission.svg",
     "description": "Exedy Hyper Single Clutch Kit for Toyota GR86 / Subaru BRZ (FA24)\n\nClutch kit.\nFitment: Toyota GR86 (ZN8) and Subaru BRZ (ZD8) with the 2.4L FA24, 2022 and newer\nSpecifications: Single-plate Hyper series clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "exedy-hyper-single-clutch-kit-for-toyota-gr86",
     "createdAt": 1751959999968
@@ -642,26 +655,28 @@
   },
   {
     "id": 1982,
-    "name": "ACT Heavy Duty / Performance Street Sprung Clutch Kit for Nissan 370Z — NZ2-HDSS",
+    "name": "ACT Heavy Duty Performance Street Sprung Clutch Kit NZ2-HDSS — Nissan 370Z",
     "category": "transmission",
     "brand": "act",
     "price": 507.5,
     "stock": false,
-    "fitment": "Nissan 370Z 2009–2020 (VQ37VHR); also 350Z 2007–2009 and Infiniti G37 2008–2013",
+    "fitment": "Nissan 370Z (VQ37VHR) 2009–2020; also Nissan 350Z 2007–2009 and Infiniti G37 2008–2013",
     "partNumber": "NZ2-HDSS",
     "thumbnail": "/product-media/transmission/act-performance-clutch-kit-for-nissan-370z/1.jpg",
     "images": [
-      "/product-media/transmission/act-performance-clutch-kit-for-nissan-370z/1.jpg",
-      "/product-media/transmission/act-performance-clutch-kit-for-nissan-370z/2.jpg"
+      "/product-media/transmission/act-performance-clutch-kit-for-nissan-370z/1.jpg"
     ],
     "image": "/product-media/transmission/act-performance-clutch-kit-for-nissan-370z/1.jpg",
-    "description": "ACT Heavy Duty / Performance Street Sprung Clutch Kit for Nissan 370Z — NZ2-HDSS\n\nClutch kit.\nFitment: Nissan 370Z 2009–2020 (VQ37VHR); also 350Z 2007–2009 and Infiniti G37 2008–2013\nPart Number: NZ2-HDSS\nSpecifications: 448 ft-lb capacity; 9.8 in disc; 24 spline; about 17.6 lb; sprung street disc, HD pressure plate, alignment tool, pilot bushing\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "ACT Heavy Duty Performance Street Sprung Clutch Kit NZ2-HDSS — Nissan 370Z\n\nACT street clutch kit pairing a heavy-duty pressure plate with a sprung street disc for the Nissan 370Z. It is rated at 448 ft-lb with a 9.8 in, 24-spline disc, and includes an alignment tool and pilot bushing.\n\nFitment: Nissan 370Z (VQ37VHR) 2009–2020; also Nissan 350Z 2007–2009 and Infiniti G37 2008–2013\nPart Number: NZ2-HDSS\nSpecifications: Part NZ2-HDSS; 448 ft-lb capacity; 9.8 in disc; 24 spline; about 17.6 lb; sprung street disc; heavy-duty pressure plate; alignment tool; pilot bushing\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "act-performance-clutch-kit-for-nissan-370z",
-    "createdAt": 1751959999963
+    "createdAt": 1751959999963,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1983,
-    "name": "South Bend Clutch Kit",
+    "name": "South Bend Stage 2 Clutch Kit for Ford F-150 5.0L (1993–1996)",
     "category": "transmission",
     "brand": "south-bend",
     "price": 890,
@@ -671,9 +686,10 @@
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "South Bend Clutch Kit\n",
+    "description": "South Bend Stage 2 Clutch Kit for Ford F-150 5.0L (1993–1996)\n\nSouth Bend Clutch Stage 2 clutch kit for the 1993–1996 Ford F-150 with the 5.0L gas V8. South Bend offers this Stage 2 kit in several friction materials, and the material for this listing is not specified. It is not a kit for the 5.0L Coyote.\n\nFitment: Ford F-150 5.0L gas V8, 1993–1996\nSpecifications: Stage 2 clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "south-bend-stage-2-clutch-kit-for-ford-f-150",
-    "createdAt": 1751959999962
+    "createdAt": 1751959999962,
+    "fitment": "Ford F-150 5.0L gas V8, 1993–1996"
   },
   {
     "id": 1984,
@@ -700,33 +716,34 @@
     "price": 317.54,
     "stock": false,
     "fitment": "Chevrolet Camaro SS with the 6.2L LT1, 6-speed (years depend on the kit)",
-    "thumbnail": "/product-media/transmission/centerforce-dual-friction-clutch-kit-for-chevrolet-camaro-ss/1.jpg",
+    "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
-      "/product-media/transmission/centerforce-dual-friction-clutch-kit-for-chevrolet-camaro-ss/1.jpg",
-      "/product-media/transmission/centerforce-dual-friction-clutch-kit-for-chevrolet-camaro-ss/2.jpg"
+      "/product-media/placeholders/transmission.svg"
     ],
-    "image": "/product-media/transmission/centerforce-dual-friction-clutch-kit-for-chevrolet-camaro-ss/1.jpg",
+    "image": "/product-media/placeholders/transmission.svg",
     "description": "Centerforce Dual Friction Clutch Kit for Chevrolet Camaro SS (LT1)\n\nClutch kit.\nFitment: Chevrolet Camaro SS with the 6.2L LT1, 6-speed (years depend on the kit)\nSpecifications: Dual Friction clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "centerforce-dual-friction-clutch-kit-for-chevrolet-camaro-ss",
     "createdAt": 1751959999960
   },
   {
     "id": 1986,
-    "name": "Centerforce DYAD DS Twin Disc Clutch Kit for Ford Mustang GT (2011–2017) — 413234805",
+    "name": "Centerforce DYAD DS Twin Disc Clutch and Flywheel Kit 413234805 — Ford Mustang GT",
     "category": "transmission",
     "brand": "centerforce",
     "price": 1317.29,
     "stock": false,
-    "fitment": "Ford Mustang GT 2011–2017 and Boss 302 2012–2013 with the 23-spline MT-82",
+    "fitment": "Ford Mustang GT 2011–2017 and Boss 302 2012–2013 with the 23-spline MT-82 manual transmission",
     "partNumber": "413234805",
     "thumbnail": "/product-media/transmission/centerforce-dyad-twin-disc-clutch-for-ford-mustang-gt/1.jpg",
     "images": [
-      "/product-media/transmission/centerforce-dyad-twin-disc-clutch-for-ford-mustang-gt/1.jpg",
-      "/product-media/transmission/centerforce-dyad-twin-disc-clutch-for-ford-mustang-gt/2.jpg"
+      "/product-media/transmission/centerforce-dyad-twin-disc-clutch-for-ford-mustang-gt/1.jpg"
     ],
     "image": "/product-media/transmission/centerforce-dyad-twin-disc-clutch-for-ford-mustang-gt/1.jpg",
-    "description": "Centerforce DYAD DS Twin Disc Clutch Kit for Ford Mustang GT (2011–2017) — 413234805\n\nClutch kit.\nFitment: Ford Mustang GT 2011–2017 and Boss 302 2012–2013 with the 23-spline MT-82\nPart Number: 413234805\nSpecifications: Up to 1,300 ft-lb; pressure plate, discs, floater, 8-bolt flywheel, bolts, pilot bearing, shim, bleed kit\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Centerforce DYAD DS Twin Disc Clutch and Flywheel Kit 413234805 — Ford Mustang GT\n\nCenterforce DYAD DS multi-disc clutch kit for 23-spline MT-82 Mustangs, supplied with an 8-bolt steel flywheel. It is rated up to 1,300 ft-lb at the flywheel with a 10.5 in, 23-spline disc.\n\nFitment: Ford Mustang GT 2011–2017 and Boss 302 2012–2013 with the 23-spline MT-82 manual transmission\nPart Number: 413234805\nSpecifications: Part 413234805; up to 1,300 ft-lb; 10.5 in x 23 spline discs; kit includes pressure plate, friction discs, floater plate, 8-bolt steel flywheel, ARP bolts, alignment tool and pilot bearing\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "centerforce-dyad-twin-disc-clutch-for-ford-mustang-gt",
-    "createdAt": 1751959999959
+    "createdAt": 1751959999959,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   }
 ]
