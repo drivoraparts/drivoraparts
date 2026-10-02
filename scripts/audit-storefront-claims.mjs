@@ -34,10 +34,22 @@ fs.writeFileSync(
   `import { getAllProducts, resolveProductCondition } from "@/lib/inventory";
 import { brands } from "@/lib/inventory/brands";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
+import { PUBLIC_PRICE_RATIO } from "@/lib/inventory/pricing";
+import {
+  BASE_ORDER_DISCOUNT_PERCENT,
+  BULK_ORDER_DISCOUNT_PERCENT,
+  BULK_MIN_QUANTITY,
+} from "@/lib/inventory/discounts";
 process.stdout.write(
   JSON.stringify({
     homeListingCount: HOME_LISTING_COUNT,
     brands,
+    pricing: {
+      ratio: PUBLIC_PRICE_RATIO,
+      baseDiscountPercent: BASE_ORDER_DISCOUNT_PERCENT,
+      bulkDiscountPercent: BULK_ORDER_DISCOUNT_PERCENT,
+      bulkMinQuantity: BULK_MIN_QUANTITY,
+    },
     products: getAllProducts().map((p) => ({
       id: p.id,
       name: p.name,
@@ -47,6 +59,8 @@ process.stdout.write(
       coreCharge: p.coreCharge,
       resolved: resolveProductCondition(p),
       description: p.description || "",
+      price: p.price,
+      compareAtPrice: p.compareAtPrice ?? null,
     })),
   })
 );
@@ -84,7 +98,7 @@ const raw = execFileSync(process.execPath, ["--max-old-space-size=4096", bundle]
 });
 fs.rmSync(tmp, { recursive: true, force: true });
 
-const { products, homeListingCount, brands } = JSON.parse(raw);
+const { products, homeListingCount, brands, pricing } = JSON.parse(raw);
 const problems = [];
 
 /* ---------------------------------------------------------------------------
@@ -271,6 +285,80 @@ for (const [slug, names] of namesBySlug) {
     `[brands] slug "${slug}" is registered under names differing only in case: ${[...names]
       .map((n) => `"${n}"`)
       .join(" vs ")}`
+  );
+}
+
+/* ---------------------------------------------------------------------------
+   5. Pricing: the numbers the storefront is supposed to be selling at
+
+   Two things, both of which reached production once.
+
+   The base ratio and the checkout promotion are separate figures that the
+   business sets, and a listing's price is derived from the first while the
+   cart applies the second. Neither is hard to change by accident, and nothing
+   else fails when they are: the site keeps working and simply sells at the
+   wrong price. Naming them here means a change has to be deliberate enough to
+   edit this line too.
+
+   The second check measures the OUTCOME, not the arithmetic. Re-deriving a
+   price from its own reference would prove nothing: applyPublicPrices sets
+   compareAtPrice to the very figure it fed resolvePublicPrice, so putting it
+   back through reproduces the price by construction and passes whatever the
+   constants say. What can actually be wrong is the spread it produces.
+
+   A ratio of 0.85 should put listings near 15% below their reference, and the
+   thing that pulls them off it is the rounding grid, whose step is a bigger
+   share of a cheap part than a dear one. On the old $10 grid a $17 reference
+   sold at $10 -- 41% off -- while a $30.95 one sold at $30, barely 3% off.
+   Both are inside this band's reach; neither was visible in any diff.
+
+   The band is deliberately wide. It is not asserting 15%; it is asserting
+   that nothing has drifted far enough to make the shelf price a different
+   claim from the one the business set. Today's catalog sits at 7.2%-23.1%.
+--------------------------------------------------------------------------- */
+
+const MIN_DISCOUNT_PERCENT = 5;
+const MAX_DISCOUNT_PERCENT = 30;
+
+const EXPECTED_PRICING = {
+  ratio: 0.85,
+  baseDiscountPercent: 5,
+  bulkDiscountPercent: 10,
+  bulkMinQuantity: 2,
+};
+
+for (const [key, expected] of Object.entries(EXPECTED_PRICING)) {
+  if (pricing[key] !== expected) {
+    problems.push(
+      `[pricing] ${key} is ${pricing[key]}, expected ${expected} — change this in scripts/audit-storefront-claims.mjs too if it is intentional`
+    );
+  }
+}
+
+let pricesChecked = 0;
+
+for (const product of products) {
+  if (typeof product.compareAtPrice !== "number") continue;
+  pricesChecked++;
+
+  if (product.compareAtPrice <= product.price) {
+    problems.push(
+      `[pricing] ${product.id} strikes through ${product.compareAtPrice} but sells at ${product.price}: ${product.name}`
+    );
+    continue;
+  }
+
+  const off = (1 - product.price / product.compareAtPrice) * 100;
+  if (off < MIN_DISCOUNT_PERCENT || off > MAX_DISCOUNT_PERCENT) {
+    problems.push(
+      `[pricing] ${product.id} sells ${off.toFixed(1)}% below its reference (${product.compareAtPrice} -> ${product.price}), outside ${MIN_DISCOUNT_PERCENT}-${MAX_DISCOUNT_PERCENT}%: ${product.name}`
+    );
+  }
+}
+
+if (pricesChecked === 0) {
+  problems.push(
+    "[pricing] no listing carries a reference price, so nothing re-derived — the check above is no longer testing anything"
   );
 }
 

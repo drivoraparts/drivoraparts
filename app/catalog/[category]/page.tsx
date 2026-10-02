@@ -33,10 +33,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { category: slug } = await params;
   const category = getCategory(slug);
 
+  /*
+   * An unknown slug 404s in the page body below, and generateMetadata still
+   * runs first -- so without this the 404 went out carrying robots
+   * "index, follow". The status code is what actually keeps it out of the
+   * index, and a robots tag on a 404 is ignored, but the two should not read
+   * as if they disagree.
+   */
   if (!category) {
     return buildPageMetadata({
       title: "Catalog Category",
       path: routes.catalog,
+      noIndex: true,
     });
   }
 
