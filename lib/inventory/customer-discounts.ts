@@ -14,14 +14,12 @@ export type CustomerDiscount = {
   expiresAt?: string;
 };
 
-const CUSTOMER_DISCOUNTS: readonly CustomerDiscount[] = [
-  {
-    email: "jrsilliman369@gmail.com",
-    productId: 1,
-    totalPercentOff: 10,
-    label: "Veteran discount",
-  },
-];
+/*
+ * Intentionally empty. This list ships in the client bundle, so any email
+ * placed here is readable by every visitor. Do not add customer emails;
+ * move the check server-side first.
+ */
+const CUSTOMER_DISCOUNTS: readonly CustomerDiscount[] = [];
 
 function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
