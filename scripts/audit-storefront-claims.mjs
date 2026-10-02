@@ -42,6 +42,8 @@ process.stdout.write(
       id: p.id,
       name: p.name,
       condition: p.condition,
+      mileage: p.mileage,
+      coreCharge: p.coreCharge,
       resolved: resolveProductCondition(p),
       description: p.description || "",
     })),
@@ -120,6 +122,73 @@ for (const product of products) {
       `[condition] ${product.id} titled remanufactured but stored "${product.condition}" -> badged Brand New: ${product.name}`
     );
   }
+}
+
+/* ---------------------------------------------------------------------------
+   1b. Condition vs. the rest of the listing's own evidence
+
+   resolveProductCondition() falls back to brand-new for a listing that records
+   no condition, so a missing or unrecognised value would badge Brand New
+   without anyone deciding that. Every listing must state one.
+
+   Evidence beyond the title that contradicts a Brand New badge:
+     - mileage naming a takeout / donor / used unit (the engine-drivetrain
+       packages inherited condition "brand-new" from a shared BASE object that
+       also set mileage "Low-mile takeout / crate")
+     - a core charge (only exchange / remanufactured units carry one)
+     - prose stating the unit IS remanufactured / rebuilt (negations such as
+       "new, not remanufactured" do not match)
+   Ambiguous cases live in scripts/condition-review.json until the owner
+   decides; the audit checks that file stays honest instead of guessing.
+--------------------------------------------------------------------------- */
+
+const KNOWN_CONDITION = /(?:new|used|refurbished|remanufactured|mixed)/i;
+const MILEAGE_USED = /take[-\s]?out|donor|pulled|salvage|used/i;
+const PROSE_REMAN =
+  /\b(?:is|are)\s+(?:a\s+)?(?:fully\s+)?(?:remanufactured|rebuilt|refurbished|reconditioned)\b|fully disassembled, crack-checked and precision-machined/i;
+
+const reviewManifest = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "scripts", "condition-review.json"), "utf8")
+);
+const pendingReview = new Map(reviewManifest.pendingOwnerReview.map((r) => [r.id, r.reason]));
+const byId = new Map(products.map((p) => [p.id, p]));
+
+for (const product of products) {
+  const stored = String(product.condition ?? "").trim();
+  if (!stored || !KNOWN_CONDITION.test(stored)) {
+    problems.push(
+      `[condition] ${product.id} records no recognised condition ("${stored}") and would silently badge Brand New: ${product.name}`
+    );
+    continue;
+  }
+  if (product.resolved !== "brand-new" || pendingReview.has(product.id)) continue;
+  if (product.mileage && MILEAGE_USED.test(product.mileage)) {
+    problems.push(
+      `[condition] ${product.id} mileage "${product.mileage}" describes a used unit but it is badged Brand New: ${product.name}`
+    );
+  } else if (product.coreCharge) {
+    problems.push(
+      `[condition] ${product.id} carries a core charge but is badged Brand New: ${product.name}`
+    );
+  } else if (PROSE_REMAN.test(product.description)) {
+    problems.push(
+      `[condition] ${product.id} description says it is remanufactured/rebuilt but it is badged Brand New: ${product.name}`
+    );
+  }
+}
+
+for (const [id] of pendingReview) {
+  const product = byId.get(id);
+  if (!product || product.resolved !== "brand-new") {
+    problems.push(
+      `[condition] scripts/condition-review.json lists ${id} but it is gone or no longer brand-new -- remove it from the manifest`
+    );
+  }
+}
+if (pendingReview.size > 0) {
+  console.log(
+    `NOTE: ${pendingReview.size} listings await owner condition review (scripts/condition-review.json): ${[...pendingReview.keys()].join(", ")}`
+  );
 }
 
 /* ---------------------------------------------------------------------------

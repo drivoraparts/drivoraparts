@@ -58,7 +58,9 @@ export function isAftermarketCategory(category: string): boolean {
  * So the listing decides, whatever category it is in. Nothing is inferred
  * from the product name: a listing that records no condition at all falls
  * back to brand-new, which is what the overwhelming majority of the catalog
- * is, though in practice every listing carries one today.
+ * is, though in practice every listing carries one today. That fallback is
+ * display-only: scripts/audit-storefront-claims.mjs fails the build for any
+ * listing with no recognised stored condition, so it never decides one.
  *
  * The aftermarket variants are kept rather than folded into `used`: they
  * carry the same wording and colour, and keeping them means an aftermarket

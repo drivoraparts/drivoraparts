@@ -23,6 +23,11 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: errors.join(" ") }, { status: 400 });
   }
 
+  // A listing that omits its condition must not quietly become "Brand New".
+  if (!body.condition?.trim()) {
+    return NextResponse.json({ error: "Condition is required." }, { status: 400 });
+  }
+
   try {
     const deployedMaxId = Math.max(0, ...getAllProducts().map((p) => p.id));
 
@@ -33,7 +38,7 @@ export async function POST(req: Request) {
       price: body.price!,
       stock: body.stock ?? true,
       stockQty: body.stockQty,
-      condition: body.condition ?? "brand-new",
+      condition: body.condition.trim(),
       location: body.location,
       description: body.description,
       thumbnail: body.thumbnail,
