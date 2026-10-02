@@ -64680,5 +64680,57 @@
     "downloadedAt": "2026-10-02T18:27:22.668Z",
     "status": "downloaded",
     "verified": "verified by visual review: Centerforce DYAD DS twin-disc kit with flywheel, floater and hardware; the second image (a single pressure plate only) was removed from this listing"
+  },
+  "product-1976": {
+    "productId": 1976,
+    "productName": "Xtreme Clutch Heavy Duty Sprung Organic Clutch Kit KSU24002-1A — Subaru WRX STI 6-Speed (EJ25)",
+    "localFile": "/product-media/transmission/xtreme-heavy-duty-sprung-organic-clutch-kit-ksu24002-1a/1.webp",
+    "sourceUrl": "https://www.carmodsaustralia.com.au/assets/full/KSU24002-1A.webp",
+    "sourceName": "carmodsaustralia.com.au",
+    "landingPage": "https://www.carmodsaustralia.com.au/Xtreme-Clutch-KSU24002-1A-Heavy-Duty-Organic-Clutch-Kit-Pull-Type-STi-2006",
+    "creator": "Xtreme Clutch (via Carmods Australia)",
+    "creatorUrl": "https://www.carmodsaustralia.com.au/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "SOURCE IDENTIFIED — RIGHTS NOT INDEPENDENTLY VERIFIED: established supplier product photography for the exact part number, used on the business owner's stated instruction; the repository has not verified copyright ownership or authorization",
+    "matchedTokens": [
+      "KSU24002-1A"
+    ],
+    "query": "supplier page titled with part KSU24002-1A",
+    "sha256": "a8d6b6949d544e6c8fbc48cf5eb2ca7a7a7122eb75fbbe80411c77085784dee9",
+    "bytes": 51016,
+    "width": 600,
+    "height": 600,
+    "downloadedAt": "2026-10-02T18:39:49.961Z",
+    "status": "downloaded",
+    "verified": "verified visually: Xtreme sprung organic kit (purple cover, sprung disc, bearing, alignment tool), no flywheel, no watermark; supplier page identifies KSU24002-1A. Source resolution is 600 px"
+  },
+  "product-1978": {
+    "productId": 1978,
+    "productName": "Exedy Stage 1 Heavy Duty Organic Clutch Kit 05803AHD — Mitsubishi Lancer Evolution X",
+    "localFile": "/product-media/transmission/exedy-stage-1-heavy-duty-organic-clutch-kit-05803ahd/1.webp",
+    "sourceUrl": "http://www.rallysportdirect.com/cdn/shop/products/98a4a3eeac761a58f4f2371ad3bd3443.jpg",
+    "sourceName": "rallysportdirect.com",
+    "landingPage": "https://www.rallysportdirect.com/products/exe-05803ahd-exedy-stage-1-heavy-duty-organic-disc-clutch-kit",
+    "creator": "Exedy (via Rally Sport Direct)",
+    "creatorUrl": "https://www.rallysportdirect.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "SOURCE IDENTIFIED — RIGHTS NOT INDEPENDENTLY VERIFIED: established supplier product photography for the exact part number, used on the business owner's stated instruction; the repository has not verified copyright ownership or authorization",
+    "matchedTokens": [
+      "05803AHD"
+    ],
+    "query": "supplier page for part 05803AHD",
+    "sha256": "1a3799991dc368d71fa9c57474cb56ead5fa7f33f2c41f2b32634296db4a6663",
+    "bytes": 146976,
+    "width": 1600,
+    "height": 1067,
+    "downloadedAt": "2026-10-02T18:39:49.961Z",
+    "status": "downloaded",
+    "verified": "verified visually: Exedy clutch kit with pressure plate, organic disc, release bearing, alignment tool and grease on a white background, no watermark; supplier page identifies 05803AHD (Evo X). Original 5232x3488"
   }
 }

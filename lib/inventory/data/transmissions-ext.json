@@ -487,7 +487,7 @@
       "/product-media/transmission/transgo-shift-kit-for-10r80/1.webp"
     ],
     "image": "/product-media/transmission/transgo-shift-kit-for-10r80/1.webp",
-    "description": "TransGo SHIFT KIT SK 10RL80-G1 — Ford 10R60/10R80/10R100 and GM 10L80/10L90\n\nTransGo valve-body kit for the Ford and GM ten-speed automatics, built around a drop-in pressure-regulator valve assembly with latch valves, a converter-feed priority valve, an anti-backflow valve, a high-pressure TCC regulator valve, heavy-duty solenoid retainers and a cooler-flow bypass delete.\n\nFitment: Ford 10R60, 10R80 and 10R100; GM Gen 1 10L80 and 10L90 (model years not stated by the source)\nPart Number: SK 10RL80-G1\nSpecifications: Part SK 10RL80-G1; four latch valves and springs; converter-feed priority valve kit; anti-backflow valve kit; HP TCC regulator valve kit; heavy-duty solenoid retainers; cooler-flow bypass delete\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "TransGo SHIFT KIT SK 10RL80-G1 — Ford 10R60/10R80/10R100 and GM 10L80/10L90\n\nTransGo valve-body kit for the Ford and GM ten-speed automatics, built around a drop-in pressure-regulator valve assembly with latch valves, a converter-feed priority valve, an anti-backflow valve, a high-pressure TCC regulator valve, solenoid retainers and true-depth solenoid inserts and a cooler-flow bypass delete.\n\nFitment: Ford 10R60, 10R80 and 10R100; GM Gen 1 10L80 and 10L90 (model years not stated by the source)\nPart Number: SK 10RL80-G1\nSpecifications: Part SK 10RL80-G1; drop-in pressure regulator valve assembly; four drop-in latch valves and springs; converter-feed priority valve kit; anti-backflow valve kit; HP TCC regulator valve kit; solenoid retainers and true-depth solenoid inserts; cooler-flow bypass delete\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "transgo-shift-kit-for-10r80",
     "createdAt": 1751959999973,
     "condition": "brand-new",
@@ -552,55 +552,66 @@
   },
   {
     "id": 1976,
-    "name": "Xtreme Heavy Duty Sprung Organic Clutch Kit for Subaru WRX STI 6-Speed — KSU24002-1A",
+    "name": "Xtreme Clutch Heavy Duty Sprung Organic Clutch Kit KSU24002-1A — Subaru WRX STI 6-Speed (EJ25)",
     "category": "transmission",
     "brand": "xtreme-clutch",
     "price": 565.5,
     "stock": false,
-    "fitment": "Subaru WRX STI 6-speed (pull-type EJ25)",
+    "fitment": "Subaru WRX STI with the EJ25 and 6-speed manual (pull-type clutch), 2006–2021",
     "partNumber": "KSU24002-1A",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "thumbnail": "/product-media/transmission/xtreme-heavy-duty-sprung-organic-clutch-kit-ksu24002-1a/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/xtreme-heavy-duty-sprung-organic-clutch-kit-ksu24002-1a/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Xtreme Heavy Duty Sprung Organic Clutch Kit for Subaru WRX STI 6-Speed — KSU24002-1A\n\nClutch kit.\nFitment: Subaru WRX STI 6-speed (pull-type EJ25)\nPart Number: KSU24002-1A\nSpecifications: 240 mm disc; 24 spline; sprung organic; 570 Nm; 30% more clamp load; includes spigot bush, alignment tool and release bearing; flywheel NOT included\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/xtreme-heavy-duty-sprung-organic-clutch-kit-ksu24002-1a/1.webp",
+    "description": "Xtreme Clutch Heavy Duty Sprung Organic Clutch Kit KSU24002-1A — Subaru WRX STI 6-Speed (EJ25)\n\nStreet-oriented clutch kit for the six-speed WRX STI. It pairs an upgraded pressure plate, with roughly 30% more clamping force than stock, with a sprung organic disc, giving more holding power for cars with light modifications while keeping near-stock driving manners.\n\nFitment: Subaru WRX STI with the EJ25 and 6-speed manual (pull-type clutch), 2006–2021\nPart Number: KSU24002-1A\nSpecifications: 240 mm disc; 24 spline; sprung organic friction; about 570 Nm (420 ft-lb) rated capacity; includes spigot bush/bearing, alignment tool and spline grease; flywheel not included\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "xtreme-clutch-heavy-duty-kit-for-subaru-wrx-sti",
-    "createdAt": 1751959999969
+    "createdAt": 1751959999969,
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1977,
-    "name": "Exedy Hyper Single Clutch Kit for Toyota GR86 / Subaru BRZ (FA24)",
+    "name": "Exedy Hyper Single EVO Clutch and Flywheel Kit TH08SDX — Toyota 86 / GR86, Subaru BRZ",
     "category": "transmission",
     "brand": "exedy",
     "price": 620,
     "stock": false,
-    "fitment": "Toyota GR86 (ZN8) and Subaru BRZ (ZD8) with the 2.4L FA24, 2022 and newer",
+    "fitment": "Toyota 86 / GR86 (ZN6, ZN8) and Subaru BRZ (ZC6, ZD8) with the FA20 or FA24 engine, 2012 onward",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
     ],
     "image": "/product-media/placeholders/transmission.svg",
-    "description": "Exedy Hyper Single Clutch Kit for Toyota GR86 / Subaru BRZ (FA24)\n\nClutch kit.\nFitment: Toyota GR86 (ZN8) and Subaru BRZ (ZD8) with the 2.4L FA24, 2022 and newer\nSpecifications: Single-plate Hyper series clutch kit\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "description": "Exedy Hyper Single EVO Clutch and Flywheel Kit TH08SDX — Toyota 86 / GR86, Subaru BRZ\n\nExedy's single-plate Hyper Single EVO kit for the 86/BRZ platform. It combines a lightweight flywheel with a high-strength aluminium cover and an Ultra Fiber EVO disc, giving more holding power than stock with a quiet, street-friendly damper. Flywheel bolts and the pilot bearing are not included and must be sourced separately.\n\nFitment: Toyota 86 / GR86 (ZN6, ZN8) and Subaru BRZ (ZC6, ZD8) with the FA20 or FA24 engine, 2012 onward\nPart Number: TH08SDX\nSpecifications: Single plate; 230 mm disc; 8,750 N clamp load; push-type cover; Ultra Fiber EVO facing; kit includes cover, disc, flywheel and bolt set; OEM flywheel bolts and pilot bearing not included\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "exedy-hyper-single-clutch-kit-for-toyota-gr86",
-    "createdAt": 1751959999968
+    "createdAt": 1751959999968,
+    "partNumber": "TH08SDX",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1978,
-    "name": "Exedy Heavy Duty Clutch Kit for Mitsubishi Lancer Evolution X (4B11T)",
+    "name": "Exedy Stage 1 Heavy Duty Organic Clutch Kit 05803AHD — Mitsubishi Lancer Evolution X",
     "category": "transmission",
     "brand": "exedy",
     "price": 616.21,
     "stock": false,
-    "fitment": "Mitsubishi Lancer Evolution X with the 4B11T, 2008–2014",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "fitment": "Mitsubishi Lancer Evolution X (GSR, MR, MR Touring), 2.0L turbo 4B11T, 5-speed manual, 2008–2015",
+    "thumbnail": "/product-media/transmission/exedy-stage-1-heavy-duty-organic-clutch-kit-05803ahd/1.webp",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/exedy-stage-1-heavy-duty-organic-clutch-kit-05803ahd/1.webp"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Exedy Heavy Duty Clutch Kit for Mitsubishi Lancer Evolution X (4B11T)\n\nClutch kit.\nFitment: Mitsubishi Lancer Evolution X with the 4B11T, 2008–2014\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/exedy-stage-1-heavy-duty-organic-clutch-kit-05803ahd/1.webp",
+    "description": "Exedy Stage 1 Heavy Duty Organic Clutch Kit 05803AHD — Mitsubishi Lancer Evolution X\n\nExedy Stage 1 organic clutch kit for the Evolution X, built for street driving and light track use with an increased-clamp-load cover and a spring-damped organic disc. It keeps drivability close to the factory clutch, with slightly higher pedal effort.\n\nFitment: Mitsubishi Lancer Evolution X (GSR, MR, MR Touring), 2.0L turbo 4B11T, 5-speed manual, 2008–2015\nPart Number: 05803AHD\nSpecifications: 240 mm disc; 23 spline; organic friction; clamp load about 40% above the OE cover; kit includes clutch disc, pressure plate, throw-out bearing, pilot bearing and alignment tool\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "exedy-heavy-duty-clutch-kit-for-mitsubishi-evo-x",
-    "createdAt": 1751959999967
+    "createdAt": 1751959999967,
+    "partNumber": "05803AHD",
+    "condition": "brand-new",
+    "warranty": "1 Year DrivoraParts Warranty",
+    "location": "U.S. Warehouse"
   },
   {
     "id": 1979,
