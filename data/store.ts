@@ -39,7 +39,6 @@ export type Product = {
   thumbnail: string;
   images: string[];
   description: string;
-  sourceUrl?: string;
   /** Build-target power shown beside the factory rating. */
   buildPotential?: string;
   /**
@@ -102,7 +101,6 @@ export const store: Record<string, Category> = Object.fromEntries(
       thumbnail: getProductThumbnail(p),
       images: resolveProductGallery(p.thumbnail ?? p.image, p.images),
       description: p.description ?? "",
-      sourceUrl: p.sourceUrl,
       // This mapping is a whitelist: a field not named here never reaches the
       // product page, silently. swapPackage drives the fitment wording, so it
       // has to be carried across explicitly.

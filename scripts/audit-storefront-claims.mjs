@@ -42,6 +42,7 @@ process.stdout.write(
       id: p.id,
       name: p.name,
       condition: p.condition,
+      sourceUrl: p.sourceUrl,
       mileage: p.mileage,
       coreCharge: p.coreCharge,
       resolved: resolveProductCondition(p),
@@ -152,6 +153,17 @@ const reviewManifest = JSON.parse(
 );
 const pendingReview = new Map(reviewManifest.pendingOwnerReview.map((r) => [r.id, r.reason]));
 const byId = new Map(products.map((p) => [p.id, p]));
+
+// Catalog data is bundled into browser JavaScript, so a supplier URL stored on
+// a listing is readable by every visitor and names the supplier. Provenance
+// that pricing needs lives in `referencePriceVerified` instead.
+for (const product of products) {
+  if (product.sourceUrl) {
+    problems.push(
+      `[privacy] ${product.id} stores a supplier URL (sourceUrl) that ships to browsers; use referencePriceVerified: ${product.name}`
+    );
+  }
+}
 
 for (const product of products) {
   const stored = String(product.condition ?? "").trim();
