@@ -3,6 +3,7 @@ import type { Product } from "@/lib/inventory/types";
 import { detectViralProducts } from "@/lib/ai/viral-detector";
 import { collectProductSignals } from "@/lib/ai/product-metrics";
 import { safeQuery } from "@/lib/db/safe-query";
+import { withKnown } from "@/lib/ads/text";
 
 export type AutopilotAdPlatform = "tiktok" | "meta" | "google";
 
@@ -50,7 +51,7 @@ function buildTikTokAd(
     productId: product.id,
     platform: "tiktok",
     hook,
-    adCopy: `${hook}. ${product.name} · $${product.price.toLocaleString()} · ships from ${product.location}.`,
+    adCopy: `${hook}. ${product.name} · $${product.price.toLocaleString()}${withKnown(product.location, " · ships from ")}.`,
     script: [
       `[0s] ${hook}`,
       `[2s] POV: your project finally moves forward`,
@@ -73,7 +74,7 @@ function buildMetaAd(
     platform: "meta",
     hook,
     adCopy: `${hook}. OEM-grade ${product.category} component for serious builds. ${metrics.views} recent views, ${metrics.cartAdds} cart adds. Multiple payment options available. Starting at $${product.price.toLocaleString()}.`,
-    script: `Lead with proof: ${product.reviewCount}+ reviews at ${product.rating}★. Highlight fast fulfillment from ${product.location}. Close with limited inventory urgency.`,
+    script: `Lead with proof: ${product.reviewCount}+ reviews at ${product.rating}★. Highlight fast fulfillment${withKnown(product.location, " from ")}. Close with limited inventory urgency.`,
     cta: "Buy Now",
     targeting: buildTargeting(product, metrics.cartRate),
   };
@@ -94,7 +95,7 @@ function buildGoogleAd(product: Product): AutopilotAd {
     productId: product.id,
     platform: "google",
     hook,
-    adCopy: `Buy ${product.name}. ${product.condition} · $${product.price}. Fast shipping from ${product.location}. Trusted DrivoraParts catalog.`,
+    adCopy: `Buy ${product.name}. ${withKnown(product.condition, "", " · ")}$${product.price}. Fast shipping${withKnown(product.location, " from ")}. Trusted DrivoraParts catalog.`,
     script: `Search intent capture: headline + price + stock status + category keywords.`,
     cta: "Get Quote",
     targeting: [...new Set(keywords)].slice(0, 8),

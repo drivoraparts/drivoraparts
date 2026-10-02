@@ -215,12 +215,45 @@ for (const product of products) {
   }
 }
 
+/**
+ * A missing condition is allowed ONLY for a held listing (stock:false): it cannot
+ * be bought, and every layer omits the condition instead of defaulting it to New.
+ * Anything else with no recognised condition is a problem. A non-empty but
+ * unrecognised value is a problem even when held.
+ * Returns "ok" | "held-exception" | "problem".
+ */
+function conditionRecordStatus(product) {
+  const stored = String(product.condition ?? "").trim();
+  if (!stored && product.stock === false) return "held-exception";
+  if (!stored || !KNOWN_CONDITION.test(stored)) return "problem";
+  return "ok";
+}
+
+if (process.argv.includes("--self-test")) {
+  const cases = [
+    [{ condition: undefined, stock: false }, "held-exception"],
+    [{ condition: "", stock: false }, "held-exception"],
+    [{ condition: undefined, stock: true }, "problem"],
+    [{ condition: undefined }, "problem"],
+    [{ condition: "   ", stock: true }, "problem"],
+    [{ condition: "banana", stock: false }, "problem"],
+    [{ condition: "brand-new", stock: true }, "ok"],
+    [{ condition: "used", stock: false }, "ok"],
+  ];
+  const failed = cases.filter(([p, want]) => conditionRecordStatus(p) !== want);
+  if (failed.length) {
+    console.error("condition self-test FAILED:", JSON.stringify(failed));
+    process.exit(1);
+  }
+  console.log(`Condition exception self-test passed (${cases.length} cases).`);
+  process.exit(0);
+}
+
 for (const product of products) {
   const stored = String(product.condition ?? "").trim();
-  // A held listing (stock:false) with no condition at all is allowed: it cannot
-  // be bought and every layer omits the condition instead of defaulting it.
-  if (!stored && product.stock === false) continue;
-  if (!stored || !KNOWN_CONDITION.test(stored)) {
+  const status = conditionRecordStatus(product);
+  if (status === "held-exception") continue;
+  if (status === "problem") {
     problems.push(
       `[condition] ${product.id} records no recognised condition ("${stored}") and would silently badge Brand New: ${product.name}`
     );
