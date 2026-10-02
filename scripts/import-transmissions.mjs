@@ -19,6 +19,27 @@ const START_ID = 1945;
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 const skipDownload = process.argv.includes("--skip-download");
+
+/*
+ * SAFETY: transmissions-ext.json holds hand-corrected listings (ids 1945-1986).
+ * Re-running this importer regenerates them from the table below and would
+ * silently undo those corrections, so it refuses to touch an existing file
+ * unless --force-overwrite is passed explicitly.
+ */
+if (!process.argv.includes("--force-overwrite")) {
+  const exists = await fs
+    .access(OUT_JSON)
+    .then(() => true)
+    .catch(() => false);
+  if (exists) {
+    console.error(
+      `Refusing to run: ${OUT_JSON} already exists and contains corrected listings.
+` +
+        "Pass --force-overwrite only if you really intend to regenerate it."
+    );
+    process.exit(1);
+  }
+}
 const MAX_IMAGES = 6;
 
 const SONNAX_6R80 =
@@ -483,30 +504,27 @@ function slugify(name) {
  */
 function describePartType(name) {
   const n = name.toLowerCase();
-  if (/clutch|flywheel|pressure plate/.test(n)) return "performance clutch kit";
+  if (/clutch|flywheel|pressure plate/.test(n)) return "clutch kit";
   if (/rebuild kit|master kit/.test(n)) return "transmission rebuild kit";
   if (/gear set|valve body|shift kit|zip kit|solenoid|torque converter/.test(n)) {
     return "transmission upgrade component";
   }
-  return "OEM-grade transmission";
+  return "transmission";
 }
 
 function buildDescription(name, fitment, partNumber, body = "") {
   const intro =
     body ||
-    `${name} — ${describePartType(name)} with verified fitment, inspected before shipment, and ready for performance street, track, or 4WD builds.`;
+    `${name} — ${describePartType(name)}.`;
+  // Facts only. Warranty, shipping, condition, location, stock and inspection
+  // statements are business-controlled and must come from explicit source
+  // data, never from this template.
   return `${name}
 
 ${intro}
 
 Fitment: ${fitment}
-Part Number: ${partNumber}
-
-Warranty
-24-Month Limited Warranty
-
-Shipping
-Worldwide shipping available — freight quotes provided for heavy assemblies where required.`;
+Part Number: ${partNumber}`;
 }
 
 async function fetchStaticMeta(source) {
@@ -663,7 +681,12 @@ for (let i = 0; i < TRANSMISSION_SOURCES.length; i++) {
   }
 
   const images = imageFiles.map((f) => `${mediaBase}/${f}`);
-  const price = item.priceHint;
+  // priceHint is a rough guess, not a price. A listing price must be supplied
+  // explicitly (confirmedPrice) rather than inferred from the hint.
+  const price = item.confirmedPrice;
+  if (typeof price !== "number" || !(price > 0)) {
+    throw new Error(`No confirmedPrice for ${item.name}; refusing to publish a guessed price`);
+  }
 
   const product = {
     id: START_ID + i,
@@ -671,25 +694,21 @@ for (let i = 0; i < TRANSMISSION_SOURCES.length; i++) {
     category: "transmission",
     brand: item.brand,
     price,
-    stock: true,
-    stockQty: 6,
-    condition: "brand-new",
-    warranty: "24-Month Limited Warranty",
-    location: "USA Warehouse",
+    // Imported listings start HELD (not purchasable). Stock quantity,
+    // condition, warranty and fulfilment location are business-controlled:
+    // they are deliberately NOT written here and must be added from explicit
+    // source data once the business confirms them.
+    stock: false,
     fitment: item.fitment,
     partNumber: item.partNumber,
     thumbnail: images[0],
     images,
     image: images[0],
     description: buildDescription(item.name, item.fitment, item.partNumber),
-    sourceUrl: listingMeta.sourceUrl,
+    // sourceUrl is intentionally not shipped: catalog data reaches browsers.
     sourceSlug: slug,
-    createdAt: 1_751_960_000_000 - i,
+    // createdAt / topDemand are not synthesised; set them deliberately.
   };
-
-  if (item.topDemand) {
-    product.topDemand = true;
-  }
 
   products.push(product);
   console.log(`  ${images.length} image(s), $${price}`);

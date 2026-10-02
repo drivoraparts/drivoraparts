@@ -1,5 +1,6 @@
 import { listAnalyticsEvents } from "@/lib/db/analytics";
 import { safeQuery } from "@/lib/db/safe-query";
+import { joinKnown, ratingText, reviewsText, withKnown } from "@/lib/ads/text";
 import { getProductById } from "@/lib/inventory";
 import type { Product } from "@/lib/inventory/types";
 
@@ -33,13 +34,13 @@ function buildFacebookAds(product: Product, views: number, cartAdds: number): Fa
   const price = `$${product.price.toLocaleString()}`;
   const socialProof =
     product.reviewCount > 0
-      ? `${product.reviewCount}+ reviews · ${product.rating}★`
+      ? joinKnown([reviewsText(product.reviewCount), ratingText(product.rating)])
       : "Trusted by performance builders";
 
   return [
     {
       headline: `${product.name} — In Stock Now`,
-      primaryText: `Upgrade your build with OEM-grade ${product.category} parts. ${socialProof}. Ships from ${product.location}. Starting at ${price}.`,
+      primaryText: `Upgrade your build with OEM-grade ${product.category} parts. ${socialProof}.${withKnown(product.location, " Ships from ", ".")} Starting at ${price}.`,
       callToAction: "Shop Now",
     },
     {
@@ -67,7 +68,7 @@ function buildGoogleAds(product: Product): GoogleAdVariant[] {
     },
     {
       headline: `${brand.toUpperCase()} ${product.category} Parts Online`,
-      description: `Shop ${product.name}. In-stock ${product.condition} condition. Secure checkout & support.`,
+      description: `Shop ${product.name}. In-stock${withKnown(product.condition, " ", " condition")}. Secure checkout & support.`,
       keywords: [`${brand} parts`, `${product.category} upgrade`, "car parts online"],
     },
     {
@@ -88,7 +89,7 @@ function buildTikTokScript(product: Product, cartAdds: number): string {
     `[HOOK] POV: you finally found ${product.name} in stock.`,
     `[PROBLEM] Everyone else is on backorder — you're still searching Facebook groups.`,
     `[PROOF] ${cartAdds}+ buyers already carted this. ${rated}`,
-    `[OFFER] DrivoraParts — ${product.price} · ships from ${product.location}.`,
+    `[OFFER] DrivoraParts — ${product.price}${withKnown(product.location, " · ships from ")}.`,
     `[CTA] Tap link. Build season doesn't wait.`,
   ].join(" ");
 }

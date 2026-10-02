@@ -157,9 +157,11 @@ export default function ProductTemplate({
 
   // The verified condition system: the listing's own condition, resolved by
   // the same helpers the catalog and the spec rows use.
-  const conditionTone = getConditionDisplay(
-    resolveProductCondition({ category: product.category, condition: rawCondition })
-  ).color;
+  const conditionTone = rawCondition?.trim()
+    ? getConditionDisplay(
+        resolveProductCondition({ category: product.category, condition: rawCondition })
+      ).color
+    : "var(--muted)";
 
   const cartProduct: AddToCartProduct = {
     id: product.id,

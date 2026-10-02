@@ -106,7 +106,11 @@ export function productJsonLd(product: Product, price: number): JsonLd {
       priceCurrency: "USD",
       price,
       priceValidUntil: productOfferPriceValidUntil(),
-      itemCondition: productOfferItemCondition(product.condition),
+      // Omitted when no condition is recorded (listing held pending
+      // confirmation) instead of defaulting to NewCondition.
+      ...(product.condition?.trim()
+        ? { itemCondition: productOfferItemCondition(product.condition) }
+        : {}),
       availability: inStock
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",

@@ -54,6 +54,7 @@ process.stdout.write(
       id: p.id,
       name: p.name,
       condition: p.condition,
+      stock: p.stock,
       sourceUrl: p.sourceUrl,
       mileage: p.mileage,
       coreCharge: p.coreCharge,
@@ -179,9 +180,80 @@ for (const product of products) {
   }
 }
 
+// The transmission importer used to stamp every listing with claims nobody had
+// verified. These phrases are never acceptable in a description, and the
+// importer must not be able to reintroduce them or the invented values.
+const IMPORTER_TEMPLATE_CLAIMS = [
+  /verified fitment, inspected before shipment/i,
+  /ready for performance street, track, or 4WD builds/i,
+  /Worldwide shipping available . freight quotes provided for heavy assemblies/i,
+];
+for (const product of products) {
+  for (const re of IMPORTER_TEMPLATE_CLAIMS) {
+    if (re.test(product.description)) {
+      problems.push(`[claims] ${product.id} carries an unverified importer template claim (${re}): ${product.name}`);
+    }
+  }
+}
+{
+  const importerSrc = fs.readFileSync(path.join(ROOT, "scripts", "import-transmissions.mjs"), "utf8");
+  const forbidden = [
+    [/stockQty\s*:\s*\d/, "invents stock quantity"],
+    [/condition\s*:\s*["']/, "invents a condition"],
+    [/warranty\s*:\s*["']/, "invents a warranty"],
+    [/location\s*:\s*["']/, "invents a fulfilment location"],
+    [/verified fitment|inspected before shipment|inspected and tested/i, "makes an unverified claim"],
+    [/sourceUrl\s*:\s*listingMeta/, "ships a supplier URL"],
+  ];
+  for (const [re, why] of forbidden) {
+    if (re.test(importerSrc)) {
+      problems.push(`[importer] scripts/import-transmissions.mjs ${why} (${re})`);
+    }
+  }
+  if (!importerSrc.includes("--force-overwrite")) {
+    problems.push("[importer] scripts/import-transmissions.mjs lost its overwrite protection");
+  }
+}
+
+/**
+ * A missing condition is allowed ONLY for a held listing (stock:false): it cannot
+ * be bought, and every layer omits the condition instead of defaulting it to New.
+ * Anything else with no recognised condition is a problem. A non-empty but
+ * unrecognised value is a problem even when held.
+ * Returns "ok" | "held-exception" | "problem".
+ */
+function conditionRecordStatus(product) {
+  const stored = String(product.condition ?? "").trim();
+  if (!stored && product.stock === false) return "held-exception";
+  if (!stored || !KNOWN_CONDITION.test(stored)) return "problem";
+  return "ok";
+}
+
+if (process.argv.includes("--self-test")) {
+  const cases = [
+    [{ condition: undefined, stock: false }, "held-exception"],
+    [{ condition: "", stock: false }, "held-exception"],
+    [{ condition: undefined, stock: true }, "problem"],
+    [{ condition: undefined }, "problem"],
+    [{ condition: "   ", stock: true }, "problem"],
+    [{ condition: "banana", stock: false }, "problem"],
+    [{ condition: "brand-new", stock: true }, "ok"],
+    [{ condition: "used", stock: false }, "ok"],
+  ];
+  const failed = cases.filter(([p, want]) => conditionRecordStatus(p) !== want);
+  if (failed.length) {
+    console.error("condition self-test FAILED:", JSON.stringify(failed));
+    process.exit(1);
+  }
+  console.log(`Condition exception self-test passed (${cases.length} cases).`);
+  process.exit(0);
+}
+
 for (const product of products) {
   const stored = String(product.condition ?? "").trim();
-  if (!stored || !KNOWN_CONDITION.test(stored)) {
+  const status = conditionRecordStatus(product);
+  if (status === "held-exception") continue;
+  if (status === "problem") {
     problems.push(
       `[condition] ${product.id} records no recognised condition ("${stored}") and would silently badge Brand New: ${product.name}`
     );

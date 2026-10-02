@@ -263,6 +263,10 @@ export function isPowertrainAssembly(product: Product): boolean {
 export function resolveProductMileage(product: Product): string | undefined {
   if (product.mileage?.trim()) return product.mileage.trim();
 
+  // No recorded condition (a listing held pending confirmation): say nothing
+  // rather than infer "0 Miles" or "Inquire for Mileage" from the fallback.
+  if (!product.condition?.trim()) return undefined;
+
   const condition = resolveProductCondition(product);
 
   // A crate engine or gearbox genuinely is zero miles, and that is worth
@@ -554,7 +558,11 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
   return {
     horsepower: resolveProductHorsepower(product),
     mileage: resolveProductMileage(product),
-    conditionLabel: getConditionLabel(product),
+    // A listing with no recorded condition is held pending confirmation; it
+    // must not be labelled Brand New by the resolver's display fallback.
+    conditionLabel: product.condition?.trim()
+      ? getConditionLabel(product)
+      : "Not yet confirmed",
     warranty: resolveProductWarranty(product, description),
     rating: resolveProductRating(product),
     reviewCount: resolveProductReviewCount(product),
