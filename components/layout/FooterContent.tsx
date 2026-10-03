@@ -69,6 +69,7 @@ const COLUMNS: { heading: UiKey; links: FooterLink[] }[] = [
     links: [
       { href: "/about", label: "about" },
       { href: "/guides", label: "buyingGuides" },
+      { href: "/news", label: "newsroom" },
       { href: "/policies/terms-of-service", label: "termsOfService" },
       { href: "/policies/cookie-policy", label: "cookiePolicy" },
       { href: "/policies/accessibility-statement", label: "accessibility" },

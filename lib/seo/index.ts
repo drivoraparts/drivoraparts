@@ -11,6 +11,7 @@ export {
   organizationJsonLd,
   websiteJsonLd,
   breadcrumbJsonLd,
+  articleJsonLd,
   productJsonLd,
   itemListJsonLd,
   collectionPageJsonLd,
