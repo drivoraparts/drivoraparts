@@ -8,6 +8,7 @@ import {
   getAllProducts,
   routes,
 } from "@/lib/inventory";
+import { getAllNewsArticles, newsArticlePath, NEWS_PATH } from "@/lib/content/news";
 import { POLICY_PATHS } from "./constants";
 import { hasGenericPlaceholderDescription } from "./product-seo";
 
@@ -39,6 +40,7 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     { path: routes.all, priority: 0.9 },
     { path: "/vehicles", priority: 0.9 },
     { path: "/about", priority: 0.6 },
+    { path: NEWS_PATH, priority: 0.6 },
     { path: "/contact", priority: 0.6 },
     { path: "/policies", priority: 0.4 },
   ];
@@ -96,6 +98,15 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
       )
     );
 
+  const newsEntries = getAllNewsArticles().map((article) =>
+    entry(
+      toUrl(newsArticlePath(article.slug)),
+      0.6,
+      "monthly",
+      new Date(`${article.datePublished}T12:00:00Z`)
+    )
+  );
+
   const policyEntries = POLICY_PATHS.map((path) =>
     entry(toUrl(path), 0.3, "monthly")
   );
@@ -113,6 +124,7 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     ...vehicleEntries,
     ...enginePlatformEntries,
     ...productEntries,
+    ...newsEntries,
     ...policyEntries,
   ];
 }

@@ -46,6 +46,7 @@ export const UI = {
   faq: "FAQ",
   startReturn: "Start a Return",
   buyingGuides: "Buying Guides",
+  newsroom: "News",
   allPolicies: "All Policies",
   marketUnitedStates: "United States",
   marketAustralia: "Australia",
