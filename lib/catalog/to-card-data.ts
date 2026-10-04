@@ -5,6 +5,7 @@ import {
   resolveProductGallery,
 } from "@/lib/inventory";
 import { compactFitment, shortFitment } from "@/lib/catalog/short-fitment";
+import { resolveAvailabilityLabel } from "@/lib/inventory/availability";
 import type { Product } from "@/lib/inventory/types";
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
 
@@ -40,5 +41,6 @@ export function toCatalogCardData(product: Product): CatalogProductCardData {
     partNumber: product.partNumber || undefined,
     fitment: shortFitment(compactFitment(product)),
     inStock: product.stock,
+    availabilityLabel: resolveAvailabilityLabel(product.stock, product.location),
   };
 }

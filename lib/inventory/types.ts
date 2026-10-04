@@ -108,6 +108,14 @@ export type Product = {
   referencePriceVerified?: boolean;
 
   /**
+   * The authored `price` is the manufacturer's published MSRP, confirmed
+   * against the manufacturer. Only then may the storefront strike it through
+   * as a list price. `referencePriceVerified` (a supplier page) is not enough:
+   * that price may be a retailer's, not the manufacturer's.
+   */
+  msrpConfirmed?: boolean;
+
+  /**
    * Import-time only. New import scripts may still emit a supplier URL; it is
    * honoured by the pricing check but must be converted to
    * `referencePriceVerified` before it is committed (audit-storefront-claims

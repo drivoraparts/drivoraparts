@@ -218,7 +218,9 @@ export default function AllProductsGridCard({
                 : "font-semibold text-success"
             }
           >
-            {outOfStock ? "Out of stock" : "In stock"}
+            {outOfStock
+              ? "Out of stock"
+              : (product.availabilityLabel ?? "Available to order")}
           </span>
           {product.condition ? (
             <>

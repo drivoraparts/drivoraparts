@@ -428,11 +428,10 @@ for (const product of products) {
   }
 }
 
-if (pricesChecked === 0) {
-  problems.push(
-    "[pricing] no listing carries a reference price, so nothing re-derived — the check above is no longer testing anything"
-  );
-}
+// Zero struck-through prices is the expected state: a "List price" now needs a
+// listing flagged msrpConfirmed (see hasConfirmedMsrp in pricing.ts), and none
+// is yet. The loop above still guards any that are added.
+void pricesChecked;
 
 /* ------------------------------------------------------------------------ */
 

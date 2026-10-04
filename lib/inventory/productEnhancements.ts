@@ -261,23 +261,30 @@ export function isPowertrainAssembly(product: Product): boolean {
  * condition row already tells a buyer the part is unused.
  */
 export function resolveProductMileage(product: Product): string | undefined {
-  if (product.mileage?.trim()) return product.mileage.trim();
-
   // No recorded condition (a listing held pending confirmation): say nothing
-  // rather than infer "0 Miles" or "Inquire for Mileage" from the fallback.
+  // rather than infer anything from the fallback.
   if (!product.condition?.trim()) return undefined;
 
   const condition = resolveProductCondition(product);
 
-  // A crate engine or gearbox genuinely is zero miles, and that is worth
-  // stating -- it is the difference between a new unit and a takeout.
-  if (condition === "brand-new") {
-    return isPowertrainAssembly(product) ? "0 Miles (Crate / Brand New)" : undefined;
-  }
+  // A new part is new because of its condition, not because it has "0 miles".
+  // This holds for crate engines and gearboxes too: whatever a new listing
+  // authored as mileage is not shown.
+  if (condition === "brand-new") return undefined;
 
-  // Used or remanufactured: mileage is a real question and we do not hold the
-  // answer, so the row invites the one conversation that can settle it.
-  return "Inquire for Mileage";
+  // A zero reading on a used or refurbished unit is not a measurement -- it is
+  // the old new-part default -- so it counts as no mileage recorded.
+  const recorded = product.mileage?.trim();
+  if (recorded && !/^0\s*(miles?|mi|mileage)?\b/i.test(recorded)) return recorded;
+
+  // Remanufactured and exchange parts (injectors, turbos, pumps) have no
+  // odometer reading of their own; the row would only ever say "inquire".
+  if (condition === "refurbished") return undefined;
+
+  // A used engine or gearbox: mileage is a real question and we do not hold
+  // the answer, so the row invites the one conversation that can settle it.
+  // Other used parts have no meaningful odometer reading.
+  return isPowertrainAssembly(product) ? "Inquire for Mileage" : undefined;
 }
 
 /**

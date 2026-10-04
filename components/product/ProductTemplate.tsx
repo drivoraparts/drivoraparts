@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Product } from "@/data/store";
 import { trackEvent } from "@/lib/analytics/client";
+import { resolveAvailabilityLabel } from "@/lib/inventory/availability";
 import type { ProductCatalogMeta } from "@/lib/inventory/productEnhancements";
 import type { CatalogProductCardData } from "@/components/catalog/CatalogProductCard";
 import AddToCartButton, {
@@ -379,7 +380,9 @@ export default function ProductTemplate({
                 className={`h-2 w-2 shrink-0 rounded-full ${inStock ? "bg-success" : "bg-neutral-400"}`}
               />
               <span className={inStock ? "text-success" : "text-muted"}>
-                {inStock ? "In stock" : "Out of stock"}
+                {inStock
+                  ? resolveAvailabilityLabel(true, product.location)
+                  : "Out of stock"}
               </span>
             </p>
             <p className="mt-1.5 text-[12px] leading-relaxed text-muted">

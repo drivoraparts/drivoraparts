@@ -5,6 +5,10 @@ import {
   getConditionLabel,
   getProductThumbnail,
 } from "@/lib/inventory";
+import {
+  resolveAvailabilityLabel,
+  type AvailabilityLabel,
+} from "@/lib/inventory/availability";
 import { marketScope } from "@/lib/catalog/markets";
 import { compareByMerchandising } from "@/lib/catalog/merchandising";
 import { sectionMatcher } from "@/lib/catalog/sections";
@@ -133,6 +137,8 @@ export type CatalogProductPayload = {
   /** The wording the product page uses, so a card never disagrees with it. */
   conditionLabel?: string;
   inStock?: boolean;
+  /** "In stock" only for listings held in our own warehouse. */
+  availabilityLabel?: AvailabilityLabel;
 };
 
 export type CatalogQueryResult = {
@@ -266,6 +272,7 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
     condition: product.condition || undefined,
     conditionLabel: product.condition ? getConditionLabel(product) : undefined,
     inStock: product.stock,
+    availabilityLabel: resolveAvailabilityLabel(product.stock, product.location),
   }));
 
   return {
