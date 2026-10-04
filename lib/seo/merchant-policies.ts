@@ -86,6 +86,11 @@ export function productOfferReturnPolicy(): JsonLd | JsonLd[] {
   return policies.length === 1 ? policies[0] : policies;
 }
 
+/** Offer validFrom: the price is current as of the render, like priceValidUntil. */
+export function productOfferValidFrom(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
 /** Google merchant listing examples include priceValidUntil on Offer. */
 export function productOfferPriceValidUntil(): string {
   const date = new Date();

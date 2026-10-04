@@ -7,12 +7,14 @@ import {
 import { routes } from "@/lib/inventory/routes";
 import { getBrandBySlug } from "@/lib/inventory";
 import { resolveProductGallery } from "@/lib/inventory/media";
+import type { ProductReview } from "@/lib/reviews/types";
 import { SITE_NAME, SITE_TAGLINE } from "./constants";
 import {
   productOfferItemCondition,
   productOfferPriceValidUntil,
   productOfferReturnPolicy,
   productOfferShippingDetails,
+  productOfferValidFrom,
 } from "./merchant-policies";
 import { absoluteImageUrl, absoluteUrl } from "./urls";
 
@@ -112,7 +114,48 @@ export function articleJsonLd(input: {
   };
 }
 
-export function productJsonLd(product: Product, price: number): JsonLd {
+export type ProductJsonLdReviews = {
+  rating: number;
+  reviewCount: number;
+  reviews: ProductReview[];
+};
+
+/**
+ * Review markup is emitted only from approved, stored reviews. With none, the
+ * fields are left out entirely: Search Console flags them as non-critical, but
+ * inventing a rating to silence it would be misleading markup.
+ */
+function productReviewJsonLd(input?: ProductJsonLdReviews): JsonLd {
+  if (!input || input.reviewCount <= 0 || input.rating <= 0) return {};
+
+  return {
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: input.rating,
+      reviewCount: input.reviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    review: input.reviews.map((review) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: review.reviewerName },
+      datePublished: review.createdAt.slice(0, 10),
+      reviewBody: review.review,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: review.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+    })),
+  };
+}
+
+export function productJsonLd(
+  product: Product,
+  price: number,
+  reviews?: ProductJsonLdReviews
+): JsonLd {
   const gallery = resolveProductGallery(product.thumbnail, product.images).map(
     absoluteImageUrl
   );
@@ -135,10 +178,12 @@ export function productJsonLd(product: Product, price: number): JsonLd {
       "@type": "Brand",
       name: brand?.name ?? product.brand,
     },
+    ...productReviewJsonLd(reviews),
     offers: {
       "@type": "Offer",
       priceCurrency: "USD",
       price,
+      validFrom: productOfferValidFrom(),
       priceValidUntil: productOfferPriceValidUntil(),
       // Omitted when no condition is recorded (listing held pending
       // confirmation) instead of defaulting to NewCondition.
