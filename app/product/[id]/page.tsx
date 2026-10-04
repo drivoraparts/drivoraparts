@@ -24,7 +24,10 @@ import {
   hasGenericPlaceholderDescription,
   productJsonLd,
 } from "@/lib/seo";
-import { getProductReviewAggregate } from "@/lib/reviews";
+import {
+  getApprovedReviewsByProductId,
+  getProductReviewAggregate,
+} from "@/lib/reviews";
 import { getProductInterest } from "@/lib/analytics/product-interest";
 
 export const revalidate = 3600;
@@ -84,10 +87,12 @@ export default async function ProductPage({ params }: PageProps) {
    * than baked into the static meta above. Merging them keeps the shape
    * ProductTemplate already expects.
    */
-  const [reviewAggregate, productInterest] = await Promise.all([
-    getProductReviewAggregate(product.id),
-    getProductInterest(product.id),
-  ]);
+  const [reviewAggregate, productInterest, structuredReviews] =
+    await Promise.all([
+      getProductReviewAggregate(product.id),
+      getProductInterest(product.id),
+      getApprovedReviewsByProductId(product.id, { limit: 5 }),
+    ]);
   const catalogMeta = { ...baseMeta, ...reviewAggregate };
 
   const inStock = inventoryProduct?.stock !== false;
@@ -116,7 +121,10 @@ export default async function ProductPage({ params }: PageProps) {
   const structuredData = inventoryProduct
     ? [
         breadcrumbs,
-        productJsonLd(inventoryProduct, product.price),
+        productJsonLd(inventoryProduct, product.price, {
+          ...reviewAggregate,
+          reviews: structuredReviews,
+        }),
       ]
     : [breadcrumbs];
 
