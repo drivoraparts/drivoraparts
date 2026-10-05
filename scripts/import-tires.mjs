@@ -293,7 +293,7 @@ Size: ${size}
 Category: ${segment}
 
 Shipping
-Single-tire and full-set orders ship from USA inventory — contact for freight quotes on oversized LT/mud-terrain sizes and international delivery.`;
+Single-tire and full-set orders ship through our fulfillment network — contact for freight quotes on oversized LT/mud-terrain sizes and international delivery.`;
 }
 
 function parseWediaImages(html) {

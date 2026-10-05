@@ -88,6 +88,33 @@ export function resolveProductCondition(
   return "brand-new";
 }
 
+/**
+ * Drop authored mileage that the listing's own condition rules out.
+ *
+ * A new part has no odometer reading, and a zero on a used one is the old
+ * new-part default rather than a measurement -- 52 listings authored "0 Miles"
+ * or "Low-mile takeout / crate", some of them badged Brand New. Applied once
+ * over the catalog, like applyPublicPrices, so every consumer (product page,
+ * compare page, API) agrees. Real recorded mileage on used units is kept.
+ */
+const ZERO_MILEAGE = /^0\s*(miles?|mi|mileage)?\b/i;
+
+export function applyMileageRules(items: Product[]): Product[] {
+  return items.map((product) => {
+    const recorded = product.mileage?.trim();
+    if (!recorded) return product;
+
+    const condition = product.condition?.trim()
+      ? resolveProductCondition(product)
+      : undefined;
+    if (condition === "brand-new" || ZERO_MILEAGE.test(recorded)) {
+      const { mileage: _dropped, ...rest } = product;
+      return rest;
+    }
+    return product;
+  });
+}
+
 export type ConditionDisplay = {
   label: string;
   color: string;
