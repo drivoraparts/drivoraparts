@@ -45,7 +45,7 @@ function buildTikTokAd(
   const hook =
     metrics.cartAdds >= 5
       ? `Everyone is carting this ${product.brand?.toUpperCase() ?? "engine"} part`
-      : `Stop scrolling — this ${product.category} upgrade is in stock`;
+      : `Stop scrolling — this ${product.category} upgrade is available to order`;
 
   return {
     productId: product.id,
@@ -82,8 +82,8 @@ function buildMetaAd(
     productId: product.id,
     platform: "meta",
     hook,
-    adCopy: `${hook}. OEM-grade ${product.category} component for serious builds. ${metrics.views} recent views, ${metrics.cartAdds} cart adds. Multiple payment options available. Starting at $${product.price.toLocaleString()}.`,
-    script: `${proofLead(product)} Highlight fast fulfillment${withKnown(product.location, " from ")}. Close with limited inventory urgency.`,
+    adCopy: `${hook}. ${product.category} component for serious builds. ${metrics.views} recent views, ${metrics.cartAdds} cart adds. Multiple payment options available. Starting at $${product.price.toLocaleString()}.`,
+    script: `${proofLead(product)} Mention fulfillment${withKnown(product.location, " from ")}. Close with a clear call to action.`,
     cta: "Buy Now",
     targeting: buildTargeting(product, metrics.cartRate),
   };
@@ -98,13 +98,13 @@ function buildGoogleAd(product: Product): AutopilotAd {
     "buy auto parts online",
   ].filter(Boolean);
 
-  const hook = `${product.name} | In Stock`;
+  const hook = `${product.name} | Available to Order`;
 
   return {
     productId: product.id,
     platform: "google",
     hook,
-    adCopy: `Buy ${product.name}. ${withKnown(product.condition, "", " · ")}$${product.price}. Fast shipping${withKnown(product.location, " from ")}. Trusted DrivoraParts catalog.`,
+    adCopy: `Buy ${product.name}. ${withKnown(product.condition, "", " · ")}$${product.price}. Ships${withKnown(product.location, " from ")}. Trusted DrivoraParts catalog.`,
     script: `Search intent capture: headline + price + stock status + category keywords.`,
     cta: "Get Quote",
     targeting: [...new Set(keywords)].slice(0, 8),

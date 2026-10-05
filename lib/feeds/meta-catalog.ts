@@ -4,6 +4,7 @@ import {
   getBrandBySlug,
   resolveProductCondition,
 } from "@/lib/inventory";
+import { resolveAvailabilityLabel } from "@/lib/inventory/availability";
 import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
 import type { Product } from "@/lib/inventory/types";
 import { absoluteImageUrl, absoluteUrl } from "@/lib/seo";
@@ -15,7 +16,7 @@ export type MetaCatalogFeedRow = {
   id: string;
   title: string;
   description: string;
-  availability: "in stock" | "out of stock";
+  availability: "in stock" | "available for order" | "out of stock";
   condition: "new" | "refurbished" | "used";
   price: string;
   link: string;
@@ -51,8 +52,16 @@ function metaCondition(product: Product): MetaCatalogFeedRow["condition"] {
   return "used";
 }
 
+/**
+ * The feed says what the page says. "in stock" only where the page does;
+ * supplier-network and unconfirmed listings go out as "available for order",
+ * one of Meta's accepted availability values, so an ad never promises stock
+ * the product page does not.
+ */
 function metaAvailability(product: Product): MetaCatalogFeedRow["availability"] {
-  return product.stock === false ? "out of stock" : "in stock";
+  const label = resolveAvailabilityLabel(product.stock, product.location);
+  if (label === "Out of stock") return "out of stock";
+  return label === "In stock" ? "in stock" : "available for order";
 }
 
 function metaDescription(product: Product): string {

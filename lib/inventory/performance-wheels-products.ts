@@ -27,7 +27,7 @@ export const performanceWheelsProducts: Product[] = [
 
 The iconic forged Volk Racing TE37, sized specifically for the MK4 Supra — 18x9.5 +40 front and 18x10.5 +45 rear, sold as a matched set of four.
 
-The TE37 is one of the most recognized JDM wheels ever made — a forged, lightweight design that cuts rotational mass without sacrificing strength. Sourced through an authorized Rays Engineering distributor for genuine fitment and finish on this specific Supra sizing.
+The TE37 is one of the most recognized JDM wheels ever made — a forged, lightweight design that cuts rotational mass without sacrificing strength. Sized for this specific Supra application.
 
 Specifications
 • Part Type: Forged Aluminum Wheel Set (4)
@@ -37,10 +37,9 @@ Specifications
 • Manufacturer: Volk Racing (Rays Engineering)
 
 Highlights
-• Genuine Volk Racing TE37 Forged Construction
+• Volk Racing TE37 Forged Construction
 • MK4 Supra-Specific Sizing (Front/Rear Staggered)
 • Iconic JDM Wheel with Strong Resale Value
-• Sourced Through Authorized Distributor
 • Significant Weight Savings Over Factory Wheels
 
 Warranty
@@ -156,16 +155,16 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
     referencePriceVerified: true,
     description: `OEM 20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)
 
-100% genuine BMW OEM wheel set for the BMW M5 (F90) — the factory M Double Spoke Style 706M, finished in a deep Gloss Black for a clean, factory-correct, performance-luxury look. Every wheel is brand new, built to BMW's exact factory specifications, and sourced through an authorized genuine-parts channel for true OEM fitment, load rating, and finish quality.
+OEM-specification wheel set for the BMW M5 (F90) — the factory M Double Spoke Style 706M, finished in a deep Gloss Black for a clean, factory-correct, performance-luxury look. Every wheel is brand new.
 
-As a direct-fit factory replacement, this set bolts straight onto your M5 (F90) with no spacers, adapters, or modification required — the same wheel BMW speced for this chassis from the factory, not a lookalike reproduction. That means correct offset, correct load rating, and the factory ride and handling character the M5 was tuned around.
+As a direct-fit factory replacement, this set bolts straight onto your M5 (F90) with no spacers, adapters, or modification required — built to the same specification BMW used for this chassis. That means correct offset, correct load rating, and the factory ride and handling character the M5 was tuned around.
 
 Specifications
 • Front Wheels: 20 x 9.5J
 • Rear Wheels: 20 x 10.5J
 • Bolt Pattern: 5 x 112
 • Center Bore: 66.6mm
-• Direct OEM Fitment — Genuine BMW Part
+• Direct OEM-specification fitment
 • High-Strength OEM Alloy Construction
 • Finish: Gloss Black
 
@@ -174,7 +173,6 @@ Vehicle Fitment
 • Verify compatibility using your VIN before purchase.
 
 Highlights
-• 100% Genuine BMW OEM — Not Aftermarket or Reproduction
 • Factory Style 706M M Double Spoke Design
 • Premium Gloss Black Finish
 • Direct Bolt-On Replacement, No Modification Required

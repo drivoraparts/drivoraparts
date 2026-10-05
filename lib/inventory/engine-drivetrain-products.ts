@@ -63,6 +63,12 @@ export const engineDrivetrainProducts: Product[] = [
     createdAt: 1_741_900_000_000,
     ...media("gm-l86-6-2-engine", ["1.jpg", "2.jpg"]),
     ...BASE,
+    // The listing's own text says "USA-sourced low-mile takeout inventory", so
+    // this is a pulled unit, not new. BASE assumes brand-new, and its "takeout
+    // / crate" mileage line was a hedge between the two, so it is cleared:
+    // actual mileage is unknown and shows as "Inquire for Mileage".
+    condition: "used",
+    mileage: undefined,
     description: swapDescription(
       "Chevrolet L86 6.2L V8 Engine",
       "Gen V 6.2L aluminum V8 with direct injection and variable valve timing — a proven swap choice when you want LT-class architecture without the premium crate price tag. Units are leak-down and compression tested before shipment.",
@@ -257,7 +263,6 @@ export const engineDrivetrainProducts: Product[] = [
         "High-revving DOHC performance",
         "Complete drivetrain convenience",
         "Strong aftermarket support",
-        "USA warehouse fulfillment",
       ]
     ),
   },
@@ -301,6 +306,9 @@ export const engineDrivetrainProducts: Product[] = [
     createdAt: 1_741_908_000_000,
     ...media("ford-ecoboost-3-5", ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
     ...BASE,
+    // "Inspected takeout inventory" -- a pulled unit, not new. See #186.
+    condition: "used",
+    mileage: undefined,
     description: swapDescription(
       "Ford 3.5L EcoBoost V6 Engine",
       "Twin-turbocharged 3.5L EcoBoost V6 delivering V8-rivaling torque in a lighter package — ideal for performance trucks and creative swap platforms.",

@@ -238,7 +238,7 @@ function splitDescriptionSections(description: string) {
  * transfer case brace is a bracket.
  */
 const POWERTRAIN_ASSEMBLY =
-  /\b(complete engine|engine assembly|long ?block|short ?block|crate engine|engine package|swap package|drivetrain package|complete drivetrain|rotating assembly|transmission|transaxle|transfer case|gearbox)\b/i;
+  /\b(complete engine|engine assembly|long ?block|short ?block|crate engine|engine package|swap package|drivetrain package|complete drivetrain|rotating assembly|transmission|transaxle|transfer case|gearbox)\b|\bengine$/i;
 
 const POWERTRAIN_ACCESSORY =
   /\b(mount|mounts|bracket|brace|skid|filter|belt|hose|line|manifold|sensor|gasket|seal|bolt|stud|nut|washer|hardware|cooler|pan|pump|adapter|adaptor|spacer|shifter|linkage|cable|harness|controller|solenoid|valve body|dipstick|crossmember|fluid|cover|plate|flange|clamp|bushing|insulator|power steering|service kit|rebuild kit|shift kit|install kit|swap kit|conversion kit|kit for|flexplate|flywheel|clutch|dust|shield|guard|spring|arm|link|exhaust brake|brakeloc|idle control|module|support|tuner|programmer|monitor|gauge|switch|relay|wire)\b/i;
