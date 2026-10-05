@@ -25,8 +25,8 @@ export function organizationJsonLd(): JsonLd {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: SITE_NAME,
-    // The registered entity behind the brand. No address, telephone or
-    // headquarters is stated: none is documented for publication.
+    // The registered entity behind the brand, with the business address the
+    // owner has chosen to publish. No telephone is stated.
     legalName: COMPANY_LEGAL_NAME,
     url: absoluteUrl("/"),
     logo: absoluteImageUrl("/favicon.png"),
