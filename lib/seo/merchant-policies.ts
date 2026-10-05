@@ -98,14 +98,26 @@ export function productOfferPriceValidUntil(): string {
   return date.toISOString().slice(0, 10);
 }
 
-const ITEM_CONDITION: Record<string, string> = {
-  "brand-new": "https://schema.org/NewCondition",
-  new: "https://schema.org/NewCondition",
-  used: "https://schema.org/UsedCondition",
-  refurbished: "https://schema.org/RefurbishedCondition",
-};
+const NEW = "https://schema.org/NewCondition";
+const USED = "https://schema.org/UsedCondition";
+const REFURBISHED = "https://schema.org/RefurbishedCondition";
 
+/**
+ * schema.org itemCondition from the listing's stored condition string.
+ *
+ * This used to look the string up exactly, so any wording the table did not
+ * list -- "Used like new", "used - inspected and tested" -- fell through to
+ * NewCondition while the page and the Meta feed said Used (#184, #185, #2115).
+ * It now classifies the same way resolveProductCondition does, which is what
+ * the page badge and the feed use, so the three cannot disagree: refurbished
+ * or remanufactured first, then anything "used" (a used-like-new part is
+ * used), then new. Anything else is left out rather than defaulted to New.
+ */
 export function productOfferItemCondition(condition?: string): string | undefined {
-  if (!condition) return ITEM_CONDITION["brand-new"];
-  return ITEM_CONDITION[condition.toLowerCase()] ?? ITEM_CONDITION["brand-new"];
+  const value = (condition ?? "").toLowerCase().trim();
+  if (!value) return undefined;
+  if (value.includes("refurbished") || value.includes("remanufactured")) return REFURBISHED;
+  if (value.includes("used") || value.includes("mixed")) return USED;
+  if (value.includes("new")) return NEW;
+  return undefined;
 }
