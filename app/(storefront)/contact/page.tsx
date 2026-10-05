@@ -45,17 +45,17 @@ export default function ContactPage() {
         </div>
 
         {/*
-          Where parts are sent back to, and where the Shipping Policy says
-          orders go out from. It is a fulfillment and returns address, not an
-          office -- nothing establishes it as one -- so it is not headed as a
-          headquarters or a warehouse.
+          The main business and mailing address, and where authorized returns
+          are sent. Orders do NOT all dispatch from here -- some ship from
+          the supplier network -- so it is not headed as a warehouse, and no
+          headquarters is claimed.
 
           The note below asks for authorization first: an unannounced parcel
           arriving here cannot be matched to an order.
         */}
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
           <h2 className="mb-3 text-xl font-semibold text-neutral-900">
-            Fulfillment &amp; Returns Address
+            Business &amp; Mailing Address
           </h2>
           <address className="space-y-0.5 text-sm not-italic leading-relaxed">
             <p>{CALIFORNIA_FULFILLMENT.street}</p>
@@ -66,9 +66,12 @@ export default function ContactPage() {
             <p>{CALIFORNIA_FULFILLMENT.country}</p>
           </address>
           <p className="mt-3 text-sm">
-            Orders are dispatched from here, and authorized returns come back
-            here. Request authorization through the form above before sending
-            anything back, so the parcel can be matched to your order.
+            This is our main business and mailing address. Not every order
+            ships from here: a part ships from DrivoraParts or from our
+            supplier network, depending on its availability and location.
+            Authorized returns come back to this address. Request
+            authorization through the form above before sending anything back,
+            so the parcel can be matched to your order.
           </p>
         </div>
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">

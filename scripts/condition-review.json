@@ -91,5 +91,15 @@
       "id": 1855,
       "reason": "Imported text said the supplier lists it as currently unavailable for purchase (removed from the description), but the listing carries stock:true and an importer-default stockQty:3. Owner must confirm the supplier can fill it."
     }
+  ],
+  "pendingKitReview": [
+    {
+      "id": 255,
+      "reason": "Marked Used: the listing states its engine is an \"L83 (Low Mile Pullout)\". The other kit components (K-member, headers, harness, ECU) are not evidenced as new or used, so owner should confirm how the kit is described."
+    },
+    {
+      "id": 516,
+      "reason": "Marked Used because its text states an \"L83 (Low Mile Pullout)\" engine; but the title says L86 6.2 and the text looks copy-pasted from #255, so the real engine and condition need owner confirmation. \"Copy of\" removed from the title as an artifact."
+    }
   ]
 }

@@ -82,11 +82,12 @@ export const CALIFORNIA_FULFILLMENT = {
  * worse than saying nothing, and nothing on file supports us owning a facility
  * in either country.
  *
- * What is supportable is that parts are sourced, inspected and dispatched in
- * both countries. That is a region, so it is published as a region.
+ * What is supportable is that some parts are sourced and dispatched through
+ * suppliers and logistics partners, so the summary says only that orders ship
+ * from DrivoraParts or the supplier network. It names no facility or region.
  */
 export const REGIONAL_FULFILLMENT_SUMMARY =
-  "Regional Fulfillment: California, Japan & Australia";
+  "Orders ship from DrivoraParts or our supplier network, depending on the part";
 
 export const COMPANY_MOTTO = "Engineered • Fitment • Performance";
 
