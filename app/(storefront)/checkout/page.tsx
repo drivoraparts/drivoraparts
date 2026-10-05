@@ -36,7 +36,6 @@ import {
   MANUAL_PAYMENT_CHECKOUT_LINK,
   MANUAL_PAYMENT_CHECKOUT_QUESTION,
   MANUAL_PAYMENT_POLICY_HREF,
-  PAYPAL_DISCLOSURE,
 } from "@/lib/content/manual-payment";
 
 const glassCard =
@@ -940,39 +939,6 @@ export default function CheckoutPage() {
                         </>
                       ) : (
                         <>
-                          {/*
-                            PayPal, only for itself, and before the order is
-                            placed. (Venmo had its own notice until it was taken
-                            off the payment list.)
-
-                            One short line on how that method is paid, so the
-                            customer knows what to do when the instructions
-                            arrive: pick Friends & Family on PayPal. The panel below is the
-                            existing place a selected method explains itself, so
-                            the line lives here rather than in a banner over
-                            checkout or on another page.
-
-                            Looked up by payChoice, so a method with no entry
-                            shows nothing and neither notice can appear under
-                            another method. The text is wired into the select's
-                            aria-describedby (via #payment-method-detail) so it
-                            is read out when the method is chosen, not just
-                            drawn.
-                          */}
-                          {(() => {
-                            const notice =
-                              payChoice === "paypal"
-                                ? PAYPAL_DISCLOSURE
-                                : null;
-
-                            return notice ? (
-                              <div className="mb-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2.5 text-xs leading-relaxed text-amber-900">
-                                <p className="font-semibold">{notice.lead}</p>
-                                <p className="mt-1">{notice.body}</p>
-                              </div>
-                            ) : null;
-                          })()}
-
                           {/* Route names only: no account numbers, sort codes
                               or SWIFT/BIC appear here. */}
                           {methodRequiresRoute(payChoice) ? (
