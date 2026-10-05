@@ -95,11 +95,11 @@
   "pendingKitReview": [
     {
       "id": 255,
-      "reason": "Marked Used: the listing states its engine is an \"L83 (Low Mile Pullout)\". The other kit components (K-member, headers, harness, ECU) are not evidenced as new or used, so owner should confirm how the kit is described."
+      "reason": "Used: title, fitmentEngine and body all say L83 5.3 and the body says low-mile pullout. No evidence either way for the K-member, headers, harness/ECU or other kit parts, so the description states only that the engine is used. Mileage not recorded."
     },
     {
       "id": 516,
-      "reason": "Marked Used because its text states an \"L83 (Low Mile Pullout)\" engine; but the title says L86 6.2 and the text looks copy-pasted from #255, so the real engine and condition need owner confirmation. \"Copy of\" removed from the title as an artifact."
+      "reason": "Used (kept by owner decision), but NOT established by source: title, fitment and fitmentEngine say L86 6.2, while the only used/pullout wording was an L83 line copied from #255 (removed). Its photo is byte-identical to #255 (L83 kit). Owner must confirm the engine, its condition, and supply the right photo."
     }
   ]
 }
