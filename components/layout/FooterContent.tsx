@@ -10,6 +10,7 @@ import {
   COMPANY_SUPPORT_EMAIL,
   copyrightYears,
 } from "@/lib/content/company";
+import { BUYER_PROTECTION_HREF } from "@/lib/content/buyer-protection";
 import {
   CONTACT_HREF,
   RETURN_POLICY_HREF,
@@ -61,6 +62,7 @@ const COLUMNS: { heading: UiKey; links: FooterLink[] }[] = [
       { href: START_RETURN_HREF, label: "startReturn" },
       { href: SHIPPING_POLICY_HREF, label: "shippingPolicy" },
       { href: RETURN_POLICY_HREF, label: "returnsRefunds" },
+      { href: BUYER_PROTECTION_HREF, label: "buyerProtection" },
       { href: WARRANTY_POLICY_HREF, label: "warrantyPolicy" },
     ],
   },
@@ -94,6 +96,7 @@ const LEGAL_LINKS: FooterLink[] = [
   { href: "/policies/privacy-policy", label: "privacyPolicy" },
   { href: SHIPPING_POLICY_HREF, label: "shippingPolicy" },
   { href: RETURN_POLICY_HREF, label: "returnsRefunds" },
+  { href: BUYER_PROTECTION_HREF, label: "buyerProtection" },
   { href: WARRANTY_POLICY_HREF, label: "warrantyPolicy" },
 ];
 

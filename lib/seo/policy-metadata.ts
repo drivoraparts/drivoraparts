@@ -28,6 +28,11 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
     description:
       "30-day return window, condition requirements, and refund processing for DrivoraParts performance parts orders.",
   },
+  "/policies/buyer-protection": {
+    title: "Buyer Protection",
+    description:
+      "DrivoraParts Buyer Protection: how we make it right, including an applicable refund, if we cannot fulfill a paid order or ship the wrong item.",
+  },
   "/warranty": {
     title: "Warranty Policy",
     description:
