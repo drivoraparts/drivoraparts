@@ -1,6 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import {
+  BUYER_PROTECTION_CHECKOUT_LINK,
+  BUYER_PROTECTION_CHECKOUT_STATEMENT,
+  BUYER_PROTECTION_HREF,
+} from "@/lib/content/buyer-protection";
+import { RETURN_POLICY_HREF } from "@/lib/content/purchase-terms";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { trackEvent } from "@/lib/analytics/client";
@@ -722,6 +728,23 @@ export default function CheckoutPage() {
                       </span>
                     </Link>
                   </p>
+                  {/*
+                    DrivoraParts Buyer Protection, in the payment area where a
+                    first-time customer decides whether to pay. Opens in a new
+                    tab for the same reason as the link above.
+                  */}
+                  <p className="mt-1.5 text-xs text-neutral-600">
+                    <Link
+                      href={BUYER_PROTECTION_HREF}
+                      prefetch={false}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-accent underline underline-offset-2 hover:text-accent-hover"
+                    >
+                      {BUYER_PROTECTION_CHECKOUT_LINK}
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </Link>
+                  </p>
                 </div>
 
                 <label
@@ -1156,6 +1179,30 @@ export default function CheckoutPage() {
                   </div>
                 </div>
               </section>
+
+              <p className="mb-3 text-xs leading-relaxed text-neutral-600">
+                {BUYER_PROTECTION_CHECKOUT_STATEMENT}{" "}
+                <Link
+                  href={BUYER_PROTECTION_HREF}
+                  prefetch={false}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent underline underline-offset-2 hover:text-accent-hover"
+                >
+                  Buyer Protection
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </Link>{" · "}
+                <Link
+                  href={RETURN_POLICY_HREF}
+                  prefetch={false}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent underline underline-offset-2 hover:text-accent-hover"
+                >
+                  Refund Policy
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </Link>
+              </p>
 
               <button
                 type="button"
