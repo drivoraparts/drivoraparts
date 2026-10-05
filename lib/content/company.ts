@@ -1,7 +1,8 @@
 /**
  * The legal entity that operates DrivoraParts, and the ONE place its name is
  * written. Everything that names the entity -- the footer, every policy page,
- * the product page's Seller row, the structured data -- reads this, so a change
+ * the structured data -- reads this (the product page's Seller row shows the
+ * store name, COMPANY_DISPLAY_NAME, not the entity), so a change
  * of name is one edit and cannot leave a stale one behind.
  *
  * Source: the California Articles of Organization filed in July 2024, which
