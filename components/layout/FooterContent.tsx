@@ -7,7 +7,6 @@ import { useTranslation } from "@/hooks/useTranslation";
 import {
   COMPANY_ADDRESS,
   COMPANY_DISPLAY_NAME,
-  COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
   copyrightYears,
 } from "@/lib/content/company";
@@ -163,15 +162,12 @@ export default function FooterContent() {
           <p className="mt-2 text-sm leading-relaxed text-muted-on-dark">{t("footerBrand")}</p>
 
           {/*
-            Who runs the store, in one line, and no address: the entity is
-            documented, a headquarters is not. This is not the "operating
-            footprint" the note above removed.
+            The storefront is presented as DrivoraParts; the legal entity is
+            named on the policy pages and in structured data, not here. The
+            address is the published business address (COMPANY_ADDRESS).
           */}
-          <p className="mt-4 text-sm text-muted-on-dark">
-            {COMPANY_DISPLAY_NAME} is operated by {COMPANY_LEGAL_NAME}.
-          </p>
           {COMPANY_ADDRESS ? (
-            <address className="mt-1 text-sm not-italic text-muted-on-dark">
+            <address className="mt-4 text-sm not-italic text-muted-on-dark">
               {COMPANY_ADDRESS.street}, {COMPANY_ADDRESS.city},{" "}
               {COMPANY_ADDRESS.state} {COMPANY_ADDRESS.postalCode}
             </address>
