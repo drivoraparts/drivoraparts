@@ -108,6 +108,22 @@ export type Product = {
   referencePriceVerified?: boolean;
 
   /**
+   * The authored `price` is the manufacturer's published MSRP, confirmed
+   * against the manufacturer. Only then may the storefront strike it through
+   * as a list price. `referencePriceVerified` (a supplier page) is not enough:
+   * that price may be a retailer's, not the manufacturer's.
+   */
+  msrpConfirmed?: boolean;
+
+  /**
+   * The `location` warehouse label is confirmed for this listing: the unit is
+   * held in a warehouse DrivoraParts operates. Unset, a warehouse label is
+   * shown as neutral fulfillment wording instead; see fulfillment.ts. Nothing
+   * sets it yet, and it does not affect stock or availability.
+   */
+  shipsFromVerified?: boolean;
+
+  /**
    * Import-time only. New import scripts may still emit a supplier URL; it is
    * honoured by the pricing check but must be converted to
    * `referencePriceVerified` before it is committed (audit-storefront-claims

@@ -40,17 +40,17 @@ function buildFacebookAds(product: Product, views: number, cartAdds: number): Fa
   return [
     {
       headline: `${product.name} — In Stock Now`,
-      primaryText: `Upgrade your build with OEM-grade ${product.category} parts. ${socialProof}.${withKnown(product.location, " Ships from ", ".")} Starting at ${price}.`,
+      primaryText: `Upgrade your build with ${product.category} parts. ${socialProof}.${withKnown(product.location, " Ships from ", ".")} Starting at ${price}.`,
       callToAction: "Shop Now",
     },
     {
-      headline: `Performance ${product.brand?.toUpperCase() ?? "Parts"} Deal`,
-      primaryText: `${views} shoppers viewed this ${product.category} part this month. ${cartAdds} added to cart. Secure checkout + fast fulfillment at DrivoraParts.`,
+      headline: `Performance ${product.brand ? `${product.brand.toUpperCase()} ` : ""}Parts`,
+      primaryText: `${views} shoppers viewed this ${product.category} part this month. ${cartAdds} added to cart. Secure checkout at DrivoraParts.`,
       callToAction: "Get Yours",
     },
     {
-      headline: "Don't Wait on Backorder",
-      primaryText: `Stop hunting forums for ${product.name}. Verified fitment, transparent pricing (${price}), and checkout in minutes. Built for serious enthusiasts.`,
+      headline: "Find the Part You Need",
+      primaryText: `Stop hunting forums for ${product.name}. Detailed fitment info, clear pricing (${price}), and checkout in minutes. Built for serious enthusiasts.`,
       callToAction: "Buy Today",
     },
   ];
@@ -63,7 +63,7 @@ function buildGoogleAds(product: Product): GoogleAdVariant[] {
   return [
     {
       headline: `${product.name} | DrivoraParts`,
-      description: `Buy ${platform} ${product.category} parts with fast shipping. OEM quality. Price ${product.price}.`,
+      description: `Buy ${platform} ${product.category} parts. Price ${product.price}.`,
       keywords: [brand, product.category, platform, "auto parts", "performance parts"],
     },
     {
@@ -72,8 +72,8 @@ function buildGoogleAds(product: Product): GoogleAdVariant[] {
       keywords: [`${brand} parts`, `${product.category} upgrade`, "car parts online"],
     },
     {
-      headline: "Performance Parts — Fast Shipping",
-      description: `${product.name} available now. Trusted catalog, real inventory, transparent pricing.`,
+      headline: "Performance Parts Online",
+      description: `${product.name} available now. Clear pricing and detailed listings.`,
       keywords: ["performance engine parts", "aftermarket parts", product.category],
     },
   ];
@@ -86,8 +86,8 @@ function buildTikTokScript(product: Product, cartAdds: number): string {
       : "Buyers approve.";
 
   return [
-    `[HOOK] POV: you finally found ${product.name} in stock.`,
-    `[PROBLEM] Everyone else is on backorder — you're still searching Facebook groups.`,
+    `[HOOK] POV: you finally found ${product.name}.`,
+    `[PROBLEM] Hard-to-find parts mean hours searching forums and Facebook groups.`,
     `[PROOF] ${cartAdds}+ buyers already carted this. ${rated}`,
     `[OFFER] DrivoraParts — ${product.price}${withKnown(product.location, " · ships from ")}.`,
     `[CTA] Tap link. Build season doesn't wait.`,

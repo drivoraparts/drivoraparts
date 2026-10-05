@@ -2,96 +2,94 @@
   "_comment": "Listings stored brand-new whose own text says takeout/donor but also \"crate\". Evidence conflicts, so the condition is NOT guessed. Owner must confirm per unit (new crate vs pulled takeout), set condition on the listing, then delete the id here. The audit fails if an id here is no longer brand-new or no longer exists.",
   "pendingOwnerReview": [
     {
-      "id": 186,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
-    },
-    {
       "id": 187,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 188,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed); description: \"Inspected and tested prior to shipping\", compression/leak-down tested -- suggests a used unit but never says takeout. Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 189,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 190,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed); \"Compression tested before ship\" -- suggests used, never says takeout. Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 191,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 192,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 193,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
-    },
-    {
-      "id": 194,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 195,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed); description says \"crate-style swap completeness\" -- a packaged assembly, not stated as new. Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 196,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 197,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 199,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 200,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 201,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed); \"Compression tested units\" -- suggests used, never says takeout. Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 202,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 203,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 204,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 206,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 208,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 209,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 210,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     },
     {
       "id": 211,
-      "reason": "mileage says \"Low-mile takeout / crate (varies by unit)\" -- ambiguous new vs used"
+      "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
+    }
+  ],
+  "pendingAvailabilityReview": [
+    {
+      "id": 1855,
+      "reason": "Imported text said the supplier lists it as currently unavailable for purchase (removed from the description), but the listing carries stock:true and an importer-default stockQty:3. Owner must confirm the supplier can fill it."
     }
   ]
 }

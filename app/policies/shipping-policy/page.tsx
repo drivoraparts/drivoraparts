@@ -50,7 +50,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Where Orders Are Dispatched From",
           paragraphs: [
-            `Orders are picked, packed, and dispatched from our California fulfillment location at ${CALIFORNIA_FULFILLMENT.street}, ${CALIFORNIA_FULFILLMENT.city}, ${CALIFORNIA_FULFILLMENT.state} ${CALIFORNIA_FULFILLMENT.postalCode}, ${CALIFORNIA_FULFILLMENT.country}.`,
+            `Some orders are picked, packed, and dispatched from our California fulfillment location at ${CALIFORNIA_FULFILLMENT.street}, ${CALIFORNIA_FULFILLMENT.city}, ${CALIFORNIA_FULFILLMENT.state} ${CALIFORNIA_FULFILLMENT.postalCode}, ${CALIFORNIA_FULFILLMENT.country}. Other items ship directly from our supplier network, and an order containing both may arrive in more than one shipment. Each product page states where that item ships from.`,
             "Select premium and specialty performance components are sourced, inspected, and dispatched in Japan or Australia before onward delivery to your destination, through the supply and logistics partners we use in those countries. Where an order ships from does not change the shipping charge you are quoted, which is worked out for the order as a whole.",
           ],
         },

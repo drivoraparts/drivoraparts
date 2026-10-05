@@ -94,27 +94,24 @@ export function resolvePublicPrice(product: Pick<Product, "id" | "price">): numb
 }
 
 /**
- * The struck-through figure is shown only where the listing records where its
- * reference price was read from.
+ * The struck-through figure is shown only where the listing's authored price
+ * is a confirmed manufacturer MSRP.
  *
- * A listing's authored `price` is meant to be the reference at the source --
- * MSRP where the manufacturer publishes one, otherwise the specialist's
- * listed price -- and the 2,564 listings carrying a `sourceUrl` are exactly
- * the ones where that can still be checked against the page it came from. An
- * audit on 2026-09-20 spot-checked six of them against the live supplier
- * pages five days after capture and all six matched to the cent.
+ * It used to appear wherever a listing recorded a checkable source, which put
+ * a "List price" on 3,617 of 4,044 listings (89%). The authored price is the
+ * price on whichever supplier or specialist page it was read from -- MSRP only
+ * sometimes -- and the catalog does not record which. Calling a third party's
+ * retail price a "list price", then selling 15% under it, made the store read
+ * as a permanent sale, and overstated the saving wherever the manufacturer's
+ * own price was lower. So it now needs positive confirmation: `msrpConfirmed`
+ * on the listing, which no listing carries yet.
  *
- * The rest cannot be checked by anyone: 1,219 arrived in a bulk JSON import
- * carrying a price and nothing else, 42 are the owner's own yard parts where
- * the "was" figure is their own asking price, and the remainder state no
- * basis at all. Those listings sell at the same price as before and simply
- * stop claiming a discount -- which also drops their ON SALE badge, since
- * isProductOnSale() reads the same field.
- *
- * Nothing here invents a reference price, and no selling price changes.
+ * Selling prices are unchanged. Listings without confirmation render a single
+ * price and no ON SALE badge, since isProductOnSale() reads the same field.
+ * Nothing here invents a reference price.
  */
-function hasVerifiableReferencePrice(product: Product): boolean {
-  return product.referencePriceVerified === true || Boolean(product.sourceUrl?.trim());
+function hasConfirmedMsrp(product: Product): boolean {
+  return product.msrpConfirmed === true;
 }
 
 export function applyPublicPrices(items: Product[]): Product[] {
@@ -129,8 +126,10 @@ export function applyPublicPrices(items: Product[]): Product[] {
       return product;
     }
 
-    if (!hasVerifiableReferencePrice(product)) {
-      return { ...product, price: salePrice };
+    if (!hasConfirmedMsrp(product)) {
+      // Also drops any compareAtPrice the listing authored by hand.
+      const { compareAtPrice: _unconfirmed, ...rest } = product;
+      return { ...rest, price: salePrice };
     }
 
     return {

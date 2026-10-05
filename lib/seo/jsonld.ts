@@ -80,6 +80,40 @@ export function breadcrumbJsonLd(
   };
 }
 
+/**
+ * Article markup for a DrivoraParts News story. Plain `Article`, not
+ * `NewsArticle`: these are company-authored pieces, and the author and
+ * publisher are both the organisation, stated as such. No legalName is
+ * included -- the legal entity is not restated in editorial markup.
+ */
+export function articleJsonLd(input: {
+  title: string;
+  description: string;
+  path: string;
+  image: string;
+  datePublished: string;
+  author: string;
+}): JsonLd {
+  const url = absoluteUrl(input.path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    headline: input.title,
+    description: input.description,
+    image: [absoluteImageUrl(input.image)],
+    datePublished: input.datePublished,
+    dateModified: input.datePublished,
+    author: { "@type": "Organization", name: input.author, url: absoluteUrl("/") },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: absoluteUrl("/"),
+      logo: { "@type": "ImageObject", url: absoluteImageUrl("/favicon.png") },
+    },
+  };
+}
+
 export type ProductJsonLdReviews = {
   rating: number;
   reviewCount: number;

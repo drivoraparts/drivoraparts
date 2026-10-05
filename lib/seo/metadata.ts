@@ -11,6 +11,8 @@ type PageMetadataInput = {
   image?: string | null;
   keywords?: string[];
   noIndex?: boolean;
+  /** Marks the page as an article: og:type, published time and author. */
+  article?: { publishedTime: string; authors: string[] };
 };
 
 export function defaultSiteSocialImages(): NonNullable<
@@ -33,6 +35,7 @@ export function buildPageMetadata({
   image,
   keywords,
   noIndex = false,
+  article,
 }: PageMetadataInput): Metadata {
   const url = absoluteUrl(path);
   const metaDescription = truncateSeoDescription(description);
@@ -52,9 +55,15 @@ export function buildPageMetadata({
       description: metaDescription,
       url,
       siteName: SITE_NAME,
-      type: "website",
       locale: "en_US",
       images: ogImages,
+      ...(article
+        ? {
+            type: "article" as const,
+            publishedTime: article.publishedTime,
+            authors: article.authors,
+          }
+        : { type: "website" as const }),
     },
     twitter: {
       card: usesSiteImage ? "summary" : "summary_large_image",
