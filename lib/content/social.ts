@@ -30,7 +30,7 @@ function trendingKeywords(product: Product, cartRate: number, views: number): st
     "aftermarket parts",
   ];
 
-  if (cartRate >= 8) base.push("trending auto parts", "available to order");
+  if (cartRate >= 8) base.push("trending auto parts", "in stock now");
   if (views >= 15) base.push("popular upgrade");
   if (product.price >= 5000) base.push("premium engine");
 

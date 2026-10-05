@@ -133,7 +133,7 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
   },
   {
     id: 2097,
-    name: `OEM 20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)`,
+    name: `20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)`,
     category: "wheels-tires",
     brand: "bmw",
     price: 2995,
@@ -153,19 +153,19 @@ Worldwide Shipping Available — freight quotes provided for oversized items.`,
       `/product-media/wheels-tires/oem-20-bmw-m5-f90-wheels-rims-set-gloss-black-new/4.jpg`,
     ]),
     referencePriceVerified: true,
-    description: `OEM 20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)
+    description: `20" BMW M5 (F90) Wheels / Rims Set - Gloss Black (New)
 
-OEM-specification wheel set for the BMW M5 (F90) — the factory M Double Spoke Style 706M, finished in a deep Gloss Black for a clean, factory-correct, performance-luxury look. Every wheel is brand new.
+Wheel set for the BMW M5 (F90) in the M Double Spoke Style 706M design, finished in a deep Gloss Black for a clean, performance-luxury look. Every wheel is brand new.
 
-As a direct-fit factory replacement, this set bolts straight onto your M5 (F90) with no spacers, adapters, or modification required — built to the same specification BMW used for this chassis. That means correct offset, correct load rating, and the factory ride and handling character the M5 was tuned around.
+As a direct-fit replacement, this set bolts straight onto your M5 (F90) with no spacers, adapters, or modification required — sized for this chassis. That means correct offset, correct load rating, and the factory ride and handling character the M5 was tuned around.
 
 Specifications
 • Front Wheels: 20 x 9.5J
 • Rear Wheels: 20 x 10.5J
 • Bolt Pattern: 5 x 112
 • Center Bore: 66.6mm
-• Direct OEM-specification fitment
-• High-Strength OEM Alloy Construction
+• Direct-fit for the BMW M5 (F90)
+• High-Strength Alloy Construction
 • Finish: Gloss Black
 
 Vehicle Fitment
@@ -176,7 +176,6 @@ Highlights
 • Factory Style 706M M Double Spoke Design
 • Premium Gloss Black Finish
 • Direct Bolt-On Replacement, No Modification Required
-• Built to BMW Factory Performance & Durability Standards
 • Professional Installation Recommended
 
 Warranty

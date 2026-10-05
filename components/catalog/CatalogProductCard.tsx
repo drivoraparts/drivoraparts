@@ -39,7 +39,6 @@ export type CatalogProductCardData = {
   condition?: string;
   conditionLabel?: string;
   inStock?: boolean;
-  availabilityLabel?: string;
 };
 
 export default function CatalogProductCard({
@@ -206,9 +205,7 @@ export default function CatalogProductCard({
                       : "font-semibold text-success"
                   }
                 >
-                  {outOfStock
-                    ? "Out of stock"
-                    : (product.availabilityLabel ?? "Available to order")}
+                  {outOfStock ? "Out of stock" : "In stock"}
                 </span>
                 {product.condition ? (
                   <>

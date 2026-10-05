@@ -31,7 +31,6 @@ import { classicEuroProducts } from "./classic-euro-products";
 import { jdmEuroBrakeKitsProducts } from "./jdm-euro-brake-kits-products";
 import { performanceWheelsProducts } from "./performance-wheels-products";
 import { marketExpansionProducts } from "./market-expansion-products";
-import { applyFulfillmentRules } from "./availability";
 import { applyMileageRules } from "./condition";
 import { applyPublicPrices, CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 import { applyProductMediaOverrides } from "./apply-media-overrides";
@@ -5307,9 +5306,7 @@ Worldwide Shipping Available`,
 
 /** Storefront + checkout prices (affordable public list). */
 export const products = applyPublicPrices(
-  applyFulfillmentRules(
-    applyMileageRules(
-      applyAdminCatalog(applyProductMediaOverrides(productCatalog))
-    )
+  applyMileageRules(
+    applyAdminCatalog(applyProductMediaOverrides(productCatalog))
   )
 );

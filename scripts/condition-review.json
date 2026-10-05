@@ -85,5 +85,11 @@
       "id": 211,
       "reason": "Stored brand-new, but the only condition evidence is the shared catalog default \"Low-mile takeout / crate (varies by unit)\" (now not displayed). Owner must confirm new crate vs pulled takeout."
     }
+  ],
+  "pendingAvailabilityReview": [
+    {
+      "id": 1855,
+      "reason": "Imported text said the supplier lists it as currently unavailable for purchase (removed from the description), but the listing carries stock:true and an importer-default stockQty:3. Owner must confirm the supplier can fill it."
+    }
   ]
 }

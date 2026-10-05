@@ -45,7 +45,7 @@ function buildTikTokAd(
   const hook =
     metrics.cartAdds >= 5
       ? `Everyone is carting this ${product.brand?.toUpperCase() ?? "engine"} part`
-      : `Stop scrolling — this ${product.category} upgrade is available to order`;
+      : `Stop scrolling — this ${product.category} upgrade is in stock`;
 
   return {
     productId: product.id,
@@ -98,7 +98,7 @@ function buildGoogleAd(product: Product): AutopilotAd {
     "buy auto parts online",
   ].filter(Boolean);
 
-  const hook = `${product.name} | Available to Order`;
+  const hook = `${product.name} | In Stock`;
 
   return {
     productId: product.id,

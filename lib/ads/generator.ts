@@ -39,7 +39,7 @@ function buildFacebookAds(product: Product, views: number, cartAdds: number): Fa
 
   return [
     {
-      headline: `${product.name} — Available to Order`,
+      headline: `${product.name} — In Stock Now`,
       primaryText: `Upgrade your build with ${product.category} parts. ${socialProof}.${withKnown(product.location, " Ships from ", ".")} Starting at ${price}.`,
       callToAction: "Shop Now",
     },
@@ -73,7 +73,7 @@ function buildGoogleAds(product: Product): GoogleAdVariant[] {
     },
     {
       headline: "Performance Parts Online",
-      description: `${product.name} available to order. Clear pricing and detailed listings.`,
+      description: `${product.name} available now. Clear pricing and detailed listings.`,
       keywords: ["performance engine parts", "aftermarket parts", product.category],
     },
   ];

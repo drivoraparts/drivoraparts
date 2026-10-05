@@ -116,13 +116,6 @@ export type Product = {
   msrpConfirmed?: boolean;
 
   /**
-   * A unit of this listing is physically held in a warehouse we operate.
-   * Nothing sets this today. Only with it may the page say "In stock" or name
-   * a warehouse; see lib/inventory/availability.ts.
-   */
-  physicalStockConfirmed?: boolean;
-
-  /**
    * Import-time only. New import scripts may still emit a supplier URL; it is
    * honoured by the pricing check but must be converted to
    * `referencePriceVerified` before it is committed (audit-storefront-claims
