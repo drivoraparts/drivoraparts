@@ -5,6 +5,7 @@ import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import NewsletterSignup from "@/components/layout/NewsletterSignup";
 import { useTranslation } from "@/hooks/useTranslation";
 import {
+  COMPANY_ADDRESS,
   COMPANY_DISPLAY_NAME,
   COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
@@ -169,6 +170,12 @@ export default function FooterContent() {
           <p className="mt-4 text-sm text-muted-on-dark">
             {COMPANY_DISPLAY_NAME} is operated by {COMPANY_LEGAL_NAME}.
           </p>
+          {COMPANY_ADDRESS ? (
+            <address className="mt-1 text-sm not-italic text-muted-on-dark">
+              {COMPANY_ADDRESS.street}, {COMPANY_ADDRESS.city},{" "}
+              {COMPANY_ADDRESS.state} {COMPANY_ADDRESS.postalCode}
+            </address>
+          ) : null}
 
           <p className="mt-2 flex flex-wrap items-center gap-x-1.5 text-sm">
             <span className="text-foreground-on-dark">{t("footerSupport")}:</span>

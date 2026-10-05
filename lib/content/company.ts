@@ -36,7 +36,8 @@ export type CompanyAddress = {
  * The business address customer-facing pages print -- or null, which is what
  * it is today, and every page that would show one simply omits it.
  *
- * It is null on purpose. The site used to publish "19800 S. Vermont Ave,
+ * Published at the owner's direction (2026-10-05): the Monterey Park address
+ * is the main business address. It was null before, on purpose. The site used to publish "19800 S. Vermont Ave,
  * Suite 240, Torrance" as the registered office and headquarters; no document
  * supports that, and the address the Articles of Organization give is a
  * different one (which may be a private mailbox). Which address, if any, is
@@ -44,7 +45,14 @@ export type CompanyAddress = {
  * Privacy Policy, the Contact
  * page, the policy-page header and the structured data all pick it up.
  */
-export const COMPANY_ADDRESS: CompanyAddress | null = null;
+export const COMPANY_ADDRESS: CompanyAddress | null = {
+  street: "1401 Monterey Pass Rd",
+  city: "Monterey Park",
+  state: "CA",
+  stateName: "California",
+  postalCode: "91754",
+  country: "United States",
+};
 
 /**
  * The California fulfillment address -- where orders are actually handled.
