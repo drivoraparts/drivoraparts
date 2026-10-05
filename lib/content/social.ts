@@ -48,9 +48,9 @@ function buildPack(
   return {
     productId: product.id,
     productName: product.name,
-    tiktokCaption: `🔥 ${product.name} is LIVE\n${price}${withKnown(product.location, " · ")}\n${metrics.cartAdds}+ added to cart this week\n#${(product.brand ?? "cars").replace(/\s/g, "")} #${product.category} #enginebuild #drivoraparts`,
+    tiktokCaption: `🔥 ${product.name} is LIVE\n${price}${withKnown(product.location, " · ships from ")}\n${metrics.cartAdds}+ added to cart this week\n#${(product.brand ?? "cars").replace(/\s/g, "")} #${product.category} #enginebuild #drivoraparts`,
     instagramCaption: `${product.name}\n\n${withKnown(joinKnown([withKnown(ratingText(product.rating), "", " rated"), reviewsText(product.reviewCount)]), "", "\n")}${price}${withKnown(product.condition, " · ")}\n${withKnown(product.location, "Ships from ", "\n")}\nTap link in bio.\n\n${keywordLine}`,
-    facebookMarketplaceDescription: `${product.name}\n\n${withKnown(product.condition, "Condition: ", "\n")}Price: ${price}\n${withKnown(product.location, "Location: ", "\n")}\n${product.category} part for performance builds. Verified catalog listing on DrivoraParts with secure checkout.\n\nKeywords: ${keywords.join(", ")}`,
+    facebookMarketplaceDescription: `${product.name}\n\n${withKnown(product.condition, "Condition: ", "\n")}Price: ${price}\n${withKnown(product.location, "Ships from: ", "\n")}\n${product.category} part for performance builds. Verified catalog listing on DrivoraParts with secure checkout.\n\nKeywords: ${keywords.join(", ")}`,
     seoDescription: `Buy ${product.name} online at DrivoraParts. ${withKnown(product.condition, "", " ")}${product.category} for ${product.platform?.replace(/-/g, " ") ?? "performance builds"}. ${withKnown(ratingText(product.rating), "", " rating, ")}ships${withKnown(product.location, " from ")}. Price ${price}.`,
     trendingKeywords: keywords,
     generatedAt: Date.now(),
