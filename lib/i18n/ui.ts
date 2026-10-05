@@ -57,7 +57,7 @@ export const UI = {
   catalog: "Catalog",
   shippingPolicy: "Shipping Policy",
   returnsRefunds: "Returns & Refunds",
-  buyerProtection: "Buyer Protection",
+  buyerProtection: "DrivoraParts Buyer Protection",
   warrantyPolicy: "Warranty Policy",
   termsOfSale: "Terms of Sale",
   privacyPolicy: "Privacy Policy",

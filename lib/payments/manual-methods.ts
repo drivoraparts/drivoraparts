@@ -76,7 +76,11 @@ export const MANUAL_METHODS: ManualMethod[] = [
     blurb: "U.S. — handle sent after you order",
     icon: "💜",
     region: "United States",
-    enabled: true,
+    // Off: nothing here shows DrivoraParts has a Venmo business or
+    // purchase-payment capability, and the only way it was taken was as a
+    // personal payment for goods. Kept (not deleted) so existing Venmo orders
+    // still resolve in the admin screens; checkout and the API reject it.
+    enabled: false,
   },
   {
     id: "cash_app",

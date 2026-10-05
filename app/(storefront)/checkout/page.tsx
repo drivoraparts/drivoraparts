@@ -37,7 +37,6 @@ import {
   MANUAL_PAYMENT_CHECKOUT_QUESTION,
   MANUAL_PAYMENT_POLICY_HREF,
   PAYPAL_DISCLOSURE,
-  VENMO_DISCLOSURE,
 } from "@/lib/content/manual-payment";
 
 const glassCard =
@@ -905,59 +904,8 @@ export default function CheckoutPage() {
                             </ul>
                           </div>
 
-                          <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
-                            <p className="mb-2 text-xs font-medium text-neutral-700">
-                              Don&apos;t Have Cryptocurrency?
-                            </p>
-                            <p className="mb-3 text-xs leading-relaxed text-neutral-500">
-                              You can purchase cryptocurrency using a debit or credit
-                              card through a third-party exchange such as{" "}
-                              <a
-                                href="https://changenow.io/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-accent underline hover:text-accent-hover"
-                              >
-                                ChangeNOW
-                              </a>
-                              , then use your cryptocurrency to complete your
-                              DrivoraParts payment.
-                            </p>
-                            <p className="mb-2 text-xs font-semibold text-neutral-700">How It Works</p>
-                            <ol className="list-decimal space-y-2 pl-4 text-xs leading-relaxed text-neutral-500">
-                              <li>
-                                <strong className="text-neutral-700">
-                                  Purchase Cryptocurrency —
-                                </strong>{" "}
-                                Open ChangeNOW in a new tab and purchase BTC or another
-                                cryptocurrency supported by NOWPayments using your debit
-                                or credit card.
-                              </li>
-                              <li>
-                                <strong className="text-neutral-700">
-                                  Return to DrivoraParts —
-                                </strong>{" "}
-                                Return to this checkout and select Pay Now to open your
-                                secure, unique NOWPayments payment page.
-                              </li>
-                              <li>
-                                <strong className="text-neutral-700">
-                                  Complete Payment &amp; Save Your Transaction ID —
-                                </strong>{" "}
-                                Complete your payment through NOWPayments and copy your
-                                Transaction ID. The payment page will then automatically
-                                close and redirect you back to DrivoraParts.
-                              </li>
-                            </ol>
-                          </div>
-
                           <div className="mb-4 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 text-xs leading-relaxed text-neutral-500">
                             <p className="mb-1.5 font-semibold text-neutral-700">Important</p>
-                            <p className="mb-1.5">
-                              ChangeNOW is an independent third-party service.
-                              DrivoraParts does not process, control, or verify
-                              transactions conducted through ChangeNOW.
-                            </p>
                             <p className="mb-1.5">
                               Your cryptocurrency payment to DrivoraParts is processed
                               through NOWPayments.
@@ -993,13 +941,13 @@ export default function CheckoutPage() {
                       ) : (
                         <>
                           {/*
-                            PayPal and Venmo, each only for itself, and before
-                            the order is placed.
+                            PayPal, only for itself, and before the order is
+                            placed. (Venmo had its own notice until it was taken
+                            off the payment list.)
 
                             One short line on how that method is paid, so the
                             customer knows what to do when the instructions
-                            arrive: pick Friends & Family on PayPal, follow the
-                            instructions on Venmo. The panel below is the
+                            arrive: pick Friends & Family on PayPal. The panel below is the
                             existing place a selected method explains itself, so
                             the line lives here rather than in a banner over
                             checkout or on another page.
@@ -1015,9 +963,7 @@ export default function CheckoutPage() {
                             const notice =
                               payChoice === "paypal"
                                 ? PAYPAL_DISCLOSURE
-                                : payChoice === "venmo"
-                                  ? VENMO_DISCLOSURE
-                                  : null;
+                                : null;
 
                             return notice ? (
                               <div className="mb-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2.5 text-xs leading-relaxed text-amber-900">
@@ -1189,7 +1135,7 @@ export default function CheckoutPage() {
                   rel="noopener noreferrer"
                   className="text-accent underline underline-offset-2 hover:text-accent-hover"
                 >
-                  Buyer Protection
+                  DrivoraParts Buyer Protection
                   <span className="sr-only"> (opens in a new tab)</span>
                 </Link>{" · "}
                 <Link

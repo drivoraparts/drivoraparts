@@ -10,11 +10,11 @@
 export const BUYER_PROTECTION_HREF = "/policies/buyer-protection";
 
 /** Link text where a short label is needed (footer, policy index). */
-export const BUYER_PROTECTION_LABEL = "Buyer Protection";
+export const BUYER_PROTECTION_LABEL = "DrivoraParts Buyer Protection";
 
 /** Checkout link: says what it leads to without promising more than the policy. */
 export const BUYER_PROTECTION_CHECKOUT_LINK =
-  "Buyer Protection — learn how your order and refund are protected";
+  "DrivoraParts Buyer Protection — learn about our refund commitment";
 
 /** Checkout statement, drawn from the policy's opening commitment. */
 export const BUYER_PROTECTION_CHECKOUT_STATEMENT =

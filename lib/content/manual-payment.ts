@@ -62,18 +62,3 @@ export const PAYPAL_DISCLOSURE = {
     "PayPal payments are handled through Friends & Family. Please make sure you select the Friends & Family option when completing your payment.",
 } as const;
 
-/**
- * Shown the moment Venmo is selected -- the same idea as the PayPal notice,
- * kept deliberately separate from it.
- *
- * It says "personal payment" and not "Friends & Family". That is PayPal's name
- * for its personal payments, and nothing here establishes that Venmo uses it.
- * The owner has confirmed Venmo orders are handled as a personal payment, so
- * the wording is explicit rather than "may", and points the customer at the
- * instructions DrivoraParts sends, which is where the details are.
- */
-export const VENMO_DISCLOSURE = {
-  lead: "Before you choose Venmo",
-  body:
-    "Venmo payments are handled as a personal payment. Please follow the payment instructions provided by DrivoraParts when completing your payment.",
-} as const;
