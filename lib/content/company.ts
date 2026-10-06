@@ -20,6 +20,15 @@ export const COMPANY_LEGAL_NAME = "BrookstoneUS LLC";
 export const COMPANY_DISPLAY_NAME = "DrivoraParts";
 export const COMPANY_SUPPORT_EMAIL = "support@drivoraparts.com";
 
+/**
+ * The business phone/SMS number. Call or text only: it is not registered with
+ * WhatsApp, so it must not be offered as a WhatsApp number. No hours or
+ * response times are stated anywhere because none are documented.
+ */
+export const COMPANY_PHONE_DISPLAY = "+1 626 556 7885";
+export const COMPANY_PHONE_TEL_HREF = "tel:+16265567885";
+export const COMPANY_PHONE_SMS_HREF = "sms:+16265567885";
+
 /** Verified by the Articles of Organization above: a California LLC. */
 export const COMPANY_STATE_OF_FORMATION = "California";
 

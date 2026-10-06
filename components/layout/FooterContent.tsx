@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import PhoneContact from "@/components/content/PhoneContact";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import NewsletterSignup from "@/components/layout/NewsletterSignup";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -185,6 +186,10 @@ export default function FooterContent() {
               {COMPANY_SUPPORT_EMAIL}
             </a>
           </p>
+          <PhoneContact
+            className="mt-1 text-sm text-foreground-on-dark"
+            linkClassName={`items-center text-accent-on-dark transition-colors hover:text-foreground-on-dark ${focusRing}`}
+          />
         </div>
 
         <nav

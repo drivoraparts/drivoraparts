@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PhoneContact from "@/components/content/PhoneContact";
 import { notFound, redirect } from "next/navigation";
 import { buildPageMetadata } from "@/lib/seo";
 import { getOrderById } from "@/lib/db/orders";
@@ -353,7 +354,8 @@ export default async function PayPage({
             <Link href="/contact" className="text-accent underline underline-offset-2">
               Contact support
             </Link>{" "}
-            with any questions.
+            with any questions, or{" "}
+            <PhoneContact variant="inline" linkClassName="text-accent underline underline-offset-2" />.
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Policy from "@/components/policy/Policy";
+import PhoneContact from "@/components/content/PhoneContact";
 import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { CONTACT_HREF, RETURN_POLICY_HREF } from "@/lib/content/purchase-terms";
 import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
@@ -27,6 +28,8 @@ const supportChannels = (
     <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`} className={linkClass}>
       {COMPANY_SUPPORT_EMAIL}
     </a>
+    , or{" "}
+    <PhoneContact variant="inline" linkClassName={linkClass} />
   </>
 );
 
