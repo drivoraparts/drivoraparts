@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PhoneContact from "@/components/content/PhoneContact";
 import { buildPageMetadata } from "@/lib/seo";
 import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
 import {
@@ -176,7 +177,7 @@ export default function FaqPage() {
           <Link href="/contact" className="text-accent hover:text-accent-hover">
             Contact our support team
           </Link>
-          .
+          , or <PhoneContact variant="inline" linkClassName="text-accent hover:text-accent-hover" />.
         </p>
       </div>
     </main>

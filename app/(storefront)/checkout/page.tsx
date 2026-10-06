@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import PhoneContact from "@/components/content/PhoneContact";
 import {
   BUYER_PROTECTION_CHECKOUT_LINK,
   BUYER_PROTECTION_CHECKOUT_STATEMENT,
@@ -914,6 +915,8 @@ export default function CheckoutPage() {
                               <Link href="/contact" className="text-accent underline hover:text-accent-hover">
                                 Contact DrivoraParts Support
                               </Link>{" "}
+                              or{" "}
+                              <PhoneContact variant="inline" linkClassName="text-accent underline hover:text-accent-hover" />{" "}
                               before submitting your payment.
                             </p>
                           </div>

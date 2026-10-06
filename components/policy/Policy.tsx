@@ -7,6 +7,7 @@
 ========================================================= */
 
 import type { ReactNode } from "react";
+import PhoneContact from "@/components/content/PhoneContact";
 import {
   COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
@@ -98,7 +99,8 @@ export default function Policy({
         © {copyrightYears()} {COMPANY_DISPLAY_NAME}. All rights reserved. This
         document is provided for general informational purposes only and does
         not constitute legal advice. For questions about this policy, contact{" "}
-        {COMPANY_DISPLAY_NAME} at {COMPANY_SUPPORT_EMAIL}.
+        {COMPANY_DISPLAY_NAME} at {COMPANY_SUPPORT_EMAIL}, or{" "}
+        <PhoneContact variant="inline" linkClassName="underline hover:text-neutral-700" />.
       </p>
     </article>
   );
