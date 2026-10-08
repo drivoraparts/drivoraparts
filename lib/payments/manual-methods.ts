@@ -53,7 +53,7 @@ export const MANUAL_METHODS: ManualMethod[] = [
     // Manual like the rest: the customer sends from their own PayPal account
     // and we verify it by hand. This is NOT a PayPal processor integration,
     // and nothing here talks to PayPal's API.
-    blurb: "Send from your PayPal account — recipient sent after you order",
+    blurb: "Send from your PayPal account — payment details emailed after your order is reviewed",
     // Legacy field. Nothing renders it any more: checkout draws marks through
     // components/checkout/PaymentMethodIcon.tsx and the footer through
     // METHOD_VISUALS. Kept only so every entry has the same shape.
@@ -64,7 +64,7 @@ export const MANUAL_METHODS: ManualMethod[] = [
   {
     id: "bank_transfer",
     label: "Bank Transfer",
-    blurb: "Choose your transfer route — instructions sent after you order",
+    blurb: "Choose your transfer route — payment details emailed after your order is reviewed",
     icon: "🏦",
     region: "Worldwide",
     enabled: true,
@@ -85,7 +85,7 @@ export const MANUAL_METHODS: ManualMethod[] = [
   {
     id: "cash_app",
     label: "Cash App",
-    blurb: "U.S. — $Cashtag sent after you order",
+    blurb: "U.S. — payment details emailed after your order is reviewed",
     icon: "💵",
     region: "United States",
     enabled: true,
@@ -93,7 +93,7 @@ export const MANUAL_METHODS: ManualMethod[] = [
   {
     id: "zelle",
     label: "Zelle",
-    blurb: "U.S. bank-to-bank — recipient sent after you order",
+    blurb: "U.S. bank-to-bank — payment details emailed after your order is reviewed",
     icon: "🇺🇸",
     region: "United States",
     enabled: true,
@@ -101,7 +101,7 @@ export const MANUAL_METHODS: ManualMethod[] = [
   {
     id: "wire",
     label: "International Wire (SWIFT)",
-    blurb: "Cross-border wire — SWIFT/BIC details sent after you order",
+    blurb: "Cross-border wire — payment details emailed after your order is reviewed",
     icon: "🌎",
     region: "International",
     enabled: true,
