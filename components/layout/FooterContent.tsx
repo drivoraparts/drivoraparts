@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import PhoneContact from "@/components/content/PhoneContact";
+import FooterSocialLinks from "@/components/layout/FooterSocialLinks";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import NewsletterSignup from "@/components/layout/NewsletterSignup";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -190,6 +191,7 @@ export default function FooterContent() {
             className="mt-1 text-sm text-foreground-on-dark"
             linkClassName={`items-center text-accent-on-dark transition-colors hover:text-foreground-on-dark ${focusRing}`}
           />
+          <FooterSocialLinks className="mt-3 -ml-2" />
         </div>
 
         <nav
