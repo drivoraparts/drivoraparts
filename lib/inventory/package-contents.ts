@@ -1,3 +1,4 @@
+import { extractContents } from "./contents-extractor";
 import { checklistForKind, classifyProductKind, ROLLOUT_KINDS } from "./product-kind";
 import type { PackageContents, Product } from "./types";
 
@@ -179,54 +180,47 @@ export const packageContents: Record<number, PackageContents> = {
   },
 };
 
+
 /**
- * An itemized list the listing itself carries, read only when it is a clear
- * bulleted list under an "Includes" / "Package Details" style heading.
+ * What a listing shows when nobody has entered its contents by hand.
  *
- * Deliberately not read: a one-line "Included: engine; trans; harness (tier
- * dependent)" style summary. Those carry qualifiers ("when available",
- * "confirm at checkout") that a clean list would silently drop, which would
- * say more than the listing does.
- */
-export function readItemizedList(description: string): string[] | undefined {
-  const lines = description.split("\n");
-
-  for (let i = 0; i < lines.length; i++) {
-    const heading = lines[i].trim();
-    if (!/^(package\s+|kit\s+)?(includes?|contents|what.s included|package details|included)\s*:?$/i.test(heading)) {
-      continue;
-    }
-
-    const items: string[] = [];
-    let j = i + 1;
-    while (j < lines.length && !lines[j].trim()) j++;
-    for (; j < lines.length; j++) {
-      const line = lines[j].trim();
-      if (/^[•\-*]\s+/.test(line)) items.push(line.replace(/^[•\-*]\s+/, ""));
-      else break;
-    }
-    if (items.length >= 2) return items;
-  }
-
-  return undefined;
-}
-
-/**
- * What a listing in a rollout kind shows when nobody has entered its contents.
- * It claims nothing: "partial" only if the source already holds an included
- * list, otherwise "unconfirmed", plus the shared checklist for that kind.
+ * Two independent things feed it:
+ *  - what the listing's OWN text states (see contents-extractor.ts), for every
+ *    listing, whatever it is; and
+ *  - the shared checklist for the kinds in ROLLOUT_KINDS.
+ *
+ * Nothing is added from what such products normally include. Status:
+ *  - "listed": the listing's text states what is included;
+ *  - "partial": only a structured included list exists;
+ *  - "unconfirmed": a rollout kind with nothing stated;
+ *  - "stated": outside the rollout kinds, the text states exclusions or
+ *    requirements but no contents; no status note is shown.
  */
 export function deriveContents(
   product: Pick<Product, "name" | "category" | "description">,
   hasStructuredIncluded: boolean
 ): PackageContents | undefined {
   const kind = classifyProductKind(product);
-  if (!kind || !ROLLOUT_KINDS.includes(kind)) return undefined;
+  const inRollout = Boolean(kind && ROLLOUT_KINDS.includes(kind));
+  const extracted = extractContents(product.description ?? "");
+  const stated = Object.keys(extracted).length > 0;
 
-  const itemized = hasStructuredIncluded ? undefined : readItemizedList(product.description ?? "");
+  if (!inRollout && !stated) return undefined;
+
+  // A structured included list on the product itself wins over the text.
+  const { included: fromText, ...rest } = extracted;
+  const included = hasStructuredIncluded ? undefined : fromText;
+
+  let status: PackageContents["status"];
+  if (included) status = "listed";
+  else if (hasStructuredIncluded) status = "partial";
+  else if (inRollout) status = "unconfirmed";
+  else status = "stated";
+
   return {
-    status: hasStructuredIncluded || itemized ? "partial" : "unconfirmed",
-    checklist: checklistForKind(kind, product.name),
-    ...(itemized ? { included: itemized } : {}),
+    status,
+    ...(kind && inRollout ? { checklist: checklistForKind(kind, product.name) } : {}),
+    ...(included ? { included } : {}),
+    ...rest,
   };
 }

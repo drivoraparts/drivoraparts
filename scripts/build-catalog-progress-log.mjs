@@ -32,13 +32,14 @@ fs.writeFileSync(
     'import { packageContents } from "@/lib/inventory/package-contents";',
     "const rows = getAllProducts().map((p) => {",
     "  const m = getProductCatalogMeta(p);",
-    "  const l = m.logistics as { included?: string[]; contents?: { status: string; checklist?: string }; partNumber?: string; fitment?: string };",
+    "  const l = m.logistics as { included?: string[]; contents?: { status: string; checklist?: string; included?: string[]; notIncluded?: string[]; requiredSeparately?: string[]; optionalUpgrades?: string[]; installationRequirements?: string[]; programmingRequirements?: string[] }; partNumber?: string; fitment?: string };",
     "  const kind = classifyProductKind(p);",
     "  return { id: p.id, name: p.name, category: p.category, price: p.price, label: m.conditionLabel,",
     "    kind: kind || '', inRollout: !!kind && ROLLOUT_KINDS.includes(kind),",
     "    explicit: !!packageContents[p.id] || !!p.packageContents,",
     "    status: l.contents ? l.contents.status : '', checklist: l.contents && l.contents.checklist || '',",
     "    included: (l.included || []).length, specRows: m.specRows.length,",
+    "    stated: l.contents ? ((l.contents.notIncluded||[]).length + (l.contents.requiredSeparately||[]).length + (l.contents.optionalUpgrades||[]).length + (l.contents.installationRequirements||[]).length + (l.contents.programmingRequirements||[]).length) : 0,",
     "    fitment: !!(l.fitment || (p as any).fitmentApplications?.length || (p as any).universalFitment),",
     "    partNumber: !!l.partNumber, descLen: (p.description || '').length };",
     "});",
@@ -72,7 +73,12 @@ const PRIORITY = {
   transmission: "P1",
   "turbo-supercharger": "P2",
   "transfer-case-differential": "P2",
+  "brake-kit": "P3",
+  "suspension-kit": "P3",
+  "fuel-kit": "P3",
+  "cooling-kit": "P3",
 };
+const BATCH = { P1: "batch-1", P2: "batch-1", P3: "batch-2" };
 
 const csv = (v) => {
   const s = String(v ?? "");
@@ -83,20 +89,14 @@ const header = [
   "id", "name", "category", "condition", "priority", "kind", "framework_applied",
   "contents_source", "contents_status", "checklist", "included_items", "spec_rows",
   "fitment_recorded", "part_number_recorded", "description_chars", "description_status",
-  "still_missing", "batch",
+  "stated_statements", "still_missing", "batch",
 ];
 const out = [header];
-const tally = { applied: 0, listed: 0, partial: 0, unconfirmed: 0 };
+const tally = { applied: 0, listed: 0, partial: 0, unconfirmed: 0, stated: 0 };
 
 for (const r of rows) {
-  const kitLike = /(^|[^a-z])(kit|set|package|system|assembly|conversion|bundle|combo|pair)([^a-z]|$)/i.test(r.name);
-  const p3 =
-    kitLike &&
-    (r.category === "suspension" ||
-      r.category === "brakes" ||
-      /fuel|injector|pump|regulator|rail|radiator|cooler|cooling|intercooler/i.test(r.name));
-  const priority = PRIORITY[r.kind] || (p3 ? "P3" : r.descLen < 350 ? "P4" : "P5");
-  const applied = r.inRollout || r.explicit;
+  const priority = PRIORITY[r.kind] || (r.descLen < 350 ? "P4" : "P5");
+  const applied = r.inRollout || r.explicit || !!r.status;
   const source = r.explicit ? "explicit entry" : r.status ? "derived" : "";
   const missing = [];
   if (applied && r.status === "unconfirmed") missing.push("package contents");
@@ -111,8 +111,9 @@ for (const r of rows) {
     r.id, r.name, r.category, r.label, priority, r.kind, applied ? "yes" : "no",
     source, r.status, r.checklist, r.included, r.specRows, r.fitment ? "yes" : "no",
     r.partNumber ? "yes" : "no", r.descLen,
-    applied ? "original text kept; structured sections added" : "not started",
-    missing.join("; "), applied ? (r.explicit ? "pilot" : "batch-1") : "",
+    applied ? "original text kept; sections added from the listing's own statements" : "not started",
+    r.stated, missing.join("; "),
+    applied ? (r.explicit ? "pilot" : BATCH[priority] || "batch-2 (stated only)") : "",
   ]);
 }
 
@@ -121,6 +122,6 @@ fs.mkdirSync(path.dirname(file), { recursive: true });
 fs.writeFileSync(file, out.map((r) => r.map(csv).join(",")).join("\n") + "\n");
 console.log(
   `${rows.length} listings logged; framework applied to ${tally.applied} ` +
-    `(listed ${tally.listed}, partial ${tally.partial}, unconfirmed ${tally.unconfirmed}); ` +
+    `(listed ${tally.listed}, partial ${tally.partial}, unconfirmed ${tally.unconfirmed}, stated-only ${tally.stated}); ` +
     `${rows.length - tally.applied} not started -> ${path.relative(ROOT, file)}`
 );
