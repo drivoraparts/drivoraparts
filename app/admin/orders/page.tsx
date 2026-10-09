@@ -4,6 +4,8 @@ import DeleteOrderButton from "@/components/admin/DeleteOrderButton";
 import StatusPill, { SpinnerIcon } from "@/components/admin/StatusPill";
 import { listPlacedOrders } from "@/lib/db/orders";
 import { findPaymentsByOrderIds } from "@/lib/db/payments";
+import { readManualPayment } from "@/lib/payments/manual-payment";
+import { orderShippingSettlement } from "@/lib/shipping/settlement";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +26,8 @@ export default async function AdminOrdersPage() {
           {orders.map((order) => {
             const payment = payments.get(order.id);
             const itemCount = order.items.reduce((sum, item) => sum + item.quantity, 0);
+            const shippingOutstanding =
+              orderShippingSettlement(order, readManualPayment(payment)) === "outstanding";
             return (
               <div
                 key={order.id}
@@ -51,6 +55,14 @@ export default async function AdminOrdersPage() {
                       {payment ? <StatusPill value={payment.status} /> : null}
                       <StatusPill value={order.order_status} />
                       <StatusPill value={order.shipping_status} />
+                      {shippingOutstanding ? (
+                        <span
+                          className="inline-flex items-center rounded-full bg-red-100 px-2 py-0.5 text-[11px] font-medium text-red-800"
+                          title="Shipping has not been quoted. The total shown is products only."
+                        >
+                          Shipping to quote
+                        </span>
+                      ) : null}
                       {order.shipping_hold_active ? (
                         <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-800">
                           <SpinnerIcon />
@@ -60,6 +72,9 @@ export default async function AdminOrdersPage() {
                     </div>
                     <p className="w-20 shrink-0 text-right text-sm font-bold text-zinc-900">
                       ${Number(order.total).toFixed(2)}
+                      {shippingOutstanding ? (
+                        <span className="block text-[10px] font-normal text-zinc-500">+ shipping</span>
+                      ) : null}
                     </p>
                   </div>
                 </Link>

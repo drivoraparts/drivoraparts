@@ -11,8 +11,16 @@ export default function OrderTotalsSummary({
   breakdown,
   className = "",
   compact = false,
+  shippingQuote,
 }: {
   breakdown: CartDiscountBreakdown;
+  /**
+   * The shipping charge from /api/shipping/quote. When it is "calculated",
+   * breakdown.shipping is that amount and 0 genuinely means free. Otherwise
+   * `note` says why there is no figure yet (freight, outside the US).
+   * Absent (the cart drawer): shipping shows as still to be calculated.
+   */
+  shippingQuote?: { calculated: boolean; note?: string };
   className?: string;
   /** Tighter rows for the cart drawer, where vertical space belongs to the
    *  products rather than the totals. Checkout keeps the roomier default. */
@@ -62,19 +70,22 @@ export default function OrderTotalsSummary({
       )}
 
       {/*
-        A zero here means "nobody has quoted this yet", not "free". Shipping is
-        worked out by hand after the order is placed and sent with the payment
-        details, so neither the cart nor checkout can name a figure -- and
-        printing t("free") for a missing number promised delivery at no charge
-        on every order in every country.
+        Without a calculated quote, a zero here means "not priced yet", never
+        "free": printing t("free") for a missing number would promise delivery
+        at no charge on orders that have none. A calculated quote of 0 comes
+        from the published US rate table and IS free.
       */}
-      <div className="flex items-center justify-between gap-3 text-sm">
+      <div className="flex items-start justify-between gap-3 text-sm">
         <span className="text-neutral-500">{t("shipping")}</span>
-        <span className="text-neutral-800">
-          {breakdown.shipping > 0 ? (
-            <Price usd={breakdown.shipping} />
+        <span className="text-right text-neutral-800">
+          {shippingQuote?.calculated ? (
+            breakdown.shipping > 0 ? (
+              <Price usd={breakdown.shipping} />
+            ) : (
+              t("free")
+            )
           ) : (
-            t("shippingTbc")
+            shippingQuote?.note || t("shippingTbc")
           )}
         </span>
       </div>

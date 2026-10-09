@@ -8,10 +8,17 @@ import {
   ORDER_PROCESSING,
   RETURN_POLICY_HREF,
   RETURN_WINDOW_DAYS,
+  SHIPPING_POLICY_HREF,
   WARRANTY_POLICY_HREF,
   listWithOr,
   shipmentType,
 } from "@/lib/content/purchase-terms";
+import {
+  US_FREE_PARCEL_BELOW,
+  classifyShipping,
+  findBracket,
+  US_PARCEL_RATE_TABLE,
+} from "@/lib/shipping/rate-table";
 
 /*
  * The terms of the purchase, stated once, next to the button that commits to
@@ -22,6 +29,11 @@ import {
  */
 
 type PurchaseFactsProps = {
+  /** Used with freightNotes to decide the shipping label, as checkout does. */
+  category: string;
+  name: string;
+  /** Catalog price per unit, for the single-item US shipping charge. */
+  price: number;
   location?: string;
   freightNotes?: string;
   warranty?: string;
@@ -43,7 +55,19 @@ function FactRow({ label, children }: { label: string; children: ReactNode }) {
 const linkClass =
   "font-semibold text-accent underline-offset-2 hover:text-accent-hover hover:underline";
 
+/**
+ * The US charge for this item ordered on its own, from the published table.
+ * Undefined when the table has no bracket for the price.
+ */
+function singleItemUsCharge(price: number): number | undefined {
+  const row = findBracket(US_PARCEL_RATE_TABLE, Math.round(price * 100));
+  return row ? row.feeCents / 100 : undefined;
+}
+
 export default function PurchaseFacts({
+  category,
+  name,
+  price,
   location,
   freightNotes,
   warranty,
@@ -51,6 +75,8 @@ export default function PurchaseFacts({
   coreCharge,
 }: PurchaseFactsProps) {
   const shipment = shipmentType(freightNotes);
+  const { label } = classifyShipping({ category, name, freightNotes });
+  const usCharge = label === "parcel" ? singleItemUsCharge(price) : undefined;
   // Cryptocurrency is listed last and without its provider's name: it is one
   // more option at checkout, and a product page has no reason to say who
   // processes it. It stays in the list because a customer reading "how can I
@@ -59,17 +85,62 @@ export default function PurchaseFacts({
 
   return (
     <dl className="divide-y divide-neutral-200 border-y border-neutral-200">
+      {/*
+        The charge comes from the published US rate table (lib/shipping/
+        rate-table.ts) -- the same one checkout applies and Google Merchant
+        Center is configured with. Freight and multi-box items have no
+        published rate yet, so they say how they are handled instead of
+        showing a number nobody has set.
+      */}
       <FactRow label="Shipping">
-        <p className="font-semibold">Calculated per order</p>
-        <p className="mt-0.5 text-muted">
-          {shipment ? `${shipment}. ` : ""}
-          {location ? (
-            <>
-              Ships from <TranslatedText as="span">{location}</TranslatedText>.{" "}
-            </>
-          ) : null}
-          Typically processed within {ORDER_PROCESSING} once payment is verified.
-        </p>
+        {usCharge !== undefined ? (
+          <>
+            <p className="font-semibold">
+              {usCharge === 0
+                ? "Free standard US shipping"
+                : `$${usCharge.toFixed(2)} standard US shipping`}
+            </p>
+            <p className="mt-0.5 text-muted">
+              Charged by order subtotal from our published US rates (free on parcel
+              orders under ${US_FREE_PARCEL_BELOW.toLocaleString("en-US")}) and shown
+              at checkout before you order. Outside the US, shipping is confirmed
+              with you before payment.{" "}
+              {shipment ? `${shipment}. ` : ""}
+              {location ? (
+                <>
+                  Ships from <TranslatedText as="span">{location}</TranslatedText>.{" "}
+                </>
+              ) : null}
+              Typically processed within {ORDER_PROCESSING} once payment is verified.{" "}
+              <Link href={SHIPPING_POLICY_HREF} prefetch={false} className={linkClass}>
+                Shipping policy
+              </Link>
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="font-semibold">
+              {label === "parcel"
+                ? "Confirmed with you before payment"
+                : "Freight — confirmed with you before payment"}
+            </p>
+            <p className="mt-0.5 text-muted">
+              {label === "parcel"
+                ? "Shipping for an order of this value is quoted and confirmed with you before you pay. "
+                : "This item ships as freight, which our standard US rates do not cover. The shipping charge is confirmed with you before you pay, and nothing is charged until you have seen it. "}
+              {shipment ? `${shipment}. ` : ""}
+              {location ? (
+                <>
+                  Ships from <TranslatedText as="span">{location}</TranslatedText>.{" "}
+                </>
+              ) : null}
+              Typically processed within {ORDER_PROCESSING} once payment is verified.{" "}
+              <Link href={SHIPPING_POLICY_HREF} prefetch={false} className={linkClass}>
+                Shipping policy
+              </Link>
+            </p>
+          </>
+        )}
       </FactRow>
 
       <FactRow label="Returns">

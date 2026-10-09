@@ -434,6 +434,9 @@ export default function ProductTemplate({
 
           <div className="mt-6">
             <PurchaseFacts
+              category={product.category}
+              name={product.name}
+              price={product.price}
               location={product.location}
               freightNotes={logistics?.freightNotes}
               warranty={catalogMeta.warranty}

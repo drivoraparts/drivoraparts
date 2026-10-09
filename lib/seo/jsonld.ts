@@ -200,7 +200,7 @@ export function productJsonLd(
         "@type": "Organization",
         name: SITE_NAME,
       },
-      shippingDetails: productOfferShippingDetails(),
+      shippingDetails: productOfferShippingDetails(product, price),
       hasMerchantReturnPolicy: productOfferReturnPolicy(),
     },
   };

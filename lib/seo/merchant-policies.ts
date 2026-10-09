@@ -1,3 +1,10 @@
+import type { Product } from "@/lib/inventory/types";
+import {
+  classifyProductShipping,
+  findBracket,
+  US_PARCEL_RATE_TABLE,
+  type ShippingLabel,
+} from "@/lib/shipping/rates";
 import { absoluteUrl } from "./urls";
 
 type JsonLd = Record<string, unknown>;
@@ -23,27 +30,38 @@ function deliveryTime(transitTime: typeof TRANSIT_TIME_US): JsonLd {
 
 function shippingDetailsForCountry(
   addressCountry: string,
-  transitTime: typeof TRANSIT_TIME_US
+  transitTime: typeof TRANSIT_TIME_US,
+  label: ShippingLabel,
+  usRateUsd?: number
 ): JsonLd {
   return {
     "@type": "OfferShippingDetails",
     /*
-     * No shippingRate. There is no rate to state.
+     * A rate is stated ONLY where one is published: the United States, for a
+     * standard parcel item, from the US table in lib/shipping/rate-table.ts --
+     * the item's own bracket, which is what Google's price-based table gives
+     * for a single unit and what checkout charges for it alone.
      *
-     * This block used to declare a flat "0" USD for all four countries, on
-     * every product, which made each listing carry a machine-readable promise
-     * of free shipping to the US, UK, Canada AND Australia. Australia and
-     * Canada are charged destinations, and even in the US and UK free standard
-     * shipping is only ever an eligibility (see lib/shipping/config.ts) that a
-     * crated engine or any freight consignment can lose.
+     * Everywhere else (freight and multi-box items, which have no published
+     * rate yet; every destination outside the US) the rate is omitted rather
+     * than guessed. This block once declared a flat "0" USD for four
+     * countries on every product, which promised free shipping that the
+     * policy did not offer.
      *
-     * So the number was wrong in two of the four countries outright and
-     * unguaranteed in the other two, while the page beside it correctly said
-     * shipping is calculated per order. Shipping here is quoted by hand and is
-     * genuinely unknown until an admin works it out, so the rate is omitted
-     * rather than guessed. Handling and transit times stay -- those are real,
-     * and they match the Shipping Policy.
+     * shippingLabel matches the shipping_label in the Google Merchant feed
+     * (lib/feeds/google-merchant.ts), so the label Google reads here and the
+     * one in the feed are the same value.
      */
+    ...(addressCountry === "US" && usRateUsd !== undefined
+      ? {
+          shippingRate: {
+            "@type": "MonetaryAmount",
+            value: usRateUsd.toFixed(2),
+            currency: "USD",
+          },
+        }
+      : {}),
+    shippingLabel: label,
     shippingDestination: {
       "@type": "DefinedRegion",
       addressCountry,
@@ -63,9 +81,19 @@ const SHIPPING_COUNTRIES: Array<{
 ];
 
 /** Nested inside Product → offers for Google Merchant listings. */
-export function productOfferShippingDetails(): JsonLd | JsonLd[] {
+export function productOfferShippingDetails(
+  product: Product,
+  offerPrice: number
+): JsonLd | JsonLd[] {
+  const { label } = classifyProductShipping(product);
+  const row =
+    label === "parcel" && Number.isFinite(offerPrice)
+      ? findBracket(US_PARCEL_RATE_TABLE, Math.round(offerPrice * 100))
+      : undefined;
+  const usRate = row ? row.feeCents / 100 : undefined;
+
   const regions = SHIPPING_COUNTRIES.map(({ country, transitTime }) =>
-    shippingDetailsForCountry(country, transitTime)
+    shippingDetailsForCountry(country, transitTime, label, usRate)
   );
   return regions.length === 1 ? regions[0] : regions;
 }

@@ -4,11 +4,27 @@ export const metadata = buildPolicyMetadata("/policies/shipping-policy");
 
 import Policy from "@/components/policy/Policy";
 import { CALIFORNIA_FULFILLMENT, COMPANY_SUPPORT_EMAIL, COMPANY_LEGAL_NAME } from "@/lib/content/company";
+import {
+  US_FREE_PARCEL_BELOW,
+  US_PARCEL_RATE_TABLE,
+  US_PARCEL_TABLE_MAX,
+} from "@/lib/shipping/rate-table";
+
+/* The published US table, rendered from the same data checkout charges from. */
+const usd = (value: number) =>
+  `$${value.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+const US_RATE_LINES = US_PARCEL_RATE_TABLE.map((row) => {
+  const range = `${usd(row.minCents / 100)} – ${usd(row.maxCents / 100)}`;
+  return `${range}: ${row.feeCents === 0 ? "Free" : usd(row.feeCents / 100)}`;
+});
+const FREE_BELOW = usd(US_FREE_PARCEL_BELOW);
+const TABLE_MAX = usd(US_PARCEL_TABLE_MAX);
 
 export default function ShippingPolicyPage() {
   return (
     <Policy
       title="Shipping Policy"
+      lastUpdated="October 9, 2026"
       intro={`This Shipping Policy explains how ${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”) processes, ships, and delivers orders placed through our website and services (the “Services”). It also describes estimated timeframes, shipping costs, international shipping, and the responsibilities of both the Company and the customer. Please review this policy carefully before placing an order, as placing an order indicates your acceptance of the terms described here.`}
       sections={[
         {
@@ -34,10 +50,14 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Costs",
           paragraphs: [
-            "Shipping is calculated manually by DrivoraParts for each order. We do not use automatic live carrier-rate calculation, and no shipping amount is quoted to you at checkout. We review your order and confirm the shipping charge with you, together with your payment details, before any payment is made — you are never charged for shipping before you have seen the amount.",
-            "Standard shipping may be provided at no charge on eligible orders to the United States and the United Kingdom. This is not guaranteed on every order to those destinations. Orders to Australia and to other international destinations are charged for shipping.",
-            "Engines, transmissions, truck beds, other oversized or freight/LTL items, and any order requiring special handling may carry a shipping charge to any destination, including the United States and the United Kingdom, where standard shipping would otherwise be free.",
-            "Expedited shipping is available on some orders, where the destination and the items allow it. It is not offered on every order. Where it is offered and you accept it, the expedited charge is determined manually for your order and shown as a separate line in your payment details, in addition to any standard or freight charge.",
+            "We do not use live carrier-rate calculation. Standard shipping to the United States is charged from the published rates below, and the charge is shown at checkout before you place your order. It is not changed after the order is placed.",
+            `United States, standard parcel items: the charge depends on your order subtotal (the total of the item prices, before any discounts). Orders made up only of standard parcel items ship free when the subtotal is under ${FREE_BELOW}. The full table is:`,
+          ],
+          bullets: US_RATE_LINES,
+          closing: [
+            `Each product page states how that item ships. Items that ship as freight or in multiple boxes — such as engines, transmissions, truck beds, axles and other oversized or palletized items — are not covered by the table above. For an order that contains one, the shipping charge is quoted and confirmed with you before payment, and nothing is charged until you have seen it. Checkout tells you this before you place the order.`,
+            `Orders with a subtotal above ${TABLE_MAX}, and orders to destinations outside the United States, are also quoted and confirmed with you before payment. Standard shipping may be provided at no charge on eligible orders to the United Kingdom; this is not guaranteed. Orders to Australia and to other international destinations are charged for shipping.`,
+            "Expedited shipping is available on some orders, where the destination and the items allow it. It is not offered on every order. Where it is offered and you accept it, the expedited charge is shown as a separate line in your payment details, in addition to the standard or freight charge, and is only added if you choose it.",
             "Any applicable duties or taxes for international orders are calculated separately and are the responsibility of the recipient.",
           ],
         },

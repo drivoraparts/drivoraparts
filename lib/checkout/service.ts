@@ -122,6 +122,9 @@ export async function processCheckout(input: {
 
   shipping?: number;
 
+  /** "us_price_table" when `shipping` came from lib/shipping/rates.ts; "manual_quote" when it is still to be quoted. */
+  shippingBasis?: "us_price_table" | "manual_quote";
+
   /** Which option the customer chose. Priced server-side, never client-sent. */
   shippingMethod?: "standard" | "express";
 
@@ -239,6 +242,8 @@ export async function processCheckout(input: {
     items: lockedItems,
 
     shipping: input.shipping ?? 0,
+
+    shippingBasis: input.shippingBasis,
 
     shippingMethod: input.shippingMethod ?? "standard",
 
@@ -379,6 +384,10 @@ export async function processCheckout(input: {
         orderNumber: order.order_number,
         total: Number(order.total),
         methodLabel: manualMethodLabel,
+        shipping: {
+          amount: Number(order.shipping),
+          outstanding: input.shippingBasis !== "us_price_table",
+        },
         items: order.items.map((item) => ({
           name: item.name,
           quantity: item.quantity,

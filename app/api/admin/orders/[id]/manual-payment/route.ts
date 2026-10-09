@@ -18,6 +18,10 @@ import {
 } from "@/lib/payments/manual-payment";
 import { getManualMethod, MANUAL_STATE_LABELS } from "@/lib/payments/manual-methods";
 import {
+  orderShippingSettlement,
+  SHIPPING_OUTSTANDING_PAID_ERROR,
+} from "@/lib/shipping/settlement";
+import {
   sendManualPaymentInstructionsEmail,
   sendManualPaymentInfoRequestEmail,
 } from "@/lib/email/send";
@@ -322,6 +326,16 @@ export async function POST(
         state: "verified",
         alreadyVerified: true,
       });
+    }
+
+    /*
+     * Not while shipping is still unpriced. A manual order whose shipping was
+     * not calculated at checkout (freight, outside the US) has an outstanding
+     * shipping amount until the instructions -- with the charge -- go out;
+     * verifying before then would record the products alone as full payment.
+     */
+    if (orderShippingSettlement(order, manual) === "outstanding") {
+      return NextResponse.json({ error: SHIPPING_OUTSTANDING_PAID_ERROR }, { status: 409 });
     }
 
     /*

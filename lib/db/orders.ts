@@ -117,6 +117,12 @@ export type OrderRecord = {
   shipment_freight_class: string | null;
   /** Destination zone recorded at order time. */
   shipment_zone: string | null;
+  /**
+   * "us_price_table": shipping was calculated at checkout from the published
+   * table (0 = free). "manual_quote" or null: still to be quoted by an admin.
+   * Null on orders placed before migration 015.
+   */
+  shipping_basis?: "us_price_table" | "manual_quote" | null;
   shipment_type: string | null;
   shipment_current_location: string | null;
   shipment_current_location_updated_at: string | null;
@@ -154,6 +160,11 @@ export type CreateOrderInput = {
   customerId: string;
   items: CreateOrderItemInput[];
   shipping?: number;
+  /**
+   * Where `shipping` came from: "us_price_table" = calculated at checkout from
+   * lib/shipping/rates.ts (0 then means free); "manual_quote" = not yet quoted.
+   */
+  shippingBasis?: "us_price_table" | "manual_quote";
   /** Which option the customer chose. Priced server-side before it gets here. */
   shippingMethod?: "standard" | "express";
   /** parcel | multibox | pallet — what the express fee was based on. */
@@ -222,6 +233,9 @@ export async function createOrderRecord(
    * the method annotation is missing until migration 013 is applied.
    */
   let includeShippingColumns = true;
+  // Migration 015 (shipping_basis) is dropped first, on its own, so an
+  // environment that has 013 but not 015 keeps the method annotation.
+  let includeShippingBasis = true;
 
   for (let attempt = 0; attempt < MAX_ORDER_NUMBER_ATTEMPTS; attempt += 1) {
     const result = await supabase
@@ -243,6 +257,9 @@ export async function createOrderRecord(
               shipment_zone: input.shippingZone ?? null,
             }
           : {}),
+        ...(includeShippingColumns && includeShippingBasis
+          ? { shipping_basis: input.shippingBasis ?? "manual_quote" }
+          : {}),
       })
       .select("*")
       .single();
@@ -255,6 +272,16 @@ export async function createOrderRecord(
 
     // Migration 013 has not run yet. Drop the new fields and try again rather
     // than failing the customer's order.
+    if (
+      (result.error.code === "PGRST204" || result.error.code === "42703") &&
+      includeShippingBasis
+    ) {
+      // Migration 015 has not run yet: place the order without the basis.
+      includeShippingBasis = false;
+      orderError = result.error;
+      continue;
+    }
+
     if (
       (result.error.code === "PGRST204" || result.error.code === "42703") &&
       includeShippingColumns

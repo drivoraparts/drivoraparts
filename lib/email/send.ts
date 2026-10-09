@@ -1087,8 +1087,22 @@ export async function sendManualOrderReceivedEmail(input: {
   total: number;
   methodLabel: string;
   items: OrderInvoiceLine[];
+  /**
+   * The order's shipping. `outstanding` = not priced yet (freight, outside the
+   * US): `total` is then the products alone and must not be called the amount
+   * due. Absent: treated as outstanding, which is what every order was before
+   * the published US rates.
+   */
+  shipping?: { amount: number; outstanding: boolean };
 }): Promise<boolean> {
   const orderRef = input.orderNumber;
+  const shippingOutstanding = input.shipping?.outstanding ?? true;
+  const totalLabel = shippingOutstanding ? "Items total" : "Amount due";
+  const shippingText = shippingOutstanding
+    ? "To be confirmed in your payment details"
+    : input.shipping && input.shipping.amount > 0
+      ? `$${input.shipping.amount.toFixed(2)} USD`
+      : "Free standard US shipping";
 
   return sendEmail({
     to: input.to,
@@ -1104,14 +1118,15 @@ export async function sendManualOrderReceivedEmail(input: {
       </p>
 
       ${renderReceiptMetaTable(`
-        ${renderReceiptMetaRow("Amount due", `<span style="font-size:16px;">$${input.total.toFixed(2)} USD</span>`)}
+        ${renderReceiptMetaRow(totalLabel, `<span style="font-size:16px;">$${input.total.toFixed(2)} USD</span>`)}
+        ${renderReceiptMetaRow("Shipping", escapeHtml(shippingText))}
         ${renderReceiptMetaRow("Payment method", escapeHtml(input.methodLabel))}
         ${renderOrderIdRow(orderRef)}
         ${renderReceiptMetaRow("Status", `<span style="color:#9d531c;">Awaiting payment instructions</span>`)}
       `)}
 
       ${renderReceiptLinesTable(input.items)}
-      ${renderReceiptTotalRow(input.total, "Amount due")}
+      ${renderReceiptTotalRow(input.total, totalLabel)}
 
       ${renderManualPaymentButton(input.orderId, "View Your Order & Payment Status")}
 
