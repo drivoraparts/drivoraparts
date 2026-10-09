@@ -16,7 +16,14 @@ export type ProductKind =
   | "engine-assembly"
   | "transmission"
   | "turbo-supercharger"
-  | "transfer-case-differential";
+  | "transfer-case-differential"
+  | "brake-kit"
+  | "suspension-kit"
+  | "fuel-kit"
+  | "cooling-kit";
+
+/** A kit, set or package, by name. No regex word-boundary escapes: plain classes. */
+const KIT_LIKE = /(^|[^a-z])(kit|set|package|system|assembly|conversion|bundle|combo|pair)([^a-z]|$)/i;
 
 const ACCESSORY =
   /\b(mount|mounts|bracket|brace|skid|filter|belt|hose|line|lines|manifold|sensor|gasket|seal|bolt|stud|nut|washer|hardware|cooler|pan|pump|adapter|adaptor|spacer|shifter|linkage|cable|harness|controller|solenoid|valve body|dipstick|crossmember|fluid|cover|plate|flange|clamp|bushing|insulator|power steering|service kit|rebuild kit|shift kit|install kit|swap kit|conversion kit|kit for|flexplate|flywheel|clutch|dust|shield|guard|spring|arm|link|exhaust brake|brakeloc|idle control|module|support|tuner|programmer|monitor|gauge|switch|relay|wire|piston|rod|rods|cam|camshaft|head|heads|crank|crankshaft|timing|valve|injector|rocker|lifter|pulley|damper|oil|pedal|actuator|wastegate|intercooler|piping|pipe|tuning)\b/i;
@@ -51,6 +58,14 @@ export function classifyProductKind(
     return "turbo-supercharger";
   }
 
+  // Kits and packages in the systems below (the P3 group).
+  if (KIT_LIKE.test(name)) {
+    if (product.category === "brakes") return "brake-kit";
+    if (product.category === "suspension") return "suspension-kit";
+    if (/\b(fuel|injector|pump|regulator|rail)\b/i.test(name)) return "fuel-kit";
+    if (/\b(radiator|cooler|cooling|intercooler)\b/i.test(name)) return "cooling-kit";
+  }
+
   return null;
 }
 
@@ -70,6 +85,14 @@ export function checklistForKind(
       return /\b(supercharger|blower|whipple|harrop|tvs\d*|roots)\b/i.test(name)
         ? "supercharger"
         : "turbocharger";
+    case "brake-kit":
+      return "brakes";
+    case "suspension-kit":
+      return "suspension";
+    case "fuel-kit":
+      return "fuel";
+    case "cooling-kit":
+      return "cooling";
   }
 }
 
@@ -83,4 +106,8 @@ export const ROLLOUT_KINDS: readonly ProductKind[] = [
   "transmission",
   "turbo-supercharger",
   "transfer-case-differential",
+  "brake-kit",
+  "suspension-kit",
+  "fuel-kit",
+  "cooling-kit",
 ];

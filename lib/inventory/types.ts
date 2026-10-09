@@ -221,7 +221,7 @@ export type Product = {
  * Nothing is ever shown as included merely because that kind of product
  * normally ships with it.
  */
-export type ContentsStatus = "listed" | "partial" | "unconfirmed";
+export type ContentsStatus = "listed" | "partial" | "unconfirmed" | "stated";
 
 /** Which shared installation-guidance checklist a listing shows. */
 export type RequirementsChecklistId =
@@ -256,6 +256,8 @@ export type PackageContents = {
   installationRequirements?: string[];
   /** Programming, calibration, coding or tuning the source states is needed. */
   programmingRequirements?: string[];
+  /** Where the facts above were researched, with the date they were checked. */
+  sources?: { label: string; url: string; accessed: string }[];
 };
 
 /** Structured fitment & logistics shown on the product page. */

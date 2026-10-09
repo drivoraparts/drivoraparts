@@ -95,6 +95,8 @@ const CONTENTS_STATUS_NOTE: Record<ContentsStatus, string> = {
   listed: "Contents as itemized in the supplier's listing. Anything not listed here is not confirmed.",
   partial: "Only the items listed here are confirmed for this listing. Anything not listed is not confirmed, so ask us before you order.",
   unconfirmed: "Package contents have not been confirmed for this listing. Ask us what is included before you order.",
+  // The listing states exclusions or requirements but no contents: say nothing extra.
+  stated: "",
 };
 
 function PackageContentsBlocks({ contents }: { contents?: PackageContents }) {
@@ -113,9 +115,11 @@ function PackageContentsBlocks({ contents }: { contents?: PackageContents }) {
 
   return (
     <>
-      <p className="rounded-lg border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-[13px] leading-relaxed text-neutral-700">
-        <TranslatedText as="span">{CONTENTS_STATUS_NOTE[contents.status]}</TranslatedText>
-      </p>
+      {CONTENTS_STATUS_NOTE[contents.status] ? (
+        <p className="rounded-lg border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-[13px] leading-relaxed text-neutral-700">
+          <TranslatedText as="span">{CONTENTS_STATUS_NOTE[contents.status]}</TranslatedText>
+        </p>
+      ) : null}
       {lists.map((list) =>
         list.items && list.items.length > 0 ? (
           <div key={list.title}>
@@ -130,6 +134,26 @@ function PackageContentsBlocks({ contents }: { contents?: PackageContents }) {
           </div>
         ) : null
       )}
+      {contents.sources && contents.sources.length > 0 ? (
+        <p className="text-xs leading-relaxed text-neutral-600">
+          Researched from{" "}
+          {contents.sources.map((source, index) => (
+            <span key={source.url}>
+              {index > 0 ? ", " : null}
+              <a
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkClass}
+              >
+                {source.label}
+              </a>{" "}
+              (checked {source.accessed})
+            </span>
+          ))}
+          .
+        </p>
+      ) : null}
       {checklist ? (
         <details className="group rounded-lg border border-neutral-200 bg-white">
           <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3.5 py-2.5 text-sm font-semibold text-neutral-900 [&::-webkit-details-marker]:hidden">
