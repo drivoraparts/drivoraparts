@@ -81,7 +81,7 @@ export default async function PayPage({
   const subtotal = Number(order.subtotal);
   const shipping = Number(order.shipping);
   const expedited = manual.expeditedShipping;
-  // Calculated at checkout from the published US rate table, or quoted by an
+  // Calculated at checkout from the published rate tables, or quoted by an
   // admin when the payment instructions went out. Either way it is final.
   const shippingQuoted =
     order.shipping_basis === "us_price_table" || Boolean(manual.instructionsSentAt);

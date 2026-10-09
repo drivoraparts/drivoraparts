@@ -58,7 +58,7 @@ export default function GlobalReachBand() {
             4WDs and utes across Australia. Trucks and performance across the
             USA, and most domestic and many international destinations beyond
             them. Truck beds, engines and transmissions move by freight.
-            Standard US shipping is charged from our published rates and shown at checkout; freight items and international orders are confirmed with you before payment.
+            Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout; freight items and other destinations are confirmed with you before payment.
           </p>
         </ScrollReveal>
 

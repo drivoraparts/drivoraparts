@@ -125,12 +125,12 @@ export default function CheckoutPage() {
     [cart]
   );
   /*
-   * The shipping charge, from the published US rate table.
+   * The shipping charge, from the published rate tables (US, UK, Australia).
    *
    * Asked of /api/shipping/quote -- the same calculation /api/checkout uses to
    * write the order -- whenever the cart or the country changes, so the
    * figure shown here is the figure the order is placed with. When the table
-   * does not cover the cart (freight items, outside the US) there is no
+   * does not cover the cart (freight items, destinations without a published rate) there is no
    * figure, and the summary says why instead of showing a zero.
    */
   const [shipQuote, setShipQuote] = useState<{
@@ -889,10 +889,10 @@ export default function CheckoutPage() {
                 </p>
 
                 {/*
-                  When the published US rate table covers this cart, the charge
+                  When a published rate table covers this cart, the charge
                   is already in the summary and is what the order is placed
                   with -- nothing to add. When it does not (freight items, a
-                  destination outside the US), the customer is told here,
+                  destination without a published rate), the customer is told here,
                   before placing the order, that shipping is confirmed with
                   them before payment.
 

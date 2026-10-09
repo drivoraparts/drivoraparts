@@ -184,14 +184,14 @@ export async function POST(req: Request) {
     }
 
     /*
-     * Shipping is priced here, on the server, from the published US rate
+     * Shipping is priced here, on the server, from the published rate
      * table in lib/shipping/rates.ts -- the same table the cart showed and the
      * same one Google Merchant Center is configured with. It is never read
      * from the request body: a crafted payload could otherwise set its own
      * delivery fee, including a negative one.
      *
      * Carts the table does not cover (freight or multi-box items while their
-     * rate is unset, destinations outside the US, order values above the top
+     * rate is unset, destinations without a published rate, order values above the top
      * bracket) are still created with shipping at zero meaning NOT YET
      * CALCULATED, and are quoted by hand before payment exactly as before.
      * Checkout told the customer so before they placed the order.
