@@ -64,6 +64,20 @@ Left out or flagged:
 
 What this adds that customers need: BD's transmission-only pages state that a **BD torque converter is required and not included** (installed at the same time; a third-party or factory converter voids the transmission warranty), that **2019-and-newer applications need special tuning** to raise line pressure and that the **line pressure controller is not included**, a 300-mile break-in advisory, and installation times. These are listed as Required Separately, Programming and Tuning and Installation on each listing. The 5R110 page says nothing about a converter, so none is claimed there.
 
+Second round (same day):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2745, #4173 | 1064194F, TowMaster 48RE 2003-2004 | `towmaster-dodge-48re-transmission-2003-2004` |
+| #2724, #4122 | 1064234F, TowMaster 48RE 2005-2007 with TVV stepper motor | `towmaster-dodge-48re-transmission-2005-2007-w-tvv-stepper-motor` |
+| #2731, #4130 | 1064184F, TowMaster 47RE 2000-2002 | `towmaster-dodge-47re-transmission-2000-2002` |
+| #2796 | 1064484, TowMaster 5R110 2005-2007 4WD | `towmaster-ford-5r110-transmission-2005-2007-4wd` |
+| #2788 | 1064704, TowMaster Allison 1000, 2001-2004 LB7 4WD | `towmaster-chevy-allison-1000-transmission-2001-2004-lb7-4wd` |
+
+For the 47RE and 48RE units the page's feature list mentions a new-model shift lever, BD control module, gear selection display and wiring harness (the TapShift items) and says the auxiliary filter kit comes with "most packages". The pages do not say whether these come with the plain unit, so the listings state that as "confirm before ordering" instead of listing them as included. The 47RE page also names an "Upgraded 48RE sunshell" and attaches the burst-pressure claim to a different part than the 48RE pages do; both are left out.
+
+Skipped on purpose: #2808 (our SKU 1064234F, but BD's TapShifter page is 1064234FT, a different part); the 47RH page (404); the LLY and LMM 2WD Allison pages (404); the LML Allison unit (BD's page for it is a different product, billet input with triple-torque and controller).
+
 Left out or flagged:
 - #2205/#4119 and #2721/#4118: each page lists 4WD and 2WD variants without separate part numbers, so the page is applied to both listings and says so. **Open: confirm the 2WD part numbers (1064292, 1064292B) with BD.**
 - The 4R100 page contradicts itself on whether the base unit has PTO provision; stated as "confirm with us".

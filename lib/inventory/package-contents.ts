@@ -150,6 +150,51 @@ const BD_2019_TUNE =
 
 const BD_2019_CONTROLLER = "Line pressure controller (not included)";
 
+/**
+ * BD TowMaster 47RE/48RE units. Both pages list the same features. The page's
+ * feature list also mentions a new-model shift lever, BD control module, BD
+ * gear selection display and wiring harness (the TapShift items) without
+ * saying whether they come with this plain unit or only with the TapShifter
+ * variant, and says the auxiliary filter kit comes with "most packages"; both
+ * are therefore stated as unconfirmed rather than listed as included.
+ */
+const BD_48RE_FEATURES = [
+  "Upgraded valve body with line pressure increased to 190-200 psi",
+  "Roller Torrington bearings in place of the stock thrust bushings",
+  "Drilled intermediate shaft for increased lubrication and a modified manual valve for lube in all positions",
+  "Clutch counts: overdrive 6, overdrive direct 10, forward 5, direct 6",
+  "High-temperature/energy Raybestos band",
+  "Upgraded governor pressure transducer (twice the stock burst pressure) and upgraded governor solenoid",
+  "Cooler line case saver",
+  "BD rigid aluminum heavy-duty pan with heat-dissipating fins and a magnetic drain plug, adding 2 qt of oil capacity",
+  "Dyno tested",
+];
+
+const BD_48RE_NOT_CONFIRMED =
+  "The page's feature list mentions a new-model shift lever, BD control module, gear selection display and wiring harness, and an auxiliary full-flow filter kit that comes with 'most packages'; it does not say whether these come with this unit, so confirm before ordering";
+
+const BD_48RE_REMOTE_FILTER =
+  "A remote filter is required for warranty inspection, with the cooler flow rate measured in GPM at the oil/air transmission cooler outlet; BD does not warrant the unit for race or sled-pull use";
+
+/**
+ * BD TowMaster 47RE units (2000-2002). The page also names an "Upgraded 48RE
+ * sunshell" on this 47RE page and attaches the "twice the stock burst
+ * pressure" claim to a different part than the 48RE pages do, so those two
+ * points are left out rather than guessed at.
+ */
+const BD_47RE_FEATURES = [
+  "Upgraded valve body with line pressure increased to 190-200 psi",
+  "Roller Torrington bearings in place of the stock thrust bushings",
+  "Drilled intermediate shaft for increased lubrication and a modified manual valve for lube in all positions",
+  "Clutch counts: overdrive 6, overdrive direct 10, forward 5, direct 6",
+  "High-temperature/energy Raybestos band",
+  "Upgraded governor pressure transducer and governor solenoid",
+  "Cooler line case saver",
+  "BD auxiliary full-flow filter kit (listed as a feature on the page)",
+  "BD rigid aluminum heavy-duty pan with heat-dissipating fins and a magnetic drain plug, adding 2 qt of oil capacity",
+  "Dyno tested",
+];
+
 export const packageContents: Record<number, PackageContents> = {
   // #2114 Ford 7.3L Godzilla Supercharged Engine Package (Brand New).
   // The four items below were confirmed for this listing by the owner; the
@@ -669,6 +714,165 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "towmaster-ford-5r110-transmission-2008-2010-6-4l-power-stroke-4wd"
+    ),
+  },
+
+  // BD TowMaster 48RE transmission-only units, researched 2026-10-09.
+  2745: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_48RE_FEATURES,
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 8 hours",
+      BD_48RE_REMOTE_FILTER,
+    ],
+    vehicleRequirements: [
+      "Application: 2003-2004 Dodge Ram 5.9L Cummins with the 48RE, 4WD",
+      BD_48RE_NOT_CONFIRMED,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-48re-transmission-2003-2004"
+    ),
+  },
+  4173: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_48RE_FEATURES,
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 8 hours",
+      BD_48RE_REMOTE_FILTER,
+    ],
+    vehicleRequirements: [
+      "Application: 2003-2004 Dodge Ram 5.9L Cummins with the 48RE, 2WD. The BD page lists 4WD and 2WD variants and shows one part number, so the 2WD part number is not displayed there",
+      BD_48RE_NOT_CONFIRMED,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-48re-transmission-2003-2004"
+    ),
+  },
+  2724: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_48RE_FEATURES,
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 7 hours 30 minutes, including sensor swapping and a cooler flush",
+      BD_48RE_REMOTE_FILTER,
+    ],
+    vehicleRequirements: [
+      "Application: 2005-2007 (with TVV stepper motor) Dodge Ram 5.9L Cummins with the 48RE, 4WD",
+      BD_48RE_NOT_CONFIRMED,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-48re-transmission-2005-2007-w-tvv-stepper-motor"
+    ),
+  },
+  4122: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_48RE_FEATURES,
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 7 hours 30 minutes, including sensor swapping and a cooler flush",
+      BD_48RE_REMOTE_FILTER,
+    ],
+    vehicleRequirements: [
+      "Application: 2005-2007 (with TVV stepper motor) Dodge Ram 5.9L Cummins with the 48RE, 2WD. The BD page lists 4WD and 2WD variants and shows one part number, so the 2WD part number is not displayed there",
+      BD_48RE_NOT_CONFIRMED,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-48re-transmission-2005-2007-w-tvv-stepper-motor"
+    ),
+  },
+
+  // More BD transmission-only units, researched 2026-10-09. #2731 and #4130
+  // share one 47RE page that shows a single part number for both drivetrains.
+  2731: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_47RE_FEATURES,
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_48RE_REMOTE_FILTER,
+    ],
+    vehicleRequirements: ["Application: 2000-2002 Dodge Ram 5.9L Cummins with the 47RE, 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-47re-transmission-2000-2002"
+    ),
+  },
+  4130: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_47RE_FEATURES,
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_48RE_REMOTE_FILTER,
+    ],
+    vehicleRequirements: [
+      "Application: 2000-2002 Dodge Ram 5.9L Cummins with the 47RE, 2WD. The BD page lists 4WD and 2WD variants and shows one part number, so the 2WD part number is not displayed there",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-47re-transmission-2000-2002"
+    ),
+  },
+  2796: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD aluminum HD deep pan, adding 6 qt of oil capacity",
+      "Upgraded, larger late-model sump filter",
+      "Aluminum replacements for the plastic valve-body pressure plugs",
+      "Heavy-duty snap ring and pressure regulator valve to prevent runaway pressure damaging the case",
+      "Reworked front pump",
+      "Increased clutch counts: coast 3, forward 4, low/reverse 6, intermediate 5, direct 6, overdrive 5",
+      "Dyno tested",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: ["BD lists an installation time of 7 hours"],
+    vehicleRequirements: [
+      "Application: 2005-2007 Ford Power Stroke with the 5R110, 4WD",
+      "The page says most packages include an auxiliary transmission filter kit but does not confirm it for this unit",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ford-5r110-transmission-2005-2007-4wd"
+    ),
+  },
+  2788: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD aluminum HD deep transmission pan, adding 3.5 qt of oil capacity",
+      "High-energy friction plates and revised oil circuits",
+      "New converter lock-up valve to raise lock-up pressure",
+      "New A and B trim valves delivering full line pressure to the clutches",
+      "Upgraded C2 return springs and orifice cup plugs",
+      "Increased clutch counts: C1 8 clutches, C2 7, C3 7, C4 7, C5 7",
+      "Drain-back and pump prime kit to maintain pump pressure at start-up",
+      "Dyno tested",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: ["Application: 2001-2004 Chevy/GMC 6.6L LB7 Duramax with Allison 1000, 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-2001-2004-lb7-4wd"
     ),
   },
 
