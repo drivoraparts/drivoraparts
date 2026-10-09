@@ -256,6 +256,8 @@ export type PackageContents = {
   installationRequirements?: string[];
   /** Programming, calibration, coding or tuning the source states is needed. */
   programmingRequirements?: string[];
+  /** Where the facts above were researched, with the date they were checked. */
+  sources?: { label: string; url: string; accessed: string }[];
 };
 
 /** Structured fitment & logistics shown on the product page. */

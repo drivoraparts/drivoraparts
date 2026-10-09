@@ -134,6 +134,26 @@ function PackageContentsBlocks({ contents }: { contents?: PackageContents }) {
           </div>
         ) : null
       )}
+      {contents.sources && contents.sources.length > 0 ? (
+        <p className="text-xs leading-relaxed text-neutral-600">
+          Researched from{" "}
+          {contents.sources.map((source, index) => (
+            <span key={source.url}>
+              {index > 0 ? ", " : null}
+              <a
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkClass}
+              >
+                {source.label}
+              </a>{" "}
+              (checked {source.accessed})
+            </span>
+          ))}
+          .
+        </p>
+      ) : null}
       {checklist ? (
         <details className="group rounded-lg border border-neutral-200 bg-white">
           <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3.5 py-2.5 text-sm font-semibold text-neutral-900 [&::-webkit-details-marker]:hidden">
