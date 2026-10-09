@@ -1,4 +1,5 @@
-import type { PackageContents } from "./types";
+import { checklistForKind, classifyProductKind, ROLLOUT_KINDS } from "./product-kind";
+import type { PackageContents, Product } from "./types";
 
 /**
  * Structured package contents by product id, applied when the page is built.
@@ -177,3 +178,55 @@ export const packageContents: Record<number, PackageContents> = {
     checklist: "turbocharger",
   },
 };
+
+/**
+ * An itemized list the listing itself carries, read only when it is a clear
+ * bulleted list under an "Includes" / "Package Details" style heading.
+ *
+ * Deliberately not read: a one-line "Included: engine; trans; harness (tier
+ * dependent)" style summary. Those carry qualifiers ("when available",
+ * "confirm at checkout") that a clean list would silently drop, which would
+ * say more than the listing does.
+ */
+export function readItemizedList(description: string): string[] | undefined {
+  const lines = description.split("\n");
+
+  for (let i = 0; i < lines.length; i++) {
+    const heading = lines[i].trim();
+    if (!/^(package\s+|kit\s+)?(includes?|contents|what.s included|package details|included)\s*:?$/i.test(heading)) {
+      continue;
+    }
+
+    const items: string[] = [];
+    let j = i + 1;
+    while (j < lines.length && !lines[j].trim()) j++;
+    for (; j < lines.length; j++) {
+      const line = lines[j].trim();
+      if (/^[•\-*]\s+/.test(line)) items.push(line.replace(/^[•\-*]\s+/, ""));
+      else break;
+    }
+    if (items.length >= 2) return items;
+  }
+
+  return undefined;
+}
+
+/**
+ * What a listing in a rollout kind shows when nobody has entered its contents.
+ * It claims nothing: "partial" only if the source already holds an included
+ * list, otherwise "unconfirmed", plus the shared checklist for that kind.
+ */
+export function deriveContents(
+  product: Pick<Product, "name" | "category" | "description">,
+  hasStructuredIncluded: boolean
+): PackageContents | undefined {
+  const kind = classifyProductKind(product);
+  if (!kind || !ROLLOUT_KINDS.includes(kind)) return undefined;
+
+  const itemized = hasStructuredIncluded ? undefined : readItemizedList(product.description ?? "");
+  return {
+    status: hasStructuredIncluded || itemized ? "partial" : "unconfirmed",
+    checklist: checklistForKind(kind, product.name),
+    ...(itemized ? { included: itemized } : {}),
+  };
+}

@@ -4,7 +4,7 @@ import {
   resolveProductCondition,
 } from "./condition";
 import { productLogistics } from "./logistics";
-import { packageContents } from "./package-contents";
+import { deriveContents, packageContents } from "./package-contents";
 
 export type { ProductLogistics };
 
@@ -73,7 +73,13 @@ function resolveProductLogistics(product: Product): ProductLogistics {
   const text = (inline?: string, mapped?: string) =>
     inline?.trim() || mapped?.trim() || undefined;
   // Structured package contents: the listing's own, else the central map.
-  const contents = product.packageContents ?? packageContents[product.id];
+  const explicit = product.packageContents ?? packageContents[product.id];
+  const contents =
+    explicit ??
+    deriveContents(
+      product,
+      Boolean(product.included?.length) || Boolean(fallback.included?.length)
+    );
   const included =
     product.included && product.included.length > 0
       ? product.included
