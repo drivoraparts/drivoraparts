@@ -252,6 +252,10 @@ export type PackageContents = {
   optionalUpgrades?: string[];
   /** Conditions that depend on the vehicle, drivetrain or application. */
   vehicleRequirements?: string[];
+  /** Major installation steps or dependencies the source states. */
+  installationRequirements?: string[];
+  /** Programming, calibration, coding or tuning the source states is needed. */
+  programmingRequirements?: string[];
 };
 
 /** Structured fitment & logistics shown on the product page. */

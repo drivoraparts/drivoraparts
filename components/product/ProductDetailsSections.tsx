@@ -10,6 +10,7 @@ import RichDescription from "./RichDescription";
 import {
   CHECKLIST_DISCLAIMER,
   REQUIREMENTS_CHECKLISTS,
+  SUPPLIER_SUPPORT_NOTE,
 } from "@/lib/content/requirements-checklists";
 import type { ContentsStatus, PackageContents } from "@/lib/inventory/types";
 import {
@@ -105,6 +106,8 @@ function PackageContentsBlocks({ contents }: { contents?: PackageContents }) {
     { title: t("requiredSeparatelyTitle"), items: contents.requiredSeparately },
     { title: t("optionalUpgradesTitle"), items: contents.optionalUpgrades },
     { title: t("vehicleRequirementsTitle"), items: contents.vehicleRequirements },
+    { title: t("installationRequirementsTitle"), items: contents.installationRequirements },
+    { title: t("programmingRequirementsTitle"), items: contents.programmingRequirements },
   ];
   const checklist = contents.checklist ? REQUIREMENTS_CHECKLISTS[contents.checklist] : undefined;
 
@@ -146,6 +149,19 @@ function PackageContentsBlocks({ contents }: { contents?: PackageContents }) {
                 </TranslatedText>
               ))}
             />
+            <div className="mt-4 border-t border-neutral-200 pt-3">
+              <SubHeading>{t("beforeYouOrderTitle")}</SubHeading>
+              <TermList
+                items={checklist.verify.map((item) => (
+                  <TranslatedText key={item} as="span">
+                    {item}
+                  </TranslatedText>
+                ))}
+              />
+              <p className="mt-3 text-xs leading-relaxed text-neutral-600">
+                <TranslatedText as="span">{SUPPLIER_SUPPORT_NOTE}</TranslatedText>
+              </p>
+            </div>
           </div>
         </details>
       ) : null}
