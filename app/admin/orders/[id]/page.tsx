@@ -242,7 +242,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               expeditedShipping={manual.expeditedShipping}
               shippingGuidance={
                 order.shipping_basis === "us_price_table"
-                  ? `Charged at checkout from the published US rate table: ${
+                  ? `Charged at checkout from the published rate table: ${
                       Number(order.shipping) > 0
                         ? `$${Number(order.shipping).toFixed(2)}`
                         : "free standard shipping"

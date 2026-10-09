@@ -2,7 +2,8 @@ import type { Product } from "@/lib/inventory/types";
 import {
   classifyProductShipping,
   findBracket,
-  US_PARCEL_RATE_TABLE,
+  rateTableFor,
+  type ShippingDestination,
   type ShippingLabel,
 } from "@/lib/shipping/rates";
 import { absoluteUrl } from "./urls";
@@ -12,6 +13,8 @@ type JsonLd = Record<string, unknown>;
 /** Matches app/policies/shipping-policy — processing 1–5 business days, transit 5–15 business days. */
 const HANDLING_TIME = { minValue: 1, maxValue: 5, unitCode: "DAY" as const };
 const TRANSIT_TIME_US = { minValue: 5, maxValue: 15, unitCode: "DAY" as const };
+/** UK and Australia: the same 5–15 day transit as the US, after the same 1–5 day handling. */
+const TRANSIT_TIME_GB_AU = TRANSIT_TIME_US;
 const TRANSIT_TIME_INTERNATIONAL = { minValue: 7, maxValue: 21, unitCode: "DAY" as const };
 
 function deliveryTime(transitTime: typeof TRANSIT_TIME_US): JsonLd {
@@ -32,18 +35,20 @@ function shippingDetailsForCountry(
   addressCountry: string,
   transitTime: typeof TRANSIT_TIME_US,
   label: ShippingLabel,
-  usRateUsd?: number
+  rateUsd?: number
 ): JsonLd {
   return {
     "@type": "OfferShippingDetails",
     /*
-     * A rate is stated ONLY where one is published: the United States, for a
-     * standard parcel item, from the US table in lib/shipping/rate-table.ts --
-     * the item's own bracket, which is what Google's price-based table gives
-     * for a single unit and what checkout charges for it alone.
+     * A rate is stated ONLY where one is published: the United States, the
+     * United Kingdom and Australia, for a standard parcel item, from that
+     * country's table in lib/shipping/rate-table.ts -- the item's own bracket,
+     * which is what Google's price-based table gives for a single unit and
+     * what checkout charges for it alone. Always in USD, the currency every
+     * charge on the site is made in.
      *
      * Everywhere else (freight and multi-box items, which have no published
-     * rate yet; every destination outside the US) the rate is omitted rather
+     * rate yet; Canada and every other destination) the rate is omitted rather
      * than guessed. This block once declared a flat "0" USD for four
      * countries on every product, which promised free shipping that the
      * policy did not offer.
@@ -52,11 +57,11 @@ function shippingDetailsForCountry(
      * (lib/feeds/google-merchant.ts), so the label Google reads here and the
      * one in the feed are the same value.
      */
-    ...(addressCountry === "US" && usRateUsd !== undefined
+    ...(rateUsd !== undefined
       ? {
           shippingRate: {
             "@type": "MonetaryAmount",
-            value: usRateUsd.toFixed(2),
+            value: rateUsd.toFixed(2),
             currency: "USD",
           },
         }
@@ -75,9 +80,9 @@ const SHIPPING_COUNTRIES: Array<{
   transitTime: typeof TRANSIT_TIME_US;
 }> = [
   { country: "US", transitTime: TRANSIT_TIME_US },
-  { country: "AU", transitTime: TRANSIT_TIME_INTERNATIONAL },
+  { country: "AU", transitTime: TRANSIT_TIME_GB_AU },
   { country: "CA", transitTime: TRANSIT_TIME_INTERNATIONAL },
-  { country: "GB", transitTime: TRANSIT_TIME_INTERNATIONAL },
+  { country: "GB", transitTime: TRANSIT_TIME_GB_AU },
 ];
 
 /** Nested inside Product → offers for Google Merchant listings. */
@@ -86,14 +91,16 @@ export function productOfferShippingDetails(
   offerPrice: number
 ): JsonLd | JsonLd[] {
   const { label } = classifyProductShipping(product);
-  const row =
-    label === "parcel" && Number.isFinite(offerPrice)
-      ? findBracket(US_PARCEL_RATE_TABLE, Math.round(offerPrice * 100))
-      : undefined;
-  const usRate = row ? row.feeCents / 100 : undefined;
+  const rateFor = (country: string): number | undefined => {
+    if (label !== "parcel" || !Number.isFinite(offerPrice)) return undefined;
+    if (country !== "US" && country !== "GB" && country !== "AU") return undefined;
+    const table = rateTableFor(label, country as ShippingDestination);
+    const row = table ? findBracket(table, Math.round(offerPrice * 100)) : undefined;
+    return row ? row.feeCents / 100 : undefined;
+  };
 
   const regions = SHIPPING_COUNTRIES.map(({ country, transitTime }) =>
-    shippingDetailsForCountry(country, transitTime, label, usRate)
+    shippingDetailsForCountry(country, transitTime, label, rateFor(country))
   );
   return regions.length === 1 ? regions[0] : regions;
 }

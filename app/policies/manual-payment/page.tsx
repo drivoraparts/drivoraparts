@@ -68,7 +68,7 @@ export default function ManualPaymentPage() {
         {
           heading: "Shipping and the amount due",
           paragraphs: [
-            "Standard US shipping is charged from our published rates and shown at checkout, before you place the order. For freight items and international orders, shipping is confirmed in your payment details before you pay, together with the final amount due.",
+            "Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout, before you place the order. For freight items and other destinations, shipping is confirmed in your payment details before you pay, together with the final amount due.",
             <>
               How shipping is worked out, and when it may be free, is set out in the{" "}
               <Link href="/policies/shipping-policy" prefetch={false} className={linkClass}>

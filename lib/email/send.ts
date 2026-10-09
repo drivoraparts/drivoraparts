@@ -1091,7 +1091,7 @@ export async function sendManualOrderReceivedEmail(input: {
    * The order's shipping. `outstanding` = not priced yet (freight, outside the
    * US): `total` is then the products alone and must not be called the amount
    * due. Absent: treated as outstanding, which is what every order was before
-   * the published US rates.
+   * the published rates.
    */
   shipping?: { amount: number; outstanding: boolean };
 }): Promise<boolean> {
@@ -1102,7 +1102,7 @@ export async function sendManualOrderReceivedEmail(input: {
     ? "To be confirmed in your payment details"
     : input.shipping && input.shipping.amount > 0
       ? `$${input.shipping.amount.toFixed(2)} USD`
-      : "Free standard US shipping";
+      : "Free standard shipping";
 
   return sendEmail({
     to: input.to,

@@ -73,7 +73,7 @@ export default function OrderTotalsSummary({
         Without a calculated quote, a zero here means "not priced yet", never
         "free": printing t("free") for a missing number would promise delivery
         at no charge on orders that have none. A calculated quote of 0 comes
-        from the published US rate table and IS free.
+        from a published rate table and IS free.
       */}
       <div className="flex items-start justify-between gap-3 text-sm">
         <span className="text-neutral-500">{t("shipping")}</span>

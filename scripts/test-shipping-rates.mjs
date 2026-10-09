@@ -19,7 +19,8 @@ const bundle = path.join(tmp, "entry.mjs");
 fs.writeFileSync(
   entry,
   `import {
-  US_PARCEL_RATE_TABLE, FREIGHT_RATE_TABLES, validateRateTable, quoteShippingWith,
+  US_PARCEL_RATE_TABLE, UK_PARCEL_RATE_TABLE, AU_PARCEL_RATE_TABLE, FREIGHT_RATE_TABLES,
+  validateRateTable, quoteShippingWith, describeQuote, shippingDestinationFor,
   labelFromFreightNotes, classifyProductShipping, classifyShipping, SHIPPING_LABELS,
 } from "@/lib/shipping/rates";
 import { buildGoogleMerchantFeedRows, renderGoogleMerchantTsv } from "@/lib/feeds/google-merchant";
@@ -28,9 +29,14 @@ import { getAllProducts } from "@/lib/inventory";
 
 const results: Record<string, unknown> = {};
 let tableError: string | null = null;
-try { validateRateTable(US_PARCEL_RATE_TABLE); } catch (e) { tableError = String(e); }
+for (const [name, table] of [["US", US_PARCEL_RATE_TABLE], ["UK", UK_PARCEL_RATE_TABLE], ["AU", AU_PARCEL_RATE_TABLE]] as const) {
+  try { validateRateTable(table); } catch (e) { tableError = name + ": " + String(e); }
+}
 results.tableError = tableError;
-results.freightTablesUnset = FREIGHT_RATE_TABLES.multibox === null && FREIGHT_RATE_TABLES.freight === null;
+results.freightTablesUnset = Object.values(FREIGHT_RATE_TABLES).every((t: any) => t.multibox === null && t.freight === null);
+results.usTableTop = US_PARCEL_RATE_TABLE[US_PARCEL_RATE_TABLE.length - 1].maxCents;
+results.ukTableTop = UK_PARCEL_RATE_TABLE[UK_PARCEL_RATE_TABLE.length - 1].maxCents;
+results.auTableTop = AU_PARCEL_RATE_TABLE[AU_PARCEL_RATE_TABLE.length - 1].maxCents;
 
 const labels: Record<number, any> = { 1: "parcel", 2: "parcel", 3: "freight", 4: "multibox" };
 const classify = (id: number) => (labels[id] ? { label: labels[id], source: "listing" } : null);
@@ -63,6 +69,42 @@ results.cases = {
   us: view(one(500, "us")),
   canada: view(one(500, "Canada")),
   noCountry: view(one(500, "")),
+  // United Kingdom: USD 33 below USD 200, free from USD 200.
+  uk0_01: view(one(0.01, "United Kingdom")),
+  uk199_99: view(one(199.99, "United Kingdom")),
+  uk200: view(one(200, "United Kingdom")),
+  uk200_01: view(one(200.01, "UK")),
+  uk5000: view(one(5000, "England")),
+  ukTwoAt100: view(q([{ productId: 1, quantity: 1, price: 100 }, { productId: 2, quantity: 1, price: 100 }], "United Kingdom")),
+  ukMixedFreight: view(q([{ productId: 1, quantity: 1, price: 500 }, { productId: 3, quantity: 1, price: 50 }], "United Kingdom")),
+  ukMultibox: view(q([{ productId: 4, quantity: 1, price: 50 }], "United Kingdom")),
+  ukAboveTable: view(one(75000, "United Kingdom")),
+  // Australia: USD 28 below USD 55, free from USD 55.
+  au54_99: view(one(54.99, "Australia")),
+  au55: view(one(55, "Australia")),
+  au55_01: view(one(55.01, "AU")),
+  au10: view(one(10, "australia")),
+  auMixedFreight: view(q([{ productId: 1, quantity: 1, price: 500 }, { productId: 3, quantity: 1, price: 50 }], "Australia")),
+  auMultibox: view(q([{ productId: 4, quantity: 1, price: 500 }], "Australia")),
+  auUnknownProduct: view(q([{ productId: 999, quantity: 1, price: 500 }], "Australia")),
+  // Not covered: separate customs territories and other countries.
+  jersey: view(one(500, "Jersey")),
+  newZealand: view(one(500, "New Zealand")),
+};
+
+results.describe = {
+  us0: describeQuote(one(500)),
+  us100: describeQuote(one(1500)),
+  uk33: describeQuote(one(50, "United Kingdom")),
+  ukFree: describeQuote(one(250, "United Kingdom")),
+  au28: describeQuote(one(20, "Australia")),
+  auFree: describeQuote(one(60, "Australia")),
+};
+results.destinations = {
+  gb: shippingDestinationFor("Great Britain"),
+  ni: shippingDestinationFor("Northern Ireland"),
+  im: shippingDestinationFor("Isle of Man") ?? null,
+  au: shippingDestinationFor(" Australia "),
 };
 
 results.notes = {
@@ -108,13 +150,21 @@ results.feed = {
 };
 
 const base: any = { id: 99998, name: "Synthetic gauge", category: "electronics", brand: "x", price: 500, description: "x" };
-const us = (d: any) => (Array.isArray(d) ? d : [d]).find((x: any) => x.shippingDestination.addressCountry === "US");
+const country = (d: any, code: string) => (Array.isArray(d) ? d : [d]).find((x: any) => x.shippingDestination.addressCountry === code);
+const us = (d: any) => country(d, "US");
 results.jsonld = {
   parcel500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500))?.shippingRate?.value ?? null,
   parcel1500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 1500))?.shippingRate?.value ?? null,
   freight500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingRate ?? null,
   freightLabel: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingLabel ?? null,
-  nonUsHasRate: (productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500) as any[]).some((d: any) => d.shippingDestination.addressCountry !== "US" && d.shippingRate),
+  gbParcel150: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 150), "GB")?.shippingRate?.value ?? null,
+  gbParcel500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.shippingRate?.value ?? null,
+  auParcel40: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 40), "AU")?.shippingRate?.value ?? null,
+  auParcel500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "AU")?.shippingRate?.value ?? null,
+  gbFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "GB")?.shippingRate ?? null,
+  caParcel: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "CA")?.shippingRate ?? null,
+  gbTransit: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.deliveryTime?.transitTime ?? null,
+  gbHandling: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.deliveryTime?.handlingTime ?? null,
 };
 
 process.stdout.write(JSON.stringify(results));
@@ -136,7 +186,20 @@ const expectCases = {
   p75000: "above_rate_table",
   twoAt600: 100, qty2At600: 100,
   mixedParcelFreight: "freight_rate_not_set", multibox: "freight_rate_not_set", unknownProduct: "freight_rate_not_set",
-  usa: 0, us: 0, canada: "outside_us", noCountry: "destination_unknown",
+  usa: 0, us: 0, canada: "no_destination_rate", noCountry: "destination_unknown",
+  uk0_01: 33, uk199_99: 33, uk200: 0, uk200_01: 0, uk5000: 0, ukTwoAt100: 0,
+  ukMixedFreight: "freight_rate_not_set", ukMultibox: "freight_rate_not_set", ukAboveTable: "above_rate_table",
+  au54_99: 28, au55: 0, au55_01: 0, au10: 28,
+  auMixedFreight: "freight_rate_not_set", auMultibox: "freight_rate_not_set", auUnknownProduct: "freight_rate_not_set",
+  jersey: "no_destination_rate", newZealand: "no_destination_rate",
+};
+const expectDescribe = {
+  us0: "Free standard US shipping",
+  us100: "$100.00 standard US shipping",
+  uk33: "$33.00 standard UK shipping (about £25)",
+  ukFree: "Free standard UK shipping",
+  au28: "$28.00 standard shipping to Australia (about A$40)",
+  auFree: "Free standard shipping to Australia",
 };
 const expectNotes = {
   parcelCourier: "parcel", parcel: "parcel", multibox: "multibox", oversized: "freight",
@@ -166,7 +229,20 @@ if (out.jsonld.parcel500 !== "0.00") problems.push(`JSON-LD parcel $500 US rate:
 if (out.jsonld.parcel1500 !== "100.00") problems.push(`JSON-LD parcel $1,500 US rate: expected 100.00, got ${out.jsonld.parcel1500}`);
 if (out.jsonld.freight500 !== null) problems.push("JSON-LD states a rate for a freight item");
 if (out.jsonld.freightLabel !== "freight") problems.push("JSON-LD freight item has the wrong shippingLabel");
-if (out.jsonld.nonUsHasRate) problems.push("JSON-LD states a rate outside the US");
+for (const [k, v] of Object.entries(expectDescribe)) {
+  if (out.describe[k] !== v) problems.push(`describe ${k}: expected ${JSON.stringify(v)}, got ${JSON.stringify(out.describe[k])}`);
+}
+if (out.destinations.gb !== "GB" || out.destinations.ni !== "GB" || out.destinations.im !== null || out.destinations.au !== "AU")
+  problems.push(`destination matching wrong: ${JSON.stringify(out.destinations)}`);
+if (out.usTableTop !== 7499999 || out.ukTableTop !== 7499999 || out.auTableTop !== 7499999) problems.push("a rate table top is not $74,999.99");
+const expectJsonld = { gbParcel150: "33.00", gbParcel500: "0.00", auParcel40: "28.00", auParcel500: "0.00" };
+for (const [k, v] of Object.entries(expectJsonld)) {
+  if (out.jsonld[k] !== v) problems.push(`JSON-LD ${k}: expected ${v}, got ${out.jsonld[k]}`);
+}
+if (out.jsonld.gbFreight !== null) problems.push("JSON-LD states a UK rate for a freight item");
+if (out.jsonld.caParcel !== null) problems.push("JSON-LD states a rate for Canada, which has no published rate");
+if (out.jsonld.gbTransit?.minValue !== 5 || out.jsonld.gbTransit?.maxValue !== 15) problems.push(`UK transit is not 5-15: ${JSON.stringify(out.jsonld.gbTransit)}`);
+if (out.jsonld.gbHandling?.minValue !== 1 || out.jsonld.gbHandling?.maxValue !== 5) problems.push(`UK handling is not 1-5: ${JSON.stringify(out.jsonld.gbHandling)}`);
 
 if (problems.length) {
   console.error(problems.map((p) => `  [shipping] ${p}`).join("\n"));

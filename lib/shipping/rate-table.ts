@@ -151,23 +151,119 @@ export const US_PARCEL_RATE_TABLE: readonly RateBracket[] = [
   bracket(70000, 74999.99, 900),
 ];
 
-/**
- * Published US rates for multibox and freight carts.
- *
- * NOT SET. No freight rate has been decided, and inventing one would either
- * undercharge for a crated engine or overcharge for a boxed bumper. While a
- * table is null, carts with that label are reported as "pending" and quoted
- * manually before payment. Setting a table here makes checkout, the product
- * pages and the policy page start using it; Merchant Center needs a matching
- * shipping service for the same label.
- */
-export const FREIGHT_RATE_TABLES: Record<Exclude<ShippingLabel, "parcel">, readonly RateBracket[] | null> = {
-  multibox: null,
-  freight: null,
+/* ---------------------------------------------------------
+   United Kingdom and Australia
+   Parcel carts only, charged in USD like every other charge
+   on the site. The fee and the Australian threshold were set
+   in GBP / AUD and converted ONCE to fixed USD amounts, so the
+   charge never moves with the exchange rate and always agrees
+   with Google Merchant Center. The local amounts below are the
+   approximate figures shown to customers -- they are display
+   text, never used to calculate a charge.
+
+   Conversion: ECB euro foreign exchange reference rates for
+   2026-10-08 (1 EUR = 1.1186 USD = 0.84698 GBP = 1.6110 AUD),
+   i.e. 1 GBP = 1.32069 USD and 1 AUD = 0.69435 USD.
+     UK fee         GBP 25  = USD 33.02 -> USD 33.00 (~GBP 24.99)
+     UK threshold   set in USD by the business: USD 200 (~GBP 151)
+     AU fee         AUD 40  = USD 27.77 -> USD 28.00 (~AUD 40.33)
+     AU threshold   AUD 80  = USD 55.55 -> USD 55.00 (~AUD 79.21),
+                    rounded down so no order the customer was told
+                    ships free over AUD 80 is ever charged.
+--------------------------------------------------------- */
+
+/** The tops of the international tables match the US table's top bracket. */
+const TABLE_TOP = 74999.99;
+
+/** UK parcel carts: USD 33 below USD 200, free from USD 200. */
+export const UK_PARCEL_RATE_TABLE: readonly RateBracket[] = [
+  bracket(0, 199.99, 33),
+  bracket(200, TABLE_TOP, 0),
+];
+
+/** Australian parcel carts: USD 28 below USD 55, free from USD 55. */
+export const AU_PARCEL_RATE_TABLE: readonly RateBracket[] = [
+  bracket(0, 54.99, 28),
+  bracket(55, TABLE_TOP, 0),
+];
+
+/* ---------------------------------------------------------
+   Destinations with published rates
+--------------------------------------------------------- */
+
+export type ShippingDestination = "US" | "GB" | "AU";
+
+export const SHIPPING_DESTINATIONS: readonly ShippingDestination[] = ["US", "GB", "AU"];
+
+export type DestinationInfo = {
+  /** Name used in customer-facing copy. */
+  name: string;
+  /** One-line copy for the service ("standard US shipping"). */
+  service: string;
+  parcelTable: readonly RateBracket[];
+  /**
+   * Approximate local-currency figures for display ONLY, from the documented
+   * conversion above. Absent for the US.
+   */
+  local?: {
+    currency: "GBP" | "AUD";
+    symbol: string;
+    /** USD cents -> approximate local amount, for the fixed figures we publish. */
+    approx: Record<number, number>;
+  };
 };
 
-export function rateTableFor(label: ShippingLabel): readonly RateBracket[] | null {
-  return label === "parcel" ? US_PARCEL_RATE_TABLE : FREIGHT_RATE_TABLES[label];
+export const DESTINATIONS: Record<ShippingDestination, DestinationInfo> = {
+  US: { name: "the United States", service: "standard US shipping", parcelTable: US_PARCEL_RATE_TABLE },
+  GB: {
+    name: "the United Kingdom",
+    service: "standard UK shipping",
+    parcelTable: UK_PARCEL_RATE_TABLE,
+    local: { currency: "GBP", symbol: "£", approx: { 3300: 25, 20000: 151 } },
+  },
+  AU: {
+    name: "Australia",
+    service: "standard shipping to Australia",
+    parcelTable: AU_PARCEL_RATE_TABLE,
+    local: { currency: "AUD", symbol: "A$", approx: { 2800: 40, 5500: 79 } },
+  },
+};
+
+/** "about £25" for a published USD amount, or "" when there is no local figure. */
+export function approxLocal(destination: ShippingDestination, usd: number): string {
+  const local = DESTINATIONS[destination].local;
+  if (!local) return "";
+  const amount = local.approx[Math.round(usd * 100)];
+  return amount === undefined ? "" : `about ${local.symbol}${amount}`;
+}
+
+/**
+ * Published rates for multibox and freight carts, per destination.
+ *
+ * NOT SET anywhere. No freight rate has been decided, and inventing one would
+ * either undercharge for a crated engine or overcharge for a boxed bumper.
+ * While a table is null, carts with that label are reported as "pending" and
+ * quoted manually before payment, and those products have no Merchant Center
+ * shipping service (so they are not listed). Setting a table here makes
+ * checkout, the product pages and the policy page start using it; Merchant
+ * Center needs a matching service for the same label and country.
+ */
+export const FREIGHT_RATE_TABLES: Record<
+  ShippingDestination,
+  Record<Exclude<ShippingLabel, "parcel">, readonly RateBracket[] | null>
+> = {
+  US: { multibox: null, freight: null },
+  GB: { multibox: null, freight: null },
+  AU: { multibox: null, freight: null },
+};
+
+export function rateTableFor(
+  label: ShippingLabel,
+  destination: ShippingDestination = "US"
+): readonly RateBracket[] | null {
+  return label === "parcel"
+    ? DESTINATIONS[destination].parcelTable
+    : FREIGHT_RATE_TABLES[destination][label];
 }
 
 /** Throws if a table has a gap, an overlap, or does not start at zero. */
@@ -200,7 +296,8 @@ export type ShippingQuoteItem = { productId: number; quantity: number; price: nu
 export type PendingReason =
   | "empty_cart"
   | "destination_unknown"
-  | "outside_us"
+  /** No published rate for this destination (anywhere but the US, UK, Australia). */
+  | "no_destination_rate"
   | "freight_rate_not_set"
   | "above_rate_table";
 
@@ -211,6 +308,7 @@ export type ShippingQuote =
       amount: number;
       label: ShippingLabel;
       subtotal: number;
+      destination: ShippingDestination;
       bracket: { min: number; max: number };
     }
   | {
@@ -220,18 +318,35 @@ export type ShippingQuote =
       subtotal: number;
     };
 
-const US_COUNTRY_NAMES = new Set([
-  "us",
-  "usa",
-  "u.s.",
-  "u.s.a.",
-  "united states",
-  "united states of america",
-  "america",
-]);
+const COUNTRY_NAMES: Record<ShippingDestination, ReadonlySet<string>> = {
+  US: new Set(["us", "usa", "u.s.", "u.s.a.", "united states", "united states of america", "america"]),
+  // Great Britain and Northern Ireland. The Channel Islands and the Isle of
+  // Man are separate customs territories and are not covered by the UK rate.
+  GB: new Set([
+    "uk",
+    "u.k.",
+    "gb",
+    "united kingdom",
+    "united kingdom of great britain and northern ireland",
+    "great britain",
+    "britain",
+    "england",
+    "scotland",
+    "wales",
+    "northern ireland",
+  ]),
+  AU: new Set(["au", "aus", "australia", "commonwealth of australia"]),
+};
+
+/** The destination with published rates for a country as typed at checkout. */
+export function shippingDestinationFor(country?: string | null): ShippingDestination | undefined {
+  const key = String(country ?? "").trim().toLowerCase();
+  if (!key) return undefined;
+  return SHIPPING_DESTINATIONS.find((code) => COUNTRY_NAMES[code].has(key));
+}
 
 export function isUnitedStates(country?: string | null): boolean {
-  return US_COUNTRY_NAMES.has(String(country ?? "").trim().toLowerCase());
+  return shippingDestinationFor(country) === "US";
 }
 
 export function cartShippingLabel(
@@ -270,9 +385,10 @@ export function quoteShippingWith(
 
   if (!items.length || subtotalCents <= 0) return pending("empty_cart");
   if (!String(country ?? "").trim()) return pending("destination_unknown");
-  if (!isUnitedStates(country)) return pending("outside_us");
+  const destination = shippingDestinationFor(country);
+  if (!destination) return pending("no_destination_rate");
 
-  const table = rateTableFor(label);
+  const table = rateTableFor(label, destination);
   if (!table) return pending("freight_rate_not_set");
 
   const row = findBracket(table, subtotalCents);
@@ -283,6 +399,7 @@ export function quoteShippingWith(
     amount: row.feeCents / 100,
     label,
     subtotal,
+    destination,
     bracket: { min: row.minCents / 100, max: row.maxCents / 100 },
   };
 }
@@ -290,12 +407,15 @@ export function quoteShippingWith(
 /** What the product page / cart says about a quote, in one line. */
 export function describeQuote(quote: ShippingQuote): string {
   if (quote.status === "calculated") {
-    return quote.amount === 0 ? "Free standard US shipping" : `$${quote.amount.toFixed(2)} standard US shipping`;
+    const service = DESTINATIONS[quote.destination].service;
+    if (quote.amount === 0) return `Free ${service}`;
+    const local = approxLocal(quote.destination, quote.amount);
+    return `$${quote.amount.toFixed(2)} ${service}${local ? ` (${local})` : ""}`;
   }
   switch (quote.reason) {
     case "freight_rate_not_set":
       return "Freight shipping — confirmed with you before payment";
-    case "outside_us":
+    case "no_destination_rate":
       return "International shipping — confirmed with you before payment";
     case "above_rate_table":
       return "Shipping for this order value is confirmed with you before payment";
@@ -310,3 +430,11 @@ export function describeQuote(quote: ShippingQuote): string {
 export const US_PARCEL_TABLE_MAX = US_PARCEL_RATE_TABLE[US_PARCEL_RATE_TABLE.length - 1].maxCents / 100;
 /** The subtotal below which an all-parcel US order ships free. */
 export const US_FREE_PARCEL_BELOW = US_PARCEL_RATE_TABLE[1].minCents / 100;
+
+/** Free-from threshold and below-threshold fee of a two-bracket table, in USD. */
+export function freeFromThreshold(destination: ShippingDestination): { freeFrom: number; fee: number } | null {
+  const table = DESTINATIONS[destination].parcelTable;
+  const free = table.find((row) => row.feeCents === 0 && row.minCents > 0);
+  if (!free || table[0].feeCents === 0) return null;
+  return { freeFrom: free.minCents / 100, fee: table[0].feeCents / 100 };
+}

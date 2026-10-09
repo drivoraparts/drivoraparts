@@ -6,9 +6,13 @@
    an OUTSTANDING shipping amount that is not yet known.
 
    Shipping is settled when either:
-     - it was calculated at checkout from the published US
+     - it was calculated at checkout from a published rate
        table (orders.shipping_basis = "us_price_table"; a 0
        there means free), or
+
+   "us_price_table" is kept as the stored value for the UK and
+   Australian tables too: it predates them, and renaming it
+   would need a migration. Read it as "published price table".
      - an admin quoted it and sent it in the payment
        instructions (manual payment metadata
        manual_instructions_sent_at).

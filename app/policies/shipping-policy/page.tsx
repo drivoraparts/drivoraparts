@@ -8,6 +8,9 @@ import {
   US_FREE_PARCEL_BELOW,
   US_PARCEL_RATE_TABLE,
   US_PARCEL_TABLE_MAX,
+  approxLocal,
+  freeFromThreshold,
+  type ShippingDestination,
 } from "@/lib/shipping/rate-table";
 
 /* The published US table, rendered from the same data checkout charges from. */
@@ -19,6 +22,21 @@ const US_RATE_LINES = US_PARCEL_RATE_TABLE.map((row) => {
 });
 const FREE_BELOW = usd(US_FREE_PARCEL_BELOW);
 const TABLE_MAX = usd(US_PARCEL_TABLE_MAX);
+
+/* UK and Australia: the same parcel rule, from the same tables checkout uses. */
+function internationalTerms(destination: ShippingDestination, name: string): string {
+  const terms = freeFromThreshold(destination);
+  if (!terms) return "";
+  const freeLocal = approxLocal(destination, terms.freeFrom);
+  const feeLocal = approxLocal(destination, terms.fee);
+  return (
+    `${name}, standard parcel items: free when the order subtotal is ${usd(terms.freeFrom)} or more` +
+    `${freeLocal ? ` (${freeLocal})` : ""}; below that, standard shipping is ${usd(terms.fee)}` +
+    `${feeLocal ? ` (${feeLocal})` : ""} per order.`
+  );
+}
+const UK_TERMS = internationalTerms("GB", "United Kingdom");
+const AU_TERMS = internationalTerms("AU", "Australia");
 
 export default function ShippingPolicyPage() {
   return (
@@ -50,13 +68,15 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Costs",
           paragraphs: [
-            "We do not use live carrier-rate calculation. Standard shipping to the United States is charged from the published rates below, and the charge is shown at checkout before you place your order. It is not changed after the order is placed.",
+            "We do not use live carrier-rate calculation. Standard shipping to the United States, the United Kingdom and Australia is charged from the published rates below, and the charge is shown at checkout before you place your order. It is not changed after the order is placed. All charges are made in US dollars; amounts in pounds or Australian dollars are approximate and shown for convenience.",
             `United States, standard parcel items: the charge depends on your order subtotal (the total of the item prices, before any discounts). Orders made up only of standard parcel items ship free when the subtotal is under ${FREE_BELOW}. The full table is:`,
           ],
           bullets: US_RATE_LINES,
           closing: [
-            `Each product page states how that item ships. Items that ship as freight or in multiple boxes — such as engines, transmissions, truck beds, axles and other oversized or palletized items — are not covered by the table above. For an order that contains one, the shipping charge is quoted and confirmed with you before payment, and nothing is charged until you have seen it. Checkout tells you this before you place the order.`,
-            `Orders with a subtotal above ${TABLE_MAX}, and orders to destinations outside the United States, are also quoted and confirmed with you before payment. Standard shipping may be provided at no charge on eligible orders to the United Kingdom; this is not guaranteed. Orders to Australia and to other international destinations are charged for shipping.`,
+            UK_TERMS,
+            AU_TERMS,
+            `Each product page states how that item ships. Items that ship as freight or in multiple boxes — such as engines, transmissions, truck beds, axles and other oversized or palletized items — are not covered by the rates above. For an order that contains one, the shipping charge is quoted and confirmed with you before payment, and nothing is charged until you have seen it. Checkout tells you this before you place the order.`,
+            `Orders with a subtotal above ${TABLE_MAX}, and orders to destinations other than the United States, the United Kingdom and Australia, are also quoted and confirmed with you before payment. Those other international destinations are charged for shipping.`,
             "Expedited shipping is available on some orders, where the destination and the items allow it. It is not offered on every order. Where it is offered and you accept it, the expedited charge is shown as a separate line in your payment details, in addition to the standard or freight charge, and is only added if you choose it.",
             "Any applicable duties or taxes for international orders are calculated separately and are the responsibility of the recipient.",
           ],

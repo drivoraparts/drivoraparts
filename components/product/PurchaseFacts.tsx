@@ -15,9 +15,12 @@ import {
 } from "@/lib/content/purchase-terms";
 import {
   US_FREE_PARCEL_BELOW,
+  approxLocal,
   classifyShipping,
   findBracket,
+  freeFromThreshold,
   US_PARCEL_RATE_TABLE,
+  type ShippingDestination,
 } from "@/lib/shipping/rate-table";
 
 /*
@@ -64,6 +67,23 @@ function singleItemUsCharge(price: number): number | undefined {
   return row ? row.feeCents / 100 : undefined;
 }
 
+/**
+ * "UK: free on parcel orders of $200 or more (about £151), otherwise $33.00
+ * (about £25)." -- from the same table checkout charges from. The local
+ * figures are the approximate amounts recorded with the fixed USD rates.
+ */
+function internationalParcelTerms(destination: ShippingDestination, label: string): string {
+  const terms = freeFromThreshold(destination);
+  if (!terms) return "";
+  const freeLocal = approxLocal(destination, terms.freeFrom);
+  const feeLocal = approxLocal(destination, terms.fee);
+  return (
+    `${label}: free on parcel orders of $${terms.freeFrom.toLocaleString("en-US")} or more` +
+    `${freeLocal ? ` (${freeLocal})` : ""}, otherwise $${terms.fee.toFixed(2)}` +
+    `${feeLocal ? ` (${feeLocal})` : ""}.`
+  );
+}
+
 export default function PurchaseFacts({
   category,
   name,
@@ -86,8 +106,8 @@ export default function PurchaseFacts({
   return (
     <dl className="divide-y divide-neutral-200 border-y border-neutral-200">
       {/*
-        The charge comes from the published US rate table (lib/shipping/
-        rate-table.ts) -- the same one checkout applies and Google Merchant
+        The charge comes from the published rate tables (lib/shipping/
+        rate-table.ts: US, UK, Australia) -- the same one checkout applies and Google Merchant
         Center is configured with. Freight and multi-box items have no
         published rate yet, so they say how they are handled instead of
         showing a number nobody has set.
@@ -103,8 +123,9 @@ export default function PurchaseFacts({
             <p className="mt-0.5 text-muted">
               Charged by order subtotal from our published US rates (free on parcel
               orders under ${US_FREE_PARCEL_BELOW.toLocaleString("en-US")}) and shown
-              at checkout before you order. Outside the US, shipping is confirmed
-              with you before payment.{" "}
+              at checkout before you order. {internationalParcelTerms("GB", "UK")}{" "}
+              {internationalParcelTerms("AU", "Australia")} Elsewhere, shipping is
+              confirmed with you before payment.{" "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (
                 <>
@@ -127,7 +148,7 @@ export default function PurchaseFacts({
             <p className="mt-0.5 text-muted">
               {label === "parcel"
                 ? "Shipping for an order of this value is quoted and confirmed with you before you pay. "
-                : "This item ships as freight, which our standard US rates do not cover. The shipping charge is confirmed with you before you pay, and nothing is charged until you have seen it. "}
+                : "This item ships as freight, which our published shipping rates do not cover. The shipping charge is confirmed with you before you pay, and nothing is charged until you have seen it. "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (
                 <>

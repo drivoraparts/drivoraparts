@@ -389,7 +389,7 @@ export default function ProductDetailsSections({
           <SubHeading>Shipping</SubHeading>
           <TermList
             items={[
-              "Standard US shipping is charged from our published rates and shown at checkout; freight items and international orders are confirmed with you before payment.",
+              "Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout; freight items and other destinations are confirmed with you before payment.",
               ...(shipment ? [`${shipment}.`] : []),
               ...(location
                 ? [
