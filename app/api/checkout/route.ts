@@ -13,6 +13,7 @@ import {
 import { logError, logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
 import { assessShipping } from "@/lib/shipping/quote";
+import { quoteShipping } from "@/lib/shipping/rates";
 
 function getCheckoutErrorMessage(error: unknown): string {
   if (error instanceof Error && error.message) return error.message;
@@ -183,18 +184,17 @@ export async function POST(req: Request) {
     }
 
     /*
-     * An order is placed before anyone has priced its shipping.
+     * Shipping is priced here, on the server, from the published US rate
+     * table in lib/shipping/rates.ts -- the same table the cart showed and the
+     * same one Google Merchant Center is configured with. It is never read
+     * from the request body: a crafted payload could otherwise set its own
+     * delivery fee, including a negative one.
      *
-     * Nothing here talks to a carrier, so the charge is worked out by hand and
-     * added when the admin sends the customer their payment details. The order
-     * is therefore created with shipping at zero meaning NOT YET CALCULATED,
-     * never meaning free -- /pay says "to be calculated" until the figure
-     * exists, and the total it shows is the subtotal alone.
-     *
-     * A shipping amount is still never read from the request body: a crafted
-     * payload could otherwise set its own delivery fee, including a negative
-     * one. What is recorded is the description of the shipment, so whoever
-     * quotes it can see how it ships and where it is going.
+     * Carts the table does not cover (freight or multi-box items while their
+     * rate is unset, destinations outside the US, order values above the top
+     * bracket) are still created with shipping at zero meaning NOT YET
+     * CALCULATED, and are quoted by hand before payment exactly as before.
+     * Checkout told the customer so before they placed the order.
      */
     const shipment = assessShipping(
       parsedItems.items.map((item) => ({
@@ -204,13 +204,44 @@ export async function POST(req: Request) {
       customer.country
     );
 
+    const shippingQuote = quoteShipping(
+      lockedItems.map((item) => ({
+        productId: item.productId,
+        quantity: item.quantity,
+        price: Number(item.price),
+      })),
+      customer.country
+    );
+
+    /*
+     * Cryptocurrency only when the whole amount is known now.
+     *
+     * A NOWPayments invoice is created for one fixed amount when the order is
+     * placed, and nothing in this application can add a shipping charge to it
+     * later (the admin "send payment instructions" step refuses non-manual
+     * orders). An order whose shipping is still to be quoted would therefore be
+     * marked fully paid with its shipping never collected. Those orders use a
+     * manual method, where the charge is quoted before the customer pays.
+     */
+    if (providerId !== "manual" && shippingQuote.status !== "calculated") {
+      logWarn("checkout_crypto_shipping_unpriced", { ip, reason: shippingQuote.reason });
+      return NextResponse.json(
+        {
+          error:
+            "Cryptocurrency can't be used for this order because its shipping is confirmed after ordering. Please choose another payment method -- we'll confirm the shipping charge with you before you pay.",
+        },
+        { status: 400 }
+      );
+    }
+
     const result = await processCheckout({
       items: lockedItems,
       customer,
       providerId,
       manualMethod,
       manualRoute,
-      shipping: 0,
+      shipping: shippingQuote.status === "calculated" ? shippingQuote.amount : 0,
+      shippingBasis: shippingQuote.status === "calculated" ? "us_price_table" : "manual_quote",
       shippingMethod: "standard",
       freightClass: shipment.freightClass,
       shippingZone: shipment.zone,

@@ -21,8 +21,7 @@
    where it is going, and which policy applies there.
 ========================================================= */
 
-import { getProductById } from "@/lib/inventory";
-import { getProductCatalogMeta } from "@/lib/inventory/productEnhancements";
+import { classifyProductIdShipping } from "./rates";
 import {
   FREIGHT_CLASS_LABEL,
   isFreeStandardEligibleZone,
@@ -36,59 +35,19 @@ import {
 /**
  * Freight class for one product.
  *
- * Prefers the freight notes the catalog already authors, because that is real
- * per-product data rather than a guess. Where a product has no logistics entry
- * -- most of the catalog does -- it falls back to its category, which is the
- * only other honest signal available. Categories are grouped by how the parts
- * physically ship, not by price.
+ * Delegates to classifyProductShipping in ./rates, which is also what prices
+ * checkout and labels the Google feed, so the admin screen, the charge and
+ * Merchant Center cannot disagree about how an item ships. ("freight" there is
+ * "pallet" here -- the stored order column predates the shared labels.)
+ *
+ * This used to test the notes for "freight" before "parcel", so the catalog's
+ * standard note -- "Ships via standard insured parcel/courier -- no special
+ * freight handling required" -- classed a parcel as palletized freight.
  */
 export function resolveFreightClass(productId: number): FreightClass {
-  const product = getProductById(productId);
-  if (!product) return "parcel";
-
-  const meta = getProductCatalogMeta(product);
-  const notes = String(meta?.logistics?.freightNotes ?? "").toLowerCase();
-
-  if (notes) {
-    if (notes.includes("pallet") || notes.includes("ltl") || notes.includes("freight")) {
-      return "pallet";
-    }
-    if (notes.includes("multiple") || notes.includes("boxes")) return "multibox";
-    if (notes.includes("parcel") || notes.includes("courier")) return "parcel";
-  }
-
-  /*
-   * No logistics entry -- most of the catalog. Fall back to category, which
-   * describes how that kind of part usually ships.
-   *
-   * Category alone is too coarse on its own: the "engine" category holds
-   * complete engines AND fuel pumps, filters and sensors, so a
-   * small-component name demotes the item back to parcel regardless of
-   * category. This only decides which note the admin sees while quoting, so
-   * erring toward parcel costs nothing -- the person still reads the order.
-   */
-  const name = product.name.toLowerCase();
-  const isSmallComponent =
-    /\b(pump|filter|sensor|gasket|seal|injector|hose|clamp|bolt|nut|cap|adapter|spacer|bracket|switch|relay|valve|belt|plug|wire|harness|bulb|lug|cover|knob|shirt|sticker|decal)\b/.test(
-      name
-    );
-
-  if (isSmallComponent) return "parcel";
-
-  switch (product.category) {
-    case "engine":
-    case "transmission":
-    case "canopy":
-    case "body-parts":
-      return "pallet";
-    case "suspension":
-    case "bumper":
-    case "wheels-tires":
-    case "4x4-accessories":
-      return "multibox";
-    default:
-      return "parcel";
-  }
+  const classification = classifyProductIdShipping(productId);
+  if (!classification) return "parcel";
+  return classification.label === "freight" ? "pallet" : classification.label;
 }
 
 const CLASS_ORDER: FreightClass[] = ["parcel", "multibox", "pallet"];

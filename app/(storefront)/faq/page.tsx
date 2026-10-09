@@ -78,7 +78,7 @@ const FAQS: FaqItem[] = [
       <>
         Yes. We ship to most domestic and many international destinations;
         some large or regulated items can only ship to certain regions.
-        Shipping is calculated per order and sent with your payment details. Orders are
+        Standard US shipping is charged from our published rates and shown at checkout; freight items and international orders are confirmed with you before payment. Orders are
         typically processed within {ORDER_PROCESSING} once payment is
         verified, and delivery typically takes 5–15 business days after that
         — estimates, not guarantees. Smaller parts ship via standard carriers;

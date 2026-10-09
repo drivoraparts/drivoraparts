@@ -23,6 +23,11 @@ import {
   type ShippingStatus,
 } from "@/lib/db/orders";
 import { adminMarkOrderPaid } from "@/lib/checkout/service";
+import { readManualPayment } from "@/lib/payments/manual-payment";
+import {
+  orderShippingSettlement,
+  SHIPPING_OUTSTANDING_PAID_ERROR,
+} from "@/lib/shipping/settlement";
 import { findPaymentByOrderId, updatePaymentRecord, type PaymentStatus } from "@/lib/db/payments";
 import {
   sendOrderDeliveredEmail,
@@ -321,6 +326,14 @@ export async function PATCH(
       const status = body.value as PaymentStatus;
 
       if (status === "paid") {
+        // Same guard as manual "verify": never record the products alone as
+        // full payment while the order's shipping is still unpriced.
+        const paymentForShipping = await findPaymentByOrderId(id);
+        if (
+          orderShippingSettlement(order, readManualPayment(paymentForShipping)) === "outstanding"
+        ) {
+          return NextResponse.json({ error: SHIPPING_OUTSTANDING_PAID_ERROR }, { status: 409 });
+        }
         await adminMarkOrderPaid(id);
         // adminMarkOrderPaid only flips the legacy `status` column and the
         // payments table -- "Payment Confirmed" on the customer timeline is

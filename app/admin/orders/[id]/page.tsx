@@ -240,10 +240,15 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               subtotal={Number(order.subtotal)}
               shippingCharge={Number(order.shipping)}
               expeditedShipping={manual.expeditedShipping}
-              shippingGuidance={describeStoredShipment(
-                order.shipment_zone,
-                order.shipment_freight_class
-              )}
+              shippingGuidance={
+                order.shipping_basis === "us_price_table"
+                  ? `Charged at checkout from the published US rate table: ${
+                      Number(order.shipping) > 0
+                        ? `$${Number(order.shipping).toFixed(2)}`
+                        : "free standard shipping"
+                    }. The customer saw and accepted this amount -- keep it unless they agree to a change.`
+                  : describeStoredShipment(order.shipment_zone, order.shipment_freight_class)
+              }
               receipts={manualReceipts}
               paid={manual.paid}
               closed={

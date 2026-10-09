@@ -89,7 +89,7 @@ export default function BrandRangeSummary({
           state no warranty. */}
       <p className="text-sm leading-relaxed text-neutral-600">
         Price, condition and any fitment or warranty terms are stated on each{" "}
-        {brandName} listing. Heavy assemblies ship as freight. Shipping is calculated per order and sent with your payment details.{" "}
+        {brandName} listing. Heavy assemblies ship as freight. Standard US shipping is charged from our published rates and shown at checkout; freight items and international orders are confirmed with you before payment.{" "}
         <Link
           href={routes.category(categorySlug)}
           className="font-medium text-accent underline-offset-2 hover:underline"

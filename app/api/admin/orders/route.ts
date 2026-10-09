@@ -1,6 +1,12 @@
 import { NextResponse } from "next/server";
 import { forceUpdateOrderStatus, getOrderById } from "@/lib/db/orders";
 import { adminMarkOrderPaid } from "@/lib/checkout/service";
+import { findPaymentByOrderId } from "@/lib/db/payments";
+import { readManualPayment } from "@/lib/payments/manual-payment";
+import {
+  orderShippingSettlement,
+  SHIPPING_OUTSTANDING_PAID_ERROR,
+} from "@/lib/shipping/settlement";
 import { restoreOrderInventory } from "@/lib/checkout/inventory-order";
 import { requireAdminApi } from "@/lib/auth/require-admin";
 import { logAdminAudit } from "@/lib/monitoring/audit";
@@ -42,6 +48,13 @@ export async function PATCH(req: Request) {
 
   if (order.status === status) {
     return NextResponse.json(order);
+  }
+
+  if (status === "paid") {
+    const payment = await findPaymentByOrderId(orderId);
+    if (orderShippingSettlement(order, readManualPayment(payment)) === "outstanding") {
+      return NextResponse.json({ error: SHIPPING_OUTSTANDING_PAID_ERROR }, { status: 409 });
+    }
   }
 
   try {

@@ -124,9 +124,76 @@ export default function CheckoutPage() {
       })),
     [cart]
   );
+  /*
+   * The shipping charge, from the published US rate table.
+   *
+   * Asked of /api/shipping/quote -- the same calculation /api/checkout uses to
+   * write the order -- whenever the cart or the country changes, so the
+   * figure shown here is the figure the order is placed with. When the table
+   * does not cover the cart (freight items, outside the US) there is no
+   * figure, and the summary says why instead of showing a zero.
+   */
+  const [shipQuote, setShipQuote] = useState<{
+    calculated: boolean;
+    amount: number;
+    note: string;
+  } | null>(null);
+
+  useEffect(() => {
+    if (!cart.length) {
+      setShipQuote(null);
+      return;
+    }
+    const controller = new AbortController();
+    const timer = window.setTimeout(async () => {
+      try {
+        const res = await fetch("/api/shipping/quote", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            items: cart.map((item) => ({ productId: item.id, quantity: item.quantity })),
+            country: country.trim(),
+          }),
+          signal: controller.signal,
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        const data = (await res.json()) as {
+          quote: { status: string; amount?: number };
+          text: string;
+        };
+        setShipQuote({
+          calculated: data.quote.status === "calculated",
+          amount: data.quote.status === "calculated" ? Number(data.quote.amount ?? 0) : 0,
+          note: data.text,
+        });
+      } catch (error) {
+        if ((error as Error)?.name === "AbortError") return;
+        setShipQuote(null);
+      }
+    }, 350);
+    return () => {
+      controller.abort();
+      window.clearTimeout(timer);
+    };
+  }, [cart, country]);
+
+  // Crypto needs the full amount up front; see the payment selector.
+  const cryptoUnavailable = Boolean(shipQuote && !shipQuote.calculated);
+
+  // Drop a crypto choice made before the cart or country changed to one whose
+  // shipping cannot be calculated now.
+  useEffect(() => {
+    if (cryptoUnavailable && payChoice === "crypto") setPayChoice(null);
+  }, [cryptoUnavailable, payChoice]);
+
   const breakdown = useMemo(
-    () => calculateCartDiscounts(discountLineItems, 0, email.trim() || undefined),
-    [discountLineItems, email]
+    () =>
+      calculateCartDiscounts(
+        discountLineItems,
+        shipQuote?.calculated ? shipQuote.amount : 0,
+        email.trim() || undefined
+      ),
+    [discountLineItems, email, shipQuote]
   );
   const bulkDiscountActive = useMemo(
     () => cartQualifiesForBulkDiscount(discountLineItems),
@@ -308,21 +375,6 @@ export default function CheckoutPage() {
       items,
     });
   }, [hydrated, cart, breakdown.total]);
-
-  /*
-   * There is no shipping quote at checkout any more.
-   *
-   * This used to POST the cart to /api/shipping/quote, which answered $0 for
-   * every cart and destination, and the summary printed that as the word
-   * "Free". Nothing in this application talks to a carrier, so that figure was
-   * a constant wearing a quote's clothes -- and it contradicted the policy,
-   * under which Australia and other international destinations are charged and
-   * a crated engine can be charged even where standard shipping is free.
-   *
-   * The charge is worked out by a person and sent with the payment details, so
-   * the customer is told that instead of being shown a number nobody stands
-   * behind.
-   */
 
   const handleCheckout = async () => {
     if (!cart.length || submitting) return;
@@ -803,8 +855,21 @@ export default function CheckoutPage() {
                   <optgroup label="Cryptocurrency">
                     {PAY_OPTIONS.filter((option) => option.value === "crypto").map(
                       (option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
+                        /*
+                          A crypto invoice is one fixed amount, issued the
+                          moment the order is placed, and nothing can add a
+                          shipping charge to it afterwards. So it is only
+                          offered when the shipping charge is known now --
+                          see cryptoNeedsCalculatedShipping in /api/checkout.
+                        */
+                        <option
+                          key={option.value}
+                          value={option.value}
+                          disabled={cryptoUnavailable}
+                        >
+                          {cryptoUnavailable
+                            ? `${option.label} (not available: shipping is confirmed after ordering)`
+                            : option.label}
                         </option>
                       )
                     )}
@@ -824,27 +889,24 @@ export default function CheckoutPage() {
                 </p>
 
                 {/*
-                  Shipping is quoted by hand once the order is in, so this is
-                  the whole of what checkout can honestly say about it -- for
-                  the manual methods.
+                  When the published US rate table covers this cart, the charge
+                  is already in the summary and is what the order is placed
+                  with -- nothing to add. When it does not (freight items, a
+                  destination outside the US), the customer is told here,
+                  before placing the order, that shipping is confirmed with
+                  them before payment.
 
-                  It is NOT true of cryptocurrency, and is hidden when that is
-                  selected. A crypto order is created with shipping at 0 (the
-                  checkout route's "not yet calculated" marker), the NOWPayments
-                  invoice is for the order total, and the only code that records
-                  a real shipping charge -- the admin "send payment instructions"
-                  action -- refuses an order that is not a manual payment. So no
-                  payment details are sent to a crypto customer and nothing adds
-                  shipping to their order.
-
-                  Nothing replaces the sentence for crypto: what actually
-                  happens to shipping on those orders is a business decision, not
-                  something this wording can supply. Shown when no method is
-                  chosen yet, since the choice is made from the manual methods.
+                  Hidden for cryptocurrency: a crypto order without a
+                  calculated charge is invoiced for its items only and no
+                  payment details are sent afterwards, so the sentence would
+                  not be true for it. What happens to shipping on those orders
+                  is a business decision, not something this wording supplies.
                 */}
-                {payChoice !== "crypto" ? (
+                {payChoice !== "crypto" && shipQuote && !shipQuote.calculated ? (
                   <p className="mt-1.5 text-[11px] leading-relaxed text-neutral-500">
-                    Shipping will be calculated and sent with your payment details.
+                    {shipQuote.note ||
+                      "Shipping for this order is confirmed with you before payment."}{" "}
+                    You will see the full amount before you pay.
                   </p>
                 ) : null}
 
@@ -1073,7 +1135,14 @@ export default function CheckoutPage() {
                 </div>
 
                 <div className="mt-4 border-t border-neutral-200 pt-4">
-                  <OrderTotalsSummary breakdown={breakdown} />
+                  <OrderTotalsSummary
+                    breakdown={breakdown}
+                    shippingQuote={
+                      shipQuote
+                        ? { calculated: shipQuote.calculated, note: shipQuote.note }
+                        : undefined
+                    }
+                  />
 
 
                   <div className="mt-3 flex items-center justify-center gap-2 text-xs text-neutral-500">
