@@ -106,7 +106,18 @@ Left out or flagged:
 - #2723: the page shows both a ProForce 3D (triple-disc) and a standard ProForce converter section without saying which ships; stated as "confirm". Billet input shaft and auxiliary filter kit are options, not included. Remote filter required.
 - 2019-and-newer package (#2204): special tuning needed; the line pressure controller is not included. **Open: BD's 2WD part numbers for these three pages.**
 
-Not yet researched: the remaining BD transmission-only and package listings (about 70: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+**Allison 1000 packages (Duramax)**, same day:
+
+| Listing | Part | Page (under https://us.bddiesel.com/products/) |
+|---|---|---|
+| #2771 | 1064744SS, TowMaster LMM 2007-2010 4WD | `duramax-allison-transmission-converter-package-lml` (slug says "lml"; the page content is the LMM 4WD package and its part number matched) |
+| #2786, #2789 | 1064704SS TowMaster LB7 4WD; 2WD sibling 1064702SS | `towmaster-chevy-allison-1000-transmission-converter-package-2001-2004-lb7-4wd` |
+| #2787 | 1064704BM, TorqueMaster LB7 4WD, billet input and triple-disc converter | `torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2001-2004-lb7-4wd` |
+| #2701, #4051 | 1064854SS Roadmaster LB7 4WD; 2WD sibling 1064852SS | `roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lb7-duramax-2001-2004` |
+
+The converter is included in these packages. The pages state no break-in or tuning requirement, so none is claimed. "Triple Torque" is not defined on the TorqueMaster page beyond the triple-disc converter, so only that is stated. Warranty and core ($2,000-$2,100) and price differ from the listings' own fields and are not copied; the pages also mark the 4WD variant "sold out or unavailable", which we do not carry over. Not applied: the LMM TorqueMaster (#2772/#2775), LLY, LBZ, LML and L5P packages, because their pages were not fetched. Open: BD's 2WD part numbers.
+
+Not yet researched: the remaining BD transmission-only and package listings (about 60: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 

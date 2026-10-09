@@ -151,6 +151,31 @@ const BD_2019_TUNE =
 const BD_2019_CONTROLLER = "Line pressure controller (not included)";
 
 /**
+ * BD TowMaster Allison 1000 packages (LB7/LMM pages): unit features and the
+ * included converter, as listed on the manufacturer's pages (2026-10-09).
+ */
+const BD_ALLISON_TOWMASTER_UNIT = [
+  "BD aluminum HD deep transmission pan, adding 3.5 qt of oil capacity",
+  "High-energy friction materials and revised oil circuits",
+  "New converter lock-up valve to raise lock-up pressure",
+  "New A and B trim valves delivering full line pressure to the clutches",
+  "Increased clutch counts: C1 8 clutches, C2 7, C3 7, C4 7, C5 7",
+  "Dyno tested",
+];
+
+const BD_ALLISON_TOWMASTER_CONVERTER = [
+  "Torque converter (included, sold as a matched set): enhanced stall for street and towing, cast aluminum torque-multiplying stators, stamped-forged steel front cover, furnace-brazed fins, up to three times the lock-up clutch material",
+];
+
+const BD_ALLISON_ROADMASTER_LB7 = [
+  "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
+  "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
+  "Revised oil circuits for longer clutch life",
+  "New converter lock-up valve and new A and B trim valves",
+  "ProForce torque converter with a billet cover (included)",
+];
+
+/**
  * BD TowMaster 47RE/48RE units. Both pages list the same features. The page's
  * feature list also mentions a new-model shift lever, BD control module, BD
  * gear selection display and wiring harness (the TapShift items) without
@@ -1013,6 +1038,96 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-stepper-motor"
+    ),
+  },
+
+  // BD Allison 1000 Transmission & Converter Packages (Duramax), researched
+  // 2026-10-09. #2771 (1064744SS), #2786 (1064704SS), #2787 (1064704BM) and
+  // #2701 (1064854SS) match their page's part number; #2789 and #4051 are the
+  // 2WD siblings of #2786 and #2701, whose pages show one part number only.
+  2771: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_ALLISON_TOWMASTER_UNIT, ...BD_ALLISON_TOWMASTER_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: ["Application: 2007-2010 Chevy/GMC 6.6L LMM Duramax with Allison 1000, 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "duramax-allison-transmission-converter-package-lml"
+    ),
+  },
+  2786: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_ALLISON_TOWMASTER_UNIT, ...BD_ALLISON_TOWMASTER_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: ["Application: 2001-2004 Chevy/GMC 6.6L LB7 Duramax with Allison 1000, 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-converter-package-2001-2004-lb7-4wd"
+    ),
+  },
+  2789: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_ALLISON_TOWMASTER_UNIT, ...BD_ALLISON_TOWMASTER_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: [
+      "Application: 2001-2004 Chevy/GMC 6.6L LB7 Duramax with Allison 1000, 2WD. The BD page lists the 4WD part number only, so the 2WD part number is not displayed there",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-converter-package-2001-2004-lb7-4wd"
+    ),
+  },
+  2787: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD aluminum HD deep transmission pan, adding 3.5 qt of oil capacity",
+      "High-energy frictions and revised oil circuits",
+      "New converter lock-up valve to raise lock-up pressure",
+      "New A and B trim valves delivering full line pressure to the clutches",
+      "Upgraded C2 return springs and orifice cup plugs",
+      "Increased clutch counts: C1 8 clutches, C2 7, C3 7, C4 7, C5 7",
+      "Billet input shaft",
+      "Drain-back and pump prime kit to maintain pump pressure at start-up",
+      "Torque converter (included): triple-disc design, enhanced stall for street and towing, HD springs, stamped forged one-piece cover, riveted piston, thrust bearings in place of plastic washers, cast stator, furnace-brazed turbine fins",
+      "Dyno tested",
+    ],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: ["Application: 2001-2004 Chevy/GMC 6.6L LB7 Duramax with Allison 1000, 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2001-2004-lb7-4wd"
+    ),
+  },
+  2701: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_ROADMASTER_LB7,
+    installationRequirements: ["BD lists an installation time of 13 hours 12 minutes"],
+    vehicleRequirements: [
+      "Application: 2001-2004 Chevrolet Silverado / GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax, 4WD",
+      "BD describes it as designed for stock or mildly modified Duramax trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lb7-duramax-2001-2004"
+    ),
+  },
+  4051: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_ROADMASTER_LB7,
+    installationRequirements: ["BD lists an installation time of 13 hours 12 minutes"],
+    vehicleRequirements: [
+      "Application: 2001-2004 Chevrolet Silverado / GMC Sierra 2500HD/3500HD 6.6L LB7 Duramax, 2WD. The BD page lists one part number for both drivetrains, so the 2WD part number is not displayed there",
+      "BD describes it as designed for stock or mildly modified Duramax trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lb7-duramax-2001-2004"
     ),
   },
 
