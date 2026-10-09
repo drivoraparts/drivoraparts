@@ -1274,6 +1274,14 @@ Worldwide Shipping Available`,
     horsepower: "Up to 430 HP",
     mileage: "0 Miles",
     warranty: "24-Month Limited Warranty",
+    // Package contents confirmed for this listing; shown under "What's included"
+    // on the Specifications tab and repeated in the description below.
+    included: [
+      "Ford 7.3L Godzilla engine",
+      "Supercharger",
+      "ECU (Engine Control Unit)",
+      "Engine wiring harness",
+    ],
     location: "USA Warehouse",
     thumbnail: "/product-media/engine/american-v8/ford-7-3-godzilla/1.jpeg",
     images: [
@@ -1287,6 +1295,50 @@ Large-displacement pushrod V8 supplied with its supercharger fitted, as pictured
 The Ford 7.3L Godzilla is a modern pushrod V8 designed for serious power, durability, and demanding applications. Known for its large-displacement architecture, strong low-end torque, and straightforward design, the 7.3L Godzilla has become a popular choice among truck owners, performance enthusiasts, and builders looking for a dependable V8 platform.
 
 This package ships as shown, with the supercharger included. With its cast-iron block, overhead-valve configuration, and robust internal architecture, the Godzilla is well suited for heavy-duty applications, engine swaps, restoration projects, and high-performance builds.
+
+What's Included
+
+Confirmed as part of this package:
+
+• Ford 7.3L Godzilla V8 engine
+• Supercharger
+• ECU (Engine Control Unit)
+• Engine wiring harness
+
+Package price: US$6,350.
+
+Not Confirmed as Included
+
+The items below are not confirmed as part of this package. Do not assume they are included, and ask us before you order if any of them matter to your build.
+
+• Supercharger brackets, intercooler and other associated components
+• Intake manifold and throttle body
+• Fuel injectors, fuel rails and other fuel-delivery components
+• Accessory drive, pulleys and belts
+• Alternator and starter motor
+• Engine sensors, connectors and ignition components
+• Water pump, thermostat, housing and cooling connections
+• Oil pan and oil pump
+• Exhaust manifolds or headers and exhaust connections
+• Throttle control components and accelerator pedal
+
+Complete Engine Requirements
+
+A running installation needs the engine matched to your vehicle, transmission and intended application. Not every item below is required for every installation, and this list does not state that any of them is compatible with your vehicle.
+
+• Engine mounts and mounting compatibility
+• Transmission compatibility and any required adapter
+• Flexplate or flywheel, and starter compatibility
+• A fuel supply suited to the engine
+• A cooling system suited to the engine
+• Exhaust compatibility
+• Electrical integration and wiring to the vehicle
+• Engine control calibration or tuning for your application. This listing does not state that the ECU is pre-calibrated or that software is included.
+• Any further components your vehicle or conversion requires
+
+Engine Package, Not a Conversion Kit
+
+This is a supplied engine package. It is not a complete, installation-ready conversion kit. The additional parts you need, and the work to integrate them, depend on your vehicle, transmission and application.
 
 Specifications
 • Engine Code: 7.3L Godzilla
