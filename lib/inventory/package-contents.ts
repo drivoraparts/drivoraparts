@@ -176,6 +176,23 @@ const BD_ALLISON_LLY = [
   "Torque converter with a billet cover (included in the package)",
 ];
 
+const BD_ALLISON_ROADMASTER_LBZ = [
+  "RoadMaster Allison 1000 transmission with valve body modifications (raise clutch torque capacity, help prevent dry starts)",
+  "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
+  "New converter lock-up valve and new A and B trim valves",
+  "ProForce torque converter with a billet cover (included)",
+];
+
+const BD_ALLISON_TORQUEMASTER_LBZ = [
+  "BD aluminum HD deep pan, adding 3.5 qt of oil capacity",
+  "High-energy GPZ frictions, revised oil circuits and a new converter lock-up valve",
+  "New A and B trim valves delivering full line pressure to the clutches",
+  "Increased clutch counts: C1 8 clutches, C2 7, C3 7, C4 7, C5 7",
+  "Billet input shaft",
+  "Torque converter (included): triple-disc, enhanced stall for street and towing, HD engagement springs, one-piece stamped forged cover, trapezoid teeth, thrust bearings in place of plastic washers, riveted piston, double-cage stator sprag",
+  "Dyno tested",
+];
+
 const BD_ALLISON_ROADMASTER_LB7 = [
   "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
   "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
@@ -1164,6 +1181,106 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "towmaster-chevy-allison-1000-transmission-converter-package-2004-5-2006-lly-5-speed-4wd"
+    ),
+  },
+
+  // BD Allison 1000 packages, LBZ 2006-2007, researched 2026-10-09. #2777,
+  // #2700 and #2780 match their page's part number; #2779, #4050 and #2778
+  // are the other drivetrain's sibling on the same page.
+  2777: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_ALLISON_TOWMASTER_UNIT, ...BD_ALLISON_TOWMASTER_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: [
+      "Application: 2006-2007 Chevy/GMC 6.6L LBZ Duramax with the 6-speed Allison 1000, 4WD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-converter-package-2006-2007-lbz-6-speed-4wd"
+    ),
+  },
+  2779: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_ALLISON_TOWMASTER_UNIT, ...BD_ALLISON_TOWMASTER_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: [
+      "Application: 2006-2007 Chevy/GMC 6.6L LBZ Duramax with the 6-speed Allison 1000, 2WD. The BD page lists one part number for the package, so this drivetrain's part number is not displayed there",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-converter-package-2006-2007-lbz-6-speed-4wd"
+    ),
+  },
+  2700: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_ROADMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 13 hours 12 minutes"],
+    vehicleRequirements: [
+      "Application: 2006-2007 Chevrolet Silverado / GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax, 4WD",
+      "BD describes it as designed for stock or mildly modified Duramax trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lbz-duramax-2006-2007"
+    ),
+  },
+  4050: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_ROADMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 13 hours 12 minutes"],
+    vehicleRequirements: [
+      "Application: 2006-2007 Chevrolet Silverado / GMC Sierra 2500HD/3500HD 6.6L LBZ Duramax, 2WD. The BD page lists one part number for the package, so this drivetrain's part number is not displayed there",
+      "BD describes it as designed for stock or mildly modified Duramax trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lbz-duramax-2006-2007"
+    ),
+  },
+  2780: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_TORQUEMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 7 hours"],
+    vehicleRequirements: [
+      "Application: 2006-2007 Chevy/GMC 6.6L LBZ Duramax with the 6-speed Allison 1000, 2WD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2006-2007-lbz-6-speed-2wd"
+    ),
+  },
+  2778: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_TORQUEMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 7 hours"],
+    vehicleRequirements: [
+      "Application: 2006-2007 Chevy/GMC 6.6L LBZ Duramax with the 6-speed Allison 1000, 4WD. The BD page lists one part number for the package, so this drivetrain's part number is not displayed there (the page shows the 2WD number)",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2006-2007-lbz-6-speed-2wd"
+    ),
+  },
+
+  // BD Roadmaster Allison 1000, LMM 2007.5-2010 (1064874SS), researched 2026-10-09.
+  2699: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_ROADMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 13 hours 12 minutes"],
+    vehicleRequirements: [
+      "Application: 2007.5-2010 Chevrolet Silverado / GMC Sierra 2500HD/3500HD 6.6L LMM Duramax, 4WD",
+      "BD describes it as designed for stock or mildly modified Duramax trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lmm-duramax-2007-5-2010"
     ),
   },
 
