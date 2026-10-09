@@ -211,6 +211,31 @@ const BD_ALLISON_TOWMASTER_LML = [
   "Dyno tested",
 ];
 
+const BD_48RE_CONVERTER =
+  "ProForce 3D torque converter (included, sold as a matched set): triple-disc, heavy-duty springs, stamp-forged one-piece cover, trapezoid teeth, roller thrust bearings in place of plastic washers, riveted piston, cast stator, new sprag components, brazed turbine fins";
+
+const BD_5R110_TOWMASTER_PACKAGE = [
+  "BD aluminum HD deep pan, adding 6 qt of oil capacity",
+  "Upgraded, larger late-model sump filter",
+  "Aluminum replacements for the plastic valve-body pressure plugs",
+  "Heavy-duty snap ring and pressure regulator valve",
+  "Reworked front pump",
+  "Increased clutch counts: coast 3, forward 4, low/reverse 6, intermediate 5, direct 6, overdrive 5",
+  "Torque converter (included, sold as a matched set): enhanced stall for street and towing, modified stator, three high-performance clutch surfaces, stamp-forged steel front cover, furnace-brazed pump and turbine fins, HD damper",
+  "Dyno tested",
+];
+
+const BD_5R110_ROADMASTER = [
+  "Hardened steel pressure regulator valve",
+  "Larger late-model sump filter",
+  "Machined front pump to prevent cross leaks",
+  "Upgraded converter clutch regulator spring for higher converter clutch apply pressure",
+  "Aluminum pressure plugs in place of the stock plastic ones",
+  "Heavy-duty low/reverse snap ring",
+  "BD aluminum deep sump oil pan, adding about 6 qt of fluid capacity",
+  "BD ProForce torque converter (included) with a billet steel cover, enhanced stall stator and furnace-brazed turbine",
+];
+
 const BD_ALLISON_ROADMASTER_LB7 = [
   "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
   "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
@@ -1358,6 +1383,80 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "towmaster-chevy-allison-transmission-c-w-billet-input-triple-torque-controller-2011-2016-lml-4wd"
+    ),
+  },
+
+  // BD packages researched 2026-10-09 (catalog-batch-4): TowMaster 48RE
+  // 2003-2004 (#2728 exact, #4127 2WD sibling; the TapShifter SST variants are
+  // different parts and not updated), TowMaster 5R110 2008-2010 (#2792 exact)
+  // and Roadmaster 5R110 2008-2010 (#2749 exact, #4176 flange sibling).
+  2728: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_48RE_FEATURES, BD_48RE_CONVERTER],
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)","BD auxiliary full-flow filter kit (offered on the page as an extra-protection feature)"],
+    installationRequirements: ["BD lists an installation time of 8 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 2003-2004 Dodge Ram 5.9L Cummins with the 48RE, 4WD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-transmission-converter-package-dodge-48re-2003-2004"
+    ),
+  },
+  4127: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_48RE_FEATURES, BD_48RE_CONVERTER],
+    optionalUpgrades: ["Billet input shaft (available as an option on the page)","BD auxiliary full-flow filter kit (offered on the page as an extra-protection feature)"],
+    installationRequirements: ["BD lists an installation time of 8 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 2003-2004 Dodge Ram 5.9L Cummins with the 48RE, 2WD. The BD page lists one part number, so this drivetrain's part number is not displayed there",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-transmission-converter-package-dodge-48re-2003-2004"
+    ),
+  },
+  2792: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_5R110_TOWMASTER_PACKAGE,
+    installationRequirements: ["BD lists an installation time of 7 hours"],
+    vehicleRequirements: [
+      "Application: 2008-2010 Ford 6.4L Power Stroke with the 5R110, 4WD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ford-5r110-transmission-converter-package-2008-2010-6-4l-power-stroke-4wd"
+    ),
+  },
+  2749: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_5R110_ROADMASTER,
+    installationRequirements: ["BD lists an installation time of about 7 hours"],
+    vehicleRequirements: [
+      "Application: 2008-2010 Ford F-250/F-350 6.4L Power Stroke with the 5R110. The page lists 2WD slip-yoke and 4WD/2WD flange variants under one part number",
+      "BD describes it as built to handle stock engine output with added durability",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-f250-f350-2008-2010"
+    ),
+  },
+  4176: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_5R110_ROADMASTER,
+    installationRequirements: ["BD lists an installation time of about 7 hours"],
+    vehicleRequirements: [
+      "Application: 2008-2010 Ford F-250/F-350 6.4L Power Stroke with the 5R110, 4WD/2WD flange. The BD page lists one part number, so this drivetrain's part number is not displayed there",
+      "BD describes it as built to handle stock engine output with added durability",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-f250-f350-2008-2010"
     ),
   },
 

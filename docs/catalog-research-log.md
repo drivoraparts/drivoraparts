@@ -141,9 +141,19 @@ LMM and LML TorqueMaster/TowMaster (checked 2026-10-09, pages under https://us.b
 
 The LML titles mention a "Controller" or Pressure Box, but the pages give no details, so the listings say to confirm it. The LML TowMaster transmission-only page says a BD converter must be installed with it, so that is stated as required separately. #2209 (1064754SM, TowMaster LML package) is a different part number from either page and was not updated.
 
+48RE 2003-2004 package and 5R110 2008-2010 packages (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2728, #4127 | 1064194SS TowMaster 48RE 4WD; 2WD sibling 1064192SS | `towmaster-transmission-converter-package-dodge-48re-2003-2004` |
+| #2792 | 1064494SM TowMaster 5R110 6.4L 4WD | `towmaster-ford-5r110-transmission-converter-package-2008-2010-6-4l-power-stroke-4wd` |
+| #2749, #4176 | 1064652SM Roadmaster 5R110 6.4L; flange sibling 1064654SM | `roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-f250-f350-2008-2010` |
+
+Not updated: the TapShifter SST variants (#2727, #4126), because the page shows no TapShifter variant and names a different part number; #2794 (1064492SM, 2WD slip yoke), because the TowMaster page's variant selector shows only 4WD/2WD flange. The 48RE package page lists an install time of 8 hours and an optional auxiliary filter kit and billet input shaft; neither is claimed as included. Core ($2,000-$2,500) and warranty are not copied.
+
 L5P (#2210, #2211, #4048, #4052): no individual product page could be found (only collection pages and a blog post, which disagree on price and give no itemized contents), so nothing was applied. Open: locate the L5P product pages or ask BD.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 47: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+Not yet researched: the remaining BD transmission-only and package listings (about 40: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 
