@@ -50,9 +50,27 @@ Left out or flagged:
 - Long-block warranty terms: the pages disagree between fetches; not added.
 - Not yet fetched: the short blocks #3900-#3903 and the Heavy Hauler long blocks #3953, #3957, #3959, #3962, #3965; Precision Plus long blocks #3963, #3966.
 
-## BD transmissions: not yet researched
+## BD Diesel transmission-only units (checked 2026-10-09)
 
-162 BD transmission listings; 75 already have a contents list (transmission and converter packages) and 87 are unconfirmed (transmission-only units). BD's pages are per vehicle and year (and some listings, such as the Allison 1000 TowMaster, are for GM Duramax trucks), so each needs its own page fetch and part-number match. This is the next group.
+| Listing | Part | Page (under https://us.bddiesel.com/products/) |
+|---|---|---|
+| #2205, #4119 | 1064294 / 1064292, TowMaster 68RFE 2019-2024 | `towmaster-ram-6-7l-cummins-68rfe-transmission-2019-2024` |
+| #2744 | 1064264, TowMaster 68RFE 2007.5-2018 | `towmaster-dodge-68rfe-transmission-2007-5-2018` |
+| #2721, #4118 | 1064294B / 1064292B, TorqueMaster 68RFE 2019-2024, billet shaft | `torquemaster-transmission-dodge-68rfe-2019-2024-c-w-billet-input-shaft` |
+| #2807 | 1064264B, TorqueMaster 68RFE 2007.5-2018 4WD, billet shaft | `torquemaster-dodge-68rfe-transmission-2007-5-2018-4wd-c-w-billet-input-shaft` |
+| #2773 | 1064744, TowMaster Allison 1000, 2007-2010 LMM 4WD | `towmaster-chevy-allison-1000-transmission-2007-2010-lmm-4wd` |
+| #2803 | 1064444F, TowMaster 4R100 1999-2003 4WD | `towmaster-ford-4r100-transmission-1999-2003-4wd` |
+| #2793 | 1064494, TowMaster 5R110 2008-2010 6.4L 4WD | `towmaster-ford-5r110-transmission-2008-2010-6-4l-power-stroke-4wd` |
+
+What this adds that customers need: BD's transmission-only pages state that a **BD torque converter is required and not included** (installed at the same time; a third-party or factory converter voids the transmission warranty), that **2019-and-newer applications need special tuning** to raise line pressure and that the **line pressure controller is not included**, a 300-mile break-in advisory, and installation times. These are listed as Required Separately, Programming and Tuning and Installation on each listing. The 5R110 page says nothing about a converter, so none is claimed there.
+
+Left out or flagged:
+- #2205/#4119 and #2721/#4118: each page lists 4WD and 2WD variants without separate part numbers, so the page is applied to both listings and says so. **Open: confirm the 2WD part numbers (1064292, 1064292B) with BD.**
+- The 4R100 page contradicts itself on whether the base unit has PTO provision; stated as "confirm with us".
+- Warranty and core deposit figures differ by page ($1,200 to $1,800 core on the units fetched); not added, because the listings' own core-charge and warranty fields govern. **Open: reconcile those fields with BD's figures.**
+- Two earlier URL guesses returned 404 (the 4WD-suffixed TowMaster 68RFE slug), and BD's collection pages show only 12 of 43 products, so product URLs came from site-restricted searches and were then fetched directly.
+
+Not yet researched: the remaining BD transmission-only listings (about 78: 2WD siblings, Roadmaster units, 47RE/48RE/47RH/E4OD/4R100 2WD, the other Allison 1000 units, 66RFE, 10R80, 6L80 and the converter packages).
 
 ## Not researched yet
 

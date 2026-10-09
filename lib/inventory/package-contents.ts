@@ -112,6 +112,44 @@ const BD_NO_CA_EO = "The manufacturer states this product does not require an EO
 const BD_LONG_BLOCK_LIMIT =
   "Designed for demanding work applications; the manufacturer does not recommend high-horsepower tuning";
 
+/**
+ * BD Diesel transmission-only units (TowMaster, TorqueMaster). Researched
+ * 2026-10-09 from each unit's own BD page. Where a page states it, a BD torque
+ * converter is REQUIRED and is not part of the transmission-only price: BD
+ * says it must be installed at the same time and that a third-party or factory
+ * converter voids the transmission warranty. Pages that say nothing about a
+ * converter (the 5R110) carry no such line. Warranty and core deposit are on
+ * the pages but are handled by the existing warranty and core-charge fields.
+ */
+const BD_68RFE_BASE = [
+  "Hard anodized valve body with a new solenoid pack installed in every unit",
+  "Custom bonded-gasket valve body separator plate (raises line pressure and stops internal cross leaks)",
+  "Heavy-duty cam-and-roller low/reverse one-way clutch",
+  "New 4C billet spring retainer",
+  "Steel girdle on the 2C piston for more clutches and a broader apply area",
+  "BD QT100 pressure plates for increased clutch counts",
+  "Overdrive clutches and 2C clutches increased by 33%",
+  "Custom Big Stack overdrive shaft",
+  "BD reinforced accumulator plate",
+  "BD deep-sump oil pan",
+];
+
+const BD_68RFE_2007_EXTRAS = [
+  "TCC limit valve machined and sleeved at the high-wear area in the pump",
+  "BD ProTech68 pressure control module, which raises line pressure to 250 psi",
+];
+
+const BD_CONVERTER_REQUIRED =
+  "A BD torque converter (not included in this transmission-only unit); BD states it must be installed at the same time, and that a third-party or factory converter voids the transmission warranty";
+
+const BD_BREAK_IN =
+  "BD advises no heavy towing or hauling until 300 miles of stop-and-go driving, so the vehicle's computer can relearn the transmission";
+
+const BD_2019_TUNE =
+  "Special tuning is required on 2019-and-newer applications to increase line pressure";
+
+const BD_2019_CONTROLLER = "Line pressure controller (not included)";
+
 export const packageContents: Record<number, PackageContents> = {
   // #2114 Ford 7.3L Godzilla Supercharged Engine Package (Brand New).
   // The four items below were confirmed for this listing by the owner; the
@@ -446,6 +484,191 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2019-2020"
+    ),
+  },
+
+  // BD transmission-only units. Each part number below matched its BD page.
+  // #2205 / #4119: the 2019-2024 TowMaster 68RFE page (part 1064294) shows 4WD
+  // and 2WD variants without separate part numbers, so it is applied to both
+  // listings and says so.
+  2205: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_68RFE_BASE, "Option on the page: billet input shaft (not standard on the TowMaster)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED, BD_2019_CONTROLLER],
+    programmingRequirements: [BD_2019_TUNE],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2019-2024 Ram 6.7L Cummins (68RFE), 4WD. The BD page lists 4WD and 2WD variants without separate part numbers",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ram-6-7l-cummins-68rfe-transmission-2019-2024"
+    ),
+  },
+  4119: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_68RFE_BASE, "Option on the page: billet input shaft (not standard on the TowMaster)"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED, BD_2019_CONTROLLER],
+    programmingRequirements: [BD_2019_TUNE],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2019-2024 Ram 6.7L Cummins (68RFE), 2WD. The BD page lists 4WD and 2WD variants without separate part numbers",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ram-6-7l-cummins-68rfe-transmission-2019-2024"
+    ),
+  },
+  2744: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      ...BD_68RFE_BASE,
+      ...BD_68RFE_2007_EXTRAS,
+      "Option on the page: billet input shaft (not standard on the TowMaster)",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2007.5-2018 Dodge/Ram 6.7L Cummins (68RFE). The BD page lists 4WD and 2WD variants without separate part numbers",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-68rfe-transmission-2007-5-2018"
+    ),
+  },
+  2721: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_68RFE_BASE, "Billet input shaft"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED, BD_2019_CONTROLLER],
+    programmingRequirements: [BD_2019_TUNE],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2019-2024 Ram 6.7L Cummins (68RFE), 4WD. The BD page lists 4WD and 2WD variants without separate part numbers",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-transmission-dodge-68rfe-2019-2024-c-w-billet-input-shaft"
+    ),
+  },
+  4118: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_68RFE_BASE, "Billet input shaft"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED, BD_2019_CONTROLLER],
+    programmingRequirements: [BD_2019_TUNE],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2019-2024 Ram 6.7L Cummins (68RFE), 2WD. The BD page lists 4WD and 2WD variants without separate part numbers",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-transmission-dodge-68rfe-2019-2024-c-w-billet-input-shaft"
+    ),
+  },
+  2807: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_68RFE_BASE, ...BD_68RFE_2007_EXTRAS, "Billet input shaft"],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2007.5-2018 Dodge/Ram 6.7L Cummins (68RFE), 4WD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-dodge-68rfe-transmission-2007-5-2018-4wd-c-w-billet-input-shaft"
+    ),
+  },
+  2773: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD aluminum HD deep transmission pan, adding 3.5 qt of oil capacity",
+      "High-energy friction plates",
+      "Revised oil circuits",
+      "New converter lock-up valve to raise lock-up pressure",
+      "New A and B trim valves delivering full line pressure to the clutches",
+      "Increased clutch counts: C1 8 clutches, C2 7, C3 7, C4 7, C5 7",
+      "Dyno tested",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: ["Application: 2007-2010 Chevy/GMC 6.6L LMM Duramax with Allison 1000, 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-2007-2010-lmm-4wd"
+    ),
+  },
+  2803: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD aluminum HD deep pan, adding 6 qt of oil capacity",
+      "Re-calibrated accumulator body, quicker and firmer shifts",
+      "Full shift kit with a line-mod valve to increase pressures",
+      "Increased pressure to the converter; added lube circuits to the overdrive planet and added lube and support to the output and intermediate shafts",
+      "Drilled and tapped direct and intermediate feeds to prevent leaks at the case; upgraded overdrive snap ring; machined center support; reworked front pump",
+      "Fully rollerized geartrain; increased clutch counts (forward 5, direct 5, low/reverse 7, intermediate 4, overdrive 4, coast 2)",
+      "Auxiliary frame-mounted full-flow filter kit (stated for 1990-2003)",
+      "Dyno tested",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 7 hours",
+      "A remote filter is required for inspection, with the cooler flow rate measured in GPM at the oil/air transmission cooler outlet",
+    ],
+    vehicleRequirements: [
+      "Application: 1999-2003 Ford 7.3L Power Stroke with the 4R100, 4WD (base part 1064444F)",
+      "A 2WD 4R100 vehicle with an attached driveline brake assembly requires the 4WD model",
+      "Suffixes on the page: LR for a rear-end ratio of 4.88 or lower, PTO for PTO provision; the page contradicts itself on whether the base unit has PTO provision, so confirm with us if you need it",
+      "The BD deep pan interferes with the factory crossmember on the Excursion, which requires the factory-style pan",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ford-4r100-transmission-1999-2003-4wd"
+    ),
+  },
+  2793: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD heavy-duty deep transmission pan, adding 6 qt of oil capacity",
+      "Upgraded, larger late-model sump filter",
+      "Aluminum replacements for the plastic valve-body pressure plugs",
+      "Heavy-duty snap ring and pressure regulator valve to prevent runaway pressure damaging the case",
+      "Reworked front pump",
+      "Increased clutch counts: forward 4, low/reverse 6, intermediate 5, direct 6, overdrive 5, coast 3",
+      "Dyno tested",
+    ],
+    installationRequirements: ["BD lists an installation time of 7 hours"],
+    vehicleRequirements: [
+      "Application: 2008-2010 Ford 6.4L Power Stroke with the 5R110, 4WD. BD says fitment is year-specific",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ford-5r110-transmission-2008-2010-6-4l-power-stroke-4wd"
     ),
   },
 
