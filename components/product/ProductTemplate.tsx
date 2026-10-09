@@ -453,6 +453,7 @@ export default function ProductTemplate({
           specRows={specRows}
           features={catalogMeta.specifications}
           included={logistics?.included}
+          contents={logistics?.contents}
           weight={logistics?.weight}
           descriptionBody={catalogMeta.descriptionBody}
           fitment={fitment}

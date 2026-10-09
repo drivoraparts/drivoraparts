@@ -175,6 +175,8 @@ export type Product = {
   drivetrain?: string;
   /** Physical contents included with the unit. */
   included?: string[];
+  /** Structured package contents; see PackageContents. */
+  packageContents?: PackageContents;
   /**
    * Swap-oriented package: fitment depends on the buyer's fabrication, so the
    * product page offers fitment assistance rather than claiming the order is
@@ -210,6 +212,48 @@ export type Product = {
   installVideoUrl?: string;
 };
 
+/**
+ * How much of a listing's package contents is established.
+ *  - "listed": the contents come from the supplier's own listing text and are
+ *    itemized there.
+ *  - "partial": some items are established; the rest are not confirmed.
+ *  - "unconfirmed": nothing about the contents is established yet.
+ * Nothing is ever shown as included merely because that kind of product
+ * normally ships with it.
+ */
+export type ContentsStatus = "listed" | "partial" | "unconfirmed";
+
+/** Which shared installation-guidance checklist a listing shows. */
+export type RequirementsChecklistId =
+  | "engine"
+  | "transmission"
+  | "turbocharger"
+  | "supercharger"
+  | "suspension"
+  | "brakes"
+  | "fuel"
+  | "cooling"
+  | "drivetrain";
+
+/**
+ * What a buyer needs to know about a package. Every list holds only what the
+ * listing's own source establishes; general guidance lives in the shared
+ * checklists (lib/content/requirements-checklists.ts), never here.
+ */
+export type PackageContents = {
+  status: ContentsStatus;
+  checklist?: RequirementsChecklistId;
+  /** What's Included. */
+  included?: string[];
+  /** Stated by the source as not part of the package. */
+  notIncluded?: string[];
+  /** Stated by the source as needed and sold separately. */
+  requiredSeparately?: string[];
+  optionalUpgrades?: string[];
+  /** Conditions that depend on the vehicle, drivetrain or application. */
+  vehicleRequirements?: string[];
+};
+
 /** Structured fitment & logistics shown on the product page. */
 export type ProductLogistics = {
   partNumber?: string;
@@ -220,4 +264,5 @@ export type ProductLogistics = {
   weight?: string;
   freightNotes?: string;
   warrantyTerms?: string;
+  contents?: PackageContents;
 };

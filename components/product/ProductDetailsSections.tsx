@@ -8,6 +8,11 @@ import type { InstallationResources } from "@/lib/inventory/productEnhancements"
 import { useTranslation } from "@/hooks/useTranslation";
 import RichDescription from "./RichDescription";
 import {
+  CHECKLIST_DISCLAIMER,
+  REQUIREMENTS_CHECKLISTS,
+} from "@/lib/content/requirements-checklists";
+import type { ContentsStatus, PackageContents } from "@/lib/inventory/types";
+import {
   FitmentDetails,
   OPEN_DETAILS_TAB_EVENT,
   type ProductFitmentData,
@@ -33,6 +38,8 @@ type ProductDetailsSectionsProps = {
   /** Feature bullets from the listing, rendered as prose under the rows. */
   features: string;
   included?: string[];
+  /** Structured package contents beyond the included list; see PackageContents. */
+  contents?: PackageContents;
   weight?: string;
   descriptionBody: string;
   fitment: ProductFitmentData;
@@ -74,6 +81,75 @@ function SubHeading({ children }: { children: ReactNode }) {
     <h3 className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.14em] text-muted">
       {children}
     </h3>
+  );
+}
+
+/*
+ * What the contents section says about how much is established. The wording
+ * never implies more than the data holds: "listed" means the supplier's own
+ * listing itemizes the contents, "partial" that only the items shown are
+ * established, "unconfirmed" that nothing about the contents is.
+ */
+const CONTENTS_STATUS_NOTE: Record<ContentsStatus, string> = {
+  listed: "Contents as itemized in the supplier's listing. Anything not listed here is not confirmed.",
+  partial: "Only the items listed here are confirmed for this listing. Anything not listed is not confirmed, so ask us before you order.",
+  unconfirmed: "Package contents have not been confirmed for this listing. Ask us what is included before you order.",
+};
+
+function PackageContentsBlocks({ contents }: { contents?: PackageContents }) {
+  const { t } = useTranslation();
+  if (!contents) return null;
+
+  const lists: { title: string; items?: string[] }[] = [
+    { title: t("notIncludedTitle"), items: contents.notIncluded },
+    { title: t("requiredSeparatelyTitle"), items: contents.requiredSeparately },
+    { title: t("optionalUpgradesTitle"), items: contents.optionalUpgrades },
+    { title: t("vehicleRequirementsTitle"), items: contents.vehicleRequirements },
+  ];
+  const checklist = contents.checklist ? REQUIREMENTS_CHECKLISTS[contents.checklist] : undefined;
+
+  return (
+    <>
+      <p className="rounded-lg border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-[13px] leading-relaxed text-neutral-700">
+        <TranslatedText as="span">{CONTENTS_STATUS_NOTE[contents.status]}</TranslatedText>
+      </p>
+      {lists.map((list) =>
+        list.items && list.items.length > 0 ? (
+          <div key={list.title}>
+            <SubHeading>{list.title}</SubHeading>
+            <TermList
+              items={list.items.map((item) => (
+                <TranslatedText key={item} as="span">
+                  {item}
+                </TranslatedText>
+              ))}
+            />
+          </div>
+        ) : null
+      )}
+      {checklist ? (
+        <details className="group rounded-lg border border-neutral-200 bg-white">
+          <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3.5 py-2.5 text-sm font-semibold text-neutral-900 [&::-webkit-details-marker]:hidden">
+            <TranslatedText as="span">{checklist.title}</TranslatedText>
+            <span aria-hidden="true" className="text-neutral-500 transition group-open:rotate-180">
+              ▾
+            </span>
+          </summary>
+          <div className="border-t border-neutral-200 px-3.5 py-3">
+            <p className="mb-3 text-xs leading-relaxed text-neutral-600">
+              <TranslatedText as="span">{CHECKLIST_DISCLAIMER}</TranslatedText>
+            </p>
+            <TermList
+              items={checklist.items.map((item) => (
+                <TranslatedText key={item} as="span">
+                  {item}
+                </TranslatedText>
+              ))}
+            />
+          </div>
+        </details>
+      ) : null}
+    </>
   );
 }
 
@@ -184,6 +260,7 @@ export default function ProductDetailsSections({
   specRows,
   features,
   included,
+  contents,
   weight,
   descriptionBody,
   fitment,
@@ -202,13 +279,14 @@ export default function ProductDetailsSections({
     ...(weight ? [{ label: t("weightLabel"), value: <TranslatedText as="span">{weight}</TranslatedText> }] : []),
   ];
   const hasIncluded = Boolean(included && included.length > 0);
+  const hasContents = Boolean(contents);
 
   /*
    * Specifications lead because they are facts about this exact part. Most
    * descriptions in the catalog are imported copy; a buyer comparing parts
    * needs the rows first and the prose after.
    */
-  if (rows.length > 0 || features || hasIncluded) {
+  if (rows.length > 0 || features || hasIncluded || hasContents) {
     tabs.push({
       id: "specifications",
       label: t("specificationsTitle"),
@@ -227,6 +305,7 @@ export default function ProductDetailsSections({
               />
             </div>
           ) : null}
+          <PackageContentsBlocks contents={contents} />
           {features ? (
             <div>
               <SubHeading>{t("featuresTitle")}</SubHeading>
