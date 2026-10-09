@@ -174,9 +174,24 @@ Flagged: the 2000-2002 page describes both a ProForce 3D and a standard ProForce
 
 Each page shows one part number for 2WD and 4WD. Flagged: the TowMaster and TorqueMaster pages list an electronic line pressure controller among the features but do not clearly say it is included (the Roadmaster pages do list it), so it is a "confirm" item on those two and not claimed. Not updated: #2791 (TowMaster 2011-2016, 1064504SS) and #2760 (TorqueMaster 2017-2019, 1064514BM), whose own product pages were not found. Core ($1,200), warranty and the 24/36-month figures are not copied.
 
+Roadmaster 10R80, 6L80, 66RFE and E4OD packages (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2752, #4179 | 1064624SS F-150 5.0L V8 4WD; 1064622SS 2WD (named in the page's image text) | `roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-2018-2020` |
+| #2715 | 1064614SS F-150 V6 4WD | `roadmaster-ford-10r80-transmission-converter-package-f-150-2-7l-3-5l-v6-2018-2020` |
+| #2716, #4112 | 1064604SS F-150 3.0L Power Stroke 2018-2020; 2WD sibling 1064602SS | `roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2018-2020` |
+| #2712, #4109 | 1064694SS 2017 F-150 (park-by-wire); 1064692SS conventional shifter (named in the FAQ) | `roadmaster-transmission-converter-package-10r80-ford-f150-2-7l-3-5l-ecoboost-raptor-2017` |
+| #2713 | 1064674SS 2021-2024 F-150/Expedition/Raptor | `roadmaster-transmission-converter-package-10r80-ecoboost-f150-3-5l-2-7l-2021-2024-expedition-navigator-raptor-3-5l-2021-2024-2wd-2022-2024-4wd` |
+| #2710, #4108 | 1064844SS 6L80 Silverado/Sierra 1500; 1064842SS 2WD sibling | `roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-2021` |
+| #2706, #4070 | 1064914SS 66RFE Ram HEMI; 1064912SS 2WD sibling | `roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4l-hemi-2012-2018` |
+| #2758, #4190 | 1064074SS E4OD 7.3L; 1064072SS 2WD sibling (image text only) | `roadmaster-transmission-converter-package-e4od-ford-f250-f350-7-3l-power-stroke-1995-1997` |
+
+Conflicts on BD's own pages, stated as "confirm" or left out: installation time (11 h 30 min in the specification vs about 10-13 h in the FAQ) on the 10R80 pages; tuning (a Ford scanner relearn in the notes vs "no tuning needed" in the FAQ) on the V8 and V6 pages; core deposit ($1,500 banner vs $2,750 in the V6 FAQ, not copied). The 10R80 pages' claim of about 30% more line pressure appears only in a FAQ, not in the feature list, so it is not claimed. #4111 (1064612SS) is not updated because the V6 page lists it as V6 2WD in one place and says the package is not for 2WD in another. Not fetched: Transit #2707, 2018-2021 Expedition #2714, 2021 3.0L PSD #2717/#4113.
+
 L5P (#2210, #2211, #4048, #4052): no individual product page could be found (only collection pages and a blog post, which disagree on price and give no itemized contents), so nothing was applied. Open: locate the L5P product pages or ask BD.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 30: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+Not yet researched: the remaining BD transmission-only and package listings (about 15: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 

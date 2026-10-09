@@ -289,6 +289,45 @@ const BD_6R140_ROADMASTER = [
   "ProForce torque converter (included): dual-surface clutch assembly, machined steel reaction ring, furnace-brazed pump and turbine fins, fully remanufactured",
 ];
 
+const BD_10R80_BASE = [
+  "BD ProForce torque converter with new friction material (included, remanufactured)",
+  "Revised CDF drum with a retaining feature, to prevent the sleeve failure common on the OEM unit",
+  "New OEM clutches and steels",
+  "Deep sump pan adding 2 qt of fluid capacity, with a drain plug that accepts an optional temperature sensor",
+];
+
+const BD_10R80_SHELL = [
+  ...BD_10R80_BASE,
+  "Anodized reaction shell for wear resistance",
+];
+
+const BD_6L80 = [
+  "Brand-new ProForce torque converter with a billet cover (included)",
+  "Machined bellhousing and pump surface",
+  "New pressure regulator valve, plus new clutch select and TCC regulator valves",
+  "Updated GM forward piston and molded pistons",
+  "Cast aluminum oil pan adding 2 qt of fluid capacity",
+  "New OEM clutches and steels",
+  "New TEHCM pressure switch seals and discs, and a cleaned and tested TEHCM unit",
+];
+
+const BD_66RFE_ROADMASTER = [
+  "Upgraded valve body with a billet steel-sleeved SSV bore and a gasketed separator plate",
+  "New frictions and steels",
+  "Line pressure booster kit (150 psi)",
+  "Deep sump pan adding 2 qt of fluid capacity",
+  "Billet spring retainer",
+  "BD ProForce torque converter (included): fully remanufactured with new seals, bearings, bushings and O-rings, and thicker lock-up friction material",
+];
+
+const BD_E4OD_ROADMASTER = [
+  "Valve body modified to raise clutch pack torque capacity and converter charge pressure",
+  "Deep aluminum pan adding 6 qt of fluid capacity",
+  "Stock clutch counts",
+  "Billet ProForce torque converter (included)",
+  "Dyno tested",
+];
+
 const BD_ALLISON_ROADMASTER_LB7 = [
   "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
   "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
@@ -1675,6 +1714,258 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "roadmaster-6r140-2wd-4wd-transmission-converter-package-ford-6-7l-power-stroke-2017-2019"
+    ),
+  },
+
+  // BD Roadmaster packages (10R80, 6L80, 66RFE, E4OD), researched 2026-10-09
+  // (catalog-batch-5). Part numbers match their page, or the page's FAQ/notes
+  // name the sibling's number. Not updated: #2714, #2707, #2717, #4113 (pages
+  // not fetched) and #4111 (the V6 page contradicts itself on 2WD).
+  2752: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_BASE,
+    installationRequirements: [
+      "BD's specification lists an installation time of 11 hours 30 minutes; its FAQ gives a different figure, so confirm with BD",
+    ],
+    programmingRequirements: [
+      "BD's notes call for a Ford scanner (or equivalent) to update the TCM with the new solenoid code and perform a relearn, which it calls very critical; its FAQ says no custom tuning is needed, so confirm with BD",
+    ],
+    vehicleRequirements: [
+      "Application: 2018-2020 Ford F-150 5.0L V8, 4WD",
+      "BD states it does not fit Raptor or Roush models",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-2018-2020"
+    ),
+  },
+  4179: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_BASE,
+    installationRequirements: [
+      "BD's specification lists an installation time of 11 hours 30 minutes; its FAQ gives a different figure, so confirm with BD",
+    ],
+    programmingRequirements: [
+      "BD's notes call for a Ford scanner (or equivalent) to update the TCM with the new solenoid code and perform a relearn, which it calls very critical; its FAQ says no custom tuning is needed, so confirm with BD",
+    ],
+    vehicleRequirements: [
+      "Application: 2018-2020 Ford F-150 5.0L V8, 2WD. The BD page names this part number only in its image text",
+      "BD states it does not fit Raptor or Roush models",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-2018-2020"
+    ),
+  },
+  2715: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_BASE,
+    installationRequirements: [
+      "BD's specification lists an installation time of 11 hours 30 minutes; its FAQ gives a different figure, so confirm with BD",
+    ],
+    programmingRequirements: [
+      "BD's notes call for a Ford scanner (or equivalent) to update the TCM with the new solenoid code and perform a relearn, which it calls very critical; its FAQ says no custom tuning is needed, so confirm with BD",
+    ],
+    vehicleRequirements: [
+      "Application: 2018-2020 Ford F-150 2.7L/3.5L EcoBoost V6, 4WD; also listed for the 2018-2021 Expedition 3.5L with a conventional shifter",
+      "BD states it does not fit an Expedition/Navigator with an electronic shift knob, or Raptor or Roush models",
+      "The page's FAQ also says it is not for 2WD models or the 5.0L V8",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-ford-10r80-transmission-converter-package-f-150-2-7l-3-5l-v6-2018-2020"
+    ),
+  },
+  2716: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_BASE,
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+    ],
+    vehicleRequirements: [
+      "Application: 2018-2020 Ford F-150 3.0L Power Stroke diesel with the 10R80, 2WD and 4WD. The BD page shows one product part number for both drivetrains, so this one is not displayed there",
+      "The page states no tuning or programming requirement and no exclusions beyond the application; confirm with BD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2018-2020"
+    ),
+  },
+  4112: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_BASE,
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+    ],
+    vehicleRequirements: [
+      "Application: 2018-2020 Ford F-150 3.0L Power Stroke diesel with the 10R80, 2WD. The BD page shows one product part number for both drivetrains, so this one is not displayed there",
+      "The page states no tuning or programming requirement and no exclusions beyond the application; confirm with BD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2018-2020"
+    ),
+  },
+  2712: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_SHELL,
+    installationRequirements: [
+      "BD's specification lists an installation time of 11 hours 30 minutes; its FAQ says around 10 hours, so confirm with BD",
+    ],
+    programmingRequirements: [
+      "A factory adaptive-learning relearn must be performed after installation; BD's FAQ says no custom ECU or transmission tuning is required",
+    ],
+    vehicleRequirements: [
+      "Application: 2017 Ford F-150 2.7L/3.5L EcoBoost and Raptor with the 10-speed, with the park-by-wire (dial or button) shifter",
+      "BD describes it as suited to stock or mildly modified trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-10r80-ford-f150-2-7l-3-5l-ecoboost-raptor-2017"
+    ),
+  },
+  4109: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_SHELL,
+    installationRequirements: [
+      "BD's specification lists an installation time of 11 hours 30 minutes; its FAQ says around 10 hours, so confirm with BD",
+    ],
+    programmingRequirements: [
+      "A factory adaptive-learning relearn must be performed after installation; BD's FAQ says no custom ECU or transmission tuning is required",
+    ],
+    vehicleRequirements: [
+      "Application: 2017 Ford F-150 2.7L/3.5L EcoBoost and Raptor with the 10-speed, with a conventional column/console shifter. BD's FAQ names this part number for conventional shifters; the page's own part number is for the park-by-wire shifter",
+      "BD describes it as suited to stock or mildly modified trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-10r80-ford-f150-2-7l-3-5l-ecoboost-raptor-2017"
+    ),
+  },
+  2713: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_10R80_SHELL,
+    installationRequirements: [
+      "BD lists an installation time of 11 hours 30 minutes",
+    ],
+    vehicleRequirements: [
+      "Application: 2021-2024 Ford F-150 EcoBoost 3.5L/2.7L, 2022-2024 Expedition/Navigator 3.5L and 2021-2024 Raptor 3.5L, with the park-by-wire (fold-away) shifter. 2WD and 4WD variants share one page and one product part number",
+      "BD states it does not fit hybrid models or vehicles with a conventional shifter",
+      "The page states no tuning or programming requirement; confirm with BD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-10r80-ecoboost-f150-3-5l-2-7l-2021-2024-expedition-navigator-raptor-3-5l-2021-2024-2wd-2022-2024-4wd"
+    ),
+  },
+  2710: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_6L80,
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+    ],
+    programmingRequirements: [
+      "A GM MDI2 (or equivalent J2534 pass-thru) scan tool is required to update the TCM calibration file and start a relearn, which BD says to do before test driving; the page lists HP Tuners as an alternative",
+    ],
+    vehicleRequirements: [
+      "Application: 2014-2021 Chevrolet Silverado / GMC Sierra 1500 with the 6L80, 4WD. The BD page shows one product part number for both drivetrains, so this one is not displayed there",
+      "BD states it does NOT fit: 2019-2021 Silverado/Sierra with the 5.3L VIN D; 2016-2018 Silverado High Country; 2016-2018 with the 5.3L VIN R; 2016-2018 Sierra Denali or SLT",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-2021"
+    ),
+  },
+  4108: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_6L80,
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+    ],
+    programmingRequirements: [
+      "A GM MDI2 (or equivalent J2534 pass-thru) scan tool is required to update the TCM calibration file and start a relearn, which BD says to do before test driving; the page lists HP Tuners as an alternative",
+    ],
+    vehicleRequirements: [
+      "Application: 2014-2021 Chevrolet Silverado / GMC Sierra 1500 with the 6L80, 2WD. The BD page shows one product part number for both drivetrains, so this one is not displayed there",
+      "BD states it does NOT fit: 2019-2021 Silverado/Sierra with the 5.3L VIN D; 2016-2018 Silverado High Country; 2016-2018 with the 5.3L VIN R; 2016-2018 Sierra Denali or SLT",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-2021"
+    ),
+  },
+  2706: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_66RFE_ROADMASTER,
+    installationRequirements: [
+      "BD lists an installation time of 6 hours 30 minutes",
+    ],
+    vehicleRequirements: [
+      "Application: 2012-2018 Ram 2500/3500 5.7L/6.4L HEMI with the 66RFE, 4WD. The BD page shows one product part number for both drivetrains, so this one is not displayed there",
+      "The page states no tuning or programming requirement and no exclusions; confirm with BD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4l-hemi-2012-2018"
+    ),
+  },
+  4070: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_66RFE_ROADMASTER,
+    installationRequirements: [
+      "BD lists an installation time of 6 hours 30 minutes",
+    ],
+    vehicleRequirements: [
+      "Application: 2012-2018 Ram 2500/3500 5.7L/6.4L HEMI with the 66RFE, 2WD. The BD page shows one product part number for both drivetrains, so this one is not displayed there",
+      "The page states no tuning or programming requirement and no exclusions; confirm with BD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4l-hemi-2012-2018"
+    ),
+  },
+  2758: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_E4OD_ROADMASTER,
+    installationRequirements: [
+      "BD lists an installation time of 7 hours",
+    ],
+    vehicleRequirements: [
+      "Application: 1995-1997 Ford F-250/F-350 7.3L Power Stroke with the E4OD, 4WD. The BD page shows one product part number for both drivetrains, so this one is not displayed there",
+      "BD describes it as designed for stock or mildly modified Super Duty trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-e4od-ford-f250-f350-7-3l-power-stroke-1995-1997"
+    ),
+  },
+  4190: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_E4OD_ROADMASTER,
+    installationRequirements: [
+      "BD lists an installation time of 7 hours",
+    ],
+    vehicleRequirements: [
+      "Application: 1995-1997 Ford F-250/F-350 7.3L Power Stroke with the E4OD, 2WD. The BD page names this part number only in its image text",
+      "BD describes it as designed for stock or mildly modified Super Duty trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-e4od-ford-f250-f350-7-3l-power-stroke-1995-1997"
     ),
   },
 
