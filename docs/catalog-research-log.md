@@ -119,7 +119,17 @@ The converter is included in these packages. The pages state no break-in or tuni
 
 LLY: #2781 (1064724SS, TowMaster 5-speed 4WD) and its 2WD sibling #2784 (1064722SS), page `towmaster-chevy-allison-1000-transmission-converter-package-2004-5-2006-lly-5-speed-4wd`. The page does not itemize the package beyond the unit's features and the converter, and no clutch counts, so none are claimed.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 58: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+LBZ 2006-2007 (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2777, #2779 | 1064734SS TowMaster 4WD; 2WD sibling 1064732SS | `towmaster-chevy-allison-1000-transmission-converter-package-2006-2007-lbz-6-speed-4wd` |
+| #2700, #4050 | 1064864SS Roadmaster; 2WD sibling 1064862SS | `roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lbz-duramax-2006-2007` |
+| #2780, #2778 | 1064732BM TorqueMaster 2WD; 4WD sibling 1064734BM | `torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2006-2007-lbz-6-speed-2wd` |
+
+The TowMaster page says it is a matched transmission and converter set without itemizing the converter; the converter features it lists are attached on that basis. The TorqueMaster page gives a 7-hour install against 9 hours on the TowMaster; both are stated as the page says. A search summary claimed 75% more C3 clutches on the TorqueMaster; the fetched page says 50%, which is what is used. The Roadmaster page does not mention revised oil circuits, so none is claimed.
+
+Not yet researched: the remaining BD transmission-only and package listings (about 52: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 
