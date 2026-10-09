@@ -84,6 +84,34 @@ const atsSource = [
   },
 ];
 
+/**
+ * BD Precision Plus Ready Run engines: the items each page states under "All
+ * engines also include". The 6.7L pages add EGR gaskets and an upgraded grid
+ * heater (BD Killer Grid Heater kit), written out on those listings. Each page
+ * describes a new valve cover in its text but not in its component list, so a
+ * valve cover is not claimed.
+ */
+const BD_READY_RUN_COMMON = [
+  "Fluidampr harmonic balancer",
+  "Turbo oil feed line and drain tube",
+  "New water pump and thermostat",
+  "New coolant temperature sensor",
+  "New Bosch fuel rail with pressure sensor and relief valve",
+  "New high-pressure fuel lines and injector feed tubes",
+  "New oil pressure switch/sensor",
+  "Dipstick and tube",
+];
+
+const BD_6_7_EXTRAS = [
+  "EGR gaskets",
+  "Grid heater upgraded with the BD Killer Grid Heater kit",
+];
+
+const BD_NO_CA_EO = "The manufacturer states this product does not require an EO in California";
+
+const BD_LONG_BLOCK_LIMIT =
+  "Designed for demanding work applications; the manufacturer does not recommend high-horsepower tuning";
+
 export const packageContents: Record<number, PackageContents> = {
   // #2114 Ford 7.3L Godzilla Supercharged Engine Package (Brand New).
   // The four items below were confirmed for this listing by the owner; the
@@ -271,6 +299,153 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "heavy-hauler-ready-run-engine-dodge-ram-2500-3500-6-7l-cummins-2013-2018"
+    ),
+  },
+
+  // BD Precision Plus Ready Run engines (#3950, #3909, #3948, #3949) and
+  // Precision Plus long blocks (#3960, #3947, #3952). Researched 2026-10-09
+  // from each part's own BD Diesel page; every page's part number matched the
+  // listing's. The 2006-2007 and 6.7L pages differ from one another and are
+  // written out separately.
+  3950: {
+    status: "listed",
+    checklist: "engine",
+    included: [
+      "Long block assembled with ARP 2000 studs; cylinder head with heavy-duty valve seats and a CNC valve job",
+      "BD two-piece high-silicon ductile-iron exhaust manifold",
+      "BD turbocharger, brand new and VSR high-speed balanced",
+      "BD high-pressure fuel system: remanufactured CP3 pump with a new metering unit, BD OEM-fit fuel lines",
+      ...BD_READY_RUN_COMMON,
+    ],
+    vehicleRequirements: [
+      "Application: 2004.5-2005 Dodge/Ram 2500 and 3500 (5.9L Cummins)",
+      BD_NO_CA_EO,
+    ],
+    installationRequirements: HEAVY_HAULER_INSTALL,
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "engine-package-dodge-ram-2500-3500-5-9l-cummins-2004-5-2007"
+    ),
+  },
+  3909: {
+    status: "listed",
+    checklist: "engine",
+    included: [
+      "Long block assembled with ARP 2000 studs",
+      "BD two-piece high-silicon ductile-iron exhaust manifold",
+      "BD turbocharger, brand new and VSR high-speed balanced",
+      "BD high-pressure fuel system: remanufactured CP3 pump with a new metering unit, BD OEM-fit fuel lines, high-quality gaskets",
+      ...BD_READY_RUN_COMMON,
+    ],
+    vehicleRequirements: [
+      "Application: 2006-2007 Dodge/Ram 2500 and 3500 (5.9L Cummins)",
+      BD_NO_CA_EO,
+    ],
+    installationRequirements: HEAVY_HAULER_INSTALL,
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "precision-plus-ready-run-engine-dodge-ram-2500-3500-5-9l-cummins-2006-2007"
+    ),
+  },
+  3948: {
+    status: "listed",
+    checklist: "engine",
+    included: [
+      "Long block: CNC blueprinted, bored, honed and deck surfaced, with heavy-duty valve seats, a CNC valve job and ARP 2000 studs",
+      "BD two-piece high-silicon ductile-iron exhaust manifold with Grade 10.9 black-oxide bolts and spacers, pre-drilled for pyrometer probes",
+      "BD turbocharger, fully remanufactured and VSR high-speed balanced, actuator pre-programmed for drop-in functionality",
+      "BD high-pressure fuel system: remanufactured CP3 pump with a new metering unit, BD OEM-fit fuel lines, high-quality gaskets",
+      ...BD_READY_RUN_COMMON,
+      ...BD_6_7_EXTRAS,
+    ],
+    vehicleRequirements: [
+      "Application: 2013-2018 Dodge/Ram 2500 and 3500 (6.7L Cummins)",
+      BD_NO_CA_EO,
+    ],
+    installationRequirements: HEAVY_HAULER_INSTALL,
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "engine-package-dodge-ram-2500-3500-6-7l-cummins-2013-2018"
+    ),
+  },
+  3949: {
+    status: "listed",
+    checklist: "engine",
+    included: [
+      "Long block: CNC blueprinted, bored, honed and deck surfaced, with heavy-duty valve seats and ARP 2000 studs",
+      "BD two-piece high-silicon ductile-iron exhaust manifold, pre-drilled for pyrometer probes",
+      "BD turbocharger, fully remanufactured and VSR high-speed balanced",
+      "BD high-pressure fuel system: remanufactured CP3 pump with a new metering unit, BD OEM-fit fuel lines",
+      ...BD_READY_RUN_COMMON,
+      ...BD_6_7_EXTRAS,
+    ],
+    vehicleRequirements: [
+      "Application: 2007.5-2012 Dodge/Ram 2500 and 3500 (6.7L Cummins)",
+      BD_NO_CA_EO,
+    ],
+    installationRequirements: HEAVY_HAULER_INSTALL,
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "engine-package-dodge-ram-2500-3500-6-7l-cummins-2007-5-2012"
+    ),
+  },
+  3960: {
+    status: "listed",
+    checklist: "engine",
+    included: [
+      "Remanufactured block, crankshaft, rods, pistons, camshaft and D&J Precision Plus reman cylinder head (HD bronze valve guides, extra-large seats, CNC valve job)",
+      "New pistons, bearings, tappets, oil cooler, oil pump and crankshaft seals; stock camshaft and connecting rods restored to OEM specifications",
+      "Oil pan and front timing cover",
+      "Pre-lubed break-in oil, painted black, filter included",
+    ],
+    vehicleRequirements: [
+      "Application: 2013-2018 Dodge/Ram 6.7L Cummins. The manufacturer's description says 2007.5-2018 while its title and part number say 2013-2018, so confirm your year with us before ordering",
+      BD_NO_CA_EO,
+      BD_LONG_BLOCK_LIMIT,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2013-2018"
+    ),
+  },
+  3947: {
+    status: "listed",
+    checklist: "engine",
+    included: [
+      "Remanufactured cylinder head with extra-large valve seats and a high-precision CNC valve job, pressure tested",
+      "Upgraded internal components",
+      "Year-specific front covers and timing gear housings",
+      "Oil pan, front cover and pre-lubed break-in oil",
+      "Solid flat tappets and adjustable rockers in place of the hydraulic roller lifters",
+    ],
+    vehicleRequirements: [
+      "Application: 2021-2024 Dodge/Ram 6.7L Cummins",
+      BD_NO_CA_EO,
+      BD_LONG_BLOCK_LIMIT,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2021-2024"
+    ),
+  },
+  3952: {
+    status: "listed",
+    checklist: "engine",
+    included: [
+      "Remanufactured cylinder head with extra-large valve seats and a high-precision CNC valve job, pressure tested",
+      "Fully blueprinted, bored, honed and deck-surfaced block; upgraded internal components",
+      "Year-specific front covers and timing gear housings",
+      "Oil pan, front cover and pre-lubed break-in oil",
+      "Solid flat tappets and adjustable rockers in place of the hydraulic roller lifters",
+    ],
+    vehicleRequirements: [
+      "Application: 2019-2020 Dodge/Ram 6.7L Cummins (the front covers and timing gear housings are year-specific)",
+      BD_NO_CA_EO,
+      BD_LONG_BLOCK_LIMIT,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "precision-plus-long-block-engine-dodge-ram-6-7l-cummins-2019-2020"
     ),
   },
 
