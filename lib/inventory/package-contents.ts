@@ -167,6 +167,15 @@ const BD_ALLISON_TOWMASTER_CONVERTER = [
   "Torque converter (included, sold as a matched set): enhanced stall for street and towing, cast aluminum torque-multiplying stators, stamped-forged steel front cover, furnace-brazed fins, up to three times the lock-up clutch material",
 ];
 
+/** LLY page: no itemized clutch counts; the package contents beyond the unit and converter are not itemized. */
+const BD_ALLISON_LLY = [
+  "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
+  "Revised oil circuits for longer clutch life",
+  "Valve body modifications that raise clutch torque capacity and help prevent dry starts",
+  "New converter lock-up valve and new A and B trim valves",
+  "Torque converter with a billet cover (included in the package)",
+];
+
 const BD_ALLISON_ROADMASTER_LB7 = [
   "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
   "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
@@ -1128,6 +1137,33 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lb7-duramax-2001-2004"
+    ),
+  },
+
+  // BD TowMaster Allison 1000 package, LLY 5-speed (1064724SS), researched
+  // 2026-10-09. #2784 is its 2WD sibling; the page shows one part number.
+  2781: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_LLY,
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: ["Application: 2004.5-2006 Chevy/GMC 6.6L LLY Duramax with the 5-speed Allison 1000, 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-converter-package-2004-5-2006-lly-5-speed-4wd"
+    ),
+  },
+  2784: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_LLY,
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: [
+      "Application: 2004.5-2006 Chevy/GMC 6.6L LLY Duramax with the 5-speed Allison 1000, 2WD. The BD page lists the 4WD part number only, so the 2WD part number is not displayed there",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-1000-transmission-converter-package-2004-5-2006-lly-5-speed-4wd"
     ),
   },
 

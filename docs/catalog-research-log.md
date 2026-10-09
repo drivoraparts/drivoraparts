@@ -117,7 +117,9 @@ Left out or flagged:
 
 The converter is included in these packages. The pages state no break-in or tuning requirement, so none is claimed. "Triple Torque" is not defined on the TorqueMaster page beyond the triple-disc converter, so only that is stated. Warranty and core ($2,000-$2,100) and price differ from the listings' own fields and are not copied; the pages also mark the 4WD variant "sold out or unavailable", which we do not carry over. Not applied: the LMM TorqueMaster (#2772/#2775), LLY, LBZ, LML and L5P packages, because their pages were not fetched. Open: BD's 2WD part numbers.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 60: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+LLY: #2781 (1064724SS, TowMaster 5-speed 4WD) and its 2WD sibling #2784 (1064722SS), page `towmaster-chevy-allison-1000-transmission-converter-package-2004-5-2006-lly-5-speed-4wd`. The page does not itemize the package beyond the unit's features and the converter, and no clutch counts, so none are claimed.
+
+Not yet researched: the remaining BD transmission-only and package listings (about 58: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 
