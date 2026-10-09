@@ -253,6 +253,42 @@ const BD_47RE_PKG_OLD = ["Billet band lever and billet barrel strut"];
 const BD_47RE_PKG_CONVERTER =
   "Torque converter (included, sold as a matched set dyno tested with the transmission): enhanced stall for street and towing, cast aluminum torque-multiplying stators, stamp-forged steel front cover, furnace-brazed fins, up to three times the lock-up clutch material";
 
+const BD_6R140_INSTALL = "BD lists an installation time of 12 hours";
+
+const BD_6R140_SCANNER =
+  "A Ford scanner is required to update the TCM with the new solenoid code and perform a relearn, which BD calls very critical for proper operation";
+
+const BD_6R140_2WD =
+  "On 2WD applications the yoke adapter and rear mount bracket must be transferred during installation";
+
+const BD_6R140_CONVERTER =
+  "Torque converter (included): dual-surface clutch assembly, machined steel reaction ring in place of the stock stamping, furnace-brazed pump and turbine fins, fully remanufactured";
+
+const BD_6R140_TOWMASTER = [
+  "Brand-new valve body",
+  "Custom BD patented pressure plates that add clutch count",
+  "Increased clutch counts: forward 6, direct 6, intermediate 8, overdrive 8, low/reverse 5",
+  "BD heavy-duty pan with extra fluid capacity",
+  BD_6R140_CONVERTER,
+];
+
+const BD_6R140_TORQUEMASTER = [
+  "Brand-new valve body",
+  "Billet intermediate shaft and an upgraded input shaft, TIG welded to prevent the OEM weld failure",
+  "Custom BD patented pressure plates that add clutch count",
+  "Increased clutch counts: forward 6, direct 6, intermediate 8, overdrive 8, low/reverse 5",
+  "BD heavy-duty pan with extra fluid capacity",
+  "Torque converter (included, sold as a matched set dyno tested with the transmission): captured-clutch design for heavy towing or higher horsepower, four-surface clutch assembly doubling the OEM friction area, more steel plates, 23% larger piston area, billet bearing hub, piston and clutch retainer, stamped forged one-piece cover, furnace-brazed pump and turbine fins",
+];
+
+const BD_6R140_ROADMASTER = [
+  "Brand-new OEM valve body",
+  "BD deep sump pan",
+  "Stock clutch counts",
+  "BD pressure controller (up to 300 psi line pressure at wide-open throttle; active only above 15 psi of boost)",
+  "ProForce torque converter (included): dual-surface clutch assembly, machined steel reaction ring, furnace-brazed pump and turbine fins, fully remanufactured",
+];
+
 const BD_ALLISON_ROADMASTER_LB7 = [
   "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
   "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
@@ -1568,6 +1604,77 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "towmaster-dodge-47re-transmission-converter-package-1997-1999-2wd-w-speed-sensor-only-no-speedo-head"
+    ),
+  },
+
+  // BD 6R140 Transmission & Converter Packages, researched 2026-10-09
+  // (catalog-batch-5). Each part number matches its page. The 2011-2016
+  // TowMaster (#2791) and the 2017-2019 TorqueMaster (#2760) have pages that
+  // were not found, so they are not updated.
+  2790: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_6R140_TOWMASTER,
+    installationRequirements: [BD_6R140_INSTALL],
+    programmingRequirements: [BD_6R140_SCANNER],
+    vehicleRequirements: [
+      "Application: 2017-2019 Ford 6.7L Power Stroke with the 6R140, 2WD and 4WD (the page lists one part number for both)",
+      "The page lists an electronic line pressure controller (up to 300 psi) among the features but does not clearly say it is included, so confirm before ordering",
+      BD_6R140_2WD,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ford-6r140-transmission-converter-package-2017-2019-6-7l-power-stroke-2wd-4wd"
+    ),
+  },
+  2761: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_6R140_TORQUEMASTER,
+    installationRequirements: [BD_6R140_INSTALL],
+    programmingRequirements: [BD_6R140_SCANNER],
+    vehicleRequirements: [
+      "Application: 2011-2016 Ford 6.7L Power Stroke with the 6R140, 2WD and 4WD (the page lists one part number for both)",
+      "BD states it will not fit early 2011 trucks with an 8-bolt flexplate (a 6-bolt flexplate upgrade is needed)",
+      "The page lists an electronic line pressure controller (up to 300 psi) among the features but does not clearly say it is included, so confirm before ordering",
+      BD_6R140_2WD,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-ford-6r140-transmission-converter-package-6-7l-power-stroke-2011-2016-2wd-4wd"
+    ),
+  },
+  2206: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_6R140_ROADMASTER,
+    installationRequirements: [BD_6R140_INSTALL],
+    programmingRequirements: [BD_6R140_SCANNER],
+    vehicleRequirements: [
+      "Application: 2011-2016 Ford 6.7L Power Stroke with the 6R140, 2WD and 4WD (the page lists one part number for both)",
+      "Early 2011 trucks (roughly before January 2012 build) need a 6-bolt flexplate; BD references part 1041245",
+      "BD describes it as its base transmission for stock, unmodified trucks seeking reliability and longevity",
+      BD_6R140_2WD,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-6r140-4wd-transmission-converter-package-ford-6-7l-power-stroke-2011-2016"
+    ),
+  },
+  2207: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_6R140_ROADMASTER,
+    installationRequirements: [BD_6R140_INSTALL],
+    programmingRequirements: [BD_6R140_SCANNER],
+    vehicleRequirements: [
+      "Application: 2017-2019 Ford 6.7L Power Stroke with the 6R140, 2WD and 4WD (the page lists one part number for both)",
+      "BD describes it as its base transmission for stock, unmodified trucks seeking reliability and longevity",
+      BD_6R140_2WD,
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-6r140-2wd-4wd-transmission-converter-package-ford-6-7l-power-stroke-2017-2019"
     ),
   },
 

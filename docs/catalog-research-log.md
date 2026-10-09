@@ -163,9 +163,20 @@ Not updated: the TapShifter SST variants (#2727, #4126), because the page shows 
 
 Flagged: the 2000-2002 page describes both a ProForce 3D and a standard ProForce converter without saying which ships, so the converter is a "confirm" item there. The auxiliary filter kit is listed among features on every page except 1996-1997, but none says it is included; it is stated as "confirm" rather than included. The "upgraded 48RE sunshell" named on each page is left out, as on the transmission-only 47RE units. Core ($2,500) and warranty are not copied. Open: BD's 2WD part number for the 2000-2002 page.
 
+6R140 packages (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2790 | 1064514SS TowMaster 2017-2019 | `towmaster-ford-6r140-transmission-converter-package-2017-2019-6-7l-power-stroke-2wd-4wd` |
+| #2207 | 1064534SS Roadmaster 2017-2019 | `roadmaster-6r140-2wd-4wd-transmission-converter-package-ford-6-7l-power-stroke-2017-2019` |
+| #2761 | 1064504BM TorqueMaster 2011-2016 | `torquemaster-ford-6r140-transmission-converter-package-6-7l-power-stroke-2011-2016-2wd-4wd` |
+| #2206 | 1064524SS Roadmaster 2011-2016 | `roadmaster-6r140-4wd-transmission-converter-package-ford-6-7l-power-stroke-2011-2016` |
+
+Each page shows one part number for 2WD and 4WD. Flagged: the TowMaster and TorqueMaster pages list an electronic line pressure controller among the features but do not clearly say it is included (the Roadmaster pages do list it), so it is a "confirm" item on those two and not claimed. Not updated: #2791 (TowMaster 2011-2016, 1064504SS) and #2760 (TorqueMaster 2017-2019, 1064514BM), whose own product pages were not found. Core ($1,200), warranty and the 24/36-month figures are not copied.
+
 L5P (#2210, #2211, #4048, #4052): no individual product page could be found (only collection pages and a blog post, which disagree on price and give no itemized contents), so nothing was applied. Open: locate the L5P product pages or ask BD.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 34: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+Not yet researched: the remaining BD transmission-only and package listings (about 30: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 
