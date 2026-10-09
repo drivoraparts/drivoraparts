@@ -129,7 +129,11 @@ LBZ 2006-2007 (checked 2026-10-09, pages under https://us.bddiesel.com/products/
 
 The TowMaster page says it is a matched transmission and converter set without itemizing the converter; the converter features it lists are attached on that basis. The TorqueMaster page gives a 7-hour install against 9 hours on the TowMaster; both are stated as the page says. A search summary claimed 75% more C3 clutches on the TorqueMaster; the fetched page says 50%, which is what is used. The Roadmaster page does not mention revised oil circuits, so none is claimed.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 52: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+LMM Roadmaster: #2699 (1064874SS), page `roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lmm-duramax-2007-5-2010`. The page's part number matched; it lists no separate 4WD/2WD numbers.
+
+L5P (#2210, #2211, #4048, #4052): no individual product page could be found (only collection pages and a blog post, which disagree on price and give no itemized contents), so nothing was applied. Open: locate the L5P product pages or ask BD.
+
+Not yet researched: the remaining BD transmission-only and package listings (about 51: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 

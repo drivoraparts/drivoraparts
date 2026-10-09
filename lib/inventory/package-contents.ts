@@ -1268,6 +1268,22 @@ export const packageContents: Record<number, PackageContents> = {
     ),
   },
 
+  // BD Roadmaster Allison 1000, LMM 2007.5-2010 (1064874SS), researched 2026-10-09.
+  2699: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_ROADMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 13 hours 12 minutes"],
+    vehicleRequirements: [
+      "Application: 2007.5-2010 Chevrolet Silverado / GMC Sierra 2500HD/3500HD 6.6L LMM Duramax, 4WD",
+      "BD describes it as designed for stock or mildly modified Duramax trucks",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lmm-duramax-2007-5-2010"
+    ),
+  },
+
   // #2115 Toyota 1UZ-FE Non-VVT-i Complete Swap Package (Used, inspected and
   // tested). Source: its "PACKAGE INCLUDES" list, its swap-package notice and
   // its 300 HP target notes.
