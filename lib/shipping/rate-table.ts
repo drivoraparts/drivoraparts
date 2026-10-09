@@ -317,14 +317,39 @@ export type ShippingQuote =
       subtotal: number;
     };
 
+/**
+ * Free-text country as typed at checkout, reduced to letters and single spaces
+ * so "U.S.A", "U.S.", "u s a", "United States (USA)" and "the United States"
+ * all compare equal. Dots and apostrophes vanish ("U.S." becomes "us"); any
+ * other punctuation becomes a space.
+ */
+export function normalizeCountryInput(country?: string | null): string {
+  return String(country ?? "")
+    .toLowerCase()
+    .replace(/[.'’]/g, "")
+    .replace(/[^a-z]+/g, " ")
+    .trim()
+    .replace(/^the /, "");
+}
+
 const COUNTRY_NAMES: Record<ShippingDestination, ReadonlySet<string>> = {
-  US: new Set(["us", "usa", "u.s.", "u.s.a.", "united states", "united states of america", "america"]),
+  US: new Set([
+    "us",
+    "usa",
+    "u s",
+    "u s a",
+    "united states",
+    "united states usa",
+    "united states of america",
+    "america",
+  ]),
   // Great Britain and Northern Ireland. The Channel Islands and the Isle of
   // Man are separate customs territories and are not covered by the UK rate.
   GB: new Set([
     "uk",
-    "u.k.",
+    "u k",
     "gb",
+    "gbr",
     "united kingdom",
     "united kingdom of great britain and northern ireland",
     "great britain",
@@ -339,7 +364,7 @@ const COUNTRY_NAMES: Record<ShippingDestination, ReadonlySet<string>> = {
 
 /** The destination with published rates for a country as typed at checkout. */
 export function shippingDestinationFor(country?: string | null): ShippingDestination | undefined {
-  const key = String(country ?? "").trim().toLowerCase();
+  const key = normalizeCountryInput(country);
   if (!key) return undefined;
   return SHIPPING_DESTINATIONS.find((code) => COUNTRY_NAMES[code].has(key));
 }

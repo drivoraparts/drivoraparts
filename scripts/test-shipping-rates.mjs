@@ -98,6 +98,17 @@ results.cases = {
   ukQty5: view(q([{ productId: 1, quantity: 5, price: 40 }], "United Kingdom")),
   auQty1: view(q([{ productId: 1, quantity: 1, price: 40 }], "Australia")),
   auQty2: view(q([{ productId: 1, quantity: 2, price: 40 }], "Australia")),
+  // How real customers type the country.
+  usDot: view(one(40, "U.S")),
+  usDotA: view(one(40, "U.S.A")),
+  usDots: view(one(40, "U.S.A.")),
+  usSpaced: view(one(40, "u s a")),
+  usThe: view(one(40, "The United States")),
+  usParen: view(one(40, "United States (USA)")),
+  usComma: view(one(40, "USA,")),
+  ukDot: view(one(40, "U.K")),
+  ukThe: view(one(40, "the UK")),
+  usTypo: view(one(40, "United State")),
   jersey: view(one(500, "Jersey")),
   newZealand: view(one(500, "New Zealand")),
 };
@@ -210,6 +221,8 @@ const expectCases = {
   auMixedFreight: "freight_rate_not_set", auMultibox: "freight_rate_not_set", auUnknownProduct: "freight_rate_not_set",
   nullCountry: "destination_unknown", spacesCountry: "destination_unknown", usPadded: 0,
   ukQty4: 33, ukQty5: 0, auQty1: 28, auQty2: 0,
+  usDot: 0, usDotA: 0, usDots: 0, usSpaced: 0, usThe: 0, usParen: 0, usComma: 0, ukDot: 33, ukThe: 33,
+  usTypo: "no_destination_rate",
   jersey: "no_destination_rate", newZealand: "no_destination_rate",
 };
 const expectDescribe = {
