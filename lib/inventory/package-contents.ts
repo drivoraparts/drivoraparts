@@ -236,6 +236,23 @@ const BD_5R110_ROADMASTER = [
   "BD ProForce torque converter (included) with a billet steel cover, enhanced stall stator and furnace-brazed turbine",
 ];
 
+const BD_47RE_PKG_BASE = [
+  "Upgraded valve body and governor solenoid",
+  "Upgraded governor pressure transducer (twice the stock burst pressure) with line pressure increased to 190-200 psi",
+  "Roller Torrington bearings in place of the stock thrust bushings",
+  "Clutch counts: overdrive 6, overdrive direct 10, forward 5, direct 6",
+  "High-temperature/energy Raybestos band",
+  "Drilled intermediate shaft",
+  "BD rigid aluminum heavy-duty pan with heat-dissipating fins and a magnetic drain plug, adding 2 qt of oil capacity",
+  "Cooler line case saver",
+  "Dyno tested",
+];
+
+const BD_47RE_PKG_OLD = ["Billet band lever and billet barrel strut"];
+
+const BD_47RE_PKG_CONVERTER =
+  "Torque converter (included, sold as a matched set dyno tested with the transmission): enhanced stall for street and towing, cast aluminum torque-multiplying stators, stamp-forged steel front cover, furnace-brazed fins, up to three times the lock-up clutch material";
+
 const BD_ALLISON_ROADMASTER_LB7 = [
   "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
   "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
@@ -1457,6 +1474,100 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "roadmaster-5r110-transmission-converter-package-ford-6-4l-power-stroke-f250-f350-2008-2010"
+    ),
+  },
+
+  // BD TowMaster 47RE Transmission & Converter Packages, researched
+  // 2026-10-09 (catalog-batch-5). Each part number matches its page. The
+  // pages also name an 'upgraded 48RE sunshell'; as on the transmission-only
+  // 47RE units it is left out rather than guessed at.
+  2730: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_47RE_PKG_BASE, "Modified manual valve for lube in all positions"],
+    optionalUpgrades: ["Billet input shaft (the page says it is available with this package; not confirmed as included)"],
+    installationRequirements: ["BD lists an installation time of 9 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 2000-2002 Dodge Ram 5.9L Cummins with the 47RE, 4WD (the page lists 4WD and 2WD variants)",
+      "The page describes both a ProForce 3D (triple-disc) converter and a standard ProForce converter and does not say which ships with this package; confirm the converter before ordering",
+      "The page lists a BD auxiliary full-flow filter kit among the package features without saying whether it is included, so confirm before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-transmission-converter-package-dodge-47re-2000-2002"
+    ),
+  },
+  4129: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_47RE_PKG_BASE, "Modified manual valve for lube in all positions"],
+    optionalUpgrades: ["Billet input shaft (the page says it is available with this package; not confirmed as included)"],
+    installationRequirements: ["BD lists an installation time of 9 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 2000-2002 Dodge Ram 5.9L Cummins with the 47RE, 2WD. The BD page lists one part number for the package, so this drivetrain's part number is not displayed there",
+      "The page describes both a ProForce 3D (triple-disc) converter and a standard ProForce converter and does not say which ships with this package; confirm the converter before ordering",
+      "The page lists a BD auxiliary full-flow filter kit among the package features without saying whether it is included, so confirm before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-transmission-converter-package-dodge-47re-2000-2002"
+    ),
+  },
+  2818: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_47RE_PKG_BASE, ...BD_47RE_PKG_OLD, BD_47RE_PKG_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 1998.5-1999 Dodge Ram 5.9L Cummins 24-valve with the 47RE, 4WD",
+      "The page lists a BD auxiliary full-flow filter kit among the package features without saying whether it is included, so confirm before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-47re-transmission-converter-package-1998-5-1999-24-valve-4wd"
+    ),
+  },
+  2823: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_47RE_PKG_BASE, ...BD_47RE_PKG_OLD, "Modified manual valve for lube in all positions", BD_47RE_PKG_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 1996-1998 Dodge Ram 5.9L Cummins 12-valve with the 47RE, 4WD",
+      "The page lists a BD auxiliary full-flow filter kit among the package features without saying whether it is included, so confirm before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-47re-transmission-converter-package-1996-1998-12-valve-4wd"
+    ),
+  },
+  2825: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_47RE_PKG_BASE, ...BD_47RE_PKG_OLD, "Modified manual valve for lube in all positions", BD_47RE_PKG_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 7 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 1996-1997 Dodge Ram 5.9L Cummins with the 47RE, 2WD, with speed sensor and speedo head",
+      "BD's note: for a 1997 2WD with speed sensor and speedo head use 1064162SS or 1064162BM; for a speed sensor only use 1064172SS or 1064172BM. The BD auxiliary full-flow filter kit is offered separately and is not listed as included",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-47re-transmission-converter-package-1996-1997-2wd-w-speed-sensor-speedo-head"
+    ),
+  },
+  2822: {
+    status: "listed",
+    checklist: "transmission",
+    included: [...BD_47RE_PKG_BASE, ...BD_47RE_PKG_OLD, BD_47RE_PKG_CONVERTER],
+    installationRequirements: ["BD lists an installation time of 9 hours", BD_48RE_REMOTE_FILTER],
+    vehicleRequirements: [
+      "Application: 1997-1999 Dodge Ram 5.9L Cummins with the 47RE, 2WD, speed sensor only (no speedo head)",
+      "BD's note: for a speed sensor only use 1064172SS or 1064172BM; for speed sensor and speedo head use 1064162SS or 1064162BM",
+      "The page lists a BD auxiliary full-flow filter kit among the package features without saying whether it is included, so confirm before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-47re-transmission-converter-package-1997-1999-2wd-w-speed-sensor-only-no-speedo-head"
     ),
   },
 
