@@ -24,6 +24,9 @@ const EDGE_MARGIN_PX = 8;
 /** Anything wider than this is the chat panel, not a bubble; it stays put. */
 const PANEL_MIN_WIDTH_PX = 200;
 
+/** Anything taller than this is the chat panel too (a narrow phone panel can be under the width cutoff). */
+const PANEL_MIN_HEIGHT_PX = 150;
+
 type Offset = { x: number; y: number };
 
 let cleanup: (() => void) | null = null;
@@ -98,6 +101,42 @@ function findLauncher(root: HTMLElement): HTMLElement | null {
   return best;
 }
 
+/**
+ * True when Tawk's chat panel is open or opening: any visible iframe at least
+ * panel-wide. While it is, nothing is transformed and the handle is hidden --
+ * the panel is Tawk's to lay out.
+ */
+function isPanelOpen(root: HTMLElement): boolean {
+  for (const frame of root.querySelectorAll<HTMLElement>("iframe")) {
+    if (window.getComputedStyle(frame).display === "none") continue;
+    const rect = frame.getBoundingClientRect();
+    if (rect.width >= PANEL_MIN_WIDTH_PX || rect.height >= PANEL_MIN_HEIGHT_PX) return true;
+  }
+  return false;
+}
+
+/** True when this child holds a launcher-sized, visible iframe (a bubble). */
+function holdsBubble(child: HTMLElement): boolean {
+  for (const frame of child.querySelectorAll<HTMLElement>("iframe")) {
+    if (window.getComputedStyle(frame).display === "none") continue;
+    const rect = frame.getBoundingClientRect();
+    if (
+      rect.width >= 30 &&
+      rect.height >= 30 &&
+      rect.width < PANEL_MIN_WIDTH_PX &&
+      rect.height < PANEL_MIN_HEIGHT_PX
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/** Writes an inline style only when it would change, so no mutation fires. */
+function setStyle(el: HTMLElement, prop: "transform" | "display" | "bottom" | "right" | "width" | "height", value: string): void {
+  if (el.style[prop] !== value) el.style[prop] = value;
+}
+
 export function makeTawkDraggable(): void {
   if (typeof window === "undefined") return;
   if (initialised) return;
@@ -116,23 +155,31 @@ export function makeTawkDraggable(): void {
   let startOffset: Offset = { x: 0, y: 0 };
   let pointerId: number | null = null;
 
-  /** Applies the current offset to every bubble, leaving the panel alone. */
+  /**
+   * Applies the current offset to the bubble wrappers only.
+   *
+   * A transform -- even translate(0, 0) -- makes an element the containing
+   * block for fixed-position descendants. Tawk lays its chat panel out inside a
+   * wrapper that is 0x0 until the panel opens, and this used to transform every
+   * small wrapper, panel's included; the panel's iframe then collapsed to zero
+   * height, so a tap on the bubble opened nothing visible (and on mobile left
+   * the page scroll-locked behind it). Only a wrapper that currently holds a
+   * visible bubble is moved, and nothing at all while the panel is open.
+   */
   function paint(): void {
     if (!root) return;
+    const panelOpen = isPanelOpen(root);
 
     for (const child of Array.from(root.children)) {
       if (!(child instanceof HTMLElement)) continue;
       if (child === handle) continue; // positions itself, see syncHandle
-      const rect = child.getBoundingClientRect();
 
-      // The open chat panel keeps Tawk's own anchoring, so it can never be
-      // dragged half off-screen — only the bubbles follow the drag.
-      if (rect.width >= PANEL_MIN_WIDTH_PX) {
-        child.style.transform = "";
+      if (panelOpen || !holdsBubble(child)) {
+        setStyle(child, "transform", "");
         continue;
       }
 
-      child.style.transform = `translate(${offset.x}px, ${offset.y}px)`;
+      setStyle(child, "transform", `translate(${offset.x}px, ${offset.y}px)`);
     }
 
     syncHandle();
@@ -153,14 +200,14 @@ export function makeTawkDraggable(): void {
     if (!handle || !root) return;
 
     const launcher = findLauncher(root);
-    if (!launcher) {
-      handle.style.display = "none";
+    if (!launcher || isPanelOpen(root)) {
+      setStyle(handle, "display", "none");
       return;
     }
 
     const rect = launcher.getBoundingClientRect();
     if (rect.width === 0 || rect.height === 0) {
-      handle.style.display = "none";
+      setStyle(handle, "display", "none");
       return;
     }
 
@@ -173,11 +220,11 @@ export function makeTawkDraggable(): void {
     const baseBottom = Number.parseFloat(launcherStyle.bottom) || 0;
     const baseRight = Number.parseFloat(launcherStyle.right) || 0;
 
-    handle.style.display = "block";
-    handle.style.bottom = `${baseBottom - offset.y}px`;
-    handle.style.right = `${baseRight - offset.x}px`;
-    handle.style.width = `${rect.width}px`;
-    handle.style.height = `${rect.height}px`;
+    setStyle(handle, "display", "block");
+    setStyle(handle, "bottom", `${baseBottom - offset.y}px`);
+    setStyle(handle, "right", `${baseRight - offset.x}px`);
+    setStyle(handle, "width", `${rect.width}px`);
+    setStyle(handle, "height", `${rect.height}px`);
   }
 
   /** Stops the bubble being dragged past any edge. */
@@ -296,7 +343,15 @@ export function makeTawkDraggable(): void {
 
     // Tawk rewrites inline styles when the chat opens, closes, or a message
     // arrives, which would drop the transform and leave the handle stranded.
-    const observer = new MutationObserver(() => paint());
+    let queued = false;
+    const observer = new MutationObserver(() => {
+      if (queued) return;
+      queued = true;
+      window.setTimeout(() => {
+        queued = false;
+        paint();
+      }, 0);
+    });
     observer.observe(widgetRoot, {
       attributes: true,
       attributeFilter: ["style"],
