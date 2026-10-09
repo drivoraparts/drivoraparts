@@ -20,7 +20,7 @@ fs.writeFileSync(
   entry,
   `import {
   US_PARCEL_RATE_TABLE, UK_PARCEL_RATE_TABLE, AU_PARCEL_RATE_TABLE, FREIGHT_RATE_TABLES,
-  validateRateTable, quoteShippingWith, describeQuote, shippingDestinationFor,
+  validateRateTable, quoteShippingWith, describeQuote, shippingDestinationFor, approxLocal,
   labelFromFreightNotes, classifyProductShipping, classifyShipping, SHIPPING_LABELS,
 } from "@/lib/shipping/rates";
 import { buildGoogleMerchantFeedRows, renderGoogleMerchantTsv } from "@/lib/feeds/google-merchant";
@@ -79,10 +79,12 @@ results.cases = {
   ukMixedFreight: view(q([{ productId: 1, quantity: 1, price: 500 }, { productId: 3, quantity: 1, price: 50 }], "United Kingdom")),
   ukMultibox: view(q([{ productId: 4, quantity: 1, price: 50 }], "United Kingdom")),
   ukAboveTable: view(one(75000, "United Kingdom")),
-  // Australia: USD 28 below USD 55, free from USD 55.
-  au54_99: view(one(54.99, "Australia")),
+  // Australia: USD 28 below USD 55.56, free from USD 55.56.
   au55: view(one(55, "Australia")),
-  au55_01: view(one(55.01, "AU")),
+  au55_55: view(one(55.55, "Australia")),
+  au55_56: view(one(55.56, "Australia")),
+  au55_57: view(one(55.57, "AU")),
+  auTwoAt27_78: view(q([{ productId: 1, quantity: 2, price: 27.78 }], "Australia")),
   au10: view(one(10, "australia")),
   auMixedFreight: view(q([{ productId: 1, quantity: 1, price: 500 }, { productId: 3, quantity: 1, price: 50 }], "Australia")),
   auMultibox: view(q([{ productId: 4, quantity: 1, price: 500 }], "Australia")),
@@ -99,6 +101,10 @@ results.describe = {
   ukFree: describeQuote(one(250, "United Kingdom")),
   au28: describeQuote(one(20, "Australia")),
   auFree: describeQuote(one(60, "Australia")),
+};
+results.thresholdText = {
+  au: approxLocal("AU", 55.56),
+  uk: approxLocal("GB", 200),
 };
 results.destinations = {
   gb: shippingDestinationFor("Great Britain"),
@@ -160,6 +166,8 @@ results.jsonld = {
   gbParcel150: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 150), "GB")?.shippingRate?.value ?? null,
   gbParcel500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.shippingRate?.value ?? null,
   auParcel40: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 40), "AU")?.shippingRate?.value ?? null,
+  auParcel55_55: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 55.55), "AU")?.shippingRate?.value ?? null,
+  auParcel55_56: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 55.56), "AU")?.shippingRate?.value ?? null,
   auParcel500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "AU")?.shippingRate?.value ?? null,
   gbFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "GB")?.shippingRate ?? null,
   caParcel: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "CA")?.shippingRate ?? null,
@@ -189,7 +197,7 @@ const expectCases = {
   usa: 0, us: 0, canada: "no_destination_rate", noCountry: "destination_unknown",
   uk0_01: 33, uk199_99: 33, uk200: 0, uk200_01: 0, uk5000: 0, ukTwoAt100: 0,
   ukMixedFreight: "freight_rate_not_set", ukMultibox: "freight_rate_not_set", ukAboveTable: "above_rate_table",
-  au54_99: 28, au55: 0, au55_01: 0, au10: 28,
+  au55: 28, au55_55: 28, au55_56: 0, au55_57: 0, auTwoAt27_78: 0, au10: 28,
   auMixedFreight: "freight_rate_not_set", auMultibox: "freight_rate_not_set", auUnknownProduct: "freight_rate_not_set",
   jersey: "no_destination_rate", newZealand: "no_destination_rate",
 };
@@ -235,7 +243,9 @@ for (const [k, v] of Object.entries(expectDescribe)) {
 if (out.destinations.gb !== "GB" || out.destinations.ni !== "GB" || out.destinations.im !== null || out.destinations.au !== "AU")
   problems.push(`destination matching wrong: ${JSON.stringify(out.destinations)}`);
 if (out.usTableTop !== 7499999 || out.ukTableTop !== 7499999 || out.auTableTop !== 7499999) problems.push("a rate table top is not $74,999.99");
-const expectJsonld = { gbParcel150: "33.00", gbParcel500: "0.00", auParcel40: "28.00", auParcel500: "0.00" };
+if (out.thresholdText.au !== "about A$80" || out.thresholdText.uk !== "about £151")
+  problems.push(`threshold display wrong: ${JSON.stringify(out.thresholdText)}`);
+const expectJsonld = { gbParcel150: "33.00", gbParcel500: "0.00", auParcel40: "28.00", auParcel55_55: "28.00", auParcel55_56: "0.00", auParcel500: "0.00" };
 for (const [k, v] of Object.entries(expectJsonld)) {
   if (out.jsonld[k] !== v) problems.push(`JSON-LD ${k}: expected ${v}, got ${out.jsonld[k]}`);
 }

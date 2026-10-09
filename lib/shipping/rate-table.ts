@@ -167,9 +167,8 @@ export const US_PARCEL_RATE_TABLE: readonly RateBracket[] = [
      UK fee         GBP 25  = USD 33.02 -> USD 33.00 (~GBP 24.99)
      UK threshold   set in USD by the business: USD 200 (~GBP 151)
      AU fee         AUD 40  = USD 27.77 -> USD 28.00 (~AUD 40.33)
-     AU threshold   AUD 80  = USD 55.55 -> USD 55.00 (~AUD 79.21),
-                    rounded down so no order the customer was told
-                    ships free over AUD 80 is ever charged.
+     AU threshold   AUD 80  = USD 55.548 -> USD 55.56 (~AUD 80.02),
+                    set by the business: free from USD 55.56.
 --------------------------------------------------------- */
 
 /** The tops of the international tables match the US table's top bracket. */
@@ -181,10 +180,10 @@ export const UK_PARCEL_RATE_TABLE: readonly RateBracket[] = [
   bracket(200, TABLE_TOP, 0),
 ];
 
-/** Australian parcel carts: USD 28 below USD 55, free from USD 55. */
+/** Australian parcel carts: USD 28 below USD 55.56, free from USD 55.56. */
 export const AU_PARCEL_RATE_TABLE: readonly RateBracket[] = [
-  bracket(0, 54.99, 28),
-  bracket(55, TABLE_TOP, 0),
+  bracket(0, 55.55, 28),
+  bracket(55.56, TABLE_TOP, 0),
 ];
 
 /* ---------------------------------------------------------
@@ -225,7 +224,7 @@ export const DESTINATIONS: Record<ShippingDestination, DestinationInfo> = {
     name: "Australia",
     service: "standard shipping to Australia",
     parcelTable: AU_PARCEL_RATE_TABLE,
-    local: { currency: "AUD", symbol: "A$", approx: { 2800: 40, 5500: 79 } },
+    local: { currency: "AUD", symbol: "A$", approx: { 2800: 40, 5556: 80 } },
   },
 };
 
