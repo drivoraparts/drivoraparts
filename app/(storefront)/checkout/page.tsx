@@ -31,6 +31,7 @@ import {
   type ManualMethodId,
 } from "@/lib/payments/manual-methods";
 import PaymentMethodIcon from "@/components/checkout/PaymentMethodIcon";
+import { checkoutCountryError } from "@/lib/shipping/rate-table";
 import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-tracking";
 import {
   MANUAL_PAYMENT_CHECKOUT_INTRO,
@@ -168,7 +169,14 @@ export default function CheckoutPage() {
         });
       } catch (error) {
         if ((error as Error)?.name === "AbortError") return;
-        setShipQuote(null);
+        // Never leave the summary silent: say shipping is unpriced (which also
+        // withholds crypto) instead of showing a total with nothing explaining
+        // the missing shipping line.
+        setShipQuote({
+          calculated: false,
+          amount: 0,
+          note: "We couldn't calculate shipping just now. It is confirmed with you before payment.",
+        });
       }
     }, 350);
     return () => {
@@ -421,6 +429,13 @@ export default function CheckoutPage() {
       !zip.trim()
     ) {
       showToast("Please enter your name, email, and shipping address");
+      return;
+    }
+
+    const countryError = checkoutCountryError(country);
+    if (countryError) {
+      showToast(countryError);
+      document.getElementById("checkout-country")?.focus();
       return;
     }
 
@@ -688,17 +703,29 @@ export default function CheckoutPage() {
                       htmlFor="checkout-country"
                       className="mb-1 block text-sm text-neutral-500"
                     >
-                      Country
+                      Country <span aria-hidden="true">*</span>
                     </label>
                     <input
                       id="checkout-country"
                       type="text"
+                      list="checkout-country-options"
                       autoComplete="country-name"
+                      required
                       value={country}
                       onChange={(e) => setCountry(e.target.value)}
-                      placeholder="United States"
+                      placeholder="Type or choose your country"
                       className={inputClass}
                     />
+                    <datalist id="checkout-country-options">
+                      <option value="United States" />
+                      <option value="United Kingdom" />
+                      <option value="Australia" />
+                    </datalist>
+                    {shipQuote?.note ? (
+                      <p className="mt-1 text-xs text-neutral-500" aria-live="polite">
+                        {shipQuote.note}
+                      </p>
+                    ) : null}
                   </div>
                 </div>
               </section>

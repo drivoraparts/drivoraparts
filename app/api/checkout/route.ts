@@ -13,7 +13,7 @@ import {
 import { logError, logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
 import { assessShipping } from "@/lib/shipping/quote";
-import { quoteShipping } from "@/lib/shipping/rates";
+import { checkoutCountryError, quoteShipping } from "@/lib/shipping/rates";
 
 function getCheckoutErrorMessage(error: unknown): string {
   if (error instanceof Error && error.message) return error.message;
@@ -112,6 +112,14 @@ export async function POST(req: Request) {
         { error: "Please enter your name, email, and shipping address." },
         { status: 400 }
       );
+    }
+
+    // Shipping is priced from the destination, so an order without one is
+    // refused here rather than created with shipping silently left to quote.
+    const countryError = checkoutCountryError(customer.country);
+    if (countryError) {
+      logWarn("checkout_missing_country", { ip });
+      return NextResponse.json({ error: countryError }, { status: 400 });
     }
 
     let lockedItems;
