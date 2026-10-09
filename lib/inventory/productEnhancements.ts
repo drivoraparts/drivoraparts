@@ -4,6 +4,7 @@ import {
   resolveProductCondition,
 } from "./condition";
 import { productLogistics } from "./logistics";
+import { packageContents } from "./package-contents";
 
 export type { ProductLogistics };
 
@@ -71,17 +72,23 @@ function resolveProductLogistics(product: Product): ProductLogistics {
   const fallback = productLogistics[product.id] ?? {};
   const text = (inline?: string, mapped?: string) =>
     inline?.trim() || mapped?.trim() || undefined;
+  // Structured package contents: the listing's own, else the central map.
+  const contents = product.packageContents ?? packageContents[product.id];
+  const included =
+    product.included && product.included.length > 0
+      ? product.included
+      : contents?.included && contents.included.length > 0
+        ? contents.included
+        : fallback.included && fallback.included.length > 0
+          ? fallback.included
+          : undefined;
 
   return {
     partNumber: text(product.partNumber, fallback.partNumber),
     fitment: text(product.fitment, fallback.fitment),
     drivetrain: text(product.drivetrain, fallback.drivetrain),
-    included:
-      product.included && product.included.length > 0
-        ? product.included
-        : fallback.included && fallback.included.length > 0
-          ? fallback.included
-          : undefined,
+    included,
+    contents,
     coreCharge: text(product.coreCharge, fallback.coreCharge),
     weight: text(product.weight, fallback.weight),
     freightNotes: text(product.freightNotes, fallback.freightNotes),
