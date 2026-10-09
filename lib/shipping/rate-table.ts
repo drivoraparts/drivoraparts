@@ -344,6 +344,20 @@ export function shippingDestinationFor(country?: string | null): ShippingDestina
   return SHIPPING_DESTINATIONS.find((code) => COUNTRY_NAMES[code].has(key));
 }
 
+/**
+ * A destination is needed before shipping can be priced. Checkout used to treat
+ * the country as optional free text (with a grey "United States" placeholder
+ * that looked like a filled-in value), so a customer who skipped it saw no
+ * shipping fee and a total without shipping, and the server accepted the order
+ * as "shipping to be quoted". The page and /api/checkout both use this, so a
+ * missing country is refused in both places with the same words.
+ */
+export function checkoutCountryError(country?: string | null): string | null {
+  return String(country ?? "").trim()
+    ? null
+    : "Please enter your country so we can calculate shipping.";
+}
+
 export function isUnitedStates(country?: string | null): boolean {
   return shippingDestinationFor(country) === "US";
 }

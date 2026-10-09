@@ -21,7 +21,7 @@ fs.writeFileSync(
   `import {
   US_PARCEL_RATE_TABLE, UK_PARCEL_RATE_TABLE, AU_PARCEL_RATE_TABLE, FREIGHT_RATE_TABLES,
   validateRateTable, quoteShippingWith, describeQuote, shippingDestinationFor, approxLocal,
-  labelFromFreightNotes, classifyProductShipping, classifyShipping, SHIPPING_LABELS,
+  labelFromFreightNotes, classifyProductShipping, classifyShipping, SHIPPING_LABELS, checkoutCountryError,
 } from "@/lib/shipping/rates";
 import { buildGoogleMerchantFeedRows, renderGoogleMerchantTsv } from "@/lib/feeds/google-merchant";
 import { productOfferShippingDetails } from "@/lib/seo/merchant-policies";
@@ -90,10 +90,19 @@ results.cases = {
   auMultibox: view(q([{ productId: 4, quantity: 1, price: 500 }], "Australia")),
   auUnknownProduct: view(q([{ productId: 999, quantity: 1, price: 500 }], "Australia")),
   // Not covered: separate customs territories and other countries.
+  // Checkout regression: a missing destination is never priced, never $0.
+  nullCountry: view(one(40, null)),
+  spacesCountry: view(one(40, "   ")),
+  usPadded: view(one(40, "  United States ")),
+  ukQty4: view(q([{ productId: 1, quantity: 4, price: 40 }], "United Kingdom")),
+  ukQty5: view(q([{ productId: 1, quantity: 5, price: 40 }], "United Kingdom")),
+  auQty1: view(q([{ productId: 1, quantity: 1, price: 40 }], "Australia")),
+  auQty2: view(q([{ productId: 1, quantity: 2, price: 40 }], "Australia")),
   jersey: view(one(500, "Jersey")),
   newZealand: view(one(500, "New Zealand")),
 };
 
+results.countryError = { empty: checkoutCountryError(""), nul: checkoutCountryError(null), spaces: checkoutCountryError("  "), ok: checkoutCountryError("Germany") };
 results.describe = {
   us0: describeQuote(one(500)),
   us100: describeQuote(one(1500)),
@@ -199,6 +208,8 @@ const expectCases = {
   ukMixedFreight: "freight_rate_not_set", ukMultibox: "freight_rate_not_set", ukAboveTable: "above_rate_table",
   au55: 28, au55_55: 28, au55_56: 0, au55_57: 0, auTwoAt27_78: 0, au10: 28,
   auMixedFreight: "freight_rate_not_set", auMultibox: "freight_rate_not_set", auUnknownProduct: "freight_rate_not_set",
+  nullCountry: "destination_unknown", spacesCountry: "destination_unknown", usPadded: 0,
+  ukQty4: 33, ukQty5: 0, auQty1: 28, auQty2: 0,
   jersey: "no_destination_rate", newZealand: "no_destination_rate",
 };
 const expectDescribe = {
@@ -215,6 +226,14 @@ const expectNotes = {
 };
 
 const problems = [];
+if (!out.countryError.empty || !out.countryError.nul || !out.countryError.spaces || out.countryError.ok !== null)
+  problems.push(`checkoutCountryError wrong: ${JSON.stringify(out.countryError)}`);
+{
+  const route = fs.readFileSync(path.join(ROOT, "app/api/checkout/route.ts"), "utf8");
+  const page = fs.readFileSync(path.join(ROOT, "app/(storefront)/checkout/page.tsx"), "utf8");
+  if (!route.includes("checkoutCountryError(customer.country)")) problems.push("/api/checkout no longer refuses a missing country");
+  if (!page.includes("checkoutCountryError(country)")) problems.push("the checkout page no longer requires a country before submitting");
+}
 if (out.tableError) problems.push(`US rate table invalid: ${out.tableError}`);
 if (!out.freightTablesUnset) problems.push("a freight rate table is set -- update this test and the policy page deliberately");
 for (const [k, v] of Object.entries(expectCases)) {

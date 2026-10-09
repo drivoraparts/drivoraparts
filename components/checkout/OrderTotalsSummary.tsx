@@ -90,6 +90,13 @@ export default function OrderTotalsSummary({
         </span>
       </div>
 
+      {/* The total below leaves shipping out until it is priced; say so. */}
+      {!shippingQuote?.calculated && (
+        <p className="text-xs text-amber-700">
+          Shipping is not included in this total yet.
+        </p>
+      )}
+
       {compact ? (
         <div className="flex items-baseline justify-between gap-3 border-t border-neutral-200 pt-2">
           <span className="text-xs text-neutral-500">{t("total")}</span>
