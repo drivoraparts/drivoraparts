@@ -193,6 +193,24 @@ const BD_ALLISON_TORQUEMASTER_LBZ = [
   "Dyno tested",
 ];
 
+const BD_ALLISON_TORQUEMASTER_LML = [
+  "BD aluminum HD deep pan, adding 3.5 qt of oil capacity",
+  "Modified valve body and pump for increased line pressure and torque capacity",
+  "High-energy frictions and increased steel mass",
+  "Increased clutch counts: C1 8 clutches, C2 7, C3 7, C4 7, C5 7",
+  "Billet input shaft",
+  "Torque converter (the package title includes it; the page does not itemize it separately): triple-disc, enhanced stall for street and towing, HD springs, stamped forged one-piece cover, cast stator, thrust bearings in place of plastic washers, double-cage stator sprag, furnace-brazed turbine fins",
+  "Dyno tested",
+];
+
+const BD_ALLISON_TOWMASTER_LML = [
+  "BD aluminum HD deep pan, adding 3.5 qt of oil capacity",
+  "Modified valve body and pump for increased line pressure and torque capacity",
+  "High-energy frictions and increased steel mass",
+  "Increased clutch counts: C1 8 clutches, C2 7, C3 7, C4 7, C5 7",
+  "Dyno tested",
+];
+
 const BD_ALLISON_ROADMASTER_LB7 = [
   "RoadMaster Allison 1000 transmission with a modified valve body (raises clutch torque capacity, helps prevent dry starts)",
   "BD aluminum deep pan, adding 3.5 qt of fluid capacity",
@@ -1281,6 +1299,65 @@ export const packageContents: Record<number, PackageContents> = {
     sources: bdSource(
       "BD Diesel product page (manufacturer)",
       "roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lmm-duramax-2007-5-2010"
+    ),
+  },
+
+  // BD Allison 1000 TorqueMaster/TowMaster, LMM and LML, researched
+  // 2026-10-09 (catalog-batch-4). #2775, #2769 and #2770 match their page's
+  // part number; #2772 is the 4WD sibling of #2775.
+  2775: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_TORQUEMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 7 hours"],
+    vehicleRequirements: [
+      "Application: 2007-2010 Chevy/GMC 6.6L LMM Duramax with Allison 1000, 2WD",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2007-2010-lmm-2wd"
+    ),
+  },
+  2772: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_TORQUEMASTER_LBZ,
+    installationRequirements: ["BD lists an installation time of 7 hours"],
+    vehicleRequirements: [
+      "Application: 2007-2010 Chevy/GMC 6.6L LMM Duramax with Allison 1000, 4WD. The BD page lists one part number, so this drivetrain's part number is not displayed there",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2007-2010-lmm-2wd"
+    ),
+  },
+  2769: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_TORQUEMASTER_LML,
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: [
+      "Application: 2011-2016 Chevrolet Silverado / GMC Sierra 6.6L LML Duramax with Allison 1000, 4WD",
+      "The title mentions a controller; the page gives no pressure box or controller details, so confirm what is included before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "torquemaster-chevy-allison-transmission-converter-package-c-w-billet-input-triple-torque-controller-2011-2016-lml-4wd"
+    ),
+  },
+  2770: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_ALLISON_TOWMASTER_LML,
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: ["BD lists an installation time of 9 hours"],
+    vehicleRequirements: [
+      "Application: 2011-2016 Chevrolet Silverado / GMC Sierra 2500HD/3500HD 6.6L LML Duramax with Allison 1000, 4WD",
+      "The title mentions a controller; the page gives no pressure box or controller details, so confirm what is included before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-chevy-allison-transmission-c-w-billet-input-triple-torque-controller-2011-2016-lml-4wd"
     ),
   },
 

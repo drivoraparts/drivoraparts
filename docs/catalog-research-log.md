@@ -131,9 +131,19 @@ The TowMaster page says it is a matched transmission and converter set without i
 
 LMM Roadmaster: #2699 (1064874SS), page `roadmaster-transmission-converter-package-allison-1000-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-lmm-duramax-2007-5-2010`. The page's part number matched; it lists no separate 4WD/2WD numbers.
 
+LMM and LML TorqueMaster/TowMaster (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2775, #2772 | 1064742BM TorqueMaster LMM 2WD; 4WD sibling 1064744BM | `torquemaster-chevy-allison-1000-transmission-converter-package-c-w-billet-input-triple-torque-2007-2010-lmm-2wd` |
+| #2769 | 1064754BM TorqueMaster LML 4WD | `torquemaster-chevy-allison-transmission-converter-package-c-w-billet-input-triple-torque-controller-2011-2016-lml-4wd` |
+| #2770 | 1064754 TowMaster LML transmission only | `towmaster-chevy-allison-transmission-c-w-billet-input-triple-torque-controller-2011-2016-lml-4wd` |
+
+The LML titles mention a "Controller" or Pressure Box, but the pages give no details, so the listings say to confirm it. The LML TowMaster transmission-only page says a BD converter must be installed with it, so that is stated as required separately. #2209 (1064754SM, TowMaster LML package) is a different part number from either page and was not updated.
+
 L5P (#2210, #2211, #4048, #4052): no individual product page could be found (only collection pages and a blog post, which disagree on price and give no itemized contents), so nothing was applied. Open: locate the L5P product pages or ask BD.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 51: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+Not yet researched: the remaining BD transmission-only and package listings (about 47: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 
