@@ -34,7 +34,7 @@ export default function AddToCartButton({
   className?: string;
 }) {
   const [loading, setLoading] = useState(false);
-  const { addToCart, cart } = useCart();
+  const { addToCart, decreaseQty, cart } = useCart();
 
   const handleAdd = async (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -60,29 +60,38 @@ export default function AddToCartButton({
     setLoading(true);
 
     try {
-      let canAdd = productHasStock(product.id, totalQty);
-
-      try {
-        const res = await fetch(`/api/product?productId=${product.id}`);
-        const data = await res.json().catch(() => null);
-
-        if (res.ok && data) {
-          // Catalog stock:false is authoritative; the API may only add more detail.
-          canAdd =
-            catalogAllowsPurchase(product.id) &&
-            Boolean(data.inStock) &&
-            Number(data.stock) >= totalQty;
-        }
-      } catch {
-        // Use catalog stock when the API is unavailable.
-      }
-
-      if (!canAdd) {
+      /*
+       * The click used to wait for /api/product (a database lookup that takes
+       * one to four seconds) before touching the cart, with the button
+       * disabled meanwhile, so presses seemed to do nothing. The catalog's own
+       * stock answer is instant and authoritative for "not purchasable", so the
+       * item is added at once and the live quantity is confirmed afterwards; if
+       * it comes back short, this click's quantity is taken out again and the
+       * customer is told. Checkout re-checks stock on the server regardless.
+       */
+      if (!productHasStock(product.id, totalQty)) {
         showToast("Out of stock");
         return;
       }
 
       addToCart(product, quantity);
+
+      void (async () => {
+        try {
+          const res = await fetch(`/api/product?productId=${product.id}`);
+          const data = await res.json().catch(() => null);
+          if (!res.ok || !data) return; // keep the catalog answer
+          const stillAvailable =
+            catalogAllowsPurchase(product.id) &&
+            Boolean(data.inStock) &&
+            Number(data.stock) >= totalQty;
+          if (stillAvailable) return;
+          for (let i = 0; i < quantity; i += 1) decreaseQty(product.id);
+          showToast("Out of stock");
+        } catch {
+          // Use catalog stock when the API is unavailable.
+        }
+      })();
 
       /*
        * Search attribution, when this product was reached from a search result.
