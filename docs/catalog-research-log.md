@@ -84,7 +84,29 @@ Left out or flagged:
 - Warranty and core deposit figures differ by page ($1,200 to $1,800 core on the units fetched); not added, because the listings' own core-charge and warranty fields govern. **Open: reconcile those fields with BD's figures.**
 - Two earlier URL guesses returned 404 (the 4WD-suffixed TowMaster 68RFE slug), and BD's collection pages show only 12 of 43 products, so product URLs came from site-restricted searches and were then fetched directly.
 
-Not yet researched: the remaining BD transmission-only listings (about 78: 2WD siblings, Roadmaster units, 47RE/48RE/47RH/E4OD/4R100 2WD, the other Allison 1000 units, 66RFE, 10R80, 6L80 and the converter packages).
+Third round (same day):
+
+| Listing | Part | Page (under https://us.bddiesel.com/products/) |
+|---|---|---|
+| #2726, #4125 | 1064302-series Roadmaster 68RFE 2007.5-2018 | `roadmaster-dodge-68rfe-transmission-2007-5-2018` |
+| #2804 | 1064442FPTO, TowMaster 4R100 2WD with PTO | `towmaster-ford-4r100-transmission-1999-2003-2wd-pto` |
+
+#2726 and #4125 share one page (4WD and 2WD, no separate displayed SKU); #4125 says so. The Roadmaster adds no clutches (stock counts); the page frames it for stock or mildly tuned trucks.
+
+**Transmission & Converter Packages** (converter included, unlike the transmission-only units):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2204 | 1064304SS, Roadmaster 68RFE 2019-2024 | `roadmaster-68rfe-transmission-converter-package-ram-6-7l-cummins-2019-2024` |
+| #2768 | 1064264SS, TowMaster 68RFE 2007.5-2018 | `towmaster-dodge-68rfe-transmission-converter-package-2007-5-2018` |
+| #2723 | 1064234SS, TowMaster 48RE 2005-2007 TVV | `towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-stepper-motor` |
+
+Left out or flagged:
+- #2722 (1064234SST, TapShifter) is a different part from the page's 1064234SS; not updated. #4116 (1064302SS), #4195 (1064262SS), #4120/#4121 (1064232SS) are the 2WD-style numbers that the pages do not display; not updated.
+- #2723: the page shows both a ProForce 3D (triple-disc) and a standard ProForce converter section without saying which ships; stated as "confirm". Billet input shaft and auxiliary filter kit are options, not included. Remote filter required.
+- 2019-and-newer package (#2204): special tuning needed; the line pressure controller is not included. **Open: BD's 2WD part numbers for these three pages.**
+
+Not yet researched: the remaining BD transmission-only and package listings (about 70: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 

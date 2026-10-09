@@ -876,6 +876,146 @@ export const packageContents: Record<number, PackageContents> = {
     ),
   },
 
+  // BD Roadmaster 68RFE (2007.5-2018) and TowMaster 4R100 2WD PTO, researched
+  // 2026-10-09; #2726 and #2804 match their page's part number exactly.
+  2726: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD ProTech68 valve body, pre-installed, with a gasketed separator plate",
+      "BD pressure enhancer for up to 220 psi line pressure",
+      "BD deep-sump oil pan",
+      "Billet 4C spring retainer",
+      "Stock transmission clutch counts (the Roadmaster does not add clutches)",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2007.5-2018 Dodge/Ram 6.7L Cummins (68RFE), 4WD",
+      "BD describes it as suited to stock or mildly tuned trucks with stock or stock-plus injectors",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-dodge-68rfe-transmission-2007-5-2018"
+    ),
+  },
+  4125: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD ProTech68 valve body, pre-installed, with a gasketed separator plate",
+      "BD pressure enhancer for up to 220 psi line pressure",
+      "BD deep-sump oil pan",
+      "Billet 4C spring retainer",
+      "Stock transmission clutch counts (the Roadmaster does not add clutches)",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 9 hours",
+      BD_BREAK_IN,
+    ],
+    vehicleRequirements: [
+      "Application: 2007.5-2018 Dodge/Ram 6.7L Cummins (68RFE), 2WD. The BD page lists 4WD and 2WD variants and shows one part number, so the 2WD part number is not displayed there",
+      "BD describes it as suited to stock or mildly tuned trucks with stock or stock-plus injectors",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-dodge-68rfe-transmission-2007-5-2018"
+    ),
+  },
+  2804: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD aluminum HD deep pan, adding 6 qt of oil capacity",
+      "Re-calibrated accumulator body for quicker, firmer shifts",
+      "Full shift kit with a line-mod valve to increase pressures",
+      "Increased pressure to the converter; added lube circuits to the overdrive planet and added lube and support to the output and intermediate shafts",
+      "Drilled and tapped direct and intermediate feeds to prevent leaks at the case; upgraded overdrive snap ring; machined center support; reworked front pump",
+      "Fully rollerized geartrain; increased clutch counts (forward 5, direct 5, low/reverse 7, intermediate 4, overdrive 4, coast 2)",
+      "OEM-equipped transmission-mounted PTO",
+      "Auxiliary frame-mounted full-flow filter kit (stated for 1990-2003)",
+      "Dyno tested",
+    ],
+    requiredSeparately: [BD_CONVERTER_REQUIRED],
+    installationRequirements: [
+      "BD lists an installation time of 5 hours",
+      "A remote filter is required for inspection, with the cooler flow rate measured in GPM at the oil/air transmission cooler outlet",
+    ],
+    vehicleRequirements: [
+      "Application: 1999-2003 Ford 7.3L Power Stroke with the 4R100, 2WD, with PTO provision (part 1064442FPTO)",
+      "The page indicates it is not for a rear-end ratio of 4.88 or lower",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-ford-4r100-transmission-1999-2003-2wd-pto"
+    ),
+  },
+
+  // BD Transmission & Converter Packages, researched 2026-10-09. Applied only
+  // where the page's part number equals the listing's: #2204 (1064304SS),
+  // #2768 (1064264SS), #2723 (1064234SS). #2722 is 1064234SST (TapShifter), a
+  // different part, so it is not updated.
+  2204: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      "BD ProTech68 valve body with a bonded-gasket separator plate, pre-installed",
+      "BD deep-sump oil pan",
+      "Billet 4C spring retainer",
+      "Stock transmission clutch counts",
+      "BD ProForce torque converter: rated for up to 550 flywheel HP, enhanced stall stator, brazed turbine fins, replaced damper springs, 11.625 in dual-clutch, billet forged front cover",
+    ],
+    installationRequirements: ["BD lists an installation time of 9 hours", BD_BREAK_IN],
+    programmingRequirements: [BD_2019_TUNE, BD_2019_CONTROLLER],
+    vehicleRequirements: [
+      "Application: 2019-2024 Ram 6.7L Cummins (68RFE), 4WD. The BD page lists 4WD and 2WD variants",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "roadmaster-68rfe-transmission-converter-package-ram-6-7l-cummins-2019-2024"
+    ),
+  },
+  2768: {
+    status: "listed",
+    checklist: "transmission",
+    included: [
+      ...BD_68RFE_BASE,
+      ...BD_68RFE_2007_EXTRAS,
+      "BD ProForce torque converter: rated for up to 550 flywheel HP, enhanced stall stator, brazed turbine fins, replaced damper springs, 11.625 in dual-clutch, billet forged front cover",
+    ],
+    installationRequirements: ["BD lists an installation time of 9 hours", BD_BREAK_IN],
+    vehicleRequirements: ["Application: 2007.5-2018 Dodge/Ram 6.7L Cummins (68RFE), 4WD"],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-68rfe-transmission-converter-package-2007-5-2018"
+    ),
+  },
+  2723: {
+    status: "listed",
+    checklist: "transmission",
+    included: BD_48RE_FEATURES,
+    optionalUpgrades: [
+      "Billet input shaft (listed as an option on the page)",
+      "Auxiliary filter kit (listed as an option on the page)",
+    ],
+    installationRequirements: [
+      "BD lists an installation time of 7 hours 30 minutes",
+      BD_48RE_REMOTE_FILTER,
+    ],
+    vehicleRequirements: [
+      "Application: 2005-2007 (with TVV stepper motor) Dodge Ram 5.9L Cummins with the 48RE, 4WD",
+      "The page describes both a ProForce 3D (triple-disc) converter and a standard ProForce converter and does not say which ships with this part number; confirm the converter before ordering",
+    ],
+    sources: bdSource(
+      "BD Diesel product page (manufacturer)",
+      "towmaster-dodge-48re-transmission-converter-package-2005-2007-w-tvv-stepper-motor"
+    ),
+  },
+
   // #2115 Toyota 1UZ-FE Non-VVT-i Complete Swap Package (Used, inspected and
   // tested). Source: its "PACKAGE INCLUDES" list, its swap-package notice and
   // its 300 HP target notes.
