@@ -82,7 +82,6 @@ export default function ManualPaymentPage() {
           heading: "Payment methods and their conditions",
           paragraphs: [
             "Each payment method is run by its own provider and comes with that provider's terms. The instructions we send explain how to pay with the method you selected. Please read them before you send payment, and contact us first if anything is unclear.",
-            "Bank transfer asks you to choose a transfer route at checkout, so that we send the account details that suit where you are paying from.",
           ],
         },
         {
