@@ -135,9 +135,10 @@ export default async function AdminDashboardPage() {
         ) : (
           <ul className="divide-y divide-zinc-200">
             {recentOrders.map((order) => (
-              <li
-                key={order.id}
-                className="flex flex-col gap-2 py-4 sm:flex-row sm:items-center sm:justify-between"
+              <li key={order.id}>
+              <Link
+                href={`/admin/orders/${order.id}`}
+                className="flex flex-col gap-2 py-4 transition hover:bg-zinc-50 sm:flex-row sm:items-center sm:justify-between"
               >
                 <div>
                   <p className="font-mono text-sm font-semibold">
@@ -165,7 +166,9 @@ export default async function AdminDashboardPage() {
                   >
                     {formatOrderStatus(order.status)}
                   </p>
+                  <p className="mt-1 text-xs font-semibold text-accent">View order →</p>
                 </div>
+              </Link>
               </li>
             ))}
           </ul>

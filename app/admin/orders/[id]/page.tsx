@@ -7,6 +7,7 @@ import StatusPill, { SpinnerIcon } from "@/components/admin/StatusPill";
 import ManualPaymentPanel, {
   type PanelReceipt,
 } from "@/components/admin/ManualPaymentPanel";
+import { getProductById } from "@/data/store";
 import { getOrderById, listOrderEvents } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
 import { readManualPayment } from "@/lib/payments/manual-payment";
@@ -109,6 +110,13 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
         </SummaryTile>
         <SummaryTile label="Payment">
           <StatusPill value={payment?.status ?? "pending"} />
+          <p className="mt-1 truncate text-xs text-zinc-500">
+            {manual
+              ? (getManualMethod(manual.method)?.label ?? manual.method)
+              : payment
+                ? payment.provider
+                : "No payment record"}
+          </p>
         </SummaryTile>
         <SummaryTile label="Order Processing">
           <StatusPill value={order.order_status} />
@@ -133,30 +141,71 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
           <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
             <p className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Products</p>
             <ul className="mt-2.5 space-y-2.5">
-              {order.items.map((item) => (
-                <li key={item.id} className="flex items-center gap-3">
-                  {item.image ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={item.image}
-                      alt=""
-                      className="h-10 w-10 shrink-0 rounded-md border border-zinc-200 object-cover"
-                    />
-                  ) : (
-                    <div className="h-10 w-10 shrink-0 rounded-md border border-zinc-200 bg-zinc-50" />
-                  )}
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm text-zinc-900">{item.name}</p>
-                    <p className="text-xs text-zinc-500">
-                      Qty {item.quantity} · ${Number(item.price).toFixed(2)} each
+              {order.items.map((item) => {
+                // Linked by the product id stored on the order line. A product
+                // since removed from the catalogue has no page, so the line
+                // stays readable from the order's own snapshot instead.
+                const productHref = getProductById(item.product_id)
+                  ? `/product/${item.product_id}`
+                  : null;
+                const thumb = item.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="h-10 w-10 shrink-0 rounded-md border border-zinc-200 object-cover"
+                  />
+                ) : (
+                  <div className="h-10 w-10 shrink-0 rounded-md border border-zinc-200 bg-zinc-50" />
+                );
+                return (
+                  <li key={item.id} className="flex items-center gap-3">
+                    {productHref ? (
+                      <Link href={productHref} target="_blank" aria-label={`Open ${item.name}`}>
+                        {thumb}
+                      </Link>
+                    ) : (
+                      thumb
+                    )}
+                    <div className="min-w-0 flex-1">
+                      {productHref ? (
+                        <Link
+                          href={productHref}
+                          target="_blank"
+                          className="block truncate text-sm font-medium text-accent hover:text-accent-hover hover:underline"
+                        >
+                          {item.name}
+                        </Link>
+                      ) : (
+                        <p className="truncate text-sm text-zinc-900">{item.name}</p>
+                      )}
+                      <p className="text-xs text-zinc-500">
+                        Qty {item.quantity} · ${Number(item.price).toFixed(2)} each · Product #
+                        {item.product_id}
+                        {productHref ? "" : " · no longer in catalogue"}
+                      </p>
+                    </div>
+                    <p className="shrink-0 text-sm font-medium text-zinc-900">
+                      ${(Number(item.price) * item.quantity).toFixed(2)}
                     </p>
-                  </div>
-                  <p className="shrink-0 text-sm font-medium text-zinc-900">
-                    ${(Number(item.price) * item.quantity).toFixed(2)}
-                  </p>
-                </li>
-              ))}
+                  </li>
+                );
+              })}
             </ul>
+            <dl className="mt-3 space-y-0.5 border-t border-zinc-100 pt-2.5 text-xs text-zinc-500">
+              <div className="flex justify-between">
+                <dt>Subtotal</dt>
+                <dd className="text-zinc-900">${Number(order.subtotal).toFixed(2)}</dd>
+              </div>
+              <div className="flex justify-between">
+                <dt>Shipping</dt>
+                <dd className="text-zinc-900">${Number(order.shipping ?? 0).toFixed(2)}</dd>
+              </div>
+              <div className="flex justify-between font-semibold">
+                <dt className="text-zinc-700">Total</dt>
+                <dd className="text-zinc-900">${Number(order.total).toFixed(2)}</dd>
+              </div>
+            </dl>
             {/*
               * The address this order was placed with, not the customer's
               * current one. Customers are matched by email now, so a returning
