@@ -11,6 +11,7 @@ import StaffPicksSection from "@/components/catalog/StaffPicksSection";
 import CatalogVehicleFinderSection from "@/components/catalog/CatalogVehicleFinderSection";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { routes } from "@/lib/inventory";
+import { resolveCatalogView } from "@/lib/catalog/view-seo";
 import { getCatalogSections, getSection } from "@/lib/catalog/sections";
 import { CATALOG_DEFAULT_LIMIT, queryCatalog } from "@/lib/catalog/query";
 import {
@@ -29,12 +30,35 @@ import {
 // boundary always resolves the same way it does on an uncached first visit.
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = buildPageMetadata({
-  title: "All Performance Parts",
-  description:
-    "Browse every listing on DrivoraParts — engines, turbos, brakes, suspension, electronics, lighting, body kits, interior, aftermarket, and more.",
-  path: routes.all,
-});
+const ALL_TITLE = "All Performance Parts";
+const ALL_DESCRIPTION =
+  "Browse every listing on DrivoraParts — engines, turbos, brakes, suspension, electronics, lighting, body kits, interior, aftermarket, and more.";
+
+// A section view (?section=exhaust) with real stock is a page of its own and
+// canonicalises to itself; a category view points at its /catalog/<category>
+// page, and a search at the view it searches in (noindexed).
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const one = (v: string | string[] | undefined) => (typeof v === "string" ? v.trim() : "");
+  const view = resolveCatalogView({
+    scope: "all",
+    section: one(params.section),
+    category: one(params.category),
+    q: one(params.q),
+  });
+  return buildPageMetadata({
+    title: view.heading ? `${view.heading} — ${ALL_TITLE}` : ALL_TITLE,
+    description: view.heading
+      ? `Shop ${view.heading} parts on DrivoraParts, shipped internationally.`
+      : ALL_DESCRIPTION,
+    path: view.path,
+    noIndex: !view.indexable,
+  });
+}
 
 export default async function AllProductsPage({
   searchParams,

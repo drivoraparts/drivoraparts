@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { engineTree, getPlatformSlug } from "@/data/engine";
 import { vehiclePlatforms } from "@/data/vehicles";
 import { MARKETS } from "@/lib/catalog/markets";
+import { indexableCatalogViewPaths } from "@/lib/catalog/view-seo";
 import {
   brands,
   categories,
@@ -54,10 +55,16 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
 
   // The three regional market views. Worldwide is left out on purpose: it
   // lists exactly what /catalog/all lists and names that page as canonical.
-  // Their ?vehicle= and ?category= views canonicalise to these, so they are
-  // not submitted either.
+  // Their filtered views are listed separately below.
   const marketEntries = MARKETS.filter((market) => market.groups.length > 0).map(
     (market) => entry(toUrl(routes.market(market.key)), 0.9)
+  );
+
+  // Vehicle, system and category views of the market pages are pages in their
+  // own right (self-canonical, see lib/catalog/view-seo.ts), so they are
+  // submitted. Only views with real stock are listed.
+  const catalogViewEntries = indexableCatalogViewPaths().map((path) =>
+    entry(toUrl(path), 0.7)
   );
 
   // Skip brand-category combos with zero products — those pages 404 (see
@@ -114,6 +121,7 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
   return [
     ...staticPaths.map(({ path, priority }) => entry(toUrl(path), priority)),
     ...marketEntries,
+    ...catalogViewEntries,
     ...categoryEntries,
     ...brandEntries,
     // Omitting these was a silent regression: vehicleEntries was built above

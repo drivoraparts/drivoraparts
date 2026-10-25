@@ -1,5 +1,5 @@
 import MarketCatalogView, {
-  marketMetadata,
+  marketViewMetadata,
   type MarketPageProps,
 } from "@/components/catalog/MarketCatalogView";
 
@@ -7,7 +7,9 @@ import MarketCatalogView, {
 // the URL, and page one of the listings is rendered into the HTML.
 export const dynamic = "force-dynamic";
 
-export const metadata = marketMetadata("uk");
+export function generateMetadata({ searchParams }: MarketPageProps) {
+  return marketViewMetadata("uk", searchParams);
+}
 
 export default function Page({ searchParams }: MarketPageProps) {
   return <MarketCatalogView marketKey="uk" searchParams={searchParams} />;
