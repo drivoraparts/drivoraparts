@@ -15,6 +15,7 @@ import {
 } from "@/lib/catalog/markets";
 import { CATALOG_DEFAULT_LIMIT, queryCatalog } from "@/lib/catalog/query";
 import { routes } from "@/lib/inventory/routes";
+import { resolveCatalogView } from "@/lib/catalog/view-seo";
 import {
   buildPageMetadata,
   breadcrumbJsonLd,
@@ -47,6 +48,43 @@ const param = (value: string | string[] | undefined) =>
  */
 function canonicalPath(key: MarketKey): string {
   return key === "worldwide" ? routes.all : routes.market(key);
+}
+
+/**
+ * Metadata for a market page including its filtered views. A vehicle, system or
+ * category view with real stock is a page of its own and canonicalises to
+ * itself; a search canonicalises to the view it searches in and is noindexed.
+ */
+export async function marketViewMetadata(
+  key: MarketKey,
+  searchParams: MarketPageProps["searchParams"]
+): Promise<Metadata> {
+  const base = marketMetadata(key);
+  const market = getMarket(key);
+  if (!market) return base;
+
+  const params = await searchParams;
+  const view = resolveCatalogView({
+    scope: key,
+    vehicle: param(params.vehicle),
+    section: param(params.section),
+    category: param(params.category),
+    q: param(params.q),
+  });
+
+  const filtered = view.path !== canonicalPath(key);
+  if (!filtered && view.indexable) return base;
+
+  const title = view.heading ? `${view.heading} — ${market.name}` : market.seoTitle;
+  const description = view.heading
+    ? `Shop ${view.heading} parts on DrivoraParts for the ${market.name} market, shipped internationally.`
+    : market.seoDescription;
+  return buildPageMetadata({
+    title,
+    description,
+    path: view.path,
+    noIndex: !view.indexable,
+  });
 }
 
 export function marketMetadata(key: MarketKey): Metadata {

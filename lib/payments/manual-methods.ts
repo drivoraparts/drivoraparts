@@ -14,8 +14,7 @@
  * checkout API, the order record, the admin screens and the emails all look a
  * method up by id, so reordering is presentation only.
  *
- * The intended order is PayPal, Bank Transfer, Venmo, Cash App, Zelle,
- * International Wire. Cryptocurrency is not in this list and is always last:
+ * Currently offered: PayPal and Cash App only. Cryptocurrency is not in this list and is always last:
  * checkout appends it as its own group, because it opens a NOWPayments invoice
  * rather than waiting for instructions. The customer still has to choose a
  * method -- nothing is preselected.
@@ -67,7 +66,8 @@ export const MANUAL_METHODS: ManualMethod[] = [
     blurb: "Choose your transfer route — payment details emailed after your order is reviewed",
     icon: "🏦",
     region: "Worldwide",
-    enabled: true,
+    // Retired: only PayPal and Cash App are offered. Kept so existing orders still resolve.
+    enabled: false,
     requiresRoute: true,
   },
   {
@@ -96,7 +96,8 @@ export const MANUAL_METHODS: ManualMethod[] = [
     blurb: "U.S. bank-to-bank — payment details emailed after your order is reviewed",
     icon: "🇺🇸",
     region: "United States",
-    enabled: true,
+    // Retired: only PayPal and Cash App are offered. Kept so existing orders still resolve.
+    enabled: false,
   },
   {
     id: "wire",
@@ -104,7 +105,8 @@ export const MANUAL_METHODS: ManualMethod[] = [
     blurb: "Cross-border wire — payment details emailed after your order is reviewed",
     icon: "🌎",
     region: "International",
-    enabled: true,
+    // Retired: only PayPal and Cash App are offered. Kept so existing orders still resolve.
+    enabled: false,
   },
 ];
 

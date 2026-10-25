@@ -151,9 +151,47 @@ The LML titles mention a "Controller" or Pressure Box, but the pages give no det
 
 Not updated: the TapShifter SST variants (#2727, #4126), because the page shows no TapShifter variant and names a different part number; #2794 (1064492SM, 2WD slip yoke), because the TowMaster page's variant selector shows only 4WD/2WD flange. The 48RE package page lists an install time of 8 hours and an optional auxiliary filter kit and billet input shaft; neither is claimed as included. Core ($2,000-$2,500) and warranty are not copied.
 
+47RE Transmission & Converter Packages (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2730, #4129 | 1064184SS TowMaster 2000-2002 4WD; 2WD sibling 1064182SS | `towmaster-transmission-converter-package-dodge-47re-2000-2002` |
+| #2818 | 1064174SS 1998.5-1999 24-valve 4WD | `towmaster-dodge-47re-transmission-converter-package-1998-5-1999-24-valve-4wd` |
+| #2823 | 1064164SS 1996-1998 12-valve 4WD | `towmaster-dodge-47re-transmission-converter-package-1996-1998-12-valve-4wd` |
+| #2825 | 1064162SS 1996-1997 2WD, speed sensor and speedo head | `towmaster-dodge-47re-transmission-converter-package-1996-1997-2wd-w-speed-sensor-speedo-head` |
+| #2822 | 1064172SS 1997-1999 2WD, speed sensor only | `towmaster-dodge-47re-transmission-converter-package-1997-1999-2wd-w-speed-sensor-only-no-speedo-head` |
+
+Flagged: the 2000-2002 page describes both a ProForce 3D and a standard ProForce converter without saying which ships, so the converter is a "confirm" item there. The auxiliary filter kit is listed among features on every page except 1996-1997, but none says it is included; it is stated as "confirm" rather than included. The "upgraded 48RE sunshell" named on each page is left out, as on the transmission-only 47RE units. Core ($2,500) and warranty are not copied. Open: BD's 2WD part number for the 2000-2002 page.
+
+6R140 packages (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2790 | 1064514SS TowMaster 2017-2019 | `towmaster-ford-6r140-transmission-converter-package-2017-2019-6-7l-power-stroke-2wd-4wd` |
+| #2207 | 1064534SS Roadmaster 2017-2019 | `roadmaster-6r140-2wd-4wd-transmission-converter-package-ford-6-7l-power-stroke-2017-2019` |
+| #2761 | 1064504BM TorqueMaster 2011-2016 | `torquemaster-ford-6r140-transmission-converter-package-6-7l-power-stroke-2011-2016-2wd-4wd` |
+| #2206 | 1064524SS Roadmaster 2011-2016 | `roadmaster-6r140-4wd-transmission-converter-package-ford-6-7l-power-stroke-2011-2016` |
+
+Each page shows one part number for 2WD and 4WD. Flagged: the TowMaster and TorqueMaster pages list an electronic line pressure controller among the features but do not clearly say it is included (the Roadmaster pages do list it), so it is a "confirm" item on those two and not claimed. Not updated: #2791 (TowMaster 2011-2016, 1064504SS) and #2760 (TorqueMaster 2017-2019, 1064514BM), whose own product pages were not found. Core ($1,200), warranty and the 24/36-month figures are not copied.
+
+Roadmaster 10R80, 6L80, 66RFE and E4OD packages (checked 2026-10-09, pages under https://us.bddiesel.com/products/):
+
+| Listing | Part | Page |
+|---|---|---|
+| #2752, #4179 | 1064624SS F-150 5.0L V8 4WD; 1064622SS 2WD (named in the page's image text) | `roadmaster-ford-10r80-transmission-converter-package-f-150-5-0l-v8-2018-2020` |
+| #2715 | 1064614SS F-150 V6 4WD | `roadmaster-ford-10r80-transmission-converter-package-f-150-2-7l-3-5l-v6-2018-2020` |
+| #2716, #4112 | 1064604SS F-150 3.0L Power Stroke 2018-2020; 2WD sibling 1064602SS | `roadmaster-transmission-converter-package-10r80-ford-f-150-3-0l-power-stroke-diesel-2018-2020` |
+| #2712, #4109 | 1064694SS 2017 F-150 (park-by-wire); 1064692SS conventional shifter (named in the FAQ) | `roadmaster-transmission-converter-package-10r80-ford-f150-2-7l-3-5l-ecoboost-raptor-2017` |
+| #2713 | 1064674SS 2021-2024 F-150/Expedition/Raptor | `roadmaster-transmission-converter-package-10r80-ecoboost-f150-3-5l-2-7l-2021-2024-expedition-navigator-raptor-3-5l-2021-2024-2wd-2022-2024-4wd` |
+| #2710, #4108 | 1064844SS 6L80 Silverado/Sierra 1500; 1064842SS 2WD sibling | `roadmaster-6l80-transmission-converter-package-chevy-gmc-1500-2014-2021` |
+| #2706, #4070 | 1064914SS 66RFE Ram HEMI; 1064912SS 2WD sibling | `roadmaster-transmission-converter-package-66rfe-ram-2500-3500-5-7l-6-4l-hemi-2012-2018` |
+| #2758, #4190 | 1064074SS E4OD 7.3L; 1064072SS 2WD sibling (image text only) | `roadmaster-transmission-converter-package-e4od-ford-f250-f350-7-3l-power-stroke-1995-1997` |
+
+Conflicts on BD's own pages, stated as "confirm" or left out: installation time (11 h 30 min in the specification vs about 10-13 h in the FAQ) on the 10R80 pages; tuning (a Ford scanner relearn in the notes vs "no tuning needed" in the FAQ) on the V8 and V6 pages; core deposit ($1,500 banner vs $2,750 in the V6 FAQ, not copied). The 10R80 pages' claim of about 30% more line pressure appears only in a FAQ, not in the feature list, so it is not claimed. #4111 (1064612SS) is not updated because the V6 page lists it as V6 2WD in one place and says the package is not for 2WD in another. Not fetched: Transit #2707, 2018-2021 Expedition #2714, 2021 3.0L PSD #2717/#4113.
+
 L5P (#2210, #2211, #4048, #4052): no individual product page could be found (only collection pages and a blog post, which disagree on price and give no itemized contents), so nothing was applied. Open: locate the L5P product pages or ask BD.
 
-Not yet researched: the remaining BD transmission-only and package listings (about 40: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
+Not yet researched: the remaining BD transmission-only and package listings (about 15: 2WD siblings, Roadmaster 2019-2024 transmission-only, 47RH/E4OD, other Allison 1000 units, 66RFE, 10R80, 6L80 and the other converter packages).
 
 ## Not researched yet
 
