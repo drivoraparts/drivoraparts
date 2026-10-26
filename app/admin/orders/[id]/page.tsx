@@ -103,7 +103,11 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
       <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
         <SummaryTile label="Customer">
           <p className="truncate text-sm font-semibold text-zinc-900">{order.customer?.full_name ?? "—"}</p>
-          <p className="truncate text-xs text-zinc-500">{order.customer?.email ?? ""}</p>
+          {/* Full address, never cut off: a smaller size keeps it on one line in this
+              tile, and break-all lets a very long one wrap rather than overflow. */}
+          <p className="break-all text-[11px] leading-tight text-zinc-500">
+            {order.customer?.email ?? ""}
+          </p>
         </SummaryTile>
         <SummaryTile label="Control">
           <StatusPill value={order.control_status} />
