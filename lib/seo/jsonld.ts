@@ -2,7 +2,6 @@ import type { Product } from "@/lib/inventory/types";
 import {
   COMPANY_ADDRESS,
   COMPANY_LEGAL_NAME,
-  COMPANY_PHONE_DISPLAY,
   COMPANY_SUPPORT_EMAIL,
 } from "@/lib/content/company";
 import { routes } from "@/lib/inventory/routes";
@@ -26,13 +25,12 @@ export function organizationJsonLd(): JsonLd {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: SITE_NAME,
-    // The registered entity behind the brand, with the business address and
-    // phone number the owner has chosen to publish.
+    // The registered entity behind the brand, with the business address the
+    // owner has chosen to publish.
     legalName: COMPANY_LEGAL_NAME,
     url: absoluteUrl("/"),
     logo: absoluteImageUrl("/favicon.png"),
     email: COMPANY_SUPPORT_EMAIL,
-    telephone: COMPANY_PHONE_DISPLAY,
     ...(COMPANY_ADDRESS
       ? {
           address: {

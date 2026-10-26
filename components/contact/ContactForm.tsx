@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import PhoneContact from "@/components/content/PhoneContact";
 import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { showToast } from "@/lib/store/toastStore";
 
@@ -224,7 +223,7 @@ export default function ContactForm({
         >
           {COMPANY_SUPPORT_EMAIL}
         </a>
-        , or <PhoneContact variant="inline" linkClassName="text-accent hover:text-accent-hover" />.
+        .
       </p>
     </form>
   );

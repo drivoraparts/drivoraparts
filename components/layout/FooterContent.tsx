@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import PhoneContact from "@/components/content/PhoneContact";
 import FooterSocialLinks from "@/components/layout/FooterSocialLinks";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import NewsletterSignup from "@/components/layout/NewsletterSignup";
@@ -187,10 +186,6 @@ export default function FooterContent() {
               {COMPANY_SUPPORT_EMAIL}
             </a>
           </p>
-          <PhoneContact
-            className="mt-1 text-sm text-foreground-on-dark"
-            linkClassName={`items-center text-accent-on-dark transition-colors hover:text-foreground-on-dark ${focusRing}`}
-          />
           <FooterSocialLinks className="mt-3 -ml-2" />
         </div>
 

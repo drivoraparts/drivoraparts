@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact/ContactForm";
 import CompanyAddress from "@/components/content/CompanyAddress";
-import PhoneContact from "@/components/content/PhoneContact";
 import {
   CALIFORNIA_FULFILLMENT,
   COMPANY_LEGAL_NAME,
@@ -43,7 +42,6 @@ export default function ContactPage() {
             </a>
             .
           </p>
-          <PhoneContact className="mt-2 text-sm" linkClassName="font-semibold text-accent underline-offset-2 hover:text-accent-hover hover:underline" />
         </div>
 
         {/*
