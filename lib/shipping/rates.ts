@@ -21,7 +21,7 @@
         the fixed freight rate for its destination from
         FREIGHT_RATE_TABLES (one flat charge per order, instead of
         the parcel charge).
-     4. Destinations outside the US, UK and Australia, and
+     4. Destinations without a published rate (anything outside the US, UK, Australia and the 13 fixed-rate countries), and
         subtotals above the top of the tables, are "pending" --
         never $0 -- and quoted manually before the customer pays,
         as the Shipping Policy says.

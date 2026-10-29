@@ -125,7 +125,7 @@ export default function CheckoutPage() {
     [cart]
   );
   /*
-   * The shipping charge, from the published rate tables (US, UK, Australia).
+   * The shipping charge, from the published rate tables (US, UK, Australia and 13 other countries).
    *
    * Asked of /api/shipping/quote -- the same calculation /api/checkout uses to
    * write the order -- whenever the cart or the country changes, so the
@@ -719,6 +719,19 @@ export default function CheckoutPage() {
                       <option value="United States" />
                       <option value="United Kingdom" />
                       <option value="Australia" />
+                      <option value="Canada" />
+                      <option value="Denmark" />
+                      <option value="Finland" />
+                      <option value="France" />
+                      <option value="Georgia" />
+                      <option value="Germany" />
+                      <option value="Greece" />
+                      <option value="Luxembourg" />
+                      <option value="Madagascar" />
+                      <option value="New Zealand" />
+                      <option value="Poland" />
+                      <option value="Switzerland" />
+                      <option value="Vietnam" />
                     </datalist>
                     {shipQuote?.note ? (
                       <p className="mt-1 text-xs text-neutral-500" aria-live="polite">

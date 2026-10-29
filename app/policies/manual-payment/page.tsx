@@ -68,7 +68,7 @@ export default function ManualPaymentPage() {
         {
           heading: "Shipping and the amount due",
           paragraphs: [
-            "Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout, before you place the order. Freight and multi-box items are charged one fixed freight rate per order, shown at checkout before you place the order. For other destinations, shipping is confirmed in your payment details before you pay, together with the final amount due.",
+            "Standard shipping to the US, UK, Australia and 13 other countries listed in our Shipping Policy is charged from our published rates and shown at checkout, before you place the order. Freight and multi-box items are charged one fixed freight rate per order, shown at checkout before you place the order. For other destinations, shipping is confirmed in your payment details before you pay, together with the final amount due.",
             <>
               How shipping is worked out, and when it may be free, is set out in the{" "}
               <Link href="/policies/shipping-policy" prefetch={false} className={linkClass}>
