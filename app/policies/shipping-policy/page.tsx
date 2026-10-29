@@ -65,7 +65,7 @@ export default function ShippingPolicyPage() {
   return (
     <Policy
       title="Shipping Policy"
-      lastUpdated="October 29, 2026"
+      lastUpdated="October 30, 2026"
       intro={`This Shipping Policy explains how ${COMPANY_LEGAL_NAME} (“Company”, “we”, “us”) processes, ships, and delivers orders placed through our website and services (the “Services”). It also describes estimated timeframes, shipping costs, international shipping, and the responsibilities of both the Company and the customer. Please review this policy carefully before placing an order, as placing an order indicates your acceptance of the terms described here.`}
       sections={[
         {
