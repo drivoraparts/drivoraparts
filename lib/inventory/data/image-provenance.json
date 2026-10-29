@@ -64919,6 +64919,35 @@
     "height": 600,
     "downloadedAt": "2026-10-29T23:38:24.841Z",
     "status": "downloaded",
-    "verified": "file present and viewed; product page fitment (2004-2021 STI, 2007-2009 Legacy Spec B) equals the listing fitment; the listing carries no part number, so the exact ACT variant (SB10-HDSS) is inferred from fitment and unconfirmed"
+    "verified": "file present and viewed; part number SB10-HDSS confirmed by the site owner and matches the distributor page, whose fitment (2004-2021 STI, 2007-2009 Legacy Spec B) equals the listing"
+  },
+  "product-1977": {
+    "productId": 1977,
+    "productName": "Exedy Hyper Single EVO Clutch and Flywheel Kit TH08SDX — Toyota 86 / GR86, Subaru BRZ",
+    "localFile": "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg",
+    "sourceUrl": "https://makeshop-multi-images.akamaized.net/HYPERSHOP/itemimages/000000000882_Z6USokz.jpg",
+    "sourceName": "exedy-racing-shop.com",
+    "landingPage": "https://www.exedy-racing-shop.com/shopdetail/000000000882/",
+    "creator": "EXEDY Corporation (EXEDY Racing Clutch official shop)",
+    "creatorUrl": "https://www.exedy-racing.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own online shop item for TH08SDX — no machine-readable licence is offered by the source; downloaded on the site owner's explicit instruction. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "TH08SDX",
+      "Hyper SINGLE EVO",
+      "86/GR86 ZN6 ZN8",
+      "BRZ ZC6 ZD8"
+    ],
+    "query": "\"TH08SDX\" Exedy",
+    "sha256": "4ec548df1af2b5444f5c231961cb6099a3ce380e1742fefba15ba3e8f4afbc66",
+    "bytes": 182935,
+    "width": 1371,
+    "height": 1160,
+    "downloadedAt": "2026-10-29T23:45:14.805Z",
+    "status": "downloaded",
+    "verified": "file present and viewed (Hyper SINGLE EVO cover, disc and flywheel); the shop item page title carries TH08SDX; the cover in the photo is stamped CH63S while a UK retailer lists CH66S for the kit, so the photo may be a family image of the same product"
   }
 }
