@@ -64892,5 +64892,62 @@
     "downloadedAt": "2026-10-02T20:31:57.078Z",
     "status": "retained",
     "verified": "verified visually: exploded ACT twin-disc kit (flywheel, two discs, floater, pressure plate) identical in composition to the T2R-F05 product image on tf-works.com (500 px there; 800 px here)"
+  },
+  "product-1980": {
+    "productId": 1980,
+    "productName": "ACT Heavy Duty Clutch Kit for Subaru WRX STI",
+    "localFile": "/product-media/transmission/act-hd-clutch-kit-for-subaru-wrx-sti/1.jpg",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/0754/6748/9554/products/29e2b894fc137fa357367bdb16fb727f.jpg?v=1694749404",
+    "sourceName": "rallysportdirect.com",
+    "landingPage": "https://www.rallysportdirect.com/products/act-sb10-hdss-act-heavy-duty-performance-street-disc-clutch-kit",
+    "creator": "Advanced Clutch Technology (ACT), via distributor Rally Sport Direct",
+    "creatorUrl": "https://www.advancedclutch.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "distributor product photography of the manufacturer's kit — no machine-readable licence is offered by the source; downloaded on the site owner's explicit instruction. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "SB10-HDSS",
+      "2004-2021 Subaru STI",
+      "2007-2009 Legacy Spec B"
+    ],
+    "query": "ACT SB7-HDSS / STI clutch kit search; distributor page lists SB10-HDSS for 2004-2021 STI and 07-09 Legacy GT Spec B",
+    "sha256": "86b9cecb7908c5212f6d0f6e104fa3310a6c02561df0a0296486b3163646dc61",
+    "bytes": 121540,
+    "width": 900,
+    "height": 600,
+    "downloadedAt": "2026-10-29T23:38:24.841Z",
+    "status": "downloaded",
+    "verified": "file present and viewed; part number SB10-HDSS confirmed by the site owner and matches the distributor page, whose fitment (2004-2021 STI, 2007-2009 Legacy Spec B) equals the listing"
+  },
+  "product-1977": {
+    "productId": 1977,
+    "productName": "Exedy Hyper Single EVO Clutch and Flywheel Kit TH08SDX — Toyota 86 / GR86, Subaru BRZ",
+    "localFile": "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg",
+    "sourceUrl": "https://makeshop-multi-images.akamaized.net/HYPERSHOP/itemimages/000000000882_Z6USokz.jpg",
+    "sourceName": "exedy-racing-shop.com",
+    "landingPage": "https://www.exedy-racing-shop.com/shopdetail/000000000882/",
+    "creator": "EXEDY Corporation (EXEDY Racing Clutch official shop)",
+    "creatorUrl": "https://www.exedy-racing.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own online shop item for TH08SDX — no machine-readable licence is offered by the source; downloaded on the site owner's explicit instruction. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "TH08SDX",
+      "Hyper SINGLE EVO",
+      "86/GR86 ZN6 ZN8",
+      "BRZ ZC6 ZD8"
+    ],
+    "query": "\"TH08SDX\" Exedy",
+    "sha256": "4ec548df1af2b5444f5c231961cb6099a3ce380e1742fefba15ba3e8f4afbc66",
+    "bytes": 182935,
+    "width": 1371,
+    "height": 1160,
+    "downloadedAt": "2026-10-29T23:45:14.805Z",
+    "status": "downloaded",
+    "verified": "file present and viewed (Hyper SINGLE EVO cover, disc and flywheel); the shop item page title carries TH08SDX; the cover in the photo is stamped CH63S while a UK retailer lists CH66S for the kit, so the photo may be a family image of the same product"
   }
 }

@@ -644,11 +644,11 @@
     "price": 620,
     "stock": false,
     "fitment": "Toyota 86 / GR86 (ZN6, ZN8) and Subaru BRZ (ZC6, ZD8) with the FA20 or FA24 engine, 2012 onward",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "thumbnail": "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
+    "image": "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg",
     "description": "Exedy Hyper Single EVO Clutch and Flywheel Kit TH08SDX — Toyota 86 / GR86, Subaru BRZ\n\nExedy's single-plate Hyper Single EVO kit for the 86/BRZ platform. It combines a lightweight flywheel with a high-strength aluminium cover and an Ultra Fiber EVO disc, giving more holding power than stock with a quiet, street-friendly damper. Flywheel bolts and the pilot bearing are not included and must be sourced separately.\n\nFitment: Toyota 86 / GR86 (ZN6, ZN8) and Subaru BRZ (ZC6, ZD8) with the FA20 or FA24 engine, 2012 onward\nPart Number: TH08SDX\nSpecifications: Single plate; 230 mm disc; 8,750 N clamp load; push-type cover; Ultra Fiber EVO facing; kit includes cover, disc, flywheel and bolt set; OEM flywheel bolts and pilot bearing not included\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "exedy-hyper-single-clutch-kit-for-toyota-gr86",
     "createdAt": 1751959999968,
@@ -703,14 +703,15 @@
     "price": 683.82,
     "stock": false,
     "fitment": "Subaru WRX STI 2004–2021 (EJ257) and Legacy Spec B 2007–2009",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "thumbnail": "/product-media/transmission/act-hd-clutch-kit-for-subaru-wrx-sti/1.jpg",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/act-hd-clutch-kit-for-subaru-wrx-sti/1.jpg"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
+    "image": "/product-media/transmission/act-hd-clutch-kit-for-subaru-wrx-sti/1.jpg",
     "description": "ACT Heavy Duty Clutch Kit for Subaru WRX STI\n\nClutch kit.\nFitment: Subaru WRX STI 2004–2021 (EJ257) and Legacy Spec B 2007–2009\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "act-hd-clutch-kit-for-subaru-wrx-sti",
-    "createdAt": 1751959999965
+    "createdAt": 1751959999965,
+    "partNumber": "SB10-HDSS"
   },
   {
     "id": 1981,
