@@ -17,13 +17,14 @@
         (item prices x quantities, before discounts). Google
         Merchant Center's price-based table is applied to the
         order total the same way, so the two agree.
-     3. A cart containing any multibox or freight item has no
-        published rate yet (FREIGHT_RATE_TABLES are null). It is
-        reported as "pending", never as $0, and the existing
-        manual quote happens before the customer pays.
-     4. Destinations outside the US, and subtotals above the top
-        of the table, are also "pending" -- quoted manually, as
-        the Shipping Policy already says.
+     3. A cart containing any multibox or freight item is charged
+        the fixed freight rate for its destination from
+        FREIGHT_RATE_TABLES (one flat charge per order, instead of
+        the parcel charge).
+     4. Destinations outside the US, UK and Australia, and
+        subtotals above the top of the tables, are "pending" --
+        never $0 -- and quoted manually before the customer pays,
+        as the Shipping Policy says.
 
    These are published policy values, not carrier quotes.
    Change the numbers here; nothing else needs to move.

@@ -319,14 +319,14 @@ export const NEWS_ARTICLES: NewsArticle[] = [
         type: "p",
         text: "Customers can contact DrivoraParts with a VIN or part number before ordering and ask for fitment assistance. It is help from the team, not automated verification, and fitment is not guaranteed.",
       },
-      { type: "h2", text: "Step two: shipping is quoted per order" },
+      { type: "h2", text: "Step two: shipping is shown before you order" },
       {
         type: "p",
-        text: "DrivoraParts does not price shipping automatically through a carrier connection. Shipping for an order is worked out for that order and sent to the customer with the payment details. The figure depends on the item, how it travels (parcel, multiple boxes or palletized freight) and the destination.",
+        text: "DrivoraParts does not price shipping through a live carrier connection. Standard parcel orders to the US, UK and Australia are charged from published rates, and orders with a freight or multi-box item pay one fixed freight charge for the destination. Both are shown at checkout before the order is placed. Other destinations are worked out for that order and sent to the customer with the payment details.",
       },
       {
         type: "p",
-        text: "Engines, transmissions and other heavy or bulky items typically move as freight, which is priced differently from a parcel. Buyers should look at the quoted shipping cost before paying, not after.",
+        text: "Engines, transmissions and other heavy or bulky items typically move as freight, which is priced differently from a parcel. Buyers should look at the shipping cost before paying, not after.",
       },
       { type: "h2", text: "Step three: payment" },
       {

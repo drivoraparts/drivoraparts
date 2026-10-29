@@ -89,7 +89,7 @@ export default function BrandRangeSummary({
           state no warranty. */}
       <p className="text-sm leading-relaxed text-neutral-600">
         Price, condition and any fitment or warranty terms are stated on each{" "}
-        {brandName} listing. Heavy assemblies ship as freight. Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout; freight items and other destinations are confirmed with you before payment.{" "}
+        {brandName} listing. Heavy assemblies ship as freight. Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order, and other destinations are confirmed with you before payment.{" "}
         <Link
           href={routes.category(categorySlug)}
           className="font-medium text-accent underline-offset-2 hover:underline"
