@@ -187,12 +187,54 @@ export const AU_PARCEL_RATE_TABLE: readonly RateBracket[] = [
 ];
 
 /* ---------------------------------------------------------
+   Thirteen more destinations
+   Parcel carts: USD 45 per order, free from USD 250. Charged in
+   USD only; there is no local-currency display text for these.
+   Their multibox and freight rate is the flat USD 450 below.
+--------------------------------------------------------- */
+
+/** Parcel carts to the thirteen countries below: USD 45 under USD 250, free from USD 250. */
+export const INTL_PARCEL_RATE_TABLE: readonly RateBracket[] = [
+  bracket(0, 249.99, 45),
+  bracket(250, TABLE_TOP, 0),
+];
+
+/** ISO 3166 alpha-2 codes of the thirteen countries sharing INTL_PARCEL_RATE_TABLE. */
+export const FIXED_RATE_COUNTRY_CODES = [
+  "CA", "DK", "FI", "FR", "GE", "DE", "GR", "LU", "MG", "NZ", "PL", "CH", "VN",
+] as const;
+
+export type FixedRateCountryCode = (typeof FIXED_RATE_COUNTRY_CODES)[number];
+
+/** Customer-facing names, in the order the Shipping Policy lists them. */
+export const FIXED_RATE_COUNTRY_NAMES: Record<FixedRateCountryCode, string> = {
+  CA: "Canada",
+  DK: "Denmark",
+  FI: "Finland",
+  FR: "France",
+  GE: "Georgia",
+  DE: "Germany",
+  GR: "Greece",
+  LU: "Luxembourg",
+  MG: "Madagascar",
+  NZ: "New Zealand",
+  PL: "Poland",
+  CH: "Switzerland",
+  VN: "Vietnam",
+};
+
+/* ---------------------------------------------------------
    Destinations with published rates
 --------------------------------------------------------- */
 
-export type ShippingDestination = "US" | "GB" | "AU";
+export type ShippingDestination = "US" | "GB" | "AU" | FixedRateCountryCode;
 
-export const SHIPPING_DESTINATIONS: readonly ShippingDestination[] = ["US", "GB", "AU"];
+export const SHIPPING_DESTINATIONS: readonly ShippingDestination[] = [
+  "US",
+  "GB",
+  "AU",
+  ...FIXED_RATE_COUNTRY_CODES,
+];
 
 export type DestinationInfo = {
   /** Name used in customer-facing copy. */
@@ -212,7 +254,19 @@ export type DestinationInfo = {
   };
 };
 
+const FIXED_RATE_DESTINATIONS = Object.fromEntries(
+  FIXED_RATE_COUNTRY_CODES.map((code) => [
+    code,
+    {
+      name: FIXED_RATE_COUNTRY_NAMES[code],
+      service: `standard shipping to ${FIXED_RATE_COUNTRY_NAMES[code]}`,
+      parcelTable: INTL_PARCEL_RATE_TABLE,
+    },
+  ])
+) as Record<FixedRateCountryCode, DestinationInfo>;
+
 export const DESTINATIONS: Record<ShippingDestination, DestinationInfo> = {
+  ...FIXED_RATE_DESTINATIONS,
   US: { name: "the United States", service: "standard US shipping", parcelTable: US_PARCEL_RATE_TABLE },
   GB: {
     name: "the United Kingdom",
@@ -248,30 +302,37 @@ export function approxLocal(destination: ShippingDestination, usd: number): stri
  *   United States    $199.00
  *   United Kingdom   $395.00  (about GBP 299)
  *   Australia        $279.00  (about AUD 399)
+ *   Canada, Denmark, Finland, France, Georgia, Germany, Greece, Luxembourg,
+ *   Madagascar, New Zealand, Poland, Switzerland, Vietnam: $450.00 each
  *
  * The tables run from $0 to the same top as the parcel tables, so an order
- * above that value, and any destination outside the US, UK and Australia, is
- * still quoted by hand before payment. Merchant Center needs a matching
+ * above that value, and any destination without a published rate, is still
+ * quoted by hand before payment. Merchant Center needs a matching
  * delivery policy for each label and country at these same amounts.
  */
 export const FREIGHT_FLAT_RATE_USD: Record<ShippingDestination, number> = {
   US: 199,
   GB: 395,
   AU: 279,
+  ...(Object.fromEntries(FIXED_RATE_COUNTRY_CODES.map((code) => [code, 450])) as Record<
+    FixedRateCountryCode,
+    number
+  >),
 };
 
 function flatTable(feeUsd: number): readonly RateBracket[] {
   return [bracket(0, TABLE_TOP, feeUsd)];
 }
 
-export const FREIGHT_RATE_TABLES: Record<
+export const FREIGHT_RATE_TABLES = Object.fromEntries(
+  SHIPPING_DESTINATIONS.map((code) => [
+    code,
+    { multibox: flatTable(FREIGHT_FLAT_RATE_USD[code]), freight: flatTable(FREIGHT_FLAT_RATE_USD[code]) },
+  ])
+) as Record<
   ShippingDestination,
   Record<Exclude<ShippingLabel, "parcel">, readonly RateBracket[] | null>
-> = {
-  US: { multibox: flatTable(FREIGHT_FLAT_RATE_USD.US), freight: flatTable(FREIGHT_FLAT_RATE_USD.US) },
-  GB: { multibox: flatTable(FREIGHT_FLAT_RATE_USD.GB), freight: flatTable(FREIGHT_FLAT_RATE_USD.GB) },
-  AU: { multibox: flatTable(FREIGHT_FLAT_RATE_USD.AU), freight: flatTable(FREIGHT_FLAT_RATE_USD.AU) },
-};
+>;
 
 export function rateTableFor(
   label: ShippingLabel,
@@ -377,6 +438,20 @@ const COUNTRY_NAMES: Record<ShippingDestination, ReadonlySet<string>> = {
     "northern ireland",
   ]),
   AU: new Set(["au", "aus", "australia", "commonwealth of australia"]),
+  CA: new Set(["ca", "can", "canada"]),
+  DK: new Set(["dk", "dnk", "denmark", "kingdom of denmark"]),
+  FI: new Set(["fi", "fin", "finland", "republic of finland"]),
+  FR: new Set(["fr", "fra", "france", "french republic"]),
+  // The country, not the US state: this is a country field.
+  GE: new Set(["ge", "geo", "georgia", "georgia country", "republic of georgia", "sakartvelo"]),
+  DE: new Set(["de", "deu", "ger", "germany", "deutschland", "federal republic of germany"]),
+  GR: new Set(["gr", "grc", "greece", "hellenic republic"]),
+  LU: new Set(["lu", "lux", "luxembourg", "luxemburg", "grand duchy of luxembourg"]),
+  MG: new Set(["mg", "mdg", "madagascar", "republic of madagascar"]),
+  NZ: new Set(["nz", "nzl", "new zealand", "aotearoa"]),
+  PL: new Set(["pl", "pol", "poland", "polska", "republic of poland"]),
+  CH: new Set(["ch", "che", "switzerland", "swiss confederation", "schweiz", "suisse"]),
+  VN: new Set(["vn", "vnm", "vietnam", "viet nam", "socialist republic of vietnam"]),
 };
 
 /** The destination with published rates for a country as typed at checkout. */

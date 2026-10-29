@@ -21,6 +21,8 @@ import {
   freeFromThreshold,
   US_PARCEL_RATE_TABLE,
   FREIGHT_FLAT_RATE_USD,
+  FIXED_RATE_COUNTRY_CODES,
+  FIXED_RATE_COUNTRY_NAMES,
   rateTableFor,
   type ShippingDestination,
 } from "@/lib/shipping/rate-table";
@@ -69,6 +71,12 @@ function singleItemUsCharge(price: number): number | undefined {
   return row ? row.feeCents / 100 : undefined;
 }
 
+/** "Canada, Denmark, ... and Vietnam": the countries that share one published rate. */
+const FIXED_RATE_COUNTRIES = FIXED_RATE_COUNTRY_CODES.map((code) => FIXED_RATE_COUNTRY_NAMES[code]);
+const FIXED_RATE_COUNTRY_LIST = `${FIXED_RATE_COUNTRIES.slice(0, -1).join(", ")} and ${
+  FIXED_RATE_COUNTRIES[FIXED_RATE_COUNTRIES.length - 1]
+}`;
+
 /**
  * The fixed freight charge for a freight or multi-box item, per country, from
  * the same tables checkout charges from. Undefined when the item's price is
@@ -80,6 +88,7 @@ function freightCharges(label: "multibox" | "freight", price: number) {
     { code: "US", name: "the United States" },
     { code: "GB", name: "the United Kingdom" },
     { code: "AU", name: "Australia" },
+    { code: FIXED_RATE_COUNTRY_CODES[0], name: FIXED_RATE_COUNTRY_LIST },
   ];
   const lines = destinations.map(({ code, name }) => {
     const table = rateTableFor(label, code);
@@ -149,7 +158,8 @@ export default function PurchaseFacts({
               Charged by order subtotal from our published US rates (free on parcel
               orders under ${US_FREE_PARCEL_BELOW.toLocaleString("en-US")}) and shown
               at checkout before you order. {internationalParcelTerms("GB", "UK")}{" "}
-              {internationalParcelTerms("AU", "Australia")} Elsewhere, shipping is
+              {internationalParcelTerms("AU", "Australia")}{" "}
+              {internationalParcelTerms(FIXED_RATE_COUNTRY_CODES[0], FIXED_RATE_COUNTRY_LIST)} Elsewhere, shipping is
               confirmed with you before payment.{" "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (

@@ -3,6 +3,7 @@ import {
   classifyProductShipping,
   findBracket,
   rateTableFor,
+  SHIPPING_DESTINATIONS,
   type ShippingDestination,
   type ShippingLabel,
 } from "@/lib/shipping/rates";
@@ -41,13 +42,14 @@ function shippingDetailsForCountry(
     "@type": "OfferShippingDetails",
     /*
      * A rate is stated ONLY where one is published: the United States, the
-     * United Kingdom and Australia, for a standard parcel item, from that
+     * United Kingdom, Australia and the thirteen countries in
+     * FIXED_RATE_COUNTRY_CODES, for a standard parcel item, from that
      * country's table in lib/shipping/rate-table.ts -- the item's own bracket,
      * which is what Google's price-based table gives for a single unit and
      * what checkout charges for it alone. Always in USD, the currency every
      * charge on the site is made in.
      *
-     * Everywhere else (Canada and every other destination) the rate is omitted
+     * Everywhere else (every other destination) the rate is omitted
      * rather than guessed. Freight and multi-box items use the fixed freight
      * rate for the country, from the same tables. This block once declared a
      * flat "0" USD for four countries on every product, which promised free shipping that the
@@ -83,6 +85,10 @@ const SHIPPING_COUNTRIES: Array<{
   { country: "AU", transitTime: TRANSIT_TIME_GB_AU },
   { country: "CA", transitTime: TRANSIT_TIME_INTERNATIONAL },
   { country: "GB", transitTime: TRANSIT_TIME_GB_AU },
+  ...["DK", "FI", "FR", "GE", "DE", "GR", "LU", "MG", "NZ", "PL", "CH", "VN"].map((country) => ({
+    country,
+    transitTime: TRANSIT_TIME_INTERNATIONAL,
+  })),
 ];
 
 /** Nested inside Product → offers for Google Merchant listings. */
@@ -93,7 +99,7 @@ export function productOfferShippingDetails(
   const { label } = classifyProductShipping(product);
   const rateFor = (country: string): number | undefined => {
     if (!Number.isFinite(offerPrice)) return undefined;
-    if (country !== "US" && country !== "GB" && country !== "AU") return undefined;
+    if (!SHIPPING_DESTINATIONS.includes(country as ShippingDestination)) return undefined;
     const table = rateTableFor(label, country as ShippingDestination);
     const row = table ? findBracket(table, Math.round(offerPrice * 100)) : undefined;
     return row ? row.feeCents / 100 : undefined;

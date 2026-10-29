@@ -322,7 +322,7 @@ export const NEWS_ARTICLES: NewsArticle[] = [
       { type: "h2", text: "Step two: shipping is shown before you order" },
       {
         type: "p",
-        text: "DrivoraParts does not price shipping through a live carrier connection. Standard parcel orders to the US, UK and Australia are charged from published rates, and orders with a freight or multi-box item pay one fixed freight charge for the destination. Both are shown at checkout before the order is placed. Other destinations are worked out for that order and sent to the customer with the payment details.",
+        text: "DrivoraParts does not price shipping through a live carrier connection. Standard parcel orders to the US, UK, Australia and 13 other listed countries are charged from published rates, and orders with a freight or multi-box item pay one fixed freight charge for the destination. Both are shown at checkout before the order is placed. Other destinations are worked out for that order and sent to the customer with the payment details.",
       },
       {
         type: "p",

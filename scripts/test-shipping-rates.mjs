@@ -75,6 +75,32 @@ results.cases = {
   usa: view(one(500, "USA")),
   us: view(one(500, "us")),
   canada: view(one(500, "Canada")),
+  // The thirteen fixed-rate countries: USD 45 under USD 250, free from USD 250, USD 450 freight/multibox.
+  ca0_01: view(one(0.01, "Canada")),
+  ca249_99: view(one(249.99, "Canada")),
+  ca250: view(one(250, "Canada")),
+  caFreight100: view(q([{ productId: 3, quantity: 1, price: 100 }], "Canada")),
+  caFreight5000: view(q([{ productId: 3, quantity: 1, price: 5000 }], "canada")),
+  caMultibox: view(q([{ productId: 4, quantity: 1, price: 100 }], "CA")),
+  caMixed: view(q([{ productId: 1, quantity: 1, price: 500 }, { productId: 3, quantity: 1, price: 50 }], "Canada")),
+  caAboveTable: view(one(75000, "Canada")),
+  caQty7At40: view(q([{ productId: 1, quantity: 7, price: 40 }], "Canada")),
+  dk100: view(one(100, "Denmark")),
+  fi100: view(one(100, "Finland")),
+  fr100: view(one(100, "France")),
+  ge100: view(one(100, "Georgia")),
+  de100: view(one(100, "Deutschland")),
+  gr100: view(one(100, "Greece")),
+  lu100: view(one(100, "Luxembourg")),
+  mg100: view(one(100, "Madagascar")),
+  nz100: view(one(100, "New Zealand")),
+  pl100: view(one(100, "Poland")),
+  ch100: view(one(100, "Switzerland")),
+  vn100: view(one(100, "Viet Nam")),
+  de250: view(one(250, "Germany")),
+  vnFreight: view(q([{ productId: 3, quantity: 1, price: 100 }], "Vietnam")),
+  japan: view(one(100, "Japan")),
+  austria: view(one(100, "Austria")),
   noCountry: view(one(500, "")),
   // United Kingdom: USD 33 below USD 200, free from USD 200.
   uk0_01: view(one(0.01, "United Kingdom")),
@@ -198,8 +224,10 @@ results.jsonld = {
   auParcel55_56: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 55.56), "AU")?.shippingRate?.value ?? null,
   auParcel500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "AU")?.shippingRate?.value ?? null,
   gbFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "GB")?.shippingRate?.value ?? null,
-  caFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "CA")?.shippingRate ?? null,
-  caParcel: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "CA")?.shippingRate ?? null,
+  caFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "CA")?.shippingRate?.value ?? null,
+  caParcel100: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 100), "CA")?.shippingRate?.value ?? null,
+  jpParcel: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 100), "JP")?.shippingRate?.value ?? null,
+  caParcel: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "CA")?.shippingRate?.value ?? null,
   gbTransit: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.deliveryTime?.transitTime ?? null,
   gbHandling: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.deliveryTime?.handlingTime ?? null,
 };
@@ -223,7 +251,7 @@ const expectCases = {
   p75000: "above_rate_table",
   twoAt600: 100, qty2At600: 100,
   mixedParcelFreight: 199, multibox: 199, unknownProduct: 199,
-  usa: 0, us: 0, canada: "no_destination_rate", noCountry: "destination_unknown",
+  usa: 0, us: 0, canada: 0, noCountry: "destination_unknown",
   uk0_01: 33, uk199_99: 33, uk200: 0, uk200_01: 0, uk5000: 0, ukTwoAt100: 0,
   ukMixedFreight: 395, ukMultibox: 395, ukAboveTable: "above_rate_table",
   au55: 28, au55_55: 28, au55_56: 0, au55_57: 0, auTwoAt27_78: 0, au10: 28,
@@ -232,7 +260,12 @@ const expectCases = {
   ukQty4: 33, ukQty5: 0, auQty1: 28, auQty2: 0,
   usDot: 0, usDotA: 0, usDots: 0, usSpaced: 0, usThe: 0, usParen: 0, usComma: 0, ukDot: 33, ukThe: 33,
   usTypo: "no_destination_rate",
-  jersey: "no_destination_rate", newZealand: "no_destination_rate",
+  jersey: "no_destination_rate", newZealand: 0,
+  ca0_01: 45, ca249_99: 45, ca250: 0, caFreight100: 450, caFreight5000: 450, caMultibox: 450, caMixed: 450,
+  caAboveTable: "above_rate_table", caQty7At40: 0,
+  dk100: 45, fi100: 45, fr100: 45, ge100: 45, de100: 45, gr100: 45, lu100: 45, mg100: 45, nz100: 45, pl100: 45,
+  ch100: 45, vn100: 45, de250: 0, vnFreight: 450,
+  japan: "no_destination_rate", austria: "no_destination_rate",
 };
 const expectDescribe = {
   us0: "Free standard US shipping",
@@ -297,8 +330,10 @@ for (const [k, v] of Object.entries(expectJsonld)) {
   if (out.jsonld[k] !== v) problems.push(`JSON-LD ${k}: expected ${v}, got ${out.jsonld[k]}`);
 }
 if (out.jsonld.gbFreight !== "395.00") problems.push(`JSON-LD UK freight rate: expected 395.00, got ${out.jsonld.gbFreight}`);
-if (out.jsonld.caFreight !== null) problems.push("JSON-LD states a rate for Canada freight, which has no published rate");
-if (out.jsonld.caParcel !== null) problems.push("JSON-LD states a rate for Canada, which has no published rate");
+if (out.jsonld.caFreight !== "450.00") problems.push(`JSON-LD Canada freight rate: expected 450.00, got ${out.jsonld.caFreight}`);
+if (out.jsonld.caParcel !== "0.00") problems.push(`JSON-LD Canada parcel $500 rate: expected 0.00, got ${out.jsonld.caParcel}`);
+if (out.jsonld.caParcel100 !== "45.00") problems.push(`JSON-LD Canada parcel $100 rate: expected 45.00, got ${out.jsonld.caParcel100}`);
+if (out.jsonld.jpParcel !== null) problems.push("JSON-LD states a rate for Japan, which has no published rate");
 if (out.jsonld.gbTransit?.minValue !== 5 || out.jsonld.gbTransit?.maxValue !== 15) problems.push(`UK transit is not 5-15: ${JSON.stringify(out.jsonld.gbTransit)}`);
 if (out.jsonld.gbHandling?.minValue !== 1 || out.jsonld.gbHandling?.maxValue !== 5) problems.push(`UK handling is not 1-5: ${JSON.stringify(out.jsonld.gbHandling)}`);
 
