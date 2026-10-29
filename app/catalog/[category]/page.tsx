@@ -8,6 +8,7 @@ import {
   slugify,
 } from "@/lib/inventory";
 import { LIST_SCROLL_KEYS } from "@/lib/catalog/list-scroll-restore";
+import { brands as registeredBrands } from "@/lib/inventory/brands";
 import { categories } from "@/lib/inventory/categories";
 import CategoryTemplate from "@/components/catalog/CategoryTemplate";
 import JsonLdScript from "@/components/seo/JsonLdScript";
@@ -98,7 +99,14 @@ export default async function Page({ params }: PageProps) {
         intro={description}
         brands={categoryData.brands.map((brand) => ({
           name: brand,
-          href: routes.brand(slug, slugify(brand)),
+          // The registered slug, not slugify(name): the brand page looks the
+          // brand up by slug, and the two differ for some ("Yukon Gear &
+          // Axle" is yukon-gear), which made those links 404.
+          href: routes.brand(
+            slug,
+            registeredBrands.find((b) => b.category === slug && b.name === brand)?.slug ??
+              slugify(brand)
+          ),
         }))}
         products={categoryData.products}
         showProducts
