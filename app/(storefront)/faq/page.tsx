@@ -77,7 +77,7 @@ const FAQS: FaqItem[] = [
       <>
         Yes. We ship to most domestic and many international destinations;
         some large or regulated items can only ship to certain regions.
-        Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout; freight items and other destinations are confirmed with you before payment. Orders are
+        Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order, and other destinations are confirmed with you before payment. Orders are
         typically processed within {ORDER_PROCESSING} once payment is
         verified, and delivery typically takes 5–15 business days after that
         — estimates, not guarantees. Smaller parts ship via standard carriers;

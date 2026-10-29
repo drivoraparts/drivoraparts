@@ -33,7 +33,14 @@ for (const [name, table] of [["US", US_PARCEL_RATE_TABLE], ["UK", UK_PARCEL_RATE
   try { validateRateTable(table); } catch (e) { tableError = name + ": " + String(e); }
 }
 results.tableError = tableError;
-results.freightTablesUnset = Object.values(FREIGHT_RATE_TABLES).every((t: any) => t.multibox === null && t.freight === null);
+let freightTableError: string | null = null;
+for (const [dest, tables] of Object.entries(FREIGHT_RATE_TABLES) as any) {
+  for (const label of ["multibox", "freight"]) {
+    try { validateRateTable(tables[label]); } catch (e) { freightTableError = dest + " " + label + ": " + String(e); }
+  }
+}
+results.freightTableError = freightTableError;
+results.freightFlat = Object.fromEntries(Object.entries(FREIGHT_RATE_TABLES).map(([d, t]: any) => [d, [t.multibox, t.freight].map((x: any) => x.map((b: any) => b.feeCents + ":" + b.minCents + "-" + b.maxCents).join("|"))]));
 results.usTableTop = US_PARCEL_RATE_TABLE[US_PARCEL_RATE_TABLE.length - 1].maxCents;
 results.ukTableTop = UK_PARCEL_RATE_TABLE[UK_PARCEL_RATE_TABLE.length - 1].maxCents;
 results.auTableTop = AU_PARCEL_RATE_TABLE[AU_PARCEL_RATE_TABLE.length - 1].maxCents;
@@ -181,7 +188,8 @@ const us = (d: any) => country(d, "US");
 results.jsonld = {
   parcel500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500))?.shippingRate?.value ?? null,
   parcel1500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 1500))?.shippingRate?.value ?? null,
-  freight500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingRate ?? null,
+  freight500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingRate?.value ?? null,
+  auFreight500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships in multiple boxes." }, 500), "AU")?.shippingRate?.value ?? null,
   freightLabel: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingLabel ?? null,
   gbParcel150: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 150), "GB")?.shippingRate?.value ?? null,
   gbParcel500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.shippingRate?.value ?? null,
@@ -189,7 +197,8 @@ results.jsonld = {
   auParcel55_55: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 55.55), "AU")?.shippingRate?.value ?? null,
   auParcel55_56: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 55.56), "AU")?.shippingRate?.value ?? null,
   auParcel500: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "AU")?.shippingRate?.value ?? null,
-  gbFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "GB")?.shippingRate ?? null,
+  gbFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "GB")?.shippingRate?.value ?? null,
+  caFreight: country(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500), "CA")?.shippingRate ?? null,
   caParcel: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "CA")?.shippingRate ?? null,
   gbTransit: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.deliveryTime?.transitTime ?? null,
   gbHandling: country(productOfferShippingDetails({ ...base, freightNotes: "Ships as a parcel." }, 500), "GB")?.deliveryTime?.handlingTime ?? null,
@@ -213,12 +222,12 @@ const expectCases = {
   p54999_99: 700, p55000: 750, p59999_99: 750, p60000: 800, p70000: 900, p74999_99: 900,
   p75000: "above_rate_table",
   twoAt600: 100, qty2At600: 100,
-  mixedParcelFreight: "freight_rate_not_set", multibox: "freight_rate_not_set", unknownProduct: "freight_rate_not_set",
+  mixedParcelFreight: 199, multibox: 199, unknownProduct: 199,
   usa: 0, us: 0, canada: "no_destination_rate", noCountry: "destination_unknown",
   uk0_01: 33, uk199_99: 33, uk200: 0, uk200_01: 0, uk5000: 0, ukTwoAt100: 0,
-  ukMixedFreight: "freight_rate_not_set", ukMultibox: "freight_rate_not_set", ukAboveTable: "above_rate_table",
+  ukMixedFreight: 395, ukMultibox: 395, ukAboveTable: "above_rate_table",
   au55: 28, au55_55: 28, au55_56: 0, au55_57: 0, auTwoAt27_78: 0, au10: 28,
-  auMixedFreight: "freight_rate_not_set", auMultibox: "freight_rate_not_set", auUnknownProduct: "freight_rate_not_set",
+  auMixedFreight: 279, auMultibox: 279, auUnknownProduct: 279,
   nullCountry: "destination_unknown", spacesCountry: "destination_unknown", usPadded: 0,
   ukQty4: 33, ukQty5: 0, auQty1: 28, auQty2: 0,
   usDot: 0, usDotA: 0, usDots: 0, usSpaced: 0, usThe: 0, usParen: 0, usComma: 0, ukDot: 33, ukThe: 33,
@@ -248,7 +257,12 @@ if (!out.countryError.empty || !out.countryError.nul || !out.countryError.spaces
   if (!page.includes("checkoutCountryError(country)")) problems.push("the checkout page no longer requires a country before submitting");
 }
 if (out.tableError) problems.push(`US rate table invalid: ${out.tableError}`);
-if (!out.freightTablesUnset) problems.push("a freight rate table is set -- update this test and the policy page deliberately");
+if (out.freightTableError) problems.push(`freight rate table invalid: ${out.freightTableError}`);
+for (const [dest, fee] of [["US", 19900], ["GB", 39500], ["AU", 27900]]) {
+  const want = `${fee}:0-7499999`;
+  if (JSON.stringify(out.freightFlat[dest]) !== JSON.stringify([want, want]))
+    problems.push(`freight table ${dest}: expected a flat ${fee} cents to $74,999.99, got ${JSON.stringify(out.freightFlat[dest])}`);
+}
 for (const [k, v] of Object.entries(expectCases)) {
   if (out.cases[k] !== v) problems.push(`quote ${k}: expected ${JSON.stringify(v)}, got ${JSON.stringify(out.cases[k])}`);
 }
@@ -267,7 +281,8 @@ if (out.feed.badLabels.length) problems.push(`Google feed rows with unknown labe
 if (out.feed.mismatched.length) problems.push(`Google feed labels disagree with checkout classification: ${out.feed.mismatched.slice(0, 10).join(", ")}`);
 if (out.jsonld.parcel500 !== "0.00") problems.push(`JSON-LD parcel $500 US rate: expected 0.00, got ${out.jsonld.parcel500}`);
 if (out.jsonld.parcel1500 !== "100.00") problems.push(`JSON-LD parcel $1,500 US rate: expected 100.00, got ${out.jsonld.parcel1500}`);
-if (out.jsonld.freight500 !== null) problems.push("JSON-LD states a rate for a freight item");
+if (out.jsonld.freight500 !== "199.00") problems.push(`JSON-LD US freight rate: expected 199.00, got ${out.jsonld.freight500}`);
+if (out.jsonld.auFreight500 !== "279.00") problems.push(`JSON-LD AU multibox rate: expected 279.00, got ${out.jsonld.auFreight500}`);
 if (out.jsonld.freightLabel !== "freight") problems.push("JSON-LD freight item has the wrong shippingLabel");
 for (const [k, v] of Object.entries(expectDescribe)) {
   if (out.describe[k] !== v) problems.push(`describe ${k}: expected ${JSON.stringify(v)}, got ${JSON.stringify(out.describe[k])}`);
@@ -281,7 +296,8 @@ const expectJsonld = { gbParcel150: "33.00", gbParcel500: "0.00", auParcel40: "2
 for (const [k, v] of Object.entries(expectJsonld)) {
   if (out.jsonld[k] !== v) problems.push(`JSON-LD ${k}: expected ${v}, got ${out.jsonld[k]}`);
 }
-if (out.jsonld.gbFreight !== null) problems.push("JSON-LD states a UK rate for a freight item");
+if (out.jsonld.gbFreight !== "395.00") problems.push(`JSON-LD UK freight rate: expected 395.00, got ${out.jsonld.gbFreight}`);
+if (out.jsonld.caFreight !== null) problems.push("JSON-LD states a rate for Canada freight, which has no published rate");
 if (out.jsonld.caParcel !== null) problems.push("JSON-LD states a rate for Canada, which has no published rate");
 if (out.jsonld.gbTransit?.minValue !== 5 || out.jsonld.gbTransit?.maxValue !== 15) problems.push(`UK transit is not 5-15: ${JSON.stringify(out.jsonld.gbTransit)}`);
 if (out.jsonld.gbHandling?.minValue !== 1 || out.jsonld.gbHandling?.maxValue !== 5) problems.push(`UK handling is not 1-5: ${JSON.stringify(out.jsonld.gbHandling)}`);

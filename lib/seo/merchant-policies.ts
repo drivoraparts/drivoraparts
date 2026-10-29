@@ -47,10 +47,10 @@ function shippingDetailsForCountry(
      * what checkout charges for it alone. Always in USD, the currency every
      * charge on the site is made in.
      *
-     * Everywhere else (freight and multi-box items, which have no published
-     * rate yet; Canada and every other destination) the rate is omitted rather
-     * than guessed. This block once declared a flat "0" USD for four
-     * countries on every product, which promised free shipping that the
+     * Everywhere else (Canada and every other destination) the rate is omitted
+     * rather than guessed. Freight and multi-box items use the fixed freight
+     * rate for the country, from the same tables. This block once declared a
+     * flat "0" USD for four countries on every product, which promised free shipping that the
      * policy did not offer.
      *
      * shippingLabel matches the shipping_label in the Google Merchant feed
@@ -92,7 +92,7 @@ export function productOfferShippingDetails(
 ): JsonLd | JsonLd[] {
   const { label } = classifyProductShipping(product);
   const rateFor = (country: string): number | undefined => {
-    if (label !== "parcel" || !Number.isFinite(offerPrice)) return undefined;
+    if (!Number.isFinite(offerPrice)) return undefined;
     if (country !== "US" && country !== "GB" && country !== "AU") return undefined;
     const table = rateTableFor(label, country as ShippingDestination);
     const row = table ? findBracket(table, Math.round(offerPrice * 100)) : undefined;

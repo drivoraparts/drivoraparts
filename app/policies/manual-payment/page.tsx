@@ -32,7 +32,7 @@ export default function ManualPaymentPage() {
     <Policy
       title="Manual Payment"
       effectiveDate="October 1, 2026"
-      lastUpdated="October 1, 2026"
+      lastUpdated="October 29, 2026"
       intro={`Orders paid by ${methods} use a manual payment process. Each order is reviewed by a person, and shipping is worked out for that specific order, so the amount you pay is confirmed after review and sent together with your payment details. You see the final figure before any payment is made. This page explains each step.`}
       sections={[
         {
@@ -68,7 +68,7 @@ export default function ManualPaymentPage() {
         {
           heading: "Shipping and the amount due",
           paragraphs: [
-            "Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout, before you place the order. For freight items and other destinations, shipping is confirmed in your payment details before you pay, together with the final amount due.",
+            "Standard shipping to the US, UK and Australia is charged from our published rates and shown at checkout, before you place the order. Freight and multi-box items are charged one fixed freight rate per order, shown at checkout before you place the order. For other destinations, shipping is confirmed in your payment details before you pay, together with the final amount due.",
             <>
               How shipping is worked out, and when it may be free, is set out in the{" "}
               <Link href="/policies/shipping-policy" prefetch={false} className={linkClass}>

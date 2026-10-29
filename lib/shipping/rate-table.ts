@@ -218,13 +218,13 @@ export const DESTINATIONS: Record<ShippingDestination, DestinationInfo> = {
     name: "the United Kingdom",
     service: "standard UK shipping",
     parcelTable: UK_PARCEL_RATE_TABLE,
-    local: { currency: "GBP", symbol: "£", approx: { 3300: 25, 20000: 151 } },
+    local: { currency: "GBP", symbol: "£", approx: { 3300: 25, 20000: 151, 39500: 299 } },
   },
   AU: {
     name: "Australia",
     service: "standard shipping to Australia",
     parcelTable: AU_PARCEL_RATE_TABLE,
-    local: { currency: "AUD", symbol: "A$", approx: { 2800: 40, 5556: 80 } },
+    local: { currency: "AUD", symbol: "A$", approx: { 2800: 40, 5556: 80, 27900: 399 } },
   },
 };
 
@@ -239,21 +239,38 @@ export function approxLocal(destination: ShippingDestination, usd: number): stri
 /**
  * Published rates for multibox and freight carts, per destination.
  *
- * NOT SET anywhere. No freight rate has been decided, and inventing one would
- * either undercharge for a crated engine or overcharge for a boxed bumper.
- * While a table is null, carts with that label are reported as "pending" and
- * quoted manually before payment, and those products have no Merchant Center
- * shipping service (so they are not listed). Setting a table here makes
- * checkout, the product pages and the policy page start using it; Merchant
- * Center needs a matching service for the same label and country.
+ * One fixed charge per order, whatever the subtotal: a cart containing at least
+ * one multibox or freight item pays this INSTEAD of the parcel charge (the
+ * heavier label wins, see cartShippingLabel), and the same figure applies to
+ * both labels. Charged in USD like every other charge on the site; the UK and
+ * Australian local amounts below are approximate display text only.
+ *
+ *   United States    $199.00
+ *   United Kingdom   $395.00  (about GBP 299)
+ *   Australia        $279.00  (about AUD 399)
+ *
+ * The tables run from $0 to the same top as the parcel tables, so an order
+ * above that value, and any destination outside the US, UK and Australia, is
+ * still quoted by hand before payment. Merchant Center needs a matching
+ * delivery policy for each label and country at these same amounts.
  */
+export const FREIGHT_FLAT_RATE_USD: Record<ShippingDestination, number> = {
+  US: 199,
+  GB: 395,
+  AU: 279,
+};
+
+function flatTable(feeUsd: number): readonly RateBracket[] {
+  return [bracket(0, TABLE_TOP, feeUsd)];
+}
+
 export const FREIGHT_RATE_TABLES: Record<
   ShippingDestination,
   Record<Exclude<ShippingLabel, "parcel">, readonly RateBracket[] | null>
 > = {
-  US: { multibox: null, freight: null },
-  GB: { multibox: null, freight: null },
-  AU: { multibox: null, freight: null },
+  US: { multibox: flatTable(FREIGHT_FLAT_RATE_USD.US), freight: flatTable(FREIGHT_FLAT_RATE_USD.US) },
+  GB: { multibox: flatTable(FREIGHT_FLAT_RATE_USD.GB), freight: flatTable(FREIGHT_FLAT_RATE_USD.GB) },
+  AU: { multibox: flatTable(FREIGHT_FLAT_RATE_USD.AU), freight: flatTable(FREIGHT_FLAT_RATE_USD.AU) },
 };
 
 export function rateTableFor(
@@ -445,7 +462,10 @@ export function quoteShippingWith(
 /** What the product page / cart says about a quote, in one line. */
 export function describeQuote(quote: ShippingQuote): string {
   if (quote.status === "calculated") {
-    const service = DESTINATIONS[quote.destination].service;
+    const info = DESTINATIONS[quote.destination];
+    // Freight and multi-box carts are charged the fixed freight rate, not the
+    // standard parcel rate, so the line must not call it "standard shipping".
+    const service = quote.label === "parcel" ? info.service : `freight shipping to ${info.name}`;
     if (quote.amount === 0) return `Free ${service}`;
     const local = approxLocal(quote.destination, quote.amount);
     return `$${quote.amount.toFixed(2)} ${service}${local ? ` (${local})` : ""}`;

@@ -20,6 +20,8 @@ import {
   findBracket,
   freeFromThreshold,
   US_PARCEL_RATE_TABLE,
+  FREIGHT_FLAT_RATE_USD,
+  rateTableFor,
   type ShippingDestination,
 } from "@/lib/shipping/rate-table";
 
@@ -68,6 +70,28 @@ function singleItemUsCharge(price: number): number | undefined {
 }
 
 /**
+ * The fixed freight charge for a freight or multi-box item, per country, from
+ * the same tables checkout charges from. Undefined when the item's price is
+ * above the top of the table (then the charge is confirmed before payment).
+ */
+function freightCharges(label: "multibox" | "freight", price: number) {
+  const cents = Math.round(price * 100);
+  const destinations: { code: ShippingDestination; name: string }[] = [
+    { code: "US", name: "the United States" },
+    { code: "GB", name: "the United Kingdom" },
+    { code: "AU", name: "Australia" },
+  ];
+  const lines = destinations.map(({ code, name }) => {
+    const table = rateTableFor(label, code);
+    const row = table ? findBracket(table, cents) : undefined;
+    if (!row) return null;
+    const local = approxLocal(code, row.feeCents / 100);
+    return `${name}: $${(row.feeCents / 100).toFixed(2)}${local ? ` (${local})` : ""}`;
+  });
+  return lines.every(Boolean) ? (lines as string[]) : undefined;
+}
+
+/**
  * "UK: free on parcel orders of $200 or more (about £151), otherwise $33.00
  * (about £25)." -- from the same table checkout charges from. The local
  * figures are the approximate amounts recorded with the fixed USD rates.
@@ -97,6 +121,8 @@ export default function PurchaseFacts({
   const shipment = shipmentType(freightNotes);
   const { label } = classifyShipping({ category, name, freightNotes });
   const usCharge = label === "parcel" ? singleItemUsCharge(price) : undefined;
+  const freightLines =
+    label === "parcel" ? undefined : freightCharges(label, price);
   // Cryptocurrency is listed last and without its provider's name: it is one
   // more option at checkout, and a product page has no reason to say who
   // processes it. It stays in the list because a customer reading "how can I
@@ -108,9 +134,8 @@ export default function PurchaseFacts({
       {/*
         The charge comes from the published rate tables (lib/shipping/
         rate-table.ts: US, UK, Australia) -- the same one checkout applies and Google Merchant
-        Center is configured with. Freight and multi-box items have no
-        published rate yet, so they say how they are handled instead of
-        showing a number nobody has set.
+        Center is configured with. Freight and multi-box items carry one fixed
+        charge per order for the destination (FREIGHT_RATE_TABLES).
       */}
       <FactRow label="Shipping">
         {usCharge !== undefined ? (
@@ -126,6 +151,30 @@ export default function PurchaseFacts({
               at checkout before you order. {internationalParcelTerms("GB", "UK")}{" "}
               {internationalParcelTerms("AU", "Australia")} Elsewhere, shipping is
               confirmed with you before payment.{" "}
+              {shipment ? `${shipment}. ` : ""}
+              {location ? (
+                <>
+                  Ships from <TranslatedText as="span">{location}</TranslatedText>.{" "}
+                </>
+              ) : null}
+              Typically processed within {ORDER_PROCESSING} once payment is verified.{" "}
+              <Link href={SHIPPING_POLICY_HREF} prefetch={false} className={linkClass}>
+                Shipping policy
+              </Link>
+            </p>
+          </>
+        ) : freightLines ? (
+          <>
+            <p className="font-semibold">
+              ${FREIGHT_FLAT_RATE_USD.US.toFixed(2)} fixed freight shipping to the US
+            </p>
+            <p className="mt-0.5 text-muted">
+              {label === "freight"
+                ? "This item ships as freight. "
+                : "This item ships in multiple boxes. "}
+              One fixed charge per order, shown at checkout before you order and
+              charged instead of the standard parcel rate: {freightLines.join("; ")}.
+              Elsewhere, shipping is confirmed with you before payment.{" "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (
                 <>
