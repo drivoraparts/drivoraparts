@@ -66,7 +66,7 @@ export const bodyPartsProducts: Product[] = [
   {
     id: 151,
     createdAt: 1782489972000,
-    name: "BMW G20 3 Series Widebody Aero Kit",
+    name: "Widebody Aero Kit for BMW 3 Series G20 (2019–2025)",
     category: "body-parts",
     brand: "bmw",
     price: 3199,
@@ -77,7 +77,7 @@ export const bodyPartsProducts: Product[] = [
     fitment: "2019–2025 BMW G20 3 Series (330i / M340i)",
     ...media("bmw-g20-3-series", 7),
     description: bodyPartDescription(
-      "BMW G20 3 Series Widebody Aero Kit",
+      "Widebody Aero Kit for BMW 3 Series G20 (2019–2025)",
       "2019–2025 BMW G20 3 Series (330i / M340i)",
       [
         "Full G20 3 Series Widebody Package",
@@ -141,7 +141,7 @@ export const bodyPartsProducts: Product[] = [
   {
     id: 154,
     createdAt: 1782489972000,
-    name: "Ford Mustang S550 Widebody Kit",
+    name: "Widebody Aero Kit for Ford Mustang S550 (2015–2023)",
     category: "body-parts",
     brand: "ford",
     price: 2799,
@@ -152,7 +152,7 @@ export const bodyPartsProducts: Product[] = [
     fitment: "2015–2023 Ford Mustang S550",
     ...media("ford-mustang-s550", 5),
     description: bodyPartDescription(
-      "Ford Mustang S550 Widebody Kit",
+      "Widebody Aero Kit for Ford Mustang S550 (2015–2023)",
       "2015–2023 Ford Mustang S550",
       [
         "S550 Mustang Widebody Transformation",
@@ -241,7 +241,7 @@ export const bodyPartsProducts: Product[] = [
   {
     id: 158,
     createdAt: 1782489972000,
-    name: "Nissan 370Z Widebody Aero Kit",
+    name: "Widebody Aero Kit for Nissan 370Z (2009–2020, Z34)",
     category: "body-parts",
     brand: "nissan",
     price: 2399,
@@ -252,7 +252,7 @@ export const bodyPartsProducts: Product[] = [
     fitment: "2009–2020 Nissan 370Z (Z34)",
     ...media("nissan-370z", 2),
     description: bodyPartDescription(
-      "Nissan 370Z Widebody Aero Kit",
+      "Widebody Aero Kit for Nissan 370Z (2009–2020, Z34)",
       "2009–2020 Nissan 370Z (Z34)",
       [
         "370Z Widebody Transformation",
@@ -266,7 +266,7 @@ export const bodyPartsProducts: Product[] = [
   {
     id: 159,
     createdAt: 1782489972000,
-    name: "Subaru WRX STI Widebody Aero Kit",
+    name: "Widebody Aero Kit for Subaru WRX STI (2015–2021, VA)",
     category: "body-parts",
     brand: "subaru",
     price: 2699,
@@ -277,7 +277,7 @@ export const bodyPartsProducts: Product[] = [
     fitment: "2015–2021 Subaru WRX STI (VA)",
     ...media("subaru-wrx-sti", 7, "webp"),
     description: bodyPartDescription(
-      "Subaru WRX STI Widebody Aero Kit",
+      "Widebody Aero Kit for Subaru WRX STI (2015–2021, VA)",
       "2015–2021 Subaru WRX STI (VA)",
       [
         "WRX STI Widebody Rally Styling",

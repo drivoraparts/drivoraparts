@@ -297,7 +297,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 194,
-    name: "Ford 3.5L EcoBoost V6 Engine",
+    name: "Ford 3.5L EcoBoost Twin-Turbo V6 Engine – Used",
     brand: "ford",
     platform: "ford-ecoboost-3-5",
     price: 9999,
@@ -310,7 +310,7 @@ export const engineDrivetrainProducts: Product[] = [
     condition: "used",
     mileage: undefined,
     description: swapDescription(
-      "Ford 3.5L EcoBoost V6 Engine",
+      "Ford 3.5L EcoBoost Twin-Turbo V6 Engine – Used",
       "Twin-turbocharged 3.5L EcoBoost V6 delivering V8-rivaling torque in a lighter package — ideal for performance trucks and creative swap platforms.",
       {
         Engine: "3.5L EcoBoost V6",
@@ -329,7 +329,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 195,
-    name: "Chevrolet LT4 Supercharged 6.2L Swap Crate Package",
+    name: "Chevrolet LT4 Supercharged 6.2L V8 Engine Swap Crate Package",
     brand: "chevrolet",
     platform: "gm-lt-packages",
     price: 27386,
@@ -339,7 +339,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-lt4-supercharged-swap-crate", ["1.jpg", "2.jpg", "3.jpg", "6.jpg"]),
     ...BASE,
     description: swapDescription(
-      "Chevrolet LT4 Supercharged 6.2L Swap Crate Package",
+      "Chevrolet LT4 Supercharged 6.2L V8 Engine Swap Crate Package",
       "Supercharged Gen V LT4 6.2L packaged for serious swap power — factory intercooled blower, integrated cooling, and crate-level completeness for high-horsepower street builds.",
       {
         Engine: "LT4 6.2L supercharged V8",
@@ -358,7 +358,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 196,
-    name: "GM Gen V 6.2L Complete Swap Package",
+    name: "GM Gen V 6.2L V8 Engine Swap Package with 8-Speed Automatic Transmission",
     brand: "chevrolet",
     platform: "gm-gen-v-packages",
     price: 23062,
@@ -368,7 +368,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-gen-v-6-2-package", ["2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]),
     ...BASE,
     description: swapDescription(
-      "GM Gen V 6.2L Complete Swap Package",
+      "GM Gen V 6.2L V8 Engine Swap Package with 8-Speed Automatic Transmission",
       "Turn-key Gen V 6.2L swap bundle with matched transmission, wiring, and calibration support options — designed to shorten the timeline from pallet to first start.",
       {
         Engine: "Gen V 6.2L V8 (L86/L87 family)",
@@ -387,7 +387,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 197,
-    name: "GM LT Twin-Turbo Complete Drivetrain",
+    name: "GM Gen V LT Twin-Turbocharged V8 Engine and Matched Automatic Transmission Package",
     brand: "chevrolet",
     platform: "gm-lt-packages",
     price: 43961,
@@ -397,7 +397,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-lt-twin-turbo-drivetrain", ["2.jpg", "4.jpg", "5.jpg"]),
     ...BASE,
     description: swapDescription(
-      "GM LT Twin-Turbo Complete Drivetrain",
+      "GM Gen V LT Twin-Turbocharged V8 Engine and Matched Automatic Transmission Package",
       "Factory-style twin-turbo Gen V LT package for builders targeting four-digit horsepower with modern engine management and matched driveline components.",
       {
         Engine: "Gen V LT series V8",
@@ -536,7 +536,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 202,
-    name: "Chevrolet LSA Supercharged Drivetrain",
+    name: "Chevrolet LSA 6.2L Supercharged V8 Engine and Matched Transmission Package",
     brand: "chevrolet",
     platform: "gm-ls-drivetrains",
     price: 12999,
@@ -546,7 +546,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-lsa-drivetrain", ["1.jpg"]),
     ...BASE,
     description: swapDescription(
-      "Chevrolet LSA Supercharged Drivetrain",
+      "Chevrolet LSA 6.2L Supercharged V8 Engine and Matched Transmission Package",
       "Factory-supercharged LSA 6.2L with matched driveline — 556 horsepower of blower-backed LS power for street and strip builds.",
       {
         Engine: "LSA 6.2L supercharged V8",
@@ -690,7 +690,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 207,
-    name: "GM LT4 New Complete Drivetrain Package",
+    name: "GM LT4 6.2L Supercharged V8 Engine and Transmission Package – New",
     brand: "chevrolet",
     platform: "gm-lt-packages",
     price: 32499,
@@ -701,7 +701,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...BASE,
     mileage: "0 Miles / crate-grade",
     description: swapDescription(
-      "GM LT4 New Complete Drivetrain Package",
+      "GM LT4 6.2L Supercharged V8 Engine and Transmission Package – New",
       "New-grade LT4 supercharged package with matched transmission and full control suite — for builders who want minimum miles and maximum completeness.",
       {
         Engine: "LT4 6.2L supercharged V8",
@@ -749,7 +749,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 209,
-    name: "Ford Coyote GT-T Twin-Turbo Drivetrain",
+    name: "Ford Coyote GT-T 5.0L Twin-Turbo V8 Engine and Matched Transmission Package",
     brand: "ford",
     platform: "ford-coyote-packages",
     price: 36999,
@@ -759,7 +759,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("ford-coyote-gt-t", ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
     ...BASE,
     description: swapDescription(
-      "Ford Coyote GT-T Twin-Turbo Drivetrain",
+      "Ford Coyote GT-T 5.0L Twin-Turbo V8 Engine and Matched Transmission Package",
       "Twin-turbocharged Coyote package engineered for 900+ horsepower goals with matched engine management, fueling, and driveline spec.",
       {
         Engine: "Coyote 5.0L V8",
@@ -807,7 +807,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 211,
-    name: "Chevrolet 427 LS7 Complete Drivetrain Package",
+    name: "Chevrolet 427 LS7 7.0L V8 Engine and Matched Automatic Transmission Package",
     brand: "chevrolet",
     platform: "gm-ls-drivetrains",
     price: 42499,
@@ -817,7 +817,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-ls7-427-drivetrain", ["1.jpg", "2.jpg", "3.jpg"]),
     ...BASE,
     description: swapDescription(
-      "Chevrolet 427 LS7 Complete Drivetrain Package",
+      "Chevrolet 427 LS7 7.0L V8 Engine and Matched Automatic Transmission Package",
       "7.0L LS7 with matched transmission and swap controls — naturally aspirated 505 horsepower from America's iconic flat-plane NA V8.",
       {
         Engine: "LS7 7.0L V8",

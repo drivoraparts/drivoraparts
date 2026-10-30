@@ -10496,7 +10496,7 @@ Worldwide Shipping Available`,
   {
     id: 2348,
     createdAt: 1789430400000,
-    name: "Old Man Emu MT64 Suspension Kit for 2024+ Toyota Tacoma — Front 3 in / 220–330 lb, Rear 2 in / 0 lb — 1120K",
+    name: "Old Man Emu MT64 Suspension Kit 1120K for 2024+ Toyota Tacoma — Front 3 in / 220–330 lb, Rear 2 in / 0 lb",
     category: "suspension",
     brand: "old-man-emu",
     // ARB USA store price for 1120K.
@@ -52969,7 +52969,7 @@ Worldwide Shipping Available`,
   {
     id: 3179,
     createdAt: 1789430400000,
-    name: "ATS Allison Conversion Stage 5 Transmission — 2019–2022 Ram 6.7L Cummins 2WD, replaces Aisin AS69RC — 319-953-2464",
+    name: "ATS Diesel Stage 5 Allison Conversion Automatic Transmission for 2019–2022 Ram 6.7L Cummins 2WD, replaces Aisin AS69RC — 319-953-2464",
     category: "transmission",
     brand: "ats",
     // dpp listing price for ATS-319-953-2464.
@@ -53022,7 +53022,7 @@ Worldwide Shipping Available`,
   {
     id: 3180,
     createdAt: 1789430400000,
-    name: "ATS Allison Conversion Stage 5 Transmission — 2019–2022 Ram 6.7L Cummins 4WD, replaces Aisin AS69RC — 319-955-2464",
+    name: "ATS Diesel Stage 5 Allison Conversion Automatic Transmission for 2019–2022 Ram 6.7L Cummins 4WD, replaces Aisin AS69RC — 319-955-2464",
     category: "transmission",
     brand: "ats",
     // dpp listing price for ATS-319-955-2464.

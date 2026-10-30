@@ -225,7 +225,7 @@ Worldwide Shipping Available`,
   {
     id: 35,
     createdAt: 1782008007000,
-    name: "Toyota 1JZ-GTE",
+    name: "Toyota 1JZ-GTE Turbocharged Inline-6 Engine",
     category: "engine",
     brand: "toyota",
     platform: "toyota-1jz-gte",
@@ -238,7 +238,7 @@ Worldwide Shipping Available`,
       "/product-media/engine/japanese-legends/1jz-gte/1.jpg",
       "/product-media/engine/japanese-legends/1jz-gte/2.jpg",
     ],
-    description: `Toyota 1JZ-GTE
+    description: `Toyota 1JZ-GTE Turbocharged Inline-6 Engine
 
 The Toyota 1JZ-GTE is a legendary Japanese performance engine known for its smooth power delivery, reliability, and tuning capabilities.
 
@@ -1152,7 +1152,7 @@ Worldwide Shipping Available`,
   {
     id: 47,
     createdAt: 1782068181000,
-    name: "Dodge Hellcat 6.2L Supercharged HEMI V8",
+    name: "Dodge Hellcat 6.2L Supercharged HEMI V8 Engine",
     category: "engine",
     brand: "dodge",
     platform: "dodge-hellcat-6-2",
@@ -1165,7 +1165,7 @@ Worldwide Shipping Available`,
     location: "USA Warehouse",
     thumbnail: "/product-media/engine/american-v8/dodge-hellcat-6-2/1.jpg",
     images: ["/product-media/engine/american-v8/dodge-hellcat-6-2/1.jpg"],
-    description: `Dodge Hellcat 6.2L Supercharged HEMI V8
+    description: `Dodge Hellcat 6.2L Supercharged HEMI V8 Engine
 
 Factory-supercharged 6.2L HEMI V8 delivering extreme horsepower and legendary American muscle performance.
 
@@ -1529,7 +1529,7 @@ Worldwide Shipping Available`,
   {
     id: 52,
     createdAt: 1782068181000,
-    name: "Chevrolet LT4 Supercharged Corvette V8",
+    name: "Chevrolet LT4 6.2L Supercharged V8 Engine",
     category: "engine",
     brand: "chevrolet",
     platform: "lt1-lt4",
@@ -1557,7 +1557,7 @@ Worldwide Shipping Available`,
       "/product-media/engine/american-v8/lt4/13.jpg",
       "/product-media/engine/american-v8/lt4/14.jpg",
     ],
-    description: `Chevrolet LT4 Supercharged Corvette V8
+    description: `Chevrolet LT4 6.2L Supercharged V8 Engine
 
 Factory-supercharged Corvette V8 engineered for track-level performance.
 
@@ -3570,7 +3570,7 @@ Worldwide Shipping Available`,
   {
     id: 95,
     createdAt: 1782404477000,
-    name: "Audi RS3 Hybrid Turbo",
+    name: "Hybrid Turbocharger Upgrade for Audi RS3 and TT RS 2.5 TFSI",
     category: "turbocharger",
     brand: "audi",
     price: 2199,
@@ -3590,7 +3590,7 @@ Worldwide Shipping Available`,
       "/product-media/turbocharger/audi-rs3-hybrid-turbo/8.jpg",
       "/product-media/turbocharger/audi-rs3-hybrid-turbo/9.jpg",
     ],
-    description: `Audi RS3 Hybrid Turbo
+    description: `Hybrid Turbocharger Upgrade for Audi RS3 and TT RS 2.5 TFSI
 
 High-flow hybrid turbo upgrade for Audi RS3 and TT RS 2.5 TFSI platforms, delivering more power while retaining factory fitment.
 
