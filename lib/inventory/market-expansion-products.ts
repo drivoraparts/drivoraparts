@@ -38255,7 +38255,7 @@ Worldwide Shipping Available`,
   {
     id: 2897,
     createdAt: 1789430400000,
-    name: "Fleece Performance 63 mm FMW Cheetah Drop-In Turbocharger — 2017–2023 GM 6.6L Duramax L5P — FPE-L5P-VNT63-1723",
+    name: "Fleece Performance 63 mm FMW Cheetah Direct-Fit Turbocharger — 2017–2023 GM 6.6L Duramax L5P — FPE-L5P-VNT63-1723",
     category: "turbocharger",
     brand: "fleece",
     // dpp listing price for FPE-L5P-VNT63-1723.
@@ -38271,13 +38271,13 @@ Worldwide Shipping Available`,
     referencePriceVerified: true,
     thumbnail: "/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-l5p-vnt63-1723/1.webp",
     images: ["/product-media/turbocharger/fleece-cheetah-turbocharger-fpe-l5p-vnt63-1723/1.webp"],
-    description: `Fleece Performance 63 mm FMW Cheetah drop-in turbocharger for the 2017–2023 GM 6.6L Duramax L5P, rated to support 650 RWHP.
+    description: `Fleece Performance 63 mm FMW Cheetah direct-fit turbocharger for the 2017–2023 GM 6.6L Duramax L5P, rated to support 650 RWHP.
 
-The Cheetah series is built around a drop-in idea: Fleece's own FMW billet compressor wheel and a high-flow turbine wheel inside a housing that bolts where the factory turbo came out. No kit, no specialised tuning, and it still looks standard under the bonnet.
+The Cheetah series is built around a direct-fit idea: Fleece's own FMW billet compressor wheel and a high-flow turbine wheel inside a housing that bolts where the factory turbo came out. No kit, no specialised tuning, and it still looks standard under the bonnet.
 
 This one runs a 63 mm billet compressor wheel, 65 mm high-flow turbine wheel. Fleece rate it to support 650 rear-wheel horsepower without giving up drivability.
 
-A drop-in turbo is the least disruptive way to add airflow: nothing downstream has to be re-engineered, and the truck still drives like a truck.
+A direct-fit turbo is the least disruptive way to add airflow: nothing downstream has to be re-engineered, and the truck still drives like a truck.
 
 Specifications
 
@@ -38285,7 +38285,7 @@ Manufacturer: Fleece Performance Engineering
 Series: FMW Cheetah
 Wheels: 63 mm billet compressor wheel, 65 mm high-flow turbine wheel
 Supports: 650 RWHP
-Installation: Drop-in — no kit required
+Installation: Direct-fit — no kit required
 Application: 2017–2023 GM 6.6L Duramax L5P
 Part number: FPE-L5P-VNT63-1723
 
@@ -38293,7 +38293,7 @@ Highlights
 
 Fleece FMW billet compressor wheel
 Supports 650 RWHP
-Drop-in, no kit or special tuning
+Direct-fit, no kit or special tuning
 Stock appearance under the bonnet
 
 Warranty
