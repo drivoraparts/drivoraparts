@@ -20,6 +20,15 @@ export const COMPANY_LEGAL_NAME = "BrookstoneUS LLC";
 export const COMPANY_DISPLAY_NAME = "DrivoraParts";
 export const COMPANY_SUPPORT_EMAIL = "support@drivoraparts.com";
 
+/**
+ * The business line, and the ONE place the number is written. Every Call Now /
+ * Text Now control and the visible number read these; nothing else may hard-code it.
+ */
+export const COMPANY_PHONE_E164 = "+14013765457";
+export const COMPANY_PHONE_DISPLAY = "+1 (401) 376-5457";
+export const COMPANY_PHONE_TEL_HREF = `tel:${COMPANY_PHONE_E164}`;
+export const COMPANY_PHONE_SMS_HREF = `sms:${COMPANY_PHONE_E164}`;
+
 /** Verified by the Articles of Organization above: a California LLC. */
 export const COMPANY_STATE_OF_FORMATION = "California";
 

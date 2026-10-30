@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CallTextActions from "@/components/contact/CallTextActions";
 import ContactForm from "@/components/contact/ContactForm";
 import CompanyAddress from "@/components/content/CompanyAddress";
 import {
@@ -22,6 +23,19 @@ export default function ContactPage() {
       <p className="mb-8 text-neutral-600">
         Questions about an order, part fitment, or your account? Send us a message below.
       </p>
+
+      <section
+        aria-labelledby="call-text-heading"
+        className="mb-8 rounded-xl border border-neutral-200 bg-neutral-50 p-6"
+      >
+        <h2 id="call-text-heading" className="mb-1 text-xl font-semibold text-neutral-900">
+          Call or text us
+        </h2>
+        <p className="mb-4 text-sm text-neutral-600">
+          Prefer to talk? Reach the DrivoraParts business line directly.
+        </p>
+        <CallTextActions variant="light" />
+      </section>
 
       <ContactForm />
 

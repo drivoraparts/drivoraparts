@@ -3,6 +3,7 @@
 import Link from "next/link";
 import FooterSocialLinks from "@/components/layout/FooterSocialLinks";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
+import CallTextActions from "@/components/contact/CallTextActions";
 import NewsletterSignup from "@/components/layout/NewsletterSignup";
 import { useTranslation } from "@/hooks/useTranslation";
 import {
@@ -186,6 +187,7 @@ export default function FooterContent() {
               {COMPANY_SUPPORT_EMAIL}
             </a>
           </p>
+          <CallTextActions variant="dark" className="mt-3" />
           <FooterSocialLinks className="mt-3 -ml-2" />
         </div>
 

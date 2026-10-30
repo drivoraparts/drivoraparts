@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import CallTextActions from "@/components/contact/CallTextActions";
 import SideDrawer from "./SideDrawer";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -75,6 +76,7 @@ export default function GlobalDrawer({
             </div>
           ))}
         </div>
+        <CallTextActions variant="light" stacked className="mt-6" />
       </nav>
     </SideDrawer>
   );
