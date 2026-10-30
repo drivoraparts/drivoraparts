@@ -565,7 +565,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 203,
-    name: "Chevrolet L86 6.2L + 10L80 Drivetrain Package",
+    name: "Chevrolet L86 6.2L V8 Engine and 10L80 10-Speed Automatic Transmission Package",
     brand: "chevrolet",
     platform: "gm-gen-v-packages",
     price: 13499,
@@ -575,7 +575,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-l86-10l80-drivetrain", ["1.jpg", "2.jpg"]),
     ...BASE,
     description: swapDescription(
-      "Chevrolet L86 6.2L + 10L80 Drivetrain Package",
+      "Chevrolet L86 6.2L V8 Engine and 10L80 10-Speed Automatic Transmission Package",
       "L86 6.2L V8 paired with the 10L80 ten-speed automatic for builders who want the newest GM transmission technology in their swap.",
       {
         Engine: "L86 6.2L V8",
@@ -594,7 +594,7 @@ export const engineDrivetrainProducts: Product[] = [
   },
   {
     id: 204,
-    name: "Chevrolet Gen V LT1 + 10L80 Drivetrain",
+    name: "Chevrolet Gen V LT1 6.2L V8 Engine and 10L80 10-Speed Automatic Transmission Package",
     brand: "chevrolet",
     platform: "gm-lt-packages",
     price: 11999,
@@ -604,7 +604,7 @@ export const engineDrivetrainProducts: Product[] = [
     ...media("gm-lt1-10l80-drivetrain", ["1.jpg", "2.jpg", "3.jpg"]),
     ...BASE,
     description: swapDescription(
-      "Chevrolet Gen V LT1 + 10L80 Drivetrain",
+      "Chevrolet Gen V LT1 6.2L V8 Engine and 10L80 10-Speed Automatic Transmission Package",
       "Corvette-derived LT1 6.2L with 10L80 ten-speed — performance-car calibration in a swap-ready freight package.",
       {
         Engine: "LT1 6.2L V8",
