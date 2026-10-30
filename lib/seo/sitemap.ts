@@ -11,6 +11,7 @@ import {
 } from "@/lib/inventory";
 import { getAllNewsArticles, newsArticlePath, NEWS_PATH } from "@/lib/content/news";
 import { POLICY_PATHS } from "./constants";
+import { isHeldListing } from "@/lib/inventory/held";
 import { hasGenericPlaceholderDescription } from "./product-seo";
 
 type SitemapEntry = MetadataRoute.Sitemap[number];
@@ -95,7 +96,10 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
   // them out of the sitemap too so we're not asking Google to crawl and index
   // pages the site marks noindex.
   const productEntries = products
-    .filter((product) => !hasGenericPlaceholderDescription(product.description))
+    .filter(
+      (product) =>
+        !hasGenericPlaceholderDescription(product.description) && !isHeldListing(product)
+    )
     .map((product) =>
       entry(
         toUrl(routes.product(product.id)),

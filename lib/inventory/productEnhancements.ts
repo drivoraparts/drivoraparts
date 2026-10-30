@@ -1,3 +1,4 @@
+import { isStaleShippingText } from "@/lib/seo/text";
 import type { Product, ProductLogistics } from "./types";
 import {
   getConditionLabel,
@@ -226,7 +227,13 @@ function splitDescriptionSections(description: string) {
   const highlights = withoutStoreBoilerplate(getSection("Highlights"));
   const keyFeatures = withoutStoreBoilerplate(getSection("Key Features"));
   const warranty = getSection("Warranty");
-  const shipping = getSection("Shipping");
+  // The old "Worldwide shipping available -- freight quotes provided" line states
+  // nothing the shipping row does not, and contradicts the fixed rates.
+  const shipping = getSection("Shipping")
+    .split("\n")
+    .filter((line) => !isStaleShippingText(line))
+    .join("\n")
+    .trim();
 
   const shippingAndWarranty = [warranty, shipping].filter(Boolean).join("\n\n");
 
