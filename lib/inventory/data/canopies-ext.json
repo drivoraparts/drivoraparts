@@ -383,11 +383,13 @@
     "warranty": "Manufacturer Warranty",
     "location": "USA Warehouse",
     "fitment": "Ford Ranger dual cab",
-    "thumbnail": "/product-media/canopy/carryboy-s6-canopy/1.jpg",
+    "thumbnail": "/product-media/canopy/carryboy-s6-canopy/1-manufacturer.jpg",
     "images": [
-      "/product-media/canopy/carryboy-s6-canopy/1.jpg"
+      "/product-media/canopy/carryboy-s6-canopy/1-manufacturer.jpg",
+      "/product-media/canopy/carryboy-s6-canopy/2-manufacturer.jpg",
+      "/product-media/canopy/carryboy-s6-canopy/3-manufacturer.jpg"
     ],
-    "image": "/product-media/canopy/carryboy-s6-canopy/1.jpg",
+    "image": "/product-media/canopy/carryboy-s6-canopy/1-manufacturer.jpg",
     "description": "Carryboy S6 Canopy for Ford Ranger Dual Cab\n\nCarryboy S6 Canopy for Ford Ranger Dual Cab — lock-ready ute/truck canopy engineered for secure cargo storage, roof load capacity, and clean OEM-style fitment.\n\nFitment: Ford Ranger dual cab\n\nWarranty\nManufacturer Warranty\n\nShipping\nFreight shipping available on oversized canopies — contact for international delivery quotes.",
     "referencePriceVerified": true,
     "sourceSlug": "carryboy-s6-canopy",
