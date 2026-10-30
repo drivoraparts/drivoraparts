@@ -6,6 +6,7 @@ import {
 } from "@/lib/content/company";
 import { routes } from "@/lib/inventory/routes";
 import { getBrandBySlug } from "@/lib/inventory";
+import { hasUnknownManufacturer } from "@/lib/inventory/part-brand";
 import { resolveProductGallery } from "@/lib/inventory/media";
 import type { ProductReview } from "@/lib/reviews/types";
 import { SITE_NAME, SITE_TAGLINE } from "./constants";
@@ -185,10 +186,10 @@ export function productJsonLd(
     description: structuredDescription(product),
     sku: String(product.id),
     ...(product.partNumber ? { mpn: product.partNumber } : {}),
-    brand: {
-      "@type": "Brand",
-      name: brand?.name ?? product.brand,
-    },
+    // No Brand when the catalog brand is only the vehicle maker (lib/inventory/part-brand.ts).
+    ...(hasUnknownManufacturer(product)
+      ? {}
+      : { brand: { "@type": "Brand", name: brand?.name ?? product.brand } }),
     ...productReviewJsonLd(reviews),
     offers: {
       "@type": "Offer",

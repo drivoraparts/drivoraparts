@@ -5,6 +5,7 @@ import {
   resolveProductCondition,
 } from "@/lib/inventory";
 import { isHeldListing } from "@/lib/inventory/held";
+import { hasUnknownManufacturer } from "@/lib/inventory/part-brand";
 import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
 import type { Product } from "@/lib/inventory/types";
 import { absoluteImageUrl, absoluteUrl } from "@/lib/seo";
@@ -80,6 +81,8 @@ function metaDescription(product: Product): string {
 }
 
 function metaBrand(product: Product): string {
+  // The catalog brand is a vehicle maker here; send none rather than misattribute the part.
+  if (hasUnknownManufacturer(product)) return "";
   return getBrandBySlug(product.brand)?.name ?? product.brand;
 }
 
