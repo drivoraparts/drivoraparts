@@ -23376,7 +23376,7 @@ Worldwide Shipping Available`,
   {
     id: 2607,
     createdAt: 1789430400000,
-    name: "Safari VSPEC Snorkel for 2019–2023 Ford Ranger — SS983HF",
+    name: "Safari VSPEC Snorkel Kit SS983HF for 2019–2023 Ford Ranger",
     category: "4x4-accessories",
     brand: "safari",
     // ARB USA store price for SS983HF.
@@ -23733,7 +23733,7 @@ Worldwide Shipping Available`,
   {
     id: 2614,
     createdAt: 1789430400000,
-    name: "Safari VSPEC Snorkel for 2012–2017 / 2018 Jeep Wrangler / Jeep Wrangler JK — SS1070HF",
+    name: "Safari VSPEC Snorkel Kit SS1070HF for 2012–2018 Jeep Wrangler JK",
     category: "4x4-accessories",
     brand: "safari",
     // ARB USA store price for SS1070HF.
@@ -23784,7 +23784,7 @@ Worldwide Shipping Available`,
   {
     id: 2615,
     createdAt: 1789430400000,
-    name: "Safari VSPEC Snorkel for 1987–1995 Jeep Wrangler — SS1000HF",
+    name: "Safari VSPEC Snorkel Kit SS1000HF for 1987–1995 Jeep Wrangler",
     category: "4x4-accessories",
     brand: "safari",
     // ARB USA store price for SS1000HF.
@@ -26712,7 +26712,7 @@ Worldwide Shipping Available`,
   {
     id: 2677,
     createdAt: 1789430400000,
-    name: "Safari Snorkel for 2018-on Mitsubishi Triton — SS663HF",
+    name: "Safari Snorkel Kit SS663HF for 2018-on Mitsubishi Triton",
     category: "4x4-accessories",
     brand: "safari",
     // mudify listing price for SS663HF.
