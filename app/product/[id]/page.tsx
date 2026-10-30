@@ -61,7 +61,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: routes.product(product.id),
     image: previewImage,
     noIndex:
-      hasGenericPlaceholderDescription(product.description) || isHeldListing(product),
+      hasGenericPlaceholderDescription(product.description) ||
+      // The storefront product has no stock field; the inventory record does.
+      (inventoryProduct !== undefined && isHeldListing(inventoryProduct)),
   });
 }
 
