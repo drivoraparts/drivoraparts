@@ -27,17 +27,38 @@ export function truncateSeoTitle(text: string, max: number): string {
   return `${cut.replace(/[\s—–,-]+$/, "")}…`;
 }
 
-/** First meaningful paragraph from a product description block. */
-export function productSeoDescription(description: string, fallback: string): string {
+/**
+ * Store boilerplate that says nothing about the part: the "Shipping" and
+ * "Warranty" section labels, and the old "Worldwide shipping available --
+ * freight quotes provided" line, which contradicts the published fixed
+ * shipping rates. On many imported listings it is the ONLY text, so without
+ * this it became the whole product description in the feeds.
+ */
+const NON_DESCRIPTIVE_LINE =
+  /^(warranty|shipping)$|worldwide shipping available|freight quotes? provided|contact for a freight quote/i;
+
+export function isStaleShippingText(text: string): boolean {
+  return NON_DESCRIPTIVE_LINE.test(text.trim());
+}
+
+/**
+ * First meaningful paragraph from a product description block. Boilerplate
+ * lines are skipped, and a first line that only repeats the product name is
+ * not a description, so `fallback` is used instead.
+ */
+export function productSeoDescription(
+  description: string,
+  fallback: string,
+  name?: string
+): string {
   const paragraphs = description
     .split("\n")
     .map((line) => line.trim())
-    .filter(Boolean);
+    .filter((line) => line && !NON_DESCRIPTIVE_LINE.test(line));
 
-  const body =
-    paragraphs.slice(1).find((line) => line.length > 50) ??
-    paragraphs[0] ??
-    fallback;
+  const first =
+    paragraphs[0] && paragraphs[0] !== name?.trim() ? paragraphs[0] : undefined;
+  const body = paragraphs.slice(1).find((line) => line.length > 50) ?? first ?? fallback;
 
   return truncateSeoDescription(body);
 }

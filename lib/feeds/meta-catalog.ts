@@ -4,6 +4,7 @@ import {
   getBrandBySlug,
   resolveProductCondition,
 } from "@/lib/inventory";
+import { isHeldListing } from "@/lib/inventory/held";
 import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
 import type { Product } from "@/lib/inventory/types";
 import { absoluteImageUrl, absoluteUrl } from "@/lib/seo";
@@ -55,10 +56,27 @@ function metaAvailability(product: Product): MetaCatalogFeedRow["availability"] 
   return product.stock === false ? "out of stock" : "in stock";
 }
 
+/**
+ * Used when a listing has no descriptive text of its own. Built only from
+ * fields the catalog records for the listing (part number, fitment, a few
+ * specifications) -- never from a claim about shipping or stock.
+ */
+function metaFallbackDescription(product: Product): string {
+  const parts = [`${product.name}.`];
+  if (product.partNumber?.trim()) parts.push(`Part number: ${product.partNumber.trim()}.`);
+  if (product.fitment?.trim()) parts.push(`Fitment: ${product.fitment.trim()}.`);
+  const specs = Object.entries(product.specifications ?? {})
+    .filter(([, value]) => String(value).trim())
+    .slice(0, 4)
+    .map(([key, value]) => `${key.replace(/_/g, " ")}: ${value}`);
+  if (specs.length) parts.push(`${specs.join("; ")}.`);
+  return parts.join(" ");
+}
+
 function metaDescription(product: Product): string {
-  const fallback = `${product.name} — performance automotive part from DrivoraParts.`;
+  const fallback = metaFallbackDescription(product);
   if (!product.description?.trim()) return fallback.slice(0, 5000);
-  return productSeoDescription(product.description, fallback).slice(0, 5000);
+  return productSeoDescription(product.description, fallback, product.name).slice(0, 5000);
 }
 
 function metaBrand(product: Product): string {
@@ -109,6 +127,9 @@ function pickMetaCatalogImage(product: Product): string | null {
 }
 
 export function toMetaCatalogFeedRow(product: Product): MetaCatalogFeedRow | null {
+  // Held listings stay out of every product feed (see lib/inventory/held.ts).
+  if (isHeldListing(product)) return null;
+
   // The feed never invents a condition: a listing with none recorded (held
   // pending business confirmation) is left out rather than sent as "new".
   if (!product.condition?.trim()) return null;

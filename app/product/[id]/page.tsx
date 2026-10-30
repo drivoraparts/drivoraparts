@@ -14,6 +14,7 @@ import { getProductThumbnail } from "@/lib/inventory/media";
 import { compactFitment } from "@/lib/catalog/short-fitment";
 import ProductTemplate from "@/components/product/ProductTemplate";
 import JsonLdScript from "@/components/seo/JsonLdScript";
+import { isHeldListing } from "@/lib/inventory/held";
 import {
   absoluteImageUrl,
   breadcrumbJsonLd,
@@ -59,7 +60,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     keywords: buildProductMetaKeywords(seoInput),
     path: routes.product(product.id),
     image: previewImage,
-    noIndex: hasGenericPlaceholderDescription(product.description),
+    noIndex:
+      hasGenericPlaceholderDescription(product.description) || isHeldListing(product),
   });
 }
 
@@ -118,7 +120,9 @@ export default async function ProductPage({ params }: PageProps) {
     { name: product.name, path: routes.product(product.id) },
   ]);
 
-  const structuredData = inventoryProduct
+  // A held listing has no Product structured data, so Google cannot build a
+  // shopping listing for it from the page (see lib/inventory/held.ts).
+  const structuredData = inventoryProduct && !isHeldListing(inventoryProduct)
     ? [
         breadcrumbs,
         productJsonLd(inventoryProduct, product.price, {
