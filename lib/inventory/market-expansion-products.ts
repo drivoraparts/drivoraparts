@@ -97123,8 +97123,8 @@ Worldwide Shipping Available`,
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
-    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716615/1.webp",
-    images: ["/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716615/1.webp"],
+    thumbnail: "/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716615/1-supplier.jpg",
+    images: ["/product-media/engine/bd-bd-built-duramax-lmm-cr-injector-60hp-90hp-chevy-2007-5-2010-6-6l-1716615/1-supplier.jpg"],
     description: `BD-Built Duramax LMM CR Injector 60hp-90hp Chevy 2007.5-2010 6.6L, 33% (60hp), BD part 1716615.
 
 An injector that has failed announces itself with white smoke, a hard start, a miss or a tick — and it is usually one injector, not the whole set. That is why these are priced and sold one at a time.
