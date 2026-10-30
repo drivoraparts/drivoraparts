@@ -65084,5 +65084,32 @@
     "downloadedAt": "2026-10-30T02:29:07.912Z",
     "status": "downloaded",
     "verified": "file viewed: clean product photo with no logo, caption or border; retailer title and SKU (BMRBK075) match the listing"
+  },
+  "product-429-supplier-clean": {
+    "productId": 429,
+    "productName": "(see catalog)",
+    "localFile": "/product-media/ess-catalog/bmr-64-72-a-body-front-lowering-springs-red/1-supplier.jpg",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/0659/3249/2987/files/c796a765b112acb0520e9cf1659c58baL.jpg",
+    "sourceName": "hurreysoffroad.com",
+    "landingPage": "https://hurreysoffroad.com/products/bmr-64-72-a-body-front-lowering-springs-red-1",
+    "creator": "BMR Suspension, via retailer hurreysoffroad.com",
+    "creatorUrl": "https://bmrsuspension.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "retailer product photography of the maker catalog image, no logo or caption overlay; no machine-readable licence is offered; downloaded on the site owner explicit instruction. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "BMRSP034R",
+      "exact title match on the retailer page"
+    ],
+    "query": "retailer catalogue search for the listing maker SKU",
+    "sha256": "1c6b57c4d7e39a58d8368ac40ebe57810fbbaf0f1a3291c20e6a8778656e74b2",
+    "bytes": 115854,
+    "width": 800,
+    "height": 752,
+    "downloadedAt": "2026-10-30T07:49:41.561Z",
+    "status": "downloaded",
+    "verified": "file viewed: red springs on white, no logo, caption or border; retailer title BMR 64-72 A-Body Front Lowering Springs - Red and SKU BMRSP034R match the listing"
   }
 }
