@@ -16,6 +16,7 @@ import {
   productOfferShippingDetails,
   productOfferValidFrom,
 } from "./merchant-policies";
+import { isStaleShippingText } from "./text";
 import { absoluteImageUrl, absoluteUrl } from "./urls";
 
 type JsonLd = Record<string, unknown>;
@@ -151,6 +152,20 @@ function productReviewJsonLd(input?: ProductJsonLdReviews): JsonLd {
   };
 }
 
+/**
+ * The structured-data description: the first lines of the listing text, minus
+ * the old "Worldwide shipping available -- freight quotes provided" boilerplate
+ * and the bare Shipping/Warranty labels, so it says the same as the Google feed
+ * and does not contradict the published shipping rates.
+ */
+function structuredDescription(product: Product): string {
+  const lines = (product.description ?? "")
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line && !isStaleShippingText(line));
+  return (lines.slice(0, 6).join(" ") || product.name).trim();
+}
+
 export function productJsonLd(
   product: Product,
   price: number,
@@ -167,11 +182,7 @@ export function productJsonLd(
     "@type": "Product",
     name: product.name,
     image: gallery,
-    description: (product.description ?? product.name)
-      .split("\n")
-      .slice(0, 6)
-      .join(" ")
-      .trim(),
+    description: structuredDescription(product),
     sku: String(product.id),
     ...(product.partNumber ? { mpn: product.partNumber } : {}),
     brand: {
