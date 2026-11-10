@@ -58,6 +58,22 @@ const ACTIONS: ManualAction[] = [
   "reject",
 ];
 
+/**
+ * Supabase errors are plain objects ({ message, details, hint, code }), not
+ * Error instances, so `error instanceof Error` threw their text away and every
+ * database failure reached the admin as an unexplained "Action failed".
+ */
+function describeError(error: unknown): string {
+  if (error instanceof Error && error.message) return error.message;
+  if (typeof error === "object" && error !== null) {
+    const e = error as { message?: unknown; details?: unknown; hint?: unknown; code?: unknown };
+    const parts = [e.message, e.details, e.hint, e.code ? `code ${String(e.code)}` : null]
+      .filter((v): v is string => typeof v === "string" && v.length > 0);
+    if (parts.length) return parts.join(" — ");
+  }
+  return "Action failed";
+}
+
 export async function POST(
   req: Request,
   { params }: { params: Promise<{ id: string }> }
@@ -443,10 +459,10 @@ export async function POST(
       action,
       admin: actor,
       ip,
-      message: error instanceof Error ? error.message : "action failed",
+      message: describeError(error),
     });
     return NextResponse.json(
-      { error: error instanceof Error ? error.message : "Action failed" },
+      { error: describeError(error) },
       { status: 400 }
     );
   }
