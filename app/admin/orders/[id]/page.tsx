@@ -310,7 +310,28 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
                 order.status === "refunded"
               }
             />
-          ) : null}
+          ) : (
+            <ManualPaymentPanel
+              sendOnly
+              orderId={order.id}
+              methodLabel={payment?.provider ?? "Payment"}
+              routeLabel={null}
+              state="awaiting_payment"
+              amount={Number(order.total)}
+              currency="USD"
+              instructions={null}
+              instructionsSentAt={null}
+              customerNote={null}
+              lastAdminMessage={null}
+              subtotal={Number(order.subtotal)}
+              shippingCharge={Number(order.shipping ?? 0)}
+              expeditedShipping={null}
+              shippingGuidance=""
+              receipts={[]}
+              paid={payment?.status === "paid"}
+              closed={false}
+            />
+          )}
 
           <div>
             <h2 className="mb-2 text-[11px] font-medium uppercase tracking-wide text-zinc-500">
