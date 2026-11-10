@@ -2,6 +2,7 @@ import type { Product } from "@/lib/inventory/types";
 import {
   COMPANY_ADDRESS,
   COMPANY_LEGAL_NAME,
+  COMPANY_PHONE_E164,
   COMPANY_SUPPORT_EMAIL,
 } from "@/lib/content/company";
 import { routes } from "@/lib/inventory/routes";
@@ -33,6 +34,14 @@ export function organizationJsonLd(): JsonLd {
     url: absoluteUrl("/"),
     logo: absoluteImageUrl("/favicon.png"),
     email: COMPANY_SUPPORT_EMAIL,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      telephone: COMPANY_PHONE_E164,
+      email: COMPANY_SUPPORT_EMAIL,
+      areaServed: "US",
+      availableLanguage: "English",
+    },
     ...(COMPANY_ADDRESS
       ? {
           address: {
