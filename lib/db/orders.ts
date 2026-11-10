@@ -1366,17 +1366,27 @@ export async function updateOrderShippingCharge(
   const expedited = Math.round(input.expedited * 100) / 100;
   const total = Math.round((subtotal + shipping + expedited) * 100) / 100;
 
-  const { data, error } = await supabase
-    .from("orders")
-    .update({
-      shipping,
-      total,
-      shipping_method: expedited > 0 ? "express" : "standard",
-      updated_at: new Date().toISOString(),
-    })
-    .eq("id", id)
-    .select("*")
-    .maybeSingle();
+  const write = (withMethod: boolean) =>
+    supabase
+      .from("orders")
+      .update({
+        shipping,
+        total,
+        ...(withMethod
+          ? { shipping_method: expedited > 0 ? "express" : "standard" }
+          : {}),
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", id)
+      .select("*")
+      .maybeSingle();
+
+  let { data, error } = await write(true);
+  // PGRST204: the database has no shipping_method column. The charge and total
+  // are what matter, so record those rather than failing the whole action.
+  if (error && (error as { code?: string }).code === "PGRST204") {
+    ({ data, error } = await write(false));
+  }
 
   if (error) throw error;
   const updated = data as OrderRecord | null;
