@@ -62,7 +62,11 @@ export default function ManualPaymentPanel({
   receipts,
   paid,
   closed,
+  sendOnly = false,
 }: {
+  /** Orders paid some other way (crypto, no payment record): only the send box
+   * is shown, and it always works. */
+  sendOnly?: boolean;
   orderId: string;
   methodLabel: string;
   /** The bank/transfer route the customer asked for, when the method needs
@@ -217,6 +221,7 @@ export default function ManualPaymentPanel({
       </div>
 
       {/* Shipping — quoted by hand, and this is where it happens ------------ */}
+      {!sendOnly ? (
       <div className="mt-4 border-t border-zinc-100 pt-3.5">
         <p className="text-xs font-medium text-zinc-700">Shipping charge</p>
         <p className="mt-0.5 text-[11px] leading-relaxed text-zinc-500">
@@ -317,6 +322,7 @@ export default function ManualPaymentPanel({
           </div>
         </dl>
       </div>
+      ) : null}
 
       {/* Send / re-send payment instructions -------------------------------- */}
       <div className="mt-4 border-t border-zinc-100 pt-3.5">
@@ -346,7 +352,7 @@ export default function ManualPaymentPanel({
               expeditedShipping: expeditedValue,
             })
           }
-          disabled={busy !== null || paid || closed || draft.trim().length < 5}
+          disabled={busy !== null || draft.trim().length < 5}
           className={`${adminUi.buttonPrimary} mt-2 !py-1.5 text-xs`}
         >
           {busy === "send_instructions"
@@ -358,6 +364,7 @@ export default function ManualPaymentPanel({
         {feedback(["send_instructions"])}
       </div>
 
+      {!sendOnly ? (<>
       {/* What the customer submitted ---------------------------------------- */}
       <div className="mt-4 border-t border-zinc-100 pt-3.5">
         <p className="text-xs font-medium text-zinc-700">Customer receipts</p>
@@ -488,6 +495,7 @@ export default function ManualPaymentPanel({
           </p>
         ) : null}
       </div>
+      </>) : null}
     </div>
   );
 }

@@ -90,7 +90,11 @@ export async function POST(
 
   const payment = await findPaymentByOrderId(id);
   const manual = readManualPayment(payment);
-  if (!payment || !manual) {
+  const canAlwaysSend = action === "send_instructions" || action === "request_info";
+  // Sending payment details to the customer works for ANY order, whatever the
+  // customer paid with. The other actions change manual-payment state, so they
+  // still need a manual payment row.
+  if (!canAlwaysSend && (!payment || !manual)) {
     return NextResponse.json(
       { error: "This order is not a manual payment order" },
       { status: 400 }
@@ -130,7 +134,9 @@ export async function POST(
   };
 
   const message = body?.message?.trim() ?? "";
-  const methodLabel = getManualMethod(manual.method)?.label ?? "Bank Transfer";
+  const methodLabel = manual
+    ? (getManualMethod(manual.method)?.label ?? "Bank Transfer")
+    : "Payment";
   const customer = order.customer;
 
   /*
@@ -139,8 +145,8 @@ export async function POST(
    * (whose /pay page tells the customer it is no longer active) or for one
    * that was already paid. Verify has its own atomic form of this check below.
    */
-  if (action !== "verify") {
-    if (payment.status === "paid" || order.status === "paid") {
+  if (action !== "verify" && !canAlwaysSend) {
+    if (!payment || payment.status === "paid" || order.status === "paid") {
       return NextResponse.json(
         { error: "This order is already paid." },
         { status: 409 }
@@ -184,7 +190,15 @@ export async function POST(
       let orderTotal = Number(order.total);
       let expeditedCharge: number | null = null;
 
-      if (sending) {
+      // Totals are only rewritten while the order is still open and unpaid;
+      // for anything else the message simply goes out with the order as is.
+      const canReprice =
+        !!manual &&
+        !!payment &&
+        payment.status !== "paid" &&
+        (order.status === "pending" || order.status === "processing");
+
+      if (sending && canReprice && payment) {
         const shipping = parseCharge(body?.shipping, "the shipping charge");
         if (shipping.error) {
           return NextResponse.json({ error: shipping.error }, { status: 400 });
@@ -259,12 +273,14 @@ export async function POST(
         );
       }
 
-      await updateManualPayment(
-        payment,
-        sending
-          ? { instructions: message, state: "instructions_sent" }
-          : { lastAdminMessage: message, state: "verification_failed" }
-      );
+      if (payment && manual) {
+        await updateManualPayment(
+          payment,
+          sending
+            ? { instructions: message, state: "instructions_sent" }
+            : { lastAdminMessage: message, state: "verification_failed" }
+        );
+      }
 
       await logOrderEvent({
         orderId: id,
@@ -279,7 +295,7 @@ export async function POST(
       await logAdminAudit(actor, `order.manual_${action}`, id, { ip });
       await logActivity("info", `payment.manual_${action}`, {
         orderId: id,
-        paymentId: payment.id,
+        paymentId: payment?.id ?? null,
         admin: actor,
       });
 
