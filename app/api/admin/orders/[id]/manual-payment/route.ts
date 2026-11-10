@@ -227,29 +227,39 @@ export async function POST(
           return NextResponse.json({ error: expedited.error }, { status: 400 });
         }
 
-        const updated = await updateOrderShippingCharge(
-          id,
-          { shipping: shipping.value, expedited: expedited.value },
-          actor
-        );
-        if (!updated) {
-          return NextResponse.json(
-            { error: "Could not record the shipping charge on this order." },
-            { status: 500 }
-          );
-        }
-
-        orderTotal = Number(updated.total);
-
         expeditedCharge = expedited.value > 0 ? expedited.value : null;
 
-        await updateManualPayment(payment, {
-          expeditedShipping: expedited.value,
-        });
-
-        // The payment row is what the paid workflow and the payment stats
-        // read, so it has to carry the same amount the customer is asked for.
-        await updatePaymentRecord(payment.id, { amount: orderTotal });
+        /*
+         * Recording the charge is bookkeeping. It must never stop the email:
+         * if the database refuses the write (as happened when the orders table
+         * lacked a column), the message still goes out using the amounts the
+         * admin typed, and the failure is logged for follow-up.
+         */
+        try {
+          const updated = await updateOrderShippingCharge(
+            id,
+            { shipping: shipping.value, expedited: expedited.value },
+            actor
+          );
+          if (!updated) throw new Error("order not found while recording shipping");
+          orderTotal = Number(updated.total);
+          await updateManualPayment(payment, {
+            expeditedShipping: expedited.value,
+          });
+          // The payment row is what the paid workflow and the payment stats
+          // read, so it has to carry the same amount the customer is asked for.
+          await updatePaymentRecord(payment.id, { amount: orderTotal });
+        } catch (recordError) {
+          orderTotal =
+            Math.round(
+              (Number(order.subtotal) + shipping.value + expedited.value) * 100
+            ) / 100;
+          await logActivity("warn", "payment.manual_shipping_record_failed", {
+            orderId: id,
+            admin: actor,
+            message: describeError(recordError),
+          });
+        }
       }
 
       const sent = sending
@@ -289,31 +299,42 @@ export async function POST(
         );
       }
 
-      if (payment && manual) {
-        await updateManualPayment(
-          payment,
-          sending
-            ? { instructions: message, state: "instructions_sent" }
-            : { lastAdminMessage: message, state: "verification_failed" }
-        );
+      // The email has gone out. Recording that it did is best-effort: a failed
+      // write here must not turn a delivered message into an "Action failed".
+      try {
+        if (payment && manual) {
+          await updateManualPayment(
+            payment,
+            sending
+              ? { instructions: message, state: "instructions_sent" }
+              : { lastAdminMessage: message, state: "verification_failed" }
+          );
+        }
+
+        await logOrderEvent({
+          orderId: id,
+          eventType: "note",
+          actor,
+          note: sending
+            ? `Payment instructions sent to customer (${methodLabel})`
+            : "Requested more payment information from customer",
+          customerVisible: true,
+        });
+
+        await logAdminAudit(actor, `order.manual_${action}`, id, { ip });
+        await logActivity("info", `payment.manual_${action}`, {
+          orderId: id,
+          paymentId: payment?.id ?? null,
+          admin: actor,
+        });
+
+      } catch (recordError) {
+        await logActivity("warn", "payment.manual_send_record_failed", {
+          orderId: id,
+          admin: actor,
+          message: describeError(recordError),
+        }).catch(() => undefined);
       }
-
-      await logOrderEvent({
-        orderId: id,
-        eventType: "note",
-        actor,
-        note: sending
-          ? `Payment instructions sent to customer (${methodLabel})`
-          : "Requested more payment information from customer",
-        customerVisible: true,
-      });
-
-      await logAdminAudit(actor, `order.manual_${action}`, id, { ip });
-      await logActivity("info", `payment.manual_${action}`, {
-        orderId: id,
-        paymentId: payment?.id ?? null,
-        admin: actor,
-      });
 
       return NextResponse.json({ ok: true, state: sending ? "instructions_sent" : "verification_failed" });
     }
