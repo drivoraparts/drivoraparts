@@ -161,7 +161,36 @@ type ManualPatch = {
   /** Appended to the existing list rather than replacing it, so a customer can
    * submit several receipts across attempts without losing earlier ones. */
   addReceipts?: ManualReceipt[];
+  /** A message was just emailed to the customer: start tracking it. */
+  emailSent?: { id: string };
+  /** Delivery or open event for the tracked message, from the email provider. */
+  emailEvent?: { type: EmailEventType; at: string };
 };
+
+export type EmailEventType = "delivered" | "opened" | "bounced" | "complained";
+
+/** Where the last emailed message has got to. Works for any payment row. */
+export type EmailStatus = {
+  sentAt: string | null;
+  deliveredAt: string | null;
+  openedAt: string | null;
+  /** Bounced or marked as spam: the customer did not get a usable email. */
+  problem: "bounced" | "complained" | null;
+};
+
+export function readEmailStatus(
+  payment: PaymentRecord | null | undefined
+): EmailStatus | null {
+  const meta = (payment?.metadata ?? {}) as Record<string, unknown>;
+  if (!asString(meta.manual_email_id)) return null;
+  const problem = asString(meta.manual_email_problem);
+  return {
+    sentAt: asString(meta.manual_email_sent_at),
+    deliveredAt: asString(meta.manual_email_delivered_at),
+    openedAt: asString(meta.manual_email_opened_at),
+    problem: problem === "bounced" || problem === "complained" ? problem : null,
+  };
+}
 
 /**
  * Apply a manual patch to a metadata object.
@@ -205,6 +234,28 @@ function applyManualPatch(
   if (patch.lastAdminMessage !== undefined) {
     next.manual_last_admin_message = patch.lastAdminMessage;
     next.manual_last_admin_message_at = now;
+  }
+
+  if (patch.emailSent) {
+    // A new send starts a fresh trail: the old message's events no longer apply.
+    next.manual_email_id = patch.emailSent.id;
+    next.manual_email_sent_at = now;
+    delete next.manual_email_delivered_at;
+    delete next.manual_email_opened_at;
+    delete next.manual_email_problem;
+  }
+
+  if (patch.emailEvent) {
+    const { type, at } = patch.emailEvent;
+    if (type === "delivered") {
+      if (!next.manual_email_delivered_at) next.manual_email_delivered_at = at;
+    } else if (type === "opened") {
+      // An open implies delivery even if that event arrived late or never.
+      if (!next.manual_email_delivered_at) next.manual_email_delivered_at = at;
+      if (!next.manual_email_opened_at) next.manual_email_opened_at = at;
+    } else {
+      next.manual_email_problem = type;
+    }
   }
 
   if (patch.addReceipts?.length) {
@@ -278,4 +329,26 @@ export async function updateManualPayment(
   throw new Error(
     "This payment was being updated at the same moment. Please try again."
   );
+}
+
+/**
+ * Apply a delivery or open event to whichever payment holds this email id.
+ * Returns false when none does (yet), so the webhook can ask the provider to
+ * retry: the event can beat our own write of the id.
+ */
+export async function recordEmailEvent(
+  emailId: string,
+  event: { type: EmailEventType; at: string }
+): Promise<boolean> {
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("payments")
+    .select("id")
+    .eq("metadata->>manual_email_id", emailId)
+    .limit(1)
+    .maybeSingle();
+  if (error) throw error;
+  if (!data) return false;
+  await updateManualPayment({ id: (data as { id: string }).id }, { emailEvent: event });
+  return true;
 }

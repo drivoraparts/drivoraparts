@@ -10,7 +10,7 @@ import ManualPaymentPanel, {
 import { getProductById } from "@/data/store";
 import { getOrderById, listOrderEvents } from "@/lib/db/orders";
 import { findPaymentByOrderId } from "@/lib/db/payments";
-import { readManualPayment } from "@/lib/payments/manual-payment";
+import { readEmailStatus, readManualPayment } from "@/lib/payments/manual-payment";
 import { createReceiptSignedUrl } from "@/lib/payments/receipt-storage";
 import { getBankRoute, getManualMethod } from "@/lib/payments/manual-methods";
 import { describeStoredShipment } from "@/lib/shipping/quote";
@@ -304,6 +304,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               }
               receipts={manualReceipts}
               paid={manual.paid}
+              emailStatus={readEmailStatus(payment)}
               closed={
                 order.status === "cancelled" ||
                 order.status === "failed" ||
@@ -329,6 +330,7 @@ export default async function AdminOrderDetailPage({ params }: PageProps) {
               shippingGuidance=""
               receipts={[]}
               paid={payment?.status === "paid"}
+              emailStatus={readEmailStatus(payment)}
               closed={false}
             />
           )}
