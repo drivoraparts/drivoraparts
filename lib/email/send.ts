@@ -9,12 +9,18 @@ export type EmailPayload = {
   replyTo?: string;
 };
 
-export async function sendEmail(payload: EmailPayload): Promise<boolean> {
+export type SendResult = {
+  ok: boolean;
+  /** The provider's id for the message, used to match delivery and open events. */
+  id: string | null;
+};
+
+export async function sendEmailTracked(payload: EmailPayload): Promise<SendResult> {
   const apiKey = getResendApiKey();
 
   if (!apiKey) {
     console.warn("[email] RESEND_API_KEY not configured — skipping send", payload.subject);
-    return false;
+    return { ok: false, id: null };
   }
 
   try {
@@ -36,14 +42,19 @@ export async function sendEmail(payload: EmailPayload): Promise<boolean> {
     if (!response.ok) {
       const text = await response.text();
       logError("email_send_failed", new Error(text), { subject: payload.subject });
-      return false;
+      return { ok: false, id: null };
     }
 
-    return true;
+    const body = (await response.json().catch(() => null)) as { id?: unknown } | null;
+    return { ok: true, id: typeof body?.id === "string" ? body.id : null };
   } catch (error) {
     logError("email_send_error", error, { subject: payload.subject });
-    return false;
+    return { ok: false, id: null };
   }
+}
+
+export async function sendEmail(payload: EmailPayload): Promise<boolean> {
+  return (await sendEmailTracked(payload)).ok;
 }
 
 function escapeHtml(value: string): string {
@@ -892,7 +903,7 @@ export async function sendManualPaymentInstructionsEmail(input: {
   methodLabel: string;
   instructions: string;
   items: OrderInvoiceLine[];
-}): Promise<boolean> {
+}): Promise<SendResult> {
   const orderRef = input.orderNumber;
 
   /*
@@ -926,7 +937,7 @@ export async function sendManualPaymentInstructionsEmail(input: {
         ].join("")
       : "";
 
-  return sendEmail({
+  return sendEmailTracked({
     to: input.to,
     subject: `Payment Instructions — Order #${orderRef}`,
     html: documentLayout(
@@ -976,10 +987,10 @@ export async function sendManualPaymentInfoRequestEmail(input: {
   orderNumber: string;
   total: number;
   message: string;
-}): Promise<boolean> {
+}): Promise<SendResult> {
   const orderRef = input.orderNumber;
 
-  return sendEmail({
+  return sendEmailTracked({
     to: input.to,
     subject: `Action needed on your payment — Order #${orderRef}`,
     html: documentLayout(

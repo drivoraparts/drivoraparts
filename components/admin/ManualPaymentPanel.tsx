@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { adminUi } from "./admin-ui";
 import { MANUAL_STATE_LABELS, type ManualPaymentState } from "@/lib/payments/manual-methods";
+import type { EmailStatus } from "@/lib/payments/manual-payment";
 
 /**
  * The manual-payment console for one order.
@@ -44,6 +45,74 @@ function formatBytes(bytes: number): string {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
+function formatWhen(iso: string | null): string {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime()) ? "" : d.toLocaleString();
+}
+
+/**
+ * Sent -> Delivered -> Read, as three ticks. Sent and Delivered are amber
+ * ("pending": it has gone, nobody has read it yet); Read is green. An open is
+ * detected by a tracking pixel, so "Read" means "opened", and a mail app that
+ * blocks images will never turn it green.
+ */
+function EmailTrail({ status }: { status: EmailStatus }) {
+  const read = Boolean(status.openedAt);
+  const delivered = Boolean(status.deliveredAt) || read;
+  const steps = [
+    { label: "Sent", at: status.sentAt, reached: true, tone: "amber" },
+    { label: "Delivered", at: status.deliveredAt, reached: delivered, tone: "amber" },
+    { label: "Read", at: status.openedAt, reached: read, tone: "green" },
+  ] as const;
+
+  return (
+    <div className="mt-3 rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2.5">
+      <p className="text-[10px] font-medium uppercase tracking-wide text-zinc-500">
+        Customer email status
+      </p>
+      <ul className="mt-1.5 flex flex-wrap gap-x-5 gap-y-1.5">
+        {steps.map((step) => {
+          const on = step.reached;
+          const color = !on
+            ? "bg-zinc-200 text-zinc-400"
+            : step.tone === "green"
+              ? "bg-emerald-600 text-white"
+              : "bg-amber-500 text-white";
+          return (
+            <li key={step.label} className="flex items-center gap-1.5">
+              <span
+                aria-hidden="true"
+                className={`inline-flex h-4 w-4 items-center justify-center rounded-full text-[10px] font-bold ${color}`}
+              >
+                {on ? "✓" : ""}
+              </span>
+              <span className={`text-xs ${on ? "font-medium text-zinc-900" : "text-zinc-400"}`}>
+                {step.label}
+                {on && step.at ? (
+                  <span className="ml-1 font-normal text-zinc-500">{formatWhen(step.at)}</span>
+                ) : null}
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+      {status.problem ? (
+        <p className="mt-1.5 text-[11px] font-medium text-red-600">
+          {status.problem === "bounced"
+            ? "The email bounced — the customer did not receive it. Check their address."
+            : "The customer marked this email as spam."}
+        </p>
+      ) : !read ? (
+        <p className="mt-1.5 text-[11px] text-zinc-500">
+          Turns green once the customer opens it. Some mail apps block the signal,
+          so a missing green tick does not prove it was unread.
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
 export default function ManualPaymentPanel({
   orderId,
   methodLabel,
@@ -63,10 +132,13 @@ export default function ManualPaymentPanel({
   paid,
   closed,
   sendOnly = false,
+  emailStatus = null,
 }: {
   /** Orders paid some other way (crypto, no payment record): only the send box
    * is shown, and it always works. */
   sendOnly?: boolean;
+  /** Delivery and open trail of the last message emailed to the customer. */
+  emailStatus?: EmailStatus | null;
   orderId: string;
   methodLabel: string;
   /** The bank/transfer route the customer asked for, when the method needs
@@ -362,6 +434,7 @@ export default function ManualPaymentPanel({
               : "Send instructions"}
         </button>
         {feedback(["send_instructions"])}
+        {emailStatus ? <EmailTrail status={emailStatus} /> : null}
       </div>
 
       {!sendOnly ? (<>

@@ -262,7 +262,7 @@ export async function POST(
         }
       }
 
-      const sent = sending
+      const result = sending
         ? await sendManualPaymentInstructionsEmail({
             to: customer.email,
             customerName: customer.full_name,
@@ -292,7 +292,7 @@ export async function POST(
 
       // The email is the point of the action: if it did not go out, do not
       // record a state that claims it did.
-      if (!sent) {
+      if (!result.ok) {
         return NextResponse.json(
           { error: "Email could not be sent. Check the email configuration." },
           { status: 502 }
@@ -302,6 +302,12 @@ export async function POST(
       // The email has gone out. Recording that it did is best-effort: a failed
       // write here must not turn a delivered message into an "Action failed".
       try {
+        // Start tracking delivery and opens for this message. Any payment row
+        // can carry it, so it works whatever the customer paid with.
+        if (payment && result.id) {
+          await updateManualPayment(payment, { emailSent: { id: result.id } });
+        }
+
         if (payment && manual) {
           await updateManualPayment(
             payment,
