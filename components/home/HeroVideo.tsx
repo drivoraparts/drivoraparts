@@ -238,6 +238,11 @@ export default function HeroVideo() {
       loop
       playsInline
       preload="auto"
+      // A decorative film: keep the browser's own player chrome (PiP button,
+      // Cast, and the OS media overlay it feeds) off it.
+      disablePictureInPicture
+      disableRemotePlayback
+      controlsList="nodownload nofullscreen noremoteplayback"
       aria-hidden="true"
       tabIndex={-1}
     >
