@@ -139,7 +139,7 @@ function withoutStoreBoilerplate(block: string): string {
   return block
     .split("\n")
     .filter((line) => {
-      const bare = line.trim().replace(/^[•\-*✓]\s*/, "");
+      const bare = line.trim().replace(/^[\u2022\-*\u2713]\s*/, "");
       return !STORE_BOILERPLATE_FEATURES.some((re) => re.test(bare));
     })
     .join("\n")
@@ -429,7 +429,7 @@ const humanizeKey = (key: string) =>
  * TypeScript source file, and the descriptions are the authored original. A
  * parser keeps one source of truth; a migration would create two that drift.
  */
-const SPEC_LINE = /^\s*[•\-*]?\s*([A-Za-z][A-Za-z0-9 /&()'.+-]{1,34}):\s*(.+?)\s*$/;
+const SPEC_LINE = /^\s*[\u2022\-*]?\s*([A-Za-z][A-Za-z0-9 /&()'.+-]{1,34}):\s*(.+?)\s*$/;
 
 const normalizeValue = (value: unknown) =>
   String(value ?? "").toLowerCase().replace(/\s+/g, " ").replace(/[.,;]+$/, "").trim();
@@ -573,7 +573,7 @@ export function getProductCatalogMeta(product: Product): ProductCatalogMeta {
         // sentence with a full stop that the captured value does not carry,
         // and an exact comparison left the line sitting under its own row.
         .filter((line) => {
-          const bare = line.trim().replace(/^[•\-*]\s*/, "").toLowerCase();
+          const bare = line.trim().replace(/^[\u2022\-*]\s*/, "").toLowerCase();
           if (LIVE_STATE_LINE.test(bare)) return false;
           return !specRows.some((r) => bare.startsWith(`${r.label.toLowerCase()}:`));
         })

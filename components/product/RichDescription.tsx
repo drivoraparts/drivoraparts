@@ -26,7 +26,7 @@ type Block =
 function isHeading(line: string, next: string | undefined): boolean {
   const text = line.trim();
   if (!text || text.length > 70) return false;
-  if (/^[•\-*]/.test(text)) return false;
+  if (/^[\u2022\-*]/.test(text)) return false;
   if (/[.:,;?]$/.test(text)) return false;
   // "Label: value" is data, not a heading — "Mileage: N/A / Not Verified" and
   // "Stock Status: In Stock" were being bolded as section titles.
@@ -71,16 +71,16 @@ function parse(description: string): Block[] {
       return;
     }
 
-    if (/^[•\-*]\s*/.test(line)) {
+    if (/^[\u2022\-*]\s*/.test(line)) {
       flushParagraph();
-      list.push(line.replace(/^[•\-*]\s*/, ""));
+      list.push(line.replace(/^[\u2022\-*]\s*/, ""));
       return;
     }
 
     // Checkmark lines read as list items too — "✓ Factory ECU".
-    if (/^[✓✔]\s*/.test(line)) {
+    if (/^[\u2713\u2714]\s*/.test(line)) {
       flushParagraph();
-      list.push(line.replace(/^[✓✔]\s*/, ""));
+      list.push(line.replace(/^[\u2713\u2714]\s*/, ""));
       return;
     }
 

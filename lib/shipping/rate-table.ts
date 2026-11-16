@@ -404,7 +404,7 @@ export type ShippingQuote =
 export function normalizeCountryInput(country?: string | null): string {
   return String(country ?? "")
     .toLowerCase()
-    .replace(/[.'’]/g, "")
+    .replace(/[.'\u2019]/g, "")
     .replace(/[^a-z]+/g, " ")
     .trim()
     .replace(/^the /, "");
