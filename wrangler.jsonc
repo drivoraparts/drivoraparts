@@ -43,6 +43,17 @@
   "triggers": {
     "crons": ["*/10 * * * *"]
   },
+  // CPU time allowed per request. 30 seconds is the Workers Paid default, set
+  // here so the limit is explicit rather than inherited from the account.
+  //
+  // A server-rendered page on this site costs 25-400 ms of CPU, and the first
+  // request on a fresh isolate another 200-400 ms to load the catalog. The
+  // Free plan allows 10 ms and does not accept this setting at all: a deploy
+  // that fails on this block means the account is on the Free plan, where
+  // requests die with Cloudflare error 1102.
+  "limits": {
+    "cpu_ms": 30000
+  },
   "observability": {
     "logs": {
       "enabled": true,
