@@ -39,7 +39,7 @@ const MAX_STATEMENT_CHARS = 260;
 function tidy(text: string): string {
   const t = text
     .replace(/\s+/g, " ")
-    .replace(/^[•\-*\s]+/, "")
+    .replace(/^[\u2022\-*\s]+/, "")
     .replace(/[\s.;,]+$/, "")
     .trim();
   return t ? t.charAt(0).toUpperCase() + t.slice(1) : t;
@@ -135,14 +135,14 @@ export function extractContents(description: string): ExtractedContents {
     while (j < lines.length && !lines[j].trim()) j++;
     for (; j < lines.length; j++) {
       const line = lines[j].trim();
-      if (/^[•\-*]\s+/.test(line)) items.push(line.replace(/^[•\-*]\s+/, ""));
+      if (/^[\u2022\-*]\s+/.test(line)) items.push(line.replace(/^[\u2022\-*]\s+/, ""));
       else break;
     }
     if (items.length >= 2) items.forEach((item) => push(included, item));
   }
 
   for (const raw of lines) {
-    const line = raw.trim().replace(/^[•\-*]\s*/, "");
+    const line = raw.trim().replace(/^[\u2022\-*]\s*/, "");
 
     // 2. "Includes: a, b, c"
     const inline = line.match(INLINE_INCLUDES);

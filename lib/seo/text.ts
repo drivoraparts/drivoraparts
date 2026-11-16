@@ -24,7 +24,7 @@ export function truncateSeoTitle(text: string, max: number): string {
   const trimmed = flat.slice(0, max - 1);
   const lastSpace = trimmed.lastIndexOf(" ");
   const cut = lastSpace > max * 0.6 ? trimmed.slice(0, lastSpace) : trimmed;
-  return `${cut.replace(/[\s—–,-]+$/, "")}…`;
+  return `${cut.replace(/[\s\u2014\u2013,-]+$/, "")}…`;
 }
 
 /**

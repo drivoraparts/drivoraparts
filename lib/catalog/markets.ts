@@ -119,7 +119,7 @@ function fromHub(
  * name with is a different truck.
  */
 const US_COMPACT_RANGER =
-  /\b(?:19[89]\d|200\d)\s*[–-]\s*(?:19[89]\d|200\d|201[01])\s+ford\s+ranger\b/i;
+  /\b(?:19[89]\d|200\d)\s*[\u2013-]\s*(?:19[89]\d|200\d|201[01])\s+ford\s+ranger\b/i;
 
 /**
  * Ford also named its 4.6, 5.4 and 6.8 petrol engines "Triton". The catalog
@@ -127,7 +127,7 @@ const US_COMPACT_RANGER =
  * under the Mitsubishi.
  */
 const FORD_TRITON_ENGINE =
-  /\b(?:4\.6|5\.4|6\.8)\s*l?\b[^•]{0,15}\btriton\b|\btriton\s+v-?(?:8|10)\b/i;
+  /\b(?:4\.6|5\.4|6\.8)\s*l?\b[^\u2022]{0,15}\btriton\b|\btriton\s+v-?(?:8|10)\b/i;
 
 /** "Ram Air" is an intake, not a truck. */
 const RAM_AIR = /\bram\s*-?\s*air\b/i;
@@ -175,13 +175,13 @@ export const MARKETS: Market[] = [
             // would mean nothing where the model is printed without it.
             key: "ram-1500",
             model: "Ram 1500",
-            include: [/\b(?:ram|dodge)\b[^•]{0,25}\b1500\b/i],
+            include: [/\b(?:ram|dodge)\b[^\u2022]{0,25}\b1500\b/i],
             exclude: [RAM_AIR, /\bpromaster\b/i, /\bsprinter\b/i],
           },
           {
             key: "ram-hd",
             model: "Ram 2500 / 3500",
-            include: [/\b(?:ram|dodge)\b[^•]{0,25}\b(?:2500|3500)\b/i],
+            include: [/\b(?:ram|dodge)\b[^\u2022]{0,25}\b(?:2500|3500)\b/i],
             exclude: [RAM_AIR, /\bpromaster\b/i, /\bsprinter\b/i],
           },
         ],
@@ -307,7 +307,7 @@ export const MARKETS: Market[] = [
             make: "Dodge",
             model: "Charger / Challenger",
             include: [
-              /\bdodge\b[^•]{0,20}\b(?:charger|challenger|dart|coronet|super\s?bee)\b/i,
+              /\bdodge\b[^\u2022]{0,20}\b(?:charger|challenger|dart|coronet|super\s?bee)\b/i,
             ],
           },
         ],
@@ -407,7 +407,7 @@ export const MARKETS: Market[] = [
             model: "Defender",
             // "Defender" alone is also a canopy and a Michelin tyre.
             include: [
-              /\bland\s?rover\b[^•]{0,20}\bdefender\b/i,
+              /\bland\s?rover\b[^\u2022]{0,20}\bdefender\b/i,
               /\bdefender\s+(?:90|110|130)\b/i,
             ],
           },
@@ -422,7 +422,7 @@ export const MARKETS: Market[] = [
             make: "Land Rover",
             model: "Discovery",
             include: [
-              /\bland\s?rover\b[^•]{0,20}\bdiscovery\b/i,
+              /\bland\s?rover\b[^\u2022]{0,20}\bdiscovery\b/i,
               /\bdiscovery\s+(?:[1-5]|sport)\b/i,
             ],
           },
