@@ -43,17 +43,16 @@
   "triggers": {
     "crons": ["*/10 * * * *"]
   },
-  // CPU time allowed per request. 30 seconds is the Workers Paid default, set
-  // here so the limit is explicit rather than inherited from the account.
+  // DO NOT add a "limits" block here while the Cloudflare account is on the
+  // Workers Free plan: the upload is rejected with "CPU limits are not
+  // supported for the Free plan" (code 100328) and nothing deploys. That was
+  // tried on 2026-11-16 and is how the plan was established.
   //
-  // A server-rendered page on this site costs 25-400 ms of CPU, and the first
-  // request on a fresh isolate another 200-400 ms to load the catalog. The
-  // Free plan allows 10 ms and does not accept this setting at all: a deploy
-  // that fails on this block means the account is on the Free plan, where
-  // requests die with Cloudflare error 1102.
-  "limits": {
-    "cpu_ms": 30000
-  },
+  // It matters because the Free plan allows 10 ms of CPU per request. A
+  // server-rendered page on this site costs 25-400 ms, and the first request
+  // on a fresh isolate another 200-400 ms to load the catalog, so Cloudflare
+  // kills a large share of requests with error 1102. Workers Paid raises the
+  // limit to 30 seconds. No setting in this file can change it.
   "observability": {
     "logs": {
       "enabled": true,
