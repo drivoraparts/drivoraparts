@@ -1,6 +1,7 @@
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { isSupabaseConfigured } from "@/lib/env";
 import { logError } from "@/lib/monitoring/logger";
+import type { ReviewAnswers } from "./questions";
 import type {
   ProductReview,
   ReviewModerationAction,
@@ -54,6 +55,13 @@ type ReviewRow = {
   source?: ReviewSource | null;
   entered_by?: string | null;
   collected_at?: string | null;
+  // Added by migration 017.
+  verification_method?: string | null;
+  answers?: ReviewAnswers | null;
+  answers_schema?: string | null;
+  vehicle?: string | null;
+  installed_by?: string | null;
+  would_buy_again?: boolean | null;
 };
 
 function toReview(row: ReviewRow): ProductReview {
@@ -71,6 +79,12 @@ function toReview(row: ReviewRow): ProductReview {
     source: row.source ?? "storefront",
     enteredBy: row.entered_by ?? null,
     collectedAt: row.collected_at ?? null,
+    verificationMethod: row.verification_method ?? null,
+    answers: row.answers ?? null,
+    answersSchema: row.answers_schema ?? null,
+    vehicle: row.vehicle ?? null,
+    installedBy: row.installed_by ?? null,
+    wouldBuyAgain: row.would_buy_again ?? null,
   };
 }
 

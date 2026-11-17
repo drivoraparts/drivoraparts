@@ -43,6 +43,14 @@ export type ProductReview = {
   enteredBy?: string | null;
   /** When the customer actually said it, if different from when it was entered. */
   collectedAt?: string | null;
+  /** "signed_link" for reviews submitted through a post-delivery review email. */
+  verificationMethod?: string | null;
+  /** Structured answers to the part-type questions in lib/reviews/questions.ts. */
+  answers?: Record<string, string | string[] | number> | null;
+  answersSchema?: string | null;
+  vehicle?: string | null;
+  installedBy?: string | null;
+  wouldBuyAgain?: boolean | null;
 };
 
 export type ReviewModerationAction = "approve" | "hide" | "delete";
