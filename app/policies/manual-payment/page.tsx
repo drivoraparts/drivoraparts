@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 import Policy from "@/components/policy/Policy";
-import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
+import { COMPANY_SUPPORT_EMAIL, COMPANY_PHONE_DISPLAY } from "@/lib/content/company";
 import { PAYPAL_DISCLOSURE } from "@/lib/content/manual-payment";
 import { DIRECT_PAYMENT_METHODS, listWithOr } from "@/lib/content/purchase-terms";
 
@@ -91,7 +91,7 @@ export default function ManualPaymentPage() {
         {
           heading: "Questions",
           paragraphs: [
-            `If you have a question about paying for your order, contact us at ${COMPANY_SUPPORT_EMAIL} and include your order number.`,
+            `If you have a question about paying for your order, contact us at ${COMPANY_SUPPORT_EMAIL} and include your order number. You can also call or text us at ${COMPANY_PHONE_DISPLAY}.`,
           ],
         },
       ]}

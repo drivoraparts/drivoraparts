@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Policy from "@/components/policy/Policy";
-import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
+import {
+  COMPANY_SUPPORT_EMAIL,
+  COMPANY_PHONE_DISPLAY,
+  COMPANY_PHONE_TEL_HREF,
+} from "@/lib/content/company";
 import { CONTACT_HREF, RETURN_POLICY_HREF } from "@/lib/content/purchase-terms";
 import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 
@@ -22,10 +26,14 @@ const supportChannels = (
     our{" "}
     <Link href={CONTACT_HREF} prefetch={false} className={linkClass}>
       contact form
-    </Link>{" "}
-    or by email at{" "}
+    </Link>
+    , by email at{" "}
     <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`} className={linkClass}>
       {COMPANY_SUPPORT_EMAIL}
+    </a>
+    , or by phone or text at{" "}
+    <a href={COMPANY_PHONE_TEL_HREF} className={linkClass}>
+      {COMPANY_PHONE_DISPLAY}
     </a>
   </>
 );

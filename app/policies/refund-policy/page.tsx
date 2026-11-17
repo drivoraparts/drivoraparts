@@ -8,6 +8,7 @@ import {
   COMPANY_DISPLAY_NAME,
   COMPANY_LEGAL_NAME,
   COMPANY_SUPPORT_EMAIL,
+  COMPANY_PHONE_DISPLAY,
 } from "@/lib/content/company";
 
 export default function RefundPolicyPage() {
@@ -111,7 +112,7 @@ export default function RefundPolicyPage() {
         {
           heading: "Contact",
           paragraphs: [
-            `For return and refund requests or questions, contact us at ${COMPANY_SUPPORT_EMAIL}.`,
+            `For return and refund requests or questions, contact us at ${COMPANY_SUPPORT_EMAIL}. You can also call or text us at ${COMPANY_PHONE_DISPLAY}.`,
           ],
         },
       ]}
