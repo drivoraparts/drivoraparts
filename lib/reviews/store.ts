@@ -8,7 +8,19 @@ import type {
   ReviewSubmissionContext,
 } from "./types";
 
-const DEFAULT_AVATAR = "/reviews/avatars/01.jpg";
+/*
+ * No default profile photo. Reviews used to fall back to /reviews/avatars/01.jpg
+ * -- a stock photo of a stranger -- so a real customer's words appeared beside
+ * someone else's face. ReviewAvatar renders the reviewer's initials when there
+ * is no image. Rows saved with one of the old stock paths are read as having
+ * no image (realProfileImage below).
+ */
+const STOCK_AVATAR_PREFIX = "/reviews/avatars/";
+
+function realProfileImage(value: string | null | undefined): string | undefined {
+  if (!value || value.startsWith(STOCK_AVATAR_PREFIX)) return undefined;
+  return value;
+}
 const TABLE = "product_reviews";
 
 /**
@@ -53,7 +65,7 @@ function toReview(row: ReviewRow): ProductReview {
     review: row.review,
     verifiedPurchase: row.verified_purchase,
     createdAt: row.created_at,
-    profileImage: row.profile_image ?? DEFAULT_AVATAR,
+    profileImage: realProfileImage(row.profile_image),
     reviewerName: row.reviewer_name,
     status: row.status,
     source: row.source ?? "storefront",
@@ -149,8 +161,8 @@ export async function getVerifiedBuyerAvatars(
   const seen = new Set<string>();
 
   for (const review of reviews) {
-    const avatar = review.profileImage || DEFAULT_AVATAR;
-    if (seen.has(avatar)) continue;
+    const avatar = review.profileImage;
+    if (!avatar || seen.has(avatar)) continue;
     seen.add(avatar);
     avatars.push(avatar);
     if (avatars.length >= limit) break;
@@ -207,7 +219,7 @@ export async function submitReview(
         // Comes straight from the caller's real completed-order lookup — never
         // re-derive this from anything the reviewer submitted themselves.
         verified_purchase: context.verifiedPurchase,
-        profile_image: context.profileImage || DEFAULT_AVATAR,
+        profile_image: realProfileImage(context.profileImage) ?? null,
         /*
          * Held for moderation rather than published on submit.
          *
@@ -288,7 +300,7 @@ export async function createAdminReview(
     rating,
     review: input.review.trim(),
     verified_purchase: input.verifiedPurchase,
-    profile_image: DEFAULT_AVATAR,
+    profile_image: null,
     status: "pending" as const,
   };
 
@@ -385,4 +397,3 @@ export async function getReviewStoreSnapshot(): Promise<ProductReview[]> {
   }
 }
 
-export { DEFAULT_AVATAR };
