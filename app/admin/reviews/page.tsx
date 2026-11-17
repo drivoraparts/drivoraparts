@@ -1,7 +1,7 @@
 import AdminShell, { StatCard } from "@/components/admin/AdminShell";
 import ReviewsManager from "@/components/admin/ReviewsManager";
 import { getReviewStoreSnapshot } from "@/lib/reviews";
-import { getAllProducts } from "@/lib/inventory";
+import { getAllCatalogProducts } from "@/lib/inventory";
 
 export const dynamic = "force-dynamic";
 
@@ -13,13 +13,13 @@ export default async function AdminReviewsPage() {
   // shipping the whole catalog to the browser.
   const referenced = new Set(reviews.map((review) => review.productId));
   const productNames: Record<number, string> = {};
-  for (const product of getAllProducts()) {
+  for (const product of getAllCatalogProducts()) {
     if (referenced.has(product.id)) productNames[product.id] = product.name;
   }
 
   // id + name only — the transcription form needs a product picker, not the
   // whole catalog shipped to the browser.
-  const catalog = getAllProducts()
+  const catalog = getAllCatalogProducts()
     .map((product) => ({ id: product.id, name: product.name }))
     .sort((a, b) => a.name.localeCompare(b.name));
 

@@ -31,7 +31,7 @@ const bundle = path.join(tmp, "entry.mjs");
 
 fs.writeFileSync(
   entry,
-  `import { getAllProducts, resolveProductCondition } from "@/lib/inventory";
+  `import { getAllProducts, getAllCatalogProducts, resolveProductCondition } from "@/lib/inventory";
 import { brands } from "@/lib/inventory/brands";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 import { PUBLIC_PRICE_RATIO } from "@/lib/inventory/pricing";
@@ -43,6 +43,8 @@ import {
 process.stdout.write(
   JSON.stringify({
     homeListingCount: HOME_LISTING_COUNT,
+    // Public (Toyota) listings: what the storefront count describes.
+    publicListingCount: getAllProducts().length,
     brands,
     pricing: {
       ratio: PUBLIC_PRICE_RATIO,
@@ -50,7 +52,9 @@ process.stdout.write(
       bulkDiscountPercent: BULK_ORDER_DISCOUNT_PERCENT,
       bulkMinQuantity: BULK_MIN_QUANTITY,
     },
-    products: getAllProducts().map((p) => ({
+    // Every listing, hidden ones included: a hidden listing can be released
+    // again, so its claims are held to the same standard.
+    products: getAllCatalogProducts().map((p) => ({
       id: p.id,
       name: p.name,
       condition: p.condition,
@@ -99,7 +103,7 @@ const raw = execFileSync(process.execPath, ["--max-old-space-size=4096", bundle]
 });
 fs.rmSync(tmp, { recursive: true, force: true });
 
-const { products, homeListingCount, brands, pricing } = JSON.parse(raw);
+const { products, homeListingCount, publicListingCount, brands, pricing } = JSON.parse(raw);
 const problems = [];
 
 /* ---------------------------------------------------------------------------
@@ -310,9 +314,9 @@ for (const product of products) {
    3. The one hardcoded count left on the site
 --------------------------------------------------------------------------- */
 
-if (homeListingCount !== products.length) {
+if (homeListingCount !== publicListingCount) {
   problems.push(
-    `[count] HOME_LISTING_COUNT is ${homeListingCount} but the catalog holds ${products.length}. ` +
+    `[count] HOME_LISTING_COUNT is ${homeListingCount} but the public catalog holds ${publicListingCount}. ` +
       `Run: node scripts/sync-home-listing-count.mjs (with a server running).`
   );
 }

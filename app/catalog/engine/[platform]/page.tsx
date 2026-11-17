@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getEnginePlatform, engineTree, getPlatformSlug } from "@/data/engine";
+import { getEnginePlatform, publishedEnginePlatformSlugs } from "@/data/engine";
 import { store } from "@/data/store";
 import { routes } from "@/lib/inventory";
 import PageHeading from "@/components/catalog/PageHeading";
@@ -17,11 +17,7 @@ import {
 export const dynamic = "force-static";
 
 export function generateStaticParams() {
-  return engineTree.flatMap((group) =>
-    group.platforms.map((platform) => ({
-      platform: getPlatformSlug(platform),
-    }))
-  );
+  return publishedEnginePlatformSlugs().map((platform) => ({ platform }));
 }
 
 type PageProps = {
@@ -53,6 +49,8 @@ export default async function Page({ params }: PageProps) {
 
   const found = getEnginePlatform(platformSlug);
   if (!found) return notFound();
+  // Platforms with no public (Toyota) listings are no longer published.
+  if (!publishedEnginePlatformSlugs().includes(platformSlug)) return notFound();
 
   const products = store.engine.products.filter(
     (p) => p.platform === platformSlug

@@ -127,15 +127,15 @@ export const BRAND_FITMENT_HINTS: Record<string, string> = {
 };
 
 export const SITE_KEYWORDS = [
-  "performance auto parts",
-  "automotive marketplace",
-  "truck beds for sale",
-  "engine swap parts",
-  "4x4 accessories",
-  "lift kits",
-  "bull bars",
-  "snorkels",
-  "worldwide shipping car parts",
+  "Toyota parts",
+  "Tacoma parts",
+  "Tundra parts",
+  "4Runner parts",
+  "Land Cruiser parts",
+  "Toyota lift kits",
+  "Toyota bumpers",
+  "Toyota engines",
+  "Toyota transmissions",
   "DrivoraParts",
 ];
 

@@ -106,7 +106,8 @@ export function indexableCatalogViewPaths(): string[] {
   };
 
   for (const market of MARKETS) {
-    if (market.groups.length === 0) continue;
+    // US-focused storefront: only the USA (Toyota model) views are submitted.
+    if (market.groups.length === 0 || market.key !== "usa") continue;
     const overview = getMarketOverview(market);
     const vehicles = overview.groups.flatMap((g) => g.vehicles.map((v) => v.vehicle.key));
     for (const c of overview.categories) consider({ scope: market.key, category: c.slug });

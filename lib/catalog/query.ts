@@ -184,7 +184,11 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   }
 
   if (category) {
-    items = items.filter((p) => p.category === category);
+    // A comma-separated list selects several categories at once -- how a
+    // storefront department such as "Body Parts" (bumpers, body panels,
+    // canopies) links to one view. A single slug behaves exactly as before.
+    const wanted = new Set(category.split(",").map((slug) => slug.trim()).filter(Boolean));
+    items = items.filter((p) => wanted.has(p.category));
   }
 
   if (brand) {

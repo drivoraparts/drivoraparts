@@ -16,11 +16,6 @@ import {
   websiteJsonLd,
   SITE_KEYWORDS,
 } from "@/lib/seo";
-import {
-  detectCurrencyFromAcceptLanguage,
-  detectCurrencyFromCountry,
-} from "@/lib/currency/detect";
-import { detectLanguageFromAcceptLanguage } from "@/lib/i18n";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import MetaPixel from "@/components/analytics/MetaPixel";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
@@ -65,7 +60,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "DrivoraParts | Automotive Performance Marketplace",
+    default: "DrivoraParts | Toyota Parts",
     template: "%s | DrivoraParts",
   },
   description: DEFAULT_DESCRIPTION,
@@ -139,17 +134,16 @@ export default async function RootLayout({
 }) {
   const headerStore = await headers();
   const isAdmin = headerStore.get("x-is-admin") === "1";
-  const acceptLanguage = headerStore.get("accept-language");
-  const initialLocale =
-    acceptLanguage?.split(",")[0]?.split(";")[0]?.trim() || "en-US";
-  // Where the buyer actually is beats what their browser asks for: an expat
-  // running an en-US browser in Sydney should still see AUD. CF-IPCountry is
-  // set by Cloudflare in front of the Worker; Accept-Language covers local dev
-  // and anything that reaches us without it.
-  const initialCurrency =
-    detectCurrencyFromCountry(headerStore.get("cf-ipcountry")) ??
-    detectCurrencyFromAcceptLanguage(acceptLanguage);
-  const initialLanguage = detectLanguageFromAcceptLanguage(acceptLanguage);
+  /*
+   * The storefront serves the United States: prices in USD, American English,
+   * whatever the visitor's browser or location. These used to follow
+   * CF-IPCountry and Accept-Language, which priced the catalog in AUD or EUR
+   * for overseas visitors -- wrong for a US-focused Toyota parts store, whose
+   * checkout and shipping table are both in dollars.
+   */
+  const initialLocale = "en-US";
+  const initialCurrency = "USD";
+  const initialLanguage = "en";
   const metaPixelId = getMetaPixelId();
   const tikTokPixelId = getTikTokPixelId();
   const gaMeasurementId = getGaMeasurementId();

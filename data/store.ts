@@ -22,7 +22,9 @@ import {
   getConditionLabel,
   resolveProductGallery,
   getProductThumbnail,
+  isPubliclyListed,
 } from "@/lib/inventory";
+import type { Product as InventoryProduct } from "@/lib/inventory";
 
 export const slugify = invSlugify;
 
@@ -71,8 +73,9 @@ function brandNameForSlug(slug: string, categorySlug: string): string {
 /** Reconstruct the legacy store record from the normalized inventory. */
 export const store: Record<string, Category> = Object.fromEntries(
   invCategories.map((category) => {
+    // Public (Toyota) listings only -- see lib/inventory/toyota-visibility.ts.
     const categoryProducts = invProducts.filter(
-      (p) => p.category === category.slug
+      (p) => p.category === category.slug && isPubliclyListed(p)
     );
 
     // Only list brands that actually have a live product -- a brand
@@ -88,11 +91,21 @@ export const store: Record<string, Category> = Object.fromEntries(
       )
       .map((b) => b.name);
 
-    const products: Product[] = categoryProducts.map((p) => ({
+    const products: Product[] = categoryProducts.map(toLegacyProduct);
+
+    return [category.slug, { name: category.name, brands, products }] as [
+      string,
+      Category
+    ];
+  })
+);
+
+function toLegacyProduct(p: InventoryProduct): Product {
+  return {
       id: p.id,
       name: p.name,
       category: p.category,
-      brand: brandNameForSlug(p.brand, category.slug),
+      brand: brandNameForSlug(p.brand, p.category),
       platform: p.platform,
       price: p.price,
       compareAtPrice: p.compareAtPrice,
@@ -106,14 +119,8 @@ export const store: Record<string, Category> = Object.fromEntries(
       // has to be carried across explicitly.
       swapPackage: p.swapPackage,
       buildPotential: p.buildPotential,
-    }));
-
-    return [category.slug, { name: category.name, brands, products }] as [
-      string,
-      Category
-    ];
-  })
-);
+  };
+}
 
 /* =========================
    HELPERS (DERIVED — NOT A SECOND SOURCE)
@@ -150,6 +157,11 @@ export function getAllProducts(): Product[] {
   return Object.values(store).flatMap((category) => category.products);
 }
 
+/**
+ * Any listing by id, hidden ones included: product pages must still resolve
+ * them (to answer "no longer available"), and so must order history.
+ */
 export function getProductById(id: number): Product | undefined {
-  return getAllProducts().find((product) => product.id === id);
+  const product = invProducts.find((entry) => entry.id === id);
+  return product ? toLegacyProduct(product) : undefined;
 }

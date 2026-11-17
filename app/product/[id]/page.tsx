@@ -9,7 +9,11 @@ import {
   getRelatedProducts,
   toCatalogCardData,
   brands,
+  isPubliclyListed,
+  isVerifiedToyotaGenuine,
 } from "@/lib/inventory";
+import UnavailableListing from "@/components/product/UnavailableListing";
+import { CHECKOUT_TEST_PRODUCT_ID } from "@/lib/inventory/pricing";
 import { getProductThumbnail } from "@/lib/inventory/media";
 import { compactFitment } from "@/lib/catalog/short-fitment";
 import ProductTemplate from "@/components/product/ProductTemplate";
@@ -32,6 +36,26 @@ import {
 import { getProductInterest } from "@/lib/analytics/product-interest";
 
 export const revalidate = 3600;
+
+/*
+ * The part-type label. Only what is established is said:
+ *   - "Toyota Genuine Part": verified in lib/inventory/data/toyota-genuine.json.
+ *   - "Aftermarket": made by an aftermarket brand (ARB, Old Man Emu, ...).
+ *   - nothing: listings branded Toyota but not yet verified as Genuine. A
+ *     supplier calling a part "Toyota Genuine" is not verification, and calling
+ *     it aftermarket could be just as wrong. "OEM" is never shown: the catalog
+ *     records no OEM status for any listing.
+ */
+function partTypeLabel(product: { id: number; brand?: string }): string | null {
+  if (isVerifiedToyotaGenuine(product)) return "Toyota Genuine Part";
+  if (product.brand === "toyota") return null;
+  return "Aftermarket";
+}
+
+/** Public (Toyota) listings, plus the checkout test SKU. */
+function isListed(id: number): boolean {
+  return id === CHECKOUT_TEST_PRODUCT_ID || isPubliclyListed(id);
+}
 type PageProps = {
   params: Promise<{ id: string }>;
 };
@@ -42,6 +66,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!product) {
     return { title: "Product Not Found" };
+  }
+
+  if (!isListed(product.id)) {
+    return buildPageMetadata({
+      title: "No Longer Listed",
+      description: "This part is no longer available on DrivoraParts.",
+      path: routes.product(product.id),
+      noIndex: true,
+    });
   }
 
   const inventoryProduct = getInventoryProductById(product.id);
@@ -72,6 +105,7 @@ export default async function ProductPage({ params }: PageProps) {
   const product = getProductById(Number(id));
 
   if (!product) return notFound();
+  if (!isListed(product.id)) return <UnavailableListing name={product.name} />;
 
   const inventoryProduct = getInventoryProductById(product.id);
   const baseMeta = getProductCatalogMeta(
@@ -150,6 +184,7 @@ export default async function ProductPage({ params }: PageProps) {
         universalFitment={Boolean(inventoryProduct?.universalFitment)}
         fitmentYears={inventoryProduct?.fitmentYears}
         fitmentEngine={inventoryProduct?.fitmentEngine}
+        partType={inventoryProduct ? partTypeLabel(inventoryProduct) : null}
       />
     </>
   );

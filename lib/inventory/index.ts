@@ -13,6 +13,7 @@ import { categories, categoryShowsProductsOnHub } from "./categories";
 import { brands } from "./brands";
 import { products } from "./products";
 import { CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
+import { isPubliclyListed } from "./toyota-visibility";
 import type { Brand, Category, Product } from "./types";
 
 export type { Brand, Category, Product, ProductCondition } from "./types";
@@ -44,6 +45,7 @@ export {
 export type { ProductCatalogMeta } from "./productEnhancements";
 export { getRelatedProducts } from "./related-products";
 export { toCatalogCardData } from "./catalog-card";
+export { isPubliclyListed, isVerifiedToyotaGenuine } from "./toyota-visibility";
 /** Normalize any string into a canonical kebab-case slug. */
 export function slugify(value: string): string {
   return value
@@ -78,19 +80,37 @@ function sortProductsNewestFirst(items: Product[]): Product[] {
   );
 }
 
-/** Every marketplace listing (all categories) for the All Products feed. Newest first. */
+/*
+ * Storefront accessors return PUBLIC listings only -- the Toyota catalog (see
+ * toyota-visibility.ts). Everything a shopper, crawler or feed can reach goes
+ * through these. Admin, orders, checkout and analytics use
+ * getAllCatalogProducts() / getProductById(), which still see every listing.
+ */
+const publicProducts = (): Product[] =>
+  products.filter(
+    (product) =>
+      product.id !== CHECKOUT_TEST_PRODUCT_ID && isPubliclyListed(product)
+  );
+
+/** Every PUBLIC listing (all categories) for the All Products feed. Newest first. */
 export const getAllProducts = (): Product[] =>
+  sortProductsNewestFirst(publicProducts());
+
+/** Every listing in the catalog, hidden ones included. Admin and analytics only. */
+export const getAllCatalogProducts = (): Product[] =>
   sortProductsNewestFirst(
     products.filter((product) => product.id !== CHECKOUT_TEST_PRODUCT_ID)
   );
 
 export const getProductsByCategory = (category: string): Product[] =>
   category
-    ? sortProductsNewestFirst(products.filter((p) => p.category === category))
+    ? sortProductsNewestFirst(
+        publicProducts().filter((p) => p.category === category)
+      )
     : [];
 
 export const getProductsByBrand = (brand: string): Product[] =>
-  brand ? products.filter((p) => p.brand === brand) : [];
+  brand ? publicProducts().filter((p) => p.brand === brand) : [];
 
 export const getProductById = (id: number): Product | undefined =>
   products.find((p) => p.id === id);

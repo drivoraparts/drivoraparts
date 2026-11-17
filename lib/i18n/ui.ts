@@ -3,7 +3,7 @@
  * Auto-translated via /api/translate when the visitor language is not English.
  */
 export const UI = {
-  headerTagline: "ENGINEERING • PERFORMANCE • CONTROL",
+  headerTagline: "TOYOTA PARTS · THE RIGHT FIT",
   navTitle: "Navigation",
   marketplace: "MARKETPLACE",
   browseCatalog: "Browse Catalog",
@@ -25,7 +25,7 @@ export const UI = {
   clearCart: "Clear Cart",
   remove: "Remove",
   footerBrand:
-    "New, used and refurbished auto parts — engines and drivetrain, suspension, 4x4 equipment and performance parts.",
+    "Toyota parts for US drivers: suspension, bumpers, lighting, engines, transmissions and accessories, each matched to the models it fits.",
   footerSupport: "Support",
   footerShop: "Shop",
   footerCustomerService: "Customer Service",
@@ -33,12 +33,17 @@ export const UI = {
   footerMarkets: "Shop by Market",
   footerNewsletterTitle: "Email Updates",
   footerNewsletterText: "New listings and offers, by email.",
-  allParts: "All Parts",
+  allParts: "All Toyota Parts",
   shopByVehicle: "Shop by Vehicle",
   categoryEngines: "Engines",
   categorySuspension: "Suspension",
   categoryTransmissions: "Transmissions",
   categoryTurbochargers: "Turbochargers",
+  categoryBumpers: "Bumpers & Body",
+  categoryLighting: "Lighting",
+  categoryAccessories: "Accessories",
+  toyotaTrademarkNotice:
+    "Toyota, Toyota model names and Toyota Genuine Parts are trademarks of Toyota Motor Corporation.",
   categoryBrakes: "Brakes",
   categoryWheelsTires: "Wheels & Tires",
   category4x4Accessories: "4x4 Accessories",

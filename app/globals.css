@@ -11,60 +11,50 @@
    colour; use these tokens or the Tailwind utilities mapped
    from them in the @theme block below.
 
-   THE ACCENT IS TWO-TONE, AND THAT IS DELIBERATE.
-   The brand orange #C96A24 measures 3.77:1 on white, which
-   fails WCAG AA for normal text — it is only valid at 18pt+.
-   As a CTA and link colour that is disqualifying, and it is
-   worse than the red it replaces (4.83:1). So the same hue
-   is published at two lightnesses:
+   PALETTE (Toyota storefront, 2026-11): white #FFFFFF, light
+   gray #F5F6F7, deep charcoal #17191C, slate #69717C, borders
+   #E5E7EB, success #16834A, and one red, #EB0A1E, used sparingly.
 
-     --accent          #9D531C   5.69 white / 5.27 warm / 4.53 chrome
-     --accent-hover    #8B4919   6.85 white / 6.34 warm / 5.45 chrome
-     --accent-on-dark  #C96A24   4.94:1 on charcoal
-
-   Use --accent on light backgrounds and --accent-on-dark on
-   dark ones. Never the reverse.
-
-   --accent is darker than it first looks because it must clear
-   4.5:1 on the DARKEST light surface, which is --chrome
-   (#E8E5DE), not white. An earlier value passed on white and
-   warm white but measured 3.96:1 in the header.
-
-   One measured caveat: --accent-on-dark against --surface-dark
-   (#1A1D1F) is 4.49:1, a hair under AA. Fine for large text,
-   not for body copy — put body-size accent text on --background-dark.
+   THE RED HAS LIMITS, MEASURED:
+     --accent        #EB0A1E  4.57 on white  | 4.22 on #F5F6F7
+     --accent-hover  #C8081A  5.99 on white  | 5.54 on #F5F6F7
+     --accent-on-dark #FF3B4B 5.02 on charcoal
+   So #EB0A1E is fine for buttons, badges and text on white, but
+   body-size red text on the light gray surface must use
+   --accent-hover, and red on dark sections uses --accent-on-dark.
+   White text on #EB0A1E is 4.57:1: keep button labels bold.
 
    Sand is a DARK-SURFACE COLOUR ONLY. #B9A27A on charcoal is
    7.55:1 (AAA); on white it is 2.47:1, an outright fail.
 ========================= */
 :root {
   /* Light context — catalog, product pages, forms, checkout */
-  --background: #f7f6f2;        /* warm white */
+  --background: #ffffff;        /* white */
   --surface: #ffffff;           /* cards, panels */
-  --surface-muted: #f2f0ea;     /* subtle fills */
+  --surface-muted: #f5f6f7;     /* light gray fills */
   --surface-elevated: #ffffff;  /* modals, popovers */
-  --chrome: #e8e5de;            /* light stone — bars, rails */
-  --foreground: #111315;        /* deep charcoal, 17.22:1 on background */
-  --muted: #5c574b;             /* warm grey, 6.65:1 — AA for secondary text */
-  --muted-foreground: #77715f;  /* muted khaki, for large/decorative text only */
-  --border: #ded9cf;
-  --border-strong: #c9c2b4;
+  --chrome: #ffffff;            /* header and bars: white */
+  --foreground: #17191c;        /* deep charcoal, 17.5:1 on white */
+  --muted: #69717c;             /* slate gray, 4.86:1 on white — AA for secondary text */
+  --muted-foreground: #8a919a;  /* light slate, for large/decorative text only */
+  --border: #e5e7eb;
+  --border-strong: #cfd3d8;
 
   /* Dark context — hero, footer, lifestyle sections */
-  --background-dark: #111315;   /* deep charcoal */
-  --surface-dark: #1a1d1f;      /* dark graphite */
-  --foreground-on-dark: #f7f6f2;
-  --muted-on-dark: #a9a296;     /* 7.36:1 on charcoal */
-  --border-on-dark: #2c3033;
+  --background-dark: #17191c;   /* deep charcoal */
+  --surface-dark: #202327;      /* dark graphite */
+  --foreground-on-dark: #ffffff;
+  --muted-on-dark: #aeb4bb;     /* 8.5:1 on charcoal */
+  --border-on-dark: #33373c;
 
   /* Accent — see the two-tone note above */
-  --accent: #9d531c;
-  --accent-hover: #8b4919;
-  --accent-active: #7f4216;
-  --accent-on-dark: #c96a24;
-  --accent-foreground: #ffffff; /* 5.69:1 on --accent */
-  --accent-subtle: #fbf1e8;     /* tinted fill for badges/selected states */
-  --accent-border: #e4c6ab;
+  --accent: #eb0a1e;
+  --accent-hover: #c8081a;
+  --accent-active: #a80716;
+  --accent-on-dark: #ff3b4b;
+  --accent-foreground: #ffffff; /* 4.4:1 on --accent: use on bold/large text */
+  --accent-subtle: #fdecee;     /* tinted fill for badges/selected states */
+  --accent-border: #f5b5bb;
 
   /* Earth accents — dark surfaces only */
   --sand: #b9a27a;
@@ -76,7 +66,7 @@
   --rating-star: #f5c542;
 
   /* Status. Chosen to clear AA on white rather than for vividness. */
-  --success: #1f7a4d;
+  --success: #16834a;
   --success-subtle: #eaf4ee;
   --warning: #8a5a12;
   --warning-subtle: #fbf2e3;

@@ -5,7 +5,7 @@ import { logActivity } from "@/lib/monitoring/activity";
 import { getClientIp } from "@/lib/security/ip";
 import { validateProductInput } from "@/lib/admin/validate-product";
 import { addProduct, GithubCatalogError } from "@/lib/admin/github-catalog";
-import { getAllProducts } from "@/lib/inventory";
+import { getAllCatalogProducts } from "@/lib/inventory";
 import type { Product } from "@/lib/inventory/types";
 
 export async function POST(req: Request) {
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
   }
 
   try {
-    const deployedMaxId = Math.max(0, ...getAllProducts().map((p) => p.id));
+    const deployedMaxId = Math.max(0, ...getAllCatalogProducts().map((p) => p.id));
 
     const productWithoutId: Omit<Product, "id"> = {
       name: body.name!.trim(),

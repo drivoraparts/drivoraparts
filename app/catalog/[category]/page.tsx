@@ -79,6 +79,11 @@ export default async function Page({ params }: PageProps) {
   }
 
   const products = getProductsByCategory(slug);
+  // A category with no public (Toyota) listings -- turbochargers today -- is
+  // not published: a 404 rather than an indexable empty page.
+  if (products.length === 0) {
+    notFound();
+  }
   const productPaths = products.map((product) => routes.product(product.id));
   const description = getCategorySeoDescription(slug, products.length);
 

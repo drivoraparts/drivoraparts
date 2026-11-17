@@ -1,6 +1,7 @@
 import type { Product } from "./types";
 import { products } from "./products";
 import { CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
+import { isPubliclyListed } from "./toyota-visibility";
 
 function scoreRelated(
   candidate: Product,
@@ -21,7 +22,9 @@ export function getRelatedProducts(
   const ranked = products
     .filter(
       (product) =>
-        product.id !== source.id && product.id !== CHECKOUT_TEST_PRODUCT_ID
+        product.id !== source.id &&
+        product.id !== CHECKOUT_TEST_PRODUCT_ID &&
+        isPubliclyListed(product)
     )
     .map((product) => ({
       product,
@@ -44,6 +47,7 @@ export function getRelatedProducts(
       (product) =>
         product.id !== source.id &&
         product.id !== CHECKOUT_TEST_PRODUCT_ID &&
+        isPubliclyListed(product) &&
         !seen.has(product.id)
     )
     .sort(

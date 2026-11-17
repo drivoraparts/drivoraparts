@@ -24,7 +24,10 @@ const WORLDWIDE_SYSTEMS_SHOWN = 8;
  * vehicle only appears here once the catalog has listings for it.
  */
 export default function MarketSelector() {
-  const overviews = MARKETS.map((market) => getMarketOverview(market));
+  // US-focused Toyota storefront: only the USA (Toyota model) plate.
+  const overviews = MARKETS.filter((market) => market.key === "usa").map((market) =>
+    getMarketOverview(market)
+  );
 
   return (
     // Four across only from xl. At 1024px a quarter of the container is
