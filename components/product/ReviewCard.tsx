@@ -2,6 +2,7 @@
 
 import type { ProductReview } from "@/lib/reviews";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
+import { describeAnswers, INSTALLED_BY_OPTIONS } from "@/lib/reviews/questions";
 import ReviewAvatar from "./ReviewAvatar";
 import StarRating from "./StarRating";
 
@@ -18,6 +19,21 @@ function formatReviewDate(value: string) {
 }
 
 export default function ReviewCard({ review }: ReviewCardProps) {
+  // The structured answers the reviewer gave: fit, install, condition.
+  const facts = [
+    ...(review.vehicle ? [{ label: "Vehicle", value: review.vehicle }] : []),
+    ...(review.installedBy
+      ? [{
+          label: "Installed by",
+          value: INSTALLED_BY_OPTIONS.find((o) => o.value === review.installedBy)?.label ?? review.installedBy,
+        }]
+      : []),
+    ...describeAnswers(review.answersSchema, review.answers),
+    ...(review.wouldBuyAgain == null
+      ? []
+      : [{ label: "Would buy again", value: review.wouldBuyAgain ? "Yes" : "No" }]),
+  ];
+
   return (
     <article className="review-card">
       <div className="review-card-header">
@@ -30,7 +46,16 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           <p className="review-card-name">{review.reviewerName}</p>
           <StarRating rating={review.rating} size="sm" />
           {review.verifiedPurchase && (
-            <span className="review-card-verified">✓ Verified Purchase</span>
+            <span
+              className="review-card-verified"
+              title={
+                review.verificationMethod === "signed_link"
+                  ? "Submitted through a review link emailed to the address on the order after delivery."
+                  : "Matched to a completed order."
+              }
+            >
+              ✓ Verified Buyer
+            </span>
           )}
           <time className="review-card-date" dateTime={review.createdAt}>
             {formatReviewDate(review.createdAt)}
@@ -39,6 +64,17 @@ export default function ReviewCard({ review }: ReviewCardProps) {
       </div>
 
       <p className="review-card-content">{review.review}</p>
+
+      {facts.length > 0 ? (
+        <dl className="review-card-facts">
+          {facts.map((fact) => (
+            <div key={fact.label} className="review-card-fact">
+              <dt>{fact.label}</dt>
+              <dd>{fact.value}</dd>
+            </div>
+          ))}
+        </dl>
+      ) : null}
 
       <style jsx>{`
         .review-card {
@@ -87,6 +123,33 @@ export default function ReviewCard({ review }: ReviewCardProps) {
           margin-top: 6px;
           font-size: 11px;
           color: var(--muted);
+        }
+
+        .review-card-facts {
+          margin: 12px 0 0;
+          display: grid;
+          gap: 4px;
+          font-size: 12px;
+        }
+
+        .review-card-fact {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px 8px;
+        }
+
+        .review-card-fact dt {
+          color: var(--muted);
+        }
+
+        .review-card-fact dt::after {
+          content: ":";
+        }
+
+        .review-card-fact dd {
+          margin: 0;
+          font-weight: 600;
+          color: var(--foreground);
         }
 
         .review-card-content {

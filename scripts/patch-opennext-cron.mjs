@@ -73,10 +73,13 @@ async function __drivoraScheduled(event, env, ctx) {
 
   const origin = env.NEXT_PUBLIC_SITE_URL || "https://drivoraparts.com";
 
-  const run = async () => {
+  // Each job is a POST to an app route over the service binding, authorized
+  // with CRON_SECRET. They run one after another and fail independently: a
+  // review-request error never stops payment reconciliation, or the reverse.
+  const call = async (name, path) => {
     try {
       const response = await env.WORKER_SELF_REFERENCE.fetch(
-        new Request(\`\${origin}/api/payments/reconcile\`, {
+        new Request(\`\${origin}\${path}\`, {
           method: "POST",
           headers: { Authorization: \`Bearer \${secret}\` },
         })
@@ -86,15 +89,21 @@ async function __drivoraScheduled(event, env, ctx) {
 
       if (!response.ok) {
         console.error(
-          \`[cron] reconcile failed: HTTP \${response.status} \${body.slice(0, 300)}\`
+          \`[cron] \${name} failed: HTTP \${response.status} \${body.slice(0, 300)}\`
         );
         return;
       }
 
-      console.log(\`[cron] reconcile ok: \${body.slice(0, 300)}\`);
+      console.log(\`[cron] \${name} ok: \${body.slice(0, 300)}\`);
     } catch (error) {
-      console.error("[cron] reconcile threw:", error && error.stack ? error.stack : error);
+      console.error(\`[cron] \${name} threw:\`, error && error.stack ? error.stack : error);
     }
+  };
+
+  const run = async () => {
+    await call("reconcile", "/api/payments/reconcile");
+    // Post-delivery review requests (lib/reviews/requests.ts).
+    await call("review-requests", "/api/reviews/requests");
   };
 
   // waitUntil keeps the isolate alive until the reconciliation finishes;
