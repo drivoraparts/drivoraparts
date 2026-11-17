@@ -657,6 +657,16 @@ export const vehiclePlatforms: VehiclePlatform[] = [
   },
 ];
 
+/**
+ * Platforms with a public hub page. The storefront lists Toyota parts only, so
+ * hubs for other makes are no longer published (their pages 404 and they are
+ * out of the sitemap); the platform records stay, since the market rules and
+ * the fitment matcher still read them.
+ */
+export const toyotaVehiclePlatforms: VehiclePlatform[] = vehiclePlatforms.filter(
+  (platform) => platform.make === "Toyota"
+);
+
 export function getVehiclePlatform(slug: string): VehiclePlatform | undefined {
   return vehiclePlatforms.find((v) => v.slug === slug);
 }

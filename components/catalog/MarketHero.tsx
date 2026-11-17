@@ -149,16 +149,15 @@ export default function MarketHero({ overview }: { overview: MarketOverview }) {
 
             <p className="mt-7 max-w-2xl text-xs leading-relaxed text-neutral-500">
               A part appears here when its own listing names the vehicle. Check
-              the fitment on the product page before ordering. Parts that fit
-              any vehicle, like winches and air compressors, are in{" "}
+              the fitment on the product page before ordering, or{" "}
               <Link
-                href={routes.market("worldwide")}
+                href="/contact"
                 prefetch={false}
                 className="font-semibold text-neutral-300 underline decoration-neutral-600 underline-offset-2 transition-colors duration-[var(--motion-duration-fast)] hover:text-white"
               >
-                Worldwide
-              </Link>
-              .
+                ask us
+              </Link>{" "}
+              if your Toyota is not listed.
               {vehicle?.hub ? (
                 <>
                   {" "}

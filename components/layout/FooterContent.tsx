@@ -45,14 +45,13 @@ const COLUMNS: { heading: UiKey; links: FooterLink[] }[] = [
     heading: "footerShop",
     links: [
       { href: routes.all, label: "allParts" },
-      { href: "/vehicles", label: "shopByVehicle" },
-      { href: routes.category("engine"), label: "categoryEngines" },
+      { href: routes.market("usa"), label: "shopByVehicle" },
       { href: routes.category("suspension"), label: "categorySuspension" },
+      { href: `${routes.all}?category=bumper,body-parts,canopy`, label: "categoryBumpers" },
+      { href: routes.category("lighting"), label: "categoryLighting" },
+      { href: routes.category("engine"), label: "categoryEngines" },
       { href: routes.category("transmission"), label: "categoryTransmissions" },
-      { href: routes.category("turbocharger"), label: "categoryTurbochargers" },
-      { href: routes.category("brakes"), label: "categoryBrakes" },
-      { href: routes.category("wheels-tires"), label: "categoryWheelsTires" },
-      { href: routes.category("4x4-accessories"), label: "category4x4Accessories" },
+      { href: `${routes.all}?category=4x4-accessories,interior`, label: "categoryAccessories" },
     ],
   },
   {
@@ -78,17 +77,6 @@ const COLUMNS: { heading: UiKey; links: FooterLink[] }[] = [
       { href: "/policies/cookie-policy", label: "cookiePolicy" },
       { href: "/policies/accessibility-statement", label: "accessibility" },
       { href: "/policies", label: "allPolicies" },
-    ],
-  },
-  {
-    // Ways into the catalog, the same four the market selector offers --
-    // not places DrivoraParts operates from.
-    heading: "footerMarkets",
-    links: [
-      { href: routes.market("usa"), label: "marketUnitedStates" },
-      { href: routes.market("australia"), label: "marketAustralia" },
-      { href: routes.market("uk"), label: "marketUnitedKingdom" },
-      { href: routes.market("worldwide"), label: "marketWorldwide" },
     ],
   },
 ];
@@ -224,6 +212,7 @@ export default function FooterContent() {
           <p>
             © {copyrightYears()} {COMPANY_DISPLAY_NAME}. {t("rightsReserved")}
           </p>
+          <p className="mt-1">{t("toyotaTrademarkNotice")}</p>
         </div>
         <nav aria-label="Legal">
           <ul className="flex flex-wrap gap-x-5">

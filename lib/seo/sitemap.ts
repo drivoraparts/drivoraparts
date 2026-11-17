@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
-import { engineTree, getPlatformSlug } from "@/data/engine";
-import { vehiclePlatforms } from "@/data/vehicles";
+import { publishedEnginePlatformSlugs } from "@/data/engine";
+import { toyotaVehiclePlatforms } from "@/data/vehicles";
 import { MARKETS } from "@/lib/catalog/markets";
 import { indexableCatalogViewPaths } from "@/lib/catalog/view-seo";
 import {
@@ -40,7 +40,6 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     { path: "", priority: 1 },
     { path: routes.catalog, priority: 0.95 },
     { path: routes.all, priority: 0.9 },
-    { path: "/vehicles", priority: 0.9 },
     { path: "/about", priority: 0.6 },
     { path: NEWS_PATH, priority: 0.6 },
     { path: "/contact", priority: 0.6 },
@@ -50,16 +49,18 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
   // /catalog/engine is already included here via the generic category loop
   // (same priority, 0.9) -- it used to also be hardcoded in staticPaths
   // above, which submitted it to Google twice in the same sitemap.
-  const categoryEntries = categories.map((category) =>
-    entry(toUrl(routes.category(category.slug)), 0.9)
-  );
+  // Only categories with public (Toyota) listings.
+  const categoryEntries = categories
+    .filter((category) => products.some((p) => p.category === category.slug))
+    .map((category) => entry(toUrl(routes.category(category.slug)), 0.9));
 
-  // The three regional market views. Worldwide is left out on purpose: it
+  // The USA view only: it is the storefront's Toyota model selector. The
+  // Australia and UK views still resolve for old links but are not submitted
+  // -- the storefront is US-focused. Worldwide is left out on purpose: it
   // lists exactly what /catalog/all lists and names that page as canonical.
-  // Their filtered views are listed separately below.
-  const marketEntries = MARKETS.filter((market) => market.groups.length > 0).map(
-    (market) => entry(toUrl(routes.market(market.key)), 0.9)
-  );
+  const marketEntries = MARKETS.filter(
+    (market) => market.key === "usa" && market.groups.length > 0
+  ).map((market) => entry(toUrl(routes.market(market.key)), 0.9));
 
   // Vehicle, system and category views of the market pages are pages in their
   // own right (self-canonical, see lib/catalog/view-seo.ts), so they are
@@ -81,14 +82,13 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
     )
     .map((brand) => entry(toUrl(routes.brand(brand.category, brand.slug)), 0.85));
 
-  const vehicleEntries = vehiclePlatforms.map((platform) =>
+  // Toyota platform hubs only; hubs for other makes are no longer published.
+  const vehicleEntries = toyotaVehiclePlatforms.map((platform) =>
     entry(toUrl(`/vehicles/${platform.slug}`), 0.85)
   );
 
-  const enginePlatformEntries = engineTree.flatMap((group) =>
-    group.platforms.map((platform) =>
-      entry(toUrl(`/catalog/engine/${getPlatformSlug(platform)}`), 0.85)
-    )
+  const enginePlatformEntries = publishedEnginePlatformSlugs().map((slug) =>
+    entry(toUrl(`/catalog/engine/${slug}`), 0.85)
   );
 
   // Bulk-imported listings still on the generic placeholder description are

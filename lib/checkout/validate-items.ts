@@ -1,4 +1,5 @@
-import { getProductById } from "@/lib/inventory";
+import { getProductById, isPubliclyListed } from "@/lib/inventory";
+import { CHECKOUT_TEST_PRODUCT_ID } from "@/lib/inventory/pricing";
 import type { CreateOrderItemInput } from "@/lib/db/orders";
 
 import {
@@ -135,6 +136,14 @@ export function lockOrderItemsFromCatalog(
 
     if (product.stock === false) {
       throw new Error(`${product.name} is out of stock`);
+    }
+
+    // Only listings on the public (Toyota) storefront can be bought. A hidden
+    // listing can still sit in a cart saved before it was hidden.
+    if (product.id !== CHECKOUT_TEST_PRODUCT_ID && !isPubliclyListed(product)) {
+      throw new Error(
+        `${product.name} is no longer available. Please remove it from your cart.`
+      );
     }
 
     locked.push({

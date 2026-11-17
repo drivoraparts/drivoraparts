@@ -1,7 +1,7 @@
 import { listAnalyticsEvents } from "@/lib/db/analytics";
 import { getInventoryMap } from "@/lib/db/inventory";
 import { listOrders } from "@/lib/db/orders";
-import { getAllProducts, getProductById } from "@/lib/inventory";
+import { getAllCatalogProducts, getProductById } from "@/lib/inventory";
 import type { ProductSignal } from "./types";
 
 const MS_DAY = 86_400_000;
@@ -41,7 +41,7 @@ export async function buildProductSignals(): Promise<ProductSignal[]> {
 
   const signals = new Map<number, ProductSignal>();
 
-  for (const product of getAllProducts()) {
+  for (const product of getAllCatalogProducts()) {
     signals.set(product.id, {
       productId: product.id,
       productName: product.name,

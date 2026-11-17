@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import {
   fitmentYears,
   getVehiclePlatform,
-  vehiclePlatforms,
+  toyotaVehiclePlatforms,
 } from "@/data/vehicles";
 import vehicleMedia from "@/data/vehicle-media.json";
 import { getSharedPlatformParts, getVehicleParts } from "@/lib/vehicles/parts";
@@ -34,14 +34,20 @@ type MediaEntry = {
 const media = vehicleMedia as Record<string, MediaEntry[]>;
 
 export function generateStaticParams() {
-  return vehiclePlatforms.map((platform) => ({ slug: platform.slug }));
+  return toyotaVehiclePlatforms.map((platform) => ({ slug: platform.slug }));
+}
+
+/** Toyota hubs only -- see toyotaVehiclePlatforms in data/vehicles.ts. */
+function getToyotaPlatform(slug: string) {
+  const platform = getVehiclePlatform(slug);
+  return platform?.make === "Toyota" ? platform : undefined;
 }
 
 type PageProps = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const platform = getVehiclePlatform(slug);
+  const platform = getToyotaPlatform(slug);
 
   if (!platform) {
     return buildPageMetadata({ title: "Vehicle", path: "/vehicles" });
@@ -63,7 +69,7 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
-  const platform = getVehiclePlatform(slug);
+  const platform = getToyotaPlatform(slug);
   if (!platform) return notFound();
 
   const parts = getVehicleParts(platform);

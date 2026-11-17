@@ -38,7 +38,10 @@ export default function MarketSwitcher({
   return (
     <nav aria-label="Shop by market">
       <ul className="flex flex-wrap gap-x-6 gap-y-1 sm:gap-x-8 sm:border-b sm:border-white/10">
-        {MARKETS.map((market) => {
+        {/* US-focused Toyota storefront: the USA (Toyota model) view only. The
+            other market pages still resolve for old links, and show their own
+            tab while you are on them. */}
+        {MARKETS.filter((market) => market.key === "usa" || market.key === active).map((market) => {
           const current = market.key === active;
           return (
             <li key={market.key}>

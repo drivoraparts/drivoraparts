@@ -4,20 +4,28 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
-import { COMPANY_SUPPORT_EMAIL } from "@/lib/content/company";
 import { useTranslation } from "@/hooks/useTranslation";
-import { WISHLIST_CHANGE_EVENT, readWishlist } from "@/lib/wishlist";
 
-const NAV_LINKS = [
-  // The Shop Parts landing: the four markets first, then All Products and
-  // every category. Search still goes straight to /catalog/all (below).
-  { href: "/catalog", label: "Shop" },
-  { href: "/vehicles", label: "By Vehicle" },
-  { href: "/cart", label: "Cart" },
-  { href: "/track-order", label: "Track Order" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-] as const;
+import toyotaGenuine from "@/lib/inventory/data/toyota-genuine.json";
+
+/*
+ * Toyota storefront navigation. "Toyota Genuine Parts" appears only once at
+ * least one listing is verified as Genuine (lib/inventory/data/
+ * toyota-genuine.json): a nav item opening onto an empty or mislabelled page
+ * is worse than none.
+ */
+const HAS_VERIFIED_GENUINE = toyotaGenuine.verified.length > 0;
+
+export const NAV_LINKS: { href: string; label: string }[] = [
+  { href: "/", label: "Home" },
+  ...(HAS_VERIFIED_GENUINE
+    ? [{ href: "/catalog/all?q=Toyota%20Genuine", label: "Toyota Genuine Parts" }]
+    : []),
+  { href: "/catalog/all", label: "Shop All Toyota Parts" },
+  { href: "/catalog/usa", label: "Shop by Vehicle" },
+  { href: "/catalog/all?category=engine,transmission", label: "Engines & Transmissions" },
+  { href: "/contact", label: "Support" },
+];
 
 export default function GlobalHeader({
   setMenuOpen,
@@ -34,17 +42,11 @@ export default function GlobalHeader({
   const itemCount = useCartStore((s) =>
     s.items.reduce((sum, i) => sum + i.quantity, 0)
   );
-  const [wishlistCount, setWishlistCount] = useState(0);
   const { t } = useTranslation();
   const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
-    setWishlistCount(readWishlist().length);
-
-    const onWishlistChange = () => setWishlistCount(readWishlist().length);
-    window.addEventListener(WISHLIST_CHANGE_EVENT, onWishlistChange);
-    return () => window.removeEventListener(WISHLIST_CHANGE_EVENT, onWishlistChange);
   }, []);
 
   useEffect(() => {
@@ -75,7 +77,7 @@ export default function GlobalHeader({
       <div className="mx-auto flex w-full min-w-0 max-w-full items-center justify-between gap-2 px-4 text-neutral-900 sm:px-6">
         <Link
           href="/"
-          className="min-w-0 shrink text-base font-bold tracking-wide text-neutral-900 sm:text-lg sm:tracking-widest"
+          className="min-w-0 shrink text-base font-extrabold uppercase tracking-[0.14em] text-foreground sm:text-lg"
         >
           Drivora<span className="text-accent">Parts</span>
         </Link>
@@ -87,55 +89,48 @@ export default function GlobalHeader({
         <div className="flex shrink-0 items-center gap-3 pr-0.5 text-sm sm:gap-6">
           <nav
             aria-label="Primary"
-            className="hidden items-center gap-5 text-sm text-muted xl:flex"
+            className="hidden items-center gap-6 text-[13px] font-semibold text-foreground xl:flex"
           >
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="transition hover:text-neutral-900"
+                className="transition hover:text-accent"
               >
                 {link.label}
               </Link>
             ))}
-            <a
-              href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
-              className="text-accent transition hover:text-accent-hover"
-            >
-              {COMPANY_SUPPORT_EMAIL}
-            </a>
           </nav>
 
           <button
             onClick={() => setSearchOpen((v) => !v)}
-            className="text-neutral-800 transition hover:scale-110"
-            aria-label="Search products"
+            className="flex h-10 w-10 items-center justify-center rounded-md text-foreground transition hover:bg-surface-muted"
+            aria-label="Search Toyota parts"
             aria-expanded={searchOpen}
           >
-            🔍
+            <Icon path="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" />
           </button>
 
+          {/* No customer login exists -- checkout is guest checkout -- so the
+              account icon opens order tracking, which is what a returning
+              customer comes back for. */}
           <Link
-            href="/wishlist"
-            className="relative text-neutral-800 transition hover:scale-110"
-            aria-label="View wishlist"
+            href="/track-order"
+            className="flex h-10 w-10 items-center justify-center rounded-md text-foreground transition hover:bg-surface-muted"
+            aria-label="Your orders"
+            title="Your orders"
           >
-            ♡
-            {mounted && wishlistCount > 0 ? (
-              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-xs font-bold text-white">
-                {wishlistCount}
-              </span>
-            ) : null}
+            <Icon path="M20 21a8 8 0 1 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z" />
           </Link>
 
           <button
             onClick={() => setCartOpen(true)}
-            className="relative text-neutral-800 transition hover:scale-110"
+            className="relative flex h-10 w-10 items-center justify-center rounded-md text-foreground transition hover:bg-surface-muted"
             aria-label="Open cart"
           >
-            🛒
+            <Icon path="M3 3h2l2.4 12.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6M10 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
             {mounted && itemCount > 0 ? (
-              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-xs font-bold text-white">
+              <span className="absolute -right-0.5 -top-0.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-[11px] font-bold text-white">
                 {itemCount}
               </span>
             ) : null}
@@ -143,10 +138,10 @@ export default function GlobalHeader({
 
           <button
             onClick={() => setMenuOpen(true)}
-            className="text-neutral-800 transition hover:scale-110 xl:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-md text-foreground transition hover:bg-surface-muted xl:hidden"
             aria-label="Open navigation menu"
           >
-            ☰
+            <Icon path="M4 6h16M4 12h16M4 18h16" />
           </button>
         </div>
       </div>
@@ -164,8 +159,8 @@ export default function GlobalHeader({
                 type="search"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                placeholder="Search parts, brands, categories…"
-                aria-label="Search products"
+                placeholder="Search Toyota parts, models, part numbers…"
+                aria-label="Search Toyota parts"
                 className="w-full rounded-lg border border-border bg-white px-3 py-2 pr-8 text-sm text-neutral-900 placeholder:text-muted focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
               />
               {searchValue ? (
@@ -192,17 +187,31 @@ export default function GlobalHeader({
         </div>
       ) : null}
 
-      <div className="mt-2 hidden items-center justify-center gap-3 px-4 text-[11px] text-muted sm:px-6 md:flex xl:hidden">
+      <div className="mt-2 hidden items-center justify-center gap-4 px-4 text-xs font-semibold text-foreground sm:px-6 md:flex xl:hidden">
         {NAV_LINKS.map((link) => (
-          <Link key={link.href} href={link.href} className="transition hover:text-neutral-900">
+          <Link key={link.href} href={link.href} className="transition hover:text-accent">
             {link.label}
           </Link>
         ))}
-        <span aria-hidden="true">·</span>
-        <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`} className="text-accent hover:text-accent-hover">
-          {COMPANY_SUPPORT_EMAIL}
-        </a>
       </div>
     </header>
+  );
+}
+
+function Icon({ path }: { path: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d={path} />
+    </svg>
   );
 }

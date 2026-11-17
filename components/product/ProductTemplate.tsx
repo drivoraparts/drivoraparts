@@ -116,6 +116,7 @@ export default function ProductTemplate({
   fitmentYears,
   fitmentEngine,
   productInterest = null,
+  partType = null,
 }: {
   product: Product;
   catalogMeta: ProductCatalogMeta;
@@ -131,6 +132,13 @@ export default function ProductTemplate({
   universalFitment?: boolean;
   fitmentYears?: string;
   fitmentEngine?: string;
+  /**
+   * "Toyota Genuine Part" only for listings verified in toyota-genuine.json;
+   * "Aftermarket" for parts made by an aftermarket brand; null when neither is
+   * established, in which case nothing is claimed. See partTypeLabel() in
+   * app/product/[id]/page.tsx.
+   */
+  partType?: string | null;
 }) {
   const [quantity, setQuantity] = useState(1);
   const ctaRef = useRef<HTMLDivElement>(null);
@@ -354,6 +362,12 @@ export default function ProductTemplate({
                 {catalogMeta.conditionLabel}
               </dd>
             </div>
+            {partType ? (
+              <div className="flex items-center gap-1.5">
+                <dt className="text-muted">Type</dt>
+                <dd className="font-semibold text-neutral-900">{partType}</dd>
+              </div>
+            ) : null}
           </dl>
 
           {hasReviews ? (

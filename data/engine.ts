@@ -8,7 +8,7 @@
    STRUCTURE/DEPTH only — never in color.
 ========================================================= */
 
-import { slugify } from "./store";
+import { slugify, store } from "./store";
 
 export type EnginePlatform = {
   name: string;
@@ -133,4 +133,19 @@ export function getEnginePlatform(
     if (platform) return { platform, group };
   }
   return undefined;
+}
+
+/**
+ * Engine platforms that have public listings. The storefront lists Toyota
+ * parts only (lib/inventory/toyota-visibility.ts), so a platform page for the
+ * RB26 or the LS would be an empty shell; those are no longer published.
+ * Reads the store, which holds public listings only.
+ */
+export function publishedEnginePlatformSlugs(): string[] {
+  const withListings = new Set(
+    (store.engine?.products ?? []).map((product) => product.platform).filter(Boolean)
+  );
+  return engineTree
+    .flatMap((group) => group.platforms.map((platform) => getPlatformSlug(platform)))
+    .filter((slug) => withListings.has(slug));
 }

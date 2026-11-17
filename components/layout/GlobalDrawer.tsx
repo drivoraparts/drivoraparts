@@ -4,6 +4,7 @@ import Link from "next/link";
 import CallTextActions from "@/components/contact/CallTextActions";
 import SideDrawer from "./SideDrawer";
 import { useTranslation } from "@/hooks/useTranslation";
+import { NAV_LINKS } from "./GlobalHeader";
 
 type GlobalDrawerProps = {
   menuOpen: boolean;
@@ -23,9 +24,12 @@ export default function GlobalDrawer({
 
   const sections: { heading: string; links: { href: string; label: string }[] }[] = [
     {
-      heading: t("marketplace"),
+      heading: "Shop Toyota",
+      links: NAV_LINKS.filter((link) => link.href !== "/contact"),
+    },
+    {
+      heading: "Your order",
       links: [
-        { href: "/catalog/all", label: t("browseCatalog") },
         { href: "/cart", label: t("cart") },
         { href: "/track-order", label: "Track Order" },
       ],

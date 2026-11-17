@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { getProductById } from "@/lib/inventory";
+import { getProductById, isPubliclyListed } from "@/lib/inventory";
+import { CHECKOUT_TEST_PRODUCT_ID } from "@/lib/inventory/pricing";
 import { getInventory } from "@/lib/db/inventory";
 
 export async function GET(req: Request) {
@@ -15,7 +16,10 @@ export async function GET(req: Request) {
 
   const product = getProductById(productId);
 
-  if (!product) {
+  if (
+    !product ||
+    (product.id !== CHECKOUT_TEST_PRODUCT_ID && !isPubliclyListed(product))
+  ) {
     return NextResponse.json({ error: "Product not found" }, { status: 404 });
   }
 
