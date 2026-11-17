@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DEFAULT_AVATAR } from "@/lib/reviews/constants-avatar";
 import { VERIFIED_BADGE_GREEN } from "@/lib/reviews/constants";
 import ReviewAvatar from "./ReviewAvatar";
 import StarRating from "./StarRating";
@@ -51,8 +50,9 @@ export default function ProductRatingSummary({
         const next: string[] = [];
         for (const review of data.reviews ?? []) {
           if (!review.verifiedPurchase) continue;
-          const avatar = review.profileImage || DEFAULT_AVATAR;
-          if (seen.has(avatar)) continue;
+          // Real photos only: there is no stand-in face for reviewers without one.
+          const avatar = review.profileImage;
+          if (!avatar || seen.has(avatar)) continue;
           seen.add(avatar);
           next.push(avatar);
           if (next.length >= 4) break;

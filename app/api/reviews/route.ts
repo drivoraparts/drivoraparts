@@ -7,8 +7,6 @@ import {
   submitReview,
   type SubmitReviewInput,
 } from "@/lib/reviews/store";
-import { hasCompletedPurchase } from "@/lib/db/orders";
-import { isSupabaseConfigured } from "@/lib/env";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
@@ -69,7 +67,6 @@ export async function POST(req: Request) {
         : typeof body?.authorName === "string"
           ? body.authorName
           : "";
-    const email = typeof body?.email === "string" ? body.email.trim() : "";
 
     if (!Number.isFinite(productId) || productId <= 0) {
       return NextResponse.json({ error: "product_id is required" }, { status: 400 });
@@ -79,14 +76,18 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "author_name is required" }, { status: 400 });
     }
 
-    // Verified-purchase badge is only ever true when a real completed order
-    // for this product/email exists — never trust anything the reviewer
-    // submitted themselves for this. No email supplied just means an
-    // ordinary (non-verified) review, same as before.
-    const verifiedPurchase =
-      email && isSupabaseConfigured()
-        ? await hasCompletedPurchase(email, productId).catch(() => false)
-        : false;
+    /*
+     * Never verified from this endpoint.
+     *
+     * This used to grant the Verified Buyer badge whenever the email typed into
+     * the form belonged to someone with a completed order for the product. That
+     * proves knowledge of a buyer's email address, not that the reviewer is the
+     * buyer: anyone who knew it could post as them. Verification will come from
+     * a single-use signed link emailed to the order's own address (step 2 of
+     * the review system). Until then every public submission is unverified,
+     * and the endpoint stays closed (REVIEWS_OPEN above).
+     */
+    const verifiedPurchase = false;
 
     const input: SubmitReviewInput = {
       productId,

@@ -23,8 +23,7 @@
     "upload:cloudflare": "node scripts/verify-worker-chunks.mjs && npm run pages:build && npx opennextjs-cloudflare upload",
     "start": "next start",
     "icons:generate": "node scripts/generate-brand-icons.mjs",
-    "normalize:bodyparts": "node scripts/normalize-bodyparts-media.mjs",
-    "seed-reviews:avatars": "node scripts/fetch-reviewer-avatars.mjs"
+    "normalize:bodyparts": "node scripts/normalize-bodyparts-media.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.117.1",

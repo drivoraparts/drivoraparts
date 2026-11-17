@@ -21,7 +21,6 @@ export {
   getVerifiedBuyerAvatars,
   moderateReview,
   submitReview,
-  DEFAULT_AVATAR,
 } from "./store";
 
 export type {
