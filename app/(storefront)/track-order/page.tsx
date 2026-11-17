@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { buildPageMetadata } from "@/lib/seo";
 import TrackOrderForm from "@/components/orders/TrackOrderForm";
+import CallTextActions from "@/components/contact/CallTextActions";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Track Your Order",
@@ -21,6 +22,11 @@ export default function TrackOrderPage() {
       <Suspense fallback={null}>
         <TrackOrderForm />
       </Suspense>
+
+      <div className="mt-10 border-t border-neutral-200 pt-6">
+        <p className="mb-3 text-sm text-neutral-600">Questions about your order? Talk to us.</p>
+        <CallTextActions />
+      </div>
     </main>
   );
 }

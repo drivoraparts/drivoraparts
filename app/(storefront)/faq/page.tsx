@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
+import { COMPANY_LEGAL_NAME, COMPANY_PHONE_DISPLAY } from "@/lib/content/company";
 import {
   DIRECT_PAYMENT_METHODS,
   ORDER_PROCESSING,
@@ -64,7 +64,7 @@ const FAQS: FaqItem[] = [
     // "Every listing shows fitment details" was not true: about one listing
     // in six records no fitment, and its page says so.
     answer:
-      "Listings show the fitment recorded for the part: a list of vehicle applications, a fitment note, or universal where the maker sells it that way. Some listings record no fitment. If anything is unclear or your vehicle isn't listed, confirm with us before ordering — reach out via the contact form with your part number and vehicle details.",
+      "Listings show the fitment recorded for the part: a list of vehicle applications, a fitment note, or universal where the maker sells it that way. Some listings record no fitment. If anything is unclear or your vehicle isn't listed, confirm with us before ordering — reach out via the contact form, or call or text " + COMPANY_PHONE_DISPLAY + ", with your part number and vehicle details.",
   },
   {
     question: "What condition are the parts in?",

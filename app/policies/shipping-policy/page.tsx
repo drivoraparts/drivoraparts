@@ -3,7 +3,12 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 export const metadata = buildPolicyMetadata("/policies/shipping-policy");
 
 import Policy from "@/components/policy/Policy";
-import { CALIFORNIA_FULFILLMENT, COMPANY_SUPPORT_EMAIL, COMPANY_LEGAL_NAME } from "@/lib/content/company";
+import {
+  CALIFORNIA_FULFILLMENT,
+  COMPANY_SUPPORT_EMAIL,
+  COMPANY_LEGAL_NAME,
+  COMPANY_PHONE_DISPLAY,
+} from "@/lib/content/company";
 import {
   US_FREE_PARCEL_BELOW,
   US_PARCEL_RATE_TABLE,
@@ -158,7 +163,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Questions and Contact",
           paragraphs: [
-            `For any questions regarding shipping, delivery, or tracking, please contact us at ${COMPANY_SUPPORT_EMAIL}.`,
+            `For any questions regarding shipping, delivery, or tracking, please contact us at ${COMPANY_SUPPORT_EMAIL}. You can also call or text us at ${COMPANY_PHONE_DISPLAY}.`,
           ],
         },
       ]}

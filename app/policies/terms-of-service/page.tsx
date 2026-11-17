@@ -8,6 +8,7 @@ import {
   COMPANY_LEGAL_NAME,
   COMPANY_STATE_OF_FORMATION,
   COMPANY_SUPPORT_EMAIL,
+  COMPANY_PHONE_DISPLAY,
 } from "@/lib/content/company";
 
 export default function TermsOfServicePage() {
@@ -131,7 +132,7 @@ export default function TermsOfServicePage() {
         {
           heading: "Contact",
           paragraphs: [
-            `Questions about these Terms may be sent to ${COMPANY_LEGAL_NAME} at ${COMPANY_SUPPORT_EMAIL}.`,
+            `Questions about these Terms may be sent to ${COMPANY_LEGAL_NAME} at ${COMPANY_SUPPORT_EMAIL}. You can also call or text us at ${COMPANY_PHONE_DISPLAY}.`,
           ],
         },
       ]}

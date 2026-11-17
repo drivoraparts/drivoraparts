@@ -3,7 +3,7 @@ import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 export const metadata = buildPolicyMetadata("/policies/terms-of-sale");
 
 import Link from "next/link";
-import { COMPANY_LEGAL_NAME } from "@/lib/content/company";
+import { COMPANY_LEGAL_NAME, COMPANY_PHONE_DISPLAY } from "@/lib/content/company";
 import Policy from "@/components/policy/Policy";
 
 export default function TermsOfSalePage() {
@@ -85,7 +85,7 @@ export default function TermsOfSalePage() {
         {
           heading: "Contact",
           paragraphs: [
-            `For questions about a purchase or these Terms of Sale, contact ${COMPANY_LEGAL_NAME} at support@drivoraparts.com.`,
+            `For questions about a purchase or these Terms of Sale, contact ${COMPANY_LEGAL_NAME} at support@drivoraparts.com. You can also call or text us at ${COMPANY_PHONE_DISPLAY}.`,
           ],
         },
       ]}
