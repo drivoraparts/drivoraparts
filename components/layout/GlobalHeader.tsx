@@ -77,7 +77,7 @@ export default function GlobalHeader({
       <div className="mx-auto flex w-full min-w-0 max-w-full items-center justify-between gap-2 px-4 text-neutral-900 sm:px-6">
         <Link
           href="/"
-          className="min-w-0 shrink text-base font-extrabold uppercase tracking-[0.14em] text-foreground sm:text-lg"
+          className="shrink-0 whitespace-nowrap text-[15px] font-extrabold uppercase tracking-[0.06em] text-foreground sm:text-lg sm:tracking-[0.14em]"
         >
           Drivora<span className="text-accent">Parts</span>
         </Link>
@@ -86,7 +86,7 @@ export default function GlobalHeader({
           {t("headerTagline")}
         </div>
 
-        <div className="flex shrink-0 items-center gap-3 pr-0.5 text-sm sm:gap-6">
+        <div className="flex shrink-0 items-center gap-0.5 text-sm sm:gap-2 xl:gap-4">
           <nav
             aria-label="Primary"
             className="hidden items-center gap-6 text-[13px] font-semibold text-foreground xl:flex"
@@ -113,10 +113,11 @@ export default function GlobalHeader({
 
           {/* No customer login exists -- checkout is guest checkout -- so the
               account icon opens order tracking, which is what a returning
-              customer comes back for. */}
+              customer comes back for. Hidden under 360px wide, where four
+              icons and the logo do not fit; Track Order is in the menu. */}
           <Link
             href="/track-order"
-            className="flex h-10 w-10 items-center justify-center rounded-md text-foreground transition hover:bg-surface-muted"
+            className="flex h-10 w-10 items-center justify-center rounded-md text-foreground transition hover:bg-surface-muted max-[359px]:hidden"
             aria-label="Your orders"
             title="Your orders"
           >
