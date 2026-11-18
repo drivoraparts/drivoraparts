@@ -54,29 +54,13 @@ export function fitmentSelectionIsUsable(selection: VehicleSelection): boolean {
   return buildFitmentQuery(selection).length > 0;
 }
 
-/** Makes represented in the catalog's fitment data. */
-export const VEHICLE_MAKES = [
-  "BMW",
-  "Toyota",
-  "Nissan",
-  "Honda",
-  "Mazda",
-  "Ford",
-  "Chevrolet",
-  "Dodge",
-  "Audi",
-  "Mercedes-Benz",
-  "Jaguar",
-  "Chrysler",
-  "GMC",
-  "Lexus",
-  "Jeep",
-  "Volkswagen",
-  "Subaru",
-  "Isuzu",
-  "Mitsubishi",
-  "Hino",
-] as const;
+/**
+ * Makes offered by the vehicle finder. The storefront lists Toyota parts only
+ * (lib/inventory/toyota-visibility.ts); offering BMW or Ford here led only to
+ * empty results. Lexus is not listed separately: Lexus-fitment listings name
+ * the Toyota they share a platform with.
+ */
+export const VEHICLE_MAKES = ["Toyota"] as const;
 
 /** Model years offered, newest first. */
 export function vehicleYears(now = new Date()): number[] {

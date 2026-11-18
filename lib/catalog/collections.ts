@@ -183,7 +183,8 @@ export function getEditorialCollections(perCollection = 6): EditorialCollection[
         inCategory("body-parts").filter((p) => TRUCK_BODY.test(p.name)),
         perCollection
       ),
-      photoSlot: "workhorse",
+      // No photo: the "workhorse" photograph is a Ram Power Wagon, which has
+      // no place on a Toyota-only storefront.
     },
     {
       slug: "premium-jdm",

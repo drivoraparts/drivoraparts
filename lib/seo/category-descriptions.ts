@@ -1,35 +1,37 @@
 import { categoryKeywordPhrase, brandFitmentHint } from "./keywords";
 import { truncateSeoDescription } from "./text";
 
+// Toyota-only copy: the storefront lists Toyota parts (lib/inventory/
+// toyota-visibility.ts). Each line describes what the public category holds.
 const CATEGORY_COPY: Record<string, string> = {
   engine:
-    "Buy crate engines, JDM swaps, LS motors, 2JZ, RB26, Coyote & platform-specific powerplants for BMW, Toyota, Nissan, Honda & Ford builds.",
+    "Toyota engines and engine parts: 2JZ-GTE, 1JZ-GTE and 1UZ-FE V8 engines, plus cold air intakes and engine components for the Tacoma, Tundra, 4Runner and Land Cruiser.",
   transmission:
-    "Shop ZF 8HP, Tremec Magnum, Nissan CD009, Allison 1000, Aisin Hilux autos, clutch kits from ACT, Exedy, Xtreme & ATSG rebuild kits for street, track & 4WD builds.",
+    "Toyota transmissions and clutches: R154, V160, A750F, AC60F and RA60 units, plus clutch kits for the GR Supra and GR86.",
   turbocharger:
-    "Garrett, BorgWarner & precision turbo kits — twin-scroll, ball-bearing & upgrade hardware for boosted street and race builds.",
+    "Turbochargers and boost upgrades for Toyota engines.",
   suspension:
-    "Vehicle-specific 4x4 lift kits from Old Man Emu, Dobinsons, Bilstein, Fox, King Shocks, Ironman 4x4 & Tough Dog for Hilux, Ranger, LandCruiser, Patrol & more.",
+    "Toyota lift kits and suspension from Old Man Emu, Dobinsons, Bilstein, Fox, King Shocks and Icon for the Tacoma, 4Runner, Tundra, Land Cruiser and Sequoia.",
   brakes:
-    "Big brake kits, Wilwood, Brembo, EBC & ATE upgrades — rotors, pads & calipers for street, track & tow-ready stopping power.",
+    "Big brake kits and brake upgrades for Toyota models, including the GR Supra.",
   bumper:
-    "ARB Summit, TJM Outback & Ironman Raid off-road bumpers plus ADD, DV8, Fab Fours, Duraflex & Rocket Bunny performance front bumpers for Hilux, Ranger, F-150, Wrangler, Supra & more.",
+    "Off-road and performance bumpers for the Toyota Tacoma, 4Runner, Tundra and Land Cruiser from ARB, DV8, Dobinsons and more.",
   canopy:
-    "ARB Ascent, RSI SmartCap EVO, Alu-Cab Explorer, Aeroklas, EGR, LEER, SnugTop, A.R.E. & TJM aluminium canopies for Hilux, Ranger, LandCruiser, F-150, Tacoma & RAM builds.",
+    "Truck canopies and bed caps for the Toyota Tacoma and Hilux.",
   electronics:
-    "ECU tuners, wideband gauges, engine management, dash cams & wiring for modern performance and swap builds.",
+    "Electronics and wiring for Toyota models.",
   lighting:
-    "Vehicle-specific LED headlights from Morimoto, AlphaRex, Oracle, Anzo, Spyder & VLAND — plus light bars, Baja Designs fog lights & exterior lighting for street and off-road.",
+    "Plug-and-play LED headlights and lighting for the Toyota Tacoma, Tundra, 4Runner and Land Cruiser from Morimoto, AlphaRex, Spyder and more.",
   "body-parts":
-    "Truck beds, widebody kits, carbon hoods & aero for BMW, Ford, Honda, Nissan, Subaru & Toyota.",
+    "Body parts and aero for Toyota models, including the GR Supra.",
   interior:
-    "Racing seats, steering wheels, harnesses, roll cages & cockpit upgrades for street, show & track builds.",
+    "Interior parts and upgrades for the Toyota Tacoma, Hilux and GR Supra.",
   "4x4-accessories":
-    "Safari snorkels, Rhino-Rack, Front Runner & Rola roof racks for Hilux, Ranger, LandCruiser & Patrol.",
+    "Snorkels, roof racks, recovery gear and 4x4 accessories for the Toyota Tacoma, 4Runner, Land Cruiser and Hilux.",
   aftermarket:
-    "Pre-owned performance parts marketplace — engines, turbos, suspension & truck gear from enthusiast sellers.",
+    "Aftermarket parts for Toyota models.",
   "wheels-tires":
-    "BFGoodrich KO2, Toyo Open Country, Falken Wildpeak, Michelin Pilot Sport, Nitto Ridge Grappler, Cooper Discoverer, Yokohama Geolandar and performance SUV tires — plus BMW wheels and spacers.",
+    "Wheels and tires for Toyota models, including the GR Supra.",
 };
 
 export function getCategorySeoDescription(slug: string, productCount = 0): string {
