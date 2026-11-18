@@ -10,6 +10,7 @@ is item-only ("shipping not verified").
 A listing whose price could not be attributed to a named seller is kept in
 `unattributed` and never used as the benchmark.
 """
+import math
 
 CHECKED = "2026-11-18"
 
@@ -271,11 +272,38 @@ PRICING = {
 }
 
 
-def retail_round(value):
-    """Largest price ending in 9 cents (x.x9) at or below `value` -- keeps
-    the result at or below the 15%-under rule rather than rounding up."""
-    tenths = int(value * 10 + 1e-9)
-    return round(tenths / 10 - 0.01, 2)
+# Pricing policy (owner-approved, 2026-11-18): genuine Toyota OEM parts are
+# priced about 5% below the lowest verified comparable US retailer selling the
+# exact same part number, moving toward 3% only when needed. No automatic
+# discount, no manufactured sale price, no inflated reference price, and never
+# below a profitable price.
+TARGET_UNDERCUT = 0.05
+MIN_UNDERCUT = 0.03
+
+# Supplier (acquisition) cost per part number, as provided by the owner, and
+# the minimum gross margin on the selling price. Nothing is invented here:
+# both stay empty until the owner supplies them, and every price stays a
+# competitive target under profitability review until then.
+SUPPLIER_COST = {}
+MIN_MARGIN = None  # e.g. 0.20 for 20% of the selling price
+
+
+def competitive_price(lowest, undercut):
+    """Smallest price ending in 9 cents (x.x9) that is at least `undercut`
+    below `lowest` and still at least 3% below it. Falls back to the exact
+    cent value if no x.x9 price fits the band."""
+    target = lowest * (1 - undercut)
+    ceiling = lowest * (1 - MIN_UNDERCUT)
+    tenths = int(target * 10 + 1e-9)
+    for t in (tenths, tenths + 1):
+        cand = round((t + 1) / 10 - 0.01, 2)  # t.t9
+        if target - 1e-9 <= cand <= ceiling + 1e-9:
+            return cand
+    return math.ceil(target * 100 - 1e-6) / 100  # round up: never more than 5% under
+
+
+def margin_ok(price, cost):
+    return MIN_MARGIN is not None and cost is not None and (price - cost) / price >= MIN_MARGIN
 
 
 def assess(pn, is_parcel):
@@ -293,7 +321,8 @@ def assess(pn, is_parcel):
     if data.get("note"):
         flags.append(data["note"])
     lowest = comps[0] if comps else None
-    rec = retail_round(lowest["price"] * 0.85) if lowest and len(comps) >= 3 else None
+    rec = competitive_price(lowest["price"], TARGET_UNDERCUT) if lowest and len(comps) >= 3 else None
+    undercut = TARGET_UNDERCUT
     spread = (comps[-1]["price"] / comps[0]["price"]) if len(comps) >= 2 else None
     if not comps:
         confidence = "none"
@@ -307,9 +336,24 @@ def assess(pn, is_parcel):
     # confirmed for any part. Under the published US rate table, parcel orders
     # under $1,000 ship free, so a low-ticket parcel item ships at a loss
     # unless it is bundled into a larger order.
-    profit_flags = ["acquisition cost not provided -- margin not verified"]
-    if rec is not None and is_parcel and rec < 25:
-        profit_flags.append(f"ships free under the US parcel table; shipping cost will likely exceed the margin on a ${rec:.2f} item")
+    cost = SUPPLIER_COST.get(pn)
+    profit_flags = []
+    profitability = "review required"
+    if rec is not None:
+        if cost is None or MIN_MARGIN is None:
+            profit_flags.append("supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price")
+        elif margin_ok(rec, cost):
+            profitability = "verified"
+        else:
+            alt = competitive_price(lowest["price"], MIN_UNDERCUT)
+            if margin_ok(alt, cost):
+                rec, undercut, profitability = alt, MIN_UNDERCUT, "verified"
+                profit_flags.append("5% under fails the minimum margin; adjusted to 3% under")
+            else:
+                profitability = "not profitable at a competitive price"
+                profit_flags.append("even 3% under the lowest competitor misses the minimum margin -- do not list at a competitive price")
+        if is_parcel and rec < 25:
+            profit_flags.append(f"ships free under the US parcel table; shipping cost will likely exceed the margin on a ${rec:.2f} item")
     return {
         "status": "verified" if rec is not None else "insufficient",
         "checkedOn": CHECKED,
@@ -319,8 +363,12 @@ def assess(pn, is_parcel):
         "unattributedPrices": data.get("unattributed", []),
         "excluded": data.get("excluded", ""),
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": undercut if rec is not None else None,
         "recommendedPrice": rec,
+        "priceType": "competitive target (not approved)" if rec is not None else None,
+        "supplierCost": cost,
+        "profitability": profitability if rec is not None else "not assessed",
         "confidence": confidence,
         "flags": flags,
         "info": data.get("info", ""),

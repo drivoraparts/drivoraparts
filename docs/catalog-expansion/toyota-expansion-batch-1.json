@@ -181,14 +181,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 16.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 18.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "medium",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approved": false
       },
@@ -214,8 +218,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -283,14 +287,18 @@
         "unattributedPrices": [],
         "excluded": "PartsGeek $30.97 (title references a different part number)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 15.99,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 17.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $17.99 item"
         ],
         "approved": false
       },
@@ -315,8 +323,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $17.99 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -379,14 +387,18 @@
         "unattributedPrices": [],
         "excluded": "Amazon third-party $116.20 (outlier); Amayama $33.75 (out of stock)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 16.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 18.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approved": false
       },
@@ -411,8 +423,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -485,14 +497,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 16.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 18.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approved": false
       },
@@ -517,8 +533,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -591,14 +607,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 16.59,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 18.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.59 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.69 item"
         ],
         "approved": false
       },
@@ -623,8 +643,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.59 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.69 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -699,14 +719,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 15.99,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 17.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $17.99 item"
         ],
         "approved": false
       },
@@ -731,8 +755,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $17.99 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -814,14 +838,18 @@
         "unattributedPrices": [],
         "excluded": "Molle Toyota $3.99 (store-wide oil-filter promotion); AFA Motors $20.00 (outlier)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 3.89,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 4.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "medium",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.49 item"
         ],
         "approved": false
       },
@@ -847,8 +875,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.49 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -916,14 +944,18 @@
         "unattributedPrices": [],
         "excluded": "AutoZone (Premium Guard aftermarket)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 3.79,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 4.3,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "medium",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.30 item"
         ],
         "approved": false
       },
@@ -948,8 +980,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.30 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -1021,14 +1053,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 3.79,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 4.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.39 item"
         ],
         "approved": false
       },
@@ -1054,8 +1090,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.39 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -1127,16 +1163,20 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 3.89,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 4.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "medium",
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.49 item"
         ],
         "approved": false
       },
@@ -1163,8 +1203,8 @@
         },
         "issues": [
           "lower unattributed listing(s) seen; not used as benchmark",
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.49 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -1242,14 +1282,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 16.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 18.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approved": false
       },
@@ -1275,8 +1319,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -1354,13 +1398,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 30.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 33.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -1386,7 +1434,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -1451,13 +1499,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 30.39,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 34.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -1482,7 +1534,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -1552,14 +1604,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 11.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 12.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $11.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $12.49 item"
         ],
         "approved": false
       },
@@ -1584,8 +1640,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $11.09 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $12.49 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -1648,13 +1704,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 82.29,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 92.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -1682,7 +1742,7 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -1740,13 +1800,17 @@
         "unattributedPrices": [],
         "excluded": "Frontier Toyota $88.90 (listing about 4 years old)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 59.59,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 66.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -1772,7 +1836,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -1840,13 +1904,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 68.99,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 77.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -1872,7 +1940,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -1947,13 +2015,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 60.29,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 67.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -1979,7 +2051,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2066,13 +2138,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 56.69,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 63.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "Sold individually (confirmed by dealer listing); two per axle.",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2097,7 +2173,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2177,13 +2253,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 61.19,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 68.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2210,7 +2290,7 @@
         },
         "issues": [
           "Overlaps 04465-33480 for 2018-2019 Camry and 2019+ RAV4; which number is current by build date is unresolved.",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2278,13 +2358,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 68.99,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 77.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2308,7 +2392,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2376,13 +2460,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 63.59,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 71.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2407,7 +2495,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2475,13 +2563,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 72.19,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 80.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "Seller-to-price mapping re-checked in a second search.",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2506,7 +2598,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2573,8 +2665,12 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 207.49,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 231.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "medium",
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark",
@@ -2582,7 +2678,7 @@
         ],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2610,7 +2706,7 @@
           "Identity/inclusions conflict: some dealers title it a water pump housing / water inlet assembly; gasket included per some listings, excluded per others; one fitment table includes hybrid trims.",
           "lower unattributed listing(s) seen; not used as benchmark",
           "Inclusions differ: some listings include gasket and thermostat housing, Longo excludes the gasket.",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2680,13 +2776,17 @@
         "unattributedPrices": [],
         "excluded": "AH Parts $85 (used); Larry H. Miller Toyota $239.74 (stale: old MSRP $349.81 and 2018-2023 fitment)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 222.99,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 249.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2712,7 +2812,7 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2787,13 +2887,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 218.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 243.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2819,7 +2923,7 @@
         },
         "issues": [
           "Build-origin restriction unresolved: dealers list it 'except Japan-built' and 'local built, without hybrid'; RAV4 plants differ.",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2880,15 +2984,19 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 56.99,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 63.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -2914,7 +3022,7 @@
         },
         "issues": [
           "lower unattributed listing(s) seen; not used as benchmark",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -2972,13 +3080,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 87.99,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 98.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -3004,7 +3116,7 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -3064,15 +3176,19 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 63.59,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 71.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -3099,7 +3215,7 @@
         "issues": [
           "research pending: fitment/identity unresolved",
           "lower unattributed listing(s) seen; not used as benchmark",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -3137,16 +3253,18 @@
         "unattributedPrices": [],
         "excluded": "No listing found for this part number",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
         "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
         "confidence": "none",
         "flags": [
           "only 0 attributed competitor price(s) -- fewer than 3"
         ],
         "info": "",
-        "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
-        ],
+        "profitabilityFlags": [],
         "approved": false
       },
       "image": null,
@@ -3172,8 +3290,7 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "only 0 attributed competitor price(s) -- fewer than 3",
-          "acquisition cost not provided -- margin not verified"
+          "only 0 attributed competitor price(s) -- fewer than 3"
         ],
         "approvalStatus": "not approved"
       }
@@ -3238,15 +3355,19 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 61.69,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 69.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -3273,7 +3394,7 @@
         "issues": [
           "research pending: fitment/identity unresolved",
           "lower unattributed listing(s) seen; not used as benchmark",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -3341,14 +3462,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 13.89,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 15.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $13.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.69 item"
         ],
         "approved": false
       },
@@ -3374,8 +3499,8 @@
           "Product photography required": true
         },
         "issues": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $13.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.69 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -3419,8 +3544,12 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
         "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
         "confidence": "none",
         "flags": [
           "only 0 attributed competitor price(s) -- fewer than 3",
@@ -3428,9 +3557,7 @@
           "Quantity ambiguous (one listing is a set of 6)."
         ],
         "info": "",
-        "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
-        ],
+        "profitabilityFlags": [],
         "approved": false
       },
       "image": null,
@@ -3458,8 +3585,7 @@
           "research pending: fitment/identity unresolved",
           "only 0 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark",
-          "Quantity ambiguous (one listing is a set of 6).",
-          "acquisition cost not provided -- margin not verified"
+          "Quantity ambiguous (one listing is a set of 6)."
         ],
         "approvalStatus": "not approved"
       }
@@ -3511,17 +3637,19 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
         "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
         "confidence": "low",
         "flags": [
           "only 1 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
-        "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
-        ],
+        "profitabilityFlags": [],
         "approved": false
       },
       "image": null,
@@ -3548,8 +3676,7 @@
         "issues": [
           "research pending: fitment/identity unresolved",
           "only 1 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark",
-          "acquisition cost not provided -- margin not verified"
+          "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "approvalStatus": "not approved"
       }
@@ -3600,17 +3727,19 @@
         ],
         "excluded": "O'Reilly $10.99 (Premium Guard aftermarket)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
         "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
         "confidence": "low",
         "flags": [
           "only 1 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
-        "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
-        ],
+        "profitabilityFlags": [],
         "approved": false
       },
       "image": null,
@@ -3636,8 +3765,7 @@
         "issues": [
           "research pending: fitment/identity unresolved",
           "only 1 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark",
-          "acquisition cost not provided -- margin not verified"
+          "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "approvalStatus": "not approved"
       }
@@ -3705,14 +3833,18 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 3.89,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 4.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.39 item"
         ],
         "approved": false
       },
@@ -3739,8 +3871,8 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.39 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -3778,16 +3910,18 @@
         "unattributedPrices": [],
         "excluded": "Superseded by 87139-YZZ82 -- discontinued numbers are not benchmarked",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
         "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
         "confidence": "none",
         "flags": [
           "only 0 attributed competitor price(s) -- fewer than 3"
         ],
         "info": "",
-        "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
-        ],
+        "profitabilityFlags": [],
         "approved": false
       },
       "image": null,
@@ -3812,8 +3946,7 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "only 0 attributed competitor price(s) -- fewer than 3",
-          "acquisition cost not provided -- margin not verified"
+          "only 0 attributed competitor price(s) -- fewer than 3"
         ],
         "approvalStatus": "not approved"
       }
@@ -3876,14 +4009,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 22.79,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 25.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $22.79 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -3909,8 +4045,7 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "acquisition cost not provided -- margin not verified",
-          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $22.79 item"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -3975,15 +4110,19 @@
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 220.79,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 246.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -4010,7 +4149,7 @@
         "issues": [
           "research pending: fitment/identity unresolved",
           "lower unattributed listing(s) seen; not used as benchmark",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -4073,13 +4212,17 @@
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 63.09,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 70.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -4105,7 +4248,7 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }
@@ -4170,13 +4313,17 @@
         "unattributedPrices": [],
         "excluded": "AH Parts $69 and Partlimit $190.99 (used)",
         "shipping": "not verified (item price only)",
-        "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 250.39,
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 279.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
         "confidence": "high",
         "flags": [],
         "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approved": false
       },
@@ -4202,7 +4349,7 @@
         },
         "issues": [
           "research pending: fitment/identity unresolved",
-          "acquisition cost not provided -- margin not verified"
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
       }

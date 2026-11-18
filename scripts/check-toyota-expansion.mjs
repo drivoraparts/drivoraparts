@@ -12,8 +12,10 @@
  *  - fitment names only US-market Toyota models (no Hilux, Prado, LandCruiser 70/79...)
  *  - commercial_pending and ready need fitment applications, at least one
  *    source and no "low" confidence
+ *  - a competitive price sits 3-5% under the lowest attributed competitor
+ *    (target 5%) and is flagged for review unless profitability is verified
  *  - ready additionally needs an approved numeric price (never the market
- *    referencePrice) and an image file that exists under public/
+ *    referencePrice), verified profitability and an image file under public/
  *  - no description claims dealer authorization, stock, delivery times or a
  *    warranty -- none of these are established for these records
  *
@@ -90,8 +92,12 @@ for (const file of files) {
       if (pr.recommendedPrice != null) {
         if (comps.length < 3) problems.push(`${at}: recommended price from fewer than 3 attributed competitors`);
         const lowest = Math.min(...comps.map((x) => x.price));
-        const expected = Math.round((Math.floor(lowest * 0.85 * 10 + 1e-9) / 10 - 0.01) * 100) / 100;
-        if (Math.abs(pr.recommendedPrice - expected) > 0.001) problems.push(`${at}: recommended $${pr.recommendedPrice} does not follow lowest ($${lowest}) x 0.85 rounded down to x.x9 ($${expected})`);
+        // Pricing policy: about 5% under the lowest verified competitor, moving
+        // toward 3% only when needed -- never more than 5% or less than 3% under.
+        const floor = Math.ceil(lowest * 95 - 1e-6) / 100; // 5% under, rounded up to the cent
+        const ceiling = lowest * 0.97 + 0.005;
+        if (!(pr.recommendedPrice >= floor && pr.recommendedPrice <= ceiling)) problems.push(`${at}: price $${pr.recommendedPrice} is outside 3-5% under the lowest competitor ($${lowest}): $${(lowest * 0.95).toFixed(2)}-$${(lowest * 0.97).toFixed(2)}`);
+        if (pr.profitability !== "verified" && !(pr.profitabilityFlags ?? []).length) problems.push(`${at}: profitability not established and not flagged for review`);
         if (pr.lowestCompetitor?.price !== lowest) problems.push(`${at}: lowestCompetitor is not the lowest attributed price`);
       }
       if (r.price != null && !pr.approved) problems.push(`${at}: selling price set without pricing approval`);
@@ -100,6 +106,7 @@ for (const file of files) {
     if (r.status === "ready") {
       if (typeof r.price !== "number" || !(r.price > 0)) problems.push(`${at}: ready without an approved price`);
       if (!pr?.approved) problems.push(`${at}: ready without pricing approval`);
+      if (pr?.profitability !== "verified") problems.push(`${at}: ready without verified profitability (supplier cost)`);
       const img = r.image ? path.join(ROOT, "public", r.image.replace(/^\//, "")) : null;
       if (!img || !fs.existsSync(img)) problems.push(`${at}: ready without an image file under public/`);
     }

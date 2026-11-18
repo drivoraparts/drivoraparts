@@ -376,7 +376,7 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1.csv", "w", newline="", encoding="
     w = csv.writer(f)
     w.writerow(["status", "name", "brand", "part_number", "supersedes", "type", "category", "fitment", "engines",
                 "fitment_confidence", "pricing_status", "msrp", "lowest_competitor", "lowest_price", "lowest_url",
-                "recommended_price", "pricing_confidence", "competitors", "pricing_flags", "profitability_flags",
+                "competitive_target_price", "undercut", "profitability", "pricing_confidence", "competitors", "pricing_flags", "profitability_flags",
                 "prices_checked", "image_status", "blocking", "sources"])
     for r in records:
         pr = r["pricing"]
@@ -384,7 +384,8 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1.csv", "w", newline="", encoding="
         w.writerow([r["status"], r["name"], "Toyota", r["partNumber"], r["supersedes"], r["partType"],
                     r["proposedCategoryName"], r["fitment"], r["engines"], r["fitmentConfidence"],
                     pr["status"], pr.get("msrp") or "", (lo or {}).get("seller", ""), (lo or {}).get("price", ""), (lo or {}).get("url", ""),
-                    pr["recommendedPrice"] if pr["recommendedPrice"] is not None else "", pr["confidence"],
+                    pr["recommendedPrice"] if pr["recommendedPrice"] is not None else "",
+                    f"{pr['undercut']:.0%}" if pr.get("undercut") else "", pr.get("profitability", ""), pr["confidence"],
                     "; ".join(f"{x['seller']} ${x['price']:.2f}" for x in pr.get("competitors", [])),
                     "; ".join(pr.get("flags", [])), "; ".join(pr.get("profitabilityFlags", [])), pr["checkedOn"],
                     r["imageStatus"], "; ".join(r["blocking"]), " | ".join(r["sources"])])
@@ -404,7 +405,7 @@ def classify(r):
     pr = r["pricing"]
     fitment_ok = r["status"] != "research_pending" and pn not in AUDIT_FITMENT_ISSUES
     pricing_ok = pr["status"] == "verified"
-    cost_ok = False   # no acquisition cost on file for any record
+    cost_ok = pr.get("profitability") == "verified"  # needs supplier cost + minimum margin
     photo_ok = False  # no licensed, matching photograph for any record
     checks = {
         "Fitment verification required": not fitment_ok,
@@ -446,7 +447,7 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1-final-audit.csv", "w", newline=""
     w = csv.writer(f)
     w.writerow(["primary_status", "approval_status", "part_number", "name", "verified_applications", "engines",
                 "fitment_check", "pricing_check", "supplier_cost_check", "photo_check",
-                "lowest_competitor", "lowest_price", "lowest_url", "recommended_price", "pricing_confidence",
+                "lowest_competitor", "lowest_price", "lowest_url", "competitive_target_price", "profitability", "pricing_confidence",
                 "all_competitors", "prices_checked", "outstanding_issues", "fitment_sources"])
     for r in records:
         pr, a = r["pricing"], r["audit"]
@@ -455,7 +456,7 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1-final-audit.csv", "w", newline=""
         w.writerow([a["primaryStatus"], a["approvalStatus"], r["partNumber"] or "(engine family)", r["name"], r["fitment"], r["engines"],
                     ok("Fitment verification required"), ok("Pricing evidence insufficient"), ok("Supplier cost required"), ok("Product photography required"),
                     lo.get("seller", ""), lo.get("price", ""), lo.get("url", ""),
-                    pr["recommendedPrice"] if pr["recommendedPrice"] is not None else "", pr["confidence"],
+                    pr["recommendedPrice"] if pr["recommendedPrice"] is not None else "", pr.get("profitability", ""), pr["confidence"],
                     "; ".join(f"{x['seller']} ${x['price']:.2f} {x['url']}" for x in pr.get("competitors", [])),
                     pr["checkedOn"], " | ".join(a["issues"]), " | ".join(r["sources"])])
 
@@ -487,10 +488,11 @@ for b in BUCKETS:
     md.append(f"| {b} | {sum(r['audit']['primaryStatus'] == b for r in records)} |")
 md.append("")
 md.append(f"- {len(ready_once_cost)} records pass fitment and pricing; every one still needs a supplier acquisition cost and a licensed product photo before its price can be approved.")
-md.append("- No record is *Ready for price approval*: no acquisition cost is on file for any part, so no margin can be confirmed, and no licensed, matching photograph exists for any part.")
+md.append("- No record is *Ready for price approval*: no supplier cost is on file for any part, so profitability cannot be established, and no licensed, matching photograph exists for any part.")
+md.append("- **Pricing rule:** about 5% below the lowest verified US retailer selling the exact same genuine Toyota part number, moving toward 3% only when needed for margin, never less than 3% below. Every price shown is a *competitive target flagged for profitability review*, not a selling price. No automatic discount, sale price or inflated reference price is used.")
 md.append("- Each record's status is the first blocking item in this order: fitment, pricing evidence, supplier cost, photography. The CSV shows every check.\n")
 md.append("## Pass fitment and pricing — waiting on supplier cost and photos\n")
-md.append("| Part number | Product | Verified applications | Lowest competitor | Recommended | Confidence |\n|---|---|---|---|---|---|")
+md.append("| Part number | Product | Verified applications | Lowest competitor | Target (5% under) | Confidence |\n|---|---|---|---|---|---|")
 for r in ready_once_cost:
     pr = r["pricing"]; lo = pr["lowestCompetitor"]
     md.append(f"| {r['partNumber']} | {r['name'].split(' — ')[0].replace('Genuine Toyota ', '')} | {r['fitment']} | [{lo['seller']} ${lo['price']:.2f}]({lo['url']}) | **${pr['recommendedPrice']:.2f}** | {pr['confidence']} |")
@@ -510,18 +512,18 @@ for r in records:
         md.append(f"| {r['partNumber'] or r['name']} | {why} |")
 md.append("")
 md.append("## Profitability\n")
-md.append("No acquisition cost is on file for any of the 50 records, so **every** price needs a supplier cost before approval. The recommended prices sit about 40-45% below Toyota MSRP (dealers already sell about 30% below MSRP; we would be 15% under them). Margin per unit = recommended price - acquisition cost - payment processing fee - packaging - outbound shipping (free on US parcel orders under $1,000).\n")
+md.append("No supplier cost is on file for any of the 50 records, so profitability cannot be established for any of them and **every** target price is flagged for review rather than presented as a selling price. Once the owner supplies a supplier cost and a minimum margin (`SUPPLIER_COST` and `MIN_MARGIN` in `scripts/toyota_expansion_pricing.py`), each price is checked at 5% under; if that misses the margin it moves to 3% under; if 3% under still misses, the part is flagged *not profitable at a competitive price* and is not listed by undercutting. Margin per unit = selling price - supplier cost - payment processing fee - packaging - outbound shipping (free on US parcel orders under $1,000).\n")
 md.append("## Shipping suitability\n")
-md.append(f"{len(low_ticket)} parts recommend under $25 and ship free as parcels under the published US rate table. On their own they are commercially unsuitable: the carrier cost of a single parcel will usually exceed the margin.\n")
-md.append("| Part number | Product | Recommended |\n|---|---|---|")
+md.append(f"{len(low_ticket)} parts have a target under $25 and ship free as parcels under the published US rate table. On their own they are commercially unsuitable: the carrier cost of a single parcel will usually exceed the margin.\n")
+md.append("| Part number | Product | Target price |\n|---|---|---|")
 for r in low_ticket:
     md.append(f"| {r['partNumber']} | {r['name'].split(' — ')[0].replace('Genuine Toyota ', '')} | ${r['pricing']['recommendedPrice']:.2f} |")
 md.append("\nRecommendations (none changes the published shipping policy):\n")
 md.append("1. **Sell low-ticket parts as engine-correct sets and service kits** instead of single units (below). Spark plugs are needed in sets of 4 or 6 anyway.")
 md.append("2. **Multi-packs** for oil filters (5 or 10), priced per pack.")
-md.append("3. **Price low-ticket items at the competitor benchmark, not 15% under it**, once supplier cost and your parcel cost are known; 15% of a $4.68 filter is $0.70 and cannot fund shipping.")
+md.append("3. **Do not undercut on low-ticket items whose margin cannot fund shipping**; at 3-5% under, a $13 part leaves well under $1 of price difference, and the free US parcel shipping will usually cost more than the margin. These stay flagged until supplier and parcel costs are known.")
 md.append("4. **Show them as add-ons** on the product pages of related brake and service parts, so they ride in larger orders.\n")
-md.append("| Suggested kit | Contents | Sum of recommended prices |\n|---|---|---|")
+md.append("| Suggested kit | Contents | Sum of target prices |\n|---|---|---|")
 for b in BUNDLES:
     md.append(bundle_line(b))
 md.append("")
