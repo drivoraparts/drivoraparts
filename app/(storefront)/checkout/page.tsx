@@ -30,7 +30,13 @@ import {
   type ManualMethodId,
 } from "@/lib/payments/manual-methods";
 import PaymentMethodIcon from "@/components/checkout/PaymentMethodIcon";
-import { checkoutCountryError } from "@/lib/shipping/rate-table";
+import {
+  SHIPPING_COUNTRY_NAME,
+  US_STATES,
+  isValidUsZip,
+  normalizeUsState,
+  usShippingAddressError,
+} from "@/lib/shipping/us-address";
 import { buildCartSignature, claimCheckoutStart } from "@/lib/checkout/checkout-tracking";
 import {
   MANUAL_PAYMENT_CHECKOUT_INTRO,
@@ -82,7 +88,10 @@ export default function CheckoutPage() {
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [zip, setZip] = useState("");
-  const [country, setCountry] = useState("");
+  // DrivoraParts ships only within the United States, so the country is
+  // fixed rather than chosen. The server enforces the same rule.
+  const country = SHIPPING_COUNTRY_NAME;
+  const [usState, setUsState] = useState("");
   const [submitting, setSubmitting] = useState(false);
   /*
    * Which payment method the customer has chosen. "crypto" is the existing
@@ -125,12 +134,12 @@ export default function CheckoutPage() {
     [cart]
   );
   /*
-   * The shipping charge, from the published rate tables (US, UK, Australia and 13 other countries).
+   * The shipping charge, from the published US rate tables.
    *
    * Asked of /api/shipping/quote -- the same calculation /api/checkout uses to
    * write the order -- whenever the cart or the country changes, so the
    * figure shown here is the figure the order is placed with. When the table
-   * does not cover the cart (freight items, destinations without a published rate) there is no
+   * does not cover the cart (an order above the top of the table) there is no
    * figure, and the summary says why instead of showing a zero.
    */
   const [shipQuote, setShipQuote] = useState<{
@@ -261,7 +270,7 @@ export default function CheckoutPage() {
     setAddress(draft.address);
     setCity(draft.city);
     setZip(draft.zip);
-    setCountry(draft.country);
+    setUsState(draft.state);
   }, []);
 
   /*
@@ -310,7 +319,7 @@ export default function CheckoutPage() {
           }[];
           customer?: {
             fullName: string; email: string; phone: string;
-            address: string; city: string; zip: string; country: string;
+            address: string; city: string; state?: string; zip: string; country: string;
           };
         };
         if (!active) return;
@@ -343,7 +352,9 @@ export default function CheckoutPage() {
           setAddress(c.address);
           setCity(c.city);
           setZip(c.zip);
-          setCountry(c.country);
+          // Only a real US state carries over; an order placed before
+          // shipping became US-only may hold something else.
+          setUsState(normalizeUsState(c.state) ?? "");
         }
       } catch {
         if (active) showToast("Could not load your order. Please try again.");
@@ -359,8 +370,8 @@ export default function CheckoutPage() {
 
   useEffect(() => {
     if (!hydrated) return;
-    writeCheckoutFormDraft({ fullName, email, phone, address, city, zip, country });
-  }, [hydrated, fullName, email, phone, address, city, zip, country]);
+    writeCheckoutFormDraft({ fullName, email, phone, address, city, state: usState, zip, country });
+  }, [hydrated, fullName, email, phone, address, city, usState, zip, country]);
 
   useEffect(() => {
     if (!hydrated || !cart.length || checkoutTracked.current) return;
@@ -431,10 +442,15 @@ export default function CheckoutPage() {
       return;
     }
 
-    const countryError = checkoutCountryError(country);
-    if (countryError) {
-      showToast(countryError);
-      document.getElementById("checkout-country")?.focus();
+    const addressError = usShippingAddressError({ country, state: usState, zip });
+    if (addressError) {
+      showToast(addressError);
+      const field = !normalizeUsState(usState)
+        ? "checkout-state"
+        : !isValidUsZip(zip)
+          ? "checkout-zip"
+          : null;
+      if (field) document.getElementById(field)?.focus();
       return;
     }
 
@@ -460,8 +476,9 @@ export default function CheckoutPage() {
             phone: phone.trim() || undefined,
             address: address.trim(),
             city: city.trim(),
+            state: usState,
             zip: zip.trim(),
-            country: country.trim() || undefined,
+            country,
           },
           provider: payChoice === "crypto" ? "nowpayments" : "manual",
           ...(payChoice !== "crypto" ? { manualMethod: payChoice } : {}),
@@ -661,7 +678,7 @@ export default function CheckoutPage() {
                       className={inputClass}
                     />
                   </div>
-                  <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="grid gap-4 sm:grid-cols-3">
                     <div>
                       <label
                         htmlFor="checkout-city"
@@ -681,6 +698,29 @@ export default function CheckoutPage() {
                     </div>
                     <div>
                       <label
+                        htmlFor="checkout-state"
+                        className="mb-1 block text-sm text-neutral-500"
+                      >
+                        State <span aria-hidden="true">*</span>
+                      </label>
+                      <select
+                        id="checkout-state"
+                        autoComplete="address-level1"
+                        required
+                        value={usState}
+                        onChange={(e) => setUsState(e.target.value)}
+                        className={inputClass}
+                      >
+                        <option value="">Select state</option>
+                        {US_STATES.map((s) => (
+                          <option key={s.code} value={s.code}>
+                            {s.name}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div>
+                      <label
                         htmlFor="checkout-zip"
                         className="mb-1 block text-sm text-neutral-500"
                       >
@@ -689,7 +729,9 @@ export default function CheckoutPage() {
                       <input
                         id="checkout-zip"
                         type="text"
+                        inputMode="numeric"
                         autoComplete="postal-code"
+                        maxLength={10}
                         value={zip}
                         onChange={(e) => setZip(e.target.value)}
                         placeholder="90210"
@@ -698,41 +740,18 @@ export default function CheckoutPage() {
                     </div>
                   </div>
                   <div>
-                    <label
-                      htmlFor="checkout-country"
-                      className="mb-1 block text-sm text-neutral-500"
-                    >
-                      Country <span aria-hidden="true">*</span>
-                    </label>
-                    <input
+                    <p className="mb-1 block text-sm text-neutral-500">Country</p>
+                    {/* Not a field: DrivoraParts ships only within the United
+                        States, and /api/checkout refuses any other country. */}
+                    <p
                       id="checkout-country"
-                      type="text"
-                      list="checkout-country-options"
-                      autoComplete="country-name"
-                      required
-                      value={country}
-                      onChange={(e) => setCountry(e.target.value)}
-                      placeholder="Type or choose your country"
-                      className={inputClass}
-                    />
-                    <datalist id="checkout-country-options">
-                      <option value="United States" />
-                      <option value="United Kingdom" />
-                      <option value="Australia" />
-                      <option value="Canada" />
-                      <option value="Denmark" />
-                      <option value="Finland" />
-                      <option value="France" />
-                      <option value="Georgia" />
-                      <option value="Germany" />
-                      <option value="Greece" />
-                      <option value="Luxembourg" />
-                      <option value="Madagascar" />
-                      <option value="New Zealand" />
-                      <option value="Poland" />
-                      <option value="Switzerland" />
-                      <option value="Vietnam" />
-                    </datalist>
+                      className={`${inputClass} cursor-default bg-neutral-50 text-neutral-700`}
+                    >
+                      {SHIPPING_COUNTRY_NAME}
+                    </p>
+                    <p className="mt-1 text-xs text-neutral-500">
+                      We ship only within the United States (50 states and Washington, DC).
+                    </p>
                     {shipQuote?.note ? (
                       <p className="mt-1 text-xs text-neutral-500" aria-live="polite">
                         {shipQuote.note}

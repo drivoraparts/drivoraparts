@@ -15,21 +15,17 @@ import {
 } from "@/lib/content/purchase-terms";
 import {
   US_FREE_PARCEL_BELOW,
-  approxLocal,
   classifyShipping,
   findBracket,
   US_PARCEL_RATE_TABLE,
   FREIGHT_FLAT_RATE_USD,
-  FIXED_RATE_COUNTRY_CODES,
-  FIXED_RATE_COUNTRY_NAMES,
   rateTableFor,
-  type ShippingDestination,
 } from "@/lib/shipping/rate-table";
 
 /*
  * The terms of the purchase, stated once, next to the button that commits to
  * them. This replaced a grid of reassurance badges ("256-bit TLS", "Instant
- * worldwide checkout") that described the site rather than the order. Every
+ * checkout") that described the site rather than the order. Every
  * row here is either the listing's own data or a restatement of a published
  * policy -- see lib/content/purchase-terms.ts for where each comes from.
  */
@@ -70,33 +66,14 @@ function singleItemUsCharge(price: number): number | undefined {
   return row ? row.feeCents / 100 : undefined;
 }
 
-/** "Canada, Denmark, ... and Vietnam": the countries that share one published rate. */
-const FIXED_RATE_COUNTRIES = FIXED_RATE_COUNTRY_CODES.map((code) => FIXED_RATE_COUNTRY_NAMES[code]);
-const FIXED_RATE_COUNTRY_LIST = `${FIXED_RATE_COUNTRIES.slice(0, -1).join(", ")} and ${
-  FIXED_RATE_COUNTRIES[FIXED_RATE_COUNTRIES.length - 1]
-}`;
-
 /**
- * The fixed freight charge for a freight or multi-box item, per country, from
- * the same tables checkout charges from. Undefined when the item's price is
- * above the top of the table (then the charge is confirmed before payment).
+ * Whether the fixed US freight charge covers a freight or multi-box item at
+ * this price. False above the top of the table (then the charge is confirmed
+ * before payment).
  */
-function freightCharges(label: "multibox" | "freight", price: number) {
-  const cents = Math.round(price * 100);
-  const destinations: { code: ShippingDestination; name: string }[] = [
-    { code: "US", name: "the United States" },
-    { code: "GB", name: "the United Kingdom" },
-    { code: "AU", name: "Australia" },
-    { code: FIXED_RATE_COUNTRY_CODES[0], name: FIXED_RATE_COUNTRY_LIST },
-  ];
-  const lines = destinations.map(({ code, name }) => {
-    const table = rateTableFor(label, code);
-    const row = table ? findBracket(table, cents) : undefined;
-    if (!row) return null;
-    const local = approxLocal(code, row.feeCents / 100);
-    return `${name}: $${(row.feeCents / 100).toFixed(2)}${local ? ` (${local})` : ""}`;
-  });
-  return lines.every(Boolean) ? (lines as string[]) : undefined;
+function freightChargeApplies(label: "multibox" | "freight", price: number): boolean {
+  const table = rateTableFor(label, "US");
+  return Boolean(table && findBracket(table, Math.round(price * 100)));
 }
 
 export default function PurchaseFacts({
@@ -112,8 +89,7 @@ export default function PurchaseFacts({
   const shipment = shipmentType(freightNotes);
   const { label } = classifyShipping({ category, name, freightNotes });
   const usCharge = label === "parcel" ? singleItemUsCharge(price) : undefined;
-  const freightLines =
-    label === "parcel" ? undefined : freightCharges(label, price);
+  const freightCovered = label !== "parcel" && freightChargeApplies(label, price);
   // Cryptocurrency is listed last and without its provider's name: it is one
   // more option at checkout, and a product page has no reason to say who
   // processes it. It stays in the list because a customer reading "how can I
@@ -124,9 +100,9 @@ export default function PurchaseFacts({
     <dl className="divide-y divide-neutral-200 border-y border-neutral-200">
       {/*
         The charge comes from the published rate tables (lib/shipping/
-        rate-table.ts: US, UK, Australia) -- the same one checkout applies and Google Merchant
-        Center is configured with. Freight and multi-box items carry one fixed
-        charge per order for the destination (FREIGHT_RATE_TABLES).
+        rate-table.ts, United States only) -- the same one checkout applies
+        and Google Merchant Center is configured with. Freight and multi-box
+        items carry one fixed charge per order (FREIGHT_RATE_TABLES).
       */}
       <FactRow label="Shipping">
         {usCharge !== undefined ? (
@@ -139,9 +115,8 @@ export default function PurchaseFacts({
             <p className="mt-0.5 text-muted">
               Charged by order subtotal from our published US rates (free on parcel
               orders under ${US_FREE_PARCEL_BELOW.toLocaleString("en-US")}) and shown
-              at checkout before you order. Rates for the other countries we ship
-              to are in our shipping policy; elsewhere, shipping is confirmed with
-              you before payment.{" "}
+              at checkout before you order. We ship only within the United
+              States.{" "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (
                 <>
@@ -154,7 +129,7 @@ export default function PurchaseFacts({
               </Link>
             </p>
           </>
-        ) : freightLines ? (
+        ) : freightCovered ? (
           <>
             <p className="font-semibold">
               ${FREIGHT_FLAT_RATE_USD.US.toFixed(2)} fixed freight shipping to the US
@@ -164,9 +139,8 @@ export default function PurchaseFacts({
                 ? "This item ships as freight. "
                 : "This item ships in multiple boxes. "}
               One fixed charge per order, shown at checkout before you order and
-              charged instead of the standard parcel rate. Freight rates for the
-              other countries we ship to are in our shipping policy; elsewhere,
-              shipping is confirmed with you before payment.{" "}
+              charged instead of the standard parcel rate. We ship only within
+              the United States.{" "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (
                 <>

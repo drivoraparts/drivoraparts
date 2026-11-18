@@ -89,7 +89,7 @@ export default function BrandRangeSummary({
           state no warranty. */}
       <p className="text-sm leading-relaxed text-neutral-600">
         Price, condition and any fitment or warranty terms are stated on each{" "}
-        {brandName} listing. Heavy assemblies ship as freight. Standard shipping within the US and to the other countries listed in our Shipping Policy is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order, and other destinations are confirmed with you before payment.{" "}
+        {brandName} listing. Heavy assemblies ship as freight. We ship only within the United States. Standard US shipping is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order.{" "}
         <Link
           href={routes.category(categorySlug)}
           className="font-medium text-accent underline-offset-2 hover:underline"

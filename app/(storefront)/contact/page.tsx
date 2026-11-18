@@ -14,7 +14,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Contact Support",
   description:
-    "Contact DrivoraParts support for product questions, orders, fitment help, and marketplace assistance.",
+    "Contact DrivoraParts support for Toyota parts questions, orders and fitment help. Email support@drivoraparts.com or call +1 (401) 376-5457.",
   path: "/contact",
 });
 
@@ -113,8 +113,8 @@ export default async function ContactPage({
             Business Inquiries
           </h2>
           <p>
-            Partnerships, vendor onboarding, and marketplace opportunities can also be
-            submitted through the form above.
+            Supplier and partnership inquiries can also be submitted through the
+            form above.
           </p>
         </div>
       </div>

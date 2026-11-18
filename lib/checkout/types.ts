@@ -6,6 +6,8 @@ export type CheckoutCustomerInput = {
   city?: string;
   zip?: string;
   country?: string;
+  /** US state, as a two-letter code or full name. */
+  state?: string;
   shippingAddress?: string;
 };
 

@@ -56,7 +56,7 @@ export default function FeaturedBrandsStrip() {
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-neutral-500">
           Listings span performance, OEM, and aftermarket parts compatible with these
-          manufacturers — DrivoraParts is an independent marketplace, not an authorized
+          manufacturers — DrivoraParts is an independent retailer, not an authorized
           dealer.
         </p>
       </ScrollReveal>

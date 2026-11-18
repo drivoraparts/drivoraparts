@@ -736,7 +736,7 @@ export default function AllProductsFeed({
             // "Showing 0 of 0 products" is not a loading state, it is a false
             // statement about a 1,890-listing catalog -- and it used to render
             // above the loading branch, so every visitor saw it.
-            <p className="text-xs text-neutral-500">Loading the marketplace…</p>
+            <p className="text-xs text-neutral-500">Loading Toyota parts…</p>
           ) : null}
         </div>
       </div>

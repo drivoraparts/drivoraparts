@@ -56,7 +56,7 @@ export default function DisclaimerPage() {
         {
           heading: "Shipping Delays Disclaimer",
           paragraphs: [
-            "Estimated processing and delivery times are provided for convenience only and are not guaranteed. We are not responsible for delays caused by carriers, customs, weather, or other circumstances beyond our reasonable control. Please refer to our Shipping Policy for more information.",
+            "Estimated processing and delivery times are provided for convenience only and are not guaranteed. We are not responsible for delays caused by carriers, weather, or other circumstances beyond our reasonable control. Please refer to our Shipping Policy for more information.",
           ],
         },
         {

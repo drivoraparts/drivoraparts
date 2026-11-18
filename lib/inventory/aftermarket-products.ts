@@ -31,7 +31,7 @@ ${details}${fitmentLine}
 Condition notes: Inspected and photographed as the actual unit available.
 
 Shipping
-Worldwide shipping available — contact for a freight quote when needed.`;
+Ships within the United States only — contact for a freight quote when needed.`;
 }
 
 function canopyDescription(

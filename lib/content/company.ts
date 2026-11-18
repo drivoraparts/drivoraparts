@@ -104,7 +104,7 @@ export const CALIFORNIA_FULFILLMENT = {
 export const REGIONAL_FULFILLMENT_SUMMARY =
   "Orders ship from DrivoraParts or our supplier network, depending on the part";
 
-export const COMPANY_MOTTO = "Engineered • Fitment • Performance";
+export const COMPANY_MOTTO = "Performance • Quality • Reliability";
 
 /**
  * Short lines for the about page. There is no "Corporate HQ" line: nothing

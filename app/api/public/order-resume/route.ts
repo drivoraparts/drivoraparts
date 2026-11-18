@@ -82,7 +82,7 @@ export async function GET(req: Request) {
      * The address is stored composed, as
      *
      *     street
-     *     city, zip
+     *     city, ST zip      (orders before US-only shipping: "city, zip")
      *     country
      *
      * by app/api/checkout/route.ts. Splitting it back is best-effort by
@@ -100,7 +100,10 @@ export async function GET(req: Request) {
       lines.length >= 3 ? lines : [lines[0] ?? "", lines[1] ?? "", ""];
     const commaAt = cityZip.lastIndexOf(",");
     const city = commaAt >= 0 ? cityZip.slice(0, commaAt).trim() : cityZip;
-    const zip = commaAt >= 0 ? cityZip.slice(commaAt + 1).trim() : "";
+    const stateZip = commaAt >= 0 ? cityZip.slice(commaAt + 1).trim() : "";
+    const stateMatch = /^([A-Z]{2})\s+(.+)$/.exec(stateZip);
+    const state = stateMatch ? stateMatch[1] : "";
+    const zip = stateMatch ? stateMatch[2] : stateZip;
 
     return NextResponse.json(
       {
@@ -122,6 +125,7 @@ export async function GET(req: Request) {
           phone: customer?.phone ?? "",
           address: street,
           city,
+          state,
           zip,
           country,
         },

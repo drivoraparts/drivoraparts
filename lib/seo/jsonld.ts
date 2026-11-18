@@ -31,6 +31,7 @@ export function organizationJsonLd(): JsonLd {
     // The registered entity behind the brand, with the business address the
     // owner has chosen to publish.
     legalName: COMPANY_LEGAL_NAME,
+    slogan: "Your Toyota Parts Destination",
     url: absoluteUrl("/"),
     logo: absoluteImageUrl("/favicon.png"),
     email: COMPANY_SUPPORT_EMAIL,
@@ -64,7 +65,7 @@ export function websiteJsonLd(): JsonLd {
     name: SITE_NAME,
     url: absoluteUrl("/"),
     description:
-      "Shop performance engines, rust-free truck beds, 4x4 lift kits, bull bars, snorkels, turbos, brakes, suspension and swap parts.",
+      "Toyota parts and engines for the Tacoma, Tundra, 4Runner, Land Cruiser and more, shipped within the United States.",
     potentialAction: {
       "@type": "SearchAction",
       target: {

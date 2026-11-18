@@ -3,241 +3,205 @@ import Link from "next/link";
 import CompanyAddress from "@/components/content/CompanyAddress";
 import { routes } from "@/lib/inventory";
 import { buildPageMetadata } from "@/lib/seo";
+import { hasGenuineSection } from "@/lib/catalog/toyota-departments";
+import {
+  COMPANY_LEGAL_NAME,
+  COMPANY_PHONE_DISPLAY,
+  COMPANY_PHONE_TEL_HREF,
+  COMPANY_SUPPORT_EMAIL,
+} from "@/lib/content/company";
+import { FITMENT_GUARANTEE_HREF } from "@/lib/content/fitment-guarantee";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "About DrivoraParts",
+  title: "About DrivoraParts — Your Toyota Parts Destination",
   description:
-    "Learn about DrivoraParts — a performance automotive marketplace for engines, drivetrain upgrades, suspension, brakes, electronics, and body parts.",
+    "DrivoraParts specializes in Toyota parts and engines for Toyota owners across the United States, with clearly labeled genuine and aftermarket parts, checked fitment and real support.",
   path: "/about",
 });
 
-const BUILD_CATEGORIES: { label: string; slug?: string }[] = [
+/*
+ * The About page states only what the business can stand behind. It does not
+ * claim Toyota authorization, dealer status, warehouses, staff numbers,
+ * certifications or testimonials: none is on file (see lib/brand/
+ * toyota-dealer.ts). "Genuine Toyota" is used only for listings verified in
+ * lib/inventory/data/toyota-genuine.json.
+ */
+
+const SHOP_LINKS: { label: string; slug: string }[] = [
   { label: "Engines", slug: "engine" },
   { label: "Transmissions", slug: "transmission" },
-  { label: "Turbochargers", slug: "turbocharger" },
   { label: "Suspension", slug: "suspension" },
-  { label: "Brakes", slug: "brakes" },
+  { label: "Bumpers & Body", slug: "bumper" },
   { label: "Lighting", slug: "lighting" },
-  { label: "Body components", slug: "body-parts" },
-  { label: "Truck equipment", slug: "4x4-accessories" },
-  { label: "Performance & aftermarket", slug: "aftermarket" },
-  { label: "OEM solutions" },
+  { label: "4x4 Accessories", slug: "4x4-accessories" },
 ];
 
+const linkClass = "font-semibold text-accent underline-offset-2 hover:text-accent-hover hover:underline";
+
 export default function AboutPage() {
+  const showGenuine = hasGenuineSection();
+
   return (
     <main className="bg-white text-neutral-900">
-      {/* Opening */}
       <div className="mx-auto max-w-3xl px-6 pb-4 pt-12 sm:pt-16">
         <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
           About DrivoraParts
         </p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-          Every Build Has a Story
+          Your Toyota Parts Destination
         </h1>
+        <p className="mt-4 text-lg leading-relaxed text-neutral-600">
+          DrivoraParts specializes in parts and engines for Toyota vehicles. We help
+          Toyota owners across the United States find the right part for their truck,
+          SUV or car, described accurately and supported by people who answer.
+        </p>
       </div>
 
-      <div className="mx-auto max-w-3xl space-y-16 px-6 pb-20 pt-8 sm:pb-28">
-        {/* We started with a simple problem */}
+      <div className="mx-auto max-w-3xl space-y-14 px-6 pb-20 pt-8 sm:pb-24">
         <section>
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            We Started With a Simple Problem
+            Focused on Toyota
           </h2>
           <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>There was a time when we were looking for a specific automotive part.</p>
-            <p>Finding it shouldn&apos;t have been difficult.</p>
-            <p>But the more we searched, the more frustrating it became.</p>
             <p>
-              One website specialized in one manufacturer. Another carried a different
-              brand. Another had the part we needed, but only for a completely different
-              vehicle or application.
+              We concentrate on one make so we can know it well: the Tacoma, Tundra,
+              4Runner, Land Cruiser, Sequoia, FJ Cruiser and the rest of the Toyota range.
+              Our catalog covers engines, transmissions, suspension, bumpers and body
+              parts, lighting and 4x4 equipment for those vehicles.
             </p>
             <p>
-              Before long, we were jumping between multiple websites just trying to find
-              the right component.
-            </p>
-            <p>And we kept asking ourselves:</p>
-          </div>
-          <blockquote className="mt-6 border-l-2 border-accent pl-5 text-lg font-semibold leading-snug text-neutral-900 sm:text-xl">
-            Why isn&apos;t there one place where you can search across automotive brands,
-            categories, and parts without having to visit five different websites?
-          </blockquote>
-          <p className="mt-6 leading-relaxed text-neutral-600">
-            That question became the idea behind DrivoraParts.
-          </p>
-        </section>
-
-        {/* One marketplace, more possibilities */}
-        <section className="border-t border-neutral-200 pt-16">
-          <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            One Marketplace. More Possibilities.
-          </h2>
-          <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>We created DrivoraParts with a simple vision:</p>
-            <p className="font-semibold text-neutral-900">
-              Bring more of the automotive parts world together in one place.
-            </p>
-            <p>
-              Instead of searching one website for an engine, another for a transmission,
-              another for suspension, and another for performance components, Drivora is
-              being built as a marketplace where you can explore the parts your entire
-              project may need.
+              Focusing on Toyota lets us organize the catalog around the vehicle you
+              drive, so you can shop by model and system instead of sorting through parts
+              made for something else.
             </p>
           </div>
-
           <ul className="mt-6 flex flex-wrap gap-2">
-            {BUILD_CATEGORIES.map((cat) =>
-              cat.slug ? (
-                <li key={cat.label}>
-                  <Link
-                    href={routes.category(cat.slug)}
-                    className="inline-flex rounded-full border border-neutral-300 bg-white px-3.5 py-1.5 text-sm font-semibold text-neutral-700 transition-colors hover:border-accent-border hover:text-accent-hover"
-                  >
-                    {cat.label}
-                  </Link>
-                </li>
-              ) : (
-                <li
-                  key={cat.label}
-                  className="inline-flex rounded-full border border-neutral-200 bg-neutral-50 px-3.5 py-1.5 text-sm font-semibold text-neutral-500"
+            {SHOP_LINKS.map((cat) => (
+              <li key={cat.slug}>
+                <Link
+                  href={routes.category(cat.slug)}
+                  className="inline-flex rounded-full border border-neutral-300 bg-white px-3.5 py-1.5 text-sm font-semibold text-neutral-700 transition-colors hover:border-accent-border hover:text-accent-hover"
                 >
                   {cat.label}
-                </li>
-              )
-            )}
+                </Link>
+              </li>
+            ))}
           </ul>
+        </section>
 
-          <div className="mt-6 space-y-1 leading-relaxed text-neutral-600">
-            <p>The vehicle may be different.</p>
-            <p>The build may be different.</p>
-            <p className="font-semibold text-neutral-900">
-              The goal remains the same: make finding the right part easier.
+        <section className="border-t border-neutral-200 pt-14">
+          <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
+            Genuine Parts, Clearly Labeled
+          </h2>
+          <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
+            <p>
+              We are committed to genuine Toyota parts and to product information you can
+              rely on. A listing is labeled a Toyota Genuine Part only after we have
+              checked it against its Toyota part number. Aftermarket parts are labeled as
+              aftermarket, with the manufacturer named, so you always know what you are
+              buying.
+            </p>
+            <p>
+              Each listing states its part number where one exists, its condition, how it
+              ships and what it fits. If a detail has not been confirmed, we would rather
+              say so than guess.
+            </p>
+            {showGenuine ? (
+              <p>
+                <Link href="/catalog/toyota-genuine" className={linkClass}>
+                  Browse Toyota Genuine Parts
+                </Link>
+              </p>
+            ) : null}
+          </div>
+        </section>
+
+        <section className="border-t border-neutral-200 pt-14">
+          <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
+            The Right Part for Your Toyota
+          </h2>
+          <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
+            <p>
+              Fitment is where parts buying goes wrong, so it is where we spend our
+              effort. You can shop by Toyota model, check the fitment notes on every
+              listing, and send us your VIN before you order so we can confirm the part
+              against your vehicle.
+            </p>
+            <p>
+              Eligible parts are covered by our{" "}
+              <Link href={FITMENT_GUARANTEE_HREF} className={linkClass}>
+                Fitment Guarantee
+              </Link>
+              .
             </p>
           </div>
         </section>
 
-        {/* Built around the way people actually build */}
-        <section className="border-t border-neutral-200 pt-16">
+        <section className="border-t border-neutral-200 pt-14">
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            Built Around the Way People Actually Build
+            Quality, Reliability and Transparency
           </h2>
           <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>A vehicle project rarely stops at one part.</p>
-            <p>You might arrive looking for an engine and realize you also need a transmission.</p>
-            <p>You might be upgrading your suspension and then start looking at brakes.</p>
-            <p>You might be restoring a vehicle one component at a time.</p>
             <p>
-              Or you might already have the vision in your head and simply need a place to
-              find everything that brings it together.
-            </p>
-            <p className="font-semibold text-neutral-900">
-              That&apos;s why Drivora isn&apos;t being built around a single brand or a
-              single category. It&apos;s being built around the build itself.
+              Performance, quality and reliability are what Toyota owners expect from
+              their vehicles, and what we hold our catalog to. We price shipping from
+              published rates shown before you pay, publish our return, refund and
+              warranty terms in full, and confirm anything unusual, such as special
+              freight, in writing before payment.
             </p>
           </div>
         </section>
 
-        {/* For every kind of build */}
-        <section className="border-t border-neutral-200 pt-16">
+        <section className="border-t border-neutral-200 pt-14">
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            For Every Kind of Build
+            Serving Customers Across the United States
           </h2>
           <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>DrivoraParts is for the enthusiast searching for the next upgrade.</p>
-            <p>The mechanic looking for a replacement.</p>
-            <p>The builder putting together a performance setup.</p>
-            <p>The truck owner upgrading their vehicle.</p>
-            <p>The restorer bringing something back to life.</p>
-            <p>And the everyday driver who simply needs the right part to get back on the road.</p>
             <p>
-              Whether it&apos;s a street build, performance project, off-road machine,
-              restoration, or daily driver, we&apos;re building Drivora to make the search
-              simpler.
+              DrivoraParts ships to all 50 states and Washington, DC. We do not ship
+              internationally. Delivery times and rates are set out in our{" "}
+              <Link href="/policies/shipping-policy" className={linkClass}>
+                Shipping Policy
+              </Link>
+              .
             </p>
           </div>
         </section>
 
-        {/* OEM and aftermarket, together */}
-        <section className="border-t border-neutral-200 pt-16">
+        <section className="border-t border-neutral-200 pt-14">
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            OEM and Aftermarket, Together
+            Talk to Us
           </h2>
           <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>Not every project needs the same solution.</p>
             <p>
-              Sometimes you want an OEM component that keeps your vehicle close to its
-              original specification.
+              Questions about fitment, an order or a part you cannot find? Contact our
+              support team.
             </p>
-            <p>
-              Sometimes aftermarket is the better choice for your application, budget,
-              performance goals, or build direction.
-            </p>
-            <p>
-              Drivora brings both worlds into the same marketplace so you can explore your
-              options instead of being locked into one path.
-            </p>
-            <p className="font-semibold text-neutral-900">
-              Your vehicle. Your build. Your choice.
+            <ul className="space-y-1.5">
+              <li>
+                Email:{" "}
+                <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`} className={linkClass}>
+                  {COMPANY_SUPPORT_EMAIL}
+                </a>
+              </li>
+              <li>
+                Phone or text:{" "}
+                <a href={COMPANY_PHONE_TEL_HREF} className={`${linkClass} whitespace-nowrap`}>
+                  {COMPANY_PHONE_DISPLAY}
+                </a>
+              </li>
+              <li>
+                <Link href="/contact" className={linkClass}>
+                  Contact form
+                </Link>
+              </li>
+            </ul>
+            <p className="text-sm text-neutral-500">
+              DrivoraParts is operated by {COMPANY_LEGAL_NAME}. DrivoraParts is an
+              independent retailer and is not affiliated with, authorized by or endorsed
+              by Toyota Motor Corporation.
             </p>
           </div>
-        </section>
-
-        {/* Still building, still evolving */}
-        <section className="border-t border-neutral-200 pt-16">
-          <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            Still Building. Still Evolving.
-          </h2>
-          <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>DrivoraParts is growing with the automotive community.</p>
-            <p>
-              We&apos;re expanding categories, improving discovery, refining product
-              information, and building tools that make it easier to go from searching for
-              a part to actually finding the right one.
-            </p>
-            <p>
-              We don&apos;t want Drivora to be another website you visit because you have
-              nowhere else to look.
-            </p>
-            <p className="font-semibold text-neutral-900">
-              We want it to become the place you think of first when your next automotive
-              project needs a part.
-            </p>
-          </div>
-        </section>
-
-        {/* Every build has a story — closing */}
-        <section className="border-t border-neutral-200 pt-16">
-          <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            Every Build Has a Story.
-          </h2>
-          <div className="mt-5 space-y-1.5 leading-relaxed text-neutral-600">
-            <p>Some builds start with a vision.</p>
-            <p>Some start with a broken part.</p>
-            <p>Some start with a vehicle sitting in a garage.</p>
-          </div>
-          <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>Ours started with a search that shouldn&apos;t have been so difficult.</p>
-            <p>
-              We couldn&apos;t find one place that brought the automotive world together
-              the way we wanted.
-            </p>
-            <p className="font-semibold text-neutral-900">So we decided to build it.</p>
-          </div>
-
-          <p className="mt-8 text-lg font-bold text-neutral-900">That&apos;s DrivoraParts.</p>
-          <p className="mt-2 leading-relaxed text-neutral-600">
-            One marketplace.
-            <br />
-            More brands.
-            <br />
-            More categories.
-            <br />
-            More possibilities.
-          </p>
-
-          <p className="mt-6 text-xl font-bold tracking-tight text-accent">
-            Find your part. Build your vision.
-          </p>
         </section>
 
         <div className="border-t border-neutral-200 pt-8">
@@ -246,22 +210,22 @@ export default function AboutPage() {
       </div>
 
       <section className="border-t border-neutral-200 bg-neutral-50 py-16 text-center">
-        <h2 className="mb-4 text-3xl font-bold text-neutral-900">Explore the marketplace</h2>
-        <p className="mb-8 text-neutral-600">
-          Browse every listing or enter by category — same paths as the homepage.
+        <h2 className="mb-4 text-3xl font-bold text-neutral-900">Shop Toyota parts</h2>
+        <p className="mb-8 px-6 text-neutral-600">
+          Start with your Toyota, or browse the full catalog.
         </p>
         <div className="flex flex-col items-center gap-4">
           <Link
-            href={routes.all}
+            href={routes.market("usa")}
             className="inline-block transform rounded-full bg-accent px-10 py-4 font-semibold text-white transition hover:scale-105 hover:bg-accent-active"
           >
-            All Products
+            Shop by Toyota model
           </Link>
           <Link
-            href={routes.catalog}
+            href={routes.all}
             className="inline-block transform rounded-full border border-neutral-300 bg-white px-10 py-4 font-semibold text-neutral-900 transition hover:scale-105 hover:border-neutral-400 hover:shadow-md"
           >
-            ENTER MARKET
+            All Toyota parts
           </Link>
         </div>
       </section>

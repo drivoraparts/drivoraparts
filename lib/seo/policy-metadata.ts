@@ -6,17 +6,17 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
   "/policies/privacy-policy": {
     title: "Privacy Policy",
     description:
-      "How DrivoraParts collects, uses, and protects your personal data when you shop performance auto parts online.",
+      "How DrivoraParts collects, uses, and protects your personal data when you shop for Toyota parts online.",
   },
   "/policies/cookie-policy": {
     title: "Cookie Policy",
     description:
-      "Learn how DrivoraParts uses cookies and similar technologies on our automotive performance marketplace.",
+      "Learn how DrivoraParts uses cookies and similar technologies on drivoraparts.com.",
   },
   "/policies/shipping-policy": {
     title: "Shipping Policy",
     description:
-      "DrivoraParts shipping times, freight handling for truck beds and oversized parts, and international delivery.",
+      "DrivoraParts ships only within the United States: processing and delivery times, published US rates, and freight for engines, transmissions and oversized parts.",
   },
   "/policies/manual-payment": {
     title: "Manual Payment",
@@ -26,7 +26,7 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
   "/policies/refund-policy": {
     title: "Returns & Refund Policy",
     description:
-      "30-day return window, condition requirements, and refund processing for DrivoraParts performance parts orders.",
+      "30-day return window, condition requirements, and refund processing for DrivoraParts orders.",
   },
   "/policies/fitment-guarantee": {
     title: "Fitment Guarantee",
@@ -46,12 +46,12 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
   "/policies/terms-of-service": {
     title: "Terms of Service",
     description:
-      "Terms governing use of the DrivoraParts automotive performance parts marketplace and website.",
+      "Terms governing use of drivoraparts.com, the DrivoraParts Toyota parts and engines store.",
   },
   "/policies/terms-of-sale": {
     title: "Terms of Sale",
     description:
-      "Purchase terms for performance engines, 4x4 accessories, truck beds, and parts sold on DrivoraParts.",
+      "Purchase terms for Toyota parts and engines sold on DrivoraParts and shipped within the United States.",
   },
   "/policies/acceptable-use-policy": {
     title: "Acceptable Use Policy",
@@ -60,7 +60,7 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
   "/policies/accessibility-statement": {
     title: "Accessibility Statement",
     description:
-      "DrivoraParts commitment to accessible shopping for automotive performance parts online.",
+      "DrivoraParts commitment to accessible shopping for Toyota parts online.",
   },
   "/policies/affiliate-disclosure": {
     title: "Affiliate Disclosure",

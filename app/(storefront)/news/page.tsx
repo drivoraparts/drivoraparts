@@ -7,7 +7,7 @@ import { breadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "News",
   description:
-    "Company editorial from DrivoraParts: sourcing hard-to-find engines, transmissions and truck parts, fitment identification, and cross-border buying.",
+    "Company editorial from DrivoraParts: sourcing Toyota engines, transmissions and truck parts, and getting fitment right.",
   path: NEWS_PATH,
   image: "/homepage/hero/1600.webp",
 });

@@ -872,7 +872,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2103,
@@ -911,7 +911,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2104,
@@ -950,7 +950,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2105,
@@ -988,7 +988,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2106,
@@ -1026,7 +1026,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2107,
@@ -1064,7 +1064,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2108,
@@ -1101,7 +1101,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2109,
@@ -1139,7 +1139,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2110,
@@ -1178,7 +1178,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2111,
@@ -1216,7 +1216,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2112,
@@ -1254,7 +1254,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2101,
@@ -1294,6 +1294,6 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
 ];

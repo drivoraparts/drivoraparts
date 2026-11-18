@@ -122,7 +122,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2,
@@ -232,7 +232,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 35,
@@ -277,7 +277,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2115,
@@ -313,7 +313,7 @@ Worldwide Shipping Available`,
       "Factory ECU",
       "Factory Engine Wiring Harness",
     ],
-    freightNotes: "International freight / LTL.",
+    freightNotes: "Freight / LTL.",
     warrantyTerms:
       "Subject to the DrivoraParts Warranty Policy. Excludes installation labor, fabrication, tuning, modifications, overheating, improper installation, misuse, neglect, and damage from components or systems outside the supplied package.",
     thumbnail: "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/1.jpg",
@@ -495,11 +495,9 @@ Mileage: N/A / Not Verified
 
 This complete swap package is backed by a 24-month limited warranty subject to the applicable DrivoraParts warranty terms and conditions.
 
-WORLDWIDE SHIPPING & FULFILLMENT
+US SHIPPING & FULFILLMENT
 
-Worldwide Shipping & Freight Available
-
-International shipping is available to the United States, Canada, United Kingdom, Australia, and other eligible destinations.
+Ships within the United States only. Freight available.
 
 Shipping method and delivery time may vary according to destination, package dimensions, weight, freight requirements, and selected service.
 
@@ -610,7 +608,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 37,
@@ -656,7 +654,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 38,
@@ -713,7 +711,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 39,
@@ -777,7 +775,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 40,
@@ -825,7 +823,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 41,
@@ -878,7 +876,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 42,
@@ -926,7 +924,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 43,
@@ -980,7 +978,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 44,
@@ -1029,7 +1027,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 45,
@@ -1095,7 +1093,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 46,
@@ -1159,7 +1157,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 47,
@@ -1204,7 +1202,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 48,
@@ -1269,7 +1267,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2114,
@@ -1377,7 +1375,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 49,
@@ -1429,7 +1427,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 50,
@@ -1485,7 +1483,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 51,
@@ -1536,7 +1534,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 52,
@@ -1596,7 +1594,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 53,
@@ -1647,7 +1645,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 54,
@@ -1700,7 +1698,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 55,
@@ -1753,7 +1751,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 56,
@@ -1809,7 +1807,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 57,
@@ -1862,7 +1860,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 58,
@@ -1908,7 +1906,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 59,
@@ -1954,7 +1952,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 60,
@@ -1999,7 +1997,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 61,
@@ -2046,7 +2044,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 62,
@@ -2100,7 +2098,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 63,
@@ -2147,7 +2145,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 64,
@@ -2196,7 +2194,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 65,
@@ -2246,7 +2244,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 66,
@@ -2292,7 +2290,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 67,
@@ -2337,7 +2335,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 68,
@@ -2388,7 +2386,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 69,
@@ -2431,7 +2429,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 70,
@@ -2480,7 +2478,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 71,
@@ -2527,7 +2525,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 72,
@@ -2572,7 +2570,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 73,
@@ -2622,7 +2620,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 74,
@@ -2666,7 +2664,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 75,
@@ -2712,7 +2710,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 76,
@@ -2756,7 +2754,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 77,
@@ -2799,7 +2797,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 78,
@@ -2843,7 +2841,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 79,
@@ -2892,7 +2890,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 80,
@@ -2938,7 +2936,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 81,
@@ -2986,7 +2984,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 82,
@@ -3027,7 +3025,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 83,
@@ -3074,7 +3072,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 84,
@@ -3116,7 +3114,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 85,
@@ -3160,7 +3158,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 86,
@@ -3204,7 +3202,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 87,
@@ -3259,7 +3257,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 88,
@@ -3306,7 +3304,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 89,
@@ -3351,7 +3349,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 90,
@@ -3395,7 +3393,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 91,
@@ -3437,7 +3435,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 92,
@@ -3479,7 +3477,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 93,
@@ -3533,7 +3531,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 94,
@@ -3577,7 +3575,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 95,
@@ -3627,7 +3625,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 96,
@@ -3671,7 +3669,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 97,
@@ -3719,7 +3717,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 98,
@@ -3770,7 +3768,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 99,
@@ -3813,7 +3811,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 100,
@@ -3857,7 +3855,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 101,
@@ -3903,7 +3901,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 102,
@@ -3950,7 +3948,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 103,
@@ -3990,7 +3988,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 104,
@@ -4030,7 +4028,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 105,
@@ -4077,7 +4075,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 106,
@@ -4122,7 +4120,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   ...extensionProducts,
 
@@ -4207,7 +4205,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2118,
@@ -4264,7 +4262,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2119,
@@ -4328,7 +4326,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
 
   /* --- OBS 7.3 sensors, electrical and fuel-system service parts ---
@@ -4385,7 +4383,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2121,
@@ -4436,7 +4434,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2122,
@@ -4485,7 +4483,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2123,
@@ -4534,7 +4532,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2124,
@@ -4583,7 +4581,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2125,
@@ -4634,7 +4632,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2126,
@@ -4683,7 +4681,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2127,
@@ -4732,7 +4730,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2128,
@@ -4781,7 +4779,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
 
   /* --- OBS 7.3 oil, cooling and fuel-delivery parts --- */
@@ -4833,7 +4831,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2130,
@@ -4884,7 +4882,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2131,
@@ -4933,7 +4931,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2132,
@@ -4981,7 +4979,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2133,
@@ -5030,7 +5028,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2134,
@@ -5082,7 +5080,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2135,
@@ -5130,7 +5128,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
 
   /* --- OBS 7.3 drivetrain and starting --- */
@@ -5193,7 +5191,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2137,
@@ -5249,7 +5247,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2138,
@@ -5300,7 +5298,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 2139,
@@ -5349,7 +5347,7 @@ Warranty
 12-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
 
   {

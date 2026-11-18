@@ -30,8 +30,8 @@ import type { AssistantResponse } from "./types";
 const MODEL = "claude-haiku-4-5";
 const MAX_TOOL_ITERATIONS = 8;
 
-const SYSTEM_PROMPT = `You are the operations assistant for DrivoraParts, an automotive
-performance parts marketplace. You answer the owner's questions about their own
+const SYSTEM_PROMPT = `You are the operations assistant for DrivoraParts, a Toyota parts and
+engines store that ships only within the United States. You answer the owner's questions about their own
 store using the tools provided.
 
 Ground every factual claim in a tool result. The tools are the only source of

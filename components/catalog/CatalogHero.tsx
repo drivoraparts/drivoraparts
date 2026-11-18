@@ -92,14 +92,14 @@ export default function CatalogHero({
           className="rise-in mt-10 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-on-dark sm:mt-14"
           style={delay(0)}
         >
-          The Marketplace
+          Toyota Parts &amp; Engines
         </p>
 
         <h1
           className="rise-in mt-4 max-w-3xl text-[2rem] font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
           style={delay(60)}
         >
-          Explore Every Build-Ready Part
+          Every Toyota Part We Carry
         </h1>
 
         <p
@@ -110,9 +110,9 @@ export default function CatalogHero({
             value={productCount}
             className="font-semibold tabular-nums text-white"
           />
-          <span className="font-semibold text-white">+</span> listings across
-          engines, transmissions, suspension, brakes and more — what you see is
-          what you get.
+          <span className="font-semibold text-white">+</span> Toyota listings
+          across engines, transmissions, suspension, bumpers and more, shipped
+          within the United States.
         </p>
 
         <div className="rise-in mt-8" style={delay(180)}>

@@ -21,10 +21,12 @@
         the fixed freight rate for its destination from
         FREIGHT_RATE_TABLES (one flat charge per order, instead of
         the parcel charge).
-     4. Destinations without a published rate (anything outside the US, UK, Australia and the 13 fixed-rate countries), and
-        subtotals above the top of the tables, are "pending" --
+     4. Subtotals above the top of the tables are "pending" --
         never $0 -- and quoted manually before the customer pays,
         as the Shipping Policy says.
+     5. Destinations outside the United States are not shipped
+        to at all: the quote is "outside_service_area" and
+        checkout refuses the order (lib/shipping/us-address.ts).
 
    These are published policy values, not carrier quotes.
    Change the numbers here; nothing else needs to move.

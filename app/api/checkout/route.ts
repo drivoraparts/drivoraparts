@@ -13,7 +13,12 @@ import {
 import { logError, logWarn } from "@/lib/monitoring/logger";
 import { getClientIp } from "@/lib/security/ip";
 import { assessShipping } from "@/lib/shipping/quote";
-import { checkoutCountryError, quoteShipping } from "@/lib/shipping/rates";
+import { quoteShipping } from "@/lib/shipping/rates";
+import {
+  normalizeUsState,
+  SHIPPING_COUNTRY_NAME,
+  usShippingAddressError,
+} from "@/lib/shipping/us-address";
 
 function getCheckoutErrorMessage(error: unknown): string {
   if (error instanceof Error && error.message) return error.message;
@@ -57,8 +62,20 @@ function parseCustomer(raw: unknown) {
     typeof (raw as { country?: string }).country === "string"
       ? (raw as { country: string }).country.trim()
       : "";
+  const state =
+    typeof (raw as { state?: string }).state === "string"
+      ? (raw as { state: string }).state.trim()
+      : "";
 
-  const shippingAddress = [address, [city, zip].filter(Boolean).join(", "), country]
+  // Stored as "street / city, ST zip / United States". The state code is
+  // only written once the address has passed usShippingAddressError, so a
+  // stored address always names a real state.
+  const stateCode = normalizeUsState(state);
+  const shippingAddress = [
+    address,
+    [city, [stateCode, zip].filter(Boolean).join(" ")].filter(Boolean).join(", "),
+    country,
+  ]
     .filter(Boolean)
     .join("\n");
 
@@ -73,6 +90,7 @@ function parseCustomer(raw: unknown) {
     city: city || undefined,
     zip: zip || undefined,
     country: country || undefined,
+    state: state || undefined,
     shippingAddress: shippingAddress || undefined,
   };
 }
@@ -114,13 +132,18 @@ export async function POST(req: Request) {
       );
     }
 
-    // Shipping is priced from the destination, so an order without one is
-    // refused here rather than created with shipping silently left to quote.
-    const countryError = checkoutCountryError(customer.country);
-    if (countryError) {
-      logWarn("checkout_missing_country", { ip });
-      return NextResponse.json({ error: countryError }, { status: 400 });
+    // DrivoraParts ships only within the United States. Enforced here, on
+    // the server, whatever the page sent: a missing or non-US country, an
+    // unknown state or a malformed ZIP is refused before any order exists.
+    // processCheckout checks the same rule again (lib/checkout/service.ts).
+    const addressError = usShippingAddressError(customer);
+    if (addressError) {
+      logWarn("checkout_address_refused", { ip, country: (customer.country ?? "").slice(0, 40) });
+      return NextResponse.json({ error: addressError }, { status: 400 });
     }
+    // One spelling of the country on every order, however it was typed.
+    customer.country = SHIPPING_COUNTRY_NAME;
+    customer.shippingAddress = customer.shippingAddress?.replace(/[^\n]*$/, SHIPPING_COUNTRY_NAME);
 
     let lockedItems;
     try {

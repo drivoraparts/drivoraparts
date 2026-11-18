@@ -17,10 +17,10 @@ import {
 export const dynamic = "force-static";
 
 const DESCRIPTION =
-  "Shop DrivoraParts by market: trucks, diesel and performance for the USA, 4WDs and utes for Australia, 4x4s and European performance for the UK, and the complete catalog, shipped internationally.";
+  "Shop Toyota parts and engines on DrivoraParts by vehicle or browse the complete catalog: Tacoma, Tundra, 4Runner, Land Cruiser and more, shipped within the United States.";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Shop Parts by Market",
+  title: "Shop Toyota Parts",
   description: DESCRIPTION,
   path: routes.catalog,
   keywords: SITE_KEYWORDS,

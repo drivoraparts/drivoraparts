@@ -36,7 +36,7 @@ export default function MarketplaceSearch({
       className="group flex w-full max-w-2xl items-stretch border border-white/15 bg-white/[0.04] transition-[background-color,border-color,box-shadow] duration-[var(--motion-duration-fast)] focus-within:border-accent-on-dark/70 focus-within:bg-white/[0.07] focus-within:shadow-[0_8px_30px_-12px_rgba(0,0,0,0.8)] hover:border-white/25"
     >
       <label htmlFor="marketplace-search" className="sr-only">
-        Search the marketplace
+        Search Toyota parts
       </label>
 
       <span

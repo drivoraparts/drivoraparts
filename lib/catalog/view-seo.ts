@@ -47,7 +47,7 @@ export type CatalogView = {
 };
 
 function basePath(scope: CatalogViewScope): string {
-  return scope === "all" || scope === "worldwide" ? routes.all : routes.market(scope);
+  return scope === "all" ? routes.all : routes.market(scope);
 }
 
 export function resolveCatalogView(input: CatalogViewInput): CatalogView {

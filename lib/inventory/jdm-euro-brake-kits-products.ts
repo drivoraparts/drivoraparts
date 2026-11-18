@@ -48,7 +48,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available — freight quotes provided for oversized items.`,
+Ships within the United States only — freight quotes provided for oversized items.`,
   },
   {
     id: 2092,
@@ -89,7 +89,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available — freight quotes provided for oversized items.`,
+Ships within the United States only — freight quotes provided for oversized items.`,
   },
   {
     id: 2093,
@@ -130,6 +130,6 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available — freight quotes provided for oversized items.`,
+Ships within the United States only — freight quotes provided for oversized items.`,
   },
 ];

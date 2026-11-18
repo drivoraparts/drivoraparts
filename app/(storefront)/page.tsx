@@ -26,8 +26,8 @@ import { buildPageMetadata, SITE_KEYWORDS } from "@/lib/seo";
 export const revalidate = 600;
 
 export const metadata = buildPageMetadata({
-  title: "Toyota Parts — Tacoma, Tundra, 4Runner & Land Cruiser",
-  description: `Shop ${getActiveListingCount().toLocaleString("en-US")} Toyota parts for the Tacoma, Tundra, 4Runner, Land Cruiser and more: suspension, bumpers, lighting, engines and transmissions, each matched to the vehicle it fits. Prices in USD.`,
+  title: "Toyota Parts & Engines — Tacoma, Tundra, 4Runner & Land Cruiser",
+  description: `Shop ${getActiveListingCount().toLocaleString("en-US")} Toyota parts and engines for the Tacoma, Tundra, 4Runner, Land Cruiser and more, matched to the vehicle they fit and shipped within the US.`,
   path: "/",
   keywords: SITE_KEYWORDS,
 });

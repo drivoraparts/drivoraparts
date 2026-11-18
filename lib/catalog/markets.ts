@@ -9,8 +9,11 @@ import {
 /* =========================================================
    DRIVORAPARTS — MARKETS
    ---------------------------------------------------------
-   USA, Australia, UK and Worldwide are ways INTO the
-   catalog, not separate catalogs. Each one is a filter over
+   DrivoraParts ships only within the United States, so USA
+   is the one market. (Australia, UK and Worldwide views were
+   retired with international shipping; their URLs redirect
+   to /catalog/all in next.config.ts.) A market is a way INTO
+   the catalog, not a separate catalog. Each one is a filter over
    the same products /catalog/all lists. Nothing is copied,
    nothing is stored per market, and a product appears in
    more than one market when its fitment puts it there.
@@ -42,7 +45,7 @@ import {
    plain props from the pages that call it.
 ========================================================= */
 
-export type MarketKey = "usa" | "australia" | "uk" | "worldwide";
+export type MarketKey = "usa";
 
 export type MarketVehicle = {
   /** The ?vehicle= value. It ends up in bookmarked URLs, so keep it stable. */
@@ -137,9 +140,10 @@ const RAM_AIR = /\bram\s*-?\s*air\b/i;
  * market)" keeps an ARB recovery point out of the Australian and UK Ranger
  * lists even though it names a Ranger. Only explicit statements count.
  */
-const MARKET_STATEMENTS: { market: MarketKey; pattern: RegExp }[] = [
+const MARKET_STATEMENTS: { market: MarketKey | "other"; pattern: RegExp }[] = [
   { market: "usa", pattern: /\(\s*US[\s-]market\s*\)/i },
-  { market: "australia", pattern: /\(\s*AUS?\s*\)/i },
+  // A listing stated as an Australian-market part stays out of the USA list.
+  { market: "other", pattern: /\(\s*AUS?\s*\)/i },
 ];
 
 const LANDCRUISER_70 = getVehiclePlatform("toyota-landcruiser-70-series");
@@ -222,174 +226,6 @@ export const MARKETS: Market[] = [
     seoDescription:
       "Toyota parts for the Tacoma, Tundra, 4Runner, Land Cruiser, Sequoia and more, each matched to the vehicle by the fitment its listing states. Prices in USD.",
   },
-  {
-    key: "australia",
-    index: "02",
-    name: "Australia",
-    tagline: "4WD · Utes · Touring",
-    summary:
-      "LandCruisers, Prados and Patrols, and the utes that do the work: HiLux, Ranger, D-Max, Triton and more.",
-    groups: [
-      {
-        label: "4WDs",
-        vehicles: [
-          {
-            key: "landcruiser",
-            make: "Toyota",
-            model: "LandCruiser",
-            // The 70 Series hub's own patterns, plus every other
-            // LandCruiser. The Prado has its own entry.
-            include: [/\bland\s?cruiser\b/i, ...(LANDCRUISER_70?.include ?? [])],
-            exclude: [/\bprado\b/i],
-          },
-          { key: "prado", make: "Toyota", model: "Prado", include: [/\bprado\b/i] },
-          { key: "patrol", make: "Nissan", model: "Patrol", include: [/\bpatrol\b/i] },
-        ],
-      },
-      {
-        label: "Utes",
-        vehicles: [
-          fromHub("ranger", "ford-ranger-4x4", "Ford", "Ranger", [US_COMPACT_RANGER]),
-          fromHub("hilux", "toyota-hilux-4x4", "Toyota", "HiLux"),
-          fromHub("d-max", "isuzu-d-max-4x4", "Isuzu", "D-Max"),
-          fromHub("triton", "mitsubishi-triton-4x4", "Mitsubishi", "Triton", [FORD_TRITON_ENGINE]),
-          fromHub("bt-50", "mazda-bt-50-4x4", "Mazda", "BT-50"),
-          fromHub("navara", "nissan-navara-4x4", "Nissan", "Navara"),
-          fromHub("amarok", "volkswagen-amarok-4x4", "Volkswagen", "Amarok"),
-        ],
-      },
-    ],
-    categoryOrder: [
-      "suspension",
-      "bumper",
-      "4x4-accessories",
-      "canopy",
-      "lighting",
-      "wheels-tires",
-      "engine",
-      "transmission",
-      "turbocharger",
-      "brakes",
-      "electronics",
-      "body-parts",
-      "interior",
-      "aftermarket",
-    ],
-    seoTitle: "4WD, Ute & Touring Parts for Australia",
-    seoDescription:
-      "Parts for the Toyota LandCruiser, Prado and HiLux, Nissan Patrol, Ford Ranger, Isuzu D-Max and Mitsubishi Triton: bull bars, suspension, canopies and 4x4 accessories, each matched to the vehicle by its fitment.",
-  },
-  {
-    key: "uk",
-    index: "03",
-    name: "UK",
-    tagline: "4x4 · Performance · European",
-    summary:
-      "Hilux, Land Cruiser, Patrol, Navara and Ranger 4x4s, and European performance for BMW, Mercedes-Benz and Audi.",
-    groups: [
-      {
-        label: "4x4s",
-        vehicles: [
-          {
-            key: "defender",
-            make: "Land Rover",
-            model: "Defender",
-            // "Defender" alone is also a canopy and a Michelin tyre.
-            include: [
-              /\bland\s?rover\b[^\u2022]{0,20}\bdefender\b/i,
-              /\bdefender\s+(?:90|110|130)\b/i,
-            ],
-          },
-          {
-            key: "range-rover",
-            make: "Land Rover",
-            model: "Range Rover",
-            include: [/\brange\s?rover\b/i],
-          },
-          {
-            key: "discovery",
-            make: "Land Rover",
-            model: "Discovery",
-            include: [
-              /\bland\s?rover\b[^\u2022]{0,20}\bdiscovery\b/i,
-              /\bdiscovery\s+(?:[1-5]|sport)\b/i,
-            ],
-          },
-          fromHub("hilux", "toyota-hilux-4x4", "Toyota", "Hilux"),
-          {
-            key: "land-cruiser",
-            make: "Toyota",
-            model: "Land Cruiser",
-            // Sold in the UK as the Land Cruiser, so the Prado is included.
-            include: [
-              /\bland\s?cruiser\b/i,
-              /\bprado\b/i,
-              ...(LANDCRUISER_70?.include ?? []),
-            ],
-          },
-          { key: "patrol", make: "Nissan", model: "Patrol", include: [/\bpatrol\b/i] },
-          fromHub("navara", "nissan-navara-4x4", "Nissan", "Navara"),
-          fromHub("ranger", "ford-ranger-4x4", "Ford", "Ranger", [US_COMPACT_RANGER]),
-          fromHub("amarok", "volkswagen-amarok-4x4", "Volkswagen", "Amarok"),
-        ],
-      },
-      {
-        label: "European",
-        vehicles: [
-          { key: "bmw", model: "BMW", include: [/\bbmw\b/i] },
-          { key: "mercedes-benz", model: "Mercedes-Benz", include: [/\bmercedes\b/i] },
-          { key: "audi", model: "Audi", include: [/\baudi\b/i] },
-        ],
-      },
-    ],
-    categoryOrder: [
-      "suspension",
-      "4x4-accessories",
-      "brakes",
-      "turbocharger",
-      "engine",
-      "transmission",
-      "lighting",
-      "wheels-tires",
-      "body-parts",
-      "bumper",
-      "canopy",
-      "electronics",
-      "interior",
-      "aftermarket",
-    ],
-    seoTitle: "4x4 & European Performance Parts for the UK",
-    seoDescription:
-      "Parts for the Toyota Hilux and Land Cruiser, Nissan Patrol and Navara and Ford Ranger, and European performance parts for BMW, Mercedes-Benz and Audi, each matched to the vehicle by its fitment.",
-  },
-  {
-    key: "worldwide",
-    index: "04",
-    name: "Worldwide",
-    tagline: "Parts · Performance · Builds",
-    summary:
-      "Every listing in the catalog, organised by system: engines to lighting, for builds anywhere we ship.",
-    groups: [],
-    categoryOrder: [
-      "engine",
-      "transmission",
-      "turbocharger",
-      "suspension",
-      "brakes",
-      "electronics",
-      "lighting",
-      "wheels-tires",
-      "4x4-accessories",
-      "aftermarket",
-      "body-parts",
-      "bumper",
-      "canopy",
-      "interior",
-    ],
-    seoTitle: "Engines, Turbos, Suspension & More, Shipped Internationally",
-    seoDescription:
-      "The complete DrivoraParts catalog by system: engines, transmissions, turbochargers, suspension, brakes, electronics, lighting, wheels and 4x4 accessories, shipped internationally.",
-  },
 ];
 
 export function getMarket(key: string | undefined): Market | undefined {
@@ -400,7 +236,7 @@ function marketVehicles(market: Market): MarketVehicle[] {
   return market.groups.flatMap((group) => group.vehicles);
 }
 
-function statedMarket(text: string): MarketKey | null {
+function statedMarket(text: string): MarketKey | "other" | null {
   return MARKET_STATEMENTS.find(({ pattern }) => pattern.test(text))?.market ?? null;
 }
 
