@@ -31,7 +31,7 @@ export type ToyotaDesignation = "distributor" | "parts-dealer" | "dealer";
 
 export type ToyotaDealerRecord = {
   designation: ToyotaDesignation;
-  /** The legal entity the authorization names, e.g. "BrookstoneUS LLC". */
+  /** The legal entity the authorization names, e.g. "DrivoraParts LLC". */
   authorizedEntity: string;
   /** Toyota dealer / parts-account code from the authorization document. */
   dealerCode: string;

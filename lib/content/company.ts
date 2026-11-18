@@ -5,18 +5,20 @@
  * store name, COMPANY_DISPLAY_NAME, not the entity), so a change
  * of name is one edit and cannot leave a stale one behind.
  *
- * Source: the California Articles of Organization filed in July 2024, which
- * name the company BROOKSTONEUS LLC (filings are in capitals). No registration
- * or tax number from those documents is stored in this repository, and none
- * should be. It was previously "DrivoraParts LLC", for
- * which no registration document exists; "DrivoraParts" is the store's brand,
- * not a legal entity, and is COMPANY_DISPLAY_NAME below.
+ * Source: the business owner, 2026-11-18, who confirmed "DrivoraParts LLC" as
+ * the official legal business name. History: the California Articles of
+ * Organization filed in July 2024 named the company BROOKSTONEUS LLC, and this
+ * constant read "BrookstoneUS LLC" until then. Keep this name in step with the
+ * Secretary of State record (an amendment renaming the LLC, or the filing that
+ * formed it). No registration or tax number is stored in this repository, and
+ * none should be. "DrivoraParts" alone is the store's brand, COMPANY_DISPLAY_NAME
+ * below.
  *
  * What that document does NOT establish, and so is not claimed anywhere: that
  * this entity is the merchant of record, holds the payment accounts, or has a
  * trade-name registration for "DrivoraParts".
  */
-export const COMPANY_LEGAL_NAME = "BrookstoneUS LLC";
+export const COMPANY_LEGAL_NAME = "DrivoraParts LLC";
 export const COMPANY_DISPLAY_NAME = "DrivoraParts";
 export const COMPANY_SUPPORT_EMAIL = "support@drivoraparts.com";
 
@@ -29,7 +31,11 @@ export const COMPANY_PHONE_DISPLAY = "+1 (401) 376-5457";
 export const COMPANY_PHONE_TEL_HREF = `tel:${COMPANY_PHONE_E164}`;
 export const COMPANY_PHONE_SMS_HREF = `sms:${COMPANY_PHONE_E164}`;
 
-/** Verified by the Articles of Organization above: a California LLC. */
+/**
+ * A California LLC, per the 2024 Articles of Organization. Correct for
+ * DrivoraParts LLC if it is the same company renamed; review if it was formed
+ * separately or in another state (the Terms of Service and FAQ state this).
+ */
 export const COMPANY_STATE_OF_FORMATION = "California";
 
 export type CompanyAddress = {
