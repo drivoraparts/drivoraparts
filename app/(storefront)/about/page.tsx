@@ -3,45 +3,31 @@ import Link from "next/link";
 import { routes } from "@/lib/inventory";
 import { buildPageMetadata } from "@/lib/seo";
 import { categoryPreviews } from "@/lib/catalog/category-preview";
-import {
-  COMPANY_LEGAL_NAME,
-  COMPANY_PHONE_DISPLAY,
-  COMPANY_PHONE_TEL_HREF,
-  COMPANY_SUPPORT_EMAIL,
-} from "@/lib/content/company";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "About DrivoraParts — Your Toyota. Your Parts. Your Road.",
+  title: "About DrivoraParts — Every Toyota Has a Story",
   description:
-    "DrivoraParts is a Toyota parts specialist: Toyota parts and engines for owners, mechanics and enthusiasts across the United States. One brand, a focused selection.",
+    "DrivoraParts is focused on one thing: Toyota. Genuine Toyota parts and selected aftermarket products, with clear fitment information, for Toyota owners across the United States.",
   path: "/about",
 });
 
 /*
- * The owner-approved About copy (2026-11-18). It makes no dealer, Toyota
- * affiliation, facility, certification or testimonial claim.
+ * The owner-approved About copy, "Every Toyota Has a Story" (2026-11-18),
+ * laid out in the page's existing editorial structure. It makes no dealer,
+ * Toyota affiliation, facility, certification or testimonial claim.
  *
- * The category list is the approved one, filtered to categories that actually
- * have listings: each entry names the catalog categories it stands for, and an
- * entry is shown only when at least one of them is non-empty.
+ * The category list is the approved one, filtered to categories that have
+ * listings: an entry is shown only when one of its catalog categories is
+ * non-empty, and it links to the first that is.
  */
 const CATEGORY_GROUPS: { label: string; slugs: string[] }[] = [
-  { label: "Toyota Engines", slugs: ["engine"] },
-  { label: "Transmissions", slugs: ["transmission"] },
-  { label: "Engine Components", slugs: ["turbocharger"] },
-  { label: "Suspension & Steering", slugs: ["suspension"] },
-  { label: "Braking Systems", slugs: ["brakes"] },
-  { label: "Exterior & Body Components", slugs: ["bumper", "body-parts"] },
-  { label: "Electrical Components", slugs: ["electronics", "lighting"] },
-  { label: "Performance & Replacement Parts", slugs: ["aftermarket", "4x4-accessories"] },
-];
-
-const PRODUCT_TYPES = [
-  "Genuine Toyota parts.",
-  "OEM components.",
-  "Quality replacement parts.",
-  "Aftermarket components.",
-  "Used and refurbished parts where available.",
+  { label: "Engines and engine components", slugs: ["engine", "turbocharger"] },
+  { label: "Transmissions and drivetrain", slugs: ["transmission"] },
+  { label: "Suspension and steering", slugs: ["suspension"] },
+  { label: "Brakes and braking components", slugs: ["brakes"] },
+  { label: "Bumpers and body components", slugs: ["bumper", "body-parts"] },
+  { label: "Lighting and exterior accessories", slugs: ["lighting", "4x4-accessories"] },
+  { label: "Performance and aftermarket upgrades", slugs: ["aftermarket", "wheels-tires"] },
 ];
 
 const linkClass =
@@ -65,51 +51,62 @@ export default function AboutPage() {
 
   return (
     <main className="bg-white text-neutral-900">
+      {/* Opening */}
       <div className="mx-auto max-w-3xl px-6 pb-4 pt-12 sm:pt-16">
         <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
           About DrivoraParts
         </p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-          Built Around Toyota. Focused on What Drives You.
+          Every Toyota Has a Story
         </h1>
       </div>
 
       <div className="mx-auto max-w-3xl space-y-10 px-6 pb-16 pt-6 sm:space-y-14 sm:pb-24 sm:pt-8">
+        {/* Editorial introduction */}
         <section>
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-            A Better Way to Find Toyota Parts
+            We Started With a Simple Problem
           </h2>
           <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
+            <p>Finding the right automotive part shouldn&apos;t feel like another project.</p>
             <p>
-              Finding the right Toyota part shouldn&apos;t mean spending hours searching
-              through unrelated listings, comparing incompatible components, or navigating
-              websites that don&apos;t understand what your vehicle needs.
+              But anyone who has searched for a specific Toyota component knows how
+              complicated it can become.
             </p>
             <p>
-              We believe finding the right part starts with knowing the vehicle,
-              understanding the application, and having access to the right options.
-            </p>
-            <p className="font-semibold text-neutral-900">
-              That&apos;s why DrivoraParts is focused on one brand: Toyota.
+              One website has the part. Another has a different option. Somewhere else, the
+              information doesn&apos;t quite match the vehicle you&apos;re working on.
             </p>
             <p>
-              We&apos;ve built our business around helping Toyota owners, mechanics,
-              enthusiasts, and repair professionals find the parts they need to keep their
-              vehicles running, restore them, or take their builds further.
+              And before long, you&apos;re spending more time searching than actually getting
+              things done.
+            </p>
+            <p>We saw an opportunity to make that experience better.</p>
+            <p>
+              Instead of trying to cover everything in the automotive world, we decided to
+              focus on one thing and do it with purpose.
             </p>
           </div>
+          <blockquote className="mt-6 border-l-2 border-accent pl-5 text-lg font-semibold leading-snug text-neutral-900 sm:text-xl">
+            Toyota.
+          </blockquote>
+          <p className="mt-6 leading-relaxed text-neutral-600">
+            That direction became the foundation of DrivoraParts.
+          </p>
         </section>
 
-        <Section title="One Brand. A Focused Selection.">
+        {/* Large storytelling section */}
+        <Section title="One Focus. Everything Toyota.">
           <p>
-            Toyota vehicles are built for different purposes, from everyday driving and
-            dependable transportation to demanding work, off-road adventures, and
-            performance projects.
+            Toyota vehicles are built for different roads, different lifestyles and
+            different ambitions.
           </p>
           <p>
-            Our catalog focuses on Toyota parts and components across available categories,
-            including:
+            From dependable daily drivers and hardworking trucks to performance-oriented
+            builds and long-term restoration projects, every Toyota has its own requirements.
           </p>
+          <p>We built DrivoraParts around that variety.</p>
+          <p>Our focus brings together Toyota automotive parts across essential categories:</p>
           <ul className="flex flex-wrap gap-2 pt-1">
             {categories.map((cat) => (
               <li key={cat.label}>
@@ -122,137 +119,162 @@ export default function AboutPage() {
               </li>
             ))}
           </ul>
-        </Section>
-
-        <Section title="Made for Toyota Owners">
-          <p>Every Toyota owner has a different reason for searching for parts.</p>
-          <p>A mechanic may need a replacement engine for a customer&apos;s vehicle.</p>
-          <p>
-            A truck owner may be looking for components to keep their Hilux or Tacoma
-            working.
-          </p>
-          <p>An enthusiast may be restoring a vehicle or upgrading its performance.</p>
-          <p>
-            And sometimes, you simply need the right replacement part to get back on the
-            road.
-          </p>
-          <p className="font-semibold text-neutral-900">
-            Whatever brings you here, DrivoraParts is built around that search.
-          </p>
-        </Section>
-
-        <Section title="Finding the Right Fit Matters">
-          <p>Not every part fits every Toyota.</p>
-          <p>
-            Model year, engine configuration, trim, drivetrain, and production
-            specifications can all make a difference.
-          </p>
-          <p>That&apos;s why accurate product information and fitment details matter.</p>
-          <p>
-            We aim to provide useful product descriptions, available specifications,
-            compatibility information, and clear product details so customers can make more
-            informed purchasing decisions.
-          </p>
-          <p>
-            When you&apos;re unsure about compatibility,{" "}
-            <Link href="/contact?topic=fitment" className={linkClass}>
-              our team is available to help
-            </Link>
-            .
-          </p>
-        </Section>
-
-        <Section title="Genuine, Replacement & Aftermarket Options">
-          <p>
-            Toyota owners may need different types of components depending on their vehicle
-            and requirements.
-          </p>
-          <p>Our selection may include:</p>
-          <ul className="list-disc space-y-1.5 pl-5">
-            {PRODUCT_TYPES.map((type) => (
-              <li key={type}>{type}</li>
-            ))}
-          </ul>
-          <p>
-            Each product listing identifies the product type and condition wherever that
-            information is available.
-          </p>
-          <p className="text-sm text-neutral-500">
-            DrivoraParts is an independent business and is not affiliated with, sponsored
-            by, or endorsed by Toyota Motor Corporation.
-          </p>
-        </Section>
-
-        <Section title="Serving Toyota Owners Across the United States">
-          <p>DrivoraParts focuses on customers within the United States.</p>
-          <p>
-            Our goal is to make sourcing Toyota parts more straightforward through a focused
-            catalog, accessible customer support, and clear purchasing information.
-          </p>
-          <p>
-            Depending on the product, orders may ship from DrivoraParts or our supplier
-            network.
-          </p>
-          <p>
-            Shipping availability, costs, and delivery arrangements depend on the product and
-            supported destination. See our{" "}
-            <Link href="/policies/shipping-policy" className={linkClass}>
-              Shipping Policy
-            </Link>
-            .
-          </p>
-        </Section>
-
-        <Section title="Our Commitment">
-          <p>We&apos;re continuously working to improve the DrivoraParts experience.</p>
-          <p>
-            That means refining our catalog, improving product information, making
-            vehicle-part discovery easier, and building a shopping experience centered on
-            Toyota owners.
-          </p>
-          <p>We believe specialization matters.</p>
-          <p className="font-semibold text-neutral-900">
-            Rather than trying to be everything for everyone, we&apos;re concentrating on
-            doing one thing better: helping people find the Toyota parts they need.
-          </p>
-        </Section>
-
-        <section className="border-t border-neutral-200 pt-10 sm:pt-14">
-          <p className="text-lg font-bold text-neutral-900">DrivoraParts</p>
-          <p className="mt-1 text-2xl font-bold tracking-tight text-accent sm:text-3xl">
-            Your Toyota. Your Parts. Your Road.
-          </p>
-          <p className="mt-4 leading-relaxed text-neutral-600">
-            Whether you&apos;re maintaining, repairing, restoring, or upgrading your Toyota,
-            we&apos;re here to help you find the components to move forward.
-          </p>
-
-          <div className="mt-8 rounded-xl border border-neutral-200 bg-neutral-50 p-5 text-sm leading-relaxed text-neutral-700">
-            <p className="font-semibold text-neutral-900">DrivoraParts</p>
-            <p>Operated by {COMPANY_LEGAL_NAME}</p>
-            <p className="mt-3">
-              Call/Text:{" "}
-              <a href={COMPANY_PHONE_TEL_HREF} className={`${linkClass} whitespace-nowrap`}>
-                {COMPANY_PHONE_DISPLAY}
-              </a>
-            </p>
-            <p>
-              Email:{" "}
-              <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`} className={linkClass}>
-                {COMPANY_SUPPORT_EMAIL}
-              </a>
+          <div className="space-y-1 pt-2">
+            <p>Different vehicles. Different applications.</p>
+            <p className="font-semibold text-neutral-900">
+              One place focused on helping you find the right Toyota parts.
             </p>
           </div>
+        </Section>
+
+        <Section title="Built Around the Way Toyota Owners Drive">
+          <p>A vehicle project rarely stops at one component.</p>
+          <p>
+            You might start with an engine replacement and eventually need supporting
+            drivetrain components.
+          </p>
+          <p>
+            You might be refreshing your suspension, upgrading your brakes or bringing an older
+            Toyota back to its original condition.
+          </p>
+          <p>Sometimes it&apos;s a performance upgrade.</p>
+          <p>Sometimes it&apos;s simply getting your vehicle back on the road.</p>
+          <p>
+            Whatever brings you here, we believe finding the right component should be a
+            straightforward part of the process.
+          </p>
+          <p className="font-semibold text-neutral-900">
+            That&apos;s why DrivoraParts is focused on Toyota applications, product discovery
+            and clearer fitment information.
+          </p>
+        </Section>
+
+        <Section title="For Every Toyota Journey">
+          <p>There&apos;s no single way to own a Toyota.</p>
+          <p>Some people depend on theirs every day.</p>
+          <p>Others spend their weekends upgrading, maintaining or restoring them.</p>
+          <p>
+            There are mechanics keeping vehicles moving, enthusiasts building something
+            different and owners who simply want to keep a trusted vehicle running for years
+            to come.
+          </p>
+          <p>We recognize those different needs.</p>
+          <p>
+            From everyday replacement components to carefully selected upgrades, our goal is
+            to make Toyota parts easier to discover.
+          </p>
+          <p className="font-semibold text-neutral-900">
+            Because every vehicle has a purpose, and every owner has a reason for choosing
+            theirs.
+          </p>
+        </Section>
+
+        <Section title="Genuine Parts. Quality Alternatives.">
+          <p>Not every replacement or upgrade follows the same path.</p>
+          <p>
+            Sometimes the priority is maintaining original factory specifications with genuine
+            Toyota parts.
+          </p>
+          <p>
+            Other times, a quality aftermarket component offers an alternative suited to a
+            particular application, budget or build direction.
+          </p>
+          <p>We recognize the importance of both.</p>
+          <p>
+            DrivoraParts brings together genuine Toyota parts and selected aftermarket
+            products, with clear product information to help customers understand what
+            they&apos;re purchasing.
+          </p>
+          <div className="space-y-1">
+            <p>Different solutions. One important standard:</p>
+            <p className="font-semibold text-neutral-900">Know what fits your vehicle.</p>
+          </div>
+        </Section>
+
+        <Section title="Fitment Matters.">
+          <p>A part can look right and still be wrong for the vehicle.</p>
+          <p>
+            Model years, generations, engine configurations, trim levels and other
+            specifications can make all the difference.
+          </p>
+          <p>That&apos;s why vehicle compatibility matters at DrivoraParts.</p>
+          <p>
+            We focus on clear application information and accurate product representation to
+            help Toyota owners identify components suited to their vehicles.
+          </p>
+          <p>We believe confidence starts with knowing what you&apos;re buying.</p>
+          <p className="font-semibold text-neutral-900">
+            And when you need an extra hand,{" "}
+            <Link href="/contact?topic=fitment" className={linkClass}>
+              our team is here to help
+            </Link>
+            .
+          </p>
+        </Section>
+
+        <Section title="Focused on Toyota. Always Moving Forward.">
+          <p>
+            DrivoraParts is built around a simple direction: make finding Toyota parts a better
+            experience.
+          </p>
+          <p>
+            We&apos;re continually working to improve product discovery, expand relevant
+            categories, refine fitment information and make it easier for customers to
+            navigate their options.
+          </p>
+          <p>Our focus isn&apos;t on being everything to everyone.</p>
+          <p>
+            It&apos;s on building a dependable destination for people who drive, maintain,
+            repair and upgrade Toyota vehicles.
+          </p>
+          <div className="space-y-1 font-semibold text-neutral-900">
+            <p>One category at a time.</p>
+            <p>One improvement at a time.</p>
+            <p>Always moving forward.</p>
+          </div>
+        </Section>
+
+        {/* Short, dramatic closing */}
+        <section className="border-t border-neutral-200 pt-10 sm:pt-14">
+          <h2 className="text-2xl font-bold uppercase tracking-tight text-neutral-900">
+            Every Toyota Has a Story.
+          </h2>
+          <div className="mt-5 space-y-1.5 leading-relaxed text-neutral-600">
+            <p>Some begin with a first drive.</p>
+            <p>Others with a project that&apos;s been years in the making.</p>
+            <p>Some start with a vehicle that simply needs the right replacement part.</p>
+          </div>
+          <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
+            <p>
+              Whatever the journey looks like, the right components help keep it moving.
+            </p>
+            <p>DrivoraParts was built around that idea.</p>
+            <p className="font-semibold text-neutral-900">
+              A clearer focus. A better parts-search experience. A destination dedicated to
+              Toyota.
+            </p>
+          </div>
+
+          <p className="mt-8 text-xl font-bold tracking-tight text-accent sm:text-2xl">
+            Your Toyota. Your Road. Our Commitment.
+          </p>
+
+          <p className="mt-8 text-lg font-bold text-neutral-900">DrivoraParts</p>
+          <p className="mt-1 leading-relaxed text-neutral-600">
+            Toyota Parts for the Road Ahead.
+          </p>
+
+          <p className="mt-8 text-xs leading-relaxed text-neutral-500">
+            DrivoraParts is an independent business and is not affiliated with, sponsored by,
+            or endorsed by Toyota Motor Corporation.
+          </p>
         </section>
       </div>
 
       <section className="border-t border-neutral-200 bg-neutral-50 px-6 py-14 text-center">
-        <p className="text-sm font-bold uppercase tracking-[0.18em] text-neutral-500">
-          Toyota Parts &amp; Engines. One Focus.
-        </p>
         <Link
           href={routes.all}
-          className="mt-6 inline-block transform rounded-full bg-accent px-10 py-4 font-semibold text-white transition hover:scale-105 hover:bg-accent-active"
+          className="inline-block transform rounded-full bg-accent px-10 py-4 font-semibold uppercase tracking-wide text-white transition hover:scale-105 hover:bg-accent-active"
         >
           Explore Toyota Parts
         </Link>
