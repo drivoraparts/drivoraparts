@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getProductById } from "@/lib/inventory";
+import { isGenuineInquiryOnly } from "@/lib/catalog/toyota-departments";
 import CallTextActions from "@/components/contact/CallTextActions";
 import ContactForm from "@/components/contact/ContactForm";
 import CompanyAddress from "@/components/content/CompanyAddress";
@@ -21,11 +23,20 @@ const CONTACT_TOPICS = ["general", "order", "fitment", "returns", "business"] as
 export default async function ContactPage({
   searchParams,
 }: {
-  searchParams: Promise<{ topic?: string }>;
+  searchParams: Promise<{ topic?: string; listing?: string }>;
 }) {
   // "Check my VIN" on the Fitment Guarantee opens the form on the fitment topic.
-  const { topic } = await searchParams;
+  const { topic, listing } = await searchParams;
   const defaultTopic = CONTACT_TOPICS.find((t) => t === topic) ?? "general";
+  // "Ask about availability" on a Genuine listing awaiting confirmation. The
+  // message is built here from the listing id -- never taken from the URL.
+  const inquiryProduct = listing ? getProductById(Number(listing)) : undefined;
+  const defaultMessage =
+    inquiryProduct && isGenuineInquiryOnly(inquiryProduct)
+      ? `I'd like to check availability and price for listing #${inquiryProduct.id}, ${inquiryProduct.name}${
+          inquiryProduct.partNumber ? ` (Toyota part number ${inquiryProduct.partNumber})` : ""
+        }. My vehicle (year, model) or VIN: `
+      : "";
   return (
     <main className="mx-auto max-w-4xl bg-white px-6 py-12 text-neutral-900">
       <h1 className="mb-2 text-4xl font-bold">Contact Support</h1>
@@ -46,7 +57,7 @@ export default async function ContactPage({
         <CallTextActions variant="light" />
       </section>
 
-      <ContactForm defaultTopic={defaultTopic} />
+      <ContactForm defaultTopic={defaultTopic} defaultMessage={defaultMessage} />
 
       <div className="mt-8 space-y-6 text-neutral-600">
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">

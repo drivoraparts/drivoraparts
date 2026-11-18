@@ -39,7 +39,7 @@ const RULES: DepartmentRule[] = [
     key: "genuine",
     name: "Toyota Genuine Parts",
     description: "Verified Genuine Toyota parts, with Toyota part numbers.",
-    match: (product) => isVerifiedToyotaGenuine(product) && !isHeldListing(product),
+    match: (product) => isVerifiedToyotaGenuine(product),
   },
   {
     key: "engines",
@@ -128,7 +128,23 @@ export function getVerifiedGenuineProducts(limit = 12): Product[] {
     .slice(0, limit);
 }
 
+/**
+ * Everything the Toyota Genuine section lists: verified listings, buyable or
+ * held. Held ones (stock and price not yet confirmed) are shown as "Available
+ * to order" with an availability inquiry instead of Add to Cart -- see
+ * isGenuineInquiryOnly. Buyable listings first.
+ */
+export function getGenuineSectionProducts(): Product[] {
+  const verified = getAllProducts().filter((p) => isVerifiedToyotaGenuine(p));
+  return [...verified.filter((p) => !isHeldListing(p)), ...verified.filter((p) => isHeldListing(p))];
+}
+
+/** A verified Genuine listing whose stock and price are still to be confirmed. */
+export function isGenuineInquiryOnly(product: Product): boolean {
+  return isVerifiedToyotaGenuine(product) && isHeldListing(product);
+}
+
 /** Whether the Toyota Genuine section has anything to show. */
 export function hasGenuineSection(): boolean {
-  return getVerifiedGenuineProducts(1).length > 0;
+  return getGenuineSectionProducts().length > 0;
 }

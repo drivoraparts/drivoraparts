@@ -17,11 +17,14 @@ const inputClass =
 
 type ContactFormProps = {
   defaultTopic?: (typeof TOPICS)[number]["value"];
+  /** Prefilled message, e.g. an availability inquiry built on the server from a listing id. */
+  defaultMessage?: string;
   requireOrderId?: boolean;
 };
 
 export default function ContactForm({
   defaultTopic = "general",
+  defaultMessage = "",
   requireOrderId = false,
 }: ContactFormProps = {}) {
   const [name, setName] = useState("");
@@ -29,7 +32,7 @@ export default function ContactForm({
   const [topic, setTopic] =
     useState<(typeof TOPICS)[number]["value"]>(defaultTopic);
   const [orderId, setOrderId] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(defaultMessage);
   const [submitting, setSubmitting] = useState(false);
   const [sent, setSent] = useState(false);
 

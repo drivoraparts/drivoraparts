@@ -140,6 +140,7 @@ export default function ProductTemplate({
   fitmentEngine,
   productInterest = null,
   partType = null,
+  inquiryHref = null,
 }: {
   product: Product;
   catalogMeta: ProductCatalogMeta;
@@ -162,7 +163,14 @@ export default function ProductTemplate({
    * app/product/[id]/page.tsx.
    */
   partType?: string | null;
+  /**
+   * Set for a verified Genuine listing whose stock and price are not yet
+   * confirmed: the buy box becomes an availability inquiry -- no price, no
+   * quantity, no Add to Cart, no sticky bar, no guarantee badge.
+   */
+  inquiryHref?: string | null;
 }) {
+  const inquiryOnly = Boolean(inquiryHref);
   const [quantity, setQuantity] = useState(1);
   const ctaRef = useRef<HTMLDivElement>(null);
 
@@ -439,6 +447,15 @@ export default function ProductTemplate({
           ) : null}
 
           {/* Price and availability. */}
+          {inquiryOnly ? (
+            <div className="mt-5 border-t border-neutral-200 pt-5">
+              <p className="text-[22px] font-bold leading-tight text-neutral-900">Available to order</p>
+              <p className="mt-2 text-[13px] leading-relaxed text-muted">
+                Price and availability are confirmed when you ask. We reply within one business
+                day with the price, lead time and shipping for your address.
+              </p>
+            </div>
+          ) : (
           <div className="mt-5 border-t border-neutral-200 pt-5">
             <ProductPrice
               price={product.price}
@@ -468,6 +485,7 @@ export default function ProductTemplate({
               more items. Applied automatically at checkout.
             </p>
           </div>
+          )}
 
           <div className="mt-5 border-t border-neutral-200 pt-5">
             <FitmentSummary fitment={fitment} />
@@ -478,12 +496,29 @@ export default function ProductTemplate({
             vehicle it fits. Universal parts and swap packages (whose fit
             depends on fabrication) are outside the guarantee.
           */}
-          {guaranteeApplies ? (
+          {guaranteeApplies && !inquiryOnly ? (
             <div className="mt-6">
               <FitmentGuaranteeBadge productId={product.id} />
             </div>
           ) : null}
 
+          {inquiryOnly ? (
+            <div className="mt-6 space-y-3">
+              <a
+                href={inquiryHref ?? "/contact"}
+                className="inline-flex h-12 w-full items-center justify-center rounded-[3px] bg-accent px-5 text-sm font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-accent-hover"
+              >
+                Ask about availability
+              </a>
+              <a
+                href={COMPANY_PHONE_TEL_HREF}
+                className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-[3px] border border-neutral-900 text-sm font-semibold text-neutral-900 hover:bg-neutral-900 hover:text-white"
+              >
+                <TrustIcon name="phone" size={16} />
+                Call {COMPANY_PHONE_DISPLAY}
+              </a>
+            </div>
+          ) : (
           <div ref={ctaRef} className={guaranteeApplies ? "mt-3 space-y-3" : "mt-6 space-y-3"}>
             <div className="flex items-stretch gap-3">
               <QuantityStepper value={quantity} onChange={setQuantity} />
@@ -549,6 +584,7 @@ export default function ProductTemplate({
               </li>
             </ul>
           </div>
+          )}
 
           <div className="mt-6">
             <PurchaseFacts
@@ -598,12 +634,14 @@ export default function ProductTemplate({
 
       <GuidesPreviewSection />
 
-      <StickyPurchaseBar
-        ctaRef={ctaRef}
-        product={cartProduct}
-        quantity={quantity}
-        inStock={inStock}
-      />
+      {inquiryOnly ? null : (
+        <StickyPurchaseBar
+          ctaRef={ctaRef}
+          product={cartProduct}
+          quantity={quantity}
+          inStock={inStock}
+        />
+      )}
     </div>
   );
 }

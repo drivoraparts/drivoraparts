@@ -13,6 +13,7 @@ import {
   isVerifiedToyotaGenuine,
 } from "@/lib/inventory";
 import UnavailableListing from "@/components/product/UnavailableListing";
+import { isGenuineInquiryOnly } from "@/lib/catalog/toyota-departments";
 import { CHECKOUT_TEST_PRODUCT_ID } from "@/lib/inventory/pricing";
 import { ARCHIVED_PRODUCT_IDS } from "@/lib/inventory/products";
 import { getProductThumbnail } from "@/lib/inventory/media";
@@ -200,6 +201,11 @@ export default async function ProductPage({ params }: PageProps) {
         fitmentYears={inventoryProduct?.fitmentYears}
         fitmentEngine={inventoryProduct?.fitmentEngine}
         partType={inventoryProduct ? partTypeLabel(inventoryProduct) : null}
+        inquiryHref={
+          inventoryProduct && isGenuineInquiryOnly(inventoryProduct)
+            ? `/contact?topic=fitment&listing=${inventoryProduct.id}`
+            : null
+        }
       />
     </>
   );
