@@ -28,6 +28,11 @@ const POLICY_SEO: Record<string, { title: string; description: string }> = {
     description:
       "30-day return window, condition requirements, and refund processing for DrivoraParts performance parts orders.",
   },
+  "/policies/fitment-guarantee": {
+    title: "Fitment Guarantee",
+    description:
+      "DrivoraParts Fitment Guarantee: if a part doesn't fit the Toyota its listing names, we refund the full price, pay return shipping and waive restocking fees.",
+  },
   "/policies/buyer-protection": {
     title: "Buyer Protection",
     description:

@@ -6,7 +6,10 @@ export type AnalyticsEventName =
   // Search analytics. Observation only -- these are written after a search has
   // already returned and never participate in ranking.
   | "search"
-  | "search_result_click";
+  | "search_result_click"
+  // Fitment Guarantee badge: opened, and the VIN-check link followed.
+  | "fitment_guarantee_open"
+  | "fitment_vin_check_click";
 
 export type AnalyticsEvent = {
   id: string;

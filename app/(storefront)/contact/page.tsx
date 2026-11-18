@@ -16,7 +16,16 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/contact",
 });
 
-export default function ContactPage() {
+const CONTACT_TOPICS = ["general", "order", "fitment", "returns", "business"] as const;
+
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ topic?: string }>;
+}) {
+  // "Check my VIN" on the Fitment Guarantee opens the form on the fitment topic.
+  const { topic } = await searchParams;
+  const defaultTopic = CONTACT_TOPICS.find((t) => t === topic) ?? "general";
   return (
     <main className="mx-auto max-w-4xl bg-white px-6 py-12 text-neutral-900">
       <h1 className="mb-2 text-4xl font-bold">Contact Support</h1>
@@ -37,7 +46,7 @@ export default function ContactPage() {
         <CallTextActions variant="light" />
       </section>
 
-      <ContactForm />
+      <ContactForm defaultTopic={defaultTopic} />
 
       <div className="mt-8 space-y-6 text-neutral-600">
         <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">

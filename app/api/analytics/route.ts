@@ -12,6 +12,8 @@ const VALID_EVENTS: AnalyticsEventName[] = [
   "order_completed",
   "search",
   "search_result_click",
+  "fitment_guarantee_open",
+  "fitment_vin_check_click",
 ];
 
 export async function GET() {
