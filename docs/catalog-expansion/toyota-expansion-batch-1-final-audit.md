@@ -27,7 +27,7 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 | 17801-0P051 | Engine Air Filter 17801-0P051 | 2024–2025 Toyota Tacoma (2.4L turbo) | [OEMGenuineParts.com $19.01](https://www.oemgenuineparts.com/oem-parts/toyota-air-filter-178010p051) | **$18.09** | high |
 | 17801-38051 | Engine Air Filter 17801-38051 | 2010–2024 Toyota 4Runner (4.0L V6) | [AutoPartsPrime $19.63](https://www.autopartsprime.com/p/2022-toyota-4runner-air-filter) | **$18.69** | high |
 | 17801-F0020 | Engine Air Filter 17801-F0020 | 2020–2024 Toyota Corolla (2.0L / 1.8L Hybrid); 2018–2024 Toyota Camry (2.5L Hybrid) | [Grieco Toyota $18.90](https://parts.griecotoyota.com/oem-parts/toyota-air-filter-17801f0020) | **$17.99** | high |
-| 04152-YZZA1 | Oil Filter Element 04152-YZZA1 | 2018–2024 Toyota Camry (2.5L / 3.5L); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6) | [ToyotaPartsDeal $4.68](https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html) | **$4.49** | medium |
+| 04152-YZZA1 | Oil Filter Element 04152-YZZA1 | 2018–2024 Toyota Camry (3.5L V6); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6) | [ToyotaPartsDeal $4.68](https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html) | **$4.49** | medium |
 | 04152-YZZA6 | Oil Filter Element 04152-YZZA6 | 2009–2018 Toyota Corolla (1.8L) | [Toyota of San Diego $4.52](https://parts.toyotasandiego.com/parts/toyota-oil-filter-4152yzza6) | **$4.30** | medium |
 | 90915-YZZD3 | Spin-On Oil Filter 90915-YZZD3 | 2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2010 Toyota Tundra (4.0L V6 / 4.7L V8) | [AutoPartsPrime $4.55](https://www.autopartsprime.com/toyota/filter-oil/oe-90915yzzd3) | **$4.39** | high |
 | 90915-YZZN3 | Spin-On Oil Filter 90915-YZZN3 | 2022–2025 Toyota Tundra (3.4L twin-turbo V6); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid) | [Lakeland Toyota $4.68](https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-oil-filter-90915yzzn3) | **$4.49** | medium |
@@ -60,7 +60,7 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 | 04465-33480 | Genuine Toyota Front Disc Brake Pad Set 04465-33480 — Camry | Genuine Toyota front disc brake pad set 04465-33480 for the Toyota Camry. The set covers one front axle, both sides. Overlaps 04465-0E060; resolve which is current. |
 | 90919-01263 | Genuine Toyota Iridium Spark Plug 90919-01263 — Tacoma | Genuine Toyota iridium spark plug 90919-01263 for the Toyota Tacoma. It is the plug specified for this engine's heat range and gap, sold individually. Conflicts with 90919-01287. |
 | 90919-01275 | Genuine Toyota Iridium Spark Plug 90919-01275 — Corolla | Genuine Toyota iridium spark plug 90919-01275 for the Toyota Corolla. It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-01253. Retailer-stated 1.8L fitment only. |
-| 90915-YZZN1 | Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — Corolla | Genuine Toyota spin-on oil filter 90915-YZZN1 for the Toyota Corolla. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10009. Supersession inferred from |
+| 90915-YZZN1 | Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — Corolla and RAV4 | Genuine Toyota spin-on oil filter 90915-YZZN1 for the Toyota Corolla and RAV4. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10009; 90915-YZZF2. Spin |
 | 04152-YZZA5 | Genuine Toyota Oil Filter Element 04152-YZZA5 — Tundra | Genuine Toyota oil filter element 04152-YZZA5 for the Toyota Tundra. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not  |
 | 87139-YZZ08 | Genuine Toyota Cabin Air Filter 87139-YZZ08 — Camry | Genuine Toyota cabin air filter 87139-YZZ08 for the Toyota Camry. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty sme |
 | 87139-50100 | Genuine Toyota Cabin Air Filter 87139-50100 — 4Runner | Genuine Toyota cabin air filter 87139-50100 for the Toyota 4Runner. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty s |
@@ -148,6 +148,7 @@ All 50 records lack a legitimate, licensed, matching photograph. No Toyota or de
 - 04465-0C020 narrowed to 2007-2017 Tundra and 2008-2017 Sequoia (2018 listed by some dealers only).
 - Alternator 27060-F0010: the lowest listing ($239.74) was stale and is excluded; benchmark is now $262.44.
 - 43512-06200 confirmed sold individually (two per axle).
+- 04152-YZZA1 (cartridge) narrowed to the 3.5L V6 (2GR-FKS). The 2.5L A25A-FKS takes spin-on **90915-YZZN1** (formerly 90915-10009 / 90915-YZZF2): confirmed for the 2019-2024 RAV4 2.5L gas and the US-built 2020 Camry 2.5L. The RAV4 and Camry 2.5L kits now use 90915-YZZN1 and stay in research.
 
 ## Limits of this audit
 

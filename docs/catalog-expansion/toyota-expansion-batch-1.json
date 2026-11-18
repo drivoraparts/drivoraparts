@@ -772,14 +772,14 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2018–2024 Toyota Camry (2.5L / 3.5L); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitment": "2018–2024 Toyota Camry (3.5L V6); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)",
       "fitmentApplications": [
         {
           "yearFrom": 2018,
           "yearTo": 2024,
           "make": "Toyota",
           "model": "Camry",
-          "submodel": "2.5L / 3.5L"
+          "submodel": "3.5L V6"
         },
         {
           "yearFrom": 2017,
@@ -796,8 +796,8 @@
           "submodel": "3.5L V6"
         }
       ],
-      "engines": "A25A-FKS; 2GR-FKS",
-      "description": "Genuine Toyota oil filter element 04152-YZZA1 for the Toyota Camry, Highlander and Tacoma. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. Cartridge element; replace the housing O-ring with each change.\n\nSpecifications\n\nPart number: 04152-YZZA1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; 2GR-FKS\nFitment: 2018–2024 Toyota Camry (2.5L / 3.5L); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "engines": "2GR-FKS",
+      "description": "Genuine Toyota oil filter element 04152-YZZA1 for the Toyota Camry, Highlander and Tacoma. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. Cartridge element; replace the housing O-ring with each change. Not claimed for the 2.5L A25A-FKS: dealer catalogs list spin-on 90915-YZZN1 for the 2019+ RAV4 2.5L and the US-built 2020 Camry 2.5L.\n\nSpecifications\n\nPart number: 04152-YZZA1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2018–2024 Toyota Camry (3.5L V6); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -3683,16 +3683,16 @@
     },
     {
       "status": "research_pending",
-      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — Corolla",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — Corolla and RAV4",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90915-YZZN1",
-      "supersedes": "90915-10009",
+      "supersedes": "90915-10009; 90915-YZZF2",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2020–2024 Toyota Corolla (2.0L)",
+      "fitment": "2020–2024 Toyota Corolla (2.0L); 2019–2024 Toyota RAV4 (2.5L gas, non-hybrid)",
       "fitmentApplications": [
         {
           "yearFrom": 2020,
@@ -3700,10 +3700,17 @@
           "make": "Toyota",
           "model": "Corolla",
           "submodel": "2.0L"
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L gas, non-hybrid"
         }
       ],
-      "engines": "M20A-FKS",
-      "description": "Genuine Toyota spin-on oil filter 90915-YZZN1 for the Toyota Corolla. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10009. Supersession inferred from one dealer page.\n\nSpecifications\n\nPart number: 90915-YZZN1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: M20A-FKS\nFitment: 2020–2024 Toyota Corolla (2.0L)\n\nConfirm fitment with your VIN before ordering.",
+      "engines": "M20A-FKS; A25A-FKS",
+      "description": "Genuine Toyota spin-on oil filter 90915-YZZN1 for the Toyota Corolla and RAV4. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10009; 90915-YZZF2. Spin-on canister filter. RAV4: Toyota of Glendale lists 90915-YZZN1 for the 2019+ gas 2.5L, and ToyotaPartsDeal lists 90915-10009 (superseded by 90915-YZZN1) for the 2021 RAV4. Camry 2.5L: ToyotaPartsDeal lists it for the US-built 2020 Camry 2.5L only; Japan-built split unresolved, not claimed. Only one attributed competitor price.\n\nSpecifications\n\nPart number: 90915-YZZN1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: M20A-FKS; A25A-FKS\nFitment: 2020–2024 Toyota Corolla (2.0L); 2019–2024 Toyota RAV4 (2.5L gas, non-hybrid)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "insufficient",
@@ -3746,7 +3753,11 @@
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
       "fitmentConfidence": "low",
       "sources": [
-        "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-oil_filter.html"
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-oil_filter.html",
+        "https://www.toyotapartsdeal.com/oem-2021-toyota-rav4-oil_filter.html",
+        "https://www.toyotaofglendale.com/service/service-parts-tips/rav4-oil-type-capacity/",
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-camry-oil_filter.html",
+        "https://autoparts.toyota.com/products/product/filter-s-a-oil-90915yzzn1"
       ],
       "blocking": [
         "approved selling price",

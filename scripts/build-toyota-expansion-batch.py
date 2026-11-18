@@ -69,8 +69,8 @@ PARTS = [
          notes="",
          sources=[f"{SP}/toyota-2018-2024-toyota-air-filter-17801f0020", f"{OL}/toyota-air-filter-17801f0020"]),
     dict(pn="04152-YZZA1", kind="oil_filter", name="Oil Filter Element", group="commercial_pending", conf="medium",
-         apps=[app(2018, 2024, "Camry", "2.5L / 3.5L"), app(2017, 2023, "Highlander", "3.5L V6"), app(2016, 2023, "Tacoma", "3.5L V6")], engines="A25A-FKS; 2GR-FKS", supersedes="",
-         notes="Cartridge element; replace the housing O-ring with each change.",
+         apps=[app(2018, 2024, "Camry", "3.5L V6"), app(2017, 2023, "Highlander", "3.5L V6"), app(2016, 2023, "Tacoma", "3.5L V6")], engines="2GR-FKS", supersedes="",
+         notes="Cartridge element; replace the housing O-ring with each change. Not claimed for the 2.5L A25A-FKS: dealer catalogs list spin-on 90915-YZZN1 for the 2019+ RAV4 2.5L and the US-built 2020 Camry 2.5L.",
          sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza1.html", f"{SP}/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1", f"{TA}/replaceable-element-oil-filter-04152yzza1"]),
     dict(pn="04152-YZZA6", kind="oil_filter", name="Oil Filter Element", group="commercial_pending", conf="medium",
          apps=[app(2009, 2018, "Corolla", "1.8L")], engines="2ZR-FE", supersedes="04152-37010",
@@ -185,8 +185,9 @@ PARTS = [
          apps=[app(2009, 2019, "Corolla", "1.8L")], engines="2ZR-FE", supersedes="90919-01253",
          notes="Retailer-stated 1.8L fitment only.", sources=[f"{TA}/plug-spark-9091901275", "https://parts.northparktoyota.com/oem-parts/toyota-spark-plug-9091901275"]),
     dict(pn="90915-YZZN1", kind="oil_filter_spin", name="Spin-On Oil Filter", group="research_pending", conf="low",
-         apps=[app(2020, 2024, "Corolla", "2.0L")], engines="M20A-FKS", supersedes="90915-10009",
-         notes="Supersession inferred from one dealer page.", sources=[f"{TD}/oem-2020-toyota-corolla-oil_filter.html"]),
+         apps=[app(2020, 2024, "Corolla", "2.0L"), app(2019, 2024, "RAV4", "2.5L gas, non-hybrid")], engines="M20A-FKS; A25A-FKS", supersedes="90915-10009; 90915-YZZF2",
+         notes="Spin-on canister filter. RAV4: Toyota of Glendale lists 90915-YZZN1 for the 2019+ gas 2.5L, and ToyotaPartsDeal lists 90915-10009 (superseded by 90915-YZZN1) for the 2021 RAV4. Camry 2.5L: ToyotaPartsDeal lists it for the US-built 2020 Camry 2.5L only; Japan-built split unresolved, not claimed. Only one attributed competitor price.",
+         sources=[f"{TD}/oem-2020-toyota-corolla-oil_filter.html", f"{TD}/oem-2021-toyota-rav4-oil_filter.html", "https://www.toyotaofglendale.com/service/service-parts-tips/rav4-oil-type-capacity/", f"{TD}/oem-2020-toyota-camry-oil_filter.html", "https://autoparts.toyota.com/products/product/filter-s-a-oil-90915yzzn1"]),
     dict(pn="04152-YZZA5", kind="oil_filter", name="Oil Filter Element", group="research_pending", conf="low",
          apps=[app(2010, 2015, "Tundra")], engines="1UR-FE / 3UR-FE (unresolved)", supersedes="04152-31050; 04152-31060; 04152-38010",
          notes="Dealer catalogs conflict on engine; ToyotaPartsNow lists 2010-2024 4Runner, 2007-2011 Camry, 2011-2014 Tundra, 2006-2008 RAV4.", sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza5.html", f"{OL}/toyota-oil-filter-4152yzza5"]),
@@ -535,7 +536,8 @@ md.append("- 90915-YZZN3 fits the 2022+ Tundra and 2023+ Sequoia 3.4L, not the T
 md.append("- 87139-0R030 narrowed to the 2019-2024 Corolla; 87139-0E040 narrowed to the 2020-2024 Camry (RAV4 and 2018-2019 Camry are split with 87139-58010).")
 md.append("- 04465-0C020 narrowed to 2007-2017 Tundra and 2008-2017 Sequoia (2018 listed by some dealers only).")
 md.append("- Alternator 27060-F0010: the lowest listing ($239.74) was stale and is excluded; benchmark is now $262.44.")
-md.append("- 43512-06200 confirmed sold individually (two per axle).\n")
+md.append("- 43512-06200 confirmed sold individually (two per axle).")
+md.append("- 04152-YZZA1 (cartridge) narrowed to the 3.5L V6 (2GR-FKS). The 2.5L A25A-FKS takes spin-on **90915-YZZN1** (formerly 90915-10009 / 90915-YZZF2): confirmed for the 2019-2024 RAV4 2.5L gas and the US-built 2020 Camry 2.5L. The RAV4 and Camry 2.5L kits now use 90915-YZZN1 and stay in research.\n")
 md.append("## Limits of this audit\n")
 md.append("- Prices are from dealer and retailer pages as indexed by search on 2026-11-18; live pages could not be opened from this environment, so each price must be re-confirmed at approval time.")
 md.append("- Fitment comes from Toyota-dealer catalogs, not a VIN-level Toyota EPC lookup; restrictions shown above should be checked by VIN on first orders.")
