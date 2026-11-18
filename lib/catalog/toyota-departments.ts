@@ -85,7 +85,7 @@ const RULES: DepartmentRule[] = [
 ];
 
 function hrefFor(rule: DepartmentRule): string {
-  if (rule.key === "genuine") return `${routes.all}?q=${encodeURIComponent("Toyota Genuine")}`;
+  if (rule.key === "genuine") return routes.genuine;
   const cats = rule.categories ?? [];
   return cats.length === 1
     ? routes.category(cats[0])
