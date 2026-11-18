@@ -27,7 +27,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const DIR = path.join(ROOT, "docs/catalog-expansion");
+// TOYOTA_EXPANSION_DIR lets scripts/test-toyota-fitment-validator.mjs run the
+// checks against mutated copies; it is never set in normal use.
+const DIR = process.env.TOYOTA_EXPANSION_DIR || path.join(ROOT, "docs/catalog-expansion");
 const GROUPS = new Set(["ready", "commercial_pending", "research_pending"]);
 const US_MODELS = new Set([
   "4Runner", "86", "Avalon", "bZ4X", "C-HR", "Camry", "Corolla", "Corolla Cross", "Crown",
@@ -111,6 +113,155 @@ for (const file of files) {
       if (!img || !fs.existsSync(img)) problems.push(`${at}: ready without an image file under public/`);
     }
   });
+}
+
+// ---------------------------------------------------------------------------
+// Fitment evidence (scripts/toyota_fitment_evidence.py). Passing these checks
+// means the record carries the documented evidence the standard requires --
+// it is NOT proof of fitment. Nothing here performs or implies a VIN lookup.
+// ---------------------------------------------------------------------------
+const CLAIMED = new Set(["verified", "vin_dependent"]);
+const NOT_LISTED = new Set(["unresolved", "removed"]);
+const CATALOG_KINDS = new Set(["toyota_official", "dealer_catalog"]); // what can establish fitment
+const EVIDENCE_KINDS = new Set([...CATALOG_KINDS, "dealer_catalog_ca", "service_doc", "retailer", "secondary"]);
+// US model-year availability.
+const MODEL_YEARS = {
+  "4Runner": [[1984, 2025]], Avalon: [[1995, 2022]], Camry: [[1983, 2025]], Corolla: [[1968, 2025]],
+  "Corolla Cross": [[2022, 2025]], "FJ Cruiser": [[2007, 2014]], Highlander: [[2001, 2025]], RAV4: [[1996, 2025]],
+  Sequoia: [[2001, 2025]], Sienna: [[1998, 2025]], Tacoma: [[1995, 2025]], Tundra: [[2000, 2025]],
+  Venza: [[2009, 2015], [2021, 2024]], Prius: [[2001, 2025]], "C-HR": [[2018, 2022]], Matrix: [[2003, 2013]],
+};
+// US model years in which each engine was offered in each model.
+const ENGINE_YEARS = {
+  "Camry|A25A-FKS": [2018, 2024], "Camry|A25A-FXS": [2018, 2024], "Camry|2GR-FKS": [2018, 2024],
+  "Camry|2GR-FE": [2007, 2017], "Camry|2AR-FE": [2010, 2017],
+  "RAV4|A25A-FKS": [2019, 2025], "RAV4|A25A-FXS": [2019, 2025], "RAV4|2AR-FE": [2009, 2018], "RAV4|2GR-FE": [2006, 2012],
+  "Highlander|2GR-FKS": [2017, 2022], "Highlander|2GR-FE": [2008, 2016], "Highlander|A25A-FXS": [2020, 2025],
+  "Highlander|T24A-FTS": [2023, 2025],
+  "Tacoma|2GR-FKS": [2016, 2023], "Tacoma|2TR-FE": [2005, 2023], "Tacoma|1GR-FE": [2005, 2015], "Tacoma|T24A-FTS": [2024, 2025],
+  "4Runner|1GR-FE": [2003, 2024], "4Runner|2UZ-FE": [2003, 2009],
+  "Tundra|2UZ-FE": [2000, 2009], "Tundra|1GR-FE": [2005, 2014], "Tundra|3UR-FE": [2007, 2021], "Tundra|1UR-FE": [2010, 2021],
+  "Tundra|V35A-FTS": [2022, 2025],
+  "Sequoia|3UR-FE": [2008, 2022], "Sequoia|V35A-FTS": [2023, 2025],
+  "Corolla|2ZR-FE": [2009, 2019], "Corolla|2ZR-FAE": [2014, 2022], "Corolla|2ZR-FXE": [2020, 2025], "Corolla|M20A-FKS": [2019, 2025],
+  "Corolla Cross|M20A-FKS": [2022, 2025], "Sienna|2GR-FKS": [2017, 2020], "Sienna|2GR-FE": [2007, 2016],
+  "FJ Cruiser|1GR-FE": [2007, 2014],
+};
+const ENGINE_CODE = /\b[0-9A-Z]{2,5}-[A-Z]{2,4}\b/g;
+const FAMILY = { oil_filter: "oil_filter", oil_filter_spin: "oil_filter" };
+const VIN_CLAIM = /\bVIN[- ](?:verified|confirmed|based|checked)\b|\b(?:verified|confirmed) (?:by|with|against) (?:the )?VIN\b/i;
+
+const allRecords = [];
+for (const file of files) {
+  for (const r of JSON.parse(fs.readFileSync(path.join(DIR, file), "utf8")).records) allRecords.push({ file, r });
+}
+const byNumber = new Map(allRecords.filter(({ r }) => r.partNumber).map(({ r }) => [r.partNumber.toUpperCase(), r]));
+const fitCounts = { verified: 0, vin_dependent: 0, unresolved: 0, removed: 0 };
+
+for (const { file, r } of allRecords) {
+  const at = `${file} ${r.partNumber || r.name}`;
+  const fv = r.fitmentVerification;
+  if (!fv || !Array.isArray(fv.applications)) { problems.push(`${at}: no fitment verification block`); continue; }
+  const isEngine = r.partKind === "engine";
+
+  // VIN-level confirmation is never claimed without an actual catalog lookup.
+  const lookups = Array.isArray(fv.vinLookups) ? fv.vinLookups.filter((l) => l?.catalog && l?.date && l?.vinRef) : [];
+  if ((r.vinLookupPerformed || fv.vinLookupPerformed) && !lookups.length) problems.push(`${at}: claims a VIN lookup without a recorded catalog lookup`);
+  if (VIN_CLAIM.test(r.description ?? "") && !lookups.length) problems.push(`${at}: description claims VIN-level confirmation`);
+
+  const claimed = fv.applications.filter((a) => CLAIMED.has(a.status));
+  for (const a of fv.applications) {
+    const where = `${at} ${a.yearFrom}-${a.yearTo} ${a.model}${a.engine ? ` ${a.engine}` : ""}`;
+    if (!CLAIMED.has(a.status) && !NOT_LISTED.has(a.status)) { problems.push(`${where}: unknown status "${a.status}"`); continue; }
+    fitCounts[a.status] += 1;
+    for (const e of a.evidence ?? []) {
+      if (!EVIDENCE_KINDS.has(e.kind) || !/^https:\/\//.test(e.url ?? "") || !e.source) problems.push(`${where}: evidence without kind, source or https URL`);
+    }
+    if (NOT_LISTED.has(a.status) && !(a.reason ?? "").trim()) problems.push(`${where}: ${a.status} application without an exact reason`);
+    if (!CLAIMED.has(a.status)) continue;
+
+    // Evidence: part numbers need a Toyota or US Toyota-dealer catalog source.
+    if (!isEngine && !(a.evidence ?? []).some((e) => CATALOG_KINDS.has(e.kind))) {
+      problems.push(`${where}: listed without Toyota or US dealer catalog evidence (retailer / secondary / Canadian sources cannot establish fitment)`);
+    }
+    // Restrictions only the VIN resolves must be marked VIN-dependent and stated.
+    if ((a.assemblyOrigin || a.productionDates) && a.status !== "vin_dependent") problems.push(`${where}: production-origin or production-date restriction marked "${a.status}" -- must be vin_dependent`);
+    if (a.status === "vin_dependent" && !(a.restriction || a.assemblyOrigin || a.productionDates)) problems.push(`${where}: VIN-dependent without the restriction that makes it so`);
+    if (isEngine && a.status !== "vin_dependent") problems.push(`${where}: engine applications are always VIN-dependent`);
+
+    // Model years must exist in the US market, and the engine in that model.
+    const ranges = MODEL_YEARS[a.model];
+    if (ranges && !ranges.some(([f, t]) => a.yearFrom >= f && a.yearTo <= t)) problems.push(`${where}: years outside the US ${a.model} model years`);
+    for (const code of new Set((a.engine ?? "").match(ENGINE_CODE) ?? [])) {
+      const span = ENGINE_YEARS[`${a.model}|${code}`];
+      if (!span) problems.push(`${where}: ${code} is not a recorded US ${a.model} engine (add it to ENGINE_YEARS only after checking)`);
+      else if (a.yearFrom < span[0] || a.yearTo > span[1]) problems.push(`${where}: ${code} was offered in the US ${a.model} only ${span[0]}-${span[1]}`);
+    }
+  }
+
+  // The listed fitment is exactly the claimed applications -- nothing more.
+  const key = (x) => `${x.model}|${x.yearFrom}|${x.yearTo}`;
+  const listed = (r.fitmentApplications ?? []).map(key).sort().join(",");
+  if (listed !== claimed.map(key).sort().join(",")) problems.push(`${at}: listed fitment does not match the verified / VIN-dependent applications`);
+
+  if (claimed.some((a) => a.status === "vin_dependent")) {
+    if (!r.vinDependent) problems.push(`${at}: has VIN-dependent applications but vinDependent is not set`);
+    if (r.universalFitment) problems.push(`${at}: VIN-dependent applications cannot be marked universal fitment`);
+    if (!/\bVIN\b/.test(r.description ?? "")) problems.push(`${at}: VIN-dependent listing does not tell the buyer to confirm by VIN`);
+  }
+
+  // Supersession.
+  const pn = (r.partNumber ?? "").toUpperCase();
+  for (const sx of fv.supersession ?? []) {
+    const other = String(sx.partNumber ?? "").toUpperCase();
+    if (!PART_NUMBER.test(other)) problems.push(`${at}: supersession part number "${other}" is malformed`);
+    if (other === pn) problems.push(`${at}: supersedes itself`);
+    if (!["supersedes", "superseded_by"].includes(sx.relation)) problems.push(`${at}: unknown supersession relation "${sx.relation}"`);
+    if (sx.status === "verified" && !(sx.evidence ?? []).some((e) => CATALOG_KINDS.has(e.kind) || e.kind === "dealer_catalog_ca")) problems.push(`${at}: supersession ${other} marked verified without catalog evidence`);
+    if (sx.status !== "verified" && !(sx.reason ?? "").trim()) problems.push(`${at}: unverified supersession ${other} without a reason`);
+    if (sx.status === "verified" && pn && other.slice(0, 5) !== pn.slice(0, 5)) problems.push(`${at}: supersession across part families (${pn} / ${other}) -- record it under rejectedSupersessions`);
+    if (sx.status === "verified" && sx.relation === "supersedes") {
+      const old = byNumber.get(other);
+      if (old && String(old.supersededBy ?? "").toUpperCase() !== pn) problems.push(`${at}: supersedes batch record ${other}, which is not marked superseded by ${pn}`);
+      if (old && (old.fitmentVerification?.supersession ?? []).some((y) => y.relation === "supersedes" && y.status === "verified" && String(y.partNumber).toUpperCase() === pn)) problems.push(`${at}: supersession cycle with ${other}`);
+    }
+  }
+  for (const rj of fv.rejectedSupersessions ?? []) if (!(rj.reason ?? "").trim()) problems.push(`${at}: rejected supersession without a reason`);
+  if ((r.supersedes ?? "").split(/;\s*/).filter(Boolean).some((x) => !(fv.supersession ?? []).some((y) => y.status === "verified" && y.relation === "supersedes" && y.partNumber === x))) {
+    problems.push(`${at}: supersedes field lists a number that is not a verified supersession`);
+  }
+  if (r.supersededBy && r.status !== "research_pending") problems.push(`${at}: superseded by ${r.supersededBy} -- the current number must be listed instead`);
+
+  // Groups: only resolved fitment can move toward publication.
+  if (r.status === "commercial_pending" || r.status === "ready") {
+    if (!claimed.length) problems.push(`${at}: ${r.status} with no verified or VIN-dependent application`);
+    if ((fv.blocking ?? []).length) problems.push(`${at}: ${r.status} with unresolved fitment blockers`);
+    if (!CLAIMED.has(fv.verificationStatus)) problems.push(`${at}: ${r.status} with fitment status "${fv.verificationStatus}"`);
+    if (isEngine) problems.push(`${at}: engine assemblies stay research_pending until a vendor unit is documented`);
+  }
+}
+
+// Conflicting part numbers: two listable records of the same part family
+// claiming the same model, years and engine, without a VIN-level restriction
+// on both that tells them apart.
+const listable = allRecords.filter(({ r }) => r.status !== "research_pending" && r.partNumber);
+for (let i = 0; i < listable.length; i += 1) {
+  for (let j = i + 1; j < listable.length; j += 1) {
+    const A = listable[i].r;
+    const B = listable[j].r;
+    if ((FAMILY[A.partKind] ?? A.partKind) !== (FAMILY[B.partKind] ?? B.partKind)) continue;
+    for (const a of A.fitmentVerification.applications.filter((x) => CLAIMED.has(x.status))) {
+      for (const b of B.fitmentVerification.applications.filter((x) => CLAIMED.has(x.status))) {
+        if (a.model !== b.model || a.yearTo < b.yearFrom || b.yearTo < a.yearFrom) continue;
+        const ea = new Set((a.engine ?? "").match(ENGINE_CODE) ?? []);
+        const eb = (b.engine ?? "").match(ENGINE_CODE) ?? [];
+        const engineOverlap = !ea.size || !eb.length || eb.some((c) => ea.has(c));
+        if (!engineOverlap) continue;
+        const separated = a.status === "vin_dependent" && b.status === "vin_dependent" && (a.restriction || a.assemblyOrigin || a.productionDates) && (b.restriction || b.assemblyOrigin || b.productionDates);
+        if (!separated) problems.push(`conflict: ${A.partNumber} and ${B.partNumber} both claim ${a.model} ${Math.max(a.yearFrom, b.yearFrom)}-${Math.min(a.yearTo, b.yearTo)}${ea.size ? ` (${[...ea].join("/")})` : ""} without a VIN-level restriction separating them`);
+      }
+    }
+  }
 }
 
 // Bundle (kit) listings built from batch components.
@@ -216,5 +367,7 @@ console.log(
     (kitFiles.length
       ? ` Kits: ${kitCounts.ready} ready, ${kitCounts.commercial_pending} awaiting commercial approval, ${kitCounts.research_pending} research pending.`
       : "") +
+    ` Fitment applications: ${fitCounts.verified} verified, ${fitCounts.vin_dependent} VIN-dependent, ${fitCounts.unresolved} unresolved, ${fitCounts.removed} removed` +
+    " (documented evidence only; not proof of fitment)." +
     (bundleCount ? ` Storefront bundles: ${bundleCount} defined, ${approvedBundles} approved.` : "")
 );

@@ -71,7 +71,7 @@ KITS = [
         id="toyota-kit-oil-filter-04152-yzza1-5-pack",
         name="Genuine Toyota Oil Filter Element 04152-YZZA1 — 5-Pack",
         kitType="multipack",
-        apps=[app(2018, 2024, "Camry", "3.5L V6"), app(2017, 2023, "Highlander", "3.5L V6"), app(2016, 2023, "Tacoma", "3.5L V6")],
+        apps=[app(2018, 2024, "Camry", "3.5L V6"), app(2017, 2022, "Highlander", "3.5L V6"), app(2016, 2023, "Tacoma", "3.5L V6")],
         engines="2GR-FKS",
         parts=[("04152-YZZA1", 5)],
         intro="Five genuine Toyota 04152-YZZA1 cartridge oil filter elements.",
@@ -143,7 +143,13 @@ def main():
                   "Brand: Toyota (genuine parts)", "Condition: New"]
         if k["engines"]:
             lines.append(f"Engines: {k['engines']}")
-        lines += [f"Fitment: {fit_text(k['apps'])}", "", "Confirm fitment with your VIN before ordering."]
+        restr = []
+        for pn, _ in k["parts"]:
+            for x in by_pn[pn]["fitmentVerification"]["applications"]:
+                if x["status"] == "vin_dependent" and any(x["model"] == ka["model"] for ka in k["apps"]):
+                    r_txt = "; ".join(v for v in (x.get("restriction"), x.get("assemblyOrigin"), x.get("productionDates")) if v)
+                    restr.append(f"Restriction ({pn}, {x['yearFrom']}-{x['yearTo']} {x['model']}): {r_txt}")
+        lines += [f"Fitment: {fit_text(k['apps'])}"] + restr + ["", "Confirm fitment with your VIN before ordering."]
 
         target = round(target_total, 2) if priced else None
         bench = round(bench_total, 2) if priced else None

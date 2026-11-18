@@ -22,10 +22,12 @@ Writes docs/catalog-expansion/toyota-expansion-batch-1.{json,csv}
 import csv
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from toyota_expansion_pricing import assess  # noqa: E402
+from toyota_fitment_evidence import AUDITED, ENGINE_EVIDENCE, EVIDENCE  # noqa: E402
 
 OUT_DIR = "docs/catalog-expansion"
 
@@ -54,7 +56,7 @@ PARTS = [
          sources=[f"{SP}/toyota-toyota-air-filter-element-sequoia-tacoma-178010p100", f"{TD}/oem-2016-toyota-tacoma-air_filter.html"]),
     dict(pn="17801-0C040", kind="air_filter", name="Engine Air Filter", group="commercial_pending", conf="medium",
          apps=[app(2016, 2023, "Tacoma", "2.7L 4-cyl")], engines="2TR-FE", supersedes="",
-         notes="Dealer range 2005-2023; listed here only for the 2016-2023 2.7L confirmed by VIN-based fitment.",
+         notes="Dealer range 2005-2023; only the 2016-2023 2.7L is claimed here.",
          sources=[f"{SP}/toyota-air-filter-178010c040", "https://parts.northparktoyota.com/oem-parts/toyota-air-filter-178010c040"]),
     dict(pn="17801-0P051", kind="air_filter", name="Engine Air Filter", group="commercial_pending", conf="medium",
          apps=[app(2024, 2025, "Tacoma", "2.4L turbo")], engines="T24A-FTS", supersedes="",
@@ -62,7 +64,7 @@ PARTS = [
          sources=[f"{TD}/oem/toyota~element~sub~assy~ai~17801-0p051.html", f"{TD}/oem-2024-toyota-tacoma-air_filter.html"]),
     dict(pn="17801-38051", kind="air_filter", name="Engine Air Filter", group="commercial_pending", conf="medium",
          apps=[app(2010, 2024, "4Runner", "4.0L V6")], engines="1GR-FE", supersedes="17801-38050",
-         notes="One dealer lists replacement by 17801-YZZ13; confirm current number at order.",
+         notes="Superseded by 17801-YZZ13; to be listed under the current number.",
          sources=[f"{OL}/toyota-air-filter-1780138051", f"{TD}/oem-2024-toyota-4runner-air_filter.html"]),
     dict(pn="17801-F0020", kind="air_filter", name="Engine Air Filter", group="commercial_pending", conf="medium",
          apps=[app(2020, 2024, "Corolla", "2.0L / 1.8L Hybrid"), app(2018, 2024, "Camry", "2.5L Hybrid")], engines="M20A-FKS; 2ZR-FXE; A25A-FXS", supersedes="17801-F0030",
@@ -142,9 +144,9 @@ PARTS = [
          notes="Manufacturer note: Mark Advics VC084H. Other years unconfirmed.",
          sources=[f"{TA}/pad-kit-disc-brake-0446502530", f"{TD}/oem-2022-toyota-highlander-brake_pad_set.html"]),
     # ---------------- Cooling / electrical / wheel ends ----------------
-    dict(pn="16032-F0011", kind="water_pump", name="Engine Water Pump", group="commercial_pending", conf="medium",
+    dict(pn="16032-F0011", kind="water_inlet", name="Water Inlet Housing", group="commercial_pending", conf="medium",
          apps=[app(2019, 2024, "RAV4", "2.5L gas, non-hybrid"), app(2018, 2024, "Camry", "2.5L gas, non-hybrid")], engines="A25A-FKS", supersedes="",
-         notes="Includes water pump gasket and thermostat housing per dealer catalog.",
+         notes="Gasket inclusion is not confirmed.",
          sources=[f"{TD}/oem-2019-toyota-rav4-water_pump.html", "https://parts.olathetoyota.com/v-2019-toyota-rav4--limited--2-5l-l4-gas/cooling-system--radiator-and-components"]),
     dict(pn="27060-F0010", kind="alternator", name="Alternator Assembly with Regulator (100A)", group="commercial_pending", conf="medium",
          apps=[app(2018, 2024, "Camry", "2.5L gas, non-hybrid"), app(2020, 2022, "Avalon", "2.5L gas")], engines="A25A-FKS", supersedes="",
@@ -162,7 +164,7 @@ PARTS = [
     # ---------------- Research pending (identity/fitment unresolved) ----------------
     dict(pn="90919-A2009", kind="ignition_coil", name="Direct Ignition Coil", group="research_pending", conf="low",
          apps=[app(2019, 2024, "RAV4", "2.5L")], engines="A25A-FKS; A25A-FXS", supersedes="",
-         notes="Single dealer source; needs a second catalog.", sources=[f"{TD}/oem-toyota-rav4-ignition_coil.html"]),
+         notes="", sources=[f"{TD}/oem-toyota-rav4-ignition_coil.html"]),
     dict(pn="04465-42200", kind="pads_front", name="Front Disc Brake Pad Set", group="research_pending", conf="low",
          apps=[app(2006, 2012, "RAV4")], engines="", supersedes="04465-42160",
          notes="Corrected: dealers list 2006-2018 applications incl. 2006-2012 RAV4, not the 2019+ RAV4. Year split unresolved.",
@@ -190,7 +192,7 @@ PARTS = [
          sources=[f"{TD}/oem-2020-toyota-corolla-oil_filter.html", f"{TD}/oem-2021-toyota-rav4-oil_filter.html", "https://www.toyotaofglendale.com/service/service-parts-tips/rav4-oil-type-capacity/", f"{TD}/oem-2020-toyota-camry-oil_filter.html", "https://autoparts.toyota.com/products/product/filter-s-a-oil-90915yzzn1"]),
     dict(pn="04152-YZZA5", kind="oil_filter", name="Oil Filter Element", group="research_pending", conf="low",
          apps=[app(2010, 2015, "Tundra")], engines="1UR-FE / 3UR-FE (unresolved)", supersedes="04152-31050; 04152-31060; 04152-38010",
-         notes="Dealer catalogs conflict on engine; ToyotaPartsNow lists 2010-2024 4Runner, 2007-2011 Camry, 2011-2014 Tundra, 2006-2008 RAV4.", sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza5.html", f"{OL}/toyota-oil-filter-4152yzza5"]),
+         notes="Some catalogs also list 2007-2011 Camry and 2006-2008 RAV4; those are not claimed.", sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza5.html", f"{OL}/toyota-oil-filter-4152yzza5"]),
     dict(pn="87139-YZZ08", kind="cabin_filter", name="Cabin Air Filter", group="research_pending", conf="low",
          apps=[app(2018, 2024, "Camry")], engines="", supersedes="",
          notes="Superseded by 87139-YZZ82 per ToyotaPartsDeal and Olathe Toyota; list the current number instead.", sources=[f"{TD}/oem/toyota~cabin~air~filter~87139-yzz08.html"]),
@@ -224,13 +226,7 @@ ENGINES = [
 ]
 # fmt: on
 
-# Final audit (2026-11-18): restrictions or conflicts still unresolved on
-# records that otherwise have dealer fitment.
-AUDIT_FITMENT_ISSUES = {
-    "43550-0R060": "Build-origin restriction unresolved: dealers list it 'except Japan-built' and 'local built, without hybrid'; RAV4 plants differ.",
-    "16032-F0011": "Identity/inclusions conflict: some dealers title it a water pump housing / water inlet assembly; gasket included per some listings, excluded per others; one fitment table includes hybrid trims.",
-    "04465-0E060": "Overlaps 04465-33480 for 2018-2019 Camry and 2019+ RAV4; which number is current by build date is unresolved.",
-}
+# Restrictions and conflicts now live in scripts/toyota_fitment_evidence.py.
 
 # Bundling recommendations for low-ticket parts (recommendations only; no
 # catalog or shipping change). Kits use only records with verified fitment.
@@ -253,6 +249,7 @@ CATEGORY = {
     "pads_front": ("brakes", "Brakes"),
     "rotor_front": ("brakes", "Brakes"),
     "water_pump": ("cooling", "Cooling System"),
+    "water_inlet": ("cooling", "Cooling System"),
     "alternator": ("electrical", "Electrical"),
     "hub_bearing": ("suspension", "Suspension & Wheel Ends"),
 }
@@ -268,6 +265,8 @@ def fit_text(apps):
 
 
 def models_phrase(apps):
+    if not apps:
+        return "Toyota vehicles (fitment under review)"
     names = []
     for a in apps:
         if a["model"] not in names:
@@ -292,6 +291,7 @@ def describe(p):
         "pads_front": f"Genuine Toyota front disc brake pad set {p['pn']} for the {m}. The set covers one front axle, both sides.",
         "rotor_front": f"Genuine Toyota front disc brake rotor {p['pn']} for the {m}. Sold individually; rotors should be replaced in pairs across the axle.",
         "water_pump": f"Genuine Toyota engine water pump {p['pn']} for the {m}. It circulates coolant through the engine and radiator; leaks at the weep hole or bearing noise are the usual signs of failure.",
+        "water_inlet": f"Genuine Toyota water inlet housing sub-assembly {p['pn']} for the {m}. It is the coolant inlet housing on the engine; Toyota catalogs it separately from the water pump.",
         "alternator": f"Genuine Toyota alternator assembly with regulator {p['pn']} for the {m}. It charges the battery and powers the vehicle's electrical system while the engine runs.",
         "hub_bearing": f"Genuine Toyota front wheel bearing and hub assembly {p['pn']} for the {m}. The bearing comes pressed into the hub as one assembly. A worn bearing usually shows up as a growl that changes with speed or when turning.",
     }[k]
@@ -300,9 +300,79 @@ def describe(p):
         f"{body}{sup}{notes}\n\n"
         f"Specifications\n\nPart number: {p['pn']}\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\n"
         + (f"Engines: {p['engines']}\n" if p.get("engines") else "")
-        + f"Fitment: {fit}\n\nConfirm fitment with your VIN before ordering."
+        + f"Fitment: {fit or 'under review (no verified application)'}\n"
+        + ("".join(f"Restriction: {x}\n" for x in p.get("restrictionsText", [])))
+        + "\nConfirm fitment with your VIN before ordering."
     )
 
+
+# ---------------------------------------------------------------------------
+# Fitment evidence (scripts/toyota_fitment_evidence.py) is the only source of
+# listed fitment: applications whose status is `verified` or `vin_dependent`.
+# ---------------------------------------------------------------------------
+CLAIMED = ("verified", "vin_dependent")
+
+
+ENGINE_CODE = re.compile(r"\b[0-9A-Z]{2,5}-[A-Z]{2,4}\b")
+
+
+def submodel_text(a):
+    """Displacement(s) without engine codes, then the restriction, no repeats."""
+    segs = [ENGINE_CODE.sub("", seg).strip() for seg in (a["engine"] or "").split(" / ")]
+    disp = " / ".join(x for x in segs if x)
+    restr = a.get("restriction") or ""
+    if disp and restr.startswith(disp):
+        restr = restr[len(disp):].lstrip(" ;,")
+    bits = [b for b in (disp, restr) if b]
+    return "; ".join(bits) or None
+
+
+def apply_evidence(p, ev):
+    claimed = [a for a in ev["apps"] if a["status"] in CLAIMED]
+    p["apps"] = [app(a["yearFrom"], a["yearTo"], a["model"], submodel_text(a)) for a in claimed]
+    codes = []
+    for a in claimed:
+        for c in (a["engine"] or "").replace(" / ", "/").split("/"):
+            c = c.split(" ")[0]
+            if c and c[0].isalnum() and "-" in c and c not in codes:
+                codes.append(c)
+    p["engines"] = "; ".join(codes)
+    sup = ev.get("supersession", [])
+    p["supersedes"] = "; ".join(x["partNumber"] for x in sup if x["relation"] == "supersedes" and x["status"] == "verified")
+    p["supersededBy"] = next((x["partNumber"] for x in sup if x["relation"] == "superseded_by" and x["status"] == "verified"), None)
+    blocking = list(ev.get("blocking", []))
+    any_vin = any(a["status"] == "vin_dependent" for a in claimed)
+    if not claimed:
+        overall = "unresolved"
+    elif blocking:
+        overall = "unresolved"
+    elif any_vin:
+        overall = "vin_dependent"
+    else:
+        overall = "verified"
+    p["verification"] = overall
+    p["group"] = "commercial_pending" if overall in CLAIMED and not p["supersededBy"] else "research_pending"
+    p["conf"] = {"verified": "high (dealer catalog)", "vin_dependent": "medium (VIN-dependent restrictions)", "unresolved": "low (unresolved)"}[overall]
+    restr = [f"{a['yearFrom']}-{a['yearTo']} {a['model']}: " + "; ".join(x for x in (a.get("restriction"), a.get("assemblyOrigin"), a.get("productionDates")) if x)
+             for a in claimed if a["status"] == "vin_dependent"]
+    p["restrictionsText"] = restr
+    p["evidenceBlock"] = {
+        "auditedOn": AUDITED,
+        "verificationStatus": overall,
+        "vinLookupPerformed": False,
+        "identity": ev.get("identity"),
+        "applications": ev["apps"],
+        "supersession": sup,
+        "rejectedSupersessions": ev.get("rejectedSupersessions", []),
+        "blocking": blocking,
+        "unresolved": [f"{a['yearFrom']}-{a['yearTo']} {a['model']} {a['engine'] or ''}".strip() + f": {a['reason']}" for a in ev["apps"] if a["status"] in ("unresolved", "removed")],
+    }
+
+
+for p in PARTS:
+    apply_evidence(p, EVIDENCE[p["pn"]])
+for e in ENGINES:
+    apply_evidence(e, ENGINE_EVIDENCE[e["code"]])
 
 records, rows = [], []
 for p in PARTS:
@@ -328,7 +398,12 @@ for p in PARTS:
         "image": None,
         "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
         "fitmentConfidence": p["conf"],
-        "sources": p["sources"],
+        "partKind": p["kind"],
+        "supersededBy": p["supersededBy"],
+        "vinDependent": p["verification"] == "vin_dependent" or any(a["status"] == "vin_dependent" for a in p["evidenceBlock"]["applications"] if a["status"] in CLAIMED),
+        "vinLookupPerformed": False,
+        "fitmentVerification": p["evidenceBlock"],
+        "sources": sorted({x["url"] for a in p["evidenceBlock"]["applications"] if a["status"] in CLAIMED for x in a["evidence"]} | set(p["sources"])),
         "blocking": ["approved selling price", "licensed product image"] + (["fitment / identity verification"] if p["group"] == "research_pending" else []),
     }
     records.append(rec)
@@ -349,13 +424,18 @@ for e in ENGINES:
         "fitment": fit,
         "fitmentApplications": e["apps"],
         "engines": e["code"],
-        "description": f"Toyota {e['code']} {e['desc']} engine assembly. US applications: {fit}. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+        "description": f"Toyota {e['code']} {e['desc']} engine assembly. US applications (VIN-dependent): {fit}. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
         "price": None,
         "pricing": {"status": "no_evidence", "checkedOn": "2026-11-18", "recommendedPrice": None, "confidence": "none",
                     "flags": ["engine units are priced from the vendor's actual unit; no part number to benchmark"],
                     "profitabilityFlags": ["acquisition cost not provided -- margin not verified"], "approved": False},
         "image": None, "imageStatus": "pending: photos of the actual unit required",
         "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+        "partKind": "engine",
+        "supersededBy": None,
+        "vinDependent": True,
+        "vinLookupPerformed": False,
+        "fitmentVerification": e["evidenceBlock"],
         "sources": ["https://8020automotive.com/toyota-2gr-fks-engine-guide/", "https://www.carwhere.com/toyota/engines"] if e["code"] == "2GR-FKS" else [],
         "blocking": ["vendor unit details (condition, mileage, inclusions)", "approved selling price", "photos of the unit"],
     })
@@ -404,7 +484,7 @@ BUCKETS = ["Ready for price approval", "Fitment verification required", "Pricing
 def classify(r):
     pn = r["partNumber"]
     pr = r["pricing"]
-    fitment_ok = r["status"] != "research_pending" and pn not in AUDIT_FITMENT_ISSUES
+    fitment_ok = r["status"] != "research_pending" and r["fitmentVerification"]["verificationStatus"] in ("verified", "vin_dependent")
     pricing_ok = pr["status"] == "verified"
     cost_ok = pr.get("profitability") == "verified"  # needs supplier cost + minimum margin
     photo_ok = False  # no licensed, matching photograph for any record
@@ -419,8 +499,9 @@ def classify(r):
     issues = []
     if r["status"] == "research_pending":
         issues.append("research pending: " + (r["description"].split("\n")[0][:0] or "fitment/identity unresolved"))
-    if pn in AUDIT_FITMENT_ISSUES:
-        issues.append(AUDIT_FITMENT_ISSUES[pn])
+    issues += r["fitmentVerification"]["blocking"]
+    if r.get("supersededBy"):
+        issues.append(f"superseded by {r['supersededBy']}")
     issues += pr.get("flags", [])
     issues += pr.get("profitabilityFlags", [])
     return primary, checks, issues
@@ -502,7 +583,8 @@ md.append("## Fitment verification required\n")
 md.append("| Part number | Product | Outstanding issue |\n|---|---|---|")
 for r in records:
     if r["audit"]["checks"]["Fitment verification required"]:
-        issue = AUDIT_FITMENT_ISSUES.get(r["partNumber"]) or next((x for x in r["description"].split("\n") if x and not x.startswith(("Specifications", "Part number", "Brand", "Type", "Condition", "Engines", "Fitment", "Confirm"))), "")
+        fv = r["fitmentVerification"]
+        issue = "; ".join(fv["blocking"] + ([f"superseded by {r['supersededBy']}"] if r.get("supersededBy") else []) + fv["unresolved"][:2]) or "engine unit details (condition, mileage, inclusions)"
         md.append(f"| {r['partNumber'] or '(engine)'} | {r['name']} | {issue[:220]} |")
 md.append("")
 md.append("## Pricing evidence insufficient\n")
@@ -538,6 +620,7 @@ md.append("- 04465-0C020 narrowed to 2007-2017 Tundra and 2008-2017 Sequoia (201
 md.append("- Alternator 27060-F0010: the lowest listing ($239.74) was stale and is excluded; benchmark is now $262.44.")
 md.append("- 43512-06200 confirmed sold individually (two per axle).")
 md.append("- 04152-YZZA1 (cartridge) narrowed to the 3.5L V6 (2GR-FKS). The 2.5L A25A-FKS takes spin-on **90915-YZZN1** (formerly 90915-10009 / 90915-YZZF2): confirmed for the 2019-2024 RAV4 2.5L gas and the US-built 2020 Camry 2.5L. The RAV4 and Camry 2.5L kits now use 90915-YZZN1 and stay in research.\n")
+md.append("- **Fitment verification audit (all 50 records):** see `toyota-expansion-batch-1-fitment-audit.md` and `-fitment-audit.csv` for every application, its evidence, restrictions and status.\n")
 md.append("## Limits of this audit\n")
 md.append("- Prices are from dealer and retailer pages as indexed by search on 2026-11-18; live pages could not be opened from this environment, so each price must be re-confirmed at approval time.")
 md.append("- Fitment comes from Toyota-dealer catalogs, not a VIN-level Toyota EPC lookup; restrictions shown above should be checked by VIN on first orders.")
@@ -548,3 +631,87 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1-final-audit.md", "w", encoding="u
 
 print("audit:", {b: sum(r["audit"]["primaryStatus"] == b for r in records) for b in BUCKETS},
       "| pass fitment+pricing:", len(ready_once_cost), "| low-ticket:", len(low_ticket))
+
+
+# ---------------------------------------------------------------------------
+# Fitment verification audit: one row per vehicle application, every record.
+# ---------------------------------------------------------------------------
+def rec_label(r):
+    return r["partNumber"] or f"{r['engines']} engine"
+
+
+fit_rows = []
+for r in records:
+    fv = r["fitmentVerification"]
+    sup = "; ".join(f"{x['relation'].replace('_', ' ')} {x['partNumber']} ({x['status']})" for x in fv["supersession"])
+    rej = "; ".join(f"rejected: {x['from']} -> {x['to']} ({x['reason']})" for x in fv["rejectedSupersessions"])
+    for a in fv["applications"]:
+        fit_rows.append({
+            "record": rec_label(r),
+            "recordStatus": r["status"],
+            "application": f"{a['yearFrom']}-{a['yearTo']} Toyota {a['model']}",
+            "engine": a["engine"] or "",
+            "status": a["status"],
+            "listed": a["status"] in ("verified", "vin_dependent"),
+            "restriction": a.get("restriction") or "",
+            "assemblyOrigin": a.get("assemblyOrigin") or "",
+            "productionDates": a.get("productionDates") or "",
+            "supersession": "; ".join(x for x in (sup, rej) if x),
+            "evidence": " | ".join(f"[{e['kind']}] {e['source']} {e['url']}" for e in a["evidence"]),
+            "reason": a.get("reason") or "",
+            "recordBlocking": " | ".join(fv["blocking"]),
+        })
+
+with open(f"{OUT_DIR}/toyota-expansion-batch-1-fitment-audit.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.DictWriter(f, fieldnames=list(fit_rows[0].keys()))
+    w.writeheader()
+    w.writerows(fit_rows)
+
+from collections import Counter  # noqa: E402
+
+st = Counter(x["status"] for x in fit_rows)
+rv = Counter(r["fitmentVerification"]["verificationStatus"] for r in records)
+fm = ["# Toyota Expansion Batch 1 — Fitment Verification Audit\n",
+      f"Audited {AUDITED}. Staged data only: nothing is published, and no live inventory was changed.\n",
+      "## Standard\n",
+      "- An application is **listed** only when a Toyota (autoparts.toyota.com) or US Toyota-dealer parts catalog names this exact part number for that model, year range and engine.",
+      "- **VIN-dependent**: the catalog lists it with a restriction (production date, assembly origin, trim, drivetrain, hybrid, option) that only the VIN resolves. Listed with the restriction stated; the listing tells the buyer to confirm by VIN.",
+      "- **Unresolved**: evidence missing, retailer-only or conflicting. Not listed.",
+      "- **Removed**: was staged and is contradicted by evidence. Not listed.",
+      "- Retailer, marketplace, overseas and guide sources never establish fitment on their own. Canadian dealer catalogs corroborate only.",
+      "- **No VIN-level catalog lookup was performed** for any application. Evidence is dealer catalog pages as indexed by search on the audit date. No record claims VIN-level confirmation.",
+      "- Engines are matched by engine code; a used engine's interchange depends on generation, accessories, harness and ECU, so every engine application is VIN-dependent and every engine stays in research.\n",
+      "## Results\n",
+      f"- Applications reviewed: {len(fit_rows)} — verified {st['verified']}, VIN-dependent {st['vin_dependent']}, unresolved {st['unresolved']}, removed {st['removed']}.",
+      f"- Records: verified {rv['verified']}, VIN-dependent {rv['vin_dependent']}, unresolved {rv['unresolved']}.",
+      f"- Groups after the audit: {sum(r['status'] == 'commercial_pending' for r in records)} commercial_pending, {sum(r['status'] == 'research_pending' for r in records)} research_pending, 0 ready.",
+      "- Live storefront check: none of the 50 part numbers, their superseded numbers or their replacements appears in the deployed catalog (347 listings), so there is no duplicate or conflicting live listing.\n",
+      "## Oil filter findings (priority review)\n",
+      "- **90915-YZZN1** (spin-on; previous versions 90915-YZZF2 per Toyota, 90915-10009 per dealer catalogs): listed for the 2023-2024 RAV4 2.5L gas (Lakeland Toyota year pages, Toyota of Glendale) and, VIN-dependent, for the 2019-2022 RAV4 2.5L gas, where ToyotaPartsDeal shows 90915-10009 for AXAL54L gas submodels and Sparks Toyota limits 2019-2022 to hybrids. 2020-2024 Corolla 2.0L is VIN-dependent.",
+      "- **Camry 2.5L (A25A-FKS)**: unresolved. ToyotaPartsDeal lists 90915-YZZN1 for the US-built 2020 Camry 2.5L; ToyotaPartsNow's 2018 Camry page lists 04152-YZZA1 for the 2.5L. Neither number is listed for the Camry 2.5L until a VIN-level lookup settles it by build plant and year.",
+      "- **04152-YZZA1** (cartridge; supersedes 04152-31090, 04152-31110, 04152-0V010): 2016-2023 Tacoma 3.5L verified; 2018-2024 Camry 3.5L and 2017-2022 Highlander 3.5L VIN-dependent (dealer note: from 11/2017, excluding Japan-built). Removed: 2023 Highlander (no V6 that year), Camry 2.5L, 2019+ RAV4.",
+      "- **90915-10009 -> 04152-YZZA1** supersession shown on one ToyotaPartsDeal page is rejected: a spin-on canister cannot be superseded by a cartridge element.",
+      "- **US- vs Japan-built**: Japan-built origin is a stated restriction on 04152-YZZA1 (excluded) and 43550-0R060 (both origins listed, without hybrid); US-built is a stated restriction on 04465-0E060, 04465-06170 and 27060-F0010. Each is listed as VIN-dependent.\n",
+      "## Every corrected or unresolved application\n",
+      "| Part | Application | Engine | Status | Restriction / origin / production | Supersession | Evidence | Reason |",
+      "|---|---|---|---|---|---|---|---|"]
+for x in fit_rows:
+    if x["status"] == "verified":
+        continue
+    ev = "<br>".join(e for e in x["evidence"].split(" | ") if e) or "—"
+    ro = "; ".join(v for v in (x["restriction"], x["assemblyOrigin"], x["productionDates"]) if v) or "—"
+    fm.append(f"| {x['record']} | {x['application']} | {x['engine'] or '—'} | {x['status']} | {ro} | {x['supersession'] or '—'} | {ev} | {x['reason'] or (x['recordBlocking'] or '—')} |")
+fm += ["", "## Verified applications\n", "| Part | Application | Engine | Evidence |", "|---|---|---|---|"]
+for x in fit_rows:
+    if x["status"] == "verified":
+        fm.append(f"| {x['record']} | {x['application']} | {x['engine'] or '—'} | " + "<br>".join(x["evidence"].split(" | ")) + " |")
+fm += ["", "## Record-level blockers\n"]
+for r in records:
+    b = r["fitmentVerification"]["blocking"]
+    if b or r.get("supersededBy"):
+        fm.append(f"- **{rec_label(r)}**: " + "; ".join(b + ([f"superseded by {r['supersededBy']}"] if r.get("supersededBy") and not any("uperseded" in y for y in b) else [])))
+fm += ["", "## What a VIN-level check is still needed for\n",
+       "Before first sale of any VIN-dependent application, a Toyota EPC or dealer parts-counter lookup by VIN for: Camry 2.5L oil filter; 2019-2022 RAV4 oil filter; Camry 04465-0E060 vs 04465-33480 production window; Tacoma 90919-01287 vs 90919-01263; RAV4 90919-A2009 vs 90919-A2010; snorkel-equipped Tacoma air filter; 2WD Tacoma front pads; Camry/RAV4 hybrid rotor and wheel-end splits.\n"]
+with open(f"{OUT_DIR}/toyota-expansion-batch-1-fitment-audit.md", "w", encoding="utf-8") as f:
+    f.write("\n".join(fm) + "\n")
+print("fitment audit:", dict(st), "| records:", dict(rv))
