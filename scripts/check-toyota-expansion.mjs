@@ -113,6 +113,67 @@ for (const file of files) {
   });
 }
 
+// Bundle (kit) listings built from batch components.
+const batchRecords = new Map();
+for (const file of files) {
+  for (const r of JSON.parse(fs.readFileSync(path.join(DIR, file), "utf8")).records) {
+    if (r.partNumber) batchRecords.set(r.partNumber.toUpperCase(), r);
+  }
+}
+const kitFiles = fs.readdirSync(DIR).filter((f) => /^toyota-service-kits-batch-\d+\.json$/.test(f));
+const kitCounts = { ready: 0, commercial_pending: 0, research_pending: 0 };
+const kitIds = new Set();
+const covers = (apps, k) =>
+  (apps ?? []).some((a) => a.model === k.model && a.yearFrom <= k.yearFrom && a.yearTo >= k.yearTo);
+for (const file of kitFiles) {
+  for (const kit of JSON.parse(fs.readFileSync(path.join(DIR, file), "utf8")).kits) {
+    const at = `${file} ${kit.id}`;
+    if (!GROUPS.has(kit.status)) problems.push(`${at}: unknown status "${kit.status}"`);
+    else kitCounts[kit.status] += 1;
+    if (kitIds.has(kit.id)) problems.push(`${at}: duplicate kit id`);
+    kitIds.add(kit.id);
+    if (FORBIDDEN.test(kit.description ?? "")) problems.push(`${at}: description makes an unestablished claim`);
+    if (!/not a Toyota-packaged kit/.test(kit.description ?? "")) problems.push(`${at}: description must say the kit is assembled by DrivoraParts, not packaged by Toyota`);
+    for (const a of kit.fitmentApplications ?? []) {
+      if (a.make !== "Toyota" || !US_MODELS.has(a.model)) problems.push(`${at}: "${a.make} ${a.model}" is not a US-market Toyota model`);
+    }
+    let sum = 0;
+    let priced = true;
+    for (const c of kit.components ?? []) {
+      const r = batchRecords.get(String(c.partNumber).toUpperCase());
+      if (!r) { problems.push(`${at}: component ${c.partNumber} is not in an expansion batch`); priced = false; continue; }
+      if (!(c.quantity >= 1)) problems.push(`${at}: component ${c.partNumber} has no quantity`);
+      const target = r.pricing?.recommendedPrice;
+      if (target == null) priced = false;
+      else {
+        if (c.componentTargetPrice !== target) problems.push(`${at}: component ${c.partNumber} price differs from its batch target`);
+        sum += target * c.quantity;
+      }
+      if (kit.status !== "research_pending") {
+        if (r.audit?.checks?.["Fitment verification required"]) problems.push(`${at}: component ${c.partNumber} still needs fitment verification`);
+        for (const a of kit.fitmentApplications ?? []) {
+          if (!covers(r.fitmentApplications, a)) problems.push(`${at}: component ${c.partNumber} fitment does not cover ${a.yearFrom}-${a.yearTo} ${a.model}`);
+        }
+      }
+    }
+    if (kit.status !== "research_pending" && !(kit.components ?? []).length) problems.push(`${at}: kit has no components`);
+    if (kit.status === "research_pending" && !(kit.issues ?? []).length) problems.push(`${at}: research_pending kit without a recorded issue`);
+    const pr = kit.pricing ?? {};
+    if (pr.kitTargetPrice != null) {
+      if (!priced) problems.push(`${at}: kit target set while a component is unpriced`);
+      else if (Math.abs(pr.kitTargetPrice - Math.round(sum * 100) / 100) > 0.001) problems.push(`${at}: kit target $${pr.kitTargetPrice} is not the sum of component targets ($${sum.toFixed(2)})`);
+      if (pr.kitDiscount) problems.push(`${at}: kit discount applied -- kits are priced from component targets only`);
+    }
+    if (kit.price != null && !pr.approved) problems.push(`${at}: selling price set without pricing approval`);
+    if (pr.profitability !== "verified" && !(pr.profitabilityFlags ?? []).length) problems.push(`${at}: profitability not established and not flagged for review`);
+    if (kit.status === "ready") {
+      if (typeof kit.price !== "number" || !pr.approved || pr.profitability !== "verified") problems.push(`${at}: ready without approved price and verified profitability`);
+      const img = kit.image ? path.join(ROOT, "public", kit.image.replace(/^\//, "")) : null;
+      if (!img || !fs.existsSync(img)) problems.push(`${at}: ready without an image file under public/`);
+    }
+  }
+}
+
 if (problems.length) {
   console.error(problems.map((p) => `  [toyota-expansion] ${p}`).join("\n"));
   process.exit(1);
@@ -120,5 +181,8 @@ if (problems.length) {
 console.log(
   `Toyota expansion check passed: ${files.length} batch file(s), ` +
     `${counts.ready} ready, ${counts.commercial_pending} awaiting commercial approval, ` +
-    `${counts.research_pending} research pending.`
+    `${counts.research_pending} research pending.` +
+    (kitFiles.length
+      ? ` Kits: ${kitCounts.ready} ready, ${kitCounts.commercial_pending} awaiting commercial approval, ${kitCounts.research_pending} research pending.`
+      : "")
 );

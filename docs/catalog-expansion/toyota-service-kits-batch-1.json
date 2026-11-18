@@ -1,0 +1,477 @@
+{
+  "_comment": "Toyota service kits batch 1 (2026-11-18): staged bundle listings built from expansion batch 1 components. NOT loaded by the storefront. Nothing approved or published. Validate with: node scripts/check-toyota-expansion.mjs",
+  "componentSource": "toyota-expansion-batch-1.json",
+  "kits": [
+    {
+      "id": "toyota-kit-camry-2020-2024-25-filter-plug",
+      "status": "commercial_pending",
+      "listingType": "bundle",
+      "kitType": "service",
+      "name": "Toyota Camry 2020–2024 2.5L Filter & Spark Plug Kit",
+      "brand": "Toyota",
+      "assembledBy": "DrivoraParts",
+      "condition": "New",
+      "proposedCategory": "filters-maintenance",
+      "components": [
+        {
+          "partNumber": "04152-YZZA1",
+          "quantity": 1,
+          "name": "Genuine Toyota Oil Filter Element 04152-YZZA1",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 4.49,
+          "lowestCompetitor": {
+            "seller": "ToyotaPartsDeal",
+            "price": 4.68,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html"
+          }
+        },
+        {
+          "partNumber": "17801-F0050",
+          "quantity": 1,
+          "name": "Genuine Toyota Engine Air Filter 17801-F0050",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 18.09,
+          "lowestCompetitor": {
+            "seller": "OEMGenuineParts.com",
+            "price": 19.01,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-air-filter-17801f0050"
+          }
+        },
+        {
+          "partNumber": "87139-0E040",
+          "quantity": 1,
+          "name": "Genuine Toyota Cabin Air Filter (Deodorizing) 87139-0E040",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 33.79,
+          "lowestCompetitor": {
+            "seller": "Grieco Toyota",
+            "price": 35.51,
+            "url": "https://parts.griecotoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+          }
+        },
+        {
+          "partNumber": "90919-01289",
+          "quantity": 4,
+          "name": "Genuine Toyota Iridium Spark Plug 90919-01289",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 12.49,
+          "lowestCompetitor": {
+            "seller": "OEMGenuineParts.com",
+            "price": 13.08,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901289"
+          }
+        }
+      ],
+      "fitment": "2020–2024 Toyota Camry (2.5L gas, non-hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L gas, non-hybrid"
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Toyota Camry 2020–2024 2.5L Filter & Spark Plug Kit\n\nOil filter element, engine air filter, cabin air filter and a full set of four iridium spark plugs for the 2.5L four-cylinder gas (non-hybrid) Camry.\nThis kit is assembled by DrivoraParts from individual genuine Toyota parts; it is not a Toyota-packaged kit.\n\nKit contents\n\n1 x Genuine Toyota Oil Filter Element 04152-YZZA1 (04152-YZZA1)\n1 x Genuine Toyota Engine Air Filter 17801-F0050 (17801-F0050)\n1 x Genuine Toyota Cabin Air Filter (Deodorizing) 87139-0E040 (87139-0E040)\n4 x Genuine Toyota Iridium Spark Plug 90919-01289 (90919-01289)\n\nEngine oil, the oil drain plug gasket and the oil filter housing O-ring are not included.\n\nSpecifications\n\nBrand: Toyota (genuine parts)\nCondition: New\nEngines: A25A-FKS\nFitment: 2020–2024 Toyota Camry (2.5L gas, non-hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "checkedOn": "2026-11-18",
+        "basis": "sum of component targets; each component 3-5% under the lowest verified competitor for that exact part",
+        "componentBenchmarkTotal": 111.52,
+        "kitTargetPrice": 106.33,
+        "undercutVsBenchmark": 0.0465,
+        "kitDiscount": null,
+        "competitorKitPrice": null,
+        "competitorKitNote": "No competitor price for an identical kit was researched; the benchmark is the sum of the lowest individual prices, which may come from different sellers.",
+        "priceType": "competitive target (not approved)",
+        "profitability": "review required",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: needs a licensed photo of the actual kit contents",
+      "issues": [],
+      "blocking": [
+        "supplier cost required",
+        "kit photography required",
+        "price approval required"
+      ],
+      "sources": [
+        "https://autoparts.toyota.com/products/product/element-air-refiner-871390e040",
+        "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza1",
+        "https://parts.lakelandtoyota.com/p/TOYOTA__RAV-4-LE/Engine-Air-Filter/14760743/17801F0050.html",
+        "https://parts.northparktoyota.com/oem-parts/toyota-cabin-air-filter-871390e040",
+        "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901289",
+        "https://www.sparksparts.com/oem-parts/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1",
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-air_filter.html",
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-spark_plug.html",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-camry-cabin_air_filter.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html",
+        "https://www.toyotapartsnow.com/oem/toyota~air-filter-element-sub-assembly~17801-f0050"
+      ]
+    },
+    {
+      "id": "toyota-kit-tacoma-2016-2023-35-filter-plug",
+      "status": "commercial_pending",
+      "listingType": "bundle",
+      "kitType": "service",
+      "name": "Toyota Tacoma 2016–2023 3.5L V6 Filter & Spark Plug Kit",
+      "brand": "Toyota",
+      "assembledBy": "DrivoraParts",
+      "condition": "New",
+      "proposedCategory": "filters-maintenance",
+      "components": [
+        {
+          "partNumber": "04152-YZZA1",
+          "quantity": 1,
+          "name": "Genuine Toyota Oil Filter Element 04152-YZZA1",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 4.49,
+          "lowestCompetitor": {
+            "seller": "ToyotaPartsDeal",
+            "price": 4.68,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html"
+          }
+        },
+        {
+          "partNumber": "17801-0P100",
+          "quantity": 1,
+          "name": "Genuine Toyota Engine Air Filter 17801-0P100",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 17.99,
+          "lowestCompetitor": {
+            "seller": "Grieco Toyota",
+            "price": 18.9,
+            "url": "https://parts.griecotoyota.com/oem-parts/toyota-air-filter-178010p100"
+          }
+        },
+        {
+          "partNumber": "90919-01287",
+          "quantity": 6,
+          "name": "Genuine Toyota Iridium Spark Plug 90919-01287",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 15.69,
+          "lowestCompetitor": {
+            "seller": "OEMGenuineParts.com",
+            "price": 16.44,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901287"
+          }
+        }
+      ],
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "2GR-FKS",
+      "description": "Toyota Tacoma 2016–2023 3.5L V6 Filter & Spark Plug Kit\n\nOil filter element, engine air filter and a full set of six spark plugs for the 3.5L V6 Tacoma.\nThis kit is assembled by DrivoraParts from individual genuine Toyota parts; it is not a Toyota-packaged kit.\n\nKit contents\n\n1 x Genuine Toyota Oil Filter Element 04152-YZZA1 (04152-YZZA1)\n1 x Genuine Toyota Engine Air Filter 17801-0P100 (17801-0P100)\n6 x Genuine Toyota Iridium Spark Plug 90919-01287 (90919-01287)\n\nEngine oil, the cabin air filter, the oil drain plug gasket and the oil filter housing O-ring are not included.\n\nSpecifications\n\nBrand: Toyota (genuine parts)\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "checkedOn": "2026-11-18",
+        "basis": "sum of component targets; each component 3-5% under the lowest verified competitor for that exact part",
+        "componentBenchmarkTotal": 122.22,
+        "kitTargetPrice": 116.62,
+        "undercutVsBenchmark": 0.0458,
+        "kitDiscount": null,
+        "competitorKitPrice": null,
+        "competitorKitNote": "No competitor price for an identical kit was researched; the benchmark is the sum of the lowest individual prices, which may come from different sellers.",
+        "priceType": "competitive target (not approved)",
+        "profitability": "review required",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: needs a licensed photo of the actual kit contents",
+      "issues": [],
+      "blocking": [
+        "supplier cost required",
+        "kit photography required",
+        "price approval required"
+      ],
+      "sources": [
+        "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza1",
+        "https://parts.camelbacktoyota.com/oem-parts/toyota-spark-plug-9091901287",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-spark-plug-9091901287",
+        "https://www.sparksparts.com/oem-parts/toyota-toyota-air-filter-element-sequoia-tacoma-178010p100",
+        "https://www.sparksparts.com/oem-parts/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1",
+        "https://www.toyotapartsdeal.com/oem-2016-toyota-tacoma-air_filter.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~plug~spark~90919-01287.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html"
+      ]
+    },
+    {
+      "id": "toyota-kit-tacoma-2016-2023-front-brake",
+      "status": "commercial_pending",
+      "listingType": "bundle",
+      "kitType": "brake",
+      "name": "Toyota Tacoma 2016–2023 Front Brake Kit — Pads & Rotors",
+      "brand": "Toyota",
+      "assembledBy": "DrivoraParts",
+      "condition": "New",
+      "proposedCategory": "brakes",
+      "components": [
+        {
+          "partNumber": "04465-04090",
+          "quantity": 1,
+          "name": "Genuine Toyota Front Disc Brake Pad Set 04465-04090",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 66.69,
+          "lowestCompetitor": {
+            "seller": "Grieco Toyota",
+            "price": 70.17,
+            "url": "https://parts.griecotoyota.com/oem-parts/toyota-brake-pads-front-446504090"
+          }
+        },
+        {
+          "partNumber": "43512-04052",
+          "quantity": 2,
+          "name": "Genuine Toyota Front Disc Brake Rotor 43512-04052",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 77.29,
+          "lowestCompetitor": {
+            "seller": "Sparks Toyota",
+            "price": 81.29,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-disc-brake-rotor-front-4351204052"
+          }
+        }
+      ],
+      "fitment": "2016–2023 Toyota Tacoma",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Toyota Tacoma 2016–2023 Front Brake Kit — Pads & Rotors\n\nOne front brake pad set (both sides) and two front rotors, for a complete front-axle pad and rotor replacement.\nThis kit is assembled by DrivoraParts from individual genuine Toyota parts; it is not a Toyota-packaged kit.\n\nKit contents\n\n1 x Genuine Toyota Front Disc Brake Pad Set 04465-04090 (04465-04090)\n2 x Genuine Toyota Front Disc Brake Rotor 43512-04052 (43512-04052)\n\nPad fitting hardware, brake fluid and wheel hardware are not included.\n\nSpecifications\n\nBrand: Toyota (genuine parts)\nCondition: New\nFitment: 2016–2023 Toyota Tacoma\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "checkedOn": "2026-11-18",
+        "basis": "sum of component targets; each component 3-5% under the lowest verified competitor for that exact part",
+        "componentBenchmarkTotal": 232.75,
+        "kitTargetPrice": 221.27,
+        "undercutVsBenchmark": 0.0493,
+        "kitDiscount": null,
+        "competitorKitPrice": null,
+        "competitorKitNote": "No competitor price for an identical kit was researched; the benchmark is the sum of the lowest individual prices, which may come from different sellers.",
+        "priceType": "competitive target (not approved)",
+        "profitability": "review required",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: needs a licensed photo of the actual kit contents",
+      "issues": [],
+      "blocking": [
+        "supplier cost required",
+        "kit photography required",
+        "price approval required"
+      ],
+      "sources": [
+        "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-0446504090",
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-front-446504090",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351204052",
+        "https://www.sparksparts.com/oem-parts/toyota-rotor-4351204052",
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~front~43512-04052.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-04090.html"
+      ]
+    },
+    {
+      "id": "toyota-kit-oil-filter-04152-yzza1-5-pack",
+      "status": "commercial_pending",
+      "listingType": "bundle",
+      "kitType": "multipack",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA1 — 5-Pack",
+      "brand": "Toyota",
+      "assembledBy": "DrivoraParts",
+      "condition": "New",
+      "proposedCategory": "filters-maintenance",
+      "components": [
+        {
+          "partNumber": "04152-YZZA1",
+          "quantity": 5,
+          "name": "Genuine Toyota Oil Filter Element 04152-YZZA1",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 4.49,
+          "lowestCompetitor": {
+            "seller": "ToyotaPartsDeal",
+            "price": 4.68,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html"
+          }
+        }
+      ],
+      "fitment": "2018–2024 Toyota Camry (2.5L / 3.5L); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L / 3.5L"
+        },
+        {
+          "yearFrom": 2017,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "3.5L V6"
+        },
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "A25A-FKS; 2GR-FKS",
+      "description": "Genuine Toyota Oil Filter Element 04152-YZZA1 — 5-Pack\n\nFive genuine Toyota 04152-YZZA1 cartridge oil filter elements.\nThis kit is assembled by DrivoraParts from individual genuine Toyota parts; it is not a Toyota-packaged kit.\n\nKit contents\n\n5 x Genuine Toyota Oil Filter Element 04152-YZZA1 (04152-YZZA1)\n\nHousing O-rings and drain plug gaskets are not included.\n\nSpecifications\n\nBrand: Toyota (genuine parts)\nCondition: New\nEngines: A25A-FKS; 2GR-FKS\nFitment: 2018–2024 Toyota Camry (2.5L / 3.5L); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "checkedOn": "2026-11-18",
+        "basis": "sum of component targets; each component 3-5% under the lowest verified competitor for that exact part",
+        "componentBenchmarkTotal": 23.4,
+        "kitTargetPrice": 22.45,
+        "undercutVsBenchmark": 0.0406,
+        "kitDiscount": null,
+        "competitorKitPrice": null,
+        "competitorKitNote": "No competitor price for an identical kit was researched; the benchmark is the sum of the lowest individual prices, which may come from different sellers.",
+        "priceType": "competitive target (not approved)",
+        "profitability": "review required",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $22.45 kit"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: needs a licensed photo of the actual kit contents",
+      "issues": [],
+      "blocking": [
+        "supplier cost required",
+        "kit photography required",
+        "price approval required"
+      ],
+      "sources": [
+        "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza1",
+        "https://www.sparksparts.com/oem-parts/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1",
+        "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html"
+      ]
+    },
+    {
+      "id": "toyota-kit-rav4-2019-2024-25-filter-plug",
+      "status": "research_pending",
+      "listingType": "bundle",
+      "kitType": "service",
+      "name": "Toyota RAV4 2019–2024 2.5L Filter & Spark Plug Kit",
+      "brand": "Toyota",
+      "assembledBy": "DrivoraParts",
+      "condition": "New",
+      "proposedCategory": "filters-maintenance",
+      "components": [
+        {
+          "partNumber": "04152-YZZA1",
+          "quantity": 1,
+          "name": "Genuine Toyota Oil Filter Element 04152-YZZA1",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 4.49,
+          "lowestCompetitor": {
+            "seller": "ToyotaPartsDeal",
+            "price": 4.68,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html"
+          }
+        },
+        {
+          "partNumber": "17801-F0050",
+          "quantity": 1,
+          "name": "Genuine Toyota Engine Air Filter 17801-F0050",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 18.09,
+          "lowestCompetitor": {
+            "seller": "OEMGenuineParts.com",
+            "price": 19.01,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-air-filter-17801f0050"
+          }
+        },
+        {
+          "partNumber": "90919-01289",
+          "quantity": 4,
+          "name": "Genuine Toyota Iridium Spark Plug 90919-01289",
+          "componentStatus": "Supplier cost required",
+          "componentTargetPrice": 12.49,
+          "lowestCompetitor": {
+            "seller": "OEMGenuineParts.com",
+            "price": 13.08,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901289"
+          }
+        }
+      ],
+      "fitment": "2019–2024 Toyota RAV4 (2.5L gas, non-hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L gas, non-hybrid"
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Toyota RAV4 2019–2024 2.5L Filter & Spark Plug Kit\n\nOil filter element, engine air filter and a full set of four iridium spark plugs for the 2.5L gas (non-hybrid) RAV4.\nThis kit is assembled by DrivoraParts from individual genuine Toyota parts; it is not a Toyota-packaged kit.\n\nKit contents\n\n1 x Genuine Toyota Oil Filter Element 04152-YZZA1 (04152-YZZA1)\n1 x Genuine Toyota Engine Air Filter 17801-F0050 (17801-F0050)\n4 x Genuine Toyota Iridium Spark Plug 90919-01289 (90919-01289)\n\nEngine oil, the cabin air filter, the oil drain plug gasket and the oil filter housing O-ring are not included.\n\nSpecifications\n\nBrand: Toyota (genuine parts)\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L gas, non-hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "checkedOn": "2026-11-18",
+        "basis": "sum of component targets; each component 3-5% under the lowest verified competitor for that exact part",
+        "componentBenchmarkTotal": 76.01,
+        "kitTargetPrice": 72.54,
+        "undercutVsBenchmark": 0.0457,
+        "kitDiscount": null,
+        "competitorKitPrice": null,
+        "competitorKitNote": "No competitor price for an identical kit was researched; the benchmark is the sum of the lowest individual prices, which may come from different sellers.",
+        "priceType": "competitive target (not approved)",
+        "profitability": "review required",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: needs a licensed photo of the actual kit contents",
+      "issues": [
+        "Oil filter 04152-YZZA1 is not verified for the 2019-2024 RAV4 2.5L: dealer listings found cover the 2012-2018 RAV4 only. Confirm the 2019+ A25A-FKS oil filter number from a dealer catalog before this kit can move forward.",
+        "04152-YZZA1: verified fitment does not cover 2019-2024 RAV4"
+      ],
+      "blocking": [
+        "fitment verification required",
+        "supplier cost required",
+        "kit photography required",
+        "price approval required"
+      ],
+      "sources": [
+        "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza1",
+        "https://parts.lakelandtoyota.com/p/TOYOTA__RAV-4-LE/Engine-Air-Filter/14760743/17801F0050.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901289",
+        "https://www.sparksparts.com/oem-parts/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1",
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-air_filter.html",
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-spark_plug.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html",
+        "https://www.toyotapartsnow.com/oem/toyota~air-filter-element-sub-assembly~17801-f0050"
+      ]
+    }
+  ]
+}
