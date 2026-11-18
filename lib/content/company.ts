@@ -102,9 +102,9 @@ export const CALIFORNIA_FULFILLMENT = {
  * from DrivoraParts or the supplier network. It names no facility or region.
  */
 export const REGIONAL_FULFILLMENT_SUMMARY =
-  "Orders ship from DrivoraParts or our supplier network, depending on the part";
+  "Ships from DrivoraParts or our supplier network, depending on part availability and location";
 
-export const COMPANY_MOTTO = "Performance • Quality • Reliability";
+export const COMPANY_MOTTO = "Toyota Parts & Engines. One Focus.";
 
 /**
  * Short lines for the about page. There is no "Corporate HQ" line: nothing

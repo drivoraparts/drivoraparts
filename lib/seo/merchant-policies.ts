@@ -8,6 +8,13 @@ import {
   type ShippingLabel,
 } from "@/lib/shipping/rates";
 import { absoluteUrl } from "./urls";
+import { SERVED_US_STATES } from "@/lib/shipping/us-address";
+
+/**
+ * The regions shipped to: the 48 contiguous states and DC. Alaska and Hawaii
+ * are not served (pending supplier confirmation), so they are not declared.
+ */
+const TABLE_RATE_REGIONS = SERVED_US_STATES.map((s) => s.code);
 
 type JsonLd = Record<string, unknown>;
 
@@ -62,6 +69,7 @@ function shippingDetailsForCountry(
     shippingDestination: {
       "@type": "DefinedRegion",
       addressCountry,
+      ...(addressCountry === "US" ? { addressRegion: TABLE_RATE_REGIONS } : {}),
     },
     deliveryTime: deliveryTime(transitTime),
   };

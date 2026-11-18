@@ -90,17 +90,6 @@
   2015,
   2021,
   2023,
-  2027,
-  2029,
-  2034,
-  2038,
-  2041,
-  2048,
-  2050,
-  2054,
-  2055,
-  2057,
-  2074,
   2093,
   2094,
   2115,
@@ -3790,6 +3779,14 @@
    "reason": "listing names Toyota and another manufacturer"
   },
   {
+   "id": 2027,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2029,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 2031,
    "reason": "listing names Toyota and another manufacturer"
   },
@@ -3798,8 +3795,20 @@
    "reason": "listing names Toyota and another manufacturer"
   },
   {
+   "id": 2034,
+   "reason": "US fitment research: HOLD"
+  },
+  {
    "id": 2035,
    "reason": "listing names Toyota and another manufacturer"
+  },
+  {
+   "id": 2038,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2041,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2045,
@@ -3810,16 +3819,36 @@
    "reason": "listing names Toyota and another manufacturer"
   },
   {
+   "id": 2048,
+   "reason": "US fitment research: HOLD"
+  },
+  {
    "id": 2049,
    "reason": "listing names Toyota and another manufacturer"
+  },
+  {
+   "id": 2050,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2052,
    "reason": "listing names Toyota and another manufacturer"
   },
   {
+   "id": 2054,
+   "reason": "US fitment research: HOLD"
+  },
+  {
+   "id": 2055,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 2056,
    "reason": "listing names Toyota and another manufacturer"
+  },
+  {
+   "id": 2057,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2058,
@@ -3852,6 +3881,10 @@
   {
    "id": 2070,
    "reason": "listing names Toyota and another manufacturer"
+  },
+  {
+   "id": 2074,
+   "reason": "US fitment research: HOLD"
   },
   {
    "id": 2075,
@@ -4306,13 +4339,6 @@
   171,
   1919,
   1920,
-  1946,
-  1952,
-  1953,
-  1954,
-  1961,
-  1962,
-  1963,
   2115
  ]
 }

@@ -100,7 +100,13 @@ results.cases = {
   newZealand: view(one(100, "New Zealand")),
   puertoRico: view(one(100, "Puerto Rico")),
   usTypo: view(one(40, "United State")),
+  // Alaska and Hawaii: blocked pending supplier confirmation, never priced.
+  akParcel: view(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "AK")),
+  hiFreight: view(quoteShippingWith([{ productId: 3, quantity: 1, price: 100 }], "USA", classify as any, "Hawaii")),
+  caState: view(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "CA")),
+  dcState: view(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "DC")),
 };
+results.akDescribe = describeQuote(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "AK"));
 
 const addr = (country: any, state: any, zip: any) => usShippingAddressError({ country, state, zip });
 results.address = {
@@ -118,6 +124,8 @@ results.address = {
   badState: addr("United States", "ZZ", "90210"),
   territory: addr("United States", "PR", "00901"),
   military: addr("United States", "AE", "09001"),
+  alaska: addr("United States", "AK", "99501"),
+  hawaii: addr("USA", "Hawaii", "96813"),
   badZip: addr("United States", "CA", "9021"),
   ukPostcodeAsUs: addr("United States", "CA", "SW1A 1AA"),
 };
@@ -194,6 +202,7 @@ results.jsonld = {
   freight500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingRate?.value ?? null,
   freightLabel: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingLabel ?? null,
   transit: us(parcel500)?.deliveryTime?.transitTime ?? null,
+  regions: us(parcel500)?.shippingDestination?.addressRegion ?? null,
   handling: us(parcel500)?.deliveryTime?.handlingTime ?? null,
 };
 
@@ -222,6 +231,7 @@ const expectCases = {
   canada: OUT, canadaFreight: OUT, uk: OUT, ukShort: OUT, england: OUT, australia: OUT, germany: OUT,
   france: OUT, southAfrica: OUT, nigeria: OUT, japan: OUT, mexico: OUT, newZealand: OUT, puertoRico: OUT,
   usTypo: OUT,
+  akParcel: "unsupported_state", hiFreight: "unsupported_state", caState: 0, dcState: 0,
 };
 const expectDescribe = {
   us0: "Free standard US shipping",
@@ -243,7 +253,8 @@ for (const k of ["usOk", "usZip4", "usDc"]) if (a[k] !== null) problems.push(`US
 for (const k of ["canada", "uk", "australia", "germany", "southAfrica", "mexicoUsZip"])
   if (a[k] !== out.outsideMessage) problems.push(`international address ${k} not refused as outside the US: ${JSON.stringify(a[k])}`);
 if (!/territories/.test(a.territory ?? "") || !/APO/.test(a.military ?? "")) problems.push(`territory/military not explained: ${a.territory} | ${a.military}`);
-for (const k of ["noCountry", "noState", "badState", "territory", "military", "badZip", "ukPostcodeAsUs"])
+if (!/Alaska or Hawaii/.test(a.alaska ?? "") || !/Alaska or Hawaii/.test(a.hawaii ?? "")) problems.push(`Alaska/Hawaii not refused with the real reason: ${a.alaska} | ${a.hawaii}`);
+for (const k of ["noCountry", "noState", "badState", "territory", "military", "alaska", "hawaii", "badZip", "ukPostcodeAsUs"])
   if (!a[k]) problems.push(`incomplete/invalid address ${k} was accepted`);
 if (out.stateNorm.ca !== "CA" || out.stateNorm.name !== "NC" || out.stateNorm.bad !== null) problems.push(`state normalisation wrong: ${JSON.stringify(out.stateNorm)}`);
 if (!out.zip.five || !out.zip.plus4 || out.zip.short || out.zip.alpha) problems.push(`ZIP validation wrong: ${JSON.stringify(out.zip)}`);
@@ -297,6 +308,16 @@ if (out.jsonld.parcel500 !== "0.00") problems.push(`JSON-LD parcel $500 US rate:
 if (out.jsonld.parcel1500 !== "100.00") problems.push(`JSON-LD parcel $1,500 US rate: expected 100.00, got ${out.jsonld.parcel1500}`);
 if (out.jsonld.freight500 !== "199.00") problems.push(`JSON-LD US freight rate: expected 199.00, got ${out.jsonld.freight500}`);
 if (out.jsonld.freightLabel !== "freight") problems.push("JSON-LD freight item has the wrong shippingLabel");
+if (!/Alaska or Hawaii/.test(out.akDescribe ?? "")) problems.push(`AK quote text wrong: ${out.akDescribe}`);
+{
+  const r = out.jsonld.regions ?? [];
+  if (!Array.isArray(r) || r.length !== 49 || r.includes("AK") || r.includes("HI") || !r.includes("DC") || !r.includes("CA"))
+    problems.push(`JSON-LD US regions should be the 48 contiguous states + DC: ${JSON.stringify(r)}`);
+}
+{
+  const route = fs.readFileSync(path.join(ROOT, "app/api/checkout/route.ts"), "utf8");
+  if (!/customer\.country,\s*customer\.state/.test(route)) problems.push("/api/checkout no longer passes the state to the shipping quote");
+}
 if (out.jsonld.transit?.minValue !== 5 || out.jsonld.transit?.maxValue !== 15) problems.push(`US transit is not 5-15: ${JSON.stringify(out.jsonld.transit)}`);
 if (out.jsonld.handling?.minValue !== 1 || out.jsonld.handling?.maxValue !== 5) problems.push(`US handling is not 1-5: ${JSON.stringify(out.jsonld.handling)}`);
 

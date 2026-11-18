@@ -20,6 +20,18 @@ import {
   itemListJsonLd,
 } from "@/lib/seo";
 
+/** Singular catalog category names that read better plural in a title. */
+const PLURAL_TITLE: Record<string, string> = {
+  engine: "Engines",
+  transmission: "Transmissions",
+  turbocharger: "Turbochargers",
+};
+
+/** "Toyota Engines", "Toyota Suspension": the category page title. */
+function toyotaCategoryTitle(slug: string, name: string): string {
+  return `Toyota ${PLURAL_TITLE[slug] ?? name}`;
+}
+
 export const dynamic = "force-static";
 
 export function generateStaticParams() {
@@ -52,7 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const productCount = getProductsByCategory(slug).length;
 
   return buildPageMetadata({
-    title: `${category.name} Performance Parts`,
+    title: toyotaCategoryTitle(category.slug, category.name),
     description: getCategorySeoDescription(slug, productCount),
     keywords: getCategoryKeywords(slug),
     path: routes.category(slug),
@@ -92,7 +104,7 @@ export default async function Page({ params }: PageProps) {
       <JsonLdScript
         data={[
           collectionPageJsonLd(
-            `${categoryData.name} Performance Parts`,
+            toyotaCategoryTitle(slug, categoryData.name),
             description,
             routes.category(slug)
           ),

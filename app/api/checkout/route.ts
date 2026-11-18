@@ -241,7 +241,8 @@ export async function POST(req: Request) {
         quantity: item.quantity,
         price: Number(item.price),
       })),
-      customer.country
+      customer.country,
+      customer.state
     );
 
     /*

@@ -160,10 +160,22 @@ const TOYOTA_PART_NUMBER = /\b(?:\d{5}-[0-9A-Z]{5}|SU\d{3}-\d{5})\b/;
    Classify
 -------------------------------------------------------------------------- */
 
+// US-market fitment research (lib/inventory/data/us-fitment-decisions.json):
+// EXCLUDE and HOLD listings stay hidden whatever their text says, until the
+// decision is changed there.
+const usFitmentDecisions = new Map(
+  JSON.parse(fs.readFileSync(path.join(ROOT, "lib/inventory/data/us-fitment-decisions.json"), "utf8"))
+    .decisions.map((d) => [d.id, d])
+);
+
 const rows = products
   .filter((p) => p.id !== checkoutTestId)
   .map((p) => {
-    const [group, reason] = classify(p);
+    const decision = usFitmentDecisions.get(p.id);
+    const [group, reason] =
+      decision && (decision.decision === "EXCLUDE" || decision.decision === "HOLD")
+        ? ["C", `US fitment research: ${decision.decision}`]
+        : classify(p);
     const genuineClaim = /\b(?:toyota genuine|genuine toyota)\b/i.test(p.name) || p.brand === "toyota";
     const toyotaPartNumber = TOYOTA_PART_NUMBER.test(`${p.partNumber} ${p.name}`);
     return { ...p, group, reason, genuineCandidate: group === "A" && (genuineClaim || toyotaPartNumber) };

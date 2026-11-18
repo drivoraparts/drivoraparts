@@ -1,0 +1,167 @@
+{
+  "_comment": "US-market fitment research decisions (2026-11-18). Read by scripts/audit-toyota-catalog.mjs: EXCLUDE and HOLD listings are hidden from the storefront, sitemap and feeds (group C) and kept in the catalog; KEEP/UPDATE listings follow the normal rules. HOLD means a US Toyota version of the product exists but this listing's unit is a different, vehicle-specific SKU -- publish only after the supplier confirms it can supply the US-market SKU, at a confirmed price, with matching photos. Evidence is internal and never shown to customers.",
+  "decisions": [
+    {
+      "id": 1715,
+      "decision": "UPDATE",
+      "product": "Titan7 T-D6 19-inch forged wheel set",
+      "application": "2020-2026 Toyota GR Supra (A90)",
+      "evidence": "Vivid Racing: T-D6 19x9.5 5x112 +34/+35, 19x11 5x112 +40, CB 66.6; Speed Industry: T-D6 19in A90 MKV Supra GR full set (19x9.5 +35 front, 19x11 +40 rear); UroTuning: Titan 7 T-D6 19in 5x112 (TD601995035511266MB); BimmerWorld: T-D6 set sized for GR Supra / G29, no spacers required.",
+      "sources": [
+        "https://www.vividracing.com/titan-td6-wheel-19x95-5x112-34mm-machine-black-p-152926825.html",
+        "https://speedindustry.com/titan-7-t-d6-19in-machine-black-a90-mkv-supra-gr-2020-full-set",
+        "https://www.urotuning.com/products/titan-7-t-d6-19-5x112-machine-black",
+        "https://www.bimmerworld.com/Wheels-Tires/Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": 1716,
+      "decision": "UPDATE",
+      "product": "Titan7 T-S5 19-inch forged wheel set",
+      "application": "2020-2026 Toyota GR Supra (A90)",
+      "evidence": "Vivid Racing: T-S5 19x11 5x112 +40, CB 66.5; Speed Industry: T-S5 19in A90 MKV Supra GR front and rear fitment (19x11 +40 rear); Wheelfront and ThreePiece GR Supra guide: 19x9.5 +34 front / 19x11 +40 rear; AMS Performance T-S5 GR Supra page: clears OEM brakes; BimmerWorld: set for G29 / Supra.",
+      "sources": [
+        "https://vividracing.com/titan-ts5-wheel-19x11-5x112-40mm-machine-black-p-153875794.html",
+        "https://speedindustry.com/titan-7-t-s5-19in-machine-black-a90-mkv-supra-gr-2020-front-and-rear-fitment",
+        "https://www.threepiece.us/blog/2026-toyota-gr-supra-wheel-fitment-guide-and-specs/",
+        "https://www.amsperformance.com/?p=56776",
+        "https://www.bimmerworld.com/Wheels-Tires/Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": 1719,
+      "decision": "UPDATE",
+      "product": "Titan7 T-S5 20-inch forged wheel set",
+      "application": "2020-2026 Toyota GR Supra (A90)",
+      "evidence": "AMS Performance T-S5 GR Supra: 20x9.5 +37 front, 20x11 +43 rear, 5x112, CB 66.6; Wheelfront GR Supra build on 20x9.5 +37 / 20x11 +43 T-S5 with 265/30R20 and 295/30R20; BimmerWorld 20-inch set for G29 / Supra, front 20x9.5 ET37, no spacers.",
+      "sources": [
+        "https://www.amsperformance.com/?p=56776",
+        "https://wheelfront.com/?p=74993",
+        "https://www.bimmerworld.com/Wheels-Tires/Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra.html"
+      ],
+      "confidence": "high (rear offset +43 per AMS and Wheelfront)"
+    },
+    {
+      "id": 2034,
+      "decision": "HOLD",
+      "product": "Alu-Cab Canopy Camper",
+      "application": "Candidate: 2016-2023 Tacoma (short and long bed), 2024+ Tacoma long bed, 2007-2021 and 2022+ Tundra 5.5/6.5 ft bed -- each a separate vehicle-specific SKU",
+      "evidence": "Alu-Cab lists the Canopy Camper for Tundra 2007-2021 and 2022+ (5.5 and 6.5 bed) and Tacoma Gen 4 long bed; US dealers list it for 2016+ Tacoma. This listing is the LandCruiser 79/300 unit and is priced at $4,856.77 while US dealers list the Tacoma Canopy Camper from about $11,828, so the listing cannot be relabeled as the US product without supplier confirmation of SKU and price.",
+      "sources": [
+        "https://reach.dog/shop/mule-expedition-outfitters/products/alu-cab-canopy-camper-for-2016-toyota-tacoma",
+        "https://www.alu-cab.com/products/alu-cab-canopy-camper-deluxe/"
+      ],
+      "confidence": "high that a US Toyota version exists; listing unit unconfirmed"
+    },
+    {
+      "id": 2074,
+      "decision": "HOLD",
+      "product": "RSI SmartCap EVOd Defender",
+      "application": "Candidate: 2016-2023 Tacoma, 2024+ Tacoma, Tundra -- separate vehicle-specific SKUs",
+      "evidence": "US dealers list the RSI SmartCap EVOd Defender for 2024+ Tacoma and EVO-series caps for 2016-2023 Tacoma and 2022+ Tundra. This listing is the LandCruiser 70/300 unit; the Tacoma and Tundra caps are different SKUs and sizes.",
+      "sources": [
+        "https://reach.dog/shop/rhino-adventure-gear/products/rsi-smartcap-evod-defender-2024-toyota-tacoma",
+        "https://offroadtents.com/products/rsi-smartcap-evod-defender-for-toyota",
+        "https://reconrecovery.com/products/rsi-evo-sport-smart-cap-for-2022-2024-toyota-tundra-6-5ft-short-bed-recon-recovery"
+      ],
+      "confidence": "high that a US Toyota version exists; listing unit unconfirmed"
+    },
+    {
+      "id": 2054,
+      "decision": "HOLD",
+      "product": "HSP Roll R Cover",
+      "application": "Candidate: 2022+ Toyota Tundra (HSP part TUN4RS3.5) -- a retractable bed cover, not a canopy",
+      "evidence": "Australian retailers list an HSP Roll R Cover Series 3.5 for the Toyota Tundra (TUN4RS3.5). No US dealer or US-market fitment found. This listing is the Hilux unit.",
+      "sources": [
+        "https://tjmnorthernbeaches.com.au/products/toyota-tundra-hsp-roll-r-cover-tun4rs3-5",
+        "https://strathfieldcarradios.com.au/hsp-roll-r-cover-series-3-5-suits-toyota-tundra-without-sports-bar"
+      ],
+      "confidence": "low for US supply"
+    },
+    {
+      "id": 2048,
+      "decision": "HOLD",
+      "product": "Norweld aluminum canopy",
+      "application": "Candidate: 2005-2015 and 2016-2023 Tacoma (5 and 6 ft bed) -- only as a dealer-installed Norweld tray + canopy system",
+      "evidence": "Main Line Overland (exclusive US Norweld dealer) offers Norweld tray and canopy systems for 2nd Gen and 2016+ Tacoma from $6,699 installed; Norweld publishes a USA price list. The US product replaces the bed with a tray; this listing is a LandCruiser 79 tray canopy, not a bed-mounted unit.",
+      "sources": [
+        "https://mainlineoverland.com/blogs/news/norweld-ute-tray-ute-canopy-price-sheet",
+        "https://norweld.com.au/wp-content/uploads/Norweld-USA-Pricelist-May-2023-FA.pdf",
+        "https://norweld.com.au/american-truck-trays-canopies/"
+      ],
+      "confidence": "medium; requires tray conversion"
+    },
+    {
+      "id": 2027,
+      "decision": "EXCLUDE",
+      "product": "ARB Classic canopy",
+      "application": "None found for a US-market Toyota",
+      "evidence": "ARB's US canopy for Toyota is the Ascent (2024+ Tacoma 5 ft bed, AC19C), a different product. No US dealer lists the Classic canopy for Tacoma or Tundra. Listing fitment: Hilux dual cab.",
+      "sources": [
+        "https://arbusa.com/ascent",
+        "https://www.quadratec.com/p/arb/ascent-truck-cap-toyota-tacoma-short-bed",
+        "https://store.arbusa.com/content/AC19C ASCENT CANOPY TACOMA.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": 2029,
+      "decision": "EXCLUDE",
+      "product": "ARB Pinnacle canopy",
+      "application": "None found for a US-market Toyota",
+      "evidence": "No US listing of an ARB Pinnacle canopy; ARB USA sells only the Ascent for Tacoma. Listing fitment 'LandCruiser 300 dual cab' describes a body style that does not exist (the 300 Series is a wagon).",
+      "sources": ["https://arbusa.com/ascent"],
+      "confidence": "high"
+    },
+    {
+      "id": 2038,
+      "decision": "EXCLUDE",
+      "product": "EGR Premium canopy",
+      "application": "None found for a US-market Toyota",
+      "evidence": "EGR's US Tacoma range is visors, hood guards, cab spoilers and a tonneau cover; no canopy. Listing fitment: Hilux N80 dual cab.",
+      "sources": ["https://extremeterrain.com/egr-tacoma-rolltrac manual-tonneau-cover-rt040481ml.html"],
+      "confidence": "high"
+    },
+    {
+      "id": 2041,
+      "decision": "EXCLUDE",
+      "product": "Carryboy S560 canopy",
+      "application": "None found for a US-market Toyota",
+      "evidence": "Carryboy 560 canopies are listed only for Hilux and other non-US pickups, by UK/EU distributors. No US dealer or Tacoma/Tundra version found.",
+      "sources": ["https://www.4x4at.com/toyota-hilux-2021-carryboy-leisure-560-hardtop-canopy"],
+      "confidence": "high"
+    },
+    {
+      "id": 2050,
+      "decision": "EXCLUDE",
+      "product": "Boss Aluminium canopy",
+      "application": "None found for a US-market Toyota",
+      "evidence": "No US dealer or Tacoma/Tundra version found. Listing fitment: Hilux dual cab.",
+      "sources": [],
+      "confidence": "medium (absence of evidence)"
+    },
+    {
+      "id": 2055,
+      "decision": "EXCLUDE",
+      "product": "Razorback aluminium canopy",
+      "application": "None found for a US-market Toyota",
+      "evidence": "No US dealer or Tacoma/Tundra version found. Listing fitment: LandCruiser 79 / Hilux.",
+      "sources": [],
+      "confidence": "medium (absence of evidence)"
+    },
+    {
+      "id": 2057,
+      "decision": "EXCLUDE",
+      "product": "TJM Touring canopy",
+      "application": "None found for a US-market Toyota",
+      "evidence": "TJM's canopy range covers Hilux, Ranger, D-Max and others, not Tacoma or Tundra; TJM's US Tacoma products are awnings and rooftop tents. Listing fitment 'LandCruiser 300 / Prado' names two SUVs.",
+      "sources": [
+        "https://www.tjm.com.au/canopies",
+        "https://extremeterrain.com/tjm-tacoma-yulara-roof-top-tent-620rctrt02.html"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

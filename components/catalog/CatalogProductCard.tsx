@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { GENUINE_BADGE_TEXT, isVerifiedGenuineId } from "@/lib/catalog/genuine-ids";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
@@ -39,6 +40,12 @@ export type CatalogProductCardData = {
   condition?: string;
   conditionLabel?: string;
   inStock?: boolean;
+  /**
+   * The catalog's own field. Category and brand grids hand this card whole
+   * Product objects, which carry `stock` rather than `inStock`; without it a
+   * held listing kept its Add to Cart button there.
+   */
+  stock?: boolean;
 };
 
 export default function CatalogProductCard({
@@ -66,7 +73,7 @@ export default function CatalogProductCard({
   detailed?: boolean;
 }) {
   const thumbnail = getProductThumbnail(product);
-  const outOfStock = product.inStock === false;
+  const outOfStock = product.inStock === false || product.stock === false;
 
   const cartProduct: AddToCartProduct = {
     id: product.id,
@@ -131,6 +138,16 @@ export default function CatalogProductCard({
               size="sm"
             />
           </div>
+          {isVerifiedGenuineId(product.id) ? (
+            <div className="absolute bottom-1.5 left-1.5 z-20">
+              <span
+              className="rounded-[2px] bg-neutral-900 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.08em] text-white"
+              title="Verified against its Toyota part number"
+            >
+              {GENUINE_BADGE_TEXT}
+            </span>
+            </div>
+          ) : null}
           {/* Contained, not cropped -- same reason as the marketplace grid:
               a cover crop takes the ends off gearboxes and body panels, and
               a part's silhouette is most of what identifies it this small. */}

@@ -6,7 +6,7 @@
    the catalog; read its header for how a charge is decided.
 ========================================================= */
 
-import { isUnitedStates, OUTSIDE_US_MESSAGE } from "./us-address";
+import { isBlockedState, isUnitedStates, OUTSIDE_US_MESSAGE } from "./us-address";
 
 /* ---------------------------------------------------------
    Labels
@@ -247,6 +247,8 @@ export type PendingReason =
   | "destination_unknown"
   /** Outside the United States: not shipped to at all. */
   | "outside_service_area"
+  /** Alaska or Hawaii: not shipped to pending supplier confirmation. */
+  | "unsupported_state"
   | "freight_rate_not_set"
   | "above_rate_table";
 
@@ -310,7 +312,8 @@ export function cartShippingLabel(
 export function quoteShippingWith(
   items: ShippingQuoteItem[],
   country: string | null | undefined,
-  classify: (productId: number) => ShippingClassification | null
+  classify: (productId: number) => ShippingClassification | null,
+  state?: string | null
 ): ShippingQuote {
   const subtotalCents = items.reduce(
     (sum, item) => sum + Math.round(item.price * 100) * Math.max(0, Math.floor(item.quantity)),
@@ -324,6 +327,7 @@ export function quoteShippingWith(
   if (!String(country ?? "").trim()) return pending("destination_unknown");
   const destination = shippingDestinationFor(country);
   if (!destination) return pending("outside_service_area");
+  if (isBlockedState(state)) return pending("unsupported_state");
 
   const table = rateTableFor(label, destination);
   if (!table) return pending("freight_rate_not_set");
@@ -356,6 +360,8 @@ export function describeQuote(quote: ShippingQuote): string {
       return "Freight shipping — confirmed with you before payment";
     case "outside_service_area":
       return "We ship only within the United States";
+    case "unsupported_state":
+      return "We can't currently ship to Alaska or Hawaii";
     case "above_rate_table":
       return "Shipping for this order value is confirmed with you before payment";
     case "destination_unknown":

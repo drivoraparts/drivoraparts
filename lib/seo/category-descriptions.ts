@@ -37,7 +37,7 @@ const CATEGORY_COPY: Record<string, string> = {
 export function getCategorySeoDescription(slug: string, productCount = 0): string {
   const base =
     CATEGORY_COPY[slug] ??
-    `Shop ${slug.replace(/-/g, " ")} performance parts online at DrivoraParts. ${categoryKeywordPhrase(slug)}.`;
+    `Shop Toyota ${slug.replace(/-/g, " ")} parts at DrivoraParts. ${categoryKeywordPhrase(slug)}.`;
 
   /*
    * "in-stock listings" went the same way as the brand page's "verified

@@ -2953,16 +2953,16 @@
     "image": "/product-media/wheels-tires/Titan7-TC5-18x10-Forged-Wheel-Set-E46-M3-E9X-M3/1.jpg"
   },
   {
-    "name": "Titan7 T-D6 19-inch Forged Wheel Set - G29 Z4, Supra",
+    "name": "Titan7 T-D6 19-inch Forged Wheel Set for Toyota GR Supra (A90)",
     "category": "wheels-tires",
-    "brand": "universal",
+    "brand": "titan7",
     "price": 1993.74,
     "stock": true,
     "stockQty": 4,
     "condition": "brand-new",
     "warranty": "Manufacturer Warranty",
     "location": "USA Warehouse",
-    "fitment": "G29, Z4",
+    "fitment": "2020–2026 Toyota GR Supra (A90)",
     "thumbnail": "/product-media/wheels-tires/Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
     "images": [
       "/product-media/wheels-tires/Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
@@ -2972,24 +2972,34 @@
       "/product-media/wheels-tires/Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra/5.jpg",
       "/product-media/wheels-tires/Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra/6.jpg"
     ],
-    "description": "Titan7 T-D6 19-inch Forged Wheel Set - G29 Z4, Supra\n\nForged and light weight 19 inch wheel set for Z4 and Supra\nFitment: G29, Z4\n\nShipping\nFast domestic fulfillment on in-stock wheels and accessories. Oversized wheel sets may ship freight — contact for a quote.",
+    "description": "Titan7 T-D6 19-inch Forged Wheel Set for Toyota GR Supra (A90)\n\nA staggered set of four fully forged Titan7 T-D6 six-spoke wheels, sized for the A90 Toyota GR Supra to mount without wheel spacers.\n\nSpecifications\n\nBrand: Titan7\nModel: T-D6\nConstruction: Fully forged\nSet: 4 wheels (2 front, 2 rear)\nFront: 19x9.5, +35 mm offset\nRear: 19x11, +40 mm offset\nBolt pattern: 5x112\nCenter bore: 66.6 mm\nFitment: 2020–2026 Toyota GR Supra (A90)\n\nIf your car has an aftermarket big brake kit, confirm caliper clearance before ordering.\n\nShipping\nShips within the United States only",
     "referencePriceVerified": true,
     "sourceSlug": "Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra",
     "id": 1715,
     "createdAt": 1751599999885,
-    "image": "/product-media/wheels-tires/Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra/1.jpg"
+    "image": "/product-media/wheels-tires/Titan7-TD6-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
+    "fitmentYears": "2020–2026",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "make": "Toyota",
+        "model": "GR Supra",
+        "submodel": "A90"
+      }
+    ]
   },
   {
-    "name": "Titan7 T-S5 19-inch Forged Wheel Set - G29 Z4, Supra",
+    "name": "Titan7 T-S5 19-inch Forged Wheel Set for Toyota GR Supra (A90)",
     "category": "wheels-tires",
-    "brand": "universal",
+    "brand": "titan7",
     "price": 1993.74,
     "stock": true,
     "stockQty": 4,
     "condition": "brand-new",
     "warranty": "Manufacturer Warranty",
     "location": "USA Warehouse",
-    "fitment": "G29, Z4",
+    "fitment": "2020–2026 Toyota GR Supra (A90)",
     "thumbnail": "/product-media/wheels-tires/Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
     "images": [
       "/product-media/wheels-tires/Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
@@ -2999,12 +3009,22 @@
       "/product-media/wheels-tires/Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra/5.jpg",
       "/product-media/wheels-tires/Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra/6.jpg"
     ],
-    "description": "Titan7 T-S5 19-inch Forged Wheel Set - G29 Z4, Supra\n\nForged and light weight 19 inch wheel set for Z4 and Supra\nFitment: G29, Z4\n\nShipping\nFast domestic fulfillment on in-stock wheels and accessories. Oversized wheel sets may ship freight — contact for a quote.",
+    "description": "Titan7 T-S5 19-inch Forged Wheel Set for Toyota GR Supra (A90)\n\nA staggered set of four fully forged Titan7 T-S5 split five-spoke wheels, sized for the A90 Toyota GR Supra to mount without wheel spacers and to clear the factory brakes.\n\nSpecifications\n\nBrand: Titan7\nModel: T-S5\nConstruction: Fully forged\nSet: 4 wheels (2 front, 2 rear)\nFront: 19x9.5, +34 mm offset\nRear: 19x11, +40 mm offset\nBolt pattern: 5x112\nCenter bore: 66.5 mm\nFitment: 2020–2026 Toyota GR Supra (A90)\n\nIf your car has an aftermarket big brake kit, confirm caliper clearance before ordering.\n\nShipping\nShips within the United States only",
     "referencePriceVerified": true,
     "sourceSlug": "Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra",
     "id": 1716,
     "createdAt": 1751599999884,
-    "image": "/product-media/wheels-tires/Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg"
+    "image": "/product-media/wheels-tires/Titan7-TS5-19inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
+    "fitmentYears": "2020–2026",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "make": "Toyota",
+        "model": "GR Supra",
+        "submodel": "A90"
+      }
+    ]
   },
   {
     "name": "Titan7 T-S5 19x10.5 ET44 Forged Wheel",
@@ -3061,16 +3081,16 @@
     "image": "/product-media/wheels-tires/Titan7-TS5-19x95-ET27-Forged-Wheel/1.jpg"
   },
   {
-    "name": "Titan7 T-S5 20-inch Forged Wheel Set - G29 Z4, Supra",
+    "name": "Titan7 T-S5 20-inch Forged Wheel Set for Toyota GR Supra (A90)",
     "category": "wheels-tires",
-    "brand": "universal",
+    "brand": "titan7",
     "price": 2385.24,
     "stock": true,
     "stockQty": 4,
     "condition": "brand-new",
     "warranty": "Manufacturer Warranty",
     "location": "USA Warehouse",
-    "fitment": "G29, Z4",
+    "fitment": "2020–2026 Toyota GR Supra (A90)",
     "thumbnail": "/product-media/wheels-tires/Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
     "images": [
       "/product-media/wheels-tires/Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
@@ -3080,12 +3100,22 @@
       "/product-media/wheels-tires/Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra/5.jpg",
       "/product-media/wheels-tires/Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra/6.jpg"
     ],
-    "description": "Titan7 T-S5 20-inch Forged Wheel Set - G29 Z4, Supra\n\nForged and light weight 20 inch wheel set for Z4 and Supra\nFitment: G29, Z4\n\nShipping\nFast domestic fulfillment on in-stock wheels and accessories. Oversized wheel sets may ship freight — contact for a quote.",
+    "description": "Titan7 T-S5 20-inch Forged Wheel Set for Toyota GR Supra (A90)\n\nA staggered set of four fully forged Titan7 T-S5 split five-spoke wheels in 20-inch, sized for the A90 Toyota GR Supra to mount without wheel spacers.\n\nSpecifications\n\nBrand: Titan7\nModel: T-S5\nConstruction: Fully forged\nSet: 4 wheels (2 front, 2 rear)\nFront: 20x9.5, +37 mm offset\nRear: 20x11, +43 mm offset\nBolt pattern: 5x112\nCenter bore: 66.6 mm\nCommon tire sizes: 265/30R20 front, 295/30R20 rear\nFitment: 2020–2026 Toyota GR Supra (A90)\n\nIf your car has an aftermarket big brake kit, confirm caliper clearance before ordering.\n\nShipping\nShips within the United States only",
     "referencePriceVerified": true,
     "sourceSlug": "Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra",
     "id": 1719,
     "createdAt": 1751599999881,
-    "image": "/product-media/wheels-tires/Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg"
+    "image": "/product-media/wheels-tires/Titan7-TS5-20inch-Forged-Wheel-Set-G29-Z4-Supra/1.jpg",
+    "fitmentYears": "2020–2026",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "make": "Toyota",
+        "model": "GR Supra",
+        "submodel": "A90"
+      }
+    ]
   },
   {
     "name": "Toyo RR Race Tires",

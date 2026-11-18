@@ -11,14 +11,30 @@
    Pure data and functions, no imports, so client components
    can use it too.
 
-   Coverage is the 50 states and the District of Columbia.
-   US territories (Puerto Rico, Guam, USVI...) and APO/FPO/DPO
-   military addresses are NOT accepted: the published rates
-   were never set for them and their carriers and transit
-   differ. Add them here only with a deliberate rate decision.
+   Coverage (owner decision, 2026-11-18): the 48 contiguous
+   states and the District of Columbia.
+   Alaska and Hawaii are blocked pending supplier confirmation
+   (BLOCKED_STATES). US territories (Puerto Rico, Guam, USVI...)
+   and APO/FPO/DPO military addresses are blocked. Change this
+   only with a deliberate fulfillment and rate decision.
 ========================================================= */
 
 export const SHIPPING_COUNTRY_NAME = "United States";
+
+/**
+ * States not shipped to until suppliers confirm they can deliver there. Kept
+ * in US_STATES so "Alaska" is recognized and refused with the real reason,
+ * not "please choose your state".
+ */
+export const BLOCKED_STATES: ReadonlySet<string> = new Set(["AK", "HI"]);
+
+export function isBlockedState(state?: string | null): boolean {
+  const code = normalizeUsState(state);
+  return code ? BLOCKED_STATES.has(code) : false;
+}
+
+export const BLOCKED_STATE_MESSAGE =
+  "We can't currently ship to Alaska or Hawaii. DrivoraParts ships to the 48 contiguous states and Washington, DC.";
 
 export const US_STATES: readonly { code: string; name: string }[] = [
   { code: "AL", name: "Alabama" },
@@ -74,6 +90,9 @@ export const US_STATES: readonly { code: string; name: string }[] = [
   { code: "WY", name: "Wyoming" },
 ];
 
+/** The states offered at checkout: every entry in US_STATES that is served. */
+export const SERVED_US_STATES = US_STATES.filter((s) => !BLOCKED_STATES.has(s.code));
+
 /**
  * Country as typed or sent, reduced to letters and single spaces so "U.S.A",
  * "U.S.", "united states of america" and "the United States" compare equal.
@@ -125,7 +144,7 @@ const NOT_SERVED_US_REGIONS: ReadonlySet<string> = new Set([
 ]);
 
 export const NOT_SERVED_US_REGION_MESSAGE =
-  "We currently ship only to the 50 states and Washington, DC. We can't deliver to US territories or APO/FPO/DPO addresses.";
+  "We currently ship only to the 48 contiguous states and Washington, DC. We can't deliver to US territories or APO/FPO/DPO addresses.";
 
 export const OUTSIDE_US_MESSAGE =
   "DrivoraParts ships only within the United States, so we can't deliver to this address. International orders can't be placed.";
@@ -147,6 +166,7 @@ export function usShippingAddressError(input: {
   const stateRaw = String(input.state ?? "").trim().toUpperCase();
   if (NOT_SERVED_US_REGIONS.has(stateRaw)) return NOT_SERVED_US_REGION_MESSAGE;
   if (!normalizeUsState(input.state)) return "Please choose your state.";
+  if (isBlockedState(input.state)) return BLOCKED_STATE_MESSAGE;
   if (!isValidUsZip(input.zip)) return "Please enter a valid 5-digit US ZIP code.";
   return null;
 }
