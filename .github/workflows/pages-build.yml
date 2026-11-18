@@ -56,6 +56,21 @@ jobs:
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
         run: npm run pages:deploy
 
+      # The Worker's every-10-minutes cron (payment reconciliation and review
+      # requests) does nothing without CRON_SECRET. Create it once if it is
+      # missing: a random value generated here and piped straight to
+      # Cloudflare, so it never appears in a log, the repository or a chat.
+      # An existing secret is left exactly as it is.
+      - name: Ensure CRON_SECRET is set on the Worker
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
+        run: |
+          if npx wrangler secret list --format json | grep -q '"CRON_SECRET"'; then
+            echo "CRON_SECRET already set on the Worker; leaving it unchanged."
+          else
+            openssl rand -hex 32 | npx wrangler secret put CRON_SECRET
+            echo "CRON_SECRET created on the Worker."
+          fi
+
       - name: Ping search engines (sitemap)
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
         run: |
