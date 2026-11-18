@@ -93,7 +93,7 @@ export default function PopularCategoriesSection() {
                         {cat.name}
                       </p>
                       <p className="mt-0.5 text-xs tabular-nums text-neutral-500">
-                        {cat.count.toLocaleString()} listings
+                        {cat.count.toLocaleString()} listing{cat.count === 1 ? "" : "s"}
                       </p>
                     </div>
                     <span
