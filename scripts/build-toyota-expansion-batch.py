@@ -22,6 +22,10 @@ Writes docs/catalog-expansion/toyota-expansion-batch-1.{json,csv}
 import csv
 import json
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from toyota_expansion_pricing import assess  # noqa: E402
 
 OUT_DIR = "docs/catalog-expansion"
 
@@ -77,9 +81,9 @@ PARTS = [
          notes="2.7L Tacoma fitment disputed between dealer catalogs and not claimed.",
          sources=[f"{TD}/oem/toyota~filter~oil~90915-yzzd3.html", f"{OL}/toyota-oil-filter-90915yzzd3", f"{SP}/toyota-1984-2015-toyota-engine-oil-filter-tacoma-tundra-4runner-fj-cruiser-land-cruiser-90915yzzd3"]),
     dict(pn="90915-YZZN3", kind="oil_filter_spin", name="Spin-On Oil Filter", group="commercial_pending", conf="medium",
-         apps=[app(2024, 2025, "Tacoma", "2.4L turbo")], engines="T24A-FTS", supersedes="90915-10010",
-         notes="2025+ 4Runner fitment is seller-stated only and not claimed.",
-         sources=[f"{TA}/filter-oil-90915yzzn3", f"{TN}/oem/toyota~filter-oil~90915-yzzn3"]),
+         apps=[app(2022, 2025, "Tundra", "3.4L twin-turbo V6"), app(2023, 2025, "Sequoia", "3.4L twin-turbo V6 hybrid")], engines="V35A-FTS", supersedes="90915-10010",
+         notes="2024+ Tacoma and 2025+ 4Runner fitment is seller-stated only and not claimed.",
+         sources=[f"{TA}/filter-oil-90915yzzn3", "https://parts.frontiertoyota.com/oem-parts/toyota-oil-filter-90915yzzn3", "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-oil-filter-90915yzzn3"]),
     dict(pn="87139-0R030", kind="cabin_filter", name="Cabin Air Filter", group="commercial_pending", conf="medium",
          apps=[app(2019, 2023, "RAV4"), app(2019, 2024, "Corolla")], engines="", supersedes="87139-28020",
          notes="Some RAV4 trims list 87139-58010 instead; check the existing filter.",
@@ -97,9 +101,9 @@ PARTS = [
          apps=[app(2019, 2024, "RAV4", "2.5L"), app(2018, 2024, "Camry", "2.5L")], engines="A25A-FKS", supersedes="90919-A1001",
          notes="Sold individually; four required.",
          sources=[f"{OL}/toyota-spark-plug-9091901289", f"{TD}/oem-2019-toyota-rav4-spark_plug.html"]),
-    dict(pn="90919-02258", kind="ignition_coil", name="Direct Ignition Coil", group="commercial_pending", conf="medium-high",
+    dict(pn="90919-02258", kind="ignition_coil", name="Direct Ignition Coil", group="research_pending", conf="low",
          apps=[app(2016, 2023, "Tacoma", "3.5L V6")], engines="2GR-FKS", supersedes="90919-02248; 90919-02252",
-         notes="Sold individually; a V6 uses six.",
+         notes="Conflict: dealer price listings show 1.8L Corolla / Prius / C-HR / Matrix fitment, not the Tacoma 3.5L. Sold individually.",
          sources=[f"{TA}/coil-ignition-9091902258", f"{TD}/oem/toyota~coil~ignition~90919-02258.html", f"{OL}/toyota-direct-ignition-coil-9091902258"]),
     # ---------------- Brakes ----------------
     dict(pn="04465-04090", kind="pads_front", name="Front Disc Brake Pad Set", group="commercial_pending", conf="medium-high",
@@ -130,7 +134,7 @@ PARTS = [
          notes="Production-date restricted: US-built units from 02/2023.",
          sources=["https://parts.northparktoyota.com/oem-parts/toyota-disc-brake-pad-set-446506170"]),
     dict(pn="04465-35330", kind="pads_front", name="Front Disc Brake Pad Set", group="commercial_pending", conf="medium",
-         apps=[app(2019, 2024, "4Runner", "4.0L V6")], engines="1GR-FE", supersedes="04465-35190; 04465-35230",
+         apps=[app(2020, 2024, "4Runner", "4.0L V6")], engines="1GR-FE", supersedes="04465-35190; 04465-35230",
          notes="Manufacturer note: Mark Advics PV565H.",
          sources=[f"{TD}/oem/toyota~pad~kit~disc~brake~04465-35330.html", f"{TD}/oem-2020-toyota-4runner-brake_pad_set.html"]),
     dict(pn="04465-02530", kind="pads_front", name="Front Disc Brake Pad Set", group="commercial_pending", conf="medium",
@@ -160,8 +164,8 @@ PARTS = [
          apps=[app(2019, 2024, "RAV4", "2.5L")], engines="A25A-FKS; A25A-FXS", supersedes="",
          notes="Single dealer source; needs a second catalog.", sources=[f"{TD}/oem-toyota-rav4-ignition_coil.html"]),
     dict(pn="04465-42200", kind="pads_front", name="Front Disc Brake Pad Set", group="research_pending", conf="low",
-         apps=[app(2019, 2024, "RAV4")], engines="", supersedes="04465-42160",
-         notes="Toyota confirms identity; RAV4 years not shown. MSRP $104.50 at one dealer.",
+         apps=[app(2006, 2012, "RAV4")], engines="", supersedes="04465-42160",
+         notes="Corrected: dealers list 2006-2018 applications incl. 2006-2012 RAV4, not the 2019+ RAV4. Year split unresolved.",
          ref=75.25, ref_src=f"{TA}/pad-kit-disc-brake-l-fitting-parts-fr-0446542200", sources=[f"{TA}/pad-kit-disc-brake-l-fitting-parts-fr-0446542200"]),
     dict(pn="04465-42220", kind="pads_front", name="Front Disc Brake Pad Set", group="research_pending", conf="low",
          apps=[app(2013, 2018, "RAV4")], engines="2AR-FE", supersedes="04465-0R010",
@@ -170,10 +174,10 @@ PARTS = [
     dict(pn="04465-33480", kind="pads_front", name="Front Disc Brake Pad Set", group="research_pending", conf="low",
          apps=[app(2018, 2019, "Camry", "LE / SE 2.5L")], engines="A25A-FKS", supersedes="",
          notes="Overlaps 04465-0E060; resolve which is current.", sources=[f"{TD}/oem/toyota~pad~kit~disc~brake~04465-33480.html"]),
-    dict(pn="90919-01287", kind="spark_plug", name="Iridium Spark Plug", group="research_pending", conf="low",
+    dict(pn="90919-01287", kind="spark_plug", name="Iridium Spark Plug", group="commercial_pending", conf="medium",
          apps=[app(2016, 2023, "Tacoma", "3.5L V6")], engines="2GR-FKS", supersedes="",
-         notes="Conflicts with 90919-01263 for the same engine.", ref=17.48, ref_src=f"{TD}/oem/toyota~plug~spark~90919-01287.html",
-         sources=[f"{TD}/oem/toyota~plug~spark~90919-01287.html", f"{TA}/plug-spark-9091901287"]),
+         notes="Six-plus dealer catalogs list it for the 2016-2023 Tacoma; 90919-01263 is also listed for this engine. Sold individually; six required.", ref=17.48, ref_src=f"{TD}/oem/toyota~plug~spark~90919-01287.html",
+         sources=[f"{TD}/oem/toyota~plug~spark~90919-01287.html", "https://parts.camelbacktoyota.com/oem-parts/toyota-spark-plug-9091901287", "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-spark-plug-9091901287"]),
     dict(pn="90919-01263", kind="spark_plug", name="Iridium Spark Plug", group="research_pending", conf="low",
          apps=[app(2016, 2023, "Tacoma", "3.5L V6")], engines="2GR-FKS", supersedes="",
          notes="Conflicts with 90919-01287.", sources=[f"{SP}/toyota-spark-plug-9091901263", f"{OL}/toyota-spark-plug-9091901263"]),
@@ -185,10 +189,10 @@ PARTS = [
          notes="Supersession inferred from one dealer page.", sources=[f"{TD}/oem-2020-toyota-corolla-oil_filter.html"]),
     dict(pn="04152-YZZA5", kind="oil_filter", name="Oil Filter Element", group="research_pending", conf="low",
          apps=[app(2010, 2015, "Tundra")], engines="1UR-FE / 3UR-FE (unresolved)", supersedes="04152-31050; 04152-31060; 04152-38010",
-         notes="Dealer catalogs conflict on engine.", sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza5.html", f"{OL}/toyota-oil-filter-4152yzza5"]),
+         notes="Dealer catalogs conflict on engine; ToyotaPartsNow lists 2010-2024 4Runner, 2007-2011 Camry, 2011-2014 Tundra, 2006-2008 RAV4.", sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza5.html", f"{OL}/toyota-oil-filter-4152yzza5"]),
     dict(pn="87139-YZZ08", kind="cabin_filter", name="Cabin Air Filter", group="research_pending", conf="low",
          apps=[app(2018, 2024, "Camry")], engines="", supersedes="",
-         notes="Marketplace-only fitment.", sources=[]),
+         notes="Superseded by 87139-YZZ82 per ToyotaPartsDeal and Olathe Toyota; list the current number instead.", sources=[f"{TD}/oem/toyota~cabin~air~filter~87139-yzz08.html"]),
     dict(pn="87139-50100", kind="cabin_filter", name="Cabin Air Filter", group="research_pending", conf="low",
          apps=[app(2010, 2024, "4Runner")], engines="", supersedes="87139-50060",
          notes="Dealer listing internally inconsistent.", sources=[f"{TD}/oem/toyota~element~air~refiner~87139-50100.html"]),
@@ -300,8 +304,7 @@ for p in PARTS:
         "engines": p.get("engines", ""),
         "description": describe(p),
         "price": None,
-        "referencePrice": p.get("ref"),
-        "referencePriceSource": p.get("ref_src", ""),
+        "pricing": assess(p["pn"], True),
         "image": None,
         "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
         "fitmentConfidence": p["conf"],
@@ -327,7 +330,10 @@ for e in ENGINES:
         "fitmentApplications": e["apps"],
         "engines": e["code"],
         "description": f"Toyota {e['code']} {e['desc']} engine assembly. US applications: {fit}. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
-        "price": None, "referencePrice": None, "referencePriceSource": "",
+        "price": None,
+        "pricing": {"status": "no_evidence", "checkedOn": "2026-11-18", "recommendedPrice": None, "confidence": "none",
+                    "flags": ["engine units are priced from the vendor's actual unit; no part number to benchmark"],
+                    "profitabilityFlags": ["acquisition cost not provided -- margin not verified"], "approved": False},
         "image": None, "imageStatus": "pending: photos of the actual unit required",
         "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
         "sources": ["https://8020automotive.com/toyota-2gr-fks-engine-guide/", "https://www.carwhere.com/toyota/engines"] if e["code"] == "2GR-FKS" else [],
@@ -350,11 +356,18 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1.json", "w", encoding="utf-8") as 
 with open(f"{OUT_DIR}/toyota-expansion-batch-1.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["status", "name", "brand", "part_number", "supersedes", "type", "category", "fitment", "engines",
-                "confidence", "reference_price_usd", "reference_price_source", "image_status", "blocking", "sources"])
+                "fitment_confidence", "pricing_status", "msrp", "lowest_competitor", "lowest_price", "lowest_url",
+                "recommended_price", "pricing_confidence", "competitors", "pricing_flags", "profitability_flags",
+                "prices_checked", "image_status", "blocking", "sources"])
     for r in records:
+        pr = r["pricing"]
+        lo = pr.get("lowestCompetitor")
         w.writerow([r["status"], r["name"], "Toyota", r["partNumber"], r["supersedes"], r["partType"],
                     r["proposedCategoryName"], r["fitment"], r["engines"], r["fitmentConfidence"],
-                    r["referencePrice"] if r["referencePrice"] is not None else "", r["referencePriceSource"],
+                    pr["status"], pr.get("msrp") or "", (lo or {}).get("seller", ""), (lo or {}).get("price", ""), (lo or {}).get("url", ""),
+                    pr["recommendedPrice"] if pr["recommendedPrice"] is not None else "", pr["confidence"],
+                    "; ".join(f"{x['seller']} ${x['price']:.2f}" for x in pr.get("competitors", [])),
+                    "; ".join(pr.get("flags", [])), "; ".join(pr.get("profitabilityFlags", [])), pr["checkedOn"],
                     r["imageStatus"], "; ".join(r["blocking"]), " | ".join(r["sources"])])
 
 print(len(records), "records:", {k: sum(r["status"] == k for r in records) for k in ("ready", "commercial_pending", "research_pending")})

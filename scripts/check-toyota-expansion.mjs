@@ -79,9 +79,27 @@ for (const file of files) {
       if (!(r.sources ?? []).length) problems.push(`${at}: no sources`);
       if (/^low/.test(r.fitmentConfidence ?? "")) problems.push(`${at}: low-confidence fitment cannot be ${r.status}`);
     }
+    // Competitor pricing: research evidence, never an automatic price.
+    const pr = r.pricing;
+    if (!pr || !pr.checkedOn) problems.push(`${at}: no pricing research block`);
+    else {
+      const comps = pr.competitors ?? [];
+      for (const cmp of comps) {
+        if (!cmp.seller || !/^https?:\/\//.test(cmp.url ?? "") || !(cmp.price > 0)) problems.push(`${at}: competitor price without seller, URL or amount`);
+      }
+      if (pr.recommendedPrice != null) {
+        if (comps.length < 3) problems.push(`${at}: recommended price from fewer than 3 attributed competitors`);
+        const lowest = Math.min(...comps.map((x) => x.price));
+        const expected = Math.round((Math.floor(lowest * 0.85 * 10 + 1e-9) / 10 - 0.01) * 100) / 100;
+        if (Math.abs(pr.recommendedPrice - expected) > 0.001) problems.push(`${at}: recommended $${pr.recommendedPrice} does not follow lowest ($${lowest}) x 0.85 rounded down to x.x9 ($${expected})`);
+        if (pr.lowestCompetitor?.price !== lowest) problems.push(`${at}: lowestCompetitor is not the lowest attributed price`);
+      }
+      if (r.price != null && !pr.approved) problems.push(`${at}: selling price set without pricing approval`);
+    }
+
     if (r.status === "ready") {
       if (typeof r.price !== "number" || !(r.price > 0)) problems.push(`${at}: ready without an approved price`);
-      if (r.price != null && r.price === r.referencePrice) problems.push(`${at}: price equals the market reference price -- set an approved price`);
+      if (!pr?.approved) problems.push(`${at}: ready without pricing approval`);
       const img = r.image ? path.join(ROOT, "public", r.image.replace(/^\//, "")) : null;
       if (!img || !fs.existsSync(img)) problems.push(`${at}: ready without an image file under public/`);
     }
