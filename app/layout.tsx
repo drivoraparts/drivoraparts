@@ -4,6 +4,7 @@ import { Archivo } from "next/font/google";
 import "./globals.css";
 import StoreProviders from "./providers";
 import LayoutShell from "@/components/layout/LayoutShell";
+import { hasGenuineSection } from "@/lib/catalog/toyota-departments";
 import { getSiteUrl, getGoogleSiteVerification } from "@/lib/env";
 import {
   DEFAULT_DESCRIPTION,
@@ -170,7 +171,7 @@ export default async function RootLayout({
               initialLocale={initialLocale}
               initialLanguage={initialLanguage}
             >
-              <LayoutShell>{children}</LayoutShell>
+              <LayoutShell showGenuine={hasGenuineSection()}>{children}</LayoutShell>
             </StoreProviders>
           </>
         )}

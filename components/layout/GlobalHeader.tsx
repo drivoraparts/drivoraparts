@@ -6,34 +6,33 @@ import { useEffect, useRef, useState } from "react";
 import { useCartStore } from "@/lib/store/cartStore";
 import { useTranslation } from "@/hooks/useTranslation";
 
-import toyotaGenuine from "@/lib/inventory/data/toyota-genuine.json";
-
 /*
- * Toyota storefront navigation. "Toyota Genuine Parts" appears only once at
- * least one listing is verified as Genuine (lib/inventory/data/
- * toyota-genuine.json): a nav item opening onto an empty or mislabelled page
- * is worse than none.
+ * Toyota storefront navigation. "Toyota Genuine Parts" appears only when the
+ * Genuine section has a verified, available listing -- decided on the server
+ * (hasGenuineSection, app/layout.tsx) and passed down, so the link can never
+ * open an empty page.
  */
-const HAS_VERIFIED_GENUINE = toyotaGenuine.verified.length > 0;
-
-export const NAV_LINKS: { href: string; label: string }[] = [
-  { href: "/", label: "Home" },
-  ...(HAS_VERIFIED_GENUINE
-    ? [{ href: "/catalog/toyota-genuine", label: "Toyota Genuine Parts" }]
-    : []),
-  { href: "/catalog/all", label: "Shop All Toyota Parts" },
-  { href: "/catalog/usa", label: "Shop by Vehicle" },
-  { href: "/catalog/all?category=engine,transmission", label: "Engines & Transmissions" },
-  { href: "/contact", label: "Support" },
-];
+export function navLinks(showGenuine: boolean): { href: string; label: string }[] {
+  return [
+    { href: "/", label: "Home" },
+    ...(showGenuine ? [{ href: "/catalog/toyota-genuine", label: "Toyota Genuine Parts" }] : []),
+    { href: "/catalog/all", label: "Shop All Toyota Parts" },
+    { href: "/catalog/usa", label: "Shop by Vehicle" },
+    { href: "/catalog/all?category=engine,transmission", label: "Engines & Transmissions" },
+    { href: "/contact", label: "Support" },
+  ];
+}
 
 export default function GlobalHeader({
   setMenuOpen,
   setCartOpen,
+  showGenuine = false,
 }: {
   setMenuOpen: (open: boolean) => void;
   setCartOpen: (open: boolean) => void;
+  showGenuine?: boolean;
 }) {
+  const NAV_LINKS = navLinks(showGenuine);
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);

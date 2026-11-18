@@ -5,7 +5,6 @@ import PageHeading from "@/components/catalog/PageHeading";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { getVerifiedGenuineProducts } from "@/lib/catalog/toyota-departments";
 import { routes, toCatalogCardData } from "@/lib/inventory";
-import { isHeldListing } from "@/lib/inventory/held";
 import { breadcrumbJsonLd, buildPageMetadata, collectionPageJsonLd, itemListJsonLd } from "@/lib/seo";
 
 export const revalidate = 3600;
@@ -31,8 +30,8 @@ export const metadata: Metadata = buildPageMetadata({
  * Toyota: no Toyota logo, and no "authorized" wording.
  */
 export default function ToyotaGenuinePage() {
-  // Held listings (out of stock, details being confirmed) are left out.
-  const products = getVerifiedGenuineProducts(500).filter((p) => !isHeldListing(p));
+  // Verified and available: see getVerifiedGenuineProducts.
+  const products = getVerifiedGenuineProducts(500);
   if (products.length === 0) notFound();
 
   return (

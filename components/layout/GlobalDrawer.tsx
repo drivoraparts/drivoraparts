@@ -4,11 +4,12 @@ import Link from "next/link";
 import CallTextActions from "@/components/contact/CallTextActions";
 import SideDrawer from "./SideDrawer";
 import { useTranslation } from "@/hooks/useTranslation";
-import { NAV_LINKS } from "./GlobalHeader";
+import { navLinks } from "./GlobalHeader";
 
 type GlobalDrawerProps = {
   menuOpen: boolean;
   setMenuOpen: (open: boolean) => void;
+  showGenuine?: boolean;
 };
 
 const linkClass =
@@ -18,6 +19,7 @@ const linkClass =
 export default function GlobalDrawer({
   menuOpen,
   setMenuOpen,
+  showGenuine = false,
 }: GlobalDrawerProps) {
   const { t } = useTranslation();
   const close = () => setMenuOpen(false);
@@ -25,7 +27,7 @@ export default function GlobalDrawer({
   const sections: { heading: string; links: { href: string; label: string }[] }[] = [
     {
       heading: "Shop Toyota",
-      links: NAV_LINKS.filter((link) => link.href !== "/contact"),
+      links: navLinks(showGenuine).filter((link) => link.href !== "/contact"),
     },
     {
       heading: "Your order",
