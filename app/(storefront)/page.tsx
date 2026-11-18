@@ -74,7 +74,7 @@ export default function Home() {
     <div className="w-full min-w-0 overflow-x-hidden bg-white text-[#17191C]">
       {/* 1. Hero */}
       <section className="border-b border-[#E5E7EB] bg-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-14 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[minmax(0,1fr)_400px] lg:px-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-4 pb-12 pt-8 sm:gap-10 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[minmax(0,1fr)_400px] lg:px-8">
           <div className="min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#69717C]">
             DrivoraParts
@@ -83,7 +83,7 @@ export default function Home() {
             </span>
             {authorized ? "Your Authorized Toyota Parts Destination" : "Toyota Parts Specialists"}
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-5xl xl:text-6xl">
+          <h1 className="mt-5 max-w-4xl text-[2rem] font-extrabold uppercase leading-[1.05] tracking-tight [overflow-wrap:anywhere] sm:text-5xl xl:text-6xl">
             {showGenuine ? "Genuine Toyota Parts." : "Toyota Parts."}{" "}
             <span className="text-[#EB0A1E]">The Right Fit.</span>
           </h1>
