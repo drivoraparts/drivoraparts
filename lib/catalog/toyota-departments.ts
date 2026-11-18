@@ -1,5 +1,6 @@
 import { getAllProducts, isVerifiedToyotaGenuine, routes } from "@/lib/inventory";
 import type { Product } from "@/lib/inventory/types";
+import { isHeldListing } from "@/lib/inventory/held";
 
 /* =========================================================
    TOYOTA DEPARTMENTS
@@ -38,7 +39,7 @@ const RULES: DepartmentRule[] = [
     key: "genuine",
     name: "Toyota Genuine Parts",
     description: "Verified Genuine Toyota parts, with Toyota part numbers.",
-    match: (product) => isVerifiedToyotaGenuine(product),
+    match: (product) => isVerifiedToyotaGenuine(product) && !isHeldListing(product),
   },
   {
     key: "engines",
@@ -115,7 +116,19 @@ export function getEngineAndTransmissionProducts(limit = 12): Product[] {
     .slice(0, limit);
 }
 
-/** Public listings verified as Toyota Genuine Parts. */
+/**
+ * Public listings verified as Toyota Genuine Parts and available to buy --
+ * held listings (out of stock, details being confirmed) are left out. This is
+ * the single rule for the Genuine section, its header link, its homepage tile
+ * and its sitemap entry, so none of them can point at an empty page.
+ */
 export function getVerifiedGenuineProducts(limit = 12): Product[] {
-  return getAllProducts().filter(isVerifiedToyotaGenuine).slice(0, limit);
+  return getAllProducts()
+    .filter((p) => isVerifiedToyotaGenuine(p) && !isHeldListing(p))
+    .slice(0, limit);
+}
+
+/** Whether the Toyota Genuine section has anything to show. */
+export function hasGenuineSection(): boolean {
+  return getVerifiedGenuineProducts(1).length > 0;
 }

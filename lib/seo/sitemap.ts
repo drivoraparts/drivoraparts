@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { publishedEnginePlatformSlugs } from "@/data/engine";
-import { getVerifiedGenuineProducts } from "@/lib/catalog/toyota-departments";
+import { hasGenuineSection } from "@/lib/catalog/toyota-departments";
 import { toyotaVehiclePlatforms } from "@/data/vehicles";
 import { MARKETS } from "@/lib/catalog/markets";
 import { indexableCatalogViewPaths } from "@/lib/catalog/view-seo";
@@ -38,7 +38,7 @@ export function buildSitemapEntries(siteUrl: string): MetadataRoute.Sitemap {
   const products = getAllProducts();
 
   // The Toyota Genuine section exists only once a listing is verified.
-  const genuinePaths = getVerifiedGenuineProducts(1).length > 0 ? [{ path: routes.genuine, priority: 0.9 }] : [];
+  const genuinePaths = hasGenuineSection() ? [{ path: routes.genuine, priority: 0.9 }] : [];
 
   const staticPaths = [
     ...genuinePaths,

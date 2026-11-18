@@ -1,4 +1,54 @@
 {
   "_comment": "Listings verified as Toyota Genuine Parts. Only listings in `verified` are shown with the Toyota Genuine Part label. Add one only after confirming it against the Toyota part number on the supplier invoice or Toyota's parts catalog -- a supplier title saying 'Toyota Genuine' is not verification. Each entry: { \"id\": 1234, \"partNumber\": \"35000-0K130\", \"verifiedBy\": \"name\", \"verifiedOn\": \"YYYY-MM-DD\", \"evidence\": \"invoice / catalog reference\" }. Candidates awaiting review are listed in toyota-catalog.json under genuineCandidates.",
-  "verified": []
+  "verified": [
+    {
+      "id": 1946,
+      "partNumber": "35000-WAA10",
+      "verifiedBy": "DrivoraParts owner",
+      "verifiedOn": "2026-11-18",
+      "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
+    },
+    {
+      "id": 1952,
+      "partNumber": "33030-35A22",
+      "verifiedBy": "DrivoraParts owner",
+      "verifiedOn": "2026-11-18",
+      "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
+    },
+    {
+      "id": 1953,
+      "partNumber": "35000-0K130",
+      "verifiedBy": "DrivoraParts owner",
+      "verifiedOn": "2026-11-18",
+      "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
+    },
+    {
+      "id": 1954,
+      "partNumber": "35000-0W010",
+      "verifiedBy": "DrivoraParts owner",
+      "verifiedOn": "2026-11-18",
+      "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
+    },
+    {
+      "id": 1961,
+      "partNumber": "SU003-10764",
+      "verifiedBy": "DrivoraParts owner",
+      "verifiedOn": "2026-11-18",
+      "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
+    },
+    {
+      "id": 1962,
+      "partNumber": "35000-60D90",
+      "verifiedBy": "DrivoraParts owner",
+      "verifiedOn": "2026-11-18",
+      "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
+    },
+    {
+      "id": 1963,
+      "partNumber": "35000-0K130",
+      "verifiedBy": "DrivoraParts owner",
+      "verifiedOn": "2026-11-18",
+      "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
+    }
+  ]
 }

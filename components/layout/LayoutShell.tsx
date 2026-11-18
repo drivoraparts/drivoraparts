@@ -14,9 +14,11 @@ const MarketOverlay = dynamic(() => import("../market/MarketOverlay"), {
 
 type Props = {
   children: React.ReactNode;
+  /** Whether the Toyota Genuine section has listings (decided on the server). */
+  showGenuine?: boolean;
 };
 
-export default function LayoutShell({ children }: Props) {
+export default function LayoutShell({ children, showGenuine = false }: Props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [marketOpen, setMarketOpen] = useState(false);
@@ -27,6 +29,7 @@ export default function LayoutShell({ children }: Props) {
       <GlobalHeader
         setMenuOpen={setMenuOpen}
         setCartOpen={setCartOpen}
+        showGenuine={showGenuine}
       />
 
       {/* MARKET OVERLAY */}
@@ -35,7 +38,7 @@ export default function LayoutShell({ children }: Props) {
       )}
 
       {/* NAV DRAWER */}
-      <GlobalDrawer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <GlobalDrawer menuOpen={menuOpen} setMenuOpen={setMenuOpen} showGenuine={showGenuine} />
 
       {/* CART DRAWER */}
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
