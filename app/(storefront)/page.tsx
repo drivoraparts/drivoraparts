@@ -116,18 +116,25 @@ export default function Home() {
 
       {/* 2. Identity: what DrivoraParts is, stated only as far as it is true */}
       <section className="border-b border-[#E5E7EB] bg-[#F5F6F7]">
-        <div className="mx-auto grid max-w-6xl gap-px px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-4 px-4 sm:px-6 lg:grid-cols-4 lg:px-8">
           {[
             authorized
               ? { title: "Authorized Toyota dealer", body: "Toyota parts supplied under our Toyota dealer authorization." }
               : { title: "Toyota only", body: "Every part listed names the Toyota models it fits." },
             { title: "Fitment on every listing", body: "Years, models and engines as the listing states them. Ask us before you buy if unsure." },
             { title: "Clear condition labels", body: "New, used or refurbished: the condition is shown on every part." },
-            { title: "US support", body: `Call or text ${COMPANY_PHONE_DISPLAY}, or email us.` },
+            {
+              title: "US support",
+              body: (
+                <>
+                  Call or text <span className="whitespace-nowrap">{COMPANY_PHONE_DISPLAY}</span>, or email us.
+                </>
+              ),
+            },
           ].map((item) => (
-            <div key={item.title} className="py-6 sm:px-4 lg:py-8">
-              <p className="text-sm font-bold uppercase tracking-wide">{item.title}</p>
-              <p className="mt-2 text-sm leading-relaxed text-[#69717C]">{item.body}</p>
+            <div key={item.title} className="min-w-0 py-4 sm:px-4 sm:py-6 lg:py-8">
+              <p className="text-[12px] font-bold uppercase tracking-wide sm:text-sm">{item.title}</p>
+              <p className="mt-1.5 text-[13px] leading-snug text-[#69717C] sm:mt-2 sm:text-sm sm:leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>
@@ -171,20 +178,20 @@ export default function Home() {
               title="Find the part you need"
               link={{ href: routes.all, label: "All Toyota parts" }}
             />
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <ul className="mt-6 grid grid-cols-2 gap-3 sm:mt-8 lg:grid-cols-4">
               {departments.map((department) => (
                 <li key={department.key}>
                   <Link
                     href={department.href}
-                    className="group flex h-full flex-col rounded-lg border border-[#E5E7EB] bg-white p-5 transition-colors hover:border-[#17191C]"
+                    className="group flex h-full min-w-0 flex-col rounded-lg border border-[#E5E7EB] bg-white p-4 transition-colors hover:border-[#17191C] sm:p-5"
                   >
                     <span className="text-base font-bold group-hover:text-[#C8081A]">
                       {department.name}
                     </span>
-                    <span className="mt-2 flex-1 text-sm leading-relaxed text-[#69717C]">
+                    <span className="mt-2 hidden flex-1 text-sm leading-relaxed text-[#69717C] sm:block">
                       {department.description}
                     </span>
-                    <span className="mt-4 text-xs font-semibold text-[#17191C]">
+                    <span className="mt-auto pt-3 text-xs font-semibold text-[#17191C] sm:pt-4">
                       {department.count.toLocaleString("en-US")} parts →
                     </span>
                   </Link>
