@@ -8,13 +8,13 @@ import {
   type ShippingLabel,
 } from "@/lib/shipping/rates";
 import { absoluteUrl } from "./urls";
-import { QUOTED_STATES, US_STATES } from "@/lib/shipping/us-address";
+import { SERVED_US_STATES } from "@/lib/shipping/us-address";
 
 /**
- * The regions the published rate applies to: every state and DC except
- * Alaska and Hawaii, which are quoted by hand before payment.
+ * The regions shipped to: the 48 contiguous states and DC. Alaska and Hawaii
+ * are not served (pending supplier confirmation), so they are not declared.
  */
-const TABLE_RATE_REGIONS = US_STATES.map((s) => s.code).filter((code) => !QUOTED_STATES.has(code));
+const TABLE_RATE_REGIONS = SERVED_US_STATES.map((s) => s.code);
 
 type JsonLd = Record<string, unknown>;
 

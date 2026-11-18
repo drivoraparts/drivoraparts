@@ -25,7 +25,7 @@ export const UI = {
   clearCart: "Clear Cart",
   remove: "Remove",
   footerBrand:
-    "Toyota parts for US drivers: suspension, bumpers, lighting, engines, transmissions and accessories, each matched to the models it fits.",
+    "Toyota Parts & Engines. Built around Toyota: engines, transmissions, suspension, bumpers, lighting and accessories, each matched to the models it fits and shipped within the US.",
   footerSupport: "Support",
   footerShop: "Shop",
   footerCustomerService: "Customer Service",

@@ -4,7 +4,6 @@ export const metadata = buildPolicyMetadata("/policies/shipping-policy");
 
 import Policy from "@/components/policy/Policy";
 import {
-  CALIFORNIA_FULFILLMENT,
   COMPANY_SUPPORT_EMAIL,
   COMPANY_LEGAL_NAME,
   COMPANY_PHONE_DISPLAY,
@@ -37,10 +36,10 @@ export default function ShippingPolicyPage() {
         {
           heading: "United States Only",
           paragraphs: [
-            "DrivoraParts currently ships only to addresses within the United States — the 50 states and Washington, DC. International shipping is not available.",
+            "DrivoraParts currently ships only to addresses in the 48 contiguous United States and Washington, DC. International shipping is not available.",
             "We do not ship to Canada, the United Kingdom, Australia, Europe, Africa or any other destination outside the United States. We also do not currently ship to US territories (such as Puerto Rico, Guam or the US Virgin Islands) or to APO, FPO or DPO military addresses.",
             "Checkout accepts only a United States delivery address. An order with a delivery address outside the United States cannot be placed.",
-            "Alaska and Hawaii: we ship there, but the published rates below do not apply. Shipping to Alaska and Hawaii is quoted for your order and confirmed with you in writing before payment, and nothing is charged until you have accepted it.",
+            "We do not currently ship to Alaska or Hawaii while we confirm delivery arrangements with our suppliers.",
           ],
         },
         {
@@ -66,7 +65,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Costs",
           paragraphs: [
-            "We do not use live carrier-rate calculation. Shipping to the contiguous United States and Washington, DC is charged from the published rates below, and the charge is shown at checkout before you place your order. It is not changed after the order is placed. All charges are in US dollars.",
+            "We do not use live carrier-rate calculation. Shipping is charged from the published rates below, and the charge is shown at checkout before you place your order. It is not changed after the order is placed. All charges are in US dollars.",
             `Standard parcel items: the charge depends on your order subtotal (the total of the item prices, before any discounts). Orders made up only of standard parcel items ship free when the subtotal is under ${FREE_BELOW}. The full table is:`,
           ],
           bullets: US_RATE_LINES,
@@ -79,7 +78,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Where Orders Are Dispatched From",
           paragraphs: [
-            `Some orders are picked, packed and dispatched from our California fulfillment location at ${CALIFORNIA_FULFILLMENT.street}, ${CALIFORNIA_FULFILLMENT.city}, ${CALIFORNIA_FULFILLMENT.state} ${CALIFORNIA_FULFILLMENT.postalCode}. Other items ship directly from our supplier network, and an order containing both may arrive in more than one shipment. Each product page states where that item ships from.`,
+            "Ships from DrivoraParts or our supplier network, depending on part availability and location. An order containing items from more than one source may arrive in more than one shipment.",
             "Where an order ships from does not change the shipping charge shown at checkout, and every order is delivered only to the US address you provide.",
           ],
         },

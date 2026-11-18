@@ -19,17 +19,19 @@ import type { Product } from "./types";
  * A warehouse label therefore survives to the page only when the listing sets
  * `shipsFromVerified: true`. Every other one reads as the neutral sentence
  * below, once, here, so the product page, cards, ad copy and social copy agree.
- * It names the owner-designated fulfillment address (CALIFORNIA_FULFILLMENT in
- * lib/content/company.ts) without claiming THIS unit is stocked there.
+ * The wording is the owner-approved fulfillment statement (2026-11-18).
  *
  * This is wording only. Stock, availability labels and the Meta feed are not
  * read or changed here.
  */
 export const NEUTRAL_FULFILLMENT_LOCATION =
-  "our Los Angeles-area fulfillment location (Monterey Park, CA) or our supplier network, depending on part availability";
+  "DrivoraParts or our supplier network, depending on part availability and location";
 
 const WAREHOUSE_LABEL = /warehouse/i;
-const ALREADY_QUALIFIED = /supplier|network|import/i;
+// A location kept as written: the supplier importer's own wording. Anything
+// naming a warehouse is replaced even when it also mentions the supplier
+// network ("our USA warehouse or supplier network..." claimed a warehouse).
+const ALREADY_QUALIFIED = /^our supplier network$/i;
 
 export function applyFulfillmentWording(items: Product[]): Product[] {
   return items.map((product) => {
@@ -38,7 +40,7 @@ export function applyFulfillmentWording(items: Product[]): Product[] {
       !location ||
       product.shipsFromVerified === true ||
       ALREADY_QUALIFIED.test(location) ||
-      !WAREHOUSE_LABEL.test(location)
+      !(WAREHOUSE_LABEL.test(location) || /worldwide|import/i.test(location))
     ) {
       return product;
     }

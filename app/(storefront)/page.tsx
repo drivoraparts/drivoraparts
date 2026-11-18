@@ -25,12 +25,18 @@ import { buildPageMetadata, SITE_KEYWORDS } from "@/lib/seo";
 
 export const revalidate = 600;
 
-export const metadata = buildPageMetadata({
-  title: "Toyota Parts & Engines — Tacoma, Tundra, 4Runner & Land Cruiser",
-  description: `Shop ${getActiveListingCount().toLocaleString("en-US")} Toyota parts and engines for the Tacoma, Tundra, 4Runner, Land Cruiser and more, matched to the vehicle they fit and shipped within the US.`,
-  path: "/",
-  keywords: SITE_KEYWORDS,
-});
+export const metadata = {
+  ...buildPageMetadata({
+    title: "Toyota Parts & Engines",
+    description:
+      "Shop Toyota parts, engines, transmissions, and replacement components at DrivoraParts. Explore our Toyota-focused catalog and find the parts your vehicle needs.",
+    path: "/",
+    keywords: SITE_KEYWORDS,
+  }),
+  // The approved homepage title, set absolute so the site-wide
+  // "%s | DrivoraParts" template does not append the name a second time.
+  title: { absolute: "Toyota Parts & Engines | DrivoraParts" },
+};
 
 /*
  * WHAT THIS PAGE MAY CLAIM
@@ -81,13 +87,16 @@ export default function Home() {
             <span className="mx-2 text-[#E5E7EB]" aria-hidden="true">
               |
             </span>
-            {authorized ? "Your Authorized Toyota Parts Destination" : "Toyota Parts Specialists"}
+            {authorized ? "Authorized Toyota Parts Specialist" : "Toyota Parts Specialist"}
           </p>
           <h1 className="mt-5 max-w-4xl text-[2rem] font-extrabold uppercase leading-[1.05] tracking-tight [overflow-wrap:anywhere] sm:text-5xl xl:text-6xl">
-            {showGenuine ? "Genuine Toyota Parts." : "Toyota Parts."}{" "}
-            <span className="text-[#EB0A1E]">The Right Fit.</span>
+            {showGenuine ? "Genuine Toyota Parts" : "Toyota Parts"}{" "}
+            <span className="text-[#EB0A1E]">&amp; Engines</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#69717C]">
+          <p className="mt-4 max-w-2xl text-xl font-bold leading-snug tracking-tight sm:text-2xl">
+            Built Around Toyota. Focused on What Drives You.
+          </p>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-[#69717C]">
             {showGenuine
               ? "Shop Toyota Genuine Parts, engines, transmissions, replacement components, and accessories with confidence."
               : "Shop parts for your Toyota, from suspension and bumpers to engines, transmissions and accessories, each matched to the models it fits."}
@@ -97,7 +106,7 @@ export default function Home() {
               href={routes.all}
               className="inline-flex min-h-12 items-center justify-center rounded-md bg-[#EB0A1E] px-7 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#C8081A]"
             >
-              Shop Toyota Parts
+              Explore Toyota Parts
             </Link>
             <Link
               href="#vehicles"
@@ -107,7 +116,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-[#69717C]">
-            {listingCount.toLocaleString("en-US")} Toyota parts listed · Prices in USD
+            {listingCount.toLocaleString("en-US")} Toyota parts listed · Prices in USD · Ships within the US
           </p>
           </div>
           {finderVehicles.length > 0 ? <HeroVehicleFinder vehicles={finderVehicles} /> : null}
@@ -234,30 +243,29 @@ export default function Home() {
         tone="muted"
       />
 
-      {/* 7. Our commitment to quality -- each line is backed by the records:
-          the Monterey Park address is CALIFORNIA_FULFILLMENT, the genuine label
-          is lib/inventory/data/toyota-genuine.json, the rates are
-          lib/shipping/rate-table.ts and AK/HI are QUOTED_STATES. */}
+      {/* 7. Brand philosophy. Each line is backed by the records: the genuine
+          label is lib/inventory/data/toyota-genuine.json, the rates are
+          lib/shipping/rate-table.ts, the delivery area is lib/shipping/us-address.ts. */}
       <section className="border-b border-[#E5E7EB] bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Our Commitment to Quality" title="Why DrivoraParts" />
+          <SectionHeading eyebrow="Toyota Parts. One Focus." title="One Brand. A Focused Selection." />
           <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                title: "Genuine means verified",
-                body: "A part is labeled Toyota Genuine only after we check it against its Toyota part number. Aftermarket parts are labeled aftermarket, with the maker named.",
+                title: "Built around Toyota",
+                body: "Every listing names the Toyota models it fits, so you shop by your vehicle instead of sorting through parts made for something else.",
               },
               {
-                title: "Shipped from California",
-                body: "Orders ship from our Los Angeles-area fulfillment location in Monterey Park, CA, or directly from our supplier network, depending on the part.",
+                title: "Finding the right fit matters",
+                body: "Model year, engine, trim and drivetrain all make a difference. If you are not sure a part fits, ask us before you order.",
+              },
+              {
+                title: "Clearly labeled",
+                body: "A part is labeled Toyota Genuine only after we check it against its Toyota part number. Aftermarket, used and refurbished parts are labeled as such.",
               },
               {
                 title: "Transparent US shipping",
-                body: "Published rates to the contiguous US and Washington, DC, shown at checkout before you order. Alaska and Hawaii are quoted and confirmed before you pay.",
-              },
-              {
-                title: "The right fit",
-                body: "Each listing states the Toyota models, years and engines it fits. If yours is not listed or you are not sure, ask us before you order.",
+                body: "We ship to the 48 contiguous states and Washington, DC. Published rates are shown at checkout before you order, in US dollars.",
               },
             ].map((item) => (
               <div key={item.title} className="border-t-2 border-[#17191C] pt-5">

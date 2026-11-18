@@ -46,7 +46,7 @@ export default function Page() {
       <JsonLdScript
         data={[
           breadcrumbJsonLd([{ name: "Catalog", path: routes.catalog }]),
-          collectionPageJsonLd("Shop Parts by Market", DESCRIPTION, routes.catalog),
+          collectionPageJsonLd("Shop Toyota Parts", DESCRIPTION, routes.catalog),
         ]}
       />
       <main className="min-h-screen bg-white text-neutral-900">

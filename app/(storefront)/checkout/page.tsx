@@ -32,7 +32,7 @@ import {
 import PaymentMethodIcon from "@/components/checkout/PaymentMethodIcon";
 import {
   SHIPPING_COUNTRY_NAME,
-  US_STATES,
+  SERVED_US_STATES,
   isValidUsZip,
   normalizeUsState,
   usShippingAddressError,
@@ -715,7 +715,7 @@ export default function CheckoutPage() {
                         className={`${inputClass} h-[50px]`}
                       >
                         <option value="">Select state</option>
-                        {US_STATES.map((s) => (
+                        {SERVED_US_STATES.map((s) => (
                           <option key={s.code} value={s.code}>
                             {s.name}
                           </option>
@@ -754,8 +754,9 @@ export default function CheckoutPage() {
                       {SHIPPING_COUNTRY_NAME}
                     </p>
                     <p className="mt-1 text-xs text-neutral-500">
-                      We ship only within the United States (50 states and Washington, DC).
-                      Alaska and Hawaii shipping is quoted before payment.
+                      We ship to the 48 contiguous states and Washington, DC. We
+                      can't currently ship to Alaska, Hawaii, US territories or
+                      international addresses.
                     </p>
                     {shipQuote?.note ? (
                       <p className="mt-1 text-xs text-neutral-500" aria-live="polite">

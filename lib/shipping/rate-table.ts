@@ -6,7 +6,7 @@
    the catalog; read its header for how a charge is decided.
 ========================================================= */
 
-import { isQuotedState, isUnitedStates, OUTSIDE_US_MESSAGE } from "./us-address";
+import { isBlockedState, isUnitedStates, OUTSIDE_US_MESSAGE } from "./us-address";
 
 /* ---------------------------------------------------------
    Labels
@@ -247,8 +247,8 @@ export type PendingReason =
   | "destination_unknown"
   /** Outside the United States: not shipped to at all. */
   | "outside_service_area"
-  /** Alaska or Hawaii: shipped, but quoted by hand before payment. */
-  | "quoted_state"
+  /** Alaska or Hawaii: not shipped to pending supplier confirmation. */
+  | "unsupported_state"
   | "freight_rate_not_set"
   | "above_rate_table";
 
@@ -327,7 +327,7 @@ export function quoteShippingWith(
   if (!String(country ?? "").trim()) return pending("destination_unknown");
   const destination = shippingDestinationFor(country);
   if (!destination) return pending("outside_service_area");
-  if (isQuotedState(state)) return pending("quoted_state");
+  if (isBlockedState(state)) return pending("unsupported_state");
 
   const table = rateTableFor(label, destination);
   if (!table) return pending("freight_rate_not_set");
@@ -360,8 +360,8 @@ export function describeQuote(quote: ShippingQuote): string {
       return "Freight shipping — confirmed with you before payment";
     case "outside_service_area":
       return "We ship only within the United States";
-    case "quoted_state":
-      return "Alaska and Hawaii shipping is quoted and confirmed with you before payment";
+    case "unsupported_state":
+      return "We can't currently ship to Alaska or Hawaii";
     case "above_rate_table":
       return "Shipping for this order value is confirmed with you before payment";
     case "destination_unknown":

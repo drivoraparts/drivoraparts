@@ -64,7 +64,7 @@ function buildGoogleAds(product: Product): GoogleAdVariant[] {
     {
       headline: `${product.name} | DrivoraParts`,
       description: `Buy ${platform} ${product.category} parts. Price ${product.price}.`,
-      keywords: [brand, product.category, platform, "auto parts", "performance parts"],
+      keywords: [brand, product.category, platform, "Toyota parts", "auto parts"],
     },
     {
       headline: `${brand.toUpperCase()} ${product.category} Parts Online`,
@@ -72,9 +72,9 @@ function buildGoogleAds(product: Product): GoogleAdVariant[] {
       keywords: [`${brand} parts`, `${product.category} upgrade`, "car parts online"],
     },
     {
-      headline: "Performance Parts Online",
+      headline: "Toyota Parts & Engines",
       description: `${product.name} available now. Clear pricing and detailed listings.`,
-      keywords: ["performance engine parts", "aftermarket parts", product.category],
+      keywords: ["Toyota parts", "Toyota engines", product.category],
     },
   ];
 }

@@ -75,12 +75,12 @@ const FAQS: FaqItem[] = [
     question: "How long does shipping take, and do you ship internationally?",
     answer: (
       <>
-        No. DrivoraParts ships only within the United States (the 50 states
-        and Washington, DC); international shipping is not available.
+        No. DrivoraParts ships only to the 48 contiguous United States and
+        Washington, DC. We don't currently ship to Alaska, Hawaii, US
+        territories or international addresses.
         Standard US shipping is charged from our published rates and shown
         at checkout; freight and multi-box items are charged one fixed
-        freight rate per order. Shipping to Alaska and Hawaii is quoted and
-        confirmed with you before payment. Orders are
+        freight rate per order. Orders are
         typically processed within {ORDER_PROCESSING} once payment is
         verified, and delivery typically takes 5–15 business days after that
         — estimates, not guarantees. Smaller parts ship via standard carriers;

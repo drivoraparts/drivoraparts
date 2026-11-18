@@ -31,7 +31,7 @@ export function organizationJsonLd(): JsonLd {
     // The registered entity behind the brand, with the business address the
     // owner has chosen to publish.
     legalName: COMPANY_LEGAL_NAME,
-    slogan: "Your Toyota Parts Destination",
+    slogan: "Built Around Toyota. Focused on What Drives You.",
     url: absoluteUrl("/"),
     logo: absoluteImageUrl("/favicon.png"),
     email: COMPANY_SUPPORT_EMAIL,

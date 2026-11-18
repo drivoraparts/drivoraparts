@@ -2,7 +2,7 @@ import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 
 export const SITE_NAME = "DrivoraParts";
 export const SITE_TAGLINE =
-  "Your Toyota parts destination: Toyota parts and engines for the Tacoma, Tundra, 4Runner, Land Cruiser and more, shipped within the United States";
+  "Built Around Toyota. Focused on What Drives You. Toyota parts and engines, shipped within the United States";
 
 // The count is the synced catalog size (lib/home/listing-count.ts), not a
 // typed-in figure: this read "1,400+" long after the catalog passed 4,000.
