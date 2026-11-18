@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HomeFeaturedRotator from "@/components/home/HomeFeaturedRotator";
 import ProductRail from "@/components/catalog/ProductRail";
+import HeroVehicleFinder, { type FinderVehicle } from "@/components/home/HeroVehicleFinder";
 import {
   getFeaturedBatch,
   getFeaturedTimeSlot,
@@ -56,6 +57,14 @@ export default function Home() {
   const vehicles = usa
     ? getMarketOverview(usa).groups.flatMap((group) => group.vehicles)
     : [];
+  const finderVehicles: FinderVehicle[] = usa
+    ? vehicles.map(({ vehicle, count }) => ({
+        key: vehicle.key,
+        model: vehicle.model,
+        count,
+        categories: getMarketOverview(usa, vehicle.key).categories,
+      }))
+    : [];
   const departments = getToyotaDepartments();
   const engineAndTransmission = getEngineAndTransmissionProducts();
   const featuredPool = getHomeFeaturedProductPool();
@@ -65,7 +74,8 @@ export default function Home() {
     <div className="w-full min-w-0 overflow-x-hidden bg-white text-[#17191C]">
       {/* 1. Hero */}
       <section className="border-b border-[#E5E7EB] bg-white">
-        <div className="mx-auto max-w-6xl px-4 pb-14 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-14 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[minmax(0,1fr)_400px] lg:px-8">
+          <div className="min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#69717C]">
             DrivoraParts
             <span className="mx-2 text-[#E5E7EB]" aria-hidden="true">
@@ -73,7 +83,7 @@ export default function Home() {
             </span>
             {authorized ? "Your Authorized Toyota Parts Destination" : "Toyota Parts Specialists"}
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-6xl">
+          <h1 className="mt-5 max-w-4xl text-4xl font-extrabold uppercase leading-[1.05] tracking-tight sm:text-5xl xl:text-6xl">
             {showGenuine ? "Genuine Toyota Parts." : "Toyota Parts."}{" "}
             <span className="text-[#EB0A1E]">The Right Fit.</span>
           </h1>
@@ -99,6 +109,8 @@ export default function Home() {
           <p className="mt-6 text-sm text-[#69717C]">
             {listingCount.toLocaleString("en-US")} Toyota parts listed · Prices in USD
           </p>
+          </div>
+          {finderVehicles.length > 0 ? <HeroVehicleFinder vehicles={finderVehicles} /> : null}
         </div>
       </section>
 

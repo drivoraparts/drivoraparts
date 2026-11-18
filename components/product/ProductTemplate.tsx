@@ -34,7 +34,14 @@ import {
   resolveProductCondition,
 } from "@/lib/inventory/condition";
 import { DEFAULT_PRODUCT_IMAGE } from "@/lib/inventory/media";
-import { CONTACT_HREF } from "@/lib/content/purchase-terms";
+import {
+  CONTACT_HREF,
+  ORDER_PROCESSING,
+  RETURN_POLICY_HREF,
+  RETURN_WINDOW_DAYS,
+} from "@/lib/content/purchase-terms";
+import { COMPANY_PHONE_DISPLAY, COMPANY_PHONE_TEL_HREF } from "@/lib/content/company";
+import TrustIcon from "@/components/trust/TrustIcon";
 import { formatPlatformLabel } from "./styles";
 
 const MAX_QUANTITY = 10;
@@ -101,6 +108,20 @@ function QuantityStepper({
       </button>
     </div>
   );
+}
+
+/** "2005–2015" from the listing's own year data; undefined when it records none. */
+function fitmentYearsLabel(
+  fitmentYears: string | undefined,
+  applications: FitmentApplication[]
+): string | undefined {
+  if (fitmentYears?.trim()) return fitmentYears.trim();
+  const from = applications.map((a) => a.yearFrom).filter((y): y is number => typeof y === "number");
+  const to = applications.map((a) => a.yearTo).filter((y): y is number => typeof y === "number");
+  if (from.length === 0 && to.length === 0) return undefined;
+  const start = Math.min(...(from.length ? from : to));
+  const end = Math.max(...(to.length ? to : from));
+  return start === end ? String(start) : `${start}–${end}`;
 }
 
 export default function ProductTemplate({
@@ -231,6 +252,25 @@ export default function ProductTemplate({
     const rows: SpecRow[] = [];
 
     /*
+     * The facts a buyer cross-checks come first, in a fixed order: part
+     * number, brand, condition, type and the years the listing records. Rows
+     * the description already states under the same meaning are dropped
+     * below, so nothing is printed twice. Absent facts are absent, not "N/A".
+     */
+    const years = fitmentYearsLabel(fitmentYears, fitmentApplications);
+    const core: { label: string; value: string | undefined; replaces: RegExp }[] = [
+      { label: "Part number", value: partNumber, replaces: /^(manufacturer )?part (number|no\.?)$|^mpn$|^sku$/i },
+      { label: "Brand", value: product.brand, replaces: /^(brand|manufacturer|make)$/i },
+      { label: "Condition", value: catalogMeta.conditionLabel, replaces: /^condition$/i },
+      { label: "Type", value: partType ?? undefined, replaces: /^type$/i },
+      { label: "Fitment years", value: years, replaces: /^(years?|fitment years?|model years?)$/i },
+    ];
+    const replaced = core.filter((c) => c.value).map((c) => c.replaces);
+    for (const c of core) {
+      if (c.value) rows.push({ label: c.label, value: <TranslatedText as="span">{c.value}</TranslatedText> });
+    }
+
+    /*
      * Most engine descriptions already state their power as an attribute
      * ("Factory Power: 600 HP"), and those lines are parsed into the rows
      * below. Where one matches, it is moved to the top under its own label
@@ -238,7 +278,9 @@ export default function ProductTemplate({
      */
     const normalize = (value: string) =>
       value.toLowerCase().replace(/\s+/g, " ").replace(/[.,;]+$/, "").trim();
-    const remaining = [...catalogMeta.specRows];
+    const remaining = catalogMeta.specRows.filter(
+      (row) => !replaced.some((pattern) => pattern.test(row.label.trim()))
+    );
     const takeRow = (value: string) => {
       const index = remaining.findIndex((row) => normalize(row.value) === normalize(value));
       return index >= 0 ? remaining.splice(index, 1)[0] : undefined;
@@ -295,7 +337,16 @@ export default function ProductTemplate({
     }
 
     return rows;
-  }, [catalogMeta, product.buildPotential, product.description]);
+  }, [
+    catalogMeta,
+    product.buildPotential,
+    product.description,
+    product.brand,
+    partNumber,
+    partType,
+    fitmentYears,
+    fitmentApplications,
+  ]);
 
   const hasReviews = catalogMeta.reviewCount > 0;
 
@@ -395,6 +446,13 @@ export default function ProductTemplate({
               <span className={inStock ? "text-success" : "text-muted"}>
                 {inStock ? "In stock" : "Out of stock"}
               </span>
+              {inStock ? (
+                // The policy's processing time, not "ships today": orders are
+                // typically processed within ORDER_PROCESSING of payment.
+                <span className="font-normal text-muted">
+                  · Typically ships within {ORDER_PROCESSING}
+                </span>
+              ) : null}
             </p>
             <p className="mt-1.5 text-[12px] leading-relaxed text-muted">
               {BASE_ORDER_DISCOUNT_PERCENT}% off every order, or{" "}
@@ -444,6 +502,25 @@ export default function ProductTemplate({
                 className="h-10 justify-center !rounded-[3px] !px-3 !text-xs sm:!text-xs"
               />
             </div>
+            {/* Each line is a policy or a reachable person, not decoration. */}
+            <ul className="flex flex-wrap gap-x-4 gap-y-1.5 pt-1 text-[12px] font-medium text-neutral-700">
+              <li className="flex items-center gap-1.5">
+                <TrustIcon name="lock" size={14} />
+                Secure checkout
+              </li>
+              <li>
+                <a href={RETURN_POLICY_HREF} className="flex items-center gap-1.5 hover:text-accent-hover">
+                  <TrustIcon name="returns" size={14} />
+                  {RETURN_WINDOW_DAYS}-day returns
+                </a>
+              </li>
+              <li>
+                <a href={COMPANY_PHONE_TEL_HREF} className="flex items-center gap-1.5 hover:text-accent-hover">
+                  <TrustIcon name="phone" size={14} />
+                  Questions? {COMPANY_PHONE_DISPLAY}
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div className="mt-6">

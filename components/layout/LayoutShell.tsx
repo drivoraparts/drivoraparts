@@ -3,6 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import GlobalHeader from "./GlobalHeader";
+import TrustBar from "@/components/trust/TrustBar";
 import GlobalDrawer from "./GlobalDrawer";
 import CartDrawer from "./CartDrawer";
 import GlobalFooter from "./GlobalFooter";
@@ -41,6 +42,7 @@ export default function LayoutShell({ children }: Props) {
 
       {/* PAGE CONTENT */}
       <main className="storefront-page box-border min-h-screen min-h-[100dvh] w-full min-w-0 max-w-full overflow-x-hidden bg-[var(--background)] pt-[var(--header-h)]">
+        <TrustBar />
         {children}
       </main>
 
