@@ -22,6 +22,14 @@ type CartState = {
   decreaseQuantity: (id: number) => void;
   clearCart: () => void;
   replaceCart: (item: Omit<CartItem, "quantity">, quantity?: number) => void;
+  /**
+   * Adds several listings at once (kit bundles), all or nothing: if any line
+   * would break the checkout's quantity or line-count limits, the cart is
+   * left unchanged and the reason is returned.
+   */
+  addItems: (
+    lines: { item: Omit<CartItem, "quantity">; quantity: number }[]
+  ) => { ok: true } | { ok: false; reason: "quantity"; name: string } | { ok: false; reason: "lines" };
   getTotal: () => number;
   getItemCount: () => number;
 };
@@ -100,6 +108,27 @@ export const useCartStore = create<CartState>()(
         set({
           items: [{ ...item, quantity: Math.min(quantity, MAX_QUANTITY_PER_ITEM) }],
         });
+      },
+
+      addItems: (lines) => {
+        const items = get().items.map((i) => ({ ...i }));
+        for (const { item, quantity } of lines) {
+          const existing = items.find((i) => i.id === item.id);
+          if (existing) {
+            existing.quantity += quantity;
+            if (existing.quantity > MAX_QUANTITY_PER_ITEM) {
+              return { ok: false, reason: "quantity", name: item.name } as const;
+            }
+          } else {
+            if (quantity > MAX_QUANTITY_PER_ITEM) {
+              return { ok: false, reason: "quantity", name: item.name } as const;
+            }
+            items.push({ ...item, quantity });
+          }
+        }
+        if (items.length > MAX_LINE_ITEMS) return { ok: false, reason: "lines" } as const;
+        set({ items });
+        return { ok: true } as const;
       },
 
       getTotal: () =>

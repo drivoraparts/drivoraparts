@@ -17,6 +17,8 @@ import ProductBreadcrumbs from "./ProductBreadcrumbs";
 import StickyPurchaseBar from "./StickyPurchaseBar";
 import ProductDiscoverySections from "./ProductDiscoverySections";
 import PurchaseFacts from "./PurchaseFacts";
+import ProductBundles from "./ProductBundles";
+import type { ResolvedBundle } from "@/lib/catalog/bundles";
 import { FitmentSummary, type FitmentApplication } from "./ProductFitment";
 import PopularCategoriesSection from "@/components/catalog/PopularCategoriesSection";
 import GuidesPreviewSection from "@/components/home/GuidesPreviewSection";
@@ -141,6 +143,7 @@ export default function ProductTemplate({
   productInterest = null,
   partType = null,
   inquiryHref = null,
+  bundles = [],
 }: {
   product: Product;
   catalogMeta: ProductCatalogMeta;
@@ -163,6 +166,8 @@ export default function ProductTemplate({
    * app/product/[id]/page.tsx.
    */
   partType?: string | null;
+  /** Approved kit bundles that include this listing (lib/catalog/bundles.ts). */
+  bundles?: ResolvedBundle[];
   /**
    * Set for a verified Genuine listing whose stock and price are not yet
    * confirmed: the buy box becomes an availability inquiry -- no price, no
@@ -598,6 +603,10 @@ export default function ProductTemplate({
               coreCharge={logistics?.coreCharge}
             />
           </div>
+
+          {inquiryOnly ? null : (
+            <ProductBundles bundles={bundles} currentProductId={product.id} />
+          )}
 
           <ProductInterest interest={productInterest} />
         </div>

@@ -19,6 +19,7 @@ import { ARCHIVED_PRODUCT_IDS } from "@/lib/inventory/products";
 import { getProductThumbnail } from "@/lib/inventory/media";
 import { compactFitment } from "@/lib/catalog/short-fitment";
 import ProductTemplate from "@/components/product/ProductTemplate";
+import { getBundlesForProduct } from "@/lib/catalog/bundles";
 import JsonLdScript from "@/components/seo/JsonLdScript";
 import { isHeldListing } from "@/lib/inventory/held";
 import {
@@ -201,6 +202,7 @@ export default async function ProductPage({ params }: PageProps) {
         fitmentYears={inventoryProduct?.fitmentYears}
         fitmentEngine={inventoryProduct?.fitmentEngine}
         partType={inventoryProduct ? partTypeLabel(inventoryProduct) : null}
+        bundles={getBundlesForProduct(product.id)}
         inquiryHref={
           inventoryProduct && isGenuineInquiryOnly(inventoryProduct)
             ? `/contact?topic=fitment&listing=${inventoryProduct.id}`

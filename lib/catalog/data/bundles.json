@@ -1,0 +1,49 @@
+{
+  "_comment": "Kit bundles shown as 'add all to cart' on component product pages (lib/catalog/bundles.ts). Components mirror docs/catalog-expansion/toyota-service-kits-batch-*.json. A bundle appears only when approved is true AND every component is a published, purchasable listing. Set approved only on the owner's approval.",
+  "bundles": [
+    {
+      "id": "toyota-kit-camry-2020-2024-25-filter-plug",
+      "name": "Camry 2020–2024 2.5L Filter & Spark Plug Kit",
+      "summary": "Oil filter element, engine air filter, cabin air filter and four spark plugs for the 2.5L gas (non-hybrid) Camry.",
+      "notIncluded": "Engine oil, the drain plug gasket and the oil filter housing O-ring are not included.",
+      "components": [
+        { "partNumber": "04152-YZZA1", "quantity": 1 },
+        { "partNumber": "17801-F0050", "quantity": 1 },
+        { "partNumber": "87139-0E040", "quantity": 1 },
+        { "partNumber": "90919-01289", "quantity": 4 }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-tacoma-2016-2023-35-filter-plug",
+      "name": "Tacoma 2016–2023 3.5L V6 Filter & Spark Plug Kit",
+      "summary": "Oil filter element, engine air filter and six spark plugs for the 3.5L V6 Tacoma.",
+      "notIncluded": "Engine oil, the cabin air filter, the drain plug gasket and the oil filter housing O-ring are not included.",
+      "components": [
+        { "partNumber": "04152-YZZA1", "quantity": 1 },
+        { "partNumber": "17801-0P100", "quantity": 1 },
+        { "partNumber": "90919-01287", "quantity": 6 }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-tacoma-2016-2023-front-brake",
+      "name": "Tacoma 2016–2023 Front Brake Kit",
+      "summary": "One front brake pad set and two front rotors for a full front-axle replacement.",
+      "notIncluded": "Pad fitting hardware and brake fluid are not included.",
+      "components": [
+        { "partNumber": "04465-04090", "quantity": 1 },
+        { "partNumber": "43512-04052", "quantity": 2 }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-oil-filter-04152-yzza1-5-pack",
+      "name": "Oil Filter Element 04152-YZZA1 — 5-Pack",
+      "summary": "Five genuine Toyota 04152-YZZA1 cartridge oil filter elements.",
+      "notIncluded": "Housing O-rings and drain plug gaskets are not included.",
+      "components": [{ "partNumber": "04152-YZZA1", "quantity": 5 }],
+      "approved": false
+    }
+  ]
+}

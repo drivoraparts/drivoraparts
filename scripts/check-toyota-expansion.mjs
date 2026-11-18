@@ -174,6 +174,37 @@ for (const file of kitFiles) {
   }
 }
 
+// Storefront "add all to cart" bundles (lib/catalog/data/bundles.json) must
+// mirror a staged kit, and may be approved only once that kit is ready.
+const stagedKits = new Map();
+for (const file of kitFiles) {
+  for (const kit of JSON.parse(fs.readFileSync(path.join(DIR, file), "utf8")).kits) stagedKits.set(kit.id, kit);
+}
+const bundleFile = path.join(ROOT, "lib/catalog/data/bundles.json");
+let bundleCount = 0;
+let approvedBundles = 0;
+if (fs.existsSync(bundleFile)) {
+  const seenBundles = new Set();
+  for (const b of JSON.parse(fs.readFileSync(bundleFile, "utf8")).bundles) {
+    const at = `bundles.json ${b.id}`;
+    bundleCount += 1;
+    if (seenBundles.has(b.id)) problems.push(`${at}: duplicate bundle id`);
+    seenBundles.add(b.id);
+    const kit = stagedKits.get(b.id);
+    if (!kit) { problems.push(`${at}: no staged kit with this id`); continue; }
+    if (kit.status === "research_pending") problems.push(`${at}: staged kit is still research_pending`);
+    const key = (list) => list.map((c) => `${String(c.partNumber).toUpperCase()}x${c.quantity}`).sort().join(",");
+    if (key(b.components ?? []) !== key(kit.components ?? [])) problems.push(`${at}: components differ from the staged kit`);
+    const text = `${b.name} ${b.summary} ${b.notIncluded}`;
+    if (FORBIDDEN.test(text) || /\b(save|discount|sale|% off)\b/i.test(text)) problems.push(`${at}: bundle text makes a price or unestablished claim`);
+    if (typeof b.approved !== "boolean") problems.push(`${at}: approved must be true or false`);
+    if (b.approved) {
+      approvedBundles += 1;
+      if (kit.status !== "ready" || !kit.pricing?.approved) problems.push(`${at}: approved on the storefront before the staged kit is ready and price-approved`);
+    }
+  }
+}
+
 if (problems.length) {
   console.error(problems.map((p) => `  [toyota-expansion] ${p}`).join("\n"));
   process.exit(1);
@@ -184,5 +215,6 @@ console.log(
     `${counts.research_pending} research pending.` +
     (kitFiles.length
       ? ` Kits: ${kitCounts.ready} ready, ${kitCounts.commercial_pending} awaiting commercial approval, ${kitCounts.research_pending} research pending.`
-      : "")
+      : "") +
+    (bundleCount ? ` Storefront bundles: ${bundleCount} defined, ${approvedBundles} approved.` : "")
 );
