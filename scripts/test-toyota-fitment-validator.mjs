@@ -43,7 +43,7 @@ const CASES = [
     expect: /2GR-FKS was offered in the US Highlander only 2017-2022/,
     mutate(d) {
       const r = find(d, "04152-YZZA1");
-      const a = r.fitmentVerification.applications.find((x) => x.model === "Highlander" && x.status === "vin_dependent");
+      const a = r.fitmentVerification.applications.find((x) => x.model === "Highlander" && (x.status === "verified" || x.status === "vin_dependent"));
       a.yearTo = 2023;
       r.fitmentApplications.find((x) => x.model === "Highlander").yearTo = 2023;
     },
@@ -77,7 +77,7 @@ const CASES = [
     name: "ready without sufficient evidence or resolved fitment",
     expect: /ready with unresolved fitment blockers|ready with no verified or VIN-dependent application/,
     mutate(d) {
-      const r = find(d, "90919-01287");
+      const r = find(d, "43550-0R070");
       r.status = "ready";
     },
   },

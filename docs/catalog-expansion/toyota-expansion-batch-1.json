@@ -2,15 +2,16 @@
   "_comment": "Toyota catalog expansion batch 1 (2026-11-18), final audit. NOT loaded by the storefront. Nothing approved or published. Validate with: node scripts/check-toyota-expansion.mjs",
   "groups": {
     "ready": 0,
-    "commercial_pending": 24,
-    "research_pending": 26
+    "commercial_pending": 30,
+    "research_pending": 20
   },
   "auditSummary": {
-    "Ready for price approval": 0,
-    "Fitment verification required": 26,
-    "Pricing evidence insufficient": 1,
-    "Supplier cost required": 23,
-    "Product photography required": 0
+    "Ready for approval": 0,
+    "Rejected (incorrect or unsupported)": 4,
+    "Awaiting Toyota fitment confirmation": 16,
+    "Awaiting pricing verification": 0,
+    "Awaiting supplier cost": 30,
+    "Awaiting image verification": 0
   },
   "bundleRecommendations": [
     {
@@ -351,12 +352,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -515,12 +517,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -658,12 +661,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -826,12 +830,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -1018,12 +1023,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Rejected (incorrect or unsupported)",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": true,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -1260,12 +1266,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -1276,7 +1283,7 @@
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Oil Filter Element 04152-YZZA1 — Tacoma, Camry and Highlander",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA1 — Tacoma, Camry, Highlander and Sienna",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04152-YZZA1",
@@ -1285,7 +1292,7 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6)",
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6); 2017–2020 Toyota Sienna (3.5L V6)",
       "fitmentApplications": [
         {
           "yearFrom": 2016,
@@ -1307,10 +1314,17 @@
           "make": "Toyota",
           "model": "Highlander",
           "submodel": "3.5L V6"
+        },
+        {
+          "yearFrom": 2017,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "3.5L V6"
         }
       ],
       "engines": "2GR-FKS",
-      "description": "Genuine Toyota oil filter element 04152-YZZA1 for the Toyota Tacoma, Camry and Highlander. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. It supersedes 04152-31090; 04152-31110; 04152-0V010. Cartridge element; replace the housing O-ring with each change. Not claimed for the 2.5L A25A-FKS: dealer catalogs list spin-on 90915-YZZN1 for the 2019+ RAV4 2.5L and the US-built 2020 Camry 2.5L.\n\nSpecifications\n\nPart number: 04152-YZZA1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6)\nRestriction: 2018-2024 Camry: 3.5L V6; North American-built; from 11/2017 (dealer note: 'Exc. Japan built')\nRestriction: 2017-2022 Highlander: 3.5L V6\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota oil filter element 04152-YZZA1 for the Toyota Tacoma, Camry, Highlander and Sienna. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. It supersedes 04152-31090; 04152-31110; 04152-0V010. Cartridge element; replace the housing O-ring with each change. Not claimed for the 2.5L A25A-FKS: dealer catalogs list spin-on 90915-YZZN1 for the 2019+ RAV4 2.5L and the US-built 2020 Camry 2.5L.\n\nSpecifications\n\nPart number: 04152-YZZA1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6); 2017–2020 Toyota Sienna (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -1368,14 +1382,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "oil_filter",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -1391,15 +1405,15 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsNow (2020 Tacoma 6 Cyl 3.5L; 2.7L uses 90915-YZZD1)",
-                "url": "https://www.toyotapartsnow.com/parts-select/2020-toyota-tacoma-oil-filter",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): TACOMA 2016-2019 (-1/19) and 2019- (2/19-) V6 (2GRFKS) -> 04152-YZZA1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               },
               {
                 "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2017 Tacoma)",
-                "url": "https://www.toyotapartsdeal.com/oem-2017-toyota-tacoma-oil_filter.html",
+                "source": "ToyotaPartsNow (2020 Tacoma 3.5L)",
+                "url": "https://www.toyotapartsnow.com/parts-select/2020-toyota-tacoma-oil-filter",
                 "note": ""
               }
             ],
@@ -1411,21 +1425,21 @@
             "make": "Toyota",
             "model": "Camry",
             "engine": "2GR-FKS 3.5L V6",
-            "restriction": "3.5L V6",
-            "assemblyOrigin": "North American-built",
-            "productionDates": "from 11/2017 (dealer note: 'Exc. Japan built')",
-            "status": "vin_dependent",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
             "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): CAMRY 2018- V6 (2GRFKS) -> 04152-YZZA1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              },
               {
                 "kind": "dealer_catalog",
                 "source": "ToyotaPartsNow (2018 Camry, 3.5L)",
                 "url": "https://www.toyotapartsnow.com/parts-select/2018-toyota-camry-oil-filter",
-                "note": ""
-              },
-              {
-                "kind": "secondary",
-                "source": "Repco NZ (2.5L spin-on, 3.5L cartridge)",
-                "url": "https://www.repco.co.nz/parts-finder/2022-toyota-camry/oil-filter",
                 "note": ""
               }
             ],
@@ -1437,21 +1451,41 @@
             "make": "Toyota",
             "model": "Highlander",
             "engine": "2GR-FKS 3.5L V6",
-            "restriction": "3.5L V6",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog_ca",
-                "source": "Scarborough Toyota (Avalon, Camry, Highlander, RAV4, Sienna, Tacoma, Venza; 3.5L)",
-                "url": "https://parts.scarboroughtoyota.ca/p/Toyota_2018_/Engine-Oil-Filter-Element/49507508/04152YZZA1.html",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): HIGHLANDER 2017-2019 and 2020- V6 (2GRFKS) -> 04152-YZZA1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               },
               {
                 "kind": "toyota_official",
                 "source": "Toyota parts (part page)",
                 "url": "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza1",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2017,
+            "yearTo": 2020,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2GR-FKS 3.5L V6",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): SIENNA 2017-2020 V6 (2GRFKS) -> 04152-YZZA1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -1468,7 +1502,7 @@
             "productionDates": null,
             "status": "removed",
             "evidence": [],
-            "reason": "The 2023 Highlander has no 3.5L V6 (2.4L turbo and 2.5L hybrid only); the staged 2017-2023 range was wrong."
+            "reason": "The 2023 Highlander has no 3.5L V6 (2.4L turbo and 2.5L hybrid only)."
           },
           {
             "yearFrom": 2018,
@@ -1482,13 +1516,13 @@
             "status": "removed",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2020 Camry: 90915-YZZN1, US built, 2.5L)",
-                "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-camry-oil_filter.html",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): CAMRY 2018- A25AFKS -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
-            "reason": "The 2.5L A25A-FKS takes spin-on 90915-YZZN1 per dealer catalogs; a cartridge element is not claimed for it."
+            "reason": "Toyota's chart assigns spin-on 90915-YZZN1 to the 2.5L."
           },
           {
             "yearFrom": 2019,
@@ -1502,13 +1536,13 @@
             "status": "removed",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "Lakeland Toyota (2023/2024 RAV4: 90915-YZZN1)",
-                "url": "https://parts.lakelandtoyota.com/p/toyota_2023_RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): RAV4 2019- A25AFKS -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
-            "reason": "Dealer catalogs list spin-on 90915-YZZN1 / 90915-10009 for the 2019+ RAV4 2.5L; 04152-YZZA1 belongs to the 2013-2018 RAV4."
+            "reason": "Toyota's chart assigns 90915-YZZN1 to the 2019+ RAV4; 04152-YZZA1 is the 2009-2018 RAV4 filter."
           }
         ],
         "supersession": [
@@ -1558,17 +1592,15 @@
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
-          "2023-2023 Highlander 2GR-FKS 3.5L V6: The 2023 Highlander has no 3.5L V6 (2.4L turbo and 2.5L hybrid only); the staged 2017-2023 range was wrong.",
-          "2018-2024 Camry A25A-FKS 2.5L: The 2.5L A25A-FKS takes spin-on 90915-YZZN1 per dealer catalogs; a cartridge element is not claimed for it.",
-          "2019-2024 RAV4 A25A-FKS 2.5L: Dealer catalogs list spin-on 90915-YZZN1 / 90915-10009 for the 2019+ RAV4 2.5L; 04152-YZZA1 belongs to the 2013-2018 RAV4."
+          "2023-2023 Highlander 2GR-FKS 3.5L V6: The 2023 Highlander has no 3.5L V6 (2.4L turbo and 2.5L hybrid only).",
+          "2018-2024 Camry A25A-FKS 2.5L: Toyota's chart assigns spin-on 90915-YZZN1 to the 2.5L.",
+          "2019-2024 RAV4 A25A-FKS 2.5L: Toyota's chart assigns 90915-YZZN1 to the 2019+ RAV4; 04152-YZZA1 is the 2009-2018 RAV4 filter."
         ]
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza1",
-        "https://parts.scarboroughtoyota.ca/p/Toyota_2018_/Engine-Oil-Filter-Element/49507508/04152YZZA1.html",
-        "https://www.repco.co.nz/parts-finder/2022-toyota-camry/oil-filter",
         "https://www.sparksparts.com/oem-parts/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1",
-        "https://www.toyotapartsdeal.com/oem-2017-toyota-tacoma-oil_filter.html",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
         "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html",
         "https://www.toyotapartsnow.com/parts-select/2018-toyota-camry-oil-filter",
         "https://www.toyotapartsnow.com/parts-select/2020-toyota-tacoma-oil-filter"
@@ -1579,12 +1611,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -1595,7 +1628,7 @@
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Oil Filter Element 04152-YZZA6 — Corolla",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA6 — Corolla, Matrix and Prius",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04152-YZZA6",
@@ -1604,18 +1637,39 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2009–2017 Toyota Corolla (1.8L)",
+      "fitment": "2009–2015 Toyota Corolla (1.8L); 2014–2015 Toyota Corolla (1.8L; LE Eco); 2009–2013 Toyota Matrix (1.8L); 2010–2017 Toyota Prius (1.8L hybrid)",
       "fitmentApplications": [
         {
           "yearFrom": 2009,
-          "yearTo": 2017,
+          "yearTo": 2015,
           "make": "Toyota",
           "model": "Corolla",
           "submodel": "1.8L"
+        },
+        {
+          "yearFrom": 2014,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L; LE Eco"
+        },
+        {
+          "yearFrom": 2009,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Matrix",
+          "submodel": "1.8L"
+        },
+        {
+          "yearFrom": 2010,
+          "yearTo": 2017,
+          "make": "Toyota",
+          "model": "Prius",
+          "submodel": "1.8L hybrid"
         }
       ],
-      "engines": "2ZR-FE",
-      "description": "Genuine Toyota oil filter element 04152-YZZA6 for the Toyota Corolla. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. Not claimed for the 2.0L M20A-FKS.\n\nSpecifications\n\nPart number: 04152-YZZA6\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2ZR-FE\nFitment: 2009–2017 Toyota Corolla (1.8L)\nRestriction: 2009-2017 Corolla: 1.8L\n\nConfirm fitment with your VIN before ordering.",
+      "engines": "2ZR-FE; 2ZR-FAE; 2ZR-FXE",
+      "description": "Genuine Toyota oil filter element 04152-YZZA6 for the Toyota Corolla, Matrix and Prius. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. 2016 and later Corolla 1.8L engines use spin-on 90915-YZZN1 (Toyota oil filter chart).\n\nSpecifications\n\nPart number: 04152-YZZA6\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2ZR-FE; 2ZR-FAE; 2ZR-FXE\nFitment: 2009–2015 Toyota Corolla (1.8L); 2014–2015 Toyota Corolla (1.8L; LE Eco); 2009–2013 Toyota Matrix (1.8L); 2010–2017 Toyota Prius (1.8L hybrid)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -1673,55 +1727,122 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "oil_filter",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
           {
             "yearFrom": 2009,
-            "yearTo": 2017,
-            "make": "Toyota",
-            "model": "Corolla",
-            "engine": "2ZR-FE 1.8L",
-            "restriction": "1.8L",
-            "assemblyOrigin": null,
-            "productionDates": null,
-            "status": "vin_dependent",
-            "evidence": [
-              {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (part page, 2008-2017)",
-                "url": "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza6.html",
-                "note": ""
-              },
-              {
-                "kind": "toyota_official",
-                "source": "Toyota parts (part page)",
-                "url": "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza6",
-                "note": ""
-              }
-            ],
-            "reason": null
-          },
-          {
-            "yearFrom": 2018,
-            "yearTo": 2018,
+            "yearTo": 2015,
             "make": "Toyota",
             "model": "Corolla",
             "engine": "2ZR-FE 1.8L",
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): COROLLA 2009-2013 (2ZRFE) and 2014-2015 (2ZRFAE, 2ZRFE) -> 04152-YZZA6",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "ToyotaPartsDeal (part page)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza6.html",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2014,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "2ZR-FAE 1.8L",
+            "restriction": "LE Eco",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): COROLLA 2014-2015 (2ZRFAE, 2ZRFE) -> 04152-YZZA6",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2009,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Matrix",
+            "engine": "2ZR-FE 1.8L",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): MATRIX 2009-2010 and 2011-2014 4 Cyl. (2ZRFE) -> 04152-YZZA6; US Matrix sales ended with the 2013 model year",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2010,
+            "yearTo": 2017,
+            "make": "Toyota",
+            "model": "Prius",
+            "engine": "2ZR-FXE 1.8L hybrid",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): PRIUS 2010-2017 4 Cyl. (2ZRFXE) -> 04152-YZZA6",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2016,
+            "yearTo": 2018,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "2ZR-FE / 2ZR-FAE 1.8L",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
             "status": "removed",
-            "evidence": [],
-            "reason": "Dealer part-level range ends 2017; no 2018 catalog evidence."
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): COROLLA 2016- (2ZRFAE, 2ZRFE) -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": "Toyota's chart moves the 2016+ Corolla 1.8L to spin-on 90915-YZZN1; the staged 2016-2017 years were wrong."
           }
         ],
         "supersession": [
@@ -1736,11 +1857,11 @@
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
-          "2018-2018 Corolla 2ZR-FE 1.8L: Dealer part-level range ends 2017; no 2018 catalog evidence."
+          "2016-2018 Corolla 2ZR-FE / 2ZR-FAE 1.8L: Toyota's chart moves the 2016+ Corolla 1.8L to spin-on 90915-YZZN1; the staged 2016-2017 years were wrong."
         ]
       },
       "sources": [
-        "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza6",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
         "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza6.html",
         "https://www.toyotapartsnow.com/oem/toyota~replaceable-element~04152-yzza6"
       ],
@@ -1750,12 +1871,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -1766,7 +1888,7 @@
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZD3 — Tacoma, 4Runner and Tundra",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZD3 — Tacoma, 4Runner, Tundra and Sequoia",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90915-YZZD3",
@@ -1775,7 +1897,7 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2009 Toyota Tundra (4.7L V8); 2005–2010 Toyota Tundra (4.0L V6; 2011+ 4.0L uses 04152-YZZA5)",
+      "fitment": "2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2009 Toyota Tundra (4.7L V8); 2005–2010 Toyota Tundra (4.0L V6); 2001–2009 Toyota Sequoia (4.7L V8)",
       "fitmentApplications": [
         {
           "yearFrom": 2005,
@@ -1803,11 +1925,18 @@
           "yearTo": 2010,
           "make": "Toyota",
           "model": "Tundra",
-          "submodel": "4.0L V6; 2011+ 4.0L uses 04152-YZZA5"
+          "submodel": "4.0L V6"
+        },
+        {
+          "yearFrom": 2001,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "4.7L V8"
         }
       ],
       "engines": "1GR-FE; 2UZ-FE",
-      "description": "Genuine Toyota spin-on oil filter 90915-YZZD3 for the Toyota Tacoma, 4Runner and Tundra. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. 2.7L Tacoma fitment disputed between dealer catalogs and not claimed.\n\nSpecifications\n\nPart number: 90915-YZZD3\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE; 2UZ-FE\nFitment: 2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2009 Toyota Tundra (4.7L V8); 2005–2010 Toyota Tundra (4.0L V6; 2011+ 4.0L uses 04152-YZZA5)\nRestriction: 2005-2010 Tundra: 4.0L V6; 2011+ 4.0L uses 04152-YZZA5\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota spin-on oil filter 90915-YZZD3 for the Toyota Tacoma, 4Runner, Tundra and Sequoia. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. 2.7L Tacoma fitment disputed between dealer catalogs and not claimed.\n\nSpecifications\n\nPart number: 90915-YZZD3\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE; 2UZ-FE\nFitment: 2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2009 Toyota Tundra (4.7L V8); 2005–2010 Toyota Tundra (4.0L V6); 2001–2009 Toyota Sequoia (4.7L V8)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -1855,14 +1984,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "oil_filter_spin",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -1872,21 +2001,15 @@
             "make": "Toyota",
             "model": "Tacoma",
             "engine": "1GR-FE 4.0L V6",
-            "restriction": "4.0L V6",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (part page)",
-                "url": "https://www.toyotapartsdeal.com/oem/toyota~filter~oil~90915-YZZD3.html",
-                "note": ""
-              },
-              {
-                "kind": "dealer_catalog",
-                "source": "NuCar Toyota (1984-2015 Tacoma, Tundra, 4Runner, FJ Cruiser)",
-                "url": "https://toyotaparts.nucar.com/parts/toyota-1984-2015-toyota-engine-oil-filter-tacoma-tundra-4runner-fj-cruiser-land-cruiser-90915yzzd3",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): TACOMA 2005-2015 V6 (1GRFE) -> 90915-YZZD3",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -1904,9 +2027,9 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsNow (part page)",
-                "url": "https://www.toyotapartsnow.com/oem/toyota~filter-oil~90915-yzzd3",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): 4RUNNER 2003-2009 V6 (1GRFE) and V8 (2UZFE) -> 90915-YZZD3",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -1918,15 +2041,15 @@
             "make": "Toyota",
             "model": "Tundra",
             "engine": "2UZ-FE 4.7L V8",
-            "restriction": "4.7L V8",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (part page)",
-                "url": "https://www.toyotapartsdeal.com/oem/toyota~filter~oil~90915-YZZD3.html",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): TUNDRA 2000-2004, 2005-2008, 2008-2009 V8 (2UZFE) -> 90915-YZZD3",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -1938,15 +2061,35 @@
             "make": "Toyota",
             "model": "Tundra",
             "engine": "1GR-FE 4.0L V6",
-            "restriction": "4.0L V6; 2011+ 4.0L uses 04152-YZZA5",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsNow (part page; end year 2010-2011 varies)",
-                "url": "https://www.toyotapartsnow.com/oem/toyota~filter-oil~90915-yzzd3",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): TUNDRA 2005-2010 V6 (1GRFE) -> 90915-YZZD3; 2011+ 1GRFE -> 04152-YZZA5",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2001,
+            "yearTo": 2009,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "2UZ-FE 4.7L V8",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): SEQUOIA 2001-2007, 2008, 2008-2009 V8 (2UZFE) -> 90915-YZZD3",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -1960,11 +2103,9 @@
       },
       "sources": [
         "https://parts.olathetoyota.com/oem-parts/toyota-oil-filter-90915yzzd3",
-        "https://toyotaparts.nucar.com/parts/toyota-1984-2015-toyota-engine-oil-filter-tacoma-tundra-4runner-fj-cruiser-land-cruiser-90915yzzd3",
         "https://www.sparksparts.com/oem-parts/toyota-1984-2015-toyota-engine-oil-filter-tacoma-tundra-4runner-fj-cruiser-land-cruiser-90915yzzd3",
-        "https://www.toyotapartsdeal.com/oem/toyota~filter~oil~90915-YZZD3.html",
-        "https://www.toyotapartsdeal.com/oem/toyota~filter~oil~90915-yzzd3.html",
-        "https://www.toyotapartsnow.com/oem/toyota~filter-oil~90915-yzzd3"
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+        "https://www.toyotapartsdeal.com/oem/toyota~filter~oil~90915-yzzd3.html"
       ],
       "blocking": [
         "approved selling price",
@@ -1972,12 +2113,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -2164,12 +2306,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "lower unattributed listing(s) seen; not used as benchmark",
@@ -2355,12 +2498,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -2514,12 +2658,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -2687,12 +2832,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -2702,7 +2848,7 @@
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Iridium Spark Plug 90919-01289 — RAV4 and Camry",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01289 — Camry, RAV4, Corolla, Highlander and Venza",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90919-01289",
@@ -2711,25 +2857,60 @@
       "condition": "brand-new",
       "proposedCategory": "ignition",
       "proposedCategoryName": "Ignition",
-      "fitment": "2019–2024 Toyota RAV4 (2.5L; gas; hybrid not confirmed); 2018–2024 Toyota Camry (2.5L; gas; hybrid not confirmed)",
+      "fitment": "2018–2024 Toyota Camry (2.5L; gas); 2018–2024 Toyota Camry (2.5L hybrid; hybrid); 2019–2024 Toyota RAV4 (2.5L; gas); 2019–2024 Toyota RAV4 (2.5L hybrid; hybrid, incl. Prime); 2020–2022 Toyota Corolla (1.8L); 2020–2024 Toyota Highlander (2.5L hybrid; hybrid); 2021–2024 Toyota Venza (2.5L hybrid)",
       "fitmentApplications": [
         {
-          "yearFrom": 2019,
+          "yearFrom": 2018,
           "yearTo": 2024,
           "make": "Toyota",
-          "model": "RAV4",
-          "submodel": "2.5L; gas; hybrid not confirmed"
+          "model": "Camry",
+          "submodel": "2.5L; gas"
         },
         {
           "yearFrom": 2018,
           "yearTo": 2024,
           "make": "Toyota",
           "model": "Camry",
-          "submodel": "2.5L; gas; hybrid not confirmed"
+          "submodel": "2.5L hybrid; hybrid"
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L; gas"
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L hybrid; hybrid, incl. Prime"
+        },
+        {
+          "yearFrom": 2020,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L"
+        },
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "2.5L hybrid; hybrid"
+        },
+        {
+          "yearFrom": 2021,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Venza",
+          "submodel": "2.5L hybrid"
         }
       ],
-      "engines": "A25A-FKS",
-      "description": "Genuine Toyota iridium spark plug 90919-01289 for the Toyota RAV4 and Camry. It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-A1001. Sold individually; four required.\n\nSpecifications\n\nPart number: 90919-01289\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L; gas; hybrid not confirmed); 2018–2024 Toyota Camry (2.5L; gas; hybrid not confirmed)\nRestriction: 2019-2024 RAV4: 2.5L gas; hybrid not confirmed\nRestriction: 2018-2024 Camry: 2.5L gas; hybrid not confirmed\n\nConfirm fitment with your VIN before ordering.",
+      "engines": "A25A-FKS; A25A-FXS; 2ZR-FAE",
+      "description": "Genuine Toyota iridium spark plug 90919-01289 for the Toyota Camry, RAV4, Corolla, Highlander and Venza. It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-A1001. Sold individually; four required.\n\nSpecifications\n\nPart number: 90919-01289\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; A25A-FXS; 2ZR-FAE\nFitment: 2018–2024 Toyota Camry (2.5L; gas); 2018–2024 Toyota Camry (2.5L hybrid; hybrid); 2019–2024 Toyota RAV4 (2.5L; gas); 2019–2024 Toyota RAV4 (2.5L hybrid; hybrid, incl. Prime); 2020–2022 Toyota Corolla (1.8L); 2020–2024 Toyota Highlander (2.5L hybrid; hybrid); 2021–2024 Toyota Venza (2.5L hybrid)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -2782,37 +2963,37 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "spark_plug",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
           {
-            "yearFrom": 2019,
+            "yearFrom": 2018,
             "yearTo": 2024,
             "make": "Toyota",
-            "model": "RAV4",
+            "model": "Camry",
             "engine": "A25A-FKS 2.5L",
-            "restriction": "2.5L gas; hybrid not confirmed",
+            "restriction": "gas",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "AutoNation Toyota South Austin (part page)",
-                "url": "https://parts.autonationtoyotasouthaustin.com/oem-parts/toyota-spark-plug-9091901289",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): CAMRY 2018- L4 (A25AFKS) FC16HR-Q8 -> 90919-01289",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
                 "note": ""
               },
               {
                 "kind": "dealer_catalog",
-                "source": "Olathe Toyota (part page, 2018+ Toyota)",
+                "source": "Olathe Toyota (part page)",
                 "url": "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901289",
                 "note": ""
               }
@@ -2824,16 +3005,116 @@
             "yearTo": 2024,
             "make": "Toyota",
             "model": "Camry",
-            "engine": "A25A-FKS 2.5L",
-            "restriction": "2.5L gas; hybrid not confirmed",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": "hybrid",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "Olathe Toyota (part page, 2018+ Toyota)",
-                "url": "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901289",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): CAMRY 2018- L4 (A25AFXS) Hybrid -> 90919-01289",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "A25A-FKS 2.5L",
+            "restriction": "gas",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): RAV4 2019- L4 (A25AFKS) -> 90919-01289",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": "hybrid, incl. Prime",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): RAV4 HV 2019- and RAV4 PRIME 2021- (A25AFXS) -> 90919-01289",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2020,
+            "yearTo": 2022,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "2ZR-FAE 1.8L",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): COROLLA 2020- L4 (2ZRFAE) -> 90919-01289",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2020,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": "hybrid",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): HIGHLANDER/HV 2020- L4 (A25AFXS) Hybrid -> 90919-01289",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2021,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Venza",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): VENZA 2021- L4 (A25AFXS) Hybrid -> 90919-01289",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
                 "note": ""
               }
             ],
@@ -2861,8 +3142,8 @@
         "unresolved": []
       },
       "sources": [
-        "https://parts.autonationtoyotasouthaustin.com/oem-parts/toyota-spark-plug-9091901289",
         "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901289",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
         "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-spark_plug.html"
       ],
       "blocking": [
@@ -2871,12 +3152,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -2995,12 +3277,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Rejected (incorrect or unsupported)",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": true,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -3020,18 +3303,18 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2016–2023 Toyota Tacoma (4x4 and PreRunner per one listing; 2WD coverage by VIN)",
+      "fitment": "2016–2023 Toyota Tacoma",
       "fitmentApplications": [
         {
           "yearFrom": 2016,
           "yearTo": 2023,
           "make": "Toyota",
           "model": "Tacoma",
-          "submodel": "4x4 and PreRunner per one listing; 2WD coverage by VIN"
+          "submodel": null
         }
       ],
       "engines": "",
-      "description": "Genuine Toyota front disc brake pad set 04465-04090 for the Toyota Tacoma. The set covers one front axle, both sides. Pads only; fitting hardware sold separately. Manufacturer note: Mark Advics VC070H.\n\nSpecifications\n\nPart number: 04465-04090\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2023 Toyota Tacoma (4x4 and PreRunner per one listing; 2WD coverage by VIN)\nRestriction: 2016-2023 Tacoma: 4x4 and PreRunner per one listing; 2WD coverage by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front disc brake pad set 04465-04090 for the Toyota Tacoma. The set covers one front axle, both sides. Pads only; fitting hardware sold separately. Manufacturer note: Mark Advics VC070H.\n\nSpecifications\n\nPart number: 04465-04090\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2023 Toyota Tacoma\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -3078,14 +3361,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "pads_front",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -3095,15 +3378,15 @@
             "make": "Toyota",
             "model": "Tacoma",
             "engine": "",
-            "restriction": "4x4 and PreRunner per one listing; 2WD coverage by VIN",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
                 "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (part page, 2015-2023)",
-                "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-04090.html",
+                "source": "ToyotaPartsNow (2023 Tacoma: Limited, SR, SR5, Trail, TRD Off-Road, TRD Pro, TRD Sport; 2.7L and 3.5L)",
+                "url": "https://www.toyotapartsnow.com/parts-select/2023-toyota-tacoma-brake-pad-set",
                 "note": ""
               },
               {
@@ -3124,7 +3407,8 @@
       "sources": [
         "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-0446504090",
         "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-front-446504090",
-        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-04090.html"
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-04090.html",
+        "https://www.toyotapartsnow.com/parts-select/2023-toyota-tacoma-brake-pad-set"
       ],
       "blocking": [
         "approved selling price",
@@ -3132,12 +3416,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -3308,12 +3593,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -3491,12 +3777,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -3697,13 +3984,34 @@
             "status": "unresolved",
             "evidence": [],
             "reason": "Dealers disagree (2022-2023 vs 2022-2025)."
+          },
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "unresolved",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "dealer notes conflict (with / without hybrid)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html",
+                "note": ""
+              }
+            ],
+            "reason": "Dealer notes conflict on hybrid fitment; needs a VIN-level lookup."
           }
         ],
         "supersession": [],
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
-          "2024-2025 Corolla Cross M20A-FKS 2.0L: Dealers disagree (2022-2023 vs 2022-2025)."
+          "2024-2025 Corolla Cross M20A-FKS 2.0L: Dealers disagree (2022-2023 vs 2022-2025).",
+          "2019-2024 RAV4 A25A-FXS 2.5L hybrid: Dealer notes conflict on hybrid fitment; needs a VIN-level lookup."
         ]
       },
       "sources": [
@@ -3718,12 +4026,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -3732,7 +4041,7 @@
       }
     },
     {
-      "status": "research_pending",
+      "status": "commercial_pending",
       "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0E060 — Camry and RAV4",
       "brand": "toyota",
       "manufacturer": "Toyota",
@@ -3742,7 +4051,7 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2018–2024 Toyota Camry (2.5L; USA-built, without TRD); 2019–2023 Toyota RAV4 (end year varies (2023 / 2024))",
+      "fitment": "2018–2024 Toyota Camry (2.5L; USA-built, without TRD); 2019–2023 Toyota RAV4 (North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies)",
       "fitmentApplications": [
         {
           "yearFrom": 2018,
@@ -3756,11 +4065,11 @@
           "yearTo": 2023,
           "make": "Toyota",
           "model": "RAV4",
-          "submodel": "end year varies (2023 / 2024)"
+          "submodel": "North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies"
         }
       ],
       "engines": "A25A-FKS",
-      "description": "Genuine Toyota front disc brake pad set 04465-0E060 for the Toyota Camry and RAV4. The set covers one front axle, both sides. TRD and some trims use different pads.\n\nSpecifications\n\nPart number: 04465-0E060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2024 Toyota Camry (2.5L; USA-built, without TRD); 2019–2023 Toyota RAV4 (end year varies (2023 / 2024))\nRestriction: 2018-2024 Camry: USA-built, without TRD; USA-built; split with 04465-33480 by production window\nRestriction: 2019-2023 RAV4: end year varies (2023 / 2024)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front disc brake pad set 04465-0E060 for the Toyota Camry and RAV4. The set covers one front axle, both sides. TRD and some trims use different pads.\n\nSpecifications\n\nPart number: 04465-0E060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2024 Toyota Camry (2.5L; USA-built, without TRD); 2019–2023 Toyota RAV4 (North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies)\nRestriction: 2018-2024 Camry: USA-built, without TRD; USA-built; split with 04465-33480 by production window\nRestriction: 2019-2023 RAV4: North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies; North American-built\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -3822,14 +4131,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "low (unresolved)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
       "partKind": "pads_front",
       "supersededBy": null,
       "vinDependent": true,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "unresolved",
+        "verificationStatus": "vin_dependent",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -3871,8 +4180,8 @@
             "make": "Toyota",
             "model": "RAV4",
             "engine": "",
-            "restriction": "end year varies (2023 / 2024)",
-            "assemblyOrigin": null,
+            "restriction": "North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies",
+            "assemblyOrigin": "North American-built",
             "productionDates": null,
             "status": "vin_dependent",
             "evidence": [
@@ -3901,9 +4210,7 @@
         ],
         "supersession": [],
         "rejectedSupersessions": [],
-        "blocking": [
-          "Overlaps 04465-33480 on the 2018-2024 Camry: a Toyota application sheet splits the two by production window and plant. Needs VIN-level confirmation before listing."
-        ],
+        "blocking": [],
         "unresolved": [
           "2024-2024 RAV4: One catalog ends at 2023, another at 2024."
         ]
@@ -3917,21 +4224,19 @@
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image",
-        "fitment / identity verification"
+        "licensed product image"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
-          "research pending: fitment/identity unresolved",
-          "Overlaps 04465-33480 on the 2018-2024 Camry: a Toyota application sheet splits the two by production window and plant. Needs VIN-level confirmation before listing.",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
@@ -4069,12 +4374,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -4246,12 +4552,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -4424,12 +4731,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -4641,12 +4949,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -4801,12 +5110,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -4998,12 +5308,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
@@ -5170,12 +5481,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "lower unattributed listing(s) seen; not used as benchmark",
@@ -5185,7 +5497,7 @@
       }
     },
     {
-      "status": "research_pending",
+      "status": "commercial_pending",
       "name": "Genuine Toyota Direct Ignition Coil 90919-A2009 — RAV4",
       "brand": "toyota",
       "manufacturer": "Toyota",
@@ -5195,18 +5507,18 @@
       "condition": "brand-new",
       "proposedCategory": "ignition",
       "proposedCategoryName": "Ignition",
-      "fitment": "2019–2024 Toyota RAV4 (2.5L; gas, without hybrid)",
+      "fitment": "2019–2024 Toyota RAV4 (2.5L; gas (non-hybrid))",
       "fitmentApplications": [
         {
           "yearFrom": 2019,
           "yearTo": 2024,
           "make": "Toyota",
           "model": "RAV4",
-          "submodel": "2.5L; gas, without hybrid"
+          "submodel": "2.5L; gas (non-hybrid)"
         }
       ],
       "engines": "A25A-FKS",
-      "description": "Genuine Toyota direct ignition coil 90919-A2009 for the Toyota RAV4. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually. It supersedes 90919-02276.\n\nSpecifications\n\nPart number: 90919-A2009\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L; gas, without hybrid)\nRestriction: 2019-2024 RAV4: 2.5L gas, without hybrid\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota direct ignition coil 90919-A2009 for the Toyota RAV4. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually. It supersedes 90919-02276.\n\nSpecifications\n\nPart number: 90919-A2009\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L; gas (non-hybrid))\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -5253,14 +5565,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "low (unresolved)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "ignition_coil",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "unresolved",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -5270,26 +5582,26 @@
             "make": "Toyota",
             "model": "RAV4",
             "engine": "A25A-FKS 2.5L",
-            "restriction": "2.5L gas, without hybrid",
+            "restriction": "gas (non-hybrid)",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
                 "kind": "dealer_catalog",
-                "source": "Northpark Toyota (part page)",
-                "url": "https://parts.northparktoyota.com/oem-parts/toyota-ignition-coil-90919a2009",
+                "source": "Lakeland Toyota (2019 RAV4 direct ignition coil)",
+                "url": "https://parts.lakelandtoyota.com/p/toyota_2019_RAV4/Direct-Ignition-Coil/14786875/90919A2009.html",
                 "note": ""
               },
               {
                 "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2020 RAV4 ignition coil)",
+                "source": "ToyotaPartsDeal (2020 RAV4)",
                 "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-rav4-ignition_coil.html",
                 "note": ""
               },
               {
                 "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2024 RAV4 ignition coil)",
+                "source": "ToyotaPartsDeal (2024 RAV4)",
                 "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-rav4-ignition_coil.html",
                 "note": ""
               }
@@ -5306,8 +5618,15 @@
             "assemblyOrigin": null,
             "productionDates": null,
             "status": "removed",
-            "evidence": [],
-            "reason": "Listings say 'without hybrid'; the staged hybrid claim is contradicted."
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (90919-A2010, hybrid)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-direct-ignition-coil-90919a2010",
+                "note": ""
+              }
+            ],
+            "reason": "Hybrid models use 90919-A2010."
           }
         ],
         "supersession": [
@@ -5327,36 +5646,32 @@
           }
         ],
         "rejectedSupersessions": [],
-        "blocking": [
-          "A retailer lists 90919-A2010 for 2019 RAV4 2.5L gas trims; which coil applies by production date is unresolved."
-        ],
+        "blocking": [],
         "unresolved": [
-          "2019-2024 RAV4 A25A-FXS 2.5L hybrid: Listings say 'without hybrid'; the staged hybrid claim is contradicted."
+          "2019-2024 RAV4 A25A-FXS 2.5L hybrid: Hybrid models use 90919-A2010."
         ]
       },
       "sources": [
-        "https://parts.northparktoyota.com/oem-parts/toyota-ignition-coil-90919a2009",
+        "https://parts.lakelandtoyota.com/p/toyota_2019_RAV4/Direct-Ignition-Coil/14786875/90919A2009.html",
         "https://www.toyotapartsdeal.com/oem-2020-toyota-rav4-ignition_coil.html",
         "https://www.toyotapartsdeal.com/oem-2024-toyota-rav4-ignition_coil.html",
         "https://www.toyotapartsdeal.com/oem-toyota-rav4-ignition_coil.html"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image",
-        "fitment / identity verification"
+        "licensed product image"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
-          "research pending: fitment/identity unresolved",
-          "A retailer lists 90919-A2010 for 2019 RAV4 2.5L gas trims; which coil applies by production date is unresolved.",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
@@ -5500,12 +5815,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Rejected (incorrect or unsupported)",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": true,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -5637,12 +5953,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -5652,8 +5969,8 @@
       }
     },
     {
-      "status": "research_pending",
-      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-33480 — Camry",
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-33480 — Camry and RAV4",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04465-33480",
@@ -5662,18 +5979,25 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2018–2024 Toyota Camry (2.5L; to 05/2024; without TRD)",
+      "fitment": "2018–2019 Toyota Camry (2.5L; Japan-built (JPP)); 2019–2020 Toyota RAV4 (Japan-built (JPP))",
       "fitmentApplications": [
         {
           "yearFrom": 2018,
-          "yearTo": 2024,
+          "yearTo": 2019,
           "make": "Toyota",
           "model": "Camry",
-          "submodel": "2.5L; to 05/2024; without TRD"
+          "submodel": "2.5L; Japan-built (JPP)"
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "Japan-built (JPP)"
         }
       ],
       "engines": "A25A-FKS",
-      "description": "Genuine Toyota front disc brake pad set 04465-33480 for the Toyota Camry. The set covers one front axle, both sides. Overlaps 04465-0E060; resolve which is current.\n\nSpecifications\n\nPart number: 04465-33480\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2024 Toyota Camry (2.5L; to 05/2024; without TRD)\nRestriction: 2018-2024 Camry: to 05/2024; without TRD; to 05/2024; split with 04465-0E060 by production window\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front disc brake pad set 04465-33480 for the Toyota Camry and RAV4. The set covers one front axle, both sides. For Japan-built (JPP) vehicles; US-built Camrys use 04465-0E060.\n\nSpecifications\n\nPart number: 04465-33480\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2019 Toyota Camry (2.5L; Japan-built (JPP)); 2019–2020 Toyota RAV4 (Japan-built (JPP))\nRestriction: 2018-2019 Camry: Japan-built (JPP); Japan-built\nRestriction: 2019-2020 RAV4: Japan-built (JPP); Japan-built\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -5729,26 +6053,26 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "low (unresolved)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
       "partKind": "pads_front",
       "supersededBy": null,
       "vinDependent": true,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "unresolved",
+        "verificationStatus": "vin_dependent",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
           {
             "yearFrom": 2018,
-            "yearTo": 2024,
+            "yearTo": 2019,
             "make": "Toyota",
             "model": "Camry",
             "engine": "A25A-FKS 2.5L",
-            "restriction": "to 05/2024; without TRD",
-            "assemblyOrigin": null,
-            "productionDates": "to 05/2024; split with 04465-0E060 by production window",
+            "restriction": "Japan-built (JPP)",
+            "assemblyOrigin": "Japan-built",
+            "productionDates": null,
             "status": "vin_dependent",
             "evidence": [
               {
@@ -5759,50 +6083,74 @@
               },
               {
                 "kind": "dealer_catalog",
-                "source": "Toyota of Anaheim",
-                "url": "https://parts.toyotaofanaheim.com/oem-parts/toyota-brake-pads-446533480",
-                "note": ""
-              },
-              {
-                "kind": "service_doc",
-                "source": "Toyota brake pad application sheet (production window split)",
-                "url": "https://attachments.priuschat.com/attachment-files/2022/03/219936_04_BrakePads2020_hi.pdf",
+                "source": "Frontier Toyota (2018-2019 Camry JPP Japan built; 2019-2020 RAV4 JPP)",
+                "url": "https://parts.frontiertoyota.com/oem-parts/toyota-oem-front-brake-pad-set-2018-2019-camry-jpp-japan-built-2019-2020-rav4-jpp-japan-built-446533480",
                 "note": ""
               }
             ],
             "reason": null
+          },
+          {
+            "yearFrom": 2019,
+            "yearTo": 2020,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "Japan-built (JPP)",
+            "assemblyOrigin": "Japan-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Frontier Toyota (2019-2020 RAV4 JPP Japan built)",
+                "url": "https://parts.frontiertoyota.com/oem-parts/toyota-oem-front-brake-pad-set-2018-2019-camry-jpp-japan-built-2019-2020-rav4-jpp-japan-built-446533480",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2020,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "A25A-FKS 2.5L",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "removed",
+            "evidence": [],
+            "reason": "Japan-built application is 2018-2019 only; US-built Camrys use 04465-0E060."
           }
         ],
         "supersession": [],
         "rejectedSupersessions": [],
-        "blocking": [
-          "Overlaps 04465-0E060 on the 2018-2024 Camry by production window; RAV4 and Venza applications are retailer-only."
-        ],
-        "unresolved": []
+        "blocking": [],
+        "unresolved": [
+          "2020-2024 Camry A25A-FKS 2.5L: Japan-built application is 2018-2019 only; US-built Camrys use 04465-0E060."
+        ]
       },
       "sources": [
-        "https://attachments.priuschat.com/attachment-files/2022/03/219936_04_BrakePads2020_hi.pdf",
         "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-0446533480",
-        "https://parts.toyotaofanaheim.com/oem-parts/toyota-brake-pads-446533480",
+        "https://parts.frontiertoyota.com/oem-parts/toyota-oem-front-brake-pad-set-2018-2019-camry-jpp-japan-built-2019-2020-rav4-jpp-japan-built-446533480",
         "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-33480.html"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image",
-        "fitment / identity verification"
+        "licensed product image"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
-          "research pending: fitment/identity unresolved",
-          "Overlaps 04465-0E060 on the 2018-2024 Camry by production window; RAV4 and Venza applications are retailer-only.",
           "lower unattributed listing(s) seen; not used as benchmark",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
@@ -5810,7 +6158,7 @@
       }
     },
     {
-      "status": "research_pending",
+      "status": "commercial_pending",
       "name": "Genuine Toyota Iridium Spark Plug 90919-01287 — Tacoma",
       "brand": "toyota",
       "manufacturer": "Toyota",
@@ -5820,18 +6168,18 @@
       "condition": "brand-new",
       "proposedCategory": "ignition",
       "proposedCategoryName": "Ignition",
-      "fitment": "2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitment": "2016–2023 Toyota Tacoma (2.7L)",
       "fitmentApplications": [
         {
           "yearFrom": 2016,
           "yearTo": 2023,
           "make": "Toyota",
           "model": "Tacoma",
-          "submodel": "3.5L V6"
+          "submodel": "2.7L"
         }
       ],
-      "engines": "2GR-FKS",
-      "description": "Genuine Toyota iridium spark plug 90919-01287 for the Toyota Tacoma. It is the plug specified for this engine's heat range and gap, sold individually. Six-plus dealer catalogs list it for the 2016-2023 Tacoma; 90919-01263 is also listed for this engine. Sold individually; six required.\n\nSpecifications\n\nPart number: 90919-01287\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\nRestriction: 2016-2023 Tacoma: 3.5L V6\n\nConfirm fitment with your VIN before ordering.",
+      "engines": "2TR-FE",
+      "description": "Genuine Toyota iridium spark plug 90919-01287 for the Toyota Tacoma. It is the plug specified for this engine's heat range and gap, sold individually. Toyota spark plug code FK20HR-A8. Sold individually; four required. The 3.5L V6 uses 90919-01263.\n\nSpecifications\n\nPart number: 90919-01287\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2TR-FE\nFitment: 2016–2023 Toyota Tacoma (2.7L)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -5889,14 +6237,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "low (unresolved)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "spark_plug",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "unresolved",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -5905,59 +6253,77 @@
             "yearTo": 2023,
             "make": "Toyota",
             "model": "Tacoma",
-            "engine": "2GR-FKS 3.5L V6",
-            "restriction": "3.5L V6",
+            "engine": "2TR-FE 2.7L",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "Toyota of Anaheim (2016-2023 Tacoma)",
-                "url": "https://parts.toyotaofanaheim.com/oem-parts/toyota-spark-plug-9091901287",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): TACOMA 2016- L4 (2TRFE) FK20HR-A8 -> 90919-01287",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
                 "note": ""
               },
               {
                 "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2023 Tacoma spark plug)",
-                "url": "https://www.toyotapartsdeal.com/oem-2023-toyota-tacoma-spark_plug.html",
+                "source": "Toyota of Anaheim (2016-2023 Tacoma; 'Fits Tacoma 2.7L')",
+                "url": "https://parts.toyotaofanaheim.com/oem-parts/toyota-spark-plug-9091901287",
                 "note": ""
               }
             ],
             "reason": null
+          },
+          {
+            "yearFrom": 2016,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "2GR-FKS 3.5L V6",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "removed",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): TACOMA 2016- V6 (2GRFKS) FK20HBR8 -> 90919-01263",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": "Toyota's chart assigns 90919-01263 to the 3.5L V6; 90919-01287 is the 2.7L plug. The staged 3.5L application was wrong."
           }
         ],
         "supersession": [],
         "rejectedSupersessions": [],
-        "blocking": [
-          "Conflicting plug numbers: dealer pages list 90919-01287 for 2016-2023 Tacoma but the same pages carry 'Fits Tacoma 2.7L' text, and 90919-01263 (FK20HBR8, a different plug code) is also listed for the 2016 Tacoma 3.5L. Needs a VIN-level catalog lookup."
-        ],
-        "unresolved": []
+        "blocking": [],
+        "unresolved": [
+          "2016-2023 Tacoma 2GR-FKS 3.5L V6: Toyota's chart assigns 90919-01263 to the 3.5L V6; 90919-01287 is the 2.7L plug. The staged 3.5L application was wrong."
+        ]
       },
       "sources": [
         "https://parts.camelbacktoyota.com/oem-parts/toyota-spark-plug-9091901287",
         "https://parts.toyotaofanaheim.com/oem-parts/toyota-spark-plug-9091901287",
         "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-spark-plug-9091901287",
-        "https://www.toyotapartsdeal.com/oem-2023-toyota-tacoma-spark_plug.html",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
         "https://www.toyotapartsdeal.com/oem/toyota~plug~spark~90919-01287.html"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image",
-        "fitment / identity verification"
+        "licensed product image"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
-          "research pending: fitment/identity unresolved",
-          "Conflicting plug numbers: dealer pages list 90919-01287 for 2016-2023 Tacoma but the same pages carry 'Fits Tacoma 2.7L' text, and 90919-01263 (FK20HBR8, a different plug code) is also listed for the 2016 Tacoma 3.5L. Needs a VIN-level catalog lookup.",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.69 item"
         ],
@@ -5965,8 +6331,8 @@
       }
     },
     {
-      "status": "research_pending",
-      "name": "Genuine Toyota Iridium Spark Plug 90919-01263 — vehicles (fitment under review)",
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01263 — Tacoma, Camry and Highlander",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90919-01263",
@@ -5975,52 +6341,97 @@
       "condition": "brand-new",
       "proposedCategory": "ignition",
       "proposedCategoryName": "Ignition",
-      "fitment": "",
-      "fitmentApplications": [],
-      "engines": "",
-      "description": "Genuine Toyota iridium spark plug 90919-01263 for the Toyota vehicles (fitment under review). It is the plug specified for this engine's heat range and gap, sold individually. Conflicts with 90919-01287.\n\nSpecifications\n\nPart number: 90919-01263\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "3.5L V6"
+        },
+        {
+          "yearFrom": 2017,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "2GR-FKS",
+      "description": "Genuine Toyota iridium spark plug 90919-01263 for the Toyota Tacoma, Camry and Highlander. It is the plug specified for this engine's heat range and gap, sold individually. Toyota spark plug code FK20HBR8. Sold individually; six required on the V6. The 2.7L Tacoma uses 90919-01287.\n\nSpecifications\n\nPart number: 90919-01263\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 20.61,
-        "lowestCompetitor": null,
-        "competitors": [],
+        "lowestCompetitor": {
+          "seller": "Capo Valley Toyota",
+          "price": 13.96,
+          "url": "https://parts.capovalleytoyota.com/oem-parts/toyota-spark-plug-9091901263"
+        },
+        "competitors": [
+          {
+            "seller": "Capo Valley Toyota",
+            "price": 13.96,
+            "url": "https://parts.capovalleytoyota.com/oem-parts/toyota-spark-plug-9091901263"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 14.0,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901263"
+          },
+          {
+            "seller": "Jim Hudson Toyota",
+            "price": 14.99,
+            "url": "https://parts.jimhudsontoyota.com/oem-parts/toyota-spark-plug-9091901263"
+          },
+          {
+            "seller": "Modern Toyota Wholesale Direct",
+            "price": 17.04,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-spark-plug-9091901263"
+          }
+        ],
         "unattributedPrices": [
-          14.0,
-          14.32,
           14.74,
-          16.76,
-          17.35
+          16.76
         ],
         "excluded": "",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
-        "undercut": null,
-        "recommendedPrice": null,
-        "priceType": null,
+        "undercut": 0.05,
+        "recommendedPrice": 13.29,
+        "priceType": "competitive target (not approved)",
         "supplierCost": null,
-        "profitability": "not assessed",
-        "confidence": "none",
+        "profitability": "review required",
+        "confidence": "high",
         "flags": [
-          "only 0 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark",
-          "Quantity ambiguous (one listing is a set of 6)."
+          "lower unattributed listing(s) seen; not used as benchmark"
         ],
-        "info": "",
-        "profitabilityFlags": [],
+        "info": "Per-plug prices (dealer pages state six required per vehicle). Re-checked 2026-11-18; Toyota Parts Express $14.74 and Toyota Parts Delivered $16.76 seen without a seller URL.",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $13.29 item"
+        ],
         "approved": false
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "low (unresolved)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "spark_plug",
       "supersededBy": null,
       "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "unresolved",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -6033,55 +6444,93 @@
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "unresolved",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "AutoNation parts (Avalon, Camry, Highlander, Sienna, Tacoma 3.5L without hybrid; no longer available)",
-                "url": "https://www.autonationparts.com/parts/toyota-spark-plug-9091901263",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): TACOMA 2016- V6 (2GRFKS) FK20HBR8 -> 90919-01263",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
                 "note": ""
               }
             ],
-            "reason": "Listed as no longer available; a listing shows it replaced by 90919-01236 on a 2.7L engine. Relationship to 90919-01287 unresolved."
+            "reason": null
+          },
+          {
+            "yearFrom": 2018,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "2GR-FKS 3.5L V6",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): CAMRY 2018- V6 (2GRFKS) -> 90919-01263",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2017,
+            "yearTo": 2022,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "2GR-FKS 3.5L V6",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): HIGHLANDER 2017- V6 (2GRFKS) -> 90919-01263",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
           }
         ],
         "supersession": [],
         "rejectedSupersessions": [],
         "blocking": [],
-        "unresolved": [
-          "2016-2023 Tacoma 2GR-FKS 3.5L V6: Listed as no longer available; a listing shows it replaced by 90919-01236 on a 2.7L engine. Relationship to 90919-01287 unresolved."
-        ]
+        "unresolved": []
       },
       "sources": [
         "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901263",
-        "https://www.sparksparts.com/oem-parts/toyota-spark-plug-9091901263"
+        "https://www.sparksparts.com/oem-parts/toyota-spark-plug-9091901263",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image",
-        "fitment / identity verification"
+        "licensed product image"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
-          "research pending: fitment/identity unresolved",
-          "only 0 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark",
-          "Quantity ambiguous (one listing is a set of 6)."
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $13.29 item"
         ],
         "approvalStatus": "not approved"
       }
     },
     {
-      "status": "research_pending",
-      "name": "Genuine Toyota Iridium Spark Plug 90919-01275 — vehicles (fitment under review)",
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01275 — Corolla",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90919-01275",
@@ -6090,13 +6539,28 @@
       "condition": "brand-new",
       "proposedCategory": "ignition",
       "proposedCategoryName": "Ignition",
-      "fitment": "",
-      "fitmentApplications": [],
-      "engines": "",
-      "description": "Genuine Toyota iridium spark plug 90919-01275 for the Toyota vehicles (fitment under review). It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-01253. Retailer-stated 1.8L fitment only.\n\nSpecifications\n\nPart number: 90919-01275\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
+      "fitment": "2009–2019 Toyota Corolla (1.8L); 2014–2019 Toyota Corolla (1.8L; LE Eco)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L"
+        },
+        {
+          "yearFrom": 2014,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L; LE Eco"
+        }
+      ],
+      "engines": "2ZR-FE; 2ZR-FAE",
+      "description": "Genuine Toyota iridium spark plug 90919-01275 for the Toyota Corolla. It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-01253. Toyota spark plug code SC16HR11. Sold individually; four required.\n\nSpecifications\n\nPart number: 90919-01275\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2ZR-FE; 2ZR-FAE\nFitment: 2009–2019 Toyota Corolla (1.8L); 2014–2019 Toyota Corolla (1.8L; LE Eco)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 19.61,
         "lowestCompetitor": {
@@ -6109,40 +6573,51 @@
             "seller": "AutoPartsPrime",
             "price": 13.4,
             "url": "https://www.autopartsprime.com/toyota/plug-spark/oe-9091901275"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 14.03,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~plug~spark~90919-01275.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 19.61,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901275"
           }
         ],
         "unattributedPrices": [
           13.19,
-          14.03,
           14.5
         ],
-        "excluded": "",
+        "excluded": "eBay $14.18 + $22.74 shipping and $15.60 (marketplace)",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
-        "undercut": null,
-        "recommendedPrice": null,
-        "priceType": null,
+        "undercut": 0.05,
+        "recommendedPrice": 12.79,
+        "priceType": "competitive target (not approved)",
         "supplierCost": null,
-        "profitability": "not assessed",
-        "confidence": "low",
+        "profitability": "review required",
+        "confidence": "medium",
         "flags": [
-          "only 1 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
-        "profitabilityFlags": [],
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $12.79 item"
+        ],
         "approved": false
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "low (unresolved)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "spark_plug",
       "supersededBy": null,
       "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "unresolved",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -6155,22 +6630,36 @@
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "unresolved",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2018 Corolla spark plug)",
-                "url": "https://toyotapartsdeal.com/oem-2018-toyota-corolla-spark_plug.html",
-                "note": ""
-              },
-              {
-                "kind": "retailer",
-                "source": "retailer: 2009-2019 1.8L lists 90080-91184; 90919-01275 for 2020-2023 1.8L",
-                "url": "https://www.toyotapartsnow.com/parts-select/toyota-corolla-spark-plug",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): COROLLA 2009-2019 L4 (2ZRF#) SC16HR11 -> 90919-01275",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
                 "note": ""
               }
             ],
-            "reason": "Conflict: one catalog lists 90080-91184 for the 2009-2019 Corolla 1.8L and 90919-01275 for 2020-2023."
+            "reason": null
+          },
+          {
+            "yearFrom": 2014,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "2ZR-FAE 1.8L",
+            "restriction": "LE Eco",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service spark plug chart (2022): COROLLA 2009-2019 L4 (2ZRF#) SC16HR11 -> 90919-01275",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
           }
         ],
         "supersession": [
@@ -6191,39 +6680,38 @@
         ],
         "rejectedSupersessions": [],
         "blocking": [],
-        "unresolved": [
-          "2009-2019 Corolla 2ZR-FE 1.8L: Conflict: one catalog lists 90080-91184 for the 2009-2019 Corolla 1.8L and 90919-01275 for 2020-2023."
-        ]
+        "unresolved": []
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/plug-spark-9091901275",
-        "https://parts.northparktoyota.com/oem-parts/toyota-spark-plug-9091901275"
+        "https://parts.northparktoyota.com/oem-parts/toyota-spark-plug-9091901275",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image",
-        "fitment / identity verification"
+        "licensed product image"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
-          "research pending: fitment/identity unresolved",
-          "only 1 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark"
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $12.79 item"
         ],
         "approvalStatus": "not approved"
       }
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — RAV4 and Corolla",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — Camry, RAV4 and Corolla",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90915-YZZN1",
@@ -6232,10 +6720,24 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2023–2024 Toyota RAV4 (2.5L; gas); 2019–2022 Toyota RAV4 (2.5L; gas; catalogs list 90915-10009 (now 90915-YZZN1) and one limits 2019-2022 to hybrids); 2020–2024 Toyota Corolla (2.0L)",
+      "fitment": "2018–2024 Toyota Camry (2.5L; gas); 2018–2024 Toyota Camry (2.5L hybrid; hybrid); 2019–2024 Toyota RAV4 (2.5L; gas); 2019–2024 Toyota RAV4 (2.5L hybrid; hybrid); 2020–2024 Toyota Corolla (2.0L)",
       "fitmentApplications": [
         {
-          "yearFrom": 2023,
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L; gas"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L hybrid; hybrid"
+        },
+        {
+          "yearFrom": 2019,
           "yearTo": 2024,
           "make": "Toyota",
           "model": "RAV4",
@@ -6243,10 +6745,10 @@
         },
         {
           "yearFrom": 2019,
-          "yearTo": 2022,
+          "yearTo": 2024,
           "make": "Toyota",
           "model": "RAV4",
-          "submodel": "2.5L; gas; catalogs list 90915-10009 (now 90915-YZZN1) and one limits 2019-2022 to hybrids"
+          "submodel": "2.5L hybrid; hybrid"
         },
         {
           "yearFrom": 2020,
@@ -6256,19 +6758,44 @@
           "submodel": "2.0L"
         }
       ],
-      "engines": "A25A-FKS; M20A-FKS",
-      "description": "Genuine Toyota spin-on oil filter 90915-YZZN1 for the Toyota RAV4 and Corolla. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-YZZF2; 90915-10009. Spin-on canister filter. RAV4: Toyota of Glendale lists 90915-YZZN1 for the 2019+ gas 2.5L, and ToyotaPartsDeal lists 90915-10009 (superseded by 90915-YZZN1) for the 2021 RAV4. Camry 2.5L: ToyotaPartsDeal lists it for the US-built 2020 Camry 2.5L only; Japan-built split unresolved, not claimed. Only one attributed competitor price.\n\nSpecifications\n\nPart number: 90915-YZZN1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; M20A-FKS\nFitment: 2023–2024 Toyota RAV4 (2.5L; gas); 2019–2022 Toyota RAV4 (2.5L; gas; catalogs list 90915-10009 (now 90915-YZZN1) and one limits 2019-2022 to hybrids); 2020–2024 Toyota Corolla (2.0L)\nRestriction: 2019-2022 RAV4: gas; catalogs list 90915-10009 (now 90915-YZZN1) and one limits 2019-2022 to hybrids\nRestriction: 2020-2024 Corolla: 2.0L\n\nConfirm fitment with your VIN before ordering.",
+      "engines": "A25A-FKS; A25A-FXS; M20A-FKS",
+      "description": "Genuine Toyota spin-on oil filter 90915-YZZN1 for the Toyota Camry, RAV4 and Corolla. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-YZZF2; 90915-10009. Spin-on canister filter; replaces 90915-YZZF2 and 90915-10009.\n\nSpecifications\n\nPart number: 90915-YZZN1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; A25A-FXS; M20A-FKS\nFitment: 2018–2024 Toyota Camry (2.5L; gas); 2018–2024 Toyota Camry (2.5L hybrid; hybrid); 2019–2024 Toyota RAV4 (2.5L; gas); 2019–2024 Toyota RAV4 (2.5L hybrid; hybrid); 2020–2024 Toyota Corolla (2.0L)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 6.57,
         "lowestCompetitor": {
-          "seller": "Longo Toyota",
-          "price": 6.18,
-          "url": "https://parts.longotoyota.com/oem-parts/toyota-filter-s-a-oil-90915yzzn1"
+          "seller": "Toyota San Diego",
+          "price": 4.52,
+          "url": "https://parts.toyotasandiego.com/parts/toyota-filter-s-a-oil-90915yzzn1"
         },
         "competitors": [
+          {
+            "seller": "Toyota San Diego",
+            "price": 4.52,
+            "url": "https://parts.toyotasandiego.com/parts/toyota-filter-s-a-oil-90915yzzn1"
+          },
+          {
+            "seller": "OEMGenuineParts",
+            "price": 4.63,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-filter-s-a-oil-90915yzzn1"
+          },
+          {
+            "seller": "American Toyota",
+            "price": 5.07,
+            "url": "https://parts.americantoyota.com/oem-parts/toyota-filter-s-a-oil-90915yzzn1"
+          },
+          {
+            "seller": "Grieco Toyota",
+            "price": 5.23,
+            "url": "https://parts.griecotoyota.com/oem-parts/toyota-filter-s-a-oil-90915yzzn1"
+          },
+          {
+            "seller": "Capo Valley Toyota",
+            "price": 5.87,
+            "url": "https://parts.capovalleytoyota.com/oem-parts/toyota-filter-s-a-oil-90915yzzn1"
+          },
           {
             "seller": "Longo Toyota",
             "price": 6.18,
@@ -6276,41 +6803,94 @@
           }
         ],
         "unattributedPrices": [
-          4.63,
           4.7
         ],
-        "excluded": "O'Reilly $10.99 (Premium Guard aftermarket)",
+        "excluded": "O'Reilly $10.99 (Premium Guard aftermarket); ToyotaPartsDeal $5.57 (page about two years old); Walmart single $7.54 / packs (marketplace)",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
-        "undercut": null,
-        "recommendedPrice": null,
-        "priceType": null,
+        "undercut": 0.05,
+        "recommendedPrice": 4.3,
+        "priceType": "competitive target (not approved)",
         "supplierCost": null,
-        "profitability": "not assessed",
-        "confidence": "low",
+        "profitability": "review required",
+        "confidence": "medium",
         "flags": [
-          "only 1 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
-        "profitabilityFlags": [],
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.30 item"
+        ],
         "approved": false
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "high (dealer catalog)",
       "partKind": "oil_filter_spin",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
           {
-            "yearFrom": 2023,
+            "yearFrom": 2018,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "A25A-FKS 2.5L",
+            "restriction": "gas",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): CAMRY 2018- 4 Cyl. (A25AFKS, A25AFXS) -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2019 Camry)",
+                "url": "https://parts.lakelandtoyota.com/p/toyota_2019_CAMRY/Engine-Oil-Filter/16359139/90915YZZN1.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2018+ Camry A25A-FKS, A25A-FXS)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-genuine-toyota-oil-filter-s-a-90915yzzn1",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2018,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": "hybrid",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): CAMRY 2018- 4 Cyl. (A25AFKS, A25AFXS) -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2019,
             "yearTo": 2024,
             "make": "Toyota",
             "model": "RAV4",
@@ -6320,6 +6900,12 @@
             "productionDates": null,
             "status": "verified",
             "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): RAV4 2019- 4 Cyl. (A25AFKS) and (A25AFKS) NAP -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              },
               {
                 "kind": "dealer_catalog",
                 "source": "Lakeland Toyota (2023 RAV4)",
@@ -6331,49 +6917,25 @@
                 "source": "Lakeland Toyota (2024 RAV4)",
                 "url": "https://parts.lakelandtoyota.com/p/toyota_2024_RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html",
                 "note": ""
-              },
-              {
-                "kind": "dealer_catalog",
-                "source": "Toyota of Glendale (5th-gen gas 2.5L: 90915-YZZN1)",
-                "url": "https://www.toyotaofglendale.com/service/service-parts-tips/rav4-oil-type-capacity/",
-                "note": ""
               }
             ],
             "reason": null
           },
           {
             "yearFrom": 2019,
-            "yearTo": 2022,
+            "yearTo": 2024,
             "make": "Toyota",
             "model": "RAV4",
-            "engine": "A25A-FKS 2.5L",
-            "restriction": "gas; catalogs list 90915-10009 (now 90915-YZZN1) and one limits 2019-2022 to hybrids",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": "hybrid",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2019 RAV4: 90915-10009, AXAL54L gas submodels)",
-                "url": "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-oil_filter.html",
-                "note": ""
-              },
-              {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2021 RAV4: 90915-10009)",
-                "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-rav4-oil_filter.html",
-                "note": ""
-              },
-              {
-                "kind": "dealer_catalog",
-                "source": "Lakeland Toyota (RAV4 2019-2025)",
-                "url": "https://parts.lakelandtoyota.com/p/toyota__RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html",
-                "note": ""
-              },
-              {
-                "kind": "dealer_catalog",
-                "source": "Sparks Toyota (2019-2022 RAV4 listed for hybrid / PHEV only)",
-                "url": "https://www.sparksparts.com/oem-parts/toyota-toyota-engine-oil-filter-90915yzzn1",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): RAV4 2019- 4 Cyl. (A25AFXS) HV -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -6385,51 +6947,25 @@
             "make": "Toyota",
             "model": "Corolla",
             "engine": "M20A-FKS 2.0L",
-            "restriction": "2.0L",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2024 Corolla: replaced by 90915-YZZN1)",
-                "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-corolla-oil_filter.html",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): COROLLA 2020- 4 Cyl. (M20AFKS) JPP and NAP -> 90915-YZZN1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               },
               {
                 "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2020 Corolla)",
-                "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-oil_filter.html",
+                "source": "ToyotaPartsDeal (2024 Corolla)",
+                "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-corolla-oil_filter.html",
                 "note": ""
               }
             ],
             "reason": null
-          },
-          {
-            "yearFrom": 2018,
-            "yearTo": 2024,
-            "make": "Toyota",
-            "model": "Camry",
-            "engine": "A25A-FKS 2.5L",
-            "restriction": null,
-            "assemblyOrigin": "US-built per one catalog",
-            "productionDates": null,
-            "status": "unresolved",
-            "evidence": [
-              {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsDeal (2020 Camry: US built, 2.5L)",
-                "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-camry-oil_filter.html",
-                "note": ""
-              },
-              {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsNow (2018 Camry lists 04152-YZZA1 for 2.5L gas)",
-                "url": "https://www.toyotapartsnow.com/parts-select/2018-toyota-camry-oil-filter",
-                "note": ""
-              }
-            ],
-            "reason": "Dealer catalogs conflict for the Camry 2.5L (90915-YZZN1 for US-built 2020 vs 04152-YZZA1 on a 2018 page); Japan-built split and the full 2018-2024 range need a VIN-level catalog check."
           }
         ],
         "supersession": [
@@ -6484,18 +7020,16 @@
           }
         ],
         "blocking": [],
-        "unresolved": [
-          "2018-2024 Camry A25A-FKS 2.5L: Dealer catalogs conflict for the Camry 2.5L (90915-YZZN1 for US-built 2020 vs 04152-YZZA1 on a 2018 page); Japan-built split and the full 2018-2024 range need a VIN-level catalog check."
-        ]
+        "unresolved": []
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/filter-s-a-oil-90915yzzn1",
+        "https://parts.lakelandtoyota.com/p/toyota_2019_CAMRY/Engine-Oil-Filter/16359139/90915YZZN1.html",
         "https://parts.lakelandtoyota.com/p/toyota_2023_RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html",
         "https://parts.lakelandtoyota.com/p/toyota_2024_RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html",
-        "https://parts.lakelandtoyota.com/p/toyota__RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html",
-        "https://www.sparksparts.com/oem-parts/toyota-toyota-engine-oil-filter-90915yzzn1",
+        "https://www.sparksparts.com/oem-parts/toyota-genuine-toyota-oil-filter-s-a-90915yzzn1",
         "https://www.toyotaofglendale.com/service/service-parts-tips/rav4-oil-type-capacity/",
-        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-oil_filter.html",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
         "https://www.toyotapartsdeal.com/oem-2020-toyota-camry-oil_filter.html",
         "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-oil_filter.html",
         "https://www.toyotapartsdeal.com/oem-2021-toyota-rav4-oil_filter.html",
@@ -6507,16 +7041,18 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Pricing evidence insufficient",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
-          "only 1 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark"
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.30 item"
         ],
         "approvalStatus": "not approved"
       }
@@ -6638,8 +7174,14 @@
             "status": "verified",
             "evidence": [
               {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): 4RUNNER 2010-2012 and 2013- V6 (1GRFE) -> 04152-YZZA5",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              },
+              {
                 "kind": "dealer_catalog",
-                "source": "Frontier Toyota (2010-2024 4Runner, 2010-2014 FJ Cruiser, 2011-2014 Tundra 4.0 V6)",
+                "source": "Frontier Toyota (2010-2024 4Runner)",
                 "url": "https://parts.frontiertoyota.com/oem-parts/toyota-genuine-toyota-oil-filter-element-2010-2024-4runner-2010-2014-fj-cruiser-2011-2014-tundra-4-0-v6-4152yzza5",
                 "note": ""
               }
@@ -6658,9 +7200,9 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "Frontier Toyota",
-                "url": "https://parts.frontiertoyota.com/oem-parts/toyota-genuine-toyota-oil-filter-element-2010-2024-4runner-2010-2014-fj-cruiser-2011-2014-tundra-4-0-v6-4152yzza5",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): FJ CRUISER 2010-2014 V6 (1GRFE) -> 04152-YZZA5",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -6672,15 +7214,15 @@
             "make": "Toyota",
             "model": "Tundra",
             "engine": "1GR-FE 4.0L V6",
-            "restriction": "4.0L V6",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "Frontier Toyota",
-                "url": "https://parts.frontiertoyota.com/oem-parts/toyota-genuine-toyota-oil-filter-element-2010-2024-4runner-2010-2014-fj-cruiser-2011-2014-tundra-4-0-v6-4152yzza5",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): TUNDRA 2011-2012 and 2013-2014 V6 (1GRFE) -> 04152-YZZA5",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
@@ -6696,8 +7238,15 @@
             "assemblyOrigin": null,
             "productionDates": null,
             "status": "removed",
-            "evidence": [],
-            "reason": "Dealer listings tie 04152-YZZA5 to the 4.0L V6; no V8 Tundra evidence."
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): TUNDRA V8 (1URFE, 3URFE) -> 04152-YZZA4",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
+                "note": ""
+              }
+            ],
+            "reason": "Toyota's chart lists 04152-YZZA4 for the Tundra V8."
           },
           {
             "yearFrom": 2007,
@@ -6708,16 +7257,16 @@
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "unresolved",
+            "status": "removed",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsNow (part page)",
-                "url": "https://www.toyotapartsnow.com/oem/toyota~replaceable-element~04152-yzza5",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): CAMRY 2007-2011: 2GRFE -> 04152-YZZA1, 2AZFE -> 90915-YZZF1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
-            "reason": "Listed by one catalog only; the Camry 2.4L/3.5L filter numbers differ in other catalogs."
+            "reason": "Toyota's chart lists other filters for every 2007-2011 Camry engine."
           },
           {
             "yearFrom": 2006,
@@ -6728,16 +7277,16 @@
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "unresolved",
+            "status": "removed",
             "evidence": [
               {
-                "kind": "dealer_catalog",
-                "source": "ToyotaPartsNow (part page)",
-                "url": "https://www.toyotapartsnow.com/oem/toyota~replaceable-element~04152-yzza5",
+                "kind": "toyota_official",
+                "source": "Toyota Parts & Service oil filter chart (2021): RAV4 2006-2008 2AZFE -> 90915-YZZF1",
+                "url": "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
                 "note": ""
               }
             ],
-            "reason": "Listed by one catalog only."
+            "reason": "Toyota's chart lists 90915-YZZF1."
           }
         ],
         "supersession": [
@@ -6773,14 +7322,15 @@
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
-          "2010-2015 Tundra 1UR-FE / 3UR-FE V8: Dealer listings tie 04152-YZZA5 to the 4.0L V6; no V8 Tundra evidence.",
-          "2007-2011 Camry: Listed by one catalog only; the Camry 2.4L/3.5L filter numbers differ in other catalogs.",
-          "2006-2008 RAV4: Listed by one catalog only."
+          "2010-2015 Tundra 1UR-FE / 3UR-FE V8: Toyota's chart lists 04152-YZZA4 for the Tundra V8.",
+          "2007-2011 Camry: Toyota's chart lists other filters for every 2007-2011 Camry engine.",
+          "2006-2008 RAV4: Toyota's chart lists 90915-YZZF1."
         ]
       },
       "sources": [
         "https://parts.frontiertoyota.com/oem-parts/toyota-genuine-toyota-oil-filter-element-2010-2024-4runner-2010-2014-fj-cruiser-2011-2014-tundra-4-0-v6-4152yzza5",
         "https://parts.olathetoyota.com/oem-parts/toyota-oil-filter-4152yzza5",
+        "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf",
         "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza5.html"
       ],
       "blocking": [
@@ -6789,12 +7339,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Supplier cost required",
+        "primaryStatus": "Awaiting supplier cost",
         "checks": {
-          "Fitment verification required": false,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
@@ -6910,12 +7461,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Rejected (incorrect or unsupported)",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": true,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -7056,12 +7608,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -7198,12 +7751,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -7322,12 +7876,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -7498,12 +8053,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": false,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": false,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -7610,12 +8166,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -7765,12 +8322,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -7897,12 +8455,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -8024,12 +8583,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -8136,12 +8696,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -8248,12 +8809,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -8360,12 +8922,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -8452,12 +9015,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",
@@ -8544,12 +9108,13 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Fitment verification required",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Fitment verification required": true,
-          "Pricing evidence insufficient": true,
-          "Supplier cost required": true,
-          "Product photography required": true
+          "Rejected (incorrect or unsupported)": false,
+          "Awaiting Toyota fitment confirmation": true,
+          "Awaiting pricing verification": true,
+          "Awaiting supplier cost": true,
+          "Awaiting image verification": true
         },
         "issues": [
           "research pending: fitment/identity unresolved",

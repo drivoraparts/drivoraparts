@@ -76,7 +76,7 @@ PARTS = [
          sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza1.html", f"{SP}/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1", f"{TA}/replaceable-element-oil-filter-04152yzza1"]),
     dict(pn="04152-YZZA6", kind="oil_filter", name="Oil Filter Element", group="commercial_pending", conf="medium",
          apps=[app(2009, 2018, "Corolla", "1.8L")], engines="2ZR-FE", supersedes="04152-37010",
-         notes="Not claimed for the 2.0L M20A-FKS.",
+         notes="2016 and later Corolla 1.8L engines use spin-on 90915-YZZN1 (Toyota oil filter chart).",
          sources=[f"{TD}/oem/toyota~replaceable~element~04152-yzza6.html", f"{TN}/oem/toyota~replaceable-element~04152-yzza6"]),
     dict(pn="90915-YZZD3", kind="oil_filter_spin", name="Spin-On Oil Filter", group="commercial_pending", conf="medium",
          apps=[app(2005, 2015, "Tacoma", "4.0L V6"), app(2003, 2009, "4Runner", "4.0L V6 / 4.7L V8"), app(2000, 2010, "Tundra", "4.0L V6 / 4.7L V8")], engines="1GR-FE; 2UZ-FE", supersedes="",
@@ -175,20 +175,20 @@ PARTS = [
          sources=[f"{TD}/oem/toyota~pad~kit~disc~brake~04465-0r010.html", f"{TA}/pad-kit-disc-brake-044650r010"]),
     dict(pn="04465-33480", kind="pads_front", name="Front Disc Brake Pad Set", group="research_pending", conf="low",
          apps=[app(2018, 2019, "Camry", "LE / SE 2.5L")], engines="A25A-FKS", supersedes="",
-         notes="Overlaps 04465-0E060; resolve which is current.", sources=[f"{TD}/oem/toyota~pad~kit~disc~brake~04465-33480.html"]),
+         notes="For Japan-built (JPP) vehicles; US-built Camrys use 04465-0E060.", sources=[f"{TD}/oem/toyota~pad~kit~disc~brake~04465-33480.html"]),
     dict(pn="90919-01287", kind="spark_plug", name="Iridium Spark Plug", group="commercial_pending", conf="medium",
          apps=[app(2016, 2023, "Tacoma", "3.5L V6")], engines="2GR-FKS", supersedes="",
-         notes="Six-plus dealer catalogs list it for the 2016-2023 Tacoma; 90919-01263 is also listed for this engine. Sold individually; six required.", ref=17.48, ref_src=f"{TD}/oem/toyota~plug~spark~90919-01287.html",
+         notes="Toyota spark plug code FK20HR-A8. Sold individually; four required. The 3.5L V6 uses 90919-01263.", ref=17.48, ref_src=f"{TD}/oem/toyota~plug~spark~90919-01287.html",
          sources=[f"{TD}/oem/toyota~plug~spark~90919-01287.html", "https://parts.camelbacktoyota.com/oem-parts/toyota-spark-plug-9091901287", "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-spark-plug-9091901287"]),
     dict(pn="90919-01263", kind="spark_plug", name="Iridium Spark Plug", group="research_pending", conf="low",
          apps=[app(2016, 2023, "Tacoma", "3.5L V6")], engines="2GR-FKS", supersedes="",
-         notes="Conflicts with 90919-01287.", sources=[f"{SP}/toyota-spark-plug-9091901263", f"{OL}/toyota-spark-plug-9091901263"]),
+         notes="Toyota spark plug code FK20HBR8. Sold individually; six required on the V6. The 2.7L Tacoma uses 90919-01287.", sources=[f"{SP}/toyota-spark-plug-9091901263", f"{OL}/toyota-spark-plug-9091901263"]),
     dict(pn="90919-01275", kind="spark_plug", name="Iridium Spark Plug", group="research_pending", conf="low",
          apps=[app(2009, 2019, "Corolla", "1.8L")], engines="2ZR-FE", supersedes="90919-01253",
-         notes="Retailer-stated 1.8L fitment only.", sources=[f"{TA}/plug-spark-9091901275", "https://parts.northparktoyota.com/oem-parts/toyota-spark-plug-9091901275"]),
+         notes="Toyota spark plug code SC16HR11. Sold individually; four required.", sources=[f"{TA}/plug-spark-9091901275", "https://parts.northparktoyota.com/oem-parts/toyota-spark-plug-9091901275"]),
     dict(pn="90915-YZZN1", kind="oil_filter_spin", name="Spin-On Oil Filter", group="research_pending", conf="low",
          apps=[app(2020, 2024, "Corolla", "2.0L"), app(2019, 2024, "RAV4", "2.5L gas, non-hybrid")], engines="M20A-FKS; A25A-FKS", supersedes="90915-10009; 90915-YZZF2",
-         notes="Spin-on canister filter. RAV4: Toyota of Glendale lists 90915-YZZN1 for the 2019+ gas 2.5L, and ToyotaPartsDeal lists 90915-10009 (superseded by 90915-YZZN1) for the 2021 RAV4. Camry 2.5L: ToyotaPartsDeal lists it for the US-built 2020 Camry 2.5L only; Japan-built split unresolved, not claimed. Only one attributed competitor price.",
+         notes="Spin-on canister filter; replaces 90915-YZZF2 and 90915-10009.",
          sources=[f"{TD}/oem-2020-toyota-corolla-oil_filter.html", f"{TD}/oem-2021-toyota-rav4-oil_filter.html", "https://www.toyotaofglendale.com/service/service-parts-tips/rav4-oil-type-capacity/", f"{TD}/oem-2020-toyota-camry-oil_filter.html", "https://autoparts.toyota.com/products/product/filter-s-a-oil-90915yzzn1"]),
     dict(pn="04152-YZZA5", kind="oil_filter", name="Oil Filter Element", group="research_pending", conf="low",
          apps=[app(2010, 2015, "Tundra")], engines="1UR-FE / 3UR-FE (unresolved)", supersedes="04152-31050; 04152-31060; 04152-38010",
@@ -477,8 +477,8 @@ print(len(records), "records:", {k: sum(r["status"] == k for r in records) for k
 # ---------------------------------------------------------------------------
 # Final audit outputs: per-record classification, CSV and Markdown report.
 # ---------------------------------------------------------------------------
-BUCKETS = ["Ready for price approval", "Fitment verification required", "Pricing evidence insufficient",
-           "Supplier cost required", "Product photography required"]
+BUCKETS = ["Ready for approval", "Rejected (incorrect or unsupported)", "Awaiting Toyota fitment confirmation",
+           "Awaiting pricing verification", "Awaiting supplier cost", "Awaiting image verification"]
 
 
 def classify(r):
@@ -487,15 +487,23 @@ def classify(r):
     fitment_ok = r["status"] != "research_pending" and r["fitmentVerification"]["verificationStatus"] in ("verified", "vin_dependent")
     pricing_ok = pr["status"] == "verified"
     cost_ok = pr.get("profitability") == "verified"  # needs supplier cost + minimum margin
-    photo_ok = False  # no licensed, matching photograph for any record
+    # A licensed photo of the exact part number, stored under public/ with its
+    # provenance recorded. None exists yet: Openverse and Wikimedia Commons hold
+    # no image of any batch part number, and dealer / Toyota photos are not
+    # licensed for reuse.
+    photo_ok = bool(r.get("image")) and os.path.exists(os.path.join("public", str(r["image"]).lstrip("/")))
+    claimed = [a for a in r["fitmentVerification"]["applications"] if a["status"] in ("verified", "vin_dependent")]
+    rejected = bool(r.get("supersededBy")) or (not claimed and r["fitmentVerification"]["applications"]
+                                               and all(a["status"] == "removed" for a in r["fitmentVerification"]["applications"]))
     checks = {
-        "Fitment verification required": not fitment_ok,
-        "Pricing evidence insufficient": not pricing_ok,
-        "Supplier cost required": not cost_ok,
-        "Product photography required": not photo_ok,
+        "Rejected (incorrect or unsupported)": rejected,
+        "Awaiting Toyota fitment confirmation": not fitment_ok,
+        "Awaiting pricing verification": not pricing_ok,
+        "Awaiting supplier cost": not cost_ok,
+        "Awaiting image verification": not photo_ok,
     }
     blocking = [k for k, v in checks.items() if v]
-    primary = blocking[0] if blocking else "Ready for price approval"
+    primary = blocking[0] if blocking else "Ready for approval"
     issues = []
     if r["status"] == "research_pending":
         issues.append("research pending: " + (r["description"].split("\n")[0][:0] or "fitment/identity unresolved"))
@@ -536,7 +544,7 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1-final-audit.csv", "w", newline=""
         lo = pr.get("lowestCompetitor") or {}
         ok = lambda k: "BLOCKED" if a["checks"][k] else "ok"
         w.writerow([a["primaryStatus"], a["approvalStatus"], r["partNumber"] or "(engine family)", r["name"], r["fitment"], r["engines"],
-                    ok("Fitment verification required"), ok("Pricing evidence insufficient"), ok("Supplier cost required"), ok("Product photography required"),
+                    ok("Awaiting Toyota fitment confirmation"), ok("Awaiting pricing verification"), ok("Awaiting supplier cost"), ok("Awaiting image verification"),
                     lo.get("seller", ""), lo.get("price", ""), lo.get("url", ""),
                     pr["recommendedPrice"] if pr["recommendedPrice"] is not None else "", pr.get("profitability", ""), pr["confidence"],
                     "; ".join(f"{x['seller']} ${x['price']:.2f} {x['url']}" for x in pr.get("competitors", [])),
@@ -558,7 +566,7 @@ def bundle_line(b):
     return f"| {b['name']} | {parts} | {price} |"
 
 
-ready_once_cost = [r for r in records if not r["audit"]["checks"]["Fitment verification required"] and not r["audit"]["checks"]["Pricing evidence insufficient"]]
+ready_once_cost = [r for r in records if not r["audit"]["checks"]["Awaiting Toyota fitment confirmation"] and not r["audit"]["checks"]["Awaiting pricing verification"]]
 low_ticket = [r for r in ready_once_cost if (r["pricing"]["recommendedPrice"] or 0) < 25]
 
 md = []
@@ -570,7 +578,7 @@ for b in BUCKETS:
     md.append(f"| {b} | {sum(r['audit']['primaryStatus'] == b for r in records)} |")
 md.append("")
 md.append(f"- {len(ready_once_cost)} records pass fitment and pricing; every one still needs a supplier acquisition cost and a licensed product photo before its price can be approved.")
-md.append("- No record is *Ready for price approval*: no supplier cost is on file for any part, so profitability cannot be established, and no licensed, matching photograph exists for any part.")
+md.append("- No record is *Ready for approval*: no supplier cost is on file for any part, so profitability cannot be established, and no licensed, matching photograph exists for any part.")
 md.append("- **Pricing rule:** about 5% below the lowest verified US retailer selling the exact same genuine Toyota part number, moving toward 3% only when needed for margin, never less than 3% below. Every price shown is a *competitive target flagged for profitability review*, not a selling price. No automatic discount, sale price or inflated reference price is used.")
 md.append("- Each record's status is the first blocking item in this order: fitment, pricing evidence, supplier cost, photography. The CSV shows every check.\n")
 md.append("## Pass fitment and pricing — waiting on supplier cost and photos\n")
@@ -579,15 +587,15 @@ for r in ready_once_cost:
     pr = r["pricing"]; lo = pr["lowestCompetitor"]
     md.append(f"| {r['partNumber']} | {r['name'].split(' — ')[0].replace('Genuine Toyota ', '')} | {r['fitment']} | [{lo['seller']} ${lo['price']:.2f}]({lo['url']}) | **${pr['recommendedPrice']:.2f}** | {pr['confidence']} |")
 md.append("")
-md.append("## Fitment verification required\n")
+md.append("## Awaiting Toyota fitment confirmation\n")
 md.append("| Part number | Product | Outstanding issue |\n|---|---|---|")
 for r in records:
-    if r["audit"]["checks"]["Fitment verification required"]:
+    if r["audit"]["checks"]["Awaiting Toyota fitment confirmation"]:
         fv = r["fitmentVerification"]
         issue = "; ".join(fv["blocking"] + ([f"superseded by {r['supersededBy']}"] if r.get("supersededBy") else []) + fv["unresolved"][:2]) or "engine unit details (condition, mileage, inclusions)"
         md.append(f"| {r['partNumber'] or '(engine)'} | {r['name']} | {issue[:220]} |")
 md.append("")
-md.append("## Pricing evidence insufficient\n")
+md.append("## Awaiting pricing verification\n")
 md.append("| Record | Reason |\n|---|---|")
 for r in records:
     if r["pricing"]["status"] != "verified":
@@ -686,12 +694,13 @@ fm = ["# Toyota Expansion Batch 1 — Fitment Verification Audit\n",
       f"- Records: verified {rv['verified']}, VIN-dependent {rv['vin_dependent']}, unresolved {rv['unresolved']}.",
       f"- Groups after the audit: {sum(r['status'] == 'commercial_pending' for r in records)} commercial_pending, {sum(r['status'] == 'research_pending' for r in records)} research_pending, 0 ready.",
       "- Live storefront check: none of the 50 part numbers, their superseded numbers or their replacements appears in the deployed catalog (347 listings), so there is no duplicate or conflicting live listing.\n",
-      "## Oil filter findings (priority review)\n",
-      "- **90915-YZZN1** (spin-on; previous versions 90915-YZZF2 per Toyota, 90915-10009 per dealer catalogs): listed for the 2023-2024 RAV4 2.5L gas (Lakeland Toyota year pages, Toyota of Glendale) and, VIN-dependent, for the 2019-2022 RAV4 2.5L gas, where ToyotaPartsDeal shows 90915-10009 for AXAL54L gas submodels and Sparks Toyota limits 2019-2022 to hybrids. 2020-2024 Corolla 2.0L is VIN-dependent.",
-      "- **Camry 2.5L (A25A-FKS)**: unresolved. ToyotaPartsDeal lists 90915-YZZN1 for the US-built 2020 Camry 2.5L; ToyotaPartsNow's 2018 Camry page lists 04152-YZZA1 for the 2.5L. Neither number is listed for the Camry 2.5L until a VIN-level lookup settles it by build plant and year.",
-      "- **04152-YZZA1** (cartridge; supersedes 04152-31090, 04152-31110, 04152-0V010): 2016-2023 Tacoma 3.5L verified; 2018-2024 Camry 3.5L and 2017-2022 Highlander 3.5L VIN-dependent (dealer note: from 11/2017, excluding Japan-built). Removed: 2023 Highlander (no V6 that year), Camry 2.5L, 2019+ RAV4.",
-      "- **90915-10009 -> 04152-YZZA1** supersession shown on one ToyotaPartsDeal page is rejected: a spin-on canister cannot be superseded by a cartridge element.",
-      "- **US- vs Japan-built**: Japan-built origin is a stated restriction on 04152-YZZA1 (excluded) and 43550-0R060 (both origins listed, without hybrid); US-built is a stated restriction on 04465-0E060, 04465-06170 and 27060-F0010. Each is listed as VIN-dependent.\n",
+      "## Priority resolutions (Toyota application charts)\n",
+      "- **Oil filters** (Toyota Parts & Service oil filter chart, 2021): 2018+ Camry 2.5L and 2019+ RAV4 2.5L (A25A-FKS and A25A-FXS, Japan- and North American-built) -> **90915-YZZN1**; V6 2GR-FKS Camry, Highlander, Tacoma, Sienna -> **04152-YZZA1**; 2009-2015 Corolla 1.8L -> 04152-YZZA6 (2016+ -> 90915-YZZN1); 4.0L V6 4Runner 2010+ / FJ Cruiser 2010-2014 / Tundra 2011-2014 -> 04152-YZZA5; Tacoma 2005-2015 4.0L, Tundra 2000-2010, 4Runner and Sequoia 2003-2009 -> 90915-YZZD3. The 90915-10009 -> 04152-YZZA1 supersession on one dealer page stays rejected.",
+      "- **Spark plugs** (Toyota spark plug chart, 2022): Tacoma 3.5L 2GR-FKS -> **90919-01263** (FK20HBR8); Tacoma 2.7L 2TR-FE -> **90919-01287** (FK20HR-A8); 2018+ Camry and 2019+ RAV4 2.5L gas and hybrid -> 90919-01289; 2009-2019 Corolla 1.8L -> 90919-01275.",
+      "- **Camry front pads**: split by assembly plant — Japan-built (JPP) 2018-2019 Camry and 2019-2020 RAV4 -> 04465-33480; USA-built Camry (without TRD) -> 04465-0E060. Listed as VIN-dependent with the plant stated.",
+      "- **RAV4 coils**: 90919-A2009 gas, 90919-A2010 hybrid — a powertrain split, not a conflict.",
+      "- **Tacoma front pads 04465-04090**: catalog lists every 2016-2023 trim (SR to TRD Pro, 2.7L and 3.5L, 2WD and 4WD).",
+      "- **Still open**: snorkel-equipped Tacoma air filter (no alternative number found; listing says 'without snorkel'); Camry/RAV4 hybrid front rotor; RAV4 hybrid front hub 43550-0R070.\n",
       "## Every corrected or unresolved application\n",
       "| Part | Application | Engine | Status | Restriction / origin / production | Supersession | Evidence | Reason |",
       "|---|---|---|---|---|---|---|---|"]

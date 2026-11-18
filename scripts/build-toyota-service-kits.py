@@ -36,6 +36,8 @@ def app(y1, y2, model, sub=None):
 
 
 KITS = [
+    # Every component below has verified or VIN-dependent fitment covering the
+    # kit's vehicles (scripts/toyota_fitment_evidence.py); the build re-checks it.
     dict(
         id="toyota-kit-camry-2020-2024-25-filter-plug",
         name="Toyota Camry 2020–2024 2.5L Filter & Spark Plug Kit",
@@ -43,9 +45,18 @@ KITS = [
         apps=[app(2020, 2024, "Camry", "2.5L gas, non-hybrid")],
         engines="A25A-FKS",
         parts=[("90915-YZZN1", 1), ("17801-F0050", 1), ("87139-0E040", 1), ("90919-01289", 4)],
-        intro="Spin-on oil filter, engine air filter, cabin air filter and a full set of four iridium spark plugs for the 2.5L four-cylinder gas (non-hybrid) Camry.",
+        intro="Spin-on oil filter, engine air filter, charcoal cabin air filter and a full set of four iridium spark plugs for the 2.5L four-cylinder gas Camry.",
         notInc="Engine oil and the oil drain plug gasket are not included.",
-        fitmentIssue="Oil filter corrected from 04152-YZZA1 (V6 only) to spin-on 90915-YZZN1, but 90915-YZZN1 is confirmed only for the US-built 2020 Camry 2.5L; Japan-built Camry fitment and the full 2020-2024 range need a dealer catalog check by VIN. 90915-YZZN1 also has only one attributed competitor price.",
+    ),
+    dict(
+        id="toyota-kit-rav4-2019-2023-25-filter-plug",
+        name="Toyota RAV4 2019–2023 2.5L Filter & Spark Plug Kit",
+        kitType="service",
+        apps=[app(2019, 2023, "RAV4", "2.5L gas, non-hybrid")],
+        engines="A25A-FKS",
+        parts=[("90915-YZZN1", 1), ("17801-F0050", 1), ("90919-01289", 4)],
+        intro="Spin-on oil filter, engine air filter and a full set of four iridium spark plugs for the 2.5L gas RAV4.",
+        notInc="Engine oil, the cabin air filter and the oil drain plug gasket are not included. 2024 is not covered: the air filter's 2024 RAV4 fitment is unconfirmed.",
     ),
     dict(
         id="toyota-kit-tacoma-2016-2023-35-filter-plug",
@@ -53,9 +64,29 @@ KITS = [
         kitType="service",
         apps=[app(2016, 2023, "Tacoma", "3.5L V6")],
         engines="2GR-FKS",
-        parts=[("04152-YZZA1", 1), ("17801-0P100", 1), ("90919-01287", 6)],
-        intro="Oil filter element, engine air filter and a full set of six spark plugs for the 3.5L V6 Tacoma.",
+        parts=[("04152-YZZA1", 1), ("17801-0P100", 1), ("90919-01263", 6)],
+        intro="Oil filter element, engine air filter and a full set of six iridium spark plugs (Toyota FK20HBR8) for the 3.5L V6 Tacoma.",
         notInc="Engine oil, the cabin air filter, the oil drain plug gasket and the oil filter housing O-ring are not included.",
+    ),
+    dict(
+        id="toyota-kit-tacoma-2016-2023-27-air-plug",
+        name="Toyota Tacoma 2016–2023 2.7L Air Filter & Spark Plug Kit",
+        kitType="service",
+        apps=[app(2016, 2023, "Tacoma", "2.7L 4-cyl")],
+        engines="2TR-FE",
+        parts=[("17801-0C040", 1), ("90919-01287", 4)],
+        intro="Engine air filter and a full set of four iridium spark plugs (Toyota FK20HR-A8) for the 2.7L four-cylinder Tacoma.",
+        notInc="The oil filter is not included (Toyota lists 90915-YZZD1 through 2020 and 90915-YZZG2 from 2021); engine oil and the cabin air filter are not included.",
+    ),
+    dict(
+        id="toyota-kit-corolla-2009-2015-18-oil-plug",
+        name="Toyota Corolla 2009–2015 1.8L Oil Filter & Spark Plug Kit",
+        kitType="service",
+        apps=[app(2009, 2015, "Corolla", "1.8L")],
+        engines="2ZR-FE; 2ZR-FAE",
+        parts=[("04152-YZZA6", 1), ("90919-01275", 4)],
+        intro="Cartridge oil filter element and a full set of four iridium spark plugs for the 1.8L Corolla.",
+        notInc="Engine oil, the air and cabin filters, the drain plug gasket and the oil filter housing O-ring are not included.",
     ),
     dict(
         id="toyota-kit-tacoma-2016-2023-front-brake",
@@ -68,25 +99,34 @@ KITS = [
         notInc="Pad fitting hardware, brake fluid and wheel hardware are not included.",
     ),
     dict(
+        id="toyota-kit-camry-2023-2024-front-brake",
+        name="Toyota Camry 2023–2024 Front Brake Kit — Pads & Rotors (US-built, without TRD)",
+        kitType="brake",
+        apps=[app(2023, 2024, "Camry", "US-built, without TRD")],
+        engines="",
+        parts=[("04465-06170", 1), ("43512-06200", 2)],
+        intro="One front brake pad set and two front rotors for US-built Camrys produced from 02/2023, without the TRD package.",
+        notInc="Pad fitting hardware and brake fluid are not included.",
+    ),
+    dict(
         id="toyota-kit-oil-filter-04152-yzza1-5-pack",
         name="Genuine Toyota Oil Filter Element 04152-YZZA1 — 5-Pack",
         kitType="multipack",
-        apps=[app(2018, 2024, "Camry", "3.5L V6"), app(2017, 2022, "Highlander", "3.5L V6"), app(2016, 2023, "Tacoma", "3.5L V6")],
+        apps=[app(2018, 2024, "Camry", "3.5L V6"), app(2017, 2022, "Highlander", "3.5L V6"), app(2016, 2023, "Tacoma", "3.5L V6"), app(2017, 2020, "Sienna", "3.5L V6")],
         engines="2GR-FKS",
         parts=[("04152-YZZA1", 5)],
         intro="Five genuine Toyota 04152-YZZA1 cartridge oil filter elements.",
         notInc="Housing O-rings and drain plug gaskets are not included.",
     ),
     dict(
-        id="toyota-kit-rav4-2019-2024-25-filter-plug",
-        name="Toyota RAV4 2019–2024 2.5L Filter & Spark Plug Kit",
-        kitType="service",
-        apps=[app(2019, 2024, "RAV4", "2.5L gas, non-hybrid")],
-        engines="A25A-FKS",
-        parts=[("90915-YZZN1", 1), ("17801-F0050", 1), ("90919-01289", 4)],
-        intro="Spin-on oil filter, engine air filter and a full set of four iridium spark plugs for the 2.5L gas (non-hybrid) RAV4.",
-        notInc="Engine oil, the cabin air filter and the oil drain plug gasket are not included.",
-        fitmentIssue="Oil filter corrected to spin-on 90915-YZZN1 (2019+ RAV4 2.5L gas, per Toyota of Glendale and ToyotaPartsDeal). Still needs a second competitor price check: 90915-YZZN1 has only one attributed competitor (Longo Toyota $6.18), so it has no target price yet.",
+        id="toyota-kit-oil-filter-90915-yzzn1-5-pack",
+        name="Genuine Toyota Oil Filter 90915-YZZN1 — 5-Pack",
+        kitType="multipack",
+        apps=[app(2018, 2024, "Camry", "2.5L gas and hybrid"), app(2019, 2024, "RAV4", "2.5L gas and hybrid"), app(2020, 2024, "Corolla", "2.0L")],
+        engines="A25A-FKS; A25A-FXS; M20A-FKS",
+        parts=[("90915-YZZN1", 5)],
+        intro="Five genuine Toyota 90915-YZZN1 spin-on oil filters.",
+        notInc="Drain plug gaskets are not included.",
     ),
 ]
 
@@ -125,7 +165,7 @@ def main():
             else:
                 target_total += pr["recommendedPrice"] * qty
                 bench_total += lo["price"] * qty
-            if r["audit"]["checks"]["Fitment verification required"]:
+            if r["audit"]["checks"]["Awaiting Toyota fitment confirmation"]:
                 issues.append(f"{pn}: component fitment verification required")
             for a in k["apps"]:
                 if not covers(r["fitmentApplications"], a):

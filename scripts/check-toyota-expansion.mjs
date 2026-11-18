@@ -146,6 +146,8 @@ const ENGINE_YEARS = {
   "Corolla|2ZR-FE": [2009, 2019], "Corolla|2ZR-FAE": [2014, 2022], "Corolla|2ZR-FXE": [2020, 2025], "Corolla|M20A-FKS": [2019, 2025],
   "Corolla Cross|M20A-FKS": [2022, 2025], "Sienna|2GR-FKS": [2017, 2020], "Sienna|2GR-FE": [2007, 2016],
   "FJ Cruiser|1GR-FE": [2007, 2014],
+  // From Toyota's oil filter and spark plug application charts.
+  "Matrix|2ZR-FE": [2009, 2013], "Prius|2ZR-FXE": [2010, 2025], "Sequoia|2UZ-FE": [2001, 2009], "Venza|A25A-FXS": [2021, 2024],
 };
 const ENGINE_CODE = /\b[0-9A-Z]{2,5}-[A-Z]{2,4}\b/g;
 const FAMILY = { oil_filter: "oil_filter", oil_filter_spin: "oil_filter" };
@@ -301,7 +303,7 @@ for (const file of kitFiles) {
         sum += target * c.quantity;
       }
       if (kit.status !== "research_pending") {
-        if (r.audit?.checks?.["Fitment verification required"]) problems.push(`${at}: component ${c.partNumber} still needs fitment verification`);
+        if (r.audit?.checks?.["Awaiting Toyota fitment confirmation"]) problems.push(`${at}: component ${c.partNumber} still needs fitment verification`);
         for (const a of kit.fitmentApplications ?? []) {
           if (!covers(r.fitmentApplications, a)) problems.push(`${at}: component ${c.partNumber} fitment does not cover ${a.yearFrom}-${a.yearTo} ${a.model}`);
         }

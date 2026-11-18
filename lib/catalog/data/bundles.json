@@ -2,10 +2,111 @@
   "_comment": "Kit bundles shown as 'add all to cart' on component product pages (lib/catalog/bundles.ts). Components mirror docs/catalog-expansion/toyota-service-kits-batch-*.json. A bundle appears only when approved is true AND every component is a published, purchasable listing. Set approved only on the owner's approval.",
   "bundles": [
     {
+      "id": "toyota-kit-camry-2020-2024-25-filter-plug",
+      "name": "Camry 2020–2024 2.5L Filter & Spark Plug Kit",
+      "summary": "Spin-on oil filter, engine air filter, charcoal cabin air filter and a full set of four iridium spark plugs for the 2.5L four-cylinder gas Camry.",
+      "notIncluded": "Engine oil and the oil drain plug gasket are not included.",
+      "components": [
+        {
+          "partNumber": "90915-YZZN1",
+          "quantity": 1
+        },
+        {
+          "partNumber": "17801-F0050",
+          "quantity": 1
+        },
+        {
+          "partNumber": "87139-0E040",
+          "quantity": 1
+        },
+        {
+          "partNumber": "90919-01289",
+          "quantity": 4
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-rav4-2019-2023-25-filter-plug",
+      "name": "RAV4 2019–2023 2.5L Filter & Spark Plug Kit",
+      "summary": "Spin-on oil filter, engine air filter and a full set of four iridium spark plugs for the 2.5L gas RAV4.",
+      "notIncluded": "Engine oil, the cabin air filter and the oil drain plug gasket are not included. 2024 is not covered: the air filter's 2024 RAV4 fitment is unconfirmed.",
+      "components": [
+        {
+          "partNumber": "90915-YZZN1",
+          "quantity": 1
+        },
+        {
+          "partNumber": "17801-F0050",
+          "quantity": 1
+        },
+        {
+          "partNumber": "90919-01289",
+          "quantity": 4
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-tacoma-2016-2023-35-filter-plug",
+      "name": "Tacoma 2016–2023 3.5L V6 Filter & Spark Plug Kit",
+      "summary": "Oil filter element, engine air filter and a full set of six iridium spark plugs (Toyota FK20HBR8) for the 3.5L V6 Tacoma.",
+      "notIncluded": "Engine oil, the cabin air filter, the oil drain plug gasket and the oil filter housing O-ring are not included.",
+      "components": [
+        {
+          "partNumber": "04152-YZZA1",
+          "quantity": 1
+        },
+        {
+          "partNumber": "17801-0P100",
+          "quantity": 1
+        },
+        {
+          "partNumber": "90919-01263",
+          "quantity": 6
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-tacoma-2016-2023-27-air-plug",
+      "name": "Tacoma 2016–2023 2.7L Air Filter & Spark Plug Kit",
+      "summary": "Engine air filter and a full set of four iridium spark plugs (Toyota FK20HR-A8) for the 2.7L four-cylinder Tacoma.",
+      "notIncluded": "The oil filter is not included (Toyota lists 90915-YZZD1 through 2020 and 90915-YZZG2 from 2021); engine oil and the cabin air filter are not included.",
+      "components": [
+        {
+          "partNumber": "17801-0C040",
+          "quantity": 1
+        },
+        {
+          "partNumber": "90919-01287",
+          "quantity": 4
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-corolla-2009-2015-18-oil-plug",
+      "name": "Corolla 2009–2015 1.8L Oil Filter & Spark Plug Kit",
+      "summary": "Cartridge oil filter element and a full set of four iridium spark plugs for the 1.8L Corolla.",
+      "notIncluded": "Engine oil, the air and cabin filters, the drain plug gasket and the oil filter housing O-ring are not included.",
+      "components": [
+        {
+          "partNumber": "04152-YZZA6",
+          "quantity": 1
+        },
+        {
+          "partNumber": "90919-01275",
+          "quantity": 4
+        }
+      ],
+      "approved": false
+    },
+    {
       "id": "toyota-kit-tacoma-2016-2023-front-brake",
-      "name": "Tacoma 2016–2023 Front Brake Kit",
-      "summary": "One front brake pad set and two front rotors for a full front-axle replacement.",
-      "notIncluded": "Pad fitting hardware and brake fluid are not included.",
+      "name": "Tacoma 2016–2023 Front Brake Kit — Pads & Rotors",
+      "summary": "One front brake pad set (both sides) and two front rotors, for a complete front-axle pad and rotor replacement.",
+      "notIncluded": "Pad fitting hardware, brake fluid and wheel hardware are not included.",
       "components": [
         {
           "partNumber": "04465-04090",
@@ -19,13 +120,43 @@
       "approved": false
     },
     {
+      "id": "toyota-kit-camry-2023-2024-front-brake",
+      "name": "Camry 2023–2024 Front Brake Kit — Pads & Rotors (US-built, without TRD)",
+      "summary": "One front brake pad set and two front rotors for US-built Camrys produced from 02/2023, without the TRD package.",
+      "notIncluded": "Pad fitting hardware and brake fluid are not included.",
+      "components": [
+        {
+          "partNumber": "04465-06170",
+          "quantity": 1
+        },
+        {
+          "partNumber": "43512-06200",
+          "quantity": 2
+        }
+      ],
+      "approved": false
+    },
+    {
       "id": "toyota-kit-oil-filter-04152-yzza1-5-pack",
-      "name": "Oil Filter Element 04152-YZZA1 — 5-Pack",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA1 — 5-Pack",
       "summary": "Five genuine Toyota 04152-YZZA1 cartridge oil filter elements.",
       "notIncluded": "Housing O-rings and drain plug gaskets are not included.",
       "components": [
         {
           "partNumber": "04152-YZZA1",
+          "quantity": 5
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "toyota-kit-oil-filter-90915-yzzn1-5-pack",
+      "name": "Genuine Toyota Oil Filter 90915-YZZN1 — 5-Pack",
+      "summary": "Five genuine Toyota 90915-YZZN1 spin-on oil filters.",
+      "notIncluded": "Drain plug gaskets are not included.",
+      "components": [
+        {
+          "partNumber": "90915-YZZN1",
           "quantity": 5
         }
       ],

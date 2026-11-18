@@ -1,0 +1,215 @@
+{
+  "_comment": "Licensed-image search for Toyota expansion batch 1 (2026-11-18), per the catalog's image workflow (scripts/acquire-product-images.mjs): only sources that publish a machine-readable licence, and only results whose own title/tags contain the exact part number. Dealer and Toyota catalog photos are not licensed for reuse and were not used.",
+  "searchedOn": "2026-11-18",
+  "sources": {
+    "openverse": "https://api.openverse.org/v1/images/ (part number with and without hyphen)",
+    "wikimedia_commons": "https://commons.wikimedia.org/w/api.php (File namespace, quoted part number)"
+  },
+  "results": {
+    "17801-F0050": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "17801-0P100": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "17801-0C040": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "17801-0P051": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "17801-38051": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "17801-F0020": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04152-YZZA1": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "04152-YZZA6": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "90915-YZZD3": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "90915-YZZN3": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "87139-0R030": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "87139-0E040": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "87139-58010": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "90919-01289": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "90919-02258": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04465-04090": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "43512-04052": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04465-0C020": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "43512-06200": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04465-0E060": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04465-06170": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "04465-35330": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "04465-02530": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "16032-F0011": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "27060-F0010": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "43550-0R060": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "43512-0R010": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "90919-A2009": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04465-42200": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04465-42220": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04465-33480": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "90919-01287": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "90919-01263": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "90919-01275": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "90915-YZZN1": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "04152-YZZA5": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "87139-YZZ08": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "87139-50100": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "43550-0R070": {
+      "openverseMatches": [],
+      "commonsMatches": [],
+      "commonsAnswered": true
+    },
+    "43512-0E060": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    },
+    "27060-25010": {
+      "openverseMatches": [],
+      "commonsMatches": null,
+      "commonsAnswered": false
+    }
+  }
+}

@@ -6,14 +6,15 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 
 | Primary status | Records |
 |---|---|
-| Ready for price approval | 0 |
-| Fitment verification required | 26 |
-| Pricing evidence insufficient | 1 |
-| Supplier cost required | 23 |
-| Product photography required | 0 |
+| Ready for approval | 0 |
+| Rejected (incorrect or unsupported) | 4 |
+| Awaiting Toyota fitment confirmation | 16 |
+| Awaiting pricing verification | 0 |
+| Awaiting supplier cost | 30 |
+| Awaiting image verification | 0 |
 
-- 23 records pass fitment and pricing; every one still needs a supplier acquisition cost and a licensed product photo before its price can be approved.
-- No record is *Ready for price approval*: no supplier cost is on file for any part, so profitability cannot be established, and no licensed, matching photograph exists for any part.
+- 30 records pass fitment and pricing; every one still needs a supplier acquisition cost and a licensed product photo before its price can be approved.
+- No record is *Ready for approval*: no supplier cost is on file for any part, so profitability cannot be established, and no licensed, matching photograph exists for any part.
 - **Pricing rule:** about 5% below the lowest verified US retailer selling the exact same genuine Toyota part number, moving toward 3% only when needed for margin, never less than 3% below. Every price shown is a *competitive target flagged for profitability review*, not a selling price. No automatic discount, sale price or inflated reference price is used.
 - Each record's status is the first blocking item in this order: fitment, pricing evidence, supplier cost, photography. The CSV shows every check.
 
@@ -26,41 +27,42 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 | 17801-0C040 | Engine Air Filter 17801-0C040 | 2016–2023 Toyota Tacoma (2.7L) | [OEMGenuineParts.com $19.01](https://www.oemgenuineparts.com/oem-parts/toyota-air-filter-178010c040) | **$18.09** | high |
 | 17801-0P051 | Engine Air Filter 17801-0P051 | 2024–2025 Toyota Tacoma (2.4L turbo; i-FORCE MAX hybrid coverage by VIN) | [OEMGenuineParts.com $19.01](https://www.oemgenuineparts.com/oem-parts/toyota-air-filter-178010p051) | **$18.09** | high |
 | 17801-F0020 | Engine Air Filter 17801-F0020 | 2018–2024 Toyota Camry (2.5L hybrid; hybrid); 2020–2022 Toyota Corolla (1.8L; gas, non-hybrid); 2020–2024 Toyota Corolla (2.0L; gas; one retailer page lists 1.8L only) | [Grieco Toyota $18.90](https://parts.griecotoyota.com/oem-parts/toyota-air-filter-17801f0020) | **$17.99** | high |
-| 04152-YZZA1 | Oil Filter Element 04152-YZZA1 | 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6) | [ToyotaPartsDeal $4.68](https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html) | **$4.49** | medium |
-| 04152-YZZA6 | Oil Filter Element 04152-YZZA6 | 2009–2017 Toyota Corolla (1.8L) | [Toyota of San Diego $4.52](https://parts.toyotasandiego.com/parts/toyota-oil-filter-4152yzza6) | **$4.30** | medium |
-| 90915-YZZD3 | Spin-On Oil Filter 90915-YZZD3 | 2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2009 Toyota Tundra (4.7L V8); 2005–2010 Toyota Tundra (4.0L V6; 2011+ 4.0L uses 04152-YZZA5) | [AutoPartsPrime $4.55](https://www.autopartsprime.com/toyota/filter-oil/oe-90915yzzd3) | **$4.39** | high |
+| 04152-YZZA1 | Oil Filter Element 04152-YZZA1 | 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6); 2017–2020 Toyota Sienna (3.5L V6) | [ToyotaPartsDeal $4.68](https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html) | **$4.49** | medium |
+| 04152-YZZA6 | Oil Filter Element 04152-YZZA6 | 2009–2015 Toyota Corolla (1.8L); 2014–2015 Toyota Corolla (1.8L; LE Eco); 2009–2013 Toyota Matrix (1.8L); 2010–2017 Toyota Prius (1.8L hybrid) | [Toyota of San Diego $4.52](https://parts.toyotasandiego.com/parts/toyota-oil-filter-4152yzza6) | **$4.30** | medium |
+| 90915-YZZD3 | Spin-On Oil Filter 90915-YZZD3 | 2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2009 Toyota Tundra (4.7L V8); 2005–2010 Toyota Tundra (4.0L V6); 2001–2009 Toyota Sequoia (4.7L V8) | [AutoPartsPrime $4.55](https://www.autopartsprime.com/toyota/filter-oil/oe-90915yzzd3) | **$4.39** | high |
 | 90915-YZZN3 | Spin-On Oil Filter 90915-YZZN3 | 2022–2025 Toyota Tundra (3.4L twin-turbo V6); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid) | [Lakeland Toyota $4.68](https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-oil-filter-90915yzzn3) | **$4.49** | medium |
 | 87139-0R030 | Cabin Air Filter 87139-0R030 | 2020–2024 Toyota Corolla (standard (non-charcoal) filter) | [OEMGenuineParts.com $19.01](https://www.oemgenuineparts.com/oem-parts/toyota-filter-871390r030) | **$18.09** | high |
 | 87139-0E040 | Cabin Air Filter (Deodorizing) 87139-0E040 | 2020–2024 Toyota Camry (charcoal filter) | [Grieco Toyota $35.51](https://parts.griecotoyota.com/oem-parts/toyota-cabin-air-filter-871390e040) | **$33.79** | high |
 | 87139-58010 | Cabin Air Filter 87139-58010 | 2023–2024 Toyota Highlander (charcoal filter) | [OEMGenuineParts.com $35.79](https://www.oemgenuineparts.com/oem-parts/toyota-cabin-air-filter-8713958010?c=az0x) | **$34.09** | high |
-| 90919-01289 | Iridium Spark Plug 90919-01289 | 2019–2024 Toyota RAV4 (2.5L; gas; hybrid not confirmed); 2018–2024 Toyota Camry (2.5L; gas; hybrid not confirmed) | [OEMGenuineParts.com $13.08](https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901289) | **$12.49** | high |
-| 04465-04090 | Front Disc Brake Pad Set 04465-04090 | 2016–2023 Toyota Tacoma (4x4 and PreRunner per one listing; 2WD coverage by VIN) | [Grieco Toyota $70.17](https://parts.griecotoyota.com/oem-parts/toyota-brake-pads-front-446504090) | **$66.69** | high |
+| 90919-01289 | Iridium Spark Plug 90919-01289 | 2018–2024 Toyota Camry (2.5L; gas); 2018–2024 Toyota Camry (2.5L hybrid; hybrid); 2019–2024 Toyota RAV4 (2.5L; gas); 2019–2024 Toyota RAV4 (2.5L hybrid; hybrid, incl. Prime); 2020–2022 Toyota Corolla (1.8L); 2020–2024 Toyota Highlander (2.5L hybrid; hybrid); 2021–2024 Toyota Venza (2.5L hybrid) | [OEMGenuineParts.com $13.08](https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901289) | **$12.49** | high |
+| 04465-04090 | Front Disc Brake Pad Set 04465-04090 | 2016–2023 Toyota Tacoma | [Grieco Toyota $70.17](https://parts.griecotoyota.com/oem-parts/toyota-brake-pads-front-446504090) | **$66.69** | high |
 | 43512-04052 | Front Disc Brake Rotor 43512-04052 | 2005–2023 Toyota Tacoma | [Sparks Toyota $81.29](https://www.sparksparts.com/oem-parts/toyota-disc-brake-rotor-front-4351204052) | **$77.29** | high |
 | 04465-0C020 | Front Disc Brake Pad Set 04465-0C020 | 2007–2017 Toyota Tundra; 2008–2017 Toyota Sequoia | [OEMGenuineParts.com $71.04](https://www.oemgenuineparts.com/oem-parts/toyota-brake-pads-front-44650c020) | **$67.49** | high |
 | 43512-06200 | Front Disc Brake Rotor 43512-06200 | 2018–2024 Toyota Camry (without TRD; hybrid notes conflict); 2019–2024 Toyota RAV4 (engine / hybrid notes vary by listing); 2022–2023 Toyota Corolla Cross (2.0L) | [Grieco Toyota $66.73](https://parts.griecotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206200) | **$63.49** | high |
+| 04465-0E060 | Front Disc Brake Pad Set 04465-0E060 | 2018–2024 Toyota Camry (2.5L; USA-built, without TRD); 2019–2023 Toyota RAV4 (North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies) | [Toyota OEM Parts Online $72.07](https://toyota.oempartsonline.com/oem-parts/toyota-disc-brake-pad-set-front-44650e060) | **$68.49** | high |
 | 04465-06170 | Front Disc Brake Pad Set 04465-06170 | 2023–2024 Toyota Camry (US-built, without TRD, from 02/2023) | [Ourisman Toyota of Richmond $81.29](https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-brake-pads-446506170) | **$77.29** | high |
 | 04465-35330 | Front Disc Brake Pad Set 04465-35330 | 2020–2023 Toyota 4Runner (4.0L V6) | [OEMGenuineParts.com $74.90](https://www.oemgenuineparts.com/oem-parts/toyota-brake-pads-front-446535330) | **$71.19** | high |
 | 27060-F0010 | Alternator Assembly with Regulator (100A) 27060-F0010 | 2018–2024 Toyota Camry (2.5L; gas, non-hybrid, 100A) | [Ourisman Toyota of Richmond $262.44](https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-alternator-27060f0010) | **$249.39** | high |
 | 43550-0R060 | Front Wheel Bearing and Hub Assembly 43550-0R060 | 2019–2024 Toyota RAV4 (2.5L; gas, without hybrid or Prime) | [Modern Toyota Wholesale Direct $256.61](https://wholesaledirect.moderntoyota.com/oem-parts/toyota-hub-assembly-435500r060) | **$243.79** | high |
 | 43512-0R010 | Front Disc Brake Rotor 43512-0R010 | 2009–2018 Toyota RAV4 (4-cyl 2.4L / 2.5L) | [Nucar Toyota $67.13](https://toyotaparts.nucar.com/parts/toyota-2009-2018-toyota-rav4-disc-brake-rotor-front-435120r010) | **$63.79** | high |
+| 90919-A2009 | Direct Ignition Coil 90919-A2009 | 2019–2024 Toyota RAV4 (2.5L; gas (non-hybrid)) | [Grieco Toyota $103.64](https://parts.griecotoyota.com/oem-parts/toyota-ignition-coil-90919a2009) | **$98.49** | high |
+| 04465-33480 | Front Disc Brake Pad Set 04465-33480 | 2018–2019 Toyota Camry (2.5L; Japan-built (JPP)); 2019–2020 Toyota RAV4 (Japan-built (JPP)) | [AutoPartsPrime $72.70](https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-0446533480) | **$69.09** | high |
+| 90919-01287 | Iridium Spark Plug 90919-01287 | 2016–2023 Toyota Tacoma (2.7L) | [OEMGenuineParts.com $16.44](https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901287) | **$15.69** | high |
+| 90919-01263 | Iridium Spark Plug 90919-01263 | 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6) | [Capo Valley Toyota $13.96](https://parts.capovalleytoyota.com/oem-parts/toyota-spark-plug-9091901263) | **$13.29** | high |
+| 90919-01275 | Iridium Spark Plug 90919-01275 | 2009–2019 Toyota Corolla (1.8L); 2014–2019 Toyota Corolla (1.8L; LE Eco) | [AutoPartsPrime $13.40](https://www.autopartsprime.com/toyota/plug-spark/oe-9091901275) | **$12.79** | medium |
+| 90915-YZZN1 | Spin-On Oil Filter 90915-YZZN1 | 2018–2024 Toyota Camry (2.5L; gas); 2018–2024 Toyota Camry (2.5L hybrid; hybrid); 2019–2024 Toyota RAV4 (2.5L; gas); 2019–2024 Toyota RAV4 (2.5L hybrid; hybrid); 2020–2024 Toyota Corolla (2.0L) | [Toyota San Diego $4.52](https://parts.toyotasandiego.com/parts/toyota-filter-s-a-oil-90915yzzn1) | **$4.30** | medium |
 | 04152-YZZA5 | Oil Filter Element 04152-YZZA5 | 2010–2024 Toyota 4Runner (4.0L V6); 2010–2014 Toyota FJ Cruiser (4.0L V6); 2011–2014 Toyota Tundra (4.0L V6) | [Capo Valley Toyota $4.60](https://parts.capovalleytoyota.com/oem-parts/toyota-oil-filter-4152yzza5) | **$4.39** | high |
 
-## Fitment verification required
+## Awaiting Toyota fitment confirmation
 
 | Part number | Product | Outstanding issue |
 |---|---|---|
 | 17801-38051 | Genuine Toyota Engine Air Filter 17801-38051 — 4Runner | Superseded: 17801-38051 is replaced by 17801-YZZ13. List and re-price under the current number 17801-YZZ13; pricing here is for the old number.; superseded by 17801-YZZ13 |
 | 90919-02258 | Genuine Toyota Direct Ignition Coil 90919-02258 — vehicles (fitment under review) | 2016-2023 Tacoma 2GR-FKS 3.5L V6: Dealers list 90919-02258 for 1.8L engines (Corolla, Prius, C-HR, Matrix). The Tacoma 3.5L coil is 90919-A2008 (candidate for batch 2). No 1.8L application verified by year yet. |
-| 04465-0E060 | Genuine Toyota Front Disc Brake Pad Set 04465-0E060 — Camry and RAV4 | Overlaps 04465-33480 on the 2018-2024 Camry: a Toyota application sheet splits the two by production window and plant. Needs VIN-level confirmation before listing.; 2024-2024 RAV4: One catalog ends at 2023, another at 20 |
 | 04465-02530 | Genuine Toyota Front Disc Brake Pad Set 04465-02530 — Highlander | Olathe Toyota's note for this number reads 'Grand Highlander, without hybrid', contradicting the hybrid listings.; 2021-2022 Highlander T24A-FTS 2.4L turbo: The 2.4L turbo entered the Highlander for 2023; a 2021-2022 2.4 |
 | 16032-F0011 | Genuine Toyota Water Inlet Housing 16032-F0011 — Camry and RAV4 | Single dealer catalog for applications; it includes hybrid models that the staged 'gas, non-hybrid' restriction excluded. Gasket (16325-25010) inclusion unconfirmed. |
-| 90919-A2009 | Genuine Toyota Direct Ignition Coil 90919-A2009 — RAV4 | A retailer lists 90919-A2010 for 2019 RAV4 2.5L gas trims; which coil applies by production date is unresolved.; 2019-2024 RAV4 A25A-FXS 2.5L hybrid: Listings say 'without hybrid'; the staged hybrid claim is contradicted |
 | 04465-42200 | Genuine Toyota Front Disc Brake Pad Set 04465-42200 — vehicles (fitment under review) | Superseded by 04465-42220.; superseded by 04465-42220; 2006-2018 RAV4: Superseded by 04465-42220; year ranges do not separate 2006-2012 from 2013-2018. |
 | 04465-42220 | Genuine Toyota Front Disc Brake Pad Set 04465-42220 — vehicles (fitment under review) | 2013-2018 RAV4 2AR-FE 2.5L: Current number for the 04465-42200 / 04465-0R010 family, but no catalog states its RAV4 year range. |
-| 04465-33480 | Genuine Toyota Front Disc Brake Pad Set 04465-33480 — Camry | Overlaps 04465-0E060 on the 2018-2024 Camry by production window; RAV4 and Venza applications are retailer-only. |
-| 90919-01287 | Genuine Toyota Iridium Spark Plug 90919-01287 — Tacoma | Conflicting plug numbers: dealer pages list 90919-01287 for 2016-2023 Tacoma but the same pages carry 'Fits Tacoma 2.7L' text, and 90919-01263 (FK20HBR8, a different plug code) is also listed for the 2016 Tacoma 3.5L. Ne |
-| 90919-01263 | Genuine Toyota Iridium Spark Plug 90919-01263 — vehicles (fitment under review) | 2016-2023 Tacoma 2GR-FKS 3.5L V6: Listed as no longer available; a listing shows it replaced by 90919-01236 on a 2.7L engine. Relationship to 90919-01287 unresolved. |
-| 90919-01275 | Genuine Toyota Iridium Spark Plug 90919-01275 — vehicles (fitment under review) | 2009-2019 Corolla 2ZR-FE 1.8L: Conflict: one catalog lists 90080-91184 for the 2009-2019 Corolla 1.8L and 90919-01275 for 2020-2023. |
 | 87139-YZZ08 | Genuine Toyota Cabin Air Filter 87139-YZZ08 — vehicles (fitment under review) | Superseded by 87139-YZZ82.; superseded by 87139-YZZ82; 2018-2024 Camry: Retailer-only; one source treats YZZ08 as an interchange for 87139-50100. No Toyota or dealer Camry evidence. |
 | 87139-50100 | Genuine Toyota Cabin Air Filter 87139-50100 — vehicles (fitment under review) | 2010-2024 4Runner: Dealer ranges conflict and none lists the 4Runner. |
 | 43550-0R070 | Genuine Toyota Front Wheel Bearing and Hub Assembly 43550-0R070 — RAV4 | Single dealer note; the staged record claimed all 2019-2024 RAV4s. Needs a second catalog source for the hybrid / origin split. |
@@ -76,14 +78,11 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 | (engine) | Toyota 2ZR-FE 1.8L inline-4 Engine Assembly | engine unit details (condition, mileage, inclusions) |
 | (engine) | Toyota M20A-FKS 2.0L inline-4 (Dynamic Force) Engine Assembly | engine unit details (condition, mileage, inclusions) |
 
-## Pricing evidence insufficient
+## Awaiting pricing verification
 
 | Record | Reason |
 |---|---|
 | 04465-42220 | only 0 attributed competitor price(s) -- fewer than 3 |
-| 90919-01263 | only 0 attributed competitor price(s) -- fewer than 3; lower unattributed listing(s) seen; not used as benchmark; Quantity ambiguous (one listing is a set of 6). |
-| 90919-01275 | only 1 attributed competitor price(s) -- fewer than 3; lower unattributed listing(s) seen; not used as benchmark |
-| 90915-YZZN1 | only 1 attributed competitor price(s) -- fewer than 3; lower unattributed listing(s) seen; not used as benchmark |
 | 87139-YZZ08 | only 0 attributed competitor price(s) -- fewer than 3 |
 | Toyota A25A-FKS 2.5L inline-4 (Dynamic Force) Engine Assembly | engine units are priced from the vendor's actual unit; no part number to benchmark |
 | Toyota 2GR-FKS 3.5L V6 Engine Assembly | engine units are priced from the vendor's actual unit; no part number to benchmark |
@@ -101,7 +100,7 @@ No supplier cost is on file for any of the 50 records, so profitability cannot b
 
 ## Shipping suitability
 
-12 parts have a target under $25 and ship free as parcels under the published US rate table. On their own they are commercially unsuitable: the carrier cost of a single parcel will usually exceed the margin.
+16 parts have a target under $25 and ship free as parcels under the published US rate table. On their own they are commercially unsuitable: the carrier cost of a single parcel will usually exceed the margin.
 
 | Part number | Product | Target price |
 |---|---|---|
@@ -116,6 +115,10 @@ No supplier cost is on file for any of the 50 records, so profitability cannot b
 | 90915-YZZN3 | Spin-On Oil Filter 90915-YZZN3 | $4.49 |
 | 87139-0R030 | Cabin Air Filter 87139-0R030 | $18.09 |
 | 90919-01289 | Iridium Spark Plug 90919-01289 | $12.49 |
+| 90919-01287 | Iridium Spark Plug 90919-01287 | $15.69 |
+| 90919-01263 | Iridium Spark Plug 90919-01263 | $13.29 |
+| 90919-01275 | Iridium Spark Plug 90919-01275 | $12.79 |
+| 90915-YZZN1 | Spin-On Oil Filter 90915-YZZN1 | $4.30 |
 | 04152-YZZA5 | Oil Filter Element 04152-YZZA5 | $4.39 |
 
 Recommendations (none changes the published shipping policy):

@@ -562,3 +562,186 @@ for _ev in ENGINE_EVIDENCE.values():
     for _a in _ev["apps"]:
         if _a["status"] == "vin_dependent" and not _a["restriction"]:
             _a["restriction"] = ENGINE_RESTRICTION
+
+
+# ---------------------------------------------------------------------------
+# Phase 1 resolutions (2026-11-18, second pass): Toyota's own application
+# charts, published on toyotapartsandservice.com (Toyota Parts & Service),
+# list the factory oil filter and spark plug by model, year and engine code.
+# They supersede the conflicting dealer-catalog readings above.
+# ---------------------------------------------------------------------------
+TPS_OIL = "https://www.toyotapartsandservice.com/wp-content/uploads/2021/08/06_OilFilters2021_hi.pdf"
+TPS_PLUG = "https://www.toyotapartsandservice.com/wp-content/uploads/2022/11/09_SparkPlugs2022_hi.pdf"
+
+
+def OIL(note):
+    return E("toyota_official", f"Toyota Parts & Service oil filter chart (2021): {note}", TPS_OIL)
+
+
+def PLUG(note):
+    return E("toyota_official", f"Toyota Parts & Service spark plug chart (2022): {note}", TPS_PLUG)
+
+
+OPEN_ENDED = "chart edition lists the application as open-ended ('2018-'); later model years from dealer catalogs"
+
+EVIDENCE["90915-YZZN1"]["apps"] = [
+    A(2018, 2024, "Camry", "A25A-FKS 2.5L", "verified",
+      [OIL("CAMRY 2018- 4 Cyl. (A25AFKS, A25AFXS) -> 90915-YZZN1"),
+       E("dealer_catalog", "Lakeland Toyota (2019 Camry)", f"{LK}/toyota_2019_CAMRY/Engine-Oil-Filter/16359139/90915YZZN1.html"),
+       E("dealer_catalog", "Sparks Toyota (2018+ Camry A25A-FKS, A25A-FXS)", f"{SP}/toyota-genuine-toyota-oil-filter-s-a-90915yzzn1")],
+      restriction="gas"),
+    A(2018, 2024, "Camry", "A25A-FXS 2.5L hybrid", "verified",
+      [OIL("CAMRY 2018- 4 Cyl. (A25AFKS, A25AFXS) -> 90915-YZZN1")], restriction="hybrid"),
+    A(2019, 2024, "RAV4", "A25A-FKS 2.5L", "verified",
+      [OIL("RAV4 2019- 4 Cyl. (A25AFKS) and (A25AFKS) NAP -> 90915-YZZN1"),
+       E("dealer_catalog", "Lakeland Toyota (2023 RAV4)", f"{LK}/toyota_2023_RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html"),
+       E("dealer_catalog", "Lakeland Toyota (2024 RAV4)", f"{LK}/toyota_2024_RAV4/Engine-Oil-Filter/16359139/90915YZZN1.html")],
+      restriction="gas"),
+    A(2019, 2024, "RAV4", "A25A-FXS 2.5L hybrid", "verified",
+      [OIL("RAV4 2019- 4 Cyl. (A25AFXS) HV -> 90915-YZZN1")], restriction="hybrid"),
+    A(2020, 2024, "Corolla", "M20A-FKS 2.0L", "verified",
+      [OIL("COROLLA 2020- 4 Cyl. (M20AFKS) JPP and NAP -> 90915-YZZN1"),
+       E("dealer_catalog", "ToyotaPartsDeal (2024 Corolla)", f"{TD}/oem-2024-toyota-corolla-oil_filter.html")]),
+]
+EVIDENCE["90915-YZZN1"]["resolution"] = "Camry 2.5L and 2019-2022 RAV4 resolved by Toyota's oil filter chart: 90915-YZZN1 for A25A-FKS and A25A-FXS, Japan- and North American-built alike."
+
+EVIDENCE["04152-YZZA1"]["apps"] = [
+    A(2016, 2023, "Tacoma", "2GR-FKS 3.5L V6", "verified",
+      [OIL("TACOMA 2016-2019 (-1/19) and 2019- (2/19-) V6 (2GRFKS) -> 04152-YZZA1"),
+       E("dealer_catalog", "ToyotaPartsNow (2020 Tacoma 3.5L)", f"{TN}/parts-select/2020-toyota-tacoma-oil-filter")]),
+    A(2018, 2024, "Camry", "2GR-FKS 3.5L V6", "verified",
+      [OIL("CAMRY 2018- V6 (2GRFKS) -> 04152-YZZA1"),
+       E("dealer_catalog", "ToyotaPartsNow (2018 Camry, 3.5L)", f"{TN}/parts-select/2018-toyota-camry-oil-filter")]),
+    A(2017, 2022, "Highlander", "2GR-FKS 3.5L V6", "verified",
+      [OIL("HIGHLANDER 2017-2019 and 2020- V6 (2GRFKS) -> 04152-YZZA1"),
+       E("toyota_official", "Toyota parts (part page)", f"{TA}/replaceable-element-oil-filter-04152yzza1")]),
+    A(2017, 2020, "Sienna", "2GR-FKS 3.5L V6", "verified",
+      [OIL("SIENNA 2017-2020 V6 (2GRFKS) -> 04152-YZZA1")]),
+    A(2023, 2023, "Highlander", "2GR-FKS 3.5L V6", "removed", [],
+      reason="The 2023 Highlander has no 3.5L V6 (2.4L turbo and 2.5L hybrid only)."),
+    A(2018, 2024, "Camry", "A25A-FKS 2.5L", "removed", [OIL("CAMRY 2018- A25AFKS -> 90915-YZZN1")],
+      reason="Toyota's chart assigns spin-on 90915-YZZN1 to the 2.5L."),
+    A(2019, 2024, "RAV4", "A25A-FKS 2.5L", "removed", [OIL("RAV4 2019- A25AFKS -> 90915-YZZN1")],
+      reason="Toyota's chart assigns 90915-YZZN1 to the 2019+ RAV4; 04152-YZZA1 is the 2009-2018 RAV4 filter."),
+]
+EVIDENCE["04152-YZZA1"]["resolution"] = "Dealer note 'from 11/2017, Exc. Japan built' not reflected in Toyota's chart for these US models; V6 applications verified without an origin restriction."
+
+EVIDENCE["04152-YZZA6"]["apps"] = [
+    A(2009, 2015, "Corolla", "2ZR-FE 1.8L", "verified",
+      [OIL("COROLLA 2009-2013 (2ZRFE) and 2014-2015 (2ZRFAE, 2ZRFE) -> 04152-YZZA6"),
+       E("dealer_catalog", "ToyotaPartsDeal (part page)", f"{TD}/oem/toyota~replaceable~element~04152-yzza6.html")]),
+    A(2014, 2015, "Corolla", "2ZR-FAE 1.8L", "verified",
+      [OIL("COROLLA 2014-2015 (2ZRFAE, 2ZRFE) -> 04152-YZZA6")], restriction="LE Eco"),
+    A(2009, 2013, "Matrix", "2ZR-FE 1.8L", "verified",
+      [OIL("MATRIX 2009-2010 and 2011-2014 4 Cyl. (2ZRFE) -> 04152-YZZA6; US Matrix sales ended with the 2013 model year")]),
+    A(2010, 2017, "Prius", "2ZR-FXE 1.8L hybrid", "verified",
+      [OIL("PRIUS 2010-2017 4 Cyl. (2ZRFXE) -> 04152-YZZA6")]),
+    A(2016, 2018, "Corolla", "2ZR-FE / 2ZR-FAE 1.8L", "removed", [OIL("COROLLA 2016- (2ZRFAE, 2ZRFE) -> 90915-YZZN1")],
+      reason="Toyota's chart moves the 2016+ Corolla 1.8L to spin-on 90915-YZZN1; the staged 2016-2017 years were wrong."),
+]
+
+EVIDENCE["90915-YZZD3"]["apps"] = [
+    A(2005, 2015, "Tacoma", "1GR-FE 4.0L V6", "verified", [OIL("TACOMA 2005-2015 V6 (1GRFE) -> 90915-YZZD3")]),
+    A(2003, 2009, "4Runner", "1GR-FE 4.0L V6 / 2UZ-FE 4.7L V8", "verified", [OIL("4RUNNER 2003-2009 V6 (1GRFE) and V8 (2UZFE) -> 90915-YZZD3")]),
+    A(2000, 2009, "Tundra", "2UZ-FE 4.7L V8", "verified", [OIL("TUNDRA 2000-2004, 2005-2008, 2008-2009 V8 (2UZFE) -> 90915-YZZD3")]),
+    A(2005, 2010, "Tundra", "1GR-FE 4.0L V6", "verified", [OIL("TUNDRA 2005-2010 V6 (1GRFE) -> 90915-YZZD3; 2011+ 1GRFE -> 04152-YZZA5")]),
+    A(2001, 2009, "Sequoia", "2UZ-FE 4.7L V8", "verified", [OIL("SEQUOIA 2001-2007, 2008, 2008-2009 V8 (2UZFE) -> 90915-YZZD3")]),
+]
+
+EVIDENCE["04152-YZZA5"]["apps"] = [
+    A(2010, 2024, "4Runner", "1GR-FE 4.0L V6", "verified",
+      [OIL("4RUNNER 2010-2012 and 2013- V6 (1GRFE) -> 04152-YZZA5"),
+       E("dealer_catalog", "Frontier Toyota (2010-2024 4Runner)", "https://parts.frontiertoyota.com/oem-parts/toyota-genuine-toyota-oil-filter-element-2010-2024-4runner-2010-2014-fj-cruiser-2011-2014-tundra-4-0-v6-4152yzza5")]),
+    A(2010, 2014, "FJ Cruiser", "1GR-FE 4.0L V6", "verified", [OIL("FJ CRUISER 2010-2014 V6 (1GRFE) -> 04152-YZZA5")]),
+    A(2011, 2014, "Tundra", "1GR-FE 4.0L V6", "verified", [OIL("TUNDRA 2011-2012 and 2013-2014 V6 (1GRFE) -> 04152-YZZA5")]),
+    A(2010, 2015, "Tundra", "1UR-FE / 3UR-FE V8", "removed", [OIL("TUNDRA V8 (1URFE, 3URFE) -> 04152-YZZA4")],
+      reason="Toyota's chart lists 04152-YZZA4 for the Tundra V8."),
+    A(2007, 2011, "Camry", "", "removed", [OIL("CAMRY 2007-2011: 2GRFE -> 04152-YZZA1, 2AZFE -> 90915-YZZF1")],
+      reason="Toyota's chart lists other filters for every 2007-2011 Camry engine."),
+    A(2006, 2008, "RAV4", "", "removed", [OIL("RAV4 2006-2008 2AZFE -> 90915-YZZF1")],
+      reason="Toyota's chart lists 90915-YZZF1."),
+]
+
+EVIDENCE["90919-01289"]["apps"] = [
+    A(2018, 2024, "Camry", "A25A-FKS 2.5L", "verified", [PLUG("CAMRY 2018- L4 (A25AFKS) FC16HR-Q8 -> 90919-01289"),
+                                                         E("dealer_catalog", "Olathe Toyota (part page)", f"{OL}/toyota-spark-plug-9091901289")], restriction="gas"),
+    A(2018, 2024, "Camry", "A25A-FXS 2.5L hybrid", "verified", [PLUG("CAMRY 2018- L4 (A25AFXS) Hybrid -> 90919-01289")], restriction="hybrid"),
+    A(2019, 2024, "RAV4", "A25A-FKS 2.5L", "verified", [PLUG("RAV4 2019- L4 (A25AFKS) -> 90919-01289")], restriction="gas"),
+    A(2019, 2024, "RAV4", "A25A-FXS 2.5L hybrid", "verified", [PLUG("RAV4 HV 2019- and RAV4 PRIME 2021- (A25AFXS) -> 90919-01289")], restriction="hybrid, incl. Prime"),
+    A(2020, 2022, "Corolla", "2ZR-FAE 1.8L", "verified", [PLUG("COROLLA 2020- L4 (2ZRFAE) -> 90919-01289")]),
+    A(2020, 2024, "Highlander", "A25A-FXS 2.5L hybrid", "verified", [PLUG("HIGHLANDER/HV 2020- L4 (A25AFXS) Hybrid -> 90919-01289")], restriction="hybrid"),
+    A(2021, 2024, "Venza", "A25A-FXS 2.5L hybrid", "verified", [PLUG("VENZA 2021- L4 (A25AFXS) Hybrid -> 90919-01289")]),
+]
+
+EVIDENCE["90919-01287"] = dict(
+    apps=[
+        A(2016, 2023, "Tacoma", "2TR-FE 2.7L", "verified",
+          [PLUG("TACOMA 2016- L4 (2TRFE) FK20HR-A8 -> 90919-01287"),
+           E("dealer_catalog", "Toyota of Anaheim (2016-2023 Tacoma; 'Fits Tacoma 2.7L')", "https://parts.toyotaofanaheim.com/oem-parts/toyota-spark-plug-9091901287")]),
+        A(2016, 2023, "Tacoma", "2GR-FKS 3.5L V6", "removed",
+          [PLUG("TACOMA 2016- V6 (2GRFKS) FK20HBR8 -> 90919-01263")],
+          reason="Toyota's chart assigns 90919-01263 to the 3.5L V6; 90919-01287 is the 2.7L plug. The staged 3.5L application was wrong."),
+    ],
+    resolution="Plug conflict resolved by Toyota's spark plug chart: 2.7L 2TR-FE -> 90919-01287; 3.5L 2GR-FKS -> 90919-01263.",
+)
+
+EVIDENCE["90919-01263"] = dict(
+    apps=[
+        A(2016, 2023, "Tacoma", "2GR-FKS 3.5L V6", "verified", [PLUG("TACOMA 2016- V6 (2GRFKS) FK20HBR8 -> 90919-01263")]),
+        A(2018, 2024, "Camry", "2GR-FKS 3.5L V6", "verified", [PLUG("CAMRY 2018- V6 (2GRFKS) -> 90919-01263")]),
+        A(2017, 2022, "Highlander", "2GR-FKS 3.5L V6", "verified", [PLUG("HIGHLANDER 2017- V6 (2GRFKS) -> 90919-01263")]),
+    ],
+    resolution="One dealer page marks 90919-01263 'no longer available'; Toyota's 2022 chart still lists it. Availability must be confirmed with the supplier; fitment is not in question.",
+)
+
+EVIDENCE["90919-01275"]["apps"] = [
+    A(2009, 2019, "Corolla", "2ZR-FE 1.8L", "verified",
+      [PLUG("COROLLA 2009-2019 L4 (2ZRF#) SC16HR11 -> 90919-01275")]),
+    A(2014, 2019, "Corolla", "2ZR-FAE 1.8L", "verified",
+      [PLUG("COROLLA 2009-2019 L4 (2ZRF#) SC16HR11 -> 90919-01275")], restriction="LE Eco"),
+]
+
+EVIDENCE["90919-A2009"]["apps"] = [
+    A(2019, 2024, "RAV4", "A25A-FKS 2.5L", "verified",
+      [E("dealer_catalog", "Lakeland Toyota (2019 RAV4 direct ignition coil)", f"{LK}/toyota_2019_RAV4/Direct-Ignition-Coil/14786875/90919A2009.html"),
+       E("dealer_catalog", "ToyotaPartsDeal (2020 RAV4)", f"{TD}/oem-2020-toyota-rav4-ignition_coil.html"),
+       E("dealer_catalog", "ToyotaPartsDeal (2024 RAV4)", f"{TD}/oem-2024-toyota-rav4-ignition_coil.html")],
+      restriction="gas (non-hybrid)"),
+    A(2019, 2024, "RAV4", "A25A-FXS 2.5L hybrid", "removed",
+      [E("dealer_catalog", "Lakeland Toyota (90919-A2010, hybrid)", "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-direct-ignition-coil-90919a2010")],
+      reason="Hybrid models use 90919-A2010."),
+]
+EVIDENCE["90919-A2009"]["blocking"] = []
+EVIDENCE["90919-A2009"]["resolution"] = "A2009 / A2010 is a powertrain split (gas / hybrid), not a production-date conflict."
+
+EVIDENCE["04465-33480"] = dict(
+    apps=[
+        A(2018, 2019, "Camry", "A25A-FKS 2.5L", "vin_dependent",
+          [E("toyota_official", "Toyota parts (pad kit)", f"{TA}/pad-kit-disc-brake-0446533480"),
+           E("dealer_catalog", "Frontier Toyota (2018-2019 Camry JPP Japan built; 2019-2020 RAV4 JPP)", "https://parts.frontiertoyota.com/oem-parts/toyota-oem-front-brake-pad-set-2018-2019-camry-jpp-japan-built-2019-2020-rav4-jpp-japan-built-446533480")],
+          restriction="Japan-built (JPP)", origin="Japan-built"),
+        A(2019, 2020, "RAV4", "", "vin_dependent",
+          [E("dealer_catalog", "Frontier Toyota (2019-2020 RAV4 JPP Japan built)", "https://parts.frontiertoyota.com/oem-parts/toyota-oem-front-brake-pad-set-2018-2019-camry-jpp-japan-built-2019-2020-rav4-jpp-japan-built-446533480")],
+          restriction="Japan-built (JPP)", origin="Japan-built"),
+        A(2020, 2024, "Camry", "A25A-FKS 2.5L", "removed", [],
+          reason="Japan-built application is 2018-2019 only; US-built Camrys use 04465-0E060."),
+    ],
+    resolution="0E060 / 33480 split is by assembly plant: Japan-built (JPP) -> 04465-33480; USA-built -> 04465-0E060.",
+)
+EVIDENCE["04465-0E060"]["blocking"] = []
+EVIDENCE["04465-0E060"]["apps"][1]["restriction"] = "North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies"
+EVIDENCE["04465-0E060"]["apps"][1]["assemblyOrigin"] = "North American-built"
+EVIDENCE["04465-0E060"]["resolution"] = "Split with 04465-33480 by assembly plant (Frontier Toyota JPP note, Scarborough 'USA Built; w/o TRD')."
+
+EVIDENCE["04465-04090"]["apps"] = [
+    A(2016, 2023, "Tacoma", "", "verified",
+      [E("dealer_catalog", "ToyotaPartsNow (2023 Tacoma: Limited, SR, SR5, Trail, TRD Off-Road, TRD Pro, TRD Sport; 2.7L and 3.5L)", f"{TN}/parts-select/2023-toyota-tacoma-brake-pad-set"),
+       E("toyota_official", "Toyota parts (front pad kit)", f"{TA}/pad-kit-disc-brake-0446504090")]),
+]
+EVIDENCE["04465-04090"]["resolution"] = "Catalog lists every 2016-2023 trim including SR (2WD and 4WD); the 2WD question is resolved."
+
+EVIDENCE["17801-0P100"]["resolution"] = "Snorkel-equipped trucks: no catalog names an alternative filter; the 'without snorkel' restriction stays on the listing."
+EVIDENCE["43512-06200"]["apps"].append(
+    A(2019, 2024, "RAV4", "A25A-FXS 2.5L hybrid", "unresolved",
+      [E("dealer_catalog", "dealer notes conflict (with / without hybrid)", f"{TD}/oem/toyota~disc~fr~43512-06200.html")],
+      reason="Dealer notes conflict on hybrid fitment; needs a VIN-level lookup."))
