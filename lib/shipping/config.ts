@@ -13,10 +13,11 @@
    the admin screen can state it and so nothing else in the app
    has to guess at it:
 
-     - Standard shipping CAN be free on an eligible order to
-       the USA or the UK.
-     - Australia and other international destinations are
-       charged.
+     - DrivoraParts ships only within the United States.
+       Checkout refuses every other destination; the other
+       zones below remain only to label orders recorded before
+       international shipping was withdrawn.
+     - Standard shipping CAN be free on an eligible US order.
      - Engines, transmissions, truck beds and anything else
        that moves as freight can carry a charge even to a
        normally-free destination.
@@ -69,7 +70,7 @@ export const ZONE_LABEL: Record<ShippingZone, string> = {
  * oversized consignment or an expedited request can all carry a charge to
  * these destinations too.
  */
-export const FREE_STANDARD_ELIGIBLE_ZONES: readonly ShippingZone[] = ["us", "uk"];
+export const FREE_STANDARD_ELIGIBLE_ZONES: readonly ShippingZone[] = ["us"];
 
 export function isFreeStandardEligibleZone(zone: ShippingZone): boolean {
   return FREE_STANDARD_ELIGIBLE_ZONES.includes(zone);

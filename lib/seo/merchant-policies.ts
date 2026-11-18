@@ -14,9 +14,6 @@ type JsonLd = Record<string, unknown>;
 /** Matches app/policies/shipping-policy — processing 1–5 business days, transit 5–15 business days. */
 const HANDLING_TIME = { minValue: 1, maxValue: 5, unitCode: "DAY" as const };
 const TRANSIT_TIME_US = { minValue: 5, maxValue: 15, unitCode: "DAY" as const };
-/** UK and Australia: the same 5–15 day transit as the US, after the same 1–5 day handling. */
-const TRANSIT_TIME_GB_AU = TRANSIT_TIME_US;
-const TRANSIT_TIME_INTERNATIONAL = { minValue: 7, maxValue: 21, unitCode: "DAY" as const };
 
 function deliveryTime(transitTime: typeof TRANSIT_TIME_US): JsonLd {
   return {
@@ -41,19 +38,12 @@ function shippingDetailsForCountry(
   return {
     "@type": "OfferShippingDetails",
     /*
-     * A rate is stated ONLY where one is published: the United States, the
-     * United Kingdom, Australia and the thirteen countries in
-     * FIXED_RATE_COUNTRY_CODES, for a standard parcel item, from that
-     * country's table in lib/shipping/rate-table.ts -- the item's own bracket,
-     * which is what Google's price-based table gives for a single unit and
-     * what checkout charges for it alone. Always in USD, the currency every
-     * charge on the site is made in.
-     *
-     * Everywhere else (every other destination) the rate is omitted
-     * rather than guessed. Freight and multi-box items use the fixed freight
-     * rate for the country, from the same tables. This block once declared a
-     * flat "0" USD for four countries on every product, which promised free shipping that the
-     * policy did not offer.
+     * DrivoraParts ships only within the United States, so this is the only
+     * destination declared. The rate is the item's own bracket in the US
+     * table in lib/shipping/rate-table.ts -- what Google's price-based table
+     * gives for a single unit and what checkout charges for it alone -- or
+     * the fixed US freight rate for freight and multi-box items. Omitted,
+     * not guessed, above the top of the table.
      *
      * shippingLabel matches the shipping_label in the Google Merchant feed
      * (lib/feeds/google-merchant.ts), so the label Google reads here and the
@@ -82,13 +72,6 @@ const SHIPPING_COUNTRIES: Array<{
   transitTime: typeof TRANSIT_TIME_US;
 }> = [
   { country: "US", transitTime: TRANSIT_TIME_US },
-  { country: "AU", transitTime: TRANSIT_TIME_GB_AU },
-  { country: "CA", transitTime: TRANSIT_TIME_INTERNATIONAL },
-  { country: "GB", transitTime: TRANSIT_TIME_GB_AU },
-  ...["DK", "FI", "FR", "GE", "DE", "GR", "LU", "MG", "NZ", "PL", "CH", "VN"].map((country) => ({
-    country,
-    transitTime: TRANSIT_TIME_INTERNATIONAL,
-  })),
 ];
 
 /** Nested inside Product → offers for Google Merchant listings. */
@@ -111,7 +94,8 @@ export function productOfferShippingDetails(
   return regions.length === 1 ? regions[0] : regions;
 }
 
-const RETURN_POLICY_COUNTRIES = ["US", "AU", "CA", "GB"] as const;
+/** US only: returns are accepted from the country orders are delivered to. */
+const RETURN_POLICY_COUNTRIES = ["US"] as const;
 
 /** Matches app/policies/refund-policy — 30-day window, return by mail, customer pays return shipping. */
 export function productOfferReturnPolicy(): JsonLd | JsonLd[] {

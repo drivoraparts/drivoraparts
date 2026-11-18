@@ -28,7 +28,7 @@ export default function TermsOfSalePage() {
         {
           heading: "Pricing",
           paragraphs: [
-            "All prices are displayed in the applicable currency at checkout and may change without notice. Prices do not include shipping charges, duties, or taxes unless expressly stated. In the event of a pricing or description error, we reserve the right to cancel any affected orders, even after they have been confirmed, and to issue a refund where payment has been taken.",
+            "All prices are in US dollars and may change without notice. Prices do not include shipping charges or taxes unless expressly stated. In the event of a pricing or description error, we reserve the right to cancel any affected orders, even after they have been confirmed, and to issue a refund where payment has been taken.",
           ],
         },
         {
@@ -45,9 +45,9 @@ export default function TermsOfSalePage() {
           ],
         },
         {
-          heading: "Taxes and Duties",
+          heading: "Taxes",
           paragraphs: [
-            "Applicable sales taxes may be calculated and added at checkout based on your location. For international orders, import duties, taxes, and customs fees may be charged upon delivery and are the responsibility of the recipient. These charges are separate from the order total and shipping cost.",
+            "Applicable US sales taxes may be calculated and added based on your delivery address. DrivoraParts ships only within the United States, so orders are not subject to import duties or customs fees.",
           ],
         },
         {

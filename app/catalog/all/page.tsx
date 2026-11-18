@@ -30,9 +30,9 @@ import {
 // boundary always resolves the same way it does on an uncached first visit.
 export const dynamic = "force-dynamic";
 
-const ALL_TITLE = "All Performance Parts";
+const ALL_TITLE = "All Toyota Parts";
 const ALL_DESCRIPTION =
-  "Browse every listing on DrivoraParts — engines, turbos, brakes, suspension, electronics, lighting, body kits, interior, aftermarket, and more.";
+  "Browse every Toyota parts listing on DrivoraParts: engines, transmissions, suspension, bumpers, lighting, accessories and more, shipped within the United States.";
 
 // A section view (?section=exhaust) with real stock is a page of its own and
 // canonicalises to itself; a category view points at its /catalog/<category>
@@ -53,7 +53,7 @@ export async function generateMetadata({
   return buildPageMetadata({
     title: view.heading ? `${view.heading} — ${ALL_TITLE}` : ALL_TITLE,
     description: view.heading
-      ? `Shop ${view.heading} parts on DrivoraParts, shipped internationally.`
+      ? `Shop ${view.heading} Toyota parts on DrivoraParts, shipped within the United States.`
       : ALL_DESCRIPTION,
     path: view.path,
     noIndex: !view.indexable,
@@ -176,8 +176,8 @@ export default async function AllProductsPage({
             { name: "All Products", path: routes.all },
           ]),
           collectionPageJsonLd(
-            "All Performance Parts",
-            "Complete marketplace feed of performance automotive parts and upgrades.",
+            "All Toyota Parts",
+            "Every Toyota parts and engines listing on DrivoraParts, shipped within the United States.",
             routes.all
           ),
         ]}

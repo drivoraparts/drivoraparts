@@ -7,9 +7,8 @@
    every cart, every destination and every freight class, and
    checkout rendered that as the word "Free". That was not a
    quote, it was a constant -- and it contradicted the actual
-   policy, under which Australia and other international
-   destinations are charged and a crated engine can carry a
-   charge even to a free-eligible one.
+   policy, under which a crated engine can carry a charge even
+   on an order that would otherwise ship free.
 
    An order's shipping charge is worked out by a person and
    entered when they send the customer their payment details.

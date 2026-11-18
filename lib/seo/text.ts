@@ -30,12 +30,12 @@ export function truncateSeoTitle(text: string, max: number): string {
 /**
  * Store boilerplate that says nothing about the part: the "Shipping" and
  * "Warranty" section labels, and the old "Worldwide shipping available --
- * freight quotes provided" line, which contradicts the published fixed
- * shipping rates. On many imported listings it is the ONLY text, so without
+ * freight quotes provided" line (now "Ships within the United States only"),
+ * which the shipping row and policy already state. On many imported listings it is the ONLY text, so without
  * this it became the whole product description in the feeds.
  */
 const NON_DESCRIPTIVE_LINE =
-  /^(warranty|shipping)$|worldwide shipping available|freight quotes? provided|contact for a freight quote/i;
+  /^(warranty|shipping)$|worldwide shipping available|ships within the united states only|freight quotes? provided|contact for a freight quote/i;
 
 export function isStaleShippingText(text: string): boolean {
   return NON_DESCRIPTIVE_LINE.test(text.trim());

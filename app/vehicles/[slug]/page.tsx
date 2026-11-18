@@ -290,8 +290,10 @@ export default async function Page({ params }: PageProps) {
           <div className="rounded-xl border border-neutral-200 p-4">
             <h3 className="mb-2 text-sm font-semibold text-neutral-900">Shipping</h3>
             <p className="text-sm leading-relaxed text-neutral-600">
-              We ship to most domestic and many international destinations.
-              Bar work, canopies and suspension ship as freight. Standard shipping within the US and to the other countries listed in our Shipping Policy is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order, and other destinations are confirmed with you before payment.
+              We ship only within the United States. Bar work, canopies and
+              suspension ship as freight. Standard US shipping is charged from
+              our published rates and shown at checkout; freight and multi-box
+              items are charged one fixed freight rate per order.
             </p>
             <Link
               href={SHIPPING_POLICY_HREF}

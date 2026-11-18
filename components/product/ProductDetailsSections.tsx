@@ -389,7 +389,7 @@ export default function ProductDetailsSections({
           <SubHeading>Shipping</SubHeading>
           <TermList
             items={[
-              "Standard shipping within the US and to the other countries listed in our Shipping Policy is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order, and other destinations are confirmed with you before payment.",
+              "We ship only within the United States. Standard US shipping is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order.",
               ...(shipment ? [`${shipment}.`] : []),
               ...(location
                 ? [
@@ -400,9 +400,8 @@ export default function ProductDetailsSections({
                 : []),
               `Orders are typically processed within ${ORDER_PROCESSING} once payment is received and verified.`,
               "Tracking is sent after dispatch where the carrier provides it.",
-              "International orders: import duties, taxes and customs fees are paid by the recipient.",
               <>
-                Delivery estimates and regional restrictions are in the{" "}
+                Delivery estimates are in the{" "}
                 <Link href={SHIPPING_POLICY_HREF} prefetch={false} className={linkClass}>
                   shipping policy
                 </Link>

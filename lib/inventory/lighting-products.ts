@@ -46,7 +46,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 136,
@@ -94,7 +94,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 137,
@@ -146,7 +146,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 138,
@@ -190,7 +190,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 139,
@@ -234,7 +234,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 140,
@@ -278,7 +278,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 141,
@@ -325,7 +325,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 142,
@@ -369,7 +369,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 143,
@@ -415,7 +415,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 144,
@@ -458,7 +458,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 145,
@@ -503,7 +503,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 146,
@@ -547,7 +547,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 147,
@@ -593,7 +593,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 148,
@@ -636,7 +636,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
   {
     id: 149,
@@ -680,6 +680,6 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`,
+Ships within the United States only`,
   },
 ];

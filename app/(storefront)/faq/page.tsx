@@ -75,9 +75,11 @@ const FAQS: FaqItem[] = [
     question: "How long does shipping take, and do you ship internationally?",
     answer: (
       <>
-        Yes. We ship to most domestic and many international destinations;
-        some large or regulated items can only ship to certain regions.
-        Standard shipping within the US and to the other countries listed in our Shipping Policy is charged from our published rates and shown at checkout; freight and multi-box items are charged one fixed freight rate per order, and other destinations are confirmed with you before payment. Orders are
+        No. DrivoraParts ships only within the United States (the 50 states
+        and Washington, DC); international shipping is not available.
+        Standard US shipping is charged from our published rates and shown
+        at checkout; freight and multi-box items are charged one fixed
+        freight rate per order. Orders are
         typically processed within {ORDER_PROCESSING} once payment is
         verified, and delivery typically takes 5–15 business days after that
         — estimates, not guarantees. Smaller parts ship via standard carriers;

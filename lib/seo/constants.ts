@@ -2,11 +2,11 @@ import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 
 export const SITE_NAME = "DrivoraParts";
 export const SITE_TAGLINE =
-  "Toyota parts for the Tacoma, Tundra, 4Runner, Land Cruiser and more, matched to the models they fit";
+  "Your Toyota parts destination: Toyota parts and engines for the Tacoma, Tundra, 4Runner, Land Cruiser and more, shipped within the United States";
 
 // The count is the synced catalog size (lib/home/listing-count.ts), not a
 // typed-in figure: this read "1,400+" long after the catalog passed 4,000.
-export const DEFAULT_DESCRIPTION = `Shop ${HOME_LISTING_COUNT.toLocaleString("en-US")} Toyota parts for the Tacoma, Tundra, 4Runner, Land Cruiser and more: suspension, bumpers, lighting, engines, transmissions and accessories, each matched to the models it fits.`;
+export const DEFAULT_DESCRIPTION = `Shop ${HOME_LISTING_COUNT.toLocaleString("en-US")} Toyota parts for the Tacoma, Tundra, 4Runner, Land Cruiser and more: engines, transmissions, suspension, bumpers, lighting and accessories, matched to the models they fit and shipped within the United States.`;
 
 /** Bump when favicon / default link-preview art changes (cache bust for crawlers). */
 export const ICON_VERSION = "7";

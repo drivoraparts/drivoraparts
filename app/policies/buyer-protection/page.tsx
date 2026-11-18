@@ -97,7 +97,7 @@ export default function BuyerProtectionPage() {
             "Changes of mind, which are handled under the return window and condition requirements in the Returns & Refund Policy.",
             "Items ordered in error by the customer, including a part that does not fit the vehicle because the wrong application was selected.",
             "Damage caused after delivery by installation, misuse, modification or neglect.",
-            "Delays caused by carriers, customs or other circumstances outside our control, which are covered by the Shipping Policy.",
+            "Delays caused by carriers or other circumstances outside our control, which are covered by the Shipping Policy.",
             "Items that our policies identify as non-returnable, such as special-order or made-to-order items, except where the problem is our error.",
             "Product warranties. Any warranty is stated on the product listing and in the Warranty Policy.",
           ],

@@ -15,7 +15,7 @@ export const routes = {
   aftermarket: "/catalog/aftermarket",
   category: (slug: string) => `/catalog/${slug}`,
   brand: (category: string, brand: string) => `/catalog/${category}/${brand}`,
-  /** A market view (usa, australia, uk, worldwide): a filter over routes.all. */
+  /** A market view (usa): a filter over routes.all. */
   market: (key: string) => `/catalog/${key}`,
   product: (id: number) => `/product/${id}`,
   wishlist: "/wishlist",

@@ -23,7 +23,7 @@ import {
 } from "@/lib/seo";
 
 /**
- * One market view: /catalog/usa, /australia, /uk and /worldwide all render
+ * The market view: /catalog/usa renders
  * this, each with its own key.
  *
  * It is /catalog/all with a market applied -- the same feed, the same query,
@@ -47,7 +47,7 @@ const param = (value: string | string[] | undefined) =>
  * so it points there rather than competing with it.
  */
 function canonicalPath(key: MarketKey): string {
-  return key === "worldwide" ? routes.all : routes.market(key);
+  return routes.market(key);
 }
 
 /**
@@ -77,7 +77,7 @@ export async function marketViewMetadata(
 
   const title = view.heading ? `${view.heading} — ${market.name}` : market.seoTitle;
   const description = view.heading
-    ? `Shop ${view.heading} parts on DrivoraParts for the ${market.name} market, shipped internationally.`
+    ? `Shop ${view.heading} Toyota parts on DrivoraParts for the ${market.name} market, shipped within the United States.`
     : market.seoDescription;
   return buildPageMetadata({
     title,

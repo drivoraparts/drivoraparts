@@ -31,7 +31,7 @@ ${details}${fitmentLine}
 Condition notes: Inspected and photographed as the actual unit available.
 
 Shipping
-Worldwide shipping available — contact for a freight quote when needed.`;
+Ships within the United States only — contact for a freight quote when needed.`;
 }
 
 function canopyDescription(
@@ -363,7 +363,7 @@ export const aftermarketProducts: Product[] = [
   },
   {
     id: 2098,
-    name: "Jaguar XF X260 Bonnet (Corris Grey)",
+    name: "Jaguar XF X260 Hood (Corris Grey)",
     category: "aftermarket",
     brand: "jaguar",
     price: 289,
@@ -378,8 +378,8 @@ export const aftermarketProducts: Product[] = [
     createdAt: 1785307447000, // listed 2026-07-29
     ...media("jaguar-xf-x260-bonnet-grey", ["1.jpg"]),
     description: aftermarketDescription(
-      "Jaguar XF X260 Bonnet (Corris Grey)",
-      "Genuine OEM take-off bonnet (hood) for the Jaguar XF X260, finished in Corris Grey — factory colour match. Direct fit for XF X260 saloons including the 2.0L R-Sport Diesel, 2016 registration. Straightforward swap for a damaged or mismatched bonnet.",
+      "Jaguar XF X260 Hood (Corris Grey)",
+      "Genuine OEM take-off hood (hood) for the Jaguar XF X260, finished in Corris Grey — factory colour match. Direct fit for XF X260 saloons including the 2.0L R-Sport Diesel, 2016 registration. Straightforward swap for a damaged or mismatched bonnet.",
       "2015–2020 Jaguar XF X260 (2.0L R-Sport Diesel, 2016 Reg, and other X260 variants — verify trim before ordering)"
     ),
   },

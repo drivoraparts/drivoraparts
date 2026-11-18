@@ -22,6 +22,14 @@ const nextConfig: NextConfig = {
       // 1513 and 1517 were the same 2011-2016 Superduty 8ft bed, published
       // twice by the source site under two slugs. 1513 was withdrawn and
       // merged into 1517, so its URL is kept alive rather than left to 404.
+      // DrivoraParts ships only within the United States. The Australia, UK
+      // and Worldwide catalog views were retired with international
+      // shipping; their URLs land on the full catalog rather than 404.
+      { source: "/catalog/australia", destination: "/catalog/all", permanent: true },
+      { source: "/catalog/uk", destination: "/catalog/all", permanent: true },
+      { source: "/catalog/worldwide", destination: "/catalog/all", permanent: true },
+      // An article about cross-border buying, withdrawn with international shipping.
+      { source: "/news/cross-border-automotive-parts-sourcing", destination: "/news", permanent: true },
       {
         source: "/product/1513",
         destination: "/product/1517",

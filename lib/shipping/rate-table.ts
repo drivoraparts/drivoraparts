@@ -6,6 +6,8 @@
    the catalog; read its header for how a charge is decided.
 ========================================================= */
 
+import { isUnitedStates, OUTSIDE_US_MESSAGE } from "./us-address";
+
 /* ---------------------------------------------------------
    Labels
    These strings are sent to Google as `shipping_label` and
@@ -151,90 +153,20 @@ export const US_PARCEL_RATE_TABLE: readonly RateBracket[] = [
   bracket(70000, 74999.99, 900),
 ];
 
-/* ---------------------------------------------------------
-   United Kingdom and Australia
-   Parcel carts only, charged in USD like every other charge
-   on the site. The fee and the Australian threshold were set
-   in GBP / AUD and converted ONCE to fixed USD amounts, so the
-   charge never moves with the exchange rate and always agrees
-   with Google Merchant Center. The local amounts below are the
-   approximate figures shown to customers -- they are display
-   text, never used to calculate a charge.
-
-   Conversion: ECB euro foreign exchange reference rates for
-   2026-10-08 (1 EUR = 1.1186 USD = 0.84698 GBP = 1.6110 AUD),
-   i.e. 1 GBP = 1.32069 USD and 1 AUD = 0.69435 USD.
-     UK fee         GBP 25  = USD 33.02 -> USD 33.00 (~GBP 24.99)
-     UK threshold   set in USD by the business: USD 200 (~GBP 151)
-     AU fee         AUD 40  = USD 27.77 -> USD 28.00 (~AUD 40.33)
-     AU threshold   AUD 80  = USD 55.548 -> USD 55.56 (~AUD 80.02),
-                    set by the business: free from USD 55.56.
---------------------------------------------------------- */
-
-/** The tops of the international tables match the US table's top bracket. */
+/** The top of the published tables. Orders above it are quoted by hand. */
 const TABLE_TOP = 74999.99;
-
-/** UK parcel carts: USD 33 below USD 200, free from USD 200. */
-export const UK_PARCEL_RATE_TABLE: readonly RateBracket[] = [
-  bracket(0, 199.99, 33),
-  bracket(200, TABLE_TOP, 0),
-];
-
-/** Australian parcel carts: USD 28 below USD 55.56, free from USD 55.56. */
-export const AU_PARCEL_RATE_TABLE: readonly RateBracket[] = [
-  bracket(0, 55.55, 28),
-  bracket(55.56, TABLE_TOP, 0),
-];
-
-/* ---------------------------------------------------------
-   Thirteen more destinations
-   Parcel carts: USD 45 per order, free from USD 250. Charged in
-   USD only; there is no local-currency display text for these.
-   Their multibox and freight rate is the flat USD 450 below.
---------------------------------------------------------- */
-
-/** Parcel carts to the thirteen countries below: USD 45 under USD 250, free from USD 250. */
-export const INTL_PARCEL_RATE_TABLE: readonly RateBracket[] = [
-  bracket(0, 249.99, 45),
-  bracket(250, TABLE_TOP, 0),
-];
-
-/** ISO 3166 alpha-2 codes of the thirteen countries sharing INTL_PARCEL_RATE_TABLE. */
-export const FIXED_RATE_COUNTRY_CODES = [
-  "CA", "DK", "FI", "FR", "GE", "DE", "GR", "LU", "MG", "NZ", "PL", "CH", "VN",
-] as const;
-
-export type FixedRateCountryCode = (typeof FIXED_RATE_COUNTRY_CODES)[number];
-
-/** Customer-facing names, in the order the Shipping Policy lists them. */
-export const FIXED_RATE_COUNTRY_NAMES: Record<FixedRateCountryCode, string> = {
-  CA: "Canada",
-  DK: "Denmark",
-  FI: "Finland",
-  FR: "France",
-  GE: "Georgia",
-  DE: "Germany",
-  GR: "Greece",
-  LU: "Luxembourg",
-  MG: "Madagascar",
-  NZ: "New Zealand",
-  PL: "Poland",
-  CH: "Switzerland",
-  VN: "Vietnam",
-};
 
 /* ---------------------------------------------------------
    Destinations with published rates
+   DrivoraParts ships only within the United States. The UK,
+   Australian and international tables that used to live here
+   were removed when international shipping was withdrawn; see
+   lib/shipping/us-address.ts for the address rule.
 --------------------------------------------------------- */
 
-export type ShippingDestination = "US" | "GB" | "AU" | FixedRateCountryCode;
+export type ShippingDestination = "US";
 
-export const SHIPPING_DESTINATIONS: readonly ShippingDestination[] = [
-  "US",
-  "GB",
-  "AU",
-  ...FIXED_RATE_COUNTRY_CODES,
-];
+export const SHIPPING_DESTINATIONS: readonly ShippingDestination[] = ["US"];
 
 export type DestinationInfo = {
   /** Name used in customer-facing copy. */
@@ -242,82 +174,22 @@ export type DestinationInfo = {
   /** One-line copy for the service ("standard US shipping"). */
   service: string;
   parcelTable: readonly RateBracket[];
-  /**
-   * Approximate local-currency figures for display ONLY, from the documented
-   * conversion above. Absent for the US.
-   */
-  local?: {
-    currency: "GBP" | "AUD";
-    symbol: string;
-    /** USD cents -> approximate local amount, for the fixed figures we publish. */
-    approx: Record<number, number>;
-  };
 };
-
-const FIXED_RATE_DESTINATIONS = Object.fromEntries(
-  FIXED_RATE_COUNTRY_CODES.map((code) => [
-    code,
-    {
-      name: FIXED_RATE_COUNTRY_NAMES[code],
-      service: `standard shipping to ${FIXED_RATE_COUNTRY_NAMES[code]}`,
-      parcelTable: INTL_PARCEL_RATE_TABLE,
-    },
-  ])
-) as Record<FixedRateCountryCode, DestinationInfo>;
 
 export const DESTINATIONS: Record<ShippingDestination, DestinationInfo> = {
-  ...FIXED_RATE_DESTINATIONS,
   US: { name: "the United States", service: "standard US shipping", parcelTable: US_PARCEL_RATE_TABLE },
-  GB: {
-    name: "the United Kingdom",
-    service: "standard UK shipping",
-    parcelTable: UK_PARCEL_RATE_TABLE,
-    local: { currency: "GBP", symbol: "£", approx: { 3300: 25, 20000: 151, 39500: 299 } },
-  },
-  AU: {
-    name: "Australia",
-    service: "standard shipping to Australia",
-    parcelTable: AU_PARCEL_RATE_TABLE,
-    local: { currency: "AUD", symbol: "A$", approx: { 2800: 40, 5556: 80, 27900: 399 } },
-  },
 };
 
-/** "about £25" for a published USD amount, or "" when there is no local figure. */
-export function approxLocal(destination: ShippingDestination, usd: number): string {
-  const local = DESTINATIONS[destination].local;
-  if (!local) return "";
-  const amount = local.approx[Math.round(usd * 100)];
-  return amount === undefined ? "" : `about ${local.symbol}${amount}`;
-}
-
 /**
- * Published rates for multibox and freight carts, per destination.
- *
- * One fixed charge per order, whatever the subtotal: a cart containing at least
- * one multibox or freight item pays this INSTEAD of the parcel charge (the
- * heavier label wins, see cartShippingLabel), and the same figure applies to
- * both labels. Charged in USD like every other charge on the site; the UK and
- * Australian local amounts below are approximate display text only.
- *
- *   United States    $199.00
- *   United Kingdom   $395.00  (about GBP 299)
- *   Australia        $279.00  (about AUD 399)
- *   Canada, Denmark, Finland, France, Georgia, Germany, Greece, Luxembourg,
- *   Madagascar, New Zealand, Poland, Switzerland, Vietnam: $450.00 each
- *
- * The tables run from $0 to the same top as the parcel tables, so an order
- * above that value, and any destination without a published rate, is still
- * quoted by hand before payment. Merchant Center needs a matching
- * delivery policy for each label and country at these same amounts.
+ * Published US rate for multibox and freight carts: one fixed charge per
+ * order, whatever the subtotal. A cart containing at least one multibox or
+ * freight item pays this INSTEAD of the parcel charge (the heavier label wins,
+ * see cartShippingLabel). Orders above the top of the table are quoted by hand
+ * before payment. Merchant Center needs a matching US delivery policy for each
+ * label at this amount.
  */
 export const FREIGHT_FLAT_RATE_USD: Record<ShippingDestination, number> = {
   US: 199,
-  GB: 395,
-  AU: 279,
-  ...(Object.fromEntries(FIXED_RATE_COUNTRY_CODES.map((code) => [code, 450])) as Record<
-    FixedRateCountryCode,
-    number
-  >),
 };
 
 function flatTable(feeUsd: number): readonly RateBracket[] {
@@ -373,8 +245,8 @@ export type ShippingQuoteItem = { productId: number; quantity: number; price: nu
 export type PendingReason =
   | "empty_cart"
   | "destination_unknown"
-  /** No published rate for this destination (anywhere but the US, UK, Australia). */
-  | "no_destination_rate"
+  /** Outside the United States: not shipped to at all. */
+  | "outside_service_area"
   | "freight_rate_not_set"
   | "above_rate_table";
 
@@ -395,88 +267,23 @@ export type ShippingQuote =
       subtotal: number;
     };
 
-/**
- * Free-text country as typed at checkout, reduced to letters and single spaces
- * so "U.S.A", "U.S.", "u s a", "United States (USA)" and "the United States"
- * all compare equal. Dots and apostrophes vanish ("U.S." becomes "us"); any
- * other punctuation becomes a space.
- */
-export function normalizeCountryInput(country?: string | null): string {
-  return String(country ?? "")
-    .toLowerCase()
-    .replace(/[.'\u2019]/g, "")
-    .replace(/[^a-z]+/g, " ")
-    .trim()
-    .replace(/^the /, "");
-}
-
-const COUNTRY_NAMES: Record<ShippingDestination, ReadonlySet<string>> = {
-  US: new Set([
-    "us",
-    "usa",
-    "u s",
-    "u s a",
-    "united states",
-    "united states usa",
-    "united states of america",
-    "america",
-  ]),
-  // Great Britain and Northern Ireland. The Channel Islands and the Isle of
-  // Man are separate customs territories and are not covered by the UK rate.
-  GB: new Set([
-    "uk",
-    "u k",
-    "gb",
-    "gbr",
-    "united kingdom",
-    "united kingdom of great britain and northern ireland",
-    "great britain",
-    "britain",
-    "england",
-    "scotland",
-    "wales",
-    "northern ireland",
-  ]),
-  AU: new Set(["au", "aus", "australia", "commonwealth of australia"]),
-  CA: new Set(["ca", "can", "canada"]),
-  DK: new Set(["dk", "dnk", "denmark", "kingdom of denmark"]),
-  FI: new Set(["fi", "fin", "finland", "republic of finland"]),
-  FR: new Set(["fr", "fra", "france", "french republic"]),
-  // The country, not the US state: this is a country field.
-  GE: new Set(["ge", "geo", "georgia", "georgia country", "republic of georgia", "sakartvelo"]),
-  DE: new Set(["de", "deu", "ger", "germany", "deutschland", "federal republic of germany"]),
-  GR: new Set(["gr", "grc", "greece", "hellenic republic"]),
-  LU: new Set(["lu", "lux", "luxembourg", "luxemburg", "grand duchy of luxembourg"]),
-  MG: new Set(["mg", "mdg", "madagascar", "republic of madagascar"]),
-  NZ: new Set(["nz", "nzl", "new zealand", "aotearoa"]),
-  PL: new Set(["pl", "pol", "poland", "polska", "republic of poland"]),
-  CH: new Set(["ch", "che", "switzerland", "swiss confederation", "schweiz", "suisse"]),
-  VN: new Set(["vn", "vnm", "vietnam", "viet nam", "socialist republic of vietnam"]),
-};
+export { normalizeCountryInput, isUnitedStates } from "./us-address";
 
 /** The destination with published rates for a country as typed at checkout. */
 export function shippingDestinationFor(country?: string | null): ShippingDestination | undefined {
-  const key = normalizeCountryInput(country);
-  if (!key) return undefined;
-  return SHIPPING_DESTINATIONS.find((code) => COUNTRY_NAMES[code].has(key));
+  return isUnitedStates(country) ? "US" : undefined;
 }
 
 /**
- * A destination is needed before shipping can be priced. Checkout used to treat
- * the country as optional free text (with a grey "United States" placeholder
- * that looked like a filled-in value), so a customer who skipped it saw no
- * shipping fee and a total without shipping, and the server accepted the order
- * as "shipping to be quoted". The page and /api/checkout both use this, so a
- * missing country is refused in both places with the same words.
+ * The country part of the delivery rule, shared by the checkout page and
+ * /api/checkout so both refuse with the same words: no country, or any
+ * country but the United States.
  */
 export function checkoutCountryError(country?: string | null): string | null {
-  return String(country ?? "").trim()
-    ? null
-    : "Please enter your country so we can calculate shipping.";
-}
-
-export function isUnitedStates(country?: string | null): boolean {
-  return shippingDestinationFor(country) === "US";
+  if (!String(country ?? "").trim()) {
+    return "Please choose your country so we can calculate shipping.";
+  }
+  return isUnitedStates(country) ? null : OUTSIDE_US_MESSAGE;
 }
 
 export function cartShippingLabel(
@@ -516,7 +323,7 @@ export function quoteShippingWith(
   if (!items.length || subtotalCents <= 0) return pending("empty_cart");
   if (!String(country ?? "").trim()) return pending("destination_unknown");
   const destination = shippingDestinationFor(country);
-  if (!destination) return pending("no_destination_rate");
+  if (!destination) return pending("outside_service_area");
 
   const table = rateTableFor(label, destination);
   if (!table) return pending("freight_rate_not_set");
@@ -542,18 +349,17 @@ export function describeQuote(quote: ShippingQuote): string {
     // standard parcel rate, so the line must not call it "standard shipping".
     const service = quote.label === "parcel" ? info.service : `freight shipping to ${info.name}`;
     if (quote.amount === 0) return `Free ${service}`;
-    const local = approxLocal(quote.destination, quote.amount);
-    return `$${quote.amount.toFixed(2)} ${service}${local ? ` (${local})` : ""}`;
+    return `$${quote.amount.toFixed(2)} ${service}`;
   }
   switch (quote.reason) {
     case "freight_rate_not_set":
       return "Freight shipping — confirmed with you before payment";
-    case "no_destination_rate":
-      return "International shipping — confirmed with you before payment";
+    case "outside_service_area":
+      return "We ship only within the United States";
     case "above_rate_table":
       return "Shipping for this order value is confirmed with you before payment";
     case "destination_unknown":
-      return "Enter your country to see shipping";
+      return "Enter your US address to see shipping";
     default:
       return "";
   }

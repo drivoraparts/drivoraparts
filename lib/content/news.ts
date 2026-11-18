@@ -99,7 +99,7 @@ export const NEWS_ARTICLES: NewsArticle[] = [
       },
       {
         type: "p",
-        text: "The site offers market views for the United States, the United Kingdom and Australia, plus a worldwide view, so buyers outside the US can browse the same catalog.",
+        text: "DrivoraParts now specializes in Toyota parts and engines and ships only within the United States.",
       },
       { type: "h2", text: "Relevance over volume" },
       {
@@ -278,88 +278,6 @@ export const NEWS_ARTICLES: NewsArticle[] = [
         label: "US Census Bureau, Quarterly Retail E-Commerce Sales",
         url: "https://www.census.gov/retail/ecommerce.html",
         note: "E-commerce at 17.1 percent of total retail sales, Q2 2026, seasonally adjusted.",
-      },
-    ],
-  },
-  {
-    slug: "cross-border-automotive-parts-sourcing",
-    title: "DrivoraParts Builds a More Structured Approach to Cross-Border Automotive Parts Sourcing",
-    excerpt:
-      "Buying a heavy automotive part from another country involves more than the price. How identification, shipping quotes, payment and communication fit together, and why to confirm them before ordering.",
-    category: "Shipping & Sourcing",
-    datePublished: "2026-10-03",
-    cover: {
-      src: "/homepage/shipping/1600.webp",
-      alt: "A long road crossing a desert landscape with mountains in the distance",
-    },
-    body: [
-      {
-        type: "p",
-        text: "Buying a part from a seller in the same country is already a matter of getting the details right. Buying across a border adds more: different carriers, different charges and more people handling the order between the seller and the driveway.",
-      },
-      {
-        type: "p",
-        text: "DrivoraParts is set up to take orders from buyers in several markets. This article describes how it approaches an order that crosses borders, and what buyers should confirm before they commit.",
-      },
-      { type: "h2", text: "Domestic and international orders differ" },
-      {
-        type: "p",
-        text: "A domestic order usually involves one carrier network, one set of rules and one postal system. An international order can involve export and import handling, customs inspection, and a delivery leg run by a different carrier from the one that collected the parcel.",
-      },
-      {
-        type: "p",
-        text: "Policies that are routine at home can behave differently abroad. The DrivoraParts Shipping Policy notes, for example, that customs inspections and incomplete or inaccurate address details can delay delivery.",
-      },
-      { type: "h2", text: "Step one: identify the part" },
-      {
-        type: "p",
-        text: "Returning a heavy part internationally is slow and costly, so getting the part right the first time matters more across borders than within one. Check the VIN, OEM part number, engine code or transmission identification and the exact vehicle configuration against the listing.",
-      },
-      {
-        type: "p",
-        text: "Customers can contact DrivoraParts with a VIN or part number before ordering and ask for fitment assistance. It is help from the team, not automated verification, and fitment is not guaranteed.",
-      },
-      { type: "h2", text: "Step two: shipping is shown before you order" },
-      {
-        type: "p",
-        text: "DrivoraParts does not price shipping through a live carrier connection. Standard parcel orders to the US, UK, Australia and 13 other listed countries are charged from published rates, and orders with a freight or multi-box item pay one fixed freight charge for the destination. Both are shown at checkout before the order is placed. Other destinations are worked out for that order and sent to the customer with the payment details.",
-      },
-      {
-        type: "p",
-        text: "Engines, transmissions and other heavy or bulky items typically move as freight, which is priced differently from a parcel. Buyers should look at the shipping cost before paying, not after.",
-      },
-      { type: "h2", text: "Step three: payment" },
-      {
-        type: "p",
-        text: "Checkout at DrivoraParts offers manual payment methods, and cryptocurrency through NOWPayments as an additional option. For a manual payment, the order is reviewed first, the payment details are sent to the customer along with the shipping quote, and the order ships once the payment has been received and verified.",
-      },
-      {
-        type: "p",
-        text: "For international buyers that sequence is useful: the total, including shipping, is known before money moves.",
-      },
-      { type: "h2", text: "Step four: communication" },
-      {
-        type: "p",
-        text: "Most problems with cross-border orders are communication problems: an unclear address, a missing phone number for the carrier, a question about fitment that was never asked. Customers can reach the team through the contact page, and an order can be followed through the order-tracking page.",
-      },
-      { type: "h2", text: "What to confirm before ordering" },
-      {
-        type: "ul",
-        items: [
-          "That the part matches your vehicle by VIN, part number and configuration.",
-          "The shipping cost to your destination, and how the item will travel.",
-          "Any import duties, taxes or customs charges that may apply in your country. These are set locally and are not part of the shipping quote.",
-          "A complete delivery address and contact details.",
-          "The return and warranty terms that apply to the listing.",
-        ],
-      },
-      {
-        type: "p",
-        text: "None of this guarantees a particular outcome, and delivery can be affected by factors outside any seller's control. A structured process makes the surprises smaller and the decisions better informed.",
-      },
-      {
-        type: "note",
-        text: "This is company editorial content published by DrivoraParts. For the terms that apply to an order, see the Shipping Policy and the Returns & Refund Policy.",
       },
     ],
   },

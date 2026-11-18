@@ -112,7 +112,7 @@ function documentLayout(content: string, preheader = "", headerSubtitle = "Order
           <tr>
             <td style="padding:20px 32px 28px;border-top:1px solid #e8e5de;background:#faf9f6;">
               <p style="margin:0;font-size:11px;line-height:1.6;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
-                DrivoraParts · Performance automotive parts · Questions? Reply to this email or visit
+                DrivoraParts · Toyota parts &amp; engines · Ships within the United States · Questions? Reply to this email or visit
                 <a href="${siteUrl}/contact" style="color:#9d531c;text-decoration:none;">${siteUrl.replace(/^https?:\/\//, "")}/contact</a>
               </p>
             </td>
@@ -314,7 +314,7 @@ function buildInvoiceAgreementPage(input: OrderDocumentInput): string {
       <p style="margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#46423a;font-family:Arial,Helvetica,sans-serif;">Terms &amp; conditions</p>
       <p style="margin:0;font-size:12px;line-height:1.7;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
         By placing this order, the customer agrees to DrivoraParts Terms of Sale, Shipping Policy, and Refund Policy
-        published at drivoraparts.com/policies. All sales of performance parts are subject to fitment verification by
+        published at drivoraparts.com/policies. All sales of parts are subject to fitment verification by
         the customer. DrivoraParts will fulfill this order upon confirmed payment and available inventory.
       </p>
     </div>
@@ -345,9 +345,9 @@ function renderShippingPolicyFooter(): string {
     <div style="margin-top:40px;padding:20px;background:#faf9f6;border:1px solid #e8e5de;border-radius:4px;">
       <p style="margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#46423a;font-family:Arial,Helvetica,sans-serif;">Shipping policy</p>
       <p style="margin:0 0 12px;font-size:12px;line-height:1.7;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
-        Orders are processed within 1–5 business days after payment is confirmed. Estimated delivery is typically
-        5–15 business days depending on your region and carrier. Tracking information is sent when available.
-        International orders may be subject to customs duties and taxes, which are the responsibility of the recipient.
+        DrivoraParts ships only within the United States. Orders are processed within 1–5 business days after
+        payment is confirmed, and estimated delivery is 5–15 business days after processing, subject to product
+        availability and carrier conditions. Tracking information is sent when available.
       </p>
       <p style="margin:0;font-size:12px;line-height:1.6;color:#5c574b;font-family:Arial,Helvetica,sans-serif;">
         Questions about shipping? Reply to this email or review our

@@ -34,7 +34,7 @@ Warranty
 24-Month Limited Warranty
 
 Shipping
-Worldwide Shipping Available`;
+Ships within the United States only`;
 }
 
 export const bodyPartsProducts: Product[] = [

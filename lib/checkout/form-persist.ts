@@ -13,6 +13,7 @@ export type CheckoutFormDraft = {
   phone: string;
   address: string;
   city: string;
+  state: string;
   zip: string;
   country: string;
 };
@@ -31,6 +32,7 @@ export function readCheckoutFormDraft(): CheckoutFormDraft | null {
       phone: typeof parsed.phone === "string" ? parsed.phone : "",
       address: typeof parsed.address === "string" ? parsed.address : "",
       city: typeof parsed.city === "string" ? parsed.city : "",
+      state: typeof parsed.state === "string" ? parsed.state : "",
       zip: typeof parsed.zip === "string" ? parsed.zip : "",
       country: typeof parsed.country === "string" ? parsed.country : "",
     };

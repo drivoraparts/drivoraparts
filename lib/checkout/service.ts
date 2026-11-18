@@ -1,5 +1,6 @@
 import { insertAnalyticsEvent } from "@/lib/db/analytics";
 
+import { usShippingAddressError } from "@/lib/shipping/us-address";
 import { upsertCustomerByEmail } from "@/lib/db/customers";
 
 import { hasInventory } from "@/lib/db/inventory";
@@ -96,6 +97,13 @@ function validateCustomer(input: CheckoutCustomerInput): void {
 
   if (input.country && input.country.length > 120) {
     throw new Error("Invalid country");
+  }
+
+  // US-only delivery, checked again here so no caller of processCheckout can
+  // create an order to an international or incomplete address.
+  const addressError = usShippingAddressError(input);
+  if (addressError) {
+    throw new Error(addressError);
   }
 
   if (input.shippingAddress && input.shippingAddress.length > 500) {
