@@ -236,7 +236,19 @@ export default function AllProductsGridCard({
         </p>
 
         <div className="relative z-20 mt-2.5 [&_button]:py-2 [&_button]:text-[11px] sm:[&_button]:text-xs">
-          <AddToCartButton product={cartProduct} compact />
+          {/* Out of stock: Add to Cart only answered with an "Out of stock"
+              toast. The product page says what can be done instead. */}
+          {product.inStock === false ? (
+            <Link
+            href={productHref}
+            prefetch={false}
+            className="inline-flex w-full items-center justify-center rounded-lg border border-neutral-300 bg-white px-3 py-2.5 text-xs font-bold tracking-wide text-neutral-800 transition hover:border-neutral-900"
+          >
+            View details
+          </Link>
+          ) : (
+            <AddToCartButton product={cartProduct} compact />
+          )}
         </div>
       </div>
     </article>

@@ -67,9 +67,12 @@ export default function CatalogHero({
    */
   initialQuery?: string;
 }) {
-  const productCount = getAllProducts().length;
-  const quickCategories = categories.filter((c) =>
-    QUICK_CATEGORY_SLUGS.includes(c.slug)
+  const allProducts = getAllProducts();
+  const productCount = allProducts.length;
+  // A chip for a system with nothing listed leads to an empty page.
+  const listedSlugs = new Set(allProducts.map((p) => p.category));
+  const quickCategories = categories.filter(
+    (c) => QUICK_CATEGORY_SLUGS.includes(c.slug) && listedSlugs.has(c.slug)
   );
 
   return (
