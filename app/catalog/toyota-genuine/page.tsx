@@ -6,6 +6,7 @@ import JsonLdScript from "@/components/seo/JsonLdScript";
 import { getGenuineSectionProducts, isGenuineInquiryOnly } from "@/lib/catalog/toyota-departments";
 import Link from "next/link";
 import { getProductThumbnail } from "@/lib/inventory/media";
+import { genuineCardTitle } from "@/lib/catalog/genuine-card-title";
 import { routes, toCatalogCardData } from "@/lib/inventory";
 import { breadcrumbJsonLd, buildPageMetadata, collectionPageJsonLd, itemListJsonLd } from "@/lib/seo";
 
@@ -91,6 +92,7 @@ function InquiryCard({
   return (
     <Link
       href={href}
+      title={name}
       className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-white transition-colors hover:border-foreground"
     >
       <div className="flex aspect-square items-center justify-center bg-surface-muted p-4">
@@ -99,7 +101,9 @@ function InquiryCard({
       </div>
       <div className="flex flex-1 flex-col p-3">
         <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-success">Toyota Genuine Part</p>
-        <p className="mt-1 line-clamp-3 text-sm font-semibold text-foreground">{name}</p>
+        <p className="mt-1 line-clamp-5 text-sm font-semibold text-foreground">
+          {genuineCardTitle(name, partNumber)}
+        </p>
         {partNumber ? <p className="mt-1 text-xs text-muted">Part no. {partNumber}</p> : null}
         <p className="mt-auto pt-3 text-sm font-semibold text-foreground">Available to order</p>
         <p className="text-xs text-muted group-hover:text-accent-hover">Ask about price and availability →</p>
