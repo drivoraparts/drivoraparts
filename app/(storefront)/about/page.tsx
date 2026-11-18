@@ -158,8 +158,11 @@ export default function AboutPage() {
           </h2>
           <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
             <p>
-              DrivoraParts ships to all 50 states and Washington, DC. We do not ship
-              internationally. Delivery times and rates are set out in our{" "}
+              DrivoraParts ships to all 50 states and Washington, DC, from our
+              Los Angeles-area fulfillment location in Monterey Park, California, and
+              directly from our supplier network. Shipping to Alaska and Hawaii is
+              quoted and confirmed before payment. We do not ship internationally.
+              Delivery times and rates are set out in our{" "}
               <Link href="/policies/shipping-policy" className={linkClass}>
                 Shipping Policy
               </Link>

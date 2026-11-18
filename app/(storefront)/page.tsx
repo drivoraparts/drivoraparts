@@ -234,23 +234,30 @@ export default function Home() {
         tone="muted"
       />
 
-      {/* 7. Why DrivoraParts */}
+      {/* 7. Our commitment to quality -- each line is backed by the records:
+          the Monterey Park address is CALIFORNIA_FULFILLMENT, the genuine label
+          is lib/inventory/data/toyota-genuine.json, the rates are
+          lib/shipping/rate-table.ts and AK/HI are QUOTED_STATES. */}
       <section className="border-b border-[#E5E7EB] bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Why DrivoraParts" title="Buying parts should be simple" />
-          <div className="mt-8 grid gap-8 sm:grid-cols-3">
+          <SectionHeading eyebrow="Our Commitment to Quality" title="Why DrivoraParts" />
+          <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
+              {
+                title: "Genuine means verified",
+                body: "A part is labeled Toyota Genuine only after we check it against its Toyota part number. Aftermarket parts are labeled aftermarket, with the maker named.",
+              },
+              {
+                title: "Shipped from California",
+                body: "Orders ship from our Los Angeles-area fulfillment location in Monterey Park, CA, or directly from our supplier network, depending on the part.",
+              },
+              {
+                title: "Transparent US shipping",
+                body: "Published rates to the contiguous US and Washington, DC, shown at checkout before you order. Alaska and Hawaii are quoted and confirmed before you pay.",
+              },
               {
                 title: "The right fit",
                 body: "Each listing states the Toyota models, years and engines it fits. If yours is not listed or you are not sure, ask us before you order.",
-              },
-              {
-                title: "Honest descriptions",
-                body: "Condition, part numbers and specifications are shown as we have them. We do not guess fitment.",
-              },
-              {
-                title: "Transparent purchasing",
-                body: "Prices in US dollars. Shipping is calculated at checkout from your address, and our policies are published in full.",
               },
             ].map((item) => (
               <div key={item.title} className="border-t-2 border-[#17191C] pt-5">

@@ -27,6 +27,9 @@
      5. Destinations outside the United States are not shipped
         to at all: the quote is "outside_service_area" and
         checkout refuses the order (lib/shipping/us-address.ts).
+     6. Alaska and Hawaii are served but never charged from the
+        table: the quote is "quoted_state" and the charge is set
+        by hand and confirmed before payment.
 
    These are published policy values, not carrier quotes.
    Change the numbers here; nothing else needs to move.
@@ -62,7 +65,8 @@ export function classifyProductIdShipping(productId: number): ShippingClassifica
 /** The shipping charge for a cart from the catalog, or the reason there is none yet. */
 export function quoteShipping(
   items: ShippingQuoteItem[],
-  country: string | null | undefined
+  country: string | null | undefined,
+  state?: string | null
 ): ShippingQuote {
-  return quoteShippingWith(items, country, classifyProductIdShipping);
+  return quoteShippingWith(items, country, classifyProductIdShipping, state);
 }

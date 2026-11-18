@@ -40,6 +40,7 @@ export default function ShippingPolicyPage() {
             "DrivoraParts currently ships only to addresses within the United States — the 50 states and Washington, DC. International shipping is not available.",
             "We do not ship to Canada, the United Kingdom, Australia, Europe, Africa or any other destination outside the United States. We also do not currently ship to US territories (such as Puerto Rico, Guam or the US Virgin Islands) or to APO, FPO or DPO military addresses.",
             "Checkout accepts only a United States delivery address. An order with a delivery address outside the United States cannot be placed.",
+            "Alaska and Hawaii: we ship there, but the published rates below do not apply. Shipping to Alaska and Hawaii is quoted for your order and confirmed with you in writing before payment, and nothing is charged until you have accepted it.",
           ],
         },
         {
@@ -65,7 +66,7 @@ export default function ShippingPolicyPage() {
         {
           heading: "Shipping Costs",
           paragraphs: [
-            "We do not use live carrier-rate calculation. Shipping is charged from the published US rates below, and the charge is shown at checkout before you place your order. It is not changed after the order is placed. All charges are in US dollars.",
+            "We do not use live carrier-rate calculation. Shipping to the contiguous United States and Washington, DC is charged from the published rates below, and the charge is shown at checkout before you place your order. It is not changed after the order is placed. All charges are in US dollars.",
             `Standard parcel items: the charge depends on your order subtotal (the total of the item prices, before any discounts). Orders made up only of standard parcel items ship free when the subtotal is under ${FREE_BELOW}. The full table is:`,
           ],
           bullets: US_RATE_LINES,

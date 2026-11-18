@@ -100,7 +100,13 @@ results.cases = {
   newZealand: view(one(100, "New Zealand")),
   puertoRico: view(one(100, "Puerto Rico")),
   usTypo: view(one(40, "United State")),
+  // Alaska and Hawaii: served, but always quoted by hand.
+  akParcel: view(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "AK")),
+  hiFreight: view(quoteShippingWith([{ productId: 3, quantity: 1, price: 100 }], "USA", classify as any, "Hawaii")),
+  caState: view(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "CA")),
+  dcState: view(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "DC")),
 };
+results.akDescribe = describeQuote(quoteShippingWith([{ productId: 1, quantity: 1, price: 500 }], "United States", classify as any, "AK"));
 
 const addr = (country: any, state: any, zip: any) => usShippingAddressError({ country, state, zip });
 results.address = {
@@ -194,6 +200,7 @@ results.jsonld = {
   freight500: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingRate?.value ?? null,
   freightLabel: us(productOfferShippingDetails({ ...base, freightNotes: "Ships by freight (oversized)." }, 500))?.shippingLabel ?? null,
   transit: us(parcel500)?.deliveryTime?.transitTime ?? null,
+  regions: us(parcel500)?.shippingDestination?.addressRegion ?? null,
   handling: us(parcel500)?.deliveryTime?.handlingTime ?? null,
 };
 
@@ -222,6 +229,7 @@ const expectCases = {
   canada: OUT, canadaFreight: OUT, uk: OUT, ukShort: OUT, england: OUT, australia: OUT, germany: OUT,
   france: OUT, southAfrica: OUT, nigeria: OUT, japan: OUT, mexico: OUT, newZealand: OUT, puertoRico: OUT,
   usTypo: OUT,
+  akParcel: "quoted_state", hiFreight: "quoted_state", caState: 0, dcState: 0,
 };
 const expectDescribe = {
   us0: "Free standard US shipping",
@@ -297,6 +305,16 @@ if (out.jsonld.parcel500 !== "0.00") problems.push(`JSON-LD parcel $500 US rate:
 if (out.jsonld.parcel1500 !== "100.00") problems.push(`JSON-LD parcel $1,500 US rate: expected 100.00, got ${out.jsonld.parcel1500}`);
 if (out.jsonld.freight500 !== "199.00") problems.push(`JSON-LD US freight rate: expected 199.00, got ${out.jsonld.freight500}`);
 if (out.jsonld.freightLabel !== "freight") problems.push("JSON-LD freight item has the wrong shippingLabel");
+if (!/Alaska and Hawaii/.test(out.akDescribe ?? "")) problems.push(`AK quote text wrong: ${out.akDescribe}`);
+{
+  const r = out.jsonld.regions ?? [];
+  if (!Array.isArray(r) || r.length !== 49 || r.includes("AK") || r.includes("HI") || !r.includes("DC") || !r.includes("CA"))
+    problems.push(`JSON-LD US regions should be the 48 contiguous states + DC: ${JSON.stringify(r)}`);
+}
+{
+  const route = fs.readFileSync(path.join(ROOT, "app/api/checkout/route.ts"), "utf8");
+  if (!/customer\.country,\s*customer\.state/.test(route)) problems.push("/api/checkout no longer passes the state to the shipping quote (AK/HI would be priced from the table)");
+}
 if (out.jsonld.transit?.minValue !== 5 || out.jsonld.transit?.maxValue !== 15) problems.push(`US transit is not 5-15: ${JSON.stringify(out.jsonld.transit)}`);
 if (out.jsonld.handling?.minValue !== 1 || out.jsonld.handling?.maxValue !== 5) problems.push(`US handling is not 1-5: ${JSON.stringify(out.jsonld.handling)}`);
 

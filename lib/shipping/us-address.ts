@@ -20,6 +20,19 @@
 
 export const SHIPPING_COUNTRY_NAME = "United States";
 
+/**
+ * Served, but never charged from the published table: the flat rates were set
+ * for the contiguous US, and freight to Alaska or Hawaii can cost several
+ * times as much. Orders to these states are quoted by hand and the charge is
+ * confirmed with the customer before payment (quote status "pending").
+ */
+export const QUOTED_STATES: ReadonlySet<string> = new Set(["AK", "HI"]);
+
+export function isQuotedState(state?: string | null): boolean {
+  const code = normalizeUsState(state);
+  return code ? QUOTED_STATES.has(code) : false;
+}
+
 export const US_STATES: readonly { code: string; name: string }[] = [
   { code: "AL", name: "Alabama" },
   { code: "AK", name: "Alaska" },

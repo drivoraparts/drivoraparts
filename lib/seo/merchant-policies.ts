@@ -8,6 +8,13 @@ import {
   type ShippingLabel,
 } from "@/lib/shipping/rates";
 import { absoluteUrl } from "./urls";
+import { QUOTED_STATES, US_STATES } from "@/lib/shipping/us-address";
+
+/**
+ * The regions the published rate applies to: every state and DC except
+ * Alaska and Hawaii, which are quoted by hand before payment.
+ */
+const TABLE_RATE_REGIONS = US_STATES.map((s) => s.code).filter((code) => !QUOTED_STATES.has(code));
 
 type JsonLd = Record<string, unknown>;
 
@@ -62,6 +69,7 @@ function shippingDetailsForCountry(
     shippingDestination: {
       "@type": "DefinedRegion",
       addressCountry,
+      ...(addressCountry === "US" ? { addressRegion: TABLE_RATE_REGIONS } : {}),
     },
     deliveryTime: deliveryTime(transitTime),
   };

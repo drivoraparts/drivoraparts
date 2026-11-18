@@ -15,6 +15,7 @@ type TemplateProduct = {
   images?: string[];
   category: string;
   brand?: string;
+  stock?: boolean;
 };
 
 type TemplateBrand = {

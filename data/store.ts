@@ -49,6 +49,8 @@ export type Product = {
    * verified against the buyer's vehicle before dispatch.
    */
   swapPackage?: boolean;
+  /** false for held or out-of-stock listings. */
+  stock?: boolean;
 };
 
 export type Category = {
@@ -119,6 +121,9 @@ function toLegacyProduct(p: InventoryProduct): Product {
       // has to be carried across explicitly.
       swapPackage: p.swapPackage,
       buildPotential: p.buildPotential,
+      // Carried so the category card can tell a held / out-of-stock listing
+      // from a buyable one; without it every card showed Add to Cart.
+      stock: p.stock,
   };
 }
 

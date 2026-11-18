@@ -79,7 +79,8 @@ const FAQS: FaqItem[] = [
         and Washington, DC); international shipping is not available.
         Standard US shipping is charged from our published rates and shown
         at checkout; freight and multi-box items are charged one fixed
-        freight rate per order. Orders are
+        freight rate per order. Shipping to Alaska and Hawaii is quoted and
+        confirmed with you before payment. Orders are
         typically processed within {ORDER_PROCESSING} once payment is
         verified, and delivery typically takes 5–15 business days after that
         — estimates, not guarantees. Smaller parts ship via standard carriers;

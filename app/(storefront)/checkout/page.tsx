@@ -162,6 +162,7 @@ export default function CheckoutPage() {
           body: JSON.stringify({
             items: cart.map((item) => ({ productId: item.id, quantity: item.quantity })),
             country: country.trim(),
+            state: usState,
           }),
           signal: controller.signal,
         });
@@ -191,7 +192,7 @@ export default function CheckoutPage() {
       controller.abort();
       window.clearTimeout(timer);
     };
-  }, [cart, country]);
+  }, [cart, country, usState]);
 
   // Crypto needs the full amount up front; see the payment selector.
   const cryptoUnavailable = Boolean(shipQuote && !shipQuote.calculated);
@@ -754,6 +755,7 @@ export default function CheckoutPage() {
                     </p>
                     <p className="mt-1 text-xs text-neutral-500">
                       We ship only within the United States (50 states and Washington, DC).
+                      Alaska and Hawaii shipping is quoted before payment.
                     </p>
                     {shipQuote?.note ? (
                       <p className="mt-1 text-xs text-neutral-500" aria-live="polite">

@@ -22,9 +22,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  const raw = (body ?? {}) as { items?: unknown; country?: unknown };
+  const raw = (body ?? {}) as { items?: unknown; country?: unknown; state?: unknown };
   const rawItems = Array.isArray(raw.items) ? raw.items.slice(0, MAX_ITEMS) : [];
   const country = typeof raw.country === "string" ? raw.country.slice(0, 80) : "";
+  const state = typeof raw.state === "string" ? raw.state.slice(0, 40) : "";
 
   const items: ShippingQuoteItem[] = [];
   for (const entry of rawItems) {
@@ -37,7 +38,7 @@ export async function POST(request: Request) {
     items.push({ productId: id, quantity: qty, price: product.price });
   }
 
-  const quote = quoteShipping(items, country);
+  const quote = quoteShipping(items, country, state);
 
   return NextResponse.json(
     { quote, text: describeQuote(quote) },

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { GENUINE_BADGE_TEXT, isVerifiedGenuineId } from "@/lib/catalog/genuine-ids";
 import AddToCartButton, {
   type AddToCartProduct,
 } from "@/app/components/AddToCartButton";
@@ -100,7 +101,7 @@ export default function AllProductsGridCard({
 
   const productHref = routes.product(product.id);
   const onSale = isProductOnSale(product.price, product.compareAtPrice);
-  const outOfStock = product.inStock === false;
+  const outOfStock = product.inStock === false || product.stock === false;
 
   return (
     <article
@@ -123,6 +124,17 @@ export default function AllProductsGridCard({
           ) : null}
           {onSale ? <SaleBadge /> : null}
         </div>
+
+        {isVerifiedGenuineId(product.id) ? (
+          <div className="absolute bottom-1.5 left-1.5 z-20">
+            <span
+              className="rounded-[2px] bg-neutral-900 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.08em] text-white"
+              title="Verified against its Toyota part number"
+            >
+              {GENUINE_BADGE_TEXT}
+            </span>
+          </div>
+        ) : null}
 
         <div className="absolute right-1.5 top-1.5 z-20">
           <WishlistButton
@@ -238,7 +250,7 @@ export default function AllProductsGridCard({
         <div className="relative z-20 mt-2.5 [&_button]:py-2 [&_button]:text-[11px] sm:[&_button]:text-xs">
           {/* Out of stock: Add to Cart only answered with an "Out of stock"
               toast. The product page says what can be done instead. */}
-          {product.inStock === false ? (
+          {outOfStock ? (
             <Link
             href={productHref}
             prefetch={false}
