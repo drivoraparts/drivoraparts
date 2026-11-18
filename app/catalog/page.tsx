@@ -73,8 +73,8 @@ export default function Page() {
               className="rise-in mt-5 max-w-2xl text-sm leading-relaxed text-neutral-300 sm:text-base"
               style={delay(120)}
             >
-              4WDs and utes across Australia. Trucks and performance across
-              the USA. 4x4s and performance across the UK. Builds everywhere.
+              Toyota parts for the Tacoma, Tundra, 4Runner, Land Cruiser and
+              more. Choose your Toyota, or search every part.
             </p>
 
             <div className="rise-in mt-10 sm:mt-12" style={delay(180)}>

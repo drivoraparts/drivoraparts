@@ -1,4 +1,4 @@
-import { engineTree, getPlatformSlug } from "@/data/engine";
+import { engineTree, getPlatformSlug, publishedEnginePlatformSlugs } from "@/data/engine";
 import CatalogCard from "./CatalogCard";
 /* =========================================================
    ENGINE SYSTEM UI (SYSTEM B)
@@ -9,9 +9,18 @@ import CatalogCard from "./CatalogCard";
 ========================================================= */
 
 export default function EngineGroups() {
+  // Only platforms with public (Toyota) listings; a group left empty is dropped.
+  const published = new Set(publishedEnginePlatformSlugs());
+  const groups = engineTree
+    .map((group) => ({
+      ...group,
+      platforms: group.platforms.filter((platform) => published.has(getPlatformSlug(platform))),
+    }))
+    .filter((group) => group.platforms.length > 0);
+
   return (
     <div className="space-y-12">
-      {engineTree.map((group) => (
+      {groups.map((group) => (
         <section key={group.slug}>
           <h2 className="mb-5 inline-block border-b-2 border-accent pb-2 text-lg font-bold uppercase tracking-wide text-neutral-900">
             {group.title}

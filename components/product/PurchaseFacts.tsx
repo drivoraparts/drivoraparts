@@ -18,7 +18,6 @@ import {
   approxLocal,
   classifyShipping,
   findBracket,
-  freeFromThreshold,
   US_PARCEL_RATE_TABLE,
   FREIGHT_FLAT_RATE_USD,
   FIXED_RATE_COUNTRY_CODES,
@@ -100,23 +99,6 @@ function freightCharges(label: "multibox" | "freight", price: number) {
   return lines.every(Boolean) ? (lines as string[]) : undefined;
 }
 
-/**
- * "UK: free on parcel orders of $200 or more (about £151), otherwise $33.00
- * (about £25)." -- from the same table checkout charges from. The local
- * figures are the approximate amounts recorded with the fixed USD rates.
- */
-function internationalParcelTerms(destination: ShippingDestination, label: string): string {
-  const terms = freeFromThreshold(destination);
-  if (!terms) return "";
-  const freeLocal = approxLocal(destination, terms.freeFrom);
-  const feeLocal = approxLocal(destination, terms.fee);
-  return (
-    `${label}: free on parcel orders of $${terms.freeFrom.toLocaleString("en-US")} or more` +
-    `${freeLocal ? ` (${freeLocal})` : ""}, otherwise $${terms.fee.toFixed(2)}` +
-    `${feeLocal ? ` (${feeLocal})` : ""}.`
-  );
-}
-
 export default function PurchaseFacts({
   category,
   name,
@@ -157,10 +139,9 @@ export default function PurchaseFacts({
             <p className="mt-0.5 text-muted">
               Charged by order subtotal from our published US rates (free on parcel
               orders under ${US_FREE_PARCEL_BELOW.toLocaleString("en-US")}) and shown
-              at checkout before you order. {internationalParcelTerms("GB", "UK")}{" "}
-              {internationalParcelTerms("AU", "Australia")}{" "}
-              {internationalParcelTerms(FIXED_RATE_COUNTRY_CODES[0], FIXED_RATE_COUNTRY_LIST)} Elsewhere, shipping is
-              confirmed with you before payment.{" "}
+              at checkout before you order. Rates for the other countries we ship
+              to are in our shipping policy; elsewhere, shipping is confirmed with
+              you before payment.{" "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (
                 <>
@@ -183,8 +164,9 @@ export default function PurchaseFacts({
                 ? "This item ships as freight. "
                 : "This item ships in multiple boxes. "}
               One fixed charge per order, shown at checkout before you order and
-              charged instead of the standard parcel rate: {freightLines.join("; ")}.
-              Elsewhere, shipping is confirmed with you before payment.{" "}
+              charged instead of the standard parcel rate. Freight rates for the
+              other countries we ship to are in our shipping policy; elsewhere,
+              shipping is confirmed with you before payment.{" "}
               {shipment ? `${shipment}. ` : ""}
               {location ? (
                 <>

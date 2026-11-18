@@ -147,6 +147,27 @@ export type CatalogQueryResult = {
   tookMs: number;
 };
 
+/*
+ * Makes and models the storefront does not carry (it lists Toyota parts
+ * only). A search naming one returns nothing rather than a fuzzy match.
+ * Deliberately absent: "ram" (ram-air intakes), "subaru" and "bmw" (the GR86
+ * and GR Supra share platforms with the BRZ and Z4, and their listings say
+ * so), and "lexus" (Toyota's own marque).
+ */
+const MAKES_NOT_CARRIED = new Set([
+  "ford", "chevrolet", "chevy", "gmc", "dodge", "jeep", "chrysler", "nissan",
+  "honda", "acura", "mazda", "mitsubishi", "mercedes", "audi", "volkswagen",
+  "vw", "hyundai", "kia", "holden", "isuzu", "silverado", "mustang", "camaro",
+  "corvette", "wrangler", "ranger", "patrol", "navara", "duramax", "cummins",
+  "powerstroke",
+]);
+
+function namesMakeNotCarried(query: string): boolean {
+  return query
+    .split(/[^a-z0-9-]+/)
+    .some((token) => MAKES_NOT_CARRIED.has(token) || /^f-?(150|250|350)$/.test(token));
+}
+
 export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   // Measured in-process and returned for the client to report as an analytics
   // event. No storage, no lookups -- reading a clock cannot slow a search.
@@ -214,7 +235,11 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   // already ordered by relevance, plus the corrected query when a token was
   // a typo ("trubo" -> "turbo") so the UI can say what it searched for.
   let correctedQuery: string | null = null;
-  if (query) {
+  if (query && namesMakeNotCarried(query)) {
+    // A Toyota-only store has nothing for "ford bumper". Without this, typo
+    // correction rewrote "ford" to "for" and returned the whole catalog.
+    items = [];
+  } else if (query) {
     const result = searchProducts(items, query, {
       getBrandName: brandName,
       getCategoryName: categoryName,

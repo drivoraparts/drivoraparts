@@ -13,9 +13,9 @@ import {
 export const dynamic = "force-static";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Performance Engines by Platform",
+  title: "Toyota Engines by Platform",
   description:
-    "Shop BMW, Toyota, Nissan, Honda, GM Gen V, Ford Coyote, LS/LT swap packages, and more — crate motors, drivetrains, and swap-ready powerplants.",
+    "Shop Toyota engines by platform: 2JZ-GTE, 1JZ-GTE and 1UZ-FE V8, plus engine parts and intakes for the Tacoma, Tundra, 4Runner and Land Cruiser.",
   path: "/catalog/engine",
 });
 
@@ -29,8 +29,8 @@ export default function Page() {
             { name: "Engine", path: "/catalog/engine" },
           ]),
           collectionPageJsonLd(
-            "Performance Engines by Platform",
-            "Browse engine platforms and shop crate motors, long blocks, and swap-ready powerplants.",
+            "Toyota Engines by Platform",
+            "Browse Toyota engine platforms and shop engines and engine parts.",
             "/catalog/engine"
           ),
         ]}
@@ -38,9 +38,8 @@ export default function Page() {
       <main className="min-h-screen bg-white p-6 text-neutral-900">
         <PageHeading title="Engine" subtitle="Select an engine platform" />
         <p className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-400">
-          Browse legendary engine platforms including BMW N54, Toyota 2JZ, Nissan
-          RB, Honda K-Series, GM LS/LT, Gen V L86/L83 packages, Ford Coyote, and
-          more.
+          Toyota engine platforms, including the 2JZ-GTE, 1JZ-GTE and 1UZ-FE V8,
+          followed by every engine part we list for Toyota models.
         </p>
         <EngineGroups />
         <CategoryProductGrid categorySlug="engine" />
