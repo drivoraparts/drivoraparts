@@ -19,10 +19,10 @@ import { toyotaBadgeText, toyotaLogoSrc } from "@/lib/brand/toyota-dealer";
  * Static, not part of the fixed header: it scrolls away, so the header height
  * and every sticky offset (--header-h) are unchanged.
  */
-const ITEMS: { icon: TrustIconName; label: string; href: string }[] = [
+const ITEMS: { icon: TrustIconName; label: string; short?: string; href: string }[] = [
   { icon: "lock", label: "Secure checkout", href: "/policies/buyer-protection" },
   { icon: "returns", label: `${RETURN_WINDOW_DAYS}-day returns`, href: RETURN_POLICY_HREF },
-  { icon: "phone", label: "US phone & email support", href: CONTACT_HREF },
+  { icon: "phone", label: "US phone & email support", short: "US phone support", href: CONTACT_HREF },
   { icon: "badge", label: "Name-brand parts", href: "/catalog/all" },
 ];
 
@@ -36,7 +36,7 @@ export default function TrustBar() {
 
   return (
     <div className="border-b border-border bg-surface-muted">
-      <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-1 px-4 py-2 sm:justify-between sm:px-6 lg:px-8">
+      <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-x-3 gap-y-1 px-4 py-2 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
         {toyota ? (
           <li>
             <Link
@@ -58,10 +58,11 @@ export default function TrustBar() {
             <Link
               href={item.href}
               prefetch={false}
-              className="flex min-h-7 items-center gap-1.5 text-[12px] font-semibold text-foreground transition-colors hover:text-accent-hover sm:text-[13px]"
+              className="flex min-h-7 min-w-0 items-center gap-1.5 text-[12px] font-semibold text-foreground transition-colors hover:text-accent-hover sm:text-[13px]"
             >
               <TrustIcon name={item.icon} />
-              {item.label}
+              <span className="truncate sm:hidden">{item.short ?? item.label}</span>
+              <span className="hidden sm:inline">{item.label}</span>
             </Link>
           </li>
         ))}

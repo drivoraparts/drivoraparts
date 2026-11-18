@@ -28,10 +28,10 @@ export default function HeroVehicleFinder({ vehicles }: { vehicles: FinderVehicl
   const vehicle = vehicles.find((v) => v.key === vehicleKey);
 
   const select =
-    "h-12 w-full rounded-md border border-border bg-white px-3 text-[15px] text-foreground focus:border-foreground focus:outline-none disabled:bg-surface-muted disabled:text-muted";
+    "h-12 w-full min-w-0 max-w-full truncate rounded-md border border-border bg-white px-3 text-[15px] text-foreground focus:border-foreground focus:outline-none disabled:bg-surface-muted disabled:text-muted";
 
   return (
-    <div className="rounded-lg border border-border bg-white p-5 shadow-[0_1px_2px_rgba(23,25,28,0.06)] sm:p-6">
+    <div className="w-full min-w-0 rounded-lg border border-border bg-white p-4 shadow-[0_1px_2px_rgba(23,25,28,0.06)] sm:p-6">
       <p className="text-xs font-bold uppercase tracking-[0.16em] text-foreground">Find parts for your Toyota</p>
       <form
         className="mt-4 space-y-3"
@@ -69,7 +69,7 @@ export default function HeroVehicleFinder({ vehicles }: { vehicles: FinderVehicl
             disabled={!vehicle}
             onChange={(e) => setCategory(e.target.value)}
           >
-            <option value="">{vehicle ? "All part categories" : "Part category (choose a model first)"}</option>
+            <option value="">{vehicle ? "All part categories" : "Part category (pick a model)"}</option>
             {vehicle?.categories.map((c) => (
               <option key={c.slug} value={c.slug}>
                 {c.name} ({c.count})
