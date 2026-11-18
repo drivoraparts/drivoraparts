@@ -377,6 +377,7 @@ export const brands: Brand[] = [
   { slug: "volk-racing", name: "Volk Racing", category: "wheels-tires" },
   { slug: "method-race-wheels", name: "Method Race Wheels", category: "wheels-tires" },
   { slug: "fuel-off-road", name: "Fuel Off-Road", category: "wheels-tires" },
+  { slug: "titan7", name: "Titan7", category: "wheels-tires" },
   { slug: "universal", name: "Universal", category: "wheels-tires" },
 
   /* ---------------------------------------------------------
