@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { buildPolicyMetadata } from "@/lib/seo/policy-metadata";
 
 export const metadata = buildPolicyMetadata("/policies/refund-policy");
@@ -76,6 +77,17 @@ export default function RefundPolicyPage() {
           heading: "Return Shipping Responsibility",
           paragraphs: [
             "Unless the return is the result of our error or a confirmed defective product, the customer is responsible for the cost of return shipping. We recommend using a trackable and insured shipping method, as we cannot issue refunds for returns that are lost or damaged in transit before reaching us.",
+            <>
+              Fitment problems are covered by our{" "}
+              <Link
+                href="/policies/fitment-guarantee"
+                prefetch={false}
+                className="font-semibold text-accent underline-offset-2 hover:text-accent-hover hover:underline"
+              >
+                Fitment Guarantee
+              </Link>
+              , which overrides the shipping and restocking terms on this page.
+            </>,
           ],
         },
         {

@@ -34,6 +34,7 @@ const sections = [
       { name: "Shipping Policy", href: "/policies/shipping-policy" },
       { name: "Return & Refund Policy", href: "/policies/refund-policy" },
       { name: "DrivoraParts Buyer Protection", href: "/policies/buyer-protection" },
+      { name: "Fitment Guarantee", href: "/policies/fitment-guarantee" },
       { name: "Manual Payment", href: "/policies/manual-payment" },
       { name: "Warranty Policy", href: "/warranty" },
     ],

@@ -42,6 +42,8 @@ import {
 } from "@/lib/content/purchase-terms";
 import { COMPANY_PHONE_DISPLAY, COMPANY_PHONE_TEL_HREF } from "@/lib/content/company";
 import TrustIcon from "@/components/trust/TrustIcon";
+import FitmentGuaranteeBadge from "./FitmentGuaranteeBadge";
+import { FITMENT_GUARANTEE_HREF } from "@/lib/content/fitment-guarantee";
 import { formatPlatformLabel } from "./styles";
 
 const MAX_QUANTITY = 10;
@@ -350,6 +352,12 @@ export default function ProductTemplate({
 
   const hasReviews = catalogMeta.reviewCount > 0;
 
+  /* The Fitment Guarantee covers listings that name the vehicle they fit. */
+  const guaranteeApplies =
+    !fitment.universal &&
+    !fitment.swapPackage &&
+    (Boolean(fitment.text?.trim()) || fitment.applications.length > 0 || Boolean(fitment.years));
+
   return (
     <div className="storefront-page min-h-screen overflow-x-clip bg-[var(--background)] pb-24">
       <ProductBreadcrumbs
@@ -465,7 +473,18 @@ export default function ProductTemplate({
             <FitmentSummary fitment={fitment} />
           </div>
 
-          <div ref={ctaRef} className="mt-6 space-y-3">
+          {/*
+            Directly above Add to Cart, only where the listing states the
+            vehicle it fits. Universal parts and swap packages (whose fit
+            depends on fabrication) are outside the guarantee.
+          */}
+          {guaranteeApplies ? (
+            <div className="mt-6">
+              <FitmentGuaranteeBadge productId={product.id} />
+            </div>
+          ) : null}
+
+          <div ref={ctaRef} className={guaranteeApplies ? "mt-3 space-y-3" : "mt-6 space-y-3"}>
             <div className="flex items-stretch gap-3">
               <QuantityStepper value={quantity} onChange={setQuantity} />
               <div className="min-w-0 flex-1">
@@ -508,6 +527,14 @@ export default function ProductTemplate({
                 <TrustIcon name="lock" size={14} />
                 Secure checkout
               </li>
+              {guaranteeApplies ? (
+                <li>
+                  <a href={FITMENT_GUARANTEE_HREF} className="flex items-center gap-1.5 hover:text-accent-hover">
+                    <TrustIcon name="badge" size={14} />
+                    Fitment guaranteed
+                  </a>
+                </li>
+              ) : null}
               <li>
                 <a href={RETURN_POLICY_HREF} className="flex items-center gap-1.5 hover:text-accent-hover">
                   <TrustIcon name="returns" size={14} />

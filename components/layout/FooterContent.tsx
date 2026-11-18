@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { toyotaFooterStatement, toyotaTrademarkLine } from "@/lib/brand/toyota-dealer";
 import FooterSocialLinks from "@/components/layout/FooterSocialLinks";
 import CurrencyFooterNote from "@/components/currency/CurrencyFooterNote";
 import CallTextActions from "@/components/contact/CallTextActions";
@@ -60,6 +61,7 @@ const COLUMNS: { heading: UiKey; links: FooterLink[] }[] = [
       { href: "/track-order", label: "trackOrder" },
       { href: CONTACT_HREF, label: "contactSupport" },
       { href: "/faq", label: "faq" },
+      { href: "/policies/fitment-guarantee", label: "fitmentGuarantee" },
       { href: START_RETURN_HREF, label: "startReturn" },
       { href: SHIPPING_POLICY_HREF, label: "shippingPolicy" },
       { href: RETURN_POLICY_HREF, label: "returnsRefunds" },
@@ -212,7 +214,8 @@ export default function FooterContent() {
           <p>
             © {copyrightYears()} {COMPANY_DISPLAY_NAME}. {t("rightsReserved")}
           </p>
-          <p className="mt-1">{t("toyotaTrademarkNotice")}</p>
+          {toyotaFooterStatement() ? <p className="mt-1">{toyotaFooterStatement()}</p> : null}
+          <p className="mt-1">{toyotaTrademarkLine()}</p>
         </div>
         <nav aria-label="Legal">
           <ul className="flex flex-wrap gap-x-5">

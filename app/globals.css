@@ -751,3 +751,56 @@ body:has([data-sticky-purchase-bar], [data-compare-bar]) .site-shell > footer {
 .catalog-rail::-webkit-scrollbar {
   display: none;
 }
+
+/* =========================
+   FITMENT GUARANTEE BADGE
+   Green, flat, one bold left edge. No shadow, no gradient.
+   Contrast: #16834A on #F2F8F5 clears 3:1 for the icon and edge; body
+   text is #17191C; links use #116B3C to clear 4.5:1.
+========================= */
+.fg-badge {
+  --fg-green: #16834a;
+  --fg-tint: #f2f8f5;
+  --fg-line: #b9dcc8;
+  border: 1px solid var(--fg-line);
+  border-left: 3px solid var(--fg-green);
+  border-radius: 6px;
+  background: var(--fg-tint);
+  color: #17191c;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+.fg-badge > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+.fg-badge > summary::-webkit-details-marker { display: none; }
+.fg-badge .fg-icon {
+  width: 20px; height: 20px; flex: none;
+  stroke: var(--fg-green); stroke-width: 1.75; fill: none;
+}
+.fg-badge .fg-title { font-size: 14px; font-weight: 700; line-height: 1.2; }
+.fg-badge .fg-sub { font-size: 12px; line-height: 1.3; color: #4b5563; }
+.fg-badge .fg-chevron {
+  margin-left: auto; width: 16px; height: 16px; flex: none;
+  stroke: #69717c; transition: transform 150ms ease;
+}
+.fg-badge:hover { border-color: var(--fg-green); background: #eaf4ee; }
+.fg-badge > summary:focus-visible {
+  outline: 2px solid var(--fg-green); outline-offset: 2px; border-radius: 4px;
+}
+.fg-badge[open] { background: #ffffff; border-color: var(--fg-green); }
+.fg-badge[open] .fg-chevron { transform: rotate(180deg); }
+.fg-badge .fg-body { padding: 0 14px 14px 44px; font-size: 13px; line-height: 1.55; color: #17191c; }
+.fg-badge .fg-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 8px; }
+.fg-badge .fg-links a {
+  font-weight: 600; color: #116b3c;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fg-badge, .fg-badge .fg-chevron { transition: none; }
+}

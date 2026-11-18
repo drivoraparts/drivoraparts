@@ -20,6 +20,7 @@ export const POLICY_PATHS = [
   "/policies/shipping-policy",
   "/policies/refund-policy",
   "/policies/buyer-protection",
+  "/policies/fitment-guarantee",
   "/policies/manual-payment",
   "/warranty",
   "/policies/terms-of-service",

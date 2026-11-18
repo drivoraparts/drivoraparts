@@ -42,6 +42,7 @@ export const UI = {
   categoryBumpers: "Bumpers & Body",
   categoryLighting: "Lighting",
   categoryAccessories: "Accessories",
+  fitmentGuarantee: "Fitment Guarantee",
   toyotaTrademarkNotice:
     "Toyota, Toyota model names and Toyota Genuine Parts are trademarks of Toyota Motor Corporation.",
   categoryBrakes: "Brakes",
