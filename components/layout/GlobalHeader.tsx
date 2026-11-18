@@ -19,7 +19,7 @@ const HAS_VERIFIED_GENUINE = toyotaGenuine.verified.length > 0;
 export const NAV_LINKS: { href: string; label: string }[] = [
   { href: "/", label: "Home" },
   ...(HAS_VERIFIED_GENUINE
-    ? [{ href: "/catalog/all?q=Toyota%20Genuine", label: "Toyota Genuine Parts" }]
+    ? [{ href: "/catalog/toyota-genuine", label: "Toyota Genuine Parts" }]
     : []),
   { href: "/catalog/all", label: "Shop All Toyota Parts" },
   { href: "/catalog/usa", label: "Shop by Vehicle" },

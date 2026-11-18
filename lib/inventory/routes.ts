@@ -10,6 +10,8 @@
 export const routes = {
   catalog: "/catalog",
   all: "/catalog/all",
+  /** Listings verified as Toyota Genuine Parts (lib/inventory/data/toyota-genuine.json). */
+  genuine: "/catalog/toyota-genuine",
   aftermarket: "/catalog/aftermarket",
   category: (slug: string) => `/catalog/${slug}`,
   brand: (category: string, brand: string) => `/catalog/${category}/${brand}`,
