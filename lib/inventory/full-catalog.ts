@@ -1,0 +1,5373 @@
+/* =========================================================
+   DRIVORAPARTS — FULL CATALOG (SOURCE, NOT DEPLOYED)
+   ---------------------------------------------------------
+   Every listing DrivoraParts has ever carried: the source of
+   truth for listing data, edited here and in the modules and
+   data files it imports.
+
+   THIS FILE IS NOT PART OF THE DEPLOYED SITE. The storefront
+   lists Toyota parts only, and shipping 4,000 listings to a
+   Cloudflare Worker that shows 357 cost CPU and memory on
+   every request. So scripts/build-catalog-snapshot.mjs runs
+   before each build, takes the public listings from here
+   (lib/inventory/data/toyota-catalog.json) and writes them to
+   lib/inventory/data/catalog-snapshot.json, which is what
+   lib/inventory/products.ts loads. Nothing in app/,
+   components/ or lib/ may import this file -- only scripts.
+
+   To bring a listing back: make it Toyota-classified (or
+   change the rules) with scripts/audit-toyota-catalog.mjs
+   --write, then rebuild; the snapshot picks it up.
+
+   All products normalized to canonical slugs:
+   - `category` references a categories.ts slug
+   - `brand` references a brands.ts slug
+========================================================= */
+
+import type { Product } from "./types";
+import { aftermarketProducts } from "./aftermarket-products";
+import { engineDrivetrainProducts } from "./engine-drivetrain-products";
+import { essCatalogProducts } from "./ess-catalog-products";
+import { bodyPartsProducts } from "./body-parts-products";
+import { interiorProducts } from "./interior-products";
+import { electronicsProducts } from "./electronics-products";
+import { lightingProducts } from "./lighting-products";
+import { truckPartsProducts } from "./truck-parts-products";
+import { bimmerworldWheelsProducts } from "./bimmerworld-wheels-products";
+import { bullBarProducts } from "./bull-bar-products";
+import { snorkelProducts } from "./snorkel-products";
+import { roofRackProducts } from "./roof-rack-products";
+import { suspensionLiftProducts } from "./suspension-lift-products";
+import { headlightProducts } from "./headlight-products";
+import { tireProducts } from "./tire-products";
+import { transmissionProducts } from "./transmission-products";
+import { bumperProducts } from "./bumper-products";
+import { canopyProducts } from "./canopy-products";
+import { classicEuroProducts } from "./classic-euro-products";
+import { jdmEuroBrakeKitsProducts } from "./jdm-euro-brake-kits-products";
+import { performanceWheelsProducts } from "./performance-wheels-products";
+import { marketExpansionProducts } from "./market-expansion-products";
+import { CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
+
+/** Category-specific listings — every array here is merged into the master catalog for All Products. */
+const extensionProducts: Product[] = [
+  ...electronicsProducts,
+  ...lightingProducts,
+  ...bodyPartsProducts,
+  ...interiorProducts,
+  ...aftermarketProducts,
+  ...engineDrivetrainProducts,
+  ...essCatalogProducts,
+  ...truckPartsProducts,
+  ...bimmerworldWheelsProducts,
+  ...bullBarProducts,
+  ...snorkelProducts,
+  ...roofRackProducts,
+  ...suspensionLiftProducts,
+  ...headlightProducts,
+  ...tireProducts,
+  ...transmissionProducts,
+  ...bumperProducts,
+  ...canopyProducts,
+  ...classicEuroProducts,
+  ...jdmEuroBrakeKitsProducts,
+  ...performanceWheelsProducts,
+  ...marketExpansionProducts,
+];
+
+const productCatalog: Product[] = [
+  {
+    id: 1,
+    createdAt: 1781944418000,
+    name: "BMW N54 Twin Turbo Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-n54-twin-turbo",
+    price: 5999,
+    stock: true,
+    condition: "brand-new",
+    rating: 4.8,
+    reviewCount: 97,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/bmw/n54/1.jpeg",
+    images: [
+      "/product-media/engine/bmw/n54/1.jpeg",
+      "/product-media/engine/bmw/n54/2.jpg",
+      "/product-media/engine/bmw/n54/3.webp",
+    ],
+    description: `BMW N54 Twin Turbo Engine
+
+The BMW N54 Twin Turbo is one of BMW's most legendary turbocharged inline-six engines, renowned for its exceptional tuning potential, twin-turbo performance, and strong aftermarket support.
+
+The BMW N54 Twin Turbo engine delivers an ideal balance of power, reliability, and tuning capability. Featuring a factory twin-turbocharged configuration, direct fuel injection, and a robust inline-six design, the N54 has become a favorite among enthusiasts seeking substantial horsepower gains. Whether for a replacement engine, restoration project, or high-performance build, the N54 remains one of BMW's most sought-after powerplants.
+
+Specifications
+• Engine Code: N54
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Fuel System: Direct Injection
+• Factory Power: 300-335 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Genuine BMW Performance Engine
+• Twin Turbocharged Power Delivery
+• Massive Aftermarket Support
+• Proven High Horsepower Capability
+• Enthusiast Favorite Platform
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2,
+    createdAt: 1781944418000,
+    name: "Garrett GTX3076R Turbocharger (Gen I)",
+    category: "turbocharger",
+    brand: "garrett",
+    price: 850,
+    stock: true,
+    condition: "brand-new",
+    location: "UK Warehouse",
+    image: "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+    thumbnail: "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+    images: [
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/2.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/3.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/4.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/5.jpg",
+    ],
+    description:
+      "Premium Garrett turbocharger designed for extreme boost performance and reliability.\n\nPhoto note: images shown are representative of the Garrett GTX3076R platform (Gen II unit pictured) — no distinct product photography exists for this earlier Gen I revision. Contact us to confirm exact unit specifics before purchase.",
+  },
+  {
+    id: 33,
+    createdAt: 1781962338000,
+    name: "BMW B58 TwinPower Turbo 3.0-Liter Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-b58-twinpower",
+    price: 5999,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/bmw/b58/1.jpg",
+    images: [
+      "/product-media/engine/bmw/b58/1.jpg",
+      "/product-media/engine/bmw/b58/2.jpg",
+      "/product-media/engine/bmw/b58/3.jpg",
+      "/product-media/engine/bmw/b58/4.jpg",
+      "/product-media/engine/bmw/b58/5.jpg",
+      "/product-media/engine/bmw/b58/6.jpg",
+      "/product-media/engine/bmw/b58/7.jpg",
+      "/product-media/engine/bmw/b58/8.jpg",
+      "/product-media/engine/bmw/b58/9.jpg",
+      "/product-media/engine/bmw/b58/10.jpg",
+    ],
+    description: `BMW B58 TwinPower Turbo 3.0-Liter Inline-Six Engine
+
+The BMW B58 is a 3.0-liter turbocharged inline-six engine developed as part of BMW's advanced modular engine platform. Designed for exceptional reliability, efficiency, and performance, the B58 incorporates a closed-deck aluminum block, integrated intercooling system, direct fuel injection, and BMW TwinPower Turbo technology.
+
+Recognized throughout the automotive industry for its durability and tuning potential, the B58 powers a wide range of modern BMW performance vehicles and remains one of the most respected turbocharged inline-six engines available. Its proven architecture makes it suitable for OEM replacement, restoration projects, professional workshops, and high-performance applications.
+
+Key Features
+• 3.0L Inline-Six Configuration
+• BMW TwinPower Turbo System
+• Direct Fuel Injection
+• Closed-Deck Engine Block
+• OEM Reliability Standards
+• Strong Aftermarket Support
+• High Performance Capability
+• Suitable For Replacement And Performance Builds`,
+  },
+  {
+    id: 34,
+    createdAt: 1782008007000,
+    name: "Toyota 2JZ-GTE (Supra)",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-2jz-gte-supra",
+    price: 8499,
+    stock: true,
+    condition: "brand-new",
+    rating: 4.9,
+    reviewCount: 143,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/2jz-gte/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/2jz-gte/1.jpg",
+      "/product-media/engine/japanese-legends/2jz-gte/2.jpg",
+      "/product-media/engine/japanese-legends/2jz-gte/3.jpg",
+    ],
+    description: `Toyota 2JZ-GTE (Supra)
+
+The legendary Toyota 2JZ-GTE is widely regarded as one of the strongest and most tunable performance engines ever produced.
+
+Built to legendary standards, the Toyota 2JZ-GTE features an iron block construction, factory twin turbochargers, and exceptional durability. Known globally through the Toyota Supra platform, this engine has become the benchmark for high-horsepower builds. From street performance to motorsports applications, the 2JZ-GTE continues to dominate the performance world.
+
+Specifications
+• Engine Code: 2JZ-GTE
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 276-320 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Toyota
+
+Highlights
+• Legendary Supra Engine
+• Twin Turbocharged Performance
+• Iron Block Construction
+• Massive Horsepower Potential
+• Worldwide Tuning Support
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 35,
+    createdAt: 1782008007000,
+    name: "Toyota 1JZ-GTE Turbocharged Inline-6 Engine",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-1jz-gte",
+    price: 6499,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/1jz-gte/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/1jz-gte/1.jpg",
+      "/product-media/engine/japanese-legends/1jz-gte/2.jpg",
+    ],
+    description: `Toyota 1JZ-GTE Turbocharged Inline-6 Engine
+
+The Toyota 1JZ-GTE is a legendary Japanese performance engine known for its smooth power delivery, reliability, and tuning capabilities.
+
+The 1JZ-GTE combines Toyota engineering excellence with proven turbocharged performance. Built with a durable inline-six architecture and a strong aftermarket ecosystem, it remains one of the most respected JDM engines ever produced. Perfect for performance enthusiasts, restorations, and custom builds.
+
+Specifications
+• Engine Code: 1JZ-GTE
+• Configuration: Inline-6
+• Aspiration: Turbocharged
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 276-280 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Toyota
+
+Highlights
+• Legendary JDM Powerplant
+• Smooth Inline-Six Performance
+• Proven Reliability
+• Excellent Tuning Potential
+• Motorsport Heritage
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2115,
+    createdAt: 1786984341000,
+    name: "Toyota 1UZ-FE Non-VVT-i Complete Swap Package — Engine, Transmission, ECU & Harness",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-1uz-fe-v8",
+    // Anchor, not the shelf price: applyPublicPrices() sells at 79% rounded to
+    // the nearest $10, so 5045 is what puts this on the page at $3,990.
+    price: 5045,
+    stock: true,
+    stockQty: 1,
+    // Displays as "Used — Inspected & Tested" on the badge and in the spec
+    // table, matching the Condition section in the description.
+    condition: "used - inspected and tested",
+    // Fitment depends on the buyer's own fabrication, so the page offers
+    // assistance rather than claiming the order is checked against their car.
+    swapPackage: true,
+    horsepower: "Approximately 250-260 HP",
+    buildPotential: "Supporting modifications and ECU tuning required",
+    mileage: "N/A / Not Verified",
+    warranty: "24-Month Limited Warranty",
+    // Ships from the US warehouse or direct from a supplier depending on
+    // where the buyer is — stated rather than implying a single origin.
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "1UZ-FE (Non-VVT-i)",
+    fitment:
+      "Complete swap package: engine, transmission, factory ECU and factory engine wiring harness. Installation requirements vary by chassis — verify vehicle year, make, model, original engine, transmission and drivetrain before ordering.",
+    included: [
+      "Toyota 1UZ-FE Non-VVT-i 4.0L V8 Engine",
+      "Compatible Transmission",
+      "Factory ECU",
+      "Factory Engine Wiring Harness",
+    ],
+    freightNotes: "International freight / LTL.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labor, fabrication, tuning, modifications, overheating, improper installation, misuse, neglect, and damage from components or systems outside the supplied package.",
+    thumbnail: "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/1.jpg",
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/2.jpg",
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/3.jpg",
+      "/product-media/engine/japanese-legends/1uz-fe-non-vvti-swap/4.jpg",
+    ],
+    description: `4.0L Naturally Aspirated V8 • Complete Swap Package
+
+Complete 1UZ-FE Non-VVT-i swap package including the engine, transmission, factory ECU, and factory engine wiring harness.
+
+Swap-oriented package. Vehicle-specific installation requirements vary by chassis. Verify vehicle year, make, model, original engine, transmission, and drivetrain before ordering.
+
+ENGINE OVERVIEW
+
+The Toyota 1UZ-FE Non-VVT-i is a 4.0L naturally aspirated V8 known for smooth power delivery, durable construction, reliability, and strong engine-swap potential.
+
+This complete swap package includes the core drivetrain and electronic components required for a 1UZ-FE swap application: the engine, transmission, factory ECU, and factory engine wiring harness.
+
+PACKAGE INCLUDES
+
+• Toyota 1UZ-FE Non-VVT-i 4.0L V8 Engine
+• Compatible Transmission
+• Factory ECU
+• Factory Engine Wiring Harness
+
+ENGINE SPECIFICATIONS
+
+• Engine: Toyota 1UZ-FE
+• Configuration: V8
+• Displacement: 4.0L / 3,968 cc
+• Aspiration: Naturally Aspirated
+• Valve System: Non-VVT-i
+• Valvetrain: DOHC
+• Factory Output: Approximately 250-260 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Gasoline
+• Cooling: Liquid Cooled
+• Manufacturer: Toyota
+• Application: Engine Swap / Replacement / Performance Build
+
+ENGINE GENERATION
+
+First-Generation Toyota 1UZ-FE Non-VVT-i. Introduced in 1989 and used throughout the 1990s.
+
+The production year of this individual unit is not documented and is not represented as a specific year.
+
+Mileage: N/A / Not Verified
+
+PERFORMANCE & BUILD POTENTIAL
+
+The factory Non-VVT-i 1UZ-FE produces approximately 250-260 HP, depending on the original application and specification.
+
+For builders targeting approximately 300 HP, the 1UZ-FE provides a strong platform for a naturally aspirated performance build with appropriate supporting upgrades and ECU tuning.
+
+300 HP TARGET
+
+A 300 HP build may require appropriate upgrades to:
+
+• Intake system
+• Exhaust system
+• Fuel system
+• ECU calibration
+• ECU tuning
+• Supporting engine components
+
+300+ HP POTENTIAL
+
+Higher-output configurations are possible depending on the engine condition, supporting components, fuel system, intake and exhaust setup, ECU calibration, tuning, and overall build specification.
+
+Important: 300 HP is a build target, not the factory-rated output of the stock engine.
+
+COMPATIBLE APPLICATIONS & SWAP PLATFORMS
+
+ORIGINAL TOYOTA / LEXUS APPLICATIONS
+
+The 1UZ-FE was factory-installed in applications including:
+
+• 1989-1994 Lexus LS 400
+• 1989-1994 Toyota Celsior
+• 1990-1995 Toyota Crown Majesta
+• 1991-1997 Toyota Soarer
+• 1991-1997 Lexus SC 400
+
+These are original applications for the 1UZ-FE platform. Compatibility with a specific vehicle should still be confirmed based on the exact engine and drivetrain configuration.
+
+COMMON TOYOTA SWAP PLATFORMS
+
+The 1UZ-FE is commonly used for custom swaps in:
+
+• Toyota Supra
+• Toyota Cressida
+• Toyota Crown
+• Toyota Chaser
+• Toyota Mark II
+• Toyota Cresta
+• Toyota Soarer
+• Toyota Hilux
+• Toyota Pickup
+• Toyota 4Runner
+• Toyota Land Cruiser
+• Toyota Celica
+• Toyota Corolla
+• Toyota MR2
+• Toyota Tacoma
+
+These are swap applications, not universal direct-fit applications. Vehicle-specific transmission mounting, adaptation, or linkage components may be required depending on the chassis — the transmission itself is included in this package. Engine mounting, wiring, ECU, cooling, exhaust, fuel, driveshaft, and accessory requirements may also apply.
+
+LEXUS SWAP PLATFORMS
+
+Common Lexus-based applications include:
+
+• Lexus IS
+• Lexus GS
+• Lexus SC
+• Lexus LS
+
+Custom RWD vehicles and project cars may also use the 1UZ-FE where appropriate.
+
+No vehicle outside the original factory applications should be represented as a guaranteed bolt-in fit.
+
+FITMENT REQUIREMENTS
+
+Before ordering, verify:
+
+• Vehicle year
+• Vehicle make
+• Vehicle model
+• Original engine
+• Transmission
+• Drivetrain
+• Engine mounting requirements
+• Transmission compatibility
+• ECU requirements
+• Wiring requirements
+• Cooling requirements
+• Exhaust requirements
+• Fuel-system requirements
+• Driveshaft requirements
+• Accessory configuration
+
+FITMENT ASSISTANCE
+
+Not sure if the package fits your build? Send DrivoraParts your year, make, model, original engine, transmission and drivetrain, and contact the parts team before ordering.
+
+WHAT'S INCLUDED
+
+✓ Toyota 1UZ-FE Non-VVT-i 4.0L V8 Engine
+✓ Compatible Transmission
+✓ Factory ECU
+✓ Factory Engine Wiring Harness
+
+ADDITIONAL SWAP COMPONENTS
+
+The following vehicle-specific components are not included unless specifically stated:
+
+• Engine mounts
+• Driveshaft
+• Radiator / cooling hardware
+• Exhaust system
+• Fuel-system upgrades
+• Intake components
+• Custom wiring
+• Additional ECU programming or tuning
+• Vehicle-specific fabrication
+• Installation labor
+
+CONDITION
+
+Used — Inspected & Tested
+
+The engine and included drivetrain components are supplied as used components and may show normal cosmetic signs associated with previous use.
+
+Mileage: N/A / Not Verified
+
+24-MONTH LIMITED WARRANTY
+
+This complete swap package is backed by a 24-month limited warranty subject to the applicable DrivoraParts warranty terms and conditions.
+
+WORLDWIDE SHIPPING & FULFILLMENT
+
+Worldwide Shipping & Freight Available
+
+International shipping is available to the United States, Canada, United Kingdom, Australia, and other eligible destinations.
+
+Shipping method and delivery time may vary according to destination, package dimensions, weight, freight requirements, and selected service.
+
+INVENTORY & AVAILABILITY
+
+Stock Status: In Stock
+
+PROFESSIONAL INSTALLATION RECOMMENDED
+
+Engine swaps may require vehicle-specific mechanical and electrical integration. Depending on the application, installation may require:
+
+• Engine mounting
+• Transmission mounting, adaptation or linkage components
+• Driveshaft modification
+• Cooling-system modifications
+• Exhaust fabrication
+• Fuel-system changes
+• Wiring integration
+• ECU configuration
+• Tuning
+• Accessory configuration
+
+Professional installation is recommended.
+
+IMPORTANT — VERIFY YOUR APPLICATION BEFORE ORDERING
+
+This is a complete swap-oriented package, but it is not a universal bolt-in replacement for every vehicle.
+
+The package includes the engine, transmission, ECU, and wiring harness. Additional vehicle-specific installation components may be required depending on the chassis.
+
+Customers are responsible for confirming mechanical, electrical, emissions, and regulatory compatibility for their intended application.
+
+FREQUENTLY ASKED QUESTIONS
+
+Is the transmission included?
+
+Yes. The transmission is included with this complete swap package.
+
+Is the ECU included?
+
+Yes. The factory ECU is included.
+
+Is the wiring harness included?
+
+Yes. The factory engine wiring harness is included.
+
+What is the factory horsepower?
+
+The Non-VVT-i 1UZ-FE produces approximately 250-260 HP, depending on application and specification.
+
+Can this engine make 300 HP?
+
+Yes. A 300 HP target can be pursued with appropriate performance upgrades, supporting systems, and ECU tuning. Final output depends on the specific configuration and build.
+
+Is this a direct bolt-in swap?
+
+Not universally. Original factory applications differ from custom swap applications. Custom installations may require vehicle-specific mounts, wiring, cooling, exhaust, fuel, driveshaft, and other modifications.
+
+Is mileage verified?
+
+No. Mileage is listed as N/A / Not Verified.
+
+Can DrivoraParts help verify fitment?
+
+Yes. Provide your year, make, model, original engine, transmission, and drivetrain configuration before ordering if you need fitment assistance.`,
+  },
+  {
+    id: 36,
+    createdAt: 1782013765000,
+    name: "Toyota 1UZ-FE V8 Engine",
+    category: "engine",
+    brand: "toyota",
+    platform: "toyota-1uz-fe-v8",
+    price: 4999,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/1uz-fe/1.jpeg",
+    images: [
+      "/product-media/engine/japanese-legends/1uz-fe/1.jpeg",
+      "/product-media/engine/japanese-legends/1uz-fe/2.jpeg",
+      "/product-media/engine/japanese-legends/1uz-fe/3.jpeg",
+    ],
+    description: `Toyota 1UZ-FE V8 Engine
+
+The Toyota 1UZ-FE V8 is a legendary luxury performance engine known for extreme reliability, smooth V8 power delivery, and long-lasting durability.
+
+The Toyota 1UZ-FE V8 engine is one of Toyota's most durable and refined V8 powerplants ever produced. Originally designed for Lexus flagship models, it combines smooth operation with strong performance capability. Built with an aluminum block, forged internals, and precision engineering, the 1UZ-FE is widely respected for its ability to handle high mileage and performance tuning applications. Ideal for swaps, restorations, and performance builds.
+
+Specifications
+• Engine Code: 1UZ-FE
+• Configuration: V8
+• Aspiration: Naturally Aspirated
+• Fuel System: Electronic Fuel Injection
+• Factory Power: ~260 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Toyota
+
+Highlights
+• Ultra Reliable V8 Platform
+• Smooth Luxury Performance Engine
+• Strong Swap Candidate
+• Long-Term Durability
+• Toyota Engineering Excellence
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 37,
+    createdAt: 1782013765000,
+    name: "BMW N55 Turbo Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-n55",
+    price: 5299,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/bmw/n55/1.jpeg",
+    images: [
+      "/product-media/engine/bmw/n55/1.jpeg",
+      "/product-media/engine/bmw/n55/2.jpg",
+      "/product-media/engine/bmw/n55/3.jpeg",
+    ],
+    description: `BMW N55 Turbo Engine
+
+The BMW N55 Turbo Engine is a refined single-turbo inline-six engine offering smooth power delivery, efficiency, and modern BMW performance engineering.
+
+The BMW N55 Turbo Engine is the successor to the N54, featuring a single twin-scroll turbocharger design for improved efficiency and responsiveness. It delivers smooth power delivery, reduced lag, and strong tuning potential. Widely used across BMW's performance lineup, the N55 is known for reliability improvements over its predecessor while maintaining excellent aftermarket support.
+
+Specifications
+• Engine Code: N55
+• Configuration: Inline-6
+• Aspiration: Single Twin-Scroll Turbo
+• Fuel System: Direct Injection
+• Factory Power: 300-335 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Improved N54 Successor
+• Twin-Scroll Turbo Technology
+• Smooth Power Delivery
+• Strong Reliability Upgrade
+• Modern BMW Engineering
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 38,
+    createdAt: 1782017883000,
+    name: "BMW S55 (M3/M4) Twin Turbo Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-s55",
+    price: 6999,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/bmw/s55/1.webp",
+    images: [
+      "/product-media/engine/bmw/s55/1.webp",
+      "/product-media/engine/bmw/s55/2.webp",
+      "/product-media/engine/bmw/s55/3.webp",
+      "/product-media/engine/bmw/s55/4.webp",
+      "/product-media/engine/bmw/s55/5.webp",
+      "/product-media/engine/bmw/s55/6.webp",
+      "/product-media/engine/bmw/s55/7.webp",
+      "/product-media/engine/bmw/s55/8.webp",
+      "/product-media/engine/bmw/s55/9.webp",
+      "/product-media/engine/bmw/s55/10.webp",
+      "/product-media/engine/bmw/s55/11.webp",
+      "/product-media/engine/bmw/s55/12.webp",
+      "/product-media/engine/bmw/s55/13.webp",
+    ],
+    description: `BMW S55 (M3/M4) Twin Turbo Engine
+
+The BMW S55 is a high-performance 3.0L twin-turbo inline-six engine used in the M3 and M4 platforms, known for aggressive power delivery and motorsport engineering.
+
+The BMW S55 engine is a motorsport-derived 3.0L twin-turbo inline-six designed for the BMW M3 and M4 (F80/F82/F83). It delivers aggressive throttle response, high-performance cooling systems, and strong tuning potential. Built as an evolution of the N54/N55 platform, the S55 is widely respected in the performance tuning world for its ability to handle high horsepower builds while maintaining factory-level refinement.
+
+Specifications
+• Engine Code: S55
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Displacement: 3.0L
+• Fuel System: Direct Injection
+• Factory Power: 425–503 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• BMW M Performance Engine
+• Motorsport Derived Platform
+• Twin Turbo High Output Design
+• Strong Aftermarket Support
+• Track Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 39,
+    createdAt: 1782017883000,
+    name: "Nissan RB26DETT Skyline GTR Engine",
+    category: "engine",
+    brand: "nissan",
+    platform: "rb26dett",
+    price: 8999,
+    stock: true,
+    condition: "brand-new",
+    rating: 4.9,
+    reviewCount: 121,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/rb26dett/1.webp",
+    images: [
+      "/product-media/engine/japanese-legends/rb26dett/1.webp",
+      "/product-media/engine/japanese-legends/rb26dett/2.webp",
+      "/product-media/engine/japanese-legends/rb26dett/3.webp",
+      "/product-media/engine/japanese-legends/rb26dett/4.webp",
+      "/product-media/engine/japanese-legends/rb26dett/5.webp",
+      "/product-media/engine/japanese-legends/rb26dett/6.webp",
+      "/product-media/engine/japanese-legends/rb26dett/7.webp",
+      "/product-media/engine/japanese-legends/rb26dett/8.webp",
+      "/product-media/engine/japanese-legends/rb26dett/9.webp",
+      "/product-media/engine/japanese-legends/rb26dett/10.webp",
+      "/product-media/engine/japanese-legends/rb26dett/11.webp",
+      "/product-media/engine/japanese-legends/rb26dett/12.webp",
+      "/product-media/engine/japanese-legends/rb26dett/13.webp",
+      "/product-media/engine/japanese-legends/rb26dett/14.webp",
+      "/product-media/engine/japanese-legends/rb26dett/15.webp",
+      "/product-media/engine/japanese-legends/rb26dett/16.webp",
+      "/product-media/engine/japanese-legends/rb26dett/17.webp",
+      "/product-media/engine/japanese-legends/rb26dett/18.webp",
+      "/product-media/engine/japanese-legends/rb26dett/19.webp",
+    ],
+    description: `Nissan RB26DETT Skyline GTR Engine
+
+The legendary Nissan RB26DETT is the iconic Skyline GT-R engine, famous for its twin turbo performance, durability, and tuning dominance.
+
+The Nissan RB26DETT engine is one of the most iconic Japanese performance engines ever created. Originally powering the Skyline GT-R (R32, R33, R34), it features a twin-turbo inline-six layout built for high-performance and racing durability. Known globally for its tuning potential and strength under boost, the RB26DETT remains a top choice for performance builds and engine swaps.
+
+Specifications
+• Engine Code: RB26DETT
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 276–320 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Nissan
+
+Highlights
+• Skyline GT-R Legendary Engine
+• Twin Turbo Performance Platform
+• Extreme Tuning Potential
+• Motorsport Heritage
+• Iron Block Durability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 40,
+    createdAt: 1782023140000,
+    name: "BMW S58 (M Performance Engine)",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-s58",
+    price: 7999,
+    stock: true,
+    condition: "brand-new",
+    rating: 4.9,
+    reviewCount: 86,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/bmw/s58/1.avif",
+    images: [
+      "/product-media/engine/bmw/s58/1.avif",
+      "/product-media/engine/bmw/s58/2.jpeg",
+    ],
+    description: `BMW S58 (M Performance Engine)
+
+The BMW S58 is a high-performance twin-turbo inline-six engine powering the latest BMW M3 and M4 models, known for extreme performance and track capability.
+
+The BMW S58 engine is the latest evolution of BMW's M Performance inline-six platform. Built for the G80 M3 and G82 M4, it delivers exceptional horsepower, torque, and track-ready durability. Featuring advanced twin-turbo technology, upgraded cooling systems, and reinforced internal components, the S58 is designed for high-performance driving and motorsport applications.
+
+Specifications
+• Engine Code: S58
+• Configuration: Inline-6
+• Aspiration: Twin Turbocharged
+• Displacement: 3.0L
+• Fuel System: Direct Injection
+• Factory Power: 473–503 HP
+• Cooling: High-Performance Liquid Cooling
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Latest BMW M Performance Engine
+• Extreme Track Capability
+• Twin Turbo High Output System
+• Strong Motorsport Engineering
+• High Reliability Under Load
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 41,
+    createdAt: 1782023140000,
+    name: "Nissan SR20DET Turbo Engine",
+    category: "engine",
+    brand: "nissan",
+    platform: "sr20det",
+    price: 4499,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/sr20det/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/sr20det/1.jpg",
+      "/product-media/engine/japanese-legends/sr20det/2.jpg",
+      "/product-media/engine/japanese-legends/sr20det/3.jpg",
+      "/product-media/engine/japanese-legends/sr20det/4.jpg",
+      "/product-media/engine/japanese-legends/sr20det/5.jpg",
+      "/product-media/engine/japanese-legends/sr20det/6.jpg",
+      "/product-media/engine/japanese-legends/sr20det/7.jpg",
+      "/product-media/engine/japanese-legends/sr20det/8.jpg",
+      "/product-media/engine/japanese-legends/sr20det/9.jpg",
+    ],
+    description: `Nissan SR20DET Turbo Engine
+
+The Nissan SR20DET is a legendary 2.0L turbocharged inline-four engine widely used in drift, racing, and performance builds due to its tuning potential.
+
+The Nissan SR20DET is one of the most iconic Japanese turbo engines ever produced. Known for its lightweight design, strong aftermarket support, and high tuning capability, it has become a favorite in drifting, motorsports, and performance builds worldwide. Its turbocharged inline-four configuration delivers responsive power and excellent modification potential.
+
+Specifications
+• Engine Code: SR20DET
+• Configuration: Inline-4
+• Aspiration: Turbocharged
+• Displacement: 2.0L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 200–250 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Nissan
+
+Highlights
+• Legendary Drift Engine
+• Lightweight Performance Platform
+• Massive Aftermarket Support
+• Strong Turbo Response
+• Motorsport Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 42,
+    createdAt: 1782028224000,
+    name: "Honda K20 Performance Engine",
+    category: "engine",
+    brand: "honda",
+    platform: "honda-k20",
+    price: 4299,
+    stock: true,
+    condition: "brand-new",
+    rating: 4.8,
+    reviewCount: 74,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/k20/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/k20/1.jpg",
+      "/product-media/engine/japanese-legends/k20/2.webp",
+    ],
+    description: `Honda K20 Performance Engine
+
+The Honda K20 is one of the most respected naturally aspirated performance engines ever produced, known for its high-revving VTEC powerband and exceptional reliability.
+
+The Honda K20 engine has become a legend in the performance world due to its lightweight design, impressive power output, and enormous aftermarket support. Found in many Honda performance vehicles, the K20 is renowned for delivering responsive power, high RPM capability, and long-term reliability. Whether for a swap project, restoration, or track build, the K20 remains one of the most desirable Honda engines available.
+
+Specifications
+• Engine Code: K20
+• Configuration: Inline-4
+• Aspiration: Naturally Aspirated
+• Displacement: 2.0L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 197–220 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Honda
+
+Highlights
+• Legendary VTEC Performance
+• High-Revving Powerband
+• Lightweight Design
+• Massive Aftermarket Support
+• Excellent Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 43,
+    createdAt: 1782028224000,
+    name: "Honda K24 Performance Engine",
+    category: "engine",
+    brand: "honda",
+    platform: "honda-k24",
+    price: 4799,
+    stock: true,
+    condition: "brand-new",
+    rating: 4.8,
+    reviewCount: 68,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/k24/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/k24/1.jpg",
+      "/product-media/engine/japanese-legends/k24/2.jpg",
+      "/product-media/engine/japanese-legends/k24/3.jpg",
+      "/product-media/engine/japanese-legends/k24/4.jpg",
+      "/product-media/engine/japanese-legends/k24/5.jpg",
+      "/product-media/engine/japanese-legends/k24/6.jpg",
+      "/product-media/engine/japanese-legends/k24/7.jpg",
+      "/product-media/engine/japanese-legends/k24/8.jpg",
+    ],
+    description: `Honda K24 Performance Engine
+
+The Honda K24 combines strong low-end torque with Honda's proven reliability, making it one of the most popular performance swap engines available.
+
+The Honda K24 is widely recognized as one of Honda's best performance engine platforms. Offering increased displacement over the K20, the K24 delivers excellent torque, strong reliability, and tremendous tuning potential. Popular in street, track, and engine swap communities worldwide, it remains a top choice for performance enthusiasts.
+
+Specifications
+• Engine Code: K24
+• Configuration: Inline-4
+• Aspiration: Naturally Aspirated
+• Displacement: 2.4L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 190–205 HP
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Honda
+
+Highlights
+• Strong Low-End Torque
+• Excellent Swap Platform
+• Proven Honda Reliability
+• Large Aftermarket Ecosystem
+• High Performance Potential
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 44,
+    createdAt: 1782040268000,
+    name: "BMW M57 Diesel Inline-6 Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-m57",
+    price: 4799,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/bmw/m57/1.jpg",
+    images: [
+      "/product-media/engine/bmw/m57/1.jpg",
+      "/product-media/engine/bmw/m57/2.jpg",
+      "/product-media/engine/bmw/m57/3.jpg",
+      "/product-media/engine/bmw/m57/4.jpg",
+    ],
+    description: `BMW M57 Diesel Inline-6 Engine
+
+The BMW M57 is a legendary diesel inline-six engine known for extreme torque, durability, and long-distance reliability.
+
+The BMW M57 engine is one of the most reliable diesel inline-six engines ever produced. It is known for its massive torque output, long lifespan, and strong tuning capability. Used across multiple BMW platforms, it is respected for both performance diesel builds and long-distance efficiency applications.
+
+Specifications
+• Engine Code: M57
+• Configuration: Inline-6
+• Aspiration: Turbocharged Diesel
+• Displacement: 3.0L
+• Fuel System: Common Rail Diesel Injection
+• Factory Power: 181–286 HP (variant dependent)
+• Torque: 390–580 Nm
+• Cooling: Liquid Cooled
+• Fuel Type: Diesel
+• Manufacturer: BMW
+
+Highlights
+• Extreme Torque Output
+• Legendary Diesel Reliability
+• High Mileage Durability
+• Strong Tuning Potential
+• Commercial Grade Engine Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 45,
+    createdAt: 1782040268000,
+    name: "Honda B18C Type R Engine",
+    category: "engine",
+    brand: "honda",
+    platform: "honda-b18c-type-r",
+    price: 5199,
+    stock: true,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/b18c-type-r/1.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/b18c-type-r/1.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/2.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/3.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/4.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/5.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/6.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/7.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/8.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/9.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/10.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/11.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/12.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/13.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/14.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/15.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/16.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/17.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/18.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/19.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/20.jpg",
+      "/product-media/engine/japanese-legends/b18c-type-r/21.jpg",
+    ],
+    description: `Honda B18C Type R Engine
+
+The Honda B18C Type R is a high-revving VTEC performance engine known for its lightweight design and legendary Type R racing heritage.
+
+The Honda B18C Type R engine is one of the most iconic performance engines in Honda's history. Found in the Integra Type R, it delivers exceptional high-RPM power, razor-sharp throttle response, and lightweight construction. It is widely respected in motorsport and tuning communities for its balance of reliability and extreme performance capability.
+
+Specifications
+• Engine Code: B18C
+• Configuration: Inline-4
+• Aspiration: Naturally Aspirated VTEC
+• Displacement: 1.8L
+• Fuel System: Electronic Fuel Injection
+• Factory Power: 197–200 HP
+• RPM Range: High-revving performance setup
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Honda
+
+Highlights
+• Legendary Type R Engine
+• High-RPM VTEC Performance
+• Lightweight Racing Platform
+• Strong Aftermarket Support
+• Motorsport Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 46,
+    createdAt: 1782046628000,
+    name: "Mazda 13B Rotary Engine (Twin Rotor)",
+    category: "engine",
+    brand: "mazda",
+    platform: "mazda-13b-rotary",
+    price: 5599,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "280 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    rating: 4.8,
+    reviewCount: 76,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/japanese-legends/mazda-13b-rotary/meta-catalog.jpg",
+    images: [
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/meta-catalog.jpg",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/1.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/2.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/3.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/4.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/5.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/6.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/7.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/8.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/9.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/10.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/11.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/12.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/13.webp",
+      "/product-media/engine/japanese-legends/mazda-13b-rotary/14.webp",
+    ],
+    description: `Mazda 13B Rotary Engine (Twin Rotor)
+
+Legendary twin-rotor rotary engine known for high RPM performance, lightweight design, and RX-7 motorsport heritage.
+
+The Mazda 13B Rotary engine is one of the most iconic rotary powerplants ever built. Its unique Wankel twin-rotor design delivers smooth high-revving performance and an exceptional power-to-weight ratio. Widely used in RX-7 platforms, it remains a top choice for drift builds and motorsport enthusiasts.
+
+Specifications
+• Engine Code: 13B
+• Configuration: Twin-Rotor Rotary
+• Displacement Equivalent: 1.3L
+• Aspiration: Naturally Aspirated / Turbo variants
+• Factory Power: 280 HP
+• Fuel System: Electronic Fuel Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Mazda
+
+Highlights
+• Legendary Rotary Technology
+• Extremely High RPM Capability
+• Lightweight Performance Engine
+• Motorsports Icon (RX-7 Heritage)
+• Unique Engineering Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 47,
+    createdAt: 1782068181000,
+    name: "Dodge Hellcat 6.2L Supercharged HEMI V8 Engine",
+    category: "engine",
+    brand: "dodge",
+    platform: "dodge-hellcat-6-2",
+    price: 14999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "717 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/dodge-hellcat-6-2/1.jpg",
+    images: ["/product-media/engine/american-v8/dodge-hellcat-6-2/1.jpg"],
+    description: `Dodge Hellcat 6.2L Supercharged HEMI V8 Engine
+
+Factory-supercharged 6.2L HEMI V8 delivering extreme horsepower and legendary American muscle performance.
+
+The Dodge Hellcat 6.2L Supercharged HEMI V8 is one of the most powerful production V8 engines ever built. Featuring forged internals, a factory supercharger, and massive power potential, it has become a favorite for muscle car restorations, custom builds, drag racing, and high-performance swaps.
+
+Specifications
+• Engine Code: Hellcat HEMI
+• Configuration: V8
+• Displacement: 6.2L
+• Aspiration: Supercharged
+• Factory Power: 717 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Dodge
+
+Highlights
+• Factory Supercharged HEMI Platform
+• Extreme Horsepower Output
+• Forged Internal Components
+• Legendary American Muscle Performance
+• Ideal for Restorations and Swaps
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 48,
+    createdAt: 1782068181000,
+    name: "Ford Coyote 5.0L V8 Engine",
+    category: "engine",
+    brand: "ford",
+    platform: "ford-coyote-5-0",
+    price: 8499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "460 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/ford-coyote-5-0/1.jpg",
+    images: [
+      "/product-media/engine/american-v8/ford-coyote-5-0/1.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/2.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/3.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/4.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/5.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/6.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/7.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/8.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/9.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/10.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/11.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/12.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/13.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/14.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/15.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/16.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/17.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/18.jpg",
+      "/product-media/engine/american-v8/ford-coyote-5-0/19.jpg",
+    ],
+    description: `Ford Coyote 5.0L V8 Engine
+
+Modern DOHC V8 delivering excellent reliability, power, and swap versatility.
+
+The Ford Coyote 5.0L V8 is one of the most popular modern V8 platforms available. Known for its high-revving capability, reliability, and strong aftermarket support, the Coyote has become a leading choice for performance swaps and custom builds.
+
+Specifications
+• Engine Code: Coyote
+• Configuration: V8
+• Displacement: 5.0L
+• Aspiration: Naturally Aspirated
+• Factory Power: 460 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Ford
+
+Highlights
+• Modern DOHC V8 Architecture
+• High-Revving Performance
+• Strong Swap Compatibility
+• Extensive Aftermarket Support
+• Proven Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2114,
+    createdAt: 1786727410000,
+    name: "Ford 7.3L Godzilla Supercharged Engine Package",
+    category: "engine",
+    brand: "ford",
+    platform: "ford-7-3-godzilla",
+    // Anchor, not the shelf price: applyPublicPrices() sells at 79% rounded to
+    // the nearest $10, so 7470 is what puts this on the page at $5,900.
+    price: 7470,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 430 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    // Package contents confirmed for this listing; shown under "What's included"
+    // on the Specifications tab and repeated in the description below.
+    included: [
+      "Ford 7.3L Godzilla engine",
+      "Supercharger",
+      "ECU (Engine Control Unit)",
+      "Engine wiring harness",
+    ],
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/ford-7-3-godzilla/1.jpeg",
+    images: [
+      "/product-media/engine/american-v8/ford-7-3-godzilla/1.jpeg",
+      "/product-media/engine/american-v8/ford-7-3-godzilla/2.jpeg",
+    ],
+    description: `Ford 7.3L Godzilla Supercharged Engine Package
+
+Large-displacement pushrod V8 supplied with its supercharger fitted, as pictured.
+
+The Ford 7.3L Godzilla is a modern pushrod V8 designed for serious power, durability, and demanding applications. Known for its large-displacement architecture, strong low-end torque, and straightforward design, the 7.3L Godzilla has become a popular choice among truck owners, performance enthusiasts, and builders looking for a dependable V8 platform.
+
+This package ships as shown, with the supercharger included. With its cast-iron block, overhead-valve configuration, and robust internal architecture, the Godzilla is well suited for heavy-duty applications, engine swaps, restoration projects, and high-performance builds.
+
+What's Included
+
+Confirmed as part of this package:
+
+• Ford 7.3L Godzilla V8 engine
+• Supercharger
+• ECU (Engine Control Unit)
+• Engine wiring harness
+
+Package price: US$6,350.
+
+Not Confirmed as Included
+
+The items below are not confirmed as part of this package. Do not assume they are included, and ask us before you order if any of them matter to your build.
+
+• Supercharger brackets, intercooler and other associated components
+• Intake manifold and throttle body
+• Fuel injectors, fuel rails and other fuel-delivery components
+• Accessory drive, pulleys and belts
+• Alternator and starter motor
+• Engine sensors, connectors and ignition components
+• Water pump, thermostat, housing and cooling connections
+• Oil pan and oil pump
+• Exhaust manifolds or headers and exhaust connections
+• Throttle control components and accelerator pedal
+
+Complete Engine Requirements
+
+A running installation needs the engine matched to your vehicle, transmission and intended application. Not every item below is required for every installation, and this list does not state that any of them is compatible with your vehicle.
+
+• Engine mounts and mounting compatibility
+• Transmission compatibility and any required adapter
+• Flexplate or flywheel, and starter compatibility
+• A fuel supply suited to the engine
+• A cooling system suited to the engine
+• Exhaust compatibility
+• Electrical integration and wiring to the vehicle
+• Engine control calibration or tuning for your application. This listing does not state that the ECU is pre-calibrated or that software is included.
+• Any further components your vehicle or conversion requires
+
+Engine Package, Not a Conversion Kit
+
+This is a supplied engine package. It is not a complete, installation-ready conversion kit. The additional parts you need, and the work to integrate them, depend on your vehicle, transmission and application.
+
+Specifications
+• Engine Code: 7.3L Godzilla
+• Configuration: V8
+• Aspiration: Supercharged — supercharger included
+• Valvetrain: OHV / Pushrod
+• Displacement: 7.3 Liters
+• Factory Power (naturally aspirated): Up to 430 HP
+• Factory Torque (naturally aspirated): Up to 475 lb-ft
+• Cooling: Liquid Cooled
+• Fuel Type: Gasoline
+• Manufacturer: Ford
+
+Highlights
+• Ford 7.3L Godzilla V8 Platform
+• Supercharger Included
+• Large-Displacement Forced-Induction Performance
+• Strong Low-End Torque
+• Robust Heavy-Duty Architecture
+• Excellent Engine-Swap Potential
+• Strong Aftermarket Support
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 49,
+    createdAt: 1782068181000,
+    name: "Chevrolet LS3 V8 Engine",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "ls3",
+    price: 7999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "430 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/ls3/1.jpg",
+    images: [
+      "/product-media/engine/american-v8/ls3/1.jpg",
+      "/product-media/engine/american-v8/ls3/2.jpg",
+      "/product-media/engine/american-v8/ls3/3.jpg",
+      "/product-media/engine/american-v8/ls3/4.jpg",
+      "/product-media/engine/american-v8/ls3/5.jpg",
+      "/product-media/engine/american-v8/ls3/6.jpg",
+    ],
+    description: `Chevrolet LS3 V8 Engine
+
+Legendary LS-series V8 with unmatched swap compatibility and aftermarket support.
+
+The Chevrolet LS3 has earned its reputation as one of the greatest swap engines ever produced. Its compact design, strong power output, reliability, and extensive aftermarket ecosystem make it ideal for street, track, and custom projects.
+
+Specifications
+• Engine Code: LS3
+• Configuration: V8
+• Displacement: 6.2L
+• Aspiration: Naturally Aspirated
+• Factory Power: 430 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Legendary LS Swap Platform
+• Compact Lightweight Design
+• Massive Aftermarket Ecosystem
+• Proven Street and Track Reliability
+• Ideal for Custom Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 50,
+    createdAt: 1782068181000,
+    name: "Chevrolet LS7 V8 Engine",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "ls7",
+    price: 12499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "505 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/ls7/1.jpg",
+    images: [
+      "/product-media/engine/american-v8/ls7/1.jpg",
+      "/product-media/engine/american-v8/ls7/2.jpg",
+      "/product-media/engine/american-v8/ls7/3.jpg",
+      "/product-media/engine/american-v8/ls7/4.jpg",
+      "/product-media/engine/american-v8/ls7/5.jpg",
+      "/product-media/engine/american-v8/ls7/6.jpg",
+      "/product-media/engine/american-v8/ls7/7.jpg",
+      "/product-media/engine/american-v8/ls7/8.jpg",
+      "/product-media/engine/american-v8/ls7/9.jpg",
+      "/product-media/engine/american-v8/ls7/10.jpg",
+    ],
+    description: `Chevrolet LS7 V8 Engine
+
+High-performance 7.0L Corvette Z06 V8 with race-inspired engineering.
+
+The LS7 is Chevrolet's iconic naturally aspirated performance V8. Originally developed for the Corvette Z06, it features lightweight internals, exceptional airflow, and massive displacement for outstanding performance.
+
+Specifications
+• Engine Code: LS7
+• Configuration: V8
+• Displacement: 7.0L
+• Aspiration: Naturally Aspirated
+• Factory Power: 505 HP
+• Fuel System: Electronic Fuel Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Corvette Z06 Performance Heritage
+• Race-Inspired Engineering
+• Large Displacement NA Power
+• Lightweight Internal Components
+• Exceptional Airflow Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 51,
+    createdAt: 1782068181000,
+    name: "Chevrolet LT1 Corvette V8 Engine",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "lt1-lt4",
+    price: 9499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "455 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/lt1/1.webp",
+    images: [
+      "/product-media/engine/american-v8/lt1/1.webp",
+      "/product-media/engine/american-v8/lt1/2.webp",
+      "/product-media/engine/american-v8/lt1/3.webp",
+      "/product-media/engine/american-v8/lt1/4.webp",
+      "/product-media/engine/american-v8/lt1/5.jpg",
+    ],
+    description: `Chevrolet LT1 Corvette V8 Engine
+
+Modern direct-injected Corvette V8 offering strong power and efficiency.
+
+The LT1 is Chevrolet's next-generation small-block V8 platform. Featuring direct injection and modern engine management technology, it combines strong performance with everyday reliability.
+
+Specifications
+• Engine Code: LT1
+• Configuration: V8
+• Displacement: 6.2L
+• Aspiration: Naturally Aspirated
+• Factory Power: 455 HP
+• Fuel System: Direct Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Modern Direct Injection Platform
+• Corvette Performance Engineering
+• Strong Power and Efficiency
+• Advanced Engine Management
+• Reliable Daily and Track Use
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 52,
+    createdAt: 1782068181000,
+    name: "Chevrolet LT4 6.2L Supercharged V8 Engine",
+    category: "engine",
+    brand: "chevrolet",
+    platform: "lt1-lt4",
+    price: 15999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "650 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/american-v8/lt4/1.jpg",
+    images: [
+      "/product-media/engine/american-v8/lt4/1.jpg",
+      "/product-media/engine/american-v8/lt4/2.jpg",
+      "/product-media/engine/american-v8/lt4/3.jpg",
+      "/product-media/engine/american-v8/lt4/4.jpg",
+      "/product-media/engine/american-v8/lt4/5.jpg",
+      "/product-media/engine/american-v8/lt4/6.jpg",
+      "/product-media/engine/american-v8/lt4/7.jpg",
+      "/product-media/engine/american-v8/lt4/8.jpg",
+      "/product-media/engine/american-v8/lt4/9.jpg",
+      "/product-media/engine/american-v8/lt4/10.jpg",
+      "/product-media/engine/american-v8/lt4/11.jpg",
+      "/product-media/engine/american-v8/lt4/12.jpg",
+      "/product-media/engine/american-v8/lt4/13.jpg",
+      "/product-media/engine/american-v8/lt4/14.jpg",
+    ],
+    description: `Chevrolet LT4 6.2L Supercharged V8 Engine
+
+Factory-supercharged Corvette V8 engineered for track-level performance.
+
+The LT4 combines direct injection, advanced cooling systems, and factory supercharging to produce incredible horsepower and torque. It is one of the most sought-after modern V8 engines for premium performance builds.
+
+Specifications
+• Engine Code: LT4
+• Configuration: Supercharged V8
+• Displacement: 6.2L
+• Aspiration: Supercharged
+• Factory Power: 650 HP
+• Fuel System: Direct Injection
+• Fuel Type: Premium Gasoline
+• Manufacturer: Chevrolet
+
+Highlights
+• Factory Supercharged Corvette Platform
+• Track-Level Performance Engineering
+• Advanced Cooling Systems
+• Direct Injection Technology
+• Premium Performance Build Candidate
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 53,
+    createdAt: 1782068866000,
+    name: "BMW N63 V8 Twin Turbo Engine",
+    category: "engine",
+    brand: "bmw",
+    platform: "bmw-n63-v8",
+    price: 6999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "523 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    rating: 4.8,
+    reviewCount: 64,
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/bmw/n63/1.webp",
+    images: [
+      "/product-media/engine/bmw/n63/1.webp",
+      "/product-media/engine/bmw/n63/2.jpg",
+    ],
+    description: `BMW N63 V8 Twin Turbo Engine
+
+High-performance twin-turbo V8 engine used in BMW luxury and performance models, delivering strong torque and premium driving dynamics.
+
+The BMW N63 is a twin-turbocharged V8 engine designed for high-end BMW performance and luxury models. It combines strong torque delivery, advanced engineering, and smooth power output. It is widely used in BMW 5, 7, and X series performance variants.
+
+Specifications
+• Engine Code: N63
+• Configuration: V8
+• Aspiration: Twin Turbocharged
+• Displacement: 4.4L
+• Factory Power: 523 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: BMW
+
+Highlights
+• Twin-Turbo V8 Performance
+• Premium BMW Engineering
+• Strong Torque Delivery
+• Luxury and Performance Platform
+• Ideal for Replacement and Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 54,
+    createdAt: 1782072891000,
+    name: "Audi 2.0 TFSI EA888 Turbo Engine",
+    category: "engine",
+    brand: "audi",
+    platform: "audi-2-0-tfsi-ea888",
+    price: 3999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "220 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+    images: [
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/2.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/3.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/4.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/5.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/6.jpg",
+    ],
+    description: `Audi 2.0 TFSI EA888 Turbo Engine
+
+Modern turbocharged 2.0L Audi EA888 engine known for efficiency, tuning potential, and reliability.
+
+The Audi EA888 2.0 TFSI engine is one of the most widely used modern turbocharged engines in the Volkswagen Group. Known for strong tuning capability, efficiency, and balance between performance and reliability, it is a popular choice for swaps and upgrades.
+
+Specifications
+• Engine Code: EA888
+• Configuration: Inline-4
+• Displacement: 2.0L
+• Aspiration: Turbocharged
+• Factory Power: 220 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Audi
+
+Highlights
+• Modern VW Group Turbo Platform
+• Strong Tuning Potential
+• Efficient Performance Design
+• Wide Aftermarket Support
+• Ideal for Swap and Upgrade Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 55,
+    createdAt: 1782072891000,
+    name: "Audi 4.0 TFSI V8 Biturbo Engine",
+    category: "engine",
+    brand: "audi",
+    platform: "audi-4-0-tfsi-v8",
+    price: 11999,
+    stock: true,
+    condition: "used",
+    horsepower: "600 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+    images: [
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/1.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/2.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/3.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/4.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/5.jpg",
+      "/product-media/engine/euro-performance/audi-2-0-tfsi-ea888/6.jpg",
+    ],
+    description: `Audi 4.0 TFSI V8 Biturbo Engine
+
+High-performance twin-turbo V8 used in Audi RS models delivering extreme luxury performance.
+
+The Audi 4.0 TFSI V8 Biturbo engine powers Audi RS performance models and delivers massive horsepower with refined German engineering. It is known for strong torque delivery and advanced turbo technology.
+
+Specifications
+• Engine Code: 4.0 TFSI
+• Configuration: V8
+• Displacement: 4.0L
+• Aspiration: Twin Turbocharged
+• Factory Power: 600 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Audi
+
+Highlights
+• Audi RS Performance Platform
+• Twin-Turbo V8 Engineering
+• Extreme Horsepower Output
+• Refined German Performance
+• Premium Luxury Build Candidate
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 56,
+    createdAt: 1782072891000,
+    name: "Mercedes-Benz M113 V8 Engine",
+    category: "engine",
+    brand: "mercedes-benz",
+    platform: "mercedes-m113",
+    price: 6499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "302 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/euro-performance/mercedes-m113/1.jpg",
+    images: [
+      "/product-media/engine/euro-performance/mercedes-m113/1.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/2.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/3.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/4.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/5.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/6.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/7.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/8.jpg",
+      "/product-media/engine/euro-performance/mercedes-m113/9.jpg",
+    ],
+    description: `Mercedes-Benz M113 V8 Engine
+
+Legendary naturally aspirated Mercedes V8 known for reliability and long-term durability.
+
+The Mercedes M113 V8 is a highly respected naturally aspirated engine known for durability, smooth power delivery, and strong aftermarket support in performance and luxury applications.
+
+Specifications
+• Engine Code: M113
+• Configuration: V8
+• Aspiration: Naturally Aspirated
+• Displacement: 5.0L
+• Factory Power: 302 HP
+• Fuel System: Electronic Fuel Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Mercedes-Benz
+
+Highlights
+• Legendary Mercedes V8 Reliability
+• Smooth Naturally Aspirated Power
+• Long-Term Durability
+• Strong Aftermarket Support
+• Luxury and Performance Applications
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 57,
+    createdAt: 1782072891000,
+    name: "Mercedes-AMG M157 Biturbo V8 Engine",
+    category: "engine",
+    brand: "mercedes-amg",
+    platform: "mercedes-m157-amg",
+    price: 12999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "577 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/euro-performance/mercedes-m157-amg/1.jpg",
+    images: [
+      "/product-media/engine/euro-performance/mercedes-m157-amg/1.jpg",
+      "/product-media/engine/euro-performance/mercedes-m157-amg/2.jpg",
+      "/product-media/engine/euro-performance/mercedes-m157-amg/3.jpg",
+      "/product-media/engine/euro-performance/mercedes-m157-amg/4.jpg",
+      "/product-media/engine/euro-performance/mercedes-m157-amg/5.jpg",
+      "/product-media/engine/euro-performance/mercedes-m157-amg/6.jpg",
+    ],
+    description: `Mercedes-AMG M157 Biturbo V8 Engine
+
+High-performance AMG twin-turbo V8 engine delivering extreme horsepower and torque.
+
+The Mercedes M157 AMG Biturbo V8 is engineered for high-performance AMG models. It delivers massive power output, advanced turbocharging, and aggressive acceleration performance.
+
+Specifications
+• Engine Code: M157
+• Configuration: V8
+• Displacement: 5.5L
+• Aspiration: Twin Turbocharged
+• Factory Power: 577 HP
+• Fuel System: Direct Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Mercedes-AMG
+
+Highlights
+• AMG Twin-Turbo V8 Platform
+• Extreme Horsepower and Torque
+• Advanced Turbo Technology
+• Track-Capable Performance
+• Premium German Engineering
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 58,
+    createdAt: 1782072891000,
+    name: "Volkswagen VR6 Engine",
+    category: "engine",
+    brand: "volkswagen",
+    platform: "vw-vr6",
+    price: 4999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "280 HP",
+    mileage: "0 Miles",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/euro-performance/vw-vr6/1.jpg",
+    images: ["/product-media/engine/euro-performance/vw-vr6/1.jpg"],
+    description: `Volkswagen VR6 Engine
+
+Unique narrow-angle VR6 engine known for smooth power delivery and compact design.
+
+The Volkswagen VR6 engine is a unique engineering design combining V6 smoothness with inline packaging efficiency. It is widely used in VW performance platforms and known for its distinctive sound and strong tuning potential.
+
+Specifications
+• Engine Code: VR6
+• Configuration: VR6 Narrow-Angle
+• Displacement: 3.6L
+• Aspiration: Naturally Aspirated
+• Factory Power: 280 HP
+• Fuel System: Electronic Fuel Injection
+• Cooling: Liquid Cooled
+• Fuel Type: Premium Gasoline
+• Manufacturer: Volkswagen
+
+Highlights
+• Unique VR6 Engineering Design
+• Compact V6 Packaging
+• Smooth Power Delivery
+• Distinctive Engine Character
+• Strong Tuning Potential
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 59,
+    createdAt: 1782299488000,
+    name: "HKS Blow-off Valves",
+    category: "engine",
+    brand: "hks",
+    platform: "blow-off-valves",
+    price: 320,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/hks-blow-off-valves/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/hks-blow-off-valves/1.jpg",
+      "/product-media/engine/turbo-performance/hks-blow-off-valves/2.jpg",
+      "/product-media/engine/turbo-performance/hks-blow-off-valves/3.jpg",
+    ],
+    description: `HKS Blow-off Valves
+
+Performance blow-off valve engineered for turbocharged applications, delivering precise pressure relief and the signature HKS release sound.
+
+The HKS Blow-off Valve is a precision-engineered pressure relief valve designed to protect turbocharged engines from compressor surge during throttle lift-off. Built from billet aluminum with a hardened internal piston, it delivers consistent valve response, improved turbo longevity, and the unmistakable HKS sound. Suitable for a wide range of turbocharged platforms as a direct upgrade or universal installation.
+
+Specifications
+• Part Type: Blow-off Valve (Vent-to-Atmosphere)
+• Construction: Billet Aluminum Body
+• Piston: Hardened Anodized Internal Piston
+• Spring: Adjustable Pressure Spring
+• Mounting: Flange / Universal Weld-on
+• Compatibility: Universal Turbocharged Applications
+• Manufacturer: HKS
+
+Highlights
+• Precise Compressor Surge Protection
+• Billet Aluminum Construction
+• Adjustable Spring Pressure
+• Signature HKS Release Sound
+• Improves Turbo Longevity
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 60,
+    createdAt: 1782299488000,
+    name: "Turbosmart Blow-off Valves",
+    category: "engine",
+    brand: "turbosmart",
+    platform: "blow-off-valves",
+    price: 280,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/turbosmart-blow-off-valves/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/turbosmart-blow-off-valves/1.jpg",
+      "/product-media/engine/turbo-performance/turbosmart-blow-off-valves/2.jpg",
+    ],
+    description: `Turbosmart Blow-off Valves
+
+Race-proven Turbosmart blow-off valve offering reliable boost venting and fast valve response.
+
+Turbosmart Blow-off Valves are globally trusted in motorsport and street performance for their fast actuation, reliable sealing, and durable construction. Featuring a precision diaphragm and adjustable spring preload, the valve vents excess boost pressure smoothly while protecting the turbocharger and intake system. Ideal for high-boost builds and a popular direct upgrade across turbocharged platforms.
+
+Specifications
+• Part Type: Blow-off Valve (Adjustable)
+• Construction: Anodized Aluminum Body
+• Actuation: Precision Diaphragm Design
+• Spring: Adjustable Preload
+• Mounting: Flange / Universal
+• Compatibility: Universal Turbocharged Applications
+• Manufacturer: Turbosmart
+
+Highlights
+• Fast Valve Response
+• Motorsport-Proven Reliability
+• Adjustable Spring Preload
+• Durable Anodized Construction
+• Protects Turbo and Intake System
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 61,
+    createdAt: 1782299488000,
+    name: "BorgWarner EFR Series",
+    category: "engine",
+    brand: "borgwarner",
+    platform: "borgwarner-efr",
+    price: 2199,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 550 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/borgwarner-efr-series/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/borgwarner-efr-series/1.jpg",
+      "/product-media/engine/turbo-performance/borgwarner-efr-series/2.jpg",
+      "/product-media/engine/turbo-performance/borgwarner-efr-series/3.jpg",
+    ],
+    description: `BorgWarner EFR Series
+
+Advanced BorgWarner EFR turbocharger combining Gamma-Ti turbine technology with rapid spool and high-flow performance.
+
+The BorgWarner EFR (Engineered For Racing) Series represents one of the most advanced turbocharger platforms available, featuring a lightweight Gamma-Ti turbine wheel, dual-row ceramic ball bearing cartridge, and integrated boost control provisions. Engineered for fast spool and consistent high-rpm flow, the EFR series delivers exceptional response and reliability for serious performance and motorsport builds.
+
+Specifications
+• Part Type: Ball Bearing Turbocharger
+• Turbine Wheel: Gamma-Ti Lightweight Alloy
+• Bearing: Dual-Row Ceramic Ball Bearing
+• Boost Control: Integrated Provisions
+• Power Capability: Up to 550 HP
+• Compatibility: Universal Performance Applications
+• Manufacturer: BorgWarner
+
+Highlights
+• Gamma-Ti Turbine Technology
+• Rapid Spool Response
+• Ceramic Ball Bearing Cartridge
+• Motorsport Engineered Reliability
+• High-Flow Performance Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 62,
+    createdAt: 1782299488000,
+    name: "Complete Turbo Kit (New)",
+    category: "engine",
+    brand: "garrett",
+    platform: "complete-turbo-kit",
+    price: 3499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "+250 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/complete-turbo-kit/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/complete-turbo-kit/1.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/2.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/3.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/4.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/5.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/6.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/7.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/8.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/9.jpg",
+      "/product-media/engine/turbo-performance/complete-turbo-kit/10.jpg",
+    ],
+    description: `Complete Turbo Kit (New)
+
+Complete bolt-on turbocharger kit with all components required for a reliable forced-induction upgrade.
+
+This Complete Turbo Kit includes everything needed for a clean forced-induction installation, including the turbocharger, manifold, intercooler, piping, wastegate, blow-off valve, and supporting hardware. Engineered as a matched system for consistent boost delivery and reliable power gains, it is ideal for enthusiasts seeking a comprehensive performance upgrade in a single package.
+
+Specifications
+• Kit Type: Complete Bolt-on Turbo System
+• Includes: Turbocharger, Manifold, Intercooler, Piping
+• Boost Control: Wastegate + Blow-off Valve Included
+• Power Gain: +250 HP (application dependent)
+• Hardware: Full Gaskets and Mounting Hardware
+• Compatibility: Application-Specific Fitment
+• Manufacturer: Garrett
+
+Highlights
+• Complete All-in-One Turbo Solution
+• Matched Components for Reliable Boost
+• Significant Power Gains
+• Includes Wastegate and Blow-off Valve
+• Comprehensive Installation Hardware
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 63,
+    createdAt: 1782299488000,
+    name: "Exhaust Systems Catback",
+    category: "engine",
+    brand: "hks",
+    platform: "exhaust-systems",
+    price: 899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/exhaust-catback/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/exhaust-catback/1.jpg",
+      "/product-media/engine/turbo-performance/exhaust-catback/2.jpg",
+      "/product-media/engine/turbo-performance/exhaust-catback/3.jpg",
+      "/product-media/engine/turbo-performance/exhaust-catback/4.jpg",
+    ],
+    description: `Exhaust Systems Catback
+
+High-flow catback exhaust system engineered for improved flow, weight savings, and an aggressive performance tone.
+
+This Catback Exhaust System replaces the factory exhaust from the catalytic converter back, using mandrel-bent stainless steel tubing for improved exhaust flow and reduced weight. Designed to enhance throttle response, free up power, and deliver an aggressive yet refined tone, it bolts on as a direct-fit performance upgrade with all necessary hardware.
+
+Specifications
+• Part Type: Catback Exhaust System
+• Material: T304 Stainless Steel
+• Tubing: Mandrel-Bent High-Flow Design
+• Tip: Polished Stainless Tip
+• Fitment: Direct Bolt-on
+• Compatibility: Application-Specific Fitment
+• Manufacturer: HKS
+
+Highlights
+• Mandrel-Bent High-Flow Tubing
+• T304 Stainless Construction
+• Improved Throttle Response
+• Aggressive Performance Tone
+• Direct Bolt-on Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 64,
+    createdAt: 1782299488000,
+    name: "Exhaust Systems Downpipe",
+    category: "engine",
+    brand: "hks",
+    platform: "exhaust-systems",
+    price: 549,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/exhaust-downpipe/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/exhaust-downpipe/1.jpg",
+      "/product-media/engine/turbo-performance/exhaust-downpipe/2.jpg",
+      "/product-media/engine/turbo-performance/exhaust-downpipe/3.jpg",
+      "/product-media/engine/turbo-performance/exhaust-downpipe/4.jpg",
+      "/product-media/engine/turbo-performance/exhaust-downpipe/5.jpg",
+      "/product-media/engine/turbo-performance/exhaust-downpipe/6.jpg",
+    ],
+    description: `Exhaust Systems Downpipe
+
+High-flow downpipe designed to reduce backpressure and unlock turbocharged performance.
+
+This performance Downpipe replaces the restrictive factory unit with a high-flow design that reduces exhaust backpressure and improves turbo spool and power delivery. Constructed from stainless steel with precision flanges for a leak-free fit, it is a popular foundational upgrade for turbocharged performance builds.
+
+Specifications
+• Part Type: Performance Downpipe
+• Material: T304 Stainless Steel
+• Design: High-Flow / Reduced Backpressure
+• Flanges: Precision CNC Flanges
+• Fitment: Direct Bolt-on
+• Compatibility: Turbocharged Application-Specific Fitment
+• Manufacturer: HKS
+
+Highlights
+• Reduced Exhaust Backpressure
+• Improved Turbo Spool
+• Stainless Steel Construction
+• Precision Leak-Free Flanges
+• Foundational Turbo Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 65,
+    createdAt: 1782299488000,
+    name: "Garrett GTX3076R Turbo Kit",
+    category: "engine",
+    brand: "garrett",
+    platform: "gtx3076r-turbo-kit",
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 650 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/1.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/2.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/3.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/4.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/5.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3076r-turbo-kit/6.jpg",
+    ],
+    description: `Garrett GTX3076R Turbo Kit
+
+Garrett GTX3076R turbocharger kit delivering proven high-flow performance and strong mid-range response.
+
+The Garrett GTX3076R is one of the most popular performance turbochargers available, featuring a forged fully-machined billet compressor wheel and dual ball bearing cartridge for fast spool and high-rpm flow. Supplied as a performance kit, it balances rapid response with strong top-end power, making it ideal for street and track builds targeting up to 650 horsepower.
+
+Specifications
+• Part Type: Ball Bearing Turbocharger Kit
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 650 HP
+• Housing: Multiple Turbine A/R Options
+• Compatibility: Universal Performance Applications
+• Manufacturer: Garrett
+
+Highlights
+• Forged Billet Compressor Wheel
+• Dual Ball Bearing Cartridge
+• Fast Spool and High-Flow
+• Proven Garrett GTX Performance
+• Ideal for Street and Track
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 66,
+    createdAt: 1782299488000,
+    name: "Garrett GTX3582R Kit",
+    category: "engine",
+    brand: "garrett",
+    platform: "gtx3582r-kit",
+    price: 2899,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 770 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/garrett-gtx3582r-kit/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/garrett-gtx3582r-kit/1.jpg",
+      "/product-media/engine/turbo-performance/garrett-gtx3582r-kit/2.jpg",
+    ],
+    description: `Garrett GTX3582R Kit
+
+Garrett GTX3582R turbocharger kit built for high-horsepower performance with strong top-end flow.
+
+The Garrett GTX3582R is a larger-frame performance turbocharger designed for builds targeting higher horsepower while maintaining usable response. Featuring a forged billet compressor wheel and dual ball bearing cartridge, it delivers excellent high-rpm airflow and proven reliability. Supplied as a complete kit, it supports power targets up to 770 horsepower for serious street and track applications.
+
+Specifications
+• Part Type: Ball Bearing Turbocharger Kit
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 770 HP
+• Housing: Multiple Turbine A/R Options
+• Compatibility: Universal Performance Applications
+• Manufacturer: Garrett
+
+Highlights
+• Forged Billet Compressor Wheel
+• High-Horsepower Capability
+• Strong Top-End Airflow
+• Proven Garrett GTX Reliability
+• Ideal for Big-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 67,
+    createdAt: 1782299488000,
+    name: "Hybrid Turbo Audi Kits",
+    category: "engine",
+    brand: "garrett",
+    platform: "hybrid-turbo-kits",
+    price: 1899,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "+150 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/hybrid-turbo-audi-kits/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/hybrid-turbo-audi-kits/1.jpg",
+    ],
+    description: `Hybrid Turbo Audi Kits
+
+Hybrid turbocharger upgrade kit for Audi platforms, increasing flow capacity while retaining factory fitment.
+
+Hybrid Turbo Audi Kits upgrade the factory turbocharger with uprated billet compressor and turbine components to increase flow and power while retaining OEM-style fitment and reliability. Engineered as a direct replacement for popular Audi turbocharged platforms, these hybrid units deliver strong mid-range gains and improved response without major fabrication.
+
+Specifications
+• Part Type: Hybrid Turbocharger Upgrade
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: +150 HP (application dependent)
+• Platform: Audi Turbocharged Engines
+• Compatibility: Audi 2.0 TFSI / Performance Platforms
+• Manufacturer: Garrett
+
+Highlights
+• Uprated Billet Compressor
+• Retains Factory Fitment
+• Strong Mid-Range Gains
+• Improved Throttle Response
+• Direct Replacement Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 68,
+    createdAt: 1782299488000,
+    name: "Hybrid Turbo BMW",
+    category: "engine",
+    brand: "garrett",
+    platform: "hybrid-turbo-kits",
+    price: 1999,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "+180 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/hybrid-turbo-bmw/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/1.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/2.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/3.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/4.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/5.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/6.jpg",
+      "/product-media/engine/turbo-performance/hybrid-turbo-bmw/7.jpg",
+    ],
+    description: `Hybrid Turbo BMW
+
+Hybrid turbocharger upgrade for BMW turbocharged platforms, increasing power while retaining factory-style fitment.
+
+The Hybrid Turbo BMW upgrade replaces the factory turbocharger internals with uprated billet components to increase airflow and power output while maintaining OEM-style fitment and reliability. Engineered for popular BMW turbocharged inline-six platforms, it delivers strong mid-range and top-end gains with a clean direct-replacement installation.
+
+Specifications
+• Part Type: Hybrid Turbocharger Upgrade
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: +180 HP (application dependent)
+• Platform: BMW Turbocharged Engines
+• Compatibility: BMW N54 / N55 Turbocharged Platforms
+• Manufacturer: Garrett
+
+Highlights
+• Uprated Billet Compressor
+• Retains Factory Fitment
+• Strong Mid-Range and Top-End Gains
+• Improved Throttle Response
+• Direct Replacement Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 69,
+    createdAt: 1782299488000,
+    name: "Intake Systems",
+    category: "engine",
+    brand: "hks",
+    platform: "intakes",
+    price: 349,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/intake-systems/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/intake-systems/1.jpg",
+    ],
+    description: `Intake Systems
+
+High-flow cold air intake system designed to improve airflow, throttle response, and induction sound.
+
+This Intake System replaces the restrictive factory airbox with a high-flow filter and mandrel-formed intake tube to increase airflow and improve throttle response. Designed for a direct-fit installation, it enhances induction sound and complements both turbocharged and naturally aspirated performance builds.
+
+Specifications
+• Part Type: High-Flow Cold Air Intake
+• Filter: Reusable High-Flow Element
+• Tube: Mandrel-Formed Intake Pipe
+• Fitment: Direct Bolt-on
+• Compatibility: Application-Specific Fitment
+• Manufacturer: HKS
+
+Highlights
+• Increased Airflow
+• Improved Throttle Response
+• Reusable High-Flow Filter
+• Enhanced Induction Sound
+• Direct Bolt-on Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 70,
+    createdAt: 1782299488000,
+    name: "Intercoolers (Front Mount Kits)",
+    category: "engine",
+    brand: "garrett",
+    platform: "intercoolers",
+    price: 749,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/1.jpg",
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/2.jpg",
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/3.jpg",
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/4.jpg",
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/5.jpg",
+      "/product-media/engine/turbo-performance/intercoolers-front-mount-kits/6.jpg",
+    ],
+    description: `Intercoolers (Front Mount Kits)
+
+Front-mount intercooler kit engineered to reduce intake temperatures and sustain consistent boost performance.
+
+This Front Mount Intercooler (FMIC) Kit upgrades the factory cooling system with a high-capacity bar-and-plate core and mandrel-bent piping to reduce intake air temperatures and prevent heat soak under sustained boost. Engineered for efficient cooling and minimal pressure drop, it is a core upgrade for reliable turbocharged power.
+
+Specifications
+• Part Type: Front Mount Intercooler Kit
+• Core: Bar-and-Plate High-Capacity
+• Piping: Mandrel-Bent Aluminum
+• Couplers: Silicone Couplers + Clamps Included
+• Benefit: Reduced Intake Temperatures
+• Compatibility: Application-Specific Fitment
+• Manufacturer: Garrett
+
+Highlights
+• High-Capacity Bar-and-Plate Core
+• Reduced Intake Air Temperatures
+• Prevents Heat Soak Under Boost
+• Complete Piping and Coupler Kit
+• Sustains Consistent Boost
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 71,
+    createdAt: 1782299488000,
+    name: "Precision 6266 Turbo",
+    category: "engine",
+    brand: "precision",
+    platform: "precision-6266",
+    price: 1649,
+    stock: true,
+    condition: "brand-new",
+    horsepower: "Up to 735 HP",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/precision-6266-turbo/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/precision-6266-turbo/1.jpg",
+      "/product-media/engine/turbo-performance/precision-6266-turbo/2.jpg",
+      "/product-media/engine/turbo-performance/precision-6266-turbo/3.jpg",
+    ],
+    description: `Precision 6266 Turbo
+
+Precision 6266 dual ball bearing turbocharger offering a proven balance of spool and high-horsepower capability.
+
+The Precision 6266 (PT6266) is a highly popular performance turbocharger known for its versatile balance of quick spool and strong top-end power. Featuring a CEA billet compressor wheel and available in journal or dual ball bearing configurations, the 6266 supports up to 735 horsepower and is a favorite for street and competition builds.
+
+Specifications
+• Part Type: Performance Turbocharger
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing Option
+• Power Capability: Up to 735 HP
+• Sizing: 62mm Inducer / 66mm Exducer
+• Compatibility: Universal Performance Applications
+• Manufacturer: Precision
+
+Highlights
+• CEA Billet Compressor Wheel
+• Balanced Spool and Top-End
+• Up to 735 HP Capability
+• Proven Street and Race Turbo
+• Versatile Fitment Options
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 72,
+    createdAt: 1782299488000,
+    name: "External Wastegates",
+    category: "engine",
+    brand: "turbosmart",
+    platform: "wastegates",
+    price: 389,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/external-wastegates/1.webp",
+    images: [
+      "/product-media/engine/turbo-performance/external-wastegates/1.webp",
+      "/product-media/engine/turbo-performance/external-wastegates/2.webp",
+    ],
+    description: `External Wastegates
+
+Precision external wastegate providing accurate boost control for high-performance turbocharged systems.
+
+This External Wastegate delivers precise boost control by diverting exhaust gas away from the turbine for stable, repeatable boost pressure. Constructed from billet and stainless components with interchangeable springs, it is engineered for high-boost applications where accurate control and consistency are critical.
+
+Specifications
+• Part Type: External Wastegate
+• Construction: Billet Aluminum + Stainless Valve
+• Springs: Interchangeable Pressure Springs
+• Sizing: 38mm / 44mm Options
+• Cooling: Water-Cooled Provisions
+• Compatibility: Universal Turbocharged Applications
+• Manufacturer: Turbosmart
+
+Highlights
+• Precise External Boost Control
+• Billet and Stainless Construction
+• Interchangeable Pressure Springs
+• Stable Repeatable Boost
+• Ideal for High-Boost Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 73,
+    createdAt: 1782299488000,
+    name: "Internal Wastegates",
+    category: "engine",
+    brand: "turbosmart",
+    platform: "wastegates",
+    price: 299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/engine/turbo-performance/internal-wastegates/1.jpg",
+    images: [
+      "/product-media/engine/turbo-performance/internal-wastegates/1.jpg",
+      "/product-media/engine/turbo-performance/internal-wastegates/2.jpg",
+      "/product-media/engine/turbo-performance/internal-wastegates/3.jpg",
+      "/product-media/engine/turbo-performance/internal-wastegates/4.jpg",
+      "/product-media/engine/turbo-performance/internal-wastegates/5.jpg",
+      "/product-media/engine/turbo-performance/internal-wastegates/6.jpg",
+      "/product-media/engine/turbo-performance/internal-wastegates/7.jpg",
+    ],
+    description: `Internal Wastegates
+
+Internal wastegate actuator engineered for reliable factory-style boost control and consistent response.
+
+This Internal Wastegate actuator provides reliable boost control for turbochargers using an integrated wastegate port. Featuring a durable diaphragm and adjustable actuator rod, it delivers consistent actuation and stable boost pressure while retaining a compact factory-style installation.
+
+Specifications
+• Part Type: Internal Wastegate Actuator
+• Construction: Billet Housing + Durable Diaphragm
+• Rod: Adjustable Actuator Rod
+• Pressure: Multiple Spring Ratings
+• Mounting: Compact Factory-Style
+• Compatibility: Internal-Gate Turbochargers
+• Manufacturer: Turbosmart
+
+Highlights
+• Reliable Boost Control
+• Adjustable Actuator Rod
+• Consistent Actuation
+• Compact Factory-Style Fit
+• Durable Diaphragm Design
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 74,
+    createdAt: 1782370624000,
+    name: "ATE OEM Euro Brake Kit",
+    category: "brakes",
+    brand: "ate-oem-kits",
+    price: 640,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/ate-oem-euro-kit/1.jpg",
+    images: [
+      "/product-media/brakes/ate-oem-euro-kit/1.jpg",
+      "/product-media/brakes/ate-oem-euro-kit/2.jpg",
+      "/product-media/brakes/ate-oem-euro-kit/3.jpg",
+    ],
+    description: `ATE OEM Euro Brake Kit
+
+OEM-grade European brake kit engineered for precise pedal feel, consistent stopping power, and direct factory fitment.
+
+The ATE OEM Euro Brake Kit delivers original-equipment braking performance for European platforms, pairing precision-machined rotors with premium friction pads for smooth, fade-resistant stops. Built to factory tolerances for a direct bolt-on fit, it restores confident pedal feel and reliable everyday performance without modification.
+
+Specifications
+• Part Type: Complete Brake Kit (Rotors + Pads)
+• Rotor Construction: Precision-Machined Vented Discs
+• Pad Compound: Low-Dust OEM-Grade Friction
+• Fitment: Direct OEM Replacement (European Platforms)
+• Hardware: Mounting Hardware Included
+• Manufacturer: ATE
+
+Highlights
+• Genuine OEM-Grade Braking Feel
+• Direct Bolt-On Factory Fitment
+• Low-Dust, Fade-Resistant Pads
+• Precision-Machined Vented Rotors
+• Reliable Everyday Performance
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 75,
+    createdAt: 1782370624000,
+    name: "Brembo GT Big Brake Kit",
+    category: "brakes",
+    brand: "brembo-gt-kits",
+    price: 2950,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/brembo-gt/1.jpg",
+    images: [
+      "/product-media/brakes/brembo-gt/1.jpg",
+      "/product-media/brakes/brembo-gt/2.jpg",
+      "/product-media/brakes/brembo-gt/3.jpg",
+      "/product-media/brakes/brembo-gt/4.jpg",
+      "/product-media/brakes/brembo-gt/5.jpg",
+    ],
+    description: `Brembo GT Big Brake Kit
+
+High-performance Brembo GT big brake kit delivering motorsport-grade stopping power, fade resistance, and aggressive styling.
+
+The Brembo GT Big Brake Kit is engineered for serious street and track performance, featuring multi-piston monobloc calipers, two-piece floating rotors, and high-performance pads for exceptional heat management and repeatable stopping power. Supplied as a complete bolt-on upgrade with braided lines and mounting brackets, it dramatically improves braking feel while adding the unmistakable Brembo look.
+
+Specifications
+• Part Type: Big Brake Kit (BBK)
+• Calipers: Multi-Piston Monobloc Aluminum
+• Rotors: Two-Piece Floating Drilled/Slotted Discs
+• Pad Compound: High-Performance Street/Track
+• Lines: Stainless Braided Brake Lines Included
+• Manufacturer: Brembo
+
+Highlights
+• Motorsport-Grade Stopping Power
+• Multi-Piston Monobloc Calipers
+• Two-Piece Floating Rotors
+• Superior Heat & Fade Management
+• Complete Bolt-On Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 76,
+    createdAt: 1782370624000,
+    name: "Brembo OEM Brake Kit",
+    category: "brakes",
+    brand: "brembo-oem",
+    price: 720,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/brembo-oem/1.webp",
+    images: [
+      "/product-media/brakes/brembo-oem/1.webp",
+      "/product-media/brakes/brembo-oem/2.webp",
+      "/product-media/brakes/brembo-oem/3.webp",
+    ],
+    description: `Brembo OEM Brake Kit
+
+Genuine Brembo OEM-grade brake kit offering factory-matched performance, quiet operation, and direct replacement fitment.
+
+The Brembo OEM Brake Kit provides original-equipment braking quality trusted by leading manufacturers, combining precision-cast rotors with premium low-dust pads for smooth, consistent stopping power. Engineered as a direct replacement, it restores factory braking feel and reliability with the confidence of the Brembo name.
+
+Specifications
+• Part Type: Complete Brake Kit (Rotors + Pads)
+• Rotor Construction: Precision-Cast Vented Discs
+• Pad Compound: Premium Low-Dust Friction
+• Fitment: Direct OEM Replacement
+• Hardware: Mounting Hardware Included
+• Manufacturer: Brembo
+
+Highlights
+• Genuine Brembo OEM Quality
+• Quiet, Low-Dust Operation
+• Direct Replacement Fitment
+• Consistent Factory Braking Feel
+• Trusted Manufacturer Reliability
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 77,
+    createdAt: 1782370624000,
+    name: "EBC Performance Brake Kit",
+    category: "brakes",
+    brand: "ebc-rotors-pads",
+    price: 480,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/ebc-performance/1.jpg",
+    images: [
+      "/product-media/brakes/ebc-performance/1.jpg",
+      "/product-media/brakes/ebc-performance/2.jpg",
+    ],
+    description: `EBC Performance Brake Kit
+
+EBC performance brake kit built for stronger bite, reduced fade, and dependable stopping power on street and spirited driving.
+
+The EBC Performance Brake Kit upgrades factory braking with performance-coated rotors and EBC's renowned friction pads for improved bite, lower brake dust, and excellent resistance to fade under repeated hard stops. Designed for a direct fit, it delivers a confident, sporty pedal feel while remaining street-friendly for daily use.
+
+Specifications
+• Part Type: Performance Brake Kit (Rotors + Pads)
+• Rotor Construction: Performance-Coated Vented Discs
+• Pad Compound: EBC High-Friction Performance
+• Fitment: Direct Bolt-On Replacement
+• Hardware: Mounting Hardware Included
+• Manufacturer: EBC
+
+Highlights
+• Stronger Initial Bite
+• Reduced Brake Fade
+• Lower Brake Dust
+• Performance-Coated Rotors
+• Street-Friendly Daily Use
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 78,
+    createdAt: 1782370624000,
+    name: "EBC Brake Rotors & Pads Kit",
+    category: "brakes",
+    brand: "ebc-rotors-pads",
+    price: 520,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/ebc-rotors-pads/1.webp",
+    images: [
+      "/product-media/brakes/ebc-rotors-pads/1.webp",
+      "/product-media/brakes/ebc-rotors-pads/2.webp",
+      "/product-media/brakes/ebc-rotors-pads/3.webp",
+    ],
+    description: `EBC Brake Rotors & Pads Kit
+
+Matched EBC rotors and pads kit delivering balanced performance, smooth modulation, and long-lasting braking confidence.
+
+The EBC Brake Rotors & Pads Kit pairs precision EBC discs with matched performance pads for optimal bedding, smooth modulation, and consistent stopping power. Engineered as a complete matched set, it improves braking response and durability while keeping dust and noise low for comfortable everyday driving.
+
+Specifications
+• Part Type: Matched Rotors & Pads Kit
+• Rotor Construction: Precision Vented Discs
+• Pad Compound: EBC Performance Friction
+• Fitment: Direct Bolt-On Replacement
+• Hardware: Mounting Hardware Included
+• Manufacturer: EBC
+
+Highlights
+• Matched Rotor & Pad Set
+• Smooth, Consistent Modulation
+• Long-Lasting Braking Confidence
+• Low Dust and Noise
+• Easy Direct Installation
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 79,
+    createdAt: 1782370624000,
+    name: "Wilwood Big Brake Kit",
+    category: "brakes",
+    brand: "wilwood-big-brake-kits",
+    price: 1890,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/brakes/wilwood-big-brake/1.jpg",
+    images: [
+      "/product-media/brakes/wilwood-big-brake/1.jpg",
+      "/product-media/brakes/wilwood-big-brake/2.jpg",
+      "/product-media/brakes/wilwood-big-brake/3.jpg",
+      "/product-media/brakes/wilwood-big-brake/4.jpg",
+      "/product-media/brakes/wilwood-big-brake/5.jpg",
+      "/product-media/brakes/wilwood-big-brake/6.jpg",
+      "/product-media/brakes/wilwood-big-brake/7.jpg",
+      "/product-media/brakes/wilwood-big-brake/8.jpg",
+    ],
+    description: `Wilwood Big Brake Kit
+
+Wilwood big brake kit engineered for aggressive stopping power, lightweight performance, and serious track capability.
+
+The Wilwood Big Brake Kit delivers race-proven braking performance with forged multi-piston calipers, vented and slotted rotors, and high-temperature pads for exceptional fade resistance under extreme conditions. Lightweight and built as a complete bolt-on system, it provides powerful, repeatable stops for high-performance street and track builds.
+
+Specifications
+• Part Type: Big Brake Kit (BBK)
+• Calipers: Forged Multi-Piston Aluminum
+• Rotors: Vented & Slotted Performance Discs
+• Pad Compound: High-Temperature Performance
+• Hardware: Brackets & Lines Included
+• Manufacturer: Wilwood
+
+Highlights
+• Aggressive Race-Proven Stopping Power
+• Forged Lightweight Calipers
+• Vented & Slotted Rotors
+• Superior High-Temp Fade Resistance
+• Complete Bolt-On Track Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 80,
+    createdAt: 1782391020000,
+    name: "Audi DQ500 DSG Transmission",
+    category: "transmission",
+    brand: "audi",
+    price: 4200,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/audi-dq500-dsg/1.jpg",
+    images: [
+      "/product-media/transmission/audi-dq500-dsg/1.jpg",
+      "/product-media/transmission/audi-dq500-dsg/2.webp",
+      "/product-media/transmission/audi-dq500-dsg/3.webp",
+      "/product-media/transmission/audi-dq500-dsg/4.jpg",
+      "/product-media/transmission/audi-dq500-dsg/5.webp",
+      "/product-media/transmission/audi-dq500-dsg/6.jpg",
+    ],
+    description: `Audi DQ500 DSG Transmission
+
+High-torque 7-speed dual-clutch (DSG) transmission engineered for performance Audi and Volkswagen platforms.
+
+The Audi DQ500 is a 7-speed dual-clutch gearbox built to handle high torque loads, making it the go-to choice for 2.5 TFSI and 2.0 TSI performance builds. Offering lightning-fast shifts, robust internals, and proven reliability under boost, the DQ500 delivers race-bred shifting for both quattro all-wheel-drive and front-wheel-drive applications.
+
+Specifications
+• Type: 7-Speed Dual-Clutch (DSG)
+• Transmission Code: DQ500 (0BH)
+• Layout: Transverse
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Audi / VAG
+
+Highlights
+• Race-Proven Dual-Clutch Shifting
+• High Torque Capacity
+• Ideal for 2.5 TFSI / 2.0 TSI Builds
+• quattro AWD & FWD Compatible
+• Robust Performance Internals
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 81,
+    createdAt: 1782391020000,
+    name: "ZF 8HP70 Automatic Transmission for BMW 340i (F30)",
+    category: "transmission",
+    brand: "zf",
+    price: 3800,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "BMW 340i F30 N55 / B58",
+    partNumber: "ZF 8HP70",
+    topDemand: true,
+    thumbnail: "/product-media/transmission/bmw-zf-8hp70/1.jpg",
+    images: [
+      "/product-media/transmission/bmw-zf-8hp70/1.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/2.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/3.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/4.jpg",
+      "/product-media/transmission/bmw-zf-8hp70/5.jpg",
+    ],
+    description: `BMW ZF 8HP70 Transmission
+
+Smooth, fast-shifting ZF 8-speed automatic transmission trusted across BMW and performance swap builds.
+
+The ZF 8HP70 is one of the most refined and capable automatic transmissions ever produced, delivering seamless shifts, excellent efficiency, and strong torque capacity. Found behind countless BMW inline-6 and V8 applications, it is also a favorite for modern swaps thanks to its durability and aftermarket controller support.
+
+Specifications
+• Type: 8-Speed Automatic
+• Transmission Code: ZF 8HP70
+• Layout: Longitudinal
+• Torque Capacity: Up to ~700 Nm
+• Manufacturer: ZF
+
+Highlights
+• Lightning-Fast Automatic Shifts
+• Proven BMW Reliability
+• Strong Torque Capacity
+• Popular Swap Transmission
+• Excellent Aftermarket Support
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 82,
+    createdAt: 1782391020000,
+    name: "ZF 8HP90 Automatic Transmission for RAM 1500 TRX",
+    category: "transmission",
+    brand: "zf",
+    price: 4500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "RAM 1500 TRX 6.2L Supercharged HEMI",
+    partNumber: "ZF 8HP90",
+    thumbnail: "/product-media/transmission/bmw-zf-8hp90/1.jpg",
+    images: ["/product-media/transmission/bmw-zf-8hp90/1.jpg"],
+    description: `BMW ZF 8HP90 Transmission
+
+High-capacity ZF 8-speed automatic built for high-horsepower BMW M and performance applications.
+
+The ZF 8HP90 is the high-torque evolution of the 8HP family, engineered to handle the power of BMW M and high-output V8 builds. With reinforced internals and rapid, precise shifts, the 8HP90 is the preferred automatic for serious power applications and high-torque swaps demanding strength without sacrificing refinement.
+
+Specifications
+• Type: 8-Speed Automatic
+• Transmission Code: ZF 8HP90
+• Layout: Longitudinal
+• Torque Capacity: Up to ~1000 Nm
+• Manufacturer: ZF
+
+Highlights
+• High Torque Capacity
+• Reinforced Performance Internals
+• Ideal for BMW M / High-HP Builds
+• Fast, Precise Shifting
+• Premium Swap-Ready Automatic
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 83,
+    createdAt: 1782391020000,
+    name: "Ford Performance 10R80 Automatic Transmission for Mustang GT",
+    category: "transmission",
+    brand: "ford-performance",
+    price: 3600,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Ford Mustang GT S550 5.0L Coyote",
+    partNumber: "10R80",
+    thumbnail: "/product-media/transmission/ford-10r80/1.jpg",
+    images: [
+      "/product-media/transmission/ford-10r80/1.jpg",
+      "/product-media/transmission/ford-10r80/2.jpg",
+      "/product-media/transmission/ford-10r80/3.jpg",
+      "/product-media/transmission/ford-10r80/4.jpg",
+      "/product-media/transmission/ford-10r80/5.jpg",
+    ],
+    description: `Ford 10R80 Transmission
+
+Modern 10-speed automatic transmission delivering quick shifts and strong torque capacity for Mustang and F-150 builds.
+
+The Ford 10R80 is a 10-speed automatic engineered for performance and towing alike, found behind the 5.0L Coyote Mustang GT and F-150. Offering closely spaced ratios, rapid shifts, and proven strength, the 10R80 is increasingly popular for modern RWD swaps that demand both efficiency and high torque handling.
+
+Specifications
+• Type: 10-Speed Automatic
+• Transmission Code: 10R80
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Ford
+
+Highlights
+• 10 Closely-Spaced Ratios
+• Quick, Smooth Shifting
+• Coyote Mustang & F-150 Proven
+• Strong Towing & Performance Capacity
+• Modern RWD Swap Favorite
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 84,
+    createdAt: 1782391020000,
+    name: "GM 4L80E Transmission",
+    category: "transmission",
+    brand: "gm",
+    price: 2400,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/gm-4l80e/1.jpg",
+    images: [
+      "/product-media/transmission/gm-4l80e/1.jpg",
+      "/product-media/transmission/gm-4l80e/2.jpg",
+    ],
+    description: `GM 4L80E Transmission
+
+Heavy-duty GM 4-speed automatic transmission built for high-torque LS swaps, trucks, and performance builds.
+
+The GM 4L80E is a legendary heavy-duty 4-speed automatic derived from the TH400, known for its bulletproof strength and high torque capacity. Widely used behind LS engines, big-block builds, and trucks, the 4L80E is a proven choice when maximum durability is the priority for RWD applications.
+
+Specifications
+• Type: 4-Speed Automatic (Heavy-Duty)
+• Transmission Code: 4L80E
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: GM
+
+Highlights
+• Bulletproof Heavy-Duty Design
+• Ideal for LS & Big-Block Swaps
+• Proven Truck & Performance Use
+• High Torque Capacity
+• Simple, Reliable Electronics
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 85,
+    createdAt: 1782391020000,
+    name: "GM 6L80 Transmission",
+    category: "transmission",
+    brand: "gm",
+    price: 2600,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/gm-6l80/1.jpg",
+    images: [
+      "/product-media/transmission/gm-6l80/1.jpg",
+      "/product-media/transmission/gm-6l80/2.jpg",
+      "/product-media/transmission/gm-6l80/3.jpg",
+      "/product-media/transmission/gm-6l80/4.jpg",
+    ],
+    description: `GM 6L80 Transmission
+
+Versatile GM 6-speed automatic transmission offering smooth shifts and strong capacity for LS and LT swaps.
+
+The GM 6L80 is a 6-speed automatic that pairs modern shift quality with strong torque capacity, found behind LS and LT engines in Camaro, Silverado, and Corvette platforms. A popular upgrade over older 4-speed units, the 6L80 delivers better efficiency and drivability while remaining swap-friendly for RWD builds.
+
+Specifications
+• Type: 6-Speed Automatic
+• Transmission Code: 6L80
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: GM
+
+Highlights
+• Smooth 6-Speed Shifting
+• Ideal for LS / LT Swaps
+• Better Efficiency vs. 4-Speed Units
+• Strong Torque Capacity
+• Widely Supported Aftermarket
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 86,
+    createdAt: 1782391020000,
+    name: "Mercedes 722.9 Transmission",
+    category: "transmission",
+    brand: "mercedes-benz",
+    price: 3200,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/mercedes-722-9/1.jpg",
+    images: [
+      "/product-media/transmission/mercedes-722-9/1.jpg",
+      "/product-media/transmission/mercedes-722-9/2.jpg",
+      "/product-media/transmission/mercedes-722-9/3.jpg",
+      "/product-media/transmission/mercedes-722-9/4.jpg",
+    ],
+    description: `Mercedes 722.9 Transmission
+
+Refined Mercedes-Benz 7G-Tronic 7-speed automatic transmission delivering smooth, luxurious shifting.
+
+The Mercedes-Benz 722.9 (7G-Tronic) is a 7-speed automatic renowned for its smooth, refined shifts and broad application across the Mercedes lineup. Engineered for comfort and durability, it suits both rear-wheel-drive and 4MATIC all-wheel-drive platforms, making it a dependable replacement or swap option for Mercedes builds.
+
+Specifications
+• Type: 7-Speed Automatic (7G-Tronic)
+• Transmission Code: 722.9
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Mercedes-Benz
+
+Highlights
+• Smooth 7-Speed Shifting
+• Refined Luxury Drivability
+• RWD & 4MATIC Compatible
+• Proven Mercedes Reliability
+• Broad Platform Application
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 87,
+    createdAt: 1782391020000,
+    name: "Nissan CD009 6-Speed Manual Transmission for Nissan 350Z",
+    category: "transmission",
+    brand: "nissan",
+    price: 2900,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Nissan 350Z / 370Z VQ35DE",
+    partNumber: "CD009",
+    topDemand: true,
+    thumbnail: "/product-media/transmission/nissan-cd009-6-speed/1.webp",
+    images: [
+      "/product-media/transmission/nissan-cd009-6-speed/1.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/2.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/3.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/4.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/5.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/6.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/7.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/8.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/9.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/10.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/11.webp",
+      "/product-media/transmission/nissan-cd009-6-speed/12.webp",
+    ],
+    description: `Nissan CD009 6-Speed Transmission
+
+Strong, swap-friendly Nissan 6-speed manual transmission popular for high-horsepower builds.
+
+The Nissan CD009 is a 6-speed manual transmission from the 350Z/370Z (VQ) platform, prized for its strength and affordability as a swap gearbox. Commonly adapted behind LS, 2JZ, and other high-torque engines, the CD009 offers durable synchros and a robust case, making it a staple of the performance swap community for RWD builds.
+
+Specifications
+• Type: 6-Speed Manual
+• Transmission Code: CD009
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Nissan
+
+Highlights
+• Strong, Affordable Swap Gearbox
+• Popular Behind LS / 2JZ Builds
+• Durable Synchros & Case
+• Huge Adapter Support
+• Performance Community Favorite
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 88,
+    createdAt: 1782391020000,
+    name: "Toyota R154 Transmission",
+    category: "transmission",
+    brand: "toyota",
+    price: 3500,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/toyota-r154/1.jpg",
+    images: [
+      "/product-media/transmission/toyota-r154/1.jpg",
+      "/product-media/transmission/toyota-r154/2.jpg",
+      "/product-media/transmission/toyota-r154/3.jpg",
+      "/product-media/transmission/toyota-r154/4.webp",
+      "/product-media/transmission/toyota-r154/5.webp",
+      "/product-media/transmission/toyota-r154/6.jpg",
+      "/product-media/transmission/toyota-r154/7.jpg",
+    ],
+    description: `Toyota R154 Transmission
+
+Legendary Toyota 5-speed manual transmission renowned for its strength behind turbocharged inline-6 engines.
+
+The Toyota R154 is a 5-speed manual transmission famous for its durability behind the 1JZ and 2JZ engines in the Supra MK3 and Soarer. Capable of handling substantial torque, the R154 is a favorite for RWD performance and swap builds where a strong, proven manual gearbox is essential.
+
+Specifications
+• Type: 5-Speed Manual
+• Transmission Code: R154
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Toyota
+
+Highlights
+• Legendary Strength Behind 1JZ / 2JZ
+• Proven Supra MK3 Heritage
+• Durable Performance Manual
+• Popular RWD Swap Gearbox
+• Strong Aftermarket Support
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 89,
+    createdAt: 1782391020000,
+    name: "Toyota V160 Transmission",
+    category: "transmission",
+    brand: "toyota",
+    price: 5200,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/toyota-v160/1.jpg",
+    images: [
+      "/product-media/transmission/toyota-v160/1.jpg",
+      "/product-media/transmission/toyota-v160/2.jpg",
+      "/product-media/transmission/toyota-v160/3.jpg",
+      "/product-media/transmission/toyota-v160/4.jpg",
+      "/product-media/transmission/toyota-v160/5.jpg",
+    ],
+    description: `Toyota V160 Transmission
+
+Highly sought-after Getrag-built 6-speed manual transmission from the legendary Toyota Supra MK4.
+
+The Toyota V160 is a Getrag-built 6-speed manual transmission originally fitted to the MK4 Supra, prized for its exceptional strength and precise shift feel. One of the most desirable performance gearboxes ever produced, the V160 reliably handles big power and remains a premium choice for serious 2JZ RWD builds.
+
+Specifications
+• Type: 6-Speed Manual (Getrag)
+• Transmission Code: V160
+• Layout: Longitudinal
+• Torque Capacity: Very High
+• Manufacturer: Toyota / Getrag
+
+Highlights
+• Legendary Supra MK4 Gearbox
+• Exceptional Strength & Shift Feel
+• Handles Big-Power 2JZ Builds
+• Highly Collectible & Sought-After
+• Premium Performance Manual
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 90,
+    createdAt: 1782391020000,
+    name: "Transmission Cooler Kit",
+    category: "transmission",
+    brand: "universal",
+    price: 320,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/transmission-cooler-kit/1.jpg",
+    images: [
+      "/product-media/transmission/transmission-cooler-kit/1.jpg",
+      "/product-media/transmission/transmission-cooler-kit/2.jpg",
+      "/product-media/transmission/transmission-cooler-kit/3.jpg",
+      "/product-media/transmission/transmission-cooler-kit/4.jpg",
+    ],
+    description: `Transmission Cooler Kit
+
+Universal external transmission cooler kit that lowers ATF temperatures and extends transmission life.
+
+This Transmission Cooler Kit helps protect automatic transmissions from heat-related wear by lowering fluid temperatures under towing, track, and high-load conditions. Featuring an efficient cooler core and complete mounting hardware, it is a simple, effective upgrade for any build that demands consistent transmission performance and longevity.
+
+Specifications
+• Type: External ATF Cooler Kit
+• Fitment: Universal
+• Core: High-Efficiency Cooler
+• Hardware: Mounting & Line Hardware Included
+• Manufacturer: Universal
+
+Highlights
+• Lowers ATF Temperatures
+• Extends Transmission Life
+• Ideal for Towing & Track Use
+• Universal Bolt-On Fitment
+• Complete Mounting Hardware
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 91,
+    createdAt: 1782391020000,
+    name: "Transmission Rebuild Kit",
+    category: "transmission",
+    brand: "universal",
+    price: 680,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/transmission-rebuild-kit/1.jpg",
+    images: [
+      "/product-media/transmission/transmission-rebuild-kit/1.jpg",
+      "/product-media/transmission/transmission-rebuild-kit/2.jpg",
+    ],
+    description: `Transmission Rebuild Kit
+
+Comprehensive transmission rebuild kit with the clutches, seals, gaskets, and filter needed to restore performance.
+
+This Transmission Rebuild Kit provides the essential components to refresh and restore an automatic transmission to like-new operation. Including friction clutches, steels, seals, gaskets, and a filter, it is the foundation of a reliable rebuild for restoring smooth, dependable shifting. Confirm your transmission model at checkout for correct fitment.
+
+Specifications
+• Type: Automatic Transmission Rebuild Kit
+• Includes: Clutches, Seals, Gaskets, Filter
+• Fitment: Application-Specific
+• Quality: OE-Grade Components
+• Manufacturer: Universal
+
+Highlights
+• Complete Overhaul Components
+• OE-Grade Friction & Seals
+• Restores Smooth Shifting
+• Foundation for a Reliable Rebuild
+• Cost-Effective Transmission Refresh
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 92,
+    createdAt: 1782391020000,
+    name: "Tremec Magnum 6-Speed Transmission for Ford Mustang S550",
+    category: "transmission",
+    brand: "tremec",
+    price: 3300,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Ford Mustang S550 Coyote / V8",
+    partNumber: "T56 Magnum",
+    topDemand: true,
+    thumbnail: "/product-media/transmission/tremec-t56-magnum/1.webp",
+    images: ["/product-media/transmission/tremec-t56-magnum/1.webp"],
+    description: `Tremec T56 Magnum Transmission
+
+High-strength Tremec 6-speed manual transmission engineered for high-horsepower performance and swap builds.
+
+The Tremec T56 Magnum is a 6-speed manual transmission built to handle serious power, with a torque capacity rated up to 700 lb-ft. Featuring robust gears and triple-cone synchros, it is the gold standard for RWD performance and swap applications across GM, Ford, and custom builds demanding strength and precise shifting.
+
+Specifications
+• Type: 6-Speed Manual
+• Transmission Code: T56 Magnum
+• Layout: Longitudinal
+• Torque Capacity: Up to 700 lb-ft
+• Manufacturer: Tremec
+
+Highlights
+• Up to 700 lb-ft Capacity
+• Triple-Cone Synchros
+• Gold Standard Performance Manual
+• Ideal for GM / Ford / Custom Swaps
+• Precise, Durable Shifting
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 93,
+    createdAt: 1782391020000,
+    name: "Tremec TR-6060 6-Speed Transmission for Chevrolet Camaro SS",
+    category: "transmission",
+    brand: "tremec",
+    price: 3100,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    fitment: "Chevrolet Camaro SS LT1 / LT4",
+    partNumber: "TR-6060",
+    thumbnail: "/product-media/transmission/tremec-tr6060/1.jpg",
+    images: [
+      "/product-media/transmission/tremec-tr6060/1.jpg",
+      "/product-media/transmission/tremec-tr6060/2.jpg",
+      "/product-media/transmission/tremec-tr6060/3.jpg",
+      "/product-media/transmission/tremec-tr6060/4.jpg",
+      "/product-media/transmission/tremec-tr6060/5.jpg",
+      "/product-media/transmission/tremec-tr6060/6.jpg",
+      "/product-media/transmission/tremec-tr6060/7.jpg",
+      "/product-media/transmission/tremec-tr6060/8.jpg",
+      "/product-media/transmission/tremec-tr6060/9.jpg",
+      "/product-media/transmission/tremec-tr6060/10.jpg",
+      "/product-media/transmission/tremec-tr6060/11.jpg",
+      "/product-media/transmission/tremec-tr6060/12.jpg",
+    ],
+    description: `Tremec TR6060 Transmission
+
+Factory-grade Tremec 6-speed manual transmission found behind modern American performance V8s.
+
+The Tremec TR6060 is a 6-speed manual transmission fitted from the factory to high-performance platforms including the Camaro SS, Mustang GT, Challenger, and Viper. Offering strong torque capacity, refined shift quality, and proven durability, the TR6060 is an excellent choice for RWD performance and swap builds requiring an OEM-grade manual.
+
+Specifications
+• Type: 6-Speed Manual
+• Transmission Code: TR6060
+• Layout: Longitudinal
+• Torque Capacity: High-Torque Rated
+• Manufacturer: Tremec
+
+Highlights
+• Factory-Fitted Performance Manual
+• Camaro / Mustang / Challenger Proven
+• Strong Torque Capacity
+• Refined Shift Quality
+• Durable OEM-Grade Build
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 94,
+    createdAt: 1782391020000,
+    name: "ZF 8HP Swap Package",
+    category: "transmission",
+    brand: "zf",
+    price: 5400,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/transmission/zf-8hp-swap-package/1.jpg",
+    images: [
+      "/product-media/transmission/zf-8hp-swap-package/1.jpg",
+      "/product-media/transmission/zf-8hp-swap-package/2.jpg",
+      "/product-media/transmission/zf-8hp-swap-package/3.jpg",
+      "/product-media/transmission/zf-8hp-swap-package/4.jpg",
+    ],
+    description: `ZF 8HP Swap Package
+
+Complete ZF 8-speed automatic swap package with the transmission and control hardware needed for a modern conversion.
+
+The ZF 8HP Swap Package bundles the renowned ZF 8HP automatic with the standalone control hardware required to run it in a swap build. Combining lightning-fast shifts, broad torque capacity, and plug-and-play control support, this package is the complete solution for upgrading to a modern 8-speed automatic in performance and custom RWD applications.
+
+Specifications
+• Type: 8-Speed Automatic Swap Package
+• Transmission Code: ZF 8HP
+• Layout: Longitudinal
+• Includes: Standalone Controller Support
+• Manufacturer: ZF
+
+Highlights
+• Complete Swap-Ready Package
+• Standalone Control Hardware
+• Lightning-Fast Automatic Shifts
+• Broad Torque Capacity
+• Modern 8-Speed Conversion Solution
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 95,
+    createdAt: 1782404477000,
+    name: "Hybrid Turbocharger Upgrade for Audi RS3 and TT RS 2.5 TFSI",
+    category: "turbocharger",
+    brand: "audi",
+    price: 2199,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/audi-rs3-hybrid-turbo/1.jpg",
+    images: [
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/1.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/2.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/3.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/4.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/5.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/6.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/7.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/8.jpg",
+      "/product-media/turbocharger/audi-rs3-hybrid-turbo/9.jpg",
+    ],
+    description: `Hybrid Turbocharger Upgrade for Audi RS3 and TT RS 2.5 TFSI
+
+High-flow hybrid turbo upgrade for Audi RS3 and TT RS 2.5 TFSI platforms, delivering more power while retaining factory fitment.
+
+The Audi RS3 Hybrid Turbo replaces the factory unit with uprated billet compressor and turbine components to increase airflow and boost capacity on the legendary 2.5 TFSI five-cylinder. Engineered as a direct-fit upgrade, it delivers stronger mid-range and top-end power with OEM-style reliability and a clean bolt-on installation.
+
+Specifications
+• Type: Hybrid Turbocharger Upgrade
+• Platform: Audi 2.5 TFSI (RS3 / TT RS)
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: Application Dependent
+• Manufacturer: Audi Performance
+
+Highlights
+• Uprated Billet Compressor
+• Retains Factory Fitment
+• Strong Mid-Range Gains
+• Ideal for RS3 / TT RS Builds
+• Direct Bolt-On Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 96,
+    createdAt: 1782404477000,
+    name: "BMW B58 Hybrid Turbo",
+    category: "turbocharger",
+    brand: "bmw",
+    price: 2299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/bmw-b58-hybrid-turbo/1.jpg",
+    images: [
+      "/product-media/turbocharger/bmw-b58-hybrid-turbo/1.jpg",
+      "/product-media/turbocharger/bmw-b58-hybrid-turbo/2.jpg",
+      "/product-media/turbocharger/bmw-b58-hybrid-turbo/3.jpg",
+    ],
+    description: `BMW B58 Hybrid Turbo
+
+Hybrid turbo upgrade for BMW B58 TwinPower platforms, increasing flow and power while maintaining factory-style fitment.
+
+The BMW B58 Hybrid Turbo upgrades the factory twin-scroll unit with uprated billet internals to support higher boost and horsepower on modern BMW inline-six builds. Designed as a direct replacement, it improves response and top-end flow without major fabrication, making it a popular upgrade for street and track B58 applications.
+
+Specifications
+• Type: Hybrid Turbocharger Upgrade
+• Platform: BMW B58 TwinPower
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: Application Dependent
+• Manufacturer: BMW Performance
+
+Highlights
+• Uprated Billet Internals
+• Retains Factory Fitment
+• Improved Boost Response
+• Strong Top-End Flow
+• Direct Replacement Upgrade
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 97,
+    createdAt: 1782404477000,
+    name: "BMW N54 Hybrid Turbo Kit",
+    category: "turbocharger",
+    brand: "bmw",
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/1.jpg",
+    images: [
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/1.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/2.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/3.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/4.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/5.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/6.jpg",
+      "/product-media/turbocharger/bmw-n54-hybrid-turbo-kit/7.jpg",
+    ],
+    description: `BMW N54 Hybrid Turbo Kit
+
+Complete hybrid turbo kit for BMW N54 twin-turbo platforms, delivering increased flow and power with factory-style fitment.
+
+The BMW N54 Hybrid Turbo Kit upgrades both factory turbos with uprated billet compressor and turbine components to support higher boost and horsepower on the legendary N54 inline-six. Supplied as a matched pair with supporting hardware, it is engineered for a clean direct-replacement installation on popular BMW performance platforms.
+
+Specifications
+• Type: Hybrid Twin-Turbo Kit
+• Platform: BMW N54 Twin-Turbo
+• Compressor Wheel: Uprated Billet
+• Fitment: OEM-Style Direct Replacement
+• Power Gain: Application Dependent
+• Manufacturer: BMW Performance
+
+Highlights
+• Matched Hybrid Turbo Pair
+• Uprated Billet Internals
+• Retains Factory Fitment
+• Strong Mid-Range and Top-End Gains
+• Complete Kit Hardware
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 98,
+    createdAt: 1782404477000,
+    name: "BorgWarner EFR 7163",
+    category: "turbocharger",
+    brand: "borgwarner",
+    price: 1899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/borgwarner-efr-7163/1.jpg",
+    images: [
+      "/product-media/turbocharger/borgwarner-efr-7163/1.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/2.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/3.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/4.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/5.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/6.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/7.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/8.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/9.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7163/10.jpg",
+    ],
+    description: `BorgWarner EFR 7163
+
+Advanced BorgWarner EFR 7163 turbocharger combining Gamma-Ti turbine technology with rapid spool and high-flow performance.
+
+The BorgWarner EFR 7163 is part of the Engineered For Racing series, featuring a lightweight Gamma-Ti turbine wheel, dual-row ceramic ball bearing cartridge, and integrated boost control provisions. Delivering exceptional response and consistent high-rpm flow, the EFR 7163 is ideal for serious street and motorsport builds targeting strong power with fast spool.
+
+Specifications
+• Type: EFR Ball Bearing Turbocharger
+• Model: EFR 7163
+• Turbine: Gamma-Ti Lightweight Wheel
+• Bearing: Dual-Row Ceramic Ball Bearing
+• Compatibility: Universal Performance Applications
+• Manufacturer: BorgWarner
+
+Highlights
+• Gamma-Ti Turbine Technology
+• Fast Spool and High Flow
+• Ceramic Ball Bearing Cartridge
+• Integrated Boost Control Provisions
+• Proven EFR Performance
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 99,
+    createdAt: 1782404477000,
+    name: "BorgWarner EFR 7670",
+    category: "turbocharger",
+    brand: "borgwarner",
+    price: 2499,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/borgwarner-efr-7670/1.jpg",
+    images: [
+      "/product-media/turbocharger/borgwarner-efr-7670/1.jpg",
+      "/product-media/turbocharger/borgwarner-efr-7670/2.jpg",
+    ],
+    description: `BorgWarner EFR 7670
+
+High-flow BorgWarner EFR 7670 turbocharger built for big-power performance with advanced Gamma-Ti turbine technology.
+
+The BorgWarner EFR 7670 is a larger-frame EFR unit engineered for builds targeting higher horsepower while maintaining the fast spool characteristics the EFR series is known for. Featuring a Gamma-Ti turbine wheel and ceramic ball bearing cartridge, it delivers strong top-end airflow and proven reliability for serious performance applications.
+
+Specifications
+• Type: EFR Ball Bearing Turbocharger
+• Model: EFR 7670
+• Turbine: Gamma-Ti Lightweight Wheel
+• Bearing: Dual-Row Ceramic Ball Bearing
+• Compatibility: Universal Performance Applications
+• Manufacturer: BorgWarner
+
+Highlights
+• High-Flow EFR Frame
+• Gamma-Ti Turbine Technology
+• Strong Top-End Airflow
+• Ceramic Ball Bearing Cartridge
+• Ideal for Big-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 100,
+    createdAt: 1782404477000,
+    name: "Front Mount Intercooler Kit",
+    category: "turbocharger",
+    brand: "universal",
+    price: 749,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/front-mount-intercooler-kit/1.jpg",
+    images: [
+      "/product-media/turbocharger/front-mount-intercooler-kit/1.jpg",
+      "/product-media/turbocharger/front-mount-intercooler-kit/2.jpg",
+      "/product-media/turbocharger/front-mount-intercooler-kit/3.jpg",
+    ],
+    description: `Front Mount Intercooler Kit
+
+Front-mount intercooler kit engineered to reduce intake temperatures and sustain consistent boost performance.
+
+This Front Mount Intercooler (FMIC) Kit upgrades the factory cooling system with a high-capacity bar-and-plate core and mandrel-bent piping to reduce intake air temperatures and prevent heat soak under sustained boost. Engineered for efficient cooling and minimal pressure drop, it is a core upgrade for reliable turbocharged power.
+
+Specifications
+• Type: Front Mount Intercooler Kit
+• Core: Bar-and-Plate High-Capacity
+• Piping: Mandrel-Bent Aluminum
+• Couplers: Silicone Couplers + Clamps Included
+• Compatibility: Application-Specific Fitment
+• Manufacturer: Universal
+
+Highlights
+• High-Capacity Bar-and-Plate Core
+• Reduced Intake Air Temperatures
+• Prevents Heat Soak Under Boost
+• Complete Piping and Coupler Kit
+• Sustains Consistent Boost
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 101,
+    createdAt: 1782404477000,
+    name: "Garrett GTX3076R Gen II",
+    category: "turbocharger",
+    brand: "garrett",
+    price: 1599,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+    images: [
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/1.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/2.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/3.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/4.jpg",
+      "/product-media/turbocharger/garrett-gtx3076r-gen-ii/5.jpg",
+    ],
+    description: `Garrett GTX3076R Gen II
+
+Garrett GTX3076R Gen II turbocharger delivering proven high-flow performance and strong mid-range response.
+
+The Garrett GTX3076R Gen II features a forged fully-machined billet compressor wheel and dual ball bearing cartridge for fast spool and high-rpm flow. One of the most popular performance turbochargers available, it balances rapid response with strong top-end power, making it ideal for street and track builds targeting up to 650 horsepower.
+
+Specifications
+• Type: Ball Bearing Turbocharger (Gen II)
+• Model: GTX3076R Gen II
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 650 HP
+• Manufacturer: Garrett
+
+Highlights
+• Gen II Forged Billet Compressor
+• Dual Ball Bearing Cartridge
+• Fast Spool and High-Flow
+• Proven Garrett GTX Performance
+• Ideal for Street and Track
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 102,
+    createdAt: 1782404477000,
+    name: "Garrett GTX3582R Gen II",
+    category: "turbocharger",
+    brand: "garrett",
+    price: 1899,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/garrett-gtx3582r-gen-ii/1.jpg",
+    images: [
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/1.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/2.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/3.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/4.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/5.jpg",
+      "/product-media/turbocharger/garrett-gtx3582r-gen-ii/6.jpg",
+    ],
+    description: `Garrett GTX3582R Gen II
+
+Garrett GTX3582R Gen II turbocharger built for high-horsepower performance with strong top-end flow.
+
+The Garrett GTX3582R Gen II is a larger-frame performance turbocharger designed for builds targeting higher horsepower while maintaining usable response. Featuring a forged billet Gen II compressor wheel and dual ball bearing cartridge, it delivers excellent high-rpm airflow and proven reliability for serious street and track applications up to 770 horsepower.
+
+Specifications
+• Type: Ball Bearing Turbocharger (Gen II)
+• Model: GTX3582R Gen II
+• Compressor Wheel: Forged Billet
+• Bearing: Dual Ball Bearing Cartridge
+• Power Capability: Up to 770 HP
+• Manufacturer: Garrett
+
+Highlights
+• Gen II Forged Billet Compressor
+• High-Horsepower Capability
+• Strong Top-End Airflow
+• Proven Garrett GTX Reliability
+• Ideal for Big-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 103,
+    createdAt: 1782404477000,
+    name: "Precision 6266",
+    category: "turbocharger",
+    brand: "precision",
+    price: 1649,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/precision-6266/1.jpg",
+    images: ["/product-media/turbocharger/precision-6266/1.jpg"],
+    description: `Precision 6266
+
+Precision 6266 dual ball bearing turbocharger offering a proven balance of spool and high-horsepower capability.
+
+The Precision 6266 (PT6266) is a highly popular performance turbocharger known for its versatile balance of quick spool and strong top-end power. Featuring a CEA billet compressor wheel and dual ball bearing configuration, the 6266 supports up to 735 horsepower and is a favorite for street and competition builds.
+
+Specifications
+• Type: Performance Turbocharger
+• Model: PT6266
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing
+• Power Capability: Up to 735 HP
+• Manufacturer: Precision
+
+Highlights
+• CEA Billet Compressor Wheel
+• Balanced Spool and Top-End
+• Up to 735 HP Capability
+• Proven Street and Race Turbo
+• Versatile Fitment Options
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 104,
+    createdAt: 1782404477000,
+    name: "Precision 6466",
+    category: "turbocharger",
+    brand: "precision",
+    price: 1749,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/precision-6466/1.jpg",
+    images: ["/product-media/turbocharger/precision-6466/1.jpg"],
+    description: `Precision 6466
+
+Precision 6466 performance turbocharger delivering increased flow for high-horsepower street and track builds.
+
+The Precision 6466 (PT6466) steps up from the 6266 with a larger CEA billet compressor wheel for increased airflow and power capability. Featuring dual ball bearing technology, it supports builds targeting up to 800 horsepower while maintaining usable spool characteristics for serious performance applications.
+
+Specifications
+• Type: Performance Turbocharger
+• Model: PT6466
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing
+• Power Capability: Up to 800 HP
+• Manufacturer: Precision
+
+Highlights
+• Larger CEA Billet Compressor
+• Increased Airflow vs. 6266
+• Up to 800 HP Capability
+• Dual Ball Bearing Technology
+• Ideal for High-Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 105,
+    createdAt: 1782404477000,
+    name: "Precision 6870",
+    category: "turbocharger",
+    brand: "precision",
+    price: 2299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/precision-6870/1.jpg",
+    images: [
+      "/product-media/turbocharger/precision-6870/1.jpg",
+      "/product-media/turbocharger/precision-6870/2.jpg",
+      "/product-media/turbocharger/precision-6870/3.jpg",
+      "/product-media/turbocharger/precision-6870/4.jpg",
+      "/product-media/turbocharger/precision-6870/5.jpg",
+      "/product-media/turbocharger/precision-6870/6.jpg",
+    ],
+    description: `Precision 6870
+
+Precision 6870 high-flow turbocharger built for maximum horsepower with proven CEA billet technology.
+
+The Precision 6870 (PT6870) is a larger-frame performance turbocharger designed for builds targeting the highest power levels while maintaining the response Precision turbos are known for. Featuring a CEA billet compressor wheel and dual ball bearing cartridge, it supports up to 900 horsepower for serious street, drag, and competition applications.
+
+Specifications
+• Type: High-Flow Performance Turbocharger
+• Model: PT6870
+• Compressor Wheel: CEA Billet
+• Bearing: Dual Ball Bearing
+• Power Capability: Up to 900 HP
+• Manufacturer: Precision
+
+Highlights
+• High-Flow CEA Billet Compressor
+• Up to 900 HP Capability
+• Dual Ball Bearing Cartridge
+• Proven Precision Reliability
+• Ideal for Maximum Power Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 106,
+    createdAt: 1782404477000,
+    name: "Universal T4 Turbo Kit",
+    category: "turbocharger",
+    brand: "universal",
+    price: 1299,
+    stock: true,
+    condition: "brand-new",
+    warranty: "24-Month Limited Warranty",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/turbocharger/universal-t4-turbo-kit/1.webp",
+    images: [
+      "/product-media/turbocharger/universal-t4-turbo-kit/1.webp",
+      "/product-media/turbocharger/universal-t4-turbo-kit/2.webp",
+      "/product-media/turbocharger/universal-t4-turbo-kit/3.webp",
+      "/product-media/turbocharger/universal-t4-turbo-kit/4.webp",
+    ],
+    description: `Universal T4 Turbo Kit
+
+Complete universal T4 turbo kit with the core components needed for a reliable forced-induction upgrade.
+
+The Universal T4 Turbo Kit includes a T4-flange turbocharger, manifold, downpipe, wastegate, and supporting oil lines and hardware for a comprehensive bolt-on forced-induction upgrade. Engineered as a matched system for consistent boost delivery, it is ideal for enthusiasts building custom or swap applications targeting reliable turbocharged power.
+
+Specifications
+• Type: Universal T4 Turbo Kit
+• Flange: T4 Turbo Inlet
+• Includes: Turbo, Manifold, Downpipe, Wastegate
+• Oil Lines: Feed/Drain Lines Included
+• Compatibility: Universal Performance Applications
+• Manufacturer: Universal
+
+Highlights
+• Complete Matched Turbo System
+• T4 Flange Compatibility
+• Includes Manifold and Downpipe
+• Wastegate and Oil Lines Included
+• Ideal for Custom Builds
+
+Warranty
+24-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  ...extensionProducts,
+
+  /* =======================================================
+     1994.5–1997 FORD OBS 7.3L POWER STROKE
+     -------------------------------------------------------
+     Part numbers, fitment splits and reference prices below
+     were researched against diesel specialists and Ford
+     part-number cross-references, not inferred.
+
+     This generation is routinely confused with three others,
+     and parts do not interchange with any of them:
+       · 7.3 IDI (pre-1994, indirect injection, no HEUI)
+       · 1999.5–2003 7.3 Power Stroke (Super Duty, GTP38)
+       · 2020+ 7.3 "Godzilla" (petrol V8, unrelated)
+     The catalogue already contains Godzilla and 1999.5–2003
+     parts, so every listing here states the split explicitly.
+
+     PRICING: `price` is the anchor that applyPublicPrices()
+     shows struck through, so it must be a real reference.
+     Each is the current verified street price at a diesel
+     specialist; the 79% shelf price undercuts it. No invented
+     "was" figure is used anywhere in this block.
+
+     IMAGES: default placeholder. These are used/reman diesel
+     components and the only honest photograph is one of the
+     actual unit being shipped. Supplier photography is their
+     copyright and would also misrepresent our stock.
+  ======================================================= */
+  {
+    id: 2117,
+    // Listed 2026-08-31. Products without createdAt sort to the back of
+    // every browse (see getAllProducts), which would bury a new cluster.
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS TP38 Turbocharger — Remanufactured",
+    category: "turbocharger",
+    brand: "ford",
+    // Verified street price at a diesel specialist; shelf lands at $630.
+    price: 799.95,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "F6TZ-6K682-ARM (interchange 1822775C92 · 466057-5005 · 468485-9004)",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Applies to engine serial numbers up to 661,973. Does NOT fit the 1999.5–2003 Super Duty 7.3L, which uses the GTP38, nor the pre-1994 7.3 IDI or the 2020+ 7.3 Godzilla petrol V8. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    coreCharge: "$200 refundable core charge",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, tuning, and damage from oil starvation, over-boost or improper installation.",
+    thumbnail: "/product-media/turbocharger/tp38-turbo-obs-f6tz-6k682-arm/1.webp",
+    images: ["/product-media/turbocharger/tp38-turbo-obs-f6tz-6k682-arm/1.webp"],
+    description: `Remanufactured TP38 turbocharger for the OBS 7.3L Power Stroke.
+
+The TP38 is the factory turbocharger for the 1994.5–1997 Power Stroke, and it is the single most common failure point on a high-mileage OBS truck. Shaft play, a leaking centre section, or a wastegate that no longer holds are all reasons these come off.
+
+This is a remanufactured unit rather than a used take-off. Confirm your engine serial number before ordering — the TP38 covers serials up to 661,973, and later engines take a different turbocharger.
+
+The most frequent ordering mistake on this part is buying a GTP38 by mistake. That is the 1999.5–2003 Super Duty turbocharger; it will not fit an OBS truck.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Engine serial: up to 661,973
+Fuel type: Diesel
+Manufacturer part number: F6TZ-6K682-ARM
+Condition: Remanufactured
+
+Highlights
+
+Direct replacement for the factory TP38
+Covers both F-250 and F-350 OBS applications
+$200 core charge refunded on return of your old unit
+Cross-referenced against 1822775C92, 466057-5005 and 468485-9004
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2118,
+    // Listed 2026-08-31. Products without createdAt sort to the back of
+    // every browse (see getAllProducts), which would bury a new cluster.
+    createdAt: 1788134400000,
+    name: "1996–1997 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — HP005X",
+    category: "engine",
+    brand: "ford",
+    // Verified street price; shelf lands at $300, below market.
+    price: 375,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "F6TZ-9A543-ARM · HP005X · AP63622 (interchange 1825248C91 · 1825259C91)",
+    fitment:
+      "1996–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. NOT interchangeable with 1994–1995, which uses the HP004X: those pumps carry the anti-drainback check valve inside the pump, while 1996–1997 moved that function to a redesigned front timing cover. Fitting the wrong one causes hard starting and low ICP. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    coreCharge: "$200 refundable core charge",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated oil or running the engine low on oil.",
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
+    description: `High-pressure oil pump for the 1996–1997 OBS 7.3L Power Stroke.
+
+The 7.3 Power Stroke uses a HEUI fuel system, so the injectors are fired by high-pressure engine oil rather than by a mechanical pump. The HPOP supplies that pressure. When it wears, the truck cranks but will not start, starts hard when cold, or loses power under load — all symptoms of injection control pressure falling below what the injectors need.
+
+This is the HP005X, the 17-degree swash-plate pump fitted to 1996 and 1997 trucks.
+
+The year split matters more here than on almost any other part of this engine. 1994 and 1995 trucks use the HP004X, which houses the anti-drainback check valve inside the pump itself. From 1996 Ford moved that function into a redesigned front timing cover, so the pumps are not interchangeable in either direction. If your truck is a 1994 or 1995, this is not the right pump.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1996–1997
+Vehicle: Ford F-250 / F-350
+Swash plate: 17 degrees
+Fuel type: Diesel
+Manufacturer part number: F6TZ-9A543-ARM (HP005X)
+Condition: Remanufactured
+
+Highlights
+
+Correct pump for 1996–1997 — not a 1994–1995 fitment
+17-degree swash plate as fitted from the factory
+$200 core charge refunded on return of your old unit
+Cross-referenced against AP63622, 1825248C91 and 1825259C91
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2119,
+    // Listed 2026-08-31. Products without createdAt sort to the back of
+    // every browse (see getAllProducts), which would bury a new cluster.
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Injector Set of 8 — AA Single-Shot Super Kit",
+    category: "engine",
+    brand: "ford",
+    // Verified street price; shelf lands at $940, below market.
+    price: 1195.95,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "F81Z-9E527-DRM · AP63800AA (interchange FI-2-RM · F4TZ-9VE527-AARM · F7TZ-9E527-ARM)",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel — AA-code single-shot injectors, as fitted to non-California trucks. NOT the AB split-shot injector used in 1997 California emissions trucks and early 1999 builds, which fires a pilot shot and flows appreciably more fuel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: [
+      "8 remanufactured AA-code HEUI injectors",
+      "Valve cover gaskets",
+      "Valve cover harnesses",
+      "Injector harness repair pigtails",
+    ],
+    coreCharge: "$600 refundable core charge",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated fuel or a failing high-pressure oil system.",
+    thumbnail: "/product-media/engine/injectors-obs-ap63800aa/1.webp",
+    images: ["/product-media/engine/injectors-obs-ap63800aa/1.webp"],
+    description: `Complete set of eight remanufactured AA injectors for the OBS 7.3L Power Stroke, supplied with the gaskets and harness parts the job actually needs.
+
+HEUI injectors wear as a set. By the time one is misfiring the others are usually close behind, which is why these are sold as eight rather than singly. Rough idle when cold, white smoke on start-up, and a miss that clears as the engine warms are the usual signs.
+
+This is the AA-code injector — the original single-shot design fitted to 1994.5–1997 non-California trucks. The AB injector is a split-shot that fires a small pilot charge before the main event and flows considerably more fuel; it went into 1997 California emissions trucks and early 1999 builds. The two are not interchangeable, and fitting AB injectors to an OBS truck without matching tuning will not run correctly.
+
+The kit includes the valve cover gaskets and harnesses, which have to come off to reach the injectors and are routinely damaged on removal.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Injector code: AA (single-shot)
+Quantity: Set of 8
+Fuel type: Diesel
+Manufacturer part number: F81Z-9E527-DRM / AP63800AA
+Condition: Remanufactured
+
+Highlights
+
+Complete set of eight — HEUI injectors should be replaced together
+Includes valve cover gaskets, harnesses and repair pigtails
+AA single-shot, correct for non-California OBS trucks
+$600 core charge refunded on return of your old injectors
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
+  /* --- OBS 7.3 sensors, electrical and fuel-system service parts ---
+     Part numbers and prices verified against diesel specialists. Prices are
+     the anchor applyPublicPrices() strikes through, so each is a real current
+     street price and the shelf figure undercuts it. Images are the placeholder:
+     no CC-licensed photograph of these specific components exists, and supplier
+     photography is their copyright. */
+  {
+    id: 2120,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Glow Plug Set of 8 — Motorcraft ZD-30",
+    category: "engine",
+    brand: "ford",
+    price: 193.08,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Motorcraft ZD-30 · MC3Z-12A342-F",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from over-voltage or a failed glow plug controller.",
+    thumbnail: "/product-media/engine/glow-plugs-obs-zd-30/1.webp",
+    images: ["/product-media/engine/glow-plugs-obs-zd-30/1.webp"],
+    description: `Complete set of eight Motorcraft ZD-30 glow plugs for the 7.3L Power Stroke.
+
+Hard starting below about 50°F, white smoke on a cold start, and a rough first minute are the classic signs of failed glow plugs. They fail individually, but a truck with two or three gone usually has the rest close behind, so they are replaced as a set.
+
+These are the Motorcraft ZD-30, the correct plug for the 7.3 Power Stroke. Check the glow plug relay at the same time — a failed relay presents identically and replacing plugs will not fix it.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Quantity: Set of 8
+Manufacturer: Motorcraft
+Manufacturer part number: ZD-30 / MC3Z-12A342-F
+Condition: New
+
+Highlights
+
+Motorcraft — the factory-specified glow plug
+Complete set of eight
+Check the relay at the same time; the symptoms are identical
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2121,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Camshaft Position Sensor (CPS) — Motorcraft",
+    category: "electronics",
+    brand: "ford",
+    price: 51.3,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Motorcraft F4TZ-12K073-C",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. This is the OBS-specification sensor; later 1997–2003 trucks use F7TZ-12K073-A. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and consequential costs from a roadside failure.",
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
+    description: `Motorcraft camshaft position sensor for the OBS 7.3L Power Stroke.
+
+The CPS is the part every 7.3 owner is told to carry a spare of, and the advice is sound. When it fails the engine simply stops — often without warning and sometimes while driving — and it will not restart until the sensor is replaced. Failures are frequently heat-related, so a truck that dies warm and restarts an hour later is the textbook case.
+
+It is a ten-minute job at the front of the engine, which is why keeping a spare in the glovebox is the standard recommendation on this platform.
+
+This is the OBS-specification sensor. Later 1997–2003 trucks moved to F7TZ-12K073-A; confirm which your truck takes before ordering.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer: Motorcraft
+Manufacturer part number: F4TZ-12K073-C
+Condition: New
+
+Highlights
+
+The single most common no-start cause on this engine
+Motorcraft, not a generic substitute
+Worth carrying a spare — failures are sudden and total
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2122,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Control Pressure (ICP) Sensor — Ford OE",
+    category: "electronics",
+    brand: "ford",
+    price: 169.1,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford YC3Z-9F838-A",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated engine oil.",
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
+    description: `Ford OE injection control pressure sensor for the 7.3L Power Stroke.
+
+The ICP sensor reports high-pressure oil to the PCM, which uses it to control injection. On a HEUI engine that makes it central to how the truck runs: a failing ICP causes surging, a miss under load, hard starting, or a bucking idle, and it commonly sets codes that look like fuel-system faults.
+
+A leaking sensor is the usual failure — oil wicks up into the connector and corrodes it. Inspect the pigtail when replacing the sensor; a corroded connector will fail a new sensor quickly.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Ford OE
+Manufacturer part number: YC3Z-9F838-A
+Condition: New
+
+Highlights
+
+Ford OE rather than an aftermarket substitute
+Inspect the connector pigtail at the same time — oil intrusion kills both
+Symptoms often mimic a fuel-system fault
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2123,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Injection Pressure Regulator (IPR) Valve — Alliant AP63402",
+    category: "engine",
+    brand: "ford",
+    price: 250,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63402",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated engine oil.",
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
+    description: `Alliant Power injection pressure regulator for the OBS 7.3L Power Stroke.
+
+The IPR valve controls how much high-pressure oil the HPOP delivers to the injectors. It works alongside the ICP sensor, and the two produce overlapping symptoms — surging, a miss, hard starting, or an engine that will not build injection control pressure at all.
+
+A worn IPR is a common cause of a no-start on a truck whose HPOP is actually fine, which is why it is worth ruling out before condemning the pump.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63402
+Condition: New
+
+Highlights
+
+Rule this out before condemning the high-pressure oil pump
+Works in concert with the ICP sensor — symptoms overlap
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2124,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Glow Plug Relay — Alliant AP63405",
+    category: "electronics",
+    brand: "ford",
+    price: 65,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63405",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
+    description: `Alliant Power glow plug relay for the 7.3L Power Stroke.
+
+The relay switches power to all eight glow plugs. When it fails the plugs never energise, and the truck behaves exactly as though every plug has burned out — hard cold starting, white smoke, a rough first minute.
+
+That identical presentation is why the relay is worth testing before buying a set of eight plugs. It is also the cheaper part by a wide margin, so it is the sensible place to start.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63405
+Condition: New
+
+Highlights
+
+Test this before replacing eight glow plugs — the symptoms are identical
+Considerably cheaper than a full plug set
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2125,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Under Valve Cover Harness Kit",
+    category: "electronics",
+    brand: "ford",
+    price: 504.9,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F4TZ-9D930-K (Alliant equivalent AP63414) · 4 harnesses per engine",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: [
+      "Under valve cover harnesses",
+      "Valve cover gaskets",
+    ],
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
+    description: `Under valve cover harness kit for the OBS 7.3L Power Stroke.
+
+The under-valve-cover harness carries the signal to each injector, and it lives in hot engine oil for its entire life. The connectors eventually go high-resistance or break outright, which produces a dead-miss on one cylinder that no amount of injector work will fix.
+
+A truck that misfires on a single cylinder, and keeps misfiring after the injector has been swapped, is very often a harness fault rather than an injector fault. The kit includes the valve cover gaskets, which have to come off either way.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Condition: New
+
+Highlights
+
+The usual cause of a single-cylinder miss that survives an injector swap
+Includes the valve cover gaskets needed for the job
+Replaces connectors that have spent their life in hot oil
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2126,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Exhaust Back Pressure (EBP) Sensor — Alliant AP63403",
+    category: "electronics",
+    brand: "ford",
+    price: 84.3,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63403",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
+    description: `Alliant Power exhaust back pressure sensor for the 7.3L Power Stroke.
+
+The EBP sensor feeds the exhaust back pressure valve, which the engine uses to warm itself faster in cold weather. The sensor and its tube are exposed to exhaust soot and eventually clog or fail, which typically shows up as a check engine light, poor cold-weather warm-up, or an EBP-related code.
+
+The tube in front of the sensor is worth clearing whenever the sensor is replaced — a blocked tube will make a new sensor read just as badly as the old one.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63403
+Condition: New
+
+Highlights
+
+Clear the sensor tube at the same time — soot blockage mimics sensor failure
+Alliant Power, a recognised diesel OE supplier
+Common source of an EBP fault code
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2127,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Engine Oil Temperature (EOT) Sensor — Alliant AP63436",
+    category: "electronics",
+    brand: "ford",
+    price: 49.19,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63436",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
+    description: `Alliant Power engine oil temperature sensor for the 7.3L Power Stroke.
+
+On a HEUI engine oil temperature is not a comfort reading — the PCM uses it to decide injection timing and glow plug behaviour, because cold oil behaves very differently to hot oil in the injectors. A failed EOT sensor therefore affects how the engine actually runs, not just what a gauge says.
+
+Symptoms are usually a check engine light, poor cold-start behaviour, or glow plugs cycling when they should not.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63436
+Condition: New
+
+Highlights
+
+Feeds injection timing and glow plug strategy, not just a gauge
+Affects cold-start behaviour when it fails
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2128,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Engine Oil Pressure Sensor — Alliant AP63435",
+    category: "electronics",
+    brand: "ford",
+    price: 61.32,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Alliant Power AP63435",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/placeholders/electronics.svg",
+    images: ["/product-media/placeholders/electronics.svg"],
+    description: `Alliant Power engine oil pressure sensor for the 7.3L Power Stroke.
+
+Reports engine oil pressure for the dash gauge. A failed sensor is a common cause of a gauge that reads zero, pegs high, or swings erratically on a truck whose oil pressure is in fact perfectly normal.
+
+Before condemning an engine on a bad gauge reading, this sensor is the cheap thing to eliminate — mechanical pressure at the port tells you which of the two is actually at fault.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer: Alliant Power
+Manufacturer part number: AP63435
+Condition: New
+
+Highlights
+
+Common cause of an alarming but false oil pressure reading
+Cheap to eliminate before suspecting the engine
+Alliant Power, a recognised diesel OE supplier
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
+  /* --- OBS 7.3 oil, cooling and fuel-delivery parts --- */
+  {
+    id: 2129,
+    createdAt: 1788134400000,
+    name: "1994–1995 Ford 7.3L Power Stroke OBS High-Pressure Oil Pump (HPOP) — HP004X",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 430,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "HP004X (Alliant equivalent AP63621)",
+    fitment:
+      "1994–1995 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. NOT interchangeable with 1996–1997, which uses the HP005X. The 1994–1995 pump carries the anti-drainback check valve inside the pump itself; from 1996 Ford moved that function into a redesigned front timing cover. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from contaminated oil or running the engine low on oil.",
+    thumbnail: "/product-media/placeholders/engine.svg",
+    images: ["/product-media/placeholders/engine.svg"],
+    description: `High-pressure oil pump for the 1994–1995 OBS 7.3L Power Stroke.
+
+The 7.3 uses a HEUI fuel system, so the injectors are fired by high-pressure engine oil rather than a mechanical pump. When the HPOP wears the truck cranks without starting, starts hard cold, or loses power under load.
+
+This is the HP004X, the correct pump for 1994 and 1995 only. Those trucks carry the anti-drainback check valve inside the pump; from 1996 Ford moved that function into a redesigned front timing cover and fitted the HP005X. The two do not interchange in either direction, and fitting the wrong one causes exactly the hard-starting symptom you were trying to fix.
+
+If your truck is a 1996 or 1997, you want the HP005X instead.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994–1995
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: HP004X
+Condition: Remanufactured
+
+Highlights
+
+Correct pump for 1994–1995 — not a 1996–1997 fitment
+Anti-drainback check valve integral to the pump on these years
+Alliant Power equivalent is AP63621
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2130,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Oil Cooler Kit with Gaskets",
+    category: "engine",
+    brand: "ford",
+    price: 169.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F4TZ-6A636-A",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: ["Oil cooler", "Gasket set"],
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a neglected cooling system.",
+    thumbnail: "/product-media/engine/oil-cooler-obs-f4tz-6a636-a/1.webp",
+    images: ["/product-media/engine/oil-cooler-obs-f4tz-6a636-a/1.webp"],
+    description: `Oil cooler and gasket kit for the 7.3L Power Stroke.
+
+The 7.3 runs an oil-to-coolant cooler, and when it fails internally the two mix. Oil in the coolant recovery bottle, or coolant pushing into the oil, is the sign — and it needs attention quickly, because coolant in the oil damages bearings.
+
+Cooling system neglect is the usual cause. Old, depleted coolant lets the cooler corrode from the inside, so it is worth flushing and refilling properly when fitting a new one rather than putting the same coolant back.
+
+The kit includes the gaskets, which must be replaced whenever the cooler comes out.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F4TZ-6A636-A
+Condition: New
+
+Highlights
+
+Includes the gaskets the job requires
+Oil in the coolant bottle is the classic failure sign
+Flush and refill the cooling system when fitting — old coolant kills the replacement
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2131,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Low-Pressure Oil Pump Kit with Seal",
+    category: "engine",
+    brand: "ford",
+    price: 129.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F4TZ-6616-A",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: ["Low-pressure oil pump", "Seal"],
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/engine/low-pressure-oil-pump-obs-f4tz-6616-a/1.webp",
+    images: ["/product-media/engine/low-pressure-oil-pump-obs-f4tz-6616-a/1.webp"],
+    description: `Low-pressure oil pump kit for the 7.3L Power Stroke.
+
+Not to be confused with the HPOP. The low-pressure pump is the engine's ordinary oil pump — it lubricates the engine and feeds the high-pressure pump that fires the injectors. On a HEUI engine both matter, and a weak low-pressure pump starves the high-pressure side, producing symptoms that look like an HPOP fault.
+
+Worth checking mechanical oil pressure before condemning either pump; the two failures are easy to confuse and this is the cheaper part.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F4TZ-6616-A
+Condition: New
+
+Highlights
+
+The engine's main oil pump — not the HPOP
+A weak one starves the high-pressure side and mimics an HPOP fault
+Supplied with the seal
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2132,
+    createdAt: 1788134400000,
+    name: "1996–1997 Ford 7.3L Power Stroke OBS Water Pump",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 89.95,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F81Z-8501-CRM",
+    fitment:
+      "1996–2003 Ford 7.3L Power Stroke, including the 1996–1997 OBS F-250 / F-350. This part does NOT cover 1994–1995 — confirm your model year before ordering. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from running contaminated or depleted coolant.",
+    thumbnail: "/product-media/engine/water-pump-obs-f81z-8501-crm/1.webp",
+    images: ["/product-media/engine/water-pump-obs-f81z-8501-crm/1.webp"],
+    description: `Water pump for the 1996–1997 OBS 7.3L Power Stroke.
+
+Weeping from the pump's weep hole, a bearing whine, or coolant loss with no visible external leak are the usual signs of a failing water pump. On a diesel that works hard, replacing it before it fails outright is cheaper than the alternative.
+
+Note the year: this part covers 1996 onward. If your truck is a 1994 or 1995, confirm the correct pump before ordering — the OBS run is not a single fitment for every component.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1996–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F81Z-8501-CRM
+Condition: Remanufactured
+
+Highlights
+
+Covers 1996 onward — not a 1994–1995 fitment
+Weep-hole seepage is the early warning
+Worth doing alongside a coolant flush
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2133,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Radiator",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 249.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F5TH-8005-C5",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    weight: "Oversized — ships as freight",
+    freightNotes: "Bulky item. Ships by freight.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage in service from debris or corrosion.",
+    thumbnail: "/product-media/engine/radiator-obs-f5th-8005-c5/1.webp",
+    images: ["/product-media/engine/radiator-obs-f5th-8005-c5/1.webp"],
+    description: `Radiator for the 1994.5–1997 OBS 7.3L Power Stroke.
+
+These trucks are thirty years old, and original radiators are long past their service life. Tanks crack, cores clog internally, and a marginal radiator shows up as high coolant temperature towing or climbing rather than as an obvious leak.
+
+A clogged radiator also shortens the life of the oil cooler, since the whole cooling system shares the same degraded coolant. Replacing the radiator is a reasonable moment to flush the system properly.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: F5TH-8005-C5
+Condition: New
+
+Highlights
+
+Direct fit for the OBS chassis
+Marginal radiators show up under load, not at idle
+Flush the system when fitting — shared coolant affects the oil cooler too
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2134,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Regulated Return Fuel System Kit — Driven Diesel",
+    category: "engine",
+    brand: "driven-diesel",
+    price: 699.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Driven Diesel DD-73FS-OBS-RRK-V3",
+    fitment:
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Aftermarket upgrade, not a factory replacement. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, fabrication, and tuning.",
+    thumbnail: "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/1.webp",
+    images: ["/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/1.webp", "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/2.webp", "/product-media/engine/regulated-return-obs-dd-73fs-rrk-v3/3.webp"],
+    description: `Driven Diesel regulated return fuel system for the OBS 7.3L Power Stroke.
+
+This is an upgrade, not a repair part. The factory fuel system on these trucks does not regulate return pressure, which leaves fuel pressure varying with demand — worst exactly when the engine is working hardest. A regulated return holds pressure steady across the range and keeps both cylinder heads fed evenly.
+
+It is the usual first fuel-system modification on a truck that has had injector work, or one being asked to make more power than standard. On a stock truck in good health it is optional.
+
+Fitting involves plumbing work. Budget time accordingly, or have it fitted.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style
+Years: 1994.5–1997
+Vehicle: Ford F-250 / F-350
+Manufacturer: Driven Diesel
+Manufacturer part number: DD-73FS-OBS-RRK-V3
+Type: Aftermarket upgrade
+Condition: New
+
+Highlights
+
+Holds fuel pressure steady under load, unlike the factory system
+Feeds both heads evenly — the point of a regulated return
+An upgrade rather than a replacement; a healthy stock truck does not need it
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2135,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS HPOP Seal Kit",
+    category: "engine",
+    brand: "ford",
+    price: 24.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford 3C3Z-9G804-AA",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke high-pressure oil pump, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour.",
+    thumbnail: "/product-media/engine/hpop-seal-kit-obs-3c3z-9g804-aa/1.webp",
+    images: ["/product-media/engine/hpop-seal-kit-obs-3c3z-9g804-aa/1.webp"],
+    description: `Seal kit for the 7.3L Power Stroke high-pressure oil pump.
+
+A leaking HPOP is not always a failed HPOP. These pumps commonly weep from their seals while the pump itself is still serviceable, and a seal kit costs a fraction of a replacement pump.
+
+Worth trying before condemning a pump that still builds pressure. If the pump will not make injection control pressure, that is a different fault and seals will not fix it.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel (HEUI)
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Manufacturer part number: 3C3Z-9G804-AA
+Condition: New
+
+Highlights
+
+A weeping pump is often a seal fault, not a failed pump
+A fraction of the cost of a replacement HPOP
+Will not fix a pump that cannot build pressure
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
+  /* --- OBS 7.3 drivetrain and starting --- */
+  {
+    id: 2140,
+    createdAt: 1788134400000,
+    name: "1996–1997 Ford 7.3L Power Stroke OBS ZF S5-47 5-Speed Manual Transmission 4x4 — Remanufactured",
+    category: "transmission",
+    brand: "zumbrota",
+    price: 3001.89,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Zumbrota RMTS5-47-6 (ZF S5-47, 4x4, without PTO)",
+    fitment:
+      "1996–1997 Ford F-250 / F-350 with the 7.3L Power Stroke diesel, 4x4, without PTO. The S5-47 is the Power Stroke transmission and is NOT interchangeable with the earlier S5-42 (1988–1995, 420 lb-ft) or the later S5-47M (1999–2002). Ford used the S5-47 behind the 7.3L Power Stroke from 1994.5; this particular unit is listed for 1996–1997, so confirm your build before ordering. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke, F350 7.3 Powerstroke and ZF5.",
+    drivetrain: "4x4",
+    coreCharge: "$2,000 refundable core charge",
+    weight: "Heavy — ships as freight",
+    freightNotes:
+      "Palletised freight, approximately $400 within the continental US. Requires a loading dock or forklift; not suitable for residential delivery.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, clutch and hydraulics, and damage from incorrect fluid or a worn clutch.",
+    thumbnail: "/product-media/transmission/zf-s5-47-obs-rmts5-47-6/1.webp",
+    images: ["/product-media/transmission/zf-s5-47-obs-rmts5-47-6/1.webp"],
+    description: `Remanufactured ZF S5-47 five-speed manual transmission for the OBS 7.3L Power Stroke, 4x4 without PTO.
+
+The S5-47 is the gearbox Ford put behind the 7.3L Power Stroke, rated to 470 lb-ft against the earlier S5-42's 420. It is the reason a manual OBS is worth more than an automatic one, and it is what most people mean when they say "ZF5" in a Power Stroke context.
+
+That loose use of "ZF5" is the problem. The S5-42 is a different, lower-rated transmission used in F-Series and Broncos from 1988 to 1995, and the later S5-47M is different again. None of the three interchange. If you are shopping by the name "ZF5" alone, confirm which unit your truck actually has before ordering.
+
+Diesel S5-47s use the 5.08:1 medium first-gear ratio; the 5.72:1 wide ratio is the petrol version.
+
+Clutch, hydraulics and bellhousing are not included. Freight requires a dock or forklift.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1996–1997
+Vehicle: Ford F-250 / F-350
+Transmission: ZF S5-47, 5-speed manual
+Input torque rating: 470 lb-ft
+First gear ratio: 5.08:1 (diesel)
+Drive configuration: 4x4
+PTO: Without
+Manufacturer part number: RMTS5-47-6
+Condition: Remanufactured
+
+Highlights
+
+The Power Stroke transmission — not the S5-42 or the later S5-47M
+470 lb-ft rating against the S5-42's 420
+$2,000 core charge, refunded on return of your old unit
+Ships on a pallet; a dock or forklift is required
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2137,
+    createdAt: 1788134400000,
+    name: "1995–1997 Ford 7.3L Power Stroke OBS E4OD Transmission & Torque Converter Package — BD Diesel",
+    category: "transmission",
+    brand: "bd-diesel",
+    price: 4899,
+    stock: true,
+    stockQty: 1,
+    condition: "refurbished",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "BD Diesel 106442XSM",
+    fitment:
+      "1995–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel and the E4OD automatic. Matched transmission and converter set. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    included: ["E4OD transmission", "Matched torque converter"],
+    weight: "Heavy — ships as freight",
+    freightNotes:
+      "Palletised freight. A liftgate or forklift is needed at delivery.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour, fluid, cooler lines, and damage from overheating or incorrect fluid.",
+    thumbnail: "/product-media/placeholders/transmission.svg",
+    images: ["/product-media/placeholders/transmission.svg"],
+    description: `BD Diesel E4OD transmission and torque converter package for the OBS 7.3L Power Stroke.
+
+The E4OD is the automatic behind most OBS 7.3s, and it is the weak point of the drivetrain when the truck tows. Heat is what kills them, so a transmission that has spent its life pulling a trailer without an adequate cooler is usually the one being replaced.
+
+Supplied as a matched transmission and converter set. That pairing matters — a rebuilt transmission behind a tired converter is a common way to fail a rebuild early, because a converter that is shedding debris will contaminate the new unit.
+
+Fit an adequate cooler and change the fluid on schedule. That is what determines whether this lasts.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style
+Years: 1995–1997
+Vehicle: Ford F-250 / F-350
+Transmission: E4OD 4-speed automatic
+Manufacturer: BD Diesel
+Manufacturer part number: 106442XSM
+Condition: Remanufactured
+Contents: Transmission and matched torque converter
+
+Highlights
+
+Transmission and converter matched as a set
+Heat is what kills an E4OD — cooling determines its life
+Fluid and cooler lines not included
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2138,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Starter (3-Bolt)",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 149.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F5TU-11000-AA (interchange F4TZ-11002-A · F5TU-11000-AB · F5TU-11000-AD)",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Three-bolt pattern — confirm yours before ordering. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
+    thumbnail: "/product-media/engine/starter-3-bolt-obs-f5tu-11000-aa/1.webp",
+    images: ["/product-media/engine/starter-3-bolt-obs-f5tu-11000-aa/1.webp"],
+    description: `Three-bolt starter for the 7.3L Power Stroke.
+
+A diesel of this size asks a great deal of its starter, and a tired one shows up first on cold mornings — slow cranking, a click with no crank, or a start that needs two attempts. Because slow cranking also prevents the glow plug system from doing its job, a weak starter often gets misdiagnosed as a glow plug fault.
+
+Check the battery cables and grounds before replacing the starter. Corroded cables produce identical symptoms and are cheaper to fix.
+
+Confirm you need the three-bolt pattern before ordering.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Mounting: 3-bolt
+Manufacturer part number: F5TU-11000-AA
+Condition: New
+
+Highlights
+
+Three-bolt pattern — verify against your engine
+Slow cranking is often cables or batteries, not the starter
+Cross-references F4TZ-11002-A, F5TU-11000-AB and F5TU-11000-AD
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+  {
+    id: 2139,
+    createdAt: 1788134400000,
+    name: "1994.5–1997 Ford 7.3L Power Stroke OBS Gear Reduction Starter",
+    category: "engine",
+    brand: "freedom-injection",
+    price: 259.95,
+    stock: true,
+    stockQty: 1,
+    condition: "brand-new",
+    warranty: "12-Month Limited Warranty",
+    location: "our USA warehouse or supplier network, depending on your location",
+    partNumber: "Ford F4TZ-11002-A-GRS (interchange F5TU-11000-AA · M8T50071)",
+    fitment:
+      "1994.5–2003 Ford 7.3L Power Stroke, including the 1994.5–1997 OBS F-250 / F-350. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+    drivetrain: "4x2 and 4x4",
+    freightNotes: "Ships as a parcel.",
+    warrantyTerms:
+      "Subject to the DrivoraParts Warranty Policy. Excludes installation labour and damage from a failing battery or corroded cables.",
+    thumbnail: "/product-media/engine/gear-reduction-starter-obs-f4tz-11002-a-grs/1.webp",
+    images: ["/product-media/engine/gear-reduction-starter-obs-f4tz-11002-a-grs/1.webp"],
+    description: `Gear reduction starter for the 7.3L Power Stroke.
+
+A gear reduction starter turns the engine faster while drawing less current than the standard unit. On a high-compression diesel that matters most in cold weather, where cranking speed is the difference between a start and a long crank.
+
+Worth the step up over a standard replacement on a truck that lives somewhere cold, tows heavy, or has ever been slow to start. On a truck that starts well in mild weather, the standard three-bolt starter is the cheaper and adequate choice.
+
+Specifications
+
+Application: 7.3L Power Stroke diesel
+Generation: OBS / Old Body Style and later
+Years: 1994.5–2003
+Vehicle: Ford F-250 / F-350
+Type: Gear reduction
+Manufacturer part number: F4TZ-11002-A-GRS
+Condition: New
+
+Highlights
+
+Faster cranking on less current than the standard starter
+The upgrade that matters in cold climates
+Standard three-bolt starter is the cheaper option if yours starts well
+
+Warranty
+12-Month Limited Warranty
+
+Shipping
+Worldwide Shipping Available`,
+  },
+
+  {
+    id: CHECKOUT_TEST_PRODUCT_ID,
+    name: "Checkout Test Part",
+    category: "electronics",
+    brand: "universal",
+    price: 20,
+    stock: true,
+    stockQty: 99,
+    condition: "brand-new",
+    location: "USA Warehouse",
+    thumbnail: "/product-media/avatars/default.svg",
+    images: ["/product-media/avatars/default.svg"],
+    description:
+      "$20 test SKU for NOWPayments checkout (above the ~$19 USD minimum). Search “Checkout Test Part” or open /product/9999.",
+  },
+];
+
+/** Every listing, before the storefront transforms in finalize.ts. */
+export const rawProductCatalog: Product[] = productCatalog;

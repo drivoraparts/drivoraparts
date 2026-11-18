@@ -14,6 +14,7 @@ import {
 } from "@/lib/inventory";
 import UnavailableListing from "@/components/product/UnavailableListing";
 import { CHECKOUT_TEST_PRODUCT_ID } from "@/lib/inventory/pricing";
+import { ARCHIVED_PRODUCT_IDS } from "@/lib/inventory/products";
 import { getProductThumbnail } from "@/lib/inventory/media";
 import { compactFitment } from "@/lib/catalog/short-fitment";
 import ProductTemplate from "@/components/product/ProductTemplate";
@@ -65,6 +66,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductById(Number(id));
 
   if (!product) {
+    // A listing kept only in the source catalog: its URL still answers.
+    if (ARCHIVED_PRODUCT_IDS.has(Number(id))) {
+      return buildPageMetadata({
+        title: "No Longer Listed",
+        description: "This part is no longer available on DrivoraParts.",
+        path: routes.product(Number(id)),
+        noIndex: true,
+      });
+    }
     return { title: "Product Not Found" };
   }
 
@@ -104,7 +114,12 @@ export default async function ProductPage({ params }: PageProps) {
   const { id } = await params;
   const product = getProductById(Number(id));
 
-  if (!product) return notFound();
+  if (!product) {
+    // Listings for other makes are no longer deployed (lib/inventory/products.ts),
+    // but their old URLs -- in order emails, bookmarks, search results -- still
+    // explain themselves rather than 404.
+    return ARCHIVED_PRODUCT_IDS.has(Number(id)) ? <UnavailableListing name="This part" /> : notFound();
+  }
   if (!isListed(product.id)) return <UnavailableListing name={product.name} />;
 
   const inventoryProduct = getInventoryProductById(product.id);

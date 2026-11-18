@@ -96,7 +96,11 @@ const publicProducts = (): Product[] =>
 export const getAllProducts = (): Product[] =>
   sortProductsNewestFirst(publicProducts());
 
-/** Every listing in the catalog, hidden ones included. Admin and analytics only. */
+/**
+ * Every deployed listing, unclassified admin additions included. Admin and
+ * analytics only. Listings kept only in the source catalog (full-catalog.ts)
+ * are not deployed and do not appear here.
+ */
 export const getAllCatalogProducts = (): Product[] =>
   sortProductsNewestFirst(
     products.filter((product) => product.id !== CHECKOUT_TEST_PRODUCT_ID)

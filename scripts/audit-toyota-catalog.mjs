@@ -45,10 +45,13 @@ const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "drivora-toyota-"));
 const entry = path.join(tmp, "entry.ts");
 const bundle = path.join(tmp, "entry.mjs");
 
-// The full catalog, not the public one: this script decides what is public.
+// The full source catalog, not the deployed snapshot: this script decides
+// what is public (and so what scripts/build-catalog-snapshot.mjs deploys).
 fs.writeFileSync(
   entry,
-  `import { products } from "@/lib/inventory/products";
+  `import { rawProductCatalog } from "@/lib/inventory/full-catalog";
+import { finalizeCatalog } from "@/lib/inventory/finalize";
+const products = finalizeCatalog(rawProductCatalog);
 import { CHECKOUT_TEST_PRODUCT_ID } from "@/lib/inventory/pricing";
 import { resolveProductCondition } from "@/lib/inventory/condition";
 process.stdout.write(JSON.stringify({

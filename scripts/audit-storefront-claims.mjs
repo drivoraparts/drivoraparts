@@ -31,7 +31,10 @@ const bundle = path.join(tmp, "entry.mjs");
 
 fs.writeFileSync(
   entry,
-  `import { getAllProducts, getAllCatalogProducts, resolveProductCondition } from "@/lib/inventory";
+  `import { getAllProducts, resolveProductCondition } from "@/lib/inventory";
+import { rawProductCatalog } from "@/lib/inventory/full-catalog";
+import { finalizeCatalog } from "@/lib/inventory/finalize";
+import { CHECKOUT_TEST_PRODUCT_ID } from "@/lib/inventory/pricing";
 import { brands } from "@/lib/inventory/brands";
 import { HOME_LISTING_COUNT } from "@/lib/home/listing-count";
 import { PUBLIC_PRICE_RATIO } from "@/lib/inventory/pricing";
@@ -52,9 +55,9 @@ process.stdout.write(
       bulkDiscountPercent: BULK_ORDER_DISCOUNT_PERCENT,
       bulkMinQuantity: BULK_MIN_QUANTITY,
     },
-    // Every listing, hidden ones included: a hidden listing can be released
-    // again, so its claims are held to the same standard.
-    products: getAllCatalogProducts().map((p) => ({
+    // Every listing in the full source catalog, deployed or not: an archived
+    // listing can be released again, so its claims are held to the same standard.
+    products: finalizeCatalog(rawProductCatalog).filter((p) => p.id !== CHECKOUT_TEST_PRODUCT_ID).map((p) => ({
       id: p.id,
       name: p.name,
       condition: p.condition,
