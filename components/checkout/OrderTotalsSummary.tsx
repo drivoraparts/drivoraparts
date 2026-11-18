@@ -42,7 +42,7 @@ export default function OrderTotalsSummary({
           <span className="text-emerald-700">
             Bulk discount ({BULK_ORDER_DISCOUNT_PERCENT}%)
           </span>
-          <span className="text-emerald-700">
+          <span className="whitespace-nowrap text-emerald-700">
             −<Price usd={breakdown.bulkDiscount} />
           </span>
         </div>
@@ -50,11 +50,15 @@ export default function OrderTotalsSummary({
 
       {breakdown.orderDiscount > 0 && (
         <div className="flex items-center justify-between gap-3 text-sm">
-          <span className="flex items-center gap-2 text-amber-700">
-            Order discount (5%)
-            <OrderDiscountBadge />
+          {/* The badge repeats the label, so it is dropped on phones, where
+              it squeezed the label onto three lines at 320px. */}
+          <span className="flex min-w-0 items-center gap-2 text-amber-700">
+            <span className="whitespace-nowrap">Order discount (5%)</span>
+            <span className="hidden sm:inline-flex">
+              <OrderDiscountBadge />
+            </span>
           </span>
-          <span className="text-amber-700">
+          <span className="whitespace-nowrap text-amber-700">
             −<Price usd={breakdown.orderDiscount} />
           </span>
         </div>
@@ -63,7 +67,7 @@ export default function OrderTotalsSummary({
       {breakdown.couponDiscount > 0 && (
         <div className="flex items-center justify-between gap-3 text-sm">
           <span className="text-emerald-700">{breakdown.couponLabel}</span>
-          <span className="text-emerald-700">
+          <span className="whitespace-nowrap text-emerald-700">
             −<Price usd={breakdown.couponDiscount} />
           </span>
         </div>

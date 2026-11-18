@@ -709,7 +709,9 @@ export default function CheckoutPage() {
                         required
                         value={usState}
                         onChange={(e) => setUsState(e.target.value)}
-                        className={inputClass}
+                        // A native select sizes itself shorter than the text
+                        // inputs beside it; this matches their 50px height.
+                        className={`${inputClass} h-[50px]`}
                       >
                         <option value="">Select state</option>
                         {US_STATES.map((s) => (
@@ -745,7 +747,8 @@ export default function CheckoutPage() {
                         States, and /api/checkout refuses any other country. */}
                     <p
                       id="checkout-country"
-                      className={`${inputClass} cursor-default bg-neutral-50 text-neutral-700`}
+                      aria-readonly="true"
+                      className="box-border w-full max-w-full cursor-default rounded-lg border border-neutral-200 bg-neutral-100 px-4 py-3 text-base text-neutral-700"
                     >
                       {SHIPPING_COUNTRY_NAME}
                     </p>
@@ -1163,7 +1166,10 @@ export default function CheckoutPage() {
                       </div>
 
                       <div className="min-w-0 flex-1">
-                        <h3 className="text-sm font-medium leading-snug text-neutral-900">
+                        <h3
+                          className="line-clamp-3 text-sm font-medium leading-snug text-neutral-900"
+                          title={item.name}
+                        >
                           {item.name}
                         </h3>
                         <div className="mt-1">

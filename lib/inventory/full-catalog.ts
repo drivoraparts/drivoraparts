@@ -226,7 +226,7 @@ Highlights
 • Twin Turbocharged Performance
 • Iron Block Construction
 • Massive Horsepower Potential
-• Worldwide Tuning Support
+• Extensive Tuning Support
 
 Warranty
 24-Month Limited Warranty
@@ -4135,8 +4135,8 @@ Ships within the United States only`,
      and parts do not interchange with any of them:
        · 7.3 IDI (pre-1994, indirect injection, no HEUI)
        · 1999.5–2003 7.3 Power Stroke (Super Duty, GTP38)
-       · 2020+ 7.3 "Godzilla" (petrol V8, unrelated)
-     The catalogue already contains Godzilla and 1999.5–2003
+       · 2020+ 7.3 "Godzilla" (gasoline V8, unrelated)
+     The catalog already contains Godzilla and 1999.5–2003
      parts, so every listing here states the split explicitly.
 
      PRICING: `price` is the anchor that applyPublicPrices()
@@ -4167,7 +4167,7 @@ Ships within the United States only`,
     location: "our USA warehouse or supplier network, depending on your location",
     partNumber: "F6TZ-6K682-ARM (interchange 1822775C92 · 466057-5005 · 468485-9004)",
     fitment:
-      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Applies to engine serial numbers up to 661,973. Does NOT fit the 1999.5–2003 Super Duty 7.3L, which uses the GTP38, nor the pre-1994 7.3 IDI or the 2020+ 7.3 Godzilla petrol V8. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
+      "1994.5–1997 Ford F-250 / F-350 OBS with the 7.3L Power Stroke diesel. Applies to engine serial numbers up to 661,973. Does NOT fit the 1999.5–2003 Super Duty 7.3L, which uses the GTP38, nor the pre-1994 7.3 IDI or the 2020+ 7.3 Godzilla gasoline V8. Commonly searched as OBS F250, OBS F350, F250 7.3 Powerstroke and F350 7.3 Powerstroke.",
     drivetrain: "4x2 and 4x4",
     coreCharge: "$200 refundable core charge",
     freightNotes: "Ships as a parcel.",
@@ -4177,7 +4177,7 @@ Ships within the United States only`,
     images: ["/product-media/turbocharger/tp38-turbo-obs-f6tz-6k682-arm/1.webp"],
     description: `Remanufactured TP38 turbocharger for the OBS 7.3L Power Stroke.
 
-The TP38 is the factory turbocharger for the 1994.5–1997 Power Stroke, and it is the single most common failure point on a high-mileage OBS truck. Shaft play, a leaking centre section, or a wastegate that no longer holds are all reasons these come off.
+The TP38 is the factory turbocharger for the 1994.5–1997 Power Stroke, and it is the single most common failure point on a high-mileage OBS truck. Shaft play, a leaking center section, or a wastegate that no longer holds are all reasons these come off.
 
 This is a remanufactured unit rather than a used take-off. Confirm your engine serial number before ordering — the TP38 covers serials up to 661,973, and later engines take a different turbocharger.
 
@@ -5162,7 +5162,7 @@ The S5-47 is the gearbox Ford put behind the 7.3L Power Stroke, rated to 470 lb-
 
 That loose use of "ZF5" is the problem. The S5-42 is a different, lower-rated transmission used in F-Series and Broncos from 1988 to 1995, and the later S5-47M is different again. None of the three interchange. If you are shopping by the name "ZF5" alone, confirm which unit your truck actually has before ordering.
 
-Diesel S5-47s use the 5.08:1 medium first-gear ratio; the 5.72:1 wide ratio is the petrol version.
+Diesel S5-47s use the 5.08:1 medium first-gear ratio; the 5.72:1 wide ratio is the gasoline version.
 
 Clutch, hydraulics and bellhousing are not included. Freight requires a dock or forklift.
 

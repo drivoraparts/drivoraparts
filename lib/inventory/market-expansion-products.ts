@@ -20,7 +20,7 @@
    DrivoraParts does not claim ownership of these images.
 
    STOCK: `stock: true` with no stockQty, matching the rest of
-   the catalogue — the availability setup is unchanged.
+   the catalog — the availability setup is unchanged.
 ========================================================= */
 
 import type { Product } from "./types";
@@ -1099,7 +1099,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/maxtrax-mkii-titanium-grey-mtx02tg/1.webp"],
     description: `MAXTRAX MKII recovery boards in Titanium Grey — the carton holds two boards and two telltale leashes.
 
-MAXTRAX are the original Australian recovery boards. Wedge them against the tyres of a vehicle stuck in sand, mud or snow and the large cleats bite into both the tread and the ground, giving the tyre something to climb.
+MAXTRAX are the original Australian recovery boards. Wedge them against the tires of a vehicle stuck in sand, mud or snow and the large cleats bite into both the tread and the ground, giving the tire something to climb.
 
 Each board is 1150 mm long and 330 mm wide, moulded from reinforced engineering-grade nylon. The carton includes two orange telltale leashes so boards buried in sand can be found again.
 
@@ -1116,7 +1116,7 @@ Material: Reinforced engineering-grade nylon
 Highlights
 
 Sold as a pair with leashes
-Aggressive cleats grip tyre tread and terrain
+Aggressive cleats grip tire tread and terrain
 Mounts to most roof racks with MAXTRAX mounting pins (sold separately)
 
 Warranty
@@ -3284,7 +3284,7 @@ Ships within the United States only`,
     partNumber: "1064224SS",
     fitment: "2007.5–2018 Dodge / Ram 2500 and 3500 with the 6.7L Cummins and 68RFE automatic, 4WD. The 2WD version is BD part 1064222SS.",
     drivetrain: "4WD",
-    included: ["68RFE transmission with Protect68 kit and upgraded valve body","220 psi line pressure module","Deep-sump aluminium pan","ProForce torque converter"],
+    included: ["68RFE transmission with Protect68 kit and upgraded valve body","220 psi line pressure module","Deep-sump aluminum pan","ProForce torque converter"],
     coreCharge: "$2,100 refundable core deposit",
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
@@ -3295,7 +3295,7 @@ Ships within the United States only`,
 
 The Roadmaster is BD's 68RFE for stock or mildly tuned trucks running stock or stock-plus injectors. It's for owners who want the factory transmission's weak points fixed rather than a build for big power.
 
-BD installs its Protect68 kit and an upgraded valve body with a gasketed separator plate, aimed at the cross-leaks that lead to 68RFE clutch failure. A 220 psi line pressure module adds torque-holding capacity, and a deep-sump aluminium pan adds fluid capacity and cooling.
+BD installs its Protect68 kit and an upgraded valve body with a gasketed separator plate, aimed at the cross-leaks that lead to 68RFE clutch failure. A 220 psi line pressure module adds torque-holding capacity, and a deep-sump aluminum pan adds fluid capacity and cooling.
 
 It comes matched with a ProForce torque converter, which uses a forged billet cover and an upgraded stator for response at lower rpm.
 
@@ -3340,7 +3340,7 @@ Ships within the United States only`,
     partNumber: "1064304SS",
     fitment: "2019–2024 Ram 2500 and 3500 with the 6.7L Cummins and 68RFE automatic, 4WD. The 2WD version is BD part 1064302SS. Not for trucks with the Aisin AS69RC.",
     drivetrain: "4WD",
-    included: ["68RFE transmission with Protect68 kit and upgraded valve body","Deep-sump aluminium pan","ProForce billet torque converter"],
+    included: ["68RFE transmission with Protect68 kit and upgraded valve body","Deep-sump aluminum pan","ProForce billet torque converter"],
     coreCharge: "$2,500 refundable core deposit",
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
@@ -3351,7 +3351,7 @@ Ships within the United States only`,
 
 The Roadmaster is BD's 68RFE for stock or mildly tuned trucks on stock or stock-plus injectors.
 
-BD pre-installs its Protect68 kit and an upgraded valve body with a gasketed separator plate, which targets the cross-leaks behind many 68RFE clutch failures. A deep-sump aluminium pan adds fluid capacity and cooling.
+BD pre-installs its Protect68 kit and an upgraded valve body with a gasketed separator plate, which targets the cross-leaks behind many 68RFE clutch failures. A deep-sump aluminum pan adds fluid capacity and cooling.
 
 A ProForce billet torque converter is included, with a forged billet cover and upgraded stator for response at lower rpm.
 
@@ -3659,7 +3659,7 @@ Ships within the United States only`,
     partNumber: "1064784SS",
     fitment: "2017–2019 Chevrolet Silverado and GMC Sierra 2500HD / 3500HD with the 6.6L L5P Duramax and Allison 1000, 4WD. The 2WD version is BD part 1064782SS.",
     drivetrain: "4WD",
-    included: ["Allison 1000 transmission (modified valve body and pump, increased clutch counts)","BD deep aluminium pan","ProForce torque converter"],
+    included: ["Allison 1000 transmission (modified valve body and pump, increased clutch counts)","BD deep aluminum pan","ProForce torque converter"],
     coreCharge: "$2,000 refundable core deposit",
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
@@ -3670,7 +3670,7 @@ Ships within the United States only`,
 
 The TowMaster Allison is built for stock or mildly modified Duramax trucks that tow. BD modifies the valve body and pump and raises clutch counts, which it says increases torque-holding capacity by more than 80%.
 
-A BD deep aluminium pan adds 3.5 quarts of fluid to help keep temperatures down under tow. Every TowMaster Allison package includes a ProForce torque converter.
+A BD deep aluminum pan adds 3.5 quarts of fluid to help keep temperatures down under tow. Every TowMaster Allison package includes a ProForce torque converter.
 
 BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
 
@@ -3712,7 +3712,7 @@ Ships within the United States only`,
     partNumber: "1064794SS",
     fitment: "2017–2019 Chevrolet Silverado and GMC Sierra 2500HD / 3500HD with the 6.6L L5P Duramax and Allison 1000, 4WD. The 2WD version is BD part 1064792SS.",
     drivetrain: "4WD",
-    included: ["Allison 1000 transmission with modified valve body","BD deep aluminium pan","ProForce torque converter"],
+    included: ["Allison 1000 transmission with modified valve body","BD deep aluminum pan","ProForce torque converter"],
     coreCharge: "$2,000 refundable core deposit",
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
@@ -3723,7 +3723,7 @@ Ships within the United States only`,
 
 The Roadmaster is BD's reliability-focused Allison for stock or mildly modified trucks. A modified valve body raises line pressure by up to 68%, increasing the clutch packs' torque capacity.
 
-It gets the same BD deep aluminium pan as the TowMaster, adding 3.5 quarts of fluid, and every Roadmaster package includes a ProForce torque converter. Choose the TowMaster instead if the truck tows heavy and often.
+It gets the same BD deep aluminum pan as the TowMaster, adding 3.5 quarts of fluid, and every Roadmaster package includes a ProForce torque converter. Choose the TowMaster instead if the truck tows heavy and often.
 
 BD supplies this as an exchange unit: a $2,000 refundable core deposit applies, refunded when your old unit is returned.
 
@@ -4270,7 +4270,7 @@ Ships within the United States only`,
 
 A lift pump keeps the high-pressure injection pump fed. When supply pressure drops, the injection pump wears, and those pumps are expensive to replace.
 
-BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminium bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
+BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminum bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
 
 Specifications
 
@@ -4317,7 +4317,7 @@ Ships within the United States only`,
 
 A lift pump keeps the high-pressure injection pump fed. When supply pressure drops, the injection pump wears, and those pumps are expensive to replace.
 
-BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminium bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
+BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminum bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
 
 Specifications
 
@@ -4364,7 +4364,7 @@ Ships within the United States only`,
 
 A lift pump keeps the high-pressure injection pump fed. When supply pressure drops, the injection pump wears, and those pumps are expensive to replace.
 
-BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminium bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
+BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminum bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
 
 Specifications
 
@@ -4411,7 +4411,7 @@ Ships within the United States only`,
 
 A lift pump keeps the high-pressure injection pump fed. When supply pressure drops, the injection pump wears, and those pumps are expensive to replace.
 
-BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminium bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
+BD's Venom replaced its FlowMax line. A diaphragm-style regulator holds fuel pressure up as flow demand rises, the gerotor runs on sealed ball bearings, and it mounts on a rigid aluminum bracket with vibration isolators. BD rates it to support up to 900 hp of fuel demand.
 
 BD rates the Duramax pump at 165 gph and says it will support a single large CP3 or dual-fuel kits with stock high-pressure pumps. The kit includes a 3-micron fuel filter, a 20-micron water separator and the parts to plumb it with 1/2-inch fuel lines.
 
@@ -5424,7 +5424,7 @@ Ships within the United States only`,
 
 Lifting an independent-front-suspension vehicle pushes its caster and camber outside the factory range, and the factory alignment cams can run out of adjustment. OME's arms are geometry-corrected for a 2 in lift and bring the cams back into a usable range.
 
-OME quotes an increase of +2.5 to +3.5 degrees of caster and up to 1.5 degrees of additional negative camber (approximate figures). Have a wheel alignment done after fitting. With aftermarket wheels and tyres, check fender clearance.
+OME quotes an increase of +2.5 to +3.5 degrees of caster and up to 1.5 degrees of additional negative camber (approximate figures). Have a wheel alignment done after fitting. With aftermarket wheels and tires, check fender clearance.
 
 They are tested to meet VSB14, the Australian standard for vehicle modifications, and are designed and manufactured in Australia.
 
@@ -5474,7 +5474,7 @@ Ships within the United States only`,
 
 Lifting an independent-front-suspension vehicle pushes its caster and camber outside the factory range, and the factory alignment cams can run out of adjustment. OME's arms are geometry-corrected for a 2 in lift and bring the cams back into a usable range.
 
-OME quotes an increase of +2.5 to +3.5 degrees of caster and up to 1.5 degrees of additional negative camber (approximate figures). Have a wheel alignment done after fitting. With aftermarket wheels and tyres, check fender clearance.
+OME quotes an increase of +2.5 to +3.5 degrees of caster and up to 1.5 degrees of additional negative camber (approximate figures). Have a wheel alignment done after fitting. With aftermarket wheels and tires, check fender clearance.
 
 They are tested to meet VSB14, the Australian standard for vehicle modifications, and are designed and manufactured in Australia.
 
@@ -5523,7 +5523,7 @@ Ships within the United States only`,
 
 Lifting an independent-front-suspension vehicle pushes its caster and camber outside the factory range, and the factory alignment cams can run out of adjustment. OME's arms are geometry-corrected for a 2 in lift and bring the cams back into a usable range.
 
-OME quotes an increase of +2.5 to +3.5 degrees of caster and up to 1.5 degrees of additional negative camber (approximate figures). Have a wheel alignment done after fitting. With aftermarket wheels and tyres, check fender clearance.
+OME quotes an increase of +2.5 to +3.5 degrees of caster and up to 1.5 degrees of additional negative camber (approximate figures). Have a wheel alignment done after fitting. With aftermarket wheels and tires, check fender clearance.
 
 The arms use forged ball-joint housings and eyelets, a heavy-duty greasable ball joint, maintenance-free GIIRO bushings, mounts for the OE ABS wiring and ARB's Integrit powder coat.
 
@@ -5663,7 +5663,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/ome-front-sway-bar-kit-omestab3/1.webp"],
     description: `Old Man Emu front sway bar kit for the Toyota Land Cruiser 76, 78 and 79 Series.
 
-A front sway bar links the two sides of the axle to resist body roll through corners and on off-camber tracks. Roll matters more on a loaded or lifted 70 Series, where the centre of gravity sits higher.
+A front sway bar links the two sides of the axle to resist body roll through corners and on off-camber tracks. Roll matters more on a loaded or lifted 70 Series, where the center of gravity sits higher.
 
 The kit is made in Australia by Old Man Emu for the 76, 78 and 79 Series.
 
@@ -5756,7 +5756,7 @@ Ships within the United States only`,
 
 BP-51 stands for bypass, 51 mm bore. It's a big-bore, position-sensitive internal-bypass shock with a remote reservoir. Damping stays soft around ride height for comfort, then firms up as the shock nears the end of its travel.
 
-Rebound and compression adjust independently on the vehicle. Construction includes a 6061 aluminium top hat, a Dash 6 high-temperature Teflon hose, large Teflon-lined spherical bearings, a hard-chromed ground shaft with a polyethylene guard, and oversized rubber bushings. It bolts on with no vehicle modifications.
+Rebound and compression adjust independently on the vehicle. Construction includes a 6061 aluminum top hat, a Dash 6 high-temperature Teflon hose, large Teflon-lined spherical bearings, a hard-chromed ground shaft with a polyethylene guard, and oversized rubber bushings. It bolts on with no vehicle modifications.
 
 Specifications
 
@@ -5803,7 +5803,7 @@ Ships within the United States only`,
 
 BP-51 stands for bypass, 51 mm bore. It's a big-bore, position-sensitive internal-bypass shock with a remote reservoir. Damping stays soft around ride height for comfort, then firms up as the shock nears the end of its travel.
 
-Rebound and compression adjust independently on the vehicle. Construction includes a 6061 aluminium top hat, a Dash 6 high-temperature Teflon hose, large Teflon-lined spherical bearings, a hard-chromed ground shaft with a polyethylene guard, and oversized rubber bushings. It bolts on with no vehicle modifications.
+Rebound and compression adjust independently on the vehicle. Construction includes a 6061 aluminum top hat, a Dash 6 high-temperature Teflon hose, large Teflon-lined spherical bearings, a hard-chromed ground shaft with a polyethylene guard, and oversized rubber bushings. It bolts on with no vehicle modifications.
 
 Specifications
 
@@ -5848,7 +5848,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/ome-mt64-rear-right-shock-hilux-mt64601001r/1.webp"],
     description: `Old Man Emu MT64 rear right shock absorber for the 2015-on Toyota Hilux.
 
-MT64 is OME's monotube line, built around a large aluminium body that holds more oil and sheds heat better than a steel body. OME uses it for everything from long overland trips to daily driving.
+MT64 is OME's monotube line, built around a large aluminum body that holds more oil and sheds heat better than a steel body. OME uses it for everything from long overland trips to daily driving.
 
 The rear MT64 shocks are handed. This is the right-hand unit, and a set needs both sides. It's a direct replacement for stock shocks or those from an aftermarket lift kit.
 
@@ -5857,12 +5857,12 @@ Specifications
 Manufacturer: Old Man Emu (ARB)
 Series: MT64
 Position: Rear right
-Design: Monotube, aluminium body
+Design: Monotube, aluminum body
 Part number: MT64601001R
 
 Highlights
 
-Monotube with a large aluminium body
+Monotube with a large aluminum body
 Rear right-hand unit
 Direct replacement fit
 
@@ -5893,7 +5893,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/ome-mt64-rear-left-shock-hilux-mt64601001l/1.webp"],
     description: `Old Man Emu MT64 rear left shock absorber for the 2015-on Toyota Hilux.
 
-MT64 is OME's monotube line, built around a large aluminium body that holds more oil and sheds heat better than a steel body. OME uses it for everything from long overland trips to daily driving.
+MT64 is OME's monotube line, built around a large aluminum body that holds more oil and sheds heat better than a steel body. OME uses it for everything from long overland trips to daily driving.
 
 The rear MT64 shocks are handed. This is the left-hand unit, and a set needs both sides. It's a direct replacement for stock shocks or those from an aftermarket lift kit.
 
@@ -5902,12 +5902,12 @@ Specifications
 Manufacturer: Old Man Emu (ARB)
 Series: MT64
 Position: Rear left
-Design: Monotube, aluminium body
+Design: Monotube, aluminum body
 Part number: MT64601001L
 
 Highlights
 
-Monotube with a large aluminium body
+Monotube with a large aluminum body
 Rear left-hand unit
 Direct replacement fit
 
@@ -6297,7 +6297,7 @@ Ships within the United States only`,
 
 This is Dobinsons' deluxe bar for the flared GU wagon. Its winch mounts are separate from the bar, spreading impact and winching loads evenly across the chassis, and a split upper and lower design keeps air flowing to the radiator.
 
-It comes with 100 mm fog lights, LED park and indicator lights and polyurethane bumper protectors, plus side and centre bash-plate kits (most models). There are reinforced dual Hi-Lift jacking points, reinforced wings, dual aerial mounts and driving-light mounts. Finish is black.
+It comes with 100 mm fog lights, LED park and indicator lights and polyurethane bumper protectors, plus side and center bash-plate kits (most models). There are reinforced dual Hi-Lift jacking points, reinforced wings, dual aerial mounts and driving-light mounts. Finish is black.
 
 Dobinsons publishes this photograph marked "Illustration Purposes Only", and says features vary by bumper model. Go by the specification list above rather than the details in the picture.
 
@@ -6336,15 +6336,15 @@ Ships within the United States only`,
     location: "our supplier network",
     partNumber: "BW80-4143",
     fitment: "Toyota Land Cruiser 79 Series.",
-    included: ["Rear bumper","Swing-out spare-tyre carrier","Jerry can holder (no jerry can)","Stainless latches and hardware","12 V LED lights"],
+    included: ["Rear bumper","Swing-out spare-tire carrier","Jerry can holder (no jerry can)","Stainless latches and hardware","12 V LED lights"],
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
     thumbnail: "/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc79-bw80-4143/1.webp",
     images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc79-bw80-4143/1.webp"],
-    description: `Dobinsons steel rear bumper with a swing-out spare-tyre carrier and jerry can holder for the Toyota Land Cruiser 79 Series.
+    description: `Dobinsons steel rear bumper with a swing-out spare-tire carrier and jerry can holder for the Toyota Land Cruiser 79 Series.
 
-It's sold as a complete kit, with a single spare-tyre carrier and a jerry can holder (jerry can not included). The tyre carrier head is adjustable for offset and takes up to a 35 in tyre. The carrier and holder are side-specific. Each spindle comes with a cover if you leave one off.
+It's sold as a complete kit, with a single spare-tire carrier and a jerry can holder (jerry can not included). The tire carrier head is adjustable for offset and takes up to a 35 in tire. The carrier and holder are side-specific. Each spindle comes with a cover if you leave one off.
 
 Finish is black powder coat, with stainless-steel latches and hardware. The LED lights are 12 V only and have to be spliced into the factory harness, so they are not plug-and-play. The bumper does not provide a tow hitch; it's designed to work around a standard hitch below the rear crossmember.
 
@@ -6353,8 +6353,8 @@ Dobinsons publishes this photograph marked "Illustration Purposes Only", and say
 Specifications
 
 Manufacturer: Dobinsons Spring & Suspension
-Carriers: Single spare-tyre carrier + jerry can holder
-Tyre size: Up to 35 in
+Carriers: Single spare-tire carrier + jerry can holder
+Tire size: Up to 35 in
 Lighting: 12 V LED (requires splicing)
 Finish: Black powder coat, stainless latches and hardware
 Tow hitch: Not included — works around a standard hitch
@@ -6362,7 +6362,7 @@ Part number: BW80-4143
 
 Highlights
 
-Complete kit with tyre carrier and jerry can holder
+Complete kit with tire carrier and jerry can holder
 Takes up to a 35 in spare
 Stainless-steel latches
 
@@ -6393,7 +6393,7 @@ Ships within the United States only`,
     images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-patrol-y61-bw80-4110/1.webp"],
     description: `Dobinsons steel rear bumper with swing-outs for the 1998–2004 Nissan Patrol Y61 GU.
 
-It's sold as a complete kit, with an adjustable-offset spare-tyre carrier head that takes up to a 35 in tyre. It works with the factory tow hitch in its original position.
+It's sold as a complete kit, with an adjustable-offset spare-tire carrier head that takes up to a 35 in tire. It works with the factory tow hitch in its original position.
 
 Standard finish is black powder coat, with stainless-steel latches and hardware. The LED lights are 12 V only and have to be spliced into the factory harness, so they are not plug-and-play.
 
@@ -6402,7 +6402,7 @@ Dobinsons publishes this photograph marked "Illustration Purposes Only", and say
 Specifications
 
 Manufacturer: Dobinsons Spring & Suspension
-Tyre size: Up to 35 in
+Tire size: Up to 35 in
 Lighting: 12 V LED (requires splicing)
 Tow hitch: Works with the factory hitch in the OE position
 Finish: Black powder coat, stainless latches and hardware
@@ -6410,7 +6410,7 @@ Part number: BW80-4110
 
 Highlights
 
-Complete kit with swing-out tyre carrier
+Complete kit with swing-out tire carrier
 Retains the factory tow hitch
 Stainless-steel latches
 
@@ -7139,7 +7139,7 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "58450DJ",
-    fitment: "Toyota Hilux 2005–2021. Works with factory wheels and tyres; ICON recommends 17 × 8.5 in aftermarket wheels with a maximum of 4.75 in backspace and 33 × 11.50 in tyres.",
+    fitment: "Toyota Hilux 2005–2021. Works with factory wheels and tires; ICON recommends 17 × 8.5 in aftermarket wheels with a maximum of 4.75 in backspace and 33 × 11.50 in tires.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -7149,7 +7149,7 @@ Ships within the United States only`,
 
 ICON builds these arms from 1026 DOM steel tube, CNC-bent. The pivot is its Delta Joint, which aims for the articulation of a uniball with the long life of a ball joint.
 
-They correct geometry for a lifted Hilux and clear larger tyres. They work with factory wheels and tyres. For aftermarket fitments, ICON recommends 17 × 8.5 in wheels with no more than 4.75 in backspace and 33 × 11.50 in tyres.
+They correct geometry for a lifted Hilux and clear larger tires. They work with factory wheels and tires. For aftermarket fitments, ICON recommends 17 × 8.5 in wheels with no more than 4.75 in backspace and 33 × 11.50 in tires.
 
 Specifications
 
@@ -7157,14 +7157,14 @@ Manufacturer: ICON Vehicle Dynamics
 Construction: 1026 DOM steel, CNC-bent tubing
 Pivot: ICON Delta Joint
 Recommended wheels: 17 × 8.5 in, max 4.75 in backspace
-Recommended tyres: 33 × 11.50 in
+Recommended tires: 33 × 11.50 in
 Part number: 58450DJ
 
 Highlights
 
 ICON Delta Joint pivot
 1026 DOM steel tube
-Factory wheel and tyre compatible
+Factory wheel and tire compatible
 
 Warranty
 Manufacturer Warranty
@@ -7175,7 +7175,7 @@ Ships within the United States only`,
   {
     id: 2283,
     createdAt: 1789430400000,
-    name: "ICON Billet Aluminium Upper Control Arm Kit with Delta Joint for 2005–2021 Toyota Hilux — 58550DJ",
+    name: "ICON Billet Aluminum Upper Control Arm Kit with Delta Joint for 2005–2021 Toyota Hilux — 58550DJ",
     category: "suspension",
     brand: "icon-vehicle-dynamics",
     // shocksurplus listing price for IVD58550DJ.
@@ -7185,22 +7185,22 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "58550DJ",
-    fitment: "Toyota Hilux 2005–2021. Works with factory wheels and tyres; ICON recommends 17 × 8.5 in aftermarket wheels with a maximum of 4.75 in backspace and 33 × 11.50 in tyres.",
+    fitment: "Toyota Hilux 2005–2021. Works with factory wheels and tires; ICON recommends 17 × 8.5 in aftermarket wheels with a maximum of 4.75 in backspace and 33 × 11.50 in tires.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/icon-billet-uca-delta-joint-hilux-58550dj/1.webp",
     images: ["/product-media/suspension/icon-billet-uca-delta-joint-hilux-58550dj/1.webp"],
-    description: `ICON CNC-machined billet aluminium upper control arms with the Delta Joint for the 2005–2021 Toyota Hilux.
+    description: `ICON CNC-machined billet aluminum upper control arms with the Delta Joint for the 2005–2021 Toyota Hilux.
 
-It's the billet version of ICON's Hilux arm, CNC-machined from 6061 aluminium with PTFE-lined FK rod ends and ICON's Delta Joint pivot. A matte anodised finish gives corrosion resistance.
+It's the billet version of ICON's Hilux arm, CNC-machined from 6061 aluminum with PTFE-lined FK rod ends and ICON's Delta Joint pivot. A matte anodised finish gives corrosion resistance.
 
-Wheel and tyre guidance is the same as the tubular arm. Factory sizes fit; for aftermarket, ICON recommends 17 × 8.5 in wheels with up to 4.75 in backspace and 33 × 11.50 in tyres.
+Wheel and tire guidance is the same as the tubular arm. Factory sizes fit; for aftermarket, ICON recommends 17 × 8.5 in wheels with up to 4.75 in backspace and 33 × 11.50 in tires.
 
 Specifications
 
 Manufacturer: ICON Vehicle Dynamics
-Construction: CNC-machined 6061 billet aluminium
+Construction: CNC-machined 6061 billet aluminum
 Rod ends: PTFE-lined FK
 Pivot: ICON Delta Joint
 Finish: Matte anodised
@@ -7208,7 +7208,7 @@ Part number: 58550DJ
 
 Highlights
 
-Billet 6061 aluminium
+Billet 6061 aluminum
 PTFE-lined FK rod ends
 Matte anodised finish
 
@@ -7231,7 +7231,7 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "58760",
-    fitment: "Toyota Land Cruiser 200 Series 2008–2021, front. Adjustable for 1.5–3.5 in of lift. Designed for petrol models; diesel-engined trucks may need a higher spring rate. KDSS compliant.",
+    fitment: "Toyota Land Cruiser 200 Series 2008–2021, front. Adjustable for 1.5–3.5 in of lift. Designed for gasoline models; diesel-engined trucks may need a higher spring rate. KDSS compliant.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -7241,7 +7241,7 @@ Ships within the United States only`,
 
 These coilovers add wheel travel and improve ride quality over stock, with lift adjustable from 1.5 to 3.5 in. They're compliant with Toyota's KDSS (Kinetic Dynamic Suspension System).
 
-ICON designed them around petrol models. A diesel-engined 200 Series is heavier at the front and may need a higher spring rate. Factory wheels and tyres fit. ICON recommends an 8.5 in wide wheel with 5.75 in backspace and 34 × 10.50 in tyres; larger tyres may need trimming.
+ICON designed them around gasoline models. A diesel-engined 200 Series is heavier at the front and may need a higher spring rate. Factory wheels and tires fit. ICON recommends an 8.5 in wide wheel with 5.75 in backspace and 34 × 10.50 in tires; larger tires may need trimming.
 
 Specifications
 
@@ -7251,7 +7251,7 @@ Position: Front
 Quantity: Pair
 Lift: 1.5–3.5 in adjustable
 KDSS: Compliant
-Designed for: Petrol models
+Designed for: Gasoline models
 Part number: 58760
 
 Highlights
@@ -7326,7 +7326,7 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "58635",
-    fitment: "Toyota Hilux 2005–2015, front. Factory wheels and tyres fit; ICON recommends an 8.5 in wide wheel with 4.75 in backspace and 33 × 11.50 in tyres.",
+    fitment: "Toyota Hilux 2005–2015, front. Factory wheels and tires fit; ICON recommends an 8.5 in wide wheel with 4.75 in backspace and 33 × 11.50 in tires.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -7336,7 +7336,7 @@ Ships within the United States only`,
 
 This is ICON's extended-travel front coilover for the seventh-generation Hilux, with the reservoir built into the shock body.
 
-Factory wheels and tyres fit. For aftermarket, ICON recommends an 8.5 in wide wheel with 4.75 in backspace and 33 × 11.50 in tyres; anything larger may need trimming.
+Factory wheels and tires fit. For aftermarket, ICON recommends an 8.5 in wide wheel with 4.75 in backspace and 33 × 11.50 in tires; anything larger may need trimming.
 
 Specifications
 
@@ -7350,7 +7350,7 @@ Highlights
 
 Extended travel
 Internal reservoir
-Factory wheel and tyre compatible
+Factory wheel and tire compatible
 
 Warranty
 Manufacturer Warranty
@@ -8484,7 +8484,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/arb-onboard-air-compressor-ckma12/1.webp"],
     description: `ARB Single Motor Onboard 12V Air Compressor (CKMA12) — 3.08 CFM free-flow, 50% (30 min on / 30 min off) duty cycle.
 
-ARB's single-motor onboard compressor is the one most 4x4s start with. It's hard-mounted in the engine bay or under a seat, with enough air to re-inflate tyres after airing down and to run ARB Air Lockers.
+ARB's single-motor onboard compressor is the one most 4x4s start with. It's hard-mounted in the engine bay or under a seat, with enough air to re-inflate tires after airing down and to run ARB Air Lockers.
 
 It's sealed against moisture and dust, with a hard-anodised cylinder bore and a Teflon-impregnated carbon-fibre piston seal. The motor is thermally protected, an over-pressure valve and maxi-fuse protect the circuit, and the anodised bracket can be flipped 180 degrees to suit the mounting spot.
 
@@ -8538,7 +8538,7 @@ Ships within the United States only`,
 
 The twin-motor onboard unit doubles the output of the single for faster inflation of big tyres. With an optional air tank it can run many air tools.
 
-It runs a 100% duty cycle. It's sealed against moisture and dust, with an integrated pressure switch, relays and an IP55 brushless fan cooling the electronics, motors and cylinder heads. It's designed for tyre inflation and Air Locker activation with ARB's optional accessories.
+It runs a 100% duty cycle. It's sealed against moisture and dust, with an integrated pressure switch, relays and an IP55 brushless fan cooling the electronics, motors and cylinder heads. It's designed for tire inflation and Air Locker activation with ARB's optional accessories.
 
 Specifications
 
@@ -8741,7 +8741,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/arb-portable-air-compressor-ckmtp12/1.webp"],
     description: `ARB Twin Motor Portable 12V Air Compressor (CKMTP12) — 6.16 CFM free-flow, 100% duty cycle.
 
-ARB designed the twin portable for fast inflation of large tyres and for the high air demand of most air tools, built to commercial and industrial standards.
+ARB designed the twin portable for fast inflation of large tires and for the high air demand of most air tools, built to commercial and industrial standards.
 
 It runs a 100% duty cycle. It's sealed against moisture and dust, with an integrated pressure switch, relays and an IP55 brushless cooling fan.
 
@@ -8842,7 +8842,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/arb-portable-air-compressor-ckbltp12/1.webp"],
     description: `ARB Brushless Twin Motor Portable 12V Air Compressor (CKBLTP12) — 9.18 CFM free-flow, 90% duty cycle.
 
-ARB's highest-output portable: twin brushless motors in a carry case, for large tyres, several vehicles or air tools.
+ARB's highest-output portable: twin brushless motors in a carry case, for large tires, several vehicles or air tools.
 
 It has active fan cooling, electronic speed control, live status alerts, and voltage and overload protection. It works with ARB's air accessories and hose kits.
 
@@ -9004,7 +9004,7 @@ Ships within the United States only`,
     images: ["/product-media/lighting/arb-intensity-solis-36-spot-sjb36s/1.webp"],
     description: `ARB Intensity SOLIS 36 spot beam LED driving light — 9,546 effective lumens, 1,032 m to 1 lux.
 
-The SOLIS 36 is the latest version of ARB's Australian Intensity driving light. It uses superior-grade electronics and Osram LEDs with ARB's active thermal management, in a high-pressure die-cast aluminium body and mount behind a UV-stable polycarbonate lens.
+The SOLIS 36 is the latest version of ARB's Australian Intensity driving light. It uses superior-grade electronics and Osram LEDs with ARB's active thermal management, in a high-pressure die-cast aluminum body and mount behind a UV-stable polycarbonate lens.
 
 The 6° spot beam throws light a long way down the road. Pair it with the SOLIS 36 flood for width.
 
@@ -9061,7 +9061,7 @@ Ships within the United States only`,
     images: ["/product-media/lighting/arb-intensity-solis-36-flood-sjb36f/1.webp"],
     description: `ARB Intensity SOLIS 36 flood beam LED driving light — 8,333 effective lumens, 729 m to 1 lux.
 
-The SOLIS 36 is the latest version of ARB's Australian Intensity driving light. It uses superior-grade electronics and Osram LEDs with ARB's active thermal management, in a high-pressure die-cast aluminium body and mount behind a UV-stable polycarbonate lens.
+The SOLIS 36 is the latest version of ARB's Australian Intensity driving light. It uses superior-grade electronics and Osram LEDs with ARB's active thermal management, in a high-pressure die-cast aluminum body and mount behind a UV-stable polycarbonate lens.
 
 The 11° flood beam lights the road edges and verges. Pair it with the SOLIS 36 spot for reach.
 
@@ -9210,7 +9210,7 @@ Ships within the United States only`,
 
 Zenith is ARB's slimline bar with minimal front overhang, laser-cut and formed from 3 mm steel and powder coated in a satin finish. A built-in cradle takes most low-mount winches up to 12,000 lb, and it works with the factory radar ADAS, parking sensors and airbags.
 
-Two integrated 8-tonne recovery points (17,637 lb) are finished in red. Bash plates are included — a heavy forged centre piece plus side plates — and it keeps the OE fog lights on applicable models. A removable centre grille takes up to seven 4 in pod lights or a light bar up to 30 in.
+Two integrated 8-tonne recovery points (17,637 lb) are finished in red. Bash plates are included — a heavy forged center piece plus side plates — and it keeps the OE fog lights on applicable models. A removable center grille takes up to seven 4 in pod lights or a light bar up to 30 in.
 
 Specifications
 
@@ -10463,7 +10463,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -10518,7 +10518,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -10570,7 +10570,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -10625,7 +10625,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -10677,7 +10677,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -10732,7 +10732,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -10784,7 +10784,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -10836,7 +10836,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -10891,7 +10891,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -10943,7 +10943,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -10998,7 +10998,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -11049,7 +11049,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -11101,7 +11101,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -11153,7 +11153,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -11208,7 +11208,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -11260,7 +11260,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -11315,7 +11315,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -11370,7 +11370,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -11422,7 +11422,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -11474,7 +11474,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -11529,7 +11529,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -11581,7 +11581,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -11633,7 +11633,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -11688,7 +11688,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -11740,7 +11740,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -11795,7 +11795,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -11847,7 +11847,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -11902,7 +11902,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -11954,7 +11954,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -12009,7 +12009,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12061,7 +12061,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12112,7 +12112,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12163,7 +12163,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12215,7 +12215,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -12270,7 +12270,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -12325,7 +12325,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12376,7 +12376,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12427,7 +12427,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12479,7 +12479,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12531,7 +12531,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12583,7 +12583,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12635,7 +12635,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12687,7 +12687,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12738,7 +12738,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12789,7 +12789,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -12840,7 +12840,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -12895,7 +12895,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -12950,7 +12950,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -13005,7 +13005,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13056,7 +13056,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13107,7 +13107,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13159,7 +13159,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13211,7 +13211,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13263,7 +13263,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13314,7 +13314,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13365,7 +13365,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13416,7 +13416,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13468,7 +13468,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13520,7 +13520,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13572,7 +13572,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13624,7 +13624,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13676,7 +13676,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13727,7 +13727,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13778,7 +13778,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13829,7 +13829,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -13880,7 +13880,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -13935,7 +13935,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -13990,7 +13990,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -14045,7 +14045,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -14100,7 +14100,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -14155,7 +14155,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -14830,7 +14830,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -14882,7 +14882,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -14934,7 +14934,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -14986,7 +14986,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -15037,7 +15037,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminium body has a type III hard-anodised finish.
+The kit uses OME's BP-51 internal-bypass coilovers and shocks. Damping is position-sensitive, and there are 10 levels each of compression and rebound, adjustable on the vehicle. A remote reservoir adds oil for cooling on long off-road sections, and the 6061 aluminum body has a type III hard-anodised finish.
 
 A wheel alignment is required after fitting.
 
@@ -15088,7 +15088,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -15140,7 +15140,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -15195,7 +15195,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -15247,7 +15247,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front and rear. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 Upper control arms are included to correct front alignment geometry at the raised ride height.
 
@@ -15302,7 +15302,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the front only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -15353,7 +15353,7 @@ OME sells integrated kits with the shocks and springs already matched, tuned for
 
 This kit is for the rear only. The load figures are the added weight each end is rated to carry at the stated lift. Front: 0 lb means a stock front end, while 220–330 lb suits a heavier front such as a steel bumper and winch. Rear: the constant load carried in the bed or cargo area, such as drawers, a canopy or camping gear.
 
-The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminium body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
+The kit uses OME's MT64 monotube shocks, with a 2.8 in aluminum body that holds more oil and sheds heat far faster than steel. The front is a complete coilover assembly for direct bolt-in fitment, with a 6-position snap ring that sets front lift anywhere from 1.75 to 3 in. Digressive valving reacts quickly to changing surfaces, and a hydraulic end-zone top-out cushions full extension.
 
 A wheel alignment is required after fitting.
 
@@ -16201,7 +16201,7 @@ Ships within the United States only`,
     images: ["/product-media/turbocharger/garrett-stock-replacement-turbo-2017-2019-ford-6-7-888143-5001s/1.webp"],
     description: `Garrett stock-replacement turbocharger for 2017–2019 Ford 6.7L Power Stroke pickups.
 
-Garrett manufactures the factory turbo on the 2017–2019 6.7L. Its design centres on what Garrett calls SST (single sequential turbo), giving near two-stage response from a single unit.
+Garrett manufactures the factory turbo on the 2017–2019 6.7L. Its design centers on what Garrett calls SST (single sequential turbo), giving near two-stage response from a single unit.
 
 This part is for pickups only. Cab & chassis trucks take the 888142-5001S, which is listed separately.
 
@@ -16880,7 +16880,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/csf-oem-plus-intercooler-cummins-2006-2009-6072/1.webp"],
     description: `CSF OEM+ direct-replacement intercooler for 2006–2009 Dodge Ram 5.9L and 6.7L Cummins trucks.
 
-It's a replacement for a leaking or damaged factory intercooler, built by ISO-certified cooling specialist CSF. The end tanks are cast aluminium and fully TIG-welded to an OEM-style tube-and-fin core.
+It's a replacement for a leaking or damaged factory intercooler, built by ISO-certified cooling specialist CSF. The end tanks are cast aluminum and fully TIG-welded to an OEM-style tube-and-fin core.
 
 It drops straight in with no modification and meets or exceeds OEM specifications.
 
@@ -16888,14 +16888,14 @@ Specifications
 
 Manufacturer: CSF Radiators
 Type: OEM+ direct replacement
-End tanks: Cast aluminium, TIG-welded
+End tanks: Cast aluminum, TIG-welded
 Core: OEM-style tube and fin
 Part number: 6072
 
 Highlights
 
 Direct drop-in
-Cast aluminium end tanks
+Cast aluminum end tanks
 TIG-welded construction
 
 Warranty
@@ -16971,7 +16971,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/mishimoto-intercooler-kit-ram-6-7-2007-2009-mmint-ram-07ksl/1.webp"],
     description: `Mishimoto intercooler and pipe kit for the 2007.5–2009 Dodge Ram 6.7L Cummins, silver.
 
-It's a complete charge-air system. Mishimoto's bar-and-plate intercooler has cast aluminium end tanks and a significantly larger core than stock, and the kit adds Mishimoto intercooler piping.
+It's a complete charge-air system. Mishimoto's bar-and-plate intercooler has cast aluminum end tanks and a significantly larger core than stock, and the kit adds Mishimoto intercooler piping.
 
 Silicone boots with DuraCore construction and constant-tension T-bolt clamps are included.
 
@@ -16979,7 +16979,7 @@ Specifications
 
 Manufacturer: Mishimoto
 Core: Bar-and-plate, larger than stock
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Includes: Intercooler, pipes, boots, T-bolt clamps
 Finish: Silver
 Part number: MMINT-RAM-07KSL
@@ -16988,7 +16988,7 @@ Highlights
 
 Complete intercooler and pipe kit
 Bar-and-plate core
-Cast aluminium end tanks
+Cast aluminum end tanks
 
 Warranty
 Manufacturer Warranty
@@ -17018,7 +17018,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/mishimoto-intercooler-kit-ram-5-9-2003-2007-mmint-ram-03ksl/1.webp"],
     description: `Mishimoto intercooler and pipe kit for the 2003–2007 Dodge Ram 5.9L Cummins, silver.
 
-It's a complete charge-air system: Mishimoto's bar-and-plate intercooler with cast aluminium end tanks and a larger core than stock, plus Mishimoto intercooler piping.
+It's a complete charge-air system: Mishimoto's bar-and-plate intercooler with cast aluminum end tanks and a larger core than stock, plus Mishimoto intercooler piping.
 
 Silicone boots with DuraCore construction and constant-tension T-bolt clamps are included.
 
@@ -17026,7 +17026,7 @@ Specifications
 
 Manufacturer: Mishimoto
 Core: Bar-and-plate, larger than stock
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Includes: Intercooler, pipes, boots, T-bolt clamps
 Finish: Silver
 Part number: MMINT-RAM-03KSL
@@ -17035,7 +17035,7 @@ Highlights
 
 Complete intercooler and pipe kit
 Bar-and-plate core
-Cast aluminium end tanks
+Cast aluminum end tanks
 
 Warranty
 Manufacturer Warranty
@@ -17208,7 +17208,7 @@ This listing is the 0–3 in Suspension System - Stage 5, for the front and rear
 
 Applications: 2012–2015 Toyota Hilux RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17261,7 +17261,7 @@ This listing is the 0–3 in Suspension System - Stage 3, for the front and rear
 
 Applications: 2012–2015 Toyota Hilux RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17314,7 +17314,7 @@ This listing is the 0–3 in Suspension System - Stage 2, for the front and rear
 
 Applications: 2012–2015 Toyota Hilux RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17367,7 +17367,7 @@ This listing is the 0–3 in Suspension System - Stage 4 Tubular, for the front 
 
 Applications: 2012–2015 Toyota Hilux RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17420,7 +17420,7 @@ This listing is the 3 in Suspension System - Stage 1, for the front and rear of 
 
 Applications: 2005–2011 Toyota Hilux RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17472,7 +17472,7 @@ This listing is the Front Upper Control Arm Kit, for the front of the vehicle.
 
 Applications: 2019–2023 Ford Ranger; Ford Ranger PX/T6 MK1&2 2011–2018; Ford RangerPX/T7 USA2018-on; Mazda BT-50 Series 2 2011–2022.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17524,7 +17524,7 @@ Contents: 2 Coilovers 2 Shocks
 
 Applications: 2019–2023 Ford Ranger 4WD RWD w/0–3.75 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17583,7 +17583,7 @@ Applications: 2019–2023 Ford Ranger RWD w/0.7–2.9 in lift.
 
 Fitting note: Kit includes two front shocks, two coil spring seats, and two coil springs. Coil spring compressor required for installation.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17636,7 +17636,7 @@ This listing is the Strut & Spring, for the front of the vehicle, supplied as a 
 
 Applications: 2019–2022 Ford Ranger w/0–3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17688,7 +17688,7 @@ This listing is the Strut & Spring, for the front of the vehicle, supplied as a 
 
 Applications: 2019–2022 Ford Ranger w/0–3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17740,7 +17740,7 @@ This listing is the Shock Absorber, for the rear of the vehicle, supplied as a p
 
 Applications: 2019–2022 Ford Ranger w/1.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17796,7 +17796,7 @@ Contents: 2 Coilovers 2 Shocks
 
 Applications: 2019–2023 Ford Ranger 4WD w/0–3.75 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17852,7 +17852,7 @@ Contents: 2 Shocks
 
 Applications: 1984–2020 Toyota Land Cruiser 79 Series 4WD; 1984–2020 Toyota Land Cruiser 76 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17907,7 +17907,7 @@ Contents: 2 Shocks
 
 Applications: 1984–2020 Toyota Land Cruiser 76 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -17962,7 +17962,7 @@ Contents: 1 Steering Stabilizer
 
 Applications: 1969–2016 Toyota Land Cruiser 76 4WD RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18013,7 +18013,7 @@ This listing is the part shown.
 
 Applications: 1984–1989 Toyota Land Cruiser 70 4WD w/1.75 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18060,7 +18060,7 @@ This listing is the part shown.
 
 Applications: 1984–1989 Toyota Land Cruiser 70 4WD w/2 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18107,7 +18107,7 @@ This listing is the 1.5–3.5 in Suspension System - Stage 5, for the front and 
 
 Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18163,7 +18163,7 @@ Contents: 2 Shocks
 
 Applications: 2008–2021 Toyota Land Cruiser 200 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18215,7 +18215,7 @@ This listing is the 1.5–3.5 in Suspension System - Stage 3, for the front and 
 
 Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18268,7 +18268,7 @@ This listing is the Strut & Spring, for the front of the vehicle, supplied as a 
 
 Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD w/1.5–3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18322,7 +18322,7 @@ This listing is the 1.5–3.5 in Suspension System - Stage 4, for the front and 
 
 Applications: 2008–2021 Toyota Land Cruiser 200 4WD RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18375,7 +18375,7 @@ This listing is the Performance Shock System Stage 2, for the front and rear of 
 
 Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18431,7 +18431,7 @@ Contents: 2 Shocks
 
 Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18483,7 +18483,7 @@ This listing is the part shown, for the front of the vehicle, supplied as a pair
 
 Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18534,7 +18534,7 @@ This listing is the Performance Shock System Stage 1, for the front and rear of 
 
 Applications: 1998–2012 Toyota Land Cruiser 100 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18587,7 +18587,7 @@ This listing is the 3 in Suspension System - Stage 2, for the front and rear of 
 
 Applications: 1990–1997 Toyota Land Cruiser 80 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18640,7 +18640,7 @@ This listing is the 3 in Suspension System - Stage 1, for the front and rear of 
 
 Applications: 1991–1997 Toyota Land Cruiser 80 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18693,7 +18693,7 @@ This listing is the 3 in Suspension System - Stage 3, for the front and rear of 
 
 Applications: 1990–1997 Toyota Land Cruiser 80 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18745,7 +18745,7 @@ This listing is the part shown.
 
 Applications: Toyota Prado 120/150 2003–2021.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18790,7 +18790,7 @@ This listing is the part shown.
 
 Applications: Toyota Prado 120/150 2003–2021.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18836,7 +18836,7 @@ This listing is the Strut, for the front of the vehicle, supplied as a pair.
 
 Applications: 2010–2024 Toyota 4Runner 4WD; Toyota FJ Cruiser 2010–2017; Toyota 4Runner 5th Gen; Toyota Prado 150; Lexus GX460.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18889,7 +18889,7 @@ This listing is the Strut, for the front of the vehicle, supplied as a pair, set
 
 Applications: 2010–2024 Toyota 4runner 4WD w/3 in lift; Toyota FJ Cruiser 2010–2017; Toyota 4Runner 5th Gen; Toyota Prado 150; Lexus GX460.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18943,7 +18943,7 @@ This listing is the Strut, for the front of the vehicle, supplied as a pair.
 
 Applications: 2003–2009 Toyota 4Runner 4WD; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -18996,7 +18996,7 @@ This listing is the Strut, for the front of the vehicle, supplied as a pair.
 
 Applications: 2003–2009 Toyota 4Runner 4WD; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19049,7 +19049,7 @@ This listing is the Strut, for the front of the vehicle, supplied as a pair, set
 
 Applications: 2016–2023 Toyota Tacoma 4WD w/3 in lift; Toyota FJ Cruiser2003–2009; Toyota Tacoma 2nd Gen; Toyota Tacoma 3rd Gen; Toyota 4Runner4th Gen; Toyota Prado 120; Lexus GX470.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19103,7 +19103,7 @@ This listing is the 1.5 in Leveling System.
 
 Applications: 2015–2020 Ford F-150 4WD RWD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19154,7 +19154,7 @@ This listing is the 2 in Leveling System.
 
 Applications: 2009–2014 Ford F150 4WD RWD w/2 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19204,7 +19204,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4wd 2017–2023.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19250,7 +19250,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4WD 2017–2023.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19298,7 +19298,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4WD 2017–2023.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19346,7 +19346,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4WD 2017–2023.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19394,7 +19394,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4WD 2005–2016.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19441,7 +19441,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4wd 2017–2023.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19486,7 +19486,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4wd 2017–2023.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19532,7 +19532,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4WD 2017–2023.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19579,7 +19579,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4wd 2005–2016.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19624,7 +19624,7 @@ This listing is the part shown.
 
 Applications: Ford F-250/350 4wd 2005–2016.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19670,7 +19670,7 @@ This listing is the 2.5 in Basic Lift Kit w/Stealth Shocks.
 
 Applications: 2017–2024 Ford F250 Super Duty 4WD w/2.5 in lift; 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19721,7 +19721,7 @@ This listing is the 2.5 in Suspension System - Stage 6, for the front and rear o
 
 Applications: 2020–2024 Ford F350 Super Duty 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19773,7 +19773,7 @@ This listing is the 2.5 in Basic Lift Kit w/Front Dirt Logic 2.25 Shocks w/Reser
 
 Applications: 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19825,7 +19825,7 @@ This listing is the 2.5 in Budget Lift Kit w/Dirt Logic 2.25 Shocks.
 
 Applications: 2017–2024 Ford F350 Super Duty 4WD w/2.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19876,7 +19876,7 @@ This listing is the 5 in Basic Lift Kit w/Coil Spacers & Performance Shocks.
 
 Applications: 2019–2024 Ram 2500 4WD w/5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19927,7 +19927,7 @@ This listing is the 5 in Basic Lift Kit w/Coil Spacers & Stealth Shocks.
 
 Applications: 2019–2024 Ram 2500 4WD w/5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -19978,7 +19978,7 @@ This listing is the 4.5 in Performance System w/Dirt Logic Shocks.
 
 Applications: 2009–2013 Ram 3500 4WD w/4.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20029,7 +20029,7 @@ This listing is the 4.5 in Performance System w/Performance Shocks.
 
 Applications: 2003–2010 Dodge Ram 3500 4WD w/4.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20080,7 +20080,7 @@ This listing is the 6 in Performance System w/Dirt Logic Shocks.
 
 Applications: 2009–2013 Ram 3500 4WD w/6 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20131,7 +20131,7 @@ This listing is the 6 in Performance System w/Performance Shocks.
 
 Applications: 2009–2013 Ram 3500 4WD w/6 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20182,7 +20182,7 @@ This listing is the 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilover
 
 Applications: 2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20234,7 +20234,7 @@ This listing is the 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilover
 
 Applications: 2019–2024 Chevrolet Silverado 1500 4WD w/3 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20286,7 +20286,7 @@ This listing is the 3 in Uniball UCA Lift Kit w/Rear Performance Shocks, for the
 
 Applications: 2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20338,7 +20338,7 @@ This listing is the 3 in Ball Joint UCA Lift Kit w/Front Dirt Logic 2.5 Coilover
 
 Applications: 2014–2018 Chevrolet Silverado 1500 4WD RWD w/3 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20390,7 +20390,7 @@ This listing is the 6 in RTS Lift Kit w/Performance Shocks.
 
 Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20441,7 +20441,7 @@ This listing is the 6 in RTS Lift Kit w/Dirt Logic 2.25 Shocks.
 
 Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20492,7 +20492,7 @@ This listing is the 6 in RTS Lift Kit w/Front Dirt Logic 2.25 Reservoir Shocks &
 
 Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20544,7 +20544,7 @@ This listing is the 6 in RTS Lift Kit w/Stealth Shocks.
 
 Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/6 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20595,7 +20595,7 @@ This listing is the 3.5 in Uniball UCA Lift Kit w/Performance Shocks.
 
 Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20646,7 +20646,7 @@ This listing is the 3.5 in Uniball UCA Lift Kit w/Stealth Shocks.
 
 Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20697,7 +20697,7 @@ This listing is the 3.5 in Ball Joint UCA Lift Kit w/Dirt Logic 2.25 Reservoir S
 
 Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20748,7 +20748,7 @@ This listing is the 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks w/Reser
 
 Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20799,7 +20799,7 @@ This listing is the 3.5 in Uniball UCA Lift Kit w/Dirt Logic 2.25 Shocks.
 
 Applications: 2020–2024 Chevrolet Silverado 2500 HD 4WD w/3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20850,7 +20850,7 @@ This listing is the 3.5 in Uniball UCA Lift Kit w/Dirt Logic Shocks.
 
 Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/3.5 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20901,7 +20901,7 @@ This listing is the 2.25 in Leveling System.
 
 Applications: 2011–2019 Chevrolet Silverado 2500 HD 4WD RWD w/2.25 in lift; 2011–2019 Chevrolet Silverado 3500 HD 4WD RWD w/2.25 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -20952,7 +20952,7 @@ This listing is the 2.25 in Leveling System.
 
 Applications: 2001–2010 Chevrolet Silverado 2500 HD 4WD w/2.25 in lift; 2001–2003 Chevrolet Silverado 1500 HD 4WD w/2.25 in lift.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -21006,7 +21006,7 @@ Contents: 1 Shock
 
 Applications: 2021–2026 Ford F-150 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -21061,7 +21061,7 @@ Contents: Dual stabilizer with mounting hardware
 
 Applications: 2014–2023 Ram 2500 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -21117,7 +21117,7 @@ Contents: 1 Steering Stabilizer
 
 Applications: 2003–2010 Dodge Ram 2500 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -21173,7 +21173,7 @@ Contents: 1 Steering Stabilizer
 
 Applications: 2008–2013 Dodge Ram 2500 4WD.
 
-Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height alters alignment and driveline angles. Have the vehicle aligned after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -21264,7 +21264,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/ome-leaf-spring-bushing-kit-omesb117/1.webp"],
     description: `Old Man Emu leaf spring bushing kit for the Ford Ranger PX, PX2 and PX3.
 
-Leaf spring bushes are a wear item. Once they are worn the spring eye moves where it shouldn't, which shows up as clunks over bumps, vague steering feel under load and uneven tyre wear.
+Leaf spring bushes are a wear item. Once they are worn the spring eye moves where it shouldn't, which shows up as clunks over bumps, vague steering feel under load and uneven tire wear.
 
 This is OME's bushing kit for the Ranger PX-series leaf springs — the parts to refresh the spring eyes when fitting new springs or servicing old ones.
 
@@ -21308,7 +21308,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/ome-leaf-spring-bushing-kit-omesb93/1.webp"],
     description: `Old Man Emu leaf spring bushing kit for the Toyota Land Cruiser 70 Series.
 
-Worn leaf spring bushes let the spring eye move where it shouldn't: clunks over bumps, vague feel under load, uneven tyre wear.
+Worn leaf spring bushes let the spring eye move where it shouldn't: clunks over bumps, vague feel under load, uneven tire wear.
 
 This is OME's bushing kit for 70 Series leaf springs — the parts to refresh the spring eyes when fitting new springs or servicing old ones.
 
@@ -21398,7 +21398,7 @@ Ships within the United States only`,
 
 A spring packer sits on top of the coil to trim front ride height — useful for correcting a small side-to-side height difference, or for lifting the nose slightly after adding weight to the front.
 
-It's part of OME's fitting range: bushes, U-bolts, centre bolts, spring liners, trim packers and fitting kits designed around their springs and shocks.
+It's part of OME's fitting range: bushes, U-bolts, center bolts, spring liners, trim packers and fitting kits designed around their springs and shocks.
 
 Specifications
 
@@ -21484,7 +21484,7 @@ Ships within the United States only`,
 
 BP-51 shocks mount with vehicle-specific hardware rather than generic bushes and sleeves. This is the front fitting kit for the Ford Ranger PX3.
 
-It's part of OME's fitting range — bushes, U-bolts, centre bolts, spring liners, packers and fitting kits made to suit their own suspension components.
+It's part of OME's fitting range — bushes, U-bolts, center bolts, spring liners, packers and fitting kits made to suit their own suspension components.
 
 Specifications
 
@@ -21528,7 +21528,7 @@ Ships within the United States only`,
 
 BP-51 shocks mount with vehicle-specific hardware rather than generic bushes and sleeves. This is the front fitting kit for the Toyota Land Cruiser 76 / 78 / 79 Series.
 
-It's part of OME's fitting range — bushes, U-bolts, centre bolts, spring liners, packers and fitting kits made to suit their own suspension components.
+It's part of OME's fitting range — bushes, U-bolts, center bolts, spring liners, packers and fitting kits made to suit their own suspension components.
 
 Specifications
 
@@ -21572,7 +21572,7 @@ Ships within the United States only`,
 
 BP-51 shocks mount with vehicle-specific hardware rather than generic bushes and sleeves. This is the rear fitting kit for the Toyota Land Cruiser 76 / 78 / 79 Series.
 
-It's part of OME's fitting range — bushes, U-bolts, centre bolts, spring liners, packers and fitting kits made to suit their own suspension components.
+It's part of OME's fitting range — bushes, U-bolts, center bolts, spring liners, packers and fitting kits made to suit their own suspension components.
 
 Specifications
 
@@ -21830,7 +21830,7 @@ Ships within the United States only`,
   {
     id: 2560,
     createdAt: 1789430400000,
-    name: "ARB Sahara Bar Centre Tube for Toyota Land Cruiser 100 Series — 5100050",
+    name: "ARB Sahara Bar Center Tube for Toyota Land Cruiser 100 Series — 5100050",
     category: "bumper",
     brand: "arb",
     // mudify listing price for 5100050.
@@ -21846,16 +21846,16 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/bumper/arb-sahara-tube-lc100-5100050/1.webp",
     images: ["/product-media/bumper/arb-sahara-tube-lc100-5100050/1.webp"],
-    description: `ARB Sahara bar centre tube for the Toyota Land Cruiser 100 Series.
+    description: `ARB Sahara bar center tube for the Toyota Land Cruiser 100 Series.
 
-An optional centre tube changes the look of a Sahara bar against the more traditional bumper style. It comes with moulded protection buffers.
+An optional center tube changes the look of a Sahara bar against the more traditional bumper style. It comes with moulded protection buffers.
 
 ARB shapes the tube on an internal mandrel bender, which keeps wall thickness even through the bends rather than thinning them on the outside of the curve.
 
 Specifications
 
 Manufacturer: ARB 4x4 Accessories
-Product: Sahara bar centre tube
+Product: Sahara bar center tube
 Vehicle: Toyota Land Cruiser 100 Series
 Part number: 5100050
 
@@ -21892,7 +21892,7 @@ Ships within the United States only`,
     images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc70-lwb-bw80-4133/1.webp"],
     description: `Dobinsons steel rear bumper with swing-outs for the long-wheelbase Land Cruiser 76 and 78 Series wagon.
 
-It's sold as a complete kit, made for the long-wheelbase 76 and 78 Series wagons, with an adjustable-offset tyre carrier head that takes up to a 35 in spare. It works with the factory tow hitch in its original position.
+It's sold as a complete kit, made for the long-wheelbase 76 and 78 Series wagons, with an adjustable-offset tire carrier head that takes up to a 35 in spare. It works with the factory tow hitch in its original position.
 
 Standard finish is black powder coat, with stainless-steel latches and hardware. The LED lights are 12 V and have to be spliced into the factory harness, so they are not plug-and-play.
 
@@ -21902,14 +21902,14 @@ Specifications
 
 Manufacturer: Dobinsons Spring & Suspension
 Vehicle: Land Cruiser 76 / 78 Series LWB wagon
-Tyre size: Up to 35 in
+Tire size: Up to 35 in
 Lighting: 12 V LED (requires splicing)
 Tow hitch: Works with the factory hitch in the OE position
 Part number: BW80-4133
 
 Highlights
 
-Complete kit with swing-out tyre carrier
+Complete kit with swing-out tire carrier
 Retains the factory tow hitch
 Stainless-steel latches and hardware
 
@@ -21940,7 +21940,7 @@ Ships within the United States only`,
     images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-lc80-bw80-4134/1.webp"],
     description: `Dobinsons steel rear bumper with swing-outs for the Toyota Land Cruiser 80 Series.
 
-Sold as a complete kit, with an adjustable-offset tyre carrier head that takes up to a 35 in spare, and it works with the factory tow hitch in its original position.
+Sold as a complete kit, with an adjustable-offset tire carrier head that takes up to a 35 in spare, and it works with the factory tow hitch in its original position.
 
 Finish is black powder coat with stainless-steel latches and hardware. The 12 V LED lights need splicing into the factory harness — they are not plug-and-play.
 
@@ -21950,14 +21950,14 @@ Specifications
 
 Manufacturer: Dobinsons Spring & Suspension
 Vehicle: Land Cruiser 80 Series
-Tyre size: Up to 35 in
+Tire size: Up to 35 in
 Lighting: 12 V LED (requires splicing)
 Tow hitch: Works with the factory hitch in the OE position
 Part number: BW80-4134
 
 Highlights
 
-Complete kit with swing-out tyre carrier
+Complete kit with swing-out tire carrier
 Retains the factory tow hitch
 Stainless-steel latches and hardware
 
@@ -22689,7 +22689,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/apex-chassis-ball-joint-set-ram-2000-2002-kit114/1.webp"],
     description: `Apex Chassis extreme-duty upper and lower ball joint set for the 2000–2002 Dodge Ram 2500 / 3500.
 
-Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tyre wear and, on solid-axle Rams, the wandering front end owners call death wobble.
+Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tire wear and, on solid-axle Rams, the wandering front end owners call death wobble.
 
 Apex reworked the factory design with stronger materials and redesigned grease channels, and every application includes zerk fittings so the joints can be greased in service.
 
@@ -22733,7 +22733,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/apex-chassis-ball-joint-set-ram-2003-2013-kit201/1.webp"],
     description: `Apex Chassis extreme-duty ball joint set — one upper, one lower — for 2003–2013 Ram 2500 and 2003–2010 Ram 3500.
 
-Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tyre wear and, on solid-axle Rams, the wandering front end owners call death wobble.
+Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tire wear and, on solid-axle Rams, the wandering front end owners call death wobble.
 
 Apex uses stronger materials than the factory joints and redesigned grease channels, with a pre-threaded zerk housing so the grease fitting goes in without fighting it on installation.
 
@@ -22777,7 +22777,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-rebuildable-ball-joint-kit-ram-4123/1.webp"],
     description: `Synergy heavy-duty adjustable, rebuildable ball joint kit for 2003–2013 Ram 2500 and 2003–2012 Ram 3500 4WD.
 
-Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tyre wear and, on solid-axle Rams, the wandering front end owners call death wobble.
+Ball joints are the failure point on heavy diesel front ends. Play in them gives vague steering, uneven tire wear and, on solid-axle Rams, the wandering front end owners call death wobble.
 
 These are adjustable and rebuildable: rather than pressing out a worn joint and buying another, the wear is taken up by adjustment and the joint is serviced in place.
 
@@ -22872,13 +22872,13 @@ Ships within the United States only`,
 
 Charge-air temperature is what limits a diesel once it is working: hot intake air means higher exhaust gas temperatures and less margin under tow.
 
-Mishimoto's core is bar-and-plate, 63% larger than stock and 44.7% less restrictive by their figures, with cast aluminium end tanks. They measure 20 °F cooler outlet temperatures and a 237% increase in flow over the factory unit.
+Mishimoto's core is bar-and-plate, 63% larger than stock and 44.7% less restrictive by their figures, with cast aluminum end tanks. They measure 20 °F cooler outlet temperatures and a 237% increase in flow over the factory unit.
 
 Specifications
 
 Manufacturer: Mishimoto
 Core: Bar-and-plate, 63% larger than stock
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Engine: 6.7L Cummins
 Years: 2019–2026
 Part number: MMINT-RAM-19KSLP
@@ -22887,7 +22887,7 @@ Highlights
 
 63% larger core than stock (Mishimoto figure)
 20 °F cooler outlet temperatures (Mishimoto figure)
-Cast aluminium end tanks
+Cast aluminum end tanks
 
 Warranty
 Manufacturer Warranty
@@ -22917,7 +22917,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/mishimoto-intercooler-kit-ram-2010-2012-mmint-ram-10kbk/1.webp"],
     description: `Mishimoto intercooler and piping kit for the 2010–2012 Ram 6.7L Cummins, black.
 
-This is the complete charge-air path, not just the cooler: an aluminium intercooler plus upgraded hot- and cold-side pipes.
+This is the complete charge-air path, not just the cooler: an aluminum intercooler plus upgraded hot- and cold-side pipes.
 
 Lower charge temperatures mean lower exhaust gas temperatures, which is what matters when the truck is towing in heat.
 
@@ -22933,7 +22933,7 @@ Part number: MMINT-RAM-10KBK
 Highlights
 
 Complete intercooler and pipe kit
-Aluminium construction
+Aluminum construction
 Lower charge and exhaust temperatures
 
 Warranty
@@ -22979,7 +22979,7 @@ Part number: 302291
 Highlights
 
 Bar-and-plate core
-All-welded aluminium
+All-welded aluminum
 Replaces the weak factory cooler
 
 Warranty
@@ -23007,7 +23007,7 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/transmission/mag-hytec-68rfe-transmission-pan/1.webp",
     images: ["/product-media/transmission/mag-hytec-68rfe-transmission-pan/1.webp"],
-    description: `Mag-Hytec cast aluminium deep transmission pan for the 68RFE in 2007.5–2024 Ram 6.7L Cummins trucks.
+    description: `Mag-Hytec cast aluminum deep transmission pan for the 68RFE in 2007.5–2024 Ram 6.7L Cummins trucks.
 
 Transmission life is mostly a heat story. A deep cast-aluminium pan adds fluid volume and sheds heat far better than the stamped steel factory pan, which is the cheapest way to buy margin on a truck that tows.
 
@@ -23017,14 +23017,14 @@ Specifications
 
 Manufacturer: Mag-Hytec
 Transmission: 68RFE
-Material: Cast aluminium
+Material: Cast aluminum
 Years: 2007.5–2024
 Part number: 68RFE
 
 Highlights
 
 Extra fluid capacity
-Cast aluminium sheds heat
+Cast aluminum sheds heat
 Made in the USA
 
 Warranty
@@ -23036,7 +23036,7 @@ Ships within the United States only`,
   {
     id: 2586,
     createdAt: 1789430400000,
-    name: "SunCoast Deep Aluminium Transmission Pan, +4 Quarts, 68RFE — 2007.5–2024 Ram 6.7L Cummins — P68REP22",
+    name: "SunCoast Deep Aluminum Transmission Pan, +4 Quarts, 68RFE — 2007.5–2024 Ram 6.7L Cummins — P68REP22",
     category: "transmission",
     brand: "suncoast",
     // dpp listing price for SC-P68REP22.
@@ -23052,25 +23052,25 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/transmission/suncoast-68rfe-deep-transmission-pan-p68rep22/1.webp",
     images: ["/product-media/transmission/suncoast-68rfe-deep-transmission-pan-p68rep22/1.webp"],
-    description: `SunCoast deep aluminium transmission pan for the 68RFE — four extra quarts of fluid.
+    description: `SunCoast deep aluminum transmission pan for the 68RFE — four extra quarts of fluid.
 
 Four extra quarts is a meaningful increase on a 68RFE, and more fluid means more thermal mass and a lower steady-state temperature under tow.
 
-The aluminium casting also carries heat out better than the factory stamped pan.
+The aluminum casting also carries heat out better than the factory stamped pan.
 
 Specifications
 
 Manufacturer: SunCoast Performance
 Transmission: 68RFE
 Extra capacity: +4 quarts
-Material: Aluminium
+Material: Aluminum
 Years: 2007.5–2024
 Part number: P68REP22
 
 Highlights
 
 Four extra quarts of fluid
-Aluminium casting for heat transfer
+Aluminum casting for heat transfer
 Direct replacement for the factory pan
 
 Warranty
@@ -23190,7 +23190,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss450hp/1.webp"],
     description: `Safari ARMAX snorkel for the 2010–2023 Toyota 4Runner.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23241,7 +23241,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss172hp/1.webp"],
     description: `Safari ARMAX snorkel for the 2016–2023 Toyota Tacoma.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23292,7 +23292,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss171hp/1.webp"],
     description: `Safari ARMAX snorkel for the 2005–2015 Toyota Tacoma.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23343,7 +23343,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss1080hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2018–2023 / 2020–2023 Jeep Wrangler / Jeep Gladiator.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23394,7 +23394,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss983hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2019–2023 Ford Ranger.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23445,7 +23445,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss410hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2007–2009 Toyota FJ Cruiser.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23496,7 +23496,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss123hp/1.webp"],
     description: `Safari ARMAX snorkel for the 2005–2015 Toyota Tacoma.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23547,7 +23547,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss445hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2003–2009 Toyota 4Runner.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23598,7 +23598,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss420hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2010–2014 Toyota FJ Cruiser.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23649,7 +23649,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss170hf/1.webp"],
     description: `Safari VSPEC snorkel for the 1995–2004 Toyota Tacoma.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23700,7 +23700,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss440hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2003–2009 Toyota 4Runner.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23751,7 +23751,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss1070hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2012–2017 / 2018 Jeep Wrangler / Jeep Wrangler JK.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23802,7 +23802,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss1000hf/1.webp"],
     description: `Safari VSPEC snorkel for the 1987–1995 Jeep Wrangler.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23853,7 +23853,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss1130hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2002–2005 Jeep Liberty.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -23904,7 +23904,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss1135hf/1.webp"],
     description: `Safari VSPEC snorkel for the 2005–2006 Jeep Liberty.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari moulds these from UV-stable cross-linked polyethylene, and each is designed for one vehicle, so it follows the A-pillar and the guard properly rather than being trimmed to fit. Fasteners and mounting brackets are included, and ARB lists a lifetime warranty on the snorkel body.
 
@@ -24653,7 +24653,7 @@ Ships within the United States only`,
   {
     id: 2634,
     createdAt: 1789430400000,
-    name: "ARB 1/8 in 12V Aluminium Solenoid Valve — 180103SP",
+    name: "ARB 1/8 in 12V Aluminum Solenoid Valve — 180103SP",
     category: "4x4-accessories",
     brand: "arb",
     // ARB USA store price for 180103SP.
@@ -24669,7 +24669,7 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/4x4-accessories/arb-air-locker-part-180103sp/1.webp",
     images: ["/product-media/4x4-accessories/arb-air-locker-part-180103sp/1.webp"],
-    description: `ARB 1/8 in 12V Aluminium Solenoid Valve.
+    description: `ARB 1/8 in 12V Aluminum Solenoid Valve.
 
 The solenoid valve is what actually sends air to the locker when the switch is pressed. This is the 12 V aluminium-bodied valve used in ARB's air locker systems.
 
@@ -24681,7 +24681,7 @@ Manufacturer: ARB 4x4 Accessories
 Type: Solenoid valve
 Voltage: 12 V DC
 Port: 1/8 in
-Body: Aluminium
+Body: Aluminum
 Part number: 180103SP
 
 Highlights
@@ -24940,7 +24940,7 @@ Ships within the United States only`,
 
 A spot beam is the long-throw option: a narrow cone that puts light far down the road, so you see further at speed. Pair it with a flood if you also want width.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -24996,7 +24996,7 @@ Ships within the United States only`,
 
 A flood beam is the wide option: it lights the verges and the ground either side of the vehicle rather than throwing far ahead. Pair it with a spot if you also want reach.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25052,7 +25052,7 @@ Ships within the United States only`,
 
 SAE-pattern lights are designed to meet the beam-pattern standard for on-road auxiliary lighting, which is what separates a legal fog or driving light from an off-road-only one. The Quatro SAE models build that pattern into mode 1 and keep an off-road beam on another mode.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as listed by ARB — check the quantity on the specification list below before ordering.
 
@@ -25103,7 +25103,7 @@ Ships within the United States only`,
 
 A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25155,7 +25155,7 @@ Ships within the United States only`,
 
 A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25207,7 +25207,7 @@ Ships within the United States only`,
 
 A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25259,7 +25259,7 @@ Ships within the United States only`,
 
 A chase light faces rearward. Its job is to keep you visible to whoever is behind you — in dust, in convoy, or stopped on a trail — with strobe patterns, adjustable intensity, a static high-low running mode and white output for reverse and cargo work.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25311,7 +25311,7 @@ Ships within the United States only`,
 
 This is an emergency-pattern light set. Red and blue emergency colours are restricted to authorised vehicles in most jurisdictions, so check the law where you drive before fitting or using them on a public road.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25363,7 +25363,7 @@ Ships within the United States only`,
 
 The Supreme 80 puts 80 watts into a 4-inch housing across three zones — a spot zone for speed, a flood zone for trail work and an area zone for lighting a work site or camp — with nine selectable modes.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as listed by ARB — check the quantity on the specification list below before ordering.
 
@@ -25417,7 +25417,7 @@ Ships within the United States only`,
 
 The Supreme 100 puts 100 watts into a 4-inch housing with selectable zones, so one light covers the jobs that normally need three.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as listed by ARB — check the quantity on the specification list below before ordering.
 
@@ -25471,7 +25471,7 @@ Ships within the United States only`,
 
 A combo set gives you both patterns — reach and width — in one pair of lights, which is the usual choice if you are only fitting one set.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25527,7 +25527,7 @@ Ships within the United States only`,
 
 SAE-pattern lights are designed to meet the beam-pattern standard for on-road auxiliary lighting, which is what separates a legal fog or driving light from an off-road-only one. The Quatro SAE models build that pattern into mode 1 and keep an off-road beam on another mode.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25582,7 +25582,7 @@ Ships within the United States only`,
 
 SAE-pattern lights are designed to meet the beam-pattern standard for on-road auxiliary lighting, which is what separates a legal fog or driving light from an off-road-only one. The Quatro SAE models build that pattern into mode 1 and keep an off-road beam on another mode.
 
-The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminium heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
+The Quatro is a 4-inch light built around user-selectable modes rather than one fixed beam, so a single pair covers more than one job. NACHO builds them with an aluminum heat sink, a polycarbonate lens and a pressure-equalising vent, and backs them with a lifetime warranty in the US.
 
 Supplied as a set of two lights.
 
@@ -25688,7 +25688,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -25737,7 +25737,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -25786,7 +25786,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -25835,7 +25835,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -25884,7 +25884,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -25932,7 +25932,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -25980,7 +25980,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -26028,7 +26028,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -26077,7 +26077,7 @@ Old Man Emu tunes each shock to the vehicle and to the springs it will be contro
 
 The Nitrocharger is a twin-tube design: the outer reserve tube shields the working internals off road. It's nitrogen-charged, runs a petroleum-based oil formulated to resist fade and aeration, and uses an 18 mm induction-hardened chrome piston rod sized for heavy touring loads.
 
-OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalogue for that combination.
+OME lists more than one damper for some of these platforms, matched to different spring rates and loads. If you are building around a specific OME spring, check the part number against OME's own catalog for that combination.
 
 Specifications
 
@@ -26309,7 +26309,7 @@ Ships within the United States only`,
 
 Dobinsons CNC-cuts, bends and welds its bull bars from structural steel. They are airbag- and winch-compatible, with driving-light mounts, reinforced wing sections, dual aerial mounts and reinforced dual Hi-Lift jacking points, finished in heavy-duty black powder coat.
 
-The SS Loop Deluxe carries a stainless loop over the centre section.
+The SS Loop Deluxe carries a stainless loop over the center section.
 
 Dobinsons publishes this photograph marked "Illustration Purposes Only", and says features vary by bumper model. Go by the specification list above rather than the details in the picture.
 
@@ -26357,7 +26357,7 @@ Ships within the United States only`,
 
 Dobinsons CNC-cuts, bends and welds its bull bars from structural steel. They are airbag- and winch-compatible, with driving-light mounts, reinforced wing sections, dual aerial mounts and reinforced dual Hi-Lift jacking points, finished in heavy-duty black powder coat.
 
-The SS Loop Deluxe carries a stainless loop over the centre section.
+The SS Loop Deluxe carries a stainless loop over the center section.
 
 Dobinsons publishes this photograph marked "Illustration Purposes Only", and says features vary by bumper model. Go by the specification list above rather than the details in the picture.
 
@@ -26499,7 +26499,7 @@ Ships within the United States only`,
     images: ["/product-media/bumper/dobinsons-rear-bumper-swing-outs-patrol-y61-bw80-4111/1.webp"],
     description: `Dobinsons steel rear bumper with swing-outs for the 2006–2021 Nissan Patrol Y61 GU.
 
-Sold as a complete kit, with an adjustable-offset tyre carrier head, and it works with the factory tow hitch in its original position.
+Sold as a complete kit, with an adjustable-offset tire carrier head, and it works with the factory tow hitch in its original position.
 
 Standard finish is black powder coat with stainless-steel latches and hardware. The 12 V LED lights need splicing into the factory harness — they are not plug-and-play.
 
@@ -26516,7 +26516,7 @@ Part number: BW80-4111
 
 Highlights
 
-Complete kit with swing-out tyre carrier
+Complete kit with swing-out tire carrier
 Retains the factory tow hitch
 Stainless-steel latches and hardware
 
@@ -26683,7 +26683,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss188hf/1.webp"],
     description: `Safari snorkel kit for the Toyota Land Cruiser Prado 150 Series.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari's Air Ram head is CAD-designed and lab-tested to strip water out of the incoming air while still delivering the airflow the engine wants, and the body is moulded from UV-stable polyethylene.
 
@@ -26730,7 +26730,7 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/safari-snorkel-ss663hf/1.webp"],
     description: `Safari snorkel kit for the 2018-on Mitsubishi Triton.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
 Safari's Air Ram head is CAD-designed and lab-tested to strip water out of the incoming air while still delivering the airflow the engine wants, and the body is moulded from UV-stable polyethylene.
 
@@ -26777,9 +26777,9 @@ Ships within the United States only`,
     images: ["/product-media/4x4-accessories/dobinsons-snorkel-sn43-3329/1.webp"],
     description: `Dobinsons snorkel kit for the Mitsubishi Triton / L200 ML and MN, 2.5L and 3.2L Diesel.
 
-A snorkel moves the engine's air intake from a low, exposed spot under the bonnet up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
+A snorkel moves the engine's air intake from a low, exposed spot under the hood up to roof height, where the air is cooler, cleaner and drier. On a dusty track that means less dirt reaching the filter; in water it means the intake is nowhere near the waterline.
 
-Dobinsons rotationally moulds these using CNC-shaped aluminium dies, in UV-resistant LLDPE, so the body holds its shape and colour in sun.
+Dobinsons rotationally moulds these using CNC-shaped aluminum dies, in UV-resistant LLDPE, so the body holds its shape and colour in sun.
 
 This is the right-side-mount version.
 
@@ -26874,7 +26874,7 @@ Ships within the United States only`,
 
 A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
 
-XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminum the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
 
 It is a direct-fit replacement, so it goes in where the factory radiator came out.
 
@@ -26891,7 +26891,7 @@ Highlights
 
 Higher fin count than the factory core
 Reinforced end tanks and corners
-Steel crimp strip, not aluminium
+Steel crimp strip, not aluminum
 Direct fit
 
 Warranty
@@ -26923,7 +26923,7 @@ Ships within the United States only`,
 
 A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
 
-XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminum the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
 
 It is a direct-fit replacement, so it goes in where the factory radiator came out.
 
@@ -26940,7 +26940,7 @@ Highlights
 
 Higher fin count than the factory core
 Reinforced end tanks and corners
-Steel crimp strip, not aluminium
+Steel crimp strip, not aluminum
 Direct fit
 
 Warranty
@@ -26972,7 +26972,7 @@ Ships within the United States only`,
 
 A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
 
-XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminum the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
 
 It is a direct-fit replacement, so it goes in where the factory radiator came out.
 
@@ -26989,7 +26989,7 @@ Highlights
 
 Higher fin count than the factory core
 Reinforced end tanks and corners
-Steel crimp strip, not aluminium
+Steel crimp strip, not aluminum
 Direct fit
 
 Warranty
@@ -27021,7 +27021,7 @@ Ships within the United States only`,
 
 A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
 
-XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminum the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
 
 It is a direct-fit replacement, so it goes in where the factory radiator came out.
 
@@ -27038,7 +27038,7 @@ Highlights
 
 Higher fin count than the factory core
 Reinforced end tanks and corners
-Steel crimp strip, not aluminium
+Steel crimp strip, not aluminum
 Direct fit
 
 Warranty
@@ -27070,7 +27070,7 @@ Ships within the United States only`,
 
 A diesel's radiator is a wear item on a truck that tows. The factory units fail at the plastic end tanks and at the crimp that holds them to the core, usually after years of heat cycling, and on a 6.0L Power Stroke the radiator is often replaced anyway once oil has been through the cooling system.
 
-XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminium the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
+XDP's X-TRA Cool core runs more fins per inch and heavier tubes than stock. The end tanks are re-designed with reinforcement ribs at the weak points and a fibre-reinforced plastic mix, and they are crimped on with a heavy-gauge steel strip rather than the aluminum the factory uses. The corners, where a core is most vulnerable, are internally reinforced.
 
 It is a direct-fit replacement, so it goes in where the factory radiator came out.
 
@@ -27087,7 +27087,7 @@ Highlights
 
 Higher fin count than the factory core
 Reinforced end tanks and corners
-Steel crimp strip, not aluminium
+Steel crimp strip, not aluminum
 Direct fit
 
 Warranty
@@ -27391,7 +27391,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/xdp-stock-plus-power-steering-gearbox-xd750/1.webp"],
     description: `XDP Stock+ power steering gearbox for 2003–2008 Dodge Ram 2500 / 3500 4WD — 100% new, not remanufactured.
 
-Years of towing, big tyres and rough roads wear a steering box internally. It shows up as play at the wheel, wandering on the highway, and steering that needs constant correction.
+Years of towing, big tires and rough roads wear a steering box internally. It shows up as play at the wheel, wandering on the highway, and steering that needs constant correction.
 
 The Stock+ XD750 is built entirely from new components — not a rebuild that reuses parts from a worn unit — and bolts on with the factory pitman arm and linkage.
 
@@ -27486,7 +27486,7 @@ Ships within the United States only`,
 
 The tail shaft housing between the transmission and transfer case cracks on Allison-equipped GM 4x4s. Driveline vibration does it over time; off-road use and hard launches do it faster.
 
-The brace supports the overhanging weight of the transfer case by spreading the load up and across the adapter housing into the centre section of the transmission, instead of leaving it hanging off the tail housing.
+The brace supports the overhanging weight of the transfer case by spreading the load up and across the adapter housing into the center section of the transmission, instead of leaving it hanging off the tail housing.
 
 Specifications
 
@@ -27532,7 +27532,7 @@ Ships within the United States only`,
 
 The tail shaft housing between the transmission and transfer case cracks on Allison-equipped GM 4x4s. Driveline vibration does it over time; off-road use and hard launches do it faster.
 
-The brace supports the overhanging weight of the transfer case by spreading the load up and across the adapter housing into the centre section of the transmission, instead of leaving it hanging off the tail housing.
+The brace supports the overhanging weight of the transfer case by spreading the load up and across the adapter housing into the center section of the transmission, instead of leaving it hanging off the tail housing.
 
 Specifications
 
@@ -35204,7 +35204,7 @@ Ships within the United States only`,
     location: "our supplier network",
     partNumber: "MMINT-RAM-94KBK",
     fitment: "1994–2002 Dodge/Ram 5.9L Cummins. Covers both the 12-valve and 24-valve 5.9L.",
-    included: ["Bar-and-plate intercooler","3 mandrel-bent aluminium pipes","DuraCore silicone boots","Constant-tension T-bolt clamps"],
+    included: ["Bar-and-plate intercooler","3 mandrel-bent aluminum pipes","DuraCore silicone boots","Constant-tension T-bolt clamps"],
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -35214,9 +35214,9 @@ Ships within the United States only`,
 
 A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
 
-Mishimoto's core for this truck carries 47% more core volume than the factory cooler and is 50% thicker, on cast aluminium end tanks and a bar-and-plate core.
+Mishimoto's core for this truck carries 47% more core volume than the factory cooler and is 50% thicker, on cast aluminum end tanks and a bar-and-plate core.
 
-It is a kit rather than a bare cooler: three mandrel-bent polished aluminium pipes, Mishimoto DuraCore silicone boots and constant-tension T-bolt clamps go with it, so the charge air path is replaced end to end.
+It is a kit rather than a bare cooler: three mandrel-bent polished aluminum pipes, Mishimoto DuraCore silicone boots and constant-tension T-bolt clamps go with it, so the charge air path is replaced end to end.
 
 It suits a stock 12-valve or 24-valve truck as much as a modified one — the gain on a standard engine is in intake and exhaust gas temperature rather than in peak numbers.
 
@@ -35224,17 +35224,17 @@ Specifications
 
 Manufacturer: Mishimoto
 Core: Bar-and-plate
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Core volume: 47% greater than factory
 Core thickness: 50% greater than factory
-Included: Intercooler, 3 aluminium pipes, DuraCore boots, T-bolt clamps
+Included: Intercooler, 3 aluminum pipes, DuraCore boots, T-bolt clamps
 Engine: 5.9L Cummins (12v and 24v)
 Part number: MMINT-RAM-94KBK
 
 Highlights
 
 47% more core volume, 50% thicker than stock
-Cast aluminium end tanks, bar-and-plate core
+Cast aluminum end tanks, bar-and-plate core
 Complete kit — pipes, boots and clamps included
 Mishimoto lifetime warranty
 
@@ -35267,7 +35267,7 @@ Ships within the United States only`,
 
 The 2011–2016 6.7L Power Stroke uses an air-to-water charge cooler, and the factory unit has a reputation for leaking internally — which puts coolant somewhere it should not be.
 
-Mishimoto's replacement drops the stamped-and-stacked plate design for cast aluminium end tanks precision TIG-welded to a bar-and-plate core. Fewer joins means fewer places to fail.
+Mishimoto's replacement drops the stamped-and-stacked plate design for cast aluminum end tanks precision TIG-welded to a bar-and-plate core. Fewer joins means fewer places to fail.
 
 Mishimoto rates it at roughly 40 lb-ft over the factory cooler. It is a direct drop-in that leaves the emissions equipment alone and needs no tune.
 
@@ -35276,7 +35276,7 @@ Specifications
 Manufacturer: Mishimoto
 Type: Air-to-water charge cooler
 Core: Bar-and-plate
-End tanks: Cast aluminium, TIG-welded
+End tanks: Cast aluminum, TIG-welded
 Gain: About 40 lb-ft over the factory cooler
 Installation: Direct drop-in, no tune
 Engine: 6.7L Power Stroke
@@ -35309,7 +35309,7 @@ Ships within the United States only`,
     location: "our supplier network",
     partNumber: "MMINT-F2D-03KBK",
     fitment: "2003–2007 Ford 6.0L Powerstroke.",
-    included: ["Bar-and-plate intercooler","Mandrel-bent aluminium piping","DuraCore silicone boots","T-bolt clamps"],
+    included: ["Bar-and-plate intercooler","Mandrel-bent aluminum piping","DuraCore silicone boots","T-bolt clamps"],
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -35319,9 +35319,9 @@ Ships within the United States only`,
 
 A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
 
-Mishimoto builds these on a bar-and-plate core with cast aluminium end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
+Mishimoto builds these on a bar-and-plate core with cast aluminum end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
 
-This is the full kit rather than the cooler alone. The piping is mandrel-bent aluminium polished to a mirror finish, routed to take the restrictive bends out of the factory path, and it ships with Mishimoto DuraCore silicone boots and constant-tension T-bolt clamps.
+This is the full kit rather than the cooler alone. The piping is mandrel-bent aluminum polished to a mirror finish, routed to take the restrictive bends out of the factory path, and it ships with Mishimoto DuraCore silicone boots and constant-tension T-bolt clamps.
 
 DuraCore is Mishimoto's own boot material: the inner liner is built to resist heat and oil, which is what kills ordinary silicone on a diesel charge pipe.
 
@@ -35329,8 +35329,8 @@ Specifications
 
 Manufacturer: Mishimoto
 Core: Bar-and-plate
-End tanks: Cast aluminium
-Piping: Mandrel-bent polished aluminium
+End tanks: Cast aluminum
+Piping: Mandrel-bent polished aluminum
 Boots: Mishimoto DuraCore silicone
 Clamps: Constant-tension T-bolt
 Engine: 6.0L Power Stroke
@@ -35339,7 +35339,7 @@ Part number: MMINT-F2D-03KBK
 Highlights
 
 Complete charge-air path, not just the cooler
-Mandrel-bent polished aluminium piping
+Mandrel-bent polished aluminum piping
 DuraCore boots resist heat and oil
 Mishimoto lifetime warranty
 
@@ -35352,7 +35352,7 @@ Ships within the United States only`,
   {
     id: 2840,
     createdAt: 1789430400000,
-    name: "Mishimoto Aluminium Performance Intercooler — 2006–2010 GM 6.6L Duramax LLY/LBZ/LMM — MMINT-DMAX-06BK",
+    name: "Mishimoto Aluminum Performance Intercooler — 2006–2010 GM 6.6L Duramax LLY/LBZ/LMM — MMINT-DMAX-06BK",
     category: "engine",
     brand: "mishimoto",
     // dpp listing price for MMINT-DMAX-06BK.
@@ -35372,7 +35372,7 @@ Ships within the United States only`,
 
 A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
 
-Mishimoto builds these on a bar-and-plate core with cast aluminium end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
+Mishimoto builds these on a bar-and-plate core with cast aluminum end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
 
 It is a direct fit in place of the factory cooler, so the mounting points and the charge pipe connections are where the truck expects them.
 
@@ -35380,14 +35380,14 @@ Specifications
 
 Manufacturer: Mishimoto
 Core: Bar-and-plate
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Installation: Direct fit
 Engine: 6.6L Duramax LLY, LBZ and LMM
 Part number: MMINT-DMAX-06BK
 
 Highlights
 
-Bar-and-plate core, cast aluminium tanks
+Bar-and-plate core, cast aluminum tanks
 Direct fit in the factory location
 Covers LLY, LBZ and LMM
 Mishimoto lifetime warranty
@@ -35422,7 +35422,7 @@ Ships within the United States only`,
 
 A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
 
-Mishimoto builds these on a bar-and-plate core with cast aluminium end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
+Mishimoto builds these on a bar-and-plate core with cast aluminum end tanks TIG-welded to it. Cast tanks matter: the factory parts that fail on these trucks usually fail at a stamped or crimped tank joint, not in the core.
 
 The kit includes Mishimoto's charge piping with DuraCore silicone boots and constant-tension T-bolt clamps, so the whole charge air path is upgraded rather than just the cooler in the middle of it.
 
@@ -35430,7 +35430,7 @@ Specifications
 
 Manufacturer: Mishimoto
 Core: Bar-and-plate
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Boots: Mishimoto DuraCore silicone
 Clamps: Constant-tension T-bolt
 Engine: 6.6L Duramax LML
@@ -35473,7 +35473,7 @@ Ships within the United States only`,
 
 The L5P is a capable engine out of the box, which is exactly why its charge cooling is worth attention: the limits show up under sustained load rather than in short bursts.
 
-This kit centres on a 68 mm-thick bar-and-plate intercooler — around 70% thicker than the factory unit — with cast aluminium end tanks, and it ships with 3.0 in mandrel-bent piping.
+This kit centers on a 68 mm-thick bar-and-plate intercooler — around 70% thicker than the factory unit — with cast aluminum end tanks, and it ships with 3.0 in mandrel-bent piping.
 
 The point of the extra thickness is heat capacity under load: more core means the charge temperature climbs more slowly when the truck is pulling hard in the heat.
 
@@ -35482,7 +35482,7 @@ Specifications
 Manufacturer: Mishimoto
 Core thickness: 68 mm — about 70% thicker than factory
 Core: Bar-and-plate
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Piping: 3.0 in mandrel-bent
 Engine: 6.6L Duramax L5P
 Part number: MMINT-DMAX-17KSLBK
@@ -35490,7 +35490,7 @@ Part number: MMINT-DMAX-17KSLBK
 Highlights
 
 68 mm core, about 70% thicker than stock
-Cast aluminium end tanks
+Cast aluminum end tanks
 3.0 in mandrel-bent piping included
 Mishimoto lifetime warranty
 
@@ -35503,7 +35503,7 @@ Ships within the United States only`,
   {
     id: 2843,
     createdAt: 1789430400000,
-    name: "Mishimoto Aluminium Performance Radiator — 2003–2007 Ford 6.0L Power Stroke — MMRAD-F2D-60",
+    name: "Mishimoto Aluminum Performance Radiator — 2003–2007 Ford 6.0L Power Stroke — MMRAD-F2D-60",
     category: "engine",
     brand: "mishimoto",
     // dpp listing price for MISH-MMRAD-F2D-60.
@@ -35523,15 +35523,15 @@ Ships within the United States only`,
 
 Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
 
-This is the all-aluminium answer rather than the like-for-like one: a lightweight two-row core in 100% brazed aluminium with TIG-welded aluminium end tanks, so there is no plastic tank to crack.
+This is the all-aluminium answer rather than the like-for-like one: a lightweight two-row core in 100% brazed aluminum with TIG-welded aluminum end tanks, so there is no plastic tank to crack.
 
 It is a direct factory fit — no cutting and no modification — and it is the sensible upgrade on a truck that tows or works hard rather than one that only commutes.
 
 Specifications
 
 Manufacturer: Mishimoto
-Core: Two-row, 100% brazed aluminium
-End tanks: TIG-welded aluminium
+Core: Two-row, 100% brazed aluminum
+End tanks: TIG-welded aluminum
 Installation: Direct factory fit, no modification
 Engine: 6.0L Power Stroke
 Part number: MMRAD-F2D-60
@@ -35552,7 +35552,7 @@ Ships within the United States only`,
   {
     id: 2844,
     createdAt: 1789430400000,
-    name: "Mishimoto Aluminium Performance Radiator — 1995–1997 Ford 7.3L Power Stroke — MMRAD-F2D-95",
+    name: "Mishimoto Aluminum Performance Radiator — 1995–1997 Ford 7.3L Power Stroke — MMRAD-F2D-95",
     category: "engine",
     brand: "mishimoto",
     // dpp listing price for MMRAD-F2D-95.
@@ -35568,18 +35568,18 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-95/1.webp",
     images: ["/product-media/engine/mishimoto-aluminum-performance-radiator-mmrad-f2d-95/1.webp"],
-    description: `Mishimoto bar-and-plate aluminium performance radiator for the 1995–1997 Ford 7.3L Power Stroke.
+    description: `Mishimoto bar-and-plate aluminum performance radiator for the 1995–1997 Ford 7.3L Power Stroke.
 
 The early 7.3L Power Stroke trucks were not intercooled, which puts the whole job of managing heat on the cooling system.
 
-Mishimoto's answer is a bar-and-plate aluminium radiator built to shed more heat than the unit that came out. On an engine with the 7.3's reputation for longevity, the cooling system is worth bringing up to the same standard.
+Mishimoto's answer is a bar-and-plate aluminum radiator built to shed more heat than the unit that came out. On an engine with the 7.3's reputation for longevity, the cooling system is worth bringing up to the same standard.
 
 Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
 
 Specifications
 
 Manufacturer: Mishimoto
-Core: Bar-and-plate aluminium
+Core: Bar-and-plate aluminum
 Installation: Direct fit
 Engine: 7.3L Power Stroke
 Years: 1995–1997
@@ -35587,7 +35587,7 @@ Part number: MMRAD-F2D-95
 
 Highlights
 
-Bar-and-plate aluminium core
+Bar-and-plate aluminum core
 Built for the non-intercooled early 7.3L
 Direct fit
 Mishimoto lifetime warranty
@@ -35619,7 +35619,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/mishimoto-replacement-radiator-r6375-v2/1.webp"],
     description: `Mishimoto direct-fit OEM replacement radiator for the 2008–2010 Ford 6.4L Power Stroke.
 
-The 6.4L Power Stroke has a well-earned reputation for radiator leaks, and this is the like-for-like way to fix one: OEM-spec plastic end tanks on an aluminium core, at stock cooling capacity.
+The 6.4L Power Stroke has a well-earned reputation for radiator leaks, and this is the like-for-like way to fix one: OEM-spec plastic end tanks on an aluminum core, at stock cooling capacity.
 
 Mishimoto's addition is at the bottom — their own lower bushings isolate the radiator from frame flex, which is the load that works the tank joints loose in the first place.
 
@@ -35628,7 +35628,7 @@ It is a direct fit, so nothing needs bending, cutting or modifying to get it in.
 Specifications
 
 Manufacturer: Mishimoto
-Core: Aluminium
+Core: Aluminum
 End tanks: OEM-spec plastic
 Mounting: Mishimoto lower bushings to isolate frame flex
 Installation: Direct fit
@@ -35651,7 +35651,7 @@ Ships within the United States only`,
   {
     id: 2846,
     createdAt: 1789430400000,
-    name: "Mishimoto Aluminium Performance Radiator — 2008–2010 Ford 6.4L Power Stroke — MMRAD-F2D-08V2",
+    name: "Mishimoto Aluminum Performance Radiator — 2008–2010 Ford 6.4L Power Stroke — MMRAD-F2D-08V2",
     category: "engine",
     brand: "mishimoto",
     // dpp listing price for MMRAD-F2D-08V2.
@@ -35700,7 +35700,7 @@ Ships within the United States only`,
   {
     id: 2847,
     createdAt: 1789430400000,
-    name: "Mishimoto Performance Aluminium Radiator — 2010–2012 Ram 6.7L Cummins — MMRAD-RAM-10",
+    name: "Mishimoto Performance Aluminum Radiator — 2010–2012 Ram 6.7L Cummins — MMRAD-RAM-10",
     category: "engine",
     brand: "mishimoto",
     // dpp listing price for MISH-MMRAD-RAM-10.
@@ -35769,14 +35769,14 @@ Ships within the United States only`,
 
 Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
 
-This is the like-for-like replacement: OEM-spec plastic end tanks on an aluminium core, matching factory cooling capacity at a price that suits a repair rather than an upgrade.
+This is the like-for-like replacement: OEM-spec plastic end tanks on an aluminum core, matching factory cooling capacity at a price that suits a repair rather than an upgrade.
 
 It is a direct fit — no cutting, bending or modification.
 
 Specifications
 
 Manufacturer: Mishimoto
-Core: Aluminium
+Core: Aluminum
 End tanks: OEM-spec plastic
 Capacity: Matches factory cooling efficiency
 Installation: Direct fit
@@ -35786,7 +35786,7 @@ Part number: R13296
 Highlights
 
 Direct OEM-spec replacement
-Aluminium core, plastic end tanks
+Aluminum core, plastic end tanks
 No modification to fit
 Mishimoto lifetime warranty
 
@@ -35819,14 +35819,14 @@ Ships within the United States only`,
 
 Radiators are a wear item, not a lifetime part. They silt up internally, they collect road debris and grime on the fins, and on the plastic-tank designs the tank eventually cracks where years of clamp pressure and heat cycling have worked on it.
 
-This unit is built to match the cooling efficiency of the radiator it replaces: durable plastic end tanks on an aluminium core, to OEM specification.
+This unit is built to match the cooling efficiency of the radiator it replaces: durable plastic end tanks on an aluminum core, to OEM specification.
 
 Installation is direct — no cutting, bending or modification — which is what you want when the truck is off the road waiting on a radiator.
 
 Specifications
 
 Manufacturer: Mishimoto
-Core: Aluminium
+Core: Aluminum
 End tanks: Plastic, OEM spec
 Capacity: Matches factory cooling efficiency
 Installation: Direct fit
@@ -35837,7 +35837,7 @@ Highlights
 
 Matches factory cooling capacity
 Direct, hassle-free fit
-Aluminium core with plastic tanks
+Aluminum core with plastic tanks
 Mishimoto lifetime warranty
 
 Warranty
@@ -35919,7 +35919,7 @@ Ships within the United States only`,
 
 An intercooler that has been hit by road debris, or that has split at a tank, stops doing its job quietly — the first sign is usually rising exhaust gas temperature rather than an obvious failure.
 
-CSF's OEM+ intercooler is built with cast aluminium end tanks, 100% TIG-welded construction and an OEM-style tube-and-fin core. It meets or exceeds the specification of the unit it replaces.
+CSF's OEM+ intercooler is built with cast aluminum end tanks, 100% TIG-welded construction and an OEM-style tube-and-fin core. It meets or exceeds the specification of the unit it replaces.
 
 It is a direct drop-in that needs no modification to fit.
 
@@ -35929,7 +35929,7 @@ Specifications
 
 Manufacturer: CSF
 Series: OEM+
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Construction: 100% TIG-welded
 Core: OEM-style tube and fin
 Installation: Direct drop-in
@@ -35939,7 +35939,7 @@ Part number: 6001
 Highlights
 
 Meets or exceeds OEM specification
-Cast aluminium tanks, fully TIG-welded
+Cast aluminum tanks, fully TIG-welded
 Direct drop-in, no modification
 ISO-certified OE-level manufacturer
 
@@ -35972,7 +35972,7 @@ Ships within the United States only`,
 
 This is the like-for-like replacement for a damaged or leaking factory intercooler on the LBZ and LMM Duramax, built to OEM specification rather than as an oversized upgrade.
 
-Construction is cast aluminium end tanks, 100% TIG-welded, on an OEM-style tube-and-fin core, and it is a direct drop-in with no modification required.
+Construction is cast aluminum end tanks, 100% TIG-welded, on an OEM-style tube-and-fin core, and it is a direct drop-in with no modification required.
 
 CSF is an ISO-certified cooling manufacturer that supplies both OE and aftermarket, with over forty years in radiators — which is the relevant credential when the part in question is a replacement expected to match a factory unit rather than beat it.
 
@@ -35980,7 +35980,7 @@ Specifications
 
 Manufacturer: CSF
 Series: OEM+
-End tanks: Cast aluminium
+End tanks: Cast aluminum
 Construction: 100% TIG-welded
 Core: OEM-style tube and fin
 Installation: Direct drop-in
@@ -36481,7 +36481,7 @@ Ships within the United States only`,
 
 A turbodiesel makes charge air hot before it makes power. The intercooler is what takes that heat back out, and what it gives back is denser air into the cylinder, lower exhaust gas temperature and a truck that does not lose its composure halfway up a grade with a trailer behind it.
 
-PPE's unit is all-aluminium bar-and-plate with flow-optimised cast aluminium end tanks, and the core is 50% larger than the one it replaces.
+PPE's unit is all-aluminium bar-and-plate with flow-optimised cast aluminum end tanks, and the core is 50% larger than the one it replaces.
 
 PPE puts the pressure drop across it at up to 63% lower than the factory cooler. Pressure drop matters as much as temperature does — air the turbo has already compressed and then lost to restriction is work the engine paid for and did not get back.
 
@@ -36490,7 +36490,7 @@ Specifications
 Manufacturer: PPE (Pacific Performance Engineering)
 Type: Air-to-water intercooler kit
 Construction: All-aluminium bar-and-plate
-End tanks: Flow-optimised cast aluminium
+End tanks: Flow-optimised cast aluminum
 Core size: 50% larger than factory
 Pressure drop: Up to 63% lower than factory
 Engine: 6.7L Power Stroke
@@ -36500,7 +36500,7 @@ Highlights
 
 50% larger core than factory
 Up to 63% less pressure drop
-Cast aluminium end tanks
+Cast aluminum end tanks
 Lower exhaust gas temperature
 
 Warranty
@@ -36683,7 +36683,7 @@ Ships within the United States only`,
 
 A transmission filter is a cheap part protecting an expensive one. A restricted filter starves the pump, and low line pressure is what burns clutches.
 
-PPE's spin-on filter uses an extended cup housing 57% more 10-micron media than the standard filter, with 81% larger passages for higher flow. A steel adapter, a spring-loaded anti-drain-back valve with a silicone O-ring, a coil spring against blow-by and a perforated metal centre tube holding the media make up the rest of it.
+PPE's spin-on filter uses an extended cup housing 57% more 10-micron media than the standard filter, with 81% larger passages for higher flow. A steel adapter, a spring-loaded anti-drain-back valve with a silicone O-ring, a coil spring against blow-by and a perforated metal center tube holding the media make up the rest of it.
 
 This filter is part of PPE's spin-on system: it requires a PPE transmission pan and will not mount to the factory pan.
 
@@ -36694,7 +36694,7 @@ Transmission: 68RFE
 Media: 10 micron, 57% more than standard
 Passages: 81% larger for higher flow
 Valve: Spring-loaded anti-drain-back with silicone O-ring
-Centre tube: Perforated metal
+Center tube: Perforated metal
 Requires: PPE transmission pan
 Part number: 228052150
 
@@ -36882,7 +36882,7 @@ Ships within the United States only`,
 
 The 6.4L Power Stroke's radiator cracks at the end tanks, and the sensible time to deal with it is before it lets go rather than after.
 
-aFe's BladeRunner uses an oversized 2-3/4 in thick tube-and-fin core for more heat dissipation and better coolant flow than the factory unit, with fabricated end tanks made from 1/8 in aluminium plate rather than plastic.
+aFe's BladeRunner uses an oversized 2-3/4 in thick tube-and-fin core for more heat dissipation and better coolant flow than the factory unit, with fabricated end tanks made from 1/8 in aluminum plate rather than plastic.
 
 The upper mounts have been reconfigured to improve how the radiator is held, which matters on a truck where mounting load is part of what cracks the original.
 
@@ -36891,7 +36891,7 @@ Specifications
 Manufacturer: aFe Power
 Series: BladeRunner Street Series
 Core: 2-3/4 in thick tube and fin
-End tanks: Fabricated 1/8 in aluminium plate
+End tanks: Fabricated 1/8 in aluminum plate
 Mounting: Reconfigured upper mounts
 Engine: 6.4L Power Stroke
 Years: 2008–2010
@@ -36900,7 +36900,7 @@ Part number: 46-52091
 Highlights
 
 2-3/4 in oversized core
-1/8 in fabricated aluminium end tanks
+1/8 in fabricated aluminum end tanks
 Reconfigured upper mounting
 Aimed at the 6.4L's cracked-tank failure
 
@@ -37133,7 +37133,7 @@ Ships within the United States only`,
 
 This is a brand new unit direct from Garrett, the manufacturer of the factory turbocharger — not a remanufactured one.
 
-It carries Garrett's latest upgrades, including the revised centre housing with three cobalt pins added. The pins are there to reduce distortion and improve how the vanes actuate, which is the mechanism that goes wrong on a variable-vane turbo full of soot.
+It carries Garrett's latest upgrades, including the revised center housing with three cobalt pins added. The pins are there to reduce distortion and improve how the vanes actuate, which is the mechanism that goes wrong on a variable-vane turbo full of soot.
 
 One note for 2004.5–2005 LLY engines: fitting this turbo to those trucks also requires the Vane Position Sensor Adapter, which is a separate part.
 
@@ -37141,7 +37141,7 @@ Specifications
 
 Manufacturer: Garrett Motion
 Condition: New, not remanufactured
-Centre housing: Revised, with three cobalt pins
+Center housing: Revised, with three cobalt pins
 Benefit: Reduced distortion, improved vane actuation
 LLY note: 2004.5–2005 also requires the Vane Position Sensor Adapter
 Engine: 6.6L Duramax LLY, LBZ and LMM
@@ -37150,7 +37150,7 @@ Part number: 848212-5001S
 Highlights
 
 Brand new genuine Garrett, not reman
-Revised centre housing with cobalt pins
+Revised center housing with cobalt pins
 Drop-in for LLY, LBZ and LMM
 LLY needs the vane position sensor adapter
 
@@ -37330,7 +37330,7 @@ Ships within the United States only`,
 
 A starter is judged on the worst morning of the year, not the average one — cold, a tired battery, and a diesel that needs cranking.
 
-This unit is built in aluminium with a 13-tooth drive and is factory-tested before it ships. Bosch holds it to the OE specification, and installation needs only basic hand tools.
+This unit is built in aluminum with a 13-tooth drive and is factory-tested before it ships. Bosch holds it to the OE specification, and installation needs only basic hand tools.
 
 Bosch remanufactured units are built with more new parts than a standard rebuild and are tested before they leave, and the specification they are held to is the OE one — which Bosch wrote, since these are the parts the trucks were built with.
 
@@ -37339,7 +37339,7 @@ Specifications
 Manufacturer: Bosch
 Condition: Remanufactured by Bosch
 Drive: 13-tooth
-Housing: Aluminium
+Housing: Aluminum
 Specification: Matches or exceeds OE
 Application: 2007.5–2018 Dodge / Ram 6.7L Cummins
 Part number: SR6470X
@@ -37347,7 +37347,7 @@ Part number: SR6470X
 Highlights
 
 Genuine Bosch remanufactured
-13-tooth aluminium construction
+13-tooth aluminum construction
 Factory-tested before shipping
 Installs with basic hand tools
 
@@ -37380,7 +37380,7 @@ Ships within the United States only`,
 
 A starter is judged on the worst morning of the year, not the average one — cold, a tired battery, and a diesel that needs cranking.
 
-This unit is built in aluminium with a 13-tooth drive and is factory-tested before it ships. Bosch holds it to the OE specification, and installation needs only basic hand tools.
+This unit is built in aluminum with a 13-tooth drive and is factory-tested before it ships. Bosch holds it to the OE specification, and installation needs only basic hand tools.
 
 Bosch remanufactured units are built with more new parts than a standard rebuild and are tested before they leave, and the specification they are held to is the OE one — which Bosch wrote, since these are the parts the trucks were built with.
 
@@ -37389,7 +37389,7 @@ Specifications
 Manufacturer: Bosch
 Condition: Remanufactured by Bosch
 Drive: 13-tooth
-Housing: Aluminium
+Housing: Aluminum
 Specification: Matches or exceeds OE
 Application: 1994–2002 Dodge Ram 5.9L Cummins
 Part number: SR6519X
@@ -37397,7 +37397,7 @@ Part number: SR6519X
 Highlights
 
 Genuine Bosch remanufactured
-13-tooth aluminium construction
+13-tooth aluminum construction
 Factory-tested before shipping
 Installs with basic hand tools
 
@@ -38142,7 +38142,7 @@ Highlights
 Fleece FMW billet compressor wheel
 Supports 700 RWHP
 Drop-in, no kit or special tuning
-Stock appearance under the bonnet
+Stock appearance under the hood
 
 Warranty
 Manufacturer Warranty
@@ -38192,7 +38192,7 @@ Highlights
 
 Fleece FMW billet compressor wheel
 Drop-in, no kit or special tuning
-Stock appearance under the bonnet
+Stock appearance under the hood
 
 Warranty
 Manufacturer Warranty
@@ -38244,7 +38244,7 @@ Highlights
 Fleece FMW billet compressor wheel
 Supports 650 RWHP
 Drop-in, no kit or special tuning
-Stock appearance under the bonnet
+Stock appearance under the hood
 
 Warranty
 Manufacturer Warranty
@@ -38294,7 +38294,7 @@ Highlights
 Fleece FMW billet compressor wheel
 Supports 650 RWHP
 Direct-fit, no kit or special tuning
-Stock appearance under the bonnet
+Stock appearance under the hood
 
 Warranty
 Manufacturer Warranty
@@ -38346,7 +38346,7 @@ Highlights
 Fleece FMW billet compressor wheel
 Supports 650 RWHP
 Drop-in, no kit or special tuning
-Stock appearance under the bonnet
+Stock appearance under the hood
 
 Warranty
 Manufacturer Warranty
@@ -39374,7 +39374,7 @@ Ships within the United States only`,
 
 Not every turbo upgrade needs to start with a new casting. KC's budget approach is to machine out the stock Garrett compressor cover to take a larger 64 mm compressor wheel, which gets most of the airflow for a good deal less money.
 
-The centre section is not left alone either: the bearings are upgraded to a 360-degree thrust washer, which is the part that decides whether a turbo pushed harder than standard lasts.
+The center section is not left alone either: the bearings are upgraded to a 360-degree thrust washer, which is the part that decides whether a turbo pushed harder than standard lasts.
 
 KC rate the result at 500 to 575 horsepower, and it is still a drop-in — it goes where the factory turbo came out.
 
@@ -40542,7 +40542,7 @@ Ships within the United States only`,
     location: "our supplier network",
     partNumber: "67CP4BPK1114",
     fitment: "2011–2014 Ford 6.7L Power Stroke.",
-    included: ["Aluminium adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
+    included: ["Aluminum adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -40554,7 +40554,7 @@ When a CP4.2 high-pressure fuel pump fails, the damage is rarely confined to the
 
 This kit reroutes the fuel supply path so that debris from a failing pump does not reach the high-pressure side. It does not stop the pump failing; it stops the failure taking everything else with it.
 
-The kit uses an aluminium adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
+The kit uses an aluminum adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
 
 This is the 2011–2014 version — No Limit build a separate kit for each generation of the 6.7L.
 
@@ -40562,7 +40562,7 @@ Specifications
 
 Manufacturer: No Limit Fabrication
 Type: CP4 disaster prevention bypass kit
-Components: Aluminium adapter block, O-rings, braided hydraulic hose, fittings, hardware
+Components: Aluminum adapter block, O-rings, braided hydraulic hose, fittings, hardware
 Purpose: Keeps failed-pump debris out of the high-pressure system
 Application: 2011–2014 6.7L Power Stroke
 Part number: 67CP4BPK1114
@@ -40570,7 +40570,7 @@ Part number: 67CP4BPK1114
 Highlights
 
 Keeps CP4 debris out of rails and injectors
-Aluminium adapter block and braided hose
+Aluminum adapter block and braided hose
 Complete with fittings and hardware
 Built specifically for 2011–2014
 
@@ -40594,7 +40594,7 @@ Ships within the United States only`,
     location: "our supplier network",
     partNumber: "67CP4BPK1519",
     fitment: "2015–2019 Ford 6.7L Power Stroke.",
-    included: ["Aluminium adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
+    included: ["Aluminum adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -40606,7 +40606,7 @@ When a CP4.2 high-pressure fuel pump fails, the damage is rarely confined to the
 
 This kit reroutes the fuel supply path so that debris from a failing pump does not reach the high-pressure side. It does not stop the pump failing; it stops the failure taking everything else with it.
 
-The kit uses an aluminium adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
+The kit uses an aluminum adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
 
 This is the 2015–2019 version — No Limit build a separate kit for each generation of the 6.7L.
 
@@ -40614,7 +40614,7 @@ Specifications
 
 Manufacturer: No Limit Fabrication
 Type: CP4 disaster prevention bypass kit
-Components: Aluminium adapter block, O-rings, braided hydraulic hose, fittings, hardware
+Components: Aluminum adapter block, O-rings, braided hydraulic hose, fittings, hardware
 Purpose: Keeps failed-pump debris out of the high-pressure system
 Application: 2015–2019 6.7L Power Stroke
 Part number: 67CP4BPK1519
@@ -40622,7 +40622,7 @@ Part number: 67CP4BPK1519
 Highlights
 
 Keeps CP4 debris out of rails and injectors
-Aluminium adapter block and braided hose
+Aluminum adapter block and braided hose
 Complete with fittings and hardware
 Built specifically for 2015–2019
 
@@ -40646,7 +40646,7 @@ Ships within the United States only`,
     location: "our supplier network",
     partNumber: "67CP4BPK20",
     fitment: "2020–2026 Ford 6.7L Power Stroke.",
-    included: ["Aluminium adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
+    included: ["Aluminum adapter block","O-rings","Braided hydraulic fuel hose","Fittings and hardware"],
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -40658,7 +40658,7 @@ When a CP4.2 high-pressure fuel pump fails, the damage is rarely confined to the
 
 This kit reroutes the fuel supply path so that debris from a failing pump does not reach the high-pressure side. It does not stop the pump failing; it stops the failure taking everything else with it.
 
-The kit uses an aluminium adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
+The kit uses an aluminum adapter block, O-rings, braided hydraulic fuel hose, fittings and the required hardware.
 
 This is the 2020–2026 version — No Limit build a separate kit for each generation of the 6.7L.
 
@@ -40666,7 +40666,7 @@ Specifications
 
 Manufacturer: No Limit Fabrication
 Type: CP4 disaster prevention bypass kit
-Components: Aluminium adapter block, O-rings, braided hydraulic hose, fittings, hardware
+Components: Aluminum adapter block, O-rings, braided hydraulic hose, fittings, hardware
 Purpose: Keeps failed-pump debris out of the high-pressure system
 Application: 2020–2026 6.7L Power Stroke
 Part number: 67CP4BPK20
@@ -40674,7 +40674,7 @@ Part number: 67CP4BPK20
 Highlights
 
 Keeps CP4 debris out of rails and injectors
-Aluminium adapter block and braided hose
+Aluminum adapter block and braided hose
 Complete with fittings and hardware
 Built specifically for 2020–2026
 
@@ -42233,7 +42233,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate center section adding coverage across the grille.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42286,7 +42286,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate center section adding coverage across the grille.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42339,7 +42339,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate center section adding coverage across the grille.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42392,7 +42392,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate center section adding coverage across the grille.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42445,7 +42445,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate center section adding coverage across the grille.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42500,7 +42500,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate centre section adding coverage across the grille.
+The HDX 1-Piece is a fully welded single unit built from heavy-duty 2 in steel tubing. It wraps around the grille and headlights to form one continuous barrier against brush, rocks and whatever else the road produces, with a full punch plate center section adding coverage across the grille.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42555,7 +42555,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+The HDX Modular is a three-piece design: a reinforced center section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42568,7 +42568,7 @@ Series: HDX
 Design: 3-Piece
 Finish: Polished stainless steel
 Tubing: Heavy-duty 2 in steel
-Construction: Reinforced centre with bolt-on headlight guards
+Construction: Reinforced center with bolt-on headlight guards
 Application: 2019–2024 Ram 2500 / 3500
 Part number: 57-24020
 
@@ -42608,7 +42608,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+The HDX Modular is a three-piece design: a reinforced center section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42621,7 +42621,7 @@ Series: HDX
 Design: 3-Piece
 Finish: Black steel
 Tubing: Heavy-duty 2 in steel
-Construction: Reinforced centre with bolt-on headlight guards
+Construction: Reinforced center with bolt-on headlight guards
 Application: 2011–2016 Ford F-250 / F-350 Super Duty
 Part number: 57-22375
 
@@ -42661,7 +42661,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+The HDX Modular is a three-piece design: a reinforced center section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42674,7 +42674,7 @@ Series: HDX
 Design: 3-Piece
 Finish: Polished stainless steel
 Tubing: Heavy-duty 2 in steel
-Construction: Reinforced centre with bolt-on headlight guards
+Construction: Reinforced center with bolt-on headlight guards
 Application: 2011–2016 Ford F-250 / F-350 Super Duty
 Part number: 57-22370
 
@@ -42714,7 +42714,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+The HDX Modular is a three-piece design: a reinforced center section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42729,7 +42729,7 @@ Series: HDX
 Design: 3-Piece
 Finish: Black steel
 Tubing: Heavy-duty 2 in steel
-Construction: Reinforced centre with bolt-on headlight guards
+Construction: Reinforced center with bolt-on headlight guards
 Application: 2017–2022 Ford F-250 / F-350 Super Duty
 Part number: 57-23905
 
@@ -42769,7 +42769,7 @@ Ships within the United States only`,
 
 A grille guard earns its keep the first time something arrives at the front of the truck that you did not choose — livestock, a deer, a branch on a two-track, or debris off the vehicle ahead. It is body panels and headlights it is protecting, which on a modern truck is not a small bill.
 
-The HDX Modular is a three-piece design: a reinforced centre section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
+The HDX Modular is a three-piece design: a reinforced center section with bolt-on headlight guards either side. That gives wide coverage across the grille and headlights, and it means a damaged section can be replaced without buying the whole guard again.
 
 Westin design the punch plate to keep air moving to the radiator, which is the thing to check on any grille guard fitted to a diesel that tows.
 
@@ -42784,7 +42784,7 @@ Series: HDX
 Design: 3-Piece
 Finish: Black steel
 Tubing: Heavy-duty 2 in steel
-Construction: Reinforced centre with bolt-on headlight guards
+Construction: Reinforced center with bolt-on headlight guards
 Application: 2017–2022 Ford F-250 / F-350 Super Duty
 Part number: 57-23945
 
@@ -43028,11 +43028,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-adjustable-front-track-bar-7675-01/1.webp"],
     description: `Synergy Manufacturing heavy-duty adjustable front track bar for the 2005–2016 F-250 / F-350 and 2005 onward F-450 Ford Super Duty.
 
-The track bar is what stops the front axle moving side to side under the truck. Lift it and the bar's geometry changes, which pushes the axle off centre — the visible symptom is a wheel sitting closer to one guard than the other, and the felt one is steering that wanders.
+The track bar is what stops the front axle moving side to side under the truck. Lift it and the bar's geometry changes, which pushes the axle off center — the visible symptom is a wheel sitting closer to one guard than the other, and the felt one is steering that wanders.
 
-This bar is adjustable, so the axle can be brought back to centre after a lift rather than left where the factory geometry put it.
+This bar is adjustable, so the axle can be brought back to center after a lift rather than left where the factory geometry put it.
 
-It is also considerably stronger than the standard bar in lateral stiffness, which matters on oversized tyres where the loads through it go up sharply.
+It is also considerably stronger than the standard bar in lateral stiffness, which matters on oversized tires where the loads through it go up sharply.
 
 Synergy split this part by model year — this is the 2005–2016 F-250 / F-350 and 2005 onward F-450 version.
 
@@ -43079,11 +43079,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-adjustable-front-track-bar-7675-02/1.webp"],
     description: `Synergy Manufacturing heavy-duty adjustable front track bar for the 2017 onward F-250 / F-350 Ford Super Duty.
 
-The track bar is what stops the front axle moving side to side under the truck. Lift it and the bar's geometry changes, which pushes the axle off centre — the visible symptom is a wheel sitting closer to one guard than the other, and the felt one is steering that wanders.
+The track bar is what stops the front axle moving side to side under the truck. Lift it and the bar's geometry changes, which pushes the axle off center — the visible symptom is a wheel sitting closer to one guard than the other, and the felt one is steering that wanders.
 
-This bar is adjustable, so the axle can be brought back to centre after a lift rather than left where the factory geometry put it.
+This bar is adjustable, so the axle can be brought back to center after a lift rather than left where the factory geometry put it.
 
-It is also considerably stronger than the standard bar in lateral stiffness, which matters on oversized tyres where the loads through it go up sharply.
+It is also considerably stronger than the standard bar in lateral stiffness, which matters on oversized tires where the loads through it go up sharply.
 
 Synergy split this part by model year — this is the 2017 onward F-250 / F-350 version.
 
@@ -43132,7 +43132,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 This is the kit on its own, for a truck that already runs an upgraded stabiliser or is heading for a custom setup.
 
@@ -43184,7 +43184,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 The FOX stabiliser here is tuned for the early Super Duty steering geometry, to take shimmy out and improve on-centre feel.
 
@@ -43236,7 +43236,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 The FOX stabiliser here is matched to the later trucks, which carry more front-end weight and a revised geometry.
 
@@ -43288,7 +43288,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 KING damping is the premium option for the early trucks — more control and more durability than the FOX equivalent.
 
@@ -43340,7 +43340,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 KING damping for the later trucks, for owners who want the most steering stability available in a single-stabiliser setup.
 
@@ -43392,7 +43392,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 Mounting the stabiliser to the tie rod rather than the axle improves response and simplifies packaging around the front end.
 
@@ -43444,7 +43444,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 Race-proven KING damping mounted directly to the tie rod, for maximum steering control.
 
@@ -43496,9 +43496,9 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
-A balanced dual-stabiliser setup, aimed at aggressive tyres, lifted trucks and heavy off-road use.
+A balanced dual-stabiliser setup, aimed at aggressive tires, lifted trucks and heavy off-road use.
 
 Synergy offer this kit in several stabiliser configurations, each with its own part number and its own model-year range — check both before ordering.
 
@@ -43548,7 +43548,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop — worn joints, a tired box, a track bar that no longer locates the axle. Left alone it eventually produces death wobble, the violent self-sustaining shake that takes both hands and a lower speed to stop.
 
-Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tyres, or off the road.
+Synergy build this kit around 1.75 in heat-treated 4130 chromoly tie rods and a 1.5 in 1026 DOM drag link. The result is a steering system that deflects far less under load than the factory arrangement — which is what you want when the truck is towing, lifted, on oversized tires, or off the road.
 
 The top dual-stabiliser configuration in the range.
 
@@ -43598,7 +43598,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8603-04/1.webp"],
     description: `Synergy steering stabiliser tie-rod relocation kit for the 2005–2022 Ford Super Duty, with a Synergy-tuned FOX steering stabiliser.
 
-Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+Bigger tires and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
 
 This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
 
@@ -43650,7 +43650,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8603-03/1.webp"],
     description: `Synergy steering stabiliser tie-rod relocation kit for the 2005–2022 Ford Super Duty, without a stabiliser.
 
-Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+Bigger tires and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
 
 This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
 
@@ -43702,7 +43702,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8604-04/1.webp"],
     description: `Synergy steering stabiliser tie-rod relocation kit for the 2023–2026 Ford Super Duty, with a Synergy-tuned FOX steering stabiliser.
 
-Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+Bigger tires and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
 
 This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
 
@@ -43754,7 +43754,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-single-stabilizer-tie-rod-mount-kit-8604-03/1.webp"],
     description: `Synergy steering stabiliser tie-rod relocation kit for the 2023–2026 Ford Super Duty, without a stabiliser.
 
-Bigger tyres and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
+Bigger tires and a suspension lift change what the steering has to control, and the factory stabiliser — mounted to the axle — is not well placed to do it.
 
 This kit relocates the stabiliser from the axle to the tie rod. Damping applied at the tie rod acts more directly on the steering, and it frees up clearance for a larger aftermarket stabiliser.
 
@@ -43858,7 +43858,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4150-l/1.webp"],
     description: `Synergy heavy-duty replacement tie rod end, passenger side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
 
-Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+Tie rod ends are a wear item. On a truck that works, or one on oversized tires, they wear faster — and a worn end is where steering slop starts.
 
 These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
 
@@ -43909,7 +43909,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4151-l/1.webp"],
     description: `Synergy heavy-duty replacement tie rod end, driver side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
 
-Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+Tie rod ends are a wear item. On a truck that works, or one on oversized tires, they wear faster — and a worn end is where steering slop starts.
 
 These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
 
@@ -43960,7 +43960,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4152-l/1.webp"],
     description: `Synergy heavy-duty replacement drag link end, driver side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
 
-Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+Tie rod ends are a wear item. On a truck that works, or one on oversized tires, they wear faster — and a worn end is where steering slop starts.
 
 These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
 
@@ -44011,7 +44011,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4153-l/1.webp"],
     description: `Synergy heavy-duty replacement drag link end, passenger side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
 
-Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+Tie rod ends are a wear item. On a truck that works, or one on oversized tires, they wear faster — and a worn end is where steering slop starts.
 
 These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
 
@@ -44062,7 +44062,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/synergy-heavy-duty-tie-rod-end-4154-l/1.webp"],
     description: `Synergy heavy-duty replacement track bar end, passenger side, for Synergy steering systems on the 2005–2025 Ford F-250 / F-350 4x4.
 
-Tie rod ends are a wear item. On a truck that works, or one on oversized tyres, they wear faster — and a worn end is where steering slop starts.
+Tie rod ends are a wear item. On a truck that works, or one on oversized tires, they wear faster — and a worn end is where steering slop starts.
 
 These are replacement ends for a Synergy steering system. They do not fit the factory steering — they are the service part for a truck already running Synergy's tie rods and drag link.
 
@@ -44337,7 +44337,7 @@ Red-Head build these boxes in Washington state. They are not the generic rebuilt
 
 It lets you keep the factory steering shaft and the stock pitman arm, which matters on a lifted truck with a dropped pitman arm: there is no need to change the pitman arm to fit the box.
 
-The Extreme Duty model is built to take anything you put through it while still being entirely suitable for a daily driver — the right answer for oversized tyres or serious off-road use.
+The Extreme Duty model is built to take anything you put through it while still being entirely suitable for a daily driver — the right answer for oversized tires or serious off-road use.
 
 Specifications
 
@@ -44487,9 +44487,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/apex-chassis-upper-ball-joint-bj124/1.webp"],
     description: `Apex Chassis heavy-duty upper ball joint for the 2000–2002 Dodge Ram 2500 / 3500.
 
-The front suspension on a work truck takes a beating, and it takes more of one with big tyres, a plough on the front or a trailer behind. The factory ball joints are not built for that duty cycle.
+The front suspension on a work truck takes a beating, and it takes more of one with big tires, a plough on the front or a trailer behind. The factory ball joints are not built for that duty cycle.
 
-A worn joint shows up as front-end slop: uneven tyre wear, steering that wanders, and eventually the shake nobody wants to feel twice.
+A worn joint shows up as front-end slop: uneven tire wear, steering that wanders, and eventually the shake nobody wants to feel twice.
 
 Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
 
@@ -44508,7 +44508,7 @@ Highlights
 Forged 1045 steel housing, CNC machined
 4140 chromoly induction-treated ball stud
 Rolled threads
-Built for ploughs, big tyres and towing
+Built for ploughs, big tires and towing
 
 Warranty
 Manufacturer Warranty
@@ -44591,7 +44591,7 @@ Ford's Super Duty steering works well enough on pavement. Off it, or worked hard
 
 Apex's ProLock kit replaces them with a noticeably stronger assembly, and the feel tightens up with it.
 
-This version is built in DOM steel, matte black powder coated. Apex offer the kit in steel and in two aluminium finishes; they carry different part numbers and different prices.
+This version is built in DOM steel, matte black powder coated. Apex offer the kit in steel and in two aluminum finishes; they carry different part numbers and different prices.
 
 Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
 
@@ -44621,7 +44621,7 @@ Ships within the United States only`,
   {
     id: 3020,
     createdAt: 1789430400000,
-    name: "Apex Chassis ProLock Tie Rod Kit, 7075-T6 polished aluminium — 2005–2026 Ford F-250 / F-350 Super Duty — KIT372-POL",
+    name: "Apex Chassis ProLock Tie Rod Kit, 7075-T6 polished aluminum — 2005–2026 Ford F-250 / F-350 Super Duty — KIT372-POL",
     category: "suspension",
     brand: "apex-chassis",
     // dpp listing price for APX-KIT372-POL.
@@ -44637,13 +44637,13 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-pol/1.webp",
     images: ["/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-pol/1.webp"],
-    description: `Apex Chassis ProLock heavy-duty tie rod kit in 7075-T6 polished aluminium for the 2005–2026 Ford Super Duty.
+    description: `Apex Chassis ProLock heavy-duty tie rod kit in 7075-T6 polished aluminum for the 2005–2026 Ford Super Duty.
 
 Ford's Super Duty steering works well enough on pavement. Off it, or worked hard, the factory tie rods are the part that gives — and a truck that has started to death-wobble usually has slop in them.
 
 Apex's ProLock kit replaces them with a noticeably stronger assembly, and the feel tightens up with it.
 
-This version is built in 7075-T6 polished aluminium. Apex offer the kit in steel and in two aluminium finishes; they carry different part numbers and different prices.
+This version is built in 7075-T6 polished aluminium. Apex offer the kit in steel and in two aluminum finishes; they carry different part numbers and different prices.
 
 Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
 
@@ -44651,7 +44651,7 @@ Specifications
 
 Manufacturer: Apex Chassis
 Kit: ProLock tie rod kit
-Material: 7075-T6 polished aluminium
+Material: 7075-T6 polished aluminum
 Ball studs: SAE 4140 hot-forged chromoly, induction heat treated
 Threads: Rolled
 Application: 2005–2026 Ford F-250 / F-350 Super Duty
@@ -44660,7 +44660,7 @@ Part number: KIT372-POL
 Highlights
 
 ProLock heavy-duty tie rod kit
-7075-T6 polished aluminium
+7075-T6 polished aluminum
 4140 chromoly induction-treated studs
 Tighter steering feel than stock
 
@@ -44673,7 +44673,7 @@ Ships within the United States only`,
   {
     id: 3021,
     createdAt: 1789430400000,
-    name: "Apex Chassis ProLock Tie Rod Kit, 7075-T6 anodised black aluminium — 2005–2026 Ford F-250 / F-350 Super Duty — KIT372-BLK",
+    name: "Apex Chassis ProLock Tie Rod Kit, 7075-T6 anodised black aluminum — 2005–2026 Ford F-250 / F-350 Super Duty — KIT372-BLK",
     category: "suspension",
     brand: "apex-chassis",
     // dpp listing price for APX-KIT372-BLK.
@@ -44689,13 +44689,13 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-blk/1.webp",
     images: ["/product-media/suspension/apex-chassis-prolock-tie-rod-kit-kit372-blk/1.webp"],
-    description: `Apex Chassis ProLock heavy-duty tie rod kit in 7075-T6 anodised black aluminium for the 2005–2026 Ford Super Duty.
+    description: `Apex Chassis ProLock heavy-duty tie rod kit in 7075-T6 anodised black aluminum for the 2005–2026 Ford Super Duty.
 
 Ford's Super Duty steering works well enough on pavement. Off it, or worked hard, the factory tie rods are the part that gives — and a truck that has started to death-wobble usually has slop in them.
 
 Apex's ProLock kit replaces them with a noticeably stronger assembly, and the feel tightens up with it.
 
-This version is built in 7075-T6 anodised black aluminium. Apex offer the kit in steel and in two aluminium finishes; they carry different part numbers and different prices.
+This version is built in 7075-T6 anodised black aluminium. Apex offer the kit in steel and in two aluminum finishes; they carry different part numbers and different prices.
 
 Apex build these on an SAE 1045 solid forged steel housing, CNC machined so the bearing bores are dimensionally correct rather than subject to die wear. The ball studs are SAE 4140 hot-forged chromoly, induction heat treated to a controlled depth, polished to anti-friction bearing tolerances, and the threads are rolled rather than cut.
 
@@ -44703,7 +44703,7 @@ Specifications
 
 Manufacturer: Apex Chassis
 Kit: ProLock tie rod kit
-Material: 7075-T6 anodised black aluminium
+Material: 7075-T6 anodised black aluminum
 Ball studs: SAE 4140 hot-forged chromoly, induction heat treated
 Threads: Rolled
 Application: 2005–2026 Ford F-250 / F-350 Super Duty
@@ -44712,7 +44712,7 @@ Part number: KIT372-BLK
 Highlights
 
 ProLock heavy-duty tie rod kit
-7075-T6 anodised black aluminium
+7075-T6 anodised black aluminum
 4140 chromoly induction-treated studs
 Tighter steering feel than stock
 
@@ -44841,9 +44841,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-supreme-upper-ball-joint-mk7394/1.webp"],
     description: `Mevotech Supreme upper ball joint for the 2000–2002 Dodge Ram 2500 / 3500 4x4.
 
-A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tire wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
 
-Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+Factory joints are sized for a factory truck. Big tires, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
 
 Mevotech's Supreme line uses long-lasting sintered bearings with a 180 SAE grease fitting, so the joint can be serviced rather than simply worn out.
 
@@ -44891,9 +44891,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-supreme-lower-ball-joint-mk7397/1.webp"],
     description: `Mevotech Supreme lower ball joint for the 2000–2002 Dodge Ram 2500 / 3500 4x4.
 
-A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tire wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
 
-Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+Factory joints are sized for a factory truck. Big tires, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
 
 Mevotech's Supreme line uses long-lasting sintered bearings with a 180 SAE grease fitting, so the joint can be serviced rather than simply worn out.
 
@@ -44941,9 +44941,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-ttx-lower-ball-joint-txk80027/1.webp"],
     description: `Mevotech TTX lower ball joint for the 1999–2023 Ford F-250 / F-350 Super Duty 2WD.
 
-A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tire wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
 
-Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+Factory joints are sized for a factory truck. Big tires, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
 
 The TTX line is Mevotech's strongest: parts engineered for trucks that are worked, on the principle that the part failed for a reason and an equal-or-lesser replacement will fail the same way.
 
@@ -44991,9 +44991,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-ttx-upper-ball-joint-txk80026/1.webp"],
     description: `Mevotech TTX upper ball joint for the 1994–1999 Dodge Ram 2500 / 3500 and 1999–2023 Ford F-250 / F-350.
 
-A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tire wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
 
-Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+Factory joints are sized for a factory truck. Big tires, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
 
 The TTX line is Mevotech's strongest: parts engineered for trucks that are worked, on the principle that the part failed for a reason and an equal-or-lesser replacement will fail the same way.
 
@@ -45041,9 +45041,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/moog-problem-solver-lower-ball-joint-k8607t/1.webp"],
     description: `MOOG Problem Solver lower ball joint for the 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500.
 
-A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tire wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
 
-Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+Factory joints are sized for a factory truck. Big tires, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
 
 MOOG is the steering and suspension brand most professional workshops reach for, and the Problem Solver line exists specifically to improve on what the factory fitted.
 
@@ -45091,9 +45091,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/moog-problem-solver-upper-ball-joint-k80026/1.webp"],
     description: `MOOG Problem Solver upper ball joint for the 1992–2019 Ford F-Series and 1994–1999 Dodge Ram 2500 / 3500.
 
-A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tire wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
 
-Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+Factory joints are sized for a factory truck. Big tires, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
 
 MOOG is the steering and suspension brand most professional workshops reach for, and the Problem Solver line exists specifically to improve on what the factory fitted.
 
@@ -45141,9 +45141,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/readylift-teraflex-dana-60-ball-joint-kit-3452030/1.webp"],
     description: `ReadyLIFT TeraFlex Dana 60 ball joint kit, a full set of four, for Ford Super Duty and Dodge Ram trucks with the Dana 60 front axle.
 
-A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tyre wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
+A worn ball joint is rarely diagnosed as a ball joint first. What the owner notices is uneven tire wear, steering that wanders, a clunk over bumps — and on a solid front axle, eventually death wobble.
 
-Factory joints are sized for a factory truck. Big tyres, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
+Factory joints are sized for a factory truck. Big tires, a plough, a heavy trailer or regular rough roads all shorten their life considerably.
 
 This kit covers the whole axle: four joints, both uppers and both lowers, so the front end is done in one go rather than one corner at a time.
 
@@ -45191,7 +45191,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-ttx-outer-tie-rod-end-txms40625/1.webp"],
     description: `Mevotech TTX outer tie rod end, passenger side, for the 2005–2023 Ford F-250 / F-350 Super Duty 4WD.
 
-Lift a truck and fit bigger tyres and the loads through the steering go up, not down. The factory tie rod ends were not specified with that in mind.
+Lift a truck and fit bigger tires and the loads through the steering go up, not down. The factory tie rod ends were not specified with that in mind.
 
 Mevotech's TTX line is built for exactly that: the strongest and most durable parts they make, for trucks whose owners are not willing to find out at the worst possible moment.
 
@@ -45210,7 +45210,7 @@ Highlights
 
 TTX — Mevotech's strongest line
 passenger side outer end
-Sized for lifted trucks and big tyres
+Sized for lifted trucks and big tires
 Direct replacement
 
 Warranty
@@ -45240,7 +45240,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-ttx-outer-tie-rod-end-txes80754/1.webp"],
     description: `Mevotech TTX outer tie rod end, driver side, for the 2005–2023 Ford F-250 / F-350 Super Duty 4WD.
 
-Lift a truck and fit bigger tyres and the loads through the steering go up, not down. The factory tie rod ends were not specified with that in mind.
+Lift a truck and fit bigger tires and the loads through the steering go up, not down. The factory tie rod ends were not specified with that in mind.
 
 Mevotech's TTX line is built for exactly that: the strongest and most durable parts they make, for trucks whose owners are not willing to find out at the worst possible moment.
 
@@ -45259,7 +45259,7 @@ Highlights
 
 TTX — Mevotech's strongest line
 driver side outer end
-Sized for lifted trucks and big tyres
+Sized for lifted trucks and big tires
 Direct replacement
 
 Warranty
@@ -45386,11 +45386,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-wheel-bearing-hub-assembly-h515101/1.webp"],
     description: `Mevotech Supreme wheel bearing and hub assembly for the 2006–2008 Ram 2500 / 3500 5.9L and 6.7L Cummins 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
-Factory bearing assemblies are a common failure on these trucks, and heavy offset wheel and tyre packages make it a certainty rather than a risk.
+Factory bearing assemblies are a common failure on these trucks, and heavy offset wheel and tire packages make it a certainty rather than a risk.
 
 A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
 
@@ -45406,7 +45406,7 @@ Highlights
 
 Supreme
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Mevotech
 
 Warranty
@@ -45436,9 +45436,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-wheel-bearing-hub-assembly-h515063/1.webp"],
     description: `Mevotech BTX wheel bearing and hub assembly for the 2000–2002 Ram 2500 / 3500 5.9L Cummins 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Factory bearing assemblies are a common failure on the second-generation Cummins trucks, and wide offset wheels accelerate it.
 
@@ -45456,7 +45456,7 @@ Highlights
 
 BTX
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Mevotech
 
 Warranty
@@ -45486,9 +45486,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/mevotech-wheel-bearing-hub-assembly-txf25321/1.webp"],
     description: `Mevotech TTX, with ABS sensor wheel bearing and hub assembly for the 2014–2018 Ram 2500 and 2013–2018 Ram 3500.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 This assembly includes the ABS sensor, so the job is done in one part rather than two.
 
@@ -45506,7 +45506,7 @@ Highlights
 
 TTX, with ABS sensor
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Mevotech
 
 Warranty
@@ -45536,9 +45536,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/moog-wheel-bearing-hub-assembly-515063/1.webp"],
     description: `MOOG hub assembly wheel bearing and hub assembly for the 2000–2002 Dodge Ram 2500 / 3500 5.9L Cummins 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 MOOG's design changes here are aimed at longer life, smoother operation and correct ABS function. The wheel studs are coated against rust, which is what makes a wheel come off easily years later.
 
@@ -45556,7 +45556,7 @@ Highlights
 
 Hub assembly
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 MOOG
 
 Warranty
@@ -45586,9 +45586,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/moog-wheel-bearing-hub-assembly-515101/1.webp"],
     description: `MOOG hub assembly wheel bearing and hub assembly for the 2006–2008 Dodge Ram 5.9L Cummins 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 MOOG's design changes here are aimed at longer life, smoother operation and correct ABS function, with coated wheel studs to resist corrosion.
 
@@ -45606,7 +45606,7 @@ Highlights
 
 Hub assembly
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 MOOG
 
 Warranty
@@ -45636,9 +45636,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr205-f/1.webp"],
     description: `Kryptonite lifetime warranty, fine thread (M14 × 1.50) wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Super Duty wheel studs come in two threads and they are not interchangeable — this is the fine thread (M14 × 1.50) version.
 
@@ -45657,7 +45657,7 @@ Highlights
 
 Lifetime warranty, fine thread (M14 × 1.50)
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Kryptonite
 
 Warranty
@@ -45687,9 +45687,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr205-c/1.webp"],
     description: `Kryptonite lifetime warranty, coarse thread (M14 × 2.0) wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 Super Duty and Excursion 4x4.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Super Duty wheel studs come in two threads and they are not interchangeable — this is the coarse thread (M14 × 2.0) version.
 
@@ -45708,7 +45708,7 @@ Highlights
 
 Lifetime warranty, coarse thread (M14 × 2.0)
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Kryptonite
 
 Warranty
@@ -45738,9 +45738,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr200/1.webp"],
     description: `Kryptonite lifetime warranty wheel bearing and hub assembly for the 2005–2010 Ford F-250 / F-350 Super Duty 4x4.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Kryptonite's answer to bearings that fail again is a lifetime warranty on the replacement.
 
@@ -45759,7 +45759,7 @@ Highlights
 
 Lifetime warranty
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Kryptonite
 
 Warranty
@@ -45789,9 +45789,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr435/1.webp"],
     description: `Kryptonite lifetime warranty wheel bearing and hub assembly for the 2011–2016 Ford F-250 / F-350 Super Duty 4x4.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Kryptonite's answer to bearings that fail again is a lifetime warranty on the replacement.
 
@@ -45810,7 +45810,7 @@ Highlights
 
 Lifetime warranty
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Kryptonite
 
 Warranty
@@ -45840,9 +45840,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/kryptonite-wheel-bearing-hub-assembly-kr303/1.webp"],
     description: `Kryptonite lifetime warranty, 8 lug wheel bearing and hub assembly for the 2011–2019 GM 2500HD / 3500 — 2WD and 4WD, single and dual rear wheel.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 This is the 8-lug assembly, and it covers both drivetrains and both rear wheel configurations.
 
@@ -45861,7 +45861,7 @@ Highlights
 
 Lifetime warranty, 8 lug
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Kryptonite
 
 Warranty
@@ -45891,9 +45891,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515183/1.webp"],
     description: `Axiom Supply reinforced hub and bearing wheel bearing and hub assembly for the 2017–2022 Ford F-250 / F-350 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Axiom reinforce the internals so the hub does not flex under load, which is what keeps the steering tight and the brakes feeling right.
 
@@ -45911,7 +45911,7 @@ Highlights
 
 Reinforced hub and bearing
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Axiom Supply
 
 Warranty
@@ -45941,9 +45941,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515056/1.webp"],
     description: `Axiom Supply reinforced, fine thread wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Super Duty wheel studs come in two threads — this is the fine thread version. Check yours before ordering.
 
@@ -45961,7 +45961,7 @@ Highlights
 
 Reinforced, fine thread
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Axiom Supply
 
 Warranty
@@ -45991,9 +45991,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515025/1.webp"],
     description: `Axiom Supply reinforced, coarse thread wheel bearing and hub assembly for the 1999–2004 Ford F-250 / F-350 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
 Super Duty wheel studs come in two threads — this is the coarse thread version. Check yours before ordering.
 
@@ -46011,7 +46011,7 @@ Highlights
 
 Reinforced, coarse thread
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Axiom Supply
 
 Warranty
@@ -46041,11 +46041,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/axiom-supply-wheel-bearing-hub-assembly-ax515081/1.webp"],
     description: `Axiom Supply reinforced hub and bearing wheel bearing and hub assembly for the 2005–2010 Ford F-250 / F-350 4WD.
 
-A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tyre problem first. What follows is uneven tyre wear, loose steering and vague handling.
+A failing wheel bearing announces itself as a rhythmic hum that changes pitch when you change lanes — and a lot of owners chase it as a tire problem first. What follows is uneven tire wear, loose steering and vague handling.
 
-Wide offset wheels and oversized tyres put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
+Wide offset wheels and oversized tires put more leverage on the bearing than the factory assumed, which is why these fail early on trucks that have been built rather than left standard.
 
-The internal structure is built to resist flex under heavy load, oversized tyres and lifted suspension.
+The internal structure is built to resist flex under heavy load, oversized tires and lifted suspension.
 
 A hub assembly is replaced as a unit rather than rebuilt, so the job is a known quantity — but it is worth fitting something better than what failed.
 
@@ -46061,7 +46061,7 @@ Highlights
 
 Reinforced hub and bearing
 Direct replacement assembly
-Built for heavy offset wheels and big tyres
+Built for heavy offset wheels and big tires
 Axiom Supply
 
 Warranty
@@ -47099,7 +47099,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-chromoly-dana-60-inner-front-axle-ya-w48228/1.webp"],
     description: `Yukon 4340 chromoly Dana 60 inner front axle shaft, left-hand, 35 spline, for the 1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4.
 
-Front axle shafts break at the worst time and in the worst place — usually mid-corner, under power, with a tyre already off the ground.
+Front axle shafts break at the worst time and in the worst place — usually mid-corner, under power, with a tire already off the ground.
 
 This is Yukon's 4340 chromoly upgrade for the factory shaft: 35 splines, 37.62 in long, produced with cold rolling and the rest of Yukon's manufacturing process, which is what puts the strength above a standard replacement.
 
@@ -47150,7 +47150,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-chromoly-dana-60-inner-front-axle-ya-w48227/1.webp"],
     description: `Yukon 4340 chromoly Dana 60 inner front axle shaft, right-hand, 35 spline, for the 1999–2004 Ford F-350 and 2002–2004 Ford F-250 4x4.
 
-Front axle shafts break at the worst time and in the worst place — usually mid-corner, under power, with a tyre already off the ground.
+Front axle shafts break at the worst time and in the worst place — usually mid-corner, under power, with a tire already off the ground.
 
 This is Yukon's 4340 chromoly upgrade for the factory shaft: 35 splines, 37.62 in long, produced with cold rolling and the rest of Yukon's manufacturing process, which is what puts the strength above a standard replacement.
 
@@ -47201,7 +47201,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-4340-chromoly-front-axle-ya-w43002/1.webp"],
     description: `Yukon 4340 chromoly right front axle shaft for the AAM 9.25 differential in the 2003–2009 Dodge Ram 2500 / 3500.
 
-A front axle shaft is a wear-and-break part on a truck running big tyres, and the factory shaft in the AAM 9.25 is the usual limit.
+A front axle shaft is a wear-and-break part on a truck running big tires, and the factory shaft in the AAM 9.25 is the usual limit.
 
 This is Yukon's 4340 chromoly upgraded stock replacement: 33 splines with a 1485 U-joint, so the spline count and joint size match the factory arrangement while the material does not.
 
@@ -47302,7 +47302,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-3-54-yg-d60sr-354r/1.webp"],
     description: `Yukon Gear & Axle 3.54 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
 
-Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+Fitting taller tires changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
 
 Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
 
@@ -47352,7 +47352,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-3-73-yg-d60sr-373r/1.webp"],
     description: `Yukon Gear & Axle 3.73 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
 
-Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+Fitting taller tires changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
 
 Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
 
@@ -47402,7 +47402,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-10-yg-d60sr-410r/1.webp"],
     description: `Yukon Gear & Axle 4.10 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
 
-Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+Fitting taller tires changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
 
 Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
 
@@ -47452,7 +47452,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-30-yg-d60sr-430r/1.webp"],
     description: `Yukon Gear & Axle 4.30 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
 
-Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+Fitting taller tires changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
 
 Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
 
@@ -47502,7 +47502,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/yukon-front-dana-60-ring-and-pinion-4-88-yg-d60sr-488r/1.webp"],
     description: `Yukon Gear & Axle 4.88 ring and pinion set for the front Dana 60 in the 2017–2019 Ford Super Duty.
 
-Fitting taller tyres changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
+Fitting taller tires changes the effective gearing of the truck. Regearing puts it back where the factory intended — and on a diesel that tows, that is the difference between a truck that pulls and one that hunts for gears.
 
 Front and rear must be regeared to the same ratio. This is the front Dana 60 set.
 
@@ -47534,7 +47534,7 @@ Ships within the United States only`,
   {
     id: 3078,
     createdAt: 1789430400000,
-    name: "aFe Power Front Differential Cover, raw cast aluminium — 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front — 46-70400",
+    name: "aFe Power Front Differential Cover, raw cast aluminum — 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front — 46-70400",
     category: "suspension",
     brand: "afe",
     // dpp listing price for AFE-46-70400.
@@ -47550,31 +47550,31 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70400/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-70400/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in raw cast aluminium for the 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.
+    description: `aFe Power cast aluminum front differential cover in raw cast aluminum for the 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This cover includes an oil sight glass and magnetic deep-reach fill plug, so checking and topping the oil does not mean guessing.
 
-This is the raw cast aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+This is the raw cast aluminum version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
 Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
-Finish: raw cast aluminium
+Material: Cast aluminum with reinforcing ribs
+Finish: raw cast aluminum
 Included: Oil sight glass and magnetic deep-reach fill plug
 Application: 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front
 Part number: 46-70400
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
-Raw cast aluminium
+Raw cast aluminum
 Oil sight glass and magnetic deep-reach fill plug
 
 Warranty
@@ -47602,11 +47602,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70402/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-70402/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in black powder coated for the 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.
+    description: `aFe Power cast aluminum front differential cover in black powder coated for the 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This cover includes an oil sight glass and magnetic deep-reach fill plug, so checking and topping the oil does not mean guessing.
 
@@ -47616,7 +47616,7 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: black powder coated
 Included: Oil sight glass and magnetic deep-reach fill plug
 Application: 2013–2023 Ram 2500 / 3500 6.7L Cummins, AAM 9.25 12-bolt front
@@ -47624,7 +47624,7 @@ Part number: 46-70402
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Black powder coated
 Oil sight glass and magnetic deep-reach fill plug
@@ -47638,7 +47638,7 @@ Ships within the United States only`,
   {
     id: 3080,
     createdAt: 1789430400000,
-    name: "aFe Power Front Differential Cover, raw aluminium — 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front — 46-70040",
+    name: "aFe Power Front Differential Cover, raw aluminum — 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front — 46-70040",
     category: "suspension",
     brand: "afe",
     // dpp listing price for AFE-46-70040.
@@ -47654,28 +47654,28 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70040/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-70040/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in raw aluminium for the 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.
+    description: `aFe Power cast aluminum front differential cover in raw aluminum for the 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
-This is the raw aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+This is the raw aluminum version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
 Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
-Finish: raw aluminium
+Material: Cast aluminum with reinforcing ribs
+Finish: raw aluminum
 Application: 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front
 Part number: 46-70040
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
-Raw aluminium
+Raw aluminum
 
 Warranty
 Manufacturer Warranty
@@ -47702,11 +47702,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-70042/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-70042/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in black with machined fins for the 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.
+    description: `aFe Power cast aluminum front differential cover in black with machined fins for the 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the black with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
@@ -47714,14 +47714,14 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: black with machined fins
 Application: 2003–2012 Ram 2500 / 3500 5.9L and 6.7L Cummins, front
 Part number: 46-70042
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Black with machined fins
 
@@ -47750,11 +47750,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71050a/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71050a/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in Street Series, raw for the 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.
+    description: `aFe Power cast aluminum front differential cover in Street Series, raw for the 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the Street Series, raw version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
@@ -47762,14 +47762,14 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: Street Series, raw
 Application: 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front
 Part number: 46-71050A
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Street Series, raw
 
@@ -47798,11 +47798,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71050b/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71050b/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in Pro Series black with machined fins for the 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.
+    description: `aFe Power cast aluminum front differential cover in Pro Series black with machined fins for the 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the Pro Series black with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
@@ -47810,14 +47810,14 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: Pro Series black with machined fins
 Application: 2011–2020 GM 2500HD / 3500HD 6.6L Duramax, AAM 9.25 front
 Part number: 46-71050B
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Pro Series black with machined fins
 
@@ -47830,7 +47830,7 @@ Ships within the United States only`,
   {
     id: 3084,
     createdAt: 1789430400000,
-    name: "aFe Power Front Differential Cover, raw cast aluminium — 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front — 46-71100A",
+    name: "aFe Power Front Differential Cover, raw cast aluminum — 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front — 46-71100A",
     category: "suspension",
     brand: "afe",
     // dpp listing price for AFE-46-71100A.
@@ -47846,31 +47846,31 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71100a/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71100a/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in raw cast aluminium for the 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.
+    description: `aFe Power cast aluminum front differential cover in raw cast aluminum for the 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This cover includes an magnetic drain plug, so checking and topping the oil does not mean guessing.
 
-This is the raw cast aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+This is the raw cast aluminum version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
 Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
-Finish: raw cast aluminium
+Material: Cast aluminum with reinforcing ribs
+Finish: raw cast aluminum
 Included: Magnetic drain plug
 Application: 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front
 Part number: 46-71100A
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
-Raw cast aluminium
+Raw cast aluminum
 Magnetic drain plug
 
 Warranty
@@ -47898,11 +47898,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71100b/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71100b/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in black powder coated for the 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.
+    description: `aFe Power cast aluminum front differential cover in black powder coated for the 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This cover includes an magnetic drain plug, so checking and topping the oil does not mean guessing.
 
@@ -47912,7 +47912,7 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: black powder coated
 Included: Magnetic drain plug
 Application: 2017–2023 Ford F-250 / F-350 6.7L Power Stroke, front
@@ -47920,7 +47920,7 @@ Part number: 46-71100B
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Black powder coated
 Magnetic drain plug
@@ -47950,11 +47950,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71430a/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71430a/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in raw with machined fins for the 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.
+    description: `aFe Power cast aluminum front differential cover in raw with machined fins for the 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the raw with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
@@ -47962,14 +47962,14 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: raw with machined fins
 Application: 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front
 Part number: 46-71430A
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Raw with machined fins
 
@@ -47998,11 +47998,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71430b/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71430b/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in black with machined fins for the 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.
+    description: `aFe Power cast aluminum front differential cover in black with machined fins for the 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the black with machined fins version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
@@ -48010,14 +48010,14 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: black with machined fins
 Application: 2020–2026 GM 1500 3.0L Duramax LM2 / LZ0, front
 Part number: 46-71430B
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Black with machined fins
 
@@ -48030,7 +48030,7 @@ Ships within the United States only`,
   {
     id: 3088,
     createdAt: 1789430400000,
-    name: "aFe Power Front Differential Cover, raw cast aluminium — 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front — 46-71030A",
+    name: "aFe Power Front Differential Cover, raw cast aluminum — 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front — 46-71030A",
     category: "suspension",
     brand: "afe",
     // dpp listing price for AFE-46-71030A.
@@ -48046,28 +48046,28 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71030a/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71030a/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in raw cast aluminium for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
+    description: `aFe Power cast aluminum front differential cover in raw cast aluminum for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
-This is the raw cast aluminium version. aFe offer the same cover in more than one finish, each with its own part number and price.
+This is the raw cast aluminum version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
 Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
-Finish: raw cast aluminium
+Material: Cast aluminum with reinforcing ribs
+Finish: raw cast aluminum
 Application: 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front
 Part number: 46-71030A
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
-Raw cast aluminium
+Raw cast aluminum
 
 Warranty
 Manufacturer Warranty
@@ -48094,11 +48094,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71030b/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71030b/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in black powder coated for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
+    description: `aFe Power cast aluminum front differential cover in black powder coated for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the black powder coated version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
@@ -48106,14 +48106,14 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: black powder coated
 Application: 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front
 Part number: 46-71030B
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Black powder coated
 
@@ -48142,11 +48142,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-differential-cover-46-71030r/1.webp",
     images: ["/product-media/suspension/afe-front-differential-cover-46-71030r/1.webp"],
-    description: `aFe Power cast aluminium front differential cover in red powder coated for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
+    description: `aFe Power cast aluminum front differential cover in red powder coated for the 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the red powder coated version. aFe offer the same cover in more than one finish, each with its own part number and price.
 
@@ -48154,14 +48154,14 @@ Specifications
 
 Manufacturer: aFe Power
 Part: Front differential cover
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Finish: red powder coated
 Application: 2018–2023 Jeep Wrangler JL and Gladiator JT, Dana M210 front
 Part number: 46-71030R
 
 Highlights
 
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Added fluid capacity and heat dissipation
 Red powder coated
 
@@ -48191,11 +48191,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7703ab/1.webp",
     images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7703ab/1.webp"],
-    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 1999–2016 Ford F-250 / F-350 Super Duty 4WD.
+    description: `aFe Power front and rear cast aluminum differential covers supplied with gear oil for the 1999–2016 Ford F-250 / F-350 Super Duty 4WD.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
 
@@ -48205,7 +48205,7 @@ Specifications
 
 Manufacturer: aFe Power
 Kit: Front and rear differential covers with oil
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Included: Both covers and gear oil
 Application: 1999–2016 Ford F-250 / F-350 Super Duty 4WD
 Part number: 46-7703AB
@@ -48214,7 +48214,7 @@ Highlights
 
 Front and rear covers together
 Gear oil included
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Lower differential temperature when towing
 
 Warranty
@@ -48243,11 +48243,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7704ab/1.webp",
     images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7704ab/1.webp"],
-    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2017–2022 Ford F-250 / F-350 Super Duty 4WD.
+    description: `aFe Power front and rear cast aluminum differential covers supplied with gear oil for the 2017–2022 Ford F-250 / F-350 Super Duty 4WD.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
 
@@ -48257,7 +48257,7 @@ Specifications
 
 Manufacturer: aFe Power
 Kit: Front and rear differential covers with oil
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Rear axle: 10.5 in 12-bolt rear axle
 Included: Both covers and gear oil
 Application: 2017–2022 Ford F-250 / F-350 Super Duty 4WD
@@ -48267,7 +48267,7 @@ Highlights
 
 Front and rear covers together
 Gear oil included
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Lower differential temperature when towing
 
 Warranty
@@ -48296,11 +48296,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7705ab/1.webp",
     images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7705ab/1.webp"],
-    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2017–2022 Ford F-250 / F-350 Super Duty 4WD.
+    description: `aFe Power front and rear cast aluminum differential covers supplied with gear oil for the 2017–2022 Ford F-250 / F-350 Super Duty 4WD.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
 
@@ -48310,7 +48310,7 @@ Specifications
 
 Manufacturer: aFe Power
 Kit: Front and rear differential covers with oil
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Rear axle: Dana M275 14-bolt rear axle
 Included: Both covers and gear oil
 Application: 2017–2022 Ford F-250 / F-350 Super Duty 4WD
@@ -48320,7 +48320,7 @@ Highlights
 
 Front and rear covers together
 Gear oil included
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Lower differential temperature when towing
 
 Warranty
@@ -48349,11 +48349,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7702ab/1.webp",
     images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7702ab/1.webp"],
-    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2019–2025 Ram 2500 / 3500.
+    description: `aFe Power front and rear cast aluminum differential covers supplied with gear oil for the 2019–2025 Ram 2500 / 3500.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
 
@@ -48363,7 +48363,7 @@ Specifications
 
 Manufacturer: aFe Power
 Kit: Front and rear differential covers with oil
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Included: Both covers and gear oil
 Application: 2019–2025 Ram 2500 / 3500
 Part number: 46-7702AB
@@ -48372,7 +48372,7 @@ Highlights
 
 Front and rear covers together
 Gear oil included
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Lower differential temperature when towing
 
 Warranty
@@ -48401,11 +48401,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7708ab/1.webp",
     images: ["/product-media/suspension/afe-front-and-rear-differential-covers-with-oil-46-7708ab/1.webp"],
-    description: `aFe Power front and rear cast aluminium differential covers supplied with gear oil for the 2020–2025 GM 2500HD / 3500HD 4WD.
+    description: `aFe Power front and rear cast aluminum differential covers supplied with gear oil for the 2020–2025 GM 2500HD / 3500HD 4WD.
 
 A differential cover does three jobs: it keeps the gear oil in, it keeps debris and impacts out, and — if it is designed for it — it helps get heat out of the oil. The factory stamped-steel cover does the first well enough and the other two badly.
 
-aFe's covers are cast aluminium with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
+aFe's covers are cast aluminum with reinforcing ribs, which adds strength and heat dissipation as well as fluid capacity. More oil at a lower temperature is exactly what a differential wants when the truck is towing.
 
 This is the complete kit: front and rear covers together with the gear oil to fill them, so a differential service and a cover upgrade happen in the same afternoon rather than in two parts orders.
 
@@ -48415,7 +48415,7 @@ Specifications
 
 Manufacturer: aFe Power
 Kit: Front and rear differential covers with oil
-Material: Cast aluminium with reinforcing ribs
+Material: Cast aluminum with reinforcing ribs
 Included: Both covers and gear oil
 Application: 2020–2025 GM 2500HD / 3500HD 4WD
 Part number: 46-7708AB
@@ -48424,7 +48424,7 @@ Highlights
 
 Front and rear covers together
 Gear oil included
-Cast aluminium with reinforcing ribs
+Cast aluminum with reinforcing ribs
 Lower differential temperature when towing
 
 Warranty
@@ -49066,7 +49066,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/zone-offroad-4-inch-suspension-system-f1n/1.webp"],
     description: `Zone Offroad 4 in suspension lift system with Nitro Series shocks for the 1999–2004 Ford Super Duty.
 
-A four-inch lift is the point at which a Super Duty stops being a truck with bigger tyres and starts needing its geometry thought about — which is why a system beats a spacer.
+A four-inch lift is the point at which a Super Duty stops being a truck with bigger tires and starts needing its geometry thought about — which is why a system beats a spacer.
 
 This kit is supplied with radiused U-bolts. Ford used two U-bolt profiles across these years, and they are not interchangeable, so check which the truck has before ordering.
 
@@ -49117,7 +49117,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/zone-offroad-4-inch-suspension-system-f2n/1.webp"],
     description: `Zone Offroad 4 in suspension lift system with Nitro Series shocks for the 1999–2004 Ford Super Duty.
 
-A four-inch lift is the point at which a Super Duty stops being a truck with bigger tyres and starts needing its geometry thought about — which is why a system beats a spacer.
+A four-inch lift is the point at which a Super Duty stops being a truck with bigger tires and starts needing its geometry thought about — which is why a system beats a spacer.
 
 This kit is supplied with square U-bolts. Ford used two U-bolt profiles across these years, and they are not interchangeable, so check which the truck has before ordering.
 
@@ -49168,7 +49168,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/zone-offroad-4-inch-suspension-system-f1f/1.webp"],
     description: `Zone Offroad 4 in suspension lift system with FOX 2.0 Adventure Series shocks for the 1999–2004 Ford Super Duty.
 
-A four-inch lift is the point at which a Super Duty stops being a truck with bigger tyres and starts needing its geometry thought about — which is why a system beats a spacer.
+A four-inch lift is the point at which a Super Duty stops being a truck with bigger tires and starts needing its geometry thought about — which is why a system beats a spacer.
 
 This kit is supplied with radiused U-bolts. Ford used two U-bolt profiles across these years, and they are not interchangeable, so check which the truck has before ordering.
 
@@ -49332,7 +49332,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: clear anodised
 Rotors: Reuses stock rotors — not included
@@ -49343,7 +49343,7 @@ Part number: A403-20
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Clear anodised finish
@@ -49390,7 +49390,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: clear anodised
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -49401,7 +49401,7 @@ Part number: A403-20-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Clear anodised finish
@@ -49448,7 +49448,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: black
 Rotors: Reuses stock rotors — not included
@@ -49459,7 +49459,7 @@ Part number: A403-20BLK
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Black finish
@@ -49506,7 +49506,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: black
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -49517,7 +49517,7 @@ Part number: A403-20BLK-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Black finish
@@ -49564,7 +49564,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: red
 Rotors: Reuses stock rotors — not included
@@ -49575,7 +49575,7 @@ Part number: A403-20R
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Red finish
@@ -49622,7 +49622,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: red
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -49633,7 +49633,7 @@ Part number: A403-20R-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Red finish
@@ -49680,7 +49680,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: Reuses stock rotors — not included
@@ -49691,7 +49691,7 @@ Part number: A403-21
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Clear anodised finish
@@ -49738,7 +49738,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -49749,7 +49749,7 @@ Part number: A403-21-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Clear anodised finish
@@ -49796,7 +49796,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: Reuses stock rotors — not included
@@ -49807,7 +49807,7 @@ Part number: A403-21BLK
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Black finish
@@ -49854,7 +49854,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -49865,7 +49865,7 @@ Part number: A403-21BLK-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Black finish
@@ -49912,7 +49912,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: Reuses stock rotors — not included
@@ -49923,7 +49923,7 @@ Part number: A403-21R
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Red finish
@@ -49970,7 +49970,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -49981,7 +49981,7 @@ Part number: A403-21R-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Red finish
@@ -50028,7 +50028,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: clear anodised
 Rotors: Reuses stock rotors — not included
@@ -50039,7 +50039,7 @@ Part number: A404-20
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Clear anodised finish
@@ -50086,7 +50086,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: clear anodised
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50097,7 +50097,7 @@ Part number: A404-20-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Clear anodised finish
@@ -50144,7 +50144,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: black
 Rotors: Reuses stock rotors — not included
@@ -50155,7 +50155,7 @@ Part number: A404-20BLK
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Black finish
@@ -50202,7 +50202,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: black
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50213,7 +50213,7 @@ Part number: A404-20BLK-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Black finish
@@ -50260,7 +50260,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: red
 Rotors: Reuses stock rotors — not included
@@ -50271,7 +50271,7 @@ Part number: A404-20R
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Red finish
@@ -50318,7 +50318,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: red
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50329,7 +50329,7 @@ Part number: A404-20R-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Red finish
@@ -50376,7 +50376,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: Reuses stock rotors — not included
@@ -50387,7 +50387,7 @@ Part number: A404-21
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Clear anodised finish
@@ -50434,7 +50434,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50445,7 +50445,7 @@ Part number: A404-21-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Clear anodised finish
@@ -50492,7 +50492,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: Reuses stock rotors — not included
@@ -50503,7 +50503,7 @@ Part number: A404-21BLK
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Black finish
@@ -50550,7 +50550,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50561,7 +50561,7 @@ Part number: A404-21BLK-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Black finish
@@ -50608,7 +50608,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: Reuses stock rotors — not included
@@ -50619,7 +50619,7 @@ Part number: A404-21R
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Red finish
@@ -50666,7 +50666,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50677,7 +50677,7 @@ Part number: A404-21R-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Red finish
@@ -50724,7 +50724,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: clear anodised
 Rotors: Reuses stock rotors — not included
@@ -50735,7 +50735,7 @@ Part number: A404-22
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Clear anodised finish
@@ -50782,7 +50782,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: clear anodised
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50793,7 +50793,7 @@ Part number: A404-22-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Clear anodised finish
@@ -50840,7 +50840,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: black
 Rotors: Reuses stock rotors — not included
@@ -50851,7 +50851,7 @@ Part number: A404-22BLK
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Black finish
@@ -50898,7 +50898,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: black
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -50909,7 +50909,7 @@ Part number: A404-22BLK-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Black finish
@@ -50956,7 +50956,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: red
 Rotors: Reuses stock rotors — not included
@@ -50967,7 +50967,7 @@ Part number: A404-22R
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Red finish
@@ -51014,7 +51014,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Front axle
 Finish: red
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -51025,7 +51025,7 @@ Part number: A404-22R-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Red finish
@@ -51072,7 +51072,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: Reuses stock rotors — not included
@@ -51083,7 +51083,7 @@ Part number: A404-23
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Clear anodised finish
@@ -51130,7 +51130,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -51141,7 +51141,7 @@ Part number: A404-23-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Clear anodised finish
@@ -51188,7 +51188,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: Reuses stock rotors — not included
@@ -51199,7 +51199,7 @@ Part number: A404-23BLK
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Black finish
@@ -51246,7 +51246,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -51257,7 +51257,7 @@ Part number: A404-23BLK-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Black finish
@@ -51304,7 +51304,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: Reuses stock rotors — not included
@@ -51315,7 +51315,7 @@ Part number: A404-23R
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Red finish
@@ -51362,7 +51362,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -51373,7 +51373,7 @@ Part number: A404-23R-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Red finish
@@ -51420,7 +51420,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: Reuses stock rotors — not included
@@ -51431,7 +51431,7 @@ Part number: A404-11
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Clear anodised finish
@@ -51478,7 +51478,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: clear anodised
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -51489,7 +51489,7 @@ Part number: A404-11-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Clear anodised finish
@@ -51536,7 +51536,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: Reuses stock rotors — not included
@@ -51547,7 +51547,7 @@ Part number: A404-11BLK
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Black finish
@@ -51594,7 +51594,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: black
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -51605,7 +51605,7 @@ Part number: A404-11BLK-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Black finish
@@ -51652,7 +51652,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: Reuses stock rotors — not included
@@ -51663,7 +51663,7 @@ Part number: A404-11R
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 Reuses your stock rotors
 Red finish
@@ -51710,7 +51710,7 @@ Specifications
 
 Manufacturer: SSBC-USA
 Model: B8-Barbarian, 8-piston
-Material: T6061 aircraft-grade billet aluminium, machined in the USA
+Material: T6061 aircraft-grade billet aluminum, machined in the USA
 Position: Rear axle
 Finish: red
 Rotors: DS Performance — dimple-drilled, slotted, zinc plated, included
@@ -51721,7 +51721,7 @@ Part number: A404-11R-DS
 
 Highlights
 
-Eight-piston billet aluminium caliper
+Eight-piston billet aluminum caliper
 Works with stock hydraulics and ABS
 DS Performance rotors included
 Red finish
@@ -52108,7 +52108,7 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "D3BBL-03",
-    fitment: "2003–2011 Ram 2500 / 3500 4x4 Cummins with a 2.5 in to 3 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    fitment: "2003–2011 Ram 2500 / 3500 4x4 Cummins with a 2.5 in to 3 in lift. Complete front and rear set with center brackets; the outer axle-to-caliper hose is not included.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -52120,7 +52120,7 @@ Lift a truck and the factory brake lines become the limit on droop — the axle 
 
 Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
 
-This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+This is a complete set: front and rear lines with the center brackets. It does not include the outer axle-to-caliper hose.
 
 One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
 
@@ -52131,7 +52131,7 @@ Specifications
 Manufacturer: Carli Suspension
 Type: Extended stainless braided brake lines
 Lift height: 2.5 in to 3 in
-Included: Front and rear lines, centre brackets
+Included: Front and rear lines, center brackets
 Not included: Outer axle-to-caliper hose
 Years: 2003–2011
 Part number: D3BBL-03
@@ -52162,7 +52162,7 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "D3BBL-12",
-    fitment: "2012–2013 Ram 2500 / 3500 4x4 Cummins with a 2.5 in to 3 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    fitment: "2012–2013 Ram 2500 / 3500 4x4 Cummins with a 2.5 in to 3 in lift. Complete front and rear set with center brackets; the outer axle-to-caliper hose is not included.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -52174,7 +52174,7 @@ Lift a truck and the factory brake lines become the limit on droop — the axle 
 
 Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
 
-This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+This is a complete set: front and rear lines with the center brackets. It does not include the outer axle-to-caliper hose.
 
 One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
 
@@ -52185,7 +52185,7 @@ Specifications
 Manufacturer: Carli Suspension
 Type: Extended stainless braided brake lines
 Lift height: 2.5 in to 3 in
-Included: Front and rear lines, centre brackets
+Included: Front and rear lines, center brackets
 Not included: Outer axle-to-caliper hose
 Years: 2012–2013
 Part number: D3BBL-12
@@ -52216,7 +52216,7 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "D6BBL-03",
-    fitment: "2003–2011 Ram 2500 / 3500 4x4 Cummins with a 6 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    fitment: "2003–2011 Ram 2500 / 3500 4x4 Cummins with a 6 in lift. Complete front and rear set with center brackets; the outer axle-to-caliper hose is not included.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -52228,7 +52228,7 @@ Lift a truck and the factory brake lines become the limit on droop — the axle 
 
 Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
 
-This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+This is a complete set: front and rear lines with the center brackets. It does not include the outer axle-to-caliper hose.
 
 One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
 
@@ -52239,7 +52239,7 @@ Specifications
 Manufacturer: Carli Suspension
 Type: Extended stainless braided brake lines
 Lift height: 6 in
-Included: Front and rear lines, centre brackets
+Included: Front and rear lines, center brackets
 Not included: Outer axle-to-caliper hose
 Years: 2003–2011
 Part number: D6BBL-03
@@ -52270,7 +52270,7 @@ Ships within the United States only`,
     warranty: "Manufacturer Warranty",
     location: "our supplier network",
     partNumber: "D6BBL-12",
-    fitment: "2012–2013 Ram 2500 / 3500 4x4 Cummins with a 6 in lift. Complete front and rear set with centre brackets; the outer axle-to-caliper hose is not included.",
+    fitment: "2012–2013 Ram 2500 / 3500 4x4 Cummins with a 6 in lift. Complete front and rear set with center brackets; the outer axle-to-caliper hose is not included.",
     freightNotes: "Ships as a parcel.",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -52282,7 +52282,7 @@ Lift a truck and the factory brake lines become the limit on droop — the axle 
 
 Braided stainless has almost no volumetric expansion, so the pedal firms up as a side effect: pressure goes to the caliper instead of into swelling rubber.
 
-This is a complete set: front and rear lines with the centre brackets. It does not include the outer axle-to-caliper hose.
+This is a complete set: front and rear lines with the center brackets. It does not include the outer axle-to-caliper hose.
 
 One note from Carli: if a line will not thread into the factory brake line tube nut, check that the nut has not warped under the factory torque spec before forcing it.
 
@@ -52293,7 +52293,7 @@ Specifications
 Manufacturer: Carli Suspension
 Type: Extended stainless braided brake lines
 Lift height: 6 in
-Included: Front and rear lines, centre brackets
+Included: Front and rear lines, center brackets
 Not included: Outer axle-to-caliper hose
 Years: 2012–2013
 Part number: D6BBL-12
@@ -52488,7 +52488,7 @@ The 7.3L Power Stroke has more in it than the factory turbo will feed, and airfl
 
 BD's Turbo Thruster uses their 66 mm Ballistic Billet compressor wheel for about 30% more airflow, against a 0.84 A/R turbine housing chosen for quick response rather than top-end only.
 
-The centre section runs a BD-designed sintered brass 360-degree thrust bearing, which is the part that decides service life on a turbo asked to work harder than standard.
+The center section runs a BD-designed sintered brass 360-degree thrust bearing, which is the part that decides service life on a turbo asked to work harder than standard.
 
 It is a direct bolt-in replacement for the stock turbo.
 
@@ -53091,11 +53091,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/transmission/ats-transmission-pan-plus-5-quarts-3019004248/1.webp",
     images: ["/product-media/transmission/ats-transmission-pan-plus-5-quarts-3019004248/1.webp"],
-    description: `ATS Diesel finned aluminium Allison transmission pan holding five quarts more than stock, with magnetic drain plug and temperature sensor boss.
+    description: `ATS Diesel finned aluminum Allison transmission pan holding five quarts more than stock, with magnetic drain plug and temperature sensor boss.
 
 Keeping an Allison cool is the single most effective thing you can do to make it last. Heat is what breaks down the fluid, and degraded fluid is what burns clutches.
 
-This ATS pan is finned aluminium and holds an extra five quarts over the factory pan — more fluid, more surface area, and more thermal mass to absorb a heavy pull.
+This ATS pan is finned aluminum and holds an extra five quarts over the factory pan — more fluid, more surface area, and more thermal mass to absorb a heavy pull.
 
 It is a direct replacement for the factory pan, with a magnetic drain plug and a pre-tapped boss for a transmission temperature sensor probe.
 
@@ -53103,7 +53103,7 @@ Specifications
 
 Manufacturer: ATS Diesel Performance
 Transmission: Allison
-Material: Finned aluminium
+Material: Finned aluminum
 Extra capacity: 5 quarts over stock
 Drain plug: Magnetic
 Sensor: Pre-tapped for a temperature probe
@@ -53113,7 +53113,7 @@ Part number: 3019004248
 Highlights
 
 Five extra quarts of fluid
-Finned aluminium for heat dissipation
+Finned aluminum for heat dissipation
 Magnetic drain plug
 Pre-tapped for a temperature sensor
 
@@ -53627,7 +53627,7 @@ Ships within the United States only`,
 
 Dual disc clutches usually make you choose: holding power or a pedal you can live with in traffic. The Street Dual Disc is South Bend's attempt to avoid that trade.
 
-It uses 12 ceramic buttons per side facing the centre plate, and organic buttons facing the pressure plate and flywheel. The ceramic raises holding power and the temperature the intermediate plate will take; the organic keeps engagement smooth.
+It uses 12 ceramic buttons per side facing the center plate, and organic buttons facing the pressure plate and flywheel. The ceramic raises holding power and the temperature the intermediate plate will take; the organic keeps engagement smooth.
 
 It is rated to 650 RWHP and it will still tow — which is the point for an owner who daily drives the truck, works it, and occasionally plays with horsepower.
 
@@ -53636,7 +53636,7 @@ Specifications
 Manufacturer: South Bend Clutch
 Model: Street Dual Disc
 Rating: 650 RWHP
-Friction: 12 ceramic buttons per side to the centre plate, organic to pressure plate and flywheel
+Friction: 12 ceramic buttons per side to the center plate, organic to pressure plate and flywheel
 Gearbox: NV5600 six-speed
 Application: 2000–2005 Dodge Ram 5.9L Cummins
 Part number: SDD3250-6
@@ -53718,7 +53718,7 @@ Ships within the United States only`,
     location: "our supplier network",
     partNumber: "VK688-100",
     fitment: "2003–2007 Ford 6.0L Power Stroke.",
-    included: ["Billet aluminium oil transfer block","Braided hoses","Factory-style oil cooler","Mounting hardware"],
+    included: ["Billet aluminum oil transfer block","Braided hoses","Factory-style oil cooler","Mounting hardware"],
     freightNotes: "Ships by freight (oversized).",
     warrantyTerms: "Subject to the DrivoraParts Warranty Policy and the manufacturer's own warranty terms. Excludes installation labour and damage from incorrect fitment.",
     referencePriceVerified: true,
@@ -53728,7 +53728,7 @@ Ships within the United States only`,
 
 The 6.0L Power Stroke's oil cooler sits in the engine valley, where it is surrounded by heat, and it plugs with soot over time. A restricted cooler drives oil temperature up and starves the EGR cooler downstream of it — and getting to the thing means removing the intake manifold and the turbo.
 
-This kit moves the problem rather than replacing it in place. A billet aluminium oil transfer block takes the oil out of the valley through braided hoses to a factory-style cooler mounted behind the passenger battery.
+This kit moves the problem rather than replacing it in place. A billet aluminum oil transfer block takes the oil out of the valley through braided hoses to a factory-style cooler mounted behind the passenger battery.
 
 Out of the valley means cooler oil and far easier servicing — the next time the cooler needs attention, the intake manifold stays where it is.
 
@@ -53736,7 +53736,7 @@ Specifications
 
 Manufacturer: BulletProof Diesel
 Kit: OEM-style oil cooler remote mount
-Transfer block: Billet aluminium
+Transfer block: Billet aluminum
 Lines: Braided hoses
 Cooler location: Behind the passenger battery
 Engine: 6.0L Power Stroke
@@ -53745,7 +53745,7 @@ Part number: VK688-100
 Highlights
 
 Relocates the cooler out of the engine valley
-Billet aluminium transfer block
+Billet aluminum transfer block
 Serviceable without pulling the intake
 Cooler oil temperatures
 
@@ -53925,11 +53925,11 @@ Ships within the United States only`,
     referencePriceVerified: true,
     thumbnail: "/product-media/engine/afe-bladerunner-replacement-oil-cooler-46-80001/1.webp",
     images: ["/product-media/engine/afe-bladerunner-replacement-oil-cooler-46-80001/1.webp"],
-    description: `aFe BladeRunner brand-new aluminium replacement engine oil cooler with all hardware and gaskets for the 2003–2007 Ford 6.0L Power Stroke.
+    description: `aFe BladeRunner brand-new aluminum replacement engine oil cooler with all hardware and gaskets for the 2003–2007 Ford 6.0L Power Stroke.
 
 The 6.0L Power Stroke's oil cooler sits in the engine valley, where it is surrounded by heat, and it plugs with soot over time. A restricted cooler drives oil temperature up and starves the EGR cooler downstream of it — and getting to the thing means removing the intake manifold and the turbo.
 
-This is a brand-new unit rather than a remanufactured one, built in new aluminium, and it comes with all the hardware and gaskets needed to remove the old cooler and fit this one.
+This is a brand-new unit rather than a remanufactured one, built in new aluminum, and it comes with all the hardware and gaskets needed to remove the old cooler and fit this one.
 
 Having the gaskets in the box matters on this job: it is not one you want to stop halfway through.
 
@@ -53938,7 +53938,7 @@ Specifications
 Manufacturer: aFe Power
 Series: BladeRunner
 Condition: 100% new, not remanufactured
-Material: New aluminium
+Material: New aluminum
 Included: All necessary hardware and gaskets
 Engine: 6.0L Power Stroke
 Part number: 46-80001
@@ -53947,7 +53947,7 @@ Highlights
 
 Brand new, not remanufactured
 All hardware and gaskets included
-New aluminium construction
+New aluminum construction
 aFe BladeRunner
 
 Warranty
@@ -65316,9 +65316,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-lift-kit-am1899-00/1.webp"],
     description: `1" Body Lift Kit for 1966-1977 Ford Bronco, part AM1899-00.
 
-A body lift raises the body off the frame rather than raising the suspension. It buys tyre clearance without changing spring rates, driveline angles or the way the vehicle handles.
+A body lift raises the body off the frame rather than raising the suspension. It buys tire clearance without changing spring rates, driveline angles or the way the vehicle handles.
 
-On an early Bronco it is the straightforward route to fitting a larger tyre, and it leaves the suspension exactly as it was.
+On an early Bronco it is the straightforward route to fitting a larger tire, and it leaves the suspension exactly as it was.
 
 This is a bolt-in kit — the pucks and the longer hardware needed to do the job properly.
 
@@ -65333,7 +65333,7 @@ Part number: AM1899-00
 
 Highlights
 
-Tyre clearance without touching the suspension
+Tire clearance without touching the suspension
 Driveline angles unchanged
 Bolt-in kit with the hardware
 
@@ -65364,9 +65364,9 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-lift-kit-am1900-00/1.webp"],
     description: `2" Body Lift Kit for 1966-1977 Ford Bronco, part AM1900-00.
 
-A body lift raises the body off the frame rather than raising the suspension. It buys tyre clearance without changing spring rates, driveline angles or the way the vehicle handles.
+A body lift raises the body off the frame rather than raising the suspension. It buys tire clearance without changing spring rates, driveline angles or the way the vehicle handles.
 
-On an early Bronco it is the straightforward route to fitting a larger tyre, and it leaves the suspension exactly as it was.
+On an early Bronco it is the straightforward route to fitting a larger tire, and it leaves the suspension exactly as it was.
 
 This is a bolt-in kit — the pucks and the longer hardware needed to do the job properly.
 
@@ -65381,7 +65381,7 @@ Part number: AM1900-00
 
 Highlights
 
-Tyre clearance without touching the suspension
+Tire clearance without touching the suspension
 Driveline angles unchanged
 Bolt-in kit with the hardware
 
@@ -65412,7 +65412,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105090/1.webp"],
     description: `Radius Arm Drop, Adjustable Axle Position - 2005-2022 Super Duty 2.5" Lift, part 105090.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65508,7 +65508,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-101362/1.webp"],
     description: `2011-2016 Super Duty Bumper Spacers - 3/4", part 101362.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65556,7 +65556,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102160/1.webp"],
     description: `Traction Bar Kit for 1994-1997 Ford F250/F350, short gusset, part 102160.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65606,7 +65606,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102161/1.webp"],
     description: `Traction Bar Kit for 1994-1997 Ford F250/F350, long gusset, part 102161.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65704,7 +65704,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102158/1.webp"],
     description: `Traction Bar Kit for 2020-2026 Silverado/Sierra 2500/3500 & 2011-2016 Ford F350/F450 DRW, short gusset, part 102158.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65754,7 +65754,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102159/1.webp"],
     description: `Traction Bar Kit for 2020-2026 Silverado/Sierra 2500/3500 & 2011-2016 Ford F350/F450 DRW, long gusset, part 102159.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65804,7 +65804,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102156/1.webp"],
     description: `Traction Bar Kit for 2001-2019 Silverado and Sierra 2500/3500 & 1994-2002 Ram 2500/3500, short gusset, part 102156.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65854,7 +65854,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102157/1.webp"],
     description: `Traction Bar Kit for 2001-2019 Silverado and Sierra 2500/3500 & 1994-2002 Ram 2500/3500, long gusset, part 102157.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65904,7 +65904,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102154/1.webp"],
     description: `Traction Bar Kit for 2017-2026 F-350/F-450 DRW, short gusset, part 102154.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -65954,7 +65954,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102155/1.webp"],
     description: `Traction Bar Kit for 2017-2026 F-350/F-450 DRW, long gusset, part 102155.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66004,7 +66004,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102152/1.webp"],
     description: `Traction Bar Kit for 2011-2026 F-250/F-350 SRW, short gusset, part 102152.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66054,7 +66054,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102153/1.webp"],
     description: `Traction Bar Kit for 2011-2026 F-250/F-350 SRW, long gusset, part 102153.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66104,7 +66104,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102150/1.webp"],
     description: `Traction Bar Kit for 2003-2013 Ram 2500/3500 & 1999-2007 Ford F-250/F-350/Excursion, short gusset, part 102150.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66154,7 +66154,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102151/1.webp"],
     description: `Traction Bar Kit for 2003-2013 Ram 2500/3500 & 1999-2007 Ford F-250/F-350/Excursion, long gusset, part 102151.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66300,7 +66300,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105077/1.webp"],
     description: `Track Rod Relocation Bracket, 2011+ F-450 4x4, 2.5-5.5" Lift, part 105077.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66444,7 +66444,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105121/1.webp"],
     description: `2023+ Super Duty Rear Sway Bar Relocation Kit, For 2" - 4.5" of Lift, part 105121.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66540,7 +66540,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105518/1.webp"],
     description: `3.5-5.5" Lift Kit For 2017-2022 F450, part 105518.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66588,7 +66588,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105515/1.webp"],
     description: `2.5" Fully Loaded Kit For 2017-2022 F450, part 105515.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66636,7 +66636,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105512/1.webp"],
     description: `2.5" Standard Kit For 2017-2022 F450, part 105512.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66684,7 +66684,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-ki1225-00/1.webp"],
     description: `2011-2016 Ford F-250/F-350 OEM Drag Link, part KI1225-00.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -66876,7 +66876,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105065/1.webp"],
     description: `Adjustable Track Bar 2005-2016 F250/F350 and 2005+ F450, part 105065.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67164,7 +67164,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105068/1.webp"],
     description: `Adjustable Track Rod 2017+ F250/F350, part 105068.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67212,7 +67212,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105112/1.webp"],
     description: `Aluminum Beam Arms (2023+ Super Duty), part 105112.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67260,7 +67260,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-101433/1.webp"],
     description: `Aluminum Beam Arms (2005-2022 Super Duty), part 101433.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67308,7 +67308,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105615/1.webp"],
     description: `2.5" Fully Loaded Kit For 2011-2016 F450, part 105615.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67356,7 +67356,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105612/1.webp"],
     description: `2.5" Standard Kit for 2011-2016 F450, part 105612.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67404,7 +67404,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105605/1.webp"],
     description: `2.5" Fully Loaded Kit For 2011-2016 F250/F350, part 105605.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67452,7 +67452,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105602/1.webp"],
     description: `2.5" Standard Kit For 2011-2016 F250/F350, part 105602.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67500,7 +67500,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-101360/1.webp"],
     description: `2017+ Super Duty Bumper Spacers - 3/4", part 101360.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67548,7 +67548,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105101/1.webp"],
     description: `Steady Track Steering Stabilizer Kit, 2-6" Lift, 2011+ F250 & F350, part 105101.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67596,7 +67596,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-101359/1.webp"],
     description: `2017+ Super Duty Bumper Spacers - 1/2", part 101359.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67644,7 +67644,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105020/1.webp"],
     description: `Adjustable Coil Levelers 0-2.5", 2005+ Ford Super Duty, part 105020.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67692,7 +67692,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105041/1.webp"],
     description: `Radius Arm Drop Kit - 2017-2022 Super Duty 4.5" Lift, part 105041.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67740,7 +67740,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105070/1.webp"],
     description: `Radius Arm Drop - 2005-2022 Super Duty 2.5" Lift, part 105070.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67788,7 +67788,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105131/1.webp"],
     description: `Radius Arm Drop - 2023+ Super Duty 4.5" Lift, part 105131.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67836,7 +67836,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105129/1.webp"],
     description: `Radius Arm Drop - 2023+ Super Duty 2.5" Lift, part 105129.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67884,7 +67884,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105084/1.webp"],
     description: `Track Rod Relocation Bracket, 2011+ Ford Super Duty 4x4, 1.5-2.5" Lift, part 105084.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67932,7 +67932,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105017/1.webp"],
     description: `Track Rod Relocation Bracket, 2011+ Ford Super Duty 4x4, 2.5-5.5" Lift, part 105017.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -67980,7 +67980,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102102/1.webp"],
     description: `Torxz Traction Bar Kit, 2017+ F350/F450 DRW (Dual Rear Wheel), part 102102.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68076,7 +68076,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105708/1.webp"],
     description: `3.5-5.5" Lift Kit For 2023+ F450, part 105708.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68124,7 +68124,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105502/1.webp"],
     description: `2.5" Standard Kit For 2017-2022 F250/F350, part 105502.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68172,7 +68172,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105505/1.webp"],
     description: `2.5" Fully Loaded Kit For 2017-2022 F250/F350, part 105505.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68220,7 +68220,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105508/1.webp"],
     description: `3.5-5.5" Lift Kit For 2017-2022 F250/F350, part 105508.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68316,7 +68316,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-102101/1.webp"],
     description: `Torxz Traction Bar Kit, 2017+ F250/F350 SRW (Single Rear Wheel), part 102101.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68364,7 +68364,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105118/1.webp"],
     description: `Weight Scale Relocation Kit, For OE & S&B Radius Arms, 2023+ Superduty, part 105118.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68460,7 +68460,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105705/1.webp"],
     description: `2.5" Fully Loaded Kit For 2023+ F450, part 105705.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68508,7 +68508,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105702/1.webp"],
     description: `2.5" Standard Kit For 2023+ F450, part 105702.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68556,7 +68556,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105302/1.webp"],
     description: `2.5" Standard Kit For 2023+ F250/F350, part 105302.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -68652,7 +68652,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105308/1.webp"],
     description: `3.5-5.5" Lift Kit For 2023+ F250/F350, part 105308.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -69472,7 +69472,7 @@ Ships within the United States only`,
     images: ["/product-media/suspension/s-and-b-suspension-105305/1.webp"],
     description: `2.5" Fully Loaded Kit For 2023+ F250/F350, part 105305.
 
-Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off centre, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
+Lift a heavy-duty truck and the geometry the factory set up goes with it. Axles move off center, control arm angles change, and parts that were designed to work in one range of motion get asked to work in another.
 
 S&B's suspension hardware is aimed at putting that geometry back where it belongs rather than at adding more height — which is the part of a lift that decides whether the truck still drives properly afterwards.
 
@@ -74089,7 +74089,7 @@ Fox dampers come out of off-road racing, and the Performance Series brings that 
 
 Package Contains 2 coilovers 2 Rear Shocks. Front pair of Strut & Spring assemblies with two rear shocks. Part number 985-24-071 and 983-02-087.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74145,7 +74145,7 @@ Fox dampers come out of off-road racing, and the Performance Series brings that 
 
 Package Contains 2 coilovers. Front pair of Strut & Spring assemblies. Part number 983-02-087.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74205,7 +74205,7 @@ Package Contains 4 Shocks. You'll be getting two front and two rear shock absorb
 
 One fitment note from the manufacturer: Fits vehicles with torsion bar front suspension ONLY.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74267,7 +74267,7 @@ Package Contains 4 Shocks and 4 Shock Boots. You'll be getting two front and two
 
 One fitment note from the manufacturer: Fits vehicles with torsion bar front suspension ONLY.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74326,7 +74326,7 @@ Package Contains 4 Shocks. You'll be getting two front and two rear shock absorb
 
 One fitment note from the manufacturer: For coil truck applications only
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74386,7 +74386,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Shocks. Front pair of two shock absorbers. Part number 24-196260.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74445,7 +74445,7 @@ ICON build vehicle-specific damping rather than one universal valving curve, so 
 
 This listing covers 614557.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74491,7 +74491,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Shocks. Front pair of two shock absorbers. Part number 24-233552.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74540,7 +74540,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 Package Contains 1 Set of Strut & Shock. You'll be getting 2 Front Struts and 2 Rear Shocks. The front and rear carry different part numbers — E60-35-048-01-01 (rear) / E60-35-048-01-10 (front).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74589,7 +74589,7 @@ ICON build vehicle-specific damping rather than one universal valving curve, so 
 
 This listing covers 53009.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74638,7 +74638,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 24-238878 (front) / 24-238885 (rear).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74697,7 +74697,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Shocks. Front pair of two shock absorbers. Part number 25-275100.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74747,7 +74747,7 @@ Fox dampers come out of off-road racing, and the Performance Series brings that 
 
 Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 985-24-066 (front) / 985-24-124 (rear).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74804,7 +74804,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 4 Shocks. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — 24-027397 (front) / 24-027403 (rear).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74859,11 +74859,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-25001323a/1.webp"],
     description: `King Shocks 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair for the 2010–2020 Nissan Patrol Y62 4WD, package contains 2 strut & spring assemblies.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 2 Strut & Spring Assemblies. Pair of two coilovers. Part number 25001-323A.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74914,7 +74914,7 @@ SuperSprings make load-carrying add-ons: self-adjusting helper springs that enga
 
 This listing covers CSS-1145.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -74959,11 +74959,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-2-0-performance-steering-stabilizer-20c001202/1.webp"],
     description: `King Shocks 2.0 Performance Steering Stabilizer for the 1997–2017 Nissan Patrol Y61 4WD, package contains 1 steering stabilizer.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 1 Steering Stabilizer. You'll be getting one steering damper. Part number 20C001-202.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75011,13 +75011,13 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-3-0-performance-w-adjustable-remote-reservoir-shocks-rear-pair-33001213a/1.webp"],
     description: `King Shocks 3.0 Performance w/ Adjustable Remote Reservoir Shocks Rear Pair for the 1997–2023 Nissan Patrol 4WD, package contains 2 shocks.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 33001-213A.
 
 One fitment note from the manufacturer: Comes with Finned Reservoir and Brackets.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75065,13 +75065,13 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-3-0-performance-w-remote-reservoir-shocks-rear-pair-33001213/1.webp"],
     description: `King Shocks 3.0 Performance w/ Remote Reservoir Shocks Rear Pair for the 1997–2023 Nissan Patrol 4WD, package contains 2 shocks.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 33001-213.
 
 One fitment note from the manufacturer: Comes with Finned Reservoir and Brackets.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75123,7 +75123,7 @@ Skyjacker have been building truck lift hardware since the 1970s, and their shoc
 
 Package Contains 4 Shocks and 4 Shock Boots. You'll be getting two front and two rear shock absorbers. The front and rear carry different part numbers — B8558 (front) / B8517 (rear).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75181,7 +75181,7 @@ Package Contains Pro-Spacer Pair. You'll get two wheel spacers. Part number S90-
 
 One fitment note from the manufacturer: For vehicles with Bolt Pattern 5x114.3.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75225,11 +75225,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-2-5-performance-adjustable-shocks-rear-pair-25001318a/1.webp"],
     description: `King Shocks 2.5 Performance Adjustable Shocks Rear Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 shocks.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 25001-318A.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75277,11 +75277,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-2-5-performance-shocks-rear-pair-25001318/1.webp"],
     description: `King Shocks 2.5 Performance Shocks Rear Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 shocks.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 25001-318.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75329,11 +75329,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-2-5-performance-coilovers-front-pair-25001317/1.webp"],
     description: `King Shocks 2.5 Performance Coilovers Front Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 coilovers.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 2 coilovers. Pair of two coilover assemblies. Part number 25001-317.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75381,11 +75381,11 @@ Ships within the United States only`,
     images: ["/product-media/suspension/king-shocks-2-5-performance-coilovers-w-adjustable-remote-reservoir-front-pair-25001317a/1.webp"],
     description: `King Shocks 2.5 Performance Coilovers w/ Adjustable Remote Reservoir Front Pair for the 2018–2021 Mitsubishi Triton 4WD, package contains 2 strut & spring assemblies.
 
-King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminium with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
+King build race-derived dampers that are fully rebuildable and revalvable, machined in the USA from aluminum with heat-treated pistons and hard-surfaced shafts. A reservoir lets the shock carry more oil and gas at lower pressure, which is the combination that resists fade on a long rough section.
 
 Package Contains 2 Strut & Spring Assemblies. Pair of two coilovers. Part number 25001-317A.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75436,7 +75436,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 4 Shocks and 4 Springs. Full set of four shocks and four matched coil springs. Part number 46-187901.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75488,7 +75488,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Struts and 2 Shocks. Set of two front struts and two rear shocks. The front and rear carry different part numbers — 35-158714 (front) / 33-158723 (rear).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75545,7 +75545,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 20-254353.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75602,7 +75602,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Struts. Front pair of two struts. Part number 23-254343.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75659,7 +75659,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 4 Shocks and 4 Springs. Full set of four shocks and four matched coil springs. Part number 46-184443.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75711,7 +75711,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 4 Shocks and 4 Springs. Full set of four shocks and four matched coil springs. Part number 46-184399.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75766,7 +75766,7 @@ This listing covers JBS-101-01.
 
 One fitment note from the manufacturer: Excl. Raptor.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75817,7 +75817,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 This listing covers E80-35-034-01-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75870,7 +75870,7 @@ This listing covers E80-35-033-02-22.
 
 One fitment note from the manufacturer: Includes Pro-Truck Lift Springs and Pro-Truck Sport Shocks.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75921,7 +75921,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 Package Contains Complete System. You'll get shocks all around and front springs. Part number E80-27-006-03-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -75973,7 +75973,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 This listing covers E80-27-006-01-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76024,7 +76024,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 This listing covers E80-27-005-03-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76074,7 +76074,7 @@ ICON build vehicle-specific damping rather than one universal valving curve, so 
 
 This listing covers 211205.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76123,7 +76123,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 This listing covers E80-27-006-02-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76173,7 +76173,7 @@ ICON build vehicle-specific damping rather than one universal valving curve, so 
 
 This listing covers 211200.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76221,7 +76221,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 This listing covers E80-23-006-02-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76270,7 +76270,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 This listing covers E80-23-032-01-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76320,7 +76320,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 Package Contains Pro-Truck Lift Blocks. You'll get a pair of 1.0" rear lift blocks, u-bolts, and requisite installation hardware. Part number LB81-23-032-01-02.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76367,7 +76367,7 @@ ICON build vehicle-specific damping rather than one universal valving curve, so 
 
 This listing covers 51001.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76416,7 +76416,7 @@ Eibach is a spring maker first. Their truck systems are built around spring rate
 
 This listing covers E80-23-032-02-22.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76465,7 +76465,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Struts and 2 Shocks. Set of two front struts and two rear shocks. The front and rear carry different part numbers — 33-253190 (rear) / 24-336970 (front).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76525,7 +76525,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Shocks. Rear pair of two shock absorbers. Part number 24-239455.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76584,7 +76584,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Struts and 2 Shocks. Set of two front struts and two rear shocks. The front and rear carry different part numbers — 24-293471 (rear) / 24-337052 (front).
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76636,7 +76636,7 @@ Package Contains 4 Shocks. You'll be getting two front and two rear shock absorb
 
 One fitment note from the manufacturer: Excludes HD models. Fits vehicles with torsion Key Lift ONLY.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76695,7 +76695,7 @@ Bilstein builds monotube gas dampers: one tube carries the oil, and a floating p
 
 Package Contains 2 Struts. Front pair of two struts. Part number 24-337052.
 
-Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tyre clearance if the wheels or tyres are not the factory size.
+Changing ride height or damping alters how the vehicle sits and steers. Have the alignment checked after fitting, and check tire clearance if the wheels or tires are not the factory size.
 
 Specifications
 
@@ -76788,7 +76788,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ram-2500-5500-6-4l-hemi-2014-2024-1041456/1.webp"],
     description: `Exhaust Manifold Driver Side RAM 2500–5500 6.4L HEMI 2014–2024, BD part 1041456.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -76801,7 +76801,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2014–2021 Dodge / Ram 2500; and 2014–2020 Dodge / Ram 3500, 4500 and 5500 (6.4L)
-BD catalogue range: 2014–2024
+BD catalog range: 2014–2024
 Part number: 1041456
 
 Highlights
@@ -76837,7 +76837,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-2500-5500-6-4l-hemi-2014-2024-1041454/1.webp"],
     description: `Exhaust Manifold Kit RAM 2500–5500 6.4L HEMI 2014–2024, BD part 1041454.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -76850,7 +76850,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2014–2021 Dodge / Ram 2500; and 2014–2020 Dodge / Ram 3500, 4500 and 5500 (6.4L)
-BD catalogue range: 2014–2024
+BD catalog range: 2014–2024
 Part number: 1041454
 
 Highlights
@@ -77078,7 +77078,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019--1046070/1.webp"],
     description: `Exhaust Manifold Kit RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024, BD part 1046070.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -77126,7 +77126,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-ram-3500-4500-5500-cab-chassis-6-7l-cummins-2019-2024-1045970/1.webp"],
     description: `Exhaust Manifold RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024, BD part 1045970.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -77222,7 +77222,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-3-5l-ecoboost-2011-2016-transit-2015-2-1043001/1.webp"],
     description: `Exhaust Manifold Kit Ford F-150 3.5L EcoBoost 2011–2016 / Transit 2015–2024, BD part 1043001.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -77235,7 +77235,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2011–2016 Ford F-150; 2015–2017 Ford Expedition and Transit 350; 2015–2016 Ford Lobo; 2015–2018 Ford Transit 150, Transit 250 and Transit 350 HD; and 2015–2017 Lincoln Navigator (3.5L)
-BD catalogue range: 2011–2024
+BD catalog range: 2011–2024
 Part number: 1043001
 
 Highlights
@@ -77322,7 +77322,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -77381,7 +77381,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Throttle Control
 Application: 1994–1997 and 1999–2003 Dodge / Ram 2500 and 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L, 8.0L)
-BD catalogue range: 1994–2004
+BD catalog range: 1994–2004
 Part number: 1300030
 
 Highlights
@@ -77419,7 +77419,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -77430,7 +77430,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 1982–1984 Dodge / Ram D150 and D250; and 1982–1983 Dodge / Ram D350, W150, W250 and W350 (3.7L, 5.2L, 5.9L)
-BD catalogue range: 1981–2002
+BD catalog range: 1981–2002
 Part number: 1061835
 
 Highlights
@@ -77469,7 +77469,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -77518,7 +77518,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -77529,7 +77529,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2017–2020 Ford F-150; 2018–2020 Lincoln Navigator; 2019–2020 Ford Ranger; 2020 Ford Explorer; and 2021 Ford Bronco and Expedition (2.3L, 2.7L, 3.0L, 3.3L, 3.5L, 5.0L)
-BD catalogue range: 2017–2024
+BD catalog range: 2017–2024
 Part number: 1061718
 
 Highlights
@@ -77952,7 +77952,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-1046068/1.webp"],
     description: `Exhaust Manifold Kit Dodge/RAM 6.7L Cummins 3500/4500/5500 Cab-chassis 2013–2018, BD part 1046068.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78000,7 +78000,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-cummins-3500-4500-5500-cab-chassis-1046067/1.webp"],
     description: `Exhaust Manifold Kit Dodge/RAM 6.7L Cummins 3500/4500/5500 Cab & Chassis 2007.5-2012, BD part 1046067.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78048,7 +78048,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998-1046048/1.webp"],
     description: `Exhaust Manifold Kit Stock/t3 Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1046048.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78096,7 +78096,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-stock-t3-dodge-24-valve-5-9l-cummins-1998-5-2002-1046047/1.webp"],
     description: `Exhaust Manifold Kit Stock/t3 Dodge 24-valve 5.9L Cummins 1998.5-2002, BD part 1046047.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78144,7 +78144,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-20-degree-exhaust-manifold-t6-mount-dodge-5-9l-cummins-1998-5-2007-1045995t6/1.webp"],
     description: `20-degree Exhaust Manifold T6 Mount Dodge 5.9L Cummins 1998.5-2007, BD part 1045995-T6.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78192,7 +78192,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-20-degree-exhaust-manifold-t4-mount-dodge-5-9l-cummins-1998-5-2007-1045995t4/1.webp"],
     description: `20-degree Exhaust Manifold T4 Mount Dodge 5.9L Cummins 1998.5-2007, BD part 1045995-T4.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78240,7 +78240,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-t4-mount-dodge-6-7l-cummins-2007-5-2018-1045992t4/1.webp"],
     description: `Exhaust Manifold Gasket Set T4 Mount Dodge 6.7L Cummins 2007.5-2018, BD part 1045992-T4.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78288,7 +78288,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045965t4/1.webp"],
     description: `Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, pick-up / t4, BD part 1045965-T4.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78338,7 +78338,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045967/1.webp"],
     description: `Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, cab-chassis 2007–2012 / he351 (oem), BD part 1045967.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78388,7 +78388,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-dodge-ram-6-7l-cummins-2007-5-2018-2500-3500-pick-up--1045968/1.webp"],
     description: `Exhaust Manifold Dodge/RAM 6.7L Cummins 2007.5-2018 2500/3500 Pick-up & 3500/4500/5500 Cab-Chassis, cab-chassis 2013–2018 / he351 (oem), BD part 1045968.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78438,7 +78438,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-pulse-exhaust-manifold-stock-t3-dodge-12-valve-5-9l-cummins-1988-1998-1045948/1.webp"],
     description: `Pulse Exhaust Manifold Stock/t3 Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1045948.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78874,7 +78874,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-f-150-3-5l-ecoboost-2017-2020-1043063/1.webp"],
     description: `Exhaust Manifold Driver Side Ford F-150 3.5L EcoBoost 2017–2020, BD part 1043063.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78887,7 +78887,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2017 Ford F-150; 2018 Ford Expedition; and 2018 Lincoln Navigator (3.5L)
-BD catalogue range: 2017–2020
+BD catalog range: 2017–2020
 Part number: 1043063
 
 Highlights
@@ -78923,7 +78923,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-f-150-3-5l-ecoboost-2017-2020-1043062/1.webp"],
     description: `Exhaust Manifold Passenger Side Ford F-150 3.5L EcoBoost 2017–2020, BD part 1043062.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -78971,7 +78971,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-3-5l-ecoboost-2017-2020-1043061/1.webp"],
     description: `Exhaust Manifold Kit Ford F-150 3.5L EcoBoost 2017–2020, BD part 1043061.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79019,7 +79019,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-1043057/1.webp"],
     description: `Exhaust Manifold Driver Side Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022, BD part 1043057.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79067,7 +79067,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-f-150-f-250-f-350-boss-6-2l-gas-2-1043056/1.webp"],
     description: `Exhaust Manifold Passenger Side Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022, BD part 1043056.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79115,7 +79115,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-f-150-f-250-f-350-boss-6-2l-gas-2010-2022-1043055/1.webp"],
     description: `Exhaust Manifold Kit Ford F-150/F-250/F-350 Boss 6.2L Gas 2010–2022, BD part 1043055.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79163,7 +79163,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-3-5l-ecoboost-f-150-2011-2016-1043004/1.webp"],
     description: `Exhaust Manifold Passenger Side Ford 3.5L EcoBoost F-150 2011–2016, BD part 1043004.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79211,7 +79211,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-3-5l-ecoboost-f-150-2011-2016-1043003/1.webp"],
     description: `Exhaust Manifold Driver Side Ford 3.5L EcoBoost F-150 2011–2016, BD part 1043003.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79451,7 +79451,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-ford-6-0l-power-stroke-2003-2007-1041486/1.webp"],
     description: `Exhaust Manifold (passenger Side) Ford 6.0L Power Stroke 2003–2007, BD part 1041486.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79499,7 +79499,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-6-0l-power-stroke-2003-2007-1041485/1.webp"],
     description: `Exhaust Manifold Driver Side Ford 6.0L Power Stroke 2003–2007, BD part 1041485.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79547,7 +79547,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-6-4l-power-stroke-2008-2010-1041482/1.webp"],
     description: `Exhaust Manifold Kit Ford 6.4L Power Stroke 2008–2010, BD part 1041482.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79595,7 +79595,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-set-ford-6-0l-power-stroke-2003-2007-1041480/1.webp"],
     description: `Exhaust Manifold Set Ford 6.0L Power Stroke 2003–2007, BD part 1041480.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79643,7 +79643,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-1-1041469/1.webp"],
     description: `Exhaust Manifold Passenger Side Kit RAM/dodge/jeep 5.7L HEMI: 1500 Dt 19-24 / Durango 11-26 / Jeep Grand Cherokee & Wagoneer 11-23, BD part 1041469.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79691,7 +79691,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-dodge-jeep-5-7l-hemi-1500-dt-19-24-durango-11-1041467/1.webp"],
     description: `Exhaust Manifold Kit RAM/dodge/jeep 5.7L HEMI: 1500 Dt 19-24 / Durango 11-26 / Jeep Grand Cherokee & Wagoneer 11-23, BD part 1041467.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79739,7 +79739,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-kit-ram-5-7l-6-4l-hemi-1500-ds-09-24-2-1041464/1.webp"],
     description: `Exhaust Manifold Passenger Side Kit RAM 5.7L & 6.4L HEMI: 1500 Ds 09-24 / 2500–5500 09-26, BD part 1041464.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79787,7 +79787,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-5-7l-hemi-1500-ds-09-24-2500-3500-09-18-1041463/1.webp"],
     description: `Exhaust Manifold Kit RAM 5.7L HEMI: 1500 Ds 09-24 / 2500–3500 09-18, BD part 1041463.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79835,7 +79835,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-kit-chevy-silverado-gmc-sierra-2500hd--1041461/1.webp"],
     description: `Exhaust Manifold Passenger Side Kit Chevy Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016, BD part 1041461.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79848,7 +79848,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: EXHAUST MANIFOLDS
 Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L)
-BD catalogue range: 2001–2016
+BD catalog range: 2001–2016
 Part number: 1041461
 
 Highlights
@@ -79884,7 +79884,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-driver-side-kit-chevy-silverado-gmc-sierra-2500hd-350-1041460/1.webp"],
     description: `Exhaust Manifold Driver Side Kit Chevy Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016, BD part 1041460.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -79897,7 +79897,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L)
-BD catalogue range: 2001–2016
+BD catalog range: 2001–2016
 Part number: 1041460
 
 Highlights
@@ -79946,7 +79946,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Flex Plate
 Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1995–2000 Ford E-350 Econoline Club Wagon; 1995–1998 Ford E-350 Econoline; 1996–1999 Ford Econoline Super Duty; 1997 Ford F-250 HD; 1999–2000 Ford E-450 Econoline Super Duty; 1999 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2000 Ford Excursion (7.3L)
-BD catalogue range: 1994–2003
+BD catalog range: 1994–2003
 Part number: 1041241
 
 Highlights
@@ -80044,7 +80044,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: OEM Turbo
 Application: 1996–1997 Chevrolet C1500 Suburban, C2500, C2500 Suburban, C3500, K1500, K1500 Suburban and K2500 Suburban; 1996 Chevrolet C1500, K2500, K3500 and Tahoe; and 1996 GMC C1500, C1500 Suburban, C2500, C2500 Suburban, C3500, K1500, K1500 Suburban, K2500, K2500 Suburban, K3500 and Yukon (6.5L)
-BD catalogue range: 1996–2000
+BD catalog range: 1996–2000
 Part number: 1040500
 
 Highlights
@@ -80082,7 +80082,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -80093,7 +80093,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
-BD catalogue range: 2001–2010
+BD catalog range: 2001–2010
 Part number: 1032125
 
 Highlights
@@ -80240,7 +80240,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Valve Bodie
 Application: 2004–2005 Chevrolet Silverado 2500 HD; 2004–2005 GMC Sierra 2500 HD and Sierra 3500; and 2005 Chevrolet Silverado 3500 (6.6L)
-BD catalogue range: 2004–2006
+BD catalog range: 2004–2006
 Part number: 1030471
 
 Highlights
@@ -80634,7 +80634,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Brake
 Application: 2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007 GMC Sierra 3500 HD (6.6L)
-BD catalogue range: 2001–2010
+BD catalog range: 2001–2010
 Part number: 1024311
 
 Highlights
@@ -80683,7 +80683,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Brake
 Application: 2001–2008 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic; and 2007 GMC Sierra 3500 HD (6.6L)
-BD catalogue range: 2001–2010
+BD catalog range: 2001–2010
 Part number: 1024310
 
 Highlights
@@ -80721,7 +80721,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -80732,7 +80732,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2017–2020 Ford F-150; 2018–2020 Ford Expedition; 2018–2020 Lincoln Navigator; 2019–2020 Ford Ranger; 2020 Ford Explorer; and 2021 Ford Bronco (2.3L, 2.7L, 3.0L, 3.3L, 3.5L, 5.0L)
-BD catalogue range: 2017–2024
+BD catalog range: 2017–2024
 Part number: 1061717
 
 Highlights
@@ -80771,7 +80771,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -80782,7 +80782,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2013–2022 Dodge / Ram 3500 and 4500; and 2013–2021 Dodge / Ram 5500 (6.7L)
-BD catalogue range: 2013–2024
+BD catalog range: 2013–2024
 Part number: 1061535
 
 Highlights
@@ -80819,7 +80819,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-stock-mount-dodge-5-9l-cummins-2003-2007-1046087/1.webp"],
     description: `Exhaust Manifold Kit Stock Mount Dodge 5.9L Cummins 2003–2007, BD part 1046087.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -80867,7 +80867,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-dodge-ram-6-7l-2500-3500-pick-up-2007-5-2018-1046065/1.webp"],
     description: `Exhaust Manifold Kit Dodge/RAM 6.7L 2500/3500 Pick-up 2007.5-2018, BD part 1046065.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -80915,7 +80915,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-waste-gated-exhaust-manifold-w-t4-40-degree-mount-dodge-5-9l-cummins-1-1045947t4/1.webp"],
     description: `Waste Gated Exhaust Manifold w/T4 40-degree Mount Dodge 5.9L Cummins 1998.5-2007, BD part 1045947-T4.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -80965,7 +80965,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -80976,7 +80976,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
-BD catalogue range: 2001–2010
+BD catalog range: 2001–2010
 Part number: 1032150
 
 Highlights
@@ -81112,7 +81112,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-ram-3500-4500-5500-cab-chassis-1045998/1.webp"],
     description: `Exhaust Manifold Gasket Set Stock Mount RAM 3500/4500/5500 Cab & Chassis 6.7L Cummins 2019–2024, BD part 1045998.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -81160,7 +81160,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-ram-2500-3500-pickup-6-7l-cumm-1045997/1.webp"],
     description: `Exhaust Manifold Gasket Set Stock Mount RAM 2500/3500 Pickup 6.7L Cummins 2019–2024, BD part 1045997.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -81208,7 +81208,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-chevrolet-silverado-gmc-sierra-2500hd-3500hd-6-6l-1041459/1.webp"],
     description: `Exhaust Manifold Kit Chevrolet Silverado/GMC Sierra 2500HD & 3500HD 6.6L Duramax 2001–2016, BD part 1041459.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -81221,7 +81221,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: EXHAUST MANIFOLDS
 Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2006 GMC Sierra 2500 HD and Sierra 3500; 2006–2007 Chevrolet Express 2500; 2006 Chevrolet Express 3500; and 2006 GMC Savana 2500 and Savana 3500 (6.6L)
-BD catalogue range: 2001–2016
+BD catalog range: 2001–2016
 Part number: 1041459
 
 Highlights
@@ -81257,7 +81257,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ram-2500-3500-pickup-6-7l-cummins-2019-2024-1046069/1.webp"],
     description: `Exhaust Manifold Kit RAM 2500/3500 Pickup 6.7L Cummins 2019–2024, BD part 1046069.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -81351,7 +81351,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-passenger-side-chevrolet-silverado-1500-gmc-sierra-15-1041401/1.webp"],
     description: `Exhaust Manifold Passenger Side Chevrolet Silverado 1500 / GMC Sierra 1500 V8 2002–2013, BD part 1041401.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -81364,7 +81364,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2003 Cadillac Escalade, Escalade Esv and Escalade Ext; 2003 Chevrolet Avalanche 1500, Express 1500, Express 2500, Express 3500, Silverado 1500, Silverado 1500 HD, Silverado 2500, Silverado 2500 HD, Silverado 3500, Suburban 1500, Suburban 2500 and Tahoe; and 2003 GMC Savana 1500, Savana 2500, Savana 3500, Sierra 1500 and Sierra 1500 HD (4.8L, 5.3L, 6.0L)
-BD catalogue range: 2002–2013
+BD catalog range: 2002–2013
 Part number: 1041401
 
 Highlights
@@ -81400,7 +81400,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-chevrolet-silverado-1500-gmc-sierra-1500-v8-2002--1041400/1.webp"],
     description: `Exhaust Manifold Kit Chevrolet Silverado 1500 / GMC Sierra 1500 V8 2002–2013, BD part 1041400.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -81413,7 +81413,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2002–2003 Cadillac Escalade; 2002–2003 Chevrolet Silverado 1500 and Suburban 1500; 2002 Chevrolet Tahoe; 2002 GMC Sierra 1500, Yukon and Yukon XL 1500; 2003 Cadillac Escalade Esv and Escalade Ext; and 2003 Chevrolet Avalanche 1500, Express 1500, Express 2500, Express 3500, Silverado 1500 HD, Silverado 2500, Silverado 2500 HD and Silverado 3500 (4.8L, 5.3L, 6.0L)
-BD catalogue range: 2002–2013
+BD catalog range: 2002–2013
 Part number: 1041400
 
 Highlights
@@ -81449,7 +81449,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-waste-gate-regulator-kit-1045996wgk/1.webp"],
     description: `Waste Gate Regulator Kit, BD part 1045996-WGK.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -81560,7 +81560,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Valve Bodie
 Application: 2007–2016 Dodge / Ram 2500 and 3500 (6.4L, 6.7L)
-BD catalogue range: 2008–2018
+BD catalog range: 2008–2018
 Part number: 1030467
 
 Highlights
@@ -81892,7 +81892,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -81903,7 +81903,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
-BD catalogue range: 2001–2010
+BD catalog range: 2001–2010
 Part number: 1032160
 
 Highlights
@@ -81941,7 +81941,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -82145,7 +82145,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Air Horn
 Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
-BD catalogue range: 2017–2022
+BD catalog range: 2017–2022
 Part number: 1045630
 
 Highlights
@@ -82181,7 +82181,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-single-ford-6-4l-power-stroke-2008-2010-1041487/1.webp"],
     description: `Exhaust Manifold (single) Ford 6.4L Power Stroke 2008–2010, BD part 1041487.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -82277,7 +82277,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -82288,7 +82288,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
-BD catalogue range: 2013–2025
+BD catalog range: 2013–2025
 Part number: 1032018
 
 Highlights
@@ -82420,7 +82420,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-cummins-6-7l-ram-2013-2018-cab-chassis-1045994/1.webp"],
     description: `Exhaust Manifold Gasket Set Cummins 6.7L RAM 2013–2018 Cab & Chassis, BD part 1045994.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -82666,7 +82666,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -82677,7 +82677,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2008–2013 Ford F-250 Super Duty and F-350 Super Duty (5.4L, 6.2L, 6.4L, 6.7L, 6.8L)
-BD catalogue range: 2008–2022
+BD catalog range: 2008–2022
 Part number: 1032113
 
 Highlights
@@ -82715,7 +82715,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -82763,7 +82763,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -82811,7 +82811,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -82822,7 +82822,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2011–2014 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2011–2014 GMC Sierra 2500 HD; and 2011–2013 GMC Sierra 3500 HD (6.0L, 6.6L)
-BD catalogue range: 2011–2024
+BD catalog range: 2011–2024
 Part number: 1032124
 
 Highlights
@@ -82860,7 +82860,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -82871,7 +82871,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
-BD catalogue range: 2013–2025
+BD catalog range: 2013–2025
 Part number: 1032052
 
 Highlights
@@ -83005,7 +83005,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -83243,7 +83243,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-bolt-spacer-kit-ford-f-250-f-350-6-0l-power-stroke-20-1041483/1.webp"],
     description: `Exhaust Manifold Bolt & Spacer Kit - Ford F-250/F-350 6.0L Power Stroke 2003–2007, BD part 1041483.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -83291,7 +83291,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-stud-install-tool-m8x1-25-1462434/1.webp"],
     description: `Stud Install Tool M8x1.25, BD part 1462434.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -83341,7 +83341,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -83582,7 +83582,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -83593,7 +83593,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2011–2014 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty; and 2011–2013 Ford F-550 Super Duty (6.2L, 6.7L, 6.8L)
-BD catalogue range: 2011–2022
+BD catalog range: 2011–2022
 Part number: 1032103
 
 Highlights
@@ -83677,7 +83677,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-bolt-and-spacer-kit-dodge-5-9l-6-7l-cummins-1998-5-20-1045982/1.webp"],
     description: `Exhaust Manifold Bolt and Spacer Kit Dodge 5.9L/6.7L Cummins 1998.5-2024, BD part 1045982.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -83727,7 +83727,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -83738,7 +83738,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2017–2024 Ford F-250 Super Duty; and 2017–2023 Ford F-350 Super Duty (6.2L, 6.7L)
-BD catalogue range: 2017–2026
+BD catalog range: 2017–2026
 Part number: 1032111
 
 Highlights
@@ -83787,7 +83787,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Flex Plate
 Application: 2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
-BD catalogue range: 2011–2019
+BD catalog range: 2011–2019
 Part number: 1041245
 
 Highlights
@@ -84499,7 +84499,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -84510,7 +84510,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2000–2007 Dodge / Ram 2500; and 2000–2006 Dodge / Ram 3500 (5.7L, 5.9L, 6.7L, 8.0L)
-BD catalogue range: 2000–2009
+BD catalog range: 2000–2009
 Part number: 1312051
 
 Highlights
@@ -84548,7 +84548,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -84596,7 +84596,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -84740,7 +84740,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -84751,7 +84751,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 1989–1996 Ford F-250; 1989–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
-BD catalogue range: 1989–2024
+BD catalog range: 1989–2024
 Part number: 1061830
 
 Highlights
@@ -84790,7 +84790,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -84839,7 +84839,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -84850,7 +84850,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2013–2017 Dodge / Ram 3500; and 2014–2018 Dodge / Ram 2500 (5.7L, 6.4L, 6.7L)
-BD catalogue range: 2013–2022
+BD catalog range: 2013–2022
 Part number: 1061828
 
 Highlights
@@ -84889,7 +84889,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -84900,7 +84900,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
-BD catalogue range: 2003–2013
+BD catalog range: 2003–2013
 Part number: 1061827
 
 Highlights
@@ -84939,7 +84939,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -84950,7 +84950,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
-BD catalogue range: 2003–2013
+BD catalog range: 2003–2013
 Part number: 1061826
 
 Highlights
@@ -84989,7 +84989,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -85000,7 +85000,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2001–2006 Chevrolet Silverado 2500 HD and Silverado 3500; 2001–2005 GMC Sierra 2500 HD and Sierra 3500; 2003–2006 Dodge / Ram 2500; and 2003–2005 Dodge / Ram 3500 (5.9L, 6.6L)
-BD catalogue range: 2001–2018
+BD catalog range: 2001–2018
 Part number: 1061825
 
 Highlights
@@ -85039,7 +85039,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -85088,7 +85088,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -85137,7 +85137,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -85148,7 +85148,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
-BD catalogue range: 2011–2019
+BD catalog range: 2011–2019
 Part number: 1061720
 
 Highlights
@@ -85187,7 +85187,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -85198,7 +85198,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 1989–1996 Ford F-250; 1989–1997 Ford F-350; 1997 Ford F-250 HD; and 1999–2003 Ford F-250 Super Duty and F-350 Super Duty (6.0L, 7.3L)
-BD catalogue range: 1989–2010
+BD catalog range: 1989–2010
 Part number: 1061716
 
 Highlights
@@ -85237,7 +85237,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -85286,7 +85286,7 @@ Ships within the United States only`,
 
 More fluid runs cooler, and cooler fluid is what decides how long a transmission or a differential lasts. A deep pan or a finned cover adds capacity and adds surface area at the same time.
 
-BD cast these in aluminium with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
+BD cast these in aluminum with internal and external fins, with separate fill and drain ports and stainless plugs so servicing does not mean dropping the whole thing.
 
 A magnetic drain plug catches the suspended material that would otherwise keep circulating.
 
@@ -85297,7 +85297,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Pans/Cover
 Application: 1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L)
-BD catalogue range: 1989–2007
+BD catalog range: 1989–2007
 Part number: 1061501
 
 Highlights
@@ -85348,7 +85348,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Valve Bodie
 Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
-BD catalogue range: 2000–2007
+BD catalog range: 2000–2007
 Part number: 1060605
 
 Highlights
@@ -85398,7 +85398,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Valve Bodie
 Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
-BD catalogue range: 2000–2007
+BD catalog range: 2000–2007
 Part number: 1060602
 
 Highlights
@@ -85639,7 +85639,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Wastegate
 Application: 1994–2003 Dodge / Ram 2500; 1994–2002 Dodge / Ram 3500; and 1998–2002 Dodge / Ram 2500 Manual Transmission and 3500 Manual Transmission (5.9L)
-BD catalogue range: 1994–2007
+BD catalog range: 1994–2007
 Part number: 1047110
 
 Highlights
@@ -85675,7 +85675,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-6-7l-cummins-2007-5-2018-1045992/1.webp"],
     description: `Exhaust Manifold Gasket Set Stock Mount Dodge 6.7L Cummins 2007.5-2018, BD part 1045992.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -85771,7 +85771,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-common-rail-cummins-exhaust-manifold-t4-mount-dodge-5-9l-cummins-2003--1045987t4/1.webp"],
     description: `Common Rail Cummins Exhaust Manifold T4 Mount Dodge 5.9L Cummins 2003–2007, BD part 1045987-T4.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -85819,7 +85819,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-common-rail-exhaust-manifold-stock-mount-dodge-5-9l-cummins-2003-2007-1045987/1.webp"],
     description: `Common Rail Exhaust Manifold Stock Mount Dodge 5.9L Cummins 2003–2007, BD part 1045987.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -85867,7 +85867,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-t6-mount-dodge-5-9l-6-7l-cummins-1998-5-20-1045986t6/1.webp"],
     description: `Exhaust Manifold Gasket Set T6 Mount Dodge 5.9L/6.7L Cummins 1998.5-2018, BD part 1045986-T6.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -85915,7 +85915,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-t4-mount-dodge-5-9l-6-7l-cummins-1998-5-20-1045986t4/1.webp"],
     description: `Exhaust Manifold Gasket Set T4 Mount Dodge 5.9L/6.7L Cummins 1998.5-2018, BD part 1045986-T4.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -85963,7 +85963,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-24-valve-5-9l-cummins-19-1045986/1.webp"],
     description: `Exhaust Manifold Gasket Set Stock Mount Dodge 24-valve 5.9L Cummins 1998.5-2007, BD part 1045986.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -86011,7 +86011,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-gasket-set-stock-mount-dodge-12-valve-5-9l-cummins-19-1045981/1.webp"],
     description: `Exhaust Manifold Gasket Set Stock Mount Dodge 12-valve 5.9L Cummins 1988–1998, BD part 1045981.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -86059,7 +86059,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-pulse-exhaust-manifold-stock-t3-dodge-24-valve-5-9l-cummins-1998-5-200-1045947/1.webp"],
     description: `Pulse Exhaust Manifold Stock/t3 Dodge 24-valve 5.9L Cummins 1998.5-2002, BD part 1045947.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -86252,7 +86252,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-kit-ford-6-7l-power-stroke-f-250-f-350-pick-up-2011-2-1043007/1.webp"],
     description: `Exhaust Manifold Kit - Ford 6.7L Power Stroke F-250 / F-350 Pick-up 2011–2014 & F-350 / F-450 / F-550 Cab & Chassis 2011–2016, BD part 1043007.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -86300,7 +86300,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-exhaust-manifold-driver-side-ford-6-7l-power-stroke-f-250-f-350-f-450--1043006/1.webp"],
     description: `Exhaust Manifold Driver Side Ford 6.7L Power Stroke F-250 / F-350 / F-450 / F-550 / F-650 / F-750 Super Duty 2011–2019, BD part 1043006.
 
-Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminium or iron head that moves at a different rate.
+Exhaust manifolds on a hard-worked diesel crack and warp: they are cast iron holding a very large temperature swing, bolted to an aluminum or iron head that moves at a different rate.
 
 BD's manifolds are designed around that movement, and on several engines they also use stud locations the factory part leaves empty — the 3.5L EcoBoost head has eleven threaded holes and the OE manifold uses eight of them, which is a large part of why those manifolds warp and blow gaskets.
 
@@ -86313,7 +86313,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Exhaust Manifold
 Application: 2011–2017 Ford F-250 Super Duty, F-350 Super Duty and F-450 Super Duty; 2011–2016 Ford F-550 Super Duty; and 2016 Ford F-650 Super Duty and F-750 (6.7L)
-BD catalogue range: 2011–2019
+BD catalog range: 2011–2019
 Part number: 1043006
 
 Highlights
@@ -86362,7 +86362,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Flex Plate
 Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
-BD catalogue range: 2001–2019
+BD catalog range: 2001–2019
 Part number: 1041260
 
 Highlights
@@ -86793,7 +86793,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: High Idle
 Application: 2008–2015 Chevrolet Silverado 2500 HD; 2008–2014 Chevrolet Silverado 3500 HD; and 2008–2014 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
-BD catalogue range: 2008–2019
+BD catalog range: 2008–2019
 Part number: 1036627
 
 Highlights
@@ -87024,7 +87024,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: High Idle
 Application: 2005–2012 Ford F-250 Super Duty; and 2005–2011 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.0L, 6.4L, 6.7L)
-BD catalogue range: 2005–2024
+BD catalog range: 2005–2024
 Part number: 1036610
 
 Highlights
@@ -87246,7 +87246,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87257,7 +87257,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
-BD catalogue range: 2003–2018
+BD catalog range: 2003–2018
 Part number: 1032130
 
 Highlights
@@ -87295,7 +87295,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87306,7 +87306,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2005–2007 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (5.4L, 6.0L, 6.8L)
-BD catalogue range: 2005–2026
+BD catalog range: 2005–2026
 Part number: 1032110
 
 Highlights
@@ -87344,7 +87344,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87355,7 +87355,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2005–2008 Ford F-250 Super Duty and F-350 Super Duty; and 2005–2007 Ford F-450 Super Duty (5.4L, 6.0L, 6.4L, 6.8L)
-BD catalogue range: 2005–2010
+BD catalog range: 2005–2010
 Part number: 1032100
 
 Highlights
@@ -87393,7 +87393,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87404,7 +87404,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
-BD catalogue range: 2000–2009
+BD catalog range: 2000–2009
 Part number: 1032050
 
 Highlights
@@ -87442,7 +87442,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87453,7 +87453,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
-BD catalogue range: 2003–2013
+BD catalog range: 2003–2013
 Part number: 1032013-F
 
 Highlights
@@ -87491,7 +87491,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87502,7 +87502,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 1994–2000 Dodge / Ram 2500; and 1994–1999 Dodge / Ram 3500 (5.2L, 5.9L, 8.0L)
-BD catalogue range: 1994–2002
+BD catalog range: 1994–2002
 Part number: 1032011-F
 
 Highlights
@@ -87540,7 +87540,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87551,7 +87551,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L)
-BD catalogue range: 1994–2002
+BD catalog range: 1994–2002
 Part number: 1032004
 
 Highlights
@@ -87589,7 +87589,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87600,7 +87600,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 2003–2008 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 6.7L, 8.0L)
-BD catalogue range: 2003–2025
+BD catalog range: 2003–2025
 Part number: 1032003
 
 Highlights
@@ -87638,7 +87638,7 @@ Ships within the United States only`,
 
 Steering wander on a solid-axle heavy-duty truck comes from accumulated slop, and a lift makes it worse by pulling the track bar and drag link out of the geometry they were designed for.
 
-BD's adjustable track bars let the axle be brought back to centre without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
+BD's adjustable track bars let the axle be brought back to center without removing the bar from the truck, and their bushings and end links replace the rubber that has already given up.
 
 The finish is Cerakote rather than paint, which matters on a part that lives under the front of a truck in salt.
 
@@ -87649,7 +87649,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Suspension/Steering
 Application: 1994–1997 Dodge / Ram 1500 and 2500; and 1994–1996 Dodge / Ram 3500 (3.9L, 5.2L, 5.9L, 8.0L)
-BD catalogue range: 1994–2002
+BD catalog range: 1994–2002
 Part number: 1032002
 
 Highlights
@@ -90269,7 +90269,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Rebuild-It
 Application: 1994–1996 Ford F-250; 1994–1997 Ford F-350; 1997 Ford F-250 HD; 1999–2008 Ford F-250 Super Duty; and 1999–2007 Ford F-350 Super Duty (6.0L, 6.4L, 7.3L)
-BD catalogue range: 1994–2010
+BD catalog range: 1994–2010
 Part number: 1600149
 
 Highlights
@@ -91972,7 +91972,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Option: w/o Fire Rings
 Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
-BD catalogue range: 2007–2018
+BD catalog range: 2007–2018
 Part number: DJPCH100046
 
 Highlights
@@ -92013,7 +92013,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Option: with Fire Rings
 Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
-BD catalogue range: 2007–2018
+BD catalog range: 2007–2018
 Part number: DJPCH100205
 
 Highlights
@@ -92304,7 +92304,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Positive air shut-off
 Application: 2017–2021 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2017–2021 GMC Sierra 2500 HD and Sierra 3500 HD; and 2019–2021 Chevrolet Silverado 4500 HD, Silverado 5500 HD and Silverado 6500 HD (6.6L)
-BD catalogue range: 2017–2023
+BD catalog range: 2017–2023
 Part number: 1036764
 
 Highlights
@@ -92340,7 +92340,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-line-set-chevy-gm-6-6l-duramax-lml-2011-2016-1050170/1.webp"],
     description: `Injector Line Set Chevy/GM 6.6L Duramax LML 2011–2016, BD part 1050170.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92388,7 +92388,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-line-set-ford-6-7l-power-stroke-2011-2021-1050165/1.webp"],
     description: `Injector Line Set Ford 6.7L Power Stroke 2011–2021, BD part 1050165.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92401,7 +92401,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Fuel Systems
 Application: 2011–2020 Ford F-250 Super Duty and F-350 Super Duty; and 2011–2019 Ford F-450 Super Duty (6.7L)
-BD catalogue range: 2011–2021
+BD catalog range: 2011–2021
 Part number: 1050165
 
 Highlights
@@ -92437,7 +92437,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-install-kit-dodge-6-7l-cr-cummins-2007-2018-1050157/1.webp"],
     description: `Injector Install Kit Dodge 6.7L Cr Cummins 2007–2018, BD part 1050157.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92450,7 +92450,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Fuel Systems
 Application: 2007–2014 Dodge / Ram 2500 and 3500; 2008–2014 Dodge / Ram 4500; and 2008–2013 Dodge / Ram 5500 (6.7L)
-BD catalogue range: 2007–2018
+BD catalog range: 2007–2018
 Part number: 1050157
 
 Highlights
@@ -92486,7 +92486,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-install-kit-dodge-5-9l-cr-cummins-2006-2007-1050156/1.webp"],
     description: `Injector Install Kit Dodge 5.9L Cr Cummins 2006–2007, BD part 1050156.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92534,7 +92534,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-install-kit-dodge-5-9l-cr-cummins-2003-2005-1050155/1.webp"],
     description: `Injector Install Kit Dodge 5.9L Cr Cummins 2003–2005, BD part 1050155.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92582,7 +92582,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-line-set-dodge-ram-6-7l-cummins-common-rail-2007-5-2018-1050151/1.webp"],
     description: `Injector Line Set Dodge/RAM 6.7L Cummins Common Rail 2007.5 - 2018, BD part 1050151.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92630,7 +92630,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-line-set-dodge-5-9l-cummins-24-valve-2003-2007-1050150/1.webp"],
     description: `Injector Line Set Dodge 5.9L Cummins 24 Valve 2003–2007, BD part 1050150.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92678,7 +92678,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-install-kit-gmc-6-6l-lb7-duramax-2001-2004-1050141/1.webp"],
     description: `Injector Install Kit GMC 6.6L LB7 Duramax 2001–2004, BD part 1050141.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92726,7 +92726,7 @@ Ships within the United States only`,
     images: ["/product-media/engine/bd-injector-line-set-chevy-gmc-lb7-2001-2004-1050140/1.webp"],
     description: `Injector Line Set Chevy/GMC LB7 2001–2004, BD part 1050140.
 
-Injector feed lines carry fuel at very high pressure and they live under the bonnet in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
+Injector feed lines carry fuel at very high pressure and they live under the hood in the weather. They rust, and a rusted high-pressure line is not something to leave until it fails.
 
 Manufacturers recommend replacing the lines rather than reusing them whenever the injectors come out, because a line that has been torqued once does not seal the same way twice.
 
@@ -92787,7 +92787,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Turbo Accessories
 Application: 2019–2022 Dodge / Ram 2500 and 3500 (6.7L)
-BD catalogue range: 2019–2024
+BD catalog range: 2019–2024
 Part number: 1045999
 
 Highlights
@@ -94022,7 +94022,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Rebuild-It
 Application: 2000–2006 Dodge / Ram 2500 and 3500 (5.7L, 5.9L, 8.0L)
-BD catalogue range: 2000–2007
+BD catalog range: 2000–2007
 Part number: 1060604
 
 Highlights
@@ -94729,7 +94729,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Positive air shut-off
 Application: 2008–2012 Chevrolet Express 2500; 2008–2011 Chevrolet Express 3500; 2008–2010 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2008–2011 GMC Savana 2500 and Savana 3500; and 2008–2010 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
-BD catalogue range: 2008–2015
+BD catalog range: 2008–2015
 Part number: 1036758
 
 Highlights
@@ -94778,7 +94778,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Positive air shut-off
 Application: 2018–2020 Ford F-150 (3.0L)
-BD catalogue range: 2018–2021
+BD catalog range: 2018–2021
 Part number: 1036756
 
 Highlights
@@ -94827,7 +94827,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Positive air shut-off
 Application: 2011–2018 Ford F-250 Super Duty; and 2011–2017 Ford F-350 Super Duty, F-450 Super Duty and F-550 Super Duty (6.7L)
-BD catalogue range: 2011–2019
+BD catalog range: 2011–2019
 Part number: 1036755
 
 Highlights
@@ -94972,7 +94972,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Positive air shut-off
 Application: 2010–2017 Dodge / Ram 2500 and 3500; 2011–2017 Dodge / Ram 4500; and 2011–2016 Dodge / Ram 5500 (6.7L)
-BD catalogue range: 2010–2018
+BD catalog range: 2010–2018
 Part number: 1036751
 
 Highlights
@@ -95165,7 +95165,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Positive air shut-off
 Application: 2011–2015 Chevrolet Silverado 2500 HD and Silverado 3500 HD; and 2011 and 2013–2015 GMC Sierra 2500 HD and Sierra 3500 HD (6.6L)
-BD catalogue range: 2011–2016
+BD catalog range: 2011–2016
 Part number: 1036713-M
 
 Highlights
@@ -95310,7 +95310,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Positive air shut-off
 Application: 2011 Ford F-250 Super Duty and F-350 Super Duty (6.7L)
-BD catalogue range: 2011–2014
+BD catalog range: 2011–2014
 Part number: 1036703
 
 Highlights
@@ -95723,7 +95723,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Engines
 Application: 1998–2009 Dodge / Ram 2500; 1998–2008 Dodge / Ram 3500; and 2007–2008 Dodge / Ram 4500 and 5500 (5.9L, 6.7L)
-BD catalogue range: 1998–2018
+BD catalog range: 1998–2018
 Warranty: 12 months
 Part number: DJPCNC100098
 
@@ -96946,7 +96946,7 @@ Specifications
 Manufacturer: Garrett Motion
 Product: Garrett
 Application: 2004–2009 Chevrolet Silverado 2500 HD; 2004–2008 GMC Sierra 2500 HD; 2004–2006 GMC Sierra 3500; 2005–2006 Chevrolet Silverado 3500; 2006–2007 Chevrolet Express 2500 and Express 3500; 2006–2007 GMC Savana 2500 and Savana 3500; 2007 Chevrolet Silverado 3500 Classic; 2007–2008 Chevrolet Silverado 3500 HD; and 2007–2008 GMC Sierra 3500 HD (6.6L)
-BD catalogue range: 2004–2010
+BD catalog range: 2004–2010
 Core charge: $350, refundable
 Warranty: 12 months
 Part number: 848212-9001S
@@ -98692,7 +98692,7 @@ Product: Transmissions
 Series: Roadmaster
 Option: 2WD
 Application: 2014–2018 Chevrolet Silverado 1500, Suburban and Tahoe; 2014–2018 GMC Sierra 1500 and Yukon XL; and 2014–2017 GMC Yukon (5.3L)
-BD catalogue range: 2014–2021
+BD catalog range: 2014–2021
 Core charge: $1,000, refundable
 Warranty: 24 months
 Part number: 1064842SS
@@ -101087,7 +101087,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Upgrade Kit
 Application: 2007–2014 Dodge / Ram 2500; and 2007–2013 Dodge / Ram 3500, 4500 and 5500 (6.7L)
-BD catalogue range: 2007–2024
+BD catalog range: 2007–2024
 Warranty: 12 months
 Part number: 1041520
 
@@ -101276,7 +101276,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Steering/Suspension
 Application: 2001–2003 Chevrolet Silverado 1500 HD; 2001–2004 Chevrolet Silverado 2500 HD; 2001–2003 GMC Sierra 1500 HD; and 2001–2004 GMC Sierra 2500 HD (6.0L, 6.6L, 8.1L)
-BD catalogue range: 2001–2019
+BD catalog range: 2001–2019
 Warranty: 12 months
 Part number: 1032126
 
@@ -101600,7 +101600,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Trans Controls
 Application: 1990–1992 Ford F-250 and F-350; 1992–1994 Chevrolet C2500, C3500, K2500 and K3500; 1992–1993 GMC C2500, C3500, K2500 and K3500; 1994 Chevrolet C1500 and K1500; and 1994 Dodge / Ram 2500 (5.9L, 6.5L, 7.3L)
-BD catalogue range: 1990–2005
+BD catalog range: 1990–2005
 Warranty: 12 months
 Part number: 1030390
 
@@ -102741,7 +102741,7 @@ Manufacturer: BD Diesel Performance
 Product: Valve Cover
 Option: Natural
 Application: 2006–2013 Dodge / Ram 2500 and 3500; 2008–2013 Dodge / Ram 4500; and 2008–2012 Dodge / Ram 5500 (5.9L, 6.7L)
-BD catalogue range: 2006–2024
+BD catalog range: 2006–2024
 Warranty: 36 months
 Part number: DJPCNC100068
 
@@ -102790,7 +102790,7 @@ Manufacturer: BD Diesel Performance
 Product: Valve Cover
 Option: Black Powder Coated
 Application: 2006–2013 Dodge / Ram 2500 and 3500; 2008–2013 Dodge / Ram 4500; and 2008–2012 Dodge / Ram 5500 (5.9L, 6.7L)
-BD catalogue range: 2006–2024
+BD catalog range: 2006–2024
 Warranty: 36 months
 Part number: DJPCNC100075
 
@@ -105368,7 +105368,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Venom Lift Pump
 Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
-BD catalogue range: 2001–2010
+BD catalog range: 2001–2010
 Warranty: 24 months
 Part number: 1050322
 
@@ -105579,7 +105579,7 @@ Manufacturer: BD Diesel Performance
 Product: UpTime
 Quantity: One injector, sold individually
 Application: 1996 Ford F-250; 1996–1997 Ford F-350; and 1997 Ford F-250 HD (7.3L)
-BD catalogue range: 1996–1998
+BD catalog range: 1996–1998
 Core charge: $125, refundable
 Warranty: 24 months
 Part number: UP7000-PP
@@ -106137,7 +106137,7 @@ Specifications
 Manufacturer: Garrett Motion
 Product: Garrett
 Application: 2003–2005 Ford Excursion, F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; 2004–2005 Chevrolet Silverado 2500 HD and Silverado 3500 HD; 2004–2005 Ford E-350 and E-450; 2004–2005 GMC Sierra 2500 HD and Sierra 3500 HD; and 2006 Chevrolet Express 2500 and Express 3500 (6.0L, 6.6L)
-BD catalogue range: 2003–2016
+BD catalog range: 2003–2016
 Part number: 792593-0001
 
 Highlights
@@ -106962,7 +106962,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: CP3 Pumps
 Application: 2001–2007 Chevrolet Silverado 2500 HD; 2001–2006 Chevrolet Silverado 3500; 2001–2007 GMC Sierra 2500 HD; 2001–2006 GMC Sierra 3500; 2007 Chevrolet Silverado 3500 Classic and Silverado 3500 HD; and 2007 GMC Sierra 3500 HD (6.6L)
-BD catalogue range: 2001–2010
+BD catalog range: 2001–2010
 Core charge: $300, refundable
 Warranty: 12 months
 Part number: 1050651
@@ -107015,7 +107015,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: CP3 Pumps
 Application: 2003–2016 Dodge / Ram 2500; and 2003–2015 Dodge / Ram 3500 (5.9L, 6.7L)
-BD catalogue range: 2003–2018
+BD catalog range: 2003–2018
 Core charge: $300, refundable
 Warranty: 12 months
 Part number: 1050551
@@ -108034,7 +108034,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Frost Plug
 Application: 2003–2016 Dodge / Ram 2500; and 2003–2015 Dodge / Ram 3500 (5.9L, 6.7L)
-BD catalogue range: 2003–2018
+BD catalog range: 2003–2018
 Warranty: 12 months
 Part number: 1040023
 
@@ -108082,7 +108082,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Frost Plug
 Application: 1989–1993 Dodge / Ram D250, D350, W250 and W350; 1994–1997 Dodge / Ram 2500 and 3500; and 1998 Dodge / Ram 2500 Manual Transmission (5.9L)
-BD catalogue range: 1989–2002
+BD catalog range: 1989–2002
 Warranty: 12 months
 Part number: 1040022
 
@@ -108271,7 +108271,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Trans Controls
 Application: 1993–1995 Chevrolet C2500, C3500, K2500 and K3500; 1993–1994 GMC C2500, C3500, K2500 and K3500; 1994–1995 Chevrolet C1500 and K1500; 1994–1995 Dodge / Ram 2500; 1994 Dodge / Ram 3500; and 1994 GMC C1500 and K1500 (5.9L, 6.5L)
-BD catalogue range: 1992–2004
+BD catalog range: 1992–2004
 Warranty: 12 months
 Part number: 1030398
 
@@ -108319,7 +108319,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Trans Controls
 Application: 1990–1992 Ford F-250 and F-350; 1992–1994 Chevrolet C2500, C3500, K2500 and K3500; 1992–1993 GMC C2500, C3500, K2500 and K3500; 1994 Chevrolet C1500 and K1500; and 1994 Dodge / Ram 2500 (5.9L, 6.5L, 7.3L)
-BD catalogue range: 1990–2005
+BD catalog range: 1990–2005
 Warranty: 12 months
 Part number: 1030395
 
@@ -108367,7 +108367,7 @@ Specifications
 Manufacturer: BD Diesel Performance
 Product: Trans Controls
 Application: 2011–2017 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty and F-550 Super Duty; and 2017 Ford F650 (6.7L)
-BD catalogue range: 2011–2019
+BD catalog range: 2011–2019
 Warranty: 12 months
 Part number: 1030385
 
