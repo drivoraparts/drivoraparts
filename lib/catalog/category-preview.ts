@@ -73,7 +73,10 @@ export function categoryPreviews(): CategoryPreview[] {
       image: photographed ? getProductThumbnail(photographed) : null,
       href: routes.category(cat.slug),
     };
-  });
+  })
+    // A category with nothing in it is a dead end: the tile read "0 listings"
+    // and led to an empty page.
+    .filter((preview) => preview.count > 0);
 
   return cache;
 }

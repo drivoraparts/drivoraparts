@@ -52,6 +52,20 @@ function parse(description: string): Block[] {
 
   const flushParagraph = () => {
     if (!paragraph.length) return;
+    // Consecutive short lines with no sentence punctuation are a list written
+    // one item per line ("Highlights" blocks, "Label: value" specs). Joining
+    // them with spaces ran the items together into one unreadable sentence.
+    const isLineList =
+      paragraph.length >= 2 &&
+      paragraph.every(
+        (line) =>
+          line.length <= 90 && !/[.!?]$/.test(line) && !/^[a-z]/.test(line),
+      );
+    if (isLineList) {
+      blocks.push({ kind: "list", items: paragraph });
+      paragraph = [];
+      return;
+    }
     blocks.push({ kind: "paragraph", text: paragraph.join(" ").trim() });
     paragraph = [];
   };
